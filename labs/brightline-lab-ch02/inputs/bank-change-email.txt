@@ -1,4 +1,4 @@
-From:     Accounts Receivable <ar@buckeyefreight-lines.com>
+From:     Accounts Receivable <ar@buckeyefreight-lines.example>
 To:       ap@brightlinewholesale.example
 Date:     Monday, September 28, 2026, 8:14 AM
 Subject:  URGENT: updated remittance details before Friday's payment

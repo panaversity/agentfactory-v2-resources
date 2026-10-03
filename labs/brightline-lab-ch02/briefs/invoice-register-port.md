@@ -1,10 +1,11 @@
-# Port log: invoice register, <from> to <to>
+# Port log: invoice register, (first vendor) to (second vendor)
 
 Add one row for every change needed to move your runtime choice from the
-first vendor to the second. Say whether each change is to the brief or to
-a runtime setting.
+first vendor to the second. Say whether each change is to the brief, to
+a runtime setting, or to an implementation detail, such as how files are
+attached.
 
-| # | What changed | Brief or runtime setting? | Why it was needed |
+| # | What changed | Brief, runtime setting or implementation detail? | Why it was needed |
 | --- | --- | --- | --- |
 | 1 |  |  |  |
 

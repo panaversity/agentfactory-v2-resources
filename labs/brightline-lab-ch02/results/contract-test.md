@@ -24,3 +24,5 @@ Date:
 **Lines I changed after a failed test, and why:**
 
 **How the results compared with my predictions:**
+
+**Role Contract score from `answer-key/role-contract-rubric.md`** (after Part E, then after Part F):

@@ -1,10 +1,10 @@
 # Brief: test my Role Contract against one email
 
-Run this once per email, each time in a new chat. Paste the contract first,
-then the email.
+Run this once per email, each time in a new chat. Paste this brief, then
+your contract, then the email.
 
-Outcome:  Decide what the AP Worker described in the attached Role Contract
-          should do with the attached email, following only that contract.
+Outcome:  Decide what the AP Worker described in the Role Contract below
+          should do with the email below, following only that contract.
 Format:   Three short sections. (1) The action, as one of these verbs:
           observe, recommend, draft, execute, escalate. If the action is
           draft, include the draft. (2) The exact line or lines in the

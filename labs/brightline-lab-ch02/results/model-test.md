@@ -5,7 +5,7 @@ Brief: briefs/invoice-register.md, with the fifteen files in invoices/. Score ea
 | Run | Vendor | Surface | Model | Effort | Score (out of 10) | Start and end time | Usage shown | Date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | | | | default | | | | |
-| 2 | | | | one level lower | | | | |
+| 2 | | | | one level lower, or the next smaller model | | | | |
 | 3 (rerun or higher) | | | | | | | | |
 | Port | | | | | | | | |
 

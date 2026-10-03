@@ -2,7 +2,7 @@
 
 Lab files for Chapter 2 of The AI Agent Factory, Second Edition. This folder is standalone: everything the lab needs is here, and you need no files from any other lab or chapter. Every name, number and company here is invented.
 
-**The scenario.** Brightline Wholesale Supply is a fictional distributor of packaging, janitorial and safety supplies in Columbus, Ohio, with about 40 staff. Its controller set up an "AP assistant" without defining it. A fake email asking to change a vendor's bank account nearly went out with a confirming reply. In this lab you write the AP Worker's first Role Contract, test that it stops the fake and still handles routine work, and choose its runtime from scored test runs.
+**The scenario.** Brightline Wholesale Supply is a fictional distributor of packaging, janitorial and safety supplies in Columbus, Ohio, with about 40 staff. Its controller set up an "AP (accounts payable) assistant" without defining it. A fake email asking to change a vendor's bank account nearly went out with a confirming reply. In this lab you write the AP Worker's first Role Contract, test that it stops the fake and still handles routine work, and choose its runtime from scored test runs.
 
 **Start with `LAB.md`.** It gives every step, with timings. The lab takes about 80 minutes.
 
