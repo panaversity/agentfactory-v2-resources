@@ -2,7 +2,7 @@
 
 Do not open this folder until you finish Part D of the lab.
 
-**Assumptions.** These match the brief. Payment terms are counted in calendar days from the invoice date. "Due on receipt" means due on the invoice date, since the receipt date is not given. The early-payment discount on invoice 05 is figured on the full invoice total, including delivery. Score every run's due dates against these rules, because the brief states them.
+**Assumptions.** The first two match the brief. Payment terms are counted in calendar days from the invoice date. "Due on receipt" means due on the invoice date, since the receipt date is not given. Score every run's due dates against these rules, because the brief states them. The brief does not ask about the early-payment discount on invoice 05. This key figures it on the full invoice total, including delivery, and a run that figures it on the goods alone ($47.00) is not wrong.
 
 **The expected register.**
 
