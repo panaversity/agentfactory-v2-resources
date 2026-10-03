@@ -1,0 +1,15 @@
+INVOICE
+Vendor: Midwest Packaging Co.
+Invoice number: 4471
+Invoice date: September 2, 2026
+Terms: Net 30
+Bill to: Brightline Wholesale Supply, 1200 Harmon Ave, Columbus, OH 43223
+Reference: PO 2026-0412
+
+Description                                              Qty  Unit price      Amount
+Corrugated boxes, 18 x 18 x 16 in                      1,000       $2.35   $2,350.00
+Stretch wrap, 18 in, 80 gauge (rolls)                     50      $38.00   $1,900.00
+Packing tape, 2 in (cases)                                20      $26.00     $520.00
+Subtotal                                                                   $4,770.00
+Freight                                                                       $80.00
+TOTAL DUE                                                                  $4,850.00

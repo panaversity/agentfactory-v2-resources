@@ -1,0 +1,42 @@
+# Packs every lab folder as a zip and publishes them as a new release, so the
+# book's links (…/releases/latest/download/<lab>.zip) download the newest copy
+# in one click. The same pattern as the first edition's companion repositories,
+# without a manual tag: a change to a lab on main is the release.
+name: Release labs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "labs/**"
+      - ".github/workflows/release-labs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip each lab folder
+        run: |
+          mkdir -p dist
+          for dir in labs/*/; do
+            name="$(basename "$dir")"
+            # From inside labs/, so the zip unpacks into one folder named for the lab.
+            (cd labs && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
+          done
+          ls -l dist
+
+      - name: Publish the zips as the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="labs-$(date -u +%Y-%m-%d-%H%M%S)"
+          gh release create "$tag" dist/*.zip \
+            --title "Labs, $(date -u +%Y-%m-%d)" \
+            --notes "Every lab folder of The AI Agent Factory, Second Edition, as a zip. The book links to the latest release, so a link always downloads the newest copy." \
+            --latest

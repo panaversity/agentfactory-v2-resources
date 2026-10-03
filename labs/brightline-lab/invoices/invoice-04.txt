@@ -1,0 +1,13 @@
+INVOICE
+Vendor: Central Ohio Office Supply
+Invoice number: 10-55821
+Invoice date: September 5, 2026
+Terms: Net 30
+Bill to: Brightline Wholesale Supply, 1200 Harmon Ave, Columbus, OH 43223
+Reference: PO 2026-0420
+
+Description                                              Qty  Unit price      Amount
+Copy paper, letter (cases)                                12      $54.99     $659.88
+Toner cartridge, LaserPro 400                              4      $89.50     $358.00
+Subtotal                                                                   $1,017.88
+TOTAL DUE                                                                  $1,017.88

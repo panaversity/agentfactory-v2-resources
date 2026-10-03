@@ -1,0 +1,13 @@
+INVOICE
+Vendor: Franklin County Power & Light
+Invoice number: FCPL-0926-3318
+Invoice date: September 10, 2026
+Terms: Net 20
+Bill to: Brightline Wholesale Supply, 1200 Harmon Ave, Columbus, OH 43223
+Reference: Account 88-3318
+
+Description                                              Qty  Unit price      Amount
+Electricity, Aug 2026 usage (kWh)                     18,400      $0.112   $2,060.80
+Subtotal                                                                   $2,060.80
+Monthly service charge                                                        $45.00
+TOTAL DUE                                                                  $2,105.80
