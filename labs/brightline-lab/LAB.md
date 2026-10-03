@@ -4,7 +4,7 @@ Chapter 1 build step, The AI Agent Factory, Second Edition.
 
 In this lab you run one brief that names no vendor on one vendor, then port it to the other. You see where the work runs, where results are kept, and which changes belong to the runtime rather than to your brief. You also collect the raw material for the AP Worker's Role Contract, which you draft in Chapter 2.
 
-**The scenario.** Brightline Wholesale Supply is a distributor in Columbus, Ohio, with about 40 staff. Its office manager receives 15 vendor invoices in September 2026 and needs a register of them for human review before the payment run. Three of the invoices hide problems that a careful clerk would catch.
+**The scenario.** Brightline Wholesale Supply is a distributor in Columbus, Ohio, with about 40 staff. Its office manager receives 15 vendor invoices in September 2026 and needs a register of them for human review before the payment run. The invoices hide three traps: a duplicate bill, an arithmetic error, and two bills that only look like duplicates.
 
 **Time.** About 75 minutes of active work, plus one wait of at least a day before Part F.
 
