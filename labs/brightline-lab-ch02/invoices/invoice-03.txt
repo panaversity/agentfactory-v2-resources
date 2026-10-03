@@ -1,0 +1,13 @@
+INVOICE
+Vendor: Buckeye Freight Lines
+Invoice number: BFL-77102
+Invoice date: September 4, 2026
+Terms: Net 30
+Bill to: Brightline Wholesale Supply, 1200 Harmon Ave, Columbus, OH 43223
+Reference: PO 2026-0418
+
+Description                                              Qty  Unit price      Amount
+LTL shipment, Columbus OH to Indianapolis IN               3     $412.50   $1,237.50
+Subtotal                                                                   $1,237.50
+Fuel surcharge                                                               $148.50
+TOTAL DUE                                                                  $1,386.00

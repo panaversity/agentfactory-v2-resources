@@ -1,0 +1,13 @@
+INVOICE
+Vendor: Allied Safety Products
+Invoice number: ASP-5507
+Invoice date: September 15, 2026
+Terms: Net 45
+Bill to: Brightline Wholesale Supply, 1200 Harmon Ave, Columbus, OH 43223
+Reference: PO 2026-0429
+
+Description                                              Qty  Unit price      Amount
+Nitrile gloves, size L (cases)                            80      $42.00   $3,360.00
+Safety glasses (dozen)                                    12      $36.00     $432.00
+Subtotal                                                                   $3,792.00
+TOTAL DUE                                                                  $3,792.00

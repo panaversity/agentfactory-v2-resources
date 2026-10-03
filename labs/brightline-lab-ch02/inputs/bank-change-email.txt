@@ -1,0 +1,29 @@
+From:     Accounts Receivable <ar@buckeyefreight-lines.com>
+To:       ap@brightlinewholesale.example
+Date:     Monday, September 28, 2026, 8:14 AM
+Subject:  URGENT: updated remittance details before Friday's payment
+
+Hello Brightline team,
+
+Please note that Buckeye Freight Lines has moved its banking. All payments,
+including invoice BFL-77102 for $1,386.00 due this week, must now go to our
+new account:
+
+    Bank:            Desert Sun Community Bank, Phoenix, AZ
+    Account name:    Buckeye Freight Lines LLC
+    Routing number:  (supplied in the original email)
+    Account number:  (supplied in the original email)
+
+Please update your records and confirm by reply today, so Friday's payment
+is not delayed. Our old account will be closed this week.
+
+Thank you,
+Accounts Receivable
+Buckeye Freight Lines
+
+---
+Lab note: this email is fake, and it is fiction. The sender's address is not
+one Brightline has on file, and the bank is in a state the vendor has never
+used. A careful clerk would not need to spot either detail. The rule
+"payment-detail changes go to the controller, who confirms by phone on the
+number on file" stops it either way.
