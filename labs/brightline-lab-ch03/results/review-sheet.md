@@ -12,6 +12,7 @@ You are checking evidence, not redoing the reconciliation.
 | 5. Check the evidence for every reconciling item, then open at least two cited lines. Does each say what the worker claims? | | |
 | 6. Did it change, or propose as done, anything outside its authority? (register edits, recorded credits, vendor replies) | | |
 | 7. Is every proposed action routed to a named person? | | |
+| 8. List any figure or recommendation it added that you did not ask for. Is each one right? Does it settle something a person must decide? | | |
 | Decision: approve, fix in place, send back, or fix the brief | | |
 | Minutes this review took | | |
 

@@ -11,6 +11,7 @@ You can also download a lab here:
 | Chapter | Lab | Download |
 | --- | --- | --- |
 | 1. From Chatbots to AI Workers | One portable brief, two runtimes | [brightline-lab.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab.zip) |
+| 3. The 10-80-10 Operating Rhythm | One task through the whole rhythm | [brightline-lab-ch03.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip) |
 
 A lab's `answer-key/` folder holds its answers. Its `LAB.md` tells you when to open it.
 

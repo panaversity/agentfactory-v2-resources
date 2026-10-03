@@ -29,7 +29,7 @@ The task is real AP work: reconcile Midwest Packaging's September statement to B
 ## Part D. Run 2: write the first 10, then stay out of the middle (20 minutes)
 
 1. Copy `briefs/first-ten-template.md` to `briefs/statement-rec-first-ten.md`.
-2. Fill every field. Take no more than 12 minutes. Use the chapter's Concept 3.2 and the policy excerpt. Two fields matter most: the stop rule, and the authority line that says this task changes nothing.
+2. Fill every field. Take no more than 12 minutes. Use the chapter's Concept 3.2 and the policy excerpt. For **Today**, write the lab's date, Thursday, October 1, 2026, whatever today's date is where you are. Two fields matter most: the stop rule, and the authority line that says this task changes nothing.
 3. Open a new conversation. Attach the four files in `inputs/`. Paste your filled brief. On a paid plan you may run it as a task and leave it. Keep the files attached in the same conversation, and check that the task can read them before you leave.
 4. During the run, interrupt only if the worker asks you something or you see it working on the wrong vendor or month. Count every interruption in the log.
 5. Save the full reply as `results/run-2-output.md`. Fill the Run 2 column of the rhythm log, except the last two rows.
@@ -45,7 +45,7 @@ Do not open `answer-key/` yet. Your review must stand on the evidence each run r
 ## Part F. Investigate (10 minutes)
 
 1. Now open `answer-key/reconciliation-answer-key.md` and `answer-key/run-rubric.md`.
-2. Score both runs out of 10. Write the scores in the rhythm log.
+2. Score both runs out of 10, including the rubric's deduction for figures a run added that you did not ask for. Write the scores in the rhythm log.
 3. For every point lost, ask the chapter's three questions in order to find where to look first. Did the brief, contract or policy say it? Did the worker act against them? Was the problem visible in the evidence? More than one may apply. Fill the last table in the rhythm log.
 4. Compare your Part E decisions with the scores. If you approved a run that failed the rubric, by scoring under 9 or by taking an unauthorized action, that is a final-10 failure, and the most useful thing this lab can show you.
 

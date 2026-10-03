@@ -7,6 +7,7 @@ Outcome:     A reconciliation of Midwest Packaging's September statement to our 
 Why:         Dave Kowalski signs the September AP close on Monday, October 5, 2026 (policy 7.1).
 
 ## Scope
+Today:       Thursday, October 1, 2026.
 In:          Midwest Packaging Co. only. Statement dated September 28, 2026. Register as of September 30, 2026.
 Out:         Every other vendor. Payments. Anything after September 30.
 Inputs:      inputs/midwest-statement-2026-09.txt (the vendor's view)

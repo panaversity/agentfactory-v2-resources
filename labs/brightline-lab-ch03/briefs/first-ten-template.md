@@ -8,6 +8,7 @@ Outcome:     <what done looks like, in one sentence>
 Why:         <what it is for, and by when>
 
 ## Scope
+Today:       <the date the worker should treat as today, so it never guesses>
 In:          <vendor, period, which balances>
 Out:         <what this task must not touch>
 Inputs:      <each file, and what it is the authority for>

@@ -1,4 +1,4 @@
-# Role Contract: AP Worker                     Draft 1, 3 October 2026 (sample)
+# Role Contract: AP Worker                     Draft 1, 30 September 2026 (sample)
 
 Use this sample only if you did not write your own Draft 1 in Chapter 2.
 If you did, copy your own role/ap-worker-role-contract.md into this folder instead.

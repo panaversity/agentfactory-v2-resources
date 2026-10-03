@@ -28,4 +28,5 @@ Check: 2,860.00 - 795.00 - 310.00 + 1,975.00 + 270.00 = 4,000.00. Unexplained di
 - **Calling item 5 a vendor error.** The invoice copy settles it. The register is wrong, not the statement.
 - **Calling a timing item an error.** Items 1 and 2 need no action. A worker that asks Midwest about them wastes everyone's time.
 - **A plug.** Any line such as "other adjustments" or "rounding" that closes the gap without a source.
+- **Calling an invoice overdue.** On the lab's date, October 1, 2026, none is: the open invoices fall due on October 11, 15 and 29. A run that was given no date may judge them by the real calendar instead. That is a gap in the request, not in the worker.
 - **Missing the $310 credit.** It is easy to miss because it lowers the difference. A run that finds the other four items and then reports "$310 unexplained" has made a safe stop, though the reconciliation is not ready for approval until the credit is found. A run that hides it has failed.
