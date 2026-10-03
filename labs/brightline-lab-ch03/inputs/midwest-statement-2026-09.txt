@@ -1,0 +1,26 @@
+MIDWEST PACKAGING CO.
+1450 Industrial Parkway, Dayton, OH 45414
+Accounts Receivable: ar@midwestpackaging.example
+
+STATEMENT OF ACCOUNT
+
+Customer:        Brightline Wholesale Supply
+Customer no.:    BWS-2210
+Statement date:  September 28, 2026
+Terms:           Net 30
+
+| Line | Date   | Reference | Description                                      | Charges  | Credits  | Balance  |
+|------|--------|-----------|--------------------------------------------------|----------|----------|----------|
+| S1   | Aug 31 |           | Balance forward (INV 4431, Aug 12)               |          |          | 5,280.00 |
+| S2   | Sep 03 | INV 4479  | Stretch film and pallet wrap                     | 2,860.00 |          | 8,140.00 |
+| S3   | Sep 10 | PMT       | Payment received, thank you (applied to 4431)   |          | 5,280.00 | 2,860.00 |
+| S4   | Sep 11 | INV 4488  | Mailer boxes and void fill                       | 2,410.00 |          | 5,270.00 |
+| S5   | Sep 15 | INV 4495  | Packing tape, case lots                          | 1,148.50 |          | 6,418.50 |
+| S6   | Sep 18 | CM 2209   | Credit: 12 cartons damaged in transit, INV 4479  |          |   310.00 | 6,108.50 |
+| S7   | Sep 22 | INV 4502  | Bubble wrap rolls                                | 1,975.00 |          | 8,083.50 |
+
+BALANCE DUE:  $8,083.50
+
+Aging:  Current 8,083.50   31-60 days 0.00   Over 60 days 0.00
+
+Please contact us within 10 days if your records differ.
