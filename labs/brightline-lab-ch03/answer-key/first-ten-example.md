@@ -29,7 +29,7 @@ What makes the worker stop and ask?      Any difference it cannot explain from t
 What must never happen automatically?    Changing the register, recording a credit, or contacting the vendor.
 
 ## Format
-1. Balances: statement, register, difference, each with its date.
-2. A table of reconciling items: description, amount, timing or real, evidence, proposed action, who decides.
-3. The line "Unexplained difference: $X."
-4. Flags and open questions, first-person and short.
+1. Flags and open questions, first-person and short.
+2. Balances: statement, register, difference, each with its date.
+3. A table of reconciling items: description, amount, timing or real, evidence, proposed action, who decides.
+4. The line "Unexplained difference: $X."

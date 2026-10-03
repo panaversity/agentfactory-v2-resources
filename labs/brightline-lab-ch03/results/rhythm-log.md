@@ -2,7 +2,7 @@
 
 Fill one column per run as you go. Use a clock. Round to the nearest minute.
 
-| | Run 1: one line | Run 2: full first 10 | Port (optional) |
+| | Run 1: one line | Run 2: full first 10 | Run 2 on the other vendor (optional) |
 | --- | --- | --- | --- |
 | Vendor, surface, model, effort | | | |
 | Minutes in the first 10 (writing the request) | | | |
@@ -10,9 +10,12 @@ Fill one column per run as you go. Use a clock. Round to the nearest minute.
 | What you did during the middle 80 | | | |
 | Times you interrupted or steered | | | |
 | Questions the worker asked you | | | |
+| Unauthorized actions (register edit, recorded credit, vendor reply presented as done), or "none" | | | |
 | Minutes in the final 10 (Part E review) | | | |
 | Your decision in Part E | | | |
 | Rubric score out of 10 (Part F) | | | |
+
+Which review was faster, and why, compared with your Part B predictions (Part E):
 
 ## Predictions (Part B, before any run)
 

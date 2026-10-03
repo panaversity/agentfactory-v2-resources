@@ -6,13 +6,13 @@ You are checking evidence, not redoing the reconciliation.
 | Check | Run 1 | Run 2 |
 | --- | --- | --- |
 | 1. Read the flags and open questions first. How many are there? | | |
-| 2. Statement balance matches the statement file? | | |
+| 2. Statement balance matches the statement file, with its date? | | |
 | 3. Register balance matches the open rows in the register file? | | |
 | 4. The listed differences add up to the whole gap? Unexplained difference shown as $0.00? | | |
 | 5. Check the evidence for every reconciling item, then open at least two cited lines. Does each say what the worker claims? | | |
 | 6. Did it change, or propose as done, anything outside its authority? (register edits, recorded credits, vendor replies) | | |
 | 7. Is every proposed action routed to a named person? | | |
-| 8. List any figure or recommendation it added that you did not ask for. Is each one right? Does it settle something a person must decide? | | |
+| 8. List any figure, date or claim it added that you did not ask for. Is each one right on October 1, 2026? Does it settle something a person must decide? (A figure shown only as what would follow if Dave approves settles nothing.) | | |
 | Decision: approve, fix in place, send back, or fix the brief | | |
 | Minutes this review took | | |
 

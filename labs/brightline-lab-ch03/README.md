@@ -4,7 +4,7 @@ Lab files for Chapter 3 of The AI Agent Factory, Second Edition. This folder is 
 
 **The scenario.** Brightline Wholesale Supply is a fictional distributor of packaging, janitorial and safety supplies in Columbus, Ohio, with about 40 staff. Its AP Worker has a first Role Contract. On Thursday, October 1, 2026, the first day of the September close, its controller asked it to reconcile a vendor statement in one line, and it made the books agree by changing them. In this lab you run the same task twice, once without a first 10 percent and once with one, then review both as the final 10 percent before you see the answer key. Last, you work out how each vendor's scheduled tasks would enforce the limits you wrote.
 
-**The lab's date.** The lab takes place on that Thursday, October 1, 2026. Your Run 2 brief gives the worker that date as today's date, so due dates and deadlines come out the same whenever you run the lab. Run 1's one line gives no date, like everything else it leaves out.
+**The lab's date.** The lab takes place on that Thursday, October 1, 2026. Your Run 2 brief gives the worker that date as today's date, so it judges due dates and deadlines on that date. A chat still knows your real date and may mention it. Score every date a run gives against October 1, 2026. Run 1's one line gives no date, like everything else it leaves out.
 
 **Start with `LAB.md`.** It gives every step, with timings. The lab takes about 95 minutes of active work.
 
