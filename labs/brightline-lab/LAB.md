@@ -31,7 +31,7 @@ In the results record for your first vendor, fill in the prediction lines. Will 
 
 ## Part C. Run on your first vendor (15 minutes, active)
 
-1. On Claude, open a new conversation. On ChatGPT, open a new chat. Attach the 15 invoice files and send only: "Summarize these invoices." Record what comes back. This is Maria's 2023 habit.
+1. On Claude, open a new conversation. On ChatGPT, open a new chat. Attach the 15 invoice files and send only: "Summarize these invoices." Record what comes back. This is the 2023 habit Chapter 1 opens with: one line, then finishing the job by hand.
 2. Start fresh for the brief. On Claude, open a second new conversation. On ChatGPT, start a ChatGPT Work task. Attach the 15 files again and paste the brief exactly. Keep the default permission settings. On Claude, the default is to ask before taking an action.
 3. While it runs, watch the progress it shows. Answer any question it asks, but add no new instructions.
 4. When it finishes, find the register it delivered. Record where it was saved, by name, and open it there.
@@ -41,6 +41,7 @@ In the results record for your first vendor, fill in the prediction lines. Will 
 1. In the same conversation, ask: "Which files did you create that you did not deliver to me?" Record the answer. If the product cannot tell you, write "not established."
 2. Fill in the rest of the brief-run section of your results record.
 3. Now open `answer-key/answer-key.md` and `answer-key/scoring-rubric.md`. Score the run out of 10 and compare it with your predictions.
+4. Compare the two runs. If the one-line request caught the traps too, that is a finding, not a failure. Look at what each run left you: a named file someone can review, due dates counted by a rule you stated, and limits on what it could do.
 
 ## Part E. Port to the other vendor (20 minutes, active)
 
@@ -64,7 +65,7 @@ This is an observation exercise. Any of the three results below is a valid findi
 
 ## Part G. Make (10 minutes, active)
 
-Complete `role/ap-work-inventory.md`, which starts with one example row. List at least five recurring accounts-payable tasks at Brightline, such as matching invoices to purchase orders or preparing the weekly payment run. Mark which ones this lab's brief covers. If you use the starter repository, commit the folder with tag `ch01`.
+Complete `role/ap-work-inventory.md`, which starts with one example row. List at least five recurring accounts-payable tasks at Brightline, such as matching invoices to purchase orders or preparing the weekly payment run. Mark which ones this lab's brief covers. If you keep the book's running project in a repository, you can commit this folder with tag `ch01`. That is optional.
 
 ## Two ways to finish
 
