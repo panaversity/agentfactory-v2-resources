@@ -17,6 +17,7 @@ If you did not run this vendor, fill in the predictions only. Write "not run" fo
 - Where the register was saved, by name:
 - Files the worker made but did not deliver, if it can tell you:
 - Findings the run flagged, with its evidence:
+- Figures or recommendations it added that you did not ask for, and whether each is right:
 - Questions it asked me:
 - Score from answer-key/scoring-rubric.md: __ / 10
 

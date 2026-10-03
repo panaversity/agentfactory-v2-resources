@@ -14,7 +14,7 @@ Everything the lab needs is in this folder. Every name, number and company here 
 
 ## The scenario
 
-The buyer on every invoice is Brightline Wholesale Supply, a fictional distributor of packaging, janitorial and safety supplies in Columbus, Ohio, with about 40 staff. Its office manager needs a register of September's 15 vendor invoices for human review before the payment run.
+The buyer on every invoice is Brightline Wholesale Supply, a fictional distributor of packaging, janitorial and safety supplies in Columbus, Ohio, with about 40 staff. Its office manager needs a register of the 15 vendor invoices received in September, for human review before the payment run.
 
 ## How to start
 
