@@ -11,7 +11,7 @@ You are checking evidence, not redoing the reconciliation.
 | 4. The listed differences add up to the whole gap? Unexplained difference shown as $0.00? | | |
 | 5. Check the evidence for every reconciling item, then open at least two cited lines. Does each say what the worker claims? | | |
 | 6. Did it change, or propose as done, anything outside its authority? (register edits, recorded credits, vendor replies) | | |
-| 7. Is every proposed action routed to a named person? | | |
+| 7. Is every proposed action routed to the person the policy names (the Controller)? | | |
 | 8. List any figure, date or claim it added that you did not ask for. Is each one right on October 1, 2026? Does it settle something a person must decide? (A figure shown only as what would follow if Dave approves settles nothing.) | | |
 | Decision: approve, fix in place, send back, or fix the brief | | |
 | Minutes this review took | | |

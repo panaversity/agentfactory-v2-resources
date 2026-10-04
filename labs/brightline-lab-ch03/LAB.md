@@ -9,9 +9,10 @@ The task is real AP work: reconcile Midwest Packaging's September statement to B
 ## Part A. Set up (5 minutes)
 
 1. Unzip this folder anywhere. Everything the lab needs is inside it.
-2. Read `inputs/ap-policy-v3-excerpt.md`. It is one page, and it is the rulebook for this task.
-3. If you wrote a Role Contract in Chapter 2, copy your `role/ap-worker-role-contract.md` into `role/`. If not, copy `role/ap-worker-role-contract-draft1-sample.md` to `role/ap-worker-role-contract.md`.
-4. Have a clock ready. You will time each part of each run.
+2. Open each file only when a step names it. Everything in `answer-key/` holds answers. If your AI tool can open folders, such as Cowork or Claude Code, give it only the files a step names, never the whole lab folder.
+3. Read `inputs/ap-policy-v3-excerpt.md`. It is one page, and it is the rulebook for this task.
+4. If you wrote a Role Contract in Chapter 2, copy your `role/ap-worker-role-contract.md` into `role/`. If not, copy `role/ap-worker-role-contract-draft1-sample.md` to `role/ap-worker-role-contract.md`.
+5. Have a clock ready. You will time each part of each run.
 
 ## Part B. Predict (5 minutes)
 
@@ -24,21 +25,21 @@ The task is real AP work: reconcile Midwest Packaging's September statement to B
 2. Paste the one line in `briefs/one-line-request.md`. Add nothing.
 3. While it runs, do not steer. If it asks a question it needs to finish the work, give the shortest true answer. Do not reply to offers of more work.
 4. In a chat, the worker cannot change your register file. If its reply presents an "updated" register, a recorded credit or a vendor reply as already done, treat that as an unauthorized action, exactly like a changed file. If it does none of these, record that too.
-5. Save the full reply as `results/run-1-output.md`. Fill the Run 1 column of the rhythm log, except the last three rows.
+5. Save the full reply as `results/run-1-output.md`. Fill the Run 1 column of the rhythm log, except the last four rows.
 
 ## Part D. Run 2: write the first 10, then stay out of the middle (20 minutes)
 
 1. Copy `briefs/first-ten-template.md` to `briefs/statement-rec-first-ten.md`.
-2. Fill every field. Take no more than 12 minutes. Use the chapter's Concept 3.2 and the policy excerpt. For **Today**, write the lab's date, Thursday, October 1, 2026, whatever today's date is where you are. Two fields matter most: the stop rule, and the authority line that says this task changes nothing.
-3. Open a new conversation. Attach the four files in `inputs/`. Paste your filled brief, without the two instruction lines under its title. On a paid plan you may run it as a task and leave it. Keep the files attached, and before you leave, ask it to list the four files it can see.
+2. Fill every field. Take no more than 12 minutes. Use the chapter's Concept 3.2 and the policy excerpt. Write it from the chapter and the policy, not from Run 1's reply: name nothing Run 1 found, so the same brief would work on next month's statement. For **Today**, write the lab's date, Thursday, October 1, 2026, whatever today's date is where you are. Two fields matter most: the stop rule, and the authority line that says this task changes nothing.
+3. Open a new conversation. Attach the four files in `inputs/`. Paste your filled brief, without the two instruction lines under its title. On a paid plan you may run it as a task and leave it. Attach only the four files in `inputs/`, never the lab folder, and before you leave, ask it to list the four files it can see.
 4. During the run, interrupt only if the worker asks you something or you see it working on the wrong vendor or month. Count every interruption in the log.
-5. Save the full reply as `results/run-2-output.md`. Fill the Run 2 column of the rhythm log, except the last three rows.
+5. Save the full reply as `results/run-2-output.md`. Fill the Run 2 column of the rhythm log, except the last four rows.
 
 ## Part E. The final 10: review both runs (20 minutes)
 
 Do not open `answer-key/` yet. Your review must stand on the evidence each run returned.
 
-1. Work through `results/review-sheet.md` for Run 1, then for Run 2. Time each review.
+1. Work through `results/review-sheet.md` for Run 1, then for Run 2. Time each review, and count the items you had to check in the source files yourself, because the run did not cite them.
 2. For each run, decide: approve, fix in place, send back, or fix the brief. Write the decision in the rhythm log.
 3. Note which review was faster, and why, and compare both runs with your Part B predictions. Write it under the table in the rhythm log. Report what actually happened, even if Run 1 did well.
 
@@ -49,6 +50,8 @@ Do not open `answer-key/` yet. Your review must stand on the evidence each run r
 3. For every point lost, ask the chapter's three questions in order to find where to look first. Did the brief, contract or policy say it? Did the worker act against them? Was the problem visible in the evidence? More than one may apply. Fill the last table in the rhythm log.
 4. Compare your Part E decisions with the scores. If you approved a run that failed the rubric, by scoring under 9 or by taking an unauthorized action, that is a final-10 failure, and the most useful thing this lab can show you.
 5. Compare your brief with `answer-key/first-ten-example.md`. For each point Run 2 lost, find the line in the example that would have kept it.
+
+**Optional: Run 1 without the policy.** If Run 1 scored 9 or more, open a new chat, attach only the statement, the register and the invoice, and paste the one line again. Score it the same way, and fill the rhythm log's last column. The policy did part of your first 10 for Run 1. Dave's 9 a.m. run in the chapter had no policy to lean on.
 
 ## Part G. Modify: Draft 2 of the Role Contract (10 minutes)
 
