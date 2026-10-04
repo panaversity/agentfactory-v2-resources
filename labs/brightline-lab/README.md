@@ -22,4 +22,4 @@ Open LAB.md and follow it in order.
 Write your predictions before you run anything.
 Plan for about 75 minutes of active work, plus one wait of at least a day.
 Do not open answer-key/ until you finish Part D.
-Optional: print each invoice file to PDF to mirror real invoices. If you do, use the PDFs in every run, on both vendors.
+Optional: print each invoice file to PDF to mirror real invoices. If you do, use the PDFs in every run, on both AI vendors.

@@ -1,6 +1,6 @@
 # Results: Claude, <date>
 
-If you did not run this vendor, fill in the predictions only. Write "not run" for the score and the persistence check.
+If you did not run this AI vendor, fill in the predictions only. Write "not run" for the score and the persistence check.
 
 ## Predictions (written before the run)
 - One-line request will: answer / work
