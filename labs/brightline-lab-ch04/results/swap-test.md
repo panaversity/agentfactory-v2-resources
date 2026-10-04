@@ -1,8 +1,8 @@
-# Vendor-swap test
+# Swap test
 
-Brightline moves the AP Worker to the other vendor next week.
+Brightline moves the AP Worker to the other AI vendor next week.
 
-## Rebuild on the new vendor (rented)
+## Rebuild on the new AI vendor (rented)
 
 | Item | What has to be rebuilt |
 | --- | --- |

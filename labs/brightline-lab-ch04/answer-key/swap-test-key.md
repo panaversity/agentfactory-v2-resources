@@ -1,6 +1,6 @@
-# Vendor-swap key
+# Swap test key
 
-## Rebuild on the new vendor (rented)
+## Rebuild on the new AI vendor (rented)
 - Model and effort setting (13)
 - The scheduled task (9), rebuilt from the Triggers line in the Role Contract
 - Channel hookups: the AP inbox connector (11) and the #ap-help connection (12)
@@ -23,4 +23,4 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 - Accept also: the approval record in chat (14), which belongs in DSoR evidence
 
 ## What Dave tells IT
-"The worker is the Role Contract, the policy and the controls, and those stay with us. On the new vendor we rebuild the runtime, the channels and the schedule."
+"The worker is the Role Contract, the policy and the controls, and those stay with us. On the new AI vendor we rebuild the runtime, the channels and the schedule."

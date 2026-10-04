@@ -1,8 +1,8 @@
 # Port table
 
-Use the two boxes in Concept 4.7. Rented items get a product on each vendor. Owned items should not change at all.
+Use the two boxes in Concept 4.7. Rented items get a product on each AI vendor. Owned items should not change at all.
 
-## Rented: what fills it on each vendor
+## Rented: what fills it on each AI vendor
 
 | Item | Anthropic | OpenAI |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ Use the two boxes in Concept 4.7. Rented items get a product on each vendor. Own
 | Channel where staff ask the worker | | |
 | Runtime for the weekly register | | |
 | Hosted runtime, if Brightline later builds its own | | |
-| Memory, and the chat mode that skips it | | |
+| Memory, and chats not saved to memory | | |
 | How the worker reaches the KSoR | | |
 | Trigger: "every Monday morning" | | |
 | Trigger: "starts within one hour of an invoice arriving" | | |
@@ -26,5 +26,5 @@ Use the two boxes in Concept 4.7. Rented items get a product on each vendor. Own
 
 ## Two decisions
 
-1. Which plan would Brightline need on each vendor so the worker answers from the governed KSoR, not from uploaded files?
-2. How would each vendor start work when an invoice arrives, using its everyday product?
+1. Which plan would Brightline need on each AI vendor so the worker answers from the governed KSoR, not from uploaded files?
+2. How would each AI vendor start work when an invoice arrives, using its everyday product?

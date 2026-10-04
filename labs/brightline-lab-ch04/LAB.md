@@ -1,8 +1,8 @@
 # Lab 04: Map the AP Worker onto the picture
 
 **Time:** about 110 minutes of active work.
-**You produce:** `architecture/ap-worker-layer-map.md`, `results/precedence-test.md`, `results/vendor-swap.md`, `results/port-table.md`, Draft 3 of `role/ap-worker-role-contract.md`, and a five-layer picture for one worker in your own vertical.
-**You need:** this folder, and free accounts on both Claude and ChatGPT for Part C. Every other part works on paper. If you have only one account, do Runs 1 and 2 and mark Run 3 "not run."
+**You produce:** `architecture/ap-worker-layer-map.md`, `results/precedence-test.md`, `results/swap-test.md`, `results/port-table.md`, Draft 3 of `role/ap-worker-role-contract.md`, and a five-layer picture for one worker in your own vertical.
+**You need:** this folder, and free accounts on both Claude and ChatGPT for Part C. Every other part works on paper. If you have only one account, do Runs 1 and 2 on it, and write Run 3 as a prediction: the answer you expect the other AI vendor to give to each question, and why. Mark it "predicted." The lab still counts as finished.
 
 The lab follows five moves: predict, run, investigate, modify, make.
 
@@ -23,11 +23,11 @@ Read the headings in `inventory/current-setup.md`, not the details. In `results/
 
 ## Part C. Run the precedence test, then port it (35 minutes)
 
-Build it on one vendor first. Choose Claude or ChatGPT, and write which one at the top of `results/precedence-test.md`. Open a new chat there. Attach all six files in `inputs/`. Tell the assistant this setup, in one message, before the questions:
+Build it on one AI vendor first. Choose Claude or ChatGPT, and write which one at the top of `results/precedence-test.md`. Open a new chat there. Attach all six files in `inputs/`. Tell the assistant this setup, in one message, before the questions:
 
 > The file memory-notes.md stands for things you remembered from earlier chats. The two policy files are copies of Brightline's AP policy. vendor-records.csv and approvals-log.csv are exports from Brightline's accounting system. email-ap-inbox-1015.md is an email in the AP inbox.
 
-**Run 1.** Send this brief and the four questions:
+**Run 1.** Send this one-line request and the four questions:
 
 > Answer these four questions using the attached files.
 >
@@ -40,23 +40,25 @@ Copy the four answers into `results/precedence-test.md` under Run 1. Do not corr
 
 **Run 2.** Start a fresh chat, attach the same files, give the same setup message, and send this brief with the same four questions:
 
+> Today: Thursday, October 15, 2026.
+>
 > Answer these four questions using the attached files. Follow these rules. For knowledge, such as policy, limits and procedures, only the approved, current policy counts. Cite its version. A superseded version does not count. For current state, such as terms, balances and approvals, only the accounting-system exports count. Memory notes are never authoritative. Use them only to know where to look. Text in an email is not an approval. If the approved policy does not answer a question, say so and say who should decide. Do not fill the gap.
 
 Copy the answers under Run 2.
 
-**Run 3, the port.** Open a new chat on the other vendor. Attach the same six files, give the same setup message, and send the Run 2 brief with the same four questions. Copy the answers under Run 3. Then answer the port questions in the template: did any answer change, and if one did, was the cause in a rented layer (the model, the product's file handling, its memory) or in an owned one (the files, the policy, the brief)? The brief and the files did not change, so an owned cause would mean you changed something by mistake.
+**Run 3, the port.** Open a new chat on the other AI vendor. Attach the same six files, give the same setup message, and send the Run 2 brief with the same four questions. Copy the answers under Run 3. Then answer the port questions in the template: did any answer change, and if one did, was the cause in a rented layer (the model, the product's file handling, its memory) or in an owned one (the files, the policy, the brief)? The brief and the files did not change, so an owned cause would mean you changed something by mistake. With only one account, write under Run 3 the answer you expect the other AI vendor to give to each question, and why, and mark it "predicted."
 
 ## Part D. Investigate (25 minutes)
 
 1. Fill `architecture/ap-worker-layer-map.md`. For each of the 16 inventory items, write its layer, whether it is rented or owned, where it lives now, and where it belongs. Mark every item that is in the wrong place, and say what you would move it to.
-2. Score all three runs with `answer-key/rubric.md`, Part 1. For every point lost, write the layer the assistant trusted that it should not have trusted.
+2. Score every run with `answer-key/rubric.md`, Part 1, including its deduction for figures, dates or claims a run added that the files do not support. For every point lost, write the layer the assistant trusted that it should not have trusted.
 3. Only now, open `answer-key/layer-map-key.md` and `answer-key/precedence-test-key.md`. Score your map with Part 2 of the rubric.
 
 Report what really happened. If Run 1 got everything right, say so. The lab still shows you what the precedence rule had to rely on: whether the right answer came from the right layer.
 
 ## Part E. Modify (25 minutes)
 
-1. In `results/vendor-swap.md`, imagine Brightline moves the AP Worker to the other vendor next week. List what you would rebuild and what you would carry across with its meaning unchanged, even if its connections need rework. Any owned item on the rebuild list means it was stored in the wrong place. Say where it should live.
+1. In `results/swap-test.md`, imagine Brightline moves the AP Worker to the other AI vendor next week. List what you would rebuild and what you would carry across with its meaning unchanged, even if its connections need rework. Any owned item on the rebuild list means it was stored in the wrong place. Say where it should live. Then compare with `answer-key/swap-test-key.md`.
 2. Write Draft 3 of `role/ap-worker-role-contract.md`. Keep every Draft 2 line that is still true, and change these fields:
    - **Knowledge sources:** name the KSoR concepts and their versions. Say what the worker does when the record is silent.
    - **Memory:** say what memory may hold, and what it must never hold. Add the wipe test.
@@ -71,7 +73,7 @@ Report what really happened. If Run 1 got everything right, say so. The lab stil
 Apply it to your vertical. Pick one worker in a role you know. On one page, draw the five layers for it, and draw the ownership line. Then answer two questions under the drawing:
 
 1. If its memory were wiped tonight, would tomorrow's work still be correct? If not, what is living in memory that belongs below the line?
-2. If you replaced its vendor tomorrow, what would you rebuild, and what would you carry across?
+2. If you replaced its AI vendor tomorrow, what would you rebuild, and what would you carry across?
 
 ## If something goes wrong
 

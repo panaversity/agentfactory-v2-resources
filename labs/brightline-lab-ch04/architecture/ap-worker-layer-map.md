@@ -9,7 +9,7 @@ Rented or owned: rented sits above the ownership line, owned below. Memory sits 
 | 2 | AP policy v2 | | | | | |
 | 3 | AP policy v3 | | | | | |
 | 4 | Memory: register sort order | | | | | |
-| 5 | Memory: Lakeshore Net 45 | | | | | |
+| 5 | Memory: Lakeshore Net 30 | | | | | |
 | 6 | Memory: approval only over $10,000 | | | | | |
 | 7 | Memory: Midwest statement on the 3rd | | | | | |
 | 8 | Memory: Tri-County two PDFs | | | | | |
