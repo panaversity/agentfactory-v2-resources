@@ -17,7 +17,7 @@ Lab files for Chapter 2 of The AI Agent Factory, Second Edition. This folder is 
 | `invoices/invoice-01.txt` to `invoice-15.txt` | The 15 vendor invoices received in September, for the model runs in Part F |
 | `briefs/contract-test.md` | A portable brief that tests your contract's wording against one email |
 | `briefs/invoice-register.md` | A portable brief for the weekly invoice register, run in Part F |
-| `briefs/invoice-register-port.md` | A blank port log, for moving your runtime choice to the other vendor |
+| `briefs/invoice-register-port.md` | A blank port log, for moving your runtime choice to the other AI vendor |
 | `results/contract-test.md` | Your predictions and the two test results |
 | `results/model-test.md` | Your model runs, scores and port |
 | `answer-key/role-contract-example.md` | A model Draft 1 for the AP Worker |

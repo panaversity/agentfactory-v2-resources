@@ -1,4 +1,4 @@
-# Role Contract: AP Worker                     Draft 1, 3 October 2026
+# Role Contract: AP Worker                     Draft 1, 30 September 2026
 
 This is one good answer, not the only one. Your wording will differ. Score your draft with `role-contract-rubric.md`.
 
@@ -42,7 +42,7 @@ Evaluations: The fifteen September invoices, the fake bank-change email and the 
 ## How it runs and is reached
 Channels:      The AP inbox and the team chat app.
 Triggers:      Monday morning, so the register is ready by 10 a.m. An email from a vendor asking about payment status.
-Runtime needs: Recorded from Part F of the lab, for example "(surface) on (vendor), (model) at (effort), chosen 3 October 2026, the cheapest setting that scored 10 out of 10, confirmed by a second run." The action boundary (what checks authority against real systems) is added in Chapter 4.
+Runtime needs: Recorded from Part F of the lab, for example "(surface) on (AI vendor), (model) at (effort), chosen 30 September 2026, the cheapest setting that scored 10 out of 10, confirmed by a second run." The action boundary (what checks authority against real systems) is added in Chapter 4.
 
 ## Open questions
 - May it send routine payment-status replies without review? (Controller: not decided.)

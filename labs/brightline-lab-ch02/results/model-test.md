@@ -2,7 +2,7 @@
 
 Brief: briefs/invoice-register.md, with the fifteen files in invoices/. Score each run out of 10 with answer-key/scoring-rubric.md and answer-key/answer-key.md, opened after your first run.
 
-| Run | Vendor | Surface | Model | Effort | Score (out of 10) | Start and end time | Usage shown | Date |
+| Run | AI vendor | Surface | Model | Effort | Score (out of 10) | Start and end time | Usage shown | Date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | | | | default | | | | |
 | 2 | | | | one level lower, or the next smaller model | | | | |
@@ -15,6 +15,6 @@ Brief: briefs/invoice-register.md, with the fifteen files in invoices/. Score ea
 
 **Did I rerun it? Why or why not:**
 
-**What I would use on the other vendor, and why:**
+**What I would use on the other AI vendor, and why:**
 
 **Notes** (anything surprising, a missing setting, or an allowance limit):

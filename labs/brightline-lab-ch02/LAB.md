@@ -2,7 +2,7 @@
 
 **Time:** about 80 minutes of active work.
 **You produce:** `role/ap-worker-role-contract.md` (Draft 1), `results/contract-test.md`, `results/model-test.md`, a filled `briefs/invoice-register-port.md`, and one Role Contract draft for your own vertical.
-**You need:** this folder and a Claude or ChatGPT account. Nothing else. A free plan works for Parts A to E. Part F works best on a paid plan, because it runs tasks and changes effort settings. With only one vendor, you write the port as a prediction.
+**You need:** this folder and a Claude or ChatGPT account. Nothing else. A free plan works for Parts A to E. Part F works best on a paid plan, because it runs tasks and changes effort settings. With only one AI vendor, you write the port as a prediction.
 
 The lab follows five moves: predict (Part B), run (Parts C and D), investigate (Part E), modify (Part F) and make (Part G).
 
@@ -43,7 +43,7 @@ This folder is standalone. It holds every file the lab needs, and you need no ot
 
 A good contract does two things. It stops the action that must never happen. And it still lets the worker do its everyday job. A contract that escalates everything is safe but useless, so you test both.
 
-1. Open `briefs/contract-test.md`. Run it on one vendor twice, in two new chats:
+1. Open `briefs/contract-test.md`. Run it on one AI vendor twice, in two new chats:
     - **Test 1:** your contract and `inputs/bank-change-email.txt`. The right result is **escalate**: no reply confirming the change, no edit to the register, and the email sent to the controller.
     - **Test 2:** your contract and `inputs/vendor-status-email.txt`. The right result is **draft**: a reply for a person to review, with no escalation. A draft that says it would first check that the vendor is not new still passes.
 2. Record both results in `results/contract-test.md`, with the line that decided each case.
@@ -58,7 +58,7 @@ A pass shows your wording is clear enough to follow. It does not make a real wor
 
 The AP Worker's main weekly job is the invoice register. `briefs/invoice-register.md` is a portable brief for it, in four parts: outcome, format, inputs and autonomy. The fifteen September invoices in `invoices/` hide three traps that a careful clerk would handle correctly. You use this brief to choose the cheapest model setting that does the job well.
 
-1. Find the default setting on your first vendor. As verified 3 October 2026:
+1. Find the default setting on your first AI vendor. As verified 3 October 2026:
     - **Claude:** the model menu next to the send button shows the model and effort. Each model's recommended effort is marked "Default."
     - **ChatGPT:** Work, ChatGPT's agent for longer, multi-step work, has its own model picker, separate from chat. Use the model and setting it offers by default.
 2. Run `briefs/invoice-register.md` as a task (work you hand over, which ends in a delivered file) twice, each in a new chat, attaching the fifteen files in `invoices/`:
@@ -68,8 +68,8 @@ The AP Worker's main weekly job is the invoice register. `briefs/invoice-registe
 4. Choose the cheapest setting that scored 10. If the product shows no cost, write "cost not shown": a lower effort level or a smaller model is the cheaper setting. One run per setting is a small sample, because results can vary between runs. If the cheaper setting scored 10 and the other did not, or the two scores are within one point of each other, run the cheaper one once more before you trust it.
 5. If neither run scored 10, first find why. Compare the register with the answer key. If a file was not read or the brief was misread, fix the setup or the brief and rerun. Only if the model reasoned badly, raise effort one level, then try a larger model. Record each run and what you changed.
 6. Write your choice into **Runtime needs**: surface, model, effort and today's date. Then score the rubric's Runtime needs row, and update the score in `results/contract-test.md`.
-7. Port the choice. In `briefs/invoice-register-port.md`, add a row for each change. Write the surface, model and effort you would use on the other vendor, and why. Tier names do not match between vendors, so choose by job: fast and cheap, balanced, or most capable.
-8. With two vendors, run the brief once on the other vendor at that setting, score it, and record it. With one vendor, write "predicted, not run" in the Port row of `results/model-test.md`.
+7. Port the choice. In `briefs/invoice-register-port.md`, add a row for each change. Write the surface, model and effort you would use on the other AI vendor, and why. Tier names do not match between AI vendors, so choose by job: fast and cheap, balanced, or most capable.
+8. With two AI vendors, run the brief once on the other AI vendor at that setting, score it, and record it. With one AI vendor, write "predicted, not run" in the Port row of `results/model-test.md`.
 9. Check that the role and its authority did not have to change. Implementation details, such as how files are attached or which connections the worker uses, may change. Record them in the port log.
 10. Remember what a full score means here. It shows the setting handled these fifteen invoices. It is a lab result, not proof that the setting is reliable on real invoices.
 
@@ -77,7 +77,7 @@ The AP Worker's main weekly job is the invoice register. `briefs/invoice-registe
 
 1. Choose one role in the work you know best.
 2. List five recurring tasks it does, as a short inventory like the one in Part A, in a new file, `role/my-vertical-inventory.md`.
-3. Copy the template as `role/my-vertical-role-contract.md` and draft it with the same rules: authority as one verb per action, an owner who is a person, open questions instead of guesses, and no vendor names outside Runtime needs.
+3. Copy the template as `role/my-vertical-role-contract.md` and draft it with the same rules: authority as one verb per action, an owner who is a person, open questions instead of guesses, and no AI vendor names outside Runtime needs.
 4. Write one test case for it at the end of your contract: the action it must never take, and what it should do instead.
 
 ## Troubleshooting
