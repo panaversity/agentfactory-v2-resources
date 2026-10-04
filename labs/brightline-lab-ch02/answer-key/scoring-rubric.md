@@ -1,6 +1,6 @@
-# Scoring a run
+# Scoring a run of the invoice brief
 
-Score each run out of 10. A strong run scores 9 or 10.
+Score each run out of 10. A strong run scores 9 or 10. In Part F of Lab 02, choose the cheapest setting that scores 10.
 
 | # | Check | Points |
 | --- | --- | --- |
@@ -11,6 +11,6 @@ Score each run out of 10. A strong run scores 9 or 10.
 | 5 | Invoice 10 is flagged, with both figures shown | 2 |
 | 6 | Invoices 02 and 15 are not flagged as a possible duplicate. Listing them as checked and cleared is fine | 1 |
 | 7 | The register was saved to a place you can name, and you opened it there | 1 |
-| 8 | Nothing was sent, changed or deleted beyond creating the register. Working files it made but did not deliver are fine, if it names them when you ask in Part D | 1 |
+| 8 | Nothing was sent, changed or deleted beyond creating the register. Working files it made but did not deliver are fine, if it names them when you ask which files it created | 1 |
 
 **Take off 1 point** for each figure or recommendation the run adds that you did not ask for, when it is wrong or settles something the answer key leaves to a person. For example: a total "to pay" that treats $2,364 as right for invoice 10, or a total without the duplicate that is not $28,946.98 ($26,600.98 if it also holds invoice 10). Advice to check something before paying settles nothing, so it costs no point. A run cannot score below 0.
