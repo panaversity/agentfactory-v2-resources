@@ -13,7 +13,7 @@ Each question is worth 2 points: 1 for the correct answer, and 1 for resting it 
 
 **Answer:** yes. Invoices over $5,000.00 need the controller's approval before payment (AP policy v3, section 4.1, approved September 1, 2026). The approvals log shows no approval for 4519 yet.
 **Source that wins:** the KSoR. Limits are knowledge.
-**Common wrong answer:** no, because the limit is $10,000. That trusted the superseded v2 copy or the memory note.
+**Common wrong answer:** no, because the limit is $10,000. That trusted the superseded v1 copy or the memory note.
 
 ## Q3. Tri-County Freight, invoice 5120, $3,960.00
 

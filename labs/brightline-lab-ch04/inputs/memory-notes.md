@@ -7,3 +7,4 @@ These are things the worker remembered from earlier chats. Each line shows when 
 - (August 20) Dave once said that for foreign-currency invoices "we just convert at the bank's rate."
 - (May 30) Maria wants the payment register sorted by due date, earliest first.
 - (September 3) Tri-County Freight sends each invoice as two PDFs: the invoice and the bill of lading.
+- (August 5) Midwest Packaging's monthly statement usually arrives on the 3rd.

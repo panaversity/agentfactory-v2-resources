@@ -11,7 +11,7 @@
 Each item keeps its meaning. Its connections may need rework, and the evaluations are rerun before go-live.
 
 - The Role Contract (15), with the project instructions generated from it
-- The KSoR: AP policy v3 as the current version, v2 retired
+- The KSoR: AP policy v3 as the current version, v1 and v2 retired
 - DSoR controls, approvals and evidence, in place of the accounting connector's direct write access
 - Evaluations and review checks (16)
 - The company's systems: the accounting system, the bank and the vendor records do not move at all

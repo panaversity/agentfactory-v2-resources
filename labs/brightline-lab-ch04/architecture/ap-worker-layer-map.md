@@ -6,7 +6,7 @@ Rented or owned: rented sits above the ownership line, owned below. Memory sits 
 | # | Item | Layer it belongs in | Rented or owned | Where it lives now | Where it belongs | Misplaced? What you would do |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Project instructions | | | | | |
-| 2 | AP policy v2 | | | | | |
+| 2 | AP policy v1 | | | | | |
 | 3 | AP policy v3 | | | | | |
 | 4 | Memory: register sort order | | | | | |
 | 5 | Memory: Lakeshore Net 30 | | | | | |

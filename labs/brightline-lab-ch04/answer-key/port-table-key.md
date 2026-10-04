@@ -13,7 +13,7 @@ From the boxes in Concept 4.7, verified 4 October 2026. Product names change, so
 | Memory, and chats not saved to memory | Claude memory, Incognito chats | Saved memories and chat history, Temporary Chat |
 | How the worker reaches the KSoR | A custom connector over remote MCP, on any plan (one on Free) | A custom MCP app in developer mode: read and fetch on Pro, full support on Business, Enterprise or Edu |
 | Trigger: "every Monday morning" | A weekly scheduled task | A scheduled task |
-| Trigger: "starts within one hour of an invoice arriving" | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above |
+| Trigger: "starts within one hour of an invoice arriving" | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
 
 ## Owned
 
@@ -31,4 +31,4 @@ From the boxes in Concept 4.7, verified 4 October 2026. Product names change, so
 ## Two decisions
 
 1. **Plan.** On Claude, any plan can connect one KSoR through a custom connector. On ChatGPT, Pro gives read and fetch access to a custom MCP app, enough to read the KSoR. Acting through MCP needs a Business or Enterprise workspace. On a plan with neither, the worker could answer only from uploaded files, which brings back the stale-copy problem.
-2. **Trigger.** On ChatGPT, an event-triggered task in Work starts on Gmail activity, on Plus and above. On Claude, the everyday product schedules by time, so an hourly check of the inbox stands in for the event. An hourly check is slower than an event, so the Role Contract states the tolerance: "starts within one hour of an invoice arriving." Both designs meet it.
+2. **Trigger.** On ChatGPT, an event-triggered task in Work starts on Gmail activity, on Plus and above, if the AP inbox is in Gmail. On Claude, the everyday product schedules by time, so an hourly check of the inbox stands in for the event. An hourly check is slower than an event, so the Role Contract states the tolerance: "starts within one hour of an invoice arriving." Both designs meet it.

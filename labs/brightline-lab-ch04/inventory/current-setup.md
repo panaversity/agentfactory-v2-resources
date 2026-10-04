@@ -1,11 +1,11 @@
 # Brightline AP Worker: current setup, week of October 12, 2026
 
-Prepared by IT for Dave Kowalski, Controller. Sixteen items, as they actually stand.
+Prepared by IT for Dave Kowalski, Controller. Sixteen items, as they actually stand. One older memory entry, a remark from Dave about foreign-currency invoices, is not on this list.
 
 | # | Item | What it is | Where it lives today |
 | --- | --- | --- | --- |
 | 1 | Project instructions | 900 words: the worker's job, its limits, how to answer vendors, when to ask Dave | Typed into the shared project in the AI vendor's app. No other copy |
-| 2 | AP policy v2 (PDF) | The AP policy, version 2. Says invoices over $10,000 need the controller's approval | Uploaded to the shared project in June |
+| 2 | AP policy v1 (PDF) | The AP policy, version 1, a copy from March. Says invoices over $10,000 need the controller's approval | Uploaded to the shared project in March |
 | 3 | AP policy v3 (PDF) | The AP policy, version 3, approved by Dave on September 1. Lowers the limit to $5,000 | An attachment in Dave's email |
 | 4 | Memory entry | "Maria wants the payment register sorted by due date, earliest first." | The AI vendor's memory feature |
 | 5 | Memory entry | "Lakeshore Janitorial is Net 30." | The AI vendor's memory feature, from a July chat |
