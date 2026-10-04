@@ -11,9 +11,10 @@ The lab follows five moves: predict (Part B), run (Parts C and D), investigate (
 This folder is standalone. It holds every file the lab needs, and you need no other lab or chapter's files.
 
 1. Unzip `brightline-lab-ch02.zip` and open the `brightline-lab-ch02` folder.
-2. Check that `invoices/` holds fifteen files, `invoice-01.txt` to `invoice-15.txt`, each ending with a TOTAL DUE line.
-3. Copy `role/role-contract-template.md` to `role/ap-worker-role-contract.md`. You write in the copy, never in the template.
-4. Read `role/ap-work-inventory.md`. It lists the recurring accounts-payable work at Brightline today, and who does it. It is the raw material for your Role Contract.
+2. Open each file only when a step names it. Some files hold answers, such as `role/controller-answers.md` and everything in `answer-key/`. Reading them early would shape your work.
+3. Check that `invoices/` holds fifteen files, `invoice-01.txt` to `invoice-15.txt`, each ending with a TOTAL DUE line.
+4. Copy `role/role-contract-template.md` to `role/ap-worker-role-contract.md`. You write in the copy, never in the template. In the copy, delete the first and last lines, the ones that start with three backticks. They only keep the blank template readable in Markdown viewers, such as GitHub's.
+5. Read `role/ap-work-inventory.md`. It lists the recurring accounts-payable work at Brightline today, and who does it. It is the raw material for your Role Contract.
 
 ## Part B. Predict (5 minutes)
 
@@ -30,8 +31,9 @@ This folder is standalone. It holds every file the lab needs, and you need no ot
     - Payment details: never change. Escalate.
 3. You may ask an assistant to help with wording. Do not let it write the Authority field.
 4. For anything only the controller can decide (owner, KPIs, thresholds), write a question under **Open questions** instead of guessing.
-5. Leave **Runtime needs** empty. Part F fills it.
-6. Check that no AI vendor or model name appears anywhere except Runtime needs. Business systems, such as the register spreadsheet or the AP inbox, may be named under Tools and Channels.
+5. In **Evaluations**, you may name the two emails in `inputs/` as test cases, but do not write the result you expect from either. Part E tests your contract on them, and a contract that states the answers would pass even if its rules were unclear.
+6. Leave **Runtime needs** empty. Part F fills it.
+7. Check that no AI vendor or model name appears anywhere except Runtime needs. Business systems, such as the register spreadsheet or the AP inbox, may be named under Tools and Channels.
 
 ## Part D. Ask the controller (5 minutes)
 
@@ -77,7 +79,7 @@ The AP Worker's main weekly job is the invoice register. `briefs/invoice-registe
 
 1. Choose one role in the work you know best.
 2. List five recurring tasks it does, as a short inventory like the one in Part A, in a new file, `role/my-vertical-inventory.md`.
-3. Copy the template as `role/my-vertical-role-contract.md` and draft it with the same rules: authority as one verb per action, an owner who is a person, open questions instead of guesses, and no AI vendor names outside Runtime needs.
+3. Copy the template as `role/my-vertical-role-contract.md`, delete the same two lines, and draft it with the same rules: authority as one verb per action, an owner who is a person, open questions instead of guesses, and no AI vendor names outside Runtime needs.
 4. Write one test case for it at the end of your contract: the action it must never take, and what it should do instead.
 
 ## Troubleshooting
