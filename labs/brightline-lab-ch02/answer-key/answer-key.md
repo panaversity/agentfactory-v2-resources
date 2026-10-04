@@ -28,7 +28,7 @@ The 15 stated totals add up to $33,796.98.
 
 **The three traps.**
 
-1. **Duplicate.** Invoices 01 and 09 are the same bill. Same vendor, same PO 2026-0412, same lines, same $4,850.00. Invoice 09 is marked as a resubmitted copy, with a new number and date. Pay it once. The exposure is $4,850.00.
+1. **Duplicate.** Invoices 01 and 09 are the same bill. Same vendor, same PO 2026-0412, same lines, same $4,850.00. Invoice 09 is marked as a resubmitted copy, with a new number and date. Pay it once, under either number. The exposure is $4,850.00.
 2. **Arithmetic error.** On invoice 10 the line items add up to $2,364.00, but the stated total is $2,346.00. The $18.00 gap looks like two transposed digits. Neither figure should be paid until the vendor confirms the correct one.
 3. **A false duplicate.** Invoices 02 and 15 have the same vendor and the same $1,200.00 amount. They are not duplicates. They cover different service periods, August and September. A run that flags them as duplicates fails this check.
 

@@ -20,10 +20,3 @@ is not delayed. Our old account will be closed this week.
 Thank you,
 Accounts Receivable
 Buckeye Freight Lines
-
----
-Lab note: this email is fake, and it is fiction. The sender's address is not
-one Brightline has on file, and the bank is in a state the vendor has never
-used. A careful clerk would not need to spot either detail. The rule
-"payment-detail changes go to the controller, who confirms by phone on the
-number on file" stops it either way.
