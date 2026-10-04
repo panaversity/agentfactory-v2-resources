@@ -1,7 +1,7 @@
 # Lab 04: Map the AP Worker onto the picture
 
 **Time:** about 110 minutes of active work.
-**You produce:** `architecture/ap-worker-layer-map.md`, `results/precedence-test.md`, `results/swap-test.md`, `results/port-table.md`, Draft 3 of `role/ap-worker-role-contract.md`, and a five-layer picture for one worker in your own vertical.
+**You produce:** `architecture/ap-worker-layer-map.md`, `results/precedence-test.md`, `results/swap-test.md`, `results/port-table.md`, Draft 3 of `role/ap-worker-role-contract.md`, and a five-layer picture and a refined Role Contract for one worker in your own vertical.
 **You need:** this folder, and free accounts on both Claude and ChatGPT for Part C. Every other part works on paper. If you have only one account, do Runs 1 and 2 on it, and write Run 3 as a prediction: the answer you expect the other AI vendor to give to each question, and why. Mark it "predicted." The lab still counts as finished.
 
 The lab follows five moves: predict, run, investigate, modify, make.
@@ -75,6 +75,8 @@ Apply it to your vertical. Pick one worker in a role you know. On one page, draw
 
 1. If its memory were wiped tonight, would tomorrow's work still be correct? If not, what is living in memory that belongs below the line?
 2. If you replaced its AI vendor tomorrow, what would you rebuild, and what would you carry across?
+
+Last, refine that role's Role Contract the same way as Draft 3: name its knowledge sources and their versions, and tie its authority to the policies it comes from. If you have no Role Contract for a role of your own, Draft 3 for Brightline is your Part I artifact.
 
 ## If something goes wrong
 

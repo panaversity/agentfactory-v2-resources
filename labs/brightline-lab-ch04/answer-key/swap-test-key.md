@@ -19,7 +19,7 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 ## Owned things that were on the rebuild list
 - Project instructions (1): the Role Contract, typed only into the product
 - Policy upload (2): knowledge that belongs in the KSoR
-- The trigger, written only inside the scheduled task (9): belongs in the Role Contract
+- The trigger (9), set only as a time: belongs in the Role Contract as a business event
 - Accept also: the approval record in chat (14), which belongs in DSoR evidence
 
 ## What Dave tells IT
