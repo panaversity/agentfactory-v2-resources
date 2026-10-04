@@ -18,7 +18,7 @@ Skills:            <procedures it follows>
 Tools:             <systems it can call>
 
 ## What bounds it
-Authority:   <for each action: observe, recommend, draft, execute or escalate>
+Authority:   <for each action: observe, recommend, draft, execute, escalate or never>
 Escalation:  <when it stops, and whom it asks>
 Evaluations: <the cases it must pass, and how often it is checked>
 
