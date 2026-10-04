@@ -2,9 +2,9 @@
 
 Fill one column per run as you go. Use a clock. Round to the nearest minute.
 
-| | Run 1: one line | Run 2: full first 10 | Run 2 on the other vendor (optional) |
+| | Run 1: one line | Run 2: full first 10 | Run 2 on the other AI vendor (optional) |
 | --- | --- | --- | --- |
-| Vendor, surface, model, effort | | | |
+| AI vendor, surface, model, effort | | | |
 | Minutes in the first 10 (writing the request) | | | |
 | Minutes you spent during the middle 80 | | | |
 | What you did during the middle 80 | | | |

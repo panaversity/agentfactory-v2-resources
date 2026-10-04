@@ -1,6 +1,6 @@
 # Lab 03: One task through the whole rhythm
 
-**Time:** about 95 minutes of active work, plus the time the two runs take.
+**Time:** about 2 hours of active work, plus the time the two runs take.
 **You produce:** `briefs/statement-rec-first-ten.md`, `results/run-1-output.md`, `results/run-2-output.md`, a filled `results/rhythm-log.md` and `results/review-sheet.md`, Draft 2 of `role/ap-worker-role-contract.md`, a filled `results/authority-port.md`, and a first-10 sheet and review checklist for one task in your own vertical.
 **You need:** this folder and a Claude or ChatGPT account. A free plan works for every part, including the port in Part H, which is done on paper. A paid plan also lets you run Run 2 as a task that you hand over and leave, rather than in a chat.
 
@@ -34,7 +34,7 @@ The task is real AP work: reconcile Midwest Packaging's September statement to B
 4. During the run, interrupt only if the worker asks you something or you see it working on the wrong vendor or month. Count every interruption in the log.
 5. Save the full reply as `results/run-2-output.md`. Fill the Run 2 column of the rhythm log, except the last three rows.
 
-## Part E. The final 10: review both runs (15 minutes)
+## Part E. The final 10: review both runs (20 minutes)
 
 Do not open `answer-key/` yet. Your review must stand on the evidence each run returned.
 
@@ -42,7 +42,7 @@ Do not open `answer-key/` yet. Your review must stand on the evidence each run r
 2. For each run, decide: approve, fix in place, send back, or fix the brief. Write the decision in the rhythm log.
 3. Note which review was faster, and why, and compare both runs with your Part B predictions. Write it under the table in the rhythm log. Report what actually happened, even if Run 1 did well.
 
-## Part F. Investigate (10 minutes)
+## Part F. Investigate (15 minutes)
 
 1. Now open `answer-key/reconciliation-answer-key.md`, `answer-key/run-rubric.md` and `answer-key/first-ten-example.md`.
 2. Score both runs out of 10, including the rubric's deduction for figures, dates or claims a run added that you did not ask for. Judge every date against the lab's date, October 1, 2026. Write the scores in the rhythm log.
@@ -60,18 +60,18 @@ The reconciliation exposed gaps in Draft 1. It gave the worker authority to upda
 4. Add the September statement to Evaluations, with its passing score. Add the review checks Dave will use before he approves a register or a reconciliation.
 5. Only now, compare with `answer-key/role-contract-draft2-example.md`.
 
-## Part H. Port the authority line (10 minutes)
+## Part H. Port the authority line (15 minutes)
 
-A limit written in the Role Contract is a statement. A product setting can enforce part of it. This part shows you which part, on each vendor. You do it on paper, from Concept 3.7, so you do not need either product's scheduled tasks.
+A limit written in the Role Contract is a statement. A product setting can enforce part of it. This part shows you which part, on each AI vendor. You do it on paper, from Concept 3.7, so you do not need either product's scheduled tasks.
 
 1. Copy the reconciliation lines from your Draft 2 (authority, escalation, the stop rule) into `results/authority-port.md`.
 2. Imagine Brightline runs this reconciliation every month as a scheduled task. For each limit, write how you would set it on Claude's scheduled tasks and on ChatGPT's scheduled tasks: what you would connect or not connect, and which approval setting you would use.
 3. In the last column, mark each limit as one of the three kinds in the chapter's Figure 3.4: **impossible** (the task has no access path to do it), **person decides** (an approval step stops it until someone reviews it), or **brief and review** (it needs judgment, so the instructions and your final 10 hold it, with automated checks for any measurable part).
 4. Answer the two questions at the bottom of the file. Then compare with `answer-key/authority-port-example.md`.
 
-**Optional rerun.** If you have both vendors, run your Run 2 brief on the other one and fill the third column of the rhythm log. A good first 10 needs almost no change, because it names no product.
+**Optional rerun.** If you have both AI vendors, run your Run 2 brief on the other one and fill the third column of the rhythm log. A good first 10 needs almost no change, because it names no product.
 
-## Part I. Make: apply it to your vertical (10 minutes)
+## Part I. Make: apply it to your vertical (15 minutes)
 
 1. Choose one recurring task from a role you know well.
 2. Copy `briefs/first-ten-template.md` to `briefs/my-task-first-ten.md` and fill it. For a recurring task, write Today as the date each run starts. Give it at least one stop rule and one "never automatically" line.

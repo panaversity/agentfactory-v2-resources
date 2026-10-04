@@ -8,7 +8,7 @@ Authority:
 Escalation:
 Stop rule:
 
-## How each vendor would enforce them
+## How each AI vendor would enforce them
 
 Kinds: impossible (no access path), person decides (approval step), brief and review (needs judgment, with automated checks for any measurable part).
 
@@ -22,6 +22,6 @@ Kinds: impossible (no access path), person decides (approval step), brief and re
 
 ## Two questions
 
-1. Which limits can no product setting enforce on either vendor? What holds them instead?
+1. Which limits can no product setting enforce on either AI vendor? What holds them instead?
 
 2. If the register connection offers no read-only option, what kind does "never change the register" drop to, and what should you write in the Role Contract's open questions?
