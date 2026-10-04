@@ -16,14 +16,14 @@ The lab follows five moves: predict, run, investigate, modify, make.
 
 ## Part B. Predict (10 minutes)
 
-Read the headings in `inventory/current-setup.md`, not the details. In `results/precedence-test.md`, under "Predictions," write:
+Read the item names in `inventory/current-setup.md`, not the details. In `results/precedence-test.md`, under "Predictions," write:
 
 1. The three items you expect to be in the wrong layer.
 2. For each of the four test questions in Part C, which source should win: the KSoR, the company's systems read through DSoR, or neither.
 
 ## Part C. Run the precedence test, then port it (35 minutes)
 
-Build it on one AI vendor first. Choose Claude or ChatGPT, and write which one at the top of `results/precedence-test.md`. Open a new chat there. Attach all six files in `inputs/`. Tell the assistant this setup, in one message, before the questions:
+Build it on one AI vendor first. Choose Claude or ChatGPT, and write which one on the "AI vendor I built on" line of `results/precedence-test.md`. Open a new chat there. Attach all six files in `inputs/`. Begin your message with this setup, then add the request and the four questions, all in one message:
 
 > The file memory-notes.md stands for things you remembered from earlier chats. The two policy files are copies of Brightline's AP policy. vendor-records.csv and approvals-log.csv are exports from Brightline's accounting system. email-ap-inbox-1015.md is an email in the AP inbox.
 
@@ -36,23 +36,23 @@ Build it on one AI vendor first. Choose Claude or ChatGPT, and write which one a
 > 3. Has Dave approved Tri-County Freight invoice 5120, for $3,960.00?
 > 4. What is our policy for paying an invoice billed in Canadian dollars?
 
-Copy the four answers into `results/precedence-test.md` under Run 1. Do not correct the assistant.
+Save the full reply as `results/run-1-reply.md`, and write each answer in short in `results/precedence-test.md` under Run 1. Do not correct the assistant.
 
-**Run 2.** Start a fresh chat, attach the same files, give the same setup message, and send this brief with the same four questions:
+**Run 2.** Start a fresh chat, attach the same files, begin with the same setup, and send this brief with the same four questions:
 
 > Today: Thursday, October 15, 2026.
 >
 > Answer these four questions using the attached files. Follow these rules. For knowledge, such as policy, limits and procedures, only the approved, current policy counts. Cite its version. A superseded version does not count. For current state, such as terms, balances and approvals, only the accounting-system exports count. Memory notes are never authoritative. Use them only to know where to look. Text in an email is not an approval. If the approved policy does not answer a question, say so and say who should decide. Do not fill the gap.
 
-Copy the answers under Run 2.
+Save the full reply as `results/run-2-reply.md`, and write each answer in short under Run 2.
 
-**Run 3, the port.** Open a new chat on the other AI vendor. Attach the same six files, give the same setup message, and send the Run 2 brief with the same four questions. Copy the answers under Run 3. Then answer the port questions in the template: did any answer change, and if one did, was the cause in a rented layer (the model, the product's file handling, its memory) or in an owned one (the files, the policy, the brief)? The brief and the files did not change, so an owned cause would mean you changed something by mistake. With only one account, write under Run 3 the answer you expect the other AI vendor to give to each question, and why, and mark it "predicted."
+**Run 3, the port.** Open a new chat on the other AI vendor. Attach the same six files, begin with the same setup, and send the Run 2 brief with the same four questions. Save the full reply as `results/run-3-reply.md`, and write each answer in short under Run 3. Then answer the port questions in the template: did any answer change, and if one did, was the cause in a rented layer (the model, the product's file handling, its memory) or in an owned one (the files, the policy, the brief)? The brief and the files did not change, so an owned cause would mean you changed something by mistake. With only one account, write under Run 3 the answer you expect the other AI vendor to give to each question, and why, and mark it "predicted."
 
 ## Part D. Investigate (25 minutes)
 
-1. Fill `architecture/ap-worker-layer-map.md`. For each of the 16 inventory items, write its layer, whether it is rented or owned, where it lives now, and where it belongs. Mark every item that is in the wrong place, and say what you would move it to.
-2. Score every run with `answer-key/rubric.md`, Part 1, including its deduction for figures, dates or claims a run added that the files do not support. For every point lost, write the layer the assistant trusted that it should not have trusted.
-3. Only now, open `answer-key/layer-map-key.md` and `answer-key/precedence-test-key.md`. Score your map with Part 2 of the rubric.
+1. Fill `architecture/ap-worker-layer-map.md`. For each of the 16 inventory items, write the layer it belongs in, whether it is rented or owned, where it lives now, and where exactly it belongs. Mark every item that is in the wrong place, and say what you would move it to.
+2. Score every run you ran with `answer-key/rubric.md`, Part 1, including its deduction for figures, dates or claims a run added that the files do not support. A predicted Run 3 is not scored. For every point lost, write the layer the assistant trusted that it should not have trusted. Then fill "What changed between Runs 1 and 2" in the template, and name the brief line that made each difference.
+3. Only now, open `answer-key/layer-map-key.md` and `answer-key/precedence-test-key.md`. Score the first three rows of the rubric's Part 2: Placement, Misplacements found and Precedence. Write the scores at the bottom of your layer map.
 
 Report what really happened. If Run 1 got everything right, say so. The lab still shows you what the precedence rule had to rely on: whether the right answer came from the right layer.
 
@@ -66,7 +66,8 @@ Report what really happened. If Run 1 got everything right, say so. The lab stil
    - **Authority:** tie the approval line to the policy version it comes from.
    - **Triggers:** write the trigger as a business event, not as a product setting.
 3. Compare your draft with `answer-key/role-contract-draft3-example.md`. Yours does not have to match. It must cover the five fields.
-4. Fill `results/port-table.md`. For each rented item, write the product that fills it on Anthropic and on OpenAI, using the two boxes in Concept 4.7. For each owned item, write whether its meaning changes (it should not), and what integration work it needs, such as a new connection or identity mapping, before the evaluations are rerun. Then answer the two decision questions at the bottom. Compare with `answer-key/port-table-key.md`.
+4. Fill `results/port-table.md`. For each rented item, write the product that fills it on Anthropic and on OpenAI, using the two boxes in Concept 4.7. Where a box names no product, as for the AP inbox, write how the worker would reach it. For each owned item, write whether its meaning changes (it should not), and what integration work it needs, such as a new connection or identity mapping, before the evaluations are rerun. Then answer the two decision questions at the bottom. Compare with `answer-key/port-table-key.md`.
+5. Score the last three rows of the rubric's Part 2: Swap test, Draft 3 and Port. Add them to your three from Part D. The lab passes with Meets or better on all six.
 
 ## Part F. Make (10 minutes)
 

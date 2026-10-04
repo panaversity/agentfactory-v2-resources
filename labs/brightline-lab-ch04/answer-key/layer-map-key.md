@@ -13,7 +13,7 @@ Seven items are misplaced: 1, 2, 3, 5, 6, 10 and 14. Item 9 is placed correctly 
 | 7 | Memory: Midwest statement on the 3rd | Memory | On the line | No | Experience about where and when to look. Wiping it loses nothing correct. |
 | 8 | Memory: Tri-County two PDFs | Memory | On the line | No | Experience. Harmless if wiped. |
 | 9 | Scheduled task | Runtime | Rented | No, with a note | Rebuilding it on another AI vendor is normal. Write the trigger itself in the Role Contract as a business event, so the definition survives the swap. |
-| 10 | Connector: accounting system | Should be DSoR operations | Owned controls over company systems | **Yes** | It writes to the register and changes status with Maria's login and no checks. Replace write access with governed operations: read terms, propose a register change, request approval. Give the worker its own identity. |
+| 10 | Connector: accounting system | Should be DSoR operations | The connector is rented. The controls over company systems are owned | **Yes** | It writes to the register and changes status with Maria's login and no checks. Replace write access with governed operations: read terms, propose a register change, request approval. Give the worker its own identity. |
 | 11 | Connector: AP inbox | Channel | Rented | No | Where vendors reach the worker. Read-only is right. |
 | 12 | Team chat #ap-help | Channel | Rented | No | Where staff reach the worker. |
 | 13 | Model and effort setting | Runtime | Rented | No | Replaceable. Record the choice under Runtime needs. |

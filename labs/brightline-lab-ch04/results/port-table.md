@@ -1,6 +1,6 @@
 # Port table
 
-Use the two boxes in Concept 4.7. Rented items get a product on each AI vendor. Owned items should not change at all.
+Use the two boxes in Concept 4.7. Rented items get a product on each AI vendor. Owned items keep their meaning, though their connections may need work.
 
 ## Rented: what fills it on each AI vendor
 
@@ -9,7 +9,7 @@ Use the two boxes in Concept 4.7. Rented items get a product on each AI vendor. 
 | Channel where vendors reach the worker | | |
 | Channel where staff ask the worker | | |
 | Runtime for the weekly register | | |
-| Hosted runtime, if Brightline later builds its own | | |
+| Runtime the AI vendor hosts, if Brightline later builds its own worker | | |
 | Memory, and chats not saved to memory | | |
 | How the worker reaches the KSoR | | |
 | Trigger: "every Monday morning" | | |

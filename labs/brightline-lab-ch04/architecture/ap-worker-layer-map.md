@@ -3,7 +3,7 @@
 Layers: Channels (connect), Runtime (executes), Memory (remembers), KSoR (knows), DSoR (acts). Also allowed: Role Contract, Evaluations, Company systems.
 Rented or owned: rented sits above the ownership line, owned below. Memory sits on the line.
 
-| # | Item | Layer | Rented or owned | Where it lives now | Where it belongs | Misplaced? What you would do |
+| # | Item | Layer it belongs in | Rented or owned | Where it lives now | Where it belongs | Misplaced? What you would do |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Project instructions | | | | | |
 | 2 | AP policy v2 | | | | | |
@@ -23,3 +23,5 @@ Rented or owned: rented sits above the ownership line, owned below. Memory sits 
 | 16 | Evaluations | | | | | |
 
 Number of items you marked misplaced:
+
+Rubric Part 2 scores (Not yet 1, Meets 2, Exceeds 3): Placement __, Misplacements found __, Precedence __, Swap test __, Draft 3 __, Port __. Total, out of 18: __

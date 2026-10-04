@@ -17,6 +17,6 @@ Prepared by IT for Dave Kowalski, Controller. Sixteen items, as they actually st
 | 11 | Connector: AP inbox | Reads the AP email inbox | Set up in the AI vendor's app |
 | 12 | Team chat channel #ap-help | Where staff ask the worker questions | Brightline's team messaging tool |
 | 13 | Model and effort setting | The model tier and effort level chosen in Chapter 2 | The AI vendor's app |
-| 14 | Approval record | Dave approves each Thursday payment run by replying "approved" in #ap-help | Team chat history |
+| 14 | Approval record | Dave approves each weekly payment run on Thursday by replying "approved" in #ap-help | Team chat history |
 | 15 | Role Contract, Draft 2 | The worker's definition: owner, responsibilities, authority, escalation, evaluations | `role/ap-worker-role-contract.md` in the shared drive |
 | 16 | Evaluations | The September Midwest Packaging statement case, and the review checks Dave uses | Listed in the Role Contract, data in the shared drive |
