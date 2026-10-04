@@ -1,6 +1,6 @@
 # The first 10 percent: <task name>                 <date>
 
-Copy this file to briefs/statement-rec-first-ten.md and fill every field.
+Copy this file and fill every field: to briefs/statement-rec-first-ten.md in Part D, or briefs/my-task-first-ten.md in Part I. Keep it to about one page.
 Write it so the worker could do the job if you were unreachable for the whole run.
 
 ## Intent
@@ -24,4 +24,4 @@ What makes the worker stop and ask?      <...>
 What must never happen automatically?    <...>
 
 ## Format
-<the shape of the answer you will review>
+<the shape of the answer you will review, with flags and open questions first>
