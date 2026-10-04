@@ -7,11 +7,11 @@ Prepared by IT for Dave Kowalski, Controller. Sixteen items, as they actually st
 | 1 | Project instructions | 900 words: the worker's job, its limits, how to answer vendors, when to ask Dave | Typed into the shared project in the AI vendor's app. No other copy |
 | 2 | AP policy v1 (PDF) | The AP policy, version 1, a copy from March. Says invoices over $10,000 need the controller's approval | Uploaded to the shared project in March |
 | 3 | AP policy v3 (PDF) | The AP policy, version 3, approved by Dave on September 1. Lowers the limit to $5,000 | An attachment in Dave's email |
-| 4 | Memory entry | "Maria wants the payment register sorted by due date, earliest first." | The AI vendor's memory feature |
-| 5 | Memory entry | "Lakeshore Janitorial is Net 30." | The AI vendor's memory feature, from a July chat |
-| 6 | Memory entry | "Controller approval is needed only for invoices over $10,000." | The AI vendor's memory feature, from a June chat |
-| 7 | Memory entry | "Midwest Packaging's monthly statement usually arrives on the 3rd." | The AI vendor's memory feature |
-| 8 | Memory entry | "Tri-County Freight sends each invoice as two PDFs: the invoice and the bill of lading." | The AI vendor's memory feature |
+| 4 | Memory: register sort order | "Maria wants the payment register sorted by due date, earliest first." | The AI vendor's memory feature |
+| 5 | Memory: Lakeshore Net 30 | "Lakeshore Janitorial is Net 30." | The AI vendor's memory feature, from a July chat |
+| 6 | Memory: approval only over $10,000 | "Controller approval is needed only for invoices over $10,000." | The AI vendor's memory feature, from a June chat |
+| 7 | Memory: Midwest statement on the 3rd | "Midwest Packaging's monthly statement usually arrives on the 3rd." | The AI vendor's memory feature |
+| 8 | Memory: Tri-County two PDFs | "Tri-County Freight sends each invoice as two PDFs: the invoice and the bill of lading." | The AI vendor's memory feature |
 | 9 | Scheduled task | "Every Monday at 7 a.m., build the invoice register from the AP inbox." | The AI vendor's scheduling feature |
 | 10 | Connector: accounting system | Reads invoices, vendor records and payments. Can also create and update register rows and change invoice status | Set up in the AI vendor's app with Maria's login |
 | 11 | Connector: AP inbox | Reads the AP email inbox | Set up in the AI vendor's app |

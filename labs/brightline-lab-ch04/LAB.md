@@ -18,7 +18,7 @@ The lab follows five moves: predict, run, investigate, modify, make.
 
 Read the item names in `inventory/current-setup.md`, not the details. In `results/precedence-test.md`, under "Predictions," write:
 
-1. The three items you expect to be in the wrong layer.
+1. The items you expect to be in the wrong layer.
 2. For each of the four test questions in Part C, which source should win: the KSoR, the company's systems read through DSoR, or neither.
 
 ## Part C. Run the precedence test, then port it (35 minutes)
@@ -50,7 +50,7 @@ Save the full reply as `results/run-2-reply.md`, and write each answer in short 
 
 ## Part D. Investigate (25 minutes)
 
-1. Fill `architecture/ap-worker-layer-map.md`. For each of the 16 inventory items, write the layer it belongs in, whether it is rented or owned, where it lives now, and where exactly it belongs. Mark every item that is in the wrong place, and say what you would move it to.
+1. Fill `architecture/ap-worker-layer-map.md`. For each of the 16 inventory items, write the layer it belongs in, whether it is rented or owned, where it lives now, and where exactly it belongs. Memory sits on the ownership line (Figure 4.1), so for a memory item that belongs in memory, write "on the line". Brightline's memory is the AI vendor's feature, so in Part E it goes on the rebuild list. Mark every item that is in the wrong place, and say what you would move it to.
 2. Score every run you ran with `answer-key/rubric.md`, Part 1, including its deduction for figures, dates or claims a run added that the files do not support. A predicted Run 3 is not scored. For every point lost, write the layer the assistant trusted that it should not have trusted. Then fill "What changed between Runs 1 and 2" in the template, and name the brief line that made each difference.
 3. Only now, open `answer-key/layer-map-key.md` and `answer-key/precedence-test-key.md`. Score the first three rows of the rubric's Part 2: Placement, Misplacements found and Precedence. Write the scores at the bottom of your layer map.
 
