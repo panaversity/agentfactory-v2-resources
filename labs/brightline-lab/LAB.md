@@ -2,15 +2,15 @@
 
 Chapter 1 build step, The AI Agent Factory, Second Edition.
 
-In this lab you run one brief that names no vendor on one vendor, then port it to the other. You see where the work runs, where results are kept, and which changes belong to the runtime rather than to your brief. You also collect the raw material for the AP Worker's Role Contract, which you draft in Chapter 2.
+In this lab you run one brief that names no AI vendor on one AI vendor, then port it to the other. You see where the work runs, where results are kept, and which changes belong to the runtime rather than to your brief. You also collect the raw material for the AP Worker's Role Contract, which you draft in Chapter 2.
 
 **The scenario.** Brightline Wholesale Supply is a distributor in Columbus, Ohio, with about 40 staff. Its office manager receives 15 vendor invoices in September 2026 and needs a register of them for human review before the payment run. The invoices hide three traps: a duplicate bill, an arithmetic error, and two bills that only look like duplicates.
 
 **Time.** About 75 minutes of active work, plus one wait of at least a day before Part F.
 
-**What you need.** An account on at least one of the two vendors, Anthropic or OpenAI, that can attach files to agentic work, and a plain-text editor. No code and no starter repository.
+**What you need.** An account on at least one of the two AI vendors, Anthropic or OpenAI, that can attach files to agentic work, and a plain-text editor. No code and no starter repository.
 
-**Which vendor first.** You can start on either. These steps use Claude first and ChatGPT Work second, as the book's example does. If you start on ChatGPT, swap the two: use `results/chatgpt.md` in Parts B to D and `results/claude.md` in Part E. With only one vendor, see "Two ways to finish" below.
+**Which AI vendor first.** You can start on either. These steps use Claude first and ChatGPT Work second, as the book's example does. If you start on ChatGPT, swap the two: use `results/chatgpt.md` in Parts B to D and `results/claude.md` in Part E. With only one AI vendor, see "Two ways to finish" below.
 
 **Rules for the whole lab.**
 
@@ -23,13 +23,13 @@ In this lab you run one brief that names no vendor on one vendor, then port it t
 
 1. Unzip this folder. The 15 invoices are in `invoices`.
 2. Read the brief in `briefs/invoice-register.md`. It has four parts: outcome, format, inputs and autonomy. Chapter 5 teaches this Four-Part Brief in full.
-3. Blank results records are in `results/claude.md` and `results/chatgpt.md`. Use the one for the vendor you run first.
+3. Blank results records are in `results/claude.md` and `results/chatgpt.md`. Use the one for the AI vendor you run first.
 
 ## Part B. Predict (5 minutes, active)
 
-In the results record for your first vendor, fill in the prediction lines. Will a one-line request get an answer or work? With the brief, where will the register be saved? Will the run catch the duplicate, catch the arithmetic error, and leave the two cleaning invoices alone?
+In the results record for your first AI vendor, fill in the prediction lines. Will a one-line request get an answer or work? With the brief, where will the register be saved? Will the run catch the duplicate, catch the arithmetic error, and leave the two cleaning invoices alone?
 
-## Part C. Run on your first vendor (15 minutes, active)
+## Part C. Run on your first AI vendor (15 minutes, active)
 
 1. On Claude, open a new conversation. On ChatGPT, open a new chat. Attach the 15 invoice files and send only: "Summarize these invoices." Record what comes back. This is the 2023 habit Chapter 1 opens with: one line, then finishing the job by hand.
 2. Start fresh for the brief. On Claude, open a second new conversation. On ChatGPT, start a ChatGPT Work task. Attach the 15 files again and paste the brief exactly. Keep the default permission settings. On Claude, the default is to ask before taking an action.
@@ -43,10 +43,10 @@ In the results record for your first vendor, fill in the prediction lines. Will 
 3. Now open `answer-key/answer-key.md` and `answer-key/scoring-rubric.md`. Score the run out of 10 and compare it with your predictions.
 4. Compare the two runs. If the one-line request caught the traps too, that is a finding, not a failure. Look at what each run left you: a named file someone can review, due dates counted by a rule you stated, and limits on what it could do.
 
-## Part E. Port to the other vendor (20 minutes, active)
+## Part E. Port to the other AI vendor (20 minutes, active)
 
 1. Write fresh predictions in the other results record.
-2. On the other vendor, start the same kind of run as in Part C step 2. Attach the same 15 files and paste the same brief, unchanged.
+2. On the other AI vendor, start the same kind of run as in Part C step 2. Attach the same 15 files and paste the same brief, unchanged.
 3. If the run cannot proceed, try a runtime setting first. Change the input packaging or the brief only if a setting cannot fix it. Make the smallest change that works.
 4. Log every change in `briefs/invoice-register-port.md`. Mark each one as a brief change, a setting change or an input-packaging change, and say why it was needed.
 5. Repeat Part C step 1 and all of Part D for this run. Score it too.
@@ -55,7 +55,7 @@ In the results record for your first vendor, fill in the prediction lines. Will 
 
 This is an observation exercise. Any of the three results below is a valid finding.
 
-1. On either vendor, open a new conversation. Attach the same 15 files again. Paste the brief without its last Format line, "Deliver the register as a spreadsheet file."
+1. On either AI vendor, open a new conversation. Attach the same 15 files again. Paste the brief without its last Format line, "Deliver the register as a spreadsheet file."
 2. Let it finish. Record what it produced and where, if anywhere, it says the result was saved.
 3. Wait at least one day. Then, for the Part C register, the Part F output and the summary text in each conversation, record one result in the persistence section of your results file:
    - **Still available**, and where you found it
@@ -69,8 +69,8 @@ Complete `role/ap-work-inventory.md`, which starts with one example row. List at
 
 ## Two ways to finish
 
-- **With both vendors.** Two scored results records, a port log of the actual port, a completed persistence check, and the work inventory.
-- **With one vendor.** One scored results record with a completed persistence check. In the other results record, predictions only, with the score and persistence check marked "not run." A port log written as a prediction of what would change, marked "predicted." And the work inventory.
+- **With both AI vendors.** Two scored results records, a port log of the actual port, a completed persistence check, and the work inventory.
+- **With one AI vendor.** One scored results record with a completed persistence check. In the other results record, predictions only, with the score and persistence check marked "not run." A port log written as a prediction of what would change, marked "predicted." And the work inventory.
 
 A strong run scores 9 or 10.
 
@@ -78,7 +78,7 @@ A strong run scores 9 or 10.
 
 - **The surface will not take 15 files.** Combine them into one file, `invoices-all.txt`, and change the Inputs line of the brief to name that file. Log both as one input-packaging change.
 - **The merged Claude experience has not reached your plan.** Run the brief wherever your plan offers tasks, and record what you saw. That record is itself a lesson in Concept 1.6.
-- **You have access to only one vendor.** Use the one-vendor path under "Two ways to finish."
+- **You have access to only one AI vendor.** Use the one-AI-vendor path under "Two ways to finish."
 - **A run scores low.** Do not fix the output by hand. Record which check failed and keep it for Chapter 6, which teaches the review contract.
 
 The port log is the point of the lab. What changed in the port belongs to the runtime. What did not change is the specification, and the specification is yours.
