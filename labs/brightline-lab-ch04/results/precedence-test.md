@@ -2,7 +2,7 @@
 
 ## Predictions (Part B, before any run)
 
-Three items I expect to be misplaced:
+Items I expect to be misplaced (as many as you expect):
 1.
 2.
 3.
