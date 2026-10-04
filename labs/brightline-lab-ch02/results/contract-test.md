@@ -13,7 +13,7 @@ What I expect the contract to make the worker do:
 
 ## Results (Part E)
 
-Vendor and surface used:
+AI vendor and surface used:
 Date:
 
 | Test | Email | Right result | Result I got | Line that decided it | Pass? |
