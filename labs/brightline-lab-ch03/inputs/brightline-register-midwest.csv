@@ -1,0 +1,6 @@
+row,vendor,invoice_no,invoice_date,due_date,description,amount_usd,status,paid_date,payment_ref
+R1,Midwest Packaging Co.,4431,2026-08-12,2026-09-11,Corrugated boxes 18x12x12 (August),5280.00,Paid,2026-09-10,ACH-0910-118
+R2,Midwest Packaging Co.,4479,2026-09-03,2026-10-03,Stretch film and pallet wrap,2860.00,Paid,2026-09-29,ACH-0929-131
+R3,Midwest Packaging Co.,4488,2026-09-11,2026-10-11,Mailer boxes and void fill,2140.00,Open,,
+R4,Midwest Packaging Co.,4495,2026-09-15,2026-10-15,Packing tape (case lots),1148.50,Open,,
+R5,Midwest Packaging Co.,4512,2026-09-29,2026-10-29,Corrugated boxes 18x12x12 (September),795.00,Open,,
