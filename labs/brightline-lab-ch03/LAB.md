@@ -21,7 +21,7 @@ The task is real AP work: reconcile Midwest Packaging's September statement to B
 
 ## Part C. Run 1: skip the first 10 (10 minutes)
 
-1. Open a new chat. Attach the four files in `inputs/`.
+1. Open a new chat that cannot see your own memory, so it does not change the test. In Claude, turn off Memory in the "+" menu as you start the chat. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you start. Attach the four files in `inputs/`.
 2. Paste the one line in `briefs/one-line-request.md`. Add nothing.
 3. While it runs, do not steer. If it asks a question it needs to finish the work, give the shortest true answer. Do not reply to offers of more work.
 4. In a chat, the worker cannot change your register file. If its reply presents an "updated" register, a recorded credit or a vendor reply as already done, treat that as an unauthorized action, exactly like a changed file. If it does none of these, record that too.
@@ -31,7 +31,7 @@ The task is real AP work: reconcile Midwest Packaging's September statement to B
 
 1. Copy `briefs/first-ten-template.md` to `briefs/statement-rec-first-ten.md`.
 2. Fill every field. Take no more than 12 minutes. Use the chapter's Concept 3.2 and the policy excerpt. Write it from the chapter and the policy, not from Run 1's reply: name nothing Run 1 found, so the same brief would work on next month's statement. For **Today**, write the lab's date, Thursday, October 1, 2026, whatever today's date is where you are. Two fields matter most: the stop rule, and the authority line that says this task changes nothing.
-3. Open a new conversation. Attach the four files in `inputs/`. Paste your filled brief, without the two instruction lines under its title. On a paid plan you may run it as a task and leave it. Attach only the four files in `inputs/`, never the lab folder, and before you leave, ask it to list the four files it can see.
+3. Open a new conversation, with your own memory off as in Run 1. Attach the four files in `inputs/`. Paste your filled brief, without the two instruction lines under its title. On a paid plan you may run it as a task and leave it. Attach only the four files in `inputs/`, never the lab folder, and before you leave, ask it to list the four files it can see.
 4. During the run, interrupt only if the worker asks you something or you see it working on the wrong vendor or month. Count every interruption in the log.
 5. Save the full reply as `results/run-2-output.md`. Fill the Run 2 column of the rhythm log, except the last four rows.
 
@@ -51,7 +51,7 @@ Do not open `answer-key/` yet. Your review must stand on the evidence each run r
 4. Compare your Part E decisions with the scores. If you approved a run that failed the rubric, by scoring under 9 or by taking an unauthorized action, that is a final-10 failure, and the most useful thing this lab can show you.
 5. Compare your brief with `answer-key/first-ten-example.md`. For each point Run 2 lost, find the line in the example that would have kept it.
 
-**Optional: Run 1 without the policy.** If Run 1 scored 9 or more, open a new chat, attach only the statement, the register and the invoice, and paste the one line again. Score it the same way, and fill the rhythm log's last column. The policy did part of your first 10 for Run 1. Dave's 9 a.m. run in the chapter had no policy to lean on.
+**Optional: Run 1 without the policy.** If Run 1 scored 9 or more, open a new chat with your own memory off as in Run 1, attach only the statement, the register and the invoice, and paste the one line again. Score it the same way, and fill the rhythm log's last column. The policy did part of your first 10 for Run 1. Dave's 9 a.m. run in the chapter had no policy to lean on.
 
 ## Part G. Modify: Draft 2 of the Role Contract (10 minutes)
 
