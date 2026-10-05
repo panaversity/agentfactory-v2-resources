@@ -24,7 +24,7 @@ Run 1 gives no date, so the assistant may use your own calendar, for example by 
 
 ### Q2. Midwest Packaging, invoice 4519, $7,800.00
 
-**Answer:** yes. Invoices over $5,000.00 need the controller's approval before payment (AP policy v3, section 4.1, approved September 1, 2026). The approvals log shows no approval for 4519 yet.
+**Answer:** yes. Invoices over $5,000.00 need the controller's approval before payment (AP policy version 3, section 4.1, approved September 1, 2026). The approvals log shows no approval for 4519 yet.
 **Source that wins:** the KSoR. Limits are knowledge.
 **Common wrong answer:** no, because the limit is $10,000. That trusted the superseded v1 copy or the memory note.
 

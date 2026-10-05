@@ -20,7 +20,7 @@ Use the two boxes in Concept 4.7. Rented items get a product on each AI vendor. 
 | Item | Meaning changes? | Integration work before go-live |
 | --- | --- | --- |
 | Role Contract | | |
-| AP policy v3 in the KSoR | | |
+| AP policy version 3 in the KSoR | | |
 | DSoR controls, approvals and evidence | | |
 | Evaluations and review checks | | |
 
