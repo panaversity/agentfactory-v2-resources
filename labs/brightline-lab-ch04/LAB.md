@@ -3,6 +3,7 @@
 **Time:** about 2 hours of active work.
 **You produce:** `architecture/ap-worker-layer-map.md`, `results/precedence-test.md`, `results/swap-test.md`, `results/port-table.md`, Draft 3 of `role/ap-worker-role-contract.md`, and a five-layer picture and a refined Role Contract for one worker in your own vertical.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Only Part C uses a chat with Claude or ChatGPT, in your browser. Keep your answers in this folder, not in a chat: they are yours, and Chapter 5 builds on them. You can take one Part per sitting. Each Part ends with a file saved.
+**With an AI agent:** you can also do the lab with an AI agent that works in this folder. Codex in the ChatGPT desktop app works on any ChatGPT plan, and Claude Code needs a paid Claude plan. Open this folder in it, and say "Let's do this lab together." The agent reads `AGENTS.md`, its brief: you decide every answer, and it writes them down. The test runs in Part C still happen in fresh chats.
 **You need:** this folder, and free accounts on both Claude and ChatGPT for Part C. Every other part works on paper. If you have only one account, do Runs 1 and 2 on it. Then write Run 3 as a prediction: the answer you expect the other AI vendor to give to each question, and why. Mark it "predicted." The lab still counts as finished.
 
 The lab follows five moves: predict, run, investigate, modify, make.
@@ -14,7 +15,7 @@ The lab follows five moves: predict, run, investigate, modify, make.
 *Where:* In this folder.
 
 1. Unzip this folder anywhere. Everything the lab needs is inside it.
-2. If you wrote a Role Contract in Chapter 3, copy it into `role/` as `ap-worker-role-contract.md`. If not, copy `role/ap-worker-role-contract-draft2-sample.md` to that name.
+2. Make your Role Contract file. No file from Chapter 3? That is fine, and most readers start here: copy `role/ap-worker-role-contract-draft2-sample.md` to `role/ap-worker-role-contract.md`. If you wrote Draft 2 in Chapter 3, copy yours to that name instead.
 3. Keep Figure 4.1 from the chapter open. You will use its five layers all the way through: channels connect, runtimes execute, memory remembers, KSoR knows, DSoR acts.
 
 *You save:* your Role Contract, copied into `role/ap-worker-role-contract.md`.
@@ -84,14 +85,14 @@ Report what really happened. If Run 1 got a question right, say what it rested o
 
 1. In `results/swap-test.md`, imagine Brightline moves the AP Worker to the other AI vendor next week. List what you would rebuild and what you would carry across with its meaning unchanged, even if its connections need rework. Any owned item on the rebuild list means it was stored in the wrong place. Say where it should live. Then compare with `answer-key/swap-test-key.md`.
 2. Write Draft 3 of `role/ap-worker-role-contract.md`. Keep every Draft 2 line that is still true, and change these fields:
-   - **Knowledge sources:** name the KSoR concepts and their versions. Say what the worker does when the record is silent.
+   - **Knowledge sources:** name the KSoR concepts and their versions, such as "AP policy, version 3". This is the policy's version, not the contract's draft number. Say what the worker does when the record is silent.
    - **Memory:** say what memory may hold, and what it must never hold. Add the wipe test.
    - **Tools:** route every read of current state and every change through named governed operations. Remove any direct write access.
    - **Authority:** tie the approval line to the policy version it comes from.
    - **Triggers:** write the trigger as a business event, not as a product setting.
 3. Compare your draft with `answer-key/role-contract-draft3-example.md`. Yours does not have to match. It must cover the five fields.
 4. Fill `results/port-table.md`. For each rented item, write the product that fills it on Anthropic and on OpenAI, using the two boxes in Concept 4.7. Where a box names no product, as for the AP inbox, write how the worker would reach it. For each owned item, write whether its meaning changes. It should not. Then write what integration work it needs before the evaluations are rerun, such as a new connection or identity mapping. Then answer the two decision questions at the bottom. Compare with `answer-key/port-table-key.md`.
-5. Score the last three rows of the rubric's Part 2: Swap test, Draft 3 and Port. Add them to your three from Part D. The lab passes with Meets or better on all six.
+5. Score the last three rows of the rubric's Part 2: Swap test, Draft 3 and Port. Add them to your three from Part D. The lab passes with Meets or better on all six, once Part F's page is saved too.
 
 *You save:* `results/swap-test.md`, Draft 3 of `role/ap-worker-role-contract.md`, and `results/port-table.md`.
 
@@ -106,7 +107,7 @@ Apply it to your vertical. Pick one worker in a role you know. On one page, draw
 
 Last, refine that role's Role Contract the same way as Draft 3. Name its knowledge sources and their versions, and tie its authority to the policies it comes from. If you have no Role Contract for a role of your own, Draft 3 for Brightline is your Part I artifact.
 
-*You save:* one page for a worker in your own vertical, and its refined Role Contract.
+*You save:* one page for a worker in your own vertical, and its refined Role Contract. The lab is not finished until this page is saved, even after you pass the rubric.
 
 ## If something goes wrong
 

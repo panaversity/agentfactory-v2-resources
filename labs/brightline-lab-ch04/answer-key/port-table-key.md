@@ -17,14 +17,14 @@ From the boxes in Concept 4.7, verified 4 October 2026. Product names change, so
 
 ## Owned
 
-**Meaning: no change in any row.** The Role Contract, AP policy v3, the DSoR controls and evidence, and the evaluations mean the same on both AI vendors. If the meaning would change, that item was stored in a rented place.
+**Meaning: no change in any row.** The Role Contract, AP policy version 3, the DSoR controls and evidence, and the evaluations mean the same on both AI vendors. If the meaning would change, that item was stored in a rented place.
 
 **Integration work is expected, and is not a wrong answer.**
 
 | Item | Integration work before go-live |
 | --- | --- |
 | Role Contract | Update the runtime notes, and how each runtime starts the work. The contract's lines stay the same |
-| AP policy v3 in the KSoR | Reconnect: a custom connector on Claude, or a custom MCP app on ChatGPT, on a plan that supports it |
+| AP policy version 3 in the KSoR | Reconnect: a custom connector on Claude, or a custom MCP app on ChatGPT, on a plan that supports it |
 | DSoR controls, approvals and evidence | Map the worker's identity on the new runtime, and connect the governed operations. Kept evidence stays where it is |
 | Evaluations and review checks | Rerun every case on the new AI vendor before go-live. That run is the proof the port worked |
 

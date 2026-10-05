@@ -5,8 +5,8 @@ Seven items are misplaced: 1, 2, 3, 5, 6, 10 and 14. Item 9 is placed correctly 
 | # | Item | Layer | Rented or owned | Misplaced? | Where it belongs, and why |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Project instructions | Role Contract | Owned | **Yes** | The worker's definition was typed only into a rented product. Keep the Role Contract as the owned source, and make the project instructions a copy generated from it. |
-| 2 | AP policy v1 | KSoR (retired version) | Owned | **Yes** | A stale copy inside a rented project, two versions out of date. Mark v1 as retired in the KSoR and remove the upload. |
-| 3 | AP policy v3 | KSoR | Owned | **Yes** | The approved policy sits in an email. It belongs in the KSoR as the one current version, with owner and approval date, and the worker should reach it there. |
+| 2 | AP policy version 1 | KSoR (retired version) | Owned | **Yes** | A stale copy inside a rented project, two versions out of date. Mark v1 as retired in the KSoR and remove the upload. |
+| 3 | AP policy version 3 | KSoR | Owned | **Yes** | The approved policy sits in an email. It belongs in the KSoR as the one current version, with owner and approval date, and the worker should reach it there. |
 | 4 | Memory: register sort order | Memory | On the line | No | A preference. Wiping it costs a question to Maria, not a wrong answer. |
 | 5 | Memory: Lakeshore Net 30 | Belongs to the company's systems, read through DSoR | Owned | **Yes** | Terms are current state, and the vendor record is the authority. Delete the entry. If anything, remember "terms changed in August, check the vendor record." |
 | 6 | Memory: approval only over $10,000 | Belongs to KSoR | Owned | **Yes** | A limit is knowledge. It is also out of date. Delete it. The approved policy says $5,000. |

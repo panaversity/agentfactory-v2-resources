@@ -25,4 +25,4 @@ Run 1 is expected to lose points on Q1 and Q2, because its three files cannot se
 | Draft 3 | Fewer than 3 of the 5 fields changed | All 5 fields changed | Memory rules include the wipe test, and the approval line names the policy version |
 | Port | Port table incomplete, or an owned item changes on the other AI vendor | Every rented item named on both AI vendors, every owned item "same meaning" with its integration work named, and Run 3 recorded, or written as a prediction and marked "predicted" | Also answers both decision questions with the plan and trigger consequences from Concept 4.7 |
 
-The lab passes with Meets or better on every criterion. That makes at least 12 out of 18, but a total of 12 or more does not pass if any criterion is Not yet.
+The lab passes with Meets or better on every criterion, and with Part F's page saved. Part F is not scored, but it is part of the lab. That makes at least 12 out of 18, but a total of 12 or more does not pass if any criterion is Not yet.
