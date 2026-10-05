@@ -23,4 +23,4 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 - Accept also: the approval record in chat (14), which belongs in DSoR evidence
 
 ## What Dave tells IT
-"The worker is the Role Contract, the policy and the controls, and those stay with us. On the new AI vendor we rebuild the runtime, the channels and the schedule."
+"The worker is the Role Contract. It, the policy and the controls stay with us. On the new AI vendor we rebuild the runtime, the channels and the schedule."
