@@ -13,4 +13,5 @@ Start with `LAB.md`. It gives every step.
 | `architecture/` | The layer-map template you fill in |
 | `results/` | Templates for the precedence test with its port, the swap test and the port table |
 | `role/` | The Role Contract template, and a sample Draft 2 for readers who skipped Chapter 3 |
+| `AGENTS.md`, `CLAUDE.md` | The brief an AI agent reads if you do the lab with one in this folder. `CLAUDE.md` only points to `AGENTS.md` |
 | `answer-key/` | The rubric and the keys. Open the rubric when `LAB.md` says to score, and the keys only after you have scored your own work |

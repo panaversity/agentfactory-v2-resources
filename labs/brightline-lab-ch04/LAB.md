@@ -3,6 +3,7 @@
 **Time:** about 2 hours of active work.
 **You produce:** `architecture/ap-worker-layer-map.md`, `results/precedence-test.md`, `results/swap-test.md`, `results/port-table.md`, Draft 3 of `role/ap-worker-role-contract.md`, and a five-layer picture and a refined Role Contract for one worker in your own vertical.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Only Part C uses a chat with Claude or ChatGPT, in your browser. Keep your answers in this folder, not in a chat: they are yours, and Chapter 5 builds on them. You can take one Part per sitting. Each Part ends with a file saved.
+**With an AI agent:** you can also do the lab with an AI agent that works in this folder. Codex in the ChatGPT desktop app works on any ChatGPT plan, and Claude Code needs a paid Claude plan. Open this folder in it, and say "Let's do this lab together." The agent reads `AGENTS.md`, its brief: you decide every answer, and it writes them down. The test runs in Part C still happen in fresh chats.
 **You need:** this folder, and free accounts on both Claude and ChatGPT for Part C. Every other part works on paper. If you have only one account, do Runs 1 and 2 on it. Then write Run 3 as a prediction: the answer you expect the other AI vendor to give to each question, and why. Mark it "predicted." The lab still counts as finished.
 
 The lab follows five moves: predict, run, investigate, modify, make.
