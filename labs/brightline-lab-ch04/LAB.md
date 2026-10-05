@@ -37,7 +37,7 @@ Read the item names in `inventory/current-setup.md`, not the details. In `result
 
 Start on one AI vendor. Choose Claude or ChatGPT, and write which one on the "AI vendor I built on" line of `results/precedence-test.md`.
 
-**Run 1: what the worker could reach that week.** Open a new Incognito chat in Claude, or a Temporary Chat in ChatGPT, so your own memory does not change the test. Use one for every run. Attach only three files from `inputs/`: `ap-policy-v1-excerpt.md`, the policy copy in the shared project, `memory-notes.md` and `email-ap-inbox-1015.md`. Begin your message with this setup, then add the one-line request and the four questions, all in one message:
+**Run 1: what the worker could reach that week.** Open a new chat that cannot see your own memory, so it does not change the test. In Claude, turn off Memory in the "+" menu as you start the chat. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you start. Do the same for every run. Attach only three files from `inputs/`: `ap-policy-v1-excerpt.md`, the policy copy in the shared project, `memory-notes.md` and `email-ap-inbox-1015.md`. Begin your message with this setup, then add the one-line request and the four questions, all in one message:
 
 > The file memory-notes.md stands for things you remembered from earlier chats. ap-policy-v1-excerpt.md is the copy of Brightline's AP policy in your shared project. email-ap-inbox-1015.md is an email in the AP inbox.
 
