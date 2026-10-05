@@ -1,6 +1,6 @@
 # Layer map key
 
-Seven items are misplaced: 1, 2, 3, 5, 6, 10 and 14. Item 9 is placed correctly but carries a trigger that belongs in the Role Contract too. Accept any answer that gives the same layer and the same reason.
+Seven items are misplaced: 1, 2, 3, 5, 6, 10 and 14. Item 9 is placed correctly but carries a trigger that belongs in the Role Contract too. Accept any answer that gives the same layer and the same reason. A learner who also marks item 9 as misplaced because its trigger is written only in the task has found the note: count it as the note, not as an error.
 
 | # | Item | Layer | Rented or owned | Misplaced? | Where it belongs, and why |
 | --- | --- | --- | --- | --- | --- |

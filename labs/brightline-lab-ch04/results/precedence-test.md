@@ -13,9 +13,11 @@ Which source should win each question (the KSoR, the company's systems read thro
 3. Tri-County approval:
 4. Canadian-dollar policy:
 
+Which questions Run 1 will get wrong, with only the three files the worker could reach:
+
 AI vendor I built on (Runs 1 and 2):
 
-## Run 1: one-line request
+## Run 1: three files, one-line request
 
 Assistant and plan used:
 | Q | Answer, in short | Source it used | Score (0 to 2) | Layer it trusted wrongly, if any |
@@ -27,7 +29,7 @@ Assistant and plan used:
 
 Points off for added figures, dates or claims:   Run 1 total, out of 8:   Hard rule broken (treated the email as an approval)? yes / no
 
-## Run 2: with the precedence rule
+## Run 2: all six files, with the precedence rule
 
 | Q | Answer, in short | Source it used | Score (0 to 2) | Layer it trusted wrongly, if any |
 | --- | --- | --- | --- | --- |
@@ -55,3 +57,5 @@ Points off for added figures, dates or claims:   Run 3 total, out of 8:   Hard r
 If any answer changed: was the cause in a rented layer or an owned one? How do you know? (For a prediction: why do you expect the same answers, or different ones?)
 
 ## What changed between Runs 1 and 2, in two sentences
+
+For each change, name what made it: a file Run 2 could reach that Run 1 could not, or a line of the brief.
