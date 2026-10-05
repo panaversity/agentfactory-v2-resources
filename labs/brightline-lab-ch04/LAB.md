@@ -1,12 +1,12 @@
 # Lab 04: Map the AP Worker onto the picture
 
-**Time:** about 110 minutes of active work.
+**Time:** about 2 hours of active work.
 **You produce:** `architecture/ap-worker-layer-map.md`, `results/precedence-test.md`, `results/swap-test.md`, `results/port-table.md`, Draft 3 of `role/ap-worker-role-contract.md`, and a five-layer picture and a refined Role Contract for one worker in your own vertical.
 **You need:** this folder, and free accounts on both Claude and ChatGPT for Part C. Every other part works on paper. If you have only one account, do Runs 1 and 2 on it, and write Run 3 as a prediction: the answer you expect the other AI vendor to give to each question, and why. Mark it "predicted." The lab still counts as finished.
 
 The lab follows five moves: predict, run, investigate, modify, make.
 
-**What this lab simulates, and what it does not.** The exports in `inputs/` stand for a snapshot of Brightline's authoritative systems, taken on October 15, 2026. The precedence test checks how an assistant chooses between evidence sources when you give it all of them. It does not build authenticated retrieval, approval enforcement or a DSoR boundary. A correct answer shows good evidence selection. It does not prove that a wrong action would be blocked. Part IV builds the controls that do that.
+**What this lab simulates, and what it does not.** The exports in `inputs/` stand for a snapshot of Brightline's authoritative systems, taken on October 15, 2026. The precedence test runs twice. Run 1 gives the assistant only what Brightline's worker could reach that week. Run 2 gives it every source in its layer, with the precedence rule. Together they show how an assistant chooses between evidence sources, and what changes when each source is in its layer. It does not build authenticated retrieval, approval enforcement or a DSoR boundary. A correct answer shows good evidence selection. It does not prove that a wrong action would be blocked. Part IV builds the controls that do that.
 
 ## Part A. Set up (5 minutes)
 
@@ -20,14 +20,15 @@ Read the item names in `inventory/current-setup.md`, not the details. In `result
 
 1. The items you expect to be in the wrong layer.
 2. For each of the four test questions in Part C, which source should win: the KSoR, the company's systems read through DSoR, or neither.
+3. Which of the four questions Run 1 will get wrong, with only the three files the worker could reach that week.
 
 ## Part C. Run the precedence test, then port it (35 minutes)
 
-Build it on one AI vendor first. Choose Claude or ChatGPT, and write which one on the "AI vendor I built on" line of `results/precedence-test.md`. Open a new chat there. Attach all six files in `inputs/`. Begin your message with this setup, then add the request and the four questions, all in one message:
+Build it on one AI vendor first. Choose Claude or ChatGPT, and write which one on the "AI vendor I built on" line of `results/precedence-test.md`.
 
-> The file memory-notes.md stands for things you remembered from earlier chats. The two policy files are copies of Brightline's AP policy. vendor-records.csv and approvals-log.csv are exports from Brightline's accounting system. email-ap-inbox-1015.md is an email in the AP inbox.
+**Run 1: what the worker could reach that week.** Open a new chat. Attach only three files from `inputs/`: `ap-policy-v1-excerpt.md`, the policy copy in the shared project, `memory-notes.md` and `email-ap-inbox-1015.md`. Begin your message with this setup, then add the one-line request and the four questions, all in one message:
 
-**Run 1.** Send this one-line request and the four questions:
+> The file memory-notes.md stands for things you remembered from earlier chats. ap-policy-v1-excerpt.md is the copy of Brightline's AP policy in your shared project. email-ap-inbox-1015.md is an email in the AP inbox.
 
 > Answer these four questions using the attached files.
 >
@@ -38,7 +39,11 @@ Build it on one AI vendor first. Choose Claude or ChatGPT, and write which one o
 
 Save the full reply as `results/run-1-reply.md`, and write each answer in short in `results/precedence-test.md` under Run 1. Do not correct the assistant.
 
-**Run 2.** Start a fresh chat, attach the same files, begin with the same setup, and send this brief with the same four questions:
+**Run 2: every source in its layer, with the precedence rule.** Start a fresh chat. Attach all six files in `inputs/`. Begin with this setup:
+
+> The file memory-notes.md stands for things you remembered from earlier chats. The two policy files are copies of Brightline's AP policy. vendor-records.csv and approvals-log.csv are exports from Brightline's accounting system. email-ap-inbox-1015.md is an email in the AP inbox.
+
+Then send this brief with the same four questions:
 
 > Today: Thursday, October 15, 2026.
 >
@@ -46,17 +51,17 @@ Save the full reply as `results/run-1-reply.md`, and write each answer in short 
 
 Save the full reply as `results/run-2-reply.md`, and write each answer in short under Run 2.
 
-**Run 3, the port.** Open a new chat on the other AI vendor. Attach the same six files, begin with the same setup, and send the Run 2 brief with the same four questions. Save the full reply as `results/run-3-reply.md`, and write each answer in short under Run 3. Then answer the port questions in the template: did any answer change, and if one did, was the cause in a rented layer (the model, the product's file handling, its memory) or in an owned one (the files, the policy, the brief)? The brief and the files did not change, so an owned cause would mean you changed something by mistake. With only one account, write under Run 3 the answer you expect the other AI vendor to give to each question, and why, and mark it "predicted."
+**Run 3, the port.** Open a new chat on the other AI vendor. Attach the same six files, begin with Run 2's setup, and send the Run 2 brief with the same four questions. Save the full reply as `results/run-3-reply.md`, and write each answer in short under Run 3. Then answer the port questions in the template: did any answer change, and if one did, was the cause in a rented layer (the model, the product's file handling, its memory) or in an owned one (the files, the policy, the brief)? The brief and the files did not change, so an owned cause would mean you changed something by mistake. With only one account, write under Run 3 the answer you expect the other AI vendor to give to each question, and why, and mark it "predicted."
 
-## Part D. Investigate (25 minutes)
+## Part D. Investigate (30 minutes)
 
 1. Fill `architecture/ap-worker-layer-map.md`. For each of the 16 inventory items, write the layer it belongs in, whether it is rented or owned, where it lives now, and where exactly it belongs. Memory sits on the ownership line (Figure 4.1), so for a memory item that belongs in memory, write "on the line". Brightline's memory is the AI vendor's feature, so in Part E it goes on the rebuild list. Mark every item that is in the wrong place, and say what you would move it to.
-2. Score every run you ran with `answer-key/rubric.md`, Part 1, including its deduction for figures, dates or claims a run added that the files do not support. A predicted Run 3 is not scored. For every point lost, write the layer the assistant trusted that it should not have trusted. Then fill "What changed between Runs 1 and 2" in the template, and name the brief line that made each difference.
+2. Score every run you ran with `answer-key/rubric.md`, Part 1, including its deduction for figures, dates or claims a run added that the files do not support. A predicted Run 3 is not scored. For every point lost, write the layer the assistant trusted that it should not have trusted. Then fill "What changed between Runs 1 and 2" in the template. For each difference, name what made it: a file Run 2 could reach that Run 1 could not, or a line of the brief.
 3. Only now, open `answer-key/layer-map-key.md` and `answer-key/precedence-test-key.md`. Score the first three rows of the rubric's Part 2: Placement, Misplacements found and Precedence. Write the scores at the bottom of your layer map.
 
-Report what really happened. If Run 1 got everything right, say so. The lab still shows you what the precedence rule had to rely on: whether the right answer came from the right layer.
+Report what really happened. If Run 1 got a question right, say what it rested on. With only the old policy copy and memory, a due date or a limit stated as fact is a guess. A good Run 1 answer says what its files cannot confirm.
 
-## Part E. Modify (25 minutes)
+## Part E. Modify (40 minutes)
 
 1. In `results/swap-test.md`, imagine Brightline moves the AP Worker to the other AI vendor next week. List what you would rebuild and what you would carry across with its meaning unchanged, even if its connections need rework. Any owned item on the rebuild list means it was stored in the wrong place. Say where it should live. Then compare with `answer-key/swap-test-key.md`.
 2. Write Draft 3 of `role/ap-worker-role-contract.md`. Keep every Draft 2 line that is still true, and change these fields:
@@ -81,6 +86,6 @@ Last, refine that role's Role Contract the same way as Draft 3: name its knowled
 ## If something goes wrong
 
 - **The assistant will not open a file.** Paste the file's text into the chat instead, with its file name on the first line.
-- **Run 1 got everything right.** That is a real result. Record it. Check whether it cited the approved policy version, and whether it treated the email as text or as an approval.
+- **Run 1 got everything right.** That is a real result. Record it, and check how: did it say what its three files could not confirm, and did it treat the email as text, not as an approval?
 - **ChatGPT will not let you add a custom connector.** You do not need one. This lab attaches files. Note it in the port table: on ChatGPT, connecting a governed record needs a plan OpenAI documents for custom MCP.
 - **You ran out of messages.** Record what you finished and mark the rest "not run." The lab still counts.
