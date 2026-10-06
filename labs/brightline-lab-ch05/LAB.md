@@ -27,8 +27,8 @@ Every run is a fresh chat that cannot see your own memory, so your memory does n
 
 1. **Run A (5 minutes).** In a fresh chat on either AI vendor, attach the six files in `inputs/` and send Dave's line exactly. Save what comes back as `results/run-a-reply.md`.
 2. **Write your brief (15 minutes).** Copy `briefs/four-part-brief-template.md` to `briefs/payment-run-brief-v1.md` and fill all four parts. Mark each control. Do not look at the answer key.
-3. **Run B (10 minutes).** In a fresh Claude chat, attach the six files in `inputs/` and send your brief. If the chat shows a permission setting, leave it on Manual. Save the reply as `results/run-b-reply.md`, and save every file it returns in `results/`.
-4. **Run C (5 minutes to start).** In ChatGPT, choose Work, attach the same files, and send the same brief unchanged. If your brief names no destination for files, note where Work put them. Save the reply as `results/run-c-reply.md`, and save every file it returns in `results/`.
+3. **Run B (10 minutes).** In a fresh Claude chat, attach the six files in `inputs/` and send your brief. If the chat shows a permission setting, leave it on Manual. Save the reply as `results/run-b-reply.md`. Save every file it returns in `results/`, with `run-b-` at the start of its name.
+4. **Run C (5 minutes to start).** In ChatGPT, choose Work, attach the same files, and send the same brief unchanged. If your brief names no destination for files, note where Work put them. Save the reply as `results/run-c-reply.md`. Save every file it returns in `results/`, with `run-c-` at the start of its name, so Run B's files are not overwritten.
 
 Attach the same six files in all three runs, including the retired policy, so that only the request changes. Never attach `requests/`, `briefs/`, `results/` or `answer-key/`. Record the model and settings for every run in `results/run-log.md`. One run shows how a worker behaved once. It does not prove that every difference came from the brief.
 
@@ -53,7 +53,7 @@ Two results are possible, and both are fine. Run A may do better than you predic
 *Where:* In this folder, then in a fresh chat.
 
 1. Pick the worst failure in Run B or Run C. Change only the brief part behind it. Rerun in a fresh chat on one AI vendor, with your memory off as in Part B, and record the before and after in `results/iteration-log.md`. If there was no material failure, record that and move to step 2.
-2. Split the brief into two stages, with a stop point after the exceptions list (Concept 5.4). Run Stage 1, make the decisions yourself as Maria, then run Stage 2.
+2. Split the brief into two stages, with a stop point after the exceptions list (Concept 5.4). Run Stage 1, make the decisions yourself as Maria, then run Stage 2. Save the replies as `results/stage-1-reply.md` and `results/stage-2-reply.md`.
 3. Save the final brief as `briefs/payment-run-brief-v2.md`. Chapter 9 puts it on a schedule.
 
 *You save:* `results/iteration-log.md` and `briefs/payment-run-brief-v2.md`.
@@ -64,7 +64,7 @@ Two results are possible, and both are fine. Run A may do better than you predic
 
 Write a Four-Part Brief for one recurring task in a role you know. Mark the controls, and name the governed source it must answer from.
 
-*You save:* your own brief. The lab is not finished until it is saved, even after you pass the rubric.
+*You save:* your own brief, as `briefs/my-own-brief.md`. The lab is not finished until it is saved, even after you pass the rubric.
 
 ## If something goes wrong
 

@@ -2,7 +2,7 @@
 
 | Criterion | Points | How to score |
 | --- | --- | --- |
-| Run selection | 0 to 3 | 3: exactly rows 1, 2, 5, 9, 14 and 15 proposed for payment (2 after approval), and row 12 not paid until Dave decides (HOLD, or PAY_AFTER_APPROVAL listed for Dave). 2: one row wrong. 1: two rows wrong. 0: three or more. |
+| Run selection | 0 to 3 | 3: exactly rows 1, 2, 5, 9, 14 and 15 proposed for payment, row 2 only after Dave's approval (PAY_AFTER_APPROVAL, or a HOLD that names that approval), and row 12 not paid until Dave decides (HOLD, or PAY_AFTER_APPROVAL listed for Dave). 2: one row wrong. 1: two rows wrong. 0: three or more. |
 | Approval | 0 to 2 | 2: 4519 flagged for Dave's approval, citing v3 section 4. 1: flagged, no citation. 0: not flagged. |
 | Terms | 0 to 1 | 1: 5131 in the run with a due date of October 15 from the vendor record. |
 | Exceptions | 0 to 3 | 1 each: duplicate row 10 held and SP-1201 not held. NMP-3390 listed for a decision, not converted. Both Tri-County invoices held with a callback to the number in the vendor record. |
