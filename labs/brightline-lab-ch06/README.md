@@ -2,17 +2,18 @@
 
 It is Thursday, October 29, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio, with about 40 staff. On Monday, Maria, the office manager, briefed the AP Worker to propose Friday's payment run. The package came back on Tuesday. Dave Kowalski, the controller, approves the run at 5 p.m. today. You review it for him.
 
-This is a different week and a different package from the one in the chapter, with different problems. This folder is standalone. It needs no files from other chapters. Start with `LAB-06.md`. Every name, number, account and company is invented.
+This is a different week and a different package from the one in the chapter, with different problems. This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Every name, number, account and company is invented.
 
 | Path | What it is |
 | --- | --- |
-| `LAB-06.md` | The full instructions, Parts A to E, with timings |
+| `LAB.md` | The full instructions, Parts A to E, with timings |
+| `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
 | `inputs/payment-run-brief-v3.md` | The brief the worker received. Read this first |
 | `inputs/open-invoices-2026-10-26.csv` | 15 open invoice rows |
 | `inputs/vendor-records.csv` | Six vendors: the authority on terms and phone numbers |
 | `inputs/vendor-file-notes.md` | Recorded calls and changes to vendor records |
 | `inputs/approvals-log.csv` | Approvals recorded from the controller's own login |
-| `inputs/ap-policy-v3-excerpt.md` | The governed policy, sections 2 to 6 |
+| `inputs/ap-policy-v3-excerpt.md` | The governed policy: clause 2.1, and sections 3 to 6 |
 | `templates/review-contract-template.md` | The blank Review Contract |
 | `worker-output/proposal-2026-10-30.csv` | The worker's proposal |
 | `worker-output/memo-to-dave.md` | The worker's memo |
@@ -28,4 +29,4 @@ This is a different week and a different package from the one in the chapter, wi
 | `answer-key/expected-proposal-2026-10-30.csv` | The right proposal, row by row |
 | `answer-key/review-rubric.md` | The 13-point rubric and the three hard fails |
 
-Do not open `worker-output/` until your Review Contract is written. Do not open `answer-key/` until you have made your decision.
+Do not open `worker-output/` until your Review Contract is written. Do not open `answer-key/` until you have made your decision. In Part C, attach the six files in `inputs/`, the four in `worker-output/` and your Review Contract. Never attach `answer-key/`.
