@@ -12,20 +12,20 @@ Prepared: Tuesday, October 27, 2026
 
 ## Friday's run
 
-**Pay on Friday: $20,290.80 across 9 invoices.**
+**Pay on Friday: $22,010.80 across 10 invoices.**
 
 | Action | Invoices | Amount |
 | --- | --- | --- |
-| Pay | 9 | $20,290.80 |
+| Pay | 10 | $22,010.80 |
 | Hold | 2 | CAD 1,980.00 and the -$250.00 credit |
-| Not due | 5 | $5,550.00 and CAD 4,300.00 |
+| Not due | 4 | $4,370.00 and CAD 4,300.00 |
 
 All 15 open invoices were reviewed against policy version 3.
 
 ## Exceptions
 
-- **Duplicate.** Buckeye Office Supply BO-23010 (row 10) matches BO-22990 on vendor, amount and invoice date. The later copy is held (policy 5.1).
-- **Tri-County Freight.** The vendor file note of October 22 records that Tri-County has not changed its bank details. All three Tri-County invoices are in the run (policy 6.2).
+- **Duplicate.** Buckeye Office Supply BO-23010 (row 10) matches BO-22990 on vendor, amount and invoice date. The later copy is held (policy 6.1).
+- **Tri-County Freight.** The vendor file note of October 22 records that Tri-County has not changed its bank details. All three Tri-County invoices are in the run (policy 5.1).
 - **Foreign currency and credit.** See decisions 1 and 2.
 
 ## Vendor notes

@@ -1,16 +1,16 @@
 row_id,invoice_no,vendor_id,vendor_name,invoice_date,amount,currency,terms_on_invoice,po_number,received,notes
 1,4527,V-1007,Midwest Packaging,2026-10-05,2315.40,USD,Net 30,PO-8861,2026-10-07,
 2,4533,V-1007,Midwest Packaging,2026-10-01,5312.00,USD,Net 30,PO-8849,2026-10-05,
-3,4541,V-1007,Midwest Packaging,2026-10-14,3190.00,USD,Net 30,PO-8871,2026-10-16,
-4,5144,V-1031,Lakeshore Janitorial,2026-10-14,1180.00,USD,Net 45,PO-8870,2026-10-15,
-5,5152,V-1031,Lakeshore Janitorial,2026-10-07,1180.00,USD,Net 45,PO-8859,2026-10-09,
+3,4541,V-1007,Midwest Packaging,2026-10-14,3190.00,USD,Net 30,PO-8871,2026-10-20,
+4,5144,V-1031,Lakeshore Janitorial,2026-10-16,1180.00,USD,Net 45,PO-8870,2026-10-19,
+5,5152,V-1031,Lakeshore Janitorial,2026-10-07,1180.00,USD,Net 45,PO-8859,2026-10-20,
 6,5149,V-1044,Tri-County Freight,2026-10-08,2940.00,USD,Net 15,PO-8858,2026-10-09,
 7,5161,V-1044,Tri-County Freight,2026-10-12,4215.00,USD,Net 15,PO-8866,2026-10-14,
 8,5174,V-1044,Tri-County Freight,2026-10-19,1860.00,USD,Net 15,PO-8876,2026-10-21,
-9,BO-22990,V-1019,Buckeye Office Supply,2026-09-29,389.20,USD,Net 30,PO-8846,2026-10-01,Received by mail
-10,BO-23010,V-1019,Buckeye Office Supply,2026-09-29,389.20,USD,Net 30,PO-8846,2026-10-20,Received by email
+9,BO-22990,V-1019,Buckeye Office Supply,2026-09-29,389.20,USD,Net 30,PO-8846,2026-10-20,Received by mail
+10,BO-23010,V-1019,Buckeye Office Supply,2026-09-29,389.20,USD,Net 30,PO-8846,2026-10-22,Received by email
 11,NMP-3412,V-1052,Northern Maple Paper,2026-10-13,2150.00,CAD,Net 30,PO-8868,2026-10-16,
-12,NMP-3440,V-1052,Northern Maple Paper,2026-10-02,1980.00,CAD,Net 30,PO-8853,2026-10-06,
+12,NMP-3440,V-1052,Northern Maple Paper,2026-10-02,1980.00,CAD,Net 30,PO-8853,2026-10-21,
 13,SP-1214,V-1060,Scioto Pallet Co.,2026-10-22,1750.00,USD,Net 10,PO-8878,2026-10-22,
 14,SP-1220,V-1060,Scioto Pallet Co.,2026-10-26,1750.00,USD,Net 10,PO-8881,2026-10-26,
 15,SP-CM-0031,V-1060,Scioto Pallet Co.,2026-10-20,-250.00,USD,,PO-8864,2026-10-21,Credit memo: damaged pallets on PO-8864

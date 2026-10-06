@@ -1,6 +1,6 @@
 # Brightline lab, Chapter 6: review a run you did not watch
 
-It is Thursday, October 29, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio, with about 40 staff. On Monday, Maria, who runs accounts payable day to day, briefed the AP Worker to propose Friday's payment run. The package came back on Tuesday. Dave Kowalski, the controller, approves the run at 5 p.m. today. You review it for him.
+It is Thursday, October 29, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio, with about 40 staff. On Monday, Maria, the office manager, briefed the AP Worker to propose Friday's payment run. The package came back on Tuesday. Dave Kowalski, the controller, approves the run at 5 p.m. today. You review it for him.
 
 This is a different week and a different package from the one in the chapter, with different problems. This folder is standalone. It needs no files from other chapters. Start with `LAB-06.md`. Every name, number, account and company is invented.
 
@@ -22,7 +22,7 @@ This is a different week and a different package from the one in the chapter, wi
 | `results/recompute.md` | Part B |
 | `results/audience-check.md` | Part B |
 | `results/second-reviewer.md` | Part C |
-| `results/transfer-plan.md` | For readers with one vendor only |
+| `results/transfer-plan.md` | For readers with one AI vendor only |
 | `answer-key/review-contract-example.md` | One good Review Contract |
 | `answer-key/planted-problems.md` | The seven planted problems, the three traps, and the right totals |
 | `answer-key/expected-proposal-2026-10-30.csv` | The right proposal, row by row |
