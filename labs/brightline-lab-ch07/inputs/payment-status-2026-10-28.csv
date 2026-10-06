@@ -1,0 +1,11 @@
+invoice_no,vendor_id,vendor_name,invoice_date,due_date,amount,currency,status,run_date,note
+4519,V-1007,Midwest Packaging,2026-09-28,2026-10-28,6480.00,USD,PAID,2026-10-23,Approved AP-2312.
+4533,V-1007,Midwest Packaging,2026-10-01,2026-10-31,5312.00,USD,IN_PROPOSAL,2026-10-30,"Over $5,000. Awaiting the controller's approval (policy 4.1)."
+5131,V-1031,Lakeshore Janitorial,2026-09-30,2026-10-30,1180.00,USD,PAID,2026-10-23,
+5144,V-1031,Lakeshore Janitorial,2026-10-14,2026-11-13,1180.00,USD,NOT_DUE,,Invoice prints Net 45. Vendor record says Net 30 (policy 2.2).
+5149,V-1044,Tri-County Freight,2026-10-08,2026-10-23,2940.00,USD,IN_PROPOSAL,2026-10-30,Held at the October 16 and October 23 runs under policy 6.3. Request resolved by callback on October 26.
+5161,V-1044,Tri-County Freight,2026-10-12,2026-10-27,4215.00,USD,IN_PROPOSAL,2026-10-30,Held at the October 23 run under policy 6.3. Request resolved by callback on October 26.
+BO-22871,V-1019,Buckeye Office Supply,2026-09-30,2026-10-30,412.75,USD,PAID,2026-10-23,Mailed copy paid. The emailed copy of the same invoice is held as a duplicate (policy 5.1).
+NMP-3390,V-1052,Northern Maple Paper,2026-09-25,2026-10-25,5600.00,CAD,HELD,,Canadian dollars. Policy version 3 does not cover other currencies. Awaiting the controller's decision.
+SP-1201,V-1060,Scioto Pallet Co.,2026-10-19,2026-10-29,1750.00,USD,PAID,2026-10-23,
+SP-1214,V-1060,Scioto Pallet Co.,2026-10-22,2026-11-01,1750.00,USD,IN_PROPOSAL,2026-10-30,

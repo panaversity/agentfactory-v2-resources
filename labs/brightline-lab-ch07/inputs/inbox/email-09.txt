@@ -1,0 +1,12 @@
+From: Lakeshore Janitorial billing <billing@lakeshorejanitorial.example>
+To: ap@brightlinewholesale.example
+Date: Wednesday, October 28, 2026, 08:03
+Subject: New billing address for remittances
+
+Hi again,
+
+From November 1, please send remittance notices to billing2@lakeshorejanitorial.example instead of this address.
+
+Thanks,
+Tom Becker
+Lakeshore Janitorial
