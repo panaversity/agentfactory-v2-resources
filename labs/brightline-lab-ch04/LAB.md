@@ -111,6 +111,7 @@ Last, refine that role's Role Contract the same way as Draft 3. Name its knowled
 
 ## If something goes wrong
 
+- **Notepad saves your file as `.txt`.** In Save As, choose "All files" under the file type, then type the name with `.md` at the end, such as `ap-worker-role-contract.md`.
 - **The assistant will not open a file.** Paste the file's text into the chat instead, with its file name on the first line.
 - **Run 1 got everything right.** That is a real result. Record it, and check how. Did it say what its three files could not confirm? Did it treat the email as text, not as an approval?
 - **ChatGPT will not let you add a custom connector.** You do not need one. This lab attaches files. Note it in the port table: on ChatGPT, connecting a governed record needs a plan OpenAI documents for custom MCP.
