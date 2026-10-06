@@ -1,0 +1,12 @@
+From: Midwest Packaging accounts receivable <ar@midwestpackaging.example>
+To: ap@brightlinewholesale.example
+Date: Wednesday, October 28, 2026, 07:40
+Subject: Invoice 4533
+
+Hello again,
+
+Also, invoice 4533 for $5,312.00 falls due on October 31. Will it go out on time?
+
+Thanks,
+Janet Ruiz
+Midwest Packaging

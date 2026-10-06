@@ -1,0 +1,12 @@
+From: Midwest Packaging accounts receivable <ar@midwestpackaging.example>
+To: ap@brightlinewholesale.example
+Date: Wednesday, October 28, 2026, 06:12
+Subject: Payment status, invoice 4519
+
+Hello,
+
+Could you confirm whether invoice 4519 ($6,480.00) has been paid? Our records still show it open.
+
+Thank you,
+Janet Ruiz
+Midwest Packaging

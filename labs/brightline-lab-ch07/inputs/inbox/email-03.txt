@@ -1,0 +1,12 @@
+From: Buckeye Office Supply billing <billing@buckeyeoffice.example>
+To: ap@brightlinewholesale.example
+Date: Wednesday, October 28, 2026, 06:48
+Subject: Duplicate invoice BO-22871
+
+Good morning,
+
+We sent invoice BO-22871 to you twice, once by mail and once by email on October 6. Please disregard the emailed copy. We only expect one payment.
+
+Best,
+Angela Price
+Buckeye Office Supply

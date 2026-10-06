@@ -1,0 +1,12 @@
+From: Northern Maple Paper receivables <ar@northernmaplepaper.example>
+To: ap@brightlinewholesale.example
+Date: Wednesday, October 28, 2026, 07:26
+Subject: Invoice NMP-3390 in Canadian dollars
+
+Hello,
+
+Invoice NMP-3390 for CAD 5,600.00 is now past due. Please pay it at today's exchange rate so it is not delayed further.
+
+Kind regards,
+Claire Dubois
+Northern Maple Paper

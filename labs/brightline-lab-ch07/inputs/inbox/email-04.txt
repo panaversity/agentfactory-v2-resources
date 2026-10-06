@@ -1,0 +1,12 @@
+From: Tri-County Freight billing <billing@tricountyfreight.example>
+To: ap@brightlinewholesale.example
+Date: Wednesday, October 28, 2026, 07:05
+Subject: Overdue invoices 5149 and 5161
+
+Hello,
+
+Invoices 5149 ($2,940.00) and 5161 ($4,215.00) are now past due. Can you tell us when they will be paid?
+
+Regards,
+Luis Ortega
+Tri-County Freight
