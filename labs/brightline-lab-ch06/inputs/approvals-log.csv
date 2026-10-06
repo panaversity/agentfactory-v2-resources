@@ -1,0 +1,6 @@
+approval_id,invoice_no,vendor,amount_usd,approver,approver_login,approved_at,source
+AP-2291,4502,Midwest Packaging,6240.00,Dave Kowalski,dkowalski,2026-10-08 15:12,accounting system
+AP-2297,RUN-2026-41,Weekly payment run,48210.55,Dave Kowalski,dkowalski,2026-10-08 15:20,accounting system
+AP-2306,4511,Midwest Packaging,5880.00,Dave Kowalski,dkowalski,2026-10-15 16:02,accounting system
+AP-2312,4519,Midwest Packaging,6480.00,Dave Kowalski,dkowalski,2026-10-22 16:55,accounting system
+AP-2313,RUN-2026-43,Weekly payment run,17452.75,Dave Kowalski,dkowalski,2026-10-22 17:05,accounting system
