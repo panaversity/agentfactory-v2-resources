@@ -14,6 +14,7 @@ You can also download a lab here:
 | 2. What Is an AI Worker? | The first Role Contract for the AP Worker | [brightline-lab-ch02.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02.zip) |
 | 3. The 10-80-10 Operating Rhythm | One task through the whole rhythm | [brightline-lab-ch03.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip) |
 | 4. The Architecture in One Picture | Map the AP Worker onto the picture | [brightline-lab-ch04.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04.zip) |
+| 5. The Four-Part Brief | One brief, two AI vendors | [brightline-lab-ch05.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05.zip) |
 
 A lab's `answer-key/` folder holds its answers. Its `LAB.md` tells you when to open it.
 

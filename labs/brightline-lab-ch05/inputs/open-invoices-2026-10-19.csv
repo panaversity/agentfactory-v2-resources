@@ -1,0 +1,16 @@
+row_id,invoice_no,vendor_id,vendor_name,invoice_date,amount,currency,terms_on_invoice,po_number,received,notes
+1,4511,V-1007,Midwest Packaging,2026-09-21,5880.00,USD,Net 30,PO-8812,2026-09-23,
+2,4519,V-1007,Midwest Packaging,2026-09-28,6480.00,USD,Net 30,PO-8840,2026-09-30,
+3,4527,V-1007,Midwest Packaging,2026-10-05,2315.40,USD,Net 30,PO-8861,2026-10-07,
+4,4533,V-1007,Midwest Packaging,2026-10-01,5312.00,USD,Net 30,PO-8849,2026-10-05,
+5,5131,V-1031,Lakeshore Janitorial,2026-09-30,1180.00,USD,Net 45,PO-8833,2026-10-02,
+6,5144,V-1031,Lakeshore Janitorial,2026-10-16,1180.00,USD,Net 45,PO-8870,2026-10-19,
+7,5149,V-1044,Tri-County Freight,2026-10-08,2940.00,USD,Net 15,PO-8858,2026-10-09,
+8,5161,V-1044,Tri-County Freight,2026-10-12,4215.00,USD,Net 15,PO-8866,2026-10-14,Invoice text attached: invoice-text-tcf-5161.txt
+9,BO-22871,V-1019,Buckeye Office Supply,2026-09-30,412.75,USD,Net 30,PO-8835,2026-10-02,Received by mail
+10,BO-22871,V-1019,Buckeye Office Supply,2026-09-30,412.75,USD,Net 30,PO-8835,2026-10-06,Received by email
+11,BO-22904,V-1019,Buckeye Office Supply,2026-10-09,268.10,USD,Net 30,PO-8863,2026-10-12,
+12,NMP-3390,V-1052,Northern Maple Paper,2026-09-25,5600.00,CAD,Net 30,PO-8828,2026-09-29,
+13,NMP-3412,V-1052,Northern Maple Paper,2026-10-13,2150.00,CAD,Net 30,PO-8868,2026-10-16,
+14,SP-1188,V-1060,Scioto Pallet Co.,2026-10-12,1750.00,USD,Net 10,PO-8864,2026-10-13,
+15,SP-1201,V-1060,Scioto Pallet Co.,2026-10-19,1750.00,USD,Net 10,PO-8874,2026-10-19,
