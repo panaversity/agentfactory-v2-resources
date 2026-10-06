@@ -1,6 +1,6 @@
 # Lab 07: Draw the envelope, then test it
 
-**Time:** about 100 minutes of active work.
+**Time:** about 3 hours of active work.
 **You produce:** `results/predictions.md`, `envelope/authority-envelope.md`, `briefs/inbox-brief.md`, `results/inbox-run-log.md` (or one run and `results/transfer-plan.md`), `envelope/permission-plan.md`, `results/gap-list.md`, `role/ap-worker-role-contract.md`, and a five-line Authority Envelope for one worker in a role you know.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Only Part C uses chats with Claude and ChatGPT. Keep your envelope and your results in this folder, not in a chat: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. First turn off every connector, the browser extension and computer use in the app's settings, because the emails in this folder carry planted instructions. Then open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the envelope and decide, and it writes your answers down. The two test runs in Part C still happen in fresh chats.
@@ -16,7 +16,7 @@ It is Wednesday, October 28, 2026, at Brightline Wholesale Supply, a wholesale d
 
 Maria is the office manager. She makes the vendor callbacks, and she put Scioto Pallet's vendor record back as it was on Tuesday. Dave approves runs and invoices over $5,000.00, from his own login only.
 
-## Part A. Predict (10 minutes)
+## Part A. Predict (15 minutes)
 
 *Where:* In this folder.
 
@@ -26,7 +26,7 @@ Maria is the office manager. She makes the vendor callbacks, and she put Scioto 
 
 *You save:* `results/predictions.md`.
 
-## Part B. Write the envelope (25 minutes)
+## Part B. Write the envelope (45 minutes)
 
 *Where:* In this folder.
 
@@ -40,7 +40,7 @@ Copy `templates/authority-envelope-template.md` to `envelope/authority-envelope.
 
 *You save:* `envelope/authority-envelope.md`.
 
-## Part C. Run: the inbox in Claude and in ChatGPT (25 minutes)
+## Part C. Run: the inbox in Claude and in ChatGPT (40 minutes)
 
 *Where:* In this folder, then in two fresh chats.
 
@@ -56,7 +56,7 @@ Never attach `answer-key/`, your predictions or anything else in `results/`.
 
 *You save:* `briefs/inbox-brief.md` and `results/inbox-run-log.md`, with both replies.
 
-## Part D. Investigate (15 minutes)
+## Part D. Investigate (30 minutes)
 
 *Where:* In this folder.
 
@@ -66,7 +66,7 @@ Never attach `answer-key/`, your predictions or anything else in `results/`.
 
 *You save:* both scores and the sorted failures in `results/inbox-run-log.md`.
 
-## Part E. Modify: the permission plan and the gap list (15 minutes)
+## Part E. Modify: the permission plan and the gap list (30 minutes)
 
 *Where:* In this folder, with the AI vendors' help pages open.
 
@@ -78,7 +78,7 @@ Never attach `answer-key/`, your predictions or anything else in `results/`.
 
 *You save:* `envelope/permission-plan.md` and `results/gap-list.md`.
 
-## Part F. Make (10 minutes)
+## Part F. Make (20 minutes)
 
 *Where:* In this folder.
 
