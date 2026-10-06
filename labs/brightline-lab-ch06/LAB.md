@@ -1,15 +1,15 @@
 # Lab 06: Review a run you did not watch
 
-**Time:** about 100 minutes of active work.
+**Time:** about 2 hours of active work.
 **You produce:** `results/review-contract.md`, `results/predictions.md`, `results/review-findings.md`, `results/recompute.md`, `results/audience-check.md`, `results/second-reviewer.md` (or `results/transfer-plan.md`), and a Review Contract for one task in a role you know.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet for the totals. Only Part C uses chats with Claude and ChatGPT. Keep your contract and your findings in this folder, not in a chat: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the contract, find the problems and decide, and it writes your answers down. The second-reviewer chats in Part C still happen in fresh chats.
-**You need:** for Part C, a Claude account on any plan that accepts file attachments, and a ChatGPT account. Part C works in ordinary chat on either AI vendor. Claude takes up to 20 files in a chat. Free ChatGPT takes only 3 file uploads a day, so on a free plan paste the files' text into the message instead, each with its file name on the first line. With only one AI vendor, fill `results/transfer-plan.md` for the other.
+**You need:** for Part C, a Claude account on any plan that accepts file attachments, and a ChatGPT account. Part C works in ordinary chat on either AI vendor. With only one AI vendor, fill `results/transfer-plan.md` for the other.
 **Before you start:** never paste real company data into these chats. Everything here is invented.
 
 Open each file only when a step names it. Do not open `worker-output/` until your Review Contract is saved. Do not open `answer-key/` until Part D, step 4. The blank contract is in `templates/`. The other forms are already in `results/`: fill them in where they are.
 
-## Part A. Predict: write the Review Contract first (15 minutes)
+## Part A. Predict: write the Review Contract first (20 minutes)
 
 *Where:* In this folder.
 
@@ -21,7 +21,7 @@ In normal work you write the contract before you delegate. Here someone hands yo
 
 *You save:* `results/review-contract.md` and `results/predictions.md`.
 
-## Part B. Run: review the package against your contract (35 minutes)
+## Part B. Run: review the package against your contract (45 minutes)
 
 *Where:* In this folder, with a spreadsheet for the totals.
 
@@ -33,7 +33,7 @@ In normal work you write the contract before you delegate. Here someone hands yo
 
 *You save:* `results/review-findings.md`, `results/recompute.md` and `results/audience-check.md`.
 
-## Part C. Investigate: a second reviewer on both AI vendors (25 minutes)
+## Part C. Investigate: a second reviewer on both AI vendors (30 minutes)
 
 *Where:* In this folder, then in two fresh chats.
 
