@@ -2,10 +2,10 @@
 
 | | Run A | Run B | Run C |
 | --- | --- | --- | --- |
-| Vendor and surface (for example, Claude, or ChatGPT Work, or ChatGPT Chat) | | | |
+| AI vendor and surface (for example, Claude, or ChatGPT Work, or ChatGPT Chat) | | | |
 | Plan used | | | |
 | Model and settings | | | |
-| Fresh conversation? | | | |
+| Fresh chat, with your memory off? How? | | | |
 | Brief used | Dave's line | Your brief v1 | Your brief v1, unchanged |
 | Messages needed | | | |
 | Files returned, and where they ended up | | | |

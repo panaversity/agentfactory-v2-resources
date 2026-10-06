@@ -1,6 +1,6 @@
 TRI-COUNTY FREIGHT
 1180 Industrial Pkwy, Lancaster, OH 43130
-billing@tricountyfreight.com | (740) 555-0119
+billing@tricountyfreight.example | (740) 555-0119
 
 INVOICE 5161
 Invoice date: October 12, 2026

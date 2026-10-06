@@ -1,8 +1,8 @@
-# Transfer plan (only if you have one vendor)
+# Transfer plan (only if you have one AI vendor)
 
 Marked as planned, not tested.
 
-| Part of the brief | What changes on the other vendor | Why |
+| Part of the brief | What changes on the other AI vendor | Why |
 | --- | --- | --- |
 | Outcome | | |
 | Format, including where files are created | | |

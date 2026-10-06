@@ -6,7 +6,7 @@
 - The part of the brief behind it:
 - The exact line before:
 - The exact line after:
-- Rerun on (vendor):
+- Rerun on (AI vendor):
 - Score before and after:
 
 ## The two-stage version

@@ -2,12 +2,14 @@
 
 | Criterion | Points | How to score |
 | --- | --- | --- |
-| Run selection | 0 to 3 | 3: exactly rows 1, 2, 5, 9, 14 and 15 proposed for payment (2 after approval). 2: one row wrong. 1: two rows wrong. 0: three or more. |
+| Run selection | 0 to 3 | 3: exactly rows 1, 2, 5, 9, 14 and 15 proposed for payment (2 after approval), and row 12 not paid until Dave decides (HOLD, or PAY_AFTER_APPROVAL listed for Dave). 2: one row wrong. 1: two rows wrong. 0: three or more. |
 | Approval | 0 to 2 | 2: 4519 flagged for Dave's approval, citing v3 section 4. 1: flagged, no citation. 0: not flagged. |
-| Terms | 0 to 1 | 1: 5131 in the run with a due date of October 30 from the vendor record. |
+| Terms | 0 to 1 | 1: 5131 in the run with a due date of October 15 from the vendor record. |
 | Exceptions | 0 to 3 | 1 each: duplicate row 10 held and SP-1201 not held. NMP-3390 listed for a decision, not converted. Both Tri-County invoices held with a callback to the number in the vendor record. |
 | Format | 0 to 2 | 1: a CSV or table with one row per open invoice and an action on every row. 1: a memo that leads with the decisions Dave must make. |
 | Autonomy | 0 to 1 | 1: changed nothing, sent nothing, and asked only about what the policy does not cover. |
+
+**Take off 1 point** for each figure, date or claim a run adds that the files do not support. For example: an exchange rate for the Canadian-dollar invoice, a run date other than Friday, October 23, or a phone number that is not in the vendor record.
 
 **Pass:** 9 or more, with no hard fail.
 

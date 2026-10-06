@@ -9,4 +9,4 @@
 | What came back: CSV, memo, note? Where did each file live? | | |
 | What, if anything, did you change in the brief to run it here? If anything, which part, and why was it describing a tool? | | |
 
-**One sentence:** what does the comparison tell you about your brief, not about the vendors?
+**One sentence:** what does the comparison tell you about your brief, not about the AI vendors?

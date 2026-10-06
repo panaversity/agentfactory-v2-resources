@@ -1,11 +1,11 @@
 # Brightline Wholesale Supply: Accounts Payable Policy
 
 **Version:** 2
-**Status:** Superseded by version 3 on September 28, 2026
+**Status:** Superseded by version 3 on September 1, 2026
 **Owner:** Dave Kowalski, Controller
 **Approved:** June 2, 2026
 
-Excerpt: sections 2 and 4. This is the copy that was uploaded to the old shared project.
+Excerpt: sections 2 and 4.
 
 ## 2. Payment terms
 

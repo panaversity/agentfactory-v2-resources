@@ -4,7 +4,7 @@ row_id,invoice_no,vendor_id,vendor_name,invoice_date,amount,currency,terms_on_in
 3,4527,V-1007,Midwest Packaging,2026-10-05,2315.40,USD,Net 30,PO-8861,2026-10-07,
 4,4533,V-1007,Midwest Packaging,2026-10-01,5312.00,USD,Net 30,PO-8849,2026-10-05,
 5,5131,V-1031,Lakeshore Janitorial,2026-09-30,1180.00,USD,Net 45,PO-8833,2026-10-02,
-6,5144,V-1031,Lakeshore Janitorial,2026-10-14,1180.00,USD,Net 45,PO-8870,2026-10-15,
+6,5144,V-1031,Lakeshore Janitorial,2026-10-16,1180.00,USD,Net 45,PO-8870,2026-10-19,
 7,5149,V-1044,Tri-County Freight,2026-10-08,2940.00,USD,Net 15,PO-8858,2026-10-09,
 8,5161,V-1044,Tri-County Freight,2026-10-12,4215.00,USD,Net 15,PO-8866,2026-10-14,Invoice text attached: invoice-text-tcf-5161.txt
 9,BO-22871,V-1019,Buckeye Office Supply,2026-09-30,412.75,USD,Net 30,PO-8835,2026-10-02,Received by mail
