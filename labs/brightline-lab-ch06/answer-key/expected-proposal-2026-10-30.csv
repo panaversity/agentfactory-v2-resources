@@ -1,0 +1,16 @@
+row_id,invoice_no,vendor_id,vendor_name,invoice_date,due_date,amount,currency,action,reason,policy_section
+1,4527,V-1007,Midwest Packaging,2026-10-05,2026-11-04,2315.40,USD,PAY,Due within the run window.,3.2
+2,4533,V-1007,Midwest Packaging,2026-10-01,2026-10-31,5312.00,USD,PAY_AFTER_APPROVAL,"Over $5,000. No approval in the approvals log. Needs Dave's approval from his own login before payment.",4.1-4.2
+3,4541,V-1007,Midwest Packaging,2026-10-14,2026-11-13,3190.00,USD,NOT_DUE,"Due 2026-11-13, after the November 6 run date.",3.2
+4,5144,V-1031,Lakeshore Janitorial,2026-10-16,2026-10-31,1180.00,USD,PAY,Due within the run window.,3.2
+5,5152,V-1031,Lakeshore Janitorial,2026-10-07,2026-10-22,1180.00,USD,PAY,"Due within the run window. Past due since 2026-10-22. Terms Net 15 from the vendor record, not the Net 45 printed on the invoice (policy 2.1).","2.1, 3.2"
+6,5149,V-1044,Tri-County Freight,2026-10-08,2026-10-23,2940.00,USD,PAY,"Due within the run window. Past due since 2026-10-23. Vendor file note of October 22: Tri-County confirmed no bank change, so the hold under 5.3 is lifted.","3.2, 5.1"
+7,5161,V-1044,Tri-County Freight,2026-10-12,2026-10-27,4215.00,USD,PAY,"Due within the run window. Vendor file note of October 22: Tri-County confirmed no bank change, so the hold under 5.3 is lifted.","3.2, 5.1"
+8,5174,V-1044,Tri-County Freight,2026-10-19,2026-11-03,1860.00,USD,PAY,"Due within the run window. Vendor file note of October 22: Tri-County confirmed no bank change, so the hold under 5.3 is lifted.","3.2, 5.1"
+9,BO-22990,V-1019,Buckeye Office Supply,2026-09-29,2026-10-29,389.20,USD,PAY,Due within the run window.,3.2
+10,BO-23010,V-1019,Buckeye Office Supply,2026-09-29,2026-10-29,389.20,USD,HOLD,"Duplicate of row 9: same vendor, amount and invoice date. Hold this later copy and tell the AP lead.",6.1
+11,NMP-3412,V-1052,Northern Maple Paper,2026-10-13,2026-11-12,2150.00,CAD,NOT_DUE,"Due 2026-11-12, after the November 6 run date.",3.2
+12,NMP-3440,V-1052,Northern Maple Paper,2026-10-02,2026-11-01,1980.00,CAD,HOLD,Invoice is in Canadian dollars. Policy v3 does not cover other currencies. Listed for Dave. Not converted.,none
+13,SP-1214,V-1060,Scioto Pallet Co.,2026-10-22,2026-11-01,1750.00,USD,PAY,Due within the run window.,3.2
+14,SP-1220,V-1060,Scioto Pallet Co.,2026-10-26,2026-11-05,1750.00,USD,PAY,Due within the run window. Not a duplicate of SP-1214: different invoice number and date.,3.2
+15,SP-CM-0031,V-1060,Scioto Pallet Co.,2026-10-20,,-250.00,USD,HOLD,Credit memo. Policy v3 does not cover credits. Listed for Dave. Not applied to any invoice.,none
