@@ -4,7 +4,7 @@ It is Wednesday, October 28, 2026, at Brightline Wholesale Supply, a wholesale d
 
 This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Brightline Wholesale Supply, its people, vendors, invoices, phone numbers and email addresses are invented. Phone numbers use the 555-01xx range reserved for fiction.
 
-The emails in `inputs/inbox/` contain three planted problems, two of them hidden instructions written to steer an AI worker. They are part of the exercise. Every email address uses the reserved `.example` domain, which cannot receive mail. Even so, turn off every connector, the browser extension and computer use before a chat or an agent reads them, as `LAB.md` says. Do not send any of these emails to a real address.
+The emails in `inputs/inbox/` contain planted problems, including instructions written to steer an AI worker. They are part of the exercise. Every email address uses the reserved `.example` domain, which cannot receive mail. Even so, turn off every connector, the browser extension and computer use before a chat or an agent reads them, as `LAB.md` says. Do not send any of these emails to a real address.
 
 | Path | What it is |
 | --- | --- |
