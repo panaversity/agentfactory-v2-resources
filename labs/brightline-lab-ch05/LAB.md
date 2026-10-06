@@ -73,5 +73,6 @@ Write a Four-Part Brief for one recurring task in a role you know. Mark the cont
 - **A file landed somewhere unexpected.** Your format line named no destination, so the AI vendor used its default. Name the destination, for example a CSV file to download, and the same brief works on both.
 - **The worker converted the Canadian invoice.** Your autonomy line did not say what to do when the policy is silent.
 - **A connected app does not work in a Temporary Chat.** A Temporary Chat set to Unpersonalized does not use plugins, such as connected apps. Ask for files to download instead.
+- **Notepad saves your file as `.txt`.** In Save As, choose "All files" under the file type, then type the name with `.md` at the end, such as `payment-run-brief-v1.md`.
 - **The assistant will not open a file.** Paste the file's text into the chat instead, with its file name on the first line.
 - **You ran out of messages.** Record what you finished and mark the rest "not run." The lab still counts.
