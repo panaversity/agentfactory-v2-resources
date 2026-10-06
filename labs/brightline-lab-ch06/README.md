@@ -19,6 +19,7 @@ This is a different week and a different package from the one in the chapter, wi
 | `worker-output/memo-to-dave.md` | The worker's memo |
 | `worker-output/note-to-maria.md` | The worker's note |
 | `worker-output/task-record.md` | What the worker read, received, wrote and sent |
+| `results/predictions.md` | Part A |
 | `results/review-findings.md` | Parts B and D |
 | `results/recompute.md` | Part B |
 | `results/audience-check.md` | Part B |

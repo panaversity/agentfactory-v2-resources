@@ -1,13 +1,13 @@
 # Lab 06: Review a run you did not watch
 
 **Time:** about 100 minutes of active work.
-**You produce:** `results/review-contract.md`, `results/review-findings.md`, `results/recompute.md`, `results/audience-check.md`, `results/second-reviewer.md` (or `results/transfer-plan.md`), and a Review Contract for one task in a role you know.
+**You produce:** `results/review-contract.md`, `results/predictions.md`, `results/review-findings.md`, `results/recompute.md`, `results/audience-check.md`, `results/second-reviewer.md` (or `results/transfer-plan.md`), and a Review Contract for one task in a role you know.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet for the totals. Only Part C uses chats with Claude and ChatGPT. Keep your contract and your findings in this folder, not in a chat: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the contract, find the problems and decide, and it writes your answers down. The second-reviewer chats in Part C still happen in fresh chats.
-**You need:** for Part C, a Claude account on any plan that accepts file attachments, and a ChatGPT account. Part C works in ordinary chat on either AI vendor. With only one AI vendor, fill `results/transfer-plan.md` for the other.
+**You need:** for Part C, a Claude account on any plan that accepts file attachments, and a ChatGPT account. Part C works in ordinary chat on either AI vendor. Claude takes up to 20 files in a chat. Free ChatGPT takes only 3 file uploads a day, so on a free plan paste the files' text into the message instead, each with its file name on the first line. With only one AI vendor, fill `results/transfer-plan.md` for the other.
 **Before you start:** never paste real company data into these chats. Everything here is invented.
 
-Open each file only when a step names it. Do not open `worker-output/` until your Review Contract is saved. Do not open `answer-key/` until Part D, step 4.
+Open each file only when a step names it. Do not open `worker-output/` until your Review Contract is saved. Do not open `answer-key/` until Part D, step 4. The blank contract is in `templates/`. The other forms are already in `results/`: fill them in where they are.
 
 ## Part A. Predict: write the Review Contract first (15 minutes)
 
@@ -15,11 +15,11 @@ Open each file only when a step names it. Do not open `worker-output/` until you
 
 In normal work you write the contract before you delegate. Here someone hands you finished work, so you write the contract before you open it. It cannot shape the work, but it keeps the package from setting your standard.
 
-1. Read `README.md`, then `inputs/payment-run-brief-v3.md`, the brief the worker received. Skim the five source files in `inputs/`.
+1. Read the story at the top of `README.md`, then `inputs/payment-run-brief-v3.md`, the brief the worker received. Skim the five source files in `inputs/`.
 2. Copy `templates/review-contract-template.md` to `results/review-contract.md`. Fill in all four sections for this run. Write the date and time at the top.
-3. Under the contract, predict in two or three lines which checks are most likely to find a problem, and why.
+3. In `results/predictions.md`, predict in two or three lines which checks are most likely to find a problem, and why.
 
-*You save:* `results/review-contract.md`.
+*You save:* `results/review-contract.md` and `results/predictions.md`.
 
 ## Part B. Run: review the package against your contract (35 minutes)
 
@@ -47,7 +47,7 @@ Each chat is fresh and cannot see your own memory, so your memory does not chang
 3. Save each reply in `results/`, as `results/claude-review.md` and `results/chatgpt-review.md`.
 4. Fill in `results/second-reviewer.md`. Mark every finding as found by you, by the AI, or both. Check each AI finding against the sources. A second reviewer can be wrong too.
 
-Never attach `templates/`, your other `results/` files or `answer-key/`. Record the model and its settings for each chat.
+Never attach `templates/`, your other `results/` files, such as your predictions, or `answer-key/`. Record the model and its settings for each chat.
 
 *You save:* `results/second-reviewer.md` and the two replies, or `results/transfer-plan.md` if you use only one AI vendor.
 
@@ -64,7 +64,7 @@ Never attach `templates/`, your other `results/` files or `answer-key/`. Record 
 
 ## Part E. Make (10 minutes)
 
-*Where:* On paper, or in a file of your own.
+*Where:* In this folder.
 
 Write a Review Contract for one task that repeats, in a role you know. Name what is checked, what evidence comes back, what counts as success, and what stops the worker. Mark the lines that also go into the brief.
 
@@ -72,10 +72,11 @@ Write a Review Contract for one task that repeats, in a role you know. Name what
 
 ## If something goes wrong
 
+Read this list only when you are stuck. It gives no answers.
+
 - **You found nothing wrong.** Match every source ID to the CSV. Then trace every approval ID and policy section to its source.
-- **Your totals do not match the answer key.** Check that you used the vendor record's terms, not the invoice's, and Maria's decisions from the task record.
-- **You held invoices the sources clear.** Check every input file, not only the policy and the invoice list.
-- **The second reviewer flagged the credit memo as incomplete.** Check it against policy version 3 and the brief. Abstaining is the right output when the policy is silent.
+- **Your totals do not match the answer key.** Work out each row again from `inputs/` alone, by policy section 3, and use Maria's decisions from the task record.
+- **The second reviewer calls something a problem that you left alone.** Check its finding against the sources and the policy before you accept it. A second reviewer can be wrong.
 - **The second reviewer agrees with everything.** Ask it to cite the file and row for each check it says passed.
 - **Notepad saves your file as `.txt`.** In Save As, choose "All files" under the file type, then type the name with `.md` at the end, such as `review-contract.md`.
 - **The assistant will not open a file.** Paste the file's text into the chat instead, with its file name on the first line.

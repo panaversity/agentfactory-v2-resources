@@ -2,7 +2,7 @@
 
 **Task:** (one line, from the brief's outcome)
 **Reviewer:** (the person who signs)
-**Written:** (date and time, before you open anything in worker-output/)
+**Written:** (the date and time you write it, before you open anything in worker-output/)
 
 ## 1. What must be checked
 The facts, figures and decisions that decide whether the work is usable.

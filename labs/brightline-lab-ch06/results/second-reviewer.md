@@ -3,10 +3,15 @@
 | | Claude | ChatGPT |
 | --- | --- | --- |
 | Model and settings | | |
-| Findings it reported | | |
-| Findings you had that it missed | | |
-| Findings it had that you missed | | |
-| Findings it reported that are wrong | | |
+| How you sent the files (attached or pasted) | | |
 | Did it cite file and row for each finding? | | |
+
+One row per finding, from you or from either reviewer:
+
+| Finding (file and row) | You | Claude | ChatGPT | Right, by the sources? |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+Anything either reviewer called a problem that is right by the sources:
 
 What you will keep doing yourself, and why:

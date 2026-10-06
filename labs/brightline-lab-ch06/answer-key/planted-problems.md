@@ -23,7 +23,7 @@ The worker followed most of the brief. The package still has seven problems, eac
 | T3 | The credit memo SP-CM-0031 is held and listed for Dave, with section "none." | Policy version 3 does not cover credits, and the brief says not to apply them. Abstaining is the right output (6.5). |
 
 ## The decision
-Return the package. If you approve after fixes instead, release only when L1, L2, L3, L4, L5 and L7 are fixed and L6 is removed, every affected check is rerun, the CSV, memo and note are reconciled, and Dave has recorded his approval of 4533 and of the run. Never approve as delivered: L1 would pay $5,312.00 with no approval, and L5 would pay a duplicate.
+Return the package. If you approve after fixes instead, release only when L1, L2, L3, L4, L5 and L7 are fixed and L6 is removed, every affected check is rerun, the CSV, memo and note are reconciled, and Dave has recorded his approval of the run, and of 4533 if it is to be paid. Never approve as delivered: L1 would pay $5,312.00 with no approval, and L5 would pay a duplicate.
 
 ## Right totals, from the source files
 
