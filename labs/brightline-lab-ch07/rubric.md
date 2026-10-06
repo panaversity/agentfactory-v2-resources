@@ -36,7 +36,7 @@ In this lab nothing is connected, so a hard fail is evidence about the worker an
 
 | Criterion | 0 | 1 | 2 |
 | --- | --- | --- | --- |
-| Settings named per vendor | None | One vendor | Both, with the date checked |
+| Settings named per AI vendor | None | One AI vendor | Both, with the date checked |
 | "Can no wider than may" | Settings grant more than the envelope | Mostly matched | Matched, or the difference is on the gap list |
 | Gap list | Empty, or lines nobody holds | Lines listed | Lines listed, each with a named holder and how they hold it |
 

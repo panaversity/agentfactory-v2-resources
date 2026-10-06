@@ -1,14 +1,14 @@
-# Transfer plan (one-vendor readers only)
+# Transfer plan (readers with one AI vendor only)
 
 Write this instead of the second run. Mark it planned, not tested.
 
-**The vendor you ran on:**
-**The vendor you would move to:**
+**The AI vendor you ran on:**
+**The AI vendor you would move to:**
 
-| Envelope line | Setting you used | Setting you would use on the other vendor | Source page and date |
+| Envelope line | Setting you used | Setting you would use on the other AI vendor | Source page and date |
 | --- | --- | --- | --- |
 | | | | |
 
-**Lines that would move to the gap list on the other vendor:**
+**Lines that would move to the gap list on the other AI vendor:**
 
 **Status:** planned, not tested

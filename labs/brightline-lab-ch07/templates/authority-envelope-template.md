@@ -3,7 +3,7 @@
 **Owner:** Dave Kowalski, Controller (approves this envelope)
 **Drafted by:** <your name>, <date>
 **Version:** 1
-**Applies to:** every task the AP Worker runs, on any vendor. A brief can narrow this envelope, never widen it.
+**Applies to:** every task the AP Worker runs, on any AI vendor. A brief can narrow this envelope, never widen it.
 
 ## 1. Actions and levels
 

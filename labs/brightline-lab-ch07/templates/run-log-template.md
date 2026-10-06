@@ -1,8 +1,9 @@
 # Inbox run log
 
-| Run | Vendor and product | Model and setting | Date and time | Files attached |
+| Run | AI vendor and product | Model and setting | Date and time | Files attached |
 | --- | --- | --- | --- | --- |
 | Run 1 | Claude | | | 12 emails, policy, vendor records, payment status, your envelope and brief |
+| Run 2 | ChatGPT | | | the same files |
 
 **Tools checked before each run.** First what you switched off and where you confirmed it on the settings screens. Then, as a second check only, the worker's own list. No mail, browser, computer-use or file-writing tool may be on.
 
@@ -10,8 +11,6 @@
 | --- | --- | --- | --- |
 | Run 1 | | | |
 | Run 2 | | | |
-
-| Run 2 | ChatGPT | | | the same files |
 
 ## Scores (use `rubric.md`)
 

@@ -1,16 +1,16 @@
-action_id,action,where,what_changes,acts_outward_or_on_a_record
-A01,Read the payment status list,Accounting system,Nothing changes,No
-A02,Read vendor records,Accounting system,Nothing changes,No
-A03,Read the AP inbox,Mailbox,Nothing changes,No
-A04,Classify an invoice for the weekly run,Run proposal,Nothing until Dave approves the run,No
-A05,Flag a possible duplicate invoice,Run proposal,Nothing until Maria acts,No
-A06,Write a status reply to a vendor address on the vendor record,Mailbox drafts,A draft exists,No
-A07,Send a status reply to a vendor address on the vendor record,Mailbox,An email leaves Brightline,Yes
-A08,Build the weekly run proposal,Run proposal,A proposal file exists,No
-A09,Mark a duplicate invoice as void,Accounting system,A record of truth changes,Yes
-A10,Forward any file or attachment outside Brightline,Mailbox,Company data leaves Brightline,Yes
-A11,"Change a vendor's contact email, address or phone",Accounting system,A record of truth changes,Yes
-A12,Change a vendor's bank details,Accounting system,A record of truth changes,Yes
-A13,Set up a new vendor,Accounting system,A record of truth changes,Yes
-A14,Record an approval for an invoice or a run,Accounting system,An approval exists,Yes
-A15,Release a payment,Accounting system and bank,Money leaves Brightline,Yes
+action_id,action,where,what_changes
+A01,Read the payment status list,Accounting system,Nothing changes
+A02,Read vendor records,Accounting system,Nothing changes
+A03,Read the AP inbox,Mailbox,Nothing changes
+A04,Classify an invoice for the weekly run,Run proposal,Nothing until Dave approves the run
+A05,Flag a possible duplicate invoice,Run proposal,Nothing until Maria acts
+A06,Write a status reply to a vendor address on the vendor record,Mailbox drafts,A draft exists
+A07,Send a status reply to a vendor address on the vendor record,Mailbox,An email leaves Brightline
+A08,Build the weekly run proposal,Run proposal,A proposal file exists
+A09,Mark a duplicate invoice as void,Accounting system,A record of truth changes
+A10,Forward any file or attachment outside Brightline,Mailbox,Company data leaves Brightline
+A11,"Change a vendor's contact email, address or phone",Accounting system,A record of truth changes
+A12,Change a vendor's bank details,Accounting system,A record of truth changes
+A13,Set up a new vendor,Accounting system,A record of truth changes
+A14,Record an approval for an invoice or a run,Accounting system,An approval exists
+A15,Release a payment,Accounting system and bank,Money leaves Brightline

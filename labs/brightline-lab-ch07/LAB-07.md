@@ -1,28 +1,28 @@
 # Lab 7: Draw the envelope, then test it
 
 **Time:** about 100 minutes
-**You need:** Claude and ChatGPT, on plans that accept file attachments or pasted text. With one vendor, see Step 5.
+**You need:** Claude and ChatGPT, on plans that accept file attachments or pasted text. With one AI vendor, see Step 5.
 **You do not need:** a real mailbox, a connector or access to any accounting system. Everything is in this folder.
 **Standalone:** this lab uses no files from other chapters.
 
 ## The situation
 
-It is Wednesday, October 28, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. On Tuesday the AP Worker forwarded a payment run file to a look-alike address and changed a vendor's contact email, because nobody had decided what it could do (Chapter 7's opening story). Dave Kowalski, the controller, owns the AP Worker. He has asked you to draft its Authority Envelope for his approval, test how a worker handles this morning's inbox under it, and document how each vendor's settings would enforce it, before the worker touches the real mailbox again.
+It is Wednesday, October 28, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. On Tuesday the AP Worker forwarded a payment run file to a look-alike address and changed a vendor's contact email, because nobody had turned the authority line of its Role Contract into settings (Chapter 7's opening story). Dave Kowalski, the controller, owns the AP Worker. He has asked you to draft its Authority Envelope for his approval, test how a worker handles this morning's inbox under it, and document how each vendor's settings would enforce it, before the worker touches the real mailbox again.
 
-Maria is the AP lead. Dave approves runs and invoices over $5,000.00, from his own login only.
+Maria is the office manager. Dave approves runs and invoices over $5,000.00, from his own login only.
 
 ## Files
 
 | File | What it decides |
 | --- | --- |
-| `inputs/ap-policy-v3.md` | Every rule. Section 7, on vendor records, is new |
-| `inputs/vendor-records.csv` | Each vendor's terms, contact email and phone on record |
+| `inputs/ap-policy-v3-excerpt.md` | The rules. Section 5 covers vendor details, including contact details |
+| `inputs/vendor-records.csv` | Each vendor's terms, remittance email and phone on record |
 | `inputs/payment-status-2026-10-28.csv` | Where each invoice stands |
 | `inputs/action-catalog.csv` | Fifteen things the AP Worker could do |
 | `inputs/inbox/email-01.txt` to `email-12.txt` | This morning's twelve emails |
 | `inputs/maria-monday-instruction.md` | Maria's instruction from the story. Read it. Do not run it |
 | `templates/` | Every file you write starts here |
-| `sources.md` | The vendor help pages for Step 5 |
+| `sources.md` | The AI vendors' help pages for Step 5 |
 | `rubric.md` | How you score your work |
 | `answer-key/` | Open only after Step 4 |
 
@@ -48,7 +48,7 @@ Copy `templates/inbox-brief-template.md` to `briefs/inbox-brief.md` and fill it 
 
 As a second check only, ask the worker: "List every tool you can use in this conversation." If its list names anything you did not expect, trust the settings screen, turn the extra tool off, and note the difference. Never rely on the worker's list alone. It is the worker's word, and Chapter 7, Concept 7.7, explains why that is not enough.
 
-**Run 1, Claude.** Start a fresh conversation. Attach the twelve emails, the policy, the vendor records, the payment status list, your envelope and your brief. Send the brief.
+**Run 1, Claude.** Start a fresh conversation. Attach the twelve emails, the policy excerpt, the vendor records, the payment status list, your envelope and your brief. Send the brief.
 
 **Run 2, ChatGPT.** Start a fresh conversation with the same files and the same brief.
 
@@ -62,15 +62,15 @@ Then open `answer-key/envelope-key.md` and score your envelope with Part A. Wher
 
 ## Step 5. Modify: the permission plan and the gap list (15 minutes)
 
-Copy `templates/permission-plan-template.md` to `envelope/permission-plan.md`. For each envelope line, find the setting that enforces it on each vendor, using the chapter's Concept 7.8 boxes and the pages in `sources.md`. Write the date you checked.
+Copy `templates/permission-plan-template.md` to `envelope/permission-plan.md`. For each envelope line, find the setting that enforces it on each AI vendor, using the chapter's Concept 7.8 boxes and the pages in `sources.md`. Write the date you checked.
 
 Where no setting can express a line, copy it to `results/gap-list.md` from the template, with the person who holds it and how.
 
-**One vendor?** Fill in `templates/transfer-plan-template.md` as `results/transfer-plan.md` instead of Run 2, marked planned, not tested.
+**One AI vendor?** Fill in `templates/transfer-plan-template.md` as `results/transfer-plan.md` instead of Run 2, marked planned, not tested.
 
 ## Step 6. Make (10 minutes)
 
-1. Copy `templates/role-contract-authority-section.md` to `role-contract/ap-worker-role-contract-v2.md` and fill it in.
+1. Copy `templates/role-contract-authority-section.md` to `role/ap-worker-role-contract.md` and fill it in.
 2. Write a five-line Authority Envelope for one worker in a role you know: one line each for actions and levels, thresholds, never automated, escalation, and owner.
 
 ## What this lab does not prove
@@ -85,5 +85,5 @@ The runs test how a worker handles the inbox: classifying, drafting, escalating 
 - [ ] `results/inbox-run-log.md`, both runs scored, or one run and `results/transfer-plan.md`
 - [ ] `envelope/permission-plan.md`, with the date checked
 - [ ] `results/gap-list.md`
-- [ ] `role-contract/ap-worker-role-contract-v2.md`
+- [ ] `role/ap-worker-role-contract.md`
 - [ ] Your own five-line envelope

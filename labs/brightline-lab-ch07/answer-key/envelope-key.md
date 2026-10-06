@@ -10,15 +10,15 @@ Other defensible answers exist. Where yours differs, it must give a reason from 
 | A02 Read vendor records | Observe | Changes nothing | Stays |
 | A03 Read the AP inbox | Observe | Changes nothing, but the content is untrusted | Stays |
 | A04 Classify an invoice for the run | Recommend | Dave approves the run as a whole (4.3) | Stays at recommend while 4.3 stands |
-| A05 Flag a possible duplicate | Recommend | Maria acts on duplicates (5.1) | Stays |
+| A05 Flag a possible duplicate | Recommend | A person acts on duplicates (6.1) | Stays |
 | A06 Write a status reply to an address on record | Draft | Reversible until sent | Stays |
 | A07 Send a status reply to an address on record | Not delegated today. The worker stops at A06 and Maria sends | A sent email cannot be unsent, and the task is new | Execute, after four weeks of drafts that pass review with no missed escalation, recorded in the change log, for addresses on the vendor record only |
 | A08 Build the weekly run proposal | Draft | Dave approves the run (4.3) | Stays |
 | A09 Mark a duplicate invoice as void | Recommend | Changes a record of truth | Stays with Maria |
 | A10 Forward any file outside Brightline | Never automated | Data leaving the company cannot be recalled | Never |
-| A11 Change a vendor's contact details | Never automated | Policy 7.1 to 7.3 | Never |
-| A12 Change bank details | Never automated | Policy 6.1 to 6.3 | Never |
-| A13 Set up a new vendor | Never automated | Policy 7.4 | Never |
+| A11 Change a vendor's contact details | Never automated | Policy 5.4 and 5.5 | Never |
+| A12 Change bank details | Never automated | Policy 5.1 to 5.3 | Never |
+| A13 Set up a new vendor | Never automated | Policy 5.6 | Never |
 | A14 Record an approval | Never automated | Policy 4.2: only Dave, from his own login | Never |
 | A15 Release a payment | Never automated | Policy 4.2 and 4.3 | Never |
 
