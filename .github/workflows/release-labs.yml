@@ -1,4 +1,4 @@
-# Packs every lab folder as a zip and publishes them as a new release, so the
+# Packs every lab folder as a zip (only its data/ folder, when it has one) and publishes them as a new release, so the
 # book's links (…/releases/latest/download/<lab>.zip) download the newest copy
 # in one click. The same pattern as the first edition's companion repositories,
 # without a manual tag: a change to a lab on main is the release.
@@ -23,11 +23,19 @@ jobs:
 
       - name: Zip each lab folder
         run: |
-          mkdir -p dist
+          mkdir -p dist stage
           for dir in labs/*/; do
-            name="$(basename "$dir")"
-            # From inside labs/, so the zip unpacks into one folder named for the lab.
-            (cd labs && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
+            name="$(basename "${dir%/}")"
+            if [ -d "${dir}data" ]; then
+              # A lab with a data/ folder ships only its data: no instructions, no answers.
+              # Staged under the lab's name, so the zip still unpacks into one folder named for the lab.
+              mkdir -p "stage/$name"
+              cp -R "${dir}data/." "stage/$name/"
+              (cd stage && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
+            else
+              # From inside labs/, so the zip unpacks into one folder named for the lab.
+              (cd labs && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
+            fi
           done
           ls -l dist
 
