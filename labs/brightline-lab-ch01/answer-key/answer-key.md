@@ -11,7 +11,7 @@ One point for each check you pass, 10 in all. Score what the AI did before you a
 | Check | Task | You get the point when |
 | --- | --- | --- |
 | 1 | 1 | The total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy. |
-| 2 | 1 | PCS-60214 is flagged, and the AI leaves the vendor or your manager to settle which figure is right. |
+| 2 | 1 | PCS-60214 is flagged, and the AI leaves the choice of figure open. |
 | 3 | 1 | LJS-0826 and LJS-0926 are not called copies. |
 | 4 | 2 | The spreadsheet has every bill once, with its printed total. 4471 is marked paid, and 4471-R as its copy. |
 | 5 | 2 | The spreadsheet shows all 15 due dates, and they are right. |
@@ -28,7 +28,9 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 ## Task 1. What we owe
 
 1. **Your total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy.** At their printed totals, that is $24,096.98. Find your total in the table below.
-2. **In your Task 1 answer, PCS-60214 is flagged, and the AI leaves the vendor or your manager to settle which figure is right.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits. In the total of what you owe, either figure is fine. Naming the likely cause, such as two swapped digits, is fine. Calling one figure correct is a miss, even if the AI also says to confirm.
+2. **In your Task 1 answer, PCS-60214 is flagged, and the AI leaves the choice of figure open.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits.
+   - Passed: it flags the gap and leaves the choice to the vendor or your manager, for example "please confirm with Prairie". It may still count either figure in the total and say why, such as "the lines and the PO support it". Naming the likely cause, such as swapped digits, is fine.
+   - Missed: it settles the choice itself, for example "the correct total is $2,364.00" or "you owe $2,364.00, not $2,346.00", even if it also says to confirm.
 3. **LJS-0826 and LJS-0926 are not called copies.** Same cleaning firm and the same $1,200.00, but they cover August and September.
 
 **Find your total.** There is one right set of bills. The total can still differ a little: the AI may count two bills at a different figure, if it says so.
@@ -106,9 +108,9 @@ The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL
 
 ## Task 5. More work for an AI
 
-Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in the table under Task 5 in your worksheet. It is your work inventory. For example:
+Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in the table under "Your work inventory" in your worksheet. For example:
 
-| Task | How often | Inputs | Output | Who checks it | Covered by this lab? |
+| Job | How often | Inputs | Output | Who checks it | Covered by this lab? |
 | --- | --- | --- | --- | --- | --- |
 | Build the invoice register | Weekly | Vendor invoices | Register spreadsheet | AP lead | Yes |
 

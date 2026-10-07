@@ -7,12 +7,10 @@ Chapter 1 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | Path | What it is |
 | --- | --- |
 | `LAB.md` | The lab: the job, seven tasks, and when to check your answers. |
-| `inputs/` | 15 invoice PDFs and `purchase-orders.csv`. Read them when you check the AI's work. |
-| `inputs.zip` | The same files in one zip, in the downloaded lab. It is the only thing you give the AI. |
+| `inputs/` | `invoices/`, 15 PDFs, and `purchase-orders.csv`. Read them when you check the AI's work. |
+| `inputs.zip` | The same files in one zip. It is the only thing you give the AI. |
 | `worksheets/` | The two files you fill in: `ai-vendor-run.md` for Tasks 1 to 5, and `port.md` for Tasks 6 and 7. |
 
 **Give the AI only `inputs.zip`.** Never upload `LAB.md`, this file or your worksheets.
 
 The answer key is not in the zip. `LAB.md` links to it when it is time: [Tasks 1 to 5](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md), then [Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md).
-
-For maintainers: the release makes `inputs.zip` from `inputs/`, and leaves `answer-key/` out of the zip. The invoices are printed by `tools/brightline-lab-ch01/` in this repository.

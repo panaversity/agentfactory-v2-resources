@@ -18,9 +18,9 @@ If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's 
 
 Write your answers in the last section of your worksheet, `port.md`.
 
-- **What did your own checks find, before you opened the answers?** A check that caught a mistake, such as the paid 4471 counted again, is the lesson at work: Chapter 1's "Humans verify outcomes".
+- **What did your own checks find, before you opened the answers?** A check that caught a mistake, such as the paid 4471 counted again, is the lesson at work: [Chapter 1's "Humans verify outcomes"](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/).
 - **Did a mistake hide in a part you did not check?** Next time, check where the AI made a choice: which amount, which bills, what counts as a problem.
-- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first briefs left them out, what did the AI do without them? If your first briefs had them, that is why they scored well: what do you think the AI would have done without them?
+- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first briefs left them out, what did the AI do without them? If your first briefs had them, that is why they scored well. What did the AI do without them, in the optional test?
 - **Did the AI just answer in the chat, or did it do work:** open the zip, run code, make a file? [The same text box](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/same-text-box/), section 1.2 of Chapter 1, explains how it decides. Where did that work run?
 - **Did it check its own work?** Did it open the spreadsheet it made, and did every count in its answers add up?
 - **Did it assume anything you did not tell it,** such as the date of the next payment run? Did it add figures or advice you did not ask for? Is each one right?

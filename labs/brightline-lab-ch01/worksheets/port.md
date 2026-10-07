@@ -8,13 +8,13 @@ From (the AI vendor in `ai-vendor-run.md`):
 
 To:
 
-Date:
+Date you did this:
 
 If you can use only one AI vendor, skip the run. Write "not run" for the score, and fill in the table with what you think would change.
 
 Score from the score sheet: __ / 10
 
-| # | What changed | Kind of change | Why it was needed |
+| # | What changed, or would change | Kind of change | Why it was needed |
 | --- | --- | --- | --- |
 | 1 |  |  |  |
 
@@ -24,9 +24,9 @@ Lines of your briefs that did not change:
 
 ## Task 7. The next day
 
-Date:
+Date you did this:
 
-| What you made | Where it is, or "gone", or "can't tell" |
+| What you made | Where it is, or "gone", "can't tell" or "not run" |
 | --- | --- |
 | Task 2 spreadsheet, Run 1 |  |
 | Task 2 spreadsheet, Run 2 |  |

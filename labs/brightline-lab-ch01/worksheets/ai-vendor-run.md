@@ -4,7 +4,7 @@ Fill this in as you go, from top to bottom. `LAB.md` says what to do in each tas
 
 AI vendor and app:
 
-Date:
+Date you did this:
 
 ## Run 1
 
@@ -25,6 +25,8 @@ How it got there:
 
 My own check:
 
+What I give my manager:
+
 ### Task 2. A spreadsheet for Friday
 
 The kind of answer I expect:
@@ -43,6 +45,8 @@ The spreadsheet's file name, and where it is (in the chat, on my computer, or bo
 How it got there:
 
 My own check:
+
+What I give my manager:
 
 Its answer to "Which files did you create that you did not deliver to me?":
 
@@ -63,6 +67,8 @@ How it got there:
 
 My own check:
 
+What I give my manager:
+
 ### Task 4. Match the POs
 
 The kind of answer I expect:
@@ -80,6 +86,8 @@ How it got there:
 
 My own check:
 
+What I give my manager:
+
 ### Task 5. More work for an AI
 
 The kind of answer I expect:
@@ -93,7 +101,17 @@ My brief
 
 The AI's five jobs:
 
-After you check your answers, put the five jobs in this table. It is your work inventory.
+### Run 1 score
+
+Score from the score sheet: __ / 10
+
+Checks I missed:
+
+What I will change, and in which brief:
+
+### Your work inventory
+
+After you check your answers, put the AI's five jobs from Task 5 in this table.
 
 | Job | How often | Inputs | Output | Who checks it | Covered by this lab? |
 | --- | --- | --- | --- | --- | --- |
@@ -103,13 +121,13 @@ After you check your answers, put the five jobs in this table. It is your work i
 |  |  |  |  |  |  |
 |  |  |  |  |  |  |
 
-### Run 1 score
+### Optional, if Run 1 scored 10: Task 1 without the facts
 
-Score from the score sheet: __ / 10
+My Task 1 brief, without the facts from "The job":
 
-Checks I missed:
+What came back:
 
-What I will change, and in which brief:
+What changed, compared with my first answer:
 
 ## Run 2: your fixed briefs
 
