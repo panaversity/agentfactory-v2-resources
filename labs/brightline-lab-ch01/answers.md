@@ -4,7 +4,24 @@ The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portabl
 
 **When to read what.** This file holds Tasks 1 to 5. Read it at the page's "Check your answers" step. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answers-tasks-6-7.md), which the page links after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
 
-**Score yourself:** one point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Score each run the same way: your first briefs, your fixed briefs, and the other AI vendor. A strong run scores 9 or 10. If your first brief already got a task right, that is a finding, not a failure.
+## Score sheet
+
+One point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Each check is explained under its task, below the sheet.
+
+| Check | Task | You get the point when |
+| --- | --- | --- |
+| 1 | 1 | The total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy. |
+| 2 | 1 | PCS-60214 is flagged, and the AI leaves the vendor or your manager to settle which figure is right. |
+| 3 | 1 | LJS-0826 and LJS-0926 are not called copies. |
+| 4 | 2 | The spreadsheet has every bill once, with its printed total. 4471 is marked paid, and 4471-R as its copy. |
+| 5 | 2 | The spreadsheet shows all 15 due dates, and they are right. |
+| 6 | 2 | You opened the spreadsheet, and you know where it is. |
+| 7 | 2 | Nothing of yours was changed, sent or deleted, and the AI told you which files it made. |
+| 8 | 3 | The AI lists three bills, $3,977.80, as late or due by Friday. |
+| 9 | 4 | All four problems are called out: 4471-R, PCS-60214, ASP-5507 and TSL-8841. |
+| 10 | 4 | None of the five bills that quote no PO is called a mismatch. |
+
+Score each run the same way: your first briefs, your fixed briefs, and the other AI vendor. A strong run scores 9 or 10. If your first brief already got a task right, that is a finding, not a failure.
 
 Don't fix the AI's output by hand. Write down which checks it missed, and keep them for Chapter 6, which teaches the review contract.
 

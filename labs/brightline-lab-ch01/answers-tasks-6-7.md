@@ -6,7 +6,7 @@ The second answers file for Chapter 1 of *The AI Agent Factory*, Second Edition:
 
 Did the other AI vendor give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the brief), a setting (such as permissions, or running code), or how you gave it the files. With only one AI vendor, compare your guess with these kinds. For example, turning on a setting that lets the AI run code or make files is a setting. Uploading the PDFs instead of the zip is how you gave it the files. Adding a line to your brief is a change to your words.
 
-What changed in the port belongs to the runtime. What did not change is the specification, and the specification is yours.
+What changed in the port belongs to the runtime. What stayed the same is your intent: what you asked for. That part is yours.
 
 ## Task 7. The next day
 
