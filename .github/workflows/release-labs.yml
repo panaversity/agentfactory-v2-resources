@@ -5,7 +5,7 @@
 #
 # A lab named in UPLOAD_LABS is one whose learner gives an AI its inputs as a
 # file. Its zip leaves out answer-key/, so the answers never ride along, and
-# adds inputs.zip, made from inputs/, as the one file to upload.
+# holds inputs/ only as inputs.zip: one copy, and the one file to upload.
 name: Release labs
 
 on:
@@ -36,7 +36,7 @@ jobs:
               # Staged under the lab's name, so the zip still unpacks into one folder named for the lab.
               cp -R "${dir%/}" "stage/$name"
               rm -rf "stage/$name/answer-key"
-              (cd "stage/$name" && zip -r -X -q inputs.zip inputs -x "*/.DS_Store" "*/.gitkeep")
+              (cd "stage/$name" && zip -r -X -q inputs.zip inputs -x "*/.DS_Store" "*/.gitkeep" && rm -rf inputs)
               (cd stage && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
             else
               # From inside labs/, so the zip unpacks into one folder named for the lab.

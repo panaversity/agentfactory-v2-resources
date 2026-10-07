@@ -20,7 +20,7 @@ A lab's `answer-key/` folder holds its answers, and its `LAB.md` tells you when 
 
 ## How this repository works
 
-Each folder in `labs/` is one lab. When a lab changes on `main`, a GitHub Action zips every lab folder and publishes the zips as a new release. Chapter 1's zip leaves out `answer-key/`, and adds `inputs.zip`, made from its `inputs/` folder: the one file its learners give the AI. Code that makes a lab's files lives in `tools/`, outside every zip.
+Each folder in `labs/` is one lab. When a lab changes on `main`, a GitHub Action zips every lab folder and publishes the zips as a new release. Chapter 1's zip leaves out `answer-key/`, and holds its `inputs/` folder only as `inputs.zip`: the one file its learners give the AI. Code that makes a lab's files lives in `tools/`, outside every zip.
 
 Chapter 1's first version, `labs/brightline-lab/`, stays until the book's Chapter 1 page links `brightline-lab-ch01.zip`. Then it is deleted, and its zip leaves the release. The book links to the latest release, so a link always downloads the newest copy.
 

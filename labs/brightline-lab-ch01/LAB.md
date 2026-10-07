@@ -55,10 +55,9 @@ While you work:
 
 1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds one folder, `brightline-lab-ch01`:
    - `LAB.md`, this page as a file, and `README.md`
-   - `inputs`: `invoices`, a folder of 15 PDFs, each named the way its vendor sent it, and `purchase-orders.csv`, the purchase-order (PO) list from purchasing
-   - `inputs.zip`, the same files in one zip
+   - `inputs.zip`: `invoices`, a folder of 15 PDFs, each named the way its vendor sent it, and `purchase-orders.csv`, the purchase-order (PO) list from purchasing
    - `worksheets`, the two files you fill in
-2. Give the AI only `inputs.zip`. Never upload the other files in the folder.
+2. Give the AI only `inputs.zip`. Never upload the other files in the folder. To check the AI's work yourself, open `inputs.zip` on your computer.
 3. When you start Task 1, open a new conversation in Claude or ChatGPT. Do Tasks 1 to 5 in that one conversation.
 
 **Checkpoint.** You have the folder, and `worksheets/ai-vendor-run.md` is open.
@@ -67,7 +66,7 @@ While you work:
 
 **Your manager asks:** "How much do we owe on these invoices?"
 
-**What you do:** Write down the kind of answer you expect. Then write your own brief, and send it with `inputs.zip`. When it answers, ask it how it got there. Check one part of its answer yourself, such as one number or one row, against the files in `inputs` or the facts in "The job".
+**What you do:** Write down the kind of answer you expect. Then write your own brief, and send it with `inputs.zip`. When it answers, ask it how it got there. Check one part of its answer yourself, such as one number or one row, against the files in `inputs.zip` or the facts in "The job".
 
 **Give your manager:** one total.
 
@@ -143,7 +142,7 @@ At least a day later, look for your Task 2 spreadsheets from every run, and for 
 
 ## If something goes wrong
 
-- **The AI will not take `inputs.zip`.** Upload the files in `inputs` instead. Write that down as a change.
+- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. Write that down as a change.
 - **Your plan cannot work on files.** Do the tasks anyway, and write down what the AI could and could not do.
 
 ## Apply it to your vertical
