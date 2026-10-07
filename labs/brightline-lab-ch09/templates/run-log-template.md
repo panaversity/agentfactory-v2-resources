@@ -6,7 +6,7 @@
 | AI vendor, plan, model | | | | | |
 | Fresh conversation? | | | | | |
 | Files given | your spec, 5 concepts, register 11-12, SSoR record | Maria's original spec, 5 concepts, register 11-19 | your spec, 5 concepts, register 11-19. No SSoR record | your spec, 5 concepts, register 11-19, SSoR record | your spec, 5 concepts, register 11-26, SSoR record |
-| Score (rubric Part C) | | not scored | | | |
+| Score (rubric section 3) | | not scored | | | |
 | Hard fail? | | | | | |
 | Each miss, and its cause: spec, inputs, record or worker | | | | | |
 
