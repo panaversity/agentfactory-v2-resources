@@ -1,6 +1,6 @@
 # What the worker remembers: topics from Maria's account
 
-An export of the memory topics Maria's account held on Tuesday, November 3, 2026. You use it in Step 1. You do not upload it anywhere.
+An export of the memory topics Maria's account held on Tuesday, November 3, 2026. You use it in Part A. You do not upload it anywhere.
 
 1. Maria is the office manager at Brightline Wholesale Supply.
 2. Maria prefers vendor replies in plain English, with no jargon.

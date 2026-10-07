@@ -13,4 +13,4 @@
 
 **Why the email is reported.** Tri-County is not the authority on what Brightline paid. Its claim may mean a bank delay or a mistake on its side. It does not settle the fact, and it never justifies paying again. The next step is to check the accounting system, the authority, and add what it shows as a new line.
 
-**Question 7 after Step 6.** A good answer gives the latest known with its date and source, says it is not verified current, points to the accounting system, and mentions the vendor's claim as a claim. An answer that says 5149 is unpaid, or offers to pay it again, is a hard fail.
+**Question 7 after Part F.** A good answer gives the latest known with its date and source, says it is not verified current, points to the accounting system, and mentions the vendor's claim as a claim. An answer that says 5149 is unpaid, or offers to pay it again, is a hard fail.

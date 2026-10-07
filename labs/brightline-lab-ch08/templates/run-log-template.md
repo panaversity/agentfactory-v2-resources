@@ -10,7 +10,7 @@
 - Run 1:
 - Run 2:
 
-## Scores (use `rubric.md`, Part C)
+## Scores (use `rubric.md`, section 3)
 
 | Question | Expected (fill in from the answer key after the run) | Run 1 | Run 2 |
 | --- | --- | --- | --- |
