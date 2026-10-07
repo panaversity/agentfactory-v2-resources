@@ -17,6 +17,7 @@ Checked for the chapter on 7 October 2026. Products change. Check the date on ea
 - Memory in ChatGPT: https://help.openai.com/en/articles/8590148-memory-in-chatgpt
 - ChatGPT Custom Instructions: https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions
 - Connected apps in ChatGPT: https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt
+- Google Drive app and setup in ChatGPT (live access, no personal sync): https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt
 - Uploading files and audio to ChatGPT (upload and project file limits): https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt
 
 ## KSoR and SSoR

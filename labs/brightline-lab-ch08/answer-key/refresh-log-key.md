@@ -9,4 +9,6 @@ The KSoR record itself is not a copy: it is the source, edited in place. The oth
 
 A copy that still holds 2026-11-04 for the threshold concept after November 9 is a stale copy. That is the failure the log exists to catch.
 
+If you tried the optional steps, log those copies too: the Google Doc in a private Claude project as synced, and the link to it in a ChatGPT project as fetched when asked. Both hold 2026-11-09. For the fetched copy, the evidence is an answer that cites the November 9 approval.
+
 **Question 9 after the change.** Yes: every invoice in a currency other than USD needs Dave's approval, whatever the amount. A good answer cites the invoice approval threshold concept and its approval of November 9.

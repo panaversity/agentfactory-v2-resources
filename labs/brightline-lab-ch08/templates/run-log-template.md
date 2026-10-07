@@ -40,6 +40,8 @@ Paste each answer here, numbered, under its run.
 | When | Question | Run 1 | Run 2 |
 | --- | --- | --- | --- |
 | Part E, after the change | 9 | | |
+| Part E, optional: synced Google Doc (Claude) | 9 | | |
+| Part E, optional: Google Doc link (ChatGPT) | 9 | | |
 | Part F, after the SSoR record | 7 | | |
 
 ## Scores for the whole lab
