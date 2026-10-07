@@ -5,7 +5,8 @@ Chapter 1 of *The AI Agent Factory*, Second Edition. The tasks are on the book p
 | Path | What it is |
 | --- | --- |
 | `data/` | What the book's zip holds, and nothing else: `invoices/`, 15 invoice PDFs, and `purchase-orders.csv`. The release zips this folder as `brightline-lab-ch01.zip`. |
-| `answers.md` | The answers. The book page links to it last. |
+| `answers.md` | The answers for Tasks 1 to 5. The book page links to it at "Check your answers". |
+| `answers-tasks-6-7.md` | The answers for Tasks 6 and 7, with "Look back". The book page links to it after Task 7. |
 | `source/` | How the data is made: the 15 invoices as text, and `build.py`, which prints them as PDFs. This lab's first version, with LAB.md and the old answer key, is in the repository's history. |
 
 Two facts the tasks need are on the book page, not in the data: today's date in the job, September 30, 2026, and Brightline's payment of invoice 4471 on September 25. A learner has to pass them to the AI. That is the point.

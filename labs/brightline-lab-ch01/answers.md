@@ -2,16 +2,16 @@
 
 The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Every name, number and company in this lab is invented.
 
-**When to read what.** Read Tasks 1 to 5 at the page's "Check your answers" step. Read Task 6 after Task 6, and Task 7 and "Look back" after Task 7. Read "Worth noting" any time after Task 5.
+**When to read what.** This file holds Tasks 1 to 5. Read it at the page's "Check your answers" step. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answers-tasks-6-7.md), which the page links after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
 
-**Score yourself:** one point for each check you pass, 10 in all. Score each run the same way: your first prompts, your fixed prompts, and the other AI vendor. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
+**Score yourself:** one point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Score each run the same way: your first prompts, your fixed prompts, and the other AI vendor. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
 
 Don't fix the AI's output by hand. Write down which checks it missed, and keep them for Chapter 6, which teaches the review contract.
 
 ## Task 1. What we owe
 
 1. **Your total leaves out 4471, which is paid, and 4471-R, its copy, and keeps every other bill.** As billed, that is $24,096.98. The table below shows where any other total came from.
-2. **In your Task 1 answer, PCS-60214 is flagged for the vendor to confirm before it is paid.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits. In the total of what you owe, either figure is fine.
+2. **In your Task 1 answer, PCS-60214 is flagged, and the AI leaves the vendor or your manager to settle which figure is right.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits. In the total of what you owe, either figure is fine. Naming the likely cause, such as two swapped digits, is fine. Calling one figure correct is a miss, even if the AI also says to confirm.
 3. **LJS-0826 and LJS-0926 are not called copies.** Same cleaning firm and the same $1,200.00, but they cover August and September.
 
 **Where your total came from.** Start from $24,096.98.
@@ -24,15 +24,16 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 | counted PCS-60214 at its lines' total | +$18.00 | Fine, if it says so |
 | counted ASP-5507 at its PO price | −$160.00 | Fine, if it says so |
 | put a bill on hold | minus that bill | Fine, if it names the bill |
+| left out a bill without saying so | minus that bill | Missed. Check that every file is counted. |
 
-For example, $27,746.98 is $24,096.98 + $4,850.00 − $1,200.00: the AI counted the paid 4471 and left out LJS-0826. And $33,796.98 is all 15 printed totals added up.
+For example, $27,746.98 is $24,096.98 + $4,850.00 − $1,200.00: the AI counted the paid 4471 and left out LJS-0826. And $23,954.98 is $24,096.98 + $18.00 − $160.00: the AI counted PCS-60214 at its lines and ASP-5507 at its PO price, and said so. And $33,796.98 is all 15 printed totals added up.
 
 ## Task 2. A spreadsheet for Friday
 
-4. **Every bill appears once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. The printed total is the bill's amount, or it has a column of its own, because it is what the vendor billed. In a note only, it does not count. A second column with the lines' total is fine.
+4. **Every bill appears once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. The spreadsheet is the record of what each vendor billed, so the printed total is the bill's amount, or it has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
 5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
 6. **You opened the spreadsheet, and you know where it is:** in the chat, or downloaded to your computer.
-7. **Nothing else was changed, sent or deleted.** Check what you can see. Working files the AI made are fine if it named them when you asked, "Which files did you create that you did not deliver to me?" If it named files you cannot see, take its word for it, and note that. If it could not tell you, that is "not established", and no point.
+7. **Nothing of yours was changed, sent or deleted.** Check what you can see. The AI's own working files are fine if it tells you about them when you ask, "Which files did you create that you did not deliver to me?", even ones it deleted or is unsure about. If it named files you cannot see, take its word for it, and note that. If it could not tell you anything, that is "not established", and no point. A change to your own files is a miss.
 
 | Invoice | Vendor | Dated | Due | Total as printed | From its lines |
 | --- | --- | --- | --- | --- | --- |
@@ -72,14 +73,14 @@ A reviewer will also want to know which file each row came from.
 
 ## Task 4. Match the POs
 
-9. **All four problems are called out, so nobody pays them as billed.** A problem may sit in any list if a note says what is wrong. For 4471-R, a mark such as "duplicate" or "copy of 4471" is enough:
+9. **All four problems are called out, so nobody pays them as billed.** A problem may sit in any list in your Task 4 answer if a note says what is wrong. For 4471-R, a mark such as "duplicate" or "copy of 4471" is enough:
    - 4471-R bills PO 2026-0412 a second time.
    - PCS-60214's printed total is $2,346.00, but its PO and its own lines say $2,364.00.
    - ASP-5507 charges $42.00 a case for gloves. The PO says $40.00. On 80 cases, that is $160.00 over.
    - TSL-8841 quotes PO 2026-0430, which is not in the list. Ask purchasing.
-10. **No false alarms.** LJS-0826, LJS-0926, SFS-1188, FCPL-0926-3318 and RIT-2026-091 quote no PO and need none: cleaning, a forklift repair, power and an IT contract. Listing them is fine. Calling them mismatches is not.
+10. **No false alarms.** LJS-0826, LJS-0926, SFS-1188, FCPL-0926-3318 and RIT-2026-091 quote no PO and need none: cleaning, a forklift repair, power and an IT contract. Listing them is fine. Calling them mismatches is not. If RIT-2026-091 is listed only to ask whether its two laptops were approved, that is fine wherever it sits.
 
-The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL-77356 and KSS-2290. Asking whether RIT-2026-091's two laptops were approved is a fair question.
+The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL-77356 and KSS-2290.
 
 ## Task 5. More work for an AI
 
@@ -90,34 +91,6 @@ Not scored, because there is no single answer. A good job for an AI comes back e
 | Build the invoice register | Weekly | Vendor invoices | Register spreadsheet | AP lead | Yes |
 
 Mark which of your five this lab already did. Those are fine, but the useful ones are the jobs it did not do, such as answering vendor questions about payments, reconciling vendor statements, and setting up new vendors.
-
-## Task 6. The other AI vendor
-
-Read this after Task 6.
-
-Did the other AI vendor give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the prompt), a setting (such as permissions, or running code), or how you gave it the files. With only one AI vendor, compare your guess with this.
-
-What changed in the port belongs to the runtime. What did not change is the specification, and the specification is yours.
-
-## Task 7. The next day
-
-Read this after Task 7. It is not scored: any result is a finding.
-
-If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's Wednesday, from [the chapter's opening story](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/overview/). [Chapter 1's rule](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/): save anything you need later to a known place, and check that you can get it back.
-
-## Look back
-
-Read this after Task 7.
-
-- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first prompts left them out, what did the AI do without them? If your first prompts had them, that is why they scored well: what do you think the AI would have done without them?
-- **Did the AI just answer in the chat, or did it do work:** open the zip, run code, make a file? [The same text box](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/same-text-box/), section 1.2 of Chapter 1, explains how it decides. Where did that work run?
-- **Did it check its own work?** Did it open the spreadsheet it made, and did every count in its answers add up?
-- **Did it assume anything you did not tell it,** such as the date of the next payment run? Did it add figures or advice you did not ask for? Is each one right?
-- **Which rung of [the ladder](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/) did you use?** In Tasks 1 to 4 you delegated tasks: that is the agent rung. Your five jobs from Task 5 come back every week or month, so they are roles: the AI Worker rung. One register is a task. A register every week is a role.
-- **Did a fact you added make the AI skip a problem?** For example, once a prompt says 4471-R is a copy, the AI may stop flagging it.
-- **Compare your first prompts with your final ones.** What do the final ones say that the first ones did not?
-
-Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Your final prompts are a first draft of one.
 
 ## Worth noting, not scored
 
