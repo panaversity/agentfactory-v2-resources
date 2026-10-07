@@ -2,11 +2,11 @@
 
 The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. The tasks are on the book page. Every name, number and company in this lab is invented.
 
-**Score yourself:** one point for each check you pass, 10 in all. Score your first prompts. Then fix your prompts, run them again, and score again. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
+**Score yourself:** one point for each check you pass, 10 in all. Score your first prompts. Then fix your prompts, run them again in a new conversation, and score again. Score the other AI vendor's run the same way. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
 
 Don't fix the AI's output by hand. Write down which checks it missed, and keep them for Chapter 6, which teaches the review contract.
 
-## Task 1. How much do we owe?
+## Task 1. What we owe
 
 1. **Your total leaves out 4471, which Brightline paid on September 25, and 4471-R, its copy.** As billed, that is $24,096.98. Your number can differ from it in three ways, and each is fine if the AI says what it did: PCS-60214 counted at its lines' total (+$18.00), ASP-5507 counted at its PO price (−$160.00), or a bill put on hold.
 2. **PCS-60214 is flagged for the vendor.** Its lines add up to $2,364.00, but its total says $2,346.00. The $18.00 gap looks like two swapped digits. Neither figure should be paid until the vendor confirms the right one.
@@ -21,12 +21,12 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 
 Left out LJS-0826? It is dated August 31, but it came in during September and is still unpaid.
 
-## Task 2. A spreadsheet for Friday, again on Monday
+## Task 2. A spreadsheet for Friday
 
 4. **Every bill appears once, with its total as printed.** 4471-R is marked as a copy of 4471, and 4471 as paid.
 5. **All 15 due dates are right.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
-6. **The next day, you can open it, and you know where it is.**
-7. **Nothing else was changed, sent or deleted.** Ask the AI: "Which files did you create that you did not deliver to me?" Working files it made are fine if it names them. If it cannot tell you, write "not established".
+6. **The spreadsheet is saved in a place you can name, and you opened it there.**
+7. **Nothing else was changed, sent or deleted.** Working files the AI made are fine if it named them when you asked, "Which files did you create that you did not deliver to me?"
 
 | Invoice | Vendor | Dated | Due | Total as printed | From its lines |
 | --- | --- | --- | --- | --- | --- |
@@ -48,9 +48,7 @@ Left out LJS-0826? It is dated August 31, but it came in during September and is
 
 A reviewer will also want to know which file each row came from.
 
-**On another day,** look for the spreadsheet, and for the AI's text answers in the chat. For each one, write one result: still there, and where; gone; or can't tell. Any of the three is a finding. Then write one sentence on what this shows about where results are kept. If the spreadsheet was gone, it lived only in the AI's workspace. That is Maria's Wednesday in this chapter.
-
-## Task 3. Late, or due by Friday
+## Task 3. What is due by Friday
 
 8. **Three bills, $3,977.80.**
 
@@ -66,7 +64,7 @@ A reviewer will also want to know which file each row came from.
 - Missed TSL-8841? "Due on receipt" means it was due when it arrived.
 - Advice to also pay bills that fall due before the next run is fine. Those bills are not due by Friday.
 
-## Task 4. Do the invoices match the POs?
+## Task 4. Match the POs
 
 9. **All four problems are found.**
    - 4471-R bills PO 2026-0412 a second time.
@@ -77,7 +75,7 @@ A reviewer will also want to know which file each row came from.
 
 The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL-77356 and KSS-2290. Asking whether RIT-2026-091's two laptops were approved is a fair question.
 
-## Task 5. Five more AP jobs
+## Task 5. More work for an AI
 
 Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in a table like this one. It is the work inventory you take into Chapter 2, where you draft the AP Worker's Role Contract.
 
@@ -87,11 +85,15 @@ Not scored, because there is no single answer. A good job for an AI comes back e
 
 Mark which of your five your prompts in this lab already do. Other good answers: match invoices to POs, prepare the weekly payment run, answer vendor questions about payments, reconcile vendor statements, and set up new vendors.
 
-## The other AI
+## Task 6. The other AI vendor
 
-Score its run too. Did it give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the prompt), a setting (such as permissions or connections), or how you gave it the files. With only one AI, compare your guess of what would change with this.
+Score its run the same way. Did it give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the prompt), a setting (such as permissions or connections), or how you gave it the files. With only one AI vendor, compare your guess of what would change with this.
 
 What changed in the port belongs to the runtime. What did not change is the specification, and the specification is yours.
+
+## Task 7. The next day
+
+Not scored: any of the three results is a finding. Look for the spreadsheet, and for the AI's text answers in your conversations. For each one, write down whether it is still there, and where, or gone, or whether you can't tell. If the spreadsheet was gone, it lived only in the AI's workspace. That is Maria's Wednesday in this chapter. Chapter 1's rule: save anything you need later to a known place, and check that you can get it back.
 
 ## Look back
 
