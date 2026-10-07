@@ -1,6 +1,6 @@
-# AP Worker Role Contract, addendum: triggers and initiative
+# AP Worker Role Contract, Draft 6: triggers and initiative
 
-This lab is standalone, so it does not include the full Role Contract. Write this as an addendum. Everything it needs is in this lab.
+The rest of the Role Contract is unchanged from Draft 5, your Chapter 8 draft. If you do not have one, write only this section. Everything it needs is in this lab.
 
 ## Triggers
 

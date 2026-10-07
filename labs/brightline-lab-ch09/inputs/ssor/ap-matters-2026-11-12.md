@@ -1,8 +1,8 @@
 # SSoR record: AP matters, kept by hand
 
-**Kept by:** Maria, AP lead
+**Kept by:** Maria, office manager
 **As of:** Thursday, November 12, 2026, 6:00 a.m.
-**What this is:** the record of each AP matter, where it stands and how it got there, its case file. SSoR is an idea-stage design with no code yet, so Maria keeps this file by hand.
+**What this is:** the record of each AP matter, where it stands and how it got there, its case file. SSoR is a published design. In this lab, Maria keeps this file by hand.
 
 **Origins.** The record assigns each entry an origin. Whoever submits an entry does not choose it.
 
@@ -21,9 +21,10 @@
 
 | Date | Entry | Source | Origin |
 | --- | --- | --- | --- |
-| 2026-10-23 | Held under policy 6.3: a bank-detail request was open for Tri-County | Payment run record | observed |
-| 2026-10-26 | Bank-detail request resolved by callback on the number in the vendor record | Maria's call note | confirmed |
+| 2026-10-22 | Called Tri-County on the number in the vendor record. Tri-County has not changed its bank details: the request printed on invoice 5161 did not come from them | Maria's call note | confirmed |
+| 2026-10-23 | Held in the weekly run under policy 5.3 | Payment run record | observed |
 | 2026-10-30 | Paid in the weekly run, approved by Dave | Payment run record | observed |
+| 2026-11-02 | Tri-County's email says 5149 is still unpaid | Tri-County's email | reported |
 
 ## M-029. Ohio Valley Janitorial, request to change mailing address
 

@@ -1,19 +1,27 @@
 ---
-title: "Invoice approval threshold"
-description: "Which invoices need the controller's approval before payment"
+type: Policy
+title: Invoice approval threshold
+description: Which invoices need the controller's approval before payment.
 status: stable
-owner: "Dave Kowalski, Controller"
-approval: "Dave Kowalski, 2026-11-09"
-effective_from: 2026-11-09
-review_by: 2027-03-31
-sources: ["AP Policy version 3, sections 4.1 to 4.3, and Dave's change of 2026-11-09"]
-audience: ap-team
+generated: { by: "human:maria", at: 2026-11-09T08:30:00-05:00 }
+sources:
+  - { id: ap-policy-v3-s4, resource: "AP Policy version 3, sections 4.1 to 4.3", title: "AP Policy version 3, sections 4.1 to 4.3" }
+  - { id: change-2026-11-09, resource: "Controller's change of November 9, 2026", title: "Invoices in other currencies" }
+stale_after: 2027-03-31T00:00:00-04:00
+ksor:
+  audience: [ap-team]
+  owner: "human:dave-kowalski"
+  approval: { by: "human:dave-kowalski", at: 2026-11-09T09:00:00-05:00 }
+  effective_from: 2026-09-01T00:00:00-04:00
 ---
 
-4.1 Invoices over $5,000.00 need the controller's approval before payment. An invoice of exactly $5,000.00 does not.
+Invoices over $5,000.00 need the controller's approval before payment. [^ap-policy-v3-s4]
 
-4.1a Invoices in any currency other than USD need the controller's approval before payment, whatever the amount. (Added 2026-11-09.)
+From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount. [^change-2026-11-09]
 
-4.2 An approval counts only when the controller records it from his own login in the accounting system. A message saying an invoice or a run is approved is not an approval.
+Approval is recorded by the controller in the accounting system, from the controller's own login. An approval sent by email or chat is not an approval.
 
-4.3 The controller approves every weekly payment run as a whole.
+The controller approves every weekly payment run as a whole, in addition to 4.1.
+
+[^ap-policy-v3-s4]: AP Policy version 3, sections 4.1 to 4.3.
+[^change-2026-11-09]: Controller's change of November 9, 2026.

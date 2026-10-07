@@ -1,12 +1,12 @@
-invoice_id,vendor,vendor_invoice_no,invoice_date,received_on,amount,currency,due_date,status,approval_recorded,paid_on
-5201,Buckeye Office Supply,BO-23188,2026-10-17,2026-10-19,1240.50,USD,2026-11-16,paid,,2026-11-13
-5202,Northern Maple Lumber,NM-7731,2026-10-19,2026-10-21,8400.00,CAD,2026-11-18,paid,Dave Kowalski 2026-11-13,2026-11-13
-5203,Tri-County Freight,TCF-0419,2026-10-20,2026-10-22,6320.00,USD,2026-11-19,paid,Dave Kowalski 2026-11-13,2026-11-13
-5204,Lakeshore Packaging,LP-5520,2026-11-04,2026-11-04,980.00,USD,2026-12-04,open,,
-5205,Ohio Valley Janitorial,OVJ-311,2026-10-14,2026-10-15,415.00,USD,2026-11-13,paid,,2026-11-13
-5206,Buckeye Office Supply,BO-23190,2026-10-19,2026-10-20,2975.00,USD,2026-11-18,paid,,2026-11-13
-5207,Tri-County Freight,TCF-0425,2026-10-24,2026-10-26,3110.00,USD,2026-11-23,open,,
-5208,Northern Maple Lumber,NM-7740,2026-10-26,2026-10-28,2150.00,CAD,2026-11-25,open,,
-5209,Lakeshore Packaging,LP-5520,2026-11-04,2026-11-18,980.00,USD,2026-12-04,open,,
-5210,Buckeye Office Supply,BO-23215,2026-10-27,2026-11-16,5000.00,USD,2026-11-26,open,,
-5211,Great Lakes Electric,GLE-88,2026-10-28,2026-10-30,7450.00,USD,2026-11-27,open,Dave Kowalski 2026-11-18,
+invoice_no,vendor,invoice_date,received_on,amount,currency,due_date,status,approval_recorded,paid_on
+BO-23188,Buckeye Office Supply,2026-10-16,2026-10-19,1240.50,USD,2026-11-15,paid,,2026-11-13
+OVJ-311,Ohio Valley Janitorial,2026-10-14,2026-10-15,415.00,USD,2026-11-13,paid,,2026-11-13
+BO-23190,Buckeye Office Supply,2026-10-19,2026-10-20,2975.00,USD,2026-11-18,paid,,2026-11-13
+NMP-3480,Northern Maple Paper,2026-10-19,2026-10-21,8400.00,CAD,2026-11-18,paid,Dave Kowalski 2026-11-12,2026-11-13
+NMP-3486,Northern Maple Paper,2026-10-26,2026-10-28,2150.00,CAD,2026-11-25,open,,
+GLE-88,Great Lakes Electric,2026-10-28,2026-10-30,7450.00,USD,2026-11-27,open,Dave Kowalski 2026-11-18,
+5188,Tri-County Freight,2026-10-30,2026-11-02,6320.00,USD,2026-11-14,paid,Dave Kowalski 2026-11-12,2026-11-13
+5155,Lakeshore Janitorial,2026-11-04,2026-11-04,980.00,USD,2026-11-19,paid,,2026-11-13
+5207,Tri-County Freight,2026-11-10,2026-11-13,3110.00,USD,2026-11-25,open,,
+BO-23215,Buckeye Office Supply,2026-10-27,2026-11-16,5000.00,USD,2026-11-26,open,,
+5155,Lakeshore Janitorial,2026-11-04,2026-11-18,980.00,USD,2026-11-19,open,,

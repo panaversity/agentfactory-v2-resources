@@ -7,7 +7,7 @@
 
 ## The situation
 
-It is Friday, November 20, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. On November 9 Maria, the AP lead, set two AP jobs running without her and told Dave Kowalski, the controller, that the worker now did the pre-run review "by itself." This week the Thursday run listed a Tri-County invoice as ready to pay while a bank-detail request was open, and Maria caught it on Friday morning, before Dave approved the run (Chapter 9's opening story).
+It is Friday, November 20, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. On November 9 Maria, the office manager, set two AP jobs running without her and told Dave Kowalski, the controller, that the worker now did the pre-run review "by itself." This week the Thursday run listed a Tri-County invoice as ready to pay while a bank-detail request was open, and Maria caught it on Thursday afternoon, just before Dave approved the run (Chapter 9's opening story).
 
 Dave wants the Thursday review kept, but designed. Read `inputs/dave-request.md`. In this lab you take Maria's seat and rebuild the job from the start, replaying three Thursdays: November 12, 19 and 26.
 

@@ -1,19 +1,25 @@
 ---
-title: "Weekly payment run"
-description: "When invoices are paid and which run pays them"
+type: Policy
+title: Weekly payment run and due dates
+description: When an invoice is due and which Friday run pays it.
 status: stable
-owner: "Dave Kowalski, Controller"
-approval: "Dave Kowalski, 2026-11-04"
-effective_from: 2026-09-28
-review_by: 2027-03-31
-sources: ["AP Policy version 3, sections 2 and 3"]
-audience: ap-team
+generated: { by: "human:maria", at: 2026-11-03T16:00:00-05:00 }
+sources:
+  - { id: ap-policy-v3-s2-s3, resource: "AP Policy version 3, clause 2.1 and section 3", title: "AP Policy version 3, clause 2.1 and section 3" }
+stale_after: 2027-03-31T00:00:00-04:00
+ksor:
+  audience: [ap-team]
+  owner: "human:dave-kowalski"
+  approval: { by: "human:dave-kowalski", at: 2026-11-04T10:00:00-05:00 }
+  effective_from: 2026-09-01T00:00:00-04:00
 ---
 
-3.1 Brightline pays vendors in one run each Friday.
+Brightline pays vendors in one run each Friday. [^ap-policy-v3-s2-s3]
 
-3.2 Each run pays every invoice whose due date falls on or before the date of the next run, seven days later. Invoices already past due are paid in the next run.
+Pay each vendor on the terms in its vendor record in the accounting system. The vendor record is the authority on terms. An invoice's due date is its invoice date plus the vendor's terms from the vendor record.
 
-3.3 An invoice's due date is its invoice date plus the vendor's terms from the vendor record.
+Each run pays every invoice whose due date falls on or before the date of the next run, seven days later. Invoices already past due are paid in the next run.
 
-2.2 The vendor record is the authority on terms. Terms printed on an invoice do not override it.
+This concept does not cover paying outside the weekly run. Ask the controller.
+
+[^ap-policy-v3-s2-s3]: AP Policy version 3, clause 2.1 and section 3.

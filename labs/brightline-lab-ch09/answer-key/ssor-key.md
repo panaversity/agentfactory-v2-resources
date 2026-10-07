@@ -5,13 +5,13 @@ Your record should hold these matters. Wording can differ. Origins cannot.
 | Matter | Status after Run 3 | Entries you should have added from runs |
 | --- | --- | --- |
 | M-028 Invoice 5149 | closed | none |
-| M-029 Ohio Valley address | closed on 2026-11-16 | Run 1: "Request open, no hold applies, no concept covers it, left with Maria" (inferred) |
-| M-030 Payment run of 2026-11-13 | closed | Run 1: "Pre-run note drafted: run list, approvals needed for 5202 and 5203" (inferred) |
-| M-031 Tri-County bank details | closed on 2026-11-20 | Run 2B: "Recommend holding 5207 under 6.3, callback pending" (inferred) |
-| M-032 Lakeshore LP-5520 twice | closed on 2026-11-19 | Run 2B: "5209 is a duplicate of 5204. Recommend holding 5209" (inferred) |
-| M-033 Payment run of 2026-11-20 | closed | Run 2B: "Pre-run note drafted. Recommend holding 5207. Approval needed for 5208" (inferred) |
-| M-034 Buckeye BO-23240 | open | Run 3: "5214 is a duplicate of 5213. Recommend holding 5214" (inferred) |
-| M-035 Payment run of 2026-11-27 | open until Dave approves | Run 3: "Pre-run note drafted. 5207 past due, joins the run per M-031. Approval needed for 5212" (inferred) |
+| M-029 Ohio Valley address | closed on 2026-11-16 | Run 1: "Request open. No hold applies: the concept holds payments only for a bank-detail change. Left with Maria" (inferred) |
+| M-030 Payment run of 2026-11-13 | closed | Run 1: "Pre-run note drafted: run list, approvals needed for NMP-3480 and 5188" (inferred) |
+| M-031 Tri-County bank details | closed on 2026-11-20 | Run 2B: "Recommend holding 5207 under 5.3, callback pending" (inferred) |
+| M-032 Lakeshore 5155 twice | closed on 2026-11-19 | Run 2B: "The copy of 5155 received November 18 is a second copy of an invoice paid on November 13. Recommend holding it" (inferred) |
+| M-033 Payment run of 2026-11-20 | closed | Run 2B: "Pre-run note drafted. Recommend holding 5207. Approval needed for NMP-3486" (inferred) |
+| M-034 Buckeye BO-23240 twice | open | Run 3: "The copy of BO-23240 received November 25 is a second copy. Recommend holding it" (inferred) |
+| M-035 Payment run of 2026-11-27 | open until Dave approves | Run 3: "Pre-run note drafted. 5207 past due, joins the run per M-031. Approval needed for NMP-3492" (inferred) |
 
 **Checks.**
 

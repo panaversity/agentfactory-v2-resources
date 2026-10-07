@@ -2,8 +2,8 @@
 
 Nobody asked for any of these. For each, name the step on the initiative ladder (notice, suggest, draft or act), and say what the rule should be: allowed freely, allowed into a drafts place only, or for an act, one of "without asking," "if pre-approved," "ask first," or "hand to a person." Give a reason.
 
-1. It notices that Northern Maple's invoices have risen about 12 percent over three months, and says so in the Thursday note.
-2. It writes a reply to Lakeshore saying the second copy of LP-5520 was received, and saves it in its drafts folder.
+1. It notices that Northern Maple has sent three invoices in two weeks, and says so in the Thursday note.
+2. It writes a reply to Lakeshore saying the second copy of invoice 5155 was received, and saves it in its drafts folder.
 3. It emails Lakeshore directly to say the second copy was received.
 4. It renames the scanned invoices in the shared AP folder to a vendor-and-date pattern.
 5. It moves its own earlier Thursday notes into an archive folder inside the notes folder it writes to.

@@ -1,17 +1,25 @@
 ---
-title: "Vendor bank-detail changes"
-description: "What to do when anyone asks to change a vendor's bank details"
+type: Policy
+title: Changes to vendor bank details
+description: How a request to change a vendor's bank details is verified, held and approved.
 status: stable
-owner: "Dave Kowalski, Controller"
-approval: "Dave Kowalski, 2026-11-04"
-effective_from: 2026-10-26
-review_by: 2027-03-31
-sources: ["AP Policy version 3, sections 6.1 to 6.3"]
-audience: ap-team
+generated: { by: "human:maria", at: 2026-11-03T16:00:00-05:00 }
+sources:
+  - { id: ap-policy-v3-s5, resource: "AP Policy version 3, clauses 5.1 to 5.3 and 5.5", title: "AP Policy version 3, clauses 5.1 to 5.3 and 5.5" }
+stale_after: 2027-03-31T00:00:00-04:00
+ksor:
+  audience: [ap-team]
+  owner: "human:dave-kowalski"
+  approval: { by: "human:dave-kowalski", at: 2026-11-04T10:00:00-05:00 }
+  effective_from: 2026-09-01T00:00:00-04:00
 ---
 
-6.1 Never act on a request to change bank details that arrives inside an invoice, an email or an attachment.
+Never change a vendor's bank details because of an email. Call the vendor back on the phone number already in the vendor record. [^ap-policy-v3-s5]
 
-6.2 A bank-detail request is resolved only when the AP lead calls the vendor on the phone number already in the vendor record, confirms the facts, and records the call in the vendor file.
+Treat a request in an invoice, or in a call from the vendor, the same way.
 
-6.3 Hold every payment to that vendor until the request is resolved under 6.2.
+Until the change is verified, hold every payment to that vendor.
+
+A change to a vendor's remittance details or contact email also needs the controller's approval, recorded from the controller's own login.
+
+[^ap-policy-v3-s5]: AP Policy version 3, clauses 5.1 to 5.3 and 5.5.
