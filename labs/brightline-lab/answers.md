@@ -8,18 +8,18 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 
 ## Task 1. How much do we owe?
 
-1. **The total is $24,096.98 or $24,114.98,** or $21,750.98 with PCS-60214 on hold.
+1. **Your total leaves out 4471, which Brightline paid on September 25, and 4471-R, its copy.** As billed, that is $24,096.98. Your number can differ from it in three ways, and each is fine if the AI says what it did: PCS-60214 counted at its lines' total (+$18.00), ASP-5507 counted at its PO price (−$160.00), or a bill put on hold.
 2. **PCS-60214 is flagged for the vendor.** Its lines add up to $2,364.00, but its total says $2,346.00. The $18.00 gap looks like two swapped digits. Neither figure should be paid until the vendor confirms the right one.
 3. **LJS-0826 and LJS-0926 are left alone.** Same cleaning firm and the same $1,200.00, but they cover August and September. They are not copies.
 
 | If you got | It means |
 | --- | --- |
-| $24,096.98 or $24,114.98 | Right. These are the two totals of PCS-60214. Either is fine if PCS-60214 is flagged. |
-| $21,750.98 | Right. PCS-60214 waits for the vendor. |
-| $28,946.98 or $28,964.98 | Missed. Brightline paid 4471 on September 25, so you would pay $4,850.00 again. The AI knows what was paid only if you tell it. Chapter 4 shows where an AI Worker looks this up instead. |
+| $24,096.98, $24,114.98, $23,936.98 or $23,954.98 | Right. The four differ only by PCS-60214's two totals and by ASP-5507 at its PO price. |
+| $21,750.98, or less, with bills on hold | Right, if it names each bill it held. |
+| $28,946.98, $28,964.98, $28,786.98 or $28,804.98 | Missed. Brightline paid 4471 on September 25, so you would pay $4,850.00 again. The AI knows what was paid only if you tell it. Chapter 4 shows where an AI Worker looks this up instead. |
 | $33,796.98 | Missed twice. 4471 is paid, and 4471-R is a resubmitted copy of it. $33,796.98 is all 15 printed totals added up. |
 
-If your AI also checked the PO list, it may flag ASP-5507 too. That is right.
+Left out LJS-0826? It is dated August 31, but it came in during September and is still unpaid.
 
 ## Task 2. A spreadsheet for Friday, again on Monday
 
