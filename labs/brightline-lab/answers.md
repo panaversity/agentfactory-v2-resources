@@ -1,32 +1,38 @@
 # Lab 1 answers
 
-The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. The tasks are on the book page. Every name, number and company in this lab is invented.
+The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Every name, number and company in this lab is invented.
 
-**Score yourself:** one point for each check you pass, 10 in all. Score your first prompts. Then fix your prompts, run them again in a new conversation, and score again. Score the other AI vendor's run the same way. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
+**When to read what.** Read Tasks 1 to 5 at the page's "Check your answers" step. Read Task 6 after Task 6, and Task 7 and "Look back" after Task 7.
+
+**Score yourself:** one point for each check you pass, 10 in all. Score each run the same way: your first prompts, your fixed prompts, and the other AI vendor. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
 
 Don't fix the AI's output by hand. Write down which checks it missed, and keep them for Chapter 6, which teaches the review contract.
 
 ## Task 1. What we owe
 
-1. **Your total leaves out 4471, which Brightline paid on September 25, and 4471-R, its copy.** As billed, that is $24,096.98. Your number can differ from it in three ways, and each is fine if the AI says what it did: PCS-60214 counted at its lines' total (+$18.00), ASP-5507 counted at its PO price (−$160.00), or a bill put on hold.
-2. **PCS-60214 is flagged for the vendor.** Its lines add up to $2,364.00, but its total says $2,346.00. The $18.00 gap looks like two swapped digits. Neither figure should be paid until the vendor confirms the right one.
-3. **LJS-0826 and LJS-0926 are left alone.** Same cleaning firm and the same $1,200.00, but they cover August and September. They are not copies.
+1. **Your total leaves out 4471, which is paid, and 4471-R, its copy, and keeps every other bill.** As billed, that is $24,096.98. The table below shows where any other total came from.
+2. **PCS-60214 is flagged for the vendor to confirm before it is paid.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits. In the total of what you owe, either figure is fine.
+3. **LJS-0826 and LJS-0926 are not called copies.** Same cleaning firm and the same $1,200.00, but they cover August and September.
 
-| If you got | It means |
-| --- | --- |
-| $24,096.98, $24,114.98, $23,936.98 or $23,954.98 | Right. The four differ only by PCS-60214's two totals and by ASP-5507 at its PO price. |
-| $21,750.98, or less, with bills on hold | Right, if it names each bill it held. |
-| $28,946.98, $28,964.98, $28,786.98 or $28,804.98 | Missed. Brightline paid 4471 on September 25, so you would pay $4,850.00 again. The AI knows what was paid only if you tell it. Chapter 4 shows where an AI Worker looks this up instead. |
-| $33,796.98 | Missed twice. 4471 is paid, and 4471-R is a resubmitted copy of it. $33,796.98 is all 15 printed totals added up. |
+**Where your total came from.** Start from $24,096.98.
 
-Left out LJS-0826? It is dated August 31, but it came in during September and is still unpaid.
+| If the AI | Your total changes by | Check 1 |
+| --- | --- | --- |
+| counted 4471, which is already paid | +$4,850.00 | Missed. The AI knows what was paid only if you tell it. Chapter 4 shows where an AI Worker looks this up instead. |
+| also counted 4471-R, the copy | +$4,850.00 more | Missed. 4471-R is a resubmitted copy of 4471. |
+| left out LJS-0826, which is dated August 31 | −$1,200.00 | Missed. It came in during September, and it is not paid. |
+| counted PCS-60214 at its lines' total | +$18.00 | Fine, if it says so |
+| counted ASP-5507 at its PO price | −$160.00 | Fine, if it says so |
+| put a bill on hold | minus that bill | Fine, if it names the bill |
+
+For example, $27,746.98 is $24,096.98 + $4,850.00 − $1,200.00: the AI counted the paid 4471 and left out LJS-0826. And $33,796.98 is all 15 printed totals added up.
 
 ## Task 2. A spreadsheet for Friday
 
-4. **Every bill appears once, with its total as printed.** 4471-R is marked as a copy of 4471, and 4471 as paid.
-5. **All 15 due dates are right.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
-6. **The spreadsheet is saved in a place you can name, and you opened it there.**
-7. **Nothing else was changed, sent or deleted.** Working files the AI made are fine if it named them when you asked, "Which files did you create that you did not deliver to me?"
+4. **Every bill appears once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. A second column with the lines' total is fine, but the printed total must be there, because it is what the vendor billed.
+5. **All 15 due dates match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
+6. **You opened the spreadsheet, and you know where it is:** in the chat, or downloaded to your computer.
+7. **Nothing else was changed, sent or deleted.** Working files the AI made are fine if it named them when you asked, "Which files did you create that you did not deliver to me?" If it could not tell you, that is "not established", and no point.
 
 | Invoice | Vendor | Dated | Due | Total as printed | From its lines |
 | --- | --- | --- | --- | --- | --- |
@@ -66,9 +72,9 @@ A reviewer will also want to know which file each row came from.
 
 ## Task 4. Match the POs
 
-9. **All four problems are found.**
+9. **All four problems are called out,** as problems or with a clear note:
    - 4471-R bills PO 2026-0412 a second time.
-   - PCS-60214's total is $2,346.00, but its PO and its own lines say $2,364.00.
+   - PCS-60214's printed total is $2,346.00, but its PO and its own lines say $2,364.00.
    - ASP-5507 charges $42.00 a case for gloves. The PO says $40.00. On 80 cases, that is $160.00 over.
    - TSL-8841 quotes PO 2026-0430, which is not in the list. Ask purchasing.
 10. **No false alarms.** LJS-0826, LJS-0926, SFS-1188, FCPL-0926-3318 and RIT-2026-091 quote no PO and need none: cleaning, a forklift repair, power and an IT contract. Listing them is fine. Calling them mismatches is not.
@@ -83,26 +89,34 @@ Not scored, because there is no single answer. A good job for an AI comes back e
 | --- | --- | --- | --- | --- | --- |
 | Build the invoice register | Weekly | Vendor invoices | Register spreadsheet | AP lead | Yes |
 
-Mark which of your five your prompts in this lab already do. Other good answers: match invoices to POs, prepare the weekly payment run, answer vendor questions about payments, reconcile vendor statements, and set up new vendors.
+Mark which of your five this lab already did. Those are fine, but the useful ones are the jobs it did not do, such as answering vendor questions about payments, reconciling vendor statements, and setting up new vendors.
 
 ## Task 6. The other AI vendor
 
-Score its run the same way. Did it give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the prompt), a setting (such as permissions or connections), or how you gave it the files. With only one AI vendor, compare your guess of what would change with this.
+Read this after Task 6.
+
+Did the other AI vendor give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the prompt), a setting (such as permissions, or running code), or how you gave it the files. With only one AI vendor, compare your guess with this.
 
 What changed in the port belongs to the runtime. What did not change is the specification, and the specification is yours.
 
 ## Task 7. The next day
 
-Not scored: any of the three results is a finding. Look for the spreadsheet, and for the AI's text answers in your conversations. For each one, write down whether it is still there, and where, or gone, or whether you can't tell. If the spreadsheet was gone, it lived only in the AI's workspace. That is Maria's Wednesday in this chapter. Chapter 1's rule: save anything you need later to a known place, and check that you can get it back.
+Read this after Task 7. It is not scored: any result is a finding.
+
+If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's Wednesday, from the chapter's opening story. Chapter 1's rule: save anything you need later to a known place, and check that you can get it back.
 
 ## Look back
 
-- For which tasks did the AI just answer in the chat, and for which did it do work: open the zip, run code, make a file? Where did that work run?
-- Did it ask you anything?
-- Did it add figures or advice you did not ask for? Is each one right?
-- Compare your first prompts with your fixed ones. What do the fixed ones say that the first ones did not?
+Read this after Task 7.
 
-Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Your fixed prompts are a first draft of one.
+- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. What did the AI do without them? If your first prompts already had them, this is why they scored well.
+- **Did the AI just answer in the chat, or did it do work:** open the zip, run code, make a file? Section 1.2 of this chapter, the same text box, explains how it decides. Where did that work run?
+- **Did it check its own work?** Did it open the spreadsheet it made, and did every count in its answers add up?
+- **Did it assume anything you did not tell it,** such as the date of the next payment run? Did it add figures or advice you did not ask for? Is each one right?
+- **Which rung of the ladder did you use?** In Tasks 1 to 4 you delegated tasks: that is the agent rung. Your five jobs from Task 5 come back every week or month, so they are roles: the AI Worker rung. One register is a task. A register every week is a role.
+- **Compare your first prompts with your final ones.** What do the final ones say that the first ones did not?
+
+Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Your final prompts are a first draft of one.
 
 ## Worth noting, not scored
 
