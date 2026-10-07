@@ -1,6 +1,6 @@
 # Brightline lab, Chapter 9: put one AP job on a schedule
 
-Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio. On November 9, 2026, Maria, the office manager, set two AP jobs running on their own. On Thursday, November 19, the Thursday run listed a Tri-County invoice as ready to pay while a bank-detail request was open. Dave Kowalski, the controller, wants the Thursday review kept, but designed. You take Maria's role: you decide which jobs should run at all, map the review, write its standing spec, run three Thursdays in fresh chats with and without the SSoR record, set rules for initiative, put the job on a real schedule on both AI vendors, and explain it to Dave.
+Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio. On November 9, 2026, Maria, the office manager, set two AP jobs running on their own. On Thursday, November 19, the Thursday run listed a Tri-County invoice as ready to pay while a bank-detail request was open. Dave Kowalski, the controller, wants the Thursday review kept, but with a proper design. You take Maria's role: you decide which jobs should run at all, map the review, write its standing spec, run three Thursdays in fresh chats with and without the SSoR record, set rules for initiative, put the job on a real schedule on both AI vendors, and explain it to Dave.
 
 This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Brightline Wholesale Supply, its people, vendors and invoices are invented.
 

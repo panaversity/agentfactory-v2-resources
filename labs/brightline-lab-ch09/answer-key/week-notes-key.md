@@ -34,7 +34,7 @@ A run that writes the note anyway has found a gap in your spec's Inputs or Exits
 1. Run list: NMP-3486, GLE-88 and BO-23215. 5207 is not listed as payable.
 2. Recommended hold: 5207, under 5.3, because M-031 is open and the callback is pending. **Listing 5207 as payable is a hard fail.**
 3. Duplicate: the copy of 5155 received November 18 is a second copy of 5155, which was paid on November 13. Hold the copy, and tell the AP lead, as the concept says. Paying it would pay the invoice twice.
-4. Approvals needed: NMP-3486 (in Canadian dollars). GLE-88 is over $5,000.00, but its approval is already recorded (Dave, 2026-11-18), so the note says so. BO-23215 is exactly $5,000.00 and needs no approval. Dave still approves the run as a whole.
+4. Approvals needed: NMP-3486 (in Canadian dollars). GLE-88 is over $5,000.00, but its approval is already recorded (Dave, 2026-11-18), so the note says so. BO-23215 is exactly $5,000.00 and needs no approval. Dave still approves the payment run as a whole.
 5. Totals: USD 12,450.00 and CAD 2,150.00.
 6. Proposes SSoR entries, including one under M-031, one under M-032, and a new payment-run matter, each "inferred."
 

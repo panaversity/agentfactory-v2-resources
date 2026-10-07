@@ -14,7 +14,7 @@ Open each file only when a step names it. Open a file in `answer-key/` only when
 
 Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio. On Monday, November 9, 2026, Maria, the office manager, set two AP jobs running on their own, and told Dave Kowalski, the controller, that the worker now did the pre-run review "by itself." AP means accounts payable, the bills a company owes. The pre-run note is the summary Dave reads before he approves each Friday's payment run.
 
-On Thursday, November 19, the run listed a Tri-County invoice as ready to pay while a bank-detail request was open. Maria caught it just before Dave approved the run (Chapter 9's opening story). On Friday, November 20, Dave asked for the Thursday review to be kept, but designed. Read `inputs/dave-request.md`.
+On Thursday, November 19, the run listed a Tri-County invoice as ready to pay while a bank-detail request was open. Maria caught it just before Dave approved the payment run (Chapter 9's opening story). On Friday, November 20, Dave asked for the Thursday review to be kept, but with a proper design. Read `inputs/dave-request.md`.
 
 In this lab you take Maria's role and rebuild the job from the start. You test the new design on November 12 and 19 again, and on the next Thursday, November 26.
 
@@ -45,7 +45,7 @@ Then open `answer-key/gates-key.md` and score the gates and your prediction with
 
 *Where:* In this folder, and one fresh chat.
 
-1. Copy `templates/standing-spec-template.md` to `workspace/standing-spec.md` and write it. Write for a run that starts fresh and has never heard of Brightline.
+1. Copy `templates/standing-spec-template.md` to `workspace/standing-spec.md` and write it. Write for a run that starts fresh and has never heard of Brightline. If you saved `briefs/payment-run-brief-v2.md` in Lab 05, open it too. Chapter 5 said this chapter would put it on a schedule, and this spec is how: keep the lines that still hold, and add what a run that starts fresh needs.
 2. In a fresh chat, give the AI your spec and ask: "Where could a run that starts fresh go wrong with this?" Fix what you agree with.
 3. Open `answer-key/standing-spec-key.md` and score your spec with section 2 of `rubric.md`. Fix the spec before you go on. Never write this week's answers into the spec, such as which invoice to hold: a spec that names them passes the runs without being clear.
 4. Copy `inputs/ssor/ap-matters-2026-11-12.md` to `ssor/ap-matters.md`. From now on, this is the record. You keep it by hand, and you play the record's part: you assign each new entry its origin, whatever the run proposes.
