@@ -4,7 +4,7 @@ The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portabl
 
 **When to read what.** Read Tasks 1 to 5 at the page's "Check your answers" step. Read Task 6 after Task 6, and Task 7 and "Look back" after Task 7. Read "Worth noting" any time after Task 5.
 
-**Score yourself:** one point for each check you pass, 10 in all. Score each run the same way: your first prompts, your fixed prompts, and the other AI vendor. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
+**Score yourself:** one point for each check you pass, 10 in all. Score the AI's first answer to each task, not what it said after you asked how it got there. Score each run the same way: your first prompts, your fixed prompts, and the other AI vendor. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
 
 Don't fix the AI's output by hand. Write down which checks it missed, and keep them for Chapter 6, which teaches the review contract.
 
@@ -109,6 +109,7 @@ If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's 
 
 Read this after Task 7.
 
+- **What did your own checks find, before you opened the answers?** A check that caught a mistake, such as the paid 4471 counted again, is the lesson at work: Chapter 1's "Humans verify outcomes".
 - **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first prompts left them out, what did the AI do without them? If your first prompts had them, that is why they scored well: what do you think the AI would have done without them?
 - **Did the AI just answer in the chat, or did it do work:** open the zip, run code, make a file? [The same text box](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/same-text-box/), section 1.2 of Chapter 1, explains how it decides. Where did that work run?
 - **Did it check its own work?** Did it open the spreadsheet it made, and did every count in its answers add up?
