@@ -1,6 +1,6 @@
-"""Build Lab 1's data: 15 invoice PDFs from the text invoices in source/invoices.
+"""Build Lab 1's inputs: 15 invoice PDFs from the text invoices in invoices/, beside this script.
 
-Run from anywhere:  python3 labs/brightline-lab-ch01/source/build.py
+Run from anywhere:  python3 tools/brightline-lab-ch01/build.py
 Needs Google Chrome (to print each invoice to PDF) and pdftotext (to check the result).
 
 Each invoice keeps every field and every number of its text file. Only the look
@@ -18,7 +18,7 @@ import tempfile
 
 HERE = pathlib.Path(__file__).resolve().parent
 SRC = HERE / "invoices"
-OUT = HERE.parent / "data" / "invoices"
+OUT = HERE.parent.parent / "labs" / "brightline-lab-ch01" / "inputs" / "invoices"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # Source file -> (published file name, layout)

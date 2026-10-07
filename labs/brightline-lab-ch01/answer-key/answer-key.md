@@ -1,19 +1,19 @@
-# Lab 1 answers
+# Lab 1 answer key: Tasks 1 to 5
 
 The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Every name, number and company in this lab is invented.
 
-**When to read what.** This file holds Tasks 1 to 5. Read it at the page's "Check your answers" step. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answers-tasks-6-7.md), which the page links after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
+**When to read what.** This file holds Tasks 1 to 5. Read it at "Check your answers", in `LAB.md` or the book. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answer-key-port.md), linked after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
 
 ## Score sheet
 
-One point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Each check is explained under its task, below the sheet.
+One point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Write your score in your worksheet, `ai-vendor-run.md`. Each check is explained under its task, below the sheet.
 
 | Check | Task | You get the point when |
 | --- | --- | --- |
 | 1 | 1 | The total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy. |
-| 2 | 1 | PCS-60214 is flagged, and the AI leaves the vendor or your manager to settle which figure is right. |
+| 2 | 1 | PCS-60214 is flagged with both of its figures, and the AI says the vendor or your manager should decide. |
 | 3 | 1 | LJS-0826 and LJS-0926 are not called copies. |
-| 4 | 2 | The spreadsheet has every bill once, with its printed total. 4471 is marked paid, and 4471-R as its copy. |
+| 4 | 2 | The spreadsheet has all 15 bills, each once, with its printed total. 4471 is marked paid, and 4471-R as its copy. |
 | 5 | 2 | The spreadsheet shows all 15 due dates, and they are right. |
 | 6 | 2 | You opened the spreadsheet, and you know where it is. |
 | 7 | 2 | Nothing of yours was changed, sent or deleted, and the AI told you which files it made. |
@@ -28,7 +28,9 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 ## Task 1. What we owe
 
 1. **Your total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy.** At their printed totals, that is $24,096.98. Find your total in the table below.
-2. **In your Task 1 answer, PCS-60214 is flagged, and the AI leaves the vendor or your manager to settle which figure is right.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits. In the total of what you owe, either figure is fine. Naming the likely cause, such as two swapped digits, is fine. Calling one figure correct is a miss, even if the AI also says to confirm.
+2. **In your Task 1 answer, PCS-60214 is flagged with both of its figures, and the AI says the vendor or your manager should decide.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits.
+   - Passed: the answer gives both figures, and says someone should confirm or decide, for example "please confirm with Prairie". It may count either figure in its total, and say why. Naming the likely cause, such as swapped digits, is fine.
+   - Missed: it gives only one figure, or it decides with no one to confirm, for example "you owe $2,364.00".
 3. **LJS-0826 and LJS-0926 are not called copies.** Same cleaning firm and the same $1,200.00, but they cover August and September.
 
 **Find your total.** There is one right set of bills. The total can still differ a little: the AI may count two bills at a different figure, if it says so.
@@ -46,16 +48,16 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 **Not in the table?** Start from $24,096.98. Add or take off the amounts in the table, and these:
 
 - Counting 4471-R, the copy, adds $4,850.00 more. Missed: 4471-R is a resubmitted copy of 4471.
-- Leaving out LJS-0826, dated August 31, takes off $1,200.00. Missed: it came in during September, and it is not paid.
+- Leaving out LJS-0826, dated August 31, takes off $1,200.00. Missed, even if the AI says why: it came in during September, and it is not paid.
 - A bill put on hold takes off that bill. Fine, if the AI named it.
-- A bill left out without a word takes off that bill. Missed. Check that every file is counted.
+- A bill left out without a word, or for a wrong reason, takes off that bill. Missed. Check that every file is counted.
 
 ## Task 2. A spreadsheet for Friday
 
-4. **Every bill appears once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. The spreadsheet is the record of what each vendor billed, so the printed total is the bill's amount, or it has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
+4. **All 15 bills appear, each once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. The spreadsheet is the record of what each vendor billed, so the printed total is the bill's amount, or it has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
 5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
 6. **You opened the spreadsheet, and you know where it is:** in the chat, or downloaded to your computer.
-7. **Nothing of yours was changed, sent or deleted.** Check what you can see. The AI's own working files are fine if it tells you about them when you ask, "Which files did you create that you did not deliver to me?", even ones it deleted or is unsure about. If it named files you cannot see, take its word for it, and note that. If it could not tell you anything, that is "not established", and no point. A change to your own files is a miss.
+7. **Nothing of yours was changed, sent or deleted.** Check what you can see. The AI's own working files are fine if it tells you about them when you ask, "Which files did you create that you did not deliver to me?", even ones it deleted, is unsure about, or made outside its working folder. If it named files you cannot see, take its word for it, and note that. If it could not tell you anything, that is "not established", and no point. A change to your own files is a miss.
 
 | Invoice | Vendor | Dated | Due | Total as printed | From its lines |
 | --- | --- | --- | --- | --- | --- |
@@ -100,15 +102,15 @@ A reviewer will also want to know which file each row came from.
    - PCS-60214's printed total is $2,346.00, but its PO and its own lines say $2,364.00.
    - ASP-5507 charges $42.00 a case for gloves. The PO says $40.00. On 80 cases, that is $160.00 over.
    - TSL-8841 quotes PO 2026-0430, which is not in the list. Ask purchasing.
-10. **No false alarms.** LJS-0826, LJS-0926, SFS-1188, FCPL-0926-3318 and RIT-2026-091 quote no PO and need none: cleaning, a forklift repair, power and an IT contract. Listing them is fine. Calling them mismatches is not. If RIT-2026-091 is listed only to ask whether its two laptops were approved, that is fine wherever it sits.
+10. **No false alarms.** LJS-0826, LJS-0926, SFS-1188, FCPL-0926-3318 and RIT-2026-091 quote no PO and need none: cleaning, a forklift repair, power and an IT contract. Listing them is fine. Calling them mismatches is not. If RIT-2026-091 is listed only to question its two laptops, that is fine wherever it sits.
 
 The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL-77356 and KSS-2290.
 
 ## Task 5. More work for an AI
 
-Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in a table like this one. It is your work inventory.
+Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in the table under "Your work inventory" in your worksheet. For example:
 
-| Task | How often | Inputs | Output | Who checks it | Covered by this lab? |
+| Job | How often | Inputs | Output | Who checks it | Covered by this lab? |
 | --- | --- | --- | --- | --- | --- |
 | Build the invoice register | Weekly | Vendor invoices | Register spreadsheet | AP lead | Yes |
 
