@@ -1,0 +1,12 @@
+From: Tri-County Freight billing <billing@tricountyfreight.example>
+To: ap@brightlinewholesale.example
+Date: Monday, November 2, 2026, 08:05
+Subject: Invoice 5149 still open?
+
+Hello,
+
+Our system still shows invoice 5149 ($2,940.00) as unpaid. If it has not gone out, please pay it again in this Friday's run.
+
+Regards,
+Luis Ortega
+Tri-County Freight

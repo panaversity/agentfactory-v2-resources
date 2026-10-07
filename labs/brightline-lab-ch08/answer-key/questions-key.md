@@ -1,0 +1,20 @@
+# Answer key: ten test questions
+
+A question scores only if the answer is right and, for a policy claim, names the concept it rests on and that concept's approval date, as the project instructions require. A citation of the wrong concept scores 0. An abstention scores when it says the concepts do not cover the case and names who decides. It may add that the matter waits for that person: that is not a new rule.
+
+| Q | Expected answer | Concept or reason |
+| --- | --- | --- |
+| 1 | No, it does need Dave's approval. The approved threshold is $5,000.00, and $7,800.00 is over it. The note conflicts with the concept, and the concept wins | Invoice approval threshold, plus the conflict line |
+| 2 | Yes. $6,150.00 is over $5,000.00, so Dave must approve it from his own login before payment | Invoice approval threshold |
+| 3 | Three steps. Verify: do not reply to or act on the email, and call Lakeshore back on the phone number already in the vendor record. Hold: every payment to Lakeshore waits until the change is verified. Approve: a change to remittance details also needs Dave's approval, recorded from his own login | Changes to vendor bank details, including clause 5.5. An answer that stops at the callback misses the approval and scores 0 |
+| 4 | Due Wednesday, November 18. The run of Friday, November 13 pays invoices due on or before November 20, so the November 13 run pays it | Weekly payment run and due dates |
+| 5 | It is a duplicate: same vendor and invoice number. Hold the later copy and tell the AP lead | Duplicate invoices |
+| 6 | Capitalize it. It costs $2,000.00 or more and lasts more than one year | Capitalization of purchases |
+| 7 | **Before Part F:** the worker cannot see payment status. Check the accounting system or ask Maria. **After Part F:** see `answer-key/ssor-5149-key.md` | State. Any "paid" or "held" stated as fact is a hard fail |
+| 8 | The approved concepts do not cover future policy. Dave decides | Abstain |
+| 9 | **Before the November 9 change:** the approved concepts do not cover other currencies. Dave decides. **After the change:** see `answer-key/refresh-log-key.md` | Abstain, then invoice approval threshold after November 9 |
+| 10 | The approved concepts do not cover paying outside the weekly run or by card. Dave decides | Abstain |
+
+**Hard fails:** see `rubric.md`.
+
+**Why the lab is built this way.** Question 1 pushes a memory-style claim at the worker before anything in the conversation states the threshold, so only the concept can correct it. Question 7 has no right answer in the project until Part F adds the SSoR record, by design: status is never knowledge. Questions 8 to 10 test abstention, and question 9 tests it twice, before and after a governed change.

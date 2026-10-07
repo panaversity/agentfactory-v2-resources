@@ -1,0 +1,12 @@
+# AP Worker Role Contract, Draft 5: knowledge section
+
+The rest of the Role Contract is unchanged from Draft 4, your Chapter 7 draft. If you do not have one, write only this section.
+
+**Knowledge sources:** <the five concepts, by title>
+**Knowledge owner and approver:** <name and role>
+**Maintained by:** <name and role>
+**Where the copies live:** <each AI vendor and project>
+**How copies are kept current:** <refresh rule and log location>
+**Not knowledge sources:** <what the worker must never treat as policy>
+**Current state comes from:** <where status questions are answered>
+**SSoR records:** <where each matter's SSoR record lives, who keeps it, and how its lines are marked>
