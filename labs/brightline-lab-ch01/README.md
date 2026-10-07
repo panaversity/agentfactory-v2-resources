@@ -7,7 +7,7 @@ Chapter 1 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | Path | What it is |
 | --- | --- |
 | `LAB.md` | The lab: the job, seven tasks, and when to check your answers. |
-| `inputs.zip` | `invoices/`, 15 PDFs, and `purchase-orders.csv`, in one zip. It is the only thing you give the AI. To check the AI's work, open it on your computer. |
+| `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs) and `purchase-orders.csv`. It is the only thing you give the AI. To check the AI's work, open it on your computer. |
 | `worksheets/` | The two files you fill in: `ai-vendor-run.md` for Tasks 1 to 5, and `port.md` for Tasks 6 and 7. |
 
 **Give the AI only `inputs.zip`.** Never upload `LAB.md`, this file or your worksheets.

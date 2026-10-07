@@ -8,11 +8,11 @@ From (the AI vendor in `ai-vendor-run.md`):
 
 To:
 
-Date you did this:
+Date (the real one, not the story's):
 
 If you can use only one AI vendor, skip the run. Write "not run" for the score, and fill in the table with what you think would change.
 
-Score from the score sheet: __ / 10
+Score from the score sheet, out of 10, or "not run" and your guess:
 
 | # | What changed, or would change | Kind of change | Why it was needed |
 | --- | --- | --- | --- |
@@ -20,11 +20,13 @@ Score from the score sheet: __ / 10
 
 Kind of change: your words (the brief), a setting (such as permissions, or running code), or how you gave it the files.
 
+A habit, such as downloading the file at once, is not a change. It belongs to Task 7.
+
 Lines of your briefs that did not change:
 
 ## Task 7. The next day
 
-Date you did this:
+Date (the real one, not the story's):
 
 | What you made | Where it is, or "gone", "can't tell" or "not run" |
 | --- | --- |

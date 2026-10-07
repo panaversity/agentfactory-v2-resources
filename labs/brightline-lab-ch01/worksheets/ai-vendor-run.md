@@ -4,7 +4,7 @@ Fill this in as you go, from top to bottom. `LAB.md` says what to do in each tas
 
 AI vendor and app:
 
-Date you did this:
+Date (the real one, not the story's):
 
 ## Run 1
 
@@ -105,7 +105,7 @@ The AI's five jobs:
 
 Score from the score sheet: __ / 10
 
-Checks I missed:
+Checks I missed, and why:
 
 What I will change, and in which brief:
 

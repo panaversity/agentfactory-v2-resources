@@ -10,7 +10,7 @@ In this lab you hand an AI a real job. By the end, you can:
 - tell what changes when you switch to another AI, and what stays the same
 - see which of your team's regular jobs an AI could take over
 
-Your five final briefs make up your brief. It is portable if it works the same on both runtimes, the AI products Claude and ChatGPT. Every name, number and company here is invented.
+Each task gets its own brief. Together, your five final briefs are the portable brief in this lab's title. It is portable if it works the same on both runtimes, the AI products Claude and ChatGPT. Every name, number and company here is invented.
 
 ## The job
 
@@ -44,7 +44,7 @@ Fill in `worksheets/ai-vendor-run.md` as you go. For every task, it has a place 
 While you work:
 
 - If the AI asks a question, answer briefly. Ignore its offers to do more.
-- After it answers, asking how it got there is fine. Correcting it, or asking for more, is not.
+- After it answers, asking how it got there is fine. If it then corrects itself, write that down. Correcting it yourself, or asking for more, is not.
 - Your briefs can use anything you have learned so far.
 - If your own check finds a mistake, write it down. Leave the AI's work as it is, and hand it over with your note. You fix your briefs after you check your answers.
 
@@ -66,7 +66,7 @@ While you work:
 
 **Your manager asks:** "How much do we owe on these invoices?"
 
-**What you do:** Write down the kind of answer you expect. Then write your own brief, and send it with `inputs.zip`. When it answers, ask it how it got there. Check one part of its answer yourself, such as one number or one row, against the files in `inputs.zip` or the facts in "The job".
+**What you do:** Write down the kind of answer you expect. Then write your own brief, and send it with `inputs.zip`. When it answers, ask it how it got there. Then check part of its answer yourself: a number it worked out, or a choice it made. Check it against the files in `inputs.zip` and the facts in "The job".
 
 **Give your manager:** one total.
 
@@ -119,7 +119,7 @@ While you work:
 3. Open a new conversation. Send your five briefs again, one task at a time, with `inputs.zip` in the first message. Ask the files question again, and open the new spreadsheet. You do not need to ask how it got there this time.
 4. Score this second run the same way. Its five briefs are your final briefs. For a check that still fails, note what you would change.
 
-**Optional, if you passed all 10 (5 minutes).** In a new conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one, under "Optional" in your worksheet.
+**Optional, if your first run scored 10 (5 minutes).** In a new conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one, under "Optional" in your worksheet.
 
 **Checkpoint.** Your worksheet has your scores and your final briefs. Task 6 shows whether they are portable.
 

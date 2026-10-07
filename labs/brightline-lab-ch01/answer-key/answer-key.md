@@ -48,16 +48,16 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 **Not in the table?** Start from $24,096.98. Add or take off the amounts in the table, and these:
 
 - Counting 4471-R, the copy, adds $4,850.00 more. Missed: 4471-R is a resubmitted copy of 4471.
-- Leaving out LJS-0826, dated August 31, takes off $1,200.00. Missed: it came in during September, and it is not paid.
+- Leaving out LJS-0826, dated August 31, takes off $1,200.00. Missed, even if the AI says why: it came in during September, and it is not paid.
 - A bill put on hold takes off that bill. Fine, if the AI named it.
-- A bill left out without a word takes off that bill. Missed. Check that every file is counted.
+- A bill left out without a word, or for a wrong reason, takes off that bill. Missed. Check that every file is counted.
 
 ## Task 2. A spreadsheet for Friday
 
 4. **Every bill appears once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. The spreadsheet is the record of what each vendor billed, so the printed total is the bill's amount, or it has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
 5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
 6. **You opened the spreadsheet, and you know where it is:** in the chat, or downloaded to your computer.
-7. **Nothing of yours was changed, sent or deleted.** Check what you can see. The AI's own working files are fine if it tells you about them when you ask, "Which files did you create that you did not deliver to me?", even ones it deleted or is unsure about. If it named files you cannot see, take its word for it, and note that. If it could not tell you anything, that is "not established", and no point. A change to your own files is a miss.
+7. **Nothing of yours was changed, sent or deleted.** Check what you can see. The AI's own working files are fine if it tells you about them when you ask, "Which files did you create that you did not deliver to me?", even ones it deleted, is unsure about, or made outside its working folder. If it named files you cannot see, take its word for it, and note that. If it could not tell you anything, that is "not established", and no point. A change to your own files is a miss.
 
 | Invoice | Vendor | Dated | Due | Total as printed | From its lines |
 | --- | --- | --- | --- | --- | --- |
