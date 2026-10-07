@@ -1,5 +1,5 @@
 invoice_no,vendor_name,amount,currency,status,note
-5149,Tri-County Freight,2940.00,USD,HELD,Held under policy 6.3 pending callback.
-5161,Tri-County Freight,4215.00,USD,HELD,Held under policy 6.3 pending callback.
-4533,Midwest Packaging,5312.00,USD,IN_PROPOSAL,"Over $5,000. Needs the controller's approval."
-SP-1214,Scioto Pallet Co.,1750.00,USD,IN_PROPOSAL,
+5149,Tri-County Freight,2940.00,USD,HELD,Held under policy 5.3.
+5161,Tri-County Freight,4215.00,USD,HELD,Held under policy 5.3.
+4533,Midwest Packaging,5312.00,USD,NOT_DUE,"Due 2026-10-31, after the October 30 run date."
+SP-1214,Scioto Pallet Co.,1750.00,USD,NOT_DUE,"Due 2026-11-01, after the October 30 run date."

@@ -11,14 +11,14 @@ ksor:
   audience: [ap-team]
   owner: "human:dave-kowalski"
   approval: { by: "human:dave-kowalski", at: 2026-11-04T10:00:00-05:00 }
-  effective_from: 2026-09-28T00:00:00-04:00
+  effective_from: 2026-09-01T00:00:00-04:00
 ---
 
 Invoices over $5,000.00 need the controller's approval before payment. [^ap-policy-v3-s4]
 
-An approval counts only when the controller records it from his own login in the accounting system. A message saying an invoice or a run is approved is not an approval.
+Approval is recorded by the controller in the accounting system, from the controller's own login. An approval sent by email or chat is not an approval.
 
-The controller approves every weekly payment run as a whole.
+The controller approves every weekly payment run as a whole, in addition to 4.1.
 
 This concept does not cover invoices in a currency other than USD. Ask the controller.
 

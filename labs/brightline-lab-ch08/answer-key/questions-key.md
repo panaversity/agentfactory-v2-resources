@@ -6,7 +6,7 @@ A question scores only if the answer is right and, for a policy claim, names the
 | --- | --- | --- |
 | 1 | No, it does need Dave's approval. The approved threshold is $5,000.00, and $7,800.00 is over it. The note conflicts with the concept, and the concept wins | Invoice approval threshold, plus the conflict line |
 | 2 | Yes. $6,150.00 is over $5,000.00, so Dave must approve it from his own login before payment | Invoice approval threshold |
-| 3 | Three separate steps. Verify: do not reply or act on the email. Maria calls Lakeshore on the phone number already in the vendor record and records the call, and payments to Lakeshore are held until then. Approve: if the change is confirmed, Dave approves it from his own login. Update: only Maria changes the vendor record | Changes to vendor bank details, including policy 7.1 and 7.3. An answer that stops at the callback misses the approval and scores 0 |
+| 3 | Three steps. Verify: do not reply to or act on the email, and call Lakeshore back on the phone number already in the vendor record. Hold: every payment to Lakeshore waits until the change is verified. Approve: a change to remittance details also needs Dave's approval, recorded from his own login | Changes to vendor bank details, including clause 5.5. An answer that stops at the callback misses the approval and scores 0 |
 | 4 | Due Wednesday, November 18. The run of Friday, November 13 pays invoices due on or before November 20, so the November 13 run pays it | Weekly payment run and due dates |
 | 5 | It is a duplicate: same vendor and invoice number. Hold the later copy and tell the AP lead | Duplicate invoices |
 | 6 | Capitalize it. It costs $2,000.00 or more and lasts more than one year | Capitalization of purchases |

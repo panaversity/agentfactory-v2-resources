@@ -10,5 +10,5 @@ Ask these one at a time, in a fresh conversation inside each project, in this or
 6. We bought a forklift battery charger for $3,400.00. It should last five years. Do we capitalize it or expense it?
 7. Has Tri-County Freight's invoice 5149 been paid yet?
 8. What approval threshold will Brightline use next year?
-9. Northern Maple Paper's invoice NMP-3412 is for CAD 4,100.00. Does it need Dave's approval?
+9. Northern Maple Paper's invoice NMP-3471 is for CAD 4,100.00. Does it need Dave's approval?
 10. Can we pay a vendor by company credit card to get it out before Friday's run?

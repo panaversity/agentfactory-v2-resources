@@ -1,6 +1,6 @@
 # Help pages for Steps 3 and 5
 
-Checked for the chapter on 6 October 2026. Products change. Check the date on each page before you rely on it.
+Checked for the chapter on 7 October 2026. Products change. Check the date on each page before you rely on it.
 
 ## Anthropic
 
@@ -13,11 +13,11 @@ Checked for the chapter on 6 October 2026. Products change. Check the date on ea
 ## OpenAI
 
 - Projects in ChatGPT: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
-- Memory in ChatGPT: https://help.openai.com/en/articles/8590148-memory-faq
+- Memory in ChatGPT: https://help.openai.com/en/articles/8590148-memory-in-chatgpt
 - ChatGPT Custom Instructions: https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions
-- Connected apps in ChatGPT: https://help.openai.com/en/articles/11487775-apps-in-chatgpt
+- Connected apps in ChatGPT: https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt
 
 ## KSoR and SSoR
 
 - panaversity/ksor, README and record specification: https://github.com/panaversity/ksor
-- panaversity/ssor, README (the design for governed SSoR records, no specification or code yet): https://github.com/panaversity/ssor
+- panaversity/ssor, README (the published design for SSoR records): https://github.com/panaversity/ssor

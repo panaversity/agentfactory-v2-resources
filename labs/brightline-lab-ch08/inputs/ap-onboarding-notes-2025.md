@@ -1,6 +1,6 @@
 # AP onboarding notes
 
-Written by the previous AP lead, March 2025. Never reviewed or approved. Kept in the AP Worker's project since September "for background."
+Written by a former AP clerk, March 2025. Never reviewed or approved. Kept in the AP Worker's project "for background."
 
 - Payment runs are on Thursdays.
 - Anything over $2,500 goes to Dave before we pay it.

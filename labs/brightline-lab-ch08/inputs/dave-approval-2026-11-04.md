@@ -7,7 +7,7 @@ I have read the five draft concepts Maria prepared from AP policy version 3 and 
 
 - **Owner:** me, Dave Kowalski, Controller, for all five.
 - **Audience:** the AP team only (`ap-team`).
-- **Effective from:** the date of the source. September 28, 2026 for the threshold, payment-run and duplicate concepts. October 26, 2026 for bank-detail changes, because it depends on section 7, added that day. September 15, 2026 for capitalization.
+- **Effective from:** the date of the source. September 1, 2026, when version 3 was approved, for the threshold, payment-run, duplicate and bank-detail concepts. September 15, 2026 for capitalization.
 - **Review by:** March 31, 2027, for all five.
 - **Change control:** any change comes back to me. Maria drafts it. Nothing is served until I approve it.
 

@@ -13,7 +13,7 @@ For each statement, write where it belongs (context, memory, SSoR, KSoR or DSoR)
 9. "Always flag Northern Maple to Dave," said by Maria in the first week of a long chat.
 10. The October 23 payment status list in the project's files.
 11. Brightline's current bank balance.
-12. "Maria works Tuesday to Saturday."
+12. "Maria works Monday to Friday."
 13. "A duplicate has the same vendor and invoice number, or the same vendor, amount and invoice date," in an approved concept.
 14. Tri-County Freight's open balance today.
-15. "Invoice 5149: held October 23 under policy 6.3, callback October 26, paid in the October 30 run," each line dated and sourced.
+15. "Invoice 5149: callback October 22, held October 23 under policy 5.3, paid in the October 30 run," each line dated and sourced.

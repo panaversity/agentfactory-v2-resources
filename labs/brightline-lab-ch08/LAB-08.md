@@ -1,7 +1,7 @@
-# Lab 8: Your first KSoR, connected to both vendors
+# Lab 08: Your first KSoR, connected to both AI vendors
 
 **Time:** about 130 minutes
-**You need:** Claude and ChatGPT, each on a plan that has projects. With one vendor, see Step 3.
+**You need:** Claude and ChatGPT, each on a plan that has projects. With one AI vendor, see Step 3.
 **You do not need:** code, a server, a connector or any company system. Everything is in this folder.
 **Standalone:** this lab uses no files from other chapters.
 
@@ -9,13 +9,13 @@
 
 It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly. It read a payment status from an old file, a threshold from memory, a bank rule from unapproved notes, and it lost a standing instruction inside a long chat (Chapter 8's opening story).
 
-Dave Kowalski, the controller, owns Brightline's AP policy. Maria is the AP lead. Dave has asked Maria to turn the policy into governed knowledge the AP Worker answers from, on both vendors, and to keep it current. In this lab you take Maria's seat.
+Dave Kowalski, the controller, owns Brightline's AP policy. Maria is the office manager. Dave has asked Maria to turn the policy into governed knowledge the AP Worker answers from, on both AI vendors, and to keep it current. In this lab you take Maria's seat.
 
 ## Files
 
 | File | What it is |
 | --- | --- |
-| `inputs/ap-policy-v3.md` | The approved AP policy. Source for four concepts |
+| `inputs/ap-policy-v3-excerpt.md` | AP policy, version 3, approved September 1. Source for four concepts |
 | `inputs/capitalization-memo-2026-09-15.md` | Dave's approved memo. Source for the fifth concept |
 | `inputs/ap-onboarding-notes-2025.md` | Old, unapproved notes. Never a source |
 | `inputs/payment-status-2026-10-23.csv` | A status snapshot. Never a source |
@@ -43,11 +43,11 @@ Copy `templates/sorting-template.md` to `results/sorting.md`.
 
 1. Make a folder `ksor/knowledge/`. Copy `templates/concept-template.md` five times:
    - `invoice-approval-threshold.md` (policy 4.1 to 4.3)
-   - `weekly-payment-run.md` (policy 2 and 3)
-   - `duplicate-invoices.md` (policy 5.1)
-   - `vendor-bank-detail-changes.md` (policy 6, and anything it depends on)
+   - `weekly-payment-run.md` (policy 2.1 and section 3)
+   - `duplicate-invoices.md` (policy 6.1)
+   - `vendor-bank-detail-changes.md` (policy 5.1 to 5.3, and anything they depend on)
    - `capitalization.md` (the memo)
-2. Read the whole policy before you write any concept. A rule in one section can depend on a step in another, and the concept must carry both.
+2. Read the whole policy before you write any concept. A rule in one clause can depend on a step in another, and the concept must carry both.
 3. Fill in each one with `status: draft`. One topic per concept, in plain sentences, numbers exactly as the source gives them. Where a source is silent on a case people will ask about, such as other currencies, say so in one line.
 4. Read `inputs/dave-approval-2026-11-04.md`. Apply it: set `status: stable`, and add the owner, approval, effective date and review date exactly as Dave states them.
 5. Use nothing from the onboarding notes, the status list or the memory export.
@@ -61,7 +61,7 @@ Then open `answer-key/concepts/` and score Part A of the rubric. Fix anything wr
 3. **ChatGPT.** Create a project with the same name. Choose project-only memory when you create it. Paste the same instructions and add the same five files. Add nothing else.
 4. In each project, start a fresh conversation. Ask the ten questions in `inputs/test-questions.md` one at a time, in order. Copy the run log from `templates/run-log-template.md` to `results/question-run-log.md` and record the plan, model, memory setting and the files in each project.
 
-**One vendor?** Do the run on it, then fill in `templates/transfer-plan-template.md` as `results/transfer-plan.md`.
+**One AI vendor?** Do the run on it, then fill in `templates/transfer-plan-template.md` as `results/transfer-plan.md`.
 
 ## Step 4. Investigate (10 minutes)
 
@@ -81,19 +81,19 @@ Read `inputs/change-request-2026-11-09.md`, then `inputs/dave-approval-2026-11-0
 
 ## Step 6. Keep an SSoR record (10 minutes)
 
-The worker could not tell you where 5149 stands, because its history was scattered. Here you gather it into one SSoR record, the matter's case file. SSoR does not run yet, so you keep this record by hand.
+The worker could not tell you where 5149 stands, because its history was scattered. Here you gather it into one SSoR record, the matter's case file. In Part II, you keep this record by hand.
 
 1. Copy `templates/ssor-record-template.md` to `ssor/invoice-5149.md`.
 2. Read the four records in `inputs/case-5149/`. Write one line for each, in date order: the date, what happened, the source file, and its origin. Use the origin rules in the template. You play the record's part: assign each origin by the rules, never by what a source says about itself. Record what each source has authority to say, and add nothing it does not say.
 3. Write the latest-known line: the status from the authority, the date it is as of, its source, and the words "not verified current." The newest line is not always the latest known: a claim from a non-authority never sets it.
-4. Add the SSoR record to your Claude project's files. With two vendors, add it to the ChatGPT project too. If your State line does not yet say what to do with an SSoR record, update it from `answer-key/project-instructions-key.md`.
+4. Add the SSoR record to your Claude project's files. With two AI vendors, add it to the ChatGPT project too. If your State line does not yet say what to do with an SSoR record, update it from `answer-key/project-instructions-key.md`.
 5. Ask question 7 again in a fresh conversation. Score Part E with `answer-key/ssor-5149-key.md`.
 
 An SSoR record kept by hand is still a copy you maintain. When a new record about 5149 arrives, you add a line. You never edit an old one.
 
 ## Step 7. Make (10 minutes)
 
-1. Copy `templates/role-contract-knowledge-section.md` to `role-contract/ap-worker-role-contract-v3.md` and fill it in.
+1. Copy `templates/role-contract-knowledge-section.md` to `role/ap-worker-role-contract.md` and fill it in. If you kept your Role Contract from Chapter 7, put this section in that file instead, as Draft 5.
 2. Write one concept from your own field in the same format: a rule you rely on at work, its owner, its source and its review date.
 
 ## What this lab does not prove
@@ -108,5 +108,5 @@ Two runs show how two workers followed your instructions once. In Part II, nothi
 - [ ] `results/question-run-log.md`, both runs scored, or one run and `results/transfer-plan.md`
 - [ ] `ksor/refresh-log.md`
 - [ ] `ssor/invoice-5149.md`, with a latest-known line
-- [ ] `role-contract/ap-worker-role-contract-v3.md`
+- [ ] `role/ap-worker-role-contract.md`, Draft 5
 - [ ] One concept from your own field

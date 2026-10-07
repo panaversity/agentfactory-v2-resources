@@ -1,6 +1,6 @@
 # Question run log
 
-| Run | Vendor and product | Plan | Model | Date and time | Memory setting for the project |
+| Run | AI vendor and product | Plan | Model | Date and time | Memory setting for the project |
 | --- | --- | --- | --- | --- | --- |
 | Run 1 | Claude | | | | |
 | Run 2 | ChatGPT | | | | |

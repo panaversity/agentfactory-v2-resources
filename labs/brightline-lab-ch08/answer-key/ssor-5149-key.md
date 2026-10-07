@@ -2,8 +2,8 @@
 
 | Date | What happened | Source file | Origin |
 | --- | --- | --- | --- |
-| 2026-10-23 | Held in the weekly run under policy 6.3, pending a bank-detail callback | `run-record-2026-10-23.csv` | observed |
-| 2026-10-26 | Maria called Tri-County on the number on record and recorded the call. Bank-detail request resolved under 6.2 | `call-note-2026-10-26.md` | confirmed |
+| 2026-10-22 | Maria called Tri-County back on the number in the vendor record. Tri-County has not changed its bank details. Verified under policy 5.1 | `call-note-2026-10-22.md` | confirmed |
+| 2026-10-23 | Held in the weekly run under policy 5.3 | `run-record-2026-10-23.csv` | observed |
 | 2026-10-30 | Paid in the weekly run, approved by the controller from his own login | `run-record-2026-10-30.csv` | observed |
 | 2026-11-02 | Tri-County says its system shows 5149 unpaid, and asks Brightline to pay it again | `email-2026-11-02.txt` | reported |
 

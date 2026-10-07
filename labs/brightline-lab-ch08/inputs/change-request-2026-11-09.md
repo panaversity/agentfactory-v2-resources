@@ -12,7 +12,7 @@ Maria, add it to the invoice approval threshold concept as one new sentence, wit
 When I approve it, the concept takes:
 
 - **Approval:** `approval: { by: "human:dave-kowalski", at: 2026-11-09T09:00:00-05:00 }`
-- **Effective from:** unchanged, September 28, 2026. The new sentence carries its own start date.
+- **Effective from:** unchanged, September 1, 2026. The new sentence carries its own start date.
 - **Review by:** unchanged, March 31, 2027.
 
 Then refresh every copy today, and log it.

@@ -1,6 +1,6 @@
 # Project instructions: AP Worker, policy questions
 
-Paste the finished text into the project's instructions on each vendor. Keep it under 1,500 characters so it fits every plan.
+Paste the finished text into the project's instructions on each AI vendor. Keep it under 1,500 characters so it fits every plan.
 
 **Role.** <who the worker answers, and about what>
 
