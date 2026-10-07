@@ -1,6 +1,6 @@
 # Brightline lab, Chapter 8: your first KSoR, connected to both AI vendors
 
-It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly, because each answer came from the wrong place. Dave Kowalski, the controller, owns Brightline's AP policy. You take the seat of Maria, the office manager: you write five AP policy concepts for Dave's approval, connect them to a project in Claude and one in ChatGPT, test them, carry one approved change through every copy, and keep the record of one invoice by hand.
+It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly, because each answer came from the wrong place. Dave Kowalski, the controller, owns Brightline's AP policy. You take the seat of Maria, the office manager: you write five AP policy concepts for Dave's approval, add them to a project in Claude and one in ChatGPT, test them, carry one approved change through every copy, and keep the record of one invoice by hand.
 
 This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Brightline Wholesale Supply, its people, vendors and invoices are invented. Phone numbers use the 555-01xx range reserved for fiction.
 
