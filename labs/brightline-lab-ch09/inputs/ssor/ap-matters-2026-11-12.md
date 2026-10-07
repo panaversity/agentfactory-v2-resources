@@ -1,7 +1,6 @@
 # SSoR record: AP matters, kept by hand
 
 **Kept by:** Maria, office manager
-**As of:** Thursday, November 12, 2026, 6:00 a.m.
 **What this is:** the record of each AP matter, where it stands and how it got there, its case file. SSoR is a published design. In this lab, Maria keeps this file by hand.
 
 **Origins.** The record assigns each entry an origin. Whoever submits an entry does not choose it.

@@ -58,7 +58,7 @@ Then open `answer-key/gates-key.md` and score the gates and your prediction with
 
 Each run is a fresh chat, as a scheduled run would be. Each chat is fresh and cannot see your own memory, so your memory does not change the test. In Claude, turn off Memory in the "+" menu as you start the chat. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you send the first message.
 
-In each chat, paste the spec as the first message, attach the files listed, and ask: "Run the Thursday pre-run review for the date of this register." If your plan limits uploads, as ChatGPT's Free plan does (3 files a day), paste each file's text instead, under its file name.
+In each chat, paste the spec as the first message, attach the files listed, and ask: "Today is Thursday, November 12, 2026. Run the Thursday pre-run review." Use each run's own date. A chat knows the real date, and a good spec stops when the register is not dated today. If your plan limits uploads, as ChatGPT's Free plan does (3 files a day), paste each file's text instead, under its file name.
 
 Copy `templates/run-log-template.md` to `results/week-run-log.md` and fill it in as you go. Save each run's note in `results/`, such as `results/note-2026-11-12.md`.
 
