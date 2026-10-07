@@ -1,12 +1,12 @@
-# Lab 1 answers
+# Lab 1 answer key: Tasks 1 to 5
 
 The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Every name, number and company in this lab is invented.
 
-**When to read what.** This file holds Tasks 1 to 5. Read it at the page's "Check your answers" step. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answers-tasks-6-7.md), which the page links after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
+**When to read what.** This file holds Tasks 1 to 5. Read it at "Check your answers", in `LAB.md` or the book. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answer-key-port.md), linked after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
 
 ## Score sheet
 
-One point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Each check is explained under its task, below the sheet.
+One point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Write your score in your worksheet, `ai-vendor-run.md`. Each check is explained under its task, below the sheet.
 
 | Check | Task | You get the point when |
 | --- | --- | --- |
@@ -106,7 +106,7 @@ The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL
 
 ## Task 5. More work for an AI
 
-Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in a table like this one. It is your work inventory.
+Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in the table under Task 5 in your worksheet. It is your work inventory. For example:
 
 | Task | How often | Inputs | Output | Who checks it | Covered by this lab? |
 | --- | --- | --- | --- | --- | --- |

@@ -1,7 +1,11 @@
-# Packs every lab folder as a zip (only its data/ folder, when it has one) and publishes them as a new release, so the
+# Packs every lab folder as a zip and publishes them as a new release, so the
 # book's links (…/releases/latest/download/<lab>.zip) download the newest copy
 # in one click. The same pattern as the first edition's companion repositories,
 # without a manual tag: a change to a lab on main is the release.
+#
+# A lab named in UPLOAD_LABS is one whose learner gives an AI its inputs as a
+# file. Its zip leaves out answer-key/, so the answers never ride along, and
+# adds inputs.zip, made from inputs/, as the one file to upload.
 name: Release labs
 
 on:
@@ -22,15 +26,17 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Zip each lab folder
+        env:
+          UPLOAD_LABS: "brightline-lab-ch01"
         run: |
           mkdir -p dist stage
           for dir in labs/*/; do
             name="$(basename "${dir%/}")"
-            if [ -d "${dir}data" ]; then
-              # A lab with a data/ folder ships only its data: no instructions, no answers.
+            if [[ " $UPLOAD_LABS " == *" $name "* ]]; then
               # Staged under the lab's name, so the zip still unpacks into one folder named for the lab.
-              mkdir -p "stage/$name"
-              cp -R "${dir}data/." "stage/$name/"
+              cp -R "${dir%/}" "stage/$name"
+              rm -rf "stage/$name/answer-key"
+              (cd "stage/$name" && zip -r -X -q inputs.zip inputs -x "*/.DS_Store" "*/.gitkeep")
               (cd stage && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
             else
               # From inside labs/, so the zip unpacks into one folder named for the lab.

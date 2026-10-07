@@ -1,0 +1,196 @@
+# Your runs on one AI vendor
+
+Fill this in as you go, from top to bottom. `LAB.md` says what to do in each task. Paste the AI's answers in, or sum them up in your own words. Never upload this file to the AI.
+
+AI vendor and app:
+
+Date:
+
+## Run 1
+
+### Task 1. What we owe
+
+The kind of answer I expect:
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+How it got there:
+
+My own check:
+
+### Task 2. A spreadsheet for Friday
+
+The kind of answer I expect:
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+The spreadsheet's file name, and where it is (in the chat, on my computer, or both):
+
+How it got there:
+
+My own check:
+
+Its answer to "Which files did you create that you did not deliver to me?":
+
+### Task 3. What is due by Friday
+
+The kind of answer I expect:
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+How it got there:
+
+My own check:
+
+### Task 4. Match the POs
+
+The kind of answer I expect:
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+How it got there:
+
+My own check:
+
+### Task 5. More work for an AI
+
+The kind of answer I expect:
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+The AI's five jobs:
+
+After you check your answers, put the five jobs in this table. It is your work inventory.
+
+| Job | How often | Inputs | Output | Who checks it | Covered by this lab? |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+### Run 1 score
+
+Score from the score sheet: __ / 10
+
+Checks I missed:
+
+What I will change, and in which brief:
+
+## Run 2: your fixed briefs
+
+Skip this run if Run 1 scored 10. Then your Run 1 briefs are your final briefs.
+
+### Task 1. What we owe
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+### Task 2. A spreadsheet for Friday
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+The spreadsheet's file name, and where it is (in the chat, on my computer, or both):
+
+Its answer to "Which files did you create that you did not deliver to me?":
+
+### Task 3. What is due by Friday
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+### Task 4. Match the POs
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back:
+
+### Task 5. More work for an AI
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+The AI's five jobs:
+
+### Run 2 score
+
+Score from the score sheet: __ / 10
+
+For a check that still fails, what I would change:
+
+## Your own vertical
+
+The line of work I know best:
+
+My brief
+
+- Outcome:
+- Format:
+- Inputs:
+- Autonomy:
+
+What came back, if I ran it:
+
+Five jobs there that an AI could take:

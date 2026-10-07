@@ -1,14 +1,18 @@
 # Lab 1: one portable brief, two runtimes
 
-Chapter 1 of *The AI Agent Factory*, Second Edition. The tasks are on the book page, [Build step: one portable brief, two runtimes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/build-step/). Every name, number and company here is invented.
+Chapter 1 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
+
+**Start with `LAB.md`.** It is the book's page for this lab, [Build step: one portable brief, two runtimes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/build-step/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
-| `data/` | What the book's zip holds, and nothing else: `invoices/`, 15 invoice PDFs, and `purchase-orders.csv`. The release zips this folder as `brightline-lab-ch01.zip`. |
-| `answers.md` | The answers for Tasks 1 to 5. The book page links to it at "Check your answers". |
-| `answers-tasks-6-7.md` | The answers for Tasks 6 and 7, with "Look back". The book page links to it after Task 7. |
-| `source/` | How the data is made: the 15 invoices as text, and `build.py`, which prints them as PDFs. This lab's first version, with LAB.md and the old answer key, is in the repository's history. |
+| `LAB.md` | The lab: the job, seven tasks, and when to check your answers. |
+| `inputs/` | 15 invoice PDFs and `purchase-orders.csv`. Read them when you check the AI's work. |
+| `inputs.zip` | The same files in one zip, in the downloaded lab. It is the only thing you give the AI. |
+| `worksheets/` | The two files you fill in: `ai-vendor-run.md` for Tasks 1 to 5, and `port.md` for Tasks 6 and 7. |
 
-Two facts the tasks need are on the book page, not in the data: today's date in the job, September 30, 2026, and Brightline's payment of invoice 4471 on September 25. A learner has to pass them to the AI. That is the point.
+**Give the AI only `inputs.zip`.** Never upload `LAB.md`, this file or your worksheets.
 
-To change an invoice, edit its text file in `source/invoices/` and run `python3 labs/brightline-lab-ch01/source/build.py` from the repository's root. It needs Google Chrome, which prints each invoice as a PDF, and `pdftotext`, which checks that every field and number is in the PDF's text. Then check `answers.md` and `data/purchase-orders.csv` against the change.
+The answer key is not in the zip. `LAB.md` links to it when it is time: [Tasks 1 to 5](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md), then [Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md).
+
+For maintainers: the release makes `inputs.zip` from `inputs/`, and leaves `answer-key/` out of the zip. The invoices are printed by `tools/brightline-lab-ch01/` in this repository.
