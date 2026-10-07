@@ -1,0 +1,19 @@
+PO Number,PO Date,Vendor,Item,Qty,Unit Price,Line Total
+2026-0412,2026-08-24,Midwest Packaging Co.,"Corrugated boxes, 18 x 18 x 16 in",1000,2.35,2350.00
+2026-0412,2026-08-24,Midwest Packaging Co.,"Stretch wrap, 18 in, 80 gauge (rolls)",50,38.00,1900.00
+2026-0412,2026-08-24,Midwest Packaging Co.,"Packing tape, 2 in (cases)",20,26.00,520.00
+2026-0412,2026-08-24,Midwest Packaging Co.,Freight,1,80.00,80.00
+2026-0418,2026-08-28,Buckeye Freight Lines,"LTL shipment, Columbus OH to Indianapolis IN",3,412.50,1237.50
+2026-0418,2026-08-28,Buckeye Freight Lines,Fuel surcharge,1,148.50,148.50
+2026-0420,2026-08-31,Central Ohio Office Supply,"Copy paper, letter (cases)",12,54.99,659.88
+2026-0420,2026-08-31,Central Ohio Office Supply,"Toner cartridge, LaserPro 400",4,89.50,358.00
+2026-0423,2026-09-01,Great Lakes Pallet Inc.,"Pallets, 48 x 40 in, grade A",200,11.75,2350.00
+2026-0423,2026-09-01,Great Lakes Pallet Inc.,Delivery,1,95.00,95.00
+2026-0427,2026-09-04,Prairie Chemical Supply,"Floor cleaner, 5 gal pail",40,31.20,1248.00
+2026-0427,2026-09-04,Prairie Chemical Supply,"Hand soap, 12 x 1 L (cases)",60,18.60,1116.00
+2026-0429,2026-09-08,Allied Safety Products,"Nitrile gloves, size L (cases)",80,40.00,3200.00
+2026-0429,2026-09-08,Allied Safety Products,Safety glasses (dozen),12,36.00,432.00
+2026-0433,2026-09-11,Buckeye Freight Lines,"LTL shipment, Columbus OH to Pittsburgh PA",2,455.00,910.00
+2026-0433,2026-09-11,Buckeye Freight Lines,Fuel surcharge,1,109.20,109.20
+2026-0436,2026-09-14,Keystone Steel Shelving,"Boltless shelving unit, 72 in",10,189.00,1890.00
+2026-0436,2026-09-14,Keystone Steel Shelving,Freight,1,150.00,150.00
