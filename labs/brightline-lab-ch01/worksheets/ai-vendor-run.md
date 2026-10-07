@@ -1,6 +1,6 @@
 # Your runs on one AI vendor
 
-Fill this in as you go, from top to bottom. `LAB.md` says what to do in each task. Paste the AI's answers in, or sum them up in your own words. Never upload this file to the AI.
+Fill this in as you go, from top to bottom. `LAB.md` says what to do in each task. Paste the AI's answers in, or sum them up in your own words. Each brief has four headings. A line of context before them, such as who you are, is fine. Never upload this file to the AI.
 
 AI vendor and app:
 
@@ -40,7 +40,7 @@ My brief
 
 What came back:
 
-The spreadsheet's file name, and where it is (in the chat, on my computer, or both):
+The spreadsheet's file name, where it is (in the chat, on my computer, or both), and whether I opened it:
 
 How it got there:
 
@@ -121,9 +121,9 @@ After you check your answers, put the AI's five jobs from Task 5 in this table.
 |  |  |  |  |  |  |
 |  |  |  |  |  |  |
 
-### Optional, if Run 1 scored 10: Task 1 without the facts
+### Optional test (only if `LAB.md` sends you here)
 
-My Task 1 brief, without the facts from "The job":
+My Task 1 brief for the optional test:
 
 What came back:
 
@@ -155,7 +155,7 @@ My brief
 
 What came back:
 
-The spreadsheet's file name, and where it is (in the chat, on my computer, or both):
+The spreadsheet's file name, where it is (in the chat, on my computer, or both), and whether I opened it:
 
 Its answer to "Which files did you create that you did not deliver to me?":
 

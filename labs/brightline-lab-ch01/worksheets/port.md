@@ -12,7 +12,7 @@ Date (the real one, not the story's):
 
 If you can use only one AI vendor, skip the run. Write "not run" for the score, and fill in the table with what you think would change.
 
-Score from the score sheet, out of 10, or "not run" and your guess:
+Score from the score sheet, out of 10, or "not run":
 
 | # | What changed, or would change | Kind of change | Why it was needed |
 | --- | --- | --- | --- |

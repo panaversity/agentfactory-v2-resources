@@ -44,7 +44,7 @@ Fill in `worksheets/ai-vendor-run.md` as you go. For every task, it has a place 
 While you work:
 
 - If the AI asks a question, answer briefly. Ignore its offers to do more.
-- After it answers, asking how it got there is fine. If it then corrects itself, write that down. Correcting it yourself, or asking for more, is not.
+- After it answers, asking how it got there is fine. If it then corrects itself, write that down: the score counts its first answer. Correcting it yourself, or asking for more, is not allowed.
 - Your briefs can use anything you have learned so far.
 - If your own check finds a mistake, write it down. Leave the AI's work as it is, and hand it over with your note. You fix your briefs after you check your answers.
 
@@ -55,7 +55,7 @@ While you work:
 
 1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds one folder, `brightline-lab-ch01`:
    - `LAB.md`, this page as a file, and `README.md`
-   - `inputs.zip`: `invoices`, a folder of 15 PDFs, each named the way its vendor sent it, and `purchase-orders.csv`, the purchase-order (PO) list from purchasing
+   - `inputs.zip`: one folder, `inputs`, with `invoices` (15 PDFs, each named the way its vendor sent it) and `purchase-orders.csv`, the purchase-order (PO) list from purchasing
    - `worksheets`, the two files you fill in
 2. Give the AI only `inputs.zip`. Never upload the other files in the folder. To check the AI's work yourself, open `inputs.zip` on your computer.
 3. When you start Task 1, open a new conversation in Claude or ChatGPT. Do Tasks 1 to 5 in that one conversation.
@@ -115,8 +115,8 @@ While you work:
 ## Check your answers (15 minutes)
 
 1. Open [the answer key for Tasks 1 to 5](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md). Score your first run with the score sheet at the top: one point for each check it passes.
-2. If you passed all 10, your first briefs are your final briefs. Do the optional test below, then go on to Task 6. Otherwise, for each check you missed, decide what to change: your brief, or what you did. Write your fixed briefs under Run 2 in your worksheet.
-3. Open a new conversation. Send your five briefs again, one task at a time, with `inputs.zip` in the first message. Ask the files question again, and open the new spreadsheet. You do not need to ask how it got there this time.
+2. If you passed all 10, your first briefs are your final briefs. Do the optional test below, then go on to Task 6. Otherwise, for each check you missed, decide what to change: your brief, or what you did. Under Run 2 in your worksheet, write all five briefs, fixed or not.
+3. Open a new conversation. Send the five briefs from Run 2, one task at a time, with `inputs.zip` in the first message. Ask the files question again, and open the new spreadsheet. You do not need to ask how it got there, or do your own check, this time.
 4. Score this second run the same way. Its five briefs are your final briefs. For a check that still fails, note what you would change.
 
 **Optional, if your first run scored 10 (5 minutes).** In a new conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one, under "Optional" in your worksheet.
