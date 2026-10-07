@@ -9,7 +9,7 @@ Measured by Maria over the five Thursdays in October 2026. Average 150 minutes. 
 | 3 | Mark which ones need Dave's approval | Maria | 15 |
 | 4 | Check for duplicates against earlier invoices | Maria | 30 |
 | 5 | Check her SSoR record for open vendor requests, and hold what policy says to hold | Maria | 20 |
-| 6 | Write the pre-run note: the run list, totals, approvals needed, holds, duplicates, questions | Maria | 35 |
+| 6 | Write the pre-run note: the run list, including invoices that still need approval, totals, approvals needed, holds, duplicates, questions | Maria | 35 |
 | 7 | Read the note again and correct it | Maria | 15 |
 | 8 | Send it to Dave | Maria | 0 |
 | 9 | Approve the run from his own login, on Thursday afternoon | Dave | not counted |

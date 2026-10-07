@@ -1,6 +1,6 @@
 # Eight things a standing AP Worker might do on its own
 
-Nobody asked for any of these. For each, name the step on the initiative ladder (notice, suggest, draft or act), and say what the rule should be: allowed freely, allowed into a drafts place only, or for an act, one of "without asking," "if pre-approved," "ask first," or "hand to a person." Give a reason.
+Nobody asked for any of these. For each, name the step on the initiative ladder (notice, suggest, draft or act), and say what the rule should be: allowed freely, allowed into a drafts place only, not allowed (suggest it instead), or for an act, one of "without asking," "if pre-approved," "ask first," or "hand to a person." Give a reason.
 
 1. It notices that Northern Maple has sent three invoices in two weeks, and says so in the Thursday note.
 2. It writes a reply to Lakeshore saying the second copy of invoice 5155 was received, and saves it in its drafts folder.

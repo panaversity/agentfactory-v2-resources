@@ -1,12 +1,12 @@
 # Lab 09: Put one AP job on a schedule
 
-**Time:** about 3 hours of active work.
+**Time:** about seven and a half hours of active work, in three or four sittings.
 **You produce:** `results/gates.md`, `results/delegation-map.md`, `workspace/standing-spec.md`, `ssor/ap-matters.md`, `results/week-run-log.md` and the five notes, `workspace/examples/2026-11-12/`, `workspace/initiative-rules.md`, `results/schedule-settings.md` (or `results/transfer-plan.md`), `results/note-to-dave.md`, `role/ap-worker-role-contract.md` (Draft 6), and `results/my-job.md`, one job from your own field.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts B and C also use one fresh chat each, Part D uses five fresh chats, and Part F uses a scheduled task on each AI vendor. Keep your work in this folder, not only in a chat: it is yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make the gate decisions and write the map, the spec, the rules and the note, and it writes your answers down. The runs in Part D still happen in fresh chats, and you set up Part F's scheduled tasks yourself, in your own accounts.
-**You need:** for Parts B to D, a Claude or ChatGPT account whose chats accept attached files or pasted text. For Part F, scheduled tasks: on Claude, a paid plan; on ChatGPT, any plan, though the Free plan runs a task at most once a day. With only one AI vendor, see Part F.
+**You need:** for Parts B to D, a Claude or ChatGPT account whose chats accept attached files or pasted text. For Part F, scheduled tasks: on Claude, a paid plan; on ChatGPT, any plan, though on the Free plan a task runs at most once a day, in a flexible window such as morning, not at an exact time. A ChatGPT task reads files on your computer only in the desktop app. With only one AI vendor, see Part F.
 **You do not need:** code, a server, a connector or any company system. Everything is in this folder.
-**Before you start:** never paste real company data into these chats. Everything here is invented.
+**Before you start:** never paste real company data into these chats. Everything here is invented. Make four empty folders in this folder for your work: `results`, `workspace`, `ssor` and `role`.
 
 Open each file only when a step names it. Open a file in `answer-key/` only when a Part tells you to. Most files you write start from a file in `templates/`.
 
@@ -18,41 +18,41 @@ On Thursday, November 19, the run listed a Tri-County invoice as ready to pay wh
 
 In this lab you take Maria's role and rebuild the job from the start. You test the new design on November 12 and 19 again, and on the next Thursday, November 26.
 
-## Part A. Predict: three gates (15 minutes)
+## Part A. Predict: three gates (40 minutes)
 
 *Where:* In this folder.
 
 Copy `templates/gates-template.md` to `results/gates.md`.
 
 1. Run the five jobs in `inputs/candidate-jobs.md` through the three gates. Give a decision and a reason for each.
-2. Read `inputs/register/register-2026-11-19.csv` and `inputs/ssor/updates-2026-11-13-to-18.md`. Predict what a fresh run would miss on November 19 if it read only the register and the concepts.
+2. Read `inputs/register/register-2026-11-19.csv` and `inputs/ssor/updates-2026-11-13-to-18.md`. Predict what a fresh run would miss on November 19 if it read only the register and the five concepts in `inputs/ksor/`.
 
 Then open `answer-key/gates-key.md` and score the gates and your prediction with section 1 of `rubric.md`. Keep your prediction as it is: Part E compares it with the runs.
 
 *You save:* `results/gates.md`.
 
-## Part B. Map the review (20 minutes)
+## Part B. Map the review (45 minutes)
 
 *Where:* In this folder, and one fresh chat in Claude or ChatGPT.
 
-1. Copy `templates/delegation-map-template.md` to `results/delegation-map.md`. Map every step in `inputs/thursday-review-today.md`: who does each one next, and what supports it.
-2. Use the AI as your analyst. In a fresh chat, paste `inputs/thursday-review-today.md` and ask the AI to interview you, one question at a time, about what each step needs and who answers for it. Use its questions to check your map. The answers are yours: the AI only asks.
+1. Copy `templates/delegation-map-template.md` to `results/delegation-map.md`. Map every step in `inputs/thursday-review-today.md`, and fill in every column: who does it next, what supports it, and the rest.
+2. Use the AI as your analyst. In a fresh chat, paste `inputs/thursday-review-today.md` and ask the AI to interview you, one question at a time, about what each step needs and who answers for it. Use its questions to check your map. Stop after about six questions, or sooner if its questions stop changing your map. The answers are yours: the AI only asks.
 3. Open `answer-key/delegation-map-key.md` and score your map with section 1 of `rubric.md`.
 
 *You save:* `results/delegation-map.md`.
 
-## Part C. Write the standing spec (25 minutes)
+## Part C. Write the standing spec (60 minutes)
 
 *Where:* In this folder, and one fresh chat.
 
-1. Copy `templates/standing-spec-template.md` to `workspace/standing-spec.md` and write it. Write for a run that starts fresh and has never heard of Brightline. If you saved `briefs/payment-run-brief-v2.md` in Lab 05, open it too. Chapter 5 said this chapter would put it on a schedule, and this spec is how: keep the lines that still hold, and add what a run that starts fresh needs.
-2. In a fresh chat, give the AI your spec and ask: "Where could a run that starts fresh go wrong with this?" Fix what you agree with.
-3. Open `answer-key/standing-spec-key.md` and score your spec with section 2 of `rubric.md`. Fix the spec before you go on. Never write this week's answers into the spec, such as which invoice to hold: a spec that names them passes the runs without being clear.
-4. Copy `inputs/ssor/ap-matters-2026-11-12.md` to `ssor/ap-matters.md`. From now on, this is the record. You keep it by hand, and you play the record's part: you assign each new entry its origin, whatever the run proposes.
+1. Copy `inputs/ssor/ap-matters-2026-11-12.md` to `ssor/ap-matters.md`. From now on, this is the record, and your spec tells each run to read it. You keep it by hand, and you play the record's part: you assign each new entry its origin, whatever the run proposes.
+2. Copy `templates/standing-spec-template.md` to `workspace/standing-spec.md` and write it. Write for a run that starts fresh and has never heard of Brightline. If you saved `briefs/payment-run-brief-v2.md` in Lab 05, open it too. Chapter 5 said this chapter would put it on a schedule, and this spec is how: keep the lines that still hold, and add what a run that starts fresh needs.
+3. In a fresh chat, paste your spec and ask: "Where could a run that starts fresh go wrong with this?" Fix at most three points you agree with: a run reads the whole spec every time, so keep it short.
+4. Open `answer-key/standing-spec-key.md` and score your spec with section 2 of `rubric.md`. Fix the spec before you go on. Never write this week's answers into the spec, such as which invoice to hold: a spec that names them passes the runs without being clear.
 
 *You save:* `workspace/standing-spec.md` and `ssor/ap-matters.md`.
 
-## Part D. Run three Thursdays (45 minutes)
+## Part D. Run three Thursdays (60 minutes)
 
 *Where:* In five fresh chats, one for each run.
 
@@ -60,9 +60,9 @@ Each run is a fresh chat, as a scheduled run would be. Each chat is fresh and ca
 
 In each chat, paste the spec as the first message, attach the files listed, and ask: "Today is Thursday, November 12, 2026. Run the Thursday pre-run review." Use each run's own date. A chat knows the real date, and a good spec stops when the register is not dated today. If your plan limits uploads, as ChatGPT's Free plan does (3 files a day), paste each file's text instead, under its file name.
 
-Copy `templates/run-log-template.md` to `results/week-run-log.md` and fill it in as you go. Save each run's note in `results/`, such as `results/note-2026-11-12.md`.
+Copy `templates/run-log-template.md` to `results/week-run-log.md` and fill it in as you go. Save each run's note in `results/`: `note-2026-11-12.md`, `note-2026-11-19-2a.md`, `stop-test-2026-11-19.md`, `note-2026-11-19-2b.md` and `note-2026-11-26.md`.
 
-1. **Run 1, November 12.** Your spec, the five concepts in `inputs/ksor/`, `inputs/register/register-2026-11-12.csv` and `ssor/ap-matters.md`. Save the note. Check the entries it proposes, then add them to `ssor/ap-matters.md` with origin "inferred." Then add the entries in `inputs/ssor/updates-2026-11-13-to-18.md`, exactly as they are.
+1. **Run 1, November 12.** Your spec, the five concepts in `inputs/ksor/`, `inputs/register/register-2026-11-12.csv` and `ssor/ap-matters.md`. Save the note. Check the entries it proposes, then add them to `ssor/ap-matters.md` with origin "inferred." Add only entries for the payment-run matter the run opens and for matters still open: people open every other matter. Then add the entries in `inputs/ssor/updates-2026-11-13-to-18.md`, exactly as they are.
 2. **Run 2A, November 19, Maria's original spec.** Use `inputs/original-spec-2026-11-09.md`, the spec that was running that week, not yours, with the five concepts and `register-2026-11-19.csv` only. Save the note. Add nothing from this run to the record.
 3. **Stop test, November 19, your spec without the record.** Your spec, the five concepts and `register-2026-11-19.csv` only. A good spec makes the run stop and report the missing record. Add nothing to the record.
 4. **Run 2B, November 19, with the record.** Your spec, the five concepts, `register-2026-11-19.csv` and `ssor/ap-matters.md`. Save the note, check and add its entries, then add the entries in `inputs/ssor/updates-2026-11-19-to-25.md`.
@@ -72,25 +72,25 @@ Never attach `answer-key/`, your predictions or anything else from `results/` to
 
 *You save:* `results/week-run-log.md` and the five notes.
 
-## Part E. Investigate (15 minutes)
+## Part E. Investigate (40 minutes)
 
 *Where:* In this folder.
 
-1. Only now, open `answer-key/week-notes-key.md`. Score Runs 1, 2B and 3 and the stop test with section 3 of `rubric.md`, in the run log.
+1. Only now, open `answer-key/week-notes-key.md`. Score Runs 1, 2B and 3 and the stop test with section 3 of `rubric.md`, in the run log. A scored run under 5 points does not pass: fix the spec and run that week again.
 2. For each miss, name the cause: the spec, the inputs, the record or the worker. Compare Run 2A with Run 2B, and write one sentence on what changed. Compare both with your prediction from Part A.
-3. Save a complete example in `workspace/examples/2026-11-12/`: `register-2026-11-12.csv`, `ap-matters-2026-11-12.md`, the five concepts, a copy of your spec with its date, and Run 1's part of `answer-key/week-notes-key.md`. That is the spec's first example with a known answer. Run it again whenever you change the spec.
+3. Save a complete example in `workspace/examples/2026-11-12/`: `register-2026-11-12.csv`, `ap-matters.md` copied from `inputs/ssor/ap-matters-2026-11-12.md`, the five concepts, your spec as `standing-spec-2026-11-12.md`, and Run 1's part of `answer-key/week-notes-key.md`. That is the spec's first example with a known answer. Run it again whenever you change the spec.
 4. Check your record against `answer-key/ssor-key.md`.
 
 *You save:* the scores and causes in `results/week-run-log.md`, and `workspace/examples/2026-11-12/`.
 
-## Part F. Modify: initiative, a real schedule and the port (35 minutes)
+## Part F. Modify: initiative, a real schedule and the port (150 minutes)
 
 *Where:* In this folder, then a scheduled task on each AI vendor.
 
 1. Copy `templates/initiative-rules-template.md` to `workspace/initiative-rules.md`. Grade the eight cases in `inputs/initiative-cases.md`, and write the standing rules. Then open `answer-key/initiative-key.md` and score them with section 4 of `rubric.md`.
 2. Add a line to your spec's Never section for anything the initiative cases showed you had missed.
-3. Create the Thursday review as a real scheduled task on one AI vendor, using your spec, with nothing connected but what the spec names. `sources.md` lists the help pages. Copy `templates/schedule-settings-template.md` to `results/schedule-settings.md` and fill it in. Run the task once by hand to check that it starts.
-4. Set a deadline check outside the run, such as Maria's 8:15 check of the notes folder, and test it: set a temporary check a few minutes ahead, expect a test note with a unique file name, such as `note-test-1.md`, hold that note back, and confirm that the check notices it is missing. Record the result, then pause the task.
+3. Make a new folder, `ap-thursday`, outside this lab folder. Copy into it the files your spec names, with the same names, and an empty folder for the notes. Create the Thursday review as a real scheduled task on one AI vendor, using your spec, connected to `ap-thursday` only, never to this folder: this folder holds the answer keys. On ChatGPT, a task reads a folder on your computer only in the desktop app, while the computer is on and the app is running. `sources.md` lists the help pages. Copy `templates/schedule-settings-template.md` to `results/schedule-settings.md` and fill it in. Run the task once by hand to check that it starts. If it stops because the register is not dated today, that is your exit working: record it.
+4. Set a deadline check outside the run, such as Maria's 8:15 check of the notes folder, and test it: set the check a few minutes ahead, such as a phone timer that tells you to look in the notes folder, expect a test note with a unique file name, such as `note-test-1.md`, hold that note back, and confirm that the check notices it is missing. Record the result, then pause the task.
 5. **Port it.** Put the same job on the other AI vendor, with the same spec and no changes to its rules. Run the stop test there: your spec, the five concepts and `register-2026-11-19.csv`, with no SSoR record. Confirm that it stops. Then fill in the port table in `results/schedule-settings.md`: every setting you had to change, and why. Check at least whose identity the job runs under and how approvals work, because those differ between the AI vendors. Pause the task on both AI vendors when you finish.
 6. Open `answer-key/schedule-settings-key.md` and score the schedule and the port with section 4 of `rubric.md`.
 
@@ -98,7 +98,7 @@ Never attach `answer-key/`, your predictions or anything else from `results/` to
 
 *You save:* `workspace/initiative-rules.md` and `results/schedule-settings.md`, or `results/transfer-plan.md`.
 
-## Part G. Make (15 minutes)
+## Part G. Make (55 minutes)
 
 *Where:* In this folder.
 

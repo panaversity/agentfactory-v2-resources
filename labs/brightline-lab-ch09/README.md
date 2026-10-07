@@ -15,7 +15,7 @@ The five concepts are Brightline's approved AP concepts, in the format of the op
 | `inputs/dave-request.md` | What Dave wants |
 | `inputs/original-spec-2026-11-09.md` | Maria's original instructions, for Run 2A only |
 | `inputs/ksor/` | The five approved AP concepts |
-| `inputs/register/` | The accounting system's export of invoices for each Thursday |
+| `inputs/register/` | The accounting system's export of invoices for each Thursday. Each invoice's status is open, paid or held |
 | `inputs/ssor/ap-matters-2026-11-12.md` | The SSoR record of AP matters, kept by hand, as of November 12 |
 | `inputs/ssor/updates-*.md` | Entries people added between runs |
 | `inputs/initiative-cases.md` | Eight things a standing worker might do on its own, for Part F |

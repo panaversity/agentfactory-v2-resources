@@ -8,7 +8,7 @@
 | 4. Approve small runs | | | | | |
 | 5. Ohio Valley's 2024 credit | | | | | |
 
-Decisions to choose from: use the ordinary tool, solve it once, keep it in a conversation each time, recurring work, not for a worker at all.
+Decisions to choose from: use the ordinary tool, solve it once, keep it in a conversation each time, recurring work, not for a worker at all. *Solve it once:* it comes up once. *Keep it in a conversation each time:* it comes back, but one of Gate 2's dials is down.
 
 ## Prediction
 

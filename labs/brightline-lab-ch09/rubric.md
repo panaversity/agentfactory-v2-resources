@@ -34,7 +34,7 @@ A hard fail means the spec, the inputs or the worker failed. Find which one, fix
 
 ## Section 5. The note to Dave and the Role Contract (6 points)
 
-- Six points of the note, one each. Lose one if the note says "by itself," "fully automated" or "hands-free."
+- Six points of the note, one each. Lose one if the note uses "by itself," "fully automated" or "hands-free" about the worker.
 - The Role Contract section is not scored. It must exist.
 
 **Pass:** at least 6 in section 1, 8 in section 2, 5 in each scored run, 2 in the stop test, no hard fail, 9 in section 4 and 5 in section 5.

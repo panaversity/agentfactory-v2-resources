@@ -1,6 +1,6 @@
 # Standing spec: Thursday pre-run review
 
-The run reads this file every time. Write it so that a fresh run, with no chat history, does the job right.
+The run reads this file every time. Write it so that a fresh run, with no chat history, does the job right, and keep it short.
 
 ## Job
 <one sentence>
@@ -12,10 +12,10 @@ The run reads this file every time. Write it so that a fresh run, with no chat h
 <each file the run must have. Say what to do if one is missing.>
 
 ## Read first
-<the SSoR record: which matters to read before anything else>
+<the SSoR record: which matters to read before anything else, open or closed>
 
 ## Rules
-<which concepts apply. How to cite them. What to do when no concept covers a case.>
+<which concepts apply. How to cite them, so a reader can tell which approved version a run used. What to do when no concept covers a case.>
 
 ## State
 <what the register is, as of when. What the SSoR record is and is not.>
