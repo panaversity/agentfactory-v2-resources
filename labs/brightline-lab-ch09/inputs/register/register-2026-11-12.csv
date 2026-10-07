@@ -1,0 +1,7 @@
+invoice_id,vendor,vendor_invoice_no,invoice_date,received_on,amount,currency,due_date,status,approval_recorded,paid_on
+5201,Buckeye Office Supply,BO-23188,2026-10-17,2026-10-19,1240.50,USD,2026-11-16,open,,
+5202,Northern Maple Lumber,NM-7731,2026-10-19,2026-10-21,8400.00,CAD,2026-11-18,open,,
+5203,Tri-County Freight,TCF-0419,2026-10-20,2026-10-22,6320.00,USD,2026-11-19,open,,
+5204,Lakeshore Packaging,LP-5520,2026-11-04,2026-11-04,980.00,USD,2026-12-04,open,,
+5205,Ohio Valley Janitorial,OVJ-311,2026-10-14,2026-10-15,415.00,USD,2026-11-13,open,,
+5206,Buckeye Office Supply,BO-23190,2026-10-19,2026-10-20,2975.00,USD,2026-11-18,open,,
