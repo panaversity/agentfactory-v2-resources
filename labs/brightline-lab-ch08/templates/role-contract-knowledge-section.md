@@ -1,6 +1,6 @@
 # AP Worker Role Contract, Draft 5: knowledge section
 
-The rest of the Role Contract is unchanged from Draft 4, your Chapter 7 draft. If you do not have one, write one line for each other part: identity, mission, responsibilities, skills, tools, authority, channels, runtime needs and evaluation criteria.
+The rest of the Role Contract is unchanged from Draft 4, your Chapter 7 draft. If you do not have one, write only this section.
 
 **Knowledge sources:** <the five concepts, by title>
 **Knowledge owner and approver:** <name and role>

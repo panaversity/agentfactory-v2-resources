@@ -24,4 +24,4 @@ A change to a vendor's remittance details or contact email also needs the contro
 
 [^ap-policy-v3-s5]: AP Policy version 3, clauses 5.1 to 5.3 and 5.5.
 
-Note for the lab: clause 5.5 sits apart from 5.1 to 5.3, but this rule depends on it. A concept that leaves it out tells the worker a procedure is complete when it is not.
+Note for the lab: clause 5.5 sits apart from 5.1 to 5.3, but this rule depends on it. A concept that leaves it out tells the worker a procedure is complete when it is not. A concept that also carries clause 5.4, which keeps the vendor record's phone number from changing because of an email, is right too.

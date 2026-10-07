@@ -28,3 +28,26 @@
 **Hard fails, if any:**
 
 **What you would change in the concepts or the instructions:**
+
+**Your predictions from Part A, compared with the runs:**
+
+## Answers
+
+Paste each answer here, numbered, under its run.
+
+## Questions asked again
+
+| When | Question | Run 1 | Run 2 |
+| --- | --- | --- | --- |
+| Part E, after the change | 9 | | |
+| Part F, after the SSoR record | 7 | | |
+
+## Scores for the whole lab
+
+| Section of `rubric.md` | Part | Score |
+| --- | --- | --- |
+| 1. The five concepts | B | /10 |
+| 2. Project instructions | D | /6 |
+| 3. Each run | D | Run 1 /10, Run 2 /10 |
+| 4. The change | E | /4 |
+| 5. The SSoR record | F | /4 |

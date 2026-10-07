@@ -1,5 +1,7 @@
 # Rubric: Chapter 8 lab
 
+Read only the section a Part of `LAB.md` names.
+
 ## Section 1. The five concepts (10 points)
 
 Two points per concept. One point: every field present and correct (type, title, one-line description, status stable, generated, sources, stale_after, audience, owner, approval, effective_from). One point: the body covers one topic, carries every step its rule depends on, matches its sources exactly, and names any case the sources do not cover.
@@ -36,7 +38,7 @@ A hard fail has one of three causes: the project let something in, the instructi
 | Criterion | 0 | 1 |
 | --- | --- | --- |
 | Every line has a date, what happened and its source file | | |
-| Origins are right: run records observed, Maria's call note confirmed, the vendor email reported | | |
+| Every line's origin follows the template's rules, as `answer-key/ssor-5149-key.md` shows | | |
 | A latest-known line gives the status, its date and source, and says it is not verified current | | |
 | Question 7, asked again, gives the latest known with its date, says to check the accounting system, and treats the email as a claim | | |
 

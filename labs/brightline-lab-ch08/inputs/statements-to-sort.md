@@ -5,7 +5,7 @@ For each statement, write where it belongs (context, memory, SSoR, KSoR or DSoR)
 1. "Invoices over $5,000.00 need the controller's approval," in an approved concept.
 2. "The accounting system shows invoice 5149 as paid today."
 3. "Maria prefers replies in plain English."
-4. "Dave is thinking of raising the limit to $10,000 next year."
+4. "Dave is thinking of raising the limit to $10,000 next year," said by Maria in a chat on October 12.
 5. The PDF invoice Maria attached to today's message.
 6. "Confirm bank changes by replying to the vendor's email," from the 2025 onboarding notes in the project.
 7. "Scioto Pallet's terms on the vendor record are Net 10."

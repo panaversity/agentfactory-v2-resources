@@ -7,7 +7,7 @@ Northern Maple sends invoices in Canadian dollars, and the policy did not cover 
 
 > From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount.
 
-Maria, add it to the invoice approval threshold concept as one new sentence, with this note as its source. Do not start a new concept. Send me the edited concept. I will read it and record my approval.
+Maria, add it to the invoice approval threshold concept as one new sentence, with this note as its source, and take out any line that says the concept does not cover other currencies. Do not start a new concept. Send me the edited concept. I will read it and record my approval.
 
 When I approve it, the concept takes:
 

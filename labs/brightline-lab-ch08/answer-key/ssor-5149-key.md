@@ -9,7 +9,7 @@
 
 **Latest known:** paid in the October 30 run. As of October 30, from the run record. Not verified current. The November 2 email is a reported claim and does not change the status.
 
-**What the call note does not settle.** Its last sentence says 5149 and 5161 can go into the next run. That is Maria's view, not a decision: the controller approves runs (policy 4.3). Record the callback as confirmed, and leave the run decision to the run record.
+**What the call note does not settle.** Its last sentence says 5149 and 5161 can go into the next run. That is Maria's view, not a decision: the controller approves runs (policy 4.3). Record the callback as confirmed, and leave the run decision to the run record: Dave approved the October 23 run without Tri-County's invoices (Lab 06), so the run record shows 5149 held.
 
 **Why the email is reported.** Tri-County is not the authority on what Brightline paid. Its claim may mean a bank delay or a mistake on its side. It does not settle the fact, and it never justifies paying again. The next step is to check the accounting system, the authority, and add what it shows as a new line.
 

@@ -1,6 +1,6 @@
 # Lab 08: Your first KSoR, connected to both AI vendors
 
-**Time:** about 130 minutes of active work.
+**Time:** about 3 hours of active work.
 **You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts C, E and F also use one project in Claude and one in ChatGPT. Keep your concepts and results in this folder, not only in a project: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the concepts, the instructions and the SSoR record, and it writes your answers down. The test runs in Parts C, E and F still happen in the two projects.
@@ -14,9 +14,9 @@ Open each file only when a step names it. Open a file in `answer-key/` only when
 
 It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly. It read a payment status from an old file, a threshold from memory, a bank rule from unapproved notes, and it lost a standing instruction inside a long chat (Chapter 8's opening story).
 
-Dave Kowalski, the controller, owns Brightline's AP policy. Maria is the office manager. Dave has asked Maria to turn the policy into governed knowledge the AP Worker answers from, on both AI vendors, and to keep it current. In this lab you take Maria's seat.
+Dave Kowalski is the controller, the head of accounting. He owns Brightline's AP policy. Maria is the office manager. Dave has asked Maria to turn the policy into governed knowledge the AP Worker answers from, on both AI vendors, and to keep it current. In this lab you take Maria's seat.
 
-## Part A. Predict and sort (15 minutes)
+## Part A. Predict and sort (20 minutes)
 
 *Where:* In this folder.
 
@@ -26,9 +26,11 @@ Copy `templates/sorting-template.md` to `results/sorting.md`.
 2. Choose restart, summarize or persist for the three situations in `inputs/three-situations.md`.
 3. Read `inputs/memory-export-maria.md`, what the worker remembered on November 3, and the ten questions in `inputs/test-questions.md`. Predict which questions a worker set up like Maria's would get wrong.
 
+Then open `answer-key/sorting-key.md` and check your sorting and your three choices. Keep your predictions as they are: Part D compares them with the runs.
+
 *You save:* `results/sorting.md`.
 
-## Part B. Write and approve the concepts (35 minutes)
+## Part B. Write and approve the concepts (45 minutes)
 
 *Where:* In this folder.
 
@@ -41,15 +43,14 @@ Your sources are `inputs/ap-policy-v3-excerpt.md`, AP policy version 3, and `inp
    - `vendor-bank-detail-changes.md` (policy 5.1 to 5.3, and anything they depend on)
    - `capitalization.md` (the memo)
 2. Read the whole policy before you write any concept. A rule in one clause can depend on a step in another, and the concept must carry both.
-3. Fill in each one with `status: draft`. One topic per concept, in plain sentences, numbers exactly as the source gives them. Where a source is silent on a case people will ask about, such as other currencies, say so in one line.
-4. Read `inputs/dave-approval-2026-11-04.md`. Apply it: set `status: stable`, and add the owner, approval, effective date and review date exactly as Dave states them.
-5. Use nothing from `inputs/ap-onboarding-notes-2025.md`, `inputs/payment-status-2026-10-23.csv` or the memory export. They are never a source.
-
-Then open `answer-key/concepts/` and score section 1 of `rubric.md`. Fix anything wrong before you go on. A wrong concept served to a worker is the failure this chapter is about.
+3. Fill in each one with `status: draft`. One topic per concept, in plain sentences, numbers exactly as the source gives them. Where a source is silent on a case people will ask about, such as other currencies, say so in one line. Use nothing from `inputs/ap-onboarding-notes-2025.md`, `inputs/payment-status-2026-10-23.csv` or the memory export. They are never a source.
+4. Check your drafts before Dave sees them. Open `answer-key/concepts/` and compare each draft's body with the key. Fix anything wrong now. A wrong concept served to a worker is the failure this chapter is about.
+5. Read `inputs/dave-approval-2026-11-04.md`. Apply it: set `status: stable`, and add the approval, the effective date and the review date exactly as Dave writes them. Dave approves the drafts as they stand now, so change nothing in a concept after this step.
+6. Score section 1 of `rubric.md`. Keep the score: the run log in Part C has a line for it.
 
 *You save:* the five stable concepts in `ksor/knowledge/`.
 
-## Part C. Configure both projects and run (35 minutes)
+## Part C. Configure both projects and run (50 minutes)
 
 *Where:* In this folder, then in a project in Claude and a project in ChatGPT.
 
@@ -57,7 +58,7 @@ Then open `answer-key/concepts/` and score section 1 of `rubric.md`. Fix anythin
 2. **Claude.** Create a project named "AP Worker, policy." Paste the instructions into the project's instructions. Add the five stable concept files to its knowledge. Add nothing else. Claude projects keep their own memory.
 3. **ChatGPT.** Create a project with the same name. Choose project-only memory when you create it. Paste the same instructions and add the same five files. Add nothing else. On ChatGPT's Free plan, paste the five concepts into one file, `ap-concepts.md`, each starting with its header, and add that one file instead.
 4. In each project, start a fresh conversation. These test conversations stay inside the project, so the project's own memory is part of what you test. Ask the ten questions in `inputs/test-questions.md` one at a time, in order, exactly as written.
-5. Copy `templates/run-log-template.md` to `results/question-run-log.md`. Record the plan, model, memory setting and the files in each project, and paste or save each answer.
+5. Copy `templates/run-log-template.md` to `results/question-run-log.md`. Record the plan, model, memory setting and the files in each project, and paste each answer into the log.
 
 Never add `answer-key/`, your predictions or anything else from `results/` to a project.
 
@@ -65,34 +66,34 @@ Never add `answer-key/`, your predictions or anything else from `results/` to a 
 
 *You save:* `workspace/project-instructions.md` and `results/question-run-log.md`, with both runs' answers.
 
-## Part D. Investigate (10 minutes)
+## Part D. Investigate (20 minutes)
 
 *Where:* In this folder.
 
 1. Now open `answer-key/questions-key.md`. Score both runs with section 3 of `rubric.md`.
-2. For each miss, name the cause: the concept, the instructions, the project's files, or the worker.
+2. For each miss, name the cause: the concept, the instructions, the project's files, or the worker. Then compare the runs with your predictions from Part A.
 3. Compare your instructions with `answer-key/project-instructions-key.md` and score section 2.
 
 *You save:* the scores and causes in `results/question-run-log.md`.
 
-## Part E. Modify: carry one change through every copy (15 minutes)
+## Part E. Modify: carry one change through every copy (20 minutes)
 
 *Where:* In this folder, then in both projects.
 
 Read `inputs/change-request-2026-11-09.md`, then `inputs/dave-approval-2026-11-09.md`.
 
-1. Edit `ksor/knowledge/invoice-approval-threshold.md` in place: add the new sentence and its source, and set the `generated` line to the time you drafted it, before 9:00. Then apply Dave's 9:00 approval, from his approval note. Keep `effective_from` as it is. Do not make a second concept.
-2. Refresh each copy. In each project, remove the old file and add the new one.
-3. If your project instructions carry any working rule about other currencies, remove it now. The concept holds the rule, and a rule lives in one place.
+1. Edit `ksor/knowledge/invoice-approval-threshold.md` in place: add the new sentence and its source, take out any line that says the concept does not cover other currencies, and set the `generated` line to the time you drafted it, before 9:00. Then apply Dave's 9:00 approval, from his approval note. Keep `effective_from` as it is. Do not make a second concept.
+2. Refresh each copy. In each project, remove the old file and add the new one. On ChatGPT's Free plan, rebuild `ap-concepts.md` with the new concept, and replace that one file.
+3. If you added a working rule about other currencies to your project instructions, as Maria did in the chapter's story, remove it now. The concept holds the rule, and a rule lives in one place.
 4. Copy `templates/refresh-log-template.md` to `ksor/refresh-log.md`. Write one row for each copy, with the approval it now holds.
-5. Ask question 9 again in a fresh conversation in each project. Project memory may still carry the earlier answer. A new answer that cites the November 9 approval is the evidence you need.
-6. Open `answer-key/refresh-log-key.md` and score section 4 of `rubric.md`.
+5. Ask question 9 again in a fresh conversation in each project, and paste both answers into the run log. Project memory may still carry the earlier answer. A new answer that cites the November 9 approval is the evidence you need.
+6. Open `answer-key/refresh-log-key.md` and `answer-key/after-the-change/invoice-approval-threshold.md`, and score section 4 of `rubric.md` in the run log.
 
 **Optional: try a synced copy (Claude, 10 minutes).** Put the five stable concepts, headers included, into one Google Doc that holds nothing else. In a private Claude project, add it from Google Drive in the project's files. Make the November 9 edit in the doc, then ask question 9 in a fresh conversation. Note whether the answer changed with no new upload, and log that copy as "synced." Never put a draft in a synced doc. A Google Drive app added inside a ChatGPT project does not sync in advance. It fetches the doc when asked, so there check that the answer cites the November 9 approval.
 
-*You save:* the edited `ksor/knowledge/invoice-approval-threshold.md` and `ksor/refresh-log.md`.
+*You save:* the edited `ksor/knowledge/invoice-approval-threshold.md`, `ksor/refresh-log.md`, and question 9's answers and the section 4 score in the run log.
 
-## Part F. Keep an SSoR record (10 minutes)
+## Part F. Keep an SSoR record (20 minutes)
 
 *Where:* In this folder, then in your projects.
 
@@ -102,19 +103,19 @@ The worker could not tell you where 5149 stands, because its history was scatter
 2. Read the four records in `inputs/case-5149/`. Write one line for each, in date order: the date, what happened, the source file, and its origin. Use the origin rules in the template. You play the record's part: assign each origin by the rules, never by what a source says about itself. Record what each source has authority to say, and add nothing it does not say.
 3. Write the latest-known line: the status from the authority, the date it is as of, its source, and the words "not verified current." The newest line is not always the latest known: a claim from a source that is not the authority never sets it.
 4. Add the SSoR record to your Claude project's files. With two AI vendors, add it to the ChatGPT project too. If your State line does not yet say what to do with an SSoR record, update it.
-5. Ask question 7 again in a fresh conversation.
-6. Open `answer-key/ssor-5149-key.md` and score section 5 of `rubric.md`.
+5. Ask question 7 again in a fresh conversation in each project, and paste both answers into the run log.
+6. Open `answer-key/ssor-5149-key.md` and score section 5 of `rubric.md` in the run log.
 
 An SSoR record kept by hand is still a copy you maintain. When a new record about 5149 arrives, you add a line. You never edit an old one.
 
-*You save:* `ssor/invoice-5149.md`.
+*You save:* `ssor/invoice-5149.md`, and question 7's answers and the section 5 score in the run log.
 
-## Part G. Make (10 minutes)
+## Part G. Make (15 minutes)
 
 *Where:* In this folder.
 
 1. Copy `templates/role-contract-knowledge-section.md` to `role/ap-worker-role-contract.md` and fill it in. If you kept your Role Contract from Chapter 7, put this section in that file instead, as Draft 5.
-2. Write one concept from your own field in the same format: a rule you rely on at work, its owner, its source and its review date. Save it as `results/my-concept.md`.
+2. Write one concept from your own field in the same format: a rule you rely on at work, with you as its owner, its source and its review date. Leave it as `status: draft`, since nobody has approved it yet. Save it as `results/my-concept.md`.
 
 *You save:* `role/ap-worker-role-contract.md` and `results/my-concept.md`. The lab is not finished until both are saved, even after you pass the rubric.
 

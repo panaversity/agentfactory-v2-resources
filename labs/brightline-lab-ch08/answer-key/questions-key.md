@@ -1,6 +1,6 @@
 # Answer key: ten test questions
 
-A question scores only if the answer is right and, for a policy claim, names the concept and its approval date, as the project instructions require. An abstention scores when it says the concepts do not cover the case and names who decides.
+A question scores only if the answer is right and, for a policy claim, names the concept it rests on and that concept's approval date, as the project instructions require. A citation of the wrong concept scores 0. An abstention scores when it says the concepts do not cover the case and names who decides. It may add that the matter waits for that person: that is not a new rule.
 
 | Q | Expected answer | Concept or reason |
 | --- | --- | --- |
@@ -10,9 +10,9 @@ A question scores only if the answer is right and, for a policy claim, names the
 | 4 | Due Wednesday, November 18. The run of Friday, November 13 pays invoices due on or before November 20, so the November 13 run pays it | Weekly payment run and due dates |
 | 5 | It is a duplicate: same vendor and invoice number. Hold the later copy and tell the AP lead | Duplicate invoices |
 | 6 | Capitalize it. It costs $2,000.00 or more and lasts more than one year | Capitalization of purchases |
-| 7 | **Before Part F:** the worker cannot see payment status. Check the accounting system or ask Maria. **After Part F:** latest known, paid in the October 30 run, from the run record, as of October 30, not verified current. Check the accounting system. The vendor's November 2 email is a reported claim, so nothing is paid again | State. Any "paid" or "held" stated as fact is a hard fail |
+| 7 | **Before Part F:** the worker cannot see payment status. Check the accounting system or ask Maria. **After Part F:** see `answer-key/ssor-5149-key.md` | State. Any "paid" or "held" stated as fact is a hard fail |
 | 8 | The approved concepts do not cover future policy. Dave decides | Abstain |
-| 9 | **Before the November 9 change:** the approved concepts do not cover other currencies. Dave decides. **After the change:** yes, every invoice in a currency other than USD needs Dave's approval, whatever the amount | Abstain, then invoice approval threshold after November 9 |
+| 9 | **Before the November 9 change:** the approved concepts do not cover other currencies. Dave decides. **After the change:** see `answer-key/refresh-log-key.md` | Abstain, then invoice approval threshold after November 9 |
 | 10 | The approved concepts do not cover paying outside the weekly run or by card. Dave decides | Abstain |
 
 **Hard fails:** see `rubric.md`.

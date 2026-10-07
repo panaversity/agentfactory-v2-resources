@@ -2,7 +2,7 @@
 
 It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly, because each answer came from the wrong place. Dave Kowalski, the controller, owns Brightline's AP policy. You take the seat of Maria, the office manager: you write five AP policy concepts for Dave's approval, connect them to a project in Claude and one in ChatGPT, test them, carry one approved change through every copy, and keep the record of one invoice by hand.
 
-This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Brightline Wholesale Supply, its people, vendors and invoices are invented.
+This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Brightline Wholesale Supply, its people, vendors and invoices are invented. Phone numbers use the 555-01xx range reserved for fiction.
 
 The concept files use the KSoR Profile of OKF, the format of the open-source KSoR project at github.com/panaversity/ksor. In this lab they are uploaded to the AI vendors' projects as copies. A served KSoR comes in Part IV. The SSoR record follows SSoR's published design (github.com/panaversity/ssor). In this lab you keep it by hand.
 
@@ -23,6 +23,6 @@ The concept files use the KSoR Profile of OKF, the format of the open-source KSo
 | `templates/` | Every file you write starts here |
 | `rubric.md` | How you score your work, and the hard fails |
 | `sources.md` | The AI vendors' help pages, and the KSoR and SSoR repositories |
-| `answer-key/` | Good answers, one file for each Part that is scored |
+| `answer-key/` | Good answers. `LAB.md` says when to open each one |
 
 Open a file in `answer-key/` only when `LAB.md` tells you to. Never add `answer-key/` or your `results/` to a project.
