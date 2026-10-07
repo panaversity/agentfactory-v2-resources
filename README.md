@@ -15,6 +15,9 @@ You can also download a lab here:
 | 3. The 10-80-10 Operating Rhythm | One task through the whole rhythm | [brightline-lab-ch03.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip) |
 | 4. The Architecture in One Picture | Map the AP Worker onto the picture | [brightline-lab-ch04.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04.zip) |
 | 5. The Four-Part Brief | One brief, two AI vendors | [brightline-lab-ch05.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05.zip) |
+| 6. The Review Contract | Review a run you did not watch | [brightline-lab-ch06.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06.zip) |
+| 7. The Authority Envelope | Draw the envelope, then test it | [brightline-lab-ch07.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07.zip) |
+| 8. Context, Memory, Knowledge and State | Your first KSoR, connected to both AI vendors | [brightline-lab-ch08.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08.zip) |
 
 Chapter 1's answers are in [`labs/brightline-lab-ch01/answers.md`](labs/brightline-lab-ch01/answers.md) for Tasks 1 to 5, and [`answers-tasks-6-7.md`](labs/brightline-lab-ch01/answers-tasks-6-7.md) for Tasks 6 and 7. The book page links each one when it is time to read it. For the other chapters, a lab's `answer-key/` folder holds its answers, and its `LAB.md` tells you when to open it.
 
