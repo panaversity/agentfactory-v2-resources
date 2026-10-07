@@ -1,6 +1,6 @@
 """Build Lab 1's data: 15 invoice PDFs from the text invoices in source/invoices.
 
-Run from anywhere:  python3 labs/brightline-lab/source/build.py
+Run from anywhere:  python3 labs/brightline-lab-ch01/source/build.py
 Needs Google Chrome (to print each invoice to PDF) and pdftotext (to check the result).
 
 Each invoice keeps every field and every number of its text file. Only the look

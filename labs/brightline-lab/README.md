@@ -1,13 +1,25 @@
-# Lab 1: one portable brief, two runtimes
+# Brightline lab: one portable brief, two runtimes
 
-Chapter 1 of *The AI Agent Factory*, Second Edition. The tasks are on the book page, [Build step: one portable brief, two runtimes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/build-step/). Every name, number and company here is invented.
+Lab files for Chapter 1 of The AI Agent Factory, Second Edition.
+Everything the lab needs is in this folder. Every name, number and company here is invented.
 
-| Path | What it is |
-| --- | --- |
-| `data/` | What the book's zip holds, and nothing else: `invoices/`, 15 invoice PDFs, and `purchase-orders.csv`. The release zips this folder as `brightline-lab.zip`. |
-| `answers.md` | The answers. The book page links to it last. |
-| `source/` | How the data is made: the 15 invoices as text, and `build.py`, which prints them as PDFs. This lab's first version, with LAB.md and the old answer key, is in the repository's history. |
+## What is in this folder
 
-Two facts the tasks need are on the book page, not in the data: today's date in the job, September 30, 2026, and Brightline's payment of invoice 4471 on September 25. A learner has to pass them to the AI. That is the point.
+- LAB.md                     The full lab instructions, Parts A to G, with timings and troubleshooting
+- invoices/                  The 15 vendor invoices, invoice-01.txt to invoice-15.txt
+- briefs/                    The portable brief, and a blank port log
+- results/                   Blank results records for the Claude and ChatGPT Work runs
+- role/                      A blank AP work inventory, with one example row
+- answer-key/                The expected register, the three traps, and the scoring rubric
 
-To change an invoice, edit its text file in `source/invoices/` and run `python3 labs/brightline-lab/source/build.py` from the repository's root. It needs Google Chrome, which prints each invoice as a PDF, and `pdftotext`, which checks that every field and number is in the PDF's text. Then check `answers.md` and `data/purchase-orders.csv` against the change.
+## The scenario
+
+The buyer on every invoice is Brightline Wholesale Supply, a fictional distributor of packaging, janitorial and safety supplies in Columbus, Ohio, with about 40 staff. Its office manager needs a register of the 15 vendor invoices received in September, for human review before the payment run.
+
+## How to start
+
+Open LAB.md and follow it in order.
+Write your predictions before you run anything.
+Plan for about 75 minutes of active work, plus one wait of at least a day.
+Do not open answer-key/ until you finish Part D.
+Optional: print each invoice file to PDF to mirror real invoices. If you do, use the PDFs in every run, on both AI vendors.
