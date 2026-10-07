@@ -4,7 +4,7 @@ The second answers file for Chapter 1 of *The AI Agent Factory*, Second Edition:
 
 ## Task 6. The other AI vendor
 
-Did the other AI vendor give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the prompt), a setting (such as permissions, or running code), or how you gave it the files. With only one AI vendor, compare your guess with these kinds. For example, turning on a setting that lets the AI run code or make files is a setting. Uploading the PDFs instead of the zip is how you gave it the files. Adding a line to your prompt is a change to your words.
+Did the other AI vendor give the same answers? Ideally your words did not change. Each change you had to make is one of three kinds: your words (the brief), a setting (such as permissions, or running code), or how you gave it the files. With only one AI vendor, compare your guess with these kinds. For example, turning on a setting that lets the AI run code or make files is a setting. Uploading the PDFs instead of the zip is how you gave it the files. Adding a line to your brief is a change to your words.
 
 What changed in the port belongs to the runtime. What did not change is the specification, and the specification is yours.
 
@@ -18,12 +18,12 @@ If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's 
 
 - **What did your own checks find, before you opened the answers?** A check that caught a mistake, such as the paid 4471 counted again, is the lesson at work: Chapter 1's "Humans verify outcomes".
 - **Did a mistake hide in a part you did not check?** Next time, check where the AI made a choice: which amount, which bills, what counts as a problem.
-- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first prompts left them out, what did the AI do without them? If your first prompts had them, that is why they scored well: what do you think the AI would have done without them?
+- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first briefs left them out, what did the AI do without them? If your first briefs had them, that is why they scored well: what do you think the AI would have done without them?
 - **Did the AI just answer in the chat, or did it do work:** open the zip, run code, make a file? [The same text box](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/same-text-box/), section 1.2 of Chapter 1, explains how it decides. Where did that work run?
 - **Did it check its own work?** Did it open the spreadsheet it made, and did every count in its answers add up?
 - **Did it assume anything you did not tell it,** such as the date of the next payment run? Did it add figures or advice you did not ask for? Is each one right?
 - **Which rung of [the ladder](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/) did you use?** In Tasks 1 to 4 you delegated tasks: that is the agent rung. Your five jobs from Task 5 come back every week or month, so they are roles: the AI Worker rung. One register is a task. A register every week is a role.
-- **Did a fact you added make the AI skip a problem?** For example, once a prompt says 4471-R is a copy, the AI may stop flagging it.
-- **Compare your first prompts with your final ones.** What do the final ones say that the first ones did not?
+- **Did a fact you added make the AI skip a problem?** For example, once a brief says 4471-R is a copy, the AI may stop flagging it.
+- **Compare your first briefs with your final ones.** What do the final ones say that the first ones did not?
 
-Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Your final prompts are a first draft of one.
+Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Each of your final briefs is a first draft of one.

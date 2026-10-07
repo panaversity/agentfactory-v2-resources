@@ -4,7 +4,7 @@ The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portabl
 
 **When to read what.** This file holds Tasks 1 to 5. Read it at the page's "Check your answers" step. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answers-tasks-6-7.md), which the page links after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
 
-**Score yourself:** one point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Score each run the same way: your first prompts, your fixed prompts, and the other AI vendor. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
+**Score yourself:** one point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Score each run the same way: your first briefs, your fixed briefs, and the other AI vendor. A strong run scores 9 or 10. If your first brief already got a task right, that is a finding, not a failure.
 
 Don't fix the AI's output by hand. Write down which checks it missed, and keep them for Chapter 6, which teaches the review contract.
 
