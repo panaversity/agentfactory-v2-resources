@@ -2,7 +2,7 @@
 
 The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Every name, number and company in this lab is invented.
 
-**When to read what.** Read Tasks 1 to 5 at the page's "Check your answers" step. Read Task 6 after Task 6, and Task 7 and "Look back" after Task 7.
+**When to read what.** Read Tasks 1 to 5 at the page's "Check your answers" step. Read Task 6 after Task 6, and Task 7 and "Look back" after Task 7. Read "Worth noting" any time after Task 5.
 
 **Score yourself:** one point for each check you pass, 10 in all. Score each run the same way: your first prompts, your fixed prompts, and the other AI vendor. A strong run scores 9 or 10. If your first prompt already got a task right, that is a finding, not a failure.
 
@@ -11,7 +11,7 @@ Don't fix the AI's output by hand. Write down which checks it missed, and keep t
 ## Task 1. What we owe
 
 1. **Your total leaves out 4471, which is paid, and 4471-R, its copy, and keeps every other bill.** As billed, that is $24,096.98. The table below shows where any other total came from.
-2. **PCS-60214 is flagged for the vendor to confirm before it is paid.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits. In the total of what you owe, either figure is fine.
+2. **In your Task 1 answer, PCS-60214 is flagged for the vendor to confirm before it is paid.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits. In the total of what you owe, either figure is fine.
 3. **LJS-0826 and LJS-0926 are not called copies.** Same cleaning firm and the same $1,200.00, but they cover August and September.
 
 **Where your total came from.** Start from $24,096.98.
@@ -29,10 +29,10 @@ For example, $27,746.98 is $24,096.98 + $4,850.00 − $1,200.00: the AI counted 
 
 ## Task 2. A spreadsheet for Friday
 
-4. **Every bill appears once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. A second column with the lines' total is fine, but the printed total must be there, because it is what the vendor billed.
-5. **All 15 due dates match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
+4. **Every bill appears once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. The printed total is the bill's amount, or it has a column of its own, because it is what the vendor billed. In a note only, it does not count. A second column with the lines' total is fine.
+5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
 6. **You opened the spreadsheet, and you know where it is:** in the chat, or downloaded to your computer.
-7. **Nothing else was changed, sent or deleted.** Working files the AI made are fine if it named them when you asked, "Which files did you create that you did not deliver to me?" If it could not tell you, that is "not established", and no point.
+7. **Nothing else was changed, sent or deleted.** Check what you can see. Working files the AI made are fine if it named them when you asked, "Which files did you create that you did not deliver to me?" If it named files you cannot see, take its word for it, and note that. If it could not tell you, that is "not established", and no point.
 
 | Invoice | Vendor | Dated | Due | Total as printed | From its lines |
 | --- | --- | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ A reviewer will also want to know which file each row came from.
 
 ## Task 4. Match the POs
 
-9. **All four problems are called out,** as problems or with a clear note:
+9. **All four problems are called out, so nobody pays them as billed.** A problem may sit in any list if a note says what is wrong. For 4471-R, a mark such as "duplicate" or "copy of 4471" is enough:
    - 4471-R bills PO 2026-0412 a second time.
    - PCS-60214's printed total is $2,346.00, but its PO and its own lines say $2,364.00.
    - ASP-5507 charges $42.00 a case for gloves. The PO says $40.00. On 80 cases, that is $160.00 over.
@@ -103,17 +103,18 @@ What changed in the port belongs to the runtime. What did not change is the spec
 
 Read this after Task 7. It is not scored: any result is a finding.
 
-If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's Wednesday, from the chapter's opening story. Chapter 1's rule: save anything you need later to a known place, and check that you can get it back.
+If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's Wednesday, from [the chapter's opening story](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/overview/). [Chapter 1's rule](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/): save anything you need later to a known place, and check that you can get it back.
 
 ## Look back
 
 Read this after Task 7.
 
-- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. What did the AI do without them? If your first prompts already had them, this is why they scored well.
-- **Did the AI just answer in the chat, or did it do work:** open the zip, run code, make a file? Section 1.2 of this chapter, the same text box, explains how it decides. Where did that work run?
+- **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first prompts left them out, what did the AI do without them? If your first prompts had them, that is why they scored well: what do you think the AI would have done without them?
+- **Did the AI just answer in the chat, or did it do work:** open the zip, run code, make a file? [The same text box](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/same-text-box/), section 1.2 of Chapter 1, explains how it decides. Where did that work run?
 - **Did it check its own work?** Did it open the spreadsheet it made, and did every count in its answers add up?
 - **Did it assume anything you did not tell it,** such as the date of the next payment run? Did it add figures or advice you did not ask for? Is each one right?
-- **Which rung of the ladder did you use?** In Tasks 1 to 4 you delegated tasks: that is the agent rung. Your five jobs from Task 5 come back every week or month, so they are roles: the AI Worker rung. One register is a task. A register every week is a role.
+- **Which rung of [the ladder](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/) did you use?** In Tasks 1 to 4 you delegated tasks: that is the agent rung. Your five jobs from Task 5 come back every week or month, so they are roles: the AI Worker rung. One register is a task. A register every week is a role.
+- **Did a fact you added make the AI skip a problem?** For example, once a prompt says 4471-R is a copy, the AI may stop flagging it.
 - **Compare your first prompts with your final ones.** What do the final ones say that the first ones did not?
 
 Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Your final prompts are a first draft of one.
