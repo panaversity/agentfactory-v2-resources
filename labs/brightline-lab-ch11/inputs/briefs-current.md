@@ -2,7 +2,7 @@
 
 ## Thursday pre-run note (scheduled)
 
-> Open the AP Register in the Finance folder. List every open invoice due on or before next Thursday, with vendor, invoice number, due date and amount. Flag anything unusual. Save the note as "Pre-run note <date>" in the AP folder and post a link in the AP channel.
+> Open the AP Register in the Finance folder. List every open invoice due on or before the date of the next run, with vendor, invoice number, due date and amount. Flag anything unusual. Save the note as "Pre-run note <date>" in the notes folder.
 
 ## Duplicate check (event-triggered, one run per invoice email)
 
