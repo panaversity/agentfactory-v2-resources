@@ -10,7 +10,7 @@ This folder is standalone. It needs no files from other chapters. Start with `LA
 | `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
 | `inputs/december-events.md` | What went wrong, December 1 to 9 |
 | `inputs/proposed-uses.md` | Six uses of the AP Worker that staff proposed, for Part A |
-| `inputs/dedup-request.md`, `inputs/vendor-master-extract.csv` | The vendor clean-up, for Part B. Open the vendor file in a spreadsheet, never in a chat |
+| `inputs/dedup-request.md`, `inputs/vendor-master-extract.csv` | The vendor clean-up, for Part B. Open the vendor file in a spreadsheet, never in a chat. With the desktop app, move it out of this folder first |
 | `inputs/known-duplicates.md` | The pairs a redacted file must still find, for Part B. Keep it out of every chat |
 | `inputs/early-pay-request.md`, `inputs/early-pay-list-2026-12-01.csv`, `inputs/open-invoices-2026-12-01.csv`, `inputs/supplier-terms-commitment.md` | The early-pay list, for Part D |
 | `inputs/knowledge-inventory.md`, `inputs/knowledge/` | What the worker and staff can reach, for Part E |

@@ -1,9 +1,9 @@
 # Lab 10: Keep the AP Worker running, on terms Dave can defend
 
-**Time:** about six and a half hours of active work, in three sittings: Parts A to C, then Parts D to F, then Parts G and H.
-**You produce:** `results/prediction.md`, `results/use-case-register.md`, `results/data-decision.md` and `results/vendor-extract-redacted.csv`, `results/route-and-send-spec.md` and `results/port-log.md`, `results/people-check.md`, `results/knowledge-register.md` and a takedown record for each item you take down, `results/sign-off-matrix.md`, `results/incident-note.md`, `results/governance-record.md`, `results/interim-ai-policy.md`, `role/ap-worker-role-contract.md` (Draft 7), and `results/my-workflow.md`, one workflow from your own field.
+**Time:** about six hours of active work, in three sittings: Parts A to C, then Parts D to F, then Parts G and H. Part H's last step is optional, and adds about 20 minutes.
+**You produce:** `results/prediction.md`, `results/use-case-register.md`, `results/data-decision.md` and `results/vendor-extract-redacted.csv`, `results/route-and-send-spec.md` and `results/port-log.md`, `results/people-check.md`, `results/knowledge-register.md` and a takedown record for each item you take down, `results/sign-off-matrix.md`, `results/incident-note.md`, `results/governance-record.md`, `results/interim-ai-policy.md`, `role/ap-worker-role-contract.md` (Draft 7), and, if you choose, `results/my-workflow.md`, one workflow from your own field.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet app for Part B, such as Excel, Google Sheets, LibreOffice or Numbers. Parts B and D also use fresh chats in Claude or ChatGPT. Part C uses your accounts' settings and the AI vendors' help pages. Keep your work in this folder, not only in a chat: it is yours. Each Part ends with a file saved.
-**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make every decision and give every answer, and it writes your answers down. It never opens the full vendor file: in Part B, you redact that yourself.
+**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make every decision and give every answer, and it writes your answers down. Its brief asks it never to open the full vendor file, but a brief is a wish, not a control (Chapter 10, 10.3). So before you open this folder in the app, move `inputs/vendor-master-extract.csv` to a folder outside it. In Part B, you open it from there and redact it yourself.
 **You need:** a Claude or ChatGPT account whose chats accept attached files or pasted text. An account with both AI vendors helps in Part C, but their help pages are enough.
 **You do not need:** code, a server, admin rights or any company system. Everything is in this folder.
 **Before you start:** every record here is invented. Names, tax IDs, bank numbers and emails are fake, and the tax IDs start with zeros so they can never be real. Even so, practice the habit: never put real personal or financial data into an AI tool for practice. Make two empty folders in this folder for your work: `results` and `role`.
@@ -37,7 +37,7 @@ Then open `answer-key/A-use-case-register.md` and score the register with row A 
 
 *Where:* In this folder, a spreadsheet app, and two fresh chats.
 
-Read `inputs/dedup-request.md`. Then open `inputs/vendor-master-extract.csv` in your spreadsheet app, never in a chat. Copy `templates/data-decision.md` to `results/data-decision.md`.
+Read `inputs/dedup-request.md`. Then open `inputs/vendor-master-extract.csv` in your spreadsheet app, never in a chat. If you moved it out of this folder for the desktop app, open it from where you moved it. Copy `templates/data-decision.md` to `results/data-decision.md`.
 
 1. Classify each column as green, yellow or red.
 2. Decide which columns the duplicate check needs. You will remove the rest.
@@ -126,7 +126,7 @@ Then open `answer-key/G-incident-note.md` and score your note with row G of `rub
 
 *You save:* `results/incident-note.md`.
 
-## Part H. Make it last (75 minutes)
+## Part H. Make it last (55 minutes, and about 20 for the optional step 5)
 
 *Where:* In this folder.
 
@@ -134,11 +134,11 @@ Then open `answer-key/G-incident-note.md` and score your note with row G of `rub
 2. Copy `templates/interim-ai-policy.md` to `results/interim-ai-policy.md`: one page for Dave to approve. Do not call it official.
 3. Write `role/ap-worker-role-contract.md`, Draft 7, from `inputs/ap-worker-role-contract-draft6.md`. If you kept your Role Contract from Chapter 9, start from that instead. Change only what this lab showed must change, and list each change at the top.
 4. Open `results/prediction.md` again. Under your prediction, write one line for each December failure: what it needed besides a written policy.
-5. Pick one workflow you own in your own field. Write its Governance Record, and name one piece of knowledge in your work that has no owner. Save it as `results/my-workflow.md`.
+5. Optional: pick one workflow you own in your own field. Write its Governance Record, and name one piece of knowledge in your work that has no owner. Save it as `results/my-workflow.md`.
 
 Then open `answer-key/H-make-it-last.md` and score steps 1 to 3 with row H of `rubric.md`.
 
-*You save:* `results/governance-record.md`, `results/interim-ai-policy.md`, `role/ap-worker-role-contract.md` and `results/my-workflow.md`. The lab is not finished until all four are saved, even after you pass the rubric.
+*You save:* `results/governance-record.md`, `results/interim-ai-policy.md` and `role/ap-worker-role-contract.md`, and `results/my-workflow.md` if you do step 5. The lab is not finished until the first three are saved, even after you pass the rubric.
 
 ## What this lab does not prove
 
@@ -156,7 +156,7 @@ Your records show what Brightline decided, and why. They do not make a setting e
 - [ ] `results/incident-note.md`: the five first-hour steps, with facts only
 - [ ] `results/governance-record.md` and `results/interim-ai-policy.md`, ready for Dave
 - [ ] `role/ap-worker-role-contract.md`, Draft 7, with each change listed at the top
-- [ ] `results/my-workflow.md`, one workflow from your own field
+- [ ] Optional: `results/my-workflow.md`, one workflow from your own field
 
 ## If something goes wrong
 

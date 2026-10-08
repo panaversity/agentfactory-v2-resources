@@ -18,6 +18,8 @@ You can also download a lab here:
 | 6. The Review Contract | Review a run you did not watch | [brightline-lab-ch06.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06.zip) |
 | 7. The Authority Envelope | Draw the envelope, then test it | [brightline-lab-ch07.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07.zip) |
 | 8. Context, Memory, Knowledge and State | Your first KSoR, connected to both AI vendors | [brightline-lab-ch08.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08.zip) |
+| 9. Work That Runs Without You | Put one AP job on a schedule | [brightline-lab-ch09.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09.zip) |
+| 10. Governance and Responsible Use | Keep the AP Worker running, on terms Dave can defend | [brightline-lab-ch10.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10.zip) |
 
 A lab's `answer-key/` folder holds its answers, and its `LAB.md` tells you when to open it. Chapter 1's answer key is not in its zip, because its learners upload files to an AI. Its `LAB.md` links to the answer key here instead: [Tasks 1 to 5](labs/brightline-lab-ch01/answer-key/answer-key.md), then [Tasks 6 and 7](labs/brightline-lab-ch01/answer-key/answer-key-port.md).
 

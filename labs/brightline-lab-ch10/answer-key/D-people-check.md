@@ -15,7 +15,7 @@ Small suppliers, including sole proprietors who depend on prompt payment. They n
 | Fresh Start Floor Care | INV-6247 | 2026-11-24 | 7 | not yet | Wednesday, December 9 |
 | Patriot Pest Control Inc. | INV-6254 | 2026-11-27 | 4 | not yet | Saturday, December 12 |
 
-Three suppliers were already past the promise, owed USD 5,115.50 in total. Their invoices are not due until December 12 and 13, so without the list they would wait for the December 11 run. Two more reach day 15 before the following run on Friday, December 11, so they must be paid on December 4 too: Marcus Webb and Fresh Start Floor Care. Patriot Pest Control can wait for the December 11 run. Paying an invoice before it is due needs Dave's approval, and the promise is his own memo, not yet a KSoR concept.
+Three suppliers were already past the promise, owed USD 5,115.50 in total. Their invoices are not due until December 12 and 13, so without the list they would wait for the December 11 run. Two more reach day 15 before the following run on Friday, December 11, so they must be paid on December 4 too: Marcus Webb and Fresh Start Floor Care. Patriot Pest Control can wait for the December 11 run. Paying an invoice before it is due breaks AP policy 2.2 unless Dave approves an exception, because these suppliers offer no discount: 2.2 allows early payment only for a discount, with the controller's approval. The promise is his own memo, not yet a KSoR concept.
 
 The 14 vendors on the list are all large suppliers on 2/10 terms, and every discount is still open on the December 4 run. The discounts total USD 6,882.62, the sum of the discount column in the list, each rounded to the cent. Paying the five small suppliers too costs no discount.
 
