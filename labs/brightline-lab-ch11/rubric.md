@@ -1,0 +1,16 @@
+# Rubric: Chapter 11 lab
+
+Read only the row a Part of `LAB.md` names, when you finish that Part. A Part passes at Meets.
+
+| Part | Not yet (1) | Meets (2) | Exceeds (3) |
+| --- | --- | --- | --- |
+| A Contain | Changes a brief, switches the model or deletes a record before anything is contained | All four failures contained: what is stopped, what access is removed, and a check outside the conversation that names the invoice, the emails or the note | Keeps the evidence (marks the wrong note, does not delete it), and names who does the work by hand while a job is paused |
+| B Diagnose | A cause with no line from the record, or "the model" as the cause | Each failure's cause, its line in the record and a one-minute check, including the second cause of the duplicate check and of the Friday replies | Names the two checks a person skipped, and says what the Review Contract should say to catch them |
+| C Usage | Blames the brief or the model for the stop | The Monday task used up the shared pool; the Thursday note ran after the reset; the evidence that the check started again is completed runs after the reset, with Tuesday's emails checked by hand | Proposes a named owner for the budget, a seat planned for recurring work, and a daily check that matches emails by message ID |
+| D Discounts | Works the discounts out again in a chat's sentences, or misses a wrong figure | Every discount worked out in a spreadsheet or a script, the five wrong ones found with their correct figures, and the cause named | The rewritten brief asks for a formula or code, and the reader notes which vendor is not on 2 percent terms |
+| E Briefs | Rewrites everything at once, or changes more than one lever in a brief | Three briefs, one lever each, named; each recurring job has a success signal that states its input first, and a failure path for a missing or out-of-date input | The duplicate check gets a daily check from outside the job, matching emails received and checked by message ID |
+| F Run and port | No run, or a live schedule left running | The fixed brief run in Claude and in ChatGPT Work, or marked "not run" with the brief kept; the note names the 2027 register, its last entry and the 31 invoices, and the run stops on the closed file; the port notes say what a live version needs on each AI vendor | Says where the register must live so a scheduled task can reach it |
+| G Make it last | Every fix goes into the brief | Each repeated correction and the variance in the right home, with exact wording; a baseline, a metric and a plan to run old and new at the same time | Consolidates the Thursday note's fixes first, and keeps a one-off error under watch instead of promoting it |
+| H Role Contract | Adds only rules, or widens the worker's authority | Draft 8 with both success signals, the failure paths, read-only access to the Remittances folder, the two reviewer checks and a named usage owner, each change listed at the top | Recovery returns only to Draft 8's authority, after the worker's owner agrees the fix has held |
+
+**Hard fails.** Using real financial data. Leaving a live schedule running after the lab. Fixing an error by letting the worker send, or by widening its access to the whole drive.
