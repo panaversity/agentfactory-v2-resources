@@ -26,7 +26,7 @@ Before you send a brief, decide what kind of answer you expect: a number, a list
 - Inputs: from which sources
 - Autonomy: how far the AI may go without asking you
 
-When it answers, ask how it got there. Then check a number it worked out, or a choice it made, against the files and "The job". If you find a mistake, don't tell the AI: you fix your briefs after the grading. Answer its questions briefly, and ignore its offers to do more.
+When it answers, ask how it got there. Then check a number it worked out, or a choice it made, against the files and "The job". If the AI gets something wrong, don't correct it. You fix your briefs after the grading. Answer its questions briefly, and ignore its offers to do more.
 
 > [!IMPORTANT]
 > **Write every brief yourself.** If an AI writes them for you, you skip the one skill this lab trains. Your first attempts will miss things, and that is how the lab teaches.
