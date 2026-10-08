@@ -1,6 +1,6 @@
-# Rubric, Lab 10
+# Rubric: Chapter 10 lab
 
-Score each part. A part passes at Meets.
+Read only the row a Part of `LAB.md` names, when you finish that Part. A Part passes at Meets.
 
 | Part | Not yet (1) | Meets (2) | Exceeds (3) |
 | --- | --- | --- | --- |
