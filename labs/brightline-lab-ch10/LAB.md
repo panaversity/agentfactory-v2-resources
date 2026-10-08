@@ -3,7 +3,7 @@
 **Time:** about six and a half hours of active work, in three sittings: Parts A to C, then Parts D to F, then Parts G and H.
 **You produce:** `results/prediction.md`, `results/use-case-register.md`, `results/data-decision.md` and `results/vendor-extract-redacted.csv`, `results/route-and-send-spec.md` and `results/port-log.md`, `results/people-check.md`, `results/knowledge-register.md` and a takedown record for each item you take down, `results/sign-off-matrix.md`, `results/incident-note.md`, `results/governance-record.md`, `results/interim-ai-policy.md`, `role/ap-worker-role-contract.md` (Draft 7), and `results/my-workflow.md`, one workflow from your own field.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet app for Part B, such as Excel, Google Sheets, LibreOffice or Numbers. Parts B and D also use fresh chats in Claude or ChatGPT. Part C uses your accounts' settings and the AI vendors' help pages. Keep your work in this folder, not only in a chat: it is yours. Each Part ends with a file saved.
-**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make every decision and write every answer, and it writes your answers down. It never opens the full vendor file: in Part B, you redact that yourself.
+**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make every decision and give every answer, and it writes your answers down. It never opens the full vendor file: in Part B, you redact that yourself.
 **You need:** a Claude or ChatGPT account whose chats accept attached files or pasted text. An account with both AI vendors helps in Part C, but their help pages are enough.
 **You do not need:** code, a server, admin rights or any company system. Everything is in this folder.
 **Before you start:** every record here is invented. Names, tax IDs, bank numbers and emails are fake, and the tax IDs start with zeros so they can never be real. Even so, practice the habit: never put real personal or financial data into an AI tool for practice. Make two empty folders in this folder for your work: `results` and `role`.
@@ -120,7 +120,7 @@ Then open `answer-key/F-sign-off.md` and score your work with row F of `rubric.m
 
 *Where:* In this folder.
 
-Read `inputs/incident-facts.md`, Maria's own account of Sunday, December 6. Copy `templates/incident-note.md` to `results/incident-note.md`, and write Maria's incident note as she should have written it at 7 a.m. on Monday, December 7, 2026. Facts only.
+Read `inputs/incident-facts.md`, Maria's own description of Sunday, December 6. Copy `templates/incident-note.md` to `results/incident-note.md`, and write Maria's incident note as she should have written it at 7 a.m. on Monday, December 7, 2026. Facts only.
 
 Then open `answer-key/G-incident-note.md` and score your note with row G of `rubric.md`.
 
@@ -150,7 +150,7 @@ Your records show what Brightline decided, and why. They do not make a setting e
 - [ ] `results/use-case-register.md`: six uses, each with an answer, a deciding factor and a gate where one is needed
 - [ ] `results/data-decision.md` and `results/vendor-extract-redacted.csv`: the tiers, the fields kept and removed, the route, and the known-answer test passed
 - [ ] `results/route-and-send-spec.md` and `results/port-log.md`: one spec, applied on one AI vendor and ported to the other, every change logged
-- [ ] `results/people-check.md`: who the early-pay list left out, how late their payments were, and the rewritten brief, tested
+- [ ] `results/people-check.md`: who the early-pay list left out, how late their payments were, the rewritten brief, tested, and whether to tell the suppliers
 - [ ] `results/knowledge-register.md` and a takedown record for each item you took down
 - [ ] `results/sign-off-matrix.md`: eight outputs, and the schedule check
 - [ ] `results/incident-note.md`: the five first-hour steps, with facts only
