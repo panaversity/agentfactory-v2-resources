@@ -24,6 +24,6 @@ If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's 
 - **Did it assume anything you did not tell it,** such as the date of the next payment run? Did it add figures or advice you did not ask for? Is each one right?
 - **Which rung of [the ladder](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/) did you use?** In Tasks 1 to 4 you delegated tasks: that is the agent rung. Your five jobs from Task 5 come back every week or month, so they are roles: the AI Worker rung. One register is a task. A register every week is a role.
 - **Did a fact you added make the AI skip a problem?** For example, once a brief says 4471-R is a copy, the AI may stop flagging it.
-- **Compare your first briefs with your final ones.** Your first ones are in your first conversation. What do the final ones say that the first ones did not?
+- **Compare your first briefs with your final ones.** Your first ones are in your first conversation, if you can still open it. What do the final ones say that the first ones did not?
 
 Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Each of your final briefs is a first draft of one.

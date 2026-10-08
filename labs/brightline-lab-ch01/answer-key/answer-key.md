@@ -107,13 +107,13 @@ The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL
 
 ## Task 5. More work for an AI
 
-Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. A row of your work inventory might look like this:
+Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. For example:
 
-| Job | How often | Inputs | Output | Who checks it | Covered by this lab? |
-| --- | --- | --- | --- | --- | --- |
-| Build the invoice register | Weekly | Vendor invoices | Register spreadsheet | AP lead | Yes |
+| Job | How often | Inputs | Output | Who checks it |
+| --- | --- | --- | --- | --- |
+| Build the invoice register | Weekly | Vendor invoices | Register spreadsheet | AP lead |
 
-Mark which of your five this lab already did. Those are fine, but the useful ones are the jobs it did not do, such as answering vendor questions about payments, reconciling vendor statements, and setting up new vendors.
+This lab already did that one. Of your five, the most useful are the jobs it did not do, such as answering vendor questions about payments, reconciling vendor statements, and setting up new vendors.
 
 ## Worth noting, not scored
 

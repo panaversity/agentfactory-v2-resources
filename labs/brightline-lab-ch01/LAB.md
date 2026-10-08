@@ -9,7 +9,6 @@ In this lab you give an AI a real job, check its work yourself, and carry your b
 1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
 2. Give the AI only `inputs.zip`. To check its work yourself, open `inputs.zip` on your computer.
 3. Do Tasks 1 to 5 in one new conversation, and keep it memory-free. In Claude, turn off Memory in the "+" menu as the chat starts. In ChatGPT, open a Temporary Chat and choose Unpersonalized.
-4. Start a file of your own, in any text editor. It will hold your final briefs, your scores and a few notes.
 
 ## The job
 
@@ -27,11 +26,7 @@ Before you send a brief, decide what kind of answer you expect: a number, a list
 - Inputs: from which sources
 - Autonomy: how far the AI may go without asking you
 
-When it answers, ask how it got there. Then check a number it worked out, or a choice it made, against the files and "The job". If you find a mistake, leave the AI's work as it is. You fix your briefs after the grading.
-
-- Answer its questions briefly, and ignore its offers to do more.
-- Don't correct it, or ask for more, during a task.
-- Your briefs can use anything you know, including the AI's earlier answers.
+When it answers, ask how it got there. Then check a number it worked out, or a choice it made, against the files and "The job". If the AI gets something wrong, don't correct it. You fix your briefs after the grading. Answer its questions briefly, and ignore its offers to do more.
 
 > [!IMPORTANT]
 > **Write every brief yourself.** If an AI writes them for you, you skip the one skill this lab trains. Your first attempts will miss things, and that is how the lab teaches.
@@ -84,7 +79,7 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Give your manager:** five jobs.
 
-**Checkpoint.** The AI named five jobs. Copy them into your file, as a table: the job, how often, its inputs and output, and who checks it.
+**Checkpoint.** The AI named five jobs.
 
 ## Check your answers (15 minutes)
 
@@ -106,20 +101,21 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
              what I did, so ask me.
    ```
 
-2. Open [the answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md) yourself, and compare it with the AI's grades. You have the final say. Write the score in your file.
-3. If you scored 10, save your five briefs in your file: they are your final briefs. Do the optional test below, then go on to Task 6. Otherwise, fix the brief behind each miss.
-4. **A second run, if you fixed a brief (15 minutes).** Open a new memory-free conversation. Send all five briefs again, one task at a time, with `inputs.zip` in the first message. You need not ask how it got there this time. Ask the files question, and open the new spreadsheet. Then paste the grading brief again. Save these five briefs in your file: they are your final briefs.
+2. Open [the answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md) yourself, and compare it with the AI's grades. You have the final say.
+3. If you scored 10, your five briefs are your final briefs. Otherwise, fix the brief behind each miss.
+4. **A second run, if you fixed a brief (15 minutes).** Open a new memory-free conversation. Send all five briefs again, one task at a time, with `inputs.zip` in the first message. You need not ask how it got there this time. Ask the files question, and open the new spreadsheet. Then paste the grading brief again. These five briefs are your final briefs.
+5. Save your five final briefs, your scores and the AI's five jobs from Task 5 in one file, in any text editor. Keep it where you can find it again.
 
 **Optional, if your first run scored 10 (5 minutes).** In a new memory-free conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one.
 
-**Checkpoint.** Your file has your scores and your five final briefs. In Task 6, you carry them to the other AI vendor.
+**Checkpoint.** Your file has your five final briefs, your scores and the five jobs. In Task 6, you carry the briefs to the other AI vendor.
 
 ## Task 6. The other AI vendor (15 minutes)
 
-1. Open a new memory-free conversation in the other one, Claude or ChatGPT. Send your final briefs with `inputs.zip`, unchanged, one task at a time. Ask the files question, and open the spreadsheet.
+1. Open a new memory-free conversation in the other one, Claude or ChatGPT. Send your final briefs, unchanged, one task at a time, with `inputs.zip` in the first message. Ask the files question, and open the spreadsheet.
 2. If a run cannot go ahead, try a setting before you change your words. One that lets the AI run code or create files is a good start.
 3. In your file, note every change, and why.
-4. Paste the grading brief, and compare its grades with the answer sheet.
+4. Paste the grading brief, compare its grades with the answer sheet, and add the score to your file.
 
 If you can use only one AI vendor, skip the run. Note in your file what you think would change.
 
@@ -127,19 +123,19 @@ If you can use only one AI vendor, skip the run. Note in your file what you thin
 
 ## Task 7. The next day (5 minutes)
 
-At least a day later, look for your Task 2 spreadsheets from every run, and for the AI's text answers. Check the conversations, and your computer. In your file, note where each one is, or that it is gone, or that you can't tell. Then write one sentence on what this shows about where results are kept.
+At least a day later, look for your Task 2 spreadsheets from every run, and for the AI's text answers. Check the conversations, and your computer. Is each one still there, is it gone, or can't you tell?
 
-**Checkpoint.** Your file has your results and your sentence. Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back".
+**Checkpoint.** You looked for every result. Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back".
 
 ## If something goes wrong
 
-- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. Note that as a change.
+- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. If this happens in Task 6, note it in your file as a change.
 - **The AI cannot open the answer sheet.** Open it yourself, copy its text, and paste it into the chat.
-- **Your plan cannot work on files.** Do the tasks anyway, and note what the AI could and could not do.
+- **Your plan cannot work on files.** Do the tasks anyway, and see what the AI could and could not do.
 
 ## Apply it to your vertical
 
-Your vertical is the line of work you know best. Take a pile of real files from it, and one thing your manager wants from them. Write the brief in your file, and run it if you can. Then list five jobs in your vertical that an AI could take.
+Your vertical is the line of work you know best. Take a pile of real files from it, and one thing your manager wants from them. Write the brief, and run it if you can. Then list five jobs in your vertical that an AI could take.
 
 ## Exam notes
 
@@ -147,13 +143,10 @@ Your vertical is the line of work you know best. Take a pile of real files from 
 
 ## Artifact checklist
 
-Before you move on to Chapter 2, check that your file has these. The last one is your own.
+Before you move on to Chapter 2, check that your file has these.
 
 - [ ] Your five final briefs
-- [ ] Your score for each run, or your guess for the other AI vendor if you used only one
-- [ ] Every change you made for the other AI vendor, and why
-- [ ] Where your Task 2 spreadsheets were the next day
-- [ ] Your work inventory: the five AP jobs from Task 5, as a table
-- [ ] A brief and five jobs for your own vertical
+- [ ] Your scores, and the AI's five jobs from Task 5
+- [ ] Every change you made for the other AI vendor, and why, or your guess of what would change
 
 If you keep the book's running project in a git repository, add your file to it, and tag that commit `ch01`. You can skip this.
