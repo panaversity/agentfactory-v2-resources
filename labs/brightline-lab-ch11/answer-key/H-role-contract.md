@@ -13,4 +13,4 @@ Draft 8 changes these parts of Draft 7, and adds four lines:
 
 ## Your look back (step 2)
 
-Compare each guess in your prediction with the causes in `B-diagnosis.md`. A wrong guess is fine: the point is the evidence that changed it.
+Compare each first check in your prediction with the checks and causes in `B-diagnosis.md`. A wrong first guess is fine: the point is the evidence that would change it.

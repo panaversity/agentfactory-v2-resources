@@ -20,7 +20,7 @@ In the week of January 11, 2027, four things went wrong (Chapter 11's opening st
 
 *Where:* In this folder.
 
-1. Before you open any file in `inputs/`, copy `templates/prediction.md` to `results/prediction.md`. For each of the four failures in the chapter's opening story, write the cause you expect: the brief, the inputs, tools and permissions, capacity, or task fit. Keep it as it is: Part H looks back at it.
+1. Before you open any file in `inputs/`, copy `templates/prediction.md` to `results/prediction.md`. For each of the four failures in the chapter's opening story, write the check you would run first, and what result would prove your first guess wrong. Keep it as it is: Part H looks back at it.
 2. Read `inputs/january-events.md`.
 3. Copy `templates/containment-log.md` to `results/containment-log.md`. For each of the four failures, write what you stop or pause, what access you remove until the cause is known, and what you check outside the conversation. Be specific: which invoice, which emails, which note.
 
@@ -123,7 +123,7 @@ Then open `answer-key/G-promotion-and-baseline.md` and score your work with row 
 *Where:* In this folder.
 
 1. Write `role/ap-worker-role-contract.md`, Draft 8, from `inputs/ap-worker-role-contract-draft7.md`. If you kept your Role Contract from Chapter 10, start from that instead. Add: success signals for both recurring jobs, failure paths, read-only access to the Remittances folder only, the reviewer's checks that would have caught the Thursday and Friday failures, and a named owner for the worker's usage budget. List each change at the top. Draft 7 names no shared drive, though the Friday task's connection reached all of it, so naming only the Remittances folder narrows what the worker can reach.
-2. Open `results/prediction.md` again. Under your prediction, write one line for each failure: the cause you found, and whether your guess was right.
+2. Open `results/prediction.md` again. Under your prediction, write one line for each failure: what your first check would have shown, and whether your first guess held.
 3. Optional: pick one job you run often in your own field. Write its success signal, its failure path for a missing input, and who owns its usage budget. Save it as `results/my-workflow.md`.
 
 Then open `answer-key/H-role-contract.md` and score step 1 with row H of `rubric.md`.

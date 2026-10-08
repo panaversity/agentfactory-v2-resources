@@ -8,7 +8,7 @@
 
 **Wednesday, January 13.** Jordan Ellis asked the worker to "reply to these three vendors about their short payments." All three drafts said Brightline's terms were "2 percent 10, net 30" and that the deduction was the early-payment discount. Maria caught it in review. Nothing was sent.
 
-**Thursday, January 14, 7 a.m.** The pre-run note said "No invoices due this week." Maria saw a short note in the usual layout and passed it to Dave. 31 invoices, worth $86,240.15, were due.
+**Thursday, January 14, 7 a.m.** The pre-run note said "No invoices due this week." Maria saw a short note in the usual layout and passed it to Dave. 31 invoices, worth $86,240.15, were due. The January 15 run paid none of them.
 
 **Friday, January 15.** Five replies to vendors went out saying "Attached is the remittance notice." Nothing was attached. The worker drafted them, and Maria sent all five without opening an attachment. On January 4, IT reset all staff passwords.
 
