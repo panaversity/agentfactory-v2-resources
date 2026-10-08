@@ -1,6 +1,6 @@
 # Lab 1: one portable brief, two runtimes
 
-Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Build step: one portable brief, two runtimes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/build-step/), so you can do the lab without the book.
+Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: one portable brief, two runtimes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
 In this lab you hand an AI a real job. By the end, you can:
 
