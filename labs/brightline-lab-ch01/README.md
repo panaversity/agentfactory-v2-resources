@@ -11,4 +11,4 @@ Chapter 1 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 
 **Give the AI only `inputs.zip`.** Never upload `LAB.md` or this file. Keep your final briefs and scores in a file of your own.
 
-The answer sheet is not in the zip. `LAB.md` links to it when it is time, for your AI to grade against and for you to compare: [Tasks 1 to 5](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md), then [Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md).
+The answer sheets are not in the zip. `LAB.md` links to them when it is time, for your AI to grade against and for you to compare.

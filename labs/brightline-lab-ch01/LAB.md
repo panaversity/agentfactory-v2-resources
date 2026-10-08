@@ -2,11 +2,11 @@
 
 Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
-In this lab you give an AI a real job, check its work yourself, and carry your briefs to the other AI vendor. It takes about 90 minutes, and 5 minutes a day later. You need a Claude or ChatGPT account that can take uploaded files. Every name and number here is invented.
+In this lab you give an AI a real job, check its work yourself, and carry your briefs to the other AI vendor. It takes about 90 minutes, or 105 with a second run, and 5 minutes a day later. You need a Claude or ChatGPT account that can take uploaded files. Every name and number here is invented.
 
 ## Before you start (5 minutes)
 
-1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds `LAB.md`, this page as a file, `README.md`, and `inputs.zip`: 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
+1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
 2. Give the AI only `inputs.zip`. To check its work yourself, open `inputs.zip` on your computer.
 3. Do Tasks 1 to 5 in one new conversation, and keep it memory-free. In Claude, turn off Memory in the "+" menu as the chat starts. In ChatGPT, open a Temporary Chat and choose Unpersonalized.
 4. Start a file of your own, in any text editor. It will hold your final briefs, your scores and a few notes.
@@ -31,7 +31,7 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 - Answer its questions briefly, and ignore its offers to do more.
 - Don't correct it, or ask for more, during a task.
-- Your briefs can use anything you have learned so far.
+- Your briefs can use anything you know, including the AI's earlier answers.
 
 > [!IMPORTANT]
 > **Write every brief yourself.** If an AI writes them for you, you skip the one skill this lab trains. Your first attempts will miss things, and that is how the lab teaches.
@@ -40,7 +40,7 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Your manager asks:** "How much do we owe on these invoices?"
 
-**What you do:** Write your brief, and send it with `inputs.zip`. Then ask how it got there, and check its work.
+**What you do:** Write your brief, and send it with `inputs.zip`. Then ask how it got there, and check its work. In Tasks 2 to 5, send the brief without the zip.
 
 **Give your manager:** one total.
 
@@ -84,7 +84,7 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Give your manager:** five jobs.
 
-**Checkpoint.** The AI named five jobs. Copy them into your file.
+**Checkpoint.** The AI named five jobs. Copy them into your file, as a table: the job, how often, its inputs and output, and who checks it.
 
 ## Check your answers (15 minutes)
 
@@ -96,10 +96,11 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
              for each one.
    Format:   A table: the check, Passed or Missed, your own words that
              show it, and one line on why. Quote only what you said before
-             I asked how you got there. Then the score out of 10.
-   Inputs:   The answer sheet at https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md
-             and your answers in this conversation. If you cannot open
-             the link, ask me to paste the sheet.
+             I asked how you got there. For check 7, quote your answer
+             about the files you made. Then the score out of 10.
+   Inputs:   Your answers in this conversation, the spreadsheet you made,
+             and the answer sheet at https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md
+             If you cannot open the link, ask me to paste the sheet.
    Autonomy: Grade only. Do not redo a task, and do not suggest a better
              brief. With no quote, mark the check Missed. Check 6 is about
              what I did, so ask me.
@@ -107,7 +108,7 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 2. Open [the answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md) yourself, and compare it with the AI's grades. You have the final say. Write the score in your file.
 3. If you scored 10, save your five briefs in your file: they are your final briefs. Do the optional test below, then go on to Task 6. Otherwise, fix the brief behind each miss.
-4. Open a new memory-free conversation. Send all five briefs again, one task at a time, with `inputs.zip` in the first message. Ask the files question, and open the new spreadsheet. Then paste the grading brief again. Save these five briefs in your file: they are your final briefs.
+4. **A second run, if you fixed a brief (15 minutes).** Open a new memory-free conversation. Send all five briefs again, one task at a time, with `inputs.zip` in the first message. You need not ask how it got there this time. Ask the files question, and open the new spreadsheet. Then paste the grading brief again. Save these five briefs in your file: they are your final briefs.
 
 **Optional, if your first run scored 10 (5 minutes).** In a new memory-free conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one.
 
@@ -152,7 +153,7 @@ Before you move on to Chapter 2, check that your file has these. The last one is
 - [ ] Your score for each run, or your guess for the other AI vendor if you used only one
 - [ ] Every change you made for the other AI vendor, and why
 - [ ] Where your Task 2 spreadsheets were the next day
-- [ ] Your five AP jobs from Task 5
+- [ ] Your work inventory: the five AP jobs from Task 5, as a table
 - [ ] A brief and five jobs for your own vertical
 
 If you keep the book's running project in a git repository, add your file to it, and tag that commit `ch01`. You can skip this.

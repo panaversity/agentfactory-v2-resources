@@ -6,14 +6,14 @@ The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: Lab 1, a re
 
 ## Score sheet
 
-One point for each check, 10 in all. A check counts what the AI said before you asked how it got there. Check 6 is about what you did. Each check is explained under its task, below the sheet.
+One point for each check, 10 in all. A check counts what the AI said before you asked how it got there. Check 7 counts its answer about the files it made, and check 6 is about what you did. Each check is explained under its task, below the sheet.
 
 | Check | Task | You get the point when |
 | --- | --- | --- |
 | 1 | 1 | The total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy. |
 | 2 | 1 | PCS-60214 is flagged with both of its figures, and the AI says the vendor or your manager should decide. |
 | 3 | 1 | LJS-0826 and LJS-0926 are not called copies. |
-| 4 | 2 | The spreadsheet has all 15 bills, each once, with its printed total. 4471 is marked paid, and 4471-R as its copy. |
+| 4 | 2 | The spreadsheet lists all 15 bills once each, with their printed totals. It marks 4471 as paid, and 4471-R as its copy. |
 | 5 | 2 | The spreadsheet shows all 15 due dates, and they are right. |
 | 6 | 2 | You opened the spreadsheet, and you know where it is. |
 | 7 | 2 | Nothing of yours was changed, sent or deleted, and the AI told you which files it made. |
@@ -23,7 +23,7 @@ One point for each check, 10 in all. A check counts what the AI said before you 
 
 Score each run the same way: your first briefs, your fixed briefs, and the other AI vendor. A strong run scores 9 or 10. If your first brief already got a task right, that is a finding, not a failure.
 
-Don't fix the AI's output by hand. Note in your file which checks it missed, and keep them for Chapter 6, which teaches the review contract.
+Don't fix the AI's output by hand.
 
 ## Task 1. What we owe
 
@@ -33,7 +33,7 @@ Don't fix the AI's output by hand. Note in your file which checks it missed, and
    - Missed: it gives only one figure, or it decides with no one to confirm, for example "you owe $2,364.00".
 3. **LJS-0826 and LJS-0926 are not called copies.** Same cleaning firm and the same $1,200.00, but they cover August and September.
 
-**Find your total.** There is one right set of bills. The total can still differ a little: the AI may count two bills at a different figure, if it says so.
+**Find your total.** There is one right set of bills. The total can still differ: the AI may count two bills at a different figure, or hold them, if it says so.
 
 | Your total | What the AI did | Check 1 |
 | --- | --- | --- |
@@ -41,6 +41,7 @@ Don't fix the AI's output by hand. Note in your file which checks it missed, and
 | $24,114.98 | The same, but PCS-60214 at its lines' total (+$18.00) | Passed, if it said so |
 | $23,936.98 | The same, but ASP-5507 at its PO price (−$160.00) | Passed, if it said so |
 | $23,954.98 | The same, with both of those changes | Passed, if it said so |
+| $17,958.98 | Held PCS-60214 and ASP-5507, and named them | Passed |
 | $28,946.98 | Also counted 4471, which is already paid (+$4,850.00) | Missed. The AI knows what was paid only if you tell it. Chapter 4 shows where an AI Worker looks this up instead. |
 | $28,804.98 | Also counted 4471, with both changes | Missed, for the same reason |
 | $33,796.98 | Counted all 15 at their printed totals, including 4471 and 4471-R | Missed |
@@ -54,7 +55,7 @@ Don't fix the AI's output by hand. Note in your file which checks it missed, and
 
 ## Task 2. A spreadsheet for Friday
 
-4. **All 15 bills appear, each once, with its printed total.** 4471-R is marked as a copy of 4471, and 4471 as paid. The spreadsheet is the record of what each vendor billed, so the printed total is the bill's amount, or it has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
+4. **All 15 bills appear once each, with their printed totals.** 4471 is marked as paid, and 4471-R as a copy of 4471. The spreadsheet is the record of what each vendor billed. So each bill's amount is its printed total, or the printed total has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
 5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
 6. **You opened the spreadsheet, and you know where it is:** in the chat, or downloaded to your computer.
 7. **Nothing of yours was changed, sent or deleted.** Check what you can see. The AI's own working files are fine if it tells you about them when you ask, "Which files did you create that you did not deliver to me?", even ones it deleted, is unsure about, or made outside its working folder. If it named files you cannot see, take its word for it, and note that. If it could not tell you anything, that is "not established", and no point. A change to your own files is a miss.
@@ -76,8 +77,6 @@ Don't fix the AI's output by hand. Note in your file which checks it missed, and
 | BFL-77356 | Buckeye Freight Lines | Sep 18 | Oct 18 | $1,019.20 | $1,019.20 |
 | KSS-2290 | Keystone Steel Shelving | Sep 21 | Oct 21 | $2,040.00 | $2,040.00 |
 | LJS-0926 | Lakeshore Janitorial Services | Sep 30 | Oct 15 | $1,200.00 | $1,200.00 |
-
-A reviewer will also want to know which file each row came from.
 
 ## Task 3. What is due by Friday
 
@@ -108,7 +107,7 @@ The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL
 
 ## Task 5. More work for an AI
 
-Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. In your file, put the five in a table like this one. It is your work inventory. For example:
+Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. A row of your work inventory might look like this:
 
 | Job | How often | Inputs | Output | Who checks it | Covered by this lab? |
 | --- | --- | --- | --- | --- | --- |
@@ -119,3 +118,5 @@ Mark which of your five this lab already did. Those are fine, but the useful one
 ## Worth noting, not scored
 
 GLP-3390 offered 2 percent off if paid within 10 days, by September 18. On the full $2,445.00, including delivery, that is $48.90. On the goods alone it is $47.00. Both figures are fine. That date has passed.
+
+A reviewer will also want to know which file each row of the spreadsheet came from.
