@@ -1,6 +1,6 @@
 # Lab 1 answer key: Tasks 6 and 7
 
-The second answers file for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Read it after Task 7. The answers for Tasks 1 to 5 are in [the first file](answer-key.md). Every name, number and company in this lab is invented.
+The second answers file for Chapter 1 of *The AI Agent Factory*, Second Edition: Lab 1, a real job, checked. Read it after Task 7. The answers for Tasks 1 to 5 are in [the first file](answer-key.md). Every name, number and company in this lab is invented.
 
 ## Task 6. The other AI vendor
 
@@ -16,8 +16,6 @@ If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's 
 
 ## Look back
 
-Write your answers in the last section of your worksheet, `port.md`.
-
 - **What did your own checks find, before you opened the answers?** A check that caught a mistake, such as the paid 4471 counted again, is the lesson at work: [Chapter 1's "Humans verify outcomes"](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/).
 - **Did a mistake hide in a part you did not check?** Next time, check where the AI made a choice: which amount, which bills, what counts as a problem.
 - **Which facts did you give the AI that were not in the files?** Today's date and the September 25 payment are two. If your first briefs left them out, what did the AI do without them? If your first briefs had them, that is why they scored well. What did the AI do without them, in the optional test?
@@ -26,6 +24,6 @@ Write your answers in the last section of your worksheet, `port.md`.
 - **Did it assume anything you did not tell it,** such as the date of the next payment run? Did it add figures or advice you did not ask for? Is each one right?
 - **Which rung of [the ladder](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/) did you use?** In Tasks 1 to 4 you delegated tasks: that is the agent rung. Your five jobs from Task 5 come back every week or month, so they are roles: the AI Worker rung. One register is a task. A register every week is a role.
 - **Did a fact you added make the AI skip a problem?** For example, once a brief says 4471-R is a copy, the AI may stop flagging it.
-- **Compare your first briefs with your final ones,** Run 1 and Run 2 in your worksheet. What do the final ones say that the first ones did not?
+- **Compare your first briefs with your final ones.** Your first ones are in your first conversation. What do the final ones say that the first ones did not?
 
 Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Each of your final briefs is a first draft of one.
