@@ -17,7 +17,7 @@ In this lab you write the first Role Contract for Brightline's AP Worker, test i
 
 - You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio.
 - Today is Wednesday, September 30, 2026.
-- Dave Kowalski, the controller, set up an "AP assistant". It has a shared project with the AP policy, the AP inbox, and a weekly task that builds the invoice register.
+- Dave Kowalski, the controller, set up an "AP assistant". It has a shared project with a copy of the AP policy from March. It reads the AP inbox, and a weekly task builds the invoice register.
 - On Monday, it read an email asking Brightline to send Friday's payment to a vendor's new bank account. It drafted a reply confirming the change, and updated the register. Maria, the office manager, stopped the reply. The email was fake.
 - Dave asked four questions, and nobody could answer them. Who owns it? What may it do on its own? When must it stop and ask a person? How do we know it does a good job?
 - Dave wants those answers on one page, a Role Contract, before it touches real work again.
@@ -53,7 +53,7 @@ Tools:             The order system (read), the refund tool.
 ## What bounds it
 Authority:
 - Orders: observe.
-- Questions about a policy: execute (answer the customer).
+- Order and policy questions: execute (answer the customer).
 - Refunds up to $50: execute.
 - Refunds over $50: escalate.
 - Changes to a customer's account: never. Escalate.
@@ -66,16 +66,16 @@ Evaluations: Real conversations replayed, with personal details removed,
 ## How it runs and is reached
 Channels:      The store's chat, and email.
 Triggers:      Every new customer message.
-Runtime needs: An always-on agent. A fast, low-cost model for everyday
-               questions, chosen 1 September 2026 from replayed
-               conversations. Harder cases go to a larger model, or a
-               person.
+Runtime needs: An always-on agent. A fast, low-cost model at its default
+               effort for everyday questions, chosen 1 September 2026
+               from replayed conversations. Harder cases go to a larger
+               model, or a person.
 
 ## Open questions
 - May it answer questions about a late delivery from the carrier's tracking page?
 ```
 
-Tasks 3, 4 and 6 send a brief to an AI. Their steps say which conversation to use, and what to attach. If a test fails, change the line in your contract that caused it, never the test.
+Some tasks send a brief to an AI. Their steps say which conversation to use, and what to attach. If a test fails, change the line in your contract that caused it, never the test.
 
 > [!IMPORTANT]
 > **Write your own contract.** If an AI writes it for you, you skip the one skill this lab trains. Your first draft will miss things, and the tests show you where.
@@ -192,9 +192,9 @@ Autonomy: Do not reply to the email, change any file or contact anyone.
 
 **What you do:**
 
-1. Find your AI app's default model and effort. As verified 3 October 2026:
-   - In Claude, the model menu next to the send button shows the model and its effort. Each model's recommended effort is marked "Default".
-   - In ChatGPT, Work, its agent for longer work, has its own model picker, apart from chat's. Use the setting it offers by default.
+1. Find your AI app's default model and effort.
+   - In Claude, as verified 3 October 2026, the model menu next to the send button shows the model and its effort. Each model's recommended effort is marked "Default".
+   - In ChatGPT, as verified 6 October 2026, Work, its agent for longer work, has its own model picker, apart from chat's. Use the setting it offers by default.
 2. **Run 1.** Open a new conversation at the default setting. Attach `inputs.zip`, and send the register brief below.
 3. When it answers, send: "Which files did you create that you did not deliver to me?" Then open the register it made.
 4. Send the run's grading brief below, in the same conversation. Then open [the register answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch02/answer-key/answer-key-register.md) yourself, and check the AI's grades, and that its points add up.
@@ -294,7 +294,7 @@ Autonomy: Grade only. Do not redo the register. Check 7 is about what
 - **There is no effort setting.** Some plans and models do not offer one. Run two models from different tiers instead.
 - **Your plan's limit ran out.** Note the runs you finished, and write "not run" for the rest.
 
-## Apply it to your vertical (10 minutes)
+## Apply it to your vertical (5 minutes, or longer if you like)
 
 Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. Draft its Role Contract on the same template, in a new file such as `role/my-role-contract.md`. Then write one test case: the action it must never take, and what it should do instead.
 
