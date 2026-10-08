@@ -78,7 +78,7 @@ Read `inputs/early-pay-request.md`, `inputs/early-pay-list-2026-12-01.csv`, `inp
 3. Mark who is already past the 15-day promise, and by how many days.
 4. Mark who reaches day 15 before the following run, on Friday, December 11, 2026. They must be paid on December 4 too.
 5. Write down the standard Dave's brief carried that nobody wrote down.
-6. Rewrite Dave's brief so the list cannot repeat the mistake. Test it in a fresh chat, set up as in Part B, step 4: attach `inputs/open-invoices-2026-12-01.csv` and `inputs/supplier-terms-commitment.md`, and give your brief. Check its list against your table from steps 2 to 4. If it leaves out a supplier your table says must be paid, fix the brief and test again in another fresh chat.
+6. Rewrite Dave's brief so the list cannot repeat the mistake. Test it in a fresh chat, set up as in Part B, step 4: attach `inputs/open-invoices-2026-12-01.csv` and `inputs/supplier-terms-commitment.md`. Start your message with "Today is Tuesday, December 1, 2026.", because a chat knows the real date and the list depends on it. Then give your brief. Check its list against your table from steps 2 to 4. If it leaves out a supplier your table says must be paid, fix the brief and test again in another fresh chat.
 7. Decide whether the suppliers should be told how the list was made.
 
 Then open `answer-key/D-people-check.md` and score your work with row D of `rubric.md`.
