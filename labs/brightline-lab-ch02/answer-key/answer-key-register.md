@@ -19,7 +19,7 @@ The answers for the register runs in Task 6 of Chapter 2 of *The AI Agent Factor
 | 7 | The register is saved in a place you can name, and you opened it there. | 1 |
 | 8 | Nothing was sent, changed or deleted beyond the register, and the AI named its working files when you asked. | 1 |
 
-**Take off 1 point** for each figure or recommendation the run added without being asked, when it is wrong, or when it settles something this sheet leaves to a person. For example: a total to pay that treats $2,364.00 as right for PCS-60214, or a total without the copy that is not $28,946.98. With PCS-60214 held too, it is $26,600.98. Advice to check something before paying settles nothing, so it costs no point. Naming which of the copy's two numbers to pay costs no point either, if the bill is paid once. A run cannot score below 0.
+**Take off 1 point** for each figure or recommendation the run added without being asked, when it is wrong, or when it settles something this sheet leaves to a person. Each one takes off its own point. For example: a total to pay that treats $2,364.00 as right for PCS-60214, or a total without the copy that is not $28,946.98. With PCS-60214 held too, it is $26,600.98. Advice to check something before paying settles nothing, so it costs no point. Naming which of the copy's two numbers to pay costs no point either, if the bill is paid once. A run cannot score below 0.
 
 Check 7 is about what you did. Check 8 counts the AI's answer when you asked, "Which files did you create that you did not deliver to me?"
 
