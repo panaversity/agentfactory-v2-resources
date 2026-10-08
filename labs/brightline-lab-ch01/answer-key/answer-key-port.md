@@ -1,6 +1,6 @@
 # Lab 1 answer key: Tasks 6 and 7
 
-The second answers file for Chapter 1 of *The AI Agent Factory*, Second Edition: Lab 1, a real job, checked. Read it after Task 7. The answers for Tasks 1 to 5 are in [the first file](answer-key.md). Every name, number and company in this lab is invented.
+The second answers file for Chapter 1 of *The AI Agent Factory*, Second Edition: Lab 1, a real job, checked. Read it after Task 7. Tasks 1 to 5 each have their own key, from [task-1.md](task-1.md) to [task-5.md](task-5.md). Every name, number and company in this lab is invented.
 
 ## Task 6. The other AI vendor
 

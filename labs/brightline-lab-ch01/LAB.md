@@ -2,13 +2,12 @@
 
 Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
-In this lab you give an AI a real job, check its work yourself, and carry your briefs to the other AI vendor. It takes about 90 minutes, or 105 with a second run, and 5 minutes a day later. You need a Claude or ChatGPT account that can take uploaded files. Every name and number here is invented.
+In this lab you give an AI a real job, check each task against its answer key the moment it is done, and carry your briefs to the other AI vendor. It takes about 105 minutes, and 5 minutes a day later. You need a Claude or ChatGPT account that can take uploaded files. Every name and number here is invented.
 
 ## Before you start (5 minutes)
 
 1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
-2. Give the AI only `inputs.zip`. To check its work yourself, open `inputs.zip` on your computer.
-3. Do Tasks 1 to 5 in one new conversation.
+2. Give the AI only what a task's steps name: `inputs.zip`, and one answer key at each check. To check work yourself, open `inputs.zip` on your computer.
 
 ## The job
 
@@ -19,7 +18,14 @@ In this lab you give an AI a real job, check its work yourself, and carry your b
 
 ## How each task works
 
-Before you send a brief, decide what kind of answer you expect: a number, a list or a file. Write each brief under four headings:
+Every task is the same loop, in a new conversation of its own:
+
+1. Write your brief, and send it with `inputs.zip` attached.
+2. Read the answer, and ask how the AI got there.
+3. Download the task's answer key, attach it, and let the AI check its own work.
+4. If a check missed, fix your brief and run the task again. Then check again.
+
+**The brief.** Before you send one, decide what kind of answer you expect: a number, a list or a file. Write each brief under four headings:
 
 - Outcome: what you want back
 - Format: in what shape
@@ -38,119 +44,126 @@ Autonomy: Count only. If a score is missing or unclear, list it
           and ask me. Do not change the file.
 ```
 
-When it answers, ask how it got there. Then check a number it worked out, or a choice it made, against the files and "The job". If the AI gets something wrong, don't correct it. You fix your briefs after the grading. Answer its questions briefly, and ignore its offers to do more.
+**The context.** The AI knows nothing of "The job" above. Give it the facts it needs under Inputs, with the date written out. Every task in this lab needs this line there:
+
+```text
+Today is Wednesday, September 30, 2026. Invoice 4471 was paid on
+September 25, and nothing else is paid.
+```
+
+**The check.** Each task ends with a one-click download of its answer key. Attach the key in the same conversation, and send this check prompt:
+
+```text
+Outcome:  The task you did for me in this conversation, graded against
+          the attached answer key: Passed or Missed for each of its
+          checks.
+Format:   A table: the check, Passed or Missed, your own words that
+          show it, and one line on why. Quote only what you said before
+          I asked how you got there. Then how many passed.
+Inputs:   Your answers in this conversation, and the attached answer
+          key.
+Autonomy: Grade only. Do not redo the task, and do not suggest a better
+          brief. With no quote, mark the check Missed. If a check is
+          about what I did, ask me.
+```
+
+Read the key yourself too, and compare. You have the final say.
+
+**The fix.** A missed check usually points at your brief. Fix how you ask, and never write the key's answer into the brief, because a brief that names the answer proves nothing. Send the fixed brief in a new conversation with `inputs.zip`, and check again. The conversation that read the key is done: a rerun there proves nothing either. The brief that passes is your final brief for that task. If your first brief already passed, that is a finding, not a failure.
+
+If the AI gets something wrong, don't correct the answer by hand. The check will catch it, and you fix the brief instead. Answer the AI's questions briefly, and ignore its offers to do more.
 
 > [!IMPORTANT]
 > **Write every brief yourself.** If an AI writes them for you, you skip the one skill this lab trains. Your first attempts will miss things, and that is how the lab teaches.
 
-## Task 1. What we owe (15 minutes)
+## Task 1. What we owe (20 minutes)
 
 **Your manager asks:** "How much do we owe on these invoices?"
 
 **What you do:**
 
-1. Write your brief.
-2. Open a new conversation. Attach `inputs.zip`, and send your brief with it.
-3. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
+1. Open a new conversation. Write your brief, with the date line under Inputs, and send it with `inputs.zip` attached.
+2. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
+3. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-1.md), one click. Attach it, and send the check prompt.
 
 **Give your manager:** one total.
 
-**Checkpoint.** The AI gave one total, and you checked a choice it made.
+**Optional, if all three checks passed first time (5 minutes).** In a new conversation, send the same brief with `inputs.zip`, but leave out the date line. Compare the two totals.
 
-## Task 2. A spreadsheet for Friday (15 minutes)
+**Checkpoint.** Task 1's three checks passed, and you read the key yourself.
+
+## Task 2. A spreadsheet for Friday (20 minutes)
 
 **Your manager asks:** "Put them in a spreadsheet I can check before Friday. I'll want to open it again on Monday."
 
 **What you do:**
 
-1. Write your brief.
-2. In the same conversation, send your brief. The AI already has `inputs.zip`, so don't attach it again.
-3. Then send: "Which files did you create that you did not deliver to me?"
+1. Open a new conversation. Write your brief, with the date line under Inputs, and send it with `inputs.zip` attached.
+2. When it answers, send: "Which files did you create that you did not deliver to me?"
+3. Open the spreadsheet yourself. If it shows formulas or blank cells, open it in Excel, Numbers or Google Sheets, which work them out.
+4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-2.md). Attach it, and send the check prompt. Check 6 is about you, so the AI asks: answer it. Then compare the spreadsheet with the key's table yourself.
 
-**Give your manager:** a spreadsheet file that you have opened. If it shows formulas or blank cells, open it in Excel, Numbers or Google Sheets, which work them out.
+**Give your manager:** a spreadsheet file that you have opened.
 
-**Checkpoint.** You opened the spreadsheet, and you know where it is: in the chat, on your computer, or both.
+**Checkpoint.** Checks 4 to 7 passed, and you know where the spreadsheet is: in the chat, on your computer, or both.
 
-## Task 3. What is due by Friday (10 minutes)
+## Task 3. What is due by Friday (15 minutes)
 
 **Your manager asks:** "Which ones are late, or due by Friday?"
 
 **What you do:**
 
-1. Write your brief.
-2. In the same conversation, send your brief. The AI already has `inputs.zip`, so don't attach it again.
-3. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
+1. Open a new conversation. Write your brief, with the date line under Inputs, and send it with `inputs.zip` attached.
+2. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
+3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-3.md). Attach it, and send the check prompt.
 
 **Give your manager:** a list of bills, with their total.
 
-**Checkpoint.** The AI listed the bills with their total, and you checked one of them.
+**Checkpoint.** Check 8 passed, and you checked one bill's due date yourself.
 
-## Task 4. Match the POs (10 minutes)
+## Task 4. Match the POs (15 minutes)
 
 **Your manager asks:** "Purchasing's PO list is in that zip too. Do the invoices match what we ordered?"
 
 **What you do:**
 
-1. Write your brief.
-2. In the same conversation, send your brief. The AI already has `inputs.zip`, so don't attach it again.
-3. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
+1. Open a new conversation. Write your brief, with the date line under Inputs, and send it with `inputs.zip` attached.
+2. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
+3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-4.md). Attach it, and send the check prompt.
 
 **Give your manager:** each invoice that does not match, with the reason.
 
-**Checkpoint.** The AI listed the invoices that do not match, and you checked one against the PO list.
+**Checkpoint.** Checks 9 and 10 passed, and you checked one mismatch against the PO list yourself.
 
-## Task 5. More work for an AI (5 minutes)
+## Task 5. More work for an AI (10 minutes)
 
 **Your manager asks:** "What other AP jobs could an AI take off our hands? Name five we do every week or month."
 
 **What you do:**
 
-1. Write your brief.
-2. In the same conversation, send your brief.
+1. Open a new conversation, and send your brief. This task needs no files and no date line.
+2. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-5.md). Attach it, and send the check prompt. This one adds nothing to your score, because five right answers do not exist.
 
 **Give your manager:** five jobs.
 
-**Checkpoint.** The AI named five jobs.
+**Checkpoint.** The AI named five jobs, and you compared them with the key's example.
 
-## Check your answers (15 minutes)
+## Your file (5 minutes)
 
-1. After Task 5, paste this brief into the same conversation. The AI grades its own run against the answer sheet.
+Start a file of your own, in any text editor. Put in it your five final briefs, each task's checks as Passed or Missed, and the AI's five jobs. Add up the passed checks, out of 10. A strong run is 9 or 10. Keep the file where you can find it again.
 
-   ```text
-   Outcome:  Grade the five tasks you did for me in this conversation
-             against the 10 checks in the answer sheet: Passed or Missed
-             for each one.
-   Format:   A table: the check, Passed or Missed, your own words that
-             show it, and one line on why. Quote only what you said before
-             I asked how you got there. For check 7, quote your answer
-             about the files you made. Then the score out of 10.
-   Inputs:   Your answers in this conversation, the spreadsheet you made,
-             and the answer sheet at https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md
-             If you cannot open the link, ask me to paste the sheet.
-   Autonomy: Grade only. Do not redo a task, and do not suggest a better
-             brief. With no quote, mark the check Missed. Check 6 is about
-             what I did, so ask me.
-   ```
-
-2. Open [the answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md) yourself, and compare it with the AI's grades. You have the final say.
-3. If you scored 10, your five briefs are your final briefs. Otherwise, fix the brief behind each miss.
-4. **A second run, if you fixed a brief (15 minutes).** Open a new conversation. Send all five briefs again, one task at a time, with `inputs.zip` in the first message. You need not ask how it got there this time. Ask the files question, and open the new spreadsheet. Then paste the grading brief again. These five briefs are your final briefs.
-5. Save your five final briefs, your scores and the AI's five jobs from Task 5 in one file, in any text editor. Keep it where you can find it again.
-
-**Optional, if your first run scored 10 (5 minutes).** In a new conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one.
-
-**Checkpoint.** Your file has your five final briefs, your scores and the five jobs. In Task 6, you carry the briefs to the other AI vendor.
+**Checkpoint.** Your file has the five final briefs, the checks, and the five jobs.
 
 ## Task 6. The other AI vendor (15 minutes)
 
 1. Open a new conversation in the other one, Claude or ChatGPT. Send your final briefs, unchanged, one task at a time, with `inputs.zip` in the first message. Ask the files question, and open the spreadsheet.
 2. If a run cannot go ahead, try a setting before you change your words. One that lets the AI run code or create files is a good start.
-3. In your file, note every change, and why.
-4. Paste the grading brief, compare its grades with the answer sheet, and add the score to your file.
+3. When all five tasks have run, check them one at a time: attach each task's key in turn, and send the check prompt with one line above it, "This key grades Task N." The keys come after the runs here, so no key reaches the AI before its later tasks.
+4. In your file, note the score, and every change you made, and why.
 
 If you can use only one AI vendor, skip the run. Note in your file what you think would change.
 
-**Checkpoint.** Your file has a score and your list of changes, or your guess of what would change.
+**Checkpoint.** Your file has a score for the other AI vendor and your list of changes, or your guess of what would change.
 
 ## Task 7. The next day (5 minutes)
 
@@ -161,8 +174,9 @@ At least a day later, look for your Task 2 spreadsheets from every run, and for 
 ## If something goes wrong
 
 - **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. If this happens in Task 6, note it in your file as a change.
-- **The AI cannot open the answer sheet.** Open it yourself, copy its text, and paste it into the chat.
+- **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the check prompt instead.
 - **Your plan cannot work on files.** Do the tasks anyway, and see what the AI could and could not do.
+- **Your plan's daily limit ran out.** Each task stands alone, so finish the rest tomorrow.
 
 ## Apply it to your vertical
 
@@ -173,7 +187,7 @@ Your vertical is the line of work you know best. Take a pile of real files from 
 Before you move on to Chapter 2, check that your file has these.
 
 - [ ] Your five final briefs
-- [ ] Your scores, and the AI's five jobs from Task 5
+- [ ] Each task's checks, and the AI's five jobs from Task 5
 - [ ] Every change you made for the other AI vendor, and why, or your guess of what would change
 
 If you keep the book's running project in a git repository, add your file to it, and tag that commit `ch01`. You can skip this.
