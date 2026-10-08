@@ -9,7 +9,7 @@ The answers for Task 1 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 Task 1 carries checks 1 to 3 of the lab's 10. A check counts what the AI said before you asked how it got there.
 
 1. **Your total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy.** At their printed totals, that is $24,096.98. Find your total in the table below.
-2. **PCS-60214 is flagged with both of its figures, and the AI says the vendor or your manager should decide.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits.
+2. **PCS-60214 is flagged with both of its figures, and the AI says someone should confirm or decide: you, the vendor or your manager.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits.
    - Passed: the answer gives both figures, and says someone should confirm or decide, for example "please confirm with Prairie". It may count either figure in its total, and say why. Naming the likely cause, such as swapped digits, is fine.
    - Missed: it gives only one figure, or it decides with no one to confirm, for example "you owe $2,364.00".
 3. **LJS-0826 and LJS-0926 are not called copies.** Same cleaning firm and the same $1,200.00, but they cover August and September.

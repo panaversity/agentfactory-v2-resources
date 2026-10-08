@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The check, not scored
 
-**Each of the five jobs comes back every week or month, has clear inputs, and ends in something a person checks.** A one-off job, a job with no files or sources to work from, or a job whose result nobody reviews, is a weak pick.
+**Each of the five jobs comes back every week or month, has clear inputs, and ends in something a person checks.** A one-off job, a job with no files or sources to work from, or a job whose result nobody reviews, is a weak pick. Mark the check Passed when most of the five meet the bar, and name any that fall short, with why.
 
 For example:
 

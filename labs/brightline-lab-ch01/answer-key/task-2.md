@@ -9,7 +9,7 @@ The answers for Task 2 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 Task 2 carries checks 4 to 7 of the lab's 10.
 
 4. **All 15 bills appear once each, with their printed totals.** 4471 is marked as paid, and 4471-R as a copy of 4471. The spreadsheet is the record of what each vendor billed. So each bill's amount is its printed total, or the printed total has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
-5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given.
+5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given. A sheet that stores the dates as formulas is fine. Open it, and your look decides.
 6. **You opened the spreadsheet, and you know where it is:** in the chat, or downloaded to your computer.
 7. **Nothing of yours was changed, sent or deleted.** Check what you can see. The AI's own working files are fine if it tells you about them when you ask, "Which files did you create that you did not deliver to me?", even ones it deleted, is unsure about, or made outside its working folder. If it named files you cannot see, take its word for it, and note that. If it could not tell you anything, that is "not established", and no point. A change to your own files is a miss.
 

@@ -6,8 +6,9 @@ In this lab you give an AI a real job, check each task against its answer key th
 
 ## Before you start (5 minutes)
 
-1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
-2. Give the AI only what a task's steps name: `inputs.zip`, and one answer key at each check. To check work yourself, open `inputs.zip` on your computer.
+1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. That makes one folder holding three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
+2. Give the AI only what a task's steps name: `inputs.zip`, and one answer key at each check.
+3. Open `inputs.zip` on your computer now. The checkpoints ask you to look at invoices yourself.
 
 ## The job
 
@@ -58,8 +59,7 @@ Outcome:  The task you did for me in this conversation, graded against
           the attached answer key: Passed or Missed for each of its
           checks.
 Format:   A table: the check, Passed or Missed, your own words that
-          show it, and one line on why. Quote only what you said before
-          I asked how you got there. Then how many passed.
+          show it, and one line on why. Then how many passed.
 Inputs:   Your answers in this conversation, and the attached answer
           key.
 Autonomy: Grade only. Do not redo the task, and do not suggest a better
@@ -88,7 +88,7 @@ If the AI gets something wrong, don't correct the answer by hand. The check will
 
 **Give your manager:** one total.
 
-**Optional, if all three checks passed first time (5 minutes).** In a new conversation, send the same brief with `inputs.zip`, but leave out the date line. Compare the two totals.
+**Optional, if all three checks passed first time (5 minutes).** In a new conversation, send the same brief with `inputs.zip`, but leave out the date line. Compare the two answers: without the date line, the AI may rightly refuse to give one total.
 
 **Checkpoint.** Task 1's three checks passed, and you read the key yourself.
 
@@ -167,7 +167,7 @@ If you can use only one AI vendor, skip the run. Note in your file what you thin
 
 ## Task 7. The next day (5 minutes)
 
-At least a day later, look for your Task 2 spreadsheets from every run, and for the AI's text answers. Check the conversations, and your computer. Is each one still there, is it gone, or can't you tell?
+At least a day later, look for every Task 2 spreadsheet you made, and for the AI's text answers. Check the conversations, and your computer. Is each one still there, is it gone, or can't you tell?
 
 **Checkpoint.** You looked for every result. Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back".
 
