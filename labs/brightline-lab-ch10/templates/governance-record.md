@@ -27,6 +27,6 @@ THE EVIDENCE
   Residual risk:
 
 RE-CHECK IF: model, feature, connector or permission, data, audience,
-policy, vendor term, or business consequence changes.
+policy, AI vendor term, or business consequence changes.
 
 Write OPEN QUESTION in any field you cannot yet answer.

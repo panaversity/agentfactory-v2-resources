@@ -2,11 +2,11 @@
 
 These pairs are known duplicates. A redacted file that still works must flag all four.
 
-- V1003 Scioto Pallet Co. and V1033 Scioto Pallet Company
-- V1004 Tri-County Freight Inc. and V1034 TriCounty Freight Inc
-- V1005 Lakeshore Packaging LLC and V1035 Lakeshore Pkg LLC
-- V1007 Rosa Delgado and V1036 Delgado Cleaning Services
+- V-2003 Fairfield Pallet Co. and V-2033 Fairfield Pallet Company
+- V-2004 Mid-State Freight Inc. and V-2034 MidState Freight Inc
+- V-2005 Harbor Packaging LLC and V-2035 Harbor Pkg LLC
+- V-2007 Rosa Delgado and V-2036 Delgado Cleaning Services
 
 This pair is known **not** to be a duplicate. A good check must not flag it:
 
-- V1001 Midwest Packaging Inc. and V1002 Midwest Packaging Supply LLC. Different companies, different tax IDs.
+- V-2001 Union Packaging Inc. and V-2002 Union Packaging Supply LLC. Different companies, different tax IDs.

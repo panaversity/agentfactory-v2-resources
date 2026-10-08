@@ -8,14 +8,14 @@ Small suppliers, including sole proprietors who depend on prompt payment. They n
 
 | Vendor | Invoice | Received | Days to Dec 1 | Past 15 days by | Must be paid by |
 | --- | --- | --- | --- | --- | --- |
-| Rosa Delgado | INV-6219 | 2026-10-21 | 41 | 26 days | already late |
-| Hollis Signs | INV-6226 | 2026-10-24 | 38 | 23 days | already late |
-| Bluegrass Twine Co. | INV-6233 | 2026-10-29 | 33 | 18 days | already late |
+| Rosa Delgado | INV-6219 | 2026-11-12 | 19 | 4 days | already late |
+| Hollis Signs | INV-6226 | 2026-11-13 | 18 | 3 days | already late |
+| Bluegrass Twine Co. | INV-6233 | 2026-11-13 | 18 | 3 days | already late |
 | Marcus Webb | INV-6240 | 2026-11-20 | 11 | not yet | Saturday, December 5 |
 | Fresh Start Floor Care | INV-6247 | 2026-11-24 | 7 | not yet | Wednesday, December 9 |
 | Patriot Pest Control Inc. | INV-6254 | 2026-11-27 | 4 | not yet | Saturday, December 12 |
 
-Three suppliers were already past the promise, owed USD 5,115.50 in total. Two more reach day 15 before the following run on Friday, December 11, so they must be paid on December 4 too: Marcus Webb and Fresh Start Floor Care. Patriot Pest Control can wait for the December 11 run.
+Three suppliers were already past the promise, owed USD 5,115.50 in total. Their invoices are not due until December 12 and 13, so without the list they would wait for the December 11 run. Two more reach day 15 before the following run on Friday, December 11, so they must be paid on December 4 too: Marcus Webb and Fresh Start Floor Care. Patriot Pest Control can wait for the December 11 run. Paying an invoice before it is due needs Dave's approval, and the promise is his own memo, not yet a KSoR concept (K10).
 
 The 14 vendors on the list are all large suppliers on 2/10 terms, and every discount is still open on the December 4 run. The discounts total USD 6,882.62, the sum of the discount column in the list, each rounded to the cent. Paying the five small suppliers too costs no discount.
 

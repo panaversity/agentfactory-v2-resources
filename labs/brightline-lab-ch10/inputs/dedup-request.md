@@ -1,6 +1,6 @@
 # Request: find duplicate vendors before year-end tax forms
 
-**From:** Maria, AP lead
+**From:** Maria, office manager
 **Date:** Friday, December 4, 2026
 
 Before we prepare year-end tax forms, I need every vendor that appears twice in the vendor master. Two records for one vendor means two tax forms, or a payment to the wrong account.

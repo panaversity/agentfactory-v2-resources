@@ -1,6 +1,6 @@
 # Route-and-send spec: AP Worker
 
-No vendor names in this file. It must work on either vendor unchanged.
+No AI vendor's name in this file. It must work on either AI vendor unchanged.
 
 ## Route
 

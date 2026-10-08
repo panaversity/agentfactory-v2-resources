@@ -6,7 +6,7 @@
 
 ## The situation
 
-Brightline Wholesale Supply is a U.S. wholesale supplier with about 40 staff. Its AP Worker answers policy questions, prepares the Thursday pre-run note and sends routine vendor replies. In the first nine days of December 2026, four things went wrong. Write your prediction (below) first, then read `inputs/december-events.md`.
+Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio, with about 40 staff. Its AP Worker answers policy questions, prepares the Thursday pre-run note and drafts vendor replies, which Maria, the office manager, sends. In the first nine days of December 2026, four things went wrong. Write your prediction (below) first, then read `inputs/december-events.md`.
 
 Dave Kowalski, the controller, wanted to turn the worker off. You will help him keep it running on terms he can defend.
 
@@ -43,14 +43,14 @@ Read `inputs/dedup-request.md` and open `inputs/vendor-master-extract.csv`. Use 
 
 Use `templates/route-and-send-spec.md` and `templates/port-log.md`.
 
-1. **Write the spec once, with no vendor names.** For the AP Worker, state:
+1. **Write the spec once, with no AI vendor's name.** For the AP Worker, state:
    - the route its work data may use, and what that route must have: training off, no personal accounts, chat history kept or deleted, memory on or off
    - the actions it may take on its own, the actions that need approval and by whom, and the actions it must never be able to take. Sending anything to the auditors is in the last group.
-2. **Apply it on one vendor.** Use the account you have. For each line of the spec, record the setting you used and where it lives. If a control needs admin rights you do not have, record where an admin would set it, and what you did instead on your own plan.
-3. **Port it to the other vendor.** Apply the same spec, line by line. If you have no account there, use the vendor's help pages and say so.
+2. **Apply it on one AI vendor.** Use the account you have. For each line of the spec, record the setting you used and where it lives. If a control needs admin rights you do not have, record where an admin would set it, and what you did instead on your own plan.
+3. **Port it to the other AI vendor.** Apply the same spec, line by line. If you have no account there, use its help pages and say so.
 4. **Log the port.** For each line: same, renamed, needs another plan, or cannot be enforced. For every "cannot be enforced," write the fallback. Removing the tool is always a fallback.
 
-The spec must not change between vendors. Only the settings change.
+The spec must not change between AI vendors. Only the settings change.
 
 ## Part D. Who the early-pay list left out (about 25 minutes)
 
@@ -78,7 +78,7 @@ Then write one takedown record for each item you take down. List every copy, whe
 
 ## Part F. Who signs (about 25 minutes)
 
-Read `inputs/outputs-to-sign.md` and `inputs/ap-worker-role-contract-v4.md`. Use `templates/sign-off-matrix.md`.
+Read `inputs/outputs-to-sign.md` and `inputs/ap-worker-role-contract-draft6.md`. Use `templates/sign-off-matrix.md`.
 
 For each output, record: who must sign or approve, who sends it, and whether the worker may send it. Then check the schedule the auditors received, `inputs/schedule-sent-2026-12-03.md`, against `inputs/open-payables-register-2026-11-30.csv`. Find every line that does not match.
 
@@ -90,7 +90,7 @@ Read `inputs/incident-facts.md`. Use `templates/incident-note.md`. Write Maria's
 
 1. Fill in `templates/governance-record.md` for the workflow "year-end payables schedules for the auditors."
 2. Fill in `templates/interim-ai-policy.md`: one page for Dave to approve. Do not call it official.
-3. Write `role-contract/ap-worker-role-contract-v5.md` from version 4. Change only what this lab showed must change, and list each change at the top.
+3. Write `role/ap-worker-role-contract.md`, Draft 7, from Draft 6. Change only what this lab showed must change, and list each change at the top.
 
 ## Check your work
 
@@ -101,5 +101,5 @@ Compare with `answer-key/` only after you finish each part. Score yourself with 
 - **You are not sure how to delete columns.** In most spreadsheets, select the column header, right-click and choose Delete. Then save as CSV.
 - **The AI hesitates over the redacted file because it still holds partial tax IDs.** That is reasonable caution. Tell it the data is synthetic and invented for a training lab, and point to the zeros at the start of every tax ID.
 - **The AI finds a fifth duplicate.** Check it against `inputs/known-duplicates.md`. If it is the decoy, your redaction removed the column that tells them apart, or the AI matched on names alone. Ask it which columns it used.
-- **You cannot see tool or action permissions.** They are admin settings on business plans. Record where an admin would set them, and use the fallback: no email tool connected, the worker drafts into a folder.
+- **You cannot see tool or action permissions.** On Claude, you set each connector tool's level yourself, in the connector's settings (Chapter 7). On business plans, an admin can also block a tool or an action for everyone. If you cannot find either, record where an admin would set it, and use the fallback: no email tool connected, the worker drafts into a folder.
 - **You cannot tell if a knowledge item is draft or stable.** If no recorded approval exists, it is not stable.

@@ -30,7 +30,7 @@ THE EVIDENCE
   Monitored by: Maria   How often: each request
   Residual risk: a register error that both the worker and Dave copy
 
-RE-CHECK IF: model, feature, connector or permission, data, audience, policy, vendor term, or business consequence changes.
+RE-CHECK IF: model, feature, connector or permission, data, audience, policy, AI vendor term, or business consequence changes.
 ```
 
 ## Interim AI policy (example)
@@ -43,11 +43,11 @@ RE-CHECK IF: model, feature, connector or permission, data, audience, policy, ve
 
 Review date: March 31, 2027.
 
-## Role Contract version 5: changes
+## Role Contract, Draft 7: changes
 
-1. **Authority, Execute:** remove "send routine vendor replies." The worker drafts every reply, and Maria sends. The email tool's send action is blocked, or the email tool is not connected. **Accept** a version 5 that keeps routine sending only if it names a send step that checks the recipient and was tested to refuse the auditors. That step does not exist yet at Brightline. **Do not accept** a folder or a rule in the instructions as the restriction.
-2. **Authority, Never:** add "send or sign anything on Dave's behalf" and "score or rank individual staff."
+1. **Authority, Draft:** add "Anything on the sign-off list goes to its signer as a draft, with no signature block. The signer approves it and sends it." Routine vendor replies stay as they are: the worker drafts, and Maria sends. If an email tool is connected, its send action stays blocked. **Accept** a Draft 7 that lets the worker send routine replies only if it names a send step that checks the recipient and was tested to refuse the auditors. That step does not exist yet at Brightline. **Do not accept** a folder or a rule in the instructions as the restriction.
+2. **Authority, Never:** add "sign anything, or put a person's signature block on a draft" and "score or rank individual staff."
 3. **Knowledge:** add the small-supplier commitment as a sixth concept once Dave approves it.
 4. **Escalation:** add "any request involving an auditor, tax authority or court goes to Dave."
 
-**Do not accept** a version 5 that only adds "be careful with auditors" to the instructions. A rule the worker can break is not a control.
+**Do not accept** a Draft 7 that only adds "be careful with auditors" to the instructions. A rule the worker can break is not a control.

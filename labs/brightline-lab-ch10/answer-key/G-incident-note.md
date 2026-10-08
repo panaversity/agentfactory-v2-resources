@@ -1,7 +1,7 @@
 # Key: Part G (example)
 
 - To: Dave Kowalski, Controller
-- From: Maria, AP lead
+- From: Maria, office manager
 - Sent: Monday, December 7, 2026, 7:00 a.m.
 
 ## 1. Stop the spread
@@ -21,10 +21,10 @@ You, as the person who owns this risk. Brightline has no incident path yet.
 
 ## 4. What I do not know
 
-How long the vendor keeps the chat under my setting. Whether anything else was shared.
+How long the AI vendor keeps the chat under my setting. Whether anything else was shared.
 
 ## 5. Waiting for your instructions on
 
-Deleting the chat and files, asking the vendor to delete the data, telling the 23 contractors, and whether to get legal advice.
+Deleting the chat and files, asking the AI vendor to delete the data, telling the 23 contractors, and whether to get legal advice.
 
 **Marking.** The note must have no guessing, no defense, the onward spread, and must leave deletion and notification to Dave. A note that says "I deleted the chat to be safe" fails Part G.
