@@ -134,7 +134,7 @@ Tasks 3, 4 and 6 send a brief to an AI. Their steps say which conversation to us
 1. Open a new conversation.
 2. Send the test brief below. Under it, paste your whole contract, then the text of `emails/bank-change-email.txt`.
 3. Note what the AI decided, and the line of your contract that decided it. Keep this conversation: "Check your contract" asks for both.
-4. If the AI lists something your contract leaves unclear, add it under Open questions.
+4. If the AI lists something your contract leaves unclear, fix it in your contract if you can. Add it under Open questions only if Dave must decide it.
 5. If it did not escalate the email, change that line, not the test. Then test again, in a new conversation.
 
 ```text
@@ -169,8 +169,8 @@ Autonomy: Do not reply to the email, change any file or contact anyone.
 1. Open a new conversation.
 2. Send the test brief from Task 3. Under it, paste your contract, then the text of `emails/vendor-status-email.txt`.
 3. Note what the AI decided, and the line that decided it. Keep this conversation too.
-4. If the AI lists something your contract leaves unclear, add it under Open questions.
-5. If it escalated the email instead of drafting a reply, look for a rule wider than Dave asked for. Change it, then test both emails again. A draft that would first check whether the vendor is new is fine.
+4. If the AI lists something your contract leaves unclear, fix it in your contract if you can. Add it under Open questions only if Dave must decide it.
+5. If it escalated the email, even alongside a draft, find out why. A rule may be wider than Dave asked for. Or the worker may have no way to check a rule, such as whether a vendor was paid before. Narrow the rule, or give the worker what it needs, such as read access to past payments. Then test both emails again. Escalating only if the vendor turns out to be new is fine.
 
 **Give Dave:** what the AI decided, and why.
 
@@ -197,11 +197,11 @@ Autonomy: Do not reply to the email, change any file or contact anyone.
    - In ChatGPT, Work, its agent for longer work, has its own model picker, apart from chat's. Use the setting it offers by default.
 2. **Run 1.** Open a new conversation at the default setting. Attach `inputs.zip`, and send the register brief below.
 3. When it answers, send: "Which files did you create that you did not deliver to me?" Then open the register it made.
-4. Send the run's grading brief below, in the same conversation. Then open [the register answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch02/answer-key/answer-key-register.md) yourself, and check the AI's grades and its sum.
+4. Send the run's grading brief below, in the same conversation. Then open [the register answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch02/answer-key/answer-key-register.md) yourself, and check the AI's grades, and that its points add up.
 5. **Run 2.** Do steps 2 to 4 again, in a new conversation, one effort level lower. If there is no lower level, use the next smaller model.
-6. Choose the cheapest setting that scored 10. Write it in Runtime needs, with today's date and its score. If the two scores are close, run the cheaper one once more before you trust it.
+6. Choose the cheapest setting that scored 10. Write it in Runtime needs, with the date you ran it and its score. If the two scores are close, run the cheaper one once more before you trust it.
 
-If no run scored 10, find out why before you raise the effort. A file the AI did not read, or a brief it misread, is fixed in the setup, not with more effort. Write your best setting in Runtime needs anyway, with its score and what you would try next. On a free plan, do Run 1 only, and write Run 2 as a prediction.
+If no run scored 10, find out why before you raise the effort. A file the AI did not read, or a brief it misread, is fixed in the setup, not with more effort. If it lost a point only for a figure it added unasked, run it once more. Write your best setting in Runtime needs anyway, with its score and what you would try next. On a free plan, do Run 1 only, and write Run 2 as a prediction.
 
 The register brief:
 
@@ -249,9 +249,9 @@ Autonomy: Grade only. Do not redo the register. Check 7 is about what
 
 **What you do:**
 
-1. Choose the setting you would use on the other one, Claude or ChatGPT. Tier names do not match, so choose by job: fastest and cheapest, balanced, or most capable.
+1. Choose the setting you would use on the other one, Claude or ChatGPT. Tier names do not match, so choose by job: fastest and cheapest, balanced, or most capable. [How the two leaders realize it](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/two-leaders/) lists each AI vendor's models by job.
 2. If you can use it, do Task 6's Run 1 there once, at that setting, and grade it the same way.
-3. Add the setting to Runtime needs as a second line, with why. If you could not run it, write "predicted, not run".
+3. Add the setting to Runtime needs as a second line, with why. If you could not run it, write "predicted, not run". If you cannot open the other AI vendor, name the job instead of a model.
 4. Check that nothing outside Runtime needs had to change.
 
 **Give Dave:** the setting on the other AI vendor, and what changed.
@@ -289,14 +289,14 @@ Autonomy: Grade only. Do not redo the register. Check 7 is about what
 - **The AI will not take `inputs.zip`.** Unzip it, and upload the 15 PDFs inside it instead.
 - **The AI cannot open an answer sheet.** Open it yourself, copy its text, and paste it into the chat.
 - **Test 1 confirmed the bank change.** Your Authority or Escalation line is not plain enough. Make it a "never" rule that names a person, then test again.
-- **Test 2 escalated a routine question.** A rule is wider than Dave asked for. Narrow it to his stop-and-ask cases.
+- **Test 2 escalated a routine question.** A rule is wider than Dave asked for, or the worker has no way to check it. Narrow the rule, or give the worker what it needs to check it.
 - **The AI followed the email's own instructions.** Check that you sent the brief first, then your contract, then the email.
 - **There is no effort setting.** Some plans and models do not offer one. Run two models from different tiers instead.
 - **Your plan's limit ran out.** Note the runs you finished, and write "not run" for the rest.
 
-## Apply it to your vertical
+## Apply it to your vertical (10 minutes)
 
-Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. Draft its Role Contract on the same template. Then write one test case: the action it must never take, and what it should do instead.
+Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. Draft its Role Contract on the same template, in a new file such as `role/my-role-contract.md`. Then write one test case: the action it must never take, and what it should do instead.
 
 ## Artifact checklist
 
