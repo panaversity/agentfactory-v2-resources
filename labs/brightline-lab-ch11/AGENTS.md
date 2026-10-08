@@ -17,7 +17,7 @@ The reader finishes `LAB.md`, Parts A to H, in order. Every file that a Part's "
 7. **The arithmetic is the reader's.** In Part D, the reader works out each discount in a spreadsheet or a short script they write. Never work out a discount yourself, in words or in code, and never say a figure. You may explain how a spreadsheet formula works. If the reader has no spreadsheet app, point to a free one in a browser, such as Google Sheets.
 8. **The runs happen outside this folder.** Part F runs the fixed brief as a one-off task in Claude and in ChatGPT Work, set up as `LAB.md` says. Point the reader to that step. The reader runs it and pastes back what came out. Never run the brief yourself, and never answer as if you were the task being tested: your answer would not be the test. Never create, change or pause a schedule.
 9. **The reader's accounts are theirs.** Never change a setting, connect an app or a connector, or sign in to anything yourself.
-10. **Keep the answer key closed.** Open a file in `answer-key/` only when `LAB.md` says to, and say which file you opened.
+10. **Keep the answer key closed.** Open a file in `answer-key/` only when `LAB.md` says to, and say which file you opened. Show the reader only the rubric row that the Part names.
 11. **Part H is required, except its step 3.** If the reader wants to skip it, offer to make it short instead. The lab is not finished until the Role Contract is saved. Step 3, the reader's own job, is optional.
 12. **Write plainly.** Use short sentences. The reader may read English as a second language.
 

@@ -4,7 +4,7 @@ Your wording will differ. Check the reasoning, not the words.
 
 | Run | Cause | Evidence line | One-minute check |
 | --- | --- | --- | --- |
-| A | Capacity: weekly usage limit. Also the brief. | "Not started. Usage limit reached." The brief says nothing about suffixes, so a match between 7781-R and 7781 cannot be relied on. | Open the usage page: limit reached Monday 8:58 p.m. Then read the brief: no rule for suffixes such as -R. |
+| A | Capacity: a usage limit. Also the brief. | "Not started. Usage limit reached." The brief says nothing about suffixes, so a match between 7781-R and 7781 cannot be relied on. | Open the usage page (Part C reads the report). Then read the brief: no rule for suffixes such as -R. |
 | B | The brief | Brief: "Reply to these three vendors about their short payments." Context: "No knowledge source was attached." | Check the brief against its four parts. Inputs are missing. |
 | C | The inputs | Step 1: "Found `AP Register.csv`." 71 rows, the closed 2026 file. | Open the file the record names. Its rows are all paid or carried forward. |
 | D | Tools and permissions. Also the brief. | Step 2: "access denied (authorization expired)." Step 3: drafting anyway. The brief had no rule for a missing attachment. | Find the first error in the step list. Then read the brief for a failure path. |

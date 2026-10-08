@@ -1,6 +1,6 @@
 # Diagnosis
 
-| Failure | Cause (one or more) | The line in the record that shows it | The one-minute check that confirms it |
+| Failure | Cause (one or more) | The line in the record that shows it | The one-minute check that tests it |
 | --- | --- | --- | --- |
 | Tuesday: the duplicate check | | | |
 | Wednesday: the replies about short payments | | | |
