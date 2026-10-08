@@ -112,10 +112,10 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 ## Task 6. The other AI vendor (15 minutes)
 
-1. Open a new memory-free conversation in the other one, Claude or ChatGPT. Send your final briefs with `inputs.zip`, unchanged, one task at a time. Ask the files question, and open the spreadsheet.
+1. Open a new memory-free conversation in the other one, Claude or ChatGPT. Send your final briefs, unchanged, one task at a time, with `inputs.zip` in the first message. Ask the files question, and open the spreadsheet.
 2. If a run cannot go ahead, try a setting before you change your words. One that lets the AI run code or create files is a good start.
 3. In your file, note every change, and why.
-4. Paste the grading brief, and compare its grades with the answer sheet.
+4. Paste the grading brief, compare its grades with the answer sheet, and add the score to your file.
 
 If you can use only one AI vendor, skip the run. Note in your file what you think would change.
 
@@ -125,13 +125,13 @@ If you can use only one AI vendor, skip the run. Note in your file what you thin
 
 At least a day later, look for your Task 2 spreadsheets from every run, and for the AI's text answers. Check the conversations, and your computer. Is each one still there, is it gone, or can't you tell?
 
-**Checkpoint.** You know where each result is, or that it is gone. Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back".
+**Checkpoint.** You looked for every result. Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back".
 
 ## If something goes wrong
 
-- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. Note that as a change.
+- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. If this happens in Task 6, note it in your file as a change.
 - **The AI cannot open the answer sheet.** Open it yourself, copy its text, and paste it into the chat.
-- **Your plan cannot work on files.** Do the tasks anyway, and note what the AI could and could not do.
+- **Your plan cannot work on files.** Do the tasks anyway, and see what the AI could and could not do.
 
 ## Apply it to your vertical
 
