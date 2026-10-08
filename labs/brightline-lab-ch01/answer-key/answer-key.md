@@ -1,6 +1,6 @@
 # Lab 1 answer key: Tasks 1 to 5
 
-The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Every name, number and company in this lab is invented.
+The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: Lab 1, a real job, checked. Every name, number and company in this lab is invented.
 
 **How this sheet is used.** At "Check your answers", your AI grades its own run against this sheet, and you compare its grades with it. You have the final say. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answer-key-port.md), linked after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
 

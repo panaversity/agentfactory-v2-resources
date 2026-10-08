@@ -1,8 +1,8 @@
-# Lab 1: one portable brief, two runtimes
+# Lab 1: a real job, checked
 
-Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: one portable brief, two runtimes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
+Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
-In this lab you give an AI a real job, check its work yourself, and carry your briefs to the other AI vendor. It takes about 90 minutes, and 5 minutes a day later. You need a Claude or ChatGPT account that can take uploaded files, and no code. Every name and number here is invented.
+In this lab you give an AI a real job, check its work yourself, and carry your briefs to the other AI vendor. It takes about 90 minutes, and 5 minutes a day later. You need a Claude or ChatGPT account that can take uploaded files. Every name and number here is invented.
 
 ## Before you start (5 minutes)
 
@@ -111,7 +111,7 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Optional, if your first run scored 10 (5 minutes).** In a new memory-free conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one.
 
-**Checkpoint.** Your file has your scores and your five final briefs. Together, they are the portable brief in this lab's title. It is portable if it works the same on both runtimes, the AI products Claude and ChatGPT.
+**Checkpoint.** Your file has your scores and your five final briefs. In Task 6, you carry them to the other AI vendor.
 
 ## Task 6. The other AI vendor (15 minutes)
 
