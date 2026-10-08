@@ -1,0 +1,37 @@
+vendor_id,legal_name,dba_name,address,city,state,zip,tin_type,tin,bank_routing,bank_account,contact_email,phone,small_supplier,onboarded
+V-2014,Apex Lift Service LLC,,5 Lift Ct,Akron,OH,44308,EIN,00-0005976,000000846,9215060238,ap@apex-lift-service.example,555-0174,N,2018-03-12
+V-1052,Northern Maple Paper,,45 Front St,Windsor,ON,N9A 1A1,BN,000001274,000000978,9776375120,ar@northernmaplepaper.example,555-0163,N,2018-02-19
+V-2016,Hocking Pallet Recycling LLC,,12 Yard Rd,Portsmouth,OH,45662,EIN,00-0001368,000000135,9358555542,ap@hocking-pallet-recycling.example,555-0137,N,2022-07-15
+V-2035,Harbor Pkg LLC,,2200 Harbor Avenue,Sandusky,OH,44870,EIN,00-0009279,000000994,9246958006,billing@harbor-pkg.example,555-0175,N,2026-04-24
+V-2012,Anchor Fasteners Corp.,,1200 Steel Ave,Dayton,OH,45402,EIN,00-0001757,000000492,9767482858,ap@anchor-fasteners.example,555-0176,N,2019-06-13
+V-2024,Delmar Industrial Gas Inc.,,1 Cylinder Rd,Canton,OH,44702,EIN,00-0005361,000000206,9447920935,ap@delmar-industrial-gas.example,555-0115,N,2023-07-11
+V-2008,Hollis Signs,,602 Main St,Delaware,OH,43015,SSN,000-00-4741,000000164,9344881885,ap@hollis-signs.example,555-0197,Y,2022-05-13
+V-2003,Fairfield Pallet Co.,,310 River Rd,Chillicothe,OH,45601,EIN,00-0006835,000000375,9717993321,ap@fairfield-pallet.example,555-0198,N,2020-07-17
+V-2033,Fairfield Pallet Company,,310 River Road,Chillicothe,OH,45601,EIN,00-0006835,000000331,9653873997,billing@fairfield-pallet-company.example,555-0136,N,2026-07-27
+V-2020,Granite State Shrink Wrap Co.,,6 Wrap Rd,Nashua,NH,03060,EIN,00-0003320,000000351,9730495036,ap@granite-state-shrink-wrap.example,555-0180,N,2021-02-12
+V-2017,Cardinal Office Products Inc.,,400 Paper Ln,Cincinnati,OH,45202,EIN,00-0009849,000000319,9386242237,ap@cardinal-office-products.example,555-0143,N,2025-04-10
+V-2022,Lena Park,Park Bookkeeping,220 Pine St,Westerville,OH,43081,SSN,000-00-7253,000000894,9243547255,ap@lena-park.example,555-0179,Y,2024-08-16
+V-2013,Meridian Labels Inc.,,77 Print St,Peoria,IL,61602,EIN,00-0005092,000000151,9207206430,ap@meridian-labels.example,555-0172,N,2025-06-10
+V-2001,Union Packaging Inc.,,2100 Alum Creek Dr,Columbus,OH,43207,EIN,00-0005046,000000647,9189309447,ap@union-packaging.example,555-0162,N,2024-07-12
+V-2011,Northwind Stretch Film Inc.,,41 Bay View Rd,Toledo,OH,43604,EIN,00-0004593,000000847,9807604886,ap@northwind-stretch-film.example,555-0166,N,2022-01-11
+V-2028,Eastside Print & Copy,,505 Broad St,Columbus,OH,43215,EIN,00-0004717,000000774,9235405031,ap@eastside-print-copy.example,555-0167,Y,2019-08-19
+V-2036,Delgado Cleaning Services,,PO Box 214,Marion,OH,43301,SSN,000-00-1840,000000791,9388496305,billing@delgado-cleaning-services.example,555-0129,Y,2026-01-28
+V-2025,Capitol Uniform Rental LLC,,310 Linen St,Columbus,OH,43206,EIN,00-0002406,000000572,9895975842,ap@capitol-uniform-rental.example,555-0164,N,2023-02-13
+V-2004,Mid-State Freight Inc.,,7 Depot St,Lima,OH,45801,EIN,00-0007035,000000631,9182019858,ap@mid-state-freight.example,555-0111,N,2022-03-11
+V-2032,Crossroads Truck Repair Inc.,,3 Diesel Dr,Mount Vernon,OH,43050,EIN,00-0008441,000000408,9302652798,ap@crossroads-truck-repair.example,555-0196,Y,2025-03-10
+V-2021,Marcus Webb,Webb Electrical Repair,48 Oak Dr,Newark,OH,43055,SSN,000-00-9478,000000817,9547793749,ap@marcus-webb.example,555-0151,Y,2022-09-16
+V-2029,Northline Staffing Inc.,,1000 Worker Way,Columbus,OH,43219,EIN,00-0009152,000000483,9555826493,ap@northline-staffing.example,555-0161,N,2019-03-18
+V-2034,MidState Freight Inc,,7 Depot Street,Lima,OH,45801,EIN,00-0007035,000000424,9654587262,billing@midstate-freight.example,555-0177,N,2026-07-21
+V-2018,Heartland Tape & Adhesive Corp.,,250 Glue St,Indianapolis,IN,46204,EIN,00-0003096,000000556,9154771761,ap@heartland-tape-adhesive.example,555-0190,N,2025-04-16
+V-2027,Patriot Pest Control Inc.,,18 Bug Ln,Hilliard,OH,43026,EIN,00-0007567,000000777,9834404296,ap@patriot-pest-control.example,555-0132,Y,2022-02-17
+V-2010,Ridgeway Corrugated Corp.,,900 Mill Rd,Erie,PA,16501,EIN,00-0008874,000000587,9508765199,ap@ridgeway-corrugated.example,555-0116,N,2023-03-13
+V-2007,Rosa Delgado,,19 Elm St,Marion,OH,43302,SSN,000-00-1840,000000718,9917076025,ap@rosa-delgado.example,555-0182,Y,2018-05-14
+V-2005,Harbor Packaging LLC,,2200 Harbor Ave,Sandusky,OH,44870,EIN,00-0009279,000000277,9945341398,ap@harbor-packaging.example,555-0113,N,2021-07-12
+V-2030,Valley Water Coolers LLC,,40 Spring St,Zanesville,OH,43701,EIN,00-0002213,000000437,9901524782,ap@valley-water-coolers.example,555-0178,Y,2019-08-15
+V-2019,Westfield Logistics Inc.,,88 Dock St,Louisville,KY,40202,EIN,00-0003783,000000119,9356679067,ap@westfield-logistics.example,555-0191,N,2025-03-19
+V-2023,Fresh Start Floor Care,,9 Shine Ave,Mansfield,OH,44902,EIN,00-0001212,000000448,9831205518,ap@fresh-start-floor-care.example,555-0159,Y,2025-02-18
+V-2015,Clearwater Janitorial Supply Inc.,,330 Clean Way,Columbus,OH,43215,EIN,00-0009605,000000654,9705963154,ap@clearwater-janitorial-supply.example,555-0192,N,2018-08-13
+V-2031,Hamilton Scale Co.,,260 Weigh St,Hamilton,OH,45011,EIN,00-0007811,000000308,9932301918,ap@hamilton-scale.example,555-0181,N,2021-05-19
+V-2009,Bluegrass Twine Co.,,15 Barn Ln,Lexington,KY,40505,EIN,00-0009669,000000886,9319118859,ap@bluegrass-twine.example,555-0153,Y,2020-06-11
+V-2002,Union Packaging Supply LLC,,4100 Groveport Rd,Columbus,OH,43207,EIN,00-0003335,000000547,9882585867,ap@union-packaging-supply.example,555-0135,N,2019-09-18
+V-2026,Sam Ortiz,Ortiz Lawn & Snow,77 Maple Ct,Grove City,OH,43123,SSN,000-00-5957,000000570,9649866166,ap@sam-ortiz.example,555-0193,Y,2022-08-17

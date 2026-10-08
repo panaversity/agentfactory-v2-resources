@@ -1,0 +1,27 @@
+vendor,small_supplier,invoice_no,invoice_date,received_date,amount,currency,terms
+Rosa Delgado,Y,INV-6219,2026-11-12,2026-11-12,1840.00,USD,net 30
+Hollis Signs,Y,INV-6226,2026-11-12,2026-11-13,960.00,USD,net 30
+Bluegrass Twine Co.,Y,INV-6233,2026-11-13,2026-11-13,2315.50,USD,net 30
+Marcus Webb,Y,INV-6240,2026-11-18,2026-11-20,725.00,USD,net 30
+Great Lakes Electric,N,GLE-91,2026-11-10,2026-11-23,2300.00,USD,net 30
+Fresh Start Floor Care,Y,INV-6247,2026-11-23,2026-11-24,1310.00,USD,net 30
+Anchor Fasteners Corp.,N,INV-6121,2026-11-24,2026-11-25,18785.00,USD,2/10 net 30
+Meridian Labels Inc.,N,INV-6128,2026-11-24,2026-11-25,44530.25,USD,2/10 net 30
+Apex Lift Service LLC,N,INV-6135,2026-11-24,2026-11-25,3359.50,USD,2/10 net 30
+Northline Staffing Inc.,N,INV-6191,2026-11-24,2026-11-25,31881.25,USD,2/10 net 30
+Hamilton Scale Co.,N,INV-6198,2026-11-24,2026-11-25,8200.00,USD,net 30
+Patriot Pest Control Inc.,Y,INV-6254,2026-11-25,2026-11-27,390.00,USD,net 30
+Union Packaging Inc.,N,INV-6100,2026-11-25,2026-11-27,24558.00,USD,2/10 net 30
+Northwind Stretch Film Inc.,N,INV-6114,2026-11-25,2026-11-27,34410.25,USD,2/10 net 30
+Granite State Shrink Wrap Co.,N,INV-6170,2026-11-25,2026-11-27,38194.50,USD,2/10 net 30
+Northern Maple Paper,N,NMP-3501,2026-11-24,2026-11-27,9800.00,CAD,net 30
+Ridgeway Corrugated Corp.,N,INV-6107,2026-11-27,2026-11-30,15856.00,USD,2/10 net 30
+Cardinal Office Products Inc.,N,INV-6149,2026-11-27,2026-11-30,36447.50,USD,2/10 net 30
+Heartland Tape & Adhesive Corp.,N,INV-6156,2026-11-27,2026-11-30,24924.50,USD,2/10 net 30
+Delmar Industrial Gas Inc.,N,INV-6177,2026-11-27,2026-11-30,17984.00,USD,2/10 net 30
+Fairfield Pallet Co.,N,INV-6205,2026-11-27,2026-11-30,24753.00,USD,net 30
+Northern Maple Paper,N,NMP-3508,2026-11-27,2026-11-30,8600.00,CAD,net 30
+Clearwater Janitorial Supply Inc.,N,INV-6142,2026-11-30,2026-11-30,35781.00,USD,2/10 net 30
+Westfield Logistics Inc.,N,INV-6163,2026-11-30,2026-11-30,8913.25,USD,2/10 net 30
+Capitol Uniform Rental LLC,N,INV-6184,2026-11-30,2026-11-30,8505.00,USD,2/10 net 30
+Harbor Packaging LLC,N,INV-6212,2026-11-30,2026-11-30,41007.50,USD,net 30
