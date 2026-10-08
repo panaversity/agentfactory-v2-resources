@@ -6,9 +6,7 @@ In this lab you give an AI a real job, check each task against its answer key th
 
 ## Before you start (5 minutes)
 
-1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. That makes one folder holding three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
-2. Give the AI only what a task's steps name: `inputs.zip`, and one answer key at each check.
-3. Open `inputs.zip` on your computer now. The checkpoints ask you to look at invoices yourself.
+Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. That makes one folder holding three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
 
 ## The job
 
@@ -25,6 +23,8 @@ Every task is the same loop, in a new conversation of its own:
 2. Read the answer, and ask how the AI got there.
 3. Download the task's answer key, attach it, and let the AI check its own work.
 4. If a check missed, fix your brief and run the task again. Then check again.
+
+Those are the only files the AI ever gets: `inputs.zip` with your brief, and one answer key at each check. Never send it this page or the README.
 
 **The brief.** Before you send one, decide what kind of answer you expect: a number, a list or a file. Write each brief under four headings:
 
@@ -119,7 +119,7 @@ If the AI gets something wrong, don't correct the answer by hand. The check will
 
 **Give your manager:** a list of bills, with their total.
 
-**Checkpoint.** Check 8 passed, and you checked one bill's due date yourself.
+**Checkpoint.** Check 8 passed.
 
 ## Task 4. Match the POs (15 minutes)
 
@@ -133,7 +133,7 @@ If the AI gets something wrong, don't correct the answer by hand. The check will
 
 **Give your manager:** each invoice that does not match, with the reason.
 
-**Checkpoint.** Checks 9 and 10 passed, and you checked one mismatch against the PO list yourself.
+**Checkpoint.** Checks 9 and 10 passed.
 
 ## Task 5. More work for an AI (10 minutes)
 

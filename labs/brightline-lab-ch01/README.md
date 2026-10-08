@@ -9,6 +9,6 @@ Chapter 1 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | `LAB.md` | The lab: the job, and seven tasks, each checked against its own answer key. |
 | `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs) and `purchase-orders.csv`. To check the AI's work, open it on your computer. |
 
-**Give the AI only `inputs.zip`.** Never upload `LAB.md` or this file.
+**Give the AI only `inputs.zip` and, at each check, that task's answer key.** Never upload `LAB.md` or this file.
 
 The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step: you download it when the task is done, and give it to your AI to check.
