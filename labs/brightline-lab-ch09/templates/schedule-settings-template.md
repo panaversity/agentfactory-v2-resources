@@ -11,13 +11,13 @@
 | Where the note goes | |
 | Who is notified when it finishes or needs input | |
 | Deadline check outside the run: who or what, and when | |
-| Test of the deadline check: what you withheld, and whether the check caught it | |
+| Test of the deadline check (optional): what you withheld, and whether the check caught it | |
 | Where past runs are reviewed, by whom, when | |
 | How to pause it, and who can | |
 | What happens on Thursday, November 26, Thanksgiving | |
 | Date you checked the AI vendor's help pages | |
 
-## The port to the other AI vendor
+## The port to the other AI vendor (optional)
 
 Ported to: <AI vendor and feature>. Spec changed? <it should not have: if it did, say what and why>.
 

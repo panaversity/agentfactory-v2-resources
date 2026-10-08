@@ -25,12 +25,12 @@ Score with `answer-key/week-notes-key.md`. Run 2A uses Maria's original spec and
 
 A hard fail means the spec, the inputs or the worker failed. Find which one, fix it if you can, and run that week again in a fresh conversation.
 
-## Section 4. Initiative, the real schedule and the port (11 points)
+## Section 4. Initiative and the real schedule (10 points)
 
 - The eight cases, one point each (`answer-key/initiative-key.md`).
 - The standing rules (1 point).
-- The schedule settings, complete and dated, with a deadline check outside the run that you tested (1 point).
-- The port: the job on the second AI vendor with the same spec, its stop test passed, and the port table naming the identity and approval differences. With one AI vendor, a complete transfer plan instead (1 point).
+- The schedule settings, complete and dated, with a deadline check outside the run (1 point). Testing the check is optional.
+- Optional, not scored: the port, with the job on the second AI vendor, the same spec, its stop test passed, and the port table naming the identity and approval differences. With one AI vendor, a transfer plan instead. Check it against `answer-key/schedule-settings-key.md`.
 
 ## Section 5. The note to Dave and the Role Contract (6 points)
 
