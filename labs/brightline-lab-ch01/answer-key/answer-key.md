@@ -2,11 +2,11 @@
 
 The answers for Chapter 1 of *The AI Agent Factory*, Second Edition: one portable brief, two runtimes. Every name, number and company in this lab is invented.
 
-**When to read what.** This file holds Tasks 1 to 5. Read it at "Check your answers", in `LAB.md` or the book. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answer-key-port.md), linked after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
+**How this sheet is used.** At "Check your answers", your AI grades its own run against this sheet, and you compare its grades with it. You have the final say. The answers for Tasks 6 and 7, with "Look back", are in [a second file](answer-key-port.md), linked after Task 7. Read "Worth noting", at the end of this file, any time after Task 5.
 
 ## Score sheet
 
-One point for each check you pass, 10 in all. Score what the AI did before you asked how it got there. Write your score in your worksheet, `ai-vendor-run.md`. Each check is explained under its task, below the sheet.
+One point for each check, 10 in all. A check counts what the AI said before you asked how it got there. Check 6 is about what you did. Each check is explained under its task, below the sheet.
 
 | Check | Task | You get the point when |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ One point for each check you pass, 10 in all. Score what the AI did before you a
 
 Score each run the same way: your first briefs, your fixed briefs, and the other AI vendor. A strong run scores 9 or 10. If your first brief already got a task right, that is a finding, not a failure.
 
-Don't fix the AI's output by hand. Write down which checks it missed, and keep them for Chapter 6, which teaches the review contract.
+Don't fix the AI's output by hand. Note in your file which checks it missed, and keep them for Chapter 6, which teaches the review contract.
 
 ## Task 1. What we owe
 
@@ -108,7 +108,7 @@ The other six invoices match their POs: 4471, BFL-77102, 10-55821, GLP-3390, BFL
 
 ## Task 5. More work for an AI
 
-Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. Put your five in the table under "Your work inventory" in your worksheet. For example:
+Not scored, because there is no single answer. A good job for an AI comes back every week or month, has clear inputs, and ends in something a person checks. In your file, put the five in a table like this one. It is your work inventory. For example:
 
 | Job | How often | Inputs | Output | Who checks it | Covered by this lab? |
 | --- | --- | --- | --- | --- | --- |
