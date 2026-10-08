@@ -8,7 +8,7 @@ In this lab you give an AI a real job, check its work yourself, and carry your b
 
 1. Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. It holds three files: `README.md`, `inputs.zip`, and `LAB.md`, which is this page. `inputs.zip` holds 15 invoice PDFs and `purchase-orders.csv`, the purchase-order (PO) list.
 2. Give the AI only `inputs.zip`. To check its work yourself, open `inputs.zip` on your computer.
-3. Do Tasks 1 to 5 in one new conversation, and keep it memory-free. In Claude, turn off Memory in the "+" menu as the chat starts. In ChatGPT, open a Temporary Chat and choose Unpersonalized.
+3. Do Tasks 1 to 5 in one new conversation.
 
 ## The job
 
@@ -26,6 +26,18 @@ Before you send a brief, decide what kind of answer you expect: a number, a list
 - Inputs: from which sources
 - Autonomy: how far the AI may go without asking you
 
+For example, a teacher's brief for a different job:
+
+```text
+Outcome:  How many students passed this week's quiz, out of how
+          many took it.
+Format:   One line with the two numbers, then a list of the
+          students who did not pass.
+Inputs:   quiz-scores.csv, attached. The pass mark is 60 out of 100.
+Autonomy: Count only. If a score is missing or unclear, list it
+          and ask me. Do not change the file.
+```
+
 When it answers, ask how it got there. Then check a number it worked out, or a choice it made, against the files and "The job". If the AI gets something wrong, don't correct it. You fix your briefs after the grading. Answer its questions briefly, and ignore its offers to do more.
 
 > [!IMPORTANT]
@@ -35,7 +47,11 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Your manager asks:** "How much do we owe on these invoices?"
 
-**What you do:** Write your brief, and send it with `inputs.zip`. Then ask how it got there, and check its work. In Tasks 2 to 5, send the brief without the zip.
+**What you do:**
+
+1. Write your brief.
+2. Open a new conversation. Attach `inputs.zip`, and send your brief with it.
+3. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
 
 **Give your manager:** one total.
 
@@ -45,7 +61,11 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Your manager asks:** "Put them in a spreadsheet I can check before Friday. I'll want to open it again on Monday."
 
-**What you do:** the same as in Task 1. Then ask: "Which files did you create that you did not deliver to me?"
+**What you do:**
+
+1. Write your brief.
+2. In the same conversation, send your brief. The AI already has `inputs.zip`, so don't attach it again.
+3. Then send: "Which files did you create that you did not deliver to me?"
 
 **Give your manager:** a spreadsheet file that you have opened. If it shows formulas or blank cells, open it in Excel, Numbers or Google Sheets, which work them out.
 
@@ -55,7 +75,11 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Your manager asks:** "Which ones are late, or due by Friday?"
 
-**What you do:** the same as in Task 1.
+**What you do:**
+
+1. Write your brief.
+2. In the same conversation, send your brief. The AI already has `inputs.zip`, so don't attach it again.
+3. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
 
 **Give your manager:** a list of bills, with their total.
 
@@ -65,7 +89,11 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Your manager asks:** "Purchasing's PO list is in that zip too. Do the invoices match what we ordered?"
 
-**What you do:** the same as in Task 1.
+**What you do:**
+
+1. Write your brief.
+2. In the same conversation, send your brief. The AI already has `inputs.zip`, so don't attach it again.
+3. When it answers, send: "How did you get this answer? Walk me through your steps, and the files and figures you used."
 
 **Give your manager:** each invoice that does not match, with the reason.
 
@@ -75,7 +103,10 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 **Your manager asks:** "What other AP jobs could an AI take off our hands? Name five we do every week or month."
 
-**What you do:** Write your brief, and send it.
+**What you do:**
+
+1. Write your brief.
+2. In the same conversation, send your brief.
 
 **Give your manager:** five jobs.
 
@@ -103,16 +134,16 @@ When it answers, ask how it got there. Then check a number it worked out, or a c
 
 2. Open [the answer sheet](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key.md) yourself, and compare it with the AI's grades. You have the final say.
 3. If you scored 10, your five briefs are your final briefs. Otherwise, fix the brief behind each miss.
-4. **A second run, if you fixed a brief (15 minutes).** Open a new memory-free conversation. Send all five briefs again, one task at a time, with `inputs.zip` in the first message. You need not ask how it got there this time. Ask the files question, and open the new spreadsheet. Then paste the grading brief again. These five briefs are your final briefs.
+4. **A second run, if you fixed a brief (15 minutes).** Open a new conversation. Send all five briefs again, one task at a time, with `inputs.zip` in the first message. You need not ask how it got there this time. Ask the files question, and open the new spreadsheet. Then paste the grading brief again. These five briefs are your final briefs.
 5. Save your five final briefs, your scores and the AI's five jobs from Task 5 in one file, in any text editor. Keep it where you can find it again.
 
-**Optional, if your first run scored 10 (5 minutes).** In a new memory-free conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one.
+**Optional, if your first run scored 10 (5 minutes).** In a new conversation, send your Task 1 brief with `inputs.zip`, but leave out the facts from "The job". Compare the answer with your first one.
 
 **Checkpoint.** Your file has your five final briefs, your scores and the five jobs. In Task 6, you carry the briefs to the other AI vendor.
 
 ## Task 6. The other AI vendor (15 minutes)
 
-1. Open a new memory-free conversation in the other one, Claude or ChatGPT. Send your final briefs, unchanged, one task at a time, with `inputs.zip` in the first message. Ask the files question, and open the spreadsheet.
+1. Open a new conversation in the other one, Claude or ChatGPT. Send your final briefs, unchanged, one task at a time, with `inputs.zip` in the first message. Ask the files question, and open the spreadsheet.
 2. If a run cannot go ahead, try a setting before you change your words. One that lets the AI run code or create files is a good start.
 3. In your file, note every change, and why.
 4. Paste the grading brief, compare its grades with the answer sheet, and add the score to your file.
@@ -137,10 +168,6 @@ At least a day later, look for your Task 2 spreadsheets from every run, and for 
 
 Your vertical is the line of work you know best. Take a pile of real files from it, and one thing your manager wants from them. Write the brief, and run it if you can. Then list five jobs in your vertical that an AI could take.
 
-## Exam notes
-
-- **On the CCAO-F exam.** CCAO-F is Anthropic's Claude Certified Associate: Foundations. This note is not part of the lab. Its guide names four features: projects, research mode, chat and artifacts. When a question asks for a feature, the right answer is one of them. This chapter describes the products as they work today, and Chapter 2 teaches all four. [Certification and Portfolio Roadmaps](https://agentfactory-v2.vercel.app/certification-and-portfolio-roadmaps/) has more.
-
 ## Artifact checklist
 
 Before you move on to Chapter 2, check that your file has these.
@@ -150,3 +177,7 @@ Before you move on to Chapter 2, check that your file has these.
 - [ ] Every change you made for the other AI vendor, and why, or your guess of what would change
 
 If you keep the book's running project in a git repository, add your file to it, and tag that commit `ch01`. You can skip this.
+
+## Exam notes
+
+- **On the CCAO-F exam.** CCAO-F is Anthropic's Claude Certified Associate: Foundations. This note is not part of the lab. Its guide names four features: projects, research mode, chat and artifacts. When a question asks for a feature, the right answer is one of them. This chapter describes the products as they work today, and Chapter 2 teaches all four. [Certification and Portfolio Roadmaps](https://agentfactory-v2.vercel.app/certification-and-portfolio-roadmaps/) has more.
