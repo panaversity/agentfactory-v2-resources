@@ -9,7 +9,7 @@ Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | `LAB.md` | The lab: the job, seven tasks, and how your AI grades them. |
 | `role/role-contract-template.md` | The blank one-page Role Contract. Copy it, and write in the copy. |
 | `role/ap-work-inventory.md` | Brightline's recurring AP work: the raw material for your contract. |
-| `emails/` | Two vendor emails, for testing your contract in Tasks 3 and 4. |
+| `messages/` | Three emails and a team chat message, for testing your contract in Tasks 2, 4 and 5. |
 | `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs), for the register runs in Task 6. To check the AI's work, open it on your computer. |
 
 **Give the AI only what a task's steps name.** Never upload `LAB.md` or this file.

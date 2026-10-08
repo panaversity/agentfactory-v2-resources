@@ -11,8 +11,8 @@ new account:
 
     Bank:            Desert Sun Community Bank, Phoenix, AZ
     Account name:    Buckeye Freight Lines LLC
-    Routing number:  (supplied in the original email)
-    Account number:  (supplied in the original email)
+    Routing number:  [removed for this lab]
+    Account number:  [removed for this lab]
 
 Please update your records and confirm by reply today, so Friday's payment
 is not delayed. Our old account will be closed this week.
