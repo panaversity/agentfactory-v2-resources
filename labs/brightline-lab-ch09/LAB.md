@@ -1,8 +1,8 @@
 # Lab 09: Put one AP job on a schedule
 
-**Time:** about seven and a half hours of active work, in three or four sittings.
-**You produce:** `results/gates.md`, `results/delegation-map.md`, `workspace/standing-spec.md`, `ssor/ap-matters.md`, `results/week-run-log.md` and the five notes, `workspace/examples/2026-11-12/`, `workspace/initiative-rules.md`, `results/schedule-settings.md` (or `results/transfer-plan.md`), `results/note-to-dave.md`, `role/ap-worker-role-contract.md` (Draft 6), and `results/my-job.md`, one job from your own field.
-**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts B and C also use one fresh chat each, Part D uses five fresh chats, and Part F uses a scheduled task on each AI vendor. Keep your work in this folder, not only in a chat: it is yours. You can take one Part per sitting. Each Part ends with a file saved.
+**Time:** about six and a half hours of active work, in three or four sittings. The optional steps in Parts F and G add about 95 minutes.
+**You produce:** `results/gates.md`, `results/delegation-map.md`, `workspace/standing-spec.md`, `ssor/ap-matters.md`, `results/week-run-log.md` and the five notes, `workspace/examples/2026-11-12/`, `workspace/initiative-rules.md`, `results/schedule-settings.md`, `results/note-to-dave.md` and `role/ap-worker-role-contract.md` (Draft 6). The optional steps add the port (or `results/transfer-plan.md`) and `results/my-job.md`, one job from your own field.
+**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts B and C also use one fresh chat each, Part D uses five fresh chats, and Part F uses a scheduled task on one AI vendor, and on the other if you do its optional port. Keep your work in this folder, not only in a chat: it is yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make the gate decisions and write the map, the spec, the rules and the note, and it writes your answers down. The runs in Part D still happen in fresh chats, and you set up Part F's scheduled tasks yourself, in your own accounts.
 **You need:** for Parts B to D, a Claude or ChatGPT account whose chats accept attached files or pasted text. For Part F, scheduled tasks: on Claude, a paid plan; on ChatGPT, any plan, though on the Free plan a task runs at most once a day, in a flexible window such as morning, not at an exact time. A ChatGPT task reads files on your computer only in the desktop app. With only one AI vendor, see Part F.
 **You do not need:** code, a server, a connector or any company system. Everything is in this folder.
@@ -83,30 +83,30 @@ Never attach `answer-key/`, your predictions or anything else from `results/` to
 
 *You save:* the scores and causes in `results/week-run-log.md`, and `workspace/examples/2026-11-12/`.
 
-## Part F. Modify: initiative, a real schedule and the port (150 minutes)
+## Part F. Modify: initiative, a real schedule and the port (90 minutes)
 
 *Where:* In this folder, then a scheduled task on each AI vendor.
 
 1. Copy `templates/initiative-rules-template.md` to `workspace/initiative-rules.md`. Grade the eight cases in `inputs/initiative-cases.md`, and write the standing rules. Then open `answer-key/initiative-key.md` and score them with section 4 of `rubric.md`.
 2. Add a line to your spec's Never section for anything the initiative cases showed you had missed.
-3. Make a new folder, `ap-thursday`, outside this lab folder. Copy into it the files your spec names, with the same names, and an empty folder for the notes. Create the Thursday review as a real scheduled task on one AI vendor, using your spec, connected to `ap-thursday` only, never to this folder: this folder holds the answer keys. On ChatGPT, a task reads a folder on your computer only in the desktop app, while the computer is on and the app is running. `sources.md` lists the help pages. Copy `templates/schedule-settings-template.md` to `results/schedule-settings.md` and fill it in. Run the task once by hand to check that it starts. If it stops because the register is not dated today, that is your exit working: record it.
-4. Set a deadline check outside the run, such as Maria's 8:15 check of the notes folder, and test it: set the check a few minutes ahead, such as a phone timer that tells you to look in the notes folder, expect a test note with a unique file name, such as `note-test-1.md`, hold that note back, and confirm that the check notices it is missing. Record the result, then pause the task.
-5. **Port it.** Put the same job on the other AI vendor, with the same spec and no changes to its rules. Run the stop test there: your spec, the five concepts and `register-2026-11-19.csv`, with no SSoR record. Confirm that it stops. Then fill in the port table in `results/schedule-settings.md`: every setting you had to change, and why. Check at least whose identity the job runs under and how approvals work, because those differ between the AI vendors. Pause the task on both AI vendors when you finish.
-6. Open `answer-key/schedule-settings-key.md` and score the schedule and the port with section 4 of `rubric.md`.
+3. Make a new folder, `ap-thursday`, outside this lab folder. Copy into it the files your spec names, with the same names, and an empty folder for the notes. Create the Thursday review as a real scheduled task on one AI vendor, using your spec, connected to `ap-thursday` only, never to this folder: this folder holds the answer keys. On ChatGPT, a task reads a folder on your computer only in the desktop app, while the computer is on and the app is running. `sources.md` lists the help pages. Copy `templates/schedule-settings-template.md` to `results/schedule-settings.md` and fill it in. Run the task once by hand to check that it starts. If it stops because the register is not dated today, that is your exit working: record it. Pause the task when you finish Part F.
+4. *Optional, about 25 minutes.* Set a deadline check outside the run, such as Maria's 8:15 check of the notes folder, and test it: set the check a few minutes ahead, such as a phone timer that tells you to look in the notes folder, expect a test note with a unique file name, such as `note-test-1.md`, hold that note back, and confirm that the check notices it is missing. Record the result, then pause the task.
+5. *Optional, about 55 minutes.* **Port it.** Put the same job on the other AI vendor, with the same spec and no changes to its rules. Run the stop test there: your spec, the five concepts and `register-2026-11-19.csv`, with no SSoR record. Confirm that it stops. Then fill in the port table in `results/schedule-settings.md`: every setting you had to change, and why. Check at least whose identity the job runs under and how approvals work, because those differ between the AI vendors. Pause the task on both AI vendors when you finish.
+6. Open `answer-key/schedule-settings-key.md` and score the schedule with section 4 of `rubric.md`, and check the deadline test and the port against it if you did them.
 
-**Only one AI vendor?** Skip step 5. Copy `templates/transfer-plan-template.md` to `results/transfer-plan.md`, and fill it in from the other AI vendor's help pages in `sources.md`.
+**Only one AI vendor?** Skip step 5. To do its work on paper instead, copy `templates/transfer-plan-template.md` to `results/transfer-plan.md`, and fill it in from the other AI vendor's help pages in `sources.md`.
 
-*You save:* `workspace/initiative-rules.md` and `results/schedule-settings.md`, or `results/transfer-plan.md`.
+*You save:* `workspace/initiative-rules.md` and `results/schedule-settings.md`, and `results/transfer-plan.md` if you write one.
 
-## Part G. Make (55 minutes)
+## Part G. Make (45 minutes)
 
 *Where:* In this folder.
 
 1. Copy `templates/note-to-dave-template.md` to `results/note-to-dave.md` and write it, answering `inputs/dave-request.md`. Then open `answer-key/note-to-dave-key.md` and score it with section 5 of `rubric.md`.
 2. Copy `templates/role-contract-triggers-section.md` to `role/ap-worker-role-contract.md` and fill it in. If you kept your Role Contract from Chapter 8, put this section in that file instead, as Draft 6.
-3. Run one recurring job from your own field through the three gates, and write its trigger, its inputs and its never list. Save it as `results/my-job.md`.
+3. *Optional, about 15 minutes.* Run one recurring job from your own field through the three gates, and write its trigger, its inputs and its never list. Save it as `results/my-job.md`.
 
-*You save:* `results/note-to-dave.md`, `role/ap-worker-role-contract.md` and `results/my-job.md`. The lab is not finished until all three are saved, even after you pass the rubric.
+*You save:* `results/note-to-dave.md` and `role/ap-worker-role-contract.md`, and `results/my-job.md` if you do step 3. The lab is not finished until the first two are saved, even after you pass the rubric.
 
 ## What this lab does not prove
 
@@ -120,10 +120,10 @@ Four good runs show your spec works when a run gets the right files. They do not
 - [ ] `ssor/ap-matters.md`, as of November 26
 - [ ] `results/week-run-log.md`, and the five notes
 - [ ] `workspace/initiative-rules.md`
-- [ ] `results/schedule-settings.md`, with the port to the second AI vendor, or `results/transfer-plan.md` with one AI vendor
+- [ ] `results/schedule-settings.md`
 - [ ] `results/note-to-dave.md`
 - [ ] `role/ap-worker-role-contract.md`, Draft 6
-- [ ] `results/my-job.md`, one job from your own field
+- [ ] `results/my-job.md`, one job from your own field (optional)
 
 ## If something goes wrong
 
