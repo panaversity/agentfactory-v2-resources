@@ -13,6 +13,7 @@ Checked for the chapter on 8 October 2026. Products change. Check the date on ea
 - Access audit logs: https://support.claude.com/en/articles/9970975-access-audit-logs
 - Export your organization's data: https://support.claude.com/en/articles/13346720-export-your-organization-s-data
 - Use connectors to extend Claude's capabilities, including each tool's permission: https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities
+- Get started with connectors, where you set each tool of your own connector to Always allow, Needs approval or Blocked: https://claude.com/docs/connectors/getting-started
 - Usage Policy: https://www.anthropic.com/legal/aup
 
 ## OpenAI

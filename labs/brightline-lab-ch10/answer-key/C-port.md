@@ -7,6 +7,7 @@
 - **Routine vendor replies, two ways.**
   - *Baseline:* the worker cannot send at all. It drafts every reply, and Maria sends. This is what Brightline uses now.
   - *Advanced:* the worker sends routine replies only through a send step that itself checks the recipient against approved vendor addresses, and is tested to refuse anything else. Neither AI vendor's documented controls provide this per recipient, so it waits for Part IV and DSoR.
+- **Needs approval by** stays empty under the baseline: each action is on its own or never possible. The column is for the advanced way.
 
 ## What the port should show, as verified 8 October 2026
 
@@ -19,7 +20,7 @@
 | Never send to the auditors | Block the email connector's send tool, or remove the connector | Disable the send action, or remove the app | Same outcome, different setting. Blocking send also blocks routine replies, because controls are per tool or action, not per recipient |
 | Send routine replies, never to auditors | Not available per recipient | Not available per recipient | Cannot be enforced. Fallback: baseline |
 
-**On an individual plan,** you will not see the admin controls. On Claude you can still set a connector's send tool to Blocked yourself, in the connector's settings (Chapter 7). The fallback is the same on both: do not connect an email tool to the worker at all. It drafts into a folder, and a person sends.
+**On an individual plan,** you will not see the admin controls. On Claude you can still set a connector's send tool to Blocked yourself, under Tool permissions in the connector's settings (Chapter 7, and Anthropic's "Get started with connectors" page in `sources.md`). The fallback is the same on both: do not connect an email tool to the worker at all. It drafts into a folder, and a person sends.
 
 **The line every answer needs:** no setting on either AI vendor decides whether this data may go through this route for this purpose, or who must sign. The spec and the policy decide. The settings carry it out.
 

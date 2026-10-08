@@ -1,6 +1,6 @@
 # Lab 10: Keep the AP Worker running, on terms Dave can defend
 
-**Time:** about four hours of active work, in two sittings: Parts A to D, then Parts E to H.
+**Time:** about six and a half hours of active work, in three sittings: Parts A to C, then Parts D to F, then Parts G and H.
 **You produce:** `results/prediction.md`, `results/use-case-register.md`, `results/data-decision.md` and `results/vendor-extract-redacted.csv`, `results/route-and-send-spec.md` and `results/port-log.md`, `results/people-check.md`, `results/knowledge-register.md` and a takedown record for each item you take down, `results/sign-off-matrix.md`, `results/incident-note.md`, `results/governance-record.md`, `results/interim-ai-policy.md`, `role/ap-worker-role-contract.md` (Draft 7), and `results/my-workflow.md`, one workflow from your own field.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet app for Part B, such as Excel, Google Sheets, LibreOffice or Numbers. Parts B and D also use fresh chats in Claude or ChatGPT. Part C uses your accounts' settings and the AI vendors' help pages. Keep your work in this folder, not only in a chat: it is yours. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make every decision and write every answer, and it writes your answers down. It never opens the full vendor file: in Part B, you redact that yourself.
@@ -16,24 +16,24 @@ Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio, with a
 
 In the first nine days of December 2026, four ordinary decisions went wrong (Chapter 10's opening story). Dave's first answer was "Turn it all off." In this lab you help him keep the worker running, on terms he can defend.
 
-## Part A. Predict, then classify six uses (25 minutes)
+## Part A. Predict, then classify six uses (50 minutes)
 
 *Where:* In this folder.
 
 1. Before you open any file in `inputs/`, write two lines in `results/prediction.md`. Which of the four December failures in the chapter's opening would a written AI policy alone have prevented, and why? Keep it as it is: Part H looks back at it.
 2. Read `inputs/december-events.md`. Then read `inputs/proposed-uses.md`, six uses Brightline's staff proposed on Friday, December 11, 2026.
-3. Copy `templates/use-case-register.md` to `results/use-case-register.md`. For each use, write:
+3. Copy `templates/use-case-register.md` to `results/use-case-register.md`. Classify the activity the worker would do, not the subject it is about. If a use bundles two activities, classify each one. For each use, write:
    - the answer: appropriate, appropriate with review, or inappropriate
    - the deciding factor: the one screen that, if its answer changed, would change the answer
    - the gate, if one is needed: who checks what, and when
    For a use you mark inappropriate, add what the worker may still do to support the person who decides.
-4. You may ask an AI to challenge your reasoning in a fresh chat. Do not ask it to approve the use: the answers are yours.
+4. You may ask an AI to challenge your reasoning in a fresh chat. Start your message with "Today is Friday, December 11, 2026.", because a chat knows the real date. Do not ask it to approve the use: the answers are yours.
 
 Then open `answer-key/A-use-case-register.md` and score the register with row A of `rubric.md`.
 
 *You save:* `results/prediction.md` and `results/use-case-register.md`.
 
-## Part B. The vendor clean-up data (30 minutes)
+## Part B. The vendor clean-up data (50 minutes)
 
 *Where:* In this folder, a spreadsheet app, and two fresh chats.
 
@@ -41,7 +41,7 @@ Read `inputs/dedup-request.md`. Then open `inputs/vendor-master-extract.csv` in 
 
 1. Classify each column as green, yellow or red.
 2. Decide which columns the duplicate check needs. You will remove the rest.
-3. Make the redacted file yourself, on your own computer. First add a column called `tin_last4` that holds the last four characters of `tin`. In most spreadsheets the formula is `=RIGHT(I2,4)`, copied down the column. Then delete `tin` and every other column you decided to remove, and save the file as `results/vendor-extract-redacted.csv`. Check that it still has 36 vendor rows. The AI never sees the full file: that is the habit this Part builds.
+3. Make the redacted file yourself, on your own computer. First add a column called `tin_last4` that holds the last four characters of `tin`. In most spreadsheets the formula is `=RIGHT(I2,4)`, copied down the column. Copy the new column, and paste it back over itself as values only: in most apps, Paste Special, then Values. Otherwise it breaks when `tin` is gone. Then delete `tin` and every other column you decided to remove, and save the file as `results/vendor-extract-redacted.csv`. Check that it still has 36 vendor rows. The AI never sees the full file: that is the habit this Part builds.
 4. **Test it.** Open a fresh chat. It must not use your memory, or keep the chat for training: in Claude, start an incognito chat, or turn off Memory in the "+" menu as you start the chat and check that your privacy setting does not allow training. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you send the first message. Attach `results/vendor-extract-redacted.csv` and nothing else, and ask the AI to find likely duplicate vendors. Then compare its answer with `inputs/known-duplicates.md`, which you keep out of the chat. It must find every pair there, and it must not call the decoy a duplicate.
 5. In a copy of your redacted file, delete the tax ID columns too, and run the test again in another fresh chat. Record what changed.
 6. Fill in the route and the purpose in `results/data-decision.md`: which route may carry this file, and whether finding duplicates is within the purpose the tax IDs were collected for.
@@ -50,7 +50,7 @@ Then open `answer-key/B-data-decision.md` and score your work with row B of `rub
 
 *You save:* `results/data-decision.md` and `results/vendor-extract-redacted.csv`.
 
-## Part C. One spec, two AI vendors (40 minutes)
+## Part C. One spec, two AI vendors (60 minutes)
 
 *Where:* In this folder, your Claude and ChatGPT settings, and the help pages in `sources.md`.
 
@@ -59,7 +59,7 @@ Copy `templates/route-and-send-spec.md` to `results/route-and-send-spec.md`, and
 1. **Write the spec once, with no AI vendor's name.** For the AP Worker, state:
    - the route its work data may use, and what that route must have: training off, no personal accounts, chat history kept or deleted, memory on or off
    - the actions it may take on its own, the actions that need approval and by whom, and the actions it must never be able to take. Sending anything to the auditors is in the last group.
-2. **Apply it on one AI vendor.** Use the account you have. For each line of the spec, record the setting you used and where it lives. If a control needs admin rights you do not have, record where an admin would set it, and what you did instead on your own plan.
+2. **Apply it on one AI vendor.** Use the account you have. For each line of the spec, record the setting you used and where it lives. If a control needs admin rights you do not have, record where an admin would set it, and what you did instead on your own plan. If a line rules out the kind of account you have, such as a personal one, log it as "needs another plan" and go on.
 3. **Port it to the other AI vendor.** Apply the same spec, line by line. If you have no account there, use its help pages in `sources.md`, and say so.
 4. **Log the port.** For each line: same, renamed, needs another plan, or cannot be enforced. For every "cannot be enforced," write the fallback. Removing the tool is always a fallback. Then write one line: what no setting on either AI vendor decides.
 
@@ -67,16 +67,16 @@ The spec must not change between AI vendors. Only the settings change. Then open
 
 *You save:* `results/route-and-send-spec.md` and `results/port-log.md`.
 
-## Part D. Who the early-pay list left out (35 minutes)
+## Part D. Who the early-pay list left out (50 minutes)
 
-*Where:* In this folder, a spreadsheet app if you like, and two fresh chats.
+*Where:* In this folder, a spreadsheet app if you like, and one or two fresh chats.
 
 Read `inputs/early-pay-request.md`, `inputs/early-pay-list-2026-12-01.csv`, `inputs/open-invoices-2026-12-01.csv` and `inputs/supplier-terms-commitment.md`. Copy `templates/people-check.md` to `results/people-check.md`.
 
 1. Write who is affected by the list, including people who never see it.
 2. List every small supplier with an open invoice. For each, count the days from the day Brightline received the invoice to Tuesday, December 1, 2026. Compute the days, do not estimate them. If an AI does it, have it show the rows or the code.
 3. Mark who is already past the 15-day promise, and by how many days.
-4. Mark who reaches day 15 before the following run, on Friday, December 11, 2026. They must be paid on December 4 too.
+4. Mark who reaches day 15 before the following run, on Friday, December 11, 2026. They must be paid on December 4 too. Paying on day 15 itself still keeps the promise.
 5. Write down the standard Dave's brief carried that nobody wrote down.
 6. Rewrite Dave's brief so the list cannot repeat the mistake. Test it in a fresh chat, set up as in Part B, step 4: attach `inputs/open-invoices-2026-12-01.csv` and `inputs/supplier-terms-commitment.md`. Start your message with "Today is Tuesday, December 1, 2026.", because a chat knows the real date and the list depends on it. Then give your brief. Check its list against your table from steps 2 to 4. If it leaves out a supplier your table says must be paid, fix the brief and test again in another fresh chat.
 7. Decide whether the suppliers should be told how the list was made.
@@ -85,13 +85,13 @@ Then open `answer-key/D-people-check.md` and score your work with row D of `rubr
 
 *You save:* `results/people-check.md`.
 
-## Part E. Knowledge: owners, status and takedown (30 minutes)
+## Part E. Knowledge: owners, status and takedown (45 minutes)
 
 *Where:* In this folder.
 
 Read `inputs/knowledge-inventory.md` and the files in `inputs/knowledge/`. Copy `templates/knowledge-register.md` to `results/knowledge-register.md`.
 
-1. For each item, record its owner, its status (draft, stable, deprecated, not yet a concept, or not governed), and one action:
+1. For each item, record its owner, its status (draft, stable, deprecated, not yet a concept, or not governed), and one action. Not governed means it has no owner and no approval. Not yet a concept means an approved rule, such as a signed memo, that nobody has written as a concept yet. The actions:
    - keep it as it is
    - remove a copy that should not be served
    - deprecate it, pointing to its successor
@@ -103,7 +103,7 @@ Then open `answer-key/E-knowledge.md` and score your work with row E of `rubric.
 
 *You save:* `results/knowledge-register.md` and your takedown records.
 
-## Part F. Who signs (25 minutes)
+## Part F. Who signs (40 minutes)
 
 *Where:* In this folder.
 
@@ -116,7 +116,7 @@ Then open `answer-key/F-sign-off.md` and score your work with row F of `rubric.m
 
 *You save:* `results/sign-off-matrix.md`.
 
-## Part G. The first hour (15 minutes)
+## Part G. The first hour (20 minutes)
 
 *Where:* In this folder.
 
@@ -126,7 +126,7 @@ Then open `answer-key/G-incident-note.md` and score your note with row G of `rub
 
 *You save:* `results/incident-note.md`.
 
-## Part H. Make it last (55 minutes)
+## Part H. Make it last (75 minutes)
 
 *Where:* In this folder.
 
@@ -163,6 +163,7 @@ Your records show what Brightline decided, and why. They do not make a setting e
 Read this list only when you are stuck. It gives no answers.
 
 - **You are not sure how to delete a column.** In most spreadsheets, select the column's header, right-click and choose Delete. Then save the file as CSV.
+- **Your `tin_last4` column shows `#REF!`.** You deleted `tin` before you pasted the new column as values. Undo, paste the column as values, then delete `tin` again.
 - **Your spreadsheet changed the tax IDs.** Some spreadsheets read `00-0006835` as a date or drop the leading zeros. Import the file with every column as text, or check a few `tin_last4` values against the original.
 - **The AI hesitates over the redacted file because it still holds partial tax IDs.** That is reasonable caution. Tell it the data is invented for a training lab, and point to the zeros at the start of every tax ID.
 - **The AI finds a fifth duplicate.** Check it against `inputs/known-duplicates.md`. If it is the decoy, your redaction removed the column that tells them apart, or the AI matched on names alone. Ask it which columns it used.

@@ -15,9 +15,11 @@ Small suppliers, including sole proprietors who depend on prompt payment. They n
 | Fresh Start Floor Care | INV-6247 | 2026-11-24 | 7 | not yet | Wednesday, December 9 |
 | Patriot Pest Control Inc. | INV-6254 | 2026-11-27 | 4 | not yet | Saturday, December 12 |
 
-Three suppliers were already past the promise, owed USD 5,115.50 in total. Their invoices are not due until December 12 and 13, so without the list they would wait for the December 11 run. Two more reach day 15 before the following run on Friday, December 11, so they must be paid on December 4 too: Marcus Webb and Fresh Start Floor Care. Patriot Pest Control can wait for the December 11 run. Paying an invoice before it is due needs Dave's approval, and the promise is his own memo, not yet a KSoR concept (K10).
+Three suppliers were already past the promise, owed USD 5,115.50 in total. Their invoices are not due until December 12 and 13, so without the list they would wait for the December 11 run. Two more reach day 15 before the following run on Friday, December 11, so they must be paid on December 4 too: Marcus Webb and Fresh Start Floor Care. Patriot Pest Control can wait for the December 11 run. Paying an invoice before it is due needs Dave's approval, and the promise is his own memo, not yet a KSoR concept.
 
 The 14 vendors on the list are all large suppliers on 2/10 terms, and every discount is still open on the December 4 run. The discounts total USD 6,882.62, the sum of the discount column in the list, each rounded to the cent. Paying the five small suppliers too costs no discount.
+
+A chat may also list GLE-91, Great Lakes Electric, a large supplier whose invoice falls due on December 10. The December 4 run pays it anyway, because each run pays every invoice due on or before the next run (AP policy, version 3, clause 3.2). It is not an early payment. **Accept** a brief that lists it apart from the early-pay list.
 
 ## What the brief carried
 
@@ -29,6 +31,6 @@ The 14 vendors on the list are all large suppliers on 2/10 terms, and every disc
 
 ## Disclosure
 
-No rule requires telling suppliers how the list was made. Disclosure is not the main remedy here. Paying the late suppliers is. **Accept** a learner who adds a short apology to the three late suppliers.
+No rule here requires telling suppliers how the list was made, so the chapter's question decides: would knowing that an AI made the list change how the suppliers understand what happened? **Accept** either answer with its reason. One: it would matter, so tell the three late suppliers, with an apology, that a list made with AI left them out and that the brief is fixed. Two: what matters to them is the late payment, which Brightline is paying and fixing. **Do not accept** hiding it from a supplier who asks why they were paid late: hiding it is what damages trust.
 
 Every figure in this key was computed from the CSVs and checked.

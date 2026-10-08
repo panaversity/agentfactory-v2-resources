@@ -6,10 +6,10 @@
 | K6 | Dave Kowalski, who owns the AP policy | not governed: a copy of a replaced policy | Remove the copy in the Claude AP project | AP policy version 3 replaced it on September 1, and K1 holds the current rule. Replaced knowledge is not served to workers, but a frozen upload serves it anyway. If it were a KSoR concept, it would be deprecated, pointing to K1 |
 | K7 | None | not governed | Take down | Wrong and unsafe: it tells staff to confirm bank changes by replying to the vendor's email, the exact fraud K4 prevents. It also gets the run day, the approval limit and duplicates wrong. No owner, so Dave as takedown authority withdraws it |
 | K8 | None | not governed | Take down | Rights: the license forbids upload to another system. Useful is not allowed |
-| K9 | Dave Kowalski, once Maria drafts it | draft | Remove from the AP project. Send to Maria as a draft for review | Drafts are never served to workers. It also skips AP policy 5.6: a new vendor is set up only from a signed vendor form and a tax form, with the controller's approval |
+| K9 | Dave Kowalski, once Maria drafts it | not governed: notes with no owner or approval | Remove from the AP project. Send to Maria as a draft for review | Unapproved notes are never served to workers. It also leaves out what Brightline's AP policy requires to set up a new vendor: a signed vendor form and the controller's approval (version 3, clause 5.6, which Labs 07 and 08 include) |
 | K10 | Dave Kowalski | not yet a concept | Draft a concept from the memo. Dave approves | The early-pay brief needs it to be served as approved knowledge |
 
-**Accept** "deprecate" for K7 only if the learner names a stable successor, such as K4, and still removes both copies. **Accept** "deprecate, pointing to K1" for K6 if the learner also removes the copy. **Do not accept** "keep" for K8 on the grounds that it is useful.
+**Accept** "deprecate" for K7 only if the learner names a stable successor, such as K4, and still removes both copies. **Accept** "deprecate, pointing to K1" for K6 if the learner also removes the copy. **Do not accept** "keep" for K8 on the grounds that it is useful. **Accept** "draft" for K9, with the same action, and the K9 action without clause 5.6.
 
 ## Takedown record: K7 (example)
 

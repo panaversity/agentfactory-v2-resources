@@ -33,10 +33,10 @@ In this file, a check that groups by tax ID type and last four digits finds exac
 | V-2003 Fairfield Pallet Co. | V-2033 Fairfield Pallet Company | same tax ID, name and address written differently |
 | V-2004 Mid-State Freight Inc. | V-2034 MidState Freight Inc | same tax ID, name written differently, different bank account |
 | V-2005 Harbor Packaging LLC | V-2035 Harbor Pkg LLC | same tax ID, short name |
-| V-2007 Rosa Delgado | V-2036 Delgado Cleaning Services | sole proprietor entered once under her own name and once under her business name |
+| V-2007 Rosa Delgado | V-2036 Delgado Cleaning Services | sole proprietor entered once under her own name, at her street address, and once under her business name, at a post office box. Only the tax ID type and last four digits link them |
 
-The decoy, Union Packaging Inc. and Union Packaging Supply LLC, has different last four digits and is not flagged.
+The decoy, Union Packaging Inc. and Union Packaging Supply LLC, has similar names and the same ZIP code, but different last four digits, and is not flagged.
 
-**With all tax ID columns removed,** the check must rely on names and addresses. It may still guess some pairs, but nothing confirms them. The two Delgado records share only her surname, one as a person and one as a business, and an address written two ways. The decoy's names are close, which invites a false match. Record what your run did. This is redaction that breaks the task: the file looks safer and the check gets worse.
+**With all tax ID columns removed,** the check must rely on names and addresses. It may still guess some pairs, but nothing confirms them. The two Delgado records share only her surname and her town: one is a person at a street address, the other a business at a post office box. The decoy shares a name and a ZIP code with Union Packaging Inc. So without tax IDs, the check cannot tell the real duplicate from the decoy. When this lab was tested, chats either missed the Delgado pair or listed it beside the decoy, both as weak matches. Record what your run did. This is redaction that breaks the task: the file looks safer and the check gets worse.
 
 Every figure in this key was computed from the CSV and checked.
