@@ -1,0 +1,72 @@
+vendor_id,vendor,invoice,invoice_date,due_date,currency,amount,status,entered
+V-1015,Great Lakes Fasteners,1200,2026-01-05,2026-01-28,USD,1429.20,paid 2026-01-20,2026-01-08
+V-1036,Cardinal Freight,1223,2026-02-05,2026-02-28,USD,4348.04,paid 2026-02-20,2026-02-08
+V-1007,Lakeshore Corrugated,1246,2026-03-05,2026-03-28,USD,1324.15,paid 2026-03-20,2026-03-08
+V-1027,Hocking Hills Cleaning,1269,2026-04-05,2026-04-28,USD,4018.27,paid 2026-04-20,2026-04-08
+V-1049,Mad River Plastics,1292,2026-05-05,2026-05-28,USD,1627.60,paid 2026-05-20,2026-05-08
+V-1019,Scioto Office Supply,1315,2026-06-05,2026-06-28,USD,4330.36,paid 2026-06-20,2026-06-08
+V-1040,Riverside Janitorial,1338,2026-07-05,2026-07-28,USD,2314.96,paid 2026-07-20,2026-07-08
+V-1011,Buckeye Pallet Co.,1361,2026-08-05,2026-08-28,USD,3093.25,paid 2026-08-20,2026-08-08
+V-1031,Midwest Label Works,1384,2026-09-05,2026-09-28,USD,2016.65,paid 2026-09-20,2026-09-08
+V-1002,Ohio Valley Packaging,1407,2026-10-05,2026-10-28,USD,981.03,paid 2026-10-20,2026-10-08
+V-1023,Northern Maple Trading,1430,2026-11-05,2026-11-28,USD,3899.01,paid 2026-11-20,2026-11-08
+V-1044,Franklin Electric Supply,1453,2026-12-05,2026-12-28,USD,2279.35,paid 2026-12-20,2026-12-08
+V-1015,Great Lakes Fasteners,1476,2026-01-05,2026-01-28,USD,1220.51,paid 2026-01-20,2026-01-08
+V-1036,Cardinal Freight,1499,2026-02-05,2026-02-28,USD,599.58,paid 2026-02-20,2026-02-08
+V-1007,Lakeshore Corrugated,1522,2026-03-05,2026-03-28,USD,1751.91,paid 2026-03-20,2026-03-08
+V-1027,Hocking Hills Cleaning,1545,2026-04-05,2026-04-28,USD,4067.72,paid 2026-04-20,2026-04-08
+V-1049,Mad River Plastics,1568,2026-05-05,2026-05-28,USD,1684.94,paid 2026-05-20,2026-05-08
+V-1019,Scioto Office Supply,1591,2026-06-05,2026-06-28,USD,2036.03,paid 2026-06-20,2026-06-08
+V-1040,Riverside Janitorial,1614,2026-07-05,2026-07-28,USD,1935.75,paid 2026-07-20,2026-07-08
+V-1011,Buckeye Pallet Co.,1637,2026-08-05,2026-08-28,USD,542.81,paid 2026-08-20,2026-08-08
+V-1031,Midwest Label Works,1660,2026-09-05,2026-09-28,USD,850.58,paid 2026-09-20,2026-09-08
+V-1002,Ohio Valley Packaging,1683,2026-10-05,2026-10-28,USD,1882.44,paid 2026-10-20,2026-10-08
+V-1023,Northern Maple Trading,1706,2026-11-05,2026-11-28,USD,1647.84,paid 2026-11-20,2026-11-08
+V-1044,Franklin Electric Supply,1729,2026-12-05,2026-12-28,USD,2119.96,paid 2026-12-20,2026-12-08
+V-1015,Great Lakes Fasteners,1752,2026-01-05,2026-01-28,USD,1595.52,paid 2026-01-20,2026-01-08
+V-1036,Cardinal Freight,1775,2026-02-05,2026-02-28,USD,2478.94,paid 2026-02-20,2026-02-08
+V-1007,Lakeshore Corrugated,1798,2026-03-05,2026-03-28,USD,4097.17,paid 2026-03-20,2026-03-08
+V-1027,Hocking Hills Cleaning,1821,2026-04-05,2026-04-28,USD,3656.28,paid 2026-04-20,2026-04-08
+V-1049,Mad River Plastics,1844,2026-05-05,2026-05-28,USD,3218.96,paid 2026-05-20,2026-05-08
+V-1019,Scioto Office Supply,1867,2026-06-05,2026-06-28,USD,3867.47,paid 2026-06-20,2026-06-08
+V-1040,Riverside Janitorial,1890,2026-07-05,2026-07-28,USD,1078.83,paid 2026-07-20,2026-07-08
+V-1011,Buckeye Pallet Co.,1913,2026-08-05,2026-08-28,USD,4815.19,paid 2026-08-20,2026-08-08
+V-1031,Midwest Label Works,1936,2026-09-05,2026-09-28,USD,3480.43,paid 2026-09-20,2026-09-08
+V-1002,Ohio Valley Packaging,1959,2026-10-05,2026-10-28,USD,2388.55,paid 2026-10-20,2026-10-08
+V-1002,Ohio Valley Packaging,7781,2026-12-28,2027-01-07,USD,4812.50,paid 2027-01-07,2027-01-04
+V-1011,Buckeye Pallet Co.,3900,2026-12-15,2027-01-07,USD,2837.80,paid 2027-01-07,2027-01-04
+V-1023,Northern Maple Trading,3911,2026-12-15,2027-01-07,USD,2367.14,paid 2027-01-07,2027-01-04
+V-1036,Cardinal Freight,3922,2026-12-15,2027-01-07,USD,1180.87,paid 2027-01-07,2027-01-04
+V-1049,Mad River Plastics,3933,2026-12-15,2027-01-07,USD,910.39,paid 2027-01-07,2027-01-04
+V-1011,Buckeye Pallet Co.,3944,2026-12-15,2027-01-07,USD,2060.80,paid 2027-01-07,2027-01-04
+V-1023,Northern Maple Trading,3955,2026-12-15,2027-01-07,USD,783.84,paid 2027-01-07,2027-01-04
+V-1002,Ohio Valley Packaging,4100,2026-12-07,2027-01-14,USD,3299.53,carried forward to AP Register 2027,2026-12-10
+V-1027,Hocking Hills Cleaning,4117,2026-12-08,2027-01-15,USD,3764.96,carried forward to AP Register 2027,2026-12-11
+V-1044,Franklin Electric Supply,4134,2026-12-09,2027-01-16,USD,3834.59,carried forward to AP Register 2027,2026-12-12
+V-1015,Great Lakes Fasteners,4151,2026-12-10,2027-01-17,USD,965.40,carried forward to AP Register 2027,2026-12-13
+V-1036,Cardinal Freight,4168,2026-12-11,2027-01-18,USD,2224.28,carried forward to AP Register 2027,2026-12-14
+V-1007,Lakeshore Corrugated,4185,2026-12-12,2027-01-19,USD,1750.34,carried forward to AP Register 2027,2026-12-15
+V-1027,Hocking Hills Cleaning,4202,2026-12-13,2027-01-20,USD,3469.87,carried forward to AP Register 2027,2026-12-16
+V-1049,Mad River Plastics,4219,2026-12-14,2027-01-21,USD,2689.73,carried forward to AP Register 2027,2026-12-17
+V-1019,Scioto Office Supply,4236,2026-12-15,2027-01-14,USD,3355.58,carried forward to AP Register 2027,2026-12-18
+V-1040,Riverside Janitorial,4253,2026-12-16,2027-01-15,USD,1055.78,carried forward to AP Register 2027,2026-12-19
+V-1011,Buckeye Pallet Co.,4270,2026-12-17,2027-01-16,USD,4373.69,carried forward to AP Register 2027,2026-12-20
+V-1031,Midwest Label Works,4287,2026-12-18,2027-01-17,USD,2176.09,carried forward to AP Register 2027,2026-12-21
+V-1002,Ohio Valley Packaging,4304,2026-12-19,2027-01-18,USD,655.83,carried forward to AP Register 2027,2026-12-22
+V-1027,Hocking Hills Cleaning,4321,2026-12-20,2027-01-19,USD,352.32,carried forward to AP Register 2027,2026-12-23
+V-1044,Franklin Electric Supply,4338,2026-12-21,2027-01-20,USD,4161.52,carried forward to AP Register 2027,2026-12-24
+V-1015,Great Lakes Fasteners,4355,2026-12-22,2027-01-21,USD,4328.90,carried forward to AP Register 2027,2026-12-25
+V-1036,Cardinal Freight,4372,2026-12-23,2027-01-14,USD,4389.91,carried forward to AP Register 2027,2026-12-26
+V-1007,Lakeshore Corrugated,4389,2026-12-24,2027-01-15,USD,1886.29,carried forward to AP Register 2027,2026-12-27
+V-1027,Hocking Hills Cleaning,4406,2026-12-25,2027-01-16,USD,1522.49,carried forward to AP Register 2027,2026-12-28
+V-1049,Mad River Plastics,4423,2026-12-26,2027-01-17,USD,2896.20,carried forward to AP Register 2027,2026-12-29
+V-1019,Scioto Office Supply,4440,2026-12-27,2027-01-18,USD,4427.06,carried forward to AP Register 2027,2026-12-30
+V-1040,Riverside Janitorial,4457,2026-12-28,2027-01-19,USD,2155.61,carried forward to AP Register 2027,2026-12-31
+V-1011,Buckeye Pallet Co.,4474,2026-12-29,2027-01-20,USD,3197.87,carried forward to AP Register 2027,2027-01-01
+V-1031,Midwest Label Works,4491,2026-12-30,2027-01-21,USD,936.40,carried forward to AP Register 2027,2027-01-02
+V-1002,Ohio Valley Packaging,4508,2026-12-07,2027-01-14,USD,3294.78,carried forward to AP Register 2027,2026-12-10
+V-1027,Hocking Hills Cleaning,4525,2026-12-08,2027-01-15,USD,1648.57,carried forward to AP Register 2027,2026-12-11
+V-1044,Franklin Electric Supply,4542,2026-12-09,2027-01-16,USD,3855.96,carried forward to AP Register 2027,2026-12-12
+V-1015,Great Lakes Fasteners,4559,2026-12-10,2027-01-17,USD,4398.57,carried forward to AP Register 2027,2026-12-13
+V-1036,Cardinal Freight,4576,2026-12-11,2027-01-18,USD,970.87,carried forward to AP Register 2027,2026-12-14
+V-1007,Lakeshore Corrugated,4593,2026-12-12,2027-01-19,USD,3388.66,carried forward to AP Register 2027,2026-12-15
