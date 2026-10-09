@@ -1,8 +1,8 @@
-# Lab 2 answer key: the invoice register
+# Lab 2 answer key: the register runs
 
 The answers for the register runs in Task 6 of Chapter 2 of *The AI Agent Factory*, Second Edition: Lab 2, the first Role Contract. Every name, number and company in this lab is invented.
 
-**How this sheet is used.** After each run in Task 6, your AI grades the register it made against these four checks, and you compare its grades with this sheet. You have the final say. A run passes when it passes all four. Then you choose the cheapest setting that passed.
+**How this key is used.** After each run in Tasks 6 and 7, attach this file in the run's own conversation, with the lab's run prompt. The AI grades the register it just made against these four checks, and you compare the register with the table below yourself. You have the final say. A run passes when it passes all four. Then you choose the cheapest setting that passed.
 
 ## The four checks
 

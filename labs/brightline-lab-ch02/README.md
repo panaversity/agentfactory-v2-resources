@@ -6,12 +6,12 @@ Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, seven tasks, and how your AI grades them. |
+| `LAB.md` | The lab: the job, and seven tasks, each checked against its own answer key. |
 | `role/role-contract-template.md` | The blank one-page Role Contract. Copy it, and write in the copy. |
 | `role/ap-work-inventory.md` | Brightline's recurring AP work: the raw material for your contract. |
-| `messages/` | Three emails and a team chat message, for testing your contract in Tasks 2, 4 and 5. |
-| `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs), for the register runs in Task 6. To check the AI's work, open it on your computer. |
+| `messages/` | Three emails and a team chat message, for the tests in Tasks 2, 4 and 5. |
+| `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs), for the register runs in Task 6. To check a register yourself, open it on your computer. |
 
-**Give the AI only what a task's steps name.** Never upload `LAB.md` or this file.
+**The AI gets only what a task names:** `inputs.zip` for a run, your contract and one message for a test, and one answer key at each check. Never upload `LAB.md` or this file.
 
-The answer sheets are not in the zip. `LAB.md` links to them when it is time, for your AI to grade against and for you to compare.
+The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.
