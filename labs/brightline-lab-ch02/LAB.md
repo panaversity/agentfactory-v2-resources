@@ -79,7 +79,7 @@ Runtime needs: An always-on agent. A fast, low-cost model at its default
 The lab uses three kinds of conversation:
 
 1. **A test**: a fresh conversation each time. Send the test brief, printed in Task 2, then your whole contract, then one message. The AI decides what the worker would do, following only your contract. If a test fails, change the line in your contract that caused it, never the test, and test again fresh.
-2. **A check**: one conversation you keep for the whole lab. Attach the task's answer key, and send the check prompt, printed in Task 1, with your contract pasted under it. The AI grades, quoting your contract's words. Read the key yourself too: you have the final say.
+2. **A check**: one conversation you keep for the whole lab. Attach the task's answer key, and send the check prompt, printed in Task 1, with your contract pasted under it. The AI grades, quoting your contract's words. Read the key yourself too: you have the final say. A missed check means fix your contract, and send the check prompt again: the key is already there.
 3. **A run** (Tasks 6 and 7): a fresh conversation per run. The AI builds the invoice register, then grades it against the register key you attach.
 
 ## Task 1. What the AP Worker is (20 minutes)
@@ -92,7 +92,7 @@ The lab uses three kinds of conversation:
 2. Make a copy of `role/role-contract-template.md`, named `role/ap-worker-role-contract.md`. This copy is the one file you keep.
 3. Read `role/ap-work-inventory.md`. Before you write, guess which of the 16 fields it answers.
 4. Fill in every field you can, from the inventory and "The job". For anything only Dave can decide, write a question under Open questions instead of guessing.
-5. Leave Runtime needs empty: Task 6 fills it. You may name the test messages in Evaluations, but not the result you expect, because the AI in each test reads your whole contract.
+5. Leave Runtime needs empty: Task 6 fills it. You may name this week's messages in Evaluations. Never write the result you expect: the AI in each test reads your whole contract.
 6. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-1.md), one click. Open a new conversation, your check conversation for the whole lab. Attach the key, and send this check prompt, with your contract pasted under the line:
 
    ```text
@@ -283,7 +283,7 @@ Autonomy: Grade only. Do not redo the register.
 
 ## Ready for Chapter 3
 
-Your contract is ready when checks 1 to 12 have passed. Keep `role/ap-worker-role-contract.md` where you can find it again: Chapter 3 starts from it. If you keep the book's running project in a git repository, add your contract to it, and tag that commit `ch02`.
+Your contract is ready when checks 1 to 12 have passed. It is still Draft 1: Chapter 3 makes Draft 2. Keep `role/ap-worker-role-contract.md` where you can find it again, because Chapter 3 starts from it. If you keep the book's running project in a git repository, add your contract to it, and tag that commit `ch02`.
 
 ## If something goes wrong
 
@@ -294,7 +294,7 @@ Your contract is ready when checks 1 to 12 have passed. Keep `role/ap-worker-rol
 - **Monday's email passed, but Keystone's did not.** Your rule may name only bank details. Dave's rule covers any payment detail: bank account, address or remit-to name.
 - **Karen's question went to Dave.** A rule is wider than Dave asked for, or the worker has no way to check it. Narrow the rule, or give the worker what it needs to check it.
 - **The AI followed the message's own instructions.** Check that you sent the brief first, then your contract, then the message.
-- **There is no effort setting.** Some plans and models do not offer one. Run two models from different tiers instead.
+- **Your app shows no effort setting, or no model menu at all.** Run two models from different tiers instead. With no menus at all, run the default, and write the rest as predictions.
 - **Your plan's daily limit ran out.** Your contract file keeps. Carry on tomorrow, from the next test or run.
 
 ## Apply it to your vertical (20 minutes)
