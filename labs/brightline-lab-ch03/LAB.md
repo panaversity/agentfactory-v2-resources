@@ -13,13 +13,13 @@ Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory
 - `role/`: the blank first 10 percent, and a sample Draft 1 for anyone who skipped Chapter 2
 - `inputs.zip`: four files, `midwest-statement-2026-09.txt`, `brightline-register-midwest.csv`, `ap-policy-v3-excerpt.md` and `invoice-4488.txt`
 
-If you wrote your own Role Contract in Chapter 2, use it: Task 6 turns it into Draft 2. The sample is only for readers who start here.
+Copy your own Role Contract from Chapter 2 to `role/ap-worker-role-contract.md`, or copy the sample there if you start here. Task 6 turns that file into Draft 2, and Chapter 4 starts from it.
 
 ## The job
 
 - You still work in accounts payable (AP) at Brightline Wholesale Supply, and Dave Kowalski, the controller, still owns the AP Worker.
-- Today is Thursday, October 1, 2026. Brightline is closing September's accounts, and Dave signs the close on Monday, October 5 (policy 7.1).
-- Midwest Packaging's statement says Brightline owes $8,083.50. Brightline's register says $4,083.50.
+- Today is Thursday, October 1, 2026. Brightline is closing September's accounts. Policy 7.1 wants the reconciliation by the third business day after month end: Monday, October 5, when Dave signs the close.
+- Midwest Packaging's statement, dated September 28, says Brightline owes $8,083.50. Brightline's register, as of September 30, says $4,083.50.
 - AP policy section 7 says the whole difference must be explained, and that the register is never changed to match a vendor.
 - The controller supplies the policy, the deadline and the approvals. You write the first 10 percent and do the final 10. The worker does the middle.
 
@@ -131,7 +131,7 @@ You write two documents yourself, in any text editor: the first 10 percent for t
 
 **What you do:**
 
-1. Open your Role Contract from Chapter 2, or the sample in `role/`. Mark the header Draft 2, with the story's date, October 1, 2026.
+1. Open `role/ap-worker-role-contract.md`. Mark the header Draft 2, with the story's date, October 1, 2026.
 2. Keep every Draft 1 line, and make five edits, marked CHANGED or NEW:
    - Narrow the register authority to register-building.
    - Add the reconciliation lines: observe and recommend only, never change the register to match a statement.

@@ -8,7 +8,7 @@ The answers for Task 2 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second 
 
 Task 2 carries checks 1 to 4 of the lab's 12.
 
-1. **Intent gives the outcome and the why, and Scope carries the dates.** The outcome: the whole difference explained. The why: Dave signs the September close on Monday, October 5, 2026 (policy 7.1). The scope names today, Thursday, October 1, 2026. Missed: "reconcile the statement" with no why, or no date anywhere.
+1. **Intent gives the outcome and the why, and Scope carries the dates.** The outcome: the whole difference explained. The why: policy 7.1 wants the reconciliation by the third business day after month end, Monday, October 5, 2026, when Dave signs the close. The scope names today, Thursday, October 1, 2026. Missed: "reconcile the statement" with no why, or no date anywhere.
 2. **Scope says what is in, what is out, and names the inputs.** Midwest Packaging only, the September 28 statement, the register as of September 30, and the four input files by name. Missed: a scope that names no files, or leaves the period open.
 3. **Authority is narrowed for this task, and says so.** All inputs observe. Reconciling items and corrections recommend only. The register: do not change. The vendor: do not contact. The Role Contract allows register updates for register-building, so this task must say it is narrower. Missed: authority copied unchanged from the contract, or any execute line.
 4. **The review contract answers the five questions.** What is checked (both balances, every difference). What evidence comes back (statement line, register row, document, by label). What counts as success (items sum to the whole difference, unexplained $0.00, no plug). What makes the worker stop and ask (a difference it cannot explain, a missing or unreadable input: report and stop, never guess). What must never happen automatically (changing the register, recording a credit, contacting the vendor). Missed: any of the five unanswered, and above all a missing stop rule or never-list.
@@ -20,7 +20,9 @@ Not the only one. Yours will be worded differently.
 ```text
 ## Intent
 Outcome:     A reconciliation of Midwest Packaging's September statement to our register that explains the whole difference.
-Why:         Dave Kowalski signs the September AP close on Monday, October 5, 2026 (policy 7.1).
+Why:         Policy 7.1 wants the reconciliation by the third business day
+             after month end: Monday, October 5, 2026, when Dave Kowalski
+             signs the close.
 
 ## Scope
 Today:       Thursday, October 1, 2026.

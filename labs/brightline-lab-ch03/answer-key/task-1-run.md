@@ -8,7 +8,7 @@ The answers for the runs in Tasks 1 and 3 of Lab 3, in Chapter 3 of *The AI Agen
 
 | Points | Check | Full marks when |
 | --- | --- | --- |
-| 1 | Balances | Statement 8,083.50 at September 28, 2026, register 4,083.50 and difference 4,000.00 |
+| 1 | Balances | Statement 8,083.50 at September 28, 2026, register 4,083.50 as of September 30, and difference 4,000.00 |
 | 5 | Items | One point for each of the five items below, with the right amount and the right kind (timing or real) |
 | 1 | Fully explained | Unexplained difference is $0.00 with no plug, or the run honestly reports what it could not explain and stops |
 | 1 | Evidence | Every item names where it comes from: its statement line, register row or document, by label (S4, R3) or by reference (INV 4488) |
