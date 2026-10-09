@@ -304,6 +304,7 @@ Your vertical is the line of work you know best. Choose one role in it, and list
 ## Look back
 
 - **Dave's four questions.** Which fields of your contract answer each one?
+- **From assistant to worker.** Ask [2.2's two questions](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/) about Dave's assistant before your contract, and after it. Who decided the steps, and who answered for the outcome? Which lines of your page moved those answers?
 - **The four pairs.** Did your contract mix up tools and authority, knowledge and memory, KPIs and evaluations, or identity and owner? [The anatomy of an AI Worker](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/) sets them apart.
 - **Before and after Dave.** What did your draft decide in Task 2, and which line changed the result in Task 4?
 - **Keystone's email.** What did it show about how exact a rule must be?
