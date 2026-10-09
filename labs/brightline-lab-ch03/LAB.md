@@ -11,7 +11,7 @@ Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory
 - `README.md`
 - `LAB.md`: this page, as a file
 - `role/`: the blank first 10 percent, and a sample Draft 1 for anyone who skipped Chapter 2
-- `inputs.zip`: the vendor's statement, Brightline's register, the AP policy's section 7, and one invoice copy
+- `inputs.zip`: four files, `midwest-statement-2026-09.txt`, `brightline-register-midwest.csv`, `ap-policy-v3-excerpt.md` and `invoice-4488.txt`
 
 If you wrote your own Role Contract in Chapter 2, use it: Task 6 turns it into Draft 2. The sample is only for readers who start here.
 
@@ -65,7 +65,7 @@ You write two documents yourself, in any text editor: the first 10 percent for t
 **What you do:**
 
 1. Copy `role/first-ten-template.md` to a file of your own, such as `role/first-ten-midwest.md`, and fill every field: intent, scope, authority for this task, the review contract's five questions, and the format you want back. Write it so the worker could do the job if you were unreachable for the whole run.
-2. Two fields do the most work. The authority must be narrower than the Role Contract, and say so: this task recommends, and changes nothing. The review contract's stop rule and never-list are what keep the run safe while you are away.
+2. Two fields do the most work: the authority, which must be narrower than the Role Contract and say so, and the review contract's stop rule and never-list, which keep the run safe while you are away.
 3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md), one click. Open a new conversation, your check conversation for the whole lab. Attach the key, and send this check prompt, with your first 10 percent pasted under the line:
 
    ```text
@@ -93,7 +93,7 @@ You write two documents yourself, in any text editor: the first 10 percent for t
 
 1. Open a fresh conversation. Send your first 10 percent, with `inputs.zip` attached.
 2. The middle 80 is the worker's. Stay reachable, and do not steer. If it stops and asks under your stop rule, answer the question asked.
-3. When it finishes, attach the run key in the same conversation, and send the run prompt. Compare with the key yourself.
+3. When it finishes, attach [the run key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), the same file as Task 1's, and send the run prompt. Compare with the key yourself.
 4. A lost point usually comes from your first 10 percent. Fix the field that caused it, check it again in your check conversation, and run again in a fresh conversation. The brief that passes is your final first 10 percent.
 
 **Give Dave:** a run that passed, with 9 or more and no unauthorized action.
@@ -107,7 +107,7 @@ You write two documents yourself, in any text editor: the first 10 percent for t
 1. Review Run 2's evidence against your own review contract, item by item. Read what the worker flagged first, because a flag is the worker telling you where it was unsure.
 2. Open `inputs.zip` on your computer, and check two cited lines yourself: does the statement line or register row say what the run claims?
 3. Decide each item. The timing items need no action. Each real item becomes a recommendation routed to the person the policy names, nothing done yet.
-4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). In your check conversation, attach it and send the check prompt, with your first 10 percent pasted under it. Its checks are about your review, so the AI asks: answer it.
+4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). In your check conversation, attach it and send the check prompt, with nothing pasted. Both checks are about your review, so the AI asks: answer from it.
 
 **Give Dave:** the three real items, each with its evidence and its policy section, for his approval.
 
@@ -131,8 +131,13 @@ You write two documents yourself, in any text editor: the first 10 percent for t
 
 **What you do:**
 
-1. Open your Role Contract from Chapter 2, or the sample in `role/`. Mark the header Draft 2, with today's date.
-2. Keep every Draft 1 line. Narrow the register authority to register-building, and add the reconciliation lines: observe and recommend only, never change the register to match a statement. Add the stop-and-report rule and Dave's routing to Escalation. Add this statement, with its passing bar, and Dave's review checks, to Evaluations. Add an open question: how often Dave reviews this contract.
+1. Open your Role Contract from Chapter 2, or the sample in `role/`. Mark the header Draft 2, with the story's date, October 1, 2026.
+2. Keep every Draft 1 line, and make five edits, marked CHANGED or NEW:
+   - Narrow the register authority to register-building.
+   - Add the reconciliation lines: observe and recommend only, never change the register to match a statement.
+   - Add the stop-and-report rule, and Dave's routing, to Escalation.
+   - Add this statement to Evaluations, with its passing bar and Dave's review checks.
+   - Add an open question: how often Dave reviews this contract.
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). In your check conversation, attach it and send the check prompt, with your Draft 2 pasted under it.
 
 **Give Dave:** Draft 2, marked with what changed and what is new.

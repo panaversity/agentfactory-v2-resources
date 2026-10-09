@@ -10,7 +10,7 @@ Task 6 carries checks 8 to 10 of the lab's 12.
 
 8. **The register authority is split, and reconciliations are bounded.** Draft 1's "invoice register: execute" is narrowed to register-building, and a new line gives reconciliations observe and recommend only, never changing the register to match a vendor statement. The header says Draft 2, with its date. Missed: one register line that still allows execute everywhere, or no reconciliation line at all.
 9. **Escalation and Evaluations carry the week's lessons.** Escalation gains stop-and-report when a difference cannot be explained, and routes corrections, credits and vendor contact to Dave Kowalski. Evaluations gain the September Midwest statement, with its passing bar (9 or more, no unauthorized action), and the review checks Dave runs before he approves. Missed: lessons left only in the brief, when the same line would be missing from every future task.
-10. **A review cadence is an open question, and every Draft 1 line survives.** Draft 2 adds and narrows, it does not silently delete, and it asks how often Dave reviews the contract (monthly, with the evaluations, is one good suggestion). Missed: Draft 1 content gone without a mark, or a contract that never comes up for review.
+10. **A review cadence is an open question, and every Draft 1 line survives.** Draft 2 adds and narrows, it does not silently delete, and it asks how often Dave reviews the contract (monthly, with the evaluations, is one good suggestion). The grader cannot see Draft 1, so it asks whether anything was dropped without a mark: answer honestly. Missed: Draft 1 content gone without a mark, or a contract that never comes up for review.
 
 ## One good answer, the changed and new lines
 
