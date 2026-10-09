@@ -1,6 +1,19 @@
-# Layer map key
+# Lab 4 answer key: Task 1. Place the parts
 
-Seven items are misplaced: 1, 2, 3, 5, 6, 10 and 14. Item 9 is placed correctly but carries a trigger that belongs in the Role Contract too. Accept any answer that gives the same layer and the same reason. A learner who also marks item 9 as misplaced because its trigger is written only in the task has found the note: count it as the note, not as an error.
+The answers for Task 1 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
+
+**How this key is used.** When your layer map's table is filled, attach this file in your check conversation, with the lab's check prompt and your table pasted under it. The AI marks each check Passed or Missed against the key's table. Read the key yourself too: you have the final say.
+
+## The checks
+
+Task 1 carries checks 1 and 2 of the lab's 11.
+
+1. **All 16 items are placed, rented or owned is marked, and at least 12 sit in the right layer.** Memory items that belong in memory sit on the ownership line, and say so.
+2. **At least 5 of the 7 misplaced items are found, each with where it belongs.** The seven are items 1, 2, 3, 5, 6, 10 and 14. Finding all 7, with item 9's note, is the full answer. A learner who marks item 9 misplaced because its trigger is written only in the task has found the note: count it as the note, not as an error.
+
+## The key's table
+
+Accept any answer that gives the same layer and the same reason.
 
 | # | Item | Layer | Rented or owned | Misplaced? | Where it belongs, and why |
 | --- | --- | --- | --- | --- | --- |
