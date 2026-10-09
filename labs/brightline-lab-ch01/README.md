@@ -6,7 +6,7 @@ Chapter 1 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and seven tasks, each checked against its own answer key. |
+| `LAB.md` | The lab: the job, and seven tasks. The first five are each checked against their own answer key. |
 | `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs) and `purchase-orders.csv`. To check the AI's work, open it on your computer. |
 
 **Give the AI only `inputs.zip` and, at each check, that task's answer key.** Never upload `LAB.md` or this file.

@@ -69,7 +69,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 Read the key yourself too, and compare. You have the final say.
 
-**The fix.** A missed check points at your brief. Add the missing rule to your brief, tell the AI, and let it correct its own work. Don't fix its work by hand. Then check again. Keep the rule in your saved brief, because Task 6 sends your final briefs. If your first brief already passed, that is a finding, not a failure.
+**The fix.** A missed check points at your brief. Add the missing rule to your brief, tell the AI, and let it correct its own work. Don't fix its work by hand. Then send the check prompt again: the key is already in the conversation. Keep the rule in your saved brief, because Task 6 sends your final briefs. If your first brief already passed, that is a finding, not a failure.
 
 > [!IMPORTANT]
 > **Write every brief yourself.** If an AI writes them for you, you skip the one skill this lab trains. Your first attempts will miss things, and that is how the lab teaches.
@@ -145,7 +145,7 @@ Read the key yourself too, and compare. You have the final say.
 
 ## Your file (5 minutes)
 
-Start a file of your own, in any text editor. Put in it your five final briefs, each task's checks as Passed or Missed, and the AI's five jobs. Add up the passed checks, out of 10. A strong run is 9 or 10. Keep the file where you can find it again.
+Start a file of your own, in any text editor. Put in it your five final briefs, each task's checks as Passed or Missed, and the AI's five jobs. Add up the passed checks from Tasks 1 to 4, out of 10. Count a check as passed once it passes, and note which took a fix. A strong run is 9 or 10. Keep the file where you can find it again.
 
 **Checkpoint.** Your file has the five final briefs, the checks, and the five jobs.
 
@@ -164,7 +164,7 @@ If you can use only one AI vendor, skip the run. Note in your file what you thin
 
 At least a day later, look for every Task 2 spreadsheet you made, and for the AI's text answers. Check the conversations, and your computer. Is each one still there, is it gone, or can't you tell?
 
-**Checkpoint.** You looked for every result. Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back".
+**Checkpoint.** You looked for every result. Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back", at the end of that file.
 
 ## If something goes wrong
 
