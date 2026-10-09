@@ -1,83 +1,181 @@
-# Lab 03: One task through the whole rhythm
+# Lab 3: one AP task through the whole rhythm
 
-**Time:** about 2 hours of active work, plus the time the two runs take.
-**You produce:** `briefs/statement-rec-first-ten.md`, `results/run-1-output.md`, `results/run-2-output.md`, a filled `results/rhythm-log.md` and `results/review-sheet.md`, Draft 2 of `role/ap-worker-role-contract.md`, a filled `results/authority-port.md`, a first-10 sheet and review checklist for one task in your own vertical, and your Role Contract refined with its review checks.
-**You need:** this folder and a Claude or ChatGPT account. A free plan works for every part, including the port in Part H, which is done on paper. A paid plan also lets you run Run 2 as a task that you hand over and leave, rather than in a chat.
+Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: one AP task through the whole rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
 
-The task is real AP work: reconcile Midwest Packaging's September statement to Brightline's register. You run it twice, once with a one-line request and once with a full first 10 percent. Both runs get the same four files, including the policy. Run 1 relies on that policy and a minimal request. Run 2 makes the task's scope, authority, evidence and acceptance criteria explicit. Either run may succeed, so record what actually happens. Run 1 is safer than Dave's 9 a.m. run in the chapter: it sees the policy, it never sees the Role Contract that let his worker edit register rows, and a chat cannot change your files. So watch for what it adds, what it leaves out, and how long it takes you to check. Then you review both as the final 10 percent, before you see the answer key. The lab follows five moves: predict, run, investigate, modify, make. Part H, the port, is part of modify.
+In this lab you run one real AP task through the whole rhythm, twice. Run 1 uses Dave's one-line request. Run 2 uses a first 10 percent that you write. Then you review the evidence as the final 10, and diagnose where Run 1 lost its points. The lessons become Draft 2 of the Role Contract, and its limits are ported to each AI vendor's scheduled tasks. Each task is checked against its own answer key the moment it is done. It takes about 2 hours. You need a Claude or ChatGPT account.
 
-## Part A. Set up (5 minutes)
+## Before you start (5 minutes)
 
-1. Unzip this folder anywhere. Everything the lab needs is inside it.
-2. Open each file only when a step names it. Everything in `answer-key/` holds answers. If your AI tool can open folders, such as Cowork or Claude Code, give it only the files a step names, never the whole lab folder.
-3. Read `inputs/ap-policy-v3-excerpt.md`. It is one page, and it is the rulebook for this task.
-4. If you wrote a Role Contract in Chapter 2, copy your `role/ap-worker-role-contract.md` into `role/`. If not, copy `role/ap-worker-role-contract-draft1-sample.md` to `role/ap-worker-role-contract.md`.
-5. Have a clock ready. You will time each part of each run.
+Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip), and unzip it. You get one folder with four things:
 
-## Part B. Predict (5 minutes)
+- `README.md`
+- `LAB.md`: this page, as a file
+- `role/`: the blank first 10 percent, and a sample Draft 1 for anyone who skipped Chapter 2
+- `inputs.zip`: the vendor's statement, Brightline's register, the AP policy's section 7, and one invoice copy
 
-1. Skim the statement and the register. Do not reconcile them yourself.
-2. In `results/rhythm-log.md`, under **Predictions**, write what you expect a one-line request to return, what, if anything, you expect it to get wrong, and how long you expect each review to take.
+If you wrote your own Role Contract in Chapter 2, use it: Task 6 turns it into Draft 2. The sample is only for readers who start here.
 
-## Part C. Run 1: skip the first 10 (10 minutes)
+## The job
 
-1. Open a new chat that cannot see your own memory, so it does not change the test. In Claude, turn off Memory in the "+" menu as you start the chat. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you start. Attach the four files in `inputs/`.
-2. Paste the one line in `briefs/one-line-request.md`. Add nothing.
-3. While it runs, do not steer. If it asks a question it needs to finish the work, give the shortest true answer. Do not reply to offers of more work.
-4. In a chat, the worker cannot change your register file. If its reply presents an "updated" register, a recorded credit or a vendor reply as already done, treat that as an unauthorized action, exactly like a changed file. If it does none of these, record that too.
-5. Save the full reply as `results/run-1-output.md`. Fill the Run 1 column of the rhythm log, except the last four rows.
+- You still work in accounts payable (AP) at Brightline Wholesale Supply, and Dave Kowalski, the controller, still owns the AP Worker.
+- Today is Thursday, October 1, 2026. Brightline is closing September's accounts, and Dave signs the close on Monday, October 5 (policy 7.1).
+- Midwest Packaging's statement says Brightline owes $8,083.50. Brightline's register says $4,083.50.
+- AP policy section 7 says the whole difference must be explained, and that the register is never changed to match a vendor.
+- The controller supplies the policy, the deadline and the approvals. You write the first 10 percent and do the final 10. The worker does the middle.
 
-## Part D. Run 2: write the first 10, then stay out of the middle (20 minutes)
+## How each task works
 
-1. Copy `briefs/first-ten-template.md` to `briefs/statement-rec-first-ten.md`.
-2. Fill every field. Take no more than 12 minutes. Use the chapter's Concept 3.2 and the policy excerpt. Write it from the chapter and the policy, not from Run 1's reply: name nothing Run 1 found, so the same brief would work on next month's statement. For **Today**, write the lab's date, Thursday, October 1, 2026, whatever today's date is where you are. Two fields matter most: the stop rule, and the authority line that says this task changes nothing.
-3. Open a new conversation, with your own memory off as in Run 1. Attach the four files in `inputs/`. Paste your filled brief, without the two instruction lines under its title. On a paid plan you may run it as a task and leave it. Attach only the four files in `inputs/`, never the lab folder, and before you leave, ask it to list the four files it can see.
-4. During the run, interrupt only if the worker asks you something or you see it working on the wrong vendor or month. Count every interruption in the log.
-5. Save the full reply as `results/run-2-output.md`. Fill the Run 2 column of the rhythm log, except the last four rows.
+You write two documents yourself, in any text editor: the first 10 percent for this task, and Draft 2 of the Role Contract. The lab uses two kinds of conversation:
 
-## Part E. The final 10: review both runs (20 minutes)
+1. **A run**: a fresh conversation each time. Send the request, with `inputs.zip` attached. The worker owns the middle 80: do not steer it. If it stops and asks under your stop rule, answer the question asked, and nothing more. When it finishes, attach the run key and send the run prompt, printed in Task 1. The AI scores its own reconciliation, and you compare with the key.
+2. **A check**: one conversation you keep for the whole lab. Attach the task's answer key, and send the check prompt, printed in Task 2, with your document pasted under it. The AI grades, quoting your words. Read the key yourself too, because you have the final say. A missed check means fix your document, and send the check prompt again: the key is already there.
 
-Do not open `answer-key/` yet. Your review must stand on the evidence each run returned.
+## Task 1. Dave's one line (15 minutes)
 
-1. Work through `results/review-sheet.md` for Run 1, then for Run 2. Time each review, and count the items you had to check in the source files yourself, because the run did not cite them.
-2. For each run, decide: approve, fix in place, send back, or fix the brief. Write the decision in the rhythm log.
-3. Note which review was faster, and why, and compare both runs with your Part B predictions. Write it under the table in the rhythm log. Report what actually happened, even if Run 1 did well.
+**Dave asks:** "Reconcile Midwest Packaging's statement."
 
-## Part F. Investigate (15 minutes)
+**What you do:**
 
-1. Now open `answer-key/reconciliation-answer-key.md`, `answer-key/run-rubric.md` and `answer-key/first-ten-example.md`.
-2. Score both runs out of 10, including the rubric's deduction for figures, dates or claims a run added that you did not ask for. Judge every date against the lab's date, October 1, 2026. Write the scores in the rhythm log.
-3. For every point lost, ask the chapter's three questions in order to find where to look first. Did the brief, contract or policy say it? Did the worker act against them? Was the problem visible in the evidence? More than one may apply. Fill the last table in the rhythm log.
-4. Compare your Part E decisions with the scores. If you approved a run that failed the rubric, by scoring under 9 or by taking an unauthorized action, that is a final-10 failure, and the most useful thing this lab can show you.
-5. Compare your brief with `answer-key/first-ten-example.md`. For each point Run 2 lost, find the line in the example that would have kept it.
+1. Before anything runs, decide what you expect: what will a one-line request get wrong? Keep your guess in mind.
+2. Open a fresh conversation. Send Dave's line, exactly as he said it, with `inputs.zip` attached. Do not add anything: this run is his 9 a.m. request, re-lived.
+3. When it finishes, download [the run key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), one click. Attach it in the same conversation, and send this run prompt:
 
-**Optional: Run 1 without the policy.** If Run 1 scored 9 or more, open a new chat with your own memory off as in Run 1, attach only the statement, the register and the invoice, and paste the one line again. Score it the same way, and fill the rhythm log's last column. The policy did part of your first 10 for Run 1. Dave's 9 a.m. run in the chapter had no policy to lean on.
+   ```text
+   Outcome:  The reconciliation you just made in this conversation,
+             scored against the attached answer key: its points out
+             of 10, its deductions, and pass or fail.
+   Format:   A table: each scored line, the points, and your own
+             words or rows that show it. Then the deductions, each
+             with its reason. Then the score, and pass or fail.
+   Inputs:   Your answers in this conversation, and the attached
+             answer key, including its rule for date claims.
+   Autonomy: Score only. Do not redo the reconciliation.
+   ```
 
-## Part G. Modify: Draft 2 of the Role Contract (10 minutes)
+4. Read the key yourself, and compare the scoring with your guess from step 1. Note each point lost, and each deduction: Task 5 diagnoses them.
 
-The reconciliation exposed gaps in Draft 1. It gave the worker authority to update register rows, and it had no stop rule for an unexplained difference.
+**Give Dave:** nothing yet. This run showed what his one line buys.
 
-1. Open `role/ap-worker-role-contract.md`. Change the header to Draft 2, with the lab's date, October 1, 2026.
-2. Add the reconciliation as a responsibility, and give it its own authority line: observe and recommend only.
-3. Add the stop rule to Escalation, and route register corrections, credits and vendor contact to the Controller.
-4. Add the September statement to Evaluations, with its passing score. Add the review checks Dave will use before he approves a register or a reconciliation.
-5. Only now, compare with `answer-key/role-contract-draft2-example.md`.
+**Checkpoint.** You know Run 1's score, its deductions, and how it compares with your guess.
 
-## Part H. Port the authority line (15 minutes)
+## Task 2. Write the first 10 percent (25 minutes)
 
-A limit written in the Role Contract is a statement. A product setting can enforce part of it. This part shows you which part, on each AI vendor. You do it on paper, from Concept 3.7, so you do not need either product's scheduled tasks.
+**Dave asks:** "Then set it up properly. I sign the close on Monday."
 
-1. Copy the reconciliation lines from your Draft 2 (authority, escalation, the stop rule) into `results/authority-port.md`.
-2. Imagine Brightline runs this reconciliation every month as a scheduled task. For each limit, write how you would set it on Claude's scheduled tasks and on ChatGPT's scheduled tasks: what you would connect or not connect, and which approval setting you would use.
-3. In the last column, mark each limit as one of the three kinds in the chapter's Figure 3.4: **impossible** (the task has no access path to do it), **person decides** (an approval step stops it until someone reviews it), or **brief and review** (it needs judgment, so the instructions and your final 10 hold it, with automated checks for any measurable part).
-4. Answer the two questions at the bottom of the file. Then compare with `answer-key/authority-port-example.md`.
+**What you do:**
 
-**Optional rerun.** If you have both AI vendors, run your Run 2 brief on the other one and fill the third column of the rhythm log. A good first 10 needs almost no change, because it names no product.
+1. Copy `role/first-ten-template.md` to a file of your own, such as `role/first-ten-midwest.md`, and fill every field: intent, scope, authority for this task, the review contract's five questions, and the format you want back. Write it so the worker could do the job if you were unreachable for the whole run.
+2. Two fields do the most work. The authority must be narrower than the Role Contract, and say so: this task recommends, and changes nothing. The review contract's stop rule and never-list are what keep the run safe while you are away.
+3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md), one click. Open a new conversation, your check conversation for the whole lab. Attach the key, and send this check prompt, with your first 10 percent pasted under the line:
 
-## Part I. Make: apply it to your vertical (15 minutes)
+   ```text
+   Outcome:  The document pasted below, graded against the attached
+             answer key: Passed or Missed for each of its checks.
+   Format:   A table: the check, Passed or Missed, the document's own
+             words that show it, and one line on why. Then how many
+             passed.
+   Inputs:   The attached answer key, and the document pasted below
+             the line.
+   Autonomy: Grade only. Do not rewrite the document, and do not
+             suggest new lines. With no words to quote, mark the check
+             Missed. If a check is about what I did, ask me.
 
-1. Choose one recurring task from a role you know well.
-2. Copy `briefs/first-ten-template.md` to `briefs/my-task-first-ten.md` and fill it. For a recurring task, write Today as the date each run starts. Give it at least one stop rule and one "never automatically" line.
-3. Write a five-line review checklist for its final 10, in the style of `results/review-sheet.md`, in `results/my-task-review.md`.
-4. Note one way you might be tempted to micromanage its middle 80, and the first-10 line that removes the need.
-5. Refine that role's Role Contract the same way as Draft 2: add the five checks in `results/my-task-review.md` to its Evaluations, as review checks. If you have no Role Contract for a role of your own, Draft 2 for Brightline is your refined Role Contract.
+   ---
+   ```
+
+**Give Dave:** the review contract's five answers, so he knows what evidence Monday's signature will rest on.
+
+**Checkpoint.** Checks 1 to 4 passed.
+
+## Task 3. Run it (20 minutes)
+
+**What you do:**
+
+1. Open a fresh conversation. Send your first 10 percent, with `inputs.zip` attached.
+2. The middle 80 is the worker's. Stay reachable, and do not steer. If it stops and asks under your stop rule, answer the question asked.
+3. When it finishes, attach the run key in the same conversation, and send the run prompt. Compare with the key yourself.
+4. A lost point usually comes from your first 10 percent. Fix the field that caused it, check it again in your check conversation, and run again in a fresh conversation. The brief that passes is your final first 10 percent.
+
+**Give Dave:** a run that passed, with 9 or more and no unauthorized action.
+
+**Checkpoint.** Run 2 passed, on a first 10 percent that passed checks 1 to 4.
+
+## Task 4. The final 10 percent (15 minutes)
+
+**What you do:**
+
+1. Review Run 2's evidence against your own review contract, item by item. Read what the worker flagged first, because a flag is the worker telling you where it was unsure.
+2. Open `inputs.zip` on your computer, and check two cited lines yourself: does the statement line or register row say what the run claims?
+3. Decide each item. The timing items need no action. Each real item becomes a recommendation routed to the person the policy names, nothing done yet.
+4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). In your check conversation, attach it and send the check prompt, with your first 10 percent pasted under it. Its checks are about your review, so the AI asks: answer it.
+
+**Give Dave:** the three real items, each with its evidence and its policy section, for his approval.
+
+**Checkpoint.** Checks 5 and 6 passed.
+
+## Task 5. Which part broke (10 minutes)
+
+**What you do:**
+
+1. Take each point Run 1 lost, and each deduction, and ask the chapter's three questions in order. Did the brief, contract or policy say it? Did the worker act against them? Was the problem visible in the evidence?
+2. Write your diagnosis as a few lines: each loss, and the part of the rhythm that owed it. If Run 1 lost nothing, write why: what carried the policy to the worker, and what your one line still never gave it.
+3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-5.md). In your check conversation, attach it and send the check prompt, with your diagnosis pasted under it.
+
+**Give Dave:** one sentence on which part of the rhythm his 9 a.m. request skipped.
+
+**Checkpoint.** Check 7 passed.
+
+## Task 6. Draft 2 of the Role Contract (15 minutes)
+
+**Dave asks:** "Put what we learned where it lasts. I don't want to write these rules into every brief."
+
+**What you do:**
+
+1. Open your Role Contract from Chapter 2, or the sample in `role/`. Mark the header Draft 2, with today's date.
+2. Keep every Draft 1 line. Narrow the register authority to register-building, and add the reconciliation lines: observe and recommend only, never change the register to match a statement. Add the stop-and-report rule and Dave's routing to Escalation. Add this statement, with its passing bar, and Dave's review checks, to Evaluations. Add an open question: how often Dave reviews this contract.
+3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). In your check conversation, attach it and send the check prompt, with your Draft 2 pasted under it.
+
+**Give Dave:** Draft 2, marked with what changed and what is new.
+
+**Checkpoint.** Checks 8 to 10 passed.
+
+## Task 7. Port the limits (15 minutes)
+
+**Dave asks:** "If this reconciliation runs as a scheduled task, what holds the limits while nobody watches?"
+
+**What you do:**
+
+1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in this task, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How the two leaders support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/two-leaders/) has each AI vendor's controls.
+2. Start from the strongest limit. Access you never granted beats any approval, and an approval beats an instruction.
+3. Judgment rules cannot be settings. Say where each one lives instead, and which measurable part a setup could check automatically.
+4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). In your check conversation, attach it and send the check prompt, with your port pasted under it.
+
+**Give Dave:** the port, and any limit that needs an open question.
+
+**Checkpoint.** Checks 11 and 12 passed.
+
+## Ready for Chapter 4
+
+Your work is ready when checks 1 to 12 have passed and Run 2 passed the run key. Keep your first 10 percent and your Draft 2 where you can find them again: the book keeps building on the contract. If you keep the book's running project in a git repository, add both files, and tag that commit `ch03`.
+
+## If something goes wrong
+
+- **The AI will not take `inputs.zip`.** Unzip it, and upload the four files inside it instead.
+- **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the prompt instead.
+- **You attached the wrong task's key.** Say so, attach the right one, and send the prompt again.
+- **The run changed the register, or "sent" something.** It acted beyond the authority it was given. Check what your first 10 percent allowed, fix it, and run again fresh.
+- **The run used the wrong date.** Your scope did not say what today is. The worker judges "due" and "overdue" by its own clock unless you tell it.
+- **The run stopped and asked.** That is your stop rule working. Answer the question asked, and let it continue.
+- **Your plan's daily limit ran out.** Your documents keep. Carry on tomorrow, from the next task.
+
+## Apply it to your vertical (20 minutes)
+
+Your vertical is the line of work you know best. Pick one task in it that you would hand over. Copy the first-ten template and write its first 10 percent, with real dates, a stop rule, and a never-list. If you can, run it on your own files in a fresh conversation, and review the evidence flags first. The five questions are the part your vertical will reuse every week.
+
+## Look back
+
+- **The three failures.** Dave's 9 a.m. was a first-10 failure. Where in your own runs did each failure try to happen, and what stopped it?
+- **Your guess against Run 1.** What did you predict, and what actually cost the points?
+- **The same correction twice.** Which lesson went into Draft 2, so no future brief has to carry it?
+- **The three scales.** Your first 10 percent ran one task. Your Draft 2 is the first 10 percent of the worker's whole life. What is the company-scale version of the line you just wrote?
+- **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How the two leaders support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/two-leaders/) explains why that difference holds on either AI vendor.

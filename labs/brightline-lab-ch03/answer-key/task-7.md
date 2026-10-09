@@ -1,6 +1,18 @@
-# Answer key: porting the authority line
+# Lab 3 answer key: Task 7. Port the limits
 
-One good answer. Product facts as verified 4 October 2026. Check Concept 3.7 for anything that has changed.
+The answers for Task 7 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified 4 October 2026: check the chapter's 3.7 for anything that has changed.
+
+**How this key is used.** When your port is written, attach this file in your check conversation, with the lab's check prompt and your port pasted under it.
+
+## The checks
+
+Task 7 carries checks 11 and 12 of the lab's 12.
+
+11. **Every "never" is mapped to the strongest limit each AI vendor offers, strongest first.** Never change the register: read-only access on both, which makes it impossible while nothing else can write; failing that, an approval mode or permission that makes a person decide. Never contact the vendor: no email connected to the task. Each mapping says which strength it reached: impossible, person decides, or brief and review. Missed: a "never" left only as an instruction when a stronger limit was available, or no strength named.
+12. **Judgment rules stay in the brief and the final 10, and a gap becomes an open question.** "Stop if the gap cannot be explained" and "recommend, do not decide" cannot be product settings. Their measurable part, that the items sum to the gap, is named as a check the setup can run. Where read-only is not available, the port says so as an open question, with the fallback: every write waits for approval, and Dave reviews every write. Missed: a product setting trusted to hold a judgment rule, or the read-only gap papered over.
+
+## One good answer
+
 
 | Limit | Claude scheduled task | ChatGPT scheduled task | Kind |
 | --- | --- | --- | --- |
