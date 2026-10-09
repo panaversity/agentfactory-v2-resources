@@ -25,7 +25,6 @@ Rented or owned: rented sits above the ownership line, owned below. Memory sits 
 Number of items you marked misplaced:
 
 
-Rubric Part 2 scores (Not yet 1, Meets 2, Exceeds 3): Placement __, Misplacements found __, Precedence __, Swap test __, Draft 3 __, Port __. Total, out of 18: __
 
 ## The swap test
 

@@ -28,7 +28,7 @@ Accept any answer that gives the same layer and the same reason.
 | 9 | Scheduled task | Runtime | Rented | No, with a note | Rebuilding it on another AI vendor is normal. Write the trigger itself in the Role Contract as a business event, so the definition survives the swap. |
 | 10 | Connector: accounting system | Should be DSoR operations | The connector is rented. The controls over company systems are owned | **Yes** | It writes to the register and changes status with Maria's login and no checks. Replace write access with governed operations: read terms, propose a register change, request approval. Give the worker its own identity. |
 | 11 | Connector: AP inbox | Channel | Rented | No | Where vendors reach the worker. Read-only is right. |
-| 12 | Team chat #ap-help | Channel | Rented | No | Where staff reach the worker. |
+| 12 | Team chat #ap-help | Channel | Rented | No | Where staff reach the worker. Rented from its own vendor, not from the AI vendor. |
 | 13 | Model and effort setting | Runtime | Rented | No | Replaceable. Record the choice under Runtime needs. |
 | 14 | Approval record in chat | Belongs to DSoR evidence | Owned | **Yes** | An approval in chat history is text anyone could imitate. Approvals belong in the accounting system, from Dave's own login (policy 4.2), with the evidence kept. |
 | 15 | Role Contract, Draft 2 | Role Contract | Owned | No | The right place. It should be the source the project instructions come from. |

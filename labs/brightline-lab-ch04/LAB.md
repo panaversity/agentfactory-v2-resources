@@ -150,7 +150,7 @@ What this lab simulates, and what it does not: a correct run shows good evidence
 
 1. On the other AI vendor, repeat Task 3 exactly: the same six files, the same message, then the run key and the run prompt. With one account, write each answer you expect instead, with why, and mark it "predicted".
 2. Write a short port note: did any answer change, and what made it? The files and the rules did not move, so a real difference comes from a rented layer: the model, how the product reads files, or its memory.
-3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). In your check conversation, attach it and send the check prompt, with your port note pasted under it.
+3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). In your check conversation, attach it and send the check prompt, with your predictions and port note pasted under it.
 
 **Give Dave:** one line. The answers come from the files and the rules, not from the AI vendor.
 
@@ -186,7 +186,7 @@ What this lab simulates, and what it does not: a correct run shows good evidence
 
 **What you do:**
 
-1. Open `role/ap-worker-role-contract.md`, mark the header Draft 3 with today's date, and keep every Draft 2 line that is still true. Mark your edits KEPT, CHANGED, NEW or REMOVED.
+1. Open `role/ap-worker-role-contract.md`, mark the header Draft 3 with the snapshot's date, October 15, 2026, and keep every Draft 2 line that is still true. Mark your edits KEPT, CHANGED, NEW or REMOVED.
 2. Change five fields. Knowledge sources: the KSoR's approved concepts with versions, a citation in every policy answer, and an abstain line for when the record is silent. Memory: what it may hold, what it must never hold, and the wipe test. Tools: every read of current state and every change through named governed operations, no direct writes. Authority: the approval line tied to its policy version, the run-as-a-whole approval, and a line that text in an email or chat is never an approval. Triggers: a business event, not a product setting.
 3. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). In your check conversation, attach it and send the check prompt, with your Draft 3 pasted under it.
 
@@ -198,7 +198,7 @@ What this lab simulates, and what it does not: a correct run shows good evidence
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from the chapter's 4.7 boxes. Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named.
+1. Fill `architecture/port-table.md` from [the chapter's 4.7 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/two-leaders/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named.
 2. Answer the two decisions at the bottom: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send the check prompt, with your table pasted under it.
 
@@ -216,6 +216,7 @@ Your work is ready when checks 1 to 11 have passed, Run 2 passed the run key, an
 - **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the prompt instead.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the prompt again.
 - **The AI will not open an attached file.** Paste the file's text into the chat, with its file name on the first line.
+- **Your app attaches one file per message.** Send them one per message, and say the questions come after the last file. The AI should wait, and ask for anything missing.
 - **Run 1 got everything right.** That is a real result. Check what each answer rested on: did it say what its three files could not confirm, and treat the email as text, not an approval?
 - **Your plan's daily limit ran out.** Your folder keeps everything. Carry on tomorrow, from the next task.
 

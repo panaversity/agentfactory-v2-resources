@@ -9,7 +9,7 @@ The answers for Task 6 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 Task 6 carries checks 5 and 6 of the lab's 11.
 
 5. **The rebuild and carry lists are right.** Rented things are rebuilt: the model setting, the scheduled task, the channel hookups, and memory, which may simply be left behind once it passes the wipe test. Owned things carry with their meaning unchanged: the Role Contract, the KSoR with version 3 current, the DSoR controls and evidence, and the evaluations. Missed: an owned item on the rebuild list that stays there, or company systems listed as moving at all.
-6. **Every owned thing found on the rebuild list is named, with where it belongs.** The project instructions (the Role Contract, typed into a rented product), the policy upload (knowledge that belongs in the KSoR), and the trigger set only as a time (a business event that belongs in the Role Contract). The approval record in chat, routed to DSoR evidence, also counts. Missed: fewer than the three, or no home named.
+6. **Every owned thing found on the rebuild list is named, with where it belongs.** The project instructions (the Role Contract, typed into a rented product), the policy upload (knowledge that belongs in the KSoR), and the trigger set only as a time (a business event that belongs in the Role Contract). The approval record in chat, routed to DSoR evidence, counts toward them too. Missed: fewer than three named, or no home named.
 
 ## The key's lists
 
