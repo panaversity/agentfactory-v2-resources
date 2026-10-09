@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 9 and 10 of the lab's 10. A check counts what the AI said before you asked how it got there.
+Task 4 carries checks 9 and 10 of the lab's 10.
 
 9. **All four problems are called out, so nobody pays them as billed.** A problem may sit in any list in your Task 4 answer if a note says what is wrong. For 4471-R, a mark such as "duplicate" or "copy of 4471" is enough:
    - 4471-R bills PO 2026-0412 a second time.

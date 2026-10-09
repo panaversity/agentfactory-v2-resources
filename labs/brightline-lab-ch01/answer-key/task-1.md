@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 3 of the lab's 10. A check counts what the AI said before you asked how it got there.
+Task 1 carries checks 1 to 3 of the lab's 10.
 
 1. **Your total counts 13 bills: every bill except 4471, which is paid, and 4471-R, its copy.** At their printed totals, that is $24,096.98. Find your total in the table below.
 2. **PCS-60214 is flagged with both of its figures, and the AI says someone should confirm or decide: you, the vendor or your manager.** Its lines add up to $2,364.00, but its printed total is $2,346.00. The $18.00 gap looks like two swapped digits.

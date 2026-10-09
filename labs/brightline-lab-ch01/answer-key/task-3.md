@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The check
 
-Task 3 carries check 8 of the lab's 10: one check, one point, however the AI lays out its table. It counts what the AI said before you asked how it got there.
+Task 3 carries check 8 of the lab's 10: one check, one point, however the AI lays out its table.
 
 8. **Three bills, $3,977.80.**
 
