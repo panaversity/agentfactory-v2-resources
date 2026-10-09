@@ -5,7 +5,10 @@
 #
 # A lab named in UPLOAD_LABS is one whose learner gives an AI its inputs as a
 # file. Its zip leaves out answer-key/, so the answers never ride along, and
-# holds inputs/ only as inputs.zip: one copy, and the one file to upload.
+# holds inputs/ only as inputs.zip: one copy, and the one file to upload. Its
+# per-task answer keys (answer-key/task-*.md) are published as assets of their
+# own, one file per task, so the lab can link one task's key for a one-click
+# download at that task's check step.
 name: Release labs
 
 on:
@@ -43,6 +46,13 @@ jobs:
               (cd labs && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
             fi
           done
+          # Each task's answer key rides as its own asset, named for its lab.
+          for name in $UPLOAD_LABS; do
+            for key in "labs/$name"/answer-key/task-*.md; do
+              [ -e "$key" ] || continue
+              cp "$key" "dist/$name-key-$(basename "$key")"
+            done
+          done
           ls -l dist
 
       - name: Publish the zips as the latest release
@@ -50,7 +60,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           tag="labs-$(date -u +%Y-%m-%d-%H%M%S)"
-          gh release create "$tag" dist/*.zip \
+          gh release create "$tag" dist/* \
             --title "Labs, $(date -u +%Y-%m-%d)" \
-            --notes "Every lab folder of The AI Agent Factory, Second Edition, as a zip. The book links to the latest release, so a link always downloads the newest copy." \
+            --notes "Every lab folder of The AI Agent Factory, Second Edition, as a zip, and each task's answer key as its own file. The book links to the latest release, so a link always downloads the newest copy." \
             --latest
