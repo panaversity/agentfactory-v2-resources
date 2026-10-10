@@ -81,7 +81,7 @@ Runtime needs: An always-on agent. A fast, low-cost model at its default
 The lab uses three kinds of conversation:
 
 1. **A test**: a fresh conversation each time. Send the test brief, printed in Task 2, then your whole contract, then one message, pasted together as one send. The AI decides what the worker would do, following only your contract. If a test fails, change the line in your contract that caused it, never the test, and test again fresh.
-2. **A check**: one conversation you keep for the whole lab. Attach the task's answer key, and send the check prompt, printed below, with your contract pasted under it. The AI grades, quoting your contract's words. Read the key yourself too: you have the final say. A missed check means fix your contract, and send the check prompt again: the key is already there.
+2. **A check**: one conversation you keep for the whole lab. Attach the task's answer key, and send the check prompt, printed below, with your contract pasted under it. The AI grades, quoting your contract's words. Read the key yourself too: you have the final say. A missed check means fix your contract, and send the check prompt again: the key is already there. Earlier keys pile up in that conversation on purpose, and the grader uses the newest.
 3. **A run** (Tasks 6 and 7): a fresh conversation per run. The AI builds the invoice register, then grades it against the register key you attach.
 
 ### The check prompt
@@ -118,7 +118,7 @@ Autonomy: Grade only. Do not rewrite the contract, and do not
 5. Leave Runtime needs empty: Task 6 fills it. You may name this week's messages in Evaluations. Never write the result you expect: the AI in each test reads your whole contract.
 6. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-1.md), one click. Open a new conversation, your check conversation for the whole lab. Attach the key, and send [the check prompt](#the-check-prompt), with your contract pasted under the line.
 
-**Give Dave:** Draft 1, with your questions. On top, one line saying what the assistant was before this contract, and why.
+**Give Dave:** Draft 1, with your questions, and one line in your note to him, not in the contract itself, saying what the assistant was before this contract, and why.
 
 **Checkpoint.** Checks 1 to 3 passed.
 
@@ -130,7 +130,7 @@ Autonomy: Grade only. Do not rewrite the contract, and do not
 
 1. Open a new conversation. Send the test brief below, then your whole contract, then Monday's email, copied from below, all pasted as one message.
 2. Note what the AI decided, and the line of your contract that decided it.
-3. Do the same for Keystone's email, and again for Karen's question, each in a fresh conversation. A remit-to address is where a payment is mailed, so Keystone's email also changes where money goes.
+3. Do the same for Keystone's email, and again for Karen's question, each in a fresh conversation.
 4. Change nothing yet. Task 4 tests your contract again, after Dave's answers.
 5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-2.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your contract pasted under it. This one is not scored: it tells you what first drafts usually decide, and why.
 
@@ -265,7 +265,7 @@ Central Ohio Office Supply
 
 **What you do:**
 
-1. Test your contract on the same three messages, each in a fresh conversation, with the test brief and the messages printed in Task 2: the bank change, the remit-to change, and Karen's question.
+1. Test your contract on the same three messages, each in a fresh conversation, with the test brief and the messages printed in Task 2: the bank change, the remit-to change, and Karen's question. A remit-to address is where a payment is mailed, so a remit-to change also changes where money goes.
 2. The two emails that change payment details must each go to Dave. Karen's question must get a drafted reply, with no escalation. Escalating only if a check finds a problem, such as a vendor that turns out to be new, is fine.
 3. If a test fails, change the line that caused it, never the test. Then test again, in a fresh conversation.
 4. If Karen's question went to Dave, find out why. A rule may be wider than Dave asked for. Or the worker may have no way to check a rule, such as whether a vendor was paid before. Give it what it needs to check, in Tools. If Dave's own words cause it, add a question for him under Open questions.
@@ -306,8 +306,8 @@ now? Otherwise Friday's payment will bounce. Thanks!
 
 **What you do:**
 
-1. Name the surface. Building the register is a task you hand over, so it goes to an agent that works on its own (2.4). In Claude, one conversation routes it to a task. In ChatGPT, use Work.
-2. Find that surface's default model and effort.
+1. Name the surface. Building the register is a task you hand over, so it goes to an agent that works on its own ([2.4](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/)). In Claude, one conversation routes it to a task. In ChatGPT, use Work.
+2. Find that surface's default model and effort. No menu anywhere? "If something goes wrong" covers it.
    - In Claude, as verified 3 October 2026, the model menu next to the send button shows the model and its effort. Each model's recommended effort is marked "Default".
    - In ChatGPT, as verified 6 October 2026, Work has its own model picker, apart from chat's. Use the setting it offers by default.
 3. **Run 1.** Open a fresh conversation at the default setting. Attach `inputs.zip`, and send the register brief below. Then download the register it made, and open it.
