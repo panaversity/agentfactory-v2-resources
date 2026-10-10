@@ -6,7 +6,7 @@ In this lab you give an AI a real job, and check each task against its answer ke
 
 **What you will learn:**
 
-- How to write a brief under four headings, so the AI does the work instead of just talking about it.
+- How to delegate one task with a clear finish. You write a brief, and the AI does the work instead of just talking about it.
 - How to check each task against its answer key, the moment it is done.
 - Where an AI's results live, and which of them survive to the next day.
 - What changes when the same briefs run on the other AI vendor.
