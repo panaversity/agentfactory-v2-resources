@@ -24,4 +24,17 @@ Rented or owned: rented sits above the ownership line, owned below. Memory sits 
 
 Number of items you marked misplaced:
 
-Rubric Part 2 scores (Not yet 1, Meets 2, Exceeds 3): Placement __, Misplacements found __, Precedence __, Swap test __, Draft 3 __, Port __. Total, out of 18: __
+
+
+## The swap test
+
+Imagine Brightline replaces the AI vendor next week.
+
+Rebuild on the new AI vendor (rented):
+-
+
+Carry across, meaning unchanged (owned):
+-
+
+Owned things found on the rebuild list, and where each belongs:
+-

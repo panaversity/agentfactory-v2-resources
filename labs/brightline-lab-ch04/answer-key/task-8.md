@@ -1,6 +1,17 @@
-# Port table key
+# Lab 4 answer key: Task 8. The port table
 
-From the boxes in Concept 4.7, verified 4 October 2026. Product names change, so check the chapter's boxes if they have been updated since.
+The answers for Task 8 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified 4 October 2026: check the chapter's 4.7 boxes for anything that has changed.
+
+**How this key is used.** When your port table is filled, attach this file in your check conversation, with the lab's check prompt and your table pasted under it.
+
+## The checks
+
+Task 8 carries checks 10 and 11 of the lab's 11.
+
+10. **Every rented row names a product on both AI vendors, and every owned row keeps its meaning.** Where a box names no product, the row says how the worker would reach it instead. Owned rows say "no change" in meaning, with the integration work named: reconnections, identity mapping, and the evaluations rerun before go-live. Missed: a rented row left empty, or an owned item whose meaning changes, which means it was stored in a rented place.
+11. **The two decisions are answered from the boxes.** The plan each AI vendor needs so the worker answers from the governed KSoR rather than uploads, and how each one starts work when an invoice arrives, with the contract stating the tolerance the slower design still meets. Missed: a decision answered from memory of the products rather than the chapter's boxes.
+
+## The key's table
 
 ## Rented
 
