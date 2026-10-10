@@ -34,9 +34,6 @@ The whole lab runs in one conversation. Every task is the same loop:
 2. Download the task's answer key, one click.
 3. Attach the key, and send [the check prompt](#the-check-prompt), printed below.
 4. Missed a check? Fix your brief, have the AI correct its work, and send the check prompt again.
-5. Paste the task's final brief, and how its checks went, into a notes file you keep, such as `lab-1-notes.md`.
-
-Each key you attach stays in the conversation, so the AI may already know part of a later task's answer. That is fine: the checks grade your brief and your checking, not the AI's memory.
 
 **The brief.** Before you send one, decide what kind of answer you expect: a number, a list or a file. Write each brief under four headings:
 
@@ -152,7 +149,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 3. If a run gets stuck, try a setting before you change your words. One that lets the AI run code or create files is a good start.
 4. Ask Task 2's files question, and download its spreadsheet.
 5. Check each task the same way: its key, right after its run.
-6. Note every change you had to make, and why, in your notes file.
+6. Note every change you had to make, and why.
 
 If you can use only one AI vendor, skip the run. Note what you think would change.
 
@@ -166,13 +163,9 @@ At least a day later, look for every Task 2 spreadsheet you made, and for the AI
 
 **Checkpoint.** You looked for every result, and read the answers.
 
-## Ready for Chapter 2
-
-Your lab is done when every task's checks have passed, and your notes file holds the five final briefs, how their checks went, the AI's five jobs, and what the port changed. Keep it, and the Task 2 spreadsheet, where you can find them again. If you keep the book's running project in a git repository, add them, and tag that commit `ch01`.
-
 ## If something goes wrong
 
-- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. If this happens in Task 6, note it in your notes file as a change.
+- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. If this happens in Task 6, count it as a change.
 - **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the check prompt instead.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **Your plan cannot work on files.** Do the tasks anyway, and see what the AI could and could not do.
