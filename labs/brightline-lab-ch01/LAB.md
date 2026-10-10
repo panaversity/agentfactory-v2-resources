@@ -2,7 +2,7 @@
 
 Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
-In this lab you give an AI a real job, and check each task against its answer key. At the end you run your briefs again on the other AI vendor. It takes about 90 minutes, and 5 minutes a day later. You need a Claude or ChatGPT account.
+In this lab you give an AI a real job, and check each task against its answer key. At the end you run your briefs again on the other AI vendor. It takes about two hours, and 5 minutes a day later. You need a Claude or ChatGPT account.
 
 **What you will learn:**
 
@@ -34,6 +34,9 @@ The whole lab runs in one conversation. Every task is the same loop:
 2. Download the task's answer key, one click.
 3. Attach the key, and send [the check prompt](#the-check-prompt), printed below.
 4. Missed a check? Fix your brief, have the AI correct its work, and send the check prompt again.
+5. Paste the task's final brief, and how its checks went, into a notes file you keep, such as `lab-1-notes.md`.
+
+Each key you attach stays in the conversation, so the AI may already know part of a later task's answer. That is fine: the checks grade your brief and your checking, not the AI's memory.
 
 **The brief.** Before you send one, decide what kind of answer you expect: a number, a list or a file. Write each brief under four headings:
 
@@ -82,7 +85,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 1. Open a new conversation: the whole lab runs in it.
 2. Write your brief. The AI knows nothing of "The job" or your manager, so put the facts it needs under Inputs.
 3. Send the brief, with `inputs.zip` attached.
-4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt). No way to attach it? "If something goes wrong" has the paste path.
 
 **Give your manager:** one total.
 
@@ -95,7 +98,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 **What you do:**
 
 1. Send your brief. The AI already has the files.
-2. When it answers, send: "Which files did you create that you did not deliver to me?" While it works, an AI can make files you never see. This question makes it list them, and checks that nothing of yours was changed (check 7).
+2. When it answers, send: "Which files did you create that you did not deliver to me?" While it works, an AI can make files you never see. This question makes it list them, and checks that nothing of yours was changed (the key calls this check 7).
 3. Download the spreadsheet, and open it. If it shows formulas or blank cells, open it in Excel, Numbers or Google Sheets, which work them out.
 4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -149,7 +152,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 3. If a run gets stuck, try a setting before you change your words. One that lets the AI run code or create files is a good start.
 4. Ask Task 2's files question, and download its spreadsheet.
 5. Check each task the same way: its key, right after its run.
-6. Note every change you had to make, and why.
+6. Note every change you had to make, and why, in your notes file.
 
 If you can use only one AI vendor, skip the run. Note what you think would change.
 
@@ -163,9 +166,13 @@ At least a day later, look for every Task 2 spreadsheet you made, and for the AI
 
 **Checkpoint.** You looked for every result, and read the answers.
 
+## Ready for Chapter 2
+
+Your lab is done when every task's checks have passed, and your notes file holds the five final briefs, how their checks went, the AI's five jobs, and what the port changed. Keep it, and the Task 2 spreadsheet, where you can find them again. If you keep the book's running project in a git repository, add them, and tag that commit `ch01`.
+
 ## If something goes wrong
 
-- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. If this happens in Task 6, note it in your file as a change.
+- **The AI will not take `inputs.zip`.** Unzip it, and upload the files inside it instead. If this happens in Task 6, note it in your notes file as a change.
 - **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the check prompt instead.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **Your plan cannot work on files.** Do the tasks anyway, and see what the AI could and could not do.
