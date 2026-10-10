@@ -1,4 +1,3 @@
-```markdown
 # Role Contract: <role name>                 Draft <n>, <date>
 
 ## Who it is
@@ -28,4 +27,3 @@ Triggers:      <what starts its work>
 Runtime needs: <surface, model and effort, with the date chosen>
 
 ## Open questions
-```

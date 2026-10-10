@@ -30,7 +30,7 @@ jobs:
 
       - name: Zip each lab folder
         env:
-          UPLOAD_LABS: "brightline-lab-ch01"
+          UPLOAD_LABS: "brightline-lab-ch01 brightline-lab-ch02"
         run: |
           mkdir -p dist stage
           for dir in labs/*/; do
