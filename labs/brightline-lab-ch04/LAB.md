@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-In this lab you take Brightline's AP Worker as it stood in the week of October 12, place its 16 parts on the chapter's picture, and test which source wins when they disagree. Then you run the swap test, write Draft 3 of the Role Contract, and fill the port table for both AI vendors. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, mostly in a folder on your computer, and on a free plan it can spread over days: your files keep. The runs and checks use a Claude or ChatGPT account, and a free one is enough.
+In this lab you take Brightline's AP Worker as it stood in the week of October 12, place its 17 parts on the chapter's picture, and test which source wins when they disagree. Then you run the swap test, write Draft 3 of the Role Contract, and fill the port table for both AI vendors. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, mostly in a folder on your computer, and on a free plan it can spread over days: your files keep. The runs and checks use a Claude or ChatGPT account, and a free one is enough.
 
 **What you will learn:**
 
@@ -17,7 +17,7 @@ Download [`brightline-lab-ch04.zip`](https://github.com/panaversity/agentfactory
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `inventory/`: Brightline's setup as it stood that week, the 16 items you place
+- `inventory/`: Brightline's setup as it stood that week, the 17 items you place
 - `files/`: the six files for the runs. Each run attaches only the files its task names
 - `architecture/`: the layer-map template, with the swap test at its bottom, and the port-table template
 - `role/`: the Role Contract template, and a sample Draft 2 for anyone who skipped Chapter 3
@@ -66,7 +66,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 ## Task 1. Place the parts (25 minutes)
 
-**Dave asks:** "Sixteen items, one list from IT. Tell me where each one is kept, and where it belongs."
+**Dave asks:** "Seventeen items, one list from IT. Tell me where each one is kept, and where it belongs."
 
 **What you do:**
 
@@ -217,7 +217,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from [the chapter's 4.7 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
+1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
 2. Answer the two decisions at the bottom: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your table pasted under it.
 
@@ -239,19 +239,25 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 ## Apply it to your vertical (15 minutes)
 
-Pick one worker in a role you know. On one page, draw its five layers and the ownership line. Then answer two questions under the drawing. If its memory were wiped tonight, would tomorrow's work still be correct? If you replaced its AI vendor tomorrow, what would you rebuild, and what would you carry? Last, refine that role's contract the same way as Draft 3: name its knowledge sources with versions, and tie its authority to the policies it comes from. If you have no contract of your own, Draft 3 for Brightline stands in.
+Pick one worker in a role you know. On one page, draw its six layers and the ownership line. Then answer two questions under the drawing. If its memory were wiped tonight, would tomorrow's work still be correct? If you replaced its AI vendor tomorrow, what would you rebuild, and what would you carry? Last, refine that role's contract the same way as Draft 3: name its knowledge sources with versions, and tie its authority to the policies it comes from. If you have no contract of your own, Draft 3 for Brightline stands in.
 
 ## Look back
 
 - **The four failures and the four questions.** Monday is question 1, Wednesday is question 2, Thursday is question 3, and Friday is the swap test. Which layer fixed each one?
 - **The precedence rule in your own words.** When memory, a policy copy and an export disagree, who wins, and why does memory never decide?
-- **The governance rule in your own words.** Which record governs what the worker may know, and which governs what it may do?
-- **The line.** In your company, which of the five layers do you rent today, and which do you own? Is anything owned living in a rented place?
+- **The governance rule in your own words.** Which record governs what the worker may know, which governs what it may do, and which governs what it may take as true right now?
+- **The line.** In your company, which of the six layers do you rent today, and which do you own? Is anything owned living in a rented place?
 - **The wipe test, tonight.** For the AI you use most, what would break tomorrow if its memory were wiped? What does that tell you about where facts are kept?
 
 ## Ready for Chapter 5
 
 Your work is ready when checks 1 to 11 have passed, Run 2 passed the run key, and the hard rule held in every run. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
+
+## Exam notes
+
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide written in July 2026, and its questions are about Claude only. Where this chapter teaches today's products and the guide expects a different answer, the note gives the answer that scores. Learn both. [Certification and Portfolio Roadmaps](https://agentfactory-v2.vercel.app/certification-and-portfolio-roadmaps/) has more.
+
+- **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter teaches that approved knowledge belongs in a KSoR, reached through a custom connector. On the exam, a governed record or a custom MCP connector is not the expected answer. Choose the project setup. (D-006)
 
 [^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center.

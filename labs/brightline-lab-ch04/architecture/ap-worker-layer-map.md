@@ -1,6 +1,6 @@
 # AP Worker layer map
 
-Layers: Channels (connect), Runtime (executes), Memory (remembers), KSoR (knows), DSoR (acts). Also allowed: Role Contract, Evaluations, Company systems.
+Layers: Channels (connect), Runtime (executes), Memory (remembers), KSoR (knows), SSoR (tracks where the work stands), DSoR (acts). Also allowed: Role Contract, Evaluations, Company systems.
 Rented or owned: rented sits above the ownership line, owned below. Memory sits on the line.
 
 | # | Item | Layer it belongs in | Rented or owned | Where it lives now | Where it belongs | Misplaced? What you would do |
@@ -21,6 +21,7 @@ Rented or owned: rented sits above the ownership line, owned below. Memory sits 
 | 14 | Approval record in chat | | | | | |
 | 15 | Role Contract, Draft 2 | | | | | |
 | 16 | Evaluations | | | | | |
+| 17 | Run notes | | | | | |
 
 Number of items you marked misplaced:
 

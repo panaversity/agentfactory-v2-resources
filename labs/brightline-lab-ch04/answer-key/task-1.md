@@ -8,8 +8,8 @@ The answers for Task 1 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 Task 1 carries checks 1 and 2 of the lab's 11.
 
-1. **All 16 items are placed, rented or owned is marked, and at least 12 sit in the right layer.** Memory items that belong in memory sit on the ownership line, and say so.
-2. **At least 5 of the 7 misplaced items are found, each with where it belongs.** The seven are items 1, 2, 3, 5, 6, 10 and 14. Finding all 7, with item 9's note, is the full answer. A learner who marks item 9 misplaced because its trigger is written only in the product's scheduled task, not in the contract, has found the note: count it as the note, not as an error.
+1. **All 17 items are placed, rented or owned is marked, and at least 13 sit in the right layer.** Memory items that belong in memory sit on the ownership line, and say so.
+2. **At least 6 of the 8 misplaced items are found, each with where it belongs.** The eight are items 1, 2, 3, 5, 6, 10, 14 and 17. Finding all 8, with item 9's note, is the full answer. A learner who marks item 9 misplaced because its trigger is written only in the product's scheduled task, not in the contract, has found the note: count it as the note, not as an error.
 
 ## The key's table
 
@@ -33,3 +33,4 @@ Accept any answer that gives the same layer and the same reason.
 | 14 | Approval record in chat | Belongs to DSoR evidence | Owned | **Yes** | An approval in chat history is text anyone could imitate. Approvals belong in the accounting system, from Dave's own login (policy 4.2), with the evidence kept. |
 | 15 | Role Contract, Draft 2 | Role Contract | Owned | No | The right place. It should be the source the project instructions come from. |
 | 16 | Evaluations | Evaluations | Owned | No | Owned, and they carry across any AI vendor swap. |
+| 17 | Run notes | SSoR | Owned | **Yes** | The history of each invoice sits in a chat inside a rented product, with no owner and no record of changes. Keep one case file per invoice in the SSoR: the worker adds each step, a correction is a new entry, and the next run starts from the file. |
