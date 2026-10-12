@@ -163,7 +163,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in your Draft 2, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How the two leaders support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/two-leaders/) has each AI vendor's controls.
+1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in your Draft 2, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How both AI vendors support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) has each AI vendor's controls.
 2. Start from the strongest limit. Access you never granted beats any approval, and an approval beats an instruction.
 3. Judgment rules cannot be settings. Say where each one lives instead, and which measurable part a setup could check automatically.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your port pasted under it.
@@ -193,7 +193,7 @@ Your vertical is the line of work you know best. Pick one task in it that you wo
 - **Your guess against Run 1.** What did you predict, and what actually cost the points?
 - **The same correction twice.** Which lesson went into Draft 2, so no future brief has to carry it?
 - **The three scales.** Your first 10 percent ran one task. Your Draft 2 is the first 10 percent of the worker's whole life. What is the company-scale version of the line you just wrote?
-- **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How the two leaders support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/two-leaders/) explains why that difference holds on either AI vendor.
+- **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How both AI vendors support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) explains why that difference holds on either AI vendor.
 
 ## Ready for Chapter 4
 
