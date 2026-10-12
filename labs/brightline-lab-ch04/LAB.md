@@ -217,7 +217,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from [the chapter's 4.7 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/two-leaders/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
+1. Fill `architecture/port-table.md` from [the chapter's 4.7 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
 2. Answer the two decisions at the bottom: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your table pasted under it.
 
