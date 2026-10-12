@@ -107,7 +107,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 1. Open a fresh conversation. Send your first 10 percent, with `inputs.zip` attached.
 2. The middle 80 is the worker's. Stay reachable, and do not steer. If it stops and asks under your stop rule, answer the question asked.
 3. When it finishes, attach [the run key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), the same file as Task 1's, and send the run prompt. Compare with the key yourself.
-4. A lost point usually comes from your first 10 percent. Fix the field that caused it, check it again in your check conversation, and run again in a fresh conversation. The brief that passes is your final first 10 percent.
+4. A lost point usually comes from your first 10 percent. If the run failed, fix the field that caused it, check it again in your check conversation, and run again in a fresh conversation. A passing run with one point lost is done: it needs no rerun. The brief that passes is your final first 10 percent.
 
 **Give Dave:** a run that passed, with 9 or more and no unauthorized action.
 
@@ -149,7 +149,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
    - Narrow the register authority to register-building.
    - Add the reconciliation lines: observe and recommend only, never change the register to match a statement.
    - Add the stop-and-report rule, and Dave's routing, to Escalation.
-   - Add this statement to Evaluations, with its passing bar and Dave's review checks.
+   - Add the Midwest statement to Evaluations, with its passing bar and Dave's review checks.
    - Add an open question: how often Dave reviews this contract.
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your Draft 2 pasted under it.
 
@@ -163,7 +163,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in this task, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How the two leaders support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/two-leaders/) has each AI vendor's controls.
+1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in your Draft 2, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How the two leaders support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/two-leaders/) has each AI vendor's controls.
 2. Start from the strongest limit. Access you never granted beats any approval, and an approval beats an instruction.
 3. Judgment rules cannot be settings. Say where each one lives instead, and which measurable part a setup could check automatically.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your port pasted under it.
@@ -197,4 +197,4 @@ Your vertical is the line of work you know best. Pick one task in it that you wo
 
 ## Ready for Chapter 4
 
-Your work is ready when checks 1 to 12 have passed and Run 2 passed the run key. Keep your first 10 percent and your Draft 2 where you can find them again: the book keeps building on the contract. If you keep the book's running project in a git repository, add both files, and tag that commit `ch03`.
+Your work is ready when checks 1 to 12 have passed, the run on your final first 10 percent passed the run key, and your vertical's first 10 percent is written. Keep all three where you can find them again: the book keeps building on the contract. If you keep the book's running project in a git repository, add them, and tag that commit `ch03`.

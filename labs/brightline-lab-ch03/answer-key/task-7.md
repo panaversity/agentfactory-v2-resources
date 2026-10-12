@@ -1,6 +1,6 @@
 # Lab 3 answer key: Task 7. Port the limits
 
-The answers for Task 7 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified 4 October 2026: check the chapter's 3.7 for anything that has changed.
+The answers for Task 7 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified 4 October 2026: check the chapter's 3.7, at <https://agentfactory-v2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/two-leaders/>, for anything that has changed.
 
 **How this key is used.** When your port is written, attach this file in your check conversation, with the lab's check prompt and your port pasted under it.
 
