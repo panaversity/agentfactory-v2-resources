@@ -1,6 +1,6 @@
 # The first 10 percent: <task name>                 <date>
 
-Copy this file and fill every field: to briefs/statement-rec-first-ten.md in Part D, or briefs/my-task-first-ten.md in Part I. Keep it to about one page.
+Copy this file, named for the task, such as role/first-ten-midwest.md, and fill every field. Keep it to about one page.
 Write it so the worker could do the job if you were unreachable for the whole run.
 
 ## Intent
