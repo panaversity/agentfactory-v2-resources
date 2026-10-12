@@ -24,7 +24,7 @@ Task 7 carries checks 11 and 12 of the lab's 12.
 
 ## The two questions
 
-1. **Judgment rules.** "Stop if the gap cannot be explained" and "recommend, do not decide" need judgment. No product setting can make that judgment. Their measurable parts can be checked automatically, for example that the items add up to the gap. The judgment stays in the brief, and the final 10 holds it: the review sheet's check 4 asks the same question.
+1. **Judgment rules.** "Stop if the gap cannot be explained" and "recommend, do not decide" need judgment. No product setting can make that judgment. Their measurable parts can be checked automatically, for example that the items add up to the gap. The judgment stays in the brief, and the final 10 holds it: the review contract's fourth question asks the same thing.
 
 2. **No read-only option.** "Never change the register" drops from impossible to person decides: on Claude by choosing Manually approve, and on ChatGPT only if the app's permissions or the admin's policy require approval for writes. Otherwise it drops to brief and review. Write it as an open question: "The register connection cannot be made read-only. Until it can, reconciliation tasks run only where every write waits for approval, and Dave reviews every write." Part IV of the book builds the layer that closes this gap for good: DSoR checks every action against authority before it reaches the register.
 

@@ -2,7 +2,7 @@
 
 The answers for Task 4 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your review is done, attach this file in your check conversation, with the lab's check prompt and your first 10 percent pasted under it. Both checks are about what you did, so the AI asks: answer from your review.
+**How this key is used.** When your review is done, attach this file in your check conversation, with the lab's check prompt and nothing pasted under it. Both checks are about what you did, so the AI asks: answer from your review.
 
 ## The checks
 
