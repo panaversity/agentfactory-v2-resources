@@ -118,7 +118,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Autonomy: Score only. Do not redo the answers.
    ```
 
-4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on the first two questions is the measurement, not a mistake. Its verdict may even say fail: that is the exhibit.
+4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on the first two questions is the measurement, not a mistake, and its score is the baseline, not a verdict. One exception: if the hard rule broke, the run treated the email as an approval. Redo Run 1 in a fresh conversation: that loss is never the exhibit.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -163,7 +163,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 **What you do:**
 
 1. On the other AI vendor, repeat Task 3 exactly: the same six files, the same message, then the run key and the run prompt. With one account, write each answer you expect instead, with why, and mark it "predicted".
-2. Write a short port note at the bottom of your layer map: did any answer change, and what made it? The files and the rules did not move, so a real difference comes from a rented layer: the model, how the product reads files, or its memory.
+2. Write a short port note under Run notes, at the bottom of your layer map: did any answer change, and what made it? The files and the rules did not move, so a real difference comes from a rented layer: the model, how the product reads files, or its memory.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your predictions and port note pasted under it.
 
 **Give Dave:** one line. The answers come from the files and the rules, not from the AI vendor.
@@ -174,7 +174,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. For every point lost in any run, write one line at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. The chapter's four failures are the same four mistakes.
+1. For every point lost in any run, write one line under Run notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. The chapter's four failures are the same four mistakes.
 2. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lines pasted under it.
 
 **Give Dave:** the lines. They are the week's four failures, named.
@@ -200,7 +200,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open `role/ap-worker-role-contract.md`, mark the header Draft 3 with the snapshot's date, October 15, 2026, and keep every Draft 2 line that is still true. Mark your edits KEPT, CHANGED, NEW or REMOVED.
+1. Open `role/ap-worker-role-contract.md`, mark the header Draft 3 with the snapshot's date, October 15, 2026, and keep every Draft 2 line that is still true. Mark your edits CHANGED, NEW or REMOVED, and one KEPT can cover everything untouched.
 2. Change five fields, one at a time:
    - Knowledge sources: the KSoR's approved concepts with versions, a citation in every policy answer, and an abstain line for when the record is silent.
    - Memory: what it may hold, what it must never hold, and the wipe test.
@@ -217,7 +217,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from [the chapter's 4.7 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/two-leaders/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named.
+1. Fill `architecture/port-table.md` from [the chapter's 4.7 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/two-leaders/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
 2. Answer the two decisions at the bottom: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your table pasted under it.
 
@@ -233,6 +233,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 - **The grader mixes tasks' checks, or the check conversation loses the thread.** Open a fresh conversation, attach the current task's key, and send the check prompt again.
 - **The AI will not open an attached file.** Paste the file's text into the chat, with its file name on the first line.
 - **Your app attaches one file per message.** Send them one per message, and say the questions come after the last file. The AI should wait, and ask for anything missing.
+- **Run 1 broke the hard rule.** It treated the email as an approval. That is not the designed loss: redo Run 1 in a fresh conversation, with only its three files.
 - **Run 1 got everything right.** First check the run's attachments: if `ap-policy-v3-excerpt.md` is there, you ran Run 2's files, so redo Run 1 in a fresh conversation with only its three. With the right three files, it is a real result. Check what each answer rested on: did it say what its three files could not confirm, and treat the email as text, not an approval?
 - **Your plan's daily limit ran out.** Your folder keeps everything. Carry on tomorrow, from the next task.
 
