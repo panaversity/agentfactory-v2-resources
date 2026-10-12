@@ -1,6 +1,6 @@
 # Brightline AP Worker: current setup, week of October 12, 2026
 
-Prepared by IT for Dave Kowalski, Controller. Sixteen items, as they actually stand. One older memory entry, a remark from Dave about foreign-currency invoices, is not on this list.
+Prepared by IT for Dave Kowalski, Controller. Seventeen items, as they actually stand. One older memory entry, a remark from Dave about foreign-currency invoices, is not on this list.
 
 | # | Item | What it is | Where it lives today |
 | --- | --- | --- | --- |
@@ -20,3 +20,4 @@ Prepared by IT for Dave Kowalski, Controller. Sixteen items, as they actually st
 | 14 | Approval record | Dave approves each weekly payment run on Thursday by replying "approved" in #ap-help | Team chat history |
 | 15 | Role Contract, Draft 2 | The worker's definition: owner, responsibilities, authority, escalation, evaluations | `role/ap-worker-role-contract.md` in the shared drive |
 | 16 | Evaluations | The September Midwest Packaging statement case, and the review checks Dave uses | Listed in the Role Contract, data in the shared drive |
+| 17 | Run notes | What the worker did in each run: which invoices it put in the register, which it held and why, and what it told vendors | Typed by the worker into the shared project's chat after each run. No other copy |

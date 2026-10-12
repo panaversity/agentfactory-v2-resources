@@ -1,6 +1,6 @@
 # Lab 4 answer key: Task 8. The port table
 
-The answers for Task 8 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified 4 October 2026: check the chapter's 4.7 boxes for anything that has changed.
+The answers for Task 8 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified 4 October 2026: check the chapter's 4.8 boxes for anything that has changed.
 
 **How this key is used.** When your port table is filled, attach this file in your check conversation, with the lab's check prompt and your table pasted under it.
 
@@ -28,7 +28,7 @@ Task 8 carries checks 10 and 11 of the lab's 11.
 
 ## Owned
 
-**Meaning: no change in any row.** The Role Contract, AP policy version 3, the DSoR controls and evidence, and the evaluations mean the same on both AI vendors. If the meaning would change, that item was stored in a rented place.
+**Meaning: no change in any row.** The Role Contract, AP policy version 3, the case files in the SSoR, the DSoR controls and evidence, and the evaluations mean the same on both AI vendors. If the meaning would change, that item was stored in a rented place.
 
 **Integration work is expected, and is not a wrong answer.**
 
@@ -36,6 +36,7 @@ Task 8 carries checks 10 and 11 of the lab's 11.
 | --- | --- |
 | Role Contract | Update the runtime notes, and how each runtime starts the work. The contract's lines stay the same |
 | AP policy version 3 in the KSoR | Reconnect: a custom connector on Claude, or a custom MCP app on ChatGPT, on a plan that supports it |
+| Case files in the SSoR | Connect the worker to the case files on the new runtime, under its own identity. Entries already kept stay where they are |
 | DSoR controls, approvals and evidence | Map the worker's identity on the new runtime, and connect the governed operations. Kept evidence stays where it is |
 | Evaluations and review checks | Rerun every case on the new AI vendor before go-live. That run is the proof the port worked |
 

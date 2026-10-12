@@ -1,6 +1,6 @@
 # Port table
 
-Use the two boxes in Concept 4.7. Rented items get a product on each AI vendor. Owned items keep their meaning, though their connections may need work.
+Use the two boxes in Concept 4.8. Rented items get a product on each AI vendor. Owned items keep their meaning, though their connections may need work.
 
 ## Rented: what fills it on each AI vendor
 
@@ -21,6 +21,7 @@ Use the two boxes in Concept 4.7. Rented items get a product on each AI vendor. 
 | --- | --- | --- |
 | Role Contract | | |
 | AP policy version 3 in the KSoR | | |
+| Case files in the SSoR | | |
 | DSoR controls, approvals and evidence | | |
 | Evaluations and review checks | | |
 
