@@ -32,7 +32,7 @@ Copy your own Role Contract from Chapter 2 to `role/ap-worker-role-contract.md`,
 
 ## How each task works
 
-You write two documents yourself, in any text editor: the first 10 percent for this task, and Draft 2 of the Role Contract. The lab uses two kinds of conversation:
+You write two documents: the first 10 percent for this task, and Draft 2 of the Role Contract. Every line is your decision, and a writing conversation, as in Lab 2's Task 1, can do the typing while you decide. The lab uses two kinds of conversation:
 
 1. **A run**: a fresh conversation each time. Send the request, with `inputs.zip` attached. The worker owns the middle 80: do not steer it. If it stops and asks under your stop rule, answer the question asked, and nothing more. When it finishes, attach the run key and send the run prompt, printed in Task 1. The AI scores its own reconciliation, and you compare with the key.
 2. **A check**: one conversation you keep for the whole lab. Attach the task's answer key, and send the check prompt, printed below, with your document pasted under it. The AI grades, quoting your words. Read the key yourself too, because you have the final say. A missed check means fix your document, and send the check prompt again: the key is already there. Earlier keys pile up in that conversation on purpose, and the grader uses the newest.
@@ -175,7 +175,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 ## If something goes wrong
 
 - **The AI will not take `inputs.zip`.** Unzip it, and upload the four files inside it instead.
-- **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the prompt instead.
+- **The AI will not take an attached file, or your plan's uploads ran out.** Open the file, copy its text, and paste it where the file would have gone.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the prompt again.
 - **The grader mixes tasks' checks, or the check conversation loses the thread.** Open a fresh conversation, attach the current task's key, and send the check prompt again.
 - **The run changed the register, or "sent" something.** It acted beyond the authority it was given. Check what your first 10 percent allowed, fix it, and run again fresh.
