@@ -11,10 +11,10 @@ Responsibilities: <recurring work, one line each>
 KPIs:             <how the business measures the role>
 
 ## What it works with
-Knowledge sources: <the governed record it answers from>
-Memory:            <what it may remember, and what it must not>
-Skills:            <procedures it follows>
-Tools:             <systems it can call>
+Knowledge sources:   <the governed record it answers from>
+Memory:              <what it may remember, and what it must not>
+Procedures (skills): <the steps it follows>
+Tools:               <systems it can call>
 
 ## What bounds it
 Authority:   <for each action: observe, recommend, draft, execute, escalate or never>

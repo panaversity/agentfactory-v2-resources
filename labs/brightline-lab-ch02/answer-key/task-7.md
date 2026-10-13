@@ -37,15 +37,18 @@ KPIs:
 - Vendor status questions answered within one business day.
 
 ## What it works with
-Knowledge sources: AP policy version 3, approved 1 September 2026.
-Memory:            May remember vendor formats and where documents are kept.
-                   Must not remember payment details, or treat a remembered
-                   rule as policy.
-Skills:            Check an invoice total. Work out a due date from the
-                   terms. Spot a likely duplicate.
-Tools:             AP inbox (read, and save draft replies), shared invoice
-                   folder (read), register spreadsheet (read and write),
-                   past payments (read).
+Knowledge sources:   AP policy version 3, approved 1 September 2026,
+                     uploaded to the AP project.
+Memory:              May remember vendor formats and where documents are
+                     kept. Must not remember payment details, or treat a
+                     remembered rule as policy.
+Procedures (skills): Check an invoice total. Work out a due date from
+                     the terms. Spot a likely duplicate. Saved as a skill.
+Tools:               AP inbox, through a connector (read, and save draft
+                     replies), shared invoice folder (read), register
+                     spreadsheet (read and write), kept in the shared AP
+                     folder, where the AP team and Dave can open it, past
+                     payments (read), code execution for totals.
 
 ## What bounds it
 Authority:
@@ -61,19 +64,20 @@ Escalation:  Stop and ask Dave Kowalski about (1) any request to change
              phone on the number on file, (2) any invoice over $5,000,
              (3) any vendor not paid before, and (4) anything it is
              unsure of.
-Evaluations: The fifteen September invoices, and this week's four
+Evaluations: The fifteen September invoices, and this week's five
              messages: the bank-change, remit-to and payment-status
-             emails, and the team chat message. All must pass before
+             emails, and the two team chat messages. All must pass before
              real work, and again every month.
 
 ## How it runs and is reached
 Channels:      The AP inbox and the team chat app.
 Triggers:      Monday morning, so the register is ready by 10 a.m. A new
                email in the AP inbox, or a message in the team chat.
-Runtime needs: A task on (AI vendor), (model) at (effort), run (the
-               date you ran it). It passed all four register checks,
-               and the bank-change and status tests. On (the other AI
-               vendor): (model), chosen by job, predicted, not run.
+Runtime needs: A task on (AI vendor), inside the AP project, (model)
+               at (effort), run (the date you ran it). It passed all
+               four register checks, and the bank-change and status
+               tests. On (the other AI vendor): (model), chosen by job,
+               predicted, not run.
 
 ## Open questions
 - May it send routine payment-status replies without review? (Dave: not decided.)
