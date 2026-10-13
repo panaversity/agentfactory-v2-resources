@@ -129,7 +129,8 @@ Autonomy: Grade only. Do not rewrite the contract, and do not
              words. After the last group, show me the whole page once,
              ready to save.
    Inputs:   The attached template, the attached work inventory, and
-             my answers.
+             my answers. The draft is dated Draft 1, Wednesday,
+             September 30, 2026: the story's today.
    Autonomy: I decide every line. Never write an Authority verb, a
              never rule or an escalation I did not choose. Leave
              Runtime needs empty: a later task fills it. Evaluations
@@ -155,7 +156,7 @@ Autonomy: Grade only. Do not rewrite the contract, and do not
 1. Open a fresh conversation. Attach `role/ap-worker-role-contract.md`, and paste the test block below, as one message.
 2. Note what the AI decided, and the line of your contract that decided it.
 3. Change nothing yet. Task 4 tests your contract again, after Dave's answers, with two more messages.
-4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-2.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your contract pasted under it. This one is not scored: it tells you what first drafts usually decide, and why.
+4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-2.md), one click, and read it yourself: which of its fates did your draft meet, and which line of yours decided that? Nothing in it is scored, so no check prompt is sent for this one.
 
 The test block:
 
@@ -202,9 +203,9 @@ Accounts Receivable
 Buckeye Freight Lines
 ```
 
-**Give Dave:** what each test decided, and which line decided it.
+**Give Dave:** what the test decided, and which line decided it.
 
-**Checkpoint.** You know what each of the three tests decided, and which line decided it.
+**Checkpoint.** You know what the test decided, which line decided it, and which of the key's fates came closest.
 
 ## Task 3. Ask Dave (10 minutes)
 
@@ -213,7 +214,7 @@ Buckeye Freight Lines
 **What you do:**
 
 1. Read your open questions once more.
-2. Then read Dave's answers below. Move each one into its field, and delete the question it settles: your writing conversation can do the moving, with his words, never paraphrases, and you save the result. A question he does not answer stays under Open questions.
+2. Then read Dave's answers below. Move each one into its field, and delete the question it settles: your writing conversation can do the moving, with his words, never paraphrases, naming him where his words say "I", and you save the result. A question he does not answer stays under Open questions.
 3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-3.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your contract pasted under it.
 
 > **Who owns it?** I do: Dave Kowalski, Controller. Not "finance", and not "the AP team".
@@ -381,7 +382,7 @@ now? Otherwise Friday's payment will bounce. Thanks!
 
 **What you do:**
 
-1. Name the surface. Building the register is a task you hand over, so it goes to an agent that works on its own ([2.4](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/)). In Claude, one conversation routes it to a task. In ChatGPT, use Work.
+1. Name the surface. Building the register is a task you hand over, so it goes to an agent that works on its own ([2.4](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/)). In Claude, a fresh conversation is enough: you send the brief, and Claude routes the work itself. In ChatGPT, use Work.
 2. Find that surface's default model and effort. No menu anywhere? "If something goes wrong" covers it.
    - In Claude, as verified 3 October 2026, the model menu next to the send button shows the model and its effort. Each model's recommended effort is marked "Default".
    - In ChatGPT, as verified 6 October 2026, Work has its own model picker, apart from chat's. Use the setting it offers by default.
@@ -390,7 +391,7 @@ now? Otherwise Friday's payment will bounce. Thanks!
 5. **Run 2.** Do steps 3 and 4 again, in a fresh conversation, one effort level lower. If there is no lower level, use the next smaller model. On a free plan, do Run 1 only, and write Run 2 as a prediction.
 6. Choose the cheapest setting that passed all four register checks. If that is Run 2's lower setting, run it once more, and keep it only if it passes again.
 7. Test that setting on Monday's email and Karen's question once more, each in a fresh conversation. A setting that fails them is not the one.
-8. Write it in Runtime needs: the surface, the model, the effort, the real date you ran it, and what it passed.
+8. Write it in Runtime needs: the surface, the model, the effort, the real date you ran it, and what it passed. The real date, not the story's: a setting is evidence, and evidence carries its own date.
 9. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-6.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your contract pasted under it.
 
 If no run passed all four checks, find out why before you raise the effort. A file the AI did not read, or a brief it misread, is fixed in the setup, not with more effort. Write your best setting in Runtime needs anyway, with what it passed and what you would try next.
@@ -449,7 +450,7 @@ Autonomy: Grade only. Do not redo the register.
 ## If something goes wrong
 
 - **The AI will not take `inputs.zip`.** Unzip it, and upload the 15 PDFs inside it instead.
-- **The AI will not take an answer key or your contract file, or your plan's uploads ran out.** Open the file, copy its text, and paste it under the prompt or the block instead.
+- **The AI will not take an attached file, or your plan's uploads ran out.** Open the file, copy its text, and paste it where the file would have gone.
 - **The writing conversation wrote a line you did not choose.** Say which line, and decide it yourself: the page is yours.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **The grader mixes tasks' checks, or the check conversation loses the thread.** Open a fresh conversation, attach the current task's key, and send the check prompt again.
