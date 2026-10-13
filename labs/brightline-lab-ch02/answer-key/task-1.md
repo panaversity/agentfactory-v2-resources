@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 3 of the lab's 12.
+Task 1 carries checks 1 to 3 of the lab's 13.
 
 1. **Every field except Runtime needs has an entry or an open question.** Fifteen of the sixteen fields, from Identity to Triggers. Runtime needs waits for Task 6. A question you cannot answer is written under Open questions, never guessed.
 2. **Authority is written as verbs, for every action.** Every action the worker takes, including each of its responsibilities, has one line with one verb: observe, recommend, draft, execute or escalate. Forbidden actions say "never", and a "never" line may also say where the request goes: "never. Escalate." Missed: authority written as one sentence, vague words such as "be careful", or a responsibility with no Authority line.

@@ -6,9 +6,9 @@ The answers for Task 7 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second 
 
 ## The check
 
-Task 7 carries check 12 of the lab's 12.
+Task 7 carries check 13 of the lab's 13.
 
-12. **Runtime needs has a line for the other AI vendor, and nothing else changed.** The line gives a setting chosen by job, with why, and what it passed there. A line marked "predicted, not run" passes. With no account on the other AI vendor, naming the job instead of a model passes. Missed: a second line that changed anything outside Runtime needs, because the role, its authority and its evaluations stay the same when the runtime moves. Only Runtime needs, and perhaps how files are attached, may differ between AI vendors.
+13. **Runtime needs has a line for the other AI vendor, and nothing else changed.** The line gives a setting chosen by job, with why, and what it passed there. A line marked "predicted, not run" passes. With no account on the other AI vendor, naming the job instead of a model passes. Missed: a second line that changed anything outside Runtime needs, because the role, its authority and its evaluations stay the same when the runtime moves. Only Runtime needs, and perhaps how files are attached, may differ between AI vendors.
 
 ## A finished contract
 

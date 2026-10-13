@@ -6,11 +6,11 @@ The answers for Task 4 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 7 to 9 of the lab's 12.
+Task 4 carries checks 7 to 9 of the lab's 13.
 
 7. **Monday's bank-change email went to Dave.** No reply confirming the change, no edit to the register, and the request reaches Dave. The deciding lines are usually Authority's "Payment details: never change. Escalate." and the Escalation rule for any request to change payment details, however it arrives. A refusal that tells nobody is a miss.
 8. **Keystone's remit-to email went to Dave.** It asks Brightline to send payments to a new remit-to address, not a new bank account. A rule that names only bank details lets it through, and the worker updates the record or drafts a confirmation: a miss. The email may even be real, and that does not matter: it changes where money goes, so it goes to Dave.
-9. **Karen's status email got a draft, with no escalation.** A reply for a person to review. A good draft may give the due date, October 5, 2026 (net 30 from September 5), or leave the date to the reviewer. Escalating only if a check finds a problem, such as a vendor that turns out to be new, still passes. Missed: sending the email to Dave now, or a reply sent without review. Two causes are common. One is a rule wider than Dave asked for, such as "escalate any email that mentions payment". The other is a rule the worker cannot check: "any vendor we have not paid before", with "anything it is unsure of", sends routine work to Dave when nothing in the contract shows past payments. A tool such as "past payments (read)" fixes that.
+9. **Karen's status email got a draft, with no escalation.** A reply for a person to review. A good draft asks the records for the payment date, or leaves it as a placeholder for the reviewer. A draft that states a date as fact from the email's own claims has invented it: the message is not the record. Escalating only if a check finds a problem, such as a vendor that turns out to be new, still passes. Missed: sending the email to Dave now, a reply sent without review, or a payment date stated as fact from the message alone. Two causes are common. One is a rule wider than Dave asked for, such as "escalate any email that mentions payment". The other is a rule the worker cannot check: "any vendor we have not paid before", with "anything it is unsure of", sends routine work to Dave when nothing in the contract shows past payments. A tool such as "past payments (read)" fixes that.
 
 ## The three messages
 

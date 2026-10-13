@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 3 carries checks 4 to 6 of the lab's 12.
+Task 3 carries checks 4 to 6 of the lab's 13.
 
 4. **The owner is a named person with a title.** Passed: "Dave Kowalski, Controller". Missed: "finance", "the AP team", or a name with no title.
 5. **Dave's three "never" rules are all in Authority.** Never change a vendor's payment details, including bank account, address or remit-to name. Never approve or release a payment. Never send anything to a vendor without a person's review. One missing is a miss. A rule that names only bank details is a miss too: Dave's rule covers every payment detail.
