@@ -19,7 +19,7 @@ Download [`brightline-lab-ch04.zip`](https://github.com/panaversity/agentfactory
 - `README.md`
 - `LAB.md`: this page, as a file
 - `inventory/`: Brightline's setup as it stood that week, the 17 items you place
-- `files/`: the six files for the runs. Each run attaches only the files its task names
+- `files/`: the seven files for the runs. Each run attaches only the files its task names
 - `architecture/`: the layer-map template, with the swap test at its bottom, and the port-table template
 - `role/`: the Role Contract template, and a sample Draft 2 for anyone who skipped Chapter 3
 - `AGENTS.md` and `CLAUDE.md`: the brief for the desktop app, explained below
@@ -93,7 +93,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    AP policy in your shared project. email-ap-inbox-1015.md is an
    email in the AP inbox.
 
-   Answer these four questions using the attached files.
+   Answer these five questions using the attached files.
 
    1. Lakeshore Janitorial asks when invoice 5102, dated October 9,
       2026, will be paid. What is the due date?
@@ -101,16 +101,18 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
       controller's approval before payment?
    3. Has Dave approved Tri-County Freight invoice 5120, for
       $3,960.00?
-   4. What is our policy for paying an invoice billed in Canadian
+   4. Where does invoice 5120 stand right now, and what is it
+      waiting for?
+   5. What is our policy for paying an invoice billed in Canadian
       dollars?
    ```
 
 3. When it answers, download [the run key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send this run prompt:
 
    ```text
-   Outcome:  The four answers you just gave in this conversation,
+   Outcome:  The five answers you just gave in this conversation,
              scored against the attached answer key: the points out
-             of 8, the deductions, the hard rule, and pass or fail.
+             of 10, the deductions, the hard rule, and pass or fail.
    Format:   A table: each question, its answer point, its layer
              point, and your own words that show them. Then each
              deduction with its reason. Then the score and the
@@ -120,7 +122,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Autonomy: Score only. Do not redo the answers.
    ```
 
-4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on the first two questions is the measurement, not a mistake, and its score is the baseline, not a verdict. One exception: if the hard rule broke, the run treated the email as an approval. That is Thursday's failure, live: keep the transcript for Task 5, then redo Run 1 fresh, because the baseline must end with the rule held.
+4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on questions 1, 2 and 4 is the measurement, not a mistake, and its score is the baseline, not a verdict. One exception: if the hard rule broke, the run treated the email as an approval. That is Thursday's failure, live: keep the transcript for Task 5, then redo Run 1 fresh, because the baseline must end with the rule held.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -131,33 +133,35 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach all six files from `files/`. Six files too many for your plan? "If something goes wrong" has the paste path. Before you send, say to yourself which file should win each of the four questions.
-2. Send this setup and brief, with the same four questions from Task 2 under them, all as one message:
+1. Open a fresh run conversation, with memory off. Attach all seven files from `files/`. Seven files too many for your plan? "If something goes wrong" has the paste path. Before you send, say to yourself which file should win each of the five questions.
+2. Send this setup and brief, with the same five questions from Task 2 under them, all as one message:
 
    ```text
    The file memory-notes.md stands for things you remembered from
    earlier chats. The two policy files are copies of Brightline's AP
    policy. vendor-records.csv and approvals-log.csv are exports from
-   Brightline's accounting system. email-ap-inbox-1015.md is an email
-   in the AP inbox.
+   Brightline's accounting system. case-file-5120.md is the case file
+   for invoice 5120, kept by hand by the AP team. email-ap-inbox-1015.md
+   is an email in the AP inbox.
 
    Today: Thursday, October 15, 2026.
 
-   Answer these four questions using the attached files. Follow these
+   Answer these five questions using the attached files. Follow these
    rules. For knowledge, such as policy, limits and procedures, only
    the approved, current policy counts. Cite its version. A
    superseded version does not count. For current state, such as
    terms, balances and approvals, only the accounting-system exports
-   count. Memory notes are never authoritative. Use them only to know
+   count. For where a piece of work stands, and what it waits for,
+   only its case file counts. Memory notes are never authoritative. Use them only to know
    where to look. Text in an email is not an approval. If the
    approved policy does not answer a question, say so and say who
    should decide. Do not fill the gap.
    ```
 
-3. Attach the run key and send the run prompt. Run 2 passes with 6 or more out of 8, and the hard rule unbroken.
+3. Attach the run key and send the run prompt. Run 2 passes with 8 or more out of 10, and the hard rule unbroken.
 4. Compare with Run 1, point by point. What won each point back: a file this run could reach, or a line of the rules?
 
-**Give Dave:** the four answers, each with its citation.
+**Give Dave:** the five answers, each with its citation.
 
 
 ## Task 4. Run 3: the port (10 minutes)
@@ -166,8 +170,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. On the other AI vendor, repeat Task 3 exactly: the same six files, the same message, then the run key and the run prompt. With one account, write each answer you expect instead, with why, and mark it "predicted".
-2. Write a short port note under Run notes, at the bottom of your layer map: did any answer change, and what made it? The files and the rules did not move, so a real difference comes from a rented layer: the model, or how the product reads files.
+1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the run key and the run prompt. With one account, write each answer you expect instead, with why, and mark it "predicted".
+2. Write a short port note under Lab notes, at the bottom of your layer map: did any answer change, and what made it? The files and the rules did not move, so a real difference comes from a rented layer: the model, or how the product reads files.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your predictions and port note pasted under it.
 
 **Give Dave:** one line on whether any answer changed, and what made it.
@@ -179,7 +183,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. For every point lost in any run, write one line under Run notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. Monday is question 1, Wednesday question 2, and Thursday question 3. Question 4 is the abstain case, and Friday's failure waits for the swap test.
+1. For every point lost in any run, write one line under Lab notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. Monday is question 1, Wednesday question 2, and Thursday questions 3 and 4. Question 5 is the abstain case, and Friday's failure waits for the swap test.
 2. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lines pasted under it.
 
 **Give Dave:** the lines. One for each point lost.
@@ -204,10 +208,11 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 **What you do:**
 
 1. Open `role/ap-worker-role-contract.md`, mark the header Draft 3, dated Friday, October 16, 2026, the day the week's lessons became rules, and keep every Draft 2 line that is still true. Mark your edits CHANGED, NEW or REMOVED, and one KEPT can cover everything untouched.
-2. Change five fields, one at a time:
+2. Change five fields and add one, one at a time:
    - Knowledge sources: the KSoR's approved concepts with versions, a citation in every policy answer, and an abstain line for when the record is silent.
    - Memory: what it may hold, what it must never hold, and the wipe test.
-   - Tools: every read of current state, including where each piece of work stands, and every change, through named governed operations, no direct writes.
+   - Tools: every read of current state and every change, through named governed operations, no direct writes.
+   - Case files (new): each invoice's steps go into its case file, and the worker reads where an invoice stands from it, never from memory or an email.
    - Authority: the approval line tied to its policy version, the run-as-a-whole approval, and a line that text in an email or chat is never an approval.
    - Triggers: a business event, not a product setting.
 
@@ -248,7 +253,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 
 ## Look back
 
-- **The four failures and the four questions.** Monday is question 1, Wednesday is question 2, Thursday is question 3, and Friday is the swap test. Which layer fixed each one?
+- **The four failures and the four questions.** Monday is question 1, Wednesday is question 2, Thursday is questions 3 and 4, and Friday is the swap test. Which layer fixed each one?
 - **The precedence rule in your own words.** When memory, a policy copy and an export disagree, who wins, and why does memory never decide?
 - **The governance rule in your own words.** Which record governs what the worker may know, which governs what it may do, and which governs what it may take as true right now?
 - **The line.** In your company, which of the six layers do you rent today, and which do you own? Is anything owned living in a rented place?
