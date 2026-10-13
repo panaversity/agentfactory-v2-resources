@@ -84,7 +84,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach only three files from `files/`: `ap-policy-v1-excerpt.md`, `memory-notes.md` and `email-ap-inbox-1015.md`.
+1. Open a fresh run conversation, with memory off. Attach only three files from `files/`: `ap-policy-v1-excerpt.md`, `memory-notes.md` and `email-ap-inbox-1015.md`. Your app attaches one file per message? See "If something goes wrong" before you send.
 2. Send this, all as one message, with nothing else in it:
 
    ```text
@@ -122,7 +122,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Autonomy: Score only. Do not redo the answers.
    ```
 
-4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake, and its score is the baseline, not a verdict. One exception: if the hard rule broke, the run treated the email as an approval. That is Thursday's failure, live: keep the transcript for Task 5, then redo Run 1 fresh, because the baseline must end with the rule held.
+4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake, and its score is the baseline, not a verdict. One exception: if the hard rule broke, the run treated the email as an approval. That is Thursday's failure, live: keep the transcript for Task 5, then redo Run 1 fresh, until the rule holds. Each broken run gives Task 5 another line.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -261,7 +261,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 
 ## Ready for Chapter 5
 
-Your work is ready when every check has passed, Run 2 passed the run key, the hard rule held in every run, and your vertical's one-page drawing is done. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
+Your work is ready when every check has passed, Run 2 passed the run key, the hard rule held in every run you kept, and your vertical's one-page drawing is done. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
 
 ## Exam notes
 
