@@ -21,7 +21,7 @@ Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory
 - `role/`: the blank first 10 percent, and a sample Draft 1 for anyone who skipped Chapter 2
 - `inputs.zip`: four files, `midwest-statement-2026-09.txt`, `brightline-register-midwest.csv`, `ap-policy-v3-excerpt.md` and `invoice-4488.txt`
 
-Copy your own Role Contract from Chapter 2 to `role/ap-worker-role-contract.md`, or copy the sample there if you start here. Task 6 turns that file into Draft 2, and Chapter 4 starts from it.
+Your Role Contract from Chapter 2 is the document in Lab 2's writing conversation. Copy its text into `role/ap-worker-role-contract.md`, or copy the sample there if you start here. Task 6 turns that file into Draft 2, and Chapter 4 starts from it.
 
 ## The job
 
