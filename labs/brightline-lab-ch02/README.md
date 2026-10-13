@@ -7,10 +7,10 @@ Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | Path | What it is |
 | --- | --- |
 | `LAB.md` | The lab: the job, and seven tasks, each checked against its own answer key. |
-| `role/role-contract-template.md` | The blank one-page Role Contract. Task 1's writing conversation fills a copy from your answers. |
+| `role/role-contract-template.md` | The blank one-page Role Contract. Task 1's writing conversation turns it into your contract, from your answers, in a document it keeps: a Claude Doc in Claude, a Writing block in ChatGPT. |
 | `role/ap-work-inventory.md` | Brightline's recurring AP work: the raw material for your contract. |
 | `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs), for the register runs in Task 6. To check a register yourself, open it on your computer. |
 
-**The AI gets only what a task names:** `inputs.zip` for a run, your contract file and one pasted test block for a test, and one answer key at each check. Never upload `LAB.md` or this file.
+**The AI gets only what a task names:** `inputs.zip` for a run, your contract and one test block, both pasted, for a test, and one answer key at each check. Never upload `LAB.md` or this file.
 
 The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.
