@@ -8,6 +8,7 @@ In this lab you run one real AP task through the whole rhythm, twice. Run 1 uses
 
 - What a one-line request buys, and what a written first 10 percent buys, on the same task.
 - How to review the evidence that comes back, flags first, and route each decision to the person the policy names.
+- When to step in while the worker works, and when not to.
 - How to tell which part of the rhythm broke: the brief, the contract, or the policy.
 - Where a lesson lives so no future brief has to carry it, and which limits hold while nobody watches.
 
@@ -84,11 +85,10 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 
 **Give Dave:** nothing yet. This run showed what his one line buys.
 
-**Checkpoint.** You know Run 1's score, its deductions, and how it compares with your guess.
 
 ## Task 2. Write the first 10 percent (25 minutes)
 
-**Dave asks:** "Then set it up properly. I sign the close on Monday."
+**Dave asks:** "Then set it up properly. I sign the close on Monday. Tell me what evidence my signature will rest on."
 
 **What you do:**
 
@@ -98,35 +98,38 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 
 **Give Dave:** the review contract's five answers, so he knows what evidence Monday's signature will rest on.
 
-**Checkpoint.** Checks 1 to 4 passed.
 
 ## Task 3. Run it (20 minutes)
+
+**Dave asks:** "Run it, and bring me a run that passed, 9 or more, with nothing done that I didn't allow."
 
 **What you do:**
 
 1. Open a fresh conversation. Send your first 10 percent, with `inputs.zip` attached.
-2. The middle 80 is the worker's. Stay reachable, and do not steer. If it stops and asks under your stop rule, answer the question asked.
+2. The middle 80 is the worker's. Stay reachable, and do not steer. If it stops and asks under your stop rule, answer the question asked. Note each moment you want to steer, and ask which of [3.3's](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions applies: when none does, that urge is the middle-80 failure, so let it work.
 3. When it finishes, attach [the run key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), the same file as Task 1's, and send the run prompt. Compare with the key yourself.
 4. A lost point usually comes from your first 10 percent. If the run failed, fix the field that caused it, check it again in your check conversation, and run again in a fresh conversation. A passing run with one point lost is done: it needs no rerun. The brief that passes is your final first 10 percent.
 
 **Give Dave:** a run that passed, with 9 or more and no unauthorized action.
 
-**Checkpoint.** Run 2 passed, on a first 10 percent that passed checks 1 to 4.
 
 ## Task 4. The final 10 percent (15 minutes)
+
+**Dave asks:** "Which items need my approval? Show me each one with its evidence and the policy section behind it."
 
 **What you do:**
 
 1. Review Run 2's evidence against your own review contract, item by item. Read what the worker flagged first, because a flag is the worker telling you where it was unsure.
 2. Open `inputs.zip` on your computer, and check two cited lines yourself: does the statement line or register row say what the run claims?
-3. Decide each item. The timing items need no action. Each real item becomes a recommendation routed to the person the policy names, nothing done yet.
+3. Decide each item. The timing items need no action: a timing item sits on one list and not yet the other, only because of the dates. Each real item becomes a recommendation routed to the person the policy names, nothing done yet.
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with nothing pasted. Both checks are about your review, so the AI asks: answer from it.
 
-**Give Dave:** the three real items, each with its evidence and its policy section, for his approval.
+**Give Dave:** the real items, each with its evidence and its policy section, for his approval.
 
-**Checkpoint.** Checks 5 and 6 passed.
 
 ## Task 5. Which part broke (10 minutes)
+
+**Dave asks:** "What did my 9 a.m. request skip? One sentence."
 
 **What you do:**
 
@@ -136,41 +139,34 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 
 **Give Dave:** one sentence on which part of the rhythm his 9 a.m. request skipped.
 
-**Checkpoint.** Check 7 passed.
 
 ## Task 6. Draft 2 of the Role Contract (15 minutes)
 
-**Dave asks:** "Put what we learned where it lasts. I don't want to write these rules into every brief."
+**Dave asks:** "Put what we learned where it lasts. I don't want to write these rules into every brief. Mark what changed and what is new."
 
 **What you do:**
 
 1. Open `role/ap-worker-role-contract.md`. Mark the header Draft 2, with the story's date, October 1, 2026.
-2. Keep every Draft 1 line, and make five edits, marked CHANGED or NEW:
-   - Narrow the register authority to register-building.
-   - Add the reconciliation lines: observe and recommend only, never change the register to match a statement.
-   - Add the stop-and-report rule, and Dave's routing, to Escalation.
-   - Add the Midwest statement to Evaluations, with its passing bar and Dave's review checks.
-   - Add an open question: how often Dave reviews this contract.
+2. Keep every Draft 1 line. Turn each lesson from your runs and your review into one edit, marked CHANGED or NEW, in the field that holds it: Authority, Escalation, Evaluations, or Open questions. Decide your edits first. The key lists the edits a full diagnosis reaches: compare at the check.
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your Draft 2 pasted under it.
 
 **Give Dave:** Draft 2, marked with what changed and what is new.
 
-**Checkpoint.** Checks 8 to 10 passed.
 
 ## Task 7. Port the limits (15 minutes)
 
-**Dave asks:** "If this reconciliation runs as a scheduled task, what holds the limits while nobody watches?"
+**Dave asks:** "If this reconciliation runs as a scheduled task, what holds the limits while nobody watches? And tell me any limit we can't hold yet."
 
 **What you do:**
 
 1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in your Draft 2, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How both AI vendors support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) has each AI vendor's controls.
 2. Start from the strongest limit. Access you never granted beats any approval, and an approval beats an instruction.
 3. Judgment rules cannot be settings. Say where each one lives instead, and which measurable part a setup could check automatically.
-4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your port pasted under it.
+4. Optional, on a paid plan: set this reconciliation up as a real scheduled task, with its approval mode on, and check what you see against your port.
+5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your port pasted under it.
 
 **Give Dave:** the port, and any limit that needs an open question.
 
-**Checkpoint.** Checks 11 and 12 passed.
 
 ## If something goes wrong
 
@@ -185,7 +181,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 
 ## Apply it to your vertical (20 minutes)
 
-Your vertical is the line of work you know best. Pick one task in it that you would hand over. Copy the first-ten template and write its first 10 percent, with real dates, a stop rule, and a never-list. If you can, run it on your own files in a fresh conversation, and review the evidence flags first. The five questions are the part your vertical will reuse every week.
+Your vertical is the line of work you know best. Pick one task in it that you would hand over. Copy the first-ten template and write its first 10 percent, with real dates, a stop rule, and a never-list. If you can, run it on your own files in a fresh conversation, and review the evidence flags first. The five questions are the part your vertical will reuse every week. Check it yourself: all five answered, a real date, a stop rule, and a never-list.
 
 ## Look back
 
@@ -197,4 +193,4 @@ Your vertical is the line of work you know best. Pick one task in it that you wo
 
 ## Ready for Chapter 4
 
-Your work is ready when checks 1 to 12 have passed, the run on your final first 10 percent passed the run key, and your vertical's first 10 percent is written. Keep all three where you can find them again: the book keeps building on the contract. If you keep the book's running project in a git repository, add them, and tag that commit `ch03`.
+Your work is ready when every check has passed, the run on your final first 10 percent passed the run key, and your vertical's first 10 percent is written. Keep all three where you can find them again: the book keeps building on the contract. If you keep the book's running project in a git repository, add them, and tag that commit `ch03`.
