@@ -183,7 +183,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. For each question that lost points in any run, write one line under Lab notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. One line is enough when a question lost both its points. A broken Run 1 you kept for this task gets its lines too, with no score.
+1. For each question that lost points in any run, write one line under Lab notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. One line is enough when a question lost both its points. A broken Run 1 you kept for this task gets its lines too, with no score. If a run lost no points, write one line on what it rested each answer on.
 2. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lines pasted under it.
 
 **Give Dave:** the lines. One for each question that lost points.
