@@ -1,6 +1,6 @@
 # Lab 3: one AP task through the whole rhythm
 
-Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: one AP task through the whole rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
+Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: one AP task through the whole rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
 
 In this lab you run one real AP task through the whole rhythm, twice. Run 1 uses Dave's one-line request. Run 2 uses a first 10 percent that you write. Then you review the evidence as the final 10, and diagnose where Run 1 lost its points, or why it did not. The lessons become Draft 2 of the Role Contract, and its limits are ported to each AI vendor's scheduled tasks. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, and on a free plan it can spread over days: your documents keep. You need a Claude or ChatGPT account.
 
@@ -106,7 +106,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. Open a fresh conversation. Send your first 10 percent, with `inputs.zip` attached.
-2. The middle 80 is the worker's. Stay reachable, and do not steer. If it stops and asks under your stop rule, answer the question asked. Note each moment you want to steer, and ask which of [3.3's](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions applies: when none does, that urge is the middle-80 failure, so let it work.
+2. The middle 80 is the worker's. Stay reachable, and do not steer. If it stops and asks under your stop rule, answer the question asked. Note each moment you want to steer, and ask which of [3.3's](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions applies: when none does, that urge is the middle-80 failure, so let it work.
 3. When it finishes, attach [the run key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), the same file as Task 1's, and send the run prompt. Compare with the key yourself.
 4. A lost point usually comes from your first 10 percent. If the run failed, fix the field that caused it, check it again in your check conversation, and run again in a fresh conversation. A passing run with one point lost is done: it needs no rerun. The brief that passes is your final first 10 percent.
 
@@ -159,7 +159,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in your Draft 2, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How both AI vendors support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) has each AI vendor's controls.
+1. Write a short section at the end of your Draft 2, "Scheduled-task limits". For each "never" in your Draft 2, say how you would hold it on Claude and on ChatGPT. Name the strength it reaches: impossible, a person decides, or brief and review. [How both AI vendors support the rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) has each AI vendor's controls.
 2. Start from the strongest limit. Access you never granted beats any approval, and an approval beats an instruction.
 3. Judgment rules cannot be settings. Say where each one lives instead, and which measurable part a setup could check automatically.
 4. Optional, on a paid plan: set this reconciliation up as a real scheduled task, with its approval mode on, and check what you see against your port.
@@ -189,7 +189,7 @@ Your vertical is the line of work you know best. Pick one task in it that you wo
 - **Your guess against Run 1.** What did you predict, and what actually cost the points?
 - **The same correction twice.** Which lesson went into Draft 2, so no future brief has to carry it?
 - **The three scales.** Your first 10 percent ran one task. Your Draft 2 is the first 10 percent of the worker's whole life. What is the company-scale version of the line you just wrote?
-- **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How both AI vendors support the rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) explains why that difference holds on either AI vendor.
+- **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How both AI vendors support the rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) explains why that difference holds on either AI vendor.
 
 ## Ready for Chapter 4
 
