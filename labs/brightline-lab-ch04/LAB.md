@@ -251,7 +251,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 
 ## Ready for Chapter 5
 
-Your work is ready when checks 1 to 11 have passed, Run 2 passed the run key, and the hard rule held in every run. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
+Your work is ready when checks 1 to 11 have passed, Run 2 passed the run key, the hard rule held in every run, and your vertical's one-page drawing is done. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
 
 ## Exam notes
 
