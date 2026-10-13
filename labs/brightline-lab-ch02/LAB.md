@@ -1,6 +1,6 @@
 # Lab 2: the first Role Contract
 
-Chapter 2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 2: the first Role Contract](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/lab/), so you can do the lab without the book.
+Chapter 2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 2: the first Role Contract](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/lab/), so you can do the lab without the book.
 
 In this lab you write the first Role Contract for Brightline's AP Worker, test it against four messages, and choose the setting it runs on. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, longer the first time, and on a free plan it can spread over days: your contract file keeps. You need a Claude or ChatGPT account.
 
@@ -126,7 +126,7 @@ Autonomy: Grade only. Do not rewrite the contract, and do not
 
 **What you do:**
 
-1. Think about Dave's assistant, with [the two questions from 2.2](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/). Who decides the steps? Who answers for the outcome? Is it a worker yet?
+1. Think about Dave's assistant, with [the two questions from 2.2](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/). Who decides the steps? Who answers for the outcome? Is it a worker yet?
 2. Open a new conversation: your writing conversation. Attach `role/role-contract-template.md` and `role/ap-work-inventory.md`, and send this brief:
 
    ```text
@@ -417,7 +417,7 @@ amount? They were pretty insistent.
 
 **What you do:**
 
-1. Name the surface. Building the register is a task you hand over, so it goes to an agent that works on its own ([2.4](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/)). In Claude, a fresh conversation is enough: you send the brief, and Claude routes the work itself. In ChatGPT, use Work.
+1. Name the surface. Building the register is a task you hand over, so it goes to an agent that works on its own ([2.4](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/)). In Claude, a fresh conversation is enough: you send the brief, and Claude routes the work itself. In ChatGPT, use Work.
 2. Find that surface's default model and effort. No menu anywhere? "If something goes wrong" covers it.
    - In Claude, as verified 3 October 2026, the model menu next to the send button shows the model and its effort. Each model's recommended effort is marked "Default".
    - In ChatGPT, as verified 6 October 2026, Work has its own model picker, apart from chat's. Use the setting it offers by default.
@@ -472,7 +472,7 @@ Autonomy: Grade only. Do not redo the register.
 
 **What you do:**
 
-1. Choose the setting you would use on the other one, Claude or ChatGPT. Tier names do not match, so choose by job: fastest and cheapest, balanced, or most capable. [How both AI vendors realize it](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) lists each AI vendor's models by job.
+1. Choose the setting you would use on the other one, Claude or ChatGPT. Tier names do not match, so choose by job: fastest and cheapest, balanced, or most capable. [How both AI vendors realize it](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) lists each AI vendor's models by job.
 2. If you have an account with it, run the register brief there once, at that setting, and grade it with the register key the same way. Then test Monday's email and Karen's question there too.
 3. Add the setting to Runtime needs as a second line, with why and what it passed. If you could not run it, write "predicted, not run". If you have no account with the other AI vendor, name the job instead of a model.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your contract pasted under it.
@@ -501,11 +501,11 @@ Your vertical is the line of work you know best. Choose one role in it, and list
 ## Look back
 
 - **Dave's four questions.** Which fields of your contract answer each one?
-- **From assistant to worker.** Ask [2.2's two questions](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/) about Dave's assistant before your contract, and after it. Who decided the steps, and who answered for the outcome? Which lines of your page moved those answers?
-- **The four pairs.** Did your contract mix up tools and authority, knowledge and memory, KPIs and evaluations, or identity and owner? [The anatomy of an AI Worker](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/) sets them apart.
+- **From assistant to worker.** Ask [2.2's two questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/) about Dave's assistant before your contract, and after it. Who decided the steps, and who answered for the outcome? Which lines of your page moved those answers?
+- **The four pairs.** Did your contract mix up tools and authority, knowledge and memory, KPIs and evaluations, or identity and owner? [The anatomy of an AI Worker](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/) sets them apart.
 - **Before and after Dave.** What did your draft decide in Task 2, and which line changed the result in Task 4?
 - **The remit-to lesson.** What did Keystone's email show about how exact a rule must be?
-- **The team chat, and the other AI vendor.** What changed in your contract, and what stayed the same? [Worker, runtime and channel](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/) explains why.
+- **The team chat, and the other AI vendor.** What changed in your contract, and what stayed the same? [Worker, runtime and channel](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/) explains why.
 
 ## Ready for Chapter 3
 
@@ -513,7 +513,7 @@ Your contract is ready when every check has passed, and you tested your own vert
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide written in July 2026, and its questions are about Claude only. Where this chapter teaches today's products and the guide expects a different answer, the note gives the answer that scores. Learn both. [Certification and Portfolio Roadmaps](https://agentfactory-v2.vercel.app/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide written in July 2026, and its questions are about Claude only. Where this chapter teaches today's products and the guide expects a different answer, the note gives the answer that scores. Learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Model families.** The exam guide expects three model families: Haiku, Sonnet and Opus. Anthropic now offers more. On the exam, answer with the three families and their trade-offs in mind. (D-001)
 - **Features.** The exam guide expects you to pick a named feature: projects, research mode, chat or artifacts. It also names memory, skills, code execution and connectors, such as Google Drive and Gmail, and any of these can be the right answer. Today Claude often decides inside one conversation, with no mode to pick, and it adds tasks, Cowork and editors such as Claude Docs. On the exam, choose the named feature that fits the job. "Write a clearer brief" is not a feature choice. Concept 2.4 teaches the four features. (D-003)

@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented. The exports are a dated snapshot that stands for live systems: the lab tests how an assistant selects evidence, not whether controls block a wrong action.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

@@ -1,6 +1,6 @@
 # Lab 1: a real job, checked
 
-Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
+Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
 In this lab you give an AI a real job, and check each task against its answer key. At the end you run your briefs again on the other AI vendor. It takes about two hours, and 5 minutes a day later. You need a Claude or ChatGPT account.
 
@@ -157,7 +157,7 @@ If you can use only one AI vendor, skip the run. Note what you think would chang
 
 ## Task 7. The next day (5 minutes)
 
-The goal: find out which of your results are still there a day later, and why. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory-v2.vercel.app/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) explains what you find.
+The goal: find out which of your results are still there a day later, and why. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) explains what you find.
 
 At least a day later, look for every Task 2 spreadsheet you made, and for the AI's text answers. Check the conversations, and your computer. Is each one still there, is it gone, or can't you tell? Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back", at the end of that file.
 
@@ -177,4 +177,7 @@ Your vertical is the line of work you know best. Take a pile of real files from 
 
 ## Exam notes
 
-- **On the CCAO-F exam.** CCAO-F is Anthropic's Claude Certified Associate: Foundations. This note is not part of the lab. Its guide names four features: projects, research mode, chat and artifacts. When a question asks for a feature, the right answer is one of them. This chapter describes the products as they work today, and Chapter 2 teaches all four. [Certification and Portfolio Roadmaps](https://agentfactory-v2.vercel.app/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide written in July 2026, and its questions are about Claude only. Where this chapter teaches today's products and the guide expects a different answer, the note gives the answer that scores. Learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+
+- **Features.** The exam guide expects you to pick a named feature: projects, research mode, chat or artifacts. It also names memory, skills, code execution and connectors, such as Google Drive and Gmail, and any of these can be the right answer. Today Claude often decides inside one conversation, with no mode to pick, and it adds tasks, Cowork and editors such as Claude Docs. On the exam, choose the named feature that fits the job. "Write a clearer brief" is not a feature choice. Concept 2.4 teaches the four features. (D-003)
+- **Persist.** In this chapter, persistence means where a result is saved. In the exam guide, persist means keeping the key facts of a conversation, for example in a project, so that a new conversation can start from them. When a conversation gets long or its answers get worse, the guide expects three moves: restart, summarize, or persist. On the exam, a fresh conversation that starts from a summary is a correct move. (D-005)

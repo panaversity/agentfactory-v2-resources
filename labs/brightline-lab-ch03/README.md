@@ -2,7 +2,7 @@
 
 Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 3: one AP task through the whole rhythm](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 3: one AP task through the whole rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

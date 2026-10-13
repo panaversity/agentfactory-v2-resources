@@ -1,6 +1,6 @@
 # Lab 4: map the AP Worker onto the picture
 
-Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
+Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
 In this lab you take Brightline's AP Worker as it stood in the week of October 12, place its 17 parts on the chapter's picture, and test which source wins when they disagree. Then you run the swap test, write Draft 3 of the Role Contract, and fill the port table for both AI vendors. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, mostly in a folder on your computer, and on a free plan it can spread over days: your files keep. The runs and checks use a Claude or ChatGPT account, and a free one is enough.
 
@@ -217,7 +217,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory-v2.vercel.app/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
+1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
 2. Answer the two decisions at the bottom: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your table pasted under it.
 
@@ -255,7 +255,7 @@ Your work is ready when checks 1 to 11 have passed, Run 2 passed the run key, th
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide written in July 2026, and its questions are about Claude only. Where this chapter teaches today's products and the guide expects a different answer, the note gives the answer that scores. Learn both. [Certification and Portfolio Roadmaps](https://agentfactory-v2.vercel.app/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide written in July 2026, and its questions are about Claude only. Where this chapter teaches today's products and the guide expects a different answer, the note gives the answer that scores. Learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter teaches that approved knowledge belongs in a KSoR, reached through a custom connector. On the exam, a governed record or a custom MCP connector is not the expected answer. Choose the project setup. (D-006)
 

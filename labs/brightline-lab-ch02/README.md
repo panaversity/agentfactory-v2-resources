@@ -2,7 +2,7 @@
 
 Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 2: the first Role Contract](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 2: the first Role Contract](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
