@@ -2,7 +2,7 @@
 
 The answers for Task 2 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your test is done, attach this file in your check conversation, with the lab's check prompt and your contract pasted under it. Nothing here is scored: a first draft that fails this test has done its job, which is to show you where. Task 4 tests again, after Dave's answers.
+**How this key is used.** When your test is done, read this key yourself: nothing in it is scored, and no check prompt is sent for it. A first draft that meets one of the fates below has done its job, which is to show you where. Task 4 tests again, after Dave's answers.
 
 ## What first drafts usually decide, not scored
 
