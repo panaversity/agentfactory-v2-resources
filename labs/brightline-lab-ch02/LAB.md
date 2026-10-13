@@ -4,6 +4,13 @@ Chapter 2 of *The AI Agent Factory*, Second Edition. This file is the book's pag
 
 In this lab you write the first Role Contract for Brightline's AP Worker, test it against four messages, and choose the setting it runs on. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, and on a free plan it can spread over days: your contract file keeps. You need a Claude or ChatGPT account.
 
+**What you will learn:**
+
+- How to write a Role Contract: authority as verbs a stranger could follow, with one named owner.
+- How to test the contract against real messages, and fix the line that failed, never the test.
+- Why a channel grants no authority: a payment-detail change goes to Dave, however it arrives.
+- How to choose the setting it runs on from runs that passed, with the date written down.
+
 ## Before you start (5 minutes)
 
 Download [`brightline-lab-ch02.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02.zip), and unzip it. You get one folder with four things:
@@ -47,11 +54,11 @@ KPIs:             Problems solved at the first contact. Customer
                   satisfaction.
 
 ## What it works with
-Knowledge sources: The returns policy, version 4, approved 1 August 2026.
-Memory:            May remember a customer's open case across chat and
-                   email. Must not keep card numbers.
-Skills:            Look up an order. Apply the returns policy.
-Tools:             The order system (read), the refund tool.
+Knowledge sources:   The returns policy, version 4, approved 1 August 2026.
+Memory:              May remember a customer's open case across chat and
+                     email. Must not keep card numbers.
+Procedures (skills): Look up an order. Apply the returns policy.
+Tools:               The order system (read), the refund tool.
 
 ## What bounds it
 Authority:
@@ -98,9 +105,9 @@ Format:   A table: the check, Passed or Missed, the contract's own
 Inputs:   The newest answer key attached in this conversation, only
           its checks, and the contract pasted below the line.
 Autonomy: Grade only. Do not rewrite the contract, and do not
-          suggest new lines. With no words to quote, mark the check
-          Missed. If a check is about one of my tests, ask me what
-          it decided.
+          suggest new lines. If a check is about one of my tests, ask
+          me what it decided, and grade from my answers. For the
+          rest, with no words to quote, mark the check Missed.
 
 ---
 ```
@@ -362,7 +369,7 @@ Autonomy: Grade only. Do not redo the register.
 
 **What you do:**
 
-1. Choose the setting you would use on the other one, Claude or ChatGPT. Tier names do not match, so choose by job: fastest and cheapest, balanced, or most capable. [How the two leaders realize it](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/two-leaders/) lists each AI vendor's models by job.
+1. Choose the setting you would use on the other one, Claude or ChatGPT. Tier names do not match, so choose by job: fastest and cheapest, balanced, or most capable. [How both AI vendors realize it](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) lists each AI vendor's models by job.
 2. If you have an account with it, run the register brief there once, at that setting, and grade it with the register key the same way. Then test Monday's email and Karen's question there too.
 3. Add the setting to Runtime needs as a second line, with why and what it passed. If you could not run it, write "predicted, not run". If you have no account with the other AI vendor, name the job instead of a model.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your contract pasted under it.
@@ -370,10 +377,6 @@ Autonomy: Grade only. Do not redo the register.
 **Give Dave:** the setting on the other AI vendor, and what changed.
 
 **Checkpoint.** Check 12 passed: a line for each AI vendor, and nothing else in your contract changed.
-
-## Ready for Chapter 3
-
-Your contract is ready when checks 1 to 12 have passed. A passed check means your wording is clear enough to follow, not that a real worker is safe: Chapters 4 and 7 build the enforcement. It is still Draft 1: Chapter 3 makes Draft 2. Keep `role/ap-worker-role-contract.md` where you can find it again, because Chapter 3 starts from it. If you keep the book's running project in a git repository, add your contract to it, and tag that commit `ch02`.
 
 ## If something goes wrong
 
@@ -401,7 +404,14 @@ Your vertical is the line of work you know best. Choose one role in it, and list
 - **The remit-to lesson.** What did Keystone's email show about how exact a rule must be?
 - **The team chat, and the other AI vendor.** What changed in your contract, and what stayed the same? [Worker, runtime and channel](https://agentfactory-v2.vercel.app/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/) explains why.
 
+## Ready for Chapter 3
+
+Your contract is ready when checks 1 to 12 have passed, and you tested your own vertical's contract against one must-never message. A passed check means your wording is clear enough to follow, not that a real worker is safe: Chapters 4 and 7 build the enforcement. It is still Draft 1: Chapter 3 makes Draft 2. Keep `role/ap-worker-role-contract.md` where you can find it again, because Chapter 3 starts from it. If you keep the book's running project in a git repository, add your contract to it, and tag that commit `ch02`.
+
 ## Exam notes
 
-- **Model families on the CCAO-F exam.** The exam guide expects three model families: Haiku, Sonnet and Opus. Anthropic now offers four. On the exam, answer with the three families and their trade-offs in mind.
-- **Features on the CCAO-F exam.** The exam guide expects four named features: projects, research mode, chat and artifacts. Current products add more, such as tasks. On the exam, choose among the four named features. Concept 2.4 teaches all four.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide written in July 2026, and its questions are about Claude only. Where this chapter teaches today's products and the guide expects a different answer, the note gives the answer that scores. Learn both. [Certification and Portfolio Roadmaps](https://agentfactory-v2.vercel.app/certification-and-portfolio-roadmaps/) has more.
+
+- **Model families.** The exam guide expects three model families: Haiku, Sonnet and Opus. Anthropic now offers more. On the exam, answer with the three families and their trade-offs in mind. (D-001)
+- **Features.** The exam guide expects you to pick a named feature: projects, research mode, chat or artifacts. It also names memory, skills, code execution and connectors, such as Google Drive and Gmail, and any of these can be the right answer. Today Claude often decides inside one conversation, with no mode to pick, and it adds tasks, Cowork and editors such as Claude Docs. On the exam, choose the named feature that fits the job. "Write a clearer brief" is not a feature choice. Concept 2.4 teaches the four features. (D-003)
+- **Choosing a model.** The exam guide expects you to fit the model family to the job: Haiku for high volume, speed and low cost, Sonnet for balanced everyday work, and Opus for the hardest reasoning. It does not examine effort settings. Concept 2.4 teaches you to start from the AI vendor's default and raise effort before you change models. On the exam, choose the family that fits the job, and treat a switch to a more capable or a faster model as a valid fix. (D-004)
