@@ -16,7 +16,7 @@ Task 6 carries checks 5 and 6 of the lab's 11.
 ## Rebuild on the new AI vendor (rented)
 - Model and effort setting (13)
 - The scheduled task (9), rebuilt from the Triggers line in the Role Contract
-- Channel hookups: the AP inbox connector (11) and the #ap-help connection (12)
+- Channel hookups: the AP inbox connector (11) and the worker's connection to #ap-help (12). The channel itself stays, because it is rented from Brightline's messaging vendor, not the AI vendor, so #ap-help on either list is accepted
 - Memory (4, 7, 8), or simply left behind, because it passes the wipe test once items 5 and 6 are gone
 
 ## Carry across, meaning unchanged (owned)

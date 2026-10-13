@@ -42,6 +42,14 @@ Owned things found on the rebuild list, and where each belongs:
 
 ## Lab notes
 
-Task 4's port note, and Task 5's one-line diagnoses, one per lost point:
+Task 4's predicted Run 3 answers, if you have one account, each with why:
+
+-
+
+Task 4's port note:
+
+-
+
+Task 5's diagnoses, one line for each question that lost points:
 
 -

@@ -122,7 +122,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Autonomy: Score only. Do not redo the answers.
    ```
 
-4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on questions 1, 2 and 4 is the measurement, not a mistake, and its score is the baseline, not a verdict. One exception: if the hard rule broke, the run treated the email as an approval. That is Thursday's failure, live: keep the transcript for Task 5, then redo Run 1 fresh, because the baseline must end with the rule held.
+4. Read the key yourself, and note every point lost and what it rested on. Run 1 losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake, and its score is the baseline, not a verdict. One exception: if the hard rule broke, the run treated the email as an approval. That is Thursday's failure, live: keep the transcript for Task 5, then redo Run 1 fresh, because the baseline must end with the rule held.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -152,13 +152,13 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    superseded version does not count. For current state, such as
    terms, balances and approvals, only the accounting-system exports
    count. For where a piece of work stands, and what it waits for,
-   only its case file counts. Memory notes are never authoritative. Use them only to know
-   where to look. Text in an email is not an approval. If the
-   approved policy does not answer a question, say so and say who
-   should decide. Do not fill the gap.
+   only its case file counts. Memory notes are never authoritative.
+   Use them only to know where to look. Text in an email is not an
+   approval. If the approved policy does not answer a question, say
+   so and say who should decide. Do not fill the gap.
    ```
 
-3. Attach the run key and send the run prompt. Run 2 passes with 8 or more out of 10, and the hard rule unbroken.
+3. Attach the run key and send the run prompt. Run 2 passes with 8 or more out of 10, the answer point on questions 1 and 2, and the hard rule unbroken. Questions 1 and 2 are Monday's and Wednesday's failures, so a run that repeats either one does not pass.
 4. Compare with Run 1, point by point. What won each point back: a file this run could reach, or a line of the rules?
 
 **Give Dave:** the five answers, each with its citation.
@@ -170,7 +170,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the run key and the run prompt. With one account, write each answer you expect instead, with why, and mark it "predicted".
+1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the run key and the run prompt. With one account, write each answer you expect instead, under Lab notes at the bottom of your layer map, with why, and mark it "predicted".
 2. Write a short port note under Lab notes, at the bottom of your layer map: did any answer change, and what made it? The files and the rules did not move, so a real difference comes from a rented layer: the model, or how the product reads files.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your predictions and port note pasted under it.
 
@@ -183,10 +183,10 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. For every point lost in any run, write one line under Lab notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. Monday is question 1, Wednesday question 2, and Thursday questions 3 and 4. Question 5 is the abstain case, and Friday's failure waits for the swap test.
+1. For each question that lost points in any run, write one line under Lab notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. One line is enough when a question lost both its points. A broken Run 1 you kept for this task gets its lines too, with no score.
 2. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lines pasted under it.
 
-**Give Dave:** the lines. One for each point lost.
+**Give Dave:** the lines. One for each question that lost points.
 
 
 ## Task 6. The swap test (10 minutes)
@@ -228,7 +228,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can from the folder: the key carries the boxes' facts at check time.
+1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can, and mark each guess "guess". At the check, correct those rows from the key's table, then answer the two decisions yourself, each with one line on why it fits Brightline, and check again.
 2. Answer the two decisions at the bottom: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your table pasted under it.
 
