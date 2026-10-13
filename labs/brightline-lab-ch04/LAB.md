@@ -36,7 +36,7 @@ You can also do the lab with the Claude or ChatGPT desktop app. Open the folder 
 
 ## How each task works
 
-You write in the folder: the layer map, the port table, and Draft 3 of the Role Contract. The lab uses two kinds of conversation:
+You write in the folder: the layer map, the port table, and Draft 3 of the Role Contract. Every answer is your decision, and a writing conversation, as in Lab 2's Task 1, can do the typing while you decide. The lab uses two kinds of conversation:
 
 1. **A run**: a fresh conversation each time, with only the files its task names attached. The runs measure which attached source wins, so your own memory must stay out of them: in Claude, turn off Memory in the "+" menu as you start the run.[^anthropic-memory] In ChatGPT, open a Temporary Chat.[^openai-memory] When the run has answered, attach the run key and send the run prompt, printed in Task 2. The AI scores its own answers, and you compare with the key.
 2. **A check**: one conversation you keep for the whole lab, with your own settings. Attach the task's answer key, and send the check prompt, printed below, with your work pasted under it. The AI grades, quoting your words. Read the key yourself too, because you have the final say. A missed check means fix your work, and send the check prompt again: the key is already there. Earlier keys pile up in that conversation on purpose, and the grader uses the newest.
