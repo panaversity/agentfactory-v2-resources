@@ -42,6 +42,10 @@ Owned things found on the rebuild list, and where each belongs:
 
 ## Lab notes
 
+Task 3's predictions: which file should win each question, and the rule that decides it:
+
+-
+
 Task 4's predicted Run 3 answers, if you have one account, each with why:
 
 -
@@ -53,3 +57,9 @@ Task 4's port note:
 Task 5's diagnoses, one line for each question that lost points:
 
 -
+
+Task 5's case-file line for invoice 4519:
+
+| When | Who | Step |
+| --- | --- | --- |
+| | | |

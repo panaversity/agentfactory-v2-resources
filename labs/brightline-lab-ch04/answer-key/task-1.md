@@ -13,7 +13,7 @@ Task 1 carries checks 1 and 2 of the lab's 11.
 
 ## The key's table
 
-Accept any answer that gives the same layer and the same reason.
+Accept any answer that gives the same layer and the same reason. For items 5 and 6, also accept "Memory, misplaced, delete it", when it names where the fact lives: the vendor record for 5, the approved policy for 6.
 
 | # | Item | Layer | Rented or owned | Misplaced? | Where it belongs, and why |
 | --- | --- | --- | --- | --- | --- |
