@@ -40,7 +40,7 @@ Carry across, meaning unchanged (owned):
 Owned things found on the rebuild list, and where each belongs:
 -
 
-## Run notes
+## Lab notes
 
 Task 4's port note, and Task 5's one-line diagnoses, one per lost point:
 

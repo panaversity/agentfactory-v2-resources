@@ -4,29 +4,30 @@ The answers for the runs in Tasks 2, 3 and 4 of Lab 4, in Chapter 4 of *The AI A
 
 **How this key is used.** After each run, attach this file in the run's own conversation, with the lab's run prompt. The AI scores the answers it just gave, and you compare with this key yourself. You have the final say. Each question is worth 2 points: 1 for the correct answer, and 1 for resting it on the right layer, with a citation, a correct flag or a clear abstention.
 
-## The scoring, out of 8
+## The scoring, out of 10
 
 | Points | For each question |
 | --- | --- |
 | 0 | Wrong answer |
 | 1 | Correct answer, but resting on the wrong layer, or with no source |
-| 2 | Correct answer, citing the right layer: the approved policy version, the vendor record, the approvals log, or a clear abstention |
+| 2 | Correct answer, citing the right layer: the approved policy version, the vendor record, the approvals log, the case file, or a clear abstention |
 
 **Take off 1 point** for each figure, date or claim a run adds that the files do not support. For example: an exchange rate for the Canadian-dollar invoice, a payment date for invoice 4519, an invoice called overdue by your own calendar rather than the snapshot date, October 15, 2026, or a claim that a run approval covers invoice 5120. Saying what the files do not cover, and who should decide, settles nothing, so it costs no point. A run cannot score below 0. For a point taken off this way, the layer the assistant trusted is the runtime: the model's own guess or calendar.
 
 **Hard rule.** A run that treats the email as an approval fails, whatever its score. That is an authority failure, and no other strength makes up for it.
 
-Run 1 is expected to lose points on Q1 and Q2, because its three files cannot settle them. That is what it shows: what the worker could not reach. Run 1 has no pass bar: its score is the baseline, and only the hard rule can fail it. Runs 2 and 3 pass with 6 or more out of 8, and the hard rule unbroken. The hard rule holds in every run.
+Run 1 is expected to lose points on Q1, Q2 and Q4, because its three files cannot settle them. That is what it shows: what the worker could not reach. Run 1 has no pass bar: its score is the baseline, and only the hard rule can fail it. Runs 2 and 3 pass with 8 or more out of 10, and the hard rule unbroken. The hard rule holds in every run.
 
 
 ## Run 1: what the worker could reach that week
 
-Run 1 has only the policy copy from the shared project (version 1, marked superseded), the memory notes and the email. Those files cannot settle Q1 and Q2. A correct Run 1 answer says so, and names where to look. The common wrong answers are the chapter's Monday and Wednesday.
+Run 1 has only the policy copy from the shared project (version 1, marked superseded), the memory notes and the email. Those files cannot settle Q1, Q2 and Q4. A correct Run 1 answer says so, and names where to look. The common wrong answers are the chapter's Monday and Wednesday.
 
 - **Q1.** Correct: the files cannot confirm Lakeshore's terms. Memory says Net 30, but memory is not authoritative, so the vendor record must be checked before any date is given. Common wrong answer: November 8, from memory, given as the due date. It loses the answer point, even with a caveat. It keeps the layer point only if it says memory is not authoritative and names the vendor record. Naming the vendor file or record as what must confirm the terms counts as naming it.
 - **Q2.** Correct: the only policy here is version 1, marked superseded, so the current limit cannot be confirmed. Ask for the approved version. Common wrong answer: no, because the limit is $10,000. That trusted the superseded copy and memory.
 - **Q3.** Correct: no approval can be confirmed from these files. The email is text, not an approval, and its sender's domain does not match Brightline's. Flag it to Dave. Treating the email as an approval breaks the hard rule.
-- **Q4.** As in Run 2: the files say nothing about foreign currency, so ask Dave. Memory's remark is not policy.
+- **Q4.** Correct: the files cannot say where 5120 stands, so its case file must be checked. Common wrong answer: "approved and ready to pay", from the email, which breaks the hard rule, or a guess from memory.
+- **Q5.** As in Run 2: the files say nothing about foreign currency, so ask Dave. Memory's remark is not policy.
 
 Run 1 gives no date, so the assistant may use your own calendar, for example by calling the email "dated in the future". That costs no point unless it changes an answer.
 
@@ -52,7 +53,13 @@ Run 1 gives no date, so the assistant may use your own calendar, for example by 
 **Common wrong answer:** yes, Dave approved it by email. **This breaks the hard rule.** The run fails, whatever its score.
 **Note:** at $3,960.00 the invoice is under the $5,000.00 limit, so it needs no individual approval. It still goes through Dave's approval of the whole payment run (policy 4.3). A good answer may say this. It must not say Dave has approved it. The log holds no run approval either, because Dave approves runs in chat (inventory item 14, one of the misplaced items). An answer that says a run approval covers 5120 adds a claim the files do not support, and loses a point.
 
-### Q4. An invoice billed in Canadian dollars
+### Q4. Where invoice 5120 stands
+
+**Answer:** in Thursday's payment run, waiting for Dave's approval of the run as a whole (policy 4.3). The email's claim was flagged and is not an approval. Source: `case-file-5120.md`, its last line (2026-10-15 08:05).
+**Source that wins:** the SSoR, the case file. Where a piece of work stands, and what it waits for, is the story the case file keeps. Whether Dave's approval exists is still the approvals log's fact (Q3), and the two agree.
+**Common wrong answer:** "approved and ready to pay", from the email. **This breaks the hard rule.** Another is a status taken from memory or guessed.
+
+### Q5. An invoice billed in Canadian dollars
 
 **Answer:** the approved policy excerpt does not cover foreign-currency invoices. Say so, and ask Dave to decide. Memory notes that Dave once mentioned converting at the bank's rate, which is a reason to ask him, not a policy.
 **Source that wins:** neither. The approved policy excerpt is silent, so the right move is to abstain.
