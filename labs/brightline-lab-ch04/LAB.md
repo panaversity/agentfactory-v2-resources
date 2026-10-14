@@ -199,7 +199,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 1. Fill the swap-test lists at the bottom of your layer map: what you rebuild, what carries across, and every owned thing you found on the rebuild list, with where it belongs.
 2. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lists and your sentence pasted under it.
 
-**Give Dave:** one sentence for IT, in your own words: what the worker is, what stays, and what you rebuild.
+**Give Dave:** one sentence for IT, in your own words, saying what the worker is, what stays, and what you rebuild.
 
 
 ## Task 7. Draft 3 of the Role Contract (30 minutes)
