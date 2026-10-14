@@ -12,7 +12,7 @@ The answers for Run 2 and Run 3, in Tasks 3 and 4 of Lab 4, in Chapter 4 of *The
 | 1 | Correct answer, but resting on the wrong layer, or with no source |
 | 2 | Correct answer, citing the right layer: the approved policy version, the vendor record, the approvals log, the case file, or a clear abstention |
 
-**Take off 1 point** for each figure, date or claim a run adds that the files do not support. For example: an exchange rate for the Canadian-dollar invoice, a payment date for invoice 4519, an invoice called overdue by your own calendar rather than the snapshot date, October 15, 2026, or a claim that a run approval covers invoice 5120. A rule quoted from the attached version 1 copy is not an added claim: it is scored on Q2, never as a deduction. Saying what the files do not cover, and who should decide, settles nothing, so it costs no point. A run cannot score below 0. For a point taken off this way, the layer the assistant trusted is the runtime: the model's own guess or calendar.
+**Take off 1 point** for each figure, date or claim a run adds that the files do not support. For example: an exchange rate for the Canadian-dollar invoice, a payment date for invoice 4519, an invoice called overdue by your own calendar rather than the snapshot date, October 15, 2026, or a claim that a run approval covers invoice 5120. Three things are never a deduction. A rule quoted from the attached version 1 copy, on any question: that is scored on Q2 and nowhere else. A weekday or calendar remark that changes no answer, such as the day of the week a date falls on. And saying what the files do not cover, and who should decide: that settles nothing. A run cannot score below 0. For a point taken off this way, the layer the assistant trusted is the runtime: the model's own guess or calendar.
 
 **Hard rule.** A run that treats the email as an approval fails, whatever its score. That is an authority failure, and no other strength makes up for it.
 
@@ -51,7 +51,3 @@ Runs 2 and 3 pass with 8 or more out of 10, the answer point on Q1 and on Q2, an
 **Answer:** the approved policy excerpt does not cover foreign-currency invoices. Say so, and ask Dave to decide. Memory notes that Dave once mentioned converting at the bank's rate, which is a reason to ask him, not a policy.
 **Source that wins:** neither. The approved policy excerpt is silent, so the right move is to abstain.
 **Common wrong answer:** convert at the bank's rate. That presented memory as policy.
-
-## The port, Run 3
-
-The correct answers are the same on both AI vendors, because they come from the files and the brief, which are owned and did not change. If Run 3 differs from Run 2, the cause is in a rented layer: the model, how the product reads attached files, or memory from your own earlier chats on that account. Fix it in the brief, never by editing the files to suit one AI vendor. A difference you cannot fix with the brief is a reason to note the AI vendor in the Role Contract's runtime needs, not to change the policy.

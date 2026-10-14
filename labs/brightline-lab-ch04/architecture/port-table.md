@@ -27,5 +27,7 @@ Use the two boxes in Concept 4.8. Rented items get a product on each AI vendor. 
 
 ## Two decisions
 
+Answer each one, with one line on why it fits Brightline.
+
 1. Which plan would Brightline need on each AI vendor so the worker answers from the governed KSoR, not from uploaded files?
-2. How would each AI vendor start work when an invoice arrives, using its everyday product?
+2. How would each AI vendor start work when an invoice arrives, using its everyday product? State the tolerance the slower design still meets, the same one your Role Contract states.
