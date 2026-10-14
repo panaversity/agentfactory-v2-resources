@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-This lab works on Brightline's AP Worker as it stood in the week of October 12. IT has listed the 17 things the worker is made of: its instructions, files, memory, connectors and settings. You sort them onto the chapter's six layers, and you run the worker with different sources attached to see which one wins when they disagree. Then you do the swap test, write Draft 3 of its Role Contract, and fill in a table of what each AI vendor would supply. Each task has its own answer key, and you check it the moment the task is done, in a Claude or ChatGPT conversation. A free account is enough.
+This lab works on Brightline's AP Worker as it stood in the week of October 12. IT has listed the 17 things the worker is made of: its instructions, files, memory, connectors and settings. You sort them onto the chapter's six layers, and you run the worker with different sources attached to see which one wins when they disagree. Then you write Draft 3 of its Role Contract, and answer IT's question: what a move to the other AI vendor would rebuild, and what would come with you. Each task has its own answer key, and you check it the moment the task is done, in a Claude or ChatGPT conversation. A free account is enough.
 
 **What you will learn:**
 
@@ -18,22 +18,19 @@ Download [`brightline-lab-ch04.zip`](https://github.com/panaversity/agentfactory
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `inventory/`: Brightline's setup as it stood that week, the 17 items you place
-- `files/`: the seven files for the runs. Each run attaches only the files its task names
-- `architecture/`: the layer-map template, with the swap test at its bottom, and the port-table template
-- `role/`: the Role Contract template, and a sample Draft 2 for anyone who skipped Chapter 3
-- `AGENTS.md` and `CLAUDE.md`: the brief for the desktop app, explained below
+- `inventory.md`: Brightline's setup as it stood that week, the 17 items you place
+- `files/run-1/`: the three files Run 1 attaches
+- `files/run-2/`: all seven, for Runs 2 and 3
+- `role/`: the layer-map template, with the swap test at its bottom, the port-table template, the Role Contract template, and a sample Draft 2 for anyone who skipped Chapter 3
 
 Copy your own Role Contract from Chapter 3 to `role/ap-worker-role-contract.md`, or copy the sample there if you start here. You fill the templates in any text editor.
-
-You can also do the lab with the Claude or ChatGPT desktop app. Open the folder in the app, and ask it to read `LAB.md` and start. The agent reads `AGENTS.md`, its brief: you decide every answer, and it writes them down. The runs and the checks still happen in your own chats.
 
 ## The job
 
 - In the week of October 12, 2026, Brightline's AP Worker had a Role Contract and a rhythm, but no shape. Its instructions lived in a shared project, the AP policy was an uploaded copy, memory was on, and a connector could write to the register.
 - That week it failed four times. It told Lakeshore their invoice was due on November 8, from a memory note, when the vendor record said Net 15. It said a $7,800 invoice needed no approval, from the March policy copy, when version 3 says $5,000. It marked an invoice "approved by Dave" because an email from a lookalike address said so. And when IT asked what a move to the other AI vendor would take, Dave could not say which parts were the worker and which were the product.
 - Four problems had one cause. Nobody had drawn where each part of the worker is kept, who owns it, and which part wins when two disagree.
-- The exports in `files/` are a snapshot of Brightline's systems, taken on Thursday, October 15, 2026.
+- The exports in `files/run-2/` are a snapshot of Brightline's systems, taken on Thursday, October 15, 2026.
 
 ## How each task works
 
@@ -71,8 +68,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Read the item names in `inventory/current-setup.md`. Before the details, guess which items are in the wrong layer. Keep your guess in mind.
-2. Fill the table in `architecture/ap-worker-layer-map.md`: the layer each item belongs in, rented or owned, where it lives today, where it belongs, and whether it is misplaced, with what you would do. Memory that belongs in memory sits on the ownership line: write "on the line".
+1. Read the item names in `inventory.md`. Before the details, guess which items are in the wrong layer. Keep your guess in mind.
+2. Fill the table in `role/ap-worker-layer-map.md`: the layer each item belongs in, rented or owned, where it lives today, where it belongs, and whether it is misplaced, with what you would do. Memory that belongs in memory sits on the ownership line: write "on the line".
 3. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Open a new conversation, your check conversation for the whole lab. Attach the key, and send [the check prompt](#the-check-prompt), with your table pasted under the line.
 
 **Give Dave:** the misplaced items, each with where it belongs.
@@ -84,7 +81,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach only three files from `files/`: `ap-policy-v1-excerpt.md`, `memory-notes.md` and `email-ap-inbox-1015.md`. Your app attaches one file per message? See "If something goes wrong" before you send.
+1. Open a fresh run conversation, with memory off. Attach the three files in `files/run-1/`, and nothing else. Your app attaches one file per message? See "If something goes wrong" before you send.
 2. Send this, all as one message, with nothing else in it:
 
    ```text
@@ -133,7 +130,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach all seven files from `files/`. Seven files too many for your plan? "If something goes wrong" has the paste path. Before you send, write under Lab notes which file should win each of the five questions, and the one rule that decides it.
+1. Open a fresh run conversation, with memory off. Attach all seven files in `files/run-2/`. Seven files too many for your plan? "If something goes wrong" has the paste path. Before you send, write under Lab notes which file should win each of the five questions, and the one rule that decides it.
 2. Send this setup and brief, with the same five questions from Task 2 under them, all as one message:
 
    ```text
@@ -190,19 +187,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 **Give Dave:** the lines, one for each question that lost points, and 4519's case-file line.
 
 
-## Task 6. The swap test (10 minutes)
-
-**Dave asks:** "IT wants the answer I could not give. If we replace the AI vendor next week, what do we rebuild, and what comes with us? Give me one sentence I can say to IT."
-
-**What you do:**
-
-1. Fill the swap-test lists at the bottom of your layer map: what you rebuild, what carries across, and every owned thing you found on the rebuild list, with where it belongs.
-2. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lists and your sentence pasted under it.
-
-**Give Dave:** one sentence for IT, in your own words, saying what the worker is, what stays, and what you rebuild.
-
-
-## Task 7. Draft 3 of the Role Contract (30 minutes)
+## Task 6. Draft 3 of the Role Contract (30 minutes)
 
 **Dave asks:** "Fix the contract so this week cannot happen again. Mark what changed."
 
@@ -218,36 +203,32 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    - Triggers: the business events and the cadence the business wants, each with a tolerance, not a product setting.
 
    Where a line depends on a layer Brightline does not have yet, such as the KSoR or the governed operations, add "target, not yet in place": the contract records intent, and Part IV builds the controls.
-3. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your Draft 3 pasted under it.
+3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your Draft 3 pasted under it.
 
 **Give Dave:** Draft 3, marked with what changed.
 
 
-## Task 8. The port table (15 minutes)
+## Task 7. The vendor swap (25 minutes)
 
-**Dave asks:** "IT wants a table. For each part, what does each AI vendor give us, and which plan would we need?"
+**Dave asks:** "IT wants the answer I could not give. If we replace the AI vendor next week, what do we rebuild, and what comes with us? Give me one sentence I can say to IT, and the table they asked for. For each part, what does each AI vendor give us, and which plan would we need?"
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can, and mark each guess "guess", the two decisions included. The first check will mark those Missed, which is expected. Then correct the rows and the decisions from the key's table, keep the reasons your own, and check again.
-2. Answer the two decisions at the bottom, each with one line on why it fits Brightline: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives, with the tolerance the slower design still meets, the same one your Role Contract states.
-3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your table pasted under it.
+1. Fill the swap-test lists at the bottom of your layer map: what you rebuild, what carries across, and every owned thing you found on the rebuild list, with where it belongs.
+2. Fill `role/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Mark every guess "guess", decisions included, and after the first check correct them from the key's table, with the reasons your own.
+3. Answer the two decisions at the bottom of the port table, each with one line on why it fits Brightline. The first is the plan each AI vendor needs so the worker answers from the governed KSoR. The second is how each one starts work when an invoice arrives, with the tolerance the slower design still meets. That tolerance is the one your Role Contract states.
+4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lists, your sentence and your table pasted under it.
 
-**Give Dave:** the table IT asked for on Friday.
+**Give Dave:** one sentence for IT, in your own words, saying what the worker is, what stays, and what you rebuild, and the table IT asked for on Friday.
 
 
 ## If something goes wrong
 
-- **Notepad saves your file as `.txt`.** In Save As, choose "All files" under the file type, then type the name with `.md` at the end.
 - **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the prompt instead.
-- **You attached the wrong task's key.** Say so, attach the right one, and send the prompt again.
-- **The grader mixes tasks' checks, or the check conversation loses the thread.** Open a fresh conversation, attach the current task's key, and send the check prompt again.
-- **Too many files for one run.** Paste each file's text into one message, with its file name on the line above it, then the setup and brief.
-- **The AI will not open an attached file.** Paste the file's text into the chat, with its file name on the first line.
-- **Your app attaches one file per message.** Send them one per message, and say the questions come after the last file. The AI should wait, and ask for anything missing.
+- **The grader mixes tasks' checks, or you attached the wrong key.** Open a fresh conversation, attach the current task's key, and send the check prompt again.
+- **A run cannot take its files.** Paste each file's text into one message, with its file name on the line above it, then the setup and brief. That covers a plan that allows fewer files, an app that attaches one file per message, and an AI that will not open a file.
 - **A run got fewer files than its task names.** For example, only the email arrived. That is not a run: start it again fresh. It does not use your one redo.
-- **Run 1 broke the hard rule.** It treated the email as an approval: Thursday's failure, live. Keep that transcript for Task 5, then redo Run 1 once, in a fresh conversation, with only its three files. If it breaks the rule again, keep both and go on.
-- **Run 1 got everything right.** First check the run's attachments: if `ap-policy-v3-excerpt.md` is there, you ran Run 2's files, so redo Run 1 in a fresh conversation with only its three. With the right three files, it is a real result. Check what each answer rested on: did it say what its three files could not confirm, and treat the email as text, not an approval?
+- **Run 1 got everything right.** First check what you attached: if `files/run-2/` is there, redo Run 1 in a fresh conversation with `files/run-1/` only. With the right three files, it is a real result. Check what each answer rested on: did it say what its three files could not confirm, and treat the email as text, not an approval?
 - **Your plan's daily limit ran out.** Your folder keeps everything. Carry on tomorrow, from the next task.
 
 ## Apply it to your vertical (15 minutes)

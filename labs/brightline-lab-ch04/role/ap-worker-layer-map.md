@@ -68,6 +68,6 @@ Task 5's case-file line for invoice 4519:
 | --- | --- | --- |
 | | | |
 
-Task 7: Draft 2 already named version 3. Where did the worker read version 1?
+Task 6: Draft 2 already named version 3. Where did the worker read version 1?
 
 -
