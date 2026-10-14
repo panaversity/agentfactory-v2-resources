@@ -63,16 +63,17 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              attached inventory, with the layer each one belongs in,
              rented or owned, where it lives now, where it belongs, and
              whether it is misplaced.
-   Format:   Ask me the items one at a time. I give the layer, rented
-             or owned, where it belongs, and whether it is misplaced.
-             You copy where it lives now from the inventory. Then show
-             me the whole table, and how many are misplaced.
+   Format:   Ask me the items one at a time, by number, and wait for
+             each answer. I give the layer, rented, owned or on the
+             line, where it belongs, and whether it is misplaced. You
+             copy where it lives now from the inventory. Then show me
+             the whole table, and how many are misplaced.
    Inputs:   The attached inventory, and my answers. Nothing else.
-   Autonomy: I decide every cell. Never fill in or suggest one I did
-             not choose.
+   Autonomy: I decide every line in this conversation. Never fill in
+             or suggest one I did not choose.
    ```
 
-3. Answer as it asks. The layers are Channels, Runtime, Memory, KSoR, SSoR and DSoR, and the Role Contract, Evaluations and Company systems count as places too. Rented sits above the ownership line and owned below it. Memory that belongs in memory sits on the line: say "on the line".
+3. Answer as it asks. The layers are Channels, Runtime, Memory, KSoR (what it knows), SSoR (each matter's case file) and DSoR (controls, approvals and evidence), and the Role Contract, Evaluations and Company systems count as places too. Rented sits above the ownership line and owned below it. Memory that belongs in memory sits on the line.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the misplaced items, each with where it belongs.
@@ -251,7 +252,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 
 ## Ready for Chapter 5
 
-Your work is ready when every check has passed, Run 2 passed its key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. A passed run shows good evidence selection, not that a wrong action would be blocked: Part IV builds those controls. Ask your lab conversation for the layer map, Draft 3 and the port table as files, and keep them in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
+Your work is ready when every check has passed, Run 2 passed its key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. A passed run shows good evidence selection, not that a wrong action would be blocked: Part IV builds those controls. Ask your lab conversation for the layer map, Draft 3 and the port table as files, and keep them in the lab folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
 
 ## Exam notes
 
