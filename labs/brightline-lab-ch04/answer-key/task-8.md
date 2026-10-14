@@ -18,7 +18,7 @@ Task 8 carries checks 10 and 11 of the lab's 11.
 | Item | Anthropic | OpenAI |
 | --- | --- | --- |
 | Channel where vendors reach the worker | The AP inbox, read through a connector | The AP inbox, read through an app |
-| Channel where staff ask the worker | Claude Tag in Slack, or the Claude apps | @ChatGPT in Slack or Teams, or the ChatGPT apps |
+| Channel where staff ask the worker | Claude Tag in Slack (Team and Enterprise plans, in beta), or the Claude apps | @ChatGPT in Slack or Teams, or the ChatGPT apps |
 | Runtime for the weekly register | A Cowork task, for everyday delegated work | A ChatGPT Work task, for everyday delegated work |
 | Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta) | Agents API (beta) |
 | Memory, and chats not saved to memory | Claude memory, turned off in the "+" menu, or Incognito chats | Saved memories and chat history, Temporary Chat |
