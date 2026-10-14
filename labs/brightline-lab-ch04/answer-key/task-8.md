@@ -8,8 +8,8 @@ The answers for Task 8 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 Task 8 carries checks 10 and 11 of the lab's 11.
 
-10. **Every rented row names a product on both AI vendors, and every owned row keeps its meaning.** Where a box names no product, the row says how the worker would reach it instead. Owned rows say "no change" in meaning, with the integration work named: reconnections, identity mapping, and the evaluations rerun before go-live. Missed: a rented row left empty, or an owned item whose meaning changes, which means it was stored in a rented place.
-11. **The two decisions are answered from the boxes.** The plan each AI vendor needs so the worker answers from the governed KSoR rather than uploads, and how each one starts work when an invoice arrives, with the contract stating the tolerance the slower design still meets. Missed: a decision answered from memory of the products rather than the chapter's boxes.
+10. **Every rented row names the product the 4.8 boxes name on both AI vendors, and every owned row keeps its meaning.** Where a box names no product, the row says how the worker would reach it instead. Owned rows say "no change" in meaning, with the integration work named: reconnections, identity mapping, and the evaluations rerun before go-live. Missed: a rented row left empty, a product the key's table does not name for that row, or an owned item whose meaning changes, which means it was stored in a rented place.
+11. **The two decisions are answered from the boxes, or from this key's table if the page could not be opened.** The plan each AI vendor needs so the worker answers from the governed KSoR rather than uploads, and how each one starts work when an invoice arrives, with the tolerance the slower design still meets, stated in the port table and the same as the Role Contract's. An hourly check meets a tolerance of one hour or longer. Each decision has its own line on why it fits Brightline. Missed: a decision answered from memory of the products rather than the chapter's boxes, or one copied from this key with no reason of its own. Missed also: no tolerance, a tolerance the hourly check cannot meet, or one that differs from the Role Contract's.
 
 ## The key's table
 
@@ -21,7 +21,7 @@ Task 8 carries checks 10 and 11 of the lab's 11.
 | Channel where staff ask the worker | Claude Tag in Slack, or the Claude apps | @ChatGPT in Slack or Teams, or the ChatGPT apps |
 | Runtime for the weekly register | A Cowork task, for everyday delegated work | A ChatGPT Work task, for everyday delegated work |
 | Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta) | Agents API (beta) |
-| Memory, and chats not saved to memory | Claude memory, Incognito chats | Saved memories and chat history, Temporary Chat |
+| Memory, and chats not saved to memory | Claude memory, turned off in the "+" menu, or Incognito chats | Saved memories and chat history, Temporary Chat |
 | How the worker reaches the KSoR | A custom connector over remote MCP, on any plan (one on Free) | A custom MCP app in developer mode: read and fetch on Pro, full support on Business, Enterprise or Edu |
 | Trigger: "every Monday morning" | A weekly scheduled task | A scheduled task |
 | Trigger: "starts within one hour of an invoice arriving" | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
