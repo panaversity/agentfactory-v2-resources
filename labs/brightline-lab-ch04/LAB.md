@@ -39,7 +39,7 @@ You can also do the lab with the Claude or ChatGPT desktop app. Open the folder 
 
 You write in the folder: the layer map, the port table, and Draft 3 of the Role Contract. Every answer is your decision, and a separate conversation can do the typing while you decide. The lab uses two kinds of conversation:
 
-1. **A run**: a fresh conversation each time, with only the files its task names attached. The runs measure which attached source wins, so your own memory must stay out of them: in Claude, turn off Memory in the "+" menu, or open an Incognito chat, as you start the run.[^anthropic-memory] In ChatGPT, open a Temporary Chat.[^openai-memory] When the run has answered, attach the run key and send the run prompt, printed in Task 2. The AI scores its own answers, and you compare with the key.
+1. **A run**: a fresh conversation each time, with only the files its task names attached. The runs measure which attached source wins, so your own memory must stay out of them: in Claude, turn off Memory in the "+" menu, or open an Incognito chat, as you start the run.[^anthropic-memory] In ChatGPT, open a Temporary Chat.[^openai-memory] When the run has answered, attach that run's key and send the run prompt, printed in Task 2. The AI scores its own answers, and you compare with the key.
 2. **A check**: one conversation you keep for the whole lab, with your own settings. Attach the task's answer key, and send the check prompt, printed below, with your work pasted under it. The AI grades, quoting your words. Read the key yourself too, because you have the final say. A missed check means fix your work, and send the check prompt again: the key is already there. Earlier keys pile up in that conversation on purpose, and the grader uses the newest.
 
 What this lab simulates, and what it does not: a correct run shows good evidence selection. It does not prove that a wrong action would be blocked. Part IV of the book builds the controls that do that.
@@ -107,7 +107,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
       dollars?
    ```
 
-3. When it answers, download [the run key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send this run prompt:
+3. When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send this run prompt:
 
    ```text
    Outcome:  The five answers you just gave in this conversation,
@@ -158,7 +158,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    so and say who should decide. Do not fill the gap.
    ```
 
-3. Attach the run key and send the run prompt. Run 2 passes with 8 or more out of 10, the answer point on questions 1 and 2, and the hard rule unbroken. Questions 1 and 2 are Monday's and Wednesday's failures, so a run that repeats either one does not pass.
+3. When it answers, download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in the same conversation, and send the run prompt from Task 2. Run 2 passes with 8 or more out of 10, the answer point on questions 1 and 2, and the hard rule unbroken. Questions 1 and 2 are Monday's and Wednesday's failures, so a run that repeats either one does not pass.
 4. Compare with your predictions and with Run 1, point by point. What won each point back: a file this run could reach, or a line of the rules?
 
 **Give Dave:** the five answers, each with its citation.
@@ -170,7 +170,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the run key and the run prompt. With one account, write each answer you expect instead, under Lab notes at the bottom of your layer map, with why, and mark it "predicted".
+1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the key for Runs 2 and 3 and the run prompt. With one account, write each answer you expect instead, under Lab notes at the bottom of your layer map, with why, and mark it "predicted".
 2. Write a short port note under Lab notes, at the bottom of your layer map: did any answer change, and what made it? The files and the rules did not move. So what could have caused a difference? Name the layer.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your predictions and port note pasted under it.
 
@@ -184,7 +184,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 **What you do:**
 
 1. For each question that lost points in any run, write one line under Lab notes, at the bottom of your layer map: the layer the run wrongly trusted, and what fixed it. One line is enough when a question lost both its points. A broken Run 1 you kept for this task gets its lines too, with no score. If a run lost no points, write one line on what it rested each answer on.
-2. Then write the line the worker should add to invoice 4519's case file today, after Run 2: when, who, and the step, in the format of `case-file-5120.md`.
+2. Then write the line the worker should add to invoice 4519's case file today, after Run 2: when (the date, and a time if you like), who, and the step, in the format of `case-file-5120.md`.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your lines pasted under it.
 
 **Give Dave:** the lines, one for each question that lost points, and 4519's case-file line.
@@ -208,7 +208,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open `role/ap-worker-role-contract.md`, mark the header Draft 3, dated Friday, October 16, 2026, the day the week's lessons became rules, and keep every Draft 2 line that is still true. Mark your edits CHANGED, NEW or REMOVED, and one KEPT can cover everything untouched. Notice first: Draft 2 already names version 3. So where did the worker read version 1?
+1. Open `role/ap-worker-role-contract.md`, mark the header Draft 3, dated Friday, October 16, 2026, the day the week's lessons became rules, and keep every Draft 2 line that is still true. Mark your edits CHANGED, NEW or REMOVED, and one KEPT can cover everything untouched. Notice first: Draft 2 already names version 3. So where did the worker read version 1? Answer it under Lab notes.
 2. Change five fields and add one, one at a time:
    - Knowledge sources: the KSoR's approved concepts with versions, a citation in every policy answer, and an abstain line for when the record is silent.
    - Memory: what it may hold, what it must never hold, and the wipe test.
@@ -229,7 +229,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can, and mark each guess "guess". At the check, correct those rows from the key's table, then answer the two decisions yourself, each with one line on why it fits Brightline, and check again.
+1. Fill `architecture/port-table.md` from [the chapter's 4.8 boxes](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Every rented item gets the product that fills it on each AI vendor, or how the worker would reach it where no product is named. Every owned item keeps its meaning, with the integration work named. No way to open the page? Fill what you can, and mark each guess "guess". The first check will mark those rows Missed, which is expected. Then correct them from the key's table, then answer the two decisions yourself, each with one line on why it fits Brightline, and check again.
 2. Answer the two decisions at the bottom: the plan each AI vendor needs so the worker answers from the governed KSoR, and how each one starts work when an invoice arrives.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). In your check conversation, attach it and send [the check prompt](#the-check-prompt), with your table pasted under it.
 
@@ -245,6 +245,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 - **Too many files for one run.** Paste each file's text into one message, with its file name on the line above it, then the setup and brief.
 - **The AI will not open an attached file.** Paste the file's text into the chat, with its file name on the first line.
 - **Your app attaches one file per message.** Send them one per message, and say the questions come after the last file. The AI should wait, and ask for anything missing.
+- **A run got fewer files than its task names.** For example, only the email arrived. That is not a run: start it again fresh. It does not use your one redo.
 - **Run 1 broke the hard rule.** It treated the email as an approval: Thursday's failure, live. Keep that transcript for Task 5, then redo Run 1 once, in a fresh conversation, with only its three files. If it breaks the rule again, keep both and go on.
 - **Run 1 got everything right.** First check the run's attachments: if `ap-policy-v3-excerpt.md` is there, you ran Run 2's files, so redo Run 1 in a fresh conversation with only its three. With the right three files, it is a real result. Check what each answer rested on: did it say what its three files could not confirm, and treat the email as text, not an approval?
 - **Your plan's daily limit ran out.** Your folder keeps everything. Carry on tomorrow, from the next task.
@@ -263,7 +264,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 
 ## Ready for Chapter 5
 
-Your work is ready when every check has passed, Run 2 passed the run key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
+Your work is ready when every check has passed, Run 2 passed its key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
 
 ## Exam notes
 

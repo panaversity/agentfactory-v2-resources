@@ -46,6 +46,10 @@ Task 3's predictions: which file should win each question, and the rule that dec
 
 -
 
+Task 3's comparison: what won each point back, a file or a rule:
+
+-
+
 Task 4's predicted Run 3 answers, if you have one account, each with why:
 
 -
@@ -63,3 +67,7 @@ Task 5's case-file line for invoice 4519:
 | When | Who | Step |
 | --- | --- | --- |
 | | | |
+
+Task 7: Draft 2 already named version 3. Where did the worker read version 1?
+
+-
