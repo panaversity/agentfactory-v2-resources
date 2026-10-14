@@ -213,7 +213,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Tell your writing conversation to start on the contract: Draft 3, dated Friday, October 16, 2026, the day the week's lessons became rules, keeping every Draft 2 line that is still true, with each edit marked CHANGED, NEW or REMOVED and one KEPT for everything untouched. Notice first: Draft 2 already names version 3. So where did the worker read version 1? Answer it under Lab notes.
+1. Tell your writing conversation to start on the contract. Draft 3 is dated Friday, October 16, 2026, the day the week's lessons became rules. It keeps every Draft 2 line that is still true. Each edit is marked CHANGED, NEW or REMOVED, and one KEPT covers everything untouched. Notice first: Draft 2 already names version 3. So where did the worker read version 1? Answer it under Lab notes.
 2. Decide five fields and one new section, one at a time:
    - Knowledge sources: the KSoR's approved concepts with versions, a citation in every policy answer, and an abstain line for when the record is silent.
    - Memory: what it may hold, what it must never hold, and the wipe test.
