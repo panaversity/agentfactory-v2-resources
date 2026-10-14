@@ -2,7 +2,7 @@
 
 The answers for Task 4 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When Run 3 is scored, or written as a prediction, attach this file in your check conversation, with the lab's check prompt and your port note pasted under it.
+**How this key is used.** When Run 3 is scored, or written as a prediction, attach this file in your lab conversation, and send the lab's check prompt.
 
 ## The check
 

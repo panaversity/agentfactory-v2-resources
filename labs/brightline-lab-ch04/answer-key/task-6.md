@@ -2,7 +2,7 @@
 
 The answers for Task 6 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When Draft 3 is written, attach this file in your check conversation, with the lab's check prompt and your Draft 3 pasted under it. The AI marks each check Passed or Missed, quoting your contract's words.
+**How this key is used.** When Draft 3 is written, attach this file in your lab conversation, and send the lab's check prompt. The AI marks each check Passed or Missed, quoting your contract's words.
 
 ## The checks
 
