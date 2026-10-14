@@ -32,38 +32,9 @@ You need your Role Contract from Chapter 3: Task 1 attaches it, and Task 6 makes
 - Four problems had one cause. Nobody had drawn where each part of the worker is kept, who owns it, and which part wins when two disagree.
 - The exports in `files/run-2/` are a snapshot of Brightline's systems, taken on Thursday, October 15, 2026.
 
-## How each task works
+## The check prompt
 
-You decide every answer, and one conversation does the typing. Three documents come out of it, saved into `role/`: the layer map, with the swap test and your Lab notes at its bottom, Draft 3 of the Role Contract, and the port table. The lab uses three kinds of conversation:
-
-1. **A writing conversation**: opened once in Task 1, with the writing brief below and its four files attached. In each task you say what you are deciding, it asks item by item and writes in your answers, then shows you the document. Read every line before you save it. It never sees an answer key.
-2. **A run**: a fresh conversation each time, with only the files its task names attached. The runs measure which attached source wins, so your own memory must stay out of them: in Claude, turn off Memory in the "+" menu, or open an Incognito chat, as you start the run.[^anthropic-memory] In ChatGPT, open a Temporary Chat.[^openai-memory] When the run has answered, attach that run's key and send the run prompt, printed in Task 2. The AI scores its own answers, and you compare with the key.
-3. **A check**: one conversation you keep for the whole lab, with your own settings. Attach the task's answer key, and send the check prompt, printed below, with your work pasted under it. The AI grades, quoting your words. Read the key yourself too, because you have the final say. A missed check means fix your work, and send the check prompt again: the key is already there. Earlier keys pile up in that conversation on purpose, and the grader uses the newest.
-
-What this lab simulates, and what it does not: a correct run shows good evidence selection. It does not prove that a wrong action would be blocked. Part IV of the book builds the controls that do that.
-
-### The writing brief
-
-Send this once, in Task 1, with `inventory.md`, `role/ap-worker-layer-map.md`, `role/port-table.md` and your Role Contract attached:
-
-```text
-Outcome:  This lab's three documents, filled from my answers in the
-          attached templates' shape: the layer map, with its swap test
-          and Lab notes, Draft 3 of the attached Role Contract, and
-          the port table.
-Format:   I say which part I am on, and when the next one starts. Ask
-          me what it needs, one item at a time, and write in my
-          answers. Fill "Where it lives now" from the inventory
-          yourself. When a part is done, show me the whole document,
-          ready to save.
-Inputs:   The attached files, and my answers. Nothing else.
-Autonomy: I decide every line. Never write or suggest one I did not
-          choose. Where I pass, leave it empty.
-```
-
-### The check prompt
-
-One prompt checks every task. In your check conversation, attach the task's key first, then send this, with your work pasted under the line:
+One prompt checks every task. In your check conversation, one you keep for the whole lab, attach the task's key, then send this with your work pasted under the line. Read the key yourself too: you have the final say. Missed a check? Fix your work and send the prompt again. The keys pile up there, and the grader uses the newest.
 
 ```text
 Outcome:  The work pasted below, graded against the newest answer
@@ -89,9 +60,26 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 **What you do:**
 
 1. Read the item names in `inventory.md`. Before the details, guess which items are in the wrong layer. Keep your guess in mind.
-2. Open a new conversation, your writing conversation for the whole lab, and send [the writing brief](#the-writing-brief) with its four files attached. Then tell it to start with the layer map's table, and decide each item as it asks: the layer it belongs in, rented or owned, where it belongs, and whether it is misplaced, with what you would do. Memory that belongs in memory sits on the ownership line: say "on the line".
-3. When it shows the table, read every row, then save it as `role/ap-worker-layer-map.md`.
-4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Open a new conversation, your check conversation for the whole lab. Attach the key, and send [the check prompt](#the-check-prompt), with your table pasted under the line.
+2. Open a new conversation, your writing conversation for the whole lab. Attach `inventory.md`, `role/ap-worker-layer-map.md`, `role/port-table.md` and your Role Contract, and send this:
+
+   ```text
+   Outcome:  This lab's three documents, filled from my answers in the
+             attached templates' shape: the layer map, with its swap test
+             and Lab notes, Draft 3 of the attached Role Contract, and
+             the port table.
+   Format:   I say which part I am on, and when the next one starts. Ask
+             me what it needs, one item at a time, and write in my
+             answers. Fill "Where it lives now" from the inventory
+             yourself. When a part is done, show me the whole document,
+             ready to save.
+   Inputs:   The attached files, and my answers. Nothing else.
+   Autonomy: I decide every line. Never write or suggest one I did not
+             choose. Where I pass, leave it empty.
+   ```
+
+3. Tell it to start with the layer map's table, and decide each item as it asks: the layer it belongs in, rented or owned, where it belongs, and whether it is misplaced, with what you would do. Memory that belongs in memory sits on the ownership line: say "on the line".
+4. When it shows the table, read every row, then save it as `role/ap-worker-layer-map.md`.
+5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Open a new conversation, your check conversation for the whole lab: keys go here, never into your writing conversation. Attach the key, and send [the check prompt](#the-check-prompt), with your table pasted under the line.
 
 **Give Dave:** the misplaced items, each with where it belongs.
 
@@ -102,7 +90,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach the three files in `files/run-1/`, and nothing else.
+1. Open a fresh conversation for the run, with memory off, so only the attached files can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat.[^openai-memory] Attach the three files in `files/run-1/`, and nothing else.
 2. Send this, all as one message, with nothing else in it:
 
    ```text
@@ -269,7 +257,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 
 ## Ready for Chapter 5
 
-Your work is ready when every check has passed, Run 2 passed its key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
+Your work is ready when every check has passed, Run 2 passed its key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. A passed run shows good evidence selection, not that a wrong action would be blocked: Part IV builds those controls. Keep the layer map, the port table and Draft 3 in the folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
 
 ## Exam notes
 
