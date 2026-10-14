@@ -2,15 +2,15 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-In this lab you take Brightline's AP Worker as it stood in the week of October 12, place the 17 items in IT's inventory on the chapter's picture, and test which source wins when they disagree. Then you run the swap test, write Draft 3 of the Role Contract, and fill the port table for both AI vendors. Each task is checked against its own answer key the moment it is done. It takes about three hours, mostly in a folder on your computer, and on a free plan it can spread over days: your files keep. The runs and checks use a Claude or ChatGPT account, and a free one is enough.
+This lab works on Brightline's AP Worker as it stood in the week of October 12. IT has listed the 17 things the worker is made of: its instructions, files, memory, connectors and settings. You sort them onto the chapter's six layers, and you run the worker with different sources attached to see which one wins when they disagree. Then you do the swap test, write Draft 3 of its Role Contract, and fill in a table of what each AI vendor would supply. Each task has its own answer key, and you check it the moment the task is done, in a Claude or ChatGPT conversation. A free account is enough.
 
 **What you will learn:**
 
-- How to place any part of a worker in its layer, and say whether it is rented or owned.
-- Which record says where a piece of work stands, and why an email or a memory never does.
-- How to tell which source wins when copies disagree, and write the rule that settles it.
-- How to name the layer a failure came from, and the line that fixes it.
-- What a vendor swap would rebuild, what would carry, and what each plan must support.
+- To place any part of a worker in its layer, and say whether it is rented or owned.
+- To say which record tells you where a piece of work stands, and why an email or a memory never does.
+- To tell which source wins when copies disagree, and to write that rule down.
+- To name the layer a failure came from, and the line that fixes it.
+- To say what a vendor swap would rebuild, what would carry across, and which plan you would need on each vendor.
 
 ## Before you start (5 minutes)
 
