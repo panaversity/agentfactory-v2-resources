@@ -40,6 +40,9 @@ Carry across, meaning unchanged (owned):
 Owned things found on the rebuild list, and where each belongs:
 -
 
+What Dave tells IT, in one sentence:
+-
+
 ## Lab notes
 
 Task 3's predictions: which file should win each question, and the rule that decides it:

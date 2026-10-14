@@ -1,6 +1,6 @@
-# Role Contract: AP Worker                 Draft 2, October 4, 2026 (sample)
+# Role Contract: AP Worker                 Draft 2, October 1, 2026 (sample)
 
-Use this only if you did not write Draft 2 in Chapter 3. Copy it to `ap-worker-role-contract.md`.
+Use this only if you did not write Draft 2 in Chapter 3: attach it in Task 1 as your Role Contract.
 
 ## Who it is
 Identity:      Its own service account, ap-worker@brightline (to be created by IT). Never a person's login.
