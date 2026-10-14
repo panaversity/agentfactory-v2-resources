@@ -51,10 +51,11 @@ Outcome:  This lab's three documents, filled from my answers in the
           attached templates' shape: the layer map, with its swap test
           and Lab notes, Draft 3 of the attached Role Contract, and
           the port table.
-Format:   I say which part I am on. Ask me what it needs, one item at
-          a time, and write in my answers. Copy "Where it lives now"
-          from the inventory yourself. When a part is done, show me
-          the whole document, ready to save.
+Format:   I say which part I am on, and when the next one starts. Ask
+          me what it needs, one item at a time, and write in my
+          answers. Fill "Where it lives now" from the inventory
+          yourself. When a part is done, show me the whole document,
+          ready to save.
 Inputs:   The attached files, and my answers. Nothing else.
 Autonomy: I decide every line. Never write or suggest one I did not
           choose. Where I pass, leave it empty.
