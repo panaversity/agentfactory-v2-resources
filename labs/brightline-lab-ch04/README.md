@@ -10,10 +10,10 @@ Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 | `inventory.md` | Brightline's AP Worker setup, week of October 12, 2026: the 17 items you place. |
 | `files/run-1/` | The three files Run 1 attaches: the policy copy from the shared project, the memory notes and one email. |
 | `files/run-2/` | All seven files, for Runs 2 and 3: two policy excerpts, memory notes, two accounting exports, a case file, one email. |
-| `role/` | The layer-map template, with the swap test at its bottom, the port-table template, the Role Contract template, and a sample Draft 2 for readers who skipped Chapter 3. |
+| `role/` | The layer-map template, with the swap test at its bottom, the port-table template, and a sample Draft 2 of the Role Contract for readers who skipped Chapter 3. Your writing conversation fills them, and you save them here. |
 
 **The lab's date.** The exports are a snapshot taken on Thursday, October 15, 2026. The Run 2 brief gives that date, so nothing is called overdue because of the day you run the lab. Run 1's one message gives no date, like everything else it leaves out.
 
-**The AI gets only what a task names:** the files a run lists, your pasted document for a check, and one answer key at each check. Never upload `LAB.md` or this file.
+**The AI gets only what a task names:** the inventory, the templates and your contract for the writing conversation, the files a run lists, your pasted document for a check, and one answer key at each check. Never upload `LAB.md` or this file.
 
 The answer keys are not in the folder. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.
