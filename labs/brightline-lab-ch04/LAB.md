@@ -252,7 +252,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 ## Apply it to your vertical (15 minutes)
 
-Pick one worker in a role you know. On one page, draw its six layers and the ownership line. Then answer two questions under the drawing. If its memory were wiped tonight, would tomorrow's work still be correct? If you replaced its AI vendor tomorrow, what would you rebuild, and what would you carry? Last, refine that role's contract the same way as Draft 3: name its knowledge sources with versions, and tie its authority to the policies it comes from. If you have no contract of your own, Draft 3 for Brightline stands in. Check it yourself: every owned thing sits below the line, memory passes the wipe test, and every authority line names its policy version.
+Pick one worker in a role you know. On one page, draw its six layers and the ownership line. Then answer three questions under the drawing. If its memory were wiped tonight, would tomorrow's work still be correct? If the machine it ran on were destroyed tonight, what would be lost? If you replaced its AI vendor tomorrow, what would you rebuild, and what would you carry? Last, refine that role's contract the same way as Draft 3: name its knowledge sources with versions, and tie its authority to the policies it comes from. If you have no contract of your own, Draft 3 for Brightline stands in. Check it yourself: every owned thing sits below the line, memory passes the wipe test, nothing that matters lives only on the machine, and every authority line names its policy version.
 
 ## Look back
 
@@ -261,6 +261,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 - **The governance rule in your own words.** Which record governs what the worker may know, which governs what it may do, and which governs what it may take as true right now?
 - **The line.** In your company, which of the six layers do you rent today, and which do you own? Is anything owned living in a rented place?
 - **The wipe test, tonight.** For the AI you use most, what would break tomorrow if its memory were wiped? What does that tell you about where facts are kept?
+- **The machine, tonight.** For the AI you use most, what lives only on the machine it runs on? If that machine were destroyed tonight, what would be lost?
 
 ## Ready for Chapter 5
 
