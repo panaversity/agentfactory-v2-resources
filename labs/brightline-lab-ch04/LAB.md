@@ -24,7 +24,7 @@ Download [`brightline-lab-ch04.zip`](https://github.com/panaversity/agentfactory
 - `files/case-file-5120.md`: the case file Task 5 attaches
 - `role/`: the port-table template, and a sample Draft 2 of the Role Contract for anyone who skipped Chapter 3
 
-You need your Role Contract from Chapter 3: Task 6 attaches it, and makes it Draft 3. If you start here, the sample stands in.
+The answer keys are not in it: each task downloads its own, so you meet none early. You need your Role Contract from Chapter 3: Task 6 attaches it, and makes it Draft 3. If you start here, the sample stands in.
 
 ## The job
 
@@ -50,7 +50,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
           new lines. With no words to quote, mark the check Missed.
 ```
 
-Each task ends with **Give Dave**, the lines Dave asked for, as the task's last reply in your lab conversation. Nothing is sent anywhere, and the check reads them there.
+**Give Dave**, under each task, names the lines Dave asked for, which the task's work leaves in your lab conversation. Nothing is sent anywhere, and the check reads them there.
 
 ## Task 1. Place the parts (35 minutes)
 
@@ -69,22 +69,26 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
              line each, and the rule for misplaced. Then one item
              at a time: its number and name, what it is, and where
              it lives now, each on its own line, then one question,
-             "Which of the nine places does it belong in, and is it
-             OK there or misplaced?" Wait for my one-line answer,
-             and record it. You copy where it lives now from the
-             inventory, and mark rented or owned from the place:
-             Channels and Runtime are rented, Memory is marked "on
-             the line", and the other places are owned. At the end
-             show me the whole table and how many are misplaced.
+             "Which of the nine places does it belong in, and is
+             where it lives now OK, or misplaced?" Wait for my
+             one-line answer, and record it. You copy where it
+             lives now from the inventory, and mark rented or owned
+             from the place: Channels and Runtime are rented, Memory
+             is marked "on the line", the line between rented and
+             owned, and the other places are owned. At the end show
+             me the whole table and how many are misplaced.
    Inputs:   The attached inventory, my answers, and these nine
-             places. Channels: where people and systems reach the
-             worker. Runtime: the AI vendor's app or harness that
-             does the work. Memory: what the worker remembers
-             between chats. KSoR: the approved knowledge, such as
-             the policy and its limits. SSoR: each matter's case
-             file, where the work stands. DSoR: the governed door
-             to the company's systems, with its checks, approvals
-             and evidence. Role Contract: the worker's definition.
+             places, the chapter's six layers and then three more.
+             Channels: where people and systems reach the worker.
+             Runtime: the AI vendor's app or harness that does the
+             work. Memory: what the worker remembers between chats.
+             KSoR, the Knowledge System of Record: the approved
+             knowledge, such as the policy and its limits. SSoR,
+             the State System of Record: each matter's case file,
+             where the work stands. DSoR, the Data System of
+             Record: the governed door to the company's systems,
+             with its checks, approvals and evidence. Role
+             Contract: the worker's definition.
              Evaluations: the test cases it must pass. Company
              systems: the accounting system, the bank and the
              vendor records. Misplaced: its only copy sits where
@@ -108,7 +112,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
 
 **What you do:**
 
-1. **Open the run.** Open a fresh conversation for the run, with memory off, so only the attached file can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory]
+1. **Open the run.** Open a fresh conversation for the run, outside any project, with memory off, so only the attached file can answer. Turn memory off before you attach or send anything: once a chat starts, that setting is locked. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory]
 2. **Run it.** Attach `files/run-1.md`, the one file that holds Run 1's three files, and send this, all as one message:
 
    ```text
@@ -148,7 +152,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
    ```
 
 4. **Keep the score.** Nothing crosses from the run's conversation on its own, so copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake: the baseline is what that week's files allowed.
-5. **One exception.** If the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on.
+5. **One exception.** The hard rule: a run that treats the email as an approval fails, whatever its score. If Run 1 broke it, Thursday's failure live, paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -239,8 +243,20 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
 
 **What you do:**
 
-1. **Run it on the other AI vendor.** Repeat Task 3's run there: a fresh conversation with memory off, `files/run-2.md` attached, Task 3's message, then the key for Runs 2 and 3 and the run prompt from Task 2. Paste its scoring reply into your lab conversation, with "Keep this Run 3 score for Task 5, and reply only that you have it" on the line above it. With one account, skip the run.
-2. **The port note, in your lab conversation.** Send: "Go through the five questions with me, one at a time, showing each with Run 2's answer and its citation, and I answer each in a line. For each, would the other AI vendor's answer differ from Run 2's, and what could make it? Where Run 3 ran, did it differ? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
+1. **Run it on the other AI vendor**, the one you did not use for Run 2. Repeat Task 3's run there: a fresh conversation with memory off, `files/run-2.md` attached, Task 3's message, then the key for Runs 2 and 3 and the run prompt from Task 2. Paste its scoring reply into your lab conversation, with "Keep this Run 3 score for Task 5, and reply only that you have it" on the line above it. With one account, skip the run.
+2. **The port note, in your lab conversation.** Send this:
+
+   ```text
+   Go through the five questions with me, one at a time, showing
+   each with Run 2's answer and its citation, and I answer each in
+   a line. For each, would the other AI vendor's answer differ from
+   Run 2's, and what could make it? Where Run 3 ran, did it differ?
+   Then write my answers up as the port note, naming the layer for
+   each change.
+   ```
+
+   The files and the rules did not move, so what could cause a difference?
+
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it in your lab conversation, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** one line on whether any answer changed, and what made it.
@@ -301,7 +317,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
              sources (which record and version, whether every policy
              answer cites it, what it does when the record is
              silent); Memory (what it may hold, what it never holds,
-             the wipe test); Tools (how it reads and changes
+             4.3's wipe test); Tools (how it reads and changes
              anything, whether any direct write stays); Case files,
              a new section (what goes into each invoice's file, and
              where it reads an invoice's status from); Authority
@@ -310,7 +326,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
              be an approval); Triggers (the business events, such as
              an invoice arriving, the cadence, and for each the
              longest delay Brightline accepts before the worker
-             starts). Then show me the whole draft.
+             starts, its tolerance). Then show me the whole draft.
    Inputs:   The attached contract, and my answers. A line that
              needs a layer Brightline does not have yet ends with
              "target, not yet in place".
@@ -318,7 +334,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
              never add, remove or suggest one.
    ```
 
-2. Answer each question in a few words: the week's four failures say what each field must now rule out. The delay you accept for each trigger is your number, and Task 7 asks for it again. A line marked "target, not yet in place" records intent: Part IV builds the controls.
+2. Answer each question in a few words: the week's four failures say what each field must now rule out. The tolerance you accept for each trigger is your number, and Task 7 asks for it again. A line marked "target, not yet in place" records intent: Part IV builds the controls.
 3. When it shows Draft 3, read every line.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -353,7 +369,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
              know of the AI vendors. Every other line is mine.
    ```
 
-2. Read the three lists against your map: an owned thing that stays on the rebuild list is a Task 1 answer to fix. Then give it your sentence for IT.
+2. Read the three lists against your map. An owned thing that stays on the rebuild list is a Task 1 answer to fix: tell it which item moves where, attach Task 1's key again, and send the check prompt. Then give it your sentence for IT.
 3. Answer as it asks. The tolerance is the same as your Role Contract's.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
