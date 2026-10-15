@@ -2,14 +2,15 @@
 
 Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
-In this lab you give an AI a real job, and check each task against its answer key. At the end you run your briefs again on the other AI vendor. It takes about two hours, and 5 minutes a day later. You need a Claude or ChatGPT account.
+In this lab you give an AI a real job, and check each task against its answer key. Then you run your briefs again on the other AI vendor, and have an AI save a file on your own computer. It takes about two and a half hours, and 5 minutes a day later. You need a Claude or ChatGPT account. Every task works on a free plan except Task 8, which needs a desktop app: a paid Claude plan, or ChatGPT on any plan.
 
 **What you will learn:**
 
 - How to delegate one task with a clear finish. You write a brief, and the AI does the work instead of just talking about it.
 - How to check each task against its answer key, the moment it is done.
-- Where an AI's results live, and which of them survive to the next day.
+- Where an AI's results live, and which of them survive to the next day: the machine they ran on, or the record you can open.
 - What changes when the same briefs run on the other AI vendor.
+- What happens when an AI works in a folder on your own computer.
 
 ## Before you start (5 minutes)
 
@@ -28,7 +29,7 @@ Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory
 
 ## How each task works
 
-The whole lab runs in one conversation. Every task is the same loop:
+Tasks 1 to 6 run in one conversation. Every task is the same loop:
 
 1. Send the task's brief, and read the answer.
 2. Download the task's answer key, one click.
@@ -79,7 +80,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **What you do:**
 
-1. Open a new conversation: the whole lab runs in it.
+1. Open a new conversation: Tasks 1 to 6 run in it.
 2. Write your brief. The AI knows nothing of "The job" or your manager, so put the facts it needs under Inputs.
 3. Send the brief, with `inputs.zip` attached.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt). No way to attach it? "If something goes wrong" has the paste path.
@@ -101,7 +102,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **Give your manager:** a spreadsheet file that you have opened.
 
-**Checkpoint.** Checks 4 to 7 passed, and you know where the spreadsheet is: in the chat, on your computer, or both.
+**Checkpoint.** Checks 4 to 7 passed, and you know where the spreadsheet is: in the chat, on your computer, or in a connected app such as Google Drive.
 
 ## Task 3. What is due by Friday (10 minutes)
 
@@ -129,37 +130,73 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **Checkpoint.** Checks 9 and 10 passed.
 
-## Task 5. More work for an AI (5 minutes)
+## Task 5. A doc for the controller (10 minutes)
+
+**Your manager asks:** "Write the Friday list up as a one-page doc for our controller. List each bill due by Friday, October 2, 2026, with its vendor, invoice number and amount, and the total. Don't share it with anyone. I'll send it myself."
+
+**What you do:**
+
+1. Send your brief.
+2. Open the doc. On Claude, it is in the Artifacts section, in the sidebar. On ChatGPT, look in Library. If you got a file to download instead, download it and open it.
+3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Give your manager:** a doc you can open again.
+
+**Checkpoint.** Checks 11 to 13 passed, and you know where the doc is.
+
+## Task 6. More work for an AI (5 minutes)
 
 **Your manager asks:** "What other AP jobs could an AI take off our hands? Name five we do every week or month."
 
 **What you do:**
 
 1. Send your brief. This task needs no files.
-2. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt). This one adds nothing to your score, because five right answers do not exist.
+2. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt). This one adds nothing to your score, because five right answers do not exist.
 
 **Give your manager:** five jobs.
 
 **Checkpoint.** The AI named five jobs, and you compared them with the key's example.
 
-## Task 6. The other AI vendor (15 minutes)
+## Task 7. The other AI vendor (20 minutes)
 
 1. Open a new conversation in the other one, Claude or ChatGPT.
 2. Send your final briefs there, one task at a time, copied unchanged from your first conversation. Attach `inputs.zip` with the first one.
 3. If a run gets stuck, try a setting before you change your words. One that lets the AI run code or create files is a good start.
-4. Ask Task 2's files question, and download its spreadsheet.
+4. Ask Task 2's files question, and download its spreadsheet. Find Task 5's doc.
 5. Check each task the same way: its key, right after its run.
 6. Note every change you had to make, and why.
 
 If you can use only one AI vendor, skip the run. Note what you think would change.
 
-**Checkpoint.** You checked the five briefs on the other AI vendor and noted your changes, or your guess of what would change.
+**Checkpoint.** You checked the six briefs on the other AI vendor and noted your changes, or your guess of what would change.
 
-## Task 7. The next day (5 minutes)
+## Task 8. Save it where you will find it Monday (15 to 25 minutes)
 
-The goal: find out which of your results are still there a day later, and why. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) explains what you find.
+This task runs in a new conversation, in a desktop app, so the AI can save a file on your own computer.
 
-At least a day later, look for every Task 2 spreadsheet you made, and for the AI's text answers. Check the conversations, and your computer. Is each one still there, is it gone, or can't you tell? Then read [the answers for Tasks 6 and 7](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back", at the end of that file.
+**Which app.** If you have a paid Claude plan (Pro or higher), do this task in Claude Desktop first, then again in the ChatGPT desktop app, and compare. The ChatGPT desktop app works on the free plan too. If you are on Claude's free plan, or use only ChatGPT, do it there. If you can use neither desktop app, read [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-8.md) instead.
+
+**Your manager asks:** "Make the Friday spreadsheet again, and this time save it in my Brightline AP folder, as friday-run-2026-10-02.xlsx, and put nothing else in that folder."
+
+**What you do:**
+
+1. Make an empty folder called `Brightline AP`, for example in your Documents folder. Give the AI this folder only, never a bigger one.
+2. Open the desktop app, and start a new conversation with the folder:
+   - In Claude Desktop, start a new conversation in Claude Desktop, and give Claude access to the `Brightline AP` folder. Folders you give it are listed under Trusted folders, in Settings. Keep Desktop open until the task is done: Claude reaches the folder only while it is open.
+   - In the ChatGPT desktop app, choose ChatGPT from the menu at the top left, then Work at the top of the page. Start a new chat, and open the `Brightline AP` folder.
+3. Send your final Task 2 brief, with `inputs.zip` attached, and add your manager's new ask. This conversation knows nothing of the others, so the brief must carry every fact.
+4. Open the `Brightline AP` folder on your computer. Look at what is in it, and open the file.
+5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Give your manager:** the file, in the folder.
+
+**Checkpoint.** Checks 14 and 15 passed, in each app you used.
+
+## Task 9. The next day (5 minutes)
+
+The goal: find out which of your results are still there a day later, and why. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) and [1.5 How both AI vendors realize it](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) explain what you find.
+
+At least a day later, look for each result: every Task 2 spreadsheet you made, Task 5's doc, Task 8's file, and the AI's text answers. Look in the conversations, in the Artifacts section on Claude or Library on ChatGPT, in your `Brightline AP` folder, and on your computer. Is each one still there, is it gone, or can't you tell? Then read [the answers for Tasks 7 and 9](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back", at the end of that file.
 
 **Checkpoint.** You looked for every result, and read the answers.
 
@@ -169,6 +206,7 @@ At least a day later, look for every Task 2 spreadsheet you made, and for the AI
 - **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the check prompt instead.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **Your plan cannot work on files.** Do the tasks anyway, and see what the AI could and could not do.
+- **Your desktop app cannot open the folder.** Save the file in the `Brightline AP` folder yourself, and say so when you check Task 8.
 - **Your plan's daily limit ran out.** Your conversation will still be there tomorrow. Carry on from the next task.
 
 ## Apply it to your vertical
