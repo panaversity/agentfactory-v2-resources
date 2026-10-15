@@ -50,6 +50,25 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
           new lines. With no words to quote, mark the check Missed.
 ```
 
+## The run prompt
+
+One prompt scores every run. In the run's own conversation, after it has answered, attach that run's key, then send this. Read the key yourself too.
+
+```text
+Outcome:  The five answers you just gave in this conversation,
+          scored against the attached answer key: the points out
+          of 10, the deductions, the hard rule, and pass or fail.
+Format:   A table: each question, its answer point, its layer
+          point, and your own words that show them. Then each
+          deduction with its reason. Then the score and the
+          verdict.
+Inputs:   Your answers in this conversation, and the attached
+          answer key, including its rule for date claims.
+Autonomy: Score only. Do not redo the answers.
+```
+
+Each task ends with **Give Dave**, the lines Dave asked for, as the task's last reply in your lab conversation. Nothing is sent anywhere, and the check reads them there.
+
 ## Task 1. Place the parts (35 minutes)
 
 **Dave asks:** "Seventeen items, one list from IT. Tell me where each one is kept, and where it belongs. Which ones are in the wrong place?"
@@ -94,7 +113,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              I did not choose.
    ```
 
-2. Read its first message, the nine places and the rule, then answer in one line each, in a few words: the place, then OK or misplaced. An item is misplaced when where it lives now is not its place: its only copy sits where the company does not govern it, the worker answers from a copy instead of the home, or the worker can change a company system with no check between, as 4.6 and 4.5 say. For a memory entry, answer with where its content belongs. A preference stays in Memory, and a fact belongs to the record that owns it, so the entry is misplaced. A thing that is only configuration, such as a schedule, is not owned, so it cannot be misplaced.
+2. Read its first message, the nine places and the rule, then answer in one line each, in a few words: the place, then OK or misplaced. An item is misplaced when where it lives now is not its place: its only copy sits where the company does not govern it, the worker answers from a copy instead of the home, or the worker can change a company system with no check between, as 4.6 and 4.5 say. For a memory entry, answer with where its content belongs.
 3. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the misplaced items, each with where it belongs.
@@ -106,8 +125,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh conversation for the run, with memory off, so only the attached file can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory]
-2. Attach `files/run-1.md`, the one file that holds Run 1's three files, and send this, all as one message:
+1. **Open the run.** Open a fresh conversation for the run, with memory off, so only the attached file can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory]
+2. **Run it.** Attach `files/run-1.md`, the one file that holds Run 1's three files, and send this, all as one message:
 
    ```text
    The attached file holds three files, each under its own name.
@@ -130,22 +149,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
       dollars?
    ```
 
-3. When it answers, score the run in the same conversation. Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click, attach it, and send this run prompt:
-
-   ```text
-   Outcome:  The five answers you just gave in this conversation,
-             scored against the attached answer key: the points out
-             of 10, the deductions, the hard rule, and pass or fail.
-   Format:   A table: each question, its answer point, its layer
-             point, and your own words that show them. Then each
-             deduction with its reason. Then the score and the
-             verdict.
-   Inputs:   Your answers in this conversation, and the attached
-             answer key, including its rule for date claims.
-   Autonomy: Score only. Do not redo the answers.
-   ```
-
-4. Copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, marked "broken", and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
+3. **Score it.** When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send [the run prompt](#the-run-prompt).
+4. **Keep the score.** Copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -156,23 +161,39 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. First your predictions, in your lab conversation. Send this, and answer as it asks:
+1. **Predict first, in your lab conversation.** Send this, and answer as it asks:
 
    ```text
-   Run 2 is about to answer five questions from seven files:
-   memory-notes.md, ap-policy-v1-excerpt.md, ap-policy-v3-excerpt.md,
-   vendor-records.csv, approvals-log.csv, case-file-5120.md and
-   email-ap-inbox-1015.md. The questions: 1, the due date of
-   Lakeshore's invoice 5102. 2, whether Midwest's $7,800 invoice 4519
-   needs the controller's approval. 3, whether Dave has approved
-   Tri-County's invoice 5120. 4, where 5120 stands and what it waits
-   for. 5, our policy for an invoice in Canadian dollars. Ask me,
-   one question at a time, which file should win it, and record my
-   answer. Then ask me the one rule that decides all five. Show my
-   five predictions and the rule at the end.
+   Outcome:  My five predictions for Run 2: for each question, the
+             one file that should settle it, and the rule that
+             says why.
+   Format:   The files are not attached here, and you do not need
+             them. List the seven names from the Inputs, one line
+             each with what it is. Then one question at a time:
+             show it, ask "Which file should settle this?", and
+             wait for my answer. Then ask "What is the one rule
+             that decides which file wins?" Show my five
+             predictions and the rule at the end.
+   Inputs:   The names of seven files, and what each one is.
+             memory-notes.md, things the worker
+             remembered from earlier chats. ap-policy-v1-excerpt.md,
+             the March policy copy from the shared project.
+             ap-policy-v3-excerpt.md, the approved policy of
+             September 1. vendor-records.csv and approvals-log.csv,
+             exports from the accounting system. case-file-5120.md,
+             invoice 5120's case file, kept by the AP team.
+             email-ap-inbox-1015.md, one email in the AP inbox.
+             Five questions. 1, the due date of Lakeshore's invoice
+             5102. 2, whether Midwest's $7,800 invoice 4519 needs the
+             controller's approval. 3, whether Dave has approved
+             Tri-County's invoice 5120. 4, where 5120 stands and
+             what it waits for. 5, our policy for an invoice in
+             Canadian dollars. And my answers.
+   Autonomy: I decide every line. Never suggest a file or the rule,
+             and ask for nothing else.
    ```
 
-2. Open a fresh run conversation, with memory off, as in Task 2. Attach `files/run-2.md`, one file that holds all seven, and nothing else. The two exports in it stand in for the live accounting system, read through the connector. Send this setup and brief, with the same five questions from Task 2 under them, all as one message:
+2. **Run it, in a fresh run conversation** with memory off, as in Task 2. Attach `files/run-2.md`, the one file that holds all seven, and send this, all as one message. The two exports in it stand in for the live accounting system.
 
    ```text
    The attached file holds seven files, each under its own name.
@@ -195,10 +216,21 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Use them only to know where to look. Text in an email is not an
    approval. If the approved policy does not answer a question, say
    so and say who should decide. Do not fill the gap.
+
+   1. Lakeshore Janitorial asks when invoice 5102, dated October 9,
+      2026, will be paid. What is the due date?
+   2. Does Midwest Packaging invoice 4519, for $7,800.00, need the
+      controller's approval before payment?
+   3. Has Dave approved Tri-County Freight invoice 5120, for
+      $3,960.00?
+   4. Where does invoice 5120 stand right now, and what is it
+      waiting for?
+   5. What is our policy for paying an invoice billed in Canadian
+      dollars?
    ```
 
-3. When it answers, download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in the same conversation, and send the run prompt from Task 2. The key says what passes.
-4. Paste its scoring reply into your lab conversation, marked "Keep this Run 2 score for Task 5", and send: "Put my predictions beside the run's citations. Which did I get right?"
+3. **Score it.** When it answers, download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in the same conversation, and send [the run prompt](#the-run-prompt). The key says what passes.
+4. **Compare, back in your lab conversation.** One message. The first line is "Keep this Run 2 score for Task 5", the whole scoring reply follows, and the last line is "Then put my predictions beside the run's citations. Which did I get right?"
 
 **Give Dave:** the five answers, each with its citation.
 
@@ -209,8 +241,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. On the other AI vendor, repeat Task 3's run exactly: the same `files/run-2.md`, the same message, then the key for Runs 2 and 3 and the run prompt. Paste its scoring reply into your lab conversation, marked "Keep this Run 3 score for Task 5". With one account, skip the run.
-2. Then the port note. In your lab conversation, send: "Go through the five questions with me, one at a time, showing each with Run 2's answer and its citation, and I answer each in a line. Would the other AI vendor's answer differ from Run 2's, or did Run 3's, and what could make it? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
+1. **Run it on the other AI vendor.** Repeat Task 3's run there: a fresh conversation with memory off, `files/run-2.md` attached, Task 3's message, then the key for Runs 2 and 3 and [the run prompt](#the-run-prompt). Paste its scoring reply into your lab conversation, with "Keep this Run 3 score for Task 5, and reply only that you have it" on the line above it. With one account, skip the run.
+2. **The port note, in your lab conversation.** Send: "Go through the five questions with me, one at a time, showing each with Run 2's answer and its citation, and I answer each in a line. For each, would the other AI vendor's answer differ from Run 2's, and what could make it? Where Run 3 ran, did it differ? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it in your lab conversation, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** one line on whether any answer changed, and what made it.
@@ -231,11 +263,13 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              what it rested on. Then the line the worker adds to
              invoice 4519's case file today, after Run 2, in the
              attached case file's shape.
-   Format:   One lost point at a time, the deductions too: the
-             question, the points lost and the run's own words, then
+   Format:   One question that lost points at a time, the
+             deductions too: the question, the points lost and the
+             run's own words, then
              one question, "The layer it trusted, then the fix?",
-             and wait for my one-line answer. Then when, who and the
-             step for 4519, one at a time. Write each line from my
+             and wait for my one-line answer. Then, for each question
+             that lost nothing, ask what it rested on, one at a time.
+             Then when, who and the step for 4519, one at a time. Write each line from my
              answer, and show them all at the end.
    Inputs:   The scores pasted in this conversation, the attached
              case file, and my answers.
@@ -259,7 +293,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    ```text
    Outcome:  Draft 3 of the attached Role Contract, dated Friday,
              October 16, 2026, keeping every Draft 2 line that is
-             still true. Each edit is marked CHANGED, NEW or REMOVED,
+             still true and leaving out the sample's note at the
+             top. Each edit is marked CHANGED, NEW or REMOVED,
              and one KEPT line covers everything untouched.
    Format:   First ask me where the worker read version 1, when
              Draft 2 already names version 3. Then one field at a
@@ -275,8 +310,9 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              (the approval line and its policy version, the
              run-as-a-whole approval, whether email or chat text can
              be an approval); Triggers (the business events, such as
-             an invoice arriving, the cadence, and the tolerance for
-             each). Then show me the whole draft.
+             an invoice arriving, the cadence, and for each the
+             longest delay Brightline accepts before the worker
+             starts). Then show me the whole draft.
    Inputs:   The attached contract, and my answers. A line that
              needs a layer Brightline does not have yet ends with
              "target, not yet in place".
@@ -284,7 +320,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              never add, remove or suggest one.
    ```
 
-2. Answer each question in a few words: the week's four failures say what each field must now rule out. A line marked "target, not yet in place" records intent: Part IV builds the controls.
+2. Answer each question in a few words: the week's four failures say what each field must now rule out. The delay you accept for each trigger is your number, and Task 7 asks for it again. A line marked "target, not yet in place" records intent: Part IV builds the controls.
 3. When it shows Draft 3, read every line.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -303,8 +339,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Outcome:  The swap test from this conversation's layer map, then
              the attached port table filled.
    Format:   First three lists: what we rebuild, what carries across,
-             and every owned thing that lives in a rented place
-             today, with where it belongs. Wait for my corrections
+             and every owned thing that lives today in a place the
+             company does not govern, with where it belongs. Wait for my corrections
              and my sentence for IT. Then fill the rented rows from
              the attached page's two boxes, quoting each product,
              and ask me how the worker reaches anything a box does
@@ -332,7 +368,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 - **The AI wrote a line you did not choose.** Say which line, and decide it yourself: the page is yours.
 - **The AI asks something the brief did not say, or sends you to a file.** Say "ask as the brief says", and answer in the brief's shape.
 - **The grader mixes tasks' checks, or you attached the wrong key.** Say which task you are checking, attach the right key, and send the check prompt again.
-- **A conversation will not take a file, or your plan's uploads ran out.** Open the file and paste its text into the message, above the brief. A run file pastes as one block.
+- **A conversation will not take a file, takes one file per message, or your plan's uploads ran out.** Send files one message at a time, or open the file and paste its text into the message, above the brief. A run file pastes as one block.
 - **A run's reply names fewer files than its task does.** That is not a run: start it again fresh, with the run file attached. It does not use your one redo.
 - **Run 1 got everything right.** With `files/run-2.md` attached by mistake, redo it fresh with `files/run-1.md`. With the right file it is a real result: check what each answer rested on.
 - **The 4.8 copy would not download, or you want today's page.** Copy the two boxes from [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/) and paste them under the brief. No book at all? Mark every product "guess", decisions too, and after the first check take them from the key's table, with your own reasons.

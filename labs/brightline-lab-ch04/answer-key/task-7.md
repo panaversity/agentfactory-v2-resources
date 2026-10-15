@@ -40,6 +40,7 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 - The trigger (9), set only as a time: belongs in the Role Contract as a business event
 - Accept also: the approval record in chat (14), which belongs in DSoR evidence
 - Accept also: the run notes (17), which belong in each invoice's case file in the SSoR
+- Accept also: version 3 in Dave's email (3), which belongs in the KSoR
 
 ### What Dave tells IT
 
@@ -54,8 +55,8 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 | Channel where vendors reach the worker | The AP inbox, read through a connector | The AP inbox, read through an app |
 | Channel where staff ask the worker | Claude Tag in Slack (Team and Enterprise plans, in beta), or the Claude apps | @ChatGPT in Slack or Teams, or the ChatGPT apps |
 | Runtime for the weekly register | A Cowork task, for everyday delegated work | A ChatGPT Work task, for everyday delegated work |
-| Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta) | Agents API (beta) |
-| Memory, and chats not saved to memory | Claude memory, turned off in the "+" menu, or Incognito chats | Saved memories and chat history, Temporary Chat set to Unpersonalized |
+| Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta) | Agents API (beta), or the dot, the always-on agent, which the box names too |
+| Memory, and chats not saved to memory | Claude memory, with a memory for each project; Incognito chats are not saved to memory | Saved memories and chat history, and project-only memory; Temporary Chat set to Unpersonalized |
 | How the worker reaches the KSoR | A custom connector over remote MCP, on any plan (one on Free) | A custom MCP server, added from Plugins: read and fetch on Pro, full support on Business, Enterprise or Edu |
 | Trigger: "every Monday morning" | A weekly scheduled task | A scheduled task |
 | Trigger: "starts within one hour of an invoice arriving" | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
