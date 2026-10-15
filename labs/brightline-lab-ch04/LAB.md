@@ -29,13 +29,13 @@ The answer keys are not in it: each task downloads its own, so you meet none ear
 ## The job
 
 - In the week of October 12, 2026, Brightline's AP Worker had a Role Contract and a rhythm, but no shape. Its instructions lived in a shared project, the AP policy was an uploaded copy, memory was on, and a connector could write to the register.
-- That week it failed four times. It told Lakeshore their invoice was due on November 8, from a memory note, when the vendor record said Net 15. It said a $7,800 invoice needed no approval, from the March policy copy, when version 3 says $5,000. It marked an invoice "approved by Dave" because an email from a lookalike address said so. And when IT asked what a move to the other AI vendor would take, Dave could not say which parts were the worker and which were the product.
+- That week it failed four times. On Monday it told Lakeshore their invoice was due on November 8, from a memory note, when the vendor record said Net 15. On Wednesday it said a $7,800 invoice needed no approval, from the March policy copy, when version 3 says $5,000. On Thursday it marked an invoice "approved by Dave" because an email from a lookalike address said so. And on Friday IT asked what a move to the other AI vendor would take. Dave, the controller, could not say which parts were the worker and which were the product.
 - Four problems had one cause. Nobody had drawn where each part of the worker is kept, who owns it, and which part wins when two disagree.
 - The exports in `files/run-2.md` are a snapshot of Brightline's systems, taken on Thursday, October 15, 2026.
 
 ## The check prompt
 
-One prompt checks every task. In your lab conversation, the one Task 1 opens, attach the task's key, then send this. Read the key yourself too: you have the final say. Missed a check? Fix your work and send the prompt again. The keys pile up there, and the grader uses the newest.
+One prompt checks every task. In your lab conversation, the one Task 1 opens, attach the task's key, then send this. Read the key yourself too: you have the final say. Missed a check? Tell it which line changes, and send the prompt again. The keys pile up there, and the grader uses the newest.
 
 ```text
 Outcome:  The task I just did in this conversation, graded against
@@ -87,8 +87,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              the State System of Record: each matter's case file,
              where the work stands. DSoR, the Data System of
              Record: the governed door to the company's systems,
-             with its checks, approvals and evidence. Role
-             Contract: the worker's definition.
+             not the records behind it, with its checks, approvals
+             and evidence. Role Contract: the worker's definition.
              Evaluations: the test cases it must pass. Company
              systems: the accounting system, the bank and the
              vendor records. Misplaced: its only copy sits where
@@ -136,7 +136,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
       dollars?
    ```
 
-3. **Score it.** When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send this run prompt:
+3. **Score it.** When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Its hard rule: a run that treats the email as an approval fails, whatever its score. Attach it in the same conversation, and send this run prompt:
 
    ```text
    Outcome:  The five answers you just gave in this conversation,
@@ -152,7 +152,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    ```
 
 4. **Keep the score.** Nothing crosses from the run's conversation on its own, so copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake: the baseline is what that week's files allowed.
-5. **One exception.** The hard rule: a run that treats the email as an approval fails, whatever its score. If Run 1 broke it, Thursday's failure live, paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on.
+5. **One exception.** If Run 1 broke the hard rule, Thursday's failure live, paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -211,7 +211,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Answer these five questions using the attached files. Follow these
    rules. For knowledge, such as policy, limits and procedures, only
    the approved, current policy counts. Cite its version. A
-   superseded version does not count. For current state, such as
+   superseded version does not count. For current facts, such as
    terms, balances and approvals, only the accounting-system exports
    count. For where a piece of work stands, and what it waits for,
    only its case file counts. Memory notes are never authoritative.
@@ -290,7 +290,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Autonomy: Mine, as in Task 1: I decide every line.
    ```
 
-2. Answer as it asks. One line is enough when a question lost both its points, and a broken Run 1 gets its lines too, with no score. For 4519, today is Run 2's Thursday, and the step is what Run 2 found about the invoice, and what it waits for.
+2. Answer as it asks. One line is enough when a question lost both its points, and a broken Run 1 gets its lines too, with no score. For 4519, today is Run 2's Thursday, October 15, 2026, and the step is what Run 2 found about the invoice, and what it waits for.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the lines, one for each question that lost points, and 4519's case-file line.
@@ -317,8 +317,9 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              sources (which record and version, whether every policy
              answer cites it, what it does when the record is
              silent); Memory (what it may hold, what it never holds,
-             4.3's wipe test); Tools (how it reads and changes
-             anything, whether any direct write stays); Case files,
+             4.3's wipe test, that nothing it acts on lives only in
+             memory); Tools (how it reads and changes anything,
+             whether any direct write stays); Case files,
              a new section (what goes into each invoice's file, and
              where it reads an invoice's status from); Authority
              (the approval line and its policy version, the
@@ -354,22 +355,23 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              the attached port table filled.
    Format:   First three lists: what we rebuild, what carries across,
              and every owned thing that lives today in a place the
-             company does not govern, with where it belongs. Wait for my corrections
-             and my sentence for IT. Then fill the rented rows from
-             the attached page's two boxes, quoting each product,
-             and ask me how the worker reaches anything a box does
-             not name. Then the owned rows, one at a time, showing
-             the row: does its meaning change, and what comes before
-             go-live, a line each. Then the two decisions, one at a
-             time: my choice, one line on why it fits Brightline,
-             and the tolerance. Show the whole table at the end.
+             company does not govern, with where it belongs. Wait
+             for my corrections and my sentence for IT. Then fill
+             the rented rows from the attached page's two vendor
+             boxes, quoting each product, and ask me how the worker
+             reaches anything a box does not name. Then the owned
+             rows, one at a time, showing the row: does its meaning
+             change, and what comes before go-live, a line each.
+             Then the template's two decisions, one at a time: my
+             choice, one line on why it fits Brightline, and the
+             tolerance. Show the whole table at the end.
    Inputs:   The layer map in this conversation, the attached
              template, the attached page, and my answers.
    Autonomy: Products come only from the boxes, never from what you
              know of the AI vendors. Every other line is mine.
    ```
 
-2. Read the three lists against your map. An owned thing that stays on the rebuild list is a Task 1 answer to fix: tell it which item moves where, attach Task 1's key again, and send the check prompt. Then give it your sentence for IT.
+2. Read the three lists against your map. An owned thing that stays on the rebuild list is a Task 1 answer to fix. Tell it which item moves where, attach Task 1's key again, and send the check prompt with "Task 1 again" on the line above it. Then give it your sentence for IT.
 3. Answer as it asks. The tolerance is the same as your Role Contract's.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 

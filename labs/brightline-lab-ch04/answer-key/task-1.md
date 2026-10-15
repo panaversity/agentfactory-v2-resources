@@ -21,7 +21,7 @@ Accept any answer that gives the same layer and the same reason. For items 5 and
 | 2 | AP policy version 1 | KSoR (retired version) | Owned | **Yes** | A stale copy inside a rented project, two versions out of date. Mark v1 as retired in the KSoR and remove the upload. |
 | 3 | AP policy version 3 | KSoR | Owned | **Yes** | The approved policy sits in an email. It belongs in the KSoR as the one current version, with owner and approval date, and the worker should reach it there. |
 | 4 | Memory: register sort order | Memory | On the line | No | A preference. Wiping it costs a question to Maria, not a wrong answer. |
-| 5 | Memory: Lakeshore Net 30 | Belongs to the company's systems, read through DSoR | Owned | **Yes** | Terms are current state, and the vendor record is the authority. Delete the entry. If anything, remember "terms changed in August, check the vendor record." |
+| 5 | Memory: Lakeshore Net 30 | Belongs to the company's systems, read through DSoR | Owned | **Yes** | Terms are current facts, and the vendor record is the authority. Delete the entry. If anything, remember "terms changed in August, check the vendor record." |
 | 6 | Memory: approval only over $10,000 | Belongs to KSoR | Owned | **Yes** | A limit is knowledge. It is also out of date. Delete it. The approved policy says $5,000. |
 | 7 | Memory: Midwest statement on the 3rd | Memory | On the line | No | Experience about where and when to look. Wiping it loses nothing correct. |
 | 8 | Memory: Tri-County two PDFs | Memory | On the line | No | Experience. Harmless if wiped. |
