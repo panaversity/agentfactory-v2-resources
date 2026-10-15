@@ -10,7 +10,7 @@ Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | `files/inputs.md` | The one file every run attaches. It holds four files under their names: Midwest Packaging's statement dated September 28, 2026, Brightline's register as of September 30, section 7 of the AP policy, and one invoice copy. |
 | `role/ap-worker-role-contract-draft1-sample.md` | A sample Draft 1 of the Role Contract, only for readers who skipped Chapter 2. If you wrote your own, use yours. |
 
-**The lab's date.** Today is Thursday, October 1, 2026. Run 1 is Dave's one line, which gives no date, like everything else it leaves out. Run 2 is the first 10 percent you decide, which does.
+**The lab's date.** Today is Thursday, October 1, 2026, and the job on the page says so.
 
 **The AI gets only what a task names:** in your lab conversation, the inputs file, your contract and the chapter's 3.7 page; in a run, the inputs file; and one answer key at each check. Never upload `LAB.md` or this file.
 
