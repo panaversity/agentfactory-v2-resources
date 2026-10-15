@@ -35,7 +35,7 @@ You need your Role Contract from Chapter 3: Task 6 attaches it, and makes it Dra
 
 ## The check prompt
 
-One prompt checks every task. In your lab conversation, attach the task's key, then send this. Read the key yourself too: you have the final say. Missed a check? Fix your work and send the prompt again. The keys pile up there, and the grader uses the newest.
+One prompt checks every task. In your lab conversation, the one Task 1 opens, attach the task's key, then send this. Read the key yourself too: you have the final say. Missed a check? Fix your work and send the prompt again. The keys pile up there, and the grader uses the newest.
 
 ```text
 Outcome:  The task I just did in this conversation, graded against
@@ -58,7 +58,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
 
 **What you do:**
 
-1. Open a new conversation: the whole lab runs in it, except the runs. Attach `inventory.md`, and send this:
+1. Open a new conversation, your lab conversation: the whole lab runs in it, except the runs, which each get a fresh one. Attach `inventory.md`, and send this:
 
    ```text
    Outcome:  The AP Worker layer map: a table of the 17 items in the
@@ -147,7 +147,8 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
    Autonomy: Score only. Do not redo the answers.
    ```
 
-4. **Keep the score.** Copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
+4. **Keep the score.** Nothing crosses from the run's conversation on its own, so copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake: the baseline is what that week's files allowed.
+5. **One exception.** If the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
