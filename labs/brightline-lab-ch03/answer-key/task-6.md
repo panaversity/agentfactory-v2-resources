@@ -17,10 +17,6 @@ Task 6 carries checks 8 to 10 of the lab's 12.
 Draft 2 keeps every Draft 1 line, narrows one (marked CHANGED), and adds lines (marked NEW). Yours will be worded differently.
 
 ```markdown
-## What it owes
-Responsibilities:
-- NEW: Reconcile the statements of vendors over $5,000 a month, monthly, for the Controller's review (policy 7.1).
-
 ## What bounds it
 Authority:
 - CHANGED: Invoice register: execute (create and update rows) when building the weekly register.

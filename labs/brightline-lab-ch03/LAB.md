@@ -59,7 +59,8 @@ Outcome:  The run reply pasted in this message, scored against the
           and pass or fail where the key sets a bar.
 Format:   A table: each scored line, the points, and the reply's
           words or rows that show it. Then each deduction with its
-          reason. Then the score and the verdict.
+          reason. Then the score, shown as the table's sum less the
+          deductions, and the verdict.
 Inputs:   The run reply in this message, and the attached answer
           key, including its deductions.
 Autonomy: Score only. Do not redo the reconciliation, and grade
@@ -113,8 +114,9 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
    Format:   Ask me one part at a time, and wait for my answer, a
              line each. Intent: the outcome in one sentence, and why,
              by when. Scope: the date the worker treats as today, what
-             is in, what is out, and each input file with what it is
-             the authority for. Authority for this task: show me the
+             is in and as of which dates, what is out, and each input
+             file with what it is the authority for. Authority for
+             this task: show me the
              attached Role Contract's Authority lines first, then ask
              which level each of these gets, observe, recommend,
              draft, execute or escalate: the four files, the register,
@@ -186,7 +188,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              never decide an item for me.
    ```
 
-3. Answer as it asks. A timing item sits on one list and not yet the other, only because of the dates, and needs no action. A real item becomes a recommendation routed to the person the policy names, nothing done yet.
+3. Answer as it asks. A timing item is on the statement or the register but not yet on both, only because of the dates, and needs no action. A real item becomes a recommendation routed to the person the policy names, nothing done yet.
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the real items, each with its evidence and its policy section, for his approval.
@@ -260,8 +262,9 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              too: they go in a new block after the contract,
              "Standing instructions: statement reconciliation", marked
              NEW. Then ask how often Dave reviews this contract, and
-             write the answer as a NEW line under Open questions. Then
-             show me the whole draft.
+             write the answer as a NEW line: under Open questions if
+             it is still a question, beside the Owner line if it is
+             settled. Then show me the whole draft.
    Inputs:   The Role Contract attached in Task 2, the runs, scores
              and review in this conversation, and my answers.
    Autonomy: Mine, as in Task 2: you word the lines I decide, and
@@ -287,7 +290,8 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
    Outcome:  A "Scheduled-task limits" section for the end of Draft
              2: for each limit in Draft 2 that a scheduled
              reconciliation could break, a "never" line or an
-             escalation line alike, how it is held on Claude and on
+             escalation line alike, the register, a credit and the
+             vendor at the least, how it is held on Claude and on
              ChatGPT as a scheduled task, and the strength it
              reaches: impossible, a person decides, or written and
              reviewed. Then, for the two rules that need judgment,
