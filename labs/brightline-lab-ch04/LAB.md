@@ -62,25 +62,37 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              attached inventory, with the layer each one belongs in,
              rented or owned, where it lives now, and whether it is
              misplaced.
-   Format:   First list the 17 item names by number, and ask me
-             which I guess are misplaced. Then one item at a time:
-             its number and name, what it is, and where it lives
-             now, each on its own line, then one question, "The
-             layer it belongs in, then OK or misplaced?" Wait for
-             my one-line answer, and record it. You copy where it
-             lives now from the inventory, and mark rented or owned
-             from the layer: Channels and Runtime are rented, Memory
-             is marked "on the line", and the other layers are
-             owned. At the end show me the whole table, how many are
-             misplaced, and which of my guesses were right.
-   Inputs:   The attached inventory, my answers, and these places:
-             Channels, Runtime, Memory, KSoR, SSoR, DSoR, Role
-             Contract, Evaluations, Company systems. Nothing else.
-   Autonomy: I decide every line in this conversation. Never fill in
-             or suggest one I did not choose.
+   Format:   First show me the nine places from the Inputs, one
+             line each, and the rule for misplaced. Then one item
+             at a time: its number and name, what it is, and where
+             it lives now, each on its own line, then one question,
+             "Which of the nine places does it belong in, and is it
+             OK there or misplaced?" Wait for my one-line answer,
+             and record it. You copy where it lives now from the
+             inventory, and mark rented or owned from the place:
+             Channels and Runtime are rented, Memory is marked "on
+             the line", and the other places are owned. At the end
+             show me the whole table and how many are misplaced.
+   Inputs:   The attached inventory, my answers, and these nine
+             places. Channels: where people and systems reach the
+             worker. Runtime: the AI vendor's app or harness that
+             does the work. Memory: what the worker remembers
+             between chats. KSoR: the approved knowledge, such as
+             the policy and its limits. SSoR: each matter's case
+             file, where the work stands. DSoR: the governed door
+             to the company's systems, with its checks, approvals
+             and evidence. Role Contract: the worker's definition.
+             Evaluations: the test cases it must pass. Company
+             systems: the accounting system, the bank and the
+             vendor records. Misplaced: its only copy sits where
+             the company does not govern it, or the worker answers
+             from a copy instead of the home.
+   Autonomy: I decide every line in this conversation. Explain a
+             place when I ask. Never fill in or suggest an answer
+             I did not choose.
    ```
 
-2. Answer in one line each, in a few words: the layer, then OK or misplaced. An item is misplaced when where it lives now is not its layer: its only copy sits where the company does not govern it, or the worker answers from a copy instead of the home, as 4.6 says. For a memory entry, answer with where its content belongs. A preference stays in Memory, and a fact belongs to the record that owns it, so the entry is misplaced. A thing that is only configuration, such as a schedule, is not owned, so it cannot be misplaced.
+2. Read its first message, the nine places and the rule, then answer in one line each, in a few words: the place, then OK or misplaced. An item is misplaced when where it lives now is not its place: its only copy sits where the company does not govern it, or the worker answers from a copy instead of the home, as 4.6 says. For a memory entry, answer with where its content belongs. A preference stays in Memory, and a fact belongs to the record that owns it, so the entry is misplaced. A thing that is only configuration, such as a schedule, is not owned, so it cannot be misplaced.
 3. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the misplaced items, each with where it belongs.
