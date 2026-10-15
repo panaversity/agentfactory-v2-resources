@@ -2,7 +2,7 @@
 
 The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified in the chapter's 4.8 boxes, 14 October 2026 for Anthropic and 4 October 2026 for OpenAI: check the boxes for anything that has changed.
 
-**How this key is used.** When your swap-test lists and your port table are filled, attach this file in your check conversation, with the lab's check prompt and your lists, your sentence for IT and your table pasted under it.
+**How this key is used.** When your swap-test lists and your port table are filled, attach this file in your lab conversation, and send the lab's check prompt.
 
 ## The checks
 

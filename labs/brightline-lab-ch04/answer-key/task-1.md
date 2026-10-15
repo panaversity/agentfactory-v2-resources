@@ -2,7 +2,7 @@
 
 The answers for Task 1 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your layer map's table is filled, attach this file in your check conversation, with the lab's check prompt and your table pasted under it. The AI marks each check Passed or Missed against the key's table. Read the key yourself too: you have the final say.
+**How this key is used.** When your layer map's table is filled, attach this file in your lab conversation, and send the lab's check prompt. The AI marks each check Passed or Missed against the key's table. Read the key yourself too: you have the final say.
 
 ## The checks
 
