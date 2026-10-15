@@ -14,6 +14,6 @@ Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 
 **The lab's date.** The exports are a snapshot taken on Thursday, October 15, 2026. The Run 2 brief gives that date, so nothing is called overdue because of the day you run the lab. Run 1's one message gives no date, like everything else it leaves out.
 
-**The AI gets only what a task names:** the inventory, your contract and the port table in your lab conversation, the files a run lists, and one answer key at each check. Never upload `LAB.md` or this file.
+**The AI gets only what a task names:** in your lab conversation, the inventory, the case file, your contract, the port table and the chapter's 4.8 page; in a run, the files it lists; and one answer key at each check. Never upload `LAB.md` or this file.
 
 The answer keys are not in the folder. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.
