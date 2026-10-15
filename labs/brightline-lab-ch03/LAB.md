@@ -151,7 +151,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 **What you do:**
 
 1. **Open the run.** A fresh conversation with memory off, outside any project, as in Task 1.
-2. **Run it.** Attach `files/inputs.md`, and send your first 10 percent, the whole page, as the message. The middle 80 is the worker's: do not steer. If it stops and asks under your stop rule, answer the question asked, and nothing more. Note each moment you want to steer, and ask yourself which of [3.3's](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions applies: when none does, that urge is the middle-80 failure, so let it work.
+2. **Run it.** Attach `files/inputs.md`, and send your first 10 percent, the whole page, as the message. The middle 80 is the worker's: do not steer. Most runs finish in one reply with no question. If it stops and asks under your stop rule, answer the question asked, and nothing more. Note each moment you want to steer, and ask yourself which of [3.3's](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions applies: when none does, that urge is the middle-80 failure, so let it work.
 3. **Read what came back**, and leave the conversation as it is: Task 5 scores it. If it changed the register, recorded the credit or wrote to the vendor, it acted beyond the authority you gave it. Tell your lab conversation which line of the first 10 percent allowed that, it rewrites the page, and you run again, fresh.
 
 **Give Dave:** what the run found, with nothing done that you did not allow.
@@ -163,8 +163,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **What you do:**
 
-1. **Bring Run 2 across.** Copy the run's whole reply, and any file it wrote: nothing crosses from its conversation on its own. In your lab conversation, attach `files/inputs.md`, and send one message: the line "Run 2's reply", then the reply.
-2. Send this:
+1. **Bring Run 2 across.** Copy the run's whole reply, and any file it wrote: nothing crosses from its conversation on its own. In your lab conversation, attach `files/inputs.md`, and send one message. Its first line is "Run 2's reply", then the reply, then this:
 
    ```text
    Outcome:  My review of Run 2, in the chapter's order: the flags,
@@ -188,8 +187,8 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              never decide an item for me.
    ```
 
-3. Answer as it asks. A timing item is on the statement or the register but not yet on both, only because of the dates, and needs no action. A real item becomes a recommendation routed to the person the policy names, nothing done yet.
-4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
+2. Answer as it asks. A timing item is on the statement or the register but not yet on both, only because of the dates, and needs no action. A real item becomes a recommendation routed to the person the policy names, nothing done yet.
+3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the real items, each with its evidence and its policy section, for his approval.
 
@@ -201,7 +200,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 **What you do:**
 
 1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), one click. Its hard rule: a run that changed the register, recorded the credit or wrote to the vendor fails, whatever its score. Copy Run 1's whole reply from its conversation, and any file it wrote. In your lab conversation, attach the key, and send one message: the line "Run 1's reply", then the reply, then [the run prompt](#the-run-prompt). Read the score, and the key yourself. Then send: "Put my guesses beside the score. Which did I get right?" A point lost here is the measurement, not a mistake.
-2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md), one click. Attach it, and send one message: the line "Run 2's reply, to score", then Run 2's reply again, then [the run prompt](#the-run-prompt). The key says what passes. If it failed, a lost point usually comes from one line of the first 10 percent, and the key says which: tell your lab conversation which part changes, it rewrites the page, and you run again, fresh, and score that reply the same way, with "Run 2's reply, second try" as its line. A passing run with one point lost is done. The page that passed is your first 10 percent.
+2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md), one click. Attach it, and send one message: the line "Run 2's reply, to score", then Run 2's reply again, then [the run prompt](#the-run-prompt). The key says what passes. If it failed, a lost point usually comes from one line of the first 10 percent, and the key says which: tell your lab conversation which part changes, it rewrites the page, and you run again, fresh, and score that reply the same way, with "Run 2's reply, second try" as its line. A passing run is done, with or without a point lost. The page that passed is your first 10 percent.
 3. **Which part broke.** Send this:
 
    ```text
@@ -293,19 +292,20 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              escalation line alike, the register, a credit and the
              vendor at the least, how it is held on Claude and on
              ChatGPT as a scheduled task, and the strength it
-             reaches: impossible, a person decides, or written and
-             reviewed. Then, for the two rules that need judgment,
+             reaches, one for each part of a line that has two:
+             impossible, a person decides, or written and reviewed.
+             Then, for the two rules that need judgment,
              stopping when a difference cannot be explained, and
              recommending rather than deciding, where each lives and
              which measurable part a setup could check automatically.
              Then when Dave reads the results and checks for a paused
              or missing run. Then any limit we cannot hold yet, as an
              open question.
-   Format:   One limit at a time, from Draft 2's Authority and
-             Escalation in this conversation, "never" lines and
-             escalation lines alike, only those a scheduled
-             reconciliation could break: show it, then what the
-             attached page says
+   Format:   First show me every line of Draft 2's Authority and
+             Escalation, numbered, and ask me which ones a scheduled
+             reconciliation could break: I name them. Then one of
+             those at a time: show it, then what the attached page
+             says
              each AI vendor offers for it, quoted, and ask me three
              things, a line each: on Claude, on ChatGPT, and the
              strength. Then the two judgment rules, one at a time:
