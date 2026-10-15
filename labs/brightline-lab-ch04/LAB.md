@@ -408,7 +408,7 @@ Pick one worker in a role you know. On one page, draw its six layers and the own
 
 ## Ready for Chapter 5
 
-Your work is ready when every check has passed, Run 2 passed its key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. A passed run shows good evidence selection, not that a wrong action would be blocked: Part IV builds those controls. Ask your lab conversation for the layer map, Draft 3 and the port table as files, and keep them in the lab folder: Chapter 5 builds on them. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
+Your work is ready when every check has passed, Run 2 passed its key, the hard rule held in Run 2, and in Run 3 if you ran it, and your vertical's one-page drawing is done. A passed run shows good evidence selection, not that a wrong action would be blocked: Part IV builds those controls. Ask your lab conversation for the layer map, Draft 3 and the port table as files, and keep them in the lab folder. Lab 7 adds its authority section to Draft 3, as Draft 4, and Lab 9's optional port step does on a real job what your port table planned. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch04`.
 
 ## Exam notes
 
