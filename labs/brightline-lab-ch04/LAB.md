@@ -19,8 +19,9 @@ Download [`brightline-lab-ch04.zip`](https://github.com/panaversity/agentfactory
 - `README.md`
 - `LAB.md`: this page, as a file
 - `inventory.md`: Brightline's setup as it stood that week, the 17 items you place
-- `files/run-1/`: the three files Run 1 attaches
-- `files/run-2/`: all seven, for Runs 2 and 3
+- `files/run-1.md`: the one file Run 1 attaches, holding its three files under their names
+- `files/run-2.md`: the one file Runs 2 and 3 attach, holding all seven
+- `files/run-1/` and `files/run-2/`: the same files, loose, for reading and for Task 5
 - `role/`: the port-table template, and a sample Draft 2 of the Role Contract for anyone who skipped Chapter 3
 
 You need your Role Contract from Chapter 3: Task 6 attaches it, and makes it Draft 3. If you start here, the sample stands in.
@@ -85,14 +86,15 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              Evaluations: the test cases it must pass. Company
              systems: the accounting system, the bank and the
              vendor records. Misplaced: its only copy sits where
-             the company does not govern it, or the worker answers
-             from a copy instead of the home.
+             the company does not govern it, the worker answers
+             from a copy instead of the home, or the worker can
+             change a company system with no check between.
    Autonomy: I decide every line in this conversation. Explain a
              place when I ask. Never fill in or suggest an answer
              I did not choose.
    ```
 
-2. Read its first message, the nine places and the rule, then answer in one line each, in a few words: the place, then OK or misplaced. An item is misplaced when where it lives now is not its place: its only copy sits where the company does not govern it, or the worker answers from a copy instead of the home, as 4.6 says. For a memory entry, answer with where its content belongs. A preference stays in Memory, and a fact belongs to the record that owns it, so the entry is misplaced. A thing that is only configuration, such as a schedule, is not owned, so it cannot be misplaced.
+2. Read its first message, the nine places and the rule, then answer in one line each, in a few words: the place, then OK or misplaced. An item is misplaced when where it lives now is not its place: its only copy sits where the company does not govern it, the worker answers from a copy instead of the home, or the worker can change a company system with no check between, as 4.6 and 4.5 say. For a memory entry, answer with where its content belongs. A preference stays in Memory, and a fact belongs to the record that owns it, so the entry is misplaced. A thing that is only configuration, such as a schedule, is not owned, so it cannot be misplaced.
 3. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the misplaced items, each with where it belongs.
@@ -104,13 +106,14 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh conversation for the run, with memory off, so only the attached files can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory] Attach the three files in `files/run-1/`, and nothing else.
+1. Open a fresh conversation for the run, with memory off, so only the attached files can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory] Attach `files/run-1.md`, one file that holds Run 1's three files, and nothing else.
 2. Send this, all as one message, with nothing else in it:
 
    ```text
-   The file memory-notes.md stands for things you remembered from
-   earlier chats. ap-policy-v1-excerpt.md is the copy of Brightline's
-   AP policy in your shared project. email-ap-inbox-1015.md is an
+   The attached file holds three files, each under its own name.
+   memory-notes.md stands for things you remembered from earlier
+   chats. ap-policy-v1-excerpt.md is the copy of Brightline's AP
+   policy in your shared project. email-ap-inbox-1015.md is an
    email in the AP inbox.
 
    Answer these five questions using the attached files.
@@ -153,13 +156,29 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach all seven files in `files/run-2/`. The two exports stand in for the live accounting system, read through the connector. Before you send, tell your lab conversation which file should win each of the five questions, and the one rule that decides it.
-2. Send this setup and brief, with the same five questions from Task 2 under them, all as one message:
+1. First your predictions, in your lab conversation. Send this, and answer as it asks:
 
    ```text
-   The file memory-notes.md stands for things you remembered from
-   earlier chats. The two policy files are copies of Brightline's AP
-   policy. vendor-records.csv and approvals-log.csv are exports from
+   Run 2 is about to answer five questions from seven files:
+   memory-notes.md, ap-policy-v1-excerpt.md, ap-policy-v3-excerpt.md,
+   vendor-records.csv, approvals-log.csv, case-file-5120.md and
+   email-ap-inbox-1015.md. The questions: 1, the due date of
+   Lakeshore's invoice 5102. 2, whether Midwest's $7,800 invoice 4519
+   needs the controller's approval. 3, whether Dave has approved
+   Tri-County's invoice 5120. 4, where 5120 stands and what it waits
+   for. 5, our policy for an invoice in Canadian dollars. Ask me,
+   one question at a time, which file should win it, and record my
+   answer. Then ask me the one rule that decides all five. Show my
+   five predictions and the rule at the end.
+   ```
+
+2. Open a fresh run conversation, with memory off, as in Task 2. Attach `files/run-2.md`, one file that holds all seven, and nothing else. The two exports in it stand in for the live accounting system, read through the connector. Send this setup and brief, with the same five questions from Task 2 under them, all as one message:
+
+   ```text
+   The attached file holds seven files, each under its own name.
+   memory-notes.md stands for things you remembered from earlier
+   chats. The two policy files are copies of Brightline's AP policy.
+   vendor-records.csv and approvals-log.csv are exports from
    Brightline's accounting system. case-file-5120.md is the case file
    for invoice 5120, kept by hand by the AP team. email-ap-inbox-1015.md
    is an email in the AP inbox.
@@ -190,7 +209,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the key for Runs 2 and 3 and the run prompt. Paste its scoring reply into your lab conversation, marked "Keep this Run 3 score for Task 5". With one account, skip the run.
+1. On the other AI vendor, repeat Task 3's run exactly: the same `files/run-2.md`, the same message, then the key for Runs 2 and 3 and the run prompt. Paste its scoring reply into your lab conversation, marked "Keep this Run 3 score for Task 5". With one account, skip the run.
 2. Then the port note. In your lab conversation, send: "Go through the five questions with me, one at a time, showing each with Run 2's answer and its citation, and I answer each in a line. Would the other AI vendor's answer differ from Run 2's, or did Run 3's, and what could make it? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it in your lab conversation, and send [the check prompt](#the-check-prompt).
 
@@ -278,7 +297,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Download [the 4.8 page as a file](https://agentfactory2.panaversity.org/md/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors.md), one click. In your lab conversation, attach it with `role/port-table.md`, and send this:
+1. Download [the 4.8 page as a file](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-page-4-8.md), one click: a copy taken when the lab was last released, and [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/) itself is the live page. In your lab conversation, attach it with `role/port-table.md`, and send this:
 
    ```text
    Outcome:  The swap test from this conversation's layer map, then
@@ -313,10 +332,10 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 - **The AI wrote a line you did not choose.** Say which line, and decide it yourself: the page is yours.
 - **The AI asks something the brief did not say, or sends you to a file.** Say "ask as the brief says", and answer in the brief's shape.
 - **The grader mixes tasks' checks, or you attached the wrong key.** Say which task you are checking, attach the right key, and send the check prompt again.
-- **A conversation cannot take its files, or the app takes one file per message.** Send them one message at a time, or paste each file's text into one message, its name on the line above it, then the brief.
-- **A run got fewer files than its task names.** That is not a run: start it again fresh. It does not use your one redo.
-- **Run 1 got everything right.** With `files/run-2/` attached by mistake, redo it fresh with `files/run-1/` only. With the right three files it is a real result: check what each answer rested on.
-- **The 4.8 file shows as text instead of downloading.** Save it as a file, or copy the two boxes from [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/) and paste them under the brief. No book at all? Mark every product "guess", decisions too, and after the first check take them from the key's table, with your own reasons.
+- **A conversation will not take a file, or your plan's uploads ran out.** Open the file and paste its text into the message, above the brief. A run file pastes as one block.
+- **A run's reply names fewer files than its task does.** That is not a run: start it again fresh, with the run file attached. It does not use your one redo.
+- **Run 1 got everything right.** With `files/run-2.md` attached by mistake, redo it fresh with `files/run-1.md`. With the right file it is a real result: check what each answer rested on.
+- **The 4.8 copy would not download, or you want today's page.** Copy the two boxes from [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/) and paste them under the brief. No book at all? Mark every product "guess", decisions too, and after the first check take them from the key's table, with your own reasons.
 - **Your plan's daily limit ran out.** Your folder keeps everything. Carry on tomorrow, from the next task.
 
 ## Apply it to your vertical (15 minutes)
