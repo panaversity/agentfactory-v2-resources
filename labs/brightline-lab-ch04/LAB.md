@@ -31,6 +31,7 @@ The answer keys are not in it: each task downloads its own, so you meet none ear
 - In the week of October 12, 2026, Brightline's AP Worker had a Role Contract and a rhythm, but no shape. Its instructions lived in a shared project, the AP policy was an uploaded copy, memory was on, and a connector could write to the register.
 - That week it failed four times. On Monday it told Lakeshore their invoice was due on November 8, from a memory note, when the vendor record said Net 15. On Wednesday it said a $7,800 invoice needed no approval, from the March policy copy, when version 3 says $5,000. On Thursday it marked an invoice "approved by Dave" because an email from a lookalike address said so. And on Friday IT asked what a move to the other AI vendor would take. Dave, the controller, could not say which parts were the worker and which were the product.
 - Four problems had one cause. Nobody had drawn where each part of the worker is kept, who owns it, and which part wins when two disagree.
+- Three runs test it. Run 1 gives the worker only what it could reach that week. Run 2 puts every source in its place, with one rule for which wins. Run 3 asks whether the other AI vendor gives the same answers.
 - The exports in `files/run-2.md` are a snapshot of Brightline's systems, taken on Thursday, October 15, 2026.
 
 ## The check prompt
@@ -48,6 +49,24 @@ Inputs:   The newest answer key attached in this conversation, only
           its checks, and this task's work in this conversation.
 Autonomy: Grade only. Do not rewrite the work, and do not suggest
           new lines. With no words to quote, mark the check Missed.
+```
+
+## The run prompt
+
+One prompt scores every run, in your lab conversation too. Paste the run's whole reply there, with its name on the line above it. Attach that run's key, and send this under the paste, all in one message. Read the key yourself too.
+
+```text
+Outcome:  The run reply pasted in this message, scored against the
+          attached answer key: the points out of 10, the deductions,
+          the hard rule, and pass or fail.
+Format:   A table: each question, its answer point, its layer
+          point, and the reply's words that show them. Then each
+          deduction with its reason. Then the score and the
+          verdict.
+Inputs:   The run reply in this message, and the attached answer
+          key, including its rule for date claims.
+Autonomy: Score only. Do not redo the answers, and grade nothing
+          but that reply.
 ```
 
 **Give Dave**, under each task, names the lines Dave asked for, which the task's work leaves in your lab conversation. Nothing is sent anywhere, and the check reads them there.
@@ -136,23 +155,9 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
       dollars?
    ```
 
-3. **Score it.** When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Its hard rule: a run that treats the email as an approval fails, whatever its score. Attach it in the same conversation, and send this run prompt:
-
-   ```text
-   Outcome:  The five answers you just gave in this conversation,
-             scored against the attached answer key: the points out
-             of 10, the deductions, the hard rule, and pass or fail.
-   Format:   A table: each question, its answer point, its layer
-             point, and your own words that show them. Then each
-             deduction with its reason. Then the score and the
-             verdict.
-   Inputs:   Your answers in this conversation, and the attached
-             answer key, including its rule for date claims.
-   Autonomy: Score only. Do not redo the answers.
-   ```
-
-4. **Keep the score.** Nothing crosses from the run's conversation on its own, so copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake: the baseline is what that week's files allowed.
-5. **One exception.** If Run 1 broke the hard rule, Thursday's failure live, paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on.
+3. **Score it, in your lab conversation.** Copy the run's whole reply: nothing crosses from its conversation on its own. Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Its hard rule: a run that treats the email as an approval fails, whatever its score. In your lab conversation, attach the key, and send one message: the line "Run 1's reply", then the reply, then [the run prompt](#the-run-prompt).
+4. **Read the score, and the key yourself.** Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake: the baseline is what that week's files allowed.
+5. **One exception.** If Run 1 broke the hard rule, Thursday's failure live, redo Run 1 once, fresh, and score that reply the same way, with "Run 1's reply, second try" as its line. A second break stands, and you go on.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -231,8 +236,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
       dollars?
    ```
 
-3. **Score it.** When it answers, download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in the same conversation, and send the run prompt from Task 2. The key says what passes.
-4. **Compare, back in your lab conversation.** One message. The first line is "Keep this Run 2 score for Task 5", the whole scoring reply follows, and the last line is "Then put my predictions beside the run's citations. Which did I get right?"
+3. **Score it, in your lab conversation.** Copy the run's whole reply. Download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in your lab conversation, and send one message: the line "Run 2's reply", then the reply, then [the run prompt](#the-run-prompt). The key says what passes.
+4. **Compare.** Send: "Put my predictions beside Run 2's citations. Which did I get right?"
 
 **Give Dave:** the five answers, each with its citation.
 
@@ -243,7 +248,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. **Run it on the other AI vendor**, the one you did not use for Run 2. Repeat Task 3's run there: a fresh conversation with memory off, `files/run-2.md` attached, Task 3's message, then the key for Runs 2 and 3 and the run prompt from Task 2. Paste its scoring reply into your lab conversation, with "Keep this Run 3 score for Task 5, and reply only that you have it" on the line above it. With one account, skip the run.
+1. **Run it on the other AI vendor**, the one you did not use for Run 2. Repeat Task 3's run there: a fresh conversation with memory off, `files/run-2.md` attached, Task 3's message. Then score it in your lab conversation as in Task 3, with "Run 3's reply" as its line. With one account, skip the run.
 2. **The port note, in your lab conversation.** Send this:
 
    ```text
@@ -271,7 +276,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 1. In your lab conversation, attach `files/case-file-5120.md`, and send this:
 
    ```text
-   Outcome:  One line for each point lost in any run pasted above,
+   Outcome:  One line for each point lost in any run scored above,
              deductions included: the layer the run wrongly trusted,
              and what fixed it. For a question that lost nothing,
              what it rested on. Then the line the worker adds to
@@ -285,12 +290,12 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              that lost nothing, ask what it rested on, one at a time.
              Then when, who and the step for 4519, one at a time. Write each line from my
              answer, and show them all at the end.
-   Inputs:   The scores pasted in this conversation, the attached
+   Inputs:   The run scores in this conversation, the attached
              case file, and my answers.
    Autonomy: Mine, as in Task 1: I decide every line.
    ```
 
-2. Answer as it asks. One line is enough when a question lost both its points, and a broken Run 1 gets its lines too, with no score. For 4519, today is Run 2's Thursday, October 15, 2026, and the step is what Run 2 found about the invoice, and what it waits for.
+2. Answer as it asks. One line is enough when a question lost both its points, and a broken Run 1 gets its lines too. For 4519, today is Run 2's Thursday, October 15, 2026, and the step is what Run 2 found about the invoice, and what it waits for.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the lines, one for each question that lost points, and 4519's case-file line.
