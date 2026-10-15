@@ -80,7 +80,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              or suggest one I did not choose.
    ```
 
-2. Answer in one line each, in a few words: the layer, then OK or misplaced. An item is misplaced when where it lives now is not its layer: its only copy sits where the company does not govern it, or the worker answers from a copy instead of the home, as 4.6 says.
+2. Answer in one line each, in a few words: the layer, then OK or misplaced. An item is misplaced when where it lives now is not its layer: its only copy sits where the company does not govern it, or the worker answers from a copy instead of the home, as 4.6 says. For a memory entry, answer with where its content belongs. A preference stays in Memory, and a fact belongs to the record that owns it, so the entry is misplaced. A thing that is only configuration, such as a schedule, is not owned, so it cannot be misplaced.
 3. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the misplaced items, each with where it belongs.
@@ -141,7 +141,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach all seven files in `files/run-2/`. Before you send, tell your lab conversation which file should win each of the five questions, and the one rule that decides it.
+1. Open a fresh run conversation, with memory off. Attach all seven files in `files/run-2/`. The two exports stand in for the live accounting system, read through the connector. Before you send, tell your lab conversation which file should win each of the five questions, and the one rule that decides it.
 2. Send this setup and brief, with the same five questions from Task 2 under them, all as one message:
 
    ```text
