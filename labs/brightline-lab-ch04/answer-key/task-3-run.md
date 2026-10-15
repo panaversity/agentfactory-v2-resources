@@ -2,7 +2,7 @@
 
 The answers for Run 2 and Run 3, in Tasks 3 and 4 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** After Run 2 or Run 3 has answered, attach this file in the run's own conversation, with the lab's run prompt. The AI scores the answers it just gave, and you compare with this key yourself. You have the final say. Each question is worth 2 points: 1 for the correct answer, and 1 for resting it on the right layer, with a citation, a correct flag or a clear abstention.
+**How this key is used.** After Run 2 or Run 3 has answered, paste its whole reply into your lab conversation, attach this file there, and send the lab's run prompt under the paste. The AI scores that reply, and you compare with this key yourself. You have the final say. Each question is worth 2 points: 1 for the correct answer, and 1 for resting it on the right layer, with a citation, a correct flag or a clear abstention.
 
 ## The scoring, out of 10
 
