@@ -66,6 +66,9 @@ jobs:
           curl -fsSL https://agentfactory2.panaversity.org/md/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors.md \
             -o dist/brightline-lab-ch04-page-4-8.md
           head -c 400 dist/brightline-lab-ch04-page-4-8.md
+          curl -fsSL https://agentfactory2.panaversity.org/md/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors.md \
+            -o dist/brightline-lab-ch03-page-3-7.md
+          head -c 400 dist/brightline-lab-ch03-page-3-7.md
 
       - name: Publish the zips as the latest release
         env:
