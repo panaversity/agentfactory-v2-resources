@@ -55,28 +55,33 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Read the item names in `inventory.md`. Before the details, guess which items are in the wrong layer. Keep your guess in mind.
-2. Open a new conversation: the whole lab runs in it, except the runs. Attach `inventory.md`, and send this:
+1. Open a new conversation: the whole lab runs in it, except the runs. Attach `inventory.md`, and send this:
 
    ```text
    Outcome:  The AP Worker layer map: a table of the 17 items in the
              attached inventory, with the layer each one belongs in,
              rented or owned, where it lives now, and whether it is
              misplaced.
-   Format:   Ask me the items one at a time, by number, and wait for
-             each answer. I give the layer it belongs in, and whether
-             it is misplaced. You copy where it lives now from the
-             inventory, and mark rented or owned from the layer:
-             Channels and Runtime are rented, Memory sits on the
-             line, and the other layers are owned. Then show me the
-             whole table, and how many are misplaced.
-   Inputs:   The attached inventory, and my answers. Nothing else.
+   Format:   First list the 17 item names by number, and ask me
+             which I guess are misplaced. Then one item at a time:
+             its number and name, what it is, and where it lives
+             now, each on its own line, then one question, "The
+             layer it belongs in, then OK or misplaced?" Wait for
+             my one-line answer, and record it. You copy where it
+             lives now from the inventory, and mark rented or owned
+             from the layer: Channels and Runtime are rented, Memory
+             is marked "on the line", and the other layers are
+             owned. At the end show me the whole table, how many are
+             misplaced, and which of my guesses were right.
+   Inputs:   The attached inventory, my answers, and these places:
+             Channels, Runtime, Memory, KSoR, SSoR, DSoR, Role
+             Contract, Evaluations, Company systems. Nothing else.
    Autonomy: I decide every line in this conversation. Never fill in
              or suggest one I did not choose.
    ```
 
-3. Answer as it asks, in a few words each. The layers are Channels, Runtime, Memory, KSoR (what it knows), SSoR (each matter's case file) and DSoR (controls, approvals and evidence), and the Role Contract, Evaluations and Company systems count as places too. An item is misplaced when where it lives now is not its layer.
-4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
+2. Answer in one line each, in a few words: the layer, then OK or misplaced. An item is misplaced when where it lives now is not its layer: its only copy sits where the company does not govern it, or the worker answers from a copy instead of the home, as 4.6 says. For a memory entry, answer with where its content belongs. A preference stays in Memory, and a fact belongs to the record that owns it, so the entry is misplaced. A thing that is only configuration, such as a schedule, is not owned, so it cannot be misplaced.
+3. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the misplaced items, each with where it belongs.
 
@@ -136,7 +141,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh run conversation, with memory off. Attach all seven files in `files/run-2/`. Before you send, tell your lab conversation which file should win each of the five questions, and the one rule that decides it.
+1. Open a fresh run conversation, with memory off. Attach all seven files in `files/run-2/`. The two exports stand in for the live accounting system, read through the connector. Before you send, tell your lab conversation which file should win each of the five questions, and the one rule that decides it.
 2. Send this setup and brief, with the same five questions from Task 2 under them, all as one message:
 
    ```text
@@ -174,7 +179,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 **What you do:**
 
 1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the key for Runs 2 and 3 and the run prompt. Paste its scoring reply into your lab conversation, marked "Keep this Run 3 score for Task 5". With one account, skip the run.
-2. Then the port note. In your lab conversation, send: "Go through the five questions with me, one at a time, and I answer each in a line. Would the other AI vendor's answer differ from Run 2's, or did Run 3's, and what could make it? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
+2. Then the port note. In your lab conversation, send: "Go through the five questions with me, one at a time, showing each with Run 2's answer and its citation, and I answer each in a line. Would the other AI vendor's answer differ from Run 2's, or did Run 3's, and what could make it? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it in your lab conversation, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** one line on whether any answer changed, and what made it.
@@ -195,10 +200,12 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              what it rested on. Then the line the worker adds to
              invoice 4519's case file today, after Run 2, in the
              attached case file's shape.
-   Format:   One lost point at a time, the deductions too, ask me
-             the layer it trusted and the fix. Then when, who and
-             the step for 4519. Write each line from my answer, and
-             show them all at the end.
+   Format:   One lost point at a time, the deductions too: the
+             question, the points lost and the run's own words, then
+             one question, "The layer it trusted, then the fix?",
+             and wait for my one-line answer. Then when, who and the
+             step for 4519, one at a time. Write each line from my
+             answer, and show them all at the end.
    Inputs:   The scores pasted in this conversation, the attached
              case file, and my answers.
    Autonomy: Mine, as in Task 1: I decide every line.
@@ -225,7 +232,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              and one KEPT line covers everything untouched.
    Format:   First ask me where the worker read version 1, when
              Draft 2 already names version 3. Then one field at a
-             time, a question or two each, and wait: Knowledge
+             time: show me its Draft 2 lines, ask a question or two,
+             and wait for my answer, a line each: Knowledge
              sources (which record and version, whether every policy
              answer cites it, what it does when the record is
              silent); Memory (what it may hold, what it never holds,
@@ -269,8 +277,11 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              and my sentence for IT. Then fill the rented rows from
              the attached page's two boxes, quoting each product,
              and ask me how the worker reaches anything a box does
-             not name. Then the owned rows and the two decisions,
-             one at a time. Show the whole table at the end.
+             not name. Then the owned rows, one at a time, showing
+             the row: does its meaning change, and what comes before
+             go-live, a line each. Then the two decisions, one at a
+             time: my choice, one line on why it fits Brightline,
+             and the tolerance. Show the whole table at the end.
    Inputs:   The layer map in this conversation, the attached
              template, the attached page, and my answers.
    Autonomy: Products come only from the boxes, never from what you
@@ -278,7 +289,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    ```
 
 2. Read the three lists against your map: an owned thing that stays on the rebuild list is a Task 1 answer to fix. Then give it your sentence for IT.
-3. Decide the owned rows: does the meaning change, and what work comes before go-live. Then the two decisions, each with one line on why it fits Brightline, and the tolerance the same as your Role Contract's.
+3. Answer as it asks. The tolerance is the same as your Role Contract's.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** one sentence for IT, in your own words, saying what the worker is, what stays, and what you rebuild, and the table IT asked for on Friday.
@@ -288,6 +299,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 - **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the prompt instead.
 - **The AI wrote a line you did not choose.** Say which line, and decide it yourself: the page is yours.
+- **The AI asks something the brief did not say, or sends you to a file.** Say "ask as the brief says", and answer in the brief's shape.
 - **The grader mixes tasks' checks, or you attached the wrong key.** Say which task you are checking, attach the right key, and send the check prompt again.
 - **A conversation cannot take its files, or the app takes one file per message.** Send them one message at a time, or paste each file's text into one message, its name on the line above it, then the brief.
 - **A run got fewer files than its task names.** That is not a run: start it again fresh. It does not use your one redo.
