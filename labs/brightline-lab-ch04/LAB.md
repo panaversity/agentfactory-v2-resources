@@ -50,23 +50,6 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
           new lines. With no words to quote, mark the check Missed.
 ```
 
-## The run prompt
-
-One prompt scores every run. In the run's own conversation, after it has answered, attach that run's key, then send this. Read the key yourself too.
-
-```text
-Outcome:  The five answers you just gave in this conversation,
-          scored against the attached answer key: the points out
-          of 10, the deductions, the hard rule, and pass or fail.
-Format:   A table: each question, its answer point, its layer
-          point, and your own words that show them. Then each
-          deduction with its reason. Then the score and the
-          verdict.
-Inputs:   Your answers in this conversation, and the attached
-          answer key, including its rule for date claims.
-Autonomy: Score only. Do not redo the answers.
-```
-
 Each task ends with **Give Dave**, the lines Dave asked for, as the task's last reply in your lab conversation. Nothing is sent anywhere, and the check reads them there.
 
 ## Task 1. Place the parts (35 minutes)
@@ -149,8 +132,22 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
       dollars?
    ```
 
-3. **Score it.** When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send [the run prompt](#the-run-prompt).
-4. **Keep the score.** Copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
+3. **Score it.** When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send this run prompt:
+
+   ```text
+   Outcome:  The five answers you just gave in this conversation,
+             scored against the attached answer key: the points out
+             of 10, the deductions, the hard rule, and pass or fail.
+   Format:   A table: each question, its answer point, its layer
+             point, and your own words that show them. Then each
+             deduction with its reason. Then the score and the
+             verdict.
+   Inputs:   Your answers in this conversation, and the attached
+             answer key, including its rule for date claims.
+   Autonomy: Score only. Do not redo the answers.
+   ```
+
+4. **Keep the score.** Copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5, and reply only that you have it" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, with "broken" added to the line above it, and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -229,7 +226,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
       dollars?
    ```
 
-3. **Score it.** When it answers, download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in the same conversation, and send [the run prompt](#the-run-prompt). The key says what passes.
+3. **Score it.** When it answers, download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in the same conversation, and send the run prompt from Task 2. The key says what passes.
 4. **Compare, back in your lab conversation.** One message. The first line is "Keep this Run 2 score for Task 5", the whole scoring reply follows, and the last line is "Then put my predictions beside the run's citations. Which did I get right?"
 
 **Give Dave:** the five answers, each with its citation.
@@ -241,7 +238,7 @@ Each task ends with **Give Dave**, the lines Dave asked for, as the task's last 
 
 **What you do:**
 
-1. **Run it on the other AI vendor.** Repeat Task 3's run there: a fresh conversation with memory off, `files/run-2.md` attached, Task 3's message, then the key for Runs 2 and 3 and [the run prompt](#the-run-prompt). Paste its scoring reply into your lab conversation, with "Keep this Run 3 score for Task 5, and reply only that you have it" on the line above it. With one account, skip the run.
+1. **Run it on the other AI vendor.** Repeat Task 3's run there: a fresh conversation with memory off, `files/run-2.md` attached, Task 3's message, then the key for Runs 2 and 3 and the run prompt from Task 2. Paste its scoring reply into your lab conversation, with "Keep this Run 3 score for Task 5, and reply only that you have it" on the line above it. With one account, skip the run.
 2. **The port note, in your lab conversation.** Send: "Go through the five questions with me, one at a time, showing each with Run 2's answer and its citation, and I answer each in a line. For each, would the other AI vendor's answer differ from Run 2's, and what could make it? Where Run 3 ran, did it differ? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it in your lab conversation, and send [the check prompt](#the-check-prompt).
 
