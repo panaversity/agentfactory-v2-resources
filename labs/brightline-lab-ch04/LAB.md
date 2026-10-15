@@ -67,15 +67,15 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              each answer. I give the layer it belongs in, and whether
              it is misplaced. You copy where it lives now from the
              inventory, and mark rented or owned from the layer:
-             Channels and Runtime are rented, Memory sits on the
-             line, and the other layers are owned. Then show me the
-             whole table, and how many are misplaced.
+             Channels and Runtime are rented, Memory is marked "on
+             the line", and the other layers are owned. Then show
+             me the whole table, and how many are misplaced.
    Inputs:   The attached inventory, and my answers. Nothing else.
    Autonomy: I decide every line in this conversation. Never fill in
              or suggest one I did not choose.
    ```
 
-3. Answer as it asks, in a few words each. The layers are Channels, Runtime, Memory, KSoR (what it knows), SSoR (each matter's case file) and DSoR (controls, approvals and evidence), and the Role Contract, Evaluations and Company systems count as places too. An item is misplaced when where it lives now is not its layer.
+3. Answer as it asks, in a few words each. The layers are Channels, Runtime, Memory, KSoR (what it knows), SSoR (each matter's case file) and DSoR (controls, approvals and evidence), and the Role Contract, Evaluations and Company systems count as places too. An item is misplaced when where it lives now is not its layer: its only copy sits where the company does not govern it, or the worker answers from a copy instead of the home, as 4.6 says.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the misplaced items, each with where it belongs.
