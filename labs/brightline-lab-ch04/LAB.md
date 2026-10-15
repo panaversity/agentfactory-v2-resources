@@ -165,13 +165,15 @@ Autonomy: Score only. Do not redo the answers.
    Outcome:  My five predictions for Run 2: for each question, the
              one file that should settle it, and the rule that
              says why.
-   Format:   Show the seven files, one line each, from the Inputs.
-             Then one question at a time: show it, ask "Which file
-             should settle this?", and wait for my answer. Then
-             ask "What is the one rule that decides which file
-             wins?" Show my five predictions and the rule at the
-             end.
-   Inputs:   Seven files. memory-notes.md, things the worker
+   Format:   The files are not attached here, and you do not need
+             them. List the seven names from the Inputs, one line
+             each with what it is. Then one question at a time:
+             show it, ask "Which file should settle this?", and
+             wait for my answer. Then ask "What is the one rule
+             that decides which file wins?" Show my five
+             predictions and the rule at the end.
+   Inputs:   The names of seven files, and what each one is.
+             memory-notes.md, things the worker
              remembered from earlier chats. ap-policy-v1-excerpt.md,
              the March policy copy from the shared project.
              ap-policy-v3-excerpt.md, the approved policy of
@@ -185,7 +187,8 @@ Autonomy: Score only. Do not redo the answers.
              Tri-County's invoice 5120. 4, where 5120 stands and
              what it waits for. 5, our policy for an invoice in
              Canadian dollars. And my answers.
-   Autonomy: I decide every line. Never suggest a file or the rule.
+   Autonomy: I decide every line. Never suggest a file or the rule,
+             and ask for nothing else.
    ```
 
 2. **Run it, in a fresh run conversation** with memory off, as in Task 2. Attach `files/run-2.md`, the one file that holds all seven, and send this, all as one message. The two exports in it stand in for the live accounting system.
