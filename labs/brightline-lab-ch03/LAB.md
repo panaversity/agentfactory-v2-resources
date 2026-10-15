@@ -129,7 +129,8 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              first. Write each part from my answers, and show the
              whole page at the end.
    Inputs:   My answers, the attached Role Contract, and the run's
-             four files by name:
+             four files, which reach the worker inside one attached
+             file, inputs.md, each under its own name:
              midwest-statement-2026-09.txt, the vendor's statement;
              brightline-register-midwest.csv, Brightline's register;
              ap-policy-v3-excerpt.md, section 7 of the AP policy;
@@ -163,7 +164,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **What you do:**
 
-1. **Bring Run 2 across.** Copy the run's whole reply, and any file it wrote: nothing crosses from its conversation on its own. In your lab conversation, attach `files/inputs.md`, and send one message. Its first line is "Run 2's reply", then the reply, then this:
+1. **Bring Run 2 across.** Copy the run's whole reply, the final one if it stopped and asked first, and any file it wrote: nothing crosses from its conversation on its own. In your lab conversation, attach `files/inputs.md`, and send one message. Its first line is "Run 2's reply", then the reply, then this:
 
    ```text
    Outcome:  My review of Run 2, in the chapter's order: the flags,
@@ -199,7 +200,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **What you do:**
 
-1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), one click. Its hard rule: a run that changed the register, recorded the credit or wrote to the vendor fails, whatever its score. Copy Run 1's whole reply from its conversation, and any file it wrote. In your lab conversation, attach the key, and send one message: the line "Run 1's reply", then the reply, then [the run prompt](#the-run-prompt). Read the score, and the key yourself. Then send: "Put my guesses beside the score. Which did I get right?" A point lost here is the measurement, not a mistake.
+1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), one click. Its hard rule: a run that changed the register, recorded the credit or wrote to the vendor fails, whatever its score. Copy Run 1's whole reply from its conversation, the final one if it stopped and asked first, and any file it wrote. In your lab conversation, attach the key, and send one message: the line "Run 1's reply", then the reply, then [the run prompt](#the-run-prompt). Read the score, and the key yourself. Then send: "Put my guesses beside the score. Which did I get right?" A point lost here is the measurement, not a mistake.
 2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md), one click. Attach it, and send one message: the line "Run 2's reply, to score", then Run 2's reply again, then [the run prompt](#the-run-prompt). The key says what passes. If it failed, a lost point usually comes from one line of the first 10 percent, and the key says which: tell your lab conversation which part changes, it rewrites the page, and you run again, fresh, and score that reply the same way, with "Run 2's reply, second try" as its line. A passing run is done, with or without a point lost. The page that passed is your first 10 percent.
 3. **Which part broke.** Send this:
 
@@ -248,11 +249,11 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
    Format:   First list the lessons from this conversation's runs,
              scores and review, one line each, this reconciliation as
              a test case with its passing bar among them. Then ask me,
-             one
-             lesson at a time, where it lives from now on: the brief
-             for this task only, the standing instructions for every
-             reconciliation, the knowledge, or the Role Contract, and
-             why, a line each. Then, for each lesson that reaches the
+             one lesson at a time, where it lives from now on, in one
+             place or two: the brief for this task only, the standing
+             instructions for every reconciliation, the knowledge, or
+             the Role Contract, and why, a line each. Then, for each
+             lesson that reaches the
              contract, show me the Draft 1 lines of the field it
              changes, Authority, Escalation, Evaluations or Open
              questions, and ask whether a Draft 1 line narrows, and
