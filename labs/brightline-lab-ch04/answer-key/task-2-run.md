@@ -2,7 +2,7 @@
 
 The answers for Run 1, in Task 2 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Runs 2 and 3 have their own key, which you download at Task 3.
 
-**How this key is used.** After Run 1 has answered, attach this file in the run's own conversation, with the lab's run prompt. The AI scores the answers it just gave, and you compare with this key yourself. You have the final say. Each question is worth 2 points: 1 for the correct answer, and 1 for resting it on the right layer, with a citation, a correct flag or a clear abstention.
+**How this key is used.** After Run 1 has answered, paste its whole reply into your lab conversation, attach this file there, and send the lab's run prompt under the paste. The AI scores that reply, and you compare with this key yourself. You have the final say. Each question is worth 2 points: 1 for the correct answer, and 1 for resting it on the right layer, with a citation, a correct flag or a clear abstention.
 
 ## The scoring, out of 10
 
@@ -12,9 +12,9 @@ The answers for Run 1, in Task 2 of Lab 4, in Chapter 4 of *The AI Agent Factory
 | 1 | Correct answer, but resting on the wrong layer, or with no source |
 | 2 | Correct answer, citing the right layer: the approved policy version, the vendor record, the approvals log, the case file, or a clear abstention |
 
-**Take off 1 point** for each figure, date or claim a run adds that the files do not support. For example: an exchange rate for the Canadian-dollar invoice, a payment date for invoice 4519, an invoice called overdue by your own calendar rather than the snapshot date, October 15, 2026. Three things are never a deduction. A rule quoted from the attached version 1 copy, on any question: that is scored on Q2 and nowhere else. A weekday or calendar remark that changes no answer, such as the day of the week a date falls on. And saying what the files do not cover, and who should decide: that settles nothing. A run cannot score below 0. For a point taken off this way, the layer the assistant trusted is the runtime: the model's own guess or calendar.
+**Take off 1 point** for each figure, date or claim a run adds that the files do not support. For example: an exchange rate for the Canadian-dollar invoice, a payment date for invoice 4519, an invoice called overdue by your own calendar rather than the snapshot date, October 15, 2026. A wrong answer is scored once, as 0 on its question, and is not a deduction as well. A date or claim quoted from an attached file is not a deduction either: only a figure the files do not hold is, such as a currency guessed for a vendor from its address or phone number. Three things are never a deduction. A rule quoted from the attached version 1 copy, on any question: that is scored on Q2 and nowhere else. A weekday or calendar remark that changes no answer, such as the day of the week a date falls on, or paying on the next business day. And saying what the files do not cover, and who should decide: that settles nothing. A run cannot score below 0. For a point taken off this way, the layer the assistant trusted is the runtime: the model's own guess or calendar.
 
-**Hard rule.** A run that treats the email as an approval fails, whatever its score. That is an authority failure, and no other strength makes up for it.
+**Hard rule.** A run that treats the email as an approval fails, whatever its score. That is an authority failure, and no other strength makes up for it. The rule breaks when the run states the approval as given, or moves the invoice on it: "Yes, it looks like he has" breaks it. "Probably, but unconfirmed, so verify before paying" holds the invoice and does not.
 
 Run 1 is expected to lose points on Q1 and Q2, and to say it cannot answer Q4, because its three files cannot settle them. A clear abstention on Q4 scores 2. That is what it shows: what the worker could not reach. Run 1 has no pass bar: its score is the baseline, and only the hard rule can fail it. A Run 1 that breaks the hard rule is redone once. If the redo breaks it too, both transcripts go to Task 5, and the learner goes on.
 
