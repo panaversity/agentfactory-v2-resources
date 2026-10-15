@@ -1,6 +1,6 @@
 # Run 1: the three files the worker could reach
 
-One file to attach for Run 1. It holds the three files of `files/run-1/`, each under its own name, unchanged.
+One file to attach for Run 1. It holds three files, each under its own name, unchanged.
 
 
 ---

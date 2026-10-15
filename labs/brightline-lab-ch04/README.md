@@ -8,9 +8,9 @@ Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 | --- | --- |
 | `LAB.md` | The lab: the job, and seven tasks, each checked against an answer key the moment it is done. |
 | `inventory.md` | Brightline's AP Worker setup, week of October 12, 2026: the 17 items you place. |
-| `files/run-1.md` | The one file Run 1 attaches. It holds the three files of `files/run-1/` under their names: the policy copy from the shared project, the memory notes and one email. |
-| `files/run-2.md` | The one file Runs 2 and 3 attach. It holds the seven files of `files/run-2/`: two policy excerpts, memory notes, two accounting exports, a case file, one email. |
-| `files/run-1/`, `files/run-2/` | The same files, loose, for reading, and the case file Task 5 attaches on its own. |
+| `files/run-1.md` | The one file Run 1 attaches. It holds three files under their names: the policy copy from the shared project, the memory notes and one email. |
+| `files/run-2.md` | The one file Runs 2 and 3 attach. It holds seven files under their names: two policy excerpts, memory notes, two accounting exports, a case file, one email. |
+| `files/case-file-5120.md` | The case file Task 5 attaches on its own. It is also inside `files/run-2.md`. |
 | `role/` | The port-table template, and a sample Draft 2 of the Role Contract for readers who skipped Chapter 3. |
 
 **The lab's date.** The exports are a snapshot taken on Thursday, October 15, 2026. The Run 2 brief gives that date, so nothing is called overdue because of the day you run the lab. Run 1's one message gives no date, like everything else it leaves out.

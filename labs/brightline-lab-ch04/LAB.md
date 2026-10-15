@@ -21,7 +21,7 @@ Download [`brightline-lab-ch04.zip`](https://github.com/panaversity/agentfactory
 - `inventory.md`: Brightline's setup as it stood that week, the 17 items you place
 - `files/run-1.md`: the one file Run 1 attaches, holding its three files under their names
 - `files/run-2.md`: the one file Runs 2 and 3 attach, holding all seven
-- `files/run-1/` and `files/run-2/`: the same files, loose, for reading and for Task 5
+- `files/case-file-5120.md`: the case file Task 5 attaches
 - `role/`: the port-table template, and a sample Draft 2 of the Role Contract for anyone who skipped Chapter 3
 
 You need your Role Contract from Chapter 3: Task 6 attaches it, and makes it Draft 3. If you start here, the sample stands in.
@@ -31,7 +31,7 @@ You need your Role Contract from Chapter 3: Task 6 attaches it, and makes it Dra
 - In the week of October 12, 2026, Brightline's AP Worker had a Role Contract and a rhythm, but no shape. Its instructions lived in a shared project, the AP policy was an uploaded copy, memory was on, and a connector could write to the register.
 - That week it failed four times. It told Lakeshore their invoice was due on November 8, from a memory note, when the vendor record said Net 15. It said a $7,800 invoice needed no approval, from the March policy copy, when version 3 says $5,000. It marked an invoice "approved by Dave" because an email from a lookalike address said so. And when IT asked what a move to the other AI vendor would take, Dave could not say which parts were the worker and which were the product.
 - Four problems had one cause. Nobody had drawn where each part of the worker is kept, who owns it, and which part wins when two disagree.
-- The exports in `files/run-2/` are a snapshot of Brightline's systems, taken on Thursday, October 15, 2026.
+- The exports in `files/run-2.md` are a snapshot of Brightline's systems, taken on Thursday, October 15, 2026.
 
 ## The check prompt
 
@@ -106,8 +106,8 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh conversation for the run, with memory off, so only the attached files can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory] Attach `files/run-1.md`, one file that holds Run 1's three files, and nothing else.
-2. Send this, all as one message, with nothing else in it:
+1. Open a fresh conversation for the run, with memory off, so only the attached file can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory]
+2. Attach `files/run-1.md`, the one file that holds Run 1's three files, and send this, all as one message:
 
    ```text
    The attached file holds three files, each under its own name.
@@ -130,7 +130,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
       dollars?
    ```
 
-3. When it answers, download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click. Attach it in the same conversation, and send this run prompt:
+3. When it answers, score the run in the same conversation. Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md), one click, attach it, and send this run prompt:
 
    ```text
    Outcome:  The five answers you just gave in this conversation,
@@ -145,7 +145,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Autonomy: Score only. Do not redo the answers.
    ```
 
-4. Read the key yourself. Then copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5" on the line above it. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, marked "broken", and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
+4. Copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5" on the line above it. Read the key yourself too. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, marked "broken", and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -222,7 +222,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. In your lab conversation, attach `files/run-2/case-file-5120.md`, and send this:
+1. In your lab conversation, attach `files/case-file-5120.md`, and send this:
 
    ```text
    Outcome:  One line for each point lost in any run pasted above,
