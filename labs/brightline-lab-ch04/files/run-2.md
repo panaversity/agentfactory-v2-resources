@@ -1,6 +1,6 @@
 # Runs 2 and 3: every source in its layer
 
-One file to attach for Runs 2 and 3. It holds the seven files of `files/run-2/`, each under its own name, unchanged.
+One file to attach for Runs 2 and 3. It holds seven files, each under its own name, unchanged.
 
 
 ---
