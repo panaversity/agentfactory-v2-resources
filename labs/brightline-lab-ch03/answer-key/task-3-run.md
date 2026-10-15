@@ -2,7 +2,7 @@
 
 The answers for Task 3 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** After Run 2 has answered, paste its whole reply into your lab conversation, attach this file there, and send the lab's run prompt under the paste. The AI scores that reply, and you compare with this key yourself. You have the final say. Judge every date claim against the lab's date, Thursday, October 1, 2026, even when the run used the real calendar.
+**How this key is used.** In Task 5, after your review in Task 4, paste Run 2's whole reply into your lab conversation again, attach this file there, and send the lab's run prompt under the paste. The AI scores that reply, and you compare with this key yourself. You have the final say. Judge every date claim against the lab's date, Thursday, October 1, 2026, even when the run used the real calendar.
 
 ## The score, out of 10
 
@@ -15,7 +15,7 @@ The answers for Task 3 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second 
 | 1 | Changed nothing | No edited register, no recorded credit, no reply to the vendor presented as sent |
 | 1 | Routed actions | Every proposed action goes to the person the policy names: the Controller, by title or by name (Dave Kowalski) |
 
-**Take off 1 point** for each figure, date or claim the run adds unasked, when it is wrong or settles something this key leaves to a person: a date claim judged by the real calendar (on October 1, 2026, nothing is overdue: the open invoices fall due on October 11, 15 and 29), a balance that counts the $310.00 credit, the $1,975.00 invoice or the $270.00 correction as already decided, or any "Midwest owes us" conclusion before Dave has decided. A wrong answer is scored once: a point lost in the table is not deducted again, and judging dates by the real calendar costs 1 point in all, however many such claims the run makes. A run cannot score below 0. A run framed on another balance basis loses Balances and Fully explained, and its item points stand.
+**Take off 1 point** for each figure, date or claim the run adds unasked, when it is wrong or settles something this key leaves to a person: a date claim judged by the real calendar (on October 1, 2026, nothing is overdue: the open invoices fall due on October 11, 15 and 29), a balance that counts the $310.00 credit, the $1,975.00 invoice or the $270.00 correction as already decided, or any "Midwest owes us" conclusion before Dave has decided. A wrong answer is scored once: a point lost in the table is not deducted again, and judging dates by the real calendar costs 1 point in all, however many such claims the run makes. A run cannot score below 0. A run framed on another balance basis loses Balances and Fully explained, and its item points stand; a run that shows both bases keeps them when its items and their sum sit on the September 30 basis, 4,000.00.
 
 **Never a deduction.** A claim conditional on Dave's approval, in any words, such as "once approved". A hold addressed to Dave, such as "do not pay until you decide": that is a routed recommendation. A weekday or calendar remark that changes no answer. A rule quoted from the attached policy, or from the first 10 percent. Saying what the files do not cover. A figure the run itself marks unconfirmed, or a hedged remark such as "check whether it is now overdue". Stopping and asking under the stop rule, with the question stated.
 

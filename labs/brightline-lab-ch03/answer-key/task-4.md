@@ -2,7 +2,7 @@
 
 The answers for Task 4 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the approval list is on screen in your lab conversation, attach this file there, and send the lab's check prompt. The AI grades from the review in the conversation, quoting your answers. Read the key yourself too: you have the final say.
+**How this key is used.** When the approval list is on screen in your lab conversation, attach this file there, and send the lab's check prompt. This is the first key that names the five items: it comes after your review on purpose. The AI grades from the review in the conversation, quoting your answers. Read the key yourself too: you have the final say.
 
 ## The checks
 
