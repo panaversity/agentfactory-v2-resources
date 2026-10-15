@@ -92,7 +92,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. Open a fresh conversation for the run, with memory off, so only the attached files can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat.[^openai-memory] Attach the three files in `files/run-1/`, and nothing else.
+1. Open a fresh conversation for the run, with memory off, so only the attached files can answer. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory] Attach the three files in `files/run-1/`, and nothing else.
 2. Send this, all as one message, with nothing else in it:
 
    ```text
