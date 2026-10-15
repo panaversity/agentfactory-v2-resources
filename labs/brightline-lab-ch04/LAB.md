@@ -125,7 +125,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    Autonomy: Score only. Do not redo the answers.
    ```
 
-4. Read the key yourself. Then copy the whole scoring reply into your lab conversation, with "Run 1 score, for Task 5" on the line above it. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, marked "broken", and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
+4. Read the key yourself. Then copy the whole scoring reply into your lab conversation, with "Keep this Run 1 score for Task 5" on the line above it. Losing points on questions 1 and 2, and saying it cannot answer question 4, is the measurement, not a mistake. One exception: if the hard rule broke, the run treated the email as an approval, Thursday's failure live. Paste that score too, marked "broken", and redo Run 1 once, fresh. A second break is pasted too, and you go on: the baseline is what that week's files allowed.
 
 **Give Dave:** nothing yet. This run shows what the worker could reach that week.
 
@@ -162,7 +162,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
    ```
 
 3. When it answers, download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md), one click. Attach it in the same conversation, and send the run prompt from Task 2. The key says what passes.
-4. Paste its scoring reply into your lab conversation, marked "Run 2 score, for Task 5", and send: "Put my predictions beside the run's citations. Which did I get right?"
+4. Paste its scoring reply into your lab conversation, marked "Keep this Run 2 score for Task 5", and send: "Put my predictions beside the run's citations. Which did I get right?"
 
 **Give Dave:** the five answers, each with its citation.
 
@@ -173,7 +173,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 **What you do:**
 
-1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the key for Runs 2 and 3 and the run prompt. Paste its scoring reply into your lab conversation, marked "Run 3 score, for Task 5". With one account, skip the run.
+1. On the other AI vendor, repeat Task 3 exactly: the same seven files, the same message, then the key for Runs 2 and 3 and the run prompt. Paste its scoring reply into your lab conversation, marked "Keep this Run 3 score for Task 5". With one account, skip the run.
 2. Then the port note. In your lab conversation, send: "Go through the five questions with me, one at a time, and I answer each in a line. Would the other AI vendor's answer differ from Run 2's, or did Run 3's, and what could make it? Then write my answers up as the port note, naming the layer for each change." The files and the rules did not move, so what could cause a difference?
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it in your lab conversation, and send [the check prompt](#the-check-prompt).
 
@@ -189,16 +189,16 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 1. In your lab conversation, attach `files/run-2/case-file-5120.md`, and send this:
 
    ```text
-   Outcome:  One line for each question that lost a point in any run
-             pasted above: the layer the run wrongly trusted, and
-             what fixed it. For a question that lost nothing, what
-             it rested on. Then the line the worker adds to invoice
-             4519's case file today, after Run 2, in the attached
-             case file's shape.
-   Format:   One lost point at a time, ask me the layer it trusted
-             and the fix. Then when, who and the step for 4519.
-             Write each line from my answer, and show them all at
-             the end.
+   Outcome:  One line for each point lost in any run pasted above,
+             deductions included: the layer the run wrongly trusted,
+             and what fixed it. For a question that lost nothing,
+             what it rested on. Then the line the worker adds to
+             invoice 4519's case file today, after Run 2, in the
+             attached case file's shape.
+   Format:   One lost point at a time, the deductions too, ask me
+             the layer it trusted and the fix. Then when, who and
+             the step for 4519. Write each line from my answer, and
+             show them all at the end.
    Inputs:   The scores pasted in this conversation, the attached
              case file, and my answers.
    Autonomy: Mine, as in Task 1: I decide every line.
@@ -235,9 +235,9 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
              where it reads an invoice's status from); Authority
              (the approval line and its policy version, the
              run-as-a-whole approval, whether email or chat text can
-             be an approval); Triggers (the business events, the
-             cadence, and the tolerance for each). Then show me the
-             whole draft.
+             be an approval); Triggers (the business events, such as
+             an invoice arriving, the cadence, and the tolerance for
+             each). Then show me the whole draft.
    Inputs:   The attached contract, and my answers. A line that
              needs a layer Brightline does not have yet ends with
              "target, not yet in place".
