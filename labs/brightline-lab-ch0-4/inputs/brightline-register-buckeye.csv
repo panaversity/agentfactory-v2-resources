@@ -1,0 +1,6 @@
+row,vendor,invoice_no,invoice_date,due_date,description,amount_usd,status,paid_date,payment_ref
+R1,Buckeye Office Supply,BO-22714,2026-07-16,2026-08-15,Copy paper and folders (July),1840.00,Paid,2026-08-06,ACH-0806-104
+R2,Buckeye Office Supply,BO-22752,2026-08-04,2026-09-03,"Copy paper, 40 cases",1980.00,Paid,2026-08-31,ACH-0831-122
+R3,Buckeye Office Supply,BO-22778,2026-08-13,2026-09-12,"Toner cartridges, 18",2385.00,Open,,
+R4,Buckeye Office Supply,BO-22801,2026-08-19,2026-09-18,Shipping labels and printer ribbons,1264.40,Open,,
+R5,Buckeye Office Supply,BO-22833,2026-08-30,2026-09-29,Whiteboard markers and easel pads,640.00,Open,,
