@@ -8,7 +8,7 @@ The answers for Task 2 of Lab 0.4, in Chapter 0.4 of *The AI Agent Factory*, Sec
 
 The statement line names a credit memo, and nothing in the chat says why Brightline's register does not have it. So the only honest answer is that the statement does not show the reason.
 
-- **Chat 1**, with the behavior line in the message, should say that the statement does not show a reason, and keep each item short.
+- **Chat 1**, with the behavior line in the message, should say that the statement does not show a reason.
 - **Chat 2**, a new chat without the line, has nothing telling it how to behave. It may guess a reason, such as the memo not having arrived yet, or explain at length.
 - **Chat 3**, inside the project, gets the same line back from the project's instructions, without retyping, and behaves like Chat 1. A reply that says it will not guess and then lists usual causes has followed the line in part: say so in your row.
 

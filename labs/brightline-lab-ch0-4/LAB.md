@@ -2,7 +2,7 @@
 
 Chapter 0.4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.4: Your 4D plan, before the run](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/lab/), so you can do the lab without the book.
 
-In this lab you write the 4D plan for Brightline's monthly vendor-statement reconciliation before any run, keep its behavior line where the app puts it back into every chat, and let the AI run the job alone. Then you read the run's output afterward, as Dave would the next morning, and check it against the source. Each task has its own answer key, and you check it the moment the task is done. The lab takes about 30 minutes.
+In this lab you write the 4D plan for Brightline's monthly vendor-statement reconciliation before any run, keep its behavior line where the app puts it back into every chat, and let the AI run the job alone. Then you read the run's output afterward, as Dave would the next morning, and check it against the source. Each task has its own answer key, and you check it the moment the task is done. The lab takes about 35 minutes.
 
 **What you will learn:**
 
@@ -134,7 +134,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 5. **The line in a project.** Make a project for the reconciliation, as 0.2 shows. On Claude, open Projects, then "+ New Project". On ChatGPT, choose "New project". Put the same line in the project's instructions: Write "the statement does not show" instead of guessing a reason. Open a chat inside the project, and send the same three lines as step 4. Copy the reply. In your lab conversation, send the line "Chat 3, in the project:" with the reply under it. Answer the AI's question.
 6. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-4-key-task-2.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint:** your three rows say where the behavior line was in each chat and whether its answer guessed, your project holds your Description lines, and every one of Task 2's checks has passed.
+**Checkpoint:** your three rows say where the behavior line was in each chat and whether its answer guessed, your project holds the behavior line, and every one of Task 2's checks has passed.
 
 ## Task 3. The run, read afterward (12 minutes)
 
