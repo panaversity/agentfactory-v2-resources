@@ -6,11 +6,11 @@ The answers for Task 8 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 8 carries checks 17 and 18 of the lab's 28.
+Task 8 carries checks 16 and 17 of the lab's 26.
 
-17. **The file is in your `Brightline AP` folder, named exactly `friday-run-2026-10-02.xlsx`, and it opens with all 15 bills.** The folder and the name came only from your manager, so the AI knows them only if your brief passed them on. A file with another name, or in another folder, is Missed. The rows should match Task 2's: the same 15 bills, 4471 marked as paid, and 4471-R as a copy of 4471.
+16. **The file is in your `Brightline AP` folder, named exactly `friday-run-2026-10-02.xlsx`, and it opens with all 15 bills.** The folder and the name came only from your manager, so the AI knows them only if your brief passed them on. A file with another name, or in another folder, is Missed. The rows should match Task 2's: the same 15 bills, 4471 marked as paid, and 4471-R as a copy of 4471.
 
-18. **The folder holds only that file.** No script the AI wrote, no working copy, no extracted invoice PDFs, no second spreadsheet. An AI working in a folder often leaves its own working files there. They belong in its own workspace, not in your folder, and your manager said "put nothing else in that folder". Files your computer makes by itself, such as a hidden `.DS_Store` on a Mac, do not count. If the AI made extra files and then deleted them when asked, say so: the check is Passed only if the folder held one file before you asked. Ask me, and the AI's own report.
+17. **The folder holds only that file.** No script the AI wrote, no working copy, no extracted invoice PDFs, no second spreadsheet. An AI working in a folder often leaves its own working files there. They belong in its own workspace, not in your folder, and your manager said "put nothing else in that folder". Files your computer makes by itself, such as a hidden `.DS_Store` on a Mac, do not count. If the AI made extra files and then deleted them when asked, say so: the check is Passed only if the folder held one file before you asked. Ask me, and the AI's own report.
 
 ## Worth noting, not scored
 

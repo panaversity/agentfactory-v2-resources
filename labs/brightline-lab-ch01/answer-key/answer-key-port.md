@@ -29,7 +29,7 @@ If a spreadsheet was gone, it lived only in the AI's workspace. That is Maria's 
 
 So, what survived: the machine, or the record? The machine each task ran on is gone. What survived is what reached a record you can open: your account, your folder, your computer.
 
-Compare this with your Task 9 answers. Where you said "stays", is it still there? And even the results that survived are not Brightline's official record, as Task 9's records showed.
+Compare this with your Task 9 answers. Where you said "stays", is it still there?
 
 ## Look back
 

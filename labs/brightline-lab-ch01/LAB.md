@@ -10,7 +10,6 @@ In this lab you give an AI a real job, check each task against its answer key, a
 - How to verify an AI's finished work yourself before you pass it on: humans verify outcomes.
 - How to place a job on the ladder of interaction, and choose the surface that fits it.
 - Where an AI's work runs, where its results are kept, and which of them survive: the machine, or the record.
-- Why a result you can open again is still not your company's official record.
 - What changes when the same briefs run on the other AI vendor, on your own computer, in the cloud while you are away, and inside a file you already use.
 
 ## Before you start (5 minutes)
@@ -151,9 +150,29 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **Checkpoint.** Checks 12 to 14 passed, and you know where the doc is.
 
-### Task 6. Which surface for which job (15 minutes)
+### Task 6. Which surface for which job (10 minutes)
 
-The goal: decide which rung of the ladder each AP job sits on, and which surface fits it.
+The goal: decide how much of each AP job you can hand to an AI, and where that work should run.
+
+**Your manager asks:** "We want to hand more AP work to AI. For each of these six jobs, tell me how far we can hand it over, and where it should run."
+
+**The six jobs:**
+
+1. Explain what "2/10 net 30" means on an invoice.
+2. Draft a polite reply to a vendor who asks when they will be paid.
+3. Turn this week's invoice PDFs into one spreadsheet I can check.
+4. Match this week's invoices to the PO list, and tell me which do not match.
+5. Every Monday at 7:00 a.m., build the unpaid-bills report and leave it for me.
+6. Watch the AP inbox all day, answer routine vendor questions, and pass anything unusual to Maria.
+
+**What you decide.** For each job, two things:
+
+- **The rung**, from [1.1 The ladder of interaction](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/): how much of the work you hand over. To a chatbot you send a message, get a reply, and finish the job yourself. To an agent you delegate one task, and get a finished output. To an AI Worker you hand over a role, and get results again and again.
+- **The surface**, from [1.5, "Which surface for which job"](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/): where the work runs. A chat is for something you read once. A task is for one finished result. A schedule is for the same work, run again and again. A standing worker is for work that continues between conversations.
+
+For example, for a different job: "Turn last month's receipts into one expense report" is one finished result, so you would answer "agent, task".
+
+You decide. The AI only shows you the jobs, and records your answers.
 
 **What you do:**
 
@@ -162,14 +181,11 @@ The goal: decide which rung of the ladder each AP job sits on, and which surface
    ```text
    Outcome:  For each of six AP jobs, my decision: which rung of the
              ladder of interaction it sits on, and which surface it
-             needs. Then, for an AI that keeps track of our vendor
-             inbox, my rule for each of six actions.
+             needs.
    Format:   First show me the rungs and the surfaces below, with
              their meanings. Then show all six jobs as a numbered
              list, and ask for "the rung, then the surface" for each,
-             in one reply. Then show all six actions as a list, and
-             ask for "alone, approval or never" for each, in one
-             reply. At the end, a table of my answers.
+             in one reply. At the end, a table of my answers.
    Inputs:   The rungs: chatbot (you send a message, and get a
              reply), agent (you delegate a task, and get a finished
              output), AI Worker (you hand over a role, with recurring
@@ -188,20 +204,16 @@ The goal: decide which rung of the ladder each AP job sits on, and which surface
              unpaid-bills report and leave it for me. 6. Watch the
              AP inbox all day, answer routine vendor questions, and
              pass anything unusual to Maria.
-             The actions: A. Read new emails in the AP inbox.
-             B. Look up an invoice in the AP spreadsheet. C. Draft a
-             reply to a vendor. D. Send a reply to a vendor. E. Pay
-             an invoice. F. Change a vendor's bank account details.
    Autonomy: Ask only. Do not answer for me, and do not tell me
              whether I am right. Record my answers as I give them.
    ```
 
-2. Answer every item in one reply, in the shape it asks for.
+2. Answer every job in one reply, in the shape it asks for.
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give your manager:** the table of your answers.
 
-**Checkpoint.** Checks 15 and 16 passed.
+**Checkpoint.** Check 15 passed.
 
 ### Task 7. The other AI vendor (20 minutes)
 
@@ -236,11 +248,30 @@ This task runs in a new conversation, in a desktop app, so the AI can save a fil
 
 **Give your manager:** the file, in the folder.
 
-**Checkpoint.** Checks 17 and 18 passed, in each app you used.
+**Checkpoint.** Checks 16 and 17 passed, in each app you used.
 
 ### Task 9. Where each result lives (10 minutes)
 
-The goal: say where each of your results is kept, whether it lasts, and whether it is your company's official record.
+The goal: say where each of your results is kept, and whether it lasts.
+
+**Your manager asks:** "Before Monday, tell me where each of these results is kept, and whether it will still be there."
+
+**Your five results:**
+
+1. The Task 1 total, as text in your first conversation.
+2. The Task 2 spreadsheet, as a file in your first conversation.
+3. The Task 5 doc.
+4. The Friday file you saved in your Brightline AP folder in Task 8.
+5. Any file the AI made in Task 2 and never delivered to you.
+
+**What you decide.** For each result, two things, from [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/):
+
+- **The place** where it is kept. Your account or workspace holds the conversations, the Artifacts section on Claude and Library on ChatGPT. The AI's workspace is the temporary computer where the AI's work runs. Your own computer holds your folders and files. A connected app is one such as Google Drive.
+- **Stays or goes:** whether it is still there when the AI's work is done.
+
+For example, for a different result: a letter you scanned and saved in your Documents folder is kept on your own computer, so you would answer "my own computer, stays".
+
+You decide. The AI only shows you the results, and records your answers.
 
 **What you do:**
 
@@ -250,15 +281,12 @@ The goal: say where each of your results is kept, whether it lasts, and whether 
    ```text
    Outcome:  My decision for each of my results: where it is kept,
              and whether it stays or goes when the AI's work is
-             done. Then, for each of five records, whether it is
-             Brightline's official record.
+             done.
    Format:   First show me the places and their meanings below.
              Then show all five results as a numbered list, each
              with what it is and where it was made, and ask for "the
-             place, then stays or goes" for each, in one reply. Then
-             show all five records as a list, and ask for "official
-             or not, then why, in a few words" for each, in one
-             reply. At the end, a table of my answers.
+             place, then stays or goes" for each, in one reply. At
+             the end, a table of my answers.
    Inputs:   The places: my account or workspace (the
              conversations, the Artifacts section on Claude or
              Library on ChatGPT), the AI's workspace (the temporary
@@ -271,22 +299,17 @@ The goal: say where each of your results is kept, whether it lasts, and whether 
              file I saved in my Brightline AP folder in Task 8.
              5. Any file you made in Task 2 and never delivered to
              me.
-             The records: A. What the AI remembers about me from
-             earlier conversations. B. A shared project my team
-             keeps files in. C. The Task 5 doc. D. Brightline's
-             accounting system, where payments are recorded.
-             E. Brightline's approved AP policy.
    Autonomy: Ask only. Do not answer for me, and do not tell me
              whether I am right. If I did not do Task 8, skip
              result 4.
    ```
 
-3. Answer every item in one reply, in the shape it asks for.
+3. Answer every result in one reply, in the shape it asks for.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give your manager:** the table of your answers.
 
-**Checkpoint.** Checks 19 and 20 passed. Part A is done.
+**Checkpoint.** Check 18 passed. Part A is done.
 
 ## The next day
 
@@ -339,7 +362,7 @@ The goal: see work carry on after you close the laptop, and find where its resul
 4. Open it again, and open the conversation. Find the spreadsheet.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Check 21 passed.
+**Checkpoint.** Check 19 passed.
 
 ### Task 12. A checklist every Monday (15 minutes)
 
@@ -371,7 +394,7 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
 4. Delete the scheduled task, so it does not run again.
 5. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-12.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you about the runs.
 
-**Checkpoint.** Checks 22 to 24 passed.
+**Checkpoint.** Checks 20 to 22 passed.
 
 ### Task 13. The doc's earlier version (10 minutes)
 
@@ -390,7 +413,7 @@ The goal: change the controller's doc, then find its earlier version and bring i
 5. Your manager wants the line out. Restore the version before the change, from the version history, instead of asking for a new edit.
 6. **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-13.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 25 and 26 passed.
+**Checkpoint.** Checks 23 and 24 passed.
 
 ### Task 14. The AI inside the spreadsheet (15 minutes)
 
@@ -409,7 +432,7 @@ The goal: have the AI change a file you already use, in place, and find where th
 5. Open File, then Version history, then See version history. Find the AI's change.
 6. **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-14.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you what you see.
 
-**Checkpoint.** Checks 27 and 28 passed. The lab is done.
+**Checkpoint.** Checks 25 and 26 passed. The lab is done.
 
 ## If something goes wrong
 
