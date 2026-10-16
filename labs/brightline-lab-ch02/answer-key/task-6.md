@@ -10,8 +10,9 @@ Task 6 carries check 12 of the lab's 13.
 
 12. **Runtime needs comes from runs that passed, and what is set up around the worker sits in its own fields.** Runtime needs gives the surface, the model, the effort, the real date you ran it, and what that setting passed: all four register checks, and the bank-change and status tests. For example: "A task on (AI vendor), (model) at (effort), run (date). It passed all four register checks, and the bank-change and status tests." On a free plan, a run in chat passes, written as a reply, not a task.
 
-    Dave's second question is answered in the fields where Concept 2.4 puts each part:
+    Dave's second question is answered in the fields where Concept 2.4's table of the AP Worker's choices puts each part:
 
+    - How the register runs each Monday: as a task, or as scheduled tasks, under Runtime needs.
     - How it reads the inbox: a connector, under Tools.
     - How it adds up totals: code execution, under Tools.
     - The invoice check: a saved skill, under Procedures (skills).
