@@ -41,7 +41,7 @@ knows yet what to do with an invoice in Canadian dollars.
 
 ## How the lab works
 
-The lab uses two kinds of chat. Your **lab conversation** is one chat on Claude, with your Lab 0.2 settings. It holds your notes table and your checks, from Task 1 to the end. Each page is made in a new chat of its own, as its step says. You copy each page into your lab conversation, under the line the step prints, and the AI there asks you about it.
+The lab uses two kinds of chat. Your **lab conversation** is one chat on Claude, with your Lab 0.2 settings. It holds your notes table and your checks, from Task 1 to the end. Each page starts in a new chat of its own, as its step says. You copy each page into your lab conversation, under the line the step prints, and the AI there asks you about it.
 
 Copy every message and brief exactly as it is printed. When a step says to copy a page, copy the whole code block.
 
@@ -144,7 +144,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    covers a rule, say so.
    ```
 
-3. Open `inputs.zip` on your computer, and compare one of the reply's quotes with the policy's own line, word for word. Then copy the reply. In your lab conversation, send the line "The policy check:" with the reply under it. Answer the AI's question.
+3. Open `inputs.zip` on your computer, and compare one of the reply's quotes with the policy's own line, word for word. Then copy the reply. In your lab conversation, send the line "The policy check:" with the reply under it. Answer the AI's question. A rule that a line settles only in part can be split: keep that part, and move the rest to Open questions.
 4. **The checked page.** In the same chat as step 2, send your decisions in a few words, with this under them, in one message:
 
    ```text
