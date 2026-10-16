@@ -132,7 +132,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
              source, what was kept, or whether I am right.
    ```
 
-2. **Question 1 on Claude: a file attached.** Open a new chat, outside any project, with the settings you chose in Task 1. Attach `inputs.zip`, and send this:
+2. **Question 1 on Claude: a file attached.** Open a new chat, outside any project, with memory off. On Claude, turn memory off for this chat in the "+" menu, before the first message. On ChatGPT, in step 10, turn it off in Settings first, if it is on. Attach `inputs.zip`, and send this:
 
    ```text
    Does a $7,800 invoice from Midwest Packaging need the
