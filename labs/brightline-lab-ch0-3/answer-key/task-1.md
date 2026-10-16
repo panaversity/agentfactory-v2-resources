@@ -16,7 +16,7 @@ The answers for Task 1 of Lab 0.3, in Chapter 0.3 of *The AI Agent Factory*, Sec
 
 ## The checks
 
-Task 1 carries checks 1 to 6 of the lab's 13.
+Task 1 carries checks 1 to 6 of the lab's 16.
 
 1. **Both pages show their marks.** Passed when each pasted page has "## " in front of its headings and "- " in front of its items. Missed when a pasted page is drawn text with no marks.
 2. **The rule is under Rules.** Passed when the $5,000 sentence is under Rules in both columns.

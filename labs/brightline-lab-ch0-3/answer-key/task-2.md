@@ -15,7 +15,7 @@ Brightline's AP policy, version 3, approved on September 1, 2026:
 
 ## The checks
 
-Task 2 carries checks 7 to 13 of the lab's 13.
+Task 2 carries checks 7 to 13 of the lab's 16.
 
 7. **Each rule was checked.** Passed when the policy check quotes a policy line for each rule, or says no line covers it, and your decision for each rule is recorded.
 8. **The $5,000 rule names its line.** Passed when the checked page you pasted gives the $5,000 rule with "(policy 4.1)". Its words may be the notes' or line 4.1's.

@@ -6,7 +6,7 @@ Chapter 0.3 of *The AI Agent Factory*, Second Edition. Every name, number and co
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: two tasks on your free Claude and ChatGPT accounts, each with its own answer key. |
+| `LAB.md` | The lab: three tasks on your free Claude and ChatGPT accounts, each with its own answer key. |
 | `inputs.zip` | One folder, `inputs`, with `ap-policy-v3-excerpt.md`: Brightline's AP policy, version 3. |
 
 **Of the files in this folder, give the AI only `inputs.zip`, and only when Task 2's policy check says so.** The notes are printed in `LAB.md`, for you to paste. Never upload `LAB.md` or this file: they link every answer key.

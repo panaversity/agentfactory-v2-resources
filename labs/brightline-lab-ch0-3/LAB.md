@@ -2,7 +2,7 @@
 
 Chapter 0.3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.3: One page, checked](https://agentfactory2.panaversity.org/how-ai-works/markdown/lab/), so you can do the lab without the book.
 
-In this lab you ask both AI vendors to turn Brightline's AP notes into a markdown page, and you see its marks. Then you check each rule against AP policy version 3, keep the checked page as a file named `brightline-ap-notes.md`, and give it to a new chat. Each task has its own answer key, and you check it the moment the task is done. The lab takes about 30 minutes.
+In this lab you ask both AI vendors to turn Brightline's AP notes into a markdown page, and you see its marks. Then you check each rule against AP policy version 3, keep the checked page as a file named `brightline-ap-notes.md`, and give it to a new chat. Last, you ask both for a web page made from it, and check the copy against your request. Each task has its own answer key, and you check it the moment the task is done. The lab takes about 40 minutes.
 
 **What you will learn:**
 
@@ -10,6 +10,7 @@ In this lab you ask both AI vendors to turn Brightline's AP notes into a markdow
 - To read where the AI put each line of your notes.
 - To check each rule on a neat page against its source, and to leave open what nothing settles.
 - To keep the checked page as a file, and to give it to a new chat.
+- To ask for a copy with a short request, and to check the copy against each line of it.
 
 ## Before you start (3 minutes)
 
@@ -167,6 +168,48 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 **Checkpoint:** your rules check has a decision for each rule, your page is saved as `brightline-ap-notes.md`, the new chat's answers are recorded, and every one of Task 2's checks has passed.
 
 Nobody has approved your page. Keep it: Chapter 8 shows how a page like it becomes part of Brightline's record.
+
+## Task 3. Dave's web page, beside the page (8 minutes)
+
+**Your question:** "When the AI makes a copy for its next reader, did the copy keep every line of my request?"
+
+**What you do:**
+
+1. In your lab conversation, send this:
+
+   ```text
+   Outcome:  Task 3's rows, added in this conversation under my
+             rules check: for each AI vendor's web page, each line
+             of my request, kept or not.
+   Format:   When I paste a web page, list the request's five
+             lines. Ask me once, for that page, "Which lines did the
+             copy keep, and which did it drop or change?", and
+             record my answer. Then ask me once, "Did you ask again,
+             or fix the copy?", and record my answer.
+   Inputs:   The request below, the web pages I paste, and my
+             answers.
+   Autonomy: I decide every answer. Never say whether a copy is
+             right.
+   ```
+
+2. **Claude's web page.** Open a new chat on Claude, outside any project. Attach `brightline-ap-notes.md`, and send this, the short request from 0.3.3:
+
+   ```markdown
+   ## A web page from brightline-ap-notes.md
+
+   - Every rule, in its own words, with its policy line.
+   - The open questions, under their own heading.
+   - No remarks.
+   - Nothing that is not on the page.
+   - Easy to read on a phone.
+   ```
+
+3. Open the web page, and lay it beside your page. Check each of the five lines against it. If the copy dropped or changed a line, send the same request again in the same chat. Never fix the copy by hand.
+4. Copy the web page's text. In your lab conversation, send the line "Claude's web page:" with the text under it. Answer the AI's questions.
+5. **ChatGPT's web page.** Do steps 2 to 4 again on ChatGPT, and send the line "ChatGPT's web page:". The page comes back as code: open its Preview to see it. On ChatGPT's free plan, this may be your third upload today.
+6. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-3-key-task-3.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint:** your rows mark each line of the request, kept or not, for both web pages, and every one of Task 3's checks has passed.
 
 ## Apply it to your vertical (3 minutes)
 
