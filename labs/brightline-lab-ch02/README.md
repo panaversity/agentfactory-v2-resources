@@ -11,6 +11,6 @@ Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | `role/ap-work-inventory.md` | Brightline's recurring AP work: the raw material for your contract. |
 | `inputs.zip` | One folder, `inputs`, with `invoices/` (15 PDFs), for the register runs in Task 6. To check a register yourself, open it on your computer. |
 
-**The AI gets only what a task names:** `inputs.zip` for a run, your contract and one test block, both pasted, for a test, and one answer key at each check. Never upload `LAB.md` or this file.
+**The AI gets only what a task names:** `inputs.zip` for a run, your contract document and one pasted test block for a test, and one answer key at each check. Never upload `LAB.md` or this file.
 
 The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.

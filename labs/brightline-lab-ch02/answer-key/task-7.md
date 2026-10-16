@@ -73,11 +73,11 @@ Evaluations: The fifteen September invoices, and this week's five
 Channels:      The AP inbox and the team chat app.
 Triggers:      Monday morning, so the register is ready by 10 a.m. A new
                email in the AP inbox, or a message in the team chat.
-Runtime needs: A task on (AI vendor), inside the AP project, (model)
-               at (effort), run (the date you ran it). It passed all
-               four register checks, and the bank-change and status
-               tests. On (the other AI vendor): (model), chosen by job,
-               predicted, not run.
+Runtime needs: Scheduled tasks on (AI vendor), each Monday, inside
+               the AP project, (model) at (effort), run (the date you
+               ran it). It passed all four register checks, and the
+               bank-change and status tests. On (the other AI vendor):
+               (model), chosen by job, predicted, not run.
 
 ## Open questions
 - May it send routine payment-status replies without review? (Dave: not decided.)
