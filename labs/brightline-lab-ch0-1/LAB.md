@@ -48,7 +48,7 @@ Each task works the same way:
 1. Do the task's runs. Paste each reply into your lab conversation, under the line the step prints.
 2. Answer the AI's question about each reply in a few words, in the shape it asks for.
 3. Download the task's answer key, one click. Attach it, and send the check prompt.
-4. Missed a check? Tell the AI which row changes and why. It changes the row, and your field notes too once you have them. Then send the check prompt again.
+4. Missed a check, or you disagree with a grade? Tell the AI which row changes, in your log or your field notes, and why. Then send the check prompt again. The key is already attached.
 
 ## The check prompt
 
@@ -74,7 +74,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 
 **What you do:**
 
-1. **Open your lab conversation.** Open a new chat with your usual settings, and send this:
+1. **Open your lab conversation.** Open a new chat with your usual settings, memory included. Only run chats turn memory off. Send this:
 
    ```text
    Outcome:  My run log: a row for each reply of Runs 1 to 5
@@ -90,10 +90,11 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
              Training: what the model learned before its
              knowledge cutoff, including how it words a reply.
              A chat never changes it. The window: everything the
-             app puts in front of the model for one reply.
-   Autonomy: I decide every row. Until my check prompt, never
-             tell me a source, whether a tool ran, or whether I
-             am right.
+             app puts in front of the model for one reply, as
+             tokens, which are pieces of words, not letters.
+   Autonomy: I decide every row. Never ask me for the next run.
+             Until my check prompt, never tell me a source,
+             whether a tool ran, or whether I am right.
    ```
 
 2. **Run 1: the question alone.** Open a run chat, set up as above, and send this:
@@ -127,7 +128,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 9. Copy both replies. In your lab conversation, send the line "Run 3's replies. The window held: my question only, in a new chat. Then my question and the earlier answer, pasted in." with both replies under it, each after the words "First reply" or "Second reply". Answer the AI's questions.
 10. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-1-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint:** your lab conversation has a row for each of the five replies, each with your decision, and Task 1's checks are graded.
+**Checkpoint:** your lab conversation has a row for each of the five replies, each with your decision, and every one of Task 1's checks has passed.
 
 ## Task 2. What it cannot see, and what a tool can (22 minutes)
 
@@ -138,8 +139,8 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 1. **Count first.** Count the letter r in the word "strawberry", and in line 4.1: "Invoices over $5,000.00 need the controller's approval before payment." In your lab conversation, send this, with your numbers in place of N:
 
    ```text
-   My own counts of the letter r are strawberry N and line
-   4.1 N. Record them in my log, and do not check them.
+   My own counts of the letter r are N in strawberry and N in
+   line 4.1. Record them in my log, and do not check them.
    ```
 
 2. **Run 4: letters and a note.** Open a new run chat, set up the same way, and send this:
@@ -167,7 +168,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    before payment."
    ```
 
-5. Look at the reply. A tool ran when the app itself shows the run, apart from the reply's text: the code and its result, in a block or panel that the app adds. Code printed in the reply, with no such sign, is code only. Words in the reply such as "I ran the code" are not a sign.
+5. Look at the reply. A tool ran when the app itself shows that it ran the code, outside the reply's own text, such as a panel with the code it ran and its output. Code, a result or an "Output" box written inside the reply are part of the reply, so they are not a sign. With no sign from the app, it is code only.
 6. Copy the reply. In your lab conversation, send the line "Run 5's reply. The window held: my question. A tool ran or code only, right or wrong by my count, then training or the window?" with the reply under it. Answer the AI's question.
 7. **Your AI field notes.** In your lab conversation, send this:
 
@@ -203,7 +204,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 8. Answer its question in one reply: for each idea, the run, then what it showed, in a few words. If no run shows an idea, say "none" and why. Your field notes stay in the app, as a document in your lab conversation.
 9. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-1-key-task-2.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint:** your log has rows for Runs 4 and 5, your AI field notes have nine rows, and Task 2's checks are graded.
+**Checkpoint:** your log has rows for Runs 4 and 5, your AI field notes have nine rows, and every one of Task 2's checks has passed.
 
 ## The other AI vendor, if you like (20 minutes)
 

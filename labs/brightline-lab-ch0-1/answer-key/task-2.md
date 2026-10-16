@@ -24,9 +24,9 @@ Task 2 carries checks 7 to 12 of the lab's 12.
 
 | Idea | A run that fits |
 | --- | --- |
-| 1. Prediction, not lookup | Run 1, or Run 3's first reply: a reply with nothing in the window to look up. A reply that gives no answer fits too, because it is still predicted text |
+| 1. Prediction, not lookup | Run 1, or Run 3's first reply: a reply with nothing in the window to look up. A reply that gives no answer fits too, because it is still predicted text. So does Run 5 when no tool ran, because its result was predicted |
 | 2. Trained once, then frozen | Run 3's first reply: Run 2 changed nothing inside the model |
-| 3. No truth-checker | An invented document or a wrong fact, stated as fact, such as in Run 1 or Run 4 |
+| 3. No truth-checker | An invented document, a wrong fact, or a claim that nothing backs, stated as fact, such as "I ran the code" when no tool ran. When no run shows one, "none" with that reason fits |
 | 4. Tokens | Run 4's bare counts, questions 1 and 2 |
 | 5. The context window | Run 2, or Run 3's second reply |
 | 6. Confidence as style, and sycophancy | Run 2's push back, or a sure guess in Run 1 or Run 3 |
