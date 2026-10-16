@@ -28,7 +28,7 @@ Task 1 carries checks 1 to 6 of the lab's 12.
 
 1. **Privacy came first.** On each app, the training setting and memory were set, and the temporary chat found, before the first message. The AI asks you. Passed when your answer says so for both apps.
 2. **The training setting acts on later models.** Passed when its row says later models, or what the AI vendor may train on. Missed when it says the model you use, or the window.
-3. **Memory acts on the window.** Passed when memory's row says the window, or your account. It is saved notes that the app puts back, not learning. Missed when it says the model, or training.
+3. **Memory acts on the window, from your account.** Passed when memory's row says the window, or your account. It is saved notes that the app puts back, not learning. Missed when it says the model, or training.
 4. **The temporary chat acts on your account,** and it was found on both apps: an Incognito chat on Claude, Temporary on ChatGPT. Passed when its row says your account, with an entry for each app.
 5. **The controls are in their places.** Passed when at least seven of the eight controls, from new chat or continuing to projects, sit in a place the table accepts.
 6. **Both columns are filled.** Passed when every row has an entry for both apps: a setting, what you found, or "not on my plan". Missed when a column has an empty row.

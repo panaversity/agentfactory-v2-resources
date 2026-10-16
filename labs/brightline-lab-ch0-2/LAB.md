@@ -120,7 +120,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
              line above it, and the reply's answer in one line,
              in the reply's own words. Then ask me the question
              the line names, once, and record my answer.
-   Inputs:   The replies I paste, my answers, and two sources.
+   Inputs:   The replies I paste, my answers, and three meanings.
              Training: what the model learned before its
              knowledge cutoff, including how it words a reply.
              The window: everything the app puts in front of the
@@ -172,7 +172,8 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
               both entries. Ask me once, for all of them, "a setup
               step or a name only?", and wait for my one reply.
               Then add the last row, "Should a real file from
-              work go in?", and ask me for its answer.
+              work go in?", ask me for its answer, and show
+              me the whole checklist.
     Inputs:   My checklist. A setup step: something you do or
               check differently on one AI vendor. A name only: one
               control, two names.
