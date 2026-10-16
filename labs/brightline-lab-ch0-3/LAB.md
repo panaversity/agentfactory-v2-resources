@@ -152,7 +152,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    each rule, add its policy line, such as "(policy 4.1)".
    ```
 
-5. **Keep it as a file.** Copy the code block. In your lab conversation, send the line "The checked page:" with the page under it. Then paste the page into a plain text editor, and save it as `brightline-ap-notes.md`. On a Mac, use TextEdit, and choose Format > Make Plain Text before you save. On Windows, use Notepad, and choose "All files" as the file type.
+5. **Keep it as a file.** Copy the code block. Read each line against your decisions first: the AI may have added words again. In your lab conversation, send the line "The checked page:" with the page under it. Then paste the page into a plain text editor, and save it as `brightline-ap-notes.md`. On a Mac, use TextEdit, and choose Format > Make Plain Text before you save. On Windows, use Notepad, and choose "All files" as the file type.
 6. **A new chat, with the page.** Open a new chat, outside any project, on either AI vendor. Attach `brightline-ap-notes.md`, and send this:
 
    ```text
@@ -173,9 +173,11 @@ Nobody has approved your page. Keep it: Chapter 8 shows how a page like it becom
 
 **Your question:** "When the AI makes a copy for its next reader, did the copy keep every line of my request?"
 
+Dave wants the rules as a web page that the AP team can read on their phones.
+
 **What you do:**
 
-1. In your lab conversation, send this:
+1. In your lab conversation, send this, with the request from step 2 under it:
 
    ```text
    Outcome:  Task 3's rows, added in this conversation under my
@@ -192,7 +194,7 @@ Nobody has approved your page. Keep it: Chapter 8 shows how a page like it becom
              right.
    ```
 
-2. **Claude's web page.** Open a new chat on Claude, outside any project. Attach `brightline-ap-notes.md`, and send this, the short request from 0.3.3:
+2. **Claude's web page.** Open a new chat on Claude, outside any project. Attach `brightline-ap-notes.md`, and send this short request:
 
    ```markdown
    ## A web page from brightline-ap-notes.md

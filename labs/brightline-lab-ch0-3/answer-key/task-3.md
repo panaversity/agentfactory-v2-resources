@@ -10,7 +10,7 @@ The request has five lines, and each is one thing the copy must keep. The page i
 
 | The request's line | What a copy that keeps it shows |
 | --- | --- |
-| Every rule, in its own words, with its policy line. | Each rule on your page, with "(policy 4.1)" and the others, and no rule reworded |
+| Every rule, in its own words, with its policy line. | Each rule on your page, with its policy line, such as "(policy 4.1)" or "Policy 4.1", and no rule reworded |
 | The open questions, under their own heading. | The day of the run, if you left it open, and the Canadian dollars, under a heading of their own |
 | No remarks. | Nothing from Remarks, such as Dave's $10,000 idea |
 | Nothing that is not on the page. | No rule, number or advice that your page does not have |
