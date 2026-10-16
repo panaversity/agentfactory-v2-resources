@@ -8,12 +8,12 @@ The answers for Task 13 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 13 carries checks 25 and 26 of the lab's 28.
+Task 13 carries checks 23 and 24 of the lab's 26.
 
-25. **The line was added to the same doc, not a new one.** The doc has the same title as before, and the Artifacts section shows one Friday doc for the controller, not two. The new line says payments go out on Friday morning, October 2, 2026.
+23. **The line was added to the same doc, not a new one.** The doc has the same title as before, and the Artifacts section shows one Friday doc for the controller, not two. The new line says payments go out on Friday morning, October 2, 2026.
     - Missed: the AI made a second doc, or the line is missing.
 
-26. **The earlier version is back, from the version history.** The doc no longer has the new line, and the rest is as it was after Task 5. The version history still shows the change. Asking the AI to delete the line is a miss: that is a new edit, not the earlier version.
+24. **The earlier version is back, from the version history.** The doc no longer has the new line, and the rest is as it was after Task 5. The version history still shows the change. Asking the AI to delete the line is a miss: that is a new edit, not the earlier version.
 
 ## Worth noting, not scored
 

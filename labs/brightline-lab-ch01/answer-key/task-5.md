@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 5 carries checks 12 to 14 of the lab's 28.
+Task 5 carries checks 12 to 14 of the lab's 26.
 
 12. **The doc lists the three bills due by Friday, October 2, 2026, and their total, $3,977.80, each with its vendor, invoice number and amount, written for the controller.**
 

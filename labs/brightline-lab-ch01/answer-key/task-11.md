@@ -8,9 +8,9 @@ The answers for Task 11 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second
 
 ## The check
 
-Task 11 carries check 21 of the lab's 28.
+Task 11 carries check 19 of the lab's 26.
 
-21. **The task finished while your laptop was closed, and you can say where the spreadsheet is.**
+19. **The task finished while your laptop was closed, and you can say where the spreadsheet is.**
     - Passed: when you opened the conversation again, the work was done, and you did not type anything to finish it. The spreadsheet is a file card in this conversation. On ChatGPT, it is also in Library.
     - Missed: the work stopped while the laptop was closed, or it was waiting for you to answer a question, or you cannot find the spreadsheet.
     - If the AI stopped to ask you something, the brief left a decision open. Add the answer to your brief's Autonomy, and run it again.

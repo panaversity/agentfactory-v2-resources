@@ -2,11 +2,11 @@
 
 The answers for Task 6 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When Task 6's run is done, attach this file in the same conversation, with the lab's check prompt. Your AI marks each check Passed or Missed, quoting your answers from the conversation as proof. Then read the checks yourself and compare. You have the final say.
+**How this key is used.** When Task 6's run is done, attach this file in the same conversation, with the lab's check prompt. Your AI marks the check Passed or Missed, quoting your answers from the conversation as proof. Then read the check yourself and compare. You have the final say.
 
-## The checks
+## The check
 
-Task 6 carries checks 15 and 16 of the lab's 28.
+Task 6 carries check 15 of the lab's 26.
 
 15. **Every job has the surface below, and at most one job has a different rung.**
 
@@ -21,20 +21,6 @@ Task 6 carries checks 15 and 16 of the lab's 28.
 
 - On Claude, "chat" and "task" happen in the same conversation, and your brief decides. On ChatGPT, a task is a ChatGPT Work task, a schedule is a ChatGPT Work task on a schedule, and a standing worker is a dot. Naming the product instead of the surface is fine.
 - Job 3 or 4 placed as "AI Worker" is the one rung that may differ. It does the work once, so it is a task.
-
-16. **Your rules keep the AI from acting for Brightline on its own.** Actions D, E and F are never "alone". Actions A and B are not "never".
-
-| Action | Rule | Why |
-| --- | --- | --- |
-| A. Read new emails in the AP inbox | Alone | Reading changes nothing. It is the work itself. |
-| B. Look up an invoice in the AP spreadsheet | Alone | Looking changes nothing. |
-| C. Draft a reply to a vendor | Alone, or approval | A draft goes nowhere until someone sends it. |
-| D. Send a reply to a vendor | Approval | It speaks for Brightline, and it cannot be taken back. |
-| E. Pay an invoice | Approval, or never | It moves money. |
-| F. Change a vendor's bank account details | Never, or approval | A change here sends every later payment somewhere else. |
-
-- "Approval" for A or B is fine, but it means someone approves every email the AI reads. "Never" for A or B is a miss: the AI could not do the job.
-- These three tiers are a dot's Custom Rules: what it may do alone, what needs approval, and what is blocked.
 
 ## Worth noting, not scored
 

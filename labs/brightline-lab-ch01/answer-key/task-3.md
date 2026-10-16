@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The check
 
-Task 3 carries check 9 of the lab's 28: one check, one point, however the AI lays out its table.
+Task 3 carries check 9 of the lab's 26: one check, one point, however the AI lays out its table.
 
 9. **Three bills, $3,977.80.**
 

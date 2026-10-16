@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 4 to 8 of the lab's 28.
+Task 2 carries checks 4 to 8 of the lab's 26.
 
 4. **All 15 bills appear once each, with their printed totals.** 4471 is marked as paid, and 4471-R as a copy of 4471. The spreadsheet is the record of what each vendor billed. So each bill's amount is its printed total, or the printed total has a column of its own. A printed total that appears only in a note does not count. A second column with the lines' total is fine. In Task 1's total, either figure is fine.
 5. **The spreadsheet shows all 15 due dates, and they match the table below.** Payment terms count in calendar days from the invoice date. "Due on receipt" counts as the invoice date, since the date it arrived is not given. A sheet that stores the dates as formulas is fine. Open it, and your look decides.

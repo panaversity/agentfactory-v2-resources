@@ -8,9 +8,9 @@ The answers for Task 14 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 14 carries checks 27 and 28 of the lab's 28.
+Task 14 carries checks 25 and 26 of the lab's 26.
 
-27. **The Google Sheets file has a Pay by Friday? column, with Yes for three bills only.**
+25. **The Google Sheets file has a Pay by Friday? column, with Yes for three bills only.**
 
 | Invoice | Pay by Friday? | Why |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Task 14 carries checks 27 and 28 of the lab's 28.
 - The column is in the file in your Google Drive, not in a new file or only in the chat.
 - A note on bills due soon after Friday is fine, if the column still says No.
 
-28. **The sheet's own version history shows the AI's change.** In File, then Version history, then See version history, a version holds the new column.
+26. **The sheet's own version history shows the AI's change.** In File, then Version history, then See version history, a version holds the new column.
 
 ## Worth noting, not scored
 
