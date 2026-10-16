@@ -22,7 +22,7 @@ Task 2 carries checks 7 to 13 of the lab's 13.
 9. **The bank-details rule follows 5.1.** Passed when the checked page you pasted gives line 5.1's words, or has no bank-details rule under Rules. Missed when it stays as the notes wrote it.
 10. **The day stays open.** Passed when the checked page you pasted keeps the weekly run with "(policy 4.3)" and puts the day under Open questions, or moves the whole Friday line there. Missed when "on Friday" stays under Rules as a rule: no line names the day.
 11. **The page is kept.** The AI asks you. Passed when you say that you saved the checked page as `brightline-ap-notes.md`.
-12. **The first answer rests on the page.** Passed when the new chat says the $7,800 invoice needs Dave's approval, and your answer names the page's $5,000 rule, or its line "(policy 4.1)".
+12. **The first answer rests on the page.** Passed when the new chat says the $7,800 invoice needs approval, Dave's or the controller's, and your answer names the page's $5,000 rule, or its line "(policy 4.1)". A page in line 4.1's own words says "the controller", and a chat that reads only the page may not know that Dave is the controller.
 13. **The gap stays open.** Passed when the new chat says the page does not settle invoices in Canadian dollars, and your answer names the page's open question, or says none. Missed when the reply gives a rule for them and your answer accepts it.
 
 ## Never a deduction
