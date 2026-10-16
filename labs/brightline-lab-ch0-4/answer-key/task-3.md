@@ -29,5 +29,5 @@ Task 3 carries checks 9 to 12 of the lab's 12.
 ## Never a deduction
 
 - The run's wording, or the order of its rows.
-- A run that also lists its working, such as the two balances.
+- A run that also lists its working, such as the two balances, or adds a note, such as the statement's 10-day line, when its four differences are right.
 - A verdict of "send back" when your reason names a real line, even if the run's total was right.

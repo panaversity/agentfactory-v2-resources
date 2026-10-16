@@ -81,9 +81,10 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
              Description: what the run hands back, and how it
              behaves when the statement does not show something.
              Discernment: who checks the output, when, and against
-             what. Diligence: what may go in, who is told that AI
-             made it, and who signs. When: when the line is done,
-             before the first run, after each run, or throughout.
+             what. Diligence: what may go in, how people are told that
+             AI made it, and who signs. When: when a person does this
+             part, before the first run, after each run, or
+             throughout.
    Autonomy: I decide every line. Never suggest one. If an answer
              has no "when", ask me for it.
    ```
@@ -106,7 +107,8 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    Outcome:  Task 2's rows, added in this conversation under my
              plan: for each of three chats, where the behavior line
              was, and whether the answer guessed.
-   Format:   For each reply I paste, show its first line. Then ask
+   Format:   For each reply I paste, show its answer in one line,
+             in the reply's own words. Then ask
              me once, "Did it guess a reason, or say the statement
              does not show one?", and record my answer. After the
              third, ask me once, "Where must a line about the AI's
@@ -120,8 +122,8 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 2. **The line in the message.** On either AI vendor, open a new chat, outside any project, and send this:
 
    ```text
-   For this chat: explain each item in one line, and write "the
-   statement does not show" instead of guessing a reason.
+   For this chat: write "the statement does not show" instead of
+   guessing a reason.
    A vendor's statement line reads "CM 1182, Credit: 4 pallets
    returned, 240.00". Why is this credit not in Brightline's
    register?
@@ -129,7 +131,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 
 3. Copy the reply. In your lab conversation, send the line "Chat 1, the line in the message:" with the reply under it. Answer the AI's question.
 4. **A new chat, without the line.** Open a second new chat, outside any project, and send only the last three lines of the message above, from "A vendor's statement line reads". Copy the reply. In your lab conversation, send the line "Chat 2, a new chat without the line:" with the reply under it. Answer the AI's question.
-5. **The line in a project.** Make a project for the reconciliation, as 0.2 shows. On Claude, open Projects, then "+ New Project". On ChatGPT, choose "New project". Put your plan's Description lines in the project's instructions. Open a chat inside the project, and send the same three lines as step 4. Copy the reply. In your lab conversation, send the line "Chat 3, in the project:" with the reply under it. Answer the AI's question.
+5. **The line in a project.** Make a project for the reconciliation, as 0.2 shows. On Claude, open Projects, then "+ New Project". On ChatGPT, choose "New project". Put the same line in the project's instructions: Write "the statement does not show" instead of guessing a reason. Open a chat inside the project, and send the same three lines as step 4. Copy the reply. In your lab conversation, send the line "Chat 3, in the project:" with the reply under it. Answer the AI's question.
 6. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-4-key-task-2.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint:** your three rows say where the behavior line was in each chat and whether its answer guessed, your project holds your Description lines, and every one of Task 2's checks has passed.
@@ -140,7 +142,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 
 **What you do:**
 
-1. **The run.** Open a new chat inside your project, on the same AI vendor as in Task 2. Attach `4d-plan.md` and `inputs.zip`, and send this:
+1. **The run.** Open a new chat inside the project you made in Task 2. Attach `4d-plan.md` and `inputs.zip`, and send this:
 
    ```text
    Run this month's reconciliation for the attached statement,

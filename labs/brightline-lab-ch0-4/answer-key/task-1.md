@@ -8,7 +8,7 @@ The answers for Task 1 of Lab 0.4, in Chapter 0.4 of *The AI Agent Factory*, Sec
 
 The run works alone, so it has only what the page says. A line counts when it settles the thing below in your own words.
 
-| The D | Its lines settle | Its "When" |
+| The D | Its lines settle | Its usual "When" (any of the three passes when it fits the line) |
 | --- | --- | --- |
 | Delegation | What the AI does alone (compare the statement with the register and explain each difference), and what waits for a person: any change to the register (policy 7.4) and any contact with the vendor (policy 7.7). | Before the first run |
 | Description | What the run hands back, such as one row per difference with its amount and its reason, and what it does when the statement does not show a reason: say so, and never guess. | Before the first run |
@@ -23,11 +23,11 @@ Task 1 carries checks 1 to 5 of the lab's 12.
 2. **What waits for a person.** Passed when Delegation keeps any change to the register, and any contact with the vendor, for a person. Missed when either is left to the AI, or not named.
 3. **What the run does when unsure.** Passed when Description says what the run hands back, and that it says the statement does not show something instead of guessing. Missed when it gives only the output.
 4. **A set time, and a source.** Passed when Discernment names who reads, when, and a source to check against. Missed when it says only "check the output".
-5. **What goes in, who is told, who signs.** Passed when Diligence names what may go in, that the output says AI made it, and who signs. Missed when any of the three is missing.
+5. **What goes in, who is told, who signs.** Passed when Diligence names what may go in, how people are told that AI made it, such as a line at the top of the output, and who signs. Missed when any of the three is missing.
 
 ## One line to watch
 
-A label the run writes, such as "Made by AI, checked by Dave", claims a check before anyone has checked. Have the run write that AI made the table, and let Dave's signature, after his review, say that it was checked. A plan with the early label still passes check 5, and Task 3 shows you the label.
+A label the run writes, such as "Made by AI, checked by Dave", claims a check before anyone has checked. Have the run write that AI made the table, and let Dave's signature, after his review, say that it was checked. A plan with the early label still passes check 5. Look at the label in Task 3's output.
 
 ## Never a deduction
 
