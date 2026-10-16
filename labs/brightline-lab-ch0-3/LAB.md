@@ -41,7 +41,7 @@ knows yet what to do with an invoice in Canadian dollars.
 
 ## How the lab works
 
-The lab uses two kinds of chat. Your **lab conversation** is one chat on Claude, with your Lab 0.2 settings. It holds your notes table and your checks, from Task 1 to the end. Each page starts in a new chat of its own, as its step says. You copy each page into your lab conversation, under the line the step prints, and the AI there asks you about it.
+The lab uses two kinds of chat. Your **lab conversation** is one chat on Claude, with your Lab 0.2 settings. It holds your notes table and your checks, from Task 1 to the end. Each AI vendor makes its page in a new chat of its own, and Task 2 goes back to one of those chats. You copy each page into your lab conversation, under the line the step prints, and the AI there asks you about it.
 
 Copy every message and brief exactly as it is printed. When a step says to copy a page, copy the whole code block.
 
@@ -123,12 +123,12 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    Format:   When I paste the policy check, list each rule with the
              line it quoted, or "no line covers it". Ask me once, for
              all the rules and any line I named in Task 1, "Keep,
-             fix with the policy's words, move to Open questions, or
-             cut?", and record my one reply. When I paste the checked
-             page, record each rule as it now reads. When I paste the
-             new chat's reply, ask me once, "Which line of the page
-             does each answer rest on, or none?", and record my
-             answer.
+             fix with the policy's words, split, move to Open
+             questions, or cut?", and record my one reply. When I
+             paste the checked page, record each rule as it now
+             reads. When I paste the new chat's reply, ask me once,
+             "Which line of the page does each answer rest on, or
+             none?", and record my answer.
    Inputs:   The replies I paste, and my answers.
    Autonomy: I decide every rule and every answer. Never suggest
              one. Until my check prompt, never tell me whether I am
@@ -141,10 +141,10 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    Check each rule on the page against the attached policy. For
    each rule, quote the policy line that says it, or the line that
    says otherwise, word for word, with its number. If no line
-   covers a rule, say so.
+   covers a rule, say so. Quote only, and suggest no changes.
    ```
 
-3. Open `inputs.zip` on your computer, and compare one of the reply's quotes with the policy's own line, word for word. Then copy the reply. In your lab conversation, send the line "The policy check:" with the reply under it. Answer the AI's question. A rule that a line settles only in part can be split: keep that part, and move the rest to Open questions.
+3. Open `inputs.zip` on your computer, and compare one of the reply's quotes with the policy's own line, word for word. Then copy the reply. In your lab conversation, send the line "The policy check:" with the reply under it. Answer the AI's question.
 4. **The checked page.** In the same chat as step 2, send your decisions in a few words, with this under them, in one message:
 
    ```text
@@ -152,7 +152,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    each rule, add its policy line, such as "(policy 4.1)".
    ```
 
-5. **Keep it as a file.** Copy the code block. Read each line against your decisions first: the AI may have added words again. In your lab conversation, send the line "The checked page:" with the page under it. Then paste the page into a plain text editor, and save it as `brightline-ap-notes.md`. On a Mac, use TextEdit, and choose Format > Make Plain Text before you save. On Windows, use Notepad, and choose "All files" as the file type.
+5. **Keep it as a file.** Copy the code block. Read each line against your decisions first: the AI may have added words again. If it did, ask it to show the page again without them. In your lab conversation, send the line "The checked page:" with the page under it. Then paste the page into a plain text editor, and save it as `brightline-ap-notes.md`. On a Mac, use TextEdit, and choose Format > Make Plain Text before you save. On Windows, use Notepad, and choose "All files" as the file type.
 6. **A new chat, with the page.** Open a new chat, outside any project, on either AI vendor. Attach `brightline-ap-notes.md`, and send this:
 
    ```text
@@ -206,8 +206,8 @@ Dave wants the rules as a web page that the AP team can read on their phones.
    - Easy to read on a phone.
    ```
 
-3. Open the web page, and lay it beside your page. Check each of the five lines against it. If the copy dropped or changed a line, send the same request again in the same chat. Never fix the copy by hand.
-4. Copy the web page's text. In your lab conversation, send the line "Claude's web page:" with the text under it. Answer the AI's questions.
+3. Open the web page, and lay it beside your page. Check each of the five lines against it. For the last line, make the window as narrow as a phone. If the copy dropped or changed a line, send the same request again in the same chat. Never fix the copy by hand.
+4. Copy the text the web page shows, not its code. In your lab conversation, send the line "Claude's web page:" with the text under it. Answer the AI's questions.
 5. **ChatGPT's web page.** Do steps 2 to 4 again on ChatGPT, and send the line "ChatGPT's web page:". The page comes back as code: open its Preview to see it. On ChatGPT's free plan, this may be your third upload today.
 6. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-3-key-task-3.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 

@@ -22,7 +22,7 @@ A copy can drop a line, add one or turn a remark into a rule. That is why it is 
 
 Task 3 carries checks 14 to 16 of the lab's 16.
 
-14. **The request went with the page.** Passed when, for each web page, the request was the five lines from 0.3.3, sent with `brightline-ap-notes.md` attached. The AI asks you if it cannot see it.
+14. **The request went with the page.** Passed when, for each web page, the request was the five lines printed in Task 3, step 2, sent with `brightline-ap-notes.md` attached. The AI asks you if it cannot see it.
 15. **Each line, kept or not.** Passed when your rows mark each of the five lines, kept, dropped or changed, for both web pages. Missed when a page's rows skip a line.
 16. **Asked again, never fixed by hand.** Passed when a copy that dropped or changed a line was asked for again with the same page and request, or when your answer says no copy dropped a line. Missed when your answer says you fixed a copy by hand.
 
