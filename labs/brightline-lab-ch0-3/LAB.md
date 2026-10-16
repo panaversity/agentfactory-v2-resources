@@ -167,7 +167,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
 
 **Checkpoint:** your rules check has a decision for each rule, your page is saved as `brightline-ap-notes.md`, the new chat's answers are recorded, and every one of Task 2's checks has passed.
 
-Nobody has approved your page. Keep it: Chapter 8 shows how a page like it becomes part of Brightline's record.
+Nobody has approved your page. Chapter 8 shows how a company approves a page like it.
 
 ## Task 3. Dave's web page, beside the page (8 minutes)
 
