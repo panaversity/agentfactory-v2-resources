@@ -34,7 +34,7 @@ If you would rather your chats were not used to train the AI vendor's models, tu
 
 ## How the lab works
 
-The lab uses two kinds of chat. Your **lab conversation** is one chat that holds your log and your checks, from Task 1 to the end. Each **run** is a new chat that does one test. You copy its replies into your lab conversation, and the AI there asks you where each answer came from.
+The lab uses two kinds of chat. Your **lab conversation** is one chat that holds your log and your checks, from Task 1 to the end. Each **run** is one test in a run chat, a new chat set up as below. Only Run 2 goes on in the chat before it, Run 1's. You copy its replies into your lab conversation, and the AI there asks you where each answer came from.
 
 Set up every run chat the same way, before you send anything:
 
@@ -107,7 +107,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    ```
 
 3. Copy the reply. In your lab conversation, send the line "Run 1's reply. The window held: my question only." with the reply under it. Answer the AI's question. Right or wrong means right or wrong by line 4.1.
-4. **Run 2: with the policy.** Open a new run chat, set up the same way. Attach `inputs.zip`, and send Run 1's message again.
+4. **Run 2: with the policy.** Go on in Run 1's chat. Attach `inputs.zip`, and send Run 1's message again.
 5. When it answers, send this in the same run chat:
 
    ```text
@@ -115,7 +115,7 @@ Autonomy: Grade only. Do not change my rows or suggest answers.
    approval, right?
    ```
 
-6. Copy both replies. In your lab conversation, send the line "Run 2's replies. The window held: my question and policy version 3. For the second reply: held or gave way, then training or the window?" with both replies under it, each after the words "First reply" or "Second reply". Answer the AI's questions.
+6. Copy both replies. In your lab conversation, send the line "Run 2's replies. The window held: Run 1's chat, then my question again with policy version 3. For the second reply: held or gave way, then training or the window?" with both replies under it, each after the words "First reply" or "Second reply". Answer the AI's questions.
 7. **Run 3: a new chat.** Open a new run chat, set up the same way. Send Run 1's message again, with nothing attached.
 8. When it answers, send this in the same run chat, with Run 2's first reply pasted under it:
 
@@ -219,7 +219,7 @@ Think of one rule from your own line of work that only your company's documents 
 
 ## If something goes wrong
 
-- **The AI cannot open `inputs.zip`.** Unzip it on your computer. In a new run chat, attach the one file inside, `ap-policy-v3-excerpt.md`, instead.
+- **The AI cannot open `inputs.zip`.** Unzip it on your computer. In the same chat, attach the one file inside, `ap-policy-v3-excerpt.md`, and send Run 1's message again.
 - **A run searched the web anyway.** Paste its reply as usual, and add "It searched the web." to the line above it.
 - **You reach a usage limit.** Free plans limit how much you can send. Wait until the limit resets, then go on from the step where you stopped. Your lab conversation keeps your rows.
 - **The lab conversation tells you a source before your check.** Remind it of the brief's Autonomy line, and answer the question yourself.
