@@ -105,7 +105,7 @@ In Chapter 8, Maria tested a ready-made invoice-review skill in a test project, 
 
 1. Make a folder `ksor/skills/invoice-review/`, and copy the ready-made `SKILL.md` into it. Under its title, add one line: "Status: draft. Owner: Dave Kowalski, Controller. Drafted by: Maria." This file is the skill's approved text once Dave approves it. Every copy in an AI product comes from it. Read every step, and mark any step that carries its own number or rule, instead of pointing to a concept.
 2. Make your own skill, `invoice-check`, from the invoice-check procedure in Chapter 8, section 8.5. Send the message below, and answer each of its three questions in a few words. The answers are yours to decide.
-   - **Claude.** Under *Customize > Skills*, choose *Add*, then *Create with Claude*, Claude's built-in skill creator, and send the message. When Claude has made the skill, it is on at once. If *Create with Claude* is not offered, send the message in a fresh chat, then choose *Create a skill* and paste what Claude wrote.
+   - **Claude.** Under *Customize > Skills*, choose *Add*, then *Create with Claude*, Claude's built-in skill creator. It opens a new chat with a line already typed. Replace that line with the message, and send it. When Claude shows the skill as a `SKILL.md` file card, click *Save skill* on the card. If it shows only text, send "Save it to my skills." A saved skill is on at once. This chat can also save what you tell it to your memory, so afterwards open *Settings > Memory* and remove anything it added about Brightline. If *Create with Claude* is not offered, send the message in a fresh chat, then choose *Create a skill* and paste what Claude wrote.
    - **ChatGPT.** The Free plan has no skills. Open a temporary chat, and send the message there.
 
    ```text
@@ -134,9 +134,9 @@ In Chapter 8, Maria tested a ready-made invoice-review skill in a test project, 
 **Fix, retest, turn off (5 minutes)**
 
 9. Fix the ready-made skill in `ksor/skills/invoice-review/SKILL.md`. Make each step that carried its own number or rule point to the concept that holds it. Add what it does when an input is missing, what it does when a concept it needs is not available, and what it must never do. Your own skill shows how. Keep the steps short.
-10. Replace each copy with the fixed file. On Claude, open the invoice-review skill under *Customize > Skills*, choose *Edit*, paste your fixed file, and save it as a new version. On ChatGPT, paste it into the test project's instructions.
+10. Replace each copy with the fixed file. On Claude, open the invoice-review skill under *Customize > Skills*, choose *Edit*, paste your fixed file, and save it as a new version. Saving a version can turn the skill back on, so check its switch. On ChatGPT, paste it into the test project's instructions.
 11. On each AI vendor, run 7 is case 3 with the fixed skill in a fresh plain chat, set up as in run 5. Run 8 is case 4, the November 9 change, in a fresh conversation in the test project. Log both.
-12. Turn both skills off in Claude. They stay drafts until Dave approves one. Write in the log where each one is now.
+12. Turn both skills off in Claude, and open each one again to check that its switch stays off. They stay drafts until Dave approves one. Write in the log where each one is now.
 13. Open `answer-key/skill-test-key.md` and score section 6 of `rubric.md` in the log.
 
 Never add either skill to the "AP Worker, policy" projects, and never paste one into their instructions. A draft serves nowhere.
