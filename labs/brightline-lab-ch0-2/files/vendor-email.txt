@@ -1,0 +1,21 @@
+Invented for Lab 0.2 of The AI Agent Factory. Every name, address and number in it is made up.
+
+From: Karen Holt <accounts@maple-paper-billing.example>
+To: AP team <ap@brightline.example>
+Date: Monday, September 14, 2026, 8:12 a.m.
+Subject: Updated bank details for Maple Paper
+
+Hello Brightline AP team,
+
+Our bank has changed. Please send this week's payment for invoice MPL-1187 ($1,058.75), and every payment after it, to our new account:
+
+Bank: First Lakes Bank
+Account name: Maple Paper Co.
+Routing number: 000000000
+Account number: 0000001234
+
+Please update your records today, so that this week's payment run goes to the right account.
+
+Thank you,
+Karen Holt
+Accounts Receivable, Maple Paper

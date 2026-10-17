@@ -6,11 +6,9 @@ Chapter 0.3 of *The AI Agent Factory*, Second Edition. Every name, number and co
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: three tasks on your free Claude and ChatGPT accounts, each with its own answer key. |
-| `inputs.zip` | One folder, `inputs`, with `ap-policy-v3-excerpt.md`: Brightline's AP policy, version 3. |
+| `LAB.md` | The lab: eight steps on your free Claude or ChatGPT account, each with what you probably saw. |
+| `files/invoices-this-week.csv` | Brightline's twelve unpaid invoices on Monday, September 14, 2026, the same as in Lab 0.2. |
+| `files/ap-notes.txt` | Brightline's AP notes, written by several people over time. |
+| `files/ap-policy-v3.pdf` | Brightline's AP policy, version 3, which Dave, the controller, approved. |
 
-**Of the files in this folder, give the AI only `inputs.zip`, and only when Task 2's policy check says so.** The notes are printed in `LAB.md`, for you to paste. Never upload `LAB.md` or this file: they link every answer key.
-
-The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step: you download it when the task is done, and give it to your lab conversation to check.
-
-You leave with one file of your own, `brightline-ap-notes.md`: the notes as a markdown page, each rule checked against the policy. Nobody has approved it. Chapter 8 starts from a page like it.
+Give the AI only the files in `files`, and only when a step says so.

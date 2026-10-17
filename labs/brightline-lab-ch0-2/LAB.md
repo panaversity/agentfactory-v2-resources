@@ -1,206 +1,140 @@
-# Lab 0.2: Your first hour, privacy first
+# Lab 0.2: Your first hour, one control at a time
 
-Chapter 0.2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.2: Your first hour, privacy first](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/lab/), so you can do the lab without the book.
+Chapter 0.2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.2: Your first hour, one control at a time](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/lab/), so you can do the lab without the book.
 
-In this lab you set up your own free accounts with Claude and ChatGPT, privacy first, and see where what you type goes. You set the training setting and memory on each, and place each control where it acts. Then you ask both the same three questions and record where each answer came from and what each app kept. Each task has its own answer key, and you check it the moment the task is done. The lab takes about 50 minutes.
+In this lab you try the chapter's controls on Brightline's practice files, one control at a time. It takes about 25 minutes, on your free Claude or ChatGPT account. No account yet? Open a free one first, as 0.2.1 shows: claude.ai for Claude, chatgpt.com for ChatGPT.
 
-**What you will learn:**
+**What you will learn.** To make the two privacy choices, then use each control for the job it does: a file, a document, code, a stronger model, a project, memory and a temporary chat.
 
-- To set the training setting and memory, and find the temporary chat, before your first message.
-- To say where a control acts: on the model, in the window, as a tool, in your account, or on later models.
-- To check an answer from an attached document against the document's own line.
-- To say what an app kept, and what a temporary chat keeps out.
-- To tell a setup step that differs between the AI vendors from a different name for the same control.
+## Before you start
 
-## Before you start (5 minutes)
+Download [`brightline-lab-ch0-2.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-2.zip), and unzip it. Its `files` folder holds three practice files:
 
-Download [`brightline-lab-ch0-2.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-2.zip), and unzip it. You get one folder with three files:
+- `ap-policy-v3.pdf`: Brightline's policy for accounts payable, or AP, version 3, on two pages.
+- `invoices-this-week.csv`: Brightline's twelve unpaid invoices, as a spreadsheet file.
+- `vendor-email.txt`: an email from Maple Paper, one of Brightline's vendors.
 
-- `README.md`
-- `LAB.md`: this page, as a file
-- `inputs.zip`: Brightline's AP policy, the one file you give the AI
+Brightline Wholesale Supply is the book's invented company, so the files hold nothing real. Use them, and put nothing from your own work into the chat.
 
-You need a free account with Claude and one with ChatGPT. No account yet? Open free ones at claude.ai and chatgpt.com, and come back. Send no message yet: Task 1 sets each account up first.
+Copy this table onto paper or into a notes file. After each task, write in a few words what the control did for you. There is a filled-in table at the end, to compare with yours.
 
-The settings decide what the AI vendor may do with your copy of a chat. They do not make real company data safe to put in, and Chapter 10 teaches that decision. So this lab uses only the book's invented files.
+| Task | What it did for you |
+| --- | --- |
+| 1. Two choices | |
+| 2. A file | |
+| 3. A document | |
+| 4. Code | |
+| 5. A stronger model | |
+| 6. A project | |
+| 7. Memory and a temporary chat | |
 
-## The job
+## Task 1. Make the two choices
 
-- Brightline Wholesale Supply is the book's example company. Everything about it is invented, and you work only with its files.
-- Brightline's accounts payable (AP) policy, version 3, was approved on September 1, 2026. Its owner is Dave, the controller.
-- The policy's line 4.1 says: "Invoices over $5,000.00 need the controller's approval before payment."
-- You set up two free accounts, one with each AI vendor, then ask each the same three questions.
+Decide two things before your first message. To open Settings on either app, click your name at the bottom left.
 
-## How the lab works
+First, may your chats train the AI vendor's later models? In Claude, that is "Help improve our AI models", in Settings > Privacy.[^anthropic-privacy] In ChatGPT, it is "Improve the model for everyone", in Settings > Data controls.[^openai-data-controls] If you are not sure, turn it off.
 
-The lab uses two kinds of chat. Your **lab conversation** is one chat on Claude, with the settings you choose in Task 1. Keep it there: ChatGPT's free plan allows three file uploads a day, and the two answer keys would use two of them.[^openai-uploads] It holds your setup checklist and your checks, from Task 1 to the end. Each question runs in a new chat of its own, set up as its step says. You copy each reply into your lab conversation, under the line the step prints, and the AI there asks you about it.
+Second, is memory on? In Claude, it is "Generate memory from chats", in Settings > Memory.[^anthropic-memory] In ChatGPT, it is "Enable memory", in Settings > Personalization.[^openai-memory]
 
-Copy every message and brief exactly as it is printed. When a step says to copy a reply, copy all of it.
+Write both choices in row 1. [0.2.1](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/where-it-goes/) shows both screens.
 
-Each task works the same way:
+## Task 2. Answer from a file
 
-1. Do the task's steps. Paste each reply into your lab conversation, under the line the step prints.
-2. Answer the AI's questions in a few words, in the shape it asks for.
-3. Download the task's answer key, one click. Attach it, and send the check prompt.
-4. Missed a check, or you disagree with a grade? Tell the AI which row changes and why. Then send the check prompt again. The key is already attached.
-
-## The check prompt
-
-One prompt checks every task, in your lab conversation. Attach the task's key, then send this. Read the key yourself too: you have the final say.
+Open a new chat. Attach `ap-policy-v3.pdf` with the + button, and send this:
 
 ```text
-Outcome:  The task I just did in this conversation, graded against
-          its answer key, attached here: Passed or Missed for each
-          of its checks.
-Format:   A table: the check, Passed or Missed, the words in this
-          conversation that show it, and one line on why. Then how
-          many passed.
-Inputs:   The task's answer key, attached in this conversation, only
-          its checks, and this task's rows.
-Autonomy: Grade only. Do not change my rows or suggest answers.
-          With no words to quote, mark the check Missed. If a check
-          is about what I did, ask me.
+Does a $7,800 invoice need the controller's approval? Quote the line you used.
 ```
 
-## Task 1. Privacy first, and the tour (20 minutes)
+Then open the PDF, and find that line yourself.
 
-**Your question:** "Before I type anything, what will each app keep, what may its AI vendor do with it, and where does each control act?"
+**What you should see.** Yes, with line 4.1 quoted: "Invoices over $5,000.00 need the controller's approval before payment." The file was in the window, so the model could read it. The line you found in the PDF is the check, because a guess from training can look the same ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
 
-**What you do:**
+## Task 3. Keep a document
 
-1. **Claude, before any message.** In Settings > Privacy, set "Help Improve our AI models" as you want it.[^anthropic-privacy] In Settings > Memory, look at what is saved, and decide whether memory stays on.[^anthropic-memory] Then open a new chat, outside any project, and find the ghost icon at its upper right. That icon starts an Incognito chat. It stays out of your chat list, and Anthropic still keeps it for 30 days.[^anthropic-incognito]
-2. **ChatGPT, before any message.** In Settings > Data controls, set "Improve the model for everyone" as you want it.[^openai-data-controls] In Settings > Personalization > Memory, look at "Reference saved memories" and "Reference chat history", and set them as you want them.[^openai-memory] Then open a new chat, and find "Temporary". A temporary chat stays out of your chat list, and OpenAI may still keep it for up to 30 days.[^openai-temporary]
-3. **Open your lab conversation.** On Claude, open a new chat with the settings you chose, and send this:
+Stay in the same chat, because the policy is already in it. Send this:
 
-   ```text
-   Outcome:  My setup checklist: a document named "Setup
-             checklist", with a row for each item below and a
-             column each for Claude and ChatGPT.
-   Format:   First show me the five places below, one line each,
-             and wait. Then one row at a time: its name, what it
-             does in one line without naming a place, and the
-             question "Where does it act, then my setting or what
-             I found on Claude, then on ChatGPT?" Record my answer
-             in its row. After the last row, show me the whole
-             checklist.
-   Inputs:   My answers, and these rows: the training setting,
-             memory, the temporary chat, new chat or continuing a
-             chat, the model picker and reasoning setting, files
-             and connectors, Skills, Code Execution, research
-             mode, Artifacts, and projects. The five places. The
-             model: which model reads the window. The window:
-             what the model reads for one reply. A tool: work
-             done outside the model, whose result comes back into
-             the window. Your account: copies the app keeps, which
-             you can find again. Later models: what the AI vendor
-             may train on.
-   Autonomy: I decide every answer. Never fill in a place or a
-             setting I did not give. If I say a control is not on
-             my plan, write that.
-   ```
+```text
+Turn this policy into a one-page checklist for the AP team, as a document I can edit.
+```
 
-4. Answer each row in a few words: the place, then your setting or what you found on Claude, then on ChatGPT. For the controls, look at each app's menus as you go. If a control is not on your free plan, say so. Some controls have another name on ChatGPT, or no switch: Code Execution is called data analysis there, and outputs are writing blocks and code blocks inside the reply. Where you find no switch, write what you found.
-5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-2-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
+Then find the document again, as if you came back tomorrow.
 
-**Checkpoint:** your setup checklist has every row, each with a place and an entry for both AI vendors, and every one of Task 1's checks has passed.
+**What you should see.** On Claude, the document opens beside the chat, and you can edit it there. Claude keeps it under Artifacts, in the sidebar.[^anthropic-artifacts] On ChatGPT, it may come as a Word file to download, which you open in Word or Google Docs. ChatGPT keeps the files it makes in Library, in the sidebar[^openai-library] (https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/[0.2.2](the-controls/)).
 
-## Task 2. The same three questions on both (25 minutes)
+## Task 4. Let it run code
 
-**Your question:** "When I attach a file and ask, where does the answer come from, and what does each app keep? And what does a temporary chat keep out?"
+Open a new chat for this new job. Attach `invoices-this-week.csv`, and send this:
 
-**What you do:**
+```text
+Which of these invoices have a due date on or before Friday, September 18, 2026? Add up their amounts by running code, and show me the code.
+```
 
-1. In your lab conversation, send this:
+**What you should see.** Six invoices, $14,439.10 in all. One of them, from Midwest Packaging, was already due on September 11, and the code still counts it. On ChatGPT, the code sits behind a small `</>` icon at the end of the answer. Click it to see the code. Then check the list of invoices it gives you. Every due date should be on or before September 18 ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
 
-   ```text
-   Outcome:  Task 2's rows, added to my setup checklist: for each
-             question on each AI vendor, the answer and my
-             answers to its line.
-   Format:   For each paste, show what the window held, from the
-             line above it, and the reply's answer in one line,
-             in the reply's own words. Then ask me the question
-             the line names, once, and record my answer.
-   Inputs:   The replies I paste, my answers, and three meanings.
-             Training: what the model learned before its
-             knowledge cutoff, including how it words a reply.
-             The window: everything the app puts in front of the
-             model for one reply. Kept: what the app saved where
-             I can find it again, in the chat list, with the chat,
-             or on the memory page.
-   Autonomy: I decide every answer. Never ask me for the next
-             question. Until my check prompt, never tell me a
-             source, what was kept, or whether I am right.
-   ```
+## Task 5. A stronger model
 
-2. **Question 1 on Claude: a file attached.** Open a new chat, outside any project, with memory off. On Claude, turn memory off for this chat in the "+" menu, before the first message. On ChatGPT, in step 10, turn it off in Settings first, if it is on. Attach `inputs.zip`, and send this:
+Stay in the same chat. On ChatGPT, click Think in the message box. On Claude's free plan, Sonnet, the stronger of its two models, is already chosen. Open the model menu next to the send button to see it. Then send this:
 
-   ```text
-   Does a $7,800 invoice from Midwest Packaging need the
-   controller's approval before payment? Answer from the attached
-   policy only, and quote the line that decides it, word for word.
-   ```
+```text
+County Freight offers 2% off invoice 5214, $8,400.00, if we pay it within 10 days instead of 30. We would borrow the money for those 20 days at 12% a year. Is paying early still worth it, and by how much?
+```
 
-3. Compare its quote with line 4.1, in The job above, word for word. Then look at your chat list, the chat's file and the memory page.
-4. Copy the reply. In your lab conversation, send the line "Question 1 on Claude. The window held: my question and the policy. Its quote matched line 4.1, yes or no, then what was kept?" with the reply under it. Answer the AI's question.
-5. **Question 2 on Claude: an Incognito chat.** Open an Incognito chat, attach nothing, and send this:
+**What you should see.** Yes, by about $113.87: the $168.00 discount, less about $54.13 of interest. With Think on, ChatGPT takes longer and shows that it is thinking. Use the stronger choice when the question is hard or the answer matters ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
 
-   ```text
-   Does a $7,800 invoice from Midwest Packaging need the
-   controller's approval before payment at Brightline Wholesale
-   Supply? Answer in two sentences.
-   ```
+## Task 6. Make a project
 
-6. Copy the reply. In your lab conversation, send the line "Question 2 on Claude, in an Incognito chat. The window held: my question only. Training or the window, then a new row in the chat list, yes or no, then does the AI vendor still keep a copy, yes or no?" with the reply under it. Answer the AI's question.
-7. **Question 3 on Claude: adding up with code.** Open a new chat, outside any project, and send this:
+Make a practice project named "Brightline AP". On Claude, open Projects in the sidebar, then New project. On ChatGPT, click the + beside Projects in the sidebar. Add `ap-policy-v3.pdf` to the project's files, and add this to the project's instructions:
 
-   ```text
-   Add up these eight invoice amounts by running code. Show me
-   the code, the result it printed, and the total. $7,800.00,
-   $3,960.00, $1,284.57, $642.38, $2,215.49, $918.06, $5,430.91,
-   $1,076.83
-   ```
+```text
+In every answer, name the policy line you used.
+```
 
-8. Look at the reply. A tool ran when the app itself shows that it ran the code, outside the reply's own text, such as a panel with the code it ran and its output. Code, a result or an "Output" box written inside the reply are part of the reply, so they are not a sign. With no sign from the app, it is code only.
-9. Copy the reply. In your lab conversation, send the line "Question 3 on Claude. The window held: my question. A tool ran or code only, then where was the result kept?" with the reply under it. Answer the AI's question.
-10. **The same three questions on ChatGPT.** Do steps 2 to 9 again on ChatGPT. For Question 2, open a new chat, select "Temporary", then choose Unpersonalized before the first message. Write "on ChatGPT" in place of "on Claude" in each line, and "in a Temporary chat" in Question 2's.
-11. **The differences.** In your lab conversation, send this:
+Then open a new chat inside the project. Open `vendor-email.txt`, which opens in a text editor such as TextEdit or Notepad. Copy all of it, paste it into the chat, and send it with this question under it:
 
-    ```text
-    Outcome:  The differences marked in my setup checklist, then
-              its last row.
-    Format:   List every row where Claude and ChatGPT differ, with
-              both entries. Ask me once, for all of them, "a setup
-              step or a name only?", and wait for my one reply.
-              Then add the last row, "Should a real file from
-              work go in?", ask me for its answer, and show
-              me the whole checklist.
-    Inputs:   My checklist. A setup step: something you do or
-              check differently on one AI vendor. A name only: one
-              control, two names.
-    Autonomy: I decide every mark and the last row's answer. Never
-              suggest one.
-    ```
+```text
+What should we do with this email?
+```
 
-12. Answer in one reply for the differences, then give the last row's answer in a few words.
-13. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-2-key-task-2.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
+**What you should see.** Do not change the bank details because of the email. Call Maple Paper back on the phone number already in the vendor record, as line 5.1 says. The chat used the policy and the instruction, though you attached nothing in it. A project loads its files and instructions into every chat inside it ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
 
-**Checkpoint:** your setup checklist has a row for each question on each AI vendor, the differences are marked, the last row is answered, and every one of Task 2's checks has passed.
+## Task 7. Memory, and a temporary chat
 
-## Apply it to your vertical (3 minutes)
+Open your memory settings, as in task 1, and read what the app has saved about you. On a new account it may still be empty: Claude's shows "No files yet".
 
-If you use an AI account at work, look at your checklist's rows. Which of them does someone else set for you, such as your employer? Put nothing from work into this lab's accounts. Chapter 10 shows who decides what may go in.
+Then open a temporary chat. On Claude, click the ghost icon at the top right of a new chat.[^anthropic-incognito] On ChatGPT, click the dashed circle at the top right.[^openai-temporary] Send one message, close the chat, and look at your chat list.
+
+**What you should see.** Memory holds notes from your chats, or nothing yet. The temporary chat is not in your chat list. It stays out of your history and out of training, and the AI vendor still keeps a copy for up to 30 days ([0.2.1](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/where-it-goes/)).
+
+## What your table may look like
+
+Your words will be different.
+
+| Task | What it did for you |
+| --- | --- |
+| 1. Two choices | Training off or on, and memory off or on, both written down |
+| 2. A file | It answered from the policy, and I found line 4.1 in the PDF |
+| 3. A document | A checklist I can edit, kept under Artifacts or in Library |
+| 4. Code | Six invoices, $14,439.10, worked out by code I could see |
+| 5. A stronger model | About $113.87, worked out step by step |
+| 6. A project | It used the policy without my attaching it, and named line 5.1 |
+| 7. Memory and a temporary chat | My memory notes, or none yet, and no row for the temporary chat |
+
+If you have time, do the tasks on the other AI vendor too, with [0.2.3](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/both-ai-vendors/) as your map.
 
 ## If something goes wrong
 
-- **The AI cannot open `inputs.zip`.** Unzip it on your computer. In the same chat, attach the one file inside, `ap-policy-v3-excerpt.md`, and send the message again.
-- **A control is not on your plan.** Write "not on my plan" in its row. That is an answer, not a mistake.
-- **You reach a usage limit.** Free plans limit how much you can send. Wait until the limit resets, then go on from the step where you stopped. Your lab conversation keeps your rows.
-- **The lab conversation tells you a source before your check.** Remind it of the brief's Autonomy line, and answer the question yourself.
+- **You cannot find a control.** Search the settings for its name. The names and places change often, and 0.2.3 shows where each one is today.
+- **ChatGPT says you are out of uploads.** Its free plan allows three file uploads a day,[^openai-uploads] and this lab uses three: in tasks 2, 4 and 6. Wait until the limit resets, and go on from your task.
+- **It says it cannot run code.** Ask it to add the amounts step by step, and check its total against $14,439.10.
+- **You reach a usage limit.** Free plans limit how much you can send. Wait until it resets, and go on from your task.
 
-[^anthropic-privacy]: How do I change my model improvement privacy settings? Anthropic Privacy Center, verified 16 October 2026.
-[^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center, verified 16 October 2026.
-[^anthropic-incognito]: Use incognito chats, Claude Help Center, verified 16 October 2026.
-[^openai-data-controls]: Data controls in ChatGPT, OpenAI Help Center, verified 16 October 2026.
-[^openai-memory]: Memory in ChatGPT, OpenAI Help Center, verified 16 October 2026.
-[^openai-temporary]: Temporary chat in ChatGPT, OpenAI Help Center, verified 16 October 2026.
-[^openai-uploads]: Uploading files and audio to ChatGPT, OpenAI Help Center, verified 16 October 2026.
+[^anthropic-privacy]: How do I change my model improvement privacy settings?, Anthropic Privacy Center.
+[^openai-data-controls]: Data controls in ChatGPT, OpenAI Help Center.
+[^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center.
+[^openai-memory]: Memory in ChatGPT, OpenAI Help Center.
+[^anthropic-artifacts]: What are artifacts and how do I use them?, Claude Help Center.
+[^openai-library]: Using Library to manage files in ChatGPT, OpenAI Help Center.
+[^anthropic-incognito]: Use incognito chats, Claude Help Center.
+[^openai-temporary]: Temporary chat in ChatGPT, OpenAI Help Center.
+[^openai-uploads]: Uploading files and audio to ChatGPT, OpenAI Help Center.
