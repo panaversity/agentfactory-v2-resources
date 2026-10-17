@@ -2,9 +2,9 @@
 
 Chapter 0.2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.2: Your first hour, one control at a time](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/lab/), so you can do the lab without the book.
 
-In this lab you try the chapter's controls on Brightline's practice files, one control at a time. It takes about 25 minutes, on your free Claude or ChatGPT account. No account yet? Open a free one first, as 0.2.1 shows: claude.ai for Claude, chatgpt.com for ChatGPT.
+In this lab you try the chapter's controls on Brightline's practice files, one control at a time. It takes about 30 minutes, on your free Claude or ChatGPT account. No account yet? Open a free one first, as 0.2.1 shows: claude.ai for Claude, chatgpt.com for ChatGPT.
 
-**What you will learn.** To make the two privacy choices, then use each control for the job it does: a file, a document, code, a stronger model, a project, memory and a temporary chat.
+**What you will learn.** To make the two privacy choices, then use each control for the job it does: a file, a document, code, a stronger model, a project, memory and a temporary chat. And to tell where a result lands: in the chat, in a document you keep, or in another app.
 
 ## Before you start
 
@@ -29,6 +29,7 @@ Copy this table onto paper or into a notes file. After each task, write in a few
 | 5. A stronger model | |
 | 6. A project | |
 | 7. Memory and a temporary chat | |
+| 8. Where it landed | |
 
 ## Task 1. Make the two choices
 
@@ -112,6 +113,18 @@ Is this chat kept in my chat list?
 
 **What you should see.** Memory holds notes from your chats, or nothing yet. The temporary chat is not in your chat list, whatever the AI answered. The model may not know what kind of chat it is in, so your chat list is the check. A temporary chat stays out of your history and out of training, and the AI vendor still keeps a copy for up to 30 days ([0.2.1](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/where-it-goes/)).
 
+## Task 8. Sort what you made
+
+A result can land as an answer in the chat, as a document or file you keep, or as a change in another app, such as an email sent or a record updated. Write in row 8 where each of these three landed:
+
+- the answer about the $7,800 invoice, from task 2
+- the checklist, from task 3
+- the answer about Maple Paper's email, from task 6
+
+Then add one more line to row 8: did anything in this lab change another app?
+
+**What you should see.** The $7,800 answer is in the chat. The checklist is a document you keep: under Artifacts on Claude, or in Library on ChatGPT. The Maple Paper answer is also in the chat. Nothing changed in another app. No email went to Maple Paper, and no bank details changed anywhere: the AI said what to do, and nobody did it. A reply it drafted for you is still only text in the chat. Your settings, your project and any memory note changed only inside the AI app. To change another app, an AI needs a connector that can act there, and this lab used none. When one does, check the change in that app itself.
+
 ## What your table may look like
 
 Your words will be different.
@@ -125,6 +138,7 @@ Your words will be different.
 | 5. A stronger model | About $113.87, worked out step by step |
 | 6. A project | It used the policy without my attaching it, and named line 5.1 |
 | 7. Memory and a temporary chat | My memory notes, or none yet, and no row for the temporary chat |
+| 8. Where it landed | Two answers in the chat, the checklist kept as a document, and no change in any other app |
 
 If you have time, do the tasks on the other AI vendor too, with [0.2.3](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/both-ai-vendors/) as your map.
 
