@@ -8,7 +8,7 @@
   - *Baseline:* the worker cannot send at all. It drafts every reply, and Maria sends. This is what Brightline uses now.
   - *Advanced:* the worker sends routine replies only through a send step that itself checks the recipient against approved vendor addresses, and is tested to refuse anything else. Neither AI vendor's documented controls provide this per recipient, so it waits for Part IV and DSoR.
 - **Where results are kept and shared.**
-  - Results are saved only in the AP project and the drafts folder, whose members are Maria and Dave. A result for someone else, such as a schedule for the auditors, leaves only as a fixed copy of the version the signer approved, such as a PDF, which the signer sends.
+  - Yellow and red results are saved only in a folder that only Maria and Dave can open, never in the AP project's files, which every member can open, Jordan included. A result for someone else, such as a schedule for the auditors, leaves only as a fixed copy of the version the signer approved, such as a PDF, which the signer sends.
   - No "anyone with the link" for a yellow or red result. Share it by inviting named people to a place only they can open.
   - The person who shares owns the end. The end date goes in the Governance Record. On that date they remove the link, the extra copies and the extra access, then try to open the result from an account that should no longer reach it.
 - **Needs approval by** stays empty under the baseline: each action is on its own or never possible. The column is for the advanced way.

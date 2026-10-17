@@ -52,7 +52,7 @@ Then open `answer-key/B-data-decision.md` and score your work with row B of `rub
 
 ## Part C. One spec, two AI vendors (70 minutes)
 
-*Where:* In this folder, your Claude and ChatGPT settings, and the help pages in `sources.md`.
+*Where:* In this folder, your Claude and ChatGPT settings, the help pages in `sources.md`, and, for the test share, a fresh chat and a private browser window.
 
 Copy `templates/route-and-send-spec.md` to `results/route-and-send-spec.md`, and `templates/port-log.md` to `results/port-log.md`.
 
