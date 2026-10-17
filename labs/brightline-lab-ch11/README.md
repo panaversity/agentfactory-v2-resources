@@ -10,6 +10,7 @@ This folder is standalone. It needs no files from other chapters. Start with `LA
 | `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
 | `inputs/january-events.md` | What went wrong, January 11 to 15, for Part A |
 | `inputs/task-records/` | The four task records, for Part B |
+| `inputs/february-records.md` | Three short task records from February 2027, for Part B, step 4 |
 | `inputs/briefs-current.md`, `inputs/vendor-terms.md` | The three briefs as they were, and each vendor's terms, for Parts B and E |
 | `inputs/registers/` | The closed 2026 register and the live 2027 register, for Parts B and F |
 | `inputs/usage-report.md` | The week's usage on Maria's account, for Part C |
