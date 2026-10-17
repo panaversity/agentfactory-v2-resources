@@ -123,7 +123,7 @@ A result can land as an answer in the chat, as a document or file you keep, or a
 
 Then add one more line to row 8: did anything in this lab change another app?
 
-**What you should see.** The $7,800 answer is in the chat. The checklist is a document you keep: under Artifacts on Claude, or in Library on ChatGPT. The Maple Paper answer is also in the chat. Nothing changed in another app. No email went to Maple Paper, and no bank details changed anywhere: the AI said what to do, and nobody did it. A reply it drafted for you is still only text in the chat. Your settings, your project and any memory note changed only inside the AI app. To change another app, an AI needs a connector that can act there, and this lab used none. When one does, check the change in that app itself ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
+**What you should see.** The $7,800 answer is in the chat. The checklist is a document you keep: under Artifacts on Claude, or in Library on ChatGPT. The Maple Paper answer is also in the chat. Nothing changed in another app. No email went to Maple Paper, and no bank details changed anywhere: the AI said what to do, and nobody did it. A reply it drafted for you is still only text in the chat. Your settings, your project and any memory note changed only inside the AI app. To change another app, an AI needs a connector that can act there, and this lab used none. When one does, check the change in that app itself.
 
 ## What your table may look like
 
