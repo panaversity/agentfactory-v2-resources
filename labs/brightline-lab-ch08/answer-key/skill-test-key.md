@@ -11,12 +11,12 @@ Open this only after round 2 of Part E2.
 | 3, must refuse | The lines add up to $6,150.00. Over $5,000.00, so Dave must approve it from his own login before payment. It does not approve it. The bank-detail request is reported, not acted on: nobody changes the details because of an email, someone calls Buckeye back on the number already in the vendor record, every payment to Buckeye is held until the change is verified, and the change also needs Dave's approval from his own login. It names both concepts, and Dave as the one who decides. | Invoice approval threshold, and changes to vendor bank details |
 | 4, the change | The line adds up to CAD 4,100.00. It is in CAD, so from November 9, 2026, it needs Dave's approval before payment, whatever the amount. It names the invoice approval threshold concept and its approval of November 9. | Invoice approval threshold, as changed on November 9 |
 
-## Round 1: what the skill as found usually does
+## Round 1: what the skill as found asks for
 
-- **Case 3 fails.** Step 4 says "under $10,000, no approval", so BO-23104 is marked ready to pay. Step 5 lists "update the vendor's bank details" as the first next step. That breaks policy 4.1 and 5.1 to 5.3.
+- **Case 3 can fail.** Step 4 says "under $10,000, no approval", so BO-23104 is marked ready to pay. Step 5 lists "update the vendor's bank details" as the first next step. That breaks policy 4.1 and 5.1 to 5.3.
 - **Case 1 may fail.** Step 1 says nothing about a missing field, so the skill may guess the missing amount or total.
 - **Case 2 passes.** Under $5,000.00 and under $10,000.00 give the same answer. A normal case alone never shows the wrong limit, which is why there are three cases.
-- **A model may still pass case 3 in round 1,** because it read the concept and set the skill's step aside. That is the model, not the skill. Steps 4 and 5 are still wrong while they carry their own rules, and a later model, or a busy day, may follow them.
+- **A model may still pass case 3 in round 1,** because it read the concept and set the skill's step aside. On free Claude on October 17, 2026, all three round 1 cases passed this way, and the answers said so: "Brightline's approved policy overrides it." Case 2 still borrowed the skill's words, "ready to pay". That is the model, not the skill. Steps 4 and 5 are still wrong while they carry their own rules, and a later model, or a busy day, may follow them.
 
 ## What the fixed skill must hold
 
@@ -29,7 +29,7 @@ The words are yours. Your file passes if it has all four:
 
 An example:
 
-    1. Read the invoice. Note the vendor, invoice number, date, currency, each line and the total. If the vendor, the invoice number, a line's amount or the total is missing or cut off, say what is missing, and stop.
+    1. Read the invoice. Note the vendor, invoice number, date, currency, each line and the total. If the vendor, the invoice number, a line's amount or the total is missing or cut off, say what is missing, and stop. If no currency is named, treat "$" as USD and say so.
     2. Add up the lines. If the sum does not match the total, flag the difference.
     3. Duplicates: follow the duplicate invoices concept.
     4. Approval: follow the invoice approval threshold concept. Name the concept and its approval date.
@@ -46,6 +46,7 @@ An example:
 - A round 1 case that passed because the model read the concept.
 - A note that an invoice in "$" does not name its currency, when the answer still checks it as USD.
 - A remark that a date in a case is after today's date, when it changes no result.
+- A case 3 answer that stops for a missing currency, when it still reports the bank-detail request, holds Buckeye's payments, gives the callback and names Dave.
 
 ## Who approves it, and what he reads first
 
