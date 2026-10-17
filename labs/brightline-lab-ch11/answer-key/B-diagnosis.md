@@ -16,3 +16,17 @@ Also note for C and A: both are **silent failures**. C ran and completed. A said
 **A person passed two of them.** Maria forwarded the Thursday note, and sent the Friday replies without opening an attachment. Add two reviewer checks to the Review Contract: read the note's first line (register, date, count, total) before passing it on, and before sending, confirm that each message carries an attachment and that it matches that message's recipient, opening a sample to check the contents.
 
 If you found only the usage limit for A, or only the access error for D, you stopped at the first cause. One failure can live in two places.
+
+## Step 4: the February records
+
+| Record | Cause | Evidence line | One-minute check |
+| --- | --- | --- | --- |
+| 1. Greenway reply | The brief. The plugin's update changed a step, and a skill's steps are part of what the worker is told to do. | "Plugin: AP invoice tools, version 4.0, updated on Monday, February 1, 2027." Step 4 follows the new step 5. The nine earlier runs, on version 3.2, listed bank-detail requests for a person. | Compare the steps of 3.2 and 4.0. Then run the skill's saved test cases again, including the case it must refuse, before 4.0 does real work (Chapter 8). |
+| 2. Approval list | The inputs: a saved memory used instead of the approved concept. Also the brief, if you noted that it names no source. | Step 2: "Used a saved memory: 'Dave's approval limit is $10,000 from this year.'" Step 4: "No project knowledge file was opened." | Find the memory among the run's sources, and compare it with policy 4.1, $5,000.00. Correct or delete the memory (Chapter 8). Kenton Box & Crate 4937 and Cardinal Freight 4942 also need Dave's approval. |
+| 3. Cardinal statement | Tools and permissions. Also the brief. | Step 2: "Error: the computer is not available." Context: the desktop app was closed while the task ran. Step 3 compared 0 statement lines, and the output still said "No differences". | Was the desktop app on the laptop open while the task ran? A cloud task reaches files on your computer only through it. Then read the brief: it had no rule for a statement it could not open. |
+
+**Record 1, tools and permissions.** 11.3 places an add-on's update wherever it changed the steps. This one changed a step, not what the plugin can reach, so the cause is the brief. If you said tools and permissions, with the same line and the same check, count it: the fix is the same.
+
+**The fourth case is record D.** Its first error is an access error: "access denied (authorization expired)". That is a connector whose sign-in expired. Connect it again, with only the reach the job needs, as Part H does.
+
+A stronger model fixes none of the three. It would follow version 4.0's step, trust the memory, and still find no file.

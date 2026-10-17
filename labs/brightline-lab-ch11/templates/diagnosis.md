@@ -10,3 +10,11 @@
 ## Checks a person skipped
 
 ## Compared with my prediction
+
+## Three February records
+
+| Record | Cause (one or more) | The line in the record that shows it | The one-minute check that tests it |
+| --- | --- | --- | --- |
+| 1. A reply to Greenway Office Supply | | | |
+| 2. Which invoices need Dave's approval | | | |
+| 3. Cardinal Freight's January statement | | | |
