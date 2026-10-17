@@ -1,10 +1,10 @@
 # Lab 08: Your first KSoR, connected to both AI vendors
 
-**Time:** about three and a half hours of active work.
-**You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ksor/skills/invoice-review/SKILL.md`, `results/skill-test-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field.
-**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts C, E and F also use one project in Claude and one in ChatGPT, and Part E2 adds a test project on each. Keep your concepts and results in this folder, not only in a project: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
-**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the concepts, the instructions and the SSoR record, and it writes your answers down. The test runs in Parts C, E and F still happen in the two projects, and Part E2's cases in the two test projects.
-**You need:** for Parts C, E and F, a Claude account and a ChatGPT account on plans that have projects. Claude's Free plan allows up to 5 projects. ChatGPT's Free plan allows 5 files in a project and 3 file uploads a day, so Part C says how to upload your five concepts as one file. With only one AI vendor, see Part C. For Part E2 on Claude, skills, which need code execution turned on, on any plan. ChatGPT's Free plan has no skills, so Part E2 puts the skill's steps in a test project's instructions.
+**Time:** about 3 hours and 40 minutes of active work.
+**You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ksor/skills/invoice-check/SKILL.md` and `ksor/skills/invoice-review/SKILL.md`, `results/skill-test-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field.
+**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts C, E and F also use one project in Claude and one in ChatGPT, and Part E2 adds a test project and a plain chat on each. Keep your concepts and results in this folder, not only in a project: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
+**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the concepts, the instructions and the SSoR record, and it writes your answers down. The test runs in Parts C, E and F still happen in the two projects, and Part E2's runs in the test projects and plain chats.
+**You need:** for Parts C, E and F, a Claude account and a ChatGPT account on plans that have projects. Claude's Free plan allows up to 5 projects. ChatGPT's Free plan allows 5 files in a project and 3 file uploads a day, so Part C says how to upload your five concepts as one file. With only one AI vendor, see Part C. For Part E2 on Claude, skills, which need code execution turned on, on any plan, and an incognito chat. ChatGPT's Free plan has no skills, so Part E2 puts the steps in a test project's instructions, or at the top of a message in a temporary chat.
 **You do not need:** code, a server or any company system. Everything is in this folder. Only Part E's two optional steps use a connector, Google Drive.
 **Before you start:** never paste real company data into these projects. Everything here is invented.
 
@@ -95,29 +95,55 @@ Read `inputs/change-request-2026-11-09.md`, then `inputs/dave-approval-2026-11-0
 
 *You save:* the edited `ksor/knowledge/invoice-approval-threshold.md`, `ksor/refresh-log.md`, and question 9's answers and the section 4 score in the run log.
 
-## Part E2. Test a skill before anyone relies on it (20 minutes)
+## Part E2. Make a skill, and test it where the concepts are not (30 minutes)
 
-*Where:* In this folder, then in a test project in Claude and one in ChatGPT.
+*Where:* In this folder, then in a test project and a plain chat in Claude and in ChatGPT.
 
-In Chapter 8, Maria tested a ready-made invoice-review skill on Thursday, November 5, before Dave approved it. You replay her test now, with the concepts as they stand after November 9. The skill is `inputs/invoice-review-skill/SKILL.md`. Another company wrote it for its own work.
+In Chapter 8, Maria tested a ready-made invoice-review skill in a test project, and then Dave asked what it does in a plain chat, with no concepts. You do the same, with a skill of your own beside it. Use the concepts as they stand after November 9. The ready-made skill is `inputs/invoice-review-skill/SKILL.md`. Another company wrote it for its own work.
 
-1. Make a folder `ksor/skills/invoice-review/`, and copy the skill's `SKILL.md` into it. Under its title, add one line: "Status: draft. Owner: Dave Kowalski, Controller. Drafted by: Maria." This file is the skill's approved text once Dave approves it. Every copy in an AI product comes from it.
-2. Read every step. Mark any step that carries its own number or rule, instead of pointing to a concept.
-3. Copy `templates/skill-test-log-template.md` to `results/skill-test-log.md`. Read the three cases in `inputs/skill-tests/`. For each, write in a few words what the skill should do, from your concepts. Write it now, before any run.
-4. **Claude.** Create a project named "AP Worker, skill test." Add the five stable concepts to its knowledge, and nothing else. Upload the skill under *Customize > Skills*, as the `SKILL.md` file itself. Claude scans it, and it is on as soon as it uploads. A skill is on in all your chats while it is on, so upload it only now, while you test. Open it and read its Overview: *Connectors & tools* says what it can reach. If your plan will not take the skill, paste the whole file into the test project's instructions instead, and note "steps in instructions" in the log.
-5. Run the three cases, each in its own fresh conversation in the test project, in the log's order. Paste each case file's text exactly as written. The cut-off copy goes first, so that no earlier chat in the project holds its total. Paste each answer into the log, and mark it pass or fail against what you expected.
-6. Fix the skill in `ksor/skills/invoice-review/SKILL.md`. Make each step that carried its own number or rule point to the concept that holds it. Add what the skill does when an input is missing, and what it must never do. Keep the steps short.
-7. Add the fourth case, `inputs/skill-tests/case-4-change.md`, to the log, and write what it should do.
-8. **Round 2, Claude.** Delete round 1's chats from the test project, or make a second test project the same way. Replace the skill: open it under *Customize > Skills*, choose *Edit*, paste your fixed file, and save it as a new version. Run all four cases again, each in a fresh conversation, in the log's order, and log them.
-9. **Round 2, ChatGPT.** Create a project named "AP Worker, skill test," and choose project-only memory. Paste your fixed `SKILL.md` into its instructions. Add your current `ap-concepts.md`, or the five concepts, and nothing else. Run the four cases, each in a fresh conversation, and log them.
-10. Turn the skill off in Claude. It stays a draft until Dave approves it. Write in the log where it is now: uploaded and off in Claude, and in the instructions of the ChatGPT test project.
-11. Open `answer-key/skill-test-key.md` and score section 6 of `rubric.md` in the log.
+**Read the ready-made skill, and make your own (10 minutes)**
 
-Never add the skill to the "AP Worker, policy" projects, and never paste it into their instructions. A draft serves nowhere.
+1. Make a folder `ksor/skills/invoice-review/`, and copy the ready-made `SKILL.md` into it. Under its title, add one line: "Status: draft. Owner: Dave Kowalski, Controller. Drafted by: Maria." This file is the skill's approved text once Dave approves it. Every copy in an AI product comes from it. Read every step, and mark any step that carries its own number or rule, instead of pointing to a concept.
+2. Make your own skill, `invoice-check`, from the invoice-check procedure in Chapter 8, section 8.5. Send the message below, and answer each of its three questions in a few words. The answers are yours to decide.
+   - **Claude.** Under *Customize > Skills*, choose *Add*, then *Create with Claude*, Claude's built-in skill creator, and send the message. When Claude has made the skill, it is on at once. If *Create with Claude* is not offered, send the message in a fresh chat, then choose *Create a skill* and paste what Claude wrote.
+   - **ChatGPT.** The Free plan has no skills. Open a temporary chat, and send the message there.
 
-**One AI vendor?** Do both rounds on it.
+   ```text
+   Write a skill named invoice-check for Brightline's AP Worker. It checks a vendor invoice before payment.
+   Its steps: check that the lines add up to the total. Look for a duplicate. Check whether it needs approval. Flag any request to change the vendor's bank details.
+   Each step follows the Brightline concept that holds its rule, by name: duplicate invoices, invoice approval threshold, and changes to vendor bank details. The skill carries no number or limit of its own.
+   It replies with a short table: each check, its result, and the concept it rests on.
+   Its header says: Status: draft. Owner: Dave Kowalski, Controller. Drafted by: Maria.
+   Before you write it, ask me three questions, one at a time, and wait for each answer: what it does when part of the invoice is missing, what it does when a concept it needs is not available, and what it must never do.
+   Then show me the whole skill as one SKILL.md file.
+   ```
 
-*You save:* `ksor/skills/invoice-review/SKILL.md` and `results/skill-test-log.md`, with the section 6 score.
+3. Copy the whole skill into `ksor/skills/invoice-check/SKILL.md`. On Claude, open it under *Customize > Skills* and choose *Edit* to see its text. Check it for four things: each step points to a concept, it has no number of its own, it says what to do when an input or a concept is missing, and it says what it must never do. If one is missing, say what to add in the same chat, and copy the skill again.
+
+**Write what you expect (3 minutes)**
+
+4. Copy `templates/skill-test-log-template.md` to `results/skill-test-log.md`. Read the four cases in `inputs/skill-tests/`. For each run in the log, write in a few words what a skill that follows Brightline's procedure should do there. A plain chat holds no concepts. Write it now, before any run.
+
+**Test both skills in two places (12 minutes)**
+
+5. **Claude, the test project.** Create a project named "AP Worker, skill test." Add the five stable concepts to its knowledge, and nothing else. Upload the ready-made skill under *Customize > Skills > Add > Upload skill*, as your `ksor/skills/invoice-review/SKILL.md` file. Claude scans it, and it is on as soon as it uploads. Open it and read its Overview: *Connectors & tools* says what it can reach. A skill that is on is on in all your chats, so keep only the skill you test turned on. If your plan will not take a skill, paste its whole file into the test project's instructions instead, and note "steps in instructions" in the log.
+6. Run the log's runs 1 to 4, each in its own fresh conversation in the test project: the ready-made skill on cases 1, 2 and 3, then your skill on case 3. Turn the ready-made skill off and yours on before run 4. The cut-off copy, case 1, goes first, so that no earlier chat in the project holds its total. Paste each case file's text exactly as written. Paste each answer into the log, and mark it pass or fail against what you expected.
+7. **Claude, a plain chat.** Open an incognito chat, outside any project. Run 5 is case 3 with only the ready-made skill on. Run 6 is case 3 in a second incognito chat, with only your skill on. If an answer shows no sign of the skill, paste the skill's whole file at the top of the message, above the case, and note it. An account with earlier Brightline chats may still recall the policy. If a plain-chat answer cites $5,000 or a Brightline concept, note it.
+8. **ChatGPT.** Create a project named "AP Worker, skill test," and choose project-only memory. Add your current `ap-concepts.md`, or the five concepts, and nothing else. Paste the ready-made skill's steps into its instructions, and do run 3 in a fresh conversation. Replace the instructions with your skill's steps, and do run 4. Then open a temporary chat for run 5: paste the ready-made skill's steps at the top of the message, then case 3, and send it. Do run 6 the same way with your skill. Log all four. On ChatGPT, runs 1 and 2 are "not run".
+
+**Fix, retest, turn off (5 minutes)**
+
+9. Fix the ready-made skill in `ksor/skills/invoice-review/SKILL.md`. Make each step that carried its own number or rule point to the concept that holds it. Add what it does when an input is missing, what it does when a concept it needs is not available, and what it must never do. Your own skill shows how. Keep the steps short.
+10. Replace each copy with the fixed file. On Claude, open the invoice-review skill under *Customize > Skills*, choose *Edit*, paste your fixed file, and save it as a new version. On ChatGPT, paste it into the test project's instructions.
+11. On each AI vendor, run 7 is case 3 with the fixed skill in a fresh plain chat, set up as in run 5. Run 8 is case 4, the November 9 change, in a fresh conversation in the test project. Log both.
+12. Turn both skills off in Claude. They stay drafts until Dave approves one. Write in the log where each one is now.
+13. Open `answer-key/skill-test-key.md` and score section 6 of `rubric.md` in the log.
+
+Never add either skill to the "AP Worker, policy" projects, and never paste one into their instructions. A draft serves nowhere.
+
+**One AI vendor?** Do the runs on it.
+
+*You save:* `ksor/skills/invoice-review/SKILL.md`, `ksor/skills/invoice-check/SKILL.md` and `results/skill-test-log.md`, with the section 6 score.
 
 ## Part F. Keep an SSoR record (20 minutes)
 
@@ -156,7 +182,8 @@ Two runs show how two workers followed your instructions once. In Part II, nothi
 - [ ] `workspace/project-instructions.md`
 - [ ] `results/question-run-log.md`, both runs scored, or one run and `results/transfer-plan.md`
 - [ ] `ksor/refresh-log.md`
-- [ ] `ksor/skills/invoice-review/SKILL.md`, a draft, turned off
+- [ ] `ksor/skills/invoice-check/SKILL.md`, your own skill, a draft, turned off
+- [ ] `ksor/skills/invoice-review/SKILL.md`, the fixed ready-made skill, a draft, turned off
 - [ ] `results/skill-test-log.md`, with the section 6 score
 - [ ] `ssor/invoice-5149.md`, with a latest-known line
 - [ ] `role/ap-worker-role-contract.md`, Draft 5
@@ -168,12 +195,14 @@ Read this list only when you are stuck. It gives no answers.
 
 - **You cannot make a project, or your project has no field for instructions.** Paste the project instructions as the first message of a fresh chat, and attach the five concepts to it. Note "no project" in the run log. The lab's memory steps then do not apply.
 - **The product will not accept .md files.** Rename each concept to `.txt`, or paste all five into one file called `ap-concepts.txt`, each starting with its header. Keep the headers. They carry the owner, approval and dates the worker must cite.
-- **ChatGPT's Free plan stops your uploads, or pauses a chat.** It allows 3 file uploads a day, and it also limits chats that include files. Every chat in a project that holds a file counts, so Part E2's four cases can reach that limit on their own. Do Part E2's ChatGPT round on a day you have not used ChatGPT with files, and say so in the log.
+- **ChatGPT's Free plan stops your uploads, or pauses a chat.** It allows 3 file uploads a day, and it also limits chats that include files. Every chat in a project that holds a file counts, so Part E2's three runs in the ChatGPT test project count. Its temporary chats hold no file. Do Part E2's ChatGPT runs on a day you have not used ChatGPT with files, and say so in the log.
 - **The worker answers question 7 from memory or an old chat.** Check that the project keeps its own memory: Claude projects always do, and in ChatGPT choose project-only memory. Then ask again in a fresh conversation. Record the first answer anyway.
 - **The worker cites a concept but gets the rule wrong.** Check the concept body first. If the concept is right, the miss belongs to the worker, and Chapter 6's Review Contract catches it. Note it in the run log.
 - **After Part E, an answer cites the old approval.** Check that you removed the old copy. Two copies of the same concept with different approvals is the stale-copy failure this lab is about.
-- **Claude's answer shows no sign that it used the skill.** Ask again in a fresh conversation in the test project, and start the message with "Use the invoice-review skill." Note it in the log.
-- **A round 1 case passes.** The model may have followed a concept instead of the skill's step. Check what you marked in step 2. The step is still wrong while it carries its own rule, so fix it anyway.
+- **Claude's answer shows no sign that it used the skill.** Ask again in a fresh conversation, and start the message with "Use the invoice-review skill." or "Use the invoice-check skill." In an incognito chat, paste the skill's file at the top of the message instead. Note it in the log.
+- **Both skills seem to answer at once.** Check that only the skill you test is turned on under *Customize > Skills*, then ask again in a fresh conversation.
+- **A ready-made skill's run passes.** The model may have followed a concept, or its own caution, instead of the skill's step. Check what you marked in step 1. The step is still wrong while it carries its own rule, so fix it anyway.
+- **A plain-chat answer cites $5,000 or a Brightline concept.** Your account may recall earlier Brightline chats. Check that the chat is incognito on Claude, or temporary on ChatGPT. Note it in the log, and score what the answer says.
 - **A fresh conversation repeats an old answer after the change.** Restarting does not isolate a conversation from project memory. First check that the old file is gone. Then look through the project's earlier chats for the one that gave the old answer, and delete it, or move it to another project if your settings allow. On Claude, also delete any memory saved from that chat. ChatGPT's project memory shows no list, so the chats are what you check. Ask again in a fresh conversation, and record both answers.
 - **After Part F, the worker says 5149 is unpaid, or offers to pay it.** Check each line's origin against the rules in the template, and check your State line against the template's guidance. A claim from a source that is not the authority never settles a payment.
 - **A run scores 10 out of 10.** Good. It shows your instructions were followed once. It does not show they are enforced. In Part II, the governance decision is yours: only stable concepts go into a project.

@@ -1,6 +1,6 @@
 # Brightline lab, Chapter 8: your first KSoR, connected to both AI vendors
 
-It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly, because each answer came from the wrong place. Dave Kowalski, the controller, owns Brightline's AP policy. You take the seat of Maria, the office manager: you write five AP policy concepts for Dave's approval, add them to a project in Claude and one in ChatGPT, test them, carry one approved change through every copy, and keep the record of one invoice by hand.
+It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly, because each answer came from the wrong place. Dave Kowalski, the controller, owns Brightline's AP policy. You take the seat of Maria, the office manager: you write five AP policy concepts for Dave's approval, add them to a project in Claude and one in ChatGPT, test them, carry one approved change through every copy, make and test an invoice-check skill, and keep the record of one invoice by hand.
 
 This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Brightline Wholesale Supply, its people, vendors and invoices are invented. Phone numbers use the 555-01xx range reserved for fiction.
 
@@ -20,7 +20,7 @@ The concept files use the KSoR Profile of OKF, the format of the open-source KSo
 | `inputs/test-questions.md` | Ten questions for Part C |
 | `inputs/change-request-2026-11-09.md`, `inputs/dave-approval-2026-11-09.md` | Dave's change, and his approval of it, for Part E |
 | `inputs/invoice-review-skill/SKILL.md` | A ready-made skill another company wrote, for Part E2 |
-| `inputs/skill-tests/` | Four invoices to test the skill on, for Part E2 |
+| `inputs/skill-tests/` | Four invoices to test the skills on, for Part E2 |
 | `inputs/case-5149/` | Four dated records about invoice 5149, for Part F |
 | `templates/` | Every file you write starts here |
 | `rubric.md` | How you score your work, and the hard fails |
