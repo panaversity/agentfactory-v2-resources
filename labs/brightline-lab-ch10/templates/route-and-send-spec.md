@@ -17,3 +17,9 @@ No AI vendor's name in this file. It must work on either AI vendor unchanged.
 | Send anything to the auditors | | | |
 | Send anything to a tax authority | | | |
 | Change vendor bank details | | | |
+
+## Where results are kept and shared
+
+- Results are saved only to: (the place, and who can open it)
+- Link settings allowed for a yellow or red result:
+- Who takes access back, when, and how they check:

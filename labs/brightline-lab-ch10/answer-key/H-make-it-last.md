@@ -15,6 +15,9 @@ THE DATA
   Does the task need the identifiers? yes, vendor names
   Fields removed: bank details, tax IDs, contacts
   Approved route: company workspace, AP project
+  Result's tier: yellow (vendor names and balances)
+  Result's audience: Dave, who checks and signs it, and Maria, who prepares it. The auditors receive the signed copy only
+  Audience ends: when the audit closes. Who removes it, and how they check: Maria removes the working copies and any link, then tries the old link from an account that should fail. Dave decides whether a copy is kept in restricted storage
 
 THE CAPABILITY
   Tools and connectors enabled: register export (read only)

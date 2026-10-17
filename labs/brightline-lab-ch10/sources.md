@@ -1,6 +1,6 @@
 # Help pages and policies for Part C
 
-Checked for the chapter on 8 October 2026. Products change. Check the date on each page before you rely on it.
+Checked for the chapter on 8 October 2026, and the sharing pages on 17 October 2026. Products change. Check the date on each page before you rely on it.
 
 ## Anthropic
 
@@ -14,6 +14,9 @@ Checked for the chapter on 8 October 2026. Products change. Check the date on ea
 - Export your organization's data: https://support.claude.com/en/articles/13346720-export-your-organization-s-data
 - Use connectors to extend Claude's capabilities, including each tool's permission: https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities
 - Get started with connectors, where you set each tool of your own connector to Always allow, Needs approval or Blocked: https://claude.com/docs/connectors/getting-started
+- Share artifacts: https://support.claude.com/en/articles/9547008-share-artifacts
+- Manage project visibility and sharing: https://support.claude.com/en/articles/9519189-manage-project-visibility-and-sharing
+- Public links for shared chats: https://support.claude.com/en/articles/16762437-public-links-for-shared-chats
 - Usage Policy: https://www.anthropic.com/legal/aup
 
 ## OpenAI
@@ -26,4 +29,5 @@ Checked for the chapter on 8 October 2026. Products change. Check the date on ea
 - Enterprise privacy at OpenAI: https://openai.com/enterprise-privacy/
 - ChatGPT Enterprise admin quickstart: https://help.openai.com/en/articles/20001264-chatgpt-enterprise-admin-quickstart
 - Admin controls, security, and compliance for plugins and apps, including each app's actions: https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps
+- Sharing conversations and scheduled tasks in ChatGPT: https://help.openai.com/en/articles/7925741-sharing-conversations-and-scheduled-tasks-in-chatgpt
 - Usage policies: https://openai.com/policies/usage-policies/
