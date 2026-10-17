@@ -2,9 +2,9 @@
 
 Chapter 0.4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.4: Your 4D plan, before the run](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/lab/), so you can do the lab without the book.
 
-In this lab the AI does the typing, and you make the decisions. It quizzes you on the three ways of working with AI, then asks you for each line of a 4D plan and writes the plan down. Then you test one of its lines. It takes about 15 minutes, on Claude or ChatGPT, and every message you send is printed below.
+In this lab the AI does the typing, and you make the decisions. It quizzes you on the three ways of working with AI, then asks you for each line of a 4D plan and writes the plan down. It quizzes you on which D comes next, and then you test one of the plan's lines. It takes about 15 minutes, on Claude or ChatGPT, and every message you send is printed below.
 
-**What you will learn.** To tell the three ways of working with AI apart, and to decide each D's line, with when it is done, before an AI works alone.
+**What you will learn.** To tell the three ways of working with AI apart, and to decide each D's line, with when it is done, before an AI works alone. To tell which D a situation needs next.
 
 ## Step 1. Sort three jobs
 
@@ -38,7 +38,23 @@ Answer each question in a few words, in your own words.
 
 **What a good plan has.** Every line has a "when". Delegation keeps any change to the register, and any contact with a vendor, for a person. Description says what to write when the register does not show something, such as "no due date". Discernment names a person and a set time. Diligence names what goes in, how people are told, and who signs ([0.4.2](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/the-four-ds/)). Compare your table with these, and with Dave's plan for the monthly reconciliation in [0.4.3](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/putting-them-together/).
 
-## Step 3. Test the Description line
+## Step 3. Name the next D
+
+In the same chat, send this:
+
+```text
+Now quiz me on which D comes next. Show me one situation at a time, and wait for my answer. After each answer, tell me in one sentence whether I am right, and why. The situations:
+1. An AI's first list of this week's expenses shows the amounts but no dates, because I never asked for dates.
+2. I want an AI to file new invoices into folders every morning. I have not decided whether it may move a file without asking me.
+3. A checked table of late payments is ready to go to a vendor. Nobody has said who signs it, or whether the vendor is told that AI made it.
+4. The AI's table says County Freight owes $2,980.00. I am about to copy that number into Dave's report.
+```
+
+Answer each one with a D and one reason, in a few words.
+
+**What you probably saw.** The first situation needs Description, so the next request asks for the dates. The second needs Delegation, because you decide what the AI does alone before anything else. The third needs Diligence, because someone signs, and the vendor is told that AI made the table. The fourth needs Discernment, so you check the number against its invoice before anyone relies on it ([0.4.3](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/putting-them-together/)).
+
+## Step 4. Test the Description line
 
 Open a temporary chat, so that memory cannot carry your plan's line into it. On Claude, click the ghost icon at the top right of a new chat. On ChatGPT, click the dashed circle at the top right, then choose Unpersonalized. Send this:
 
@@ -53,7 +69,7 @@ Then open another temporary chat, and send the same message without its first se
 
 **What you probably saw.** Both chats named Midwest Packaging. The first chat wrote "no due date" for Buckeye Office Supply, the words you asked for. The second chose its own words, and it may have guessed a date, such as September 5, 30 days after the invoice arrived. A run that nobody watches has only what is written down before it starts. Your line makes every run say the same thing, in words the person who checks the table can look for ([0.4.2](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/the-four-ds/)).
 
-## Step 4. Keep it
+## Step 5. Keep it
 
 Go back to the chat with your plan, and send this:
 
