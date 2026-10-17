@@ -4,15 +4,15 @@ python3 tools/brightline-lab-ch0-2/make-files.py        (from the repository's r
 
 Writes labs/brightline-lab-ch0-2/files/ and labs/brightline-lab-ch0-3/files/, and checks its own
 totals. The policy text is Brightline's AP policy, version 3, as the book quotes it (sections 2, 4,
-5 and 7). The PDF is printed by headless Chrome; set CHROME to its path if it is elsewhere.
+5 and 7). The PDF is drawn with reportlab (pip install reportlab) in the PDF's standard Helvetica,
+which a PDF reader supplies, so the file stays a few kilobytes and every AI can read its text.
 Every name, address and number in these files is invented."""
-import csv, datetime as dt, html, os, shutil, subprocess, sys, tempfile
+import csv, datetime as dt, shutil, sys
 from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 LAB2, LAB3 = ROOT / "labs/brightline-lab-ch0-2/files", ROOT / "labs/brightline-lab-ch0-3/files"
-CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 POLICY = [
     ("2. Payment terms", [
@@ -81,45 +81,38 @@ We pay vendors once a week, on Friday. Anything over $5,000 needs Dave's approva
 """
 
 
-def policy_html():
-    parts = ["""<!doctype html><html><head><meta charset="utf-8"><style>
-@page { size: Letter; margin: 0.9in 0.9in 0.8in; }
-body { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; line-height: 1.45; color: #1d2433; }
-.org { font-size: 10pt; letter-spacing: .08em; text-transform: uppercase; color: #5b6475; margin: 0; }
-h1 { font-size: 20pt; margin: 4pt 0 12pt; }
-table.meta { border-collapse: collapse; margin: 0 0 16pt; font-size: 10pt; }
-table.meta td { padding: 2pt 14pt 2pt 0; vertical-align: top; }
-table.meta td:first-child { font-weight: bold; }
-.note { font-size: 10pt; color: #5b6475; border-top: 1px solid #c9ced8; padding-top: 8pt; margin-bottom: 14pt; }
-h2 { font-size: 13pt; margin: 16pt 0 6pt; border-bottom: 1px solid #c9ced8; padding-bottom: 3pt; }
-p.line { margin: 0 0 7pt; padding-left: 30pt; text-indent: -30pt; }
-p.line b { display: inline-block; width: 30pt; text-indent: 0; }
-.foot { margin-top: 22pt; font-size: 9pt; color: #5b6475; }
-</style></head><body>
-<p class="org">Brightline Wholesale Supply</p>
-<h1>Accounts Payable Policy</h1>
-<table class="meta">
-<tr><td>Version</td><td>3</td></tr>
-<tr><td>Status</td><td>Approved</td></tr>
-<tr><td>Owner</td><td>Dave Kowalski, Controller</td></tr>
-<tr><td>Approved</td><td>September 1, 2026, by Dave Kowalski</td></tr>
-<tr><td>Supersedes</td><td>Version 2 (June 2, 2026)</td></tr>
-</table>
-<p class="note">Excerpt: sections 2, 4, 5 and 7.</p>"""]
-    for title, lines in POLICY:
-        parts.append(f"<h2>{html.escape(title)}</h2>")
-        for n, text in lines:
-            parts.append(f'<p class="line"><b>{n}</b>{html.escape(text)}</p>')
-    parts.append('<p class="foot">Brightline Wholesale Supply is invented for The AI Agent Factory, Second Edition.</p></body></html>')
-    return "\n".join(parts)
-
-
 def write_pdf(out):
-    with tempfile.TemporaryDirectory() as tmp:
-        src = Path(tmp) / "policy.html"
-        src.write_text(policy_html(), encoding="utf-8")
-        subprocess.run([CHROME, "--headless", "--disable-gpu", "--no-pdf-header-footer",
-                        f"--print-to-pdf={out}", src.as_uri()], check=True, capture_output=True)
+    from reportlab.lib import colors
+    from reportlab.lib.pagesizes import letter
+    from reportlab.lib.styles import ParagraphStyle
+    from reportlab.lib.units import inch
+    from reportlab.platypus import HRFlowable, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+    ink, grey, rule = colors.HexColor("#1d2433"), colors.HexColor("#5b6475"), colors.HexColor("#c9ced8")
+    org = ParagraphStyle("org", fontName="Helvetica", fontSize=9.5, textColor=grey, leading=12)
+    title = ParagraphStyle("title", fontName="Helvetica-Bold", fontSize=20, textColor=ink, leading=24, spaceBefore=4, spaceAfter=10)
+    note = ParagraphStyle("note", fontName="Helvetica", fontSize=9.5, textColor=grey, leading=12, spaceBefore=6, spaceAfter=4)
+    head = ParagraphStyle("head", fontName="Helvetica-Bold", fontSize=13, textColor=ink, leading=16, spaceBefore=12, spaceAfter=2)
+    line = ParagraphStyle("line", fontName="Helvetica", fontSize=11, textColor=ink, leading=15)
+    num = ParagraphStyle("num", parent=line, fontName="Helvetica-Bold")
+    foot = ParagraphStyle("foot", fontName="Helvetica", fontSize=8.5, textColor=grey, leading=11, spaceBefore=16)
+    meta = Table([[k, v] for k, v in (("Version", "3"), ("Status", "Approved"), ("Owner", "Dave Kowalski, Controller"),
+                  ("Approved", "September 1, 2026, by Dave Kowalski"), ("Supersedes", "Version 2 (June 2, 2026)"))],
+                 colWidths=[1.0 * inch, 4.5 * inch], hAlign="LEFT")
+    meta.setStyle(TableStyle([("FONT", (0, 0), (0, -1), "Helvetica-Bold", 9.5), ("FONT", (1, 0), (1, -1), "Helvetica", 9.5),
+                              ("TEXTCOLOR", (0, 0), (-1, -1), ink), ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                              ("BOTTOMPADDING", (0, 0), (-1, -1), 2), ("TOPPADDING", (0, 0), (-1, -1), 1)]))
+    story = [Paragraph("BRIGHTLINE WHOLESALE SUPPLY", org), Paragraph("Accounts Payable Policy", title), meta, Spacer(1, 8),
+             HRFlowable(width="100%", thickness=0.6, color=rule), Paragraph("Excerpt: sections 2, 4, 5 and 7.", note)]
+    for heading, lines in POLICY:
+        story += [Paragraph(heading, head), HRFlowable(width="100%", thickness=0.6, color=rule, spaceAfter=6)]
+        rows = Table([[Paragraph(n, num), Paragraph(text, line)] for n, text in lines], colWidths=[0.42 * inch, None], hAlign="LEFT")
+        rows.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                                  ("RIGHTPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 5), ("TOPPADDING", (0, 0), (-1, -1), 0)]))
+        story.append(rows)
+    story.append(Paragraph("Brightline Wholesale Supply is invented for The AI Agent Factory, Second Edition.", foot))
+    SimpleDocTemplate(str(out), pagesize=letter, leftMargin=0.9 * inch, rightMargin=0.9 * inch, topMargin=0.85 * inch,
+                      bottomMargin=0.8 * inch, title="Brightline Wholesale Supply: Accounts Payable Policy, version 3",
+                      author="Brightline Wholesale Supply", subject="AP policy, version 3 (invented for The AI Agent Factory)").build(story)
 
 
 def write_csv(out):

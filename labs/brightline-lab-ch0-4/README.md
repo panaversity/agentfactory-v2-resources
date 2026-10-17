@@ -6,11 +6,6 @@ Chapter 0.4 of *The AI Agent Factory*, Second Edition. Every name, number and co
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: three tasks on your free Claude account, with ChatGPT if you like, each with its own answer key. |
-| `inputs.zip` | One folder, `inputs`, with Buckeye Office Supply's statement of August 28, 2026, Brightline's register for Buckeye, and Brightline's AP policy, version 3. |
+| `LAB.md` | The lab: the AI quizzes you, asks you for each line of a 4D plan and writes it down, then you test one line, on your free Claude or ChatGPT account. |
 
-**Of the files in this folder, give the AI only `inputs.zip`, and only in Task 3's run.** Never upload `LAB.md` or this file: they link every answer key.
-
-The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step: you download it when the task is done, and give it to your lab conversation to check. Task 3's key holds the worked reconciliation, so download it only after your review.
-
-You leave with one file of your own, `4d-plan.md`: the job's 4D plan, with a "When" on every line. Chapter 5's brief and Chapter 6's Review Contract start from a page like it.
+The lab needs no files: every message you send is printed in `LAB.md`.
