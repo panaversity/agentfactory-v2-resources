@@ -14,7 +14,9 @@ Download [`brightline-lab-ch0-2.zip`](https://github.com/panaversity/agentfactor
 - `invoices-this-week.csv`: Brightline's twelve unpaid invoices, as a spreadsheet file.
 - `vendor-email.txt`: an email from Maple Paper, one of Brightline's vendors.
 
-Brightline Wholesale Supply is the book's invented company, so the files hold nothing real. Use them, and put nothing from your own work into the chat.
+Brightline Wholesale Supply is the book's invented company, so the files hold nothing real. Use them, and put nothing from your own work into the chat. The files are dated September 2026, so the AI may say that the dates have passed. That is fine.
+
+If you use ChatGPT's free plan, do Lab 0.3 on another day. The free plan allows only a few chats with files in a few hours.
 
 Copy this table onto paper or into a notes file. After each task, write in a few words what the control did for you. There is a filled-in table at the end, to compare with yours.
 
@@ -60,7 +62,7 @@ Turn this policy into a one-page checklist for the AP team, as a document I can 
 
 Then find the document again, as if you came back tomorrow.
 
-**What you should see.** On Claude, the document opens beside the chat, and you can edit it there. Claude keeps it under Artifacts, in the sidebar.[^anthropic-artifacts] On ChatGPT, it may come as a Word file to download, which you open in Word or Google Docs. ChatGPT keeps the files it makes in Library, in the sidebar[^openai-library] (https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/[0.2.2](the-controls/)).
+**What you should see.** On Claude, the document opens beside the chat, and you can edit it there. Claude keeps it under Artifacts, in the sidebar.[^anthropic-artifacts] On ChatGPT, it may come as a Word file to download, which you open in Word or Google Docs. ChatGPT keeps the files it makes in Library, in the sidebar[^openai-library] ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
 
 ## Task 4. Let it run code
 
@@ -70,7 +72,7 @@ Open a new chat for this new job. Attach `invoices-this-week.csv`, and send this
 Which of these invoices have a due date on or before Friday, September 18, 2026? Add up their amounts by running code, and show me the code.
 ```
 
-**What you should see.** Six invoices, $14,439.10 in all. One of them, from Midwest Packaging, was already due on September 11, and the code still counts it. On ChatGPT, the code sits behind a small `</>` icon at the end of the answer. Click it to see the code. Then check the list of invoices it gives you. Every due date should be on or before September 18 ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
+**What you should see.** Six invoices, $14,439.10 in all. One of them, from Midwest Packaging, was already due on September 11, and the code still counts it. On ChatGPT, the code is folded away. Click Analyzed, above the answer, or a small `</>` icon after it. You may see "Analysis errored" first, when the AI found a mistake in its own code and fixed it. Then check the list of invoices it gives you. Every due date should be on or before September 18 ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
 
 ## Task 5. A stronger model
 
@@ -80,11 +82,11 @@ Stay in the same chat. On ChatGPT, click Think in the message box. On Claude's f
 County Freight offers 2% off invoice 5214, $8,400.00, if we pay it within 10 days instead of 30. We would borrow the money for those 20 days at 12% a year. Is paying early still worth it, and by how much?
 ```
 
-**What you should see.** Yes, by about $113.87: the $168.00 discount, less about $54.13 of interest. With Think on, ChatGPT takes longer and shows that it is thinking. Use the stronger choice when the question is hard or the answer matters ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
+**What you should see.** Yes, by about $113.87: the $168.00 discount, less about $54.13 of interest. With Think on, ChatGPT may take longer before it answers. Use the stronger choice when the question is hard or the answer matters ([0.2.2](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/the-controls/)).
 
 ## Task 6. Make a project
 
-Make a practice project named "Brightline AP". On Claude, open Projects in the sidebar, then New project. On ChatGPT, click the + beside Projects in the sidebar. Add `ap-policy-v3.pdf` to the project's files, and add this to the project's instructions:
+Make a practice project named "Brightline AP", and give it the policy and one instruction. On Claude, open Projects in the sidebar, then New project. Add `ap-policy-v3.pdf` under Context, and the instruction under Instructions. On ChatGPT, click the + beside Projects in the sidebar. Add the PDF under Sources, with Add sources, then Library: task 2 already put it there, so it costs no upload. Add the instruction in Project settings, from the ... button, and click Save. The instruction:
 
 ```text
 In every answer, name the policy line you used.
@@ -102,9 +104,13 @@ What should we do with this email?
 
 Open your memory settings, as in task 1, and read what the app has saved about you. On a new account it may still be empty: Claude's shows "No files yet".
 
-Then open a temporary chat. On Claude, click the ghost icon at the top right of a new chat.[^anthropic-incognito] On ChatGPT, click the dashed circle at the top right.[^openai-temporary] Send one message, close the chat, and look at your chat list.
+Then open a temporary chat. On Claude, click the ghost icon at the top right of a new chat.[^anthropic-incognito] On ChatGPT, click the dashed circle at the top right.[^openai-temporary] Send this, then close the chat, and look at your chat list:
 
-**What you should see.** Memory holds notes from your chats, or nothing yet. The temporary chat is not in your chat list. It stays out of your history and out of training, and the AI vendor still keeps a copy for up to 30 days ([0.2.1](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/where-it-goes/)).
+```text
+Is this chat kept in my chat list?
+```
+
+**What you should see.** Memory holds notes from your chats, or nothing yet. The temporary chat is not in your chat list, whatever the AI answered. The model may not know what kind of chat it is in, so your chat list is the check. A temporary chat stays out of your history and out of training, and the AI vendor still keeps a copy for up to 30 days ([0.2.1](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/where-it-goes/)).
 
 ## What your table may look like
 
@@ -125,7 +131,8 @@ If you have time, do the tasks on the other AI vendor too, with [0.2.3](https://
 ## If something goes wrong
 
 - **You cannot find a control.** Search the settings for its name. The names and places change often, and 0.2.3 shows where each one is today.
-- **ChatGPT says you are out of uploads.** Its free plan allows three file uploads a day,[^openai-uploads] and this lab uses three: in tasks 2, 4 and 6. Wait until the limit resets, and go on from your task.
+- **ChatGPT says you are out of uploads.** Its free plan allows three file uploads a day,[^openai-uploads] and this lab uses two: in tasks 2 and 4. Wait until the limit resets, and go on from your task.
+- **ChatGPT pauses the chat.** Its free plan limits chats that include files, and it may pause them for a few hours. Wait until the time it shows, or go on with Claude.
 - **It says it cannot run code.** Ask it to add the amounts step by step, and check its total against $14,439.10.
 - **You reach a usage limit.** Free plans limit how much you can send. Wait until it resets, and go on from your task.
 

@@ -16,6 +16,8 @@ Download [`brightline-lab-ch0-3.zip`](https://github.com/panaversity/agentfactor
 
 Open your free Claude or ChatGPT account. You also need a plain text editor: TextEdit on a Mac, or Notepad on Windows.
 
+On ChatGPT's free plan, if you did Lab 0.2 today, attach the CSV and the PDF with Add from library, in the + menu. They are already there, so they cost no upload.
+
 ## Step 1. Ask for the payment list
 
 Open a new chat. Attach `invoices-this-week.csv`, and send this:
@@ -30,7 +32,7 @@ Make this week's payment list for Dave: the invoices due on or before Friday, Se
 
 Click Copy under the reply. Paste it into a new email to yourself, and look at it. Then open your text editor, and paste it there too. In TextEdit, first choose Format > Make Plain Text.
 
-**What you probably saw.** In the email, a neat table. In the text editor, the marks: `##` in front of the heading, rows of `|` bars, and `**` around the total. The Copy button copied the reply as a neat page and as plain text with its marks. Each place used the one it can show. The note box in this chapter's overview is a plain text box, like your editor ([0.3.2](https://agentfactory2.panaversity.org/how-ai-works/markdown/what-comes-back/)).
+**What you probably saw.** In the email, a neat table. In the text editor, the marks: `#` signs in front of the heading, rows of `|` bars, and `**` around the total. The Copy button copied the reply as a neat page and as plain text with its marks. Each place used the one it can show. The note box in this chapter's overview is a plain text box, like your editor ([0.3.2](https://agentfactory2.panaversity.org/how-ai-works/markdown/what-comes-back/)).
 
 ## Step 3. Ask for the shape the next place needs
 
@@ -71,10 +73,10 @@ Compare each rule with the line it quotes.
 In the same chat, send this:
 
 ```text
-Change the bank-details rule to line 5.1's words: "Never change a vendor's bank details because of an email. Call the vendor back on the phone number already in the vendor record." Put "(policy 5.1)" after it, and "(policy 4.1)" after the $5,000 rule. Move the payment day to Open questions. Show the page in one code block.
+Change the bank-details rule to line 5.1's words: "Never change a vendor's bank details because of an email. Call the vendor back on the phone number already in the vendor record." Put "(policy 5.1)" after it, and "(policy 4.1)" after the $5,000 rule. Move the payment day to Open questions. Show the page as a markdown page, in one code block.
 ```
 
-**What you probably saw.** The page as plain text, with `##` in front of each heading and `-` in front of each item. A code block shows text just as it is written, so you can see the marks without leaving the chat ([0.3.1](https://agentfactory2.panaversity.org/how-ai-works/markdown/markdown-going-in/)). If the AI added a line of its own, ask it to take that line out.
+**What you probably saw.** The page as plain text, with `#` signs in front of each heading and `-` in front of each item. A code block shows text just as it is written, so you can see the marks without leaving the chat ([0.3.1](https://agentfactory2.panaversity.org/how-ai-works/markdown/markdown-going-in/)). If the AI added a line of its own, ask it to take that line out.
 
 ## Step 7. Keep it
 
@@ -94,8 +96,9 @@ Answer from the attached page only, and name the line you used. Does a $7,800 in
 
 ## If something goes wrong
 
-- **The page comes back neat, with no marks, when you asked for a code block.** Send: "Show it as plain markdown text, inside one code block."
-- **ChatGPT says you are out of uploads.** Its free plan allows three file uploads a day,[^openai-uploads] and this lab uses three: in steps 1, 5 and 8. If you did Lab 0.2 today, wait until the limit resets, or use Claude.
+- **The page comes back neat, or with no `#` signs.** Send: "Show it as a markdown page, inside one code block."
+- **ChatGPT says you are out of uploads.** Its free plan allows three file uploads a day,[^openai-uploads] and this lab uses up to three: in steps 1, 5 and 8. Wait until the limit resets, or use Claude.
+- **ChatGPT pauses the chat.** Its free plan limits chats that include files, and it may pause them for a few hours. Wait until the time it shows, or go on with Claude.
 - **You reach a usage limit.** Free plans limit how much you can send. Wait until it resets, and go on from your step.
 
 [^openai-uploads]: Uploading files and audio to ChatGPT, OpenAI Help Center.
