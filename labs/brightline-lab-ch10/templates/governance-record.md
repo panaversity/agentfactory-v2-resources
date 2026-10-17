@@ -11,6 +11,9 @@ THE DATA
   Does the task need the identifiers?     yes / no
   Fields removed:
   Approved route:
+  Result's tier:
+  Result's audience:                       (named people)
+  Audience ends:                           Who removes it, and how they check:
 
 THE CAPABILITY
   Tools and connectors enabled:

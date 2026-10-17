@@ -4,7 +4,7 @@
 **You produce:** `results/prediction.md`, `results/use-case-register.md`, `results/data-decision.md` and `results/vendor-extract-redacted.csv`, `results/route-and-send-spec.md` and `results/port-log.md`, `results/people-check.md`, `results/knowledge-register.md` and a takedown record for each item you take down, `results/sign-off-matrix.md`, `results/incident-note.md`, `results/governance-record.md`, `results/interim-ai-policy.md`, `role/ap-worker-role-contract.md` (Draft 7), and, if you choose, `results/my-workflow.md`, one workflow from your own field.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet app for Part B, such as Excel, Google Sheets, LibreOffice or Numbers. Parts B and D also use fresh chats in Claude or ChatGPT. Part C uses your accounts' settings and the AI vendors' help pages. Keep your work in this folder, not only in a chat: it is yours. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you make every decision and give every answer, and it writes your answers down. Its brief asks it never to open the full vendor file, but a brief is a wish, not a control (Chapter 10, 10.3). So before you open this folder in the app, move `inputs/vendor-master-extract.csv` to a folder outside it. In Part B, you open it from there and redact it yourself.
-**You need:** a Claude or ChatGPT account whose chats accept attached files or pasted text. An account with both AI vendors helps in Part C, but their help pages are enough.
+**You need:** a Claude or ChatGPT account whose chats accept attached files or pasted text. An account with both AI vendors helps in Part C, but their help pages are enough. For Part C's test share, a browser that can open a private window.
 **You do not need:** code, a server, admin rights or any company system. Everything is in this folder.
 **Before you start:** every record here is invented. Names, tax IDs, bank numbers and emails are fake, and the tax IDs start with zeros so they can never be real. Even so, practice the habit: never put real personal or financial data into an AI tool for practice. Make two empty folders in this folder for your work: `results` and `role`.
 
@@ -50,7 +50,7 @@ Then open `answer-key/B-data-decision.md` and score your work with row B of `rub
 
 *You save:* `results/data-decision.md` and `results/vendor-extract-redacted.csv`.
 
-## Part C. One spec, two AI vendors (60 minutes)
+## Part C. One spec, two AI vendors (70 minutes)
 
 *Where:* In this folder, your Claude and ChatGPT settings, and the help pages in `sources.md`.
 
@@ -59,9 +59,19 @@ Copy `templates/route-and-send-spec.md` to `results/route-and-send-spec.md`, and
 1. **Write the spec once, with no AI vendor's name.** For the AP Worker, state:
    - the route its work data may use, and what that route must have: training off, no personal accounts, chat history kept or deleted, memory on or off
    - the actions it may take on its own, the actions that need approval and by whom, and the actions it must never be able to take. Sending anything to the auditors is in the last group.
+   - where its results are kept and shared: the place it saves them and who can open that place, the link settings allowed for a yellow or red result, and who takes access back, when, and how they check
 2. **Apply it on one AI vendor.** Use the account you have. For each line of the spec, record the setting you used and where it lives. If a control needs admin rights you do not have, record where an admin would set it, and what you did instead on your own plan. If a line rules out the kind of account you have, such as a personal one, log it as "needs another plan" and go on.
 3. **Port it to the other AI vendor.** Apply the same spec, line by line. If you have no account there, use its help pages in `sources.md`, and say so.
-4. **Log the port.** For each line: same, renamed, needs another plan, or cannot be enforced. For every "cannot be enforced," write the fallback. Removing the tool is always a fallback. Then write one line: what no setting on either AI vendor decides.
+4. **Test one share,** on the AI vendor you have. Use nothing from this folder.
+   1. In a fresh chat, send: "Test share for Lab 10. Nothing here is real."
+   2. Share the chat with a link. Note who the app says can open it.
+   3. Open the link in a private window of your browser, where you are not signed in.
+   4. Back in the chat, send one more line: "A line added after sharing." Reload the private window, and note whether the new line shows.
+   5. Delete the link where the app lists your shared links.
+   6. Reload the private window, and note whether the link still opens.
+
+   Fill in the test share lines under the port log's table. With both AI vendors, test each.
+5. **Log the port.** For each line: same, renamed, needs another plan, or cannot be enforced. For every "cannot be enforced," write the fallback. Removing the tool is always a fallback. Then write one line: what no setting on either AI vendor decides.
 
 The spec must not change between AI vendors. Only the settings change. Then open `answer-key/C-port.md` and score your spec and log with row C of `rubric.md`. If your screens differ from the key, trust your screens and write down the date: products change.
 
@@ -149,7 +159,7 @@ Your records show what Brightline decided, and why. They do not make a setting e
 - [ ] `results/prediction.md`, written before you opened the inputs, with your look back from Part H
 - [ ] `results/use-case-register.md`: six uses, each with an answer, a deciding factor and a gate where one is needed
 - [ ] `results/data-decision.md` and `results/vendor-extract-redacted.csv`: the tiers, the fields kept and removed, the route, and the known-answer test passed
-- [ ] `results/route-and-send-spec.md` and `results/port-log.md`: one spec, applied on one AI vendor and ported to the other, every change logged
+- [ ] `results/route-and-send-spec.md` and `results/port-log.md`: one spec, applied on one AI vendor and ported to the other, every change logged, and one test share made, taken back and checked
 - [ ] `results/people-check.md`: who the early-pay list left out, how late their payments were, the rewritten brief, tested, and whether to tell the suppliers
 - [ ] `results/knowledge-register.md` and a takedown record for each item you took down
 - [ ] `results/sign-off-matrix.md`: eight outputs, and the schedule check
@@ -168,6 +178,8 @@ Read this list only when you are stuck. It gives no answers.
 - **The AI hesitates over the redacted file because it still holds partial tax IDs.** That is reasonable caution. Tell it the data is invented for a training lab, and point to the zeros at the start of every tax ID.
 - **The AI finds a fifth duplicate.** Check it against `inputs/known-duplicates.md`. If it is the decoy, your redaction removed the column that tells them apart, or the AI matched on names alone. Ask it which columns it used.
 - **You cannot see tool or action permissions.** On Claude, you set each connector tool's level yourself, in the connector's settings (Chapter 7). On business plans, an admin can also block a tool or an action for everyone. If you cannot find either, record where an admin would set it, and use the fallback: no email tool connected, and the worker drafts into a folder.
+- **The private window will not open the link at all, even before you delete it.** Your plan may open shared links only for signed-in members of your organization. Record that. It is a result, not a failed test.
+- **You cannot find where to delete a shared link.** Look in the app's settings for a list of shared links, or in the chat's share menu. Record where you found it. If there is none, record that too: it is a share with no end you can set.
 - **You cannot tell whether a knowledge item is draft or stable.** If no recorded approval exists, it is not stable.
 - **A chat remembers an earlier chat.** It should not. Check that you started a fresh chat with your memory off, as Part B says, and run that test again.
 - **Notepad saves your file as `.txt`.** In Save As, choose "All files" under the file type, then type the name with `.md` at the end.
