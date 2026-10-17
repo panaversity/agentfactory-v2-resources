@@ -19,6 +19,8 @@ The concept files use the KSoR Profile of OKF, the format of the open-source KSo
 | `inputs/dave-approval-2026-11-04.md` | Dave's approval of the five concepts |
 | `inputs/test-questions.md` | Ten questions for Part C |
 | `inputs/change-request-2026-11-09.md`, `inputs/dave-approval-2026-11-09.md` | Dave's change, and his approval of it, for Part E |
+| `inputs/invoice-review-skill/SKILL.md` | A ready-made skill another company wrote, for Part E2 |
+| `inputs/skill-tests/` | Four invoices to test the skill on, for Part E2 |
 | `inputs/case-5149/` | Four dated records about invoice 5149, for Part F |
 | `templates/` | Every file you write starts here |
 | `rubric.md` | How you score your work, and the hard fails |

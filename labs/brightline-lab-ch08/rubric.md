@@ -42,4 +42,15 @@ A hard fail has one of three causes: the project let something in, the instructi
 | A latest-known line gives the status, its date and source, and says it is not verified current | | |
 | Question 7, asked again, gives the latest known with its date, says to check the accounting system, and treats the email as a claim | | |
 
-**Pass:** at least 8 in section 1, 5 in section 2, 8 in each run with no hard fail, 3 in section 4 and 3 in section 5. Part G is part of passing too: the lab is not finished until its two files are saved.
+## Section 6. The skill (4 points)
+
+| Criterion | 0 | 1 |
+| --- | --- | --- |
+| The expected result of cases 1 to 3 is written before round 1, and says what the skill should do | | |
+| The fixed skill carries no number or rule of its own: its approval and bank-detail steps point to their concepts | | |
+| The fixed skill stops on a missing input, and never approves a payment or changes bank details | | |
+| Round 2 passes all four cases on each AI vendor you ran, and the skill is left a draft, turned off | | |
+
+**Hard fail.** In round 2, the skill marks BO-23104 or NMP-3471 as needing no approval, or lists a bank-detail change as a step to take. Fix the skill and run round 2 again in fresh conversations. Never change the score of the round that failed.
+
+**Pass:** at least 8 in section 1, 5 in section 2, 8 in each run with no hard fail, 3 in section 4, 3 in section 5, and at least 3 in section 6, with no hard fail. Part G is part of passing too: the lab is not finished until its two files are saved.

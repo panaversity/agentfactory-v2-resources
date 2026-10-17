@@ -53,3 +53,4 @@ Paste each answer here, numbered, under its run.
 | 3. Each run | D | Run 1 /10, Run 2 /10 |
 | 4. The change | E | /4 |
 | 5. The SSoR record | F | /4 |
+| 6. The skill | E2 | /4 |

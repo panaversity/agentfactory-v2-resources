@@ -8,5 +8,6 @@ The rest of the Role Contract is unchanged from Draft 4, your Chapter 7 draft. I
 **Where the copies live:** <each AI vendor and project>
 **How copies are kept current:** <refresh rule and log location>
 **Not knowledge sources:** <what the worker must never treat as policy>
+**Procedures (skills):** <each skill, its owner, its status, where its approved text is kept, where it is turned on, and its tests>
 **Current state comes from:** <where status questions are answered>
 **SSoR records:** <where each matter's SSoR record lives, who keeps it, and how its lines are marked>
