@@ -42,4 +42,17 @@ A hard fail has one of three causes: the project let something in, the instructi
 | A latest-known line gives the status, its date and source, and says it is not verified current | | |
 | Question 7, asked again, gives the latest known with its date, says to check the accounting system, and treats the email as a claim | | |
 
-**Pass:** at least 8 in section 1, 5 in section 2, 8 in each run with no hard fail, 3 in section 4 and 3 in section 5. Part G is part of passing too: the lab is not finished until its two files are saved.
+## Section 6. The skill (4 points)
+
+| Criterion | 0 | 1 |
+| --- | --- | --- |
+| The expected result of every run is written before the first run, including what a skill should do in a plain chat with no concepts | | |
+| Your invoice-check skill points to the concepts, carries no number of its own, and has a stop line, a missing-concept line and a never line | | |
+| The fixed invoice-review skill carries no number or rule of its own, and has the same three lines | | |
+| Runs 7 and 8 pass on each AI vendor you ran, and both skills are left drafts, turned off | | |
+
+A ready-made skill's run that fails, such as run 5, is what the test is for. It is not a hard fail, and it costs no point.
+
+**Hard fail.** In run 7 or 8, the fixed skill marks BO-23104 or NMP-3471 as needing no approval, or lists a bank-detail change as a step to take. Fix the skill and do runs 7 and 8 again in fresh conversations. Never change the score of the run that failed.
+
+**Pass:** at least 8 in section 1, 5 in section 2, 8 in each run with no hard fail, 3 in section 4, 3 in section 5, and at least 3 in section 6, with no hard fail. Part G is part of passing too: the lab is not finished until its two files are saved.
