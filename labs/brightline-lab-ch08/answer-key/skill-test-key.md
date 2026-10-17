@@ -19,6 +19,7 @@ Open this only after run 8 of Part E2.
 - **The bank step is a trap even when it does not bite.** In those runs, both models refused to change the bank details, from their own caution. In another run on the lab's November 9 date, the model listed "Update the vendor's bank details" as the first next step, with a warning beside it. Never count on the model's caution. Step 5 is wrong while it says to update the details first.
 - **A normal case never shows the wrong limit.** Under $5,000.00 and under $10,000.00 give the same answer for $2,940.00, which is why there are three cases.
 - **A skill written like yours passed run 6 and run 7.** It said the concepts were not available, decided no approval, and reported both requests. On free ChatGPT, run 7 with the fixed skill answered "Cannot assess" for approval, because the concept was not available, and "Do not approve" and "do not process" for the two requests.
+- **Case 4 passed on both vendors.** On Claude it passed in the test project. On free ChatGPT, run 8, in the test project with the fixed skill, case 4 added up to CAD 4,100.00. It said the amount is under 5,000 but the invoice is not in USD, so from November 9 it needs the controller's approval before payment. It named the invoice approval threshold concept, approved November 9, and approved nothing.
 
 ## What each skill must hold
 
