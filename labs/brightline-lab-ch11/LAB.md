@@ -45,8 +45,9 @@ Read the four records in `inputs/task-records/`, then `inputs/briefs-current.md`
    Format:   First, list the five causes below, each with its meaning.
              Then show the first record, with its lines numbered, and
              ask me: "The cause, or two causes, the line that shows
-             each, and your one-minute check?" Wait for my answer,
-             then show the next record. After my third answer, write
+             each, and your one-minute check?" I may name a line by
+             its number, its label or a few of its words. Wait for my
+             answer, then show the next record. After my third answer, write
              my answers as one table: record, cause, the line itself
              quoted from the record, and my check.
    Inputs:   The attached file, february-records.md, and the five
