@@ -43,7 +43,7 @@ Answer each question in a few words, in your own words.
 In the same chat, send this:
 
 ```text
-Now quiz me on which D comes next. Show me one situation at a time, and wait for my answer. After each answer, tell me in one sentence whether I am right, and why. The situations:
+Now quiz me on which D comes next. The four Ds are Delegation, Description, Discernment and Diligence, and no others. Show me one situation at a time, and wait for my answer. After each answer, tell me in one sentence whether I am right, and why. The situations:
 1. An AI's first list of this week's expenses shows the amounts but no dates, because I never asked for dates.
 2. I want an AI to file new invoices into folders every morning. I have not decided whether it may move a file without asking me.
 3. A checked table of late payments is ready to go to a vendor. Nobody has said who signs it, or whether the vendor is told that AI made it.
