@@ -64,7 +64,7 @@ Copy `templates/route-and-send-spec.md` to `results/route-and-send-spec.md`, and
 3. **Port it to the other AI vendor.** Apply the same spec, line by line. If you have no account there, use its help pages in `sources.md`, and say so.
 4. **Test one share,** on the AI vendor you have. Use nothing from this folder.
    1. In a fresh chat, send: "Test share for Lab 10. Nothing here is real."
-   2. Share the chat with a link. Note who the app says can open it.
+   2. Share the chat with a link. Note who the app says can open it. If it offers a choice, choose anyone with the link for this test, since the text is invented.
    3. Open the link in a private window of your browser, where you are not signed in.
    4. Back in the chat, send one more line: "A line added after sharing." Reload the private window, and note whether the new line shows.
    5. Delete the link where the app lists your shared links.
@@ -179,6 +179,7 @@ Read this list only when you are stuck. It gives no answers.
 - **The AI finds a fifth duplicate.** Check it against `inputs/known-duplicates.md`. If it is the decoy, your redaction removed the column that tells them apart, or the AI matched on names alone. Ask it which columns it used.
 - **You cannot see tool or action permissions.** On Claude, you set each connector tool's level yourself, in the connector's settings (Chapter 7). On business plans, an admin can also block a tool or an action for everyone. If you cannot find either, record where an admin would set it, and use the fallback: no email tool connected, and the worker drafts into a folder.
 - **The private window will not open the link at all, even before you delete it.** Your plan may open shared links only for signed-in members of your organization. Record that. It is a result, not a failed test.
+- **The link still opens just after you delete it.** Some apps offer Undo for a short time. Wait a minute, then reload the private window.
 - **You cannot find where to delete a shared link.** Look in the app's settings for a list of shared links, or in the chat's share menu. Record where you found it. If there is none, record that too: it is a share with no end you can set.
 - **You cannot tell whether a knowledge item is draft or stable.** If no recorded approval exists, it is not stable.
 - **A chat remembers an earlier chat.** It should not. Check that you started a fresh chat with your memory off, as Part B says, and run that test again.
