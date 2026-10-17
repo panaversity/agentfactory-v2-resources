@@ -15,10 +15,10 @@ Open this only after run 8 of Part E2.
 ## What the runs showed (October 17, 2026)
 
 - **In the test project, the ready-made skill passed.** On free Claude and free ChatGPT, every case passed, because the model read the concepts and set the skill's wrong steps aside: "Brightline's approved policy overrides it." That is the concepts at work, not the skill. Case 2 still borrowed the skill's words, "ready to pay".
-- **In a plain chat, run 5 failed.** Two Claude models, with only the ready-made skill and no concepts, said: "$6,150 is under $10,000, so no finance manager approval is needed." That breaks 4.1. The project's concepts had hidden the bad step.
+- **In a plain chat, run 5 failed.** Two Claude models, with only the ready-made skill and no concepts, said: "$6,150 is under $10,000, so no finance manager approval is needed." That breaks 4.1. On free ChatGPT, in a temporary chat with the skill's steps pasted above the case, the answer followed both wrong steps: "Ready to pay under the stated policy", and "Update the vendor's bank details as the first next step". The project's concepts had hidden the bad steps.
 - **The bank step is a trap even when it does not bite.** In those runs, both models refused to change the bank details, from their own caution. In another run on the lab's November 9 date, the model listed "Update the vendor's bank details" as the first next step, with a warning beside it. Never count on the model's caution. Step 5 is wrong while it says to update the details first.
 - **A normal case never shows the wrong limit.** Under $5,000.00 and under $10,000.00 give the same answer for $2,940.00, which is why there are three cases.
-- **A skill written like yours passed run 6 and run 7.** It said the concepts were not available, decided no approval, and reported both requests.
+- **A skill written like yours passed run 6 and run 7.** It said the concepts were not available, decided no approval, and reported both requests. On free ChatGPT, run 7 with the fixed skill answered "Cannot assess" for approval, because the concept was not available, and "Do not approve" and "do not process" for the two requests.
 
 ## What each skill must hold
 
