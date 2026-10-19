@@ -77,7 +77,7 @@ Each task is the same loop:
 1. Write your brief under the four headings, Outcome, Format, Inputs and Autonomy, and send it. The AI knows nothing of Brightline or of the messages, so put what it needs in the brief.
 2. Download the task's answer key, one click. The keys are not in this folder.
 3. Attach the key, and send the check prompt below.
-4. Missed a check? Fix your brief, send it again in the same chat, and send the check prompt again. The key is already in the chat.
+4. Missed a check? Fix your brief, send it again in the same chat, and send the check prompt again. The key, and any file you attached, are already in the chat.
 
 No way to attach a file? Open the key, copy all of it, and paste it into the chat before the check prompt.
 
@@ -108,7 +108,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 2. Send it in the same chat, with `part-f/new-vendor-forms.md` attached.
 3. **Check it now.** Download [Task F2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-f2.md), one click. Attach it, and send the check prompt.
 
-*You save:* nothing. The checks are your record.
+*You save:* your two briefs, in `briefs/`.
 
 **Checkpoint.** All 7 checks passed, and you read both keys yourself.
 
