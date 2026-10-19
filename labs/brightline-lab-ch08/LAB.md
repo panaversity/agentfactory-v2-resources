@@ -1,7 +1,7 @@
 # Lab 08: Your first KSoR, connected to both AI vendors
 
-**Time:** about 3 hours and 40 minutes of active work.
-**You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ksor/skills/invoice-check/SKILL.md` and `ksor/skills/invoice-review/SKILL.md`, `results/skill-test-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field.
+**Time:** about 3 hours and 55 minutes of active work.
+**You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ksor/skills/invoice-check/SKILL.md` and `ksor/skills/invoice-review/SKILL.md`, `results/skill-test-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field, and `results/project-review.md`.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts C, E and F also use one project in Claude and one in ChatGPT, and Part E2 adds a test project and a plain chat on each. Keep your concepts and results in this folder, not only in a project: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the concepts, the instructions and the SSoR record, and it writes your answers down. The test runs in Parts C, E and F still happen in the two projects, and Part E2's runs in the test projects and plain chats.
 **You need:** for Parts C, E and F, a Claude account and a ChatGPT account on plans that have projects. Claude's Free plan allows up to 5 projects. ChatGPT's Free plan allows 5 files in a project and 3 file uploads a day, so Part C says how to upload your five concepts as one file. With only one AI vendor, see Part C. For Part E2 on Claude, skills, which need code execution turned on, on any plan, and an incognito chat. ChatGPT's Free plan has no skills, so Part E2 puts the steps in a test project's instructions, or at the top of a message in a temporary chat.
@@ -171,6 +171,68 @@ An SSoR record kept by hand is still a copy you maintain. When a new record abou
 
 *You save:* `role/ap-worker-role-contract.md` and `results/my-concept.md`. The lab is not finished until both are saved, even after you pass the rubric.
 
+## Part H. What the worker holds and reaches (15 minutes)
+
+*Where:* In one new chat.
+
+On Monday, November 16, Maria exports the AP Worker's project setup: its instructions, its uploaded files and its connectors. [Concept 8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) says when to upload, when to connect, and how to keep both current. Here you decide.
+
+**Dave writes:** "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. The concepts I approved on November 9 are still current. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system." Sam Ortiz is an AP assistant.
+
+**Task H1. Review the project's setup (15 minutes).**
+
+1. Open one new chat that keeps no memory: an incognito chat on Claude, or a Temporary Chat on ChatGPT.
+2. Send the brief below as it is, with `part-h/project-setup-2026-11-16.md` from the folder attached.
+3. The AI shows you one item at a time. Decide each one in a few words, with the reason, in the shape the brief names. Dave's message holds facts the record does not. The record's dates are the lab's, in November 2026. If the AI remarks on them, say they are right.
+4. **Check it now.** When the table is done, download [Task H1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-h1.md), one click. Attach it, and send the check prompt below.
+5. Missed a check? Tell the AI your new decision for that item, have it update the table, and send the check prompt again. The key is already in the chat.
+
+No way to attach a file? Open it, copy all of it, and paste it into the chat.
+
+**The brief.** Copy it as it is:
+
+```text
+Outcome:  A review of the AP Worker's project setup, with my decision
+          for each item in the attached record.
+Format:   First show me the project's instructions, as the record gives
+          them. Then show me the five decisions and what each means:
+          keep (leave it as it is), replace (upload a current copy),
+          rescope (point it at less), reconnect (connect it again under
+          someone else) and remove (take it out). Say once, with no
+          example, that an item can take two decisions, joined by "and".
+          Then show me one item
+          at a time, as its own lines: the item, what it holds or
+          reaches, who added it, and when it was uploaded or last used.
+          Ask for my decision and the reason: the decision, then
+          "because" and the reason. When every item has a decision,
+          write a table: item, decision, reason.
+Inputs:   The attached setup record: the project's instructions, two
+          uploaded files and three connectors.
+Autonomy: Ask, and write down what I decide, in my words. Do not decide
+          for me, and do not suggest a decision.
+```
+
+**The check prompt.** Attach the key first, then send:
+
+```text
+Outcome:  The review you just did with me in this conversation, graded
+          against the attached answer key: Passed or Missed for each
+          of its checks.
+Format:   A table: the check, Passed or Missed, the words from my
+          decisions or your table that show it, and one line on why.
+          Then how many passed.
+Inputs:   My latest decisions and your table in this conversation,
+          and the attached answer key.
+Autonomy: Grade only. Do not redo the review, and do not suggest
+          other decisions. With no quote, mark the check Missed.
+```
+
+**Give Dave:** the review table.
+
+*You save:* the review table, as `results/project-review.md`.
+
+**Checkpoint.** All 5 checks passed, and you read the key yourself.
+
 ## What this lab does not prove
 
 Two runs show how two workers followed your instructions once. In Part II, nothing enforces them. The protection you do have is what you put in the project: only stable concepts and a dated SSoR record, nothing else. In Part IV, the record is served over MCP, and governance filters what a worker can retrieve.
@@ -184,6 +246,7 @@ Two runs show how two workers followed your instructions once. In Part II, nothi
 - [ ] `ksor/refresh-log.md`
 - [ ] `ksor/skills/invoice-check/SKILL.md`, your own skill, a draft, turned off
 - [ ] `ksor/skills/invoice-review/SKILL.md`, the fixed ready-made skill, a draft, turned off
+- [ ] `results/project-review.md`, your decision for each item in the project's setup
 - [ ] `results/skill-test-log.md`, with the section 6 score
 - [ ] `ssor/invoice-5149.md`, with a latest-known line
 - [ ] `role/ap-worker-role-contract.md`, Draft 5
