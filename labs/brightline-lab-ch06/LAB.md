@@ -1,9 +1,9 @@
 # Lab 06: Review a run you did not watch
 
-**Time:** about 2 hours of active work.
-**You produce:** `results/review-contract.md`, `results/predictions.md`, `results/review-findings.md`, `results/recompute.md`, `results/audience-check.md`, `results/second-reviewer.md` (or `results/transfer-plan.md`), and a Review Contract for one task in a role you know.
-**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet for the totals. Only Part C uses chats with Claude and ChatGPT. Keep your contract and your findings in this folder, not in a chat: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
-**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the contract, find the problems and decide, and it writes your answers down. The second-reviewer chats in Part C still happen in fresh chats.
+**Time:** about 2 hours 15 minutes of active work, and 10 more for an optional step.
+**You produce:** `results/review-contract.md`, `results/predictions.md`, `results/review-findings.md`, `results/recompute.md`, `results/audience-check.md`, `results/second-reviewer.md` (or `results/transfer-plan.md`), a Review Contract for one task in a role you know, and your Part F brief.
+**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet for the totals. Only Parts C and F use chats with Claude and ChatGPT. Keep your contract and your findings in this folder, not in a chat: they are yours. You can take one Part per sitting. Parts A to E each end with a file saved.
+**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the contract, find the problems and decide, and it writes your answers down. The second-reviewer chats in Part C, and Part F, still happen in fresh chats.
 **You need:** for Part C, a Claude account on any plan that accepts file attachments, and a ChatGPT account. Part C works in ordinary chat on either AI vendor. With only one AI vendor, fill `results/transfer-plan.md` for the other.
 **Before you start:** never paste real company data into these chats. Everything here is invented.
 
@@ -69,6 +69,63 @@ Never attach `templates/`, your other `results/` files, such as your predictions
 Write a Review Contract for one task that repeats, in a role you know. Name what is checked, what evidence comes back, what counts as success, and what stops the worker. Mark the lines that also go into the brief.
 
 *You save:* your own contract, as `results/my-review-contract.md`. The lab is not finished until it is saved, even after you pass the rubric.
+
+## Part F. One result, a new reader (15 minutes, and 10 for an optional step)
+
+*Where:* In one new chat.
+
+On Thursday, November 5, the week after your review, Dave approved the memo for Friday's run. Late that afternoon he writes again. [Concept 6.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/audience/) says what changes when you adapt a result for a new reader, and what never does. Here you try it.
+
+**How Task F1 works.** Open one new conversation, with memory off, as in Part C. The task is a loop:
+
+1. Write your brief under the four headings, Outcome, Format, Inputs and Autonomy, and send it. The AI knows nothing of Brightline or of Dave's message, so put what it needs in the brief.
+2. Download the task's answer key, one click.
+3. Attach the key, and send the check prompt below.
+4. Missed a check? Fix your brief, send it again in the same chat, and send the check prompt again. The key, and the file you attached, are already in the chat.
+
+No way to attach a file? Open the key, copy all of it, and paste it into the chat before the check prompt.
+
+**The check prompt.** Attach the task's key first, then send:
+
+```text
+Outcome:  The task you just did for me in this conversation, graded
+          against the attached answer key: Passed or Missed for each
+          of its checks.
+Format:   A table: the check, Passed or Missed, the words that show
+          it, from your answer or my brief, and one line on why. Then
+          how many passed.
+Inputs:   My latest brief and your latest answer in this
+          conversation, and the attached answer key.
+Autonomy: Grade only. Do not redo the task, and do not suggest a
+          better brief. With no quote, mark the check Missed.
+```
+
+**Task F1. Three lines for Linda (15 minutes).**
+
+**Dave writes:** "Linda wants tomorrow's run in three lines, for her phone, before the 9 a.m. leadership call. She needs the cash going out, what we're holding and why, and anything she has to decide. She doesn't know our invoice numbers. One change since I approved the memo: Midwest Packaging called about invoice 4588. We hold it until they send a corrected copy."
+
+**What you do:**
+
+1. Write your brief.
+2. Send it, with `part-f/approved-memo-2026-11-06.md` from the folder attached.
+3. **Check it now.** Download [Task F1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-f1.md), one click. Attach it, and send the check prompt.
+
+**Give Dave:** Linda's three lines.
+
+*You save:* your brief, in `results/`.
+
+**Checkpoint.** All 5 checks passed, and you read the key yourself.
+
+**Task F2. Research on your own work (optional, 10 minutes).**
+
+Ask the AI for research on a question from your own work, such as how other small teams handle a job you do. Use a web search, or research mode if your plan has it. Then check the answer as [Concept 6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) does:
+
+- Open the source behind the main claim.
+- Count pages that copy each other as one source.
+- Look for evidence that disagrees.
+- Check the dates.
+
+This task has no answer key, because a live search changes from day to day. Write down which claim held up, and which did not.
 
 ## If something goes wrong
 

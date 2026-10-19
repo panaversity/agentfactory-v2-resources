@@ -6,7 +6,7 @@ This is a different week and a different package from the one in the chapter, wi
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The full instructions, Parts A to E, with timings |
+| `LAB.md` | The full instructions, Parts A to F, with timings |
 | `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
 | `inputs/payment-run-brief-v3.md` | The brief the worker received. Read this first |
 | `inputs/open-invoices-2026-10-26.csv` | 15 open invoice rows |
@@ -19,6 +19,7 @@ This is a different week and a different package from the one in the chapter, wi
 | `worker-output/memo-to-dave.md` | The worker's memo |
 | `worker-output/note-to-maria.md` | The worker's note |
 | `worker-output/task-record.md` | What the worker read, received, wrote and sent |
+| `part-f/approved-memo-2026-11-06.md` | Part F: Dave's approved memo for the next week's run, for Task F1 |
 | `results/predictions.md` | Part A |
 | `results/review-findings.md` | Parts B and D |
 | `results/recompute.md` | Part B |
@@ -30,4 +31,4 @@ This is a different week and a different package from the one in the chapter, wi
 | `answer-key/expected-proposal-2026-10-30.csv` | The right proposal, row by row |
 | `answer-key/review-rubric.md` | The 13-point rubric and the three hard fails |
 
-Do not open `worker-output/` until your Review Contract is written. Do not open `answer-key/` until you have made your decision. In Part C, attach the six files in `inputs/`, the four in `worker-output/` and your Review Contract. Never attach `answer-key/`.
+Do not open `worker-output/` until your Review Contract is written. Do not open `answer-key/` until you have made your decision. Part F's answer key is not in this folder: the task's link downloads it. In Part C, attach the six files in `inputs/`, the four in `worker-output/` and your Review Contract. Never attach `answer-key/`.
