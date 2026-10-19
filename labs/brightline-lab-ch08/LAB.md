@@ -177,7 +177,7 @@ An SSoR record kept by hand is still a copy you maintain. When a new record abou
 
 On Monday, November 16, Maria exports the AP Worker's project setup: its instructions, its uploaded files and its connectors. [Concept 8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) says when to upload, when to connect, and how to keep both current. Here you decide.
 
-**Dave writes:** "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system." Sam Ortiz is an AP assistant.
+**Dave writes:** "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. The concepts I approved on November 9 are still current. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system." Sam Ortiz is an AP assistant.
 
 **Task H1. Review the project's setup (15 minutes).**
 
@@ -194,18 +194,19 @@ No way to attach a file? Open it, copy all of it, and paste it into the chat.
 ```text
 Outcome:  A review of the AP Worker's project setup, with my decision
           for each item in the attached record.
-Format:   First show me the five decisions and what each means: keep
-          (leave it as it is), replace (upload a current copy), rescope
-          (point it at less), reconnect (connect it again under someone
-          else) and remove (take it out). Then show me one item at a
-          time, as its own lines: the item, what it holds or reaches, who
-          added it, and when it was uploaded or last used. Ask for my
-          decision and the reason, in this shape: "remove, because ...".
-          An item can take two decisions, such as "rescope and reconnect,
-          because ...". When every item has a decision, write a table:
-          item, decision, reason.
-Inputs:   The attached setup record: two uploaded files and three
-          connectors.
+Format:   First show me the project's instructions, as the record gives
+          them. Then show me the five decisions and what each means:
+          keep (leave it as it is), replace (upload a current copy),
+          rescope (point it at less), reconnect (connect it again under
+          someone else) and remove (take it out). Say once that an item
+          can take two decisions, joined by "and". Then show me one item
+          at a time, as its own lines: the item, what it holds or
+          reaches, who added it, and when it was uploaded or last used.
+          Ask for my decision and the reason: the decision, then
+          "because" and the reason. When every item has a decision,
+          write a table: item, decision, reason.
+Inputs:   The attached setup record: the project's instructions, two
+          uploaded files and three connectors.
 Autonomy: Ask, and write down what I decide, in my words. Do not decide
           for me, and do not suggest a decision.
 ```
@@ -225,9 +226,9 @@ Autonomy: Grade only. Do not redo the review, and do not suggest
           other decisions. With no quote, mark the check Missed.
 ```
 
-**Give Dave:** the table.
+**Give Dave:** the review table.
 
-*You save:* the table, as `results/project-review.md`.
+*You save:* the review table, as `results/project-review.md`.
 
 **Checkpoint.** All 5 checks passed, and you read the key yourself.
 
