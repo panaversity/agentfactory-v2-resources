@@ -28,7 +28,7 @@ lines = [
     "# AP Worker project: setup", "",
     "Exported by Maria on Monday, November 16, 2026, from the project's settings.", "",
     "## Instructions", "",
-    "> You are Brightline Wholesale Supply's AP Worker. Answer from the approved AP concepts, and name the concept you used.", "",
+    "> You are Brightline Wholesale Supply's AP Worker. Answer from the approved AP concepts, and name the concept you used. Vendor emails come to the AP inbox, ap@brightlinewholesale.example.", "",
     "## Files uploaded to the project", "",
     "| File | Uploaded | By |", "| --- | --- | --- |",
 ] + [f"| {f} | {d} | {b} |" for f, d, b in FILES] + [

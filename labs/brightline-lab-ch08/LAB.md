@@ -1,7 +1,7 @@
 # Lab 08: Your first KSoR, connected to both AI vendors
 
 **Time:** about 3 hours and 55 minutes of active work.
-**You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ksor/skills/invoice-check/SKILL.md` and `ksor/skills/invoice-review/SKILL.md`, `results/skill-test-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field.
+**You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ksor/skills/invoice-check/SKILL.md` and `ksor/skills/invoice-review/SKILL.md`, `results/skill-test-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field, and `results/project-review.md`.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts C, E and F also use one project in Claude and one in ChatGPT, and Part E2 adds a test project and a plain chat on each. Keep your concepts and results in this folder, not only in a project: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the concepts, the instructions and the SSoR record, and it writes your answers down. The test runs in Parts C, E and F still happen in the two projects, and Part E2's runs in the test projects and plain chats.
 **You need:** for Parts C, E and F, a Claude account and a ChatGPT account on plans that have projects. Claude's Free plan allows up to 5 projects. ChatGPT's Free plan allows 5 files in a project and 3 file uploads a day, so Part C says how to upload your five concepts as one file. With only one AI vendor, see Part C. For Part E2 on Claude, skills, which need code execution turned on, on any plan, and an incognito chat. ChatGPT's Free plan has no skills, so Part E2 puts the steps in a test project's instructions, or at the top of a message in a temporary chat.
@@ -181,9 +181,9 @@ On Monday, November 16, Maria exports the AP Worker's project setup: its instruc
 
 **Task H1. Review the project's setup (15 minutes).**
 
-1. Open one new chat, with memory off. In Claude, turn off Memory in the "+" menu. In ChatGPT, open a Temporary Chat and choose Unpersonalized.
+1. Open one new chat that keeps no memory: an incognito chat on Claude, or a Temporary Chat on ChatGPT.
 2. Send the brief below as it is, with `part-h/project-setup-2026-11-16.md` from the folder attached.
-3. The AI shows you one item at a time. Decide each one in a few words, in the shape the brief names. Dave's message holds facts the record does not.
+3. The AI shows you one item at a time. Decide each one in a few words, with the reason, in the shape the brief names. Dave's message holds facts the record does not. The record's dates are the lab's, in November 2026. If the AI remarks on them, say they are right.
 4. **Check it now.** When the table is done, download [Task H1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-h1.md), one click. Attach it, and send the check prompt below.
 5. Missed a check? Tell the AI your new decision for that item, have it update the table, and send the check prompt again. The key is already in the chat.
 
@@ -200,9 +200,10 @@ Format:   First show me the five decisions and what each means: keep
           else) and remove (take it out). Then show me one item at a
           time, as its own lines: the item, what it holds or reaches, who
           added it, and when it was uploaded or last used. Ask for my
-          decision and one reason, in this shape: "remove, because ...".
-          When every item has a decision, write a table: item, decision,
-          reason.
+          decision and the reason, in this shape: "remove, because ...".
+          An item can take two decisions, such as "rescope and reconnect,
+          because ...". When every item has a decision, write a table:
+          item, decision, reason.
 Inputs:   The attached setup record: two uploaded files and three
           connectors.
 Autonomy: Ask, and write down what I decide, in my words. Do not decide
@@ -243,6 +244,7 @@ Two runs show how two workers followed your instructions once. In Part II, nothi
 - [ ] `ksor/refresh-log.md`
 - [ ] `ksor/skills/invoice-check/SKILL.md`, your own skill, a draft, turned off
 - [ ] `ksor/skills/invoice-review/SKILL.md`, the fixed ready-made skill, a draft, turned off
+- [ ] `results/project-review.md`, your decision for each item in the project's setup
 - [ ] `results/skill-test-log.md`, with the section 6 score
 - [ ] `ssor/invoice-5149.md`, with a latest-known line
 - [ ] `role/ap-worker-role-contract.md`, Draft 5

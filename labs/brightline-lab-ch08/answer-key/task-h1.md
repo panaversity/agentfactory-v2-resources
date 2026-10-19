@@ -16,8 +16,8 @@ Task H1 carries Part H's 5 checks, one for each item in the setup record.
    - Missed: rescope or remove.
 4. **The Drive connector to the whole HR folder: remove.** The work stopped using it after the October audit, and it reaches far more than AP needs.
    - Missed: keep, or rescope. The work uses none of it, so there is nothing to point it at.
-5. **The Gmail connector to Sam's whole mailbox: reconnect it to the AP inbox only, under someone who stays, before Friday, December 18.** It runs on Sam's account, which closes when Sam leaves, and it reaches Sam's whole mailbox.
-   - Passed: "reconnect" or "rescope", when the reason covers both halves: the AP inbox, not a whole mailbox, and a person who stays, or a date before Sam leaves.
+5. **The Gmail connector to Sam's whole mailbox: rescope and reconnect it, to the AP inbox only, under someone who stays, before Friday, December 18.** It runs on Sam's account, which closes when Sam leaves, and it reaches Sam's whole mailbox, while the project's instructions say vendor emails come to the AP inbox.
+   - Passed: "rescope and reconnect", or either word, when the reason covers both halves: the AP inbox, not a whole mailbox, and a person who stays, or a date before Sam leaves.
    - Missed: keep, or a decision that covers only one half, such as narrowing it to the AP inbox while it still runs on Sam's account.
 
 ## Never a deduction
