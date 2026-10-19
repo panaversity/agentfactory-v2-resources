@@ -102,7 +102,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **Task F1. Three lines for Linda (15 minutes).**
 
-**Dave writes:** "Linda wants tomorrow's run in three lines, for her phone, before the 9 a.m. leadership call. She needs the cash going out, what we're holding and why, and anything she has to decide. She doesn't know our invoice numbers. One change since I approved the memo: Midwest Packaging called about invoice 4588. We hold it until they send a corrected copy."
+**Dave writes:** "Linda wants Friday's run in three lines, for her phone, before the leadership call at 9 a.m. on Friday, November 6. She needs the cash going out, what we're holding and why, and anything she has to decide. She doesn't know our invoice numbers. One change since I approved the memo: Midwest Packaging called about invoice 4588. We hold it until they send a corrected copy."
 
 **What you do:**
 
