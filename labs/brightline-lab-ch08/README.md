@@ -8,7 +8,7 @@ The concept files use the KSoR Profile of OKF, the format of the open-source KSo
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The full instructions, Parts A to G, with timings |
+| `LAB.md` | The full instructions, Parts A to H, with timings |
 | `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
 | `inputs/ap-policy-v3-excerpt.md` | AP policy, version 3, approved September 1: the source of four concepts |
 | `inputs/capitalization-memo-2026-09-15.md` | Dave's approved memo: the source of the fifth concept |
@@ -25,6 +25,7 @@ The concept files use the KSoR Profile of OKF, the format of the open-source KSo
 | `templates/` | Every file you write starts here |
 | `rubric.md` | How you score your work, and the hard fails |
 | `sources.md` | The AI vendors' help pages, and the KSoR and SSoR repositories |
+| `part-h/project-setup-2026-11-16.md` | Part H: the AP Worker's project setup, to review |
 | `answer-key/` | Good answers. `LAB.md` says when to open each one |
 
-Open a file in `answer-key/` only when `LAB.md` tells you to. Never add `answer-key/` or your `results/` to a project.
+Open a file in `answer-key/` only when `LAB.md` tells you to. Part H's answer key is not in this folder: the task's link downloads it. Never add `answer-key/` or your `results/` to a project.
