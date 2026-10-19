@@ -1,9 +1,9 @@
 # Lab 05: One brief, two AI vendors
 
-**Time:** about 110 minutes of active work.
+**Time:** about 130 minutes of active work.
 **You produce:** `results/predictions.md`, `briefs/payment-run-brief-v1.md`, `results/run-log.md`, `results/comparison.md` (or `results/transfer-plan.md`), `results/iteration-log.md`, `briefs/payment-run-brief-v2.md`, and a Four-Part Brief for one task in a role you know.
-**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Only the runs in Parts B and D use chats with Claude and ChatGPT. Keep your briefs and answers in this folder, not in a chat: they are yours, and Chapter 9 puts your saved brief on a schedule. You can take one Part per sitting. Each Part ends with a file saved.
-**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the brief and decide every answer, and it writes your answers down. The runs in Parts B and D still happen in fresh chats.
+**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Only the runs in Parts B, D and F use chats with Claude and ChatGPT. Keep your briefs and answers in this folder, not in a chat: they are yours, and Chapter 9 puts your saved brief on a schedule. You can take one Part per sitting. Parts A to E each end with a file saved.
+**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the brief and decide every answer, and it writes your answers down. The runs in Parts B, D and F still happen in fresh chats.
 **You need:** for Run B, a Claude account on any plan that accepts file attachments. For Run C, a ChatGPT plan that includes Work, which OpenAI offers on eligible paid plans. With only free ChatGPT, do Run C in ordinary Chat and label it Chat, not Work. With only one AI vendor, fill `results/transfer-plan.md` instead of Run C.
 **Before you start:** never paste real company data into these runs. Everything here is invented.
 
@@ -65,6 +65,50 @@ Two results are possible, and both are fine. Run A may do better than you predic
 Write a Four-Part Brief for one recurring task in a role you know. Mark the controls, and name the governed source it must answer from.
 
 *You save:* your own brief, as `briefs/my-own-brief.md`. The lab is not finished until it is saved, even after you pass the rubric.
+
+## Part F. Two asks, two kinds of brief (20 minutes)
+
+*Where:* In one new chat, with your memory off as in Part B.
+
+The same Monday, October 19, two more messages arrive. One asks for ideas. The other asks for data that the accounting system will read. Concept 5.6 says how tightly to set each brief. Here you try it.
+
+Each task is the same loop:
+
+1. Write your brief under the four headings, Outcome, Format, Inputs and Autonomy, and send it.
+2. Download the task's answer key, one click. The keys are not in this folder.
+3. Attach the key, and send the check prompt below.
+4. Missed a check? Fix your brief, send it again, and check again.
+
+No way to attach a file? Open the key, copy all of it, and paste it into the chat before the check prompt.
+
+**The check prompt.** Attach the task's key first, then send:
+
+```text
+Outcome:  The task you just did for me in this conversation, graded
+          against the attached answer key: Passed or Missed for each
+          of its checks.
+Format:   A table: the check, Passed or Missed, the words that show
+          it, from your answer or my brief, and one line on why. Then
+          how many passed.
+Inputs:   My brief and your answer in this conversation, and the
+          attached answer key.
+Autonomy: Grade only. Do not redo the task, and do not suggest a
+          better brief. With no quote, mark the check Missed.
+```
+
+**Task F1. Ideas for the AP inbox (10 minutes).** Dave writes: "Vendors keep emailing invoices to Maria instead of the AP inbox, and some get missed. Give me some ways to fix it. Nothing that costs money, nothing that needs IT, and we never hold a payment because of where an invoice was sent."
+
+1. Write your brief. The AI knows nothing of Brightline or of Dave's message, so put what it needs in the brief.
+2. Send it, with nothing attached.
+3. **Check it now.** Download [Task F1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-f1.md), one click. Attach it, and send the check prompt.
+
+**Task F2. Three new vendors, as JSON (10 minutes).** Maria writes: "Three new vendors start this week. The accounting system imports vendors as JSON with these fields: vendor_id, legal_name, terms_days (a whole number), currency (three letters) and remit_email. It rejects the whole file if a value is guessed. Dave approved Net 45 for Riverside Tape on Friday, October 16. Their form still says Net 30. The forms are attached."
+
+1. Write your brief, in the same chat.
+2. Send it, with `part-f/new-vendor-forms.md` attached.
+3. **Check it now.** Download [Task F2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-f2.md), one click. Attach it, and send the check prompt.
+
+*You save:* nothing. The checks are your record: all 7 passed, and you read both keys yourself.
 
 ## If something goes wrong
 
