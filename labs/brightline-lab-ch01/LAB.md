@@ -143,7 +143,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 **What you do:**
 
 1. Send your brief.
-2. Open the doc. On Claude, it is in the Artifacts section, in the sidebar. On ChatGPT, look in Library, in the sidebar. If you got a file to download instead, download it and open it.
+2. Open the doc. On Claude, it is in the Artifacts section, in the sidebar. On ChatGPT, it stays in this conversation: open it from there. If you got a file to download instead, download it and open it.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give your manager:** a doc you can open again.
@@ -266,7 +266,7 @@ The goal: say where each of your results is kept, and whether it lasts.
 
 **What you decide.** For each result, two things, from [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/):
 
-- **The place** where it is kept. Your account or workspace holds the conversations, the Artifacts section on Claude and Library on ChatGPT. The AI's workspace is the temporary computer where the AI's work runs. Your own computer holds your folders and files. A connected app is one such as Google Drive.
+- **The place** where it is kept. Your account or workspace holds the conversations, and on Claude the Artifacts section. The AI's workspace is the temporary computer where the AI's work runs. Your own computer holds your folders and files. A connected app is one such as Google Drive.
 - **Stays or goes:** whether it is still there when the AI's work is done.
 
 For example, for a different result: a letter you scanned and saved in your Documents folder is kept on your own computer, so you would answer "my own computer, stays".
@@ -288,11 +288,10 @@ You decide. The AI only shows you the results, and records your answers.
              place, then stays or goes" for each, in one reply. At
              the end, a table of my answers.
    Inputs:   The places: my account or workspace (the
-             conversations, the Artifacts section on Claude or
-             Library on ChatGPT), the AI's workspace (the temporary
-             computer where the AI's work runs), my own computer
-             (my folders and files), a connected app (such as
-             Google Drive).
+             conversations, and the Artifacts section on Claude),
+             the AI's workspace (the temporary computer where the
+             AI's work runs), my own computer (my folders and
+             files), a connected app (such as Google Drive).
              The results: 1. The Task 1 total, as text in this
              conversation. 2. The Task 2 spreadsheet, as a file in
              this conversation. 3. The Task 5 doc. 4. The Friday
@@ -339,7 +338,7 @@ The goal: find out which of your Part A results are still there a day later, and
              Task 8, skip result 4.
    ```
 
-3. For each result the AI shows you, look for it: in the conversations, in the Artifacts section on Claude or Library on ChatGPT, in your `Brightline AP` folder, and on your computer. Then answer.
+3. For each result the AI shows you, look for it: in the conversations, in the Artifacts section on Claude, in your `Brightline AP` folder, and on your computer. Then answer.
 4. Read [the answers for Tasks 7 and 10](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back", at the end of that file.
 
 **Checkpoint.** You looked for every result, and read the answers. If you stop here, the lab is done.

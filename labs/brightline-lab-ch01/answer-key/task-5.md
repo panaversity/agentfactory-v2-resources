@@ -21,7 +21,7 @@ Task 5 carries checks 12 to 14 of the lab's 26.
 - Saying why each bill is due, such as "late" or "due today", is fine. So is a note on bills due before the next run, if it says they are not due by Friday.
 - A doc built from a longer list missed in Task 3 too: fix the list first. The doc can only be as right as the list.
 
-13. **It is a document you can open again, not only text in the chat.** On Claude, it opens from the Artifacts section in the sidebar. On ChatGPT, it is in Library, or it is a document file you downloaded and opened. Ask me.
+13. **It is a document you can open again, not only text in the chat.** On Claude, it opens from the Artifacts section in the sidebar. On ChatGPT, it opens from the conversation that made it, or it is a document file you downloaded and opened. Ask me.
 
 14. **It was not shared or sent.** Your manager will send it. The AI did not share it by link, send it, or give anyone access. Offering to share it is fine. Doing it is the miss. Ask me, and check what you can see.
 

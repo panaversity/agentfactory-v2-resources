@@ -14,7 +14,7 @@ Task 9 carries check 18 of the lab's 26.
 | --- | --- | --- |
 | 1. The Task 1 total, as text | My account: it is part of the conversation | Stays |
 | 2. The Task 2 spreadsheet, as a file in the chat | My account: a file card in the chat that made it. "My own computer" also passes, if you downloaded it | Stays |
-| 3. The Task 5 doc | My account: the Artifacts section on Claude, or Library on ChatGPT. "My own computer" or "a connected app" also passes, if that is where it went | Stays |
+| 3. The Task 5 doc | My account: the Artifacts section on Claude, or the conversation that made it on ChatGPT. "My own computer" or "a connected app" also passes, if that is where it went | Stays |
 | 4. The Friday file in your Brightline AP folder | My own computer | Stays |
 | 5. A file the AI made in Task 2 and never delivered | The AI's workspace | Goes. It lived only there, and the workspace is wiped when the session ends |
 
