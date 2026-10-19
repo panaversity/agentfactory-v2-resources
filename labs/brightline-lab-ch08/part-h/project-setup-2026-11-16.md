@@ -8,10 +8,10 @@ Exported by Maria on Monday, November 16, 2026, from the project's settings.
 
 ## Files uploaded to the project
 
-| File | Uploaded | By |
-| --- | --- | --- |
-| ap-concepts-approved-2026-11-09.md | Tuesday, November 10, 2026 | Maria |
-| vendor-terms-export-2026-09-30.xlsx | Thursday, October 1, 2026 | Sam Ortiz |
+| File | What it holds | Uploaded | By |
+| --- | --- | --- | --- |
+| ap-concepts-approved-2026-11-09.md | The five AP concepts, as Dave approved them on November 9 | Tuesday, November 10, 2026 | Maria |
+| vendor-terms-export-2026-09-30.xlsx | Every vendor's payment terms, exported from the accounting system on September 30 | Thursday, October 1, 2026 | Sam Ortiz |
 
 ## Connectors
 

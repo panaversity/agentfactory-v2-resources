@@ -198,8 +198,9 @@ Format:   First show me the project's instructions, as the record gives
           them. Then show me the five decisions and what each means:
           keep (leave it as it is), replace (upload a current copy),
           rescope (point it at less), reconnect (connect it again under
-          someone else) and remove (take it out). Say once that an item
-          can take two decisions, joined by "and". Then show me one item
+          someone else) and remove (take it out). Say once, with no
+          example, that an item can take two decisions, joined by "and".
+          Then show me one item
           at a time, as its own lines: the item, what it holds or
           reaches, who added it, and when it was uploaded or last used.
           Ask for my decision and the reason: the decision, then

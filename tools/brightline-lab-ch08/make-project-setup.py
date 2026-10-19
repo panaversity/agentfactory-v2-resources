@@ -14,9 +14,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "labs/brightline-lab-ch08/part-h/project-setup-2026-11-16.md"
 
-FILES = [  # file, uploaded, by
-    ("ap-concepts-approved-2026-11-09.md", "Tuesday, November 10, 2026", "Maria"),
-    ("vendor-terms-export-2026-09-30.xlsx", "Thursday, October 1, 2026", "Sam Ortiz"),
+FILES = [  # file, what it holds, uploaded, by
+    ("ap-concepts-approved-2026-11-09.md", "The five AP concepts, as Dave approved them on November 9", "Tuesday, November 10, 2026", "Maria"),
+    ("vendor-terms-export-2026-09-30.xlsx", "Every vendor's payment terms, exported from the accounting system on September 30", "Thursday, October 1, 2026", "Sam Ortiz"),
 ]
 CONNECTORS = [  # connector, what it reaches, connected by, last used
     ("Google Drive", "One folder: AP / Approved knowledge", "Maria", "Monday, November 16, 2026"),
@@ -30,8 +30,8 @@ lines = [
     "## Instructions", "",
     "> You are Brightline Wholesale Supply's AP Worker. Answer from the approved AP concepts, and name the concept you used. Vendor emails come to the AP inbox, ap@brightlinewholesale.example.", "",
     "## Files uploaded to the project", "",
-    "| File | Uploaded | By |", "| --- | --- | --- |",
-] + [f"| {f} | {d} | {b} |" for f, d, b in FILES] + [
+    "| File | What it holds | Uploaded | By |", "| --- | --- | --- | --- |",
+] + [f"| {f} | {h} | {d} | {b} |" for f, h, d, b in FILES] + [
     "", "## Connectors", "",
     "| Connector | What it reaches | Connected by | Last used |", "| --- | --- | --- | --- |",
 ] + [f"| {c} | {r} | {b} | {u} |" for c, r, b, u in CONNECTORS] + [""]
