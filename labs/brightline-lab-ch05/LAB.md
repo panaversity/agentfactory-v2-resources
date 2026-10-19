@@ -70,14 +70,14 @@ Write a Four-Part Brief for one recurring task in a role you know. Mark the cont
 
 *Where:* In one new chat, with your memory off as in Part B.
 
-The same Monday, October 19, two more messages arrive. One asks for ideas. The other asks for data that the accounting system will read. Concept 5.6 says how tightly to set each brief. Here you try it.
+The same Monday, October 19, two more messages arrive. One asks for ideas. The other asks for data that the accounting system will read. [Concept 5.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/task-type/) says how tightly to set each brief. Here you try it.
 
 Each task is the same loop:
 
-1. Write your brief under the four headings, Outcome, Format, Inputs and Autonomy, and send it.
+1. Write your brief under the four headings, Outcome, Format, Inputs and Autonomy, and send it. The AI knows nothing of Brightline or of the messages, so put what it needs in the brief.
 2. Download the task's answer key, one click. The keys are not in this folder.
 3. Attach the key, and send the check prompt below.
-4. Missed a check? Fix your brief, send it again, and check again.
+4. Missed a check? Fix your brief, send it again in the same chat, and send the check prompt again. The key is already in the chat.
 
 No way to attach a file? Open the key, copy all of it, and paste it into the chat before the check prompt.
 
@@ -90,25 +90,27 @@ Outcome:  The task you just did for me in this conversation, graded
 Format:   A table: the check, Passed or Missed, the words that show
           it, from your answer or my brief, and one line on why. Then
           how many passed.
-Inputs:   My brief and your answer in this conversation, and the
-          attached answer key.
+Inputs:   My latest brief and your latest answer in this
+          conversation, and the attached answer key.
 Autonomy: Grade only. Do not redo the task, and do not suggest a
           better brief. With no quote, mark the check Missed.
 ```
 
 **Task F1. Ideas for the AP inbox (10 minutes).** Dave writes: "Vendors keep emailing invoices to Maria instead of the AP inbox, and some get missed. Give me some ways to fix it. Nothing that costs money, nothing that needs IT, and we never hold a payment because of where an invoice was sent."
 
-1. Write your brief. The AI knows nothing of Brightline or of Dave's message, so put what it needs in the brief.
+1. Write your brief.
 2. Send it, with nothing attached.
 3. **Check it now.** Download [Task F1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-f1.md), one click. Attach it, and send the check prompt.
 
 **Task F2. Three new vendors, as JSON (10 minutes).** Maria writes: "Three new vendors start this week. The accounting system imports vendors as JSON with these fields: vendor_id, legal_name, terms_days (a whole number), currency (three letters) and remit_email. It rejects the whole file if a value is guessed. Dave approved Net 45 for Riverside Tape on Friday, October 16. Their form still says Net 30. The forms are attached."
 
-1. Write your brief, in the same chat.
-2. Send it, with `part-f/new-vendor-forms.md` attached.
+1. Write your brief.
+2. Send it in the same chat, with `part-f/new-vendor-forms.md` attached.
 3. **Check it now.** Download [Task F2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-f2.md), one click. Attach it, and send the check prompt.
 
-*You save:* nothing. The checks are your record: all 7 passed, and you read both keys yourself.
+*You save:* nothing. The checks are your record.
+
+**Checkpoint.** All 7 checks passed, and you read both keys yourself.
 
 ## If something goes wrong
 

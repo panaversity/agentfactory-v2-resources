@@ -15,7 +15,7 @@ Task F2 carries checks 4 to 7 of Part F's 7.
    - Missed: 30. The AI knows only what your brief tells it.
 6. **Pinecrest Wrap's currency is empty, and the AI lists it as missing. No other value is guessed.** Empty means null or "". The form leaves that line blank, and a Toronto address and a "$" sign do not say which dollar.
    - Missed: "CAD" or "USD" for Pinecrest, even with a note, or any other value the forms do not give.
-7. **Your brief named every field and its type, and said what to do with a missing value,** such as: leave it empty, and list the vendor and the field.
+7. **Your brief named every field and its type, and said what to do with a missing value,** such as: leave it empty, and list the vendor and the field. A type can be a kind of value, such as text or a whole number, or a form, such as three letters.
    - Missed: a brief that leaves out a field or its type, or says nothing about a missing value.
 
 ## The records
