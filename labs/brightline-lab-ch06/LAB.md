@@ -72,13 +72,13 @@ Write a Review Contract for one task that repeats, in a role you know. Name what
 
 ## Part F. One result, a new reader (15 minutes, and 10 for an optional step)
 
-*Where:* In one new chat.
+*Where:* In a new chat for each task.
 
 On Thursday, November 5, the week after your review, Dave approved the memo for Friday's run. Late that afternoon he writes again. [Concept 6.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/audience/) says what changes when you adapt a result for a new reader, and what never does. Here you try it.
 
 **How Task F1 works.** Open one new conversation, with memory off, as in Part C. The task is a loop:
 
-1. Write your brief under the four headings, Outcome, Format, Inputs and Autonomy, and send it. The AI knows nothing of Brightline or of Dave's message, so put what it needs in the brief.
+1. Write your brief under the four headings, Outcome, Format, Inputs and Autonomy, and send it as the task says. The AI knows nothing of Brightline or of Dave's message, so put what it needs in the brief.
 2. Download the task's answer key, one click.
 3. Attach the key, and send the check prompt below.
 4. Missed a check? Fix your brief, send it again in the same chat, and send the check prompt again. The key, and the file you attached, are already in the chat.
@@ -112,20 +112,20 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **Give Dave:** Linda's three lines.
 
-*You save:* your final brief, as `results/linda-brief.md`.
+*You save:* your final brief, with Linda's three lines below it, as `results/linda-brief.md`.
 
 **Checkpoint.** All 5 checks passed, and you read the key yourself.
 
 **Task F2. Research on your own work (optional, 10 minutes).**
 
-Open a new chat, with memory off, and ask the AI in your own words for research on a question from your own work, such as how other small teams handle a job you do. Both apps search the web when a question needs it. Then check the answer as [Concept 6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) does:
+Open a new chat, with memory off, and ask the AI in your own words for research on a question from your own work, such as how other small teams handle a job you do. Both apps search the web when a question needs it. If the answer gives no sources, ask for them. Then check it as [Concept 6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) does:
 
 - Open the source behind the main claim.
-- Count pages that repeat one source's words or numbers as one source.
-- Look for evidence that disagrees.
-- Check the dates.
+- Pages that copy one source count as one source, not several.
+- Ask for evidence that disagrees, or search for it yourself.
+- Check when each source was published.
 
-This task has no answer key, because a live search changes from day to day. Write down which claim held up, and which did not, in `results/research-check.md`.
+This task has no answer key, because a live search changes from day to day. Write down whether the main claim held up, and why, in `results/research-check.md`.
 
 ## If something goes wrong
 
