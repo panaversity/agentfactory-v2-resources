@@ -74,7 +74,7 @@ Write a Review Contract for one task that repeats, in a role you know. Name what
 
 *Where:* In a new chat for each task.
 
-On Thursday, November 5, the week after your review, Dave approved the memo for Friday's run. Late that afternoon he writes again. [Concept 6.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/audience/) says what changes when you adapt a result for a new reader, and what never does. Here you try it.
+On Thursday, November 5, the week after your review, Dave approved the memo for Friday's run, `part-f/approved-memo-2026-11-06.md`. Late that afternoon he writes again, about Linda, Brightline's owner. [Concept 6.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/audience/) says what changes when you adapt a result for a new reader, and what never does. Here you try it.
 
 **How Task F1 works.** Open one new conversation, with memory off, as in Part C. The task is a loop:
 
@@ -118,7 +118,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **Task F2. Research on your own work (optional, 10 minutes).**
 
-Open a new chat, with memory off, and ask the AI in your own words for research on a question from your own work, such as how other small teams handle a job you do. Both apps search the web when a question needs it. If the answer gives no sources, ask for them. Then check it as [Concept 6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) does:
+Open a new chat, with memory off, and ask the AI in your own words for research on a question from your own work, such as how other small teams handle a job you do. Both apps search the web when a question needs it. If no search runs, ask it to search the web. If the answer gives no sources, ask for them. Then check it as [Concept 6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) does:
 
 - Open the source behind the main claim.
 - Pages that copy one source count as one source, not several.

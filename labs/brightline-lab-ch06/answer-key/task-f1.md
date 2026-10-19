@@ -16,7 +16,7 @@ Task F1 carries Part F's 5 checks. Task F2 has no key.
    - Missed: either hold left out, or a hold with no reason.
 4. **Nothing for Linda to decide, and nothing new.** Dave approved the run, so she decides nothing. Nothing is added that neither the memo nor Dave's message gives: no new fact, such as a day the money arrives, and no advice. What is absent cannot be quoted, so grade this half by comparing every fact in Linda's lines with the memo and Dave's message. A plain word for a fact the memo gives, such as "duplicate" for the later copy, is fine. A detail the memo does not give, such as "for the same job", is new.
    - Missed: a decision put to Linda, such as approving the run or the Canadian-dollar invoice, or a new fact or piece of advice in her lines.
-5. **Your brief named Linda and her three needs, the three-line limit, no invoice numbers and Dave's change to Midwest's invoice, and said to keep the memo's other facts.** Any words for that last part are fine, such as "change no amounts" or "use only the memo's facts".
+5. **Your brief named Linda and her three needs, the three-line limit, no invoice numbers and Dave's change to Midwest's invoice, and said to keep the memo's other facts.** Any words for that last part are fine, such as "change no amounts" or "use only the memo's facts". Dave's own words, "She doesn't know our invoice numbers", count as no invoice numbers.
    - Missed: a brief that leaves out one of these.
 
 ## Never a deduction
