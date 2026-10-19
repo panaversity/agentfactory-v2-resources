@@ -6,7 +6,7 @@ This folder is standalone. It needs no files from other chapters. Start with `LA
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The full instructions, Parts A to E, with timings |
+| `LAB.md` | The full instructions, Parts A to F, with timings |
 | `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
 | `requests/dave-request.md` | Run A's one-line request |
 | `requests/maria-recipe.md` | Maria's fourteen steps, for the Predict part only |
@@ -17,6 +17,7 @@ This folder is standalone. It needs no files from other chapters. Start with `LA
 | `inputs/ap-policy-v2-excerpt.md` | A retired copy of policy version 2 |
 | `inputs/invoice-text-tcf-5161.txt` | The text of one Tri-County Freight invoice |
 | `briefs/four-part-brief-template.md` | The blank Four-Part Brief |
+| `part-f/new-vendor-forms.md` | Part F: three new vendors' setup forms, for Task F2 |
 | `results/predictions.md` | Part A |
 | `results/run-log.md` | Parts B and C: three runs, scored. Save each run's reply beside it, as `run-a-reply.md`, `run-b-reply.md` and `run-c-reply.md` |
 | `results/comparison.md` | Part C: Run B against Run C |
@@ -28,4 +29,4 @@ This folder is standalone. It needs no files from other chapters. Start with `LA
 | `answer-key/four-part-brief-example.md` | One good brief |
 | `answer-key/staged-brief-example.md` | One good two-stage version |
 
-Attach only the six files in `inputs/` to a run. Never attach `requests/`, `briefs/`, `results/` or `answer-key/`. Do not open `answer-key/` until you have scored your own runs.
+Attach only the six files in `inputs/` to a run in Parts B and D. In Part F, attach only `part-f/new-vendor-forms.md`, to Task F2. Part F's answer keys are not in this folder: each task's link downloads its key. Never attach `requests/`, `briefs/`, `results/` or `answer-key/`. Do not open `answer-key/` until you have scored your own runs.

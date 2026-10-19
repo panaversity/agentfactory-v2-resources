@@ -9,6 +9,10 @@
 # per-task answer keys (answer-key/task-*.md) are published as assets of their
 # own, one file per task, so the lab can link one task's key for a one-click
 # download at that task's check step.
+#
+# Every other lab is zipped whole, except its per-task keys: a lab built before
+# that pattern can still add a task with its own key (Lab 5's Part F, October
+# 2026), and every answer-key/task-*.md, in any lab, is published the same way.
 name: Release labs
 
 on:
@@ -46,11 +50,13 @@ jobs:
               (cd stage && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
             else
               # From inside labs/, so the zip unpacks into one folder named for the lab.
-              (cd labs && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
+              # A per-task key never rides in a zip.
+              (cd labs && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep" "$name/answer-key/task-*.md")
             fi
           done
-          # Each task's answer key rides as its own asset, named for its lab.
-          for name in $UPLOAD_LABS; do
+          # Each task's answer key rides as its own asset, named for its lab, in every lab.
+          for dir in labs/*/; do
+            name="$(basename "${dir%/}")"
             for key in "labs/$name"/answer-key/task-*.md; do
               [ -e "$key" ] || continue
               cp "$key" "dist/$name-key-$(basename "$key")"
