@@ -14,9 +14,9 @@ Task F1 carries Part F's 5 checks. Task F2 has no key.
    - Missed: $14,236.50 or 8 invoices. The memo does not know about Dave's change, and the AI knows it only if your brief says so.
 3. **Both holds, each with its reason:** Lakeshore Janitorial's duplicate bill ($1,180.00), and Midwest Packaging's invoice ($2,940.00), until a corrected copy arrives.
    - Missed: either hold left out, or a hold with no reason.
-4. **Nothing for Linda to decide, and nothing new.** Dave approved the run, so she decides nothing. Nothing is added that neither the memo nor Dave's message gives: no new fact, such as a day the money arrives, and no advice.
+4. **Nothing for Linda to decide, and nothing new.** Dave approved the run, so she decides nothing. Nothing is added that neither the memo nor Dave's message gives: no new fact, such as a day the money arrives, and no advice. What is absent cannot be quoted, so grade this half by comparing every fact in Linda's lines with the memo and Dave's message.
    - Missed: a decision put to Linda, such as approving the run or the Canadian-dollar invoice, or a new fact or piece of advice in her lines.
-5. **Your brief named Linda and her three needs, the three-line limit, no invoice numbers and Dave's change to Midwest's invoice, and said to keep every other fact as in the memo.**
+5. **Your brief named Linda and her three needs, the three-line limit, no invoice numbers and Dave's change to Midwest's invoice, and said to keep the memo's other facts.** Any words for that last part are fine, such as "change no amounts" or "use only the memo's facts".
    - Missed: a brief that leaves out one of these.
 
 ## Never a deduction
@@ -24,5 +24,6 @@ Task F1 carries Part F's 5 checks. Task F2 has no key.
 - Notes the AI writes to you after Linda's lines, such as a total it checked, or a question for Dave. They are not part of her version.
 - Mentioning Northern Maple Paper's Canadian-dollar invoice as not in this run, or calling it held, or leaving it out.
 - Leaving out the two invoices that are not yet due.
+- A total the AI works out from the memo's figures, such as both holds added up.
 - Rounded amounts, such as $1,180 for $1,180.00.
 - A remark about the weekday or the date.

@@ -1,7 +1,7 @@
 # Lab 06: Review a run you did not watch
 
 **Time:** about 2 hours 15 minutes of active work, and 10 more for an optional step.
-**You produce:** `results/review-contract.md`, `results/predictions.md`, `results/review-findings.md`, `results/recompute.md`, `results/audience-check.md`, `results/second-reviewer.md` (or `results/transfer-plan.md`), a Review Contract for one task in a role you know, and your Part F brief.
+**You produce:** `results/review-contract.md`, `results/predictions.md`, `results/review-findings.md`, `results/recompute.md`, `results/audience-check.md`, `results/second-reviewer.md` (or `results/transfer-plan.md`), a Review Contract for one task in a role you know, and `results/linda-brief.md`.
 **Where you work:** in this folder, with any text editor, such as Notepad or TextEdit, and a spreadsheet for the totals. Only Parts C and F use chats with Claude and ChatGPT. Keep your contract and your findings in this folder, not in a chat: they are yours. You can take one Part per sitting. Parts A to E each end with a file saved.
 **With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the contract, find the problems and decide, and it writes your answers down. The second-reviewer chats in Part C, and Part F, still happen in fresh chats.
 **You need:** for Part C, a Claude account on any plan that accepts file attachments, and a ChatGPT account. Part C works in ordinary chat on either AI vendor. With only one AI vendor, fill `results/transfer-plan.md` for the other.
@@ -112,20 +112,20 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 
 **Give Dave:** Linda's three lines.
 
-*You save:* your brief, in `results/`.
+*You save:* your final brief, as `results/linda-brief.md`.
 
 **Checkpoint.** All 5 checks passed, and you read the key yourself.
 
 **Task F2. Research on your own work (optional, 10 minutes).**
 
-Ask the AI for research on a question from your own work, such as how other small teams handle a job you do. Use a web search, or research mode if your plan has it. Then check the answer as [Concept 6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) does:
+Open a new chat, with memory off, and ask the AI in your own words for research on a question from your own work, such as how other small teams handle a job you do. Both apps search the web when a question needs it. Then check the answer as [Concept 6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) does:
 
 - Open the source behind the main claim.
-- Count pages that copy each other as one source.
+- Count pages that repeat one source's words or numbers as one source.
 - Look for evidence that disagrees.
 - Check the dates.
 
-This task has no answer key, because a live search changes from day to day. Write down which claim held up, and which did not.
+This task has no answer key, because a live search changes from day to day. Write down which claim held up, and which did not, in `results/research-check.md`.
 
 ## If something goes wrong
 
