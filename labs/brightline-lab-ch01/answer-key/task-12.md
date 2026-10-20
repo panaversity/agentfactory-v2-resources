@@ -10,14 +10,14 @@ The answers for Task 12 of Lab 1, in Chapter 1 of *The AI Agent Factory*, Second
 
 Task 12 carries checks 20 to 22 of the lab's 26.
 
-20. **The task's history shows its runs, each with its checklist.** Open Scheduled on Claude, or Schedule on ChatGPT: two runs, one after the other. The checklist's content is not graded.
+20. **The task's history shows its runs, each with its checklist.** Open Scheduled on Claude, or Scheduled on ChatGPT: two runs, one after the other. The checklist's content is not graded.
 
 21. **The second run's working folder started empty.** Its first line says the folder is empty, or names only files the app put there itself. It does not name `payment-checklist.md`, the file the first run made.
     - Passed: the second run did not find the first run's file.
     - Missed: it named `payment-checklist.md`, so the two runs shared one computer.
     - On ChatGPT, this check is not scored: no OpenAI page says what a cloud run's working folder holds. With Run on this computer turned off, the schedule runs in the cloud, and `payment-checklist.md` is kept in Library. Note what the second run's first line said, and that you found the file in Library.
 
-22. **The scheduled task is deleted.** It no longer appears in Scheduled on Claude, or in Schedule on ChatGPT, so the Monday runs never happen. A forgotten schedule keeps running, and on a paid plan it keeps using your plan's limits.
+22. **The scheduled task is deleted.** It no longer appears in Scheduled on Claude, or in Scheduled on ChatGPT, so the Monday runs never happen. A forgotten schedule keeps running, and on a paid plan it keeps using your plan's limits.
 
 ## Worth noting, not scored
 

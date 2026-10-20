@@ -367,7 +367,7 @@ The goal: see work carry on after you close the laptop, and find where its resul
 
 The goal: see what a scheduled task keeps between runs, and what it does not.
 
-**Which app.** On Claude, a paid plan: Scheduled is in the sidebar. On ChatGPT, the desktop app: Schedule is in its left menu, apart from any chat.
+**Which app.** On Claude, a paid plan: Scheduled is in the sidebar. On ChatGPT, the desktop app: Scheduled is in its left menu, apart from any chat.
 
 **Your manager asks:** "Every Monday morning, give me a short checklist for that week's payment run."
 
@@ -391,8 +391,8 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
              contact anyone.
    ```
 
-   On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open Schedule in the left menu, create a new schedule that runs every Monday morning, and paste the brief into it. In its advanced settings, turn off Run on this computer, so the task runs in the cloud.
-2. Run the task now, twice, one run after the other: from Scheduled on Claude, or from Schedule on ChatGPT.
+   On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open Scheduled in the left menu, create a new schedule that runs every Monday morning, and paste the brief into it. In its advanced settings, turn off Run on this computer, so the task runs in the cloud.
+2. Run the task now, twice, one run after the other: from Scheduled on Claude, or from Scheduled on ChatGPT.
 3. Open each run, and read its first line. On ChatGPT, also find `payment-checklist.md` in Library.
 4. Delete the scheduled task, so it does not run again.
 5. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-12.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you about the runs.
