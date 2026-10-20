@@ -429,11 +429,12 @@ The goal: have the AI change a file you already use, in place, and find where th
 **What you do:**
 
 1. Upload your Task 2 spreadsheet to Google Drive, and open it in Google Sheets.
-2. Add the AI to Sheets, from Extensions, then Add-ons, then Get add-ons. Search for Claude, or for ChatGPT, and install it.
-3. Open it from the Extensions menu. On Claude, choose Extensions, then Claude, then Open Claude.
-4. In the sidebar, send your manager's ask as it is. If the AI asks before it makes a change, read what it will do, and allow it.
-5. Open File, then Version history, then See version history. Find the AI's change.
-6. **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-14.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you what you see.
+2. With the file open, click the File menu at the top of Google Sheets, and click Save as Google Sheets. Your upload is an Excel file, and Google Sheets shows the Extensions menu only for its own files. A new copy opens, as a Google Sheets file in the same folder. Use that copy from here on.
+3. Add the AI to Sheets, from Extensions, then Add-ons, then Get add-ons. Search for Claude, or for ChatGPT, and install it.
+4. Open it from the Extensions menu. On Claude, choose Extensions, then Claude, then Open Claude.
+5. In the sidebar, send your manager's ask as it is. If the AI asks before it makes a change, read what it will do, and allow it.
+6. Open File, then Version history, then See version history. Find the AI's change.
+7. **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-14.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you what you see.
 
 **Checkpoint.** Checks 25 and 26 passed. The lab is done.
 
@@ -445,6 +446,7 @@ The goal: have the AI change a file you already use, in place, and find where th
 - **Your plan cannot work on files.** Do the tasks anyway, and see what the AI could and could not do.
 - **Your desktop app cannot open the folder.** Save the file in the `Brightline AP` folder yourself, and say so when you check Task 8.
 - **Your plan's daily limit ran out.** Your conversation will still be there tomorrow. Carry on from the next task.
+- **There is no Extensions menu in Google Sheets.** The file is still an Excel file. Open it, click the File menu at the top, click Save as Google Sheets, and work in the new copy.
 - **Your Google account cannot install add-ons.** A work account may block them. Use a personal Google account, or read Task 14's answer key.
 
 ## Apply it to your vertical

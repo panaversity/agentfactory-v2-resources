@@ -21,7 +21,7 @@ Task 14 carries checks 25 and 26 of the lab's 26.
 | 4471-R | No | A copy of 4471 |
 | The other ten | No | Due after Friday, October 2 |
 
-- The column is in the file in your Google Drive, not in a new file or only in the chat.
+- The column is in the Google Sheets copy you saved in your Google Drive, not only in the chat. Your uploaded Excel file stays as it was: that is fine.
 - A note on bills due soon after Friday is fine, if the column still says No.
 
 26. **The sheet's own version history shows the AI's change.** In File, then Version history, then See version history, a version holds the new column.
