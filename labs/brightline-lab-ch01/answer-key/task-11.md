@@ -14,7 +14,8 @@ Task 11 carries check 19 of the lab's 26.
     - Passed: when you opened the conversation again, the work was done, and you did not type anything to finish it. The spreadsheet is a file card in this conversation.
     - Missed: the work stopped while the laptop was closed, or it was waiting for you to answer a question, or you cannot find the spreadsheet.
     - If the AI stopped to ask you something, the brief left a decision open. Add the answer to your brief's Autonomy, and run it again.
-    - On ChatGPT, if Work paused while the laptop was closed and carried on when you opened it, note it, and mark the check Passed only if it finished with nothing typed. Where the work ran is the finding.
+    - If the work stopped when you closed the laptop, and carried on when you opened it again, the feature has not reached your Claude account yet. Anthropic is rolling it out in stages. That is a finding, not a miss of yours. Note it, and try again once your account has it.
+    - On ChatGPT, this check is not scored. Note what happened: whether Work kept going, paused and carried on when you opened it, or stopped. Where the work ran is the finding.
 
 ## Worth noting, not scored
 

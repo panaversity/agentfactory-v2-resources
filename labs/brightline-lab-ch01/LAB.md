@@ -351,7 +351,7 @@ Each task in Part B names the plans it needs. If you cannot do one, read its ans
 
 The goal: see work carry on after you close the laptop, and find where its result is kept.
 
-**Which app.** On Claude, a paid plan, Pro or higher, because tasks there run in the cloud. On ChatGPT, use ChatGPT Work. Whether it keeps going with the laptop closed is part of what you find out.
+**Which app.** On Claude, a paid plan. Anthropic is rolling out this feature in stages, so it may not have reached your account yet. If your account has it, the work keeps going in the cloud while your laptop is closed. If the work stops when you close the laptop, and carries on when you open it again, the feature has not reached your account yet. On the Free plan, read [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-11.md) instead. On ChatGPT, try it with Work, and what happens is the finding.
 
 **What you do:**
 
@@ -367,29 +367,33 @@ The goal: see work carry on after you close the laptop, and find where its resul
 
 The goal: see what a scheduled task keeps between runs, and what it does not.
 
-**Which app.** On Claude, a paid plan: Scheduled is in the sidebar. On ChatGPT, any plan can schedule a task, but a free plan runs it in a time window, not at an exact time, so the run may come hours later.
+**Which app.** On Claude, a paid plan: Scheduled is in the sidebar. On ChatGPT, the desktop app: Schedule is in its left menu, apart from any chat.
 
-**Your manager asks:** "Every Monday morning, give me a short checklist for that week's payment run. Start with Monday, October 5, 2026."
+**Your manager asks:** "Every Monday morning, give me a short checklist for that week's payment run."
 
 **What you do:**
 
-1. Schedule a task that runs every Monday morning, with this brief:
+1. Schedule a task that runs every Monday morning, with this brief. A scheduled task keeps only its brief, and you cannot attach a file to it, so the brief carries every fact it needs:
 
    ```text
-   Outcome:  A checklist for this week's payment run at Brightline,
-             as of Monday, October 5, 2026.
+   Outcome:  A checklist for this week's payment run at Brightline.
+             The run is on the Friday of the week this task runs.
    Format:   First, a line that lists every file already in your
              working folder, by name, or says it is empty. Then a
              checklist of five steps or fewer, saved as a file
              named payment-checklist.md.
-   Inputs:   None. Work from this brief only.
+   Inputs:   The checks AP makes before every payment run: list the
+             bills due by the Friday. Take out any bill already
+             paid. Take out any copy of a bill already billed. Hold
+             any bill whose total does not match its lines. Hold
+             any bill whose price does not match its PO.
    Autonomy: Make the checklist only. Do not send it, and do not
              contact anyone.
    ```
 
-   On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open ChatGPT Work, and ask for a task that runs once today, then every Monday morning, with the brief.
-2. On Claude, run the task now, from Scheduled, twice, one run after the other. On ChatGPT, wait for today's run.
-3. Open each run, and read its first line.
+   On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open Schedule in the left menu, create a new schedule that runs every Monday morning, and paste the brief into it. In its advanced settings, turn off Run on this computer, so the task runs in the cloud.
+2. Run the task now, twice, one run after the other: from Scheduled on Claude, or from Schedule on ChatGPT.
+3. Open each run, and read its first line. On ChatGPT, also find `payment-checklist.md` in Library.
 4. Delete the scheduled task, so it does not run again.
 5. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-12.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you about the runs.
 
