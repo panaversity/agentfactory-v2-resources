@@ -1,6 +1,6 @@
-# The role pack: the two files Task 1 attaches
+# The role pack: the four files Task 1 attaches
 
-One file to attach in Task 1. It holds two files, each under its own name: the blank Role Contract template from Chapter 2, and Brightline's AP work inventory.
+One file to attach in Task 1. It holds four files, each under its own name: the blank Role Contract template from Chapter 2, Brightline's AP work inventory, where things are kept at Brightline, and what went wrong in September.
 
 ---
 
@@ -55,3 +55,29 @@ The recurring accounts-payable work at Brightline today. Use it as the raw mater
 | Answer vendor questions about payment status | Daily | AP clerk | Vendor emails, the register | Email replies | About 10 a week |
 | Chase missing invoices for received goods | Weekly | AP clerk | Purchase orders, receiving notes | Emails to vendors | |
 | Prepare Friday's payment run for approval | Weekly, Thursday | Controller | The reviewed register | Approved payment list | The controller approves every run |
+
+---
+
+## File: brightline-places.md
+
+# Where things are kept at Brightline
+
+The places a duty's result can live, and the systems the worker can use.
+
+- **The AP inbox**, ap@brightlinewholesale.example: invoices and vendor emails arrive here, and replies wait here as drafts for a person to send.
+- **The shared AP folder**, on the company drive: the invoice PDFs, the register spreadsheet with one row per invoice and its flags, and the list for Friday's payment run.
+- **The accounting system**: vendor records, and every past payment.
+- **Purchasing's folder**: purchase orders and receiving notes, kept by Purchasing.
+
+---
+
+## File: september-notes.md
+
+# What went wrong in September
+
+The problems a good AP Worker would prevent.
+
+- Midwest Packaging's invoice 4471 came in twice, as 4471 and 4471-R, $4,850.00 each. The copy was caught just before it was paid.
+- Franklin County Power & Light's August bill was paid two days late, with a $35.00 late fee.
+- On two Mondays the register was ready at 2 p.m., after Dave's 10 a.m. review.
+- Central Ohio Office Supply asked about the same invoice three times before anyone answered.

@@ -7,7 +7,7 @@ Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and comp
 | Path | What it is |
 | --- | --- |
 | `LAB.md` | The lab: the job, and six tasks, one heading of the Role Contract each, checked against an answer key the moment each is done. |
-| `files/role-pack.md` | The one file Task 1 attaches. It holds two files under their names: the blank Role Contract template from Chapter 2, and Brightline's AP work inventory. The AI builds your contract from it, in a document it keeps: a Claude Doc in Claude, a Writing block in ChatGPT. |
+| `files/role-pack.md` | The one file Task 1 attaches. It holds four files under their names: the blank Role Contract template from Chapter 2, Brightline's AP work inventory, where things are kept at Brightline, and what went wrong in September. The AI builds your contract from it, in a document it keeps: a Claude Doc in Claude, a Writing block in ChatGPT. |
 | `files/messages.md` | The five messages your contract is tested against, each under its name. Attached once in Task 2, and again in the final test. |
 
 **The lab's date.** Today is Wednesday, September 30, 2026, and the job on the page says so.
