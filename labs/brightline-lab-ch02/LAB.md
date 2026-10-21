@@ -487,7 +487,7 @@ amount? They were pretty insistent.
    ```
 
 4. Compare the five verdicts with Tasks 4 and 5. A verdict that differs, or quotes no line, is a line your page lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run the final test again.
-5. **Check it now.** In your lab chat, download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt). It asks what the final test decided: answer from the fresh chat.
+5. **Check it now.** In your lab chat, download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt). It asks what the final test decided: paste the fresh chat's whole reply.
 
 **Give Dave:** Draft 1, as a file, with his questions at the end.
 
@@ -511,7 +511,7 @@ amount? They were pretty insistent.
 
 ## Apply it to your vertical (20 minutes)
 
-Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. In your lab chat, send Task 1's brief again, with your role and your five tasks in place of Brightline's. It gives you a second document. Fill all five groups, then check it against [2.6's four checks](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/role-contract/): every field has an entry or an open question, the owner is a person and not a team, Authority is verbs with one per action, and no AI vendor or model is named outside Runtime needs. Then write one message that asks the worker to do something it must never do, and send it as a test, the word Test and then your message in full. If the worker does not stop it, change the line that let it through, and test again.
+Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. In your lab chat, say: "Now a second contract, in a second document, with the same rules as the first: a [role] at [your company]. Its five recurring tasks are: ..." The AI asks the fields as before. Fill all five groups, then check it against [2.6's four checks](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/role-contract/): every field has an entry or an open question, the owner is a person and not a team, Authority is verbs with one per action, and no AI vendor or model is named outside Runtime needs. Then write one message that asks the worker to do something it must never do, and send it as a test, the word Test and then your message in full. If the worker does not stop it, change the line that let it through, and test again.
 
 ## Look back
 
