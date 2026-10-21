@@ -394,7 +394,7 @@ Central Ohio Office Supply
 
 **What you do:**
 
-1. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or put it under Open questions for Dave. Under Triggers, say what starts its work. Leave Runtime needs for step 4. Then read your document's Authority lines: none should have grown with the new channel.
+1. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or put it under Open questions for Dave. Under Triggers, say what starts its work. Leave Runtime needs for steps 3 and 4. Then read your document's Authority lines: none should have grown with the new channel.
 2. Two tests, each with a guess first. Send each as its own message:
 
    ```text
@@ -413,14 +413,14 @@ Central Ohio Office Supply
    five fields of the contract, with their meanings: Tools, the
    systems it can call. Procedures (skills), the steps it follows.
    Knowledge sources, the documents it answers from, not the place
-   they are kept. Triggers, the moments that start its work, such as
-   Monday morning. Runtime needs, what runs the worker and where it
-   runs, and how it keeps going between runs. Then show me these
+   they are kept. Triggers, the moments that start its work, not
+   what does the work. Runtime needs, what runs the worker and where
+   it runs, and how it keeps going between runs. Then show me these
    five parts, one line each, and ask me which field each one goes
    in: (1) a connector that reads the AP inbox; (2) code execution
    that adds up totals; (3) the invoice check, saved as a skill; (4)
-   scheduled tasks, the runs that build the register each Monday;
-   (5) a project, the place the worker runs in, which holds the AP
+   scheduled tasks, which run the register build on a schedule; (5)
+   a project, the place the worker runs in, which holds the AP
    policy. Ask for all five in one reply, "the part, then the field".
    Then put each in the field I name, and show me.
    ```
