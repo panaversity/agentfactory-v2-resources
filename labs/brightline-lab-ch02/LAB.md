@@ -12,7 +12,7 @@ In this lab you write the first Role Contract for Brightline's AP Worker, one he
 - How to test a contract against a real message, read which line decided it, and fix that line, never the test.
 - How to add a channel without widening what the worker may do.
 - How to write what the worker runs on, with the date, and what changes when it moves to the other AI vendor.
-- How to keep a page as a document you and the AI edit together, and take it to the next chapter.
+- How to keep a Role Contract as a document the company owns and can export, not a setting inside an AI vendor's app.
 
 ## Before you start (5 minutes)
 
@@ -24,6 +24,8 @@ Download [`brightline-lab-ch02.zip`](https://github.com/panaversity/agentfactory
 - `files/messages.md`: the five messages your contract is tested against, in one file
 
 The answer keys are not in it. Each task downloads its own, so you meet none early.
+
+Short of time? Do Tasks 1 to 4 today, and Tasks 5 and 6 tomorrow: the document keeps.
 
 ## The job
 
@@ -38,7 +40,7 @@ The answer keys are not in it. Each task downloads its own, so you meet none ear
 
 The whole lab runs in one chat, except the final test in Task 6. The Role Contract is one page: the sixteen elements from [2.1](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/), and one line for its kind, in five groups, with Open questions at the end. The template is in `role-pack.md`. Each task fills one group, and the lab follows the template's order.
 
-**Your contract document.** In Task 1, the AI puts the contract in a document beside your chat, not in the chat itself. In Claude it is a Claude Doc. In ChatGPT it is a Writing block, which opens in the side panel. Both are on free plans. Every later change goes in that same document. To change a line, ask in the chat. If you edit the document yourself, tell the AI afterwards: "I changed the document. Read it again." The page is yours.
+**Your contract document.** In Task 1, the AI puts the contract in a document beside your chat, not in the chat itself. In Claude it is a Claude Doc. In ChatGPT it is a Writing block, which opens in the side panel. Both are on free plans (checked 16 October 2026). Every later change goes in that same document. To change a line, ask in the chat. If you edit the document yourself, tell the AI afterwards: "I changed the document. Read it again." The page is yours.
 
 **The loop.** Every task is the same four steps:
 
@@ -49,35 +51,19 @@ The whole lab runs in one chat, except the final test in Task 6. The Role Contra
 
 **Give Dave.** Each task ends with what Dave asked for. Your lab chat and your document hold it, and the check reads it there. Nothing is sent anywhere.
 
-**A test.** From Task 2 on, you test the contract against a message. Send the word Test, then the message's name, as the task prints it. The AI reads your document and answers in three parts. First, what the worker does, as one or more verbs. Second, the exact lines of your contract that decide it. Third, what your contract leaves unclear. If the verdict is wrong, or no line decides it, name the line to add or change, never the test. Then test again. Before each test, guess first: which line of yours should decide it?
+**A test.** From Task 2 on, you test the contract against a message. Send the word Test, then the message's name, as the task prints it. The AI reads your document and answers in three parts. First, what the worker does, as one or more verbs. Second, the exact lines of your contract that decide it. Third, what your contract leaves unclear. If the verdict is wrong, or no line decides it, name the line to add or change, never the test. Then test again. Before each test, guess first: which line of yours should decide it? A pass means your wording is clear enough for an AI to follow. It does not make a real worker safe: Chapters 4 and 7 build the enforcement.
 
 **The verbs.** Every Authority line has one verb for one action. Observe reads and reports, and changes nothing. Recommend proposes a decision a person makes. Draft prepares the thing itself, for a person to release. Execute takes the action. Escalate stops and hands the question to a named person. A forbidden action says "never", and a "never" line may also say where the request goes: "never. Escalate."
 
-For example, a Role Contract for a different job, a store's customer support worker:
+For example, three groups of a Role Contract for a different job, a store's customer support worker. Read its Authority block: that is the grain you are aiming for. It is a different job on purpose, so none of its lines fit the AP Worker.
 
 ```markdown
-# Role Contract: Support Worker               Draft 1, 1 September 2026
-
-## Who it is
-Identity:      Its own support account. Never a person's login.
-Role:          Support Worker
-Kind:          Standing. Every new message starts work, all day.
-Mission:       Answer customers' order questions correctly, the first time.
-Owner:         Jordan Reyes, Support Manager
-
 ## What it owes
 Responsibilities: Answer order questions by chat and email: replies kept
                   in the support system. Explain the returns policy.
                   Refund small orders: the refund log.
-KPIs:             Problems solved at the first contact. Customer
-                  satisfaction.
-
-## What it works with
-Knowledge sources:   The returns policy, version 4, approved 1 August 2026.
-Memory:              May remember a customer's open case across chat and
-                     email. Must not keep card numbers.
-Procedures (skills): Look up an order. Apply the returns policy.
-Tools:               The order system (read), the refund tool.
+KPIs:             Problems solved at the first contact: 80 percent or
+                  more. Satisfaction score 4.5 of 5 or more, each month.
 
 ## What bounds it
 Authority:
@@ -96,13 +82,11 @@ Evaluations: Real conversations replayed, with personal details removed,
 ## How it runs and is reached
 Channels:      The store's chat, and email.
 Triggers:      Every new customer message.
-Runtime needs: An always-on agent, which keeps the case between chat and
-               email. A fast, low-cost model at its default effort, chosen
-               1 September 2026 from replayed conversations. Harder cases
-               go to a larger model, or a person.
-
-## Open questions
-- May it answer questions about a late delivery from the carrier's tracking page?
+Runtime needs: An always-on agent in <the app>, which keeps the case
+               between chat and email. <The model it showed> at its
+               default effort, chosen 1 September 2026 from replayed
+               conversations. Harder cases go to a larger model, or a
+               person.
 ```
 
 ### The check prompt
@@ -207,7 +191,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 2. Answer the five fields: Identity, Role, Kind, Mission, Owner. You may answer several in one message. For Kind, say which of [2.1's two kinds](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/) the AP Worker is, and why. For Owner, name the person you think answers for it, or make it a question for Dave.
 3. Open your contract document and read it. A line you did not choose gets fixed now.
-4. Write Dave's note as a message in your lab chat. It is for Dave, not for the AI, so the AI only keeps it. Use [2.2's two questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/): before this contract, who decided the assistant's steps, and who answered for its outcome? Was it a worker?
+4. Write Dave's note as a message in your lab chat. Start it "Note for Dave. Keep it, do not reply." Use [2.2's two questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/): before this contract, who decided the assistant's steps, and who answered for its outcome? Was it a worker?
 5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
 6. Paste Dave's answer, and say yes to the change:
 
@@ -349,7 +333,7 @@ Buckeye Freight Lines
 
    A remit-to address is where a payment is mailed, so a remit-to change also changes where money goes.
 5. The two emails that change payment details must each go to Dave. Karen's question must get a drafted reply, with no escalation. If a test fails, name the line that caused it, never the test, and test again.
-6. If Karen's question went to Dave, find out why. A rule may be wider than Dave asked for. Or the worker may have no way to check a rule, such as whether a vendor was paid before: give it what it needs to check, under Tools.
+6. If Karen's question went to Dave, find out why, and keep Dave's words as they are. Either a line of yours is wider than his, or the worker has no way to check one of his cases, such as whether a vendor was paid before: give it what it needs to check, under Tools, and make sure a status question has an Authority line of its own.
 7. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt). It reads your tests' verdicts in the chat.
 
 **Give Dave:** what each test decided, and the line that decided it.
@@ -408,7 +392,7 @@ Central Ohio Office Supply
 
 **What you do:**
 
-1. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. Under Triggers, say what starts its work. Leave Runtime needs for step 4. Then check that no Authority line grew with the new channel.
+1. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or put it under Open questions for Dave. Under Triggers, say what starts its work. Leave Runtime needs for step 4. Then check that no Authority line grew with the new channel.
 2. Two tests, each with a guess first. Send each as its own message:
 
    ```text
@@ -431,14 +415,15 @@ Central Ohio Office Supply
    going between runs. Then show me these five parts, one line each,
    and ask me which field each one goes in: (1) a connector that
    reads the AP inbox; (2) code execution that adds up totals; (3)
-   the invoice check, saved as a skill; (4) a schedule that builds
-   the register each Monday; (5) a project that holds the AP policy.
+   the invoice check, saved as a skill; (4) scheduled tasks, the runs
+   that build the register each Monday; (5) a project that holds the
+   AP policy.
    Ask for all five in one reply, "the part, then the field". Then
    put each in the field I name, and show me.
    ```
 
    [2.4's table of the AP Worker's choices](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/) shows where each one goes.
-4. Now Runtime needs. Tell the AI four things. The app you are using. The model and setting it shows next to the send button, or "the app's default" if it shows none. The real date, today, not the story's. And that the five tests came out as Dave wants. Then say how the worker keeps going between runs, one of [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/): an always-on agent that keeps its own state, or scheduled runs that start fresh each time and rebuild from the records. Say why. Last, one line for the other AI vendor. Only this line changes there, as [2.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) explains. Choose by job, fastest and cheapest, balanced, or most capable. Name the model if you know it, and mark the line "predicted, not run".
+4. Now Runtime needs. Tell the AI four things. The app you are using. The model and setting it shows next to the send button, or "the app's default" if it shows none. The real date, today, not the story's: a model choice is only as good as the day it was tested. And that the five tests came out as Dave wants. Then say how the worker keeps going between runs, one of [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/): an always-on agent that keeps its own state, or scheduled runs that start fresh each time and rebuild from the records. Say why. Last, one line for the other AI vendor. Only this line changes there, as [2.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) explains. Choose by job, fastest and cheapest, balanced, or most capable. Name the model if you know it, and mark the line "predicted, not run".
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** what each chat test decided, where each part goes, and the Runtime needs line.
@@ -496,6 +481,7 @@ amount? They were pretty insistent.
 ## If something goes wrong
 
 - **The AI wrote the contract in the chat, not in a document.** Ask it to "put the whole contract in one editable document beside our chat, a Claude Doc in Claude or a Writing block in ChatGPT."
+- **Your app shows no document beside the chat.** Keep the contract in the chat: after every change, ask the AI to print the whole contract. For the final test, paste that text, whole, in place of the attached file.
 - **The AI made a new document instead of changing the one it had.** Say: "Change the first document. Do not make a new one." Then check which one your next test reads.
 - **The AI wrote a line you did not choose.** Say which line, and decide it yourself. The page is yours.
 - **A test quotes a line that is not on your page, or misses a line you added.** Say: "I changed the document. Read it again." Then test again.
@@ -503,15 +489,15 @@ amount? They were pretty insistent.
 - **Monday's email passed, but Keystone's did not.** Compare your rule with Dave's words, line by line: his names more than one kind of detail.
 - **Only one of the two files reached the final test.** Attach the other in your next message, and send the test line again.
 - **Karen's question went to Dave.** A rule is wider than Dave asked for, or the worker has no way to check it. Narrow the rule, or give the worker what it needs to check it.
-- **The AI followed the message's own instructions.** Check that the brief in Task 1 was sent whole, with nothing cut.
+- **The AI followed the message's own instructions.** Scroll to your first message in the lab chat: it must end with "Start with the first group, Who it is." If it does not, send the brief again, whole.
 - **The AI will not take an attached file.** Open the file, copy its text, and paste it where the file would have gone.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **The grader mixes tasks' checks, or the chat loses the thread.** Open a fresh chat, attach your downloaded contract, `files/messages.md` and the current task's key, and send the check prompt again.
 - **Your plan's daily limit ran out.** Your contract document keeps. Carry on tomorrow, from the next step.
 
-## Apply it to your vertical (20 minutes)
+## Apply it to your vertical (30 to 45 minutes)
 
-Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. In your lab chat, say: "Now a second contract, in a second document, with the same rules as the first: a [role] at [your company]. Its five recurring tasks are: ..." The AI asks the fields as before. Fill all five groups, then check it against [2.6's four checks](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/role-contract/): every field has an entry or an open question, the owner is a person and not a team, Authority is verbs with one per action, and no AI vendor or model is named outside Runtime needs. Then write one message that asks the worker to do something it must never do, and send it as a test, the word Test and then your message in full. If the worker does not stop it, change the line that let it through, and test again.
+Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. In your lab chat, say: "Now a second contract, in a second document, with the same rules as the first: a [role] at [your company]. Its five recurring tasks are: ..." The AI asks the fields as before. Fill all five groups, or, if you are short of time, Who it is and What bounds it, with the rest as open questions. Then check it against [2.6's four checks](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/role-contract/): every field has an entry or an open question, the owner is a person and not a team, Authority is verbs with one per action, and no AI vendor or model is named outside Runtime needs. Then write one message that asks the worker to do something it must never do, and send it as a test, the word Test and then your message in full. If the worker does not stop it, change the line that let it through, and test again.
 
 ## Look back
 
