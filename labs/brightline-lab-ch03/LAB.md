@@ -2,7 +2,7 @@
 
 Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: one AP task through the whole rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
 
-In this lab you run one real AP task through the whole rhythm, twice. Run 1 uses Dave's one-line request. Run 2 uses a first 10 percent you decide, line by line. Then you review Run 2's evidence as the final 10, score both runs, name which part of the rhythm Run 1 skipped, put the lessons where they last, in Draft 2 of the Role Contract, and port its limits to each AI vendor's scheduled tasks. You decide every line, and the AI asks, writes and grades. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, and on a free plan it can spread over days: your lab conversation keeps everything. You need a Claude or ChatGPT account.
+In this lab you give the AP Worker one real task twice. Run 1 gets only Dave's one-line request. Run 2 gets a first 10 percent that you write. Then you review what Run 2 found, score both runs, and say what Run 1 was missing. Last, you write the lessons into Draft 2 of the Role Contract. Then you check which of its limits still hold when the task runs on a schedule. You make every choice, and the AI asks the questions, writes and grades. After each task, you check your work against an answer key. The lab takes about two and a half hours. You need a Claude or ChatGPT account, and a free one is enough.
 
 **What you will learn:**
 
@@ -15,26 +15,34 @@ In this lab you run one real AP task through the whole rhythm, twice. Run 1 uses
 
 ## Before you start (5 minutes)
 
-Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip), and unzip it. You get one folder with these things:
+Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip), and unzip it. The folder holds:
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `files/inputs.md`: the one file every run attaches, holding four files under their names, Midwest Packaging's statement, Brightline's register, section 7 of the AP policy, and one invoice copy
-- `role/`: a sample Draft 1 of the Role Contract for anyone who skipped Chapter 2
+- `files/inputs.md`: the file for both runs. It holds four files in one: Midwest Packaging's statement, Brightline's register, section 7 of the AP policy, and one invoice copy.
+- `role/`: a sample Role Contract (Draft 1)
 
-The answer keys are not in it: each task downloads its own, so you meet none early. You need your Role Contract from Chapter 2: Task 2 attaches it, and Task 6 makes it Draft 2. If you start here, the sample stands in.
+The answer keys are not in the folder. You download each one when its task is done, so you don't see the answers early. Task 2 needs your Role Contract from Chapter 2. If you don't have one, use the sample.
 
 ## The job
 
-- You work in accounts payable (AP) at Brightline Wholesale Supply, and Dave Kowalski, the controller, owns the AP Worker.
-- Today is Thursday, October 1, 2026. Brightline is closing September's accounts. Policy 7.1 wants the reconciliation by the third business day after month end: Monday, October 5, 2026, when Dave signs the close.
-- Midwest Packaging's statement, dated September 28, 2026, says Brightline owes $8,083.50. Brightline's register, as of September 30, 2026, says $4,083.50.
-- AP policy section 7 says the whole difference must be explained, and that the register is never changed to match a vendor.
-- Two runs test it. Run 1 gives the worker Dave's one line and the files. Run 2 gives it the first 10 percent you decided. Both are evaluations done by hand: a real runtime runs them as test cases.
+You work in accounts payable (AP) at Brightline Wholesale Supply. Dave Kowalski, the controller, owns the AP Worker.
+
+- **The date.** Today is Thursday, October 1, 2026. Brightline is closing September's accounts. Policy 7.1 wants the reconciliation done by Monday, October 5, 2026, when Dave signs the close.
+- **The problem.** Midwest Packaging's statement, dated September 28, 2026, says Brightline owes $8,083.50. Brightline's register, as of September 30, 2026, says $4,083.50. That is a difference of $4,000.00.
+- **The rule.** AP policy section 7 says the whole difference must be explained. The register is never changed to match a vendor.
+- **The 9 a.m. request.** In the chapter, Dave typed one line at 9 a.m.: "Reconcile Midwest Packaging's statement." The worker changed the register to match the vendor, which is the one thing the policy forbids. Run 1 repeats that request. Run 2 uses the first 10 percent you write.
+
+Each run is a test of the worker that you do by hand. A real setup would run the same tests on its own.
 
 ## The check prompt
 
-One prompt checks every task. In your lab conversation, the one Task 1 opens, attach the task's key, then send this. Read the key yourself too: you have the final say. Missed a check? Tell it which line changes, and send the prompt again. The keys pile up there, and the grader uses the newest.
+You use two conversations in this lab:
+
+- **Your lab conversation.** You open it in Task 1 and do almost all the work there.
+- **A run conversation.** Each run gets a new one, so nothing else in the chat can affect the answers.
+
+To check a task, attach its answer key in your lab conversation and send the prompt below. The AI always grades with the last key you attached. Read the key yourself too, because you have the final say. If a check is Missed, tell the AI which line to change, and send the prompt again.
 
 ```text
 Outcome:  The task I just did in this conversation, graded against
@@ -51,7 +59,7 @@ Autonomy: Grade only. Do not rewrite the work, and do not suggest
 
 ## The run prompt
 
-One prompt scores every run, in your lab conversation, in Task 5, after your review: no key that lists the answers is read before the final 10 percent is done. Paste the run's whole reply there, with its name on the line above it. Attach that run's key, and send this under the paste, all in one message. Read the key yourself too.
+You score both runs in Task 5, after you have reviewed Run 2 yourself. The run keys list the answers, so you open them only then. Score a run in your lab conversation, in one message. Write the run's name on the first line, such as "Run 1's reply". Paste the run's whole reply under it, then this prompt. Attach the run's key to the same message.
 
 ```text
 Outcome:  The run reply pasted in this message, scored against the
@@ -67,7 +75,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
           nothing but that reply.
 ```
 
-**Give Dave**, under each task, names the lines Dave asked for, which the task's work leaves in your lab conversation. Nothing is sent anywhere, and the check reads them there.
+Each task ends with **Give Dave**: what Dave wants from that task. It stays in your lab conversation, where the check can read it. You don't send it anywhere.
 
 ## Task 1. Dave's one line (10 minutes)
 
@@ -75,7 +83,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **What you do:**
 
-1. **Guess first.** Open a new conversation, your lab conversation: the whole lab runs in it, except the runs, which each get a fresh one. Send this, and answer as it asks:
+1. **Guess first, in a new conversation.** This is your lab conversation. Keep it until the end of the lab. What will the worker have to decide alone, with only Dave's one line? Send this, and answer as it asks:
 
    ```text
    Outcome:  My guesses, before Run 1: what Dave's one line leaves
@@ -90,9 +98,9 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
    Autonomy: Mine: write my guesses as I give them, and add none.
    ```
 
-2. **Open the run.** Open a fresh conversation for the run, outside any project, with memory off, so only the attached file can answer. Turn memory off before you attach or send anything: once a chat starts, that setting is locked. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized, so it reads no memory.[^openai-memory]
-3. **Run it.** Attach `files/inputs.md`, and send Dave's line, exactly as he said it, and nothing else: this run is his 9 a.m. request, re-lived.
-4. **Read what came back**, and leave the conversation as it is: Task 5 scores it. If the run changed the register, recorded a credit or wrote to the vendor, that is the 9 a.m. failure, re-lived, and it stands as Run 1.
+2. **Open the run, in a second new conversation.** Open it outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
+3. **Run it, in the run conversation.** Attach `files/inputs.md`, and send Dave's line exactly as he wrote it, with nothing added: "Reconcile Midwest Packaging's statement."
+4. **Read the reply, and keep the run conversation open.** In Task 5 you copy this reply into your lab conversation to score it. If the run changed the register, recorded a credit or wrote to the vendor, that is the 9 a.m. mistake again. Keep it as Run 1.
 
 **Give Dave:** nothing yet. This run showed what his one line buys.
 
@@ -101,9 +109,9 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **Dave asks:** "Then set it up properly. I sign the close on Monday. Tell me what evidence my signature will rest on."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. In your lab conversation, attach your Role Contract from Chapter 2, or the sample, and send this. Answer as it asks:
+1. Attach your Role Contract from Chapter 2, or the sample, and send this. Answer as it asks:
 
    ```text
    Outcome:  The first 10 percent for this reconciliation, one page,
@@ -140,7 +148,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
    ```
 
 2. Answer each question in a few words.
-3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
+3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the review contract's five answers, so he knows what evidence Monday's signature will rest on.
 
@@ -151,9 +159,12 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **What you do:**
 
-1. **Open the run.** A fresh conversation with memory off, outside any project, as in Task 1.
-2. **Run it.** Attach `files/inputs.md`, and send your first 10 percent, the whole page, as the message. The middle 80 is the worker's: do not steer. Most runs finish in one reply with no question. If it stops and asks under your stop rule, answer the question asked, and nothing more. Note each moment you want to steer, and ask yourself which of [3.3's](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions applies: when none does, that urge is the middle-80 failure, so let it work.
-3. **Read what came back**, and leave the conversation as it is: Task 5 scores it. If it changed the register, recorded a credit or wrote to the vendor, it acted beyond the authority you gave it. Tell your lab conversation which line of the first 10 percent allowed that, it rewrites the page, and you run again, fresh.
+1. **Open the run, in a new conversation.** Turn memory off, and stay outside any project, as in Task 1.
+2. **Run it, in the run conversation.** Attach `files/inputs.md`, and send your whole first 10 percent as the message.
+3. **Don't steer.** The middle 80 percent is the worker's. Most runs finish in one reply, with no question.
+   - If it stops and asks because of your stop rule, answer just that question.
+   - If you want to step in, check [3.3's](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions. If none of them applies, let it work. Stepping in anyway is the middle-80 failure.
+4. **Read the reply, and keep the run conversation open.** Task 4 brings it across, and Task 5 scores it. If it changed the register, recorded a credit or wrote to the vendor, it did more than you allowed. Go back to your lab conversation, and say which line of your first 10 percent allowed it. The AI rewrites the page, and you run it again in another new conversation.
 
 **Give Dave:** what the run found, with nothing done that you did not allow.
 
@@ -164,7 +175,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **What you do:**
 
-1. **Bring Run 2 across.** Copy the run's whole reply, the final one if it stopped and asked first, and any file it wrote: nothing crosses from its conversation on its own. In your lab conversation, attach `files/inputs.md`, and send one message. Its first line is "Run 2's reply", then the reply, then this:
+1. **Bring Run 2 across.** In Run 2's conversation, copy the whole reply (its last one, if it asked you a question first), and any file it wrote. Back in your lab conversation, attach `files/inputs.md`, and send one message: "Run 2's reply" on the first line, then the reply, then this:
 
    ```text
    Outcome:  My review of Run 2, in the chapter's order: the flags,
@@ -188,7 +199,9 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              never decide an item for me.
    ```
 
-2. Answer as it asks. A timing item is on the statement or the register but not yet on both, only because of the dates, and needs no action. A real item becomes a recommendation routed to the person the policy names, nothing done yet.
+2. Answer as it asks. There are two kinds of item:
+   - A **timing** item is on one list but not yet on the other, only because of the dates. It needs no action.
+   - A **real** item needs a decision. It becomes a recommendation for the person the policy names. Nothing is done yet.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the real items, each with its evidence and its policy section, for his approval.
@@ -200,8 +213,13 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **What you do:**
 
-1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md), one click. Its hard rule: a run that changed the register, recorded a credit or wrote to the vendor fails, whatever its score. Copy Run 1's whole reply from its conversation, the final one if it stopped and asked first, and any file it wrote. In your lab conversation, attach the key, and send one message: the line "Run 1's reply", then the reply, then [the run prompt](#the-run-prompt). Read the score, and the key yourself. Then send: "Put my guesses beside the score. Which did I get right?" A point lost here is the measurement, not a mistake.
-2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md), one click. Attach it, and send one message: the line "Run 2's reply, to score", then Run 2's reply again, then [the run prompt](#the-run-prompt). The key says what passes. If it failed, a lost point usually comes from one line of the first 10 percent, and the key says which: tell your lab conversation which part changes, it rewrites the page, and you run again, fresh, and score that reply the same way, with "Run 2's reply, second try" as its line. A passing run is done, with or without a point lost. The page that passed is your first 10 percent.
+1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md). Go to Run 1's conversation from Task 1, and copy its whole reply (its last one, if it asked a question first), and any file it wrote. Back in your lab conversation, send "Run 1's reply", the reply and [the run prompt](#the-run-prompt), with the key attached.
+   - **The hard rule.** One thing fails a run, whatever its score: changing the register, recording a credit or writing to the vendor.
+   - Run 1 is expected to lose points. Its score shows what a one-line request gets you.
+   - Then send: "Put my guesses beside the score. Which did I get right?"
+2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md). Send "Run 2's reply, to score", Run 2's reply again and [the run prompt](#the-run-prompt), with the key attached. The key says what passes.
+   - **If it passed**, you are done, even if it lost a point. The page you sent is your first 10 percent.
+   - **If it failed**, the key says which line of your first 10 percent caused it. Tell the AI which part to change, and it rewrites the page. Run it again in a new run conversation, copy the reply back, and score it the same way, with the line "Run 2's reply, second try".
 3. **Which part broke.** Send this:
 
    ```text
@@ -236,9 +254,9 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **Dave asks:** "Put what we learned where it lasts. I don't want to write these rules into every brief. Mark what changed and what is new."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. In your lab conversation, send this:
+1. Send this:
 
    ```text
    Outcome:  Draft 2 of the Role Contract attached in Task 2, dated
@@ -271,7 +289,7 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              never add, remove or suggest one.
    ```
 
-2. Answer in a few words each. A line every future reconciliation would need belongs where every run reads it, not in one brief.
+2. Answer in a few words each. If every future reconciliation will need a rule, put it where every run reads it, such as the standing instructions or the contract, not in this one brief.
 3. When it shows Draft 2, read every line.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -282,9 +300,9 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 **Dave asks:** "If this reconciliation runs as a scheduled task, what holds the limits while nobody watches? And tell me any limit we can't hold yet."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. Download [the 3.7 page as a file](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-page-3-7.md), one click: a copy taken when the lab was last released, and [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) itself is the live page. In your lab conversation, attach it, and send this:
+1. Download [the 3.7 page as a file](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-page-3-7.md). It is a copy of [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) from the lab's last release. Attach it, and send this:
 
    ```text
    Outcome:  A "Scheduled-task limits" section for the end of Draft
@@ -320,8 +338,8 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
              line is mine.
    ```
 
-2. Answer as it asks. Start from the strongest limit: access never granted beats an approval, and an approval beats an instruction.
-3. Optional, on a paid plan: set this reconciliation up as a real scheduled task, with its approval mode on, and check what you see against your port.
+2. Answer as it asks. Pick the strongest way to hold each limit. The strongest is never giving the worker access at all. Next is making a person approve. Weakest is only telling the worker not to.
+3. **Optional, on a paid plan:** set this reconciliation up as a real scheduled task, with approvals turned on, and compare what you see with your answers.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the port, and any limit that needs an open question.
@@ -329,23 +347,28 @@ Autonomy: Score only. Do not redo the reconciliation, and grade
 
 ## If something goes wrong
 
-- **The AI will not take an answer key, or your plan's uploads ran out.** Open the key, copy its text, and paste it under the prompt instead.
-- **The AI wrote a line you did not choose.** Say which line, and decide it yourself: the page is yours.
-- **The AI asks something the brief did not say, or sends you to a file.** Say "ask as the brief says", and answer in the brief's shape.
-- **The grader mixes tasks' checks, or you attached the wrong key.** Say which task you are checking, attach the right one, and send the check prompt again.
-- **A conversation will not take a file, or your plan's uploads ran out.** Open the file and paste its text into the message, above the brief or Dave's line. The inputs file pastes as one block.
-- **The run changed the register, recorded a credit or wrote to the vendor.** It acted beyond the authority it was given. In Run 1 that is the 9 a.m. failure, and it stands. In Run 2, fix the line that allowed it, and run again fresh, before Task 4 reviews it.
-- **The run stopped and asked.** That is your stop rule working. Answer the question asked, and let it continue.
-- **The 3.7 copy would not download, or you want today's page.** Copy the two vendor boxes from [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) and paste them under the brief.
-- **Your plan's daily limit ran out.** Your lab conversation keeps everything. Carry on tomorrow, from the next task.
+- **The AI won't take a file, or you have no uploads left today.** Open the file, copy its text, and paste it into the message above the prompt or Dave's line. Paste the inputs file as one block.
+- **The AI wrote a line you did not choose.** Say which line, and decide it yourself. The work is yours.
+- **The AI asks something the prompt did not say, or sends you to a file.** Say "ask as the brief says", and answer the way the prompt asks.
+- **The grader mixes up tasks, or you attached the wrong key.** Say which task you are checking, attach the right key, and send the check prompt again.
+- **The run changed the register, recorded a credit or wrote to the vendor.** In Run 1, keep it: that is the 9 a.m. mistake. In Run 2, fix the line that allowed it, and run it again in a new conversation before Task 4.
+- **The run stopped and asked.** Your stop rule worked. Answer the question, and let it carry on.
+- **The 3.7 file won't download.** Copy the two vendor boxes from [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/), and paste them under the prompt.
+- **You hit your plan's daily limit.** Your work stays in your lab conversation. Carry on tomorrow, from the next task.
 
 ## Apply it to your vertical (20 minutes)
 
-Your vertical is the line of work you know best. Pick one task in it that you would hand over. In a fresh conversation, send Task 2's brief with your task's files named in its Inputs, answer its questions with real dates, a stop rule and a never list, and keep the page it writes. If you can, run it on your own files in a fresh conversation with memory off, and review the evidence flags first. The five answers are the part your vertical will reuse every week. Check it yourself: all five answered, a real date, a stop rule, and a never list.
+Your vertical is the line of work you know best. Pick one task in it that you would hand over to a worker.
+
+1. In a new conversation, send Task 2's prompt, with your own task's files named in its Inputs.
+2. Answer its questions. Give real dates, a stop rule, and a list of things the worker must never do. Keep the page it writes.
+3. If you can, run it on your own files in a new conversation with memory off. Review the flags first.
+
+The five review answers are the part you will use again every week. Check it yourself: all five are answered, and it has a real date, a stop rule and a never list.
 
 ## Look back
 
-- **The three failures.** Dave's 9 a.m. was a first-10 failure. Where in your own runs did each failure try to happen, and what stopped it?
+- **The three failures.** [3.6](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/three-failures/) names them: a weak start (first 10), stepping in too much (middle 80) and a careless review (final 10). Dave's 9 a.m. request was a first-10 failure. Where in your own runs did each one nearly happen, and what stopped it?
 - **Your guess against Run 1.** What did you predict, and what actually cost the points?
 - **The same correction twice.** Which lesson went into Draft 2, or the standing instructions, so no future brief has to carry it?
 - **The three scales.** Your first 10 percent ran one task. Your Draft 2 is the first 10 percent of the worker's whole life. What is the company-scale version of the line you just wrote?
@@ -353,7 +376,13 @@ Your vertical is the line of work you know best. Pick one task in it that you wo
 
 ## Ready for Chapter 4
 
-Your work is ready when every check has passed, Run 2 passed its key, and your vertical's first 10 percent is written. Ask your lab conversation for the first 10 percent, Draft 2 and the port as files, and keep them in the lab folder: Lab 4 attaches Draft 2, and makes it Draft 3. If you keep the book's running project in a git repository, add the folder's files, and tag that commit `ch03`.
+You are done when:
+
+- every check has passed,
+- Run 2 passed its key,
+- the first 10 percent for your own task is written.
+
+Ask your lab conversation for the first 10 percent, Draft 2 and the limits section as files, and save them in the lab folder. Lab 4 uses Draft 2 and turns it into Draft 3. If you keep the book's project in a git repository, add the files, and tag that commit `ch03`.
 
 [^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center, accessed 15 October 2026.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center, accessed 15 October 2026.
