@@ -128,7 +128,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              question. Where the attached inventory answers a field,
              offer what it says, and wait for my yes or my own words.
              When I paste "Dave's answer", put it into its field in
-             his words, naming him where he says "I", show me the
+             his words, with his name in place of "I", show me the
              change, and wait for my yes. Delete the open question it
              settles. When I send "Test:" and the name of a message in
              the attached messages file, decide what the worker in the
@@ -163,9 +163,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              time, one field per question. Where the attached
              inventory answers a field, offer what it says, and wait
              for my yes or my own words. When I paste "Dave's answer",
-             put it into its field in his words, naming him where he
-             says "I", show me the change, and wait for my yes. Delete
-             the open question it settles. When I send "Test:" and the
+             put it into its field in his words, with his name in
+             place of "I", show me the change, and wait for my yes.
+             Delete the open question it settles. When I send "Test:" and the
              name of a message in the attached messages file, decide
              what the worker in the Writing block would do with that
              message, following only the Writing block: (1) the verb
@@ -332,7 +332,7 @@ Buckeye Freight Lines
    ```
 
    A remit-to address is where a payment is mailed, so a remit-to change also changes where money goes.
-5. The two emails that change payment details must each go to Dave. Karen's question must get a drafted reply, with no escalation. If a test fails, name the line that caused it, never the test, and test again.
+5. The two emails that change payment details must each go to Dave. Karen's question must get a drafted reply, not an escalation. A draft that escalates only if a check finds a problem is fine. If a test fails, name the line that caused it, never the test, and test again.
 6. If Karen's question went to Dave, find out why, and keep Dave's words as they are. Either a line of yours is wider than his, or the worker has no way to check one of his cases, such as whether a vendor was paid before: give it what it needs to check, under Tools, and make sure a status question has an Authority line of its own.
 7. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt). It reads your tests' verdicts in the chat.
 
@@ -392,7 +392,7 @@ Central Ohio Office Supply
 
 **What you do:**
 
-1. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or put it under Open questions for Dave. Under Triggers, say what starts its work. Leave Runtime needs for step 4. Then check that no Authority line grew with the new channel.
+1. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or put it under Open questions for Dave. Under Triggers, say what starts its work. Leave Runtime needs for step 4. Then read your document's Authority lines: none should have grown with the new channel.
 2. Two tests, each with a guess first. Send each as its own message:
 
    ```text
@@ -410,20 +410,27 @@ Central Ohio Office Supply
    Dave asks what we set up around the worker. First show me these
    five fields of the contract, with their meanings: Tools, the
    systems it can call. Procedures (skills), the steps it follows.
-   Knowledge sources, the record it answers from. Triggers, what
-   starts its work. Runtime needs, what runs it, and how it keeps
-   going between runs. Then show me these five parts, one line each,
-   and ask me which field each one goes in: (1) a connector that
-   reads the AP inbox; (2) code execution that adds up totals; (3)
-   the invoice check, saved as a skill; (4) scheduled tasks, the runs
-   that build the register each Monday; (5) a project that holds the
-   AP policy.
-   Ask for all five in one reply, "the part, then the field". Then
-   put each in the field I name, and show me.
+   Knowledge sources, the documents it answers from, not the place
+   they are kept. Triggers, the moments that start its work, such as
+   Monday morning. Runtime needs, what runs the worker and where it
+   runs, and how it keeps going between runs. Then show me these
+   five parts, one line each, and ask me which field each one goes
+   in: (1) a connector that reads the AP inbox; (2) code execution
+   that adds up totals; (3) the invoice check, saved as a skill; (4)
+   scheduled tasks, the runs that build the register each Monday;
+   (5) a project, the place the worker runs in, which holds the AP
+   policy. Ask for all five in one reply, "the part, then the field".
+   Then put each in the field I name, and show me.
    ```
 
    [2.4's table of the AP Worker's choices](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/) shows where each one goes.
-4. Now Runtime needs. Tell the AI four things. The app you are using. The model and setting it shows next to the send button, or "the app's default" if it shows none. The real date, today, not the story's: a model choice is only as good as the day it was tested. And that the five tests came out as Dave wants. Then say how the worker keeps going between runs, one of [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/): an always-on agent that keeps its own state, or scheduled runs that start fresh each time and rebuild from the records. Say why. Last, one line for the other AI vendor. Only this line changes there, as [2.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) explains. Choose by job, fastest and cheapest, balanced, or most capable. Name the model if you know it, and mark the line "predicted, not run".
+4. Now Runtime needs. Tell the AI these six things, in one message:
+   - the app you are using
+   - the model and setting your app shows, or "the app's default" if it shows none
+   - the real date, today, not the story's: a model choice is only as good as the day it was tested. The header keeps the story's date
+   - that the five tests came out as Dave wants
+   - how the worker keeps going between runs, one of [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/), an always-on agent that keeps its own state, or scheduled runs that start fresh each time and rebuild from the records, and why
+   - one line for the other AI vendor. Only this line changes there, as [2.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) explains. Choose by job, fastest and cheapest, balanced, or most capable. Name the model if you know it, and mark the line "predicted, not run"
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** what each chat test decided, where each part goes, and the Runtime needs line.
