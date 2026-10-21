@@ -85,9 +85,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **Dave asks:** "Seventeen items, one list from IT. Tell me where each one is kept, and where it belongs. Which ones are in the wrong place?"
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. Open a new conversation. This is your lab conversation. Attach `inventory.md`, and send this:
+1. **Start your lab conversation.** Open a new conversation, and keep it until the end of the lab. Attach `inventory.md`, and send this:
 
    ```text
    Outcome:  The AP Worker layer map: a table of the 17 items in the
@@ -141,8 +141,8 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do:**
 
-1. **Open the run.** Open a new conversation, outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
-2. **Run it.** Attach `files/run-1.md`, and send this as one message:
+1. **Open the run, in a new conversation.** Open it outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
+2. **Run it, in the run conversation.** Attach `files/run-1.md`, and send this as one message:
 
    ```text
    The attached file holds three files, each under its own name.
@@ -165,7 +165,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
       dollars?
    ```
 
-3. **Score it, in your lab conversation.** Copy the run's whole reply. Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md). In your lab conversation, send "Run 1's reply", the reply and [the run prompt](#the-run-prompt), with the key attached.
+3. **Score it, back in your lab conversation.** Copy the run's whole reply from the run conversation. Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2-run.md). Send "Run 1's reply", the reply and [the run prompt](#the-run-prompt), with the key attached.
 4. **Read the score.** Run 1 is supposed to get questions 1 and 2 wrong, and to say it can't answer question 4. Those files were all the worker had that week. Its score is your starting point, not a fail.
 5. **The hard rule.** One thing fails any run, whatever its score: treating the email as Dave's approval. That is Thursday's mistake again. If Run 1 does it, redo Run 1 once in a new conversation, and score it with the line "Run 1's reply, second try". If it does it again, keep that result and move on.
 
@@ -210,7 +210,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              and ask for nothing else.
    ```
 
-2. **Run it.** Open a new run conversation with memory off, as in Task 2. Attach `files/run-2.md`, and send this as one message. Its two accounting-system exports stand in for the live system.
+2. **Run it, in a new conversation.** Turn memory off, as in Task 2. Attach `files/run-2.md`, and send this as one message. Its two accounting-system exports stand in for the live system.
 
    ```text
    The attached file holds seven files, each under its own name.
@@ -246,7 +246,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
       dollars?
    ```
 
-3. **Score it, in your lab conversation.** Copy the run's whole reply. Download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md). Send "Run 2's reply", the reply and [the run prompt](#the-run-prompt), with the key attached. The key says what passes.
+3. **Score it, back in your lab conversation.** Copy the run's whole reply from the run conversation. Download [the key for Runs 2 and 3](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3-run.md). Send "Run 2's reply", the reply and [the run prompt](#the-run-prompt), with the key attached. The key says what passes.
 4. **Compare.** Send: "Put my predictions beside Run 2's citations. Which did I get right?"
 
 **Give Dave:** the five answers, each with its citation.
@@ -258,7 +258,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do:**
 
-1. **Run it on the other AI vendor**, the one you did not use for Run 2. Repeat Task 3's run there: a new conversation with memory off, `files/run-2.md` attached, and Task 3's message. Score it in your lab conversation as in Task 3, with the line "Run 3's reply". If you only have one account, skip this run.
+1. **Run it on the other AI vendor, in a new conversation.** Use the vendor you did not use for Run 2. Repeat Task 3's run there: memory off, `files/run-2.md` attached, and Task 3's message. Copy the reply back, and score it in your lab conversation as in Task 3, with the line "Run 3's reply". If you only have one account, skip this run.
 2. **The port note, in your lab conversation.** The port note says what could change if the worker moved to the other vendor. Send this:
 
    ```text
@@ -281,9 +281,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **Dave asks:** "For each wrong answer, tell me what it trusted, and what fixed it."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. In your lab conversation, attach `files/case-file-5120.md`, and send this:
+1. Attach `files/case-file-5120.md`, and send this:
 
    ```text
    Outcome:  One line for each point lost in any run scored above,
@@ -315,9 +315,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **Dave asks:** "Fix the contract so this week cannot happen again. Mark what changed."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. In your lab conversation, attach your Role Contract from Chapter 3, or the sample, and send this:
+1. Attach your Role Contract from Chapter 3, or the sample, and send this:
 
    ```text
    Outcome:  Draft 3 of the attached Role Contract, dated Friday,
@@ -361,9 +361,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **Dave asks:** "IT wants the answer I could not give. If we replace the AI vendor next week, what do we rebuild, and what comes with us? Give me one sentence I can say to IT, and the table they asked for. For each part, what does each AI vendor give us, and which plan would we need?"
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. Download [the 4.8 page as a file](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-page-4-8.md). It is a copy of [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/) from the lab's last release. In your lab conversation, attach it with `role/port-table.md`, and send this:
+1. Download [the 4.8 page as a file](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-page-4-8.md). It is a copy of [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/) from the lab's last release. Attach it with `role/port-table.md`, and send this:
 
    ```text
    Outcome:  The swap test from this conversation's layer map, then
