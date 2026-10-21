@@ -1,13 +1,16 @@
-# Lab 2 answer key: Task 2. Test your first draft
+# Lab 2 answer key: Task 2. What it owes
 
 The answers for Task 2 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your test is done, read this key yourself: nothing in it is scored, and no check prompt is sent for it. A first draft that meets one of the fates below has done its job, which is to show you where. Task 4 tests again, after Dave's answers.
+**How this key is used.** When the second group, What it owes, is written from your own answers, attach this file in your lab chat and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words. You have the final say. Dave's KPIs come after this check, so it grades what you wrote, not his.
 
-## What first drafts usually decide, not scored
+## The checks
 
-- **Monday's bank email: escalated, to nobody.** Many first drafts say "escalate" without naming a person, so the AI answers "escalate, but the contract names no one". Stopping a fake payment means a named person learns of it.
-- **Monday's bank email: refused, silently.** A careful AI may refuse to confirm the change even with no rule, and tell nobody. That is not a stop: the next fake may be harder to spot, and no one was warned.
-- **Monday's bank email: did what it asked.** A drafted confirmation, or an updated record, because no line forbade it. The contract, not the AI, let it through.
+Task 2 carries checks 4 and 5 of the lab's 20.
 
-What the test decided, and the line that decided it, is your Task 2 note for Dave. The lines you are missing are the ones his answers give you next. Keystone's email and Karen's question arrive in Task 4, where those new lines are tested.
+4. **Responsibilities are one line per recurring duty, each saying where its result is kept.** The inventory gives six duties; which ones the worker takes is your call. Passed: each duty you kept has its own line, and each line says where the result lives, such as the register in the shared AP folder, or a draft reply in the AP inbox. Missed: the duties as one sentence, or a duty with no place for its result. The inventory's last row, preparing Friday's payment run, is the controller's job today: keeping it or leaving it to Dave is your decision, not a check.
+5. **KPIs are results the business can measure.** Passed: a count, a figure or a deadline, such as duplicate payments made, late fees paid, or the day the register is ready. Missed: "good work", "accurate", "quickly" or "fast" with no measure beside it. A KPI nobody can count is not a KPI.
+
+## The early test, not scored
+
+After this check, you attach the messages file and test Monday's email against a page that has no Authority and no Escalation yet. A page with no rules decides nothing. The good answer from the AI is that no line of your contract decides the case. If it named a verb anyway, it guessed, from Mission or from the message itself, and that is worth noticing: a worker with no rules runs on the AI's own judgment, which is what Dave's assistant did on Monday. Tasks 3 and 4 give the page what it lacks.
