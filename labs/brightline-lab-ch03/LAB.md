@@ -83,7 +83,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do:**
 
-1. **Guess first.** Open a new conversation. This is your lab conversation. What will the worker have to decide alone, with only Dave's one line? Send this, and answer as it asks:
+1. **Guess first, in a new conversation.** This is your lab conversation. Keep it until the end of the lab. What will the worker have to decide alone, with only Dave's one line? Send this, and answer as it asks:
 
    ```text
    Outcome:  My guesses, before Run 1: what Dave's one line leaves
@@ -98,9 +98,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
    Autonomy: Mine: write my guesses as I give them, and add none.
    ```
 
-2. **Open the run.** Open a new conversation, outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
-3. **Run it.** Attach `files/inputs.md`, and send Dave's line exactly as he wrote it, with nothing added: "Reconcile Midwest Packaging's statement."
-4. **Read the reply**, and leave the conversation open: Task 5 scores it. If the run changed the register, recorded a credit or wrote to the vendor, that is the 9 a.m. mistake again. Keep it as Run 1.
+2. **Open the run, in a second new conversation.** Open it outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
+3. **Run it, in the run conversation.** Attach `files/inputs.md`, and send Dave's line exactly as he wrote it, with nothing added: "Reconcile Midwest Packaging's statement."
+4. **Read the reply, and keep the run conversation open.** In Task 5 you copy this reply into your lab conversation to score it. If the run changed the register, recorded a credit or wrote to the vendor, that is the 9 a.m. mistake again. Keep it as Run 1.
 
 **Give Dave:** nothing yet. This run showed what his one line buys.
 
@@ -109,9 +109,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **Dave asks:** "Then set it up properly. I sign the close on Monday. Tell me what evidence my signature will rest on."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. In your lab conversation, attach your Role Contract from Chapter 2, or the sample, and send this. Answer as it asks:
+1. Attach your Role Contract from Chapter 2, or the sample, and send this. Answer as it asks:
 
    ```text
    Outcome:  The first 10 percent for this reconciliation, one page,
@@ -159,12 +159,12 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do:**
 
-1. **Open the run.** Open a new conversation with memory off, outside any project, as in Task 1.
-2. **Run it.** Attach `files/inputs.md`, and send your whole first 10 percent as the message.
+1. **Open the run, in a new conversation.** Turn memory off, and stay outside any project, as in Task 1.
+2. **Run it, in the run conversation.** Attach `files/inputs.md`, and send your whole first 10 percent as the message.
 3. **Don't steer.** The middle 80 percent is the worker's. Most runs finish in one reply, with no question.
    - If it stops and asks because of your stop rule, answer just that question.
    - If you want to step in, check [3.3's](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) stop conditions. If none of them applies, let it work. Stepping in anyway is the middle-80 failure.
-4. **Read the reply**, and leave the conversation open: Task 5 scores it. If it changed the register, recorded a credit or wrote to the vendor, it did more than you allowed. Tell your lab conversation which line of your first 10 percent allowed it. The AI rewrites the page, and you run it again in a new conversation.
+4. **Read the reply, and keep the run conversation open.** Task 4 brings it across, and Task 5 scores it. If it changed the register, recorded a credit or wrote to the vendor, it did more than you allowed. Go back to your lab conversation, and say which line of your first 10 percent allowed it. The AI rewrites the page, and you run it again in another new conversation.
 
 **Give Dave:** what the run found, with nothing done that you did not allow.
 
@@ -175,7 +175,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do:**
 
-1. **Bring Run 2 across.** Copy the run's whole reply (its last one, if it asked you a question first), and any file it wrote. In your lab conversation, attach `files/inputs.md`, and send one message: "Run 2's reply" on the first line, then the reply, then this:
+1. **Bring Run 2 across.** In Run 2's conversation, copy the whole reply (its last one, if it asked you a question first), and any file it wrote. Back in your lab conversation, attach `files/inputs.md`, and send one message: "Run 2's reply" on the first line, then the reply, then this:
 
    ```text
    Outcome:  My review of Run 2, in the chapter's order: the flags,
@@ -213,13 +213,13 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do:**
 
-1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md). Copy Run 1's whole reply (its last one, if it asked a question first), and any file it wrote. In your lab conversation, send "Run 1's reply", the reply and [the run prompt](#the-run-prompt), with the key attached.
+1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md). Go to Run 1's conversation from Task 1, and copy its whole reply (its last one, if it asked a question first), and any file it wrote. Back in your lab conversation, send "Run 1's reply", the reply and [the run prompt](#the-run-prompt), with the key attached.
    - **The hard rule.** One thing fails a run, whatever its score: changing the register, recording a credit or writing to the vendor.
    - Run 1 is expected to lose points. Its score shows what a one-line request gets you.
    - Then send: "Put my guesses beside the score. Which did I get right?"
 2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md). Send "Run 2's reply, to score", Run 2's reply again and [the run prompt](#the-run-prompt), with the key attached. The key says what passes.
    - **If it passed**, you are done, even if it lost a point. The page you sent is your first 10 percent.
-   - **If it failed**, the key says which line of your first 10 percent caused it. Tell your lab conversation which part to change, and the AI rewrites the page. Run it again in a new conversation, and score it the same way, with the line "Run 2's reply, second try".
+   - **If it failed**, the key says which line of your first 10 percent caused it. Tell the AI which part to change, and it rewrites the page. Run it again in a new run conversation, copy the reply back, and score it the same way, with the line "Run 2's reply, second try".
 3. **Which part broke.** Send this:
 
    ```text
@@ -254,9 +254,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **Dave asks:** "Put what we learned where it lasts. I don't want to write these rules into every brief. Mark what changed and what is new."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. In your lab conversation, send this:
+1. Send this:
 
    ```text
    Outcome:  Draft 2 of the Role Contract attached in Task 2, dated
@@ -300,9 +300,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **Dave asks:** "If this reconciliation runs as a scheduled task, what holds the limits while nobody watches? And tell me any limit we can't hold yet."
 
-**What you do:**
+**What you do, all in your lab conversation:**
 
-1. Download [the 3.7 page as a file](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-page-3-7.md). It is a copy of [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) from the lab's last release. In your lab conversation, attach it, and send this:
+1. Download [the 3.7 page as a file](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-page-3-7.md). It is a copy of [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) from the lab's last release. Attach it, and send this:
 
    ```text
    Outcome:  A "Scheduled-task limits" section for the end of Draft
