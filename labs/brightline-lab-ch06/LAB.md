@@ -37,7 +37,7 @@ In normal work you write the contract before you delegate. Here someone hands yo
 
 *Where:* In this folder, then in two fresh chats.
 
-Each chat is fresh and cannot see your own memory, so your memory does not change the test. In Claude, turn off Memory in the "+" menu as you start the chat. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you send the first message.
+Each chat is fresh and cannot see your own memory, so your memory does not change the test. In Claude, open an incognito chat, from the ghost icon at the top right of a new chat: it does not use or add to memory. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you send the first message.
 
 1. Start a fresh chat in Claude. Attach the six files in `inputs/`, the four files in `worker-output/`, and your `results/review-contract.md`. Send this message:
 

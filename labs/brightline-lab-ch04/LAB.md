@@ -141,7 +141,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do:**
 
-1. **Open the run, in a new conversation.** Open it outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
+1. **Open the run, in a new conversation.** Open it outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, open an incognito chat, from the ghost icon at the top right of a new chat: it does not use or add to memory.[^anthropic-incognito] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
 2. **Run it, in the run conversation.** Attach `files/run-1.md`, and send this as one message:
 
    ```text
@@ -442,5 +442,5 @@ These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associ
 - **Persist.** This chapter's wipe test says memory must never be the only source for a fact or permission the worker acts on, and 4.9 says a fresh machine rebuilds its context from the records. The exam guide expects three moves when a conversation gets long or its answers get worse: restart, summarize, or persist the key facts, for example in a project. On the exam, persisting key facts in a project is a correct move. The wipe test is this book's rule for what may live only in memory, not an exam answer. (D-005)
 - **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter teaches that approved knowledge belongs in a KSoR, reached through a custom connector. On the exam, a governed record or a custom MCP connector is not the expected answer. Choose the project setup. (D-006)
 
-[^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center.
+[^anthropic-incognito]: Use incognito chats, Claude Help Center.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center.

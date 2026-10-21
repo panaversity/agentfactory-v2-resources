@@ -98,7 +98,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
    Autonomy: Mine: write my guesses as I give them, and add none.
    ```
 
-2. **Open the run, in a second new conversation.** Open it outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
+2. **Open the run, in a second new conversation.** Open it outside any project, with memory off. Then only the attached file can answer. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, open an incognito chat, from the ghost icon at the top right of a new chat: it does not use or add to memory.[^anthropic-incognito] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
 3. **Run it, in the run conversation.** Attach `files/inputs.md`, and send Dave's line exactly as he wrote it, with nothing added: "Reconcile Midwest Packaging's statement."
 4. **Read the reply, and keep the run conversation open.** In Task 5 you copy this reply into your lab conversation to score it. If the run changed the register, recorded a credit or wrote to the vendor, that is the 9 a.m. mistake again. Keep it as Run 1.
 
@@ -384,5 +384,5 @@ You are done when:
 
 Ask your lab conversation for the first 10 percent, Draft 2 and the limits section as files, and save them in the lab folder. Lab 4 uses Draft 2 and turns it into Draft 3. If you keep the book's project in a git repository, add the files, and tag that commit `ch03`.
 
-[^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center, accessed 15 October 2026.
+[^anthropic-incognito]: Use incognito chats, Claude Help Center.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center, accessed 15 October 2026.

@@ -23,7 +23,7 @@ Open each file only when a step names it.
 
 *Where:* In this folder, then in chats with Claude and ChatGPT.
 
-Every run is a fresh chat that cannot see your own memory, so your memory does not change the test. In Claude, turn off Memory in the "+" menu as you start the chat. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you send the first message. If ChatGPT does not offer Work in a Temporary Chat, use an ordinary chat for Run C. Before you start it, open Settings, then Personalization, then Memory, and turn memory off. Turn it back on after the lab. Write in `results/run-log.md` which way you did it.
+Every run is a fresh chat that cannot see your own memory, so your memory does not change the test. In Claude, open an incognito chat, from the ghost icon at the top right of a new chat: it does not use or add to memory. In ChatGPT, open a Temporary Chat and choose Unpersonalized before you send the first message. If ChatGPT does not offer Work in a Temporary Chat, use an ordinary chat for Run C. Before you start it, open Settings, then Personalization, then Memory, and turn memory off. Turn it back on after the lab. Write in `results/run-log.md` which way you did it.
 
 1. **Run A (5 minutes).** In a fresh chat on either AI vendor, attach the six files in `inputs/` and send Dave's line exactly. Save what comes back as `results/run-a-reply.md`.
 2. **Write your brief (15 minutes).** Copy `briefs/four-part-brief-template.md` to `briefs/payment-run-brief-v1.md` and fill all four parts. Mark each control. Do not look at the answer key.
