@@ -125,7 +125,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              not in the chat. Make every later change in that same
              Doc, and read it again before every test and every check.
              Ask me the fields of one group at a time, one field per
-             question. Where the attached inventory answers a field,
+             question. After a group is written, stop: I ask for the
+             next one. Where the attached inventory answers a field,
              offer what it says, and wait for my yes or my own words.
              When I paste "Dave's answer", put it into its field in
              his words, with his name in place of "I", show me the
@@ -160,7 +161,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              chat, not in the chat. Make every later change in that
              same Writing block, and read it again before every test
              and every check. Ask me the fields of one group at a
-             time, one field per question. Where the attached
+             time, one field per question. After a group is written,
+             stop: I ask for the next one. Where the attached
              inventory answers a field, offer what it says, and wait
              for my yes or my own words. When I paste "Dave's answer",
              put it into its field in his words, with his name in
