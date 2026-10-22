@@ -257,9 +257,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you learned:** a worker's duties each name where their result is kept, its KPIs count something real, and a page with no rules decides nothing.
 
-## Task 3. What it works with (10 minutes)
+## Task 3. What it works with (15 minutes)
 
-**Dave asks:** "What does it work from? Not that March copy."
+**Dave asks:** "What does it work from? Not that March copy. And how will it read the inbox, and add up totals without mistakes?"
 
 **This task fills** the third group, What it works with: Knowledge sources, Memory, Procedures (skills) and Tools.
 
@@ -267,9 +267,14 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. Ask for the next group, What it works with. For Knowledge sources, name the policy the worker answers from. "The job" says the assistant has a copy from March: is that the right one? If nothing tells you the version, say "Dave decides", and the AI adds the question at the end.
 2. For Memory, say what it may remember, such as which vendors send scanned PDFs, and what it must not, such as anything that changes where money goes. Memory is experience, not the official record ([2.1](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/)).
-3. For Procedures, name the steps it follows: the inventory's checks are a start. For Tools, pick the systems it needs from "Where things are kept". Business systems only: no AI vendor or model is named here.
-4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Fix the line, then "I updated the contract. Read it again, and check it again against the key."
-5. Now Dave answers. Compare his answer with your Knowledge sources line, then paste it, and read the AI's before and after before you say yes:
+3. For Procedures, name the steps it follows: the inventory's checks are a start. Should the invoice check be saved as a skill, so it is done the same way every time? If so, say so here.
+4. For Tools, pick the systems it needs from "Where things are kept". Then answer Dave's two needs, from [2.4's table](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/):
+   - How will it read new emails in the AP inbox? Not by someone pasting them in: a connector reads the app itself.
+   - How will it add up totals without mistakes? Not by the model's own arithmetic: code execution adds them up.
+
+   Both go under Tools. Name what each one does, never an AI vendor or a model: those belong in Runtime needs, in Task 5.
+5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Fix the line, then "I updated the contract. Read it again, and check it again against the key."
+6. Now Dave answers. Compare his answer with your Knowledge sources line, then paste it, and read the AI's before and after before you say yes:
 
    ```text
    Dave's answer. Which policy? The AP policy, version 3, approved
@@ -278,7 +283,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 6 to 8 passed, and the policy is named with its version.
 
-**What you learned:** knowledge is the official record, named by its version. Memory is experience, with a line it must not cross. Tools are business systems, never an AI vendor.
+**What you learned:** knowledge is the official record, named by its version. Memory is experience, with a line it must not cross. Tools are what the work needs to reach and to count, such as a connector and code execution, named by what they do, never by an AI vendor.
 
 ## Task 4. What bounds it (30 minutes)
 
@@ -397,13 +402,13 @@ A forbidden action says "never", and a "never" line may also say where the reque
 
 ## Task 5. How it runs and is reached (20 minutes)
 
-**Dave asks:** "I want people to reach it in the team chat too. What does it run on? And what do we set up around it: where its instructions and policy live, how it reads the inbox, how it adds up totals, and where the register is kept?"
+**Dave asks:** "I want people to reach it in the team chat too. And what does it run on?"
 
 **This task fills** the last group, How it runs and is reached: Channels, Triggers and Runtime needs.
 
 **What you do:**
 
-1. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or say "Dave decides", and the AI adds the question at the end. Under Triggers, say what starts its work. Leave Runtime needs for steps 3 and 4. Then read your document's Authority lines: none should have grown with the new channel.
+1. First, the team chat. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or say "Dave decides", and the AI adds the question at the end. Under Triggers, say what starts its work. Leave Runtime needs for step 3. Then read your document's Authority lines: none should have grown with the new channel.
 2. Two tests, each with a guess first, each sent as its own message. First Sam's chat message:
 
    ```text
@@ -432,33 +437,14 @@ A forbidden action says "never", and a "never" line may also say where the reque
    ```text
    Test: Tom's chat message
    ```
-3. Send this, and answer as it asks:
-
-   ```text
-   Dave asks what we set up around the worker. First show me these
-   five fields of the contract, with their meanings: Tools, the
-   systems it can call. Procedures (skills), the steps it follows.
-   Knowledge sources, the documents it answers from, not the place
-   they are kept. Triggers, the moments that start its work, not
-   what does the work. Runtime needs, what runs the worker and where
-   it runs, and how it keeps going between runs. Then show me these
-   five parts, one line each, and ask me which field each one goes
-   in: (1) a connector that reads the AP inbox; (2) code execution
-   that adds up totals; (3) the invoice check, saved as a skill; (4)
-   scheduled tasks, which run the register build on a schedule; (5)
-   a project, the place the worker runs in, which holds the AP
-   policy. Ask for all five in one reply, "the part, then the field".
-   Then put each in the field I name, and show me.
-   ```
-
-   [2.4's table of the AP Worker's choices](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/) shows where each one goes.
-4. Now Runtime needs. Tell the AI these six things, in one message:
+3. Now, what runs it: Runtime needs. Tell the AI these six things, in one message:
    - the app you are using
    - the model and setting your app shows, or "the app's default" if it shows none
    - the real date, today, not the story's: a model choice is only as good as the day it was tested. The header keeps the story's date
    - that the five tests came out as Dave wants
-   - how the worker keeps going between runs, one of [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/), an always-on agent that keeps its own state, or scheduled runs that start fresh each time and rebuild from the records, and why
+   - how the worker keeps going between runs, one of [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/), and why. Either an always-on agent that keeps its own state, or scheduled tasks that start fresh each time, such as each Monday's register build, and rebuild from the records. If it runs inside a project that holds the AP policy, name the project here too: the policy itself stays under Knowledge sources
    - one line for the other AI vendor. Only this line changes there, as [2.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) explains. Choose by job, fastest and cheapest, balanced, or most capable. Name the model if you know it, and mark the line "predicted, not run"
+4. Read your whole contract once. What is set up around the worker now sits in its own fields: the connector and code execution under Tools, the saved skill under Procedures, the policy under Knowledge sources, and the schedule and the project under Runtime needs. Only Runtime needs names an AI vendor, so moving to another vendor changes one line.
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 14 to 17 passed, and Runtime needs carries a date.
