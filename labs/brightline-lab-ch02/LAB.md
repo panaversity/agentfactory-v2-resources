@@ -79,7 +79,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
           new lines. Read the document again before grading. For a
           check about a test, read that test's verdict in this chat;
           if you cannot find it, ask me. With no words to quote, mark
-          the check Missed.
+          the check Missed. Grade only this key's checks, and keep no
+          running total across tasks.
 ```
 
 ## Task 1. Who it is (20 minutes)
@@ -408,7 +409,7 @@ A forbidden action says "never", and a "never" line may also say where the reque
 
 **What you do:**
 
-1. First, the team chat. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or say "Dave decides", and the AI adds the question at the end. Under Triggers, say what starts its work. Leave Runtime needs for step 3. Then read your document's Authority lines: none should have grown with the new channel.
+1. First, the team chat. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/), who may give it work, whose approval counts, and who sees what it posts: answer each, or say "Dave decides", and the AI adds the question at the end. Under Triggers, list every moment that starts its work: the inventory's "How often" column and its inputs show them, and the team chat adds one more. When you change Triggers later, move a line, never replace the list. Leave Runtime needs for step 3. Then read your document's Authority lines: none should have grown with the new channel.
 2. Two tests, each with a guess first, each sent as its own message. First Sam's chat message:
 
    ```text
@@ -437,13 +438,20 @@ A forbidden action says "never", and a "never" line may also say where the reque
    ```text
    Test: Tom's chat message
    ```
-3. Now, what runs it: Runtime needs. Tell the AI these six things, in one message:
-   - the app you are using
-   - the model and setting your app shows, or "the app's default" if it shows none
-   - the real date, today, not the story's: a model choice is only as good as the day it was tested. The header keeps the story's date
-   - that the five tests came out as Dave wants
-   - how the worker keeps going between runs, one of [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/), and why. Either an always-on agent that keeps its own state, or scheduled tasks that start fresh each time, such as each Monday's register build, and rebuild from the records. If it runs inside a project that holds the AP policy, name the project here too: the policy itself stays under Knowledge sources
-   - one line for the other AI vendor. Only this line changes there, as [2.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) explains. Choose by job, fastest and cheapest, balanced, or most capable. Name the model if you know it, and mark the line "predicted, not run"
+3. Now, what runs it: Runtime needs. Send this, and answer each question as the AI asks it:
+
+   ```text
+   Now Runtime needs. Ask me its four parts one at a time, and wait
+   for each answer: how the worker keeps going between runs, the
+   project it runs in, the app and setting with today's date, and
+   the AI vendor it could move to.
+   ```
+
+   Where to find each answer:
+   - How it keeps going between runs. This is the surface, from [2.4's two ways](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/) for a standing role: an always-on agent that keeps its own state, or scheduled tasks that start fresh each time and rebuild from the records. Your Kind, from Task 1, and your Triggers, from step 1, decide which fits. Say why.
+   - The project. "The job" says the assistant already has a shared project with the AP policy. Will the worker run in it? If so, name the project here. The policy itself stays under Knowledge sources.
+   - The app, setting and date. Read the app and the model your app shows off your screen, or write "the app's default". Give the real date, today, not the story's: a setting is only as good as the day it was chosen. The header keeps the story's date.
+   - The other AI vendor. One line, marked "predicted, not run". Choose fastest and cheapest, balanced, or most capable by weighing the job: a mistake here costs money and trust, and the volume is 15 to 25 invoices a month and about 10 vendor questions a week. Only this line changes on another vendor, as [2.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/) explains.
 4. Read your whole contract once. What is set up around the worker now sits in its own fields: the connector and code execution under Tools, the saved skill under Procedures, the policy under Knowledge sources, and the schedule and the project under Runtime needs. Only Runtime needs names an AI vendor, so moving to another vendor changes one line.
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
