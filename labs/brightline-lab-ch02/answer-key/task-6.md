@@ -56,7 +56,7 @@ Procedures (skills): Check an invoice total. Work out a due date from
                      the terms. Spot a likely duplicate. Saved as a skill.
 Tools:               AP inbox, through a connector (read, and save draft
                      replies), shared AP folder (read), register
-                     spreadsheet (read and write), past payments (read),
+                     spreadsheet (read and write), the accounting system for past payments (read),
                      code execution for totals.
 
 ## What bounds it

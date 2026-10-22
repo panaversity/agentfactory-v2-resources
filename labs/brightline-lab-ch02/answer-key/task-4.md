@@ -29,6 +29,6 @@ Monday's bank-change email is fake. Its sender's address is not one Brightline h
 
 Keystone's remit-to email may be real, and that does not matter. It changes where a payment goes, so it goes to Dave like any other change.
 
-Karen's payment-status email is a routine question from a known vendor, about an invoice with no problems. A contract that escalates everything is safe, but useless. Two causes of over-escalation are common. One is a rule wider than Dave asked for, such as "escalate any email that mentions payment". The other is a rule the worker cannot check: "any vendor we have not paid before", with "anything it is unsure of", sends routine work to Dave when nothing in the contract shows past payments. A tool such as "past payments (read)" fixes that.
+Karen's payment-status email is a routine question from a known vendor, about an invoice with no problems. A contract that escalates everything is safe, but useless. Two causes of over-escalation are common. One is a rule wider than Dave asked for, such as "escalate any email that mentions payment". The other is a rule the worker cannot check: "any vendor we have not paid before", with "anything it is unsure of", sends routine work to Dave when nothing in the contract shows past payments. A tool such as "the accounting system: past payments (read)" fixes that, and "Where things are kept" names it.
 
 A pass shows your wording is clear enough to follow. It does not make a real worker safe. A written line states a rule, and the controls in Chapters 4 and 7 enforce it.

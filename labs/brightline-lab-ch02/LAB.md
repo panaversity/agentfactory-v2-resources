@@ -20,7 +20,7 @@ Download [`brightline-lab-ch02.zip`](https://github.com/panaversity/agentfactory
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `files/role-pack.md`: the blank Role Contract template, and Brightline's AP work inventory, in one file
+- `files/role-pack.md`: the blank Role Contract template, Brightline's AP work inventory, where things are kept, and what went wrong in September, in one file
 - `files/messages.md`: the five messages your contract is tested against, in one file
 
 The answer keys are not in it. Each task downloads its own, so you meet none early.
@@ -36,6 +36,20 @@ Short of time? Do Tasks 1 to 4 today, and Tasks 5 and 6 tomorrow: the document k
 - Dave asked four questions, and nobody could answer them. Who owns it? What may it do on its own? When must it stop and ask a person? How do we know it does a good job?
 - Dave wants the answers on one page, a Role Contract, before it touches real work again.
 
+**Where things are kept at Brightline.** The places a duty's result can live, and the systems the worker can use:
+
+- The AP inbox, ap@brightlinewholesale.example: invoices and vendor emails arrive here, and replies wait here as drafts for a person to send.
+- The shared AP folder, on the company drive: the invoice PDFs, the register spreadsheet with one row per invoice and its flags, and the list for Friday's payment run.
+- The accounting system: vendor records, and every past payment.
+- Purchasing's folder: purchase orders and receiving notes, kept by Purchasing.
+
+**What went wrong in September.** The problems a good AP Worker would prevent:
+
+- Midwest Packaging's invoice 4471 came in twice, as 4471 and 4471-R, $4,850.00 each. The copy was caught just before it was paid.
+- Franklin County Power & Light's August bill was paid two days late, with a $35.00 late fee.
+- On two Mondays the register was ready at 2 p.m., after Dave's 10 a.m. review.
+- Central Ohio Office Supply asked about the same invoice three times before anyone answered.
+
 ## How each task works
 
 The whole lab runs in one chat, except the final test in Task 6. The Role Contract is one page: the sixteen elements from [2.1](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/), and one line for its kind, in five groups, with Open questions at the end. The template is in `role-pack.md`. Each task fills one group, and the lab follows the template's order.
@@ -44,10 +58,10 @@ The whole lab runs in one chat, except the final test in Task 6. The Role Contra
 
 **The loop.** Every task is the same four steps:
 
-1. Ask for the task's group. The AI asks you its fields, one at a time. Answer in a few words, in your own words. Where only Dave can decide, say so: the question goes under Open questions, never a guess.
+1. Ask for the task's group. The AI asks you its fields, one at a time, and shows you what the role pack says about each. It never writes a line for you to approve: you decide, in a few words, and it writes. Your facts are in "The job" above. Where nothing there answers a field, and only Dave could, say "Dave decides": it goes under Open questions, never a guess.
 2. **Check it.** Download the task's answer key, one click. Attach it, and send [the check prompt](#the-check-prompt), printed below. The AI grades, quoting your document. Read the key yourself too: you have the final say.
-3. Missed a check? Name the line to change. The AI changes the document. Send the check prompt again: the key is already there.
-4. Paste **Dave's answer**, printed in the task. The AI puts it in, in his words, and shows you the change. Read the before and after: a pasted answer can drop words you chose. Then say yes, or correct it.
+3. **Missed a check?** Read its "why". Tell the AI the change, in your words, such as "Change Kind to Standing, because its work never ends." Then send: "I updated the contract. Read it again, and check it again against the key."
+4. Paste **Dave's answer**, printed in the task. Dave owns the worker, so his word is final on what is his to decide. Before you say yes, compare: where his answer differs from yours, which fact did you not have? Read the AI's before and after too, because a pasted answer can drop words you chose. Then say yes, or say what to keep.
 
 **Give Dave.** Each task ends with what Dave asked for. Your lab chat and your document hold it, and the check reads it there. Nothing is sent anywhere.
 
@@ -125,10 +139,13 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              not in the chat. Make every later change in that same
              Doc, and read it again before every test and every check.
              Ask me the fields of one group at a time, one field per
-             question. After a group is written, stop: I ask for the
-             next one. Where the attached inventory answers a field,
-             offer what it says, and wait for my yes or my own words.
-             When I paste "Dave's answer", put it into its field in
+             question. For each field, show me in short lines what the
+             attached pack says about it, then ask for my decision.
+             Never write a line for me to approve: ask, and write what
+             I decide. For each inventory row, ask "the worker's, a
+             person's, or Dave's? Then where is its result kept?",
+             with the places from the pack. After a group is written,
+             stop: I ask for the next one. When I paste "Dave's answer", put it into its field in
              his words, with his name in place of "I", show me the
              change, and wait for my yes. Delete the open question it
              settles. When I send "Test:" and the name of a message in
@@ -138,7 +155,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              execute, escalate, with the draft if it drafts; (2) the
              exact lines of the Doc that decide it; (3) what the Doc
              leaves unclear. If no line decides it, say so.
-   Inputs:   The attached template and work inventory, my answers, and
+   Inputs:   The attached pack: the template, the work inventory, the
+             places and the September notes. My answers, and
              later the messages file. The draft is dated Draft 1,
              Wednesday, September 30, 2026.
    Autonomy: I decide every line. Never write an Authority verb, a
@@ -161,10 +179,14 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              chat, not in the chat. Make every later change in that
              same Writing block, and read it again before every test
              and every check. Ask me the fields of one group at a
-             time, one field per question. After a group is written,
-             stop: I ask for the next one. Where the attached
-             inventory answers a field, offer what it says, and wait
-             for my yes or my own words. When I paste "Dave's answer",
+             time, one field per question. For each field, show me in
+             short lines what the attached pack says about it, then
+             ask for my decision. Never write a line for me to
+             approve: ask, and write what I decide. For each inventory
+             row, ask "the worker's, a person's, or Dave's? Then where
+             is its result kept?", with the places from the pack.
+             After a group is written, stop: I ask for the next one.
+             When I paste "Dave's answer",
              put it into its field in his words, with his name in
              place of "I", show me the change, and wait for my yes.
              Delete the open question it settles. When I send "Test:" and the
@@ -176,7 +198,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              lines of the Writing block that decide it; (3) what the
              Writing block leaves unclear. If no line decides it, say
              so.
-   Inputs:   The attached template and work inventory, my answers, and
+   Inputs:   The attached pack: the template, the work inventory, the
+             places and the September notes. My answers, and
              later the messages file. The draft is dated Draft 1,
              Wednesday, September 30, 2026.
    Autonomy: I decide every line. Never write an Authority verb, a
@@ -191,11 +214,24 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Start with the first group, Who it is.
    ```
 
-2. Answer the five fields: Identity, Role, Kind, Mission, Owner. You may answer several in one message. For Kind, say which of [2.1's two kinds](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/) the AP Worker is, and why. For Owner, name the person you think answers for it, or make it a question for Dave.
-3. Open your contract document and read it. A line you did not choose gets fixed now.
-4. Write Dave's note as a message in your lab chat. Start it "Note for Dave. Keep it, do not reply." Use [2.2's two questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/): before this contract, who decided the assistant's steps, and who answered for its outcome? Was it a worker?
-5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt).
-6. Paste Dave's answer, and say yes to the change:
+2. Answer the five fields as the AI asks: Identity, Role, Kind, Mission, Owner. You may answer several in one message. Where to find each:
+   - Identity: "The job" says whose login the assistant uses today. Should a worker act as a person?
+   - Kind: Delegated or Standing, from [2.1's two kinds](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/), and why. The inventory's "How often" column helps. Give the reason too: the check asks for it.
+   - Mission: one sentence, in your words. "What went wrong in September" shows what the worker is for.
+   - Owner: a named person and their title, from "The job". If you are not sure, say "Dave decides".
+3. Open your contract document and read every line. If a line says something you did not say, tell the AI "Change [field] to [your words]."
+4. Write Dave's note as one message in your lab chat. Fill in the two answers, in your own words:
+
+   ```text
+   Note for Dave. Keep it, do not reply.
+   Before this contract, who decided your assistant's steps? ...
+   Who answered for what it did? ...
+   So was it a worker? ...
+   ```
+
+   The questions are [2.2's two questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/five-things-called-ai/).
+5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Do [step 3 of the loop](#how-each-task-works): fix the line, then "I updated the contract. Read it again, and check it again against the key."
+6. Now Dave answers. Compare his answer with your Owner line, then paste it, and read the AI's before and after before you say yes:
 
    ```text
    Dave's answer. Who owns it? I do: Dave Kowalski, Controller. Not
@@ -212,10 +248,10 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Ask for the next group, What it owes. The AI shows the work inventory's rows. Keep, drop or add each one, and for each duty you keep, say where its result is kept.
-2. For KPIs, write what the business can measure.
-3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
-4. Paste Dave's answer, and say yes to the change:
+1. Ask for the next group, What it owes. The AI asks about each row of the work inventory: is it the worker's job, a person's, or Dave's? Then, for each one the worker keeps, where is its result kept? Pick the place from "Where things are kept" in "The job". A job that stays with a person or with Dave is not a responsibility of the worker.
+2. For KPIs, turn each problem in "What went wrong in September" into something the business can count, such as a number, a deadline or zero of something. If you would rather Dave set them, say "Dave decides".
+3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Fix the line, then "I updated the contract. Read it again, and check it again against the key."
+4. Now Dave answers. Put his four KPIs beside yours: which September problem does each one prevent, and did you miss any? Then paste his answer, and read the AI's before and after before you say yes:
 
    ```text
    Dave's answer. What are its KPIs? Zero duplicate payments. Zero
@@ -229,7 +265,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Test: Monday's email
    ```
 
-   Your page has no rules yet. Read what the AI says that means.
+   Your page has no rules yet, so expect no verb and no draft: the AI should say that no line decides this. That is the lesson. A page with no rules leaves the AI to guess, which is what Dave's assistant did on Monday.
 
 **Give Dave:** what the page does with Monday's email today, and why.
 
@@ -268,11 +304,11 @@ Buckeye Freight Lines
 
 **What you do:**
 
-1. Ask for the next group, What it works with. Name the policy the worker answers from, and say which version. If you do not know the version, make it a question for Dave.
-2. For Memory, say what it may remember, and what it must not.
-3. For Procedures and Tools, name the steps it follows and the systems it uses. Business systems only: no AI vendor or model is named here.
-4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
-5. Paste Dave's answer, and say yes to the change:
+1. Ask for the next group, What it works with. For Knowledge sources, name the policy the worker answers from. "The job" says the assistant has a copy from March: is that the right one? If nothing tells you the version, say "Dave decides".
+2. For Memory, say what it may remember, such as which vendors send scanned PDFs, and what it must not, such as anything that changes where money goes. Memory is experience, not the official record ([2.1](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/)).
+3. For Procedures, name the steps it follows: the inventory's checks are a start. For Tools, pick the systems it needs from "Where things are kept". Business systems only: no AI vendor or model is named here.
+4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Fix the line, then "I updated the contract. Read it again, and check it again against the key."
+5. Now Dave answers. Compare his answer with your Knowledge sources line, then paste it, and read the AI's before and after before you say yes:
 
    ```text
    Dave's answer. Which policy? The AP policy, version 3, approved
@@ -289,7 +325,7 @@ Buckeye Freight Lines
 
 **What you do:**
 
-1. Ask for the next group, What bounds it. Write Authority as one verb for each action, including each responsibility. Write Escalation: when it stops, and whom it asks. Write Evaluations: the cases it must pass, and how often.
+1. Ask for the next group, What bounds it. The AI lists each responsibility and asks you for its verb, from [the verbs](#how-each-task-works). Then it asks what the worker must never do: think of Monday's email. For Escalation, say when it stops, and whom it asks: your Owner line names him. For Evaluations, say which cases it must pass, and how often, or say "Dave decides".
 2. Guess which of your lines should decide Monday's email. Then send:
 
    ```text
@@ -297,7 +333,7 @@ Buckeye Freight Lines
    ```
 
    Compare the verdict with your guess.
-3. Paste Dave's answers. Read each change against your own lines, then say yes, or say what to keep:
+3. Now Dave answers. Before you paste, put his never rules beside yours: which details does his rule name that yours does not? Then paste his answers, read each change against your own lines, and say yes, or say what to keep:
 
    ```text
    Dave's answer. What may it never do? Change any vendor's payment
@@ -335,7 +371,7 @@ Buckeye Freight Lines
 
    A remit-to address is where a payment is mailed, so a remit-to change also changes where money goes.
 5. The two emails that change payment details must each go to Dave. Karen's question must get a drafted reply, not an escalation. A draft that escalates only if a check finds a problem is fine. If a test fails, name the line that caused it, never the test, and test again.
-6. If Karen's question went to Dave, find out why, and keep Dave's words as they are. Either a line of yours is wider than his, or the worker has no way to check one of his cases, such as whether a vendor was paid before: give it what it needs to check, under Tools, and make sure a status question has an Authority line of its own.
+6. If Karen's question went to Dave, find out why, and keep Dave's words as they are. Either a line of yours is wider than his, or the worker has no way to check one of his cases, such as whether a vendor was paid before: "Where things are kept" says which system holds past payments, so add it under Tools. Then make sure a status question has an Authority line of its own.
 7. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt). It reads your tests' verdicts in the chat.
 
 **Give Dave:** what each test decided, and the line that decided it.
@@ -493,6 +529,7 @@ amount? They were pretty insistent.
 - **Your app shows no document beside the chat.** Keep the contract in the chat: after every change, ask the AI to print the whole contract. For the final test, paste that text, whole, in place of the attached file.
 - **The AI made a new document instead of changing the one it had.** Say: "Change the first document. Do not make a new one." Then check which one your next test reads.
 - **The AI wrote a line you did not choose.** Say which line, and decide it yourself. The page is yours.
+- **The AI offers finished lines for you to approve.** Say: "Ask me, do not propose. Show me what the pack says, and I decide."
 - **A test quotes a line that is not on your page, or misses a line you added.** Say: "I changed the document. Read it again." Then test again.
 - **The AI only refused the change, and told nobody.** That is not a stop. Make it a "never" rule that says where the request goes, then test again.
 - **Monday's email passed, but Keystone's did not.** Compare your rule with Dave's words, line by line: his names more than one kind of detail.
