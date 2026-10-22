@@ -59,7 +59,7 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 | Memory, and chats not saved to memory | Claude memory, with a memory for each project; Incognito chats are not saved to memory | Saved memories and chat history, and project-only memory; Temporary Chat set to Unpersonalized |
 | How the worker reaches the KSoR | A custom connector over remote MCP, on any plan (one on Free) | A custom MCP server, added from Plugins: read and fetch on Pro, full support on Business, Enterprise or Edu |
 | Trigger: "every Monday morning" | A weekly scheduled task | A scheduled task |
-| Trigger: "starts within one hour of an invoice arriving" | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
+| Trigger: an invoice arriving, within your Role Contract's tolerance | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
 
 ### Owned
 
@@ -78,4 +78,4 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 ### Two decisions
 
 1. **Plan.** On Claude, any plan can connect one KSoR through a custom connector. On ChatGPT, Pro gives read and fetch access to a custom MCP server, enough to read the KSoR. Acting through MCP needs a Business, Enterprise or Edu workspace. On a plan with neither, the worker could answer only from uploaded files, which brings back the stale-copy problem.
-2. **Trigger.** On ChatGPT, an event-triggered task in Work starts on Gmail activity, on Plus and above, if the AP inbox is in Gmail. On Claude, the everyday product schedules by time, so an hourly check of the inbox stands in for the event. An hourly check is slower than an event, so the Role Contract states the tolerance: "starts within one hour of an invoice arriving." Both designs meet it.
+2. **Trigger.** On ChatGPT, an event-triggered task in Work starts on Gmail activity, on Plus and above, if the AP inbox is in Gmail. On Claude, the everyday product schedules by time, so an hourly check of the inbox stands in for the event. An hourly check is slower than an event, so the Role Contract states the tolerance, such as "starts within one hour of an invoice arriving." Both designs meet a tolerance of one hour or longer.
