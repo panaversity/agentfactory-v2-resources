@@ -1,6 +1,6 @@
 # Lab 4 answer key: Task 7. The vendor swap
 
-The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified in the chapter's 4.8 boxes on 15 October 2026: check the boxes for anything that has changed.
+The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified in the chapter's 4.8 boxes on 15 October 2026, and Claude Duet on 22 October 2026: check the boxes for anything that has changed.
 
 **How this key is used.** When your swap-test lists and your port table are filled, attach this file in your lab conversation, and send the lab's check prompt.
 
@@ -55,7 +55,7 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 | Channel where vendors reach the worker | The AP inbox, read through a connector | The AP inbox, read through an app |
 | Channel where staff ask the worker | Claude Tag in Slack (Team and Enterprise plans, in beta), or the Claude apps | @ChatGPT in Slack or Teams, or the ChatGPT apps |
 | Runtime for the weekly register | A Cowork task, for everyday delegated work | A ChatGPT Work task, for everyday delegated work |
-| Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta) | Agents API (beta), or the dot, the always-on agent, which the box names too |
+| Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta), or Claude Duet, the standing worker, which the box names too | Agents API (beta), or the dot, the always-on agent, which the box names too |
 | Memory, and chats not saved to memory | Claude memory, with a memory for each project; Incognito chats are not saved to memory | Saved memories and chat history, and project-only memory; Temporary Chat set to Unpersonalized |
 | How the worker reaches the KSoR | A custom connector over remote MCP, on any plan (one on Free) | A custom MCP server, added from Plugins: read and fetch on Pro, full support on Business, Enterprise or Edu |
 | Trigger: "every Monday morning" | A weekly scheduled task | A scheduled task |
