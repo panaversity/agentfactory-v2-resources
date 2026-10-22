@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-Brightline's AP Worker is made of 17 parts. In this lab you put each part in one of the chapter's six layers. You test which source the worker trusts when two of them disagree. Then you fix its Role Contract, and you say what would change if Brightline moved to the other AI vendor. You make every choice, and the AI writes it down. After each task, you check your work against an answer key. You need Claude or ChatGPT, and a free account is enough.
+Brightline's AP Worker is made of 17 parts. In this lab you put each part in one of the chapter's six layers. You test which source the worker trusts when two of them disagree. Then you fix its Role Contract, and you say what would change if Brightline moved to the other AI vendor, or if others started to use the worker. You make every choice, and the AI writes it down. After each task, you check your work against an answer key. You need Claude or ChatGPT, and a free account is enough.
 
 **What you will learn:**
 
@@ -11,6 +11,7 @@ Brightline's AP Worker is made of 17 parts. In this lab you put each part in one
 - To tell which source wins when copies disagree, and to write that rule down.
 - To name the layer a failure came from, and the line that fixes it.
 - To say what a vendor swap would rebuild, what would carry across, and which plan you would need on each vendor.
+- To say what changes, and what must carry across, when a team or another company starts to use a worker.
 
 ## Before you start (5 minutes)
 
@@ -393,6 +394,45 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 **Give Dave:** one sentence for IT, in your own words, saying what the worker is, what stays, and what you rebuild, and the table IT asked for on Friday.
 
 
+## Task 8. The swap test, upward (15 minutes)
+
+**Dave asks:** "On Friday, October 16, 2026, two more questions came in. Sam Ortiz in Purchasing wants to ask the worker about his vendors' invoices himself, in the team chat. And Lakeshore Janitorial wants a page where its office can check its own invoices, such as 5102. If we let them, what do we rebuild, and what comes with us? One list for each, and one test that proves Lakeshore sees only its own invoices."
+
+**What you do, all in your lab conversation:**
+
+1. Send this:
+
+   ```text
+   Outcome:  The swap test from Task 7, run upward twice: once for
+             Purchasing asking the worker in the team chat, once for
+             Lakeshore checking its own invoices on a page Brightline
+             runs. For each, what we rebuild and what carries across.
+   Format:   First show me what "rebuild" and "carry across" mean, a
+             line each. Then, for Purchasing, one layer of this
+             conversation's layer map at a time, then the Role
+             Contract, then the evaluations: show it, the parts in
+             it and where they live now, and ask me "carry across,
+             or rebuild, and with what?" in one answer. Then ask me
+             who may ask the worker for what, and who approves. Then
+             the same, layer by layer, for Lakeshore. Then ask me
+             what Lakeshore needs that Draft 3 does not have yet,
+             and for the one evaluation case I add. Last, show both
+             lists side by side.
+   Inputs:   The layer map and Draft 3 in this conversation, and my
+             answers. Rebuild: set it up again, or replace it, for
+             the new users. Carry across: it comes with the worker,
+             its meaning unchanged.
+   Autonomy: Mine, as in Task 1: you word the lines I decide, and
+             never add, remove or suggest one.
+   ```
+
+2. Answer each question in a few words, from [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/).
+3. When the AI shows both lists, compare the two carry lists. Anything Brightline owns comes with the worker on both moves. If an item differs, tell the AI which list it moves to.
+4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Give Dave:** the two lists, who may ask the worker for what, and the one evaluation case for Lakeshore.
+
+
 ## If something goes wrong
 
 - **The AI won't take a file, or you have no uploads left today.** Open the file, copy its text, and paste it into the message above the prompt. Paste a run file as one block. If a chat takes only one file per message, send them one at a time.
@@ -422,6 +462,7 @@ Check it yourself. Everything owned is below the line. Wiping memory loses nothi
 - **The precedence rule in your own words.** When memory, a policy copy and an export disagree, who wins, and why does memory never decide?
 - **The governance rule in your own words.** Which record governs what the worker may know, which governs what it may do, and which governs what it may take as true right now?
 - **The line.** In your company, which of the six layers do you rent today, and which do you own? Is anything owned living in a rented place?
+- **Up, not sideways.** In Task 8, which list stayed the same for both moves, which one grew, and why?
 
 ## Ready for Chapter 5
 

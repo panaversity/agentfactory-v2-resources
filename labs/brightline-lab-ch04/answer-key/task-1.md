@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 and 2 of the lab's 11.
+Task 1 carries checks 1 and 2 of the lab's 15.
 
 1. **All 17 items are placed, rented or owned is marked, and at least 13 sit in the right layer.** Memory items that belong in memory sit on the ownership line, and say so.
 2. **At least 6 of the 8 misplaced items are found, each with where it belongs.** The eight are items 1, 2, 3, 5, 6, 10, 14 and 17. A learner who marks item 9 misplaced because its trigger is written only in the product's scheduled task, not in the contract, has found the note: count it as the note, not as an error.
