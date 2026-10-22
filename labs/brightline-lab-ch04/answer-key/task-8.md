@@ -2,7 +2,7 @@
 
 The answers for Task 8 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. The chapter's 4.10 teaches what this task practices.
 
-**How this key is used.** When your two lists, your answers on who may ask the worker for what, and your evaluation case are done, attach this file in your lab conversation, and send the lab's check prompt.
+**How this key is used.** When your table for both moves, your answers on who may ask the worker for what, and your evaluation case are done, attach this file in your lab conversation, and send the lab's check prompt.
 
 ## The checks
 

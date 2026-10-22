@@ -324,8 +324,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
    Outcome:  Draft 3 of the attached Role Contract, dated Friday,
              October 16, 2026, keeping every Draft 2 line that is
              still true and leaving out the sample's note at the
-             top. Each edit is marked CHANGED, NEW or REMOVED,
-             and one KEPT line covers everything untouched.
+             top. Every Draft 2 line appears once, in full, marked
+             KEPT, CHANGED or REMOVED, and each new line is marked
+             NEW.
    Format:   First ask me where the worker read version 1, when
              Draft 2 already names version 3. Then one field at a
              time: show me its Draft 2 lines, ask a question or two,
@@ -374,12 +375,13 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              company does not govern, with where it belongs. Wait
              for my corrections and my sentence for IT. Then fill
              the rented rows from the attached page's two vendor
-             boxes, quoting each product, and ask me how the worker
-             reaches anything a box does not name. Then the owned
-             rows, one at a time, showing the row: does its meaning
-             change, and what comes before go-live, a line each.
-             Then the template's two decisions, one at a time: my
-             choice, one line on why it fits Brightline, and the
+             boxes, quoting each product. Keep each product a box
+             names, and ask me how the worker reaches anything no
+             box names. Then the owned rows, one at a time, showing
+             the row: does its meaning change, and what comes
+             before go-live, a line each. Then the template's two
+             decisions, one at a time: my choice and one line on
+             why it fits Brightline, and for the second, the
              tolerance. Show the whole table at the end.
    Inputs:   The layer map in this conversation, from my own
              answers, never from an answer key. The attached
@@ -388,7 +390,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              know of the AI vendors. Every other line is mine.
    ```
 
-2. Compare the three lists with your Task 1 map. Anything Brightline owns should come with you, so it should not be on the rebuild list. If it is, your Task 1 answer for it was wrong. Tell the AI which item moves where. Attach Task 1's key again, and send the check prompt with "Task 1 again" on the line above it. If nothing moves, say so. Then send your sentence for IT in its own message, starting "My sentence for IT:".
+2. Compare the three lists with your Task 1 map. Anything Brightline owns should come with you, so it should not be on the rebuild list. If nothing owned is there, say so. If something owned is there, your Task 1 answer for it was wrong. Tell the AI which item moves where. Attach Task 1's key again, and send the check prompt with "Task 1 again" on the line above it. Then send your sentence for IT in its own message, starting "My sentence for IT:".
 3. Answer as it asks. Use the same tolerance as in your Role Contract.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -416,9 +418,11 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              then for Lakeshore: carry across, or rebuild, and with
              what?" in one answer. Then, for Purchasing and then for
              Lakeshore, ask me who may ask the worker for what, and
-             who approves. Then ask me what Lakeshore needs that
-             Draft 3 does not have yet, and for the one evaluation
-             case I add. Last, show both lists side by side.
+             who approves. Then ask me for the four things
+             Lakeshore needs that Draft 3 does not have yet, which
+             I name from 4.10, and for the one evaluation case I
+             add. Last, show one table: a row for each place, a
+             column for each move.
    Inputs:   The layer map and Draft 3 in this conversation, and my
              answers. Rebuild: set it up again, or replace it, for
              the new users. Carry across: it comes with the worker,
@@ -428,10 +432,10 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
    ```
 
 2. Answer each question in a few words, from [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/).
-3. When the AI shows both lists, compare the owned items on the two carry lists. Each one comes with the worker on both moves, while the rented parts may differ. If an owned item is missing from a carry list, tell the AI to move it there.
+3. When the AI shows the table, check the owned places. What Brightline owns carries across for both moves. What a move adds to it, such as rows on who may ask, goes on the rebuild list. The rented places may differ. If an owned place itself is marked rebuild, tell the AI it carries across.
 4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give Dave:** the two lists, who may ask the worker for what, and the one evaluation case for Lakeshore.
+**Give Dave:** the table for both moves, who may ask the worker for what, and the one evaluation case for Lakeshore.
 
 
 ## If something goes wrong
