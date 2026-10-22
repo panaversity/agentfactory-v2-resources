@@ -82,11 +82,10 @@ Evaluations: The fifteen September invoices, and this week's five
 Channels:      The AP inbox and the team chat app.
 Triggers:      Monday morning, so the register is ready by 10 a.m. A new
                email in the AP inbox, or a message in the team chat.
-Runtime needs: (The app), (the model and setting it showed), tested on
-               (the real date). It passed the five message tests.
-               Continuity from scheduled runs each Monday that start
-               fresh and rebuild from the register and the policy in the
-               AP project. On (the other AI vendor): (a model chosen by
+Runtime needs: Scheduled tasks each Monday, inside the AP project, that
+               start fresh and rebuild from the register and the policy.
+               (The app), (the model and setting it showed), chosen
+               (the real date). On (the other AI vendor): (a model chosen by
                job), predicted, not run. Only this line changes.
 
 ## Open questions
