@@ -8,8 +8,8 @@ The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 Task 7 carries checks 8 to 11 of the lab's 15.
 
-8. **The rebuild and carry lists are right.** Rented things are rebuilt: the model setting, the scheduled task, the channel hookups, and memory, which may simply be left behind once it passes the wipe test. Owned things carry with their meaning unchanged, from the carry list, or from the third list once each is moved home: the Role Contract, the KSoR with version 3 current, the SSoR's case files, the DSoR controls and evidence, and the evaluations. Dave's sentence for IT, in the learner's own words, says the worker is the Role Contract, that it and the owned records stay, and that the rented parts are rebuilt. Missed: an owned item on the rebuild list that stays there, company systems listed as moving at all, or no sentence for IT.
-9. **The third list names every owned thing in a place the company does not govern, with where it belongs.** Items such as the project instructions (the Role Contract, typed into a rented product), the policy upload (knowledge that belongs in the KSoR), and the trigger set only as a time (a business event that belongs in the Role Contract). The approval record in chat, routed to DSoR evidence, counts toward them too. So do the run notes, routed to each invoice's case file in the SSoR. Missed: fewer than three named, or no home named.
+8. **The rebuild and carry lists are right.** Rented things are rebuilt: the model setting, the scheduled task, the channel hookups, and memory, which may simply be left behind once it passes the wipe test. Owned things carry with their meaning unchanged, from the carry list, or from the third list once each is moved home: the Role Contract, the KSoR with version 3 current, the SSoR's case files, the DSoR controls and evidence, and the evaluations. Dave's sentence for IT, in the learner's own words, says the worker is the Role Contract and the records it names, that they stay, and that the rented parts are rebuilt. Missed: an owned item on the rebuild list that stays there, company systems listed as moving at all, or no sentence for IT.
+9. **The third list names every owned thing in a place the company does not govern, with where it belongs.** Items such as the project instructions (the Role Contract, typed into a rented product), the policy upload (knowledge that belongs in the KSoR), the approval record in chat (DSoR evidence) and the run notes (each invoice's case file in the SSoR). The trigger set only as a time, a business event that belongs in the Role Contract, counts too. Missed: fewer than three named, or no home named.
 10. **Every rented row names the product the 4.8 boxes name on both AI vendors, and every owned row keeps its meaning.** Where a box names no product, the row says how the worker would reach it instead. Owned rows say "no change" in meaning, with the integration work named: reconnections, identity mapping, and the evaluations rerun before go-live. Missed: a rented row left empty, a product the key's table does not name for that row, or an owned item whose meaning changes, which means it was stored in a rented place.
 11. **The two decisions are answered from the boxes, or from this key's table if the page could not be opened.** The plan each AI vendor needs so the worker answers from the governed KSoR rather than uploads, and how each one starts work when an invoice arrives, with the tolerance the slower design still meets, stated in the port table and the same as the Role Contract's. An hourly check meets a tolerance of one hour or longer. Each decision has its own line on why it fits Brightline. Missed: a decision answered from memory of the products rather than the chapter's boxes, or one copied from this key with no reason of its own. Missed also: no tolerance, a tolerance the hourly check cannot meet, or one that differs from the Role Contract's.
 
@@ -37,14 +37,14 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 
 - Project instructions (1): the Role Contract, typed only into the product
 - Policy upload (2): knowledge that belongs in the KSoR
-- The trigger (9), set only as a time: belongs in the Role Contract as a business event
-- Accept also: the approval record in chat (14), which belongs in DSoR evidence
-- Accept also: the run notes (17), which belong in each invoice's case file in the SSoR
+- The approval record in chat (14): belongs in DSoR evidence
+- The run notes (17): belong in each invoice's case file in the SSoR
 - Accept also: version 3 in Dave's email (3), which belongs in the KSoR
+- Accept also: the trigger (9), set only as a time, which belongs in the Role Contract as a business event
 
 ### What Dave tells IT
 
-"The worker is the Role Contract. It, the policy, the case files and the controls stay with us. On the new AI vendor we rebuild the runtime, the channels and the schedule."
+"The worker is the Role Contract and the records it names: the policy, the case files and the controls. They stay with us. On the new AI vendor we rebuild the runtime, the channels and the schedule."
 
 ## The key's table
 
