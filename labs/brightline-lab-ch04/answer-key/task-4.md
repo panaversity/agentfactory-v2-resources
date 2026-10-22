@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The check
 
-Task 4 carries check 3 of the lab's 11.
+Task 4 carries check 3 of the lab's 15.
 
 3. **Run 3's differences, if any, are traced to a rented layer.** The correct answers are the same on both AI vendors, because they come from the files and the brief, which are owned and did not change. Your note says whether any answer changed, and names the rented cause for each change: the model, how the product reads attached files, or memory from your own earlier chats. A predicted Run 3 passes when each prediction says why. Missed: a difference blamed on the files or the policy, or fixed by editing them to suit one AI vendor.
 

@@ -1,12 +1,12 @@
 # Lab 4 answer key: Task 7. The vendor swap
 
-The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified in the chapter's 4.8 boxes on 15 October 2026: check the boxes for anything that has changed.
+The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified in the chapter's 4.8 boxes on 15 October 2026, and Claude Duet on 22 October 2026: check the boxes for anything that has changed.
 
 **How this key is used.** When your swap-test lists and your port table are filled, attach this file in your lab conversation, and send the lab's check prompt.
 
 ## The checks
 
-Task 7 carries checks 8 to 11 of the lab's 11.
+Task 7 carries checks 8 to 11 of the lab's 15.
 
 8. **The rebuild and carry lists are right.** Rented things are rebuilt: the model setting, the scheduled task, the channel hookups, and memory, which may simply be left behind once it passes the wipe test. Owned things carry with their meaning unchanged: the Role Contract, the KSoR with version 3 current, the SSoR's case files, the DSoR controls and evidence, and the evaluations. Dave's sentence for IT, in the learner's own words, says the worker is the Role Contract, that it and the owned records stay, and that the rented parts are rebuilt. Missed: an owned item on the rebuild list that stays there, company systems listed as moving at all, or no sentence for IT.
 9. **Every owned thing found on the rebuild list is named, with where it belongs.** Items such as the project instructions (the Role Contract, typed into a rented product), the policy upload (knowledge that belongs in the KSoR), and the trigger set only as a time (a business event that belongs in the Role Contract). The approval record in chat, routed to DSoR evidence, counts toward them too. So do the run notes, routed to each invoice's case file in the SSoR. Missed: fewer than three named, or no home named.
@@ -55,11 +55,11 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 | Channel where vendors reach the worker | The AP inbox, read through a connector | The AP inbox, read through an app |
 | Channel where staff ask the worker | Claude Tag in Slack (Team and Enterprise plans, in beta), or the Claude apps | @ChatGPT in Slack or Teams, or the ChatGPT apps |
 | Runtime for the weekly register | A Cowork task, for everyday delegated work | A ChatGPT Work task, for everyday delegated work |
-| Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta) | Agents API (beta), or the dot, the always-on agent, which the box names too |
+| Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta), or Claude Duet, the standing worker, which the box names too | Agents API (beta), or the dot, the always-on agent, which the box names too |
 | Memory, and chats not saved to memory | Claude memory, with a memory for each project; Incognito chats are not saved to memory | Saved memories and chat history, and project-only memory; Temporary Chat set to Unpersonalized |
 | How the worker reaches the KSoR | A custom connector over remote MCP, on any plan (one on Free) | A custom MCP server, added from Plugins: read and fetch on Pro, full support on Business, Enterprise or Edu |
 | Trigger: "every Monday morning" | A weekly scheduled task | A scheduled task |
-| Trigger: "starts within one hour of an invoice arriving" | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
+| Trigger: an invoice arriving, within your Role Contract's tolerance | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
 
 ### Owned
 
@@ -78,4 +78,4 @@ Each item keeps its meaning. Its connections may need rework, and the evaluation
 ### Two decisions
 
 1. **Plan.** On Claude, any plan can connect one KSoR through a custom connector. On ChatGPT, Pro gives read and fetch access to a custom MCP server, enough to read the KSoR. Acting through MCP needs a Business, Enterprise or Edu workspace. On a plan with neither, the worker could answer only from uploaded files, which brings back the stale-copy problem.
-2. **Trigger.** On ChatGPT, an event-triggered task in Work starts on Gmail activity, on Plus and above, if the AP inbox is in Gmail. On Claude, the everyday product schedules by time, so an hourly check of the inbox stands in for the event. An hourly check is slower than an event, so the Role Contract states the tolerance: "starts within one hour of an invoice arriving." Both designs meet it.
+2. **Trigger.** On ChatGPT, an event-triggered task in Work starts on Gmail activity, on Plus and above, if the AP inbox is in Gmail. On Claude, the everyday product schedules by time, so an hourly check of the inbox stands in for the event. An hourly check is slower than an event, so the Role Contract states the tolerance, such as "starts within one hour of an invoice arriving." Both designs meet a tolerance of one hour or longer.

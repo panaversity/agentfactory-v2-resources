@@ -6,7 +6,7 @@ The answers for Task 6 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 6 carries checks 5 to 7 of the lab's 11.
+Task 6 carries checks 5 to 7 of the lab's 15.
 
 5. **Knowledge is governed, and silence is named.** Knowledge sources name the KSoR and its approved concepts with versions, AP policy version 3, approved September 1, 2026, owner Dave Kowalski. Answers about policy cite the concept and version. When the record is silent, the worker says so and asks Dave, never filling the gap. Missed: "the policy" with no version, or no abstain line.
 6. **Memory is bounded, and the writes are gone.** Memory may hold preferences and where to look, and must never hold limits, terms, bank details or approvals, with the wipe test as a standing check. Tools route every read of current facts and every change through named governed operations, and direct write access to the register is removed. A Case files line says each invoice's steps go into its case file, and where an invoice stands is read from it. Execute through a named governed operation also passes: the operation, not the model, holds the checks. A line marked "target, not yet in place" passes too: the contract records intent, and Part IV builds the controls. Missed: memory left unbounded, or any direct write surviving.

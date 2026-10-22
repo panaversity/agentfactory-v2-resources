@@ -6,7 +6,7 @@ Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and seven tasks, each checked against an answer key the moment it is done. |
+| `LAB.md` | The lab: the job, and eight tasks, each checked against an answer key the moment it is done. |
 | `inventory.md` | Brightline's AP Worker setup, week of October 12, 2026: the 17 items you place. |
 | `files/run-1.md` | The one file Run 1 attaches. It holds three files under their names: the policy copy from the shared project, the memory notes and one email. |
 | `files/run-2.md` | The one file Runs 2 and 3 attach. It holds seven files under their names: two policy excerpts, memory notes, two accounting exports, a case file, one email. |

@@ -13,7 +13,7 @@ Use the two boxes in Concept 4.8. Rented items get a product on each AI vendor. 
 | Memory, and chats not saved to memory | | |
 | How the worker reaches the KSoR | | |
 | Trigger: "every Monday morning" | | |
-| Trigger: "starts within one hour of an invoice arriving" | | |
+| Trigger: an invoice arriving, within your Role Contract's tolerance | | |
 
 ## Owned: does its meaning change, and what integration work is needed?
 
