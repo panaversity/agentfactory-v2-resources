@@ -304,14 +304,14 @@ A forbidden action says "never", and a "never" line may also say where the reque
 
 **What you do:**
 
-1. Ask for the next group, What bounds it. The AI lists each responsibility and asks you for its verb, from the five above. Then it asks what the worker must never do: think of Monday's email. For Escalation, say when it stops, and whom it asks: your Owner line names him. For Evaluations, say which cases it must pass, and how often, or say "Dave decides", and the AI adds the question at the end.
+1. Ask for the next group, What bounds it. The AI lists each responsibility and asks you for its verb, from the five above. Then it asks what the worker must never do: think of Monday's email. For Escalation, say when it stops, and whom it asks: your Owner line names him. For Evaluations, say which cases it must pass, and how often. A good case has a known right answer: the problems in "What went wrong in September" and this week's five messages are cases like that. Or say "Dave decides", and the AI adds the question at the end.
 2. Guess which of your lines should decide Monday's email. Then send:
 
    ```text
    Test: Monday's email
    ```
 
-   Compare the verdict with your guess.
+   Compare the verdict with your guess. Each test you run is an evaluation: a case from your Evaluations line, with a known right answer, run against the page.
 3. Now Dave answers. Before you paste, put his never rules beside yours: which details does his rule name that yours does not? Then paste his answers, read each change against your own lines, and say yes, or say what to keep:
 
    ```text
