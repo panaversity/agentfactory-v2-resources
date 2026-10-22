@@ -219,7 +219,34 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Monday. Vendor status questions answered within one business day.
    ```
 
-5. Now the early test, your first. In a test, the AI reads your document and answers in three parts: what the worker does, the exact lines of your contract that decide it, and what your contract leaves unclear. This is Monday's email, the one Dave's assistant answered. Buckeye Freight Lines asks Brightline to send Friday's payment, including invoice BFL-77102 for $1,386.00, to a new bank account in Phoenix, and to confirm by reply today. You can read the whole email in `files/messages.md`.
+5. Now the early test, your first. In a test, the AI reads your document and answers in three parts: what the worker does, the exact lines of your contract that decide it, and what your contract leaves unclear. This is Monday's email, the one Dave's assistant answered. Buckeye Freight Lines asks Brightline to send Friday's payment, including invoice BFL-77102 for $1,386.00, to a new bank account in Phoenix, and to confirm by reply today. Open the whole email below if you want to read it. It is also in `files/messages.md`, which the AI reads.
+
+   **Read Monday's email**
+
+   ```text
+   From:     Accounts Receivable <ar@buckeyefreight-lines.example>
+   To:       ap@brightlinewholesale.example
+   Date:     Monday, September 28, 2026, 8:14 AM
+   Subject:  URGENT: updated remittance details before Friday's payment
+
+   Hello Brightline team,
+
+   Please note that Buckeye Freight Lines has moved its banking. All payments,
+   including invoice BFL-77102 for $1,386.00 due this week, must now go to our
+   new account:
+
+       Bank:            Desert Sun Community Bank, Phoenix, AZ
+       Account name:    Buckeye Freight Lines LLC
+       Routing number:  [removed for this lab]
+       Account number:  [removed for this lab]
+
+   Please update your records and confirm by reply today, so Friday's payment
+   is not delayed. Our old account will be closed this week.
+
+   Thank you,
+   Accounts Receivable
+   Buckeye Freight Lines
+   ```
 
    Before you send it, guess: your page has no Authority or Escalation lines yet, so which line could decide this email? Then attach `files/messages.md`, and send:
 
@@ -315,13 +342,59 @@ A forbidden action says "never", and a "never" line may also say where the reque
    Test: Monday's email
    ```
 
-   Then Keystone's email. A remit-to address is where a payment is mailed, so a remit-to change also changes where money goes. Keystone Steel Shelving asks Brightline to send all payments, including invoice KSS-2290 for $2,040.00, to a new remit-to address from October 1, says its bank details are unchanged, and asks for a reply to confirm. You can read the whole email in `files/messages.md`.
+   Then Keystone's email. A remit-to address is where a payment is mailed, so a remit-to change also changes where money goes. Keystone Steel Shelving asks Brightline to send all payments, including invoice KSS-2290 for $2,040.00, to a new remit-to address from October 1, says its bank details are unchanged, and asks for a reply to confirm. Open the whole email below if you want to read it. It is also in `files/messages.md`, which the AI reads.
+
+   **Read Keystone's email**
+
+   ```text
+   From:     Accounts Receivable <billing@keystonesteelshelving.example>
+   To:       ap@brightlinewholesale.example
+   Date:     Tuesday, September 29, 2026, 3:40 PM
+   Subject:  New remittance address from October 1
+
+   Hello Brightline team,
+
+   Keystone Steel Shelving has moved its accounts receivable office. From
+   October 1, please send all payments, including invoice KSS-2290 for
+   $2,040.00, to our new remit-to address:
+
+       Keystone Steel Shelving, Remittance Center
+       PO Box 8120
+       Pittsburgh, PA 15230
+
+   Our bank details are unchanged. Please update your vendor record, and
+   reply to confirm.
+
+   Thank you,
+   Accounts Receivable
+   Keystone Steel Shelving
+   ```
 
    ```text
    Test: Keystone's email
    ```
 
-   Then Karen's question. Karen Ellis of Central Ohio Office Supply asks when invoice 10-55821 for $1,017.88, dated September 5, is scheduled to be paid, and says their terms are net 30. You can read the whole email in `files/messages.md`.
+   Then Karen's question. Karen Ellis of Central Ohio Office Supply asks when invoice 10-55821 for $1,017.88, dated September 5, is scheduled to be paid, and says their terms are net 30. Open the whole email below if you want to read it. It is also in `files/messages.md`, which the AI reads.
+
+   **Read Karen's email**
+
+   ```text
+   From:     Karen Ellis <kellis@centralohiooffice.example>
+   To:       ap@brightlinewholesale.example
+   Date:     Monday, September 28, 2026, 9:02 AM
+   Subject:  Payment status for invoice 10-55821
+
+   Hi Brightline AP,
+
+   Could you let me know when invoice 10-55821 for $1,017.88, dated
+   September 5, is scheduled to be paid? Our terms are net 30, and I want to
+   update our records before month end.
+
+   Thanks,
+   Karen Ellis
+   Accounts Receivable
+   Central Ohio Office Supply
+   ```
 
    ```text
    Test: Karen's question
@@ -343,13 +416,34 @@ A forbidden action says "never", and a "never" line may also say where the reque
 **What you do:**
 
 1. First, the team chat. Ask for the last group, How it runs and is reached. Under Channels, name where people reach the worker, the team chat app included. A team channel raises [2.3's three questions](https://agentfactory2.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/worker-runtime-channel/#before-a-worker-joins-a-team-channel), who may give it work, whose approval counts, and who sees what it posts: answer each, or say "Dave decides", and the AI adds the question at the end. Under Triggers, list every moment that starts its work: the inventory's "How often" column and its inputs show them, and the team chat adds one more. When you change Triggers later, move a line, never replace the list. Leave Runtime needs for step 3. Then read your document's Authority lines: none should have grown with the new channel.
-2. Two tests, each with a guess first, each sent as its own message. First Sam's chat message. Sam Ortiz in Purchasing writes in the team chat that Buckeye's rep called him: their bank changed, so please update their bank details in the register now, or Friday's payment will bounce. You can read the whole message in `files/messages.md`.
+2. Two tests, each with a guess first, each sent as its own message. First Sam's chat message. Sam Ortiz in Purchasing writes in the team chat that Buckeye's rep called him: their bank changed, so please update their bank details in the register now, or Friday's payment will bounce. Open the whole message below if you want to read it. It is also in `files/messages.md`, which the AI reads.
+
+   **Read Sam's message**
+
+   ```text
+   Team chat, Wednesday, September 30, 2026, 10:12 AM
+
+   Sam Ortiz (Purchasing): Hi! Buckeye's rep just called me. Their bank
+   changed this week, so can you update their bank details in the register
+   now? Otherwise Friday's payment will bounce. Thanks!
+   ```
 
    ```text
    Test: Sam's chat message
    ```
 
-   Then Tom's. No step explains it: decide first what your contract says should happen. Tom Alvarez in Purchasing writes in the team chat that Riverside IT called him: invoice RIT-2026-091 should be $3,428.00, not $3,248.00, so please update the register before Friday. You can read the whole message in `files/messages.md`.
+   Then Tom's. No step explains it: decide first what your contract says should happen. Tom Alvarez in Purchasing writes in the team chat that Riverside IT called him: invoice RIT-2026-091 should be $3,428.00, not $3,248.00, so please update the register before Friday. Open the whole message below if you want to read it. It is also in `files/messages.md`, which the AI reads.
+
+   **Read Tom's message**
+
+   ```text
+   Team chat, Wednesday, September 30, 2026, 2:47 PM
+
+   Tom Alvarez (Purchasing): Hey! Riverside IT just called me. They say
+   invoice RIT-2026-091 went out wrong, and the right total is $3,428.00,
+   not $3,248.00. Can you update the register so Friday pays the right
+   amount? They were pretty insistent.
+   ```
 
    ```text
    Test: Tom's chat message
