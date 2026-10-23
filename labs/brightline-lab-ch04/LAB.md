@@ -334,9 +334,11 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              sources (which record and version, whether every policy
              answer cites it, what it does when the record is
              silent); Memory (what it may hold, what it never holds,
-             4.3's wipe test, that nothing it acts on lives only in
-             memory); Tools (how it reads and changes anything,
-             whether any direct write stays); Case files,
+             4.3's wipe test, which asks whether tomorrow's work
+             would still be correct if memory were wiped tonight,
+             and that nothing it acts on lives only in memory);
+             Tools (how it reads and changes anything, whether any
+             direct write stays); Case files,
              a new section (what goes into each invoice's file, and
              where it reads an invoice's status from); Authority
              (the approval line and its policy version, the
@@ -390,7 +392,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              know of the AI vendors. Every other line is mine.
    ```
 
-2. Compare the three lists with your Task 1 map. Anything Brightline owns should come with you, so it should not be on the rebuild list. If nothing owned is there, say so. If something owned is there, your Task 1 answer for it was wrong. Tell the AI which item moves where. Attach Task 1's key again, and send the check prompt with "Task 1 again" on the line above it. Then send your sentence for IT in its own message, starting "My sentence for IT:".
+2. Compare the three lists with your Task 1 map. Anything Brightline owns should come with you, so it should not be on the rebuild list. If nothing owned is there, say so, and go on to your sentence for IT. If something owned is there, your Task 1 answer for it was wrong. Tell the AI which item moves where. Attach Task 1's key again, and send the check prompt with "Task 1 again" on the line above it. Then send your sentence for IT in its own message, starting "My sentence for IT:".
 3. Answer as it asks. Use the same tolerance as in your Role Contract.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
