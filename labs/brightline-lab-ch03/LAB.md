@@ -381,7 +381,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 Your vertical is the line of work you know best. Pick one task in it that you would hand over to a worker.
 
-1. In a new conversation, send Task 2's first 10 percent prompt. In its Inputs, name your own task's files, and take out the Role Contract. Add this line under it: "My task has no Role Contract yet. Ask about my own files and systems, not the register and the vendor."
+1. In a new conversation, send Task 2's first 10 percent prompt. In its Inputs, name your own task's files, and take out the Role Contract. Add this line at the end of the prompt: "My task has no Role Contract yet. Ask about my own files and systems, not the register, the reconciling items or the vendor."
 2. Answer its questions. Give real dates, a stop rule, and a list of things the worker must never do. Keep the page it writes, in a file of your own.
 3. If you can, run it on your own files in a new conversation with memory off. Review the flags first.
 
@@ -390,7 +390,7 @@ The five review answers are the part you will use again every week. Check it you
 ## Look back
 
 - **The three failures.** [3.6](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/three-failures/) names them: a weak start (first 10), stepping in too much (middle 80) and a careless review (final 10). Dave's 9 a.m. request was a first-10 failure. Where in your own runs did each one nearly happen, and what stopped it?
-- **Your guess against Run 1.** What did you predict, and what actually cost the points?
+- **Your guess against Run 1.** What did you predict, and what actually cost the points, if any?
 - **The same correction twice.** Which lesson went into Draft 2, or the standing instructions, so no future brief has to carry it?
 - **The three scales.** Your first 10 percent ran one task. Your Draft 2 is the first 10 percent of the worker's whole life. What is the company-scale version of the line you just wrote?
 - **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How both AI vendors support the rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) explains why that difference holds on either AI vendor.
