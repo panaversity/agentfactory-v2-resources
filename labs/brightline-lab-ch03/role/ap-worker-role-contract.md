@@ -1,7 +1,4 @@
-# Role Contract: AP Worker                     Draft 1, 30 September 2026 (sample)
-
-Use this sample only if you did not write your own Draft 1 in Chapter 2.
-If you did, copy your own role/ap-worker-role-contract.md into this folder instead.
+# Role Contract: AP Worker                     Draft 1, 30 September 2026
 
 ## Who it is
 Identity:      Its own service account, ap-worker@brightline (to be created by IT). Never a person's login.
@@ -42,7 +39,7 @@ Evaluations: The fifteen September invoices, the fake bank-change email and the 
 ## How it runs and is reached
 Channels:      The AP inbox and the team chat app.
 Triggers:      Monday 7 a.m. for the register. A new vendor email for status questions.
-Runtime needs: Not needed for this lab. Record the surface, model and effort when you choose them, with the date.
+Runtime needs: Not chosen yet. Record the surface, model and effort when they are chosen, with the date.
 
 ## Open questions
 - Whether it may send routine payment-status replies on its own.

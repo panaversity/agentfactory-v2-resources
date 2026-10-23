@@ -20,9 +20,9 @@ Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory
 - `README.md`
 - `LAB.md`: this page, as a file
 - `files/inputs.md`: the file for both runs. It holds four files in one: Midwest Packaging's statement, Brightline's register, section 7 of the AP policy, and one invoice copy.
-- `role/`: a sample Role Contract (Draft 1)
+- `role/ap-worker-role-contract.md`: the AP Worker's Role Contract, Draft 1. Dave owns it. It says what the worker may do in every task, and Task 2 starts from it.
 
-The answer keys are not in the folder. You download each one when its task is done, so you don't see the answers early. Task 2 needs your Role Contract from Chapter 2. If you don't have one, use the sample.
+The answer keys are not in the folder. You download each one when its task is done, so you don't see the answers early.
 
 ## The job
 
@@ -111,7 +111,27 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do, all in your lab conversation:**
 
-1. Attach your Role Contract from Chapter 2, or the sample, and send this. Answer as it asks:
+1. **Read the Role Contract with the AI.** Your first 10 percent works inside the contract, so learn it first. Attach `role/ap-worker-role-contract.md`, and send this:
+
+   ```text
+   Outcome:  I understand the attached Role Contract before I brief
+             the worker: who owns it, what the worker does, what it
+             may do alone, when it must stop and ask, and what it
+             must never do.
+   Format:   Those five, a short line each, in plain words, with the
+             contract's own words in quotes. Then ask me three
+             questions about it, one at a time, and wait for my
+             answer: what it may do to the invoice register, when it
+             must stop and ask Dave, and what it must never do. After
+             each answer, say whether the contract agrees, quote its
+             line, and add nothing else.
+   Inputs:   The attached Role Contract, Draft 1. Nothing else.
+   Autonomy: Explain and ask only. Do not change the contract, and do
+             not start the first 10 percent yet.
+   ```
+
+2. Answer each question in a few words.
+3. **Write the first 10 percent.** Send this, and answer as it asks:
 
    ```text
    Outcome:  The first 10 percent for this reconciliation, one page,
@@ -137,18 +157,19 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              first. Write each part from my answers, and show the
              whole page at the end.
    Inputs:   My answers, the attached Role Contract, and the run's
-             four files, which reach the worker inside one attached
-             file, inputs.md, each under its own name:
+             four files, which the run will get inside one file,
+             inputs.md, each under its own name:
              midwest-statement-2026-09.txt, the vendor's statement;
              brightline-register-midwest.csv, Brightline's register;
              ap-policy-v3-excerpt.md, section 7 of the AP policy;
-             invoice-4488.txt, one invoice copy.
+             invoice-4488.txt, one invoice copy. That file is not
+             attached here, and you do not need it.
    Autonomy: Mine. Word the lines I decide, and never add, remove or
              suggest one. Explain a part when I ask.
    ```
 
-2. Answer each question in a few words.
-3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. Answer each question in a few words.
+5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the review contract's five answers, so he knows what evidence Monday's signature will rest on.
 
@@ -216,7 +237,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md). Go to Run 1's conversation from Task 1, and copy its whole reply (its last one, if it asked a question first), and any file it wrote. Back in your lab conversation, send "Run 1's reply", the reply and [the run prompt](#the-run-prompt), with the key attached.
    - **The hard rule.** One thing fails a run, whatever its score: changing the register, recording a credit or writing to the vendor.
    - Run 1 is expected to lose points. Its score shows what a one-line request gets you.
-   - Then send: "Put my guesses beside the score. Which did I get right?"
+   - Then send: "Put my guesses beside the score. Which did I get right? Run 1 had only Dave's line and inputs.md, never the Role Contract. Do not explain the lost points yet."
 2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md). Send "Run 2's reply, to score", Run 2's reply again and [the run prompt](#the-run-prompt), with the key attached. The key says what passes.
    - **If it passed**, you are done, even if it lost a point. The page you sent is your first 10 percent.
    - **If it failed**, the key says which line of your first 10 percent caused it. Tell the AI which part to change, and it rewrites the page. Run it again in a new run conversation, copy the reply back, and score it the same way, with the line "Run 2's reply, second try".
@@ -260,10 +281,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
    ```text
    Outcome:  Draft 2 of the Role Contract attached in Task 2, dated
-             October 1, 2026, with every Draft 1 line written out,
-             and the sample's note at the top left out if it is the
-             sample. Each edit is marked CHANGED or NEW; an untouched
-             line carries no mark.
+             October 1, 2026, with every Draft 1 line written out.
+             Each edit is marked CHANGED or NEW; an untouched line
+             carries no mark.
    Format:   First list the lessons from this conversation's runs,
              scores and review, one line each, this reconciliation as
              a test case with its passing bar among them. Then ask me,
@@ -351,6 +371,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 - **The AI wrote a line you did not choose.** Say which line, and decide it yourself. The work is yours.
 - **The AI asks something the prompt did not say, or sends you to a file.** Say "ask as the brief says", and answer the way the prompt asks.
 - **The grader mixes up tasks, or you attached the wrong key.** Say which task you are checking, attach the right key, and send the check prompt again.
+- **A score does not add up.** Add the points yourself, say which total is wrong, and ask the AI to correct the score.
 - **The run changed the register, recorded a credit or wrote to the vendor.** In Run 1, keep it: that is the 9 a.m. mistake. In Run 2, fix the line that allowed it, and run it again in a new conversation before Task 4.
 - **The run stopped and asked.** Your stop rule worked. Answer the question, and let it carry on.
 - **The 3.7 file won't download.** Copy the two vendor boxes from [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/), and paste them under the prompt.
@@ -360,8 +381,8 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 Your vertical is the line of work you know best. Pick one task in it that you would hand over to a worker.
 
-1. In a new conversation, send Task 2's prompt, with your own task's files named in its Inputs.
-2. Answer its questions. Give real dates, a stop rule, and a list of things the worker must never do. Keep the page it writes.
+1. In a new conversation, send Task 2's first 10 percent prompt. In its Inputs, name your own task's files, and take out the Role Contract. Add this line at the end of the prompt: "My task has no Role Contract yet. Ask about my own files and systems, not the register, the reconciling items or the vendor."
+2. Answer its questions. Give real dates, a stop rule, and a list of things the worker must never do. Keep the page it writes, in a file of your own.
 3. If you can, run it on your own files in a new conversation with memory off. Review the flags first.
 
 The five review answers are the part you will use again every week. Check it yourself: all five are answered, and it has a real date, a stop rule and a never list.
@@ -369,7 +390,7 @@ The five review answers are the part you will use again every week. Check it you
 ## Look back
 
 - **The three failures.** [3.6](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/three-failures/) names them: a weak start (first 10), stepping in too much (middle 80) and a careless review (final 10). Dave's 9 a.m. request was a first-10 failure. Where in your own runs did each one nearly happen, and what stopped it?
-- **Your guess against Run 1.** What did you predict, and what actually cost the points?
+- **Your guess against Run 1.** What did you predict, and what actually cost the points, if any?
 - **The same correction twice.** Which lesson went into Draft 2, or the standing instructions, so no future brief has to carry it?
 - **The three scales.** Your first 10 percent ran one task. Your Draft 2 is the first 10 percent of the worker's whole life. What is the company-scale version of the line you just wrote?
 - **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How both AI vendors support the rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) explains why that difference holds on either AI vendor.
