@@ -399,7 +399,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 ## Task 8. The swap test, upward (20 minutes)
 
-**Dave asks:** "On Friday, October 16, 2026, two more questions came in. Sam Ortiz in Purchasing wants to ask the worker about his vendors' invoices himself, in the team chat. And Lakeshore Janitorial wants a page where its office can check its own invoices, such as 5102. If we let them, what do we rebuild, and what comes with us? One list for each, and one test that proves Lakeshore sees only its own invoices."
+**Dave asks:** "On Friday, October 16, 2026, two more questions came in. Sam Ortiz in Purchasing wants to ask the worker about his vendors' invoices himself, in the team chat. And Lakeshore Janitorial wants a page where its office can check its own invoices, such as 5102. If we let them, what do we rebuild, and what comes with us? One list for each, one test that proves Lakeshore sees only its own invoices, and which one we start first."
 
 **What you do, all in your lab conversation:**
 
@@ -409,7 +409,8 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
    Outcome:  The swap test from Task 7, run upward twice: once for
              Purchasing asking the worker in the team chat, once for
              Lakeshore checking its own invoices on a page Brightline
-             runs. For each, what we rebuild and what carries across.
+             runs. For each, what we rebuild and what carries across,
+             and which move starts first.
    Format:   First show me what "rebuild" and "carry across" mean, a
              line each. Then the places of this conversation's layer
              map, one at a time, all but Company systems, which stay
@@ -418,11 +419,18 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              then for Lakeshore: carry across, or rebuild, and with
              what?" in one answer. Then, for Purchasing and then for
              Lakeshore, ask me who may ask the worker for what, whose
-             login it acts under, and who approves. Then ask me for
-             the four things Lakeshore needs that Draft 3 does not
-             have yet, which I name from 4.10, and for the one
-             evaluation case I add. Last, show one table: a row for
-             each place, a column for each move.
+             login it acts under, and who approves. Then four
+             questions about Lakeshore's page, one at a time, each
+             answered in a few words: whose account the page runs
+             under at night, and what happens if Dave leaves; how
+             the worker shows Lakeshore invoice 5102 but never
+             Tri-County's 5120; where Lakeshore's question goes when
+             the worker asks the model, and what is kept; and who
+             answers to Lakeshore if the page tells it something
+             wrong. Then ask me for the one evaluation case I add,
+             and which move starts now, which waits, and why. Last,
+             show one table: a row for each place, a column for each
+             move.
    Inputs:   The layer map and Draft 3 in this conversation, and my
              answers. Rebuild: set it up again, or replace it, for
              the new users. Carry across: it comes with the worker,
@@ -431,11 +439,11 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              never add, remove or suggest one.
    ```
 
-2. Answer each question in a few words, from [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/).
+2. Answer each question in a few words. Work each one out from Friday's two asks first. [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/) tells the same Friday, so check your answers against it afterwards.
 3. When the AI shows the table, check the owned places. What Brightline owns carries across for both moves. What a move adds to it, such as rows on who may ask, goes on the rebuild list. The rented places may differ. If an owned place itself is marked rebuild, tell the AI it carries across.
 4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give Dave:** the table for both moves, who may ask the worker for what, and the one evaluation case for Lakeshore.
+**Give Dave:** the table for both moves, who may ask the worker for what, the one evaluation case for Lakeshore, and which move starts first.
 
 
 ## If something goes wrong

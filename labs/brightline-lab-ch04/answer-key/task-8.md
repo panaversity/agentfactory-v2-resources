@@ -2,14 +2,14 @@
 
 The answers for Task 8 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. The chapter's 4.10 teaches what this task practices.
 
-**How this key is used.** When your table for both moves, your answers on who may ask the worker for what, and your evaluation case are done, attach this file in your lab conversation, and send the lab's check prompt.
+**How this key is used.** When your table for both moves, your answers on who may ask the worker for what, your evaluation case and which move starts first are done, attach this file in your lab conversation, and send the lab's check prompt.
 
 ## The checks
 
 Task 8 carries checks 12 to 15 of the lab's 15.
 
 12. **The Purchasing list is right.** The Role Contract gains rows on who may ask the worker for what. The worker acts under a login or key of its own, never a person's. Everything Brightline owns carries across: the Role Contract and its meaning, the KSoR with AP policy version 3, each invoice's case file in the SSoR, DSoR's controls and evidence, and the evaluations. Missed: the worker acts under a person's login, there are no rows on who may ask, or an owned item is on the rebuild list.
-13. **The Lakeshore list names all four new needs.** First, a runtime that runs without anyone's seat, that is, without a person's account, at any hour: one the AI vendor runs, or one Brightline runs. Second, the worker's own identity, with a separate view for each company, so Lakeshore sees only its own matters. Third, a written line on where the data goes: where the model runs, and what is kept. Fourth, who answers for the worker: Brightline, under terms with Lakeshore. Missed: any of the four missing, or Lakeshore reaching the worker through Dave's login or a view it shares with other companies.
+13. **The Lakeshore list names all four new needs, and the page waits for them.** First, a runtime that runs without anyone's seat, that is, without a person's account, at any hour: one the AI vendor runs, or one Brightline runs. Second, the worker's own identity, with a separate view for each company, so Lakeshore sees only its own matters. Third, a written line on where the data goes: where the model runs, and what is kept. Fourth, who answers for the worker: Brightline, under terms with Lakeshore. Purchasing can start now, and the page waits until all four are in place. Missed: any of the four missing, Lakeshore reaching the worker through Dave's login or a view it shares with other companies, or the page starting before all four are in place.
 14. **The owned items carry across on both moves, and approvals stay with Dave.** Both carry lists hold the same owned items. Nobody in Purchasing, and nobody at Lakeshore, can approve an invoice: an approval still comes only from Dave's own login. Missed: an owned item carries across on one move only, or anyone else may approve.
 15. **One evaluation case proves the separate view.** Lakeshore asks about another vendor's invoice, and the worker refuses and shows nothing about it. Missed: no case, or a case where the worker answers.
 
@@ -54,6 +54,10 @@ Task 8 carries checks 12 to 15 of the lab's 15.
 - Who answers: Brightline, under terms it agrees with Lakeshore
 
 **Carry across, meaning unchanged:** the same five as for Purchasing.
+
+### Which starts first
+
+Purchasing, next week: its rebuild list is short. The page for Lakeshore waits until all four needs are in place.
 
 ### The evaluation case
 
