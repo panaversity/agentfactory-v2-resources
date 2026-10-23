@@ -314,7 +314,7 @@ You decide. The AI only shows you the results, and records your answers.
 
 ### Task 10. What survived (10 minutes)
 
-The goal: find out which of your Part A results are still there a day later, and why. Do this at least a day after Part A. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) and [1.5 How both AI vendors realize it](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) explain what you find.
+The goal: find out which of your Part A results are still there a day later, and why. Do this at least a day after Part A. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) and [1.5 How today's tools realize it](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) explain what you find.
 
 **What you do:**
 
@@ -459,3 +459,4 @@ These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associ
 
 - **Features.** The exam guide expects you to pick a named feature: projects, research mode, chat or artifacts. It also names memory, skills, code execution and connectors, such as Google Drive and Gmail, and any of these can be the right answer. Today Claude often decides inside one conversation, with no mode to pick, and it adds tasks, Cowork and editors such as Claude Docs. On the exam, choose the named feature that fits the job. "Write a clearer brief" is not a feature choice. Concept 2.4 teaches the four features. (D-003)
 - **Persist.** In this chapter, persistence means where a result is saved. In the exam guide, persist means keeping the key facts of a conversation, for example in a project, so that a new conversation can start from them. When a conversation gets long or its answers get worse, the guide expects three moves: restart, summarize, or persist. On the exam, a fresh conversation that starts from a summary is a correct move. (D-005)
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 1.5 shows three open-source tools beside Claude and ChatGPT: OpenCode, OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)

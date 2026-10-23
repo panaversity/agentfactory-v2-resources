@@ -334,9 +334,11 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              sources (which record and version, whether every policy
              answer cites it, what it does when the record is
              silent); Memory (what it may hold, what it never holds,
-             4.3's wipe test, that nothing it acts on lives only in
-             memory); Tools (how it reads and changes anything,
-             whether any direct write stays); Case files,
+             4.3's wipe test, which asks whether tomorrow's work
+             would still be correct if memory were wiped tonight,
+             and that nothing it acts on lives only in memory);
+             Tools (how it reads and changes anything, whether any
+             direct write stays); Case files,
              a new section (what goes into each invoice's file, and
              where it reads an invoice's status from); Authority
              (the approval line and its policy version, the
@@ -390,7 +392,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              know of the AI vendors. Every other line is mine.
    ```
 
-2. Compare the three lists with your Task 1 map. Anything Brightline owns should come with you, so it should not be on the rebuild list. If nothing owned is there, say so. If something owned is there, your Task 1 answer for it was wrong. Tell the AI which item moves where. Attach Task 1's key again, and send the check prompt with "Task 1 again" on the line above it. Then send your sentence for IT in its own message, starting "My sentence for IT:".
+2. Compare the three lists with your Task 1 map. Anything Brightline owns should come with you, so it should not be on the rebuild list. If nothing owned is there, say so, and go on to your sentence for IT. If something owned is there, your Task 1 answer for it was wrong. Tell the AI which item moves where. Attach Task 1's key again, and send the check prompt with "Task 1 again" on the line above it. Then send your sentence for IT in its own message, starting "My sentence for IT:".
 3. Answer as it asks. Use the same tolerance as in your Role Contract.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -399,7 +401,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 ## Task 8. The swap test, upward (20 minutes)
 
-**Dave asks:** "On Friday, October 16, 2026, two more questions came in. Sam Ortiz in Purchasing wants to ask the worker about his vendors' invoices himself, in the team chat. And Lakeshore Janitorial wants a page where its office can check its own invoices, such as 5102. If we let them, what do we rebuild, and what comes with us? One list for each, and one test that proves Lakeshore sees only its own invoices."
+**Dave asks:** "On Friday, October 16, 2026, two more questions came in. Sam Ortiz in Purchasing wants to ask the worker about his vendors' invoices himself, in the team chat. And Lakeshore Janitorial wants a page where its office can check its own invoices, such as 5102. If we let them, what do we rebuild, and what comes with us? One list for each, one test that proves Lakeshore sees only its own invoices, and which one we start first."
 
 **What you do, all in your lab conversation:**
 
@@ -409,7 +411,8 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
    Outcome:  The swap test from Task 7, run upward twice: once for
              Purchasing asking the worker in the team chat, once for
              Lakeshore checking its own invoices on a page Brightline
-             runs. For each, what we rebuild and what carries across.
+             runs. For each, what we rebuild and what carries across,
+             and which move starts first.
    Format:   First show me what "rebuild" and "carry across" mean, a
              line each. Then the places of this conversation's layer
              map, one at a time, all but Company systems, which stay
@@ -418,11 +421,18 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              then for Lakeshore: carry across, or rebuild, and with
              what?" in one answer. Then, for Purchasing and then for
              Lakeshore, ask me who may ask the worker for what, whose
-             login it acts under, and who approves. Then ask me for
-             the four things Lakeshore needs that Draft 3 does not
-             have yet, which I name from 4.10, and for the one
-             evaluation case I add. Last, show one table: a row for
-             each place, a column for each move.
+             login it acts under, and who approves. Then four
+             questions about Lakeshore's page, one at a time, each
+             answered in a few words: whose account the page runs
+             under at night, and what happens if Dave leaves; how
+             the worker shows Lakeshore invoice 5102 but never
+             Tri-County's 5120; where Lakeshore's question goes when
+             the worker asks the model, and what is kept; and who
+             answers to Lakeshore if the page tells it something
+             wrong. Then ask me for the one evaluation case I add,
+             and which move starts now, which waits, and why. Last,
+             show one table: a row for each place, a column for each
+             move.
    Inputs:   The layer map and Draft 3 in this conversation, and my
              answers. Rebuild: set it up again, or replace it, for
              the new users. Carry across: it comes with the worker,
@@ -431,11 +441,11 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              never add, remove or suggest one.
    ```
 
-2. Answer each question in a few words, from [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/).
+2. Answer each question in a few words. Work each one out from Friday's two asks first. [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/) tells the same Friday, so check your answers against it afterwards.
 3. When the AI shows the table, check the owned places. What Brightline owns carries across for both moves. What a move adds to it, such as rows on who may ask, goes on the rebuild list. The rented places may differ. If an owned place itself is marked rebuild, tell the AI it carries across.
 4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give Dave:** the table for both moves, who may ask the worker for what, and the one evaluation case for Lakeshore.
+**Give Dave:** the table for both moves, who may ask the worker for what, the one evaluation case for Lakeshore, and which move starts first.
 
 
 ## If something goes wrong
@@ -487,6 +497,7 @@ These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associ
 
 - **Persist.** This chapter's wipe test says memory must never be the only source for a fact or permission the worker acts on, and 4.9 says a fresh machine rebuilds its context from the records. The exam guide expects three moves when a conversation gets long or its answers get worse: restart, summarize, or persist the key facts, for example in a project. On the exam, persisting key facts in a project is a correct move. The wipe test is this book's rule for what may live only in memory, not an exam answer. (D-005)
 - **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter teaches that approved knowledge belongs in a KSoR, reached through a custom connector. On the exam, a governed record or a custom MCP connector is not the expected answer. Choose the project setup. (D-006)
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 4.8 shows three open-source tools beside Claude and ChatGPT: OpenCode, OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 
 [^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center.

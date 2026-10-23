@@ -393,7 +393,7 @@ The five review answers are the part you will use again every week. Check it you
 - **Your guess against Run 1.** What did you predict, and what actually cost the points, if any?
 - **The same correction twice.** Which lesson went into Draft 2, or the standing instructions, so no future brief has to carry it?
 - **The three scales.** Your first 10 percent ran one task. Your Draft 2 is the first 10 percent of the worker's whole life. What is the company-scale version of the line you just wrote?
-- **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How both AI vendors support the rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) explains why that difference holds on either AI vendor.
+- **The strongest limit.** For each "never", could you make it impossible, or only make a person decide? [How today's tools support the rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/) explains why that difference holds on either AI vendor.
 
 ## Ready for Chapter 4
 
@@ -404,6 +404,12 @@ You are done when:
 - the first 10 percent for your own task is written.
 
 Ask your lab conversation for the first 10 percent, Draft 2 and the limits section as files, and save them in the lab folder. Lab 4 uses Draft 2 and turns it into Draft 3. If you keep the book's project in a git repository, add the files, and tag that commit `ch03`.
+
+## Exam notes
+
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 3.7 shows two open-source tools beside Claude and ChatGPT: OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 
 [^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center, accessed 15 October 2026.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center, accessed 15 October 2026.
