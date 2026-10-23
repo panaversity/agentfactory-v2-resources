@@ -1,7 +1,4 @@
-# Role Contract: AP Worker                     Draft 1, 30 September 2026 (sample)
-
-Use this sample only if you did not write your own Draft 1 in Chapter 2.
-If you did, copy your own role/ap-worker-role-contract.md into this folder instead.
+# Role Contract: AP Worker                     Draft 1, 30 September 2026
 
 ## Who it is
 Identity:      Its own service account, ap-worker@brightline (to be created by IT). Never a person's login.

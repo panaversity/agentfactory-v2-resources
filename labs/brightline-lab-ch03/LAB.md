@@ -20,9 +20,9 @@ Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory
 - `README.md`
 - `LAB.md`: this page, as a file
 - `files/inputs.md`: the file for both runs. It holds four files in one: Midwest Packaging's statement, Brightline's register, section 7 of the AP policy, and one invoice copy.
-- `role/`: a sample Role Contract (Draft 1)
+- `role/ap-worker-role-contract.md`: the AP Worker's Role Contract, Draft 1. Dave owns it. It says what the worker may do in every task, and Task 2 starts from it.
 
-The answer keys are not in the folder. You download each one when its task is done, so you don't see the answers early. Task 2 needs your Role Contract from Chapter 2. If you don't have one, use the sample.
+The answer keys are not in the folder. You download each one when its task is done, so you don't see the answers early.
 
 ## The job
 
@@ -111,7 +111,27 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 **What you do, all in your lab conversation:**
 
-1. Attach your Role Contract from Chapter 2, or the sample, and send this. Answer as it asks:
+1. **Read the Role Contract with the AI.** Your first 10 percent works inside the contract, so learn it first. Attach `role/ap-worker-role-contract.md`, and send this:
+
+   ```text
+   Outcome:  I understand the attached Role Contract before I brief
+             the worker: who owns it, what the worker does, what it
+             may do alone, when it must stop and ask, and what it
+             must never do.
+   Format:   Those five, a short line each, in plain words, with the
+             contract's own words in quotes. Then ask me three
+             questions about it, one at a time, and wait for my
+             answer: what it may do to the invoice register, when it
+             must stop and ask Dave, and what it must never do. After
+             each answer, say whether the contract agrees, and quote
+             its line.
+   Inputs:   The attached Role Contract, Draft 1. Nothing else.
+   Autonomy: Explain and ask only. Do not change the contract, and do
+             not start the first 10 percent yet.
+   ```
+
+2. Answer each question in a few words.
+3. **Write the first 10 percent.** Send this, and answer as it asks:
 
    ```text
    Outcome:  The first 10 percent for this reconciliation, one page,
@@ -147,8 +167,8 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              suggest one. Explain a part when I ask.
    ```
 
-2. Answer each question in a few words.
-3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. Answer each question in a few words.
+5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Dave:** the review contract's five answers, so he knows what evidence Monday's signature will rest on.
 
@@ -260,10 +280,9 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
    ```text
    Outcome:  Draft 2 of the Role Contract attached in Task 2, dated
-             October 1, 2026, with every Draft 1 line written out,
-             and the sample's note at the top left out if it is the
-             sample. Each edit is marked CHANGED or NEW; an untouched
-             line carries no mark.
+             October 1, 2026, with every Draft 1 line written out.
+             Each edit is marked CHANGED or NEW; an untouched line
+             carries no mark.
    Format:   First list the lessons from this conversation's runs,
              scores and review, one line each, this reconciliation as
              a test case with its passing bar among them. Then ask me,
@@ -360,7 +379,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 Your vertical is the line of work you know best. Pick one task in it that you would hand over to a worker.
 
-1. In a new conversation, send Task 2's prompt, with your own task's files named in its Inputs.
+1. In a new conversation, send Task 2's first 10 percent prompt, with your own task's files named in its Inputs.
 2. Answer its questions. Give real dates, a stop rule, and a list of things the worker must never do. Keep the page it writes.
 3. If you can, run it on your own files in a new conversation with memory off. Review the flags first.
 
