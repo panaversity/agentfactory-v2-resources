@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: map the AP Worker onto the picture](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-Brightline's AP Worker is made of 17 parts. In this lab you put each part in one of the chapter's six layers. You test which source the worker trusts when two of them disagree. Then you fix its Role Contract, and you say what would change if Brightline moved to the other AI vendor, or if others started to use the worker. You make every choice, and the AI writes it down. After each task, you check your work against an answer key. You need Claude or ChatGPT, and a free account is enough.
+Brightline's AP Worker is made of 17 parts. In this lab you put each part in one of the chapter's six layers. You test which source the worker trusts when two of them disagree. Then you fix its Role Contract, and you say what would change if Brightline moved to the other AI vendor, or if others started to use the worker. You make every choice, and the AI writes it down. After each task, you check your work against an answer key. The lab takes about three and a half hours. You need Claude or ChatGPT, and a free account is enough.
 
 **What you will learn:**
 
@@ -417,12 +417,12 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
              where Draft 3 puts them, and ask me "For Purchasing,
              then for Lakeshore: carry across, or rebuild, and with
              what?" in one answer. Then, for Purchasing and then for
-             Lakeshore, ask me who may ask the worker for what, and
-             who approves. Then ask me for the four things
-             Lakeshore needs that Draft 3 does not have yet, which
-             I name from 4.10, and for the one evaluation case I
-             add. Last, show one table: a row for each place, a
-             column for each move.
+             Lakeshore, ask me who may ask the worker for what, whose
+             login it acts under, and who approves. Then ask me for
+             the four things Lakeshore needs that Draft 3 does not
+             have yet, which I name from 4.10, and for the one
+             evaluation case I add. Last, show one table: a row for
+             each place, a column for each move.
    Inputs:   The layer map and Draft 3 in this conversation, and my
              answers. Rebuild: set it up again, or replace it, for
              the new users. Carry across: it comes with the worker,
