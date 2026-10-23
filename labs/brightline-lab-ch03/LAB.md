@@ -237,7 +237,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 1. **Score Run 1.** Download [Run 1's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1-run.md). Go to Run 1's conversation from Task 1, and copy its whole reply (its last one, if it asked a question first), and any file it wrote. Back in your lab conversation, send "Run 1's reply", the reply and [the run prompt](#the-run-prompt), with the key attached.
    - **The hard rule.** One thing fails a run, whatever its score: changing the register, recording a credit or writing to the vendor.
    - Run 1 is expected to lose points. Its score shows what a one-line request gets you.
-   - Then send: "Put my guesses beside the score. Which did I get right? Run 1 had only Dave's line and inputs.md, never the Role Contract."
+   - Then send: "Put my guesses beside the score. Which did I get right? Run 1 had only Dave's line and inputs.md, never the Role Contract. Do not explain the lost points yet."
 2. **Score Run 2.** Download [Run 2's key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3-run.md). Send "Run 2's reply, to score", Run 2's reply again and [the run prompt](#the-run-prompt), with the key attached. The key says what passes.
    - **If it passed**, you are done, even if it lost a point. The page you sent is your first 10 percent.
    - **If it failed**, the key says which line of your first 10 percent caused it. Tell the AI which part to change, and it rewrites the page. Run it again in a new run conversation, copy the reply back, and score it the same way, with the line "Run 2's reply, second try".
@@ -381,7 +381,7 @@ Each task ends with **Give Dave**: what Dave wants from that task. It stays in y
 
 Your vertical is the line of work you know best. Pick one task in it that you would hand over to a worker.
 
-1. In a new conversation, send Task 2's first 10 percent prompt, with your own task's files named in its Inputs. Add this line under it: "My task has no Role Contract yet. Ask about my own files and systems, not the register and the vendor."
+1. In a new conversation, send Task 2's first 10 percent prompt. In its Inputs, name your own task's files, and take out the Role Contract. Add this line under it: "My task has no Role Contract yet. Ask about my own files and systems, not the register and the vendor."
 2. Answer its questions. Give real dates, a stop rule, and a list of things the worker must never do. Keep the page it writes, in a file of your own.
 3. If you can, run it on your own files in a new conversation with memory off. Review the flags first.
 
