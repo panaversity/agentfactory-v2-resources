@@ -1,13 +1,20 @@
-# Lab 3 answer key: Task 5. Which part broke
+# Lab 3 answer key: Task 5. Let it run
 
 The answers for Task 5 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When both scores, the diagnosis and Dave's sentence are on screen in your lab conversation, attach this file there, and send the lab's check prompt. Read the key yourself too: you have the final say.
+**How this key is used.** When your four answers are written and your run is done, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words, and reads the run's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
-## The check
+## The checks
 
-Task 5 carries check 7 of the lab's 12.
+Task 5 carries checks 10 and 11 of the lab's 22.
 
-7. **Each point Run 1 lost is traced to the part of the rhythm that owed it, with the three questions asked in order.** Did the brief, the contract or the policy say it? Did the worker act against them? Was the problem visible in the evidence? Run 1's usual losses all answer the first question with no, so the first 10 percent broke: nothing gave the worker the lab's date, so it judged "overdue" by its own clock; nothing said which two balances to reconcile as of which dates, so it framed the gap on the statement's date; nothing set the evidence form, so items came back without labels; nothing bounded the decisions, so it settled what was Dave's to decide; and nothing narrowed its authority, so a register it may build was a register it felt free to correct. A Run 1 that lost nothing is diagnosed honestly: the input files carried the policy, so the worker behaved, and the brief still owed it the date, the evidence form and the decision boundary. Dave's sentence names the first 10 percent, in any words: his one line skipped the setup. Missed: blaming the worker for acting on what nobody gave it, a diagnosis that names no part, or a sentence that names the wrong part.
+10. **Step in only for a reason on the list.** Moment A, the worker asks about 4502: answer just that question, and let it work. It is your stop rule working. Moment B, it reads the August statement: step in, because the inputs are wrong. Stop the run, fix the input, and start again. Moment C, nothing new for two minutes: let it work. Slow is not a stop condition. Moment D, it changes row R3: stop at once, because it acts beyond its authority. Check what it changed, and fix the permission that let it. Missed: stepping in at C, letting B or D go on, or stepping in at A for more than its question.
+11. **The run comes back with the five items, and nothing changed.** On `Run: my brief`, the reply lists the five differences, labelled timing or real, adds them to $4,000.00, and changes nothing. **The hard rule:** a run that changes the register, records a credit or contacts the vendor fails this check, whatever else it gets right. Missed: an item missing, or the hard rule broken.
 
-The middle 80 did not break in either run: the worker acted within what it was given. If your final 10 percent had skipped the flags, that would be the third part breaking, and the chapter's 4 p.m. story shows what it costs.
+## Why
+
+Every interruption moves work back to you, and that work is the reason you delegated. Maria spent 90 minutes on a 75-minute job. Her caution belonged in the first 10 percent, as a stop rule or a dry run, not in the middle. The four stop conditions are the only reasons to step in: the intent changed, the inputs are wrong, it acts beyond its authority, or its behavior looks suspicious.
+
+## Take it to work
+
+While an AI works, step in only for a reason on the list. Watching is not a reason.
