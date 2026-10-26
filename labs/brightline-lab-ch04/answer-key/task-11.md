@@ -14,3 +14,7 @@ Task 11 carries checks 21 and 22 of the lab's 23.
 ## Why
 
 A team changes who can ask the worker for things, not who it works for. Sam's questions need only a row and the worker's own login, so they start first. Another company needs more: the worker must keep running even if Dave leaves, each company sees only its own matters, and someone answers to them. Until those are in place, the page waits. What Brightline owns carries across both moves unchanged.
+
+## Take it to work
+
+When colleagues start to use an AI, add who may ask for what. Never add power.

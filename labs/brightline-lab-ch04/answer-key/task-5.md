@@ -13,3 +13,7 @@ Task 5 carries check 9 of the lab's 23.
 ## Why
 
 When the record is silent, the worker abstains. It says so, instead of filling the gap with whatever the model knows or a remark it once heard. Each time it abstains, Dave learns what the policy is missing, and decides whether to add it.
+
+## Take it to work
+
+An AI that says "the policy doesn't say, ask Dave" is better than one that guesses well.

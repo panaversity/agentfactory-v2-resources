@@ -13,3 +13,7 @@ Task 2 carries check 4 of the lab's 23.
 ## Why
 
 Memory is the worker's continuity: preferences, experience and where to look. It has no owner, no version and no approval, so it never holds a fact or a permission the worker acts on. "Lakeshore is Net 30" was true in July, and it went stale in August with nothing to warn anyone. A pointer says where to look, and the record says what is true.
+
+## Take it to work
+
+Open your AI's memory, keep the preferences, and delete the facts.

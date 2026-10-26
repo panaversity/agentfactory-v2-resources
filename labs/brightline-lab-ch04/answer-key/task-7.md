@@ -14,3 +14,7 @@ Task 7 carries checks 13 and 14 of the lab's 23.
 ## Why
 
 That week the connector let the worker change a status with Maria's login because an email said so, and nothing checked who had really approved. Through a governed door, "approved" is not a status the worker can type: it is an event the system records when Dave approves from his own login. An action taken by clicking a screen leaves no evidence of its own, so payments, statuses and approvals never go that way.
+
+## Take it to work
+
+Give an AI its own login, with read access and drafts. Changes go through a person's own login.

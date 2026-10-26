@@ -17,3 +17,7 @@ Task 6 carries checks 10 to 12 of the lab's 23.
 The register said "approved by Dave" because the worker typed it there, after reading an email. A status anyone can type is a claim. A case file is the story of the matter, step by step, each step added by whoever did it. The next person, or the next run, starts from its last line, not from a guess.
 
 If your test said the case file was out of reach, check that a tool reaches the place where you keep it.
+
+## Take it to work
+
+Keep one running file for each piece of work. The AI writes "waiting for", and only the person approves.

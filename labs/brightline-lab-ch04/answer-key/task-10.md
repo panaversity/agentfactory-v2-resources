@@ -14,3 +14,7 @@ Task 10 carries checks 19 and 20 of the lab's 23.
 ## Why
 
 The products above the line differ, and Brightline's owned layers do not. For Brightline, two differences matter. One is how the worker reaches the governed record, because a plan with no connector brings back the uploaded copy. The other is where the trigger is set. The two trigger designs are equal once the business says how much delay it accepts, so the delay belongs in the contract and the feature belongs in Runtime needs. These product facts were verified on October 15, 2026, and products change.
+
+## Take it to work
+
+Before you buy a plan, check that it lets your AI read your real records, not an uploaded copy.

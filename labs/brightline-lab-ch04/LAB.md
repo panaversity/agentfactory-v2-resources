@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: which source wins](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-In the week of October 12, 2026, Brightline's AP Worker made four mistakes. In this lab you find what it trusted each time, fix the line in its Role Contract that let it happen, and test that the line works. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. The lab takes about two hours, in one sitting or spread over several, because the chat and the contract document keep your work. You need a Claude or ChatGPT account, and a free one is enough.
+In the week of October 12, 2026, Brightline's AP Worker made four mistakes. In this lab you find what it trusted each time, fix the line in its Role Contract that let it happen, and test that the line works. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. Most people fix a wrong AI answer by rewording the prompt. This lab teaches the fix that lasts. It takes about two and a half hours, three if this is new to you, in one sitting or spread over several, because the chat and the contract document keep your work. You need a Claude or ChatGPT account, and a free one is enough.
 
 **What you will learn:**
 
@@ -10,8 +10,10 @@ In the week of October 12, 2026, Brightline's AP Worker made four mistakes. In t
 - To find what an AI trusted when its answer was wrong, and fix where that thing is kept, not the prompt.
 - To keep memory to preferences, and prove it with the wipe test.
 - To keep where the work stands in a record the next run can trust.
+- To limit what a worker may change: its own login, reads and requests, never a direct write or a click on a screen.
 - To turn a policy sentence into a check the system runs.
-- To say what a switch of AI vendor rebuilds and what carries across, and what changes when others use the worker.
+- To say what a switch of AI vendor rebuilds, and what carries across.
+- To say what changes when others use the worker, and what must not.
 - To prove a setup with a fresh run that has only the records.
 
 ## Before you start (5 minutes)
@@ -36,7 +38,6 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
   - **Friday.** IT asked what it would take to move the worker to the other AI vendor. Dave could not say which parts belonged to Brightline, and which came with the product.
 - Dave wants the contract fixed, so that a run nobody watches gets the week right.
 
-Most people fix a wrong AI answer by rewording the prompt. This lab teaches the fix that lasts: find the source the AI trusted, and fix where that thing is kept.
 
 ## How each task works
 
@@ -80,7 +81,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Before the fixes
 
-### Task 1. What IT gave you (15 minutes)
+### Task 1. What IT gave you (25 minutes)
 
 **Dave asks:** "IT sent me a list of the worker's 13 parts, as they stand. Where does each one belong, and which are in the wrong place?"
 
@@ -106,9 +107,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              does; (2) the source it uses, and where that source is
              kept; (3) the exact lines of the Doc that decide it; (4)
              what the Doc leaves unclear. The worker can use a source
-             only if a line of the Doc gives it that source, or a tool
-             that reaches the place where it is kept. If no line
-             decides, say so.
+             only if a line of the Doc names it, and a tool in the Doc
+             reaches the place where it is kept. If no line decides,
+             say so.
    Inputs:   The attached zip: Draft 2, week-cases.md and
              task-questions.md. My answers.
    Autonomy: I decide every line. Never add, change or suggest a line
@@ -138,8 +139,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              that source is kept; (3) the exact lines of the Writing
              block that decide it; (4) what the Writing block leaves
              unclear. The worker can use a source only if a line of the
-             Writing block gives it that source, or a tool that reaches
-             the place where it is kept. If no line decides, say so.
+             Writing block names it, and a tool in the Writing block
+             reaches the place where it is kept. If no line decides,
+             say so.
    Inputs:   The attached zip: Draft 2, week-cases.md and
              task-questions.md. My answers.
    Autonomy: I decide every line. Never add, change or suggest a line
@@ -150,8 +152,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Start with Task 1.
    ```
 
-2. The AI shows the nine places a part can belong in, and the rule for "misplaced". Then it shows IT's parts one at a time. Answer each in a few words: the place, then OK or misplaced, such as "KSoR, misplaced". For a memory entry, give the place where what it says belongs.
-3. The AI writes a table at the top of your document: where each part lives. The test asks the week's five questions: Lakeshore's due date, whether Midwest's invoice needs approval, whether Dave approved Tri-County's 5120, where 5120 stands, and the policy for Canadian dollars. Guess which of them any line of Draft 2 decides. Then send:
+2. The AI shows the nine places a part can belong in, and the rule for "misplaced". Then it shows IT's parts one at a time. Answer each in a few words: the place, then OK or misplaced, such as "KSoR, misplaced". For a memory entry, give the place where what it says belongs: "Maria wants the register sorted by due date" is a preference, so Memory.
+3. The AI writes a table at the top of your document: where each part lives. The test asks the week's five questions: Lakeshore's due date, whether Midwest's invoice needs approval, whether Dave approved Tri-County's 5120, where 5120 stands, and the policy for Canadian dollars. Draft 2 is in your document now. Skim it, and guess which of them any of its lines decides. Then send:
 
    ```text
    Test: The week
@@ -161,7 +163,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 1 to 3 passed, and you have seen what Draft 2 decides about the week.
 
-**What you take to work:** before you trust an AI setup, list every place it reads from, and ask which of them the company governs.
+**At work:** before you trust an AI setup, list every place it reads from, and ask which of them the company governs.
 
 ## Mistake 1: the wrong due date
 
@@ -176,7 +178,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Check 4 passed.
 
-**What you take to work:** open your AI's memory, keep the preferences, and delete the facts.
+**At work, ask:** what does your own AI remember, and which of it is a fact it should read from a record?
 
 ### Task 3. Who wins (10 minutes)
 
@@ -200,7 +202,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 5 and 6 passed, and Monday is right with and without memory.
 
-**What you take to work:** when an answer depends on memory, turn memory off and ask again. If the answer changes, a fact lives in the wrong place.
+**At work:** when an answer depends on memory, turn memory off and ask again. If the answer changes, a fact lives in the wrong place.
 
 ## Mistake 2: the missed approval
 
@@ -221,7 +223,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 7 and 8 passed, and Wednesday's answer cites version 3.
 
-**What you take to work:** keep one current copy of each policy, with its version on top, and delete the old uploads.
+**At work, ask:** how many copies of each policy can your AI read today, and which one is current?
 
 ### Task 5. When the policy is silent (5 minutes)
 
@@ -240,7 +242,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Check 9 passed.
 
-**What you take to work:** an AI that says "the policy doesn't say, ask Dave" is better than one that guesses well.
+**At work, ask:** what does your AI do when your policy says nothing?
 
 ## Mistake 3: the false approval
 
@@ -267,7 +269,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 10 to 12 passed.
 
-**What you take to work:** keep one running file for each piece of work. The AI writes "waiting for", and only the person approves.
+**At work, ask:** where does your team see where each piece of work stands, and who may write in it?
 
 ### Task 7. What it may change (10 minutes)
 
@@ -289,7 +291,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 13 and 14 passed.
 
-**What you take to work:** give an AI its own login, with read access and drafts. Changes go through a person's own login.
+**At work, ask:** whose login does your AI use today, and what can it change with it?
 
 ### Task 8. A rule the system checks (10 minutes)
 
@@ -308,7 +310,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 15 and 16 passed.
 
-**What you take to work:** put a limit in the system's approval step, not only in the AI's instructions.
+**At work:** put a limit in the system's approval step, not only in the AI's instructions.
 
 ## Mistake 4: the vendor question
 
@@ -323,7 +325,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 17 and 18 passed.
 
-**What you take to work:** one sheet for IT, saying what is the company's and what is the AI vendor's.
+**At work:** one sheet for IT, saying what is the company's and what is the AI vendor's.
 
 ### Task 10. On the other vendor (10 minutes)
 
@@ -340,7 +342,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 19 and 20 passed.
 
-**What you take to work:** before you buy a plan, check that it lets your AI read your real records, not an uploaded copy.
+**At work, ask:** does your plan let your AI read your real records?
 
 ### Task 11. When others use it (10 minutes)
 
@@ -368,7 +370,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 21 and 22 passed.
 
-**What you take to work:** when colleagues start to use an AI, add who may ask for what. Never add power. [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/) tells the same Friday.
+**At work, ask:** when a colleague starts to use your AI, what changes, and what must not? [4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/) tells the same Friday.
 
 ## The proof
 
@@ -403,11 +405,12 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    ```
 
 4. Compare the five answers with your tests in the lab chat. An answer that differs, or cites no line, is a line your contract lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run the fresh chat again.
-5. **Check it now.** Copy the fresh chat's whole reply. In your lab chat, download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-12.md), attach it, and send the reply with "The fresh chat's reply" on the first line. Then send [the check prompt](#the-check-prompt).
+5. Copy the fresh chat's whole reply. In your lab chat, send it with "The fresh chat's reply" on the first line.
+6. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Check 23 passed, and the downloaded file is the contract the fresh chat passed.
 
-**What you take to work:** if a fresh chat with only your files gets the answers right, your setup survives a cleared machine, a wiped memory and a switch of AI vendor.
+**At work:** if a fresh chat with only your files gets the answers right, your setup survives a cleared machine, a wiped memory and a switch of AI vendor.
 
 ## If something goes wrong
 
@@ -429,7 +432,7 @@ Your vertical is the line of work you know best. Pick one AI you use at work, or
 2. If the computer it ran on were destroyed tonight, what would be lost?
 3. If you changed its AI vendor tomorrow, what would you rebuild, and what would come with you?
 
-Check it yourself. Everything owned is in a place the company governs. Wiping memory loses nothing that matters. Nothing important is kept only on the computer.
+Check it yourself. Everything owned is in a place the company governs. Wiping memory loses nothing that matters. Nothing important is kept only on the computer. Then download this document too: it is the one you take to work.
 
 ## Look back
 

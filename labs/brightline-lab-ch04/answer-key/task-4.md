@@ -16,3 +16,7 @@ Task 4 carries checks 7 and 8 of the lab's 23.
 Version 3 existed that week. It was badly kept: in one person's email, where the worker could not find it, while the March copy sat in the project. A copy is fine while it is refreshed from the home and cites it. A copy that becomes the only thing the worker can read is how Wednesday happened.
 
 A citation lets Maria check the answer in ten seconds. "Yes, over $5,000, policy version 3, section 4.1" is checkable. A bare "yes" is not, even when it is right.
+
+## Take it to work
+
+Keep one current copy of each policy, with its version on top, and delete the old uploads.
