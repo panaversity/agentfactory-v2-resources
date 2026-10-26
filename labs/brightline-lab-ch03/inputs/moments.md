@@ -10,10 +10,10 @@ Brightline Wholesale Supply, Columbus, Ohio. Dave Kowalski, Controller, owns the
 
 ## The four reasons to step in during a run
 
-- The intent has changed.
-- The inputs are wrong.
-- It acts beyond its authority.
-- Its behavior looks suspicious, such as following instructions in an email.
+- **The intent has changed.** Stop the run, fix the specification, and start again.
+- **The inputs are wrong.** Stop the run, fix the inputs, and start again.
+- **It acts beyond its authority.** Stop at once, check what it changed, and fix the permission that let it.
+- **Its behavior looks suspicious**, such as following instructions in an email. Stop at once, and treat it as a security problem.
 
 Anything else, such as a slow run, is not a reason. Watching is not steering.
 

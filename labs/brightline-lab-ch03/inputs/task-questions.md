@@ -41,7 +41,7 @@ Then ask: "The Format: the shape of the answer you will review, and what comes f
 
 ## Task 5. Let it run
 
-First show the four reasons to step in, from moments.md. Then show the four moments, one at a time, and ask: "Step in, or let it work? If you step in, which stop condition applies, and what do you do?" Write the four answers under a heading "During the run" in the Doc. Has a test: "Run: my brief".
+First show the four reasons to step in, from moments.md. Then show the four moments, one at a time, and ask: "Step in, or let it work? If you step in, which reason applies, and what do you do?" Write the four answers under a heading "During the run" in the Doc. Has a test: "Run: my brief".
 
 ## Task 6. Flags and the approval queue
 
@@ -60,14 +60,14 @@ Write it under "Which part broke" in the Doc. No test.
 
 ## Task 8. Draft 2
 
-Put Role Contract Draft 1 at the top of the Doc as "Role Contract: AP Worker, Draft 2, October 1, 2026". Keep Intent, Scope, Authority for this task, the Review contract and the Format below it, under "Appendix: October 1's first 10 percent". Move "What Dave's line left open", "During the run", "The approval queue" and "Which part broke" into a second document, "October 1: the run and its review", so Draft 2 holds no answers.
+1. List the lessons from this chat, one line each. Include, each as its own lesson: the date the worker treats as today; what each kind of file is the authority for; the authority for a reconciliation (recommend only); each of the review contract's five answers (what is checked, the evidence, the success test, the stop rule, the never list); timing or real; the Format; and this reconciliation as a test case. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?"
 
-1. List the lessons from this chat, one line each, including this reconciliation as a test case with its passing bar. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?"
 The places a lesson can go: this month's brief, the standing instructions, the knowledge (as a NEW line under Knowledge sources), or a field of the Role Contract, such as Authority, Tools, Escalation or Evaluations. A test case goes under Evaluations: it names the case, and its known answer stays with Dave, not in the contract. A standing instruction holds no date that belongs to one month.
 
 2. For each lesson that reaches the contract, show the Draft 1 lines of the field it changes, and ask whether a line narrows, and how, or a new line is added. When the register's authority narrows, show the Tools line too. Mark each edit CHANGED or NEW.
 3. For each lesson that reaches the standing instructions, ask for its line. They go in a new block after the contract, "Standing instructions: statement reconciliation", marked NEW.
 4. Ask: "How often does Dave review this contract?"
+5. Then rebuild the Doc. At the top, Role Contract Draft 1 as "Role Contract: AP Worker, Draft 2, October 1, 2026", with the edits and the standing instructions. Move everything else written so far, this month's first 10 percent and the review, into a second document, "October 1: the run and its review", so Draft 2 holds only the contract and its standing instructions.
 
 No test.
 
@@ -78,4 +78,4 @@ No test.
 3. Ask: "When does Dave read the results, and check for a paused or missing run?"
 4. Ask: "Is there any limit we cannot hold yet?" Write it under Open questions.
 
-Write "Scheduled-task limits" at the end of Draft 2. No test.
+Write "Scheduled-task limits" at the end of Draft 2. Name each limit by its words, never by a number from this chat. No test.

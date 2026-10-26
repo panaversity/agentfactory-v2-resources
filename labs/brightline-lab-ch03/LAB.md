@@ -260,7 +260,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 A **timing** item is on one list but not yet on the other, only because of the dates. It needs no action. A **real** item needs a decision, and becomes a recommendation for the person the policy names.
 
-1. Send "Task 6". The AI shows the run's flags first, then each item with the evidence it cites. Answer for each item:
+1. Send "Task 6". The AI shows the run's flags first, and asks whether each needs a decision now. Then it shows each item with the evidence it cites. Answer for each item:
    - timing or real
    - if real, who decides it, and under which policy section
 2. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -293,12 +293,12 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **What you do:**
 
-1. Send "Task 8". The AI puts the Role Contract at the top of your document, with your first 10 percent below it, and moves your review into a second document, "October 1: the run and its review", so Draft 2 holds no answers. Then it lists the lessons. For each, say where it lives from now on, and why:
+1. Send "Task 8". The AI lists the lessons from this chat. For each, say where it lives from now on, and why:
    - this month's brief only
    - the standing instructions for every reconciliation
    - the knowledge
    - the Role Contract
-2. Answer the follow-up questions, and say how often Dave reviews the contract.
+2. Answer the follow-up questions, and say how often Dave reviews the contract. At the end, the AI rebuilds your document as Draft 2: the Role Contract with your edits and its standing instructions. It moves your first 10 percent and your review into a second document, "October 1: the run and its review", so Draft 2 holds no answers.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 18 and 19 passed.
@@ -346,7 +346,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
    A fresh run loads the contract and its standing instructions, and the request is one line, as it would be for a standing worker.
 4. Compare the reply with your Task 5 run. If something is wrong or missing, that is a line your Draft 2 lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run the fresh chat again.
-5. Copy the fresh chat's whole reply. In your lab chat, send it with "The fresh chat's reply, to check" on the first line.
+5. Copy the fresh chat's whole reply. In your lab chat, send it with "The fresh chat's reply. Wait for my check prompt." on the first line.
 6. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Check 22 passed, and the downloaded file is the Draft 2 the fresh chat passed.
