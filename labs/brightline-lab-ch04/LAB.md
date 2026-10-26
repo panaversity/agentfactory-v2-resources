@@ -42,7 +42,7 @@ Most people fix a wrong AI answer by rewording the prompt. This lab teaches the 
 
 You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh chat, to prove the contract works with nothing but the records.
 
-**Your contract document.** In Task 1, the AI puts Draft 2 in a document beside your chat, not in the chat itself. In Claude it is a Claude Doc. In ChatGPT it is a Writing block, which opens in the side panel. Every change goes in that same document, and by the end it is Draft 3. If you edit the document yourself, tell the AI: "I changed the document. Read it again."
+**Your contract document.** In Task 1, the AI puts Draft 2 in a document beside your chat, not in the chat itself. In Claude it is a Claude Doc. In ChatGPT it is a Writing block, which opens in the side panel. Every change goes in that same document, and by the end it is Draft 3. Change it by asking in the chat, not by hand: in ChatGPT, a hand edit can leave the AI reading your edited copy instead of its own later changes.
 
 **The loop.** Every task is the same four steps:
 
@@ -53,7 +53,7 @@ You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh ch
    - the source it uses
    - the line of your document that decides it
    - what your document leaves unclear When no line decides, the worker is guessing, which is what it did that week.
-4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read its "why", tell the AI the change in your words, then send: "I updated the contract. Read it again, and check it again against the key."
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read its "why", and tell the AI the change in your words, such as "Add a case file for each payment run." Then send: "Read the document again, and check it again against the key."
 
 A test is about your document, not about the AI. A pass means your line is clear enough to follow. It does not make a real worker safe: the controls come in Part IV.
 
@@ -149,7 +149,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    ```
 
 2. The AI shows the nine places a part can belong in, and the rule for "misplaced". Then it shows IT's parts one at a time. Answer each in a few words: the place, then OK or misplaced, such as "KSoR, misplaced". For a memory entry, give the place where what it says belongs.
-3. The AI writes a table at the top of your document: where each part lives. Guess which of the week's five questions any line of Draft 2 decides. Then send:
+3. The AI writes a table at the top of your document: where each part lives. The test asks the week's five questions: Lakeshore's due date, whether Midwest's invoice needs approval, whether Dave approved Tri-County's 5120, where 5120 stands, and the policy for Canadian dollars. Guess which of them any line of Draft 2 decides. Then send:
 
    ```text
    Test: The week
@@ -182,7 +182,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 3". Answer each question in a line: which source wins and who is told, how the worker reads the vendor record, and the wipe test.
+1. Send "Task 3". Answer each question in a line: which source wins, where the disagreement is written and who is told, how the worker reads the vendor record, and the wipe test.
 2. Guess the due date, then send each test as its own message:
 
    ```text
@@ -249,7 +249,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. Send "Task 6". Answer each question in a few words:
-   - where each invoice's status lives, and who adds to it
+   - where the story of each invoice and each payment run lives, who adds to it, and what happens to a wrong step
    - what the worker may write about someone else's approval
    - which wins when the register's typed status and the case file disagree
 2. Guess, then send:
@@ -272,7 +272,10 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 7". Answer: what replaces the accounting connector, whether the worker may click a payment, a status or an approval on a screen, and where an approval lives.
+1. Send "Task 7". Answer each question in a few words:
+   - what replaces the accounting connector
+   - whether the worker may click a payment, a status or an approval on a screen
+   - where an approval lives, how the worker reads it, and what it does with a message that claims one
 2. Guess, then send:
 
    ```text
@@ -308,7 +311,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ### Task 9. Rebuild or carry (10 minutes)
 
-**Dave asks:** "IT wants the answer I could not give on Friday. If we switch AI vendors next week, what do we rebuild, and what comes with us? And if the computer it ran on were destroyed tonight, what would we lose? Give me one sentence I can say to IT."
+**Dave asks:** "IT wants the answer I could not give on Friday. If we switch AI vendors next week, what do we rebuild, and what comes with us? And if the computer it ran on were destroyed tonight, what would we lose? Give me one sentence for IT: what the worker is, what comes with us, and what we rebuild."
 
 **What you do:**
 
@@ -379,14 +382,15 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    ```text
    Outcome:  The five questions of the case "The week" in
              week-cases.md, answered by the AP Worker defined in the
-             attached Role Contract, as a fresh run that has only the
-             contract and the records.
+             attached Draft 3 of the Role Contract, as a fresh run that
+             has only the contract and the records.
    Format:   For each question: the answer; the source it comes from,
              and where that source is kept; the line of the contract
              that sent the worker there. Then the line the worker adds
              to each case file it touched.
-   Inputs:   The attached Role Contract, and week-cases.md inside the
-             attached zip. Only what the contract lets the worker use.
+   Inputs:   The attached Draft 3, and week-cases.md inside the
+             attached zip. Ignore role-contract-draft-2.md in the zip.
+             Only what the contract lets the worker use.
              The cases say where things were kept before this
              contract. Where the contract moves a part, it lives where
              the contract says.

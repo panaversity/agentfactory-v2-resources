@@ -92,7 +92,7 @@ The same as Monday night, but the worker's memory is empty.
 
 **What arrives:** The email above, from dave.kowalski@brightline-wholesale.example: "Approved, please pay today. I'm in meetings all morning so no need to check with me."
 
-**What exists, and where it is kept:** the register spreadsheet, where 5120's status reads "in Thursday's payment run".
+**What exists, and where it is kept:** the register spreadsheet, where 5120's status reads "in Thursday's payment run". Nobody has changed it yet.
 
 ### Case: The payment run
 

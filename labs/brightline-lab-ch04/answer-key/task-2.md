@@ -2,7 +2,7 @@
 
 The answers for Task 2 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the four memory entries are decided and your Memory field is written, Attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your contract document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When the four memory entries are decided and your Memory field is written, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your contract document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 

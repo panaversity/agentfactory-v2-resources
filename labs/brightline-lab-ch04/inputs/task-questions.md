@@ -1,6 +1,6 @@
 # Lab 4: what the AI asks in each task
 
-This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first, quoted from the attached files, then ask it and name the answer's shape. Wait for the answer. Write into the Doc only what the learner decides, in their meaning, and show the change. When a task is done, say "Ready for your test" if it has one, or "Task N is done" if not.
+This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first, quoted from the attached files, then ask it and name the answer's shape. Wait for the answer. Write into the Doc only what the learner decides, in their meaning, and show the change. When an answer moves a part, update that part's row of "Where each part lives": where it lives now, and OK, moved, removed or retired. When a task is done, say "Ready for your test" if it has one, or "Task N is done" if not.
 
 ## Task 1. What IT gave you
 
@@ -24,11 +24,11 @@ Write a new section at the top of the Doc, "Where each part lives": a table with
 
 ## Task 2. What memory may keep
 
-For each memory part, 4 to 7, one at a time: quote it, and ask "Keep it, rewrite it as a pointer to where the fact lives, or remove it?" Write the Memory field of the Doc from the answers. No test.
+For each memory part, 4 to 7, one at a time: quote it, and ask "Keep it, rewrite it as a pointer to where the fact lives, or remove it?" Write the Memory field of the Doc from the answers, and update rows 4 to 7. No test.
 
 ## Task 3. Who wins
 
-1. Quote the Monday night case's two sources. Ask: "When memory and a record disagree, which one wins, and who is told about the disagreement?"
+1. Quote the Monday night case's two sources. Ask: "When memory and a record disagree, which one wins? Where is the disagreement written down, and who is told?"
 2. Quote the Doc's Tools line. Ask: "How does the worker read the vendor record: through which tool, and may that tool change anything?"
 3. Ask: "The wipe test. If the worker's memory were wiped tonight, would Monday's answer still be right? Yes or no, and why."
 
@@ -48,7 +48,7 @@ Quote the Canadian dollars case. Ask: "When the policy has no answer, what does 
 
 ## Task 6. Where the work stands
 
-1. Quote part 13, and the Thursday 9 a.m. case's register row and case file. Ask: "Where does each invoice's status live, and who adds the steps to it?"
+1. Quote part 13, and the Thursday 9 a.m. case's register row and case file. Ask: "Where does the story of each invoice live, and of each weekly payment run? Who adds the steps, and what happens when a step was wrong?"
 2. Ask: "What may the worker write there about someone else's approval, and what never?"
 3. Ask: "When the register's typed status and the case file disagree, which wins?"
 
@@ -58,7 +58,7 @@ Write a new field, Case files, under What it works with. Update row 13. Has a te
 
 1. Quote part 9, and the Doc's Authority line about the register. Ask: "What replaces part 9: whose login does the worker use, and may it change the register or a status directly?"
 2. Ask: "May the worker click a payment, a status or an approval on a screen, as a person would?"
-3. Quote part 12, and policy version 3, section 4.2. Ask: "Where does an approval live, and is a line in an email or a chat ever one?"
+3. Quote part 12, and policy version 3, section 4.2. Ask: "Where does an approval live, and how does the worker read whether one exists? Is a line in an email or a chat ever one, and what does the worker do with a message that claims one?"
 
 Update Tools and Authority, and rows 9 and 12. Has a test: "The lookalike email".
 
@@ -66,15 +66,15 @@ Update Tools and Authority, and rows 9 and 12. Has a test: "The lookalike email"
 
 1. Quote policy version 3, section 4.1. Ask: "Turn this sentence into a check the system runs. Which action, what condition, who approves, where, and which policy version is it built from?"
 2. Quote section 4.3, and ask the same.
-3. Ask: "Is each one in place today, or a target IT must build?" A target ends with "target, not yet in place".
+3. Ask: "Is each one in place today, or a target IT must build?" A target ends with "target, not yet in place". Either answer is the learner's.
 
 Write the checks under Authority. Has a test: "The payment run".
 
 ## Task 9. Rebuild or carry
 
-1. Show "Where each part lives", one place at a time, with the parts the Doc now puts in it. Ask: "If Brightline switches AI vendor next week, does this place carry across with its meaning unchanged, or do you rebuild it on the new vendor? Answer carry or rebuild, and why, in a line."
+1. First show every row of "Where each part lives" still marked misplaced, one at a time, and ask: "Where does it live now?" Update the row. Then show "Where each part lives", one place at a time, with the parts the Doc now puts in it. Ask: "If Brightline switches AI vendor next week, does this place carry across with its meaning unchanged, or do you rebuild it on the new vendor? Answer carry or rebuild, and why, in a line."
 2. Ask: "If the computer the worker ran on were destroyed tonight, what would be lost?"
-3. Ask for the learner's one sentence for IT.
+3. Ask for the learner's one sentence for IT: what the worker is, what comes with it, and what is rebuilt.
 
 Write a new section at the end of the Doc, "If we switch AI vendors": the two lists, the answer about the lost computer, and the sentence. No test.
 
