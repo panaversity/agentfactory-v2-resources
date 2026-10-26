@@ -1,37 +1,21 @@
-# Lab 3 answer key: Task 6. Draft 2 of the Role Contract
+# Lab 3 answer key: Task 6. Flags and the approval queue
 
 The answers for Task 6 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When Draft 2 is on screen in your lab conversation, attach this file there, and send the lab's check prompt. The AI marks each check Passed or Missed, quoting the draft's words. Read the key yourself too: you have the final say.
+**How this key is used.** When the approval queue is written in your document, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 6 carries checks 8 to 10 of the lab's 12.
+Task 6 carries checks 12 to 14 of the lab's 22.
 
-8. **The register authority is split, and reconciliations are bounded.** Draft 1's "invoice register: execute" is narrowed to register-building, and reconciliations get observe and recommend only, in a new line or inside the narrowed one, never changing the register to match a vendor statement. The header says Draft 2, with its date. Missed: one register line that still allows execute everywhere, or no reconciliation line at all.
-9. **Each lesson lives where every run that needs it reads it.** A rule every reconciliation needs, such as stop and report when a difference cannot be explained, and corrections, credits and vendor contact routed to Dave Kowalski, lives in the contract's Escalation or in a standing-instructions block for reconciliations, never only in the brief. A fact about a vendor goes in the knowledge. A lesson may live in two places: the date's value in each brief, and the rule that the worker takes its date from the brief in the standing instructions. Evaluations gain the September Midwest statement, with its passing bar (9 or more, no unauthorized action). A "Standing instructions: statement reconciliation" block after the contract, marked NEW, passes as well as a contract line. Missed: a lesson left only in the brief, when the same line would be missing from every future task.
-10. **The review cadence is written down, as a line or as an open question, and every Draft 1 line survives.** Draft 2 adds and narrows, it does not silently delete, and it says how often Dave reviews the contract: monthly, with the evaluations, is one good answer, and a filled line passes as well as an open question. What fails is a contract that never comes up for review. Missed: Draft 1 content gone without a mark, or a contract that never comes up for review.
+12. **Flags first.** You read the run's flags and open questions before the items. Missed: the items decided before the flags were read.
+13. **Each item, decided.** Invoice 4479, paid on September 29, after the statement date: timing, no action, but listed (7.3). Invoice 4512, dated September 29: timing, listed (7.3). Credit memo CM 2209, $310.00: real, Dave decides after the memo arrives (7.5). Invoice 4488, keyed as $2,140.00 against the invoice's $2,410.00: real, a register correction Dave approves with the source document (7.4). Invoice 4502, $1,975.00, not in the register: real, requested from the vendor and matched to the receiving record before it is entered (7.6). Contacting the vendor needs Dave's approval (7.7). Missed: an item labelled the wrong kind, or a real item with no one named to decide it.
+14. **The approval queue holds the three real items, nothing done.** Each with its evidence and policy section, as a recommendation Dave approves. Missed: anything marked done, or an item with no evidence.
 
-## One good answer, the changed and new lines
+## Why
 
-Draft 2 keeps every Draft 1 line, narrows one (marked CHANGED), and adds lines (marked NEW). Yours will be worded differently.
+A finished run is not a correct run. Flags and the queue are where the worker already told you to look, so they are the cheapest place to find a problem. At 4 p.m. the worker had flagged the $270.00 typing error, and nobody read it.
 
-```markdown
-## What bounds it
-Authority:
-- CHANGED: Invoice register: execute (create and update rows) when building the weekly register.
-- NEW: Statement reconciliations: observe and recommend only. Never change the register to match a vendor statement.
-Escalation:
-- NEW: Stop and report, rather than guess, when a difference cannot be explained from the inputs.
-- NEW: Any proposed register correction, vendor credit or vendor contact goes to Dave Kowalski.
-Evaluations:
-- NEW: The September Midwest Packaging statement. It must pass the run rubric: 9 or more and no unauthorized action.
+## Take it to work
 
-## Open questions
-- NEW: How often Dave reviews this contract. Suggested: monthly, with the evaluations.
-
-## Standing instructions: statement reconciliation (NEW)
-- The worker treats the date in its brief as today, never its own clock.
-- Every item comes back with its statement line, register row and document, by label.
-- There is no tolerance: every difference, however small, is explained or flagged.
-```
+When an AI's work comes back, read the flags first, and decide each item by name.

@@ -64,15 +64,6 @@ jobs:
           done
           ls -l dist
 
-      - name: Copy the book pages a lab attaches
-        # Lab 3's Task 7 attaches the chapter's 3.7 page. The site serves it
-        # inline, so a copy rides as an asset for a one-click download, taken
-        # from the live page at each release.
-        run: |
-          curl -fsSL https://agentfactory2.panaversity.org/md/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors.md \
-            -o dist/brightline-lab-ch03-page-3-7.md
-          head -c 400 dist/brightline-lab-ch03-page-3-7.md
-
       - name: Publish the zips as the latest release
         env:
           GH_TOKEN: ${{ github.token }}

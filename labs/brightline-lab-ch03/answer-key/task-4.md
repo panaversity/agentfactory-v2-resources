@@ -1,14 +1,21 @@
-# Lab 3 answer key: Task 4. The final 10 percent
+# Lab 3 answer key: Task 4. The review contract
 
 The answers for Task 4 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the approval list is on screen in your lab conversation, attach this file there, and send the lab's check prompt. This is the first key that names the five items: it comes after your review on purpose. The AI grades from the review in the conversation, quoting your answers. Read the key yourself too: you have the final say.
+**How this key is used.** When the review contract and Format are written and you have asked your what-if questions again, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words, and reads the plan and its answers in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 4 carries checks 5 and 6 of the lab's 12.
+Task 4 carries checks 7 to 9 of the lab's 22.
 
-5. **The review went in the chapter's order, flags first, and every item was judged beside its source line.** Run 2's flags and open questions came first. Then each item was shown with the statement line, register row or invoice line it cites, quoted from the attached file, before you decided it. Then the one number: the items add up to the whole difference, 4,000.00. Missed: an item decided with no source line beside it, the flags read last or not at all, or the one number skipped.
-6. **Every item got the right decision, and only the real ones got one.** The two timing items, the September 29 payment and INV 4512: no action, listed only. The three real items: each routed to Dave with its policy section, the correction to INV 4488 (7.4), the credit CM 2209 (7.5, 7.7) and the missing INV 4502 (7.6, 7.7), as recommendations he approves, not actions already taken. Missed: a timing item sent to Dave, a real item decided as done, or a decision with no named decider.
+7. **The five answers.** Checked: both balances, and every difference. Evidence: for each item, the statement line, the register row and the source document where there is one. Success: the items add up to the whole difference, with $0.00 unexplained. Stop and ask: a difference it cannot explain, or an input missing or out of date. Never automatically: changing the register, recording a credit, or contacting the vendor. Missed: any of the five left out.
+8. **The Format puts the flags first.** The reply opens with flags and open questions, then the items, then the sum, then the list for Dave. Missed: no Format, or flags after the items.
+9. **The answers became boring.** On `Plan: my brief`, the what-if questions from Task 1 get clear answers that cite your lines. Missed: an answer that is still "I'm unsure" or "the brief does not say" for something your brief now covers.
 
-The review contract is what made this fast. You checked evidence that was gathered for you, with each source line beside the claim, instead of redoing the reconciliation to find out whether it was right.
+## Why
+
+Each of the five answers becomes a place Dave looks in the final 10 percent. The evidence makes spot checks possible, the success test gives him one number, the stop rule produces the flags, and the never list fills the approval queue. When every question gets an answer you could have predicted, the setup is ready.
+
+## Take it to work
+
+Write the date, the limits, the stop rule and the never list before the work starts, and ask the plan again until the answers bore you.

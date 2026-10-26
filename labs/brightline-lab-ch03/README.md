@@ -1,17 +1,16 @@
-# Lab 3: one AP task through the whole rhythm
+# Lab 3: the same one line, before and after
 
-Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
+Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 3: one AP task through the whole rhythm](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 3: the same one line, before and after](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and seven tasks, each checked against an answer key the moment it is done. |
-| `files/inputs.md` | The one file every run attaches. It holds four files under their names: Midwest Packaging's statement dated September 28, 2026, Brightline's register as of September 30, section 7 of the AP policy, and one invoice copy. |
-| `role/ap-worker-role-contract.md` | The AP Worker's Role Contract, Draft 1, which Dave owns. Task 2 starts from it, and Task 6 turns it into Draft 2. |
+| `LAB.md` | The lab: the job, and ten tasks, each checked against its own answer key the moment it is done. |
+| `inputs.zip` | The one file you give the AI, in Task 1 and again in Task 10. It holds four files: the AP Worker's Role Contract, Draft 1; Midwest Packaging's statement, Brightline's register, policy section 7 and one invoice, in one file; the moments and product facts the tasks use; and the questions the AI asks you in each task. You don't need to open it. |
 
 **The lab's date.** Today is Thursday, October 1, 2026, and the job on the page says so.
 
-**The AI gets only what a task names:** in your lab conversation, the inputs file, the Role Contract and the chapter's 3.7 page; in a run, the inputs file; and one answer key at each check. Never upload `LAB.md` or this file.
+**Give the AI only `inputs.zip`, your downloaded contract in Task 10, and, at each check, that task's answer key.** Never upload `LAB.md` or this file: they link every answer key.
 
-The answer keys are not in the folder. Each task's key is a one-click download, linked from `LAB.md` at that task's check step. So is the copy of the chapter's 3.7 page that Task 7 attaches, taken from the book when the lab was last released.
+The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.

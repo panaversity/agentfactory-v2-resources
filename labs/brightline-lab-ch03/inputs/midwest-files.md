@@ -1,6 +1,6 @@
-# The inputs: the four files every run attaches
+# Midwest Packaging: the four files for the reconciliation
 
-One file to attach for a run. It holds four files, each under its own name, unchanged.
+The four files the reconciliation works from, each under its own name.
 
 
 ---
