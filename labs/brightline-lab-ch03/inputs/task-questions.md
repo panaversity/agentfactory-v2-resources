@@ -18,7 +18,7 @@ Then say: "Send `Plan: Dave's line`. Then ask the worker two or three what-if qu
 
 1. Ask: "The intent: the outcome, in one sentence, and why, by when?"
 2. Ask: "The date the worker treats as today?"
-3. Show the four files in midwest-files.md, by name, one line each. Ask: "What is in, as of which dates, and what is each file the authority for?"
+3. Show the four files in midwest-files.md, by name, one line each. Ask: "What is in, as of which dates, and what is each file the source of truth for?"
 4. Ask: "What is out of scope?"
 
 Write Intent and Scope in the Doc. No test.
@@ -45,6 +45,8 @@ First show the four reasons to step in, from moments.md. Then show the four mome
 
 ## Task 6. Flags and the approval queue
 
+First show policy sections 7.3 to 7.7 from midwest-files.md, one line each.
+
 1. Show the run's flags and open questions first, if any, and ask whether each needs a decision now.
 2. Then each reconciling item in the run's reply, one at a time: the run's line for it, then under it the statement line, register row or invoice line it cites, quoted from midwest-files.md. Ask: "Timing or real? If real, who decides it, and under which policy section?"
 
@@ -60,7 +62,7 @@ Write it under "Which part broke" in the Doc. No test.
 
 ## Task 8. Draft 2
 
-1. List the lessons from this chat, one line each. Include, each as its own lesson: the date rule (how a run knows today's date, and that its reply states it at the top); what each kind of file is the authority for, and as of which date; the register's access during a reconciliation (the Tools line); the authority for a reconciliation (recommend only); each of the review contract's five answers (what is checked, the evidence, the success test, the stop rule, the never list); timing or real; the Format; and this reconciliation as a test case. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?"
+1. List the lessons from this chat, one line each. Include, each as its own lesson: the date rule (how a run knows today's date, and that its reply states it at the top); what each kind of file is the source of truth for, and as of which date; the register's access during a reconciliation (the Tools line); the authority for a reconciliation (recommend only); each of the review contract's five answers (what is checked, the evidence, the success test, the stop rule, the never list); timing or real; the Format; and this reconciliation as a test case. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?"
 
 The places a lesson can go: this month's brief, the standing instructions, the knowledge (as a NEW line under Knowledge sources), or a field of the Role Contract, such as Authority, Tools, Escalation or Evaluations. A rule for the people, not the worker, such as when Dave reads the flags, goes under Owner. A test case goes under Evaluations: it names the case, and its known answer stays with Dave, not in the contract. A standing instruction holds no date that belongs to one month.
 

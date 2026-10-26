@@ -2,7 +2,7 @@
 
 Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: the same one line](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
 
-On Thursday, October 1, 2026, Brightline's AP Worker was used three times, and each time a person got the rhythm wrong. In this lab you take Dave's one-line request, "Reconcile Midwest Packaging's statement.", and see what it leaves the worker to decide alone. Then you set the work up properly, let it run, and review what comes back. Last, you write the lessons where every future run reads them, until the same one line does the job right. Most people either type one line and trust the result, or check every step by hand. This lab teaches the rhythm that works instead. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. It takes about two and a half hours, three if this is new to you, in one sitting or spread over several. You need a Claude or ChatGPT account, and a free one is enough.
+On Thursday, October 1, 2026, Brightline's AP Worker was used three times, and each time a person got the rhythm wrong. In this lab you take Dave's one-line request, "Reconcile Midwest Packaging's statement.", and see what it leaves the worker to decide alone. Then you set the work up properly, let it run, and review what comes back. Last, you write the lessons where every future run reads them, until the same one line does the job right. Most people either type one line and trust the result, or check every step by hand. This lab teaches the rhythm that works instead. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. It takes about three and a half hours. Stop after Task 4 or Task 7 if you need a break: the chat and the document keep your work. You need a Claude or ChatGPT account, and a free one is enough.
 
 **What you will learn:**
 
@@ -160,7 +160,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Plan: Dave's line
    ```
 
-3. Read the plan. Then ask the worker two or three "what if" questions of your own, one at a time, each of a kind the AI showed, such as "What date is today?" A vague answer, such as "the brief doesn't say", is a gap. When you are done, send "That's all".
+3. Read the plan. Today's AI may well be careful here, because the policy is in its files, so look for what it must guess or says it does not know. Then ask the worker two or three "what if" questions of your own, one at a time, each of a kind the AI showed, and add one more: "What date is today?" A vague answer, such as "the brief doesn't say", is a gap. When you are done, send "That's all".
 4. The AI asks which answers were vague or wrong. Name each gap in a few words, and it writes them in your document.
 5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -179,7 +179,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. Send "Task 2". Answer each question in a few words:
    - the outcome, why, and by when
    - the date the worker treats as today
-   - what is in, as of which dates, and what each file is the authority for
+   - what is in, as of which dates, and what each file is the source of truth for
    - what is out
 2. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -235,6 +235,10 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. Send "Task 5". The AI shows four moments from a run, one at a time. For each, say whether you step in or let it work, and if you step in, why and what you do. [3.3](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) lists the four reasons to step in.
+A chat cannot show a run in progress, so the moments stand in for a progress view. This run changes nothing in Brightline's systems, and Task 7 has the known answer, so it is a dry run (3.2).
+
+**The hard rule.** One thing fails any run, whatever else it gets right: changing the register, recording a credit or contacting the vendor. That is the 9 a.m. mistake again.
+
 2. Send:
 
    ```text
@@ -243,8 +247,6 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
    Don't steer. If the run stops and asks because of your stop rule, answer just that question.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
-
-**The hard rule.** One thing fails any run, whatever else it gets right: changing the register, recording a credit or contacting the vendor. That is the 9 a.m. mistake again.
 
 **Checkpoint.** Checks 10 and 11 passed.
 
@@ -287,7 +289,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 ## Where it lasts
 
-### Task 8. Draft 2 (15 minutes)
+### Task 8. Draft 2 (30 minutes)
 
 **Dave asks:** "Put what we learned where it lasts. I don't want to write these rules into every brief. Mark what changed and what is new."
 
@@ -344,10 +346,11 @@ A **timing** item is on one list but not yet on the other, only because of the d
    Dave's request: Reconcile Midwest Packaging's statement.
    ```
 
-   A fresh run loads the contract and its standing instructions, and the request is one line, as it would be for a standing worker.
-4. Compare the reply with your Task 5 run. If something is wrong or missing, that is a line your Draft 2 lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run the fresh chat again.
-5. Copy the fresh chat's whole reply. In your lab chat, send it with "The fresh chat's reply. Wait for my check prompt." on the first line.
-6. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
+   The first lines stand in for what the system hands every run: its contract, its files and the date. Dave still types only his line.
+4. Ask the fresh chat your Task 1 "what if" questions. Each answer should now point to a line of Draft 2.
+5. Compare the reply with your Task 5 run. If something is wrong or missing, that is a line your Draft 2 lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and open another fresh chat, with memory off.
+6. Copy the fresh chat's whole reply, its answers to your what-ifs included. In your lab chat, send it with "The fresh chat's reply. Wait for my check prompt." on the first line. Then, for each gap in "What Dave's line left open", name the Draft 2 line that closed it.
+7. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Check 22 passed, and the downloaded file is the Draft 2 the fresh chat passed.
 
@@ -382,7 +385,7 @@ Check it yourself. It has a real date, a stop rule and a never list, and the pla
 
 ## When you are done
 
-You are done when every check has passed, the fresh chat did the job from Dave's one line, and your own task's first 10 percent is written. A passed run shows your lines are clear enough to follow. It does not show that a wrong action would be blocked: Chapter 7 builds those controls. Keep the downloaded file: it is Draft 2 of the AP Worker's Role Contract.
+You are done when every check has passed, the fresh chat did the job from Dave's one line, and your own task's first 10 percent is written. A passed run shows your lines are clear enough to follow. It does not show that a wrong action would be blocked: Chapter 7 builds those controls. Keep the downloaded file: it is Draft 2 of the AP Worker's Role Contract. Download "October 1: the run and its review" too. It is your template for the next brief.
 
 ## Exam notes
 

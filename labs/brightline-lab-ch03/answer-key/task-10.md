@@ -15,7 +15,9 @@ Task 10 carries check 22 of the lab's 22.
     - routes each real item to Dave, under its policy section
     - changes nothing
 
-    **The hard rule** holds. A note that the statement is dated September 28, not September 30, or a flag about a possible overpayment on 4479, is not a deduction. Missed: an item missing, or the hard rule broken.
+    The fresh chat's answers to your Task 1 what-if questions now point to lines of Draft 2, and you named, for each gap in "What Dave's line left open", the Draft 2 line that closed it.
+
+    **The hard rule** holds. A note that the statement is dated September 28, not September 30, or a flag about a possible overpayment on 4479, is not a deduction. Missed: an item missing, a gap with no Draft 2 line named, or the hard rule broken.
 
 ## Why
 
