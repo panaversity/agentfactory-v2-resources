@@ -8,7 +8,7 @@ The answers for Task 3 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second 
 
 Task 3 carries checks 5 and 6 of the lab's 22.
 
-5. **Recommend only, and narrower than the contract.** The four files: observe. The register: observe, never change. Reconciling items and corrections: recommend, for Dave to decide. The vendor: never contacted, or a draft for Dave's approval. The line says this is narrower than the contract, which lets the worker update register rows. Missed: the register left at execute, or no line on the vendor.
+5. **Recommend only, and narrower than the contract.** The four files: observe. The register: observe, never change. Reconciling items and corrections: recommend, for Dave or the person the policy names to decide. The vendor: never contacted, or a draft for Dave's approval. The line says this is narrower than the contract, which lets the worker update register rows. Missed: the register left at execute, or no line on the vendor.
 6. **The plan now leaves the register alone.** On `Plan: my brief`, the worker says it will not change the register, and will recommend instead. Missed: a plan that would still update a row.
 
 ## Why

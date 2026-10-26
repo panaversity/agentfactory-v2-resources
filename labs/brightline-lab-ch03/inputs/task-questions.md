@@ -60,9 +60,9 @@ Write it under "Which part broke" in the Doc. No test.
 
 ## Task 8. Draft 2
 
-1. List the lessons from this chat, one line each. Include, each as its own lesson: the date the worker treats as today; what each kind of file is the authority for; the authority for a reconciliation (recommend only); each of the review contract's five answers (what is checked, the evidence, the success test, the stop rule, the never list); timing or real; the Format; and this reconciliation as a test case. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?"
+1. List the lessons from this chat, one line each. Include, each as its own lesson: the date rule (how a run knows today's date, and that its reply states it at the top); what each kind of file is the authority for, and as of which date; the register's access during a reconciliation (the Tools line); the authority for a reconciliation (recommend only); each of the review contract's five answers (what is checked, the evidence, the success test, the stop rule, the never list); timing or real; the Format; and this reconciliation as a test case. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?"
 
-The places a lesson can go: this month's brief, the standing instructions, the knowledge (as a NEW line under Knowledge sources), or a field of the Role Contract, such as Authority, Tools, Escalation or Evaluations. A test case goes under Evaluations: it names the case, and its known answer stays with Dave, not in the contract. A standing instruction holds no date that belongs to one month.
+The places a lesson can go: this month's brief, the standing instructions, the knowledge (as a NEW line under Knowledge sources), or a field of the Role Contract, such as Authority, Tools, Escalation or Evaluations. A rule for the people, not the worker, such as when Dave reads the flags, goes under Owner. A test case goes under Evaluations: it names the case, and its known answer stays with Dave, not in the contract. A standing instruction holds no date that belongs to one month.
 
 2. For each lesson that reaches the contract, show the Draft 1 lines of the field it changes, and ask whether a line narrows, and how, or a new line is added. When the register's authority narrows, show the Tools line too. Mark each edit CHANGED or NEW.
 3. For each lesson that reaches the standing instructions, ask for its line. They go in a new block after the contract, "Standing instructions: statement reconciliation", marked NEW.
@@ -75,7 +75,7 @@ No test.
 
 1. Show Draft 2's "never" and escalation lines, numbered. Ask: "Which could a scheduled reconciliation break?"
 2. For each one named, show what moments.md says each product offers, and ask, a line each: "On Claude? On ChatGPT? And its strength: impossible, a person decides, or written and reviewed?"
-3. Ask: "When does Dave read the results, and check for a paused or missing run?"
+3. Ask: "When does Dave read the results, and how does he check for a paused or missing run?"
 4. Ask: "Is there any limit we cannot hold yet?" Write it under Open questions.
 
 Write "Scheduled-task limits" at the end of Draft 2. Name each limit by its words, never by a number from this chat. No test.
