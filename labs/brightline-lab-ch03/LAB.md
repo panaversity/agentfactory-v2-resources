@@ -297,7 +297,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
    - this month's brief only
    - the standing instructions for every reconciliation
    - the knowledge
-   - the Role Contract
+   - the Role Contract, including a rule for the people, such as when Dave reads the flags, under Owner
 2. Answer the follow-up questions, and say how often Dave reviews the contract. At the end, the AI rebuilds your document as Draft 2: the Role Contract with your edits and its standing instructions. It moves your first 10 percent and your review into a second document, "October 1: the run and its review", so Draft 2 holds no answers.
 3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
