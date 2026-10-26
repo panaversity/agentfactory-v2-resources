@@ -251,9 +251,10 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. Send "Task 6". Answer each question in a few words:
-   - where the story of each invoice and each payment run lives, who adds to it, and what happens to a wrong step
+   - where the story of each invoice and each payment run lives, who may add a step, and what happens to a wrong step
    - what the worker may write about someone else's approval
    - which wins when the register's typed status and the case file disagree
+   - whether the worker's tools let it add its own steps there
 2. Guess, then send:
 
    ```text
@@ -351,7 +352,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    - who may ask the worker for what, and who approves
    - whose login it acts under
    - which of the four things a vendor page needs are in place
-   - one evaluation case for Lakeshore
+   - the rule that keeps each vendor to its own invoices, and one evaluation case that proves it
    - which starts first
 2. Guess, then send each test as its own message:
 

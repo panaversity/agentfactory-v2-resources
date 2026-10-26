@@ -14,7 +14,7 @@ First show these nine places, one line each:
 - DSoR, the Data System of Record: the governed door to the company's systems. It checks each request, and keeps the evidence. Owned.
 - Role Contract: the worker's definition. Owned.
 - Evaluations: the test cases it must pass. Owned.
-- Company systems: the accounting system, the bank and the vendor records. Owned.
+- Company systems: the accounting system, the bank and the vendor records, and the approvals a person makes there from their own login. Owned.
 
 And the rule for misplaced: its only copy sits where the company does not govern it, the worker answers from a copy instead of the home, or the worker can change a company system with no check between.
 
@@ -48,7 +48,7 @@ Quote the Canadian dollars case. Ask: "When the policy has no answer, what does 
 
 ## Task 6. Where the work stands
 
-1. Quote part 13, and the Thursday 9 a.m. case's register row and case file. Ask: "Where does the story of each invoice live, and of each weekly payment run? Who adds the steps, and what happens when a step was wrong?"
+1. Quote part 13, and the Thursday 9 a.m. case's register row and case file. Ask: "Where does the story of each invoice live, and of each weekly payment run? Who may add a step, may anyone add a step for someone else, and what happens when a step was wrong?"
 2. Ask: "What may the worker write there about someone else's approval, and what never?"
 3. Ask: "When the register's typed status and the case file disagree, which wins?"
 4. Quote the Doc's Tools line. Ask: "Can the worker's tools add its own steps to the case files? If not, what does Tools need?"
@@ -99,4 +99,4 @@ Write Runtime needs and Triggers. No test.
 4. Ask: "What rule keeps each vendor to its own invoices? And one evaluation case that proves Lakeshore sees only its own."
 5. Ask: "Which starts first, Sam's questions or Lakeshore's page, and why?"
 
-Write Channels, Evaluations and Open questions, and the answer to question 5 under Open questions. Has tests: "Sam's question", then "Lakeshore's ask".
+Write Channels, Evaluations and Open questions, and the answer to question 5 under Channels. Has tests: "Sam's question", then "Lakeshore's ask".

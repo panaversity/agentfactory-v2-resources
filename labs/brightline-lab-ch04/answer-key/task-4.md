@@ -8,7 +8,7 @@ The answers for Task 4 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 Task 4 carries checks 7 and 8 of the lab's 23.
 
-7. **The policy has one home, the worker can reach it, and version 1 is retired.** Knowledge sources name AP policy version 3, approved September 1, 2026, with its owner, Dave Kowalski, in one place the company governs, such as the AP shared folder, with its version and approval date on top. Its owner on top is welcome, never required. A tool reaches that place. Version 1 is retired and removed from the project, never a second source. Every answer about policy cites its version and section. Missed: version 3 left in Dave's email, a home no tool reaches, version 1 kept beside it, or no citation line.
+7. **The policy has one home, the worker can reach it, and version 1 is retired.** Knowledge sources name AP policy version 3, approved September 1, 2026, in one place the company governs, such as the AP shared folder, with its version and approval date on top. Naming its owner, Dave Kowalski, is welcome, never required. A tool reaches that place. Version 1 is retired and removed from the project, never a second source. Every answer about policy cites its version and section. Missed: version 3 left in Dave's email, a home no tool reaches, version 1 kept beside it, or no citation line.
 8. **Wednesday comes out right, and cites its source.** Midwest Packaging's invoice 4519, for $7,800.00, needs the controller's approval before payment, citing AP policy version 3, section 4.1. A reply that also sends the invoice to Dave under the escalation line passes. Missed: "no approval needed", or a right answer that cites no version.
 
 ## Why
