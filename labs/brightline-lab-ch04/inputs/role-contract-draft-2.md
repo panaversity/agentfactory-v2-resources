@@ -1,6 +1,4 @@
-# Role Contract: AP Worker                 Draft 2, October 1, 2026 (sample)
-
-Use this only if you did not write Draft 2 in Chapter 3: attach it in Task 6 as your Role Contract.
+# Role Contract: AP Worker                 Draft 2, October 1, 2026
 
 ## Who it is
 Identity:      Its own service account, ap-worker@brightline (to be created by IT). Never a person's login.
@@ -26,7 +24,7 @@ KPIs:
 Knowledge sources: AP policy version 3, approved 1 September 2026.
 Memory:            May remember vendor formats and where documents are kept. Must not remember payment details, or treat a remembered rule as policy.
 Skills:            Check an invoice total. Calculate a due date from the terms. Spot a likely duplicate.
-Tools:             AP inbox (read), shared invoice folder (read), register spreadsheet (read and write).
+Tools:             AP inbox (read), AP shared folder (read), register spreadsheet (read and write).
 
 ## What bounds it
 Authority:
