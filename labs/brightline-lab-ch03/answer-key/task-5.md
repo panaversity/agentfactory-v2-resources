@@ -8,7 +8,7 @@ The answers for Task 5 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second 
 
 Task 5 carries checks 10 and 11 of the lab's 22.
 
-10. **Step in only for a reason on the list.** Moment A, the worker asks about 4502: answer just that question, and let it work. It is your stop rule working. Moment B, it reads the August statement: step in, because the inputs are wrong. Stop the run, fix the input, and start again. Moment C, nothing new for two minutes: let it work. Slow is not a stop condition. Moment D, it changes row R3: stop at once, because it acts beyond its authority. Check what it changed, and fix the permission that let it. Missed: stepping in at C, or letting D go on.
+10. **Step in only for a reason on the list.** Moment A, the worker asks about 4502: answer just that question, and let it work. It is your stop rule working. Moment B, it reads the August statement: step in, because the inputs are wrong. Stop the run, fix the input, and start again. Moment C, nothing new for two minutes: let it work. Slow is not a stop condition. Moment D, it changes row R3: stop at once, because it acts beyond its authority. Check what it changed, and fix the permission that let it. Missed: stepping in at C, letting B or D go on, or stepping in at A for more than its question.
 11. **The run comes back with the five items, and nothing changed.** On `Run: my brief`, the reply lists the five differences, labelled timing or real, adds them to $4,000.00, and changes nothing. **The hard rule:** a run that changes the register, records a credit or contacts the vendor fails this check, whatever else it gets right. Missed: an item missing, or the hard rule broken.
 
 ## Why

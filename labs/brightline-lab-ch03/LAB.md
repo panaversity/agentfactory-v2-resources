@@ -33,7 +33,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 - **October 1 went wrong three times:**
   - **9 a.m.** Dave typed one line, "Reconcile Midwest Packaging's statement." The worker changed the register to match the vendor.
   - **11 a.m.** Maria approved every step of a register by hand. It took her 90 minutes, for a job that takes 75 by hand.
-  - **4 p.m.** Dave ran the reconciliation again, and filed it without reading it. The worker had flagged a $270.00 typing error, and nobody saw the flag.
+  - **4 p.m.** Dave ran the reconciliation again, and filed it without reading it. The worker had flagged a typing error in the register, and nobody saw the flag.
 
 ## How each task works
 
@@ -160,7 +160,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Plan: Dave's line
    ```
 
-3. Read the plan. Then ask the worker two or three "what if" questions of your own, one at a time, each of a kind the AI showed, such as "What date is today?" A vague answer, such as "the brief doesn't say", is a gap.
+3. Read the plan. Then ask the worker two or three "what if" questions of your own, one at a time, each of a kind the AI showed, such as "What date is today?" A vague answer, such as "the brief doesn't say", is a gap. When you are done, send "That's all".
 4. The AI asks which answers were vague or wrong. Name each gap in a few words, and it writes them in your document.
 5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -293,7 +293,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **What you do:**
 
-1. Send "Task 8". The AI puts the Role Contract at the top of your document, and your first 10 percent below it. Then it lists the lessons. For each, say where it lives from now on, and why:
+1. Send "Task 8". The AI puts the Role Contract at the top of your document, with your first 10 percent below it, and moves your review into a second document, "October 1: the run and its review", so Draft 2 holds no answers. Then it lists the lessons. For each, say where it lives from now on, and why:
    - this month's brief only
    - the standing instructions for every reconciliation
    - the knowledge
@@ -331,7 +331,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **What you do:**
 
-1. Download your document from its menu, as .docx or .pdf. If it has no download, copy its text into a file on your computer, named `ap-worker-role-contract-draft-2.md`.
+1. Download your first document, Draft 2, from its menu, as .docx or .pdf. If it has no download, copy its text into a file on your computer, named `ap-worker-role-contract-draft-2.md`.
 2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
 3. Attach two files, your downloaded Draft 2 and `inputs.zip`, and send:
 
@@ -346,7 +346,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
    A fresh run loads the contract and its standing instructions, and the request is one line, as it would be for a standing worker.
 4. Compare the reply with your Task 5 run. If something is wrong or missing, that is a line your Draft 2 lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run the fresh chat again.
-5. Copy the fresh chat's whole reply. In your lab chat, send it with "The fresh chat's reply" on the first line.
+5. Copy the fresh chat's whole reply. In your lab chat, send it with "The fresh chat's reply, to check" on the first line.
 6. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Check 22 passed, and the downloaded file is the Draft 2 the fresh chat passed.
