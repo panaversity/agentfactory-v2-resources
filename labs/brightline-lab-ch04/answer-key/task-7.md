@@ -1,81 +1,16 @@
-# Lab 4 answer key: Task 7. The vendor swap
+# Lab 4 answer key: Task 7. What it may change
 
-The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. Product facts as verified in the chapter's 4.8 boxes on 15 October 2026, and Claude Duet on 22 October 2026: check the boxes for anything that has changed.
+The answers for Task 7 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your swap-test lists and your port table are filled, attach this file in your lab conversation, and send the lab's check prompt.
+**How this key is used.** When your Tools and Authority lines are written and your lookalike email test is done, Attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your contract document's words, and reads the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 7 carries checks 8 to 11 of the lab's 15.
+Task 7 carries checks 13 and 14 of the lab's 23.
 
-8. **The rebuild and carry lists are right.** Rented things are rebuilt: the model setting, the scheduled task, the channel hookups, and memory, which may simply be left behind once it passes the wipe test. Owned things carry with their meaning unchanged, from the carry list, or from the third list once each is moved home: the Role Contract, the KSoR with version 3 current, the SSoR's case files, the DSoR controls and evidence, and the evaluations. Dave's sentence for IT, in the learner's own words, says the worker is the Role Contract and the records it names, that they stay, and that the rented parts are rebuilt. Missed: an owned item on the rebuild list that stays there, company systems listed as moving at all, or no sentence for IT.
-9. **The third list names every owned thing in a place the company does not govern, with where it belongs.** Items such as the project instructions (the Role Contract, typed into a rented product), the policy upload (knowledge that belongs in the KSoR), the approval record in chat (DSoR evidence) and the run notes (each invoice's case file in the SSoR). The trigger set only as a time, a business event that belongs in the Role Contract, counts too. Missed: fewer than three named, or no home named.
-10. **Every rented row names the product the 4.8 boxes name on both AI vendors, and every owned row keeps its meaning.** Where a box names no product, the row says how the worker would reach it instead. Owned rows say "no change" in meaning, with the integration work named: reconnections, identity mapping, and the evaluations rerun before go-live. Missed: a rented row left empty, a product a 4.8 box names left out of its row, a product the key's table does not name for that row, or an owned item whose meaning changes, which means it was stored in a rented place.
-11. **The two decisions are answered from the boxes, or from this key's table if the page could not be opened.** The plan each AI vendor needs so the worker answers from the governed KSoR rather than uploads, and how each one starts work when an invoice arrives, with the tolerance the slower design still meets, stated in the port table and the same as the Role Contract's. An hourly check meets a tolerance of one hour or longer. Each decision has its own line on why it fits Brightline. Missed: a decision answered from memory of the products rather than the chapter's boxes, or one copied from this key with no reason of its own. Missed also: no tolerance, a tolerance the hourly check cannot meet, or one that differs from the Role Contract's.
+13. **No direct change to a company system.** Part 9 is replaced: the worker uses its own login, not Maria's, and it reads and requests. It never changes the register or an invoice's status directly. A line for a login IT has not made yet may end "target, not yet in place". Draft 2's "register spreadsheet (read and write)" and "Invoice register: execute" no longer stand as they were. Missed: any direct write left in Tools or Authority.
+14. **Approvals live in the system, and the email is only flagged.** Payments, statuses and approvals are never clicked on a screen. An approval exists only in the accounting system, from the approver's own login, and a line in an email or chat is never one. On "The lookalike email", the worker changes nothing, takes no instruction from the email, and flags it. **The hard rule** holds here too. Missed: the email treated as an approval, or no line on where approvals live.
 
-## The key's lists
+## Why
 
-### Rebuild on the new AI vendor (rented)
-
-- Model and effort setting (13)
-- The scheduled task (9), rebuilt from the Triggers line in the Role Contract
-- Channel hookups: the AP inbox connector (11) and the worker's connection to #ap-help (12). The channel itself stays, because it is rented from Brightline's messaging vendor, not the AI vendor, so #ap-help on either list is accepted
-- Memory (4, 7, 8), or simply left behind, because it passes the wipe test once items 5 and 6 are gone
-
-### Carry across, meaning unchanged (owned)
-
-Each item keeps its meaning. Its connections may need rework, and the evaluations are rerun before go-live.
-
-- The Role Contract (15), with the project instructions generated from it
-- The KSoR: AP policy version 3 as the current version, versions 1 and 2 retired
-- The SSoR: one case file per invoice, with the run notes (17) moved into it
-- DSoR controls, approvals and evidence, in place of the accounting connector's direct write access
-- Evaluations and review checks (16)
-- The company's systems: the accounting system, the bank and the vendor records do not move at all
-
-### The third list: owned things in places the company does not govern
-
-- Project instructions (1): the Role Contract, typed only into the product
-- Policy upload (2): knowledge that belongs in the KSoR
-- The approval record in chat (14): belongs in DSoR evidence
-- The run notes (17): belong in each invoice's case file in the SSoR
-- Accept also: version 3 in Dave's email (3), which belongs in the KSoR
-- Accept also: the trigger (9), set only as a time, which belongs in the Role Contract as a business event
-
-### What Dave tells IT
-
-"The worker is the Role Contract and the records it names: the policy, the case files and the controls. They stay with us. On the new AI vendor we rebuild the runtime, the channels and the schedule."
-
-## The key's table
-
-### Rented
-
-| Item | Anthropic | OpenAI |
-| --- | --- | --- |
-| Channel where vendors reach the worker | The AP inbox, read through a connector | The AP inbox, read through an app |
-| Channel where staff ask the worker | Claude Tag in Slack (Team and Enterprise plans, in beta), or the Claude apps | @ChatGPT in Slack or Teams, or the ChatGPT apps |
-| Runtime for the weekly register | A Cowork task, for everyday delegated work | A ChatGPT Work task, for everyday delegated work |
-| Runtime the AI vendor hosts, if Brightline later builds its own worker | Claude Managed Agents (beta), or Claude Duet, the standing worker, which the box names too | Agents API (beta), or the dot, the always-on agent, which the box names too |
-| Memory, and chats not saved to memory | Claude memory, with a memory for each project; Incognito chats are not saved to memory | Saved memories and chat history, and project-only memory; Temporary Chat set to Unpersonalized |
-| How the worker reaches the KSoR | A custom connector over remote MCP, on any plan (one on Free) | A custom MCP server, added from Plugins: read and fetch on Pro, full support on Business, Enterprise or Edu |
-| Trigger: "every Monday morning" | A weekly scheduled task | A scheduled task |
-| Trigger: an invoice arriving, within your Role Contract's tolerance | No email trigger in the everyday product. Use an hourly scheduled check | An event-triggered task in Work, on Gmail activity, on Plus and above, if the AP inbox is in Gmail |
-
-### Owned
-
-**Meaning: no change in any row.** The Role Contract, AP policy version 3, the case files in the SSoR, the DSoR controls and evidence, and the evaluations mean the same on both AI vendors. If the meaning would change, that item was stored in a rented place.
-
-**Integration work is expected, and is not a wrong answer.**
-
-| Item | Integration work before go-live |
-| --- | --- |
-| Role Contract | Update the runtime notes, and how each runtime starts the work. The contract's lines stay the same |
-| AP policy version 3 in the KSoR | Reconnect: a custom connector on Claude, or a custom MCP server on ChatGPT, on a plan that supports it |
-| Case files in the SSoR | Connect the worker to the case files on the new runtime, under its own identity. Entries already kept stay where they are |
-| DSoR controls, approvals and evidence | Map the worker's identity on the new runtime, and connect the governed operations. Kept evidence stays where it is |
-| Evaluations and review checks | Rerun every case on the new AI vendor before go-live. That run is the proof the port worked |
-
-### Two decisions
-
-1. **Plan.** On Claude, any plan can connect one KSoR through a custom connector. On ChatGPT, Pro gives read and fetch access to a custom MCP server, enough to read the KSoR. Acting through MCP needs a Business, Enterprise or Edu workspace. On a plan with neither, the worker could answer only from uploaded files, which brings back the stale-copy problem.
-2. **Trigger.** On ChatGPT, an event-triggered task in Work starts on Gmail activity, on Plus and above, if the AP inbox is in Gmail. On Claude, the everyday product schedules by time, so an hourly check of the inbox stands in for the event. An hourly check is slower than an event, so the Role Contract states the tolerance, such as "starts within one hour of an invoice arriving." Both designs meet a tolerance of one hour or longer.
+That week the connector let the worker change a status with Maria's login because an email said so, and nothing checked who had really approved. Through a governed door, "approved" is not a status the worker can type: it is an event the system records when Dave approves from his own login. An action taken by clicking a screen leaves no evidence of its own, so payments, statuses and approvals never go that way.

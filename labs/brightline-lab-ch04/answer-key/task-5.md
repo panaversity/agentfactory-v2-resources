@@ -1,11 +1,15 @@
-# Lab 4 answer key: Task 5. Name the layer it trusted
+# Lab 4 answer key: Task 5. When the policy is silent
 
 The answers for Task 5 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your diagnosis is written, attach this file in your lab conversation, and send the lab's check prompt.
+**How this key is used.** When your line for a silent policy is written and your Canadian dollars test is done, Attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your contract document's words, and reads the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
-## The check
+## The checks
 
-Task 5 carries check 4 of the lab's 15.
+Task 5 carries check 9 of the lab's 23.
 
-4. **Every point lost, in any run, names the layer that was wrongly trusted, and what fixed it.** Memory trusted over the vendor record (Q1). The superseded policy copy, or memory, trusted over the approved version (Q2). Email text, which came through a channel, trusted as an approval (Q3 or Q4, the hard rule). Where 5120 stands taken from anything but its case file (Q4). Memory's remark trusted as policy (Q5). The runtime's own guess or calendar, for any unasked figure or date. The fix named for each loss is a file Run 2 could reach that Run 1 could not, or a line of the precedence brief. A run that lost nothing is diagnosed honestly: say what it rested each answer on. One line per question is enough, even when it lost both points. A broken Run 1 kept for this task gets its lines too, with no score. The case-file line for invoice 4519 is dated October 15, 2026, names the AP Worker, and says the invoice is over $5,000.00, so it waits for the controller's approval (AP policy version 3, 4.1), with none in the approvals log yet. Missed: a loss with no layer named, or "the model was bad" with no source, or a 4519 line that calls the invoice approved or paid.
+9. **A silent policy means saying so, and Dave decides.** A line says that when the policy has no answer, the worker says so and asks Dave, and never fills the gap from memory or general knowledge. On "Canadian dollars", the worker says policy version 3 does not cover foreign currency, and asks Dave. It does not offer "convert at the bank's rate". Missed: the bank's rate given as policy, or an answer from general knowledge.
+
+## Why
+
+When the record is silent, the worker abstains. It says so, instead of filling the gap with whatever the model knows or a remark it once heard. Each time it abstains, Dave learns what the policy is missing, and decides whether to add it.
