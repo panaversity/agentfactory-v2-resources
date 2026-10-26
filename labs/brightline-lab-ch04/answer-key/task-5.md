@@ -8,7 +8,7 @@ The answers for Task 5 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 Task 5 carries check 9 of the lab's 23.
 
-9. **A silent policy means saying so, and Dave decides.** A line says that when the policy has no answer, the worker says so and asks Dave, and never fills the gap from memory or general knowledge. On "Canadian dollars", the worker says policy version 3 does not cover foreign currency, and asks Dave. It does not offer "convert at the bank's rate". Missed: the bank's rate given as policy, or an answer from general knowledge.
+9. **A silent policy means saying so, and Dave decides.** A line says that when the policy has no answer, the worker says so and asks Dave. A line that it never fills the gap is welcome, never required: the test shows it. On "Canadian dollars", the worker says policy version 3 does not cover foreign currency, and asks Dave. It does not offer "convert at the bank's rate". Missed: the bank's rate given as policy, or an answer from general knowledge.
 
 ## Why
 

@@ -9,7 +9,7 @@ In the week of October 12, 2026, Brightline's AP Worker made four mistakes. In t
 - To place any part of a worker in its layer, and say whether it is rented or owned.
 - To find what an AI trusted when its answer was wrong, and fix where that thing is kept, not the prompt.
 - To keep memory to preferences, and prove it with the wipe test.
-- To keep where the work stands in a case file, where the worker writes "waiting for", never "approved".
+- To keep where the work stands in a record the next run can trust.
 - To turn a policy sentence into a check the system runs.
 - To say what a switch of AI vendor rebuilds and what carries across, and what changes when others use the worker.
 - To prove a setup with a fresh run that has only the records.
@@ -52,8 +52,10 @@ You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh ch
    - what the worker says or does
    - the source it uses
    - the line of your document that decides it
-   - what your document leaves unclear When no line decides, the worker is guessing, which is what it did that week.
-4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read its "why", and tell the AI the change in your words, such as "Add a case file for each payment run." Then send: "Read the document again, and check it again against the key."
+   - what your document leaves unclear
+
+   When no line decides, the worker is guessing, which is what it did that week.
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change row 4 to OK." Then send: "Read the document again, and check it again against the key."
 
 A test is about your document, not about the AI. A pass means your line is clear enough to follow. It does not make a real worker safe: the controls come in Part IV.
 
@@ -376,7 +378,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. Download your contract from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `ap-worker-role-contract-draft-3.md`.
-2. **Open a fresh chat**, on the other AI vendor if you have an account there. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory] A chat with no memory and no history is a fresh run: it has only what you give it.
+2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory] A chat with no memory and no history is a fresh run: it has only what you give it.
 3. Attach two files, your downloaded contract and `inputs.zip`, and send:
 
    ```text

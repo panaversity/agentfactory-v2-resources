@@ -11,7 +11,7 @@ First show these nine places, one line each:
 - Memory: what the worker remembers between chats. On the line between rented and owned.
 - KSoR, the Knowledge System of Record: the approved knowledge, such as the policy and its limits. Owned.
 - SSoR, the State System of Record: each matter's case file, where the work stands. Owned.
-- DSoR, the Data System of Record: the governed door to the company's systems, with its checks, approvals and evidence. Owned.
+- DSoR, the Data System of Record: the governed door to the company's systems. It checks each request, and keeps the evidence. Owned.
 - Role Contract: the worker's definition. Owned.
 - Evaluations: the test cases it must pass. Owned.
 - Company systems: the accounting system, the bank and the vendor records. Owned.
@@ -51,8 +51,9 @@ Quote the Canadian dollars case. Ask: "When the policy has no answer, what does 
 1. Quote part 13, and the Thursday 9 a.m. case's register row and case file. Ask: "Where does the story of each invoice live, and of each weekly payment run? Who adds the steps, and what happens when a step was wrong?"
 2. Ask: "What may the worker write there about someone else's approval, and what never?"
 3. Ask: "When the register's typed status and the case file disagree, which wins?"
+4. Quote the Doc's Tools line. Ask: "Can the worker's tools add its own steps to the case files? If not, what does Tools need?"
 
-Write a new field, Case files, under What it works with. Update row 13. Has a test: "Thursday 9 a.m."
+Write a new field, Case files, under What it works with, and Tools if needed. Update row 13. Has a test: "Thursday 9 a.m."
 
 ## Task 7. What it may change
 
@@ -95,7 +96,7 @@ Write Runtime needs and Triggers. No test.
 1. Quote Sam's question. Ask: "Who may ask the worker for what, in #ap-help? And who may approve?"
 2. Ask: "Whose login does the worker act under when others use it?"
 3. Quote Lakeshore's ask. Ask: "Before vendors get a page of their own, Brightline needs four things: a runtime that runs without anyone's account, a separate view for each company, a written answer to where the data goes, and a person who answers to the vendor. For each: in place, or an open question?"
-4. Ask: "One evaluation case that proves Lakeshore sees only its own invoices."
+4. Ask: "What rule keeps each vendor to its own invoices? And one evaluation case that proves Lakeshore sees only its own."
 5. Ask: "Which starts first, Sam's questions or Lakeshore's page, and why?"
 
 Write Channels, Evaluations and Open questions, and the answer to question 5 under Open questions. Has tests: "Sam's question", then "Lakeshore's ask".

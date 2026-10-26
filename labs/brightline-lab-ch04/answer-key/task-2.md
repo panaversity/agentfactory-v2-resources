@@ -8,7 +8,7 @@ The answers for Task 2 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 Task 2 carries check 4 of the lab's 23.
 
-4. **Memory keeps the preference, and no fact or rule.** Part 4, the register order, stays: it is a preference. Part 5, "Lakeshore is Net 30", is removed or rewritten as a pointer, such as "Lakeshore's terms are in its vendor record". Part 6, the $10,000 limit, is removed: the limit is in the policy. Part 7, the bank's-rate remark, is removed: a remark is not policy. Missed: a fact, a limit or the remark kept as it was.
+4. **Memory keeps the preference, and no fact or rule.** Part 4, the register order, stays: it is a preference. Part 5, "Lakeshore is Net 30", is removed or rewritten as a pointer, such as "Lakeshore's terms are in its vendor record". Part 6, the $10,000 limit, is removed, or rewritten as a pointer that holds no figure, such as "the limit is in the policy". Part 7, the bank's-rate remark, is removed: a remark is not policy. Missed: a fact, a limit or the remark kept as it was.
 
 ## Why
 
