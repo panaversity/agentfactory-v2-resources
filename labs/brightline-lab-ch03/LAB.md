@@ -43,7 +43,7 @@ You use two chats. Tasks 1 to 9 run in one lab chat. Task 10 runs in a fresh cha
 
 **The loop.** Every task is the same four steps:
 
-1. Read Dave's ask. Then send "Task" and its number, such as "Task 3".
+1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
 2. The AI asks the task's questions, one at a time. Each question first shows what it is about. Answer in a few words, and the AI writes your answer into the document. It never writes a line you did not choose.
 3. Send the task's test, if it has one. There are two kinds:
    - `Plan:` The AI plays the worker, and says in a few lines what it would do, what it would not touch, and when it would stop and ask. Then you ask it "what if" questions, and it answers as that worker.
@@ -176,12 +176,13 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 2". Answer each question in a few words:
+1. In your lab chat, type "Task 2" and send it. The AI asks the task's questions, one at a time.
+2. Answer each in a few words:
    - the outcome, why, and by when
    - the date the worker treats as today
    - what is in, as of which dates, and what each file is the source of truth for
    - what is out
-2. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
+3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 3 and 4 passed.
 
@@ -193,14 +194,15 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 3". The AI shows the contract's Authority lines. Give each item a level: observe, recommend, draft, execute or escalate. Then say whether this is narrower than the contract.
-2. Guess what the plan will say about the register now. Then send:
+1. In your lab chat, type "Task 3" and send it. The AI shows the contract's Authority lines, then each item, one at a time.
+2. Give each item a level: observe, recommend, draft, execute or escalate. Then say whether this is narrower than the contract.
+3. Guess what the plan will say about the register now. Then send:
 
    ```text
    Plan: my brief
    ```
 
-3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 5 and 6 passed.
 
@@ -208,19 +210,20 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ### Task 4. The review contract (15 minutes)
 
-**Dave asks:** "Tell me what my signature on Monday will rest on."
+**Dave asks:** "Tell me what my signature on Monday will depend on."
 
 **What you do:**
 
-1. Send "Task 4". Answer its five questions, then the Format, in a few words each.
-2. Send:
+1. In your lab chat, type "Task 4" and send it. The AI asks the task's five questions, then the Format, one at a time.
+2. Answer each in a few words.
+3. Send:
 
    ```text
    Plan: my brief
    ```
 
-3. Ask the worker your Task 1 "what if" questions again. When every answer is clear and points to a line you wrote, the setup is ready.
-4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. Ask the worker your Task 1 "what if" questions again. When every answer is clear and points to a line you wrote, the setup is ready.
+5. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 7 to 9 passed, and your what-if questions now get boring answers.
 
@@ -234,19 +237,20 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 5". The AI shows four moments from a run, one at a time. For each, say whether you step in or let it work, and if you step in, why and what you do. [3.3](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) lists the four reasons to step in.
-A chat cannot show a run in progress, so the moments stand in for a progress view. This run changes nothing in Brightline's systems, and Task 7 has the known answer, so it is a dry run (3.2).
+1. In your lab chat, type "Task 5" and send it. The AI shows four moments from a run, one at a time.
+2. For each, say whether you step in or let it work, and if you step in, why and what you do. [Lesson 3.3](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) lists the four reasons to step in.
+A chat cannot show a run in progress, so the moments stand in for a progress view. This run changes nothing in Brightline's systems, and Task 7 has the known answer, so it is a dry run (see [Lesson 3.2](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/first-10-percent/)).
 
 **The hard rule.** One thing fails any run, whatever else it gets right: changing the register, recording a credit or contacting the vendor. That is the 9 a.m. mistake again.
 
-2. Send:
+3. Send:
 
    ```text
    Run: my brief
    ```
 
    Don't steer. If the run stops and asks because of your stop rule, answer just that question.
-3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 10 and 11 passed.
 
@@ -262,10 +266,11 @@ A chat cannot show a run in progress, so the moments stand in for a progress vie
 
 A **timing** item is on one list but not yet on the other, only because of the dates. It needs no action. A **real** item needs a decision, and becomes a recommendation for the person the policy names.
 
-1. Send "Task 6". The AI shows the run's flags first, and asks whether each needs a decision now. Then it shows each item with the evidence it cites. Answer for each item:
+1. In your lab chat, type "Task 6" and send it. The AI shows the run's flags first, and asks whether each needs a decision now. Then it shows each item with the evidence it cites.
+2. Answer for each item:
    - timing or real
    - if real, who decides it, and under which policy section
-2. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
+3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 12 to 14 passed.
 
@@ -277,15 +282,16 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **What you do:**
 
-1. Send "Task 7". Answer each question in a few words:
+1. In your lab chat, type "Task 7" and send it. The AI asks the task's questions, one at a time.
+2. Answer each in a few words:
    - whether the items add up to the whole difference
    - for each of October 1's three failures, the chapter's three questions, then which part broke
    - one sentence for Dave
-2. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
+3. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 15 to 17 passed.
 
-**At work:** when something goes wrong, find which part broke before you fix anything. [3.6](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/three-failures/) gives the three questions.
+**At work:** when something goes wrong, find which part broke before you fix anything. [Lesson 3.6](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/three-failures/) gives the three questions.
 
 ## Where it lasts
 
@@ -295,13 +301,14 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **What you do:**
 
-1. Send "Task 8". The AI lists the lessons from this chat. For each, say where it lives from now on, and why:
+1. In your lab chat, type "Task 8" and send it. The AI lists the lessons from this chat.
+2. For each, say where it lives from now on, and why:
    - this month's brief only
    - the standing instructions for every reconciliation
    - the knowledge
    - the Role Contract, including a rule for the people, such as when Dave reads the flags, under Owner
-2. Answer the follow-up questions, and say how often Dave reviews the contract. At the end, the AI rebuilds your document as Draft 2: the Role Contract with your edits and its standing instructions. It moves your first 10 percent and your review into a second document, "October 1: the run and its review", so Draft 2 holds no answers.
-3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
+3. Answer the follow-up questions, and say how often Dave reviews the contract. At the end, the AI rebuilds your document as Draft 2: the Role Contract with your edits and its standing instructions. It moves your first 10 percent and your review into a second document, "October 1: the run and its review", so Draft 2 holds no answers.
+4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 18 and 19 passed.
 
@@ -313,13 +320,14 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **What you do:**
 
-1. Send "Task 9". The AI shows Draft 2's "never" and escalation lines. Name the ones a scheduled run could break. For each, it shows what each AI vendor offers, from [3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/). Answer how it is held on Claude, on ChatGPT, and how strong that is:
+1. In your lab chat, type "Task 9" and send it. The AI shows Draft 2's "never" and escalation lines.
+2. Name the ones a scheduled run could break. For each, it shows what each AI vendor offers, from [Lesson 3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/). Answer how it is held on Claude, on ChatGPT, and how strong that is:
    - **impossible:** the task never has the access
    - **a person decides:** an approval step
    - **written and reviewed:** a line in the instructions, checked in the final 10 percent
-2. Say when Dave reads the results, and checks for a paused or missing run.
-3. **Optional, on a paid plan:** set this reconciliation up as a real scheduled task, with approvals turned on, and compare what you see with your answers.
-4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
+3. Say when Dave reads the results, and checks for a paused or missing run.
+4. **Optional, on a paid plan:** set this reconciliation up as a real scheduled task, with approvals turned on, and compare what you see with your answers.
+5. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 20 and 21 passed.
 
@@ -379,7 +387,7 @@ Check it yourself. It has a real date, a stop rule and a never list, and the pla
 
 - **The three failures.** Dave's 9 a.m. line was a first-10 failure. Where in your own work did each of the three nearly happen?
 - **The same one line.** What made Dave's line fail in Task 1 and work in Task 10? Which lines of Draft 2 carried it?
-- **The same correction twice.** Which lesson went into the standing instructions, so no future request has to carry it?
+- **The same correction twice.** Which correction went into the standing instructions, so no future request has to repeat it?
 - **The three scales.** Your first 10 percent ran one task. Draft 2 is the first 10 percent of the worker's working life. What is the company-scale version of the line you wrote?
 - **The strongest limit.** For each "never", could you make it impossible, or only make a person decide?
 
