@@ -6,7 +6,7 @@ Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and twelve tasks, each checked against its own answer key the moment it is done. |
+| `LAB.md` | The lab: the job, and eleven tasks, each checked against its own answer key the moment it is done. |
 | `inputs.zip` | The one file you give the AI, in Task 1 and again in Task 11. It holds the AP folder, `ap-folder`, with Brightline's six files for the payment run. It also holds Maria's fourteen steps, three new vendors' setup forms, and the questions the AI asks you in each task. You don't need to open it. |
 
 **The lab's date.** Today is Monday, October 19, 2026, and the job on the page says so.

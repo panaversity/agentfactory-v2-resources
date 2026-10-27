@@ -9,7 +9,7 @@ The answers for Task 1 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 Task 1 carries checks 1 and 2 of the lab's 26.
 
 1. **The run ran from Dave's line alone, and the notes name, part by part, what it decided alone.** You sent `Run: Dave's line`, and "What Dave's line left to guess" gives an answer for each of the four parts: what the run had to decide alone, or "nothing". Each guess sits under the part that Lesson 5.5's table points to: what to make, and how much, is the Outcome; the shape and where it goes is the Format; which source, fact or rule it used is the Inputs; what it did or decided without asking is the Autonomy. A right guess counts as a guess, and so does anything the run took from memory, such as a rule from an earlier chat.
-   - Passed: all four parts answered, each guess under its part.
+   - Passed: all four parts answered. Under which part each guess sits is not graded.
    - Missed: the run not sent; a part with no answer; or "nothing" for a part whose "What decided it" lines include a "no line decides".
 2. **The date is an Outcome guess.** Dave's line names no date. If no line decided the run's date, the notes call the date a guess, or something the run had to decide alone, under the Outcome, whatever date the run picked, Friday, October 23, 2026 included. A run that quotes "this week's payment run" for its date still guessed it: the words name no date, so the date came from the AI's own clock or from a file's name.
    - Passed: the run's date named as a guess, under the Outcome or under any other part. The date belongs to the Outcome (Lesson 5.1's table puts "this week's payment run" there), and this key's "Why" says so, but where your note sits is not graded.

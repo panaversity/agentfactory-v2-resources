@@ -17,7 +17,7 @@ Task 5 carries checks 9 and 10 of the lab's 26.
    - Missed: any one missing, such as the columns from Lesson 5.7 with no row_id.
 10. **A memo for Dave, decisions first, a note to Maria, and where each goes.** Your Format asks for:
     - a one-page memo for Dave that starts with the decisions he must make
-    - a short note to Maria in the chat, a few lines, saying what was held and why
+    - a short note in the chat, a few lines, saying what was held and why. It is for Maria, and it need not name her.
     - where each piece goes: the CSV to Maria's spreadsheet, the memo to Dave, the note in the chat
     - Passed: all three.
     - Missed: no memo; a memo that does not start with Dave's decisions; no note to Maria; or nothing on where a piece goes.

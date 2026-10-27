@@ -193,7 +193,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Run: Maria's steps
    ```
 
-3. The AI shows her steps in four groups. Each step comes with what the run did with it, and the policy line or record that speaks to it. For each step, answer: keep (a control), leave out (method or a preference), or wrong, and what should decide it instead. The test is [5.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/outcome-not-steps/)'s question: would a capable new colleague be wrong to do this step another way?
+3. The AI shows her steps in four groups. Each step comes with what the run did with it, and the policy line or record that speaks to it, or a note that none does. For each step, answer: keep (a control), leave out (method or a preference), or wrong, and what should decide it instead. The test is [5.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/outcome-not-steps/)'s question: would a capable new colleague be wrong to do this step another way?
 4. The AI asks one more question about her steps. Answer it in a line. The AI writes "Maria's steps: what stays" in the chat.
 5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -379,7 +379,14 @@ One message asks for ideas. The other asks for data that the accounting system w
    nothing else.
    ```
 
-6. When the run has built its files, answer IT's question in the fresh chat. Type the line of your brief that would still hold the worker back if an app's own setting let it act without asking, in quotes, or "none", and send it. [5.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/) says why the brief, not the app's setting, carries this.
+6. When the run has built its files, answer IT's question in the fresh chat. Send this, with the line of your brief that would still hold the worker back, or "none":
+
+   ```text
+   IT asks: if another app let the worker act without asking, which
+   line of this brief would still hold it back? My answer:
+   ```
+
+   [5.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/) says why the brief, not the app's setting, carries this.
 7. **Check it now, in the fresh chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-11.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
 
 **Checkpoint.** Checks 24 to 26 passed, and the downloaded file is the brief the fresh chat passed.
