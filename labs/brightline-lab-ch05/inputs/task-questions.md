@@ -64,7 +64,7 @@ Put the words in the Doc, as "When the learner sends a part of the brief" says. 
 
 **The run:** `Run: my brief`.
 
-**After the run.** Ask nothing. Say "Task 3 is done".
+**After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'." Then say "Task 3 is done".
 
 ## Task 4. The inputs
 
@@ -84,7 +84,7 @@ Put the words in the Doc. Say "Ready for your run".
 
 **The run:** `Run: my brief`.
 
-**After the run.** Ask nothing. Say "Task 4 is done".
+**After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'." Then say "Task 4 is done".
 
 ## Task 5. The format
 
@@ -96,7 +96,7 @@ Put the words in the Doc. Say "Ready for your run".
 
 **The run:** `Run: my brief`.
 
-**After the run.** Ask nothing. Say "Task 5 is done".
+**After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'." Then say "Task 5 is done".
 
 ## Task 6. The autonomy
 
@@ -114,8 +114,8 @@ Put the words in the Doc. Then say: "This is the first run of your whole brief, 
 
 **Before the run.**
 
-1. Show 5.5's table below.
-2. Then the items, one at a time. First, each "no line decides" in the "What decided it" of Task 6's run, as its own lines: the decision, quoted, and what the run did. Then Maria's message, quoted from the learner's "Task 7" message. If the learner sent no message from Maria, ask them to paste it from the lab page.
+1. Ask: "Did Task 6's run do what you guessed? Yes or no." Then show 5.5's table below.
+2. Then the items, one at a time. First, each "no line decides" in the "What decided it" of Task 6's run, up to five, those that change an invoice's action or due date first, as its own lines: the decision, quoted, and what the run did. Then Maria's message, quoted from the learner's "Task 7" message. If the learner sent no message from Maria, ask them to paste it from the lab page.
 
    For each item, ask: "Which part of the brief does this point to, from 5.5's table? Or is it 'fine as it is', or 'worker, not brief'? Answer the part's name, or one of those two."
 3. Ask: "Is anything else in Task 6's run wrong? Name it in a few words, or say 'none'." Ask the same part question for each thing named.

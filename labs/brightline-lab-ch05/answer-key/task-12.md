@@ -73,7 +73,7 @@ A total that is not in the table: add the run's PAY rows yourself. It passes onl
 
 The fresh chat is the run nobody watches. It has no memory of your lab chat, none of your notes and none of your keys, only your brief and the files a real Monday run gets. If it stops where your lab chat stopped, and builds the run from Maria's reply, your brief carries everything the run needs. If you ran it on the other AI vendor, it also moved between vendors with nothing changed. Next Monday, only its dates change.
 
-If a row differs, find the line your brief lacks. Back in your lab chat, change that line, download the brief again, and run a new fresh chat.
+If a row differs, find the line your brief lacks. Back in your lab chat, change that line, download the brief again, and run a new fresh chat. If a line of your brief already decides that row, the run slipped: try one more fresh chat. If it slips again, it is "worker, not brief" (Lesson 5.5). You have the final say, and you can stop there.
 
 ## Never a deduction
 

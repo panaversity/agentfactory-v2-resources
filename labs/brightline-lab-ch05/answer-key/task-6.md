@@ -10,12 +10,12 @@ Task 6 carries checks 11 and 12 of the lab's 26.
 
 11. **What the worker may do alone, and what it never does.** Your Autonomy says:
     - what the worker may do alone, such as work until the files exist
-    - that it changes nothing and sends nothing
-    - that it contacts no vendor. Lesson 5.1's words, "Change nothing and send nothing", pass for this too.
-    - that it pays nothing. "Proposes only", "makes no payment" or "never pays" pass.
+    - that it changes nothing and sends nothing. Dave's own words, "The worker prepares, people decide", pass for this, and so do "proposes only" or Lesson 5.1's "Change nothing and send nothing".
+    - that it contacts no vendor. "Only Maria calls a vendor" passes, and so does "Change nothing and send nothing".
+    - that it pays nothing. "The worker prepares, people decide", "proposes only", "makes no payment" or "never pays" pass.
     - that it converts nothing. "Converts no currency" or "uses no exchange rate" pass.
     - Passed: all five.
-    - Missed: no line on what it may do alone, or nothing that stops a payment or a conversion.
+    - Missed: any of the five missing, such as no line on what it may do alone, or nothing that stops a payment or a conversion.
 12. **Who acts on what the worker may not do.** Your Autonomy says:
     - Maria makes any call to a vendor
     - anything only Dave can decide goes on his list for Thursday, October 22. The words in Lesson 5.1's brief, "List for Dave anything the policy does not cover", pass for this half.

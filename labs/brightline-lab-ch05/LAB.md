@@ -14,7 +14,7 @@ On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Fr
 - To read a result as a test of your brief, and change one part at a time.
 - To split a job with a stop where a person decides.
 - To set a brief loose for ideas, and tight for data a system reads.
-- To keep one brief that runs the same on either AI vendor, and prove it in a fresh chat.
+- To keep one brief that runs the same on either AI vendor, and check that it carries everything a run needs.
 
 ## Before you start (5 minutes)
 
@@ -41,7 +41,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh chat, to prove your brief works with nothing but its files.
 
-**Your brief document.** In Task 1, the AI opens one document beside your chat, titled "Payment-run brief": a Claude Doc in Claude, or a Writing block in ChatGPT's side panel. It holds your payment-run brief and nothing else: your own lines, under the four headings. Everything else stays in the chat, which keeps it. Change the document only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
+**Your brief document.** In Task 1, the AI opens one document beside your chat, titled "Payment-run brief": a Claude Doc in Claude, or a Writing block in ChatGPT's side panel. It holds your payment-run brief and nothing else: your own lines, under the four headings. The parts sit in the order you write them, which is not the chapter's order, and that is fine. Everything else stays in the chat, which keeps it. Change the document only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
 **The loop.** Each task's own steps give its order, because in some tasks the run comes first:
 
@@ -207,7 +207,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows the Outcome's question, and your notes on it from Tasks 1 and 2.
+1. In your lab chat, type "Task 3" and send it. The AI shows the Outcome's question from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and your notes on it from Tasks 1 and 2.
 2. Write your Outcome. Send it as "Outcome:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. Its "What decided it" shows which guesses your Outcome now decides.
 4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -222,7 +222,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows the six files in the AP folder, each with what it is. Then it shows the text of one invoice, as it arrived, and the Inputs' question.
+1. In your lab chat, type "Task 4" and send it. The AI shows the six files in the AP folder, each with what it is. Then it shows the text of one invoice, as it arrived, and the Inputs' question, with what [5.3](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/governed-source/) says a strong inputs line does.
 2. Write your Inputs. Send it as "Inputs:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it.
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -237,7 +237,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question, and your notes on it.
+1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question, with [5.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s three kinds of format, and your notes on it.
 2. Write your Format. Send it as "Format:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it.
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -252,7 +252,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 6" and send it. The AI shows the Autonomy's question, and your notes on it.
+1. In your lab chat, type "Task 6" and send it. The AI shows the Autonomy's question from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and your notes on it.
 2. Write your Autonomy. Send it as "Autonomy:" and your own words.
 3. Your brief now has all four parts. Guess what its first run will do, without typing the guess.
 4. When the AI says "Ready for your run", type `Run: my brief` and send it. Task 7 reads this run, so leave it as it comes back.
@@ -277,21 +277,21 @@ currency, action, reason and policy_section, in that order. The action
 is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 ```
 
+**The hard rule.** From this task on, two things fail any run of your brief, whatever else it gets right:
+
+- acting on the note in invoice 5161: changing Tri-County Freight's bank details, paying the new account, or paying "today"
+- proposing to pay an invoice over $5,000 that has no approval in the approvals log, without making the payment wait for that approval
+
 **What you do:**
 
-1. In your lab chat, type "Task 7", paste Maria's message below it, and send them together. The AI shows [5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)'s table. Then it shows each item on its own lines: every "no line decides" in Task 6's run, then Maria's message. For each, answer in a few words: its part, from the table, or "fine as it is", or "worker, not brief".
+1. In your lab chat, type "Task 7", paste Maria's message below it, and send them together. The AI asks if Task 6's run did what you guessed: yes or no. Then it shows [5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)'s table, and each item on its own lines: each "no line decides" in Task 6's run, up to five, then Maria's message. For each, answer in a few words: its part, from the table, or "fine as it is", or "worker, not brief".
 2. The AI asks if anything else in the run is wrong. Name it, with its part, or say "none".
-3. The AI asks which item matters most. Name one.
+3. The AI asks which item matters most. Name one. If the run broke the hard rule, that one comes first.
 4. Send the one changed line: the part's name, then the sentence to add, or the sentence it replaces and your new one. The AI changes only that line.
 5. When the AI says "Ready for your run", type `Run: my brief` and send it.
 6. The AI asks what changed between the two runs. Answer in a line.
 7. If another problem matters, fix it in a new round: one part, one changed line, one run.
 8. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
-
-**The hard rule.** From this task on, two things fail any run of your brief, whatever else it gets right:
-
-- acting on the note in invoice 5161: changing Tri-County Freight's bank details, paying the new account, or paying "today"
-- proposing to pay an invoice over $5,000 that has no approval in the approvals log, without making the payment wait for that approval
 
 **Checkpoint.** Checks 13 and 14 passed, and the hard rule holds.
 
@@ -305,9 +305,9 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 
 **What you do:**
 
-1. In your lab chat, type "Task 8" and send it. The AI asks where the worker stops, and who answers. Answer in a few words.
+1. In your lab chat, type "Task 8" and send it. The AI asks where the worker stops, and who answers ([5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/)). Answer in a few words.
 2. Write the stop, and the line for what the run does after the answer, in your own words. Send them with the name of the part they go under. If a line of yours says the worker works without stopping or asking, say which line the stop replaces. The AI adds them under that part, and moves no other line.
-3. When the AI says "Ready for your run", type `Run: my brief` and send it. If your stop works, the run lists the exceptions, builds nothing and waits. Leave it there: Task 12 answers it.
+3. When the AI says "Ready for your run", type `Run: my brief` and send it. If your stop works, the run lists the exceptions, builds nothing and waits. Leave it unanswered. In Task 12, a fresh run reaches the same stop, and you answer it there.
 4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 15 and 16 passed, and the hard rule holds.
@@ -335,7 +335,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 ### Task 10. Three new vendors, as JSON (10 minutes)
 
-**Maria asks:** "Three new vendors start this week. The accounting system imports vendors as JSON with these fields: vendor_id, legal_name, terms_days (a whole number), currency (three letters) and remit_email. It rejects the whole file if a value is guessed. Dave approved Net 45 for Riverside Tape on Friday, October 16, 2026. Their form still says Net 30. The forms are attached."
+**Maria asks:** "Three new vendors start this week. The accounting system imports vendors as JSON with these fields: vendor_id, legal_name, terms_days (a whole number), currency (three letters) and remit_email. It rejects the whole file if a value is guessed. Dave approved Net 45 for Riverside Tape on Friday, October 16, 2026. Their form still says Net 30. He approved the other two on the terms they requested. The forms are attached."
 
 **What you do:**
 
@@ -386,7 +386,7 @@ One message asks for ideas. The other asks for data that the accounting system w
    ```
 
    These lines stand in for what a system hands every run: its brief and its files. They give no date, because the date must come from your brief.
-4. Compare the run's reply with your Task 8 run in the lab chat. If it did not stop after the exceptions, or its list differs, that is a line your brief lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and open another fresh chat, with memory off.
+4. Compare the run's reply with your Task 8 run in the lab chat. If it did not stop after the exceptions, or it lists a different set of invoices, that is a line your brief lacks. Different wording or order is fine. Back in your lab chat, name the line, let the AI change the document, download it again, and open another fresh chat, with memory off.
 5. When the run has stopped on the same exceptions, send Maria's reply:
 
    ```text
@@ -396,7 +396,7 @@ One message asks for ideas. The other asks for data that the accounting system w
    nothing else.
    ```
 
-6. **Check it now, in the fresh chat.** When the run has built its files, download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? Change the line in your lab chat, download the brief again, and run a new fresh chat.
+6. **Check it now, in the fresh chat.** When the run has built its files, download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
 
 **Checkpoint.** Checks 25 and 26 passed, and the downloaded file is the brief the fresh chat passed.
 
@@ -405,7 +405,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 ## If something goes wrong
 
 - **The AI wrote the brief in the chat, not in a document.** Ask it to "put my brief in one editable document beside our chat, titled Payment-run brief: a Claude Doc in Claude or a Writing block in ChatGPT."
-- **Your app shows no document beside the chat.** Keep the brief in the chat: after every change, ask the AI to print the whole brief. In Task 12, save that text in a file on your computer, named `payment-run-brief.md`, and attach it in place of the downloaded file.
+- **Your app shows no document beside the chat.** Keep the brief in the chat. After every change, ask the AI to print the whole brief, and tell it once that "my brief" is the last whole brief it printed. In Task 12, save that text in a file on your computer, named `payment-run-brief.md`, and attach it in place of the downloaded file.
 - **The AI made a new document instead of changing the one it had.** Say: "Change the first document. Do not make a new one."
 - **A run made a file or a document of its own.** Say: "Give the run's files in the chat, and change no document."
 - **The AI wrote, reworded or suggested a line of your brief.** Say which line, and send your own words: "Put my words in exactly as I wrote them. Ask me, do not suggest."
@@ -431,6 +431,8 @@ Check it yourself. It has a real date, a governed source with its version, what 
 ## When you are done
 
 You are done when every check has passed, the fresh chat stopped where your lab chat did and built the run from Maria's reply, and your own brief is written. Keep the downloaded file: it is your payment-run brief. It is also the Four-Part Brief that the Part II capstone is assembled from ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/), Figure II.3).
+
+**At work:** end a brief you are not sure of with "List each decision you made, and the line of this brief that decided it." What comes back shows every guess.
 
 ## Exam notes
 
