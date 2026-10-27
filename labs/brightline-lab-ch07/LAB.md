@@ -19,7 +19,7 @@ On Tuesday, October 27, 2026, Brightline's AP Worker forwarded a payment run fil
 
 ## Before you start (5 minutes)
 
-Download [`brightline-lab-ch07.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07.zip), and unzip it. The folder holds:
+Download [`brightline-lab-ch07.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
 - `README.md`
 - `LAB.md`: this page, as a file
@@ -35,7 +35,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 - On Monday, October 26, 2026, Maria told the worker to clear the AP inbox every morning: "Just handle it so I don't have to." She chose the conversation's most automatic setting, let the mailbox connector send without asking, and left the browser signed in to the accounting system as herself.
 - By 9:30 a.m. on Tuesday, October 27, 2026, the worker had answered eleven vendors. It had also forwarded a file to a look-alike of Scioto Pallet's address, and changed Scioto Pallet's contact email, under Maria's login. Maria put the record back.
 - The file it forwarded is the proposal for the payment run of Friday, October 30, 2026. The worker's payment-run job prepared it, and Dave reviews it on Thursday, October 29, 2026. That job runs separately from the inbox job this lab fixes.
-- The worker's Role Contract, Draft 3, has one line on authority: "Vendor replies: draft only." Its other parts come from Chapter 4, and this lab leaves them as they are.
+- The worker's Role Contract, Draft 3, has one line on authority, "Vendor replies: draft only." Its other parts come from Chapter 4, and this lab leaves them as they are.
 - Dave wants the contract fixed today, the worker's settings made to match it, and proof on this morning's inbox before the worker touches the real mailbox again.
 
 ## How each task works
@@ -165,7 +165,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    ```
 
 4. The AI shows Tuesday's three actions, one at a time: the replies, the forward and the contact change. For each, answer in a few words: the rung it acted at, and what let it act there, from a line of the contract, the policy, Maria's words, a setting, or nothing.
-5. The AI shows Maria's words beside [7.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/envelope-brief-permissions/)'s three limits. Answer: is it an envelope, a brief or a permission; could it give the worker more than its contract allows; and who may change the envelope.
+5. The AI shows Maria's words beside [7.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/envelope-brief-permissions/)'s three limits. Answer three things: is it an envelope, a brief or a permission? Could it give the worker more than its contract allows? And who may change the envelope?
 6. The AI asks what stops at once. Answer: each of Tuesday's actions, and the rung it stays at until Dave decides more, or "stopped".
 7. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -182,7 +182,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 2" and send it. The AI shows [7.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/autonomy-ladder/)'s four rungs. Then it shows the fifteen actions the worker might take, one at a time, A01 to A15, each with where it happens and what it changes.
-2. For each action, answer in a line: never automated, with the policy section or the reason, or the rung the job needs: observe, recommend, draft or execute.
+2. For each action, answer in a line. Say "never automated", with the policy section or the reason, or name the rung the job needs: observe, recommend, draft or execute.
 3. When the AI says "Ready for your test", type `Test: email 05` and send it. Then send `Test: email 12`.
 4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -378,7 +378,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Apply it to your vertical (15 minutes)
 
-Your vertical is the line of work you know best. Pick one worker you would trust with a task in your role. In your lab chat, ask for a second document. Write five lines of an Authority Envelope for that worker in it, in your own words: two actions, each with its rung; one action that is never automated, with the reason; one threshold as a number, with who approves above it; and one escalation trigger, with the person it goes to.
+Your vertical is the line of work you know best. Pick one worker you would trust with a task in your role. In your lab chat, ask for a second document. Write five lines of an Authority Envelope for that worker in it, in your own words. Write two actions, each with its rung, and one action that is never automated, with the reason. Then write one threshold as a number, with who approves above it, and one escalation trigger, with the person it goes to.
 
 Check it yourself against [7.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/clerk-analogy/)'s three tests: every action named, every threshold a number, every approver named by role. Then download this document too: it is the one you take to work.
 
