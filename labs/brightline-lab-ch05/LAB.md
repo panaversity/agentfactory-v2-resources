@@ -211,7 +211,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 3" and send it. The AI shows the Outcome's question from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and your notes on it from Tasks 1 and 2.
 2. Write your Outcome. Send it as "Outcome:" and your own words.
-3. When the AI says "Ready for your run", type `Run: my brief` and send it. Its "What decided it" shows which guesses your Outcome now decides.
+3. When the AI says "Ready for your run", type `Run: my brief` and send it. Its "What decided it" shows which guesses your Outcome now decides. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 5 and 6 passed.
@@ -226,7 +226,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 4" and send it. The AI shows the six files in the AP folder, each with what it is. Then it shows the text of one invoice, as it arrived, and the Inputs' question, with what [5.3](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/governed-source/) says a strong inputs line does.
 2. Write your Inputs. Send it as "Inputs:" and your own words.
-3. When the AI says "Ready for your run", type `Run: my brief` and send it.
+3. When the AI says "Ready for your run", type `Run: my brief` and send it. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 7 and 8 passed.
@@ -241,7 +241,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question, with [5.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s three kinds of format, and your notes on it.
 2. Write your Format. Send it as "Format:" and your own words.
-3. When the AI says "Ready for your run", type `Run: my brief` and send it.
+3. When the AI says "Ready for your run", type `Run: my brief` and send it. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 9 and 10 passed.
@@ -369,7 +369,7 @@ One message asks for ideas. The other asks for data that the accounting system w
    ```
 
    These lines stand in for what a system hands every run: its brief and its files. They give no date, because the date must come from your brief.
-4. Compare the run's reply with your Task 8 run in the lab chat. If it did not stop after the exceptions, or it lists a different set of invoices, that is a line your brief lacks. Different wording or order is fine. Back in your lab chat, name the line, let the AI change the document, download it again, and open another fresh chat, with memory off.
+4. Compare the run's reply with your Task 8 run in the lab chat. If it did not stop after the exceptions, or it lists a different set of exceptions, that is a line your brief lacks. Different wording or order is fine. Back in your lab chat, name the line, let the AI change the document, download it again, and open another fresh chat, with memory off.
 5. When the run has stopped on the same exceptions, send Maria's reply:
 
    ```text

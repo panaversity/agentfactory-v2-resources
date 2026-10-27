@@ -9,7 +9,7 @@ The answers for Task 5 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 Task 5 carries checks 9 and 10 of the lab's 26.
 
 9. **A CSV Maria can check row by row.** Your Format asks for:
-   - a CSV, or a table with fixed columns, with one row per open invoice
+   - a CSV, or a table with fixed columns, with one row per invoice: every open invoice, or every invoice in the run. Task 11 grades all 15 rows.
    - each row tied to the invoice list's row_id, or to another way to tell apart two rows with the same invoice number, such as the date received
    - how to mark a value the worker cannot fill, such as a blank with its reason, or "MISSING" (Lesson 5.7)
    - no prose around the rows
