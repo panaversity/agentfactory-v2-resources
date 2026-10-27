@@ -10,7 +10,7 @@ Task 8 carries checks 15 and 16 of the lab's 26.
 
 15. **One stop, after the exceptions, answered by Maria.**
     - Your brief has a stop after the exceptions, and says Maria answers it. A stop-and-ask line you kept from Lesson 5.1's brief, such as "Stop and ask if the invoice list and the vendor records disagree", is fine beside it.
-    - Before the stop, the run lists each exception, with its row and its policy section, and builds nothing.
+    - Before the stop, the run lists each exception, with its policy section and a way to find its row (the row_id, or the invoice number with its date received), and builds nothing.
     - Your brief says what the run does after Maria's answer: build the CSV and the memo from her decisions.
     - No stop waits for Dave's approval on Thursday, October 22, 2026. What needs his approval is proposed as pay after approval, for him to approve on Thursday.
     - The run stopped after the exceptions, and built nothing.

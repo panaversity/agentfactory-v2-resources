@@ -9,7 +9,7 @@ The answers for Task 2 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 Task 2 carries checks 3 and 4 of the lab's 26.
 
 3. **The wrong steps are called wrong, each with what should decide it.** Steps 2, 5, 6, 7, 8, 9 and 14, as the table below says.
-   - Passed: each of the seven called wrong, with what should decide it. A step kept only in its right form also passes, such as step 6 kept as version 3's limit of over $5,000.00, or step 2 kept with the vendor record in place of the invoice's terms. Step 5 called method passes when the notes say the brief must name version 3. Step 14 left out passes when the notes say the worker sends nothing.
+   - Passed: each of the seven called wrong, with what should decide it. A step kept only in its right form also passes, such as step 6 kept as version 3's limit of over $5,000.00, or step 2 kept with the vendor record in place of the invoice's terms. Step 5 called method passes when the notes say the brief must name version 3. Step 9 left out passes when the notes say nothing is converted. Step 14 left out passes when the notes say the worker sends nothing, or that the Format decides where each piece goes.
    - Missed: any of the seven kept as written, or called wrong with nothing named to decide it.
 4. **The rest are placed, and nothing is a control without a reason.** Steps 1, 3, 4, 10, 11, 12 and 13, as the table below says. No step is called a control unless policy, law or a system that uses the result requires it. Your answer to the last question says her steps do not say what should exist when the work is done, or in what shape.
    - Passed: each of the seven placed as the table accepts, and the last answer says no.
@@ -27,12 +27,12 @@ Task 2 carries checks 3 and 4 of the lab's 26.
 | 6 | Mark any invoice over $10,000 for Dave's approval. | Wrong: version 3 says over $5,000.00 (4.1). $10,000 is version 2's |
 | 7 | Remove any row that looks like a duplicate. | Wrong: hold the later copy and tell the AP lead, and never remove a row (6.1). "Looks like" is not 6.1's test |
 | 8 | Convert any foreign-currency amount at today's rate. | Wrong: the policy says nothing about other currencies, so say so, list it for Dave and convert nothing |
-| 9 | Add a column for the converted amount. | Wrong, with step 8 |
+| 9 | Add a column for the converted amount. | Wrong, with step 8. "Leave out, nothing is converted" also passes |
 | 10 | Total the run. | Leave out: method. "A total in Dave's memo" also passes: it is part of what comes back, not a step |
 | 11 | Write a summary paragraph. | Wrong shape: the Format decides what comes back. "Leave out, the Format decides" also passes |
 | 12 | List the vendors in the run. | Leave out, or put it in the Format: a preference |
 | 13 | Check the total once more. | Leave out: method |
-| 14 | Send me the summary. | Wrong: the Autonomy says send nothing, and the Format says where each piece goes |
+| 14 | Send me the summary. | Wrong: the Autonomy says send nothing, and the Format says where each piece goes. "Leave out, the Format decides where it goes" also passes |
 
 ## Why
 

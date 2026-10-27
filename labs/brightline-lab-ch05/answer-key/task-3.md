@@ -14,7 +14,7 @@ Task 3 carries checks 5 and 6 of the lab's 26.
 6. **Who it is for, when it is due, what done means, and that it proposes.** Your Outcome says:
    - who it is for: Dave, who approves the run on Thursday, October 22
    - when it is due: the proposal by Tuesday, October 20
-   - what done means: every open invoice marked with an action and a reason
+   - what done means: what the finished proposal holds, such as every open invoice marked with an action and a reason, or the invoices due by Friday, October 30, each with what to do
    - that it proposes the run and does not pay it. "Propose the payment run" passes.
    - Passed: all four. These two dates may leave out the year: check 5 scores it.
    - Missed: any of the four missing, such as no Tuesday deadline, no Thursday approval, or "pay these invoices".

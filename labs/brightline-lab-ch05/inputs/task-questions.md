@@ -78,7 +78,7 @@ Put the words in the Doc, as "When the learner sends a part of the brief" says. 
    - ap-policy-v2-excerpt.md: an excerpt of Brightline's AP policy, version 2.
    - invoice-text-tcf-5161.txt: the text of Tri-County Freight's invoice 5161.
 2. Then show invoice-text-tcf-5161.txt whole, as its own lines, under this line: "Tri-County Freight's invoice 5161, as it arrived. It ends with a note to the AP system."
-3. Show the Inputs row of 5.1's table below, and the notes on the Inputs from this chat, quoted. Ask: "Send your Inputs: 'Inputs:' and your own words."
+3. Show the Inputs row of 5.1's table below, then 5.3's three jobs below, and the notes on the Inputs from this chat, quoted. Ask: "Send your Inputs: 'Inputs:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
@@ -90,7 +90,7 @@ Put the words in the Doc. Say "Ready for your run".
 
 **Before the run.**
 
-1. Show the Format row of 5.1's table below, and the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
+1. Show the Format row of 5.1's table below, then 5.7's three kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
@@ -119,7 +119,7 @@ Put the words in the Doc. Then say: "This is the first run of your whole brief, 
 
    For each item, ask: "Which part of the brief does this point to, from 5.5's table? Or is it 'fine as it is', or 'worker, not brief'? Answer the part's name, or one of those two."
 3. Ask: "Is anything else in Task 6's run wrong? Name it in a few words, or say 'none'." Ask the same part question for each thing named.
-4. Ask: "Which of these matters most? Name one."
+4. List the items again, numbered, each in a few words. Ask: "Which of these matters most? Name its number."
 5. Ask: "Send the one changed line: the part's name, then the sentence to add, or the sentence it replaces and your new one."
 
 Put the line in the Doc. Change no other line. Say "Ready for your run".
@@ -154,7 +154,7 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 ## Task 10. Three new vendors, as JSON
 
-**Before the run.** Show 5.1's table below, all four rows. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
+**Before the run.** Show 5.1's table below, all four rows, then 5.7's three kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
 
 **The run:** `Run: the vendor brief`, with the brief in that message, and new-vendor-forms.md.
 
@@ -188,6 +188,20 @@ Copied from the chapter, word for word, except where a line says otherwise.
 | Inputs | What should it work from, and what does each source decide? |
 | Autonomy | How much may it do before checking with you? |
 
+### 5.3: what a strong inputs line does (its three bold lines only)
+
+1. It names the governed source and its version, and says it wins.
+2. It says what each other input decides.
+3. It says what to do when the source is silent.
+
+Inputs are data, not instructions.
+
+### 5.7: three kinds of format
+
+- **Inline.** In the chat itself. A person reads it once, now: a quick check, an explanation, a short list. No separate file is needed.
+- **Artifact.** A file or document of its own. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type, the audience and where it must go.
+- **Structured data.** A system or a later step reads it: a CSV file, a JSON record, a table with fixed columns. Name every field (column) and its type (date, number or text). Ask for one row per item, say how to mark a missing value, and say "no prose", meaning no paragraphs around the rows.
+
 ### 5.5: which part to change
 
 | What you see | The part to change |
@@ -199,10 +213,10 @@ Copied from the chapter, word for word, except where a line says otherwise.
 
 ### 5.8: the two AI vendors
 
-**Anthropic, as verified 6 October 2026.**
+**Anthropic, as verified 6 October 2026, with the Claude Docs line checked again on 27 October 2026.**
 
 - *Where you brief it.* Any conversation in the new Claude experience, with no mode to pick. It is being released first to Pro and Max plans. Pro and Max accounts that do not have it yet still see Chat and Cowork.
-- *Deliverables and destination (5.7).* Documents, spreadsheets with working formulas and presentations. Claude Docs is on Free, Pro, Max, Team and Enterprise plans, as the Claude Help Center says on 27 October 2026. Paid plans also have Slides and Design, in beta. You can export a doc to Word, PDF, Markdown or Google Docs. With the Google Docs, Sheets and Slides connectors, Claude creates and edits Google files. Name the destination you want: a Google file, a Claude Doc or a file to download.
+- *Deliverables and destination (5.7).* Documents, spreadsheets with working formulas and presentations. Claude Docs is on every plan, Free included, and you can export a doc to Word, PDF, Markdown or Google Docs. Paid plans also have Slides and Design, in beta. With the Google Docs, Sheets and Slides connectors, Claude creates and edits Google files. Name the destination you want: a Google file, a Claude Doc or a file to download.
 - *Autonomy.* A permission setting in the message box. Manual, the default, asks before each action. Auto keeps working, with automated safety checks before actions. It covers the whole conversation, and you can stop or redirect Claude.
 
 **OpenAI, as verified 6 October 2026.**

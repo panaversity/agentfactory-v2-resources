@@ -48,9 +48,9 @@ You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh ch
 1. Read Dave's or Maria's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
 2. The AI asks the task's questions, one at a time, and shows each item first. Answer each in a few words. When a task asks you to write a part of the brief, send the part's name, a colon and your own words, such as "Outcome:" and your sentences. The AI puts your words in the document, exactly as you wrote them.
 3. When the AI says "Ready for your run", type the task's run, such as "Run: my brief", and send it. After the run's reply, the AI asks its next question, or says the task is done.
-4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Outcome: replace my second sentence with" and your new sentence. If the key grades a run, send the run again. Then send: "Read the document again, and check it again against the key."
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. For a line of your brief, send something like "Outcome: replace my second sentence with" and your new sentence. For an answer in the chat, send the new answer, such as "Step 9, wrong, because" and your reason. If the key grades a run, send the run again. Then send: "Read the document again, and check it again against the key."
 
-**What a run is.** "Run:" and a name make the AI act as a fresh run of Brightline's AP Worker. The run has only the brief it names, that brief's files and its own date. It knows nothing else from your chat. It does the work in one reply, and gives its files in the chat. Then, under "What decided it", it lists each decision it made, with the line of the brief that decided it, or "no line decides: the worker guessed". A guess that comes out right is still a guess, and a line your brief lacks.
+**What a run is.** "Run:" and a name make the AI act as a fresh run of Brightline's AP Worker. The run has only the brief it names, that brief's files and its own date. It knows nothing else from your chat. Its own date is today's real date, so once your brief's dates have passed, a run may say the proposal is late. That changes nothing a key grades. It does the work in one reply, and gives its files in the chat. Then, under "What decided it", it lists each decision it made, with the line of the brief that decided it, or "no line decides: the worker guessed". A guess that comes out right is still a guess, and a line your brief lacks.
 
 **If a run stops to ask.** Your brief may tell the worker to stop and ask. Until Task 8, send: "List it for Dave, and carry on." In Task 8 the stop is the test, so leave it there.
 
@@ -412,6 +412,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 - **The AI won't open `inputs.zip`.** Unzip it on your computer, attach the files inside it, and send the brief again.
 - **A run quotes a line that is not in your document, or misses a line you added.** Say: "Read the document again." Then send the run again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
+- **In Task 12, only one of the two files arrived.** Attach the other one in your next message, and say it did not attach the first time.
 - **You reach your app's limit.** Your chat and your document keep everything. Carry on later, from the next task.
 
 ## Apply it to your vertical (15 minutes)
