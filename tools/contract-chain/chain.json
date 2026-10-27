@@ -27,10 +27,14 @@
           "after": "Monday 6 a.m. for the register."
         },
         {
-          "name": "C29: the Where each part lives table",
-          "enabled": false,
+          "name": "(5) C29: the Where each part lives table goes: its row 1 clashes with Chapter 8's three-file project, and its rows 6 and 7 with Lab 8's memory (editor, Wednesday, October 28, 2026)",
           "before": "## Where each part lives\n\n| # | Part | Lives now | Belongs in | Rented or owned | Status |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Project instructions | This Role Contract, in the AP shared folder; the project holds a copy | Role Contract | Owned | Moved |\n| 2 | AP policy version 1 | Retired. Removed from the project | KSoR | Owned | Retired |\n| 3 | AP policy version 3 | The AP shared folder, ap-policy.md, with its version, owner and approval date on top | KSoR | Owned | Moved |\n| 4 | Memory: register order | The worker's memory | Memory | On the line | OK |\n| 5 | Memory: Lakeshore's terms | Removed. Terms are read from the vendor record | Company systems | Owned | Removed |\n| 6 | Memory: the approval limit | Removed. The limit is read from the policy | KSoR | Owned | Removed |\n| 7 | Memory: foreign currency | Removed. A remark is not policy | KSoR | Owned | Removed |\n| 8 | Scheduled task | The AI vendor's scheduler | Runtime | Rented | OK |\n| 9 | Connector: accounting system | Replaced: the worker's own login, read and request only | DSoR | Owned | Target, not yet in place |\n| 10 | Connector: AP inbox | The AI vendor's app | Channels | Rented | OK |\n| 11 | #ap-help | Brightline's team chat | Channels | Rented | OK |\n| 12 | Approval record | The accounting system, from Dave's own login | Company systems | Owned | Moved |\n| 13 | Run notes | Each invoice's and each run's case file, in the AP shared folder | SSoR | Owned | Moved |\n\n",
           "after": ""
+        },
+        {
+          "name": "(6) The Runtime line dates Chapter 4's Wednesday, because Lab 7's today is a Wednesday too",
+          "before": "and Wednesday's mistake comes back.",
+          "after": "and the mistake of Wednesday, October 14, 2026 comes back."
         }
       ]
     },

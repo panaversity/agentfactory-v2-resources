@@ -5,16 +5,17 @@ python3 tools/brightline-lab-ch07/make-inputs.py        (from the repository's r
 Writes labs/brightline-lab-ch07/inputs/inbox-2026-10-28.md (this morning's twelve emails in one
 file, so a test names "email 05") and labs/brightline-lab-ch07/inputs/brightline-records.md (AP
 policy version 3, the vendor records, the payment status and the fifteen actions in one file). Both
-ride in the lab's inputs.zip. They are made from the lab's older files, which hold the same data one
-file each, and the script checks that every line of every email, every policy line and every CSV
+ride in the lab's inputs.zip. They are made from the older copies in tools/brightline-lab-ch07/source/,
+which hold the same data one file each, and the script checks that every line of every email, every policy line and every CSV
 cell arrives word for word, the planted lines included. Every name, address and number is invented."""
 import csv, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "labs/brightline-lab-ch07/inputs"
-INBOX_OUT = SRC / "inbox-2026-10-28.md"
-RECORDS_OUT = SRC / "brightline-records.md"
+SRC = ROOT / "tools/brightline-lab-ch07/source"
+OUT = ROOT / "labs/brightline-lab-ch07/inputs"
+INBOX_OUT = OUT / "inbox-2026-10-28.md"
+RECORDS_OUT = OUT / "brightline-records.md"
 
 EMAILS = sorted((SRC / "inbox").glob("email-*.txt"))
 POLICY = SRC / "ap-policy-v3-excerpt.md"

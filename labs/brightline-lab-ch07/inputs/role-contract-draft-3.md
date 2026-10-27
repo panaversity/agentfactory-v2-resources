@@ -1,23 +1,5 @@
 # Role Contract: AP Worker                 Draft 3, Friday, October 16, 2026
 
-## Where each part lives
-
-| # | Part | Lives now | Belongs in | Rented or owned | Status |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Project instructions | This Role Contract, in the AP shared folder; the project holds a copy | Role Contract | Owned | Moved |
-| 2 | AP policy version 1 | Retired. Removed from the project | KSoR | Owned | Retired |
-| 3 | AP policy version 3 | The AP shared folder, ap-policy.md, with its version, owner and approval date on top | KSoR | Owned | Moved |
-| 4 | Memory: register order | The worker's memory | Memory | On the line | OK |
-| 5 | Memory: Lakeshore's terms | Removed. Terms are read from the vendor record | Company systems | Owned | Removed |
-| 6 | Memory: the approval limit | Removed. The limit is read from the policy | KSoR | Owned | Removed |
-| 7 | Memory: foreign currency | Removed. A remark is not policy | KSoR | Owned | Removed |
-| 8 | Scheduled task | The AI vendor's scheduler | Runtime | Rented | OK |
-| 9 | Connector: accounting system | Replaced: the worker's own login, read and request only | DSoR | Owned | Target, not yet in place |
-| 10 | Connector: AP inbox | The AI vendor's app | Channels | Rented | OK |
-| 11 | #ap-help | Brightline's team chat | Channels | Rented | OK |
-| 12 | Approval record | The accounting system, from Dave's own login | Company systems | Owned | Moved |
-| 13 | Run notes | Each invoice's and each run's case file, in the AP shared folder | SSoR | Owned | Moved |
-
 ## Who it is
 Identity:      Its own service account, ap-worker@brightline (to be created by IT). Never a person's login.
 Role:          AP Worker
@@ -73,7 +55,7 @@ Channels:
 - The AP inbox and #ap-help.
 - In #ap-help, Purchasing may ask about its own vendors' invoices. Only Dave approves.
 Triggers:      Within one hour of an invoice reaching the AP inbox. Monday 6 a.m. for the register.
-Runtime needs: Any runtime that reaches the policy's home and the accounting system through a connector. On Claude, a custom connector. On ChatGPT, a plan that reads custom MCP servers. Without a connector, the worker would read an uploaded copy, and Wednesday's mistake comes back.
+Runtime needs: Any runtime that reaches the policy's home and the accounting system through a connector. On Claude, a custom connector. On ChatGPT, a plan that reads custom MCP servers. Without a connector, the worker would read an uploaded copy, and the mistake of Wednesday, October 14, 2026 comes back.
 
 ## Open questions
 - Whether it may send routine payment-status replies on its own.
