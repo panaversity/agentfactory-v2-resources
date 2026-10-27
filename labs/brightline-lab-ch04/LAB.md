@@ -1,8 +1,8 @@
-# Lab 4: which source wins
+# Lab 4: where each part lives
 
-Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: which source wins](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
+Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: where each part lives](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-In the week of October 12, 2026, Brightline's AP Worker made four mistakes. In this lab you find what it trusted each time, fix the line in its Role Contract that let it happen, and test that the line works. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. Most people fix a wrong AI answer by rewording the prompt. This lab teaches the fix that lasts. It takes about two and a half hours, three if this is new to you, in one sitting or spread over several, because the chat and the contract document keep your work. You need a Claude or ChatGPT account, and a free one is enough.
+In the week of October 12, 2026, Brightline's AP Worker made four mistakes. They had one cause: nobody had drawn where each part of the worker is kept, who owns it, and which part wins when two disagree. Most people fix a wrong AI answer by rewording the prompt. In this lab you draw that map with Chapter 4's six layers, and move each part to the layer that owns it. You write each move into the worker's Role Contract, which ties the layers together, and test that it holds. It takes about two and a half hours, three if this is new to you, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough.
 
 **What you will learn:**
 
@@ -30,32 +30,25 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 - You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio.
 - Dave Kowalski, the controller, owns the AP Worker. Maria Lopez is the office manager.
-- The worker has a Role Contract, Draft 2, from October 1, 2026. It ships in `inputs.zip`.
+- The worker's Role Contract, Draft 2, from October 1, 2026, ships in `inputs.zip`.
 - In the week of Monday, October 12, 2026, it made four mistakes:
-  - **Monday night.** It told Lakeshore Janitorial that invoice 5102 was due November 8. It trusted a memory from July. The vendor record says Net 15: pay within 15 days.
-  - **Wednesday.** It told Maria that Midwest Packaging's $7,800 invoice needed no approval. It read the old policy copy from March. Version 3, approved September 1, says invoices over $5,000 need Dave's approval.
-  - **Thursday.** It marked Tri-County Freight's invoice 5120 "approved by Dave", because an email said so. The email came from an address made to look like Brightline's.
+  - **Monday night.** It told Lakeshore Janitorial that invoice 5102 was due November 8. The date was wrong.
+  - **Wednesday.** It told Maria that Midwest Packaging's $7,800 invoice needed no approval. It needed Dave's.
+  - **Thursday.** It marked Tri-County Freight's invoice 5120 "approved by Dave", because an email from a lookalike address said so. Dave had not approved it.
   - **Friday.** IT asked what it would take to move the worker to the other AI vendor. Dave could not say which parts belonged to Brightline, and which came with the product.
-- Dave wants the contract fixed, so that a run nobody watches gets the week right.
-
+- Dave wants each part in the layer that owns it, written into the contract, so that a run nobody watches gets the week right.
 
 ## How each task works
 
 You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh chat, to prove the contract works with nothing but the records.
 
-**Your contract document.** In Task 1, the AI puts Draft 2 in a document beside your chat, not in the chat itself. In Claude it is a Claude Doc. In ChatGPT it is a Writing block, which opens in the side panel. Every change goes in that same document, and by the end it is Draft 3. Change it by asking in the chat, not by hand: in ChatGPT, a hand edit can leave the AI reading your edited copy instead of its own later changes.
+**Your contract document.** In Task 1, the AI puts Draft 2 in a document beside your chat, a Claude Doc in Claude or a Writing block in ChatGPT's side panel. Every change goes in that document, and by the end it is Draft 3. Change it only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
 **The loop.** Every task is the same four steps:
 
 1. Read Dave's ask. Then send "Task" and its number, such as "Task 3".
-2. The AI asks the task's questions, one at a time. Each question first shows what it is about. Answer in a few words, and the AI writes your answer into the document. It never writes a line you did not choose.
-3. Guess what the worker would do, then send the task's test, such as "Test: Monday night". The AI reads your document and answers in four parts:
-   - what the worker says or does
-   - the source it uses
-   - the line of your document that decides it
-   - what your document leaves unclear
-
-   When no line decides, the worker is guessing, which is what it did that week.
+2. The AI asks the task's questions, one at a time. Answer each in a few words, and the AI writes your answer into the document.
+3. Guess what the worker would do, then send the task's test, such as "Test: Monday night". The AI answers as the worker, and names the line of your document that decides it. When no line decides, the worker is guessing, which is what it did that week.
 4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change row 4 to OK." Then send: "Read the document again, and check it again against the key."
 
 A test is about your document, not about the AI. A pass means your line is clear enough to follow. It does not make a real worker safe: the controls come in Part IV.
