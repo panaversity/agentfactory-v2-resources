@@ -1,17 +1,17 @@
-"""Make the vendor setup forms for Lab 5, Part F, of The AI Agent Factory, Second Edition.
+"""Make the vendor setup forms for Lab 5, Task 10, of The AI Agent Factory, Second Edition.
 
 python3 tools/brightline-lab-ch05/make-vendor-forms.py        (from the repository's root)
 
-Writes labs/brightline-lab-ch05/part-f/new-vendor-forms.md: three new vendors' setup forms in one
-file, because a run attaches one file. Task F2 turns them into JSON records for Brightline's
-accounting system. Two facts the lab teaches are kept out of the file on purpose, and the script
+Writes labs/brightline-lab-ch05/inputs/new-vendor-forms.md: three new vendors' setup forms in one
+file, which rides in the lab's inputs.zip. In Task 10 the learner's vendor brief turns them into
+JSON records for Brightline's accounting system. Two facts the lab teaches are kept out of the file on purpose, and the script
 checks that they stay out: Dave approved Net 45 for Riverside Tape (only Maria's message says so),
 and Pinecrest Wrap's form leaves its currency blank. Every name, address and number is invented."""
 import re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "labs/brightline-lab-ch05/part-f/new-vendor-forms.md"
+OUT = ROOT / "labs/brightline-lab-ch05/inputs/new-vendor-forms.md"
 
 FORMS = [
     {
