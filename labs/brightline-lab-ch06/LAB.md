@@ -50,7 +50,7 @@ They are two documents so that, in Task 11, a second reviewer gets your checks w
 1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The AI replies with the task's first question.
 2. The AI asks the task's questions, one at a time, and shows each item first. Answer each in a few words. In Tasks 2 to 8, one question is always which checks in your Review Contract answer Dave's question: give the letters, or a new check in a few words. A new check goes in as a dated amendment, with the next letter.
 3. When the AI says "Ready for your review", type `Review:` and the letters, such as `Review: C`, and send it. The AI reports what your checks found. Then it shows each flagged item, one at a time, and asks: "A problem, or right? If a problem: its kind, and what is right. If right: why." Answer in a few words, such as "problem, a wrong number," and what is right, or "right, because" and the reason. The AI writes your answer in the Review findings.
-4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why". If your check was too loose, tell the AI the amendment in a few words, and send `Review:` again. If a decision was wrong, tell the AI the change, such as "Item 4: right, because" and your reason. Then send: "Read both documents again, and check it again against the key."
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why". If your check was too loose, tell the AI the amendment in a few words, and send `Review:` again (Tasks 1 and 9 have no review: send the change, then check again). If a decision was wrong, tell the AI the change, such as "Item 4: right, because" and your reason. Then send: "Read both documents again, and check it again against the key."
 
 **What a review is.** `Review:` and letters make the AI run those checks of your Review Contract, exactly as written, on the four files of the package. It checks them against the six source files and Maria's decisions in the task record. Its reply has three parts. First, what it compared, with what. Then each item that differs, with its file and row, and the source line it differs from. Last, how many items passed. It reports nothing your checks do not ask about. It never says whether an item is a problem, what is right, or what your checks leave out. So a vague check finds little, and a precise one finds the problem. The AI only matches, traces and adds, which [6.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/decision-numbers/) allows. It is your tool, running your checks against the sources, and every flag shows its source line, so you can see why it was flagged. The decisions are yours.
 
@@ -282,7 +282,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. In your lab chat, type "Task 7" and send it. The AI shows how [6.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/decision-numbers/) ties out a figure and how [6.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/audience/) compares versions, then Dave's question and your contract's checks, and asks which checks answer it. Give the letters, or a new check in a few words.
 2. The AI asks which facts your check will line up across the CSV, the memo and the note. Answer in a few words. If your check does not already say it, your answer goes in as an amendment.
 3. When the AI says "Ready for your review", type `Review:` and the letters, and send it.
-4. For each fact that differs, answer which version is right, and the source that shows it, or that none is.
+4. For each fact that differs, answer which version is right, and the source that shows it, or that none is. A fact you decided in an earlier task keeps its finding's number, and the AI does not ask about it again.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 17 to 19 passed.
@@ -390,7 +390,7 @@ This task leaves Brightline. [6.5](https://agentfactory2.panaversity.org/managin
 **What you do:**
 
 1. In your lab chat, type "Task 12" and send it. The AI sets the review rules aside for this task, and asks for your question. Send it in one line, such as how other small teams handle a job you do.
-2. The AI searches the web and answers, with its sources. If no search runs, ask it to search the web.
+2. The AI searches the web and answers, with its sources. If no search runs, ask it to search the web. If your app has no web search, skip this task.
 3. The AI takes you through four checks, one at a time: the source behind the main claim, pages that copy one source, each source's date, and evidence that disagrees. Open the source it links, and answer each in a few words.
 4. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Its one check is unscored: it grades your steps, never the search result, which changes from day to day.
 
@@ -409,7 +409,7 @@ This task leaves Brightline. [6.5](https://agentfactory2.panaversity.org/managin
 - **The AI won't open `inputs.zip`.** Unzip it on your computer, attach the files inside it, and send the opening message again.
 - **A review quotes a line that is not in your contract, or misses one you added.** Say: "Read the Review Contract again." Then send `Review:` again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
-- **In Task 11, only one of the two files arrived.** If the zip is missing, attach it in the same chat and send "Here is the zip." If the contract is missing, start another fresh chat, with memory off, and attach both files: a reviewer without the contract is not testing it.
+- **In Task 11, only one of the two files arrived.** If the zip is missing, attach it in the same chat and send "Here is the zip." If the contract is missing, which shows when the reviewer says it has none or reviews the blank template, start another fresh chat, with memory off, and attach both files: a reviewer without the contract is not testing it.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
 ## Apply it to your vertical (15 minutes)
@@ -427,7 +427,7 @@ Check it yourself. Every check names the source it is checked against, the depth
 
 ## When you are done
 
-You are done when every check has passed, the second reviewer's findings are decided, and your own Review Contract is written. Download the Review Contract and the Review findings. Your Review Contract is one way to make the Part II capstone's review contract, in the words of [Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/), "a review contract for an AP task, written before the task runs". Kept for next Friday's run, as Maria will keep it, it is written before that run is delegated.
+You are done when every check has passed, the second reviewer's findings are decided, and the Review Contract for your own work, under "Apply it to your vertical", is written. Download the Review Contract and the Review findings. Your Review Contract is one way to make the Part II capstone's review contract, in the words of [Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/), "a review contract for an AP task, written before the task runs". Kept for next Friday's run, as Maria will keep it, it is written before that run is delegated.
 
 ## Exam notes
 

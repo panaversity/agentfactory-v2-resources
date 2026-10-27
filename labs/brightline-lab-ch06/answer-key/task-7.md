@@ -9,7 +9,7 @@ The answers for Task 7 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 Task 7 carries checks 17 to 19 of the lab's 30.
 
 17. **The memo does not tie out to its own CSV.** The memo's headline says "Pay on Friday: $22,010.80 across 10 invoices." The CSV's 10 PAY rows add up to $22,100.80. They are $90.00 apart. Neither is the figure Dave signs, which comes from the sources.
-    - Passed: the difference between the memo's $22,010.80 and the CSV's $22,100.80 decided a problem, with "none is" right, or with the figure from the sources as what is right.
+    - Passed: the difference between the memo's $22,010.80 and the CSV's $22,100.80 decided a problem, in this task or in an earlier one, with "none is" right, or with the figure from the sources as what is right.
     - Missed: the difference not found; found and called right; or the memo's figure or the CSV's called the right one.
 18. **Buckeye: the memo holds row 10, and the CSV pays it.** The memo's Exceptions say of BO-23010, row 10, "The later copy is held (policy 6.1)." The note to Maria says "Hold the Buckeye duplicate, BO-23010." The CSV, the file the system pays from, marks row 10 PAY. The memo and the note are right, and the CSV is wrong, by policy 6.1.
     - Passed: the difference decided, with the memo and the note right and the CSV wrong, by policy 6.1.
