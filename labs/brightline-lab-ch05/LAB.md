@@ -2,7 +2,7 @@
 
 Chapter 5 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 5: the payment-run brief](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/lab/), so you can do the lab without the book.
 
-On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Friday's payment run ready, and the worker had to guess. Then Maria sent it fourteen steps, and a late bill was missed. Most people hand work to an AI in one of those two ways. In this lab you write the brief between them, with Chapter 5's four parts. You write one part at a time, and run the brief after each part to see what it decides. Then you fix it one part per round, add a stop where a person decides, and prove it in a fresh chat that has only its files. You write every line of the brief. The AI runs it, asks the questions and keeps the notes. It takes about three hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and Task 12 in ChatGPT, in Work if your plan has it.
+On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Friday's payment run ready, and the worker had to guess. Then Maria sent it fourteen steps, and a late bill was missed. Most people hand work to an AI in one of those two ways. In this lab you write the brief between them, with Chapter 5's four parts. You write one part at a time, and run the brief after each part to see what it decides. Then you fix it one part per round, add a stop where a person decides, and prove it in a fresh chat that has only its files. You write every line of the brief. The AI runs it, asks the questions and keeps the notes. It takes about three hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and Task 11 in ChatGPT, in Work if your plan has it.
 
 **What you will learn:**
 
@@ -39,7 +39,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 ## How each task works
 
-You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh chat, to prove your brief works with nothing but its files.
+You use two chats. Tasks 1 to 10 run in one lab chat. Task 11 runs in a fresh chat, to prove your brief works with nothing but its files.
 
 **Your brief document.** In Task 1, the AI opens one document beside your chat, titled "Payment-run brief": a Claude Doc in Claude, or a Writing block in ChatGPT's side panel. It holds your payment-run brief and nothing else: your own lines, under the four headings. The parts sit in the order you write them, which is not the chapter's order, and that is fine. Everything else stays in the chat, which keeps it. Change the document only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
@@ -58,7 +58,7 @@ A run tests your brief, not the AI. A good run means your lines are clear enough
 
 ### The check prompt
 
-One prompt checks every task, in the lab chat and in Task 12's fresh chat. Attach the task's key first, then send:
+One prompt checks every task, in the lab chat and in Task 11's fresh chat. Attach the task's key first, then send:
 
 ```text
 Outcome:  The task I just finished, graded against the newest answer
@@ -84,7 +84,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Open a new chat: your lab chat, for Tasks 1 to 11. Attach `inputs.zip`, and send the brief for your app. There are two, the same but for the document's name: Claude's first, then ChatGPT's.
+1. Open a new chat: your lab chat, for Tasks 1 to 10. Attach `inputs.zip`, and send the brief for your app. There are two, the same but for the document's name: Claude's first, then ChatGPT's.
 
    ```text tab="Claude" tab-group="vendor"
    Outcome:  Brightline's payment-run brief, and two other briefs,
@@ -307,7 +307,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 
 1. In your lab chat, type "Task 8" and send it. The AI asks where the worker stops, and who answers ([5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/)). Answer in a few words.
 2. Write the stop, and the line for what the run does after the answer, in your own words. Send them with the name of the part they go under. If a line of yours says the worker works without stopping or asking, say which line the stop replaces. The AI adds them under that part, and moves no other line.
-3. When the AI says "Ready for your run", type `Run: my brief` and send it. If your stop works, the run lists the exceptions, builds nothing and waits. Leave it unanswered. In Task 12, a fresh run reaches the same stop, and you answer it there.
+3. When the AI says "Ready for your run", type `Run: my brief` and send it. If your stop works, the run lists the exceptions, builds nothing and waits. Leave it unanswered. In Task 11, a fresh run reaches the same stop, and you answer it there.
 4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 15 and 16 passed, and the hard rule holds.
@@ -348,30 +348,11 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 **At work**, ask: when a system reads the result, have I named every field, its type, and what to do when one is missing?
 
-## On either AI vendor
-
-### Task 11. On the other vendor (10 minutes)
-
-**Dave asks:** "IT asks if we are tied to one AI. Will this brief run the same in ChatGPT as in Claude?"
-
-**What you do:**
-
-1. In your lab chat, type "Task 11" and send it. The AI shows what each AI vendor offers, from [5.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/). Answer each question in a few words:
-   - for each part of your brief: the same on the other vendor, or what changes and why
-   - which line of your brief would still hold the worker back if an app's own setting let it act, or "none"
-   - on the app you use, the setting you would choose, or "none" if your plan has no such control
-2. The AI writes "On either AI vendor" in the chat.
-3. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
-
-**Checkpoint.** Check 24 passed.
-
-**At work**, ask: if we moved this brief to another AI tomorrow, what would I change, and is any of it the outcome or the rules?
-
 ## The proof
 
-### Task 12. The same brief, a fresh chat (25 minutes)
+### Task 11. The same brief, a fresh chat (30 minutes)
 
-**Dave asks:** "Prove it. A fresh chat, on the other AI if you have it, with nothing but your brief and the AP folder."
+**Dave asks:** "Prove it. A fresh chat, on the other AI if you have it, with nothing but your brief and the AP folder. And IT asks if we are tied to one AI: if another app let the worker act without asking, what would still hold it back?"
 
 **What you do:**
 
@@ -396,23 +377,24 @@ One message asks for ideas. The other asks for data that the accounting system w
    nothing else.
    ```
 
-6. **Check it now, in the fresh chat.** When the run has built its files, download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
+6. When the run has built its files, answer IT's question in the fresh chat. Type the line of your brief that would still hold the worker back if an app's own setting let it act without asking, in quotes, or "none", and send it. [5.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/) says why the brief, not the app's setting, carries this.
+7. **Check it now, in the fresh chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-11.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
 
-**Checkpoint.** Checks 25 and 26 passed, and the downloaded file is the brief the fresh chat passed.
+**Checkpoint.** Checks 24 to 26 passed, and the downloaded file is the brief the fresh chat passed.
 
 **At work:** before you trust a new brief with the week, run it once in a fresh chat with only its files.
 
 ## If something goes wrong
 
 - **The AI wrote the brief in the chat, not in a document.** Ask it to "put my brief in one editable document beside our chat, titled Payment-run brief: a Claude Doc in Claude or a Writing block in ChatGPT."
-- **Your app shows no document beside the chat.** Keep the brief in the chat. After every change, ask the AI to print the whole brief, and tell it once that "my brief" is the last whole brief it printed. In Task 12, save that text in a file on your computer, named `payment-run-brief.md`, and attach it in place of the downloaded file.
+- **Your app shows no document beside the chat.** Keep the brief in the chat. After every change, ask the AI to print the whole brief, and tell it once that "my brief" is the last whole brief it printed. In Task 11, save that text in a file on your computer, named `payment-run-brief.md`, and attach it in place of the downloaded file.
 - **The AI made a new document instead of changing the one it had.** Say: "Change the first document. Do not make a new one."
 - **A run made a file or a document of its own.** Say: "Give the run's files in the chat, and change no document."
 - **The AI wrote, reworded or suggested a line of your brief.** Say which line, and send your own words: "Put my words in exactly as I wrote them. Ask me, do not suggest."
 - **The AI won't open `inputs.zip`.** Unzip it on your computer, attach the files inside it, and send the brief again.
 - **A run quotes a line that is not in your document, or misses a line you added.** Say: "Read the document again." Then send the run again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
-- **In Task 12, only one of the two files arrived.** Start another fresh chat, with memory off, and attach both files in one message. A run that starts without its brief works from the files alone, so it cannot prove your brief.
+- **In Task 11, only one of the two files arrived.** Start another fresh chat, with memory off, and attach both files in one message. A run that starts without its brief works from the files alone, so it cannot prove your brief.
 - **You reach your app's limit.** Your chat and your document keep everything. Carry on later, from the next task.
 
 ## Apply it to your vertical (15 minutes)

@@ -37,7 +37,7 @@ Read the first result as a test of your brief (Lesson 5.5). Find its biggest pro
 
 - More than one round.
 - "Fine as it is" for a decision you are happy to leave to the worker.
-- The rerun's rows, other than the columns and the hard rule. Task 12 grades the rows.
+- The rerun's rows, other than the columns and the hard rule. Task 11 grades the rows.
 
 ## Take it to work
 

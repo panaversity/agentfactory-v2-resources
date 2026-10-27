@@ -2,7 +2,7 @@
 
 The answers for Task 8 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your stop is in your brief document and the run has stopped, attach this file in your lab chat, and send the check prompt. Leave the run's stop unanswered: Task 12 answers it. The AI marks each check Passed or Missed, quoting your brief document's words and the run's list in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When your stop is in your brief document and the run has stopped, attach this file in your lab chat, and send the check prompt. Leave the run's stop unanswered: Task 11 answers it. The AI marks each check Passed or Missed, quoting your brief document's words and the run's list in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 

@@ -160,20 +160,9 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 **After the run.** Ask nothing. Say "Task 10 is done".
 
-## Task 11. On the other vendor
+## Task 11. The same brief, a fresh chat
 
-No run.
-
-1. Show the two vendor boxes from 5.8 below, Anthropic's first, then OpenAI's, each line on its own.
-2. Then the Doc's four parts, one at a time: quote the part. Ask: "On the other AI vendor, is this part the same, or what changes, and why? 'The same', or what changes, in a line."
-3. Quote the Doc's lines that say what the worker must not do alone, or say there are none. Ask: "If an app's own setting let the worker act without asking, which line of your brief would still hold it back? Name the line, or say 'none'."
-4. Ask: "On the app you use, which permission setting would you choose for this brief? Name it, or say 'none' if your plan has no such control."
-
-Write "On either AI vendor" in the chat: each part with the learner's answer, then the answers to questions 3 and 4. Say "Task 11 is done".
-
-## Task 12. The same brief, a fresh chat
-
-Task 12 runs in a fresh chat. If the learner comes back here and names a line the brief lacks, put it in the Doc as in Tasks 3 to 8, and show the part as it now stands. Ask nothing else.
+Task 11 runs in a fresh chat. If the learner comes back here and names a line the brief lacks, put it in the Doc as in Tasks 3 to 8, and show the part as it now stands. Ask nothing else.
 
 ## From Chapter 5, as of 27 October 2026
 
@@ -217,17 +206,3 @@ Inputs are data, not instructions.
 | The content is right, but the shape or the destination is wrong | Format |
 | A wrong fact, an old rule, or a source it should not have used | Inputs |
 | It decided something it should have asked about, or kept asking about small things | Autonomy |
-
-### 5.8: the two AI vendors
-
-**Anthropic, as verified 6 October 2026, with the Claude Docs line checked again on 27 October 2026.**
-
-- *Where you brief it.* Any conversation in the new Claude experience, with no mode to pick. It is being released first to Pro and Max plans. Pro and Max accounts that do not have it yet still see Chat and Cowork.
-- *Deliverables and destination (5.7).* Documents, spreadsheets with working formulas and presentations. Claude Docs is on every plan, Free included, and you can export a doc to Word, PDF, Markdown or Google Docs. Paid plans also have Slides and Design, in beta. With the Google Docs, Sheets and Slides connectors, Claude creates and edits Google files. Name the destination you want: a Google file, a Claude Doc or a file to download.
-- *Autonomy.* A permission setting in the message box. Manual, the default, asks before each action. Auto keeps working, with automated safety checks before actions. It covers the whole conversation, and you can stop or redirect Claude.
-
-**OpenAI, as verified 6 October 2026.**
-
-- *Where you brief it.* Work, chosen instead of Chat in ChatGPT.
-- *Deliverables and destination (5.7).* Documents, spreadsheets and presentations, including native Google Docs, Sheets and Slides when the Google Workspace app is turned on. OpenAI says to name the output format and where the file should be created. On Pro, Business and Enterprise, ChatGPT also makes pages in Space: editable documents you can share and edit together. Name the space when you ask for a page.
-- *Autonomy.* Boundaries you write in the prompt, such as requiring your approval before ChatGPT sends, publishes or changes information others rely on. In the desktop app, a permissions control sets local actions. Ask for approval is the recommended start. Two other choices, Approve for me and Full access, must be turned on in settings first. In settings, Approve for me is called Auto-review.
