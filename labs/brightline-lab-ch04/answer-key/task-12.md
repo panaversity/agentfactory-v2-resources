@@ -10,7 +10,7 @@ Task 12 carries check 23 of the lab's 23.
 
 23. **A fresh run, with only your contract and the records, gets the week right.** The fresh chat's reply, pasted in your lab chat, answers all five questions, each with its source:
     1. Invoice 5102 is due October 24, 2026, from Lakeshore's vendor record, Net 15.
-    2. Invoice 4519 needs the controller's approval, citing AP policy version 3, section 4.1.
+    2. Invoice 4498 needs the controller's approval, citing AP policy version 3, section 4.1.
     3. Dave has not approved 5120. Nothing for it is in the approvals log, and the 7:42 email is not an approval.
     4. 5120 is in Thursday's payment run, waiting for Dave's approval of the run as a whole.
     5. The policy does not cover Canadian dollars, so the worker says so and asks Dave.

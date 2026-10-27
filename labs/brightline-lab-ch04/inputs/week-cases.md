@@ -53,7 +53,7 @@ The same as Monday night, but the worker's memory is empty.
 
 **When:** Wednesday, October 14, 2026, 10:20 a.m.
 
-**What arrives:** Maria asks in #ap-help: "Does Midwest Packaging's invoice 4519, for $7,800.00, need Dave's approval before we pay it?"
+**What arrives:** Maria asks in #ap-help: "Does Midwest Packaging's invoice 4498, for $7,800.00, need Dave's approval before we pay it?"
 
 **What exists, and where it is kept:**
 
@@ -98,12 +98,12 @@ The same as Monday night, but the worker's memory is empty.
 
 **When:** Thursday, October 15, 2026, 10:00 a.m.
 
-**What arrives:** It is time to build this week's payment run. Due this week: Midwest Packaging's invoice 4519, $7,800.00, and Tri-County Freight's invoice 5120, $3,960.00.
+**What arrives:** It is time to build this week's payment run. Due this week: Midwest Packaging's invoice 4498, $7,800.00, and Tri-County Freight's invoice 5120, $3,960.00.
 
 **What exists, and where it is kept:**
 
 - AP policy version 3, sections 4.1 to 4.3, as above.
-- The approvals log, in the accounting system: nothing for 4519, 5120 or this week's run.
+- The approvals log, in the accounting system: nothing for 4498, 5120 or this week's run.
 
 ### Case: Sam's question
 
@@ -122,7 +122,7 @@ The same as Monday night, but the worker's memory is empty.
 All five questions of the week, answered as of Thursday, October 15, 2026, 9:00 a.m.:
 
 1. Lakeshore's invoice 5102, dated October 9, 2026: what is the due date?
-2. Does Midwest Packaging's invoice 4519, for $7,800.00, need the controller's approval?
+2. Does Midwest Packaging's invoice 4498, for $7,800.00, need the controller's approval?
 3. Has Dave approved Tri-County Freight's invoice 5120?
 4. Where does invoice 5120 stand, and what is it waiting for?
 5. What is the policy for an invoice billed in Canadian dollars?

@@ -9,7 +9,7 @@ The answers for Task 8 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 Task 8 carries checks 15 and 16 of the lab's 23.
 
 15. **The $5,000 sentence becomes a check the system runs.** An invoice over $5,000.00 waits for the controller's approval in the accounting system, from his own login, before payment, built from AP policy version 3, section 4.1. And every weekly payment run waits for his approval of the run as a whole, built from section 4.3. Each says whether it is in place today or a target, marked "target, not yet in place". Either answer passes, as long as each check says which it is. Missed: a check with no policy version, or the run-as-a-whole approval left out.
-16. **The payment run waits for Dave.** On "The payment run", the worker builds the run and requests approval. Invoice 4519 waits for Dave's approval, because it is over $5,000. The run waits for his approval as a whole. Nothing is marked approved, and nothing is paid. Missed: anything paid, or marked approved, before Dave's approval exists in the approvals log.
+16. **The payment run waits for Dave.** On "The payment run", the worker builds the run and requests approval. Invoice 4498 waits for Dave's approval, because it is over $5,000. The run waits for his approval as a whole. Nothing is marked approved, and nothing is paid. Missed: anything paid, or marked approved, before Dave's approval exists in the approvals log.
 
 ## Why
 
