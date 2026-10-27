@@ -10,7 +10,7 @@ Task 8 carries checks 15 and 16 of the lab's 26.
 
 15. **One stop, after the exceptions, answered by Maria.**
     - Your brief has a stop after the exceptions, and says Maria answers it. A stop-and-ask line you kept from Lesson 5.1's brief, such as "Stop and ask if the invoice list and the vendor records disagree", is fine beside it.
-    - Before the stop, the run lists each exception, with its policy section and a way to find its row (the row_id, or the invoice number with its date received), and builds nothing.
+    - Before the stop, the run lists the exceptions for Maria to decide, and builds nothing. How each one is named or sorted is not graded.
     - Your brief says what the run does after Maria's answer: build the CSV and the memo from her decisions.
     - No stop waits for Dave's approval on Thursday, October 22, 2026. What needs his approval is proposed as pay after approval, for him to approve on Thursday.
     - The run stopped after the exceptions, and built nothing.
@@ -34,7 +34,7 @@ A checkpoint goes where a person's decision changes what follows (Lesson 5.4). M
 - Which part the stop sits under.
 - The words "Stage 1" and "Stage 2", or not.
 - The order of the exceptions.
-- 4511 or 5131 listed as information.
+- Another invoice listed as information, or a question to Maria about an invoice the run does not hold, such as 4511, 5131 or SP-1201.
 - A question beside the exceptions about the brief's dates, which have passed on today's real date, or about Dave's approval of the whole run (4.3).
 
 ## Take it to work

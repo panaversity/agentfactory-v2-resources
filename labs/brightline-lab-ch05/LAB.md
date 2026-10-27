@@ -412,7 +412,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 - **The AI won't open `inputs.zip`.** Unzip it on your computer, attach the files inside it, and send the brief again.
 - **A run quotes a line that is not in your document, or misses a line you added.** Say: "Read the document again." Then send the run again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
-- **In Task 12, only one of the two files arrived.** Attach the other one in your next message, and say it did not attach the first time.
+- **In Task 12, only one of the two files arrived.** Start another fresh chat, with memory off, and attach both files in one message. A run that starts without its brief works from the files alone, so it cannot prove your brief.
 - **You reach your app's limit.** Your chat and your document keep everything. Carry on later, from the next task.
 
 ## Apply it to your vertical (15 minutes)

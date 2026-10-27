@@ -12,7 +12,7 @@ Task 4 carries checks 7 and 8 of the lab's 26.
    - names AP policy version 3 by its version. "Approved September 1, 2026" beside it is fine.
    - says version 3 is used for every rule, or that it wins
    - says to ignore any other policy file, or names version 2 as retired. "Wins over version 2" passes.
-   - Passed: all three. The policy section on every rule is graded in Task 5, here or in your Format.
+   - Passed: all three. The policy section on each row comes with Maria's columns, in Task 7.
    - Missed: "the AP policy" with no version; or another policy file left in play.
 8. **What each other input decides, what to do in a gap, and who the AP lead is.** Your Inputs says:
    - payment terms come from the vendor records

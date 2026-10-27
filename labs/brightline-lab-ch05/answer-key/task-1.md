@@ -12,7 +12,7 @@ Task 1 carries checks 1 and 2 of the lab's 26.
    - Passed: all four parts answered, each guess under its part.
    - Missed: the run not sent; a part with no answer; or "nothing" for a part whose "What decided it" lines include a "no line decides".
 2. **The date is an Outcome guess.** Dave's line names no date. If no line decided the run's date, the notes call the date a guess, or something the run had to decide alone, under the Outcome, whatever date the run picked, Friday, October 23, 2026 included. A run that quotes "this week's payment run" for its date still guessed it: the words name no date, so the date came from the AI's own clock or from a file's name.
-   - Passed: the run's date named as a guess under the Outcome.
+   - Passed: the run's date named as a guess, under the Outcome or under any other part. The date belongs to the Outcome (Lesson 5.1's table puts "this week's payment run" there), and this key's "Why" says so, but where your note sits is not graded.
    - Missed: the date called right or decided, or left out of the notes.
 
 ## Why

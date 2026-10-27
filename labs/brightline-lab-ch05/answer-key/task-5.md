@@ -11,10 +11,9 @@ Task 5 carries checks 9 and 10 of the lab's 26.
 9. **A CSV Maria can check row by row.** Your Format asks for:
    - a CSV, or a table with fixed columns, with one row per open invoice
    - each row tied to the invoice list's row_id, or to another way to tell apart two rows with the same invoice number, such as the date received
-   - a blank, and a reason, for a value the worker cannot fill (Lesson 5.7)
-   - the policy section on every row, here or in your Inputs
+   - how to mark a value the worker cannot fill, such as a blank with its reason, or "MISSING" (Lesson 5.7)
    - no prose around the rows
-   - Passed: all five.
+   - Passed: all four. The policy section on each row comes with Maria's columns in Task 7.
    - Missed: any one missing, such as the columns from Lesson 5.7 with no row_id.
 10. **A memo for Dave, decisions first, a note to Maria, and where each goes.** Your Format asks for:
     - a one-page memo for Dave that starts with the decisions he must make

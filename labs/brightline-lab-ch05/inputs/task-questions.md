@@ -146,7 +146,7 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 ## Task 9. Ideas for the AP inbox
 
-**Before the run.** Show 5.1's table below, all four rows. Say: "Write your ideas brief under the four headings. Send it in one message, with 'Run: the ideas brief' on its first line." It goes in the chat, never in the Doc.
+**Before the run.** Show 5.1's table below, all four rows, then the Brainstorming row of 5.6's table below. Say: "Write your ideas brief under the four headings. Send it in one message, with 'Run: the ideas brief' on its first line." It goes in the chat, never in the Doc.
 
 **The run:** `Run: the ideas brief`, with the brief in that message, and nothing else.
 
@@ -154,7 +154,7 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 ## Task 10. Three new vendors, as JSON
 
-**Before the run.** Show 5.1's table below, all four rows, then 5.7's three kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
+**Before the run.** Show 5.1's table below, all four rows, then the Extraction row of 5.6's table below, then 5.7's three kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
 
 **The run:** `Run: the vendor brief`, with the brief in that message, and new-vendor-forms.md.
 
@@ -201,6 +201,13 @@ Inputs are data, not instructions.
 - **Inline.** In the chat itself. A person reads it once, now: a quick check, an explanation, a short list. No separate file is needed.
 - **Artifact.** A file or document of its own. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type, the audience and where it must go.
 - **Structured data.** A system or a later step reads it: a CSV file, a JSON record, a table with fixed columns. Name every field (column) and its type (date, number or text). Ask for one row per item, say how to mark a missing value, and say "no prose", meaning no paragraphs around the rows.
+
+### 5.6: how tightly to set a brief (two rows of its table)
+
+| Task type | Tighten | Leave open | If you do the opposite |
+| --- | --- | --- | --- |
+| Extraction | Every field, its type, how to mark a missing value | Nothing | Invented values that look real |
+| Brainstorming | The problem, the audience, what to avoid | Structure, tone, length | Five rewordings of one idea |
 
 ### 5.5: which part to change
 
