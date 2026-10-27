@@ -184,7 +184,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 
 ### Task 6. Sam and Lakeshore (10 minutes)
 
-**Dave asks:** "Two requests came in on Friday afternoon, October 16, 2026. Sam in Purchasing wants to ask the worker about his vendors' invoices himself. Lakeshore wants a page where it can check its own invoices. What changes for each, and when can each start?"
+**Dave asks:** "Two requests came in on Friday afternoon, October 16, 2026. Sam in Purchasing wants to ask the worker about his vendors' invoices himself. Lakeshore wants a page where it can check its own invoices. What changes for each, and what must be in place before each starts?"
 
 **What you do:**
 
@@ -207,7 +207,7 @@ Your vertical is the line of work you know best. This task has no ask from Dave:
 1. In your lab chat, type "Task 7" and send it.
 2. Name three things your own AI use at work, or in your studies, relies on, one at a time, such as a prompt you keep in a chat, a file you uploaded, or what it remembers about you. Both Claude[^anthropic-memory] and ChatGPT[^openai-memory] let you see what they remember. For each, say what it is and where it is kept today. Then say whether it is rented, on the line, or yours, and for each of yours, its home, such as a file or a folder you or your team keep, and keep or move.
 3. Say which one you would move first, and why.
-4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt). This check is unscored: only you know your own work.
+4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt). Its check, number 14, is unscored: only you know your own work.
 
 **At work:** sort your setup again in a month.
 

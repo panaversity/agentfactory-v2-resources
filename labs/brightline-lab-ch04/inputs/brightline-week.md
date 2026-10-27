@@ -26,7 +26,7 @@ This file says what Brightline's AP Worker is made of, and what happened in one 
 | 6 | Connector: accounting system | The worker uses it to create and change register rows, and to change invoice status. Set up with Maria's login | The AI vendor's app |
 | 7 | Connector: AP inbox | Reads the AP inbox | The AI vendor's app |
 | 8 | #ap-help | Where staff ask the worker questions | Brightline's team chat |
-| 9 | Dave's run approvals | Dave approves each invoice over the limit in the accounting system, from his own login. He approves each weekly payment run on Thursday by replying "approved" in #ap-help | The run approvals: the team chat's history |
+| 9 | Dave's run approvals | Dave approves each invoice over the limit in the accounting system, from his own login. He approves each weekly payment run on Thursday by replying "approved" in #ap-help | The run approvals are in the team chat's history |
 | 10 | Run notes | What the worker did on each invoice in each run, and what each invoice waits for | Typed into the shared project's chat after each run. No other copy |
 
 ### The worker's memory: its four entries

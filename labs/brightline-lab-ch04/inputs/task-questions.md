@@ -21,7 +21,7 @@ One document beside the chat, titled "Where each part lives: Brightline's AP Wor
 - Memory, on the line: the AI vendor keeps it, but what it remembers is about Brightline.
 - Ours: Brightline's own records. The learner places these in the second pass.
 
-Then show each of IT's ten parts, one at a time: its number and name, what it is, and where it is kept today, each on its own line. Ask: "Is it Channels, Runtime, Memory, or Ours? Sort it by whose it is, not by where it sits today. One word." Write the row: for Channels or Runtime, "Rented" and that layer under Home; for Memory, "On the line" and "Memory"; for Ours, "Ours", with Home and Keep or move left for the second pass.
+Then show each of IT's ten parts, one at a time: its number and name, what it is, and where it is kept today, each on its own line. For part 4, say only that its four entries come in Task 2. Ask: "Is it Channels, Runtime, Memory, or Ours? Sort it by whose it is, not by where it sits today. One word." Write the row: for Channels or Runtime, "Rented" and that layer under Home; for Memory, "On the line" and "Memory"; for Ours, "Ours", with Home and Keep or move left for the second pass.
 
 **Second pass.** Show Brightline's homes first, one line each:
 
@@ -37,7 +37,7 @@ Then show again each part the learner called Ours, one at a time: its name, what
 ## Task 2. Monday: the wrong due date
 
 1. Show Monday night from brightline-week.md: what was asked, what the worker did, and what existed and where it was kept. Ask: "Which should have answered, the memory or the vendor record, and what is the right due date? Answer: the source, then the date."
-2. Ask: "Memory and the record disagreed. Where is that written down, and who is told? Answer: where, then who."
+2. Ask: "Memory and the record disagreed. Where should that be written down, and who should be told? Answer: where, then who."
 3. Show the four memory entries, one at a time, each with what Brightline's records say about it. Ask: "Keep it, remove it, or rewrite it as a pointer to where the fact lives? One answer." Write the learner's decisions in the Memory row's Keep or move cell, in a few words.
 4. Ask: "The wipe test: after the memory changes you just decided, if the worker's memory were wiped tonight, would tomorrow's answers still be right? Yes or no, and why, in a few words."
 
@@ -62,7 +62,7 @@ Write Thursday's paragraph under "The week's mistakes".
 
 ## Task 5. Friday: if we switch AI vendors
 
-1. Show Friday from brightline-week.md. Then build two lists from the map, without changing it: the parts marked Rented, and the parts marked Ours, with memory on its own line. Show both, headed only "Rented" and "Ours". Ask: "Answer IT in one sentence: what the worker is, what comes with us to a new AI vendor, and what we rebuild there."
+1. Show Friday from brightline-week.md. Then build two lists from the map, without changing it: the parts marked Rented, and the parts marked Ours, with memory on its own line. Show both, headed only "Rented" and "Ours", with memory on its own line under neither heading. Ask: "Answer IT in one sentence: what the worker is, what comes with us to a new AI vendor, and what we rebuild there."
 2. Ask: "Each run borrows a computer for its work. If that computer were wiped tonight, what would we lose, once the moves on the map are done? A few words."
 3. Show "How each AI vendor lets a worker read a record" from brightline-week.md. Ask: "On the app and plan you use yourself, would the worker read the policy from its home, or from an uploaded copy? Answer: home or copy, then, for a copy, what keeps it current."
 4. Ask: "What should start the worker each time, and how long would you let it wait? You choose the wait. Answer: the event, then the longest wait."
@@ -78,7 +78,7 @@ First show these four lines: when others start to use a worker, four things can 
 - Where it runs.
 - Who answers for it.
 
-1. Show Sam's message from brightline-week.md. Ask: "For Sam: what changes, and whose login must the worker have before he starts? Answer: what changes, then whose login."
+1. Show Sam's message from brightline-week.md. Ask: "Once Sam can ask, who does the worker work for, and whose login must it have before he starts? Answer: who it works for, then whose login."
 2. Ask: "Sam asked two things about the $7,800 invoice: does it need approval, and will the worker mark it approved? What does the worker answer? Answer: to the first, then to the second."
 3. Show Lakeshore's email from brightline-week.md. Ask: "For Lakeshore's page: whose login does the worker use, and who answers to Lakeshore? Answer: whose login, then who answers."
 4. Ask: "Lakeshore's questions and invoices would pass through the worker. What must Brightline be able to say about Lakeshore's data before the page starts, and can the page start now? Answer: what Brightline must say, then yes or no."
