@@ -145,7 +145,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 3" and send it. The AI shows what happened on Wednesday, and what existed.
-2. Answer its five questions, each in a few words.
+2. Answer its four questions, each in a few words.
 3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 6 and 7 passed.
@@ -216,7 +216,7 @@ Your vertical is the line of work you know best. This task has no ask from Dave:
 ## If something goes wrong
 
 - **The AI wrote the map in the chat, not in a document.** Ask it to "put the whole map in one editable document beside our chat, a Claude Doc in Claude or a Writing block in ChatGPT."
-- **Your app shows no document beside the chat.** Keep the map in the chat: at the end of each task, ask the AI to print the whole map.
+- **Your app shows no document beside the chat.** Keep the map in the chat: at the end of each task, ask the AI to print the whole map. At the end of the lab, copy it into a document of your own.
 - **The AI made a new document instead of changing the one it had.** Say: "Change the first document. Do not make a new one."
 - **The AI told you whether an answer was right, or suggested one.** Say: "Ask me, and write what I decide."
 - **The AI won't open `inputs.zip`.** Unzip it on your computer, attach the two files inside it, and send the brief again.

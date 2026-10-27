@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 3 of the lab's 14.
+Task 1 carries checks 1 to 3 of the lab's 13 scored checks.
 
 1. **The rented parts, and memory.** The scheduled task: Runtime. The two connectors: Channels or Runtime, either passes, because both are rented. #ap-help: Channels. Memory: Memory, on the line. Missed: any of these marked Ours.
 2. **The five owned parts, each in its home.** Project instructions: Role Contract. AP policy version 1: KSoR (marking it retired or superseded is welcome, never required). AP policy version 3: KSoR. Dave's approvals: Company systems (DSoR also passes, because the door checks for the approval and keeps its evidence). Run notes: SSoR. Missed: an owned part in another home, or marked rented.

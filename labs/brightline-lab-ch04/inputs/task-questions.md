@@ -37,36 +37,35 @@ Then show again each part the learner called Ours, one at a time: its name, what
 ## Task 2. Monday: the wrong due date
 
 1. Show Monday night from brightline-week.md: what was asked, what the worker did, and what existed and where it was kept. Ask: "Which should have answered, the memory or the vendor record, and what is the right due date? Answer: the source, then the date."
-2. Ask: "Memory and the record disagreed. Where is that written down, and who is told? A few words."
+2. Ask: "Memory and the record disagreed. Where is that written down, and who is told? Answer: where, then who."
 3. Show the four memory entries, one at a time, each with what Brightline's records say about it. Ask: "Keep it, remove it, or rewrite it as a pointer to where the fact lives? One answer." Write the learner's decisions in the Memory row's Keep or move cell, in a few words.
-4. Ask: "The wipe test: if the worker's memory were wiped tonight, would tomorrow's answers still be right? Yes or no, and why, in a few words."
+4. Ask: "The wipe test: after the memory changes you just decided, if the worker's memory were wiped tonight, would tomorrow's answers still be right? Yes or no, and why, in a few words."
 
 Write Monday's paragraph under "The week's mistakes".
 
 ## Task 3. Wednesday: the missed approval
 
 1. Show Wednesday from brightline-week.md: what was asked, what the worker did, and what existed and where it was kept. Ask: "Which should have answered, and where should it be kept? Answer: the source, then its home."
-2. Show Dave's rule, from policy version 3, section 4.1: "Invoices over $5,000.00 need the controller's approval before payment." Say: "The rule is a sentence." Ask: "Which record holds it? One word."
-3. Ask: "What makes the $7,800.00 payment actually wait for Dave's approval? And is that in place at Brightline today? Answer: the layer, then in place or a target."
-4. Ask: "Where is the proof of his approval kept? One word."
-5. Show Canadian dollars from brightline-week.md: what Maria asked, and what existed. Ask: "What should the worker answer Maria? A few words."
+2. Show Dave's rule, from policy version 3, section 4.1: "Invoices over $5,000.00 need the controller's approval before payment." Ask: "A written rule cannot stop a payment by itself. What makes the $7,800.00 payment actually wait for Dave's approval, and is that in place at Brightline today? Answer: the layer, then in place or a target."
+3. Ask: "When Dave approves from his own login, where is the proof of his approval kept? Answer: the layer."
+4. Show Canadian dollars from brightline-week.md: what Maria asked, and what existed. Ask: "What should the worker answer Maria? A few words."
 
 Write Wednesday's paragraph under "The week's mistakes".
 
 ## Task 4. Thursday: the false approval
 
 1. Show Thursday from brightline-week.md: what the worker did, what Maria asked, and what existed and where it was kept. Ask: "Has Dave approved? And would a real email from Dave have counted? Answer: yes or no for each, and why, in a few words."
-2. Ask: "Where does 5120 stand, and what may the worker write about it? A few words."
+2. Ask: "Where does 5120 stand, and what may the worker write in its register row? Answer: where it stands, then what it may write."
 3. Show: "The connector let the worker change the row with Maria's login, and nothing checked the change." Ask: "What should stand between the worker and the accounting system, and whose login should it use? Answer: the layer, then whose login."
 
 Write Thursday's paragraph under "The week's mistakes".
 
 ## Task 5. Friday: if we switch AI vendors
 
-1. Show Friday from brightline-week.md. Then build two lists from the map, without changing it: the parts marked Rented ("rebuild on a new AI vendor") and the parts marked Ours ("carry across"), and memory on its own line ("on the line"). Show both. Ask: "One sentence for IT: what the worker is, what comes with us, and what we rebuild. A few words are enough."
+1. Show Friday from brightline-week.md. Then build two lists from the map, without changing it: the parts marked Rented ("rebuild or reconnect on a new AI vendor") and the parts marked Ours ("carry across"), and memory on its own line ("on the line"). Show both. Ask: "One sentence for IT: what the worker is, what comes with us, and what we rebuild. A few words are enough."
 2. Ask: "If the computer the worker ran on were wiped tonight, what would we lose, once the moves on the map are done? A few words."
 3. Show "How each AI vendor lets a worker read a record" from brightline-week.md. Ask: "On the app and plan you use, would the worker read the policy from its home, or from an uploaded copy? If a copy, what stops it going stale? A few words."
-4. Ask: "What should start the worker each time, and how long may Brightline wait for it? Answer: the event, then the longest wait."
+4. Ask: "What should start the worker each time, and how long would you let it wait? You choose the wait. Answer: the event, then the longest wait."
 
 Write "If we switch AI vendors": both lists, then the learner's four answers.
 
@@ -79,10 +78,10 @@ First show these four lines: when others start to use a worker, four things can 
 - Where it runs.
 - Who answers for it.
 
-1. Show Sam's message from brightline-week.md. Ask: "For Sam: what changes, and when can he start? A few words."
+1. Show Sam's message from brightline-week.md. Ask: "For Sam: which of the four things changes, and whose login must the worker have before he starts? Answer: what changes, then whose login."
 2. Ask: "What does the worker tell Sam about the $7,800 invoice? A few words."
 3. Show Lakeshore's email from brightline-week.md. Ask: "For Lakeshore's page: whose login does the worker use, and who answers to Lakeshore? A few words."
-4. Ask: "Lakeshore's questions and invoices would pass through the worker. What must Brightline be able to say about Lakeshore's data before the page starts, and can it start now? A few words."
+4. Ask: "Lakeshore's questions and invoices would pass through the worker. What must Brightline be able to say about Lakeshore's data before the page starts, and can the page start now? Answer: what Brightline must say, then yes or no."
 5. Ask: "Lakeshore also asks when Tri-County's invoice 5120 will be paid. What does the worker say? A few words."
 
 Write "When others use it": Sam, then Lakeshore.

@@ -40,7 +40,7 @@ This file says what Brightline's AP Worker is made of, and what happened in one 
 
 What Brightline's records say about each entry:
 
-- The register order: no record says it. It is Maria's preference.
+- The register order: no record says it.
 - Lakeshore's terms: Lakeshore's vendor record, in the accounting system, says Net 15, terms last changed August 14, 2026.
 - The approval limit: AP policy version 3, section 4.1, says over $5,000.
 - Foreign currency: no version of the AP policy mentions foreign currency.

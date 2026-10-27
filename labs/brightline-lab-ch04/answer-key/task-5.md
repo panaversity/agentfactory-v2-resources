@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 5 carries checks 10 and 11.
+Task 5 carries checks 10 and 11 of the lab's 13 scored checks.
 
 10. **The worker is its records.** The sentence for IT says, in your words, that the worker is its Role Contract and its records, which come with Brightline, and that the rented parts are rebuilt: the connectors, the app and its schedule. Memory may be rebuilt or left behind, and either passes. A wiped computer loses nothing that matters, once the moves are done: everything that must last is in the records, and a half-done run starts again from its case file. Missed: anything owned on the rebuild list, or anything owned lost with the computer.
 11. **A connection or a looked-after copy, and a business trigger.** The worker reads the policy from its home through a connector where the plan allows one: on Claude, any plan can connect one record; on ChatGPT, read access is documented for Pro and full access for business workspaces, as of October 15, 2026. On an uploaded copy, the copy names its version in its file name and first line, and is replaced on every approval, or Wednesday's stale copy comes back. The worker starts on a business event, such as an invoice reaching the AP inbox, within a wait Brightline chooses, such as one hour. Missed: a copy with no version and no replacement, or a start time with no business event or no longest wait.
