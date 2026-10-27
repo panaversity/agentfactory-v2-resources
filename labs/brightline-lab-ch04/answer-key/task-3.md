@@ -2,7 +2,7 @@
 
 The answers for Task 3 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When you have answered Task 3's five questions, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your map or your answers in the chat. You have the final say. If a check passed only after you changed an answer, you still get it: fixing it is the skill this lab teaches.
+**How this key is used.** When you have answered Task 3's four questions, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your map or your answers in the chat. You have the final say. If a check passed only after you changed an answer, you still get it: fixing it is the skill this lab teaches.
 
 ## The checks
 

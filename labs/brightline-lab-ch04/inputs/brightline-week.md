@@ -26,7 +26,7 @@ This file says what Brightline's AP Worker is made of, and what happened in one 
 | 6 | Connector: accounting system | The worker uses it to create and change register rows, and to change invoice status. Set up with Maria's login | The AI vendor's app |
 | 7 | Connector: AP inbox | Reads the AP inbox | The AI vendor's app |
 | 8 | #ap-help | Where staff ask the worker questions | Brightline's team chat |
-| 9 | Dave's approvals | Dave approves each weekly payment run on Thursday by replying "approved" in #ap-help | The team chat's history |
+| 9 | Dave's run approvals | Dave approves each invoice over the limit in the accounting system, from his own login. He approves each weekly payment run on Thursday by replying "approved" in #ap-help | The run approvals: the team chat's history |
 | 10 | Run notes | What the worker did on each invoice in each run, and what each invoice waits for | Typed into the shared project's chat after each run. No other copy |
 
 ### The worker's memory: its four entries
@@ -71,6 +71,7 @@ What Brightline's records say about each entry:
 - AP policy version 1, uploaded to the shared project in March 2026. Section 4.1: "Invoices over $10,000.00 need the controller's approval before payment." Status: superseded.
 - AP policy version 3, an attachment in Dave's email. Approved September 1, 2026, by Dave Kowalski. Section 4.1: "Invoices over $5,000.00 need the controller's approval before payment."
 - The worker's memory, learned June 9: "Controller approval is needed only for invoices over $10,000."
+- The accounting system: nothing in it makes a payment over $5,000 wait for Dave. Anyone with an AP login can release it.
 
 ### Later that morning: Canadian dollars
 

@@ -17,13 +17,13 @@ One document beside the chat, titled "Where each part lives: Brightline's AP Wor
 **First pass.** Show these four lines first:
 
 - Channels, rented: where people and systems reach the worker.
-- Runtime, rented: the app that does the work, and its schedule.
+- Runtime, rented: the app that does the work, its connectors and its schedule.
 - Memory, on the line: the AI vendor keeps it, but what it remembers is about Brightline.
 - Ours: Brightline's own records. The learner places these in the second pass.
 
-Then show each of IT's ten parts, one at a time: its number and name, what it is, and where it is kept today, each on its own line. Ask: "Is it Channels, Runtime, Memory, or Ours? One word." Write the row: for Channels or Runtime, "Rented" and that layer under Home; for Memory, "On the line" and "Memory"; for Ours, "Ours", with Home and Keep or move left for the second pass.
+Then show each of IT's ten parts, one at a time: its number and name, what it is, and where it is kept today, each on its own line. Ask: "Is it Channels, Runtime, Memory, or Ours? Sort it by whose it is, not by where it sits today. One word." Write the row: for Channels or Runtime, "Rented" and that layer under Home; for Memory, "On the line" and "Memory"; for Ours, "Ours", with Home and Keep or move left for the second pass.
 
-**Second pass.** Show these six homes first, one line each:
+**Second pass.** Show Brightline's homes first, one line each:
 
 - Role Contract: the worker's one-page definition.
 - KSoR: the approved knowledge, such as the policy, with its version.
@@ -32,7 +32,7 @@ Then show each of IT's ten parts, one at a time: its number and name, what it is
 - Company systems: the accounting system, its vendor records, and the approvals made in it.
 - Evaluations: the cases the worker must pass.
 
-Then show again each part the learner called Ours, one at a time: its name, what it is, and where it is kept today. Ask: "Its home, then keep or move? For example: KSoR, move." Write Home and Keep or move.
+Then show again each part the learner called Ours, one at a time: its name, what it is, and where it is kept today. Ask: "Its home, then keep or move? Answer: its home, then keep or move." Write Home and Keep or move.
 
 ## Task 2. Monday: the wrong due date
 
@@ -78,7 +78,7 @@ First show these four lines: when others start to use a worker, four things can 
 - Where it runs.
 - Who answers for it.
 
-1. Show Sam's message from brightline-week.md. Ask: "For Sam: which of the four things changes, and whose login must the worker have before he starts? Answer: what changes, then whose login."
+1. Show Sam's message from brightline-week.md. Ask: "For Sam: what changes, and whose login must the worker have before he starts? Answer: what changes, then whose login."
 2. Ask: "What does the worker tell Sam about the $7,800 invoice? A few words."
 3. Show Lakeshore's email from brightline-week.md. Ask: "For Lakeshore's page: whose login does the worker use, and who answers to Lakeshore? A few words."
 4. Ask: "Lakeshore's questions and invoices would pass through the worker. What must Brightline be able to say about Lakeshore's data before the page starts, and can the page start now? Answer: what Brightline must say, then yes or no."
@@ -88,7 +88,7 @@ Write "When others use it": Sam, then Lakeshore.
 
 ## Task 7. Your own setup
 
-Ask for three things the learner's own AI use at work relies on, one at a time. For each, ask: "What is it, and where is it kept today? A few words." Then ask: "Is it rented, on the line, or yours? If yours, its home, such as a file or a folder you or your team keep, and keep or move?"
+Ask for three things the learner's own AI use at work, or in their studies, relies on, one at a time. For each, ask: "What is it, and where is it kept today? A few words." Then ask: "Is it rented, on the line, or yours? If yours, its home, such as a file or a folder you or your team keep, and keep or move?"
 
 Then ask: "Which one would you move first, and why? A few words."
 

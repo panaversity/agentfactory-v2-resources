@@ -2,14 +2,14 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: where each part lives](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-In the week of October 12, 2026, Brightline's AP Worker made four mistakes. Each time, it relied on something kept in the wrong place. In this lab you draw the map Dave never had: for each part of the worker, whether it is rented or Brightline's own, where it is kept today, and where it belongs. It takes about an hour and a quarter, in one chat, and you can stop and come back, because the chat and the map keep your work. A free Claude or ChatGPT account is enough.
+In the week of October 12, 2026, Brightline's AP Worker made four mistakes. Each time, it relied on something kept in the wrong place. In this lab you draw the map Dave never had: for each part of the worker, whether it is rented or Brightline's own, where it is kept today, and where it belongs. It takes about an hour and a half, in one chat, and you can stop and come back, because the chat and the map keep your work. A free Claude or ChatGPT account is enough.
 
 **What you will learn:**
 
 - To say, for any part of an AI setup, whether it is rented or yours, and where it belongs.
 - To find what an AI relied on when its answer was wrong, and fix where that fact is kept, not the prompt.
 - To keep memory to preferences, and check it with the wipe test.
-- To turn a rule into something that stops an action, and to say so when the policy is silent.
+- To say what makes a written rule actually stop an action, and to say so when the policy is silent.
 - To keep where the work stands in a record, and send every change through a door that checks it.
 - To say what a switch of AI vendor rebuilds, and what comes with you.
 - To say what changes when others use the worker, and what must not.
@@ -45,7 +45,7 @@ The AI never plays the worker here. It shows you what happened and what existed,
 
 1. In your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you send in Task 1 tells the AI to reply with that task's first question.
 2. Answer each question in a few words. The AI writes your answer on the map.
-3. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change row 9 to Company systems, move." Then send: "Read the map again, and check it again against the key."
+3. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change row [number] to [your new answer]." Then send: "Read the map again, and check it again against the key."
 
 ### The check prompt
 
@@ -68,7 +68,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 
 ## The parts
 
-### Task 1. Rented or ours? (15 minutes)
+### Task 1. Rented or ours? (20 minutes)
 
 **Dave asks:** "IT sent me the list of everything the worker uses, as it stood on Friday, October 16, 2026. Which parts do we rent, and which are ours? For the ones that are ours, where should we keep them, and are they kept there today?"
 
@@ -114,8 +114,8 @@ Autonomy: Grade only. Do not change the map, and do not suggest
    Start with Task 1.
    ```
 
-2. The AI shows four places. Channels and Runtime are rented, Memory is on the line, and the fourth is Ours. Then it shows IT's ten parts, one at a time. Answer each in one word: Channels, Runtime, Memory, or Ours.
-3. The AI shows Brightline's six homes, such as the KSoR, which holds the approved knowledge. Then it shows each part you called Ours again. Answer each with its home, then keep or move, such as "KSoR, move."
+2. The AI shows four places. Channels and Runtime are rented, Memory is on the line, and the fourth is Ours. Then it shows IT's ten parts, one at a time. Answer each in one word: Channels, Runtime, Memory, or Ours. Sort each by whose it is, not by where it sits today.
+3. The AI shows Brightline's homes, such as the KSoR, which holds the approved knowledge. Then it shows each part you called Ours again. Answer each with its home, then keep or move.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 1 to 3 passed, and your map has a row for each of the ten parts.
@@ -162,8 +162,6 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 2. Answer its three questions, each in a few words.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**The hard rule.** One answer fails this task, whatever else is right: taking an email, real or not, as Dave's approval. That is Thursday's mistake again.
-
 **Checkpoint.** Checks 8 and 9 passed.
 
 **At work:** ask who your AI acts as when it changes something, and what checks the change before it happens.
@@ -207,7 +205,7 @@ Your vertical is the line of work you know best. This task has no ask from Dave:
 **What you do:**
 
 1. In your lab chat, type "Task 7" and send it.
-2. Name three things your own AI use at work relies on, one at a time, such as a prompt you keep in a chat, a file you uploaded, or what it remembers about you. Both Claude[^anthropic-memory] and ChatGPT[^openai-memory] let you see what they remember. For each, say what it is and where it is kept today. Then say whether it is rented, on the line, or yours, and for each of yours, its home, such as a file or a folder you or your team keep, and keep or move.
+2. Name three things your own AI use at work, or in your studies, relies on, one at a time, such as a prompt you keep in a chat, a file you uploaded, or what it remembers about you. Both Claude[^anthropic-memory] and ChatGPT[^openai-memory] let you see what they remember. For each, say what it is and where it is kept today. Then say whether it is rented, on the line, or yours, and for each of yours, its home, such as a file or a folder you or your team keep, and keep or move.
 3. Say which one you would move first, and why.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt). This check is unscored: only you know your own work.
 
@@ -225,7 +223,7 @@ Your vertical is the line of work you know best. This task has no ask from Dave:
 
 ## When you are done
 
-You are done when checks 1 to 13 have passed and Task 7 has its three things. Download your map, as a .docx or a .pdf: it is the page you take to work.
+You are done when checks 1 to 13 have passed and Task 7 has its three things. Download your map, as a .docx or a .pdf, or copy it into a document of your own: it is the page you take to work.
 
 ## Exam notes
 
