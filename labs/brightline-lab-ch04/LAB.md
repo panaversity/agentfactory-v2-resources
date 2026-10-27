@@ -45,7 +45,7 @@ The AI never plays the worker here. It shows you what happened and what existed,
 
 1. In your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you send in Task 1 tells the AI to reply with that task's first question.
 2. Answer each question in a few words. The AI writes your answer on the map.
-3. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change row [number] to [your new answer]." Then send: "Read the map again, and check it again against the key."
+3. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change [the row or paragraph] to [your new answer]." Then send: "Read the map again, and check it again against the key."
 
 ### The check prompt
 
@@ -131,7 +131,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 2" and send it. The AI shows what happened on Monday night, and what existed.
-2. Answer its four questions, each in a few words. For the four memory entries, the answer is keep, remove, or rewrite as a pointer to where the fact lives.
+2. Answer each question in a few words. For each of the four memory entries, the answer is keep, remove, or rewrite as a pointer to where the fact lives.
 3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 4 and 5 passed.
@@ -145,7 +145,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 3" and send it. The AI shows what happened on Wednesday, and what existed.
-2. Answer its four questions, each in a few words.
+2. Answer each question in a few words.
 3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 6 and 7 passed.
@@ -159,7 +159,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 4" and send it. The AI shows what the worker did on Thursday morning, what Maria asked, and what existed.
-2. Answer its three questions, each in a few words.
+2. Answer each question in a few words.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 8 and 9 passed.
@@ -173,7 +173,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 5" and send it. The AI builds two lists from your map: what is rented, and what is Brightline's. Later it shows how each AI vendor reaches a record, from [lesson 4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/).
-2. Answer its four questions, each in a few words.
+2. Answer each question in a few words.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 10 and 11 passed.
@@ -189,7 +189,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 6" and send it. The AI shows the four things that can change when others use a worker, from [lesson 4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/), then Sam's message.
-2. Answer its five questions, each in a few words.
+2. Answer each question in a few words.
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 12 and 13 passed.

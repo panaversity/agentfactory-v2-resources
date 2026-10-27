@@ -78,7 +78,7 @@ First show these four lines: when others start to use a worker, four things can 
 - Where it runs.
 - Who answers for it.
 
-1. Show Sam's message from brightline-week.md. Ask: "Once Sam can ask, who does the worker work for, and whose login must it have before he starts? Answer: who it works for, then whose login."
+1. Show Sam's message from brightline-week.md. Ask: "Once Sam can ask, does the worker work for Sam, for Dave, or for both? And whose login must it have before he starts? Answer: Sam, Dave or both, then whose login."
 2. Ask: "Sam asked two things about the $7,800 invoice: does it need approval, and will the worker mark it approved? What does the worker answer? Answer: to the first, then to the second."
 3. Show Lakeshore's email from brightline-week.md. Ask: "For Lakeshore's page: whose login does the worker use, and who answers to Lakeshore? Answer: whose login, then who answers."
 4. Ask: "Lakeshore's questions and invoices would pass through the worker. What must Brightline be able to say about Lakeshore's data before the page starts, and can the page start now? Answer: what Brightline must say, then yes or no."
