@@ -46,7 +46,7 @@ You use two chats. Tasks 1 to 11 run in one lab chat. Task 12 runs in a fresh ch
 
 **The loop.** Every task is the same four steps:
 
-1. Read Dave's ask. Then send "Task" and its number, such as "Task 3".
+1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
 2. The AI asks the task's questions, one at a time. Answer each in a few words, and the AI writes your answer into the document.
 3. Guess what the worker would do, then send the task's test, such as "Test: Monday night". The AI answers as the worker, and names the line of your document that decides it. When no line decides, the worker is guessing, which is what it did that week.
 4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change row 4 to OK." Then send: "Read the document again, and check it again against the key."
@@ -166,8 +166,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 2". For each of the four memory entries, answer keep, rewrite as a pointer to where the fact lives, or remove.
-2. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
+1. In your lab chat, type "Task 2" and send it. The AI quotes the worker's four memory entries, one at a time.
+2. Answer each: keep it, rewrite it as a pointer to where the fact lives, or remove it.
+3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Check 4 passed.
 
@@ -179,8 +180,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 3". Answer each question in a line: which source wins, where the disagreement is written and who is told, how the worker reads the vendor record, and the wipe test.
-2. Guess the due date, then send each test as its own message:
+1. In your lab chat, type "Task 3" and send it. The AI asks the task's questions, one at a time.
+2. Answer each in a line: which source wins, where the disagreement is written and who is told, how the worker reads the vendor record, and the wipe test.
+3. Guess the due date, then send each test as its own message:
 
    ```text
    Test: Monday night
@@ -191,7 +193,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    ```
 
    If a test says the vendor record is out of reach, the worker cannot see the record your rule says wins. Tell the AI how the worker reads it, and test again.
-3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 5 and 6 passed, and Monday is right with and without memory.
 
@@ -205,14 +207,15 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 4". The AI shows Brightline's places. Answer: where the policy's one home is and what it shows on top, what happens to version 1, whether the worker's tools reach the home, and what every answer about policy cites.
-2. Guess, then send:
+1. In your lab chat, type "Task 4" and send it. The AI shows Brightline's places, then asks the task's questions, one at a time.
+2. Answer each: where the policy's one home is and what it shows on top, what happens to version 1, whether the worker's tools reach the home, and what every answer about policy cites.
+3. Guess, then send:
 
    ```text
    Test: Wednesday
    ```
 
-3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 7 and 8 passed, and Wednesday's answer cites version 3.
 
@@ -224,14 +227,15 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 5", and answer in a line.
-2. Guess, then send:
+1. In your lab chat, type "Task 5" and send it. The AI asks the task's question.
+2. Answer in a line.
+3. Guess, then send:
 
    ```text
    Test: Canadian dollars
    ```
 
-3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Check 9 passed.
 
@@ -245,18 +249,19 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 6". Answer each question in a few words:
+1. In your lab chat, type "Task 6" and send it. The AI asks the task's questions, one at a time.
+2. Answer each in a few words:
    - where the story of each invoice and each payment run lives, who may add a step, and what happens to a wrong step
    - what the worker may write about someone else's approval
    - which wins when the register's typed status and the case file disagree
    - whether the worker's tools let it add its own steps there
-2. Guess, then send:
+3. Guess, then send:
 
    ```text
    Test: Thursday 9 a.m.
    ```
 
-3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **The hard rule.** One thing fails any test, whatever else it gets right: taking the email, or a typed status, as Dave's approval. That is Thursday's mistake again.
 
@@ -270,17 +275,18 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 7". Answer each question in a few words:
+1. In your lab chat, type "Task 7" and send it. The AI asks the task's questions, one at a time.
+2. Answer each in a few words:
    - what replaces the accounting connector
    - whether the worker may click a payment, a status or an approval on a screen
    - where an approval lives, how the worker reads it, and what it does with a message that claims one
-2. Guess, then send:
+3. Guess, then send:
 
    ```text
    Test: The lookalike email
    ```
 
-3. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 13 and 14 passed.
 
@@ -292,14 +298,15 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 8". For policy version 3, sections 4.1 and 4.3, answer: which action, what condition, who approves, where, which policy version, and whether it is in place today or a target.
-2. Guess, then send:
+1. In your lab chat, type "Task 8" and send it. The AI asks the task's questions, one at a time.
+2. For policy version 3, sections 4.1 and 4.3, answer: which action, what condition, who approves, where, which policy version, and whether it is in place today or a target.
+3. Guess, then send:
 
    ```text
    Test: The payment run
    ```
 
-3. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 15 and 16 passed.
 
@@ -313,8 +320,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 9". For each place, answer carry or rebuild, and why, in a line. Then answer the question about the lost computer, and write your sentence for IT.
-2. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
+1. In your lab chat, type "Task 9" and send it. The AI shows any part still misplaced, then each place, one at a time.
+2. For each place, answer carry or rebuild, and why, in a line. Then answer the question about the lost computer, and write your sentence for IT.
+3. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 17 and 18 passed.
 
@@ -326,12 +334,13 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 10". The AI shows what each AI vendor offers, from [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/). Answer each question in a few words:
+1. In your lab chat, type "Task 10" and send it. The AI shows what each AI vendor offers, from [4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/), then asks the task's questions, one at a time.
+2. Answer each in a few words:
    - how the worker reads the policy's home on each vendor, and on which plan
    - what it would read on a plan with no connector
    - the business event that starts it
    - the longest delay Brightline accepts
-2. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
+3. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 19 and 20 passed.
 
@@ -343,13 +352,14 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. Send "Task 11". Answer each question in a few words:
+1. In your lab chat, type "Task 11" and send it. The AI asks the task's questions, one at a time.
+2. Answer each in a few words:
    - who may ask the worker for what, and who approves
    - whose login it acts under
    - which of the four things a vendor page needs are in place
    - the rule that keeps each vendor to its own invoices, and one evaluation case that proves it
    - which starts first
-2. Guess, then send each test as its own message:
+3. Guess, then send each test as its own message:
 
    ```text
    Test: Sam's question
@@ -359,7 +369,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Test: Lakeshore's ask
    ```
 
-3. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 21 and 22 passed.
 
