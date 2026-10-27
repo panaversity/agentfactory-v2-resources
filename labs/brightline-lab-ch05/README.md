@@ -1,32 +1,18 @@
-# Brightline lab, Chapter 5: one brief, two AI vendors
+# Lab 5: the payment-run brief
 
-It is Monday, October 19, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio, with about 40 staff. Dave Kowalski, the controller, wants this week's payment run proposed for Friday, October 23. You will brief the AP Worker once and run the same brief in Claude and in ChatGPT Work.
+Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Every name, number, account and company is invented.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 5: the payment-run brief](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The full instructions, Parts A to F, with timings |
-| `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
-| `requests/dave-request.md` | Run A's one-line request |
-| `requests/maria-recipe.md` | Maria's fourteen steps, for the Predict part only |
-| `inputs/open-invoices-2026-10-19.csv` | 15 open invoice rows |
-| `inputs/vendor-records.csv` | Six vendors: the authority on terms and phone numbers |
-| `inputs/approvals-log.csv` | Approvals recorded from the controller's own login |
-| `inputs/ap-policy-v3-excerpt.md` | The governed policy, sections 2 to 6 |
-| `inputs/ap-policy-v2-excerpt.md` | A retired copy of policy version 2 |
-| `inputs/invoice-text-tcf-5161.txt` | The text of one Tri-County Freight invoice |
-| `briefs/four-part-brief-template.md` | The blank Four-Part Brief |
-| `part-f/new-vendor-forms.md` | Part F: three new vendors' setup forms, for Task F2 |
-| `results/predictions.md` | Part A |
-| `results/run-log.md` | Parts B and C: three runs, scored. Save each run's reply beside it, as `run-a-reply.md`, `run-b-reply.md` and `run-c-reply.md` |
-| `results/comparison.md` | Part C: Run B against Run C |
-| `results/iteration-log.md` | Part D: the one-part change and the two stages |
-| `results/transfer-plan.md` | For readers with one AI vendor only |
-| `answer-key/payment-run-answer-key.md` | The right run, the five planted problems, common wrong answers |
-| `answer-key/payment-run-2026-10-23-expected.csv` | The answer, row by row |
-| `answer-key/run-rubric.md` | The 12-point rubric and the two hard fails |
-| `answer-key/four-part-brief-example.md` | One good brief |
-| `answer-key/staged-brief-example.md` | One good two-stage version |
+| `LAB.md` | The lab: the job, and eleven tasks, each checked against its own answer key the moment it is done. |
+| `inputs.zip` | The one file you give the AI, in Task 1 and again in Task 11. It holds the AP folder, `ap-folder`, with Brightline's six files for the payment run. It also holds Maria's fourteen steps, three new vendors' setup forms, and the questions the AI asks you in each task. You don't need to open it. |
 
-Attach only the six files in `inputs/` to a run in Parts B and D. In Part F, attach only `part-f/new-vendor-forms.md`, to Task F2. Part F's answer keys are not in this folder: each task's link downloads its key. Never attach `requests/`, `briefs/`, `results/` or `answer-key/`. Do not open `answer-key/` until you have scored your own runs.
+**The lab's date.** Today is Monday, October 19, 2026, and the job on the page says so.
+
+**The lab needs nothing from an earlier chapter.** Everything it starts from is in this folder.
+
+**Give the AI only `inputs.zip`, your downloaded brief in Task 11, and, at each check, that task's answer key.** Never upload `LAB.md` or this file: they link every answer key.
+
+The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.

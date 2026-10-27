@@ -7,13 +7,13 @@ Three vendors returned Brightline Wholesale Supply's vendor setup form before th
 - **Brightline vendor ID (Brightline use only):** V-1068
 - **Legal business name:** Riverside Tape Co.
 - **Business address:** 1180 Leonard Avenue, Columbus, OH 43219
-- **Accounts receivable contact:** Tom Becker, (614) 555-0193
+- **Accounts receivable contact:** Gail Porter, (614) 555-0193
 - **Remit-to email, for invoices and payment notices:** ar@riversidetape.example
 - **Expected monthly purchases:** $2,600.00
 - **Payment terms requested:** Net 30
 - **Currency for invoices and payments:** USD
 - **W-9:** Received by Brightline on October 14, 2026
-- **Signed:** Tom Becker, Office Manager, October 13, 2026
+- **Signed:** Gail Porter, Office Manager, October 13, 2026
 
 ## Vendor setup form: Great Lakes Label Inc.
 
@@ -34,10 +34,10 @@ Three vendors returned Brightline Wholesale Supply's vendor setup form before th
 - **Brightline vendor ID (Brightline use only):** V-1070
 - **Legal business name:** Pinecrest Wrap Ltd.
 - **Business address:** 88 Bathurst Street, Toronto, ON M5V 2P2, Canada
-- **Accounts receivable contact:** Claire Dubois, (416) 555-0162
+- **Accounts receivable contact:** Elise Martin, (416) 555-0162
 - **Remit-to email, for invoices and payment notices:** accounts@pinecrestwrap.example
 - **Expected monthly purchases:** $1,200.00
 - **Payment terms requested:** Net 30
 - **Currency for invoices and payments:** (left blank)
 - **Tax registration:** Canadian business number on file with Brightline
-- **Signed:** Claire Dubois, Accounts Manager, October 14, 2026
+- **Signed:** Elise Martin, Accounts Manager, October 14, 2026

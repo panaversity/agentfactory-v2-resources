@@ -46,7 +46,7 @@ Then open `answer-key/gates-key.md` and score the gates and your prediction with
 *Where:* In this folder, and one fresh chat.
 
 1. Copy `inputs/ssor/ap-matters-2026-11-12.md` to `ssor/ap-matters.md`. From now on, this is the record, and your spec tells each run to read it. You keep it by hand, and you play the record's part: you assign each new entry its origin, whatever the run proposes.
-2. Copy `templates/standing-spec-template.md` to `workspace/standing-spec.md` and write it. Write for a run that starts fresh and has never heard of Brightline. If you saved `briefs/payment-run-brief-v2.md` in Lab 05, open it too. Chapter 5 said this chapter would put it on a schedule, and this spec is how: keep the lines that still hold, and add what a run that starts fresh needs.
+2. Copy `templates/standing-spec-template.md` to `workspace/standing-spec.md` and write it. Write for a run that starts fresh and has never heard of Brightline. If you downloaded your payment-run brief at the end of Lab 5, open it too. Chapter 5 said this chapter would put it on a schedule, and this spec is how: keep the lines that still hold, and add what a run that starts fresh needs.
 3. In a fresh chat, paste your spec and ask: "Where could a run that starts fresh go wrong with this?" Fix at most three points you agree with: a run reads the whole spec every time, so keep it short.
 4. Open `answer-key/standing-spec-key.md` and score your spec with section 2 of `rubric.md`. Fix the spec before you go on. Never write this week's answers into the spec, such as which invoice to hold: a spec that names them passes the runs without being clear.
 
