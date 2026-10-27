@@ -4,9 +4,9 @@ This file is for the AI. When the learner sends "Task" and a number, ask that ta
 
 ## What each run gets
 
-When the learner sends "Run:" and a name, the run has only what this table lists, and its own date. Nothing else in the zip or in this chat is part of a run, and no answer key is.
+When the learner sends "Run:" and a name, do the job from what this table lists, as that brief says, with today's date as its date. Never pretend not to see the rest of the chat. Instead, under "What decided it", a decision that no line of that brief made, because this chat, an answer key or another file told you, is "no line decides".
 
-| The learner sends | The run has |
+| The learner sends | The run works from |
 | --- | --- |
 | `Run: Dave's line` | Dave's line, as the opening brief quotes it, and the six files in ap-folder |
 | `Run: Maria's steps` | maria-steps.md, and the six files in ap-folder |

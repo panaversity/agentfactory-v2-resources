@@ -50,7 +50,7 @@ You use two chats. Tasks 1 to 10 run in one lab chat. Task 11 runs in a fresh ch
 3. When the AI says "Ready for your run", type the task's run, such as "Run: my brief", and send it. After the run's reply, the AI asks its next question, or says the task is done.
 4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. For a line of your brief, send something like "Outcome: replace my second sentence with" and your new sentence. For an answer in the chat, send the new answer, such as "Step 9, wrong, because" and your reason. If the key grades a run, send the run again. Then send: "Read the document again, and check it again against the key."
 
-**What a run is.** "Run:" and a name make the AI act as a fresh run of Brightline's AP Worker. The run has only the brief it names, that brief's files and its own date. It knows nothing else from your chat. Its own date is today's real date, so once your brief's dates have passed, a run may say the proposal is late. That changes nothing a key grades. It does the work in one reply, and gives its files in the chat. Then, under "What decided it", it lists each decision it made, with the line of the brief that decided it, or "no line decides: the worker guessed". A guess that comes out right is still a guess, and a line your brief lacks.
+**What a run is.** "Run:" and a name make the AI do the job as Brightline's AP Worker, following the brief it names, from that brief's files. The AI can see everything in your chat, and the run does not pretend otherwise. What it shows you is which of its decisions your brief made. Its date is today's real date, so once your brief's dates have passed, a run may say the proposal is late. That changes nothing a key grades. It does the work in one reply, and gives its files in the chat. Then, under "What decided it", it lists each decision it made, with the line of the brief that decided it, or "no line decides: the worker guessed". A decision it made from your chat or from another file, not from a line of the brief, is "no line decides" too. A guess that comes out right is still a guess, and a line your brief lacks. Only Task 11's fresh chat runs your brief with nothing else in view.
 
 **If a run stops to ask.** Your brief may tell the worker to stop and ask. Until Task 8, send: "List it for Dave, and carry on." In Task 8 the stop is the test, so leave it there.
 
@@ -101,9 +101,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              words in the Doc under that heading, exactly as I wrote
              them, after any lines already there, unless I say which line
              they replace. Change no other line. When I send "Run:" and a
-             name, act as a fresh run of the AP Worker. It has only that
-             brief, the files task-questions.md lists for it, and its own
-             date, and nothing else from this chat. "Dave's line" is "Get
+             name, do the job as the AP Worker, following that brief,
+             from the files task-questions.md lists for it, with today's
+             date as its date. "Dave's line" is "Get
              this week's payment run ready. Everything's in the AP
              folder." and nothing more. "My brief" is the Doc. A brief I
              send in the same message as "Run:" is that brief. Do the
@@ -111,8 +111,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              name, and never make or change a document. Then, under "What
              decided it", list each decision the run made, with the line
              of the brief that decided it, or "no line decides: the
-             worker guessed". If the brief says to stop and ask, stop,
-             and wait for my next message.
+             worker guessed". A decision made from this chat or from
+             another file is "no line decides" too. If the brief says
+             to stop and ask, stop, and wait for my next message.
    Inputs:   The attached zip: the ap-folder, maria-steps.md,
              new-vendor-forms.md and task-questions.md. My answers and my
              lines.
@@ -140,10 +141,10 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              "Outcome:" and my words, put my words in the Writing block
              under that heading, exactly as I wrote them, after any lines
              already there, unless I say which line they replace. Change
-             no other line. When I send "Run:" and a name, act as a fresh
-             run of the AP Worker. It has only that brief, the files
-             task-questions.md lists for it, and its own date, and
-             nothing else from this chat. "Dave's line" is "Get this
+             no other line. When I send "Run:" and a name, do the job as
+             the AP Worker, following that brief, from the files
+             task-questions.md lists for it, with today's date as its
+             date. "Dave's line" is "Get this
              week's payment run ready. Everything's in the AP folder."
              and nothing more. "My brief" is the Writing block. A brief I
              send in the same message as "Run:" is that brief. Do the
@@ -151,8 +152,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              name, and never make or change a document. Then, under "What
              decided it", list each decision the run made, with the line
              of the brief that decided it, or "no line decides: the
-             worker guessed". If the brief says to stop and ask, stop,
-             and wait for my next message.
+             worker guessed". A decision made from this chat or from
+             another file is "no line decides" too. If the brief says
+             to stop and ask, stop, and wait for my next message.
    Inputs:   The attached zip: the ap-folder, maria-steps.md,
              new-vendor-forms.md and task-questions.md. My answers and my
              lines.
@@ -326,7 +328,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 1. In your lab chat, type "Task 9" and send it. The AI shows the four parts and their questions.
 2. Write your ideas brief under the four headings. It goes in the chat, not in your document.
-3. Send it in one message, with `Run: the ideas brief` on its first line. The run has only your brief: nothing from the AP folder, and nothing from this chat.
+3. Send it in one message, with `Run: the ideas brief` on its first line. The run works from your brief alone, and uses no file.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Change your ideas brief, send it again whole with `Run: the ideas brief` on its first line, then send the check prompt again.
 
 **Checkpoint.** Checks 17 to 19 passed.
@@ -341,7 +343,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 1. In your lab chat, type "Task 10" and send it. The AI shows the four parts and their questions.
 2. Write your vendor brief under the four headings. It goes in the chat, not in your document.
-3. Send it in one message, with `Run: the vendor brief` on its first line. The run has only your brief and the three vendors' forms.
+3. Send it in one message, with `Run: the vendor brief` on its first line. The run works from your brief and the three vendors' forms.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Change your vendor brief, send it again whole with `Run: the vendor brief` on its first line, then send the check prompt again.
 
 **Checkpoint.** Checks 20 to 23 passed.
