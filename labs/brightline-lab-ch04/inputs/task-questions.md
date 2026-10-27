@@ -46,8 +46,8 @@ Write Monday's paragraph under "The week's mistakes".
 ## Task 3. Wednesday: the missed approval
 
 1. Show Wednesday from brightline-week.md: what was asked, what the worker did, and what existed and where it was kept. Ask: "Which should have answered, and where should it be kept? Answer: the source, then its home."
-2. Show Dave's rule, from policy version 3, section 4.1: "Invoices over $5,000.00 need the controller's approval before payment." Ask: "A written rule cannot stop a payment by itself. What makes the $7,800.00 payment actually wait for Dave's approval, and is that in place at Brightline today? Answer: the layer, then in place or a target."
-3. Ask: "When Dave approves from his own login, where is the proof of his approval kept? Answer: the layer."
+2. Show Dave's rule, from policy version 3, section 4.1: "Invoices over $5,000.00 need the controller's approval before payment." Ask: "A written rule cannot stop a payment by itself. What makes the $7,800.00 payment actually wait for Dave's approval, and is that in place at Brightline today? Answer: its home, then in place or a target."
+3. Ask: "When Dave approves from his own login, where is the proof of his approval kept? Answer: its home."
 4. Show Canadian dollars from brightline-week.md: what Maria asked, and what existed. Ask: "What should the worker answer Maria? A few words."
 
 Write Wednesday's paragraph under "The week's mistakes".
@@ -56,15 +56,15 @@ Write Wednesday's paragraph under "The week's mistakes".
 
 1. Show Thursday from brightline-week.md: what the worker did, what Maria asked, and what existed and where it was kept. Ask: "Has Dave approved? And would a real email from Dave have counted? Answer: yes or no for each, and why, in a few words."
 2. Ask: "Where does 5120 stand, and what may the worker write in its register row? Answer: where it stands, then what it may write."
-3. Show: "The connector let the worker change the row with Maria's login, and nothing checked the change." Ask: "What should stand between the worker and the accounting system, and whose login should it use? Answer: the layer, then whose login."
+3. Show: "The connector let the worker change the row with Maria's login, and nothing checked the change." Ask: "What should stand between the worker and the accounting system, and whose login should it use? Answer: its home, then whose login."
 
 Write Thursday's paragraph under "The week's mistakes".
 
 ## Task 5. Friday: if we switch AI vendors
 
-1. Show Friday from brightline-week.md. Then build two lists from the map, without changing it: the parts marked Rented ("rebuild or reconnect on a new AI vendor") and the parts marked Ours ("carry across"), and memory on its own line ("on the line"). Show both. Ask: "One sentence for IT: what the worker is, what comes with us, and what we rebuild. A few words are enough."
-2. Ask: "If the computer the worker ran on were wiped tonight, what would we lose, once the moves on the map are done? A few words."
-3. Show "How each AI vendor lets a worker read a record" from brightline-week.md. Ask: "On the app and plan you use, would the worker read the policy from its home, or from an uploaded copy? If a copy, what stops it going stale? A few words."
+1. Show Friday from brightline-week.md. Then build two lists from the map, without changing it: the parts marked Rented, and the parts marked Ours, with memory on its own line. Show both, headed only "Rented" and "Ours". Ask: "Answer IT in one sentence: what the worker is, what comes with us to a new AI vendor, and what we rebuild there."
+2. Ask: "Each run borrows a computer for its work. If that computer were wiped tonight, what would we lose, once the moves on the map are done? A few words."
+3. Show "How each AI vendor lets a worker read a record" from brightline-week.md. Ask: "On the app and plan you use yourself, would the worker read the policy from its home, or from an uploaded copy? Answer: home or copy, then, for a copy, what keeps it current."
 4. Ask: "What should start the worker each time, and how long would you let it wait? You choose the wait. Answer: the event, then the longest wait."
 
 Write "If we switch AI vendors": both lists, then the learner's four answers.
@@ -79,8 +79,8 @@ First show these four lines: when others start to use a worker, four things can 
 - Who answers for it.
 
 1. Show Sam's message from brightline-week.md. Ask: "For Sam: what changes, and whose login must the worker have before he starts? Answer: what changes, then whose login."
-2. Ask: "What does the worker tell Sam about the $7,800 invoice? A few words."
-3. Show Lakeshore's email from brightline-week.md. Ask: "For Lakeshore's page: whose login does the worker use, and who answers to Lakeshore? A few words."
+2. Ask: "Sam asked two things about the $7,800 invoice: does it need approval, and will the worker mark it approved? What does the worker answer? Answer: to the first, then to the second."
+3. Show Lakeshore's email from brightline-week.md. Ask: "For Lakeshore's page: whose login does the worker use, and who answers to Lakeshore? Answer: whose login, then who answers."
 4. Ask: "Lakeshore's questions and invoices would pass through the worker. What must Brightline be able to say about Lakeshore's data before the page starts, and can the page start now? Answer: what Brightline must say, then yes or no."
 5. Ask: "Lakeshore also asks when Tri-County's invoice 5120 will be paid. What does the worker say? A few words."
 
