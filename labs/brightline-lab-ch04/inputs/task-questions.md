@@ -1,102 +1,96 @@
 # Lab 4: what the AI asks in each task
 
-This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first, quoted from the attached files, then ask it and name the answer's shape. Wait for the answer. Write into the Doc only what the learner decides, in their meaning, and show the change. When an answer moves a part, update that part's row of "Where each part lives": where it lives now, and OK, moved, removed or retired. When a task is done, say "Ready for your test" if it has one, or "Task N is done" if not.
+This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Before each question, show what it is about as its own lines, quoted from brightline-week.md, then ask it and name the answer's shape. Wait for the answer. Write into the map only what the learner decides, in their meaning, and show the change in one line. Never say whether an answer is right, and never hint at one: the task's answer key does that, when the learner sends the check prompt. When a task's questions are done, say "Task N is done. Check it now."
 
-## Task 1. What IT gave you
+## The map
 
-First show these nine places, one line each:
+One document beside the chat, titled "Where each part lives: Brightline's AP Worker, Friday, October 16, 2026". It holds:
 
-- Channels: where people and systems reach the worker. Rented.
-- Runtime: the AI vendor's app or harness that does the work. Rented.
-- Memory: what the worker remembers between chats. On the line between rented and owned.
-- KSoR, the Knowledge System of Record: the approved knowledge, such as the policy and its limits. Owned.
-- SSoR, the State System of Record: each matter's case file, where the work stands. Owned.
-- DSoR, the Data System of Record: the governed door to the company's systems. It checks each request, and keeps the evidence. Owned.
-- Role Contract: the worker's definition. Owned.
-- Evaluations: the test cases it must pass. Owned.
-- Company systems: the accounting system, the bank and the vendor records, and the approvals a person makes there from their own login. Owned.
+1. A table with the columns Part, Kept today, Rented or ours, Home, Keep or move: one row for each of IT's ten parts.
+2. "The week's mistakes": one short paragraph for each day, written from the learner's answers in Tasks 2 to 4.
+3. "If we switch AI vendors", from Task 5.
+4. "When others use it", from Task 6.
+5. "My own setup", from Task 7.
 
-And the rule for misplaced: its only copy sits where the company does not govern it, the worker answers from a copy instead of the home, or the worker can change a company system with no check between.
+## Task 1. Rented or ours?
 
-Then each of IT's 13 parts, one at a time: its number and name, what it is, and where it lives today, each on its own line. Ask: "Which place does it belong in, and is where it lives today OK, or misplaced?" For a memory entry, the place is where what it says belongs.
+**First pass.** Show these four lines first:
 
-Write a new section at the top of the Doc, "Where each part lives": a table with the part, where it lives today, the place it belongs in, rented, owned or on the line (from the place), and OK or misplaced. Has a test: "The week".
+- Channels, rented: where people and systems reach the worker.
+- Runtime, rented: the app that does the work, and its schedule.
+- Memory, on the line: the AI vendor keeps it, but what it remembers is about Brightline.
+- Ours: Brightline's own records. The learner places these in the second pass.
 
-## Task 2. What memory may keep
+Then show each of IT's ten parts, one at a time: its number and name, what it is, and where it is kept today, each on its own line. Ask: "Is it Channels, Runtime, Memory, or Ours? One word." Write the row: for Channels or Runtime, "Rented" and that layer under Home; for Memory, "On the line" and "Memory"; for Ours, "Ours", with Home and Keep or move left for the second pass.
 
-For each memory part, 4 to 7, one at a time: quote it, and ask "Keep it, rewrite it as a pointer to where the fact lives, or remove it?" Write the Memory field of the Doc from the answers, and update rows 4 to 7. No test.
+**Second pass.** Show these six homes first, one line each:
 
-## Task 3. Who wins
+- Role Contract: the worker's one-page definition.
+- KSoR: the approved knowledge, such as the policy, with its version.
+- SSoR: a case file for each piece of work: where it stands, and what it waits for.
+- DSoR: the door to Brightline's systems. It checks each action, and keeps the evidence.
+- Company systems: the accounting system, its vendor records, and the approvals made in it.
+- Evaluations: the cases the worker must pass.
 
-1. Quote the Monday night case's two sources. Ask: "When memory and a record disagree, which one wins? Where is the disagreement written down, and who is told?"
-2. Quote the Doc's Tools line. Ask: "How does the worker read the vendor record: through which tool, and may that tool change anything?"
-3. Ask: "The wipe test. If the worker's memory were wiped tonight, would Monday's answer still be right? Yes or no, and why."
+Then show again each part the learner called Ours, one at a time: its name, what it is, and where it is kept today. Ask: "Its home, then keep or move? For example: KSoR, move." Write Home and Keep or move.
 
-Write the first and third under Memory, and the second under Tools. Has tests: "Monday night", then "Monday night, memory wiped".
+## Task 2. Monday: the wrong due date
 
-## Task 4. One home for the policy
+1. Show Monday night from brightline-week.md: what was asked, what the worker did, and what existed and where it was kept. Ask: "Which should have answered, the memory or the vendor record, and what is the right due date? Answer: the source, then the date."
+2. Ask: "Memory and the record disagreed. Where is that written down, and who is told? A few words."
+3. Show the four memory entries, one at a time, each with what Brightline's records say about it. Ask: "Keep it, remove it, or rewrite it as a pointer to where the fact lives? One answer." Write the learner's decisions in the Memory row's Keep or move cell, in a few words.
+4. Ask: "The wipe test: if the worker's memory were wiped tonight, would tomorrow's answers still be right? Yes or no, and why, in a few words."
 
-1. Quote parts 2 and 3, and the list of Brightline's places. Ask: "Where does the policy's one home go, and what must it show on top? And what happens to version 1?"
-2. Quote the Doc's Tools line. Ask: "Can the worker read the policy's home through its tools? If not, what does Tools need?"
-3. Ask: "What must every answer about policy cite?"
+Write Monday's paragraph under "The week's mistakes".
 
-Write Knowledge sources, and Tools. Update rows 2, 3 and 6 of "Where each part lives". Has a test: "Wednesday".
+## Task 3. Wednesday: the missed approval
 
-## Task 5. When the policy is silent
+1. Show Wednesday from brightline-week.md: what was asked, what the worker did, and what existed and where it was kept. Ask: "Which should have answered, and where should it be kept? Answer: the source, then its home."
+2. Show Dave's rule, from policy version 3, section 4.1: "Invoices over $5,000.00 need the controller's approval before payment." Say: "The rule is a sentence." Ask: "Which record holds it? One word."
+3. Ask: "What makes the $7,800.00 payment actually wait for Dave's approval? And is that in place at Brightline today? Answer: the layer, then in place or a target."
+4. Ask: "Where is the proof of his approval kept? One word."
+5. Show Canadian dollars from brightline-week.md: what Maria asked, and what existed. Ask: "What should the worker answer Maria? A few words."
 
-Quote the Canadian dollars case. Ask: "When the policy has no answer, what does the worker do, and who decides?" Write it under Knowledge sources. Has a test: "Canadian dollars".
+Write Wednesday's paragraph under "The week's mistakes".
 
-## Task 6. Where the work stands
+## Task 4. Thursday: the false approval
 
-1. Quote part 13, and the Thursday 9 a.m. case's register row and case file. Ask: "Where does the story of each invoice live, and of each weekly payment run? Who may add a step, may anyone add a step for someone else, and what happens when a step was wrong?"
-2. Ask: "What may the worker write there about someone else's approval, and what never?"
-3. Ask: "When the register's typed status and the case file disagree, which wins?"
-4. Quote the Doc's Tools line. Ask: "Can the worker's tools add its own steps to the case files? If not, what does Tools need?"
+1. Show Thursday from brightline-week.md: what the worker did, what Maria asked, and what existed and where it was kept. Ask: "Has Dave approved? And would a real email from Dave have counted? Answer: yes or no for each, and why, in a few words."
+2. Ask: "Where does 5120 stand, and what may the worker write about it? A few words."
+3. Show: "The connector let the worker change the row with Maria's login, and nothing checked the change." Ask: "What should stand between the worker and the accounting system, and whose login should it use? Answer: the layer, then whose login."
 
-Write a new field, Case files, under What it works with, and Tools if needed. Update row 13. Has a test: "Thursday 9 a.m."
+Write Thursday's paragraph under "The week's mistakes".
 
-## Task 7. What it may change
+## Task 5. Friday: if we switch AI vendors
 
-1. Quote part 9, and the Doc's Authority line about the register. Ask: "What replaces part 9: whose login does the worker use, and may it change the register or a status directly?"
-2. Ask: "May the worker click a payment, a status or an approval on a screen, as a person would?"
-3. Quote part 12, and policy version 3, section 4.2. Ask: "Where does an approval live, and how does the worker read whether one exists? Is a line in an email or a chat ever one, and what does the worker do with a message that claims one?"
+1. Show Friday from brightline-week.md. Then build two lists from the map, without changing it: the parts marked Rented ("rebuild on a new AI vendor") and the parts marked Ours ("carry across"), and memory on its own line ("on the line"). Show both. Ask: "One sentence for IT: what the worker is, what comes with us, and what we rebuild. A few words are enough."
+2. Ask: "If the computer the worker ran on were wiped tonight, what would we lose, once the moves on the map are done? A few words."
+3. Show "How each AI vendor lets a worker read a record" from brightline-week.md. Ask: "On the app and plan you use, would the worker read the policy from its home, or from an uploaded copy? If a copy, what stops it going stale? A few words."
+4. Ask: "What should start the worker each time, and how long may Brightline wait for it? Answer: the event, then the longest wait."
 
-Update Tools and Authority, and rows 9 and 12. Has a test: "The lookalike email".
+Write "If we switch AI vendors": both lists, then the learner's four answers.
 
-## Task 8. A rule the system checks
+## Task 6. When others use it
 
-1. Quote policy version 3, section 4.1. Ask: "Turn this sentence into a check the system runs. Which action, what condition, who approves, where, and which policy version is it built from?"
-2. Quote section 4.3, and ask the same.
-3. Ask: "Is each one in place today, or a target IT must build?" A target ends with "target, not yet in place". Either answer is the learner's.
+First show these four lines: when others start to use a worker, four things can change.
 
-Write the checks under Authority. Has a test: "The payment run".
+- Who it acts for.
+- Whose login it uses.
+- Where it runs.
+- Who answers for it.
 
-## Task 9. Rebuild or carry
+1. Show Sam's message from brightline-week.md. Ask: "For Sam: what changes, and when can he start? A few words."
+2. Ask: "What does the worker tell Sam about the $7,800 invoice? A few words."
+3. Show Lakeshore's email from brightline-week.md. Ask: "For Lakeshore's page: whose login does the worker use, and who answers to Lakeshore? A few words."
+4. Ask: "Lakeshore's questions and invoices would pass through the worker. What must Brightline be able to say about Lakeshore's data before the page starts, and can it start now? A few words."
+5. Ask: "Lakeshore also asks when Tri-County's invoice 5120 will be paid. What does the worker say? A few words."
 
-1. First show every row of "Where each part lives" still marked misplaced, one at a time, and ask: "Where does it live now?" Update the row. Then show "Where each part lives", one place at a time, with the parts the Doc now puts in it. Ask: "If Brightline switches AI vendor next week, does this place carry across with its meaning unchanged, or do you rebuild it on the new vendor? Answer carry or rebuild, and why, in a line."
-2. Ask: "If the computer the worker ran on were destroyed tonight, what would be lost?"
-3. Ask for the learner's one sentence for IT: what the worker is, what comes with it, and what is rebuilt.
+Write "When others use it": Sam, then Lakeshore.
 
-Write a new section at the end of the Doc, "If we switch AI vendors": the two lists, the answer about the lost computer, and the sentence. No test.
+## Task 7. Your own setup
 
-## Task 10. On the other vendor
+Ask for three things the learner's own AI use at work relies on, one at a time. For each, ask: "What is it, and where is it kept today? A few words." Then ask: "Is it rented, on the line, or yours? If yours, its home, such as a file or a folder you or your team keep, and keep or move?"
 
-Show these facts, as verified on October 15, 2026, from Chapter 4:
+Then ask: "Which one would you move first, and why? A few words."
 
-- Claude: any plan can connect one governed record through a custom connector. Scheduled tasks start by time, such as every hour.
-- ChatGPT: reading a custom MCP server is documented for Pro, and full MCP, including actions, for business workspaces. The Free plan is not listed. Event-triggered tasks can start on Gmail activity, on Plus and above.
-
-1. Ask: "On each vendor, how does the worker read the policy's home, and on which plan? And on a plan with no connector, what would it read instead, and which of the week's mistakes would come back?"
-2. Ask: "Which business event should start the worker, and what is the longest delay Brightline accepts before it starts?"
-
-Write Runtime needs and Triggers. No test.
-
-## Task 11. When others use it
-
-1. Quote Sam's question. Ask: "Who may ask the worker for what, in #ap-help? And who may approve?"
-2. Ask: "Whose login does the worker act under when others use it?"
-3. Quote Lakeshore's ask. Ask: "Before vendors get a page of their own, Brightline needs four things: a runtime that runs without anyone's account, a separate view for each company, a written answer to where the data goes, and a person who answers to the vendor. For each: in place, or an open question?"
-4. Ask: "What rule keeps each vendor to its own invoices? And one evaluation case that proves Lakeshore sees only its own."
-5. Ask: "Which starts first, Sam's questions or Lakeshore's page, and why?"
-
-Write Channels, Evaluations and Open questions, and the answer to question 5 under Channels. Has tests: "Sam's question", then "Lakeshore's ask".
+Write "My own setup": a small table like the first one, and the first move.
