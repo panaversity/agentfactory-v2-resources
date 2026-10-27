@@ -1,6 +1,6 @@
 # The brief the AP Worker received (version 3, two stages)
 
-Maria sent this brief on Monday, October 26, 2026, with the five source files in `inputs/`.
+Maria sent this brief on Monday, October 26, 2026, with the five other files in `sources/`.
 
 **Outcome.** A proposed payment run for Friday, October 30, 2026, for Dave to approve on Thursday. Every open invoice gets one action: PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE, with a reason and the policy section. The run covers invoices due on or before November 6.
 

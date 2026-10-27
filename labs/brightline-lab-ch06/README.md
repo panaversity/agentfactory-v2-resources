@@ -1,34 +1,19 @@
-# Brightline lab, Chapter 6: review a run you did not watch
+# Lab 6: the checks come first
 
-It is Thursday, October 29, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio, with about 40 staff. On Monday, Maria, the office manager, briefed the AP Worker to propose Friday's payment run. The package came back on Tuesday. Dave Kowalski, the controller, approves the run at 5 p.m. today. You review it for him.
+Chapter 6 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-This is a different week and a different package from the one in the chapter, with different problems. This folder is standalone. It needs no files from other chapters. Start with `LAB.md`. Every name, number, account and company is invented.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 6: the checks come first](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The full instructions, Parts A to F, with timings |
-| `AGENTS.md`, `CLAUDE.md` | The brief for an AI agent that does the lab with you, in the Claude or ChatGPT desktop app |
-| `inputs/payment-run-brief-v3.md` | The brief the worker received. Read this first |
-| `inputs/open-invoices-2026-10-26.csv` | 15 open invoice rows |
-| `inputs/vendor-records.csv` | Six vendors: the authority on terms and phone numbers |
-| `inputs/vendor-file-notes.md` | Recorded calls and changes to vendor records |
-| `inputs/approvals-log.csv` | Approvals recorded from the controller's own login |
-| `inputs/ap-policy-v3-excerpt.md` | The governed policy: clause 2.1, and sections 3 to 6 |
-| `templates/review-contract-template.md` | The blank Review Contract |
-| `worker-output/proposal-2026-10-30.csv` | The worker's proposal |
-| `worker-output/memo-to-dave.md` | The worker's memo |
-| `worker-output/note-to-maria.md` | The worker's note |
-| `worker-output/task-record.md` | What the worker read, received, wrote and sent |
-| `part-f/approved-memo-2026-11-06.md` | Part F: Dave's approved memo for the next week's run, for Task F1 |
-| `results/predictions.md` | Part A |
-| `results/review-findings.md` | Parts B and D |
-| `results/recompute.md` | Part B |
-| `results/audience-check.md` | Part B |
-| `results/second-reviewer.md` | Part C |
-| `results/transfer-plan.md` | For readers with one AI vendor only |
-| `answer-key/review-contract-example.md` | One good Review Contract |
-| `answer-key/planted-problems.md` | The seven planted problems, the three traps, and the right totals |
-| `answer-key/expected-proposal-2026-10-30.csv` | The right proposal, row by row |
-| `answer-key/review-rubric.md` | The 13-point rubric and the three hard fails |
+| `LAB.md` | The lab: the job, and twelve tasks, the last one optional, each checked against its own answer key the moment it is done. |
+| `inputs.zip` | The one file you give the AI in Task 1, and again in Task 11. It holds Maria's brief and the five other files the AP Worker worked from, the worker's package for the payment run on Friday, October 30, 2026, the Review Contract template, and the questions the AI asks you in each task. You don't need to open it. |
+| `approved-memo-2026-11-06.md` | Dave's approved memo for the payment run on Friday, November 6, 2026. You attach it in Task 10. You don't need to open it. |
 
-Do not open `worker-output/` until your Review Contract is written. Do not open `answer-key/` until you have made your decision. Part F's answer key is not in this folder: the task's link downloads it. In Part C, attach the six files in `inputs/`, the four in `worker-output/` and your Review Contract. Never attach `answer-key/`.
+**The lab's date.** Today is Thursday, October 29, 2026, and the job on the page says so.
+
+**The lab needs nothing from an earlier chapter.** Everything it starts from is in this folder.
+
+**Give the AI only `inputs.zip`, `approved-memo-2026-11-06.md` in Task 10, your downloaded Review Contract in Task 11, and, at each check, that task's answer key.** Never upload `LAB.md` or this file: they link every answer key.
+
+The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.
