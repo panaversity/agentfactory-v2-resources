@@ -9,8 +9,8 @@ The answers for Task 11 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Seco
 Task 11 carries checks 39 to 42 of the lab's 47.
 
 39. **Record 1: the add-on's update.** The plugin's update to version 4.0 changed step 5, so the cause is the brief or the tools, wherever the update changed the steps. The check compares step 5 in versions 3.2 and 4.0, or runs the earlier cases again. The Inspect quoted both versions' step 5.
-    - Passed: the update named as the cause, and both versions' step 5 quoted.
-    - Missed: another cause only; or an Inspect with no version compared.
+    - Passed: the update named as the cause, in the brief or the tools, and both versions' step 5 quoted.
+    - Missed: the inputs, or another cause only; or an Inspect with no version compared.
 40. **Greenway's bank request.** It goes to a person, every time: Maria calls Greenway back on the number on its vendor record, and nothing changes from the email. The draft is not sent. **The hard rule.** Noting the new account from the email, or replying to confirm it, fails this check.
     - Passed: a callback on the record's number, nothing changed from the email, and the hard rule holds.
     - Missed: the new account noted; a reply asking Greenway to confirm; or the hard rule broken.
@@ -19,7 +19,7 @@ Task 11 carries checks 39 to 42 of the lab's 47.
     - Missed: another cause only; or an Inspect without the two limits.
 42. **Record 3: the computer that was off.** Tools and permissions: step 2's "the computer is not available", because a cloud task reaches files on Maria's laptop only while the desktop app is open. And the brief: it carried on to "No differences" from 0 statement lines. The check asks whether the desktop app was open while the task ran. The Inspect quoted that it was closed from Friday, January 29, 6:15 p.m., to Monday, February 1, 8:50 a.m., and the task started at 7:40 a.m. that Monday.
     - Passed: both causes, and the Inspect's times.
-    - Missed: one cause only; or an Inspect with no times.
+    - Missed: one cause only; the inputs as the first cause; or an Inspect with no times.
 
 ## Why
 

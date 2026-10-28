@@ -8,9 +8,9 @@ The answers for Task 10 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Seco
 
 Task 10 carries checks 34 to 38 of the lab's 47.
 
-34. **The three repeated corrections.** Credit memos listed as amounts owed: a rule, in standing instructions, such as "A credit memo is never an amount owed." Amounts shown without cents: a procedure, in the note's skill or layout. No flag for small suppliers near the 15-day promise: a reference, the promise as a concept, through its owner; or a step in the note's skill that reads the promise once it is approved.
+34. **The three repeated corrections.** Credit memos listed as amounts owed: a rule, in standing instructions, such as "A credit memo is never an amount owed." Amounts shown without cents: a procedure, in the note's skill or layout, or a rule, in standing instructions. No flag for small suppliers near the 15-day promise: a reference, the promise as a concept, through its owner; or a step in the note's skill that reads the promise once it is approved.
     - Passed: all three homes, each in the contract where its home says, written as the fix.
-    - Missed: a correction with no home; a home in the wrong place, such as cents as a rule or credit memos left in a chat; or a line that states the failure instead of the fix.
+    - Missed: a correction with no home; a home in the wrong place, such as credit memos left in a chat; or a line that states the failure instead of the fix.
 35. **The replies, and the one-off.** Maria's and Jordan's replies to the same kind of dispute look nothing alike: variance, so a procedure, a skill for dispute replies. NMP-3420 and NMP-3424 shown in USD, seen once, on December 3: not yet, so it is watched, and nothing is added for it.
     - Passed: the replies a procedure, and Northern Maple not yet.
     - Missed: the replies left with no home; or a rule added for a correction seen once.

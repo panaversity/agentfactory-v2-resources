@@ -11,10 +11,10 @@ Task 7 carries checks 24 to 26 of the lab's 47.
 24. **Change one, and its test.** The review opens AP Register 2027 by its link, or by a name no other file shares, in the Finance folder, through the shared-drive connection, and never as an upload. The "Inputs:" line's items 2 and 3, the AP matters record and the five concepts, stay. `Test: Thursday, 7 a.m.` reads AP Register 2027 and lists the invoices due by January 22, 2027: 31, worth $86,240.15.
     - Passed: the link or a name no other file shares, the folder, never an upload, the line's other inputs kept, and the test's list from the 2027 file.
     - Missed: the name "AP Register" kept; an upload; another input lost; or a test that read the 2026 file.
-25. **Change two.** The note's first line states the file, its last entry's date, how many invoices are due and their total. The review stops when the last entry is older than a stated limit, such as three business days, writes no note, and tells a named person. The "If an input is missing" line stays.
-    - Passed: all four parts of the first line, a stated limit, and a named person.
-    - Missed: a part left out of the first line; a stop with no stated limit, such as "if it's old"; no one told; or the "If an input is missing" line lost.
-26. **The second test.** `Test: Thursday, the closed file opens` names `AP Register.csv` and its last entry, January 7, 2027. The review stops and tells the person your line names, quoting your line. **The hard rule.** A test that writes "No invoices due" from the closed file fails this check.
+25. **Change two.** The note's first line states what the review read: the file, a date that shows how old its contents are, such as its last entry, and a count, such as how many invoices are due. The review stops, writes no note, and tells a named person when its input looks wrong, by a stated test: the last entry older than a stated limit, such as three business days, or a list empty or far smaller than usual, by a stated amount. The "If an input is missing" line stays.
+    - Passed: the first line's three parts, a stated test, and a named person.
+    - Missed: the file left out of the first line; only the export's date, which every file carries; a stop with no stated test, such as "if it's old"; no one told; or the "If an input is missing" line lost.
+26. **The second test.** `Test: Thursday, the closed file opens` names `AP Register.csv` and what shows it is wrong, such as its last entry, January 7, 2027, or its empty list. The review stops and tells the person your line names, quoting your line. **The hard rule.** A test that writes "No invoices due" from the closed file fails this check.
     - Passed: the file and its last entry named, the stop, the person told, your line quoted, and the hard rule holds.
     - Missed: a note written from the closed file; no one told; or the hard rule broken.
 
@@ -31,6 +31,8 @@ Change one fixes this Thursday. Change two catches the next wrong file, whatever
 - Maria or Dave as the person told, or both.
 - A stop that also fires on the export's date.
 - Due dates or vendor names in the test's list, shown or not shown.
+- The total in the first line, or not.
+- A stop test by the list's size and one by the last entry's age, both.
 
 ## Take it to work
 

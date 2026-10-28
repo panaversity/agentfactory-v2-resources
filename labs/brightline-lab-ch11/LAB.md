@@ -99,8 +99,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              by you against the contract.
    Format:   Unzip both attached files. Open two Claude Docs beside
              our chat, "AP Worker Role Contract" and "What went
-             wrong", holding what task-questions.md says. Write every
-             note in the chat, never in a Doc. Read the Docs again
+             wrong", holding what task-questions.md says. Put your own
+             remarks in the chat, never in a Doc. Read the Docs again
              before every test, every Inspect and every check. When
              I send "Task" and a number, ask me that task's
              questions from task-questions.md, one at a time, as
@@ -129,8 +129,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
              by you against the contract.
    Format:   Unzip both attached files. Open two Writing blocks
              beside our chat, "AP Worker Role Contract" and "What
-             went wrong", holding what task-questions.md says. Write
-             every note in the chat, never in a Writing block. Read
+             went wrong", holding what task-questions.md says. Put
+             your own remarks in the chat, never in a Writing block. Read
              the Writing blocks again before every test, every
              Inspect and every check. When I send "Task" and a
              number, ask me that task's questions from
@@ -173,7 +173,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 2" and send it. The AI shows [11.1](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/stop-first/)'s six steps and the two recurring jobs. For each job, answer: pause it or leave it running, and who does its work by hand meanwhile.
-2. The AI shows what the week left behind, one item at a time. For each, answer: was it only drafted, or did it change something in a system? Where would you check? And what do you do: hold it, check it, or put it right, and how?
+2. The AI shows what the week left behind, one item at a time. For each, answer: did it stay a draft that nobody acted on, or did it change something outside the chat, such as a file, a record or a message that went out? Where would you check? And what do you do: hold it, check it, or put it right, and how?
 3. This task has no test. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 3 to 6 passed.
@@ -207,7 +207,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. In your lab chat, type "Task 4" and send it. The AI shows [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the email check's lines and the duplicate rule they check against, Tuesday's email and invoice 7781's row. Answer: which lever this fix pulls, then your line, in a few words: what makes a resend like 7781-R match its original.
 2. When the AI says "Ready for your test", type `Test: Tuesday, 8:05 a.m.` and send it.
 3. The AI shows [11.2](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s first rule. Answer: what a daily check from outside the email job compares, by message ID or by count, when it runs, and whom it tells.
-4. The AI shows [11.4](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/usage-and-limits/)'s lines and where each AI vendor shows usage. Answer, for the seat Dave pays for: who owns its budget, who checks its usage and when, and what never runs from it.
+4. The AI shows [11.4](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/usage-and-limits/)'s lines and where each AI vendor shows usage. Answer, for the seat Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it.
 5. The AI shows [11.7](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/both-ai-vendors/)'s lines on a quiet task. Answer: if the daily check's message does not appear one evening, what Maria checks first, on Claude and on ChatGPT.
 6. When the AI says "Ready for your next test", type `Test: Tuesday evening` and send it.
 7. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -320,7 +320,7 @@ It is Monday, January 18.
 2. The AI shows Dave's words and [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
 3. The AI shows [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
 4. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
-5. The AI dates the contract Draft 8, Monday, January 18, 2027. This task has no test. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
+5. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 34 to 38 passed.
 

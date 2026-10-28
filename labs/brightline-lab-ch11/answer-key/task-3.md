@@ -12,8 +12,8 @@ Task 3 carries checks 7 to 10 of the lab's 47.
     - Passed: missing, and those checks first.
     - Missed: "wrong"; or the five causes, or the brief, first.
 8. **Two causes, each with its record line.** Capacity, a usage limit: the record's line "Not started. Usage limit reached." And the brief: the email check's lines, quoted, such as its "Job:" line, check for a copy by the duplicate concept, which matches the same invoice number, or the same amount and invoice date. Nothing covers a suffix like "-R", and 7781-R's date differs from 7781's, so 7781-R would not have matched even if the check had run.
-    - Passed: both causes, each with a quoted line.
-    - Missed: one cause only; a cause with no quoted line; or the brief named without its lines.
+    - Passed: both causes, each with a line from Record A, quoted or named.
+    - Missed: one cause only; a cause with no line; or the brief named with no line of its own.
 9. **The usage check, and what it showed.** The check is usage: Maria's account's usage report or usage page. The Inspect quoted the weekly limit reached on Monday, January 11, 2027, at 8:58 p.m., and the reset on Wednesday, January 13, 2027, at 7:00 a.m.
     - Passed: a usage check, and both times quoted from the Inspect.
     - Missed: no usage check; or an Inspect that gave no limit time or no reset time.

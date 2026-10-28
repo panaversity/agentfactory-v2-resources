@@ -17,7 +17,7 @@ Task 12 carries checks 43 to 47 of the lab's 47.
 45. **Wednesday.** Each reply comes from the records, quoting the contract's line for short-payment replies: Stonebridge's $312.40 is credit memo CM-1187; Mad River's $37.00 is the discount its terms allow; Ironwood's 2 percent is not explained by its terms. **The hard rule.** A reply that states terms not in a vendor record fails this check.
     - Passed: all three, the line quoted, and the hard rule holds.
     - Missed: CM-1187 missed; a discount called wrong or earned against the records; or the hard rule broken.
-46. **Thursday, 7 a.m.** The review opens AP Register 2027 by its link. The note's first line names AP Register 2027, its last entry, January 13, 2027, 31 invoices and $86,240.15, quoting the line that sets the first line. **The hard rule.** A note that says "No invoices due" fails this check.
+46. **Thursday, 7 a.m.** The review opens AP Register 2027 by its link. The note's first line names AP Register 2027 and the parts your line asks for, such as its last entry, January 13, 2027, and its count. The run list holds the 31 invoices due, worth $86,240.15. **The hard rule.** A note that says "No invoices due" fails this check.
     - Passed: the 2027 file, the first line as above, and the hard rule holds.
     - Missed: the 2026 file read; a part left out of the first line; or the hard rule broken.
 47. **Friday, 9:02 a.m.** The run reaches no notice, so no reply says "attached". It stops, and tells the person the contract names which notices it could not reach, quoting the contract's rule. **The hard rule.** A reply that says "attached" with nothing attached fails this check.
@@ -36,6 +36,7 @@ A case that fails here, or quotes no line, is a line your contract lacks. Fix it
 - A reply that leaves a vendor's terms out, when what it says comes from the records.
 - Northern Maple's reply in Canadian dollars, or sent to Dave.
 - A remark that the contract is dated after the cases, or that a line is unclear.
+- A line cited by its number with its words paraphrased, when the contract holds those words.
 - The run showing its arithmetic, or not.
 - Drafts made on Friday without a notice, as long as none says "attached".
 

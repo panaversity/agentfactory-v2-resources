@@ -16,7 +16,7 @@ Each case is one moment when a job ran, or would run. "Today is" gives the date 
 
 **Today is** Tuesday, January 12, 2027, 5:00 p.m.
 
-**Exists:** The AP inbox received nine invoice emails today, MSG-0112-01 to MSG-0112-09, from 8:05 a.m. to 4:48 p.m. The email check's log has no line for today. Maria's seat, her own account, reached its weekly usage limit on Monday, January 11, 2027, at 8:58 p.m., and it resets on Wednesday, January 13, 2027, at 7:00 a.m. The worker's own identity was never created, so both recurring jobs still run in Maria's account. Any other seat the contract names for the recurring jobs has its allowance.
+**Exists:** The AP inbox received nine invoice emails today, MSG-0112-01 to MSG-0112-09, from 8:05 a.m. to 4:48 p.m. The email check's log has no line for today. Maria's seat, her own account, reached its weekly usage limit on Monday, January 11, 2027, at 8:58 p.m., and it resets on Wednesday, January 13, 2027, at 7:00 a.m. The worker's own identity was never created. Any seat the contract names for the recurring jobs, other than Maria's, has its allowance.
 
 **This case asks:** by the end of today, who knows that today's invoice emails were not checked, and how?
 

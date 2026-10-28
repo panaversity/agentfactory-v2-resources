@@ -41,6 +41,7 @@ Every run spends from a budget someone owns (Lesson 11.4). A seat planned for re
 ## Never a deduction
 
 - Your line's exact words, or "-R" written as "any suffix" or "a letter after the number".
+- Your line calling a resend "a copy" rather than "a possible copy", as long as it goes to Maria.
 - Also telling Dave, the duplicate concept's owner, about the new line.
 - The daily check's time, or the person told, if both are named.
 - A usage check before heavy work, added beside the seat's rule.
