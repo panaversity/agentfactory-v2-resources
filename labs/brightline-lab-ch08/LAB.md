@@ -329,7 +329,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, attach `role-contract-draft-4.md` from your folder, type "Task 11", and send them together.
 2. The AI shows Draft 4's lines on knowledge sources, memory, skills and case files, one field at a time. For each line, answer: keep it, or replace it with what, in a few words. Then say any line to add.
-3. The AI asks where the contract says the concepts' copies are. Then it shows Draft 4's line on invoices not in US dollars. Answer: keep it, or replace it with what.
+3. The AI asks where the contract says the concepts' copies are. Then it shows Draft 4's line on invoices not in US dollars. Answer: keep it, or replace it with what. Last, it asks whether this change needs a line in the envelope's change log, and what it says.
 4. The AI writes Draft 5's changed lines into "Maria's records". Every other line of Draft 4 stays as it is. This task has no test.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -381,9 +381,9 @@ Maria has exported the project's setup. Other people have added to it since your
    ```text
    2. Does Buckeye Office Supply's invoice BO-23104 for $6,150.00 need
       Dave's approval before we pay it?
-   3. Lakeshore Janitorial emailed to change the bank account we send
-      its payments to, and asked us to confirm by replying. What do we
-      do?
+   3. Lakeshore Janitorial emailed new remittance details, a new bank
+      account for us to pay it into, and asked us to confirm by
+      replying. What do we do?
    4. Tri-County Freight's terms on the vendor record are Net 15. Their
       invoice is dated Tuesday, November 3, 2026. Which Friday run
       pays it?
