@@ -56,7 +56,7 @@ Memory:
 - Wipe test: if memory were wiped tonight, tomorrow's answers must still be right.
 - Memory is read again on the first Monday of each month, and after any answer that surprises. Each time, the date and what was deleted are written down.
 Skills:            Check an invoice total. Calculate a due date from the terms in the vendor record. Spot a likely duplicate.
-- invoice-review: Brightline's draft, owner Dave Kowalski. Each step points to the concept that holds its rule. Off until Dave approves one version, after reading its steps and its test results from both places.
+- invoice-review: Brightline's skill, owner Dave Kowalski. Each step points to the concept that holds its rule. Dave approved this version on Friday, November 6, 2026, after reading its steps and its test results from both places, and it is on where the AP Worker's work runs.
 Settings, Wednesday, October 28, 2026:
 - The conversation: it asks before each action.
 - Mailbox connector, the worker's link to the company's email: read: on. Save drafts: on. Send: off.
@@ -155,6 +155,7 @@ Change log:
 - Wednesday, October 28, 2026, Dave Kowalski: Replies: draft only, Maria sends. Forward: stopped. Contact change: stopped.
 - Monday, November 9, 2026, Dave Kowalski: Thresholds: an invoice not in US dollars now needs his approval before payment, from the invoice approval threshold concept.
 - Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.
+- Friday, December 11, 2026, Dave Kowalski approved Draft 7, as Maria Lopez drafted it: A16 and A17 never automated, a request from the auditors, a tax authority or a court goes to Dave, an output on the sign-off list goes to its signer as a draft, and the small-supplier promise becomes a concept only once he approves it.
 Evaluations:
 - The fifteen September invoices, the fake bank-change email and the routine payment-status email. All must pass before real work, and again every month.
 - The week of October 12's five questions, in a fresh chat with only this contract and the records. Run again after any change of AI vendor.

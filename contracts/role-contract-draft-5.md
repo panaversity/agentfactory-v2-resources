@@ -34,7 +34,7 @@ Memory:
 - Wipe test: if memory were wiped tonight, tomorrow's answers must still be right.
 - Memory is read again on the first Monday of each month, and after any answer that surprises. Each time, the date and what was deleted are written down.
 Skills:            Check an invoice total. Calculate a due date from the terms in the vendor record. Spot a likely duplicate.
-- invoice-review: Brightline's draft, owner Dave Kowalski. Each step points to the concept that holds its rule. Off until Dave approves one version, after reading its steps and its test results from both places.
+- invoice-review: Brightline's skill, owner Dave Kowalski. Each step points to the concept that holds its rule. Dave approved this version on Friday, November 6, 2026, after reading its steps and its test results from both places, and it is on where the AP Worker's work runs.
 Settings, Wednesday, October 28, 2026:
 - The conversation: it asks before each action.
 - Mailbox connector, the worker's link to the company's email: read: on. Save drafts: on. Send: off.
