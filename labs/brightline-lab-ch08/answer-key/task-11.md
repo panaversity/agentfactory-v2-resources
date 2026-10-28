@@ -15,15 +15,15 @@ Task 11 carries checks 31 and 32 of the lab's 40.
     - Case files: kept, with invoice 5149's case file added, kept by Maria, every line dated, sourced and marked with its origin
     - Passed: all four fields, with each part above.
     - Missed: policy version 3 still named as the only source; no owner, approver or maintainer; nothing said never to be a source; the skill called approved; or 5149's case file missing.
-32. **The currency line, now policy.** Draft 4's "Any invoice not in US dollars: Dave's rule. It goes to Dave, whatever the amount." is replaced: such an invoice needs Dave's approval before payment, whatever the amount, from the threshold concept, approved on Monday, November 9, 2026. Every line you did not change stays as Draft 4 has it.
-    - Passed: the line replaced as above.
-    - Missed: the line kept as Dave's rule; a line that only sends it to Dave, with no approval before payment; or other lines of Draft 4 rewritten.
+32. **The currency line, now policy, and its log line.** Draft 4's "Any invoice not in US dollars: Dave's rule. It goes to Dave, whatever the amount." is replaced: such an invoice needs Dave's approval before payment, whatever the amount, from the threshold concept, approved on Monday, November 9, 2026. The change log gets a line dated Monday, November 9, 2026, naming Dave and what changed. Every line you did not change stays as Draft 4 has it.
+    - Passed: the line replaced as above, and the log line.
+    - Missed: the line kept as Dave's rule; a line that only sends it to Dave, with no approval before payment; no log line, or one with no date or no Dave; or other lines of Draft 4 rewritten.
 
 ## Why
 
 A project can be deleted, a vendor changed, and the people who set it up can leave. The Role Contract is the page that outlasts them (Lesson 8.7). So it says where the worker's knowledge comes from, who owns and keeps it, and what is never a source. Draft 4 named the policy file as the only source, and nobody had loaded it. Draft 5 names the five concepts, and where their copies are.
 
-Draft 4 sent invoices in other currencies to Dave as his own rule. Since November 9 that is policy, and it asks for his approval before payment, not only a flag. The contract points to the concept, so the rule stays in one place.
+Draft 4 sent invoices in other currencies to Dave as his own rule. Since November 9 that is policy, and it asks for his approval before payment, not only a flag. The contract points to the concept, so the rule stays in one place. Only Dave may change the envelope, and Draft 4 logs every change he makes, so this one is logged too (Chapter 7).
 
 ## Never a deduction
 

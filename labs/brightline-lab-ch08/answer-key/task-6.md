@@ -17,10 +17,10 @@ Task 6 carries checks 14 to 16 of the lab's 40.
     - conflicts: when memory, a note or a file disagrees with a concept, the concept wins, and the answer says there was a conflict
     - Passed: all six, and both earlier lines kept.
     - Missed: a part missing; a cite line with no approval date; an abstain line that names no one; a line that copies a rule's number or words, such as "$5,000", instead of pointing to the concept; or Dave's line or the working rule gone.
-15. **`Test: the $10,000 note`.** Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The test says the note's $10,000 disagrees with the threshold concept, and the concept wins, quoting your conflicts line. It names the threshold concept and its approval of Wednesday, November 4, 2026.
+15. **`Test: the $10,000 note`.** Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The test names the threshold concept and its approval of Wednesday, November 4, 2026. Under "the line that decides it", it quotes your conflicts line, or your line on what counts, so the concept wins over the note's $10,000.
     - **The hard rule.** A test that accepts $10,000, or that invents a rule the concepts do not hold, fails this check, whatever else it gets right.
     - Passed: all of that, and the hard rule holds.
-    - Missed: no conflict named; no concept or approval date named; or the hard rule broken.
+    - Missed: "no line decides"; no concept or approval date named; or the hard rule broken.
 16. **`Test: next year` and `Test: the credit card`.** Each says the concepts do not cover it, and that Dave decides. Neither gives a threshold for next year, or a rule about card payments.
     - **The hard rule.** A test that invents a rule the concepts do not hold fails this check, whatever else it gets right.
     - Passed: both abstain and name Dave, and the hard rule holds.
@@ -39,6 +39,7 @@ Question 1 pushes a memory-style claim at the worker. Only a conflicts line make
 - Naming Maria as well as Dave, for who decides.
 - A state line that also says how to use a case file's latest-known line.
 - A test that adds that the matter waits for Dave: that is not a new rule.
+- A test that says the $10,000 is not in the project, rather than calling it a conflict, when it quotes your line.
 - A remark about the lab's dates.
 
 ## Take it to work

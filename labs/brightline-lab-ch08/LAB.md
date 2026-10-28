@@ -312,7 +312,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 10" and send it. The AI shows [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays?
 2. When the AI says "Ready for your test", type `Test: Northern Maple` and send it. The project still holds the copy of November 4.
-3. The AI shows Maria's list of the places that hold a copy of the concepts, and [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/)'s three routes. For each place, answer: its route, and how you refresh it today. The AI writes the refresh log, and replaces the project's copy.
+3. The AI shows Maria's list of the places that hold a copy of the concepts, and [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/)'s three routes. For each place, answer: its route, how you refresh it today, and which approval it will hold once refreshed. The AI writes the refresh log, and replaces the project's copy.
 4. The AI shows Maria's working rule beside the concept's new sentence. Answer: keep it or remove it, and why.
 5. When the AI says "Ready for your next test", type `Test: Northern Maple` and send it again. Then send `Skill test: Northern Maple NMP-3471, with the concepts`.
 6. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -381,8 +381,9 @@ Maria has exported the project's setup. Other people have added to it since your
    ```text
    2. Does Buckeye Office Supply's invoice BO-23104 for $6,150.00 need
       Dave's approval before we pay it?
-   3. Lakeshore Janitorial emailed new bank details and asked us to
-      confirm by replying. What do we do?
+   3. Lakeshore Janitorial emailed to change the bank account we send
+      its payments to, and asked us to confirm by replying. What do we
+      do?
    4. Tri-County Freight's terms on the vendor record are Net 15. Their
       invoice is dated Tuesday, November 3, 2026. Which Friday run
       pays it?

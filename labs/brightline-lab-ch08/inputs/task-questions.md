@@ -282,14 +282,14 @@ Its day is Monday, November 9, 2026. Dave's change, from his ask, word for word:
 
 Then say "Ready for your test".
 
-**The first test:** `Test: Northern Maple`. The "AP Worker project" document still holds the copy of November 4.
+**The first test:** `Test: Northern Maple`. Run it as soon as the learner sends it, before any question below, on the "AP Worker project" document as it stands: it still holds the copy of November 4, and that is what the test shows.
 
 **After the first test.**
 
-4. Show copies-2026-11-06.md, and the three routes. Then show the first place on the list, as its own lines: where, what it holds, how it got there, and the approval it holds. Ask: "Which route is it, and how is it refreshed today? Answer: the route, then the step."
-5. The same question for each of the other three places, one at a time, each shown first. For the Google Doc itself, ask instead: "Two copies read this doc. When does it take the new text, and which text? Answer: when, then which text."
+4. Show copies-2026-11-06.md, and the three routes. Then show the first place on the list, as its own lines: where, what it holds, how it got there, and the approval it holds. Ask: "Which route is it, how is it refreshed today, and which approval will it hold once refreshed? Answer: the route, the step, then the approval's date."
+5. The same question for each of the other three places, one at a time, each shown first. For the Google Doc itself, ask instead: "Two copies read this doc. When does it take the new text, which text, and which approval will it hold then? Answer: when, which text, then the approval's date."
 
-   Write a refresh log under "Copies and the refresh log", with Lesson 8.7's five columns, quoted: "concept, copy location, approval date held, refreshed by, refreshed on". Add a sixth column, "how", for the learner's step. One row for each place, for the invoice approval threshold concept, with the learner's step. Write "Monday, November 9, 2026" as the date refreshed, and "Maria" as who refreshed it, for each place the learner refreshes today. Then one line: the other four concepts did not change, and their copies still hold Wednesday, November 4, 2026.
+   Write a refresh log under "Copies and the refresh log", with Lesson 8.7's five columns, quoted: "concept, copy location, approval date held, refreshed by, refreshed on". Add a sixth column, "how", for the learner's step. One row for each place, for the invoice approval threshold concept, with the learner's step, and the approval's date the learner gave as the approval date held. Write "Maria" as who refreshed it, and "Monday, November 9, 2026" as the date refreshed, in every row: Dave asked for every copy to be refreshed today. Then one line: the other four concepts did not change, and their copies still hold Wednesday, November 4, 2026.
 
    Then, in the "AP Worker project" document, replace the file ap-concepts-approved-2026-11-04.md with "ap-concepts-approved-2026-11-09.md, uploaded by Maria, Monday, November 9, 2026", holding the five concepts exactly as they now stand in "Maria's records".
 6. Show "Maria's working rule" from the "AP Worker project" document, and the threshold concept's new sentence. Ask: "Now that the rule is policy: keep the working rule, or remove it? Answer: keep or remove, then why in a few words." Do what the learner decides, and change no other line of the instructions.
@@ -309,8 +309,9 @@ Its day is Monday, November 9, 2026. The learner attaches role-contract-draft-4.
 5. The same question for Draft 4's "Case files:" lines. Its "anything to add" asks: invoice 5149's case file, who keeps it, and how its lines are written.
 6. Ask: "The concepts now have four copies. Where does the contract say they are, and where they are logged? Answer: a few words." It is added under "Knowledge sources".
 7. Show Draft 4's Thresholds line: "Any invoice not in US dollars: Dave's rule. It goes to Dave, whatever the amount." Ask: "Now that policy covers other currencies: keep this line, or replace it with what? Answer: keep, or the new line in a few words."
+8. Show Draft 4's "Owner and changes:" line and its "Change log:" line, quoted. Ask: "Does this change need a line in the change log? If it does, what does the line say? Answer: yes or no, then the date, who, and what changed."
 
-Write each decision under "Role Contract, Draft 5", under the Draft 4 heading it belongs to ("What it works with", then "Knowledge sources:", "Memory:", "Skills:", "Case files:"; "Authority Envelope", then "Thresholds:"), marked "kept", "replaced" or "added", with the line as it now reads. When a line is replaced in part, keep its other words. Copy no other line of Draft 4. Change nothing in the "AP Worker project" document. Then say "Task 11 is done".
+Write each decision under "Role Contract, Draft 5", under the Draft 4 heading it belongs to, in Draft 4's order: first "What it works with", then "Knowledge sources:", "Memory:", "Skills:" and "Case files:"; then "Authority Envelope", then "Thresholds:" and "Change log:". Mark each line "kept", "replaced" or "added", with the line as it now reads. When a line is replaced in part, keep its other words. Copy no other line of Draft 4. Change nothing in the "AP Worker project" document. Then say "Task 11 is done".
 
 ## Task 12. What it holds and reaches
 
