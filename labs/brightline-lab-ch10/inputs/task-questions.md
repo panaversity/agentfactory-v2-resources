@@ -46,7 +46,7 @@ In "Test: Monday", keep each item to one or two lines. A test reads the terms an
 
 1. Open the document with its title and its twelve headings, empty. Show "Who is who". Say that Draft 6, in `role-contract-draft-6.md`, is the Role Contract still in use. Then say "Ready for your test".
 
-**The test:** `Test: Monday`. After it, end with: "Ready for the questions."
+**The test:** `Test: Monday`. In the lab chat, after it, end with: "Ready for the questions."
 
 2. When the learner sends anything after the test, show the nine questions, quoted:
 
@@ -86,7 +86,7 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
    Write any new line under "Role Contract, Draft 7" as "Never automated: New line:" and the learner's words. Then say "Ready for your test".
 
-**The tests:** `Test: the Spanish FAQ`, then `Test: the clerk ranking`.
+**The tests:** `Test: the Spanish FAQ`, then `Test: the clerk ranking`. After the first, end with "Ready for your next test"; after the second, "Task 2 is done".
 
 ## Task 3. What the check needs
 
@@ -127,16 +127,16 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - a temporary chat in ChatGPT, or an incognito chat in Claude, on a personal account
    - Maria's own chat in the shared AP project, in Brightline's company workspace on Claude's Team plan
 
-   Ask: "Which way may the check take, and who must confirm that way for vendor data before it runs? Answer: the way, then who."
+   Ask: "Which way may Brightline's work data take, for this check and for any other work, and who must confirm that way for vendor data before the check runs? Answer: the way, then who."
 2. Ask: "What must that way have before vendor data goes through it, about training, who can see the data, and how long it is kept? Answer: three short lines."
-3. Show from `brightline-files.md`: the tax IDs in the full master are kept to file the year-end tax forms. Show Lesson 10.2's line, quoted: "When a new use is outside the purpose, the person who owns the data decides." Ask: "Is finding duplicates before the tax forms inside that purpose? Is training an AI vendor's model? And who decides a use outside it? Answer: yes or no, yes or no, then who."
+3. Show "The vendor master in this lab" from `brightline-files.md`, with its line on why Brightline keeps the tax IDs, and who owns the vendor data. Show Lesson 10.2's line, quoted: "When a new use is outside the purpose, the person who owns the data decides." Ask: "Is finding duplicates before the tax forms inside that purpose? Is training an AI vendor's model? And who decides a use outside it? Answer: yes or no, yes or no, then who."
 
    Write the three answers under "What data, and by which way in", headed "The way in".
 4. Say: "One look at your own account, outside this chat. Open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Is it on or off? Answer: on or off. This one is not graded." Write it under "The way in" as "My own account's training setting:" and the answer.
 
 Then say "Ready for your test".
 
-**The test:** `Test: Jordan's laptop`.
+**The test:** `Test: Jordan's laptop`, the task's only test. After it, end with "Task 4 is done".
 
 ## Task 5. Who the list left out
 
@@ -158,11 +158,11 @@ Then say "Ready for your test".
 ## Task 6. A standing brief
 
 1. Show Dave's early-pay request of December 1, word for word. Say that the brief the worker runs on each month will be written under four headings, Outcome, Format, Inputs and Autonomy, from Dave's request and the learner's lines only. Ask: "What must the brief add to Dave's request, so next month's list cannot leave out who December's did? Give four things, each in a few words of your own: what comes first, and from which source; which dates it counts the days to; what it shows besides the invoices it lists; and who decides. Answer: four lines."
-2. Write the brief under "Who could be harmed or left out", headed "The standing early-pay brief", under the four headings Outcome, Format, Inputs and Autonomy. Use Dave's request, and the learner's four lines word for word, each under the heading it fits. Add no line of your own: nothing about who comes first, which file, which dates, what it shows or who decides, unless the learner's lines say it. Then show the whole brief.
+2. Write the brief under "Who could be harmed or left out", headed "The standing early-pay brief", under the four headings Outcome, Format, Inputs and Autonomy. Use Dave's request, and the learner's four lines word for word, each under the heading it fits. Add no line of your own: nothing about who comes first, which file, which dates, what it shows or who decides, unless the learner's lines say it. If a line of the learner's clashes with words of Dave's request, such as what comes first, show the clash and ask which words the brief keeps; then write their answer. Then show the whole brief.
 
 Then say "Ready for your test".
 
-**The test:** `Test: the December 18 list`. The brief's own lines decide it, and nothing in section 4's table or this chat does.
+**The test:** `Test: the December 18 list`, the task's only test. The brief's own lines decide it, and nothing in section 4's table or this chat does. After it, end with "Task 6 is done".
 
 ## Task 7. Who owns each item
 
@@ -171,14 +171,14 @@ Then say "Ready for your test".
 3. The same question for K6, K7, K8, K9 and K10, one at a time, each shown first with where it is, its header and its text from `brightline-files.md`.
 
    Write each under "Who owns what the worker knows" as a row of the knowledge register: the item, its owner, its status, its action and the learner's reason, if they gave one.
-4. For each item the learner takes down, or removes a copy of, show the item and each place it is kept. Ask: "Who orders it, and who removes each copy? How do they check that it is gone? Is a copy kept as a record, and where? Who is told? Answer: who orders and who removes, how they check, kept or not and where, then who is told."
+4. For each item the learner takes down, or removes a copy of, show the item and each place it is kept. Ask: "Who orders it, and who removes each copy? How do they check that it is gone? Is a copy kept as a record, and where? Who is told, and where are they pointed instead? Answer: who orders and who removes, how they check, kept or not and where, then who is told and where they are pointed."
 
-   Write a takedown record for each, under "Who owns what the worker knows": the item, who ordered it, the date (Friday, December 11, 2026), the reason the learner gave, each copy with who removes it and how they check, any copy kept as a record and where, and who is told.
+   Write a takedown record for each, under "Who owns what the worker knows": the item, who ordered it, the date (Friday, December 11, 2026), the reason the learner gave for its action, if any, each copy with who removes it and how they check, any copy kept as a record and where, and who is told and where they are pointed.
 5. Show Draft 6's "Knowledge sources:" lines, quoted. Ask: "Does a line change, or need adding, for the small-supplier promise, now that you have given it an owner and an action? Draft 6's other words stay. Answer: the line's words, or 'none'."
 
    Write any change under "Role Contract, Draft 7", under "Knowledge sources:". Then say "Ready for your test".
 
-**The test:** `Test: Jordan's question`.
+**The test:** `Test: Jordan's question`, the task's only test. After it, end with "Task 7 is done".
 
 ## Task 8. Who signs
 
@@ -188,14 +188,14 @@ Then say "Ready for your test".
 2. The same question for O2 to O8, one at a time, each shown first.
 
    Write each under "Who must sign before it leaves" as a row of the sign-off matrix: the output, who signs or approves, who sends it and from whose account, and whether the worker may send it.
-3. Show the schedule sent on December 3 beside `open-payables-register-2026-11-30.csv`: every line where the two differ, with both values; the schedule's total; the register's total in US dollars alone; and the schedule's last two lines, its signature block. Ask: "What does Dave check before he signs a schedule like this, and who decides how a balance in Canadian dollars is shown? Answer: what he checks, then who decides."
+3. Show the schedule sent on December 3 beside `open-payables-register-2026-11-30.csv`: every line where the two differ, with both values; the schedule's total; the register's total in US dollars alone; and the schedule's last two lines, its signature block. Say nothing about what a difference means. Ask: "What does Dave check before he signs a schedule like this, and who decides how a balance in Canadian dollars is shown? Answer: what he checks, then who decides."
 
    Write the answer under "Who must sign before it leaves", headed "The schedule".
 4. Show these Draft 6 lines, quoted: A06 and A07 under "Actions and levels:", A10 under "Never automated:", the first line under "Replies and handoffs:", and the heading "Escalation triggers:" with its first line. Ask: "What must Draft 6 say for your sign-off matrix to hold? Three things, each in a few words: how an output on the sign-off list reaches its signer, and who sends it; what the worker never puts on a draft; and where a request from an auditor, a tax authority or a court goes. Draft 6's other words stay. Answer: three lines."
 
    Write each under "Role Contract, Draft 7", under the Draft 6 heading it belongs to, as a whole line. Then say "Ready for your test".
 
-**The test:** `Test: the auditors' follow-up`.
+**The test:** `Test: the auditors' follow-up`, the task's only test. After it, end with "Task 8 is done".
 
 ## Task 9. The first hour
 
@@ -209,14 +209,15 @@ Then say "Ready for your test".
    Then show "Maria's account of December 6" from `brightline-files.md`, its lines numbered. Say that Dave is the person who owns this risk, and that Brightline has no incident process yet. Ask: "For each line: a fact for the note, or a decision that waits for someone, and whom? Answer: one line each, by its number."
 2. Ask: "What does the note not know yet? Answer: one or two things, or 'nothing'."
 3. Ask: "From now until Dave decides, what does Maria stop doing, and what does she keep? Answer: a few words each."
+4. Ask: "What waits for Dave's decision? Answer: a few words each."
 
    Write the incident note under "The first hour", headed "Incident note", from Maria Lopez to Dave Kowalski, dated Monday, December 7, 2026, 7:00 a.m., in five parts: what she has stopped and kept; the facts; reported to; what is not known; waiting for Dave's decision on. Use only the learner's answers and the facts of her account. Then show it.
-4. Show the December 9 event from "What happened in early December 2026". Ask: "Is Jordan's reply reported, to whom, and why? Answer: yes or no, to whom, then why in a few words."
-5. Ask: "The first-hour rule, for anyone at Brightline next time something goes where it should not: what do they stop, what do they keep, what do they write down, and whom do they tell, by when? Answer: four short lines."
+5. Show the December 9 event from "What happened in early December 2026". Ask: "Is Jordan's reply reported, to whom, and why? Answer: yes or no, to whom, then why in a few words."
+6. Ask: "The first-hour rule, for anyone at Brightline next time something goes where it should not: what do they stop, what do they keep, what do they write down, and whom do they tell, by when? Answer: four short lines."
 
    Write both answers under "The first hour". Then say "Ready for your test".
 
-**The test:** `Test: Jordan's laptop`.
+**The test:** `Test: Jordan's laptop`, the task's only test. After it, end with "Task 9 is done".
 
 ## Task 10. Who can open the result
 
@@ -230,7 +231,7 @@ Then say "Ready for your test".
 
    Write the answers under "Who can open the result". Then say "Ready for your test".
 
-**The test:** `Test: the duplicate list`.
+**The test:** `Test: the duplicate list`, the task's only test. After it, end with "Task 10 is done".
 
 ## Task 11. The record and the policy
 
@@ -252,7 +253,7 @@ Then say "Ready for your test".
 
    Write both answers under "Interim AI policy". Then say "Ready for your test".
 
-**The test:** `Test: the send tool`.
+**The test:** `Test: the send tool`, the task's only test. After it, end with "Task 11 is done".
 
 ## Task 12. Which settings carry it out
 
@@ -269,4 +270,4 @@ Then say "Ready for your test".
 
 In the lab chat, the learner sends "Task 13" only to download the document. Say: "Download the document from its menu, as .docx or .pdf, and use it in a fresh chat as the page says." Ask nothing.
 
-In the fresh chat, the learner attaches the downloaded document and this zip, and sends a brief. Answer "Test: Monday" from the attached document, read as the terms, and from `role-contract-draft-6.md` as the document's section 12 changes it, as "When the learner sends 'Test:'" above says.
+In the fresh chat, the learner attaches the downloaded document and this zip, and sends a brief. Answer "Test: Monday" from the attached document, read as the terms, and from `role-contract-draft-6.md` as the document's section 12 changes it, as "When the learner sends 'Test:'" above says. In the fresh chat, end after the eighth case's items, with no end line.

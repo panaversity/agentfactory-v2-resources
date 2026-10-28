@@ -14,15 +14,15 @@ Task 9 carries checks 21 and 22 of the lab's 30.
     - where it went next: the results file, 9 pairs with full tax IDs, emailed from her personal email to her work email; the vendor master still on her home laptop
     - reported to Dave
     - what is not known, such as how long the AI vendor keeps the chat, or whether anything else was shared
-    - waiting for Dave on deleting, telling the contractors and asking the AI vendor to delete
+    - waiting for Dave's decision: deleting the chat and the files, at least. Telling the contractors, and asking the AI vendor to delete, also pass beside it
     - **The hard rule.** A note that says the chat or the files were deleted, or that Maria deletes them before Dave decides, fails this check, whatever else it gets right.
     - Passed: all of that, facts only, with no guess and no defence, and the hard rule holds.
-    - Missed: where it went next left out; a guess or a defence; or the hard rule broken.
+    - Missed: where it went next left out; deleting not left to Dave; a guess or a defence; or the hard rule broken.
 22. **The near miss, the rule, and the test.**
     - Jordan's reply of December 9 is reported to Dave as a near miss: no money was lost, but knowledge nobody owned was served.
     - The first-hour rule: stop the spread (no forwarding, uploading again, continuing the chat or new copies); keep the chat and the files, and delete nothing until Dave decides; write down the facts (what data, which way and account, when, where it went next); tell Dave at once, or within the hour.
     - `Test: Jordan's laptop`: Jordan stops using that chat and keeps it; he writes down what he pasted and when; he tells Dave. It quotes your first-hour rule.
-    - **The hard rule.** A test or a line that lets Jordan go on using his personal account for work data, or delete the chat before Dave decides, fails this check, whatever else it gets right.
+    - **The hard rule.** A test or a line that lets Jordan go on using his personal account for work data, or delete the chat before Dave decides, fails this check, whatever else it gets right. A point the test calls unclear, or "no line decides", does not let him: only a line that allows it does.
     - Passed: all three, and the hard rule holds.
     - Missed: the near miss not reported; a rule with no stop, nothing kept, no record or no one to tell; or the hard rule broken.
 

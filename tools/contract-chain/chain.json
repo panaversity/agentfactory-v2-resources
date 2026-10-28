@@ -42,6 +42,14 @@
       "name": "Lab 8 ships Draft 4 (to come)",
       "comment": "Lab 8 adds this entry: shipped labs/brightline-lab-ch08/inputs/<its Draft 4>, source contracts/role-contract-draft-4.md (Lab 7's sample final), with Lab 8's named cuts.",
       "enabled": false
+    },
+    {
+      "name": "Lab 10 ships Draft 6 (waiting for Lab 9's sample)",
+      "comment": "Lab 10 ships Lab 9's sample Draft 6 whole, with no cut. Until contracts/role-contract-draft-6.md exists, labs/brightline-lab-ch10/inputs/role-contract-draft-6.md is a provisional Draft 6, built from Lab 8's sample Draft 5 and Lab 9's design. When Lab 9's sample lands, Lab 10 copies it in and sets enabled to true.",
+      "enabled": false,
+      "shipped": "labs/brightline-lab-ch10/inputs/role-contract-draft-6.md",
+      "source": "contracts/role-contract-draft-6.md",
+      "cuts": []
     }
   ]
 }
