@@ -7,7 +7,7 @@ Chapter 8 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 | Path | What it is |
 | --- | --- |
 | `LAB.md` | The lab: the job, and thirteen tasks, each checked against its own answer key the moment it is done. |
-| `inputs.zip` | The one file you give the AI, in Task 1. It holds the AP Worker's project as it stood on Tuesday, November 3, 2026, Dave's memo and approval note, and invoice 5149's records. It also holds a ready-made skill with four invoices, the ten test questions, and the questions the AI asks you in each task. You don't need to open it. |
+| `inputs.zip` | The one file you give the AI, in Task 1. It holds the AP Worker's project as it stood on Tuesday, November 3, 2026, Dave's memo and approval note, and invoice 5149's records. It also holds a ready-made skill, four invoices to test it on, the ten test questions, and the questions the AI asks you in each task. You don't need to open it. |
 | `role-contract-draft-4.md` | The AP Worker's Role Contract, Draft 4. You attach it in Task 11, and not before. |
 
 **The lab's dates.** The lab runs from Tuesday, November 3, to Monday, November 16, 2026, and each task says its day.

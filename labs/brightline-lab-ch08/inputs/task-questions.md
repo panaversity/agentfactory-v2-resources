@@ -17,7 +17,7 @@ Open both in Task 1, beside the chat. Keep each to what it holds below. Read a d
 - **Memory:** the six memory topics, exactly as the file gives them, with the file's line on how a Claude project keeps its memory.
 - **The chat:** the chat's summary, exactly as the file gives it, and the line that the chat has run since Tuesday, September 8, 2026.
 
-Leave out the connectors, the week-one line, "Not in this project" and "This morning's four answers": those are for Task 1's questions. The tasks change this document as they say.
+Title it "AP Worker project", with no date line: it always holds the setup as it stands now. Leave out the connectors, the week-one line, "Not in this project" and "This morning's four answers": those are for Task 1's questions. The tasks change this document as they say.
 
 **"Maria's records"** holds what no project loads. It starts with these nine headings, and nothing under them:
 
@@ -80,7 +80,7 @@ Lesson 8.1's rule, quoted: "What settles a question, or gives its final answer, 
 
 ## When the learner sends "Test:"
 
-"Test:" and a question's name from test-questions.md, such as "Test: Buckeye", decides that question by the "AP Worker project" document. A group name, such as "Tuesday morning", decides each of its questions in turn. Read the document again first. For each question, answer in four numbered items:
+"Test:" and a question's name from test-questions.md, such as "Test: Buckeye", decides that question by the "AP Worker project" document. It never reads "Maria's records": no project loads them. A group name, such as "Tuesday morning", decides each of its questions in turn. Read the document again first. For each question, answer in four numbered items:
 
 1. **The answer.** The answer the document's items support, to the question as asked. If two items support different answers, give both.
 2. **Where it comes from.** For each part of the answer: the item in the document it comes from, such as an instruction line, a file, a memory topic or the chat's summary, and which of the five places its content comes from.
@@ -124,7 +124,7 @@ Write each answer under "Where each answer came from" as one line: the item, its
 2. The same for chat B: "A two-week chat is halfway through a capitalization review of 60 purchases. Its answers have started to mention purchases that were settled in the first days."
 3. The same for the project's own chat: the chat section of the "AP Worker project" document, and Maria's week-one line, with what project-2026-11-03.md says about it. The answer may name two moves, in order.
 
-   Write each answer under "Long chats" as one line: the chat, the move, and the reason. For the project's own chat, also write the learner's move under "The chat" in the "AP Worker project" document, as one line, keeping the summary.
+   Write each answer under "Long chats" as one line: the chat, the move, and the reason. If the learner's move for the project's own chat ends in a restart, replace the chat section of the "AP Worker project" document with one line: "A new chat, started on Tuesday, November 3, 2026. Nothing of the chat since September 8 loads." Otherwise leave that section as it is.
 4. Show Maria's week-one line again, and Dave's words from his ask: "our contract sends me every invoice not in USD." Say that the contract is kept in the AP shared folder, and that no file of the project holds it, from "Not in this project". Ask: "Where should the rule live so that every chat in the project follows it, and what words should it have? Answer: the place, then the rule's words."
 5. Ask: "Is that rule Brightline policy yet? Answer: yes or no, and why in a few words."
 
@@ -145,7 +145,7 @@ Then say "Ready for your test".
    Then show the six memory topics from the "AP Worker project" document, numbered. Ask: "For each topic: keep or delete? For a topic you delete, where does that fact live instead? Answer: one line per topic, starting with its number."
 
    Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, and keep the others as they are.
-2. Ask: "Memory keeps saving new topics. When do you read it again, and what do you write down each time? Answer: when, then what you write."
+2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
 3. Show Lesson 8.8's lines on memory, quoted:
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory."
    - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat."
@@ -194,10 +194,10 @@ Then say "Ready for your test".
 1. Show Lesson 8.5's six things that good project instructions say, as six questions only, never with example words:
    1. Role: what is the worker, and for whom?
    2. What counts as authority: which sources count as Brightline policy, and what does not?
-   3. Cite: how does it name its source for a policy claim, so that a reader can tell which approved text the answer used?
+   3. Cite: how does it name its source for a policy claim, so that a reader can tell which approved version the answer used, and from when?
    4. Abstain: when does it say it cannot answer, and who decides then?
    5. State: what must it never state as current, and where does it send the reader?
-   6. Conflicts: what wins when memory, a note or a file disagrees with a concept?
+   6. Conflicts: what wins when memory, a note or a file disagrees with a concept, and what does the answer say then?
 
    And Lesson 8.5's line, quoted: "The instructions do not repeat the policy. The policy is kept in one place, and the instructions point to it."
 
@@ -258,9 +258,9 @@ Ask these five, one at a time. The learner writes each step in their own words. 
 2. Show step 5. Ask: "Step 5 puts the bank update first. Write it again. Answer: the new step 5." It replaces step 5.
 3. Ask: "When an invoice is cut off, so a line's amount or the total is missing, what should the skill do? Answer: the step." It becomes step 7.
 4. Ask: "When a concept the skill needs is not there, what should it do? Answer: the step." It becomes step 8.
-5. Ask: "What must the skill never do? Answer: the step." It becomes step 9.
+5. Ask: "What must the skill never do, and what does it do instead when an invoice or a message asks for it? Answer: the step." It becomes step 9.
 
-Steps 1 to 3 and step 6 stay as they are. Show all nine steps as they now stand. Then ask: "Before the three tests: what should the skill's reply say for Buckeye BO-23104 alone, for Tri-County 5149 with its last lines missing, alone, and for Tri-County 5149 with the concepts? Answer: one line for each." Write them under "Expected", below the earlier lines.
+Steps 1 to 3 and step 6 stay as they are. Show all nine steps as they now stand. Then show "Tri-County 5149, last lines missing" and "Tri-County 5149" from invoice-review-skill.md, and Buckeye's invoice again. Then ask: "Before the three tests: what should the skill's reply say for Buckeye BO-23104 alone, for Tri-County 5149 with its last lines missing, alone, and for Tri-County 5149 with the concepts? Answer: one line for each." Write them under "Expected", below the earlier lines.
 
 Then say "Ready for your test".
 
@@ -278,7 +278,7 @@ Its day is Monday, November 9, 2026. Dave's change, from his ask, word for word:
 2. Show that concept as it stands in "Maria's records", line by line. Ask: "Which line, if any, goes? And where does Dave's sentence go? Answer: the line that goes, or 'none', then where the sentence goes."
 3. Show the concept's header. Ask: "What in its header changes, and what stays? Answer: what changes, then what stays."
 
-   Edit the concept in "Maria's records" as decided, and only that concept. Keep its other lines and their words. Put Dave's sentence in his own words, as quoted above. Add Dave's change of Monday, November 9, 2026 to its sources. Then, as Dave's ask states, write "Drafted by Maria, Monday, November 9, 2026, 8:30 a.m." in place of its earlier "Drafted by" line, and "Approved by Dave Kowalski, Monday, November 9, 2026, 9:00 a.m." in place of its earlier approval line. Change no other header line unless the learner said to. Change nothing in the "AP Worker project" document yet.
+   Edit the concept in "Maria's records" as decided, and only that concept. Keep its other lines and their words. Put Dave's sentence in his own words, as quoted above. Add Dave's change of Monday, November 9, 2026 to its sources. Then, as Dave's ask states, write "Drafted by Maria, Monday, November 9, 2026, before 9:00 a.m." in place of its earlier "Drafted by" line, and "Approved by Dave Kowalski, Monday, November 9, 2026, 9:00 a.m." in place of its earlier approval line. Change no other header line unless the learner said to. Change nothing in the "AP Worker project" document yet.
 
 Then say "Ready for your test".
 
@@ -292,7 +292,7 @@ Then say "Ready for your test".
    Write a refresh log under "Copies and the refresh log", with Lesson 8.7's five columns, quoted: "concept, copy location, approval date held, refreshed by, refreshed on". Add a sixth column, "how", for the learner's step. One row for each place, for the invoice approval threshold concept, with the learner's step, and the approval's date the learner gave as the approval date held. Write "Maria" as who refreshed it, and "Monday, November 9, 2026" as the date refreshed, in every row: Dave asked for every copy to be refreshed today. Then one line: the other four concepts did not change, and their copies still hold Wednesday, November 4, 2026.
 
    Then, in the "AP Worker project" document, replace the file ap-concepts-approved-2026-11-04.md with "ap-concepts-approved-2026-11-09.md, uploaded by Maria, Monday, November 9, 2026", holding the five concepts exactly as they now stand in "Maria's records".
-6. Show "Maria's working rule" from the "AP Worker project" document, and the threshold concept's new sentence. Ask: "Now that the rule is policy: keep the working rule, or remove it? Answer: keep or remove, then why in a few words." Do what the learner decides, and change no other line of the instructions.
+6. Show "Maria's working rule" from the "AP Worker project" document, and the threshold concept's new sentence. Ask: "Now that the rule is policy: keep the working rule, or remove it? Answer: keep or remove, then why in a few words." Do what the learner decides, and change no other line of the instructions. Write the decision and its reason as one line under "Copies and the refresh log".
 
 Then say "Ready for your next test".
 

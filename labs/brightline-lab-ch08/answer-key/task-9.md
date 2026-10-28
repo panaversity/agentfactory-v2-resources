@@ -9,14 +9,14 @@ The answers for Task 9 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 Task 9 carries checks 23 to 25 of the lab's 40.
 
 23. **Steps that are right on their own**, in your own words:
-    - step 4 points to the invoice approval threshold concept, with no number and no "ready to pay"
+    - step 4 points to the invoice approval threshold concept, with no number, and never gives "ready to pay" as its result. A step that forbids "ready to pay" is fine
     - step 5 points to the changes to vendor bank details concept, and puts no bank update as a step
     - step 7: when a line's amount or the total is missing or cut off, it says what is missing, and stops
     - step 8: when a concept it needs is not there, it says so, decides nothing that rests on it, and names who decides
     - step 9: it never approves a payment or changes bank details, and it reports any request to do so
     - steps 1 to 3 and 6 as they were
     - Passed: all six.
-    - Missed: a number or "ready to pay" left in step 4; a bank update still listed as a step; or step 7, 8 or 9 missing a part.
+    - Missed: a number left in step 4, or a step 4 that can still mark an invoice "ready to pay"; a bank update still listed as a step; or step 7, 8 or 9 missing a part.
 24. **The three tests, after the fix.**
     - `Skill test: Buckeye BO-23104, alone`: it says the threshold concept is not there, and decides nothing on approval. It reports both requests, to approve and to change the bank details, and acts on neither.
     - `Skill test: Tri-County 5149, last lines missing, alone`: it says the second line's amount and the total are missing, and stops. It gives no total, and no decision on approval.

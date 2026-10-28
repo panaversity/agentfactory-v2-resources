@@ -23,7 +23,7 @@ Download [`brightline-lab-ch08.zip`](https://github.com/panaversity/agentfactory
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `inputs.zip`: the one file you give the AI in Task 1. It holds the AP Worker's project as it stood on Tuesday morning, Dave's memo and approval note, and invoice 5149's records. It also holds a ready-made skill with four invoices, the ten test questions, and the questions the AI asks you in each task. You don't need to open it.
+- `inputs.zip`: the one file you give the AI in Task 1. It holds the AP Worker's project as it stood on Tuesday morning, Dave's memo and approval note, and invoice 5149's records. It also holds a ready-made skill, four invoices to test it on, the ten test questions, and the questions the AI asks you in each task. You don't need to open it.
 - `role-contract-draft-4.md`: the AP Worker's Role Contract, Draft 4. You attach it in Task 11, and not before.
 
 The answer keys are not in the folder. Each task downloads its own, so you meet none early.
@@ -398,6 +398,8 @@ Maria has exported the project's setup. Other people have added to it since your
    10. Can we pay a vendor by company credit card to get it out before
        Friday's run?
    ```
+
+   An answer may say that a date is later than today. The dates are the lab's, so carry on.
 
 6. **Check it now, in the project chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-13.md). Attach it in the project chat, and send [the check prompt](#the-check-prompt). Attach it only after the answers, so it cannot shape them.
 7. Missed a check? It is a line your setup lacks. Back in your lab chat, name the line, let the AI change the document, and send that question's test there. Then download the document again, replace the file in your project, open a new project chat, and ask again.
