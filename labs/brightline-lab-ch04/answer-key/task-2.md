@@ -6,10 +6,10 @@ The answers for Task 2 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 4 and 5 of the lab's 13 scored checks.
+Task 2 carries checks 3 and 4 of the lab's 9 scored checks.
 
-4. **The record wins, and the disagreement is written down.** The vendor record, in the accounting system, should have answered: Net 15, so invoice 5102 is due Saturday, October 24, 2026. The disagreement goes into the invoice's case file, and is flagged to the record's owner, the AP team (Maria or Dave also passes). Missed: memory as the source for terms, a due date other than October 24, 2026, or nobody told.
-5. **Memory keeps only the preference, and passes the wipe test.** Keep "Maria wants the payment register sorted by due date": it is her preference, and no record says it. Remove the other three, or rewrite each as a pointer with no figure in it, such as "Lakeshore's terms changed in August, so check the vendor record". The foreign-currency remark is removed, not rewritten: no record says anything about foreign currency yet, so there is nothing to point to. The wipe test: yes, tomorrow's answers stay right, because every fact now comes from a record; the worker may only be slower, or ask Maria again how she likes the register. Missed: any figure or rule left in memory, or a wipe test that says the answers would change.
+3. **The record wins, and someone is told.** The vendor record, in the accounting system, should have answered: Net 15, so invoice 5102 is due Saturday, October 24, 2026. The disagreement is flagged to the record's owner, the AP team (Maria or Dave also passes). Missed: memory as the source for terms, a due date other than October 24, 2026, or nobody told.
+4. **Memory keeps only the preference, and passes the wipe test.** Keep "Maria wants the payment register sorted by due date": it is her preference, and no record says it. Remove the other three, or rewrite each as a pointer with no figure in it, such as "Lakeshore's terms changed in August, so check the vendor record". The foreign-currency remark is removed, not rewritten: no record says anything about foreign currency yet, so there is nothing to point to. The wipe test: yes, tomorrow's answers stay right, because every fact now comes from a record; the worker may only be slower, or ask Maria again how she likes the register. Missed: any figure or rule left in memory, or a wipe test that says the answers would change.
 
 Never a deduction: saying the record could be wrong. It could, but only its owner may change it.
 
