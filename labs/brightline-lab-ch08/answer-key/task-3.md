@@ -23,7 +23,7 @@ Task 3 carries checks 6 and 7 of the lab's 40.
 
 ## Why
 
-Memory is written by the product from what was said, and nobody approves it (Lesson 8.4). A remark about next year became a rule. So memory gets a narrow job: preferences and how you work. Anything a decision depends on stays out: policy, limits, amounts, statuses. New topics keep arriving, so one reading is not enough: read it on a set day, and write down what went. A project should also keep its memory apart from your other work. Claude does that by itself. ChatGPT does it once you choose project-only memory, which you choose when you make the project (Lesson 8.8).
+Memory is written by the product from what was said, and nobody approves it (Lesson 8.4). A remark about next year became a rule. So memory gets a narrow job: preferences and how you work. Anything a decision depends on stays out: policy, limits, amounts, statuses. New topics keep arriving, so one reading is not enough: read it on a set day, and again after any answer that surprises you, because a surprise is often memory at work (Lesson 8.4). Each time, write down what went. A project should also keep its memory apart from your other work. Claude does that by itself. ChatGPT does it once you choose project-only memory, which you choose when you make the project (Lesson 8.8).
 
 ## Never a deduction
 

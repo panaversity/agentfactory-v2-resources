@@ -1,6 +1,6 @@
 # Lab 8: what the AI asks in each task
 
-This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the two documents or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before its test are done, say "Ready for your test". After a test's reply, add one line from you: the task's next question; or "Ready for your next test", only when the task still has a test the learner has not sent; or, after the task's last test, "Task N is done". Use a task's section only when the learner sends that task. Show nothing from a file dated after the task's own day.
+This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the two documents or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before its test are done, say "Ready for your test". After a test's reply, end with exactly one line from you, and nothing after it: the task's next question; or "Ready for your next test", only when the task still has a test the learner has not sent; or, after the task's last test, "Task N is done". Use a task's section only when the learner sends that task. Show nothing from a file dated after the task's own day.
 
 **You write, the learner decides.** Write each answer into the document the task names, as the line the task names: the learner's decision, in your words, with nothing added. Never add a place, a clause, a date, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. When an answer changes a line, change only what the answer changes, and keep the line's other words; if the answer clashes with words it does not change, show the clash and ask. Then show the lines you changed, as they now stand. Change no other line. Never say what an answer should be, or whether it is right: grading happens only when the learner sends a check prompt. Write every note in the chat, never in a document.
 
@@ -91,12 +91,12 @@ During a test, change nothing in either document. A test reads the "AP Worker pr
 
 ## When the learner sends "Skill test:"
 
-"Skill test:" and an invoice's name from invoice-review-skill.md, then "alone" or "with the concepts", is answered in the chat, in full: each step, then the reply, then the "Result:" line. Writing the Result line into the records comes after that, never instead of it. A skill test reads the invoice-review skill's steps, as they stand now under "The invoice-review skill" in "Maria's records". Read that section again first.
+"Skill test:" and an invoice's name from invoice-review-skill.md, then "alone" or "with the concepts", is answered in the chat, in full. First write its "Result:" line under "Results" in "The invoice-review skill", with the test's name. Then, as the last part of your reply, give the whole test in the chat: each step, then the reply, then the "Result:" line. Never end with only the Result line. A skill test reads the invoice-review skill's steps, as they stand now under "The invoice-review skill" in "Maria's records". Read that section again first.
 
 - **Alone:** read only the skill's steps and that one invoice. Go step by step, and say what each step decides for this invoice. Then give the reply the steps ask for. Where a step needs a rule the steps do not hold, say so. Nothing from the concepts, the instructions, this chat or your own judgment decides anything.
 - **With the concepts:** read the skill's steps, the Instructions and the concepts in the "AP Worker project" document, and that one invoice. For each check, name the step or the concept line that decides it. Name any step a concept overrides, as "set aside".
 
-Read no other invoice in the file, and no other version of the same invoice. Show all of it in the chat: each step, then the reply. Then end with one line: "Result:" and what the skill's reply says on approval and on any request in the invoice. Write that line under "Results" in "The invoice-review skill", with the test's name. Change nothing else.
+Read no other invoice in the file, and no other version of the same invoice. The "Result:" line says what the skill's reply says on approval and on any request in the invoice. Change nothing else.
 
 ## Task 1. Where each answer came from
 
@@ -235,7 +235,7 @@ Its day is Thursday, November 5, 2026.
 **Before the tests.**
 
 1. Under "The invoice-review skill" in "Maria's records", write: "invoice-review, Brightline's draft, from Harbor Point Distribution's version 1.2. Status: draft. Owner: Dave Kowalski. Drafted by Maria, Thursday, November 5, 2026." Then copy the skill's six steps under it, word for word, numbered as they are, and add two empty headings under them, "Expected" and "Results".
-2. Show Lesson 8.9's line, quoted: "Read every step, and every file or script it carries. Then ask what it can reach, and what it can send or change." And: "are its steps your company's approved procedure?" Then show step 1. Ask: "Is this step OK, or does it carry a rule of its own? If it does, which of the five concepts should it point to? Answer: OK, or 'own rule' and the concept."
+2. Show the first lines of invoice-review-skill.md, which say what the skill is and that it is one file. Then show Lesson 8.9's line, quoted: "Read every step, and every file or script it carries. Then ask what it can reach, and what it can send or change." And: "are its steps your company's approved procedure?" Then show step 1. Ask: "Is this step OK, or does it carry a rule of its own? If it does, which of the five concepts should it point to? Answer: OK, or 'own rule' and the concept."
 3. The same question for steps 2 to 6, one at a time, each shown first.
 
    Write the answers under the steps, as "Reading:" and one line per step.
@@ -270,7 +270,7 @@ Then say "Ready for your test".
 
 ## Task 10. One change, every copy
 
-Its day is Monday, November 9, 2026. Dave's change, from his ask, word for word: "From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount." He approves the edited concept at 9:00 a.m., as drafted.
+Its day is Monday, November 9, 2026. Dave's change, as the concept holds it, in the policy's voice: "From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount." His ask says "my approval": the concept names his role. He approves the edited concept at 9:00 a.m., as drafted.
 
 **Before the first test.**
 

@@ -16,7 +16,7 @@ Task 2 carries checks 4 and 5 of the lab's 40.
    - Missed: chat A summarized or persisted; chat B restarted, or summarized with no word on reading or correcting the note; or the project's chat restarted or summarized with nothing persisted.
 5. **The rule, persisted where every chat loads it.**
    - Under "Instructions" in the "AP Worker project" document, below Dave's line, a working rule that sends every invoice not in US dollars to Dave. A rule that names only Northern Maple is Missed: Northern Maple was one case of the rule.
-   - Under "Long chats", the place is the project's instructions, and the rule is not policy yet: it is Dave's own routing rule, and policy version 3 does not cover other currencies.
+   - Under "Long chats", the place is the project's instructions, and the rule is not policy yet. Maria's working rule carries Dave's own routing rule, from the Role Contract, and policy version 3 does not cover other currencies.
    - `Test: Northern Maple` flags NMP-3471 to Dave, from the working rule.
    - Passed: all three.
    - Missed: the rule left in the chat or put in memory; a rule for Northern Maple only; the rule called policy; or a test that does not flag NMP-3471 to Dave.

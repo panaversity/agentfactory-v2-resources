@@ -8,8 +8,8 @@ The answers for Task 10 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second
 
 Task 10 carries checks 26 to 30 of the lab's 40.
 
-26. **The concept, edited in place.** The invoice approval threshold concept takes Dave's sentence, in his words: "From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount." Its line saying that it does not cover other currencies is gone. Its other lines stay as they were. No new concept is started.
-    - Passed: all of that.
+26. **The concept, edited in place.** The invoice approval threshold concept takes Dave's sentence, in the policy's voice: "From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount." Its line saying that it does not cover other currencies is gone. Its other lines stay as they were. No new concept is started.
+    - Passed: all of that. "Dave's approval" passes for "the controller's approval".
     - Missed: a new concept for currencies; the "does not cover" line kept beside the new sentence; or another line of the concept lost or changed.
 27. **Its header.** It is approved by Dave on Monday, November 9, 2026, at 9:00 a.m., and drafted before that. Its sources add Dave's change of November 9. Its effective date stays Tuesday, September 1, 2026, because the new sentence carries its own start date. A note that the new sentence applies from November 9 is fine beside it. Its review date stays Wednesday, March 31, 2027.
     - Passed: all of that.
