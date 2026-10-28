@@ -6,7 +6,7 @@ Chapter 6 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and twelve tasks, the last one optional, each checked against its own answer key the moment it is done. |
+| `LAB.md` | The lab: the job, and twelve tasks, the last one optional, each checked against its own answer key the moment it is done. Then a Review Contract for a task from your own work. |
 | `inputs.zip` | The one file you give the AI in Task 1, and again in Task 11. It holds Maria's brief and the five other files the AP Worker worked from, the worker's package for the payment run on Friday, October 30, 2026, the Review Contract template, and the questions the AI asks you in each task. You don't need to open it. |
 | `approved-memo-2026-11-06.md` | Dave's approved memo for the payment run on Friday, November 6, 2026. You attach it in Task 10. You don't need to open it. |
 

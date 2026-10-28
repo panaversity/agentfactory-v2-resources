@@ -198,7 +198,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows the task record one part at a time, with [6.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/work-you-did-not-watch/)'s three things to read in it: what the worker used and did, its tools, and how it finished. Answer each question in a few words.
+1. In your lab chat, type "Task 2" and send it. The AI shows [6.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/work-you-did-not-watch/)'s three things to read in a task record, then the whole task record, each line numbered. It asks about what the worker used and did, its tools, and how it finished. Answer each question in a few words.
 2. The AI asks which checks in your contract test the package's claims of a call, an approval or a verification. Give the letters, or a new check in a few words.
 3. When the AI says "Ready for your review", type `Review:` and the letters, and send it. Before the first flagged item, the AI shows the kinds of problem you can name.
 4. For each flagged item, answer: a problem, with its kind and what is right, or right, and why.
@@ -249,7 +249,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. In your lab chat, type "Task 5" and send it. The AI shows the three checks on a citation from [6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/), Dave's question and your contract's checks, and asks which checks answer it. Give the letters, or a new check in a few words.
 2. The AI asks what a cited section must do to pass your check. Answer in a few words. If your check does not already say it, your answer goes in as an amendment.
 3. When the AI says "Ready for your review", type `Review:` and the letters, and send it.
-4. For each flagged item, answer: a problem, with its kind and what is right, or right, and why.
+4. For each flagged item, answer: a problem, with its kind and what is right, or right, and why. Then the AI shows each row that cites no section, and asks the same.
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 12 to 14 passed.
@@ -282,7 +282,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. In your lab chat, type "Task 7" and send it. The AI shows how [6.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/decision-numbers/) ties out a figure and how [6.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/audience/) compares versions, then Dave's question and your contract's checks, and asks which checks answer it. Give the letters, or a new check in a few words.
 2. The AI asks which facts your check will line up across the CSV, the memo and the note. Answer in a few words. If your check does not already say it, your answer goes in as an amendment.
 3. When the AI says "Ready for your review", type `Review:` and the letters, and send it.
-4. For each fact that differs, answer which version is right, and the source that shows it, or that none is. A fact you decided in an earlier task keeps its finding's number, and the AI does not ask about it again.
+4. For each fact that differs, answer which version is right, and the source that shows it, or that none is. The AI asks this for every fact that differs, even one you decided in an earlier task. For that one it shows the finding's number, and the finding can be your source.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 17 to 19 passed.
@@ -372,7 +372,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
    ```
 
 4. When the reply is back, copy all of it. In your lab chat, type "The second reviewer's reply" on the first line, paste the whole reply below it, and send them together. The AI asks where the reviewer ran. Answer in a few words.
-5. The AI lists the reviewer's findings beside yours. Then it shows each finding you did not have, one at a time, with its source line. Answer: real or not. If real: its kind, and what is right. If not: the source that shows it.
+5. The AI lists the reviewer's findings beside yours, and each line of its reply that disagrees with one of your decisions. Then it shows each one you did not have, one at a time, with its source line. Answer: real or not. If real: its kind, and what is right. If not: the source that shows it.
 6. For each problem you found that the reviewer missed, the AI asks which line of your contract should have sent it there. Answer with its letter, or "no line" and a new check in a few words.
 7. The AI asks what your contract would need on the other AI vendor. Answer in a few words, or "nothing". [6.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/both-ai-vendors/) says why.
 8. **Check it now, in your lab chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-11.md). Attach it in your lab chat, not the fresh chat, and send [the check prompt](#the-check-prompt).
