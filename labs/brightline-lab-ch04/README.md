@@ -6,7 +6,7 @@ Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and seven tasks, each checked against its own answer key the moment it is done. |
+| `LAB.md` | The lab: the job, and four tasks, each checked against its own answer key the moment it is done. |
 | `inputs.zip` | The one file you give the AI, in Task 1. It holds two files: what happened in the week, with IT's list of the worker's parts, and the questions the AI asks you in each task. You don't need to open it. |
 
 **The lab's dates.** The cases happen in the week of Monday, October 12, 2026, and each case gives its own date and time, so nothing depends on the day you do the lab.

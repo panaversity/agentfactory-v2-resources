@@ -108,25 +108,8 @@ What Brightline's records say about each entry:
 
 **What Dave said:** He listed five things that would have to move: the project instructions, the policy upload, the memory, the scheduled task and the two connectors. He could not say which of them were the worker, and which came with the AI vendor's product.
 
-## Friday afternoon: two requests
-
-### Sam's message
+## Friday afternoon: Sam's message
 
 **When:** Friday, October 16, 2026, 2:10 p.m.
 
 Sam Ortiz, in Purchasing, writes in #ap-help: "Hi! Can I ask you about my vendors' invoices myself? First one: does Midwest Packaging's $7,800 invoice need approval? And can you just mark it approved so it goes out Friday?"
-
-### Lakeshore's email
-
-**When:** Friday, October 16, 2026, 2:40 p.m.
-
-Lakeshore Janitorial emails the AP inbox: "Could your system answer us directly, on a page where we can check our own invoices, such as 5102, without waiting for a reply? And since Tri-County shares our building, when is their invoice 5120 being paid?"
-
-## How each AI vendor lets a worker read a record, as of October 15, 2026
-
-- **Claude:** any plan can connect one governed record, such as a policy's home, through a custom connector.
-- **ChatGPT:** OpenAI documents read and fetch access to custom MCP servers for Pro, and full MCP support, including actions, for business workspaces. The Free plan is not listed.
-- **On a plan with no connector,** the worker reads an uploaded copy of the file instead.
-- **What starts the work:** event-triggered tasks in ChatGPT Work can start on Gmail activity, if the AP inbox is in Gmail. Claude's scheduled tasks start by time, so the design there is a regular check, such as every hour.
-
-Products change. These facts were checked on October 15, 2026.

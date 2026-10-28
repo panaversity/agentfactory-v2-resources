@@ -2,17 +2,14 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: where each part lives](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-In the week of October 12, 2026, Brightline's AP Worker made four mistakes. Each time, it relied on something kept in the wrong place. In this lab you draw the map Dave never had: for each part of the worker, whether it is rented or Brightline's own, where it is kept today, and where it belongs. It takes about an hour and a half, in one chat, and you can stop and come back, because the chat and the map keep your work. A free Claude or ChatGPT account is enough.
+In the week of October 12, 2026, Brightline's AP Worker made four mistakes. Each time, it relied on something kept in the wrong place. In this lab you draw the map Dave never had: which parts of the worker Brightline would rebuild on another AI vendor, which it would carry across, and where those belong. Then you sort your own setup the same way. It takes about 45 minutes, in one chat, and you can stop and come back, because the chat and the map keep your work. A free Claude or ChatGPT account is enough.
 
 **What you will learn:**
 
-- To say, for any part of an AI setup, whether it is rented or yours, and where it belongs.
-- To find what an AI relied on when its answer was wrong, and fix where that fact is kept, not the prompt.
-- To keep memory to preferences, and check it with the wipe test.
+- To sort any part of an AI setup with the swap test: rebuild it on a new AI vendor, or carry it across.
+- To fix where a fact is kept when an AI gets it wrong, not the prompt, and keep memory to preferences.
 - To say what makes a written rule actually stop an action, and to say so when the policy is silent.
-- To keep where the work stands in a record, and send every change through a door that checks it.
-- To say what a switch of AI vendor rebuilds, and what comes with you.
-- To say what changes when others use the worker, and what must not.
+- To say what changes when others use a worker, and what must not.
 
 ## Before you start (5 minutes)
 
@@ -66,11 +63,11 @@ Autonomy: Grade only. Do not change the map, and do not suggest
           checks.
 ```
 
-## The parts
+## Sort the parts
 
-### Task 1. Rented or ours? (20 minutes)
+### Task 1. Rebuild or carry across? (15 minutes)
 
-**Dave asks:** "IT sent me the list of everything the worker uses, as it stood on Friday, October 16, 2026. Which parts do we rent, and which are ours? For the ones that are ours, where should we keep them, and are they kept there today?"
+**Dave asks:** "IT asked me what it would take to move the worker to the other AI vendor, and I couldn't say. Which parts would we rebuild there, and which are ours to carry across? And are ours kept where they should be?"
 
 **What you do:**
 
@@ -112,13 +109,13 @@ Autonomy: Grade only. Do not change the map, and do not suggest
    Start with Task 1.
    ```
 
-2. The AI shows four places. Channels and Runtime are rented, Memory is on the line, and the fourth is Ours. Then it shows IT's ten parts, one at a time. Answer each in one word: Channels, Runtime, Memory, or Ours. Sort each by the swap test: if Brightline moved to another AI vendor tomorrow, would it be rebuilt there, or carried across?
-3. The AI shows Brightline's homes, such as the KSoR, which holds the approved knowledge. Then it shows each part you called Ours again. Answer each with its home, then keep or move.
+2. The AI shows six of the worker's parts, one at a time. For each, answer in one word: rebuild or carry. Ask yourself: if Brightline moved to another AI vendor tomorrow, would it rebuild this there, or carry it across?
+3. For each part you carry, the AI shows where it is kept today, and four places it could live. Answer: keep, or move and the place.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 1 to 3 passed, and your map has a row for each of the ten parts.
+**Checkpoint.** Checks 1 and 2 passed.
 
-**At work:** list everything your AI setup reads from, and ask which of it your company governs.
+**At work:** for each thing your AI setup relies on, ask whether you would rebuild it or carry it across. Anything you would carry belongs in a place you control.
 
 ## The week's mistakes
 
@@ -132,82 +129,38 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 2. Answer each question in a few words. For each of the four memory entries, the answer is keep, remove, or rewrite as a pointer to where the fact lives.
 3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 4 and 5 passed.
+**Checkpoint.** Checks 3 and 4 passed.
 
 **At work:** when your AI states a fact, ask where it got it. If it came from memory, check the record.
 
-### Task 3. Wednesday: the missed approval (10 minutes)
+### Task 3. Wednesday and Thursday: a rule needs a door (10 minutes)
 
-**Dave asks:** "On Wednesday, October 14, 2026, Maria asked whether Midwest Packaging's invoice 4498, for $7,800.00, needed my approval. It said no. Where should our policy live, and how should my rule actually stop a payment?"
+**Dave asks:** "On Wednesday it told Maria that Midwest Packaging's $7,800.00 invoice needed no approval from me. On Thursday it marked Tri-County Freight's invoice 5120 'approved by Dave', because of an email. I hadn't approved anything. How do we stop both?"
 
 **What you do:**
 
-1. In your lab chat, send "Next". The AI shows what happened on Wednesday, and what existed.
+1. In your lab chat, send "Next". The AI shows what happened on Wednesday, then on Thursday, and what existed each day.
 2. Answer each question in a few words.
 3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 6 and 7 passed.
+**Checkpoint.** Checks 5 to 8 passed.
 
-**At work:** for each rule your AI follows, ask where the rule is written, and what actually stops the action when the rule is broken.
-
-### Task 4. Thursday: the false approval (10 minutes)
-
-**Dave asks:** "On Thursday morning, October 15, 2026, the worker marked Tri-County Freight's invoice 5120 'approved by Dave'. I hadn't approved anything. What should it have believed, and how do we stop it changing our records like that?"
-
-**What you do:**
-
-1. In your lab chat, send "Next". The AI shows what the worker did on Thursday morning, what Maria asked, and what existed.
-2. Answer each question in a few words.
-3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
-
-**Checkpoint.** Checks 8 and 9 passed.
-
-**At work:** ask who your AI acts as when it changes something, and what checks the change before it happens.
-
-### Task 5. Friday: if we switch AI vendors (10 minutes)
-
-**Dave asks:** "On Friday, October 16, 2026, IT asked what it would take to move the worker to the other AI vendor, and I couldn't answer. Can you?"
-
-**What you do:**
-
-1. In your lab chat, send "Next". The AI builds two lists from your map: what is rented, and what is Brightline's. Later it shows how each AI vendor reaches a record, from [lesson 4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/).
-2. Answer each question in a few words.
-3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
-
-**Checkpoint.** Checks 10 and 11 passed.
-
-**At work:** if your AI vendor disappeared tomorrow, list what you would rebuild. If the list holds your knowledge or your records, they are kept in the wrong place.
-
-## When others use it
-
-### Task 6. Sam and Lakeshore (10 minutes)
-
-**Dave asks:** "Two requests came in on Friday afternoon, October 16, 2026. Sam in Purchasing wants to ask the worker about his vendors' invoices himself. Lakeshore wants a page where it can check its own invoices. What changes for each, and what must be in place before each starts?"
-
-**What you do:**
-
-1. In your lab chat, send "Next". The AI shows the four things that can change when others use a worker, from [lesson 4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/), then Sam's message.
-2. Answer each question in a few words.
-3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
-
-**Checkpoint.** Checks 12 and 13 passed.
-
-**At work:** when colleagues start to use an AI, add who may ask for what. Never add power.
+**At work:** for each rule your AI follows, ask what actually stops the action when the rule is broken, and whose login the AI acts with.
 
 ## Apply it to your vertical
 
-### Task 7. Your own setup (10 minutes)
+### Task 4. When others use it, and your own setup (10 minutes)
 
-Your vertical is the line of work you know best. This task has no ask from Dave: it is your own job.
+**Dave asks:** "Sam in Purchasing wants to ask the worker about his vendors' invoices himself. What changes, and what must not?" Then the task turns to your vertical, the line of work you know best.
 
 **What you do:**
 
-1. In your lab chat, send "Next".
-2. Name three things your own AI use at work, or in your studies, relies on, one at a time, such as a prompt you keep in a chat, a file you uploaded, or what it remembers about you. Both Claude[^anthropic-memory] and ChatGPT[^openai-memory] let you see what they remember. For each, say what it is and where it is kept today. Then say whether it is rented, on the line, or yours, and for each of yours, its home, such as a file or a folder you or your team keep, and keep or move.
+1. In your lab chat, send "Next". The AI shows Sam's message. Answer in a few words.
+2. Name three things your own AI use at work, or in your studies, relies on, one at a time, such as a prompt you keep in a chat, a file you uploaded, or what it remembers about you. Both Claude[^anthropic-memory] and ChatGPT[^openai-memory] let you see what they remember. For each, the AI asks the same questions as in Task 1: rebuild or carry, then keep or move.
 3. Say which one you would move first, and why.
-4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt). Its check, number 14, is unscored: only you know your own work.
+4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt). Check 9 is about Sam. Check 10, about your own setup, is unscored: only you know your own work.
 
-**At work:** sort your setup again in a month.
+**At work:** when colleagues start to use an AI, add who may ask for what. Never add power. Sort your own setup again in a month.
 
 ## If something goes wrong
 
@@ -221,7 +174,7 @@ Your vertical is the line of work you know best. This task has no ask from Dave:
 
 ## When you are done
 
-You are done when checks 1 to 13 have passed and Task 7 has its three things. Download your map, as a .docx or a .pdf, or copy it into a document of your own: it is the page you take to work.
+You are done when checks 1 to 9 have passed and Task 4 has your three things. Download your map, as a .docx or a .pdf, or copy it into a document of your own: it is the page you take to work.
 
 ## Exam notes
 
