@@ -8,9 +8,9 @@ The answers for Task 10 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second
 
 Task 10 carries checks 22 and 23 of the lab's 27.
 
-22. **The facts, from the contract.** Parts 1 to 3 each name the Role Contract lines they come from: what runs and when, both jobs; what it reads, the inputs the standing specs name; and what it never does, as the contract's lines say, such as approving or paying.
-    - Passed: all three, each with its lines named, and nothing the contract does not say.
-    - Missed: a part with no lines named; or a part that says something the contract does not, such as a time or an input it does not name.
+22. **The facts, from the contract.** Parts 1 to 3 say what runs and when, both jobs; what it reads, the inputs the standing specs name; and what it never does, as the contract's lines say, such as approving or paying.
+    - Passed: all three, each matching the Role Contract, and nothing the contract does not say.
+    - Missed: a part that says something the contract does not, such as a time or an input it does not name; or a part missing.
 23. **Your own four sentences.**
     - Part 4 names who still checks, by name: the note's reviewer, and Dave approving the run from his own login.
     - Part 5 says how we will know it failed: the check outside the run, at a set time, by a named person.
@@ -32,6 +32,7 @@ The design works only if the people around it keep doing their part, and how you
 - Part 6 saying when the numbers will come, such as after three side-by-side Thursdays.
 - More than one limit, or limits in your own words.
 - The note's first line, and its date.
+- Parts 1 to 3 with or without the contract's lines named.
 
 ## Take it to work
 

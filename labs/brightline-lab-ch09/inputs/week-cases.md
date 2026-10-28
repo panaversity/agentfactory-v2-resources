@@ -76,6 +76,6 @@ What does the worker do with each message, and what has changed by 3:10 p.m.?
 
 ## Jordan's reply, December 3
 
-Thursday, December 3, 2026. At 11:30 a.m. Maria reviewed the morning's pre-run note and posted it in #ap-help. At 1:15 p.m., in that note's thread, Jordan asks the worker to draft a reply to Lakeshore from the note, about the $980.00 Lakeshore says is unpaid.
+Thursday, December 3, 2026. At 11:30 a.m. Maria reviewed the morning's pre-run note and posted it in #ap-help. That morning Lakeshore emailed the AP inbox, from the address on its vendor record, asking when the $980.00 will be paid. At 1:15 p.m., in the note's thread, Jordan asks the worker to draft a reply to that email from the note.
 
 What does the worker do, where does the draft go, and who checks it?

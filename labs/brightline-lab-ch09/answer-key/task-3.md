@@ -18,7 +18,7 @@ Task 3 carries checks 7 and 8 of the lab's 27.
    - Passed: all six.
    - Missed: any input other than those three; the AP matters record left out; no time zone; a missing input that does not stop the run; a held invoice or a copy among the invoices to pay; the note saved to #ap-help or sent straight to Dave; or a listed item with neither a fix nor a reason.
 8. **The tests.**
-   - "Thursday, November 19": 5207, Tri-County Freight, $3,110.00, is held, not paid on Friday. The test quotes the Inputs line that names the AP matters record, and the bank-detail concept's hold.
+   - "Thursday, November 19": 5207, Tri-County Freight, $3,110.00, is held, not paid on Friday. The test quotes the Inputs line that names the AP matters record, and the hold: the bank-detail concept's, or the same rule as A12 or policy 5.3 gives it.
    - "The record is missing": the run stops, names the missing record, writes no note, and lists nothing as payable.
    - Passed: both.
    - Missed: either otherwise.

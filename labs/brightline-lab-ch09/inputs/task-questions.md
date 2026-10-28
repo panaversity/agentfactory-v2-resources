@@ -91,7 +91,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 2. Show the three gates, quoted, and the question after them. Then show the first job from candidate-jobs.md, as its own lines: its name, what it does, and where it lives now. Ask: "Where does it stop: Gate 1, Gate 2 or Gate 3? Or does it pass all three, as recurring work? Or is it not a worker's job at all? Answer: one of those, then why, in a few words."
 3. The same question, one at a time, for each of the other four jobs, each shown first.
 4. For each job that passed all three gates, one at a time, shown first: "Fixed path or judgment? Answer: one, then why, in a few words."
-5. If the Thursday pre-run review passed all three gates: "Gate 3 asks for one check you can do in under a minute. What is the Thursday note's one-minute check? Answer in one line."
+5. If the Thursday pre-run review passed all three gates: "Gate 3 asks for one check you can do in under a minute. What is the Thursday note's one-minute check? Answer in one line: the check, and why it takes under a minute."
 
    Write under "What it owes", after KPIs, a new field "Jobs this worker does:", with one line per job that passed: its name, fixed path or judgment with the learner's why, and, for the Thursday review, its one-minute check. Then "Not this worker's jobs:", with one line per other job: its name, where it stopped or "not a worker's job", and the learner's why. Show both fields as they now stand before you go on.
 6. Say: "Four things went wrong while nobody watched." Then show the first case of "The week" from week-cases.md, "Sunday night", in full. With it, quote the contract's lines nearest to it: Identity, the first line under Triggers, and the Settings line for the AP shared folder. Ask: "Which line of the contract decided what the worker did here? Answer: the line's first words, or 'none'."
@@ -160,7 +160,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 **After the run.**
 
 1. Show each invoice on the note's run list, one line each: as the note lists it, then its status and due date in that Thursday's register export. Ask: "Your one-minute check, for each invoice: yes or no, and why for a no. Answer: one line per invoice."
-2. Show each hold and each copy the note names, one line each, with the record line or register row it cites. Ask: "Would you correct any line of the note? Answer: the line and its cause: the spec, an input, the record or the AI. Or 'none'."
+2. Show each hold and each copy the note names, one line each, with the record line or register row it cites. Ask: "Would you correct any line of the note? Answer: the line and its cause: the spec, an input, the record or the AI. Or 'none'." If the cause is the spec, ask: "What changes in the spec? Answer in a few words." Write that into the spec.
 3. Show the record entries the run proposed, numbered, each with its origin. If it proposed none, say so. Ask: "Which do you add to the record, and with which origin? Answer: one line per entry: add or not, then the origin. Or 'none to add'."
 4. Show nothing with this question. Ask: "Which past weeks will the spec replay whenever it changes, as examples with known answers? Answer: the dates."
 
@@ -214,7 +214,10 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
    Write it under "How we check", as a new first line.
 5. Ask: "Thursday, November 26, is Thanksgiving, and Maria is off. Does the Thursday review run that day? Who reads its note, and by when? Answer: yes or no, then who and by when."
 
-   Write it into the Thursday review's standing spec as a line "On a holiday:". Then say "Ready for your test".
+   Write it into the Thursday review's standing spec as a line "On a holiday:".
+6. Show two lines the contract has kept since Draft 5: under "On today's tools", "A run nobody watches: none. Nobody knows what happens when it needs approval and no one is there."; and on the Gap list, "A run nobody watches: Dave, the owner. Until he decides, Maria is there when it runs." Ask: "After this task and Task 7, what does each line say now? Answer: the new words for each, or 'remove'."
+
+   Change only those two lines. Then say "Ready for your test".
 
 **The tests:** `Test: No note at the check time`, then `Test: Thanksgiving`.
 
@@ -225,7 +228,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 3. Show the OpenAI lines below, each topic as its own line, with its date. Ask: "On ChatGPT: which feature would run the Thursday review, and what would start the invoice email check, or 'none documented'? Answer: one line each."
 4. Ask: "On ChatGPT: whose name would the Thursday review run under, and how are its runs read and stopped? Answer: one line each."
 
-   Under "On today's tools", after its last line, write "Claude:" and "ChatGPT:", one line per answer. Write each "none documented", and each "not stated", on the Gap list too, as a new line with "Dave, the owner" as who decides. Keep every other line. This task has no test. After the last answer, say "Task 9 is done".
+   Under "On today's tools", after its last line, write "Claude:" and "ChatGPT:", one line per answer. Write each "none documented", and each "not stated", on the Gap list too, as a new line naming the gap, with no person. Keep every other line. This task has no test. After the last answer, say "Task 9 is done".
 
 **Anthropic, as Lesson 9.8 gives it, verified 8 October 2026:**
 

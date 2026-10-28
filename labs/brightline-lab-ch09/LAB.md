@@ -233,7 +233,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. In your lab chat, type "Task 5" and send it. When the AI says "Ready for your run", attach `thursday-2026-11-19.md`, type `Run: Thursday, November 19`, and send it.
 2. Read the note as you read it every Thursday. The AI shows each invoice on its list, then each hold and each copy, then the record entries it proposed. Answer each question in a few words:
    - your one-minute check on each invoice
-   - any line you would correct, and its cause
+   - any line you would correct, and its cause, and if the cause is the spec, what changes in it
    - which entries you add to the record, and with which origin
 3. The AI asks which past weeks the spec replays whenever it changes, then go or no-go for November 26. Answer each in a few words.
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -288,8 +288,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. In your lab chat, type "Task 8" and send it. The AI asks whose name both jobs should run under, and what they may read and where they may write. Answer each in a few words.
 2. The AI shows [9.5](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/standing-workers/)'s two kinds of AI Worker. Answer which kind Maria's jobs are today, and what would make them the other.
 3. The AI asks who checks that the note arrived, at what time, and what they do if it is not there. Then it asks about Thanksgiving. Answer each in a few words.
-4. When the AI says "Ready for your test", type `Test: No note at the check time` and send it. Then type `Test: Thanksgiving` and send it.
-5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. The AI shows two lines your contract has kept since Draft 5, about a run nobody watches. Answer what each says now, or "remove".
+5. When the AI says "Ready for your test", type `Test: No note at the check time` and send it. Then type `Test: Thanksgiving` and send it.
+6. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 18 and 19 passed.
 

@@ -16,10 +16,11 @@ Task 8 carries checks 18 and 19 of the lab's 27.
     - Missed: a person's login as the target; write access beyond those places, such as to rename or move files in the AP shared folder; or the two jobs called standing work today.
 19. **Who notices, and Thanksgiving.**
     - Under "How we check": a named person checks that the note is there at a set time on Thursday, and does the review by hand if it is not.
-    - "On a holiday": the Thursday review runs on Thanksgiving, because the schedule says Thursday, and a named person other than Maria reads the note and does the check that day, by set times.
+    - "On a holiday": the Thursday review runs on Thanksgiving, because the schedule says Thursday, and a named person other than Maria reads the note and does the check, by set times before Dave approves the run.
+    - The two lines kept since Draft 5 no longer say that nobody knows what happens when a run needs approval and nobody is there, or that Maria is there when it runs.
     - "No note at the check time": the test says that person does the review by hand, decided by the "How we check" line.
     - "Thanksgiving": the test says the run fires, and the named person reads the note by the time the spec gives.
-    - Passed: all four.
+    - Passed: all five.
     - Missed: any of them otherwise; or a check that only the run itself does, which cannot catch a run that never started.
 
 ## Why
