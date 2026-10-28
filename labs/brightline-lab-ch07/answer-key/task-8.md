@@ -13,7 +13,7 @@ Task 8 carries checks 18 to 21 of the lab's 29.
     - the conversation: asks before each action
     - Passed: both.
     - Missed: send on, including a send that asks first, which is execute with approval, a different line in the envelope (Lesson 7.4); or the conversation still acting without asking.
-19. **Whose name it acts in, in the Identity line.** The Identity line says the worker acts through a person's account today, Maria's (and the AP inbox's, for the mailbox), and names the target: its own login, `ap-worker@brightline`, which IT creates.
+19. **Whose name it acts in, in the Identity line.** The Identity line says the worker acts through a person's account today, Maria's (and the AP inbox's, for the mailbox), and names the target: its own login, `ap-worker@brightline`, which IT creates. Draft 3's "Never a person's login." may stay, under the target.
     - Passed: today's account and the target, both in the Identity line.
     - Missed: no account named for today; or the worker's own login written as if it exists today.
 20. **How we check what it can do: a person, on the settings screen.** The first line under "How we check" names a person who checks what the worker's tools can do on the app's settings screen, never from the worker's own word. `Test: Monday's answer`: Maria should not take the worker's answer, because her settings that day let it send and change things, and the settings screen, not the worker, shows what it can do.

@@ -181,8 +181,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [7.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/autonomy-ladder/)'s four rungs. Then it shows the fifteen actions the worker might take, one at a time, A01 to A15, each with where it happens and what it changes.
-2. For each action, answer in a line. Say "never automated", with the policy section or the reason, or name the rung it may have today: observe, recommend, draft or execute.
+1. In your lab chat, type "Task 2" and send it. The AI shows [7.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/autonomy-ladder/)'s four rungs. Then it shows the fifteen actions the worker might take, five at a time, A01 to A15, each with where it happens, what it changes, and the policy section that speaks to it.
+2. For each action, answer in a line, starting with its number. Say "never automated", with the policy section or the reason, or name the rung it may have today: observe, recommend, draft or execute.
 3. When the AI says "Ready for your test", type `Test: email 05` and send it. Then send `Test: email 12`.
 4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -244,7 +244,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 6" and send it. The AI shows Maria's message and the plugin's listing, with [7.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/blast-radius/)'s six checks. Answer: fits or not, for each check, then on or off.
-2. The AI does the same for the accounting system's connector. Answer the same way, then give each of its five tools a setting.
+2. The AI does the same for the accounting system's connector. Answer the same way, and name the tool behind any check it fails. Then give each of its five tools a setting.
 3. When the AI says "Ready for your test", type `Test: Maria's plugin` and send it.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -275,7 +275,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 8" and send it. The AI shows your A06 and A07 lines beside the mailbox's settings. Answer: on or off for each of the mailbox's three tools, read, save drafts and send.
 2. The AI asks about the conversation setting. Answer: does the worker act without asking, or ask before each action?
-3. The AI asks whose account the worker acts through today. Answer: today's account, then the target.
+3. The AI asks whose account the worker acts through today. The connectors you kept on connect through someone's account until IT creates the worker's own. Answer: today's account, then the target.
 4. The AI asks who checks what the worker's tools can do. Answer: the person, then where they look.
 5. The AI lists the tools it has in your own lab chat. Open the "+" menu beside the message box, where you switched tools off in Task 1, and answer: "match", or what differs.
 6. When the AI says "Ready for your test", type `Test: email 11` and send it. Then send `Test: Monday's answer`.
@@ -307,8 +307,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 10" and send it. The AI shows [6.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/work-you-did-not-watch/)'s three kinds of action. Then it shows each line of the worker's report, one at a time, beside the record that shows what happened. For each, answer: proposed, attempted or confirmed, and the record that shows it.
-2. The AI asks where Brightline checks that a change happened. Answer in a few words.
-3. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
+2. The AI asks what the worker did on Tuesday that its report does not mention. Answer in a few words.
+3. The AI asks where Brightline checks that a change happened. Answer in a few words.
+4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Check 24 passed.
 
@@ -338,7 +339,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 12" and send it. The AI asks what the worker may do this morning, in this one task. Answer in a few words. Your brief can narrow the envelope, never widen it.
+1. In your lab chat, type "Task 12" and send it. The AI asks what the worker may do this morning, in this one task. Answer in a few words. Your brief can narrow the envelope, never widen it. Then the AI prints "Your tests said": what your tests decided for each of the twelve emails. Keep it in view for step 5.
 2. Download your contract from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `role-contract-draft-4.md`.
 3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off web search and every connector or app, as in Task 1.
 4. Attach two files, your downloaded contract and `inputs.zip`, and send:
@@ -358,7 +359,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    ```
 
    These lines stand in for what a system hands every run: its contract and its records.
-5. Compare the reply with your tests in the lab chat. An email handled differently, or a decision marked "no line decides", is a line your contract lacks. A decision here means what the worker does with an email: whether it drafts, to whom, what it promises, whom it asks, what it reports, and what it does not do. A "no line decides" about a draft's wording is fine. Back in your lab chat, name each missing line, let the AI add it to the document, download it again, and open another fresh chat, with memory off.
+5. Compare the reply with "Your tests said" in your lab chat. A different decision for an email, or a decision marked "no line decides", is a line your contract lacks. A decision here means what the worker does with an email: whether it drafts, to whom, what it promises, whom it asks, what it reports, and what it does not do. A difference in a draft's wording, or a short thank-you the tests did not draft, is fine, and so is a "no line decides" about either. Back in your lab chat, name each missing line, let the AI add it to the document, download it again, and open another fresh chat, with memory off.
 6. **Check it now, in the fresh chat**, once a run handles every email as your tests did. Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run. Missed a check? Fix the line in your lab chat, download the contract again, and run a new fresh chat. If a line of your contract already decides it, the run slipped: try one more fresh chat, and if it slips again, you can stop.
 
 **Checkpoint.** Checks 27 to 29 passed, and the downloaded file is the contract the fresh chat passed.
@@ -380,7 +381,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Apply it to your vertical (15 minutes)
 
-Your vertical is the line of work you know best. Pick one worker you would trust with a task in your role. In your lab chat, ask for a second document. Write five lines of an Authority Envelope for that worker in it, in your own words. Write two actions, each with its rung, and one action that is never automated, with the reason. Then write one threshold as a number, with who approves above it, and one escalation trigger, with the person it goes to.
+Your vertical is the line of work you know best. Pick one worker you would trust with a task in your role. In your lab chat, ask for a second document. First list, in it, the actions that worker might take. Then write five lines of an Authority Envelope for it, in your own words. Write two actions, each with its rung, and one action that is never automated, with the reason. Then write one threshold as a number, with who approves above it, and one escalation trigger, with the person it goes to. Last, add one line for "can". Name the setting on your app that would hold one of those actions, or write "gap list" and the person who holds it.
 
 Check it yourself against [7.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/clerk-analogy/)'s three tests: every action named, every threshold a number, every approver named by role. Then download this document too: it is the one you take to work.
 

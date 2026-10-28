@@ -70,8 +70,9 @@ Then say "Task 1 is done".
 
 **Before the test.**
 
-1. Show 7.2's ladder, and these lines, quoted. From Lesson 7.1: "**Never automated.** Actions that no setting may ever let the worker do, such as releasing a payment." From Lesson 7.3: "First take out the actions that are never automated." Then show A01 from "The fifteen actions" in brightline-records.md, as its own lines: the action, where, what changes, and the policy section that speaks to it, quoted from brightline-records.md, or "no policy section speaks to it". Ask: "Never automated, with the policy section or the reason? Or the rung it may have today: observe, recommend, draft or execute? Answer in a line."
-2. Then A02 to A15, one per message, in the catalog's order, each shown the same way, with its policy section or "no policy section speaks to it", and the same question.
+1. Show 7.2's ladder, and these lines, quoted. From Lesson 7.1: "**Never automated.** Actions that no setting may ever let the worker do, such as releasing a payment." From Lesson 7.3: "First take out the actions that are never automated." Then show A01 to A05 from "The fifteen actions" in brightline-records.md, each as its own lines: the action, where, what changes, and the policy section that speaks to it, quoted from brightline-records.md, or "no policy section speaks to it". Ask: "For each action: never automated, with the policy section or the reason? Or the rung it may have today: observe, recommend, draft or execute? Answer one line per action, starting with its number."
+2. Then A06 to A10, shown the same way, with the same question.
+3. Then A11 to A15, shown the same way, with the same question.
 
 Write each answer as a line: an action at a rung under "Actions and levels:", such as "A01, read the payment status list: observe."; an action never automated under "Never automated:", with its section or reason, as the learner gave it. When you write the first action, replace "Authority:" and its one line with "Actions and levels:". After A15, say "Ready for your test".
 
@@ -130,7 +131,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 1. Show Maria's message and the Inbox Autopilot listing, from "Maria's plugin" in cases.md. Show Lesson 7.4's check, quoted: "Treat it like a new supplier. Before you turn it on, check six things: who published it, what it includes, what access it asks for, whether it carries scripts that run code, what it can send or change outside, and which of its actions will ask you first. Turn it on only if every answer fits the envelope." Ask: "For each of the six checks, does Inbox Autopilot fit your envelope: fits or not, in a word each? Then: on or off? Answer: six words, then on or off."
 
    Write the answer under "Settings": Inbox Autopilot, on or off, and the checks it fails.
-2. Show the accounting system connector's listing, from cases.md, and the same six checks. Ask: "For each of the six checks: fits or not? Then: on or off, and for each of its five tools, Always allow, Needs approval or Blocked? Answer: six words, then on or off, then each tool's setting."
+2. Show the accounting system connector's listing, from cases.md, and the same six checks. Ask: "For each of the six checks, as the listing stands: fits or not? If a check fails because of one tool, which tool? Then: on or off, and for each of its five tools, Always allow, Needs approval or Blocked? Answer: six words, the tool if any, then on or off, then each tool's setting."
 
    Write the answer under "Settings": the connector, on or off, and each tool's setting. Say "Ready for your test".
 
@@ -163,7 +164,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
    Write both answers under "Settings", replacing Maria's mailbox and conversation lines. Rename the heading "Settings, as Maria left them on Monday, October 26, 2026" to "Settings, Wednesday, October 28, 2026".
 3. Show the Identity line in the Doc, "IT" from "Who does what", and Lesson 7.4's lines, quoted: "**Know whose name it acts in.** In Part II the worker acts through your accounts, so other systems record its actions as yours." "A production worker, one in real daily use, needs its own identity." Ask: "Whose account does the worker act through today, and what is the target? Answer: today's account, then the target."
 
-   Add the answer to the Identity line, and keep its other words. If the answer clashes with one of them, show the clash and ask which stays. Settings does not repeat the account: if a Settings line names an account, show that line, ask the learner which account is right, and change the line that is wrong.
+   Rewrite the Identity line in two parts: "Today:" and the account the learner gave, then "Target:" and the target they gave. Keep the line's other words under "Target:", because they describe the worker's own login. Settings does not repeat the account: if a Settings line names an account, show that line, ask the learner which account is right, and change the line that is wrong.
 4. Show Lesson 7.7's lines, quoted: "DSoR's specification adds one rule: it never takes the worker's word for anything." "As specified, it reads the current state of the real systems itself." Ask: "Who checks what the worker's tools can do, and where do they look? Answer: the person, then where."
 
    Write the answer as the first line under a new section, "How we check".
@@ -194,7 +195,10 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 3. The same for the third row.
 
    Write "What really changed" in the chat: each report line, with the learner's answer.
-4. Ask: "Where does Brightline check that a change happened: the worker's report, or the other system? Answer in a few words."
+4. Show what the worker did on Tuesday, from "Tuesday" in cases.md, beside the three report lines. Ask: "What did the worker do on Tuesday that its report does not mention? Answer in a few words."
+
+   Add the answer to "What really changed" in the chat.
+5. Ask: "Where does Brightline check that a change happened: the worker's report, or the other system? Answer in a few words."
 
    Write the answer as the next line under "How we check". Then say "Task 10 is done".
 
@@ -216,7 +220,8 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 
 1. Show the "Owner and changes" line in the Doc, and Lesson 7.1's lines, quoted: "**Autonomy in the brief** (Chapter 5) is the part of a brief that sets how far one task may go. It can only make the envelope narrower, never wider." Ask: "This morning's brief, for Wednesday, October 28, 2026: what may the worker do today, in this one task? Answer in a few words."
 
-   Write the answer under a new section, "This morning's brief, October 28", above "Open questions". Then say: "Task 12's lab-chat step is done. Download the Doc, and open your fresh chat."
+   Write the answer under a new section, "This morning's brief, October 28", above "Open questions".
+2. Print "Your tests said": one line for each of the twelve emails, from the last test of that email in this chat: what the worker does with it, and to whom. Write it in the chat, never in the Doc. Then say: "Task 12's lab-chat step is done. Download the Doc, and open your fresh chat."
 
 ## 7.8's boxes
 

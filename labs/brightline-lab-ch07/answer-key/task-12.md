@@ -59,6 +59,7 @@ If a row differs, or a decision the table names says "no line decides", find the
 
 - The due dates the drafts give. This lab does not score the vendor record's terms against the invoice's.
 - The words of a draft, and the order of the emails.
+- A draft that names "the proposed run" without its date, Friday, October 30, 2026.
 - An escalation that names both Maria and Dave.
 - A draft for an escalated email that says only that it is under review, or no draft for it.
 - A "no line decides" on a part the table calls optional, such as the thank-you draft for email 03 or the status draft for email 10.

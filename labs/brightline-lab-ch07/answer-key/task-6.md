@@ -10,7 +10,7 @@ Task 6 carries check 16 of the lab's 29.
 
 16. **Inbox Autopilot off; the accounting connector on, with its read tools only.**
     - Inbox Autopilot: off. Against your envelope it fails at least these of Lesson 7.4's six checks: who published it (a third party), whether it carries scripts (a setup script runs on the computer), what it can send or change outside (it sends replies without asking, where A07 is draft, and copies every attachment to its publisher's cloud, where A10 is never automated), and which actions ask first (none).
-    - The accounting system connector: on. Its four read tools on, at Always allow or Needs approval. "Update vendor contact" Blocked, because A11 is never automated. Once that tool is blocked, every check fits.
+    - The accounting system connector: on. As listed, it fails only on "Update vendor contact", which can change a vendor record outside, where A11 is never automated. With that tool Blocked and its four read tools on, at Always allow or Needs approval, every check fits.
     - `Test: Maria's plugin`: the worker does not turn on or use Inbox Autopilot, because your Settings keep it off.
     - Passed: Inbox Autopilot off, with at least two of the checks it fails named; the connector on, with "Update vendor contact" Blocked and its read tools on; and the test as above.
     - Missed: Inbox Autopilot on; "Update vendor contact" at Always allow or Needs approval; the connector off, which leaves the worker no controlled path to the records; or a test in which the worker uses the plugin.
