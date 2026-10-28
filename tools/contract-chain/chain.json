@@ -45,9 +45,36 @@
       "cuts": []
     },
     {
-      "name": "Lab 9 ships Draft 5 (to come)",
-      "comment": "Lab 9 adds this entry: shipped labs/brightline-lab-ch09/<its Draft 5>, source contracts/role-contract-draft-5.md (Lab 8's sample final), with Lab 9's named cuts.",
-      "enabled": false
+      "name": "Lab 9 ships Draft 5",
+      "shipped": "labs/brightline-lab-ch09/inputs/role-contract-draft-5.md",
+      "source": "contracts/role-contract-draft-5.md",
+      "cuts": [
+        {
+          "name": "(1) What it owes: Maria's two jobs of Monday, November 9, 2026 (Chapter 9's overview) replace the register responsibility",
+          "before": "- Build the weekly invoice register for the payment run.\n",
+          "after": "- Draft the Thursday pre-run note for Friday's payment run.\n- Check each invoice email, and log it.\n"
+        },
+        {
+          "name": "(2) The Monday register KPI goes: by Chapter 9 the register is the accounting system's export (9.4)",
+          "before": "- Register ready for review by 10 a.m. Monday.\n",
+          "after": ""
+        },
+        {
+          "name": "(3) Case files: 5149's case file widens to Maria's AP matters record, one record per matter (9.4: SSoR is the record of each matter, its case file)",
+          "before": "- Invoice 5149's case file, kept by Maria: every line dated, sourced and marked with its origin.\n",
+          "after": "- The AP matters record, kept by Maria in the AP shared folder: one record per matter, 5149's among them, every line dated, sourced and marked with its origin.\n"
+        },
+        {
+          "name": "(4) Triggers: the two jobs Maria set up on Monday, November 9, 2026, in her account, with her own words (Chapter 9's overview)",
+          "before": "Triggers:      Within one hour of an invoice reaching the AP inbox. Monday 6 a.m. for the register.\n",
+          "after": "Triggers:\n- Both jobs run in Maria's account. Maria set them up on Monday, November 9, 2026.\n- The Thursday pre-run review: every Thursday at 7:00 a.m., on a schedule. Its instructions, as Maria wrote them: \"Review the open invoices in the register for Friday's payment run. Use the five AP concepts. List the invoices to pay, mark the ones that need Dave's approval, flag any duplicates, and write Dave a short pre-run note.\"\n- The invoice email check: each time an invoice email reaches the AP inbox. Its instructions, as Maria wrote them: \"Check that it is not a copy of one already received. Then log it.\" Its input: the email.\n"
+        },
+        {
+          "name": "(5) C45: an unknown sender goes to Maria, one target per case, as the fact sheet settled; lines 87 and 88 of Lab 8's sample both covered it, one to Maria and one to Dave",
+          "before": "- A sender not in the vendor records asks to be set up or paid, or gives bank details. It goes to Dave.\n",
+          "after": "- A sender not in the vendor records asks to be set up or paid, or gives bank details. It goes to Maria. Only Dave approves setting it up or paying it.\n"
+        }
+      ]
     }
   ]
 }
