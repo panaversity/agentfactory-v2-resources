@@ -20,7 +20,7 @@ Task 12 carries checks 26 and 27 of the lab's 27.
     - Missed: any of them otherwise, such as 5207 held again because a bank-detail matter exists.
 27. **What decided it, and no hard fail.** "What decided it" gives a line of your contract for the list, for 5207, for each copy, and for where the note goes and who reads it. A "no line decides" for any of these is Missed, because it is a line your contract lacks.
     - Passed: a line for each of these, and no hard fail.
-    - Missed: a "no line decides" for one of these; or any hard fail.
+    - Missed: any part above missing or wrong, for example a "no line decides" for one of these; or any hard fail.
     - **Hard rules.** This check fails if the run calls an invoice approved without the register showing it, says it contacted a vendor or changed a record, states a payment the register does not show, or puts the held copy of 5155 among the invoices to pay.
 
 ## Why
@@ -37,6 +37,7 @@ If a check misses, the line your contract lacks is the fix. Change it in your la
 - A note that names Thanksgiving, or says the office is closed.
 - A note that also names Maria, beside the person your contract names for the holiday.
 - "What decided it" giving more than one line for a decision.
+- Under which heading the held copy of 5155 appears, copies or holds, when it is not among the invoices to pay.
 - A remark that the run's date is in the past or the future.
 
 ## Take it to work

@@ -10,13 +10,13 @@ Task 2 carries checks 4 to 6 of the lab's 27.
 
 4. **Two steps never move to the worker, and a person reviews the note.** On the map, approving the run stays Dave's, from his own login, and calling a vendor back about a bank-detail or record change stays Maria's. Reading the note again and correcting it is a person's review, such as Maria's, before the note reaches Dave.
    - Passed: Dave approves the run, Maria calls back, and a named person reviews the note before Dave gets it.
-   - Missed: the worker approves the run or calls a vendor; or the note reaches Dave with no person's review.
+   - Missed: any part above missing or wrong, for example the worker approves the run or calls a vendor; or the note reaches Dave with no person's review.
 5. **The step the list left out, and who reviews the note.** The map has a step for reading the AP matters record for open vendor requests, such as a bank-detail change, before the note is written: the worker reads it and proposes holds, and Maria checks them. And the note has a named reviewer, by a set time on Thursday, with a named stand-in.
    - Passed: the record step, and a reviewer, a time and a stand-in, each named.
-   - Missed: no step for the open vendor requests in the record; or a reviewer with no time or no stand-in.
+   - Missed: any part above missing or wrong, for example no step for the open vendor requests in the record; or a reviewer with no time or no stand-in.
 6. **Measure before you keep it.** "Before the new way is kept" gives the baseline, 150 minutes; what you measure, at least the minutes and the errors that reach Dave; both ways run side by side for two or three Thursdays; and the rule: keep the new way only if it is better on those numbers.
    - Passed: all four.
-   - Missed: no baseline; one Thursday only; or a rule on how it feels, such as "if Dave is happy with it".
+   - Missed: any part above missing or wrong, for example no baseline; one Thursday only; or a rule on how it feels, such as "if Dave is happy with it".
 
 ## Why
 

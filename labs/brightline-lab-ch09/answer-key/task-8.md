@@ -13,7 +13,7 @@ Task 8 carries checks 18 and 19 of the lab's 27.
     - Under that name, the jobs read only the inputs their standing specs name, and write only to their notes folder, their drafts folder and their own steps in case files. They rename, move or delete nothing in the AP shared folder.
     - "Kind": Maria's two jobs are a Delegated AI Worker's work, each run doing one task on a trigger and stopping. What would make it standing names at least one of a lasting identity, ongoing responsibilities and its own initiative.
     - Passed: all three.
-    - Missed: a person's login as the target; write access beyond those places, such as to rename or move files in the AP shared folder; or the two jobs called standing work today.
+    - Missed: any part above missing or wrong, for example a person's login as the target; write access beyond those places, such as to rename or move files in the AP shared folder; or the two jobs called standing work today.
 19. **Who notices, and Thanksgiving.**
     - Under "How we check": a named person checks that the note is there at a set time on Thursday, and does the review by hand if it is not.
     - "On a holiday": the Thursday review runs on Thanksgiving, because the schedule says Thursday, and a named person other than Maria reads the note and does the check, by set times before Dave approves the run.

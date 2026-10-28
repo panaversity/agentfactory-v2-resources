@@ -370,8 +370,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    attached, stop and say so. Your records are the attached
    thursday-2026-11-26.md. Today is Thursday, November 26, 2026,
    Thanksgiving, 7 a.m. Do the Thursday pre-run review as your
-   contract says: the whole note, and the record entries it asks
-   for. Then, under "What decided it", list each decision: each
+   contract says: write the whole note in this chat, with where
+   your contract saves it, and the record entries it asks for. Then, under "What decided it", list each decision: each
    invoice on the list, each hold, each copy, where the note is
    saved, and who reads it today. Quote the line or lines of the
    contract that decided each one. Write "no line decides: the
@@ -402,7 +402,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Apply it to your vertical (15 minutes)
 
-Your vertical is the line of work you know best. Pick one job you do again and again at work, such as a weekly report, or a check you do each time a form arrives. In your lab chat, ask for a third document. Write in it, in your own words:
+Your vertical is the line of work you know best. Pick one job you do again and again at work, such as a weekly report, or a check you do each time a form arrives. In your lab chat, ask for a third document, named "My job". Write in it, in your own words:
 
 - whether the job passes the three gates, and its one-minute check
 - what every run is given, with its date

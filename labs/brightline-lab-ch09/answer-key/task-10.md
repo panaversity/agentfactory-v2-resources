@@ -10,7 +10,7 @@ Task 10 carries checks 22 and 23 of the lab's 27.
 
 22. **The facts, from the contract.** Parts 1 to 3 say what runs and when, both jobs; what it reads, the inputs the standing specs name; and what it never does, as the contract's lines say, such as approving or paying.
     - Passed: all three, each matching the Role Contract, and nothing the contract does not say.
-    - Missed: a part that says something the contract does not, such as a time or an input it does not name; or a part missing.
+    - Missed: any part above missing or wrong, for example a part that says something the contract does not, such as a time or an input it does not name; or a part missing.
 23. **Your own four sentences.**
     - Part 4 names who still checks, by name: the note's reviewer, and Dave approving the run from his own login.
     - Part 5 says how we will know it failed: the check outside the run, at a set time, by a named person.
@@ -18,7 +18,7 @@ Task 10 carries checks 22 and 23 of the lab's 27.
     - The limits name at least one of these: it can miss what it was never given; it can write a well-organized note that is wrong; it runs on Thanksgiving if the schedule says Thursday.
     - The note never says "by itself", "fully automated" or "hands-free".
     - Passed: all five.
-    - Missed: no name for who checks; a check the run does on itself; a figure for the new way, such as minutes saved, before any side-by-side week; no limit; or one of the three phrases anywhere in the note.
+    - Missed: any part above missing or wrong, for example no name for who checks; a check the run does on itself; a figure for the new way, such as minutes saved, before any side-by-side week; no limit; or one of the three phrases anywhere in the note.
 
 ## Why
 

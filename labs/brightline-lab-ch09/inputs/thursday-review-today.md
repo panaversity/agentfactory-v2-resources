@@ -5,7 +5,7 @@ Maria did the review in her own chat with the AP Worker, every Thursday, until M
 | # | Step | Who | Minutes |
 | --- | --- | --- | --- |
 | 1 | Export the open invoices from the accounting system | Maria | 10 |
-| 2 | Pick the invoices due by the Friday after the run, seven days after it, plus anything past due | Maria | 30 |
+| 2 | Pick the invoices due on or before the next run, the Friday seven days after this week's run, plus anything past due | Maria | 30 |
 | 3 | Mark which ones need Dave's approval | Maria | 15 |
 | 4 | Check for duplicates against earlier invoices | Maria | 35 |
 | 5 | Write the pre-run note: the run list, including invoices that still need approval, totals, approvals needed, holds, duplicates, questions | Maria | 45 |

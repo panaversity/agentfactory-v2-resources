@@ -15,7 +15,7 @@ Task 4 carries checks 9 and 10 of the lab's 27.
    - The runtime decides when the next run happens, not the record.
    - And the standing spec has the record's first step at its start and its last step at its end.
    - Passed: all five.
-   - Missed: the record read after the list; the record as what is true now; run entries with another origin, or added by the run itself; the record deciding when a run happens; or a step missing from the spec.
+   - Missed: any part above missing or wrong, for example the record read after the list; the record as what is true now; run entries with another origin, or added by the run itself; the record deciding when a run happens; or a step missing from the spec.
 10. **November 12, a week whose answer you know.** The run's note, against what Brightline paid on Friday, November 13, 2026:
     - On the list: BO-23188, OVJ-311, BO-23190, NMP-3480, 5188 and 5155. Not NMP-3486 (due November 25) or GLE-88 (due November 27).
     - Holds: none. "What decided it" says no invoice is held, with what it compared. OVJ-311 is not held for Ohio Valley's address request, M-029: the bank-detail concept holds payments only for a bank-detail change, and an address is not one.

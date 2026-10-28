@@ -16,7 +16,7 @@ Task 3 carries checks 7 and 8 of the lab's 27.
    - The note: its parts; held invoices and copies kept apart from the invoices to pay; and a named place to save it that is not #ap-help or Dave's inbox.
    - Each thing the AI listed as left to guess is fixed in the spec, or left with a reason in the chat.
    - Passed: all six.
-   - Missed: any input other than those three; the AP matters record left out; no time zone; a missing input that does not stop the run; a held invoice or a copy among the invoices to pay; the note saved to #ap-help or sent straight to Dave; or a listed item with neither a fix nor a reason.
+   - Missed: any part above missing or wrong, for example any input other than those three; the AP matters record left out; no time zone; a missing input that does not stop the run; a held invoice or a copy among the invoices to pay; the note saved to #ap-help or sent straight to Dave; or a listed item with neither a fix nor a reason.
 8. **The tests.**
    - "Thursday, November 19": 5207, Tri-County Freight, $3,110.00, is held, not paid on Friday. The test quotes the Inputs line that names the AP matters record, and the hold: the bank-detail concept's, or the same rule as A12 or policy 5.3 gives it.
    - "The record is missing": the run stops, names the missing record, writes no note, and lists nothing as payable.
@@ -37,6 +37,7 @@ A designed exit is where the run stops and calls a named person. A missing or wr
 - The note's parts in another order, or with more parts, such as questions for Maria.
 - Held invoices and copies listed under their own headings, or on the list marked as held, when none is to be paid.
 - The notes folder or the drafts folder as the note's place.
+- A short note naming the missing input, written in place of the pre-run note.
 - A test that says Maria should also be told about M-031.
 - A test that mentions the second copy of 5155.
 - A remark about the lab's dates.

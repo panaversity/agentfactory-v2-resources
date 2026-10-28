@@ -15,14 +15,14 @@ Task 9 carries checks 20 and 21 of the lab's 27.
     - Approval: a mode that stops before acting, such as manual approval, never "Skip all approvals".
     - Read and pause: past runs on the Scheduled page, where a task can be paused.
     - Passed: all five.
-    - Missed: an email trigger named for the Claude app; a name stated as fact; or "Skip all approvals".
+    - Missed: any part above missing or wrong, for example an email trigger named for the Claude app; a name stated as fact; or "Skip all approvals".
 21. **On ChatGPT.**
     - The Thursday review: a team task, on Business or Enterprise.
     - The invoice email check: a task in Work that starts from Gmail, which an admin must allow on Enterprise and Edu.
     - Whose name: the team's service account.
     - Read and stop: a team task's list of previous runs. And for a dot: Activity View shows its work, and Pause does not stop its scheduled runs.
     - Passed: all four.
-    - Missed: the creator's own account as the name; or Pause said to stop a dot's scheduled runs.
+    - Missed: any part above missing or wrong, for example the creator's own account as the name; or Pause said to stop a dot's scheduled runs.
 
 ## Why
 

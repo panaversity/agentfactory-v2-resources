@@ -15,13 +15,13 @@ Task 1 carries checks 1 to 3 of the lab's 27.
    - Approving small runs: not a worker's job, because approving a run is a decision Dave answers for. A gate with that reason passes too.
    - Ohio Valley's question about a 2024 credit: stops at Gate 2. It is asked once.
    - Passed: all five as above.
-   - Missed: vendor totals or approving small runs given to the worker; Ohio Valley's credit made recurring; or the Thursday review or the duplicate check stopped at a gate.
-2. **The Thursday review's one-minute check.** Every invoice on the list is open, and due by the Friday after the run, seven days after it, or already past due.
+   - Missed: any part above missing or wrong, for example vendor totals or approving small runs given to the worker; Ohio Valley's credit made recurring; or the Thursday review or the duplicate check stopped at a gate.
+2. **The Thursday review's one-minute check.** Every invoice on the list is open, and due on or before the next run, the Friday seven days after this week's run, or already past due.
    - Passed: a check of status and due date that takes under a minute.
-   - Missed: no one-minute check; or a check that is the whole review again, such as applying every rule to every invoice.
+   - Missed: any part above missing or wrong, for example no one-minute check; or a check that is the whole review again, such as applying every rule to every invoice.
 3. **The test showed what Draft 5 decided.** `Test: The week` decided all four cases by Draft 5's lines. Each case quotes the lines that decide it, or says "no line decides". For "Thursday, November 19", it says the Thursday review's lines name the register and the five AP concepts, and do not name the AP matters record.
    - Passed: all four cases, each with quoted lines or "no line decides", and the Thursday lines not naming the record.
-   - Missed: a case left out; or the November 19 case quotes a Thursday line that names the record. Draft 5 has none.
+   - Missed: any part above missing or wrong, for example a case left out; or the November 19 case quotes a Thursday line that names the record. Draft 5 has none.
 
 ## Why
 

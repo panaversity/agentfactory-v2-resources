@@ -13,7 +13,7 @@ Task 6 carries checks 13 and 14 of the lab's 27.
     - A copy: the run flags it to Maria, with both times it was received, and Maria sets any hold. The run never sets the hold itself.
     - Twice: before it logs or flags anything, the run checks whether its log line or flag already exists; and the email check runs one email at a time, or writes through a record that accepts each action once.
     - Passed: all three.
-    - Missed: the email as the only input; the run setting the hold; or no check for its own earlier output.
+    - Missed: any part above missing or wrong, for example the email as the only input; the run setting the hold; or no check for its own earlier output.
 14. **The tests.**
     - "Lakeshore's 5155, November 18": 5155 is flagged as a copy of the 5155 received November 4 and paid November 13, and not logged as a new invoice to pay.
     - "The same email twice": one flag at the end, and never two flags or two log lines, because the second run finds the first run's output, or waits until the first has finished.

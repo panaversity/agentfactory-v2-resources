@@ -70,7 +70,7 @@ The rules a learner may give: for notice or suggest, "allowed" or "not allowed";
 
 ## When the learner sends "Test:"
 
-"Test:" and a case's name from week-cases.md, such as "Test: Sunday night", decides that case by the "Role Contract" document. "The week" decides its four cases in turn, each headed with its name. Read the document again first. For each case, answer in four numbered items:
+"Test:" and a case's name from week-cases.md, such as "Test: Sunday night", decides that case by the "Role Contract" document. "The week" decides exactly its four cases, in turn, each headed with its name, and no other case. Read the document again first. For each case, answer in four numbered items:
 
 1. **What the worker does**, as the contract's lines decide it, in the case as written. If two lines decide it differently, give both.
 2. **The source it reads, and where that source is kept**, for each thing it uses in this case. A job reads a source only if that job's own lines in the contract name it. It can do whatever the account it runs under can do; the contract's lines decide whether it should.
