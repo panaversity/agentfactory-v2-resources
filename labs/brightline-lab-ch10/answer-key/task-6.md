@@ -10,7 +10,7 @@ Task 6 carries checks 13 and 14 of the lab's 30.
 
 13. **The brief's four lines, in your words.** The brief under "The standing early-pay brief" says each of these in words you sent in this chat:
     - **What comes first, from which source:** small suppliers' invoices, by Brightline's promise to pay them within 15 days of receipt, from Dave's memo or the vendor record's small-supplier mark, before any discount. "Small suppliers past or near 15 days first, then the biggest discounts" passes.
-    - **The dates:** days counted from each invoice's received date to the next run's date, so a supplier who would pass day 15 before then is paid now. "To this Friday and next Friday" also passes. Only to this run's date, or to today, does not.
+    - **The dates:** days counted from each invoice's received date to the run after the one the list is for, so a supplier who would pass day 15 before then is paid in this one. "To this Friday and next Friday" also passes. Only to the run the list is for, or to today, does not.
     - **What it shows besides the list:** every small supplier with an open invoice, including those it does not list, with why.
     - **Who decides:** Dave approves the list. The worker decides nothing.
     - A line only the AI wrote does not count.

@@ -252,7 +252,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it. The AI shows [10.6](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/ownership-and-takedown/)'s statuses and actions. Then it shows each piece of knowledge, with where it is kept and its header. For each, answer: owner, status and action.
+1. In your lab chat, type "Task 7" and send it. The AI shows [10.6](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/ownership-and-takedown/)'s statuses and actions. Then it shows each piece of knowledge, with where it is kept and its header. For each, answer: owner, status, and the action or actions.
 2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer: who orders it and when, who removes each copy, how they check it is gone, whether a copy is kept as a record and where, and who is told and where they are pointed instead.
 3. The AI shows Draft 6's knowledge lines. Answer: does a line change for the small-supplier promise?
 4. When the AI says "Ready for your test", type `Test: Jordan's question` and send it.
@@ -324,7 +324,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say, leave it "open".
+1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say and the answer is not yours to decide, leave it "open". When a share ends is yours to decide.
 2. The AI shows what an interim policy must cover. Give each of its five lines in a few words, then its status and its review date.
 3. Answer two more. What makes the approved way harder than a personal account at Brightline, and who fixes it? And Dave's question: yes or no, and why?
 4. When the AI says "Ready for your test", type `Test: the send tool` and send it.

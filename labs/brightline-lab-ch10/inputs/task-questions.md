@@ -169,7 +169,7 @@ Then say "Ready for your test".
 ## Task 7. Who owns each item
 
 1. Show Lesson 10.6's words, quoted: "Every piece of knowledge needs an owner. The owner is the person who can approve it, change it and deprecate it. Knowledge with no owner cannot be governed." Then show the statuses: **stable** (approved, may be served), **draft** (not yet approved, not served), **deprecated** (replaced by a successor, not served to workers), **taken down** (withdrawn from every place it is served), **not governed** (no owner, or no approval). Then show the actions: **keep**; **remove a copy**; **deprecate, pointing to its successor**; **take down**; **draft it as a concept for its owner to approve**.
-2. Show K1 to K5 together, as the knowledge inventory lists them, with K4's text. Ask: "Owner, status and action? Answer: the owner, the status, the action."
+2. Show K1 to K5 together, as the knowledge inventory lists them, with K4's text. Ask: "Owner, status and action? An item may need more than one action. Answer: the owner, the status, then the action or actions."
 3. The same question for K6, K7, K8, K9 and K10, one at a time, each shown first with where it is, its header and its text from `brightline-files.md`.
 
    Write each under "Who owns what the worker knows" as a row of the knowledge register: the item, its owner, its status, its action and the learner's reason, if they gave one.
@@ -242,7 +242,7 @@ Then say "Ready for your test".
    Write the record under "The Governance Record: year-end payables schedules for the auditors", with these fields: Classification and deciding factor; Data tier; Route; Capabilities turned on; What it must not do without review; Gate; Who is affected; Disclosure; Result's audience; Audience ends; Success measure; Failure threshold; Monitored by, and how often; Owner; Re-check if. Fill only "Gate", "What it must not do without review" and "Capabilities turned on", from the document's sections 6 and 12 and Draft 6's Settings, quoting them. Mark every other field "open". Show the record.
 2. Ask: "The schedule workflow's classification and deciding factor, and the schedule's data tier and route? Answer: four short items."
 3. Ask: "Who is affected, and do you tell the auditors that AI helped prepare the schedule? Answer: who, then yes or no and why."
-4. Ask: "Who may open the schedule, and when does that end? Answer: who, then when."
+4. Ask: "Who may open the schedule, and at what event or date does that end? Every share gets an end, so this one is yours to decide. Answer: who, then the event or date."
 5. Ask: "How will you know the gate works, and what counts as it failing? Who checks that, and how often? Answer: four short items, or 'open'."
 6. Ask: "Who owns this record, and what makes you look at it again? Answer: the owner, then what."
 

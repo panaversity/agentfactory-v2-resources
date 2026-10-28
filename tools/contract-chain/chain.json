@@ -45,7 +45,7 @@
     },
     {
       "name": "Lab 10 ships Draft 6",
-      "comment": "Lab 10 ships Lab 9's sample Draft 6 whole, with no cut. contracts/role-contract-draft-6.md here is a copy of Lab 9's sample from labs branch lab/brightline-lab-ch09-one-chat (0cc9685) until Lab 9 merges; whichever of Labs 9 and 10 merges second keeps Lab 9's.",
+      "comment": "Lab 10 ships Lab 9's sample Draft 6 whole, with no cut. contracts/role-contract-draft-6.md here is a copy of Lab 9's sample from labs branch lab/brightline-lab-ch09-one-chat (6fb2029, final) until Lab 9 merges; whichever of Labs 9 and 10 merges second keeps Lab 9's.",
       "shipped": "labs/brightline-lab-ch10/inputs/role-contract-draft-6.md",
       "source": "contracts/role-contract-draft-6.md",
       "cuts": []

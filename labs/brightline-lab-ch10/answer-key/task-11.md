@@ -18,7 +18,7 @@ Task 11 carries checks 25 to 27 of the lab's 30.
     - Re-check if: any of 10.4's list changes: the model, a feature, a connector or permission, the data, the audience, the policy, an AI vendor's terms, or the business consequence.
     - A field the files do not answer may be "open". It is never guessed.
     - Passed: the classification and its factor, the tier, Dave as owner, the audience named with its end, a failure line, and every other field answered or "open".
-    - Missed: a field guessed, such as an invented number; no owner; or an audience with no end.
+    - Missed: a field guessed, such as an invented number; no owner; or an audience with no end, "open" included, because every share gets an end you decide (10.10).
 26. **The interim policy.** Its status first: a proposal, not official until Dave approves it. Then five lines, each in your words:
     - work data goes only through Brightline's company workspace, never a personal account
     - bank details, tax IDs and anything about an employee are checked with Dave before any AI use
