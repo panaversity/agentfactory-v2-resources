@@ -18,9 +18,9 @@ Task 10 carries checks 23 and 24 of the lab's 30.
     - Each share's end: Maria removes the copy and the link when the work is done, such as when the tax forms are filed, and checks by opening the old link from an account that should no longer reach it.
     - Passed: all seven.
     - Missed: a wider audience, such as the finance team; the Year-end folder or the project's files as the place; a link anyone can open; no fixed copy; or a share with no owner, no end or no check.
-24. **`Test: the duplicate list`.** The test changes all three of Monday's moves, quoting your lines: the file goes to the place only Maria and Dave can open, not the Year-end folder; it stays out of the shared AP project's files; and Dave gets it as an invited person, never by "anyone with the link".
-    - Passed: all three changed, each by a line of yours.
-    - Missed: any of the three left as Monday had it, or changed by no line of yours.
+24. **`Test: the duplicate list`.** The test decides each of Monday's three moves by your lines: not the Year-end folder, but the place only Maria and Dave can open; not the shared AP project's files; and Dave invited by name, never "anyone with the link". A test that rules a move out, quoting your line, passes for that move.
+    - Passed: all three decided by a line of yours.
+    - Missed: any of the three allowed, or decided by no line of yours.
 
 ## Why
 

@@ -168,7 +168,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 2" and send it. The AI shows [10.1](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s three answers and four screens. Then it shows the six uses, one at a time. For each, answer whether it is one activity or two. Then, for each activity, give appropriate, appropriate with review, or inappropriate, and the one screen that decides it.
-2. For an answer "with review", the AI asks who checks what, and when. For "inappropriate", it asks what the worker may still do. Answer in a few words.
+2. For an answer "with review", the AI asks who checks what, and when. For "inappropriate", it asks who decides instead, and what the worker may still do. Answer in a few words.
 3. The AI shows Draft 6's "Never automated" lines. Answer: does any of your answers need a line here, so the worker cannot do it whoever asks? Give the line in a few words, or "none".
 4. When the AI says "Ready for your test", type `Test: the Spanish FAQ` and send it. Then send `Test: the clerk ranking`.
 5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -187,7 +187,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 3" and send it. The AI shows [10.2](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/)'s three tiers. Then it shows the vendor master's columns, a group at a time, with what the full master holds and what the lab's copy shows. For each group, answer: its tier, then keep, keep the last four digits, or remove.
 2. The AI asks the tier of the full vendor master, and of a file with only your kept columns. Answer both.
-3. The AI runs the check on your kept columns only, and shows each pair it found, with the columns it matched on. Compare it with the pairs in Dave's ask: answer whether it found Maria's four, and left the two Union companies apart.
+3. The AI runs the check on your kept columns only, and shows each pair it found, with the columns it matched on. Compare it with the pairs in Dave's ask: answer whether it found Maria's four, and left the two Union companies apart. If you change a column's action later, the AI runs the check again.
 4. The AI shows the pairs side by side without their tax IDs. Answer: if every tax ID were removed, which pair would the check lose, and which might it wrongly flag?
 5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -201,9 +201,9 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, and who must confirm it for vendor data first.
+1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, which ways it may never take, and who must confirm the way for vendor data first.
 2. Answer the next two questions in a few words: what that way must have, and whether the check is inside the purpose the tax IDs were kept for.
-3. One look outside the chat: open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Tell the AI whether it is on or off. It is not graded.
+3. One look outside the chat: open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Tell the AI on, off or skip. It is not graded, and it does not go in the document.
 4. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it.
 5. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -252,7 +252,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 7" and send it. The AI shows [10.6](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/ownership-and-takedown/)'s statuses and actions. Then it shows each piece of knowledge, with where it is kept and its header. For each, answer: owner, status and action.
-2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer four things: who orders it and who removes each copy, how they check it is gone, whether a copy is kept as a record and where, and who is told and where they are pointed instead.
+2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer four things: who orders it and when, and who removes each copy, how they check it is gone, whether a copy is kept as a record and where, and who is told and where they are pointed instead.
 3. The AI shows Draft 6's knowledge lines. Answer: does a line change for the small-supplier promise?
 4. When the AI says "Ready for your test", type `Test: Jordan's question` and send it.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -271,7 +271,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 8" and send it. The AI shows [10.7](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/)'s list of outputs a person must sign. Then it shows the eight outputs, one at a time, with how each goes out today. For each, answer: who signs or approves it, who sends it and from whose own account, and whether the worker may send it.
 2. The AI shows the schedule sent on December 3 beside the register it came from. Answer: what Dave checks before he signs, and who decides how a balance in Canadian dollars is shown.
-3. The AI shows Draft 6's lines on drafting and sending. Answer in three short lines. How does an output on your sign-off list reach its signer, and who sends it? What does the worker never put on a draft? And where does a request from the auditors, a tax authority or a court go?
+3. The AI shows Draft 6's lines on drafting and sending. Answer in three short lines. How does an output on your sign-off list reach its signer, and who sends it? What does the worker never put on a draft? And who handles a request from the auditors, a tax authority or a court?
 4. When the AI says "Ready for your test", type `Test: the auditors' follow-up` and send it.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 

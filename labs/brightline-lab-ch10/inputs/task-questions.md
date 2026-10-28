@@ -78,10 +78,10 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - "The **deciding factor** is the screen that, if its answer changed, would move the use into another category."
 
    Then show U1 from `brightline-files.md`, as its own lines. Ask: "Is this one activity or two? For each activity: appropriate, appropriate with review, or inappropriate, and the one screen that decides it. Answer: one or two, then for each activity its answer, its screen, and a few words why."
-2. For each activity the learner calls "appropriate with review", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "What may the worker still do here, if anything? Answer: a few words, or nothing."
+2. For each activity the learner calls "appropriate with review", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "Who decides it instead, and what may the worker still do here, if anything? Answer: who, then a few words, or nothing."
 3. The same, one use at a time, for U2 to U6, each shown first.
 
-   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer, its deciding factor and why, and its check (who, what, when) or what the worker may still do.
+   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
 4. Show Draft 6's "Never automated:" lines, A10 to A15, quoted. Ask: "Do any of your answers need a line here, so the worker cannot do it whoever asks? Draft 6's other lines stay as they are. Answer: the new line in a few words, or 'none'."
 
    Write any new line under "Role Contract, Draft 7" as "Never automated: New line:" and the learner's words. Then say "Ready for your test".
@@ -114,6 +114,8 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - then a line that starts "Compared:" and names every other two vendors that share a word of their name or a ZIP code, each with why the check did not flag them
 
    Ask: "Did it find Maria's four known pairs, and leave Union Packaging Inc. and Union Packaging Supply LLC apart? Answer: yes, or which pair it missed or wrongly flagged."
+
+   Whenever the learner changes a column's action, or sends "Run the check again", do this step again on the kept columns as they now stand, and replace the old result.
 5. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
 
    Write both answers under "What data, and by which way in". Then say "Task 3 is done". This task has no test.
@@ -127,12 +129,12 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - a temporary chat in ChatGPT, or an incognito chat in Claude, on a personal account
    - Maria's own chat in the shared AP project, in Brightline's company workspace on Claude's Team plan
 
-   Ask: "Which way may Brightline's work data take, for this check and for any other work, and who must confirm that way for vendor data before the check runs? Answer: the way, then who."
+   Ask: "Which way may Brightline's work data take, for this check and for any other work? Which ways may it never take? And who must confirm the way for vendor data before the check runs? Answer: the way, the ways it may never take, then who."
 2. Ask: "What must that way have before vendor data goes through it, about training, who can see the data, and how long it is kept? Answer: three short lines."
 3. Show "The vendor master in this lab" from `brightline-files.md`, with its line on why Brightline keeps the tax IDs, and who owns the vendor data. Show Lesson 10.2's line, quoted: "When a new use is outside the purpose, the person who owns the data decides." Ask: "Is finding duplicates before the tax forms inside that purpose? Is training an AI vendor's model? And who decides a use outside it? Answer: yes or no, yes or no, then who."
 
    Write the three answers under "What data, and by which way in", headed "The way in".
-4. Say: "One look at your own account, outside this chat. Open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Is it on or off? Answer: on or off. This one is not graded." Write it under "The way in" as "My own account's training setting:" and the answer.
+4. Say: "One look at your own account, outside this chat. Open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Is it on or off? Answer: on, off or skip. This one is not graded." Write nothing into the document for it. If the learner cannot see the setting, or says skip, say that is fine and go on.
 
 Then say "Ready for your test".
 
@@ -167,13 +169,13 @@ Then say "Ready for your test".
 ## Task 7. Who owns each item
 
 1. Show Lesson 10.6's words, quoted: "Every piece of knowledge needs an owner. The owner is the person who can approve it, change it and deprecate it. Knowledge with no owner cannot be governed." Then show the statuses: **stable** (approved, may be served), **draft** (not yet approved, not served), **deprecated** (replaced by a successor, not served to workers), **taken down** (withdrawn from every place it is served), **not governed** (no owner, or no approval). Then show the actions: **keep**; **remove a copy**; **deprecate, pointing to its successor**; **take down**; **draft it as a concept for its owner to approve**.
-2. Show K1 to K5 together, as the knowledge inventory lists them. Ask: "Owner, status and action? Answer: the owner, the status, the action."
+2. Show K1 to K5 together, as the knowledge inventory lists them, with K4's text. Ask: "Owner, status and action? Answer: the owner, the status, the action."
 3. The same question for K6, K7, K8, K9 and K10, one at a time, each shown first with where it is, its header and its text from `brightline-files.md`.
 
    Write each under "Who owns what the worker knows" as a row of the knowledge register: the item, its owner, its status, its action and the learner's reason, if they gave one.
-4. For each item the learner takes down, or removes a copy of, show the item and each place it is kept. Ask: "Who orders it, and who removes each copy? How do they check that it is gone? Is a copy kept as a record, and where? Who is told, and where are they pointed instead? Answer: who orders and who removes, how they check, kept or not and where, then who is told and where they are pointed."
+4. For each item the learner takes down, or removes a copy of, show the item and each place it is kept. Ask: "Who orders it, and when, and who removes each copy? How do they check that it is gone? Is a copy kept as a record, and where? Who is told, and where are they pointed instead? Answer: who orders it and when, who removes, how they check, kept or not and where, then who is told and where they are pointed."
 
-   Write a takedown record for each, under "Who owns what the worker knows": the item, who ordered it, the date (Friday, December 11, 2026), the reason the learner gave for its action, if any, each copy with who removes it and how they check, any copy kept as a record and where, and who is told and where they are pointed.
+   Write a takedown record for each, under "Who owns what the worker knows": the item, who ordered it and when, as the learner said, the reason the learner gave for its action, if any, each copy with who removes it and how they check, any copy kept as a record and where, and who is told and where they are pointed.
 5. Show Draft 6's "Knowledge sources:" lines, quoted. Ask: "Does a line change, or need adding, for the small-supplier promise, now that you have given it an owner and an action? Draft 6's other words stay. Answer: the line's words, or 'none'."
 
    Write any change under "Role Contract, Draft 7", under "Knowledge sources:". Then say "Ready for your test".
@@ -191,7 +193,7 @@ Then say "Ready for your test".
 3. Show the schedule sent on December 3 beside `open-payables-register-2026-11-30.csv`: every line where the two differ, with both values; the schedule's total; the register's total in US dollars alone; and the schedule's last two lines, its signature block. Say nothing about what a difference means. Ask: "What does Dave check before he signs a schedule like this, and who decides how a balance in Canadian dollars is shown? Answer: what he checks, then who decides."
 
    Write the answer under "Who must sign before it leaves", headed "The schedule".
-4. Show these Draft 6 lines, quoted: A06 and A07 under "Actions and levels:", A10 under "Never automated:", the first line under "Replies and handoffs:", and the heading "Escalation triggers:" with its first line. Ask: "What must Draft 6 say for your sign-off matrix to hold? Three things, each in a few words: how an output on the sign-off list reaches its signer, and who sends it; what the worker never puts on a draft; and where a request from an auditor, a tax authority or a court goes. Draft 6's other words stay. Answer: three lines."
+4. Show these Draft 6 lines, quoted: A06 and A07 under "Actions and levels:", A10 under "Never automated:", the first line under "Replies and handoffs:", and the heading "Escalation triggers:" with its first line. Ask: "What must Draft 6 say for your sign-off matrix to hold? Three things, each in a few words: how an output on the sign-off list reaches its signer, and who sends it; what the worker never puts on a draft; and who handles a request from the auditors, a tax authority or a court. Draft 6's other words stay. Answer: three lines."
 
    Write each under "Role Contract, Draft 7", under the Draft 6 heading it belongs to, as a whole line. Then say "Ready for your test".
 
@@ -225,7 +227,7 @@ Then say "Ready for your test".
 
    Then show "The duplicate list" from `monday-cases.md`. Ask: "What tier is the list the check returns, and who is it for, by name? Answer: the tier, then the names."
 2. Ask: "Where may it be saved? And when the worker saves it through a connector, who answers for who can open it? Answer: the place, then who."
-3. Show `vendor-facts.md` section 8, with the test share of 17 October. Ask: "Which link settings may a yellow or red result have? Answer: a few words."
+3. Show `vendor-facts.md` section 8 word for word, with the test share of 17 October. Ask: "Which link settings may a yellow or red result have? Answer: a few words."
 4. Ask: "When Dave approves a result, how does it leave, so that nobody can change it after he approved it? Answer: a few words."
 5. Ask: "Who ends each share, when, and how do they check that it ended? Answer: who, when, how."
 
@@ -237,7 +239,7 @@ Then say "Ready for your test".
 
 1. Show Lesson 10.4's words on the Governance Record, quoted: "It holds the classification and its deciding factor, the data tier and route, and the capabilities turned on, such as connectors, skills and actions. It also holds who is affected, the evidence that the controls work, an owner, and what triggers a re-check." And: "If you do not know an answer, leave its field blank and mark it open. Do not guess."
 
-   Write the record under "The Governance Record: year-end payables schedules for the auditors", with these fields: Classification and deciding factor; Data tier; Route; Capabilities turned on; What it must not do without review; Gate; Who is affected; Disclosure; Result's audience; Audience ends; Success measure; Failure threshold; Monitored by, and how often; Owner; Re-check if. Fill only "Gate" and "What it must not do without review", from the document's sections 6 and 12, quoting them. Mark every other field "open". Show the record.
+   Write the record under "The Governance Record: year-end payables schedules for the auditors", with these fields: Classification and deciding factor; Data tier; Route; Capabilities turned on; What it must not do without review; Gate; Who is affected; Disclosure; Result's audience; Audience ends; Success measure; Failure threshold; Monitored by, and how often; Owner; Re-check if. Fill only "Gate", "What it must not do without review" and "Capabilities turned on", from the document's sections 6 and 12 and Draft 6's Settings, quoting them. Mark every other field "open". Show the record.
 2. Ask: "The schedule workflow's classification and deciding factor, and the schedule's data tier and route? Answer: four short items."
 3. Ask: "Who is affected, and do you tell the auditors that AI helped prepare the schedule? Answer: who, then yes or no and why."
 4. Ask: "Who may open the schedule, and when does that end? Answer: who, then when."

@@ -75,7 +75,7 @@ It is a signed memo, not an AP concept.
 | K1 | Invoice approval threshold | An AP concept, in Maria's records. Its copies are logged in the refresh log: the shared AP project, the Google Doc "AP approved concepts", Maria's test project in Claude and Maria's AP project in ChatGPT | stable, owner Dave Kowalski, approved Monday, November 9, 2026 |
 | K2 | Weekly payment run and due dates | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
 | K3 | Duplicate invoices | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
-| K4 | Changes to vendor bank details | An AP concept, in Maria's records. The same copies. Its text is below | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
+| K4 | Changes to vendor bank details | An AP concept, in Maria's records. The same copies. Its text is under "K4" below | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
 | K5 | Capitalization of purchases | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
 | K6 | Invoice approval threshold, AP policy version 2 | A copy uploaded to the shared AP project in June. Its text is below | no header. AP policy version 3 replaced it on September 1, 2026 |
 | K7 | AP onboarding notes, 2025 | The original is in the Onboarding folder on the shared drive. Its copy in the shared AP project was removed in November. Its copy in the New Staff project is still there. Its text is below | no header, no owner |

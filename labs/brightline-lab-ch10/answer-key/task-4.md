@@ -12,8 +12,8 @@ Task 4 carries checks 9 and 10 of the lab's 30.
    - The way: for this check, Maria's own chat in the shared AP project, in Brightline's company workspace, once Dave confirms that way for vendor data; and for any other work data, the company workspace too. Never a personal account, and never a temporary or incognito chat on one: those decide history and training, not whether the data may go in.
    - What it must have: its data is not used for training (training off by default on the Team plan also passes); only the people Dave names can see it, such as Maria and Dave; and it is kept no longer than the check needs, or as the company's retention sets.
    - The purpose: finding duplicates before the tax forms is inside it; training an AI vendor's model is not; Dave, who owns the data, decides any use outside it.
-   - Passed: the way, Dave confirming it, the three lines, and the three answers on purpose.
-   - Missed: a personal account or a temporary chat allowed; nobody named to confirm; or training called inside the purpose.
+   - Passed: the way, the ways it may never take, Dave confirming it, the three lines, and the three answers on purpose.
+   - Missed: a personal account or a temporary chat allowed, or not named among the ways it may never take; nobody named to confirm; or training called inside the purpose.
 10. **`Test: Jordan's laptop`.** The test says no: Jordan may not use his personal ChatGPT account for work data, quoting a line of your "The way in". What happens to the letter he already pasted may be "unclear" or "no line decides" here: that is a later task's.
     - **The hard rule.** A test or a line that lets Jordan use a personal account for work data fails this check, whatever else it gets right. A point the test calls unclear, or "no line decides", does not let him: only a line that allows it does.
     - Passed: the test says no, quoting your line, and the hard rule holds.

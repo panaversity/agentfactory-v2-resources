@@ -12,7 +12,7 @@ Task 7 carries checks 15 to 17 of the lab's 30.
     - K1 to K5, the five AP concepts: owner Dave Kowalski; stable; keep.
     - K6, AP policy version 2's threshold: owner Dave, who owns the AP policy; not governed, a copy of a replaced policy; remove the copy from the shared AP project. "Deprecate, pointing to K1" also passes, if the copy is removed.
     - K7, the 2025 onboarding notes: no owner; not governed; take down. "Deprecate, pointing to K4" also passes, if every copy is still removed.
-    - K8, the benchmarks excerpt: no owner, or Maria, who uploaded it; not governed; take down, because its license forbids uploading it. Never "keep, because it is useful".
+    - K8, the benchmarks excerpt: no owner, Maria, who uploaded it, or Dave; not governed; take down, because its license forbids uploading it. Never "keep, because it is useful".
     - K9, Jordan's onboarding steps: no owner, or Dave once Maria drafts it; not governed, or draft; remove it from the shared AP project, and send it to Maria to draft for Dave.
     - K10, the small-supplier memo: Dave; not governed, or a signed memo that is not yet a concept; draft it as a concept for Dave to approve.
     - Passed: each item as above.

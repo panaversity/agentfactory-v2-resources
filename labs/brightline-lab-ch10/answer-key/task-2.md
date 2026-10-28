@@ -22,13 +22,13 @@ Task 2 carries checks 3 to 5 of the lab's 30.
    - U3's letters: Dave checks each letter, before it is sent.
    - U4: Dave checks the list, including who it left out, before he approves it.
    - U6: Ana Ruiz checks the translation against the English page, before it is posted.
-   - U3's decision: the worker may still compile the delivery records and late-delivery counts for Dave, or nothing.
-   - U5: the worker may still summarize the kinds of errors for team training, with no names, or nothing.
-   - Passed: every "with review" with its who, what and when, and every "inappropriate" with what the worker may still do, or "nothing".
-   - Missed: a check with no who, no what or no when, such as "someone reviews it"; or a check that happens after the output is used.
+   - U3's decision: Dave decides; the worker may still compile the delivery records and late-delivery counts for him, or nothing.
+   - U5: a manager decides, Maria or Dave; the worker may still summarize the kinds of errors for team training, with no names, or nothing.
+   - Passed: every "with review" with its who, what and when, and every "inappropriate" with who decides instead, and what the worker may still do, or "nothing".
+   - Missed: a check with no who, no what or no when, such as "someone reviews it"; a check that happens after the output is used; or an "inappropriate" with nobody named to decide.
 5. **The never line, and the two tests.** Under "Role Contract, Draft 7", a new "Never automated" line says the worker never scores or ranks individual staff, or recommends whom to keep. Then:
    - `Test: the Spanish FAQ`: the worker may draft the translation, and Ana Ruiz checks it before it is posted, quoting your U6 row.
-   - `Test: the clerk ranking`: the worker does not score or rank the clerks, and a manager decides, quoting your U5 row or the never line.
+   - `Test: the clerk ranking`: the worker does not score or rank the clerks, and the person your U5 row names decides, quoting your U5 row or the never line.
    - Passed: the line, and both tests as above.
    - Missed: no never line; a test that quotes no line of your document; or a ranking test in which the worker ranks the clerks.
 

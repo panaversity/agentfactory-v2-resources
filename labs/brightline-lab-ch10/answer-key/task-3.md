@@ -13,12 +13,12 @@ Task 3 carries checks 6 to 8 of the lab's 30.
    - `tin_type`: yellow, keep.
    - `tin`: red, keep the last four digits.
    - `bank_routing`, `bank_account`: red, remove.
-   - `contact_email`, `phone`: yellow, remove.
+   - `contact_email`, `phone`: yellow, remove. Keep also passes: a shared phone or email can mark a match, and the cut file is yellow either way.
    - `small_supplier`, `onboarded`: yellow, remove.
    - The full vendor master: red. The cut file: yellow.
-   - Passed: the bank numbers removed, the tax ID kept as its last four digits only, the names, addresses and tax ID type kept, the other columns removed, and the two files' tiers.
-   - Missed: a full tax ID or a bank number kept; the tax ID removed entirely; or the cut file called green or red.
-7. **The check on the kept columns.** "The check on the kept columns", in your document, names these four pairs, each with the kept columns it matched on, the tax ID type and last four digits among them:
+   - Passed: the bank numbers removed, the tax ID kept as its last four digits only, the names, addresses and tax ID type kept, `small_supplier` and `onboarded` removed, and the two files' tiers.
+   - Missed: a full tax ID or a bank number kept; the tax ID removed entirely; `small_supplier` or `onboarded` kept; or the cut file called green or red.
+7. **The check on the kept columns.** "The check on the kept columns", in your document, names these four pairs, each with the kept columns it matched on, the tax ID's last four digits among them:
    - V-2003 Fairfield Pallet Co. and V-2033 Fairfield Pallet Company
    - V-2004 Mid-State Freight Inc. and V-2034 MidState Freight Inc
    - V-2005 Harbor Packaging LLC and V-2035 Harbor Pkg LLC

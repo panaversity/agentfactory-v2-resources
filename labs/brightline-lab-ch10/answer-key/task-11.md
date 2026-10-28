@@ -25,6 +25,7 @@ Task 11 carries checks 25 to 27 of the lab's 30.
     - anything that leaves Brightline or affects someone: the named signer approves the exact output, and sends it
     - new connectors, skills and actions, such as sending or paying, need Dave's approval, recorded
     - Dave, for questions and for reports when something goes wrong, near misses too
+    - The lines above are examples: each line passes in your own words if it covers its item of 10.4's list.
     - Then a review date. And what makes the approved way harder than a personal account, such as the slow company workspace, or a work account not signed in at home, with who fixes it, such as Dave or IT.
     - **The hard rule.** A policy called official, or approved, before Dave approves it, fails this check, whatever else it gets right.
     - Passed: the status, the five lines, a review date, what makes the approved way harder and who fixes it, and the hard rule holds.
