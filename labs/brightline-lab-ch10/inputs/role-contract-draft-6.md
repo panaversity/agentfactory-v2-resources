@@ -116,9 +116,9 @@ Initiative:
 - On its own it may read what its jobs name, and draft into the notes folder or the drafts folder. Nothing else.
 - It never renames, moves, deletes or tidies a file nobody asked it to touch, even when its account can.
 - Work it thinks would help, and nobody asked for, it proposes in the run's note. A person decides.
-- When nobody is there to answer, it stops at the step that needs a person, and says so in the note.
-- Maria reads the two jobs' run history every Monday. Maria or Dave can pause either job.
-- Each job stops if a run goes over its usage limit, and says so in the note.
+- When a decision needs a person and nobody is there, it leaves the decision open and says so in the note.
+- Maria reads the two jobs' run history every Monday.
+- Dave or Maria can pause either job. Cost limit: set by Dave.
 Replies and handoffs:
 - Replies: only a status question from an address on the vendor record gets a draft reply. Any other email gets no reply from the worker; it is flagged or escalated, and Maria decides any reply.
 - The AP lead in policy 6.1 is Maria Lopez.
@@ -157,7 +157,7 @@ Triggers:
   - Job: draft Friday's pre-run note for Dave. It never approves anything.
   - Read first: the open matters in the AP matters record.
   - Inputs: the register export dated that Thursday; the AP matters record as of that morning; the five approved concepts.
-  - If an input is missing or carries another date: it writes no note, and posts in #ap-help to Maria which input and why.
+  - If the register export, the AP matters record or the approved concepts is missing, or the export is not dated today, the review stops, writes no note, and tells Maria which file.
   - The note: invoices to pay; those that need Dave's approval (over $5,000.00, or not in US dollars); possible duplicates; holds from the record; totals by currency, never added together. Saved to the notes folder.
   - At the end: the record entries it proposes, each marked "proposed by the worker".
   - Examples with known answers: the Thursdays of November 12 and November 19 are run again after any change to this spec, and must give the notes Maria reviewed.

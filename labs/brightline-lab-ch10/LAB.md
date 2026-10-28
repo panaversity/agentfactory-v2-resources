@@ -27,7 +27,7 @@ Download [`brightline-lab-ch10.zip`](https://github.com/panaversity/agentfactory
 
 The answer keys are not in the folder. Each task downloads its own, so you meet none early.
 
-Every record here is invented, which is why it may go into your own AI account here, and never at work. And a full number, such as a bank account or a tax ID, never goes into a chat, here or at work.
+Every record here is invented, which is why it may go into your own AI account here, and never in your real work. And a full number, such as a bank account or a tax ID, never goes into a chat, here or in your real work.
 
 ## The job
 
@@ -41,7 +41,7 @@ Every record here is invented, which is why it may go into your own AI account h
 
 You use two chats. Tasks 1 to 12 run in one lab chat. Task 13 runs in a fresh chat, to prove your terms with nothing else in view.
 
-**Your document.** In Task 1, the AI opens one document beside your chat, a Claude Doc in Claude or a Writing block in ChatGPT's side panel: "Switching the AP Worker back on: the terms, a proposal for Dave". It has twelve sections, one for each question you answer, and its last section holds the lines of Draft 6 that change, as Draft 7. The AI writes each of your decisions into it, and changes nothing else. Change it only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
+**Your document.** In Task 1, the AI opens one document beside your chat, a Claude Doc in Claude or a Writing block in ChatGPT's side panel. Its title is "The terms for switching the AP Worker back on", and it is a proposal for Dave. It has twelve sections, one for each question you answer, and its last section holds the lines of Draft 6 that change, as Draft 7. The AI writes each of your decisions into it, and changes nothing else. Change it only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
 **The loop.**
 
@@ -50,7 +50,7 @@ You use two chats. Tasks 1 to 12 run in one lab chat. Task 13 runs in a fresh ch
 3. When the AI says "Ready for your test", guess what the test will say. Then type the task's test, such as `Test: the clerk ranking`, and send it.
 4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. If the missed check grades a test, send that test again. Then send: "Read the document again, and check it again against the key."
 
-**What a test is.** "Test:" and the name of one of Monday's cases, such as `Test: Jordan's laptop`, decides that case by your terms: your document, and Draft 6 as its last section changes it. The AI answers in four items:
+**What a test is.** "Test:" and the name of one of Monday's cases, such as `Test: Jordan's laptop`, decides that case by your terms. Your terms are your document, and Draft 6 as its last section changes it. The AI answers in four items:
 
 1. what happens, and who does what
 2. who decides, signs or sends, and from whose own account
@@ -167,7 +167,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [10.1](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s three answers and four screens. Then it shows the six uses, one at a time. For each, answer: one activity or two; for each activity, appropriate, appropriate with review, or inappropriate, and the one screen that decides it.
+1. In your lab chat, type "Task 2" and send it. The AI shows [10.1](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s three answers and four screens. Then it shows the six uses, one at a time. For each, answer whether it is one activity or two. Then, for each activity, give appropriate, appropriate with review, or inappropriate, and the one screen that decides it.
 2. For an answer "with review", the AI asks who checks what, and when. For "inappropriate", it asks what the worker may still do. Answer in a few words.
 3. The AI shows Draft 6's "Never automated" lines. Answer: does any of your answers need a line here, so the worker cannot do it whoever asks? Give the line in a few words, or "none".
 4. When the AI says "Ready for your test", type `Test: the Spanish FAQ` and send it. Then send `Test: the clerk ranking`.
@@ -201,7 +201,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way the check may take, and who must confirm it for vendor data first.
+1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, and who must confirm it for vendor data first.
 2. Answer the next two questions in a few words: what that way must have, and whether the check is inside the purpose the tax IDs were kept for.
 3. One look outside the chat: open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Tell the AI whether it is on or off. It is not graded.
 4. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it.
@@ -234,7 +234,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 6" and send it. The AI shows Dave's request of December 1, word for word. Give the four things the brief must add, each in a few words of your own: what comes first, and from which source; which dates it counts the days to; what it shows besides the invoices it lists; and who decides.
+1. In your lab chat, type "Task 6" and send it. The AI shows Dave's request of December 1, word for word. Give the four things the brief must add, each in a few words of your own. What comes first, and from which source? Which dates does it count the days to? What does it show besides the invoices it lists? And who decides?
 2. The AI writes the brief from Dave's request and your four lines, and adds nothing. Read it: a line you did not give is not there.
 3. When the AI says "Ready for your test", type `Test: the December 18 list` and send it.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -252,7 +252,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 7" and send it. The AI shows [10.6](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/ownership-and-takedown/)'s statuses and actions. Then it shows each piece of knowledge, with where it is kept and its header. For each, answer: owner, status and action.
-2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer: who orders it and who removes each copy; how they check it is gone; whether a copy is kept as a record, and where; and who is told.
+2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer four things: who orders it and who removes each copy, how they check it is gone, whether a copy is kept as a record and where, and who is told and where they are pointed instead.
 3. The AI shows Draft 6's knowledge lines. Answer: does a line change for the small-supplier promise?
 4. When the AI says "Ready for your test", type `Test: Jordan's question` and send it.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -271,7 +271,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 8" and send it. The AI shows [10.7](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/)'s list of outputs a person must sign. Then it shows the eight outputs, one at a time, with how each goes out today. For each, answer: who signs or approves it, who sends it and from whose own account, and whether the worker may send it.
 2. The AI shows the schedule sent on December 3 beside the register it came from. Answer: what Dave checks before he signs, and who decides how a balance in Canadian dollars is shown.
-3. The AI shows Draft 6's lines on drafting and sending. Answer, in three short lines: how an output on your sign-off list reaches its signer, and who sends it; what the worker never puts on a draft; and where a request from an auditor, a tax authority or a court goes.
+3. The AI shows Draft 6's lines on drafting and sending. Answer in three short lines. How does an output on your sign-off list reach its signer, and who sends it? What does the worker never put on a draft? And where does a request from the auditors, a tax authority or a court go?
 4. When the AI says "Ready for your test", type `Test: the auditors' follow-up` and send it.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -283,12 +283,12 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ### Task 9. The first hour (15 minutes)
 
-**Dave asks:** "Maria told me on Monday, December 7, at 7:00 a.m., what she did on Sunday night. Put her report on file as the incident note, dated then, with only what she knew then. And tell me what anyone here does in the first hour, next time."
+**Dave asks:** "Maria told me on Monday, December 7, at 7 a.m., what she did on Sunday night. Put her report on file as the incident note, dated then, with only what she knew then. And tell me what anyone here does in the first hour, next time."
 
 **What you do:**
 
 1. In your lab chat, type "Task 9" and send it. The AI shows [10.8](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-something-goes-wrong/)'s five steps, and Maria's own account, line by line. For each line, answer: a fact for the note, or a decision that waits for someone, and whom.
-2. Answer two more: what the note does not know yet, and what Maria stops doing and keeps until Dave decides. The AI writes the note, and shows it.
+2. Answer three more: what the note does not know yet, what Maria stops doing and keeps until Dave decides, and what waits for Dave's decision. The AI writes the note, and shows it.
 3. The AI shows what Jordan did on December 9. Answer: is it reported, to whom, and why?
 4. Write the first-hour rule for anyone at Brightline, in four short lines: what they stop, what they keep, what they write down, and whom they tell, by when.
 5. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it again. This time your first-hour rule is there too.
@@ -307,7 +307,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 10" and send it. The AI shows [10.10](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/who-can-open-the-result/)'s five steps and Monday's duplicate list. Answer: its tier, and who it is for, by name.
-2. Answer the next questions in a few words: where it may be saved, and who answers for who can open it; which link settings a yellow or red result may have, after the AI shows what a share does on each AI vendor; how an approved result leaves; and who ends each share, when, and how they check.
+2. Answer four more questions in a few words. Where may it be saved, and who answers for who can open it? Which link settings may a yellow or red result have? The AI first shows what a share does on each AI vendor. How does an approved result leave? And who ends each share, when, and how do they check?
 3. When the AI says "Ready for your test", type `Test: the duplicate list` and send it.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -319,13 +319,13 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ### Task 11. The record and the policy (25 minutes)
 
-**Dave asks:** "Give me one page I can sign for the auditors' schedules: what we decided, who owns it, how we know it works, and when we look at it again. And an interim AI policy I can approve. Don't call it official. Then tell me: will this policy alone stop December happening again?"
+**Dave asks:** "Give me one page I can sign for the auditors' schedules. It should say what we decided, who owns it, how we know it works, and when we look at it again. And an interim AI policy I can approve. Don't call it official. Then tell me: will this policy alone stop December happening again?"
 
 **What you do:**
 
 1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the two fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say, leave it "open".
 2. The AI shows what an interim policy must cover. Give each of its five lines in a few words, then its status and its review date.
-3. Answer two more: what makes the approved way harder than a personal account at Brightline, and who fixes it; and Dave's question, yes or no, with why.
+3. Answer two more. What makes the approved way harder than a personal account at Brightline, and who fixes it? And Dave's question: yes or no, and why?
 4. When the AI says "Ready for your test", type `Test: the send tool` and send it.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
