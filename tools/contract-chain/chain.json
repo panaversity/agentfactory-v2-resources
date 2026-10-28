@@ -65,6 +65,89 @@
           "after": "- Monday, November 23, 2026, Dave Kowalski: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
         }
       ]
+    },
+    {
+      "name": "Lab 11's sample Draft 8 is its Draft 7 with Tasks 4 to 10's lines",
+      "comment": "The chain's last draft. Each insertion is one task's decision, as a right learner's few words would make it; every line it adds is marked [Draft 8].",
+      "shipped": "contracts/role-contract-draft-8.md",
+      "source": "labs/brightline-lab-ch11/inputs/role-contract-draft-7.md",
+      "cuts": [
+        {
+          "name": "Task 10: the date, and the January line goes",
+          "before": "Role Contract: AP Worker, Draft 7, Friday, December 11, 2026\nAs it stood on Monday, January 11, 2027.\n",
+          "after": "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027\n"
+        },
+        {
+          "name": "Task 4: the seat Dave pays for, in the Identity line",
+          "before": "Until IT creates it, the jobs still run in Maria's account, so their actions are logged as hers.",
+          "after": "Until IT creates it, both jobs and the daily check run on the seat Dave pays for. Dave owns its budget. Maria checks its usage every Monday at 9 a.m. No one-off work runs from it. [Draft 8]"
+        },
+        {
+          "name": "Task 4: the seat, under Triggers",
+          "before": "- Until IT creates ap-worker@brightline, both jobs run in Maria's account. Maria set them up on Monday, November 9, 2026.",
+          "after": "- Until IT creates ap-worker@brightline, both jobs run on the seat Dave pays for. Maria set them up on Monday, November 9, 2026. [Draft 8]"
+        },
+        {
+          "name": "Task 4: a resend is flagged",
+          "before": "  - A copy: It flags it to Maria, with both dates it was received, and does not log it as new. Maria sets the hold; the run never does.\n",
+          "after": "  - A copy: It flags it to Maria, with both dates it was received, and does not log it as new. Maria sets the hold; the run never does.\n  - An invoice from the same vendor, for the same amount, whose number matches one already received but for a suffix such as \"-R\", is flagged to Maria as a possible copy. [Draft 8]\n"
+        },
+        {
+          "name": "Task 4: the daily check from outside, and what Maria checks when it is quiet",
+          "before": "If there is no note dated today, she does the review by hand and tells Dave.\n",
+          "after": "If there is no note dated today, she does the review by hand and tells Dave.\n- The daily check, outside the email job: every day at 5:00 p.m., on the seat Dave pays for, it compares the invoice emails the AP inbox received that day with the email check's log, by message ID, and tells Maria in #ap-help which ones were not checked. [Draft 8]\n- If the daily check's message does not appear: on Claude, Maria checks the task's past runs on the Scheduled page; on ChatGPT, she checks for a pause or a pending approval, and that the app is still connected. [Draft 8]\n"
+        },
+        {
+          "name": "Task 5: a short-payment reply's sources",
+          "before": "This is not forwarding a file (A10).\n",
+          "after": "This is not forwarding a file (A10).\n- A reply about a short payment or a deduction: the vendor's terms from its vendor record, and the invoice and payment lines, with any credit memo, from the register. If the terms are not in the vendor record, it says so and states no terms. [Draft 8]\n"
+        },
+        {
+          "name": "Task 6: Maria's check before she sends the note on",
+          "before": "- 6. Read the note again and correct it: Maria. Support: a named person's review.",
+          "after": "- 6. Read the note again and correct it: Maria. Support: a named person's review. Before she sends it on, she checks its first line against the live register. [Draft 8]"
+        },
+        {
+          "name": "Task 7: change one, the file by its link",
+          "before": "  - Inputs: 1. The register export, dated that Thursday. 2.",
+          "after": "  - Inputs: 1. AP Register 2027, opened by its link in the Finance folder, through the shared-drive connection, never as an upload. [Draft 8] 2."
+        },
+        {
+          "name": "Task 7: change two, the first line and the stop",
+          "before": "naming the file that is missing or not dated that morning.\n",
+          "after": "naming the file that is missing or not dated that morning.\n  - The note's first line: the register's name, its last entry's date, how many invoices are due, and their total. If the register's last entry is more than three business days old, the run stops, writes no note, and tells Maria. [Draft 8]\n"
+        },
+        {
+          "name": "Task 8: the connection replies use",
+          "before": "They write only to the notes folder and the drafts folder, nothing else in the AP shared folder.\n",
+          "after": "They write only to the notes folder and the drafts folder, nothing else in the AP shared folder.\n- The connection replies use: the Remittances folder only, read only. [Draft 8]\n"
+        },
+        {
+          "name": "Task 8: the rule for an attachment, and Maria's check",
+          "before": "- A status reply about a payment may carry that payment's remittance notice, for the vendor the notice names. Maria reads the draft and sends it. This is not forwarding a file (A10).\n",
+          "after": "- A status reply about a payment may carry that payment's remittance notice, for the vendor the notice names. Maria reads the draft and sends it. This is not forwarding a file (A10).\n- If a notice or any other attachment cannot be retrieved, the run drafts no reply that says it is attached. It stops and tells Maria which one it could not reach. [Draft 8]\n- Maria opens each attachment before she sends a reply. [Draft 8]\n"
+        },
+        {
+          "name": "Tasks 9 and 10: discounts as code, the note's and the replies' skills, and the standing instruction",
+          "before": "Off until Dave approves one version, after reading its steps and its test results from both places.\n",
+          "after": "Off until Dave approves one version, after reading its steps and its test results from both places.\n- Discounts and amounts to pay: calculated as code, never in sentences. [Draft 8]\n- thursday-note: the note's checks and layout, with every amount shown to the cent. [Draft 8]\n- dispute-reply: replies about short payments, from Jordan's fixed request. [Draft 8]\nStanding instructions:\n- A credit memo is never listed as an amount owed. [Draft 8]\n"
+        },
+        {
+          "name": "Task 10: the small-supplier promise goes to Dave",
+          "before": "Until then, the five concepts stay the only knowledge.\n",
+          "after": "Until then, the five concepts stay the only knowledge.\n- The small-supplier promise: Maria sends Dave the log and a draft concept. Dave decides. [Draft 8]\n"
+        },
+        {
+          "name": "Task 10: before Draft 8 is kept",
+          "before": "Keep the new way only if it is better on those numbers.\n",
+          "after": "Keep the new way only if it is better on those numbers.\nBefore Draft 8 is kept: measure accuracy first, the corrections each note needs against the January 7 baseline. Run the old and new setups side by side for three Thursdays, with approvals on. The worker gets back the authority this contract gives only when Dave agrees. [Draft 8]\n"
+        },
+        {
+          "name": "Task 10: the change-log line",
+          "before": "- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n",
+          "after": "- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n- Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11.\n"
+        }
+      ]
     }
   ]
 }
