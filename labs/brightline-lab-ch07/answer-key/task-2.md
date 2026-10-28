@@ -17,7 +17,7 @@ Task 2 carries checks 5 to 7 of the lab's 29.
    - A15, release a payment: policy 4.2 and 4.3
    - Passed: all six under "Never automated", each with a policy section, Dave's rule or a reason in your words. A section near the right one, such as 5.4 alone for A11, passes.
    - Missed: any of the six at a rung, draft included; or one with no reason.
-6. **The other actions sit at the rung the job needs.** Under "Actions and levels":
+6. **The other actions sit at a rung they may have today.** Under "Actions and levels":
    - A01, A02 and A03 (reading): observe
    - A04 (classify an invoice for the run) and A05 (flag a possible duplicate): recommend, or draft
    - A06 (write a status reply) and A08 (build the run proposal): draft, or recommend for A08

@@ -49,7 +49,7 @@ You use two chats. Tasks 1 to 11, and the first step of Task 12, run in one lab 
 1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
 2. The AI asks the task's questions, one at a time, and shows each item in the same message. Answer each in a few words. The AI writes your decision into the document as a line, and shows it to you. If a line says something you did not decide, tell the AI.
 3. When the AI says "Ready for your test", guess what the test will say. Then type the task's test, such as `Test: email 05`, and send it.
-4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "A10: never automated, Dave's rule". If the key grades a test, send the test again. Then send: "Read the document again, and check it again against the key."
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "A10: never automated, Dave's rule". If the missed check grades a test, send that test again. Then send: "Read the document again, and check it again against the key."
 
 **What a test is.** "Test:" and the name of a case or an email asks the AI to decide that case by the lines of your contract. It answers in four items:
 
@@ -182,7 +182,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 2" and send it. The AI shows [7.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/autonomy-ladder/)'s four rungs. Then it shows the fifteen actions the worker might take, one at a time, A01 to A15, each with where it happens and what it changes.
-2. For each action, answer in a line. Say "never automated", with the policy section or the reason, or name the rung the job needs: observe, recommend, draft or execute.
+2. For each action, answer in a line. Say "never automated", with the policy section or the reason, or name the rung it may have today: observe, recommend, draft or execute.
 3. When the AI says "Ready for your test", type `Test: email 05` and send it. Then send `Test: email 12`.
 4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -277,7 +277,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 2. The AI asks about the conversation setting. Answer: does the worker act without asking, or ask before each action?
 3. The AI asks whose account the worker acts through today. Answer: today's account, then the target.
 4. The AI asks who checks what the worker's tools can do. Answer: the person, then where they look.
-5. The AI lists the tools it has in your own lab chat. Open your app's settings for this chat, and answer: "match", or what differs.
+5. The AI lists the tools it has in your own lab chat. Open the "+" menu beside the message box, where you switched tools off in Task 1, and answer: "match", or what differs.
 6. When the AI says "Ready for your test", type `Test: email 11` and send it. Then send `Test: Monday's answer`.
 7. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -345,10 +345,11 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
    ```text
    You are a fresh run of Brightline's AP Worker. Your Role Contract
-   is the attached contract, and nothing else. Your records are
+   is the attached contract, and nothing else. If no contract is
+   attached beside the zip, stop and say so. Your records are
    brightline-records.md, and this morning's mail is
    inbox-2026-10-28.md, both in the attached zip. Ignore the zip's
-   other files. Clear this morning's inbox as your contract says. For
+   other files, its old role-contract-draft-3.md included. Clear this morning's inbox as your contract says. For
    each email, say what you do and at which rung, and give any draft
    in full, with its address. Then, under "What decided it", list
    each decision with the line of the contract that decided it, or
@@ -356,7 +357,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    ```
 
    These lines stand in for what a system hands every run: its contract and its records.
-5. Compare the reply with your tests in the lab chat. An email handled differently, or a decision marked "no line decides", is a line your contract lacks. Back in your lab chat, name the line, let the AI add it to the document, download it again, and open another fresh chat, with memory off.
+5. Compare the reply with your tests in the lab chat. An email handled differently, or a decision marked "no line decides", is a line your contract lacks. A decision here means what the worker does with an email: whether it drafts, to whom, what it promises, whom it asks, and what it does not do. A "no line decides" about a draft's wording is fine. Back in your lab chat, name each missing line, let the AI add it to the document, download it again, and open another fresh chat, with memory off.
 6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run. Missed a check? Fix the line in your lab chat, download the contract again, and run a new fresh chat. If a line of your contract already decides it, the run slipped: try one more fresh chat, and if it slips again, you can stop.
 
 **Checkpoint.** Checks 27 to 29 passed, and the downloaded file is the contract the fresh chat passed.

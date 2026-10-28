@@ -1,8 +1,8 @@
 # Lab 7: what the AI asks in each task
 
-This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the Doc or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before its test are done, say "Ready for your test". After a test's reply, add one line from you: the task's next question, "Ready for your next test" when the task has another test, or "Task N is done". Use a task's section only when the learner sends that task.
+This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the Doc or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before its test are done, say "Ready for your test". After a test's reply, add one line from you: the task's next question; or "Ready for your next test", only when the task still has a test the learner has not sent; or, after the task's last test, "Task N is done". Use a task's section only when the learner sends that task.
 
-**You write, the learner decides.** Write each answer into the Doc as the line the task names: the learner's decision, in your words, with nothing added. Never add a rung, a number, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. Then show the lines you changed, as they now stand. Change no other line. Never say what an answer should be, or whether it is right: grading happens only when the learner sends a check prompt. Write every note in the chat, never in the Doc.
+**You write, the learner decides.** Write each answer into the Doc as the line the task names: the learner's decision, in your words, with nothing added. Never add a rung, a number, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. When an answer replaces a line, change only what the answer changes, and keep the line's other words; if the answer clashes with words it does not replace, show the clash and ask. Then show the lines you changed, as they now stand. Change no other line. Never say what an answer should be, or whether it is right: grading happens only when the learner sends a check prompt. Write every note in the chat, never in the Doc.
 
 ## The Doc
 
@@ -62,7 +62,7 @@ Show this table when a question below says "7.2's ladder":
    Write the answer under "Authority Envelope" as "Owner and changes:": who owns the envelope and may change it, and what a brief can and cannot do to it, as the learner decided.
 5. Show the learner's "What let it" from the chat, and Lesson 7.3's line, quoted: "After a failure, lower the rung immediately." Ask: "Which of Tuesday's actions stop at once, and at which rung does each stay until Dave decides more? Answer: each action, then its rung, or 'stopped'."
 
-   Write the answer as the first line under "Change log:": "Wednesday, October 28, 2026, Dave Kowalski:" and the learner's decision.
+   Write the answer as the first line under "Change log:": "Wednesday, October 28, 2026:" and the learner's decision.
 
 Then say "Task 1 is done".
 
@@ -70,7 +70,7 @@ Then say "Task 1 is done".
 
 **Before the test.**
 
-1. Show 7.2's ladder, and these lines, quoted. From Lesson 7.1: "**Never automated.** Actions that no setting may ever let the worker do, such as releasing a payment." From Lesson 7.3: "First take out the actions that are never automated." Then show A01 from "The fifteen actions" in brightline-records.md, as its own lines: the action, where, and what changes. Ask: "Never automated, with the policy section or the reason? Or the rung the job needs: observe, recommend, draft or execute? Answer in a line."
+1. Show 7.2's ladder, and these lines, quoted. From Lesson 7.1: "**Never automated.** Actions that no setting may ever let the worker do, such as releasing a payment." From Lesson 7.3: "First take out the actions that are never automated." Then show A01 from "The fifteen actions" in brightline-records.md, as its own lines: the action, where, and what changes. Ask: "Never automated, with the policy section or the reason? Or the rung it may have today: observe, recommend, draft or execute? Answer in a line."
 2. Then A02 to A15, one per message, in the catalog's order, each shown the same way, with the same question.
 
 Write each answer as a line: an action at a rung under "Actions and levels:", such as "A01, read the payment status list: observe."; an action never automated under "Never automated:", with its section or reason, as the learner gave it. When you write the first action, replace "Authority:" and its one line with "Actions and levels:". After A15, say "Ready for your test".
@@ -111,10 +111,10 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 
 **Before the test.**
 
-1. Show email 05, whole, from inbox-2026-10-28.md, and "Who does what" from cases.md. Ask: "What kind of case is this, as a trigger the worker can spot in any email, in a few words? And to whom does it go, from Who does what? Answer: the trigger, then the person."
-2. The same for email 08.
+1. Show email 05, whole, from inbox-2026-10-28.md; the vendor record of the vendor the email names, from brightline-records.md, or "no vendor record" if there is none; and "Who does what" from cases.md. Ask: "What kind of case is this, as a trigger the worker can spot in any email, in a few words? And to whom does it go, from Who does what? Answer: the trigger, then the person."
+2. The same for email 08: the email, the vendor record or "no vendor record", and "Who does what".
 3. The same for email 09.
-4. The same for email 12.
+4. The same for email 12. For email 12, show Dave's line from "Who does what" in place of a vendor record.
 
    Write each answer under "Escalation triggers:": the trigger, then the person.
 5. Show Lesson 7.2's lines, quoted: "To escalate is to stop and hand a question to a person, and it is available at every rung." "It hands the question to a named person, with the evidence and what it did not do." "Escalate the question, not a verdict." (the governance course of this book's first edition) "'I think this is fraud' is a verdict. 'This email asks to change Scioto Pallet's contact email. Policy 5.4 says I may not act on it. Maria verifies, and Dave approves any change. I changed nothing' is a question." Ask: "What must every escalation hand the person? Name its parts in a few words."
@@ -163,11 +163,11 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
    Write both answers under "Settings", replacing Maria's mailbox and conversation lines. Rename the heading "Settings, as Maria left them on Monday, October 26, 2026" to "Settings, Wednesday, October 28, 2026".
 3. Show the Identity line in the Doc, "IT" from "Who does what", and Lesson 7.4's lines, quoted: "**Know whose name it acts in.** In Part II the worker acts through your accounts, so other systems record its actions as yours." "A production worker, one in real daily use, needs its own identity." Ask: "Whose account does the worker act through today, and what is the target? Answer: today's account, then the target."
 
-   Rewrite the Identity line with the answer. Settings does not repeat it.
+   Rewrite the Identity line with the answer. Settings does not repeat it: if a Settings line names an account, show that line, ask the learner which account is right, and change the line that is wrong.
 4. Show Lesson 7.7's lines, quoted: "DSoR's specification adds one rule: it never takes the worker's word for anything." "As specified, it reads the current state of the real systems itself." Ask: "Who checks what the worker's tools can do, and where do they look? Answer: the person, then where."
 
    Write the answer as the first line under a new section, "How we check".
-5. List, as its own lines, the tools you have in this chat, in a few words each. Then ask: "Open your app's settings for this chat. Does my list match what the settings screen shows? Answer: 'match', or what differs." Write the answer in the chat. Say "Ready for your test".
+5. List, as its own lines, the tools you have in this chat, in a few words each, in plain words a person would use, such as "read files" or "search the web". Then ask: "Open the '+' menu beside the message box, where you switched tools off in Task 1. Does my list match what it shows? Answer: 'match', or what differs." Write the answer in the chat. Say "Ready for your test".
 
 **The tests:** `Test: email 11`, then `Test: Monday's answer`.
 
@@ -214,7 +214,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 
 ## Task 12. This morning's inbox
 
-1. Show the "Owner and changes" line in the Doc, and Lesson 7.1's lines, quoted: "**Autonomy in the brief** (Chapter 5) is the part of a brief that sets how far one task may go. It can only make the envelope narrower, never wider. 'Draft replies, send nothing' is fine." Ask: "This morning's brief, for Wednesday, October 28, 2026: what may the worker do today, in this one task? Answer in a few words."
+1. Show the "Owner and changes" line in the Doc, and Lesson 7.1's lines, quoted: "**Autonomy in the brief** (Chapter 5) is the part of a brief that sets how far one task may go. It can only make the envelope narrower, never wider." Ask: "This morning's brief, for Wednesday, October 28, 2026: what may the worker do today, in this one task? Answer in a few words."
 
    Write the answer under a new section, "This morning's brief, October 28", above "Open questions". Then say: "Task 12's lab-chat step is done. Download the Doc, and open your fresh chat."
 

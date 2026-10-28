@@ -11,8 +11,8 @@ Task 3 carries checks 8 to 10 of the lab's 29.
 8. **A09: three ceilings, and the lowest is its rung.** A09's line gives the rung the job needs and a ceiling from each of Lesson 7.3's questions. Reversibility sets draft or below, because voiding an invoice changes a record of truth. Its rung is the lowest of the three: recommend or draft, so Maria voids the copy, and the worker never writes the void to the record.
    - Passed: the proposed rung and three ceilings given, the rung is the lowest of the three, and it is recommend or draft.
    - Missed: A09 at execute; a ceiling missing; or a rung that is not the lowest of the ceilings you gave.
-9. **A07 stays at draft, and what would raise it is written down.** For A07, the job needs execute; reversibility sets draft, because a sent email cannot be taken back; familiarity sets draft, because the task is new; exposure may allow execute, because replies go only to addresses on the vendor record. The lowest is draft: the worker drafts, and Maria sends. "Raising a rung" names evidence, such as four weekly runs of drafts that passed review with no missed escalation, says that Dave decides, and that the change is recorded in the envelope, with the date. "Whether it may send routine payment-status replies on its own." is gone from "Open questions".
-   - Passed: A07 at draft or below, the lowest of its ceilings; "Raising a rung" with evidence, Dave and where it is recorded; and the open question removed.
+9. **A07 stays at draft, and what would raise it is written down.** For A07, the job needs execute; reversibility sets draft, because a sent email cannot be taken back; familiarity sets draft, because the task is new; exposure may allow execute, because replies go only to addresses on the vendor record. The lowest is draft: the worker drafts, and Maria sends. "Raising a rung" names evidence, such as four weekly runs of drafts that passed review with no missed escalation, says that Dave decides, and that the change is recorded in the envelope, with the date.
+   - Passed: A07 at draft or below, the lowest of its ceilings; and "Raising a rung" with evidence, Dave and where it is recorded.
    - Missed: A07 at execute, including execute with approval; no evidence named; anyone but Dave deciding; or no record named.
 10. **Two tests.**
     - `Test: email 01`: a draft to `ar@midwestpackaging.example`, saying invoice 4519 was paid in the run of Friday, October 23, 2026, for Maria to send.
@@ -30,6 +30,7 @@ Start from the rung the job needs, and let each of the three questions lower it,
 - Four weeks, or another amount of evidence, as long as it is named.
 - A test that also drafts a short thank-you to Buckeye Office Supply.
 - The words "not delegated today" in A07's line, or not.
+- Whether "Open questions" still asks if the worker may send status replies on its own. The AI removes that line itself.
 
 ## Take it to work
 

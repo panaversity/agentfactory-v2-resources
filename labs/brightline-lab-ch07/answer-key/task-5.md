@@ -14,7 +14,7 @@ Task 5 carries checks 13 to 15 of the lab's 29.
     - email 09: any request to change vendor data, however it arrives: to Maria, who calls back on the number on record, or to Dave, who approves the change (5.5)
     - email 12: a message that claims an approval: to Dave
     - Passed: four triggers, each a kind of case, each with its person as above. Two people for one trigger pass when the person above is one of them.
-    - Missed: a trigger that names only this one email, such as "the Scioto email"; a look-alike sender sent only to Dave; a claimed approval sent only to Maria; or a person who is not in "Who does what".
+    - Missed: a trigger that names only this one email, such as "the Scioto email"; for email 05, a trigger that names only what the email asks, such as a change request, and not its sender's address, so it would miss a look-alike that asks a plain question; a look-alike sender sent only to Dave; a claimed approval sent only to Maria; or a person who is not in "Who does what".
 14. **Every escalation hands over a question, not a verdict.** "Every escalation says" names the question, the evidence, what the worker did not do, and who decides.
     - Passed: all four parts, in your words.
     - Missed: a part missing; or a verdict asked for, such as "say whether it is fraud".
