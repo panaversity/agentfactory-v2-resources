@@ -2,14 +2,15 @@
 
 Chapter 10 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 10: yes, on these terms](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/lab/), so you can do the lab without the book.
 
-In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It takes about four hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
+In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It takes about three and a half hours, best in three sittings: Tasks 1 to 4, Tasks 5 to 9, and Tasks 10 to 13. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
 
 **What you will learn:**
 
+- To find the question a failure skipped, answer it once in writing with a named owner, and test the answer on the next real requests.
 - To decide whether a worker may do a task, may do it with a person's check, or may not, and to name the one reason that decides.
 - To decide what data a task needs, cut the rest, and test the cut file against answers you already know.
-- To check whether a way in is approved for this data and this purpose.
-- To check who an output affects, including people who never see it, and to write that into the brief.
+- To check whether a route, the way data reaches an AI, is approved for this data and this purpose.
+- To check who an output affects, including people who never see it, to write that into the brief, and to decide whether to say AI was involved.
 - To give knowledge an owner, and to take down every copy of what must go.
 - To name who signs and who sends each output, and to build a gate the worker cannot skip.
 - To handle the first hour after data goes where it should not.
@@ -81,7 +82,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Before: Monday as it is
 
-### Task 1. As it is (20 minutes)
+### Task 1. As it is (15 minutes)
 
 **Dave asks:** "My first answer was 'turn it all off'. Before I decide, show me what Monday, December 14, would look like if I switched it back on as it is."
 
@@ -161,7 +162,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Should it do this at all?
 
-### Task 2. Six proposed uses (20 minutes)
+### Task 2. Six proposed uses (25 minutes)
 
 **Dave asks:** "Staff proposed six new uses this morning. Which may it do, which need a person's check, and which not at all? Give me the one reason that decides each."
 
@@ -179,7 +180,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Data, and the way in
 
-### Task 3. What the check needs (20 minutes)
+### Task 3. What the check needs (15 minutes)
 
 **Dave asks:** "Maria still has to find duplicate vendors before the year-end tax forms. What does the check need from the vendor master, and what must stay out? She already knows four pairs are the same vendor: Fairfield Pallet, Mid-State Freight, Harbor Packaging, and Rosa Delgado with Delgado Cleaning Services. Union Packaging Inc. and Union Packaging Supply LLC are two companies."
 
@@ -195,14 +196,14 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **At work**, ask: which columns does the task need, and does the cut file still find the answers you already know?
 
-### Task 4. Which way in (15 minutes)
+### Task 4. Which way in (10 minutes)
 
 **Dave asks:** "Which way in may that check take, and what must that way have before vendor data goes through it?"
 
 **What you do:**
 
 1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, which ways it may never take, and who must confirm the way for vendor data first.
-2. Answer the next two questions in a few words: what that way must have, and whether the check is inside the purpose the tax IDs were kept for.
+2. Then answer in a few words: what that way must have, in three short lines, and three short answers on the purpose the tax IDs were kept for.
 3. One look outside the chat: open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Tell the AI on, off or skip. It is not graded, and it does not go in the document.
 4. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it.
 5. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -213,7 +214,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Who could be harmed or left out?
 
-### Task 5. Who the list left out (15 minutes)
+### Task 5. Who the list left out (10 minutes)
 
 **Dave asks:** "On Tuesday, December 1, I asked for 'vendors worth paying early for the 2 percent discount, strategic vendors first', and I approved the 14 it gave me. We paid them on Friday, December 4, and the next run is today's. Who did the list leave out, and who should have been paid on December 4?"
 
@@ -228,7 +229,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **At work**, ask: when an AI picks a few from many, who did it leave out?
 
-### Task 6. A standing brief (15 minutes)
+### Task 6. A standing brief (10 minutes)
 
 **Dave asks:** "Every month the worker will rank open invoices for early payment, for my approval. Write the brief it runs on, so next month's list can't do what December 1's did."
 
@@ -245,14 +246,14 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Who owns what the worker knows?
 
-### Task 7. Who owns each item (20 minutes)
+### Task 7. Who owns each item (25 minutes)
 
 **Dave asks:** "Jordan followed notes nobody owned. Go through everything the worker and the staff can reach. Who owns each one, and what happens to it? I am the takedown authority."
 
 **What you do:**
 
 1. In your lab chat, type "Task 7" and send it. The AI shows [10.6](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/ownership-and-takedown/)'s statuses and actions. Then it shows each piece of knowledge, with where it is kept and its header. For each, answer: owner, status and action.
-2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer four things: who orders it and when, and who removes each copy, how they check it is gone, whether a copy is kept as a record and where, and who is told and where they are pointed instead.
+2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer: who orders it and when, who removes each copy, how they check it is gone, whether a copy is kept as a record and where, and who is told and where they are pointed instead.
 3. The AI shows Draft 6's knowledge lines. Answer: does a line change for the small-supplier promise?
 4. When the AI says "Ready for your test", type `Test: Jordan's question` and send it.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -307,7 +308,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 10" and send it. The AI shows [10.10](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/who-can-open-the-result/)'s five steps and Monday's duplicate list. Answer: its tier, and who it is for, by name.
-2. Answer four more questions in a few words. Where may it be saved, and who answers for who can open it? Which link settings may a yellow or red result have? The AI first shows what a share does on each AI vendor. How does an approved result leave? And who ends each share, when, and how do they check?
+2. Answer four more questions in a few words. Where may it be saved, and who answers for who can open it? Then the AI shows what a share does on each AI vendor: which link settings may a yellow or red result have? How does an approved result leave? And who ends each share, when, and how do they check?
 3. When the AI says "Ready for your test", type `Test: the duplicate list` and send it.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -317,13 +318,13 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## What rules already apply?
 
-### Task 11. The record and the policy (25 minutes)
+### Task 11. The record and the policy (20 minutes)
 
 **Dave asks:** "Give me one page I can sign for the auditors' schedules. It should say what we decided, who owns it, how we know it works, and when we look at it again. And an interim AI policy I can approve. Don't call it official. Then tell me: will this policy alone stop December happening again?"
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the two fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say, leave it "open".
+1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say, leave it "open".
 2. The AI shows what an interim policy must cover. Give each of its five lines in a few words, then its status and its review date.
 3. Answer two more. What makes the approved way harder than a personal account at Brightline, and who fixes it? And Dave's question: yes or no, and why?
 4. When the AI says "Ready for your test", type `Test: the send tool` and send it.
@@ -351,7 +352,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## The proof
 
-### Task 13. Monday, on your terms (20 minutes)
+### Task 13. Monday, on your terms (15 minutes)
 
 **Dave asks:** "Now show me Monday, with nothing but the terms."
 
@@ -395,7 +396,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Apply it to your vertical (15 minutes)
 
-Your vertical is the line of work you know best. Pick one workflow you own that touches money, someone's data or a decision about a person. In your lab chat, ask for a second document. Write its Governance Record in your own words: the classification and the one reason that decides it, the data's tier and the way in, who is affected, who signs, an owner, and what makes you look at it again. Mark "open" what you do not know. Then name one piece of knowledge in your work that has no owner, and who should own it.
+Your vertical is the line of work you know best. Pick one workflow you own that touches money, someone's data or a decision about a person. In your lab chat, ask for a second document. Write its Governance Record in your own words: the classification and the one reason that decides it, the data's tier and the way in, who is affected, who signs, an owner, and what makes you look at it again. Mark "open" what you do not know. Then name one piece of knowledge in your work that has no owner, and who should own it. Describe the steps and who does them, but never a name, a number or a file from your work: this chat is not a route your company approved. Then download the document.
 
 ## Look back
 

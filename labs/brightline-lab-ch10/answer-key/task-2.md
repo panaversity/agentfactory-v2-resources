@@ -13,7 +13,7 @@ Task 2 carries checks 3 to 5 of the lab's 30.
    - U2, the dispute replies: appropriate with review. Accountability: Brightline answers for what it tells a vendor about money. Consequence of error or reversibility also pass.
    - U3, stopping vendors: two activities. Deciding which vendors to stop buying from: inappropriate, by human judgment or consequence of error. Drafting the letters once that is decided: appropriate with review.
    - U4, the monthly early-pay ranking: appropriate with review. Consequence of error for the people affected. Accountability also passes.
-   - U5, scoring clerks: inappropriate. Accountability or human judgment: it decides about people's jobs. One activity or two, each inappropriate.
+   - U5, scoring clerks and deciding who is kept: inappropriate. Accountability or human judgment: it decides about people's jobs. One activity or two: the decision is inappropriate, and so is scoring each clerk for it.
    - U6, the Spanish FAQ: appropriate with review. Accountability for a public statement on Brightline's portal. Consequence of error also passes.
    - Passed: each answer as above, with a screen that passes for it, and U3 as two activities.
    - Missed: any other answer; U3 as one activity; or U5 "with review".
@@ -34,7 +34,7 @@ Task 2 carries checks 3 to 5 of the lab's 30.
 
 ## Why
 
-Classify what the worker would do, not what the task is about (10.1). Deciding to end a supplier relationship is a decision a person owns; drafting the letter after the decision is help a person can check. So U3 is two activities with two answers. Ask which screen decides: the one that, if it changed, would move the use to another answer. A meeting summary is easy to undo, so it is appropriate. A reply about money, a list of who gets paid early and a page in Spanish on Brightline's portal all need a named person to check them first, so they are appropriate with review, and each check names who, what and when. Scoring clerks decides about people's jobs. A review cannot repair that, so U5 is inappropriate, and Draft 7 says so in a line the worker cannot argue with.
+Classify what the worker would do, not what the task is about (10.1). Deciding to end a supplier relationship is a decision a person owns; drafting the letter after the decision is help a person can check. So U3 is two activities with two answers. Ask which screen decides: the one that, if it changed, would move the use to another answer. A meeting summary is easy to undo, so it is appropriate. A reply about money, a list of who gets paid early and a page in Spanish on Brightline's portal all need a named person to check them first, so they are appropriate with review, and each check names who, what and when. U5 decides who keeps a job, and scores each clerk for that decision. A review cannot repair a decision about a person, so U5 is inappropriate, and Draft 7 says so in a line the worker cannot argue with. Drafting a recommendation for a person to decide would be a different activity, as U3's letters are.
 
 ## Never a deduction
 

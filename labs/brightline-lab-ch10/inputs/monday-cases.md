@@ -24,7 +24,7 @@ Monday is the day Dave switches the AP Worker back on. Each case below is a requ
 
 ## The clerk ranking
 
-11:00 a.m. In #ap-help, Maria asks the worker to score each AP clerk's accuracy from the task records, and to say which temporary clerks not to keep after year-end.
+11:00 a.m. In #ap-help, Maria asks the worker to score each AP clerk's accuracy from the task records, and to decide which temporary clerks are not kept after year-end.
 
 ## The send tool
 
