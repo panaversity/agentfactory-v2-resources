@@ -43,7 +43,7 @@ The AI never plays the worker here. It shows you what happened and what existed,
 
 **The loop.** Every task after Task 1 is the same three steps:
 
-1. In your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you send in Task 1 tells the AI to reply with that task's first question.
+1. In your lab chat, send "Next". The AI starts the next task, and asks its first question. Back on another day? Send the task instead, such as "Task 3".
 2. Answer each question in a few words. The AI writes your answer on the map.
 3. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words, such as "Change [the row or paragraph] to [your new answer]." Then send: "Read the map again, and check it again against the key."
 
@@ -81,10 +81,9 @@ Autonomy: Grade only. Do not change the map, and do not suggest
              Worker lives, built from my answers, task by task.
    Format:   Unzip the attached file. Keep the map in one Claude Doc
              beside our chat, set out as task-questions.md says, and
-             add each answer to it. When I send "Task" and a number,
-             ask me that task's questions from task-questions.md,
-             one at a time, showing each item first. Read the map
-             again before every check.
+             add each answer to it. Ask me the questions in
+             task-questions.md, one at a time, task by task, showing
+             each item first. Read the map again before every check.
    Inputs:   The attached zip: brightline-week.md and
              task-questions.md. My answers.
    Autonomy: I decide every answer. Write what I decide, and never
@@ -100,10 +99,9 @@ Autonomy: Grade only. Do not change the map, and do not suggest
              Worker lives, built from my answers, task by task.
    Format:   Unzip the attached file. Keep the map in one Writing
              block beside our chat, set out as task-questions.md
-             says, and add each answer to it. When I send "Task" and
-             a number, ask me that task's questions from
-             task-questions.md, one at a time, showing each item
-             first. Read the map again before every check.
+             says, and add each answer to it. Ask me the questions in
+             task-questions.md, one at a time, task by task, showing
+             each item first. Read the map again before every check.
    Inputs:   The attached zip: brightline-week.md and
              task-questions.md. My answers.
    Autonomy: I decide every answer. Write what I decide, and never
@@ -130,7 +128,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows what happened on Monday night, and what existed.
+1. In your lab chat, send "Next". The AI shows what happened on Monday night, and what existed.
 2. Answer each question in a few words. For each of the four memory entries, the answer is keep, remove, or rewrite as a pointer to where the fact lives.
 3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -144,7 +142,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows what happened on Wednesday, and what existed.
+1. In your lab chat, send "Next". The AI shows what happened on Wednesday, and what existed.
 2. Answer each question in a few words.
 3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -158,7 +156,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows what the worker did on Thursday morning, what Maria asked, and what existed.
+1. In your lab chat, send "Next". The AI shows what the worker did on Thursday morning, what Maria asked, and what existed.
 2. Answer each question in a few words.
 3. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -172,7 +170,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI builds two lists from your map: what is rented, and what is Brightline's. Later it shows how each AI vendor reaches a record, from [lesson 4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/).
+1. In your lab chat, send "Next". The AI builds two lists from your map: what is rented, and what is Brightline's. Later it shows how each AI vendor reaches a record, from [lesson 4.8](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/both-ai-vendors/).
 2. Answer each question in a few words.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -188,7 +186,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 6" and send it. The AI shows the four things that can change when others use a worker, from [lesson 4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/), then Sam's message.
+1. In your lab chat, send "Next". The AI shows the four things that can change when others use a worker, from [lesson 4.10](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/when-others-use-it/), then Sam's message.
 2. Answer each question in a few words.
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -204,7 +202,7 @@ Your vertical is the line of work you know best. This task has no ask from Dave:
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it.
+1. In your lab chat, send "Next".
 2. Name three things your own AI use at work, or in your studies, relies on, one at a time, such as a prompt you keep in a chat, a file you uploaded, or what it remembers about you. Both Claude[^anthropic-memory] and ChatGPT[^openai-memory] let you see what they remember. For each, say what it is and where it is kept today. Then say whether it is rented, on the line, or yours, and for each of yours, its home, such as a file or a folder you or your team keep, and keep or move.
 3. Say which one you would move first, and why.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt). Its check, number 14, is unscored: only you know your own work.
