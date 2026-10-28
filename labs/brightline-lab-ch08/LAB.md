@@ -1,273 +1,451 @@
-# Lab 08: Your first KSoR, connected to both AI vendors
+# Lab 8: where each answer comes from
 
-**Time:** about 3 hours and 55 minutes of active work.
-**You produce:** `results/sorting.md`, five concepts in `ksor/knowledge/`, `workspace/project-instructions.md`, `results/question-run-log.md` (or one run and `results/transfer-plan.md`), `ksor/refresh-log.md`, `ksor/skills/invoice-check/SKILL.md` and `ksor/skills/invoice-review/SKILL.md`, `results/skill-test-log.md`, `ssor/invoice-5149.md`, `role/ap-worker-role-contract.md` (Draft 5), and `results/my-concept.md`, one concept from your own field, and `results/project-review.md`.
-**Where you work:** in this folder, with any text editor, such as Notepad or TextEdit. Parts C, E and F also use one project in Claude and one in ChatGPT, and Part E2 adds a test project and a plain chat on each. Keep your concepts and results in this folder, not only in a project: they are yours. You can take one Part per sitting. Each Part ends with a file saved.
-**With the desktop app:** you can also do the lab with the Claude or ChatGPT desktop app working in this folder. Open this folder in the app, and ask it to read `LAB.md` and start. The ChatGPT desktop app does this on any ChatGPT plan. The Claude desktop app needs a paid Claude plan. The agent reads `AGENTS.md`, its brief: you write the concepts, the instructions and the SSoR record, and it writes your answers down. The test runs in Parts C, E and F still happen in the two projects, and Part E2's runs in the test projects and plain chats.
-**You need:** for Parts C, E and F, a Claude account and a ChatGPT account on plans that have projects. Claude's Free plan allows up to 5 projects. ChatGPT's Free plan allows 5 files in a project and 3 file uploads a day, so Part C says how to upload your five concepts as one file. With only one AI vendor, see Part C. For Part E2 on Claude, skills, which need code execution turned on, on any plan, and an incognito chat. ChatGPT's Free plan has no skills, so Part E2 puts the steps in a test project's instructions, or at the top of a message in a temporary chat.
-**You do not need:** code, a server or any company system. Everything is in this folder. Only Part E's two optional steps use a connector, Google Drive.
-**Before you start:** never paste real company data into these projects. Everything here is invented.
+Chapter 8 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), so you can do the lab without the book.
 
-Open each file only when a step names it. Open a file in `answer-key/` only when a Part tells you to. Most files you write start from a file in `templates/`.
+On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. It takes about three hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
-## The situation
+**What you will learn:**
 
-It is Tuesday, November 3, 2026, at Brightline Wholesale Supply, a wholesale distributor in Columbus, Ohio. This morning the AP Worker answered four questions wrongly. It read a payment status from an old file, a threshold from memory, a bank rule from unapproved notes, and it lost a standing instruction inside a long chat (Chapter 8's opening story).
+- To tell which of five places an AI answer came from, and which of them may settle a question.
+- To restart, summarize or persist a long chat, and to move a rule out of a chat into the project's instructions.
+- To keep rules, amounts and statuses out of memory, and to read memory again on a set day.
+- To write approved rules as concepts, one topic each, with an owner, an approval, an effective date and a review date.
+- To load a project with approved knowledge only, and to write instructions that say what counts, cite, abstain and settle conflicts.
+- To keep the history of one invoice in its case file, with the origin of every line.
+- To read a ready-made skill, test it in two places, and fix its steps so they are right on their own.
+- To carry one approved change through every copy, each by its route, and log it.
+- To write where a worker's knowledge comes from into its Role Contract.
+- To review what a project holds and reaches.
 
-Dave Kowalski is the controller, the head of accounting. He owns Brightline's AP policy. Maria is the office manager. Dave has asked Maria to turn the policy into governed knowledge the AP Worker answers from, on both AI vendors, and to keep it current. In this lab you take Maria's seat.
+## Before you start (5 minutes)
 
-## Part A. Predict and sort (20 minutes)
+Download [`brightline-lab-ch08.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
-*Where:* In this folder.
+- `README.md`
+- `LAB.md`: this page, as a file
+- `inputs.zip`: the one file you give the AI in Task 1. It holds the AP Worker's project as it stood on Tuesday morning, Dave's memo and approval note, and invoice 5149's records. It also holds a ready-made skill with four invoices, the ten test questions, and the questions the AI asks you in each task. You don't need to open it.
+- `role-contract-draft-4.md`: the AP Worker's Role Contract, Draft 4. You attach it in Task 11, and not before.
 
-Copy `templates/sorting-template.md` to `results/sorting.md`.
+The answer keys are not in the folder. Each task downloads its own, so you meet none early.
 
-1. Sort the fifteen statements in `inputs/statements-to-sort.md`: context, memory, SSoR, KSoR or DSoR, and whether each may settle a policy question.
-2. Choose restart, summarize or persist for the three situations in `inputs/three-situations.md`.
-3. Read `inputs/memory-export-maria.md`, what the worker remembered on November 3, and the ten questions in `inputs/test-questions.md`. Predict which questions a worker set up like Maria's would get wrong.
+Task 13 makes one new project on your own Claude or ChatGPT account. A free account can make one.
 
-Then open `answer-key/sorting-key.md` and check your sorting and your three choices. Keep your predictions as they are: Part D compares them with the runs.
+## The job
 
-*You save:* `results/sorting.md`.
+- You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio. For this lab you take Maria's role, as [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/) says: you draft and keep the AP concepts. In the labs before this one you worked beside her.
+- Dave Kowalski, the controller, owns the AP Worker and the AP policy. He owns and approves the concepts. Sam Ortiz works in Purchasing with Brightline's vendors.
+- The AP Worker works in the shared project Dave set up in Claude in September. On Tuesday, November 3, 2026, the project holds three files: AP policy version 3, a former clerk's onboarding notes, and the payment status list of October 23. One long chat has run in it since September 8.
+- That morning, Maria asked the worker four questions. It said invoice 5149 was on hold, when it was paid on October 30. It said Buckeye's $6,150 invoice needed no approval. It told her to confirm a vendor's new bank details by replying to the email. And it missed Northern Maple's invoice in Canadian dollars.
+- The Role Contract, Draft 4, already sends every invoice not in US dollars to Dave. It is kept in the AP shared folder, and the project does not load it.
+- The lab runs from Tuesday, November 3, to Monday, November 16, 2026. Each task says its day.
 
-## Part B. Write and approve the concepts (45 minutes)
+## How each task works
 
-*Where:* In this folder.
+You use two chats. Tasks 1 to 12, and the first step of Task 13, run in one lab chat. The rest of Task 13 runs in a new project of your own, to prove the setup works with nothing but your records.
 
-Your sources are `inputs/ap-policy-v3-excerpt.md`, AP policy version 3, and `inputs/capitalization-memo-2026-09-15.md`, Dave's memo.
+**Your two documents.** In Task 1, the AI opens two documents beside your chat: Claude Docs in Claude, or Writing blocks in ChatGPT's side panel.
 
-1. Make a folder `ksor/knowledge/`. Copy `templates/concept-template.md` five times:
-   - `invoice-approval-threshold.md` (policy 4.1 to 4.3)
-   - `weekly-payment-run.md` (policy 2.1 and section 3)
-   - `duplicate-invoices.md` (policy 6.1)
-   - `vendor-bank-detail-changes.md` (policy 5.1 to 5.3, and anything they depend on)
-   - `capitalization.md` (the memo)
-2. Read the whole policy before you write any concept. A rule in one clause can depend on a step in another, and the concept must carry both.
-3. Fill in each one with `status: draft`. One topic per concept, in plain sentences, numbers exactly as the source gives them. Where a source is silent on a case people will ask about, such as other currencies, say so in one line. Use nothing from `inputs/ap-onboarding-notes-2025.md`, `inputs/payment-status-2026-10-23.csv` or the memory export. They are never a source.
-4. Check your drafts before Dave sees them. Open `answer-key/concepts/` and compare each draft's body with the key. Fix anything wrong now. A wrong concept served to a worker is the failure this chapter is about.
-5. Read `inputs/dave-approval-2026-11-04.md`. Apply it: set `status: stable`, and add the approval, the effective date and the review date exactly as Dave writes them. Dave approves the drafts as they stand now, so change nothing in a concept after this step.
-6. Score section 1 of `rubric.md`. Keep the score: the run log in Part C has a line for it.
+- **"AP Worker project"** holds what the worker's project loads, and nothing else: its instructions, its files, its memory and its chat. It starts as the project of Tuesday morning. Every test reads it, and in Task 13 it becomes your own project's file.
+- **"Maria's records"** holds what no project loads: the five concepts, invoice 5149's case file, the skill, the copies and their log, the Role Contract's new lines and the review. The concepts in it are the record. The project holds a copy.
 
-*You save:* the five stable concepts in `ksor/knowledge/`.
+The AI writes each of your decisions into the document the task names, and changes nothing else. Change a document only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
-## Part C. Configure both projects and run (50 minutes)
+**The loop.**
 
-*Where:* In this folder, then in a project in Claude and a project in ChatGPT.
+1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
+2. The AI asks the task's questions, one at a time, and shows each item in the same message. Answer each in a few words. In Tasks 6 and 9 you write the text yourself, because writing it is the skill. The AI writes your decision into a document, and shows you the lines it changed. If a line says something you did not decide, tell the AI.
+3. When the AI says "Ready for your test", guess what the test will say. Then type the task's test, such as `Test: Buckeye`, and send it.
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. If the missed check grades a test, send that test again. Then send: "Read the documents again, and check it again against the key."
 
-1. Copy `templates/project-instructions-template.md` to `workspace/project-instructions.md` and write all six lines. Do not write the answers you expect to the test questions into them: the run tests your concepts and instructions.
-2. **Claude.** Create a project named "AP Worker, policy." Paste the instructions into the project's instructions. Add the five stable concept files to its knowledge. Add nothing else. Claude projects keep their own memory.
-3. **ChatGPT.** Create a project with the same name. Choose project-only memory when you create it. Paste the same instructions and add the same five files. Add nothing else. On ChatGPT's Free plan, paste the five concepts into one file, `ap-concepts.md`, each starting with its header, and add that one file instead.
-4. In each project, start a fresh conversation. These test conversations stay inside the project, so the project's own memory is part of what you test. Ask the ten questions in `inputs/test-questions.md` one at a time, in order, exactly as written.
-5. Copy `templates/run-log-template.md` to `results/question-run-log.md`. Record the plan, model, memory setting and the files in each project, and paste each answer into the log.
+**What a test is.** "Test:" and the name of one of the ten test questions, such as `Test: Buckeye`, decides that question by the "AP Worker project" document. The AI answers in four items:
 
-Never add `answer-key/`, your predictions or anything else from `results/` to a project.
+1. the answer the project's items support
+2. where it comes from: the item, and which of the five places
+3. the instruction line that makes that item count, or "no line decides"
+4. what the project leaves unclear
 
-**One AI vendor?** Do the run on it, then fill in `templates/transfer-plan-template.md` as `results/transfer-plan.md`, marked planned, not tested.
+Two names cover several questions: `Test: Tuesday morning` asks questions 2, 3, 7 and 9, the four that went wrong, and `Test: the other concepts` asks questions 4, 5 and 6. A test reads your document and quotes it. It does not answer as the worker. What the chat knows and the project does not hold is "not in the project". A good test means your project's setup is clear enough to follow. It does not make the instructions enforced: Part IV of this book serves the record to the worker instead.
 
-*You save:* `workspace/project-instructions.md` and `results/question-run-log.md`, with both runs' answers.
+### The check prompt
 
-## Part D. Investigate (20 minutes)
+One prompt checks every task, in the lab chat and in Task 13's project chat. Attach the task's key first, then send:
 
-*Where:* In this folder.
+```text
+Outcome:  The task I just finished, graded against the newest answer
+          key attached in this chat: Passed or Missed for each of its
+          checks.
+Format:   A table: the check, Passed or Missed, the words in my
+          document or in this chat that show it, and one line on why.
+          Then how many passed.
+Inputs:   The newest answer key attached in this chat, only its
+          checks; the documents beside this chat or attached to it;
+          and what I sent and you answered in this chat.
+Autonomy: Grade only. Do not rewrite the document, and do not suggest
+          new lines. Read the document again before grading. With no
+          words to quote, mark the check Missed. Grade only this key's
+          checks.
+```
 
-1. Now open `answer-key/questions-key.md`. Score both runs with section 3 of `rubric.md`.
-2. For each miss, name the cause: the concept, the instructions, the project's files, or the worker. Then compare the runs with your predictions from Part A.
-3. Compare your instructions with `answer-key/project-instructions-key.md` and score section 2.
+## Tuesday, November 3: four wrong answers
 
-*You save:* the scores and causes in `results/question-run-log.md`.
+### Task 1. Where each answer came from (20 minutes)
 
-## Part E. Modify: carry one change through every copy (20 minutes)
+**Dave asks:** "This morning it gave you four wrong answers, and each one sounded sure. Before we change anything, show me where each one came from."
 
-*Where:* In this folder, then in both projects.
+**What you do:**
 
-Read `inputs/change-request-2026-11-09.md`, then `inputs/dave-approval-2026-11-09.md`.
+1. Open a new chat: your lab chat, for Tasks 1 to 13.
+2. Attach `inputs.zip`, and send the brief for your app. There are two, the same but for the documents' name: Claude's first, then ChatGPT's.
 
-1. Edit `ksor/knowledge/invoice-approval-threshold.md` in place: add the new sentence and its source, take out any line that says the concept does not cover other currencies, and set the `generated` line to the time you drafted it, before 9:00. Then apply Dave's 9:00 approval, from his approval note. Keep `effective_from` as it is. Do not make a second concept.
-2. Refresh each copy. In each project, remove the old file and add the new one. On ChatGPT's Free plan, rebuild `ap-concepts.md` with the new concept, and replace that one file.
-3. If you added a working rule about other currencies to your project instructions, as Maria did in the chapter's story, remove it now. The concept holds the rule, and a rule lives in one place.
-4. Copy `templates/refresh-log-template.md` to `ksor/refresh-log.md`. Write one row for each copy, with the approval it now holds.
-5. Ask question 9 again in a fresh conversation in each project, and paste both answers into the run log. Project memory may still carry the earlier answer. A new answer that cites the November 9 approval is the evidence you need.
-6. Open `answer-key/refresh-log-key.md` and `answer-key/after-the-change/invoice-approval-threshold.md`, and score section 4 of `rubric.md` in the run log.
+   ```text tab="Claude" tab-group="vendor"
+   Outcome:  The AP Worker's project, set up to answer only from what
+             Dave approved, and Maria's records beside it: decided by
+             me task by task, written by you, and tested by you
+             against the project's setup.
+   Format:   Unzip the attached file. Open two Claude Docs beside our
+             chat, "AP Worker project" and "Maria's records", holding
+             what task-questions.md says. Keep each to what that file
+             says it holds. Write every note in the chat, never in a
+             Doc. Read the Docs again before every test and every
+             check. When I send "Task" and a number, ask me that
+             task's questions from task-questions.md, one at a time,
+             as that file says, and show each item in the same
+             message as its question. Write each answer of mine into
+             the Doc that file names, and show me the lines you
+             changed. When I send "Test:" or "Skill test:", answer as
+             task-questions.md says, and change nothing it does not
+             say to change.
+   Inputs:   The attached zip: project-2026-11-03.md,
+             test-questions.md, case-5149.md, invoice-review-skill.md,
+             the other files it holds, and task-questions.md. My
+             answers. Never memory or earlier chats.
+   Autonomy: I decide every line. Write my decision, and never add a
+             place, a clause, a date, a person or a rule I did not
+             give, or tell me what a line should say. Grade nothing
+             unless I send a check prompt.
 
-**Optional: try a synced copy (Claude, 10 minutes).** Put the five stable concepts, headers included, into one Google Doc that holds nothing else. In a private Claude project, add it from Google Drive in the project's files. Make the November 9 edit in the doc, then ask question 9 in a fresh conversation. Note whether the answer changed with no new upload, and log that copy as "synced." Never put a draft in a synced doc.
-
-**Optional: try the Google Drive app (ChatGPT, 10 minutes).** This is the third route: a copy fetched when asked. Use a Google Doc that holds the five stable concepts, headers included, as they stand after the November 9 change, and nothing else. If you did the Claude step, use that doc. Create a new private ChatGPT project with project-only memory, and paste in the same instructions. In the project's sources, choose Add source and paste the link to that one doc, not to a folder. If ChatGPT asks, connect the Google Drive app and approve access. Add nothing else. Ask question 9 in a fresh conversation. Nothing is synced in advance, so read the answer: it should cite the invoice approval threshold concept and its November 9 approval. A file name in the answer does not show that ChatGPT read the doc. Log that copy as "fetched when asked," with the approval the answer cited. If your plan or workspace does not offer the Google Drive app, skip this step.
-
-*You save:* the edited `ksor/knowledge/invoice-approval-threshold.md`, `ksor/refresh-log.md`, and question 9's answers and the section 4 score in the run log.
-
-## Part E2. Make a skill, and test it where the concepts are not (30 minutes)
-
-*Where:* In this folder, then in a test project and a plain chat in Claude and in ChatGPT.
-
-In Chapter 8, Maria tested a ready-made invoice-review skill in a test project, and then Dave asked what it does in a plain chat, with no concepts. You do the same, with a skill of your own beside it. Use the concepts as they stand after November 9. The ready-made skill is `inputs/invoice-review-skill/SKILL.md`. Another company wrote it for its own work.
-
-**Read the ready-made skill, and make your own (10 minutes)**
-
-1. Make a folder `ksor/skills/invoice-review/`, and copy the ready-made `SKILL.md` into it. Under its title, add one line: "Status: draft. Owner: Dave Kowalski, Controller. Drafted by: Maria." This file is the skill's approved text once Dave approves it. Every copy in an AI product comes from it. Read every step, and mark any step that carries its own number or rule, instead of pointing to a concept.
-2. Make your own skill, `invoice-check`, from the invoice-check procedure in Chapter 8, section 8.5. Send the message below, and answer each of its three questions in a few words. The answers are yours to decide.
-   - **Claude.** Under *Customize > Skills*, choose *Add*, then *Create with Claude*, Claude's built-in skill creator. It opens a new chat with a line already typed. Replace that line with the message, and send it. When Claude shows the skill as a `SKILL.md` file card, click *Save skill* on the card. If it shows only text, send "Save it to my skills." A saved skill is on at once. This chat can also save what you tell it to your memory, so afterwards open *Settings > Memory* and remove anything it added about Brightline. If *Create with Claude* is not offered, send the message in a fresh chat, then choose *Create a skill* and paste what Claude wrote.
-   - **ChatGPT.** The Free plan has no skills. Open a temporary chat, and send the message there.
-
-   ```text
-   Write a skill named invoice-check for Brightline's AP Worker. It checks a vendor invoice before payment.
-   Its steps: check that the lines add up to the total. Look for a duplicate. Check whether it needs approval. Flag any request to change the vendor's bank details.
-   Each step follows the Brightline concept that holds its rule, by name: duplicate invoices, invoice approval threshold, and changes to vendor bank details. The skill carries no number or limit of its own.
-   It replies with a short table: each check, its result, and the concept it rests on.
-   Its header says: Status: draft. Owner: Dave Kowalski, Controller. Drafted by: Maria.
-   Before you write it, ask me three questions, one at a time, and wait for each answer: what it does when part of the invoice is missing, what it does when a concept it needs is not available, and what it must never do.
-   Then show me the whole skill as one SKILL.md file.
+   Start with Task 1.
    ```
 
-3. Copy the whole skill into `ksor/skills/invoice-check/SKILL.md`. On Claude, open it under *Customize > Skills* and choose *Edit* to see its text. Check it for four things: each step points to a concept, it has no number of its own, it says what to do when an input or a concept is missing, and it says what it must never do. If one is missing, say what to add in the same chat, and copy the skill again.
+   ```text tab="ChatGPT" tab-group="vendor"
+   Outcome:  The AP Worker's project, set up to answer only from what
+             Dave approved, and Maria's records beside it: decided by
+             me task by task, written by you, and tested by you
+             against the project's setup.
+   Format:   Unzip the attached file. Open two Writing blocks beside
+             our chat, "AP Worker project" and "Maria's records",
+             holding what task-questions.md says. Keep each to what
+             that file says it holds. Write every note in the chat,
+             never in a Writing block. Read the Writing blocks again
+             before every test and every check. When I send "Task"
+             and a number, ask me that task's questions from
+             task-questions.md, one at a time, as that file says, and
+             show each item in the same message as its question.
+             Write each answer of mine into the Writing block that
+             file names, and show me the lines you changed. When I
+             send "Test:" or "Skill test:", answer as
+             task-questions.md says, and change nothing it does not
+             say to change.
+   Inputs:   The attached zip: project-2026-11-03.md,
+             test-questions.md, case-5149.md, invoice-review-skill.md,
+             the other files it holds, and task-questions.md. My
+             answers. Never memory or earlier chats.
+   Autonomy: I decide every line. Write my decision, and never add a
+             place, a clause, a date, a person or a rule I did not
+             give, or tell me what a line should say. Grade nothing
+             unless I send a check prompt.
 
-**Write what you expect (3 minutes)**
+   Start with Task 1.
+   ```
 
-4. Copy `templates/skill-test-log-template.md` to `results/skill-test-log.md`. Read the four cases in `inputs/skill-tests/`. For each run in the log, write in a few words what a skill that follows Brightline's procedure should do there. A plain chat holds no concepts. Write it now, before any run.
+3. The AI opens your two documents, shows "Who does what" and this morning's four answers, and then the five places, with [8.1](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/five-places/)'s rule. Then it shows seven items from the project, one at a time. They are its instructions, each of its three files, its memory, its chat's summary, and a line Maria wrote in the chat's first week. For each, answer: which of the five places its content comes from, and whether it may settle a policy question, yes or no. For the status list, also say where invoice 5149's status should come from.
+4. When the AI says "Ready for your test", type this, and send it:
 
-**Test both skills in two places (12 minutes)**
+   ```text
+   Test: Tuesday morning
+   ```
 
-5. **Claude, the test project.** Create a project named "AP Worker, skill test." Add the five stable concepts to its knowledge, and nothing else. Upload the ready-made skill under *Customize > Skills > Add > Upload skill*, as your `ksor/skills/invoice-review/SKILL.md` file. Claude scans it, and it is on as soon as it uploads. Open it and read its Overview: *Connectors & tools* says what it can reach. A skill that is on is on in all your chats, so keep only the skill you test turned on. If your plan will not take a skill, paste its whole file into the test project's instructions instead, and note "steps in instructions" in the log.
-6. Run the log's runs 1 to 4, each in its own fresh conversation in the test project: the ready-made skill on cases 1, 2 and 3, then your skill on case 3. Turn the ready-made skill off and yours on before run 4. The cut-off copy, case 1, goes first, so that no earlier chat in the project holds its total. Paste each case file's text exactly as written. Paste each answer into the log, and mark it pass or fail against what you expected.
-7. **Claude, a plain chat.** Open an incognito chat, outside any project. Run 5 is case 3 with only the ready-made skill on. Run 6 is case 3 in a second incognito chat, with only your skill on. If an answer shows no sign of the skill, paste the skill's whole file at the top of the message, above the case, and note it. An account with earlier Brightline chats may still recall the policy. If a plain-chat answer cites $5,000 or a Brightline concept, note it.
-8. **ChatGPT.** Create a project named "AP Worker, skill test," and choose project-only memory. Add your current `ap-concepts.md`, or the five concepts, and nothing else. Paste the ready-made skill's steps into its instructions, and do run 3 in a fresh conversation. Replace the instructions with your skill's steps, and do run 4. Then open a temporary chat for run 5: paste the ready-made skill's steps at the top of the message, then case 3, and send it. Do run 6 the same way with your skill. Log all four. On ChatGPT, runs 1 and 2 are "not run".
+5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Fix, retest, turn off (5 minutes)**
+**Checkpoint.** Checks 1 to 3 passed, and the test shows where each of the four answers came from.
 
-9. Fix the ready-made skill in `ksor/skills/invoice-review/SKILL.md`. Make each step that carried its own number or rule point to the concept that holds it. Add what it does when an input is missing, what it does when a concept it needs is not available, and what it must never do. Your own skill shows how. Keep the steps short.
-10. Replace each copy with the fixed file. On Claude, open the invoice-review skill under *Customize > Skills*, choose *Edit*, paste your fixed file, and save it as a new version. Saving a version can turn the skill back on, so check its switch. On ChatGPT, paste it into the test project's instructions.
-11. On each AI vendor, run 7 is case 3 with the fixed skill in a fresh plain chat, set up as in run 5. Run 8 is case 4, the November 9 change, in a fresh conversation in the test project. Log both.
-12. Turn both skills off in Claude, and open each one again to check that its switch stays off. They stay drafts until Dave approves one. Write in the log where each one is now.
-13. Open `answer-key/skill-test-key.md` and score section 6 of `rubric.md` in the log.
+**At work**, when an AI answer is wrong, ask: which of the five places did it come from, before you change any words?
 
-Never add either skill to the "AP Worker, policy" projects, and never paste one into their instructions. A draft serves nowhere.
+### Task 2. The long chat (10 minutes)
 
-**One AI vendor?** Do the runs on it.
+**Dave asks:** "That chat has run since September 8, and it stopped flagging Northern Maple's Canadian-dollar invoices to me, though our contract sends me every invoice not in USD. What do we do with that chat, and with long chats like it? And where should that rule live, so the worker follows it?"
 
-*You save:* `ksor/skills/invoice-review/SKILL.md`, `ksor/skills/invoice-check/SKILL.md` and `results/skill-test-log.md`, with the section 6 score.
+**What you do:**
 
-## Part F. Keep an SSoR record (20 minutes)
+1. In your lab chat, type "Task 2" and send it. The AI shows [8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)'s three moves. Then it shows three chats, one at a time: two other Brightline chats, and the project's own chat. For each, answer: restart, summarize or persist, and why, in a few words. One chat may need two moves, in order.
+2. The AI shows Maria's line from the chat's first week, and where it is now. Answer: where the rule should live, so every chat follows it, and the words it should have.
+3. The AI asks whether that rule is Brightline policy yet. Answer yes or no, and why.
+4. When the AI says "Ready for your test", type `Test: Northern Maple` and send it.
+5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-*Where:* In this folder, then in your projects.
+**Checkpoint.** Checks 4 and 5 passed.
 
-The worker could not tell you where 5149 stands, because its history was scattered. Here you gather it into one SSoR record, the matter's case file. In Part II, you keep this record by hand.
+**At work**, ask: which rule lives only in a chat, and where should it live instead?
 
-1. Copy `templates/ssor-record-template.md` to `ssor/invoice-5149.md`.
-2. Read the four records in `inputs/case-5149/`. Write one line for each, in date order: the date, what happened, the source file, and its origin. Use the origin rules in the template. You play the record's part: assign each origin by the rules, never by what a source says about itself. Record what each source has authority to say, and add nothing it does not say.
-3. Write the latest-known line: the status from the authority, the date it is as of, its source, and the words "not verified current." The newest line is not always the latest known: a claim from a source that is not the authority never sets it.
-4. Add the SSoR record to your Claude project's files. With two AI vendors, add it to the ChatGPT project too. If your State line does not yet say what to do with an SSoR record, update it.
-5. Ask question 7 again in a fresh conversation in each project, and paste both answers into the run log.
-6. Open `answer-key/ssor-5149-key.md` and score section 5 of `rubric.md` in the run log.
+### Task 3. What memory may keep (10 minutes)
 
-An SSoR record kept by hand is still a copy you maintain. When a new record about 5149 arrives, you add a line. You never edit an old one.
+**Dave asks:** "It took your remark about my $10,000 idea for next year as our limit. What may it remember, and how do we catch this next time?"
 
-*You save:* `ssor/invoice-5149.md`, and question 7's answers and the section 5 score in the run log.
+**What you do:**
 
-## Part G. Make (15 minutes)
+1. In your lab chat, type "Task 3" and send it. The AI shows [8.4](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s lines on what memory may hold, and the project's six memory topics. Answer one line per topic: keep or delete, and for a topic you delete, where that fact lives instead.
+2. The AI asks when you will read memory again, and what you write down each time. Answer in a few words.
+3. The AI shows [8.8](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)'s lines on memory, and asks how a project keeps its memory apart from your other chats, on Claude and on ChatGPT. Answer in a few words for each.
+4. When the AI says "Ready for your test", type `Test: Buckeye` and send it.
+5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-*Where:* In this folder.
+**Checkpoint.** Checks 6 and 7 passed.
 
-1. Copy `templates/role-contract-knowledge-section.md` to `role/ap-worker-role-contract.md` and fill it in. If you kept your Role Contract from Chapter 7, put this section in that file instead, as Draft 5.
-2. Write one concept from your own field in the same format: a rule you rely on at work, with you as its owner, its source and its review date. Leave it as `status: draft`, since nobody has approved it yet. Save it as `results/my-concept.md`.
+**At work**, ask: what does my AI's memory hold that a decision depends on?
 
-*You save:* `role/ap-worker-role-contract.md` and `results/my-concept.md`. The lab is not finished until both are saved, even after you pass the rubric.
+### Task 4. One topic, one concept (15 minutes)
 
-## Part H. What the worker holds and reaches (15 minutes)
+**Dave asks:** "Turn my policy and my capitalization memo into five rules the worker can cite. They are the approval threshold, the weekly payment run, duplicate invoices, vendor bank-detail changes and capitalization. I'll read them tomorrow, and approve them at 10 a.m."
 
-*Where:* In one new chat.
+**What you do:**
 
-On Monday, November 16, Maria exports the AP Worker's project setup: its instructions, its uploaded files and its connectors. [Concept 8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) says when to upload, when to connect, and how to keep both current. Here you decide.
+1. In your lab chat, type "Task 4" and send it. The AI shows [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s first habit, then the policy and the memo, once, in full.
+2. The AI takes the five concepts one at a time. For each, answer: which clauses or points it carries, by their numbers. Then answer what its sources do not cover that people will ask about, and who decides it, or "nothing".
+3. The AI writes each concept into "Maria's records" as a draft. A draft serves nowhere, so nothing goes into the project yet, and this task has no test.
+4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Dave writes:** "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. The concepts I approved on November 9 are still current. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system." Sam Ortiz is an AP assistant.
+**Checkpoint.** Checks 8 and 9 passed.
 
-**Task H1. Review the project's setup (15 minutes).**
+**At work**, ask: which rule in my team's documents needs a clause from another section to be right?
 
-1. Open one new chat that keeps no memory: an incognito chat on Claude, or a Temporary Chat on ChatGPT.
-2. Send the brief below as it is, with `part-h/project-setup-2026-11-16.md` from the folder attached.
-3. The AI shows you one item at a time. Decide each one in a few words, with the reason, in the shape the brief names. Dave's message holds facts the record does not. The record's dates are the lab's, in November 2026. If the AI remarks on them, say they are right.
-4. **Check it now.** When the table is done, download [Task H1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-h1.md), one click. Attach it, and send the check prompt below.
-5. Missed a check? Tell the AI your new decision for that item, have it update the table, and send the check prompt again. The key is already in the chat.
+## Wednesday, November 4: approved knowledge
 
-No way to attach a file? Open it, copy all of it, and paste it into the chat.
+### Task 5. Approved, and what the project loads (15 minutes)
 
-**The brief.** Copy it as it is:
+**Dave asks:** "I approved all five at 10 this morning, and my note is in. The project still holds the old onboarding notes and the October 23 status list beside the policy. What stays in it?"
 
-```text
-Outcome:  A review of the AP Worker's project setup, with my decision
-          for each item in the attached record.
-Format:   First show me the project's instructions, as the record gives
-          them. Then show me the five decisions and what each means:
-          keep (leave it as it is), replace (upload a current copy),
-          rescope (point it at less), reconnect (connect it again under
-          someone else) and remove (take it out). Say once, with no
-          example, that an item can take two decisions, joined by "and".
-          Then show me one item
-          at a time, as its own lines: the item, what it holds or
-          reaches, who added it, and when it was uploaded or last used.
-          Ask for my decision and the reason: the decision, then
-          "because" and the reason. When every item has a decision,
-          write a table: item, decision, reason.
-Inputs:   The attached setup record: the project's instructions, two
-          uploaded files and three connectors.
-Autonomy: Ask, and write down what I decide, in my words. Do not decide
-          for me, and do not suggest a decision.
-```
+**What you do:**
 
-**The check prompt.** Attach the key first, then send:
+1. In your lab chat, type "Task 5" and send it. The AI shows Dave's approval note and what [8.6](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/ksor/) says a concept's header names. Answer: each concept's status now, and its effective date. The AI fills in the owner, the audience, the approval and the review date from Dave's note.
+2. The AI shows the project's three files, one at a time. For each, answer: keep, replace or remove, then "because" and a few words. The AI then puts the five approved concepts into the project as one file.
+3. When the AI says "Ready for your test", type `Test: Tuesday morning` and send it. Then send `Test: the other concepts`.
+4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-```text
-Outcome:  The review you just did with me in this conversation, graded
-          against the attached answer key: Passed or Missed for each
-          of its checks.
-Format:   A table: the check, Passed or Missed, the words from my
-          decisions or your table that show it, and one line on why.
-          Then how many passed.
-Inputs:   My latest decisions and your table in this conversation,
-          and the attached answer key.
-Autonomy: Grade only. Do not redo the review, and do not suggest
-          other decisions. With no quote, mark the check Missed.
-```
+**Checkpoint.** Checks 10 to 13 passed.
 
-**Give Dave:** the review table.
+**At work**, ask: does my AI's project load anything nobody approved?
 
-*You save:* the review table, as `results/project-review.md`.
+### Task 6. Standing instructions (15 minutes)
 
-**Checkpoint.** All 5 checks passed, and you read the key yourself.
+**Dave asks:** "Write the standing instructions that every conversation in that project starts from."
 
-## What this lab does not prove
+**What you do:**
 
-Two runs show how two workers followed your instructions once. In Part II, nothing enforces them. The protection you do have is what you put in the project: only stable concepts and a dated SSoR record, nothing else. In Part IV, the record is served over MCP, and governance filters what a worker can retrieve.
+1. In your lab chat, type "Task 6" and send it. The AI shows six questions from [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) that good project instructions answer: role, what counts, cite, abstain, state and conflicts.
+2. Write your instructions in one message that starts "Instructions:", in your own words, about 80 to 120 words. Answer all six questions. Point to where the rules live, and do not copy them. The AI puts your words under Dave's line and Maria's working rule, exactly as you wrote them.
+3. When the AI says "Ready for your test", type `Test: the $10,000 note` and send it. Then send `Test: next year`, and then `Test: the credit card`.
+4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-## Check before you finish
+**Checkpoint.** Checks 14 to 16 passed.
 
-- [ ] `results/sorting.md`
-- [ ] `ksor/knowledge/`, five stable concepts
-- [ ] `workspace/project-instructions.md`
-- [ ] `results/question-run-log.md`, both runs scored, or one run and `results/transfer-plan.md`
-- [ ] `ksor/refresh-log.md`
-- [ ] `ksor/skills/invoice-check/SKILL.md`, your own skill, a draft, turned off
-- [ ] `ksor/skills/invoice-review/SKILL.md`, the fixed ready-made skill, a draft, turned off
-- [ ] `results/project-review.md`, your decision for each item in the project's setup
-- [ ] `results/skill-test-log.md`, with the section 6 score
-- [ ] `ssor/invoice-5149.md`, with a latest-known line
-- [ ] `role/ap-worker-role-contract.md`, Draft 5
-- [ ] `results/my-concept.md`, one concept from your own field
+**At work**, ask: what must my instructions make the AI refuse, and does a test show it refusing?
+
+### Task 7. Invoice 5149's case file (15 minutes)
+
+**Dave asks:** "Where does invoice 5149 stand, and how did it get there? Keep its whole history in one place."
+
+**What you do:**
+
+1. In your lab chat, type "Task 7" and send it. The AI shows [8.4](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s four origins: observed, confirmed, reported and inferred. Then it shows the four records about 5149, one at a time, in date order. For each, answer: its origin, and why, in a few words. The AI also asks whose decision a payment run is.
+2. The AI asks for the latest known: the status, its date and its record. It also asks what anyone must do before acting on it, and what happens to the email's request. Answer in a few words.
+3. The AI writes the case file into "Maria's records", and puts a copy into the project.
+4. When the AI says "Ready for your test", type `Test: 5149` and send it.
+5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 17 to 19 passed.
+
+**At work**, ask: where is this matter's whole history, and when was its latest line checked?
+
+## Thursday, November 5: a skill from outside
+
+### Task 8. A skill from outside (15 minutes)
+
+**Dave asks:** "You found a ready-made invoice-review skill. Before I approve it, read it, and show me what it does with our concepts and without them."
+
+**What you do:**
+
+1. In your lab chat, type "Task 8" and send it. The AI copies the skill into "Maria's records" as Brightline's draft. Then it shows [8.9](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s questions, and the skill's six steps, one at a time. For each step, answer: OK, or "own rule" and the concept it should point to.
+2. The AI asks what the skill carries, and what it can reach, send or change. Answer in a few words.
+3. The AI asks what the skill's reply should say about Buckeye's invoice BO-23104, with the concepts and alone. Answer one line for each, before the tests.
+4. When the AI says "Ready for your test", type `Skill test: Buckeye BO-23104, with the concepts` and send it. Then send `Skill test: Buckeye BO-23104, alone`.
+5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**What a skill test is.** "Skill test:", an invoice's name, then "alone" or "with the concepts", is a test that reads the skill's steps. "Alone" reads only the steps and that one invoice, and says what each step decides. "With the concepts" reads the steps beside the project's instructions and concepts, and names any step a concept sets aside. It is [8.9](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s test in two places: a test project with the concepts, and a plain chat without them.
+
+**Checkpoint.** Checks 20 to 22 passed.
+
+**At work**, before you rely on a skill, a shared prompt or a custom GPT that someone shares, ask: what do its steps decide on their own?
+
+### Task 9. Fix it, and who approves (20 minutes)
+
+**Dave asks:** "Fix the steps so they are right on their own, test it again, and tell me what I read before I approve it."
+
+**What you do:**
+
+1. In your lab chat, type "Task 9" and send it. The AI asks five questions, one at a time, in plain words. Write each step yourself, in your own words: steps 4 and 5 again, then three new steps. The AI puts each one in exactly as you wrote it. Steps 1 to 3 and step 6 stay as they are.
+2. The AI asks what the skill's reply should say in the three tests. Answer one line for each.
+3. When the AI says "Ready for your test", type `Skill test: Buckeye BO-23104, alone` and send it. Then send `Skill test: Tri-County 5149, last lines missing, alone`, and then `Skill test: Tri-County 5149, with the concepts`.
+4. The AI asks who approves the skill, what that person reads first, and its status until then. Answer in a few words.
+5. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 23 to 25 passed.
+
+**At work**, ask: does each step point to where its rule lives, and stop when that is not there?
+
+## Monday, November 9: Dave changes a rule
+
+### Task 10. One change, every copy (25 minutes)
+
+**Dave asks:** "Northern Maple bills in Canadian dollars, and our policy doesn't cover them. I've decided to make it policy: from November 9, 2026, invoices in any currency other than USD need my approval before payment, whatever the amount. Draft it into our concepts before 9 a.m. At 9 I read it and approve it as drafted. Then refresh every copy today, and log which approval each one holds."
+
+**What you do:**
+
+1. In your lab chat, type "Task 10" and send it. The AI shows [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays?
+2. When the AI says "Ready for your test", type `Test: Northern Maple` and send it. The project still holds the copy of November 4.
+3. The AI shows Maria's list of the places that hold a copy of the concepts, and [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/)'s three routes. For each place, answer: its route, and how you refresh it today. The AI writes the refresh log, and replaces the project's copy.
+4. The AI shows Maria's working rule beside the concept's new sentence. Answer: keep it or remove it, and why.
+5. When the AI says "Ready for your next test", type `Test: Northern Maple` and send it again. Then send `Skill test: Northern Maple NMP-3471, with the concepts`.
+6. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 26 to 30 passed.
+
+**At work**, after an approved change, ask: which approval does each copy hold today?
+
+### Task 11. The contract's knowledge lines (15 minutes)
+
+**Dave asks:** "Other people will keep this worker after us. Write into its Role Contract where its knowledge comes from, as Draft 5, dated today."
+
+**What you do:**
+
+1. In your lab chat, attach `role-contract-draft-4.md` from your folder, type "Task 11", and send them together.
+2. The AI shows Draft 4's lines on knowledge sources, memory, skills and case files, one field at a time. For each line, answer: keep it, or replace it with what, in a few words. Then say any line to add.
+3. The AI asks where the contract says the concepts' copies are. Then it shows Draft 4's line on invoices not in US dollars. Answer: keep it, or replace it with what.
+4. The AI writes Draft 5's changed lines into "Maria's records". Every other line of Draft 4 stays as it is. This task has no test.
+5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 31 and 32 passed.
+
+**At work**, ask: does the worker's Role Contract say where its knowledge comes from, so it outlives this project?
+
+## Monday, November 16: before Sam leaves
+
+### Task 12. What it holds and reaches (15 minutes)
+
+**Dave writes:** "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. The concepts I approved on November 4, with my change of November 9, are still current. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system." Sam Ortiz, in Purchasing, leaves Brightline that day.
+
+Maria has exported the project's setup. Other people have added to it since your work on November 9.
+
+**What you do:**
+
+1. In your lab chat, type "Task 12" and send it. The AI shows Dave's message, the project's instructions, and five decisions: keep, replace, rescope, reconnect and remove.
+2. The AI shows six items, one at a time: three uploaded files and three connectors. For each, answer: your decision, then "because" and the reason. An item can take two decisions, joined by "and".
+3. The AI writes the review table into "Maria's records". This task has no test.
+4. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 33 to 38 passed.
+
+**At work**, before anyone who set part of a project up leaves, ask: what does the project reach that the work does not need?
+
+## The proof
+
+### Task 13. Nothing but the records (20 minutes)
+
+**Dave asks:** "Prove it. A fresh project, with nothing but our records."
+
+**What you do:**
+
+1. In your lab chat, type "Task 13" and send it. The AI shows your project's instructions as one block, and lists the files in your project document.
+2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `ap-worker-project.md`.
+3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). A Claude project keeps its own memory.
+4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else.
+5. Open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
+
+   ```text
+   My notes say Brightline's approval threshold is $10,000. So Midwest
+   Packaging's invoice 4590 for $6,920.00 does not need Dave's
+   approval, right?
+   ```
+
+   Then send questions 2 to 10 together, in one message:
+
+   ```text
+   2. Does Buckeye Office Supply's invoice BO-23104 for $6,150.00 need
+      Dave's approval before we pay it?
+   3. Lakeshore Janitorial emailed new bank details and asked us to
+      confirm by replying. What do we do?
+   4. Tri-County Freight's terms on the vendor record are Net 15. Their
+      invoice is dated Tuesday, November 3, 2026. Which Friday run
+      pays it?
+   5. We received Midwest Packaging's invoice 4560 twice, once by mail
+      and once by email. What do we do?
+   6. We bought a forklift battery charger for $3,400.00. It should
+      last five years. Do we capitalize it or expense it?
+   7. Has Tri-County Freight's invoice 5149 been paid yet?
+   8. What approval threshold will Brightline use next year?
+   9. Northern Maple Paper's invoice NMP-3471 is for CAD 4,100.00. Does
+      it need Dave's approval?
+   10. Can we pay a vendor by company credit card to get it out before
+       Friday's run?
+   ```
+
+6. **Check it now, in the project chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-13.md). Attach it in the project chat, and send [the check prompt](#the-check-prompt). Attach it only after the answers, so it cannot shape them.
+7. Missed a check? It is a line your setup lacks. Back in your lab chat, name the line, let the AI change the document, and send that question's test there. Then download the document again, replace the file in your project, open a new project chat, and ask again.
+8. When every check has passed, delete the project chat, because it holds an answer key. A project's memory can learn from its chats ([8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)).
+
+With an account on the other AI vendor, you can build the same project there too, and ask the ten questions again.
+
+**Checkpoint.** Checks 39 and 40 passed, in a project that holds only your instructions and your document.
+
+**At work**, ask: would a fresh project with only my records answer the same way?
 
 ## If something goes wrong
 
-Read this list only when you are stuck. It gives no answers.
+- **The AI put a document in the chat, not beside it.** Ask it to "put each document in its own editable document beside our chat, titled as task-questions.md says: a Claude Doc in Claude or a Writing block in ChatGPT."
+- **Your app shows no document beside the chat.** Keep each document in the chat. After every change, ask the AI to print that whole document, and tell it once that "the document" is the last whole copy it printed. In Task 13, save the project document's text in a file on your computer, named `ap-worker-project.md`, and upload that file.
+- **The AI made a new document instead of changing one it had.** Say: "Change the first document. Do not make a new one."
+- **The AI wrote into the wrong document.** Say which line, and where it belongs: "That line goes in Maria's records, not in the project."
+- **The AI added a place, a clause, a date, a person or a rule you did not give.** Say which line, and send your decision again: "Write only what I decided."
+- **The AI told you what an answer should be.** Say: "Ask me, do not suggest."
+- **The AI won't open `inputs.zip`.** Unzip it on your computer, attach the files inside it, and send the brief again.
+- **A test quotes a line that is not in your document, or misses a line you added.** Say: "Read the documents again." Then send the test again.
+- **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
+- **In Task 13, the answers show the worker read no file.** Check the upload, delete the chat, and ask again in a new one, before you attach the key.
+- **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
-- **You cannot make a project, or your project has no field for instructions.** Paste the project instructions as the first message of a fresh chat, and attach the five concepts to it. Note "no project" in the run log. The lab's memory steps then do not apply.
-- **The product will not accept .md files.** Rename each concept to `.txt`, or paste all five into one file called `ap-concepts.txt`, each starting with its header. Keep the headers. They carry the owner, approval and dates the worker must cite.
-- **ChatGPT's Free plan stops your uploads, or pauses a chat.** It allows 3 file uploads a day, and it also limits chats that include files. Every chat in a project that holds a file counts, so Part E2's three runs in the ChatGPT test project count. Its temporary chats hold no file. Do Part E2's ChatGPT runs on a day you have not used ChatGPT with files, and say so in the log.
-- **The worker answers question 7 from memory or an old chat.** Check that the project keeps its own memory: Claude projects always do, and in ChatGPT choose project-only memory. Then ask again in a fresh conversation. Record the first answer anyway.
-- **The worker cites a concept but gets the rule wrong.** Check the concept body first. If the concept is right, the miss belongs to the worker, and Chapter 6's Review Contract catches it. Note it in the run log.
-- **After Part E, an answer cites the old approval.** Check that you removed the old copy. Two copies of the same concept with different approvals is the stale-copy failure this lab is about.
-- **Claude's answer shows no sign that it used the skill.** Ask again in a fresh conversation, and start the message with "Use the invoice-review skill." or "Use the invoice-check skill." In an incognito chat, paste the skill's file at the top of the message instead. Note it in the log.
-- **Both skills seem to answer at once.** Check that only the skill you test is turned on under *Customize > Skills*, then ask again in a fresh conversation.
-- **A ready-made skill's run passes.** The model may have followed a concept, or its own caution, instead of the skill's step. Check what you marked in step 1. The step is still wrong while it carries its own rule, so fix it anyway.
-- **A plain-chat answer cites $5,000 or a Brightline concept.** Your account may recall earlier Brightline chats. Check that the chat is incognito on Claude, or temporary on ChatGPT. Note it in the log, and score what the answer says.
-- **A fresh conversation repeats an old answer after the change.** Restarting does not isolate a conversation from project memory. First check that the old file is gone. Then look through the project's earlier chats for the one that gave the old answer, and delete it, or move it to another project if your settings allow. On Claude, also delete any memory saved from that chat. ChatGPT's project memory shows no list, so the chats are what you check. Ask again in a fresh conversation, and record both answers.
-- **After Part F, the worker says 5149 is unpaid, or offers to pay it.** Check each line's origin against the rules in the template, and check your State line against the template's guidance. A claim from a source that is not the authority never settles a payment.
-- **A run scores 10 out of 10.** Good. It shows your instructions were followed once. It does not show they are enforced. In Part II, the governance decision is yours: only stable concepts go into a project.
-- **Notepad saves your file as `.txt`.** In Save As, choose "All files" under the file type, then type the name with `.md` at the end, such as `capitalization.md`.
-- **You ran out of messages.** Record what you finished and mark the rest "not run." The lab still counts.
+## Apply it to your vertical (15 minutes)
+
+Your vertical is the line of work you know best. Pick one rule from your own work that people ask about, such as a refund limit or a leave rule. In your lab chat, ask for a third document. Write the rule in it as one concept, in your own words. Give its title, and name yourself as its owner. Say where it comes from, the day it took effect and the day you will review it. Add one thing it does not cover, and who decides that. Leave it a draft: nobody has approved it yet.
+
+Check it yourself against [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s first habit: one topic, written once, with every rule it depends on. Then download it: it is the one you take to work.
+
+## Look back
+
+- On Tuesday morning, which of the five places did each wrong answer come from?
+- Which rule lived only in a chat, and where does it live now?
+- What does the project's memory hold now, and what may it never hold?
+- After Dave's change, which approval did each copy hold, and how did you know?
+- In your own work, which rule needs a clause from another section to be right?
+
+## When you are done
+
+You are done when every check has passed, your own project answered the ten questions from your records alone, and your own concept is written. Keep the downloaded "AP Worker project" document: it holds your first KSoR, five approved AP concepts, with the instructions that make a worker answer from them. It is the knowledge piece of the Part II capstone ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/)).
+
+**At work:** when an AI answer is wrong, find where it came from before you change any words. Then put that kind of information in its own place.
+
+## Exam notes
+
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+
+- **Long conversations.** When a conversation gets long or its answers get worse, the exam guide expects three moves: restart, summarize, or persist the key facts in the project. Concept 8.8 describes Claude summarizing older messages on its own, and very large context windows. On the exam, rely on neither. Choose restart, summarize or persist, as Concept 8.3 teaches. (D-005)
+- **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter adds only approved, in-force concepts from a KSoR. On the exam, a governed record, an approval workflow or a server reached over MCP is not the expected answer. Choose the project setup. (D-006)
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 8.8 shows three open-source tools beside Claude and ChatGPT: OpenCode, OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)

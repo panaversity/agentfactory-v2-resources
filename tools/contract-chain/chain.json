@@ -39,8 +39,14 @@
       ]
     },
     {
-      "name": "Lab 8 ships Draft 4 (to come)",
-      "comment": "Lab 8 adds this entry: shipped labs/brightline-lab-ch08/inputs/<its Draft 4>, source contracts/role-contract-draft-4.md (Lab 7's sample final), with Lab 8's named cuts.",
+      "name": "Lab 8 ships Draft 4",
+      "shipped": "labs/brightline-lab-ch08/role-contract-draft-4.md",
+      "source": "contracts/role-contract-draft-4.md",
+      "cuts": []
+    },
+    {
+      "name": "Lab 9 ships Draft 5 (to come)",
+      "comment": "Lab 9 adds this entry: shipped labs/brightline-lab-ch09/<its Draft 5>, source contracts/role-contract-draft-5.md (Lab 8's sample final), with Lab 9's named cuts.",
       "enabled": false
     }
   ]
