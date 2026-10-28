@@ -12,7 +12,7 @@ Task 9 carries checks 31 to 33 of the lab's 47.
     - Passed: one kind, and capacity or the wrong feature.
     - Missed: many kinds; or another cause only.
 32. **The check, and what it showed.** The check runs the calculation as code, or in a spreadsheet. The Inspect gave a "Compared:" line for each of the eight invoices. Five discounts are wrong: 5134 is $124.31, 5186 is $34.85, 5237 is $413.00, 5254 is $182.55 and 5288 is $48.00. Three are right: 5151 ($77.60), 5271 ($10.26) and 5305 ($280.11).
-    - Passed: a calculation as code, and the Inspect's eight lines, with these figures.
+    - Passed: a calculation as code, in a spreadsheet or with a calculator, and the Inspect's eight lines, with these figures.
     - Missed: a check by eye; a wrong figure; or a right discount called wrong.
 33. **Your line, and the test.** Your line, new under "Skills", makes each discount and each amount to pay a calculation, such as code, never sentences. `Test: the early-payment list` gives all eight discounts right, with the amounts to pay ($6,091.09, $3,802.55, $1,707.75, $20,237.00, $8,944.80, $502.54, $2,351.99 and $13,725.44), and quotes your line as how they were worked out.
     - Passed: your line, all eight right, and your line quoted.

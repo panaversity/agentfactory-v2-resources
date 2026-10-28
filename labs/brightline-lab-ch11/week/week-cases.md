@@ -26,7 +26,7 @@ Each case is one moment when a job ran, or would run. "Today is" gives the date 
 
 **Arrives:** Jordan Ellis's request, as he typed it: "Reply to these three vendors about their short payments." He attaches the three emails in `wednesday-emails.md`.
 
-**Exists:** The vendor records, in the accounting system (`vendor-terms.md`). `AP Register.csv`, in the Finance folder, which holds the invoices these emails name, their payment dates, and credit memo CM-1187. Jordan's chat has the AP inbox (read and draft). It reaches a vendor record or a register only if his request, or a contract line written for replies like these, names it.
+**Exists:** The accounting system: its vendor records (exported as `vendor-terms.md`), and its invoice register (exported as `AP Register.csv`, in the Finance folder), which holds the invoices these emails name, their payment dates, and credit memo CM-1187. Jordan's chat has the AP inbox (read and draft). It reaches a vendor record or a register only if his request, or a contract line written for replies like these, names it.
 
 **This case asks** what each of the three draft replies says.
 

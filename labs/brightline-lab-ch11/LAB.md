@@ -57,7 +57,7 @@ The AI writes each of your decisions into the document the task names, and chang
 2. the contract lines that decide each part, or "no line decides"
 3. what the contract leaves unclear
 
-A file counts only if a contract line names it. What only the chat knows is "no line decides", even when the answer would be right. A test reads your contract and quotes it. It does not answer as the worker. This is [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s rule, "re-run on the same input": each test runs the case that failed. `Test: the week` runs five cases in a row: Tuesday at 8:05 a.m., Tuesday evening, Wednesday, Thursday at 7 a.m., and Friday at 9:02 a.m.
+A file counts only if a contract line names it. What only the chat knows is "no line decides", even when the answer would be right. A test reads your contract and quotes it. It does not answer as the worker. This is [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s rule, "re-run on the same input": each test runs the case that failed. `Test: the week` runs the week's five cases in a row, from Tuesday morning to Friday morning.
 
 **What an Inspect is.** In five tasks you name a one-minute check, the kind [11.3](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/) describes. `Inspect: my check` runs your check, as you named it, on the lab's files. It reports only what the files show, quoted: names, dates, rows and figures. It names no cause, and does not say whether your guess was right. A check that finds nothing reports what it compared, because that makes the place less likely, though it is not proof.
 
@@ -168,7 +168,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ### Task 2. Stop and hold (15 minutes)
 
-**Dave asks:** "Before anyone fixes anything: what do we stop, what do we hold, and what do we put right? The next payment run is Friday, January 22, 2027."
+**Dave asks:** "Before anyone fixes anything, tell me what we stop, what we hold, and what we put right. The next payment run is Friday, January 22, 2027."
 
 **What you do:**
 
@@ -204,7 +204,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the email check's lines and the duplicate rule they check against, Tuesday's email and invoice 7781's row. Answer: which lever this fix pulls, then your line, in a few words: what makes a resend like 7781-R match its original.
+1. In your lab chat, type "Task 4" and send it. The AI shows [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the email check's lines and the duplicate rule they check against, Tuesday's email and invoice 7781's row. Answer which lever this fix pulls. Then give your line, in a few words, on what makes a resend like 7781-R match its original.
 2. When the AI says "Ready for your test", type `Test: Tuesday, 8:05 a.m.` and send it.
 3. The AI shows [11.2](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s first rule. Answer: what a daily check from outside the email job compares, by message ID or by count, when it runs, and whom it tells.
 4. The AI shows [11.4](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/usage-and-limits/)'s lines and where each AI vendor shows usage. Answer, for the seat Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it.
@@ -234,7 +234,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **At work**, when you ask an AI about terms, prices or policies, ask: does my request say where the answer must come from?
 
-## Thursday, January 14: the note from last year's file
+## Thursday, January 14: the note that said nothing was due
 
 ### Task 6. Ran, or worked? (10 minutes)
 
@@ -282,7 +282,7 @@ It is Monday, January 18.
 
 1. In your lab chat, type "Task 8" and send it. The AI shows Maria's Friday report and Record D. Answer: the cause, or two, and for each the step that shows it.
 2. Answer: which check Maria skipped before she sent all five.
-3. The AI shows [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on access, and the contract's settings. Answer: after the fix, what the connection that replies use reaches: which folder, and read or write.
+3. The AI shows [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on access, and the contract's settings. Answer what the connection that replies use reaches after the fix: which folder, and read or write.
 4. When the AI says "Ready for your test", type `Test: Friday, reconnected` and send it.
 5. Answer with your rule for an attachment the worker cannot retrieve: what the run does, and whom it tells.
 6. When the AI says "Ready for your next test", type `Test: Friday, 9:02 a.m.` and send it.
@@ -296,7 +296,7 @@ It is Monday, January 18.
 
 ### Task 9. The discounts (15 minutes)
 
-**Dave asks:** "Before I approve January's early-payment list: are these discounts right?"
+**Dave asks:** "Before I approve January's early-payment list, are these discounts right?"
 
 **What you do:**
 
@@ -398,7 +398,7 @@ With an account on the other AI vendor, you can run the same message there too, 
 
 ## Apply it to your vertical (10 minutes)
 
-Your vertical is the line of work you know best. In your lab chat, send "Your own job". The AI asks first about the last time an AI got something wrong for you: where it lived, and what one-minute check would have shown it. Then it asks about one job you hand to an AI, even a job done in a chat: what it must say first every time, so you can see what it read; what it does when its input looks wrong; which source it must use for facts; and whose account's allowance it spends, and who checks it. Answer each in a few words. The AI adds your answers to "What went wrong", under "Your own job". Download it again: it is the one you take to work. In a chat, the fix is to the request first.
+Your vertical is the line of work you know best. In your lab chat, send "Your own job". The AI asks first about the last time an AI got something wrong for you: where it lived, and what one-minute check would have shown it. Then it asks about one job you hand to an AI, even a job done in a chat. It asks what the job must say first every time, so you can see what it read. It asks what the job does when its input looks wrong, which source it must use for facts, and whose account's allowance it spends, and who checks it. Answer each in a few words. The AI adds your answers to "What went wrong", under "Your own job". Download it again: it is the one you take to work. In a chat, the fix is to the request first.
 
 ## Look back
 

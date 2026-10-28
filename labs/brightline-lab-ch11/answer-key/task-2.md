@@ -33,6 +33,7 @@ A failure is every output since the fault began (Lesson 11.5). So Tuesday's sile
 
 - The order of your answers, or "hold" for "check" where you also say what you check.
 - Jordan named instead of Maria, or both.
+- A change checked where its effect shows, such as Friday's run or the register for the note, beside or instead of where it was saved.
 - Tuesday's emails described as "nothing changed", with the inbox as where to check.
 - An extra step, such as asking IT to reconnect the drive, or telling Dave about 7781-R.
 - A remark about the lab's dates.
