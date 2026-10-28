@@ -11,7 +11,7 @@ Task 2 carries checks 4 and 5 of the lab's 40.
 4. **A move for each chat.** Under "Long chats":
    - chat A: restart, because the task is done and none of its history is needed
    - chat B: summarize, because the work goes on: a handover note that is read and corrected before the next chat starts from it
-   - the project's own chat: persist the Northern Maple rule first, then restart. A checked summary before the restart passes too, as long as the rule is persisted
+   - the project's own chat: persist the Northern Maple rule. Then restart, or carry on from a checked summary; persist alone passes too, since the rule is what must last
    - Passed: all three as above.
    - Missed: chat A summarized or persisted; chat B restarted, or summarized with no word on reading or correcting the note; or the project's chat restarted or summarized with nothing persisted.
 5. **The rule, persisted where every chat loads it.**

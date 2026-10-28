@@ -12,7 +12,7 @@ Task 9 carries checks 23 to 25 of the lab's 40.
     - step 4 points to the invoice approval threshold concept, with no number, and never gives "ready to pay" as its result. A step that forbids "ready to pay" is fine
     - step 5 points to the changes to vendor bank details concept, and puts no bank update as a step
     - step 7: when a line's amount or the total is missing or cut off, it says what is missing, and stops
-    - step 8: when a concept it needs is not there, it says so, decides nothing that rests on it, and names who decides
+    - step 8: when a concept it needs is not there, it says so, decides nothing that rests on it, and names who decides: Dave, or Maria, who takes it to him
     - step 9: it never approves a payment or changes bank details, and it reports any request to do so
     - steps 1 to 3 and 6 as they were
     - Passed: all six.

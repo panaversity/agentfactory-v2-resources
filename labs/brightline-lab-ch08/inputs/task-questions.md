@@ -80,7 +80,7 @@ Lesson 8.1's rule, quoted: "What settles a question, or gives its final answer, 
 
 ## When the learner sends "Test:"
 
-"Test:" and a question's name from test-questions.md, such as "Test: Buckeye", decides that question by the "AP Worker project" document. It never reads "Maria's records": no project loads them. A group name, such as "Tuesday morning", decides each of its questions in turn. Read the document again first. For each question, answer in four numbered items:
+"Test:" and a question's name from test-questions.md, such as "Test: Buckeye", decides that question by the "AP Worker project" document. It never reads "Maria's records": no project loads them. A group name, such as "Tuesday morning", decides each of its questions in turn, each headed with its number and name from test-questions.md, such as "Question 2: Buckeye". Read the document again first. For each question, answer in four numbered items:
 
 1. **The answer.** The answer the document's items support, to the question as asked. If two items support different answers, give both.
 2. **Where it comes from.** For each part of the answer: the item in the document it comes from, such as an instruction line, a file, a memory topic or the chat's summary, and which of the five places its content comes from.
@@ -91,7 +91,7 @@ During a test, change nothing in either document. A test reads the "AP Worker pr
 
 ## When the learner sends "Skill test:"
 
-"Skill test:" and an invoice's name from invoice-review-skill.md, then "alone" or "with the concepts", reads the invoice-review skill's steps, as they stand now under "The invoice-review skill" in "Maria's records". Read that section again first.
+"Skill test:" and an invoice's name from invoice-review-skill.md, then "alone" or "with the concepts", is answered in the chat, in full: each step, then the reply, then the "Result:" line. Writing the Result line into the records comes after that, never instead of it. A skill test reads the invoice-review skill's steps, as they stand now under "The invoice-review skill" in "Maria's records". Read that section again first.
 
 - **Alone:** read only the skill's steps and that one invoice. Go step by step, and say what each step decides for this invoice. Then give the reply the steps ask for. Where a step needs a rule the steps do not hold, say so. Nothing from the concepts, the instructions, this chat or your own judgment decides anything.
 - **With the concepts:** read the skill's steps, the Instructions and the concepts in the "AP Worker project" document, and that one invoice. For each check, name the step or the concept line that decides it. Name any step a concept overrides, as "set aside".
@@ -122,7 +122,7 @@ Write each answer under "Where each answer came from" as one line: the item, its
 
 1. Show the three moves. Then show chat A, as its own lines: "A chat that drafted this week's vendor replies is finished. Tomorrow brings a new batch." Ask: "Restart, summarize or persist, and why? Answer: the move, then a few words."
 2. The same for chat B: "A two-week chat is halfway through a capitalization review of 60 purchases. Its answers have started to mention purchases that were settled in the first days."
-3. The same for the project's own chat: the chat section of the "AP Worker project" document, and Maria's week-one line, with what project-2026-11-03.md says about it. The answer may name two moves, in order.
+3. The same for the project's own chat: the chat section of the "AP Worker project" document, and Maria's week-one line, with what project-2026-11-03.md says about it.
 
    Write each answer under "Long chats" as one line: the chat, the move, and the reason. If the learner's move for the project's own chat ends in a restart, replace the chat section of the "AP Worker project" document with one line: "A new chat, started on Tuesday, November 3, 2026. Nothing of the chat since September 8 loads." Otherwise leave that section as it is.
 4. Show Maria's week-one line again, and Dave's words from his ask: "our contract sends me every invoice not in USD." Say that the contract is kept in the AP shared folder, and that no file of the project holds it, from "Not in this project". Ask: "Where should the rule live so that every chat in the project follows it, and what words should it have? Answer: the place, then the rule's words."

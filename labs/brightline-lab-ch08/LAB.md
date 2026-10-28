@@ -64,7 +64,7 @@ The AI writes each of your decisions into the document the task names, and chang
 3. the instruction line that makes that item count, or "no line decides"
 4. what the project leaves unclear
 
-Two names cover several questions: `Test: Tuesday morning` asks questions 2, 3, 7 and 9, the four that went wrong, and `Test: the other concepts` asks questions 4, 5 and 6. A test reads your document and quotes it. It does not answer as the worker. What the chat knows and the project does not hold is "not in the project". A good test means your project's setup is clear enough to follow. It does not make the instructions enforced: Part IV of this book serves the record to the worker instead.
+Two names cover several questions: `Test: Tuesday morning` asks questions 2, 3, 7 and 9, the four that went wrong, and `Test: the other concepts` asks questions 4, 5 and 6. A test reads your document and quotes it. It does not answer as the worker. What the chat knows and the project does not hold is "not in the project". A good test means your project's setup is clear enough to follow. It does not make the worker obey it every time: Part IV of this book shows how a company makes sure of that.
 
 ### The check prompt
 
@@ -177,7 +177,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)'s three moves. Then it shows three chats, one at a time: two other Brightline chats, and the project's own chat. For each, answer: restart, summarize or persist, and why, in a few words. One chat may need two moves, in order.
+1. In your lab chat, type "Task 2" and send it. The AI shows [8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)'s three moves. Then it shows three chats, one at a time: two other Brightline chats, and the project's own chat. For each, answer: restart, summarize or persist, and why, in a few words.
 2. The AI shows Maria's line from the chat's first week, and where it is now. Answer: where the rule should live, so every chat follows it, and the words it should have.
 3. The AI asks whether that rule is Brightline policy yet. Answer yes or no, and why.
 4. When the AI says "Ready for your test", type `Test: Northern Maple` and send it.
@@ -310,7 +310,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 10" and send it. The AI shows Dave's change and [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays? The AI adds the two times Dave's ask gives: the draft before 9 and his approval at 9.
+1. In your lab chat, type "Task 10" and send it. The AI shows Dave's change and [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line, if any, goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays? The AI adds the two times Dave's ask gives: the draft before 9 and his approval at 9.
 2. When the AI says "Ready for your test", type `Test: Northern Maple` and send it. The project still holds the copy of November 4.
 3. The AI shows Maria's list of the places that hold a copy of the concepts, and [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/)'s three routes. For each place, answer: its route, how you refresh it today, and which approval it will hold once refreshed. The AI writes the refresh log, and replaces the project's copy.
 4. The AI shows Maria's working rule beside the concept's new sentence. Answer: keep it or remove it, and why.
@@ -367,7 +367,7 @@ Maria has exported the project's setup. Other people have added to it since your
 1. In your lab chat, type "Task 13" and send it. The AI shows your project's instructions as one block, and lists the files in your project document.
 2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `ap-worker-project.md`.
 3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). A Claude project keeps its own memory.
-4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else.
+4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else. The file holds the instructions too, and the project's memory and chat as you left them. That is fine: your instructions say which of it counts.
 5. Open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
 
    ```text
