@@ -58,7 +58,7 @@ Show them under the heading "The source files", one line each, numbered 1 to 7 i
 
 - payment-run-brief-v3.md: Maria's brief, sent to the AP Worker on Monday, October 26, 2026. It is the brief the worker received.
 - open-invoices-2026-10-26.csv: Brightline's open invoices on Monday, October 26, 2026, one row each.
-- vendor-records.csv: Brightline's six vendors, one row each, with their payment terms, phone numbers and the last four digits of their bank accounts.
+- vendor-records.csv: the six vendors these invoices come from, one row each, with their payment terms, phone numbers and the last four digits of their bank accounts.
 - vendor-file-notes.md: the notes in the vendor file: changes to a vendor's record, and calls made to vendors.
 - approvals-log.csv: the approvals recorded in the accounting system.
 - ap-policy-v3-excerpt.md: an excerpt of Brightline's AP policy, version 3: clause 2.1, and sections 3 to 6.

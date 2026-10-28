@@ -12,3 +12,5 @@ Let's keep the AP Worker on the Thursday review, but I want three things.
 3. The Tri-County email this week worries me. If anything about bank details comes up, I want a person on it, every time.
 
 Dave
+
+P.S. From Thursday, December 3, we run the old way and the new way side by side.
