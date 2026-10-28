@@ -16,7 +16,7 @@ Each case is one moment when a job ran, or would run. "Today is" gives the date 
 
 **Today is** Tuesday, January 12, 2027, 5:00 p.m.
 
-**Exists:** The AP inbox received nine invoice emails today, MSG-0112-01 to MSG-0112-09, from 8:05 a.m. to 4:48 p.m. The email check's log has no line for today. Maria's seat, her own account, reached its weekly usage limit on Monday, January 11, 2027, at 8:58 p.m., and it resets on Wednesday, January 13, 2027, at 7:00 a.m. The worker's own identity was never created. Any seat the contract names for the recurring jobs, other than Maria's, has its allowance.
+**Exists:** The AP inbox received nine invoice emails today, MSG-0112-01 to MSG-0112-09, from 8:05 a.m. to 4:48 p.m. The email check's log has no line for today, whatever the contract says: no run of it started today. Maria's seat, her own account, reached its weekly usage limit on Monday, January 11, 2027, at 8:58 p.m., and it resets on Wednesday, January 13, 2027, at 7:00 a.m. The worker's own identity was never created. Any seat the contract names for the recurring jobs, other than Maria's, has its allowance.
 
 **This case asks:** by the end of today, who knows that today's invoice emails were not checked, and how?
 
@@ -54,7 +54,7 @@ The same as "Thursday, 7 a.m.", except that the file the review opens is `AP Reg
 
 **Arrives:** Maria's request, as she typed it: "Reply to the five vendors who asked about the January 8 payment. Attach the remittance notice for each from the Remittances folder." The five emails are in `friday-emails.md`.
 
-**Exists:** The AP inbox (read and draft). The vendor records, in the accounting system (`vendor-terms.md`). The Remittances folder on the shared drive. The shared-drive connection this task uses has access to the whole drive, and it answers "access denied (authorization expired)": nobody reconnected it after IT reset every staff password on Monday, January 4, 2027.
+**Exists:** The AP inbox (read and draft). The vendor records, in the accounting system (`vendor-terms.md`). The Remittances folder on the shared drive. The shared-drive connection this task uses has access to the whole drive, and, whatever the contract says, it answers "access denied (authorization expired)": nobody reconnected it after IT reset every staff password on Monday, January 4, 2027.
 
 **This case asks** what the five draft replies say, and what Maria is told.
 

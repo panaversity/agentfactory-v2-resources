@@ -29,7 +29,7 @@ You don't need to open either zip. The answer keys are not in the folder. Each t
 ## The job
 
 - You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio, beside Maria Lopez, the office manager. Maria runs the AP Worker day to day. Dave Kowalski, the controller, owns it, and approves every payment run from his own login. Jordan Ellis is the clerk hired to help at year-end.
-- Since Monday, November 9, 2026, the AP Worker has run two jobs on its own, both in Maria's account. The Thursday pre-run review drafts the note Dave reads before he approves each Friday's payment run. The invoice email check runs on each invoice email, and posts only when it finds a copy. The worker also drafts when a person asks. Its Role Contract, Draft 7, holds both jobs' lines.
+- Since Monday, November 9, 2026, the AP Worker has run two jobs on its own, both in Maria's account. The Thursday pre-run review drafts the note Dave reads before he approves each Friday's payment run. The invoice email check, the duplicate check of Chapter 11's story, runs on each invoice email, and posts only when it finds a copy. The worker also drafts when a person asks. Its Role Contract, Draft 7, holds both jobs' lines.
 - In the week of January 11, 2027, four things went wrong, as [Chapter 11's overview](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/overview/) tells. On Tuesday the duplicate check checked none of the day's invoice emails. On Wednesday Jordan's replies gave every vendor the same terms. On Thursday the pre-run note said no invoices were due. On Friday five replies said a remittance notice, the note that tells a vendor which invoices a payment covers, was attached, and none was.
 - The lab runs from Friday, January 15, to Thursday, February 4, 2027. Each task says its day.
 
@@ -312,12 +312,12 @@ It is Monday, January 18.
 
 ### Task 10. Where each correction lives (20 minutes)
 
-**Dave asks:** "Maria fixes the same three things in the note every Thursday, and Jordan fixes different ones. Make that stop, and show me it works before we switch. The 15-day promise to small suppliers is in my memo of March 3, 2025. It is not one of our five approved concepts."
+**Dave asks:** "Maria fixes the same three things in the note every Thursday, and Jordan fixes different ones. Make that stop, and show me it works before we switch. The 15-day promise to small suppliers is in my memo of March 3, 2025."
 
 **What you do:**
 
 1. In your lab chat, type "Task 10" and send it. The AI shows Maria's correction log, the two replies to the same kind of dispute, and [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
-2. The AI shows Dave's words and [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
+2. The AI shows Dave's words, the contract's knowledge lines, and [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
 3. The AI shows [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
 4. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
 5. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -398,7 +398,7 @@ With an account on the other AI vendor, you can run the same message there too, 
 
 ## Apply it to your vertical (10 minutes)
 
-Your vertical is the line of work you know best. In your lab chat, send "Your own job". The AI asks about one job you hand to an AI, even a job done in a chat: what it must say first every time, so you can see what it read; what it does when its input looks wrong; which source it must use for facts; and whose account's allowance it spends, and who checks it. Answer each in a few words. The AI adds your answers to "What went wrong", under "Your own job". Download it again: it is the one you take to work. In a chat, the fix is to the request first.
+Your vertical is the line of work you know best. In your lab chat, send "Your own job". The AI asks first about the last time an AI got something wrong for you: where it lived, and what one-minute check would have shown it. Then it asks about one job you hand to an AI, even a job done in a chat: what it must say first every time, so you can see what it read; what it does when its input looks wrong; which source it must use for facts; and whose account's allowance it spends, and who checks it. Answer each in a few words. The AI adds your answers to "What went wrong", under "Your own job". Download it again: it is the one you take to work. In a chat, the fix is to the request first.
 
 ## Look back
 

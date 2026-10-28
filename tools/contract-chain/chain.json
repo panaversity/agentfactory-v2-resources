@@ -100,7 +100,7 @@
         {
           "name": "Task 5: a short-payment reply's sources",
           "before": "This is not forwarding a file (A10).\n",
-          "after": "This is not forwarding a file (A10).\n- A reply about a short payment or a deduction: the vendor's terms from its vendor record, and the invoice and payment lines, with any credit memo, from the register. If the terms are not in the vendor record, it says so and states no terms. [Draft 8]\n"
+          "after": "This is not forwarding a file (A10).\n- A reply that Maria or Jordan asks for, about a short payment or a deduction: the vendor's terms from its vendor record, and the invoice and payment lines, with any credit memo, from the register. If the terms are not in the vendor record, it says so and states no terms. [Draft 8]\n"
         },
         {
           "name": "Task 6: Maria's check before she sends the note on",

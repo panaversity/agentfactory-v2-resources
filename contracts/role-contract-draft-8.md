@@ -162,7 +162,7 @@ Replies and handoffs:
 - A status reply about a payment may carry that payment's remittance notice, for the vendor the notice names. Maria reads the draft and sends it. This is not forwarding a file (A10).
 - If a notice or any other attachment cannot be retrieved, the run drafts no reply that says it is attached. It stops and tells Maria which one it could not reach. [Draft 8]
 - Maria opens each attachment before she sends a reply. [Draft 8]
-- A reply about a short payment or a deduction: the vendor's terms from its vendor record, and the invoice and payment lines, with any credit memo, from the register. If the terms are not in the vendor record, it says so and states no terms. [Draft 8]
+- A reply that Maria or Jordan asks for, about a short payment or a deduction: the vendor's terms from its vendor record, and the invoice and payment lines, with any credit memo, from the register. If the terms are not in the vendor record, it says so and states no terms. [Draft 8]
 Change log:
 - Wednesday, October 28, 2026, Dave Kowalski: Replies: draft only, Maria sends. Forward: stopped. Contact change: stopped.
 - Monday, November 9, 2026, Dave Kowalski: Thresholds: an invoice not in US dollars now needs his approval before payment, from the invoice approval threshold concept.

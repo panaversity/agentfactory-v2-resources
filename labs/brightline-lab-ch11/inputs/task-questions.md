@@ -198,7 +198,7 @@ Its day is Friday, January 15, 2027. Wednesday is Wednesday, January 13, 2027.
 2. Show Chapter 5's four parts. Then show Jordan's request, from Record B, and the contract's lines on replies: the "Replies:" line under "Replies and handoffs", and the "Draft a reply to a vendor" row of "Who may ask". Ask: "Against the four parts, which part of his request is empty? Answer: the part."
 3. Show the header row of `AP Register.csv`, and its rows for 4022, 4041, CM-1187 and 4048, and the vendor records' column names from `vendor-terms.md`. Ask: "Your lines for that part, so his next request comes out right: which source, for which fact, and what the worker does when it is missing? Answer: a few words."
 
-Write answers 1 and 2 under "Wednesday: the wrong terms". In the contract, add the learner's lines as a new line under "Replies and handoffs", starting "A reply about a short payment or a deduction:". Then say "Ready for your test".
+Write answers 1 and 2 under "Wednesday: the wrong terms". In the contract, add the learner's lines as a new line under "Replies and handoffs", starting "A reply that Maria or Jordan asks for, about a short payment or a deduction:". It sits beside the "Replies:" line, which is about emails the worker answers on its own: keep both. Then say "Ready for your test".
 
 **The test:** `Test: Wednesday`. After it, say "Task 5 is done".
 
@@ -309,7 +309,7 @@ Its day is Monday, January 18, 2027.
    For each, ask: "Rule, reference, procedure, boundary, or not yet? Where does it go? And the fix, in a few words? Answer: the home, then where, then the fix."
 
    Write each answer under "Where each correction lives". In the contract, write each one whose home is not "not yet": a rule under a new "Standing instructions:" field, after "Memory"; a reference under "Knowledge sources"; a procedure under "Skills"; a boundary under the Authority Envelope part it names. Write each as the fix, in the learner's words: what the worker does from now on, never the failure.
-2. Show Dave's words from his ask: "The 15-day promise to small suppliers is in my memo of March 3, 2025. It is not one of our five approved concepts." Show the contract's Knowledge sources lines. Then show Lesson 11.5's lines, quoted: "Some causes point to a change you may not make yourself. Then you escalate: you pass the problem to the person who owns that decision, with the record line that shows the cause and what you have already contained. Escalate when the fix would change an approved rule or concept, widen access, change money or a promise that has already gone out, or go beyond the Role Contract." Ask: "The small-supplier promise: may Maria add it to the worker's rules herself, or does it go to its owner, and who is that? Answer: Maria's, or the owner's, then who."
+2. Show Dave's words from his ask: "The 15-day promise to small suppliers is in my memo of March 3, 2025." Show the contract's Knowledge sources lines. Then show Lesson 11.5's lines, quoted: "Some causes point to a change you may not make yourself. Then you escalate: you pass the problem to the person who owns that decision, with the record line that shows the cause and what you have already contained. Escalate when the fix would change an approved rule or concept, widen access, change money or a promise that has already gone out, or go beyond the Role Contract." Ask: "The small-supplier promise: may Maria add it to the worker's rules herself, or does it go to its owner, and who is that? Answer: Maria's, or the owner's, then who."
 
    Write it under "Where each correction lives", and in the contract under "Knowledge sources", after the line on the small-supplier promise.
 3. Show Lesson 11.6's lines, quoted: "Before changing anything, take a **baseline** (Chapter 9). A baseline is one unchanged run, with its time, revision rounds and manual steps." "Choose the metric, the thing you measure, that matches the work." Show the log's row for January 7. Ask: "Against the January 7 baseline, what do you measure first for this note, and why? Answer: what you measure, then why in a few words."
@@ -344,10 +344,11 @@ The proof runs in a new chat, which this file does not run.
 
 When the learner sends "Your own job", add under "Your own job" in "What went wrong", one answer at a time:
 
-1. Ask: "One job you hand to an AI, even a job done in a chat: what is it? Answer: a few words."
-2. Ask: "What must it say first every time, so you can see what it read? Answer: a few words."
-3. Ask: "What does it do when its input looks wrong? Answer: a few words."
-4. Ask: "Which source must it use for facts? Answer: a few words."
-5. Ask: "Whose account's allowance does it spend, and who checks it? Answer: a few words."
+1. Ask: "The last time an AI got something wrong for you: where did it live, and what one-minute check would have shown it? Answer: a few words."
+2. Ask: "One job you hand to an AI, even a job done in a chat: what is it? Answer: a few words."
+3. Ask: "What must it say first every time, so you can see what it read? Answer: a few words."
+4. Ask: "What does it do when its input looks wrong? Answer: a few words."
+5. Ask: "Which source must it use for facts? Answer: a few words."
+6. Ask: "Whose account's allowance does it spend, and who checks it? Answer: a few words."
 
 Write each answer as one line. Grade nothing.
