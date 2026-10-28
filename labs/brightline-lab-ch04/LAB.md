@@ -114,7 +114,7 @@ Autonomy: Grade only. Do not change the map, and do not suggest
    Start with Task 1.
    ```
 
-2. The AI shows four places. Channels and Runtime are rented, Memory is on the line, and the fourth is Ours. Then it shows IT's ten parts, one at a time. Answer each in one word: Channels, Runtime, Memory, or Ours. Sort each by whose it is, not by where it sits today.
+2. The AI shows four places. Channels and Runtime are rented, Memory is on the line, and the fourth is Ours. Then it shows IT's ten parts, one at a time. Answer each in one word: Channels, Runtime, Memory, or Ours. Sort each by the swap test: if Brightline moved to another AI vendor tomorrow, would it be rebuilt there, or carried across?
 3. The AI shows Brightline's homes, such as the KSoR, which holds the approved knowledge. Then it shows each part you called Ours again. Answer each with its home, then keep or move.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 

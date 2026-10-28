@@ -16,14 +16,14 @@ One document beside the chat, titled "Where each part lives: Brightline's AP Wor
 
 **First pass.** Show these four lines first:
 
-- Channels, rented: where people and systems reach the worker.
-- Runtime, rented: the app that does the work, its connectors and its schedule.
+- Channels, rented: where people and systems reach the worker, and the connections to them. Rebuilt on a new AI vendor.
+- Runtime, rented: the app that does the work, its connectors and its schedule. Rebuilt on a new AI vendor.
 - Memory, on the line: the AI vendor keeps it, but what it remembers is about Brightline.
-- Ours: Brightline's own records. The learner places these in the second pass.
+- Ours: Brightline's own definitions, knowledge, case files, controls and approvals. Carried across to a new AI vendor. The learner gives these their homes in the second pass.
 
-Then show each of IT's ten parts, one at a time: its number and name, what it is, and where it is kept today, each on its own line. For part 4, say only that its four entries come in Task 2. Ask: "Is it Channels, Runtime, Memory, or Ours? Sort it by whose it is, not by where it sits today. One word." Write the row: for Channels or Runtime, "Rented" and that layer under Home; for Memory, "On the line" and "Memory"; for Ours, "Ours", with Home and Keep or move left for the second pass.
+Then show each of IT's ten parts, one at a time: its number and name, and what it is, each on its own line. Do not show where it is kept today: the second pass shows that. For part 4, say only that its four entries come in Task 2. Ask: "If Brightline moved to another AI vendor tomorrow, would it be rebuilt there, or carried across? Answer: Channels, Runtime, Memory, or Ours." Write the row: for Channels or Runtime, "Rented" and that layer under Home; for Memory, "On the line" and "Memory"; for Ours, "Ours", with Home and Keep or move left for the second pass. If the learner also gives a home, or keep or move, write it now, and do not ask for it again in the second pass.
 
-**Second pass.** Show Brightline's homes first, one line each:
+**Second pass.** First fill every row's Kept today cell from IT's list. Then show Brightline's homes, one line each:
 
 - Role Contract: the worker's one-page definition.
 - KSoR: the approved knowledge, such as the policy, with its version.
