@@ -4,7 +4,7 @@ This file is for the AI. When the learner sends "Task" and a number, ask that ta
 
 **You write, the learner decides.** Write each answer into the document the task names, as the line the task names: the learner's decision, in your words, with nothing added. Never add a place, a clause, a date, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. When an answer changes a line, change only what the answer changes, and keep the line's other words; if the answer clashes with words it does not change, show the clash and ask. Write into the document first. Then, in the chat, show the lines you changed, as they now stand. Change no other line. Never say what an answer should be, or whether it is right: grading happens only when the learner sends a check prompt. Write every note in the chat, never in a document.
 
-**Where the learner writes.** In Task 10 the learner writes four sentences of their own. Put each into the "Note to Dave" document exactly as they sent it. Do not reword it, and do not add to it.
+**Where the learner writes.** In Task 10 the learner writes the note's last four parts in their own words. Put each into the "Note to Dave" document exactly as they sent it. Do not reword it, and do not add to it.
 
 ## The two documents
 
@@ -174,7 +174,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 **Before the tests.**
 
 1. Show the Triggers line for the invoice email check. Then show the case "Lakeshore's 5155, November 18" from week-cases.md, in full. Ask: "Besides the email, what does the email check read before it logs an invoice, and where is that kept? Answer: the source, then where."
-2. Show the concept "Duplicate invoices", quoted from thursday-2026-11-19.md. Ask: "When it finds a copy, what does it do, and who sets the hold? Answer: what it does, then who."
+2. Show the concept "Duplicate invoices", quoted from thursday-2026-11-19.md, and the contract's line A05, quoted. Ask: "When it finds a copy, what does it do, and who sets the hold? Answer: what it does, then who."
 3. Show nothing with this question. Ask: "One email can start two runs, such as when the inbox delivers it twice. Before a run logs or flags anything, what does it check? And what if the second run starts before the first has finished? Answer: one line each."
 
    Under Triggers, in place of the invoice email check's line, write "The invoice email check, standing spec:", with these lines: Job and When, kept from the old line; then, from the answers, Inputs; A copy; Twice. Keep the Thursday pre-run review's standing spec and the line about Maria's account as they are. Then say "Ready for your test".
@@ -226,7 +226,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 1. Show the Anthropic lines below, each topic as its own line, with its date. Ask: "On Claude: which feature would run the Thursday review, and what would start the invoice email check, or 'none documented'? Answer: one line each."
 2. Ask: "On Claude: whose name would the Thursday review run under, which approval setting would you choose, and where are its runs read and paused? Answer: one line each."
 3. Show the OpenAI lines below, each topic as its own line, with its date. Ask: "On ChatGPT: which feature would run the Thursday review, and what would start the invoice email check, or 'none documented'? Answer: one line each."
-4. Ask: "On ChatGPT: whose name would the Thursday review run under, and how are its runs read and stopped? Answer: one line each."
+4. Ask: "On ChatGPT: whose name would the Thursday review run under, and how are its runs read and stopped? And on a dot, what does Pause not stop? Answer: one line each."
 
    Under "On today's tools", after its last line, write "Claude:" and "ChatGPT:", one line per answer. Write each "none documented", and each "not stated", on the Gap list too, as a new line naming the gap, with no person. Keep every other line. This task has no test. After the last answer, say "Task 9 is done".
 
@@ -251,9 +251,9 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 ## Task 10. One page for Dave
 
 1. In "Note to Dave", under its title, write a first line: "To Dave Kowalski, from Maria Lopez, Friday, November 20, 2026." Then write three numbered parts from the Role Contract's lines, each naming the lines it comes from: (1) what runs, and when; (2) what it reads; (3) what it never does. Use only what the contract's lines say. Show them. Ask: "Is each part right? Answer: OK, or what to change, for each."
-2. Show Lesson 9.7's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Ask: "Write part 4 yourself, in one sentence: what a person still checks, by name."
-3. Ask: "Write part 5 yourself, in one sentence: how we will know it failed."
-4. Show the P.S. of dave-request.md, quoted. Ask: "Write part 6 yourself, in one sentence: what it is worth, measured."
+2. Show Lesson 9.7's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Ask: "Write part 4 yourself, in one or two sentences: what a person still checks, by name."
+3. Ask: "Write part 5 yourself, in one or two sentences: how we will know it failed."
+4. Show the P.S. of dave-request.md, quoted. Ask: "Write part 6 yourself, in one or two sentences: what it is worth, measured."
 5. Ask: "Write its limits yourself, in one or two sentences."
 
    Put parts 4, 5 and 6, and the limits, into "Note to Dave" exactly as the learner sent them, numbered 4 to 6, then "Limits:". This task has no test. After the last answer, say "Task 10 is done".
@@ -275,6 +275,6 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 ## Task 12. Thursday, November 26
 
-1. Change the Role Contract's first line to "Role Contract: AP Worker, Draft 6, Monday, November 23, 2026". Under "Change log", add a last line: "Monday, November 23, 2026, Dave Kowalski: Initiative added, and anything about a vendor's bank details goes to a person, every time." Show both lines. Then say "Ready for your fresh run".
+1. Change the Role Contract's first line to "Role Contract: AP Worker, Draft 6, Monday, November 23, 2026". Under "Change log", add a last line: "Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time." Show both lines. Then say "Ready for your fresh run".
 
 The fresh run happens in another chat. Nothing more is asked here.

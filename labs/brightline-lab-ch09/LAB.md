@@ -2,20 +2,18 @@
 
 Chapter 9 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 9: when nobody is watching](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/lab/), so you can do the lab without the book.
 
-On Monday, November 9, 2026, Brightline's AP Worker got two jobs to run on their own. For eleven days nobody watched, and four things went wrong. Most people fix a job like that by running it by hand again, or by rewording its instructions and hoping. In this lab you design it to work when nobody is there. You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for Dave Kowalski, the controller. You decide which jobs should run without you, and what each run is given. You make every run read its record first, replay two past weeks whose answers you know, and set rules for work nobody asked for. You also say whose name it runs under, who notices when it fails, and who may ask it for what. Then you prove it on Thanksgiving, in a fresh chat with nothing but your contract and that morning's records. You decide every line. The AI writes each decision into the Role Contract, asks the questions, and tests and runs each line. It takes about three and a half hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+On Monday, November 9, 2026, Brightline's AP Worker got two jobs to run on their own. For eleven days nobody watched, and four things went wrong. Most people fix a job like that by running it by hand again, or by rewording its instructions and hoping. In this lab you design it to work when nobody is there.
+
+You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for Dave Kowalski, the controller. You decide which jobs should run without you, and what each run is given. You make every run read its record first, replay two past weeks whose answers you know, and set rules for work nobody asked for. You also say whose name it runs under, who notices when it fails, and who may ask it for what. Then you prove it on Thanksgiving, in a fresh chat with nothing but your contract and that morning's records. You decide every line. The AI writes each decision into the Role Contract, asks the questions, and tests and runs each line. It takes about three and a half hours, and 15 minutes more for your own job at the end. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
 **What you will learn:**
 
-- To decide whether a recurring job should go to an AI Worker at all, with three gates and a one-minute check.
-- To map who does each step of a workflow, keep the steps a person answers for, and measure before you switch.
-- To write a standing spec that names every input a fresh run needs, with its date, and what the run does when one is missing.
-- To make every run read its record first, and leave entries for the next run that a person checks.
-- To test a change on past weeks whose right answers you know, and review the result as its reviewer would.
-- To make an event-triggered job read what it needs, and do no harm when it fires twice.
-- To write rules for work nobody asked for, rung by rung, before the worker takes any.
-- To run team work under a name the team controls, with a check outside the run that notices when it never ran.
-- To tell the people who rely on it who still checks, without saying "by itself".
-- To write down who may ask a shared worker for what, so it follows the written word.
+- To decide whether a recurring job should go to an AI Worker at all, and map who does each step, keeping the steps a person answers for.
+- To write the instructions every run reads, naming each input with its date, and what the run does when one is missing or an event fires twice.
+- To make every run read its record first, and test each change on past weeks whose right answers you know.
+- To write rules for work nobody asked for before the worker takes any, and run team work under a name the team controls, with a check outside the run.
+- To tell the people who rely on it who still checks, without saying "by itself", and write down who may ask a shared worker for what.
+- To prove a job works with a fresh run that has only its contract and its records.
 
 ## Before you start (5 minutes)
 
@@ -50,7 +48,7 @@ The AI writes each of your decisions into the document the task names, and chang
 **The loop.**
 
 1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
-2. The AI asks the task's questions, one at a time, and shows each item in the same message. Answer each in a few words. In Task 10 you write four sentences yourself, because the words are the skill. The AI writes your decision into a document, and shows you the lines it changed. If a line says something you did not decide, tell the AI.
+2. The AI asks the task's questions, one at a time, and shows each item in the same message. Answer each in a few words. In Task 10 you write the note's last four parts yourself, because the words are the skill. The AI writes your decision into a document, and shows you the lines it changed. If a line says something you did not decide, tell the AI.
 3. When the AI says "Ready for your test" or "Ready for your run", guess what it will show. Then send the task's test or run.
 4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. If the missed check grades a test or a run, send it again, with its Thursday file attached if it is a run. Then send: "Read the documents again, and check it again against the key."
 
@@ -87,7 +85,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Friday, November 20: before we fix anything
 
-### Task 1. What our contract decided (20 minutes)
+### Task 1. What our contract decided (25 minutes)
 
 **Dave asks:** "You want five jobs to run without you. Which should? And before we fix anything: four things went wrong while nobody watched. What did our contract say about each one?"
 
@@ -166,7 +164,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **At work**, when a recurring job goes wrong, ask: which line of its instructions decided it, or did none?
 
-### Task 2. Who does each step (20 minutes)
+### Task 2. Who does each step (10 minutes)
 
 **Dave asks:** "I stopped my Thursday check because I thought nobody needed to look. I still approve every run from my own login. Who does each step now, and who answers for it?"
 
@@ -244,7 +242,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Mistake 2: the email job saw one email
 
-### Task 6. One email at a time (15 minutes)
+### Task 6. One email at a time (10 minutes)
 
 **Dave asks:** "On November 18 it logged Lakeshore's 5155 as a new invoice. The first copy came on November 4. Fix the email job."
 
@@ -261,7 +259,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Mistake 3: the Sunday tidy-up
 
-### Task 7. Work nobody asked for (25 minutes)
+### Task 7. Work nobody asked for (20 minutes)
 
 **Dave asks:** "On Sunday night it renamed 212 scanned invoices nobody asked it to touch, and the audit firm's links broke. Write down what it may do on its own before it does anything else. And if anything about bank details comes up, I want a person on it, every time."
 
@@ -279,7 +277,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ## Mistake 4: Dave stopped checking
 
-### Task 8. Whose name, and who notices (20 minutes)
+### Task 8. Whose name, and who notices (15 minutes)
 
 **Dave asks:** "Both jobs ran as you, and the folder's history says you renamed those files. Whose name should they run under? And who notices if a run never happens? Thursday, November 26, is Thanksgiving, a US public holiday that is always on a Thursday, and you are off that day."
 
@@ -313,7 +311,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **At work**, ask: on the tool I use, whose name does a scheduled task carry, and what does Pause stop?
 
-### Task 10. One page for Dave (20 minutes)
+### Task 10. One page for Dave (15 minutes)
 
 **Dave asks:** "Tell me plainly what it does and what it never does, who checks it, and how we'd know if it broke. One page. And what it's worth: from Thursday, December 3, we run the old way and the new way side by side."
 
@@ -357,7 +355,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 ### Task 12. Thursday, November 26 (20 minutes)
 
-**Dave asks:** "Thanksgiving, 7 a.m. Nobody is in. Prove it runs with nothing but our contract and our records."
+**Dave asks:** "I approved Draft 6 on Monday. Now it's Thanksgiving, 7 a.m., and nobody is in. Prove it runs with nothing but our contract and our records."
 
 **What you do:**
 
@@ -412,7 +410,7 @@ Your vertical is the line of work you know best. Pick one job you do again and a
 - whose name it runs under
 - who checks that it ran, and by when
 
-Check it yourself against [9.3](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)'s five facts: does it start fresh, see only what it is given, survive firing twice, run under a name your team controls, and fail out loud? Then download it: it is the one you take to work.
+Check it yourself against [9.3](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)'s five facts: does it start fresh, see only what it is given, survive firing twice, run under a name your team controls, and fail out loud? Then send: "Read my third document as a fresh run would, and list what it leaves to guess." Fix what it lists, and download it: it is the one you take to work.
 
 ## Look back
 

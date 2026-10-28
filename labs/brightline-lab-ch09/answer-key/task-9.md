@@ -20,7 +20,7 @@ Task 9 carries checks 20 and 21 of the lab's 27.
     - The Thursday review: a team task, on Business or Enterprise.
     - The invoice email check: a task in Work that starts from Gmail, which an admin must allow on Enterprise and Edu.
     - Whose name: the team's service account.
-    - Read and stop: a team task's list of previous runs; and, for a dot, Activity View, where Pause does not stop its scheduled runs.
+    - Read and stop: a team task's list of previous runs. And for a dot: Activity View shows its work, and Pause does not stop its scheduled runs.
     - Passed: all four.
     - Missed: the creator's own account as the name; or Pause said to stop a dot's scheduled runs.
 
