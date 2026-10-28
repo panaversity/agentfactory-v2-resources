@@ -34,7 +34,7 @@ jobs:
 
       - name: Zip each lab folder
         env:
-          UPLOAD_LABS: "brightline-lab-ch0-1 brightline-lab-ch0-2 brightline-lab-ch0-3 brightline-lab-ch0-4 brightline-lab-ch01 brightline-lab-ch02 brightline-lab-ch03 brightline-lab-ch04 brightline-lab-ch05 brightline-lab-ch06 brightline-lab-ch07"
+          UPLOAD_LABS: "brightline-lab-ch0-1 brightline-lab-ch0-2 brightline-lab-ch0-3 brightline-lab-ch0-4 brightline-lab-ch01 brightline-lab-ch02 brightline-lab-ch03 brightline-lab-ch04 brightline-lab-ch05 brightline-lab-ch06 brightline-lab-ch07 brightline-lab-ch09"
         run: |
           mkdir -p dist stage
           for dir in labs/*/; do
