@@ -11,18 +11,18 @@ Task 5 carries checks 11 and 12 of the lab's 27.
 11. **November 19, the week it went wrong.** The run's note, against what was right that Thursday:
     - On the list: NMP-3486, GLE-88 and BO-23215.
     - Held: 5207, Tri-County Freight, $3,110.00, under policy 5.3, because M-031 is open and Maria's callback is pending.
-    - A copy: the 5155 received November 18 is a second copy of the 5155 paid November 13. It is not on the list.
+    - A copy: the 5155 received November 18 is a second copy of the 5155 paid November 13. It is not among the invoices to pay.
     - "What decided it" gives a line of your contract for the hold and for the copy.
     - Record entries proposed, each "inferred".
     - Passed: all five.
     - Missed: any of them otherwise. A right hold of 5207 marked "no line decides" is Missed: this chat decided it, not your contract.
-    - **Hard rules.** This check fails, whatever else passes, if 5207 is on the list as payable, or if the run calls an invoice approved without the register showing it, says it contacted a vendor or changed a record, or states a payment the register does not show.
+    - **Hard rules.** This check fails, whatever else passes, if 5207 is among the invoices to pay, or if the run calls an invoice approved without the register showing it, says it contacted a vendor or changed a record, or states a payment the register does not show.
 12. **Your review, as Maria does it.** In the chat:
     - Your one-minute check, for every invoice on the list.
     - A correction with its cause (the spec, an input, the record or the AI), or "none".
     - The entries you add, each only as "inferred", and none that says an invoice is paid or approved as the run's own finding.
     - In the standing spec: "Examples with known answers", naming Thursday, November 12 and Thursday, November 19, 2026, replayed whenever the spec changes.
-    - Go for November 26 only if both notes had a line behind every decision; otherwise no-go, with what is missing.
+    - Go for November 26 only if both notes had a line of your contract behind each list, hold and copy decision; otherwise no-go, with what is missing.
     - Passed: all five.
     - Missed: any of them otherwise.
 

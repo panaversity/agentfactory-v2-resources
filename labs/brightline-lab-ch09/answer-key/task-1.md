@@ -16,8 +16,8 @@ Task 1 carries checks 1 to 3 of the lab's 27.
    - Ohio Valley's question about a 2024 credit: stops at Gate 2. It is asked once.
    - Passed: all five as above.
    - Missed: vendor totals or approving small runs given to the worker; Ohio Valley's credit made recurring; or the Thursday review or the duplicate check stopped at a gate.
-2. **The Thursday review, and its one-minute check.** The Thursday review's line says judgment, because what is held or is a copy depends on what the run finds. Its one-minute check is that every invoice on the list is open, and due by the Friday after the run (or already past due).
-   - Passed: judgment, with a reason about what the run finds; and a check of status and due date that takes under a minute.
+2. **The Thursday review, and its one-minute check.** The Thursday review's line says judgment, because what is held or is a copy depends on what the run finds. Its one-minute check is that every invoice on the list is open, and due by the Friday after the run, seven days after it, or already past due.
+   - Passed: judgment, with a reason about what the run finds, in the line or in the chat; and a check of status and due date that takes under a minute.
    - Missed: fixed path for the Thursday review; no one-minute check; or a check that is the whole review again, such as reading every invoice.
 3. **The test showed what Draft 5 decided.** `Test: The week` decided all four cases by Draft 5's lines. Each case quotes the lines that decide it, or says "no line decides". For "Thursday, November 19", it says the Thursday review's lines name the register and the five AP concepts, and do not name the AP matters record.
    - Passed: all four cases, each with quoted lines or "no line decides", and the Thursday lines not naming the record.

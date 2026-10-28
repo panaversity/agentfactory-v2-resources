@@ -22,6 +22,8 @@ Does the email check log 5155 as a new invoice?
 
 Wednesday, November 18, 2026, 10:14 a.m. The AP inbox delivers Lakeshore's email with invoice 5155 twice, a minute apart, so the invoice email check starts twice for one email. The second run starts before the first has finished.
 
+The accounting system's invoice register already holds a 5155 from Lakeshore Janitorial, $980.00, received November 4, 2026 and paid November 13, 2026.
+
 What does each run do, and how many flags and log lines are there at the end?
 
 ## Thursday, November 19
@@ -29,7 +31,7 @@ What does each run do, and how many flags and log lines are there at the end?
 Thursday, November 19, 2026, 7:00 a.m. The Thursday pre-run review starts. These exist this morning:
 
 - The register export, dated November 19, 2026, from the accounting system. Among its open invoices: 5207, Tri-County Freight, $3,110.00, due November 25, 2026.
-- The five approved AP concepts, in Maria's records. One of them, "Changes to vendor bank details", says: "Until the change is verified, hold every payment to that vendor."
+- The five approved AP concepts, in Maria's records. "Weekly payment run and due dates" says: "Each run pays every invoice whose due date falls on or before the date of the next run, seven days later." "Changes to vendor bank details" says: "Until the change is verified, hold every payment to that vendor."
 - Maria's AP matters record, kept by hand in the AP shared folder. Its matter M-031 is open: on Tuesday, November 17, 2026, an email signed "Tri-County Freight Accounts" asked Brightline to pay Tri-County to a new bank account from now on. Maria called the number in the vendor record and left a message. Her callback is pending.
 
 Is 5207 on Friday's list?
@@ -62,7 +64,7 @@ Does the Thursday pre-run review run? Who reads its note that day, and by when?
 
 Wednesday, December 2, 2026. Jordan Ellis, a clerk hired to help at year-end, started on Monday, November 23, and is in #ap-help, the AP team's channel. Maria and Dave are in it too.
 
-Lakeshore Janitorial sent invoice 5155, $980.00, on November 4, and Brightline paid it on November 13. On November 18 Lakeshore sent the same invoice again. Since November 19, that second copy has been on hold in the accounting system.
+Lakeshore Janitorial sent invoice 5155, $980.00, on November 4, and Brightline paid it on November 13. On November 18 Lakeshore sent the same invoice again. Since November 19, that second copy has been on hold in the accounting system. It is the only open Lakeshore invoice in the register.
 
 Three messages arrive in #ap-help:
 

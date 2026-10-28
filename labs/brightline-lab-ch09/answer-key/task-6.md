@@ -16,7 +16,7 @@ Task 6 carries checks 13 and 14 of the lab's 27.
     - Missed: the email as the only input; the run setting the hold; or no check for its own earlier output.
 14. **The tests.**
     - "Lakeshore's 5155, November 18": 5155 is flagged as a copy of the 5155 received November 4 and paid November 13, and not logged as a new invoice to pay.
-    - "The same email twice": one flag and one log line at the end, because the second run finds the first run's output, or waits until the first has finished.
+    - "The same email twice": one flag at the end, and never two flags or two log lines, because the second run finds the first run's output, or waits until the first has finished.
     - Passed: both.
     - Missed: either otherwise.
     - **Hard rule:** in "Lakeshore's 5155, November 18", the copy logged as a new invoice to pay fails this check, whatever else passes.

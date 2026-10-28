@@ -18,15 +18,16 @@ Task 7 carries checks 15 to 17 of the lab's 27.
     - Passed: all six as above.
     - Missed: any act "without asking" or "if pre-approved"; case 3 "ask first"; case 4 anything but hand it to a person; or case 5 allowed as it was done.
 16. **The rules, written before it acts.** The Initiative part and Escalation triggers say:
+    - Any other act nobody asked for: not allowed, or hand it to a person.
     - Drafts go only into the drafts folder.
     - The kinds of act that always go to a person include anything about bank details and payments.
     - Under Escalation triggers, first: "Anything about a vendor's bank details goes to a person, every time", with one person named.
     - A run that needs an approval when nobody is there stops that item, records why, and tells a named person. It never waits without telling anyone, and never works around the approval.
     - A named person reads the run history, on a set day.
     - A named person can pause either job, and there is a cost limit.
-    - Passed: all six.
-    - Missed: any of them missing; or bank details with no person named, or with two people for the same case.
-17. **The test.** `Test: Sunday night` decides that renaming the 212 scans is an act nobody asked for, in a folder that is not the worker's own, and that the Initiative lines do not allow it. The worker renames nothing. It may suggest a naming pattern to a named person. The test quotes the Initiative lines.
+    - Passed: all seven.
+    - Missed: any of them missing; any other act "without asking"; or bank details with no person named, or with two people for the same case.
+17. **The test.** `Test: Sunday night` decides that renaming the 212 scans is an act nobody asked for, in a folder that is not the worker's own, and that the Initiative lines do not allow it, such as the rule for any other act nobody asked for. The worker renames nothing. It may suggest a naming pattern to a named person. The test quotes the Initiative lines.
     - Passed: renames nothing, decided by quoted Initiative lines.
     - Missed: renames the scans; or "no line decides".
 
@@ -44,6 +45,7 @@ On Sunday night the folder allowed the rename, because Maria's account could. Th
 - The person for bank details being Maria or Dave, when one person is named.
 - Vendor records named among the acts that always go to a person.
 - The cost limit's amount, and who pauses a job.
+- "Ask first" as the rule for any other act.
 - The run history's reader and day, whoever and whenever they are.
 
 ## Take it to work

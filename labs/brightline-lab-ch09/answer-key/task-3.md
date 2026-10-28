@@ -13,16 +13,16 @@ Task 3 carries checks 7 and 8 of the lab's 27.
    - When: every Thursday at 7:00 a.m., with its time zone, such as Eastern time.
    - Inputs: the register export dated that Thursday, the AP matters record as it stood that morning, and the approved version of the five AP concepts. Nothing else: not Maria's chat, last week's note, the worker's memory, Dave's email, the AP inbox or the scans.
    - If an input is missing or not dated that morning: the run stops, writes no note, and tells a named person which file.
-   - The note: its parts, and a named place to save it that is not #ap-help or Dave's inbox.
+   - The note: its parts; held invoices and copies kept apart from the invoices to pay; and a named place to save it that is not #ap-help or Dave's inbox.
    - Each thing the AI listed as left to guess is fixed in the spec, or left with a reason in the chat.
    - Passed: all six.
-   - Missed: any input other than those three; the AP matters record left out; no time zone; a missing input that does not stop the run; the note saved to #ap-help or sent straight to Dave; or a listed item with neither a fix nor a reason.
+   - Missed: any input other than those three; the AP matters record left out; no time zone; a missing input that does not stop the run; a held invoice or a copy among the invoices to pay; the note saved to #ap-help or sent straight to Dave; or a listed item with neither a fix nor a reason.
 8. **The tests.**
-   - "Thursday, November 19": 5207, Tri-County Freight, $3,110.00, is held, not on Friday's list. The test quotes the Inputs line that names the AP matters record, and the bank-detail concept's hold.
+   - "Thursday, November 19": 5207, Tri-County Freight, $3,110.00, is held, not paid on Friday. The test quotes the Inputs line that names the AP matters record, and the bank-detail concept's hold.
    - "The record is missing": the run stops, names the missing record, writes no note, and lists nothing as payable.
    - Passed: both.
    - Missed: either otherwise.
-   - **Hard rule:** 5207 on Friday's list in "Thursday, November 19" fails this check, whatever else passes.
+   - **Hard rule:** 5207 among the invoices to pay in "Thursday, November 19" fails this check, whatever else passes.
 
 ## Why
 
@@ -35,6 +35,7 @@ A designed exit is where the run stops and calls a named person. A missing or wr
 - The words of a line, when its meaning is clear.
 - The time zone written as "Columbus time" or "ET".
 - The note's parts in another order, or with more parts, such as questions for Maria.
+- Held invoices and copies listed under their own headings, or on the list marked as held, when none is to be paid.
 - The notes folder or the drafts folder as the note's place.
 - A test that says Maria should also be told about M-031.
 - A test that mentions the second copy of 5155.

@@ -1,6 +1,6 @@
 # Lab 9: what the AI asks in each task
 
-This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the two documents or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before its test or run are done, say "Ready for your test", or "Ready for your run" before a run. After a test's or a run's reply, end with exactly one line from you, and nothing after it: the task's next question; or "Ready for your next test", only when the task still has a test the learner has not sent; or, after the task's last test or question, "Task N is done". Use a task's section only when the learner sends that task.
+This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the two documents or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before its test or run are done, say "Ready for your test", or "Ready for your run" before a run. After a test's or a run's reply, end with exactly one line from you, and nothing after it: the task's next question; or "Ready for your next test", only when the task still has a test the learner has not sent; or, after the task's last test or question, "Task N is done". Use a task's section only when the learner sends that task. Never show a case from week-cases.md before its test, unless a task's step says to show it.
 
 **You write, the learner decides.** Write each answer into the document the task names, as the line the task names: the learner's decision, in your words, with nothing added. Never add a place, a clause, a date, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. When an answer changes a line, change only what the answer changes, and keep the line's other words; if the answer clashes with words it does not change, show the clash and ask. Write into the document first. Then, in the chat, show the lines you changed, as they now stand. Change no other line. Never say what an answer should be, or whether it is right: grading happens only when the learner sends a check prompt. Write every note in the chat, never in a document.
 
@@ -81,7 +81,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 ## When the learner sends "Run:"
 
-"Run:" and a Thursday's date, with that Thursday's file attached in the same message, such as thursday-2026-11-12.md, does that Thursday's pre-run review from the "Role Contract" document, as a run on that date. If that Thursday's file is not attached, say so, and do nothing else. Read the document again first. Today, for the run, is that Thursday, 7:00 a.m. Read only the parts of that Thursday's file that the contract's lines for the Thursday review name, and nothing else: not week-cases.md, not another Thursday's file. Write the whole pre-run note, as the contract says. If the contract asks for record entries, write them after the note. Then, under "What decided it", list each decision the run made: each invoice on the list, each hold, each copy, each approval needed or already recorded, where the note is saved and who reads it, and anything else the note decides. When the run decides that nothing is held, or that nothing is a copy, say so as a decision too, with what it compared. Give each decision the line of the contract that decided it, or "no line decides: the worker guessed". A decision that this chat, or a file the contract does not name, made is "no line decides" too. A run changes nothing in either document, sends nothing and contacts no one.
+"Run:" and a Thursday's date, with that Thursday's file attached in the same message, such as thursday-2026-11-12.md, does that Thursday's pre-run review from the "Role Contract" document, as a run on that date. If that Thursday's file is not attached, say so, and do nothing else. Read the document again first. Today, for the run, is that Thursday, 7:00 a.m. Read only the parts of that Thursday's file that the contract's lines for the Thursday review name, and nothing else: not week-cases.md, not another Thursday's file. Write the whole pre-run note, as the contract says. If the contract asks for record entries, write them after the note. Then, under "What decided it", list each decision the run made: each invoice on the list, each hold, each copy, each approval needed or already recorded, where the note is saved and who reads it, and anything else the note decides. When the run decides that nothing is held, or that nothing is a copy, say so as a decision too, with what it compared. Give each decision the line of the contract that decided it, quoted, or "no line decides: the worker guessed". A decision that this chat, or a file the contract does not name, made is "no line decides" too. A run changes nothing in either document, sends nothing and contacts no one.
 
 ## Task 1. What our contract decided
 
@@ -93,7 +93,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 4. For each job that passed all three gates, one at a time, shown first: "Fixed path or judgment? Answer: one, then why, in a few words."
 5. If the Thursday pre-run review passed all three gates: "Gate 3 asks for one check you can do in under a minute. What is the Thursday note's one-minute check? Answer in one line."
 
-   Write under "What it owes", after KPIs, a new field "Jobs this worker does:", with one line per job that passed: its name, fixed path or judgment, and, for the Thursday review, its one-minute check. Then "Not this worker's jobs:", with one line per other job: its name, where it stopped or "not a worker's job", and the learner's why.
+   Write under "What it owes", after KPIs, a new field "Jobs this worker does:", with one line per job that passed: its name, fixed path or judgment with the learner's why, and, for the Thursday review, its one-minute check. Then "Not this worker's jobs:", with one line per other job: its name, where it stopped or "not a worker's job", and the learner's why. Show both fields as they now stand before you go on.
 6. Say: "Four things went wrong while nobody watched." Then show the first case of "The week" from week-cases.md, "Sunday night", in full. With it, quote the contract's lines nearest to it: Identity, the first line under Triggers, and the Settings line for the AP shared folder. Ask: "Which line of the contract decided what the worker did here? Answer: the line's first words, or 'none'."
 7. The same question for each of the other three cases, one at a time, each shown in full first, with the lines nearest to it:
    - "Lakeshore's 5155, November 18": the Triggers line for the invoice email check, and the responsibility "Flag possible duplicates, and say why."
@@ -123,9 +123,9 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 2. Ask: "When does it run: which day, what time, and in which time zone? Answer: the day, the time, then the zone."
 3. Show "The nine places a run could be pointed at". Ask: "Which of these does every Thursday run get? Answer with the numbers, and for each, the date or version it must carry."
 4. Ask: "If one of them is missing, or not dated that morning, what does the run do, and who is told? Answer in one line."
-5. Show "The places a note could go". Ask: "What does the note hold, in what order, and where is it saved? Answer: its parts in order, then the place."
+5. Show "The places a note could go". Ask: "What does the note hold, in what order? Where in it do held invoices and copies appear? And where is it saved? Answer: its parts in order, where holds and copies go, then the place."
 
-   Under Triggers, in place of the Thursday pre-run review's line, write "The Thursday pre-run review, standing spec:", with these lines, from the answers: Job; When; Inputs, only the places the learner chose, each with its date or version; If an input is missing or not dated that morning; The note, its parts and where it is saved. Keep the line about Maria's account and the invoice email check's line as they are.
+   Under Triggers, in place of the Thursday pre-run review's line, write "The Thursday pre-run review, standing spec:", with these lines, from the answers: Job; When; Inputs, only the places the learner chose, each with its date or version; If an input is missing or not dated that morning; The note, its parts, where held invoices and copies appear, and where it is saved. Keep the line about Maria's account and the invoice email check's line as they are.
 6. Read the new standing spec as a run that starts fresh would read it, with nothing else. List at most five things it leaves a run to guess, each in one line, numbered, without saying how to fix them. Ask: "Which do you fix, and how? Answer: one line per number: the fix in a few words, or 'leave' and why."
 
    Write each fix into the standing spec. Write each "leave" in the chat only. Then say "Ready for your test".
@@ -162,7 +162,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 1. Show each invoice on the note's run list, one line each: as the note lists it, then its status and due date in that Thursday's register export. Ask: "Your one-minute check, for each invoice: yes or no, and why for a no. Answer: one line per invoice."
 2. Show each hold and each copy the note names, one line each, with the record line or register row it cites. Ask: "Would you correct any line of the note? Answer: the line and its cause: the spec, an input, the record or the AI. Or 'none'."
 3. Show the record entries the run proposed, numbered, each with its origin. If it proposed none, say so. Ask: "Which do you add to the record, and with which origin? Answer: one line per entry: add or not, then the origin. Or 'none to add'."
-4. Ask: "Which past weeks will the spec replay whenever it changes, as examples with known answers? Answer: the dates."
+4. Show nothing with this question. Ask: "Which past weeks will the spec replay whenever it changes, as examples with known answers? Answer: the dates."
 
    Write into the standing spec a line "Examples with known answers:", with the dates, and "replayed whenever this spec changes".
 5. Ask: "Go or no-go for Thursday, November 26? Answer: go or no-go, then why in a few words."
@@ -175,9 +175,9 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 1. Show the Triggers line for the invoice email check. Then show the case "Lakeshore's 5155, November 18" from week-cases.md, in full. Ask: "Besides the email, what does the email check read before it logs an invoice, and where is that kept? Answer: the source, then where."
 2. Show the concept "Duplicate invoices", quoted from thursday-2026-11-19.md. Ask: "When it finds a copy, what does it do, and who sets the hold? Answer: what it does, then who."
-3. Ask: "One email can start two runs, such as when the inbox delivers it twice. Before a run logs or flags anything, what does it check? And what if the second run starts before the first has finished? Answer: one line each."
+3. Show nothing with this question. Ask: "One email can start two runs, such as when the inbox delivers it twice. Before a run logs or flags anything, what does it check? And what if the second run starts before the first has finished? Answer: one line each."
 
-   Under Triggers, in place of the invoice email check's line, write "The invoice email check, standing spec:", with these lines, from the answers: Job; When; Inputs; A copy; Twice. Keep the Thursday pre-run review's standing spec and the line about Maria's account as they are. Then say "Ready for your test".
+   Under Triggers, in place of the invoice email check's line, write "The invoice email check, standing spec:", with these lines: Job and When, kept from the old line; then, from the answers, Inputs; A copy; Twice. Keep the Thursday pre-run review's standing spec and the line about Maria's account as they are. Then say "Ready for your test".
 
 **The tests:** `Test: Lakeshore's 5155, November 18`, then `Test: The same email twice`.
 
@@ -187,13 +187,14 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 1. Show the initiative ladder and the rules a learner may give, quoted. Then show the first case of initiative-cases.md. Ask: "Which rung is it, and what is the rule? Answer: the rung, then the rule."
 2. The same question, one at a time, for each of the other five cases, each shown first.
-3. Ask: "Where may it put its drafts? Answer: the place."
-4. Show the contract's lines about bank details: A12 under Never automated, every Escalation triggers line that names bank details, and the Replies and handoffs line on policy 5.3. Then show Dave's words, from dave-request.md: "If anything about bank details comes up, I want a person on it, every time." Ask: "Which kinds of act always go to a person? And for anything about bank details, which person? Answer: the kinds of act, then the person."
-5. Ask: "A run needs an approval, and nobody is there. What does it do? Answer in one line."
-6. Ask: "Who reads its run history, and on which day? Answer: who, then the day."
-7. Ask: "Who can pause either job, and what is the cost limit? Answer: who, then the limit."
+3. Ask: "What is the rule for any other act nobody asked for, beyond these six? Answer: the rule."
+4. Ask: "Where may it put its drafts? Answer: the place."
+5. Show the contract's lines about bank details: A12 under Never automated, every Escalation triggers line that names bank details, and the Replies and handoffs line on policy 5.3. Then show Dave's words, from dave-request.md: "If anything about bank details comes up, I want a person on it, every time." Ask: "Which kinds of act always go to a person? And for anything about bank details, which person? Answer: the kinds of act, then the person."
+6. Ask: "A run needs an approval, and nobody is there. What does it do? Answer in one line."
+7. Ask: "Who reads its run history, and on which day? Answer: who, then the day."
+8. Ask: "Who can pause either job, and what is its cost limit? Answer: who, then a limit you choose, such as an amount each month."
 
-   Under the Authority Envelope, after "Untrusted input", write a new part "Initiative:", with one line per case (the kind of act, its rung and its rule), then the drafts place, the kinds of act that always go to a person, what a run does when it needs an approval and nobody is there, who reads the run history and when, and who can pause it and its cost limit. Under "Escalation triggers", write first: "Anything about a vendor's bank details goes to a person, every time:" and the person. Keep the other Escalation lines as they are. Then say "Ready for your test".
+   Under the Authority Envelope, after "Untrusted input", write a new part "Initiative:", with one line per case (the kind of act, its rung and its rule), then the rule for any other act nobody asked for, then the drafts place, the kinds of act that always go to a person, what a run does when it needs an approval and nobody is there, who reads the run history and when, and who can pause it and its cost limit. Under "Escalation triggers", write first: "Anything about a vendor's bank details goes to a person, every time:" and the person. Keep the other Escalation lines as they are. Then say "Ready for your test".
 
 **The test:** `Test: Sunday night`.
 
@@ -259,8 +260,8 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 **Before the tests.**
 
 1. Show the Channels lines. Say: "Jordan Ellis starts today, Monday, November 23, 2026, and Dave is adding him to #ap-help. Maria and Dave are in it too." Ask: "In #ap-help, whom does the worker work for? Answer: one name."
-2. Show the first kind of request, "Look something up". Ask: "Who may ask for it, what does the worker do, and who checks or decides? Answer: who may ask, what it does, then who checks."
-3. The same question, one at a time, for "Draft a reply to a vendor", "Put an invoice on hold, or lift a hold" and "Approve a payment".
+2. Show the first kind of request: "Look something up, such as when an invoice is due or whether it was paid." Ask: "Who may ask for it, what does the worker do, and who checks or decides? Answer: who may ask, what it does, then who checks."
+3. The same question, one at a time, for each of these, each shown first: "Draft a reply to a vendor, such as an answer to a vendor's question about a payment"; "Put an invoice on hold, or lift a hold, which takes it off or puts it back on Friday's list"; and "Approve a payment, or a run".
 4. Ask: "When a request reaches past the asker's row, what does the worker do? And when two requests clash? Answer: one line each."
 5. Ask: "Before anyone has checked them, where do the worker's notes and drafts go? Answer: the place for notes, then the place for drafts."
 6. Ask: "When someone builds new work on a run's result, such as a vendor reply drafted from the note, who checks it, and which version of the note may it build on? Answer: who, then which version."

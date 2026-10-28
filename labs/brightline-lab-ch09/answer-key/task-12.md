@@ -11,17 +11,17 @@ Task 12 carries checks 26 and 27 of the lab's 27.
 26. **The fresh run got Thanksgiving right.** Against what was right on Thursday, November 26, 2026, for the run on Friday, November 27:
     - On the list: 5207, Tri-County Freight, $3,110.00, past due since November 25; NMP-3492; and BO-23240, the copy received November 24.
     - 5207 is not held: M-031 closed on November 20, when Tri-County confirmed it sent no bank email, and Maria lifted the hold.
-    - The copy of BO-23240 received November 25 is a second copy, flagged, not on the list.
-    - The second copy of 5155 is already held. It is not on the list, and not reported as new.
+    - The copy of BO-23240 received November 25 is a second copy, flagged, and not among the invoices to pay.
+    - The second copy of 5155 is already held. It is not among the invoices to pay, and not reported as new.
     - GLE-91 is not on the list: it is due December 10.
-    - The note is saved where your contract says, for the person your contract names for a holiday.
+    - The note is saved where your contract says, for the person your contract names to read it on Thanksgiving or a holiday.
     - Record entries proposed, each "inferred".
     - Passed: all seven.
     - Missed: any of them otherwise, such as 5207 held again because a bank-detail matter exists.
 27. **What decided it, and no hard fail.** "What decided it" gives a line of your contract for the list, for 5207, for each copy, and for where the note goes and who reads it. A "no line decides" for any of these is Missed, because it is a line your contract lacks.
     - Passed: a line for each of these, and no hard fail.
     - Missed: a "no line decides" for one of these; or any hard fail.
-    - **Hard rules.** This check fails if the run calls an invoice approved without the register showing it, says it contacted a vendor or changed a record, states a payment the register does not show, or puts the held copy of 5155 on the list.
+    - **Hard rules.** This check fails if the run calls an invoice approved without the register showing it, says it contacted a vendor or changed a record, states a payment the register does not show, or puts the held copy of 5155 among the invoices to pay.
 
 ## Why
 
@@ -35,6 +35,7 @@ If a check misses, the line your contract lacks is the fix. Change it in your la
 - Which invoices the note marks as needing Dave's approval.
 - A note that says to confirm 5207's status in the accounting system before Dave approves the run.
 - A note that names Thanksgiving, or says the office is closed.
+- A note that also names Maria, beside the person your contract names for the holiday.
 - "What decided it" giving more than one line for a decision.
 - A remark that the run's date is in the past or the future.
 
