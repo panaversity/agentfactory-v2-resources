@@ -204,7 +204,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the contract's line on what counts as a copy, Tuesday's email and invoice 7781's row. Answer: which lever this fix pulls, then your line, in a few words: what makes a resend like 7781-R match its original.
+1. In your lab chat, type "Task 4" and send it. The AI shows [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the email check's lines and the duplicate rule they check against, Tuesday's email and invoice 7781's row. Answer: which lever this fix pulls, then your line, in a few words: what makes a resend like 7781-R match its original.
 2. When the AI says "Ready for your test", type `Test: Tuesday, 8:05 a.m.` and send it.
 3. The AI shows [11.2](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s first rule. Answer: what a daily check from outside the email job compares, by message ID or by count, when it runs, and whom it tells.
 4. The AI shows [11.4](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/usage-and-limits/)'s lines and where each AI vendor shows usage. Answer, for the seat Dave pays for: who owns its budget, who checks its usage and when, and what never runs from it.
@@ -225,7 +225,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 5" and send it. The AI shows Maria's Wednesday report and Record B. Answer: the cause, and the record line that shows it.
-2. The AI shows [Chapter 5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/overview/)'s four parts of a brief, Jordan's request, and the contract's line on short-payment replies. Answer: which part is empty.
+2. The AI shows [Chapter 5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/overview/)'s four parts of a brief, Jordan's request, and the contract's lines on replies. Answer: which part of his request is empty.
 3. Answer with your lines for that part: which source, for which fact, and what the worker does when it is missing.
 4. When the AI says "Ready for your test", type `Test: Wednesday` and send it.
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -302,7 +302,7 @@ It is Monday, January 18.
 
 1. In your lab chat, type "Task 9" and send it. The AI shows the worker's draft of the list. Answer: one kind of error, or many, and which cause.
 2. The AI asks for your one-minute check. When it says "Ready for your Inspect", type `Inspect: my check` and send it.
-3. The AI shows the contract's line on the early-pay list. Answer with your line: how the worker works out each discount and amount to pay from now on.
+3. The AI shows the contract's skills. Answer with your line: how the worker works out each discount and amount to pay from now on.
 4. When the AI says "Ready for your test", type `Test: the early-payment list` and send it.
 5. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -316,10 +316,10 @@ It is Monday, January 18.
 
 **What you do:**
 
-1. In your lab chat, type "Task 10" and send it. The AI shows Maria's correction log, the two replies to the same kind of dispute, and [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, and where it goes.
+1. In your lab chat, type "Task 10" and send it. The AI shows Maria's correction log, the two replies to the same kind of dispute, and [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
 2. The AI shows Dave's words and [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
 3. The AI shows [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
-4. Answer: how many Thursdays the old and new setups run side by side, when the worker gets its full authority back, and who agrees.
+4. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
 5. The AI dates the contract Draft 8, Monday, January 18, 2027. This task has no test. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 34 to 38 passed.
@@ -372,7 +372,7 @@ It is Monday, January 18.
    ```
 
 4. **Check it now, in the new chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run.
-5. Missed a check? It is a line your contract lacks. Back in your lab chat, name the line, let the AI change the contract, and send that case's test there. Then download the contract again, open another new chat with memory off, and run it again.
+5. Missed a check? Find the case it grades, and the line that should decide it. Back in your lab chat, name the line, let the AI change the contract, and send that case's test there. Then download the contract again, open another new chat with memory off, and run it again.
 
 With an account on the other AI vendor, you can run the same message there too, after the check. It is not checked.
 
@@ -388,6 +388,7 @@ With an account on the other AI vendor, you can run the same message there too, 
 - **The AI changed a line's other words, or a line you did not decide.** Say which line, and send your decision again: "Change only what I decided, and keep the line's other words."
 - **The AI added a source, a number, a time, a person or a rule you did not give.** Say which line: "Write only what I decided."
 - **The AI named a cause or a fix before you did, or told you what an answer should be.** Say: "Ask me, do not suggest."
+- **The AI skipped a question, or said a task was done too soon.** Say: "Read task-questions.md again, and ask me the next question of this task."
 - **The AI won't open a zip.** Unzip it on your computer, attach the files inside it, and send the brief again.
 - **A test quotes a line that is not in your contract, or misses a line you added.** Say: "Read the documents again." Then send the test again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.

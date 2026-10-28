@@ -14,7 +14,7 @@ Task 6 carries checks 21 to 23 of the lab's 47.
 22. **The check, and what it showed.** The check opens that file and reads its last entry, or its open rows. The Inspect quoted `AP Register.csv`: its last entry, January 7, 2027, and no open row.
     - Passed: that file opened, and its last entry or its open rows quoted.
     - Missed: a check of another file only; or an Inspect that quoted no date and no row.
-23. **The check Maria skipped.** Before she passed the note on, Maria did not check its first line, or which register it read, against the live register. The contract now holds that check, under "Who does each step of the Thursday review".
+23. **The check Maria skipped.** Before she passed the note on, Maria did not check its first line, or which register it read, against the live register. The contract now holds that check, in step 6 of "Who does each step of the Thursday review", with the step's other words kept.
     - Passed: the skipped check, written into the contract.
     - Missed: no check named; or the check only in the notes.
 

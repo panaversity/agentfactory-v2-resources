@@ -6,9 +6,9 @@ Each case is one moment when a job ran, or would run. "Today is" gives the date 
 
 **Today is** Tuesday, January 12, 2027, 8:05 a.m.
 
-**Arrives:** email MSG-0112-01, from ar@kentonbox.example, the address on Kenton Box & Crate's vendor record: "Please find attached invoice 7781-R for $4,812.50." The attached invoice: Kenton Box & Crate, invoice 7781-R, dated December 14, 2026, $4,812.50, terms 2 percent 10, net 30.
+**Arrives:** email MSG-0112-01, from ar@kentonbox.example, the address on Kenton Box & Crate's vendor record: "Please find attached invoice 7781-R for $4,812.50." The attached invoice: Kenton Box & Crate, invoice 7781-R, dated December 16, 2026, $4,812.50, terms 2 percent 10, net 30.
 
-**Exists:** In the Finance folder, `AP Register.csv` and `AP Register 2027.csv` (in `registers/`). Both hold Kenton Box & Crate's invoice 7781, $4,812.50, paid Friday, January 8, 2027. 7781-R's own row in `AP Register 2027.csv` was entered later that day, so a run at 8:05 a.m. does not see it. The AP matters record has no matter about Kenton Box & Crate.
+**Exists:** In the Finance folder, `AP Register.csv` and `AP Register 2027.csv` (in `registers/`). Both hold Kenton Box & Crate's invoice 7781, dated December 14, 2026, $4,812.50, paid Friday, January 8, 2027. 7781-R's own row in `AP Register 2027.csv` was entered later that day, so a run at 8:05 a.m. does not see it. The AP matters record has no matter about Kenton Box & Crate. The duplicate invoices concept, approved by Dave on Wednesday, November 4, 2026, says: "6.1 An invoice is a duplicate when it has the same vendor and invoice number as another, or the same vendor, amount and invoice date. Hold the later copy and tell the AP lead."
 
 **This case asks** what the invoice email check does with this email, if it runs. Whether it runs at all is the next case's question.
 
@@ -36,7 +36,7 @@ Each case is one moment when a job ran, or would run. "Today is" gives the date 
 
 **Arrives:** the schedule starts the Thursday pre-run review.
 
-**Exists:** The Finance folder holds `AP Register.csv`, the 2026 register, closed on Friday, January 8, 2027, and `AP Register 2027.csv`, the live register (both in `registers/`). Each has its own link. The accounting system exported both this morning, so each is dated today, January 14, 2027. A search for the name "AP Register" opens `AP Register.csv`, the file with exactly that name. The AP matters record has no open matter about an invoice due by January 22, 2027. The five approved concepts are in Maria's records. The job reaches the Finance folder through the shared-drive connection.
+**Exists:** The Finance folder holds `AP Register.csv`, the 2026 register, closed on Friday, January 8, 2027, and `AP Register 2027.csv`, the live register (both in `registers/`). Each has its own link. The accounting system exported both this morning, so each is dated today, January 14, 2027. A search for the register export by its name, "AP Register", opens `AP Register.csv`, the file with exactly that name. The AP matters record has no open matter about an invoice due by January 22, 2027. The five approved concepts are in Maria's records. The job reaches the Finance folder through the shared-drive connection.
 
 **This case asks** what the review writes, and where.
 

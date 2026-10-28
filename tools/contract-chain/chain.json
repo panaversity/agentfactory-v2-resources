@@ -45,9 +45,9 @@
     },
     {
       "name": "Lab 11 ships Draft 7",
-      "comment": "Source is the provisional Draft 7 (Draft 5 with Labs 9 and 10's expected lines) until Lab 10's sample, contracts/role-contract-draft-7.md, exists; then the source becomes that file and every task that reads a changed line runs again on the stand-in.",
+      "comment": "Source: Lab 10's sample Draft 7 (labs branch lab/brightline-lab-ch10-one-chat at 23b0a09, built on Lab 9's sample Draft 6 at 0cc9685). This branch carries an identical copy until Lab 10's pull request merges.",
       "shipped": "labs/brightline-lab-ch11/inputs/role-contract-draft-7.md",
-      "source": "tools/brightline-lab-ch11/role-contract-draft-7-provisional.md",
+      "source": "contracts/role-contract-draft-7.md",
       "cuts": [
         {
           "name": "(1) The week of January 11 runs on Draft 7 as it stood that Monday",
@@ -61,8 +61,8 @@
         },
         {
           "name": "(3) That change's line in the change log",
-          "before": "- Friday, December 11, 2026, Dave Kowalski: Sign-off, Uses, auditor, tax and court requests, and the onboarding notes taken down.\n",
-          "after": "- Friday, December 11, 2026, Dave Kowalski: Sign-off, Uses, auditor, tax and court requests, and the onboarding notes taken down.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
+          "before": "- Monday, November 23, 2026, Dave Kowalski: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n",
+          "after": "- Monday, November 23, 2026, Dave Kowalski: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
         }
       ]
     }

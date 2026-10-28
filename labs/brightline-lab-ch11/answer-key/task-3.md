@@ -11,9 +11,9 @@ Task 3 carries checks 7 to 10 of the lab's 47.
 7. **Missing, so the missing-output checks first.** Tuesday's output was missing, not wrong. So the checks for a missing output come first, before the five causes: a pending approval or question, a pause, a usage limit, a broken connector or a different destination.
     - Passed: missing, and those checks first.
     - Missed: "wrong"; or the five causes, or the brief, first.
-8. **Two causes, each with its record line.** Capacity, a usage limit: the record's line "Not started. Usage limit reached." And the brief: the email check's "A copy:" line, quoted, matches on the same invoice number, so 7781-R would not have matched 7781 even if the check had run.
-    - Passed: both causes, each with its line quoted.
-    - Missed: one cause only; a cause with no record line; or the brief named without its line.
+8. **Two causes, each with its record line.** Capacity, a usage limit: the record's line "Not started. Usage limit reached." And the brief: the email check's lines, quoted, such as its "Job:" line, check for a copy by the duplicate concept, which matches the same invoice number, or the same amount and invoice date. Nothing covers a suffix like "-R", and 7781-R's date differs from 7781's, so 7781-R would not have matched even if the check had run.
+    - Passed: both causes, each with a quoted line.
+    - Missed: one cause only; a cause with no quoted line; or the brief named without its lines.
 9. **The usage check, and what it showed.** The check is usage: Maria's account's usage report or usage page. The Inspect quoted the weekly limit reached on Monday, January 11, 2027, at 8:58 p.m., and the reset on Wednesday, January 13, 2027, at 7:00 a.m.
     - Passed: a usage check, and both times quoted from the Inspect.
     - Missed: no usage check; or an Inspect that gave no limit time or no reset time.
@@ -25,7 +25,7 @@ Task 3 carries checks 7 to 10 of the lab's 47.
 
 "When an expected output is missing, do not change the brief ... yet" (Lesson 11.2). A missing output sends you to the checks for a missing output first, and a usage limit is one of them. Record A's runs say why: "Not started. Usage limit reached."
 
-But "one failure can live in two places" (Lesson 11.3). The check matches on the same invoice number, and 7781-R is not the same number as 7781. So even on a day with allowance, the brief would have let 7781-R through.
+But "one failure can live in two places" (Lesson 11.3). The check matches the same invoice number, or the same amount and invoice date, and 7781-R has neither: a new number and a new date. Nothing in its lines covers a resend with a suffix. So even on a day with allowance, the brief would have let 7781-R through.
 
 Limits reset; runs that never started do not come back (Lesson 11.4). Monday's year-end task used the shared pool, the window reset on Wednesday morning, and Thursday's note found allowance again.
 
@@ -35,7 +35,7 @@ Limits reset; runs that never started do not come back (Lesson 11.4). Monday's y
 - "The window" or "the allowance" for "the limit".
 - The five-hour window mentioned beside the weekly one.
 - The nine message IDs listed, or not listed.
-- A second check, such as reading the "A copy:" line against 7781-R, run beside the usage check.
+- A second check, such as reading the email check's lines and the concept against 7781-R, run beside the usage check.
 
 ## Take it to work
 

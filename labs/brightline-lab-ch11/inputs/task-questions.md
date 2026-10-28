@@ -1,6 +1,6 @@
 # Lab 11: what the AI asks in each task
 
-This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the two documents or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before a test or an Inspect are done, say "Ready for your test" or "Ready for your Inspect". After a test's or an Inspect's reply, end with exactly one line from you, and nothing after it: the task's next question; or "Ready for your next test", only when the task still has a test the learner has not sent; or, after the task's last test or Inspect, "Task N is done". Use a task's section only when the learner sends that task. Show nothing from a file dated after the task's own day.
+This file is for the AI. When the learner sends "Task" and a number, ask that task's questions, in order, one at a time. Show what a question is about as its own lines first: the item, what it is, and where it lives, quoted from the attached files, the two documents or this chat. Then ask the question, and name the answer's shape. Wait for the answer. Show an item and ask its question in the same message: never announce an item without showing it. When a task's questions before a test or an Inspect are done, say "Ready for your test" or "Ready for your Inspect". After a test's or an Inspect's reply, end with exactly one line from you, and nothing after it: the task's next question; or "Ready for your next test", only when the task still has a test the learner has not sent; or, after the task's last test or Inspect, "Task N is done". A task's questions are its numbered steps: ask every one, in order, and never skip one. Say "Ready for your next test" only when every numbered question before that test has its answer, and "Task N is done" only after the task's last step. Use a task's section only when the learner sends that task. Show nothing from a file dated after the task's own day.
 
 **You write, the learner decides.** Write each answer into the document the task names, as the line the task names: the learner's decision, in your words, with nothing added. Never add a source, a number, a time, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. When an answer changes a contract line, change only what the answer changes, and keep the line's other words; if the answer clashes with words it does not change, show the clash and ask. Mark each line you change or add in the contract with " [Draft 8]" at its end. Then show the lines you changed, as they now stand. Change no other line.
 
@@ -102,7 +102,7 @@ During a test, change neither document. A test reads the contract and quotes it.
 
 ## When the learner sends "Inspect: my check"
 
-Run the one-minute check the learner named in this task, as they named it, or each one, if they named several. Run it on the files in the two zips, and report only what those files show: names, dates, rows, statuses and figures, quoted. Run any calculation as code, and show each figure. For each item the check compares, give one "Compared:" line, such as "Compared: invoice 5151, the draft's $77.60 against 2 percent of $3,880.15, $77.60: the same", including the items where nothing differs. Name no cause, and do not say whether the learner's guess was right. A check that finds nothing reports what it compared, and that nothing differed.
+Run the one-minute check the learner named in this task, as they named it, or each one, if they named several. Run it on the files in the two zips, and report only what those files show: names, dates, rows, statuses and figures, quoted. Run any calculation as code, and show each figure. For each item the check compares, give one "Compared:" line, such as "Compared: invoice 5151, the draft's $77.60 against 2 percent of $3,880.15, $77.60: the same", including the items where nothing differs. Name no cause, do not say whether the learner's guess was right, and do not compare the result with anything the learner said. A check that finds nothing reports what it compared, and that nothing differed.
 
 First write the result, as a few lines, under the task's heading in "What went wrong". Then give the whole result in the chat. Change nothing else.
 
@@ -126,7 +126,7 @@ Its day is Friday, January 15, 2027, afternoon. The next payment run is Friday, 
 
 1. Show Lesson 11.1's six steps, quoted: "1. *Stop* the run. Pause any job that runs on a schedule, or that starts when something happens, until you know the cause. 2. *Inspect* the task record before you decide what went wrong. 3. *Contain* the harm. Hold anything the run set in motion, such as a payment, and have a person do the job by hand. Remove risky access the job does not need: unused connectors to other apps, write access and the ability to send messages. 4. *Correct* the cause, once you know it. 5. *Verify* everything the run affected outside the conversation: messages, files and records. 6. *Resume* the work with approvals on." And: "The record tells you what the worker reports it did. Only the connected systems tell you what actually changed."
 
-   Then show the two recurring jobs, from the contract's Triggers: the Thursday pre-run review and the invoice email check, each with its "When:" line. Ask: "For each job: pause it or leave it running, and who does its work by hand meanwhile? Answer: for each job, pause or leave, then who."
+   Then show the two recurring jobs, from the contract's Triggers: the line on whose account they run in, and the Thursday pre-run review's and the invoice email check's "When:" lines. Ask: "For each job: pause it or leave it running, and who does its work by hand meanwhile? Answer: for each job, pause or leave, then who." Write the answer under "Stop and hold". Then ask question 2.
 2. Show Maria's four reports again. Then show what the week left behind, one item at a time:
    - Tuesday's invoice emails, which the duplicate check said nothing about.
    - Wednesday's three draft replies about short payments, in the drafts folder.
@@ -164,29 +164,29 @@ Its day is Friday, January 15, 2027. Dave pays for a seat for the recurring jobs
 
 **Before the first test.**
 
-1. Show the three levers. Then show the contract's "A copy:" line, under "The invoice email check", quoted. Then show Tuesday's email MSG-0112-01, from week-cases.md, and invoice 7781's row in `AP Register 2027.csv`. Ask: "Which lever does this fix pull? And your line: what makes a resend like 7781-R match its original? Answer: the lever, then your line in a few words."
+1. Show the three levers. Then show the contract's "Job:" and "A copy:" lines, under "The invoice email check, standing spec", quoted, and the duplicate invoices concept, from Record A. Then show Tuesday's email MSG-0112-01, from week-cases.md, and invoice 7781's row in `AP Register 2027.csv`. Ask: "Which lever does this fix pull? And your line: what makes a resend like 7781-R match its original? Answer: the lever, then your line in a few words."
 
-   Write the lever under "Tuesday: the check that never ran". In the contract, change the "A copy:" line's first sentence to say what the learner's line says. Keep the rest of that line: what it posts, who sets any hold, and that it otherwise posts nothing.
+   Write the lever under "Tuesday: the check that never ran". In the contract, add the learner's line as a new line under "The invoice email check, standing spec", after its "A copy:" line, starting "A possible copy:". Keep the "A copy:" line, and the concept, as they are.
 
 Then say "Ready for your test".
 
-**The first test:** `Test: Tuesday, 8:05 a.m.`
+**The first test:** `Test: Tuesday, 8:05 a.m.` After it, ask question 2.
 
 **Before the second test.**
 
 2. Show Lesson 11.2's first rule, quoted: "**Say something every time.** 'Checked 9 invoices, 1 possible duplicate' is a result. Silence means success only when a check outside the job shows it ran (Chapter 9). A job that never starts cannot report on itself." Then show the contract's lines under "How we check". Ask: "A daily check from outside the email job: what does it compare, and does it compare by message ID or by count? When does it run, and whom does it tell? Answer: what it compares, then ID or count, then when and who."
 
-   Write a new line under "How we check", after the 8:15 a.m. line: the daily check, as the learner said it.
+   Write a new line under "How we check", after the line on who checks that the note arrived: the daily check, as the learner said it.
 3. Show Lesson 11.4's lines, quoted: "On plans with a fixed allowance ... work in different places in one account usually draws from **one pool**." "*Keep recurring work* on a seat, one person's account in the company's AI workspace, whose budget is planned for it, away from one-off work." "Never solve a limit by moving work to your personal account, outside the company's AI workspace." Then show 11.7's usage rows, as verified 8 October 2026: Anthropic, "*Settings > Usage*: progress bars for the session and weekly limits, with reset times"; OpenAI, "Usage dashboard". Then show the contract's Identity line and the two jobs' "When:" lines. Ask: "The seat Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it? Answer: what runs on it, then who owns it, then who checks and when, then what never runs."
 
-   In the contract, change the Identity line's first sentence to say which work runs on that seat, with the learner's owner, check and rule; keep its Target sentence. In each "When:" line of a job that runs on that seat, change "in Maria's account" to that seat, and say so in the daily check's line if it runs there.
+   In the contract, change each line that says the jobs run in Maria's account, the Identity line's last sentence and the first line under "Triggers", to say that the work the learner named runs on the seat Dave pays for, with the learner's owner, check and rule. Keep the Identity line's Target sentence. Say so in the daily check's line too, if it runs there.
 4. Show 11.7's rows, as verified 8 October 2026: "A quiet event-triggered task": Anthropic, "For Claude Code routines, you can ask `/schedule` why a routine did nothing"; OpenAI, "Check for a pause or a pending approval, and confirm the app is still connected". "Scheduled runs": Anthropic, "*Scheduled* in the sidebar: upcoming and past runs, each run its own session"; OpenAI, "*Scheduled* page: review results, pause or resume". "Why a task pauses": OpenAI, "Needs approval, needs further action, inactive, or its chat was deleted". Ask: "If the daily check's message does not appear one evening, what does Maria check first, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, a few words each."
 
    Write it as a new line under "How we check", after the daily check's line.
 
 Then say "Ready for your next test".
 
-**The second test:** `Test: Tuesday evening`.
+**The second test:** `Test: Tuesday evening`. After it, say "Task 4 is done".
 
 ## Task 5. Jordan's replies
 
@@ -195,12 +195,12 @@ Its day is Friday, January 15, 2027. Wednesday is Wednesday, January 13, 2027.
 **Before the test.**
 
 1. Show Maria's report 2, the five causes, and Record B from task-records.md, in full, under its heading. Ask: "Where does it live? The cause, and the record line that shows it. Answer: the cause, then the line."
-2. Show Chapter 5's four parts. Then show Jordan's request, from Record B, and the contract's Uses line for short-payment replies. Ask: "Against the four parts, which part is empty? Answer: the part."
+2. Show Chapter 5's four parts. Then show Jordan's request, from Record B, and the contract's lines on replies: the "Replies:" line under "Replies and handoffs", and the "Draft a reply to a vendor" row of "Who may ask". Ask: "Against the four parts, which part of his request is empty? Answer: the part."
 3. Ask: "Your lines for that part, so his next request comes out right: which source, for which fact, and what the worker does when it is missing? Answer: a few words."
 
-Write answers 1 and 2 under "Wednesday: the wrong terms". In the contract, add the learner's lines to the end of the Uses line for short-payment replies, and keep its other words. Then say "Ready for your test".
+Write answers 1 and 2 under "Wednesday: the wrong terms". In the contract, add the learner's lines as a new line under "Replies and handoffs", starting "A reply about a short payment or a deduction:". Then say "Ready for your test".
 
-**The test:** `Test: Wednesday`.
+**The test:** `Test: Wednesday`. After it, say "Task 5 is done".
 
 ## Task 6. Ran, or worked?
 
@@ -220,7 +220,7 @@ Write each answer under "Thursday: the note from last year's file". Then say "Re
 
 4. Ask: "Maria passed the note to Dave. Which check did she skip before she did? Answer: a few words."
 
-   Write it under "Thursday: the note from last year's file". In the contract, add it under "Who does each step of the Thursday review", before Dave's line, as Maria's check before she passes the note on. Say "Task 6 is done".
+   Write it under "Thursday: the note from last year's file". In the contract, add it to step 6 of "Who does each step of the Thursday review", after that step's words, as what Maria checks before she sends the note on. Keep the step's other words. Say "Task 6 is done".
 
 ## Task 7. Two changes, one at a time
 
@@ -230,21 +230,21 @@ Its day is Monday, January 18, 2027.
 
 1. Show the Thursday review's "Inputs:" line from the contract. Then show `registers/README.md` in full. Then show 11.7's "Files for scheduled work" row, as verified 8 and 17 October 2026: Anthropic, "Tasks use the connectors and plugins set up for Cowork. ... The scheduling page says it runs only there. The page on web, desktop and mobile says new scheduled tasks run in the cloud, and reach your files only while the Claude Desktop app is open"; OpenAI, "A scheduled task created in a project cannot reach uploaded files or project files." Ask: "Change one: which file does the review open, how does it open it, and where does that file live? Answer: the file, then how, then where."
 
-   In the contract, change the register part of the "Inputs:" line to the learner's answer. Keep "the AP matters record; the five approved concepts".
+   In the contract, change item 1 of the Thursday review's "Inputs:" line to the learner's answer. Keep items 2 and 3 as they are.
 
 Then say "Ready for your test".
 
-**The first test:** `Test: Thursday, 7 a.m.`
+**The first test:** `Test: Thursday, 7 a.m.` After it, ask question 2.
 
 **Before the second test.**
 
-2. Show Lesson 11.2's two rules, quoted, and nothing after them: "**State the input first.**" and "**Fail loudly when the input looks wrong.** If the input is missing, out of date or far smaller than usual, stop and say so." Then show the Thursday review's stop line from the contract. Ask: "Change two: what does the note's first line state, when does the review stop instead of writing a note, and whom does it tell? Answer: the first line's parts, then when it stops, then who."
+2. Show Lesson 11.2's two rules, quoted, and nothing after them: "**State the input first.**" and "**Fail loudly when the input looks wrong.** If the input is missing, out of date or far smaller than usual, stop and say so." Then show the Thursday review's "If an input is missing or not dated that morning:" line from the contract. Ask: "Change two: what does the note's first line state, when does the review stop instead of writing a note, and whom does it tell? Answer: the first line's parts, then when it stops, then who."
 
-   In the contract, add the learner's answer as a new line after the review's stop line. Keep the stop line as it is.
+   In the contract, add the learner's answer as a new line after the "If an input is missing" line. Keep that line as it is.
 
 Then say "Ready for your next test".
 
-**The second test:** `Test: Thursday, the closed file opens`.
+**The second test:** `Test: Thursday, the closed file opens`. After it, say "Task 7 is done".
 
 ## Task 8. The first error, and the access
 
@@ -256,13 +256,13 @@ Its day is Monday, January 18, 2027. Friday is Friday, January 15, 2027.
 2. Ask: "Maria sent all five. Which check did she skip before she did? Answer: a few words."
 
    Write answers 1 and 2 under "Friday". In the contract, add the skipped check under "Replies and handoffs", as a line on what Maria does before she sends a reply.
-3. Show Lesson 11.5's lines, quoted: "Access can be wrong in two ways: too narrow or too wide." "Widening access to make an error go away is a bad fix." Then show the contract's lines under "Settings" and "The two recurring jobs", and Record D's note from IT. Ask: "After the fix, what does the connection that replies use reach: which folder, and read or write? Answer: the folder, then read or write."
+3. Show Lesson 11.5's lines, quoted: "Access can be wrong in two ways: too narrow or too wide." "Widening access to make an error go away is a bad fix." Then show the contract's "The two jobs' access:" line under "Settings", and Record D's note from IT. Ask: "After the fix, what does the connection that replies use reach: which folder, and read or write? Answer: the folder, then read or write."
 
    In the contract, add a new line under "Settings": the connection replies use, as the learner said it.
 
 Then say "Ready for your test".
 
-**The first test:** `Test: Friday, reconnected`.
+**The first test:** `Test: Friday, reconnected`. After it, ask question 4.
 
 **Before the second test.**
 
@@ -272,7 +272,7 @@ Then say "Ready for your test".
 
 Then say "Ready for your next test".
 
-**The second test:** `Test: Friday, 9:02 a.m.`
+**The second test:** `Test: Friday, 9:02 a.m.` After it, say "Task 8 is done".
 
 ## Task 9. The discounts
 
@@ -289,11 +289,11 @@ Write each answer under "Monday: the discounts". Then say "Ready for your Inspec
 
 **After the Inspect.**
 
-3. Show the contract's Uses line for the monthly early-pay list. Ask: "Your line: how does the worker work out each discount and amount to pay from now on? Answer: a few words."
+3. Show the contract's "Skills:" lines. Ask: "Your line: how does the worker work out each discount and amount to pay from now on? Answer: a few words."
 
-   In the contract, add the learner's line to the end of that Uses line, and keep its other words. Then say "Ready for your test".
+   In the contract, add the learner's line as a new line under "Skills", starting "Discounts and amounts to pay:". Then say "Ready for your test".
 
-**The test:** `Test: the early-payment list`.
+**The test:** `Test: the early-payment list`. After it, say "Task 9 is done".
 
 ## Task 10. Where each correction lives
 
@@ -306,18 +306,18 @@ Its day is Monday, January 18, 2027.
    - NMP-3420 and NMP-3424 shown in USD, on December 3
    - the two replies to the same kind of dispute, Maria's and Jordan's
 
-   For each, ask: "Rule, reference, procedure, boundary, or not yet? And where does it go? Answer: the home, then where."
+   For each, ask: "Rule, reference, procedure, boundary, or not yet? Where does it go? And the fix, in a few words? Answer: the home, then where, then the fix."
 
-   Write each answer under "Where each correction lives". In the contract, write each one whose home is not "not yet": a rule under a new "Standing instructions:" field, after "Memory"; a reference under "Knowledge sources"; a procedure under "Skills"; a boundary under the Authority Envelope part it names. Write each as the correction, its home and the learner's words.
+   Write each answer under "Where each correction lives". In the contract, write each one whose home is not "not yet": a rule under a new "Standing instructions:" field, after "Memory"; a reference under "Knowledge sources"; a procedure under "Skills"; a boundary under the Authority Envelope part it names. Write each as the fix, in the learner's words: what the worker does from now on, never the failure.
 2. Show Dave's words from his ask: "The 15-day promise to small suppliers is in my memo of March 3, 2025. It is not one of our five approved concepts." Show the contract's Knowledge sources lines. Then show Lesson 11.5's lines, quoted: "Some causes point to a change you may not make yourself. Then you escalate: you pass the problem to the person who owns that decision, with the record line that shows the cause and what you have already contained. Escalate when the fix would change an approved rule or concept, widen access, change money or a promise that has already gone out, or go beyond the Role Contract." Ask: "The small-supplier promise: may Maria add it to the worker's rules herself, or does it go to its owner, and who is that? Answer: Maria's, or the owner's, then who."
 
-   Write it under "Where each correction lives", and in the contract under "Knowledge sources", after the line on the small-supplier memo.
+   Write it under "Where each correction lives", and in the contract under "Knowledge sources", after the line on the small-supplier promise.
 3. Show Lesson 11.6's lines, quoted: "Before changing anything, take a **baseline** (Chapter 9). A baseline is one unchanged run, with its time, revision rounds and manual steps." "Choose the metric, the thing you measure, that matches the work." Show the log's row for January 7. Ask: "Against the January 7 baseline, what do you measure first for this note, and why? Answer: what you measure, then why in a few words."
 
-   Write it under "Where each correction lives".
-4. Show Lesson 11.6's line, quoted, and nothing after it: "Then run the old and new setups at the same time for two or three cycles before you switch." And Lesson 11.5's: "*Resume with approvals on.* One clean run is a first check, not proof. Return to the normal authority in the Role Contract, the worker's one-page job definition, only when the worker's owner agrees the fix has worked. Never go beyond the Role Contract." Ask: "How many Thursdays do the old and new setups run side by side? When does the worker get its full authority back, and who agrees? Answer: the number, then when, then who."
+   Write it under "Where each correction lives". In the contract, add a new line after "Before the new way is kept:", starting "Before Draft 8 is kept:", with the measure the learner gave.
+4. Show Lesson 11.6's line, quoted, and nothing after it: "Then run the old and new setups at the same time for two or three cycles before you switch." And Lesson 11.5's: "*Resume with approvals on.* One clean run is a first check, not proof. Return to the normal authority in the Role Contract, the worker's one-page job definition, only when the worker's owner agrees the fix has worked. Never go beyond the Role Contract." Ask: "How many Thursdays do the old and new setups run side by side? Do approvals stay on meanwhile? When does the worker get back its normal authority, the authority its contract gives, and who agrees? Answer: the number, then yes or no, then when and who."
 
-   Write it under "Where each correction lives", and in the contract under "Raising a rung", as a new line.
+   Write it under "Where each correction lives", and in the contract at the end of the "Before Draft 8 is kept:" line.
 5. Now date the contract. Change its first line to "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027", and take out the line "As it stood on Monday, January 11, 2027." Add under "Change log": "- Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11." Show the first line and the change-log line. Say "Task 10 is done".
 
 ## Task 11. Three more records

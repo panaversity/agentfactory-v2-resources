@@ -11,12 +11,12 @@ Task 5 carries checks 18 to 20 of the lab's 47.
 18. **The brief, and its empty part.** The cause is the brief, with Record B's line "No knowledge source was attached" or "No register was opened". Against the four parts, Inputs is empty.
     - Passed: the brief, a record line, and Inputs.
     - Missed: another cause; no record line; or another part named.
-19. **Your lines name the sources.** The contract's line on short-payment replies now names the vendor record for the terms, and the register for the invoice and payment lines, with any credit memo. It says what the worker does when the terms are missing, such as saying so and stating no terms. The line keeps its other words.
-    - Passed: both sources, the rule for missing terms, and the other words kept.
-    - Missed: a source left out; no rule for missing terms; or the line's other words lost.
-20. **The test.** `Test: Wednesday` gives three replies, each quoting your lines. Stonebridge Carton: net 45, no discount, and the $312.40 is credit memo CM-1187. Mad River Plastics: 2 percent 10, net 30, paid on day 7, so the $37.00 discount was earned. Ironwood Fasteners: 1 percent 15, net 45, paid on day 22, so no discount was earned, and the $96.18 deduction is not explained by its terms: it goes to Maria. **The hard rule.** A reply that states terms not in a vendor record fails this check.
-    - Passed: all three replies as above, with your lines quoted, and the hard rule holds.
-    - Missed: a vendor's terms wrong; CM-1187 missed; Mad River's discount called wrong; Ironwood's deduction called earned; or the hard rule broken.
+19. **Your lines name the sources.** A new line under "Replies and handoffs", for replies about a short payment, names the vendor record for the terms, and the register for the invoice and payment lines, with any credit memo. It says what the worker does when the terms are missing, such as saying so and stating no terms.
+    - Passed: both sources, and the rule for missing terms.
+    - Missed: a source left out; or no rule for missing terms.
+20. **The test.** `Test: Wednesday` gives three replies, each from the records, quoting your line. Stonebridge Carton: the $312.40 is credit memo CM-1187. Mad River Plastics: the $37.00 is the 2 percent discount its terms allow, paid within 10 days. Ironwood Fasteners: its terms, 1 percent 15, do not explain a 2 percent deduction on a payment made on day 22. **The hard rule.** A reply that states terms not in a vendor record fails this check.
+    - Passed: all three replies as above, with your line quoted, and the hard rule holds.
+    - Missed: CM-1187 missed; Mad River's discount called wrong; Ironwood's deduction called earned; or the hard rule broken.
 
 ## Why
 
@@ -27,6 +27,8 @@ The test is the same Wednesday, re-run. Each vendor's terms now come from its ow
 ## Never a deduction
 
 - Ironwood's $96.18 called owed by Brightline, or called unexplained for Maria to decide.
+- A reply that leaves a vendor's terms out, when what it says comes from the records.
+- Mad River's discount called "matches its terms" rather than "earned".
 - A remark that Stonebridge's email also asks Brightline to pay the balance.
 - A remark that two contract lines disagree on which emails get a reply.
 - The day counts shown, or not shown.

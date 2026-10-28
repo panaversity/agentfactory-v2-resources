@@ -9,18 +9,18 @@ The answers for Task 10 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Seco
 Task 10 carries checks 34 to 38 of the lab's 47.
 
 34. **The three repeated corrections.** Credit memos listed as amounts owed: a rule, in standing instructions, such as "A credit memo is never an amount owed." Amounts shown without cents: a procedure, in the note's skill or layout. No flag for small suppliers near the 15-day promise: a reference, the promise as a concept, through its owner; or a step in the note's skill that reads the promise once it is approved.
-    - Passed: all three homes, each in the contract where its home says.
-    - Missed: a correction with no home; or a home in the wrong place, such as cents as a rule or credit memos left in a chat.
+    - Passed: all three homes, each in the contract where its home says, written as the fix.
+    - Missed: a correction with no home; a home in the wrong place, such as cents as a rule or credit memos left in a chat; or a line that states the failure instead of the fix.
 35. **The replies, and the one-off.** Maria's and Jordan's replies to the same kind of dispute look nothing alike: variance, so a procedure, a skill for dispute replies. NMP-3420 and NMP-3424 shown in USD, seen once, on December 3: not yet, so it is watched, and nothing is added for it.
     - Passed: the replies a procedure, and Northern Maple not yet.
     - Missed: the replies left with no home; or a rule added for a correction seen once.
-36. **The promise goes to its owner.** Maria may not add the 15-day promise to the worker's rules herself: no approved concept holds it, so it goes to Dave, who owns the concepts. The contract says so under "Knowledge sources".
+36. **The promise goes to its owner.** Maria may not add the 15-day promise to the worker's rules herself: no approved concept holds it, so it goes to Dave, who owns the concepts. The contract says so under "Knowledge sources", after the line on the small-supplier promise.
     - Passed: the promise sent to Dave, written in the contract.
     - Missed: Maria adds the promise as a rule herself; or no owner named.
-37. **Accuracy first.** Against the baseline of January 7, 40 minutes of corrections, the first measure is accuracy, such as how many corrections a note needs, before speed: a quick note that is wrong costs a payment.
+37. **Accuracy first.** Against the baseline of January 7, 40 minutes of corrections, the first measure is accuracy, such as how many corrections a note needs, before speed: a quick note that is wrong costs a payment. The contract's "Before Draft 8 is kept:" line says it.
     - Passed: accuracy first, with a reason.
     - Missed: speed or minutes first; or no measure.
-38. **Side by side, approvals on.** The old and new setups run side by side for two or three Thursdays. Approvals stay on. The worker gets back only its normal authority, the authority its contract gives, when Dave agrees the fix has worked. The contract says so under "Raising a rung", and its first line reads "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027".
+38. **Side by side, approvals on.** The old and new setups run side by side for two or three Thursdays. Approvals stay on meanwhile. The worker gets back only its normal authority, the authority its contract gives, when Dave agrees the fix has worked. The "Before Draft 8 is kept:" line says so, and the contract's first line reads "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027".
     - Passed: two or three Thursdays, approvals on, Dave agrees, and Draft 8 dated.
     - Missed: one Thursday; full authority back with no one agreeing; authority beyond the contract; or the contract left undated.
 
@@ -38,6 +38,7 @@ Measure before you switch: a baseline, a metric that fits the work, and the old 
 - The small-supplier flag placed as a reference, as a procedure step that reads it, or both.
 - A draft of the promise's concept, written for Dave.
 - Two Thursdays or three.
+- "Normal authority", "full authority" or "the authority in the contract", when it is no wider than the contract.
 - Speed named as the second measure.
 
 ## Take it to work
