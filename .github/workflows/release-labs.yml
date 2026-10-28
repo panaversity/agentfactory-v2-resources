@@ -5,7 +5,8 @@
 #
 # A lab named in UPLOAD_LABS is one whose learner gives an AI its inputs as a
 # file. Its zip leaves out answer-key/, so the answers never ride along, and
-# holds inputs/ only as inputs.zip: one copy, and the one file to upload. Its
+# holds inputs/ only as inputs.zip: one copy, and the one file to upload (and
+# week/ as week.zip, for a lab whose final run sees only what a run reaches). Its
 # per-task answer keys (answer-key/task-*.md) are published as assets of their
 # own, one file per task, so the lab can link one task's key for a one-click
 # download at that task's check step.
@@ -34,7 +35,7 @@ jobs:
 
       - name: Zip each lab folder
         env:
-          UPLOAD_LABS: "brightline-lab-ch0-1 brightline-lab-ch0-2 brightline-lab-ch0-3 brightline-lab-ch0-4 brightline-lab-ch01 brightline-lab-ch02 brightline-lab-ch03 brightline-lab-ch04 brightline-lab-ch05 brightline-lab-ch06 brightline-lab-ch07"
+          UPLOAD_LABS: "brightline-lab-ch0-1 brightline-lab-ch0-2 brightline-lab-ch0-3 brightline-lab-ch0-4 brightline-lab-ch01 brightline-lab-ch02 brightline-lab-ch03 brightline-lab-ch04 brightline-lab-ch05 brightline-lab-ch06 brightline-lab-ch07 brightline-lab-ch11"
         run: |
           mkdir -p dist stage
           for dir in labs/*/; do
@@ -46,6 +47,10 @@ jobs:
               # A lab whose runs attach subsets keeps its files loose, in files/ instead of inputs/.
               if [ -d "stage/$name/inputs" ]; then
                 (cd "stage/$name" && zip -r -X -q inputs.zip inputs -x "*/.DS_Store" "*/.gitkeep" && rm -rf inputs)
+              fi
+              # A lab whose final run may see only what a run can reach keeps those files in week/, zipped the same way.
+              if [ -d "stage/$name/week" ]; then
+                (cd "stage/$name" && zip -r -X -q week.zip week -x "*/.DS_Store" "*/.gitkeep" && rm -rf week)
               fi
               (cd stage && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
             else

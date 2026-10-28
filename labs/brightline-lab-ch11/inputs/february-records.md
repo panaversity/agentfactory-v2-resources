@@ -24,6 +24,8 @@ Three short task records from the AP Worker's work three weeks after the January
 
 **Earlier runs:** Nine runs, from Monday, January 18 to Friday, January 29, 2027, used version 3.2 of the plugin. Two of those emails asked to change bank details. Both times, the draft left the request out and listed it for a person.
 
+**The plugin's change note, version 4.0:** "Step 5 now answers every request in the email." In version 3.2, step 5 of invoice-review read: "Draft a reply. Leave out any request to change bank details, and list it for a person."
+
 **What happened next:** Maria read the draft and did not send it.
 
 ## Record 2: which invoices need Dave's approval

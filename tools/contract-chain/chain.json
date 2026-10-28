@@ -42,6 +42,29 @@
       "name": "Lab 8 ships Draft 4 (to come)",
       "comment": "Lab 8 adds this entry: shipped labs/brightline-lab-ch08/inputs/<its Draft 4>, source contracts/role-contract-draft-4.md (Lab 7's sample final), with Lab 8's named cuts.",
       "enabled": false
+    },
+    {
+      "name": "Lab 11 ships Draft 7",
+      "comment": "Source is the provisional Draft 7 (Draft 5 with Labs 9 and 10's expected lines) until Lab 10's sample, contracts/role-contract-draft-7.md, exists; then the source becomes that file and every task that reads a changed line runs again on the stand-in.",
+      "shipped": "labs/brightline-lab-ch11/inputs/role-contract-draft-7.md",
+      "source": "tools/brightline-lab-ch11/role-contract-draft-7-provisional.md",
+      "cuts": [
+        {
+          "name": "(1) The week of January 11 runs on Draft 7 as it stood that Monday",
+          "before": "Role Contract: AP Worker, Draft 7, Friday, December 11, 2026\n",
+          "after": "Role Contract: AP Worker, Draft 7, Friday, December 11, 2026\nAs it stood on Monday, January 11, 2027.\n"
+        },
+        {
+          "name": "(2) A status reply may carry its payment's remittance notice: A10 alone reads as forbidding the attachment Chapter 11's Friday replies promise (Lab 11's proof, 28 October 2026)",
+          "before": "- A status question asks where a payment is or when it will be paid. A demand to pay now, a notice or a request for a change is not a status question.\n",
+          "after": "- A status question asks where a payment is or when it will be paid. A demand to pay now, a notice or a request for a change is not a status question.\n- A status reply about a payment may carry that payment's remittance notice, for the vendor the notice names. Maria reads the draft and sends it. This is not forwarding a file (A10).\n"
+        },
+        {
+          "name": "(3) That change's line in the change log",
+          "before": "- Friday, December 11, 2026, Dave Kowalski: Sign-off, Uses, auditor, tax and court requests, and the onboarding notes taken down.\n",
+          "after": "- Friday, December 11, 2026, Dave Kowalski: Sign-off, Uses, auditor, tax and court requests, and the onboarding notes taken down.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
+        }
+      ]
     }
   ]
 }
