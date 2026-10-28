@@ -52,7 +52,7 @@ The AI writes each of your decisions into the document the task names, and chang
 1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
 2. The AI asks the task's questions, one at a time, and shows each item in the same message. Answer each in a few words. In Task 10 you write four sentences yourself, because the words are the skill. The AI writes your decision into a document, and shows you the lines it changed. If a line says something you did not decide, tell the AI.
 3. When the AI says "Ready for your test" or "Ready for your run", guess what it will show. Then send the task's test or run.
-4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. If the missed check grades a test or a run, send it again. Then send: "Read the documents again, and check it again against the key."
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. If the missed check grades a test or a run, send it again, with its Thursday file attached if it is a run. Then send: "Read the documents again, and check it again against the key."
 
 **What a test is.** "Test:" and the name of a case, such as `Test: Sunday night`, decides that case by your Role Contract's lines. The cases are in `inputs.zip`. The AI answers in four items:
 
@@ -372,10 +372,11 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    thursday-2026-11-26.md. Today is Thursday, November 26, 2026,
    Thanksgiving, 7 a.m. Do the Thursday pre-run review as your
    contract says: the whole note, and the record entries it asks
-   for. Then, under "What decided it", list each decision, and quote
-   the line or lines of the contract that decided it. Write "no line
-   decides: the worker guessed" only when no line covers the
-   decision.
+   for. Then, under "What decided it", list each decision: each
+   invoice on the list, each hold, each copy, where the note is
+   saved, and who reads it today. Quote the line or lines of the
+   contract that decided each one. Write "no line decides: the
+   worker guessed" only when no line covers the decision.
    ```
 
    These lines stand in for what a schedule hands every run: its contract, its records and the date.

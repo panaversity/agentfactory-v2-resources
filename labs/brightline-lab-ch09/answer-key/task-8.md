@@ -11,7 +11,7 @@ Task 8 carries checks 18 and 19 of the lab's 27.
 18. **Whose name, and what it reaches.** Your Role Contract says:
     - Both jobs run under a team or worker identity the team controls, such as ap-worker@brightline, never a person's login. Until that identity exists, the line may say the jobs still run in Maria's account.
     - Under that name, the jobs read only the inputs their standing specs name, and write only to their notes folder, their drafts folder and their own steps in case files. They rename, move or delete nothing in the AP shared folder.
-    - "Kind": Maria's two jobs are a Delegated AI Worker's work, each run doing one task on a trigger and stopping. A lasting identity, ongoing responsibilities and its own initiative would make it standing.
+    - "Kind": Maria's two jobs are a Delegated AI Worker's work, each run doing one task on a trigger and stopping. What would make it standing names at least one of a lasting identity, ongoing responsibilities and its own initiative.
     - Passed: all three.
     - Missed: a person's login as the target; write access beyond those places, such as to rename or move files in the AP shared folder; or the two jobs called standing work today.
 19. **Who notices, and Thanksgiving.**

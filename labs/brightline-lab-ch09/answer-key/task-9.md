@@ -10,12 +10,12 @@ Task 9 carries checks 20 and 21 of the lab's 27.
 
 20. **On Claude.**
     - The Thursday review: a scheduled task, on a paid plan.
-    - The invoice email check: "none documented". Anthropic's pages describe no task in the Claude app that starts when an email arrives. It is on the Gap list.
-    - Whose name: not stated for a scheduled task in the Claude app, so check first. It is on the Gap list.
+    - The invoice email check: "none documented". Anthropic's pages describe no task in the Claude app that starts when an email arrives.
+    - Whose name: not stated for a scheduled task in the Claude app, so check first.
     - Approval: a mode that stops before acting, such as manual approval, never "Skip all approvals".
     - Read and pause: past runs on the Scheduled page, where a task can be paused.
     - Passed: all five.
-    - Missed: an email trigger named for the Claude app; a name stated as fact; "Skip all approvals"; or a gap missing from the Gap list.
+    - Missed: an email trigger named for the Claude app; a name stated as fact; or "Skip all approvals".
 21. **On ChatGPT.**
     - The Thursday review: a team task, on Business or Enterprise.
     - The invoice email check: a task in Work that starts from Gmail, which an admin must allow on Enterprise and Edu.
@@ -35,7 +35,7 @@ The design is the same on either AI vendor (Lesson 9.8). The products differ in 
 - A dot named as a standing worker.
 - The approval mode called "ask before acting" or "manual".
 - Lines from 9.8 dated 17 or 23 October 2026 as well.
-- The Gap list's owner being Dave, the owner, in other words.
+- The Gap list's lines, which the AI writes from your answers.
 
 ## Take it to work
 

@@ -20,7 +20,7 @@ Task 4 carries checks 9 and 10 of the lab's 27.
     - On the list: BO-23188, OVJ-311, BO-23190, NMP-3480, 5188 and 5155. Not NMP-3486 (due November 25) or GLE-88 (due November 27).
     - Holds: none. "What decided it" says no invoice is held, with what it compared. OVJ-311 is not held for Ohio Valley's address request, M-029: the bank-detail concept holds payments only for a bank-detail change, and an address is not one.
     - Copies: none. "What decided it" says so, with what it compared.
-    - Record entries proposed, each "inferred".
+    - The record entries your contract asks for, each "inferred", or the run's line that none are due this week.
     - "What decided it" gives a line of your contract for the list, the holds and the copies.
     - And you did the one-minute check on the list, in the chat.
     - Passed: all six.

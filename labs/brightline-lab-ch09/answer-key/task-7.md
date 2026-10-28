@@ -13,7 +13,7 @@ Task 7 carries checks 15 to 17 of the lab's 27.
     2. A reply saved in its drafts folder: draft, allowed.
     3. Emailing Lakeshore directly: act, because it sends. Hand it to a person, or not allowed: draft it instead. Your contract already says replies are drafts, and Maria sends them.
     4. Replying to confirm a bank-detail change: act. Hand it to a person.
-    5. Posting about the $9,800.00 invoice in the company-wide channel: suggest, to people nobody named. Not allowed there; tell a named person instead, such as Dave or Maria.
+    5. Posting about the $9,800.00 invoice in the company-wide channel: suggest, to people nobody named, or act, because a post is sent. Not allowed there; tell a named person instead, such as Dave or Maria.
     6. Setting an invoice to "held" in the accounting system: act. Hand it to a person, or ask first.
     - Passed: all six as above.
     - Missed: any act "without asking" or "if pre-approved"; case 3 "ask first"; case 4 anything but hand it to a person; or case 5 allowed as it was done.
@@ -26,7 +26,7 @@ Task 7 carries checks 15 to 17 of the lab's 27.
     - A named person reads the run history, on a set day.
     - A named person can pause either job, and there is a cost limit.
     - Passed: all seven.
-    - Missed: any of them missing; any other act "without asking"; or bank details with no person named, or with two people for the same case.
+    - Missed: any of them missing; an unattended exit that names no one to tell; any other act "without asking"; or bank details with no person named, or with two people for the same case.
 17. **The test.** `Test: Sunday night` decides that renaming the 212 scans is an act nobody asked for, in a folder that is not the worker's own, and that the Initiative lines do not allow it, such as the rule for any other act nobody asked for. The worker renames nothing. It may suggest a naming pattern to a named person. The test quotes the Initiative lines.
     - Passed: renames nothing, decided by quoted Initiative lines.
     - Missed: renames the scans; or "no line decides".

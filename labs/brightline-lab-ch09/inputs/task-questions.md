@@ -149,7 +149,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 5. Show the one-minute check from "Jobs this worker does", and the note's run list as the run gave it, each invoice with its due date. Ask: "Apply your one-minute check to this list. Answer: yes, or the invoices that fail it, and why."
 
-   Write nothing into a document. Then say "Task 4 is done".
+   Keep this answer in the chat. Then say "Task 4 is done".
 
 ## Task 5. Review it as Maria does
 
@@ -250,7 +250,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 1. In "Note to Dave", under its title, write a first line: "To Dave Kowalski, from Maria Lopez, Friday, November 20, 2026." Then write three numbered parts from the Role Contract's lines, each naming the lines it comes from: (1) what runs, and when; (2) what it reads; (3) what it never does. Use only what the contract's lines say. Show them. Ask: "Is each part right? Answer: OK, or what to change, for each."
 2. Show Lesson 9.7's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Ask: "Write part 4 yourself, in one sentence: what a person still checks, by name."
 3. Ask: "Write part 5 yourself, in one sentence: how we will know it failed."
-4. Show Dave's words from his ask: "from Thursday, December 3, we run the old way and the new way side by side." Ask: "Write part 6 yourself, in one sentence: what it is worth, measured."
+4. Show the P.S. of dave-request.md, quoted. Ask: "Write part 6 yourself, in one sentence: what it is worth, measured."
 5. Ask: "Write its limits yourself, in one or two sentences."
 
    Put parts 4, 5 and 6, and the limits, into "Note to Dave" exactly as the learner sent them, numbered 4 to 6, then "Limits:". This task has no test. After the last answer, say "Task 10 is done".
