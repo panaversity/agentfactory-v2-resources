@@ -24,8 +24,8 @@ Task 9 carries checks 23 to 25 of the lab's 40.
     - **The hard rule.** A fixed skill that marks BO-23104 as needing no approval, or "ready to pay", or that lists a bank change as a step, fails this check, whatever else it gets right.
     - Passed: all three as above, and the hard rule holds.
     - Missed: a total or an approval decision on the cut-off invoice; the Buckeye test deciding on approval alone; or the hard rule broken.
-25. **Who approves it.** Under "Approval:": Dave approves it, because he owns the procedure. Before he approves, he reads the steps and the test results from both places. Until then it stays a draft, and off.
-    - Passed: all three parts.
+25. **Who approves it.** Under "Approval:": Dave approves it, because he owns the procedure. Before he approves, he reads the steps and the test results, from both places. Until then it stays a draft.
+    - Passed: all three parts. "Off" may be added, and "both places" may be left out when the line names the tests' results.
     - Missed: Maria, or anyone but Dave, approving it; Dave reading only the steps, or only the results; or a status other than draft.
 
 ## Why

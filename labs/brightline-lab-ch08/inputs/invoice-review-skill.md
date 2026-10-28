@@ -2,7 +2,7 @@
 
 ## The skill: invoice-review, version 1.2
 
-Shared by another company for anyone to reuse. Maria found it on Thursday, November 5, 2026. It carries no scripts and no other files, and it asks for no connector.
+Shared by another company for anyone to reuse. Maria found it on Thursday, November 5, 2026. The skill is one file, SKILL.md, shown in full below.
 
 > ---
 > name: invoice-review

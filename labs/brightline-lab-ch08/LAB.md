@@ -292,7 +292,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI asks five questions, one at a time, in plain words. Write each step yourself, in your own words: steps 4 and 5 again, then three new steps. The AI puts each one in exactly as you wrote it. Steps 1 to 3 and step 6 stay as they are.
+1. In your lab chat, type "Task 9" and send it. The AI asks five questions, one at a time, in plain words. Write each step yourself, in your own words: steps 4 and 5 again, then three new steps, which the AI adds as steps 7, 8 and 9. The AI puts each one in exactly as you wrote it. Steps 1 to 3 and step 6 stay as they are.
 2. The AI asks what the skill's reply should say in the three tests. Answer one line for each.
 3. When the AI says "Ready for your test", type `Skill test: Buckeye BO-23104, alone` and send it. Then send `Skill test: Tri-County 5149, last lines missing, alone`, and then `Skill test: Tri-County 5149, with the concepts`.
 4. The AI asks who approves the skill, what that person reads first, and its status until then. Answer in a few words.
@@ -310,7 +310,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 10" and send it. The AI shows [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays?
+1. In your lab chat, type "Task 10" and send it. The AI shows Dave's change and [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays? The AI adds the two times Dave's ask gives: the draft before 9 and his approval at 9.
 2. When the AI says "Ready for your test", type `Test: Northern Maple` and send it. The project still holds the copy of November 4.
 3. The AI shows Maria's list of the places that hold a copy of the concepts, and [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/)'s three routes. For each place, answer: its route, how you refresh it today, and which approval it will hold once refreshed. The AI writes the refresh log, and replaces the project's copy.
 4. The AI shows Maria's working rule beside the concept's new sentence. Answer: keep it or remove it, and why.

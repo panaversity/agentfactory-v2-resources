@@ -14,7 +14,7 @@ Task 11 carries checks 31 and 32 of the lab's 40.
     - Skills: the invoice-review skill added, a draft, with Dave as its owner
     - Case files: kept, with invoice 5149's case file added, kept by Maria, every line dated, sourced and marked with its origin
     - Passed: all four fields, with each part above.
-    - Missed: policy version 3 still named as the only source; no owner, approver or maintainer; nothing said never to be a source; the skill called approved; or 5149's case file missing.
+    - Missed: policy version 3 still named as the only source; no owner, approver or maintainer; a never-a-source line that leaves out the onboarding notes, a status list or memory, or no such line; the skill called approved; or 5149's case file missing.
 32. **The currency line, now policy, and its log line.** Draft 4's "Any invoice not in US dollars: Dave's rule. It goes to Dave, whatever the amount." is replaced: such an invoice needs Dave's approval before payment, whatever the amount, from the threshold concept, approved on Monday, November 9, 2026. The change log gets a line dated Monday, November 9, 2026, naming Dave and what changed. Every line you did not change stays as Draft 4 has it.
     - Passed: the line replaced as above, and the log line.
     - Missed: the line kept as Dave's rule; a line that only sends it to Dave, with no approval before payment; no log line, or one with no date or no Dave; or other lines of Draft 4 rewritten.
@@ -30,6 +30,7 @@ Draft 4 sent invoices in other currencies to Dave as his own rule. Since Novembe
 - Draft 4's line on citing the policy's version and section, kept, or changed to the concept's title and approval date.
 - Draft 4's line on asking Dave when the policy has no answer, kept, or changed to the concepts.
 - The order of the lines within a field.
+- A chat left out of the never-a-source line.
 - Draft 4's other skills, kept beside the invoice-review skill.
 - A remark about the lab's dates.
 

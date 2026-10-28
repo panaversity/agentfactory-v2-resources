@@ -9,13 +9,14 @@ The answers for Task 4 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 Task 4 carries checks 8 and 9 of the lab's 40.
 
 8. **Five concepts, each with the clauses it needs.** Each is a draft, with its sources, and the clauses' own words:
-   - invoice approval threshold: policy 4.1, 4.2 and 4.3
+   - invoice approval threshold: policy 4.1 and 4.2
    - weekly payment run and due dates: policy 2.1, 3.1, 3.2 and 3.3
+   - policy 4.3, Dave's approval of each whole run, in either of those two concepts, or in both
    - duplicate invoices: policy 6.1
    - changes to vendor bank details: policy 5.1, 5.2, 5.3 and 5.5. Clause 5.4 may be added too
    - capitalization of purchases: the memo's points 1 to 4
    - Passed: all five as above, each marked draft.
-   - Missed: the bank-detail concept without 5.5; the payment-run concept without 2.1 or 3.3; a clause missing from any concept; a concept marked stable or approved before Dave's approval; or a concept that rewrites a clause in other words.
+   - Missed: the bank-detail concept without 5.5; the payment-run concept without 2.1 or 3.3; 4.3 in neither concept; a clause missing from any concept; a concept marked stable or approved before Dave's approval; or a concept that rewrites a clause in other words.
 9. **What the threshold concept does not cover.** Its "Not covered" line says that policy version 3 does not cover invoices in other currencies, and that Dave decides.
    - Passed: a line that says both.
    - Missed: no such line; or a line that copies Dave's routing rule into the concept, such as "invoices not in US dollars go to Dave", as if the policy said it.

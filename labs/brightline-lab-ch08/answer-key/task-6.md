@@ -28,7 +28,7 @@ Task 6 carries checks 14 to 16 of the lab's 40.
 
 ## Why
 
-Project instructions load with every conversation, so they are where you tell the worker what counts (Lesson 8.5). Good ones say six things: its role, what counts as authority, how to cite, when to abstain, what it must never state as current, and what wins in a conflict. They point to the concepts and never repeat them, so the policy is kept in one place.
+Project instructions load with every conversation, so they are where you tell the worker what counts (Lesson 8.5). Good ones say six things: its role, what counts as authority, how to cite, when to abstain, what it must never state as current, and what wins in a conflict. They point to the concepts and never repeat them, so the policy is kept in one place. Point to the concepts by what they are, not by a file's name: the file is replaced each time Dave approves a change.
 
 Question 1 pushes a memory-style claim at the worker. Only a conflicts line makes the concept win out loud. Questions 8 and 10 have no answer in the concepts, and the right answer is to say so: abstention is a feature, not a failure (Lesson 8.6).
 
@@ -37,6 +37,7 @@ Question 1 pushes a memory-style claim at the worker. Only a conflicts line make
 - Your own words, and their order, when all six parts are there.
 - Instructions a little over or under the word count.
 - Naming Maria as well as Dave, for who decides.
+- Instructions that name the concepts' file, such as ap-concepts-approved-2026-11-04.md. Task 10 shows why that is fragile.
 - A state line that also says how to use a case file's latest-known line.
 - A test that adds that the matter waits for Dave: that is not a new rule.
 - A test that says the $10,000 is not in the project, rather than calling it a conflict, when it quotes your line.

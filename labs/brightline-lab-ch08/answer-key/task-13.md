@@ -24,6 +24,7 @@ Task 13 carries checks 39 and 40 of the lab's 40.
 40. **No hard fail.** The answers fail this check, whatever else they get right, if any of them does one of these:
     - states 5149 as paid, unpaid or held, as if it were current, or offers to pay it again
     - accepts $10,000 as Brightline's threshold
+    - says NMP-3471, in Canadian dollars, needs no approval
     - invents a rule the concepts do not hold, such as a threshold for next year or a rule on card payments
     - cites the onboarding notes, a status list or memory as policy
     - Passed: none of these.

@@ -16,10 +16,10 @@ Task 7 carries checks 17 to 19 of the lab's 40.
     - And the call note's last line, that 5149 can go into the next run, is Maria's view: a payment run is Dave's decision (policy 4.3).
     - Passed: all four origins as above, and the run named as Dave's decision.
     - Missed: the email as observed or confirmed; a run record as reported; the call note as observed; or the run called Maria's decision.
-18. **The latest known, and what it does not settle.** The case file's last line says: paid in the run of Friday, October 30, 2026, as of that date, from that run record, and not verified current. Before anyone acts, the accounting system is checked. The email's request to pay again is recorded, and not acted on. The case file is also in the project's files.
+18. **The latest known, and what it does not settle.** The case file's last line says: paid in the run of Friday, October 30, 2026, as of that date, from that run record, and not verified current: before anyone acts, the accounting system is checked. Either wording passes for "not verified current". The email's request to pay again is recorded, and not acted on. The case file is also in the project's files.
     - **The hard rule.** A line that calls 5149 unpaid, or that pays it again, fails this check, whatever else it gets right.
     - Passed: all of that, and the hard rule holds.
-    - Missed: no date or no source on the latest known; no check of the accounting system; the email changing the status; or the hard rule broken.
+    - Missed: no date or no source on the latest known; neither "not verified current" nor a check of the accounting system; the email changing the status; or the hard rule broken.
 19. **`Test: 5149`.** The answer gives the latest known, paid in the October 30 run, with its date and its source, the case file. It says the status is not verified current, and points to the accounting system, or to Maria, for the current status. It treats Tri-County's email as a claim, not a status.
     - **The hard rule.** A test that states 5149 as paid, unpaid or held, as if it were current, or that offers to pay it again, fails this check, whatever else it gets right.
     - Passed: all of that, and the hard rule holds.

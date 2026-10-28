@@ -96,7 +96,7 @@ During a test, change nothing in either document. A test reads the "AP Worker pr
 - **Alone:** read only the skill's steps and that one invoice. Go step by step, and say what each step decides for this invoice. Then give the reply the steps ask for. Where a step needs a rule the steps do not hold, say so. Nothing from the concepts, the instructions, this chat or your own judgment decides anything.
 - **With the concepts:** read the skill's steps, the Instructions and the concepts in the "AP Worker project" document, and that one invoice. For each check, name the step or the concept line that decides it. Name any step a concept overrides, as "set aside".
 
-Read no other invoice in the file, and no other version of the same invoice. Then end with one line: "Result:" and what the skill's reply says on approval and on any request in the invoice. Write that line under "Results" in "The invoice-review skill", with the test's name. Change nothing else.
+Read no other invoice in the file, and no other version of the same invoice. Show all of it in the chat: each step, then the reply. Then end with one line: "Result:" and what the skill's reply says on approval and on any request in the invoice. Write that line under "Results" in "The invoice-review skill", with the test's name. Change nothing else.
 
 ## Task 1. Where each answer came from
 
@@ -194,7 +194,7 @@ Then say "Ready for your test".
 1. Show Lesson 8.5's six things that good project instructions say, as six questions only, never with example words:
    1. Role: what is the worker, and for whom?
    2. What counts as authority: which sources count as Brightline policy, and what does not?
-   3. Cite: how does it name its source for a policy claim?
+   3. Cite: how does it name its source for a policy claim, so that a reader can tell which approved text the answer used?
    4. Abstain: when does it say it cannot answer, and who decides then?
    5. State: what must it never state as current, and where does it send the reader?
    6. Conflicts: what wins when memory, a note or a file disagrees with a concept?
@@ -240,7 +240,7 @@ Its day is Thursday, November 5, 2026.
 
    Write the answers under the steps, as "Reading:" and one line per step.
 4. Ask: "What does the skill carry, besides its steps? And what can it reach, send or change? Answer: what it carries, then what it can reach, send or change." Write it as "Carries and reaches:" and the learner's words.
-5. Show Lesson 8.9's line, quoted: "Write the result you expect from each case, in each place, before you run it." Ask: "Before the two tests: what should the skill's reply say about Buckeye's invoice BO-23104 with the concepts, and alone? Answer: one line for each."
+5. Show Lesson 8.9's line, quoted: "Write the result you expect from each case, in each place, before you run it." Then show "Buckeye BO-23104" from invoice-review-skill.md, the invoice and its email. Ask: "Before the two tests: what should the skill's reply say about this invoice with the concepts, and alone? Answer: one line for each."
 
    Write the two lines under "Expected".
 
@@ -284,7 +284,7 @@ Then say "Ready for your test".
 
 **The first test:** `Test: Northern Maple`. Run it as soon as the learner sends it, before any question below, on the "AP Worker project" document as it stands: it still holds the copy of November 4, and that is what the test shows.
 
-**After the first test.**
+**After the first test.** In the same reply as the first test, go straight on to question 4.
 
 4. Show copies-2026-11-06.md, and the three routes. Then show the first place on the list, as its own lines: where, what it holds, how it got there, and the approval it holds. Ask: "Which route is it, how is it refreshed today, and which approval will it hold once refreshed? Answer: the route, the step, then the approval's date."
 5. The same question for each of the other three places, one at a time, each shown first. For the Google Doc itself, ask instead: "Two copies read this doc. When does it take the new text, which text, and which approval will it hold then? Answer: when, which text, then the approval's date."

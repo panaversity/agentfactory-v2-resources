@@ -13,7 +13,7 @@ Task 3 carries checks 6 and 7 of the lab's 40.
    - Topics 2, 3 and 5 are kept: they are how Maria likes the work done. Topics 1 and 6 may be kept or deleted: they hold no rule, amount or status.
    - Memory is read again on a set day, such as the first Monday of each month, and after any answer that surprises you. Each time, the date and what was deleted are written down.
    - Passed: all three.
-   - Missed: topic 4 kept, or rewritten as $5,000; topic 2, 3 or 5 deleted; or an audit with no set day, or with nothing written down.
+   - Missed: topic 4 kept, or rewritten as $5,000; topic 2, 3 or 5 deleted; or an audit with no set day, no reading after a surprising answer, or nothing written down.
 7. **Memory kept apart, and the test.**
    - Claude: each project keeps its own memory. ChatGPT: choose project-only memory, when the project is made.
    - `Test: Buckeye`: invoice BO-23104, $6,150.00, is over $5,000.00, so it needs Dave's approval before payment, from the policy, section 4.1.
