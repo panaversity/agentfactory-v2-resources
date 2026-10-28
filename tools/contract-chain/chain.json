@@ -45,7 +45,7 @@
     },
     {
       "name": "Lab 11 ships Draft 7",
-      "comment": "Source: Lab 10's sample Draft 7 (labs branch lab/brightline-lab-ch10-one-chat at 23b0a09, built on Lab 9's sample Draft 6 at 0cc9685). This branch carries an identical copy until Lab 10's pull request merges.",
+      "comment": "Source: Lab 10's sample Draft 7 (labs branch lab/brightline-lab-ch10-one-chat at 22c5db9, built on Lab 9's final sample Draft 6 at 6fb2029). This branch carries an identical copy until Lab 10's pull request merges.",
       "shipped": "labs/brightline-lab-ch11/inputs/role-contract-draft-7.md",
       "source": "contracts/role-contract-draft-7.md",
       "cuts": [
@@ -61,8 +61,8 @@
         },
         {
           "name": "(3) That change's line in the change log",
-          "before": "- Monday, November 23, 2026, Dave Kowalski: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n",
-          "after": "- Monday, November 23, 2026, Dave Kowalski: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
+          "before": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n",
+          "after": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
         }
       ]
     },

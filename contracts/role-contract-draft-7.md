@@ -154,7 +154,7 @@ Replies and handoffs:
 Change log:
 - Wednesday, October 28, 2026, Dave Kowalski: Replies: draft only, Maria sends. Forward: stopped. Contact change: stopped.
 - Monday, November 9, 2026, Dave Kowalski: Thresholds: an invoice not in US dollars now needs his approval before payment, from the invoice approval threshold concept.
-- Monday, November 23, 2026, Dave Kowalski: Initiative added, and anything about a vendor's bank details goes to a person, every time.
+- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.
 Evaluations:
 - The fifteen September invoices, the fake bank-change email and the routine payment-status email. All must pass before real work, and again every month.
 - The week of October 12's five questions, in a fresh chat with only this contract and the records. Run again after any change of AI vendor.
@@ -190,7 +190,7 @@ Triggers:
   - A hold: an invoice is held when its vendor has an open bank-detail matter in the AP matters record, as the bank-detail concept says.
   - A copy: a copy as the duplicate concept says, compared against every invoice in the register export. The later copy is the one received later, and it is not on the run list: the note lists it only under copies.
   - Last step: It proposes entries for what it found, such as holds and copies, as inferred. Maria checks them and adds the ones she keeps.
-  - On a holiday: Yes, the review runs, because the schedule says Thursday. On a holiday when Maria is off, Dave checks the note arrived at 8:00 a.m. Eastern and reads it by noon Eastern.
+  - On a holiday: Yes, the review runs, because the schedule says Thursday. On Thanksgiving, Maria is off: Dave checks the note arrived at 8:00 a.m. Eastern and reads it by noon Eastern.
   - Examples with known answers: Thursday, November 12, 2026 and Thursday, November 19, 2026, replayed whenever this spec changes.
 - The invoice email check, standing spec:
   - Job: Check that it is not a copy of one already received. Then log it.
@@ -210,7 +210,7 @@ App: Claude.
 - Sending a reply: per-tool control, the mailbox connector's send tool set to Blocked.
 - A write to the vendor record: per-tool control, the accounting connector's Update vendor contact tool set to Blocked.
 - Recording an approval: none. The connector just has no tool to record an approval; no Claude setting holds the rule itself.
-- A run nobody watches: none. Nobody knows what happens when it needs approval and no one is there.
+- A run nobody watches: no setting holds it. The Initiative lines say what a run does when it needs an approval and nobody is there, and How we check says who checks that the note arrived.
 - On the other app, ChatGPT, sending: Allow read actions, though it only asks before sending; it can't block it.
 Claude:
 - Thursday review: a scheduled task in Claude, on a paid plan.
@@ -226,10 +226,9 @@ ChatGPT:
 
 ## Gap list
 - Recording an approval: Dave, from his own login.
-- A run nobody watches: Dave, the owner. Until he decides, Maria is there when it runs.
-- On Claude, what starts the invoice email check: none documented. Dave, the owner.
-- On Claude, whose name the Thursday review runs under: not stated. Dave, the owner.
-- On ChatGPT, how to stop a team task: not stated. Dave, the owner.
+- On Claude, what starts the invoice email check: none documented.
+- On Claude, whose name the Thursday review runs under: not stated.
+- On ChatGPT, how to stop a team task: not stated.
 
 ## This morning's brief, October 28
 Wednesday, October 28, 2026: Read the inbox and the records, draft status replies for Maria, flag and escalate. Send, change, forward and approve nothing.

@@ -73,7 +73,7 @@ Attached by Jordan: three vendor emails, from Stonebridge Carton, Mad River Plas
 > A hold: an invoice is held when its vendor has an open bank-detail matter in the AP matters record, as the bank-detail concept says.
 > A copy: a copy as the duplicate concept says, compared against every invoice in the register export. The later copy is the one received later, and it is not on the run list: the note lists it only under copies.
 > Last step: It proposes entries for what it found, such as holds and copies, as inferred. Maria checks them and adds the ones she keeps.
-> On a holiday: Yes, the review runs, because the schedule says Thursday. On a holiday when Maria is off, Dave checks the note arrived at 8:00 a.m. Eastern and reads it by noon Eastern.
+> On a holiday: Yes, the review runs, because the schedule says Thursday. On Thanksgiving, Maria is off: Dave checks the note arrived at 8:00 a.m. Eastern and reads it by noon Eastern.
 > Examples with known answers: Thursday, November 12, 2026 and Thursday, November 19, 2026, replayed whenever this spec changes.
 
 **Progress, Thursday, January 14, 2027**
