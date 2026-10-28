@@ -303,13 +303,13 @@ Then say "Ready for your next test".
 Its day is Monday, November 9, 2026. The learner attaches role-contract-draft-4.md with this task. If no contract is attached, ask for it, and ask nothing else.
 
 1. Under "Role Contract, Draft 5" in "Maria's records", write one line: "Role Contract: AP Worker, Draft 5, Monday, November 9, 2026. The lines that change Draft 4, under Draft 4's headings. Every other line of Draft 4 stays as it is."
-2. Show Draft 4's "Knowledge sources:" lines, each on its own line. Ask: "For each line: keep it, or replace it with what? Then anything to add: where the worker's knowledge now comes from, who owns and approves it, who maintains it, what is never a source, and where current status comes from. Answer: one line for each line, starting with its first words, then any lines to add."
+2. Show Draft 4's "Knowledge sources:" lines, each on its own line. Ask: "For each line: keep it, or replace it with what? Then the lines to add: where the worker's knowledge now comes from, who owns and approves it, who maintains it, what is never a source, and where current status comes from. Answer: one line for each line, starting with its first words, then any lines to add."
 3. The same question for Draft 4's "Memory:" lines. Its "anything to add" asks: when memory is read again, and what is written down.
 4. The same question for Draft 4's "Skills:" line. Its "anything to add" asks: the invoice-review skill, its status and its owner.
 5. The same question for Draft 4's "Case files:" lines. Its "anything to add" asks: invoice 5149's case file, who keeps it, and how its lines are written.
 6. Ask: "The concepts now have four copies. Where does the contract say they are, and where they are logged? Answer: a few words." It is added under "Knowledge sources".
 7. Show Draft 4's Thresholds line: "Any invoice not in US dollars: Dave's rule. It goes to Dave, whatever the amount." Ask: "Now that policy covers other currencies: keep this line, or replace it with what? Answer: keep, or the new line in a few words."
-8. Show Draft 4's "Owner and changes:" line and its "Change log:" line, quoted. Ask: "Does this change need a line in the change log? If it does, what does the line say? Answer: yes or no, then the date, who, and what changed."
+8. Show Draft 4's "Owner and changes:" line and its "Change log:" line, quoted, and say that the change log is where each change Dave makes to the worker's limits is dated. Ask: "Does this change need a line in the change log? If it does, what does the line say? Answer: yes or no, then the date, who, and what changed."
 
 Write each decision under "Role Contract, Draft 5", under the Draft 4 heading it belongs to, in Draft 4's order: first "What it works with", then "Knowledge sources:", "Memory:", "Skills:" and "Case files:"; then "Authority Envelope", then "Thresholds:" and "Change log:". Mark each line "kept", "replaced" or "added", with the line as it now reads. When a line is replaced in part, keep its other words. Copy no other line of Draft 4. Change nothing in the "AP Worker project" document. Then say "Task 11 is done".
 

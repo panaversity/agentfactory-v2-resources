@@ -33,7 +33,7 @@ Task 5 carries checks 10 to 13 of the lab's 40.
 
 Approval is an event with a date, and it does not move the date a rule took effect (Lesson 8.6). The $5,000 rule has applied since Dave approved policy version 3 on September 1. What happened on November 4 is that its concept was approved.
 
-Nothing serves until it is approved, and what competes comes out (Lesson 8.7). The notes were never approved, and they disagreed with the policy. The status list held state, which belongs in the accounting system and is never kept as a file. The policy itself is now split into concepts, so keeping it too would give the worker the same rules twice.
+Nothing serves until it is approved, and what competes comes out (Lesson 8.7). The notes were never approved, and they disagreed with the policy. The status list held state, which belongs in the accounting system and is never kept as a file. The policy itself is now split into concepts, so keeping it too would give the worker the same rules twice. Clauses no concept carries, such as 5.6 on new vendors, leave the project with the file: the worker now abstains on them, and Dave decides whether they need concepts of their own.
 
 On Tuesday morning, the worker had two answers to most questions and nothing to choose between them. Now it has one approved source for each rule. 5149 is the exception: once the old list is gone, nothing in the project says where it stands, and the honest answer is that. Task 7 gives it a case file.
 

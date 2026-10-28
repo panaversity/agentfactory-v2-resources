@@ -21,7 +21,7 @@ Task 11 carries checks 31 and 32 of the lab's 40.
 
 ## Why
 
-A project can be deleted, a vendor changed, and the people who set it up can leave. The Role Contract is the page that outlasts them (Lesson 8.7). So it says where the worker's knowledge comes from, who owns and keeps it, and what is never a source. Draft 4 named the policy file as the only source, and nobody had loaded it. Draft 5 names the five concepts, and where their copies are.
+A project can be deleted, a vendor changed, and the people who set it up can leave. The Role Contract is the page that outlasts them: its "What it works with" field, from Chapter 2, is where a worker's knowledge is written down, with the owner and the maintainer Lesson 8.7 names. So it says where the worker's knowledge comes from, who owns and keeps it, and what is never a source. Draft 4 named the policy file as the only source, and nobody had loaded it. Draft 5 names the five concepts, and where their copies are.
 
 Draft 4 sent invoices in other currencies to Dave as his own rule. Since November 9 that is policy, and it asks for his approval before payment, not only a flag. The contract points to the concept, so the rule stays in one place. Only Dave may change the envelope, and Draft 4 logs every change he makes, so this one is logged too (Chapter 7).
 

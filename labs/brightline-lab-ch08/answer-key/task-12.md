@@ -9,13 +9,15 @@ The answers for Task 12 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second
 Task 12 carries checks 33 to 38 of the lab's 40, one for each item in the setup.
 
 33. **`ap-concepts-approved-2026-11-09.md`: keep.** It holds the concepts Dave approved on November 4, with his change of November 9, and Dave says they are still current.
-    - Missed: replace or remove. The instructions tell the worker to answer from the approved concepts, so it needs this copy. An uploaded copy needs replacing only when what its owner approved has changed since the upload.
+    - Passed also: remove, when the reason is that the Drive connector to AP / Approved knowledge already gives the worker the same approved concepts, and that connector is kept.
+    - Missed: replace; or remove with no such reason. The instructions tell the worker to answer from the approved concepts, so it needs this copy. An uploaded copy needs replacing only when what its owner approved has changed since the upload.
 34. **`invoice-5149-record.md`: keep.** It is 5149's case file, every line dated and sourced, and its latest-known line says it is not verified current. Nothing has been added to the case file since November 4.
     - Missed: remove, because question 7 would lose its history; or replace, because the case file has not changed since the upload.
 35. **`vendor-terms-export-2026-09-30.xlsx`: remove.** It is a frozen copy of September 30's terms, and Dave says payment terms come only from the vendor records in the accounting system.
     - Missed: keep, or replace. A newer export would still be a copy of what only the vendor records may answer.
 36. **The Drive connector to the AP / Approved knowledge folder: keep.** It reaches one folder, which holds only the approved concepts, and it was used today.
-    - Missed: rescope or remove. It already reaches only the one folder the work needs.
+    - Passed also: remove, when the reason is that the uploaded concepts file already gives the worker the same approved concepts, and that file is kept.
+    - Missed: rescope; remove with no such reason; or both copies removed. It already reaches only the one folder the work needs.
 37. **The Drive connector to the whole HR folder: remove.** The work stopped using it after the October audit, and it reaches far more than AP needs.
     - Missed: keep, or rescope. The work uses none of it, so there is nothing to point it at.
 38. **The Gmail connector to Sam's whole mailbox: rescope and reconnect it, to the AP inbox only, under someone who stays, before Friday, December 18.** It runs on Sam's account, which closes when Sam leaves Brightline, and it reaches Sam's whole mailbox, while the project's instructions say vendor emails come to the AP inbox.

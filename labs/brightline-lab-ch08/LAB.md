@@ -2,7 +2,7 @@
 
 Chapter 8 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), so you can do the lab without the book.
 
-On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. It takes about three hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. It takes about three and a half hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
 **What you will learn:**
 
@@ -10,11 +10,11 @@ On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, an
 - To restart, summarize or persist a long chat, and to move a rule out of a chat into the project's instructions.
 - To keep rules, amounts and statuses out of memory, and to read memory again on a set day.
 - To write approved rules as concepts, one topic each, with an owner, an approval, an effective date and a review date.
-- To load a project with approved knowledge only, and to write instructions that say what counts, cite, abstain and settle conflicts.
+- To load a project with approved knowledge only, and to write instructions that say what counts, cite, abstain, never state a status as current, and settle conflicts.
 - To keep the history of one invoice in its case file, with the origin of every line.
 - To read a ready-made skill, test it in two places, and fix its steps so they are right on their own.
 - To carry one approved change through every copy, each by its route, and log it.
-- To write where a worker's knowledge comes from into its Role Contract.
+- To write down, in the worker's Role Contract, where its knowledge comes from, who owns it, and what is never a source, so the next keeper finds it.
 - To review what a project holds and reaches.
 
 ## Before you start (5 minutes)
@@ -280,7 +280,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 4. When the AI says "Ready for your test", type `Skill test: Buckeye BO-23104, with the concepts` and send it. Then send `Skill test: Buckeye BO-23104, alone`.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**What a skill test is.** "Skill test:", an invoice's name, then "alone" or "with the concepts", is a test that reads the skill's steps. "Alone" reads only the steps and that one invoice, and says what each step decides. "With the concepts" reads the steps beside the project's instructions and concepts, and names any step a concept sets aside. It is [8.9](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s test in two places: a test project with the concepts, and a plain chat without them.
+**What a skill test is.** "Skill test:", an invoice's name, then "alone" or "with the concepts", is a test that reads the skill's steps. "Alone" reads only the steps and that one invoice, and says what each step decides. "With the concepts" reads the steps beside the project's instructions and concepts, and names any step a concept sets aside. It stands in for [8.9](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s test in two places: a test project with the concepts, and a plain chat without them.
 
 **Checkpoint.** Checks 20 to 22 passed.
 
@@ -328,8 +328,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, attach `role-contract-draft-4.md` from your folder, type "Task 11", and send them together.
-2. The AI shows Draft 4's lines on knowledge sources, memory, skills and case files, one field at a time. For each line, answer: keep it, or replace it with what, in a few words. Then say any line to add.
-3. The AI asks where the contract says the concepts' copies are. Then it shows Draft 4's line on invoices not in US dollars. Answer: keep it, or replace it with what. Last, it asks whether this change needs a line in the envelope's change log, and what it says.
+2. The AI shows Draft 4's lines on knowledge sources, memory, skills and case files, one field at a time. For each line, answer: keep it, or replace it with what, in a few words. Then give the lines to add: the AI names the parts each field needs.
+3. The AI asks where the contract says the concepts' copies are. Then it shows Draft 4's line on invoices not in US dollars. Answer: keep it, or replace it with what. Last, it asks whether this change needs a line in the Authority Envelope's change log, where each change Dave makes to the worker's limits is dated (Chapter 7), and what it says.
 4. The AI writes Draft 5's changed lines into "Maria's records". Every other line of Draft 4 stays as it is. This task has no test.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -365,7 +365,7 @@ Maria has exported the project's setup. Other people have added to it since your
 **What you do:**
 
 1. In your lab chat, type "Task 13" and send it. The AI shows your project's instructions as one block, and lists the files in your project document.
-2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `ap-worker-project.md`.
+2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-project.md`. Download "Maria's records" the same way: it is the record, and you keep it.
 3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). A Claude project keeps its own memory.
 4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else. The file holds the instructions too, and the project's memory and chat as you left them. That is fine: your instructions say which of it counts.
 5. Open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
@@ -414,7 +414,7 @@ With an account on the other AI vendor, you can build the same project there too
 ## If something goes wrong
 
 - **The AI put a document in the chat, not beside it.** Ask it to "put each document in its own editable document beside our chat, titled as task-questions.md says: a Claude Doc in Claude or a Writing block in ChatGPT."
-- **Your app shows no document beside the chat.** Keep each document in the chat. After every change, ask the AI to print that whole document, and tell it once that "the document" is the last whole copy it printed. In Task 13, save the project document's text in a file on your computer, named `ap-worker-project.md`, and upload that file.
+- **Your app shows no document beside the chat.** Keep each document in the chat. At the end of each task, and before each test, ask the AI to print that whole document, and tell it once that "the document" is the last whole copy it printed. In Task 13, save the project document's text in a file on your computer, named `ap-worker-project.md`, and upload that file.
 - **The AI made a new document instead of changing one it had.** Say: "Change the first document. Do not make a new one."
 - **The AI wrote into the wrong document.** Say which line, and where it belongs: "That line goes in Maria's records, not in the project."
 - **The AI added a place, a clause, a date, a person or a rule you did not give.** Say which line, and send your decision again: "Write only what I decided."
@@ -423,6 +423,7 @@ With an account on the other AI vendor, you can build the same project there too
 - **A test quotes a line that is not in your document, or misses a line you added.** Say: "Read the documents again." Then send the test again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **In Task 13, the answers show the worker read no file.** Check the upload, delete the chat, and ask again in a new one, before you attach the key.
+- **Late in the lab, the AI forgets a rule from your brief.** This is the long chat of [8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/). Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
 ## Apply it to your vertical (15 minutes)
@@ -441,7 +442,7 @@ Check it yourself against [8.7](https://agentfactory2.panaversity.org/managing-a
 
 ## When you are done
 
-You are done when every check has passed, your own project answered the ten questions from your records alone, and your own concept is written. Keep the downloaded "AP Worker project" document: it holds your first KSoR, five approved AP concepts, with the instructions that make a worker answer from them. It is the knowledge piece of the Part II capstone ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/)).
+You are done when every check has passed, your own project answered the ten questions from your records alone, and your own concept is written. Keep both downloads. "Maria's records" holds your first KSoR, five approved AP concepts, with their refresh log, the fixed skill, Draft 5's knowledge lines and the review. It is the knowledge piece of the Part II capstone ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/)). "AP Worker project" holds the copy a worker answers from, with the instructions that make it do so. Last, read your app's saved memory, and delete anything this lab saved about Brightline ([8.4](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)).
 
 **At work:** when an AI answer is wrong, find where it came from before you change any words. Then put that kind of information in its own place.
 
