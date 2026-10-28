@@ -1,10 +1,10 @@
-"""Make Dave's approved memo for Lab 6, Part F, of The AI Agent Factory, Second Edition.
+"""Make Dave's approved memo for Lab 6's Task 10, of The AI Agent Factory, Second Edition.
 
 python3 tools/brightline-lab-ch06/make-approved-memo.py        (from the repository's root)
 
-Writes labs/brightline-lab-ch06/part-f/approved-memo-2026-11-06.md: the payment run for Friday,
+Writes labs/brightline-lab-ch06/approved-memo-2026-11-06.md: the payment run for Friday,
 November 6, 2026, which Dave approved on Thursday, November 5. It is the next week's run, so it
-gives away nothing from Lab 6's review of the October 30 package. Task F1 adapts it for Linda.
+gives away nothing from Lab 6's review of the October 30 package. Task 10 adapts it for Linda.
 What the lab teaches is kept out of the file, and the script checks that it stays out: Linda and
 her three needs, and Dave's later hold on Midwest's 4588, which only his message gives. The script
 also checks every total. Every name and number is invented."""
@@ -13,7 +13,7 @@ from decimal import Decimal as D
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "labs/brightline-lab-ch06/part-f/approved-memo-2026-11-06.md"
+OUT = ROOT / "labs/brightline-lab-ch06/approved-memo-2026-11-06.md"
 
 PAY = [  # vendor, invoice, amount
     ("Midwest Packaging", "4579", "5480.00"),

@@ -39,9 +39,82 @@
       ]
     },
     {
-      "name": "Lab 8 ships Draft 4 (to come)",
-      "comment": "Lab 8 adds this entry: shipped labs/brightline-lab-ch08/inputs/<its Draft 4>, source contracts/role-contract-draft-4.md (Lab 7's sample final), with Lab 8's named cuts.",
-      "enabled": false
+      "name": "Lab 8 ships Draft 4",
+      "shipped": "labs/brightline-lab-ch08/role-contract-draft-4.md",
+      "source": "contracts/role-contract-draft-4.md",
+      "cuts": []
+    },
+    {
+      "name": "Lab 9 ships Draft 5",
+      "shipped": "labs/brightline-lab-ch09/inputs/role-contract-draft-5.md",
+      "source": "contracts/role-contract-draft-5.md",
+      "cuts": [
+        {
+          "name": "(1) What it owes: Maria's two jobs of Monday, November 9, 2026 (Chapter 9's overview) replace the register responsibility",
+          "before": "- Build the weekly invoice register for the payment run.\n",
+          "after": "- Draft the Thursday pre-run note for Friday's payment run.\n- Check each invoice email, and log it.\n"
+        },
+        {
+          "name": "(2) The Monday register KPI goes: by Chapter 9 the register is the accounting system's export (9.4)",
+          "before": "- Register ready for review by 10 a.m. Monday.\n",
+          "after": ""
+        },
+        {
+          "name": "(3) Case files: 5149's case file widens to Maria's AP matters record, one record per matter (9.4: SSoR is the record of each matter, its case file)",
+          "before": "- Invoice 5149's case file, kept by Maria: every line dated, sourced and marked with its origin.\n",
+          "after": "- The AP matters record, kept by Maria in the AP shared folder: one record per matter, 5149's among them, every line dated, sourced and marked with its origin.\n"
+        },
+        {
+          "name": "(4) Triggers: the two jobs Maria set up on Monday, November 9, 2026, in her account, with her own words (Chapter 9's overview)",
+          "before": "Triggers:      Within one hour of an invoice reaching the AP inbox. Monday 6 a.m. for the register.\n",
+          "after": "Triggers:\n- Both jobs run in Maria's account. Maria set them up on Monday, November 9, 2026.\n- The Thursday pre-run review: every Thursday at 7:00 a.m., on a schedule. Its instructions, as Maria wrote them: \"Review the open invoices in the register for Friday's payment run. Use the five AP concepts. List the invoices to pay, mark the ones that need Dave's approval, flag any duplicates, and write Dave a short pre-run note.\"\n- The invoice email check: each time an invoice email reaches the AP inbox. Its instructions, as Maria wrote them: \"Check that it is not a copy of one already received. Then log it.\" Its input: the email.\n"
+        },
+        {
+          "name": "(5) C45: an unknown sender goes to Maria, one target per case, as the fact sheet settled; lines 87 and 88 of Lab 8's sample both covered it, one to Maria and one to Dave",
+          "before": "- A sender not in the vendor records asks to be set up or paid, or gives bank details. It goes to Dave.\n",
+          "after": "- A sender not in the vendor records asks to be set up or paid, or gives bank details. It goes to Maria. Only Dave approves setting it up or paying it.\n"
+        }
+      ]
+    },
+    {
+      "name": "Lab 10 ships Draft 6",
+      "comment": "Lab 10 ships Lab 9's sample Draft 6 whole, with no cut. contracts/role-contract-draft-6.md here is a copy of Lab 9's sample from labs branch lab/brightline-lab-ch09-one-chat (6fb2029, final) until Lab 9 merges; whichever of Labs 9 and 10 merges second keeps Lab 9's.",
+      "shipped": "labs/brightline-lab-ch10/inputs/role-contract-draft-6.md",
+      "source": "contracts/role-contract-draft-6.md",
+      "cuts": []
+    },
+    {
+      "name": "Lab 10's sample Draft 7 is its Draft 6 with Tasks 2, 7 and 8's lines",
+      "comment": "The sample Lab 11 ships. Each cut adds one line a Lab 10 task decides, after the last line of its heading in Draft 6, with the learner's words from the author run. Nothing else changes. Rebuild with check.py --write when Draft 6 changes.",
+      "shipped": "contracts/role-contract-draft-7.md",
+      "source": "labs/brightline-lab-ch10/inputs/role-contract-draft-6.md",
+      "cuts": [
+        {
+          "name": "(1) The new date",
+          "before": "Role Contract: AP Worker, Draft 6, Monday, November 23, 2026",
+          "after": "Role Contract: AP Worker, Draft 7, Friday, December 11, 2026"
+        },
+        {
+          "name": "(2) Task 7: the small-supplier promise waits for Dave's approval (Knowledge sources)",
+          "before": "Each copy, and the approval it holds, is logged in the refresh log in Maria's records.\n",
+          "after": "Each copy, and the approval it holds, is logged in the refresh log in Maria's records.\n- The small-supplier promise becomes a sixth concept only once Dave approves it. Until then, the five concepts stay the only knowledge.\n"
+        },
+        {
+          "name": "(3) Tasks 2 and 8: never rank staff, never sign (Never automated)",
+          "before": "money leaves Brightline only after Dave approves the run, from his own login.\n",
+          "after": "money leaves Brightline only after Dave approves the run, from his own login.\n- A16, score or rank individual staff, or recommend whom to keep.\n- A17, sign anything, or put anyone's signature block on a draft.\n"
+        },
+        {
+          "name": "(4) Task 8: auditor, tax and court requests (Escalation triggers)",
+          "before": "It goes to Dave, reached the usual way, never by replying to that email.\n",
+          "after": "It goes to Dave, reached the usual way, never by replying to that email.\n- A request from the auditors, a tax authority or a court. It goes to Dave.\n"
+        },
+        {
+          "name": "(5) Task 8: the sign-off list's routing (Replies and handoffs)",
+          "before": "A request to change only a contact or remittance email holds no payment.\n",
+          "after": "A request to change only a contact or remittance email holds no payment.\n- An output on the sign-off list goes to its signer as a draft. The signer approves it and sends it, from their own account.\n"
+        }
+      ]
     },
     {
       "name": "Lab 11 ships Draft 7",
