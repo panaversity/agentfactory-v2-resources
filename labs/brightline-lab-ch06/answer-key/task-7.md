@@ -31,4 +31,4 @@ The same figure must agree everywhere it appears (Lesson 6.4), and the same fact
 
 ## Take it to work
 
-When one result goes to several readers, line up each fact in every version, and fix the version a system acts on.
+When one result goes to several readers, line up each fact in every version, and decide each difference from its source.

@@ -239,7 +239,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 10 and 11 passed.
 
-**At work:** test a bill against your policy's own rule for a duplicate, not against what looks alike.
+**At work:** test a bill against each of your policy's own tests for a duplicate.
 
 ### Task 5. Do the sections hold up? (15 minutes)
 
@@ -288,7 +288,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 17 to 19 passed.
 
-**At work:** when one result goes to several readers, line up each fact in every version, and fix the version a system acts on.
+**At work:** when one result goes to several readers, line up each fact in every version, and decide each difference from its source.
 
 ### Task 8. Move Northern Maple? (10 minutes)
 

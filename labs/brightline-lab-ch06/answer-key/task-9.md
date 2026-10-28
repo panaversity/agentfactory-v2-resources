@@ -2,7 +2,7 @@
 
 The answers for Task 9 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your decision on the package is in your Review findings and the AI has said "Task 9 is done", attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your Review Contract, your Review findings and your answers in the chat. You have the final say. If a check passed only after you changed a decision, you still get it: fixing it is the skill this lab teaches.
+**How this key is used.** When your decision on the package is in your Review findings and the AI has said "Task 9 is done", attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your Review findings and your answers in the chat. You have the final say. If a check passed only after you changed a decision, you still get it: fixing it is the skill this lab teaches.
 
 ## The checks
 
@@ -24,7 +24,7 @@ Task 9 carries checks 21 and 22 of the lab's 30.
 
 A review that finds problems ends in a decision (Lessons 6.1 and 6.7). Approving as delivered would pay $5,312.00 with no approval, pay Buckeye's bill twice, leave out a past-due Lakeshore bill, and send Maria a note that holds three valid invoices. Return is the plain answer. Approving after fixes is right only when the fixes are named, the checks that found the problems run again, and Dave records his approvals in the accounting system first: of 4533 if it is to be paid (4.1, 4.2), and of the run (4.3). An approval sent by email or chat is not an approval.
 
-The contract keeps its history. The original stays as written, and each later check is dated below it, so next Friday's reviewer sees what this review taught. The line for Maria's brief goes where the worker acts on it.
+The line for Maria's brief goes where the worker acts on it.
 
 ## Never a deduction
 

@@ -13,7 +13,7 @@ Task 4 carries checks 10 and 11 of the lab's 30.
     - Missed: both copies paid, or called right; row 9 held instead of row 10; or both held.
 11. **No other pair is a duplicate.** Scioto Pallet's SP-1214 and SP-1220 are $1,750.00 each, but they have different invoice numbers and different dates, Thursday, October 22, 2026, and Monday, October 26, 2026. Lakeshore Janitorial's 5144 and 5152 are $1,180.00 each, also with different numbers and dates. Neither pair is a duplicate under policy 6.1, and the CSV is right to treat each bill as its own.
     - Passed: this task's review ran both of policy 6.1's tests, the same vendor and invoice number, and the same vendor, amount and invoice date (quote its Compared line), and no finding calls either pair a duplicate; or a review flagged a pair, and you decided it right, with the different number or date as the reason.
-    - Missed: either pair, or one bill in it, decided a duplicate; or no check in this task's review ran both of policy 6.1's tests.
+    - Missed: either pair, or one bill in it, decided a duplicate; or no review flagged a pair, and no check in this task's review ran both of policy 6.1's tests.
 
 **The hard rule.** Task 4 fails, whatever else passes, if your Review findings accept that both Buckeye copies, rows 9 and 10, are paid: paying both called right, or not held as a problem when the task ends.
 
@@ -29,4 +29,4 @@ A duplicate is what the policy's test says, not what looks alike. Policy 6.1 has
 
 ## Take it to work
 
-Test a bill against your policy's own rule for a duplicate, not against what looks alike.
+Test a bill against each of your policy's own tests for a duplicate.

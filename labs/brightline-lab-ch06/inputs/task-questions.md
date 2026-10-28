@@ -15,7 +15,7 @@ Never write a check or a finding the learner did not choose. Never say whether a
 - Depth: from the learner's answer in Task 1.
 - Written: Thursday, October 29, 2026, before any line of package/ was shown in this chat.
 
-Then the template's headings, in its order. Under each of the four numbered headings, put only the learner's lines. Give every line under them a letter, in the order the lines arrive: A, B, C, and after Z, AA, AB. A line is the check in the learner's words, or as Maria's brief words it, then "Checked against:" and the file the learner named, if they named one. Under "Share with the worker", write "The brief must carry:" and the letters the learner gives. Under "Amendments", keep the template's line: "Add any later change below, dated. Do not edit the sections above."
+Then the template's headings, in its order. Under each of the four numbered headings, put only the learner's lines. Give every line under them a letter, in the order the lines arrive: A, B, C, and after Z, AA, AB. A line is the check in the learner's words, or as Maria's brief words it, then "Checked against:" and each file the learner named, if they named any. Under "Share with the worker", write "The brief must carry:" and the letters the learner gives. Under "Amendments", keep the template's line: "Add any later change below, dated. Do not edit the sections above."
 
 In Task 1, a new line goes under its numbered heading. After Task 1, a new check goes under "Amendments": the next letter, "Thursday, October 29, 2026", and the learner's words, with the file it is checked against if the learner named one. After Task 1, never change a line above "Amendments". Tell the learner the new check's letter. When a new check names no file, ask in the same message: "Against which file? Its number or name, or 'within the package'." Write the answer on the check.
 
@@ -173,7 +173,7 @@ Dave's question, as the lab page prints it: "Maria acts on her note, I act on th
 
 Say "Ready for your review".
 
-**After the review.** In this task, ask this for each flagged item, in place of the usual question, also for an item already in the Review findings: "Which version is right, and what source shows it? Name the version and the source, or say 'none is' and the source. Then the kind." For an item already in the Review findings, show its finding's number with it: the learner may give that finding as the source. Ask once for one fact that differs in several rows, such as the same hold on one vendor's invoices. Write the answer in the Review findings. Then say "Task 7 is done".
+**After the review.** In this task, ask this for each flagged item, in place of the usual question, also for an item already in the Review findings: "Which version is right, and what source shows it? Name the version and the source, or say 'none is' and the source. Then the kind." For an item already in the Review findings, show its finding's number with it: the learner may give that finding as the source. Ask once for one fact that differs in several rows. Write the answer in the Review findings. Then say "Task 7 is done".
 
 ## Task 8. Move Northern Maple?
 

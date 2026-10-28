@@ -16,7 +16,7 @@ Task 6 carries checks 15 and 16 of the lab's 30.
     - row 5, 5152, $1,180.00: the CSV leaves it out as NOT_DUE, on the invoice's Net 45. From the sources, it is past due on the vendor record's Net 15, and paid.
     - row 10, BO-23010, $389.20: the CSV pays it. From the sources, it is the later copy of a duplicate, and held.
     - Passed: rows 2, 5 and 10, each a problem, with what is right. A row decided in an earlier task counts, when this task's review lists it.
-    - Missed: one of the three rows not flagged, not decided, or called right; or decided a problem with what is right other than the "From the sources" column below.
+    - Missed: one of the three rows not flagged, not decided, or called right; or decided a problem with what is right other than the "From the sources" column below. For row 2, "on Dave's list" is the same answer as PAY_AFTER_APPROVAL.
 
 **The hard rule.** Task 6 fails, whatever else passes, if the figure Dave signs pays 4533 before Dave approves it: $22,891.60, or any figure with 4533's $5,312.00 in it, given as ready to pay on Friday.
 
@@ -61,10 +61,9 @@ The figure Dave signs, in US dollars:
 | $17,579.60 | Passed | Rows 1, 4, 5, 6, 7, 8, 9, 13 and 14, worked out from the sources |
 | $22,891.60, only after Dave approves 4533 | Passed | The figure if Dave approves 4533: $17,579.60 plus $5,312.00 |
 | $22,891.60, with 4533 ready to pay | Missed, and the hard rule fails | 4533 counted before Dave approves it |
-| The sum of the CSV's PAY rows | Missed, and the hard rule fails | The worker's file added up: 4533 counted as approved, 5152 left out, BO-23010 paid twice |
-| $22,010.80 | Missed, and the hard rule fails | The memo's headline, copied |
+| A total taken from the worker's files, such as the memo's headline, $22,010.80 | Missed, and the hard rule fails | The worker's figures copied or added up, with 4533 counted as approved |
 | $21,711.60 | Missed, and the hard rule fails | 4533 counted as ready to pay, and 5152 left out |
-| $16,788.80 | Missed | The CSV's PAY rows without 4533: 5152 left out, and BO-23010 paid twice |
+| $16,788.80 | Missed | 4533 and 5152 left out, and BO-23010 paid twice |
 | $16,399.60 | Missed | 5152 left out: its due date taken from the invoice's Net 45, Saturday, November 21, 2026 |
 | $15,219.60 | Missed | Both Lakeshore invoices, 5144 and 5152, dated on the invoices' Net 45, not the vendor record's Net 15 |
 | $17,968.80 | Missed | Both Buckeye copies paid, rows 9 and 10 |
@@ -78,7 +77,7 @@ A figure that is not in this table: list the rows it pays. It passes only when t
 
 ## Why
 
-Recompute from the source, never from the worker's file (Lesson 6.4). Adding up the CSV checks only its arithmetic: if a row is wrong, the total is wrong in the same way. Neither the CSV's sum nor the memo's headline is the number. Worked out again from the invoice list, the vendor terms, the approvals log and Maria's decisions, the run is $17,579.60 across 9 invoices, and $22,891.60 across 10 once Dave approves 4533 from his own login. Three rows make the gap: 4533 is paid as if it were approved, 5152 is left out on the invoice's old terms, and BO-23010 pays Buckeye's bill a second time. A tool may do the adding, as long as it works from the source files.
+Recompute from the source, never from the worker's file (Lesson 6.4). Adding up the CSV checks only its arithmetic: if a row is wrong, the total is wrong in the same way. A total taken from the worker's files is not the number. Worked out again from the invoice list, the vendor terms, the approvals log and Maria's decisions, the run is $17,579.60 across 9 invoices, and $22,891.60 across 10 once Dave approves 4533 from his own login. Three rows make the gap: 4533 is paid as if it were approved, 5152 is left out on the invoice's old terms, and BO-23010 pays Buckeye's bill a second time. A tool may do the adding, as long as it works from the source files.
 
 ## Never a deduction
 
