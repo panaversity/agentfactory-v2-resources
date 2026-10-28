@@ -11,17 +11,18 @@ You can also download a lab here:
 | Chapter | Lab | Download |
 | --- | --- | --- |
 | 1. From Chatbots to AI Workers | A real job, checked | [brightline-lab-ch01.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) |
-| 2. What Is an AI Worker? | The first Role Contract for the AP Worker | [brightline-lab-ch02.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02.zip) |
-| 3. The 10-80-10 Operating Rhythm | One task through the whole rhythm | [brightline-lab-ch03.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip) |
-| 4. The Architecture in One Picture | Map the AP Worker onto the picture | [brightline-lab-ch04.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04.zip) |
-| 5. The Four-Part Brief | One brief, two AI vendors | [brightline-lab-ch05.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05.zip) |
-| 6. The Review Contract | Review a run you did not watch | [brightline-lab-ch06.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06.zip) |
-| 7. The Authority Envelope | Draw the envelope, then test it | [brightline-lab-ch07.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07.zip) |
-| 8. Context, Memory, Knowledge and State | Your first KSoR, connected to both AI vendors | [brightline-lab-ch08.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08.zip) |
-| 9. Work That Runs Without You | Put one AP job on a schedule | [brightline-lab-ch09.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09.zip) |
-| 10. Governance and Responsible Use | Keep the AP Worker running, on terms Dave can defend | [brightline-lab-ch10.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10.zip) |
+| 2. What Is an AI Worker? | The first Role Contract | [brightline-lab-ch02.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02.zip) |
+| 3. The 10-80-10 Operating Rhythm | The same one line | [brightline-lab-ch03.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip) |
+| 4. The Architecture in One Picture | Where each part lives | [brightline-lab-ch04.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04.zip) |
+| 5. The Four-Part Brief | The payment-run brief | [brightline-lab-ch05.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05.zip) |
+| 6. The Review Contract | The checks come first | [brightline-lab-ch06.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06.zip) |
+| 7. The Authority Envelope | May, then can | [brightline-lab-ch07.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07.zip) |
+| 8. Context, Memory, Knowledge and State | Where each answer comes from | [brightline-lab-ch08.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08.zip) |
+| 9. Work That Runs Without You | When nobody is watching | [brightline-lab-ch09.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09.zip) |
+| 10. Governance and Responsible Use | Yes, on these terms | [brightline-lab-ch10.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10.zip) |
+| 11. When the Worker Goes Wrong | Where each failure lives | [brightline-lab-ch11.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11.zip) |
 
-A lab's `answer-key/` folder holds its answers, and its `LAB.md` tells you when to open it. Chapter 1's answer key is not in its zip, because its learners upload files to an AI. Its `LAB.md` links to the answer key here instead: [Tasks 1 to 5](labs/brightline-lab-ch01/answer-key/answer-key.md), then [Tasks 6 and 7](labs/brightline-lab-ch01/answer-key/answer-key-port.md).
+A lab's `answer-key/` folder holds its answers, and its `LAB.md` tells you when to open it. A lab whose learners upload files to an AI keeps its answer keys out of its zip: its `LAB.md` links one key per task from the latest release instead.
 
 ## How this repository works
 
