@@ -226,7 +226,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows four of this morning's emails, one at a time, each with "Who does what". For each, answer: the kind of case, as a trigger the worker could spot in any email, and the person it goes to.
+1. In your lab chat, type "Task 5" and send it. The AI shows four of this morning's emails, one at a time, each with "Who does what". For each, answer: the kind of case, as a trigger the worker could spot in any email, and the person or people it goes to.
 2. The AI asks what every escalation must hand the person. Name its parts in a few words.
 3. When the AI says "Ready for your test", type `Test: email 08` and send it. Then send `Test: email 09`.
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -322,7 +322,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 1. In your lab chat, type "Task 11" and send it. The AI asks which app your lab chat is on. Answer in a word.
 2. The AI shows four of your lines, one at a time, each with the part of [7.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/both-ai-vendors/)'s box for your app that speaks to it: sending a reply, a write to the vendor record, recording an approval, and a run nobody watches. For each, answer: the setting that holds it on your app, or "none".
-3. The AI asks which setting would hold sending on the other app. Answer in a word or two.
+3. The AI asks which setting comes closest to holding sending on the other app. Answer: the setting, and whether it blocks sending or only asks first.
 4. The AI asks who holds each line no setting holds. Answer: the line, then the person.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -352,13 +352,14 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    other files, its old role-contract-draft-3.md included. Clear this morning's inbox as your contract says. For
    each email, say what you do and at which rung, and give any draft
    in full, with its address. Then, under "What decided it", list
-   each decision with the line of the contract that decided it, or
-   "no line decides: the worker guessed".
+   each decision with the line or lines of the contract that decided
+   it. Write "no line decides: the worker guessed" only when no line
+   covers the decision.
    ```
 
    These lines stand in for what a system hands every run: its contract and its records.
-5. Compare the reply with your tests in the lab chat. An email handled differently, or a decision marked "no line decides", is a line your contract lacks. A decision here means what the worker does with an email: whether it drafts, to whom, what it promises, whom it asks, and what it does not do. A "no line decides" about a draft's wording is fine. Back in your lab chat, name each missing line, let the AI add it to the document, download it again, and open another fresh chat, with memory off.
-6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run. Missed a check? Fix the line in your lab chat, download the contract again, and run a new fresh chat. If a line of your contract already decides it, the run slipped: try one more fresh chat, and if it slips again, you can stop.
+5. Compare the reply with your tests in the lab chat. An email handled differently, or a decision marked "no line decides", is a line your contract lacks. A decision here means what the worker does with an email: whether it drafts, to whom, what it promises, whom it asks, what it reports, and what it does not do. A "no line decides" about a draft's wording is fine. Back in your lab chat, name each missing line, let the AI add it to the document, download it again, and open another fresh chat, with memory off.
+6. **Check it now, in the fresh chat**, once a run handles every email as your tests did. Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run. Missed a check? Fix the line in your lab chat, download the contract again, and run a new fresh chat. If a line of your contract already decides it, the run slipped: try one more fresh chat, and if it slips again, you can stop.
 
 **Checkpoint.** Checks 27 to 29 passed, and the downloaded file is the contract the fresh chat passed.
 

@@ -13,8 +13,8 @@ Task 11 carries checks 25 and 26 of the lab's 29.
     - **A write to the vendor record.** On Claude: "Update vendor contact" set to Blocked. On ChatGPT: "none", or Always ask or Allow read actions named as asking first, or an admin's choice of write actions, as for sending.
     - **Recording an approval.** "None" on both apps: no setting records Dave's approval or stops one. Policy 4.2 holds it: only Dave, from his own login.
     - **A run nobody watches.** On Claude: "none", or a scheduled task's approval mode, with the box's note that the help page does not say what happens when nobody is there. On ChatGPT: a scheduled task may pause when an action needs approval, or "none".
-    - The other app's setting for sending, in a word or two: Blocked on Claude; Always ask or Allow read actions on ChatGPT, which ask first.
-    - Passed: the app named; all four lines answered as above; and the other app's setting for sending.
+    - The other app's setting for sending, and whether it blocks or asks first: Blocked on Claude, which blocks; Always ask or Allow read actions on ChatGPT, which ask first.
+    - Passed: the app named; all four lines answered as above; and the other app's setting for sending, with "blocks" or "asks first" as above.
     - Missed: a line with no answer; a setting that is not in that app's 7.8 box; a setting that asks first written as if it held draft or never; or a setting named for recording an approval.
 26. **A gap list with a person for each line no setting holds.** Every line you answered "none" is under "Gap list", each with a person from "Who does what". Recording an approval is Dave's.
     - Passed: every "none" on the gap list, each with a person.

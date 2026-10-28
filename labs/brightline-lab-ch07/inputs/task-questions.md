@@ -70,8 +70,8 @@ Then say "Task 1 is done".
 
 **Before the test.**
 
-1. Show 7.2's ladder, and these lines, quoted. From Lesson 7.1: "**Never automated.** Actions that no setting may ever let the worker do, such as releasing a payment." From Lesson 7.3: "First take out the actions that are never automated." Then show A01 from "The fifteen actions" in brightline-records.md, as its own lines: the action, where, and what changes. Ask: "Never automated, with the policy section or the reason? Or the rung it may have today: observe, recommend, draft or execute? Answer in a line."
-2. Then A02 to A15, one per message, in the catalog's order, each shown the same way, with the same question.
+1. Show 7.2's ladder, and these lines, quoted. From Lesson 7.1: "**Never automated.** Actions that no setting may ever let the worker do, such as releasing a payment." From Lesson 7.3: "First take out the actions that are never automated." Then show A01 from "The fifteen actions" in brightline-records.md, as its own lines: the action, where, what changes, and the policy section that speaks to it, quoted from brightline-records.md, or "no policy section speaks to it". Ask: "Never automated, with the policy section or the reason? Or the rung it may have today: observe, recommend, draft or execute? Answer in a line."
+2. Then A02 to A15, one per message, in the catalog's order, each shown the same way, with its policy section or "no policy section speaks to it", and the same question.
 
 Write each answer as a line: an action at a rung under "Actions and levels:", such as "A01, read the payment status list: observe."; an action never automated under "Never automated:", with its section or reason, as the learner gave it. When you write the first action, replace "Authority:" and its one line with "Actions and levels:". After A15, say "Ready for your test".
 
@@ -89,8 +89,8 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 
    Ask: "For A09: the rung the job needs, then the ceiling each question sets, reversibility, familiarity and exposure. Its rung is the lowest. Answer: four rungs, in that order."
 
-   Replace A09's line in the Doc with its rung, and the four rungs the learner gave in brackets.
-2. The same for A07: the catalog's row, its line in the Doc, the three questions, and the same question. Replace A07's line the same way.
+   In A09's line, change only its rung, and add the four rungs the learner gave in brackets. Keep the line's other words, such as who acts.
+2. The same for A07: the catalog's row, its line in the Doc, the three questions, and the same question. Change A07's line the same way, keeping its other words.
 3. Show A07's new line, and Lesson 7.3's lines, quoted: "Raise an action's rung only on evidence, such as four weekly runs that passed the Review Contract, the checks agreed before the work, with no missed escalation. The owner decides how much evidence is enough. Record the change in the envelope, with the date and who decided." Ask: "What evidence would raise A07 one rung, who decides, and where is the change recorded? Answer in a line."
 
    Write the answer under "Raising a rung:". Then remove "Whether it may send routine payment-status replies on its own." from "Open questions", and say that you removed it. Say "Ready for your test".
@@ -163,7 +163,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
    Write both answers under "Settings", replacing Maria's mailbox and conversation lines. Rename the heading "Settings, as Maria left them on Monday, October 26, 2026" to "Settings, Wednesday, October 28, 2026".
 3. Show the Identity line in the Doc, "IT" from "Who does what", and Lesson 7.4's lines, quoted: "**Know whose name it acts in.** In Part II the worker acts through your accounts, so other systems record its actions as yours." "A production worker, one in real daily use, needs its own identity." Ask: "Whose account does the worker act through today, and what is the target? Answer: today's account, then the target."
 
-   Rewrite the Identity line with the answer. Settings does not repeat it: if a Settings line names an account, show that line, ask the learner which account is right, and change the line that is wrong.
+   Add the answer to the Identity line, and keep its other words. If the answer clashes with one of them, show the clash and ask which stays. Settings does not repeat the account: if a Settings line names an account, show that line, ask the learner which account is right, and change the line that is wrong.
 4. Show Lesson 7.7's lines, quoted: "DSoR's specification adds one rule: it never takes the worker's word for anything." "As specified, it reads the current state of the real systems itself." Ask: "Who checks what the worker's tools can do, and where do they look? Answer: the person, then where."
 
    Write the answer as the first line under a new section, "How we check".
@@ -205,7 +205,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 3. The same for a write to the vendor record (A11 and the accounting connector's tools), with the same two lines of the box.
 4. The same for recording an approval (A14), with the box's "consequential actions" and "per-tool control" lines.
 5. The same for a run nobody watches: the worker clearing the AP inbox each morning with nobody at the screen. Show the box's "runs no one watches" line.
-6. Show the "conversation setting" and "per-tool control" lines from the other app's box, quoted, with its date. Ask: "On the other app, which setting would hold sending? Answer in a word or two."
+6. Show the "conversation setting" and "per-tool control" lines from the other app's box, quoted, with its date. Ask: "On the other app, which setting comes closest to holding sending, and does it block sending or only ask first? Answer: the setting, then 'blocks' or 'asks first'."
 
    Write the answers to questions 2 to 6 under a new section, "On today's tools": the app, each line with its setting or "none", and the other app's setting for sending.
 7. Show each line the learner answered "none", and "Who does what". Ask: "Who holds each line that no setting holds? Answer: the line, then the person."
