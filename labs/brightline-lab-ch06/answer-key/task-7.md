@@ -12,10 +12,10 @@ Task 7 carries checks 17 to 19 of the lab's 30.
     - Passed: the difference between the memo's $22,010.80 and the CSV's $22,100.80 decided a problem, in this task or in an earlier one, with "none is" right, or with the figure from the sources as what is right.
     - Missed: the difference not found; found and called right; or the memo's figure or the CSV's called the right one.
 18. **Buckeye: the memo holds row 10, and the CSV pays it.** The memo's Exceptions say of BO-23010, row 10, "The later copy is held (policy 6.1)." The note to Maria says "Hold the Buckeye duplicate, BO-23010." The CSV, the file the system pays from, marks row 10 PAY. The memo and the note are right, and the CSV is wrong, by policy 6.1.
-    - Passed: the difference decided, with the memo and the note right and the CSV wrong, by policy 6.1.
+    - Passed: the difference decided, with the memo and the note right and the CSV wrong, by policy 6.1, by Maria's decision to hold the Buckeye duplicate, or by the finding that decided row 10.
     - Missed: the difference not found; or the CSV called right.
 19. **The note tells Maria to hold all three Tri-County invoices, and the note is wrong.** The note's first line says "Hold all three Tri-County invoices until the bank change is verified." The CSV and the memo pay them, which is right: Maria's call on Thursday, October 22, 2026, recorded in the vendor file notes, verified Tri-County's bank details under policy 5.1.
-    - Passed: the difference decided, with the CSV and the memo right and the note wrong, by the vendor file note of October 22.
+    - Passed: the difference decided, with the CSV and the memo right and the note wrong, by the vendor file note of Thursday, October 22, 2026, by Maria's "Tri-County is cleared", or by the finding that decided it.
     - Missed: the difference not found; or the note called right, or Tri-County held.
 
 ## Why

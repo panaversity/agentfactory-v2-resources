@@ -2,17 +2,18 @@
 
 Chapter 6 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 6: the checks come first](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/lab/), so you can do the lab without the book.
 
-On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verified" in it, because he checked only what the memo showed him. A week later, Brightline's AP Worker has sent him its next package, and he approves it at 5 p.m. In this lab you review it for him. You write your checks before one line of the package is shown, run each check against the source files, and decide every item it flags: a problem, or right. Then you decide on the package, adapt the next week's result for Brightline's owner, and prove your checks with a fresh second reviewer. You decide every check and every finding. The AI shows each item, runs your checks and writes. It takes about 2 hours 45 minutes, and 10 more for the optional last task. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and the second reviewer in ChatGPT.
+On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verified" in it, because he checked only what the memo showed him. A week later, Brightline's AP Worker has sent him its next package, and he approves it at 5 p.m. In this lab you review it for him. You write your checks before one line of the package is shown, run each check against the source files, and decide every item it flags: a problem, or right. Then you decide on the package, adapt the next week's result for Brightline's owner, and test your checks with a fresh second reviewer. You decide every check and every finding. The AI shows each item, runs your checks and writes. It takes about 3 hours, with the Review Contract for your own work at the end, and 10 more minutes for the optional last task. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and the second reviewer in ChatGPT.
 
 **What you will learn:**
 
-- To write the checks for AI work before you open it, and choose how deep the review goes.
-- To read the record of work you did not watch.
-- To run each check against the sources, not against the work.
-- To decide each finding yourself: a problem, or right, and why.
-- To add what a review taught you to the checks, dated, for next time.
+- To write the checks for AI work before you open it, each against the file that decides it, and choose how deep the review goes.
+- To read the record of work you did not watch: what it used, what it did, and what it could not have done.
+- To test for the three ways a result fails: hallucination, inconsistency and bias.
+- To work out the number you sign from the source files, never from the worker's file.
+- To check that a citation exists, says what is claimed and is the current version, and to count "the source does not say" as good work.
+- To decide each finding yourself, from its source line, and add what a review taught you to your checks.
 - To adapt a result for a new reader without changing its facts.
-- To prove your checks with a second reviewer that has only the records.
+- To test your checks with a second reviewer that has only the records.
 
 ## Before you start (5 minutes)
 
@@ -179,8 +180,8 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
    Start with Task 1.
    ```
 
-2. The AI names the files in the zip, and opens your two documents. Then it shows the six source files, one line each, and Maria's brief whole. Maria's brief is the brief the worker received.
-3. The AI shows Maria's brief one part at a time, each line numbered, and asks which lines you will check. For each line, answer its number, then "yes, against" and the file you will check it against, or "no". The AI writes each "yes" in your Review Contract as a check, with its letter.
+2. The AI names the files in the zip, and opens your two documents. Then it shows the source files, one line each, numbered 1 to 7: the six files in `sources/`, and Maria's decisions. Then it shows Maria's brief whole. Maria's brief is the brief the worker received.
+3. The AI shows Maria's brief one part at a time, each line numbered, and asks which lines you will check. For each line, answer its number, then "yes, against" and the file or files you will check it against, or "no". The AI writes each "yes" in your Review Contract as a check, with its letter.
 4. The AI asks, one at a time, what evidence the worker must hand back, what tests the package must pass, and when the worker should have stopped and asked. Answer each in a few words.
 5. The AI shows the four review depths from [6.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/agree-the-checks/), and what the package holds. Answer how deep this review goes, and who signs.
 6. The AI asks which lines of your contract Maria's brief must carry, and whether anything else needs a check. Answer with the letters, a few words, or "no".
@@ -249,7 +250,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 1. In your lab chat, type "Task 5" and send it. The AI shows the three checks on a citation from [6.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/), Dave's question and your contract's checks, and asks which checks answer it. Give the letters, or a new check in a few words.
 2. The AI asks what a cited section must do to pass your check. Answer in a few words. If your check does not already say it, your answer goes in as an amendment.
 3. When the AI says "Ready for your review", type `Review:` and the letters, and send it.
-4. For each flagged item, answer: a problem, with its kind and what is right, or right, and why. Then the AI shows each row that cites no section, and asks the same.
+4. For each flagged item, answer: a problem, with its kind and what is right, or right, and why. Then the AI shows each row that cites no section, if your review has not, and asks the same.
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 12 to 14 passed.
@@ -263,7 +264,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 **What you do:**
 
 1. In your lab chat, type "Task 6" and send it. The AI shows the three rules from [6.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/decision-numbers/), Dave's question and your contract's checks, and asks which checks answer it. Give the letters, or a new check in a few words.
-2. The AI shows the source files, one line each, and Maria's decisions from the task record. It asks which file each fact comes from: the payment terms, the due dates, the approvals and Maria's decisions. Then it asks which actions count in the figure Dave signs. Answer each in a few words. If your check does not already say it, your answers go in as an amendment.
+2. The AI shows the source files, one line each, and Maria's decisions from the task record. It asks which file each fact comes from: the payment terms, the invoice dates, the approvals and Maria's decisions. Then it asks which actions count in the figure Dave signs. Answer each in a few words. If your check does not already say it, your answers go in as an amendment.
 3. When the AI says "Ready for your review", type `Review:` and the letters, and send it. The AI shows the figure row by row, each row with its source line.
 4. For each row where the figure differs from the CSV, answer: a problem, with its kind and what is right, or right, and why.
 5. The AI asks what figure Dave signs, and what it depends on. Answer with the figure and a few words.
@@ -320,7 +321,7 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 
 **Checkpoint.** Checks 21 and 22 passed.
 
-**At work:** decide every finding yourself, and never approve as delivered when a check failed.
+**At work:** end a review with a decision on the package, and name what must change before anyone signs.
 
 ## The next week
 
@@ -339,7 +340,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 
 **Checkpoint.** Checks 23 to 27 passed.
 
-**At work:** for a new reader, change the order, the length and the words. A new fact from its owner goes in. Adapting never changes a fact by itself.
+**At work:** for a new reader, change the order, the length and the words, never the facts.
 
 ## The proof
 

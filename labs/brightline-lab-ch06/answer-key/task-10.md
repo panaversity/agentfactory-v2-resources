@@ -47,4 +47,4 @@ One result often goes to several readers (Lesson 6.6). Adapting changes the orde
 
 ## Take it to work
 
-For a new reader, change the order, the length and the words. A new fact from its owner goes in. Adapting never changes a fact by itself.
+For a new reader, change the order, the length and the words, never the facts.

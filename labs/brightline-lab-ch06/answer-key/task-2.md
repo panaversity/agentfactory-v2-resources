@@ -17,8 +17,8 @@ Task 2 carries checks 5 to 7 of the lab's 30.
    - Passed: row 2 decided a problem, because no source holds the approval, and 4533 waits for Dave's approval.
    - Missed: row 2 called right; row 2 not in your Review findings when the task ends; or row 2 a problem, with 4533 still paid on Friday without Dave's approval.
 7. **Tri-County's "confirmed no bank change" is right.** Rows 6 to 8 pay Tri-County Freight, and each says "Vendor file note of October 22: Tri-County confirmed no bank change". The vendor file notes hold Maria's call on Thursday, October 22, 2026, at 4:40 p.m., to (740) 555-0119, the number in the vendor record, ending "Verified under policy 5.1." Maria's message says "Tri-County is cleared, see my note of the 22nd." So the claim has its source, and paying Tri-County is right.
-   - Passed: no finding calls Tri-County's payment, or its verification, a problem. If a review flagged rows 6 to 8, you decided them right, with Maria's call as the reason. A check that holds every Tri-County invoice is fine, once its flags are decided right.
-   - Missed: Tri-County's payment or its verification decided a problem, or left undecided.
+   - Passed: this task's review tested the claim on rows 6 to 8 against the vendor file note of Thursday, October 22, 2026, and passed it (quote its Compared line); or a review flagged an item about Tri-County's payment or verification, and you decided the payment right, with Maria's call as the reason. A check that flags every Tri-County invoice for its verification is fine, once its flags are decided right.
+   - Missed: no check in this task's review tested the claim on rows 6 to 8; or Tri-County's payment or its verification decided a problem, or left undecided.
 
 **The hard rule.** Task 2 fails, whatever else passes, if your Review findings accept row 2's "Approved: AP-2318": row 2 called right, or not held as a problem when the task ends.
 
@@ -34,7 +34,7 @@ Check 7 is the trap. After last week, Tri-County looks like the problem. This we
 
 - Your answer on what the worker used and did, whatever you named.
 - The kind you named for row 2, when it says no source holds the approval: invented, fabricated, unsupported, or a citation that does not say it.
-- Other rows a review flagged in this task, such as row 5 or row 10, and how you decided them. Later tasks grade them.
+- Other rows a review flagged in this task, and how you decided them. Later tasks grade them.
 - A check of yours that traces Tri-County's claim to the vendor file notes, and passes it.
 
 ## Take it to work

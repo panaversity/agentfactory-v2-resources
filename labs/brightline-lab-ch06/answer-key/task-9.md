@@ -10,14 +10,13 @@ Task 9 carries checks 21 and 22 of the lab's 30.
 
 21. **Return, or approve only after named fixes.** Under "The decision on the package" in your Review findings, the decision is one of these:
     - return, with a line of why
-    - approve after named fixes, with a fix for every problem in your Review findings, the checks to run again, and Dave's two approvals from his own login first: of 4533, if it is to be paid, and of the run as a whole (policy 4.1 to 4.3)
-    - Passed: return, with its line of why; or approve after fixes, with all three: the fixes, the checks to run again, and both approvals.
-    - Missed: approve as delivered; return with no why; or approve after fixes with a problem left unfixed, no checks to run again, or one of the two approvals left out.
-22. **The contract kept, and one line for Maria's brief.**
-    - Your Review Contract's four parts are as you wrote them in Task 1. Every check added since is below them, under Amendments, dated, with its letter.
+    - approve after named fixes, with a fix for every problem in your Review findings, the checks to run again, and Dave's approvals from his own login first: of the run as a whole, and of 4533 if it is to be paid on Friday (policy 4.1 to 4.3)
+    - Passed: return, with its line of why; or approve after fixes, with all three: the fixes, the checks to run again, and the approvals, the run's and, if 4533 is paid on Friday, 4533's.
+    - Missed: approve as delivered; return with no why; or approve after fixes with a problem left unfixed, no checks to run again, the run's approval left out, or 4533 paid on Friday without its approval.
+22. **One line for Maria's brief.**
     - Your line for Maria's next brief would have stopped the worst of it, the invented approval or the paid duplicate, and names the part of the brief it goes in. Lines that pass, in any words: an approved row gives its approval ID from the approvals log, or waits for Dave; no invoice over $5,000.00 is PAY without its approval in the log; a duplicate under policy 6.1 is HOLD in the CSV; the CSV, the memo and the note give the same action for every row.
-    - Passed: both.
-    - Missed: a line above Amendments changed after Task 1, or an amendment with no date; or a line for the brief that would have stopped neither problem, or names no part.
+    - Passed: a line that would have stopped one of the two, with its part named.
+    - Missed: a line for the brief that would have stopped neither problem, or names no part.
 
 **The hard rule.** Task 9 fails, whatever else passes, if you approve the package as delivered.
 
@@ -36,4 +35,4 @@ The contract keeps its history. The original stays as written, and each later ch
 
 ## Take it to work
 
-Decide every finding yourself, and never approve as delivered when a check failed.
+End a review with a decision on the package, and name what must change before anyone signs.

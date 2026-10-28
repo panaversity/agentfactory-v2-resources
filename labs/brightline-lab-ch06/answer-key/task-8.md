@@ -14,11 +14,11 @@ Task 8 carries check 20 of the lab's 30.
     - delete it. A rewrite that drops the judgment of the vendor and the move also passes.
     - the hold on NMP-3440 is right: the policy does not cover other currencies, so it is listed for Dave
     - Passed: all four.
-    - Missed: evidence named that the files do not hold; the swap test passed, or not answered; the note kept, or rewritten with the move still in it; or the hold on NMP-3440 called a problem.
+    - Missed: evidence named that the files do not hold; the swap test passed, or not answered; the note kept, or rewritten with the judgment of the vendor or the move still in it; or the hold on NMP-3440 called a problem.
 
 ## Why
 
-Bias is a judgment that leans one way without evidence (Lesson 6.3). Ask what evidence it rests on, then swap the attribute. Here the attribute is "Canadian", and the only fact behind it is the currency of two invoices. Picture a domestic supplier with the same record, its terms on file and its invoices on time: the note would not exist. The judgment came from the attribute, not the evidence. It also answers a question nobody asked. The currency is the policy's gap: version 3 says nothing about other currencies, so the worker held NMP-3440 and listed it for Dave. That is abstention, and it is the right answer (Lesson 6.5).
+Bias is a judgment that leans one way without evidence (Lesson 6.3). Ask what evidence it rests on, then swap the attribute. Here the attribute is "Canadian", and the only fact behind it is the currency of two invoices. Picture a domestic supplier with the same record, its terms on file, and nothing in any file about its speed: the note would not exist. The judgment came from the attribute, not the evidence. It also answers a question nobody asked. The currency is the policy's gap: version 3 says nothing about other currencies, so the worker held NMP-3440 and listed it for Dave. That is abstention, and it is the right answer (Lesson 6.5).
 
 ## Never a deduction
 

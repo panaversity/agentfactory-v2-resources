@@ -9,16 +9,16 @@ The answers for Task 6 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 Task 6 carries checks 15 and 16 of the lab's 30.
 
 15. **The figure Dave signs: $17,579.60 across 9 invoices, and $22,891.60 across 10 only after he approves 4533.** It is worked out from the sources, as in the table below, not by adding the CSV. Under "The figure Dave signs" in your Review findings, the figure is $17,579.60 across 9 invoices. It depends on Midwest Packaging's 4533, $5,312.00, which is over $5,000.00 and has no approval in the log: only after Dave approves it from his own login (policy 4.1 and 4.2) is the run $22,891.60 across 10.
-    - Passed: $17,579.60; or $22,891.60, stated as only after Dave approves 4533 from his own login; or both. The counts, 9 and 10, may be left out. "Find your total" below has the figures that pass and the ones that miss.
+    - Passed: $17,579.60; or $22,891.60, stated as only after Dave approves 4533; or both. "From his own login" need not be said. The counts, 9 and 10, may be left out. "Find your total" below has the figures that pass and the ones that miss.
     - Missed: any other figure; or $22,891.60 with 4533 counted as ready to pay.
 16. **The gap, row by row.** This task's review flagged the rows where the figure from the sources differs from the CSV, and your Review findings hold each of them as a problem, with what is right:
     - row 2, 4533, $5,312.00: the CSV pays it as "Approved: AP-2318". From the sources, it waits for Dave's approval (PAY_AFTER_APPROVAL).
     - row 5, 5152, $1,180.00: the CSV leaves it out as NOT_DUE, on the invoice's Net 45. From the sources, it is past due on the vendor record's Net 15, and paid.
     - row 10, BO-23010, $389.20: the CSV pays it. From the sources, it is the later copy of a duplicate, and held.
     - Passed: rows 2, 5 and 10, each a problem, with what is right. A row decided in an earlier task counts, when this task's review lists it.
-    - Missed: one of the three rows not flagged, not decided, or called right.
+    - Missed: one of the three rows not flagged, not decided, or called right; or decided a problem with what is right other than the "From the sources" column below.
 
-**The hard rule.** Task 6 fails, whatever else passes, if the figure Dave signs pays 4533 before Dave approves it from his own login: $22,891.60, or any figure with 4533's $5,312.00 in it, given as ready to pay on Friday.
+**The hard rule.** Task 6 fails, whatever else passes, if the figure Dave signs pays 4533 before Dave approves it: $22,891.60, or any figure with 4533's $5,312.00 in it, given as ready to pay on Friday.
 
 ## The run, from the sources
 
@@ -51,7 +51,6 @@ Each due date is the invoice date plus the terms in the vendor record (policy 2.
 | NOT_DUE | 3 | $3,190.00 |
 | NOT_DUE | 11 | CAD 2,150.00 |
 
-The CSV's PAY rows are rows 1, 2, 4, 6, 7, 8, 9, 10, 13 and 14, and they add up to $22,100.80. That is the $22,891.60 from the sources, less 5152's $1,180.00 left out, plus BO-23010's $389.20 paid a second time, with 4533 in it as if it were approved.
 
 ## Find your total
 
@@ -60,9 +59,9 @@ The figure Dave signs, in US dollars:
 | The figure | Passed or Missed | What it usually means |
 | --- | --- | --- |
 | $17,579.60 | Passed | Rows 1, 4, 5, 6, 7, 8, 9, 13 and 14, worked out from the sources |
-| $22,891.60, only after Dave approves 4533 from his own login | Passed | The figure if Dave approves 4533: $17,579.60 plus $5,312.00 |
+| $22,891.60, only after Dave approves 4533 | Passed | The figure if Dave approves 4533: $17,579.60 plus $5,312.00 |
 | $22,891.60, with 4533 ready to pay | Missed, and the hard rule fails | 4533 counted before Dave approves it |
-| $22,100.80 | Missed, and the hard rule fails | The CSV's PAY rows added up: 4533 counted as approved, 5152 left out, BO-23010 paid twice |
+| The sum of the CSV's PAY rows | Missed, and the hard rule fails | The worker's file added up: 4533 counted as approved, 5152 left out, BO-23010 paid twice |
 | $22,010.80 | Missed, and the hard rule fails | The memo's headline, copied |
 | $21,711.60 | Missed, and the hard rule fails | 4533 counted as ready to pay, and 5152 left out |
 | $16,788.80 | Missed | The CSV's PAY rows without 4533: 5152 left out, and BO-23010 paid twice |
@@ -79,14 +78,14 @@ A figure that is not in this table: list the rows it pays. It passes only when t
 
 ## Why
 
-Recompute from the source, never from the worker's file (Lesson 6.4). Adding up the CSV checks only its arithmetic: if a row is wrong, the total is wrong in the same way. The CSV's PAY rows add to $22,100.80, and the memo says $22,010.80. Neither is the number. Worked out again from the invoice list, the vendor terms, the approvals log and Maria's decisions, the run is $17,579.60 across 9 invoices, and $22,891.60 across 10 once Dave approves 4533 from his own login. Three rows make the gap: 4533 is paid as if it were approved, 5152 is left out on the invoice's old terms, and BO-23010 pays Buckeye's bill a second time. A tool may do the adding, as long as it works from the source files.
+Recompute from the source, never from the worker's file (Lesson 6.4). Adding up the CSV checks only its arithmetic: if a row is wrong, the total is wrong in the same way. Neither the CSV's sum nor the memo's headline is the number. Worked out again from the invoice list, the vendor terms, the approvals log and Maria's decisions, the run is $17,579.60 across 9 invoices, and $22,891.60 across 10 once Dave approves 4533 from his own login. Three rows make the gap: 4533 is paid as if it were approved, 5152 is left out on the invoice's old terms, and BO-23010 pays Buckeye's bill a second time. A tool may do the adding, as long as it works from the source files.
 
 ## Never a deduction
 
 - The counts left out.
 - Dave's approval of the whole run (policy 4.3), named or not.
 - The HOLD and NOT_DUE totals, or the Canadian-dollar amounts, given or not.
-- The $90.00 between the memo and the CSV, found here or not.
+- The memo's headline lined up with the CSV, here or not.
 - Other rows this task's review flagged, and decided right.
 - A flag on the credit memo's blank due date, decided either way.
 

@@ -22,6 +22,11 @@ Task 12 carries check 31, and it is unscored: the lab's 30 scored checks are in 
 - Which source would you trust most: an official one, a recent one, or one the others copy?
 - Where good sources disagree, did the answer say so, or pick a side without saying why?
 
+## Never a deduction
+
+- The question you chose, the sources found, and whether the main claim held up.
+- Skipping this task when your app has no web search.
+
 ## Take it to work
 
 Before you act on research, open the source behind the claim your decision rests on.

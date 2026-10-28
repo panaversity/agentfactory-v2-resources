@@ -15,7 +15,7 @@ Task 11 carries checks 28 to 30 of the lab's 30.
     - Passed: all three.
     - Missed: no fresh chat, or memory not off before anything was sent; a contract other than yours, or your Review findings sent with it; or only part of the reply in your lab chat.
 29. **Each of its own findings is decided from the source.** Under "The second reviewer" in your Review findings, each problem the reviewer named that your findings did not have, and each line of its reply that disagrees with one of your decisions, is decided real or not, from the source line the AI showed: a real one kept, with what is right, and a wrong one turned down, with the source that shows it. The package's problems, and the things in it that are right, are in the table below.
-    - Passed: every one of its own findings decided, each as the table below says.
+    - Passed: every one of its own findings decided, each as the table below says. If it had none of its own, this check passes: quote the list under "The second reviewer".
     - Missed: one of its own findings left undecided, or decided against the table.
 30. **What your contract lacked, and what it needs on the other AI vendor.**
     - For each problem of yours the reviewer missed, you named the line of your contract that should have sent it there, by its letter, or said "no line" and added the check as an amendment. If it missed none of yours, this half passes.
@@ -27,7 +27,7 @@ Task 11 carries checks 28 to 30 of the lab's 30.
 
 ## The package: what is wrong, and what is right
 
-A finding of the reviewer is real when it names one of the problems below, or a part of one. A finding is not real when it calls one of the right things below a problem. A finding that is in neither list is real only when a source line shows the package wrong. A finding that the package lacks something your contract asks for, but Maria's brief never asked the worker for, is a gap in the brief, not a problem in the package: "a gap in the brief" passes, and so does "not real", with the brief's silence as the source. A figure to sign with 4533 counted before Dave approves it, or a line that counts Tri-County's invoices as exceptions or holds them, is not real.
+A finding of the reviewer is real when it names one of the problems below, or a part of one. A finding is not real when it calls one of the right things below a problem. A finding that is in neither list is real only when a source line shows the package wrong. A finding that the package lacks something your contract asks for, but Maria's brief never asked the worker for, is a gap in the brief, not a problem in the package: "a gap in the brief" passes, and so does "not real", with the brief's silence as the source. A figure to sign with 4533 counted before Dave approves it, or a line that holds Tri-County's invoices, is not real.
 
 | The problem | Where | What is right |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ A finding of its own that is real points to a check your contract lacks, or one 
 - Which app and which plan you used, and running on the same AI vendor because you have one account.
 - The reviewer's wording, its order, and how many findings it had.
 - A reviewer that found nothing you did not.
-- Findings of its own that you turned down, with the source that shows it.
+- Findings of its own that you turned down as the table says, with the source that shows it.
 - The kind you named for a real finding.
 
 ## Take it to work
