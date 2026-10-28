@@ -6,7 +6,7 @@
 **Approved:** September 1, 2026, by Dave Kowalski
 **Supersedes:** Version 2 (June 2, 2026)
 
-Excerpt: clause 2.1, and sections 3 to 6.
+Excerpt: clause 2.1, sections 3 and 4, clauses 5.1 to 5.3, and section 6.
 
 ## 2. Payment terms
 

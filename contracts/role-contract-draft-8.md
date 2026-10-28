@@ -58,7 +58,7 @@ Memory:
 - Wipe test: if memory were wiped tonight, tomorrow's answers must still be right.
 - Memory is read again on the first Monday of each month, and after any answer that surprises. Each time, the date and what was deleted are written down.
 Skills:            Check an invoice total. Calculate a due date from the terms in the vendor record. Spot a likely duplicate.
-- invoice-review: Brightline's draft, owner Dave Kowalski. Each step points to the concept that holds its rule. Off until Dave approves one version, after reading its steps and its test results from both places.
+- invoice-review: Brightline's skill, owner Dave Kowalski. Each step points to the concept that holds its rule. Dave approved this version on Friday, November 6, 2026, after reading its steps and its test results from both places, and it is on where the AP Worker's work runs.
 - Discounts and amounts to pay: calculated as code, never in sentences. [Draft 8]
 - thursday-note: the note's checks and layout, with every amount shown to the cent. [Draft 8]
 - dispute-reply: replies about short payments, from Jordan's fixed request. [Draft 8]
@@ -167,6 +167,7 @@ Change log:
 - Wednesday, October 28, 2026, Dave Kowalski: Replies: draft only, Maria sends. Forward: stopped. Contact change: stopped.
 - Monday, November 9, 2026, Dave Kowalski: Thresholds: an invoice not in US dollars now needs his approval before payment, from the invoice approval threshold concept.
 - Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.
+- Friday, December 11, 2026, Dave Kowalski approved Draft 7, as Maria Lopez drafted it: A16 and A17 never automated, a request from the auditors, a tax authority or a court goes to Dave, an output on the sign-off list goes to its signer as a draft, and the small-supplier promise becomes a concept only once he approves it.
 - Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.
 - Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11.
 Evaluations:

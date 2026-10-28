@@ -78,14 +78,14 @@
     },
     {
       "name": "Lab 10 ships Draft 6",
-      "comment": "Lab 10 ships Lab 9's sample Draft 6 whole, with no cut. contracts/role-contract-draft-6.md here is a copy of Lab 9's sample from labs branch lab/brightline-lab-ch09-one-chat (6fb2029, final) until Lab 9 merges; whichever of Labs 9 and 10 merges second keeps Lab 9's.",
+      "comment": "Lab 10 ships Lab 9's sample Draft 6 whole, with no cut.",
       "shipped": "labs/brightline-lab-ch10/inputs/role-contract-draft-6.md",
       "source": "contracts/role-contract-draft-6.md",
       "cuts": []
     },
     {
       "name": "Lab 10's sample Draft 7 is its Draft 6 with Tasks 2, 7 and 8's lines",
-      "comment": "The sample Lab 11 ships. Each cut adds one line a Lab 10 task decides, after the last line of its heading in Draft 6, with the learner's words from the author run. Nothing else changes. Rebuild with check.py --write when Draft 6 changes.",
+      "comment": "The sample Lab 11 ships. Each cut adds one line a Lab 10 task decides, after the last line of its heading in Draft 6, with the learner's words from the author run. Cut (6) adds Dave's approval of Draft 7 to the change log. Nothing else changes. Rebuild with check.py --write when Draft 6 changes.",
       "shipped": "contracts/role-contract-draft-7.md",
       "source": "labs/brightline-lab-ch10/inputs/role-contract-draft-6.md",
       "cuts": [
@@ -113,12 +113,17 @@
           "name": "(5) Task 8: the sign-off list's routing (Replies and handoffs)",
           "before": "A request to change only a contact or remittance email holds no payment.\n",
           "after": "A request to change only a contact or remittance email holds no payment.\n- An output on the sign-off list goes to its signer as a draft. The signer approves it and sends it, from their own account.\n"
+        },
+        {
+          "name": "(6) Dave approves Draft 7 (Change log)",
+          "before": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n",
+          "after": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Friday, December 11, 2026, Dave Kowalski approved Draft 7, as Maria Lopez drafted it: A16 and A17 never automated, a request from the auditors, a tax authority or a court goes to Dave, an output on the sign-off list goes to its signer as a draft, and the small-supplier promise becomes a concept only once he approves it.\n"
         }
       ]
     },
     {
       "name": "Lab 11 ships Draft 7",
-      "comment": "Source: Lab 10's sample Draft 7 (labs branch lab/brightline-lab-ch10-one-chat at 22c5db9, built on Lab 9's final sample Draft 6 at 6fb2029). This branch carries an identical copy until Lab 10's pull request merges.",
+      "comment": "Source: Lab 10's sample Draft 7 (labs branch lab/brightline-lab-ch10-one-chat at 22c5db9, built on Lab 9's final sample Draft 6 at 6fb2029).",
       "shipped": "labs/brightline-lab-ch11/inputs/role-contract-draft-7.md",
       "source": "contracts/role-contract-draft-7.md",
       "cuts": [
@@ -134,8 +139,8 @@
         },
         {
           "name": "(3) That change's line in the change log",
-          "before": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n",
-          "after": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
+          "before": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Friday, December 11, 2026, Dave Kowalski approved Draft 7, as Maria Lopez drafted it: A16 and A17 never automated, a request from the auditors, a tax authority or a court goes to Dave, an output on the sign-off list goes to its signer as a draft, and the small-supplier promise becomes a concept only once he approves it.\n",
+          "after": "- Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time.\n- Friday, December 11, 2026, Dave Kowalski approved Draft 7, as Maria Lopez drafted it: A16 and A17 never automated, a request from the auditors, a tax authority or a court goes to Dave, an output on the sign-off list goes to its signer as a draft, and the small-supplier promise becomes a concept only once he approves it.\n- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n"
         }
       ]
     },
@@ -202,8 +207,8 @@
         },
         {
           "name": "Tasks 9 and 10: discounts as code, the note's and the replies' skills, and the standing instruction",
-          "before": "Off until Dave approves one version, after reading its steps and its test results from both places.\n",
-          "after": "Off until Dave approves one version, after reading its steps and its test results from both places.\n- Discounts and amounts to pay: calculated as code, never in sentences. [Draft 8]\n- thursday-note: the note's checks and layout, with every amount shown to the cent. [Draft 8]\n- dispute-reply: replies about short payments, from Jordan's fixed request. [Draft 8]\nStanding instructions:\n- A credit memo is never listed as an amount owed. [Draft 8]\n"
+          "before": "Dave approved this version on Friday, November 6, 2026, after reading its steps and its test results from both places, and it is on where the AP Worker's work runs.\n",
+          "after": "Dave approved this version on Friday, November 6, 2026, after reading its steps and its test results from both places, and it is on where the AP Worker's work runs.\n- Discounts and amounts to pay: calculated as code, never in sentences. [Draft 8]\n- thursday-note: the note's checks and layout, with every amount shown to the cent. [Draft 8]\n- dispute-reply: replies about short payments, from Jordan's fixed request. [Draft 8]\nStanding instructions:\n- A credit memo is never listed as an amount owed. [Draft 8]\n"
         },
         {
           "name": "Task 10: the small-supplier promise goes to Dave",

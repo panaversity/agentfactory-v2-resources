@@ -59,7 +59,7 @@ The AI writes each of your decisions into the document the task names, and chang
 
 A file counts only if a contract line names it. What only the chat knows is "no line decides", even when the answer would be right. A test reads your contract and quotes it. It does not answer as the worker. This is [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s rule, "re-run on the same input": each test runs the case that failed. `Test: the week` runs the week's five cases in a row, from Tuesday morning to Friday morning.
 
-**What an Inspect is.** In five tasks you name a one-minute check, the kind [11.3](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/) describes. `Inspect: my check` runs your check, as you named it, on the lab's files. It reports only what the files show, quoted: names, dates, rows and figures. It names no cause, and does not say whether your guess was right. A check that finds nothing reports what it compared, because that makes the place less likely, though it is not proof.
+**What an Inspect is.** In four tasks you name a one-minute check, the kind [11.3](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/) describes. `Inspect: my check` runs your check, as you named it, on the lab's files. It reports only what the files show, quoted: names, dates, rows and figures. It names no cause, and does not say whether your guess was right. A check that finds nothing reports what it compared, because that makes the place less likely, though it is not proof.
 
 ### The check prompt
 

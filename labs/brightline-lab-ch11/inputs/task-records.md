@@ -89,7 +89,7 @@ Attached by Jordan: three vendor emails, from Stonebridge Carton, Mad River Plas
 
 **Outputs:** One note. Run status: completed.
 
-**Earlier runs:** Nine earlier Thursday runs, November 12 to January 7, each opened `AP Register.csv`, and listed from 3 to 37 invoices.
+**Earlier runs:** Nine earlier Thursday runs, November 12 to January 7, each opened that Thursday's register export, and listed from 3 to 37 invoices.
 
 ## Record D: replies with remittance notices
 

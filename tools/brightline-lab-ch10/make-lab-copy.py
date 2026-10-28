@@ -77,7 +77,7 @@ def main():
     dec1 = datetime.date(2026, 12, 1)
     dec4 = datetime.date(2026, 12, 4)
     dec11 = datetime.date(2026, 12, 11)
-    invoices = list(csv.DictReader(open(LAB / "open-invoices-2026-12-01.csv", newline="")))
+    invoices = list(csv.DictReader(open(LAB / "open-invoices.csv", newline="")))
     late = Decimal("0")
     print("Small suppliers on December 1:")
     for i in invoices:
@@ -99,7 +99,7 @@ def main():
         problems.append(f"late total {late}")
 
     # The early-pay list.
-    lst = list(csv.DictReader(open(LAB / "early-pay-list-2026-12-01.csv", newline="")))
+    lst = list(csv.DictReader(open(LAB / "early-pay-list.csv", newline="")))
     amount = sum(Decimal(r["amount_usd"]) for r in lst)
     disc = sum(Decimal(r["discount_usd"]) for r in lst)
     print(f"Early-pay list: {len(lst)} invoices, USD {amount:,.2f}, discounts USD {disc:,.2f}")
