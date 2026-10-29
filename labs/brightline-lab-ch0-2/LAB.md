@@ -18,6 +18,8 @@ Brightline Wholesale Supply is the book's invented company, so the files hold no
 
 If you use ChatGPT's free plan, do Lab 0.3 on another day. The free plan allows only a few chats with files in a few hours.
 
+Use your free accounts, in the browser or in the desktop apps from [0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/). If you set the Claude app to use another company's model, go back to your Claude account first, as 0.2.4 shows. Attached files may not work in that mode.
+
 Copy this table onto paper or into a notes file. After each task, write in a few words what the control did for you. There is a filled-in table at the end, to compare with yours.
 
 | Task | What it did for you |
