@@ -82,7 +82,7 @@ Dave's question, as the lab page prints it: "Thursday, October 29, 2026. The pac
 
 This task has no review. In its first message, open the two Docs: the Review Contract, with its top lines, Reviewer and Depth left blank, and the template's headings; and the Review findings, empty. Then show "The source files" above, and "The package's files" above. Then show payment-run-brief-v3.md whole, as its own lines, under "Maria's brief, as the worker received it". Then ask question 1, in the same message.
 
-1. to 6. Take Maria's brief one part at a time, in this order: Outcome, Format, Inputs, Autonomy, Stage 1, Stage 2. For each part, show its sentences, one per line, numbered, quoted. With question 1 only, show the first row of 6.1's table below, "What must be checked?". Ask: "Will you check each of these lines, and against which file? For each line: its number, then 'yes, against' and a file's number or name from the list above, or several, or 'no'." For each "yes", add a line under "1. What must be checked", with the next letter: the brief's sentence, quoted, then "Checked against:" and each file's name, never its number. Show the section as it now stands.
+1. to 6. Take Maria's brief one part at a time, in this order: Outcome, Context, Format, Constraints, Stage 1, Stage 2. For each part, show its sentences, one per line, numbered, quoted. With question 1 only, show the first row of 6.1's table below, "What must be checked?". Ask: "Will you check each of these lines, and against which file? For each line: its number, then 'yes, against' and a file's number or name from the list above, or several, or 'no'." For each "yes", add a line under "1. What must be checked", with the next letter: the brief's sentence, quoted, then "Checked against:" and each file's name, never its number. Show the section as it now stands.
 7. Show the "What evidence comes back?" row of 6.1's table below. Ask: "What must the worker hand back, so you can check your lines without doing the work again? A few words for each thing." Put each thing under "2. What evidence comes back", with its letter.
 8. Show the "What counts as success?" row of 6.1's table below, and the template's guidance under "3. What counts as success", quoted. Ask: "What tests must the package pass? A few words for each test." Put each test under "3. What counts as success", with its letter.
 9. Show the "What stops the worker?" row of 6.1's table below. Ask: "When should the worker have stopped and asked? A few words for each case." Put each case under "4. What stops the worker", with its letter.
@@ -190,7 +190,7 @@ Say "Ready for your review".
 2. Show the "Vendor notes" section of package/memo-to-dave.md, quoted. Then show every line in sources/ that names Northern Maple Paper, quoted, each with its file. Ask: "What evidence in the files does this note rest on? Name the file and line, or say 'none'."
 3. Ask: "Swap the attribute: picture a domestic supplier with the same record. Would the note still say this? Yes or no."
 4. Ask: "Keep the note, rewrite it, or delete it? One of the three, and a line of why."
-5. Show the row of package/proposal-2026-10-30.csv for NMP-3440, quoted, and the sentence of the Inputs in Maria's brief that says what to do when version 3 does not cover a case, quoted. Ask: "Is this row's hold a problem, or right? A few words of why."
+5. Show the row of package/proposal-2026-10-30.csv for NMP-3440, quoted, and the sentence of the Context in Maria's brief that says what to do when version 3 does not cover a case, quoted. Ask: "Is this row's hold a problem, or right? A few words of why."
 
 Write the answers to questions 2 to 5 under "Northern Maple's note" in the Review findings. Say "Task 8 is done".
 
@@ -202,7 +202,7 @@ This task has no review.
 
 1. Show the problems in the Review findings, by number, each in a few words with the learner's decision. Then show Dave's question. Ask: "Approve as delivered, approve after named fixes, or return? One of the three, and a line of why."
 2. Only if the learner chose fixes: show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "Which fixes, by the findings' numbers? Which checks run again, by letter? And what must Dave approve from his own login first? A few words for each."
-3. Show the names of the six parts of Maria's brief: Outcome, Format, Inputs, Autonomy, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
+3. Show the names of the six parts of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
 
 Write the answers under "The decision on the package" in the Review findings, and show it. Say "Task 9 is done".
 

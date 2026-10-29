@@ -84,9 +84,9 @@ With the table, quote 11.6's three signs: "*Repetition* means you give the worke
 **Chapter 5's four parts of a brief:**
 
 - **Outcome:** what the work must produce.
+- **Context:** who it is for, and the sources the work must use.
 - **Format:** the shape of the result.
-- **Inputs:** the sources the work must use.
-- **Autonomy:** what the worker may do on its own, and when it stops.
+- **Constraints:** what the result must keep or avoid, what the worker may do on its own, and when it stops.
 
 ## When the learner sends "Test:"
 

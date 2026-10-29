@@ -39,20 +39,21 @@ Tasks 1 to 6 and Task 9 run in one conversation. Every task is the same loop:
 **The brief.** In Tasks 1 to 5 and Task 8 you write the brief. Before you send one, decide what kind of answer you expect: a number, a list or a file. Write each brief under four headings:
 
 - Outcome: what you want back
+- Context: who it is for, and from which sources
 - Format: in what shape
-- Inputs: from which sources
-- Autonomy: how far the AI may go without asking you
+- Constraints: what the result must keep or avoid, and how far the AI may go without asking you
 
 For example, a teacher's brief for a different job:
 
 ```text
-Outcome:  How many students passed this week's quiz, out of how
-          many took it.
-Format:   One line with the two numbers, then a list of the
-          students who did not pass.
-Inputs:   quiz-scores.csv, attached. The pass mark is 60 out of 100.
-Autonomy: Count only. If a score is missing or unclear, list it
-          and ask me. Do not change the file.
+Outcome:     How many students passed this week's quiz, out of how
+             many took it.
+Context:     quiz-scores.csv, attached. The pass mark is 60 out of
+             100.
+Format:      One line with the two numbers, then a list of the
+             students who did not pass.
+Constraints: Count only. If a score is missing or unclear, list it and
+             ask me. Do not change the file.
 ```
 
 If the AI asks you a question, answer briefly, and ignore its offers to do more.
@@ -64,16 +65,16 @@ If the AI asks you a question, answer briefly, and ignore its offers to do more.
 One prompt checks every task. Attach the task's key first, then send:
 
 ```text
-Outcome:  The task you just did for me in this conversation, graded
-          against the attached answer key: Passed or Missed for each
-          of its checks.
-Format:   A table: the check, Passed or Missed, your own words that
-          show it, and one line on why. Then how many passed.
-Inputs:   Your answers in this conversation, and the attached answer
-          key.
-Autonomy: Grade only. Do not redo the task, and do not suggest a
-          better brief. With no quote, mark the check Missed. If a
-          check is about what I did, ask me.
+Outcome:     The task you just did for me in this conversation, graded
+             against the attached answer key: Passed or Missed for
+             each of its checks.
+Context:     Your answers in this conversation, and the attached
+             answer key.
+Format:      A table: the check, Passed or Missed, your own words that
+             show it, and one line on why. Then how many passed.
+Constraints: Grade only. Do not redo the task, and do not suggest a
+             better brief. With no quote, mark the check Missed. If a
+             check is about what I did, ask me.
 ```
 
 ## Part A: the job (about 2 hours 15 minutes, any plan)
@@ -85,7 +86,7 @@ Autonomy: Grade only. Do not redo the task, and do not suggest a
 **What you do:**
 
 1. Open a new conversation: Tasks 1 to 6 and Task 9 run in it.
-2. Write your brief. The AI knows nothing of "The job" or your manager, so put the facts it needs under Inputs.
+2. Write your brief. The AI knows nothing of "The job" or your manager, so put the facts it needs under Context.
 3. Send the brief, with `inputs.zip` attached.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt). No way to attach it? "If something goes wrong" has the paste path.
 
@@ -179,33 +180,31 @@ You decide. The AI only shows you the jobs, and records your answers.
 1. Send this brief, in the same conversation:
 
    ```text
-   Outcome:  For each of six AP jobs, my decision: which rung of the
-             ladder of interaction it sits on, and which surface it
-             needs.
-   Format:   First show me the rungs and the surfaces below, with
-             their meanings. Then show all six jobs as a numbered
-             list, and ask for "the rung, then the surface" for each,
-             in one reply. At the end, a table of my answers.
-   Inputs:   The rungs: chatbot (you send a message, and get a
-             reply), agent (you delegate a task, and get a finished
-             output), AI Worker (you hand over a role, with recurring
-             results).
-             The surfaces: chat (a question, a draft or an
-             explanation I read once), task (a clear outcome that
-             comes back as a finished result), schedule (the same
-             work, run again on a schedule), standing worker (ongoing
-             work that continues between conversations).
-             The jobs: 1. Explain what "2/10 net 30" means on an
-             invoice. 2. Draft a polite reply to a vendor who asks
-             when they will be paid. 3. Turn this week's invoice
-             PDFs into one spreadsheet I can check. 4. Match this
-             week's invoices to the PO list, and tell me which do
-             not match. 5. Every Monday at 7:00 a.m., build the
-             unpaid-bills report and leave it for me. 6. Watch the
-             AP inbox all day, answer routine vendor questions, and
-             pass anything unusual to Maria.
-   Autonomy: Ask only. Do not answer for me, and do not tell me
-             whether I am right. Record my answers as I give them.
+   Outcome:     For each of six AP jobs, my decision: which rung of the
+                ladder of interaction it sits on, and which surface it
+                needs.
+   Context:     The rungs: chatbot (you send a message, and get a reply),
+                agent (you delegate a task, and get a finished output),
+                AI Worker (you hand over a role, with recurring results).
+                The surfaces: chat (a question, a draft or an explanation
+                I read once), task (a clear outcome that comes back as a
+                finished result), schedule (the same work, run again on a
+                schedule), standing worker (ongoing work that continues
+                between conversations). The jobs: 1. Explain what "2/10
+                net 30" means on an invoice. 2. Draft a polite reply to a
+                vendor who asks when they will be paid. 3. Turn this
+                week's invoice PDFs into one spreadsheet I can check. 4.
+                Match this week's invoices to the PO list, and tell me
+                which do not match. 5. Every Monday at 7:00 a.m., build
+                the unpaid-bills report and leave it for me. 6. Watch the
+                AP inbox all day, answer routine vendor questions, and
+                pass anything unusual to Maria.
+   Format:      First show me the rungs and the surfaces below, with
+                their meanings. Then show all six jobs as a numbered
+                list, and ask for "the rung, then the surface" for each,
+                in one reply. At the end, a table of my answers.
+   Constraints: Ask only. Do not answer for me, and do not tell me
+                whether I am right. Record my answers as I give them.
    ```
 
 2. Answer every job in one reply, in the shape it asks for.
@@ -279,28 +278,25 @@ You decide. The AI only shows you the results, and records your answers.
 2. Send this brief:
 
    ```text
-   Outcome:  My decision for each of my results: where it is kept,
-             and whether it stays or goes when the AI's work is
-             done.
-   Format:   First show me the places and their meanings below.
-             Then show all five results as a numbered list, each
-             with what it is and where it was made, and ask for "the
-             place, then stays or goes" for each, in one reply. At
-             the end, a table of my answers.
-   Inputs:   The places: my account or workspace (the
-             conversations, and the Artifacts section on Claude),
-             the AI's workspace (the temporary computer where the
-             AI's work runs), my own computer (my folders and
-             files), a connected app (such as Google Drive).
-             The results: 1. The Task 1 total, as text in this
-             conversation. 2. The Task 2 spreadsheet, as a file in
-             this conversation. 3. The Task 5 doc. 4. The Friday
-             file I saved in my Brightline AP folder in Task 8.
-             5. Any file you made in Task 2 and never delivered to
-             me.
-   Autonomy: Ask only. Do not answer for me, and do not tell me
-             whether I am right. If I did not do Task 8, skip
-             result 4.
+   Outcome:     My decision for each of my results: where it is kept, and
+                whether it stays or goes when the AI's work is done.
+   Context:     The places: my account or workspace (the conversations,
+                and the Artifacts section on Claude), the AI's workspace
+                (the temporary computer where the AI's work runs), my own
+                computer (my folders and files), a connected app (such as
+                Google Drive). The results: 1. The Task 1 total, as text
+                in this conversation. 2. The Task 2 spreadsheet, as a
+                file in this conversation. 3. The Task 5 doc. 4. The
+                Friday file I saved in my Brightline AP folder in Task 8.
+                5. Any file you made in Task 2 and never delivered to me.
+   Format:      First show me the places and their meanings below. Then
+                show all five results as a numbered list, each with what
+                it is and where it was made, and ask for "the place, then
+                stays or goes" for each, in one reply. At the end, a
+                table of my answers.
+   Constraints: Ask only. Do not answer for me, and do not tell me
+                whether I am right. If I did not do Task 8, skip result
+                4.
    ```
 
 3. Answer every result in one reply, in the shape it asks for.
@@ -322,20 +318,20 @@ The goal: find out which of your Part A results are still there a day later, and
 2. Send this brief:
 
    ```text
-   Outcome:  For each of my results from yesterday, whether I can
-             still find it today.
-   Format:   Show one result at a time, with what it is and where
-             it was made, and ask for "where I found it, then still
-             there, gone, or can't tell". At the end, a table of my
-             answers.
-   Inputs:   The results: 1. The Task 1 total, as text in my first
-             conversation. 2. Every Task 2 spreadsheet, as a file in
-             my first conversation or on my computer. 3. The Task 5 doc.
-             4. The Friday file in my Brightline AP folder, from
-             Task 8. 5. Any file you made in Task 2 and never
-             delivered to me.
-   Autonomy: Ask only. Do not answer for me. If I did not do
-             Task 8, skip result 4.
+   Outcome:     For each of my results from yesterday, whether I can
+                still find it today.
+   Context:     The results: 1. The Task 1 total, as text in my first
+                conversation. 2. Every Task 2 spreadsheet, as a file in
+                my first conversation or on my computer. 3. The Task 5
+                doc. 4. The Friday file in my Brightline AP folder, from
+                Task 8. 5. Any file you made in Task 2 and never
+                delivered to me.
+   Format:      Show one result at a time, with what it is and where it
+                was made, and ask for "where I found it, then still
+                there, gone, or can't tell". At the end, a table of my
+                answers.
+   Constraints: Ask only. Do not answer for me. If I did not do Task 8,
+                skip result 4.
    ```
 
 3. For each result the AI shows you, look for it: in the conversations, in the Artifacts section on Claude, in your `Brightline AP` folder, and on your computer. Then answer.
@@ -376,19 +372,19 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
 1. Schedule a task that runs every Monday morning, with this brief. A scheduled task keeps only its brief, and you cannot attach a file to it, so the brief carries every fact it needs:
 
    ```text
-   Outcome:  A checklist for this week's payment run at Brightline.
-             The run is on the Friday of the week this task runs.
-   Format:   First, a line that lists every file already in your
-             working folder, by name, or says it is empty. Then a
-             checklist of five steps or fewer, saved as a file
-             named payment-checklist.md.
-   Inputs:   The checks AP makes before every payment run: list the
-             bills due by the Friday. Take out any bill already
-             paid. Take out any copy of a bill already billed. Hold
-             any bill whose total does not match its lines. Hold
-             any bill whose price does not match its PO.
-   Autonomy: Make the checklist only. Do not send it, and do not
-             contact anyone.
+   Outcome:     A checklist for this week's payment run at Brightline.
+                The run is on the Friday of the week this task runs.
+   Context:     The checks AP makes before every payment run: list the
+                bills due by the Friday. Take out any bill already paid.
+                Take out any copy of a bill already billed. Hold any bill
+                whose total does not match its lines. Hold any bill whose
+                price does not match its PO.
+   Format:      First, a line that lists every file already in your
+                working folder, by name, or says it is empty. Then a
+                checklist of five steps or fewer, saved as a file named
+                payment-checklist.md.
+   Constraints: Make the checklist only. Do not send it, and do not
+                contact anyone.
    ```
 
    On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open Scheduled in the left menu, create a new schedule that runs every Monday morning, and paste the brief into it. In its advanced settings, turn off Run on this computer, so the task runs in the cloud.

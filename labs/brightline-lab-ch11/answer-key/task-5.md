@@ -8,8 +8,8 @@ The answers for Task 5 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 Task 5 carries checks 18 to 20 of the lab's 47.
 
-18. **The brief, and its empty part.** The cause is the brief, with Record B's line "No knowledge source was attached" or "No register was opened". Against the four parts, Inputs is empty.
-    - Passed: the brief, a record line, and Inputs.
+18. **The brief, and its empty part.** The cause is the brief, with Record B's line "No knowledge source was attached" or "No register was opened". Against the four parts, the Context is empty.
+    - Passed: the brief, a record line, and the Context.
     - Missed: another cause; no record line; or another part named.
 19. **Your lines name the sources.** A new line under "Replies and handoffs", for replies about a short payment, names the vendor record for the terms, and the register, or the accounting system, for the invoice and payment lines, with any credit memo. It says what the worker does when the terms are missing, such as saying so and stating no terms.
     - Passed: both sources, and the rule for missing terms.
@@ -20,7 +20,7 @@ Task 5 carries checks 18 to 20 of the lab's 47.
 
 ## Why
 
-Jordan's request named no source, so the drafts filled the gap with one set of terms for every vendor (Lesson 11.5). The fix is the brief's Inputs part: where each fact must come from, and what to do when it is not there. Written into the contract's line for replies like his, it holds for his next request, and for anyone else's.
+Jordan's request named no source, so the drafts filled the gap with one set of terms for every vendor (Lesson 11.5). The fix is the brief's Context: where each fact must come from, and what to do when it is not there. Written into the contract's line for replies like his, it holds for his next request, and for anyone else's.
 
 The test is the same Wednesday, re-run. Each vendor's terms now come from its own record, and the register shows the credit memo and the payment dates, so each reply can explain its own difference. Mad River's discount was right: the reply says so, from its terms and its dates.
 

@@ -32,7 +32,7 @@ Task 2 carries checks 3 and 4 of the lab's 26.
 | 11 | Write a summary paragraph. | Wrong shape: the Format decides what comes back. "Leave out" also passes |
 | 12 | List the vendors in the run. | Leave out, or put it in the Format: a preference |
 | 13 | Check the total once more. | Leave out: method |
-| 14 | Send me the summary. | Wrong: the Autonomy says send nothing, and the Format says where each piece goes. "Leave out, the Format decides where it goes" also passes |
+| 14 | Send me the summary. | Wrong: the Constraints say send nothing, and the Format says where each piece goes. "Leave out, the Format decides where it goes" also passes |
 
 ## Why
 
