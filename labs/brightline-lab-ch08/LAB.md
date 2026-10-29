@@ -71,19 +71,19 @@ Two names cover several questions: `Test: Tuesday morning` asks questions 2, 3, 
 One prompt checks every task, in the lab chat and in Task 13's project chat. Attach the task's key first, then send:
 
 ```text
-Outcome:  The task I just finished, graded against the newest answer
-          key attached in this chat: Passed or Missed for each of its
-          checks.
-Format:   A table: the check, Passed or Missed, the words in my
-          document or in this chat that show it, and one line on why.
-          Then how many passed.
-Inputs:   The newest answer key attached in this chat, only its
-          checks; the documents beside this chat or attached to it;
-          and what I sent and you answered in this chat.
-Autonomy: Grade only. Do not rewrite the document, and do not suggest
-          new lines. Read the document again before grading. With no
-          words to quote, mark the check Missed. Grade only this key's
-          checks.
+Outcome:     The task I just finished, graded against the newest
+             answer key attached in this chat: Passed or Missed for
+             each of its checks.
+Context:     The newest answer key attached in this chat, only its
+             checks; the documents beside this chat or attached to it;
+             and what I sent and you answered in this chat.
+Format:      A table: the check, Passed or Missed, the words in my
+             document or in this chat that show it, and one line on
+             why. Then how many passed.
+Constraints: Grade only. Do not rewrite the document, and do not
+             suggest new lines. Read the document again before
+             grading. With no words to quote, mark the check Missed.
+             Grade only this key's checks.
 ```
 
 ## Tuesday, November 3: four wrong answers
@@ -98,62 +98,61 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 2. Attach `inputs.zip`, and send the brief for your app. There are two, the same but for the documents' name: Claude's first, then ChatGPT's.
 
    ```text tab="Claude" tab-group="vendor"
-   Outcome:  The AP Worker's project, set up to answer only from what
-             Dave approved, and Maria's records beside it: decided by
-             me task by task, written by you, and tested by you
-             against the project's setup.
-   Format:   Unzip the attached file. Open two Claude Docs beside our
-             chat, "AP Worker project" and "Maria's records", holding
-             what task-questions.md says. Keep each to what that file
-             says it holds. Write every note in the chat, never in a
-             Doc. Read the Docs again before every test and every
-             check. When I send "Task" and a number, ask me that
-             task's questions from task-questions.md, one at a time,
-             as that file says, and show each item in the same
-             message as its question. Write each answer of mine into
-             the Doc that file names, and show me the lines you
-             changed. When I send "Test:" or "Skill test:", answer as
-             task-questions.md says, and change nothing it does not
-             say to change.
-   Inputs:   The attached zip: project-2026-11-03.md,
-             test-questions.md, case-5149.md, invoice-review-skill.md,
-             the other files it holds, and task-questions.md. My
-             answers. Never memory or earlier chats.
-   Autonomy: I decide every line. Write my decision, and never add a
-             place, a clause, a date, a person or a rule I did not
-             give, or tell me what a line should say. Grade nothing
-             unless I send a check prompt.
+   Outcome:     The AP Worker's project, set up to answer only from what
+                Dave approved, and Maria's records beside it: decided by
+                me task by task, written by you, and tested by you
+                against the project's setup.
+   Context:     The attached zip: project-2026-11-03.md,
+                test-questions.md, case-5149.md, invoice-review-skill.md,
+                the other files it holds, and task-questions.md. My
+                answers. Never memory or earlier chats.
+   Format:      Unzip the attached file. Open two Claude Docs beside our
+                chat, "AP Worker project" and "Maria's records", holding
+                what task-questions.md says. Keep each to what that file
+                says it holds. Write every note in the chat, never in a
+                Doc. Read the Docs again before every test and every
+                check. When I send "Task" and a number, ask me that
+                task's questions from task-questions.md, one at a time,
+                as that file says, and show each item in the same message
+                as its question. Write each answer of mine into the Doc
+                that file names, and show me the lines you changed. When
+                I send "Test:" or "Skill test:", answer as
+                task-questions.md says, and change nothing it does not
+                say to change.
+   Constraints: I decide every line. Write my decision, and never add a
+                place, a clause, a date, a person or a rule I did not
+                give, or tell me what a line should say. Grade nothing
+                unless I send a check prompt.
 
    Start with Task 1.
    ```
 
    ```text tab="ChatGPT" tab-group="vendor"
-   Outcome:  The AP Worker's project, set up to answer only from what
-             Dave approved, and Maria's records beside it: decided by
-             me task by task, written by you, and tested by you
-             against the project's setup.
-   Format:   Unzip the attached file. Open two Writing blocks beside
-             our chat, "AP Worker project" and "Maria's records",
-             holding what task-questions.md says. Keep each to what
-             that file says it holds. Write every note in the chat,
-             never in a Writing block. Read the Writing blocks again
-             before every test and every check. When I send "Task"
-             and a number, ask me that task's questions from
-             task-questions.md, one at a time, as that file says, and
-             show each item in the same message as its question.
-             Write each answer of mine into the Writing block that
-             file names, and show me the lines you changed. When I
-             send "Test:" or "Skill test:", answer as
-             task-questions.md says, and change nothing it does not
-             say to change.
-   Inputs:   The attached zip: project-2026-11-03.md,
-             test-questions.md, case-5149.md, invoice-review-skill.md,
-             the other files it holds, and task-questions.md. My
-             answers. Never memory or earlier chats.
-   Autonomy: I decide every line. Write my decision, and never add a
-             place, a clause, a date, a person or a rule I did not
-             give, or tell me what a line should say. Grade nothing
-             unless I send a check prompt.
+   Outcome:     The AP Worker's project, set up to answer only from what
+                Dave approved, and Maria's records beside it: decided by
+                me task by task, written by you, and tested by you
+                against the project's setup.
+   Context:     The attached zip: project-2026-11-03.md,
+                test-questions.md, case-5149.md, invoice-review-skill.md,
+                the other files it holds, and task-questions.md. My
+                answers. Never memory or earlier chats.
+   Format:      Unzip the attached file. Open two Writing blocks beside
+                our chat, "AP Worker project" and "Maria's records",
+                holding what task-questions.md says. Keep each to what
+                that file says it holds. Write every note in the chat,
+                never in a Writing block. Read the Writing blocks again
+                before every test and every check. When I send "Task" and
+                a number, ask me that task's questions from
+                task-questions.md, one at a time, as that file says, and
+                show each item in the same message as its question. Write
+                each answer of mine into the Writing block that file
+                names, and show me the lines you changed. When I send
+                "Test:" or "Skill test:", answer as task-questions.md
+                says, and change nothing it does not say to change.
+   Constraints: I decide every line. Write my decision, and never add a
+                place, a clause, a date, a person or a rule I did not
+                give, or tell me what a line should say. Grade nothing
+                unless I send a check prompt.
 
    Start with Task 1.
    ```

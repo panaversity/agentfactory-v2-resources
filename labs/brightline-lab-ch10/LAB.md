@@ -65,19 +65,19 @@ You use two chats. Tasks 1 to 12 run in one lab chat. Task 13 runs in a fresh ch
 One prompt checks every task, in the lab chat and in Task 13's fresh chat. Attach the task's key first, then send:
 
 ```text
-Outcome:  The task I just finished, graded against the newest answer
-          key attached in this chat: Passed or Missed for each of its
-          checks.
-Format:   A table: the check, Passed or Missed, the words in my
-          document or in this chat that show it, and one line on why.
-          Then how many passed.
-Inputs:   The newest answer key attached in this chat, only its
-          checks; the documents beside this chat or attached to it;
-          and what I sent and you answered in this chat.
-Autonomy: Grade only. Do not rewrite the document, and do not suggest
-          new lines. Read the document again before grading. With no
-          words to quote, mark the check Missed. Grade only this key's
-          checks.
+Outcome:     The task I just finished, graded against the newest
+             answer key attached in this chat: Passed or Missed for
+             each of its checks.
+Context:     The newest answer key attached in this chat, only its
+             checks; the documents beside this chat or attached to it;
+             and what I sent and you answered in this chat.
+Format:      A table: the check, Passed or Missed, the words in my
+             document or in this chat that show it, and one line on
+             why. Then how many passed.
+Constraints: Grade only. Do not rewrite the document, and do not
+             suggest new lines. Read the document again before
+             grading. With no words to quote, mark the check Missed.
+             Grade only this key's checks.
 ```
 
 ## Before: Monday as it is
@@ -92,57 +92,56 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 2. Attach `inputs.zip`, and send the brief for your app. There are two, the same but for the document's name: Claude's first, then ChatGPT's.
 
    ```text tab="Claude" tab-group="vendor"
-   Outcome:  Brightline's terms for switching its AP Worker back on:
-             decided by me task by task, written by you, and tested
-             by you against Monday's cases.
-   Format:   Unzip the attached file. Open one Claude Doc beside our
-             chat, holding what task-questions.md says, and keep it
-             to that. Write every note in the chat, never in the Doc.
-             Read the Doc and role-contract-draft-6.md again before
-             every test and every check. When I send "Task" and a
-             number, ask me that task's questions from
-             task-questions.md, one at a time, as that file says,
-             and show each item in the same message as its question.
-             Write each answer of mine into the Doc where that file
-             says, then show me the lines you changed. When I send
-             "Test:", answer as task-questions.md says, and change
-             nothing.
-   Inputs:   The attached zip: role-contract-draft-6.md,
-             brightline-files.md, monday-cases.md, vendor-facts.md,
-             the other files it holds, and task-questions.md. My
-             answers. Never memory or earlier chats.
-   Autonomy: I decide every line. Write my decision, and never add a
-             person, a date, a place, a reason or a rule I did not
-             give, or tell me what a line should say. Grade nothing
-             unless I send a check prompt.
+   Outcome:     Brightline's terms for switching its AP Worker back on:
+                decided by me task by task, written by you, and tested by
+                you against Monday's cases.
+   Context:     The attached zip: role-contract-draft-6.md,
+                brightline-files.md, monday-cases.md, vendor-facts.md,
+                the other files it holds, and task-questions.md. My
+                answers. Never memory or earlier chats.
+   Format:      Unzip the attached file. Open one Claude Doc beside our
+                chat, holding what task-questions.md says, and keep it to
+                that. Write every note in the chat, never in the Doc.
+                Read the Doc and role-contract-draft-6.md again before
+                every test and every check. When I send "Task" and a
+                number, ask me that task's questions from
+                task-questions.md, one at a time, as that file says, and
+                show each item in the same message as its question. Write
+                each answer of mine into the Doc where that file says,
+                then show me the lines you changed. When I send "Test:",
+                answer as task-questions.md says, and change nothing.
+   Constraints: I decide every line. Write my decision, and never add a
+                person, a date, a place, a reason or a rule I did not
+                give, or tell me what a line should say. Grade nothing
+                unless I send a check prompt.
 
    Start with Task 1.
    ```
 
    ```text tab="ChatGPT" tab-group="vendor"
-   Outcome:  Brightline's terms for switching its AP Worker back on:
-             decided by me task by task, written by you, and tested
-             by you against Monday's cases.
-   Format:   Unzip the attached file. Open one Writing block beside
-             our chat, holding what task-questions.md says, and keep
-             it to that. Write every note in the chat, never in the
-             Writing block. Read the Writing block and
-             role-contract-draft-6.md again before every test and
-             every check. When I send "Task" and a number, ask me
-             that task's questions from task-questions.md, one at a
-             time, as that file says, and show each item in the same
-             message as its question. Write each answer of mine into
-             the Writing block where that file says, then show me the
-             lines you changed. When I send "Test:", answer as
-             task-questions.md says, and change nothing.
-   Inputs:   The attached zip: role-contract-draft-6.md,
-             brightline-files.md, monday-cases.md, vendor-facts.md,
-             the other files it holds, and task-questions.md. My
-             answers. Never memory or earlier chats.
-   Autonomy: I decide every line. Write my decision, and never add a
-             person, a date, a place, a reason or a rule I did not
-             give, or tell me what a line should say. Grade nothing
-             unless I send a check prompt.
+   Outcome:     Brightline's terms for switching its AP Worker back on:
+                decided by me task by task, written by you, and tested by
+                you against Monday's cases.
+   Context:     The attached zip: role-contract-draft-6.md,
+                brightline-files.md, monday-cases.md, vendor-facts.md,
+                the other files it holds, and task-questions.md. My
+                answers. Never memory or earlier chats.
+   Format:      Unzip the attached file. Open one Writing block beside
+                our chat, holding what task-questions.md says, and keep
+                it to that. Write every note in the chat, never in the
+                Writing block. Read the Writing block and
+                role-contract-draft-6.md again before every test and
+                every check. When I send "Task" and a number, ask me that
+                task's questions from task-questions.md, one at a time,
+                as that file says, and show each item in the same message
+                as its question. Write each answer of mine into the
+                Writing block where that file says, then show me the
+                lines you changed. When I send "Test:", answer as
+                task-questions.md says, and change nothing.
+   Constraints: I decide every line. Write my decision, and never add a
+                person, a date, a place, a reason or a rule I did not
+                give, or tell me what a line should say. Grade nothing
+                unless I send a check prompt.
 
    Start with Task 1.
    ```
@@ -362,18 +361,18 @@ Autonomy: Grade only. Do not rewrite the document, and do not suggest
 2. Open a fresh chat with memory off: an incognito chat in Claude, or a temporary chat in ChatGPT. Attach your downloaded document and `inputs.zip`, and send:
 
    ```text
-   Outcome:  Monday, December 14, 2026, decided by Brightline's terms,
-             case by case.
-   Format:   "Test: Monday", as task-questions.md in the zip says:
-             each of the eight cases in monday-cases.md, in order,
-             headed with its name, in four numbered items.
-   Inputs:   The attached document, which is the terms, and
-             role-contract-draft-6.md as the document's last section
-             changes it. The other files in the zip only where a case
-             names them.
-   Autonomy: Decide only by the lines of the terms, and quote them.
-             Where no line decides, say "no line decides". Change
-             nothing.
+   Outcome:     Monday, December 14, 2026, decided by Brightline's terms,
+                case by case.
+   Context:     The attached document, which is the terms, and
+                role-contract-draft-6.md as the document's last section
+                changes it. The other files in the zip only where a case
+                names them.
+   Format:      "Test: Monday", as task-questions.md in the zip says:
+                each of the eight cases in monday-cases.md, in order,
+                headed with its name, in four numbered items.
+   Constraints: Decide only by the lines of the terms, and quote them.
+                Where no line decides, say "no line decides". Change
+                nothing.
    ```
 
 3. **Check it now, in the fresh chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-13.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape it.

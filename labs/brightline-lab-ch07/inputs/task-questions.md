@@ -54,7 +54,7 @@ Show this table when a question below says "7.2's ladder":
    Write "What let it" in the chat: each of the three actions, with the learner's answer.
 4. Show Maria's instruction, from cases.md. Then show Lesson 7.1's three limits, quoted:
    - "**The Authority Envelope** is the explicit, standing boundary of what a worker may observe, recommend, draft, execute or escalate, including thresholds and the actions that may never be automated." "The worker's owner writes it. The worker does not, and neither does the person who writes today's brief, the written instructions for one task."
-   - "**Autonomy in the brief** (Chapter 5) is the part of a brief that sets how far one task may go. It can only make the envelope narrower, never wider."
+   - "**Autonomy in the brief** (Chapter 5), the second half of a brief's constraints, sets how far one task may go. It can only make the envelope narrower, never wider."
    - "**Permissions** are the product settings that decide what the worker's tools *can* do."
 
    Ask: "Maria's 'Just handle it so I don't have to': is it an envelope, a brief or a permission? Could it give the worker more than its contract allows? And who may change the envelope? Answer: the kind, yes or no, and the person."
@@ -218,7 +218,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 
 ## Task 12. This morning's inbox
 
-1. Show the "Owner and changes" line in the Doc, and Lesson 7.1's lines, quoted: "**Autonomy in the brief** (Chapter 5) is the part of a brief that sets how far one task may go. It can only make the envelope narrower, never wider." Ask: "This morning's brief, for Wednesday, October 28, 2026: what may the worker do today, in this one task? Answer in a few words."
+1. Show the "Owner and changes" line in the Doc, and Lesson 7.1's lines, quoted: "**Autonomy in the brief** (Chapter 5), the second half of a brief's constraints, sets how far one task may go. It can only make the envelope narrower, never wider." Ask: "This morning's brief, for Wednesday, October 28, 2026: what may the worker do today, in this one task? Answer in a few words."
 
    Write the answer under a new section, "This morning's brief, October 28", above "Open questions".
 2. Print "Your tests said": one line for each of the twelve emails, from the last test of that email in this chat: what the worker does with it, and to whom. Write it in the chat, never in the Doc. Then say: "Task 12's lab-chat step is done. Download the Doc, and open your fresh chat."

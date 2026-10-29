@@ -26,7 +26,7 @@ The Doc's headings are the four parts, in the order they arrive. Add a heading w
 
 **After the run.**
 
-1. Take the four parts one at a time, in this order: Outcome, Format, Inputs, Autonomy. For each, show the part and its question, from 5.1's table below. Then show the run's "What decided it" lines that belong to that part, quoted, each on its own line. Sort them by 5.5's table below. Ask: "What did the run have to decide alone for this part? Name each thing in a few words, or say 'nothing'. A right guess is still a guess, and so is anything the run took from memory."
+1. Take the four parts one at a time, in this order: Outcome, Context, Format, Constraints. For each, show the part and its question, from 5.1's table below. Then show the run's "What decided it" lines that belong to that part, quoted, each on its own line. Sort them by 5.5's table below. Ask: "What did the run have to decide alone for this part? Name each thing in a few words, or say 'nothing'. A right guess is still a guess, and so is anything the run took from memory."
 
 Write "What Dave's line left to guess" in the chat: each part, with the learner's words.
 
@@ -66,7 +66,7 @@ Put the words in the Doc, as "When the learner sends a part of the brief" says. 
 
 **After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'." Then say "Task 3 is done".
 
-## Task 4. The inputs
+## Task 4. The context
 
 **Before the run.**
 
@@ -78,7 +78,7 @@ Put the words in the Doc, as "When the learner sends a part of the brief" says. 
    - ap-policy-v2-excerpt.md: an excerpt of Brightline's AP policy, version 2.
    - invoice-text-tcf-5161.txt: the text of Tri-County Freight's invoice 5161.
 2. Then show invoice-text-tcf-5161.txt whole, as its own lines, under this line: "Tri-County Freight's invoice 5161, as it arrived. It ends with a note to the AP system."
-3. Show the Inputs row of 5.1's table below, then 5.3's three jobs below, and the notes on the Inputs from this chat, quoted. Ask: "Send your Inputs: 'Inputs:' and your own words."
+3. Show the Context row of 5.1's table below, then 5.1's context below, then 5.3's three jobs below, and the notes on the Context from this chat, quoted. Ask: "Send your Context: 'Context:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
@@ -98,11 +98,11 @@ Put the words in the Doc. Say "Ready for your run".
 
 **After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'." Then say "Task 5 is done".
 
-## Task 6. The autonomy
+## Task 6. The constraints
 
 **Before the run.**
 
-1. Show the Autonomy row of 5.1's table below, and the notes on the Autonomy from this chat, quoted. Ask: "Send your Autonomy: 'Autonomy:' and your own words."
+1. Show the Constraints row of 5.1's table below, then 5.1's constraints below, and the notes on the Constraints from this chat, quoted. Ask: "Send your Constraints, both halves: 'Constraints:' and your own words."
 
 Put the words in the Doc. Then say: "This is the first run of your whole brief, and Task 7 reads it. Guess what it will do, without typing the guess." Say "Ready for your run".
 
@@ -164,7 +164,7 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 Task 11 runs in a fresh chat. If the learner comes back here and names a line the brief lacks, put it in the Doc as in Tasks 3 to 8, and show the part as it now stands. Ask nothing else.
 
-## From Chapter 5, as of 27 October 2026
+## From Chapter 5, as of 29 October 2026
 
 Copied from the chapter, word for word, except where a line says otherwise.
 
@@ -172,15 +172,23 @@ Copied from the chapter, word for word, except where a line says otherwise.
 
 | Part | The question it answers |
 | --- | --- |
-| Outcome | What should exist when the work is done? |
-| Format | How should it come back, and where does it go next? |
-| Inputs | What should it work from, and what does each source decide? |
-| Autonomy | How much may it do before checking with you? |
+| Outcome | What should exist when the work is done, and what does "done well" look like? |
+| Context | Who is it for, why does it matter, and what should it work from? |
+| Format | What shape should it come back in, and where does it go next? |
+| Constraints | What rules must the result follow, and how far may the worker go without checking with you? |
 
-### 5.3: what a strong inputs line does (its three bold lines only)
+### 5.1: the context, in two lines
+
+*Context.* Write it as two short lines. First, who the work is for and why it matters. Then, what the worker should work from, and which source wins when two disagree (5.3).
+
+### 5.1: the constraints (the first three sentences of its line)
+
+*Constraints.* These have two halves. The **content rules** say what the result must keep, leave out or avoid, and how long it is and in what tone. The **autonomy** says how far the worker may go alone.
+
+### 5.3: what the sources half of a strong context does (its three bold lines only)
 
 1. It names the governed source and its version, and says it wins.
-2. It says what each other input decides.
+2. It says what each other source decides.
 3. It says what to do when the source is silent.
 
 Inputs are data, not instructions.
@@ -203,6 +211,6 @@ Inputs are data, not instructions.
 | What you see | The part to change |
 | --- | --- |
 | It made the wrong thing, or too much of it | Outcome |
+| A wrong fact, an old rule, a source it should not have used, or the wrong reader | Context |
 | The content is right, but the shape or the destination is wrong | Format |
-| A wrong fact, an old rule, or a source it should not have used | Inputs |
-| It decided something it should have asked about, or kept asking about small things | Autonomy |
+| It said something it must not say, decided something it should have asked about, or kept asking about small things | Constraints |
