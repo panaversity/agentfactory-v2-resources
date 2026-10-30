@@ -7,7 +7,7 @@
 - The Claude desktop app with a Pro, Max, Team or Enterprise plan, for Tasks 1 to 9 and 12.
 - For the headless step in Task 8, the Claude Code command-line version. It is a separate install. Follow Anthropic's [setup page](https://code.claude.com/docs/en/setup). If you cannot install it, skip that step and say so in `ports/ch12.md`.
 - The ChatGPT desktop app with any ChatGPT plan, including Free, for Task 10.
-- OpenCode Desktop and access to a model, for Task 11. That can be an API key from a model provider, a ChatGPT Plus or Pro plan, a local model, or OpenCode's Go plan. We found no way to sign in with a Claude subscription in OpenCode's version 2 documentation, so for Claude models use an Anthropic API key. This lab covers OpenCode version 2.
+- OpenCode Desktop and access to a model, for Task 11. That can be an API key from a model provider, a ChatGPT Plus or Pro plan, a local model, or OpenCode's Go plan. Since version 2.2.3, you can also use your Claude Code login, through OpenCode's Claude Agent provider. This lab covers OpenCode version 2.
 - Git, and Node.js 24 or later. Check them in a terminal with `git --version` and `node --version`. If either is missing, install it before you begin. The agent should not install software on its own.
 
 **The core path and the extensions.** The core path is Tasks 1 to 7, at least one port (Task 10 or 11), and Task 12. Tasks 8 and 9, the optional mod and the second port are extensions. Do them if you have the time and the apps.
@@ -207,7 +207,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 1. In a terminal, in `brightline-ap`, run `git switch -c port-codex rules`. This starts a branch from the rules and settings, before the script existed.
 2. Open the ChatGPT desktop app and choose **Codex** instead of ChatGPT. Open the `brightline-ap` folder, set **Work in** to **This computer**, and set the permission mode to **Ask for approval**.
 3. Ask: "What rules does this repository give you, and which file did you read them from?" It should name `AGENTS.md`. Note that `.claude/settings.json` does not bind Codex. Only the words in `AGENTS.md` and Codex's own sandbox do.
-4. Send `/plan` with the same brief from Task 5, unchanged. Read the plan for the same three things. Correct it the same way if you need to.
+4. Turn on plan mode with `/plan`, then send the same brief from Task 5, unchanged. Read the plan for the same three things. Correct it the same way if you need to.
 5. Approve the work. If a suggested next prompt appears in the message box, read it before you accept it with Tab. Before you commit, type `/review` and choose **Review uncommitted changes**. Read the findings. Fix anything real, then check the review pane. Then ask: "Use a subagent to check the new script against `AGENTS.md` and report only rule breaks," and compare its summary with Claude's in Task 9.
 6. Run the tests and the script, compare with the key, and commit on the `port-codex` branch.
 7. **Optional, cloud.** Only if `brightline-ap` is already in a GitHub repository you may use: set **Work in** to **Cloud**, create an environment from that repository, and send "Run npm test and report how many tests pass. Do not change any files." It runs on OpenAI's machines from a copy, so it cannot see anything on your computer. Do not put a real company repository in the cloud for this lab.

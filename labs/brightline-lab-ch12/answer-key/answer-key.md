@@ -68,7 +68,7 @@ The side chat should say that nothing touched `data/`. The subagent's summary sh
 
 The band above the prompt shows the cutoff line. The mod's folder holds `.claude-plugin/plugin.json`, `hooks/hooks.json` and a hooks module such as `hooks/register.js`. The module should hook `ui.render` for the `AbovePrompt` site, and perhaps `session.start`. Its only calls should draw, such as `$.ui.resolve` or `$.ui.invalidate`. If you see `$.fs`, `$.process`, `$.http` or a `tool.check` hook, the mod does more than you asked. Say no, and ask Claude to remove it.
 
-A mod like this could reach your files, your secrets and every prompt, and it could approve a tool call before you are asked, because mods are not sandboxed. That is why you read it first. We found nothing like mods in OpenAI's documentation. OpenCode's Desktop plugins can add panels.
+A mod like this could reach your files, your secrets and every prompt, and it could approve a tool call before you are asked, because mods are not sandboxed. That is why you read it first. The nearest thing in Codex is Plugin Extensions, which add panels to ChatGPT. OpenCode's Desktop plugins can add panels too.
 
 ## Tasks 10 and 11: the ports
 
