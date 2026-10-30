@@ -21,7 +21,7 @@
 **The lab files.** Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it into a new folder, such as `Documents/labs/`. It contains two folders:
 
 - `brightline-ap/`, the starter repository. This is the only folder you give an agent.
-- `answer-key/`, the expected results. Never give this folder to an agent. An agent that can read the answers is not tested by them.
+- An answer key for each task that has one, as a separate download linked from the task. Open it in a text editor, never in the agent. An agent that can read the answers is not tested by them.
 
 **The date in this lab.** Today in the lab is Wednesday, March 3, 2027. Brightline's payment run is Friday, March 5. Your computer's clock will show a different date, so the brief gives the date to the agent.
 
@@ -98,6 +98,8 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 
 **Checkpoint:** the edit to `data/vendors.csv` was blocked, `git status` was clean, and `git tag` lists `rules`.
 
+**Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-4.md) and open it in a text editor, not in the agent.
+
 ## Task 5. Ask for a plan first (20 minutes)
 
 **Goal:** catch a wrong assumption before it becomes code.
@@ -129,7 +131,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 2. Send: "Go ahead with the revised plan."
 3. When it says it is done, open the **Changes** card and read the diff. Check that nothing in `data/` changed, and that there is a test for each of the three rules.
 4. Run `npm test` and `npm run due -- 2027-03-05` yourself, or approve the agent running them.
-5. Open `answer-key/answer-key.md` in a text editor, not in the agent. Compare the output with the table.
+5. Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-6.md) and open it in a text editor, not in the agent. Compare the output with its table.
 6. If the result is wrong, find the matching row in "Common wrong answers", tell the agent what is wrong in one sentence, and run it again.
 7. When it matches, approve a commit.
 
@@ -145,6 +147,8 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 4. Decide you do not want it. Run `git status` and `git diff` to see which files changed. Then restore only those files, for example `git restore src/due-by-friday.ts`. `git restore` throws away changes you have not staged or committed, in the files you name. It does not delete new files the agent created, so run `git status` again and remove any file you did not want.
 
 **Checkpoint:** the new session explained the empty-date rule from `NOTES.md` alone, and `git status` shows a clean working tree.
+
+**Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-7.md) and open it in a text editor, not in the agent.
 
 ## Task 8. Make it one command, then run it headless (25 minutes)
 
@@ -179,6 +183,8 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 
 **Checkpoint:** `/due-by-friday 2027-03-05` reports 8 invoices and $19,229.53, and the first headless run's `structured_output` shows `"passed": true`. If you skipped the headless step, write why in your notes.
 
+**Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-8.md) and open it in a text editor, not in the agent.
+
 ## Task 9. Split the work across sessions (25 minutes, plus 15 for the optional mod)
 
 **Goal:** one job split across a second session, a subagent and a side chat, with each part reviewed before it is committed. Then an audit of what the agent loads.
@@ -200,6 +206,8 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 
 **Checkpoint:** two new commits, `npm test` passes, the per-vendor totals add up to $19,229.53, and your notes hold the side chat's answer, the subagent's summary and one audit finding. If you did step 7, the band shows the cutoff date, and your notes list the mod's events and calls.
 
+**Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-9.md) and open it in a text editor, not in the agent.
+
 ## Task 10. Port to Codex (30 minutes)
 
 **Goal:** the same brief on a second agent, from the same rules file, with a review before you commit.
@@ -213,6 +221,8 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 7. **Optional, cloud.** Only if `brightline-ap` is already in a GitHub repository you may use: set **Work in** to **Cloud**, create an environment from that repository, and send "Run npm test and report how many tests pass. Do not change any files." It runs on OpenAI's machines from a copy, so it cannot see anything on your computer. Do not put a real company repository in the cloud for this lab.
 
 **Checkpoint:** 8 invoices, $19,229.53, on the `port-codex` branch. You have notes on what Codex asked, what it did without asking, and what `/review` found.
+
+**Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-10.md) and open it in a text editor, not in the agent.
 
 **Without the ChatGPT app.** Skip this task and run `git switch main`. In Task 12 you write the Codex part of `ports/ch12.md` as a plan instead: which file Codex would read, how it would enforce the `data/` rule, which permission mode you would choose for Task 5 and Task 6, and why. Use Concept 12.7.
 
@@ -246,6 +256,8 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 6. Run the tests and the script, compare with the key, and commit on the `port-opencode` branch, including `opencode.jsonc`.
 
 **Checkpoint:** 8 invoices, $19,229.53, on the `port-opencode` branch. OpenCode asked before every edit and command, and it refused the edit in `data/`.
+
+**Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-11.md) and open it in a text editor, not in the agent.
 
 ## Task 12. Compare and tag (15 minutes)
 
