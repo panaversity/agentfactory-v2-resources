@@ -23,11 +23,11 @@ This file says what Brightline's AP Worker is made of, and what happened in one 
 | 3 | AP policy version 3 | Approved by Dave on September 1, 2026. Lowers the limit to $5,000 | An attachment in Dave's email |
 | 4 | The worker's memory | Four entries, listed below | The AI vendor's memory |
 | 5 | Scheduled task | Builds the invoice register from the AP inbox. The business time, every Monday at 7 a.m., is also written in the worker's Role Contract | The AI vendor's scheduling feature |
-| 6 | Connector: accounting system | The worker uses it to create and change register rows, and to change invoice status. Set up with Maria's login | The AI vendor's app |
+| 6 | Connector: accounting system | The AI vendor's link into the accounting system. The worker uses it to create and change register rows, and to change invoice status. Set up with Maria's login | The AI vendor's app |
 | 7 | Connector: AP inbox | Reads the AP inbox | The AI vendor's app |
 | 8 | #ap-help | Where staff ask the worker questions | Brightline's team chat |
 | 9 | Dave's run approvals | Dave approves each weekly payment run on Thursday by replying "approved" in #ap-help. (He approves single invoices over the limit in the accounting system, from his own login.) | The team chat's history |
-| 10 | Run notes | What the worker did on each invoice in each run, and what each invoice waits for | Typed into the shared project's chat after each run. No other copy |
+| 10 | Run notes | Where each invoice stands and what it waits for, with what the worker did on it in each run | Typed into the shared project's chat after each run. No other copy |
 
 ### The worker's memory: its four entries
 

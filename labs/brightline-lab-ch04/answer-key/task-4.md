@@ -6,10 +6,10 @@ The answers for Task 4 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries check 9, the last of the lab's 9 scored checks, and check 10, which is unscored.
+Task 4 carries check 13, the last of the lab's 13 scored checks, and check 14, which is unscored.
 
-9. **Sam may ask, and the worker's power does not grow.** Dave still decides what the worker may do: Sam may only ask it about his vendors' invoices. It marks nothing approved because Sam asked. Invoice 4498 needs Dave's approval, under policy version 3. Missed: Sam deciding, alone or with Dave, or anything marked approved because he asked.
-10. **Your own setup, unscored.** Each of your three things is marked rebuild or carry across, each one you carry says keep or move, and your first move is named with its reason. The AI checks only that the answers are there. Whether they are right for your work is yours to judge, because only you know it.
+13. **Sam may ask, and the worker's power does not grow.** Dave still decides what the worker may do: Sam may only ask it about his vendors' invoices. It marks nothing approved because Sam asked. Invoice 4498 needs Dave's approval, under policy version 3. Missed: Sam deciding, alone or with Dave, or anything marked approved because he asked.
+14. **Your own setup, unscored.** Each of your three things is marked rebuild or carry across, each one you carry says keep or move, and your first move is named with its reason. The AI checks only that the answers are there. Whether they are right for your work is yours to judge, because only you know it.
 
 ## Why
 

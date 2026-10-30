@@ -6,12 +6,12 @@ The answers for Task 3 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 3 carries checks 5 to 8 of the lab's 9 scored checks.
+Task 3 carries checks 9 to 12 of the lab's 13 scored checks.
 
-5. **The approved version answers.** AP policy version 3, approved by Dave on September 1, 2026, should have answered Maria. Missed: version 1, the memory, or the accounting system as the answer.
-6. **A rule becomes a control, and silence is said.** Something must hold the payment until Dave approves it: a check at the door to the accounting system, or an approval step inside it. A door, a gate, a control or a hold, in plain words, all pass. At Brightline today it is not in place. On Canadian dollars, the worker says the policy does not cover them, and asks Dave. Missed: a payment that waits only because the worker remembers the rule, or because the policy is written down; a control called in place today; or an answer about Canadian dollars that the policy does not give, such as converting at the bank's rate.
-7. **No email is an approval.** Dave has not approved: the approvals log has nothing for this week's run. A real email from Dave would not count either, under policy version 3, section 4.2, because an approval counts only when he records it in the accounting system from his own login. Missed: treating any email, real or lookalike, as Dave's approval.
-8. **A door checks every change, and the worker has its own login.** Between the worker and the accounting system stands a door that checks each change before it happens (the DSoR, which also keeps the evidence). The worker uses a login of its own, never Maria's or Dave's. Missed: nothing between the worker and the system, or the worker acting with a person's login.
+9. **The approved version answers.** AP policy version 3, approved by Dave on September 1, 2026, should have answered Maria. Missed: version 1, the memory, or the accounting system as the answer.
+10. **A rule becomes a control, and silence is said.** Something must hold the payment until Dave approves it: a check at the door to the accounting system, or an approval step inside it. A door, a gate, a control or a hold, in plain words, all pass. At Brightline today it is not in place. On Canadian dollars, the worker says the policy does not cover them, and asks Dave. Missed: a payment that waits only because the worker remembers the rule, or because the policy is written down; a control called in place today; or an answer about Canadian dollars that the policy does not give, such as converting at the bank's rate.
+11. **No email is an approval.** Dave has not approved: the approvals log has nothing for this week's run. A real email from Dave would not count either, under policy version 3, section 4.2, because an approval counts only when he records it in the accounting system from his own login. Missed: treating any email, real or lookalike, as Dave's approval.
+12. **A door checks every change, and the worker has its own login.** Between the worker and the accounting system stands a door that checks each change before it happens (the DSoR, which also keeps the evidence). The worker uses a login of its own, never Maria's or Dave's. Missed: nothing between the worker and the system, or the worker acting with a person's login.
 
 Never a deduction: saying that invoice 4498, at $7,800.00, needs Dave's approval, which it does; pointing out the lookalike email address, as long as the answer does not depend on it.
 
