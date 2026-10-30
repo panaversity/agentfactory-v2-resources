@@ -21,6 +21,7 @@ You can also download a lab here:
 | 9. Work That Runs Without You | When nobody is watching | [brightline-lab-ch09.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09.zip) |
 | 10. Governance and Responsible Use | Yes, on these terms | [brightline-lab-ch10.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10.zip) |
 | 11. When the Worker Goes Wrong | Where each failure lives | [brightline-lab-ch11.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11.zip) |
+| 12. Agentic Coding: Claude Code, Codex and OpenCode | The first repository, on three agents | [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) |
 
 A lab's `answer-key/` folder holds its answers, and its `LAB.md` tells you when to open it. A lab whose learners upload files to an AI keeps its answer keys out of its zip: its `LAB.md` links one key per task from the latest release instead.
 
