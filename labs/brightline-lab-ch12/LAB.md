@@ -16,16 +16,13 @@ Chapter 12 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 **The core path and the extensions.** The core path is Tasks 1 to 7, at least one port (Task 10 or 11), and Task 12. Tasks 8 and 9, the optional mod and the second port are extensions. Do them if you have the time and the apps.
 
-**Without a paid Claude plan.** Tasks 1 to 9 are written for Claude Code. Do Tasks 1 to 3 and 5 to 7 in Codex or OpenCode instead. The field guide has a table of the swaps. Draft `AGENTS.md` only, with `/init` in Codex or by asking OpenCode's *build* agent, so skip `CLAUDE.md`. There is no environment to save in Task 2. In Task 6 you read the changes in the review pane or with `git diff`. Before Task 1, set that agent's safety rules as Task 10 (step 2) or Task 11 (step 3) describes. Skip Tasks 4, 8 and 9, which need Claude Code's settings, skills and side chats. At the end of Task 3, commit and run `git tag rules` yourself, because Task 4 normally does it and the ports start from that tag. Your port is the agent you did not use: Task 11 if you used Codex, Task 10 if you used OpenCode. Do Task 12 in the agent you used for the core tasks. Say in `ports/ch12.md` which tasks you skipped and why.
+**Without a paid Claude plan.** Tasks 1 to 9 are written for Claude Code. Do Tasks 1 to 3 and 5 to 7 in Codex or OpenCode instead. The field guide has a table of the swaps. Draft `AGENTS.md` only, with `/init` in Codex or by asking OpenCode's *build* agent, so skip `CLAUDE.md`. There is no environment to save in Task 2. In Task 6, check that nothing in `data/` changed, in the review pane or with `git status`. Before Task 1, set that agent's safety rules as Task 10 (step 2) or Task 11 (step 3) describes. Skip Tasks 4, 8 and 9, which need Claude Code's settings, skills and side chats. At the end of Task 3, commit and run `git tag rules` yourself, because Task 4 normally does it and the ports start from that tag. Your port is the agent you did not use: Task 11 if you used Codex, Task 10 if you used OpenCode. Do Task 12 in the agent you used for the core tasks. Say in `ports/ch12.md` which tasks you skipped and why.
 
 **With only one app.** Skip the port tasks you cannot do, and write those ports as a plan in Task 12.
 
 **Exact steps.** Click paths and shortcuts change often. If a button in this lab has moved, check the [field guide for desktop coding agents](https://agentfactory2.panaversity.org/appendices/field-guides/desktop-coding-agents/), which is reviewed every month.
 
-**The lab files.** Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it into a new folder, such as `Documents/labs/`. It contains two folders:
-
-- `brightline-ap/`, the starter repository. This is the only folder you give an agent.
-- An answer key for each task that has one, as a separate download linked from the task. Open it in a text editor, never in the agent. An agent that can read the answers is not tested by them.
+**The lab files.** Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it into a new folder, such as `Documents/labs/`. It holds `brightline-ap/`, the starter repository, which is the only folder you give an agent, and a copy of these steps. Each task with an answer key links it as a separate download. Open a key in a text editor, never in the agent. An agent that can read the answers is not tested by them.
 
 **The date in this lab.** Today in the lab is Wednesday, March 3, 2027. Brightline's payment run is Friday, March 5. Your computer's clock will show a different date, so the brief gives the date to the agent.
 
@@ -126,7 +123,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
    - The rows with no `due_date`: does it work out their due date from the terms?
    - The paid invoices: does it leave them out?
    - The late invoices: does it keep them? "Due by Friday" includes them.
-7. Reply with every correction the plan needs, in the words of your check. For the empty dates, the rule is: the due date is `invoice_date` plus the days in `terms`, and "Due on receipt" means 0 days. Ask for a revised plan. If the plan asks about invoices due on Saturday or Sunday, answer from your check: the cutoff is Friday, so they wait for next week's run.
+7. Reply with every correction the plan needs, in the words of your check. For the empty dates, use the rule from step 1. Ask for a revised plan. If the plan asks about invoices due on Saturday or Sunday, answer from your check: the cutoff is Friday, so they wait for next week's run.
 
 **Checkpoint:** your check names 8 invoices, $19,229.53, and its hard cases by number, in a file outside `brightline-ap`. The revised plan names all three rules: empty dates from terms, paid invoices out, late invoices in. Write down whether the first plan caught the empty dates by itself. You will need it in Task 12.
 
@@ -153,13 +150,13 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 3. Now practice the undo. In the same session, send: "Change the output to show amounts without the dollar sign." Let it make the change. Do not commit.
 4. Decide you do not want it. Run `git status` and `git diff` to see which files changed. Then restore only those files, for example `git restore src/due-by-friday.ts`. `git restore` throws away changes you have not staged or committed, in the files you name. It does not delete new files the agent created, so run `git status` again and remove any file you did not want.
 
-**Checkpoint:** the new session explained the empty-date rule from `NOTES.md` alone, and `git status` shows a clean working tree.
+**Checkpoint:** the new session explained the empty-date rule from `NOTES.md` alone, and `git status` shows no changed files.
 
 **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-7.md) and open it in a text editor, not in the agent.
 
 ### Task 8. Make it one command, then run it headless (25 minutes)
 
-*Goal:* anyone on the team can run the Wednesday check by name, and a script can check the tests with nobody watching.
+*Goal:* anyone on the team can run the Wednesday list by name, and a script can check the tests with nobody watching.
 
 1. In *Manual* mode, send: "Create a project skill at `.claude/skills/due-by-friday/SKILL.md`. It should run `npm run due -- $ARGUMENTS`, then `npm test`, and report the count, the total, the listed invoices whose due date came from their terms, and whether the tests passed. It must not change any files. Set `disable-model-invocation: true`, so it runs only when someone calls it." Read the file. It should look like this:
 
@@ -201,7 +198,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 2. If Claude offers to run the README job in another session, accept that offer. The new session appears under this one in the sidebar. If your app does not offer this yet, start a second session yourself with *+ New* and give it the README job. Either way, the two jobs edit different files. If Claude later shows a card suggesting another task, read what it would do and where it would run before you choose *Start*, *Do it here* or neither. Write down what it suggested.
 3. While Claude works, open a side chat with Cmd+semicolon on macOS, Ctrl+semicolon on Windows, or `/btw`. Ask: "Has anything in this session touched `data/`?" Close the side chat. Its question and answer do not appear in the main session.
 4. When the vendor totals are done, send: "Use a subagent to check the new code against `AGENTS.md` and report only rule breaks." Read the summary it returns.
-5. Review each change in the *Changes* card, run `npm test`, and commit the vendor totals and the README as two separate commits.
+5. Check the vendor totals without reading code: they must add up to $19,229.53, the total in your check from Task 5. Then run `npm test`, and commit the vendor totals and the README as two separate commits.
 6. Run `/doctor prompt-audit`. It reports on your `CLAUDE.md` and `AGENTS.md` files and on the rules, skills, commands, subagents and output styles under `.claude/`, and changes nothing until you ask. Pick one finding, decide whether you agree, and write it in your notes. Accept a change only if you understand it.
 7. **Optional, 15 minutes: a small mod.** A mod is code that runs inside Claude Code with your rights, so you read it before it runs.
    - Set the mode to *Manual* and send "Make a mod that shows 'Payment run cutoff: Friday, March 5, 2027' in the band above the prompt. It should only draw that line. It must not read files, run commands, make network requests or approve tool calls."
@@ -224,8 +221,8 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 2. Open the ChatGPT desktop app and choose *Codex* instead of ChatGPT. Open the `brightline-ap` folder, set *Work in* to *This computer*, and set the permission mode to *Ask for approval*.
 3. Ask: "What rules does this repository give you, and which file did you read them from?" It should name `AGENTS.md`. Note that `.claude/settings.json` does not bind Codex. Only the words in `AGENTS.md` and Codex's own sandbox do.
 4. Turn on plan mode with `/plan`, then send the same brief from Task 5, unchanged. Read the plan for the same three things. Correct it the same way if you need to.
-5. Approve the work. If a suggested next prompt appears in the message box, read it before you accept it with Tab. Before you commit, type `/review` and choose *Review uncommitted changes*. Read the findings. Fix anything real, then check the review pane. Then ask: "Use a subagent to check the new script against `AGENTS.md` and report only rule breaks," and compare its summary with Claude's in Task 9.
-6. Run the tests and the script, compare with the key, and commit on the `port-codex` branch.
+5. Approve the work. If a suggested next prompt appears in the message box, read it before you accept it with Tab. Before you commit, type `/review` and choose *Review uncommitted changes*. Read the findings. Fix anything real, then check that nothing in `data/` changed. Then ask: "Use a subagent to check the new script against `AGENTS.md` and report only rule breaks," and compare its summary with Claude's in Task 9.
+6. Run the tests and the script, compare the result with your check from Task 5 and then with the key, and commit on the `port-codex` branch.
 7. **Optional, cloud.** Only if `brightline-ap` is already in a GitHub repository you may use: set *Work in* to *Cloud*, create an environment from that repository, and send "Run npm test and report how many tests pass. Do not change any files." It runs on OpenAI's machines from a copy, so it cannot see anything on your computer. Do not put a real company repository in the cloud for this lab.
 
 **Checkpoint:** 8 invoices, $19,229.53, on the `port-codex` branch. You have notes on what Codex asked, what it did without asking, and what `/review` found.
@@ -261,7 +258,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
    - Test the `data/` line. Ask OpenCode to change the terms of vendor V001 in `data/vendors.csv` to Net 45. It must refuse without asking you, because the rule denies it. Like Claude Code's deny rule, it covers the edit tool, not a shell command or script, so the shell line still makes those ask.
 4. Choose the *plan* agent. Ask which rules it read and from which file, then send the same brief from Task 5.
 5. Read and correct the plan as before. Then switch to the *build* agent and let it work, approving each edit and command. When it is done, ask: "Use the explore subagent to list every place the script reads from `data/`." Explore is read-only.
-6. Run the tests and the script, compare with the key, and commit on the `port-opencode` branch, including `opencode.jsonc`.
+6. Run the tests and the script, compare the result with your check from Task 5 and then with the key, and commit on the `port-opencode` branch, including `opencode.jsonc`.
 
 **Checkpoint:** 8 invoices, $19,229.53, on the `port-opencode` branch. OpenCode asked before every edit and command, and it refused the edit in `data/`.
 
@@ -272,13 +269,13 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 *Goal:* a written record of what changed between the three agents, and a tagged result.
 
 1. Run `git switch main`. Back in the Claude desktop app, or in the agent you used for the core tasks, open a new session and set it to ask before every edit (*Manual* in Claude Code).
-2. Ask the agent to create `ports/ch12.md` from your notes. Dictate the notes yourself. The agent did not see the other two sessions. For each agent, record:
+2. Ask the agent to create `ports/ch12.md` from your notes. Type or paste the notes yourself, because the agent did not see the other two sessions. For each agent, record:
    - whether it read `AGENTS.md`, and how you know
    - how it enforced the `data/` rule: a setting, a sandbox, or only the words
    - how it split work: a subagent, a second session, a side chat, and what each cost you in time or clarity
    - what it asked before acting, and what it did without asking
    - whether its first plan caught the empty `due_date` rule
-   - whether its result matched the key
+   - whether its result matched your check from Task 5
    - what you had to change in your brief or your settings, and why
 
    For an app you did not have, write the same points as a plan instead, using Concept 12.7.
@@ -309,7 +306,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 
 ### Apply it to your vertical
 
-Pick one folder from your own work that a script could help with, such as weekly exports or a set of templates. Copy it, never the original. Put the copy under git, and write an `AGENTS.md` that answers the five questions. Then add the one rule that would hurt most if broken, both as a line in `AGENTS.md` and as a deny rule in `.claude/settings.json`. Then ask any agent for a plan for one small script, and stop at the plan. If your project has a web page, ask the agent to open it in its browser pane after a change and tell you what it sees, then check the page yourself.
+Pick one folder from your own work that a script could help with, such as weekly exports or a set of templates. Copy it, never the original. Put the copy under git, and write an `AGENTS.md` that answers the five questions. Then add the one rule that would hurt most if broken, both as a line in `AGENTS.md` and as a deny rule in `.claude/settings.json`. Then, outside the copy, write down the cases you know and the result you expect from one small script. Ask any agent for a plan for that script, read the plan against your cases, and stop at the plan. If your project has a web page, ask the agent to open it in its browser pane after a change and tell you what it sees, then check the page yourself.
 
 *Domain expert and builder.* The domain expert gives the rule that must never be broken and the hidden case, such as Brightline's empty due dates. The builder sets up the repository, the settings, the command and the checks.
 

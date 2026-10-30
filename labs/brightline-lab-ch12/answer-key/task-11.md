@@ -11,5 +11,5 @@ There is no single right answer. Each port should reach 8 invoices and $19,229.5
 - how it split work: a subagent, a second session or a side chat, and what each cost you in time or clarity
 - what it asked before acting, and what it did without asking
 - whether its plan caught the empty `due_date` rule, or you had to add it
-- whether its result matched this key
+- whether its result matched your check from Task 5, and this key
 - anything you had to change in your brief or your settings, and why
