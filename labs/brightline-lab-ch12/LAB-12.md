@@ -16,7 +16,7 @@
 
 **With only one app.** Skip the port tasks you cannot do, and write those ports as a plan in Task 12.
 
-**Exact steps.** Click paths and shortcuts change often. If a button in this lab has moved, check the field guide E.desktop-coding-agents, which is reviewed every month. A copy, `field-guide-desktop-coding-agents.md`, comes with the lab download.
+**Exact steps.** Click paths and shortcuts change often. If a button in this lab has moved, check the [field guide for desktop coding agents](https://agentfactory2.panaversity.org/appendices/field-guides/desktop-coding-agents/), which is reviewed every month.
 
 **The lab files.** Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it into a new folder, such as `Documents/labs/`. It contains two folders:
 
