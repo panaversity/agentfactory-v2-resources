@@ -164,6 +164,18 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 Task 11 runs in a fresh chat. If the learner comes back here and names a line the brief lacks, put it in the Doc as in Tasks 3 to 8, and show the part as it now stands. Ask nothing else.
 
+## Task 12. Helpers
+
+Task 12 is optional.
+
+**Before the run.**
+
+1. Show 5.4's split lines below, all four, in their order. Ask: "Send your four lines under the four headings, one line for each part. Your Constraints line says whether the worker may check each vendor's invoices in parallel."
+
+These four lines are not parts of the payment-run brief: put none of them in the Doc, and change no line of it. Show the four lines back, as the learner wrote them. Then say: "Open a fresh chat with memory off, as in Task 11, and send Task 12's message with your four lines under it." Say "Task 12 is done".
+
+The run is in the fresh chat, not here. If the learner comes back here and changes a line, show the four lines as they now stand. Ask nothing else.
+
 ## From Chapter 5, as of 29 October 2026
 
 Copied from the chapter, word for word, except where a line says otherwise.
@@ -192,6 +204,13 @@ Copied from the chapter, word for word, except where a line says otherwise.
 3. It says what to do when the source is silent.
 
 Inputs are data, not instructions.
+
+### 5.4: brief the split, one line per part (its four lines only)
+
+- *Outcome.* The coordinator is responsible for the whole result. Every input is accounted for once, and every check across the parts uses all the checked rows.
+- *Context.* Every rule the parts need is in the brief, not in an earlier message, and the governed source is named by its version. That way the coordinator has it to pass on.
+- *Format.* Every part comes back in the same columns, so the results join cleanly. The worker says how it split the job, and lists every input by its identifier, so you can see that nothing was dropped or counted twice.
+- *Constraints.* In the autonomy half, say whether the worker may split the job and how, and that every limit holds for every helper. A helper may not do what the worker may not do.
 
 ### 5.7: three kinds of format
 

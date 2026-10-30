@@ -6,13 +6,13 @@ Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and eleven tasks, each checked against its own answer key the moment it is done. |
-| `inputs.zip` | The one file you give the AI, in Task 1 and again in Task 11. It holds the AP folder, `ap-folder`, with Brightline's six files for the payment run. It also holds Maria's fourteen steps, three new vendors' setup forms, and the questions the AI asks you in each task. You don't need to open it. |
+| `LAB.md` | The lab: the job, and eleven tasks and an optional twelfth, each checked against its own answer key the moment it is done. |
+| `inputs.zip` | The one file you give the AI, in Task 1, and again in Tasks 11 and 12. It holds the AP folder, `ap-folder`, with Brightline's six files for the payment run. It also holds Maria's fourteen steps, three new vendors' setup forms, and the questions the AI asks you in each task. You don't need to open it. |
 
 **The lab's date.** Today is Monday, October 19, 2026, and the job on the page says so.
 
 **The lab needs nothing from an earlier chapter.** Everything it starts from is in this folder.
 
-**Give the AI only `inputs.zip`, your downloaded brief in Task 11, and, at each check, that task's answer key.** Never upload `LAB.md` or this file: they link every answer key.
+**Give the AI only `inputs.zip`, your downloaded brief in Tasks 11 and 12, and, at each check, that task's answer key.** Never upload `LAB.md` or this file: they link every answer key.
 
 The answer keys are not in the zip. Each task's key is a one-click download, linked from `LAB.md` at that task's check step.
