@@ -6,6 +6,8 @@ The answers for Task 6 of Lab 12, in Chapter 12 of *The AI Agent Factory*, Secon
 
 Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
+Hold the output to your own check from Task 5 first: the count, the total and each hard case. Then compare it with the table below.
+
 An invoice is due by Friday when it is open (not paid) and its due date is on or before Friday, March 5, 2027. That includes invoices that are already late. When `due_date` is empty, the due date is `invoice_date` plus the days in `terms` ("Net 30" is 30 days, "Due on receipt" is 0 days).
 
 | Due date | Invoice | Vendor | Amount |
