@@ -7,6 +7,6 @@ These files go with Lab 12 of The AI Agent Factory: the first repository, on thr
 - `answer-key/` holds the expected results. Never give it to an agent. Open it in a text editor only when Task 6 tells you to.
 - `LAB-12.md` is a copy of the lab steps.
 
-Today in the lab is Wednesday, November 4, 2026. The payment run is Friday, November 6, 2026.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
 You need Git and Node.js 24 or later. The data is invented. Brightline Wholesale Supply and its vendors are not real companies.

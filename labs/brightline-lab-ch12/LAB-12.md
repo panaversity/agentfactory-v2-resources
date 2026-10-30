@@ -23,7 +23,7 @@
 - `brightline-ap/`, the starter repository. This is the only folder you give an agent.
 - `answer-key/`, the expected results. Never give this folder to an agent. An agent that can read the answers is not tested by them.
 
-**The date in this lab.** Today in the lab is Wednesday, November 4, 2026. Brightline's payment run is Friday, November 6. Your computer's clock will show a different date, so the brief gives the date to the agent.
+**The date in this lab.** Today in the lab is Wednesday, March 3, 2027. Brightline's payment run is Friday, March 5. Your computer's clock will show a different date, so the brief gives the date to the agent.
 
 ## The job
 
@@ -105,13 +105,13 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 1. Set the permission mode to **Plan**.
 2. Send this brief. It is a Four-Part Brief, and it leaves one thing out on purpose.
 
-   > **Outcome.** A script, `src/due-by-friday.ts`, that lists every open invoice due on or before a cutoff date, with a total. Run it with `npm run due -- 2026-11-06`. Today is Wednesday, November 4, 2026, and the cutoff for this week's payment run is Friday, November 6. Done when `npm test` passes, with a test for each rule that decides whether an invoice is listed.
+   > **Outcome.** A script, `src/due-by-friday.ts`, that lists every open invoice due on or before a cutoff date, with a total. Run it with `npm run due -- 2027-03-05`. Today is Wednesday, March 3, 2027, and the cutoff for this week's payment run is Friday, March 5. Done when `npm test` passes, with a test for each rule that decides whether an invoice is listed.
+   >
+   > **Context.** `data/invoices.csv` and `data/vendors.csv`. Read them. Their lines may end in Unix or Windows style.
    >
    > **Format.** One line per invoice, sorted by due date: due date, invoice number, vendor name, amount in dollars. Then a last line with the count and the total.
    >
-   > **Inputs.** `data/invoices.csv` and `data/vendors.csv`. Read them. Do not change them. Their lines may end in Unix or Windows style.
-   >
-   > **Autonomy.** Plan only. Show me the plan, including how you will decide each invoice's due date, and wait.
+   > **Constraints.** Do not change the data files. Plan only. Show me the plan, including how you will decide each invoice's due date, and wait.
 
 3. Read the plan line by line. Look for three things:
    - What does it do when `due_date` is empty? Open `data/invoices.csv` yourself. Four rows have no `due_date`, and their `terms` say how many days they get.
@@ -128,7 +128,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 1. Switch the permission mode to **Accept edits**. The agent can now edit files without asking. It still asks before most commands. Common file commands inside the folder, such as `mkdir`, `mv`, `cp` and even `rm`, run without asking. That is one more reason git is your undo.
 2. Send: "Go ahead with the revised plan."
 3. When it says it is done, open the **Changes** card and read the diff. Check that nothing in `data/` changed, and that there is a test for each of the three rules.
-4. Run `npm test` and `npm run due -- 2026-11-06` yourself, or approve the agent running them.
+4. Run `npm test` and `npm run due -- 2027-03-05` yourself, or approve the agent running them.
 5. Open `answer-key/answer-key.md` in a text editor, not in the agent. Compare the output with the table.
 6. If the result is wrong, find the matching row in "Common wrong answers", tell the agent what is wrong in one sentence, and run it again.
 7. When it matches, approve a commit.
@@ -164,7 +164,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
    Do not change any files.
    ```
 
-2. Approve it and commit. Then click **+ New**, type `/due-by-friday 2026-11-06`, and approve the two commands.
+2. Approve it and commit. Then click **+ New**, type `/due-by-friday 2027-03-05`, and approve the two commands.
 3. **Headless.** Open a terminal in `brightline-ap`. This step uses the command-line version. On Windows, run it in Git Bash or WSL, because the quotes differ in PowerShell. Run:
 
    ```bash
@@ -177,7 +177,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 4. Find the `structured_output` field in the JSON it prints. That is the part a pipeline would read.
 5. Run the same command again without the `--allowedTools` line. A headless run starts in Manual mode with nobody to ask, so the test command should be denied, unless a setting or hook you already have allows it. Compare the two results, and write down what decided the second one.
 
-**Checkpoint:** `/due-by-friday 2026-11-06` reports 8 invoices and $19,229.53, and the first headless run's `structured_output` shows `"passed": true`. If you skipped the headless step, write why in your notes.
+**Checkpoint:** `/due-by-friday 2027-03-05` reports 8 invoices and $19,229.53, and the first headless run's `structured_output` shows `"passed": true`. If you skipped the headless step, write why in your notes.
 
 ## Task 9. Split the work across sessions (25 minutes, plus 15 for the optional mod)
 
@@ -190,7 +190,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Do not start the next tas
 5. Review each change in the **Changes** card, run `npm test`, and commit the vendor totals and the README as two separate commits.
 6. Run `/doctor prompt-audit`. It reports on your `CLAUDE.md` and `AGENTS.md` files and on the rules, skills, commands, subagents and output styles under `.claude/`, and changes nothing until you ask. Pick one finding, decide whether you agree, and write it in your notes. Accept a change only if you understand it.
 7. **Optional, 15 minutes: a small mod.** A mod is code that runs inside Claude Code with your rights, so you read it before it runs.
-   - Set the mode to **Manual** and send: "Make a mod that shows 'Payment run cutoff: Friday, November 6, 2026' in the band above the prompt. It should only draw that line. It must not read files, run commands, make network requests or approve tool calls."
+   - Set the mode to **Manual** and send: "Make a mod that shows 'Payment run cutoff: Friday, March 5, 2027' in the band above the prompt. It should only draw that line. It must not read files, run commands, make network requests or approve tool calls."
    - Claude writes the mod in its own folder under `~/.claude/dev-mods/`, outside the repository, and asks before it saves each file. Read each file before you approve it. In `hooks/register.js`, each `on(...)` line names an event the mod reacts to. Each call that starts with `$.` is something the mod asks Claude Code to do. For this mod, expect `ui.render` with `AbovePrompt`, and no calls that start with `$.fs`, `$.process` or `$.http`.
    - When Claude Code asks whether to enable hot reloading, choose **Enable for this session**. The band appears when the turn ends.
    - If you installed the command-line version in Task 8, ask Claude to run `claude plugin validate` on the mod's folder and show you the `hooks:` and `calls:` lines.
@@ -306,7 +306,7 @@ The core items are needed by everyone. For an extension or a task you had to ski
 - [ ] `CLAUDE.md` imports `AGENTS.md` (Claude Code only)
 - [ ] `.claude/settings.json` denies edits under `data/`, and the blocked edit in Task 4 is in your notes (Claude Code only)
 - [ ] `src/due-by-friday.ts` and its tests, with `npm test` passing
-- [ ] The script gives 8 invoices and $19,229.53 for the cutoff 2026-11-06
+- [ ] The script gives 8 invoices and $19,229.53 for the cutoff 2027-03-05
 - [ ] `NOTES.md`, the handover a new session can work from
 - [ ] Extension: `.claude/skills/due-by-friday/SKILL.md`, and the headless result, or why you skipped it
 - [ ] Extension: two commits from Task 9, per-vendor totals with a test and the README, plus notes on the side chat, the subagent and one audit finding, and the mod's events and calls if you did the optional step

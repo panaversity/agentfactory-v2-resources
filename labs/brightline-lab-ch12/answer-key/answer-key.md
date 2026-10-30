@@ -1,6 +1,6 @@
 # Lab 12 answer key
 
-Today in the lab is Wednesday, November 4, 2026. The payment run is Friday, November 6, 2026.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
 ## Task 4: the blocked edit
 
@@ -8,18 +8,18 @@ With `"deny": ["Edit(/data/**)"]` in `.claude/settings.json`, Claude Code refuse
 
 ## Task 6: invoices due by Friday
 
-An invoice is due by Friday when it is open (not paid) and its due date is on or before Friday, November 6, 2026. That includes invoices that are already late. When `due_date` is empty, the due date is `invoice_date` plus the days in `terms` ("Net 30" is 30 days, "Due on receipt" is 0 days).
+An invoice is due by Friday when it is open (not paid) and its due date is on or before Friday, March 5, 2027. That includes invoices that are already late. When `due_date` is empty, the due date is `invoice_date` plus the days in `terms` ("Net 30" is 30 days, "Due on receipt" is 0 days).
 
 | Due date | Invoice | Vendor | Amount |
 | --- | --- | --- | --- |
-| 2026-10-30 | INV-5104 | Scioto Office Products | $234.50 |
-| 2026-11-02 | INV-5107 | Ohio Valley Electric | $2,411.33 |
-| 2026-11-04 | INV-5101 | Midwest Packaging Co. | $4,825.00 |
-| 2026-11-04 | INV-5102 | Buckeye Janitorial Supply | $618.75 |
-| 2026-11-04 | INV-5114 | Lakefront Labels Inc. | $2,265.00 |
-| 2026-11-05 | INV-5115 | Cardinal Forklift Service | $1,325.00 |
-| 2026-11-06 | INV-5105 | Hocking Valley Pallets | $7,350.00 |
-| 2026-11-06 | INV-5112 | Scioto Office Products | $199.95 |
+| 2027-02-26 | INV-8304 | Scioto Office Products | $234.50 |
+| 2027-03-01 | INV-8307 | Ohio Valley Electric | $2,411.33 |
+| 2027-03-03 | INV-8301 | Midwest Packaging Co. | $4,825.00 |
+| 2027-03-03 | INV-8302 | Buckeye Janitorial Supply | $618.75 |
+| 2027-03-03 | INV-8314 | Lakefront Labels Inc. | $2,265.00 |
+| 2027-03-04 | INV-8315 | Cardinal Forklift Service | $1,325.00 |
+| 2027-03-05 | INV-8305 | Hocking Valley Pallets | $7,350.00 |
+| 2027-03-05 | INV-8312 | Scioto Office Products | $199.95 |
 
 **8 invoices, total $19,229.53.**
 
@@ -29,11 +29,11 @@ Your script may format amounts differently, for example `$7350.00` instead of `$
 
 | If the agent's answer is | What went wrong |
 | --- | --- |
-| 6 invoices, $9,614.53 | It skipped the rows with an empty `due_date`. INV-5105 and INV-5114 are due, by their terms. This is the plan you should have caught in Task 5. |
-| 10 invoices, $27,449.53 | It counted the two paid invoices, INV-5109 and INV-5113. |
+| 6 invoices, $9,614.53 | It skipped the rows with an empty `due_date`. INV-8305 and INV-8314 are due, by their terms. This is the plan you should have caught in Task 5. |
+| 10 invoices, $27,449.53 | It counted the two paid invoices, INV-8309 and INV-8313. |
 | 6 invoices, $16,583.70 | It left out late invoices and kept only those due from today to Friday. "Due by Friday" includes late ones. |
-| INV-5108 or INV-5110 included | It got the terms arithmetic wrong. INV-5108 is due November 7, and INV-5110 November 11. |
-| INV-5103 included | It used the wrong cutoff. INV-5103 is due Saturday, November 7. |
+| INV-8308 or INV-8310 included | It got the terms arithmetic wrong. INV-8308 is due March 6, and INV-8310 March 10. |
+| INV-8303 included | It used the wrong cutoff. INV-8303 is due Saturday, March 6. |
 | 1 invoice, $1,325.00, on Windows | The files have Windows line endings, and the script split lines on `\n` only. Every row but the last then ends in `open\r`, which is not `open`. Split on `\r?\n` and add a test with Windows line endings. |
 
 ## Task 7: the handover
@@ -44,11 +44,11 @@ After the undo, `git status` shows no changed files. If the agent created a new 
 
 ## Task 8: the command and the headless run
 
-`/due-by-friday 2026-11-06` reports 8 invoices and $19,229.53, and that the tests passed. The first headless run's JSON has a `structured_output` field like `{"passed": true, "tests": 5}`, with 5 or more tests: the 2 in the starter and at least one for each of the three rules. The number of tests depends on how many the agent wrote, at least one per rule. The second run, without `--allowedTools`, usually cannot run `npm test`, because a headless run has nobody to approve it. Its answer says so, and `structured_output` may be missing or say the tests could not run. If it did run the tests, something else allowed them, such as an allow rule for `npm test` in a settings file or a hook. Your notes should name what decided it.
+`/due-by-friday 2027-03-05` reports 8 invoices and $19,229.53, and that the tests passed. The first headless run's JSON has a `structured_output` field like `{"passed": true, "tests": 5}`, with 5 or more tests: the 2 in the starter and at least one for each of the three rules. The number of tests depends on how many the agent wrote, at least one per rule. The second run, without `--allowedTools`, usually cannot run `npm test`, because a headless run has nobody to approve it. Its answer says so, and `structured_output` may be missing or say the tests could not run. If it did run the tests, something else allowed them, such as an allow rule for `npm test` in a settings file or a hook. Your notes should name what decided it.
 
 ## Task 9: split the work
 
-The per-vendor totals for the cutoff 2026-11-06:
+The per-vendor totals for the cutoff 2027-03-05:
 
 | Vendor | Total |
 | --- | --- |
@@ -60,7 +60,7 @@ The per-vendor totals for the cutoff 2026-11-06:
 | Buckeye Janitorial Supply | $618.75 |
 | Scioto Office Products | $434.45 |
 
-They add up to $19,229.53. Scioto Office Products has two invoices, INV-5104 and INV-5112. If its total shows $234.50 or $199.95, the script kept only one invoice per vendor. The order of the rows can differ, as long as the totals match.
+They add up to $19,229.53. Scioto Office Products has two invoices, INV-8304 and INV-8312. If its total shows $234.50 or $199.95, the script kept only one invoice per vendor. The order of the rows can differ, as long as the totals match.
 
 The side chat should say that nothing touched `data/`. The subagent's summary should list no rule breaks, or name a real one. The audit has no single right finding. What counts is that you read it and decided.
 
