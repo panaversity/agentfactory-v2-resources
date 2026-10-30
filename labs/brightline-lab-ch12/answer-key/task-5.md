@@ -24,4 +24,6 @@ Your note may list them in another order or another form. What counts is the 8 i
 
 ## The plan
 
-The revised plan names all three rules: empty dates from terms, paid invoices out, late invoices in. Many first plans treat `due_date` as the due date, and would drop INV-8305 and INV-8314. Catching that before any code exists is the point of this task.
+The revised plan names all three rules: empty dates from terms, paid invoices out, late invoices in. A first plan may treat `due_date` as the due date, and so drop INV-8305 and INV-8314. A strong model's plan may also catch all three rules by itself. Either way, your check is how you know, before any code exists, and Task 12 compares what each agent's first plan caught.
+
+A plan may also ask about invoices due on Saturday or Sunday. Answer from your check: the cutoff is Friday, March 5, so INV-8303 and INV-8308 wait for next week's run.
