@@ -409,7 +409,7 @@ This task is optional. Skip it if your plan is running low, because a split run 
 **What you do:**
 
 1. In your lab chat, type "Task 12" and send it. The AI shows the four parts, each with what [5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says it adds when a worker may split a job.
-2. Write one line for each part, in your own words. Send them under the four headings. They go in the chat, not in your document, so your proven brief stays as it is. Your Constraints line says whether the worker may check each vendor's invoices in parallel. On ChatGPT Work, it must ask for that in words. On Claude, the worker decides.
+2. Write one line for each part, in your own words. Send them under the four headings. They go in the chat, not in your document, so your proven brief stays as it is. Your Constraints line says whether the worker may check each vendor's invoices in parallel. On ChatGPT Work, it must ask for that in words. On Claude, the worker may split on its own, so say so if you want one worker.
 3. **Open a fresh chat**, on either AI vendor, with memory off, as in Task 11. Attach your downloaded brief and `inputs.zip`, and send this, with your four lines pasted under its last line:
 
    ```text
