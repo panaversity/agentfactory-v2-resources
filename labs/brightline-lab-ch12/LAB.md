@@ -16,11 +16,11 @@ Chapter 12 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 **The core path and the extensions.** The core path is Tasks 1 to 7, at least one port (Task 10 or 11), and Task 12. Tasks 8 and 9, the optional mod and the second port are extensions. Do them if you have the time and the apps.
 
-**Without a paid Claude plan.** Tasks 1 to 9 are written for Claude Code. Do Tasks 1 to 3 and 5 to 7 in Codex or OpenCode instead. The field guide has a table of the swaps. Draft `AGENTS.md` only, with `/init` in Codex or by asking OpenCode's *build* agent, so skip `CLAUDE.md`. There is no environment to save in Task 2. In Task 6, check that nothing in `data/` changed, in the review pane or with `git status`. Before Task 1, set that agent's safety rules as Task 10 (step 2) or Task 11 (step 3) describes. Skip Tasks 4, 8 and 9, which need Claude Code's settings, skills and side chats. At the end of Task 3, commit and run `git tag rules` yourself, because Task 4 normally does it and the ports start from that tag. Your port is the agent you did not use: Task 11 if you used Codex, Task 10 if you used OpenCode. Do Task 12 in the agent you used for the core tasks. Say in `ports/ch12.md` which tasks you skipped and why.
+**Without a paid Claude plan.** Tasks 1 to 9 are written for Claude Code. Do Tasks 1 to 3 and 5 to 7 in Codex or OpenCode instead. The practice sections in [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in Codex and OpenCode. Draft `AGENTS.md` only, with `/init` in Codex or by asking OpenCode's *build* agent, so skip `CLAUDE.md`. There is no environment to save in Task 2. In Task 6, check that nothing in `data/` changed, in the review pane or with `git status`. Before Task 1, set that agent's safety rules as Task 10 (step 2) or Task 11 (step 3) describes. Skip Tasks 4, 8 and 9, which need Claude Code's settings, skills and side chats. At the end of Task 3, commit and run `git tag rules` yourself, because Task 4 normally does it and the ports start from that tag. Your port is the agent you did not use: Task 11 if you used Codex, Task 10 if you used OpenCode. Do Task 12 in the agent you used for the core tasks. Say in `ports/ch12.md` which tasks you skipped and why.
 
 **With only one app.** Skip the port tasks you cannot do, and write those ports as a plan in Task 12.
 
-**Exact steps.** Click paths and shortcuts change often. If a button in this lab has moved, check the [field guide for desktop coding agents](https://agentfactory2.panaversity.org/appendices/field-guides/desktop-coding-agents/), which is reviewed every month.
+**Exact steps.** Click paths and shortcuts change often. If a button in this lab has moved, check the practice sections in [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/), which hold each step for each tool and are checked every month.
 
 **The lab files.** Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it into a new folder, such as `Documents/labs/`. It holds `brightline-ap/`, the starter repository, which is the only folder you give an agent, and a copy of these steps. Each task with an answer key links it as a separate download. Open a key in a text editor, never in the agent. An agent that can read the answers is not tested by them.
 
@@ -34,7 +34,7 @@ You will finish with a repository that any of the three agents can open and foll
 
 ### How each task works
 
-Each task has a goal, the steps, and a **Checkpoint**. Do not start the next task until the checkpoint is true. Times are a guide. Read every command the agent wants to run before you approve it, and say no to anything you do not understand. Asking "What does this command do?" is always allowed.
+Each task has a goal, the steps, and a **Checkpoint**. Where a step sets a mode, opens a side chat or runs a command with nobody watching, the exact steps for your tool are in the practice sections of [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/). Do not start the next task until the checkpoint is true. Times are a guide. Read every command the agent wants to run before you approve it, and say no to anything you do not understand. Asking "What does this command do?" is always allowed.
 
 ### Task 1. Look before you touch (10 minutes)
 
