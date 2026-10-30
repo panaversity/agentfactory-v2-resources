@@ -15,7 +15,12 @@ One document beside the chat, titled "Where each part lives: Brightline's AP Wor
 
 Show this first: "IT asked Dave what it would take to move the worker to the other AI vendor. For each part, decide: would Brightline rebuild it on the new AI vendor, or carry it across?"
 
-Then show these six of IT's parts, one at a time, in this order: 1 Project instructions, 5 Scheduled task, 3 AP policy version 3, 6 Connector: accounting system, 10 Run notes, 8 #ap-help. For each, show its name and what it is, each on its own line, but not where it is kept today. Ask: "If Brightline moved to another AI vendor tomorrow, would it rebuild this there, or carry it across? Answer: rebuild or carry."
+Then show these six of IT's parts, one at a time, in this order: 1 Project instructions, 5 Scheduled task, 3 AP policy version 3, 6 Connector: accounting system, 10 Run notes, 8 #ap-help. For each, show its name and what it is, each on its own line, but not where it is kept today. Then show these two lines, every time:
+
+- Rebuild: Brightline sets it up again on the new AI vendor. Leaving the old one behind loses nothing Brightline needs.
+- Carry: Brightline must bring it across, or it loses something it needs.
+
+Ask: "If Brightline moved to another AI vendor tomorrow, which is it? Answer: rebuild or carry."
 
 - For "rebuild", write "Rebuild" and leave Kept today and Keep or move empty.
 - For "carry", write "Carry across", and fill Kept today from IT's list. Then show where it is kept today, and these four places, one line each:
@@ -24,7 +29,7 @@ Then show these six of IT's parts, one at a time, in this order: 1 Project instr
   - Each invoice's case file: where it stands, and what it waits for (the SSoR).
   - The accounting system.
 
-  Ask: "Can it stay where it is, or should it move to one of these four places? Answer: keep, or move and the place." Write it under Keep or move.
+  Ask: "Can it stay where it is, or should it move to one of these four places? Answer: keep, or move and the place." If the learner answers "move" without a place, ask which of the four places. Never choose it for them. Write it under Keep or move.
 
 ## Task 2. Monday: the wrong due date
 

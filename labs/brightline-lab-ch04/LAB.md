@@ -109,11 +109,11 @@ Constraints: Grade only. Do not change the map, and do not suggest
    Start with Task 1.
    ```
 
-2. The AI shows six of the worker's parts, one at a time. For each, answer in one word: rebuild or carry. Ask yourself: if Brightline moved to another AI vendor tomorrow, would it rebuild this there, or carry it across?
+2. The AI shows six of the worker's parts, one at a time. For each, answer in one word: rebuild or carry. Rebuild means Brightline sets it up again on the new AI vendor, and leaving the old one loses nothing it needs. Carry means Brightline must bring it across, or it loses something it needs.
 3. For each part you carry, the AI shows where it is kept today, and four places it could live. Answer: keep, or move and the place.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 1 and 2 passed.
+**Checkpoint.** Checks 1 to 6 passed, one for each part.
 
 **At work:** for each thing your AI setup relies on, ask whether you would rebuild it or carry it across. Anything you would carry belongs in a place you control.
 
@@ -129,7 +129,7 @@ Constraints: Grade only. Do not change the map, and do not suggest
 2. Answer each question in a few words. For each of the four memory entries, the answer is keep, remove, or rewrite as a pointer to where the fact lives.
 3. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 3 and 4 passed.
+**Checkpoint.** Checks 7 and 8 passed.
 
 **At work:** when your AI states a fact, ask where it got it. If it came from memory, check the record.
 
@@ -143,7 +143,7 @@ Constraints: Grade only. Do not change the map, and do not suggest
 2. Answer each question in a few words.
 3. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 5 to 8 passed.
+**Checkpoint.** Checks 9 to 12 passed.
 
 **At work:** for each rule your AI follows, ask what actually stops the action when the rule is broken, and whose login the AI acts with.
 
@@ -158,7 +158,7 @@ Constraints: Grade only. Do not change the map, and do not suggest
 1. In your lab chat, send "Next". The AI shows Sam's message. Answer in a few words.
 2. Name three things your own AI use at work, or in your studies, relies on, one at a time, such as a prompt you keep in a chat, a file you uploaded, or what it remembers about you. Both Claude[^anthropic-memory] and ChatGPT[^openai-memory] let you see what they remember. For each, the AI asks the same questions as in Task 1: rebuild or carry, then keep or move.
 3. Say which one you would move first, and why.
-4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt). Check 9 is about Sam. Check 10, about your own setup, is unscored: only you know your own work.
+4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt). Check 13 is about Sam. Check 14, about your own setup, is unscored: only you know your own work.
 
 **At work:** when colleagues start to use an AI, add who may ask for what. Never add power. Sort your own setup again in a month.
 
@@ -174,7 +174,7 @@ Constraints: Grade only. Do not change the map, and do not suggest
 
 ## When you are done
 
-You are done when checks 1 to 9 have passed and Task 4 has your three things. Download your map, as a .docx or a .pdf, or copy it into a document of your own: it is the page you take to work.
+You are done when checks 1 to 13 have passed and Task 4 has your three things. Download your map, as a .docx or a .pdf, or copy it into a document of your own: it is the page you take to work.
 
 ## Exam notes
 
