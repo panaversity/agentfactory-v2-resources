@@ -16,6 +16,7 @@ On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Fr
 - To split a job with a stop where a person decides.
 - To set a brief loose for ideas, and tight for data a system reads.
 - To keep one brief that runs the same on either AI vendor, and check that it carries everything a run needs.
+- Optional: to brief a job the worker may split among helpers, and check that every part came back.
 
 ## Before you start (5 minutes)
 
@@ -40,7 +41,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 ## How each task works
 
-You use two chats. Tasks 1 to 10 run in one lab chat. Task 11 runs in a fresh chat, to prove your brief works with nothing but its files.
+You use two chats, and a third if you do the optional Task 12. Tasks 1 to 10 run in one lab chat. Task 11 runs in a fresh chat, to prove your brief works with nothing but its files. Task 12 starts in the lab chat and runs in another fresh chat.
 
 **Your brief document.** In Task 1, the AI opens one document beside your chat, titled "Payment-run brief": a Claude Doc in Claude, or a Writing block in ChatGPT's side panel. It holds your payment-run brief and nothing else: your own lines, under the four headings. You write the parts in the chapter's order: outcome, context, format and constraints. Everything else stays in the chat, which keeps it. Change the document only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
@@ -59,7 +60,7 @@ A run tests your brief, not the AI. A good run means your lines are clear enough
 
 ### The check prompt
 
-One prompt checks every task, in the lab chat and in Task 11's fresh chat. Attach the task's key first, then send:
+One prompt checks every task, in the lab chat and in the fresh chats of Tasks 11 and 12. Attach the task's key first, then send:
 
 ```text
 Outcome:     The task I just finished, graded against the newest
@@ -397,6 +398,43 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 **At work:** before you trust a new brief with the week, run it once in a fresh chat with only its files.
 
+## Optional: when the worker splits the job
+
+### Task 12. Helpers (20 minutes)
+
+**Dave asks:** "Next quarter the second warehouse comes on, and the run doubles. If the worker splits the checks among helpers, does your brief still hold?"
+
+This task is optional. Skip it if your plan is running low, because a split run can use more of it. [5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) explains what it would show.
+
+**What you do:**
+
+1. In your lab chat, type "Task 12" and send it. The AI shows the four parts, each with what [5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says it adds when a worker may split a job.
+2. Write one line for each part, in your own words. Send them under the four headings. They go in the chat, not in your document, so your proven brief stays as it is. Your Constraints line says whether the worker may check each vendor's invoices in parallel. On ChatGPT Work, it must ask for that in words. On Claude, the worker decides.
+3. **Open a fresh chat**, on either AI vendor, with memory off, as in Task 11. Attach your downloaded brief and `inputs.zip`, and send this, with your four lines pasted under its last line:
+
+   ```text
+   You are a fresh run of Brightline's AP Worker. Your brief is the
+   attached payment-run brief, with the four lines below. Your files
+   are the ap-folder in the attached zip. Ignore the zip's other files.
+   The four lines:
+   ```
+4. When the run stops after the exceptions, send Maria's reply from Task 11's step 5.
+5. When the run has built its files, look at the app, not only at the reply, and send this in the fresh chat. After "What happened", write Split (the app showed helpers at work), Not split (the app has helpers, and the worker chose not to use them) or Not available (your app or plan has no helpers). All three are valid results.
+
+   ```text
+   Split record.
+   What happened:
+   What the app showed: (or "not observable")
+   Usage compared with Task 11: (or "not measured")
+   ```
+
+   The worker's own account of its split is not evidence. Write only what the app showed you.
+6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? If a line you added caused it, change the line, and run a new fresh chat with memory off.
+
+**Checkpoint.** Checks 27 to 29 passed, and the hard rule holds.
+
+**At work**, before you let a worker split a job, ask: which line of my brief might a helper never see?
+
 ## If something goes wrong
 
 - **The AI wrote the brief in the chat, not in a document.** Ask it to "put my brief in one editable document beside our chat, titled Payment-run brief: a Claude Doc in Claude or a Writing block in ChatGPT."
@@ -425,7 +463,7 @@ Check it yourself. It has a real date, who it is for, and a governed source with
 
 ## When you are done
 
-You are done when every check has passed, the fresh chat stopped where your lab chat did and built the run from Maria's reply, and your own brief is written. Keep the downloaded file: it is your payment-run brief. It is also the Four-Part Brief that the Part II capstone is assembled from ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/), Figure II.3).
+You are done when every check through Check 26 has passed, the fresh chat stopped where your lab chat did and built the run from Maria's reply, and your own brief is written. Task 12 is optional. Keep the downloaded file: it is your payment-run brief. It is also the Four-Part Brief that the Part II capstone is assembled from ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/), Figure II.3).
 
 **At work:** end a brief you are not sure of with "List each decision you made, and the line of this brief that decided it." What comes back shows every guess.
 
