@@ -24,4 +24,4 @@ A correct version builds the date at midnight UTC, as `new Date(invoiceDate + "T
 | "Net 10" gives a date, and the unknown-terms tests fail | The agent read the number after "Net" instead of looking it up in a fixed table |
 | A due date one day early in one of the time zones | Local time was mixed with UTC, such as `new Date(2026, 9, 20)`, or `getDate` in place of `getUTCDate` |
 | `2028-02-30` or `2028-03-02` for the leap-day case | The agent did its own month arithmetic instead of using the date methods |
-| A file under `tests/` changed | Run `git restore tests/`, and tell the agent in one sentence that the tests are the specification |
+| A file under `tests/` changed | Ask the agent to run `git restore tests/`, and tell it in one sentence that the tests are the specification |
