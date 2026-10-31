@@ -2,7 +2,7 @@
 
 Every runnable code block from Chapter 13, as a file you can run. Predict the output first, then run it, then compare with the chapter.
 
-Run them from `ch13/`, with the `brightline-ap` folder beside this folder, as it is in the lab download.
+Ask your coding agent to run them, and read each command before you approve it. They run from `ch13/`, with the `brightline-ap` folder beside this folder, as it is in the lab download.
 
 - TypeScript: `node 13-1.ts`
 - Python: `uv run python 13_1.py`
