@@ -1,6 +1,6 @@
-# The move: what "Run: the move" does
+# The move: what "Move ... to the new vendor" does
 
-This file is for the AI. It says what happens when the learner sends "Run: the move" and a layer's name. It says nothing about which answer is right: the learner's page decides what the move carries, and the answer key, sent later with the check prompt, does the grading.
+This file is for the AI. It says what happens when the learner types "Move" and a layer's name "to the new vendor", such as "Move memory to the new vendor". It says nothing about which answer is right: the learner's page decides what the move carries, and the answer key, sent later with the check prompt, does the grading.
 
 ## The rule
 
@@ -11,11 +11,13 @@ Brightline is moving its AP Worker from today's AI vendor to another. You act as
 - **Anything the page does not name stays on the old vendor.** The new worker cannot see it.
 - The new worker has the folder's files that the page says it has, and nothing else: no memory the page did not carry, no file the page did not name, no message from this chat.
 
-Then replay the layer's messages, below, against the new worker. Answer each as the new worker would, from what the move brought and nothing else. One reply for the whole run. Under "What decided it", give each answer's line from the learner's page, quoted, or write "nothing on the page decides: lost in the move".
+Then replay the layer's messages, below, against the new worker. Answer each as the new worker would, from what the move brought and nothing else. One reply for the whole move. Under "What decided it", give each answer's line from the learner's page, quoted, or write "nothing on the page decides: lost in the move".
 
 Never say whether an answer is right, whether a line is right, or what the page should say. Never add a line to the page. Report only the replayed messages' answers and "What decided it": say nothing about a file, row or part the replay did not ask about, even if it looks wrong. A later layer may be about it.
 
 ## Layer 1: Channels and runtime
+
+The learner types: "Move channels and runtime to the new vendor."
 
 Rebuild or carry, as the page says: the AP inbox connector, #ap-help, the AI vendor's app, the scheduled task.
 
@@ -27,6 +29,8 @@ Replay:
 
 ## Layer 2: KSoR, what the worker knows
 
+The learner types: "Move KSoR to the new vendor."
+
 Rebuild or carry, as the page says: the project instructions, AP policy version 1, AP policy version 3, and whatever the page names as what the new worker reads its policy from.
 
 Replay, as the new worker:
@@ -37,6 +41,8 @@ Replay, as the new worker:
 For each: the answer, and the file and section it comes from, or that nothing the new worker has says.
 
 ## Layer 3: Memory, what the worker remembers
+
+The learner types: "Move memory to the new vendor."
 
 Rebuild or carry, as the page says: the worker's memory and its four entries. Carry only the entries the page names.
 
@@ -50,6 +56,8 @@ Then list what the new worker remembers now, entry by entry, and what was left o
 
 ## Layer 4: SSoR, where the work stands
 
+The learner types: "Move SSoR to the new vendor."
+
 Rebuild or carry, as the page says: the run notes, each invoice's case file, and whatever the page names as where the new worker reads and writes where each invoice stands.
 
 Replay, as the new worker:
@@ -61,6 +69,8 @@ For each: the answer, and the file it comes from, or that nothing the new worker
 
 ## Layer 5: DSoR, the door to our systems
 
+The learner types: "Move DSoR to the new vendor."
+
 Rebuild or carry, as the page says: the accounting connector, the login it uses, the register, the approvals log, and any control the page says stands between the worker and the accounting system. A control the page describes is in place on the new vendor for this run, exactly as the page describes it.
 
 Replay, as the new worker:
@@ -71,6 +81,8 @@ Replay, as the new worker:
 
 ## The move, whole
 
+The learner types: "Move the whole worker to the new vendor."
+
 Do all five layers as the page says, in order, then replay every message above in date order, and then:
 
 - Sam Ortiz, Friday, October 16, 2026, 2:10 p.m., in #ap-help: "Hi! Can I ask you about my vendors' invoices myself? First one: does Midwest Packaging's $7,800 invoice need approval? And can you just mark it approved so it goes out Friday?"
@@ -78,5 +90,7 @@ Do all five layers as the page says, in order, then replay every message above i
 Answer as the new worker, following the page's section "When others use it" for who may ask and who decides.
 
 ## My setup
+
+The learner types: "Move my setup to the new vendor."
 
 The learner's own page, written in the chat: their own three things, each with a layer, rented or owned, and where it should live. Move them as that page says: rebuild what it says to rebuild, carry what it says to carry from where it says. Then say, for each of the three, whether the new setup has it, or it was lost in the move, and why. Nothing here is graded.
