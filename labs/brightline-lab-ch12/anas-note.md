@@ -6,8 +6,8 @@ Made by hand on Wednesday, March 3, 2027, from this week's invoice export. Keep 
 
 | Hard case | Invoices | Why |
 | --- | --- | --- |
-| No due date, but due by Friday | INV-8305 (March 5, Net 30) and INV-8314 (March 3, Net 60) | Their terms put them on or before Friday |
-| No due date, not due yet | INV-8308 (March 6, Net 15) and INV-8310 (March 10, Net 30) | Their terms put them after Friday |
+| No due date, but due by Friday | INV-8305 (due March 5: invoiced February 3, Net 30) and INV-8314 (due March 3: invoiced January 2, Net 60) | Their terms put them on or before Friday |
+| No due date, not due yet | INV-8308 (due March 6: invoiced February 19, Net 15) and INV-8310 (due March 10: invoiced February 8, Net 30) | Their terms put them after Friday |
 | Paid | INV-8309 and INV-8313 | A paid invoice is not in the run |
 | Late and still open | INV-8304 (February 26) and INV-8307 (March 1) | "Due by Friday" includes them |
 | Just after the cutoff | INV-8303 (Saturday, March 6) | It waits for next week's run |

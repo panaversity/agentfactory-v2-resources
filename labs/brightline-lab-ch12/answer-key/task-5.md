@@ -14,8 +14,8 @@ An invoice is due by Friday when it is open, not paid, and its due date is on or
 
 | Hard case | Invoices | Why |
 | --- | --- | --- |
-| No `due_date`, due by Friday | INV-8305 (March 5, Net 30) and INV-8314 (March 3, Net 60) | Their terms put them on or before the cutoff |
-| No `due_date`, not due yet | INV-8308 (March 6, Net 15) and INV-8310 (March 10, Net 30) | Their terms put them after the cutoff |
+| No `due_date`, due by Friday | INV-8305 (due March 5: invoiced February 3, Net 30) and INV-8314 (due March 3: invoiced January 2, Net 60) | Their terms put them on or before the cutoff |
+| No `due_date`, not due yet | INV-8308 (due March 6: invoiced February 19, Net 15) and INV-8310 (due March 10: invoiced February 8, Net 30) | Their terms put them after the cutoff |
 | Paid | INV-8309 and INV-8313 | A paid invoice is not in the run |
 | Late and still open | INV-8304 (February 26) and INV-8307 (March 1) | "Due by Friday" includes them |
 | Just after the cutoff | INV-8303 (Saturday, March 6) | It is due the day after the run |

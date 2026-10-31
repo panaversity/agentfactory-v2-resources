@@ -34,4 +34,8 @@ Your script may format amounts differently, for example `$7350.00` instead of `$
 | 6 invoices, $16,583.70 | It left out late invoices and kept only those due from today to Friday. "Due by Friday" includes late ones. |
 | INV-8308 or INV-8310 included | It got the terms arithmetic wrong. INV-8308 is due March 6, and INV-8310 March 10. |
 | INV-8303 included | It used the wrong cutoff. INV-8303 is due Saturday, March 6. |
+| 6 invoices, $11,679.58 | It listed invoices due before Friday, not on or before it, so it left out INV-8305 and INV-8312, which are due Friday, March 5. |
+| 7 invoices, $11,879.53 | It put INV-8305 one day late. Its due date is February 3 plus 30 days, which is March 5. |
 | 1 invoice, $1,325.00, on Windows | The data files have Windows line endings, and the script did not expect them, so every row but the last looked as if it were not open. Tell the agent: "The lines may end in Windows style. Handle both, with a test for each." |
+
+If no row matches, tell the agent which invoices differ from Ana's note.
