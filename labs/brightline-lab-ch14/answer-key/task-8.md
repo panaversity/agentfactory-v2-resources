@@ -50,11 +50,11 @@ Each test fails if the behavior it names is removed. We checked this by breaking
 | --- | --- |
 | Each page once, no invoice twice | It counts the page numbers the server received: exactly 1, 2 and 3 |
 | One `503` retried once, a busy server given up after two | It counts the `/vendors` requests: 2 each time |
-| A `401` sent only once | It counts the `/vendors` requests: 1 |
+| A request that gets a `401` is not retried | It counts the `/vendors` requests: 1 |
 | Vendors and invoices together | It compares the arrival times of the first request of each: less than 100 milliseconds apart, against a 200-millisecond answer |
 | The client's own deadline | A slow server, 500 milliseconds, and a short deadline, 100: the call must fail with a timeout |
 
-At the end of Task 8, the reference run passes 37 TypeScript tests and 35 Python tests. Yours depend on how many you wrote.
+At the end of Task 8, the reference run passes 37 TypeScript tests and 35 Python tests. Yours depend on how many cases you gave the agent.
 
 One way to write them in TypeScript, `tests/ap-client.test.ts`:
 
@@ -284,4 +284,4 @@ A client that passes these tests, in both languages:
 - `fetchVendorsAndOpenInvoices` starts both with `Promise.all`, or `asyncio.gather` in Python, and waits for both.
 - `npm run fetch-ap` is `node --env-file=.env src/ap-client.ts`.
 
-If the concurrency test fails only on a slow computer, run it again with nothing else running. If it still fails, check that the two calls go to `Promise.all` or `asyncio.gather`, not awaited one by one.
+If the concurrency test fails only on a slow computer, ask the agent to run it again with nothing else running. If it still fails, check that the two calls go to `Promise.all` or `asyncio.gather`, not awaited one by one.

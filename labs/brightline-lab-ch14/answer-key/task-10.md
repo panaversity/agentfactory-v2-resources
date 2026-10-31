@@ -8,7 +8,7 @@ The answers for Task 10 of Lab 14, in Chapter 14 of *The AI Agent Factory*, Seco
 
 Four new tests in `tests/schemas.test.ts`: a vendor with no remit email passes, `remitEmail: "ap@buckeye.example"` passes, `"ap@@buckeye"` fails, and `""` fails. Before the change, two of them fail, the two that expect a failure. The two that expect a pass already pass, because a Zod object drops a key it does not know: with no rule for `remitEmail`, any value gets through. That is why the change needs the tests that must fail.
 
-If you put `"ap@@buckeye"` and `""` in one test, you see one failure, not two. That is fine.
+If the agent put `"ap@@buckeye"` and `""` in one test, you see one failure, not two. That is fine.
 
 ## The change
 

@@ -6,7 +6,7 @@ The answers for Task 11 of Lab 14, in Chapter 14 of *The AI Agent Factory*, Seco
 
 ## The safety rules
 
-`opencode.jsonc` is the one from Lab 12, Task 11. Edits, shell commands and folders outside the project ask first, and edits under `data/` are denied:
+`opencode.jsonc` is the one from Lab 12, Task 8. Edits, shell commands and folders outside the project ask first, and edits under `data/` are denied:
 
 ```jsonc
 {

@@ -43,6 +43,6 @@ Raw text becomes `Terms` once, where it is read:
 
 `termsDays` and `dueDate` still throw `Unknown terms: <text>` at run time, so the test of unknown terms still passes. A type is erased when Node runs the file, so the run-time check stays.
 
-The tests change by two comments only, `// @ts-expect-error` above the unknown-terms call in `tests/due-date.test.ts`, and `# pyright: ignore[reportArgumentType]` at the end of that line in `py/tests/test_due_date.py`. If the agent changed what a test checks, or added a cast such as `as Terms` to silence the checker, undo it: a cast goes around the type, as Figure 14.2 says.
+The tests change by two comments only, `// @ts-expect-error` above the unknown-terms call in `tests/due-date.test.ts`, and `# pyright: ignore[reportArgumentType]` at the end of that line in `py/tests/test_due_date.py`. If the agent changed what a test checks, or added a cast such as `as Terms` to silence the checker, ask it to undo that: a cast goes around the type, as Figure 14.2 says.
 
 After step 4, only the two planted calls fail. After step 5, `"Net 15"` in both, every check passes: 20 TypeScript tests and 14 Python tests, with no type errors.

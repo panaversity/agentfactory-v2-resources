@@ -16,7 +16,7 @@ Each call takes about 300 milliseconds, because the sample API waits on purpose.
 
 Every answer has the header `Content-Type: application/json`.
 
-**Why the 503 comes on the second call.** The API checks the key before it counts a `/vendors` call. The call without a key never gets that far, so the first call with the key is the API's first `/vendors` call, and it answers `503` once. Restart the API to see it again.
+**Why the 503 comes on the second call.** The API checks the key before it counts a `/vendors` call. The call without a key never gets that far, so the first call with the key is the API's first `/vendors` call, and it answers `503` once. Ask the agent to restart the API to see it again.
 
 **Why page 2 starts at INV-8306.** There are 13 open invoices, five to a page: INV-8301 to INV-8305 on page 1, INV-8306 to INV-8311 on page 2 (INV-8309 is paid), and INV-8312, INV-8314 and INV-8315 on page 3. Page 9 does not exist, so the request itself is wrong: `400`, and a retry would not help.
 
