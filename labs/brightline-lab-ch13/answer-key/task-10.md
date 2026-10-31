@@ -47,7 +47,7 @@ Your script may show each invoice's own due date rather than the Friday, or form
 
 ## Your notes
 
-There is no single right answer. Your notes say what Codex asked before it acted, and what `/review` found, or that it found nothing.
+There is no single right answer. Your notes say what Codex asked before it acted, and what `/review` found, or that it found nothing. They are committed in `NOTES.md` on `main`, where Task 12 reads them.
 
 ## Python only
 

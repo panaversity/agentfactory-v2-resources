@@ -50,7 +50,7 @@ Use the zip's copy for this lab, even if you finished Lab 12 in your own reposit
 
 ### The job
 
-Brightline's due-date rule is the invoice date plus the days in the terms. It is hidden inside the Chapter 12 script. Nobody has tested it on a month end, a year end or a leap day, and nobody knows what it does with terms it has never seen. Ana wants it moved out into its own function, with a contract and full tests, in both languages, so the team can trust it and reuse it. Then she wants a script that checks every stated due date in an export against the rule. Your check from Lab 12 stays: after every change, `npm run due -- 2027-03-05` must still print 8 invoices and $19,229.53. Reading adds the rule, which the check cannot see. You will read the code the agent wrote, predict what it does, test it first, and port one change to two other agents. No number in this lab comes from an AI's reply. Every date, count and total is printed by code your tests have checked.
+Brightline's due-date rule is the invoice date plus the days in the terms. It is hidden inside the Chapter 12 script. Nobody has tested it on a month end, a year end or a leap day, and nobody knows what it does with terms it has never seen. Ana wants it moved out into its own function, with a contract and full tests, in both languages, so the team can trust it and reuse it. Then she wants a script that checks every stated due date in an export against the rule. Your check from Lab 12 stays: after every change on `main`, `npm run due -- 2027-03-05` must still print 8 invoices and $19,229.53. Reading adds the rule, which the check cannot see. You will read the code the agent wrote, predict what it does, test it first, and port one change to two other agents. No number in this lab comes from an AI's reply. Every date, count and total is printed by code your tests have checked.
 
 ### How each task works
 
@@ -158,7 +158,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 2. Run `git diff <baseline> -- tests/`, with the id from Task 5. It must show nothing. Run `git status --short` too, and check that no file under `tests/` is listed.
 3. Read `src/due-date.ts`. Say its promise in one sentence, and find the line that does the UTC math.
-4. On macOS, Linux or Git Bash, run the tests in two more time zones: `TZ=America/Los_Angeles npm test` and `TZ=Asia/Tokyo npm test`.
+4. On macOS, Linux or Git Bash, run the tests in two more time zones: `TZ=America/Los_Angeles npm test` and `TZ=Asia/Tokyo npm test`. Run `npm run due -- 2027-03-05` in all three time zones too, with the same `TZ=` in front.
 
 **Checkpoint:** `npm test` and `npm run typecheck` pass, and `src/due-by-friday.ts` imports `dueDate` and has no date code of its own. `npm run due -- 2027-03-05` still prints 8 invoices and $19,229.53, in all three time zones. `git diff <baseline> -- tests/` is empty. Commit.
 
@@ -209,7 +209,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 *Goal:* one tests-first change, made by a second agent, with a review before the commit.
 
-**The change.** The finance team is considering a new policy: a due date that falls on a Saturday or Sunday is paid on the Friday before. It is a proposal, so it lives on its own branches, and `main` keeps the Chapter 12 answer.
+**The change.** The finance team is considering a new policy: a due date that falls on a Saturday or Sunday is paid on the Friday before. It is a proposal, so it lives on its own branches, and `main` keeps the Chapter 12 answer. Your notes on each port go in `NOTES.md` on `main`: switch back to it, write them, and commit, so Task 12 can use them.
 
 1. Run `git switch -c weekend-tests`. Write `tests/weekend.test.ts` yourself, for a function `payBy(due)` in `src/due-date.ts`:
    - `2026-11-07`, a Saturday, gives `2026-11-06`
@@ -283,7 +283,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 ### Apply it to your vertical
 
-Pick one calculation from your own work that you check by hand today, such as a deadline from a start date, a late fee, a commission or a tax line. Write five test cases for it first, including one month or year end and one input that must be refused. Then ask any coding agent to write the function that passes them, in the language you prefer, and check `git diff` on the tests before you accept it.
+Pick one calculation from your own work that you check by hand today, such as a deadline from a start date, a late fee, a commission or a tax line. Write five test cases for it first, including one month or year end and one input that must be refused. Then ask any coding agent to write the function that passes them, in the language you prefer. Before you accept it, check `git diff` on the tests, and write a sentence for each line that carries a rule.
 
 *Domain expert and builder.* The domain expert supplies the cases, especially the strange ones, such as the terms nobody uses anymore. The builder turns them into tests and keeps the agent from changing them.
 

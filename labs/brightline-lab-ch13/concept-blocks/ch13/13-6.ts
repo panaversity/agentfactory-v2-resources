@@ -6,5 +6,5 @@ const open = [
 ];
 const total = open.reduce((sum, inv) => sum + inv.cents, 0);
 console.log(names["V005"], total);
-console.log(names["V999"]);
+console.log(names["V099"]);
 console.log(open.map((inv) => inv.cents).sort());

@@ -6,6 +6,6 @@ open_invoices = [
 ]
 total = sum(inv["cents"] for inv in open_invoices)
 print(names["V005"], total)
-print(names.get("V999"))
+print(names.get("V099"))
 print(sorted(inv["cents"] for inv in open_invoices))
-print(names["V999"])
+print(names["V099"])
