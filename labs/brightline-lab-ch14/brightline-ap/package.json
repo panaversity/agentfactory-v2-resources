@@ -1,0 +1,24 @@
+{
+  "name": "brightline-ap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scripts the Brightline accounts payable team runs on invoice exports.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test:py": "cd py && uv run pytest",
+    "check:py": "cd py && uv run pyright && uv run ruff check",
+    "vendors": "node src/list-vendors.ts",
+    "due": "node src/due-by-friday.ts",
+    "reconcile": "node src/reconcile.ts",
+    "api": "node --env-file-if-exists=.env scripts/ap-api.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
