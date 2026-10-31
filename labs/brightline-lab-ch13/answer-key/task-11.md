@@ -37,7 +37,7 @@ Your script may show each invoice's own due date rather than the Friday, or form
 
 ## The safety rules
 
-`opencode.jsonc` holds the four lines from Lab 12, Task 11: every edit, every shell command and any reach outside the folder ask first, and an edit in `data/` is denied. The `data/` line comes after the edit line, because the last matching rule wins. OpenCode asked before every edit and every command.
+`opencode.jsonc` holds the four lines from Lab 12, Task 8: every edit, every shell command and any reach outside the folder ask first, and an edit in `data/` is denied. The `data/` line comes after the edit line, because the last matching rule wins. OpenCode asked before every edit and every command.
 
 There is no single right review. OpenCode's version 2 documentation names no review command, so you read the review panel, or `git diff` from the agent, yourself.
 

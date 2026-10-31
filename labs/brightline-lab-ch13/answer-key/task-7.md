@@ -25,4 +25,8 @@ Any one of these is a good note on where the two languages do the same thing dif
 | --- | --- |
 | `Net 10` gives a date, and the unknown-terms test fails | The agent read the number after "Net" instead of looking it up |
 | `list_vendors.py` still has its own day count | The brief's last part was skipped. Ask for the sort to use `terms_days` |
-| A file under `py/tests/` changed | Ask the agent to run `git restore py/tests/`, and tell it in one sentence that the tests are the specification |
+| A file under `py/tests/` changed | Ask the agent to put the tests back as they are in your baseline commit, and tell it in one sentence that the tests are the specification |
+
+## Impossible dates (step 4)
+
+Once the code exists, Python refuses `2026-02-30` with a `ValueError`. Its words depend on the Python version, such as `day is out of range for month` on Python 3.13, or `day 30 must be in range 1..28 for month 2 in year 2026` on Python 3.14. In TypeScript, `new Date("2026-02-30T00:00:00Z")` becomes March 2 with no error, so `dueDate("2026-02-30", "Due on receipt")` returns `2026-03-02`. The core path leaves this to Chapter 14's schemas. For the extension, the TypeScript function can check that the date it built prints back as the same text it was given.

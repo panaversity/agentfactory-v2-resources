@@ -1,4 +1,4 @@
-// Concept 13.1: Friday's list with the one line that changed. Predict the second line first.
+// Concept 13.6: Friday's list with the one line that changed. Predict the second line first.
 // To try next Friday's cutoff: node 13-1-sort.ts 2027-03-12
 import { readFileSync } from "node:fs";
 import { dueBy, usd } from "../../brightline-ap/src/due-by-friday.ts";
