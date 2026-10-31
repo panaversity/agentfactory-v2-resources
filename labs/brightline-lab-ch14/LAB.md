@@ -28,7 +28,7 @@ Each task with an answer key links it as a separate download. Open a key in a te
 
 An agent split Brightline's scripts into modules and classes. Nobody has read the result. Meanwhile, the AP team wants to stop trusting the exports without checking them. Last month, an export from a new vendor portal had a negative amount, and nobody noticed for a week.
 
-Ana wants three things, in both languages. Types that say exactly which terms exist. Schemas that check every record at the edge and report every bad row. And a small client for the AP system's API. It fetches vendors and every page of open invoices at once, retries once when the server is busy, and gives up when the server hangs. In the lab, a server on your own computer takes the place of the AP system. As in Lab 13, every total and every check comes from tested code, never from an AI's reply.
+Ana wants three things, in both languages. Types that say exactly which terms exist. Schemas that check every record at the edge and report every bad row. And a small client for the AP system's API. It fetches vendors while it fetches every page of open invoices, retries once when the server is busy, and gives up when the server hangs. In the lab, a server on your own computer takes the place of the AP system. As in Lab 13, every total and every check comes from tested code, never from an AI's reply.
 
 ### How each task works
 
@@ -53,7 +53,7 @@ As in Lab 13. Work in *Manual* mode unless a task says otherwise, read every com
 
 **Goal:** a literal type for terms, in both languages, and the type checkers catching a wrong call.
 
-1. Read `exercises/wrong-call.ts` and `exercises/wrong_call.py`. Run `npm run typecheck` and `npm run check:py`. Predict first, in `NOTES.md`: will either catch `"Net 10"`? Then compare with what the type checkers print.
+1. Read `exercises/wrong-call.ts` and `exercises/wrong_call.py`. Predict first, in `NOTES.md`: will either type checker catch `"Net 10"`? Then run `npm run typecheck` and `npm run check:py`, and compare with what they print.
 2. Send:
 
    > In `src/due-date.ts`, add `export type Terms` as the five known terms, a type guard `isTerms(text: string): text is Terms`, and `parseTerms(text: string): Terms`, which throws `Unknown terms: <text>` for anything else. Change `termsDays` and `dueDate` to take `Terms`. Do the same in `py/brightline_ap/due_date.py` with `Literal`, `TypeGuard`, `is_terms` and `parse_terms`. Then run `npm run typecheck` and `npm run check:py` and show me every error. Do not fix anything yet.
@@ -150,7 +150,7 @@ In Windows PowerShell, type `curl.exe` instead of `curl`, because `curl` there i
 
 ### Task 8. The async client, tests first (35 minutes)
 
-**Goal:** a client that fetches vendors and every page of open invoices at the same time, retries once on 503, and times out.
+**Goal:** a client that fetches vendors while it fetches every page of open invoices, retries once on 503, and times out.
 
 1. Write the tests first, in both languages. Each test must fail if the behavior it names is removed, so count requests, and do not only check the final answer. They must check five things:
    - each page of open invoices is requested once, and no invoice comes back twice
@@ -159,7 +159,7 @@ In Windows PowerShell, type `curl.exe` instead of `curl`, because `curl` there i
    - the vendors and invoices requests arrive at about the same time
    - the client's own deadline stops a slow answer
 
-   In TypeScript, log the requests with `server.on("request", ...)`. In Python, the fake API can log them itself. In TypeScript, start the sample API inside the test with `createApApi` from `scripts/ap-api.ts`, on port 0 so the system picks a free port. In Python, use `httpx.MockTransport`, a fake network inside the test. The answer key shows one way to write each test.
+   In TypeScript, log the requests with `server.on("request", ...)`. In Python, the fake API can log them itself. In TypeScript, start the sample API inside the test with `createApApi` from `scripts/ap-api.ts`, on port 0 so the system picks a free port. Here a port is the number a server listens on, such as 4010. In Python, use `httpx.MockTransport`, a fake network inside the test. The answer key shows one way to write each test.
 2. Commit the failing tests.
 3. Send:
 
@@ -237,7 +237,8 @@ In Windows PowerShell, type `curl.exe` instead of `curl`, because `curl` there i
 | Every `/vendors` call gives 503 | Only the first call after a start gives 503. Restart the API to see it again. |
 | The Python client refuses every invoice from the API | The JSON names are camelCase and the model expects snake_case. Ask for the model to accept both, with Pydantic aliases. |
 | The concurrency test fails on a slow computer | Run it again with nothing else running. If it still fails, check that the two calls are passed to `Promise.all` or `asyncio.gather`, not awaited one by one. |
-| Node reports a parameter property or `enum` error | Ask for the plain form: declare the field, then assign it in the constructor. |
+| Node reports a parameter property error | Ask for the plain form: declare the field, then assign it in the constructor. |
+| Node reports an `enum` error | Ask for a literal type in place of the `enum`, as in Concept 14.2. |
 | The agent wants to install a package the task does not list | Say no, and ask what it needs it for. |
 | Codex cannot reach `localhost` | Its network proxy may block local addresses. Allow `localhost` in its settings for this project, or run the client yourself in a terminal. |
 | `git log -p` shows your key | The key was committed. Change the key in `.env`, and treat the old one as leaked. In real work, revoke it with whoever issued it. |
