@@ -232,7 +232,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 *Goal:* the same change on an open-source agent, with its safety rules set first.
 
 1. If you skipped Task 10, do its steps 1 and 2 first, so the branch `weekend-tests` exists. Then run `git switch -c port-opencode weekend-tests`.
-2. In `brightline-ap`, create `opencode.jsonc` with the rules from Lab 12, Task 11. Edits, shell commands and folders outside the project ask first, and edits under `data/` are denied. Make sure auto-accept is off.
+2. In `brightline-ap`, create `opencode.jsonc` with the rules from Lab 12, Task 8. Edits, shell commands and folders outside the project ask first, and edits under `data/` are denied. Make sure auto-accept is off.
 3. Open the folder in OpenCode Desktop. Use the *plan* agent first: "Read `tests/weekend.test.ts` and plan the change that makes it pass. Do not edit anything."
 4. Switch to the *build* agent and send the same brief as Task 10, step 4. Approve each edit and command.
 5. We found no review command in OpenCode's version 2 documentation. Read the review panel or `git diff`, then run `git diff weekend-tests -- tests/`.
