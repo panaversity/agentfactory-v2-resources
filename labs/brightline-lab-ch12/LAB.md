@@ -66,7 +66,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Where a step sets a mode,
 
 1. Run `/init`. Claude Code reads the repository and drafts a `CLAUDE.md`.
 2. Read the draft. Then send: "Move the project rules into a new `AGENTS.md`. Make `CLAUDE.md` contain only the line `@AGENTS.md` and anything that applies to Claude Code alone."
-3. Open `AGENTS.md` and make sure it answers the five questions from Concept 12.4. Add what the draft missed. These five rules must be in it, in your own words:
+3. Open `AGENTS.md` and make sure it answers the five questions from Concept [12.4](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/). Add what the draft missed. These five rules must be in it, in your own words:
    - Never write to `data/`. The scripts and tests depend on it.
    - Amounts are whole cents. Never use floating-point money.
    - Every new script gets a test in `tests/`, and `npm test` must pass before you say you are done.
@@ -229,7 +229,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Where a step sets a mode,
 
 **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-10.md) and open it in a text editor, not in the agent.
 
-**Without the ChatGPT app.** Skip this task and run `git switch main`. In Task 12 you write the Codex part of `ports/ch12.md` as a plan instead. Say which file Codex would read, how it would enforce the `data/` rule, which permission mode you would choose for Task 5 and Task 6, and why. Use Concept 12.7.
+**Without the ChatGPT app.** Skip this task and run `git switch main`. In Task 12 you write the Codex part of `ports/ch12.md` as a plan instead. Say which file Codex would read, how it would enforce the `data/` rule, which permission mode you would choose for Task 5 and Task 6, and why. Use Concept [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/).
 
 ### Task 11. Port to OpenCode, safely (25 minutes)
 
@@ -278,7 +278,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Where a step sets a mode,
    - whether its result matched your check from Task 5
    - what you had to change in your brief or your settings, and why
 
-   For an app you did not have, write the same points as a plan instead, using Concept 12.7.
+   For an app you did not have, write the same points as a plan instead, using Concept [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/).
 3. End the file with one paragraph: which agent you would give this job to next week, and why. There is no right answer. The reason is what counts.
 4. Commit, then run `git tag ch12`.
 
