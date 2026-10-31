@@ -1,5 +1,5 @@
-names = {"V001": "Midwest Packaging Co.", "V005": "Hocking Valley Pallets"}
-open_invoices = [
+names: dict[str, str] = {"V001": "Midwest Packaging Co.", "V005": "Hocking Valley Pallets"}
+open_invoices: list[dict[str, str | int]] = [
     {"vendor_id": "V005", "cents": 735000},
     {"vendor_id": "V001", "cents": 482500},
     {"vendor_id": "V002", "cents": 61875},

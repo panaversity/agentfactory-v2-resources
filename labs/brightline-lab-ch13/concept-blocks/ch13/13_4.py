@@ -1,4 +1,4 @@
-invoices = [
+invoices: list[dict[str, str]] = [
     {"number": "INV-8301", "status": "open", "due": "2027-03-03"},
     {"number": "INV-8309", "status": "paid", "due": "2027-02-28"},
     {"number": "INV-8305", "status": "open", "due": ""},
