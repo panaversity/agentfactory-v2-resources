@@ -2,7 +2,7 @@
 
 The answers for Task 1 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your section 1 is on the page and `Run: the move, channels and runtime` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your page and the run. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When your section 1 is on the page and "Move channels and runtime to the new vendor" is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your page and the move. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
@@ -13,7 +13,7 @@ Task 1 carries checks 1 to 3 of the lab's 21.
    - Missed: any of the three carried across, as if the old vendor's connector or scheduler could come along; or one of them left out.
 2. **Monday's time comes from the Role Contract.** Your "On the new vendor" says the new scheduler is set to Monday, 7 a.m., and that the time comes from the Role Contract's Runtime needs line, which Brightline keeps.
    - Passed: the time, and the Role Contract as where it is written. "From our own Role Contract, not the old vendor's settings" passes.
-   - Missed: the scheduled task carried across; the time read from the old vendor's scheduler; or no source for the time. The run then shows no register on Monday, or a time from nowhere.
+   - Missed: the scheduled task carried across; the time read from the old vendor's scheduler; or no source for the time. The move then shows no register on Monday, or a time from nowhere.
 3. **Nothing went wrong here this week.** Your "This week" says nothing in this layer caused a mistake.
    - Passed: "Nothing", or that the wrong answers came out through the inbox and #ap-help but were decided in another layer.
    - Missed: a mistake placed here, such as "the inbox let a fake email in" or "the runtime answered wrong". The email reached the worker as every email does; what the worker did with it was decided elsewhere.

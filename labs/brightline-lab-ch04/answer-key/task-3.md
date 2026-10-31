@@ -2,7 +2,7 @@
 
 The answers for Task 3 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your section 3 is on the page and `Run: the move, memory` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your page and the run. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When your section 3 is on the page and "Move memory to the new vendor" is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your page and the move. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
@@ -10,11 +10,11 @@ Task 3 carries checks 8 to 11 of the lab's 21.
 
 8. **Rebuilt, and the move empties it.** Your section says the memory is rebuilt on the new vendor, so the new worker starts with nothing remembered, and that this is right.
    - Passed: rebuilt, empty. "On the line: the vendor's feature, our facts, and the facts have to live somewhere else" passes too.
-   - Missed: the four entries carried across. The run then tells Lakeshore November 8 again.
+   - Missed: the four entries carried across. The move then tells Lakeshore November 8 again.
 9. **Payment terms come from the vendor record, and the new worker is told so.** Your "On the new vendor" says Lakeshore's terms come from its vendor record in the accounting system, and names where the new worker is told that: the Role Contract's Knowledge sources, or the instructions.
    - Passed: the vendor record as the source, and a line that points the worker to it.
-   - Missed: "Net 15" written into memory or the instructions as what the new worker is told, in place of a pointer to the record. A copied fact goes stale the next time the terms change, which is what happened on August 14, 2026. Missed too if the page names no source: the run then says "nothing on the page decides". Quoting what the files say today, Net 30 in memory and Net 15 in the record, under "Today" or "This week", is reporting, and passes.
-10. **The run: October 24, 2026, from the vendor record.** The new worker answers Lakeshore that invoice 5102, dated October 9, 2026, is due October 24, 2026, Net 15 from the vendor record, and "What decided it" names your line.
+   - Missed: "Net 15" written into memory or the instructions as what the new worker is told, in place of a pointer to the record. A copied fact goes stale the next time the terms change, which is what happened on August 14, 2026. Missed too if the page names no source: the move then says "nothing on the page decides". Quoting what the files say today, Net 30 in memory and Net 15 in the record, under "Today" or "This week", is reporting, and passes.
+10. **The move: October 24, 2026, from the vendor record.** The new worker answers Lakeshore that invoice 5102, dated October 9, 2026, is due October 24, 2026, Net 15 from the vendor record, and "What decided it" names your line.
     - Passed: October 24, 2026, and the vendor record. The weekday is optional.
     - Missed: November 8; a date with no source; or "lost in the move".
 11. **What memory answered over, and what is worth remembering again.** Your "This week" says memory answered where the vendor record should have, with a fact out of date since August 14. And your section says which entries the new worker may learn again: the register order, a preference. The $10,000 limit and the bank's rate are not remembered again, because the policy decides the first and is silent on the second.

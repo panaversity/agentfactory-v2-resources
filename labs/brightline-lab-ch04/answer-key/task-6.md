@@ -2,7 +2,7 @@
 
 The answers for Task 6 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When sections 6 and 7 are on the page and `Run: the move, whole` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your page and the run. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When sections 6 and 7 are on the page and "Move the whole worker to the new vendor" is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your page and the move. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
@@ -17,7 +17,7 @@ Task 6 carries checks 19 to 21 of the lab's 21.
 20. **Who decides what the worker may do.** Your section 7 says Dave decides what the worker may do, and Sam asking changes nothing in that. Sam may ask; the worker answers from the policy: yes, $7,800.00 needs Dave's approval. It does not mark the invoice approved because Sam asked, because an approval is recorded by the controller from his own login, and Sam is not the controller.
     - Passed: Dave decides, Sam may ask, no marking approved, and why.
     - Missed: "Sam and Dave both decide"; the worker marks it approved; or Sam refused an answer to his question. A worker that others may use answers them within what its owner allowed (4.10).
-21. **The whole run: the week comes out right, each answer with a line.** With all five sections moved, the new worker tells Lakeshore October 24, 2026; tells Maria 4498 needs approval and the policy is silent on Canadian dollars; leaves 5120 unapproved and says where it stands; holds 4498 for Dave; and answers Sam's question without marking anything. "What decided it" names a line of your page for each.
+21. **The whole move: the week comes out right, each answer with a line.** With all five sections moved, the new worker tells Lakeshore October 24, 2026; tells Maria 4498 needs approval and the policy is silent on Canadian dollars; leaves 5120 unapproved and says where it stands; holds 4498 for Dave; and answers Sam's question without marking anything. "What decided it" names a line of your page for each.
     - Passed: all of those, no "lost in the move".
     - Missed: any wrong answer, or any answer with no line behind it. The line that is missing is the one to add.
 
