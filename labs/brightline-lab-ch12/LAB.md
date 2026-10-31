@@ -133,7 +133,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Where a step sets a mode,
 
 1. Switch the permission mode to *Accept edits*. The agent can now edit files without asking. It still asks before most commands. Common file commands inside the folder, such as `mkdir`, `mv`, `cp` and even `rm`, run without asking. That is one more reason git is your undo.
 2. Send: "Go ahead with the revised plan."
-3. When it says it is done, open the *Changes* card and check that nothing in `data/` changed. You do not need to read the code yet. Ask the agent to list its tests in plain words, one line each, and check that there is one for each kind of hard case in your check.
+3. When it says it is done, open the *Changes* card and check that nothing in `data/` changed. Ask the agent to list its tests in plain words, one line each, and check that there is one for each kind of hard case in your check.
 4. Run `npm test` and `npm run due -- 2027-03-05` yourself, or approve the agent running them.
 5. Compare the output with your check from Task 5: the count, the total and each hard case. Then download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-6.md) and open it in a text editor, not in the agent. Compare the output with its table.
 6. If the result is wrong, find the matching row in "Common wrong answers", tell the agent what is wrong in one sentence, and run it again.
@@ -198,7 +198,7 @@ Each task has a goal, the steps, and a **Checkpoint**. Where a step sets a mode,
 2. If Claude offers to run the README job in another session, accept that offer. The new session appears under this one in the sidebar. If your app does not offer this yet, start a second session yourself with *+ New* and give it the README job. Either way, the two jobs edit different files. If Claude later shows a card suggesting another task, read what it would do and where it would run before you choose *Start*, *Do it here* or neither. Write down what it suggested.
 3. While Claude works, open a side chat with Cmd+semicolon on macOS, Ctrl+semicolon on Windows, or `/btw`. Ask: "Has anything in this session touched `data/`?" Close the side chat. Its question and answer do not appear in the main session.
 4. When the vendor totals are done, send: "Use a subagent to check the new code against `AGENTS.md` and report only rule breaks." Read the summary it returns.
-5. Check the vendor totals without reading code: they must add up to $19,229.53, the total in your check from Task 5. Then run `npm test`, and commit the vendor totals and the README as two separate commits.
+5. Check the vendor totals: they must add up to $19,229.53, the total in your check from Task 5. Then run `npm test`, and commit the vendor totals and the README as two separate commits.
 6. Run `/doctor prompt-audit`. It reports on your `CLAUDE.md` and `AGENTS.md` files and on the rules, skills, commands, subagents and output styles under `.claude/`, and changes nothing until you ask. Pick one finding, decide whether you agree, and write it in your notes. Accept a change only if you understand it.
 7. **Optional, 15 minutes: a small mod.** A mod is code that runs inside Claude Code with your rights, so you read it before it runs.
    - Set the mode to *Manual* and send "Make a mod that shows 'Payment run cutoff: Friday, March 5, 2027' in the band above the prompt. It should only draw that line. It must not read files, run commands, make network requests or approve tool calls."
