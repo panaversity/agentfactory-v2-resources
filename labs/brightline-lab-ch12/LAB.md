@@ -21,7 +21,7 @@ Your job is to make her folder safe for a coding agent, have the agent build tha
 
 ### What you need
 
-- The Claude desktop app with a Pro, Max, Team or Enterprise plan. Without one, see "If you do not have a paid Claude plan" at the end of this page. On Pro and Max, Claude Code shares its usage limit with chat. If the limit stops you, stop at the end of a task, and git keeps your place.
+- The Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan. Without one, see "If you do not have a paid Claude plan" at the end of this page. On Pro, Max and Ultra, Claude Code shares its usage limit with chat. If the limit stops you, stop at the end of a task, and git keeps your place.
 - A second agent for Task 8: Codex in the ChatGPT desktop app, on any ChatGPT plan, including Free, or OpenCode Desktop with a model connected, such as one of OpenCode's free models.
 - Git, and Node.js 24 or later, installed on your computer. Download them from [git-scm.com](https://git-scm.com/downloads) and [nodejs.org](https://nodejs.org/en/download). If a step is unclear, ask Claude in a chat. The agent checks them in Task 2, and it should never install software on its own.
 
