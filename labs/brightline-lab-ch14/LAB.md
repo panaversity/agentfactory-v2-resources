@@ -294,7 +294,7 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
 5. Switch to the *build* agent, and send the same brief as Task 10, step 3.
 6. OpenCode's version 2 documentation names no review command. Read the review panel, or ask OpenCode to show you `git diff`. Then ask it to run `git diff remit-tests -- tests/`, which must print nothing.
 7. Ask OpenCode to commit on `port14-opencode`, with `opencode.jsonc`, and then to run `git status`. It must show a clean working tree.
-8. Ask OpenCode to run `git switch main`. Write the same four notes on this port in `NOTES.md`, and ask OpenCode to commit them.
+8. Close OpenCode, and go back to the agent you used for Tasks 1 to 9. Ask it to run `git switch main`. That takes `opencode.jsonc` out of the folder, because only `port14-opencode` holds it, and without that file OpenCode has no rules to read. So keep OpenCode closed on `main`. Write the same four notes on this port in `NOTES.md`, and ask the agent to commit them.
 
 **Checkpoint:** every test passes on `port14-opencode`, the tests are unchanged, and OpenCode asked before each edit and command. Your notes are committed on `main`.
 

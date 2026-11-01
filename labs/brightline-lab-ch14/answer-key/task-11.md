@@ -44,5 +44,6 @@ remit_email: str | None = Field(default=None, pattern=r"^[^@\s]+@[^@\s]+\.[^@\s]
 - `git diff remit-tests -- tests/` prints nothing.
 - OpenCode asked before each edit and each command. If it edited or ran anything without asking, check that auto-accept is off and that `opencode.jsonc` is in the folder you opened.
 - `git status` shows a clean working tree after the commit, with `opencode.jsonc` committed on this branch.
+- `opencode.jsonc` leaves the folder when you switch to `main`, because only `port14-opencode` holds it. That is expected, and it is why step 8 closes OpenCode first.
 
 **Your notes.** Say what the *plan* agent proposed, whether the *build* agent kept to it, and what the review panel or `git diff` showed. OpenCode has no review command in version 2, so your own reading of the diff is the review.
