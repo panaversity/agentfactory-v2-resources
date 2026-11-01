@@ -23,7 +23,7 @@ With one test for each due-date case, add 4 to each number. None may fail. The w
 | If you see | What went wrong |
 | --- | --- |
 | `npm ci` says it needs a `package-lock.json` | The lock file was not committed. Commit it on `main`, move the tag with `git tag -f ch13`, delete `ch13-check` and clone again |
-| `npm test` finds a weekend test | The tag is on a port branch. Run `git switch main` and `git tag -f ch13`, then delete `ch13-check` and clone again |
+| `npm test` finds a weekend test | The tag is on a port branch. Ask the agent to run `git switch main` and `git tag -f ch13`, then to delete `ch13-check` and clone again |
 
 ## ports/ch13.md
 
