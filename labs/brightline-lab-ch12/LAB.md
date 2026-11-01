@@ -2,7 +2,7 @@
 
 Chapter 12 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 12: the first repository, on three agents](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), so you can do the lab without the book.
 
-*Time: about 2 hours 30 minutes, plus about 30 minutes if you do Task 8 in both Codex and OpenCode. Installing the apps is not included. Lab files: `brightline-lab-ch12.zip`. The same steps are in `LAB.md` inside the zip.*
+*Time: about 2 hours 40 minutes, plus about 30 minutes if you do Task 8 in both Codex and OpenCode. Installing the apps is not included. Lab files: `brightline-lab-ch12.zip`. The same steps are in `LAB.md` inside the zip.*
 
 ### The job
 
@@ -13,7 +13,7 @@ Your job is to make her folder safe for a coding agent, have the agent build tha
 ### What you will learn
 
 - Choose the folder and the permission mode before the first message, by how hard a mistake would be to undo ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
-- Write one rules file that every agent reads, and back the most important rule with a setting ([12.4](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
+- Write one `AGENTS.md` that every agent reads, see what a `CLAUDE.md` changes, and back the most important rule with a setting ([12.4](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
 - Read the agent's plan against an answer you already know, before anything is built ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
 - Judge "done" by that answer, not by the agent's passing tests ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/)).
 - Hand work to a fresh session through a written note, and undo a change with git ([12.5](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/context-sessions-effort/)).
@@ -63,14 +63,13 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 **Checkpoint:** the agent reports one commit and passing tests.
 
-### Task 3. Write one rules file for every agent (15 minutes)
+### Task 3. Write one rules file for every agent (25 minutes)
 
-*Goal:* a short, true `AGENTS.md` that every agent reads, and a `CLAUDE.md` that points to it.
+*Goal:* a short, true `AGENTS.md` that every agent reads, and you have seen what a `CLAUDE.md` does to it.
 
-1. Type `/init` and send it. Claude Code reads the project and drafts a `CLAUDE.md`. Approve the file.
-2. Send this message as it is. The last rule is for the agent, so you do not need to follow it.
+1. Send this message as it is. The last rule is for the agent, so you do not need to follow it.
 
-   > Move the project rules into a new `AGENTS.md`, and make `CLAUDE.md` hold only the line `@AGENTS.md` and anything that applies to Claude Code alone. Make sure `AGENTS.md` says these five things, and add any that are missing:
+   > Read this project and write a short `AGENTS.md` at the top of it. Say what the project is, how to run its tests and where things go. Make sure it says these five things:
    >
    > - Never write to `data/`. The scripts and tests depend on it.
    > - Amounts are whole cents, never decimals such as 10.5.
@@ -78,12 +77,16 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
    > - Do not install packages without asking.
    > - Node runs the TypeScript files directly, with no build step. Use only type annotations, no `enum` or `namespace`, and import local files with the `.ts` extension.
    >
-   > Then tell me, one line each, which of the five were already in your draft.
+   > Then tell me, one line each, which of the five you could have worked out from the project on your own.
 
-3. Approve the edits. Then approve a commit with the message "Add rules files".
-4. Click *+ New* to start a fresh session in the same folder. Ask: "What must you never do in this project?"
+2. Approve the file. Then approve a commit with the message "Add AGENTS.md".
+3. Click *+ New* to start a fresh session in the same folder, in *Manual* mode. Ask: "Without opening any file, what must you never do in this project? Name the file that told you." It should give the `data/` rule and name `AGENTS.md`. That one file is all Claude Code needs.
+4. Now see what a `CLAUDE.md` changes. Claude Code's `/init` command writes this file, so a project can gain one by accident. Send: "Create a `CLAUDE.md` that holds one line, `Notes for Claude Code go here.`" Approve it.
+5. Click *+ New* again, in *Manual* mode, and ask the same question. This time the session should not know the rule. The rule is still in `AGENTS.md`, but a `CLAUDE.md` replaces that file for Claude Code. Any other agent would still read it.
+6. Bring the rule back. Send: "Replace everything in `CLAUDE.md` with the one line `@AGENTS.md`." Approve it. That line pulls `AGENTS.md` in, so there is still only one set of rules.
+7. Click *+ New* once more, in *Manual* mode, and ask the same question. Then approve a commit with the message "Add CLAUDE.md that imports AGENTS.md".
 
-**Checkpoint:** the new session names the `data/` rule without being told.
+**Checkpoint:** the fresh session in step 5 did not know the rule, and the one in step 7 gives the `data/` rule and names `AGENTS.md`.
 
 ### Task 4. Make the data rule a setting (15 minutes)
 
@@ -231,7 +234,7 @@ Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your
 1. Do Tasks 1 to 7 in Codex or OpenCode.
 2. Where a task says *Plan*, *Manual* or *Accept edits*, use your tool's control, as [12.7's permissions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-permissions-and-a-plan) shows. Where it says *+ New*, start a new chat in Codex or a new session in OpenCode, as [12.7's sessions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-context-and-sessions) shows.
 3. If you use OpenCode, set its safety rules before Task 1, as in Task 8's OpenCode steps 2 to 5.
-4. In Task 3, draft `AGENTS.md` only: with `/init` in Codex, or by asking OpenCode's *build* agent. Leave the words about `CLAUDE.md` out of Task 3's message.
+4. In Task 3, stop after step 3, because the steps after it are about Claude Code. Start the fresh session the way your tool does, and the checkpoint is that it gives the `data/` rule and names `AGENTS.md`.
 5. Skip Task 4, because its settings file is for Claude Code. At the end of Task 3, ask the agent to tag the commit `rules`.
 6. In Task 8, your second agent is the one you did not use.
 7. Do Task 9 in the agent you used first, for the two agents you used.
@@ -246,6 +249,7 @@ Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your
 | The agent wants to install a package | Say no. The lab needs no packages. Ask it to use what Node already has. |
 | The agent changed a file in `data/` | Ask the agent to restore `data/` with git, and approve it. Then check the setting from Task 4 and the rule in `AGENTS.md`. |
 | The result uses today's real date | The brief gives the date. Tell the agent to use the cutoff from the command, never the computer's clock. |
+| Claude Code does not know a rule in `AGENTS.md` | Look for a `CLAUDE.md` or `CLAUDE.local.md` in the project or a folder above it. Make `@AGENTS.md` the top line of `CLAUDE.md`. If there is neither, update the app and start a new session. |
 | Codex or OpenCode does not mention `AGENTS.md` | Check that you opened `brightline-ap`, and that you are on a branch made from `rules`. |
 | OpenCode did not ask before an edit | Stop. Check auto-accept and `opencode.jsonc`, then start a new session. |
 | The count is short on Windows | The data files may have Windows line endings. Tell the agent: "The lines may end in Windows style. Handle both, with a test for each." |
@@ -260,7 +264,7 @@ Pick one folder from your own work that a script could help with, such as weekly
 ### Artifact checklist
 
 - [ ] `brightline-ap` is a git repository with a main branch
-- [ ] `AGENTS.md` holds the five rules from Task 3, and `CLAUDE.md` imports it (Claude Code only)
+- [ ] `AGENTS.md` holds the five rules from Task 3, and `CLAUDE.md` holds `@AGENTS.md` (Claude Code only)
 - [ ] `.claude/settings.json` denies edits under `data/` (Claude Code only)
 - [ ] `src/due-by-friday.ts` and its tests, with the tests passing
 - [ ] The script lists 8 invoices and $19,229.53 for the cutoff 2027-03-05, as Ana's note says
