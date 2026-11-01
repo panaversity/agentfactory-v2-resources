@@ -270,7 +270,7 @@ In [Chapter 14](https://agentfactory2.panaversity.org/building-ai-workers/struct
 6. OpenCode's version 2 documentation names no review command. Read the review panel, or ask OpenCode to show you `git diff`.
 7. Ask OpenCode to run `git diff weekend-tests -- tests/` and `npm run due -- 2027-03-05`, and read the output. The diff must be empty.
 8. Ask OpenCode to commit on `port-opencode`, with `opencode.jsonc`, and then to run `git status`. Check that it shows a clean working tree.
-9. Ask OpenCode to run `git switch main`. Write the same five notes on this port in `NOTES.md`, and ask OpenCode to commit them.
+9. Close OpenCode, and go back to the agent you used for Tasks 1 to 9. Ask it to run `git switch main`. That takes `opencode.jsonc` out of the folder, because only `port-opencode` holds it, and without that file OpenCode has no rules to read. So keep OpenCode closed on `main`. Write the same five notes on this port in `NOTES.md`, and ask the agent to commit them.
 
 **Checkpoint:** 10 invoices, $33,109.53, on the `port-opencode` branch, with the tests unchanged, and OpenCode asked before every edit and command. Your five notes are committed on `main`.
 
