@@ -14,6 +14,11 @@
 # Every other lab is zipped whole, except its per-task keys: a lab built before
 # that pattern can still add a task with its own key, and every
 # answer-key/task-*.md, in any lab, is published the same way.
+#
+# A lab whose git history is part of the lesson keeps it as <repository>.bundle,
+# because a folder in this repository cannot hold a nested .git. Its zip holds the
+# repository, ready to open: every branch and tag as local refs, checked out clean
+# on main, with no remote and no hooks, and without the bundle.
 name: Release labs
 
 on:
@@ -35,7 +40,7 @@ jobs:
 
       - name: Zip each lab folder
         env:
-          UPLOAD_LABS: "brightline-lab-ch0-1 brightline-lab-ch0-2 brightline-lab-ch0-3 brightline-lab-ch0-4 brightline-lab-ch01 brightline-lab-ch02 brightline-lab-ch03 brightline-lab-ch04 brightline-lab-ch05 brightline-lab-ch06 brightline-lab-ch07 brightline-lab-ch08 brightline-lab-ch09 brightline-lab-ch10 brightline-lab-ch11"
+          UPLOAD_LABS: "brightline-lab-ch0-1 brightline-lab-ch0-2 brightline-lab-ch0-3 brightline-lab-ch0-4 brightline-lab-ch01 brightline-lab-ch02 brightline-lab-ch03 brightline-lab-ch04 brightline-lab-ch05 brightline-lab-ch06 brightline-lab-ch07 brightline-lab-ch08 brightline-lab-ch09 brightline-lab-ch10 brightline-lab-ch11 brightline-lab-ch15"
         run: |
           mkdir -p dist stage
           for dir in labs/*/; do
@@ -52,6 +57,15 @@ jobs:
               if [ -d "stage/$name/week" ]; then
                 (cd "stage/$name" && zip -r -X -q week.zip week -x "*/.DS_Store" "*/.gitkeep" && rm -rf week)
               fi
+              # A lab whose git history is part of the lesson keeps it as a bundle: see the note at the top.
+              for bundle in "stage/$name"/*.bundle; do
+                [ -e "$bundle" ] || continue
+                repo="${bundle%.bundle}"
+                git init -q --template= -b main "$repo"
+                git -C "$repo" -c core.logAllRefUpdates=false fetch -q --update-head-ok "$PWD/$bundle" 'refs/heads/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
+                git -C "$repo" -c core.logAllRefUpdates=false checkout -q -f main
+                rm -f "$bundle" "$repo/.git/FETCH_HEAD"
+              done
               (cd stage && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
             else
               # From inside labs/, so the zip unpacks into one folder named for the lab.
