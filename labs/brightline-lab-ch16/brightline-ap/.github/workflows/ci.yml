@@ -1,0 +1,49 @@
+# Required checks for every pull request to main. Three jobs, so each problem shows on its own.
+name: ci
+on:
+  pull_request:
+    branches: [main]
+    # labeled and unlabeled rerun the checks when the tests-changed label is added or removed
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+
+# The workflow token can read the code and nothing else.
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: cd py && uv sync --locked
+      - run: npm run test:py
+      - run: npm run check:py
+
+  tests-unchanged:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Existing tests are not weakened
+        run: bash scripts/check-tests-unchanged.sh "origin/${{ github.base_ref }}"
+        env:
+          ALLOW_TEST_CHANGES: ${{ contains(github.event.pull_request.labels.*.name, 'tests-changed') }}
+
+  no-secrets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: No secret is printed or written in code
+        run: bash scripts/check-no-secret-output.sh

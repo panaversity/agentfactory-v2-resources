@@ -1,0 +1,19 @@
+# The high-tier paths from REVIEW.md, and their owner.
+# Replace @your-github-name with your own GitHub user name.
+# The last matching line wins. Paths not listed here have no owner, so no owner review.
+/.github/                      @your-github-name
+/REVIEW.md                     @your-github-name
+/AGENTS.md                     @your-github-name
+/data/                         @your-github-name
+/.env.example                  @your-github-name
+/src/due-date.ts               @your-github-name
+/src/due-by-friday.ts          @your-github-name
+/src/money.ts                  @your-github-name
+/py/brightline_ap/due_date.py  @your-github-name
+/tests/                        @your-github-name
+/py/tests/                     @your-github-name
+# The checks themselves, and the files that decide how tests run
+/scripts/check-*.sh            @your-github-name
+/package.json                  @your-github-name
+/tsconfig.json                 @your-github-name
+/py/pyproject.toml             @your-github-name
