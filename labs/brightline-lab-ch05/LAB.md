@@ -419,17 +419,17 @@ This task is optional. Skip it if your plan is running low, because a split run 
    The four lines:
    ```
 4. When the run stops after the exceptions, send Maria's reply from Task 11's step 5.
-5. When the run has built its files, look at the app, not only at the reply, and send this in the fresh chat. After "What happened", write Split (the app showed helpers at work), Not split (the app has helpers, and the worker chose not to use them) or Not available (your app or plan has no helpers). All three are valid results.
+5. When the run has built its files, look at the app, not only at the reply, and send this in the fresh chat. After "What happened", write Split (the app showed helpers at work), Not split (the app showed none) or Not available (your plan has no helpers, as the app's settings or help page says). If you cannot tell which, write Not split: it is what you saw. All three are valid results.
 
    ```text
-   Split record.
+   Split record, from what my app showed. Reply only "Noted".
    What happened:
    What the app showed: (or "not observable")
-   Usage compared with Task 11: (or "not measured")
+   Usage: (what the app showed, or "not measured")
    ```
 
    The worker's own account of its split is not evidence. Write only what the app showed you.
-6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? If a line you added caused it, change the line, and run a new fresh chat with memory off.
+6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? If a line you added caused it, send the changed line in your lab chat, as in step 2. Then do steps 3 to 6 again in a new fresh chat with memory off, with your four lines as they now stand.
 
 **Checkpoint.** Checks 27 to 29 passed, and the hard rule holds.
 

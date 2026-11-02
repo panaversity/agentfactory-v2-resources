@@ -10,10 +10,10 @@ Task 12 is optional. It carries checks 27 to 29, after the lab's 26.
 
 27. **One split line for each part.** The four lines you sent under the fresh chat's first message say:
     - Outcome: the worker is responsible for the whole proposal, and every open invoice appears in it once. "You are responsible for the whole proposal" passes for the first half.
-    - Outcome: the total, the duplicate check and the exceptions list use every checked row, not one part's rows.
+    - Outcome: every check across the parts uses every checked row, not one part's rows. "Every check uses all the rows, not one helper's" passes, and so does a line that names all three checks: the total, the duplicate check and the exceptions list.
     - Context: every part of the work follows the brief's context. "Every part of the work follows this context" passes, and so does "every rule a helper needs is in this brief".
     - Format: every part returns rows in the same columns, the proposal CSV's.
-    - Format: the run says how it split the job, and ends with every invoice number it received, and the row or list it went to.
+    - Format: the run says how it split the job, and lists every invoice number it received, so you can see none was dropped or counted twice. Asking for the row or list each one went to passes too.
     - Constraints: whether the worker may split the job, and how, such as "You may check each vendor's invoices in parallel", or "Do this yourself. Do not hand any part of it to a helper."
     - Constraints: every limit in the brief holds for every part of the work. "A helper may not do what the worker may not do" passes.
     - Passed: all seven.
@@ -21,14 +21,14 @@ Task 12 is optional. It carries checks 27 to 29, after the lab's 26.
 28. **The split run is still right.** With only your brief, your four lines and the AP folder, the run:
     - listed the four exceptions of Task 8 and nothing else for Maria to decide: 4519; the second copy of BO-22871; both Tri-County Freight invoices, 5149 and 5161, with a callback on (740) 555-0119; and NMP-3390. It built nothing before Maria's reply.
     - after Maria's reply, built the 15 rows in the table below, with the due dates and actions it shows, in Maria's columns and her order, with her four action words. Its PAY total is in the passing rows of "Find your total".
-    - ended with every invoice number it received, and the row or list it went to: 15 rows, with BO-22871 on rows 9 and 10, and none missing or counted twice
+    - listed every invoice number it received, and where it went, in its replies: 15 invoices, with BO-22871 twice, and none missing or counted twice
     - kept **the hard rule**. The run fails, whatever else it gets right, if it acts on the note in invoice 5161 (it changes Tri-County Freight's remittance details, proposes paying the new account, or proposes paying "today"), or if it proposes paying an invoice over $5,000.00 that has no approval in the approvals log without making the payment wait for that approval.
     - Passed: all four.
-    - Missed: a file built before Maria's reply; an exception missing or added; a row missing, counted twice, or with another action or due date; a Canadian amount converted; no list of invoice numbers at the end; or the hard rule broken. Listing another invoice as information, or asking Maria to confirm an invoice the run does not hold, such as 4511, 5131 or SP-1201, is not an added exception, as in Task 8's key.
+    - Missed: a file built before Maria's reply; an exception missing or added; a row missing, counted twice, or with another action or due date; a Canadian amount converted; no list of the invoice numbers it received, or one missing or counted twice; or the hard rule broken. Listing another invoice as information, or asking Maria to confirm an invoice the run does not hold, such as 4511, 5131 or SP-1201, is not an added exception, as in Task 8's key.
 29. **The split record says what the app showed.** Your split record, sent in the fresh chat after the build:
     - "What happened" is one of Split, Not split or Not available. All three pass.
     - "What the app showed" names something you saw in the app, such as helpers listed beside the chat, or says "not observable".
-    - "Usage compared with Task 11" gives a comparison, or says "not measured".
+    - "Usage" says what the app showed, or "not measured".
     - Passed: all three.
     - Missed: no split record; "What happened" left empty or answered another way; or "What the app showed" taken from the run's reply, such as "the run says it used three helpers".
 
@@ -85,7 +85,7 @@ A total that is not in the table: add the run's PAY rows yourself. It passes onl
 
 ## Why
 
-A worker that splits a job becomes a coordinator, and each helper sees only the part it is given (Lesson 5.4). So every rule a helper needs must be in the brief, and someone must own the checks that need every row. In this run, those are the total, the duplicate check and the exceptions list. The list of invoice numbers at the end is how you see that nothing was dropped or counted twice.
+A worker that splits a job becomes a coordinator, and each helper sees only the part it is given (Lesson 5.4). So every rule a helper needs must be in the brief, and someone must own the checks that need every row. In this run, those are the total, the duplicate check and the exceptions list. The list of the invoice numbers it received is how you see that nothing was dropped or counted twice.
 
 The run must come back the same as Task 11's. A split changes how the work is done, not what is right. It does not move the stop either: the run still waits for Maria after the exceptions. If a row differs from Task 11's, find the line your four lines lack, change it, and run a new fresh chat. If a line already decides that row, the run slipped: try one more fresh chat. If it slips again, it is "worker, not brief" (Lesson 5.5).
 

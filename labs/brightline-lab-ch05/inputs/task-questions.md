@@ -172,7 +172,7 @@ Task 12 is optional.
 
 1. Show 5.4's split lines below, all four, in their order. Ask: "Send your four lines under the four headings, one line for each part. Your Constraints line says whether the worker may check each vendor's invoices in parallel."
 
-These four lines are not parts of the payment-run brief: put none of them in the Doc, and change no line of it. Show the four lines back, as the learner wrote them. Then say: "Open a fresh chat with memory off, as in Task 11, and send Task 12's message with your four lines under it." Say "Task 12 is done".
+These four lines are not parts of the payment-run brief: put none of them in the Doc, and change no line of it. Show the four lines back, as the learner wrote them. Then say: "Open a fresh chat with memory off, as in Task 11, and send Task 12's message with your four lines under it. Task 12's run and its check are in that chat."
 
 The run is in the fresh chat, not here. If the learner comes back here and changes a line, show the four lines as they now stand. Ask nothing else.
 
