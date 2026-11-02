@@ -14,6 +14,7 @@ uv run python ../../concept-blocks/ch14/14_1.py
 | Concept | Files | When it runs |
 | --- | --- | --- |
 | 14.1 Modules | `14-1.ts`, `14_1.py` | Any time |
+| 14.3 Directory | `14-3-directory.ts`, `14_3_directory.py` | Any time |
 | 14.3 Classes | `14-3.ts`, `14_3.py` | After Lab 14, Task 3, which adds `openTotalCents` |
 | 14.3 Equality | `14-3-equality.ts`, `14_3_equality.py` | Any time |
 | 14.3 Parameter property | `14-3-parameter-property.ts` | Any time. It fails on purpose, with the error Node gives |

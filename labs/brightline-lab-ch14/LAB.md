@@ -223,7 +223,7 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
 
    > Please write failing tests from my cases in `NOTES.md`, under "Task 8", in `tests/ap-client.test.ts` and `py/tests/test_api_client.py`. They are for a client that doesn't exist yet, with `fetchVendors`, `fetchOpenInvoices` and `fetchVendorsAndOpenInvoices` in `src/ap-client.ts`, and `fetch_vendors`, `fetch_open_invoices` and `fetch_vendors_and_open_invoices` in `py/brightline_ap/api_client.py`. In TypeScript, have each test start its own copy of the sample API from `scripts/ap-api.ts`, on a free port, and count the requests it receives. In Python, use a fake API inside the test that counts its own requests. Write only the tests.
 
-   After the task, the answer key shows one way to write each test.
+   These tests start a server and count its requests, so you are not expected to follow every line. Check only that each test names one of your cases, with the number of requests you decided. After the task, the answer key shows one way to write each test.
 2. Ask the agent to run `npm test` and `npm run test:py`. The new tests fail because `src/ap-client.ts` and `httpx` do not exist yet. Then ask it to commit the failing tests.
 3. Send:
 
