@@ -183,7 +183,15 @@ Constraints: Grade only. Do not rewrite the document, and do not
    ```
 
 2. The AI names the files in the zip, and opens your two documents. Then it shows the source files, one line each, numbered 1 to 7: the six files in `sources/`, and Maria's decisions. Then it shows Maria's brief whole. Maria's brief is the brief the worker received.
-3. The AI shows Maria's brief one part at a time, each line numbered, and asks which lines you will check. For each line, answer its number, then "yes, against" and the file or files you will check it against, or "no". The AI writes each "yes" in your Review Contract as a check, with its letter.
+3. The AI shows Maria's brief one part at a time, each line numbered, and asks which lines you will check. For each line, answer its number, then "yes, against" and the file or files you will check it against, or "no". The AI writes each "yes" in your Review Contract as a check, with its letter. Each letter matters later. In Tasks 2 to 8, `Review:` runs that check exactly as you wrote it, against the file it names. A check that names no file looks only inside the package.
+
+   Here is one check from another job, a caterer's brief, so it gives nothing away. The menu is the work being checked, and the recipes decide what is in each dish, so the check runs against the recipes.
+
+   > AI: 4. "Every dish with nuts is marked on the menu." Will you check this line, and against which file?
+   >
+   > You: 4, yes, against the recipes
+   >
+   > AI, in the Review Contract: A. "Every dish with nuts is marked on the menu." Checked against: the recipes.
 4. The AI asks, one at a time, what evidence the worker must hand back, what tests the package must pass, and when the worker should have stopped and asked. Answer each in a few words.
 5. The AI shows the four review depths from [6.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/agree-the-checks/), and what the package holds. Answer how deep this review goes, and who signs.
 6. The AI asks which lines of your contract Maria's brief must carry, and whether anything else needs a check. Answer with the letters, a few words, or "no".
