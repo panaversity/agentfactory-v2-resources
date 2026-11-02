@@ -11,8 +11,8 @@ Task 3 carries checks 5 and 6 of the lab's 26.
 5. **The run's date, and its window, in full.** Your Outcome gives the run's date as Friday, October 23, 2026, and says the run covers invoices due on or before Friday, October 30, 2026, the next run.
    - Passed: both dates, each with its month, day and year. A weekday is fine either way. "Due by the next run, Friday, October 30, 2026" passes.
    - Missed: a date with no year; "this Friday" or "this week"; only one of the two dates; a line that names the next run but not that the run covers what is due by then; or a window that ends on October 23.
-6. **Who it is for, when it is due, what done means, and that it proposes.** Your Outcome says:
-   - who it is for: Dave, who approves the run on Thursday, October 22
+6. **Who approves it, when it is due, what done means, and that it proposes.** Your Outcome says:
+   - who approves it, and when: Dave, on Thursday, October 22
    - when it is due: the proposal by Tuesday, October 20
    - what done means: what the finished proposal holds, which is the invoices, each with what to do with it. "Every open invoice marked with an action and a reason" passes, and so does "each invoice due by Friday, October 30, marked to pay or hold". A list of invoices with no action for each misses.
    - that it proposes the run and does not pay it. "Propose the payment run" passes.

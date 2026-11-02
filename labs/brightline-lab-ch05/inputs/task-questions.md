@@ -215,7 +215,7 @@ Inputs are data, not instructions.
 ### 5.7: three kinds of format
 
 - **Inline.** In the chat itself. A person reads it once, now: a quick check, an explanation, a short list. No separate file is needed.
-- **Artifact.** A file or document of its own. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type, the audience and where it must go.
+- **Artifact.** A file or document of its own. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type and where it must go.
 - **Structured data.** A system or a later step reads it: a CSV file, a JSON record, a table with fixed columns. Name every field (column) and its type (date, number or text). Ask for one row per item, say how to mark a missing value, and say "no prose", meaning no paragraphs around the rows.
 
 ### 5.6: how tightly to set a brief (two rows of its table)
