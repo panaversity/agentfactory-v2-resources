@@ -9,12 +9,12 @@ The answers for Task 5 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 Task 5 carries checks 9 and 10 of the lab's 26.
 
 9. **A CSV Maria can check row by row.** Your Format asks for:
-   - a CSV, or a table with fixed columns, with one row per invoice: every open invoice, or every invoice in the run. Task 11 grades all 15 rows.
+   - a CSV, or a table with fixed columns, with one row for every open invoice, including those not paid in this run
    - each row tied to the invoice list's row_id, or to another way to tell apart two rows with the same invoice number, such as the date received
    - how to mark a value the worker cannot fill, such as a blank with its reason, or "MISSING" (Lesson 5.7)
    - no prose around the rows
    - Passed: all four. The policy section on each row comes with Maria's columns in Task 7.
-   - Missed: any one missing, such as the columns from Lesson 5.7 with no row_id.
+   - Missed: any one missing, such as the columns from Lesson 5.7 with no row_id; or one row only for each invoice in the run, because Task 11 grades all 15 open invoices, those not yet due included.
 10. **A memo for Dave, decisions first, a note to Maria, and where each goes.** Your Format asks for:
     - a one-page memo for Dave that starts with the decisions he must make
     - a short note in the chat, a few lines, saying what was held and why. It is for Maria, and it need not name her.
