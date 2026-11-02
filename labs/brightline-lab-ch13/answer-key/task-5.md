@@ -24,6 +24,4 @@ E   ModuleNotFoundError: No module named 'brightline_ap.due_date'
 
 You may split the nine cases into more tests or fewer. The authors put them into five tests in each language: each term in the data, a month end, a year end, a leap day, and unknown terms.
 
-## Impossible dates (step 4)
-
-Once the code exists, Python refuses `2026-02-30` with a `ValueError`. Its words depend on the Python version, such as `day is out of range for month` on Python 3.13, or `day 30 must be in range 1..28 for month 2 in year 2026` on Python 3.14. In TypeScript, `new Date("2026-02-30T00:00:00Z")` becomes March 2 with no error, so `dueDate("2026-02-30", "Due on receipt")` returns `2026-03-02`. The core path leaves this to Chapter 14's schemas. For the extension, the TypeScript function can check that the date it built prints back as the same text it was given.
+Impossible dates, such as `2026-02-30`, are tried in Task 7, step 4, and Task 7's key has the answer.
