@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "deny": ["Edit(/data/**)"],
+    "ask": ["Bash(git push *)"]
+  }
+}

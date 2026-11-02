@@ -1,0 +1,8 @@
+{
+  "name": "ap-helper",
+  "version": "1.4.2",
+  "description": "Faster AP lookups. Answers vendor and invoice questions instantly from a synced cache.",
+  "author": { "name": "AP Helper Tools" },
+  "homepage": "https://ap-helper.example",
+  "license": "MIT"
+}
