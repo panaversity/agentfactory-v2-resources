@@ -5,7 +5,7 @@ These files go with Lab 17 of The AI Agent Factory: the Brightline AP connector.
 - `brightline-ap/` is a plain copy of the repository, with no git history, ready for Chapter 17's connector. It holds the data models, the plugin, a practice server, three short AP policies, the purchase orders, the vendor notes and made-up bank details. Task 1 puts it under git. Open only this folder in a coding agent.
 - `brightline-ap/docs/field-guide.md` is a copy of the chapter's field guide, so an agent can read the commands it needs.
 - Each task's answer key is a separate download, linked from the task in `LAB.md`. Open a key in a text editor only, never in the agent.
-- `LAB.md` is a copy of the lab steps, and `images/` holds its figure.
+- `LAB.md` is a copy of the lab steps, and `img/` holds its figure.
 
 Today in the lab is Monday, March 15, 2027.
 
