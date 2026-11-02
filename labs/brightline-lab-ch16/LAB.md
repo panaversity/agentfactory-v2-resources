@@ -2,7 +2,7 @@
 
 Chapter 16 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 16: the Brightline AP plugin v0.1](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/lab/), so you can do the lab without the book.
 
-*Time: about 8 hours 15 minutes, in three sittings, plus an optional hour at work for Task 21. The core path is about 6 hours 40 minutes. Lab files: `brightline-lab-ch16.zip`, standalone. The same steps are in `LAB.md` inside the zip.*
+*Time: about 8 hours 15 minutes, in three sittings, plus an optional hour at work for Task 21. The main route is about 6 hours 40 minutes. Lab files: `brightline-lab-ch16.zip`, standalone. The same steps are in `LAB.md` inside the zip.*
 
 ### Before you start
 
@@ -21,7 +21,7 @@ Chapter 16 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 **You need no earlier chapter or lab.** The zip holds a complete, working repository. Where a task uses an idea from an earlier chapter, it explains it in place.
 
-**The core path and the extensions.** The core path is Tasks 1 to 11, then Tasks 14 to 16, then one port, Task 18 or Task 20, and the last three steps of Task 20: the notes, the tag and the clean-up. It builds, ships and ports the plugin. Tasks 12, 13, 17 and 19, the second port, and Task 21 deepen what you built, so come back to them when you can.
+**The main route and the extras.** The main route is Tasks 1 to 11, then Tasks 14 to 16, then one port, Task 18 or Task 20, and the last three steps of Task 20: the notes, the tag and the clean-up. It builds, releases and ports the plugin. Tasks 12, 13, 17 and 19, the second port, and Task 21 deepen what you built, so come back to them when you can.
 
 For a reader [without a paid Claude plan](#without-a-paid-claude-plan), see the section near the end of this page.
 
@@ -44,7 +44,7 @@ The commands, menus and settings for each product are in [16.10](https://agentfa
 
 ### The job
 
-Ana Morales, Brightline's AP analyst, wants the Monday triage done the same way by everyone, in whatever AI tool they use, with the numbers from tested code and her rules in one place. She wrote the rules. You direct coding agents to turn them into tests, an engine, three skills and a plugin, ship it through review, and put the same skills in six places: Claude Code, Claude chat and Cowork, Codex and ChatGPT, and OpenCode. You also read a plugin a colleague forwarded, before anyone installs it. Then, in Task 21, you use the same steps on a job from your own work.
+Ana Morales, Brightline's AP analyst, wants the Monday triage done the same way by everyone, in whatever AI tool they use, with the numbers from tested code and one reviewed set of rules. She wrote the rules. You direct coding agents to turn them into tests, an engine, three skills and a plugin, ship it through review, and put the same skills in six places: Claude Code, a Claude chat and a Claude task, Codex and ChatGPT, and OpenCode. Where a Claude account has chat and tasks in one conversation, that is five places. You also read a plugin a colleague forwarded, before anyone installs it. Then, in Task 21, you use the same steps on a job from your own work.
 
 ### How each task works
 
@@ -61,9 +61,9 @@ For each task:
 
 The four checks are `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`. Every number in your notes comes from a command's output. Keep `NOTES.md` and `ports/ch16.md` out of task commits until Task 20.
 
-The prompts in quote boxes are starting points. Send each one as written the first time, then correct the agent in your own words when it goes wrong. Those corrections are the skill this lab teaches, so note the important ones in `NOTES.md`.
+The prompts in quote boxes are starting points. Send each one as written the first time, then correct the agent in your own words when it goes wrong. Those corrections are what this lab teaches, so note the important ones in `NOTES.md`.
 
-![How each task works, and the shape of the lab. On the left, a loop of four steps. Predict, where you write what should happen. Direct, where you send the prompt and the agent writes. Review, where you read every change and every command. Check, where you run the checks and compare. A note says every number in your notes comes from a command. On the right, the lab's four parts in order. Sitting 1, build, is a first skill, rules into tests, the engine, three skills, the plugin and a connector. Sitting 2, ship, is GitHub, version, catalog, checks, telemetry, a stranger's plugin and the pull request. Sitting 3, port, is the same skills in six places, built by three coding agents. At work is your own job, your own expert and the same steps.](img/lab-loop.png)
+![How each task works, and the shape of the lab. On the left, a loop of four steps. Predict, where you write what should happen. Direct, where you send the prompt and the agent writes. Review, where you read every change and every command. Check, where you read what the checks print, and compare. A note says every number in your notes comes from a command. On the right, the lab's four parts in order. Sitting 1, build, is a first skill, rules into tests, the engine, three skills, the plugin and a connector. Sitting 2, ship, is GitHub, version, catalog, checks, telemetry, a stranger's plugin and the pull request. Sitting 3, port, is the same skills in six places, built by three coding agents. At work is your own job, your own expert and the same steps.](img/lab-loop.png)
 
 *Figure 16.16. The agent writes. You predict, direct, review and check, in every task.*
 
@@ -87,7 +87,7 @@ Read Concepts [16.1](https://agentfactory2.panaversity.org/building-ai-workers/s
    > Please read `README.md`, `AGENTS.md` and `REVIEW.md`, and list the files in `src/`, `tests/`, `data/` and `.claude/skills/`. Explain in about ten lines what this repository does, what its four checks are, which rules every agent here must follow, and what the `due-by-friday` skill does. Change nothing.
 
    Check its answer against `README.md`. `AGENTS.md` is the repository's standing instructions to every coding agent, and Claude Code reads it through `CLAUDE.md`.
-5. *Your first skill.* In the same session, type `/due-by-friday 2027-03-12` and send it. Predict first: the agent asks to run `npm run due -- 2027-03-12`, then `npm test`, and reports 13 invoices, $43,833.63, with every test passing. Approve the commands, then compare its reply with what the commands printed. That is a skill at work: a short instruction file you started by name, and a number that came from tested code, not from the model. By Task 8 you will have three skills packaged as a plugin.
+5. *Your first skill.* In the same session, type `/due-by-friday 2027-03-12` and send it. Predict first: the agent asks to run `npm run due -- 2027-03-12`, then `npm test`, and reports 13 invoices, $43,833.63, with every test passing. These are open invoices in the AP export, a different 13 from the new batch you meet in Task 3. Approve the commands, then compare its reply with what the commands printed. That is a skill at work: a short instruction file you started by name, and a number that came from tested code, not from the model. By Task 8 you will have three skills packaged as a plugin.
 
 **Checkpoint:** four checks pass, the agent's summary matches `README.md`, and the skill's answer, 13 invoices, $43,833.63, matches the command's output.
 
@@ -99,12 +99,12 @@ Read Concepts [16.1](https://agentfactory2.panaversity.org/building-ai-workers/s
 
 In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
-1. Read the weekly invoice export.
-2. Work out each invoice's due date.
-3. Sort a batch into the four piles and write the Monday report.
-4. Look up a vendor's bank details in the accounting system.
-5. Never edit anything in `data/`.
-6. Stop before a payment is scheduled until a person approves.
+1. Read the new batch file.
+2. Work out which invoices are due within three days of the run date.
+3. Write the Monday report in the shape the AP team reads.
+4. Check a vendor's tax form in the purchasing system.
+5. Never change a vendor's terms in `data/vendors.csv`.
+6. Read two years of old statements to find one vendor's past disputes, without crowding this session.
 
 **Checkpoint:** your pieces match the answer key's table, or you can say why yours would also be reliable.
 
@@ -119,7 +119,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
    > Please read `docs/ap-triage-rules.md`. Write `tests/triage.test.ts` for a function `triage(invoice, vendors, runDate, seen)` in `src/triage.ts`, using the `Invoice` and `Vendor` types from `src/schemas.ts`, where `seen` holds the AP export (`ledger`) and the invoices `earlier` in the same batch. It returns `{ pile, reason?, due }`, with pile one of "exception", "needs approval", "urgent", "ready". Write one test per rule and one per case in the sheet's table, with run date 2027-03-08. Add a test for a function `triageBatch(batch, vendors, ledger, runDate)` that returns `counts` and `totals` in cents per pile, but do not fill in the expected numbers for the intake batch. Take every expected value from the rules sheet only. Do not write `src/triage.ts`. Show me the tests before you write them.
 
-3. Work out the batch test's expected numbers yourself. This is the expert's check: the one time in this lab you sort and add, so the engine has an independent answer to match. Allow twenty minutes. First send:
+3. Work out the batch test's expected numbers yourself. This is the expert's check: you sort and add yourself, so the engine has an independent answer to match. Allow twenty minutes. First send:
 
    > Please print a table of the 13 rows of `data/invoices-intake.csv`, in file order: the invoice number, the vendor id, the invoice's terms, that vendor's terms in `data/vendors.csv`, whether the number is already in `data/invoices.csv`, the amount in cents, and the due date. Where the due date is blank, get it from `dueDate` in `src/due-date.ts`. Do not decide any pile.
 
@@ -137,7 +137,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
 1. Send:
 
-   > Please write `src/triage.ts` so the tests in `tests/triage.test.ts` pass. Use `dueDate` from `src/due-date.ts` for a blank due date. Put the $5,000.00 limit and the three days in named constants. Add `npm run triage -- <batch.csv> <run date>` that prints each pile with its count and total and each invoice with its reason, and ends with a line in the form `N invoices: N exception, N needs approval, N urgent, N ready`. Give it a `--json` option. Do not change any test.
+   > Please write `src/triage.ts` so the tests in `tests/triage.test.ts` pass. Use `dueDate` from `src/due-date.ts` for a blank due date. Put the $5,000.00 limit and the three days in named constants, `CONTROLLER_LIMIT_CENTS` and `URGENT_DAYS`. Add `npm run triage -- <batch.csv> <run date>` that prints each pile with its count and total and each invoice with its reason, and ends with a line in the form `N invoices: N exception, N needs approval, N urgent, N ready`. Give it a `--json` option. Do not change any test.
 
 2. Ask the agent to run `git diff HEAD -- tests`. It must print nothing, because no test changed.
 3. Ask the agent to run the four checks, then `npm run triage -- data/invoices-intake.csv 2027-03-08`. Then ask it to commit.
@@ -153,7 +153,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 1. Send: "Please create `plugin/skills/invoice-triage/`, and copy `docs/ap-triage-rules.md` into its `references/` folder, unchanged."
 2. Send:
 
-   > Please write `plugin/skills/invoice-triage/scripts/triage.py`, a standard-library-only Python copy of `src/triage.ts`, with `--intake`, `--vendors`, `--ledger`, `--run-date` and `--json`, for hosts with no repository. Then add `tests/triage-parity.test.ts`, which runs it with `--json` on the intake batch and checks that its counts, totals and piles equal `triageBatch`'s. Run `npm test`.
+   > Please write `plugin/skills/invoice-triage/scripts/triage.py`, a standard-library-only Python copy of `src/triage.ts`, with `--intake`, `--vendors`, `--ledger`, `--run-date` and `--json`, for hosts, the products that load a skill, that have no repository. Then add `tests/triage-parity.test.ts`, which runs it with `--json` on the intake batch and checks that its counts, totals and piles equal `triageBatch`'s. Run `npm test`.
 
 3. Have the agent draft `SKILL.md` with you, playing Ana:
 
@@ -164,11 +164,15 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 5. Send: "Please add `py/brightline_ap/triage.py`, a Python version of the engine using `due_date`, and `py/tests/test_triage.py` with the same rules and the batch's counts and totals. Run `npm run test:py` and `npm run check:py`."
 6. A report is useful later only if it says which copy made it. Send:
 
-   > Please make both tools read `metadata.version` and `metadata.policy` from the skill's `SKILL.md`, and print them on the first line, such as `Triage for run date 2027-03-08, brightline-ap 0.1.0, AP policy v3`. `src/triage.ts` reads `plugin/skills/invoice-triage/SKILL.md`, and `scripts/triage.py` reads the `SKILL.md` in its own skill folder, so it still works when the skill is copied. Add them as `labels` in the `--json` output, and make the parity test compare them. Then add `tests/triage-rules-sheet.test.ts`, which fails unless rule 4 in `docs/ap-triage-rules.md` names the same dollar amount as `CONTROLLER_LIMIT_CENTS`. Run `npm test`.
+   > Please make both tools read `metadata.version` and `metadata.policy` from the skill's `SKILL.md`, and print them on the first line, such as `Triage for run date 2027-03-08, brightline-ap 0.1.0, AP policy v3`. `src/triage.ts` reads `plugin/skills/invoice-triage/SKILL.md`, and `scripts/triage.py` reads the `SKILL.md` in its own skill folder, so it still works when the skill is copied. Add them as `labels` in the `--json` output, and make the parity test compare them. Run `npm test`.
+
+7. Nothing yet notices if the sheet or one copy of its rule moves alone. Send:
+
+   > Please add `tests/triage-rules-sheet.test.ts`, which fails unless every dollar amount in rule 4 of `docs/ap-triage-rules.md` equals `CONTROLLER_LIMIT_CENTS` in each of `src/triage.ts`, the skill's `scripts/triage.py` and `py/brightline_ap/triage.py`, and unless the policy on the sheet's source line equals the skill's `metadata.policy`. Run `npm test`.
 
    Then ask the agent to commit.
 
-**Checkpoint:** the parity and sheet tests pass, the skill uses only the six fields, every number it mentions comes from a script it names, and the tool's first line names `brightline-ap 0.1.0` and `AP policy v3`.
+**Checkpoint:** the parity test, which checks that the two copies agree, and the sheet test both pass, the skill uses only the six fields, every number it mentions comes from a script it names, and the tool's first line names `brightline-ap 0.1.0` and `AP policy v3`.
 
 **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch16-key-task-5.md).
 
@@ -228,7 +232,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 1. Ask the agent for the connector in both formats, then ask it to commit:
    - `plugin/mcp.json` (the core): a `stdio` server named `apdata` that runs `npx -y @modelcontextprotocol/server-filesystem@2.1.0 ./data`, with the same `$schema` version as `plugin.json`.
    - `plugin/.mcp.json` (Claude's file): the same server, with the folder taken from a `userConfig` option in `.claude-plugin/plugin.json` named `data_folder`, of type `directory`, with a title, a description and the default `./data`.
-2. Read the server's tool list in [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-what-a-plugin-bundles). Four tools write: `write_file`, `edit_file`, `create_directory` and `move_file`. The plugin cannot remove them. Ask the agent to add four deny rules to `.claude/settings.json`, using the names in 16.10, such as `mcp__plugin_brightline-ap_apdata__write_file`.
+2. Read the server's tool list in [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#make-a-connector-read-only). Four tools write: `write_file`, `edit_file`, `create_directory` and `move_file`. The plugin cannot remove them. Ask the agent to add four deny rules to `.claude/settings.json`, using the names in 16.10, such as `mcp__plugin_brightline-ap_apdata__write_file`. Then ask it to commit.
 3. In the terminal, at the root of `brightline-ap`, start a new session with `claude --permission-mode manual --plugin-dir ./plugin`. Nothing asks for the data folder here, because this kind of session shows no dialog, so the default `./data` applies, counted from the folder you started in. Ask: "Using the apdata connector only, list the folders it may read, then list the files in that folder."
 4. Predict first, then ask: "Using the apdata connector, write a file named test.txt in the data folder." A deny rule that names a tool removes it from what the agent can see, so the agent should say it has no such tool. Its refusal alone proves nothing, because `AGENTS.md` also forbids the write. So ask: "Please list the apdata connector's tools." Then look in `data/` yourself.
 5. **Keep the connector read-only everywhere.** The connector can write files, and the plugin cannot stop that. Each product's settings can. Before you use the plugin in any new place, deny or block its four write tools there first. The tasks remind you each time.
@@ -249,8 +253,8 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 1. Ask the agent to run `git status`. On `triage`, only `NOTES.md` may show as changed. Everything else is committed.
 2. *Sign in yourself.* In the terminal, never through the agent's chat, type `gh auth login`, and answer its questions. Check with `gh auth status`.
-3. Send: "Please switch to `main`, create a public GitHub repository from this folder with `gh repo create brightline-ap --public --source . --remote origin`, and push `main` with `git push -u origin main`. This first push creates `main` on GitHub, so the rule against pushing to `main` starts after it. Do not push `triage` yet." `--public` is for this lab only: on a free account, rulesets, branch protection and code owners work only on public repositories, and everything in Brightline is made up.
-4. Make your first pull request. Send: "Please make a branch called `setup` from `main`, and replace `@your-github-name` in `.github/CODEOWNERS` with `@<your GitHub name>`. Commit it, push the branch, and open a pull request with `gh pr create --fill`." The three checks, `checks`, `tests-unchanged` and `no-secrets`, run on it. Wait until they are green.
+3. Send: "Please switch to `main`, create a public GitHub repository from this folder with `gh repo create brightline-ap --public --source . --remote origin`, and push `main` with `git push -u origin main`. This first push creates `main` on GitHub, so the rule against pushing to `main` starts after it. Do not push `triage` yet." `--public` is for this lab only: on a free account, rulesets, branch protection and code owners work only on public repositories,[^github-rulesets] and everything in Brightline is made up.
+4. Make your first pull request. Send: "Please make a branch called `setup` from `main`, and replace `@your-github-name` in `.github/CODEOWNERS` with `@<your GitHub name>`. Commit it, push the branch, and open a pull request with `gh pr create --fill`." GitHub reads that file from the pull request's base branch, and the last matching line wins.[^github-codeowners] The three checks, `checks`, `tests-unchanged` and `no-secrets`, run on it. Wait until they are green.
 5. Protect `main`, yourself, on GitHub. Open the repository's *Settings*, then *Rulesets* under *Code, planning, and automation* (some pages still say *Rules*), then *New ruleset*, *New branch ruleset*. Name it `main`, set *Enforcement status* to *Active*, and target the default branch. Turn on:
    - *Restrict deletions* and *Block force pushes*
    - *Require a pull request before merging*, with 1 approval, dismiss stale approvals, require review from Code Owners, and require conversation resolution
@@ -270,7 +274,7 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 1. Ask the agent for `plugin/CHANGELOG.md` with an entry for 0.1.0, dated March 8, 2027: what was added, including the connector's pinned version and where its write tools are denied.
 2. Ask for `.claude-plugin/marketplace.json` at the repository root: a catalog named `brightline` with one plugin, `brightline-ap`, from `./plugin`, with no `version` in the entry. `plugin.json` holds the version, and Anthropic says not to set it in both.
-3. Send: "Please commit, push the branch, and clone it into a new folder next to this one, called `ch16-install`. From that clone's root, run `npm ci`, then `claude plugin marketplace add ./ --scope local`, then `claude plugin install brightline-ap@brightline --scope local`." Local scope installs it for you, in that clone only. The second command says one option is not yet set. The default applies, so go on.
+3. Send: "Please commit, push the branch, and clone it into a new folder next to this one, called `ch16-install`. From that clone's root, run `npm ci`, then `claude plugin marketplace add ./ --scope local`, then `claude plugin install brightline-ap@brightline --scope local`." The agent may ask before it runs commands in that folder. It is your own clone, so allow them. Local scope installs it for you, in that clone only. The second command says one option is not yet set. The default applies, so go on.
 4. Open a new *Code* tab session in the clone's root, so its `.claude/settings.json` denies the connector's write tools and the data folder is the clone's. Run `/brightline-ap:ap-triage data/invoices-intake.csv 2027-03-08`. Never use the plugin in a folder whose settings do not deny the write tools.
 
 5. Back in your first session, send: "From `ch16-install`, please run `claude plugin uninstall brightline-ap@brightline --scope local`, then `claude plugin marketplace remove brightline`." Later tasks use the folder.
@@ -283,7 +287,7 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 *Goal:* four test cases you can run before every release ([16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)).
 
-1. Ask the agent for `evals/README.md`, at the repository root and not inside `plugin/`, with four cases: the intake batch for March 8, 2027, the same batch for March 11, a batch with a missing run date, and the Monday report's first line. Predict the first two from your Task 4 output, then check them with `npm run triage`. The third should end in a question, not a guess. The fourth should name `brightline-ap 0.1.0` and `AP policy v3`.
+1. Ask the agent for `evals/README.md`, at the repository root and not inside `plugin/`, with four cases: the intake batch for March 8, 2027, the same batch for March 11, a batch with a missing run date, and the Monday report's first line. Predict the first two with the rules, then check them with `npm run triage`. The third should end in a question, not a guess. The fourth should name `brightline-ap 0.1.0` and `AP policy v3`.
 2. Run the cases by hand in a new session, twice each. If you would rather have a machine run them, `claude plugin eval init <name>`, run from `plugin/`, writes a suite under `plugin/evals/`, so those cases ship inside the plugin. It needs Claude Code 2.1.269 or later, and its runs count toward your plan or API bill.
 3. Record the results in `NOTES.md`, and ask the agent to commit `evals/README.md`.
 
@@ -328,14 +332,30 @@ From here on, changes reach `main` only through a pull request that passes the c
 1. Ask the agent to add `jsonschema` and `pyyaml`, pinned, to the `dev` group in `py/pyproject.toml`, then to run `uv lock` and `uv sync` in `py/`. The checks on GitHub install with `--locked`, so a missing lock entry would fail the job.
 2. Send:
 
-   > Please write `scripts/check_plugin.py`, run with `npm run check:plugin` through `py/`'s environment, that fails when: `plugin/plugin.json` or `plugin/mcp.json` breaks the Agent Plugins 1.0.0 schemas in `schemas/agent-plugins/1.0.0/`, `mcp.json` names a different specification version from `plugin.json`, any skill in `plugin/skills/` uses a field outside the six specification fields, breaks the name rules, has a name that differs from its folder, has a description outside 1 to 1,024 characters, or has `SKILL.md` of 500 lines or more, a skill's `metadata.version` differs from the manifest's, a rules sheet in a skill's `references/` differs from its copy in `docs/`, the Claude manifest's name or version differs from the core's, or `CHANGELOG.md` has no entry for the version. It must exit 2, not pass, if it cannot find the folders. Add tests in `py/tests/` that copy the plugin and break each rule once. Also write `scripts/check-version-moved.sh <base branch>`, which fails when `plugin/` changed since that branch and `plugin.json`'s version did not, passes when the plugin is new on the branch, and exits 2 if it cannot find the branch. Then add a `plugin-valid` job to `ci.yml`, with `fetch-depth: 0`, that runs both. In the same job, add a step that runs the standard's own `skills-ref validate` on each skill, installed from the agentskills repository at a pinned commit, with `continue-on-error: true`, so it reports but does not block until someone has seen it pass on GitHub. Your own check blocks.
+   > Please write `scripts/check_plugin.py`, run with `npm run check:plugin` through `py/`'s environment. It must exit 2, not pass, if it cannot find the folders. It must fail when:
+   >
+   > - `plugin/plugin.json` or `plugin/mcp.json` breaks the Agent Plugins 1.0.0 schemas in `schemas/agent-plugins/1.0.0/`, or `mcp.json` names a different specification version from `plugin.json`
+   > - a skill in `plugin/skills/` uses a field outside the six specification fields, breaks the name rules, has a name that differs from its folder, has a description outside 1 to 1,024 characters, or has a `SKILL.md` of 500 lines or more
+   > - a skill's `metadata.version` differs from the manifest's, the Claude manifest's name or version differs from the core's, or `CHANGELOG.md` has no entry for the version
+   > - a rules sheet in a skill's `references/` differs from its copy in `docs/`
+   >
+   > Add tests in `py/tests/` that copy the plugin and break each rule once.
 
-3. Test the check. Ask the agent to add `disable-model-invocation: true` to `ap-triage`'s frontmatter, run `npm run check:plugin`, show you the failure, and remove the line.
-4. Ask the agent to add the plugin's code-running and configuration paths, `docs/ap-triage-rules.md` and each skill's `references/` to `.github/CODEOWNERS`, and the plugin's risk tiers to `REVIEW.md`: skills and the changelog medium, and scripts, manifests, connector files, catalogs, settings and the rules sheets high.
-5. Ask the agent to open the pull request, with the template filled in.
-6. Start a new session in the *Code* tab, so the reviewer has not seen the build, and send: "Please review the open pull request against `REVIEW.md` from `main`. Change nothing. List findings by risk tier, each with a file, a line and the input that would make it go wrong."
-7. Fix each real finding by directing the agent in your build session, push, resolve each conversation, and merge on GitHub.
-8. Add `plugin-valid` to the ruleset's required checks. Read the `skills-ref` step's output in the job's log. If it passed, note it in `NOTES.md`, and a later pull request can make it blocking.
+   You do not need to follow every line of the script. Review what it promises: ask the agent to show each rule beside the test that breaks it. The limit and the policy are not on this list, because Task 5's sheet test already compares them, and the `checks` job runs it.
+3. Send:
+
+   > Please write `scripts/check-version-moved.sh <base branch>`, which fails when `plugin/` changed since that branch and `plugin.json`'s version did not, passes when the plugin is new on the branch, and exits 2 if it cannot find the branch.
+
+4. Send:
+
+   > Please add a `plugin-valid` job to `ci.yml`, with `fetch-depth: 0`, that runs both checks. In the same job, add a step that runs the standard's own `skills-ref validate` on each skill, installed from the agentskills repository at a pinned commit, with `continue-on-error: true`, so it reports but does not block until someone has seen it pass on GitHub. My own check blocks.
+
+5. Test the check. Ask the agent to add `disable-model-invocation: true` to `ap-triage`'s frontmatter, run `npm run check:plugin`, show you the failure, and remove the line.
+6. Ask the agent to add the plugin's code-running and configuration paths, `docs/ap-triage-rules.md` and each skill's `references/` to `.github/CODEOWNERS`, and the plugin's risk tiers to `REVIEW.md`: skills and the changelog medium, and scripts, manifests, connector files, catalogs, settings and the rules sheets high.
+7. Ask the agent to open the pull request, with the template filled in.
+8. Start a new session in the *Code* tab, so the reviewer has not seen the build, and send: "Please review the open pull request against `REVIEW.md` from `main`. Change nothing. List findings by risk tier, each with a file, a line and the input that would make it go wrong."
+9. Fix each real finding by directing the agent in your build session, push, resolve each conversation, and merge on GitHub.
+10. Add `plugin-valid` to the ruleset's required checks. Read the `skills-ref` step's output in the job's log. If it passed, note it in `NOTES.md`, and a later pull request can make it blocking.
 
 **Checkpoint:** merged, with `checks`, `tests-unchanged`, `no-secrets` and `plugin-valid` green, and `plugin-valid` required. Ask the agent to run `git switch main` and `git pull`.
 
@@ -355,19 +375,19 @@ Dave Kowalski, the controller, has been thinking of raising his limit to more th
    > Please run `npm test`, `npm run test:py`, `npm run check:plugin`, `bash scripts/check-tests-unchanged.sh main` and `bash scripts/check-version-moved.sh main`, and tell me only which failed, with each one's message.
 
 5. Send these changes, in order:
-   - "In `docs/ap-triage-rules.md`, please change rule 4 to more than $10,000.00, with exactly $10,000.00 not counting, its two boundary cases to $10,000.01 and $10,000.00, and the source line to: Rule 4's limit comes from AP policy v4, section 4.1. This is a rehearsal: Dave has not decided."
+   - "In `docs/ap-triage-rules.md`, please change rule 4 to more than $10,000.00, with exactly $10,000.00 not counting, its two boundary cases to $10,000.01 and $10,000.00, and the source line to `Rule 4's limit comes from AP policy v4, section 4.1. This is a rehearsal: Dave has not decided.`"
    - "Please copy that sheet over the one in the skill's `references/`."
    - "Please change the rule 4 tests and the batch test to the new limit, in both languages, with my counts and totals." Paste yours under it.
    - "Please change the limit in `src/triage.ts`."
    - "Please change the limit in the skill's `scripts/triage.py`."
    - "Please change the limit in `py/brightline_ap/triage.py`."
 6. `tests-unchanged` refused your edited tests, which is its job. Send: "Please run `ALLOW_TEST_CHANGES=true bash scripts/check-tests-unchanged.sh main`." On GitHub, the `tests-changed` label gives that setting. In `NOTES.md`, write the reason a pull request would give, naming AP policy v4.
-7. The version check has been red since the second change. Finish the release one step at a time, with the same checks after each:
+7. The sheet test is still red, because the sheet says AP policy v4 and the skill says v3. The version check has been red since the second change, and it asks only that the version moves. The number is yours to choose. Finish the release one step at a time, with the same checks after each:
    - "In the skill's `metadata`, please set `version` to 1.0.0 and `policy` to AP policy v4."
    - "Please set `version` to 1.0.0 in both manifests."
-   - "Please add a 1.0.0 entry to `plugin/CHANGELOG.md`, naming AP policy v4."
+   - "Please add a 1.0.0 entry dated 2027-03-08 to `plugin/CHANGELOG.md`, naming AP policy v4."
 
-   In `NOTES.md`, say why this is the third row of the table in [16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/#what-does-a-version-number-promise).
+   In `NOTES.md`, say why you chose 1.0.0 and not 0.1.1, using the third row of the table in [16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/#what-does-a-version-number-promise).
 8. Send: "Please run `npm run triage -- data/invoices-intake.csv 2027-03-08` here and in `ch16-install`, and show me the first and last line of each." Copy the four lines into `NOTES.md`.
 9. Send: "Please run `git switch main` and `git branch -D limit-change`, then run the triage again." `main` still says `brightline-ap 0.1.0`, `AP policy v3`, and the counts from Task 4. Nothing was pushed.
 
@@ -381,17 +401,17 @@ Read Concepts [16.7](https://agentfactory2.panaversity.org/building-ai-workers/s
 
 For each place, record three outcomes in `ports/ch16.md`, and keep them separate. *Loaded:* the product lists the three skills. *Ran:* the skill ran its tool or script, through the connector or with attached files. *Verified:* the triage counts for the intake batch on 2027-03-08 are 4, 2, 2 and 5, and the first line names the version it ran. Also note how a new version would reach that place, from [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/). A place where the skills loaded but did not run is a partial port, and you write it down as one. Some places may not run a script, and some plans may not offer plugins. That is a result too, not a failure of the lab.
 
-### Task 17. The Claude plugin in chat and Cowork (25 minutes)
+### Task 17. The Claude plugin in a chat and a task (25 minutes)
 
 *Goal:* the same plugin on two more Claude surfaces ([16.7](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/)).
 
 1. Install the plugin on your claude.ai account from your GitHub repository's catalog, or upload a zip of the `plugin/` folder. [The steps are in 16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles).
 2. Before any request, look under *Customize > Connectors*. If `apdata` is listed, set `write_file`, `edit_file`, `create_directory` and `move_file` to *Blocked*. A local connector may not list its tools there before it runs. If it does not, work in *Manual*, and decline every write. The plugin will also appear in Claude Code, where only a folder with the deny rules keeps them off.
 3. In Claude chat, with code execution on, attach `invoices-intake.csv`, `vendors.csv` and `invoices.csv`, and ask: "Triage the attached batch for run date 2027-03-08."
-4. In Cowork, in the desktop app, with the `brightline-ap` folder connected, ask which folders the apdata connector may read, then ask the same triage request. If your message box no longer shows Chat and Cowork, run this once in one conversation, and record one place.
+4. In a task in the desktop app, with the `brightline-ap` folder connected, ask which folders the apdata connector may read, then ask the same triage request. If your account has chat and tasks in one conversation, with no mode to choose, run this once, and record one place. On an account not moved over yet, the mode is called Cowork.
 5. In `ports/ch16.md`, record for each place which skills loaded, whether the connector loaded, which route the skill used, the repository or its own script, and the counts.
 
-**Checkpoint:** the skill loads in both. The local connector is skipped in chat. In Cowork it loads in a session on your computer, which Team and Enterprise plans can choose. On Pro, Max and Ultra, new tasks run in the cloud, so record whether it loaded. The counts are 4, 2, 2 and 5 wherever the script ran.
+**Checkpoint:** the skill loads in both. The local connector is skipped in chat. In a task it loads in a session on your computer, which Team and Enterprise plans can choose. On Pro, Max and Ultra, new tasks run in the cloud, so record whether it loaded. The counts are 4, 2, 2 and 5 wherever the script ran.
 
 **Check it now.** Download [Task 17's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch16-key-task-17.md).
 
@@ -430,7 +450,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Task 20. OpenCode builds its setup, and the tag (25 minutes)
 
-*Goal:* the same skills in an open-source agent, then the handover.
+*Goal:* the same skills in an open-source agent, then the handover. If Task 18 was your one port on the main route, skip steps 1 to 3 here.
 
 1. Open the repository in OpenCode. Before you send anything, turn auto-accept off for this project, under Settings, then Projects. Then send: "Please run `git switch main` and `git pull`, then make a new branch called `opencode-setup`."
 2. Send:
@@ -443,7 +463,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 6. Send: "Please run `git switch main` and `git pull`, then `git tag ch16` and `git push origin ch16`. Then clone the tag into a new folder next to this one, called `ch16-check`. In `ch16-check`, run `npm ci`, and `uv sync` in `py/`, then the four checks, `npm run check:plugin` and `npm run triage -- data/invoices-intake.csv 2027-03-08`, and show me what each one prints."
 7. Clean up. Uninstall the plugin from your claude.ai account. Ask the agent to run `codex plugin remove brightline-ap@brightline-openai`, then `codex plugin marketplace remove brightline-openai`, in that order, unless you will keep using them. Removing only the catalog leaves the skills loading from Codex's cache. If you keep them, keep the write tools blocked or denied in every place you use them.
 
-**Checkpoint:** the same counts in OpenCode, its write tools gone, the folder it really read written in your notes, the table complete for every place, and every check passing on `ch16` from a clean clone.
+**Checkpoint:** if you did this port, the same counts in OpenCode, its write tools gone, and the folder it really read written in your notes. On any route, the table complete for every place you used, and every check passing on `ch16` from a clean clone.
 
 **Check it now.** Download [Task 20's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch16-key-task-20.md).
 
@@ -476,7 +496,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 **Check it now.** Download [Task 21's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch16-key-task-21.md). It is a checklist, since the work is your own.
 
-*Domain expert and builder.* The expert owns the rules, the cases, the order and who acts on each result. The builder directs the agent and owns what it produces: the tests, the code, the skill and the plugin. The builder also makes sure every "never" is a setting.
+*Domain expert and builder.* The expert owns the rules, the cases, the order and who acts on each result. The builder directs the agent and owns what it produces: the tests, the code, the skill and the plugin. The builder also makes sure every "never" that must hold is a setting.
 
 ### If something goes wrong
 
@@ -493,7 +513,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 | The connector will not start on Windows | Ask the agent to start `npx` through `cmd /c`, as the server's README says |
 | The connector can write | The deny rules use the wrong tool names. Ask the agent to list the connector's tool names exactly as the product shows them |
 | `/plugin` says it is not available | It works in a session you start from a terminal, not in the *Code* tab |
-| Cowork skips the connector | Its folder option has no default, or the task runs in the cloud, not on your computer |
+| A task skips the connector | Its folder option has no default, or the task runs in the cloud, not on your computer |
 | Chat says it cannot run the script | Turn on code execution, and attach all three files |
 | Codex does not see the plugin | Check that `codex plugin list` says installed. If it says not installed, run `codex plugin add brightline-ap@brightline-openai`. Then restart the ChatGPT desktop app, trust the project, and start a new chat |
 | `codex plugin marketplace list` shows `brightline`, not `brightline-openai` | You added the folder before `.agents/plugins/marketplace.json` existed, so Codex used Claude's catalog. Remove `brightline`, and add the folder again |
@@ -505,13 +525,11 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Without a paid Claude plan
 
-Do Tasks 1 to 5, 7, 10 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) set first. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
-
-### Exam notes
-
-These notes are not part of the lab. CCDV-F, Anthropic's Claude Certified Developer: Foundations, asks about Claude and Claude Code only. It does not test Codex, ChatGPT, OpenCode, the Agent Plugins standard or any open-source tool by name. Where Claude differs from an open standard, the exam follows Claude's behavior: a Claude Code plugin's manifest is `.claude-plugin/plugin.json`, and Claude Code's own skill fields, such as `disable-model-invocation`, are correct answers about Claude Code even though the Agent Skills specification does not define them.
+Do Tasks 1 to 5, 7 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-from-a-prompt-to-a-skill) set first. Skip each step that runs the `claude` command. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
 
 ### Artifact checklist
+
+Tick what your route covered.
 
 - [ ] Your first skill's answer checked against the command (Task 1)
 - [ ] Your repository on GitHub, with `main` protected and the three checks required (Task 10)
@@ -519,10 +537,13 @@ These notes are not part of the lab. CCDV-F, Anthropic's Claude Certified Develo
 - [ ] `tests/triage.test.ts`, committed failing before `src/triage.ts`, and `npm run triage`
 - [ ] `plugin/skills/` with `invoice-triage`, `ap-triage` and `due-by-friday`, six fields each, none working out a date or number itself, the parity and sheet tests, and a first line that names the version and the policy
 - [ ] `plugin/plugin.json` and `plugin/mcp.json` (Agent Plugins 1.0.0), `plugin/.claude-plugin/plugin.json` and `plugin/.mcp.json`
-- [ ] The connector pinned at 2.1.0, and its write tools denied in `.claude/settings.json`, `.codex/config.toml` and `opencode.jsonc`, and blocked in claude.ai's connector settings for chat and Cowork
+- [ ] The connector pinned at 2.1.0, and its write tools denied in `.claude/settings.json`, `.codex/config.toml` and `opencode.jsonc`, and blocked in claude.ai's connector settings for chat and tasks
 - [ ] `plugin/CHANGELOG.md`, `.claude-plugin/marketplace.json` (catalog `brightline`), `.agents/plugins/marketplace.json` (catalog `brightline-openai`), and `evals/README.md`
 - [ ] Your decision on `exercises/ap-helper-plugin/`, with the line that decided it
 - [ ] `plugin-valid` as a required check, with its tests, the version check and its two Python dependencies locked
 - [ ] Your Task 16 notes: the two first lines, the two last lines, and every check that went red and what turned it green
-- [ ] `ports/ch16.md` with six places, each with loaded, ran and verified recorded separately, and how a new version reaches it, and tag `ch16`, checked from a clean clone
+- [ ] `ports/ch16.md` with each place you used, each with loaded, ran and verified recorded separately, and how a new version reaches it, and tag `ch16`, checked from a clean clone
 - [ ] Task 21, at work: your own tests, skill and plugin, built with an agent, with the owner's change recorded
+
+[^github-rulesets]: About rulesets, GitHub.
+[^github-codeowners]: About code owners, GitHub.

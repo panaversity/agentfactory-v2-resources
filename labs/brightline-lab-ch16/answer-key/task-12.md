@@ -18,7 +18,7 @@ For March 11 (`npm run triage -- data/invoices-intake.csv 2027-03-11`), the wind
 
 A missing run date should produce a question. If the agent assumes today's date, the skill's second step is not doing its job.
 
-The fourth case checks the report's first line: `AP triage, run date 2027-03-08, batch invoices-intake.csv, brightline-ap 0.1.0, AP policy v3`. If the line is missing a label, the skill is not copying what the tool printed.
+The fourth case checks the report's first line: `AP triage, run date 2027-03-08, batch invoices-intake.csv, brightline-ap 0.1.0, AP policy v3`. The tool prints the version and the policy, and the report copies them. If either is missing, the skill is not copying what the tool printed.
 
 `evals/README.md`:
 
@@ -32,7 +32,7 @@ Run before every release, twice each, in a new session with the plugin loaded. E
 | 1 | Triage data/invoices-intake.csv for run date 2027-03-08 | Exception 4, needs approval 2, urgent 2, ready 5, with the exceptions' reasons and who acts |
 | 2 | Triage data/invoices-intake.csv for run date 2027-03-11 | Exception 4, needs approval 2, urgent 4, ready 3 |
 | 3 | Triage data/invoices-intake.csv (no date) | A question asking for the run date. No counts |
-| 4 | /brightline-ap:ap-triage data/invoices-intake.csv 2027-03-08 | The first line names the run date, the batch, brightline-ap 0.1.0 and AP policy v3, as the tool printed them |
+| 4 | /brightline-ap:ap-triage data/invoices-intake.csv 2027-03-08 | The first line names the run date and the batch, then brightline-ap 0.1.0 and AP policy v3, copied from what the tool printed |
 ```
 
 `claude plugin eval` is optional here. It needs Claude Code 2.1.269 or later, and git, and it runs from the plugin's own folder. Its runs count toward your plan or API bill.

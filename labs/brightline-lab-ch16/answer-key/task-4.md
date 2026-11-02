@@ -37,7 +37,7 @@ READY: 5 invoices, $12,698.00
 
 The exceptions also show due dates. Rule order decides the pile, but the due date is still worth showing the AP lead.
 
-The limit is `> 500_000` cents, not `>=`, because exactly $5,000.00 does not count. `npm run triage` runs `node src/triage.ts`.
+The limit is `CONTROLLER_LIMIT_CENTS = 500_000`, compared with `>`, not `>=`, because exactly $5,000.00 does not count. The three days are `URGENT_DAYS = 3`. `npm run triage` runs `node src/triage.ts`.
 
 `src/triage.ts`:
 

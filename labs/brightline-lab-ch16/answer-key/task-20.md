@@ -73,13 +73,13 @@ A place where the skills loaded but did not run, or ran but gave other counts, i
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Claude Code | Claude Code | `.claude-plugin/plugin.json`, `.mcp.json` | | | | | |
 | Claude chat | Claude Code | Same, installed on claude.ai | | | | | |
-| Cowork | Claude Code | Same, installed on claude.ai | | | | | |
+| Claude task | Claude Code | Same, installed on claude.ai | | | | | |
 | Codex | Codex | `plugin.json`, `mcp.json` (Agent Plugins core) | | | | | |
 | ChatGPT | Codex | Same, through the marketplace | | | | | |
 | OpenCode | OpenCode | `opencode.jsonc` entries | | | | | |
 ```
 
-At `ch16` from a clean clone, the authors' copy passes 57 TypeScript and 37 Python tests. Your counts will differ, because your agent wrote its own tests. Both type checks and Ruff are clean, and `npm run check:plugin` prints `3 skills, no problems`. `npm run due -- 2027-03-05` prints 8 invoices, $19,229.53, and `npm run due -- 2027-03-12` prints 13 invoices, $43,833.63. The triage's last line is:
+At `ch16` from a clean clone, the authors' copy passes 60 TypeScript and 37 Python tests. Your counts will differ, because your agent wrote its own tests. Both type checks and Ruff are clean, and `npm run check:plugin` prints `3 skills, no problems`. `npm run due -- 2027-03-05` prints 8 invoices, $19,229.53, and `npm run due -- 2027-03-12` prints 13 invoices, $43,833.63. The triage's last line is:
 
 ```text
 13 invoices: 4 exception, 2 needs approval, 2 urgent, 5 ready

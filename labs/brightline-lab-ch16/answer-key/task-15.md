@@ -8,6 +8,8 @@ Your agent's files may differ from this key in wording and layout. Compare the r
 
 Your check's wording may differ. The authors' prints `3 skills, no problems`. Its eight tests pass, and `npm run test:py` reports 37 tests in the authors' copy. `npm run check:py` is clean. If Pyright cannot find `check_plugin`, add `extraPaths = ["../scripts"]` under `[tool.pyright]` in `py/pyproject.toml`.
 
+The script does not compare the limit or the policy, because Task 5's sheet test does, and the `checks` job runs `npm test`.
+
 Adding `disable-model-invocation: true` to `ap-triage` fails like this:
 
 ```text

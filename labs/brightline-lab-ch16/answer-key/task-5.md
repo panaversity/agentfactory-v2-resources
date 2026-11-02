@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 16, in Chapter 16 of *The AI Agent Factory*, Secon
 
 Your agent's files may differ from this key in wording and layout. Compare the results, and what each file does.
 
-The parity test and the sheet test pass, which makes 57 TypeScript tests in the authors' copy. With the Python engine and its tests, `npm run test:py` reports 29 there, and `npm run check:py` is clean. Your counts will differ, because your agent wrote its own tests. Both tools now start with the same first line:
+The parity test and the sheet test pass, which makes 60 TypeScript tests in the authors' copy. With the Python engine and its tests, `npm run test:py` reports 29 there, and `npm run check:py` is clean. Your counts will differ, because your agent wrote its own tests. Both tools now start with the same first line:
 
 ```text
 Triage for run date 2027-03-08, brightline-ap 0.1.0, AP policy v3
@@ -101,20 +101,47 @@ test("the skill's Python script and the engine give the same triage", () => {
 `tests/triage-rules-sheet.test.ts`:
 
 ```ts
-// The rules sheet and the engine must name the same limit, so neither can move alone.
+// The rules sheet and every copy of its rule must agree, so none can move alone.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { CONTROLLER_LIMIT_CENTS } from "../src/triage.ts";
+import { CONTROLLER_LIMIT_CENTS, labels } from "../src/triage.ts";
 import { usd } from "../src/money.ts";
 
-test("the rules sheet names the limit the engine uses", () => {
-  const sheet = readFileSync("docs/ap-triage-rules.md", "utf8");
-  const rule = sheet.split("\n").find((l) => l.includes("**Large amount.**")) ?? "";
-  assert.ok(rule.includes(usd(CONTROLLER_LIMIT_CENTS)), `rule 4 says: ${rule}`);
+const sheet = readFileSync("docs/ap-triage-rules.md", "utf8");
+const rule4 = sheet.split(/\r?\n/).find((line) => line.includes("**Large amount.**")) ?? "";
+// Rule 4 says the amount twice, and both must be the limit.
+const amounts = [...new Set(rule4.match(/\$[\d,]+\.\d\d/g))];
+
+function limitIn(file: string): number {
+  const found = /^CONTROLLER_LIMIT_CENTS = ([\d_]+)/m.exec(readFileSync(file, "utf8"));
+  assert.ok(found, `${file} has no CONTROLLER_LIMIT_CENTS`);
+  return Number(found[1]?.replaceAll("_", ""));
+}
+
+test("rule 4 names the limit in src/triage.ts", () => {
+  assert.deepEqual(amounts, [usd(CONTROLLER_LIMIT_CENTS)], `rule 4 says: ${rule4}`);
+});
+
+test("rule 4 names the limit in the skill's script", () => {
+  const limit = limitIn("plugin/skills/invoice-triage/scripts/triage.py");
+  assert.deepEqual(amounts, [usd(limit)], `rule 4 says: ${rule4}`);
+});
+
+test("rule 4 names the limit in the Python engine", () => {
+  const limit = limitIn("py/brightline_ap/triage.py");
+  assert.deepEqual(amounts, [usd(limit)], `rule 4 says: ${rule4}`);
+});
+
+test("the sheet's source line names the skill's policy", () => {
+  const policy = /comes from (AP policy v\d+)/.exec(sheet)?.[1];
+  assert.ok(policy, "the sheet has no source line");
+  assert.ok(labels().endsWith(policy), `the sheet says ${policy}, and the skill says ${labels()}`);
 });
 ```
 
-The script's job is to agree with the engine, and the parity test checks that. The sheet test holds Ana's sentence and the engine's constant together, because nothing else would notice if one moved. `references/ap-triage-rules.md` is the same text as `docs/ap-triage-rules.md`, word for word.
+The script's job is to agree with the engine, and the parity test checks that. The sheet test holds Ana's sheet and every copy of its rule together. It compares every amount in rule 4 with the limit in the engine, in the skill's script and in the Python engine, and the policy on the sheet's source line with `metadata.policy`. Nothing else would notice if one of them moved. `references/ap-triage-rules.md` is the same text as `docs/ap-triage-rules.md`, word for word.
+
+To test your sheet test, ask the agent to change the limit in `py/brightline_ap/triage.py` to `400_000`, run `npm test`, show you the failure, and undo the change. Then do the same with `policy` in `metadata`. If either stays green, the test does not hold that copy.
 
 The labels live in the skill's own folder, so the script can read them in any host that copies the skill. Only `invoice-triage` needs them, because only its tool prints them.

@@ -10,7 +10,7 @@ Both skills have only specification fields, and each name matches its folder.
 
 The live `due-by-friday` had `disable-model-invocation: true`, which Claude Code reads and the standard does not define. A product that reads skills strictly refuses a field outside the six. So the move takes the line out, and `plugin-valid` will catch it if it comes back. The skill only reads, so it may load by itself. `npm test` is no longer one of its steps, because a person asking what is due wants the list.
 
-The report's first line names the run date, the batch, the plugin's version and the policy. Dave cannot read "0.1.0", and he can read "AP policy v3".
+The report's first line names the run date and the batch. The tool prints the plugin's version and the policy, and the report copies them. Dave cannot read "0.1.0", and he can read "AP policy v3".
 
 `plugin/skills/due-by-friday/SKILL.md`:
 
