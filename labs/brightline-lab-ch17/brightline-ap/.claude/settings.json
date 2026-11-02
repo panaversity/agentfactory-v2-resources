@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(data/**)",
+      "mcp__plugin_brightline-ap_apdata__write_file",
+      "mcp__plugin_brightline-ap_apdata__edit_file",
+      "mcp__plugin_brightline-ap_apdata__create_directory",
+      "mcp__plugin_brightline-ap_apdata__move_file",
+      "Read(**/.dev.vars)",
+      "Read(**/.dev.vars.staging)",
+      "Read(**/.dev.vars.production)",
+      "Read(./.secrets/**)"
+    ]
+  }
+}

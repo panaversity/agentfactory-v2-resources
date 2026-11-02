@@ -1,0 +1,10 @@
+node_modules/
+.venv/
+.venv-workers/
+python_modules/
+.wrangler/
+.dev.vars
+.env
+__pycache__/
+*.pyc
+.secrets/

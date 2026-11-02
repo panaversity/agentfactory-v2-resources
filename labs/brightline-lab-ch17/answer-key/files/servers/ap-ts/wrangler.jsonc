@@ -1,0 +1,28 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  // Production. `npm run deploy` publishes it at https://brightline-ap-ts.<your-subdomain>.workers.dev/mcp
+  "name": "brightline-ap-ts",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  // Version URLs are public addresses for versions not yet deployed. Production has none.
+  "preview_urls": false,
+  // The data and policy files, copied by `npm run assets`. run_worker_first sends every request to
+  // the Worker, so no file is ever served directly: the Worker reads them through the ASSETS binding.
+  "assets": { "directory": "./assets", "binding": "ASSETS", "run_worker_first": true },
+  // Workers Logs: the Worker's console output and errors, kept by the platform for a few days.
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Secrets, never here. Per environment, from files `npm run keys -- --deploy` made:
+  // `npm run secrets:production` and `npm run secrets:staging` (wrangler secret bulk).
+  // On your computer they come from .dev.vars, or .dev.vars.staging with --env staging. Git ignores both.
+  "env": {
+    // Staging. `npm run deploy:staging` publishes it as a separate Worker, brightline-ap-ts-staging.
+    // Bindings and settings like these are not inherited from the top level, so each is repeated.
+    "staging": {
+      "workers_dev": true,
+      "preview_urls": true,
+      "assets": { "directory": "./assets", "binding": "ASSETS", "run_worker_first": true },
+      "observability": { "enabled": true, "head_sampling_rate": 1 }
+    }
+  }
+}
