@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "brightline-ap",
+  "version": "0.2.0",
+  "description": "Brightline Wholesale Supply's accounts payable skills and data connectors.",
+  "author": {
+    "name": "Brightline AP team"
+  },
+  "license": "MIT",
+  "keywords": [
+    "accounts-payable",
+    "invoices"
+  ]
+}

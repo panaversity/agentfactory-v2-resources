@@ -1,0 +1,16 @@
+# Codex: both Brightline AP connectors, by URL. The key comes from AP_MCP_TOKEN in your environment.
+# A deployed address goes in your user config (~/.codex/config.toml), never in this file.
+
+[mcp_servers.apts]
+url = "http://127.0.0.1:8717/mcp"
+bearer_token_env_var = "AP_MCP_TOKEN"
+enabled_tools = ["find_vendor", "list_open_invoices", "get_purchase_order", "search_policy"]
+# "writes" skips approval for tools the server marks read-only. That mark is the server's own claim.
+# We accept it here only because we wrote and reviewed this server (Concept 17.7).
+default_tools_approval_mode = "writes"
+
+[mcp_servers.appy]
+url = "http://127.0.0.1:8718/mcp"
+bearer_token_env_var = "AP_MCP_TOKEN"
+enabled_tools = ["find_vendor", "list_open_invoices", "get_purchase_order", "search_policy"]
+default_tools_approval_mode = "writes"

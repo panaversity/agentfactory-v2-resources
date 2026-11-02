@@ -1,0 +1,13 @@
+[project]
+name = "brightline-ap-worker"
+version = "0.2.0"
+requires-python = ">=3.12"
+# The Chapter 14 models and the connector, from py/. Whether pywrangler bundles a local path
+# dependency is a Verify item: if it does not, vendor py/brightline_ap into src/ in a build step.
+dependencies = ["brightline-ap", "mcp>=2,<3", "cryptography", "pydantic", "opentelemetry-api"]
+
+[tool.uv.sources]
+brightline-ap = { path = "../../py" }
+
+[dependency-groups]
+dev = ["workers-py", "workers-runtime-sdk"]

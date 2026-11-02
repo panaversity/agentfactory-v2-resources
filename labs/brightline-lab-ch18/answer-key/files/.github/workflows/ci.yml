@@ -1,0 +1,45 @@
+name: ci
+on: [pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci
+      - run: cd py && uv sync --locked
+      - run: npm test && npm run typecheck && npm run test:py && npm run check:py && npm run test:servers && npm run typecheck:auth && npm run test:auth && npm run test:hello-auth
+  tests-unchanged:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - run: bash scripts/check-tests-unchanged.sh origin/${{ github.base_ref }}
+  no-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/check-no-secret-output.sh
+  plugin-valid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: node scripts/check-plugin.ts
+  conformance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci
+      - run: cd py && uv sync --locked
+      # Two copies of each server on 127.0.0.1, test keys only. Fails on any difference.
+      - run: npm run conformance
+      # Both Workers, both environments: settings checked (no test key anywhere, each environment's
+      # sign-in server and connector name each other), then bundled. No Cloudflare account is needed.
+      - run: npm run check:deploy

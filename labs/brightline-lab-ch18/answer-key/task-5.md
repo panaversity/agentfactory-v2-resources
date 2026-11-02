@@ -1,0 +1,5 @@
+# Lab 18, Task 5: answer key
+
+For you, after the task. Open it in a text editor, never in the agent. `answer-key/files/` in the zip holds the authors' finished files, at the same paths as in the repository at tag `ch18`.
+
+In `src/auth.ts`: `accessTokenExpiresIn: 60 * 10`, `refreshTokenReuseInterval: 0`, `allowDynamicClientRegistration: false`, `allowUnauthenticatedClientRegistration: false`, `auditor: ac.newRole({})`. `git diff auth-tests -- 'servers/auth/test/*.test.ts'` prints nothing (the test helper beside them changed). Tests `# pass 20 # fail 0`. The document answered at `/.well-known/oauth-authorization-server/api/auth`; the root address is 404. Processor time: not shown by Wrangler (`POST /sign-in 302 Found (172ms)` is total time); the authors measured the password hash at about 80 ms per sign-in in Cloudflare's local runtime. `answer-key/files/servers/auth/src/pages.ts` sets `form-action 'self' http://127.0.0.1:* http://localhost:* https:`, because a browser applies `form-action` to the go-elsewhere reply that follows a form, and `'self'` alone makes the Allow button do nothing.

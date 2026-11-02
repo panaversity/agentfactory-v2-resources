@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ap": {
+      "type": "http",
+      "url": "${AP_MCP_URL:-http://127.0.0.1:8717/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${AP_MCP_TOKEN}"
+      }
+    }
+  }
+}

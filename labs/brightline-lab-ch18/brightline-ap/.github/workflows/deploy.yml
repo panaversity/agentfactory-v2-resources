@@ -1,0 +1,67 @@
+name: deploy
+# Staging: deployed on every push to main, which happens when a reviewed pull request is merged
+# (ci.yml has already passed on that pull request). Then the conformance suite runs against staging.
+# Production: deployed only when a person runs this workflow by hand with target "production",
+# after checking that the staging run passed (Actions > deploy > Run workflow).
+#
+# Set once in Settings > Secrets and variables > Actions, never in this file. A coding agent sets the
+# secrets with `gh secret set -f .secrets/github.env` and the variables with `gh variable set`.
+#   Secrets    CLOUDFLARE_API_TOKEN       (the "Edit Cloudflare Workers" template, your account only)
+#              CLOUDFLARE_ACCOUNT_ID
+#              AP_MCP_TOKEN_STAGING       (the staging key)
+#              AP_MCP_TOKEN_PRODUCTION    (the production key)
+#   Variables  STAGING_URLS               ts=https://brightline-ap-ts-staging.<subdomain>.workers.dev/mcp
+#              PRODUCTION_URLS            ts=https://brightline-ap-ts.<subdomain>.workers.dev/mcp
+# Repository secrets and variables work on every GitHub plan. Worker secrets are sent with
+# `npm run secrets:staging` and `npm run secrets:production`. This workflow never sets them.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Which environment to deploy"
+        type: choice
+        options: [staging, production]
+        default: staging
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  staging:
+    if: github.event_name == 'push' || inputs.target == 'staging'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: npm ci
+      - run: npm run deploy:staging --workspace @brightline/ap-ts
+      - name: Conformance against staging
+        env:
+          AP_MCP_TOKEN: ${{ secrets.AP_MCP_TOKEN_STAGING }}
+          CONFORMANCE_URLS: ${{ vars.STAGING_URLS }}
+        run: npm run conformance
+  production:
+    if: github.event_name == 'workflow_dispatch' && inputs.target == 'production' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: npm ci
+      - run: npm run deploy --workspace @brightline/ap-ts
+      - name: Conformance against production
+        env:
+          AP_MCP_TOKEN: ${{ secrets.AP_MCP_TOKEN_PRODUCTION }}
+          CONFORMANCE_URLS: ${{ vars.PRODUCTION_URLS }}
+        run: npm run conformance
+      # If this step fails, roll back by hand: `npx wrangler rollback` in servers/ap-ts (docs/deploy.md).
