@@ -425,11 +425,11 @@ This task is optional. Skip it if your plan is running low, because a split run 
    Split record, from what my app showed. Reply only "Noted".
    What happened:
    What the app showed: (or "not observable")
-   Usage compared with Task 11: (or "not measured")
+   Usage: (what the app showed, or "not measured")
    ```
 
    The worker's own account of its split is not evidence. Write only what the app showed you.
-6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? If a line you added caused it, send the changed line in your lab chat, as in step 2. Then paste your four lines as they now stand into a new fresh chat with memory off.
+6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? If a line you added caused it, send the changed line in your lab chat, as in step 2. Then do steps 3 to 6 again in a new fresh chat with memory off, with your four lines as they now stand.
 
 **Checkpoint.** Checks 27 to 29 passed, and the hard rule holds.
 

@@ -10,7 +10,7 @@ Task 12 is optional. It carries checks 27 to 29, after the lab's 26.
 
 27. **One split line for each part.** The four lines you sent under the fresh chat's first message say:
     - Outcome: the worker is responsible for the whole proposal, and every open invoice appears in it once. "You are responsible for the whole proposal" passes for the first half.
-    - Outcome: every check across the parts uses every checked row, not one part's rows. A line that names the checks passes when it names all three: the total, the duplicate check and the exceptions list.
+    - Outcome: every check across the parts uses every checked row, not one part's rows. "Every check uses all the rows, not one helper's" passes, and so does a line that names all three checks: the total, the duplicate check and the exceptions list.
     - Context: every part of the work follows the brief's context. "Every part of the work follows this context" passes, and so does "every rule a helper needs is in this brief".
     - Format: every part returns rows in the same columns, the proposal CSV's.
     - Format: the run says how it split the job, and lists every invoice number it received, so you can see none was dropped or counted twice. Asking for the row or list each one went to passes too.
@@ -28,7 +28,7 @@ Task 12 is optional. It carries checks 27 to 29, after the lab's 26.
 29. **The split record says what the app showed.** Your split record, sent in the fresh chat after the build:
     - "What happened" is one of Split, Not split or Not available. All three pass.
     - "What the app showed" names something you saw in the app, such as helpers listed beside the chat, or says "not observable".
-    - "Usage compared with Task 11" gives a comparison, or says "not measured".
+    - "Usage" says what the app showed, or "not measured".
     - Passed: all three.
     - Missed: no split record; "What happened" left empty or answered another way; or "What the app showed" taken from the run's reply, such as "the run says it used three helpers".
 
