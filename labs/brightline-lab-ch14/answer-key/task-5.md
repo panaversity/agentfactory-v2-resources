@@ -44,7 +44,7 @@ Both exit with a failure code, 1. On `data/invoices.csv`, both print `15 valid, 
 | Only line 5 | The loader stopped at the first bad row |
 | No line 14, and 12 valid | The loader did not check the vendor list. A schema alone cannot know that `V099` does not exist |
 | Line numbers one lower, 4, 6, 10 and 13 | The loader counted from 0, or did not count the header |
-| A Python traceback and no report | `int()` or the model raised on a bad row, and nothing caught it. Catch `ValidationError` around the one call that can raise, and go on to the next row |
+| A Python traceback and no report | `int()` or the model raised on a bad row, and nothing caught it. Ask the agent to catch `ValidationError` around the one call that can raise, and to go on to the next row |
 
 ## The amount conversion
 

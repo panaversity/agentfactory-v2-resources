@@ -13,7 +13,7 @@ class PlainVendor:
         self.name = name
 
 
-a = Vendor("V005", "Hocking Valley Pallets")
-b = Vendor("V005", "Hocking Valley Pallets")
+a: Vendor = Vendor("V005", "Hocking Valley Pallets")
+b: Vendor = Vendor("V005", "Hocking Valley Pallets")
 print(a == b, a)
 print(PlainVendor("V005", "Hocking Valley Pallets") == PlainVendor("V005", "Hocking Valley Pallets"))

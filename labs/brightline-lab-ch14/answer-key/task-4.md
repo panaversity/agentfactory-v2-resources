@@ -13,7 +13,7 @@ Before the packages and the schema files exist, the tests fail for the right rea
 - TypeScript: `Error [ERR_MODULE_NOT_FOUND]: Cannot find module '.../src/schemas.ts'`
 - Python: `ModuleNotFoundError: No module named 'pydantic'`, or `No module named 'brightline_ap.schemas'` if your test imports the schema module first
 
-Any other error, such as a typo in a field name, is your test's mistake. Fix it before you commit the failing tests.
+Any other error, such as a typo in a field name, is a mistake in a test. Ask the agent to fix it before it commits the failing tests.
 
 ## The schemas
 
@@ -83,4 +83,4 @@ Any one of these, with the check that catches it, passes:
 
 ## The commit
 
-`git show --stat` for the commit lists `package.json`, `package-lock.json`, `py/pyproject.toml`, `py/uv.lock`, `src/schemas.ts` and `py/brightline_ap/schemas.py`. The tests are unchanged since you committed them: `git diff` against that commit, for `tests/` and `py/tests/`, prints nothing.
+`git show --stat` for the commit lists `package.json`, `package-lock.json`, `py/pyproject.toml`, `py/uv.lock`, `src/schemas.ts` and `py/brightline_ap/schemas.py`. The tests are unchanged since the agent committed them: `git diff` against that commit, for `tests/` and `py/tests/`, prints nothing.

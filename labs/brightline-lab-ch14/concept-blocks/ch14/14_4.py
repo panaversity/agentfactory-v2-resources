@@ -8,7 +8,7 @@ from pydantic import ValidationError  # noqa: E402
 
 from brightline_ap.schemas import InvoiceModel  # noqa: E402
 
-inv_8310 = {
+inv_8310: dict[str, str | int] = {
     "number": "INV-8310", "vendor_id": "V003", "invoice_date": "2027-02-08", "due_date": "",
     "terms": "Net 30", "amount_cents": 870000, "status": "open",
 }

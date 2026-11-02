@@ -8,7 +8,7 @@ These files go with Lab 14 of The AI Agent Factory: models and an async client i
 - `LAB.md` is a copy of the lab steps.
 - `field-guide-code-toolchain.md` holds the install steps for Git, Node.js, uv and Python, and the packages the lab adds.
 
-The sample API, `brightline-ap/scripts/ap-api.ts`, runs only on your own computer and calls no outside service. Start it with `npm run api`. Copy `.env.example` to `.env` first, and choose your own made-up key. Never commit `.env`.
+The sample API, `brightline-ap/scripts/ap-api.ts`, runs only on your own computer and calls no outside service. Your agent starts it with `npm run api`, after it copies `.env.example` to `.env` with a made-up key you choose, as Task 7 shows. Never commit `.env`.
 
 Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 

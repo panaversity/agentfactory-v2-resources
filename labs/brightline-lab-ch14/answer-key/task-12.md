@@ -20,6 +20,6 @@ A note that names a different next change misses the point of Task 5, unless it 
 
 `git tag` lists `ch14`, on `main`, which holds the schemas, the loader, the JSON export, the two clients and their tests, and your notes. The remit email change is on its branches, not on `main`.
 
-In `ch14-check`, every command passes: `npm ci`, `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`. The reference run passes 37 TypeScript tests and 35 Python tests. Yours depend on how many you wrote.
+In `ch14-check`, every command passes: `npm ci`, `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`. The reference run passes 37 TypeScript tests and 35 Python tests. Yours depend on how many cases you gave the agent.
 
 The clone has no `.env`, because git never had it, and no test needs it: the client tests start their own server, or a fake one. If a test fails only in the clone, it depends on something that is not committed, such as `.env`, a file in `out/`, or a package installed without the lock file.

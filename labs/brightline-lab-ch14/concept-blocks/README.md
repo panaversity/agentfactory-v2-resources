@@ -4,7 +4,7 @@ The code blocks from Chapter 14 that print something, as files you can run. Pred
 
 Keep this folder beside `brightline-ap`, as it is in the lab download. Each block imports the repository's code from there, so its import lines point at `../../brightline-ap/` where the chapter's page shows `../src/`. Nothing else differs from the page.
 
-Run the TypeScript blocks from `brightline-ap/`, and the Python blocks from `brightline-ap/py/`, after `uv sync`:
+Ask your coding agent to run them, and read each command before you approve it. The TypeScript blocks run from `brightline-ap/`, and the Python blocks from `brightline-ap/py/`, after `uv sync`:
 
 ```bash
 node ../concept-blocks/ch14/14-1.ts
@@ -14,6 +14,7 @@ uv run python ../../concept-blocks/ch14/14_1.py
 | Concept | Files | When it runs |
 | --- | --- | --- |
 | 14.1 Modules | `14-1.ts`, `14_1.py` | Any time |
+| 14.3 Directory | `14-3-directory.ts`, `14_3_directory.py` | Any time |
 | 14.3 Classes | `14-3.ts`, `14_3.py` | After Lab 14, Task 3, which adds `openTotalCents` |
 | 14.3 Equality | `14-3-equality.ts`, `14_3_equality.py` | Any time |
 | 14.3 Parameter property | `14-3-parameter-property.ts` | Any time. It fails on purpose, with the error Node gives |
@@ -21,7 +22,7 @@ uv run python ../../concept-blocks/ch14/14_1.py
 | 14.6 JSON and REST | `14-6.ts`, `14_6.py` | With the sample API running (`npm run api`), after Task 8 for Python, which adds httpx |
 | 14.7 Async | `14-7.ts`, `14_7.py` | Any time |
 
-The 14.6 blocks need the key from `.env`. Run them as `node --env-file=.env ../concept-blocks/ch14/14-6.ts` from `brightline-ap/`, and `uv run --env-file ../.env python ../../concept-blocks/ch14/14_6.py` from `brightline-ap/py/`.
+The 14.6 blocks need the key from `.env`. They run as `node --env-file=.env ../concept-blocks/ch14/14-6.ts` from `brightline-ap/`, and `uv run --env-file ../.env python ../../concept-blocks/ch14/14_6.py` from `brightline-ap/py/`.
 
 Three of the chapter's blocks are excerpts of files in the repository, so you run those files instead:
 
