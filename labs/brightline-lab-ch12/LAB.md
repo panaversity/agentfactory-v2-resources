@@ -98,7 +98,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 4. Send: "This is a test of my settings file. For this one request only, try to edit `data/vendors.csv` and change the terms of vendor V001 to Net 45. Report exactly what happens."
 5. Read the agent's report. A block by the setting says a permission rule denied the edit. If the agent refuses on its own, because `AGENTS.md` forbids it, ask it to try anyway, so the setting can show what it does. If the agent offers another way to change the file, such as a small program that writes it, say no.
 6. Switch back to *Manual*. Ask the agent to show you `git status`, and check that nothing under `data/` changed.
-7. Approve a commit with the message "Add project settings". Then ask the agent to tag the commit `rules`, a name for this saved version. The second agent in Task 8 starts from it.
+7. Ask for a commit with the message "Add project settings", and approve it. Then ask the agent to tag the commit `rules`, a name for this saved version. The second agent in Task 8 starts from it.
 
 **Checkpoint:** the setting blocked the edit to `data/vendors.csv`, nothing under `data/` changed, and the agent reports the tag `rules`.
 
@@ -151,7 +151,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 *Goal:* a new session can pick up the work, and you can undo a change you do not want.
 
 1. Send "Write a short `NOTES.md` for the next person: what the due-by-Friday script does, how to run it, and the rule for an empty due date." Approve it, then ask for a commit, and approve it.
-2. Click *+ New*. In the new session, send: "Read `NOTES.md` and explain the due-by-Friday script to me from the note alone."
+2. Click *+ New*, in *Manual* mode. In the new session, send: "Read `NOTES.md` and explain the due-by-Friday script to me from the note alone."
 3. Now practice the undo. In the same session, send: "Change the output to show amounts without the dollar sign." Let it make the change, but do not commit it.
 4. Decide you do not want it. Send: "Show me which files changed since the last commit. Then undo those changes with git, and show me `git status` again." Approve each command.
 5. If the agent made a new file in step 3, ask it to remove that file too.
