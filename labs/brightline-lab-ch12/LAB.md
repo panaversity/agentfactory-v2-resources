@@ -23,7 +23,7 @@ Your job is to make her folder safe for a coding agent, have the agent build tha
 
 - The Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan. Without one, see "If you do not have a paid Claude plan" at the end of this page. On Pro, Max and Ultra, Claude Code shares its usage limit with chat. If the limit stops you, stop at the end of a task, and git keeps your place.
 - A second agent for Task 8: Codex in the ChatGPT desktop app, on any ChatGPT plan, including Free, or OpenCode Desktop with a model connected, such as one of OpenCode's free models.
-- Git, and Node.js 24 or later, installed on your computer. Download them from [git-scm.com](https://git-scm.com/downloads) and [nodejs.org](https://nodejs.org/en/download). If a step is unclear, ask Claude in a chat. The agent checks them in Task 2, and it should never install software on its own.
+- Git, and Node.js 24 or later (the program that runs these scripts), installed on your computer. Download them from [git-scm.com](https://git-scm.com/downloads) and [nodejs.org](https://nodejs.org/en/download). If a step is unclear, ask Claude in a chat. The agent checks them in Task 2, and it should never install software on its own.
 
 ### The lab files
 
@@ -79,12 +79,12 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
    >
    > Then tell me, one line each, which of the five you could have worked out from the project on your own.
 
-2. Approve the file. Then approve a commit with the message "Add AGENTS.md".
+2. Approve the file. Then ask for a commit with the message "Add AGENTS.md", and approve it.
 3. Click *+ New* to start a fresh session in the same folder, in *Manual* mode. Ask: "Without opening any file, what must you never do in this project? Name the file that told you." It should give the `data/` rule and name `AGENTS.md`. That one file is all Claude Code needs.
 4. Now see what a `CLAUDE.md` changes. Claude Code's `/init` command writes this file, so a project can gain one by accident. Send: "Create a `CLAUDE.md` that holds one line, `Notes for Claude Code go here.`" Approve it.
 5. Click *+ New* again, in *Manual* mode, and ask the same question. This time the session should not know the rule. The rule is still in `AGENTS.md`, but a `CLAUDE.md` replaces that file for Claude Code. Any other agent would still read it.
 6. Bring the rule back. Send: "Replace everything in `CLAUDE.md` with the one line `@AGENTS.md`." Approve it. That line pulls `AGENTS.md` in, so there is still only one set of rules.
-7. Click *+ New* once more, in *Manual* mode, and ask the same question. Then approve a commit with the message "Add CLAUDE.md that imports AGENTS.md".
+7. Click *+ New* once more, in *Manual* mode, and ask the same question. Then ask for a commit with the message "Add CLAUDE.md that imports AGENTS.md", and approve it.
 
 **Checkpoint:** the fresh session in step 5 did not know the rule, and the one in step 7 gives the `data/` rule and names `AGENTS.md`.
 
@@ -142,7 +142,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 4. Send: "Run `npm test`, then `npm run due -- 2027-03-05`." Approve both commands.
 5. Compare the output with Ana's note: the count, the total and each hard case. Then download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-6.md), and compare the output with its table.
 6. If it does not match, find the matching row in the key's "Common wrong answers". Tell the agent what is wrong in one sentence, and run it again. If no row matches, tell it which invoices differ from Ana's note.
-7. When it matches, approve a commit.
+7. When it matches, ask for a commit, and approve it.
 
 **Checkpoint:** the script lists the same 8 invoices and total as Ana's note, the tests pass, and nothing under `data/` changed.
 
@@ -150,7 +150,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 *Goal:* a new session can pick up the work, and you can undo a change you do not want.
 
-1. Send "Write a short `NOTES.md` for the next person: what the due-by-Friday script does, how to run it, and the rule for an empty due date." Approve it, then approve a commit.
+1. Send "Write a short `NOTES.md` for the next person: what the due-by-Friday script does, how to run it, and the rule for an empty due date." Approve it, then ask for a commit, and approve it.
 2. Click *+ New*. In the new session, send: "Read `NOTES.md` and explain the due-by-Friday script to me from the note alone."
 3. Now practice the undo. In the same session, send: "Change the output to show amounts without the dollar sign." Let it make the change, but do not commit it.
 4. Decide you do not want it. Send: "Show me which files changed since the last commit. Then undo those changes with git, and show me `git status` again." Approve each command.
@@ -178,7 +178,7 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 8. Turn plan mode off with `/plan`, then send "Go ahead with the revised plan." Approve each step.
 9. Ask Codex to run the tests and the script, and compare the result with Ana's note. If you left the empty due dates out, the tests may pass on a list that is wrong. Give that correction now, and run it again.
 10. If it still does not match after two corrections, note what went wrong, and go on to Task 9, which asks.
-11. When it matches, approve a commit on the `port-codex` branch.
+11. When it matches, ask for a commit on the `port-codex` branch, and approve it.
 
 **Checkpoint:** you know what stopped the edit in `data/`, and on `port-codex` the script lists the same 8 invoices and total as Ana's note, or you noted what went wrong.
 
@@ -197,7 +197,7 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 9. Switch to the *build* agent and let it work, approving each edit and command.
 10. Ask it to run the tests and the script, and compare the result with Ana's note. If you left the empty due dates out, the tests may pass on a list that is wrong. Give that correction now, and run it again.
 11. If it still does not match after two corrections, note what went wrong, and go on to Task 9, which asks.
-12. When it matches, approve a commit on the `port-opencode` branch, including `opencode.jsonc`.
+12. When it matches, ask for a commit on the `port-opencode` branch, including `opencode.jsonc`, and approve it.
 
 **Checkpoint:** OpenCode asked before every edit and command and refused the edit in `data/`, and on `port-opencode` the script lists the same 8 invoices and total as Ana's note, or you noted what went wrong.
 
@@ -223,7 +223,7 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
    > Then ask which agent I would give this job to next week, and why. Write the file from my answers only, show it to me, and wait.
 
 4. Answer each question in a few words. There is no right answer to the last one. The reason is what counts.
-5. Approve the file when it says what you said. Then approve a commit, and ask the agent to tag it `ch12`.
+5. Approve the file when it says what you said. Then ask for a commit, approve it, and ask the agent to tag it `ch12`.
 
 **Checkpoint:** `ports/ch12.md` is on the main branch, and the agent reports the tags `rules` and `ch12`.
 
