@@ -14,7 +14,7 @@ Task 4 carries checks 12 to 14 of the lab's 21.
 13. **The move: 5120 is in Thursday's run, waiting for Dave's approval of the run, from the case file.** The new worker answers Maria that 5120 is under the $5,000 limit, so needs no approval of its own, and sits in Thursday's payment run, which waits for Dave's approval of the run as a whole, and names the case file.
     - Passed: in the run, waiting for the run's approval, from the case file.
     - Missed: "approved by Dave"; or an answer from the register row, which Task 5 puts right; or "lost in the move".
-14. **This week: the worker never read the case file, and its own record lived in the vendor's chat.** Your "This week" says that on Thursday the worker answered Maria from the register row it had typed that morning, not from 5120's case file, which was right and kept by hand; and that its own record of the week, the run notes, sat in a chat the company does not own.
+14. **This week: the worker never read the case file, and its own record lived in the vendor's chat.** Your section says that on Thursday the worker answered Maria from the register row it had typed that morning, not from 5120's case file, which was right and kept by hand; and that its own record of the week, the run notes, sat in a chat the company does not own.
     - Passed: both: the case file not read, and the run notes in the chat. Plain words pass.
     - Missed: the case file blamed; or no cause named.
 

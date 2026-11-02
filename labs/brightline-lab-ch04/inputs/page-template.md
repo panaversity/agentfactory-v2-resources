@@ -1,6 +1,6 @@
 # Brightline's AP Worker: what it is made of
 
-For IT, to rebuild the worker on the other AI vendor. Written by: (your name). Friday, October 16, 2026.
+For IT, to rebuild the worker on the other AI vendor. Friday, October 16, 2026.
 
 ## 1. Channels and runtime
 
