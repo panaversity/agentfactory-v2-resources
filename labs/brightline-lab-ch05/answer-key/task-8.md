@@ -27,7 +27,7 @@ Task 8 carries checks 15 and 16 of the lab's 26.
 
 ## Why
 
-A checkpoint goes where a person's decision changes what follows (Lesson 5.4). Maria's decisions on the exceptions change the file, so the file waits for them. Dave's approval on Thursday does not change the file: he approves the run that was built. A stop that waits for Thursday leaves nothing for anyone to check before then. These four exceptions are the ones Figure 5.3 shows, so the skill here is where the stop goes, and whose answer it waits for.
+A checkpoint goes where a person's decision changes what follows (Lesson 5.4). Maria's decisions on the exceptions change the file, so the file waits for them. Dave's approval on Thursday does not change the file: he approves the run that was built. A stop that waits for Thursday leaves nothing for anyone to check before then. Where the stop goes is a limit on what the worker may do alone, so it belongs in the constraints, in their autonomy half. This key passes it under any part. These four exceptions are the ones Figure 5.3 shows, so the skill here is where the stop goes, and whose answer it waits for.
 
 ## Never a deduction
 
