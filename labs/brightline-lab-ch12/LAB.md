@@ -166,7 +166,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 Choose Codex or OpenCode, whichever you have, and follow its steps. If you have the time and both apps, do the other one too.
 
-#### Codex
+#### With Codex
 
 1. Open the ChatGPT desktop app and choose *Codex*. Open the `brightline-ap` folder, set *Work in* to *This computer*, and set the permission mode to *Ask for approval*.
 2. Send: "Start a new branch called `port-codex` from the tag `rules`, and switch to it." Approve the command. The branch starts from the rules and the settings, before the script existed. Your script stays safe on `main`.
@@ -184,7 +184,7 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 
 **Check it now.** Download [the Codex key for Task 8](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-8-codex.md).
 
-#### OpenCode
+#### With OpenCode
 
 1. Install OpenCode Desktop from [opencode.ai/download](https://opencode.ai/download). Open the `brightline-ap` folder, and connect a model with `/connect`. One of OpenCode's free models is enough.
 2. Before you send any task, turn auto-accept off for this project, under Settings, then Projects. OpenCode allows almost everything by default, and it does not sandbox the agent.
@@ -249,6 +249,7 @@ Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your
 | The agent wants to install a package | Say no. The lab needs no packages. Ask it to use what Node already has. |
 | The agent changed a file in `data/` | Ask the agent to restore `data/` with git, and approve it. Then check the setting from Task 4 and the rule in `AGENTS.md`. |
 | The result uses today's real date | The brief gives the date. Tell the agent to use the cutoff from the command, never the computer's clock. |
+| The session in step 5 of Task 3 still gives the rule | Ask whether it opened a file to answer. If it did, or it guessed, start a new session and ask again. The test is what it knows before it opens anything. |
 | Claude Code does not know a rule in `AGENTS.md` | Look for a `CLAUDE.md` or `CLAUDE.local.md` in the project or a folder above it. Make `@AGENTS.md` the top line of `CLAUDE.md`. If there is neither, update the app and start a new session. |
 | Codex or OpenCode does not mention `AGENTS.md` | Check that you opened `brightline-ap`, and that you are on a branch made from `rules`. |
 | OpenCode did not ask before an edit | Stop. Check auto-accept and `opencode.jsonc`, then start a new session. |
