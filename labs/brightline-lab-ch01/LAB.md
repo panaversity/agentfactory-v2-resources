@@ -153,9 +153,9 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 ### Task 6. Which surface for which job (10 minutes)
 
-The goal: decide how much of each AP job you can hand to an AI, and where that work should run.
+The goal: decide how much of each AP job you can hand to an AI, how that work should run, and when it starts.
 
-**Your manager asks:** "We want to hand more AP work to AI. For each of these six jobs, tell me how far we can hand it over, and where it should run."
+**Your manager asks:** "We want to hand more AP work to AI. For each of these six jobs, tell me how far we can hand it over, and how it should run."
 
 **The six jobs:**
 
@@ -166,12 +166,13 @@ The goal: decide how much of each AP job you can hand to an AI, and where that w
 5. Every Monday at 7:00 a.m., build the unpaid-bills report and leave it for me.
 6. Watch the AP inbox all day, answer routine vendor questions, and pass anything unusual to Maria.
 
-**What you decide.** For each job, two things:
+**What you decide.** For each job, three things:
 
 - **The rung**, from [1.1 The ladder of interaction](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/): how much of the work you hand over. To a chatbot you send a message, get a reply, and finish the job yourself. To an agent you delegate one task, and get a finished output. To an AI Worker you hand over a role, and get results again and again.
-- **The surface**, from [1.5, "Which surface for which job"](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/): where the work runs. A chat is for something you read once. A task is for one finished result. A schedule is for the same work, run again and again. A standing worker is for work that continues between conversations.
+- **The surface**, from [1.5, "Which surface for which job"](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/): how the work runs. A chat is for something you read once. A task is for one finished result. A standing worker is for work that continues between conversations.
+- **What starts it:** you, or a schedule. A schedule does not change the surface. It starts the same task again at a set time. Chapter 2 calls what starts the work a **trigger**: a schedule, or an event such as a new email.
 
-For example, for a different job: "Turn last month's receipts into one expense report" is one finished result, so you would answer "agent, task".
+For example, for a different job: "Turn last month's receipts into one expense report" is one finished result, and you ask for it. So you would answer "agent, task, you".
 
 You decide. The AI only shows you the jobs, and records your answers.
 
@@ -181,28 +182,30 @@ You decide. The AI only shows you the jobs, and records your answers.
 
    ```text
    Outcome:     For each of six AP jobs, my decision: which rung of the
-                ladder of interaction it sits on, and which surface it
-                needs.
+                ladder of interaction it sits on, which surface it needs,
+                and what starts it.
    Context:     The rungs: chatbot (you send a message, and get a reply),
                 agent (you delegate a task, and get a finished output),
                 AI Worker (you hand over a role, with recurring results).
                 The surfaces: chat (a question, a draft or an explanation
                 I read once), task (a clear outcome that comes back as a
-                finished result), schedule (the same work, run again on a
-                schedule), standing worker (ongoing work that continues
-                between conversations). The jobs: 1. Explain what "2/10
-                net 30" means on an invoice. 2. Draft a polite reply to a
-                vendor who asks when they will be paid. 3. Turn this
-                week's invoice PDFs into one spreadsheet I can check. 4.
-                Match this week's invoices to the PO list, and tell me
-                which do not match. 5. Every Monday at 7:00 a.m., build
-                the unpaid-bills report and leave it for me. 6. Watch the
-                AP inbox all day, answer routine vendor questions, and
-                pass anything unusual to Maria.
-   Format:      First show me the rungs and the surfaces below, with
-                their meanings. Then show all six jobs as a numbered
-                list, and ask for "the rung, then the surface" for each,
-                in one reply. At the end, a table of my answers.
+                finished result), standing worker (ongoing work that
+                continues between conversations). What starts it: me, or
+                a schedule (the same task, started again at a set time).
+                The jobs: 1. Explain what "2/10 net 30" means on an
+                invoice. 2. Draft a polite reply to a vendor who asks
+                when they will be paid. 3. Turn this week's invoice PDFs
+                into one spreadsheet I can check. 4. Match this week's
+                invoices to the PO list, and tell me which do not match.
+                5. Every Monday at 7:00 a.m., build the unpaid-bills
+                report and leave it for me. 6. Watch the AP inbox all
+                day, answer routine vendor questions, and pass anything
+                unusual to Maria.
+   Format:      First show me the rungs, the surfaces and what starts
+                the work, with their meanings. Then show all six jobs as
+                a numbered list, and ask for "the rung, the surface, and
+                what starts it" for each, in one reply. At the end, a
+                table of my answers.
    Constraints: Ask only. Do not answer for me, and do not tell me
                 whether I am right. Record my answers as I give them.
    ```
