@@ -1,0 +1,30 @@
+{
+  "name": "brightline-ap",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19"
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test:py": "cd py && uv run --locked pytest -q",
+    "check:py": "cd py && uv run --locked pyright",
+    "check:plugin": "node scripts/check-plugin.ts",
+    "hello": "npm --workspace @brightline/hello start",
+    "keys": "node scripts/make-keys.ts"
+  },
+  "dependencies": {
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.18.13",
+    "@modelcontextprotocol/inspector": "2.13.0",
+    "@modelcontextprotocol/client": "2.4.0"
+  },
+  "workspaces": [
+    "servers/hello"
+  ]
+}

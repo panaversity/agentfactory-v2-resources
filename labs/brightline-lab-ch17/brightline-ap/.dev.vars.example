@@ -1,0 +1,7 @@
+# The shape of servers/*/.dev.vars. Do not fill it in by hand: `npm run keys` writes the real files,
+# which git ignores, without printing the keys. Never commit real values.
+# The shared key every request must carry, as "Authorization: Bearer <key>".
+AP_MCP_TOKEN=replace-with-a-long-random-value
+# The key that seals page handles: 32 random bytes, base64url. Make one with:
+#   node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"
+AP_HANDLE_KEY=replace-with-32-random-bytes-base64url

@@ -1,0 +1,41 @@
+{
+  // OpenCode version 2: the shared skills and both Brightline AP connectors.
+  "skills": ["./plugin/skills"],
+  "mcp": {
+    "servers": {
+      "apts": {
+        "type": "remote",
+        "url": "http://127.0.0.1:8717/mcp",
+        "headers": { "Authorization": "Bearer {env:AP_MCP_TOKEN}" },
+        "oauth": false,
+        "protocol": "2026-07-28"
+      },
+      "appy": {
+        "type": "remote",
+        "url": "http://127.0.0.1:8718/mcp",
+        "headers": { "Authorization": "Bearer {env:AP_MCP_TOKEN}" },
+        "oauth": false,
+        "protocol": "2026-07-28"
+      }
+    }
+  },
+  "permissions": [
+    { "action": "edit", "resource": "data/**", "effect": "deny" },
+    // Deploying: commands that change Cloudflare or GitHub always ask (Task 18a)
+    { "action": "shell", "resource": "npm run deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "npm run secrets*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler rollback*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler secret*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler versions deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler delete*", "effect": "ask" },
+    { "action": "shell", "resource": "gh workflow run*", "effect": "ask" },
+    { "action": "shell", "resource": "gh secret set*", "effect": "ask" },
+    { "action": "shell", "resource": "uv run pywrangler deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "gh pr merge*", "effect": "ask" },
+    { "action": "shell", "resource": "git push*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler secret put*", "effect": "deny" },
+    { "action": "apts_*", "resource": "*", "effect": "allow" },
+    { "action": "appy_*", "resource": "*", "effect": "allow" }
+  ]
+}
