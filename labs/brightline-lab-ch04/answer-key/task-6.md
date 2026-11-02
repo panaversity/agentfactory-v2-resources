@@ -12,7 +12,7 @@ Task 6 carries checks 19 to 21 of the lab's 21.
     - Rebuilt on the new vendor: the scheduled task (5), the accounting connector (6), the AP inbox connector (7), #ap-help (8), the memory (4).
     - Carried, with where to: the project instructions (1) into the Role Contract, in the AP shared folder; AP policy version 3 (3) into the approved policies, with version and approver; the run notes (10) into each invoice's case file; Dave's run approvals (9) into the approvals log in the accounting system, from his own login.
     - AP policy version 1 (2): neither, kept beside version 3 and marked superseded.
-    - Passed: all ten, the five rebuilt, the four carried each with a place, version 1 superseded. Plain words for a place pass.
+    - Passed: all ten, the five rebuilt, the four carried each with a place, version 1 superseded. Plain words for a place pass, and version 1 "carried, marked replaced" passes.
     - Missed: a carried part with no place; a rebuilt part carried; the instructions kept only in the new vendor's project; or Dave's "approved" in #ap-help kept as the approval, when section 4.2 says an approval in chat is not one.
 20. **Who decides what the worker may do.** Your section 7 says Dave decides what the worker may do, and Sam asking changes nothing in that. Sam may ask; the worker answers from the policy: yes, $7,800.00 needs Dave's approval. It does not mark the invoice approved because Sam asked, because an approval is recorded by the controller from his own login, and Sam is not the controller.
     - Passed: Dave decides, Sam may ask, no marking approved, and why.
