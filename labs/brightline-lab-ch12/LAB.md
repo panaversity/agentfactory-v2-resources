@@ -109,7 +109,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 *Goal:* check the agent's plan against Ana's note, case by case, before anything is built.
 
 1. Open `anas-note.md` in a text editor, and keep it beside the app. It lists the 8 invoices due by Friday, their total, and Ana's hard cases by invoice number.
-2. In Claude Code, set the permission mode to *Plan*.
+2. In Claude Code, click *+ New* for a fresh session, and set the permission mode to *Plan*.
 3. Send this brief as it is. It leaves out the rule for invoices with no due date, the case people forget, so you can see whether the plan catches it. In real work, put every rule you know in the brief. Do not add Ana's numbers to it.
 
    > *Outcome.* A script, `src/due-by-friday.ts`, that lists every open invoice due on or before a cutoff date, with a total. Run it with `npm run due -- 2027-03-05`. Today is Wednesday, March 3, 2027, and the cutoff for this week's payment run is Friday, March 5. Stop when `npm test` passes, with a test for each rule that decides whether an invoice is listed. I will check the result against my own list.
