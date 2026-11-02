@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "appy": {
+      "type": "http",
+      "url": "${AP_MCP_PY_URL:-http://127.0.0.1:8718/mcp}",
+      "headers": { "Authorization": "Bearer ${AP_MCP_TOKEN}" }
+    }
+  }
+}

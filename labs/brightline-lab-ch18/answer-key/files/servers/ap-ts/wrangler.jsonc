@@ -1,0 +1,58 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  // Production. `npm run deploy` publishes it at https://brightline-ap-ts.<your-subdomain>.workers.dev/mcp
+  "name": "brightline-ap-ts",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  // Version URLs are public addresses for versions not yet deployed. Production has none.
+  "preview_urls": false,
+  // The data and policy files, copied by `npm run assets`. run_worker_first sends every request to
+  // the Worker, so no file is ever served directly: the Worker reads them through the ASSETS binding.
+  "assets": { "directory": "./assets", "binding": "ASSETS", "run_worker_first": true },
+  // Workers Logs: the Worker's console output and errors, kept by the platform for a few days.
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Settings, not secrets. Which company's data is in which folder of the assets (18.12, rule 7).
+  // Every other company's token gets "No AP data is connected for <company> yet." from every tool.
+  // AP_ISSUER is the production sign-in server's issuer, AP_RESOURCE this connector's own address: every
+  // token's aud must equal it exactly. Replace "your-subdomain" with your workers.dev subdomain (F8 step 7).
+  // On your computer .dev.vars overrides both with 127.0.0.1 addresses.
+  "vars": {
+    "AP_DATA_TENANTS": "org_brightline=data,org_conformance=data-conformance",
+    "AP_ISSUER": "https://brightline-auth.your-subdomain.workers.dev/api/auth",
+    "AP_RESOURCE": "https://brightline-ap-ts.your-subdomain.workers.dev/mcp"
+  },
+  // The public keys come from the sign-in server through this service binding, a direct link between
+  // two Workers of one account (a Worker cannot fetch another of the same account by its workers.dev
+  // address). On your computer, with a 127.0.0.1 issuer, the connector fetches them from AP_ISSUER instead.
+  "services": [{ "binding": "AUTH", "service": "brightline-auth" }],
+  // Rule 5: Cloudflare's Rate Limiting binding, one per counter. Per company, and a smaller one per
+  // person inside it. namespace_id is any number you choose, unique in your account.
+  "ratelimits": [
+    { "name": "RATE_COMPANY", "namespace_id": "1801", "simple": { "limit": 600, "period": 60 } },
+    { "name": "RATE_PERSON", "namespace_id": "1802", "simple": { "limit": 120, "period": 60 } }
+  ],
+  // Secrets, never here. Per environment, from files `npm run keys -- --deploy` made:
+  // `npm run secrets:production` and `npm run secrets:staging` (wrangler secret bulk).
+  // On your computer they come from .dev.vars, or .dev.vars.staging with --env staging. Git ignores both.
+  "env": {
+    // Staging. `npm run deploy:staging` publishes it as a separate Worker, brightline-ap-ts-staging.
+    // Bindings and settings like these are not inherited from the top level, so each is repeated.
+    "staging": {
+      "workers_dev": true,
+      "preview_urls": true,
+      "assets": { "directory": "./assets", "binding": "ASSETS", "run_worker_first": true },
+      "observability": { "enabled": true, "head_sampling_rate": 1 },
+      "vars": {
+        "AP_DATA_TENANTS": "org_brightline=data,org_conformance=data-conformance",
+        "AP_ISSUER": "https://brightline-auth-staging.your-subdomain.workers.dev/api/auth",
+        "AP_RESOURCE": "https://brightline-ap-ts-staging.your-subdomain.workers.dev/mcp"
+      },
+      "services": [{ "binding": "AUTH", "service": "brightline-auth-staging" }],
+      "ratelimits": [
+        { "name": "RATE_COMPANY", "namespace_id": "1811", "simple": { "limit": 600, "period": 60 } },
+        { "name": "RATE_PERSON", "namespace_id": "1812", "simple": { "limit": 120, "period": 60 } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@brightline/ap-ts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "assets": "node scripts/copy-assets.ts",
+    "test": "node --env-file-if-exists=../../.secrets/test-signing.local.env --test \"test/**/*.test.ts\"",
+    "start": "node --env-file=.dev.vars --env-file-if-exists=../../.secrets/test-signing.local.env src/node.ts 8717",
+    "dev": "npm run assets && wrangler dev --ip 127.0.0.1 --port 8717",
+    "deploy": "node ../../scripts/check-deploy.ts --ready production && npm run assets && wrangler deploy --env=\"\"",
+    "dev:staging": "npm run assets && wrangler dev --env staging --ip 127.0.0.1 --port 8717",
+    "deploy:staging": "node ../../scripts/check-deploy.ts --ready staging && npm run assets && wrangler deploy --env staging",
+    "check:deploy": "npm run assets && wrangler deploy --env=\"\" --dry-run --outdir .wrangler/dry-run && wrangler deploy --dry-run --env staging --outdir .wrangler/dry-run-staging",
+    "secrets:staging": "wrangler secret bulk ../../.secrets/staging.env --env staging",
+    "secrets:production": "wrangler secret bulk ../../.secrets/production.env --env=\"\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/node": "2.1.2",
+    "@modelcontextprotocol/server": "2.4.0",
+    "@opentelemetry/api": "1.9.0",
+    "@opentelemetry/core": "2.12.0",
+    "jose": "6.2.15",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@opentelemetry/sdk-trace-base": "2.12.0",
+    "wrangler": "4.156.1"
+  }
+}

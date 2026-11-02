@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_brightline-ap_ap__find_vendor",
+      "mcp__plugin_brightline-ap_ap__list_open_invoices",
+      "mcp__plugin_brightline-ap_ap__get_purchase_order",
+      "mcp__plugin_brightline-ap_ap__search_policy",
+      "mcp__appy__find_vendor",
+      "mcp__appy__list_open_invoices",
+      "mcp__appy__get_purchase_order",
+      "mcp__appy__search_policy"
+    ],
+    "ask": [
+      "Bash(npm run deploy*)",
+      "Bash(npm run secrets*)",
+      "Bash(npx wrangler deploy *)",
+      "Bash(npx wrangler rollback *)",
+      "Bash(npx wrangler secret *)",
+      "Bash(npx wrangler versions deploy *)",
+      "Bash(npx wrangler delete *)",
+      "Bash(gh workflow run *)",
+      "Bash(gh secret set *)",
+      "Bash(uv run pywrangler deploy*)",
+      "Bash(gh pr merge *)",
+      "Bash(git push *)"
+    ],
+    "deny": [
+      "Edit(data/**)",
+      "Read(**/.dev.vars)",
+      "Read(**/.dev.vars.staging)",
+      "Read(**/.dev.vars.production)",
+      "Read(./.secrets/**)",
+      "Bash(npx wrangler secret put *)"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "apts": {
+      "type": "http",
+      "url": "http://127.0.0.1:8717/mcp",
+      "oauth": { "clientId": "brightline-claude-code", "callbackPort": 8790, "scopes": "ap:read ap:vendors.read" }
+    },
+    "apts-cedar": {
+      "type": "http",
+      "url": "http://127.0.0.1:8717/mcp",
+      "oauth": { "clientId": "brightline-claude-code-cedar", "callbackPort": 8791, "scopes": "ap:read ap:vendors.read" }
+    },
+    "appy": {
+      "type": "http",
+      "url": "${AP_MCP_PY_URL:-http://127.0.0.1:8718/mcp}",
+      "oauth": { "clientId": "brightline-claude-code", "callbackPort": 8790, "scopes": "ap:read ap:vendors.read" }
+    },
+    "apts-staging": {
+      "type": "http",
+      "url": "${AP_TS_STAGING_URL:-https://brightline-ap-ts-staging.your-subdomain.workers.dev/mcp}",
+      "oauth": { "clientId": "brightline-claude-code", "callbackPort": 8790, "scopes": "ap:read ap:vendors.read" }
+    }
+  }
+}
