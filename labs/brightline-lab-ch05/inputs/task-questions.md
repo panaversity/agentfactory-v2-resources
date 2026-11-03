@@ -58,7 +58,7 @@ Write "Maria's steps: what stays" in the chat: each step with the learner's answ
 
 **Before the run.**
 
-1. Show the Outcome row of 5.1's table below. Then show the notes on the Outcome from this chat, from "What Dave's line left to guess" and "Maria's steps: what stays", quoted. Ask: "Send your Outcome: 'Outcome:' and your own words."
+1. Show the Outcome row of 5.1's table below, then 5.1's outcome below. Then show the notes on the Outcome from this chat, from "What Dave's line left to guess" and "Maria's steps: what stays", quoted. Ask: "Send your Outcome: 'Outcome:' and your own words."
 
 Put the words in the Doc, as "When the learner sends a part of the brief" says. Say "Ready for your run".
 
@@ -90,7 +90,7 @@ Put the words in the Doc. Say "Ready for your run".
 
 **Before the run.**
 
-1. Show the Format row of 5.1's table below, then 5.7's three kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
+1. Show the Format row of 5.1's table below, then 5.1's format below, then 5.7's three kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
@@ -188,6 +188,14 @@ Copied from the chapter, word for word, except where a line says otherwise.
 | Context | Who is it for, why does it matter, and what should it work from? |
 | Format | What shape should it come back in, and where does it go next? |
 | Constraints | What rules must the result follow, and how far may the worker go without checking with you? |
+
+### 5.1: the outcome
+
+*Outcome.* Name the job and what counts as done. End it with one sentence that starts "Done when". That sentence is the brief's **success criteria**: it tells the worker when to stop, and it gives you a test for the result.
+
+### 5.1: the format
+
+*Format.* Name the shape of the result and where it goes next (5.7). Ask the worker to end with anything it could not verify, so you know what to check. This is called asking it to **acknowledge uncertainty**.
 
 ### 5.1: the context, in two lines
 
