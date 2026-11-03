@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 2 carries checks 3 to 6 of the lab's 47.
+Task 2 carries checks 3 to 6 of the lab's 51.
 
 3. **Both jobs paused, with a person doing each by hand.** The Thursday pre-run review and the invoice email check are each paused until the cause is known. A named person does each job's work by hand meanwhile, such as Maria checking each invoice email against the register, and Maria or Jordan preparing Thursday's note. **The hard rule.** Containment that changes a brief or switches the model fails this check: that is a fix, made before the cause is known.
     - Passed: both jobs paused, each with a named person, and the hard rule holds.

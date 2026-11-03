@@ -1,39 +1,46 @@
-# Lab 11 answer key: Task 11. Three more records
+# Lab 11 answer key: Task 11. Where each correction lives
 
 The answers for Task 11 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the Inspect is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the replies in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When the contract is dated Draft 8, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the replies in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 11 carries checks 39 to 42 of the lab's 47.
+Task 11 carries checks 38 to 42 of the lab's 51.
 
-39. **Record 1: the add-on's update.** The plugin's update to version 4.0 changed step 5, so the cause is the brief or the tools, wherever the update changed the steps. The check compares step 5 in versions 3.2 and 4.0, or runs the earlier cases again. The Inspect quoted both versions' step 5.
-    - Passed: the update named as the cause, in the brief or the tools, and both versions' step 5 quoted.
-    - Missed: the inputs, or another cause only; or an Inspect with no version compared.
-40. **Greenway's bank request.** It goes to a person, every time: Maria calls Greenway back on the number on its vendor record, and nothing changes from the email. The draft is not sent. **The hard rule.** Noting the new account from the email, or replying to confirm it, fails this check.
-    - Passed: a callback on the record's number, nothing changed from the email, and the hard rule holds.
-    - Missed: the new account noted; a reply asking Greenway to confirm; or the hard rule broken.
-41. **Record 2: memory against the record.** The cause is the inputs: a saved memory, "Dave's approval limit is $10,000 from this year", against the approved concept, AP policy 4.1's $5,000.00. Step 2 shows it, and no knowledge file was opened. The check finds the memory in the record's sources, and the Inspect quoted the memory and the policy's limit.
-    - Passed: the inputs, step 2, and both limits quoted.
-    - Missed: another cause only; or an Inspect without the two limits.
-42. **Record 3: the computer that was off.** Tools and permissions: step 2's "the computer is not available", because a cloud task reaches files on Maria's laptop only while the desktop app is open. And the brief: it carried on to "No differences" from 0 statement lines. The check asks whether the desktop app was open while the task ran. The Inspect quoted that it was closed from Friday, January 29, 6:15 p.m., to Monday, February 1, 8:50 a.m., and the task started at 7:40 a.m. that Monday.
-    - Passed: both causes, and the Inspect's times.
-    - Missed: one cause only; the inputs as the first cause; or an Inspect with no times.
+38. **The three repeated corrections.** Credit memos listed as amounts owed: a rule, in standing instructions, such as "A credit memo is never an amount owed." Amounts shown without cents: a procedure, in the note's skill or layout, or a rule, in standing instructions. No flag for small suppliers near the 15-day promise: a reference, the promise as a concept, through its owner; or a step in the note's skill that reads the promise once it is approved.
+    - Passed: all three homes, each in the contract where its home says, written as the fix.
+    - Missed: a correction with no home; a home in the wrong place, such as credit memos left in a chat; or a line that states the failure instead of the fix.
+39. **The replies, and the one-off.** Maria's and Jordan's replies to the same kind of dispute look nothing alike: variance, so a procedure, a skill for dispute replies. NMP-3420 and NMP-3424 shown in USD, seen once, on December 3: not yet, so it is watched; or a rule that each invoice shows its own currency. Either is fine: the currency is not scored in this lab.
+    - Passed: the replies a procedure.
+    - Missed: the replies left with no home.
+40. **The promise goes to its owner.** Maria may not add the 15-day promise to the worker's rules herself: no approved concept holds it, so it goes to Dave, who owns the concepts. The contract says so under "Knowledge sources", after the line on the small-supplier promise.
+    - Passed: the promise sent to Dave, written in the contract.
+    - Missed: Maria adds the promise as a rule herself; or no owner named.
+41. **Accuracy first.** Against the baseline of January 7, 40 minutes of corrections, the first measure is accuracy, such as how many corrections a note needs, before speed: a quick note that is wrong costs a payment. The contract's "Before Draft 8 is kept:" line says it.
+    - Passed: accuracy first, with a reason.
+    - Missed: speed or minutes first; or no measure.
+42. **Side by side, approvals on.** The old and new setups run side by side for two or three Thursdays. Approvals stay on meanwhile. The worker gets back only its normal authority, the authority its contract gives, when Dave agrees the fix has worked. The "Before Draft 8 is kept:" line says so, and the contract's first line reads "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027".
+    - Passed: two or three Thursdays, approvals on, Dave agrees, and Draft 8 dated.
+    - Missed: one Thursday; full authority back with no one agreeing; authority beyond the contract; or the contract left undated.
 
 ## Why
 
-Four failures are common once a worker uses add-ons and runs while you are away, and each lives in one of the same five places (Lesson 11.3). An update that changes the output lives wherever it changed the steps, so the check is to find what changed: here, step 5 of invoice-review, which used to leave a bank-detail request out and list it for a person.
+A fix that stays in one chat will be needed again by someone else (Lesson 11.6). Ask one question of each correction: is it a rule, a reference, a procedure or a boundary? A rule is a limit that always applies, so it loads with every conversation. Steps done in order belong in a skill, because "a procedure written as one instruction loses its steps".
 
-A bank-detail change is never noted from an email. It goes to a person, who calls back on the number already on the vendor record. A saved memory against the record is the inputs: the record wins, and the memory is corrected or deleted (Chapter 8). And a task that cannot reach its input should stop and say so, as Friday's should have.
+The promise is material the worker must read, so it lives in the KSoR, through its owner. A change to an approved rule or concept is escalated, not made (Lesson 11.5): Maria sends Dave the log and a draft, and Dave decides.
+
+Measure before you switch: a baseline, a metric that fits the work, and the old and new setups side by side for a few cycles. "One clean run is a first check, not proof" (Lesson 11.5).
 
 ## Never a deduction
 
-- Payments to Greenway also held until the callback.
-- The three invoices that need Dave under policy 4.1, named or not.
-- Record 2's memory deleted, or corrected, as the fix.
-- The desktop app's hours quoted, or the times only.
+- Credit memos also given a step in the note's skill, beside the rule.
+- The small-supplier flag placed as a reference, as a procedure step that reads it, or both.
+- A draft of the promise's concept, written for Dave.
+- Two Thursdays or three.
+- "Normal authority", "full authority" or "the authority in the contract", when it is no wider than the contract.
+- Speed named as the second measure.
 
 ## Take it to work
 
-Which add-ons, memories or files on your own computer does your AI rely on?
+Which correction do you make every week, and where would it live once?

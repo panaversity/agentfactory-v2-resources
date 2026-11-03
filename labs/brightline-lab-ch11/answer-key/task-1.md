@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 1 carries checks 1 to 2 of the lab's 47.
+Task 1 carries checks 1 to 2 of the lab's 51.
 
 1. **Not scored: a first place for each failure.** Under "First places to look", one line for each of Maria's four reports, each naming a place to look before anything changes: one of the five causes, one of the checks for a missing output, or a record or file to open. Which place you chose is not scored. The look back at the end compares it with what each record showed.
     - Passed: four lines, each naming a place to look.
@@ -19,7 +19,7 @@ Task 1 carries checks 1 to 2 of the lab's 47.
 
 Dave's two fixes change the biggest things in sight: the model, and every brief. Lesson 11.3 says to find the place first, because "the most expensive change, such as a stronger model or a full rewrite, often fixes none of the real causes". So the first step is only a place to look. A fix is not a place.
 
-The test ran Draft 7, the lines that ran the week, on your own app. Keep its reply in the chat. Task 12 runs the same five cases again, on the same app, with the contract you will have fixed by then, so you can compare the two replies line by line.
+The test ran Draft 7, the lines that ran the week, on your own app. Keep its reply in the chat. Task 13 runs the same five cases again, on the same app, with the contract you will have fixed by then, so you can compare the two replies line by line.
 
 ## Never a deduction
 

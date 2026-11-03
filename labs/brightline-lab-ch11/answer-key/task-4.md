@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 4 carries checks 11 to 17 of the lab's 47.
+Task 4 carries checks 11 to 17 of the lab's 51.
 
 11. **The lever is the brief, and your line matches a resend.** The lever is the brief: the email check's lines. Your line, new under its "A copy:" line, flags a resend as a possible copy for Maria, such as the same vendor and amount, with the same number but for a suffix like "-R". The "A copy:" line and the duplicate concept stay as they are.
     - Passed: the brief, a line that flags 7781-R against 7781, and the "A copy:" line and the concept kept.

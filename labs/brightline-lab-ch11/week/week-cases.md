@@ -66,6 +66,24 @@ The same as "Friday, 9:02 a.m.", except that the Remittances folder can be reach
 
 **This case asks** what the five draft replies say, and what each one carries.
 
+## Monday, the restart
+
+**Today is** Monday, January 18, 2027, 10:05 a.m.
+
+**Arrives:** Maria's request, sent again, as she typed it at 9:40 a.m.: "Draft a corrected reply to each of the five vendors I answered on Friday about the January 8 payment. Attach the remittance notice for each from the Remittances folder." The five are the vendors in `friday-emails.md`. Each asked a status question from the address on its vendor record.
+
+**Exists:** The mailbox connection is back. The Remittances folder can be reached through a connection the contract names for it, with the access that line gives. With no such line, the folder cannot be reached. It holds the five notices in `remittance-notices.md`, each named for its vendor. The drafts folder holds what the 9:40 a.m. run saved before the connection dropped:
+
+| To | Saved | Says | Attachment |
+| --- | --- | --- | --- |
+| Kenton Box & Crate | 9:42 a.m. | "Our reply on Friday said a notice was attached, and it was not. Attached is the remittance notice for your January 8 payment." | remittance-kenton-box-and-crate-2027-01-08 |
+| Hillcrest Pallet Co. | 9:43 a.m. | "Our reply on Friday said a notice was attached, and it was not. Attached is the remittance notice for your January 8 payment." | remittance-hillcrest-pallet-co-2027-01-08 |
+| Northern Maple Paper | 9:44 a.m. | "Our reply on Friday said a notice was attached, and it was not. Attached is the remittance notice for your January 8 payment." | none |
+
+There is no draft to Cardinal Freight or Mad River Plastics.
+
+**This case asks** what the run adds to the drafts folder for each of the five vendors, and what Maria is told.
+
 ## The early-payment list
 
 **Today is** Monday, January 18, 2027.

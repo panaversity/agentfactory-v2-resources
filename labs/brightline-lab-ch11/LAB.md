@@ -2,13 +2,14 @@
 
 Chapter 11 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 11: where each failure lives](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/lab/), so you can do the lab without the book.
 
-In the week of January 11, 2027, Brightline's AP Worker failed four times. On Friday afternoon Dave Kowalski, the controller, said: "Switch to the most expensive model, and Maria, rewrite every brief from scratch." Most people do that when their AI goes wrong: they change the biggest thing they can see. In this lab you do what [Chapter 11](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/overview/) teaches instead. You stop what is still running, read each run's record, and find where each failure lives before you change anything. Then you change one thing at a time, and test each change on the input that failed. At the start, the January setup runs the week again and fails. At the end, your fixed Role Contract runs the same week, on the same app, with no stronger model. You decide every answer. The AI shows the records, asks the questions, writes your decisions into two documents, and tests each line. It takes about three and a half hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+In the week of January 11, 2027, Brightline's AP Worker failed four times. On Friday afternoon Dave Kowalski, the controller, said: "Switch to the most expensive model, and Maria, rewrite every brief from scratch." Most people do that when their AI goes wrong: they change the biggest thing they can see. In this lab you do what [Chapter 11](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/overview/) teaches instead. You stop what is still running, read each run's record, and find where each failure lives before you change anything. Then you change one thing at a time, and test each change on the input that failed. At the start, the January setup runs the week again and fails. At the end, your fixed Role Contract runs the same week, on the same app, with no stronger model. You decide every answer. The AI shows the records, asks the questions, writes your decisions into two documents, and tests each line. It takes about three and three-quarter hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
 **What you will learn:**
 
 - To stop a failing job, hold what it set in motion, and tell what it only drafted from what it changed in a system.
 - To read a run's task record before you change anything, and to find the record line that shows each cause.
 - To tell a run that worked from one that only ran, and to give a job a success signal and a check from outside it.
+- To find out what a stopped run already did before you restart it, so that nothing is done twice.
 - To place a failure in one of five causes, check the quickest place first, and look for a second cause.
 - To read usage before you blame a brief, and to keep recurring work on a seat with a named budget owner.
 - To fix the brief, the inputs or the permissions, one change at a time, and to test each fix on the input that failed.
@@ -22,7 +23,7 @@ Download [`brightline-lab-ch11.zip`](https://github.com/panaversity/agentfactory
 - `README.md`
 - `LAB.md`: this page, as a file
 - `inputs.zip`: the records of what went wrong, the AP Worker's Role Contract as Draft 7, and the questions the AI asks you in each task. You give it to the AI in Task 1.
-- `week.zip`: the week's cases, and only the files a run could reach that week. You give it to the AI in Task 1, and again in Task 12.
+- `week.zip`: the week's cases, and only the files a run could reach that week. You give it to the AI in Task 1, and again in Task 13.
 
 You don't need to open either zip. The answer keys are not in the folder. Each task downloads its own, so you meet none early.
 
@@ -35,11 +36,11 @@ You don't need to open either zip. The answer keys are not in the folder. Each t
 
 ## How each task works
 
-You use two chats. Tasks 1 to 11, and the first step of Task 12, run in one lab chat. The rest of Task 12 runs in a new chat, to prove the fixed contract works with nothing else in view.
+You use two chats. Tasks 1 to 12, and the first step of Task 13, run in one lab chat. The rest of Task 13 runs in a new chat, to prove the fixed contract works with nothing else in view.
 
 **Your two documents.** In Task 1, the AI opens two documents beside your chat: Claude Docs in Claude, or Writing blocks in ChatGPT's side panel.
 
-- **"AP Worker Role Contract"** starts as Draft 7, as it stood on Monday, January 11, 2027. Your fixes change it into Draft 8, and the AI marks each changed line "[Draft 8]". Every test reads it, and in Task 12 it goes to the new chat.
+- **"AP Worker Role Contract"** starts as Draft 7, as it stood on Monday, January 11, 2027. Your fixes change it into Draft 8, and the AI marks each changed line "[Draft 8]". Every test reads it, and in Task 13 it goes to the new chat.
 - **"What went wrong"** holds your notes on the week: where you looked first, what you stopped and held, each cause with its record line and its check, the checks Maria skipped, and where each correction lives. No test reads it. It is the note a team keeps after a failure.
 
 The AI writes each of your decisions into the document the task names, and changes nothing else. Change a document only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
@@ -59,11 +60,11 @@ The AI writes each of your decisions into the document the task names, and chang
 
 A file counts only if a contract line names it. What only the chat knows is "no line decides", even when the answer would be right. A test reads your contract and quotes it. It does not answer as the worker. This is [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s rule, "re-run on the same input": each test runs the case that failed. `Test: the week` runs the week's five cases in a row, from Tuesday morning to Friday morning.
 
-**What an Inspect is.** In four tasks you name a one-minute check, the kind [11.3](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/) describes. `Inspect: my check` runs your check, as you named it, on the lab's files. It reports only what the files show, quoted: names, dates, rows and figures. It names no cause, and does not say whether your guess was right. A check that finds nothing reports what it compared, because that makes the place less likely, though it is not proof.
+**What an Inspect is.** In five tasks you name a one-minute check, the kind [11.3](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/) describes. `Inspect: my check` runs your check, as you named it, on the lab's files. It reports only what the files show, quoted: names, dates, rows and figures. It names no cause, and does not say whether your guess was right. A check that finds nothing reports what it compared, because that makes the place less likely, though it is not proof.
 
 ### The check prompt
 
-One prompt checks every task, in the lab chat and in Task 12's new chat. Attach the task's key first, then send:
+One prompt checks every task, in the lab chat and in Task 13's new chat. Attach the task's key first, then send:
 
 ```text
 Outcome:     The task I just finished, graded against the newest
@@ -89,7 +90,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. Open a new chat: your lab chat, for Tasks 1 to 12.
+1. Open a new chat: your lab chat, for Tasks 1 to 13.
 2. Attach `inputs.zip` and `week.zip`, and send the brief for your app. There are two, the same but for the documents' name: Claude's first, then ChatGPT's.
 
    ```text tab="Claude" tab-group="vendor"
@@ -291,65 +292,86 @@ It is Monday, January 18.
 
 **At work**, ask: when a step fails, does my AI stop and say so, or carry on?
 
+### Task 9. The replies that stopped (15 minutes)
+
+It is Monday, January 18.
+
+**Dave asks:** "Maria's corrected replies stopped this morning when the connection dropped. Its last message says two are saved. Run it again from the top, so all five are done."
+
+**What you do:**
+
+1. In your lab chat, type "Task 9" and send it. The AI shows Dave's words and the run's task record. Answer: what shows you what the run already did, and why not its last message.
+2. The AI asks for your one-minute check. Answer in a few words. When it says "Ready for your Inspect", type `Inspect: my check` and send it.
+3. The AI shows the five vendors. For each, answer: is its reply done, and if not, what is left to do?
+4. The AI shows [11.2](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s lines on a restart. Answer: which of the run's actions does no harm if done twice, which adds something, and what a run from the top would leave in the drafts folder.
+5. Answer: does this run carry on from where it says it stopped, or does a new run start, and from what?
+6. The AI shows the email check's "Twice:" line and the contract's lines on replies. Answer with your line: what a run checks before it saves a draft, and what it does when a draft is already there, with its notice and without it.
+7. When the AI says "Ready for your test", type `Test: Monday, the restart` and send it.
+8. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 31 to 34 passed.
+
+**At work**, when a job stops partway, ask: what is already there, and what would a second run add?
+
 ## Monday, January 18: the discounts, and the fixes that last
 
-### Task 9. The discounts (15 minutes)
+### Task 10. The discounts (15 minutes)
 
 **Dave asks:** "Before I approve January's early-payment list, are these discounts right?"
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows the worker's draft of the list. Answer: one kind of error, or many, and which cause.
+1. In your lab chat, type "Task 10" and send it. The AI shows the worker's draft of the list. Answer: one kind of error, or many, and which cause.
 2. The AI asks for your one-minute check. When it says "Ready for your Inspect", type `Inspect: my check` and send it.
 3. The AI shows the contract's skills. Answer with your line: how the worker works out each discount and amount to pay from now on.
 4. When the AI says "Ready for your test", type `Test: the early-payment list` and send it.
-5. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
+5. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 31 to 33 passed.
+**Checkpoint.** Checks 35 to 37 passed.
 
 **At work**, ask: which numbers does my AI work out in sentences?
 
-### Task 10. Where each correction lives (20 minutes)
+### Task 11. Where each correction lives (20 minutes)
 
 **Dave asks:** "Maria fixes the same three things in the note every Thursday, and Jordan fixes different ones. Make that stop, and show me it works before we switch. The 15-day promise to small suppliers is in my memo of March 3, 2025."
 
 **What you do:**
 
-1. In your lab chat, type "Task 10" and send it. The AI shows Maria's correction log, the two replies to the same kind of dispute, and [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
+1. In your lab chat, type "Task 11" and send it. The AI shows Maria's correction log, the two replies to the same kind of dispute, and [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
 2. The AI shows Dave's words, the contract's knowledge lines, and [11.5](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
 3. The AI shows [11.6](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
 4. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
-5. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
+5. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 34 to 38 passed.
+**Checkpoint.** Checks 38 to 42 passed.
 
 **At work**, ask: which correction do I make every week, and where would it live once?
 
 ## Thursday, February 4: three weeks later
 
-### Task 11. Three more records (20 minutes)
+### Task 12. Three more records (20 minutes)
 
 **Dave asks:** "Three more went wrong this week. Same method: where does each one live?"
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI shows the five causes, then three task records from February, one at a time. For each, answer: the cause, or two, each with the step that shows it, and your one-minute check. For the first record, the AI also asks what happens now to Greenway's request to change its bank account.
+1. In your lab chat, type "Task 12" and send it. The AI shows the five causes, then three task records from February, one at a time. For each, answer: the cause, or two, each with the step that shows it, and your one-minute check. For the first record, the AI also asks what happens now to Greenway's request to change its bank account.
 2. When the AI says "Ready for your Inspect", type `Inspect: my check` and send it. It runs your three checks.
-3. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
+3. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 39 to 42 passed.
+**Checkpoint.** Checks 43 to 46 passed.
 
 **At work**, ask: which add-ons, memories or files on my own computer does my AI rely on?
 
 ## The proof
 
-### Task 12. The same week again (15 minutes)
+### Task 13. The same week again (15 minutes)
 
 **Dave asks:** "The side-by-side Thursdays are done. Before I switch for good, run the week of January 11 again: no stronger model, nothing but the contract and what a run can reach."
 
 **What you do:**
 
-1. In your lab chat, type "Task 12" and send it. The AI shows your contract's first line.
+1. In your lab chat, type "Task 13" and send it. The AI shows your contract's first line.
 2. Download "AP Worker Role Contract" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-role-contract.md`. Download "What went wrong" the same way, and keep it.
 3. Open a new chat on the same app, with memory off. Attach your downloaded contract and `week.zip`, the same file as in Task 1. Send this:
 
@@ -370,19 +392,19 @@ It is Monday, January 18.
                 not fill the gap.
    ```
 
-4. **Check it now, in the new chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run.
+4. **Check it now, in the new chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-13.md). Attach it, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run.
 5. Missed a check? Find the case it grades, and the line that should decide it. Back in your lab chat, name the line, let the AI change the contract, and send that case's test there. Then download the contract again, open another new chat with memory off, and run it again.
 
 With an account on the other AI vendor, you can run the same message there too, after the check. It is not checked.
 
-**Checkpoint.** Checks 43 to 47 passed, in a chat that has only your contract and the week's files.
+**Checkpoint.** Checks 47 to 51 passed, in a chat that has only your contract and the week's files.
 
 **At work**, before you switch to a stronger model, ask: what does the same input give after the setup changes?
 
 ## If something goes wrong
 
 - **The AI put a document in the chat, not beside it.** Ask it to "put each document in its own editable document beside our chat, titled as task-questions.md says: a Claude Doc in Claude or a Writing block in ChatGPT."
-- **Your app shows no document beside the chat.** Keep each document in the chat. At the end of each task, and before each test, ask the AI to print that whole document, and tell it once that "the document" is the last whole copy it printed. In Task 12, save the contract's text in a file on your computer, named `ap-worker-role-contract.md`, and attach that file.
+- **Your app shows no document beside the chat.** Keep each document in the chat. At the end of each task, and before each test, ask the AI to print that whole document, and tell it once that "the document" is the last whole copy it printed. In Task 13, save the contract's text in a file on your computer, named `ap-worker-role-contract.md`, and attach that file.
 - **The AI made a new document instead of changing one it had.** Say: "Change the first document. Do not make a new one."
 - **The AI changed a line's other words, or a line you did not decide.** Say which line, and send your decision again: "Change only what I decided, and keep the line's other words."
 - **The AI added a source, a number, a time, a person or a rule you did not give.** Say which line: "Write only what I decided."
@@ -391,7 +413,7 @@ With an account on the other AI vendor, you can run the same message there too, 
 - **The AI won't open a zip.** Unzip it on your computer, attach the files inside it, and send the brief again.
 - **A test quotes a line that is not in your contract, or misses a line you added.** Say: "Read the documents again." Then send the test again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
-- **In Task 12, the reply shows the run read no contract.** Check the attachment, and run it again in a new chat, before you attach the key.
+- **In Task 13, the reply shows the run read no contract.** Check the attachment, and run it again in a new chat, before you attach the key.
 - **Late in the lab, the AI forgets a rule from your brief.** Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
@@ -404,7 +426,7 @@ Your vertical is the line of work you know best. In your lab chat, send "Your ow
 - In Task 1, where did you look first for each failure? Which record showed you were right, and which showed another place?
 - Which failure lived in two places, and which second cause would you have missed if you had stopped at the first?
 - Which fix was not yours to make, and whose was it?
-- What changed between Task 1's test and Task 12's: the model, or the lines where each cause lived?
+- What changed between Task 1's test and Task 13's: the model, or the lines where each cause lived?
 
 ## When you are done
 
