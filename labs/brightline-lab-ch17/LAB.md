@@ -340,11 +340,11 @@ The lab spreads the work across the three coding agents on purpose, so each one 
 
    > *Outcome.* The repository's rules guard every deploy, in words and in settings. In `AGENTS.md`, a section called Deploying with five rules: deploy staging before production, and production only when I say so in this session. Deploy only with the npm scripts, the workflow, or a command I give you, and never run `wrangler secret put`. Before any rollback, show me the version list and the version you chose, and wait. Stop at the first error and report it, and do not try another way. A deploy is done only when the conformance suite reports `0 failed` against the deployed address. In `.claude/settings.json`, *ask* rules for `npm run deploy`, `npm run secrets`, `npx wrangler` with `deploy`, `rollback`, `secret`, `versions deploy` and `delete`, `uv run pywrangler deploy`, `gh workflow run`, `gh secret set`, `gh pr merge` and `git push`, and a *deny* rule for `npx wrangler secret put`. In `opencode.jsonc`, shell rules that make the same commands ask, and deny `secret put`.
    >
+   > *Context.* `AGENTS.md`, `.claude/settings.json` and `opencode.jsonc`.
+   >
    > *Format.* Show me each file's diff.
    >
-   > *Inputs.* `AGENTS.md`, `.claude/settings.json` and `opencode.jsonc`. Keep every rule already in them.
-   >
-   > *Autonomy.* Plan only, and wait. Edit no other file.
+   > *Constraints.* Keep every rule already in those files. Plan only, and wait. Edit no other file.
 
    Read the plan, switch to *Manual*, and let it make the change. Check the diff: `AGENTS.md` has the five rules under Deploying. `.claude/settings.json` has an `"ask"` list with twelve entries, each starting `Bash(`, one for each command named in the brief, and `"Bash(npx wrangler secret put *)"` added under `"deny"`, with the old deny rules still there. `opencode.jsonc` has twelve `"ask"` shell lines and one `"deny"` line for `secret put`. These are the two guards from Chapter 12: the words explain the rule, and the setting makes Claude Code and OpenCode ask even if a session is left in a looser mode. Ask the agent to commit. Start a fresh session for step 2.
 2. Ask Claude Code: "In `servers/ap-ts/wrangler.jsonc`, keep production at the top level and add `env.staging`. Repeat the `assets` binding and `observability` in staging, because they are not inherited. Turn Version URLs off for production and on for staging. Add npm scripts `dev:staging`, `deploy:staging`, `deploy` (with `--env=""`) and `check:deploy`, which dry-runs both environments, and `secrets:staging` and `secrets:production`, which send `.secrets/staging.env` and `.secrets/production.env` with `wrangler secret bulk`. At the root, add `conformance:staging` and `conformance:production`, which run the suite with `node --env-file` reading that environment's key file and `.secrets/<environment>.urls.env`. Make git ignore every `.dev.vars*` file except the example. Do the same configuration for `servers/ap-py`." Give it in *Plan* mode first, read the plan, then switch to *Manual*. Read the diff and check four things. Under `staging`, both `assets` and `observability` appear. `preview_urls` is `false` at the top and `true` under `staging`. `servers/ap-ts/package.json` has five new scripts, and `deploy` now uses `--env=""`, and the root has the two `conformance:` scripts. `.gitignore` has a line for `.dev.vars*` and a line starting with `!` for the example file.
@@ -361,13 +361,13 @@ The lab spreads the work across the three coding agents on purpose, so each one 
 
 **The brief.** Start a fresh Claude Code session, set *Plan* mode, and send this Four-Part Brief:
 
-> *Outcome.* The TypeScript connector online at Cloudflare in two environments, staging first, then production, each with its own keys. Follow field guide F6, "Your first deploy, in order": the deploy and keys commands in steps 4, 5 and 7. Another agent saves the addresses and runs every check, in steps 6, 7 and 8.
+> *Outcome.* The TypeScript connector online at Cloudflare in two environments, staging first, then production, each with its own keys. Follow field guide F6, "Your first deploy, in order": the deploy and keys commands in steps 4, 5 and 7. Another agent saves the addresses and runs every check, in steps 6, 7 and 8. Done when both environments are deployed with their own keys, and the table at the end lists each one's address and version IDs.
+>
+> *Context.* `servers/ap-ts`, the npm scripts from Task 18a, and the key files in `.secrets/`, used only as inputs to `npm run secrets:staging` and `npm run secrets:production`.
 >
 > *Format.* After each command, show me the command and the lines that prove it worked: the address, the version ID, or the "secrets successfully created" line. At the end, a table with each environment's address, the version ID of its deploy, and the version ID of its keys.
 >
-> *Inputs.* `servers/ap-ts`, the npm scripts from Task 18a, and the key files in `.secrets/`, used only as inputs to `npm run secrets:staging` and `npm run secrets:production`. Never open, print or copy a key file.
->
-> *Autonomy.* Plan only. Show me the plan and wait. When I switch you to Manual, run one command at a time. After staging's keys are sent, stop and wait until I say the checks passed. Do not touch production until I say so. Stop at any error and report it.
+> *Constraints.* Never open, print or copy a key file. Plan only. Show me the plan and wait. When I switch you to Manual, run one command at a time. After staging's keys are sent, stop and wait until I say the checks passed. Do not touch production until I say so. Stop at any error and report it.
 
 Read the plan for four things: staging comes before production, keys are sent after each deploy, every production command has `--env=""` or uses `npm run deploy`, and no key file is opened. Then switch to *Manual*.
 

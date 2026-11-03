@@ -15,16 +15,17 @@ Task 5 carries checks 9 and 10 of the lab's 26.
    - no prose around the rows
    - Passed: all four. The policy section on each row comes with Maria's columns in Task 7.
    - Missed: any one missing, such as the columns from Lesson 5.7 with no row_id; or one row only for each invoice in the run, because Task 11 grades all 15 open invoices, those not yet due included.
-10. **A memo for Dave, decisions first, a note to Maria, and where each goes.** Your Format asks for:
+10. **A memo for Dave, decisions first, a note to Maria, where each goes, and what could not be verified.** Your Format asks for:
     - a one-page memo for Dave that starts with the decisions he must make
     - a short note in the chat, a few lines, saying what was held and why. It is for Maria, and it need not name her.
     - where each piece goes: the CSV to Maria's spreadsheet, the memo to Dave, the note in the chat
-    - Passed: all three.
-    - Missed: no memo; a memo that does not start with Dave's decisions; no note to Maria; or nothing on where a piece goes.
+    - that the memo or the note ends with anything the worker could not verify (Lesson 5.1)
+    - Passed: all four.
+    - Missed: no memo; a memo that does not start with Dave's decisions; no note to Maria; nothing on where a piece goes; or no line on what could not be verified.
 
 ## Why
 
-Who or what reads the result next decides its format (Lesson 5.7). Maria checks row by row against the invoice list, and an invoice number alone may not tell two of its rows apart, so each row carries the list's own row_id. Dave reads one page and decides, so his decisions come first. Maria wants a few lines in the chat, read once, now. Each reader gets the shape it can use. A CSV with one row per open invoice can be checked by a machine. Two pages of prose can only be read.
+Who or what reads the result next decides its format (Lesson 5.7). Maria checks row by row against the invoice list, and an invoice number alone may not tell two of its rows apart, so each row carries the list's own row_id. Dave reads one page and decides, so his decisions come first. Maria wants a few lines in the chat, read once, now. Each reader gets the shape it can use. A last line on what the worker could not verify tells Dave and Maria where to start checking (Lesson 5.7). A CSV with one row per open invoice can be checked by a machine. Two pages of prose can only be read.
 
 ## Never a deduction
 

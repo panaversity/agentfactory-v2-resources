@@ -45,4 +45,4 @@ Compare this with your Task 9 answers. Where you said "stays", is it still there
 - **Did a fact you added make the AI skip a problem?** For example, once a brief says 4471-R is a copy, the AI may stop flagging it.
 - **Compare your first briefs with your final ones.** Your first ones are in your first conversation, if you can still open it. What do the final ones say that the first ones did not?
 
-Chapter 5 teaches the Four-Part Brief: outcome, format, inputs and autonomy. Each of your final briefs is a first draft of one.
+Chapter 5 teaches the Four-Part Brief: outcome, context, format and constraints. Each of your final briefs is a first draft of one.

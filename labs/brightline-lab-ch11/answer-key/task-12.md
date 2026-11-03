@@ -23,7 +23,7 @@ Task 12 carries checks 43 to 46 of the lab's 51.
 
 ## Why
 
-Four failures are common once a worker uses add-ons and runs while you are away, and each lives in one of the same five places (Lesson 11.3). An update that changes the output lives wherever it changed the steps, so the check is to find what changed: here, step 5 of invoice-review, which used to leave a bank-detail request out and list it for a person.
+Five failures are common once a worker uses add-ons, runs while you are away, or moves to a new model, and each lives in one of the same five places (Lesson 11.3). An update that changes the output lives wherever it changed the steps, so the check is to find what changed: here, step 5 of invoice-review, which used to leave a bank-detail request out and list it for a person.
 
 A bank-detail change is never noted from an email. It goes to a person, who calls back on the number already on the vendor record. A saved memory against the record is the inputs: the record wins, and the memory is corrected or deleted (Chapter 8). And a task that cannot reach its input should stop and say so, as Friday's should have.
 

@@ -214,7 +214,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows the Outcome's question from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and your notes on it from Tasks 1 and 2.
+1. In your lab chat, type "Task 3" and send it. The AI shows the Outcome's question and its line on "Done when" from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and your notes on it from Tasks 1 and 2.
 2. Write your Outcome. Send it as "Outcome:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. Its "What decided it" shows which guesses your Outcome now decides. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -244,7 +244,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question, with [5.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s three kinds of format, and your notes on it.
+1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question and its line from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with [5.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s three kinds of format, and your notes on it.
 2. Write your Format. Send it as "Format:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
