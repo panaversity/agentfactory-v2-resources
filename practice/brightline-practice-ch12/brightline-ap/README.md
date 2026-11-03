@@ -7,7 +7,6 @@ All names and numbers in this folder are invented for *The AI Agent Factory*, Ch
 - `data/` holds the exports: `invoices.csv` and `vendors.csv`. Amounts are in cents.
 - `src/` holds the scripts. There is one so far: `list-vendors.ts`.
 - `tests/` holds the tests.
-- `opencode.jsonc` holds safety settings for OpenCode. Other tools ignore it.
 
 Run the tests with `npm test`. Run the vendor list with `npm run vendors`.
 
