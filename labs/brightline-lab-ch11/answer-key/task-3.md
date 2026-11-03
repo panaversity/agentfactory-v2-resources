@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 3 carries checks 7 to 10 of the lab's 47.
+Task 3 carries checks 7 to 10 of the lab's 51.
 
 7. **Missing, so the missing-output checks first.** Tuesday's output was missing, not wrong. So the checks for a missing output come first, before the five causes: a pending approval or question, a pause, a usage limit, a broken connector or a different destination.
     - Passed: missing, and those checks first.

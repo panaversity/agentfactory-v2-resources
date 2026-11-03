@@ -6,7 +6,7 @@ The answers for Task 8 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 8 carries checks 27 to 30 of the lab's 47.
+Task 8 carries checks 27 to 30 of the lab's 51.
 
 27. **Two causes.** Tools and permissions: step 2's error, "access denied (authorization expired)", the first error in the record. And the brief: it had no rule for an attachment it cannot retrieve, so step 3 carried on, drafting replies.
     - Passed: both causes, each with its step.

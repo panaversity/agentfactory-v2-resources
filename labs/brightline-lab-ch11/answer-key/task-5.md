@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 5 carries checks 18 to 20 of the lab's 47.
+Task 5 carries checks 18 to 20 of the lab's 51.
 
 18. **The brief, and its empty part.** The cause is the brief, with Record B's line "No knowledge source was attached" or "No register was opened". Against the four parts, the Context is empty.
     - Passed: the brief, a record line, and the Context.

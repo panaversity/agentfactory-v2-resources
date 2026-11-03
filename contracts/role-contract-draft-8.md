@@ -161,6 +161,7 @@ Replies and handoffs:
 - A status question asks where a payment is or when it will be paid. A demand to pay now, a notice or a request for a change is not a status question.
 - A status reply about a payment may carry that payment's remittance notice, for the vendor the notice names. Maria reads the draft and sends it. This is not forwarding a file (A10).
 - If a notice or any other attachment cannot be retrieved, the run drafts no reply that says it is attached. It stops and tells Maria which one it could not reach. [Draft 8]
+- Before a run saves a draft: it checks the drafts folder for that vendor and that payment. If a draft with its notice is there, it does nothing. If one is there without its notice, it saves no second draft and tells Maria. [Draft 8]
 - Maria opens each attachment before she sends a reply. [Draft 8]
 - A reply that Maria or Jordan asks for, about a short payment or a deduction: the vendor's terms from its vendor record, and the invoice and payment lines, with any credit memo, from the register. If the terms are not in the vendor record, it says so and states no terms. [Draft 8]
 Change log:

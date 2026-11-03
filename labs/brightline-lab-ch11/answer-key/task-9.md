@@ -1,4 +1,4 @@
-# Lab 11 answer key: Task 9. The discounts
+# Lab 11 answer key: Task 9. The replies that stopped
 
 The answers for Task 9 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
@@ -6,31 +6,35 @@ The answers for Task 9 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 9 carries checks 31 to 33 of the lab's 47.
+Task 9 carries checks 31 to 34 of the lab's 51.
 
-31. **One kind of error: capacity, the wrong feature.** One repeated kind of error: small amounts, each different, while the rate and the invoice amounts are right. The cause is capacity, the wrong feature: arithmetic written in sentences.
-    - Passed: one kind, and capacity or the wrong feature.
-    - Missed: many kinds; or another cause only.
-32. **The check, and what it showed.** The check runs the calculation as code, or in a spreadsheet. The Inspect gave a "Compared:" line for each of the eight invoices. Five discounts are wrong: 5134 is $124.31, 5186 is $34.85, 5237 is $413.00, 5254 is $182.55 and 5288 is $48.00. Three are right: 5151 ($77.60), 5271 ($10.26) and 5305 ($280.11).
-    - Passed: a calculation as code, in a spreadsheet or with a calculator, and the Inspect's eight lines, with these figures.
-    - Missed: a check by eye; a wrong figure; or a right discount called wrong.
-33. **Your line, and the test.** Your line, new under "Skills", makes each discount and each amount to pay a calculation, such as code, never sentences. `Test: the early-payment list` gives all eight discounts right, with the amounts to pay ($6,091.09, $3,802.55, $1,707.75, $20,237.00, $8,944.80, $502.54, $2,351.99 and $13,725.44), and quotes your line as how they were worked out.
-    - Passed: your line, all eight right, and your line quoted.
-    - Missed: no line; a figure wrong; or "no line decides" how they were worked out.
+31. **Where you looked.** What shows what the run did is where its work lands: the drafts folder. The last message and the status file say only what the run thought it had finished. Your check compares each of the five vendors with the drafts folder, and the Inspect gave a "Compared:" line for each.
+    - Passed: the drafts folder, and the Inspect's five lines.
+    - Missed: the last message, the record or the status file only; or no line for a vendor.
+32. **What landed.** Kenton Box & Crate and Hillcrest Pallet Co. are done: each draft carries its notice. Northern Maple Paper is not done: its draft is there, it says "Attached", and nothing is attached. Cardinal Freight and Mad River Plastics are left: neither has a draft.
+    - Passed: all five, with Northern Maple's draft named as there without its notice.
+    - Missed: Northern Maple counted as done; or counted as left, with no word of the draft already there.
+33. **What a restart would do.** Saving a draft adds something. Rewriting the status file does no harm. From the top, Kenton, Hillcrest and Northern Maple each get a second draft, and Northern Maple's empty one is still there. A restart is a new run that starts from the five emails, the notices and your list of what landed, not this run carrying on from where it says it stopped.
+    - Passed: the action that adds, the action that does not, the second drafts, and a new run from the inputs and your list.
+    - Missed: from the top called safe; or the run left to carry on from its own account.
+34. **Your line, and the test.** Your line, new under "Replies and handoffs": before a run saves a draft, it checks the drafts folder for that vendor and that payment. With a draft that has its notice, it does nothing. With one that does not, it tells Maria. `Test: Monday, the restart` adds one draft each for Cardinal Freight and Mad River Plastics, each with its own notice, adds nothing for Kenton or Hillcrest, tells Maria about Northern Maple, and quotes your line. **The hard rule.** A run that sends anything, or a line that skips any vendor with a draft and tells no one, fails this check.
+    - Passed: your line, the test as above, and the hard rule holds.
+    - Missed: no line; a second draft for Kenton or Hillcrest; Northern Maple skipped with no one told; or the hard rule broken.
 
 ## Why
 
-"When one kind of error repeats, that suggests the wrong feature" (Lesson 11.3). The rate is 2 percent every time, and the invoice amounts are right, yet the results are off by a few cents to $41.30. So the arithmetic is the place, and the cheapest check is the arithmetic itself, run as code. That check is also the fix: a line that makes the worker calculate, not write the sums out.
+"A finished-looking reply proves nothing either way, and neither does the worker's account of where it stopped" (Lesson 11.2). The run said two. The drafts folder held three, because the connection dropped after the third draft was saved and before its notice was attached. So you look where the work lands, and list what is there, before you restart.
 
-The three right discounts matter too. A check that finds nothing wrong for an item still says what it compared, so you can see it was checked.
+"An action that adds something, such as a row in a queue, a message or a payment, adds it again" (Lesson 11.2). A draft is a message on its way out, so two drafts to one vendor can become two emails. The answer is the same as for a trigger that fires twice (Lesson 9.3): before a run adds anything, it checks whether that thing is already there. Here it must also check that what is there is whole. "Skip any vendor with a draft" would leave Northern Maple's empty draft waiting to go, and that is Friday's failure again.
 
 ## Never a deduction
 
-- The brief named as a second cause, because it asked for working shown in the note.
-- Amounts to pay shown in the Inspect, or not.
-- "In a spreadsheet" for "as code".
-- Rounding shown, or not.
+- Northern Maple's draft finished by the run, redone, or left for Maria to finish, as long as Maria is told.
+- Northern Maple's reply in Canadian dollars, or sent to Dave.
+- The status file named in your check, or not.
+- The wording of the corrected replies.
+- A remark on why the connection dropped, or on where Maria is told.
 
 ## Take it to work
 
-Which numbers does your AI work out in sentences?
+When a job stops partway, what is already there, and what would a second run add?

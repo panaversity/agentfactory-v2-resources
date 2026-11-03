@@ -6,7 +6,7 @@ The answers for Task 7 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 7 carries checks 24 to 26 of the lab's 47.
+Task 7 carries checks 24 to 26 of the lab's 51.
 
 24. **Change one, and its test.** The review opens AP Register 2027 by its link, or by a name no other file shares, in the Finance folder, through the shared-drive connection, and never as an upload. The "Inputs:" line's items 2 and 3, the AP matters record and the five concepts, stay. `Test: Thursday, 7 a.m.` reads AP Register 2027 and lists the invoices due by January 22, 2027: 31, worth $86,240.15.
     - Passed: the link or a name no other file shares, the folder, never an upload, the line's other inputs kept, and the test's list from the 2027 file.

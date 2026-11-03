@@ -10,7 +10,7 @@ This file is for the AI. When the learner sends "Task" and a number, ask that ta
 
 Open both in Task 1, beside the chat. Keep each to what it holds below. Read a document again before every test, every Inspect and every check.
 
-**"AP Worker Role Contract"** holds the AP Worker's Role Contract and nothing else. It starts as role-contract-draft-7.md, exactly as the file gives it, every line in order. The tasks change it as they say, and in Task 10 it becomes Draft 8. Every test reads it. No note, cause, check result or figure from a check ever goes in it.
+**"AP Worker Role Contract"** holds the AP Worker's Role Contract and nothing else. It starts as role-contract-draft-7.md, exactly as the file gives it, every line in order. The tasks change it as they say, and in Task 11 it becomes Draft 8. Every test reads it. No note, cause, check result or figure from a check ever goes in it.
 
 **"What went wrong"** holds the learner's notes on the week. It starts with these headings, and nothing under them:
 
@@ -20,10 +20,11 @@ Open both in Task 1, beside the chat. Keep each to what it holds below. Read a d
 4. Wednesday: the wrong terms
 5. Thursday: the note from last year's file
 6. Friday: "attached", with nothing attached
-7. Monday: the discounts
-8. Where each correction lives
-9. February: three more records
-10. Your own job
+7. Monday: the replies that stopped
+8. Monday: the discounts
+9. Where each correction lives
+10. February: three more records
+11. Your own job
 
 No test reads it.
 
@@ -274,7 +275,35 @@ Then say "Ready for your next test".
 
 **The second test:** `Test: Friday, 9:02 a.m.` After it, say "Task 8 is done".
 
-## Task 9. The discounts
+## Task 9. The replies that stopped
+
+Its day is Monday, January 18, 2027, 10:05 a.m.
+
+**Before the Inspect.**
+
+1. Show Dave's words, quoted: "Maria's corrected replies stopped this morning when the connection dropped. Its last message says two are saved. Run it again from the top, so all five are done." Then show Record E from corrected-replies-run.md, in full, under its heading. Ask: "Before anyone restarts this run, what shows you what it already did? And why not its last message? Answer: where you look, then why."
+2. Ask: "What one-minute check would show that? Answer: a few words."
+
+Write each answer under "Monday: the replies that stopped". Then say "Ready for your Inspect".
+
+**The Inspect:** `Inspect: my check`. After it, ask question 3.
+
+**After the Inspect.**
+
+3. Show the five vendors' names: Kenton Box & Crate, Hillcrest Pallet Co., Northern Maple Paper, Cardinal Freight and Mad River Plastics. Ask: "For each vendor: is its reply done, and if not, what is left to do? Answer: the vendor, then done or what is left, for each."
+4. Show Lesson 11.2's lines, quoted: "A restart is safe for an action that gives the same result when done twice, such as rewriting a report file. An action that adds something, such as a row in a queue, a message or a payment, adds it again." Then show Record E's line on what the run does for each vendor. Ask: "Which of the run's actions does no harm if done twice, and which adds something? And if the run went again from the top, as Dave says, what would the drafts folder hold for each vendor? Answer: the action that does no harm, the action that adds, then what the folder would hold."
+5. Show the last sentence of the run's last message, quoted: "Run me again and I will finish." Ask: "Does this run carry on from where it says it stopped, or does a new run start? And what does it start from? Answer: carry on or new, then from what."
+
+   Write answers 3, 4 and 5 under "Monday: the replies that stopped".
+6. Show Lesson 11.2's words, quoted: "before a run adds anything, it checks whether that thing is already there." Then show the "Twice:" line under "The invoice email check, standing spec", and the contract's lines under "Replies and handoffs". Ask: "Your line for replies, so a restart adds nothing twice: what does a run check before it saves a draft? What does it do when a draft is there with its notice? And when one is there without its notice, what does it do, and whom does it tell? Answer: a few words."
+
+   In the contract, add the learner's line as a new line under "Replies and handoffs", after the rule for an attachment the worker cannot retrieve, starting "Before a run saves a draft:".
+
+Then say "Ready for your test".
+
+**The test:** `Test: Monday, the restart`. After it, say "Task 9 is done".
+
+## Task 10. The discounts
 
 Its day is Monday, January 18, 2027.
 
@@ -293,9 +322,9 @@ Write each answer under "Monday: the discounts". Then say "Ready for your Inspec
 
    In the contract, add the learner's line as a new line under "Skills", starting "Discounts and amounts to pay:". Then say "Ready for your test".
 
-**The test:** `Test: the early-payment list`. After it, say "Task 9 is done".
+**The test:** `Test: the early-payment list`. After it, say "Task 10 is done".
 
-## Task 10. Where each correction lives
+## Task 11. Where each correction lives
 
 Its day is Monday, January 18, 2027.
 
@@ -318,9 +347,9 @@ Its day is Monday, January 18, 2027.
 4. Show Lesson 11.6's line, quoted, and nothing after it: "Then run the old and new setups at the same time for two or three cycles before you switch." And Lesson 11.5's: "*Resume with approvals on.* One clean run is a first check, not proof. Return to the normal authority in the Role Contract, the worker's one-page job definition, only when the worker's owner agrees the fix has worked. Never go beyond the Role Contract." Ask: "How many Thursdays do the old and new setups run side by side? Do approvals stay on meanwhile? When does the worker get back its normal authority, the authority its contract gives, and who agrees? Answer: the number, then yes or no, then when and who."
 
    Write it under "Where each correction lives", and in the contract at the end of the "Before Draft 8 is kept:" line.
-5. Now date the contract. Change its first line to "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027", and take out the line "As it stood on Monday, January 11, 2027." Add under "Change log": "- Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11." Show the first line and the change-log line. Say "Task 10 is done".
+5. Now date the contract. Change its first line to "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027", and take out the line "As it stood on Monday, January 11, 2027." Add under "Change log": "- Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11." Show the first line and the change-log line. Say "Task 11 is done".
 
-## Task 11. Three more records
+## Task 12. Three more records
 
 Its day is Thursday, February 4, 2027.
 
@@ -332,11 +361,11 @@ Its day is Thursday, February 4, 2027.
 
 Write each answer under "February: three more records". Then say "Ready for your Inspect".
 
-**The Inspect:** `Inspect: my check`, which runs the learner's checks for all three records. After it, say "Task 11 is done".
+**The Inspect:** `Inspect: my check`, which runs the learner's checks for all three records. After it, say "Task 12 is done".
 
-## Task 12. The same week again
+## Task 13. The same week again
 
-1. Show the contract document's first line. Say: "Download 'AP Worker Role Contract' from the document's menu, as .docx or .pdf, or copy its text into a file named ap-worker-role-contract.md. That is your Draft 8. Download 'What went wrong' the same way, and keep it." Ask nothing. Say "Task 12 continues in a new chat."
+1. Show the contract document's first line. Say: "Download 'AP Worker Role Contract' from the document's menu, as .docx or .pdf, or copy its text into a file named ap-worker-role-contract.md. That is your Draft 8. Download 'What went wrong' the same way, and keep it." Ask nothing. Say "Task 13 continues in a new chat."
 
 The proof runs in a new chat, which this file does not run.
 

@@ -6,7 +6,7 @@ The answers for Task 6 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 6 carries checks 21 to 23 of the lab's 47.
+Task 6 carries checks 21 to 23 of the lab's 51.
 
 21. **It ran, but did not work.** The run completed, from the wrong file. The cause is the inputs, and step 2 of Record C shows it: the search for "AP Register" found the closed 2026 file, `AP Register.csv`.
     - Passed: ran, not worked; the inputs; and step 2.

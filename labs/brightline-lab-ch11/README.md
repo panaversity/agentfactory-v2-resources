@@ -6,9 +6,9 @@ Chapter 11 of *The AI Agent Factory*, Second Edition. Every name, address, invoi
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and twelve tasks, each checked against its own answer key the moment it is done. |
+| `LAB.md` | The lab: the job, and thirteen tasks, each checked against its own answer key the moment it is done. |
 | `inputs.zip` | The records of what went wrong in the week of January 11, 2027, the AP Worker's Role Contract as Draft 7, and the questions the AI asks you in each task. You give it to the AI in Task 1. You don't need to open it. |
-| `week.zip` | The week's cases, and only the files a run could reach that week. You give it to the AI in Task 1, and again in Task 12's new chat. You don't need to open it. |
+| `week.zip` | The week's cases, and only the files a run could reach that week. You give it to the AI in Task 1, and again in Task 13's new chat. You don't need to open it. |
 
 **The lab's dates.** The lab runs from Friday, January 15, to Thursday, February 4, 2027, and each task says its day.
 

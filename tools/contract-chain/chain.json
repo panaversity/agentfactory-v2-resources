@@ -145,13 +145,13 @@
       ]
     },
     {
-      "name": "Lab 11's sample Draft 8 is its Draft 7 with Tasks 4 to 10's lines",
+      "name": "Lab 11's sample Draft 8 is its Draft 7 with Tasks 4 to 11's lines",
       "comment": "The chain's last draft. Each insertion is one task's decision, as a right learner's few words would make it; every line it adds is marked [Draft 8].",
       "shipped": "contracts/role-contract-draft-8.md",
       "source": "labs/brightline-lab-ch11/inputs/role-contract-draft-7.md",
       "cuts": [
         {
-          "name": "Task 10: the date, and the January line goes",
+          "name": "Task 11: the date, and the January line goes",
           "before": "Role Contract: AP Worker, Draft 7, Friday, December 11, 2026\nAs it stood on Monday, January 11, 2027.\n",
           "after": "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027\n"
         },
@@ -211,19 +211,24 @@
           "after": "Dave approved this version on Friday, November 6, 2026, after reading its steps and its test results from both places, and it is on where the AP Worker's work runs.\n- Discounts and amounts to pay: calculated as code, never in sentences. [Draft 8]\n- thursday-note: the note's checks and layout, with every amount shown to the cent. [Draft 8]\n- dispute-reply: replies about short payments, from Jordan's fixed request. [Draft 8]\nStanding instructions:\n- A credit memo is never listed as an amount owed. [Draft 8]\n"
         },
         {
-          "name": "Task 10: the small-supplier promise goes to Dave",
+          "name": "Task 11: the small-supplier promise goes to Dave",
           "before": "Until then, the five concepts stay the only knowledge.\n",
           "after": "Until then, the five concepts stay the only knowledge.\n- The small-supplier promise: Maria sends Dave the log and a draft concept. Dave decides. [Draft 8]\n"
         },
         {
-          "name": "Task 10: before Draft 8 is kept",
+          "name": "Task 11: before Draft 8 is kept",
           "before": "Keep the new way only if it is better on those numbers.\n",
           "after": "Keep the new way only if it is better on those numbers.\nBefore Draft 8 is kept: measure accuracy first, the corrections each note needs against the January 7 baseline. Run the old and new setups side by side for three Thursdays, with approvals on. The worker gets back the authority this contract gives only when Dave agrees. [Draft 8]\n"
         },
         {
-          "name": "Task 10: the change-log line",
+          "name": "Task 11: the change-log line",
           "before": "- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n",
           "after": "- Monday, December 14, 2026, Dave Kowalski: a status reply may carry its payment's remittance notice.\n- Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11.\n"
+        },
+        {
+          "name": "Task 9: a restart adds nothing twice",
+          "before": "- If a notice or any other attachment cannot be retrieved, the run drafts no reply that says it is attached. It stops and tells Maria which one it could not reach. [Draft 8]\n",
+          "after": "- If a notice or any other attachment cannot be retrieved, the run drafts no reply that says it is attached. It stops and tells Maria which one it could not reach. [Draft 8]\n- Before a run saves a draft: it checks the drafts folder for that vendor and that payment. If a draft with its notice is there, it does nothing. If one is there without its notice, it saves no second draft and tells Maria. [Draft 8]\n"
         }
       ]
     }
