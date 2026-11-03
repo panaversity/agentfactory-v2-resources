@@ -373,7 +373,7 @@ It is Monday, January 18.
 
 1. In your lab chat, type "Task 13" and send it. The AI shows your contract's first line.
 2. Download "AP Worker Role Contract" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-role-contract.md`. Download "What went wrong" the same way, and keep it.
-3. Open a new chat on the same app, with memory off. Attach your downloaded contract and `week.zip`, the same file as in Task 1. Send this:
+3. Open a new chat on the same app, with memory off. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. Attach your downloaded contract and `week.zip`, the same file as in Task 1. Send this:
 
    ```text
    Outcome:     The five cases of "The week" in week-cases.md, run by the

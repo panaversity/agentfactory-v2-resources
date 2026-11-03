@@ -358,7 +358,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. Download your document from its menu, as .docx or .pdf.
-2. Open a fresh chat with memory off. In Claude, turn off Memory in the "+" menu before you send anything. If you do not see it, memory is already off. In ChatGPT, open a temporary chat set to Unpersonalized. Attach your downloaded document and `inputs.zip`, and send:
+2. Open a fresh chat with memory off. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu before you send anything. If you do not see it, memory is already off. In ChatGPT, open a temporary chat set to Unpersonalized. Attach your downloaded document and `inputs.zip`, and send:
 
    ```text
    Outcome:     Monday, December 14, 2026, decided by Brightline's terms,
