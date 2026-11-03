@@ -14,7 +14,7 @@ Task 3 carries checks 5 and 6 of the lab's 26.
 6. **Who approves it, when it is due, what done means, and that it proposes.** Your Outcome says:
    - who approves it, and when: Dave, on Thursday, October 22
    - when it is due: the proposal by Tuesday, October 20
-   - what done means, in one sentence that starts "Done when" and that the worker can check itself: what the finished proposal holds, which is the invoices, each with what to do with it. "Done when every open invoice has an action and a reason" passes, and so does "Done when each invoice due by Friday, October 30, is marked to pay or hold". A list of invoices with no action for each misses. So does "Done when Dave approves it": the worker cannot check Dave's approval, which is his review (Lesson 5.1).
+   - what done means, in one sentence that starts "Done when" and that the worker can check itself: what the finished proposal holds, which is the invoices, each with what to do with it. "Done when every open invoice has an action and a reason" passes, and so does "Done when all 15 open invoices are marked, each with a reason". A sentence that also names Dave's approval still passes, such as "Done when every open invoice has an action, ready for Dave on Thursday". A list of invoices with no action for each misses. So does a sentence that names only Dave's approval, such as "Done when Dave approves it": the worker cannot check that, because it is his review (Lessons 5.2 and 5.5).
    - that it proposes the run and does not pay it. "Propose the payment run" passes.
    - Passed: all four. These two dates may leave out the year: check 5 scores it.
    - Missed: any of the four missing, such as no Tuesday deadline, no Thursday approval, or "pay these invoices".

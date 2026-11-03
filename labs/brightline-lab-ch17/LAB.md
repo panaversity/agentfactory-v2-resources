@@ -361,7 +361,7 @@ The lab spreads the work across the three coding agents on purpose, so each one 
 
 **The brief.** Start a fresh Claude Code session, set *Plan* mode, and send this Four-Part Brief:
 
-> *Outcome.* The TypeScript connector online at Cloudflare in two environments, staging first, then production, each with its own keys. Follow field guide F6, "Your first deploy, in order": the deploy and keys commands in steps 4, 5 and 7. Another agent saves the addresses and runs every check, in steps 6, 7 and 8.
+> *Outcome.* The TypeScript connector online at Cloudflare in two environments, staging first, then production, each with its own keys. Follow field guide F6, "Your first deploy, in order": the deploy and keys commands in steps 4, 5 and 7. Another agent saves the addresses and runs every check, in steps 6, 7 and 8. Done when both environments are deployed with their own keys, and the table at the end lists each one's address and version IDs.
 >
 > *Context.* `servers/ap-ts`, the npm scripts from Task 18a, and the key files in `.secrets/`, used only as inputs to `npm run secrets:staging` and `npm run secrets:production`.
 >
