@@ -1,6 +1,6 @@
 # The AI Agent Factory, Second Edition: Resources
 
-The files you need for the hands-on parts of *The AI Agent Factory*, Second Edition. There is one folder for each lab. Every name, number and company in them is invented.
+The files you need for the hands-on parts of *The AI Agent Factory*, Second Edition. There is one folder for each lab, and one for Chapter 12's short practice exercises. Every name, number and company in them is invented.
 
 ## Get a lab
 
@@ -22,6 +22,7 @@ You can also download a lab here:
 | 10. Governance and Responsible Use | Yes, on these terms | [brightline-lab-ch10.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10.zip) |
 | 11. When the Worker Goes Wrong | Where each failure lives | [brightline-lab-ch11.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11.zip) |
 | 12. Agentic Coding: Claude Code, Codex and OpenCode | The first repository, on three agents | [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) |
+| 12. Agentic Coding: short practice exercises | The practice folder | [brightline-practice-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-practice-ch12.zip) |
 | 13. Programming Fundamentals in the AI Era: TypeScript and Python | The due-date calculator in two languages | [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) |
 | 14. Structuring Programs in the AI Era: Objects, Data and Async | Models and an async client in two languages | [brightline-lab-ch14.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14.zip) |
 | 15. Trusting Code in the AI Era: Tests, Types, Pull Requests and Code Review | A reviewed pull request | [brightline-lab-ch15.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch15.zip) |
