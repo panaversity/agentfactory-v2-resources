@@ -1,6 +1,6 @@
 # The AI Agent Factory, Second Edition: Resources
 
-The files you need for the hands-on parts of *The AI Agent Factory*, Second Edition. There is one folder for each lab. Every name, number and company in them is invented.
+The files you need for the hands-on parts of *The AI Agent Factory*, Second Edition. There is one folder for each lab in `labs/`, and `practice/` holds the folders for the book's short practice exercises. Every name, number and company in them is invented.
 
 ## Get a lab
 
@@ -22,6 +22,7 @@ You can also download a lab here:
 | 10. Governance and Responsible Use | Yes, on these terms | [brightline-lab-ch10.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10.zip) |
 | 11. When the Worker Goes Wrong | Where each failure lives | [brightline-lab-ch11.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11.zip) |
 | 12. Agentic Coding: Claude Code, Codex and OpenCode | The first repository, on three agents | [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) |
+| 12. Agentic Coding: short practice exercises | The practice folder | [brightline-practice-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-practice-ch12.zip) |
 | 13. Programming Fundamentals in the AI Era: TypeScript and Python | The due-date calculator in two languages | [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) |
 | 14. Structuring Programs in the AI Era: Objects, Data and Async | Models and an async client in two languages | [brightline-lab-ch14.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14.zip) |
 | 15. Trusting Code in the AI Era: Tests, Types, Pull Requests and Code Review | A reviewed pull request | [brightline-lab-ch15.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch15.zip) |
@@ -33,6 +34,8 @@ A lab's `answer-key/` folder holds its answers, and its `LAB.md` tells you when 
 Each folder in `labs/` is one lab. When a lab changes on `main`, a GitHub Action zips every lab folder and publishes the zips as a new release. Chapter 1's zip leaves out `answer-key/`, and holds its `inputs/` folder only as `inputs.zip`: the one file its learners give the AI. Code that makes a lab's files lives in `tools/`, outside every zip.
 
 Chapter 1's first version, `labs/brightline-lab/`, stays until the book's Chapter 1 page links `brightline-lab-ch01.zip`. Then it is deleted, and its zip leaves the release. The book links to the latest release, so a link always downloads the newest copy.
+
+Each folder in `practice/` holds the files for one book page's short practice exercises. It is not a lab: it has no answer keys, and it is zipped whole in the same release.
 
 To add a lab, add its folder under `labs/`, add a row to the table above, and push to `main`.
 
