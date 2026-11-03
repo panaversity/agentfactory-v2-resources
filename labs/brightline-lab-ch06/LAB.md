@@ -361,7 +361,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 **What you do:**
 
 1. Download your Review Contract from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `review-contract.md`. Download only the Review Contract, not your Review findings.
-2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history has only what you give it.
+2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history has only what you give it.
 3. Attach two files, your downloaded Review Contract and `inputs.zip`, and send:
 
    ```text
