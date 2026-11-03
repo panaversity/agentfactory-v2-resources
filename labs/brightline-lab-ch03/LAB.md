@@ -343,7 +343,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 **What you do:**
 
 1. Download your first document, Draft 2, from its menu, as .docx or .pdf. If it has no download, copy its text into a file on your computer, named `ap-worker-role-contract-draft-2.md`.
-2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
+2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu.[^anthropic-memory] In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory]
 3. Attach two files, your downloaded Draft 2 and `inputs.zip`, and send:
 
    ```text

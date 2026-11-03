@@ -361,14 +361,14 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 12" and send it. The AI makes your contract Draft 6, dated Monday, November 23, 2026, and adds its change-log line.
 2. Download "Role Contract" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `role-contract-draft-6.md`.
-3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu, or open an Incognito chat. In ChatGPT, open a Temporary Chat. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off web search and every connector or app.
+3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. In ChatGPT, open a Temporary Chat. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off every connector or app, and web search if you see that switch.
 4. Attach two files, your downloaded contract and `thursday-2026-11-26.md`, and send:
 
    ```text
    You are a fresh run of Brightline's AP Worker. Your Role Contract
    is the attached contract, and nothing else. If no contract is
    attached, stop and say so. Your records are the attached
-   thursday-2026-11-26.md. Today is Thursday, November 26, 2026,
+   thursday-2026-11-26.md. Do not search the web. Today is Thursday, November 26, 2026,
    Thanksgiving, 7 a.m. Do the Thursday pre-run review as your
    contract says: write the whole note in this chat, with where
    your contract saves it, and the record entries it asks for. Then, under "What decided it", list each decision: each
