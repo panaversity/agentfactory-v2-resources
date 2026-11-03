@@ -350,7 +350,7 @@ Each task in Part B names the plans it needs. If you cannot do one, read its ans
 
 The goal: see work carry on after you close the laptop, and find where its result is kept.
 
-**Which app.** On Claude, a paid plan. On Pro, Max and Ultra, new tasks run in the cloud, so the work keeps going while your laptop is closed. If the work stops when you close the laptop, and carries on when you open it again, your account ran it on your computer, and that is the finding. On the Free plan, read [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-11.md) instead. On ChatGPT, try it with Work, and what happens is the finding.
+**Which app.** On Claude, a paid plan. On Pro, Max and Ultra, new tasks run in the cloud, so the work keeps going while your laptop is closed. On Team and Enterprise, that depends on your organization's settings. On those plans, if the work stops when you close the laptop, and carries on when you open it again, it ran on your computer, and that is the finding. On the Free plan, read [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-11.md) instead. On ChatGPT, try it with Work, and what happens is the finding.
 
 **What you do:**
 
