@@ -343,7 +343,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 12" and send it. The AI asks what the worker may do this morning, in this one task. Answer in a few words. Your brief can narrow the envelope, never widen it. Then the AI prints "Your tests said": what your tests decided for each of the twelve emails. Keep it in view for step 5.
 2. Download your contract from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `role-contract-draft-4.md`.
-3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off every connector or app, and web search if you see that switch, as in Task 1.
+3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off every connector or app, and web search if you see that switch, as in Task 1.
 4. Attach two files, your downloaded contract and `inputs.zip`, and send:
 
    ```text

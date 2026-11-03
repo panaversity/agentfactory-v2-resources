@@ -228,7 +228,7 @@ Its day is Monday, January 18, 2027.
 
 **Before the first test.**
 
-1. Show the Thursday review's "Inputs:" line from the contract. Then show `registers/README.md` in full. Then show 11.7's "Files for scheduled work" row, as verified 8 and 17 October 2026: Anthropic, "Tasks use the connectors and plugins set up for Cowork. ... The scheduling page says it runs only there. The page on web, desktop and mobile says new scheduled tasks run in the cloud, and reach your files only while the Claude Desktop app is open"; OpenAI, "A scheduled task created in a project cannot reach uploaded files or project files." Ask: "Change one: which file does the review open, how does it open it, and where does that file live? Answer: the file, then how, then where."
+1. Show the Thursday review's "Inputs:" line from the contract. Then show `registers/README.md` in full. Then show 11.7's "Files for scheduled work" row, as verified 8 October and 3 November 2026: Anthropic, "Tasks use the connectors and plugins you have set up. ... The scheduling page says it runs only there. The page on web, desktop and mobile says new scheduled tasks run in the cloud, and reach your files only while the Claude Desktop app is open"; OpenAI, "A scheduled task created in a project cannot reach uploaded files or project files." Ask: "Change one: which file does the review open, how does it open it, and where does that file live? Answer: the file, then how, then where."
 
    In the contract, change item 1 of the Thursday review's "Inputs:" line to the learner's answer. Keep items 2 and 3 as they are.
 
