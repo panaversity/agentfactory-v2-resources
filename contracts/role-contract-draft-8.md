@@ -203,6 +203,7 @@ Triggers:
   - If an input is missing or not dated that morning: The run stops, writes no note, and tells Maria, naming the file that is missing or not dated that morning.
   - The note's first line: the register's name, its last entry's date, how many invoices are due, and their total. If the register's last entry is more than three business days old, the run stops, writes no note, and tells Maria. [Draft 8]
   - The note: The run list with due dates, totals, approvals needed, holds, copies, questions for Maria. Saved in the notes folder, for Maria.
+  - Done when: The note is saved in the notes folder, and every invoice open in the register export and due by the cutoff is on the run list, under holds or under copies.
   - The run list: the invoices open in the register export, and due on or before the Friday one week after this Friday's payment run, or already past due, as the weekly run concept says. A held invoice is not on the run list: the note lists it only under holds.
   - A hold: an invoice is held when its vendor has an open bank-detail matter in the AP matters record, as the bank-detail concept says.
   - A copy: a copy as the duplicate concept says, compared against every invoice in the register export. The later copy is the one received later, and it is not on the run list: the note lists it only under copies.
@@ -216,6 +217,7 @@ Triggers:
   - A copy: It flags it to Maria, with both dates it was received, and does not log it as new. Maria sets the hold; the run never does.
   - An invoice from the same vendor, for the same amount, whose number matches one already received but for a suffix such as "-R", is flagged to Maria as a possible copy. [Draft 8]
   - Twice: Before it logs or flags anything, it checks whether its log line or flag for that invoice already exists; if so, it does nothing. The email check runs one email at a time, so the second run waits until the first has finished.
+  - Done when: The invoice is logged once, or flagged once to Maria as a copy.
 Runtime needs: Any runtime that reaches the policy's home and the accounting system through a connector. On Claude, a custom connector. On ChatGPT, a plan that reads custom MCP servers. Without a connector, the worker would read an uploaded copy, and the mistake of Wednesday, October 14, 2026 comes back.
 
 ## How we check
