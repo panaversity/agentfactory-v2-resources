@@ -440,9 +440,9 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 *Goal:* the OpenAI plugin on a second OpenAI surface.
 
-1. On the same computer as Task 18, open the ChatGPT desktop app, then Work, then *Customize > Plugins*. A catalog you added with `codex plugin marketplace add` appears there as a source, after you restart the app. Install `brightline-ap` from it, if Task 18 has not already. If your workspace allows plugins only through an admin, an admin imports your GitHub catalog instead, as [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles) shows. If neither is open to you, skip this task and record why.
-2. Start a new Work chat that runs locally, in the `brightline-ap` project, because a local connector needs your computer, and that project's `.codex/config.toml` keeps the write tools off. Attach the three files, and ask for triage with `@invoice-triage` for run date 2027-03-08.
-3. Record the three outcomes in `ports/ch16.md`: what loaded, how the skill ran the tool, and the counts. Work can run code and shell commands, so expect the script to run. If it did not, say so.
+1. On the same computer as Task 18, open the ChatGPT desktop app, then *Customize > Plugins*, in Work if you still see that switch. A catalog you added with `codex plugin marketplace add` appears there as a source, after you restart the app. Install `brightline-ap` from it, if Task 18 has not already. If your workspace allows plugins only through an admin, an admin imports your GitHub catalog instead, as [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles) shows. If neither is open to you, skip this task and record why.
+2. Start a new chat that runs locally, in the `brightline-ap` project, because a local connector needs your computer, and that project's `.codex/config.toml` keeps the write tools off. Attach the three files, and ask for triage with `@invoice-triage` for run date 2027-03-08.
+3. Record the three outcomes in `ports/ch16.md`: what loaded, how the skill ran the tool, and the counts. OpenAI's pages say a longer task can run code and shell commands, so expect the script to run. If it did not, say so.
 
 **Checkpoint:** the skill loads in ChatGPT. If it ran the script, the counts are 4, 2, 2 and 5. If it could not, `ports/ch16.md` says so, and the skill asked rather than guessed.
 

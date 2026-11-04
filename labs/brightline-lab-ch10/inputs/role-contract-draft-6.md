@@ -217,7 +217,7 @@ Claude:
 - Read and pause: past runs on the Scheduled page, where the task can be paused.
 ChatGPT:
 - Thursday review: a team task, on Business or Enterprise.
-- Invoice email check: a task in Work that starts from Gmail; on Enterprise and Edu an admin must allow it first.
+- Invoice email check: a ChatGPT task that starts from Gmail; on Enterprise and Edu an admin must allow it first.
 - Whose name: the team's service account.
 - Read and stop: the team task's list of previous runs; how to stop a team task is not stated. A dot's work is in Activity View, where Pause does not stop its scheduled runs.
 

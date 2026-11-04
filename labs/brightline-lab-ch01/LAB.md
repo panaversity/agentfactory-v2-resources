@@ -243,7 +243,7 @@ This task runs in a new conversation, in a desktop app, so the AI can save a fil
 1. Make an empty folder called `Brightline AP`, for example in your Documents folder. Give the AI this folder only, never a bigger one.
 2. Open the desktop app, and start a new conversation with the folder:
    - In Claude Desktop, start a new conversation, and give Claude access to the `Brightline AP` folder. Folders you give it are listed under Trusted folders, in Settings. Keep Desktop open until the task is done: Claude reaches the folder only while it is open.
-   - In the ChatGPT desktop app, choose ChatGPT from the menu at the top left, then Work at the top of the page. Start a new chat, and open the `Brightline AP` folder.
+   - In the ChatGPT desktop app, choose ChatGPT from the menu at the top left. If the top of the page still shows Chat and Work, choose Work. Start a new chat, and open the `Brightline AP` folder.
 3. Send your final Task 2 brief, with `inputs.zip` attached, and add your manager's new ask. This conversation knows nothing of the others, so the brief must carry every fact.
 4. Open the `Brightline AP` folder on your computer. Look at what is in it, and open the file.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -350,11 +350,11 @@ Each task in Part B names the plans it needs. If you cannot do one, read its ans
 
 The goal: see work carry on after you close the laptop, and find where its result is kept.
 
-**Which app.** On Claude, a paid plan. On Pro, Max and Ultra, new tasks run in the cloud, so the work keeps going while your laptop is closed. On Team and Enterprise, that depends on your organization's settings. On those plans, if the work stops when you close the laptop, and carries on when you open it again, it ran on your computer, and that is the finding. On the Free plan, read [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-11.md) instead. On ChatGPT, try it with Work, and what happens is the finding.
+**Which app.** On Claude, a paid plan. On Pro, Max and Ultra, new tasks run in the cloud, so the work keeps going while your laptop is closed. On Team and Enterprise, that depends on your organization's settings. On those plans, if the work stops when you close the laptop, and carries on when you open it again, it ran on your computer, and that is the finding. On the Free plan, read [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-11.md) instead. On ChatGPT, try it, and what happens is the finding.
 
 **What you do:**
 
-1. Open a new conversation. On ChatGPT, choose Work.
+1. Open a new conversation. On ChatGPT, choose Work if you still see that switch.
 2. Send your final Task 2 brief, with `inputs.zip` attached. This conversation knows nothing of the others, so the brief must carry every fact.
 3. When the AI starts working, close your laptop, or shut the app, for 10 minutes.
 4. Open it again, and open the conversation. Find the spreadsheet.
