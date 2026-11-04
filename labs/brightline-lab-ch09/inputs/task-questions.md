@@ -124,9 +124,10 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 3. Show "The nine places a run could be pointed at". Ask: "Which of these does every Thursday run get? Answer with the numbers, and for each, the date or version it must carry."
 4. Ask: "If one of them is missing, or not dated that morning, what does the run do, and who is told? Answer in one line."
 5. Show "The places a note could go". Ask: "What does the note hold, in what order? Where in it do held invoices and copies appear? And where is it saved? Answer: its parts in order, where holds and copies go, then the place."
+6. Ask: "When is a Thursday run done? Write one sentence that starts 'Done when', that the run can check on its own note."
 
-   Under Triggers, in place of the Thursday pre-run review's line, write "The Thursday pre-run review, standing spec:", with these lines, from the answers: Job; When; Inputs, only the places the learner chose, each with its date or version; If an input is missing or not dated that morning; The note, its parts, where held invoices and copies appear, and where it is saved. Keep the line about Maria's account and the invoice email check's line as they are.
-6. Read the new standing spec as a run that starts fresh would read it, with nothing else. List at most five things it leaves a run to guess, each in one line, numbered, without saying how to fix them. Ask: "Which do you fix, and how? Answer: one line per number: the fix in a few words, or 'leave' and why."
+   Under Triggers, in place of the Thursday pre-run review's line, write "The Thursday pre-run review, standing spec:", with these lines, from the answers: Job; When; Inputs, only the places the learner chose, each with its date or version; If an input is missing or not dated that morning; The note, its parts, where held invoices and copies appear, and where it is saved; Done when, the learner's sentence as written. Keep the line about Maria's account and the invoice email check's line as they are.
+7. Read the new standing spec as a run that starts fresh would read it, with nothing else. List at most five things it leaves a run to guess, each in one line, numbered, without saying how to fix them. Ask: "Which do you fix, and how? Answer: one line per number: the fix in a few words, or 'leave' and why."
 
    Write each fix into the standing spec. Write each "leave" in the chat only. Then say "Ready for your test".
 
@@ -176,8 +177,9 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 1. Show the Triggers line for the invoice email check. Then show the case "Lakeshore's 5155, November 18" from week-cases.md, in full. Ask: "Besides the email, what does the email check read before it logs an invoice, and where is that kept? Answer: the source, then where."
 2. Show the concept "Duplicate invoices", quoted from thursday-2026-11-19.md, and the contract's line A05, quoted. Ask: "When it finds a copy, what does it do, and who sets the hold? Answer: what it does, then who."
 3. Show nothing with this question. Ask: "One email can start two runs, such as when the inbox delivers it twice. Before a run logs or flags anything, what does it check? And what if the second run starts before the first has finished? Answer: one line each."
+4. Ask: "When is one email's check done? Write one sentence that starts 'Done when', that the run can check itself."
 
-   Under Triggers, in place of the invoice email check's line, write "The invoice email check, standing spec:", with these lines: Job and When, kept from the old line; then, from the answers, Inputs; A copy; Twice. Keep the Thursday pre-run review's standing spec and the line about Maria's account as they are. Then say "Ready for your test".
+   Under Triggers, in place of the invoice email check's line, write "The invoice email check, standing spec:", with these lines: Job and When, kept from the old line; then, from the answers, Inputs; A copy; Twice; Done when, the learner's sentence as written. Keep the Thursday pre-run review's standing spec and the line about Maria's account as they are. Then say "Ready for your test".
 
 **The tests:** `Test: Lakeshore's 5155, November 18`, then `Test: The same email twice`.
 

@@ -189,7 +189,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 3" and send it. The AI shows your Thursday lines, and asks what the job produces and what it never does, then when it runs. Answer each in a few words.
 2. The AI shows nine places a run could be pointed at. Answer with the numbers every Thursday run gets, and the date or version each must carry. Then say what the run does if one is missing, and who is told.
-3. The AI shows the places a note could go. Answer: the note's parts, in order, where held invoices and copies appear in it, then where it is saved. The AI writes your standing spec, the instructions every run reads ([9.3](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)).
+3. The AI shows the places a note could go. Answer: the note's parts, in order, where held invoices and copies appear in it, then where it is saved. Then say when a run is done, in one sentence that starts "Done when". The AI writes your standing spec, the instructions every run reads ([9.3](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)).
 4. The AI reads your spec as a fresh run would, and lists what it leaves a run to guess. Answer for each: the fix in a few words, or "leave" and why.
 5. When the AI says "Ready for your test", type `Test: Thursday, November 19` and send it. Then type `Test: The record is missing` and send it.
 6. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -249,7 +249,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 6" and send it. The AI shows the email job's line and Lakeshore's email. Answer what the job reads besides the email, and where that is kept.
-2. The AI shows the duplicate concept, and asks what the job does with a copy, and who sets the hold. Then it asks what a run checks first when one email starts two runs. Answer each in a few words.
+2. The AI shows the duplicate concept, and asks what the job does with a copy, and who sets the hold. Then it asks what a run checks first when one email starts two runs, and when one email's check is done, in one sentence that starts "Done when". Answer each in a few words.
 3. When the AI says "Ready for your test", type `Test: Lakeshore's 5155, November 18` and send it. Then type `Test: The same email twice` and send it.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 

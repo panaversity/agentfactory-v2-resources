@@ -14,9 +14,10 @@ Task 3 carries checks 7 and 8 of the lab's 27.
    - Inputs: the register export dated that Thursday, the AP matters record as it stood that morning, and the approved version of the five AP concepts. Nothing else: not Maria's chat, last week's note, the worker's memory, Dave's email, the AP inbox or the scans.
    - If an input is missing or not dated that morning: the run stops, writes no note, and tells a named person which file.
    - The note: its parts; held invoices and copies kept apart from the invoices to pay; and a named place to save it that is not #ap-help or Dave's inbox.
+   - Done when: one sentence the run can check on its own note, such as "Done when the note is saved in the notes folder, and every open invoice due by the cutoff is on the run list, under holds or under copies" (Lesson 9.3).
    - Each thing the AI listed as left to guess is fixed in the spec, or left with a reason in the chat.
-   - Passed: all six.
-   - Missed: any part above missing or wrong, for example any input other than those three; the AP matters record left out; no time zone; a missing input that does not stop the run; a held invoice or a copy among the invoices to pay; the note saved to #ap-help or sent straight to Dave; or a listed item with neither a fix nor a reason.
+   - Passed: all seven.
+   - Missed: any part above missing or wrong, for example any input other than those three; the AP matters record left out; no time zone; a missing input that does not stop the run; a held invoice or a copy among the invoices to pay; the note saved to #ap-help or sent straight to Dave; no "Done when", or one only a person can check, such as "when Dave approves it"; or a listed item with neither a fix nor a reason.
 8. **The tests.**
    - "Thursday, November 19": 5207, Tri-County Freight, $3,110.00, is held, not paid on Friday. The test quotes the Inputs line that names the AP matters record, and the hold: the bank-detail concept's, or the same rule as A12 or policy 5.3 gives it.
    - "The record is missing": the run stops, names the missing record, writes no note, and lists nothing as payable.

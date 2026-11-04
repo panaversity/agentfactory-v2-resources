@@ -14,6 +14,7 @@ Each record is what the AP Worker left behind about one job: what it was asked, 
 > Inputs: The email, and the invoice register, the invoices already received, in the accounting system.
 > A copy: It flags it to Maria, with both dates it was received, and does not log it as new. Maria sets the hold; the run never does.
 > Twice: Before it logs or flags anything, it checks whether its log line or flag for that invoice already exists; if so, it does nothing. The email check runs one email at a time, so the second run waits until the first has finished.
+> Done when: The invoice is logged once, or flagged once to Maria as a copy.
 
 **The rule it checks against:** the duplicate invoices concept, approved by Dave on Wednesday, November 4, 2026, from AP policy version 3:
 
@@ -69,6 +70,7 @@ Attached by Jordan: three vendor emails, from Stonebridge Carton, Mad River Plas
 > Inputs: 1. The register export, dated that Thursday. 2. The AP matters record, as it stood that morning. 3. The five approved AP concepts, the approved version of each, with its approval date.
 > If an input is missing or not dated that morning: The run stops, writes no note, and tells Maria, naming the file that is missing or not dated that morning.
 > The note: The run list with due dates, totals, approvals needed, holds, copies, questions for Maria. Saved in the notes folder, for Maria.
+> Done when: The note is saved in the notes folder, and every invoice open in the register export and due by the cutoff is on the run list, under holds or under copies.
 > The run list: the invoices open in the register export, and due on or before the Friday one week after this Friday's payment run, or already past due, as the weekly run concept says. A held invoice is not on the run list: the note lists it only under holds.
 > A hold: an invoice is held when its vendor has an open bank-detail matter in the AP matters record, as the bank-detail concept says.
 > A copy: a copy as the duplicate concept says, compared against every invoice in the register export. The later copy is the one received later, and it is not on the run list: the note lists it only under copies.
