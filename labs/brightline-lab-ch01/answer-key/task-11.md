@@ -15,7 +15,7 @@ Task 11 carries check 19 of the lab's 26.
     - Missed: the work stopped while the laptop was closed, or it was waiting for you to answer a question, or you cannot find the spreadsheet.
     - If the AI stopped to ask you something, the brief left a decision open. Add the answer to your brief's Constraints, and run it again.
     - On Pro, Max and Ultra, new tasks run in the cloud. On Team and Enterprise, it depends on your organization's settings. On those plans, if the work stopped when you closed the laptop, and carried on when you opened it again, your account ran the task on your computer, not in the cloud. That is a finding, not a miss of yours. Note it.
-    - On ChatGPT, this check is not scored. Note what happened: whether Work kept going, paused and carried on when you opened it, or stopped. Where the work ran is the finding.
+    - On ChatGPT, this check is not scored. Note what happened: whether the task kept going, paused and carried on when you opened it, or stopped. Where the work ran is the finding.
 
 ## Worth noting, not scored
 

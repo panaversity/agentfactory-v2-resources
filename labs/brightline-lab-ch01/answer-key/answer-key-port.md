@@ -8,7 +8,7 @@ Did the other AI vendor give the same answers? Ideally your words did not change
 
 Three more things to notice, from [section 1.5](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) of Chapter 1:
 
-- **Where the work started.** In Claude, any conversation can become a task. In ChatGPT, you pick Work by name. Did you have to?
+- **Where the work started.** In Claude and in ChatGPT, it starts in one conversation. If your ChatGPT app still shows Chat and Work, you pick Work. Did you have to?
 - **Where Task 5's doc landed.** On Claude, in the Artifacts section. On ChatGPT, in the conversation that made it, or as a file to download.
 - **What came back.** A finished file, a doc, or only text in the chat?
 

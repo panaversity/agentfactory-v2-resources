@@ -19,7 +19,7 @@ Task 6 carries check 15 of the lab's 26.
 | 5. The unpaid-bills report every Monday | AI Worker, or agent | Task | A schedule | The same task, started again every Monday. The schedule does not change how it runs, only when it starts. One register is a task. A register every week is a role. "Agent" also passes, if the answer says it is one task run again. |
 | 6. Watch the AP inbox all day | AI Worker | Standing worker | You | Ongoing work that continues between conversations, with something to pass to Maria. You hand over a role once, and it keeps going. |
 
-- On Claude, "chat" and "task" happen in the same conversation, and your brief decides. On ChatGPT, a task is a ChatGPT Work task, job 5 is a ChatGPT Work task on a schedule, and a standing worker is a dot. Naming the product instead of the surface is fine.
+- On Claude and on ChatGPT, "chat" and "task" happen in the same conversation, and your brief says which you want. On ChatGPT, job 5 is a task on a schedule, and a standing worker is a dot. Naming the product instead of the surface is fine.
 - Job 3 or 4 placed as "AI Worker" is the one rung that may differ. It does the work once, so it is a task.
 - Job 5 with "schedule" as its surface is missed: a schedule is what starts the task, not a surface. "Task, on a schedule" passes.
 - Job 6 with "a new email" as what starts it also passes. Chapter 9 calls that an event.

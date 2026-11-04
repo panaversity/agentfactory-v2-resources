@@ -2,7 +2,7 @@
 
 Chapter 5 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 5: the payment-run brief](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/lab/), so you can do the lab without the book.
 
-On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Friday's payment run ready, and the worker had to guess. Then Maria sent it fourteen steps, and a late bill was missed. Most people hand work to an AI in one of those two ways. In this lab you write the brief between them, with Chapter 5's four parts. You write one part at a time, and run the brief after each part to see what it decides. Then you fix it one part per round, add a stop where a person decides, and prove it in a fresh chat that has only its files. You write every line of the brief. The AI runs it, asks the questions and keeps the notes. It takes about three hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and Task 11 in ChatGPT, in Work if your plan has it.
+On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Friday's payment run ready, and the worker had to guess. Then Maria sent it fourteen steps, and a late bill was missed. Most people hand work to an AI in one of those two ways. In this lab you write the brief between them, with Chapter 5's four parts. You write one part at a time, and run the brief after each part to see what it decides. Then you fix it one part per round, add a stop where a person decides, and prove it in a fresh chat that has only its files. You write every line of the brief. The AI runs it, asks the questions and keeps the notes. It takes about three hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and Task 11 in ChatGPT.
 
 **What you will learn:**
 
@@ -364,7 +364,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 **What you do:**
 
 1. Download your brief from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `payment-run-brief.md`.
-2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. In ChatGPT, use Work if your plan has it. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it.
+2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. In ChatGPT, choose Work if you still see that switch and your plan has it. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it.
 3. Attach two files, your downloaded brief and `inputs.zip`, and send:
 
    ```text
@@ -409,7 +409,7 @@ This task is optional. Skip it if your plan is running low, because a split run 
 **What you do:**
 
 1. In your lab chat, type "Task 12" and send it. The AI shows the four parts, each with what [5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says it adds when a worker may split a job.
-2. Write one line for each part, in your own words. Send them under the four headings. They go in the chat, not in your document, so your proven brief stays as it is. Your Constraints line says whether the worker may check each vendor's invoices in parallel. On ChatGPT Work, it must ask for that in words. On Claude, the worker may split on its own, so say so if you want one worker.
+2. Write one line for each part, in your own words. Send them under the four headings. They go in the chat, not in your document, so your proven brief stays as it is. Your Constraints line says whether the worker may check each vendor's invoices in parallel. On ChatGPT, it must ask for that in words. On Claude, the worker may split on its own, so say so if you want one worker.
 3. **Open a fresh chat**, on either AI vendor, with memory off, as in Task 11. Attach your downloaded brief and `inputs.zip`, and send this, with your four lines pasted under its last line:
 
    ```text

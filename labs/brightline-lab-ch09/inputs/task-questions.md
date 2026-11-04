@@ -244,7 +244,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 **OpenAI, as Lesson 9.8 gives it, verified 8 October 2026:**
 
 - Schedules: "Scheduled tasks run once or on a schedule." "Team tasks, on Business and Enterprise, are recurring work owned by a team."
-- Event triggers: "Tasks in Work can start from Gmail, Slack or GitHub activity. On Enterprise and Edu, an admin must allow this first."
+- Event triggers: "Tasks in ChatGPT can start from Gmail, Slack or GitHub activity. On Enterprise and Edu, an admin must allow this first."
 - Each run: "A scheduled task that is not inside a chat starts a new chat each time it runs." "A team task keeps a list of previous runs."
 - Whose name: "Team tasks run under the team's service account, an account that belongs to the team, not to the creator."
 - Approvals: "Approval rules in connected apps still apply, and an action that needs approval may pause a task."

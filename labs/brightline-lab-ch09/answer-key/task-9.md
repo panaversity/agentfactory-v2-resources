@@ -18,7 +18,7 @@ Task 9 carries checks 20 and 21 of the lab's 27.
     - Missed: any part above missing or wrong, for example an email trigger named for the Claude app; a name stated as fact; or "Skip all approvals".
 21. **On ChatGPT.**
     - The Thursday review: a team task, on Business or Enterprise.
-    - The invoice email check: a task in Work that starts from Gmail, which an admin must allow on Enterprise and Edu.
+    - The invoice email check: a ChatGPT task that starts from Gmail, which an admin must allow on Enterprise and Edu.
     - Whose name: the team's service account.
     - Read and stop: a team task's list of previous runs. And for a dot: Activity View shows its work, and Pause does not stop its scheduled runs.
     - Passed: all four.

@@ -83,7 +83,7 @@ If a row differs, find the line your brief lacks. Back in your lab chat, change 
 ## Never a deduction
 
 - The words in the reason column.
-- Which app you use, and which plan, and naming Claude or ChatGPT Work as the place you brief it.
+- Which app you use, and which plan, and naming Claude or ChatGPT as the place you brief it.
 - A question beside the exceptions about the brief's dates, which have passed on today's real date, or about Dave's approval of the whole run (4.3). Neither is an added exception.
 - What Dave's memo says after his decisions, such as the totals.
 - A note that 4533 is over $5,000.00 and will need Dave's approval when it falls due, or that NMP-3412 will need the same currency decision when it falls due, while its row stays NOT_DUE.
