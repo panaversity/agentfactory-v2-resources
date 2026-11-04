@@ -377,6 +377,7 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
    ```text
    Outcome:     A checklist for this week's payment run at Brightline.
                 The run is on the Friday of the week this task runs.
+                Done when each check named below is a step in it.
    Context:     The checks AP makes before every payment run: list the
                 bills due by the Friday. Take out any bill already paid.
                 Take out any copy of a bill already billed. Hold any bill
