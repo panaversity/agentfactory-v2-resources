@@ -1,0 +1,46 @@
+{
+  // OpenCode version 2: the shared skills and both Brightline AP connectors.
+  "skills": ["./plugin/skills"],
+  "mcp": {
+    "servers": {
+      "apts": {
+        "type": "remote",
+        "url": "http://127.0.0.1:8717/mcp",
+        "protocol": "2026-07-28",
+        // Pre-registered (F7): OpenCode's own document is not on the sign-in server's allowlist.
+        // `npm run client:add -- --client-id brightline-opencode --name "OpenCode (lab)" --redirect http://127.0.0.1/callback`
+        "oauth": { "client_id": "brightline-opencode", "scope": "ap:read ap:vendors.read", "redirect_uri": "http://127.0.0.1:8792/callback" }
+      },
+      "appy": {
+        "type": "remote",
+        "url": "http://127.0.0.1:8718/mcp",
+        "protocol": "2026-07-28",
+        "oauth": { "client_id": "brightline-opencode", "scope": "ap:read ap:vendors.read", "redirect_uri": "http://127.0.0.1:8792/callback" }
+      }
+    }
+  },
+  "permissions": [
+    { "action": "edit", "resource": "data/**", "effect": "deny" },
+    // Deploying: commands that change Cloudflare or GitHub always ask (Task 18a)
+    { "action": "shell", "resource": "npm run deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "npm run secrets*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler rollback*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler secret*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler versions deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler delete*", "effect": "ask" },
+    { "action": "shell", "resource": "gh workflow run*", "effect": "ask" },
+    { "action": "shell", "resource": "gh secret set*", "effect": "ask" },
+    { "action": "shell", "resource": "uv run pywrangler deploy*", "effect": "ask" },
+    { "action": "shell", "resource": "gh pr merge*", "effect": "ask" },
+    { "action": "shell", "resource": "git push*", "effect": "ask" },
+    // The sign-in server's database (Task 18): migrations and SQL always ask; SQL against production is refused
+    { "action": "shell", "resource": "npm run migrate*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler d1 migrations apply*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler d1 execute*", "effect": "ask" },
+    { "action": "shell", "resource": "npx wrangler secret put*", "effect": "deny" },
+    { "action": "shell", "resource": "npx wrangler d1 execute brightline-auth *--remote*", "effect": "deny" },
+    { "action": "apts_*", "resource": "*", "effect": "allow" },
+    { "action": "appy_*", "resource": "*", "effect": "allow" }
+  ]
+}

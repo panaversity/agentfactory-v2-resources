@@ -1,0 +1,29 @@
+{
+  // Production: https://brightline-ap-py.<your-subdomain>.workers.dev/mcp
+  // STATUS: written to Cloudflare's documented Python Worker pattern, NOT RUN by the authors (see src/entry.py).
+  "name": "brightline-ap-py",
+  "main": "src/entry.py",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["python_workers"],
+  "workers_dev": true,
+  "preview_urls": false,
+  // The same files as the TypeScript Worker, copied by `node ../ap-ts/scripts/copy-assets.ts` run from here.
+  "assets": { "directory": "./assets", "binding": "ASSETS", "run_worker_first": true },
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Which company's data is in which folder of the assets (18.12, rule 7). Not secret.
+  "vars": { "AP_DATA_TENANTS": "org_brightline=data,org_conformance=data-conformance" },
+  // AP_PUBLIC_HOSTS, the Worker's own host name, is sent with the keys (Task 18b step 4), so no
+  // deployed address is written in the repository. Without it the Host check refuses every call with 421.
+  // Secrets: `npx wrangler secret bulk ../../.secrets/staging.env --env staging`, and the same with
+  // production.env and --env="". Locally, .dev.vars or .dev.vars.staging, made by `npm run keys`.
+  "env": {
+    "staging": {
+      "compatibility_flags": ["python_workers"],
+      "workers_dev": true,
+      "preview_urls": true,
+      "assets": { "directory": "./assets", "binding": "ASSETS", "run_worker_first": true },
+      "observability": { "enabled": true, "head_sampling_rate": 1 },
+      "vars": { "AP_DATA_TENANTS": "org_brightline=data,org_conformance=data-conformance" }
+    }
+  }
+}

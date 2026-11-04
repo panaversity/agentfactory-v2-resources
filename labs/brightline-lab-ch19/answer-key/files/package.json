@@ -1,0 +1,70 @@
+{
+  "name": "brightline-ap",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19"
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test:py": "cd py && if [ -f ../.secrets/test-signing.local.env ]; then uv run --locked --env-file ../.secrets/test-signing.local.env --env-file ../.secrets/db.dev.env pytest -q; else uv run --locked --env-file ../.secrets/db.dev.env pytest -q; fi",
+    "check:py": "cd py && uv run --locked pyright",
+    "check:plugin": "node scripts/check-plugin.ts",
+    "hello": "npm --workspace @brightline/hello start",
+    "hello-auth": "npm --workspace @brightline/hello-auth start",
+    "test:hello-auth": "npm --workspace @brightline/hello-auth test",
+    "test:servers": "npm --workspace @brightline/ap-ts test",
+    "conformance": "node --env-file-if-exists=.secrets/test-signing.local.env --env-file-if-exists=.secrets/db.dev.env --env-file-if-exists=.secrets/embeddings.env scripts/conformance.ts",
+    "keys": "node scripts/make-keys.ts",
+    "conformance:staging": "node --env-file=.secrets/staging.env --env-file=.secrets/staging.urls.env --env-file-if-exists=.secrets/ci.staging.env scripts/conformance.ts",
+    "conformance:production": "node --env-file=.secrets/production.env --env-file=.secrets/production.urls.env --env-file-if-exists=.secrets/ci.production.env scripts/conformance.ts",
+    "test:auth": "npm --workspace @brightline/auth test",
+    "typecheck:auth": "npm --workspace @brightline/auth run typecheck",
+    "dev:auth": "npm --workspace @brightline/auth run dev",
+    "tenant:add": "node scripts/tenant-add.ts",
+    "client:add": "node scripts/client-add.ts",
+    "matrix": "node --env-file=.secrets/admin.local.env --env-file=.secrets/db.dev.env --env-file-if-exists=.secrets/embeddings.env --env-file=.secrets/test-users.local.env --env-file-if-exists=.secrets/test-signing.local.env scripts/matrix.ts",
+    "tenant:member": "node scripts/tenant-member.ts",
+    "tenant:remove": "node scripts/tenant-remove.ts",
+    "sign-in": "node scripts/sign-in.ts",
+    "check:deploy": "node scripts/check-deploy.ts && npm --workspace @brightline/ap-ts run check:deploy && npm --workspace @brightline/auth run check:deploy",
+    "secrets:auth:staging": "npm --workspace @brightline/auth run secrets:staging",
+    "secrets:auth:production": "npm --workspace @brightline/auth run secrets:production",
+    "deploy:auth:staging": "npm --workspace @brightline/auth run deploy:staging",
+    "deploy:auth": "npm --workspace @brightline/auth run deploy:production",
+    "migrate:auth:staging": "npm --workspace @brightline/auth run migrate:staging",
+    "migrate:auth:production": "npm --workspace @brightline/auth run migrate:production",
+    "client:ci": "node scripts/client-ci.ts",
+    "signing-key:rotate": "node scripts/signing-key-rotate.ts",
+    "db:migrate": "node scripts/db-migrate.ts",
+    "db:passwords": "node scripts/db-passwords.ts",
+    "check:roles": "node scripts/check-roles.ts",
+    "tenant:load": "node scripts/tenant-load.ts",
+    "tenant:export": "node scripts/tenant-export.ts",
+    "tenant:delete": "node scripts/tenant-delete.ts",
+    "embed": "node scripts/embed.ts",
+    "matrix:data": "node --env-file-if-exists=.secrets/test-signing.local.env scripts/data-matrix.ts",
+    "check:queries": "node scripts/check-queries.ts",
+    "eval:retrieval": "node scripts/retrieval-eval.ts"
+  },
+  "dependencies": {
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/inspector": "2.13.0",
+    "@types/node": "22.18.13",
+    "@types/pg": "8.23.1",
+    "jose": "6.2.15",
+    "pg": "8.23.1",
+    "typescript": "5.9.3"
+  },
+  "workspaces": [
+    "servers/hello",
+    "servers/hello-auth",
+    "servers/ap-ts",
+    "servers/auth"
+  ]
+}
