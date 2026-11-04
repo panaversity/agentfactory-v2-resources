@@ -1,0 +1,70 @@
+#!/usr/bin/perl
+# Minimal stand-in for GNU `timeout` (macOS has none).
+#   timeout [-s SIGNAL | --signal=SIGNAL] [-k DURATION | --kill-after=DURATION] [--preserve-status] [--foreground] DURATION COMMAND [ARG]...
+# Runs COMMAND in its own process group; after DURATION it sends SIGNAL (default TERM) to the whole group,
+# and, with -k, KILL after a further DURATION. Exit status: COMMAND's own, or 124 if it timed out
+# (unless --preserve-status), 125 for a usage error, 126/127 as GNU timeout uses them.
+use strict;
+use warnings;
+use POSIX ();
+use Time::HiRes ();
+
+sub duration {
+    my ($s) = @_;
+    $s =~ /^(\d+(?:\.\d*)?|\.\d+)([smhd]?)$/ or do { print STDERR "timeout: invalid time interval '$s'\n"; exit 125 };
+    my %mult = ('' => 1, s => 1, m => 60, h => 3600, d => 86400);
+    return $1 * $mult{$2};
+}
+
+my ($sig, $kill_after, $preserve) = ('TERM', undef, 0);
+while (@ARGV && $ARGV[0] =~ /^-/) {
+    my $a = shift @ARGV;
+    last if $a eq '--';
+    if    ($a eq '-s' || $a eq '--signal')           { $sig = shift @ARGV // do { print STDERR "timeout: option requires an argument -- 's'\n"; exit 125 } }
+    elsif ($a =~ /^--signal=(.+)$/)                  { $sig = $1 }
+    elsif ($a eq '-k' || $a eq '--kill-after')       { $kill_after = duration(shift @ARGV // '') }
+    elsif ($a =~ /^--kill-after=(.+)$/)              { $kill_after = duration($1) }
+    elsif ($a eq '--preserve-status')                { $preserve = 1 }
+    elsif ($a eq '--foreground' || $a eq '-v' || $a eq '--verbose') { }
+    else { print STDERR "timeout: unknown option '$a'\n"; exit 125 }
+}
+(@ARGV >= 2) or do { print STDERR "Usage: timeout [OPTION] DURATION COMMAND [ARG]...\n"; exit 125 };
+my $secs = duration(shift @ARGV);
+$sig =~ s/^SIG//;
+
+my $pid = fork();
+defined $pid or do { print STDERR "timeout: fork failed: $!\n"; exit 125 };
+if ($pid == 0) {
+    POSIX::setpgid(0, 0);
+    no warnings 'exec';
+    exec { $ARGV[0] } @ARGV;
+    print STDERR "timeout: failed to run command '$ARGV[0]': $!\n";
+    POSIX::_exit($!{ENOENT} ? 127 : 126);
+}
+POSIX::setpgid($pid, $pid);   # also from the parent, so the group exists before the first signal
+
+my $timed_out = 0;
+sub send_group { my ($s) = @_; kill $s, -$pid; kill $s, $pid; }
+$SIG{ALRM} = sub {
+    if (!$timed_out) {
+        $timed_out = 1;
+        send_group($sig);
+        Time::HiRes::alarm($kill_after) if defined $kill_after;
+    } else {
+        send_group('KILL');
+    }
+};
+for my $s (qw(TERM INT HUP QUIT)) { $SIG{$s} = sub { send_group($s) } }
+$SIG{CHLD} = 'DEFAULT';
+Time::HiRes::alarm($secs) if $secs > 0;
+
+my $status;
+while (1) {
+    my $r = waitpid($pid, 0);
+    if ($r == $pid) { $status = $?; last }
+    last if $r == -1 && !$!{EINTR};
+}
+Time::HiRes::alarm(0);
+if ($timed_out && !$preserve) { exit 124 }
+exit(($status & 127) ? 128 + ($status & 127) : ($status >> 8)) if defined $status;
+exit 125;

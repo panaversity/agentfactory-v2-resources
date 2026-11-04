@@ -1,0 +1,4 @@
+#!/bin/sh
+# Stand-in for `su postgres -c "psql ARGS"` on the authors' Linux box: psql as the postgres superuser
+# over TCP to the private cluster (trust auth for that one role). Takes psql's own arguments.
+exec psql -X -h 127.0.0.1 -p 5432 -U postgres "$@"
