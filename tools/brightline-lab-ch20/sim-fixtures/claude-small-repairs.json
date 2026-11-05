@@ -1,0 +1,55 @@
+[
+  {
+    "id": "msg_01Lab20P001",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-sonnet-5-5",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "Ana asks what the policy says about small repairs, and wants the line. Search the policy, then cite what it returns.",
+        "signature": "EqQBCkYIBxgCKkDsig3"
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01Lab20P1",
+        "name": "search_policy",
+        "input": {
+          "query": "small repairs",
+          "limit": null
+        }
+      }
+    ],
+    "stop_reason": "tool_use",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1418,
+      "output_tokens": 84,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "id": "msg_01Lab20P002",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-sonnet-5-5",
+    "content": [
+      {
+        "type": "text",
+        "text": "Purchases of $500.00 or less, such as a small repair, may be paid without a purchase order (purchasing.md:5).",
+        "citations": null
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1561,
+      "output_tokens": 41,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  }
+]
