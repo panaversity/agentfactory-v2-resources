@@ -33,7 +33,8 @@ DELETED_BY_LAB19 = ["servers/ap-ts/scripts/copy-assets.ts", "servers/ap-ts/src/d
 NOT_COPIED = {"package-lock.json", "py/requirements.txt", "opencode.json"}
 NOT_COPIED_PREFIX = ("docs/chapter-20/",)
 MERGED = {".claude/settings.json", ".codex/config.toml", ".gitignore", "AGENTS.md", "README.md", "package.json",
-          "py/pyproject.toml", "opencode.jsonc", "vitest.config.ts", "py/pyrightconfig.loop.json", "tsconfig.json"}
+          "py/pyproject.toml", "opencode.jsonc", "vitest.config.ts", "py/pyrightconfig.loop.json", "tsconfig.json",
+          "tsconfig.loop.json"}
 
 
 def files(root):
@@ -57,11 +58,21 @@ def move_long(m):
     return (f"{DAYS[d.weekday()]}, " if wd else "") + s
 
 
+def move_short(m):
+    d = dt.date(2026, MONTHS.index(m.group(1)) + 1, int(m.group(2)))
+    if not (LO <= d <= HI):
+        return m.group(0)
+    d += SHIFT
+    return f"{MONTHS[d.month - 1]} {d.day}"
+
+
 def week(text):
     text = re.sub(r"INV-51(\d\d)", r"INV-83\1", text)
     text = text.replace("Ana Torres, AP lead", "Ana Morales, AP analyst").replace("Ana Torres", "Ana Morales")
     text = re.sub(r"(?<!\d)(20\d\d)-(\d\d)-(\d\d)(?![\dT])", move, text)
     text = re.sub(r"(?:(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), )?(" + "|".join(MONTHS) + r") (\d{1,2}), (20\d\d)", move_long, text)
+    # A story date with no year ("due December 2", in two recorded answers) is the story's December 2026.
+    text = re.sub(r"\b(November|December) (\d{1,2})\b(?!, 20\d\d)", move_short, text)
     return text
 
 

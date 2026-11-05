@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "node --test \"tests/**/*.test.ts\"",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.loop.json",
     "test:py": "cd py && if [ -f ../.secrets/test-signing.local.env ]; then uv run --locked --env-file ../.secrets/test-signing.local.env --env-file ../.secrets/db.dev.env pytest -q; else uv run --locked --env-file ../.secrets/db.dev.env pytest -q; fi",
     "check:py": "cd py && uv run --locked pyright",
     "check:plugin": "node scripts/check-plugin.ts",

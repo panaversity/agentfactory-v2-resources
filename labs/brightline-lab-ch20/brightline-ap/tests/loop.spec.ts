@@ -241,7 +241,7 @@ describe("streaming", () => {
     const pieces: string[] = [];
     const out = await readClaudeStream(replay(), (p) => pieces.push(p));
     expect(pieces).toEqual(["Let me check ", "this week's invoices."]);
-    expect(out.toolCalls).toEqual([{ id: "toolu_01Lab20S2", name: "list_open_invoices", input: { vendor_id: null, due_by: "2027-04-04" } }]);
+    expect(out.toolCalls).toEqual([{ id: "toolu_01Lab20S2", name: "list_open_invoices", input: { vendor_id: null, due_on_or_before: "2027-04-04", page_size: null, page: null } }]);
     expect(out.stopReason).toBe("tool_use");
   });
 
@@ -315,7 +315,7 @@ describe("the authorization boundary", () => {
   it("refuses a tool the worker was not given, whatever the model asks", async () => {
     const guarded = allowOnly(tools);
     expect(await guarded("pay_vendor", { vendor_id: "V001" })).toEqual({ ok: false, text: "Tool pay_vendor is not allowed for this worker." });
-    expect((await guarded("find_vendor", { query: "V001" })).ok).toBe(true);
+    expect((await guarded("find_vendor", { vendor_id: "V001", name: null })).ok).toBe(true);
   });
   it("turns a refused tool into an error result the model hears about", async () => {
     const { client, requests } = recordedClaude("claude-parallel-one-fails");

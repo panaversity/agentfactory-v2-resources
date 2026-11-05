@@ -9,7 +9,7 @@ const URL_ = `http://127.0.0.1:${PORT}/mcp`;
 let server: ChildProcess;
 
 beforeAll(async () => {
-  server = spawn("../.venv/bin/python", ["-m", "brightline_ap.practice_connector"], {
+  server = spawn(".venv/bin/python", ["-m", "brightline_ap.practice_connector"], {
     cwd: "py",
     env: { ...process.env, PRACTICE_TOKEN: "test-token-not-secret", PRACTICE_PORT: PORT },
     stdio: "ignore",
@@ -29,7 +29,7 @@ describe("practice connector over MCP", () => {
 
   it("runs a tool and returns its text", async () => {
     const { runTool, close } = await connectToConnector(URL_, "test-token-not-secret");
-    const r = await runTool("list_open_invoices", { vendor_id: null, due_by: "2027-04-04" });
+    const r = await runTool("list_open_invoices", { vendor_id: null, due_on_or_before: "2027-04-04", page_size: null, page: null });
     await close();
     expect(r.ok).toBe(true);
     expect(r.text).toContain("INV-8301");
@@ -38,7 +38,7 @@ describe("practice connector over MCP", () => {
 
   it("returns a tool failure as ok: false, not as a crash", async () => {
     const { runTool, close } = await connectToConnector(URL_, "test-token-not-secret");
-    const r = await runTool("get_purchase_order", { invoice_number: "INV-8302" });
+    const r = await runTool("get_purchase_order", { po_number: null, invoice_number: "INV-8302" });
     await close();
     expect(r.ok).toBe(false);
     expect(r.text).toContain("has no purchase order");

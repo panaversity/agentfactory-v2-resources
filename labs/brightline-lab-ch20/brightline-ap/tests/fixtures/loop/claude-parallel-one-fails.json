@@ -15,6 +15,7 @@
         "id": "toolu_01Lab20B1",
         "name": "get_purchase_order",
         "input": {
+          "po_number": null,
           "invoice_number": "INV-8301"
         }
       },
@@ -23,6 +24,7 @@
         "id": "toolu_01Lab20B2",
         "name": "get_purchase_order",
         "input": {
+          "po_number": null,
           "invoice_number": "INV-8302"
         }
       }

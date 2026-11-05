@@ -16,7 +16,9 @@
         "name": "list_open_invoices",
         "input": {
           "vendor_id": null,
-          "due_by": "2027-04-04"
+          "due_on_or_before": "2027-04-04",
+          "page_size": null,
+          "page": null
         }
       }
     ],
@@ -38,7 +40,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Three invoices are due this week, $6,374.00 in all:\n- INV-8301, Midwest Packaging Co., $4,125.00, due December 2\n- INV-8303, Hocking Valley Pallets, $1,860.00, due December 3\n- INV-8302, Buckeye Janitorial Supply, $389.00, due December 4",
+        "text": "Three invoices are due this week, $6,374.00 in all:\n- INV-8301, Midwest Packaging Co., $4,125.00, due March 31\n- INV-8303, Hocking Valley Pallets, $1,860.00, due April 1\n- INV-8302, Buckeye Janitorial Supply, $389.00, due April 2",
         "citations": null
       }
     ],

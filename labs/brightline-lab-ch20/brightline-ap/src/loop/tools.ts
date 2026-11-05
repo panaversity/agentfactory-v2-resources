@@ -55,7 +55,10 @@ export async function connectToConnector(url: string, token: string): Promise<{ 
   await client.connect(transport);
 
   const runTool: RunTool = async (name, input) => {
-    const result = await client.callTool({ name, arguments: input as Record<string, unknown> });
+    // A strict tool writes null for an input the model leaves empty. The connector's own schema
+    // leaves such an input out, so the nulls are dropped here, on the way to the connector.
+    const args = Object.fromEntries(Object.entries(input as Record<string, unknown>).filter(([, v]) => v !== null));
+    const result = await client.callTool({ name, arguments: args });
     const parts = (result.content as Array<{ type: string; text?: string }>) ?? [];
     const text = parts.filter((p) => p.type === "text").map((p) => p.text).join("\n");
     return { ok: result.isError !== true, text };

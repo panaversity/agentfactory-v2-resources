@@ -65,7 +65,10 @@ async def connect_to_connector(url: str, token: str) -> AsyncIterator[RunTool]:
                 await session.initialize()
 
                 async def run_tool(name: str, tool_input: Any) -> ToolOutcome:
-                    result: Any = await session.call_tool(name, tool_input)
+                    # A strict tool writes null for an input the model leaves empty. The connector's own
+                    # schema leaves such an input out, so the nulls are dropped here, on the way to it.
+                    args = {k: v for k, v in tool_input.items() if v is not None}
+                    result: Any = await session.call_tool(name, args)
                     text = "\n".join(p.text for p in result.content if getattr(p, "type", "") == "text")
                     return ToolOutcome(ok=not result.is_error, text=text)
 

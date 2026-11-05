@@ -20,7 +20,7 @@
         "id": "fc_lab20_B1",
         "call_id": "call_lab20_B1",
         "name": "get_purchase_order",
-        "arguments": "{\"invoice_number\": \"INV-8301\"}",
+        "arguments": "{\"po_number\": null, \"invoice_number\": \"INV-8301\"}",
         "status": "completed"
       },
       {
@@ -28,7 +28,7 @@
         "id": "fc_lab20_B2",
         "call_id": "call_lab20_B2",
         "name": "get_purchase_order",
-        "arguments": "{\"invoice_number\": \"INV-8302\"}",
+        "arguments": "{\"po_number\": null, \"invoice_number\": \"INV-8302\"}",
         "status": "completed"
       }
     ],

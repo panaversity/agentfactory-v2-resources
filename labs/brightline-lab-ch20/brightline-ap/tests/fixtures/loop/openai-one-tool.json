@@ -20,7 +20,7 @@
         "id": "fc_lab20_A1",
         "call_id": "call_lab20_A1",
         "name": "list_open_invoices",
-        "arguments": "{\"vendor_id\": null, \"due_by\": \"2027-04-04\"}",
+        "arguments": "{\"vendor_id\": null, \"due_on_or_before\": \"2027-04-04\", \"page_size\": null, \"page\": null}",
         "status": "completed"
       }
     ],
@@ -61,7 +61,7 @@
         "content": [
           {
             "type": "output_text",
-            "text": "Three invoices are due this week, $6,374.00 in all: INV-8301 (Midwest Packaging Co., $4,125.00, December 2), INV-8303 (Hocking Valley Pallets, $1,860.00, December 3) and INV-8302 (Buckeye Janitorial Supply, $389.00, December 4).",
+            "text": "Three invoices are due this week, $6,374.00 in all: INV-8301 (Midwest Packaging Co., $4,125.00, March 31), INV-8303 (Hocking Valley Pallets, $1,860.00, April 1) and INV-8302 (Buckeye Janitorial Supply, $389.00, April 2).",
             "annotations": []
           }
         ]

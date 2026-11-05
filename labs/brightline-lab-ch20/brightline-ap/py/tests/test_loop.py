@@ -230,7 +230,8 @@ def test_stream_assembles_text_and_tool_input() -> None:
     out = asyncio.run(read_claude_stream(replay(), pieces.append))
     assert pieces == ["Let me check ", "this week's invoices."]
     assert out.tool_calls == [{"id": "toolu_01Lab20S2", "name": "list_open_invoices",
-                               "input": {"vendor_id": None, "due_by": "2027-04-04"}}]
+                               "input": {"vendor_id": None, "due_on_or_before": "2027-04-04",
+                                         "page_size": None, "page": None}}]
     assert out.stop_reason == "tool_use"
 
 
@@ -272,8 +273,8 @@ def test_practice_connector_over_mcp() -> None:
 
         async def go() -> tuple[Any, Any]:
             async with connect_to_connector("http://127.0.0.1:8768/mcp", "test-token-not-secret") as run_tool:
-                return (await run_tool("find_vendor", {"query": "V003"}),
-                        await run_tool("get_purchase_order", {"invoice_number": "INV-8302"}))
+                return (await run_tool("find_vendor", {"vendor_id": "V003", "name": None}),
+                        await run_tool("get_purchase_order", {"po_number": None, "invoice_number": "INV-8302"}))
 
         found, missing = asyncio.run(go())
         assert found.ok and "Hocking Valley Pallets" in found.text
@@ -293,7 +294,7 @@ def test_practice_connector_reads_token_file_and_can_be_broken(tmp_path: Any, mo
     monkeypatch.setenv("PRACTICE_BROKEN", "search_policy")
     pc = importlib.reload(pc)
     assert pc.search_policy("early payment discount") == "try again"
-    assert pc.find_vendor("V003")[0]["name"] == "Hocking Valley Pallets"
+    assert pc.find_vendor(vendor_id="V003")["vendors"][0]["vendor_name"] == "Hocking Valley Pallets"
     monkeypatch.delenv("PRACTICE_BROKEN")
     importlib.reload(pc)
 
@@ -313,7 +314,7 @@ def test_allow_only_refuses_unlisted_tools() -> None:
     guarded = allow_only(tools)
 
     async def go() -> tuple[ToolOutcome, ToolOutcome]:
-        return await guarded("pay_vendor", {"vendor_id": "V001"}), await guarded("find_vendor", {"query": "V001"})
+        return await guarded("pay_vendor", {"vendor_id": "V001"}), await guarded("find_vendor", {"vendor_id": "V001", "name": None})
 
     refused, allowed = asyncio.run(go())
     assert refused == ToolOutcome(False, "Tool pay_vendor is not allowed for this worker.")

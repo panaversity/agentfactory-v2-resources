@@ -7,8 +7,8 @@
   {"type": "content_block_stop", "index": 0},
   {"type": "content_block_start", "index": 1, "content_block": {"type": "tool_use", "id": "toolu_01Lab20S2", "name": "list_open_invoices", "input": {}}},
   {"type": "content_block_delta", "index": 1, "delta": {"type": "input_json_delta", "partial_json": "{\"vendor_id\": nu"}},
-  {"type": "content_block_delta", "index": 1, "delta": {"type": "input_json_delta", "partial_json": "ll, \"due_by\": \"2026-"}},
-  {"type": "content_block_delta", "index": 1, "delta": {"type": "input_json_delta", "partial_json": "12-06\"}"}},
+  {"type": "content_block_delta", "index": 1, "delta": {"type": "input_json_delta", "partial_json": "ll, \"due_on_or_before\": \"2027-"}},
+  {"type": "content_block_delta", "index": 1, "delta": {"type": "input_json_delta", "partial_json": "04-04\", \"page_size\": null, \"page\": null}"}},
   {"type": "content_block_stop", "index": 1},
   {"type": "message_delta", "delta": {"stop_reason": "tool_use", "stop_sequence": null, "stop_details": null}, "usage": {"output_tokens": 61}},
   {"type": "message_stop"}

@@ -14,7 +14,7 @@
         "id": "fc_lab20_D1",
         "call_id": "call_lab20_D1",
         "name": "find_vendor",
-        "arguments": "{\"query\": \"V001\"",
+        "arguments": "{\"vendor_id\": \"V001\", \"name\": null",
         "status": "completed"
       }
     ],

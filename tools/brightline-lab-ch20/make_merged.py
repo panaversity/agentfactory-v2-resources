@@ -47,6 +47,8 @@ for name, cmd in his_scripts.items():
     name = renamed.get(name, name)
     assert name not in ours["scripts"], name
     ours["scripts"][name] = cmd
+# One typecheck for both: Lab 19's settings for its files, and tsconfig.loop.json for the loop (below).
+ours["scripts"]["typecheck"] = "tsc --noEmit && tsc -p tsconfig.loop.json"
 ours.setdefault("dependencies", {})
 for k, v in his["dependencies"].items():
     assert k not in ours["dependencies"], k
@@ -126,8 +128,21 @@ oc = oc.replace(anchor, '''    // The agent loop (Lab 20): OpenCode's read tool 
 ''' + anchor)
 put("opencode.jsonc", oc)
 
-# ---- tsconfig.json: Lab 19's, which already takes src/, scripts/ and tests/ ---------------------
-put("tsconfig.json", (OURS / "tsconfig.json").read_text())
+# ---- tsconfig.json and tsconfig.loop.json ------------------------------------------------------
+# Lab 19's files run under Node's own type stripping, so its tsconfig allows only erasable syntax.
+# The loop runs under tsx and vitest, which compile it, and its limits.ts uses parameter properties
+# (quoted in Lab 20, Task 8), so the loop's files have their own config, Lab 19's with that one rule off.
+LOOP_TS = ["src/loop", "scripts/ask.ts", "scripts/break.ts", "scripts/stateful.ts", "scripts/stream-demo.ts", "tests/*.spec.ts"]
+tc = json.loads((OURS / "tsconfig.json").read_text())
+assert "exclude" not in tc
+tc["exclude"] = LOOP_TS
+put("tsconfig.json", json.dumps(tc, indent=2) + "\n")
+put("tsconfig.loop.json", json.dumps({
+    "extends": "./tsconfig.json",
+    "compilerOptions": {"erasableSyntaxOnly": False},
+    "include": LOOP_TS,
+    "exclude": [],
+}, indent=2) + "\n")
 
 # ---- AGENTS.md: Lab 19's, then his rules for the loop -------------------------------------------
 ag = (OURS / "AGENTS.md").read_text().rstrip("\n")
