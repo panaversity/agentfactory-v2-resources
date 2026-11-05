@@ -1,0 +1,8 @@
+order_id,supplier,item,quantity,unit_price
+O-201,Acme Paper Co,Copy paper (case),12,38.50
+O-202,Great Lakes Tools,Box cutters,25,6.40
+O-203,Buckeye Cleaning Supply,Floor cleaner (gallon),8,14.95
+O-204,Acme Paper Co,Shipping labels (roll),40,7.25
+O-205,Midwest Office Furniture,Desk chair,3,189.99
+O-206,Great Lakes Tools,Box cutters (returned),-5,6.40
+O-207,Columbus Print Works,Packing slips (box),6,22.80
