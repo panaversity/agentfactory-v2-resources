@@ -41,7 +41,11 @@
       "Bash(npm run embed*)",
       "Bash(psql *)",
       "Bash(npx neonctl *)",
-      "Bash(npx wrangler hyperdrive *)"
+      "Bash(npx wrangler hyperdrive *)",
+      "Bash(npm run ask*)",
+      "Bash(npm run break*)",
+      "Bash(npm run stateful*)",
+      "Bash(npm run stream:demo*)"
     ],
     "deny": [
       "Edit(data/**)",
@@ -53,7 +57,9 @@
       "Bash(npx wrangler d1 execute brightline-auth *--remote*)",
       "Bash(psql *production*)",
       "Bash(*--yes-production*)",
-      "Read(./exports/**)"
+      "Read(./exports/**)",
+      "Bash(cat .secrets/*)",
+      "Bash(cat ./.secrets/*)"
     ]
   }
 }

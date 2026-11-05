@@ -1,0 +1,31 @@
+[
+  {
+    "id": "resp_lab20_0008",
+    "object": "response",
+    "created_at": 1797244800,
+    "model": "gpt-6-luna",
+    "status": "failed",
+    "incomplete_details": null,
+    "error": null,
+    "instructions": null,
+    "output": [],
+    "parallel_tool_calls": true,
+    "tool_choice": "auto",
+    "tools": [],
+    "temperature": null,
+    "top_p": null,
+    "metadata": {},
+    "usage": {
+      "input_tokens": 1380,
+      "output_tokens": 0,
+      "total_tokens": 1380,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    }
+  }
+]

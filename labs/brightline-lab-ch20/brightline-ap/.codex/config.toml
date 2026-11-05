@@ -1,3 +1,9 @@
+# The agent loop (Lab 20): Codex asks before a command that leaves the folder or needs the network,
+# such as npm run ask. Codex's settings cannot deny reading a path in the folder, so for .secrets/ the
+# rule in AGENTS.md is the guard.
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
 # Codex: both Brightline AP connectors, by URL, with no key: Codex signs in through your browser
 # (`codex mcp login apts`), with its own Client ID Metadata Document, whose host chatgpt.com is on the
 # sign-in server's allowlist (servers/auth/src/cimd-allowlist.ts). F6.

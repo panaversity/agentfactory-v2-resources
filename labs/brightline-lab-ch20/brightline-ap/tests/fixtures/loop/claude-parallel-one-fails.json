@@ -1,0 +1,62 @@
+[
+  {
+    "id": "msg_01Lab200003",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-sonnet-5-5",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "Two independent lookups. I can ask for both purchase orders at once.",
+        "signature": "EqQBCkYIBxgCKkDsig2"
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01Lab20B1",
+        "name": "get_purchase_order",
+        "input": {
+          "invoice_number": "INV-8301"
+        }
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01Lab20B2",
+        "name": "get_purchase_order",
+        "input": {
+          "invoice_number": "INV-8302"
+        }
+      }
+    ],
+    "stop_reason": "tool_use",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1430,
+      "output_tokens": 140,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "id": "msg_01Lab200004",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-sonnet-5-5",
+    "content": [
+      {
+        "type": "text",
+        "text": "INV-8301 matches PO-7701 ($4,125.00) and needs no approval. INV-8302 has no purchase order: the lookup returned an error. At $389.00 it is under $500.00, so policy may not need one, but I have not checked the policy yet.",
+        "citations": null
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1720,
+      "output_tokens": 110,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  }
+]

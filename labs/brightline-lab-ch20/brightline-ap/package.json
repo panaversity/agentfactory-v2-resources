@@ -47,9 +47,23 @@
     "embed": "node scripts/embed.ts",
     "matrix:data": "node --env-file-if-exists=.secrets/test-signing.local.env scripts/data-matrix.ts",
     "check:queries": "node scripts/check-queries.ts",
-    "eval:retrieval": "node scripts/retrieval-eval.ts"
+    "eval:retrieval": "node scripts/retrieval-eval.ts",
+    "test:loop": "vitest run",
+    "test:loop:py": "cd py && uv run --locked pytest -q tests/test_loop.py",
+    "typecheck:py": "cd py && uv run --locked pyright -p pyrightconfig.loop.json",
+    "ask": "tsx scripts/ask.ts",
+    "ask:py": "cd py && uv run --locked python -m brightline_ap.ask",
+    "connector:practice": "cd py && uv run --locked python -m brightline_ap.practice_connector",
+    "break": "tsx scripts/break.ts",
+    "break:py": "cd py && uv run --locked python -m brightline_ap.experiments break",
+    "stateful": "tsx scripts/stateful.ts",
+    "stateful:py": "cd py && uv run --locked python -m brightline_ap.experiments stateful",
+    "stream:demo": "tsx scripts/stream-demo.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "1.5.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "openai": "7.51.0",
     "zod": "4.6.7"
   },
   "devDependencies": {
@@ -59,7 +73,9 @@
     "@types/pg": "8.23.1",
     "jose": "6.2.15",
     "pg": "8.23.1",
-    "typescript": "5.9.3"
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
   },
   "workspaces": [
     "servers/hello",

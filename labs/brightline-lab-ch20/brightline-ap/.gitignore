@@ -10,3 +10,5 @@ __pycache__/
 *.pyc
 .secrets/
 exports/
+# The agent loop's trace (npm run ask -- --trace). Task 10 keeps a copy in ports/.
+trace.jsonl

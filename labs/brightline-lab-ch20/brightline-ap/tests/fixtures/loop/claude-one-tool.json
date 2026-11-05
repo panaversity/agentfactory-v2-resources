@@ -1,0 +1,55 @@
+[
+  {
+    "id": "msg_01Lab200001",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-sonnet-5-5",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "The person wants invoices due this week. Today is Tuesday 2027-03-30, so due by Sunday 2027-04-04.",
+        "signature": "EqQBCkYIBxgCKkDsig1"
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01Lab20A1",
+        "name": "list_open_invoices",
+        "input": {
+          "vendor_id": null,
+          "due_by": "2027-04-04"
+        }
+      }
+    ],
+    "stop_reason": "tool_use",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1412,
+      "output_tokens": 96,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "id": "msg_01Lab200002",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-sonnet-5-5",
+    "content": [
+      {
+        "type": "text",
+        "text": "Three invoices are due this week, $6,374.00 in all:\n- INV-8301, Midwest Packaging Co., $4,125.00, due December 2\n- INV-8303, Hocking Valley Pallets, $1,860.00, due December 3\n- INV-8302, Buckeye Janitorial Supply, $389.00, due December 4",
+        "citations": null
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1640,
+      "output_tokens": 118,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  }
+]

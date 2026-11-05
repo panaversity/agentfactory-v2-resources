@@ -1,0 +1,89 @@
+[
+  {
+    "id": "resp_lab20_0001",
+    "object": "response",
+    "created_at": 1797244800,
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": null,
+    "error": null,
+    "instructions": null,
+    "output": [
+      {
+        "type": "reasoning",
+        "id": "rs_lab20_1",
+        "summary": [],
+        "encrypted_content": "gAAAAABpLab20encrypted1"
+      },
+      {
+        "type": "function_call",
+        "id": "fc_lab20_A1",
+        "call_id": "call_lab20_A1",
+        "name": "list_open_invoices",
+        "arguments": "{\"vendor_id\": null, \"due_by\": \"2027-04-04\"}",
+        "status": "completed"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "tool_choice": "auto",
+    "tools": [],
+    "temperature": null,
+    "top_p": null,
+    "metadata": {},
+    "usage": {
+      "input_tokens": 1380,
+      "output_tokens": 88,
+      "total_tokens": 1468,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "resp_lab20_0002",
+    "object": "response",
+    "created_at": 1797244800,
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": null,
+    "error": null,
+    "instructions": null,
+    "output": [
+      {
+        "type": "message",
+        "id": "msg_lab20_A2",
+        "role": "assistant",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "text": "Three invoices are due this week, $6,374.00 in all: INV-8301 (Midwest Packaging Co., $4,125.00, December 2), INV-8303 (Hocking Valley Pallets, $1,860.00, December 3) and INV-8302 (Buckeye Janitorial Supply, $389.00, December 4).",
+            "annotations": []
+          }
+        ]
+      }
+    ],
+    "parallel_tool_calls": true,
+    "tool_choice": "auto",
+    "tools": [],
+    "temperature": null,
+    "top_p": null,
+    "metadata": {},
+    "usage": {
+      "input_tokens": 1610,
+      "output_tokens": 104,
+      "total_tokens": 1714,
+      "input_tokens_details": {
+        "cached_tokens": 1280,
+        "cache_write_tokens": 0
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    }
+  }
+]

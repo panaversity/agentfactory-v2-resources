@@ -1,0 +1,51 @@
+[
+  {
+    "name": "find_vendor",
+    "description": "Find a vendor of the signed-in person's company by vendor id (such as V001) or by part of its name. Returns the vendor id, name and payment terms, or an empty list when nothing matches.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": { "type": "string", "description": "A vendor id such as V001, or part of a vendor name" }
+      },
+      "required": ["query"],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "list_open_invoices",
+    "description": "List the company's unpaid invoices, with amounts in cents and due dates. Filter by vendor id, by a last due date, or both. Pass null for a filter you do not need.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "vendor_id": { "type": ["string", "null"], "description": "Only this vendor's invoices, such as V001, or null for all vendors" },
+        "due_by": { "type": ["string", "null"], "description": "Only invoices due on or before this date, as YYYY-MM-DD, or null for any date" }
+      },
+      "required": ["vendor_id", "due_by"],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "get_purchase_order",
+    "description": "Get the purchase order matched to one invoice, by invoice number (such as INV-8303). Returns the PO number, its amount in cents and whether it needs approval, or an error when the invoice has no purchase order.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "invoice_number": { "type": "string", "description": "An invoice number such as INV-8303" }
+      },
+      "required": ["invoice_number"],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "search_policy",
+    "description": "Search the company's AP policy. Returns up to three passages, each with a citation such as purchasing.md:4, or says that no passage matches. Cite the passage you use.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": { "type": "string", "description": "What to look for, in a few words, such as small repairs" }
+      },
+      "required": ["query"],
+      "additionalProperties": false
+    }
+  }
+]
