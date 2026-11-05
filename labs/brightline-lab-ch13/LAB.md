@@ -333,7 +333,9 @@ If you want Python and not TypeScript, do the Python half of each task and use t
 
 ### Without a paid Claude plan
 
-Do Tasks 1 to 9 and 12 in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) set first. Your port is the agent you did not use. Say which in `ports/ch13.md`.
+Set up the Claude app on another company's model, as [0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/#optional-the-claude-app-without-a-claude-plan) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. 0.2.4 also says what you give up.
+
+If you cannot use the Claude app at all, do Tasks 1 to 9 and 12 in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) set first. Your port is the agent you did not use. Say which in `ports/ch13.md`.
 
 ### Apply it to your vertical
 
