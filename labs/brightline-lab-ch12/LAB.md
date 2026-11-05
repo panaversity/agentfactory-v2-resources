@@ -32,7 +32,7 @@ Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v
 - Check the agent's plan against an answer you already know, before it builds anything ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
 - Judge the result by that answer, not by the agent's own tests ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/)).
 - Hand the work to a new session, and undo a change with git ([12.5](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/context-sessions-effort/)).
-- Give the same job to a second agent, and compare what each one did ([12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/)).
+- Give the same job to a second agent, and compare what each one did ([12.8](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/)).
 
 ### How each task works
 
@@ -229,7 +229,7 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your first agent instead.
 
 1. Do Tasks 1 to 7 in Codex or OpenCode.
-2. Where a task says *Plan*, *Manual* or *Accept edits*, use your tool's control, as [12.7's permissions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-permissions-and-a-plan) shows. Where it says *+ New*, start a new chat in Codex or a new session in OpenCode, as [12.7's sessions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-context-and-sessions) shows.
+2. Where a task says *Plan*, *Manual* or *Accept edits*, use your tool's control, as [12.8's permissions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-permissions-and-a-plan) shows. Where it says *+ New*, start a new chat in Codex or a new session in OpenCode, as [12.8's sessions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-context-and-sessions) shows.
 3. If you use OpenCode, set its safety rules before Task 1, as in Task 8's OpenCode steps 2 to 5.
 4. In Task 3, stop after step 3, because the steps after it are about Claude Code. Start the fresh session the way your tool does, and the checkpoint is that it gives the `data/` rule and names `AGENTS.md`.
 5. Skip Task 4, because its settings file is for Claude Code. At the end of Task 3, ask the agent to tag the commit `rules`.
@@ -242,7 +242,7 @@ Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your
 | --- | --- |
 | The Code tab asks you to upgrade | Claude Code needs a paid plan. See "If you do not have a paid Claude plan". |
 | Claude Code stops at a usage limit | On Pro, Max and Ultra, Claude Code shares its limit with chat. Stop at the end of a task, and go on when the limit resets. Git keeps your place. |
-| A button is not where a step says | The practice sections in [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in each tool. |
+| A button is not where a step says | The practice sections in [12.8](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in each tool. |
 | The tests say a file or module was not found | Ask the agent to check the Node.js version. The lab needs Node.js 24 or later. |
 | Node reports a syntax error in a `.ts` file | The agent used TypeScript that Node cannot run directly. Point it to the last rule in `AGENTS.md`. |
 | The agent wants to install a package | Say no. The lab needs no packages. Ask it to use what Node already has. |
