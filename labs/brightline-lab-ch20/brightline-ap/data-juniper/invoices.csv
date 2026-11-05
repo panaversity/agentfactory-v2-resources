@@ -1,0 +1,3 @@
+invoice_number,vendor_id,invoice_date,due_date,terms,amount_cents,status
+INV-0101,V001,2027-02-06,2027-03-08,Net 30,88000,open
+INV-0102,V002,2027-02-18,2027-03-05,Net 15,21500,open
