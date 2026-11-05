@@ -49,6 +49,10 @@ for name, cmd in his_scripts.items():
     ours["scripts"][name] = cmd
 # One typecheck for both: Lab 19's settings for its files, and tsconfig.loop.json for the loop (below).
 ours["scripts"]["typecheck"] = "tsc --noEmit && tsc -p tsconfig.loop.json"
+# Route A's test token (Lab 20, Task 0), Chapter 22's command name, made with Chapter 18's scripted
+# sign-in on staging: scripts/token-test.ts, kept in merged/ because it is ours, not the package's.
+assert "token:test" not in ours["scripts"]
+ours["scripts"]["token:test"] = "node scripts/token-test.ts --env staging"
 ours.setdefault("dependencies", {})
 for k, v in his["dependencies"].items():
     assert k not in ours["dependencies"], k

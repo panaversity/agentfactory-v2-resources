@@ -58,7 +58,8 @@
     "break:py": "cd py && uv run --locked python -m brightline_ap.experiments break",
     "stateful": "tsx scripts/stateful.ts",
     "stateful:py": "cd py && uv run --locked python -m brightline_ap.experiments stateful",
-    "stream:demo": "tsx scripts/stream-demo.ts"
+    "stream:demo": "tsx scripts/stream-demo.ts",
+    "token:test": "node scripts/token-test.ts --env staging"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "1.5.0",

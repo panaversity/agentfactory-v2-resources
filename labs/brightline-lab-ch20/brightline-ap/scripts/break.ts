@@ -1,4 +1,4 @@
-// npm run break -- temperature | forced-tool | drop-thinking | bad-key   (Tasks 5 and 9)
+// npm run break -- temperature | forced-tool | cut-signature | bad-key   (Tasks 5 and 9)
 // Each one breaks a rule on purpose against the live Claude API, then prints what
 // came back: the HTTP status, the error type, its message and the request id.
 // Every request is one small call. Nothing here is used by the loop itself.
@@ -34,15 +34,15 @@ try {
   } else if (which === "forced-tool") {
     // Forcing the model to use a tool. Current models refuse this: use "auto" and strict tools.
     await client.messages.create({ ...base, tool_choice: { type: "any" } });
-  } else if (which === "drop-thinking") {
-    // Turn 1 runs normally. Turn 2 sends the model's entry back with its thinking removed.
+  } else if (which === "cut-signature") {
+    // Turn 1 runs normally. Turn 2 sends the model's entry back with its thinking block's signature cut short.
     const first = await client.messages.create({ ...base, thinking: { type: "adaptive" } });
-    if (!first.content.some((b) => b.type === "thinking")) throw new Error("No thinking block this time, so there is nothing to drop. Run it again.");
+    if (!first.content.some((b) => b.type === "thinking")) throw new Error("No thinking block this time, so there is no signature to cut. Run it again.");
     const call = first.content.find((b) => b.type === "tool_use");
     if (!call) throw new Error("The model answered without a tool call. Run it again.");
-    const edited = first.content.filter((b) => b.type !== "thinking" && b.type !== "redacted_thinking");
+    const edited = first.content.map((b) => (b.type === "thinking" ? { ...b, signature: b.signature.slice(0, 20) } : b));
     console.log(`turn 1: stop_reason ${first.stop_reason}, blocks ${first.content.map((b) => b.type).join(", ")}`);
-    console.log(`sending back: ${edited.map((b) => b.type).join(", ")}`);
+    console.log(`sending back: ${edited.map((b) => b.type).join(", ")}, with the thinking signature cut short`);
     await client.messages.create({
       ...base, thinking: { type: "adaptive" },
       messages: [question, { role: "assistant", content: edited },
@@ -51,7 +51,7 @@ try {
   } else if (which === "bad-key") {
     await client.messages.create(base);
   } else {
-    throw new Error("Choose one: temperature, forced-tool, drop-thinking, bad-key");
+    throw new Error("Choose one: temperature, forced-tool, cut-signature, bad-key");
   }
   console.log("No error. Record that in ports/ch20.md: the API may have changed since this chapter was checked.");
 } catch (error) {

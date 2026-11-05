@@ -34,7 +34,7 @@ NOT_COPIED = {"package-lock.json", "py/requirements.txt", "opencode.json"}
 NOT_COPIED_PREFIX = ("docs/chapter-20/",)
 MERGED = {".claude/settings.json", ".codex/config.toml", ".gitignore", "AGENTS.md", "README.md", "package.json",
           "py/pyproject.toml", "opencode.jsonc", "vitest.config.ts", "py/pyrightconfig.loop.json", "tsconfig.json",
-          "tsconfig.loop.json"}
+          "tsconfig.loop.json", "scripts/token-test.ts"}
 
 
 def files(root):

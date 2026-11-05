@@ -1,6 +1,6 @@
 """The Python twins of scripts/break.ts and scripts/stateful.ts (Tasks 5, 7 and 9).
 
-    npm run break:py -- temperature | forced-tool | drop-thinking | bad-key
+    npm run break:py -- temperature | forced-tool | cut-signature | bad-key
     npm run stateful:py -- "Which invoices are due this week?"
 """
 from __future__ import annotations
@@ -29,22 +29,22 @@ async def break_it(which: str) -> None:
             await client.messages.create(**base, extra_body={"temperature": 1})  # an old sample's habit
         elif which == "forced-tool":
             await client.messages.create(**base, tool_choice={"type": "any"})
-        elif which == "drop-thinking":
+        elif which == "cut-signature":
             first = await client.messages.create(**base, thinking={"type": "adaptive"})
             if not any(b.type == "thinking" for b in first.content):
-                raise SystemExit("No thinking block this time, so there is nothing to drop. Run it again.")
+                raise SystemExit("No thinking block this time, so there is no signature to cut. Run it again.")
             call = next((b for b in first.content if b.type == "tool_use"), None)
             if call is None:
                 raise SystemExit("The model answered without a tool call. Run it again.")
-            edited = [b for b in first.content if b.type not in ("thinking", "redacted_thinking")]
-            print(f"turn 1: {[b.type for b in first.content]}, sending back: {[b.type for b in edited]}")
+            edited = [b.model_copy(update={"signature": b.signature[:20]}) if b.type == "thinking" else b for b in first.content]
+            print(f"turn 1: {[b.type for b in first.content]}, sending back: {[b.type for b in edited]}, signature cut short")
             await client.messages.create(**{**base, "thinking": {"type": "adaptive"}, "messages": [
                 question, {"role": "assistant", "content": edited},
                 {"role": "user", "content": [{"type": "tool_result", "tool_use_id": call.id, "content": "[]"}]}]})
         elif which == "bad-key":
             await client.messages.create(**base)
         else:
-            raise SystemExit("Choose one: temperature, forced-tool, drop-thinking, bad-key")
+            raise SystemExit("Choose one: temperature, forced-tool, cut-signature, bad-key")
         print("No error. Record that in ports/ch20.md: the API may have changed since this chapter was checked.")
     except anthropic.APIStatusError as error:
         body: Any = error.body if isinstance(error.body, dict) else {}
