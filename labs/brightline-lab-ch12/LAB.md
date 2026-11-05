@@ -2,51 +2,48 @@
 
 Chapter 12 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 12: the first repository, on three agents](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), so you can do the lab without the book.
 
-*Time: about 2 hours 40 minutes, plus about 30 minutes if you do Task 8 in both Codex and OpenCode. Installing the apps is not included. Lab files: `brightline-lab-ch12.zip`. The same steps are in `LAB.md` inside the zip.*
+*Time: about 2 hours 40 minutes, plus the time to install the apps. Task 8 in both Codex and OpenCode adds about 30 minutes.*
 
 ### The job
 
-Ana Morales, the accounts payable (AP) analyst at Brightline, keeps a folder of scripts that the team runs on invoice exports. Every Wednesday she makes the list of invoices due by Friday's payment run, by hand. Today is Wednesday, March 3, 2027, and the payment run is Friday, March 5, 2027. She has already made this week's list, and her note is in the lab files.
+Ana Morales is the accounts payable (AP) analyst at Brightline. Every Wednesday she makes a list, by hand, of the invoices due by Friday's payment run. Today is Wednesday, March 3, 2027, and the payment run is Friday, March 5, 2027. Ana has already made this week's list, in a note.
 
-Your job is to make her folder safe for a coding agent, have the agent build that list as a tested script anyone can run with one command, and check its result against Ana's note. Then you give the same brief to a second agent, or to both other agents if you have the time, and compare what each one did.
-
-### What you will learn
-
-- Choose the folder and the permission mode before the first message, by how hard a mistake would be to undo ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
-- Write one `AGENTS.md` that every agent reads, see what a `CLAUDE.md` changes, and back the most important rule with a setting ([12.4](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
-- Read the agent's plan against an answer you already know, before anything is built ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
-- Judge "done" by that answer, not by the agent's passing tests ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/)).
-- Hand work to a fresh session through a written note, and undo a change with git ([12.5](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/context-sessions-effort/)).
-- Give the same brief and rules file to a second agent, and compare what each one asks and enforces ([12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/)).
+First you make her project folder safe for a coding agent. Then the agent builds her list as a script that anyone can run with one command, and you check its answer against Ana's note. Last, you give the same job to a second agent and compare the two.
 
 ### What you need
 
-- The Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan. Without one, see "If you do not have a paid Claude plan" at the end of this page. On Pro, Max and Ultra, Claude Code shares its usage limit with chat. If the limit stops you, stop at the end of a task, and git keeps your place.
-- A second agent for Task 8: Codex in the ChatGPT desktop app, on any ChatGPT plan, including Free, or OpenCode Desktop with a model connected, such as one of OpenCode's free models.
-- Git, and Node.js 24 or later (the program that runs these scripts), installed on your computer. Download them from [git-scm.com](https://git-scm.com/downloads) and [nodejs.org](https://nodejs.org/en/download). If a step is unclear, ask Claude in a chat. The agent checks them in Task 2, and it should never install software on its own.
+- The Claude desktop app, with a Pro, Max, Ultra, Team or Enterprise plan. Without one, see [If you do not have a paid Claude plan](#if-you-do-not-have-a-paid-claude-plan).
+- Git, and Node.js 24 or later, which runs the project's scripts. Get them from [git-scm.com](https://git-scm.com/downloads) and [nodejs.org](https://nodejs.org/en/download).
+- For Task 8, a second agent: Codex in the ChatGPT desktop app, on any plan, or OpenCode Desktop with a model connected, even a free one.
 
 ### The lab files
 
-Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it into a new folder, such as `Documents/labs/`. Unzip a fresh copy, even if you practised in `brightline-ap` in 12.7. It holds five things:
+Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it. It holds:
 
-- `brightline-ap/`, the starter project. It is the only folder you give an agent.
-- `anas-note.md`, Ana's list for this week. Move it out of the lab folder, for example to your Desktop, and never give it to an agent. An agent's folder is not a wall ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)), and an agent that can read the answer is not tested by it.
-- `opencode.jsonc`, OpenCode's safety settings, which Task 8 uses.
-- `LAB.md`, a copy of these steps.
-- `README.md`, which says what each file is.
+- `brightline-ap/`, the project. It is the only folder you open in an agent.
+- `anas-note.md`, Ana's note, which is the answer. Move it out of the lab folder now, for example to your Desktop. An agent can sometimes read files next to its folder ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)), and it must never see the answer.
+- `opencode.jsonc`, OpenCode's safety settings, for Task 8.
+- `LAB.md`, a copy of these steps, and `README.md`, a list of the files.
 
-Tasks 4 to 8 each link an answer key, a separate download. Open each key in a text editor, never in the agent.
+### What you will learn
+
+- Set up the folder, the permission mode and git, so a mistake is easy to undo ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
+- Write one `AGENTS.md` that every agent reads, and make its most important rule a setting ([12.4](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
+- Check the agent's plan against an answer you already know, before it builds anything ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
+- Judge the result by that answer, not by the agent's own tests ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/)).
+- Hand the work to a new session, and undo a change with git ([12.5](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/context-sessions-effort/)).
+- Give the same job to a second agent, and compare what each one did ([12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/)).
 
 ### How each task works
 
-Each task has a goal, steps and a **Checkpoint**. Do not start the next task until the checkpoint is true. Before you approve a command, read what the agent says it will do, and say no to anything you do not understand. Asking "What does this command do?" is always fine. If a button has moved, the practice sections in [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in each tool.
+Each task has a goal, steps and a **Checkpoint**. Do not start the next task until the checkpoint is true. Before you approve a command, read what the agent says it will do. Say no to anything you do not understand. You can always ask "What does this command do?"
 
 ### Task 1. Look before you touch (10 minutes)
 
 *Goal:* the agent explains the project without changing anything.
 
 1. Open the Claude desktop app and select the *Code* tab.
-2. Choose *Local* as the environment. Use *Open folder…* to pick `brightline-ap`, not the folder above it.
+2. Choose *Local* as the environment. Use *Open folder…* to pick `brightline-ap` from this lab's zip. Do not pick the folder above it, or a `brightline-ap` you used for practice.
 3. Set the permission mode to *Plan*. A new session may start in another mode, so check the selector. Leave the model and the effort at their defaults.
 4. Send "Explain this project to me: what it is for, what each folder holds, and how to run its tests. Do not change anything."
 
@@ -57,7 +54,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 *Goal:* every later change is saved in a version you can go back to.
 
 1. Switch the permission mode to *Manual*, so the agent asks before each edit and command.
-2. Send: "Check that git and Node.js 24 or later are installed. Then put this folder under git, with a main branch, make a first commit of everything here, and run the tests."
+2. Send: "Check that git and Node.js 24 or later are installed. If one is missing, tell me the official way to install it, and wait. If both are there, put this folder under git, with a main branch, make a first commit of everything here, and run the tests."
 3. Approve each command when you agree with what it does. Expect a check of the versions, then `git init`, `git add`, `git commit` and `npm test`. If git or Node.js is missing, install it, then send the message again.
 4. A command with `--global` changes git for the whole computer. Say no to it, and ask the agent to set the name and email for this project only.
 
@@ -67,7 +64,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 *Goal:* a short, true `AGENTS.md` that every agent reads, and you have seen what a `CLAUDE.md` does to it.
 
-1. Send this message as it is. The last rule is for the agent, so you do not need to follow it.
+1. Send this message as it is. The last rule is for the agent, so you do not need to understand it.
 
    > Read this project and write a short `AGENTS.md` at the top of it. Say what the project is, how to run its tests and where things go. Make sure it says these five things:
    >
@@ -102,7 +99,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 **Checkpoint:** the setting blocked the edit to `data/vendors.csv`, nothing under `data/` changed, and the agent reports the tag `rules`.
 
-**Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-4.md).
+**Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12-key-task-4.md). Open it, and every later key, in a text editor, never in the agent.
 
 ### Task 5. Read the plan against Ana's note (20 minutes)
 
@@ -168,7 +165,7 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 
 #### With Codex
 
-1. Open the ChatGPT desktop app and choose *Codex*. Open the `brightline-ap` folder, set *Work in* to *This computer*, and set the permission mode to *Ask for approval*.
+1. Open the ChatGPT desktop app, open the ChatGPT dropdown, and select *Codex*. Open the `brightline-ap` folder, set *Work in* to *This computer*, and set the permission mode to *Ask for approval*.
 2. Send: "Start a new branch called `port-codex` from the tag `rules`, and switch to it." Approve the command. The branch starts from the rules and the settings, before the script existed. Your script stays safe on `main`.
 3. Ask: "What rules does this project give you, and which file did you read them from?" It should name `AGENTS.md`. The settings file from Task 4 is for Claude Code, so it does not bind Codex.
 4. Test the `data/` rule. Send: "For this one request only, change the terms of vendor V001 in `data/vendors.csv` to Net 45." If it asks to make the change, say no.
@@ -186,15 +183,15 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 
 #### With OpenCode
 
-1. Install OpenCode Desktop from [opencode.ai/download](https://opencode.ai/download). Open the `brightline-ap` folder, and connect a model with `/connect`. One of OpenCode's free models is enough.
+1. Install OpenCode Desktop from [opencode.ai/download](https://opencode.ai/download). Choose *Add project* and pick `brightline-ap`, then connect a model with `/connect`. One of OpenCode's free models is enough.
 2. Before you send any task, turn auto-accept off for this project, under Settings, then Projects. OpenCode allows almost everything by default, and it does not sandbox the agent.
 3. Copy `opencode.jsonc` from the lab folder into `brightline-ap`. It makes every edit, every shell command and any reach outside the folder ask first, and it denies any edit in `data/`. It uses the form of OpenCode version 2, from its [Permissions page](https://opencode.ai/v2/docs/permissions/).
 4. Test it. Ask OpenCode to create an empty file called `test.txt`. It must ask first, and you say no.
 5. Ask OpenCode to change the terms of vendor V001 in `data/vendors.csv` to Net 45. It must refuse without asking you, because the rule denies it.
 6. Send: "Start a new branch called `port-opencode` from the tag `rules`, and switch to it." Approve the command. Your script stays safe on `main`.
-7. Choose the *plan* agent. Ask which rules it read, and from which file. Then send the brief from Task 5, unchanged.
+7. Switch to the *plan* agent with `/agent`. Ask which rules it read, and from which file. Then send the brief from Task 5, unchanged. If it asks to edit a file while it plans, say no.
 8. Read the plan against Ana's note, and correct it as you did in Task 5, with one exception. If it misses the empty due dates, leave that for step 10.
-9. Switch to the *build* agent and let it work, approving each edit and command.
+9. Switch back to the *build* agent with `/agent`, and let it work, approving each edit and command.
 10. Ask it to run the tests and the script, and compare the result with Ana's note. If you left the empty due dates out, the tests may pass on a list that is wrong. Give that correction now, and run it again.
 11. If it still does not match after two corrections, note what went wrong, and go on to Task 9, which asks.
 12. When it matches, ask for a commit on the `port-opencode` branch, including `opencode.jsonc`, and approve it.
@@ -244,6 +241,8 @@ Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your
 | Problem | What to try |
 | --- | --- |
 | The Code tab asks you to upgrade | Claude Code needs a paid plan. See "If you do not have a paid Claude plan". |
+| Claude Code stops at a usage limit | On Pro, Max and Ultra, Claude Code shares its limit with chat. Stop at the end of a task, and go on when the limit resets. Git keeps your place. |
+| A button is not where a step says | The practice sections in [12.7](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in each tool. |
 | The tests say a file or module was not found | Ask the agent to check the Node.js version. The lab needs Node.js 24 or later. |
 | Node reports a syntax error in a `.ts` file | The agent used TypeScript that Node cannot run directly. Point it to the last rule in `AGENTS.md`. |
 | The agent wants to install a package | Say no. The lab needs no packages. Ask it to use what Node already has. |
