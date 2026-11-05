@@ -10,9 +10,10 @@ The result has one right answer: on the `port-opencode` branch, the script lists
 
 The safety test: OpenCode asks before it creates `test.txt`, because every edit asks first. It refuses the edit to `data/vendors.csv` without asking you, because the `data/` line denies it, and it comes after the edit line, so it is the last rule that matches. The deny line covers OpenCode's edit tool. A shell command that would change the file still asks first, because of the shell line.
 
+The *plan* agent names `AGENTS.md` as the file it read its rules from.
+
 What to notice, because Task 9 asks you:
 
-- The *plan* agent names `AGENTS.md` as the file it read its rules from.
 - OpenCode guarded `data/` with a setting, the deny line in `opencode.jsonc`, backed by the lines that make everything else ask first.
 - Whether its first plan caught the empty due dates, or you had to add the rule. If you let it build without that rule, its tests may have passed on 6 invoices, $9,614.53. That is the chapter's lesson: the tests are the agent's evidence, and Ana's note decides.
 - What it asked before acting, and what it did without asking.

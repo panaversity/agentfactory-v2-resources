@@ -12,7 +12,7 @@ First you make her project folder safe for a coding agent. Then the agent builds
 
 ### What you need
 
-- The Claude desktop app, with a Pro, Max, Ultra, Team or Enterprise plan. Without one, see [If you do not have a paid Claude plan](#if-you-do-not-have-a-paid-claude-plan).
+- The Claude desktop app, with a Pro, Max, Ultra, Team or Enterprise plan. Without one, the app can run on another company's model: see [If you do not have a paid Claude plan](#if-you-do-not-have-a-paid-claude-plan).
 - Git, and Node.js 24 or later, which runs the project's scripts. Get them from [git-scm.com](https://git-scm.com/downloads) and [nodejs.org](https://nodejs.org/en/download).
 - For Task 8, a second agent: Codex in the ChatGPT desktop app, on any plan, or OpenCode Desktop with a model connected, even a free one.
 
@@ -159,23 +159,20 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 ### Task 8. The same brief on a second agent (30 minutes)
 
-*Goal:* the same brief and the same rules file on a second agent, and what that agent asks and enforces.
+*Goal:* see which rules a second agent reads, what stops it, and whether its result matches Ana's note.
 
-Choose Codex or OpenCode, whichever you have, and follow its steps. If you have the time and both apps, do the other one too.
+Use Codex or OpenCode, whichever you have. If you have the time and both apps, do the other one too. Each agent works on its own branch, made from the tag `rules`. So it starts with your rules and settings, but not your script, which stays safe on `main`.
 
 #### With Codex
 
 1. Open the ChatGPT desktop app, open the ChatGPT dropdown, and select *Codex*. Open the `brightline-ap` folder, set *Work in* to *This computer*, and set the permission mode to *Ask for approval*.
-2. Send: "Start a new branch called `port-codex` from the tag `rules`, and switch to it." Approve the command. The branch starts from the rules and the settings, before the script existed. Your script stays safe on `main`.
-3. Ask: "What rules does this project give you, and which file did you read them from?" It should name `AGENTS.md`. The settings file from Task 4 is for Claude Code, so it does not bind Codex.
-4. Test the `data/` rule. Send: "For this one request only, change the terms of vendor V001 in `data/vendors.csv` to Net 45." If it asks to make the change, say no.
-5. Ask Codex to show `git status`. If `data/vendors.csv` changed, nothing stopped it, and that is your answer for Task 9. Ask Codex to restore the file with git.
-6. Turn on plan mode with `/plan`. Then send the brief from Task 5, unchanged.
-7. Read the plan against Ana's note, and correct it as you did in Task 5, with one exception. If it misses the empty due dates, leave that for step 9.
-8. Turn plan mode off with `/plan`, then send "Go ahead with the revised plan." Approve each step.
-9. Ask Codex to run the tests and the script, and compare the result with Ana's note. If you left the empty due dates out, the tests may pass on a list that is wrong. Give that correction now, and run it again.
-10. If it still does not match after two corrections, note what went wrong, and go on to Task 9, which asks.
-11. When it matches, ask for a commit on the `port-codex` branch, and approve it.
+2. Send: "Start a new branch called `port-codex` from the tag `rules`, and switch to it." Approve the command.
+3. Ask: "What rules does this project give you, and which file did you read them from?" It should name `AGENTS.md`. Task 4's settings file is only for Claude Code, so Codex does not follow it.
+4. Send: "For this one request only, change the terms of vendor V001 in `data/vendors.csv` to Net 45." If it asks first, say no. Then ask Codex to show `git status`. If the file changed, nothing stopped it, so ask Codex to restore the file with git.
+5. Turn on plan mode with `/plan`, and send the brief from Task 5, unchanged. Read the plan against Ana's note, and correct it as you did in Task 5.
+6. Turn plan mode off with `/plan`, then send "Go ahead with the revised plan." Approve each step.
+7. Ask Codex to run the tests and the script, and compare the result with Ana's note. If it does not match, give one correction, as in Task 6. If it still does not match after two corrections, note what went wrong, and go on.
+8. When it matches, ask for a commit on the `port-codex` branch, and approve it.
 
 **Checkpoint:** you know what stopped the edit in `data/`, and on `port-codex` the script lists the same 8 invoices and total as Ana's note, or you noted what went wrong.
 
@@ -186,15 +183,12 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 1. Install OpenCode Desktop from [opencode.ai/download](https://opencode.ai/download). Choose *Add project* and pick `brightline-ap`, then connect a model with `/connect`. One of OpenCode's free models is enough.
 2. Before you send any task, turn auto-accept off for this project, under Settings, then Projects. OpenCode allows almost everything by default, and it does not sandbox the agent.
 3. Copy `opencode.jsonc` from the lab folder into `brightline-ap`. It makes every edit, every shell command and any reach outside the folder ask first, and it denies any edit in `data/`. It uses the form of OpenCode version 2, from its [Permissions page](https://opencode.ai/v2/docs/permissions/).
-4. Test it. Ask OpenCode to create an empty file called `test.txt`. It must ask first, and you say no.
-5. Ask OpenCode to change the terms of vendor V001 in `data/vendors.csv` to Net 45. It must refuse without asking you, because the rule denies it.
-6. Send: "Start a new branch called `port-opencode` from the tag `rules`, and switch to it." Approve the command. Your script stays safe on `main`.
-7. Switch to the *plan* agent with `/agent`. Ask which rules it read, and from which file. Then send the brief from Task 5, unchanged. If it asks to edit a file while it plans, say no.
-8. Read the plan against Ana's note, and correct it as you did in Task 5, with one exception. If it misses the empty due dates, leave that for step 10.
-9. Switch back to the *build* agent with `/agent`, and let it work, approving each edit and command.
-10. Ask it to run the tests and the script, and compare the result with Ana's note. If you left the empty due dates out, the tests may pass on a list that is wrong. Give that correction now, and run it again.
-11. If it still does not match after two corrections, note what went wrong, and go on to Task 9, which asks.
-12. When it matches, ask for a commit on the `port-opencode` branch, including `opencode.jsonc`, and approve it.
+4. Test it. Ask OpenCode to create an empty file called `test.txt`. It must ask first, and you say no. Then ask it to change the terms of vendor V001 in `data/vendors.csv` to Net 45. It must refuse without asking you, because the rule denies it.
+5. Send: "Start a new branch called `port-opencode` from the tag `rules`, and switch to it." Approve the command.
+6. Switch to the *plan* agent with `/agent`. Ask which rules it read, and from which file. Then send the brief from Task 5, unchanged. If it asks to edit a file while it plans, say no. Read the plan against Ana's note, and correct it as you did in Task 5.
+7. Switch back to the *build* agent with `/agent`, and let it work, approving each edit and command.
+8. Ask it to run the tests and the script, and compare the result with Ana's note. If it does not match, give one correction, as in Task 6. If it still does not match after two corrections, note what went wrong, and go on.
+9. When it matches, ask for a commit on the `port-opencode` branch, including `opencode.jsonc`, and approve it.
 
 **Checkpoint:** OpenCode asked before every edit and command and refused the edit in `data/`, and on `port-opencode` the script lists the same 8 invoices and total as Ana's note, or you noted what went wrong.
 
@@ -202,45 +196,40 @@ Choose Codex or OpenCode, whichever you have, and follow its steps. If you have 
 
 ### Task 9. Compare and tag (15 minutes)
 
-*Goal:* a written record of what changed between the agents, and a tagged result.
+*Goal:* a short record of how the agents differed, and a name for the finished version.
 
 1. Back in the Claude desktop app, click *+ New*, and set the permission mode to *Manual*.
-2. Send: "Switch to the main branch." Approve the command.
+2. The folder is still on your second agent's branch. Send: "Switch to the main branch." Approve the command.
 3. Send this brief. Put the name of your second agent in place of the brackets, or both names if you did both.
 
-   > Help me write `ports/ch12.md`, comparing the agents I used in this lab: Claude Code and [Codex or OpenCode]. For each agent, ask me these six questions in one message, numbered, and wait for my answers:
+   > Help me write `ports/ch12.md`, comparing the agents I used in this lab: Claude Code and [Codex or OpenCode]. For each agent, ask me these three questions in one message, numbered, and wait for my answers:
    >
-   > 1. Did it read `AGENTS.md`? Yes or no, then how I know.
-   > 2. What guarded `data/`: a setting, a sandbox, or only the words?
-   > 3. What did it ask before acting, and what did it do without asking?
-   > 4. Did its first plan catch the empty due dates? Yes or no.
-   > 5. Did its result match Ana's note? Yes or no.
-   > 6. What did I have to change in my brief or settings, and why?
+   > 1. What did it ask before acting, and what stopped the edit in `data/`: a setting, a sandbox, or only the words?
+   > 2. Did its first plan catch the invoices with no due date?
+   > 3. Did its result match Ana's note, and what did I have to correct?
    >
    > Then ask which agent I would give this job to next week, and why. Write the file from my answers only, show it to me, and wait.
 
 4. Answer each question in a few words. There is no right answer to the last one. The reason is what counts.
-5. Approve the file when it says what you said. Then ask for a commit, approve it, and ask the agent to tag it `ch12`.
+5. Approve the file when it says what you said. Then ask for a commit, and approve it. Last, ask the agent to tag the commit `ch12`, the name for this lab's finished version.
 
 **Checkpoint:** `ports/ch12.md` is on the main branch, and the agent reports the tags `rules` and `ch12`.
 
 ### If you do not have a paid Claude plan
 
-Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your first agent instead.
+Set up the Claude app on another company's model, as [0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/#optional-the-claude-app-without-a-claude-plan) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. With Ollama on a Mac it costs nothing, and with DeepSeek or OpenRouter you pay for what you use. 0.2.4 also says what you give up.
 
-1. Do Tasks 1 to 7 in Codex or OpenCode.
-2. Where a task says *Plan*, *Manual* or *Accept edits*, use your tool's control, as [12.8's permissions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-permissions-and-a-plan) shows. Where it says *+ New*, start a new chat in Codex or a new session in OpenCode, as [12.8's sessions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-context-and-sessions) shows.
-3. If you use OpenCode, set its safety rules before Task 1, as in Task 8's OpenCode steps 2 to 5.
-4. In Task 3, stop after step 3, because the steps after it are about Claude Code. Start the fresh session the way your tool does, and the checkpoint is that it gives the `data/` rule and names `AGENTS.md`.
-5. Skip Task 4, because its settings file is for Claude Code. At the end of Task 3, ask the agent to tag the commit `rules`.
-6. In Task 8, your second agent is the one you did not use.
-7. Do Task 9 in the agent you used first, for the two agents you used.
+If you cannot use the Claude app at all, do the lab in Codex or OpenCode:
+
+1. Do Tasks 1 to 7 there. For *Plan*, *Manual* and *Accept edits*, use your tool's modes, as [12.8's permissions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-permissions-and-a-plan) shows. For *+ New*, start a new chat or session, as [12.8's sessions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-context-and-sessions) shows. With OpenCode, set its safety rules first, as in Task 8's OpenCode steps 2 to 4.
+2. In Task 3, stop after step 3, and skip Task 4, because those steps are about Claude Code's own files. At the end of Task 3, ask the agent to tag the commit `rules`.
+3. In Task 8, use the agent you did not use. Do Task 9 in your first agent.
 
 ### If something goes wrong
 
 | Problem | What to try |
 | --- | --- |
-| The Code tab asks you to upgrade | Claude Code needs a paid plan. See "If you do not have a paid Claude plan". |
+| The Code tab asks you to upgrade | Use a paid plan, or set up the app on another company's model. See "If you do not have a paid Claude plan". |
 | Claude Code stops at a usage limit | On Pro, Max and Ultra, Claude Code shares its limit with chat. Stop at the end of a task, and go on when the limit resets. Git keeps your place. |
 | A button is not where a step says | The practice sections in [12.8](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in each tool. |
 | The tests say a file or module was not found | Ask the agent to check the Node.js version. The lab needs Node.js 24 or later. |
@@ -257,7 +246,7 @@ Claude Code needs a paid plan. You can do the lab with Codex or OpenCode as your
 
 ### Apply it to your vertical
 
-Pick one folder from your own work that a script could help with, such as weekly exports or a set of templates. Pick data that may leave the company, because everything the agent reads is sent to the model's provider ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)). Copy it, never the original. Ask an agent to put the copy under git and to draft an `AGENTS.md`, and answer its questions about your rules. Add the one rule that would hurt most if broken, both as a line in `AGENTS.md` and as a setting. Then, outside the copy, write down the cases you know and the result you expect from one small script. Ask the agent for a plan for that script, read the plan against your cases, and stop at the plan. If your project has a web page, ask the agent to open it in its browser pane after a change and tell you what it sees, then check the page yourself.
+Pick one folder from your own work that a script could help with, such as a weekly export. Work on a copy, never the original, and only with data that may leave the company, because what the agent reads goes to the model's provider ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)). Ask an agent to put the copy under git and to draft an `AGENTS.md`, and answer its questions about your rules. Make the one rule that would hurt most if broken both a line in `AGENTS.md` and a setting. Then, outside the copy, write down the cases you know and the result you expect from one small script. Ask the agent for a plan for that script, read the plan against your cases, and stop at the plan.
 
 *Domain expert and builder.* The domain expert gives the rule that must never be broken and the hidden case, such as Brightline's empty due dates. The builder sets up the repository, the settings and the checks.
 
