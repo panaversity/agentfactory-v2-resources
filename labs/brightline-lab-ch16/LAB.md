@@ -525,7 +525,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Without a paid Claude plan
 
-Do Tasks 1 to 5, 7 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-from-a-prompt-to-a-skill) set first. Skip each step that runs the `claude` command, but still make the `ch16-install` clone in Task 11, because Task 16 uses it. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
+[0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/#optional-the-claude-app-without-a-claude-plan) shows how to run the Claude app on another company's model, but this lab also runs the `claude` command, which that setup does not cover. So without a paid plan, do Tasks 1 to 5, 7 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-from-a-prompt-to-a-skill) set first. Skip each step that runs the `claude` command, but still make the `ch16-install` clone in Task 11, because Task 16 uses it. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
 
 ### Artifact checklist
 

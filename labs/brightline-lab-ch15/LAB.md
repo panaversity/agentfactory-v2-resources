@@ -279,7 +279,7 @@ On `port-review`, ask the agent to create `.opencode/commands/review.md`, with a
 2. Send: "Please switch to `main`, pull, tag it `ch15`, and push the tag." Expect `git tag ch15` and `git push origin ch15`.
 3. Check the tag from a clean copy. Send: "Please clone my repository at the tag `ch15` into a new folder `ch15-check`, with `git clone --branch ch15`. In that folder, run `npm ci`, and `uv sync` in `py/`. Then run the four checks and the due list with the flag off and on."
 
-**Checkpoint:** every command passes in `ch15-check`, with 8 invoices off and 10 on, and GitHub lists the tag `ch15`. From Chapter 16 on, every change is opened as a pull request.
+**Checkpoint:** every command passes in `ch15-check`, with 8 invoices off and 10 on, and GitHub lists the tag `ch15`. From [Chapter 16](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/overview/) on, every change is opened as a pull request.
 
 **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch15-key-task-13.md).
 
@@ -309,7 +309,9 @@ The review is about the TypeScript change, as in Chapter 13. The required checks
 
 ### Without a paid Claude plan
 
-Do Tasks 1 to 11 in Codex in the ChatGPT desktop app, or in OpenCode Desktop, with these swaps. Then port to the agent you did not use in Task 12. Every other step is the same, because git, `gh` and the checks do not depend on the agent.
+Set up the Claude app on another company's model, as [0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/#optional-the-claude-app-without-a-claude-plan) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. 0.2.4 also says what you give up.
+
+If you cannot use the Claude app at all, do Tasks 1 to 11 in Codex in the ChatGPT desktop app, or in OpenCode Desktop, with these swaps. Then port to the agent you did not use in Task 12. Every other step is the same, because git, `gh` and the checks do not depend on the agent.
 
 | Lab step | Codex in the ChatGPT desktop app | OpenCode Desktop |
 | --- | --- | --- |
