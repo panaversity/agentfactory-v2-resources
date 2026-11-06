@@ -1,6 +1,11 @@
-const csv = "vendor_id,vendor_name,terms\nV001,Midwest Packaging Co.,Net 30\nV002,Buckeye Janitorial Supply,Net 15\n";
-const lines = csv.trim().split(/\r?\n/).slice(1);
-for (const line of lines) {
-  const [id, name, terms] = line.split(",");
-  console.log(`${id}  ${name}  (${terms})`);
+const vendors = [
+  ["V001", "Midwest Packaging Co.", "Net 30"],
+  ["V002", "Buckeye Janitorial Supply", "Net 15"],
+];
+
+for (const vendor of vendors) {
+  const id = vendor[0];
+  const name = vendor[1];
+  const terms = vendor[2];
+  console.log(id + "  " + name + "  (" + terms + ")");
 }

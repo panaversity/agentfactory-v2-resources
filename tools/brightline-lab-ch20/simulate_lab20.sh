@@ -11,11 +11,12 @@
 set -euo pipefail
 SRC=$(cd "$1" && pwd); mkdir -p "$2"; OUT=$(cd "$2" && pwd); HERE=$(cd "$(dirname "$0")" && pwd)
 W=$(mktemp -d); cp -cR "$SRC"/. "$W"/ 2>/dev/null || cp -R "$SRC"/. "$W"/; cd "$W"
+PP=${SIM_PRACTICE_PORT:-8760}  # another session's practice connector may hold 8760
 pass=0; fail=0; check() { if eval "$2"; then echo "PASS $1"; pass=$((pass+1)); else echo "FAIL $1"; fail=$((fail+1)); fi; }
 node -e 'const f="src/loop/config.json",c=JSON.parse(require("fs").readFileSync(f));for(const a of ["claude","openai"])c.prices[a]={input:3,output:15,cacheWrite:3.75,cacheRead:0.3};c.prices.checked_on="simulation only";require("fs").writeFileSync(f,JSON.stringify(c))'
-mkdir -p .secrets; printf 'CONNECTOR_URL=http://127.0.0.1:8760/mcp\nCONNECTOR_TOKEN=sim-token\n' > .secrets/connector.env
+mkdir -p .secrets; printf 'CONNECTOR_URL=http://127.0.0.1:%s/mcp\nCONNECTOR_TOKEN=sim-token\n' "$PP" > .secrets/connector.env
 printf 'ANTHROPIC_API_KEY=sk-ant-sim\n' > .secrets/anthropic.env; printf 'OPENAI_API_KEY=sk-sim\n' > .secrets/openai.env
-(cd py && PRACTICE_TOKEN=sim-token exec .venv/bin/python -m brightline_ap.practice_connector) & CONN=$!
+(cd py && PRACTICE_TOKEN=sim-token PRACTICE_PORT=$PP exec .venv/bin/python -m brightline_ap.practice_connector) & CONN=$!
 node "$HERE/fake-model-server.mjs" 8761 tests/fixtures/loop/claude-one-tool.json & M1=$!
 node "$HERE/fake-model-server.mjs" 8762 tests/fixtures/loop/openai-one-tool.json & M2=$!
 node "$HERE/fake-model-server.mjs" 8763 tests/fixtures/loop/claude-one-tool.json & M3=$!

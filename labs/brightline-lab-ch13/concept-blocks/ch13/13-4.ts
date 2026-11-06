@@ -1,11 +1,12 @@
 const invoices = [
-  { number: "INV-8301", status: "open", due: "2027-03-03" },
-  { number: "INV-8309", status: "paid", due: "2027-02-28" },
-  { number: "INV-8305", status: "open", due: "" },
+  ["INV-8301", "open", "2027-03-03"],
+  ["INV-8309", "paid", "2027-02-28"],
+  ["INV-8305", "open", ""],
 ];
-const open = invoices.filter((inv) => inv.status === "open");
-for (const inv of open) {
-  const due = inv.due || "from the terms";
-  console.log(inv.number, due);
+
+for (const inv of invoices) {
+  if (inv[1] === "open") {
+    const due = inv[2] || "from the terms";
+    console.log(inv[0] + " " + due);
+  }
 }
-console.log(Boolean(""), Boolean([]));
