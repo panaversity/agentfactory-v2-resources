@@ -58,6 +58,8 @@
     { "action": "shell", "resource": "npm run break*", "effect": "ask" },
     { "action": "shell", "resource": "npm run stateful*", "effect": "ask" },
     { "action": "shell", "resource": "npm run stream:demo*", "effect": "ask" },
+    // The agent SDKs (Lab 21): live model calls always ask
+    { "action": "shell", "resource": "npm run sdk*", "effect": "ask" },
     { "action": "apts_*", "resource": "*", "effect": "allow" },
     { "action": "appy_*", "resource": "*", "effect": "allow" }
   ]

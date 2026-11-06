@@ -17,7 +17,7 @@ sign-in server, no companies to keep apart and no database.
 
 It reads CONNECTOR_TOKEN from .secrets/connector.env itself, so no agent ever reads
 the token. PRACTICE_TOKEN overrides it (the tests use that). PRACTICE_BROKEN names
-tools that always answer "try again", to test a loop's stops (Lab 20 Task 8, Lab 21 Task 7).
+tools that always answer "try again", to test a loop's stops (Lab 20 Task 8, Lab 21 Task 9).
 """
 from __future__ import annotations
 
