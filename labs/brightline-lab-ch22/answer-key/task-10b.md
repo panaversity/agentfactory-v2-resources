@@ -4,7 +4,7 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 
 **Your prediction, if it matched:** No, because the platform adds the token at egress (22.10).
 
-**What good looks like:** Ana's answer cites a policy line, as `(file.md:N)`, and an answer that cites none would be held back, as in 21.6. The Console's Sessions page, in step 4, shows the session created by the portal's key, linked to the `brightline-portal` service account, not yours. Ana's answer comes from Brightline's data, and the connector's log line names Ana and Brightline. `history-scan` flags nothing.
+**What good looks like:** Ana's answer cites a policy line, as `(file.md:N)`. An answer that cites none would be held back, as in 21.6. The Console's Sessions page, in step 4, shows the session created by the portal's key, linked to the `brightline-portal` service account, not yours. Ana's answer comes from Brightline's data, and the connector's log line names Ana and Brightline. `history-scan` flags nothing.
 
 **Expected from the platform's documentation:** Ana's answer from Brightline's data, the portal's key in the Sessions page's Created by column (the session's own record names no key), token search finds nothing.
 

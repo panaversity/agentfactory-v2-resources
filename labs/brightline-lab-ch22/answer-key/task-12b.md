@@ -4,7 +4,7 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 
 **Your prediction, if it matched:** Bugs 9 and 10, caught by the configuration check.
 
-**What good looks like:** every planted bug fails at least one row, and bugs 9 and 10 fail `check:agent-config`, not a matrix row. Compare with the table in the answer key. Each run starts two or three sessions, so the ten cost under $1.50 together.
+**What good looks like:** every planted bug is caught, by at least one matrix row or by the configuration check. Bugs 9 and 10 fail `check:agent-config`, not a matrix row. Compare with the table in the answer key. Each run starts two or three sessions, so the ten cost under $1.50 together.
 
 **Expected from the platform's documentation:** Every planted bug fails at least one row (below), and bugs 9 and 10 fail `check:agent-config` rather than a matrix row. Under $1.50 for all ten.
 

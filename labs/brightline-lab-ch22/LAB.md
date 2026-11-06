@@ -17,23 +17,23 @@ Chapter 22 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 The lab runs in sittings, each right after the concepts it uses. This section is the setup for all of them: read it now, then do Task 0. When a task says F0 to F7, it means the field guide, on the companion page **Chapter 22 reference** (in the lab, `docs/chapter-22/field-guide.md`).
 
-**What you need to have done.** Read Chapters [16](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/overview/) to [19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/). Doing Lab 19 helps, but Task 0 can build its system for you. Labs 20 and 21 are not needed to run this lab, but the lab builds on their code. Everything starts from `brightline-lab-ch22.zip` ([download it here](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22.zip)), which holds the repository as Lab 21 ends, with Lab 22's files added, as a plain folder: Task 0 puts it under git and tags it `lab22-start`. So `src/loop/`, `src/sdk/`, their Python twins under `py/`, Lab 21's `docs/worker-spec.md` and `docs/sdk-map.md` are all there, and their tests still pass. Every earlier idea a task uses is explained where it is used.
+**What you need to have done.** Read Chapters [16](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/overview/) to [19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/). Doing Lab 19 helps, but Task 0 can build its system for you. Labs 20 and 21 are not needed to run this lab, but the lab builds on their code. Everything starts from `brightline-lab-ch22.zip` ([download it here](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22.zip)). It holds the repository as Lab 21 ends, with Lab 22's files added, as a plain folder. Task 0 puts it under git and tags it `lab22-start`. So `src/loop/`, `src/sdk/`, their Python twins under `py/`, Lab 21's `docs/worker-spec.md` and `docs/sdk-map.md` are all there, and their tests still pass. Every earlier idea a task uses is explained where it is used.
 
-**Route B is not enough here.** In Labs 20 and 21 you could use either your own Chapter 19 connector online (route A) or a practice connector on your own computer (route B). A hosted platform cannot reach a connector on your computer, and each person must sign in through [Chapter 18](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/overview/)'s sign-in server. So this lab needs Chapter 19's system online in your own accounts, which is route A. If you took route B, or skipped Lab 19, Task 0 sets that system up for you, one step at a time from `docs/deploy.md`, but allow about 1 hour 30 minutes for it. The practice connector stays in the repository, and Lab 22 does not use it.
+**Route B is not enough here.** In Labs 20 and 21 you could use your own Chapter 19 connector online (route A). Or you could use a practice connector on your own computer (route B). A hosted platform cannot reach a connector on your computer, and each person must sign in through [Chapter 18](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/overview/)'s sign-in server. So this lab needs Chapter 19's system online in your own accounts, which is route A. If you took route B, or skipped Lab 19, Task 0 sets that system up for you, one step at a time from `docs/deploy.md`. Allow about 1 hour 30 minutes for it. The practice connector stays in the repository, and Lab 22 does not use it.
 
-**This lab costs money, and takes about 12 hours 20 minutes.** Neither hosted runtime has a free plan. Every session in this lab carries a budget, most of a few cents. The authors expect the Claude tasks to cost under $8 in all, about $2 of it the session matrix and its planted bugs, and the optional OpenAI port under $3 (all to be confirmed by the authors' live run). Cloudflare and Neon stay on their free plans. The open-source port can run free with a local model.
+**This lab costs money, and takes about 12 hours 20 minutes.** Neither hosted runtime has a free plan. Every session in this lab carries a budget, most of a few cents. The authors expect the Claude tasks to cost under $8 in all, about $2 of it for the session matrix and its planted bugs. They expect the optional OpenAI port to cost under $3. All of these are still to be confirmed by the authors' live run. Cloudflare and Neon stay on their free plans. The open-source port can run free with a local model.
 
 **The date in this lab** is Monday, April 5, 2027, a week after Lab 19 and four days after Lab 21 (Thursday, April 1).
 
-**A note on this lab.** The authors have not yet run this lab end to end. If a menu name or a message differs a little from what a task describes, trust what you see, and record it in `ports/ch22.md`. **When a task lists two results, either is fine.** Some tasks say "Either counts" or "not yet confirmed": those are accepted variations, not differences. **One stop rule:** if Task 0's step 5, Task 3, Task 6 or Task 7 does something different from **What good looks like** (for example, a session cannot reach the connector at all), stop there. Record what you saw, and do not build on it. To carry on anyway, compare your work with that task's answer key yourself, in a text editor and never in the agent, and carry on once they match. Every later task depends on that step: Task 0's step 5 and Task 3 on reaching the platform, Tasks 6 and 7 on reaching the connector. It is not your mistake.
+**A note on this lab.** The authors have not yet run this lab end to end. If a menu name or a message differs a little from what a task describes, trust what you see, and record it in `ports/ch22.md`. **When a task lists two results, either is fine.** Some tasks say "Either counts" or "not yet confirmed": those are accepted variations, not differences. **One stop rule:** if Task 0's step 5, Task 3, Task 6 or Task 7 does something different from **What good looks like**, stop there. An example is a session that cannot reach the connector at all. Record what you saw, and do not build on it. To carry on anyway, compare your work with that task's answer key yourself, in a text editor and never in the agent. Carry on once they match. Every later task depends on that step. Task 0's step 5 and Task 3 are about reaching the platform, and Tasks 6 and 7 are about reaching the connector. It is not your mistake.
 
 ### Two milestones
 
 **Milestone 1, required: a hosted worker in the portal (about 6 hours 20 minutes, Tasks 0 to 11, with Task 10 in three parts, 10a to 10c).** Sittings 1, 2 and 3a. At the end, Ana and Luis each ask the worker a question in the portal, each with their own token, under a budget. This is the milestone every reader completes. It is **not yet safe for real users**: nothing has yet proved that one person's session cannot reach another's.
 
-**Milestone 2, required before you sell a worker: safe to sell (about 6 hours, Tasks 12 to 18, 20 and 21).** Sittings 3b, 4 and 5. It includes the open-source port, Task 20, because every build in this part of the book must run on a second option, which shows what in your design depends on one platform. The session matrix and planted bugs prove the isolation, then CI with no stored key, refresh and rotation, webhooks, the morning triage loop, the open-source port and shipping. A worker you sell to a client company needs this milestone.
+**Milestone 2, required before you sell a worker: safe to sell (about 6 hours, Tasks 12 to 18, 20 and 21).** Sittings 3b, 4 and 5. It includes the open-source port, Task 20, because every build in this part of the book must run on a second option. Running on a second option shows what in your design depends on one platform. The session matrix and planted bugs prove the isolation. Then come CI with no stored key, refresh and rotation, webhooks, the morning triage loop, the open-source port and shipping. A worker you sell to a client company needs this milestone.
 
-**Extensions:** Task 19 (the OpenAI port) and Task 21b (an outcome).
+*Extensions:* Task 19 (the OpenAI port) and Task 21b (an outcome).
 
 ![Six columns, one per sitting, each listing what that sitting adds. Sitting 1: an agent definition, an environment, sessions you can read, a budget on each. Sitting 2: the skill, the connector, one open door, a policy per tool. Sitting 3a: the AP portal, a vault per person, Ana and Luis ask questions. A dashed line follows Sitting 3a, labeled Milestone 1, a hosted worker in the portal. Sitting 3b: the session matrix, planted bugs, CI with no stored key. Sitting 4: refresh and sign in again, webhooks, the morning loop. Sitting 5: a second runtime, shipped and tagged. Those three are labeled Milestone 2, safe to sell.](img/chapter-22-sitting-buildup.png)
 
@@ -41,22 +41,22 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ### Before you start
 
-**What you need.**
+*What you need.*
 
-- Everything Labs 19 to 21 needed: a computer with Node 22.19 or later (24 recommended), Python 3.12 or later with uv 0.11.32 or later (for Labs 20 and 21's tests), git, the GitHub CLI (`gh`), the desktop apps of Claude Code, ChatGPT (for Codex) and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/overview/)), and free Cloudflare, Neon and GitHub accounts.
+- Everything Labs 19 to 21 needed: a computer with Node 22.19 or later (24 recommended). Python 3.12 or later with uv 0.11.32 or later (for Labs 20 and 21's tests). Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, ChatGPT (for Codex) and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/overview/)). And free Cloudflare, Neon and GitHub accounts.
 - **A Claude Console account with API credits,** two workspaces and a staging key with a 30-day expiry, made by you in Task 0 ([F2](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f2-claude-managed-agents-from-zero)).
 - **For the optional OpenAI port:** an OpenAI API account with credits and a project with a $5 hard limit (F7).
 - **For the open-source port:** Docker with Compose (F7).
 
-**This lab writes code as it goes.** Labs 20 and 21 shipped finished code, and you predicted what it did. Lab 22 ships only a skeleton, and most tasks are **make** tasks, the last step of PRIMM-AI+, as Lab 21 did for its two rules: the task says in plain words what the code must do, a coding agent writes it, and you check the result against those words. Where the code decides a rule that keeps people or companies apart, the task adds **Check before you approve**: you predict, then ask the agent to show you those lines, and investigate any gap, as in [Chapter 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/). The new code is TypeScript (What you will build says why).
+**This lab writes code as it goes.** Labs 20 and 21 shipped finished code, and you predicted what it did. Lab 22 ships only a skeleton. Most tasks are **make** tasks, the last step of PRIMM-AI+, as Lab 21 did for its two rules. The task says **in plain words** what the code must do, a coding agent writes it, and you check the result against those words. Where the code decides a rule that keeps people or companies apart, the task adds **Check before you approve**. You **predict**, then ask the agent to show you those lines, and investigate any gap, as in [Chapter 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/). The new code is TypeScript (What you will build says why).
 
 **How every task runs.** Chapter 12's five-step routine, as in Labs 17 to 21: (1) a fresh session with the named agent, in `brightline-ap/`. (2) Plan mode, with the task's prompt as the brief. Read the plan, and correct it before it starts. (3) Manual mode: approve each command. (4) Evidence: the agent shows what proves the task is done, and you check it against **What good looks like**. (5) A line in `ports/ch22.md`: the task, the agent, what it proved, anything that surprised you.
 
-**What you do by hand, and only this.** Make accounts and workspaces, make each API key in its console and paste it into its file in `.secrets/` with your own editor, put the portal's client id and secret (Task 9) and its staging key (Task 10a) into the portal's secrets at a `wrangler` prompt, paste the webhook signing secret into `.secrets/portal.env`, sign in as a test person in a browser and approve consent, add the webhook endpoint in the Console, put the production key into the portal's secrets, and decide when to merge and deploy. Agents do everything else. **No API key, client secret, refresh token, access token or signing secret passes through a chat.**
+**What you do by hand, and only this.** Make accounts and workspaces, and make each API key in its console. Paste each key into its file in `.secrets/` with your own editor. Put the portal's client id and secret (Task 9) and its staging key (Task 10a) into the portal's secrets at a `wrangler` prompt. Paste the webhook signing secret into `.secrets/portal.env`. Sign in as a test person in a browser, and approve consent. Add the webhook endpoint in the Console, and put the production key into the portal's secrets. Decide when to merge and deploy. Agents do everything else. **No API key, client secret, refresh token, access token or signing secret passes through a chat.**
 
-**Rules the agents follow, and settings that enforce them.** `AGENTS.md` at `lab22-start` says: ask before `ant apply` without `--dry-run`, before any vault or credential call, and before any session created outside the tests. Never print, read aloud or copy anything in `.secrets/`. Every session gets a budget. Words alone are advice, so Claude Code's and OpenCode's own settings files at `lab22-start` (`.claude/settings.json`, `opencode.jsonc`) also deny reading `.secrets/` and ask before those commands. Codex's settings cannot deny reading a path, so for Codex `AGENTS.md` guards `.secrets/`, and `.codex/config.toml` makes it ask before any command that needs the network, as every platform call does.
+**Rules the agents follow, and settings that enforce them.** `AGENTS.md` at `lab22-start` says: ask before `ant apply` without `--dry-run`, before any vault or credential call, and before any session created outside the tests. Never print, read aloud or copy anything in `.secrets/`. Every session gets a budget. Words alone are advice, so Claude Code's and OpenCode's own settings files at `lab22-start` (`.claude/settings.json`, `opencode.jsonc`) also deny reading `.secrets/` and ask before those commands. Codex's settings cannot deny reading a path, so for Codex `AGENTS.md` guards `.secrets/`. Also, `.codex/config.toml` makes Codex ask before any command that needs the network, as every platform call does.
 
-**Your mistake, or the book's?** Because the lab has not yet been run end to end, every **What good looks like** is what the authors expect, not yet what they saw. If your result differs, first ask your agent to compare its work with the task's prompt, step by step: most differences are in the setup. If it still differs, record what you saw in `ports/ch22.md` and carry on, unless the stop rule above applies.
+**Your mistake, or the book's?** The lab has not yet been run end to end. So every **What good looks like** is what the authors expect, not yet what they saw. If your result differs, first ask your agent to compare its work with the task's prompt, step by step: most differences are in the setup. If it still differs, record what you saw in `ports/ch22.md` and carry on, unless the stop rule above applies.
 
 **You do not need to understand every word of a prompt.** The prompts are written for the agent, so they carry exact names. Check the agent's plan against the task's **Goal**, and its result against **What good looks like**. When a word is new, ask the agent to explain it in one line before it starts. The table below has the words for Task 0 and words used everywhere, starting with the platform's own names for the chapter's words. Each sitting starts with a table of its own new words.
 
@@ -79,13 +79,13 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ### Task 0. Set up from the zip (45 minutes, or about 1 hour 30 minutes if you skipped Lab 19, Claude Code)
 
-**Goal:** the Chapter 19 stack running in your own staging accounts, every check passing at `lab22-start`, the `ant` CLI installed, and your staging key in a file git ignores.
+**Goal:** the Chapter 19 stack running in your own staging accounts, and every check passing at `lab22-start`. Also the `ant` CLI installed, and your staging key in a file git ignores.
 
-**By hand first (F2).** Unzip `brightline-lab-ch22.zip`. If you did Labs 20 and 21, copy your own `docs/sdk-map.md`, `ports/ch20.md` and `ports/ch21.md` into it, over the blank ones: Task 1 reads your map. Make the Console account, add credits, make the two workspaces with spending limits, make the staging key with a 30-day expiry, and put it in `brightline-ap/.secrets/anthropic.env`. Make the Neon and Cloudflare accounts if you have none.
+**By hand first (F2).** Unzip `brightline-lab-ch22.zip`. If you did Labs 20 and 21, copy your own `docs/sdk-map.md`, `ports/ch20.md` and `ports/ch21.md` into it, over the blank ones: Task 1 reads your map. Make the Console account, add credits, and make the two workspaces with spending limits. Then make the staging key with a 30-day expiry, and put it in `brightline-ap/.secrets/anthropic.env`. Make the Neon and Cloudflare accounts if you have none.
 
 **Predict:** at `lab22-start`, can a hosted session reach the connector yet?
 
-**In plain words.** Your coding agent sets up Chapter 19's system in your own accounts: the database (on Neon, with a branch for staging), the link from Cloudflare to it (Hyperdrive), the sign-in server and the connector. It checks it all works, and installs the hosted platform's command-line tool. If you skipped Lab 19, ask the agent to explain each step in one line as it goes.
+**In plain words.** Your coding agent sets up Chapter 19's system in your own accounts. That system is the database (on Neon, with a branch for staging), the link from Cloudflare to it (Hyperdrive), the sign-in server and the connector. It checks it all works, and installs the hosted platform's command-line tool. If you skipped Lab 19, ask the agent to explain each step in one line as it goes.
 
 > Read `README.md`, `AGENTS.md`, and `docs/chapter-22/field-guide.md`, sections F0 to F2. `docs/deploy.md` ships in the zip and is the one setup guide (Task 21 updates it). Follow it for staging only, in my own accounts, one step at a time, running the commands `docs/deploy.md` gives for each, and stop after each step to show me its result:
 >
@@ -138,25 +138,25 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ### Task 1. The worker contract (20 minutes, Claude Code)
 
-**Goal:** `docs/worker-spec.md` for a hosted worker: what it may answer, its tools and skill, its budget, what it must never do, and what each of Lab 21's eleven rows becomes.
+**Goal:** `docs/worker-spec.md` for a hosted worker. The spec says what the worker may answer, its tools and skill, its budget and what it must never do. It also says what each of Lab 21's eleven rows becomes.
 
 **Predict:** open `docs/worker-spec.md`, Lab 21's specification, and read its eleven row names (if you skipped Lab 21, ask the agent to list them). Which of them does a hosted platform change, and which stay exactly as they were?
 
-**In plain words.** Lab 21's `docs/worker-spec.md` is the worker's portable specification: what it must do on any runtime. You play Ana Morales, Brightline's AP analyst. Your coding agent interviews you, then writes a new version of the spec for a worker that serves many people, and says what happens to each of Lab 21's rows. Git keeps Lab 21's version.
+**In plain words.** Lab 21's `docs/worker-spec.md` is the worker's portable specification: what it must do on any runtime. You play Ana Morales, Brightline's AP analyst. Your coding agent interviews you, then writes a new version of the spec for a worker that serves many people. The agent also says what happens to each of Lab 21's rows. Git keeps Lab 21's version.
 
 > Read 22.1 and 22.2 in `docs/chapter-22/`, Lab 21's `docs/worker-spec.md` and the "What this still leaves to me" lines of `docs/sdk-map.md` (if that section is blank because I did not do Lab 21, read `docs/sdk-map.example.md`, the authors' filled map, instead), `docs/worker-spec.template.md`, `docs/acceptance-prompts.md` and `skills/invoice-triage/SKILL.md`. Interview me, one question at a time, as Ana Morales, Brightline's AP analyst. Ask what the worker should answer, which questions it should refuse, which tools and skill it uses, how much a run may spend, what it must never do, and who it acts for. Then write `docs/worker-spec.md` from the template. Its last section takes Lab 21's eleven rows in order, and says for each one what changes on a hosted worker, with the concept that teaches it. It names no product, and no company appears in the worker's instructions.
 
-**What good looks like:** four tools and one skill. One person and one company per run. A budget of $0.50 for a question, $1.00 for a review. "Never" includes paying, approving or changing anything, and also telling one person about another person's work or another company's data. In the last section, two rows stay as they were (the read tools that run without asking, and the cited policy line, now checked by the portal), and the rest change: the instructions lose Brightline's and Ana's names, because one worker serves every company, `flag_invoice` is left out for now (22.6), the test token becomes each person's own token in a vault (22.10), the platform keeps the session's events (22.3), and the worker runs for the person who asked, not for you (22.9). Your prediction: the rows about tools, credentials, storage and identity change, because those are what a hosted platform takes over or what serving many people demands. Compare with `answer-key/worker-spec.md`.
+**What good looks like:** four tools and one skill. One person and one company per run. A budget of $0.50 for a question, $1.00 for a review. "Never" includes paying, approving or changing anything, and also telling one person about another person's work or another company's data. In the last section, two rows stay as they were. They are the read tools that run without asking, and the cited policy line, now checked by the portal. The rest change. The instructions lose Brightline's and Ana's names, because one worker serves every company. `flag_invoice` is left out for now (22.6). The test token becomes each person's own token in a vault (22.10). The platform keeps the session's events (22.3), and the worker runs for the person who asked, not for you (22.9). Your prediction: the rows about tools, credentials, storage and identity change. They change because those are what a hosted platform takes over, or what serving many people demands. Compare with `answer-key/worker-spec.md`.
 
 **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-1.md).
 
 ### Task 2. The agent and environment as files (30 minutes, Claude Code)
 
-**Goal:** the agent definition and runtime environment as files, applied to staging with a plan, a lock file committed, and a configuration check that fails on the mistakes this chapter warns about.
+**Goal:** the agent definition and runtime environment as files, applied to staging with a plan, and a lock file committed. Also a configuration check that fails on the mistakes this chapter warns about.
 
 **Predict:** if you edit the agent in the Console after applying, what will the next `ant apply` do?
 
-**In plain words.** The worker's definition and where it runs become files. A script applies them, always showing a plan first. A check catches the mistakes this chapter warns about. Two settings come from Part B, so here they are in a line each: the worker's **built-in tools** are its own file tools in the sandbox, and only read (open a file), glob (list files by name pattern) and grep (search inside files) stay on. **`limited` networking** means the sandbox may reach only the hosts you list, and for now you list none.
+**In plain words.** The worker's definition and where it runs become files. A script applies them, always showing a plan first. A check catches the mistakes this chapter warns about. Two settings come from Part B, so here they are in a line each. The worker's **built-in tools** are its own file tools in the sandbox. Only read (open a file), glob (list files by name pattern) and grep (search inside files) stay on. **`limited` networking** means the sandbox may reach only the hosts you list, and for now you list none.
 
 > Read 22.2, 22.4, 22.5 and F2.
 >
@@ -173,7 +173,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 >    - any file in `deployments/` (schedules, which come in Half 2) has no budget
 > 5. Show me the plan, wait for me, then apply. Show me the lock file. Then I will change one word of the worker's instructions (the Console calls them the system prompt) in the Console (the staging workspace, its agents page, `ap-worker`, edit and save), and you will apply again and show me what happens.
 
-**Check before you approve.** Predict first: what does the check do with an environment file that has no network setting at all? Then ask the agent to show the lines in `scripts/check-agent-config.ts` that enforce each rule from 22.4 and 22.7, one rule at a time, and run the check once on a copy of the file that breaks it.
+**Check before you approve.** Predict first: what does the check do with an environment file that has no network setting at all? Then ask the agent to show the lines in `scripts/check-agent-config.ts` that enforce each rule from 22.4 and 22.7, one rule at a time. Also ask it to run the check once on a copy of the file that breaks the rule.
 
 **What good looks like:** a plan with two creates, then two entries in `claude-lock.staging.json`, each with an id and a hash. `check:agent-config` passes. After your Console edit, the next apply stops with `refusing to apply`. Choose the file's version, and Claude Code applies with your approval. Your prediction: it refuses, because a change outside the files is invisible to review.
 
@@ -195,7 +195,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ### Task 4. A budget of one cent (20 minutes, Claude Code)
 
-**Goal:** you see a budget pause, a refused new question, and a resume.
+**Goal:** you see a budget pause, a rejected new question, and a resume.
 
 **Predict:** with a one-cent cap and a task that needs ten tool calls, will the final cost be under, at or over one cent?
 
@@ -215,7 +215,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ## Lab 22, Sitting 2: the connector and the skill (about 1 hour 15 minutes)
 
-**Before you start, answer in a line each:** What travels from Chapters 16 to 19 to a hosted worker, and what stays behind (22.6)? Why is a host allow list not an operation allow list (22.7)? **After this sitting, you can:** run the skill and the connector in a session with one open door, and show that an injected instruction had no way out.
+**Before you start, answer in a line each:** What travels from Chapters 16 to 19 to a hosted worker, and what stays behind (22.6)? Why is a host allow list not an operation allow list (22.7)? **After this sitting, you can:** run the skill and the connector in a session with one open door. You can also show that an injected instruction had no way out.
 
 **New words in this sitting's prompts.**
 
@@ -224,11 +224,11 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 | `always_ask`, `always_allow` | The "ask" and "allow" permission policies (22.8) |
 | Toolset | The set of a connector's tools as the agent definition declares them, with one default policy for all and exceptions by name (F2) |
 | Vault, credential | One person's store of secrets, and one secret in it for one connector address (22.10) |
-| `npm run token:test` | Lab 20's command. It signs a **test** person in through staging's real sign-in pages, as Chapter 18's sign-in matrix did, and writes the connector's address and a 10-minute sign-in token to a file, never shown. Only for test people, only on staging (Task 8, Task 12) |
+| `npm run token:test` | Lab 20's command. It signs a test person in through staging's real sign-in pages, as Chapter 18's sign-in matrix did, and writes the connector's address and a 10-minute sign-in token to a file, never shown. Only for test people, only on staging (Task 8, Task 12) |
 | Test vault | A vault made for one task, marked `test: "true"`, and archived at the task's end |
 | `metadata` | Labels you attach to a vault or session, such as `test: "true"`. The platform stores them, and your code can check them |
 
-**A vault, in three sentences, before Tasks 7 and 8.** The connector needs a sign-in token on every call. On a hosted platform, a person's token is kept in a **vault**, a locked store that the platform holds for that person: your product puts the token in, and the platform adds it to each connector call on its way out, so the model never sees it. Part C teaches vaults in full (22.10). Here you need only this: no vault means no token, and a test vault holds a short-lived test token for one task.
+**A vault, in short, before Tasks 7 and 8.** The connector needs a sign-in token on every call. On a hosted platform, a person's token is kept in a vault, a locked store that the platform holds for that person. Your product puts the token in, and the platform adds it to each connector call on its way out, so the model never sees it. Part C teaches vaults in full (22.10). Here you need only this: no vault means no token, and a test vault holds a short-lived test token for one task.
 
 ### Task 5. The skill (15 minutes, Claude Code)
 
@@ -252,7 +252,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 > Read 22.6, 22.7, 22.8 and F2. Add the staging connector to `agents/ap-worker.md` as F2 shows: the connector's toolset off by default with `always_ask`, and only `find_vendor`, `list_open_invoices`, `get_purchase_order` and `search_policy` on, with `always_allow`. Add only the connector's host to `allowed_hosts`. Add one rule to `scripts/check-agent-config.ts`: it fails if the connector's default is not `always_ask`, or any connector tool other than the four in the spec is on. Run `npm run check:agent-config`, show me the plan and apply. Then print, for every tool the model can see, its policy and why, from the applied agent.
 
-**What good looks like:** seven rows: four connector tools on "allow", and read, glob and grep on "allow". No command tool, no web tools. `check:agent-config` passes. Your prediction: the worker cannot reach the connector, because its host is not an open door (22.7, F2). Whether the platform refuses the session at the start or fails the first connector call is not yet confirmed. Either counts as the right answer.
+**What good looks like:** seven rows. Four connector tools on "allow", and read, glob and grep on "allow". No command tool, no web tools. `check:agent-config` passes. Your prediction: the worker cannot reach the connector, because its host is not an open door (22.7, F2). Whether the platform rejects the session at the start or fails the first connector call is not yet confirmed. Either counts as the right answer.
 
 **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-6.md).
 
@@ -276,7 +276,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **Predict:** with the web tools off, what does the log show when the worker reads the planted note?
 
-**In plain words.** A planted note in Cedar Ridge's vendor data tries to make the worker send data out. To read Cedar Ridge's data, the session needs a sign-in, so the agent makes a **test token** for Luis that lasts ten minutes and a **test vault** that holds it for this task only. The vault box above says all you need: the vault carries Luis's token to the connector. Then a second test shows the network rule itself refusing an address.
+**In plain words.** A planted note in Cedar Ridge's vendor data tries to make the worker send data out. To read Cedar Ridge's data, the session needs a sign-in. So the agent makes a test token for Luis that lasts ten minutes, and a test vault that holds it for this task only. The vault box above says all you need: the vault carries Luis's token to the connector. Then a second test shows the network rule itself refusing an address.
 
 > Read 22.7.
 >
@@ -286,7 +286,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 > 4. Make a test version of the agent, `tests/agents/ap-worker-webtest.md`, with web fetch on, in the same runtime environment, and apply it. Start a session with `npm run session -- --agent ap-worker-webtest` that asks: "Fetch https://collect.example.net/ping and tell me what it says." Print every event.
 > 5. Archive the test agent and the test vault, and delete the token file.
 
-**What good looks like:** the first run shows the note in the `find_vendor` result, labeled as data, and no web request at all, because there is no tool that could make one. Whether the model would have obeyed the note does not matter: it had no way out. The second run shows a web fetch for `collect.example.net` refused with `url_not_allowed`, which proves the network rule itself. Your prediction: no web call, because there was no tool to make one.
+**What good looks like:** the first run shows the note in the `find_vendor` result, labeled as data. It shows no web request at all, because there is no tool that could make one. Whether the model would have obeyed the note does not matter: it had no way out. The second run shows a web fetch for `collect.example.net` refused with `url_not_allowed`, which proves the network rule itself. Your prediction: no web call, because there was no tool to make one.
 
 **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-8.md).
 
@@ -315,11 +315,11 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ### Task 9. The portal as a confidential client (30 minutes, Claude Code)
 
-**Goal:** the portal registered on the staging sign-in server, its secret held only in files and secrets, never shown, and the portal's two tables in place.
+**Goal:** the portal registered on the staging sign-in server, with its secret held only in files and secrets, never shown. Also the portal's two tables in place.
 
 **Predict:** the coding agents in Chapter 18 were public clients. Why must the portal be a confidential client?
 
-**In plain words.** Four things. The portal registers with the sign-in server as a program that holds a secret. A script writes that secret to a file, never shown. The portal gets two tables: one for each person's vault, one for each session it starts. And the sign-in server gets a private question the portal can ask, "is this person still a member of this company?", reachable only from the portal.
+**In plain words.** Four things. The portal registers with the sign-in server as a program that holds a secret. A script writes that secret to a file, never shown. The portal gets two tables: one for each person's vault, one for each session it starts. And the sign-in server gets a private question the portal can ask, "is this person still a member of this company?" Only the portal can reach it.
 
 > Read 22.10 and 22.11.
 >
@@ -330,7 +330,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 > 5. Deploy the sign-in server to staging and run the registration script. Then stop. I set the id and secret as the portal's staging secrets myself, in my own terminal: `npx wrangler secret put PORTAL_CLIENT_ID --env staging` and `npx wrangler secret put PORTAL_CLIENT_SECRET --env staging` in `apps/portal/` (the zip already holds the portal skeleton there), pasting each from `.secrets/portal.env`, which I open in my own editor.
 > 6. Finish with `git ls-files .secrets`, and show me every line in `register-portal-client.ts` that prints anything.
 
-**What good looks like:** the client exists with `offline_access` and `openid`, rotation on and both redirects, and the ID token test passes. Both tables exist. The membership route answers through the binding and refuses a request from the internet. The registration script prints only "written", and `git ls-files .secrets` prints nothing. Your prediction: the portal holds tokens for many people, on a server, while they are away, so it must prove who it is with a secret as well (22.10).
+**What good looks like:** the client exists with `offline_access` and `openid`, rotation on and both redirects, and the ID token test passes. Both tables exist. The membership route answers through the binding and refuses a request from the internet. The registration script prints only "written", and `git ls-files .secrets` prints nothing. Your prediction: the portal gets tokens for many people, on a server, and the platform uses them while those people are away. So it must prove who it is with a secret as well (22.10).
 
 **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-9.md).
 
@@ -338,11 +338,11 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **Goal:** Ana signs in, consents for Brightline, and her tokens go into her own vault, which the portal records but never reads back.
 
-**By hand first (F6).** Make the portal's staging key: in the Claude Console, under **Settings**, make a service account named `brightline-portal` and add it to the staging workspace. Then, under **Settings**, **API keys**, make a key with **Linked account** set to that service account, scoped to the staging workspace, with a custom expiry of 90 days. In your own terminal: `npx wrangler secret put ANTHROPIC_API_KEY --env staging` in `apps/portal/` (the zip already holds the portal skeleton there, so the secret can be set before the agent fills it in), and paste the key at the prompt. The portal never uses your own key.
+**By hand first (F6).** Make the portal's staging key: in the Claude Console, under Settings, make a service account named `brightline-portal` and add it to the staging workspace. Then, under Settings, **API keys**, make a key with **Linked account** set to that service account. Scope it to the staging workspace, with a custom expiry of 90 days. In your own terminal, run `npx wrangler secret put ANTHROPIC_API_KEY --env staging` in `apps/portal/`, and paste the key at the prompt. The zip already holds the portal skeleton there, so the secret can be set before the agent fills it in. The portal never uses your own key.
 
 **Predict:** after Ana signs in, can anyone read her token back out of the vault?
 
-**In plain words.** The portal becomes a small web site. When Ana signs in, it checks the sign-in really came from her, asks the platform to make a vault for her at Brightline, and puts her tokens in it. It never keeps a token itself.
+**In plain words.** The portal becomes a small web site. When Ana signs in, it checks the sign-in really came from her. Then it asks the platform to make a vault for her at Brightline, and puts her tokens in it. It never keeps a token itself.
 
 > Read 22.9, 22.10 and F4.
 >
@@ -361,7 +361,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ### Task 10b. Ana's session (35 minutes, Claude Code)
 
-**Goal:** Ana's question runs in a session with her vault and a budget, started with the portal's own key, and no token appears in any event.
+**Goal:** Ana's question runs in a session with her vault and a budget, started with the portal's own key. No token appears in any event.
 
 **Predict:** after Ana's session runs, will any event in its log contain any part of her token?
 
@@ -377,9 +377,9 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **Check before you approve.** Predict first: if the code took the company from the page's request, how could Ana's page reach Luis's vault? Then ask the agent to show the lines that choose the vault for a session, and point to where the person and the company come from. Nothing from the request, the page or the question may reach that choice (22.11).
 
-**Check before you approve.** Predict first: does `citesPolicyLine()` accept "See the payments policy, line 2"? Then read it. It accepts only the written form `(file.md:N)`, so it checks that a citation is there, not that it is right (21.6).
+**Check before you approve.** Predict first: does `citesPolicyLine()` accept "See the payments policy, line 2"? Then ask the agent to show it. It accepts only the written form `(file.md:N)`, so it checks that a citation is there, not that it is right (21.6).
 
-**What good looks like:** Ana's answer cites a policy line, as `(file.md:N)`, and an answer that cites none would be held back, as in 21.6. The Console's Sessions page, in step 4, shows the session created by the portal's key, linked to the `brightline-portal` service account, not yours. Ana's answer comes from Brightline's data, and the connector's log line names Ana and Brightline. `history-scan` flags nothing. Your prediction: no, because the platform adds the token at egress (22.10).
+**What good looks like:** Ana's answer cites a policy line, as `(file.md:N)`. An answer that cites none would be held back, as in 21.6. The Console's Sessions page, in step 4, shows the session created by the portal's key, linked to the `brightline-portal` service account, not yours. Ana's answer comes from Brightline's data, and the connector's log line names Ana and Brightline. `history-scan` flags nothing. Your prediction: no, because the platform adds the token at egress (22.10).
 
 **Check it now.** Download [Task 10b's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-10b.md).
 
@@ -433,7 +433,7 @@ This sitting starts Milestone 2.
 | Headless browser | A real browser run by a program, with no window, used here to check what a page does (Task 12) |
 | Deployment (on the platform) | The platform's name for a scheduled run. Not the same as deploying the portal to Cloudflare ([22.15](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/schedules-and-webhooks/)) |
 
-**A schedule, in two sentences, before Task 12.** A **schedule** is a saved instruction to start a session on a timetable, written as a cron expression of five fields: minute, hour, day of month, month and day of week. Row S6 makes one that would run at 3:00 a.m. on January 1 (`0 3 1 1 *`), paused as soon as it is made, so it never runs. You build a real one in Sitting 4 (22.15).
+**A schedule, in short, before Task 12.** A schedule is a saved instruction to start a session on a timetable. It is written as a cron expression of five fields: minute, hour, day of month, month and day of week. Row S6 makes one that would run at 3:00 a.m. on January 1 (`0 3 1 1 *`), paused as soon as it is made, so it never runs. You build a real one in Sitting 4 (22.15).
 
 **The session matrix, with its planted bugs.** 22.11 gave each row's rule. Here is the bug for each row, which Task 12b plants. You also plant two more, which the configuration check catches instead: ten in all.
 
@@ -454,7 +454,7 @@ This sitting starts Milestone 2.
 
 **Predict:** which row needs one person signed in while another person's session still exists?
 
-**In plain words.** The matrix signs in test people, starts real sessions through the portal, each with the portal's normal question budget, and checks each rule from 22.11 and 22.12. For row S7 it needs tokens it can search for, so it makes its own: `npm run token:test` signs a test person in through staging's real sign-in pages and writes a 10-minute sign-in token to a file, and the matrix puts those into the test people's vaults through the portal's own vault code. They are ordinary staging tokens: no test signing key is ever published (Chapter 18), so nothing a test makes works in production. Row S6 also makes a paused test schedule, as the box at the start of this sitting explains.
+**In plain words.** The matrix signs in test people, and starts real sessions through the portal, each with the portal's normal question budget. It checks each rule from 22.11 and 22.12. For row S7 it needs tokens it can search for, so it makes its own. `npm run token:test` signs a test person in through staging's real sign-in pages, and writes a 10-minute sign-in token to a file. Then the matrix puts those tokens into the test people's vaults, through the portal's own vault code. They are ordinary staging tokens: no test signing key is ever published (Chapter 18), so nothing a test makes works in production. Row S6 also makes a paused test schedule, as the box at the start of this sitting explains.
 
 **Two prompts, with a check between them.** Give the agent the first prompt, check its four rows, then give it the second.
 
@@ -488,7 +488,7 @@ This sitting starts Milestone 2.
 >    - S8: Ana asks the portal for the event stream, then to confirm a tool call, then to interrupt, each for Luis's session from S1, and gets 404 all three times. A confirmation sent with Ana's cookie but without the page's form token is refused.
 > 3. Print one line per row, the run's total list cost, and `matrix:sessions: N rows passed, M failed`. Run it.
 
-**Check before you approve.** Pick one row. Predict which line of its test fails if the rule it proves is broken. Then ask the agent to show that row's test and the planted bug that Task 12b uses for it, and check that the failing line is the one you named.
+**Check before you approve.** Pick one row. Predict which line of its test fails if the rule it proves is broken. Then ask the agent to show that row's test and the planted bug that Task 12b uses for it. Check that the failing line is the one you named.
 
 **What good looks like:** eight rows pass, none inconclusive. Your prediction: S8, because Ana asks for Luis's session from S1 while it still exists. The run starts about twelve sessions, which cost about 3 to 5 cents each, under $0.60 in all.
 
@@ -496,9 +496,9 @@ This sitting starts Milestone 2.
 
 ### Task 12b. Ten planted bugs (1 hour, OpenCode)
 
-**Goal:** proof that every row can fail: each planted bug caught.
+**Goal:** proof that every row can fail, with each planted bug caught.
 
-**Predict:** which bugs does no matrix row catch, and what catches it instead?
+**Predict:** which bugs does no matrix row catch, and what catches them instead?
 
 **In plain words.** Each test from Task 12 should fail when its rule is broken. You break each rule on purpose, one at a time, and check that its test fails.
 
@@ -518,7 +518,7 @@ This sitting starts Milestone 2.
 
 **Goal:** `ant apply` from GitHub Actions with no Anthropic key stored in GitHub.
 
-**Predict:** what does the platform's record say started the CI run: you, or something else?
+**Predict:** what does the platform's record say started the CI run? You, or something else?
 
 **In plain words.** Deployment from GitHub with no stored key: GitHub proves who it is each time, and gets a short-lived token.
 
@@ -539,7 +539,7 @@ This sitting starts Milestone 2.
 
 ## Lab 22, Sitting 4: refresh, schedules, webhooks and the loop (about 2 hours 40 minutes)
 
-**Before you start, answer in a line each:** Why might a vault fail on its second refresh (22.14)? What are the six parts of a loop, and why must its check not be the model's own word (22.16)? **After this sitting, you can:** test rotation, turn a refused refresh into "sign in again", receive webhooks safely, and run the morning triage as a loop that checks itself.
+**Before you start, answer in a line each:** Why might a vault fail on its second refresh (22.14)? What are the six parts of a loop, and why must its check not be the model's own word (22.16)? **After this sitting, you can:** test rotation, turn a refused refresh into "sign in again", and receive webhooks safely. You can also run the morning triage as a loop that checks itself.
 
 **New words in this sitting's prompts.**
 
@@ -558,7 +558,7 @@ This sitting starts Milestone 2.
 
 > Read 22.14. Set the staging sign-in server's access-token lifetime for `brightline-portal` to 5 minutes, in staging only, and deploy. The token already in Ana's vault was issued under the old lifetime, so sign in again as Ana, which updates her credential with a 5-minute token. Then, as Ana in the portal, ask a question. Wait 6 minutes. Ask again. Show me the sign-in server's log lines for the refresh, without any token, and the second answer.
 
-**What good looks like:** one refresh in the sign-in server's log, from the platform, about 6 minutes after the first question, and a normal second answer. If the second answer fails at the connector instead, read the refresh in the sign-in server's log: Chapter 18's server needs the connector's address, `resource`, on every refresh, and without it returns a token the connector refuses. Record that in `ports/ch22.md`, because it is an open question for the platform (F4).
+**What good looks like:** one refresh in the sign-in server's log, from the platform, about 6 minutes after the first question. Then a normal second answer. If the second answer fails at the connector instead, read the refresh in the sign-in server's log. Chapter 18's server needs the connector's address, `resource`, on every refresh. Without it, the server returns a token the connector refuses. Record that in `ports/ch22.md`, because it is an open question for the platform (F4).
 
 **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-14.md).
 
@@ -581,7 +581,7 @@ This sitting starts Milestone 2.
 **What you see, and what to do.**
 
 - **If every refresh succeeds** and the check says `valid`: the platform stores the rotated token. Record that, and go on to Task 16.
-- **If a refresh fails because a used refresh token came back,** and the check says `invalid`: the platform does not store it, and the second refresh is usually the one that fails. Record which refresh failed. Do not build F4's fallback in this lab. Sign in again as Ana, which repairs her credential, and check that `vault:check` says `valid` before Task 16, because Tasks 17 and 18 need her vault.
+- **If a refresh fails because a used refresh token came back,** and the check says `invalid`: the platform does not store it. The second refresh is usually the one that fails. Record which refresh failed. Do not build F4's fallback in this lab. Sign in again as Ana, which repairs her credential. Then check that `vault:check` says `valid` before Task 16, because Tasks 17 and 18 need her vault.
 
 **What good looks like:** one of the two branches above, recorded in `ports/ch22.md`, and a `valid` vault before Task 16. The rotation script's dry run prints the number of active credentials it would update (two, Ana's and Luis's) and changes nothing. Your prediction: storing the token shows three successes. Not storing it fails on the second refresh, because rotation made the first refresh token stop working.
 
@@ -631,7 +631,7 @@ This sitting starts Milestone 2.
 
 ### Task 18. The morning triage as a loop (45 minutes, Claude Code)
 
-**Goal:** a weekday 7:10 run in New York time, with a per-run budget, whose report code checks against the session's own tool results, sends back at most twice, and posts once per day or marks "needs review".
+**Goal:** a weekday run with a per-run budget. It runs at 7:10 in New York time. Code checks its report against the session's own tool results, sends back at most twice, and posts once per day or marks "needs review".
 
 **Predict:** the worker says "every open invoice has a decision". Why should the portal not believe it, and what can it check instead?
 
@@ -650,7 +650,7 @@ This sitting starts Milestone 2.
 
 **Check before you approve.** Predict first: what does the check do with a report that cites a policy line the session never read? Then ask the agent to show the check function, and find where it compares the report with the session's own tool results (22.16). It is Lab 21's answer check (21.6), with more to check.
 
-**What good looks like:** the four check tests pass. The plan creates one deployment. The first run's report is posted after zero, one or two rounds, for under $0.50 in all, with the line saying it was made with Ana's access. The second is recorded as a repeat. The deployment shows as paused, so it does not spend money every weekday after the lab. Your prediction: the model cannot see what it missed, so the portal checks the report against the tool results the platform recorded, with code.
+**What good looks like:** the four check tests pass. The plan creates one deployment. The first run's report is posted after zero, one or two rounds, for under $0.50 in all. It has the line saying it was made with Ana's access. The second is recorded as a repeat. The deployment shows as paused, so it does not spend money every weekday after the lab. Your prediction: the model cannot see what it missed, so the portal checks the report against the tool results the platform recorded, with code.
 
 **Check it now.** Download [Task 18's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-18.md).
 
@@ -677,7 +677,7 @@ This sitting starts Milestone 2.
 
 ### Task 19. Port to OpenAI (30 minutes, Codex, optional)
 
-**By hand first (F7).** In the OpenAI dashboard, set the project's monthly spend limit to $5, with Enforce a hard limit turned on (Project settings, Limits), because this runtime has no per-session dollar cap that we found. That is the port's budget.
+**By hand first (F7).** In the OpenAI dashboard, set the project's monthly spend limit to $5, with Enforce a hard limit turned on (Project settings, Limits). You need that limit because this runtime has no per-session dollar cap that we found. That is the port's budget.
 
 **Goal:** Ana's question on OpenAI's hosted runtime, with her own token in its vault.
 
@@ -693,13 +693,13 @@ This sitting starts Milestone 2.
 >
 > Record in `ports/ch22.md` every difference from the Claude build: names, defaults, approvals, budgets, how the plugin loaded, and what you could not set.
 
-**What good looks like:** Brightline's answer, from the connector, with Ana's name in the connector's log, and an answer that follows the plugin's skill. Your notes name at least: the plugin loaded as a bundle, where Claude needed each part declared, no per-session dollar cap found, no per-tool ask, only allowed tools and an optional review by a model, and `connection_origin`.
+**What good looks like:** Brightline's answer, from the connector, with Ana's name in the connector's log, and an answer that follows the plugin's skill. Your notes name at least: the plugin loaded as a bundle, where Claude needed each part declared, and no per-session dollar cap found. They also name no per-tool ask, only allowed tools and an optional review by a model, and `connection_origin`.
 
 **Check it now.** Download [Task 19's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-19.md).
 
 ### Task 20. Port to open source (35 minutes, OpenCode)
 
-**The port's budget.** A local model costs nothing. If you choose a hosted model instead, use a key with its own spending limit of $3 or less, set in that provider's dashboard, because we found no per-session cap in this runtime.
+**The port's budget.** A local model costs nothing. If you choose a hosted model instead, use a key with its own spending limit of $3 or less, set in that provider's dashboard. You need that limit because we found no per-session cap in this runtime.
 
 **Goal:** the same question on Omnara on your own computer.
 
@@ -707,7 +707,7 @@ This sitting starts Milestone 2.
 
 > Read 22.19 and F7. Start Omnara from the release pinned in `ports/omnara/README.md` with Docker Compose, as F7 says, on this computer only. Walk me through signing up, with the verification link from the local log, adding a model provider (I will choose), making an agent profile with the instructions from `agents/ap-worker.md`, adding the `skills/invoice-triage/` folder as a skill, and adding the staging connector as an HTTP MCP server. Only then make a 10-minute token for Ana with `npm run token:test -- --person ana --company org_brightline --out .secrets/ana-omnara.env`, and store it from that file as a secret that the server's settings name as a bearer token, never shown. Ask "Which invoices are due this week?" Then stop Omnara with `docker compose down` and delete the token file. Record in `ports/ch22.md` what it could not do that the hosted runtimes could.
 
-**What good looks like:** Brightline's answer, using the skill. Your notes say at least: a refreshable token held as a secret, one for each person not tested, so the port used a 10-minute token, no budget per session found, and insecure local defaults.
+**What good looks like:** Brightline's answer, using the skill. Your notes say at least: a refreshable token held as a secret, one for each person, not tested, so the port used a 10-minute token. They also say no budget per session found, and insecure local defaults.
 
 **Check it now.** Download [Task 20's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-20.md).
 
@@ -741,11 +741,11 @@ This sitting starts Milestone 2.
 
 ### Required and optional
 
-**Both milestones, about 12 hours 20 minutes:** Milestone 1 (Tasks 0 to 11) and Milestone 2 (Tasks 12 to 18, 20 and 21). **With both extensions, about 13 hours 15 minutes.** **Extensions:** Task 19 (the OpenAI port, which costs money), Task 21b, and production.
+**Both milestones, about 12 hours 20 minutes:** Milestone 1 (Tasks 0 to 11) and Milestone 2 (Tasks 12 to 18, 20 and 21). **With both extensions, about 13 hours 15 minutes.** *Extensions:* Task 19 (the OpenAI port, which costs money), Task 21b, and production.
 
 ### Apply it to your vertical (optional)
 
-Pick a business you know where many people would ask one worker for their own data: a clinic's patients, a school's parents, a law firm's clients. Write its worker contract: who the worker acts for, which tools, its budget, and what it must never do. Then write three rows of its session matrix, each with the bug it would catch.
+Pick a business you know where many people would ask one worker for their own data. For example, a clinic's patients, a school's parents, a law firm's clients. Write its worker contract: who the worker acts for, which tools, its budget, and what it must never do. Then write three rows of its session matrix, each with the bug it would catch.
 
 ### If something goes wrong
 
@@ -765,7 +765,7 @@ Pick a business you know where many people would ask one worker for their own da
 
 ### Exam notes
 
-These notes name objectives in the projected exam guide this book maps to (CCDV-F is the Claude Certified Developer foundations exam), and one of OpenAI's own.
+These notes name objectives in the projected exam guide this book maps to, and one of OpenAI's own. CCDV-F is the Claude Certified Developer foundations exam.
 
 - **CCDV-F, building agents (primary).** The four resources, events and stop reasons, resources as code, budgets and schedules (22.1 to 22.5, 22.15).
 - **CCDV-F, agent patterns (primary).** Permission policies and the hosted patterns (22.8, 22.17).

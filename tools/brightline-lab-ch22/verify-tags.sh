@@ -46,7 +46,7 @@ for rel in $MERGED; do
   missing=$(comm -23 <(sort -u "$BASE/$rel") <(git show "lab22-start:$rel" | sort -u))
   case "$rel" in
     src/sdk/policy.ts) expect=$(printf '%s\n' "// Rule 2, in plain words: an answer must cite at least one policy line, written as (file.md:N)." "export function citesPolicyLine(answer: string): boolean {" "  return /\\([a-z0-9-]+\\.md:\\d+\\)/i.test(answer);" | sort -u) ;;
-    package.json|.claude/settings.json) expect=$(printf '%s\n' "$missing" | grep -E '^[[:space:]]*"(typecheck:sdk:py|servers/auth|Bash\(npm run stream:demo\*\))' ) ;;
+    package.json|.claude/settings.json) expect=$(printf '%s\n' "$missing" | grep -E '^[[:space:]]*"(typecheck:sdk:py|servers/auth|Bash\(npm run stream:demo\*\)|Bash\(npm run sdk\*\))' ) ;;
     *) expect="" ;;
   esac
   if [ "$(printf '%s' "$missing" | sort -u)" = "$(printf '%s' "$expect" | sort -u)" ]; then

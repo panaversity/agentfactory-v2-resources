@@ -4,9 +4,9 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 
 **If the stop rule applies.** If this task did something different from **What good looks like**, stop there: record what you saw in `ports/ch22.md`, and do not build on it. To carry on anyway, compare your work with this key yourself, in a text editor and never in the agent, and carry on once they match. It is not your mistake.
 
-**Your prediction, if it matched:** The worker cannot reach the connector, because its host is not an open door (22.7, F2). Whether the platform refuses the session at the start or fails the first connector call is not yet confirmed. Either counts as the right answer.
+**Your prediction, if it matched:** The worker cannot reach the connector, because its host is not an open door (22.7, F2). Whether the platform rejects the session at the start or fails the first connector call is not yet confirmed. Either counts as the right answer.
 
-**What good looks like:** seven rows: four connector tools on "allow", and read, glob and grep on "allow". No command tool, no web tools. `check:agent-config` passes.
+**What good looks like:** seven rows. Four connector tools on "allow", and read, glob and grep on "allow". No command tool, no web tools. `check:agent-config` passes.
 
 **Expected from the platform's documentation:** Seven tools visible: four connector tools allow, read, glob, grep allow.
 
