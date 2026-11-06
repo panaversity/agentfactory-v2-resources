@@ -25,7 +25,7 @@
         "name": "get_purchase_order",
         "input": {
           "po_number": null,
-          "invoice_number": "INV-8302"
+          "invoice_number": "INV-8316"
         }
       }
     ],
@@ -47,7 +47,7 @@
     "content": [
       {
         "type": "text",
-        "text": "INV-8301 matches PO-7701 ($4,125.00) and needs no approval. INV-8302 has no purchase order: the lookup returned an error. At $389.00 it is under $500.00, so policy may not need one, but I have not checked the policy yet.",
+        "text": "INV-8301 matches PO-7001 ($4,825.00) and needs no approval. INV-8316 has no purchase order: the lookup returned an error, which says an invoice with no PO is held until the buyer raises one. I have not checked the policy line yet.",
         "citations": null
       }
     ],

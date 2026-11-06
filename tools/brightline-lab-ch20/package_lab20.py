@@ -35,13 +35,18 @@ def put(path, text):
 exp = build.week(HIS_KEY.read_text())
 for a, b in [
     ("| 2 | `list_open_invoices`, `vendor_id` null, `due_by` 2027-04-04 |",
-     "| 2 | `list_open_invoices`, `due_on_or_before` 2027-04-04, `vendor_id`, `page_size` and `page` null |"),
+     "| 2 | `list_open_invoices`, `due_on_or_before` 2027-04-04, `vendor_id` and `page` null, `page_size` 10 or null |"),
+    # One Brightline (C20.1, C20.2): the ten invoices due this week may come in one call or two, and Task 10
+    # asks about an invoice with no PO, po-matching.md:9 (the editor, Friday, November 6, 2026).
+    ("`stop: end_turn \\| turns: 2`. Request 2: question, model entry, one result with the call's id",
+     "`stop: end_turn \\| turns: 2` (`turns: 3` if the model pages). Request 2: question, model entry, one result with the call's id"),
+    ("Good run cites `purchasing.md:5`.", "Good run cites `po-matching.md:9`."),
     ("| 5 | A 400 | 400 `invalid_request_error` about the thinking block, with a request id |",
      "| 5 | A 400 | 400 `invalid_request_error`, saying the `signature` in the `thinking` block is invalid, with a request id |"),
 ]:
     assert exp.count(a) == 1, a
     exp = exp.replace(a, b)
-assert "due_by" not in exp and "2026-12" not in exp
+assert "due_by" not in exp and "2026-12" not in exp and "purchasing.md" not in exp
 put(KEY / "expected.md", exp)
 rows = {}
 for line in exp.splitlines():
@@ -117,7 +122,7 @@ HEAD = ("For you, after the task. Open it in a text editor, never in the agent. 
         "each API's documentation leads us to expect: nobody has run it live yet, so if your run differs, your run "
         "is the evidence, and you write what you saw in `ports/ch20.md`. The offline results, the type checks, the "
         "recorded tests and the runs against the practice connector with a stand-in model, were checked on macOS "
-        "on November 5, 2026.")
+        "on November 6, 2026.")
 
 
 def pred(n):
@@ -133,7 +138,9 @@ KEYS = {
           "On macOS: `npm run typecheck` and `npm run typecheck:py` report no errors, `npm run test:loop` 32 passed, "
           "`npm run test:loop:py` 22 passed. `npm ls --depth=0` lists `@anthropic-ai/sdk@1.5.0` and `openai@7.51.0`. "
           "The connector lists four tools: `find_vendor`, `list_open_invoices`, `get_purchase_order` and `search_policy`. "
-          "On route A, `npm run token:test` prints the token's claims, never the token: `tenant` `org_brightline`, "
+          "On route A, the load prints `staging: loaded org_brightline from data: vendors 8, invoices 18, "
+          "purchase_orders 14, policy_documents 3, policy_passages 17` and its embeddings model, and "
+          "`npm run token:test` prints the token's claims, never the token: `tenant` `org_brightline`, "
           "`scope` `ap:read ap:vendors.read`, and `aud` your connector's address."],
     "1": [pred("1"), shows("1"),
           "The request has `model`, `max_tokens`, `system`, `messages`, `tools`, `tool_choice` and `thinking`, and no "
@@ -146,9 +153,12 @@ KEYS = {
           "**The change, results before the model's entry:** " + rows["3, modify"][1] + ". Your prediction, if it "
           "matched: " + rows["3, modify"][0] + ".",
           "Offline, the recorded run with the practice connector ends `stop: end_turn | turns: 2`, and request 2's "
-          "last entry holds one `tool_result` for `toolu_01Lab20A1`, with the connector's open invoices."],
+          "last entry holds one `tool_result` for `toolu_01Lab20A1`, with the ten open invoices due by Sunday, "
+          "April 4 (`total_count` 10): nine past due, and INV-8316, due Friday. A live model that leaves `page_size` "
+          "null gets five and a `next_page`, and asks once more: three requests, also correct."],
     "4": [pred("4"), shows("4"),
-          "The answer says INV-8302 has no purchase order. Whether the model asked for both calls at once or one at a "
+          "The answer says INV-8316 has no purchase order: the connector's error says such an invoice is held until "
+          "the buyer raises one. Whether the model asked for both calls at once or one at a "
           "time, record which: both are correct."],
     "5": [pred("5"), shows("5"),
           "Line 40 stops the script when the model did not think on turn 1: run it again. Line 43 is the break: it "
@@ -207,14 +217,16 @@ put(LAB / "README.md", """# Lab 20 files
 
 These files go with Lab 20 of The AI Agent Factory: the agent loop by hand.
 
-- `brightline-ap/` is the repository at the end of Lab 19, with no git history, plus the lab's starting files: the loop in TypeScript (`src/loop/`) and Python (`py/brightline_ap/loop/`), the four tools defined once (`tools/ap-tools.json`, from the connector's own tool list), the worker's instructions (`prompts/ap-worker.v1.md`), the scripts that ask, break, compare and stream, the practice connector and its data (`data/practice/`), the tests with their recorded responses, and `docs/chapter-20/`, the chapter's concepts and field guide as text files for coding agents. Task 0 starts its git history.
+- `brightline-ap/` is the repository at the end of Lab 19, with no git history, plus the lab's starting files: the loop in TypeScript (`src/loop/`) and Python (`py/brightline_ap/loop/`), the four tools defined once (`tools/ap-tools.json`, from the connector's own tool list), the worker's instructions (`prompts/ap-worker.v1.md`), the scripts that ask, break, compare and stream, the practice connector (it reads `data/` and `docs/policies/`, the files route A loads in Task 0), the tests with their recorded responses, and `docs/chapter-20/`, the chapter's concepts and field guide as text files for coding agents. Task 0 starts its git history.
 - `LAB.md` is a copy of the lab steps.
 - `answer-key/` holds what each task should show, and `files/`, what the repository holds at tag `ch20` that it did not at the start. Never give it to an agent.
 - Each task's answer key is a separate download, linked from the task in `LAB.md`. Open a key in a text editor only, never in the agent.
 
+`data/` holds Lab 19's rows and three invoices entered since, INV-8316 to INV-8318: one Brightline for both routes.
+
 Today in the lab is Tuesday, March 30, 2027. The people and companies are invented. Your API keys are made by you, in each provider's own dashboard, and go only into `.secrets/`, which git ignores.
 
-You need Node.js 22.19 or later, Python 3.12 or later with uv 0.11 or later, git, a GitHub account with `gh`, and a coding agent (the lab uses Claude Code, Codex and OpenCode). Every test runs offline, with no key. The live steps need a Claude Console account and an OpenAI API account, each with a few dollars of credit and a spending limit. Route A uses your Chapter 19 staging connector; route B, the practice connector, needs nothing else.
+You need Node.js 22.19 or later, Python 3.12 or later with uv 0.11 or later, git, a GitHub account with `gh`, and a coding agent (the lab uses Claude Code, Codex and OpenCode). Every test runs offline, with no key. The live steps need a Claude Console account and an OpenAI API account, each with a few dollars of credit and a spending limit. Route A uses your Chapter 19 staging connector, and Task 0 loads `data/` into it; route B, the practice connector, needs nothing else.
 """)
 
 # ---- brightline-ap/docs/chapter-20/ -----------------------------------------------------------

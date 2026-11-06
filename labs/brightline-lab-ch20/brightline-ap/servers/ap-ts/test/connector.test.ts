@@ -45,14 +45,16 @@ test("find_vendor errors say what to do next", async () => {
 test("list_open_invoices pages across two copies of the server with one handle", async () => {
   const first = makeCopy(), second = makeCopy();
   const p1 = (await call(first, "list_open_invoices", { page_size: 5 })).structuredContent as Structured;
-  assert.equal(p1.total_count, 13);
+  assert.equal(p1.total_count, 16);
   assert.deepEqual(p1.invoices.map((i: Structured) => i.invoice_number), ["INV-8301", "INV-8302", "INV-8303", "INV-8304", "INV-8305"]);
   assert.equal(p1.invoices[4].due_date, null);
   const p2 = (await call(second, "list_open_invoices", { page: p1.next_page })).structuredContent as Structured;
   assert.deepEqual(p2.invoices.map((i: Structured) => i.invoice_number), ["INV-8306", "INV-8307", "INV-8308", "INV-8310", "INV-8311"]);
   const p3 = (await call(first, "list_open_invoices", { page: p2.next_page })).structuredContent as Structured;
-  assert.deepEqual(p3.invoices.map((i: Structured) => i.invoice_number), ["INV-8312", "INV-8314", "INV-8315"]);
-  assert.equal(p3.next_page, null);
+  assert.deepEqual(p3.invoices.map((i: Structured) => i.invoice_number), ["INV-8312", "INV-8314", "INV-8315", "INV-8316", "INV-8317"]);
+  const p4 = (await call(second, "list_open_invoices", { page: p3.next_page })).structuredContent as Structured;
+  assert.deepEqual(p4.invoices.map((i: Structured) => i.invoice_number), ["INV-8318"]);
+  assert.equal(p4.next_page, null);
 });
 
 test("a handle that was changed, belongs to another caller, or has expired is refused", async () => {
@@ -94,7 +96,7 @@ test("get_purchase_order: matched, over the PO, and a missing PO", async () => {
   const missing = await call(makeCopy(), "get_purchase_order", { invoice_number: "INV-8310" });
   assert.equal(missing.isError, true);
   assert.equal(textOf(missing), "No purchase order for INV-8310. Policy: an invoice with no PO is held until the buyer raises one. Call search_policy for the exact rule. Tell the AP lead. Do not treat it as ready.");
-  assert.equal(textOf(await call(makeCopy(), "get_purchase_order", { po_number: "PO-9999" })), "No purchase order PO-9999. Purchase orders run from PO-7001 to PO-7012.");
+  assert.equal(textOf(await call(makeCopy(), "get_purchase_order", { po_number: "PO-9999" })), "No purchase order PO-9999. Purchase orders run from PO-7001 to PO-7014.");
 });
 
 test("search_policy finds passages by meaning, cites document, file and line, and abstains when nothing is close", async () => {

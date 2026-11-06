@@ -8,8 +8,10 @@ import { sign } from "./tokens.ts";
 import { makeServer, type RequestAuth } from "../src/server.ts";
 
 const SIGN_IN = "Sign in to use the Brightline AP connector.";
-// Chapter 19: Cedar Ridge has its own data now. It has 16 open invoices, Brightline 13.
+// Chapter 19: Cedar Ridge has its own data now. Since Lab 20 both companies have 16 open invoices, so an answer
+// is known by its count and its first invoice: Brightline's INV-8301, Cedar Ridge's INV-6201.
 const CEDAR_OPEN = 16;
+const BRIGHTLINE_OPEN = 16;
 const COMPANY_INPUT = "Unknown input company. The company comes only from your sign-in, never from a tool input.";
 
 export const ana = () => sign({ tenant: "org_brightline", sub: "u_test_ana" });
@@ -81,8 +83,9 @@ test("rule 2: two companies call one copy at the same time, 200 times, and each 
     Promise.all([call(copy, a, "list_open_invoices", {}), call(copy, l, "list_open_invoices", {})])));
   let wrong = 0;
   for (const [brightline, cedar] of pairs) {
-    if (brightline.result?.structuredContent?.total_count !== 13) wrong++;
-    if (cedar.result?.structuredContent?.total_count !== CEDAR_OPEN) wrong++;
+    const b = brightline.result?.structuredContent, c = cedar.result?.structuredContent;
+    if (b?.total_count !== BRIGHTLINE_OPEN || b?.invoices?.[0]?.invoice_number !== "INV-8301") wrong++;
+    if (c?.total_count !== CEDAR_OPEN || c?.invoices?.[0]?.invoice_number !== "INV-6201") wrong++;
   }
   assert.equal(wrong, 0, `${wrong} of 400 answers went to the wrong company`);
 });
@@ -100,8 +103,9 @@ test("rule 2: the same, with the calls arriving spread out, so one request's wai
   }));
   let wrong = 0;
   for (const [brightline, cedar] of pairs) {
-    if (brightline.result?.structuredContent?.total_count !== 13) wrong++;
-    if (cedar.result?.structuredContent?.total_count !== CEDAR_OPEN) wrong++;
+    const b = brightline.result?.structuredContent, c = cedar.result?.structuredContent;
+    if (b?.total_count !== BRIGHTLINE_OPEN || b?.invoices?.[0]?.invoice_number !== "INV-8301") wrong++;
+    if (c?.total_count !== CEDAR_OPEN || c?.invoices?.[0]?.invoice_number !== "INV-6201") wrong++;
   }
   assert.equal(wrong, 0, `${wrong} of 400 answers went to the wrong company`);
 });

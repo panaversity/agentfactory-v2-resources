@@ -18,9 +18,9 @@ From *The AI Agent Factory*, Chapter 20, for the coding agents working in this r
 | --- | --- | --- |
 | Call | Your program, to the model | "Ana asks: Which invoices are due this week? You may ask me to run four tools: find a vendor, list open invoices, get a purchase order, search the payment policy." |
 | Keep, check | The model, to your program | "Please run *list open invoices*, due by Sunday, April 4." |
-| Run | Your program | Runs that tool against Brightline's records, and gets back three invoices |
-| Return, then call | Your program, to the model | "Here is everything so far: Ana's question, your request, and the result, three invoices." |
-| Keep, check: finished | The model, to your program | "Three invoices are due this week, $6,374.00 in all." It asks for nothing more, so your program stops and shows Ana the answer |
+| Run | Your program | Runs that tool against Brightline's records, and gets back ten invoices |
+| Return, then call | Your program, to the model | "Here is everything so far: Ana's question, your request, and the result, ten invoices." |
+| Keep, check: finished | The model, to your program | "Ten invoices are due by Sunday, $24,927.63 in all, and nine of them are already late." It asks for nothing more, so your program stops and shows Ana the answer |
 
 That back and forth is the whole agent: two messages to the model, one tool run, one answer. The first column uses five short names for the loop's steps, which the rest of the chapter uses too: **call** (send everything to the model), **keep** (add what it sent to the conversation), **check** (did it ask for a tool?), **run** (run the tool) and **return** (add the result, and go back to call). The model never touched an invoice. It asked, and it read.
 

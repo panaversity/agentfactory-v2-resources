@@ -34,7 +34,7 @@
 ## The agent loop (Chapter 20)
 
 - Never print, read aloud, copy or open anything in `.secrets/`. Scripts read those files themselves. If a step needs a key or token, the person puts it there with their own editor.
-- Ask before any call to a model API. Live calls go only through `npm run ask`, `npm run ask:py`, `npm run break`, `npm run break:py`, `npm run stateful`, `npm run stateful:py` and `npm run stream:demo`. Each has a cost cap or is a single small call. Never write a new script that calls a model API without asking.
+- Ask before any call to a model API. Live calls go only through `npm run ask`, `npm run ask:py`, `npm run break`, `npm run break:py`, `npm run stateful`, `npm run stateful:py` and `npm run stream:demo`, and the embeddings call inside `npm run tenant:load` (Task 0, route A). Each has a cost cap or is a single small call. Never write a new script that calls a model API without asking.
 - The person predicts first. When a task says to stop before a result, stop, and wait until the person says they have written their prediction in `ports/ch20.md`.
 - Explain on request, quoting the line. When asked about a line, quote it and explain it in one or two sentences, for a reader who knows Chapters 13 and 14.
 - Changes for experiments go on a throwaway branch, and the branch is deleted at the end of the task. Merge nothing until Task 13.

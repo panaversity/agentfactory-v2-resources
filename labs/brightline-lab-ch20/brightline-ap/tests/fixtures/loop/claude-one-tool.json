@@ -7,7 +7,7 @@
     "content": [
       {
         "type": "thinking",
-        "thinking": "The person wants invoices due this week. Today is Tuesday 2027-03-30, so due by Sunday 2027-04-04.",
+        "thinking": "The person wants invoices due this week. Today is Tuesday 2027-03-30, so due by Sunday 2027-04-04. Ask for ten a page, the most.",
         "signature": "EqQBCkYIBxgCKkDsig1"
       },
       {
@@ -17,7 +17,7 @@
         "input": {
           "vendor_id": null,
           "due_on_or_before": "2027-04-04",
-          "page_size": null,
+          "page_size": 10,
           "page": null
         }
       }
@@ -40,7 +40,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Three invoices are due this week, $6,374.00 in all:\n- INV-8301, Midwest Packaging Co., $4,125.00, due March 31\n- INV-8303, Hocking Valley Pallets, $1,860.00, due April 1\n- INV-8302, Buckeye Janitorial Supply, $389.00, due April 2",
+        "text": "Ten invoices are due by Sunday, April 4, $24,927.63 in all. Nine are already past due, from February 26 to March 9:\n- INV-8301, V001, $4,825.00, due March 3\n- INV-8302, V002, $618.75, due March 3\n- INV-8303, V003, $12,900.00, due March 6\n- INV-8304, V004, $234.50, due February 26\n- INV-8306, V006, $1,582.00, due March 8\n- INV-8307, V007, $2,411.33, due March 1\n- INV-8311, V002, $442.10, due March 9\n- INV-8312, V004, $199.95, due March 5\n- INV-8315, V008, $1,325.00, due March 4\nOne falls due this week: INV-8316, V002, $389.00, due Friday, April 2.",
         "citations": null
       }
     ],
@@ -48,8 +48,8 @@
     "stop_sequence": null,
     "stop_details": null,
     "usage": {
-      "input_tokens": 1640,
-      "output_tokens": 118,
+      "input_tokens": 1938,
+      "output_tokens": 172,
       "cache_creation_input_tokens": 0,
       "cache_read_input_tokens": 0
     }

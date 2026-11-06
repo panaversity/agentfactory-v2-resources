@@ -27,21 +27,25 @@ describe("practice connector over MCP", () => {
     expect(res.status).toBe(401);
   });
 
-  it("runs a tool and returns its text", async () => {
+  it("runs a tool and returns its text: the ten invoices due this week, from data/", async () => {
     const { runTool, close } = await connectToConnector(URL_, "test-token-not-secret");
-    const r = await runTool("list_open_invoices", { vendor_id: null, due_on_or_before: "2027-04-04", page_size: null, page: null });
+    const r = await runTool("list_open_invoices", { vendor_id: null, due_on_or_before: "2027-04-04", page_size: 10, page: null });
     await close();
     expect(r.ok).toBe(true);
-    expect(r.text).toContain("INV-8301");
-    expect(r.text).not.toContain("INV-8304");
+    expect(r.text).toMatch(/"total_count":\s*10\b/);
+    expect(r.text).toContain("INV-8301"); // past due since March 3
+    expect(r.text).toContain("INV-8316"); // due Friday, April 2
+    expect(r.text).not.toContain("INV-8317"); // due Monday, April 19
+    expect(r.text).not.toContain("INV-8305"); // no due date
+    expect(r.text).not.toContain("INV-8309"); // paid
   });
 
   it("returns a tool failure as ok: false, not as a crash", async () => {
     const { runTool, close } = await connectToConnector(URL_, "test-token-not-secret");
-    const r = await runTool("get_purchase_order", { po_number: null, invoice_number: "INV-8302" });
+    const r = await runTool("get_purchase_order", { po_number: null, invoice_number: "INV-8316" });
     await close();
     expect(r.ok).toBe(false);
-    expect(r.text).toContain("has no purchase order");
+    expect(r.text).toContain("No purchase order for INV-8316. Policy: an invoice with no PO is held");
   });
 });
 

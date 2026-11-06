@@ -51,8 +51,8 @@ class Recorded:
 
 
 async def tools(name: str, tool_input: Any) -> ToolOutcome:
-    if name == "get_purchase_order" and tool_input["invoice_number"] == "INV-8302":
-        return ToolOutcome(False, "INV-8302 has no purchase order.")
+    if name == "get_purchase_order" and tool_input["invoice_number"] == "INV-8316":
+        return ToolOutcome(False, "No purchase order for INV-8316. Policy: an invoice with no PO is held until the buyer raises one. Call search_policy for the exact rule. Tell the AP lead. Do not treat it as ready.")
     if name == "search_policy":
         return ToolOutcome(True, "try again")
     return ToolOutcome(True, '[{"invoice_number":"INV-8301"}]')
@@ -231,7 +231,7 @@ def test_stream_assembles_text_and_tool_input() -> None:
     assert pieces == ["Let me check ", "this week's invoices."]
     assert out.tool_calls == [{"id": "toolu_01Lab20S2", "name": "list_open_invoices",
                                "input": {"vendor_id": None, "due_on_or_before": "2027-04-04",
-                                         "page_size": None, "page": None}}]
+                                         "page_size": 10, "page": None}}]
     assert out.stop_reason == "tool_use"
 
 
@@ -274,11 +274,11 @@ def test_practice_connector_over_mcp() -> None:
         async def go() -> tuple[Any, Any]:
             async with connect_to_connector("http://127.0.0.1:8768/mcp", "test-token-not-secret") as run_tool:
                 return (await run_tool("find_vendor", {"vendor_id": "V003", "name": None}),
-                        await run_tool("get_purchase_order", {"po_number": None, "invoice_number": "INV-8302"}))
+                        await run_tool("get_purchase_order", {"po_number": None, "invoice_number": "INV-8316"}))
 
         found, missing = asyncio.run(go())
-        assert found.ok and "Hocking Valley Pallets" in found.text
-        assert not missing.ok and "has no purchase order" in missing.text
+        assert found.ok and "Great Lakes Freight" in found.text
+        assert not missing.ok and "No purchase order for INV-8316" in missing.text
     finally:
         proc.terminate()
 
@@ -294,7 +294,7 @@ def test_practice_connector_reads_token_file_and_can_be_broken(tmp_path: Any, mo
     monkeypatch.setenv("PRACTICE_BROKEN", "search_policy")
     pc = importlib.reload(pc)
     assert pc.search_policy("early payment discount") == "try again"
-    assert pc.find_vendor(vendor_id="V003")["vendors"][0]["vendor_name"] == "Hocking Valley Pallets"
+    assert pc.find_vendor(vendor_id="V003")["vendors"][0]["vendor_name"] == "Great Lakes Freight"
     monkeypatch.delenv("PRACTICE_BROKEN")
     importlib.reload(pc)
 

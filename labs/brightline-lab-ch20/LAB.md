@@ -34,7 +34,7 @@ The lab runs in four sittings, each right after the concepts it uses, and each s
 
 **What you do by hand, and only this.** Make the two API accounts, make each API key in its own console and paste it into its file in `.secrets/` with your own editor, set the spending limits, copy the prices for the pinned models into `src/loop/config.json` ([F5](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f5-prices-usage-and-caching)), and decide when to merge. Agents do everything else. **No API key or token passes through a chat.**
 
-**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through `npm run ask` (which has a cost cap), `npm run break` and `npm run stream:demo` (one or two small calls each) and `npm run stateful` (at most 8 turns). Ask before any call to a model API. `.claude/settings.json` also denies reading `.secrets/`, and `opencode.json` denies OpenCode's file-reading tool access to it. Codex's settings file cannot deny it, so in Codex the rule in `AGENTS.md` is the guard.
+**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through `npm run ask` (which has a cost cap), `npm run break` and `npm run stream:demo` (one or two small calls each) and `npm run stateful` (at most 8 turns), plus the one embeddings call inside Task 0's load on route A. Ask before any call to a model API. `.claude/settings.json` also denies reading `.secrets/`, and `opencode.json` denies OpenCode's file-reading tool access to it. Codex's settings file cannot deny it, so in Codex the rule in `AGENTS.md` is the guard.
 
 **Words in the prompts.**
 
@@ -73,8 +73,8 @@ Then open the pricing page for each account you made, find the pinned model from
 
 **Choose a connector.**
 
-- **Route A, your own connector.** If your Chapter 19 staging connector is still deployed, use it. The loop then calls the real thing, with a test token for Ana at Brightline. You need a way to make that token ([F2](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)). If you are not sure you have one, take route B: everything in this chapter works on it.
-- **Route B, the practice connector.** If your Chapter 19 connector is not deployed, or you skipped Labs [17](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) to [19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/), use the practice connector in the zip. It offers the same four tools over MCP on your own computer, reading a small file of Brightline's invoices, and checks a bearer token (a sign-in token, as in [Chapter 18](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/overview/), sent in a request header). It has no sign-in server and no database, so it proves the loop, not the connector.
+- **Route A, your own connector.** If your Chapter 19 staging connector is still deployed, use it. Step 4 first loads this lab's Brightline into it: Lab 19's rows, and three invoices entered since. The loop then calls the real thing, with a test token for Ana at Brightline. You need a way to make that token ([F2](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)). If you are not sure you have one, take route B: everything in this chapter works on it.
+- **Route B, the practice connector.** If your Chapter 19 connector is not deployed, or you skipped Labs [17](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) to [19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/), use the practice connector in the zip. It offers the same four tools over MCP on your own computer, reading this folder's Brightline files, the same rows route A loads, and checks a bearer token (a sign-in token, as in [Chapter 18](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/overview/), sent in a request header). It has no sign-in server and no database, so it proves the loop, not the connector.
 
 **Predict:** before any key is used, which tests can already pass?
 
@@ -87,11 +87,11 @@ Then open the pricing page for each account you made, find the pinned model from
 > 2. Run `npm run typecheck`, `npm run typecheck:py`, `npm run test:loop` and `npm run test:loop:py`. Show me the four results as a table.
 > 3. Check that git ignores `.secrets/` (`git check-ignore .secrets/anthropic.env` should print the path) and that `src/loop/config.json` has prices and a `checked_on` date for `claude` (and for `openai`, if I made that account today). Do not open the key files.
 > 4. The connector. Do only the route I chose.
->    - Route A: run `npm run token:test -- --person ana --company org_brightline`, as F2 says. It signs Ana in on staging and writes the connector's staging address and her token into `.secrets/connector.env` as `CONNECTOR_URL=` and `CONNECTOR_TOKEN=`, never printing the token. If it stops, show me why, and I will switch to route B.
+>    - Route A: ask me first, then run `npm run tenant:load -- --company org_brightline --folder data --env staging --replace`. It loads this folder's Brightline into staging, Lab 19's rows and three invoices entered since (INV-8316 to INV-8318), and embeds the policies again, one small metered call to the embeddings model from Chapter 19. Then run `npm run token:test -- --person ana --company org_brightline`, as F2 says. It signs Ana in on staging and writes the connector's staging address and her token into `.secrets/connector.env` as `CONNECTOR_URL=` and `CONNECTOR_TOKEN=`, never printing the token. If it stops, show me why, and I will switch to route B.
 >    - Route B: write `CONNECTOR_URL=http://127.0.0.1:8760/mcp` and a random `CONNECTOR_TOKEN` into `.secrets/connector.env`, with a short script that never prints it. Then tell me to run `npm run connector:practice` in a second terminal, and wait until I say it is running. It reads the token from that file itself, so you never need to see it (F2).
 > 5. List the connector's tools with the `listTools()` function in `src/loop/tools.ts` (an MCP `tools/list` call), and show me their four names.
 
-**What good looks like:** one commit at tag `lab20-start`. Node 22.19 or later. `@anthropic-ai/sdk` 1.5.0 and `openai` 7.51.0. Both type checks clean, 32 TypeScript tests and 22 Python tests passing. `.secrets/` ignored, and prices filled in for each account you made (the `openai` row may stay zero if you left it for Sitting 2). Four tool names from the connector. Your prediction: all of them. Every test replays recorded responses and needs no key.
+**What good looks like:** one commit at tag `lab20-start`. Node 22.19 or later. `@anthropic-ai/sdk` 1.5.0 and `openai` 7.51.0. Both type checks clean, 32 TypeScript tests and 22 Python tests passing. `.secrets/` ignored, and prices filled in for each account you made (the `openai` row may stay zero if you left it for Sitting 2). On route A, the load reports `invoices 18, purchase_orders 14`. Four tool names from the connector. Your prediction: all of them. Every test replays recorded responses and needs no key.
 
 **Check it now.** Download [Task 0's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-0.md).
 
@@ -101,6 +101,7 @@ Then open the pricing page for each account you made, find the pinned model from
 | --- | --- |
 | `npm ci` complains about the Node version | Install Node 22.19 or later, open a new terminal, and ask the agent to run step 1 again |
 | A Python test fails to import a package | Ask the agent to run `cd py && uv sync --locked` again (F0) |
+| The load stops with `stopped, nothing loaded` | Nothing changed on staging. The load needs Lab 19's `.secrets/db.staging.env` and `.secrets/embeddings.env`. If they are gone, take route B |
 | `tools/list` gets a 401 | The token is wrong or expired. Route A: run `npm run token:test` again (a token lasts 10 minutes). Route B: stop the practice connector and start it again, so it reads the current `.secrets/connector.env` |
 | `tools/list` cannot connect | Route A: check the address in Lab 19's `docs/deploy.md`. Route B: start the practice connector, and leave its terminal open |
 
@@ -160,7 +161,7 @@ def openai_tools(specs=TOOL_SPECS):
 
 *Investigate:* the schema is the same object in both. What two things change? (The key name, `input_schema` against `parameters`, and the extra `"type": "function"`.)
 
-**What good looks like:** four tools whose descriptions match the connector's own, word for word (on route B, the practice connector serves the same four). The agent names the two differences in the tool definitions above. (Part B's four differences are about tool calls, a different thing.) Your prediction: `list_open_invoices`, with `due_on_or_before` `2027-04-04`, and `vendor_id`, `page_size` and `page` null. All four inputs are required, so the model must say "no vendor filter" out loud.
+**What good looks like:** four tools whose descriptions match the connector's own, word for word (on route B, the practice connector serves the same four). The agent names the two differences in the tool definitions above. (Part B's four differences are about tool calls, a different thing.) Your prediction: `list_open_invoices`, with `due_on_or_before` `2027-04-04`, `vendor_id` and `page` null, and `page_size` 10 or null (null means five a page, and a second call for the rest). All four inputs are required, so the model must say "no vendor filter" out loud.
 
 **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-2.md).
 
@@ -336,7 +337,7 @@ The same steps in Python. If TypeScript is your language, skim this block. If Py
 
 *Figure 20.10. The two requests of Ana's run. After you run it, compare your own log with it, entry by entry. A1 stands for the long id you will see, such as `toolu_…`.*
 
-**What good looks like:** two requests and two responses. Request 2's `messages` has three entries: the question, the model's entry (thinking and the tool call), and one result whose `tool_use_id` matches the call's `id`. The summary line reads `stop: end_turn | turns: 2`. Your prediction: line 77 decides (the `if`), and line 78 ends the loop (the `return`), or lines 83 and 84 in Python, and three entries.
+**What good looks like:** two requests and two responses. Request 2's `messages` has three entries: the question, the model's entry (thinking and the tool call), and one result whose `tool_use_id` matches the call's `id`. The summary line reads `stop: end_turn | turns: 2`. If the model left `page_size` null, it got five invoices and a `next_page`, and asked once more: three requests and `turns: 3`, also correct. Either way, the answer names ten invoices. Your prediction: line 77 decides (the `if`), and line 78 ends the loop (the `return`), or lines 83 and 84 in Python, and three entries.
 
 **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-3.md).
 
@@ -350,9 +351,9 @@ The same steps in Python. If TypeScript is your language, skim this block. If Py
 
 **In plain words.** A question that needs two lookups at once, where one fails, shows how every call gets its answer.
 
-> Read 20.4. First run the recorded test only: `npx vitest run -t "one result per call"` and `npm run test:loop:py -- -k one_result_per_call`. Show me the second request each test captured. Then ask live: `npm run ask -- --api claude "Is INV-8301 ready to pay, and does INV-8302 match its PO?"`. Show me the response with the tool calls, and the next request's last entry.
+> Read 20.4. First run the recorded test only: `npx vitest run -t "one result per call"` and `npm run test:loop:py -- -k one_result_per_call`. Show me the second request each test captured. Then ask live: `npm run ask -- --api claude "Is INV-8301 ready to pay, and does INV-8316 match its PO?"`. Show me the response with the tool calls, and the next request's last entry.
 
-**What good looks like:** in the test, two `tool_result` blocks with ids `toolu_01Lab20B1` and `toolu_01Lab20B2`, the second with `is_error: true`. Live, the model may ask for both at once or one at a time. Both are correct: record which in `ports/ch20.md`. The answer says INV-8302 has no purchase order. Your prediction: two results, and `true`.
+**What good looks like:** in the test, two `tool_result` blocks with ids `toolu_01Lab20B1` and `toolu_01Lab20B2`, the second with `is_error: true`. Live, the model may ask for both at once or one at a time. Both are correct: record which in `ports/ch20.md`. The answer says INV-8316 has no purchase order. Your prediction: two results, and `true`.
 
 **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-4.md).
 
@@ -605,9 +606,9 @@ The cast is `as unknown as …`. It tells the type check "trust me, this is a va
 
 **In plain words.** Two runs of a policy question, one with the policy tool removed by mistake. You find the mistake by reading the trace before the answer.
 
-> Read 20.10. Run `npm run ask -- --api claude --trace --quiet "What does our policy say about small repairs? Cite the line."` and save `trace.jsonl` (written in the repository's top folder) as `trace-good.jsonl`. Show me each span's name and, for tool spans, its `gen_ai.tool.call.id`. Then make a throwaway branch, remove `search_policy` from `tools/ap-tools.json`, and run the same command. Show me only the new trace, not the answer, and wait for my diagnosis. Then show me the answer, and compare its citation with what `search_policy` returned in the good run. Delete the branch.
+> Read 20.10. Run `npm run ask -- --api claude --trace --quiet "What does our policy say about an invoice with no purchase order? Cite the line."` and save `trace.jsonl` (written in the repository's top folder) as `trace-good.jsonl`. Show me each span's name and, for tool spans, its `gen_ai.tool.call.id`. Then make a throwaway branch, remove `search_policy` from `tools/ap-tools.json`, and run the same command. Show me only the new trace, not the answer, and wait for my diagnosis. Then show me the answer, and compare its citation with what `search_policy` returned in the good run. Delete the branch.
 
-**What good looks like:** the good trace has `chat`, `execute_tool search_policy`, then `chat`, and the answer cites `purchasing.md:5`. The broken trace has one or more `chat` spans, and no `execute_tool` at all. Its answer either says it cannot check the policy, or cites a line it never looked up, perhaps the `(purchasing.md:4)` from the instructions' own example. Record which. Your prediction: an `execute_tool search_policy` span.
+**What good looks like:** the good trace has `chat`, `execute_tool search_policy`, then `chat`, and the answer cites `po-matching.md:9`. The broken trace has one or more `chat` spans, and no `execute_tool` at all. Its answer either says it cannot check the policy, or cites a line it never looked up, perhaps the `(po-matching.md:5)` from the instructions' own example. Record which. Your prediction: an `execute_tool search_policy` span.
 
 **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-10.md).
 

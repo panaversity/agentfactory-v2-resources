@@ -12,7 +12,7 @@ def test_vendors_load() -> None:
 
 def test_invoices_load_with_null_due_dates() -> None:
     rows, problems = load_csv((DATA / "invoices.csv").read_text(), Invoice)
-    assert len(rows) == 15 and problems == []
+    assert len(rows) == 18 and problems == []
     assert next(r for r in rows if r.invoice_number == "INV-8305").due_date is None
 
 

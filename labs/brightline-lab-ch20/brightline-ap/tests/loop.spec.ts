@@ -47,11 +47,11 @@ function recordedOpenAI(name: string) {
 
 const tools: RunTool = async (name, input) => {
   const i = input as Record<string, unknown>;
-  if (name === "list_open_invoices") return { ok: true, text: '[{"invoice_number":"INV-8301","amount_cents":412500,"due_date":"2027-03-31"}]' };
-  if (name === "get_purchase_order" && i.invoice_number === "INV-8302") return { ok: false, text: "INV-8302 has no purchase order." };
-  if (name === "get_purchase_order") return { ok: true, text: '{"po_number":"PO-7701","amount_cents":412500,"needs_approval":false}' };
+  if (name === "list_open_invoices") return { ok: true, text: '[{"invoice_number":"INV-8301","amount_cents":482500,"due_date":"2027-03-03"}]' };
+  if (name === "get_purchase_order" && i.invoice_number === "INV-8316") return { ok: false, text: "No purchase order for INV-8316. Policy: an invoice with no PO is held until the buyer raises one. Call search_policy for the exact rule. Tell the AP lead. Do not treat it as ready." };
+  if (name === "get_purchase_order") return { ok: true, text: '{"po_number":"PO-7001","po_amount_cents":482500,"invoice_amount_cents":482500,"match":"matched","needs_approval":false}' };
   if (name === "search_policy") return { ok: true, text: "try again" };
-  if (name === "find_vendor") return { ok: true, text: '[{"vendor_id":"V001","name":"Midwest Packaging Co."}]' };
+  if (name === "find_vendor") return { ok: true, text: '{"vendors":[{"vendor_id":"V001","vendor_name":"Midwest Packaging Co.","terms":"Net 30"}]}' };
   throw new Error(`unknown tool ${name}`);
 };
 
@@ -69,7 +69,7 @@ describe("Claude loop", () => {
     const r = await runClaudeLoop({ ...base, client, question: "Which invoices are due this week?" });
     expect(r.stop).toBe("end_turn");
     expect(r.turns).toBe(2);
-    expect(r.answer).toContain("Three invoices");
+    expect(r.answer).toContain("Ten invoices");
     const second = requests[1].messages;
     expect(second).toHaveLength(3); // question, the assistant's turn, the results
     const results = second[2].content as Anthropic.ToolResultBlockParam[];
@@ -85,7 +85,7 @@ describe("Claude loop", () => {
 
   it("returns one result per call, results first, and a failure as a result", async () => {
     const { client, requests } = recordedClaude("claude-parallel-one-fails");
-    const r = await runClaudeLoop({ ...base, client, question: "Is INV-8301 ready, and does INV-8302 match its PO?" });
+    const r = await runClaudeLoop({ ...base, client, question: "Is INV-8301 ready, and does INV-8316 match its PO?" });
     expect(r.stop).toBe("end_turn");
     const results = requests[1].messages[2].content as Anthropic.ToolResultBlockParam[];
     expect(results.map((b) => b.type)).toEqual(["tool_result", "tool_result"]);
@@ -241,7 +241,7 @@ describe("streaming", () => {
     const pieces: string[] = [];
     const out = await readClaudeStream(replay(), (p) => pieces.push(p));
     expect(pieces).toEqual(["Let me check ", "this week's invoices."]);
-    expect(out.toolCalls).toEqual([{ id: "toolu_01Lab20S2", name: "list_open_invoices", input: { vendor_id: null, due_on_or_before: "2027-04-04", page_size: null, page: null } }]);
+    expect(out.toolCalls).toEqual([{ id: "toolu_01Lab20S2", name: "list_open_invoices", input: { vendor_id: null, due_on_or_before: "2027-04-04", page_size: 10, page: null } }]);
     expect(out.stopReason).toBe("tool_use");
   });
 

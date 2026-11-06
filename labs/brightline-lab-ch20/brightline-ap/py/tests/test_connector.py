@@ -93,12 +93,14 @@ def test_paging_across_two_copies() -> None:
         p1 = call(first, "list_open_invoices", {"page_size": 5})["structuredContent"]
         p2 = call(second, "list_open_invoices", {"page": p1["next_page"]})["structuredContent"]
         p3 = call(first, "list_open_invoices", {"page": p2["next_page"]})["structuredContent"]
-    assert p1["total_count"] == 13
+        p4 = call(second, "list_open_invoices", {"page": p3["next_page"]})["structuredContent"]
+    assert p1["total_count"] == 16
     assert [i["invoice_number"] for i in p1["invoices"]] == ["INV-8301", "INV-8302", "INV-8303", "INV-8304", "INV-8305"]
     assert p1["invoices"][4]["due_date"] is None
     assert [i["invoice_number"] for i in p2["invoices"]] == ["INV-8306", "INV-8307", "INV-8308", "INV-8310", "INV-8311"]
-    assert [i["invoice_number"] for i in p3["invoices"]] == ["INV-8312", "INV-8314", "INV-8315"]
-    assert p3["next_page"] is None
+    assert [i["invoice_number"] for i in p3["invoices"]] == ["INV-8312", "INV-8314", "INV-8315", "INV-8316", "INV-8317"]
+    assert [i["invoice_number"] for i in p4["invoices"]] == ["INV-8318"]
+    assert p4["next_page"] is None
 
 
 def test_changed_foreign_and_expired_handles_are_refused() -> None:
@@ -141,7 +143,7 @@ def test_purchase_orders() -> None:
     assert missing["isError"] is True
     assert text(missing) == ("No purchase order for INV-8310. Policy: an invoice with no PO is held until the buyer raises one. "
                              "Call search_policy for the exact rule. Tell the AP lead. Do not treat it as ready.")
-    assert text(unknown) == "No purchase order PO-9999. Purchase orders run from PO-7001 to PO-7012."
+    assert text(unknown) == "No purchase order PO-9999. Purchase orders run from PO-7001 to PO-7014."
 
 
 def test_search_policy() -> None:

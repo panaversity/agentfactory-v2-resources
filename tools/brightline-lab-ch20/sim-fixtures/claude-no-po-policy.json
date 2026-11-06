@@ -7,7 +7,7 @@
     "content": [
       {
         "type": "thinking",
-        "thinking": "Ana asks what the policy says about small repairs, and wants the line. Search the policy, then cite what it returns.",
+        "thinking": "Ana asks what the policy says about an invoice with no purchase order, and wants the line. Search the policy, then cite what it returns.",
         "signature": "EqQBCkYIBxgCKkDsig3"
       },
       {
@@ -15,7 +15,7 @@
         "id": "toolu_01Lab20P1",
         "name": "search_policy",
         "input": {
-          "query": "small repairs",
+          "query": "invoice with no purchase order",
           "limit": null
         }
       }
@@ -38,7 +38,7 @@
     "content": [
       {
         "type": "text",
-        "text": "Purchases of $500.00 or less, such as a small repair, may be paid without a purchase order (purchasing.md:5).",
+        "text": "An invoice with no purchase order is held until the buyer raises one (po-matching.md:9).",
         "citations": null
       }
     ],

@@ -186,14 +186,23 @@ for (const lang of ["ts", "py"] as const) {
     for (const w of BRIGHTLINE_ONLY) if (all.includes(w)) leaks.push(`${tool}: "${w}"`);
   }
   row(`D9 ${lang} six Cedar Ridge calls contain nothing of Brightline's`, leaks.length === 0, leaks.join(", ") || "none");
-  // D10. Two companies at once through one copy, 100 pairs.
+  // D10. Two companies at once through one copy, 100 pairs. Each answer must be the first page that person
+  // got alone, and the two people's pages must differ, so a crossed answer shows. (Since Lab 20, Brightline's
+  // 16 open invoices equal Cedar Ridge's 16, so the counts alone no longer tell the two companies apart.)
+  const firstPage = (r: Awaited<ReturnType<typeof call>>): string => r.sc
+    ? JSON.stringify([r.sc.total_count, (r.sc.invoices as { invoice_number: string }[]).map((i) => i.invoice_number)])
+    : r.text.slice(0, 60);
+  const alone = { Ana: firstPage(await call(url, ana, "list_open_invoices", {})), Luis: firstPage(await call(url, luis, "list_open_invoices", {})) };
   const many = await Promise.all(Array.from({ length: 100 }, () => Promise.all([
     call(url, ana, "list_open_invoices", {}), call(url, luis, "list_open_invoices", {})])));
-  const wrong = many.reduce((n, [a, l]) => n + (a.sc?.total_count === 13 ? 0 : 1) + (l.sc?.total_count === 16 ? 0 : 1), 0);
   const kinds = new Map<string, number>();
-  for (const [a, l] of many) for (const [who, r, want] of [["Ana", a, 13], ["Luis", l, 16]] as const) if (r.sc?.total_count !== want) {
+  let wrong = 0;
+  for (const [a, l] of many) for (const [who, r] of [["Ana", a], ["Luis", l]] as const) if (firstPage(r) !== alone[who]) {
+    wrong++;
     const k = `${who}: ${r.sc ? `total_count ${r.sc.total_count}` : r.text.slice(0, 60)}`; kinds.set(k, (kinds.get(k) ?? 0) + 1); }
-  row(`D10 ${lang} Ana and Luis at once, 100 pairs`, wrong === 0, `${wrong} of 200 answers wrong${wrong ? ": " + [...kinds].map(([k, n]) => `${n} x ${k}`).join("; ") : ""}`);
+  row(`D10 ${lang} Ana and Luis at once, 100 pairs`, wrong === 0 && alone.Ana !== alone.Luis,
+    `${wrong} of 200 answers wrong${wrong ? ": " + [...kinds].map(([k, n]) => `${n} x ${k}`).join("; ") : ""}` +
+      (alone.Ana === alone.Luis ? "; Ana's and Luis's first pages are the same" : ""));
 }
 
 // --- The report ------------------------------------------------------------------------------------

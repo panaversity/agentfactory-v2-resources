@@ -16,7 +16,7 @@ test("every vendor row is valid", () => {
 
 test("every invoice row is valid, and blank due dates become null", () => {
   const { rows, problems } = loadCsv(readFileSync("data/invoices.csv", "utf8"), InvoiceSchema);
-  assert.equal(rows.length, 15);
+  assert.equal(rows.length, 18);
   assert.deepEqual(problems, []);
   assert.equal(rows.find((r) => r.invoice_number === "INV-8305")?.due_date, null);
 });

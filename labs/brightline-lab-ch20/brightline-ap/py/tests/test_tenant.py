@@ -22,7 +22,10 @@ from tests.test_connector import HANDLE_KEY, START_MS, rpc
 from tests.tokens import DEFAULT_JWKS, ISSUER, RESOURCE, sign
 
 SIGN_IN = "Sign in to use the Brightline AP connector."
-CEDAR_OPEN = 16  # Chapter 19: Cedar Ridge has its own data. Brightline has 13 open invoices.
+# Chapter 19: Cedar Ridge has its own data. Since Lab 20 both companies have 16 open invoices, so an answer
+# is known by its count and its first invoice: Brightline's INV-8301, Cedar Ridge's INV-6201.
+CEDAR_OPEN = 16
+BRIGHTLINE_OPEN = 16
 COMPANY_INPUT = "Unknown input company. The company comes only from your sign-in, never from a tool input."
 BELONGS = "This page handle belongs to another person or company. Call again without page."
 INVALID = "This page handle is not valid for this caller. Call list_open_invoices again without page to start from the first page."
@@ -104,9 +107,10 @@ def test_rule_2_two_companies_at_once_200_times() -> None:
             pairs = list(pool.map(pair, range(200)))
     wrong = 0
     for brightline, cedar in pairs:
-        if result(brightline).get("structuredContent", {}).get("total_count") != 13:
+        bl, cr = result(brightline).get("structuredContent", {}), result(cedar).get("structuredContent", {})
+        if bl.get("total_count") != BRIGHTLINE_OPEN or bl.get("invoices", [{}])[0].get("invoice_number") != "INV-8301":
             wrong += 1
-        if result(cedar).get("structuredContent", {}).get("total_count") != CEDAR_OPEN:
+        if cr.get("total_count") != CEDAR_OPEN or cr.get("invoices", [{}])[0].get("invoice_number") != "INV-6201":
             wrong += 1
     assert wrong == 0, f"{wrong} of 400 answers went to the wrong company"
 

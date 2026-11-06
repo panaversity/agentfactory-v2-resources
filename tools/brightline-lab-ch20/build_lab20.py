@@ -11,6 +11,12 @@ overlay: the editor-in-chief's lab20-start files (his zip is an overlay, not a c
          2026, so only dates from 2026-11-15 to 2027-01-31 move) and Ana Torres as Ana Morales. Then the
          files both repositories have are taken from merged/, written by hand from both sides.
 
+After the build, one Brightline (the book's change record, decisions 21 and 22, the editor's call of
+Friday, November 6, 2026) was made by hand, in the labs commit that follows 3674b83: his three extra
+invoices joined data/ as INV-8316 to INV-8318, data/practice/ went, the practice connector reads data/
+and docs/policies/, and the stories, recorded responses and tests follow. Re-running this script brings
+back his practice file and his numbers, so redo that commit's changes after it.
+
 His files that do not come over as they are:
   - package-lock.json: made again by npm from the merged package.json
   - py/requirements.txt: his pins go into Lab 19's uv project (py/pyproject.toml, py/uv.lock)

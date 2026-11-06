@@ -29,7 +29,7 @@ check "unit tests (Python)" "npm run -s test:loop:py >/dev/null 2>&1"
 check "git would ignore .secrets/" "grep -qx '.secrets/' .gitignore"
 ANTHROPIC_BASE_URL=http://127.0.0.1:8761 npm run -s ask -- --api claude --trace "Which invoices are due this week?" > ask-claude.log 2>&1 || true
 check "ask (TS, Claude): request, real tool call over MCP, end_turn" "grep -q 'stop: end_turn | turns: 2' ask-claude.log && grep -q 'INV-8301' ask-claude.log"
-check "ask (TS, Claude): the tool result came from the connector" "grep -q 'Midwest\\|412500' ask-claude.log"
+check "ask (TS, Claude): the tool result came from the connector, reading data/" "grep -q '482500' ask-claude.log && grep -q 'INV-8316' ask-claude.log"
 check "ask (TS, Claude): trace has 3 spans" "[ \$(wc -l < trace.jsonl) -eq 3 ]"
 check "ask (TS, Claude): no key or token in the log" "! grep -q 'sk-ant-sim\\|sim-token' ask-claude.log"
 OPENAI_BASE_URL=http://127.0.0.1:8762 npm run -s ask -- --api openai "Which invoices are due this week?" > ask-openai.log 2>&1 || true
