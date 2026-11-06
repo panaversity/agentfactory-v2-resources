@@ -85,7 +85,9 @@ async def stateful(question: str) -> None:
     print("\n=== What this program sent, call by call ===")
     print(json.dumps(sent_by_us, indent=2))
     print(f"\nThe model's tool calls and reasoning are not in that list. They live under response {previous}.")
-    print(f"Delete the stored responses when you finish (F4): {', '.join(stored_ids)}")
+    for rid in stored_ids:  # kept 30 days by default (F4), so the run deletes its own
+        await client.responses.delete(rid)
+    print(f"Deleted the stored responses: {', '.join(stored_ids)}")
 
 
 if __name__ == "__main__":
