@@ -19,7 +19,7 @@ From *The AI Agent Factory*, Chapter 20, for the coding agents working in this r
 | `src/loop/` | The loop in TypeScript: `claude.ts`, `openai.ts`, `tools.ts`, `limits.ts`, `trace.ts`, `stream.ts`, and `config.json` with `config.ts`, which reads it (Python reads the same `config.json` directly) |
 | `py/brightline_ap/loop/` | The same in Python: `claude_loop.py`, `openai_loop.py`, `tools.py`, `limits.py`, `trace.py`, `stream.py` |
 | `scripts/` (TypeScript), and `py/brightline_ap/ask.py` and `py/brightline_ap/experiments.py` (Python) | `ask`, `break`, `stateful` and `stream:demo`, in both languages |
-| `py/brightline_ap/practice_connector.py`, `data/practice/` | The local practice connector and its data (route B) |
+| `py/brightline_ap/practice_connector.py` | The local practice connector (route B), which reads `data/` and `docs/policies/` |
 | `tests/`, `py/tests/`, `tests/fixtures/loop/` | The tests, and the recorded responses both languages replay |
 
 **Secrets.** Nothing in this table is ever typed into a chat, printed or committed. Git ignores `.secrets/`.
