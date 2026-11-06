@@ -13,7 +13,7 @@ const keyLine = readFileSync(".secrets/anthropic.env", "utf8").match(/ANTHROPIC_
 const apiKey = which === "bad-key" ? "sk-ant-not-a-real-key" : keyLine?.[1].trim();
 const client = new Anthropic({ apiKey, maxRetries: 0 }); // no retries, so you see the first answer
 const question: Anthropic.MessageParam = { role: "user", content: "Which invoices are due this week?" };
-const base = { model: MODELS.claude, max_tokens: 1024, tools: claudeTools(), messages: [question] };
+const base = { model: MODELS.claude, max_tokens: 1024, system: readFileSync("prompts/ap-worker.v1.md", "utf8"), tools: claudeTools(), messages: [question] };
 
 function report(error: unknown) {
   if (error instanceof Anthropic.APIError) {

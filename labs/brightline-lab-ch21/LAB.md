@@ -488,7 +488,7 @@ The callback that uses it:
 
 **Then modify.** Ana says a flag must also never be raised on an invoice that is already paid. Predict: where would that check belong, in this rule or in the connector? Ask the agent for its answer and its reason, and write yours beside it. ([Chapter 19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/each-companys-own-rules-and-data/)'s answer: the rule can check the shape of the request, but only the connector and the database know whether an invoice is paid.)
 
-**What good looks like:** your rule's sentences each match a line (or you found a gap, and the agent proposes a test for it). The allow run shows `hook:` then `permission: mcp__local__flag_invoice -> allow`, and a line appears in `out/flags.jsonl`. The deny run shows `permission: … -> deny`, a `tool_result (error)`, and an answer that says the flag was refused. A real model may instead refuse with no tool call, or flag the invoices one by one, which rule 1 allows: record which.
+**What good looks like:** your rule's sentences each match a line (or you found a gap, and the agent proposes a test for it). The allow run shows `hook:` then `permission: mcp__local__flag_invoice -> allow`, and a line appears in `out/flags.jsonl`. The deny run shows `permission: … -> deny`, a `tool_result (error)`, and an answer that says the flag was refused. A real model may instead decline with no tool call, or flag the invoices one by one, which rule 1 allows: record which.
 
 **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-6.md).
 
