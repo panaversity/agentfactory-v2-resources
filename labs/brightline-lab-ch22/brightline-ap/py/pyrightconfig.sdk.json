@@ -1,0 +1,6 @@
+{
+  "include": ["brightline_ap/sdk", "brightline_ap/sdk_ask.py"],
+  "typeCheckingMode": "standard",
+  "venvPath": ".",
+  "venv": ".venv"
+}

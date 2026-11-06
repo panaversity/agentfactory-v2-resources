@@ -1,0 +1,54 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  // The AP portal (Lab 22). Only its staging and matrix Workers are deployed in this lab:
+  // `npm run deploy:staging` in apps/portal/ publishes brightline-portal-staging (Task 10a), and the
+  // matrix copy, brightline-portal-matrix, is deployed with each planted bug (Task 12b).
+  // Production is an extension: Task 21 writes it up in docs/deploy.md, and this lab does not run it.
+  "name": "brightline-portal",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Settings, not secrets. Replace "your-subdomain" with your workers.dev subdomain, from docs/addresses.md.
+  // AP_ISSUER is the sign-in server's issuer, AP_RESOURCE the connector's address (every access token's aud).
+  "vars": {
+    "AP_ISSUER": "https://brightline-auth.your-subdomain.workers.dev/api/auth",
+    "AP_RESOURCE": "https://brightline-ap-ts.your-subdomain.workers.dev/mcp",
+    "PORTAL_URL": "https://brightline-portal.your-subdomain.workers.dev"
+  },
+  // The sign-in server, through a service binding: a Worker cannot fetch another of the same account by its
+  // workers.dev address. The portal sends its token requests through env.AUTH.fetch (src/sign-in.ts).
+  "services": [{ "binding": "AUTH", "service": "brightline-auth" }],
+  // Secrets, never here: you set them with `npx wrangler secret put <NAME> --env staging` in apps/portal/,
+  // pasting each value at the prompt (Tasks 9, 10a and 17 say where each comes from). Agents may not run that command.
+  "env": {
+    "staging": {
+      "workers_dev": true,
+      "preview_urls": false,
+      "observability": { "enabled": true, "head_sampling_rate": 1 },
+      "vars": {
+        "AP_ISSUER": "https://brightline-auth-staging.your-subdomain.workers.dev/api/auth",
+        "AP_RESOURCE": "https://brightline-ap-ts-staging.your-subdomain.workers.dev/mcp",
+        "PORTAL_URL": "https://brightline-portal-staging.your-subdomain.workers.dev"
+      },
+      "services": [{ "binding": "AUTH", "service": "brightline-auth-staging" }]
+      // Task 9 adds the portal's own D1 database here, for its tables (never the sign-in server's):
+      // "d1_databases": [{ "binding": "DB", "database_name": "brightline-portal-staging", "database_id": "<made by wrangler d1 create>", "migrations_dir": "migrations" }]
+    },
+    "matrix": {
+      // The session matrix's own copy (Task 12): the same code, against staging's sign-in server and connector.
+      "workers_dev": true,
+      "preview_urls": false,
+      "observability": { "enabled": true, "head_sampling_rate": 1 },
+      "vars": {
+        "AP_ISSUER": "https://brightline-auth-staging.your-subdomain.workers.dev/api/auth",
+        "AP_RESOURCE": "https://brightline-ap-ts-staging.your-subdomain.workers.dev/mcp",
+        "PORTAL_URL": "https://brightline-portal-matrix.your-subdomain.workers.dev"
+      },
+      "services": [{ "binding": "AUTH", "service": "brightline-auth-staging" }]
+      // Task 9 adds the same D1 database here as under staging: the matrix copy works on staging's portal tables.
+      // Its secrets are staging's, which you set once with --env matrix (Task 12b).
+    }
+  }
+}

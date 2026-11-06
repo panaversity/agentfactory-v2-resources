@@ -1,0 +1,12 @@
+{
+  "include": [
+    "brightline_ap/loop",
+    "brightline_ap/ask.py",
+    "brightline_ap/experiments.py",
+    "brightline_ap/practice_connector.py",
+    "tests/test_loop.py"
+  ],
+  "typeCheckingMode": "standard",
+  "venvPath": ".",
+  "venv": ".venv"
+}
