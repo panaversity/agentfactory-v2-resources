@@ -19,7 +19,7 @@ From *The AI Agent Factory*, Chapter 21, for the coding agents working in this r
 
 **Merging.** Six of Lab 20's files carry Lab 21's lines too: `package.json` (and `package-lock.json`), `py/pyproject.toml` (and `py/uv.lock`), `AGENTS.md`, `README.md`, `tsconfig.json` and `.gitignore`. Each is Lab 20's file with Lab 21's lines added. If you changed one of them in Lab 20, ask your agent to make your change again. Lab 21 has no practice connector of its own: it uses Lab 20's, and Lab 20's data, unchanged.
 
-*Pins.* `@anthropic-ai/claude-agent-sdk` 0.3.318, `@openai/agents` 0.21.0, `@anthropic-ai/sdk` 1.5.0, `openai` 7.51.0, `@modelcontextprotocol/sdk` 1.32.2, `zod` 4.6.7. Python: `claude-agent-sdk` 0.2.178, `openai-agents` 0.24.0, `anthropic` 2.5.0, `openai` 3.46.0, `mcp` 2.3.0.
+*Pins.* `@anthropic-ai/claude-agent-sdk` 0.3.318, `@openai/agents` 0.21.0, `@anthropic-ai/sdk` 1.5.0, `openai` 7.51.0, `@modelcontextprotocol/sdk` 1.32.2, `zod` 4.6.7. Python: `claude-agent-sdk` 0.2.178, `openai-agents` 0.24.0, `anthropic` 2.5.0, `openai` 3.46.0, `mcp` 2.3.0 (through `py/uv.lock`).
 
 ## F1. Keys and spending limits
 
@@ -54,7 +54,7 @@ Reuse Lab 20's keys and limits (Chapter 20, F1). If you skipped Lab 20, make one
 
 ## F6. Ollama and an open model
 
-As Chapter 20's F6: Ollama on `127.0.0.1:11434` only, the model pinned in `src/sdk/config.json` as `models.open` (`qwen3:8b` until the authors' run). `npm run sdk -- --sdk open` points the second SDK's `OpenAIProvider` at `http://127.0.0.1:11434/v1/` with the placeholder key `ollama`, on the Responses API, with `store: false` and no encrypted reasoning. Tracing stays off: with it on, traces would go to OpenAI. Ollama gives a model a 4k context on a computer with less than 24 GiB of graphics memory, and says agents need at least 64000 tokens (Checked). Too small a context can keep a small model from calling tools, so start Ollama with the pinned model's whole window: `OLLAMA_CONTEXT_LENGTH=40960 ollama serve`, or the context slider in the Ollama app. `ollama ps` shows the context in use. Stop the server when you finish.
+As Chapter 20's F6: Ollama on `127.0.0.1:11434` only, the model pinned in `src/sdk/config.json` as `models.open` (`qwen3:8b` until the authors' run). `npm run sdk -- --sdk open` points the second SDK's `OpenAIProvider` at `http://127.0.0.1:11434/v1/` with the placeholder key `ollama`, on the Responses API, with `store: false` and no encrypted reasoning. Tracing stays off: with it on, traces would go to OpenAI. Ollama gives a model a 4k context on a computer with less than 24 GiB of graphics memory, and says agents need at least 64000 tokens (Checked). Too small a context can keep a small model from calling tools, so start Ollama with the pinned model's whole window, which Ollama lists as 40K (Checked): `OLLAMA_CONTEXT_LENGTH=40960 ollama serve`, or the context slider in the Ollama app. `ollama ps` shows the context in use. Stop the server when you finish.
 
 ## F7. The tool runner's default, on the wire
 

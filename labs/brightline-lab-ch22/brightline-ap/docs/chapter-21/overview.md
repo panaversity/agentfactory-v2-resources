@@ -53,7 +53,7 @@ After this chapter you can answer the four questions for any SDK:
 | **How you see a run** | A stream of messages as it happens | A result with its history at the end |
 | **How the lab decides a tool with an effect** | Your rule, as a callback: the SDK asks it and carries on at once | Your rule, as an approval: the run pauses and hands the call back to your code |
 | **What stops a runaway run** | A turn limit and a cost cap. Time is yours | A turn limit. Cost and time are yours |
-| **What you must switch off** | Built-in tools, settings files, auto memory, other servers, the inherited environment, session files | Tracing, and storage on the provider's side |
+| **What you must switch off** | Built-in tools, settings files, auto memory (notes the harness keeps for later runs), other servers, the inherited environment, session files | Tracing, and storage on the provider's side |
 
 **The one sentence to remember.** An SDK may supply defaults for tools, limits, state and what counts as done, but you, the owner, choose, check and enforce the rules the business needs.
 
@@ -74,7 +74,7 @@ None of this was a bug. Each was a default, written in the documentation. This c
 | **C. How do I know the run was safe and successful?** | 21.6 to 21.8, then Sitting 3 | Limits and an answer check tested, every copy of a conversation found |
 | **D. What must I still own?** | 21.9, then Sitting 4 | The port to an open model, and a reviewed pull request |
 
-**Time and cost.** The lab's core path takes about 4 hours 35 minutes, or 5 hours 50 with four optional tasks. It should cost under $1 on each API, and the open-model port is free. **Managers** can read 21.1, 21.2, 21.5, 21.9 and the invariant in 21.10.
+**Time and cost.** The lab's core path takes about 4 hours 35 minutes, or 5 hours 50 with four optional tasks. It should cost under $1 on each API, and the open-model port is free. **Managers** can read 21.1, 21.2, 21.5, 21.9 and the invariant in 21.10, the rule that holds whatever the product.
 
 ## What you will build
 
@@ -87,7 +87,7 @@ None of this was a bug. Each was a default, written in the documentation. This c
 
 **Where you are.** At the end of Chapter 20, Brightline's AP worker (AP is accounts payable, the team that checks and pays bills) runs on a loop you can follow line by line. It reaches Brightline's connector over MCP with four read-only tools, and it has a turn limit, a cost cap, a time limit and a trace. Ana Morales, Brightline's AP analyst, asks the test questions.
 
-**What you build.** Coding agents write every file. You specify, predict and approve. You end with the same worker on both SDKs, with every built-in tool off, one new tool that changes something (`flag_invoice`, which holds an invoice's payment) decided by one rule you wrote, an answer check, and nothing kept on the provider's side. You fill in the mapping table, and port the second SDK's worker to an open model on your own computer. The worker still runs as you, with a short-lived test token. Chapter 22 gives each person their own.
+**What you build.** Coding agents write every file. You specify, predict and approve. You end with the same worker on both SDKs, with every built-in tool off, one new tool that changes something (`flag_invoice`, which holds an invoice's payment) decided by one rule you wrote, an answer check, and no conversation stored on the provider's side. You fill in the mapping table, and port the second SDK's worker to an open model on your own computer. The worker still runs as you, with a short-lived test token. Chapter 22 gives each person their own.
 
 **Every word is defined where it first appears.** The full word list is on the companion page, **Chapter 21 reference**.
 

@@ -46,6 +46,7 @@
       "Bash(npm run break*)",
       "Bash(npm run stateful*)",
       "Bash(npm run stream:demo*)",
+      "Bash(npm run sdk*)",
       "Bash(ant apply*)",
       "Bash(npm run agent:apply*)",
       "Bash(npm run session*)",
