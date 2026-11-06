@@ -36,7 +36,8 @@ HERE = pathlib.Path(__file__).resolve().parent
 NOT_COPIED = {"package-lock.json", "py/requirements.txt", "LAB21-START-REQUIRES.md", ".secrets/README.txt",
               "pyrightconfig.sdk.json"}
 NOT_COPIED_PREFIX = ("docs/chapter-21/",)
-MERGED = {".gitignore", "AGENTS.md", "README.md", "package.json", "py/pyproject.toml", "tsconfig.json"}
+MERGED = {".gitignore", "AGENTS.md", "README.md", "package.json", "py/pyproject.toml", "tsconfig.json",
+          ".claude/settings.json", "opencode.jsonc", "py/brightline_ap/practice_connector.py"}
 RENAMED = {"tests/sdk.test.ts": "tests/sdk.spec.ts"}
 
 FLAG_FIX = [("Pay it on the due date (payments.md:2).", "Pay it once it matches its PO (po-matching.md:5)."),

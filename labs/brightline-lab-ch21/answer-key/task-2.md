@@ -8,4 +8,4 @@ For you, after the task. Open it in a text editor, never in the agent. Every liv
 
 **Seen in the offline run:** n/a.
 
-Compare your first column with `answer-key/files/docs/sdk-map.md`. Your words will differ.
+Compare your "What it did" column with 21.2's table. Your words will differ, and each row should name a line of your own Chapter 20 code. The finished table waits for Task 15.

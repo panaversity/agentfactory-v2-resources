@@ -62,4 +62,4 @@ The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Pyt
 | `tests/sdk.spec.ts`, `py/tests/test_sdk.py` | The worker's offline tests |
 | `prompts/ap-worker-sdk.v1.md` | The worker's instructions |
 | `docs/worker-spec.md`, `docs/sdk-map.md`, `ports/ch21.md` | The worker's portable specification, the mapping table you fill in, and your record |
-| `docs/chapter-21/` | The chapter, its lab page and its reference page, for your coding agents to read |
+| `docs/chapter-21/` | The chapter's concepts and its reference page, as text, for your coding agents to read |

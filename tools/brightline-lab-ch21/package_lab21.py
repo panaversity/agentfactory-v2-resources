@@ -117,7 +117,8 @@ HEAD = ("For you, after the task. Open it in a text editor, never in the agent. 
         "type checks, the tests, and both SDKs' runs against the practice connector with a stand-in model, were "
         "checked on macOS on November 6, 2026.")
 NOTES = {
-    "2": "Compare your first column with `answer-key/files/docs/sdk-map.md`. Your words will differ.",
+    "2": ("Compare your \"What it did\" column with 21.2's table. Your words will differ, and each row should "
+          "name a line of your own Chapter 20 code. The finished table waits for Task 15."),
     "15": ("Compare your table with `answer-key/files/docs/sdk-map.md`, which is the reference page's finished table, "
            "and your record with `answer-key/files/ports/ch21.md`. Your wording will differ."),
 }

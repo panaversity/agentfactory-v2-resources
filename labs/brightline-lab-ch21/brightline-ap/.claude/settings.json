@@ -45,7 +45,8 @@
       "Bash(npm run ask*)",
       "Bash(npm run break*)",
       "Bash(npm run stateful*)",
-      "Bash(npm run stream:demo*)"
+      "Bash(npm run stream:demo*)",
+      "Bash(npm run sdk*)"
     ],
     "deny": [
       "Edit(data/**)",

@@ -13,6 +13,8 @@ beside them in Lab 20's conventions:
   - py/pyproject.toml: his two Python pins, and his files kept out of the strict check, as Lab 20's loop is.
   - tsconfig.json: his TypeScript kept out of Lab 19's check; tsconfig.sdk.json checks it (typecheck:sdk).
   - .gitignore: out/, where flag_invoice writes. AGENTS.md and README.md: a Lab 21 section each.
+  - .claude/settings.json and opencode.jsonc ask before `npm run sdk`, as they do before Lab 20's live scripts,
+    and practice_connector.py names Lab 21's Task 9, which breaks its policy tool (the lab follower, Gate 3).
 His package-lock.json is made again by npm, and py/uv.lock by uv, from these.
 """
 import json
@@ -112,6 +114,21 @@ The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Pyt
 | `tests/sdk.spec.ts`, `py/tests/test_sdk.py` | The worker's offline tests |
 | `prompts/ap-worker-sdk.v1.md` | The worker's instructions |
 | `docs/worker-spec.md`, `docs/sdk-map.md`, `ports/ch21.md` | The worker's portable specification, the mapping table you fill in, and your record |
-| `docs/chapter-21/` | The chapter, its lab page and its reference page, for your coding agents to read |
+| `docs/chapter-21/` | The chapter's concepts and its reference page, as text, for your coding agents to read |
 """)
+# ---- .claude/settings.json and opencode.jsonc: Lab 21's live calls ask, as Lab 20's do ---------
+cs = json.loads((OURS / ".claude/settings.json").read_text())
+asks = cs["permissions"]["ask"]
+asks.insert(asks.index("Bash(npm run stream:demo*)") + 1, "Bash(npm run sdk*)")
+put(".claude/settings.json", json.dumps(cs, indent=2) + "\n")
+oc = (OURS / "opencode.jsonc").read_text()
+oc = once(oc, '    { "action": "shell", "resource": "npm run stream:demo*", "effect": "ask" },\n',
+          '    { "action": "shell", "resource": "npm run stream:demo*", "effect": "ask" },\n'
+          '    // The agent SDKs (Lab 21): live model calls always ask\n'
+          '    { "action": "shell", "resource": "npm run sdk*", "effect": "ask" },\n')
+put("opencode.jsonc", oc)
+
+# ---- py/brightline_ap/practice_connector.py: the task that breaks its policy tool ------------
+pc = (OURS / "py/brightline_ap/practice_connector.py").read_text()
+put("py/brightline_ap/practice_connector.py", once(pc, "(Lab 20 Task 8, Lab 21 Task 7).", "(Lab 20 Task 8, Lab 21 Task 9)."))
 print("merged:", sorted(str(p.relative_to(OUT)) for p in OUT.rglob("*") if p.is_file()))
