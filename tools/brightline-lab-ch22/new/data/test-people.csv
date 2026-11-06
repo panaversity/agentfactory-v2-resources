@@ -1,0 +1,5 @@
+person_id,name,email,company_id,note
+ana,Ana Morales,ana@brightline.example,org_brightline,Brightline's AP analyst
+luis,Luis Moreno,luis@cedarridge.example,org_cedar,Cedar Ridge's AP lead
+dana,Dana,dana@cedarridge.example,org_cedar,A Cedar Ridge test person; removed in session-matrix row S5 (Task 12)
+sam,Sam Keller,sam@junipertrail.example,org_juniper,Juniper Trail's owner (Lab 18); offboarded with Juniper Trail in row S6
