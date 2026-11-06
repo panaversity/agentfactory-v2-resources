@@ -70,10 +70,10 @@ Lab 22 hosts the AP worker on a platform that runs its loop, and builds Brightli
 
 - `apps/portal/`: the portal's skeleton, a Cloudflare Worker whose routes answer 501 until the lab's tasks fill them in. Its offline tests: `npm run test:portal`, `npm run typecheck:portal`.
 - `src/rules/cites.ts`: Lab 21's rule 2, in a file of its own, so the portal can use it. `src/sdk/policy.ts` takes it from there.
-- `data/companies.csv` and `data/test-people.csv`: every company's id, and the test people a test token may be made for.
+- `data/companies.csv` and `data/test-people.csv`: every company's id and names, and the test people a test token may be made for.
 - `skills/invoice-triage/`: Chapter 16's skill, copied unchanged from `plugin/skills/invoice-triage/`, for the worker as files. Change both together, or neither.
-- A second note on Cedar Ridge's vendor V102, planted for Task 8's injection check.
-- `agents/`, `environments/`, `deployments/` and `ports/`: empty until the lab's tasks write them.
+- A planted note on Cedar Ridge's vendor V102, added to its own note, for Task 8's injection check and the page check of row S7 (Task 12).
+- `agents/`, `environments/` and `deployments/`: empty until the lab's tasks write them. `ports/` keeps the earlier chapters' notes, and Lab 22 adds `ports/ch22.md`.
 - `docs/chapter-22/`: the chapter's concepts and field guide as text, for your agents.
 
-Labs 20 and 21's offline tests still pass: `npm run test:loop` and `npm run test:sdk` (47 in TypeScript), and `npm run test:loop:py` and `npm run test:sdk:py` (35 in Python).
+Labs 20 and 21's offline tests still pass: `npm run test:loop` and `npm run test:sdk` (47 in TypeScript), and `npm run test:loop:py` and `npm run test:sdk:py` (35 in Python). So do the portal skeleton's: `npm run test:portal` (20).

@@ -12,10 +12,10 @@ describe("routes at lab22-start", () => {
     ["GET", "/sign-in", "Task 10a"],
     ["GET", "/callback", "Task 10a"],
     ["POST", "/question", "Task 10b"],
-    ["GET", "/sessions/sesn_123/stream", "Task 10b"],
-    ["POST", "/sessions/sesn_123/confirmation", "Task 10b"],
-    ["POST", "/sessions/sesn_123/interrupt", "Task 10b"],
-    ["POST", "/webhooks", "Task 17"],
+    ["GET", "/sessions/sesn_123/stream", "Task 10c"],
+    ["POST", "/sessions/sesn_123/confirmation", "Task 10c"],
+    ["POST", "/sessions/sesn_123/interrupt", "Task 10c"],
+    ["POST", "/hooks/claude", "Task 17"],
   ])("%s %s answers 501 and names %s", async (method, path, task) => {
     const res = await call(method, path);
     expect(res.status).toBe(501);

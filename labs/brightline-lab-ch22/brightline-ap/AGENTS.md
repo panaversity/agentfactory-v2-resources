@@ -61,7 +61,7 @@
 - Every session gets a budget. Refuse to create one without `--budget-cents`.
 - Never print, read aloud, copy or summarize anything in `.secrets/`. Load a secret into one command's environment from its file.
 - Never put a company or a person's name in `agents/` or `environments/`.
-- The portal's client secret, its platform key and the webhook signing secret live only as Worker secrets. The person sets each one in their own terminal with `npx wrangler secret put <NAME> --env staging` in `apps/portal/`, reading it from its file in `.secrets/`. The agents' settings forbid that command.
+- The portal's client secret, its platform key and the webhook signing secret live only as Worker secrets. The person sets each one in their own terminal with `npx wrangler secret put <NAME> --env staging` in `apps/portal/`, pasting its value at the prompt. The agents' settings forbid that command.
 - Test tokens come only from `npm run token:test`, for a person in `data/test-people.csv`, on staging. Each lasts 10 minutes, as every sign-in token does (Chapter 18).
 - Never use `ant apply --force` or remove a budget without the builder's explicit approval in this session.
 - Run the portal's checks before you say a change to it is done: `npm run typecheck:portal` and `npm run test:portal`. When a change touches Labs 20 and 21's code, run their four tests too.

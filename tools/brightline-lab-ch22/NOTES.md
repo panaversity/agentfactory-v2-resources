@@ -42,6 +42,7 @@ data/companies.csv (T2), apps/portal skeleton (T9/10a/10c), sitting tags (stop r
 - D10 data/test-people.csv (ana, luis, dana, sam) + data/companies.csv (org_brightline, org_cedar, org_juniper,
   org_conformance). Dana added on staging by Task 12 (tenant:add, member). Sam = Lab 18's Juniper owner.
 - D11 planted note: second V102 row in data-cedar/vendor-notes.csv; Task 8 reloads Cedar Ridge on staging.
+  WRONG, fixed in D22: vendor_notes' key is (tenant_id, vendor_id), so a second row stops tenant:load.
 - D12 AGENTS.md: + "## Hosted agents (Chapter 22)". Settings: ask `ant apply*` (no prefix for "without --dry-run"),
   vault calls, `npm run session*`; .secrets already denied.
 - D13 Task 0: git init + tag lab22-start (plain folder); npm ci; cd py && uv sync --locked;
@@ -62,3 +63,32 @@ data/companies.csv (T2), apps/portal skeleton (T9/10a/10c), sitting tags (stop r
 - Tests on the built folder (6 Nov): typecheck, typecheck:sdk, typecheck:py, typecheck:sdk:py, typecheck:portal clean;
   test:loop 32, test:sdk 15, test:loop:py 22, test:sdk:py 13, test:portal 20, npm test 4, test:auth 28,
   test:hello-auth 7, check:plugin ok. Not run: Lab 19's database tests (no Postgres running; one Cedar note row added).
+
+## After the fresh lab reader (6 Nov 2026, Gate 3's lab side)
+- D22 the planted note is ONE V102 row: V102's own note, then his text, then S7's payload
+  `<img src=x onerror=alert(1)>` (one note per vendor). Proven on a local Postgres 17 + pgvector: migrations,
+  db:passwords, tenant:load for org_brightline (data), org_cedar (data-cedar), org_conformance; check:roles,
+  check:queries, npm test 4, test:py 83, test:servers 46, test:auth 28, test:hello-auth 7, matrix:data 25,
+  eval:retrieval, check:deploy 25 pass. A second V102 row: "Key (org_cedar, V102) already exists".
+  conformance: 80 of 81; A4 lists 16 open invoices in one copy and 13 in the other, the same with Lab 21's own
+  notes, so it is Lab 20's (data-conformance/ keeps 13 while data/ has 16): reported, not fixed here.
+- D23 Task 0: step 4 follows docs/chapter-18/F8.md steps 1 to 10 (tenant:add for Brightline, Cedar Ridge and
+  Conformance Test Co.; client:ci), as Lab 19's Task 16. By hand first names neon.env, embeddings.env and
+  cloudflare-token (Chapter 19's F2 and F4, Chapter 18's F8); a Lab 19 reader who reuses copies their .secrets/.
+  Step 7 sets the repository's secrets and variable from docs/deploy.md (ci.yml needs NEON_*). Step 6 writes four
+  addresses (brightline-portal-staging and brightline-portal-matrix).
+- D24 the reader runs every wrangler secret put, including --env matrix (Task 12b) and the webhook signing secret
+  (Task 17): AGENTS.md, the portal README and wrangler.jsonc say "pasting its value at the prompt".
+- D25 portal skeleton: POST /hooks/claude (Task 17, F5); stream, confirmation and interrupt name Task 10c;
+  wrangler.jsonc: the matrix copy is Task 12b's, production is an extension (Task 21, not run), and env.matrix
+  gets the same D1 database as staging (comment for Task 9).
+- D26 data/companies.csv gains short_name (Brightline, Cedar Ridge, Juniper Trail): Task 2's check must catch
+  bug 4's "You work for Brightline". data/test-people.csv's first column is `person` (token:test's --person),
+  not F4's person_id; its notes say who is added when.
+- D27 the stop rule (D5): "compare with the key, carry on once they match" could never be met (a key repeats What
+  good looks like). Now: record it and do not build on it. A way forward past a platform failure is the
+  editor-in-chief's question (his end-of-sitting tags cannot ship in a plain folder).
+- D28 Task 12's tenant:offboard also pauses every schedule that uses an archived vault (S6's rule, as D3 said).
+- D29 keys: the four stop-rule paragraphs, Task 0's table, 10a's check, 5 and 14 (carried), 12b's bug 7
+  ("in the session's first message", as expected.md); answer-key/README: the task keys are not in the zip.
+- D30 the zip README says uv 0.11.32, as LAB.md.

@@ -40,12 +40,13 @@ while IFS= read -r f; do
 done < <(cd "$BASE" && find . -type f | sed "s|^\./|$BASE/|" | sort)
 say "Lab 21's files unchanged at lab22-start: $same"
 
-# Each merged file still holds every line Lab 21 had (Lab 22 only adds), except the two planned replacements.
+# Each merged file still holds every line Lab 21 had (Lab 22 only adds), except the three planned replacements.
 for rel in $MERGED; do
   [ "$rel" = package-lock.json ] && continue
   missing=$(comm -23 <(sort -u "$BASE/$rel") <(git show "lab22-start:$rel" | sort -u))
   case "$rel" in
     src/sdk/policy.ts) expect=$(printf '%s\n' "// Rule 2, in plain words: an answer must cite at least one policy line, written as (file.md:N)." "export function citesPolicyLine(answer: string): boolean {" "  return /\\([a-z0-9-]+\\.md:\\d+\\)/i.test(answer);" | sort -u) ;;
+    data-cedar/vendor-notes.csv) expect="V102,Ships same day for orders before noon." ;;   # one note per vendor: V102's grows
     package.json|.claude/settings.json) expect=$(printf '%s\n' "$missing" | grep -E '^[[:space:]]*"(typecheck:sdk:py|servers/auth|Bash\(npm run stream:demo\*\)|Bash\(npm run sdk\*\))' ) ;;
     *) expect="" ;;
   esac

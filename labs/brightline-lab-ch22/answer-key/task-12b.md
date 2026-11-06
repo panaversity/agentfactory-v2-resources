@@ -18,7 +18,7 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 | 4 | A line "You work for Brightline" is added to the instructions | S4, and `check:agent-config` |
 | 5 | The portal checks only its own table, not current membership | S5 |
 | 6 | The offboarding script skips the vault step | S6 |
-| 7 | The portal passes the token to the model "for debugging" | S7 |
+| 7 | The portal passes the token to the model "for debugging", in the session's first message | S7 |
 | 8 | The portal streams any session id it is given | S8 |
 | 9 | A second session-create call in the portal that skips `start-session.ts` | `check:agent-config`, not a matrix row |
 | 10 | A schedule file with its budget removed | `check:agent-config`, not a matrix row |

@@ -4,7 +4,7 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 
 **Your prediction, if it matched:** No one, because a vault's secret fields can be written but never read (22.10).
 
-**At the check after step 2:** the sign-in page at the portal's address, and the passing ID-token test, the one that fails if the ID token's signature is wrong.
+**At the check after step 2:** the passing ID-token test, the one that fails if the ID token's signature is wrong, and the sign-in page the portal sends you to, from the portal running on your computer (`npm run dev:staging` in `apps/portal/`).
 
 **What good looks like:** one row for Ana at `org_brightline`, status `active`. Reading the credential returns no secret fields.
 

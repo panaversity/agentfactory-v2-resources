@@ -2,8 +2,8 @@
   "$schema": "../../node_modules/wrangler/config-schema.json",
   // The AP portal (Lab 22). Only its staging and matrix Workers are deployed in this lab:
   // `npm run deploy:staging` in apps/portal/ publishes brightline-portal-staging (Task 10a), and the
-  // session matrix deploys brightline-portal-matrix with its planted bugs (Tasks 12 and 12b).
-  // Production is deployed in Task 21, as docs/deploy.md says.
+  // matrix copy, brightline-portal-matrix, is deployed with each planted bug (Task 12b).
+  // Production is an extension: Task 21 writes it up in docs/deploy.md, and this lab does not run it.
   "name": "brightline-portal",
   "main": "src/index.ts",
   "compatibility_date": "2026-10-01",
@@ -21,7 +21,7 @@
   // workers.dev address. The portal sends its token requests through env.AUTH.fetch (src/sign-in.ts).
   "services": [{ "binding": "AUTH", "service": "brightline-auth" }],
   // Secrets, never here: you set them with `npx wrangler secret put <NAME> --env staging` in apps/portal/,
-  // reading each from its file in .secrets/ (Tasks 9, 10a and 17). Agents may not run that command.
+  // pasting each value at the prompt (Tasks 9, 10a and 17 say where each comes from). Agents may not run that command.
   "env": {
     "staging": {
       "workers_dev": true,
@@ -47,6 +47,8 @@
         "PORTAL_URL": "https://brightline-portal-matrix.your-subdomain.workers.dev"
       },
       "services": [{ "binding": "AUTH", "service": "brightline-auth-staging" }]
+      // Task 9 adds the same D1 database here as under staging: the matrix copy works on staging's portal tables.
+      // Its secrets are staging's, which you set once with --env matrix (Task 12b).
     }
   }
 }

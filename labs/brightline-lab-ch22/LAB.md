@@ -25,7 +25,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **The date in this lab** is Monday, April 5, 2027, a week after Lab 19 and four days after Lab 21 (Thursday, April 1).
 
-**A note on this lab.** The authors have not yet run this lab end to end. If a menu name or a message differs a little from what a task describes, trust what you see, and record it in `ports/ch22.md`. **When a task lists two results, either is fine.** Some tasks say "Either counts" or "not yet confirmed": those are accepted variations, not differences. **One stop rule:** if Task 0's step 5, Task 3, Task 6 or Task 7 does something different from **What good looks like**, stop there. An example is a session that cannot reach the connector at all. Record what you saw, and do not build on it. To carry on anyway, compare your work with that task's answer key yourself, in a text editor and never in the agent. Carry on once they match. Every later task depends on that step. Task 0's step 5 and Task 3 are about reaching the platform, and Tasks 6 and 7 are about reaching the connector. It is not your mistake.
+**A note on this lab.** The authors have not yet run this lab end to end. If a menu name or a message differs a little from what a task describes, trust what you see, and record it in `ports/ch22.md`. **When a task lists two results, either is fine.** Some tasks say "Either counts" or "not yet confirmed": those are accepted variations, not differences. **One stop rule:** if Task 0's step 5, Task 3, Task 6 or Task 7 does something different from **What good looks like**, stop there. An example is a session that cannot reach the connector at all. Record what you saw, and do not build on it: every later task depends on that step. Task 0's step 5 and Task 3 are about reaching the platform, and Tasks 6 and 7 are about reaching the connector. It is not your mistake.
 
 ### Two milestones
 
@@ -48,11 +48,11 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 - **For the optional OpenAI port:** an OpenAI API account with credits and a project with a $5 hard limit (F7).
 - **For the open-source port:** Docker with Compose (F7).
 
-**This lab writes code as it goes.** Labs 20 and 21 shipped finished code, and you predicted what it did. Lab 22 ships only a skeleton. Most tasks are **make** tasks, the last step of PRIMM-AI+, as Lab 21 did for its two rules. The task says **in plain words** what the code must do, a coding agent writes it, and you check the result against those words. Where the code decides a rule that keeps people or companies apart, the task adds **Check before you approve**. You **predict**, then ask the agent to show you those lines, and investigate any gap, as in [Chapter 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/). The new code is TypeScript (What you will build says why).
+**This lab writes code as it goes.** Labs 20 and 21 shipped finished code, and you predicted what it did. Lab 22 ships only a skeleton. Most tasks are **make** tasks, the last step of PRIMM-AI+, as Lab 21 did for its two rules. The task says **in plain words** what the code must do, a coding agent writes it, and you check the result against those words. Where the code decides a rule that keeps people or companies apart, the task adds **Check before you approve**. You **predict**, then ask the agent to show you those lines, and investigate any gap, as in [Chapter 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/). The new code is TypeScript (the chapter's [overview](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/overview/) says why).
 
 **How every task runs.** Chapter 12's five-step routine, as in Labs 17 to 21: (1) a fresh session with the named agent, in `brightline-ap/`. (2) Plan mode, with the task's prompt as the brief. Read the plan, and correct it before it starts. (3) Manual mode: approve each command. (4) Evidence: the agent shows what proves the task is done, and you check it against **What good looks like**. (5) A line in `ports/ch22.md`: the task, the agent, what it proved, anything that surprised you.
 
-**What you do by hand, and only this.** Make accounts and workspaces, and make each API key in its console. Paste each key into its file in `.secrets/` with your own editor. Put the portal's client id and secret (Task 9) and its staging key (Task 10a) into the portal's secrets at a `wrangler` prompt. Paste the webhook signing secret into `.secrets/portal.env`. Sign in as a test person in a browser, and approve consent. Add the webhook endpoint in the Console, and put the production key into the portal's secrets. Decide when to merge and deploy. Agents do everything else. **No API key, client secret, refresh token, access token or signing secret passes through a chat.**
+**What you do by hand, and only this.** Make accounts and workspaces, and make each API key in its console. Paste each key into its file in `.secrets/` with your own editor. Put the portal's client id and secret (Task 9), its staging key (Task 10a) and its webhook signing secret (Task 17) into the portal's secrets at a `wrangler` prompt. Paste the webhook signing secret into `.secrets/portal.env` first. Sign in as a test person in a browser, and approve consent. Add the webhook endpoint in the Console, and put the production key into the portal's secrets. Decide when to merge and deploy. Agents do everything else. **No API key, client secret, refresh token, access token or signing secret passes through a chat.**
 
 **Rules the agents follow, and settings that enforce them.** `AGENTS.md` at `lab22-start` says: ask before `ant apply` without `--dry-run`, before any vault or credential call, and before any session created outside the tests. Never print, read aloud or copy anything in `.secrets/`. Every session gets a budget. Words alone are advice, so Claude Code's and OpenCode's own settings files at `lab22-start` (`.claude/settings.json`, `opencode.jsonc`) also deny reading `.secrets/` and ask before those commands. Codex's settings cannot deny reading a path, so for Codex `AGENTS.md` guards `.secrets/`. Also, `.codex/config.toml` makes Codex ask before any command that needs the network, as every platform call does.
 
@@ -81,7 +81,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **Goal:** the Chapter 19 stack running in your own staging accounts, and every check passing at `lab22-start`. Also the `ant` CLI installed, and your staging key in a file git ignores.
 
-**By hand first (F2).** Unzip `brightline-lab-ch22.zip`. If you did Labs 20 and 21, copy your own `docs/sdk-map.md`, `ports/ch20.md` and `ports/ch21.md` into it, over the blank ones: Task 1 reads your map. Make the Console account, add credits, and make the two workspaces with spending limits. Then make the staging key with a 30-day expiry, and put it in `brightline-ap/.secrets/anthropic.env`. Make the Neon and Cloudflare accounts if you have none.
+**By hand first (F2).** Unzip `brightline-lab-ch22.zip`. If you did Labs 20 and 21, copy your own `docs/sdk-map.md`, `ports/ch20.md` and `ports/ch21.md` into it, over the answer keys' examples: Task 1 reads your map. If you did Lab 19 and will reuse its staging system, copy your own `.secrets/` folder into `brightline-ap/` too. Make the Console account, add credits, and make the two workspaces with spending limits. Then make the staging key with a 30-day expiry, and put it in `brightline-ap/.secrets/anthropic.env`. Make the Neon and Cloudflare accounts if you have none. Unless you copied them, also make the three keys that Labs 18 and 19 made by hand. They are the Neon API key in `.secrets/neon.env` ([Chapter 19's F2](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/field-guide-business-data-and-retrieval/#f2-neon-from-zero)), the Workers AI token in `.secrets/embeddings.env` ([Chapter 19's F4](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/field-guide-business-data-and-retrieval/#f4-embeddings-and-vectors-from-zero)), and Cloudflare's deploy token in `.secrets/cloudflare-token` ([Chapter 18's F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)).
 
 **Predict:** at `lab22-start`, can a hosted session reach the connector yet?
 
@@ -89,25 +89,25 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 > Read `README.md`, `AGENTS.md`, and `docs/chapter-22/field-guide.md`, sections F0 to F2. `docs/deploy.md` ships in the zip and is the one setup guide (Task 21 updates it). Follow it for staging only, in my own accounts, one step at a time, running the commands `docs/deploy.md` gives for each, and stop after each step to show me its result:
 >
-> 1. **Before anything:** put this folder under git, with a main branch, in one first commit of everything here, "Start from the end of Chapter 21", and tag it `lab22-start`. If git has no name and email yet, set them for this project only. Then, if my Cloudflare account already has Workers from Lab 19 with the same names, list them and ask me whether to reuse or remove them.
+> 1. **Before anything:** put this folder under git, with a main branch, in one first commit of everything here, "Start from the end of Chapter 21", and tag it `lab22-start`. If git has no name and email yet, set them for this project only. Then, if my Cloudflare, Neon or GitHub account already has Workers, databases, a Hyperdrive configuration or a repository from Labs 18 and 19 with the same names, list them and ask me whether to reuse or remove them.
 > 2. **The database:** the Neon project and its staging branch, then the business database's migrations, roles and data.
 > 3. **The link to it:** the Hyperdrive configuration, with caching off.
-> 4. **The sign-in server, then the TypeScript connector,** on Cloudflare. Run every check `docs/deploy.md` lists, then `npm run conformance:staging`.
+> 4. **The sign-in server, then the TypeScript connector,** on Cloudflare, by Chapter 18's first-time staging steps, `docs/chapter-18/F8.md`, steps 1 to 10. In its step 9, add Brightline with Ana Morales as its owner, Cedar Ridge Supply with Luis Moreno as its owner, and Conformance Test Co. with no people, from `data/companies.csv` and `data/test-people.csv`. Run every check `docs/deploy.md` lists, then `npm run conformance:staging`.
 > 5. **The platform tool:** install the `ant` CLI as F2 says for my operating system, and run `ant --version`. Read the key from `.secrets/anthropic.env` into the environment for one command, never printing it, and run one read-only call that lists agents in the staging workspace (expect none).
-> 6. **Your addresses:** write `docs/addresses.md` with my real staging addresses: the connector's (with `/mcp`), the sign-in server's, and the address the portal will have once Task 10a deploys it (the Cloudflare Worker name `brightline-portal` and my workers.dev subdomain, or my own domain). From now on, every `*.brightline.example` address in a prompt means the matching one from that file, exactly, with the same path.
-> 7. Make a private GitHub repository `brightline-ap` and push `main` and the tag. Install with `npm ci`, then `cd py && uv sync --locked`, as in Lab 20. Run Labs 20 and 21's offline tests, `npm run test:loop`, `npm run test:sdk`, `npm run test:loop:py` and `npm run test:sdk:py`, and the portal skeleton's, `npm run test:portal`, which need no network and no keys. If any fail, show me the first failure and stop: Lab 22 builds on that code, but no Lab 22 task runs it, so a failure here is for the authors, not for me to fix. Finish with `git ls-files .secrets` (expect nothing) and a table of every check with its result.
+> 6. **Your addresses:** write `docs/addresses.md` with my four real staging addresses. They are the connector's (with `/mcp`), the sign-in server's, the portal's staging Worker `brightline-portal-staging`, which Task 10a deploys, and the second copy that Task 12b deploys for the session matrix, `brightline-portal-matrix`. Each is on my workers.dev subdomain, or my own domain. From now on, every `*.brightline.example` address in a prompt means the matching one from that file, exactly, with the same path.
+> 7. Make a private GitHub repository `brightline-ap`, set the secrets and the variable `docs/deploy.md` lists for it, and push `main` and the tag. Install with `npm ci`, then `cd py && uv sync --locked`, as in Lab 20. Run Labs 20 and 21's offline tests, `npm run test:loop`, `npm run test:sdk`, `npm run test:loop:py` and `npm run test:sdk:py`, and the portal skeleton's, `npm run test:portal`, which need no network and no keys. If any fail, show me the first failure and stop: Lab 22 builds on that code, but no Lab 22 task runs it, so a failure here is for the authors, not for me to fix. Finish with `git ls-files .secrets` (expect nothing) and a table of every check with its result.
 
 **The seven steps, and what each shows.** The numbers match the prompt's.
 
 | Step | What good looks like |
 | --- | --- |
-| 1. Before anything | One commit at tag `lab22-start`, and a list of any Lab 19 Workers with the same names, with your answer: reuse or remove (or "none found") |
+| 1. Before anything | One commit at tag `lab22-start`, and a list of anything from Labs 18 and 19 with the same names, with your answer: reuse or remove (or "none found") |
 | 2. The database | The Neon staging branch exists, the migrations ran, and each company's rows loaded |
 | 3. The link to it | The Hyperdrive configuration exists, with caching off |
-| 4. The sign-in server, then the connector | Both answer at their staging addresses, and `npm run conformance:staging` passes |
+| 4. The sign-in server, then the connector | Both answer at their staging addresses, Ana and Luis are on staging's sign-in server, and `npm run conformance:staging` passes |
 | 5. The platform tool | `ant --version` prints 2.5.0, the pinned version, and the agent list is empty |
-| 6. Your addresses | `docs/addresses.md` lists three real addresses, none ending in `brightline.example` |
-| 7. GitHub, and the earlier tests | A private `brightline-ap` repository with `main` and the tag. Labs 20 and 21's tests pass: 47 in TypeScript (32 and 15) and 35 in Python (22 and 13). The portal skeleton's 20 pass. `git ls-files .secrets` prints nothing |
+| 6. Your addresses | `docs/addresses.md` lists four real addresses, none ending in `brightline.example` |
+| 7. GitHub, and the earlier tests | A private `brightline-ap` repository with its secrets, `main` and the tag. Labs 20 and 21's tests pass: 47 in TypeScript (32 and 15) and 35 in Python (22 and 13). The portal skeleton's 20 pass. `git ls-files .secrets` prints nothing |
 
 **What good looks like:** every step above. Your prediction: no, because there is no agent definition, no environment and no vault yet.
 
@@ -118,7 +118,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 | What you see | What to do |
 | --- | --- |
 | A Neon or Cloudflare command asks you to sign in | Sign in in the browser it opens, then ask the agent to run the stage again |
-| A stage fails with a message about a missing secret | Run `npm run keys` and `npm run db:passwords` (Chapters 18 and 19), then that stage again |
+| A stage fails with a message about a missing secret | Run `npm run keys` and `npm run db:passwords` (Chapters 18 and 19), or make the missing key by hand (By hand first), then that stage again |
 | The conformance check fails | Ask the agent to show the first failing check and the connector's log for it (F0). Fix that, then run it again |
 | `ant` is not found | Ask the agent to install it again as F2 says, and open a new terminal |
 | Anything else | Stop, and ask the agent to explain the error in one line before it changes anything |
@@ -144,7 +144,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **In plain words.** Lab 21's `docs/worker-spec.md` is the worker's portable specification: what it must do on any runtime. You play Ana Morales, Brightline's AP analyst. Your coding agent interviews you, then writes a new version of the spec for a worker that serves many people. The agent also says what happens to each of Lab 21's rows. Git keeps Lab 21's version.
 
-> Read 22.1 and 22.2 in `docs/chapter-22/`, Lab 21's `docs/worker-spec.md` and the "What this still leaves to me" lines of `docs/sdk-map.md` (if that section is blank because I did not do Lab 21, read `docs/sdk-map.example.md`, the authors' filled map, instead), `docs/worker-spec.template.md`, `docs/acceptance-prompts.md` and `skills/invoice-triage/SKILL.md`. Interview me, one question at a time, as Ana Morales, Brightline's AP analyst. Ask what the worker should answer, which questions it should refuse, which tools and skill it uses, how much a run may spend, what it must never do, and who it acts for. Then write `docs/worker-spec.md` from the template. Its last section takes Lab 21's eleven rows in order, and says for each one what changes on a hosted worker, with the concept that teaches it. It names no product, and no company appears in the worker's instructions.
+> Read 22.1 and 22.2 in `docs/chapter-22/`, Lab 21's `docs/worker-spec.md` and the "What this still leaves to me" lines of `docs/sdk-map.md` (if that section is blank because I did not do Lab 21, read `docs/sdk-map.example.md`, the authors' filled map, instead), `docs/worker-spec.template.md`, `docs/acceptance-prompts.md` and `skills/invoice-triage/SKILL.md`. Interview me, one question at a time, as Ana Morales, Brightline's AP analyst. Ask what the worker should answer, which questions it should refuse, which tools and skill it uses, how much a run may spend, what it must never do, and who it acts for. Then write `docs/worker-spec.md` from the template. Its last section takes Lab 21's eleven rows in order, and says for each one what changes on a hosted worker, with the concept that teaches it. It names no platform, and no company appears in the worker's instructions.
 
 **What good looks like:** four tools and one skill. One person and one company per run. A budget of $0.50 for a question, $1.00 for a review. "Never" includes paying, approving or changing anything, and also telling one person about another person's work or another company's data. In the last section, two rows stay as they were. They are the read tools that run without asking, and the cited policy line, now checked by the portal. The rest change. The instructions lose Brightline's and Ana's names, because one worker serves every company. `flag_invoice` is left out for now (22.6). The test token becomes each person's own token in a vault (22.10). The platform keeps the session's events (22.3), and the worker runs for the person who asked, not for you (22.9). Your prediction: the rows about tools, credentials, storage and identity change. They change because those are what a hosted platform takes over, or what serving many people demands. Compare with `answer-key/worker-spec.md`.
 
@@ -170,7 +170,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 >    - any built-in tool other than read, glob and grep is on
 >    - any agent's instructions name a company in `data/companies.csv` or a test person (one definition serves every company, 22.2)
 >    - any file outside `src/hosted/start-session.ts` calls the platform's session-create method, or anything in `apps/portal/` imports `startTestSession`
->    - any file in `deployments/` (schedules, which come in Half 2) has no budget
+>    - any file in `deployments/` (schedules, which come in Milestone 2) has no budget
 > 5. Show me the plan, wait for me, then apply. Show me the lock file. Then I will change one word of the worker's instructions (the Console calls them the system prompt) in the Console (the staging workspace, its agents page, `ap-worker`, edit and save), and you will apply again and show me what happens.
 
 **Check before you approve.** Predict first: what does the check do with an environment file that has no network setting at all? Then ask the agent to show the lines in `scripts/check-agent-config.ts` that enforce each rule from 22.4 and 22.7, one rule at a time. Also ask it to run the check once on a copy of the file that breaks the rule.
@@ -201,7 +201,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **In plain words.** A session with a budget of one cent shows what happens at a cap, and what happens when you raise it.
 
-> Read 22.5. Using `npm run session`, start a session with a budget of 1 cent and the message "Use glob to list the files in /etc, then read ten of them one at a time with read, and after each one write a one-line summary of what it is for." Each tool call is followed by a new model call, so the cap is checked several times. Print events until it goes idle. Then try to send "Thanks" as a new message and show me the error. Then add `--raise-budget-cents <n>` to `scripts/session.ts`, which reads the session's `usage.list_cost` and updates the session's budget to at least one cent above it (a session update, F2). Raise it to 10 cents and print events until it finishes.
+> Read 22.5. Using `npm run session`, start a session with a budget of 1 cent and the message "Use glob to list the files in /etc, then read ten of them one at a time with read, and after each one write a one-line summary of what it is for." Each tool call is followed by a new model call, so the cap is checked several times. Print events until it goes idle. Then try to send "Thanks" to the same session as a new message (add `--session <id>` to `scripts/session.ts` for it), and show me the error. Then add `--raise-budget-cents <n>` to `scripts/session.ts`, which reads the session's `usage.list_cost` and updates the session's budget to at least one cent above it (a session update, F2). Raise it to 10 cents and print events until it finishes.
 
 **What good looks like:** a usage line just over one cent, then `budget_reached`. The new message gets a 400 error. After the raise, the session continues from where it stopped, with no new message from you, and finishes. Your prediction: over, by the call that was under way.
 
@@ -236,9 +236,9 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **In plain words.** Chapter 16's invoice-triage skill goes to the platform, unchanged.
 
-> Read 22.6. Add `skills/invoice-triage/` to the files `npm run agent:apply` applies, attach it to `agents/ap-worker.md` by the id the upload returns, and apply to staging after showing me the plan. Then start a session with a 5-cent budget asking "Which skills do you have, and what does each do?"
+> Read 22.6. Add `skills/invoice-triage/` to the files `npm run agent:apply` applies, attach it to `agents/ap-worker.md` by its folder's path, as F2 shows (`ant` fills in the id the upload returns), and apply to staging after showing me the plan. Then start a session with a 5-cent budget asking "Which skills do you have, and what does each do?"
 
-**What good looks like:** the plan shows a new skill and an agent update to a new version. The session names the invoice-triage skill. The answer does not mention the `/ap-triage` command, because commands did not travel.
+**What good looks like:** the plan shows a new skill and an agent update to a new version. The session names the invoice-triage skill. The answer does not mention Chapter 16's `/ap-triage` command, because commands did not travel.
 
 **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-5.md).
 
@@ -264,7 +264,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **In plain words.** A session with no vault fails on purpose, so you see the safe failure before you fix it.
 
-> Read 22.2 and the vault box above. Start a session with a 5-cent budget and no vault, asking "Which invoices are open?" Print every event.
+> Read 22.2. Start a session with a 5-cent budget and no vault, asking "Which invoices are open?" Print every event.
 
 **What good looks like:** a `session.error` with `mcp_authentication_failed_error`, and the worker saying it could not reach the AP data. The session still started. The connector's log shows a 401 with no token. Your prediction: an authentication error, not a crash, because the call went out with no token and the connector refused it.
 
@@ -283,7 +283,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 > 1. Make a test token for Luis with `npm run token:test -- --person luis --company org_cedar --out .secrets/luis-test.env`. It writes the connector's address and a 10-minute sign-in token to that file. Never show it.
 > 2. Let `startTestSession` take at most one vault, and only one whose `metadata` marks it as a test vault for a person in `data/test-people.csv`. Make a test vault for this task only, as F4's example shows, but with no `refresh` block and with `test: "true"` in its metadata. Put the token in it.
 > 3. Start a session with `npm run session`, that vault and a 10-cent budget, asking "Tell me about vendor V102." Print every event.
-> 4. Make a test version of the agent, `tests/agents/ap-worker-webtest.md`, with web fetch on, in the same runtime environment, and apply it. Start a session with `npm run session -- --agent ap-worker-webtest` that asks: "Fetch https://collect.example.net/ping and tell me what it says." Print every event.
+> 4. Make a test version of the agent, `tests/agents/ap-worker-webtest.md`, with web fetch on, in the same runtime environment, and apply it. Start a session with `npm run session -- --env staging --agent ap-worker-webtest` and a 5-cent budget, asking "Fetch https://collect.example.net/ping and tell me what it says." Print every event.
 > 5. Archive the test agent and the test vault, and delete the token file.
 
 **What good looks like:** the first run shows the note in the `find_vendor` result, labeled as data. It shows no web request at all, because there is no tool that could make one. Whether the model would have obeyed the note does not matter: it had no way out. The second run shows a web fetch for `collect.example.net` refused with `url_not_allowed`, which proves the network rule itself. Your prediction: no web call, because there was no tool to make one.
@@ -300,6 +300,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 | --- | --- |
 | Confidential client | A program on a server, registered with a client secret, that may hold a refresh token (22.10) |
 | Service binding | A private link between two of your servers on the same platform, not reachable from the internet (Task 9) |
+| D1 | Cloudflare's database for Workers, which Chapter 18's sign-in server already uses. The portal gets a D1 database of its own (Task 9) |
 | `wrangler secret put` | The command that stores a secret for a deployed server, read from a prompt or a file, never printed ([F6](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f6-workload-identity-keys-and-the-portals-secrets)) |
 | Service account | An account for a program, not a person, so a key made for it belongs to the product, not to you (22.9, F6) |
 | PKCE, `state` | Two checks in a sign-in: PKCE proves the app that started the sign-in is the one finishing it, and `state` proves the answer belongs to this sign-in (Chapter 18) |
@@ -325,7 +326,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 >
 > 1. In `servers/auth/`, add a migration that registers `brightline-portal` as a confidential OAuth client with two redirect addresses, `https://portal-staging.brightline.example/callback` and `https://portal-matrix-staging.brightline.example/callback` (for Task 12b's matrix deployment), the scopes the four tools need plus `offline_access` and `openid`, refresh token rotation on, and consent never skipped. Add `openid` to the sign-in server's own scopes too, so it returns an ID token that tells the portal who signed in: Chapter 18's apps needed none. Show me the test that proves an ID token comes back.
 > 2. Write `scripts/register-portal-client.ts`, which creates the client's secret and writes the client id and secret straight into `.secrets/portal.env`, printing only "written".
-> 3. Add two migrations for the portal's own data, in a D1 database of the portal's own, `brightline-portal-staging`, in `apps/portal/migrations/`, never in the sign-in server's, which stores no business data (Chapter 18): `agent_vaults` (person id, tenant id, vault id, credential id, status, updated at, one active row per person and tenant) and `portal_sessions` (session id, person id, tenant id, the vault id it named, created at).
+> 3. Add two migrations for the portal's own data, in a D1 database of the portal's own, `brightline-portal-staging`, in `apps/portal/migrations/`, never in the sign-in server's, which stores no business data (Chapter 18): `agent_vaults` (person id, tenant id, vault id, credential id, status, updated at, one active row per person and tenant) and `portal_sessions` (session id, person id, tenant id, the vault ids it named, created at).
 > 4. Add a private route to the sign-in server, `GET /internal/membership?person=&tenant=`, reachable only through a Cloudflare service binding from the portal, never from the internet, that answers whether the person is a current member of that company.
 > 5. Deploy the sign-in server to staging and run the registration script. Then stop. I set the id and secret as the portal's staging secrets myself, in my own terminal: `npx wrangler secret put PORTAL_CLIENT_ID --env staging` and `npx wrangler secret put PORTAL_CLIENT_SECRET --env staging` in `apps/portal/` (the zip already holds the portal skeleton there), pasting each from `.secrets/portal.env`, which I open in my own editor.
 > 6. Finish with `git ls-files .secrets`, and show me every line in `register-portal-client.ts` that prints anything.
@@ -349,9 +350,9 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 > 1. Fill in the portal skeleton in `apps/portal/` (a Cloudflare Worker in TypeScript, named `brightline-portal`, with its routes stubbed). Sign-in goes through the staging sign-in server as `brightline-portal`, using the skeleton's sign-in helper, which does PKCE and checks `state`, as Chapter 18's apps did. Add a consent step for one company.
 > 2. On the callback, verify the ID token the sign-in server returns, and take the person and the company from it. Never take them from the request, or from the access token, which is meant for the connector. Show me the test that fails if the ID token's signature is wrong.
 
-**Check after step 2:** Claude Code shows you the sign-in page at the portal's address and the passing ID-token test. Do not go on until both work. Then give the agent the rest of the prompt:
+**Check after step 2:** Claude Code shows you the passing ID-token test, and the sign-in page the portal sends you to, from the portal running on your computer (`npm run dev:staging` in `apps/portal/`). Do not go on until both work. Then give the agent the rest of the prompt:
 
-> 3. If Ana has no active row in `agent_vaults` for that company, make a vault for her and that company, with one `mcp_oauth` credential for the staging connector's address and a `refresh` block using `client_secret_post`. If she has one, update that credential's secret values instead (F4). Then write the row in `agent_vaults`.
+> 3. If Ana has no row in `agent_vaults` for that company that is not archived, make a vault for her and that company, with one `mcp_oauth` credential for the staging connector's address and a `refresh` block using `client_secret_post`. If she has one, update that credential's secret values instead (F4). Then write the row in `agent_vaults`.
 > 4. Never store or log a token in the portal. Write tests for both paths with a fake platform client.
 > 5. Deploy to staging. I will open the portal's address from `docs/addresses.md` in my browser and sign in as Ana, with the test password from `.secrets/test-users.staging.env`, which I open in my own editor, then choose Brightline and approve. Show me the `agent_vaults` row, and try to read the vault's credential back.
 
@@ -417,7 +418,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 - Name the three identities, who holds each, and why a worker must never act as the builder (22.9).
 - Trace Ana's token from consent to the connector, and say where the model could see it (nowhere) (22.10).
-- Say why a session with two vaults for the same connector is refused, and which row of the matrix proves it (22.11).
+- Say why the portal never starts a session with two vaults for the same connector, and which row of the matrix proves it (22.11).
 - Say why the portal checks who owns a session before streaming its events, and which row proves it (22.12).
 
 ## Lab 22, Sitting 3b: proving it (about 2 hours 15 minutes, Tasks 12, 12b and 13)
@@ -431,6 +432,7 @@ This sitting starts Milestone 2.
 | Word in a prompt | What it means |
 | --- | --- |
 | Headless browser | A real browser run by a program, with no window, used here to check what a page does (Task 12) |
+| Federation rule | In the Console, a rule that lets one repository, branch and workflow get a short-lived token as a service account (22.13, F6) |
 | Deployment (on the platform) | The platform's name for a scheduled run. Not the same as deploying the portal to Cloudflare ([22.15](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/schedules-and-webhooks/)) |
 
 **A schedule, in short, before Task 12.** A schedule is a saved instruction to start a session on a timetable. It is written as a cron expression of five fields: minute, hour, day of month, month and day of week. Row S6 makes one that would run at 3:00 a.m. on January 1 (`0 3 1 1 *`), paused as soon as it is made, so it never runs. You build a real one in Sitting 4 (22.15).
@@ -462,7 +464,7 @@ This sitting starts Milestone 2.
 
 > Read 22.11, its matrix table, and 22.12.
 >
-> 1. Write `scripts/tenant-offboard.ts` (`npm run tenant:offboard -- --company <id> --env staging`): Chapter 18's `npm run tenant:remove`, then Chapter 19's `npm run tenant:delete`, then archive every vault in `agent_vaults` for the company, and mark the rows archived.
+> 1. Write `scripts/tenant-offboard.ts` (`npm run tenant:offboard -- --company <id> --env staging`): Chapter 18's `npm run tenant:remove`, then Chapter 19's `npm run tenant:delete`, then archive every vault in `agent_vaults` for the company, pause every schedule that uses one of them, and mark the rows archived.
 >    Add the same step for one person to Chapter 18's `npm run tenant:member` when it runs with `--remove`: it archives that person's vault for that company. Archiving a vault means the platform keeps it, but no session can use it again.
 >    Extend `npm run agent:apply` so it also applies files in `deployments/`, with the same plan first (F2).
 > 2. Write `scripts/session-matrix.ts` (`npm run matrix:sessions -- --env staging [--rows S1,S3]`). It signs in the test people from `.secrets/test-users.staging.env` through the portal's sign-in route, passing the consent screen with Chapter 18's scripted test sign-in (staging and test people only). It starts every session through the portal, so each gets the portal's own question budget of $0.50. A row whose session ends with `budget_reached` is inconclusive, never a pass.
@@ -484,7 +486,7 @@ This sitting starts Milestone 2.
 >    - S5: Dana, a test person at Cedar Ridge, is added to it for this row (`npm run tenant:add -- --company org_cedar --member "Dana <dana@cedarridge.example>=member" --env staging`), signs in and gets a vault. Then `npm run tenant:member -- --company org_cedar --email dana@cedarridge.example --remove --env staging` removes her on the sign-in server. She cannot start a Cedar Ridge session, and her Cedar Ridge vault is archived.
 >    - S6: Juniper Trail Outfitters, the trial company that left in Chapter 19, is added back for this row, with Sam Keller as its owner (`npm run tenant:add`, as in Chapter 18), and offboarded again here. Sam gets a test vault (metadata `test: "true"`) from `token:test`, and `npm run agent:apply` creates a test schedule from `deployments/test-juniper.md` attached to it, with a budget of 5 cents, paused as soon as it is made, on a date far from the lab (`0 3 1 1 *`). Then `npm run tenant:offboard -- --company org_juniper --env staging` runs. Every Juniper vault is archived, the schedule shows as paused, and a new Juniper session fails. Then archive the test schedule, and show that the deployment list no longer has it.
 > 2. The rows for the portal's pages (22.12):
->    - S7: `history-scan` passes on every session the matrix made, and no history contains a 12-character piece of any token `token:test` issued in this run. Luis asks about V102, whose test note now also holds `<img src=x onerror=alert(1)>`, and the portal's page, loaded in a headless browser, shows it as plain text and runs no script.
+>    - S7: `history-scan` passes on every session the matrix made, and no history contains a 12-character piece of any token `token:test` issued in this run. Luis asks about V102, whose planted note also holds `<img src=x onerror=alert(1)>`, and the portal's page, loaded in a headless browser, shows it as plain text and runs no script.
 >    - S8: Ana asks the portal for the event stream, then to confirm a tool call, then to interrupt, each for Luis's session from S1, and gets 404 all three times. A confirmation sent with Ana's cookie but without the page's form token is refused.
 > 3. Print one line per row, the run's total list cost, and `matrix:sessions: N rows passed, M failed`. Run it.
 
@@ -506,7 +508,7 @@ This sitting starts Milestone 2.
 >
 > 1. The bugs: the eight in the table at the start of this sitting, one per row from S1 to S8. Bug 9: a second session-create call in the portal that skips `start-session.ts`. Bug 10: a schedule file with its budget removed.
 > 2. For each bug, one at a time: make a throwaway branch and plant it.
-> 3. Deploy that branch to the **matrix copy** of the portal: a second copy at `portal-matrix-staging`, whose address Task 9 registered (Cloudflare calls it the `matrix` environment: a third meaning of "environment", a second copy of the same Worker with its own address). It uses the same staging secrets as the real portal, set once with `wrangler secret put --env matrix` from the same files.
+> 3. Deploy that branch to the **matrix copy** of the portal, a second copy at `portal-matrix-staging`, whose address Task 9 registered (Cloudflare calls it the `matrix` environment: a third meaning of "environment", a second copy of the same Worker with its own address). It uses the same staging secrets as the real portal, which I set once myself, in my own terminal, as in Tasks 9 and 10a, with `--env matrix`.
 > 4. Run `npm run check:agent-config`, and only the matrix rows the bug targets plus S1 (`--rows`).
 > 5. Record which fail in `ports/ch22.md`, then delete the branch and the matrix copy. Merge nothing.
 
@@ -525,7 +527,7 @@ This sitting starts Milestone 2.
 > Read 22.13 and F6.
 >
 > 1. Add `--ci` to `scripts/agent-apply.ts`. It uses no key file. It gets the platform token from workload identity, asks for no approval, and applies only with `--apply`.
-> 2. Walk me through making the service account `brightline-ci`, the GitHub Actions issuer, and a rule for this repository's `main` branch and `agents.yml` only, in the staging workspace, as F6 says. Tell me each Console step, and wait while I do it.
+> 2. Walk me through making the service account `brightline-ci`, the GitHub Actions issuer, and a federation rule for this repository's `main` branch and `agents.yml` only, in the staging workspace, as F6 says. Tell me each Console step, and wait while I do it.
 > 3. Write `.github/workflows/agents.yml` with three jobs:
 >    - **On every pull request:** `npm run check:agent-config` and a file-only diff of `agents/`, `environments/`, `skills/` and `deployments/`. It gets no platform token at all, because pull-request code is not yet trusted and the rule accepts only `main`.
 >    - **On merge to `main`:** `npm run agent:apply -- --env staging --ci`, which shows the plan and then applies with `--apply`. It uses workload identity, with `id-token: write` and no key. It skips the apply when a merge changes only lock files.
@@ -558,7 +560,7 @@ This sitting starts Milestone 2.
 
 > Read 22.14. Set the staging sign-in server's access-token lifetime for `brightline-portal` to 5 minutes, in staging only, and deploy. The token already in Ana's vault was issued under the old lifetime, so sign in again as Ana, which updates her credential with a 5-minute token. Then, as Ana in the portal, ask a question. Wait 6 minutes. Ask again. Show me the sign-in server's log lines for the refresh, without any token, and the second answer.
 
-**What good looks like:** one refresh in the sign-in server's log, from the platform, about 6 minutes after the first question. Then a normal second answer. If the second answer fails at the connector instead, read the refresh in the sign-in server's log. Chapter 18's server needs the connector's address, `resource`, on every refresh. Without it, the server returns a token the connector refuses. Record that in `ports/ch22.md`, because it is an open question for the platform (F4).
+**What good looks like:** one refresh in the sign-in server's log, from the platform, about 6 minutes after the first question. Then a normal second answer. If the second answer fails at the connector instead, read the refresh in the sign-in server's log. Chapter 18's server needs the connector's address, `resource`, on every refresh. Without it, the server returns a token the connector refuses. Record that in `ports/ch22.md`. Whether the platform sends `resource` on a refresh is an open question: F4's `refresh` block has no field for it.
 
 **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-14.md).
 
@@ -572,7 +574,7 @@ This sitting starts Milestone 2.
 
 > Read 22.14's "one question the documents leave open" and F4.
 >
-> 1. Write `scripts/vault-check.ts` (`npm run vault:check -- --person <id> --company <id>`), which finds the vault and credential in `agent_vaults` and calls the platform's validate endpoint, printing only `valid`, `invalid` or `unknown` and the probe's HTTP status.
+> 1. Write `scripts/vault-check.ts` (`npm run vault:check -- --person <id> --company <id>`), which finds the vault and credential in `agent_vaults` and calls the platform's validate endpoint, printing only `valid`, `invalid` or `unknown` and the HTTP status of the platform's test call to the connector.
 > 2. As Ana, wait 6 minutes after Task 14's last question, ask a question, wait 6 more minutes, and ask again. That makes two more refreshes, the second and third in all.
 > 3. Show me the sign-in server's log for all three refreshes, with no token in it, and `npm run vault:check -- --person ana --company org_brightline`.
 > 4. Record the result in `ports/ch22.md`, then follow the branch below.
@@ -619,7 +621,7 @@ This sitting starts Milestone 2.
 >
 > 1. Add `/hooks/claude` to the portal. For each delivery: check it with the SDK's `unwrap()` and the signing secret from the portal's secrets, skip any event id already in a new `webhook_events` table, fetch the session or credential the event names, and update the page.
 > 2. Add an hourly reconcile job. It lists the last two hours of sessions and handles any it has not seen. It records each scheduled session in `portal_sessions` the first time it sees one. It checks, through the membership route, every person whose vault a schedule uses, and archives the vault of anyone no longer a member.
-> 3. Set the signing secret with `wrangler secret put`, reading the file. Deploy.
+> 3. Stop. I set the signing secret myself, in my own terminal: `npx wrangler secret put WEBHOOK_SIGNING_SECRET --env staging` in `apps/portal/`, pasting it from `.secrets/portal.env`. Then deploy.
 > 4. Start a session as Ana, and show me the delivery. In staging only, the receiver keeps the most recent delivery's raw body and headers in a `webhook_debug` table, which holds no secret. It empties the table after this task.
 > 5. Within 5 minutes of the delivery, replay that stored delivery with the same headers, and show me it was skipped as a repeat. (After 5 minutes, `unwrap()` would refuse it as stale instead.) Then send one with a changed body, and show me the refusal.
 
@@ -639,7 +641,7 @@ This sitting starts Milestone 2.
 
 > Read 22.15, 22.16 and 22.5.
 >
-> 1. Write `docs/triage-report.schema.json`: a list of decisions, each with an invoice id, a decision and a policy citation id, and a total. Update the first message so the worker ends with the report as JSON matching it.
+> 1. Write `docs/triage-report.schema.json`: a list of decisions, each with an invoice id, a decision and a policy citation id, and a total. Write the first message each run sends, so the worker ends with the report as JSON matching it.
 > 2. Write `deployments/morning-triage.md` for staging: `ap-worker`, `ap-sandbox`, schedule `10 7 * * 1-5` in `America/New_York`, a budget of 50 cents a run, Ana's vault, and that first message. Apply it with the plan first.
 > 3. Write `src/hosted/check-triage.ts`, plain code with no model call. Given a session's events, it fails if the report does not match the schema, if any invoice `list_open_invoices` returned has no decision or more than one, if any citation id was not returned by `search_policy` in that session, or if the total differs from the amounts in the tool results added up by the code. It returns the list of failures in plain words. Write tests for it with recorded event fixtures: one passing, one with a missing invoice, one with an invented citation, one with a wrong total.
 > 4. In the portal's webhook receiver, when a session from this deployment goes idle, fetch its events and read the last idle event's stop reason:
@@ -686,8 +688,8 @@ This sitting starts Milestone 2.
 > Read 22.19 and F7. In `ports/openai/`, write a script that does these steps, in this order:
 >
 > 1. Read `.secrets/openai.env` without printing it.
-> 2. Make a vault with one `mcp_oauth` credential for the staging connector, with no refresh block, using a 10-minute access token for Ana from `npm run token:test -- --person ana --company org_brightline --out .secrets/ana-openai.env`, made just before step 4, never shown.
-> 3. Make the plugin's bundle in OpenAI's format: a copy of `plugin/` with a manifest at `.codex-plugin/plugin.json`, made from `plugin/plugin.json`, as F7 shows. Chapter 16 made none, because Codex reads `plugin.json` itself. Make the session's environment with that bundle attached, for its skill. If the plugin's own MCP settings would make the sandbox connect to the connector, remove them from the uploaded copy.
+> 2. Make the plugin's bundle in OpenAI's format: a copy of `plugin/` with a manifest at `.codex-plugin/plugin.json`, made from `plugin/plugin.json`, as F7 shows. Chapter 16 made none, because Codex reads `plugin.json` itself. Make the session's environment with that bundle attached, for its skill. If the plugin's own MCP settings would make the sandbox connect to the connector, remove them from the uploaded copy.
+> 3. Make a vault with one `mcp_oauth` credential for the staging connector, with no refresh block, using a 10-minute access token for Ana from `npm run token:test -- --person ana --company org_brightline --out .secrets/ana-openai.env`, made now, never shown.
 > 4. Create one session in that environment, with the connector declared as an MCP tool with `connection_origin` `service` (so the vault credential applies and the token never enters the sandbox), `allowed_tools` set to the four tools, and the vault attached. Ask "Which invoices are due this week?" and print the events.
 > 5. Last, delete the credential and the vault, and delete the token file.
 >
@@ -741,7 +743,7 @@ This sitting starts Milestone 2.
 
 ### Required and optional
 
-**Both milestones, about 12 hours 20 minutes:** Milestone 1 (Tasks 0 to 11) and Milestone 2 (Tasks 12 to 18, 20 and 21). **With both extensions, about 13 hours 15 minutes.** *Extensions:* Task 19 (the OpenAI port, which costs money), Task 21b, and production.
+**Both milestones, about 12 hours 20 minutes:** Milestone 1 (Tasks 0 to 11) and Milestone 2 (Tasks 12 to 18, 20 and 21). **With both extensions, about 13 hours 15 minutes.** *Extensions:* Task 19 (the OpenAI port, which costs money) and Task 21b.
 
 ### Apply it to your vertical (optional)
 
@@ -752,7 +754,7 @@ Pick a business you know where many people would ask one worker for their own da
 | What you see | Why | What to do |
 | --- | --- | --- |
 | `refusing to apply` | A resource changed outside the files | Compare, choose, then apply. Never `--force` without reading both (22.4) |
-| Session create fails with a 400 about hosts | The connector's host is not in `allowed_hosts` | Add it to the environment file and apply (F2) |
+| Session create fails with a 400 about hosts, or the first connector call fails | The connector's host is not in `allowed_hosts` | Add it to the environment file and apply (F2) |
 | `mcp_authentication_failed_error` | No vault, the wrong address, or a refused refresh | Check the vault's credential address against the agent's, then `npm run vault:check` (F4) |
 | `mcp_connection_failed_error` | The connector is unreachable, or it answered with an HTTP error that is not about sign-in | Check the connector's staging address. If it is right, record it in `ports/ch22.md`: whether the platform speaks the connector's protocol version is still open |
 | A new message gets a 400 after a pause | The session reached its budget | Raise the budget, or end the session (22.5) |

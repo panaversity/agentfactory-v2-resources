@@ -2,7 +2,7 @@
 
 For you, after the task. Open it in a text editor, never in the agent. Nothing in Lab 22 has been run live yet: every result here is what the platforms' documentation and the lab page lead us to expect, so if your run differs, your run is the evidence, and you record what you saw in `ports/ch22.md`. The offline checks, the type checks, Labs 20 and 21's tests and the portal skeleton's tests, were run on macOS on November 6, 2026.
 
-**If the stop rule applies.** If this task did something different from **What good looks like**, stop there: record what you saw in `ports/ch22.md`, and do not build on it. To carry on anyway, compare your work with this key yourself, in a text editor and never in the agent, and carry on once they match. It is not your mistake.
+**If the stop rule applies.** If this task did something different from **What good looks like**, stop there: record what you saw in `ports/ch22.md`, and do not build on it. Every later task depends on that step. It is not your mistake.
 
 **Your prediction, if it matched:** An authentication error, not a crash, because the call went out with no token and the connector refused it.
 

@@ -4,10 +4,10 @@
 //   GET  /sign-in                    Task 10a  start Chapter 18's sign-in (src/sign-in.ts)
 //   GET  /callback                   Task 10a  finish it, check the ID token, store the person's vault
 //   POST /question                   Task 10b  start a session for the signed-in person (src/hosted/start-session.ts)
-//   GET  /sessions/:id/stream        Task 10b  the session's events, for its own person only (22.12)
-//   POST /sessions/:id/confirmation  Task 10b  allow or deny a waiting tool call (22.8), with the form token (10c)
-//   POST /sessions/:id/interrupt     Task 10b  stop the session's current work (22.3)
-//   POST /webhooks                   Task 17   the platform's signed messages, checked and deduplicated (22.15)
+//   GET  /sessions/:id/stream        Task 10c  the session's events, for its own person only (22.12)
+//   POST /sessions/:id/confirmation  Task 10c  allow or deny a waiting tool call (22.8), with the form token
+//   POST /sessions/:id/interrupt     Task 10c  stop the session's current work (22.3)
+//   POST /hooks/claude               Task 17   the platform's signed messages, checked and deduplicated (22.15)
 //
 // The security helper (src/security.ts) is off until Task 10c turns it on.
 import { withSecurity } from "./security.ts";
@@ -32,10 +32,10 @@ const ROUTES: Array<{ method: string; pattern: RegExp; task: string }> = [
   { method: "GET", pattern: /^\/sign-in$/, task: "Task 10a" },
   { method: "GET", pattern: /^\/callback$/, task: "Task 10a" },
   { method: "POST", pattern: /^\/question$/, task: "Task 10b" },
-  { method: "GET", pattern: /^\/sessions\/[^/]+\/stream$/, task: "Task 10b" },
-  { method: "POST", pattern: /^\/sessions\/[^/]+\/confirmation$/, task: "Task 10b" },
-  { method: "POST", pattern: /^\/sessions\/[^/]+\/interrupt$/, task: "Task 10b" },
-  { method: "POST", pattern: /^\/webhooks$/, task: "Task 17" },
+  { method: "GET", pattern: /^\/sessions\/[^/]+\/stream$/, task: "Task 10c" },
+  { method: "POST", pattern: /^\/sessions\/[^/]+\/confirmation$/, task: "Task 10c" },
+  { method: "POST", pattern: /^\/sessions\/[^/]+\/interrupt$/, task: "Task 10c" },
+  { method: "POST", pattern: /^\/hooks\/claude$/, task: "Task 17" },
 ];
 
 function text(body: string, status: number): Response {

@@ -24,7 +24,7 @@ From *The AI Agent Factory*, Chapter 22, for the coding agents working in this r
 
 **What was still the builder's.** The worker ran as the builder, on the builder's computer. Chapter 21 ended with a list of what an SDK in your own process still leaves to you. The list names a process and a disk, a sandbox, what the process inherits, and credentials. It also names transcripts and traces, cost and time, upgrades, and what counts as done. This chapter hands most of that list to a hosted platform, and gives each person their own token.
 
-**Where to look, and what you need.** The lab's zip holds Labs 20 and 21's finished code. Their notes ship blank, so `docs/sdk-map.example.md` stands in for Lab 21's list, and `docs/worker-spec.md` is Lab 21's eleven-row specification of the worker. The word list on the companion page repeats every word above. **Chapters 16 to 19 are needed,** not only advised, because this chapter hosts their skill and connector. Part C also depends on Chapter 18's sign-in and Chapter 19's per-company data. A reader who stopped at Chapter 12 should read them first.
+**Where to look, and what you need.** The lab's zip holds Labs 20 and 21's finished code. Their notes ship filled in from the answer keys, as examples. `docs/sdk-map.example.md` is the authors' own filled list, and `docs/worker-spec.md` is Lab 21's eleven-row specification of the worker. The word list on the companion page repeats every word above. **Chapters 16 to 19 are needed,** not only advised, because this chapter hosts their skill and connector. Part C also depends on Chapter 18's sign-in and Chapter 19's per-company data. A reader who stopped at Chapter 12 should read them first.
 
 ## The point
 
