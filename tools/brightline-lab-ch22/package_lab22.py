@@ -44,7 +44,7 @@ title, b = body(PAGES / "overview.md"); (OUT / "overview.md").write_text(DOCHEAD
 docs.append(("overview.md", "Chapter 22's overview: Start here, the point, the who's who and what you build"))
 lessons = []
 for p in PAGES.glob("*.md"):
-    m = re.search(r'^concepts: \["(22\.\d+)"\]', p.read_text(encoding="utf-8"), re.M)
+    m = re.search(r'^concepts: \[\s*"(22\.\d+)"\s*\]', p.read_text(encoding="utf-8"), re.M)  # approve writes [ "22.1" ]
     if m:
         lessons.append((int(m.group(1).split(".")[1]), m.group(1), p))
 assert len(lessons) == 19, len(lessons)

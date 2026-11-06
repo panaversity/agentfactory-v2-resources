@@ -46,7 +46,8 @@ try {
   console.log(JSON.stringify(sentByUs, null, 2));
   console.log("\nThe model's own tool calls and reasoning are not in that list. They live on the provider's side,");
   console.log(`under response ${previous}. Compare with the stateless run's full input array from Task 6.`);
-  console.log(`Stored responses are kept for 30 days by default. Delete them when you finish (F4): ${storedIds.join(", ")}`);
+  for (const id of storedIds) await client.responses.delete(id); // kept 30 days by default (F4), so the run deletes its own
+  console.log(`Deleted the stored responses: ${storedIds.join(", ")}`);
 } finally {
   await close();
 }

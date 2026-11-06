@@ -1,6 +1,6 @@
 # Instructions for every coding agent in this repository
 
-- Run the checks before you say a task is done: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:py`.
+- Run the checks before you say a task is done: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:py`. `npm run test:py` needs the Chapter 19 dev database: without it (Lab 20's route B), run the loop's four checks below instead.
 - Never edit `data/`. Never change an existing test to make code pass.
 - Every number a person acts on comes from tested code, never from your own arithmetic.
 - Never put a key, token or password in a tracked file. Keys live in `.dev.vars`, `.dev.vars.<environment>` and `.secrets/`, which git ignores.
