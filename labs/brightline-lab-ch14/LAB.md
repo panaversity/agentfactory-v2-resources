@@ -32,7 +32,7 @@ Use the zip's copy for this lab, even if you finished Lab 13 in your own reposit
 
 ### The job
 
-An agent split Brightline's scripts into modules and classes. Nobody has read the result. Meanwhile, the AP team wants to stop trusting the exports without checking them. Last month, an export from a new vendor portal had a negative amount, and nobody noticed for a week.
+An agent split Brightline's scripts into modules and classes. Nobody at Brightline knows yet which file uses which. Meanwhile, the AP team wants to stop trusting the exports without checking them. Last month, an export from a new vendor portal had a negative amount, and nobody noticed for a week.
 
 Ana wants three things, in both languages. Types that say exactly which terms exist. Schemas that check every record at the edge and report every bad row. And a small client for the AP system's API. It fetches vendors while it fetches every page of open invoices, retries once when the server is busy, and gives up when the server hangs. In the lab, a server on your own computer takes the place of the AP system.
 
