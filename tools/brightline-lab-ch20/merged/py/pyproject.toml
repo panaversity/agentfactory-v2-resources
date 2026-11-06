@@ -1,0 +1,38 @@
+[project]
+name = "brightline-ap"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "pydantic==2.12.4",
+  "mcp>=2,<3",
+  "cryptography==50.0.2",
+  "pyjwt[crypto]==2.15.1",
+  "opentelemetry-api==1.45.2",
+  "uvicorn==0.54.0",
+  "psycopg[binary]==3.3.6",
+  "httpx==0.28.1",
+  # The agent loop (Lab 20): the two model APIs' SDKs, pinned.
+  "anthropic==2.5.0",
+  "openai==3.46.0",
+]
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "pyright==1.1.407", "opentelemetry-sdk==1.45.2"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+# Tool functions are registered by the @mcp.tool() decorator and never called by name.
+reportUnusedFunction = "none"
+include = ["brightline_ap", "tests"]
+# The agent loop's files (Lab 20) are checked in standard mode: npm run typecheck:py.
+exclude = ["brightline_ap/loop", "brightline_ap/ask.py", "brightline_ap/experiments.py", "brightline_ap/practice_connector.py", "tests/test_loop.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["brightline_ap"]
