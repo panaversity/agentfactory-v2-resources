@@ -1,0 +1,2 @@
+print(bool(""))
+print(bool([]))
