@@ -8,7 +8,7 @@ Every "live" row is what the authors expect from each API's documentation, not y
 | 1 | One turn, finished | `stop: end_turn \| turns: 1`, no tool call, under a cent | (run) |
 | 2 | `list_open_invoices`, `due_on_or_before` 2027-04-04, `vendor_id` and `page` null, `page_size` 10 or null | The two shapes differ in `input_schema` against `parameters`, and `"type": "function"` | (run) |
 | 3 | Line 77 (TS) or 83 (Python) decides, and line 78 or 84 (the `return`) ends the loop. Three entries in request 2 | `stop: end_turn \| turns: 2` (`turns: 3` if the model pages). Request 2: question, model entry, one result with the call's id | (run) |
-| 3, modify | Results before the model's entry: a 400 | 400 `invalid_request_error` about tool results without a matching tool use | (run) |
+| 3, modify | A text block before the results: a 400 | 400 `invalid_request_error` saying the tool results must come first, right after the tool calls | (run) |
 | 4 | Two results, second `is_error: true` | Test: ids B1 and B2. Live: both at once or one at a time, both correct | (run) |
 | 5 | A 400 | 400 `invalid_request_error`, saying the `signature` in the `thinking` block is invalid, with a request id | (run) |
 | 6 | Four items: message, reasoning, function_call, function_call_output | `store: false` on both requests, no `previous_response_id`, `stop: done \| turns: 2` | (run) |

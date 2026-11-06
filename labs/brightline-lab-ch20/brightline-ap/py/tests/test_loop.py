@@ -1,6 +1,6 @@
 """Lab 20's loop tests in Python. No network.
 
-The first group replays the same recorded responses as tests/loop.test.ts.
+The first group replays the same recorded responses as tests/loop.spec.ts.
 The second group runs the real SDK clients against a fake HTTP server, and reads
 the JSON that actually goes over the wire.
 """

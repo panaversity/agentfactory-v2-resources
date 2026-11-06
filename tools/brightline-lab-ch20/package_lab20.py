@@ -41,6 +41,8 @@ for a, b in [
     ("`stop: end_turn \\| turns: 2`. Request 2: question, model entry, one result with the call's id",
      "`stop: end_turn \\| turns: 2` (`turns: 3` if the model pages). Request 2: question, model entry, one result with the call's id"),
     ("Good run cites `purchasing.md:5`.", "Good run cites `po-matching.md:9`."),
+    ("| 3, modify | Results before the model's entry: a 400 | 400 `invalid_request_error` about tool results without a matching tool use |",
+     "| 3, modify | A text block before the results: a 400 | 400 `invalid_request_error` saying the tool results must come first, right after the tool calls |"),
     ("| 5 | A 400 | 400 `invalid_request_error` about the thinking block, with a request id |",
      "| 5 | A 400 | 400 `invalid_request_error`, saying the `signature` in the `thinking` block is invalid, with a request id |"),
 ]:
@@ -99,7 +101,7 @@ tests lead us to expect. Your own notes hold what your runs showed.
 | Task | Agent | My prediction | What happened | Surprises |
 | --- | --- | --- | --- | --- |
 """ + "".join(
-    f"| {n} | {agent} | {rows[n][0] or '(none asked)'} | {rows[n][1]} | |\n"
+    f"| {n} | {agent} | {(rows[n][0] or '(none asked)').replace('|', chr(92) + '|')} | {rows[n][1].replace('|', chr(92) + '|')} | |\n"
     for n, agent in [("0", "Claude Code"), ("1", "Claude Code"), ("2", "Claude Code"), ("3", "Claude Code"),
                      ("4", "Codex"), ("5", "Claude Code"), ("6", "Codex"), ("7", "Codex"), ("8", "Claude Code"),
                      ("9", "Claude Code"), ("10", "OpenCode"), ("11", "Claude Code"), ("12", "OpenCode")]) + """
@@ -150,7 +152,7 @@ KEYS = {
           "All four of `list_open_invoices`' inputs are required, so the model must write null for the ones it leaves "
           "empty: that is how it says \"no vendor filter\" out loud."],
     "3": [pred("3"), shows("3"),
-          "**The change, results before the model's entry:** " + rows["3, modify"][1] + ". Your prediction, if it "
+          "**The change, a text block before the results:** " + rows["3, modify"][1] + ". Your prediction, if it "
           "matched: " + rows["3, modify"][0] + ".",
           "Offline, the recorded run with the practice connector ends `stop: end_turn | turns: 2`, and request 2's "
           "last entry holds one `tool_result` for `toolu_01Lab20A1`, with the ten open invoices due by Sunday, "
@@ -211,7 +213,7 @@ For the reader and the course team only. **Never give these files to a coding ag
 | --- | --- |
 | `expected.md` | Each task's prediction and expected result. Every live result is what the documentation leads us to expect, not yet seen in a live run |
 | `files/` | What the repository holds at tag `ch20` that it did not at `lab20-start`, at the same paths: `docs/loop.md` (Task 13), `ports/ch20.md` (every task, filled in as an example) and `ports/trace-good.jsonl` (Task 10), which Lab 21 compares with. The trace comes from the real loop, tracer and practice connector with a stand-in model, so its ids and timings are illustrative |
-| `task-*.md` | One key per task, also a separate download, linked from the task in `LAB.md` |
+| `task-*.md` | One key per task, a separate download linked from the task in `LAB.md`: the keys are not in the lab's zip |
 """)
 put(LAB / "README.md", """# Lab 20 files
 

@@ -6,6 +6,6 @@ For you, after the task. Open it in a text editor, never in the agent. Every liv
 
 **What a good run shows:** `stop: end_turn | turns: 2` (`turns: 3` if the model pages). Request 2: question, model entry, one result with the call's id.
 
-**The change, results before the model's entry:** 400 `invalid_request_error` about tool results without a matching tool use. Your prediction, if it matched: Results before the model's entry: a 400.
+**The change, a text block before the results:** 400 `invalid_request_error` saying the tool results must come first, right after the tool calls. Your prediction, if it matched: A text block before the results: a 400.
 
 Offline, the recorded run with the practice connector ends `stop: end_turn | turns: 2`, and request 2's last entry holds one `tool_result` for `toolu_01Lab20A1`, with the ten open invoices due by Sunday, April 4 (`total_count` 10): nine past due, and INV-8316, due Friday. A live model that leaves `page_size` null gets five and a `next_page`, and asks once more: three requests, also correct.
