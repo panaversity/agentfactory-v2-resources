@@ -88,8 +88,8 @@ Start here explains model, agent, tool, tool call, loop, API, connector and MCP 
 | Tool choice | How free the model is to use tools. This chapter always uses "auto" (20.2) |
 | Turn | One request and its response (20.3) |
 | Content block | One piece of a response on the first API: text, thinking or a tool call (20.3) |
-| Stop reason | Why the model stopped writing: finished, wants a tool, out of tokens, refused, and a few more (20.3) |
-| Refusal | A normal response in which the model declines. Not an error (20.3) |
+| Stop reason | Why the model stopped writing: finished, wants a tool, out of tokens, declined, and a few more (20.3) |
+| Declined | The stop reason when the model will not do what was asked. A normal response, not an error (20.3) |
 | Tool call, call id | The model's request to run one tool, with a unique id (20.4) |
 | Tool result | Your code's answer to one tool call, carrying its id (20.4) |
 | Handler | The code that runs one tool when the model asks for it, and really checks its inputs (20.2) |
