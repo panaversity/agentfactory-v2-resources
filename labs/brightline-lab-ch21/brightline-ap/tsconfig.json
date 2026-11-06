@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src",
+    "tests",
+    "scripts",
+    "servers/hello",
+    "servers/hello-auth",
+    "servers/ap-ts/src",
+    "servers/ap-ts/test",
+    "servers/ap-ts/scripts"
+  ],
+  "exclude": [
+    "src/loop",
+    "scripts/ask.ts",
+    "scripts/break.ts",
+    "scripts/stateful.ts",
+    "scripts/stream-demo.ts",
+    "tests/*.spec.ts",
+    "src/sdk",
+    "scripts/sdk-ask.ts"
+  ]
+}

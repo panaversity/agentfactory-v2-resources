@@ -1,0 +1,6 @@
+{
+  "models": { "claude": "claude-sonnet-5-5", "openai": "gpt-6-luna", "open": "qwen3:8b" },
+  "limits": { "maxTurns": 8, "maxBudgetUsd": 0.10, "timeLimitSeconds": 120 },
+  "connector": { "name": "brightline" },
+  "checked_on": "2026-11-05"
+}

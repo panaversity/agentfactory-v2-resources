@@ -1,0 +1,12 @@
+{
+  "_read_me": "Versions, models and keys (Concept 20.13). Both languages read this one file. Copy prices from each provider's own pricing page for the pinned model on the day you run the lab, in dollars per million tokens, and write the date in checked_on (F5). Until you do, ask refuses to run.",
+  "prompt_version": "ap-worker.v1",
+  "models": { "claude": "claude-sonnet-5-5", "openai": "gpt-6-luna", "open": "qwen3:8b" },
+  "prices": {
+    "checked_on": "",
+    "claude": { "input": 0, "output": 0, "cacheWrite": 0, "cacheRead": 0 },
+    "openai": { "input": 0, "output": 0, "cacheWrite": 0, "cacheRead": 0 },
+    "open": { "input": 0, "output": 0, "cacheWrite": 0, "cacheRead": 0 }
+  },
+  "limits": { "maxTurns": 8, "maxCostUsd": 0.1, "maxSeconds": 120 }
+}

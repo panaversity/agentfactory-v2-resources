@@ -1,0 +1,21 @@
+{
+  // Production: https://brightline-ap-py.<your-subdomain>.workers.dev/mcp
+  // STATUS: an extension, NOT RUN by the authors (see src/entry.py). Chapter 19: no data ships with this
+  // Worker, and it answers 503 until it has a database connection. The TypeScript Worker is the one
+  // deployed in Lab 19.
+  "name": "brightline-ap-py",
+  "main": "src/entry.py",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["python_workers"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "env": {
+    "staging": {
+      "compatibility_flags": ["python_workers"],
+      "workers_dev": true,
+      "preview_urls": true,
+      "observability": { "enabled": true, "head_sampling_rate": 1 }
+    }
+  }
+}

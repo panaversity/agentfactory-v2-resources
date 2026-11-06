@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "erasableSyntaxOnly": false
+  },
+  "include": [
+    "src/loop",
+    "scripts/ask.ts",
+    "scripts/break.ts",
+    "scripts/stateful.ts",
+    "scripts/stream-demo.ts",
+    "tests/*.spec.ts"
+  ],
+  "exclude": []
+}

@@ -1,0 +1,14 @@
+name: ci-cleanup
+# Delete the pull request's Neon branch when the pull request is merged or closed (field guide F6).
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  delete-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: neondatabase/delete-branch-action@v3
+        with:
+          project_id: ${{ vars.NEON_PROJECT_ID }}
+          api_key: ${{ secrets.NEON_API_KEY }}
+          branch: pr-${{ github.event.number }}

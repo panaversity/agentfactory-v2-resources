@@ -1,0 +1,66 @@
+name: ci
+# Chapter 19: the checks that need a database run against the pull request's own Neon branch, made
+# from staging (sample companies only, never production data) for this pull request, and deleted when it closes (ci-cleanup.yml). Field guide F6.
+#   Secret     NEON_API_KEY        a Neon API key (made by a person in the Neon Console, F2), set with gh secret set
+#   Variable   NEON_PROJECT_ID     the Neon project's id, set with gh variable set
+on: [pull_request]
+jobs:
+  database:
+    runs-on: ubuntu-latest
+    env:
+      AP_EMBEDDINGS: test   # the test embedder: no Cloudflare token in CI. Task 14 runs the real model by hand
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci
+      - run: cd py && uv sync --locked
+      - name: A Neon branch for this pull request, copied from staging (so the pull request's migrations really run)
+        id: branch
+        uses: neondatabase/create-branch-action@v6
+        with:
+          project_id: ${{ vars.NEON_PROJECT_ID }}
+          api_key: ${{ secrets.NEON_API_KEY }}
+          parent_branch: staging
+          branch_name: pr-${{ github.event.number }}
+          role: neondb_owner
+      - name: Migrations, role passwords and the three companies, on the branch
+        env:
+          DATABASE_URL_OWNER: ${{ steps.branch.outputs.db_url }}   # the direct (unpooled) address: migrations need it
+        run: |
+          mkdir -p .secrets && umask 077
+          npm run db:migrate -- --env ci
+          npm run db:passwords -- --env ci
+          npm run tenant:load -- --env ci --replace --company org_brightline --folder data
+          npm run tenant:load -- --env ci --replace --company org_cedar --folder data-cedar
+          npm run tenant:load -- --env ci --replace --company org_conformance --folder data-conformance
+          cp .secrets/db.ci.env .secrets/db.dev.env   # the tests read db.dev.env. This runner is thrown away after the job
+          npm run keys
+      - run: npm run check:roles -- --env ci
+      - run: npm run check:queries
+      - run: npm test && npm run typecheck && npm run test:py && npm run check:py && npm run test:servers && npm run typecheck:auth && npm run test:auth && npm run test:hello-auth
+      # Two copies of each server on 127.0.0.1, test keys only. Fails on any difference.
+      - run: npm run conformance
+      - run: npm run matrix:data -- --env ci
+      - run: npm run eval:retrieval -- --env ci
+      # Both Workers, both environments: settings checked, then bundled. No Cloudflare account is needed.
+      - run: npm run check:deploy
+  tests-unchanged:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - run: bash scripts/check-tests-unchanged.sh origin/${{ github.base_ref }}
+  no-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/check-no-secret-output.sh
+  plugin-valid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: node scripts/check-plugin.ts

@@ -1,0 +1,17 @@
+{
+  "0": "yes. Each language's package brings its own copy of the harness program, a large file, which is why it needs disk space.",
+  "1": "only Step 1 stays, and three entries.",
+  "2": "yours to make. Task 15 checks it.",
+  "3": "most people expect one assistant message per model reply. The SDK sends one per piece of the reply, so text plus a tool call arrives as two.",
+  "4": "six, in that order, and none.",
+  "5": "about thirty, and a shell or web tool. Record what your model actually tried.",
+  "6": "allow (a) only.",
+  "7": "the runner is called twice for each question, once until the call is handed back and once to resume. And no, the rejected tool never runs.",
+  "8": "the hook first, and yes, the tool would still run.",
+  "9": "four calls, and no. The cap is checked after each response, so the last one can cross it.",
+  "10": "stop (b) and (c).",
+  "11": "the folder named after your path, no token, and a connection log only.",
+  "12": "everything but the token.",
+  "13": "at least the reasoning items.",
+  "14": "the base URL and the model, with a placeholder key, and the traces would leave anyway."
+}
