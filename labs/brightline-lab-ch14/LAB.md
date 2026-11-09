@@ -12,7 +12,7 @@ Chapter 14 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 - The ChatGPT desktop app with any plan, for Task 10, and OpenCode Desktop with a model connected, for Task 11, as in [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/).
 - Git, Node.js 24 or later, and uv, as in [Lab 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/lab/). You also need `curl` for Task 7, a small tool most computers already have. Your agent can check with `curl --version`.
 
-**Set up the tools.** If a tool is missing, follow Concept [13.2](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/the-workbench/#how-do-i-set-up-the-workbench) before Task 1. 
+**Set up the tools.** If a tool is missing, follow [13.1](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. 
 
 **The core path and the extensions.** The core path is Tasks 1 to 9, at least one port (Task 10 or 11), and Task 12. A port makes the same change with a second agent. The second port is an extension. Task 9 can be done on another day.
 
@@ -21,7 +21,6 @@ For [Python only](#python-only), or [without a paid Claude plan](#without-a-paid
 **The lab files.** Download [brightline-lab-ch14.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14.zip) and unzip it into a new folder. It contains:
 
 - `brightline-ap/`, a plain copy of the repository at the end of [Lab 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/lab/), with no git history. It also holds the lab's starting files: `data/invoices-messy.csv`, the sample API in `scripts/ap-api.ts`, `.env.example`, two planted calls in `exercises/`, wrong calls put there on purpose, and the made-up SDK in `exercises/sdk-shaped/`. In Task 1, the agent puts it under git. This is the only folder you give an agent.
-- `concept-blocks/`, every code block from Chapter 14, ready to run.
 - `LAB.md`, and `field-guide-code-toolchain.md`, the field guide for the code toolchain, with more detail and a table for fixing problems.
 
 Each task with an answer key links it as a separate download. Open a key in a text editor, never in the agent. An agent that can read the answers is not tested by them.
@@ -322,7 +321,7 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
 | `npm run api` says the port is in use | An earlier API is still running. Ask the agent to list the commands it has running in the background, and to stop the old API. |
 | The `503` never comes | Only the first vendors call with your key, after each start, gives 503. Ask the agent to restart the API to see it again. |
 | The concurrency test fails on a slow computer | Ask the agent to run it again with nothing else running. If it still fails, read the client. The two calls must go to `Promise.all` or `asyncio.gather`, not be awaited one by one. |
-| The type checker or Node refuses an `enum` or a parameter property | Ask for the plain form, as [14.3](https://agentfactory2.panaversity.org/building-ai-workers/structuring-programs/classes-and-objects/#which-typescript-will-node-refuse) shows. |
+| The type checker or Node refuses an `enum` or a parameter property | Ask for the plain form: declare the field, then set it in the constructor. For an `enum`, use a literal type. |
 | The agent edited a test to make it pass | Ask the agent to undo its change to the test. Then tell it in one sentence that the tests are the specification. |
 | Codex cannot reach `localhost` | Its network proxy may block local addresses. Allow `localhost` in its settings for this project. If it still cannot, ask the agent you used for Tasks 1 to 9 to run the tests on `port14-codex`, and say so in your notes. |
 | `git log -p` shows your key | The key was committed. Ask the agent to put a new made-up key in `.env`, and treat the old one as leaked. In real work, revoke it with whoever issued it. |
