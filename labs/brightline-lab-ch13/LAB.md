@@ -72,7 +72,7 @@ You decide every test case and its answer. That is the first 10 percent of [10-8
 
 *Goal:* read both vendor scripts before you run them.
 
-1. Open `src/list-vendors.ts` and `py/brightline_ap/list_vendors.py` in a text editor, and read them side by side. Open `data/vendors.csv` too, the file both scripts read. It tells you how many lines to expect, and which vendor comes first and last.
+1. Open `src/list-vendors.ts` and `py/brightline_ap/list_vendors.py` in a text editor, and read them side by side. Open `data/vendors.csv` too, the file both scripts read. It tells you how many lines to expect, and which vendor comes first and last. You do not need every line of these scripts. To predict the output, find the line near the end of each one that prints, `console.log` or `print`. In Python, text that starts with `f"` works like text between backticks: `{...}` puts in what it holds. Ask the agent about any other line you want to understand.
 2. In `NOTES.md`, under a heading "Task 2", write what each one prints: how many lines, which vendor first and last, and exactly how one line looks.
 3. Ask the agent to run `npm run vendors`, and then, in `py/`, `uv run python -m brightline_ap.list_vendors`. Read what each one prints.
 4. Mark each part of your prediction right or wrong. For the first thing you got wrong, ask the agent about that line, with its number in place of N: "Explain line N of `py/brightline_ap/list_vendors.py`, and why it prints what it prints." If the line is in the TypeScript script, use `src/list-vendors.ts` in the question. If you got everything right, ask instead: "What input would make `list_vendors.py` or `list-vendors.ts` print something wrong?"
@@ -225,7 +225,7 @@ In [Chapter 14](https://agentfactory2.panaversity.org/building-ai-workers/struct
 
 *Goal:* one tests-first change, made by a second agent, with a review before the commit.
 
-**The change.** The finance team is considering a new policy: a due date that falls on a Saturday or Sunday is paid on the Friday before. It is a proposal, so it lives on its own branches, and `main` keeps the [Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) answer.
+**The change.** The finance team is considering a new policy: a due date that falls on a Saturday or Sunday is paid on the Friday before. This is the rule Renee's script never had, in the [overview](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/#why-it-matters), and here you write it down with tests. It is a proposal, so it lives on its own branches, and `main` keeps the [Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) answer.
 
 1. Decide the weekend cases. These are the minimum:
    - `2026-11-07`, a Saturday, gives `2026-11-06`

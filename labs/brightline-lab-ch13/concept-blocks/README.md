@@ -13,6 +13,7 @@ Ask your coding agent to run them, and read each command before you approve it. 
 | `13-2.ts`, `13_2.py` | 13.2 | Both run and go wrong. To see the type checkers catch them, after Lab 13's Task 1: `../../brightline-ap/node_modules/.bin/tsc --noEmit 13-2.ts`, and, from `brightline-ap/py/`, `uv run pyright ../../concept-blocks/ch13/13_2.py` |
 | `13-3.ts`, `13_3.py` | 13.3 | The Python file ends with a deliberate `TypeError` |
 | `13-4-if.ts`, `13_4_if.py`, `13-4-loop.ts`, `13_4_loop.py`, `13-4.ts`, `13_4.py`, `13-4-empty.ts`, `13_4_empty.py`, `13-4-while.ts`, `13_4_while.py` | 13.4 | `13-4.ts` and `13_4.py` are the filter with its `\|\|` default |
+| `13-5-fee.ts`, `13_5_fee.py` | 13.5 | |
 | `13-5.ts`, `13_5.py` | 13.5 | They need `dueDate` from Lab 13's Task 6 and `due_date` from Task 7. The second assertion fails on purpose. Run the Python one as `uv run --project ../../brightline-ap/py python 13_5.py` |
 | `13-5-strict.ts`, `13_5_strict.py` | 13.5 | Both run. Only strict mode refuses them: `../../brightline-ap/node_modules/.bin/tsc --noEmit --strict 13-5-strict.ts`, and, from `brightline-ap/py/`, `uv run pyright ../../concept-blocks/ch13/13_5_strict.py`. Pyright prints the chapter's error among others
 | `13-6.ts`, `13_6.py`, `13-6-sets.ts`, `13_6_sets.py` | 13.6 | `13_6.py` ends with a deliberate `KeyError`, and `13_6_sets.py` with a deliberate `TypeError` |
