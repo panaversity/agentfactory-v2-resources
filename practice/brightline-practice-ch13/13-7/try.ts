@@ -6,9 +6,9 @@ function addDays(isoDate: string, days: number): string {
   const fullText = date.toISOString();
   return fullText.slice(0, 10);
 }
-console.log(addDays("2026-10-20", 15), addDays("2026-12-20", 30), addDays("2028-02-15", 15));
-console.log(new Date(2026, 9, 20).toISOString());
+
+console.log(addDays("2026-10-20", 15));
+
 const line = "INV-8301,V001,open\r";
 const parts = line.split(",");
-const cleaned = line.trim().split(",");
-console.log(parts[2] === "open", cleaned[2] === "open");
+console.log(parts[2] === "open");

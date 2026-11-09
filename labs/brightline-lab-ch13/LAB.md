@@ -12,7 +12,7 @@ Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 - The ChatGPT desktop app with any plan, for Task 10, and OpenCode Desktop with a model connected, for Task 11, as in [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/).
 - Git, Node.js 24 or later, and uv, the Python project tool.
 
-**Set up the tools.** If they are not on your computer yet, follow Concept [13.2](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/the-workbench/#how-do-i-set-up-the-workbench) before Task 1. It gives the official page for each one, and a prompt that has the agent check the versions and install nothing without your yes.
+**Set up the tools.** If they are not on your computer yet, follow [13.1](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. It gives the official page for each one, and a prompt that has the agent check the versions and install nothing without your yes.
 
 **The core path and the extensions.** The core path is Tasks 1 to 9, at least one port (Task 10 or 11), and Task 12. A port makes the same change with a second agent. The second port is an extension.
 
@@ -21,7 +21,6 @@ For [Python only](#python-only), or [without a paid Claude plan](#without-a-paid
 **The lab files.** Download [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) and unzip it into a new folder. It contains:
 
 - `brightline-ap/`, a plain copy of the repository at the end of [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), with no git history. It also holds the lab files: a Python version of the vendor list in `py/`, `data/invoices-check.csv`, `data/invoices-no-terms.csv`, and two scripts in `exercises/`. In Task 1, the agent puts it under git. This is the only folder you give an agent.
-- `concept-blocks/`, every runnable code block from the chapter.
 - `LAB.md`, and `field-guide-code-toolchain.md`, the field guide for the code toolchain, with more detail and a table for fixing problems.
 
 Each task with an answer key links it as a separate download. Open a key in a text editor, never in the agent. An agent that can read the answers is not tested by them.
