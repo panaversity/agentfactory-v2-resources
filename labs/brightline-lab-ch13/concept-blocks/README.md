@@ -11,6 +11,7 @@ Ask your coding agent to run them, and read each command before you approve it. 
 | --- | --- | --- |
 | `13-1.ts`, `13_1.py` | 13.1 | |
 | `13-2.ts`, `13_2.py` | 13.2 | Both run and go wrong. To see the type checkers catch them, after Lab 13's Task 1: `../../brightline-ap/node_modules/.bin/tsc --noEmit 13-2.ts`, and, from `brightline-ap/py/`, `uv run pyright ../../concept-blocks/ch13/13_2.py` |
+| `13-3-variables.ts`, `13_3_variables.py`, `13-3-lists.ts`, `13_3_lists.py` | 13.3 | |
 | `13-3.ts`, `13_3.py` | 13.3 | The Python file ends with a deliberate `TypeError` |
 | `13-4-if.ts`, `13_4_if.py`, `13-4-loop.ts`, `13_4_loop.py`, `13-4.ts`, `13_4.py`, `13-4-empty.ts`, `13_4_empty.py`, `13-4-while.ts`, `13_4_while.py` | 13.4 | `13-4.ts` and `13_4.py` are the filter with its `\|\|` default |
 | `13-5-fee.ts`, `13_5_fee.py` | 13.5 | |
