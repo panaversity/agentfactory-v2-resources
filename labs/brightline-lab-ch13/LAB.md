@@ -262,7 +262,7 @@ In [Chapter 14](https://agentfactory2.panaversity.org/building-ai-workers/struct
 *Goal:* the same change on an open-source agent, with its safety rules set first.
 
 1. If you skipped Task 10, do its steps 1 and 2 first, so the branch `weekend-tests` exists.
-2. In a plain-text editor, not a word processor, create `opencode.jsonc` in `brightline-ap`, with the rules from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), Task 8. The rules make OpenCode ask before every edit, every shell command and any folder outside the project, and refuse every edit under `data/`.
+2. Copy `opencode.jsonc` from your [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) folder into `brightline-ap`. If you no longer have it, it is in [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip). The rules make OpenCode ask before every edit, every shell command and any folder outside the project, and refuse every edit under `data/`.
 3. Open the folder in OpenCode Desktop. Before you send anything, turn auto-accept off for this project, under Settings, then Projects.
 4. Send: "Make a new branch called `port-opencode` from `weekend-tests`, and switch to it." Expect `git switch -c port-opencode weekend-tests`. Then switch to the *plan* agent, and send: "Read `tests/weekend.test.ts` and plan the change that makes it pass. Do not edit anything."
 5. Switch to the *build* agent and send the same brief as Task 10, step 4. Approve each edit and command.
