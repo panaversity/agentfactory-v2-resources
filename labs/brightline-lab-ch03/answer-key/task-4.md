@@ -14,18 +14,18 @@ Task 4 carries checks 9 to 11 of the lab's 24.
    - **Which source wins:** the new hours, 7 a.m. to 3 p.m., win over the info sheet's old hours, 8 a.m. to 4 p.m.
    - **What the worker may do:** write the replies. It does not post them, because Leila posts them herself.
    - **What never happens:** no reply offers anything free, or money back.
-   - Passed: all five. Today's date, or last week's dates, need the month, day and year, and a weekday is fine either way. The posting day may be "Thursday" or "October 15", because today's date, or last week's dates, show which Thursday. For the hours, "the info sheet's hours are out of date" passes. So does a rule that your lines win over the files, with the new hours in your setup. The day the new hours started is not needed. For the authority, "draft only" or "never post" passes. For what never happens, a line that covers both in other words passes, such as "nothing that costs Leila money".
-   - Missed: any of the five missing; a date with no year; the new hours, with nothing that says they win over the info sheet; a worker that may post a reply, even after Leila approves it; or a line that rules out only free things, or only money back.
+   - Passed: all five. Today's date, or last week's dates, need the month, day and year, and a weekday is fine either way. The posting day may be "Thursday" or "October 15", because today's date, or last week's dates, show which Thursday. For the hours, "the info sheet's hours are out of date" passes. So does a rule that your lines win over the files, with the new hours in your setup. So do the new hours with the day they started, such as "Since Monday, October 5, 2026, the café is open 7 a.m. to 3 p.m.", because that day makes the info sheet's hours old. With the first two, the day the new hours started is not needed. For the authority, "draft only" or "never post" passes. For what never happens, a line that covers both in other words passes, such as "nothing that costs Leila money".
+   - Missed: any of the five missing; a date with no year; the new hours, with no start day and nothing that says they win over the info sheet; a worker that may post a reply, even after Leila approves it; or a line that rules out only free things, or only money back.
 10. **You chose what to question first by the job's main risk** (Lesson 3.2, "How to choose"). Under "What I question first, and why", your lines name a sample. The reason is about quality: the words customers will read, the tone, what a reply says or promises, or the worker's judgment.
     - Passed: a sample, with such a reason, and the WORKER's sample is in the chat. A plan first, then a sample, passes. A dry run first, then a sample, passes too: the GUIDE could not run the dry run, so you chose again.
     - Missed: no sample in your lines, such as a plan alone; or a sample with no reason, or with a reason that names no risk, such as "it is quick" or "it is the best"; or no sample from the WORKER in Task 4, even if your lines now name one.
 11. **You questioned what came back, and fixed each gap in your setup, until every answer came from your lines** (Lesson 3.2, "How to do it, step by step", Steps 2 to 5).
     - **Why, and what if:** you sent `Why did you do it this way?`, with a part of the WORKER's reply after it. And you asked one "what if" question, with the number of its kind, from 1 to 5.
     - **Each gap became a line:** each answer you judged vague or wrong got a line of yours, under a part of Job B's setup or under its Kept as tests. A fix said only in the chat does not count, because the next run reads the setup, not this chat.
-    - **The answers came from your lines:** in your last `Same questions` reply in Task 4, every choice under "Where each choice came from" says `your line`. One `nobody said it, so I guessed` means a gap is still open, even if you typed yes.
+    - **The answers came from your lines:** in your last `Same questions` reply in Task 4, every choice under "Where each choice came from" says `your line`, and each answer is right. One `nobody said it, so I guessed` means a gap is still open, even if you typed yes. So does an answer that goes against your setup or against a fact in check 9, or that quotes a line that does not decide its choice.
     - **The newest plan or sample keeps your rules:** the WORKER's newest plan or sample in Task 4 never gives the old hours, 8 a.m. to 4 p.m., as the café's hours now. And it offers nothing free, and no money back.
     - Passed: all four.
-    - Missed: no "why" question, or no "what if" question; an answer judged vague or wrong with no line in the setup; any `nobody said it, so I guessed` in your last `Same questions` reply; or a newest plan or sample that gives the old hours as the hours now, or offers something free or money back.
+    - Missed: no "why" question, or no "what if" question; an answer judged vague or wrong with no line in the setup; any `nobody said it, so I guessed` in your last `Same questions` reply, or an answer there that is wrong; or a newest plan or sample that gives the old hours as the hours now, or offers something free or money back.
 
 ## Why
 
@@ -44,9 +44,9 @@ These things never make you miss a check:
 - A plan before the sample.
 - Which number you gave your "what if" question.
 - A fact from Leila's box that you added as a fix in step 9, and not in steps 1 and 2.
-- An answer you judged clear, with no new line. A clear answer needs no fix.
+- An answer you judged clear, with no new line, when it is right and a line of yours decides it. A clear answer needs no fix.
 - An answer you judged vague that this key would call wrong, or the other way round. Both are gaps.
-- How good the WORKER's replies are, apart from the hours and what never happens.
+- How good the WORKER's replies to the reviews are, apart from the hours and what never happens.
 - How many rounds it took until every answer came from your lines.
 
 ## Take it to work

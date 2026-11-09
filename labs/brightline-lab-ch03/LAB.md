@@ -203,7 +203,7 @@ Its answer comes from a line of the setup: stop and ask. When every question get
 
 **Checkpoint:** your review is in your notebook, and nothing is deleted yet.
 
-**What this shows:** a finished run is not a correct run. The review contract you wrote before the work tells you what to check when the work comes back. Your plan showed what the worker would do, and what it guessed. Only its work showed how it judged each file. A gap costs a minute to find in a plan, and the whole job in the finished work ([Lesson 3.2](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/first-10-percent/)).
+**What this shows:** a finished run is not a correct run. The review contract you wrote before the work tells you what to check when the work comes back. Your plan showed what the worker would do, and what it guessed. Only its work showed how it judged each file. A gap found in a plan costs a minute. Found in the finished work, it costs the whole job ([Lesson 3.2](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/first-10-percent/)).
 
 ## Job B: a café's online reviews
 
@@ -232,7 +232,7 @@ Its answer comes from a line of the setup: stop and ask. When every question get
 7. Pick what surprised you most in the WORKER's reply. In your lab chat, type `Why did you do it this way?`, then what surprised you, in a few words, and send it. The WORKER answers.
 8. Ask the WORKER one "what if" question. Type the kind's number, then your question, and send it. The WORKER answers.
 9. The GUIDE shows each answer, one at a time. Type `clear` only when the answer is right, and a line of yours really decides it. If a choice says "nobody said it, so I guessed", type `vague`, even when the guess is right. If the answer is wrong, type `wrong`, even when it quotes your line. For each gap, send a line as `<part>: <your line>`. The GUIDE shows the parts you can name.
-10. In your lab chat, type the request the GUIDE shows, and send it. The WORKER answers from your new lines.
+10. If you added a line, in your lab chat, type the request the GUIDE shows, and send it. The WORKER answers from your new lines.
 11. In your lab chat, type `Same questions` and send it. The WORKER answers your questions again.
 12. The GUIDE asks if every answer is now clear and correct, and comes from a line of yours that decides it. Type `yes` or `no`. For no, you judge the answers again.
 13. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-4.md), attach it, type `Check` and send it.
@@ -299,7 +299,7 @@ Its answer comes from a line of the setup: stop and ask. When every question get
 
 **What you do:**
 
-1. In your lab chat, type `Next` and send it. The GUIDE shows the three strengths of a limit, what Claude and ChatGPT offer for a scheduled task, and your Job C limits, lettered A, B, C, from your setup. For each limit, type its letter and one of: `impossible`, `a person decides` or `written and checked`. Then say, in a few words, what you do to make the limit work that way.
+1. In your lab chat, type `Next` and send it. The GUIDE shows the three strengths of a limit, what Claude and ChatGPT offer for a scheduled task, and your Job C limits, lettered A, B, C, from your setup. It may also show Little Wick's rule, from Sana's box, with its own letter. For each limit, type its letter and one of: `impossible`, `a person decides` or `written and checked`. Then say, in a few words, what you do to make the limit work that way.
 2. Sana said "without me". Say who reviews the report, and when.
 3. The GUIDE shows three Mondays at 9 a.m., one at a time. For each Monday, say what you read first, and what you do. If the GUIDE then shows more about that Monday, say what you do now.
 4. The GUIDE asks about Sana's monthly review, on Friday, October 30, 2026. Answer in one or two sentences.
@@ -319,7 +319,7 @@ Its answer comes from a line of the setup: stop and ask. When every question get
 
 1. In your lab chat, type `Next` and send it. The GUIDE shows your three setups side by side, part by part.
 2. Name three things that all three setups needed, one per line, each as `<part>: <the thing>`.
-3. For each job, say its main risk and each check you questioned, in order, one line per job.
+3. For each job, in order, say its main risk and what you questioned: a plan, a sample or a dry run. One line per job.
 4. The GUIDE shows the three questions, in order, and four short cases from other work, one at a time.
 5. For each case, answer the three questions in order, with `yes` or `no`. Stop at the first answer that points to a part of the rhythm: "no" to question 1, or "yes" to question 2 or 3. Then name that part (first 10, middle 80 or final 10), and where its fix starts, all in one line. A "no" to question 3, when the result was wrong, means the evidence did not show the problem: find out why, as question 3 says. When the result was right, no answer points to a part: write `nothing found`, and use the three signs the GUIDE shows.
 6. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-8.md), attach it, type `Check` and send it.
@@ -338,8 +338,8 @@ Its answer comes from a line of the setup: stop and ask. When every question get
 2. Name one task from your work, your studies, a club or your home that you could hand over this month, in one sentence. Pick a task that is not one of this lab's jobs. Use no real names, numbers or customer data.
 3. Say the task's main risk, what you would question first at work, and why, in one sentence. In this lab, you question a plan in the fresh chat, whatever you choose here. A sample or a dry run needs real data, and real data stays out of this lab.
 4. The GUIDE shows the empty outline. Send your whole setup in one message, under its four headings. The AI opens a second document beside the chat, "My own task". It holds your task, your setup and, last, your answer to step 3, marked as not for the worker.
-5. The GUIDE asks you to download "My own task" from its menu, as a .docx or .pdf file. In Claude, the menu item is Export. Download it, then type `yes` and send it. If there is no download, type `no`, and the GUIDE says how to save it as a file.
-6. **Open a fresh chat with memory off,** on the same app or on the other one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu.[^anthropic-memory] If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory] Keep this chat open until Task 9's check has passed. A Temporary Chat stays out of your chat history,[^openai-temporary] so you may not find it again after you leave it. If you need your lab chat, open it in another tab or window, or use the other app for this chat.
+5. The GUIDE asks you to download "My own task" from its menu, as a .docx or .pdf file. In Claude, the menu item is Export. Download it, then type `yes` and send it. If there is no download, type `no`, and the GUIDE says how to paste it into the fresh chat instead.
+6. **Open a fresh chat with memory off,** on the same app or on the other one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Your Claude (in older Settings, under Memory), until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu.[^anthropic-memory] If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized.[^openai-memory] Keep this chat open until Task 9's check has passed. A Temporary Chat stays out of your chat history,[^openai-temporary] so you may not find it again after you leave it. If you need your lab chat, open it in another tab or window, or use the other app for this chat.
 7. Attach only your downloaded "My own task", and send this as it is. No file? Paste all of "My own task" below the prompt, in the same message.
 
    ```text
@@ -372,7 +372,7 @@ Its answer comes from a line of the setup: stop and ask. When every question get
    4. The threshold: a word that is not clear
    5. The evidence: the proof that comes back
 9. Judge each answer: clear, vague or wrong. An answer is clear only when it is right, and a line of yours really decides it. If a choice says "nobody said it, so I guessed", the answer is vague, even when the guess is right. If the answer is wrong, it is wrong, even when it quotes your line. For each gap, say what is missing, in a few words, and the part of your setup where its line belongs. Send one line per answer, in the order you asked, like this: `Answer 1: <vague or wrong>. Gap: <what is missing>. Part: <its part>`. For a clear answer, send only `Answer 1: clear`. The fresh chat replies "Noted."
-10. **Check it now, in the fresh chat.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-9.md). Only now, after your judgments, attach it in the fresh chat, so it cannot shape the answers. The fresh chat has no GUIDE, so send this check prompt with the key:
+10. **Check it now, in the fresh chat.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03-key-task-9.md). Only now, after your judgments, attach it in the fresh chat, so it cannot change the answers. The fresh chat has no GUIDE, so send this check prompt with the key:
 
     ```text
     Outcome:     The task I just finished, graded against the newest
@@ -390,7 +390,7 @@ Its answer comes from a line of the setup: stop and ask. When every question get
                  Grade only this key's checks.
     ```
 
-11. **Improve your own task, if you like,** before you close the fresh chat. Back in your lab chat, tell the GUIDE a line that your task lacks. It adds the line to "My own task". Then download it again.
+11. **Improve your own task, if you like,** before you close the fresh chat. Back in your lab chat, tell the GUIDE a line that your task lacks. It adds the line to "My own task". Then download it again, or copy its text again.
 
 **Checkpoint:** the fresh chat answered from your setup alone, and you judged each answer.
 
@@ -430,7 +430,7 @@ You never need to learn these: the GUIDE shows each one on a `Type:` line when y
 - **The WORKER used today's real date, and you wanted the job's date.** In Job A or Job B, add the job's date to your setup, as a line. For a dry run, put the date in your message: `Do a dry run as of <the date you choose>`.
 - **The GUIDE showed what a run says before you chose your reading order.** Say: "Show only the sections' names. I choose the order first."
 - **The WORKER quoted another job's line as your line.** Say: "Only this job's setup counts as my lines."
-- **The answers were boring at once.** Look at "Where each choice came from" again. Each "nobody said it, so I guessed" is a line that your setup still lacks, even when the guess is right. To add one, send `<part>: <your line>`. You choose which guesses matter. No check needs them all.
+- **The answers were boring at once.** Look again at "Where each choice came from" under the plan, the sample or the dry run. Each "nobody said it, so I guessed" there is a line that your setup still lacks, even when the guess is right. To add one, send `<part>: <your line>`. You choose which of those guesses matter, and no check grades them. In the answers to your questions, every guess is a gap.
 - **You attached the wrong task's key.** Say so, attach the right one, and type `Check` again.
 - **A key will not attach.** Open it on your computer, and copy its text. In your lab chat, send it after the word `Check`. In Task 9's fresh chat, send it under the check prompt.
 - **ChatGPT says you are out of uploads.** Its free plan allows three file uploads a day,[^openai-uploads] and this lab uses 14. To use fewer, send each key's text after the word `Check`, as above, instead of attaching it. Or wait until the limit resets, and go on from your step.
@@ -472,7 +472,7 @@ These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associ
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 3.7 shows two open-source tools beside Claude and ChatGPT: OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 
-[^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center, accessed 15 October 2026.
+[^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center, accessed 9 November 2026.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center, accessed 15 October 2026.
 [^openai-temporary]: Temporary chat in ChatGPT, OpenAI Help Center.
 [^anthropic-docs]: Get started with Claude Docs, Claude Help Center.

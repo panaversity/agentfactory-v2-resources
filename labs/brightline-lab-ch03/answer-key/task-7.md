@@ -8,7 +8,7 @@ The answers for Task 7 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second 
 
 Task 7 carries checks 17 to 19 of the lab's 24.
 
-17. **Each limit is held at the strength it needs** (Lesson 3.7, "The invariant"). Under "Middle 80 percent: limits for runs nobody watches", your answers hold these three, whichever of your lines they belong to:
+17. **Each limit is held at the strength it needs** (Lesson 3.7, "The invariant"). Under "Middle 80 percent: limits for runs nobody watches", your answers hold these three, whichever lettered line they belong to:
     - **Changing or refunding an order: impossible.** The worker gets no access that can change an order: read-only access, or only a copy of the orders, and no other tool that can change them. Sana's box says anyone who can open the orders can also change or refund them. So the worker must not get the access a person has.
     - **Contacting a customer: impossible.** The worker has no email or message tool. The report goes in the shared folder, so it needs none.
     - **Each line that needs judgment: written and checked.** A line needs judgment when the worker must decide whether it applies, such as what counts as a sale, or your stop rule. It is written in the instructions, and checked in the final 10.

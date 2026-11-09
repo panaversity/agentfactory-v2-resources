@@ -28,10 +28,10 @@ Task 2 carries checks 3 to 5 of the lab's 24.
    - Missed: an answer missing; "everything", or words that would fit any job, such as "the work", as what is checked; evidence that is only the file names, only a total, or only a reason; success with no number; a stop rule with no case the worker can see, such as "if something goes wrong"; or a "never automatically" answer that is not about the folder's files.
 5. **You fixed each gap in your setup until the answers were boring, and chose a check for the new case** (Lesson 3.2, Steps 3 to 5, and "How to choose").
    - **Each gap became a line.** Each answer you judged vague or wrong got a line, under a part of Job A's setup. A fix said only in the chat does not count, because the next run reads the setup, not this chat.
-   - **The answers became boring.** In your last `Same questions` reply in Task 2, every choice under "Where each choice came from" says `your line`. One `nobody said it, so I guessed` means a gap is still open, even if you typed yes.
+   - **The answers became boring.** In your last `Same questions` reply in Task 2, every choice under "Where each choice came from" says `your line`, and each answer is right. One `nobody said it, so I guessed` means a gap is still open, even if you typed yes. So does an answer that goes against your setup or against a fact in check 3, or that quotes a line that does not decide its choice.
    - **The new case.** Your answer names a plan or a dry run, alone or with another check, and a reason that says what could go wrong. "The new case", below, explains it.
    - Passed: all three.
-   - Missed: an answer judged vague or wrong with no line in the setup; any `nobody said it, so I guessed` in your last `Same questions` reply; or, for the new case, a sample alone, or no reason that says what could go wrong.
+   - Missed: an answer judged vague or wrong with no line in the setup; any `nobody said it, so I guessed` in your last `Same questions` reply, or an answer there that is wrong; or, for the new case, a sample alone, or no reason that says what could go wrong.
 
 ## The new case
 

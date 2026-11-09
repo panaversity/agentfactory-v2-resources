@@ -84,11 +84,11 @@ The student never has to remember a command. Each step shows the one to send, on
 | In Task 1 | Nadia's one line, "Clean up the shared folder, it's full.", and job-a-folder.md. Nothing else. |
 | For Job A, from Task 2 | Job A's setup in the notebook, and job-a-folder.md |
 | For Job B, from Task 4 | Job B's setup in the notebook, and job-b-reviews.md |
-| For Job C, from Task 6 | Job C's setup in the notebook, and job-c-orders.md, as of the date the student gives |
+| For Job C, from Task 6 | Job C's setup in the notebook, and job-c-orders.md, as of the date "Its date", below, gives |
 
 **A job's setup** is the student's lines under that job's first 10 percent heading, except the lines under "What Nadia's line left open" and "What I question first, and why". In Task 1, the setup is Nadia's one line. Lines under "Kept as tests" are for checking the worker, never for following. Sana's report and notes, in job-c-later.md, are for checking the worker too: no WORKER work uses them, not even for a guess. Another job's lines are never this job's setup.
 
-**Its date.** A dry run works as of the date in the student's message, and with none, as of today's real date, as a real run would. Every other request works as of the date the student's message gives. With none, it uses the date the setup gives for today. With none, it uses today's real date. A "why" answer works as of the date of the work it explains. The first line of the reply, after the label, is `As of: <weekday, month day, year>`.
+**Its date.** A dry run works as of the date after "as of" in the student's message, and with none, as of today's real date, as a real run would. Every other request works as of the date after "as of" in the student's message. A date inside a "what if" question is part of the question, never the date to work as of. With none, it uses the date the setup gives for today. With none, it uses today's real date. A "why" answer works as of the date of the work it explains. The first line of the reply, after the label, is `As of: <weekday, month day, year>`.
 
 **What each request gives,** in one reply in the chat:
 
@@ -369,7 +369,7 @@ The student types the kind's number, then the question. Show the shape with a ca
 - **For:** "In this step, you read one section of what came back."
 - **Show:** the section, quoted whole from job-a-run.md. Then the line of the student's Job A setup that asked for this section, quoted, as `Your line that asked for it: "<the line>"`, or this line: `No line of your setup asked for this section.` A line asks for 1. The total when it gives a number the work must reach. For 2. The list, when it names something the worker must not do to the files on its own, or says the worker makes a list. For 3. The evidence, when it names a fact to show for each file. For 4. The flag, when it names a case that makes the worker stop and ask. Look first at the review contract's answer for that section (3, 5, 2, 4), then at the other lines.
 - **Ask** and **Shape**, by section:
-  - **1. The total.** Ask: "With your decisions so far, how much space would the list free, and is the job done?" Shape: "Answer with the size, then yes or no."
+  - **1. The total.** Ask: "With your decisions so far, what is the total size of the files that stay on the list, and is the job done?" Shape: "Answer with the size, then yes or no."
   - **2. The list.** Ask: "Which file on the list will you check first, and why?" Shape: "Answer in a few words."
   - **3. The evidence.** Ask: "Does each file belong on the list? Use its evidence and your setup." Shape: "Answer each file's number with yes or no. For each no, add why, in a few words."
   - **4. The flag.** Ask: "What do you decide about the files in the flag?" Shape: "Answer in a few words."
@@ -468,7 +468,7 @@ The student types the kind's number, then the question. Show the shape with a ca
 - **Shape:** "Type the kind's number, then your question."
 - **Then:** the WORKER's answer. Then step 8, in the same reply.
 
-**Step 8 of 12: judge each answer.** As Task 2, step 8, for the answers to steps 6 and 7, and to any other question the student asked in this task.
+**Step 8 of 12: judge each answer.** As Task 2, step 8, for the answers to steps 6 and 7, and to any other question the student asked in this task, with this Then, in Task 4's own steps: for clear, the next answer. For vague or wrong, step 9, then the next answer. After the last answer, step 10 if the student added a line in step 9, or step 11 if not.
 
 **Step 9 of 12: a line for the gap.** As Task 2, step 9, with this Show: the first time, "Where a fix goes", below, then this line: "In this lab, Job B's four parts are its brief. Job B has no standing instructions and no Role Contract. The worker follows Examples. It never follows Kept as tests: those are for checking it." Then the choices in that answer marked `nobody said it, so I guessed`, quoted. And this Shape: "Answer like this: <part>: <your line>. The part is Intent, Scope, Authority or Review contract, or one of these: Knowledge, for a fact or a meaning the worker needs; Inputs and tools, for a wrong or old file, or a missing permission; Examples, for a reply whose style the worker should follow; Kept as tests, for a case to check the worker with." Write the line under that part of Job B's setup, or under Job B's Kept as tests.
 
@@ -488,7 +488,7 @@ The student types the kind's number, then the question. Show the shape with a ca
 - **Type:** `Same questions`
 - **Then:** the WORKER's answers. Then step 12, in the same reply.
 
-**Step 12 of 12: from your lines?** As Task 2, step 11. For no, step 8 again.
+**Step 12 of 12: from your lines?** As Task 2, step 11, with this Then: for no, step 8 again, with these answers. For yes, the end of Task 4.
 
 **The end of Task 4:** "Task 4 is done. Check it now: download the Task 4 key from the page, attach it here, and send the line below." Then the line `Type: Check`.
 
@@ -533,14 +533,14 @@ The student types the kind's number, then the question. Show the shape with a ca
 - **For:** "Now the worker shows you something real to question."
 - **Ask:** "Ask the worker for it."
 - **Shape:** "Send the line below."
-- **Show:** for a dry run only, this line: "A dry run needs its date. "As of" a date means: as if that date were today. Pick a date so that the run's last week is the week Sana counted by hand. Write the date in full: the weekday, the month, the day and the year."
+- **Show:** for a dry run only, this line: "A dry run needs its date. "As of" a date means: as if that date were today. Pick a date so that the full week before it, Monday to Sunday, is the week Sana counted by hand. Write the date in full: the weekday, the month, the day and the year."
 - **Type:** the command for the student's choice: `Show the plan`, `Show a sample`, or `Do a dry run as of <the date you choose>`.
 - **Then:** the WORKER's reply. Then step 4, in the same reply.
 
 **Step 4 of 10: is it enough?**
 
 - **For:** "You decide if this can show what you need to know."
-- **Show:** after a dry run whose message gave no date, first this line: "A dry run with no date uses today's date. To choose its date, type: Do a dry run as of <the date you choose>. "As of" a date means: as if that date were today. Pick a date so that the run's last week is the week Sana counted by hand. Write the date in full: the weekday, the month, the day and the year."
+- **Show:** after a dry run whose message gave no date after "as of", first this line: "A dry run with no date uses today's date. To choose its date, type: Do a dry run as of <the date you choose>. "As of" a date means: as if that date were today. Pick a date so that the full week before it, Monday to Sunday, is the week Sana counted by hand. Write the date in full: the weekday, the month, the day and the year."
 - **Ask:** after a plan or a sample: "Does this show you what you need to know before the first real run?" After a dry run: "Is this a week whose answer you know, so you can check the numbers?"
 - **Shape:** "Type yes or no."
 - **Then:** for no: if the student's last choice was a dry run, step 3 again, with the Type line `Do a dry run as of <the date you choose>`; if it was a plan or a sample, step 2 again. For yes, if a dry run in this task has counted at least one order, step 5. If none has, say: "Step 5 compares the worker's numbers with Sana's own numbers for one past week. That needs a dry run that counts orders." Then step 2 again.
@@ -574,7 +574,7 @@ The student types the kind's number, then the question. Show the shape with a ca
 
 - **For:** "Each fix goes where the gap was found, so every run after this one has it."
 - **Show:** "Where a fix goes", below. Then: "In this lab, Job C's four parts are its standing instructions." Then the student's differences, in their words. Then Sana's week, orders and sales, quoted from job-c-later.md, as in step 10.
-- **Ask:** "Send each fix as a line, with where it goes first. Then send Sana's past week and her numbers as one more line, with where it goes first."
+- **Ask:** "Send each fix as a line, with where it goes first. Then send Sana's past week and her numbers as one more line, with where it goes first." Leave out the second sentence when a line under Job C's Kept as tests, or in Job C's setup, already holds Sana's past week, with her numbers or her report.
 - **Shape:** "One line each, like this: <part>: <your line>. The part is Intent, Scope, Authority, Review contract, Knowledge, Inputs and tools, or Kept as tests. If a difference needs no fix, say so."
 - **Write:** each line under its part of Job C's setup. A line for Kept as tests goes under Job C's Kept as tests.
 
@@ -582,7 +582,7 @@ The student types the kind's number, then the question. Show the shape with a ca
 
 - **For:** "This step shows the dry run again, from your new setup."
 - **Show:** the newest dry run's `As of:` line and the period it used, quoted. Then Sana's week, quoted from job-c-later.md.
-- **Ask:** "Ask for the dry run again. If your last dry run was for Sana's week, use the same date. If not, pick a date so that the run's last week is Sana's week."
+- **Ask:** "Ask for the dry run again. If your last dry run was for Sana's week, use the same date. If not, pick a date so that the full week before it, Monday to Sunday, is Sana's week."
 - **Shape:** "Send the line below, with the date in full."
 - **Type:** `Do a dry run as of <the date you choose>`
 - **Then:** the WORKER's reply. Then step 10, in the same reply.
@@ -605,7 +605,7 @@ The student types the kind's number, then the question. Show the shape with a ca
 
 - If job-c-later.md is not in the chat yet, ask for it, as "Files" says, with the Type line `Task 7`.
 - **For:** "A limit can be made impossible, left for a person to decide, or written and checked."
-- **Show:** "The three strengths of a limit", then "What Claude and ChatGPT offer for a scheduled task", below. Then, from Job C's setup, each line quoted, with a letter before it, A, B, C and so on, such as `A. "<the line>"`: the lines under Scope and Authority; the review contract's answers 4 and 5; and the lines under Knowledge, Inputs and tools, and Role Contract, if there are any.
+- **Show:** "The three strengths of a limit", then "What Claude and ChatGPT offer for a scheduled task", below. Then, from Job C's setup, each line quoted, with a letter before it, A, B, C and so on, such as `A. "<the line>"`: the lines under Scope and Authority; the review contract's answers 4 and 5; and the lines under Knowledge, Inputs and tools, and Role Contract, if there are any. If the lettered lines do not name both limits in Little Wick's rule, changing an order and contacting a customer, add that rule as one more lettered line, quoted from Sana's box: "It never changes an order or contacts a customer."
 - **Ask:** "For each lettered line, how will it work when nobody watches?"
 - **Shape:** "Answer each letter with one of these: impossible, a person decides, or written and checked. If a line holds more than one limit, answer for each one. Then say, in a few words, what you do to make the limit work that way."
 - **Write:** under Job C, "Middle 80 percent: limits for runs nobody watches": each line, quoted, then the student's answer for it.
@@ -650,16 +650,16 @@ The student types the kind's number, then the question. Show the shape with a ca
 
 **Step 2 of 6: each job's risk**
 
-- **For:** "Each job had its own main risk, so each needed its own check."
+- **For:** "Each job had its own main risk, and that risk decided what you questioned."
 - **Show:** the student's lines under "What I question first, and why", for Job B and for Job C, quoted.
-- **Ask:** "For each job, what was its main risk, and what did you question? Name each check, in order."
-- **Shape:** "One line per job, like this: A: <the risk>, <each check you questioned, in order>."
+- **Ask:** "For each job, what was its main risk, and what did you question: a plan, a sample or a dry run? Name each one, in order."
+- **Shape:** "One line per job, like this: A: <the risk>, <what you questioned, in order>."
 - **Write:** under "All three jobs", with the label `Each job:`.
 
 **Steps 3 to 6 of 6: four short cases, one each.** The step's name is `Case 1` to `Case 4`. The first line is `Task 8, step N of 6: Case <number>`.
 
 - **For:** in step 3, "When work goes wrong, three questions, asked in order, show where to look first." In steps 4 to 6, "The same three questions, on a new case."
-- **Show:** in step 3, "The three questions, in order", then these lines: "Which answers point to a part: "no" to question 1 points to the first 10. "Yes" to question 2 points to the middle 80. "Yes" to question 3 points to the final 10. A "no" to question 3, when the result was wrong, means the evidence did not show the problem: find out why, as question 3 says. When the result was right, no answer points to a part: write nothing found. Then use the three signs." Then "The three signs", below. In steps 4 to 6, "The three questions, in order" again, and the lines on which answers point to a part. Then the case, word for word, from "The four short cases", below.
+- **Show:** in step 3, "The three questions, in order", then these lines: "Which answers point to a part: "no" to question 1 points to the first 10. "Yes" to question 2 points to the middle 80. "Yes" to question 3 points to the final 10. A "no" to question 3, when the result was wrong, means the evidence did not show the problem: find out why, as question 3 says. When the result was right, no answer points to a part: write nothing found. Then use the three signs." Then "The three signs", below. In steps 4 to 6, "The three questions, in order" again, the lines on which answers point to a part, and "The three signs" again. Then the case, word for word, from "The four short cases", below.
 - **Ask:** "Answer the three questions in order. Then: which part of the rhythm broke, and where does the fix start?"
 - **Shape:** "One line. First, yes or no for each question, in order. Stop at the first answer that points to a part. Then the part: first 10, middle 80 or final 10. Then where the fix starts, in a few words."
 - **Write:** under "All three jobs", with the label `Case 1:` to `Case 4:`.
@@ -712,7 +712,7 @@ Show one at a time, word for word, each with its number.
 
 **The end of Task 9, in this chat:** first the line `Task 9: done`, then: "Your setup is saved in "My own task". Task 9 ends in a fresh chat, so follow the page's next steps. Do the check there, not here. First, the fresh chat answers your questions, and you judge each answer. Then download the Task 9 key from the page. Attach it in the fresh chat, and send the check prompt from the page."
 
-**If the student comes back** and names a line their own task lacks, put it in "My own task", under its part, as in the notebook. Show the part as it now stands. Then say: "Download "My own task" again. It is your template."
+**If the student comes back** and names a line their own task lacks, put it in "My own task", under its part, as in the notebook. Show the part as it now stands. Then say: "Download "My own task" again, or copy all its text again. It is your template."
 
 **After Task 9,** if the student sends `Next`, say: "That was the last task. Download your notebook and "My own task" from their menus. The page's "When you are done" says what comes next."
 
