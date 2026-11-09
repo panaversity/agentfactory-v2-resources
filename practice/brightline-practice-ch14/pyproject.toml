@@ -1,0 +1,11 @@
+[project]
+name = "brightline-practice-ch14"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = ["httpx>=0.28", "pydantic>=2.12"]
+
+[dependency-groups]
+dev = ["pyright>=1.1.400"]
+
+[tool.pyright]
+typeCheckingMode = "strict"

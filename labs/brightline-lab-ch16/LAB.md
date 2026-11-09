@@ -17,7 +17,7 @@ Chapter 16 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 - For Task 20, OpenCode version 2, with a model connected. Install it with `npm install -g @opencode/cli`. The older `opencode-ai` package is version 1.
 - For Task 17, a Claude plan that can install plugins on claude.ai: Pro, Max, Ultra, Team or Enterprise. For Task 19, a ChatGPT plan that can install plugins: OpenAI's plan table shows Plus, Pro, Business and Enterprise/Education. Both tasks are optional. If you skip one, write "skipped" and why in `ports/ch16.md`.
 
-**Set up the tools.** If one is missing, follow Concept [13.2](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/the-workbench/#how-do-i-set-up-the-workbench) before Task 1. It gives the official page for each, and a prompt that has the agent check the versions and install nothing.
+**Set up the tools.** If one is missing, follow Concept [13.1](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. It gives the official page for each, and a prompt that has the agent check the versions and install nothing.
 
 **You need no earlier chapter or lab.** The zip holds a complete, working repository. Where a task uses an idea from an earlier chapter, it explains it in place.
 
