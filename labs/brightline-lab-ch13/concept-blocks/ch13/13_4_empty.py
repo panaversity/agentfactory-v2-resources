@@ -1,2 +1,0 @@
-print(bool(""))
-print(bool([]))

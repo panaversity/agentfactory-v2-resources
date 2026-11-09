@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { dueDate } from "../../brightline-ap/src/due-date.ts";
+import { dueDate } from "./due-date.ts";
 
 test("crosses a year end", () => {
   assert.equal(dueDate("2026-12-20", "Net 30"), "2027-01-19");

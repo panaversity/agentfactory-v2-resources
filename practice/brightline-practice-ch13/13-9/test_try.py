@@ -1,8 +1,6 @@
-import sys
-sys.path.insert(0, "../../brightline-ap/py")
 import pytest
 
-from brightline_ap.due_date import due_date
+from due_date import due_date
 
 def test_crosses_a_year_end() -> None:
     assert due_date("2026-12-20", "Net 30") == "2027-01-19"
