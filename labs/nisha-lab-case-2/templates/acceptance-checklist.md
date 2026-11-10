@@ -1,6 +1,6 @@
 # Acceptance checklist: before anything is released
 
-Fill this in before you choose your reply to Mark. This is a teaching exercise, not accounting advice. [Needs an accountant's check.]
+Fill this in before you choose your reply to Mark. This is a teaching exercise, not accounting advice.
 
 For each row, write **closed**, **explained but not supported** or **open**, and the document that would close it.
 

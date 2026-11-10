@@ -1,8 +1,8 @@
-# Answer key for Nisha's First Client (instructors only)
+# Answer key for Nisha's First Client
 
-Do not put this file in the learner download. It lists the differences and errors put into the data pack on purpose, and the expected figures. Learners who study alone should open it only after they have filled in their own grading sheet in Part 7 of the [lab](../lab-run-nishas-first-client-job.md).
+This file is kept out of the learner download. It lists the differences and errors put into the data pack on purpose, and the expected figures. Open it only after you have filled in your own grading sheet in Part 7 of the [lab](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/lab-run-nishas-first-client-job/).
 
-All data is made up for teaching. The bridge is a teaching example of selected items. [Needs an accountant's check.]
+All data is made up for teaching. The bridge is a teaching example of selected items. It needs a qualified accountant's check before anyone relies on it.
 
 ## What is in each data-pack file
 
@@ -40,7 +40,7 @@ The six differences (S1 to S6) are real differences between IFRS and US GAAP. Th
 | 4. Warehouse lease | plus 1.2 if operating, about 0 if finance |
 | **US GAAP profit before tax** | **103.2 if operating, 102.0 if finance** |
 
-A common first version leaves out line 3 and ends at 100.2 (operating). That is version 1 in the story.
+A bridge that leaves out line 3 ends at 100.2 (operating).
 
 ## How to mark the grading sheet
 
