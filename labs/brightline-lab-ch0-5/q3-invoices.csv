@@ -1,0 +1,22 @@
+invoice_id,vendor_id,vendor_name,invoice_date,amount_usd,terms
+INV-3101,V001,Great Lakes Paper Co.,2026-07-02,4210.00,2/10 net 30
+INV-3102,V002,Buckeye Janitorial Supply,2026-07-06,1875.40,net 30
+INV-3103,V003,Scioto Packaging,2026-07-09,6320.00,1/10 net 30
+INV-3104,V004,Ohio Valley Freight,2026-07-14,2980.75,net 45
+INV-3105,V005,Midwest Fasteners,2026-07-20,5400.00,1/10 net 60
+INV-3106,V006,Columbus Office Depot Supply,2026-07-23,1290.60,2/10 net 30
+INV-3107,V001,Great Lakes Paper Co.,2026-07-28,3880.00,2/10 net 30
+INV-3108,V003,Scioto Packaging,2026-08-04,5915.25,1/10 net 30
+INV-3109,V002,Buckeye Janitorial Supply,2026-08-07,2040.00,net 30
+INV-3110,V005,Midwest Fasteners,2026-08-12,4875.00,1/10 net 60
+INV-3111,V006,Columbus Office Depot Supply,2026-08-17,1515.90,2/10 net 30
+INV-3112,V004,Ohio Valley Freight,2026-08-21,3110.00,net 45
+INV-3113,V001,Great Lakes Paper Co.,2026-08-26,4405.50,2/10 net 30
+INV-3114,V003,Scioto Packaging,2026-09-01,6105.00,1/10 net 30
+INV-3115,V007,Hocking Equipment Leasing,2026-09-03,148500.00,net 30
+INV-3116,V005,Midwest Fasteners,2026-09-09,5120.00,1/10 net 60
+INV-3117,V006,Columbus Office Depot Supply,2026-09-14,1380.00,2/10 net 30
+INV-3118,V002,Buckeye Janitorial Supply,2026-09-17,1960.25,net 30
+INV-3119,V001,Great Lakes Paper Co.,2026-09-22,4150.00,2/10 net 30
+INV-3120,V004,Ohio Valley Freight,2026-09-25,2875.00,net 45
+INV-3121,V003,Scioto Packaging,2026-09-29,6010.00,1/10 net 30
