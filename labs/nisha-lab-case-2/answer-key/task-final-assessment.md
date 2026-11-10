@@ -1,6 +1,6 @@
-# Model answers for the final assessment (instructors only)
+# Model answers for the final assessment
 
-Do not put this file in the learner download. These are model answers for [Final assessment: a new AI Worker](../final-assessment-a-new-ai-worker.md). Other answers can earn full points if the reasons are sound. Mark the reasons, not the wording.
+This file is kept out of the learner download. These are model answers for [Final assessment: a new AI Worker](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/final-assessment-a-new-ai-worker/). If you study alone, open them only after you have written your own plan. Other answers can earn full points if the reasons are sound. Mark the reasons, not the wording.
 
 ## Part A. Execute or only draft (2 points)
 
@@ -55,7 +55,7 @@ A model list the principal can check in five minutes:
 
 ## Part E. When something goes wrong (1 point)
 
-**The run stops:** the worker saves nothing new, so the last saved draft is still in the folder. On Friday morning Sara sees that there is no new draft and that the run stopped. She either starts the run again or writes the issue herself. Nothing goes to parents without the principal's approval, so a stopped run delays the newsletter but cannot send a wrong one.
+**The run stops:** the worker saves nothing new, so the last saved draft is still in the folder. On Friday morning Sara sees that there is no new draft and that the run stopped. In Case 2, a thread that stopped at a usage limit waited and continued on its own when the limit reset. If Sara's worker does the same, the draft arrives later. If it does not, she starts the run again or writes the issue herself. Nothing goes to parents without the principal's approval, so a stopped run delays the newsletter but cannot send a wrong one.
 
 **A note arrives late:** the worker leaves it out of the draft and lists it at the top. On Friday morning Sara and the principal decide whether to add it. The worker does not decide on its own.
 
