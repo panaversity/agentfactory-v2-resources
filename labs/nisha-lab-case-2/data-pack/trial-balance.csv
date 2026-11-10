@@ -1,0 +1,22 @@
+account,name,debit_rs_million,credit_rs_million
+1010,"Property, plant and equipment",300.0,
+1020,"Right-of-use asset, warehouse",31.9,
+1030,Development costs (intangible asset),21.0,
+1040,Inventories,48.0,
+1050,Trade receivables,120.0,
+1060,Cash,35.0,
+2010,"Lease liability, warehouse",,33.1
+2020,Trade payables,,90.0
+2030,Bank loan,,150.0
+3010,Share capital,,100.0
+3020,"Retained earnings, opening",,62.8
+4010,Revenue,,900.0
+4020,Reversal of inventory write-down,,6.0
+5010,Cost of sales,640.0,
+5020,Distribution costs,40.0,
+5030,Administrative expenses,70.0,
+5040,"Depreciation, right-of-use asset",8.0,
+5050,Interest on lease liability,3.2,
+5060,Amortization of development costs,3.0,
+5070,Other operating expenses,21.8,
+,TOTAL,1341.9,1341.9
