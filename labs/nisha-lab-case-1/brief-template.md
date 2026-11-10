@@ -6,18 +6,18 @@ Fill in the parts in square brackets. The four parts come from [One job, start t
 
 | Part | What it says | Your brief |
 | --- | --- | --- |
-| **Outcome** | What you want back, and how to know it is done | A plan for Chapter 7, Inventory (IAS 2 / ASC 330), in the book's chapter pattern, plus one full worked example. It is done when [write your done-when: every heading in the pattern has one or two plain sentences, the worked example shows the same goods under both frameworks, and every fact is either linked to an official source or listed as unchecked] |
-| **Format** | What shape the result takes | [For example: one Markdown file, about 1,200 to 1,500 words, with these headings in order: why it matters, where the frameworks agree, where they differ, the reason where it helps, worked example, If you know IFRS, If you know US GAAP, common traps, exercises. A list of sources at the end.] |
-| **Inputs** | Which sources to use | Nisha's version 6 file in the Library, for the book's style and chapter list. Official sources only: the IFRS Foundation for IAS 2, and FASB for ASC 330. [Add any others you allow.] |
-| **Autonomy** | How far the worker may go without you | Draft, grade and improve only. Never share, send or publish anything. Do not add new chapters or topics. Ask me before any change to the book's title, parts or chapter list. List every fact you could not check. |
+| **Outcome** | What you want back, ending with a sentence that starts "Done when" | A plan for Chapter 7, Inventory (IAS 2 / ASC 330), in the book's chapter pattern, plus one full worked example. Done when [write it: every heading in the pattern has one or two plain sentences, the worked example shows the same goods under both frameworks, and every fact is either linked to an official source or listed as unchecked] |
+| **Context** | Who it is for, and what to work from | For readers of The Bilingual Accountant who know basic accounting and speak English as a second language. Nisha's version 6 file in the Library, for the book's style and chapter list. Official sources only: the IFRS Foundation for IAS 2, and FASB for ASC 330. [Add any others you allow.] |
+| **Format** | What shape the result takes, and what could not be checked | [For example: one Markdown file, about 1,200 to 1,500 words, with these headings in order: why it matters, where the frameworks agree, where they differ, the reason where it helps, worked example, If you know IFRS, If you know US GAAP, common traps, exercises. A list of sources at the end.] List every fact you could not check. |
+| **Constraints** | The rules the result must follow, and how far the worker may go without you | Content rules: the rules below. Do not add new chapters or topics. Autonomy: draft, grade and improve only. Never share, send or publish anything. Ask me before any change to the book's title, parts or chapter list. |
 
-**Rules Nisha set later, which you set now:**
+**Content rules Nisha set later, which you set now, in the constraints:**
 
 - Write in plain English. Many readers speak English as a second language. Use short sentences.
 - Name only the two or three main standards for each side.
 - Use official sources only, not summaries from firms' websites.
 - Use made-up numbers in every example.
-- Grade accuracy only on what you can check, and give me a list of what you could not check.
+- Grade accuracy only on what you can check. The format asks for the list of what you could not check.
 
 ## Facts the draft will probably state (check every one yourself)
 
@@ -34,7 +34,7 @@ A scheduled run starts on its own, so this prompt must stand alone.
 
 ```text
 Using the project instructions, write version 1 of the Chapter 7 plan and worked example.
-Follow the format exactly. Use only the inputs listed. Stop when the done-when is met.
+Follow the format exactly. Use only the sources in the context. Stop when the "Done when" sentence is met.
 Save the result to the Library as "chapter-7-v1.md".
 At the end, list every fact you could not check against an official source.
 Do not share, send or publish anything.
