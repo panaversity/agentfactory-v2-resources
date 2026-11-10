@@ -232,7 +232,7 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
 4. Predict in `NOTES.md`: now that your tests pass, will both clients pass against the real API, and how long will each run take? Say why. Then, with the API still running, ask the agent to run `npm run fetch-ap`, and then, in `py/`, `uv run --env-file ../.env python -m brightline_ap.api_client`. If the Python client fails on the first invoice, read the error before you ask for help. Compare the field names in the error with the JSON from Task 7. [14.6](https://agentfactory2.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#why-did-the-tests-pass-and-the-live-run-fail) says what to ask for.
 5. Ask the agent to stop the API, and then to run `git diff -- tests/ py/tests/`. It must print nothing.
 
-**Checkpoint:** both clients print 8 vendors and 13 open invoices, in about one second. One after the other, the calls would take 1.2 seconds or more. Every test passes, and the tests are unchanged. Ask the agent to commit.
+**Checkpoint:** both clients print 8 vendors and 13 open invoices, in about one second. One after the other, the calls would take about 1.5 seconds. Every test passes, and the tests are unchanged. Ask the agent to commit.
 
 **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-8.md).
 
@@ -287,7 +287,7 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
 *Goal:* the same change on an open-source agent.
 
 1. If you skipped Task 10, do its step 1 first, so the branch `remit-tests` exists.
-2. In a plain-text editor, not a word processor, create `opencode.jsonc` in `brightline-ap`, with the rules from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), Task 8. The zip does not include one.
+2. Copy `opencode.jsonc` from your [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) folder into `brightline-ap`. This zip does not include one. If you no longer have it, it is in [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip).
 3. Open the folder in OpenCode Desktop. Before you send anything, turn auto-accept off for this project, under Settings, then Projects.
 4. Send: "Please make a new branch called `port14-opencode` from `remit-tests`, and switch to it." Expect `git switch -c port14-opencode remit-tests`. Then switch to the *plan* agent, and send: "Please read the remit email tests in `tests/schemas.test.ts`, and plan the change that makes them pass. Don't edit anything yet."
 5. Switch to the *build* agent, and send the same brief as Task 10, step 3.

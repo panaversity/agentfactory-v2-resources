@@ -10,7 +10,7 @@ Chapter 15 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 - The Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan.
 - The ChatGPT desktop app with any plan, or OpenCode Desktop with a model connected, for Task 12, as in [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/).
-- Git, Node.js 24 or later, and uv, as in [Lab 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/lab/). If a tool is missing, follow Concept [13.2](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/the-workbench/) before Task 1.
+- Git, Node.js 24 or later, and uv, as in [Lab 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/lab/). If a tool is missing, follow Concept [13.1](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1.
 - A free GitHub account, and the `gh` command-line tool. `field-guide-code-review-setup.md`, in the download, has the steps to install `gh`. Sign in yourself with `gh auth login` before Task 3. Never type a password or token into an agent's chat.
 
 **Public repository, on purpose.** On a free GitHub account, branch protection, rulesets and code owners work only on public repositories. Every name, invoice and amount in Brightline is made up, so this lab uses a public repository. In real work, private code needs a private repository on a plan that can protect it. Never push real company data to a public repository.
@@ -194,7 +194,7 @@ Predict before the agent runs anything. Write your predictions and notes in `NOT
 2. Run the AI review on your route:
    - *Route A.* Mark the pull request ready, or comment `@claude review`. Wait for the *Claude Code Review* check run and the inline comments. For the security step, follow Route B, which needs an API key.
    - *Route B.* Store the key yourself, in a terminal, with `gh secret set CLAUDE_API_KEY`, typing the key only into `gh`. Then ask the agent to make a new branch from an up-to-date `main`. Paste the security review job from `field-guide-code-review-setup.md`, section 7, into the chat, and ask it to add the job to `ci.yml`, with its step that fails when it reports findings. Open it as its own pull request. It touches `.github/`, so it is high tier. Merge it. Then ask the agent to switch to `main` and pull, switch to `weekend-rule`, merge `main` and push. Read the job's comments. Keeping the job out of the weekend pull request means Task 9 gets it too, and Task 10's change to `ci.yml` does not collide with it.
-   - *Route C.* Run `/code-review --comment` on the branch, so the findings appear on the pull request as inline comments, then `/security-review`. `/code-review` reads `CLAUDE.md`, not `REVIEW.md`. Paste the security summary into a comment.
+   - *Route C.* Run `/code-review --comment` on the branch, so the findings appear on the pull request as inline comments, then `/security-review`. `/code-review` reads `CLAUDE.md`, not `REVIEW.md`, so this review does not follow the rules you wrote. Task 7's fresh reviewer did. Paste the security summary into a comment.
 3. For each finding, decide: fix, or resolve with a reason. For the reconciliation finding, if it appears, predict first, then ask the agent to run `PAY_WEEKEND_RULE=on npm run reconcile -- data/invoices.csv`, so you see it for yourself.
 4. Send: "Add a test to `tests/reconcile.test.ts` that sets `PAY_WEEKEND_RULE=on` and expects 0 mismatches in `data/invoices.csv`. Run it and show it failing. Then make reconciliation compare stated dates with `dueDate`, not the pay date, and remove any function nothing uses. Do not change existing tests. Then commit and push."
 5. Reply in each finding's thread with the fix's commit id or your reason, and resolve it. Ask the agent to update the brief's Review section, commit it and push.
@@ -253,7 +253,7 @@ Predict before the agent runs anything. Write your predictions and notes in `NOT
 
 *Set up the same starting point.* The weekend change is merged now, with its fix. To give a second reviewer the change as it first was, with the same rules, build two practice branches that never merge. Send:
 
-> Please switch to `main` and pull. Make a new branch `review-base` from the tag `lab15-start`, and copy the rules from `main` with `git checkout main -- REVIEW.md AGENTS.md`. Add a section to the end of `AGENTS.md`: `## Code Review Rules`, with one line, "Read `REVIEW.md` from the base branch first and follow it." Commit on `review-base`. Then make a new branch `port-review` from the tag `weekend-rule-start`, merge `review-base` into it, and push both branches.
+> Please switch to `main` and pull. Make a new branch `review-base` from the tag `lab15-start`, and copy the rules from `main` with `git checkout main -- REVIEW.md AGENTS.md`. Add a section to the end of `AGENTS.md`: `## Code Review Rules`, with one line, "Read `REVIEW.md` from the base branch with `git show`, never from this branch's copy, and follow it." Commit on `review-base`. Then make a new branch `port-review` from the tag `weekend-rule-start`, merge `review-base` into it, and push both branches.
 
 Codex reads that heading. Now `git diff review-base...port-review` shows only the weekend change, and both branches carry the rules.
 
@@ -315,7 +315,7 @@ If you cannot use the Claude app at all, do Tasks 1 to 11 in Codex in the ChatGP
 
 | Lab step | Codex in the ChatGPT desktop app | OpenCode Desktop |
 | --- | --- | --- |
-| Safety, before Task 2 | Permission mode *Ask for approval*, *Work in* set to *This computer* | The `opencode.jsonc` rules from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), with shell commands set to ask, and auto-accept off |
+| Safety, before Task 2 | Permission mode *Ask for approval*, *Work in* set to *This computer*. Codex still runs local commands without asking, so follow [15.2](https://agentfactory2.panaversity.org/building-ai-workers/code-review/git-through-the-agent/#which-commands-need-a-pause) | The `opencode.jsonc` rules from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), with shell commands set to ask, and auto-accept off |
 | Task 2, step 1: open the folder | Open `brightline-ap` | Open `brightline-ap` |
 | Task 5: rules files | Edit `AGENTS.md`. Skip `CLAUDE.md` | Edit `AGENTS.md`. Skip `CLAUDE.md` |
 | Task 7, step 4: the change pane | The review pane, set to the branch diff | The review panel |

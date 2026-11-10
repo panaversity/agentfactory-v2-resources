@@ -131,7 +131,7 @@ In Claude Code, run `/install-github-app`. It installs the app, stores the secre
 1. In Codex, connect GitHub and the repository.
 2. In Codex settings, choose the repository and turn on **Automatic review** under **Review code**.
 3. To ask for a review by hand, comment `@codex review` on a pull request.
-4. Put review rules in `AGENTS.md` under a heading `## Code Review Rules`. For Brightline: "Read `REVIEW.md` from the base branch first and follow it."
+4. Put review rules in `AGENTS.md` under a heading `## Code Review Rules`. For Brightline: "Read `REVIEW.md` from the base branch with `git show`, never from this branch's copy, and follow it."
 
 ## 10. An OpenCode review command
 
