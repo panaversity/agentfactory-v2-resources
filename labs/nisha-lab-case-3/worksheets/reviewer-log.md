@@ -9,7 +9,7 @@ The Claude column is the core step. The ChatGPT column is a stretch step. Use th
 | Time I finished reading the answer | | |
 | Minutes | | |
 | Its answer, in one sentence | | |
-| Is "timing item" the right label, in its view? | | |
+| Is $212,400 right, in its view? | | |
 | The exact lines it used | | |
 | What it said it could not check | | |
 

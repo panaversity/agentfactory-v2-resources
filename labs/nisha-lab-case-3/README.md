@@ -1,6 +1,6 @@
 # Lab kit: who can cause a send?
 
-This folder has everything for the lab in Case 3, Nisha's Firm. The lab page is `lab-who-can-cause-a-send.md`, one folder up from `labs`. You do not need a team plan. Every figure in this kit is made up.
+This folder has everything for the lab in Case 3, Nisha's Firm. The lab page is [Lab: who can cause a send?](https://agentfactory.panaversity.org/claude-and-chatgpt-2/case-3-nishas-firm/lab-who-can-cause-a-send/). You do not need a team plan. Every figure in this kit is made up.
 
 ## What is here
 
@@ -43,7 +43,7 @@ The method inside the skill is made up for teaching. It is not accounting advice
 
 ## If you want to go further
 
-Ask a reviewer to reconcile weeks 1 to 3 from the lines. There are other differences to find, and one of them is an error. Your instructor has the list.
+Ask a reviewer to reconcile weeks 1 to 3 from the lines. There are other differences to find, and one of them is an error. The answer key has the list. The lab page links to it at its end.
 
 ## Sources
 

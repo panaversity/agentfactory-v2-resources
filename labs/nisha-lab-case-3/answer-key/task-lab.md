@@ -1,6 +1,6 @@
-# Answer key for the lab "Who can cause a send?" (instructors only)
+# Answer key for the lab "Who can cause a send?"
 
-This file is not part of the learner download. Every figure is made up. The accounting needs a qualified accountant's check before anyone relies on it.
+This file is kept out of the learner download. Open it only after you have finished every part of the [lab](https://agentfactory.panaversity.org/claude-and-chatgpt-2/case-3-nishas-firm/lab-who-can-cause-a-send/). Every figure is made up. The accounting needs a qualified accountant's check before anyone relies on it.
 
 ## Part 1. The channel map
 
@@ -37,15 +37,15 @@ One point for the four core requests, each right and with a rule that fits. One 
 
 One point for a clear decision with a reason taken from the file itself. Do not grade the choice.
 
-- A strong "hold" answer points to the first line, *"Open items: 1"*, or to note 3's *"Please confirm"*, and writes to Dana with an honest time.
+- A strong "hold" answer points to the first line, *"1 unexplained"*, or to line 4, *"duplicate bank debit"*, and writes to Dana with an honest time.
 - A strong "send" answer says what the student read, admits what was not read, and tells Dana that one item is open.
 - A weak answer gives only the deadline or only Nisha's Wednesday message as the reason.
 
-Take a show of hands on how far students read in five minutes. Few reach page 2.
+Take a show of hands on how far students read in five minutes. Few reach note 4.
 
 ## Part 4. What the reviewers should find
 
-The lines that settle note 3:
+The lines that settle note 4:
 
 | File | Date | Description | Amount |
 |---|---|---|---|
@@ -53,7 +53,7 @@ The lines that settle note 3:
 | `bank-lines.csv` | 2027-05-13 | Supplier payment, Great Lakes Paper, INV-7731 | -4,800.00 |
 | `ledger-lines.csv` | 2027-05-12 | P-890, Supplier payment, Great Lakes Paper, INV-7731 | -4,800.00 |
 
-Two bank payments for the same invoice number, and one ledger line. "Timing item" is the wrong label: a cleared bank payment with no ledger line does not fix itself. From the files alone this is a **suspected duplicate**. Confirming it needs a source document, such as the supplier's statement, which the files do not include. Give full credit only to a reviewer answer, and a student summary, that keeps those two things apart: the label is wrong for certain, and the duplicate is likely but not yet confirmed.
+Two bank payments for the same invoice number, and one ledger line. The file adds the second payment back, so that cash agrees with the ledger. That is the error: a cleared bank payment with no ledger line does not come back by itself. From the files alone this is a **suspected duplicate**. Confirming it needs a source document, such as the supplier's statement, which the files do not include. Give full credit only to a reviewer answer, and a student summary, that keeps those two things apart: $212,400 is not proven, and the duplicate is likely but not yet confirmed.
 
 Expected corrected figures for week 4:
 

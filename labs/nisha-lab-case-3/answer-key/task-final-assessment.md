@@ -1,6 +1,6 @@
-# Model answers for the final assessment (instructors only)
+# Model answers for the final assessment
 
-This file is not part of the learner download. The scenario is made up. Other good answers are possible. Grade the reasoning.
+This file is kept out of the learner download. These are model answers for [Final assessment: find the gap](https://agentfactory.panaversity.org/claude-and-chatgpt-2/case-3-nishas-firm/final-assessment-find-the-gap/). If you study alone, open them only after you have written your own answers. The scenario is made up. Other good answers are possible. Grade the reasoning.
 
 ## Part A. Three questions about the email (2 points)
 
@@ -8,16 +8,16 @@ This file is not part of the learner download. The scenario is made up. Other go
 |---|---|---|
 | Who sent it? | The worker's account, `league@` | The mailbox's sent folder and mail log |
 | Who asked? | Ben, a coach, at 6:58 a.m. | The thread in `#coaches` |
-| Who approved it? | Nobody | No record. Carla's text message to Priya approved something else, outside Slack. |
+| Who approved it? | Carla, at 7:01 a.m. | The thread in `#coaches`. Her message says "Yes, go ahead." |
 
-The approver has no answer in any record. The setup has no place where an approval is saved, and the one decision Carla made was in a text message the worker could not see.
+All three have an answer in a record. What no record shows is what Carla meant. Her decision, the 9 a.m. games on Field 3, was in a text message the worker could not see. Her message in the thread named no field, no game time and no list of families.
 
-One point for the sender and the asker with the right places. One point for "nobody" with the reason.
+One point for the sender and the asker with the right places. One point for Carla's message, with what it did not name.
 
-## Part B. The approval that was missing (2 points)
+## Part B. The approval that was given (2 points)
 
-1. Carla approved canceling the 9 a.m. games on Field 3. She did it in a private text message to Priya. She did not approve an email to all families.
-2. The rule said "only when Carla has okayed it". The worker had no way to check a claim about Carla. In `#coaches`, every member has the same access, so Ben's sentence was as good as anyone's.
+1. Carla decided to cancel the 9 a.m. games on Field 3. She said so in a private text message to Priya. Her message at 7:01 said only "Yes, go ahead." It named no field, no game time and no list of families.
+2. The rule said "only when Carla has okayed it". Ben's sentence was a claim about Carla, so the worker asked her. Her own message was an okay from the person the rule names. But the rule did not say what an okay must name, and the question she answered said "games" and "all families". The worker held back on Ben's word by its own judgment. Nothing in the setup required that.
 3. A model message, posted by Carla herself:
 
 > Approved by Carla, Saturday 6:55 a.m.: email only the families with a 9 a.m. game on Field 3 today that their game is canceled because the field is flooded. All other games are on. This approval is for this one email.
@@ -39,7 +39,7 @@ A model design:
 - Tests 2 and 3 pass: the mailbox and the payment account do not apply to any channel a coach is in. A public channel's access reaches anyone who joins, so nothing risky may apply there.
 - Test 4 passes: Carla is in the channel with the mailbox, and Tom is in the channel with the payment account.
 
-**The refund request.** Under the old setup, the payment credential applied in every channel. Any member of `#coaches` could ask for a refund, and the worker had the access to issue it. Under the new design, the payment account does not exist in `#coaches`, so the request can only be passed to Tom.
+**The refund request.** Under the old setup, the payment credential applied in every channel. Any member of `#coaches` could ask for a refund, and the worker had the access to issue it. In a chat test the worker passed the request to Tom. That was its own judgment: the written rule says nothing about refunds, and nothing but that judgment stood between the request and the money. Under the new design, the payment account does not exist in `#coaches`, so the request can only be passed to Tom.
 
 One point for a map that moves the mailbox and the payment account out of every public channel and narrows what coaches can reach to read-only. One point for a correct account of the refund request before and after.
 
@@ -70,7 +70,7 @@ Half a point for the remaining trust. Half a point for a clear correction.
 
 Full marks when each claim about the worker names a rule, for example rule 3 for where a credential applies and rule 7 for public channels. Things the rule card does not settle should be marked unknown. Good examples of unknowns:
 
-- Whether the worker would ask for a confirmation before a mass email or a refund.
+- Whether the worker would always ask for a confirmation before a mass email or a refund.
 - Whether the payment service has its own approval step or refund limit.
 - Whether a coach has connected a personal email account, which would let a coach send as themselves (rule 6).
 
