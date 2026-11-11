@@ -1,6 +1,6 @@
-# Lab 0.4: Your 4D plan, before the run
+# Lab 0.3: Your 4D plan, before the run
 
-Chapter 0.4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.4: Your 4D plan, before the run](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/lab/), so you can do the lab without the book.
+Chapter 0.3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.3: Your 4D plan, before the run](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/lab/), so you can do the lab without the book.
 
 In this lab the AI does the typing, and you make the decisions. It quizzes you on the three ways of working with AI, then asks you for each line of a 4D plan and writes the plan down. It quizzes you on which D comes next, and then you test one of the plan's lines. It takes about 15 minutes, on Claude or ChatGPT, and every message you send is printed below.
 
@@ -19,7 +19,7 @@ Quiz me on three ways of working with AI. Automation: the AI does a specific tas
 
 Answer each job in one word: automation, augmentation or agency. If it shows buttons for the three, you can click one instead.
 
-**What you probably saw.** Job 1 is automation, a specific task from your instructions. Job 2 is augmentation, where you think it through together. Job 3 is agency, where the AI works alone, on tasks still to come ([0.4.1](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/three-ways/)).
+**What you probably saw.** Job 1 is automation, a specific task from your instructions. Job 2 is augmentation, where you think it through together. Job 3 is agency, where the AI works alone, on tasks still to come ([0.3.1](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/three-ways/)).
 
 ## Step 2. Decide the 4D plan
 
@@ -36,7 +36,7 @@ With each D, also ask when it is done: before the first run, after each run, or 
 
 Answer each question in a few words, in your own words.
 
-**What a good plan has.** Every line has a "when". Delegation keeps any change to the register, and any contact with a vendor, for a person. Description says what to write when the register does not show something, such as "no due date". Discernment names a person and a set time. Diligence names what goes in, how people are told, and who signs ([0.4.2](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/the-four-ds/)). Compare your table with these, and with Dave's plan for the monthly reconciliation in [0.4.3](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/putting-them-together/).
+**What a good plan has.** Every line has a "when". Delegation keeps any change to the register, and any contact with a vendor, for a person. Description says what to write when the register does not show something, such as "no due date". Discernment names a person and a set time. Diligence names what goes in, how people are told, and who signs ([0.3.2](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/the-four-ds/)). Compare your table with these, and with Dave's plan for the monthly reconciliation in [0.3.3](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/putting-them-together/).
 
 ## Step 3. Name the next D
 
@@ -52,7 +52,7 @@ Now quiz me on which D comes next. Use these four Ds, and no others: Delegation 
 
 Answer each one with a D and one reason, in a few words.
 
-**What you probably saw.** The first situation needs Description, so the next request asks for the dates. The second needs Delegation, because you decide what the AI does alone before anything else. The third needs Diligence, because someone signs, and the vendor is told that AI made the table. The fourth needs Discernment, so you check the number against its invoice before anyone relies on it ([0.4.3](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/putting-them-together/)).
+**What you probably saw.** The first situation needs Description, so the next request asks for the dates. The second needs Delegation, because you decide what the AI does alone before anything else. The third needs Diligence, because someone signs, and the vendor is told that AI made the table. The fourth needs Discernment, so you check the number against its invoice before anyone relies on it ([0.3.3](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/putting-them-together/)).
 
 ## Step 4. Test the Description line
 
@@ -67,7 +67,7 @@ County Freight, $2,980.00, due September 15
 
 Then open another temporary chat, and send the same message without its first sentence.
 
-**What you probably saw.** Both chats named Midwest Packaging. The first chat wrote "no due date" for Buckeye Office Supply, the words you asked for. The second chose its own words, and it may have guessed a date, such as September 5, 30 days after the invoice arrived. A run that nobody watches has only what is written down before it starts. Your line makes every run say the same thing, in words the person who checks the table can look for ([0.4.2](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/the-four-ds/)).
+**What you probably saw.** Both chats named Midwest Packaging. The first chat wrote "no due date" for Buckeye Office Supply, the words you asked for. The second chose its own words, and it may have guessed a date, such as September 5, 30 days after the invoice arrived. A run that nobody watches has only what is written down before it starts. Your line makes every run say the same thing, in words the person who checks the table can look for ([0.3.2](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/the-four-ds/)).
 
 ## Step 5. Keep it
 
@@ -77,7 +77,7 @@ Go back to the chat with your plan, and send this:
 Show the plan as a markdown page, in one code block.
 ```
 
-Copy the code block into a plain text editor, and save it as `4d-plan.md`, as in Lab 0.3. It is your 4D plan for this chapter.
+Copy the code block into a plain text editor, and save it as `4d-plan.md`, as in Lab 0.2. It is your 4D plan for this chapter.
 
 ## If something goes wrong
 

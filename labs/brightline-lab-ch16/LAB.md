@@ -1,6 +1,6 @@
 # Lab 16: the Brightline AP plugin v0.1
 
-Chapter 16 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 16: the Brightline AP plugin v0.1](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/lab/), so you can do the lab without the book.
+Chapter 16 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 16: the Brightline AP plugin v0.1](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/lab/), so you can do the lab without the book.
 
 *Time: about 8 hours 15 minutes, in three sittings, plus an optional hour at work for Task 21. The main route is about 6 hours 40 minutes. Lab files: `brightline-lab-ch16.zip`, standalone. The same steps are in `LAB.md` inside the zip.*
 
@@ -17,7 +17,7 @@ Chapter 16 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 - For Task 20, OpenCode version 2, with a model connected. Install it with `npm install -g @opencode/cli`. The older `opencode-ai` package is version 1.
 - For Task 17, a Claude plan that can install plugins on claude.ai: Pro, Max, Ultra, Team or Enterprise. For Task 19, a ChatGPT plan that can install plugins: OpenAI's plan table shows Plus, Pro, Business and Enterprise/Education. Both tasks are optional. If you skip one, write "skipped" and why in `ports/ch16.md`.
 
-**Set up the tools.** If one is missing, follow Concept [13.1](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. It gives the official page for each, and a prompt that has the agent check the versions and install nothing.
+**Set up the tools.** If one is missing, follow Concept [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. It gives the official page for each, and a prompt that has the agent check the versions and install nothing.
 
 **You need no earlier chapter or lab.** The zip holds a complete, working repository. Where a task uses an idea from an earlier chapter, it explains it in place.
 
@@ -38,7 +38,7 @@ Each task links its answer key as a separate download. Open a key in a text edit
 
 Use the zip's copy for this lab, even if you finished an earlier lab in your own repository. The answer keys match the zip's files exactly.
 
-The commands, menus and settings for each product are in [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/), and each task links the part it uses.
+The commands, menus and settings for each product are in [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/), and each task links the part it uses.
 
 **The date in this lab.** Today is Monday, March 8, 2027. Triage uses that run date, and "this Friday" is March 12, 2027.
 
@@ -69,7 +69,7 @@ The prompts in quote boxes are starting points. Send each one as written the fir
 
 ### Sitting 1: build it on Claude (about 3 hours 30 minutes)
 
-Read Concepts [16.1](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/from-a-prompt-to-a-skill/) to [16.5](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/what-a-plugin-bundles/) first.
+Read Concepts [16.1](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/from-a-prompt-to-a-skill/) to [16.5](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/what-a-plugin-bundles/) first.
 
 ### Task 1. Set up, and your first skill (25 minutes)
 
@@ -95,7 +95,7 @@ Read Concepts [16.1](https://agentfactory2.panaversity.org/building-ai-workers/s
 
 ### Task 2. Which piece? (15 minutes)
 
-*Goal:* place six AP jobs before any tool is open ([16.2](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/choosing-the-right-piece/)).
+*Goal:* place six AP jobs before any tool is open ([16.2](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/choosing-the-right-piece/)).
 
 In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
@@ -112,7 +112,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
 ### Task 3. Rules into tests (40 minutes)
 
-*Goal:* Ana's rules as failing tests, written before any code ([16.3](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/writing-a-skill-with-the-expert/)). Tests written first, from the expert's sheet, are the independent answer the code must match.
+*Goal:* Ana's rules as failing tests, written before any code ([16.3](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/writing-a-skill-with-the-expert/)). Tests written first, from the expert's sheet, are the independent answer the code must match.
 
 1. Read `docs/ap-triage-rules.md` yourself, whole. Note the order of the rules and the two boundaries.
 2. Send: "Please make a new branch called `triage` and switch to it." Then send:
@@ -148,7 +148,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
 ### Task 5. The skill (30 minutes)
 
-*Goal:* `invoice-triage`, to the Agent Skills specification ([16.1](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/from-a-prompt-to-a-skill/), [16.3](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/writing-a-skill-with-the-expert/)).
+*Goal:* `invoice-triage`, to the Agent Skills specification ([16.1](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/from-a-prompt-to-a-skill/), [16.3](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/writing-a-skill-with-the-expert/)).
 
 1. Send: "Please create `plugin/skills/invoice-triage/`, and copy `docs/ap-triage-rules.md` into its `references/` folder, unchanged."
 2. Send:
@@ -195,7 +195,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
 ### Task 7. The command (15 minutes)
 
-*Goal:* the Monday report started by name, and the due list moved into the plugin ([16.4](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/commands-and-who-may-start-them/)).
+*Goal:* the Monday report started by name, and the due list moved into the plugin ([16.4](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/commands-and-who-may-start-them/)).
 
 1. Back in the *Code* tab, read `.claude/skills/due-by-friday/SKILL.md`, the skill you ran in Task 1. Notice `disable-model-invocation: true`. Claude Code reads that field, but it is outside the standard's six, so a strict product would refuse this file. Send:
 
@@ -214,7 +214,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
 ### Task 8. The plugin (25 minutes)
 
-*Goal:* two manifests around one `skills/` folder ([16.5](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/what-a-plugin-bundles/)). One host reads the standard core, and another reads only its own manifest, so both sit beside the same skills. You will see why in Sitting 3, with [16.7](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/).
+*Goal:* two manifests around one `skills/` folder ([16.5](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/what-a-plugin-bundles/)). One host reads the standard core, and another reads only its own manifest, so both sit beside the same skills. You will see why in Sitting 3, with [16.7](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/).
 
 1. Ask the agent for `plugin/plugin.json`, the Agent Plugins core: `$schema` for 1.0.0, `name: brightline-ap`, `version: 0.1.0`, a description, an author, a license and keywords. Nothing else.
 2. Ask for `plugin/.claude-plugin/plugin.json`, Claude's own manifest: the same name, version and description. Claude Code does not read the core yet, so this file sits beside it. Both point at the same `skills/` folder by convention. Nothing is copied.
@@ -227,12 +227,12 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
 ### Task 9. A ready-made connector (25 minutes)
 
-*Goal:* a pinned, read-only connector to the data folder, with no code ([16.5](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/what-a-plugin-bundles/)).
+*Goal:* a pinned, read-only connector to the data folder, with no code ([16.5](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/what-a-plugin-bundles/)).
 
 1. Ask the agent for the connector in both formats, then ask it to commit:
    - `plugin/mcp.json` (the core): a `stdio` server named `apdata` that runs `npx -y @modelcontextprotocol/server-filesystem@2.1.0 ./data`, with the same `$schema` version as `plugin.json`.
    - `plugin/.mcp.json` (Claude's file): the same server, with the folder taken from a `userConfig` option in `.claude-plugin/plugin.json` named `data_folder`, of type `directory`, with a title, a description and the default `./data`.
-2. Read the server's tool list in [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#make-a-connector-read-only). Four tools write: `write_file`, `edit_file`, `create_directory` and `move_file`. The plugin cannot remove them. Ask the agent to add four deny rules to `.claude/settings.json`, using the names in 16.10, such as `mcp__plugin_brightline-ap_apdata__write_file`. Then ask it to commit.
+2. Read the server's tool list in [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#make-a-connector-read-only). Four tools write: `write_file`, `edit_file`, `create_directory` and `move_file`. The plugin cannot remove them. Ask the agent to add four deny rules to `.claude/settings.json`, using the names in 16.10, such as `mcp__plugin_brightline-ap_apdata__write_file`. Then ask it to commit.
 3. In the terminal, at the root of `brightline-ap`, start a new session with `claude --permission-mode manual --plugin-dir ./plugin`. Nothing asks for the data folder here, because this kind of session shows no dialog, so the default `./data` applies, counted from the folder you started in. Ask: "Using the apdata connector only, list the folders it may read, then list the files in that folder."
 4. Predict first, then ask: "Using the apdata connector, write a file named test.txt in the data folder." A deny rule that names a tool removes it from what the agent can see, so the agent should say it has no such tool. Its refusal alone proves nothing, because `AGENTS.md` also forbids the write. So ask: "Please list the apdata connector's tools." Then look in `data/` yourself.
 5. **Keep the connector read-only everywhere.** The connector can write files, and the plugin cannot stop that. Each product's settings can. Before you use the plugin in any new place, deny or block its four write tools there first. The tasks remind you each time.
@@ -243,7 +243,7 @@ In `NOTES.md`, under "Task 2", write the piece for each job, and one reason:
 
 ### Sitting 2: ship it (about 3 hours 5 minutes)
 
-Read Concepts [16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/), [16.8](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/watching-it-run/) and [16.9](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/installing-is-a-trust-decision/) first.
+Read Concepts [16.6](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/), [16.8](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/watching-it-run/) and [16.9](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/installing-is-a-trust-decision/) first.
 
 From here on, changes reach `main` only through a pull request that passes the checks. Task 15 opens `triage` as one pull request, which keeps the first build in one review. From Task 17 on, each task that changes files is its own pull request, with the template filled in, the checks green, and the merge. Ask the agent to stage only the files each task needs.
 
@@ -270,7 +270,7 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 ### Task 11. Version and catalog (15 minutes)
 
-*Goal:* version 0.1.0, a changelog, and a catalog to install from ([16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)).
+*Goal:* version 0.1.0, a changelog, and a catalog to install from ([16.6](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)).
 
 1. Ask the agent for `plugin/CHANGELOG.md` with an entry for 0.1.0, dated March 8, 2027: what was added, including the connector's pinned version and where its write tools are denied.
 2. Ask for `.claude-plugin/marketplace.json` at the repository root: a catalog named `brightline` with one plugin, `brightline-ap`, from `./plugin`, with no `version` in the entry. `plugin.json` holds the version, and Anthropic says not to set it in both.
@@ -285,7 +285,7 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 ### Task 12. Repeatable checks (15 minutes)
 
-*Goal:* four test cases you can run before every release ([16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)).
+*Goal:* four test cases you can run before every release ([16.6](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)).
 
 1. Ask the agent for `evals/README.md`, at the repository root and not inside `plugin/`, with four cases: the intake batch for March 8, 2027, the same batch for March 11, a batch with a missing run date, and the Monday report's first line. Predict the first two with the rules, then check them with `npm run triage`. The third should end in a question, not a guess. The fourth should name `brightline-ap 0.1.0` and `AP policy v3`.
 2. Run the cases by hand in a new session, twice each. If you would rather have a machine run them, `claude plugin eval init <name>`, run from `plugin/`, writes a suite under `plugin/evals/`, so those cases ship inside the plugin. It needs Claude Code 2.1.269 or later, and its runs count toward your plan or API bill.
@@ -297,7 +297,7 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 ### Task 13. Watch it run (25 minutes)
 
-*Goal:* see a plugin in telemetry, and what telemetry cannot show ([16.8](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/watching-it-run/)).
+*Goal:* see a plugin in telemetry, and what telemetry cannot show ([16.8](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/watching-it-run/)).
 
 1. Predict first: your plugin came from your own folder, not Anthropic's catalog, so `plugin.name` and `skill.name` are hidden.
 2. Send:
@@ -315,10 +315,10 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 ### Task 14. Read before you install (15 minutes)
 
-*Goal:* decide about a stranger's plugin by reading it ([16.9](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/installing-is-a-trust-decision/)).
+*Goal:* decide about a stranger's plugin by reading it ([16.9](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/installing-is-a-trust-decision/)).
 
 1. Do not install, load or run anything in `exercises/ap-helper-plugin/`. Read each file yourself, or ask the agent to read them and change nothing.
-2. Fill in the table from [16.9](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/installing-is-a-trust-decision/#how-do-i-read-a-plugin-before-i-install-it) for this plugin: the manifest, the hooks, the scripts, any connectors, the skill.
+2. Fill in the table from [16.9](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/installing-is-a-trust-decision/#how-do-i-read-a-plugin-before-i-install-it) for this plugin: the manifest, the hooks, the scripts, any connectors, the skill.
 3. Write your decision in `NOTES.md`, with the file and line that decided it, and the address data would go to.
 
 **Checkpoint:** a written decision, with the file, the line and the address behind it.
@@ -363,7 +363,7 @@ From here on, changes reach `main` only through a pull request that passes the c
 
 ### Task 16. The day the limit changes (30 minutes)
 
-*Goal:* see what it takes to change a rule in every copy, and how anyone would know which copy ran ([16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)). You rehearse on a branch you never merge.
+*Goal:* see what it takes to change a rule in every copy, and how anyone would know which copy ran ([16.6](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)). You rehearse on a branch you never merge.
 
 Dave Kowalski, the controller, has been thinking of raising his limit to more than $10,000.00. It is only an idea. Before he decides, Ana wants to see what that day would take.
 
@@ -387,7 +387,7 @@ Dave Kowalski, the controller, has been thinking of raising his limit to more th
    - "Please set `version` to 1.0.0 in both manifests."
    - "Please add a 1.0.0 entry dated 2027-03-08 to `plugin/CHANGELOG.md`, naming AP policy v4."
 
-   In `NOTES.md`, say why you chose 1.0.0 and not 0.1.1, using the third row of the table in [16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/#what-does-a-version-number-promise).
+   In `NOTES.md`, say why you chose 1.0.0 and not 0.1.1, using the third row of the table in [16.6](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/#what-does-a-version-number-promise).
 8. Send: "Please run `npm run triage -- data/invoices-intake.csv 2027-03-08` here and in `ch16-install`, and show me the first and last line of each." Copy the four lines into `NOTES.md`.
 9. Send: "Please run `git switch main` and `git branch -D limit-change`, then run the triage again." `main` still says `brightline-ap 0.1.0`, `AP policy v3`, and the counts from Task 4. Nothing was pushed.
 
@@ -397,15 +397,15 @@ Dave Kowalski, the controller, has been thinking of raising his limit to more th
 
 ### Sitting 3: port and use in six places (about 1 hour 40 minutes)
 
-Read Concepts [16.7](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/) and [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/) first.
+Read Concepts [16.7](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/) and [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/) first.
 
-For each place, record three outcomes in `ports/ch16.md`, and keep them separate. *Loaded:* the product lists the three skills. *Ran:* the skill ran its tool or script, through the connector or with attached files. *Verified:* the triage counts for the intake batch on 2027-03-08 are 4, 2, 2 and 5, and the first line names the version it ran. Also note how a new version would reach that place, from [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/). A place where the skills loaded but did not run is a partial port, and you write it down as one. Some places may not run a script, and some plans may not offer plugins. That is a result too, not a failure of the lab.
+For each place, record three outcomes in `ports/ch16.md`, and keep them separate. *Loaded:* the product lists the three skills. *Ran:* the skill ran its tool or script, through the connector or with attached files. *Verified:* the triage counts for the intake batch on 2027-03-08 are 4, 2, 2 and 5, and the first line names the version it ran. Also note how a new version would reach that place, from [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/). A place where the skills loaded but did not run is a partial port, and you write it down as one. Some places may not run a script, and some plans may not offer plugins. That is a result too, not a failure of the lab.
 
 ### Task 17. The Claude plugin in a chat and a task (25 minutes)
 
-*Goal:* the same plugin on two more Claude surfaces ([16.7](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/)).
+*Goal:* the same plugin on two more Claude surfaces ([16.7](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/)).
 
-1. Install the plugin on your claude.ai account from your GitHub repository's catalog, or upload a zip of the `plugin/` folder. [The steps are in 16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles).
+1. Install the plugin on your claude.ai account from your GitHub repository's catalog, or upload a zip of the `plugin/` folder. [The steps are in 16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles).
 2. Before any request, look under *Customize > Connectors*. If `apdata` is listed, set `write_file`, `edit_file`, `create_directory` and `move_file` to *Blocked*. A local connector may not list its tools there before it runs. If it does not, work in *Manual*, and decline every write. The plugin will also appear in Claude Code, where only a folder with the deny rules keeps them off.
 3. In Claude chat, with code execution on, attach `invoices-intake.csv`, `vendors.csv` and `invoices.csv`, and ask: "Triage the attached batch for run date 2027-03-08."
 4. In a task in the desktop app, with the `brightline-ap` folder connected, ask which folders the apdata connector may read, then ask the same triage request. If your account has chat and tasks in one conversation, with no mode to choose, run this once, and record one place. On an account not moved over yet, the mode is called Cowork.
@@ -417,7 +417,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Task 18. Codex builds the OpenAI plugin (35 minutes)
 
-*Goal:* the same skills packaged for OpenAI, by OpenAI's coding agent ([16.7](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/), [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/)).
+*Goal:* the same skills packaged for OpenAI, by OpenAI's coding agent ([16.7](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/), [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/)).
 
 1. Open the ChatGPT desktop app and choose *Codex*. Open the `brightline-ap` folder, set *Work in* to *This computer*, and set the permission mode to *Ask for approval*. Send: "Please run `git switch main` and `git pull`, then make a new branch called `openai-plugin`."
 2. Send:
@@ -440,7 +440,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 *Goal:* the OpenAI plugin on a second OpenAI surface.
 
-1. On the same computer as Task 18, open the ChatGPT desktop app, then *Customize > Plugins*, in Work if you still see that switch. A catalog you added with `codex plugin marketplace add` appears there as a source, after you restart the app. Install `brightline-ap` from it, if Task 18 has not already. If your workspace allows plugins only through an admin, an admin imports your GitHub catalog instead, as [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles) shows. If neither is open to you, skip this task and record why.
+1. On the same computer as Task 18, open the ChatGPT desktop app, then *Customize > Plugins*, in Work if you still see that switch. A catalog you added with `codex plugin marketplace add` appears there as a source, after you restart the app. Install `brightline-ap` from it, if Task 18 has not already. If your workspace allows plugins only through an admin, an admin imports your GitHub catalog instead, as [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles) shows. If neither is open to you, skip this task and record why.
 2. Start a new chat that runs locally, in the `brightline-ap` project, because a local connector needs your computer, and that project's `.codex/config.toml` keeps the write tools off. Attach the three files, and ask for triage with `@invoice-triage` for run date 2027-03-08.
 3. Record the three outcomes in `ports/ch16.md`: what loaded, how the skill ran the tool, and the counts. OpenAI's pages say a longer task can run code and shell commands, so expect the script to run. If it did not, say so.
 
@@ -471,7 +471,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Task 21. Your own skill and plugin, with an agent (60 minutes)
 
-*Goal:* the same steps on a job from your own work, so you can build the next skill without this lab ([16.1](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/from-a-prompt-to-a-skill/) to [16.6](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)).
+*Goal:* the same steps on a job from your own work, so you can build the next skill without this lab ([16.1](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/from-a-prompt-to-a-skill/) to [16.6](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/shipping-a-version/)).
 
 1. **Choose the job and its owner.** Pick one procedure you or your team repeat, with numbers in it, and the person who owns its rules. Ask them for a short rules sheet and three cases they check by hand, with the answers. Make a new folder, have the agent put it under git, and save the sheet as `docs/rules.md`. Use made-up or cleared data only.
 2. **Place the pieces.** Open the folder in the *Code* tab and send:
@@ -508,7 +508,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 | The skill never loads | Read its description against the request. Put the main use first. Start a new session after every edit |
 | The skill loads for "should we pay?" | The description lacks "never use it to decide whether to pay" |
 | `claude plugin validate` warns about an unknown field | Claude's manifest takes Claude's fields. The core takes the standard's. Do not mix them |
-| `npm run check:plugin` fails on a skill field | A field outside the six. Move a product's setting to where that product reads it ([16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/)) |
+| `npm run check:plugin` fails on a skill field | A field outside the six. Move a product's setting to where that product reads it ([16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/)) |
 | The connector lists the wrong folder, or fails to start | `./data` counts from where the server started. In Claude Code that is the session's folder, so start from the repository's root. A host can also send folders of its own, which replace the one on the command line. Write down what you saw |
 | The connector will not start on Windows | Ask the agent to start `npx` through `cmd /c`, as the server's README says |
 | The connector can write | The deny rules use the wrong tool names. Ask the agent to list the connector's tool names exactly as the product shows them |
@@ -525,7 +525,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Without a paid Claude plan
 
-[0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/#optional-the-claude-app-without-a-claude-plan) shows how to run the Claude app on another company's model, but this lab also runs the `claude` command, which that setup does not cover. So without a paid plan, do Tasks 1 to 5, 7 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [16.10](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-from-a-prompt-to-a-skill) set first. Skip each step that runs the `claude` command, but still make the `ch16-install` clone in Task 11, because Task 16 uses it. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
+[The Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows how to run the Claude app on another company's model, but this lab also runs the `claude` command, which that setup does not cover. So without a paid plan, do Tasks 1 to 5, 7 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-from-a-prompt-to-a-skill) set first. Skip each step that runs the `claude` command, but still make the `ch16-install` clone in Task 11, because Task 16 uses it. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
 
 ### Artifact checklist
 

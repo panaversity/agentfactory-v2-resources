@@ -1,6 +1,6 @@
 # Lab 12: the first repository, on three agents
 
-Chapter 12 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 12: the first repository, on three agents](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), so you can do the lab without the book.
+Chapter 12 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 12: the first repository, on three agents](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/), so you can do the lab without the book.
 
 *Time: about 2 hours 40 minutes, plus the time to install the apps. Task 8 in both Codex and OpenCode adds about 30 minutes.*
 
@@ -21,18 +21,18 @@ First you make her project folder safe for a coding agent. Then the agent builds
 Download [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip) and unzip it. It holds:
 
 - `brightline-ap/`, the project. It is the only folder you open in an agent.
-- `anas-note.md`, Ana's note, which is the answer. Move it out of the lab folder now, for example to your Desktop. An agent can sometimes read files next to its folder ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)), and it must never see the answer.
+- `anas-note.md`, Ana's note, which is the answer. Move it out of the lab folder now, for example to your Desktop. An agent can sometimes read files next to its folder ([12.2](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)), and it must never see the answer.
 - `opencode.jsonc`, OpenCode's safety settings, for Task 8.
 - `LAB.md`, a copy of these steps, and `README.md`, a list of the files.
 
 ### What you will learn
 
-- Set up the folder, the permission mode and git, so a mistake is easy to undo ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
-- Write one `AGENTS.md` that every agent reads, and make its most important rule a setting ([12.4](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
-- Check the agent's plan against an answer you already know, before it builds anything ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/), [12.3](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
-- Judge the result by that answer, not by the agent's own tests ([12.1](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/)).
-- Hand the work to a new session, and undo a change with git ([12.5](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/context-sessions-effort/)).
-- Give the same job to a second agent, and compare what each one did ([12.8](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/)).
+- Set up the folder, the permission mode and git, so a mistake is easy to undo ([12.2](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/the-workspace/), [12.3](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
+- Write one `AGENTS.md` that every agent reads, and make its most important rule a setting ([12.4](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
+- Check the agent's plan against an answer you already know, before it builds anything ([12.1](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/), [12.3](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/permissions-and-plan/)).
+- Judge the result by that answer, not by the agent's own tests ([12.1](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/from-chat-to-coding-agent/)).
+- Hand the work to a new session, and undo a change with git ([12.5](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/context-sessions-effort/)).
+- Give the same job to a second agent, and compare what each one did ([12.8](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/)).
 
 ### How each task works
 
@@ -217,11 +217,11 @@ Use Codex or OpenCode, whichever you have. If you have the time and both apps, d
 
 ### If you do not have a paid Claude plan
 
-Set up the Claude app on another company's model, as [0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/#optional-the-claude-app-without-a-claude-plan) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. With Ollama on a Mac it costs nothing, and with DeepSeek or OpenRouter you pay for what you use. 0.2.4 also says what you give up.
+Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. With Ollama on a Mac it costs nothing, and with DeepSeek or OpenRouter you pay for what you use. That page also says what you give up.
 
 If you cannot use the Claude app at all, do the lab in Codex or OpenCode:
 
-1. Do Tasks 1 to 7 there. For *Plan*, *Manual* and *Accept edits*, use your tool's modes, as [12.8's permissions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-permissions-and-a-plan) shows. For *+ New*, start a new chat or session, as [12.8's sessions practice](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-context-and-sessions) shows. With OpenCode, set its safety rules first, as in Task 8's OpenCode steps 2 to 4.
+1. Do Tasks 1 to 7 there. For *Plan*, *Manual* and *Accept edits*, use your tool's modes, as [12.8's permissions practice](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-permissions-and-a-plan) shows. For *+ New*, start a new chat or session, as [12.8's sessions practice](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/#practice-context-and-sessions) shows. With OpenCode, set its safety rules first, as in Task 8's OpenCode steps 2 to 4.
 2. In Task 3, stop after step 3, and skip Task 4, because those steps are about Claude Code's own files. At the end of Task 3, ask the agent to tag the commit `rules`.
 3. In Task 8, use the agent you did not use. Do Task 9 in your first agent.
 
@@ -231,7 +231,7 @@ If you cannot use the Claude app at all, do the lab in Codex or OpenCode:
 | --- | --- |
 | The Code tab asks you to upgrade | Use a paid plan, or set up the app on another company's model. See "If you do not have a paid Claude plan". |
 | Claude Code stops at a usage limit | On Pro, Max and Ultra, Claude Code shares its limit with chat. Stop at the end of a task, and go on when the limit resets. Git keeps your place. |
-| A button is not where a step says | The practice sections in [12.8](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in each tool. |
+| A button is not where a step says | The practice sections in [12.8](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/) show each step in each tool. |
 | The tests say a file or module was not found | Ask the agent to check the Node.js version. The lab needs Node.js 24 or later. |
 | Node reports a syntax error in a `.ts` file | The agent used TypeScript that Node cannot run directly. Point it to the last rule in `AGENTS.md`. |
 | The agent wants to install a package | Say no. The lab needs no packages. Ask it to use what Node already has. |
@@ -246,7 +246,7 @@ If you cannot use the Claude app at all, do the lab in Codex or OpenCode:
 
 ### Apply it to your vertical
 
-Pick one folder from your own work that a script could help with, such as a weekly export. Work on a copy, never the original, and only with data that may leave the company, because what the agent reads goes to the model's provider ([12.2](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)). Ask an agent to put the copy under git and to draft an `AGENTS.md`, and answer its questions about your rules. Make the one rule that would hurt most if broken both a line in `AGENTS.md` and a setting. Then, outside the copy, write down the cases you know and the result you expect from one small script. Ask the agent for a plan for that script, read the plan against your cases, and stop at the plan.
+Pick one folder from your own work that a script could help with, such as a weekly export. Work on a copy, never the original, and only with data that may leave the company, because what the agent reads goes to the model's provider ([12.2](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/the-workspace/)). Ask an agent to put the copy under git and to draft an `AGENTS.md`, and answer its questions about your rules. Make the one rule that would hurt most if broken both a line in `AGENTS.md` and a setting. Then, outside the copy, write down the cases you know and the result you expect from one small script. Ask the agent for a plan for that script, read the plan against your cases, and stop at the plan.
 
 *Domain expert and builder.* The domain expert gives the rule that must never be broken and the hidden case, such as Brightline's empty due dates. The builder sets up the repository, the settings and the checks.
 

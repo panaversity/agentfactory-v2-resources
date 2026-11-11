@@ -1,6 +1,6 @@
 # Lab 13: the due-date calculator in two languages
 
-Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 13: the due-date calculator in two languages](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/lab/), so you can do the lab without the book.
+Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 13: the due-date calculator in two languages](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/), so you can do the lab without the book.
 
 *Time: about 3 hours 40 minutes. Lab files: `brightline-lab-ch13.zip`, standalone. The same steps are in `LAB.md` inside the zip.*
 
@@ -9,10 +9,10 @@ Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 *What you need.*
 
 - The Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan, for Tasks 1 to 9 and 12.
-- The ChatGPT desktop app with any plan, for Task 10, and OpenCode Desktop with a model connected, for Task 11, as in [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/).
+- The ChatGPT desktop app with any plan, for Task 10, and OpenCode Desktop with a model connected, for Task 11, as in [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/).
 - Git, Node.js 24 or later, and uv, the Python project tool.
 
-**Set up the tools.** If they are not on your computer yet, follow [13.1](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. It gives the official page for each one, and a prompt that has the agent check the versions and install nothing without your yes.
+**Set up the tools.** If they are not on your computer yet, follow [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. It gives the official page for each one, and a prompt that has the agent check the versions and install nothing without your yes.
 
 **The core path and the extensions.** The core path is Tasks 1 to 9, at least one port (Task 10 or 11), and Task 12. A port makes the same change with a second agent. The second port is an extension.
 
@@ -20,7 +20,7 @@ For [Python only](#python-only), or [without a paid Claude plan](#without-a-paid
 
 **The lab files.** Download [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) and unzip it into a new folder. It contains:
 
-- `brightline-ap/`, a plain copy of the repository at the end of [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/), with no git history. It also holds the lab files: a Python version of the vendor list in `py/`, `data/invoices-check.csv`, `data/invoices-no-terms.csv`, and two scripts in `exercises/`. In Task 1, the agent puts it under git. This is the only folder you give an agent.
+- `brightline-ap/`, a plain copy of the repository at the end of [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/), with no git history. It also holds the lab files: a Python version of the vendor list in `py/`, `data/invoices-check.csv`, `data/invoices-no-terms.csv`, and two scripts in `exercises/`. In Task 1, the agent puts it under git. This is the only folder you give an agent.
 - `LAB.md`, and `field-guide-code-toolchain.md`, the field guide for the code toolchain, with more detail and a table for fixing problems.
 
 Each task with an answer key links it as a separate download. Open a key in a text editor, never in the agent. An agent that can read the answers is not tested by them.
@@ -31,9 +31,9 @@ Use the zip's copy for this lab, even if you finished Lab 12 in your own reposit
 
 ### The job
 
-Brightline's due-date rule is the invoice date plus the days in the terms. It is hidden inside the [Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) script. Nobody has tested it on a month end, a year end or a leap day, and nobody knows what it does with terms it has never seen. Ana wants it moved out into its own function, with a contract and full tests, in both languages, so the team can trust it and reuse it. Then she wants a script that checks every stated due date in an export against the rule.
+Brightline's due-date rule is the invoice date plus the days in the terms. It is hidden inside the [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) script. Nobody has tested it on a month end, a year end or a leap day, and nobody knows what it does with terms it has never seen. Ana wants it moved out into its own function, with a contract and full tests, in both languages, so the team can trust it and reuse it. Then she wants a script that checks every stated due date in an export against the rule.
 
-Ana's note from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) is still your check: after every change on `main`, `npm run due -- 2027-03-05` must still print 8 invoices and $19,229.53, as her note says. Reading the rule lines shows you the rule itself, which that check cannot see. You will read the code the agent wrote and predict what it does, decide the test cases before the agent writes new code, and port one change to one or two other agents. No number in this lab comes from an AI's reply.
+Ana's note from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) is still your check: after every change on `main`, `npm run due -- 2027-03-05` must still print 8 invoices and $19,229.53, as her note says. Reading the rule lines shows you the rule itself, which that check cannot see. You will read the code the agent wrote and predict what it does, decide the test cases before the agent writes new code, and port one change to one or two other agents. No number in this lab comes from an AI's reply.
 
 ### How each task works
 
@@ -41,7 +41,7 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 The agent runs every command in this lab, such as git, npm and uv, and you never type one in a terminal. Before you approve a command, read what the agent says it will do, and say no to anything you do not understand. Asking "What does this command do?" is always fine. Approve each command when you agree with what it does, and then read what it prints. Write each prediction in `NOTES.md` before the agent runs anything.
 
-You decide every test case and its answer. That is the first 10 percent of [10-80-10](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#what-is-my-job-when-an-agent-writes-the-code), where you say what correct means. The agent writes the test code from your list. Read each test against your list before you approve it. Once a test is approved, the agent never changes it.
+You decide every test case and its answer. That is the first 10 percent of [10-80-10](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#what-is-my-job-when-an-agent-writes-the-code), where you say what correct means. The agent writes the test code from your list. Read each test against your list before you approve it. Once a test is approved, the agent never changes it.
 
 ### Task 1. Set up the workbench (20 minutes)
 
@@ -53,7 +53,7 @@ You decide every test case and its answer. That is the first 10 percent of [10-8
    > Put this folder under git, with a main branch, and make a first commit of everything here, with the message "Start from the end of Lab 12". Then show me `git log --oneline`.
 
    Expect `git init -b main`, `git add .`, `git commit` and `git log --oneline`, which shows one commit. If the agent wants to change your git settings for the whole computer, say no. Ask it to set the name and email for this project only.
-3. Send this. You do not need to know what each setting in the prompt means: they are the project's fixed settings, and step 5 compares them with the answer key. The only packages it should add are `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`. Say no to anything else. These are **dev dependencies**: packages the project needs only while you develop and check it, not when it runs. A package is other people's code published under one name. [Chapter 14](https://agentfactory2.panaversity.org/building-ai-workers/structuring-programs/modules/#should-i-let-the-agent-add-a-package) covers packages and dependencies in full.
+3. Send this. You do not need to know what each setting in the prompt means: they are the project's fixed settings, and step 5 compares them with the answer key. The only packages it should add are `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`. Say no to anything else. These are **dev dependencies**: packages the project needs only while you develop and check it, not when it runs. A package is other people's code published under one name. [Chapter 14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/modules/#should-i-let-the-agent-add-a-package) covers packages and dependencies in full.
 
    > Please set up the type checker and the Python tools, with exactly the settings below and nothing more. Ask me before each command, and tell me in one sentence what it does.
    >
@@ -102,7 +102,7 @@ You decide every test case and its answer. That is the first 10 percent of [10-8
 
 1. Read `exercises/total-open.ts` and `exercises/total_open.py`. Predict what each prints, and write it down.
 2. Send: "Run `node exercises/total-open.ts`. Then, in `py/`, run `uv run python ../exercises/total_open.py`. Show me both outputs, and do not explain or fix anything yet."
-3. In `NOTES.md`, explain in two sentences why the two languages behave differently. Concept [13.3](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/values-types-variables/#why-is-an-amount-from-a-file-still-text) has the reason.
+3. In `NOTES.md`, explain in two sentences why the two languages behave differently. Concept [13.3](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/values-types-variables/#why-is-an-amount-from-a-file-still-text) has the reason.
 4. Send: "Add `exercises` to the folders `tsconfig.json` includes, and `../exercises` to Pyright's include in `py/pyproject.toml`. Then run `npm run typecheck` and `npm run check:py` and show me the output. Do not fix anything yet." Read the errors. Each names the file, the line and the problem.
 5. Now ask the agent to fix both scripts by converting the amount to a number where it is read, and run them again.
 
@@ -137,7 +137,7 @@ You decide every test case and its answer. That is the first 10 percent of [10-8
 
    > Write failing tests from my cases in `NOTES.md`, under "Task 5". The functions are `dueDate(invoiceDate, terms)` in `src/due-date.ts` and `due_date(invoice_date, terms)` in `py/brightline_ap/due_date.py`, and neither exists yet. Put their tests in `tests/due-date.test.ts` and `py/tests/test_due_date.py`, and the Net 10 case in `tests/due-by-friday.test.ts`. Use my dates and answers exactly. Write only the tests, and change no other file.
 
-   Read each test against your list before you approve it: the same date and terms, the same answer, and no case you did not list. Concept [13.9](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/) shows the shape of each test file.
+   Read each test against your list before you approve it: the same date and terms, the same answer, and no case you did not list. Concept [13.9](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/) shows the shape of each test file.
 3. Ask the agent to run `npm test` and `npm run test:py`. The new due-date tests must fail because the module does not exist yet, and the new due-by-friday test must fail because no error was raised. Read each error in the output, and make sure that is the reason.
 4. Ask the agent to commit the three test files with the message "Failing tests for dueDate". Then ask it to print the commit's short id with `git log -1 --format=%h`. Write that id in `NOTES.md`, or ask the agent to write it there. That commit is your tests' baseline. In Tasks 6 and 7 you compare against it.
 
@@ -172,9 +172,9 @@ You decide every test case and its answer. That is the first 10 percent of [10-8
    It has no payment-report part, because `due-by-friday` has no Python version.
 2. Ask the agent to run `git diff <baseline> -- py/tests/` and `git status --short`, with your own id from Task 5 in place of `<baseline>`, and read the output. The diff must be empty, and no file under `py/tests/` may be listed.
 3. Read both files side by side. Find one place where the two languages do the same thing differently, and note it.
-4. Now try a date your tests never checked. Impossible dates are not in your Task 5 list, on purpose. Predict what each language does with `2026-02-30`, and write it in `NOTES.md`. Then ask the agent to run each due-date function on it, and to show you the results. [Green tests](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/#what-does-green-show-and-what-does-it-not) show only the cases you wrote.
+4. Now try a date your tests never checked. Impossible dates are not in your Task 5 list, on purpose. Predict what each language does with `2026-02-30`, and write it in `NOTES.md`. Then ask the agent to run each due-date function on it, and to show you the results. [Green tests](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/#what-does-green-show-and-what-does-it-not) show only the cases you wrote.
 
-In [Chapter 14](https://agentfactory2.panaversity.org/building-ai-workers/structuring-programs/data-models-and-schemas/#why-check-at-the-edge), the program refuses bad dates where the data comes in, with a schema, a description of what valid data looks like. As an extension, add the case to your list, and have the agent write and commit its test first. Then ask it to make the TypeScript version refuse the date too.
+In [Chapter 14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/data-models-and-schemas/#why-check-at-the-edge), the program refuses bad dates where the data comes in, with a schema, a description of what valid data looks like. As an extension, add the case to your list, and have the agent write and commit its test first. Then ask it to make the TypeScript version refuse the date too.
 
 **Checkpoint:** every Python test passes, including all your due-date cases, `npm run check:py` passes, and `git diff <baseline> -- py/tests/` is empty. Your prediction for `2026-02-30` and the real results are in `NOTES.md`. Ask the agent to commit.
 
@@ -224,7 +224,7 @@ In [Chapter 14](https://agentfactory2.panaversity.org/building-ai-workers/struct
 
 *Goal:* one tests-first change, made by a second agent, with a review before the commit.
 
-**The change.** The finance team is considering a new policy: a due date that falls on a Saturday or Sunday is paid on the Friday before. This is the rule Renee's script never had, in the [overview](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/#why-it-matters), and here you write it down with tests. It is a proposal, so it lives on its own branches, and `main` keeps the [Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) answer.
+**The change.** The finance team is considering a new policy: a due date that falls on a Saturday or Sunday is paid on the Friday before. This is the rule Renee's script never had, in the [overview](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/#why-it-matters), and here you write it down with tests. It is a proposal, so it lives on its own branches, and `main` keeps the [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) answer.
 
 1. Decide the weekend cases. These are the minimum:
    - `2026-11-07`, a Saturday, gives `2026-11-06`
@@ -262,7 +262,7 @@ In [Chapter 14](https://agentfactory2.panaversity.org/building-ai-workers/struct
 *Goal:* the same change on an open-source agent, with its safety rules set first.
 
 1. If you skipped Task 10, do its steps 1 and 2 first, so the branch `weekend-tests` exists.
-2. Copy `opencode.jsonc` from your [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) folder into `brightline-ap`. If you no longer have it, it is in [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip). The rules make OpenCode ask before every edit, every shell command and any folder outside the project, and refuse every edit under `data/`.
+2. Copy `opencode.jsonc` from your [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) folder into `brightline-ap`. If you no longer have it, it is in [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip). The rules make OpenCode ask before every edit, every shell command and any folder outside the project, and refuse every edit under `data/`.
 3. Open the folder in OpenCode Desktop. Before you send anything, turn auto-accept off for this project, under Settings, then Projects.
 4. Send: "Make a new branch called `port-opencode` from `weekend-tests`, and switch to it." Expect `git switch -c port-opencode weekend-tests`. Then switch to the *plan* agent, and send: "Read `tests/weekend.test.ts` and plan the change that makes it pass. Do not edit anything."
 5. Switch to the *build* agent and send the same brief as Task 10, step 4. Approve each edit and command.
@@ -332,9 +332,9 @@ If you want Python and not TypeScript, do the Python half of each task and use t
 
 ### Without a paid Claude plan
 
-Set up the Claude app on another company's model, as [0.2.4](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/desktop-apps/#optional-the-claude-app-without-a-claude-plan) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. 0.2.4 also says what you give up.
+Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
 
-If you cannot use the Claude app at all, do Tasks 1 to 9 and 12 in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/lab/) set first. Your port is the agent you did not use. Say which in `ports/ch13.md`.
+If you cannot use the Claude app at all, do Tasks 1 to 9 and 12 in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) set first. Your port is the agent you did not use. Say which in `ports/ch13.md`.
 
 ### Apply it to your vertical
 

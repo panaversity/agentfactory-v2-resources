@@ -1,8 +1,8 @@
-# Lab 0.4: Your 4D plan, before the run
+# Lab 0.3: Your 4D plan, before the run
 
-Chapter 0.4 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
+Chapter 0.3 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.4: Your 4D plan, before the run](https://agentfactory2.panaversity.org/how-ai-works/ai-fluency/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.3: Your 4D plan, before the run](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
