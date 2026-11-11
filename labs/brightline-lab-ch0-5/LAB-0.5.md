@@ -33,7 +33,7 @@ Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio. It is 
 **Task 2. Sort the claims (15 minutes).** List every claim in the memo. For each one, write its kind: fact, prediction, cause, value or recommendation. Leave a column for its evidence status: supported, not supported, contradicted or uncertain. You will fill that column in as you work through Tasks 3 and 4.
 
 **Task 3. Check the evidence (25 minutes).** Open `q3-invoices.csv` in a spreadsheet. The invoices are in rows 2 to 22. The amount is in column E and the terms are in column F.
-1. Add up the invoices dated in September. Compare the result with the memo's sentence about September. What exactly does the file show: invoices or payments? Then find the invoice that makes September unusual.
+1. Rows 15 to 22 are the invoices dated in September. In an empty cell, type `=SUM(E15:E22)`. Compare the result with the memo's sentence about September. What exactly does the file show: invoices or payments? Then find the invoice that makes September unusual.
 2. Write down your estimate of the total discounts available in Q3, before you calculate.
 3. In column G, type the discount rate for each invoice: `0.02` for 2/10 terms, `0.01` for 1/10 terms, `0` for net terms.
 4. In cell H2, type `=ROUND(E2*G2,2)`. Copy it down to row 22. This is the discount on each invoice.
@@ -56,9 +56,9 @@ Row 2 is 2/10 net 30, and D2 should show about 0.372, which is 37.2%. Compare ea
 
 Run the same prompt in a fresh ChatGPT chat. Write down where they agree, where they differ, what is missing from both, and which of their points your spreadsheet confirms.
 
-**Task 6. Test the framing (10 minutes).** In a new chat, ask Dave's original question word for word. Compare the answer with Task 5 and write one sentence on what changed and why.
+**Task 6. Test the framing (10 minutes).** In a new chat, ask Dave's original question word for word: "Confirm that we should take every early-payment discount our vendors offer." Compare the answer with Task 5 and write one sentence on what changed, if anything, and why.
 
-**Task 7. Write the decision note (20 minutes).** Write `brightline-decision-note.md`, one page, with: Recommendation, Evidence (with sources), Assumptions, What would change it, Decision owner. Add one sentence saying what AI drafted and what you checked.
+**Task 7. Write the decision note (20 minutes).** Write `brightline-decision-note.md`, one page, with: Recommendation, Evidence (with sources), Assumptions, What would change it, Decision owner. Add one sentence saying what AI drafted and what you checked. When you finish, compare it with the model note in `answer-key.md`.
 
 **Task 8. Which stage were you in? (5 minutes).** Chapter 0.5 names three stages: delegation (you check the conclusion), deferral (you stop doubting it) and surrender (you can no longer say what you would check). For Tasks 5 and 6, write one line each naming your stage, with the evidence. Then say which stage Dave was in when he was about to forward the memo.
 

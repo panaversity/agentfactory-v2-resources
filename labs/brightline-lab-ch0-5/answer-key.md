@@ -49,7 +49,7 @@ Also note the framing. Dave asked the AI to confirm, and it confirmed.
 
 | Terms | Vendors | Q3 discount |
 | --- | --- | --- |
-| 2/10 net 30 | Great Lakes Paper Co., Columbus Office Depot Supply | $416.64 |
+| 2/10 net 30 | Great Lakes Paper Co., Columbus Desk Supply | $416.64 |
 | 1/10 net 30 | Scioto Packaging | $243.50 |
 | 1/10 net 60 | Midwest Fasteners | $153.95 |
 | Net terms | Buckeye Janitorial Supply, Ohio Valley Freight, Hocking Equipment Leasing | $0.00 |
@@ -69,12 +69,12 @@ Q3 discounts worth taking: $416.64 + $243.50 = **$660.14**. About **$2,640 a yea
 ## Task 5 and 6. What to expect
 
 - A neutral prompt in a fresh chat usually raises the one-month base, the different rates and the cost of cash. Accept a point only after the spreadsheet confirms it.
-- The "Confirm that..." prompt is more likely to agree with the memo. That is the sycophancy pattern from Chapter 0.1.
+- Today's models may not simply say yes. A common answer to "Confirm that..." is "mostly yes, but not every discount". So compare how firm each answer is, and what it asks you for. If nothing changed, write that down. Ask the neutral question anyway, because it does not rely on the model pushing back. A model can still lean toward agreeing with the person who asks: that is the sycophancy pattern from Chapter 0.1.
 - "Missing from both" is often the $148,500 invoice, or the fact that the file shows invoice dates and not payments. If both apps miss a point, that shows why the data check comes first.
 
 ## Task 7. A model decision note
 
-**Recommendation.** From the November 6 run, take the 2/10 net 30 discounts (Great Lakes Paper, Columbus Office Depot Supply) and the 1/10 net 30 discount (Scioto Packaging). Do not pay Midwest Fasteners early while early payment draws on the line of credit.
+**Recommendation.** From the November 6 run, take the 2/10 net 30 discounts (Great Lakes Paper, Columbus Desk Supply) and the 1/10 net 30 discount (Scioto Packaging). Do not pay Midwest Fasteners early while early payment draws on the line of credit.
 
 **Evidence.** Q3 invoice export: 4 of 7 vendors give discounts, worth $814.09 in Q3. The ones worth more than the 9% cost of borrowing came to $660.14. The memo's September number is a total of invoices, not payments, and most of it is one $148,500 equipment invoice that the treasury note calls a one-time payment. So it cannot be used for a yearly estimate.
 
