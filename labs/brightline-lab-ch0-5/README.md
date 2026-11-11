@@ -1,7 +1,13 @@
-# brightline-lab-ch0.5
+# Lab 0.5: The discount memo
 
-Lab files for Chapter 0.5, Critical Thinking and Judgment in the AI Era, of *The AI Agent Factory*, second edition.
+Chapter 0.5 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-Start with `LAB-0.5.md`. Open `answer-key.md` only after Task 4, or when you are stuck.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.5: The discount memo](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/lab/), as a file, so you can do the lab without the book.
 
-Brightline Wholesale Supply, its people and its data are fictional.
+| Path | What it is |
+| --- | --- |
+| `LAB.md` | The lab: nine short steps on Claude or ChatGPT, with every message printed. |
+| `files/discount-memo.md` | The memo an AI wrote for Dave, Brightline's controller. |
+| `files/q3-invoices.csv` | Brightline's 21 invoices from July to September 2026. |
+
+Give the AI only the files in `files`, and only when a step says so.
