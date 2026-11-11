@@ -2,7 +2,7 @@
 
 Chapter 0.5 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.5: The discount memo](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/lab/), so you can do the lab without the book.
 
-In this lab you check a memo that an AI wrote, before it goes to the boss. The AI does the typing and the sums. You make the decisions, and you check one number yourself. It takes about 1 hour, on Claude or ChatGPT, and every message you send is printed below.
+In this lab you check a memo that an AI wrote, before it goes to the boss. The AI does the typing and the sums. You make the decisions, and you check one number yourself. It takes about 1 hour 20 minutes, on Claude or ChatGPT, and every message you send is printed below.
 
 **What you will learn.** To ask the checkpoint's four questions about a real memo. To check its numbers against the original file. To decide what to do, and to say why on one page.
 
@@ -11,7 +11,7 @@ In this lab you check a memo that an AI wrote, before it goes to the boss. The A
 Download [`brightline-lab-ch0-5.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch0-5.zip), and unzip it. Its `files` folder holds two files:
 
 - `discount-memo.md`: the memo the AI wrote
-- `q3-invoices.csv`: Brightline's invoices from July to September
+- `q3-invoices.csv`: the bills Brightline received from its vendors from July to September, called invoices
 
 If your Claude plan has the Code tab, you can open this folder there instead of attaching the files. Then you and Claude work on the same files.
 
@@ -23,7 +23,7 @@ If your Claude plan has the Code tab, you can open this folder there instead of 
 - Dave plans to send the memo to the company's top finance manager this afternoon.
 - Ana, an analyst, has asked you to check it first.
 
-[0.5.1](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/why-judgment-is-the-job/) explains "2/10 net 30" and the other money words.
+**"2/10 net 30"** means: take 2% off if you pay within 10 days. Otherwise pay the full amount within 30 days. **"Net 30"** alone means no discount. [0.5.1](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/why-judgment-is-the-job/) explains the other money words.
 
 ## Step 1. Try it on something small (5 minutes)
 
@@ -49,7 +49,7 @@ Answer each question in a few words.
 
 ## Step 2. Four questions on the memo (5 minutes)
 
-Open a new chat, and keep it for Steps 2 to 5, 8 and 9. Attach `discount-memo.md`, and send this:
+Open a new chat. This is your **lab chat**, and you come back to it in later steps. Attach `discount-memo.md`, and send this:
 
 ```text
 Show me this memo. Then ask me the checkpoint's four questions about it, one at a time, and wait for my answer: What exactly is claimed? What is it based on? What is assumed? What would change it? Do not give your own view until I have answered all four. Then tell me in two sentences what I missed.
@@ -61,7 +61,7 @@ Answer from your own reading, in a few words.
 
 ## Step 3. Sort the claims (5 minutes)
 
-In the same chat, send this:
+In your lab chat, send this:
 
 ```text
 Show me the memo's claims, one at a time. For each one, ask me what kind it is: fact, prediction, cause, value or recommendation. Tell me in one sentence if you disagree, and why. At the end, show all the claims in a table with three columns: the claim, its kind, and its evidence status. Write "not checked yet" as the status in every row.
@@ -71,10 +71,12 @@ Answer each one in a word.
 
 **What you probably saw.** Most of the memo's reasons are facts and predictions, so you can test them. "It costs nothing" sounds like an opinion, but it is a fact you can test. "The savings are large" is a value, and it depends on the facts under it ([0.5.3](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/claims-evidence-assumptions/)).
 
-## Step 4. Check the numbers against the file (10 minutes)
+## Step 4. Check the numbers against the file (15 minutes)
 
-1. Guess what all the discounts come to for July to September. Write your guess down. It does not matter if it is wrong.
-2. In the same chat, attach `q3-invoices.csv`, and send this:
+"Use code" tells the AI to work out the numbers with a small program, instead of predicting them ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/your-first-hour/the-controls/)). The AI writes the code. You do not.
+
+1. Guess what all the discounts come to for July to September. Write your guess on paper. It does not matter if it is wrong.
+2. In your lab chat, attach `q3-invoices.csv`, and send this:
 
    ```text
    Use code on this file, not your memory, and show me the rows you used.
@@ -85,7 +87,7 @@ Answer each one in a word.
    5. What do all the discounts come to for the three months? Count 2/10 as 2%, 1/10 as 1%, and net terms as no discount.
    ```
 
-3. In the same chat, send this:
+3. In your lab chat, send this:
 
    ```text
    Make me a spreadsheet of these invoices that I can open. Add a column with each invoice's discount, and a total at the bottom.
@@ -94,16 +96,16 @@ Answer each one in a word.
 4. Download the spreadsheet, and open it. If it shows formulas or blank cells, open it in Excel, Numbers or Google Sheets. You can type in it as well as the AI can.
 5. Check one number yourself. Pick an invoice with 2/10 terms, and work out 2% of its amount on a calculator. Does the spreadsheet show the same?
 
-**What you probably saw.** September adds up to $176,100.25, the memo's number. But the file shows invoices, not money paid, so the memo's word "paid" has no evidence behind it. One invoice, INV-3115, is $148,500.00, which is 84% of September, and it gives no discount. Only 4 of the 7 vendors give any discount. All the discounts come to $814.09 ([0.5.3](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/claims-evidence-assumptions/), [0.5.4](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/reasoning-traps/)).
+**What you probably saw.** September adds up to $176,100.25, the memo's number. But the file shows invoices, not money paid, so the memo's word "paid" has no evidence behind it. One invoice, INV-3115, is $148,500.00, which is 84% of September, and it gives no discount. Only 4 of the 7 vendors give any discount. All the discounts come to $814.09. Your own check should match the spreadsheet ([0.5.3](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/claims-evidence-assumptions/), [0.5.4](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/reasoning-traps/)).
 
-## Step 5. Is paying early free? (5 minutes)
+## Step 5. Is paying early free? (10 minutes)
 
-In the same chat, send this:
+In your lab chat, send this. The last line of the note is for the AI, and you do not need to work it out:
 
 ```text
 Here is Brightline's treasury note, its note on cash and borrowing.
 
-- Brightline keeps a minimum cash balance of $60,000 in its operating account. Any payment that would take the balance below that is paid from the line of credit.
+- Brightline keeps a minimum cash balance of $60,000 in its operating account. Any payment that would take the balance below that is paid from the line of credit, which is money borrowed from the bank.
 - The line of credit costs 9% a year.
 - Brightline normally pays each invoice on its due date, in the Friday payment run.
 - Invoice INV-3115, for $148,500.00, is a one-time payment to buy warehouse equipment at the end of a lease. No similar payment is planned.
@@ -116,9 +118,9 @@ Use code. Show each kind of discount in the invoice file beside the 9%. Then ask
 
 **What you probably saw.** 2/10 net 30 is worth about 37% a year, and 1/10 net 30 about 18%. 1/10 net 60 is worth about 7%, less than the 9% it costs to borrow. The discounts worth taking come to $660.14 for the three months, about $2,640 a year if the quarter is typical. The memo promised about $42,264. "It costs nothing" is contradicted ([0.5.3](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/claims-evidence-assumptions/), [0.5.4](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/reasoning-traps/)).
 
-## Step 6. Ask AI to argue against the memo (10 minutes)
+## Step 6. Ask AI to argue against the memo (15 minutes)
 
-Open a new chat, and send this:
+Open a new chat, not your lab chat, and send this:
 
 ```text
 Memo: Take every early-payment discount. To: Dave Kowalski, Controller. From: AP assistant (AI draft).
@@ -157,9 +159,9 @@ Write down in one sentence what changed, if anything.
 
 **What you probably saw.** Both may say "not every discount", because today's models often push back. Look at how firm each answer is, and what it asks you for. If nothing changed, that is a real result. The neutral question is still the safer habit, because it does not depend on the model pushing back ([0.5.3](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/claims-evidence-assumptions/)).
 
-## Step 8. Decide, and write it down (12 minutes)
+## Step 8. Decide, and write it down (15 minutes)
 
-Go back to the chat from Step 2, and send this:
+Find your lab chat in your list of chats, and send this:
 
 ```text
 Help me decide, then write a one-page decision note for Dave. Ask me one question at a time, and wait for my answer:
@@ -173,13 +175,13 @@ Help me decide, then write a one-page decision note for Dave. Ask me one questio
 Use my words, and add no facts of your own. At the end, add one sentence on what AI did and what I checked. Show the note as a markdown page, in one code block.
 ```
 
-Answer each question in a few words. Copy the code block into a plain text editor, and save it as `brightline-decision-note.md`, as in Lab 0.3.
+Answer each question in a few words. Copy the code block into a plain text editor, such as Notepad or TextEdit, and save it as `brightline-decision-note.md`, as in Lab 0.3.
 
-**What a good note has.** It starts with what to do: take the 2/10 net 30 and 1/10 net 30 discounts, and skip 1/10 net 60 while paying early uses the bank's money. Each number says where it came from. It says what must stay true, such as the next quarter looking like this one. It names Dave as the decision owner. And one sentence says what AI did and what you checked ([0.5.5](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/deciding-and-explaining-why/)).
+**What a good note has.** It starts with what to do: take the 2/10 net 30 and 1/10 net 30 discounts, and skip 1/10 net 60 while paying early means borrowing. Each number says where it came from. It says what must stay true, such as the next quarter looking like this one. It names Dave as the decision owner. And one sentence says what AI did and what you checked ([0.5.5](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/deciding-and-explaining-why/)).
 
 ## Step 9. Which stage were you in? (3 minutes)
 
-In the same chat, send this:
+In your lab chat, send this:
 
 ```text
 Ask me two questions, one at a time, and reply in one sentence after each answer. Question 1: when you gave me the numbers from the invoice file, which stage was I in: delegation (I check), deferral (I could check, but I do not) or surrender (I cannot check)? Question 2: Dave was about to forward the memo without checking it. Which stage was he in?
