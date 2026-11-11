@@ -1,8 +1,8 @@
-# Lab 0.5: The discount memo
+# Lab 0.4: The discount memo
 
-Chapter 0.5 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
+Chapter 0.4 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.5: The discount memo](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.4: The discount memo](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

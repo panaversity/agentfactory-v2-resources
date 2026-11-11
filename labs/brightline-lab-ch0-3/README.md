@@ -1,8 +1,8 @@
-# Lab 0.3: One page, checked
+# Lab 0.2: One page, checked
 
-Chapter 0.3 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
+Chapter 0.2 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.3: One page, checked](https://agentfactory2.panaversity.org/how-ai-works/markdown/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.2: One page, checked](https://agentfactory.panaversity.org/how-ai-works/markdown/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
