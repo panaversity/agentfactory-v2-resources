@@ -119,7 +119,7 @@ You decide every test case and its answer. That is the first 10 percent of [10-8
    | INV-8301 with an invoice date of `"2026-13-02"` | Fail |
    | V001 from `data/vendors.csv`, with an empty name | Fail |
 
-   Copy INV-8301's values from the file yourself. Write your cases in `NOTES.md`, under a heading "Task 4", with any more you want to add.
+   `-23450` must fail because Brightline's export holds no credits, as [14.5](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/errors-as-design/#what-does-refusing-cost) says. In Marcus's export it would be a credit, so decide each rule from what your own data can hold. Copy INV-8301's values from the file yourself. Write your cases in `NOTES.md`, under a heading "Task 4", with any more you want to add.
 2. Send:
 
    > Please write failing tests from my cases in `NOTES.md`, under "Task 4", in `tests/schemas.test.ts` and `py/tests/test_schemas.py`. They are for `InvoiceSchema` and `VendorSchema` in `src/schemas.ts`, and `InvoiceModel` and `VendorModel` in `py/brightline_ap/schemas.py`, and none of them exists yet. Use my values exactly. Write only the tests, and don't change any other file.
