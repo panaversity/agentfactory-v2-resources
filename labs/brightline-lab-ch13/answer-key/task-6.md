@@ -12,7 +12,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 
 | # | Check | Passed when | Missed when |
 | --- | --- | --- | --- |
-| 27 | My prediction came first | My prediction is at the end of `NOTES.md`, and it was written before the rule existed | There is no prediction, or it was written after the run |
+| 27 | My prediction came first | My prediction is in `NOTES.md`, in a commit made before the commit of the weekend tests | There is no prediction, or it was committed with the rule or after it |
 | 28 | My four answers | They match the table below. Read them from the tests, or ask me | Any answer differs |
 | 29 | Tests first, and unchanged | On `weekend-rule`, the weekend tests were committed before the rule, and they have not changed since | The tests changed after their commit |
 | 30 | The branch passes | On `weekend-rule`, every test passes and the type checker is clean | A test fails |
@@ -53,7 +53,7 @@ A prediction of 9 invoices is the common one. The test that held it failed, and 
 
 ## Look back
 
-Open `NOTES.md`, and read the list "Nobody chose these yet" from Task 1. Is the weekend on it? In the authors' runs, on two models, it was not. An agent asked for every unstated choice listed ten of them, and missed the one that would have left a $12,900.00 invoice unpaid. A rule that is missing has no line of code to point at. Only someone who knows the business can name it.
+Open `NOTES.md`, and read the list "Nobody chose these yet" from Task 1. Is the weekend on it? In the authors' test runs, it never was. An agent asked for every unstated choice listed ten or more of them, and missed the one that would have left a $12,900.00 invoice unpaid. A rule that is missing has no line of code to point at. Only someone who knows the business can name it.
 
 ## Never a deduction
 

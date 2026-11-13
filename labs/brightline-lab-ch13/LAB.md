@@ -118,7 +118,7 @@ You decide what correct means before any code exists. That is the first 10 perce
 4. Read each test against your answer: the same date, the same terms, the same result. If one differs, say so, and the agent corrects it.
 5. Send: "Please run the tests. Show me that the new ones fail, and why. Then commit only the new test file, with the message "Failing tests for the due-date rule"."
 
-**Checkpoint:** six new tests fail because the function does not exist yet. One commit holds the new test file and nothing else.
+**Checkpoint:** the new tests fail because the function does not exist yet. One commit holds the new test file and nothing else.
 
 **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-2.md), attach it, and send [the check message](#the-check-message).
 
@@ -148,7 +148,7 @@ This task has no ask from Dave. The agent now does the middle 80 percent, from y
 
    > My reading: the error was raised in [file], at line [number]. The cause is [what you think]. Am I right? Then show me the row of the export that caused it. Change nothing.
 
-4. Dave answers your question about that row: "Cardinal Forklift is on Net 15. The portal has it wrong." Decide what has to change: the code, a test, or the export. Send your decision in one line, starting with "My decision:".
+4. Dave answers your question about that row: "Cardinal Forklift is on Net 15. The portal has it wrong." Decide what has to change: the code, a test, or the export. Send your decision in one line, starting with "My decision:". The agent may not change `data/`, so next Friday's list waits for a corrected export. Stopping here is the right result.
 
 **Checkpoint:** the run stopped with `Unknown terms: Net 10`. You named the file, the line and the cause before the agent explained them. Nothing in the project has changed.
 
@@ -165,7 +165,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
    > Please bring the other language's version up to the same rule. Write the same six tests there, with my answers exactly as they are in my tests, and commit them alone first. Then write the function and make that language's script for Friday's list use it. Do not change anything in my language. Then run the tests and the type checker in both languages, and Friday's list for 2027-03-05 in both languages.
 
 2. Read the two last lines of Friday's list, one from each language.
-3. Send: "Please show me my six cases in a table, with the result of each in both languages. Then commit."
+3. Send: "Please show me my six cases in a table, with the result of each in both languages. Then commit, with the message "The same rule in the other language"."
 
 **Checkpoint:** the same six cases pass in both languages. Friday's list prints 8 invoices, total $19,229.53, in both.
 
@@ -176,7 +176,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 **Dave asks.** "Two invoices fall due on Saturday, March 6, 2027, the day after the run. One is Great Lakes Freight's, for $12,900.00. Finance wants a new rule: an invoice due on a Saturday or a Sunday is paid on the Friday before. Do not change Friday's run until the rule has been reviewed. Keep it on a branch."
 
 1. Send: "Please show me every open invoice in data/invoices.csv, with its due date and that date's weekday. Work the due date out where it is empty. Change nothing."
-2. From that table and Dave's rule, say what Friday's list for March 5 will print under the new rule: how many invoices, and what total. Add the amounts yourself. Then send: "I predict that Friday's list under the weekend rule will print [count] invoices, total [amount]. Please write my prediction at the end of NOTES.md, and do not comment on it."
+2. From that table and Dave's rule, say what Friday's list for March 5 will print under the new rule: how many invoices, and what total. Add the amounts yourself. Then send: "I predict that Friday's list under the weekend rule will print [count] invoices, total [amount]. Please write my prediction at the end of NOTES.md, and commit it with the message "My prediction for the weekend rule". Do not comment on it."
 3. Send:
 
    > Please make a branch called weekend-rule, and switch to it. I will decide four cases of the weekend rule. Ask me for them one at a time. For each case, show me the due date with its weekday, and ask: "On which date is it paid?" Do not tell me the answer, and do not hint. When I have answered all four, show my answers in a table, and wait.
@@ -190,7 +190,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
 6. Send: "Please write the rule so my tests pass, and make the script for Friday's list use it. Keep each invoice's own due date on its line. Do not change any test. Then run the tests, the type checker and Friday's list for 2027-03-05."
 7. If the list does not match your prediction, find out which is wrong before you change either. Ask the agent which invoices are on the list now that were not on it in Task 1. Then correct the one that is wrong, and say which it was.
-8. Send: "Please commit. Then switch back to main, and run Friday's list for 2027-03-05 again."
+8. Send: "Please commit, with the message "The weekend rule, from my tests". Then switch back to main, and run Friday's list for 2027-03-05 again."
 
 **Checkpoint:** on the branch `weekend-rule`, the tests pass and Friday's list matches the answer key. On `main`, it still prints 8 invoices, total $19,229.53.
 
@@ -202,10 +202,10 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
 1. On `main`, send:
 
-   > Please write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: the five terms, and what happens to any other. Put the handover in NOTES.md: where the due-date rule lives in each language, and that the weekend rule is on the branch weekend-rule, not reviewed yet, and not on main. Say each thing once. Show me the diff before you commit.
+   > Please write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: the five terms, and what happens to any other. Put the handover in NOTES.md: where the due-date rule lives in each language, and that the weekend rule is on the branch weekend-rule, not reviewed yet, and not on main. Take out of "Nobody chose these yet" what I decided today. Say each thing once. Show me the diff before you commit.
 
 2. Read the diff. Each decision should be there once, in plain words, with nothing you did not decide.
-3. Send: "Please commit, and tag the commit ch13."
+3. Send: "Please commit, with the message "Today's rules, written down", and tag the commit ch13."
 4. Open a new session in the same folder. Send:
 
    > Answer from this project only, and name the file behind each answer. A vendor's invoice has no due date, and its terms are Net 10. What will Friday's run do? And is an invoice due on a Saturday on this Friday's list?
