@@ -73,12 +73,10 @@ Constraints: Grade only. Change no file and fix nothing. With no
 
 1. Open `brightline-ap` in your agent.
 2. If you chose Python for the lessons, send: "Please set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do. The agent reads that file at the start of every session, so the messages below work for both languages.
-3. Send:
-
-   > Please put this folder under git, with a main branch, and commit everything with the message "Start from the end of Lab 12". Then install the packages for both languages from the lock files, and tell me first which packages they are. Then run the tests and the type checker for my language.
-
-   If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
-4. Before you run the script, say which of these three invoices will be on Friday's list. Write yes or no for each, on paper or in a note.
+3. Send: "Please put this folder under git, with a main branch, and commit everything with the message "Start from the end of Lab 12"." If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
+4. Send: "Please tell me which packages the lock files would install, for both languages. Install nothing yet." Read the names. The project asks for five: `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`. The others are packages those five need.
+5. Send: "Please install them from the lock files. Then run the tests and the type checker for my language."
+6. Before you run the script, say which of these three invoices will be on Friday's list. Write yes or no for each, on paper or in a note.
 
    | Invoice | Status | Invoice date | Due date | Terms |
    | --- | --- | --- | --- | --- |
@@ -86,15 +84,15 @@ Constraints: Grade only. Change no file and fix nothing. With no
    | INV-8303 | open | February 4, 2027 | Saturday, March 6, 2027 | Net 30 |
    | INV-8309 | paid | January 29, 2027 | February 28, 2027 | Net 30 |
 
-5. Send: "Please run Friday's list for 2027-03-05." Compare the list with your three answers.
-6. Send:
+7. Send: "Please run Friday's list for 2027-03-05." Compare the list with your three answers.
+8. Send:
 
    > Please show me every rule Friday's list pays on. For each rule, give me one plain sentence, the line of code that carries it, and one invoice in data/invoices.csv that it decides.
    >
    > Then list every place where the script decides something that no rule in AGENTS.md or NOTES.md states. Change nothing.
 
-7. Read both lists. The first holds the rules somebody chose. The second holds what the script decides with no rule behind it. You do not need to settle those today. Dave settles two of them in this lab.
-8. Send: "Please add both lists to NOTES.md, under the heading "Rules behind Friday's list". Put the second list under "Nobody chose these yet". Then commit, with the message "The rules behind Friday's list"."
+9. Read both lists. The first holds the rules somebody chose. The second holds what the script decides with no rule behind it. You do not need to settle those today. Dave settles two of them in this lab.
+10. Send: "Please add both lists to NOTES.md, under the heading "Rules behind Friday's list". Put the second list under "Nobody chose these yet". Then commit, with the message "The rules behind Friday's list"."
 
 **Checkpoint:** the tests and the type checker pass. Friday's list prints 8 invoices, total $19,229.53. `NOTES.md` holds both lists.
 
