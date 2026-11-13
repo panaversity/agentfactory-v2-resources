@@ -1,6 +1,6 @@
 # Answer key for Nisha's First Client
 
-This file is kept out of the learner download. It lists the differences and errors put into the data pack on purpose, and the expected figures. Open it only after you have filled in your own grading sheet in Part 7 of the [lab](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/lab-run-nishas-first-client-job/).
+This file is kept out of the learner download. It lists the differences and errors put into the data pack on purpose, and the expected figures. Open it only after you have filled in your own grading sheet in Part 7 of the [lab](https://agentfactory.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/lab-run-nishas-first-client-job/).
 
 All data is made up for teaching. The bridge is a teaching example of selected items. It needs a qualified accountant's check before anyone relies on it.
 
@@ -20,7 +20,7 @@ The six differences (S1 to S6) are real differences between IFRS and US GAAP. Th
 
 | Item | # | Seeded item | Where it is | Expected effect |
 |---|---|---|---|---|
-| 1 | S1 | Inventory write-down reversed, which US GAAP does not allow | Inventory note | Profit minus 6.0 |
+| 1 | S1 | Inventory write-down reversed, which US GAAP does not allow for a year-end write-down | Inventory note | Profit minus 6.0 |
 | 2 | S2 | The same item on the balance sheet | Inventory note | Inventory 6.0 lower (not in the profit bridge) |
 | 3 | S3 | Development costs recorded as an asset this year | Development note | Profit minus 15.0 |
 | 4 | S4 | Development costs from earlier years, spread over time | Development note | Profit plus 3.0 |

@@ -119,9 +119,11 @@ Take off a point if the design relies on a rule such as "Hamza must not ask", or
 
 ## Part 7. The approval message
 
-One point when the Friday message names the file, the period and the figure. A model:
+One point when the Friday message names the file, the period, the figure and the open item. In the lab's files the $4,800 duplicate is still only suspected, so the message must name it. A model:
 
-> Approved to send to Dana Ruiz: Lakeshore reconciliation through Thursday, May 13, reconciled cash $207,600, no open items. This approval is for this file only.
+> Approved to send to Dana Ruiz: Lakeshore reconciliation through Thursday, May 13, the corrected file, reconciled cash $207,600, with one suspected duplicate of $4,800 not yet confirmed. This approval is for this file only.
+
+Do not give the point for "no open items". That approval is honest only after the supplier's statement confirms the duplicate, and the lab's files do not show that.
 
 For Wednesday:
 

@@ -25,4 +25,4 @@ Run the test in Part 3 of the lab. Copy each reply word for word. A screenshot o
 
 **Account connectors at the start:** (list them)
 
-**Cloud environment and network access:** (for example, Default, Trusted)
+**Cloud environment and network access:** (for example, Default, Limited)

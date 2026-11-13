@@ -2,7 +2,7 @@
 
 **Last verified: November 10, 2026.** Claude and ChatGPT change often. If a button has moved or a feature is missing, use the fallbacks below, and write down what you used.
 
-This folder goes with the lab page [Lab: run Nisha's first client job](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/lab-run-nishas-first-client-job/). The lab page says what to do and why. This guide gives the exact clicks, and it is the only place they are kept, so that they can be updated without changing the case.
+This folder goes with the lab page [Lab: run Nisha's first client job](https://agentfactory.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/lab-run-nishas-first-client-job/). The lab page says what to do and why. This guide gives the exact clicks, and it is the only place they are kept, so that they can be updated without changing the case.
 
 All data is made up for teaching. No real company, client or person is used. The accounting needs a qualified accountant's check before anyone relies on it.
 
@@ -47,7 +47,7 @@ In **Project settings > General**, check the thread model and effort. A new proj
 ### Step 5. Lock the connectors and note the environment
 
 1. Go to claude.ai/customize/connectors and list your connectors. Connectors belong to your whole account, so every cloud thread can use all of them.[^connectors] Disconnect any app that can send email or share files, for the length of the lab.
-2. In the project, open **Project settings > Environment** and note the cloud environment and its network access level. The Default environment uses Trusted access, which lets the desk's own network reach only an allowlist of common developer sites. Other sites fail with a "host not allowed" error.[^environment]
+2. In the project, open **Project settings > Environment** and note the cloud environment and its network access level. The Default environment uses **Limited** access with **Allow package managers** checked, which older screens call Trusted. It lets the desk's own network reach only an allowlist of common developer sites. Other sites fail with a "host not allowed" error.[^environment]
 
 Then run the lock test in Part 3 of the lab.
 
@@ -79,7 +79,7 @@ Turn off or delete the nightly task, and reconnect any apps you disconnected in 
 | Projects | Two ordinary cloud sessions at claude.ai/code: one for the three areas, one as the reviewer. Keep every version in one folder on your computer. Paste the brief at the start of each session. |
 | A scheduled task inside a project | A cloud scheduled task you create at claude.ai/code/routines, or a local scheduled task in the desktop app's Code tab, pointed at a folder that holds the data pack. A local task runs only while the app is open and the computer is awake.[^desktop] If neither is available, run the nightly prompt by hand and record the time. |
 | ChatGPT's Work, or ChatGPT projects | An ordinary ChatGPT chat with the bridge attached and the same review prompt |
-| Web lookups from the desk | Trusted access blocks sites outside its allowlist. Ask the threads to use only the Library files and a short summary of the three rules written into your project instructions. Or change the environment's network access to **Custom** and add the sites you need. Record which you did. |
+| Web lookups from the desk | Limited access blocks sites outside its allowlist. Ask the threads to use only the Library files and a short summary of the three rules written into your project instructions. Or edit the environment, keep **Network access** at **Limited**, and add the sites you need under **Allowed domains**. Record which you did. |
 | A way to run the lock test | Ask any cloud session that has your connectors to try the same email and file share, and record the reply. If you cannot run a test at all, write "not tested" in your permission map. Do not write "locked". |
 
 ## Sources
@@ -93,7 +93,7 @@ Turn off or delete the nightly task, and reconnect any apps you disconnected in 
 [^instructions]: As verified on November 9, 2026, Anthropic says project instructions are "Text sent to each new thread and to Claude in the project conversation, up to 16,000 characters", set in "Project settings > Memory > Project instructions". Let Claude coordinate ongoing work with Projects, Anthropic.
 [^library]: As verified on November 9, 2026, Anthropic says you can add files "with Add on the Library tab in Overview". Let Claude coordinate ongoing work with Projects, Anthropic.
 [^connectors]: As verified on November 9, 2026, Anthropic says "Every cloud thread can use all of them with no per-project setup" and "The project conversation itself has no connectors". Let Claude coordinate ongoing work with Projects, Anthropic.
-[^environment]: As verified on November 9, 2026, Anthropic says the Default environment's Trusted network access "allows only the default allowlist" through the session's network, and that "Requests on that path to hosts outside the allowlist fail with `403` and `x-deny-reason: host_not_allowed`". Automate work with scheduled tasks, Anthropic.
+[^environment]: As verified on November 13, 2026, Anthropic says "The **Default** environment uses **Limited** access with **Allow package managers** checked, so its runs reach the default allowlist", and that "A request to a blocked host fails with an error such as a `403` or `ENOTFOUND`". To add sites, "select **Limited** under **Network access** and enter your domains in **Allowed domains**". On November 9, 2026, the same page called this level Trusted. Automate work with scheduled tasks, Anthropic.
 [^scheduled-tab]: As verified on November 9, 2026, Anthropic says scheduled work you ask for in a project "appears on its Scheduled tasks tab". Let Claude coordinate ongoing work with Projects, Anthropic.
 [^task-connectors]: As verified on November 9, 2026, Anthropic says "When you create a scheduled task, all of your currently connected connectors are included by default." Automate work with scheduled tasks, Anthropic.
 [^limit]: As verified on November 10, 2026, Anthropic says "A thread that stops at your plan's limit waits and by default continues on its own when the limit resets", and that to stop this you "turn off Auto-continue when usage limits reset in Project settings > General". Let Claude coordinate ongoing work with Projects, Anthropic.

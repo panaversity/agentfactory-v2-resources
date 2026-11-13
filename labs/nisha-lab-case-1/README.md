@@ -2,7 +2,7 @@
 
 **Last verified: November 9, 2026.** Apps change often. If a menu or button below is not where this guide says, use the fallback for that part, and write down what you saw and the date.
 
-This folder goes with the lab page [Lab: take Nisha's method to 2.0](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/case-1-nishas-ai-team/lab-take-nishas-method-to-2-0/). The lab page explains each part, what it is for and the decisions you make. This guide gives the exact clicks, the fallbacks and the docs' own words. Read the lab page first.
+This folder goes with the lab page [Lab: take Nisha's method to 2.0](https://agentfactory.panaversity.org/claude-and-chatgpt-2/case-1-nishas-ai-team/lab-take-nishas-method-to-2-0/). The lab page explains each part, what it is for and the decisions you make. This guide gives the exact clicks, the fallbacks and the docs' own words. Read the lab page first.
 
 > **Your exercise, not Nisha's.** Nisha did not use any of the features in this guide. Her recorded evening of November 8, 2026 is in the case's story pages and exhibits.
 
@@ -26,7 +26,7 @@ This folder goes with the lab page [Lab: take Nisha's method to 2.0](https://age
 
 ## What you need
 
-- Claude, with projects if your plan has them (Pro and Max, public beta, rolling out gradually)
+- Claude, with projects if your plan has them (Pro, Max and Ultra, public beta, rolling out gradually)
 - ChatGPT, with the Work toggle if your app has it
 - Nisha's version 6 file: [the-bilingual-accountant-v6.md](the-bilingual-accountant-v6.md)
 - Two folders on your own computer: `versions` and `final`
@@ -77,7 +77,7 @@ Record what you actually used, and hand in this guide's "last verified" date wit
 1. In the project conversation, ask for scheduled work, for example: "Tonight at 1 a.m., start a writer thread that drafts version 1 of Chapter 7 from the project instructions, and saves it to the Library." Claude creates a cloud scheduled task that runs as threads in the project. It appears on the project's **Scheduled tasks** tab.
 2. **Empty the task's connectors.** Open the task at [claude.ai/code/routines](https://claude.ai/code/routines), choose **Edit** from the menu next to its name, and go to the **Connectors** tab under **Advanced settings**. Remove every connector, then **Save changes**. Take a screenshot of the empty list.
 3. **Check the prompt.** Use the overnight prompt in the brief template. It must stand alone, as if for a stranger, because the prompt that fires cannot approve anything during the run.
-4. In the morning, open **Overview** beside the project conversation and find the **1 a.m. writer thread** there, or open the task on the **Scheduled tasks** tab. If it hit a usage limit, it stopped with an error. After the limit resets, send it a message and it continues.
+4. In the morning, open **Overview** beside the project conversation and find the **1 a.m. writer thread** there, or open the task on the **Scheduled tasks** tab. If it hit a usage limit, it waits, and by default it continues on its own when the limit resets. The setting is **Auto-continue when usage limits reset**, in **Project settings > General**. If the thread has not continued by the time you check, send it a message.
 5. **Test the task's lock.** In the 1 a.m. writer thread, send: "Try to email `lab-test.md` from the Library to [your own email address], then try to share it to [an app]. Do not use any other way. Report exactly what happened." Record the result in the enforcement test table.
 6. Download version 1 from the **Library**. After your edit, add `chapter-7-v2.md` back with **Add** on the **Library** tab.
 7. After you ask Claude to remember a correction, open **Project settings > Memory** and check that the note is there.
@@ -97,20 +97,20 @@ Record what you actually used, and hand in this guide's "last verified" date wit
 
 ## Sources: what the docs say, word for word
 
-All verified on November 9, 2026.
+All verified on November 9, 2026. The lines on plans and on usage limits were checked again on November 13, 2026, after Anthropic's pages changed.
 
 **Projects** ([Let Claude coordinate ongoing work with Projects](https://code.claude.com/docs/en/claude-projects), Anthropic):
 
-- Projects "are in public beta on Pro and Max plans and rolling out gradually". "If you don't see Projects in the sidebar at claude.ai/code or in the Code tab of the desktop app, check under More there."
+- Projects "are in public beta on Pro, Max, and Ultra plans and rolling out gradually". "If you don't see Projects in the sidebar at claude.ai/code or in the Code tab of the desktop app, check under More there."
 - Project instructions are set at "Project settings > Memory > Project instructions". You can "Ask Claude in the project conversation or any cloud thread to remember a requirement, a decision, or a pitfall", then "Read, edit, and delete the files in Project settings > Memory".
 - "Threads run in auto mode when the thread's model supports it, so most tool calls run without asking you."
 - "Every cloud thread can use all of them with no per-project setup. The project conversation itself has no connectors." Turning a connector off in a thread "removes it from that thread and saves that as your account default, so new threads and claude.ai chats start without it until you turn it back on".
 - "A project doesn't need a repository at all." Cloud threads "deliver files to the Library tab". Uploads "are copies".
 - "A project reaches your machine only by running a thread there through Remote Control."
-- Scheduled work asked for in a project becomes a cloud scheduled task "that runs as threads in that project". "A thread that a scheduled task started doesn't wait: its turn stops with a limit error, and you send it a message after the limit resets."
+- Scheduled work asked for in a project becomes a cloud scheduled task "that runs as threads in that project". "A thread that stops at your plan's limit waits and by default continues on its own when the limit resets." To stop that, "turn off **Auto-continue when usage limits reset** in **Project settings > General**". "To continue with the setting off, send the thread or conversation a message after the reset."
 
-**Cloud scheduled tasks** ([Automate work with scheduled tasks](https://code.claude.com/docs/en/routines), Anthropic): they "are in research preview" and "are available on Pro, Max, Team, and Enterprise plans". "All of your connected MCP connectors are included by default. Remove any the task doesn't need: Claude can use an included connector during a run, including writes." "The prompt must be self-contained and explicit about what to do and what success looks like." The fired prompt "can't act as approval or consent for actions during the run".
+**Cloud scheduled tasks** ([Automate work with scheduled tasks](https://code.claude.com/docs/en/routines), Anthropic): they "are in research preview" and "are available on Pro, Max, Ultra, Team, and Enterprise plans". "All of your connected MCP connectors are included by default. Remove any the task doesn't need: Claude can use an included connector during a run, including writes." "The prompt must be self-contained and explicit about what to do and what success looks like." The fired prompt "can't act as approval or consent for actions during the run".
 
 **Desktop scheduled tasks** ([Schedule recurring tasks in Claude Code Desktop](https://code.claude.com/docs/en/desktop-scheduled-tasks), Anthropic): a local task "only fires while the app is open and your computer is awake". It runs "on your machine in a local folder" that you pick, and "Each task has its own permission mode". In a mode that asks, "the run stalls until you approve it". To avoid that, "click **Run now** after creating a task, watch for permission prompts, and select 'always allow' for each one."
 
-**ChatGPT** ([the Tour's ChatGPT page](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/tour/chatgpt/)): Work is chosen with a toggle above the message box and "gathers information from your apps and files". Projects "hold related files and context for both" Chat and Work. Plugins connect ChatGPT to tools such as Slack, Google Drive and email, and you can name one by typing **@** and its name, and "ChatGPT picks relevant plugins itself". In the desktop app, **Ask for approval** "asks before editing files outside it or using the internet". The Tour reports that GPT-6 Astra is the model behind Work on Plus and higher plans. The available permission modes depend on the app version, your settings and your organization's rules.
+**ChatGPT** ([the Tour's ChatGPT page](https://agentfactory.panaversity.org/claude-and-chatgpt-2/tour/chatgpt/)): Work is chosen with a toggle above the message box and "gathers information from your apps and files". Projects "hold related files and context for both" Chat and Work. Plugins connect ChatGPT to tools such as Slack, Google Drive and email, and you can name one by typing **@** and its name, and "ChatGPT picks relevant plugins itself". In the desktop app, **Ask for approval** "asks before editing files outside it or using the internet". The Tour reports that GPT-6 Astra is the model behind Work on Plus and higher plans. The available permission modes depend on the app version, your settings and your organization's rules.
