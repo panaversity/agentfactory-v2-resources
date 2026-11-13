@@ -1,89 +1,55 @@
-# Lab 13 answer key: Task 1. Set up the workbench
+# Lab 13 answer key: Task 1. What is it paying on?
 
 The answers for Task 1 of Lab 13, in Chapter 13 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 1 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-`git log --oneline` shows two commits, "Start from the end of Lab 12" and "Set up the workbench". The second holds `tsconfig.json`, `package.json`, `package-lock.json`, `py/pyproject.toml`, `py/uv.lock` and `.gitignore`.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-## tsconfig.json
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-`tsconfig.json` should look like this. The options may come in another order. Task 4 adds `"exercises"` to `include`.
+## Checks
 
-```json
-{
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "strict": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
-    "erasableSyntaxOnly": true,
-    "verbatimModuleSyntax": true,
-    "types": ["node"],
-    "skipLibCheck": true
-  },
-  "include": ["src", "tests", "scripts"]
-}
-```
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 1 | The project is under git | `git log` on `main` shows a first commit with the message "Start from the end of Lab 12" | There is no git history, or the branch is not `main` |
+| 2 | The tests and the type checker pass | Both pass for my language: `npm test` and `npm run typecheck` in TypeScript, or `npm run test:py` and `npm run check:py` in Python | Either one fails, or was not run |
+| 3 | Friday's list | `npm run due -- 2027-03-05`, or `npm run due:py -- 2027-03-05`, ends with `8 invoices, total $19,229.53` | Any other count or total |
+| 4 | The three predictions (unscored) | Ask me what I predicted for INV-8305, INV-8303 and INV-8309 before the run. A wrong prediction is not a miss | I made no prediction before the run |
+| 5 | The rules somebody chose | `NOTES.md` has the heading "Rules behind Friday's list", and under it at least the three rules below | The heading is missing, or one of the three rules is |
+| 6 | What nobody chose | `NOTES.md` has the heading "Nobody chose these yet", with at least one entry under it | The heading is missing, or the list is empty |
 
-## package.json
+## The three predictions
 
-The three scripts from Lab 12 stay, and three new ones join them:
+| Invoice | On Friday's list? | Why |
+| --- | --- | --- |
+| INV-8305 | Yes | It has no due date, so its due date is the invoice date plus its terms: February 3 plus 30 days is March 5, the day of the run |
+| INV-8303 | No | It is due on March 6, the day after the run |
+| INV-8309 | No | It is paid |
 
-```json
-"typecheck": "tsc --noEmit",
-"test:py": "cd py && uv run pytest",
-"check:py": "cd py && uv run pyright && uv run ruff check"
-```
+## The three rules
 
-`devDependencies` lists `typescript` and `@types/node`, and nothing else. The version numbers are whatever npm found that day, such as TypeScript 7.0.2 and `@types/node` 24.19.2 on October 31, 2026. `@types/node` must be a version 24.
+1. Paid invoices are left out. Only an invoice whose status is `open` can be on the list.
+2. Late invoices are kept. An invoice is on the list when its due date is on or before the cutoff, however long ago.
+3. An invoice with no due date is due on its invoice date plus the days in its terms.
 
-## py/pyproject.toml
+The agent may list more rules, such as the sort order, or that "Due on receipt" means 0 days. That is fine.
 
-`py/pyproject.toml` should hold these parts, in any order. The version numbers after `>=` are whatever uv found that day. Task 4 adds `"../exercises"` to Pyright's `include`.
+## Friday's list
 
-```toml
-[project]
-name = "brightline-ap"
-version = "0.1.0"
-requires-python = ">=3.12"
-dependencies = []
+| Due date | Invoice | Vendor | Amount |
+| --- | --- | --- | --- |
+| 2027-02-26 | INV-8304 | Scioto Office Products | $234.50 |
+| 2027-03-01 | INV-8307 | Ohio Valley Electric | $2,411.33 |
+| 2027-03-03 | INV-8301 | Midwest Packaging Co. | $4,825.00 |
+| 2027-03-03 | INV-8302 | Buckeye Janitorial Supply | $618.75 |
+| 2027-03-03 | INV-8314 | Lakefront Labels Inc. | $2,265.00 |
+| 2027-03-04 | INV-8315 | Cardinal Forklift Service | $1,325.00 |
+| 2027-03-05 | INV-8305 | Hocking Valley Pallets | $7,350.00 |
+| 2027-03-05 | INV-8312 | Scioto Office Products | $199.95 |
 
-[dependency-groups]
-dev = [
-    "pyright>=1.1.414",
-    "pytest>=9.2.0",
-    "ruff>=0.17.3",
-]
+## Never a deduction
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["."]
-
-[tool.pyright]
-typeCheckingMode = "strict"
-include = ["brightline_ap", "tests"]
-```
-
-A `description` line or a `[tool.ruff]` section does no harm.
-
-## .gitignore
-
-The two lines it had already, `node_modules/` and `.DS_Store`, and the seven from the prompt: `node_modules/`, `py/.venv/`, `__pycache__/`, `.pytest_cache/`, `.ruff_cache/`, `.env` and `out/`. `node_modules/` needs to be there only once.
-
-## The four commands
-
-- `npm test`: 7 tests pass, 2 for the vendor list and 5 for due by Friday.
-- `npm run typecheck` prints nothing after its own command line.
-- `npm run test:py`: `2 passed`.
-- `npm run check:py` prints `0 errors, 0 warnings, 0 informations`, then `All checks passed!`.
-
-## If something else happened
-
-| If you see | What went wrong |
-| --- | --- |
-| A sixth package in `devDependencies` or in the `dev` list | The agent added a package you did not ask for. Remove it. `py/uv.lock` and `package-lock.json` also list the packages those five need, such as `pluggy` and `undici-types`. That is normal |
-| `py/main.py`, `py/README.md`, `py/.python-version`, or a `py/src/` folder | The agent ran `uv init`. Delete those from `py/` only, never the repository's own `src/`. Check that the project's name is `brightline-ap`, and keep the package in `py/brightline_ap/` |
-| `package-lock.json` or `py/uv.lock` missing from the commit | Add it and commit again. Task 12's clean copy needs both |
+- How many entries the second list has, or which ones. Agents list different things, and nobody has to settle them today.
+- The exact words of a rule.
+- Extra rules in the first list.

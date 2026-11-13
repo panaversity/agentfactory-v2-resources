@@ -1,48 +1,30 @@
-# Lab 13 answer key: Task 4. The text-or-number trap
+# Lab 13 answer key: Task 4. Read the error
 
 The answers for Task 4 of Lab 13, in Chapter 13 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 4 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-## Before the fix
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-TypeScript prints a 75-digit number, the amounts glued together as text:
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-```text
-Open invoices total 048250061875129000023450735000158200241133980008700004421019995226500132500 cents
-```
+## Checks
 
-Python stops:
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 17 | The run stopped | The run for 2027-03-12 on `invoices-next-week.csv` printed an error with `Unknown terms: Net 10`, and no list | It printed a list |
+| 18 | My reading came first | In this session, I named the file, the line and the cause before the agent explained the error. Ask me if you cannot tell | The agent explained the error before I gave my reading |
+| 19 | My reading was right | The file is the one that holds the due-date rule, the line is the one that raises the error, and the cause is an invoice whose terms are Net 10 | I named another file, or another cause |
+| 20 | My decision | I decided that the export has to change, and nothing in the project | I asked for a change to the code or to a test |
+| 21 | Nothing changed | `git status` shows no changed file, and there is no commit since Task 3's | A file changed |
 
-```text
-TypeError: unsupported operand type(s) for +=: 'int' and 'str'
-```
+## The row
 
-Why they differ, as Concept 13.3 says: a value read from a file is text. In TypeScript, `+` with text on one side joins text, so 0 and each amount are glued together. Python refuses to add a number and text, so it stops at the first open row.
+`INV-8321`, Cardinal Forklift Service (V008), invoice date 2027-03-02, no due date, terms `Net 10`, $450.00.
 
-## The type checkers
+It has no due date, so the script has to work one out from the terms, and Net 10 is not one of the five. Dave's answer settles it: the vendor is on Net 15, and the portal has it wrong. The rule did its job. It stopped a run that would have paid on terms nobody agreed.
 
-With `exercises` included, the type checkers report:
+## Never a deduction
 
-```text
-exercises/total-open.ts(11,5): error TS2322: Type 'string' is not assignable to type 'number'.
-exercises/total_open.py:14:9 - error: Operator "+=" not supported for types "Literal[0]" and "str"
-exercises/total_open.py:14:9 - error: Type of "total" is unknown (reportUnknownVariableType)
-```
-
-Pyright prints the file's full path and one more line under its first error. Its second error comes from strict mode: once `+=` fails, it cannot tell what type `total` holds. Because Pyright fails, `npm run check:py` stops before Ruff runs.
-
-## After the fix
-
-Both scripts print:
-
-```text
-Open invoices total 4383363 cents
-```
-
-That is $43,833.63, the 13 open invoices. The fix converts the amount where it is read: `Number(row[5])` in TypeScript, and `int(row[5])` in Python. `npm run typecheck` and `npm run check:py` then pass.
-
-| If you see | What went wrong |
-| --- | --- |
-| A long number from one script after the fix | Only that script's fix is missing, or it converts after adding, such as `Number(total + row[5])` |
-| One type check still fails | The fix went into one language only. Fix the other script the same way |
+- The line number, when the file and the cause are right. Line numbers differ from one agent's code to another's.
+- The words of my decision.

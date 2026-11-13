@@ -1,27 +1,35 @@
-# Lab 13 answer key: Task 5. Write the tests first
+# Lab 13 answer key: Task 5. The other language
 
 The answers for Task 5 of Lab 13, in Chapter 13 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 5 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-The commit "Failing tests for dueDate" holds three files: `tests/due-date.test.ts`, `py/tests/test_due_date.py`, and `tests/due-by-friday.test.ts` with your new test in it. Its short id, from `git log -1 --format=%h`, is in `NOTES.md`. It is the baseline for Tasks 6 and 7.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-## Failing for the right reason
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-The test runs fail with these messages, and no others:
+## Checks
 
-```text
-Error [ERR_MODULE_NOT_FOUND]: Cannot find module '.../src/due-date.ts'
-AssertionError [ERR_ASSERTION]: Missing expected exception.
-E   ModuleNotFoundError: No module named 'brightline_ap.due_date'
-```
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 22 | The same six cases | The other language has a test for each of my six cases, with the same dates, terms and answers as the tests in my language | A case is missing, or an answer differs |
+| 23 | Tests first | In `git log`, the other language's tests were committed before its function | They were committed together, or the function came first |
+| 24 | Both languages pass | The tests pass and the type checker is clean in both: `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py` | Any of the four fails |
+| 25 | The same list | Friday's list for 2027-03-05 ends with `8 invoices, total $19,229.53` in both languages | The two differ, or either has another count or total |
+| 26 | My language is untouched | No file of my language changed in this task | A script or a test in my language changed |
 
-- The first is `tests/due-date.test.ts`. The module does not exist yet, so `npm test` counts the whole file as one failed test.
-- The second is the new due-by-friday test. The old script reads "Net 10" as 10 days and throws nothing.
-- The third is pytest. It stops while it collects `test_due_date.py`, with `1 error during collection`.
+## The six cases, in both languages
 
-`npm test` ends with 7 passed and 2 failed: the due-date file and the due-by-friday test. If a test fails with any other message, such as a typo in a date or a wrong expected value, fix the test before you commit.
+| Case | Invoice date | Terms | Result in both |
+| --- | --- | --- | --- |
+| 1 | 2027-02-03 | Net 30 | 2027-03-05 |
+| 2 | 2027-02-19 | Net 15 | 2027-03-06 |
+| 3 | 2027-01-02 | Net 60 | 2027-03-03 |
+| 4 | 2027-03-01 | Due on receipt | 2027-03-01 |
+| 5 | 2026-12-20 | Net 30 | 2027-01-19 |
+| 6 | 2027-03-02 | Net 10 | Stops with `Unknown terms: Net 10` |
 
-You may split the nine cases into more tests or fewer. The authors put them into five tests in each language: each term in the data, a month end, a year end, a leap day, and unknown terms.
+## Never a deduction
 
-Impossible dates, such as `2026-02-30`, are tried in Task 7, step 4, and Task 7's key has the answer.
+- How the second version is written. The two languages do the same thing in different ways.
+- A change to `NOTES.md` or `AGENTS.md` in this task.

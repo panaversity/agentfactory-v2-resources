@@ -1,32 +1,35 @@
-# Lab 13 answer key: Task 7. The same in Python
+# Lab 13 answer key: Task 7. Make it last
 
 The answers for Task 7 of Lab 13, in Chapter 13 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 7 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-Your agent's code may differ from the authors' in its wording and layout. Compare the results: the outputs and the counts below.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-- `npm run test:py` passes. With the authors' five due-date tests, that is 7 tests: 2 for the vendor list and 5 for due dates. With one test for each case, it is 11. None may fail.
-- `npm run check:py` prints `0 errors, 0 warnings, 0 informations`, then `All checks passed!`.
-- `git diff <baseline> -- py/tests/` prints nothing.
-- In `py/`, `uv run python -m brightline_ap.list_vendors` still prints the Task 3 order, now sorted with `terms_days`.
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-A correct Python version adds a `timedelta` to `date.fromisoformat(invoice_date)`, and looks terms up in a dictionary of the five known terms. Anything else raises `ValueError` with the message `Unknown terms: <terms>`.
+## Checks
 
-Any one of these is a good note on where the two languages do the same thing differently:
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 33 | The terms rule is in the rules file | On `main`, `AGENTS.md` names the five terms, and says that any other stops the run | The rule is missing, or it is only in `NOTES.md` |
+| 34 | The handover | On `main`, `NOTES.md` says where the due-date rule lives in each language. It says the weekend rule is on the branch `weekend-rule`, is not reviewed yet, and is not on `main` | Either part is missing |
+| 35 | Said once | Each decision appears once in each file. Nothing is there that I did not decide | The same rule is stated twice in one file, or a rule appears that I never decided |
+| 36 | The tag | `git tag` lists `ch13`, on a commit of `main` | There is no tag, or it is on the branch |
+| 37 | The new session, on Net 10 | You, the new session, answered that the run stops with `Unknown terms: Net 10`, and named a file of this project for it | The answer was a guess, or named no file |
+| 38 | The new session, on Saturday | You answered that an invoice due on a Saturday is not on this Friday's list, because the weekend rule is on the branch `weekend-rule` and not on `main`, and named the file that says so | The answer was yes, or it did not mention the branch |
 
-- A TypeScript `Date` is a moment in time, so the code builds it at midnight UTC and uses the UTC methods. A Python `date` is a day with no time of day, so no time zone can move it.
-- TypeScript adds days with `setUTCDate(date.getUTCDate() + days)`. Python adds a `timedelta`.
-- TypeScript throws an `Error`. Python raises a `ValueError`.
-- TypeScript checks a missing term with `=== undefined`. Python checks it with `in`, or catches a `KeyError`.
-- TypeScript turns the date back into text with `toISOString().slice(0, 10)`. Python uses `isoformat()`.
+## The five terms
 
-| If you see | What went wrong |
-| --- | --- |
-| `Net 10` gives a date, and the unknown-terms test fails | The agent read the number after "Net" instead of looking it up |
-| `list_vendors.py` still has its own day count | The brief's last part was skipped. Ask for the sort to use `terms_days` |
-| A file under `py/tests/` changed | Ask the agent to put the tests back as they are in your baseline commit, and tell it in one sentence that the tests are the specification |
+Due on receipt, Net 15, Net 30, Net 45 and Net 60. Any other terms stop the run with `Unknown terms: ` and the terms it found.
 
-## Impossible dates (step 4)
+## Look back
 
-Once the code exists, Python refuses `2026-02-30` with a `ValueError`. Its words depend on the Python version, such as `day is out of range for month` on Python 3.13, or `day 30 must be in range 1..28 for month 2 in year 2026` on Python 3.14. In TypeScript, `new Date("2026-02-30T00:00:00Z")` becomes March 2 with no error, so `dueDate("2026-02-30", "Due on receipt")` returns `2026-03-02`. The core path leaves this to Chapter 14's schemas. For the extension, the TypeScript function can check that the date it built prints back as the same text it was given.
+- In the overview, Renee made her choice once, and it stayed in a chat. Where do your choices live now? Name the three places: the tests, the rules file, and the handover.
+- Which of today's rules did the agent choose in Lab 12, and which did you choose today?
+- The weekend rule is on a branch. [Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/overview/) is about how such a change is reviewed before it reaches `main`.
+
+## Never a deduction
+
+- The words of a rule, when its meaning is right.
+- Which project file the new session names, when that file does say it.

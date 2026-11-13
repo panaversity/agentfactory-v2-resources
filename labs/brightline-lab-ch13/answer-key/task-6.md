@@ -1,27 +1,61 @@
-# Lab 13 answer key: Task 6. Generate in TypeScript
+# Lab 13 answer key: Task 6. The weekend
 
 The answers for Task 6 of Lab 13, in Chapter 13 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 6 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
 Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-Your agent's code may differ from the authors' in its wording and layout. Compare the results: the outputs, the counts and the totals below.
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-- `npm test` passes. With the authors' five due-date tests, that is 13 tests: 7 from Task 1, 5 for due dates and the due-by-friday test. With one test for each case, it is 17. None may fail.
-- `npm run typecheck` prints nothing after its own command line.
-- `git diff <baseline> -- tests/` prints nothing, and `git status --short` lists no file under `tests/`.
-- `src/due-by-friday.ts` imports `dueDate` from `./due-date.ts`, and has no `addDays` or `termsDays` of its own.
-- `npm run vendors` still prints the Task 3 order, now sorted with `termsDays`.
-- `npm run due -- 2027-03-05` still prints 8 invoices and $19,229.53. The tests pass, and the list is the same, in your own time zone, in `America/Los_Angeles` and in `Asia/Tokyo`.
+## Checks
 
-The promise, in any words: given an invoice date as ISO text and one of the five known terms, `dueDate` returns the due date as ISO text, and any other terms throw `Unknown terms: <terms>`.
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 27 | My prediction came first | My prediction is at the end of `NOTES.md`, and it was written before the rule existed | There is no prediction, or it was written after the run |
+| 28 | My four answers | They match the table below. Read them from the tests, or ask me | Any answer differs |
+| 29 | Tests first, and unchanged | On `weekend-rule`, the weekend tests were committed before the rule, and they have not changed since | The tests changed after their commit |
+| 30 | The branch passes | On `weekend-rule`, every test passes and the type checker is clean | A test fails |
+| 31 | Friday's list on the branch | Find the last line in the table "Find your total" | |
+| 32 | Friday's list on main | On `main`, it still ends with `8 invoices, total $19,229.53`, and `main` has no weekend commit | The weekend rule is on `main` |
 
-A correct version builds the date at midnight UTC, as `new Date(invoiceDate + "T00:00:00Z")` or the same with a template string, and adds the days with `setUTCDate(date.getUTCDate() + ...)`. That line is the UTC math. It looks terms up in a fixed table of the five known terms.
+## The four answers
 
-| If you see | What went wrong |
-| --- | --- |
-| "Net 10" gives a date, and the unknown-terms tests fail | The agent read the number after "Net" instead of looking it up in a fixed table |
-| A due date one day early in one of the time zones | Local time was mixed with UTC, such as `new Date(2026, 9, 20)`, or `getDate` in place of `getUTCDate` |
-| `2028-02-30` or `2028-03-02` for the leap-day case | The agent did its own month arithmetic instead of using the date methods |
-| A file under `tests/` changed | Ask the agent to put the tests back as they are in your baseline commit, and tell it in one sentence that the tests are the specification |
+| Case | Due date | Paid on | Why |
+| --- | --- | --- | --- |
+| 1 | 2027-03-06, a Saturday | 2027-03-05 | The Friday before |
+| 2 | 2027-03-07, a Sunday | 2027-03-05 | The Friday before, two days back |
+| 3 | 2027-03-08, a Monday | 2027-03-08 | Not a weekend, so it does not move |
+| 4 | 2026-08-01, a Saturday | 2026-07-31 | The Friday before is in the month before |
+
+## Find your total
+
+| Friday's list on `weekend-rule` | Result | What it means |
+| --- | --- | --- |
+| 10 invoices, total $33,109.53 | Passed | The 8 from before, plus INV-8303 and INV-8308 |
+| 9 invoices, total $32,129.53 | Missed | INV-8308 is missing. It has no due date. Its due date works out to Saturday, March 6, from February 19 plus Net 15, so the weekend rule applies to it too |
+| 9 invoices, total $20,209.53 | Missed | INV-8303 is missing. It states a due date of Saturday, March 6 |
+| 11 invoices, total $34,691.53 | Missed | INV-8306 was added. It is due on Monday, March 8, and a Monday does not move |
+| 8 invoices, total $19,229.53 | Missed | The script for Friday's list does not use the weekend rule yet |
+
+For any other total, compare the list with Task 1's list, and find the invoices that were added.
+
+The two invoices the rule adds:
+
+| Invoice | Vendor | Due | Amount |
+| --- | --- | --- | --- |
+| INV-8303 | Great Lakes Freight | Saturday, March 6, stated | $12,900.00 |
+| INV-8308 | Cardinal Forklift Service | Saturday, March 6, worked out | $980.00 |
+
+## If my prediction was wrong
+
+A prediction of 9 invoices is the common one. The test that held it failed, and the rule tests passed. That is the lab working: two of my own decisions disagreed, and the tests showed it before any payment did. The fix is to correct the prediction, and say so. Never change the rule to match a wrong count.
+
+## Look back
+
+Open `NOTES.md`, and read the list "Nobody chose these yet" from Task 1. Is the weekend on it? In the authors' runs, on two models, it was not. An agent asked for every unstated choice listed ten of them, and missed the one that would have left a $12,900.00 invoice unpaid. A rule that is missing has no line of code to point at. Only someone who knows the business can name it.
+
+## Never a deduction
+
+- The name of the weekend function.
+- A prediction that was wrong and then corrected, with the reason said.
