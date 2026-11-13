@@ -1,358 +1,251 @@
-# Lab 13: the due-date calculator in two languages
+# Lab 13: choices that last
 
-Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 13: the due-date calculator in two languages](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/), so you can do the lab without the book.
+Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 13: choices that last](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/), so you can do the lab without the book.
 
-*Time: about 3 hours 40 minutes. Lab files: `brightline-lab-ch13.zip`, standalone. The same steps are in `LAB.md` inside the zip.*
+*Time: about 2 hours 15 minutes, with the checks. Lab files: `brightline-lab-ch13.zip`. The same steps are in `LAB.md` inside the zip.*
+
+You take over the choices inside a script an agent wrote. You find its rules, decide the cases, let the agent write the code, and write the rules down so they last. You work in the language you chose for the lessons, with one coding agent.
 
 ### Before you start
 
 *What you need.*
 
-- The Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan, for Tasks 1 to 9 and 12.
-- The ChatGPT desktop app with any plan, for Task 10, and OpenCode Desktop with a model connected, for Task 11, as in [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/).
-- Git, Node.js 24 or later, and uv, the Python project tool.
+- Your coding agent: Claude Code in the Claude desktop app, Codex in the ChatGPT desktop app, or OpenCode Desktop, set up as in [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/).
+- Git, Node.js 24 or later, and uv. If one is missing, follow [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) first.
 
-**Set up the tools.** If they are not on your computer yet, follow [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) before Task 1. It gives the official page for each one, and a prompt that has the agent check the versions and install nothing without your yes.
+*The lab files.* Download [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) and unzip it into a new folder. It holds:
 
-**The core path and the extensions.** The core path is Tasks 1 to 9, at least one port (Task 10 or 11), and Task 12. A port makes the same change with a second agent. The second port is an extension.
+- `brightline-ap/`, Brightline's project as Lab 12 left it. It is the only folder you open in an agent. The script that makes Friday's list is there in TypeScript and in Python.
+- `LAB.md`, a copy of these steps, and `README.md`, a list of the files.
+- `field-guide-code-toolchain.md`, with the install steps for the tools, and a table for fixing problems.
 
-For [Python only](#python-only), or [without a paid Claude plan](#without-a-paid-claude-plan), see the two sections near the end of this page.
-
-**The lab files.** Download [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) and unzip it into a new folder. It contains:
-
-- `brightline-ap/`, a plain copy of the repository at the end of [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/), with no git history. It also holds the lab files: a Python version of the vendor list in `py/`, `data/invoices-check.csv`, `data/invoices-no-terms.csv`, and two scripts in `exercises/`. In Task 1, the agent puts it under git. This is the only folder you give an agent.
-- `LAB.md`, and `field-guide-code-toolchain.md`, the field guide for the code toolchain, with more detail and a table for fixing problems.
-
-Each task with an answer key links it as a separate download. Open a key in a text editor, never in the agent. An agent that can read the answers is not tested by them.
-
-Use the zip's copy for this lab, even if you finished Lab 12 in your own repository. The answer keys match the zip's files exactly.
-
-**The date in this lab.** Today is still Wednesday, March 3, 2027, and the payment run is Friday, March 5.
+Use the zip's copy, even if you finished Lab 12 in your own folder. The answer keys match the zip's files exactly.
 
 ### The job
 
-Brightline's due-date rule is the invoice date plus the days in the terms. It is hidden inside the [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) script. Nobody has tested it on a month end, a year end or a leap day, and nobody knows what it does with terms it has never seen. Ana wants it moved out into its own function, with a contract and full tests, in both languages, so the team can trust it and reuse it. Then she wants a script that checks every stated due date in an export against the rule.
+- You work in accounts payable (AP) at Brightline, with Ana Morales.
+- Today is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
+- In [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/), an agent wrote the script that makes Friday's list. It prints 8 invoices, $19,229.53, and that matched Ana's note.
+- Dave Kowalski, the controller, signs the payment run on Thursday. Each task starts with what he asks you.
 
-Ana's note from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) is still your check: after every change on `main`, `npm run due -- 2027-03-05` must still print 8 invoices and $19,229.53, as her note says. Reading the rule lines shows you the rule itself, which that check cannot see. You will read the code the agent wrote and predict what it does, decide the test cases before the agent writes new code, and port one change to one or two other agents. No number in this lab comes from an AI's reply.
+### What you will learn
+
+- Find the choices inside code an agent wrote, and say each one as a sentence ([13.4](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/decisions-and-repetition/), [13.10](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/judgment/)).
+- Decide the cases and their answers before the agent writes any code, and check its tests against them ([13.9](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/)).
+- Say what a run will print before it runs ([13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/)), and check a change with the tests and the type checker ([13.2](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/the-workbench/)).
+- Read an error, and name its cause before you ask for a fix ([13.8](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/reading-an-error/)).
+- Put a decision where the next session will read it ([12.4](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
 
 ### How each task works
 
-Each task has a goal, steps and a **Checkpoint**. Do not start the next task until the checkpoint is true. In the Claude desktop app, work in *Manual* mode.
+The whole lab runs in one session of your agent, except Task 7, which opens a new one. Work in the mode that asks before it acts: *Manual* in Claude Code, *Ask for approval* in Codex. In OpenCode, copy `opencode.jsonc` from your Lab 12 folder into `brightline-ap` before your first message. It makes OpenCode ask before each edit and each command.
 
-The agent runs every command in this lab, such as git, npm and uv, and you never type one in a terminal. Before you approve a command, read what the agent says it will do, and say no to anything you do not understand. Asking "What does this command do?" is always fine. Approve each command when you agree with what it does, and then read what it prints. Write each prediction in `NOTES.md` before the agent runs anything.
+Each task has four parts:
 
-You decide every test case and its answer. That is the first 10 percent of [10-80-10](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#what-is-my-job-when-an-agent-writes-the-code), where you say what correct means. The agent writes the test code from your list. Read each test against your list before you approve it. Once a test is approved, the agent never changes it.
+1. **Dave asks.** His words carry the facts you could not know yourself.
+2. **You send the message the task prints.** The agent asks you questions, and you answer in a few words. You decide, and the agent types: every test, note and commit is its work, made from your answers.
+3. **You read before you approve.** The agent runs every command, such as git, npm and uv. Before you approve one, read what the agent says it will do. You can always ask "What does this command do?"
+4. **You check the task.** Download the task's answer key with one click, and keep it outside `brightline-ap`. Attach it to your message in the agent, or drag it into the session, and send the check message below. Then read the key yourself. It holds the answers, the common mistakes, and the reason behind each. If a check is Missed, tell the agent what to correct, and send the check message again.
 
-### Task 1. Set up the workbench (20 minutes)
+Download a key only when its task is done. An agent that has read the answers is not tested by them. If you have to stop for the day, finish the task you are on, and its check, first.
 
-*Goal:* one command for each check, in each language.
+#### The check message
 
-1. Open `brightline-ap` in the Claude desktop app's *Code* tab, in a *Local* session, in *Manual* mode.
-2. Send:
+Send this with each task's key. It is the same for every task.
 
-   > Put this folder under git, with a main branch, and make a first commit of everything here, with the message "Start from the end of Lab 12". Then show me `git log --oneline`.
+```text
+Outcome:     The task I just finished in this project, graded against
+             the attached answer key: Passed or Missed for each check.
+Context:     This project's files and git history, what we did in this
+             session, and the attached key.
+Format:      A table: the check, Passed or Missed, the evidence, and
+             one line on why. The evidence is a command you ran and
+             what it printed, a line of a file, or my own words. Then
+             how many passed.
+Constraints: Grade only. Change no file and fix nothing. With no
+             evidence, mark the check Missed. If a check is about what
+             I did or said, ask me.
+```
 
-   Expect `git init -b main`, `git add .`, `git commit` and `git log --oneline`, which shows one commit. If the agent wants to change your git settings for the whole computer, say no. Ask it to set the name and email for this project only.
-3. Send this. You do not need to know what each setting in the prompt means: they are the project's fixed settings, and step 5 compares them with the answer key. The only packages it should add are `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`. Say no to anything else. These are **dev dependencies**: packages the project needs only while you develop and check it, not when it runs. A package is other people's code published under one name. [Chapter 14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/modules/#should-i-let-the-agent-add-a-package) covers packages and dependencies in full.
+### Task 1. What rules is it using? (20 minutes)
 
-   > Please set up the type checker and the Python tools, with exactly the settings below and nothing more. Ask me before each command, and tell me in one sentence what it does.
+**Dave asks.** "Before I sign Friday's run, show me every rule this script uses to decide what we pay. I want to know which ones we chose."
+
+1. Open `brightline-ap` in your agent.
+2. If you chose Python for the lessons, send: "Please set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do. The agent reads that file at the start of every session, so the messages below work for both languages.
+3. Send: "Please put this folder under git, with a main branch, and commit everything with the message "Start from the end of Lab 12"." Every later change can then be compared with this start. If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
+4. Send: "Please tell me which packages the lock files would install, for both languages. Install nothing yet." Know what goes on your computer before you say yes. Find the five names the project asks for: `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`. The others are packages those five need.
+5. Send: "Please install them from the lock files. Then run the tests and the type checker for my language."
+6. Before you run the script, say which of these three invoices will be on Friday's list. Write yes or no for each, on paper or in a note.
+
+   | Invoice | Status | Invoice date | Due date | Terms |
+   | --- | --- | --- | --- | --- |
+   | INV-8305 | open | February 3, 2027 | none given | Net 30 |
+   | INV-8303 | open | February 4, 2027 | Saturday, March 6, 2027 | Net 30 |
+   | INV-8309 | paid | January 29, 2027 | February 28, 2027 | Net 30 |
+
+7. Send: "Please run Friday's list for 2027-03-05." Compare the list with your three answers.
+8. Send:
+
+   > Please show me every rule the script uses to decide which invoices are on Friday's list. For each rule, give me one plain sentence, the line of code that carries it, and one invoice in data/invoices.csv that it decides.
    >
-   > 1. Add `typescript` and `@types/node@24` as dev dependencies. Create `tsconfig.json` for type checking only, with `target` esnext, `module` and `moduleResolution` nodenext, `strict`, `noEmit`, `allowImportingTsExtensions`, `erasableSyntaxOnly`, `verbatimModuleSyntax`, `skipLibCheck`, and `types` set to node. Include `src`, `tests` and `scripts`.
-   > 2. Add three npm scripts: `typecheck` runs `tsc --noEmit`, `test:py` runs `cd py && uv run pytest`, and `check:py` runs `cd py && uv run pyright && uv run ruff check`.
-   > 3. `py/` already holds the package `brightline_ap` and its tests. Write `py/pyproject.toml` yourself, and do not run `uv init`. Name the project `brightline-ap`, require Python 3.12 or later, with no dependencies. Set pytest's `testpaths` to `tests` and `pythonpath` to `.`, Pyright's `typeCheckingMode` to `strict`, and its `include` to `brightline_ap` and `tests`. Then add pytest, pyright and ruff with `uv add --dev`.
-   > 4. Add `node_modules/`, `py/.venv/`, `__pycache__/`, `.pytest_cache/`, `.ruff_cache/`, `.env` and `out/` to `.gitignore`.
+   > Then list every place where the script decides something that no rule in AGENTS.md or NOTES.md states. Change nothing.
 
-4. Ask the agent to run `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`, and read the output of each.
-5. Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-1.md). Compare `tsconfig.json` and `py/pyproject.toml`, the Python project's settings, with it. Then ask the agent to commit with the message "Set up the workbench", and to list the files in the commit. Make sure the lock files, `package-lock.json` and `py/uv.lock`, are among them. They record the exact version of every package.
+9. The first list holds the rules somebody chose. For each of your three invoices in step 6, find the rule on it that decided that invoice. The second list holds what the script decides with no rule behind it. Pick one entry on it, and send: "Show me a row that would make this one go wrong, and what the script would do with it. Change nothing." You do not need to settle that list today. Dave settles one of its entries in Task 2. Keep the list, because you will look at it again after Task 6.
+10. Send: "Please add both lists to NOTES.md, under the heading "Rules behind Friday's list". Put the second list under "Nobody chose these yet". Then commit, with the message "The rules behind Friday's list"."
 
-**Checkpoint:** all four commands pass, with no failed test and no errors from the checkers. `npm test` shows 7 tests and `npm run test:py` shows 2.
+**Checkpoint:** the tests and the type checker pass. Friday's list prints 8 invoices, total $19,229.53. `NOTES.md` holds both lists.
 
-### Task 2. Predict, run, investigate (20 minutes)
+**Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-1.md), attach it, and send [the check message](#the-check-message).
 
-*Goal:* read both vendor scripts before you run them.
+### Task 2. Decide the cases (25 minutes)
 
-1. Open `src/list-vendors.ts` and `py/brightline_ap/list_vendors.py` in a text editor, and read them side by side. Open `data/vendors.csv` too, the file both scripts read. It tells you how many lines to expect, and which vendor comes first and last. You do not need every line of these scripts. To predict the output, find the line near the end of each one that prints, `console.log` or `print`. In Python, text that starts with `f"` works like text between backticks: `{...}` puts in what it holds. Ask the agent about any other line you want to understand.
-2. In `NOTES.md`, under a heading "Task 2", write what each one prints: how many lines, which vendor first and last, and exactly how one line looks.
-3. Ask the agent to run `npm run vendors`, and then, in `py/`, `uv run python -m brightline_ap.list_vendors`. Read what each one prints.
-4. Mark each part of your prediction right or wrong. For the first thing you got wrong, ask the agent about that line, with its number in place of N: "Explain line N of `py/brightline_ap/list_vendors.py`, and why it prints what it prints." If the line is in the TypeScript script, use `src/list-vendors.ts` in the question. If you got everything right, ask instead: "What input would make `list_vendors.py` or `list-vendors.ts` print something wrong?"
-5. Paste the real output under your prediction.
+**Dave asks.** "We give our vendors five terms and no others: Due on receipt, Net 15, Net 30, Net 45 and Net 60. If an export shows any other terms, the run must stop and say which terms it found. It must never guess. And an invoice with no due date is due on its invoice date plus the days in its terms."
 
-**Checkpoint:** `NOTES.md` holds your prediction, the real output, and one question you asked with its answer in your own words.
-
-**Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-2.md).
-
-### Task 3. Modify (15 minutes)
-
-*Goal:* change one thing and predict the result first.
-
-1. Predict the new order and write it in `NOTES.md`. The vendors are sorted by the days in their terms, fewest first, with "Due on receipt" as 0 days. Vendors with the same terms stay in file order.
-2. Send:
-
-   > In `src/list-vendors.ts` and `py/brightline_ap/list_vendors.py`, print the vendors sorted by the number of days in their terms, fewest first. "Due on receipt" is 0 days. Keep vendors with the same terms in the order they appear in the file. Do not change the tests. Show me the diff before you run anything.
-
-3. Read the diff. Find the sort line in each language, and write in `NOTES.md` what each one compares, before anything runs. Then ask the agent to run both scripts, and then `npm test` and `npm run test:py`. Read the output.
-
-**Checkpoint:** both print the same order, which matches the answer key. `npm test` and `npm run test:py` still pass. Ask the agent to commit.
-
-**Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-3.md).
-
-### Task 4. The text-or-number trap (15 minutes)
-
-*Goal:* see a type mistake run in one language, stop in the other, and get caught by both type checkers.
-
-1. Read `exercises/total-open.ts` and `exercises/total_open.py`. Predict what each prints, and write it down.
-2. Send: "Run `node exercises/total-open.ts`. Then, in `py/`, run `uv run python ../exercises/total_open.py`. Show me both outputs, and do not explain or fix anything yet."
-3. In `NOTES.md`, explain in two sentences why the two languages behave differently. Concept [13.3](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/values-types-variables/#why-is-an-amount-from-a-file-still-text) has the reason.
-4. Send: "Add `exercises` to the folders `tsconfig.json` includes, and `../exercises` to Pyright's include in `py/pyproject.toml`. Then run `npm run typecheck` and `npm run check:py` and show me the output. Do not fix anything yet." Read the errors. Each names the file, the line and the problem.
-5. Now ask the agent to fix both scripts by converting the amount to a number where it is read, and run them again.
-
-**Checkpoint:** both scripts print the total in the answer key, and both type checks pass. Ask the agent to commit.
-
-**Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-4.md).
-
-### Task 5. Write the tests first (25 minutes)
-
-*Goal:* the specification for the due-date calculator, as failing tests, in both languages.
-
-1. Decide the cases, and the due date each one must give. These cases are the minimum:
-
-   | Invoice date | Terms | Due date |
-   | --- | --- | --- |
-   | 2026-10-23 | Net 15 | 2026-11-07 |
-   | 2026-10-07 | Net 30 | 2026-11-06 |
-   | 2026-09-15 | Net 45 | 2026-10-30 |
-   | 2026-09-05 | Net 60 | 2026-11-04 |
-   | 2026-11-02 | Due on receipt | 2026-11-02 |
-   | 2026-10-20 | Net 15 | 2026-11-04 (a month end) |
-   | 2026-12-20 | Net 30 | 2027-01-19 (a year end) |
-   | 2028-02-15 | Net 15 | 2028-03-01 (a leap year) |
-   | 2026-10-01 | Net 10 | an error with the message "Unknown terms: Net 10" |
-
-   Check three of these on a calendar yourself, the month end, the year end and the leap year, so the answers are yours.
-
-   Add one more case, for `tests/due-by-friday.test.ts`: an open invoice with an empty due date and terms `Net 10` must stop with `Unknown terms: Net 10`. Today `src/due-by-friday.ts` has its own date code, which reads any number after "Net" and accepts Net 10 without any warning. This test fails until that script uses the one tested engine, `dueDate`.
-
-   Write your cases in `NOTES.md`, under a heading "Task 5", with any more you want to add.
-2. Send:
-
-   > Write failing tests from my cases in `NOTES.md`, under "Task 5". The functions are `dueDate(invoiceDate, terms)` in `src/due-date.ts` and `due_date(invoice_date, terms)` in `py/brightline_ap/due_date.py`, and neither exists yet. Put their tests in `tests/due-date.test.ts` and `py/tests/test_due_date.py`, and the Net 10 case in `tests/due-by-friday.test.ts`. Use my dates and answers exactly. Write only the tests, and change no other file.
-
-   Read each test against your list before you approve it: the same date and terms, the same answer, and no case you did not list. Concept [13.9](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/) shows the shape of each test file.
-3. Ask the agent to run `npm test` and `npm run test:py`. The new due-date tests must fail because the module does not exist yet, and the new due-by-friday test must fail because no error was raised. Read each error in the output, and make sure that is the reason.
-4. Ask the agent to commit the three test files with the message "Failing tests for dueDate". Then ask it to print the commit's short id with `git log -1 --format=%h`. Write that id in `NOTES.md`, or ask the agent to write it there. That commit is your tests' baseline. In Tasks 6 and 7 you compare against it.
-
-**Checkpoint:** the commit holds the three test files, its id is in `NOTES.md`, and the test runs fail for the reasons above, not because of a mistake in a test.
-
-**Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-5.md).
-
-### Task 6. Generate in TypeScript (20 minutes)
-
-*Goal:* the agent writes the code that passes your tests, and leaves the tests alone.
+You decide what correct means before any code exists. That is the first 10 percent of [10-80-10](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#what-is-my-job-when-an-agent-writes-the-code).
 
 1. Send:
 
-   > Create `src/due-date.ts` so the tests in `tests/due-date.test.ts` pass. Export `dueDate(invoiceDate: string, terms: string): string` and `termsDays(terms: string): number`. The known terms are Net 15, Net 30, Net 45, Net 60 and Due on receipt. Any other terms throw an `Error` with the message `Unknown terms: <terms>`. Do the date math in UTC. Then make `src/due-by-friday.ts` use `dueDate` in place of its own `addDays` and `termsDays`, and delete those two, so the payment report and the calculator are one engine. Make `src/list-vendors.ts` sort with `termsDays` too. Do not change any test. Run `npm test` and `npm run typecheck` and show me the output.
+   > I will decide the answer for six cases of the due-date rule. Ask me for them one at a time. For each case, show me the invoice date and the terms. Then ask: "What is the due date, or should the run stop?" Do not tell me the answer, and do not hint. When I have answered all six, show my answers in a table, and wait.
+   >
+   > The cases: (1) 2027-02-03, Net 30. (2) 2027-02-19, Net 15. (3) 2027-01-02, Net 60. (4) 2027-03-01, Due on receipt. (5) 2026-12-20, Net 45. (6) 2027-03-02, Net 10.
 
-2. Ask the agent to run `git diff <baseline> -- tests/` and `git status --short`, with your own id from Task 5 in place of `<baseline>`. Read the output. The diff must be empty, and `git status --short` must list no file under `tests/`.
-3. Read `src/due-date.ts`. Say its promise in one sentence, and find the line that does the UTC math.
-4. Ask the agent to run the tests in two more time zones, with `TZ=America/Los_Angeles npm test` and `TZ=Asia/Tokyo npm test`. Ask it to run `npm run due -- 2027-03-05` in all three time zones too, with the same `TZ=` in front.
+2. Answer each question from Dave's words, with a calendar beside you. The six cases cover each of Dave's five terms, a month end, a year end, and terms he never named. If you see a gap, add a case of your own after the sixth. Give a date as year, month and day, such as 2027-03-05, or say "stop".
+3. Send:
 
-**Checkpoint:** `npm test` and `npm run typecheck` pass, and `src/due-by-friday.ts` imports `dueDate` and has no date code of its own. `npm run due -- 2027-03-05` still prints 8 invoices and $19,229.53, in all three time zones. `git diff <baseline> -- tests/` is empty. Ask the agent to commit.
+   > Please write one failing test for each of my answers. The tests are for a new function that takes an invoice date and terms, and gives the due date. Name it and place it as AGENTS.md says. Where I said stop, the test expects an error with the message "Unknown terms: " and then the terms. Use my answers exactly. Write only the tests. Then show me each test beside my answer for its case.
 
-**Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-6.md).
+4. Read each test against your answer: the same date, the same terms, the same result. If one differs, say so, and the agent corrects it.
+5. Send: "Please run the tests. Show me that the new ones fail, and why. Then commit only the new test file, with the message "Failing tests for the due-date rule"."
 
-### Task 7. The same in Python (20 minutes)
+**Checkpoint:** the new tests fail because the function does not exist yet. One commit holds the new test file and nothing else.
 
-*Goal:* the Python version, from the Python tests.
+**Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-2.md), attach it, and send [the check message](#the-check-message).
 
-1. Send the Task 6 brief, changed for Python:
+### Task 3. Let the agent write it (15 minutes)
 
-   > Create `py/brightline_ap/due_date.py` so the tests in `py/tests/test_due_date.py` pass. Define `due_date(invoice_date: str, terms: str) -> str` and `terms_days(terms: str) -> int`. The known terms are Net 15, Net 30, Net 45, Net 60 and Due on receipt. Any other terms raise a `ValueError` with the message `Unknown terms: <terms>`. Make `py/brightline_ap/list_vendors.py` sort with `terms_days` too. Don't change any test. Run `npm run test:py` and `npm run check:py` and show me the output.
+This task has no ask from Dave. The agent now does the middle 80 percent, from your tests.
 
-   It has no payment-report part, because `due-by-friday` has no Python version.
-2. Ask the agent to run `git diff <baseline> -- py/tests/` and `git status --short`, with your own id from Task 5 in place of `<baseline>`, and read the output. The diff must be empty, and no file under `py/tests/` may be listed.
-3. Read both files side by side. Find one place where the two languages do the same thing differently, and note it.
-4. Now try a date your tests never checked. Impossible dates are not in your Task 5 list, on purpose. Predict what each language does with `2026-02-30`, and write it in `NOTES.md`. Then ask the agent to run each due-date function on it, and to show you the results. [Green tests](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/#what-does-green-show-and-what-does-it-not) show only the cases you wrote.
+1. Before the agent writes anything, say whether Friday's list for March 5 will change, and write it down. The new rule stops a run for terms outside Dave's five.
+2. Send:
 
-In [Chapter 14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/data-models-and-schemas/#why-check-at-the-edge), the program refuses bad dates where the data comes in, with a schema, a description of what valid data looks like. As an extension, add the case to your list, and have the agent write and commit its test first. Then ask it to make the TypeScript version refuse the date too.
+   > Please write the function so my six tests pass. The terms we give are Due on receipt, Net 15, Net 30, Net 45 and Net 60, and any other terms stop the run, as in my sixth test. Then make the script for Friday's list use the function for every due date it works out. Do not change any test. Then run the tests, the type checker and Friday's list for 2027-03-05, and show me that no test file has changed since my commit.
 
-**Checkpoint:** every Python test passes, including all your due-date cases, `npm run check:py` passes, and `git diff <baseline> -- py/tests/` is empty. Your prediction for `2026-02-30` and the real results are in `NOTES.md`. Ask the agent to commit.
+3. Read what the agent shows you: the tests, the type checker, the list, and the files changed since your commit.
+4. Net 90 is in none of your tests. Say what the function will do with it, and write it down. Then send: "Please run the due-date function for 2027-03-02 with Net 90, and show me the line of code that decided the result. Change nothing."
+5. Send: "Please commit, with the message "The due-date rule, from my tests"."
 
-**Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-7.md).
+**Checkpoint:** every test passes, and the type checker is clean. Friday's list still prints 8 invoices, total $19,229.53. No test file has changed since your Task 2 commit.
 
-### Task 8. Reconcile the export (20 minutes)
+**Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-3.md), attach it, and send [the check message](#the-check-message).
 
-*Goal:* a script that checks every stated due date against the rule.
+### Task 4. Read the error (15 minutes)
 
-1. Choose a language. Then write your own cases in `NOTES.md`, under a heading "Task 8". Cover at least these four:
-   - A row whose stated date matches is not reported.
-   - A row dated 2026-10-07 on Net 30 that states 2026-11-07 is reported. The report gives its invoice number, the stated date and the computed date, 2026-11-06, from your Task 5 list.
-   - A row with an empty `due_date` is skipped.
-   - The same file with Windows line endings gives the same result.
+**Dave asks.** "Next week's export came from the new vendor portal. Run next Friday's list on it. Next Friday is March 12, 2027."
 
-   Send, for TypeScript:
+1. Send: "Please run Friday's list for 2027-03-12 on invoices-next-week.csv. Show me the whole output. Do not explain it, and do not fix anything."
+2. Read the error yourself, as [13.8](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/reading-an-error/) shows. In TypeScript, start at the top. In Python, start at the bottom. Find the message, and the first line that names a file in this project.
+3. Send your reading, in your own words, in this shape:
 
-   > Write `tests/reconcile.test.ts` from my cases in `NOTES.md`, under "Task 8". The tests are for a script that does not exist yet, `src/reconcile.ts`. Write only the tests.
+   > My reading: the error was raised in [file], at line [number]. The cause is [what you think]. Am I right? Then show me the row of the export that caused it. Change nothing.
 
-   For Python, name `py/tests/test_reconcile.py` and `py/brightline_ap/reconcile.py`. Read each test against your cases before you approve it.
-2. Send, for TypeScript:
+4. You ask Dave about that row. He answers: "Cardinal Forklift is on Net 15. The portal has it wrong." Decide what has to change: the code, a test, or the export. Send your decision in one line, starting with "My decision:".
 
-   > Now write `src/reconcile.ts`, so I can run `npm run reconcile -- data/invoices.csv` on any export. For each row that states a `due_date`, it should work out the due date with `dueDate` from `src/due-date.ts`. It should print every row where the two dates differ, and then how many there are. Skip the rows with an empty `due_date`, and find each column by its name in the header row. Please make my tests pass without changing them.
+**Checkpoint:** the run stopped with `Unknown terms: Net 10`. You named the file, the line and the cause before the agent explained them. Nothing in the project has changed.
 
-   For Python, ask for `py/brightline_ap/reconcile.py`, run as `uv run python -m brightline_ap.reconcile <file>` from `py/`. If the agent asks to edit a test file, say no.
-3. Read the new script. Find the lines that decide which rows it skips, which columns it reads, and what it compares. Write each one as a sentence in `NOTES.md`.
-4. Predict the result on `data/invoices.csv`. Then ask the agent to run the script on it, and then on `data/invoices-check.csv`.
+The agent may not change `data/`, so next Friday's list waits for a corrected export. A run that stays stopped is the right result here.
 
-**Checkpoint:** 0 mismatches in `invoices.csv`, and exactly 2 in `invoices-check.csv`, with the invoice numbers in the answer key. Ask the agent to commit.
+**Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-4.md), attach it, and send [the check message](#the-check-message).
 
-**Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-8.md).
+### Task 5. The other language (15 minutes)
 
-### Task 9. Read an error (10 minutes)
+**Dave asks.** "Half the team runs the version in the other language. Friday's list has to follow the same rules in both."
 
-*Goal:* name an error precisely before you ask for help.
+Your six answers decide the rule, whichever language holds it. So the agent brings the other language up to date from them, and you check one thing: the same cases, the same answers.
 
-1. Send: "Run the reconciliation script on `data/invoices-no-terms.csv`, and show me the whole output. Do not explain it or fix anything yet."
-2. Read the error report. In Python start at the bottom, and in TypeScript start at the top. Find the first line in a file you own, then follow the bad value back to where it came from.
-3. Before you ask the agent anything about it, write one sentence in `NOTES.md` that names the file, the line and the cause.
-4. Now ask the agent what it thinks, and compare.
+1. Send:
 
-**Checkpoint:** your sentence names the file and line in your own code, and the missing `terms` column as the cause. Ask the agent to commit.
+   > Please bring the other language's version up to the same rule. Write the same six tests there, with my answers exactly as they are in my tests, and commit them alone first. Then write the function and make that language's script for Friday's list use it. Do not change anything in my language. Then run the tests and the type checker in both languages, and Friday's list for 2027-03-05 in both languages.
 
-**Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-9.md).
+2. Compare the last line of Friday's list in the two languages.
+3. Send: "Please show me my six cases in a table, with the result of each in both languages. Then commit, with the message "The same rule in the other language"."
 
-### Task 10. Port to Codex (25 minutes)
+**Checkpoint:** the same six cases pass in both languages. Friday's list prints 8 invoices, total $19,229.53, in both.
 
-*Goal:* one tests-first change, made by a second agent, with a review before the commit.
+**Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-5.md), attach it, and send [the check message](#the-check-message).
 
-**The change.** The finance team is considering a new policy: a due date that falls on a Saturday or Sunday is paid on the Friday before. This is the rule Renee's script never had, in the [overview](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/#why-it-matters), and here you write it down with tests. It is a proposal, so it lives on its own branches, and `main` keeps the [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) answer.
+### Task 6. The weekend (25 minutes)
 
-1. Decide the weekend cases. These are the minimum:
-   - `2026-11-07`, a Saturday, gives `2026-11-06`
-   - `2026-11-01`, a Sunday, gives `2026-10-30`
-   - `2026-11-04`, a Wednesday, does not move
-   - `2026-08-01`, a Saturday, gives `2026-07-31` (across a month end)
-   - with the rule, `dueBy` in `src/due-by-friday.ts` gives 10 invoices and 3,310,953 cents for the cutoff 2027-03-05
+**Dave asks.** "Two invoices fall due on Saturday, March 6, 2027, the day after the run. One is Great Lakes Freight's, for $12,900.00. Finance wants a new rule: an invoice due on a Saturday or a Sunday is paid on the Friday before. Do not change Friday's run until the rule has been reviewed. Keep it on a branch."
 
-   In the agent you used for Tasks 1 to 9, send this, with your cases pasted under it:
+1. Send: "Please show me every open invoice in data/invoices.csv, with its due date and that date's weekday. Where the due date is empty, get it from the due-date function. Work out each weekday with code, not from memory, and show me the command. Change nothing."
+2. Send: "Please make a branch called weekend-rule, and switch to it." Dave asked for the rule to stay off `main`, so everything up to step 9 happens on the branch.
+3. From the table in step 1 and Dave's rule, say what Friday's list for March 5 will print under the new rule: how many invoices, and what total. Add the amounts yourself. Then send: "I predict that Friday's list under the weekend rule will print [count] invoices, total [amount]. Please write my prediction at the end of NOTES.md, and commit it with the message "My prediction for the weekend rule". Do not comment on it."
+4. Send:
 
-   > Make a new branch called `weekend-tests` and switch to it. Then write `tests/weekend.test.ts` from my cases below, for a function `payBy(due)` in `src/due-date.ts`. Write only the tests, and change no other file.
+   > I will decide four cases of the weekend rule. Ask me for them one at a time. For each case, show me the due date with its weekday, worked out with code, and ask: "On which date is it paid?" Do not tell me the answer, and do not hint. When I have answered all four, show my answers in a table, and wait.
+   >
+   > The cases: (1) 2027-03-06. (2) 2027-03-07. (3) 2027-03-08. (4) 2026-08-01.
 
-   Expect `git switch -c weekend-tests`. Read each test against your cases before you approve it.
-2. Ask the agent to run `npm test`. The new tests must fail because `payBy` does not exist. Then ask it to commit with the message "Failing tests for the weekend rule".
-3. Open the folder in Codex, set *Work in* to *This computer* and the mode to *Ask for approval*. Send: "Make a new branch called `port-codex` from `weekend-tests`, and switch to it." Expect `git switch -c port-codex weekend-tests`.
-4. Send: "Make the tests in `tests/weekend.test.ts` pass. Add `payBy(due: string): string` to `src/due-date.ts`, and use it in `src/due-by-friday.ts` so a weekend due date counts as the Friday before. Do not change any test. Run `npm test` and `npm run typecheck`."
-5. Before you ask for a commit, type `/review` and choose to review your uncommitted changes. Read the findings. Then read the diff of `payBy` yourself. Find the line that moves a weekend date to the Friday before, and write one sentence about it in `NOTES.md`.
-6. Ask Codex to run `git diff weekend-tests -- tests/`, `npm run due -- 2027-03-05` and `TZ=America/Los_Angeles npm test`, and read the output. The diff must be empty.
-7. Ask Codex to commit on `port-codex`, and then to run `git status`. It must say the working tree is clean, with nothing left to commit, before you switch branches.
-8. Ask Codex to run `git switch main`. Then write five notes on this port in `NOTES.md`:
-   - what the agent asked before acting
-   - whether it tried to change a test
-   - whether its first attempt passed
-   - what its review found
-   - what you had to say to it
+5. Answer each question from Dave's rule, with a calendar beside you.
+6. Send:
 
-   Ask Codex to commit them, so Task 12 can use them.
+   > Please write one failing test for each of my answers, in my language. The tests are for a new function that takes a due date and gives the date it is paid. Add one more test: Friday's list for 2027-03-05 gives the count and the total in my prediction in NOTES.md. Write only the tests, run them, and show me that the new ones fail. Then commit only the tests.
 
-**Checkpoint:** 10 invoices, $33,109.53, on the `port-codex` branch, with the tests unchanged. Your five notes are committed on `main`.
+7. Send: "Please write the rule so my tests pass, and make the script for Friday's list use it. Keep each invoice's own due date on its line, so the list still shows when each invoice is really due. Do not change any test. Then run the tests, the type checker and Friday's list for 2027-03-05."
+8. If the list does not match your prediction, find out which is wrong before you change either. Ask the agent which invoices are on the list now that were not on it in Task 1. Then correct the one that is wrong, and say which it was. A test changes only when you decide that its answer was wrong, and this is that case.
+9. Send: "Please commit, with the message "The weekend rule, from my tests". Then switch back to main, and run Friday's list for 2027-03-05 again."
 
-**Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-10.md).
+**Checkpoint:** on the branch `weekend-rule`, the tests pass and Friday's list matches the answer key. On `main`, it still prints 8 invoices, total $19,229.53.
 
-### Task 11. Port to OpenCode (20 minutes)
+**Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-6.md), attach it, and send [the check message](#the-check-message).
 
-*Goal:* the same change on an open-source agent, with its safety rules set first.
+### Task 7. Make it last (20 minutes)
 
-1. If you skipped Task 10, do its steps 1 and 2 first, so the branch `weekend-tests` exists.
-2. Copy `opencode.jsonc` from your [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) folder into `brightline-ap`. If you no longer have it, it is in [brightline-lab-ch12.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch12.zip). The rules make OpenCode ask before every edit, every shell command and any folder outside the project, and refuse every edit under `data/`.
-3. Open the folder in OpenCode Desktop. Before you send anything, turn auto-accept off for this project, under Settings, then Projects.
-4. Send: "Make a new branch called `port-opencode` from `weekend-tests`, and switch to it." Expect `git switch -c port-opencode weekend-tests`. Then switch to the *plan* agent, and send: "Read `tests/weekend.test.ts` and plan the change that makes it pass. Do not edit anything."
-5. Switch to the *build* agent and send the same brief as Task 10, step 4. Approve each edit and command.
-6. OpenCode's version 2 documentation names no review command. Read the review panel, or ask OpenCode to show you `git diff`.
-7. Ask OpenCode to run `git diff weekend-tests -- tests/` and `npm run due -- 2027-03-05`, and read the output. The diff must be empty.
-8. Ask OpenCode to commit on `port-opencode`, with `opencode.jsonc`, and then to run `git status`. Check that it shows a clean working tree.
-9. Close OpenCode, and go back to the agent you used for Tasks 1 to 9. Ask it to run `git switch main`. That takes `opencode.jsonc` out of the folder, because only `port-opencode` holds it, and without that file OpenCode has no rules to read. So keep OpenCode closed on `main`. Write the same five notes on this port in `NOTES.md`, and ask the agent to commit them.
+**Dave asks.** "Write today's rules down where the next person will find them, and the next agent. I do not want them living in a chat."
 
-**Checkpoint:** 10 invoices, $33,109.53, on the `port-opencode` branch, with the tests unchanged, and OpenCode asked before every edit and command. Your five notes are committed on `main`.
+1. On `main`, send:
 
-**Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-11.md).
+   > Please write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: the five terms, and what happens to any other. Put the handover in NOTES.md: where the due-date rule lives in each language, and that the weekend rule is on the branch weekend-rule, not reviewed yet, and not on main. Take out of "Nobody chose these yet" what I decided today. Say each thing once. Show me the diff before you commit.
 
-### Task 12. Hand over and tag (10 minutes)
+2. Read the diff. Each rule should be there once, in plain words. If the agent added a rule you did not decide, ask it to take that rule out before you commit. A plain fact about where things stand is fine.
+3. Send: "Please commit, with the message "Today's rules, written down", and tag the commit ch13."
+4. Open a new session in the same folder. Send:
 
-*Goal:* the next session, and the next chapter, can start from a tag on which every command passes.
+   > Answer from this project only, and name the file behind each answer. A vendor's invoice has no due date, and its terms are Net 10. What will Friday's run do? And is an invoice due on a Saturday on this Friday's list?
 
-1. Go back to the agent you used for Tasks 1 to 9. On `main`, update `NOTES.md` with what the due-date function and the reconciliation script do. Then ask the agent to write `ports/ch13.md` from your notes, with a section for each agent you used. Tell it which agent you would give the next tests-first change to, and why, and have it end the file with that.
-2. Ask the agent to commit, and then to tag the commit with `git tag ch13`.
-3. Try the tag in a clean copy. Send: "Clone the tag `ch13` into a new folder, `ch13-check`, next to this folder. In `ch13-check`, install the packages from the lock file, and run the tests and the type checkers for both languages. Show me the output of each command." This is the one step where the agent works outside `brightline-ap`. Expect commands like these, run from the folder that holds `brightline-ap`:
+**Checkpoint:** the new session answers both questions from the project's files, and names them. The tag `ch13` is on `main`.
 
-   ```bash
-   git clone --branch ch13 brightline-ap ch13-check
-   cd ch13-check
-   npm ci
-   npm test
-   npm run typecheck
-   npm run test:py
-   npm run check:py
-   ```
+**Check it now.** In the new session, download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-7.md), attach it, and send [the check message](#the-check-message).
 
-   After the clone, git may say "detached HEAD". That is normal for a tag. `npm ci` installs exactly the package versions the lock file records.
+### Look back
 
-**Checkpoint:** every command passes in `ch13-check`, and `git tag` in `brightline-ap`, run by the agent, lists `ch13`. You can delete `ch13-check` afterwards.
+- Ask the agent to show you the list "Nobody chose these yet" as it was in your Task 1 commit. Is the weekend on it? A rule that is missing has no line of code to point at. Only someone who knows the business can name it.
+- In the [overview](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/#why-it-matters), Renee made her choice once, and it stayed in a chat. Your choices from today are in three places that a new session can read. Name them.
+- This Friday, the two Saturday invoices are still not on the list, because the weekend rule waits on its branch. Dave knows, because you showed him. [Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/overview/) takes that branch through review.
 
-**Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-12.md).
+### If you want more
+
+Each of these is optional, and has no answer key.
+
+- **The same change on a second agent.** Open the folder in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/). From your commit of failing weekend tests, on a new branch, send the message from Task 6, step 7. Compare what each agent asked before it acted, and whether either tried to change a test.
+- **The weekend rule in the other language.** On `weekend-rule`, send the message from Task 5, step 1, for your four weekend cases.
+- **Check the dates an export states.** Ask for a script that works out each invoice's due date with your rule, and reports every row whose stated due date differs. Decide three cases first. Run it on `data/invoices-check.csv`.
 
 ### If something goes wrong
 
 | Problem | What to try |
 | --- | --- |
-| `git commit` says "Please tell me who you are" | Git does not know your name yet. Ask the agent to set your name and email for this project only, then to commit again. If it adds `--global`, which changes them for the whole computer, say no. |
-| `npm run typecheck` says `tsc` is not found | The dev dependencies are not installed. Ask the agent to run `npm install`. |
-| The type checker cannot find `node:fs` | `@types/node` is missing, or `types` in `tsconfig.json` does not list node. Ask the agent to check both. |
-| Node warns that the module type is not specified (`MODULE_TYPELESS_PACKAGE_JSON`) | `package.json` lost `"type": "module"`. Ask the agent to put it back. |
-| Node reports a syntax error in a `.ts` file | The agent used TypeScript that Node cannot run directly, such as an `enum` or a constructor parameter property. `erasableSyntaxOnly` makes the type checker catch it. Ask the agent to rewrite that part without them. |
-| `uv run` says no project was found | It ran outside `py/`, where `pyproject.toml` is. Ask the agent to run it from `py/`. The npm scripts do this for you. |
-| pytest says `No module named 'brightline_ap'` | `pythonpath` in `[tool.pytest.ini_options]` must be `["."]`. Ask the agent to set it. |
+| `git commit` says "Please tell me who you are" | Git does not know your name yet. Ask the agent to set your name and email for this project only, then to commit again. |
+| The type checker is not found | The packages are not installed. Ask the agent to install them from the lock files. |
 | `uv` downloads Python on the first run | That is normal when no Python 3.12 or later is installed. Let it finish. |
-| A due date is off by one day on some computers | The code mixed local time and UTC. Ask the agent to build dates as `new Date("YYYY-MM-DDT00:00:00Z")` and use the `getUTC` and `setUTC` functions. |
-| The reconciliation finds 4 mismatches, not 0 | It compared rows with an empty `due_date`. Ask the agent to skip those rows. |
-| The agent edited a test to make it pass | Ask the agent to put the tests back as they are in your baseline commit. Then tell it in one sentence that the tests are the specification. |
-| Codex cannot install a package | Its sandbox blocks the network by default and asks. No package is needed for the ports. |
-| `TZ=...` does not work in PowerShell | Ask the agent to run that step in Git Bash or WSL, or skip it and say so in your notes. |
-
-### Python only
-
-If you want Python and not TypeScript, do the Python half of each task and use this table for the rest.
-
-| Task | Swap |
-| --- | --- |
-| 1 | Send items 2 to 4 of the prompt, without item 1, the TypeScript part. In item 2, leave out `typecheck`, so that the scripts you add are `test:py` and `check:py`. Then ask the agent to run `npm run test:py` and `npm run check:py` |
-| 2 to 4 | Predict the Python version only, and ask the agent to run only that one |
-| 5 to 7 | In Task 5, ask for the Python tests only. Skip Task 6, and do Task 7 |
-| 8, 9 | Choose Python for the reconciliation tests and script |
-| 10, 11 | Give the agent the same four `payBy` cases, for `py/tests/test_weekend.py`, and ask for the weekend rule in `py/brightline_ap/due_date.py` as `pay_by(due: str) -> str`. Skip the due-by-Friday test and the due-by-Friday change. You are done when the `pay_by` tests pass and `git diff weekend-tests -- py/tests/`, run by the agent, prints nothing |
-| 12 | In the clean copy, ask the agent to run only `npm run test:py` and `npm run check:py` |
-
-### Without a paid Claude plan
-
-Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
-
-If you cannot use the Claude app at all, do Tasks 1 to 9 and 12 in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/) set first. Your port is the agent you did not use. Say which in `ports/ch13.md`.
+| The agent answers a case for you in Task 2 or Task 6 | Say: "Do not answer for me. Ask the question again." |
+| The agent edited a test to make it pass | Ask it to put the tests back as they are in your commit. Then tell it in one sentence that the tests are your decisions. |
+| The agent works in the wrong language | Check the line "My language is:" in `AGENTS.md`, then start a new session. |
+| The agent cannot read the attached key | Paste the key's text under the check message. |
 
 ### Apply it to your vertical
 
-Pick one calculation from your own work that you check by hand today, such as a deadline from a start date, a late fee, a commission or a tax line. Decide five test cases for it first, each with its answer, including one month or year end and one input that must be refused. Give them to any coding agent, and ask it to write the tests in the language you prefer. Read each test against your cases before you approve it. Have the agent commit the tests, then ask it for the function that passes them. Before you accept the function, ask the agent to show `git diff` on the tests, which must be empty, and write a sentence for each line that carries a rule.
+Pick one calculation from your own work that you check by hand today, such as a deadline from a start date, a late fee, a commission or a tax line. Ask a coding agent to list the rules its current version pays on, and what it decides with no rule. Then decide five cases, each with its answer, including one input that must be refused. Have the agent write the tests from your answers and commit them, and only then the code that passes them.
 
 *Domain expert and builder.* The domain expert decides the cases and their answers, especially the strange ones, such as the terms nobody uses anymore. The agent writes the tests and the function. The builder reads each test against the cases, and keeps the agent from changing the tests.
-
-### Artifact checklist
-
-- [ ] `tsconfig.json`, the three new npm scripts, `py/pyproject.toml` and both lock files, committed
-- [ ] `NOTES.md` with your predictions and real outputs, your cases, your error sentence from Task 9, and your notes on each port
-- [ ] The vendor list sorted by terms in both languages
-- [ ] The fixed total scripts, with the type checkers reading `exercises/`
-- [ ] The commit "Failing tests for dueDate", before the commits that make them pass
-- [ ] `src/due-date.ts` and `py/brightline_ap/due_date.py`, with every test passing and the tests unchanged
-- [ ] The reconciliation script with its tests: 0 mismatches, then 2
-- [ ] The branch `weekend-tests`, and at least one of `port-codex` and `port-opencode` with 10 invoices and $33,109.53 (for Python only, with the `pay_by` tests passing)
-- [ ] `ports/ch13.md` on main
-- [ ] Tag `ch13`, with every command passing in a clean clone
-- [ ] Extension: the second port branch
-- [ ] Extension: five test cases for one calculation from your own work, and the tests the agent wrote from them
