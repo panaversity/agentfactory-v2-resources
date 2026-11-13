@@ -42,8 +42,9 @@ An agent wrote the script that makes Brightline's Friday payment list. You find 
    >
    > Then list every place where the script decides something that no rule in AGENTS.md or NOTES.md states. Change nothing.
 
-9. The first list holds the rules somebody chose. For each of your three invoices in step 6, find the rule on it that decided that invoice. The second list holds what the script decides with no rule behind it. Pick one entry on it, and send: "Show me a row that would make this one go wrong, and what the script would do with it. Change nothing." You do not need to settle that list today. Dave settles one of its entries in Task 2. Keep the list, because you will look at it again after Task 6.
-10. Send: "Please add both lists to NOTES.md, under the heading "Rules behind Friday's list". Put the second list under "Nobody chose these yet". Then commit, with the message "The rules behind Friday's list"."
+9. Read the first list. These are the rules somebody chose. For each of your three invoices in step 6, find the rule that put it on Friday's list, or kept it off.
+10. Read the second list. These are things the script does that nobody chose, such as what happens to an invoice whose status is neither open nor paid. Pick one, and send: "Take item [its number] on your second list. Show me one row that would go wrong because of it, and what the script would do with that row. Change nothing." You do not have to fix anything on this list today.
+11. Send: "Please add both lists to NOTES.md, under the heading "Rules behind Friday's list". Put the second list under "Nobody chose these yet". Then commit, with the message "The rules behind Friday's list"."
 
 **Checkpoint:** the tests and the type checker pass. Friday's list prints 8 invoices, total $19,229.53. `NOTES.md` holds both lists.
 
@@ -61,13 +62,14 @@ You decide what correct means before any code exists. That is the first 10 perce
    >
    > The cases: (1) 2027-02-03, Net 30. (2) 2027-02-19, Net 15. (3) 2027-01-02, Net 60. (4) 2027-03-01, Due on receipt. (5) 2026-12-20, Net 45. (6) 2027-03-02, Net 10.
 
-2. Answer each question from Dave's words, with a calendar beside you. The six cases cover each of Dave's five terms, a month end, a year end, and terms he never named. If you see a gap, add a case of your own after the sixth. Give a date as year, month and day, such as 2027-03-05, or say "stop".
-3. Send:
+2. Answer each question from Dave's words, with a calendar beside you. Give a date as year, month and day, such as 2027-03-05, or say "stop".
+3. If you think a case is missing, tell the agent the case and your answer, as a seventh. The six cover each of Dave's five terms, a month end, a year end, and terms he never named.
+4. Send:
 
    > Please write one failing test for each of my answers. The tests are for a new function that takes an invoice date and terms, and gives the due date. Name it and place it as AGENTS.md says. Where I said stop, the test expects an error with the message "Unknown terms: " and then the terms. Use my answers exactly. Write only the tests. Then show me each test beside my answer for its case.
 
-4. Read each test against your answer: the same date, the same terms, the same result. If one differs, say so, and the agent corrects it.
-5. Send: "Please run the tests. Show me that the new ones fail, and why. Then commit only the new test file, with the message "Failing tests for the due-date rule"."
+5. Read each test against your answer: the same date, the same terms, the same result. If one differs, say so, and the agent corrects it.
+6. Send: "Please run the tests. Show me that the new ones fail, and why. Then commit only the new test file, with the message "Failing tests for the due-date rule"."
 
 **Checkpoint:** the new tests fail because the function does not exist yet. One commit holds the new test file and nothing else.
 
@@ -144,7 +146,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
    > Please write one failing test for each of my answers, in my language. The tests are for a new function that takes a due date and gives the date it is paid. Add one more test: Friday's list for 2027-03-05 gives the count and the total in my prediction in NOTES.md. Write only the tests, run them, and show me that the new ones fail. Then commit only the tests.
 
 7. Send: "Please write the rule so my tests pass, and make the script for Friday's list use it. Keep each invoice's own due date on its line, so the list still shows when each invoice is really due. Do not change any test. Then run the tests, the type checker and Friday's list for 2027-03-05."
-8. If the list does not match your prediction, find out which is wrong before you change either. Ask the agent which invoices are on the list now that were not on it in Task 1. Then correct the one that is wrong, and say which it was. A test changes only when you decide that its answer was wrong, and this is that case.
+8. If the list matches your prediction, go to step 9. If it does not, send: "Which invoices are on Friday's list now that were not on it before the weekend rule?" Then decide which was wrong, your prediction or the rule, and tell the agent to correct that one. A test changes only when you decide that its answer was wrong.
 9. Send: "Please commit, with the message "The weekend rule, from my tests". Then switch back to main, and run Friday's list for 2027-03-05 again."
 
 **Checkpoint:** on the branch `weekend-rule`, the tests pass and Friday's list matches the answer key. On `main`, it still prints 8 invoices, total $19,229.53.
