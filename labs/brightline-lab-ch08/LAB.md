@@ -1,6 +1,6 @@
 # Lab 8: where each answer comes from
 
-Chapter 8 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), so you can do the lab without the book.
+Chapter 8 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), so you can do the lab without the book.
 
 On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. It takes about three and a half hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
@@ -32,7 +32,7 @@ Task 13 makes one new project on your own Claude or ChatGPT account. A free acco
 
 ## The job
 
-- You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio. For this lab you take Maria's role, as [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/) says: you draft and keep the AP concepts. In the labs before this one you worked beside her.
+- You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio. For this lab you take Maria's role, as [8.7](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/) says: you draft and keep the AP concepts. In the labs before this one you worked beside her.
 - Dave Kowalski, the controller, owns the AP Worker and the AP policy. He owns and approves the concepts. Sam Ortiz works in Purchasing with Brightline's vendors.
 - The AP Worker works in the shared project Dave set up in Claude in September. On Tuesday, November 3, 2026, the project holds three files: AP policy version 3, a former clerk's onboarding notes, and the payment status list of October 23. One long chat has run in it since September 8.
 - That morning, Maria asked the worker four questions. It said invoice 5149 was on hold, when it was paid on October 30. It said Buckeye's $6,150 invoice needed no approval. It told her to confirm a vendor's new bank details by replying to the email. And it missed Northern Maple's invoice in Canadian dollars.
@@ -157,7 +157,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    Start with Task 1.
    ```
 
-3. The AI opens your two documents, shows "Who does what" and this morning's four answers, and then the five places, with [8.1](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/five-places/)'s rule. Then it shows seven items from the project, one at a time. They are its instructions, each of its three files, its memory, its chat's summary, and a line Maria wrote in the chat's first week. For each, answer: which of the five places its content comes from, and whether it may settle a policy question, yes or no. For the status list, also say where invoice 5149's status should come from.
+3. The AI opens your two documents, shows "Who does what" and this morning's four answers, and then the five places, with [8.1](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/five-places/)'s rule. Then it shows seven items from the project, one at a time. They are its instructions, each of its three files, its memory, its chat's summary, and a line Maria wrote in the chat's first week. For each, answer: which of the five places its content comes from, and whether it may settle a policy question, yes or no. For the status list, also say where invoice 5149's status should come from.
 4. When the AI says "Ready for your test", type this, and send it:
 
    ```text
@@ -176,7 +176,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)'s three moves. Then it shows three chats, one at a time: two other Brightline chats, and the project's own chat. For each, answer: restart, summarize or persist, and why, in a few words.
+1. In your lab chat, type "Task 2" and send it. The AI shows [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)'s three moves. Then it shows three chats, one at a time: two other Brightline chats, and the project's own chat. For each, answer: restart, summarize or persist, and why, in a few words.
 2. The AI shows Maria's line from the chat's first week, and where it is now. Answer: where the rule should live, so every chat follows it, and the words it should have.
 3. The AI asks whether that rule is Brightline policy yet. Answer yes or no, and why.
 4. When the AI says "Ready for your test", type `Test: Northern Maple` and send it.
@@ -192,9 +192,9 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows [8.4](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s lines on what memory may hold, and the project's six memory topics. Answer one line per topic: keep or delete, and for a topic you delete, where that fact lives instead.
+1. In your lab chat, type "Task 3" and send it. The AI shows [8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s lines on what memory may hold, and the project's six memory topics. Answer one line per topic: keep or delete, and for a topic you delete, where that fact lives instead.
 2. The AI asks on which day you will read memory again, and after what else, and what you write down each time. Answer in a few words.
-3. The AI shows [8.8](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)'s lines on memory, and asks how a project keeps its memory apart from your other chats, on Claude and on ChatGPT. Answer in a few words for each.
+3. The AI shows [8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)'s lines on memory, and asks how a project keeps its memory apart from your other chats, on Claude and on ChatGPT. Answer in a few words for each.
 4. When the AI says "Ready for your test", type `Test: Buckeye` and send it.
 5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -208,7 +208,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s first habit, then the policy and the memo, once, in full.
+1. In your lab chat, type "Task 4" and send it. The AI shows [8.7](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s first habit, then the policy and the memo, once, in full.
 2. The AI takes the five concepts one at a time. For each, answer: which clauses or points it carries, by their numbers. Then answer what its sources do not cover that people will ask about, and who decides it, or "nothing".
 3. The AI writes each concept into "Maria's records" as a draft. A draft serves nowhere, so nothing goes into the project yet, and this task has no test.
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -225,7 +225,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows Dave's approval note and what [8.6](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/ksor/) says a concept's header names. Answer: each concept's status now, and its effective date. The AI fills in the owner, the audience, the approval and the review date from Dave's note.
+1. In your lab chat, type "Task 5" and send it. The AI shows Dave's approval note and what [8.6](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/ksor/) says a concept's header names. Answer: each concept's status now, and its effective date. The AI fills in the owner, the audience, the approval and the review date from Dave's note.
 2. The AI shows the project's three files, one at a time. For each, answer: keep, replace or remove, then "because" and a few words. The AI then puts the five approved concepts into the project as one file.
 3. When the AI says "Ready for your test", type `Test: Tuesday morning` and send it. Then send `Test: the other concepts`.
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -240,7 +240,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 6" and send it. The AI shows six questions from [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) that good project instructions answer: role, what counts, cite, abstain, state and conflicts.
+1. In your lab chat, type "Task 6" and send it. The AI shows six questions from [8.5](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) that good project instructions answer: role, what counts, cite, abstain, state and conflicts.
 2. Write your instructions in one message that starts "Instructions:", in your own words, about 80 to 120 words. Answer all six questions. Point to where the rules live, and do not copy them. The AI puts your words under Dave's line and Maria's working rule, exactly as you wrote them.
 3. When the AI says "Ready for your test", type `Test: the $10,000 note` and send it. Then send `Test: next year`, and then `Test: the credit card`.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -255,7 +255,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it. The AI shows [8.4](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s four origins: observed, confirmed, reported and inferred. Then it shows the four records about 5149, one at a time, in date order. For each, answer: its origin, and why, in a few words. The AI also asks whose decision a payment run is.
+1. In your lab chat, type "Task 7" and send it. The AI shows [8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s four origins: observed, confirmed, reported and inferred. Then it shows the four records about 5149, one at a time, in date order. For each, answer: its origin, and why, in a few words. The AI also asks whose decision a payment run is.
 2. The AI asks for the latest known: the status, its date and its record. It also asks what anyone must do before acting on it, and what happens to the email's request. Answer in a few words.
 3. The AI writes the case file into "Maria's records", and puts a copy into the project.
 4. When the AI says "Ready for your test", type `Test: 5149` and send it.
@@ -273,13 +273,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 8" and send it. The AI copies the skill into "Maria's records" as Brightline's draft. Then it shows [8.9](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s questions, and the skill's six steps, one at a time. For each step, answer: OK, or "own rule" and the concept it should point to.
+1. In your lab chat, type "Task 8" and send it. The AI copies the skill into "Maria's records" as Brightline's draft. Then it shows [8.9](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s questions, and the skill's six steps, one at a time. For each step, answer: OK, or "own rule" and the concept it should point to.
 2. The AI asks what the skill carries, and what it can reach, send or change. Answer in a few words.
 3. The AI asks what the skill's reply should say about Buckeye's invoice BO-23104, with the concepts and alone. Answer one line for each, before the tests.
 4. When the AI says "Ready for your test", type `Skill test: Buckeye BO-23104, with the concepts` and send it. Then send `Skill test: Buckeye BO-23104, alone`.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**What a skill test is.** "Skill test:", an invoice's name, then "alone" or "with the concepts", is a test that reads the skill's steps. "Alone" reads only the steps and that one invoice, and says what each step decides. "With the concepts" reads the steps beside the project's instructions and concepts, and names any step a concept sets aside. It stands in for [8.9](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s test in two places: a test project with the concepts, and a plain chat without them.
+**What a skill test is.** "Skill test:", an invoice's name, then "alone" or "with the concepts", is a test that reads the skill's steps. "Alone" reads only the steps and that one invoice, and says what each step decides. "With the concepts" reads the steps beside the project's instructions and concepts, and names any step a concept sets aside. It stands in for [8.9](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/skills-and-plugins/)'s test in two places: a test project with the concepts, and a plain chat without them.
 
 **Checkpoint.** Checks 20 to 22 passed.
 
@@ -309,9 +309,9 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 10" and send it. The AI shows Dave's change and [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line, if any, goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays? The AI adds the two times Dave's ask gives: the draft before 9 and his approval at 9.
+1. In your lab chat, type "Task 10" and send it. The AI shows Dave's change and [8.7](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s fourth habit. Then it asks three things, one at a time. Which concept takes the rule, and do you edit it or start a new one? Which line, if any, goes, and where does Dave's sentence go? And what in the concept's header changes, and what stays? The AI adds the two times Dave's ask gives: the draft before 9 and his approval at 9.
 2. When the AI says "Ready for your test", type `Test: Northern Maple` and send it. The project still holds the copy of November 4.
-3. The AI shows Maria's list of the places that hold a copy of the concepts, and [8.5](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/)'s three routes. For each place, answer: its route, how you refresh it today, and which approval it will hold once refreshed. The AI writes the refresh log, and replaces the project's copy.
+3. The AI shows Maria's list of the places that hold a copy of the concepts, and [8.5](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/)'s three routes. For each place, answer: its route, how you refresh it today, and which approval it will hold once refreshed. The AI writes the refresh log, and replaces the project's copy.
 4. The AI shows Maria's working rule beside the concept's new sentence. Answer: keep it or remove it, and why.
 5. When the AI says "Ready for your next test", type `Test: Northern Maple` and send it again. Then send `Skill test: Northern Maple NMP-3471, with the concepts`.
 6. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -365,7 +365,7 @@ Maria has exported the project's setup. Other people have added to it since your
 
 1. In your lab chat, type "Task 13" and send it. The AI shows your project's instructions as one block, and lists the files in your project document.
 2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-project.md`. Download "Maria's records" the same way: it is the record, and you keep it.
-3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). A Claude project keeps its own memory.
+3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). A Claude project keeps its own memory.
 4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else. The file holds the instructions too, and the project's memory and chat as you left them. That is fine: your instructions say which of it counts.
 5. Open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
 
@@ -402,7 +402,7 @@ Maria has exported the project's setup. Other people have added to it since your
 
 6. **Check it now, in the project chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-13.md). Attach it in the project chat, and send [the check prompt](#the-check-prompt). Attach it only after the answers, so it cannot shape them.
 7. Missed a check? It is a line your setup lacks. Back in your lab chat, name the line, let the AI change the document, and send that question's test there. Then download the document again, replace the file in your project, open a new project chat, and ask again.
-8. When every check has passed, delete the project chat, because it holds an answer key. A project's memory can learn from its chats ([8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)).
+8. When every check has passed, delete the project chat, because it holds an answer key. A project's memory can learn from its chats ([8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)).
 
 With an account on the other AI vendor, you can build the same project there too, and ask the ten questions again.
 
@@ -422,14 +422,14 @@ With an account on the other AI vendor, you can build the same project there too
 - **A test quotes a line that is not in your document, or misses a line you added.** Say: "Read the documents again." Then send the test again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **In Task 13, the answers show the worker read no file.** Check the upload, delete the chat, and ask again in a new one, before you attach the key.
-- **Late in the lab, the AI forgets a rule from your brief.** This is the long chat of [8.3](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/). Say: "Read task-questions.md and both documents again." Then send the task again.
+- **Late in the lab, the AI forgets a rule from your brief.** This is the long chat of [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/). Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
 ## Apply it to your vertical (15 minutes)
 
 Your vertical is the line of work you know best. Pick one rule from your own work that people ask about, such as a refund limit or a leave rule. In your lab chat, ask for a third document. Write the rule in it as one concept, in your own words. Give its title, and name yourself as its owner. Say where it comes from, the day it took effect and the day you will review it. Add one thing it does not cover, and who decides that. Leave it a draft: nobody has approved it yet.
 
-Check it yourself against [8.7](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s first habit: one topic, written once, with every rule it depends on. Then download it: it is the one you take to work.
+Check it yourself against [8.7](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/)'s first habit: one topic, written once, with every rule it depends on. Then download it: it is the one you take to work.
 
 ## Look back
 
@@ -441,13 +441,13 @@ Check it yourself against [8.7](https://agentfactory2.panaversity.org/managing-a
 
 ## When you are done
 
-You are done when every check has passed, your own project answered the ten questions from your records alone, and your own concept is written. Keep both downloads. "Maria's records" holds your first KSoR, five approved AP concepts, with their refresh log, the fixed skill, Draft 5's knowledge lines and the review. It is the knowledge piece of the Part II capstone ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/)). "AP Worker project" holds the copy a worker answers from, with the instructions that make it do so. Last, read your app's saved memory, and delete anything this lab saved about Brightline ([8.4](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)).
+You are done when every check has passed, your own project answered the ten questions from your records alone, and your own concept is written. Keep both downloads. "Maria's records" holds your first KSoR, five approved AP concepts, with their refresh log, the fixed skill, Draft 5's knowledge lines and the review. It is the knowledge piece of the Part II capstone ([Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/)). "AP Worker project" holds the copy a worker answers from, with the instructions that make it do so. Last, read your app's saved memory, and delete anything this lab saved about Brightline ([8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)).
 
 **At work:** when an AI answer is wrong, find where it came from before you change any words. Then put that kind of information in its own place.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Long conversations.** When a conversation gets long or its answers get worse, the exam guide expects three moves: restart, summarize, or persist the key facts in the project. Concept 8.8 describes Claude summarizing older messages on its own, and very large context windows. On the exam, rely on neither. Choose restart, summarize or persist, as Concept 8.3 teaches. (D-005)
 - **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter adds only approved, in-force concepts from a KSoR. On the exam, a governed record, an approval workflow or a server reached over MCP is not the expected answer. Choose the project setup. (D-006)

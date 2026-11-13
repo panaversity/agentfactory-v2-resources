@@ -1,18 +1,18 @@
 # Lab 20: the agent loop by hand
 
-Chapter 20 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 20: the agent loop by hand](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/lab/), so you can do the lab without the book.
+Chapter 20 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 20: the agent loop by hand](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/lab/), so you can do the lab without the book.
 
 ## Getting ready
 
-The lab has four sittings. Each comes right after the concepts it uses. Each is also short enough for one session: about 2 hours, 1 hour 10 minutes, 1 hour 10 minutes and 1 hour 25 minutes. This section is the setup for all of them. Read it, then do Task 0. When a task says [F0](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f0-the-repository-and-its-secrets) to [F6](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f6-ollama-and-an-open-model), it means the field guide, in the reference at the end of the chapter.
+The lab has four sittings. Each comes right after the concepts it uses. Each is also short enough for one session: about 2 hours, 1 hour 10 minutes, 1 hour 10 minutes and 1 hour 25 minutes. This section is the setup for all of them. Read it, then do Task 0. When a task says [F0](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f0-the-repository-and-its-secrets) to [F6](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f6-ollama-and-an-open-model), it means the field guide, in the reference at the end of the chapter.
 
-**The agents write, and you explain.** This lab follows [Chapter 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-learn-to-read-code-with-an-agent-beside-me)'s PRIMM-AI+ method. In each task, you **predict** first: you write your prediction in `ports/ch20.md`. Then the agent **runs** the code, and you **investigate** the gap with the agent's help ("explain line 73"). Some tasks also ask you to **modify**: you tell the agent what to change, predict again, and run again. You must be able to say what every line of it does.
+**The agents write, and you explain.** This lab follows [Chapter 13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-learn-to-read-code-with-an-agent-beside-me)'s PRIMM-AI+ method. In each task, you **predict** first: you write your prediction in `ports/ch20.md`. Then the agent **runs** the code, and you **investigate** the gap with the agent's help ("explain line 73"). Some tasks also ask you to **modify**: you tell the agent what to change, predict again, and run again. You must be able to say what every line of it does.
 
 **The lab's files already hold the loop.** `brightline-lab-ch20.zip` comes with the finished code and the tests that check it. So Sittings 1 and 2 are about understanding and running the loop, not building it. Your coding agent's job is to set up, run, explain and change. Sitting 4's Task 13 is where the work becomes yours: you review it all, and merge it.
 
 **This lab costs a little money, and takes about 6 hours 10 minutes** (up to an hour more on route A). Neither API offers a free plan for API calls. Every `npm run ask` run has a cost cap of 10 cents. The whole lab should cost under $1 on each API (not yet confirmed by a live run). The open-model port is free.
 
-**The date in this lab** is Tuesday, March 30, 2027, the day after [Lab 19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/). "This week" means up to Sunday, April 4. The worker's instructions, `prompts/ap-worker.v1.md`, give the model that date.
+**The date in this lab** is Tuesday, March 30, 2027, the day after [Lab 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/). "This week" means up to Sunday, April 4. The worker's instructions, `prompts/ap-worker.v1.md`, give the model that date.
 
 **Not yet run live.** No one has run this lab against the real APIs yet. The recorded responses in the tests and the logs in the concepts follow each API's documented shapes. They were checked against the official SDK types, but none of them comes from a live run yet. If a live response differs a little, trust what you see, and record it in `ports/ch20.md`. **One stop rule:** Task 0's last step or Task 1 may fail in a way that **If something goes wrong** does not cover. If that happens, stop, and record what you saw. Every later task depends on reaching the API and the connector.
 
@@ -23,16 +23,16 @@ The lab has four sittings. Each comes right after the concepts it uses. Each is 
 **What you need.**
 
 - A computer running macOS, Linux, or Windows with WSL. WSL is the Windows Subsystem for Linux, and you need it because the scripts use Unix paths. The computer needs **Node 22.19 or later** (the minimum Lab 19 set), **Python 3.12 or later** and **uv** 0.11 or later. It also needs git and the GitHub CLI (`gh`). F0 says where to install each.
-- The desktop apps of Claude Code and OpenCode version 2, and Codex in the ChatGPT desktop app, each signed in ([Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/overview/)).
-- **A Claude Console account with API credits** and **an OpenAI API account with credits** ([F1](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Each gets a project or workspace with a small monthly spending limit, which you set by hand in Task 0.
+- The desktop apps of Claude Code and OpenCode version 2, and Codex in the ChatGPT desktop app, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)).
+- **A Claude Console account with API credits** and **an OpenAI API account with credits** ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Each gets a project or workspace with a small monthly spending limit, which you set by hand in Task 0.
 - **For the open-model port:** Ollama, and several gigabytes of free disk for one small model (F6).
-- **A connector to call.** Either your own [Chapter 19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector and a test token (route A), or the local practice connector in the zip (route B). Task 0 helps you choose.
+- **A connector to call.** Either your own [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector and a test token (route A), or the local practice connector in the zip (route B). Task 0 helps you choose.
 
-**A quick reminder from Chapter 12.** **Plan mode** means the agent writes a plan and waits before it changes anything. **Manual mode** means it asks you before each command it runs. A **second terminal** is a new terminal window or tab, opened beside the agent. It is for a program that must keep running, such as the practice connector. Start the program there, leave the window open, and stop it later with Ctrl+C. A **branch** is a separate line of work in git, and deleting it does not touch the main code ([Chapter 15](https://agentfactory2.panaversity.org/building-ai-workers/code-review/git-through-the-agent/)).
+**A quick reminder from Chapter 12.** **Plan mode** means the agent writes a plan and waits before it changes anything. **Manual mode** means it asks you before each command it runs. A **second terminal** is a new terminal window or tab, opened beside the agent. It is for a program that must keep running, such as the practice connector. Start the program there, leave the window open, and stop it later with Ctrl+C. A **branch** is a separate line of work in git, and deleting it does not touch the main code ([Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/)).
 
 **How every task runs.** Chapter 12's five-step routine: (1) a fresh session with the named agent, in `brightline-ap/`. (2) Plan mode, with the task's prompt as the brief. Read the plan, and correct it before it starts. (3) Manual mode: approve each command it asks about. In Codex, choose **Ask for approval**: in that mode, Codex runs commands inside the folder without asking. It asks before any command that needs the network, such as `npm run ask`. (4) Evidence: the agent shows what proves the task is done, and you check it against **What good looks like**. (5) A line in `ports/ch20.md`: the task, your prediction, what happened, anything that surprised you.
 
-**What you do by hand, and only this.** Make the two API accounts. Make each API key in its own console, and paste it into its file in `.secrets/` with your own editor. Set the spending limits, and copy the prices for the pinned models into `src/loop/config.json` ([F5](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f5-prices-usage-and-caching)). You also decide when to merge. Agents do everything else. **No API key or token passes through a chat.**
+**What you do by hand, and only this.** Make the two API accounts. Make each API key in its own console, and paste it into its file in `.secrets/` with your own editor. Set the spending limits, and copy the prices for the pinned models into `src/loop/config.json` ([F5](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f5-prices-usage-and-caching)). You also decide when to merge. Agents do everything else. **No API key or token passes through a chat.**
 
 **Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through four commands and their Python twins. `npm run ask` has a cost cap. `npm run break` and `npm run stream:demo` make one or two small calls each. `npm run stateful` runs at most 8 turns. The only other live call is the one embeddings call inside Task 0's load on route A. Ask before any call to a model API. `.claude/settings.json` also denies reading `.secrets/`, and `opencode.jsonc` denies OpenCode's file-reading tool access to it. Codex's settings file cannot deny it, so in Codex, the rule in `AGENTS.md` is the guard.
 
@@ -45,7 +45,7 @@ The lab has four sittings. Each comes right after the concepts it uses. Each is 
 | Recorded responses, fixtures | Saved responses in `tests/fixtures/loop/`. The tests replay them, so they cost nothing and need no network |
 | `npm run test:loop`, `npm run test:loop:py` | Run the loop's TypeScript tests (vitest) and Python tests (pytest) |
 | `npm run connector:practice` | Start the local practice connector on `127.0.0.1:8760` (route B). It reads its token from `.secrets/connector.env`. `PRACTICE_BROKEN=search_policy` makes that tool always answer "try again" |
-| 400, 401, 429, 529 | Web error codes. 400: the request was wrong. 401: the key was not accepted. 429: too many requests. 529: the model service is overloaded ([20.9](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/when-the-loop-goes-wrong/)) |
+| 400, 401, 429, 529 | Web error codes. 400: the request was wrong. 401: the key was not accepted. 429: too many requests. 529: the model service is overloaded ([20.9](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/when-the-loop-goes-wrong/)) |
 
 **Your agents can read this chapter.** `docs/chapter-20/` holds the concepts and the field guide as text. Each prompt names what to read.
 
@@ -58,7 +58,7 @@ The lab has four sittings. Each comes right after the concepts it uses. Each is 
 - **The first API, now.** Make the Claude Console account, and add a few dollars of credit. Then make a workspace for this lab with a monthly spending limit of $5. (The Default Workspace cannot have one.) Make one API key in that workspace, and paste it into `.secrets/anthropic.env` as `ANTHROPIC_API_KEY=` followed by the key.
 - **The second API, now or at the start of Sitting 2.** Make the OpenAI API account the same way, and paste its key into `.secrets/openai.env` as `OPENAI_API_KEY=` followed by the key. If two accounts at once is too much, leave this for Sitting 2, which sets aside 10 minutes for it. Until then, the `openai` prices stay at zero.
 
-Then open the pricing page for each account you made. Find the pinned model from `src/loop/config.json` (the `models` block, also listed in [F3](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f3-the-two-shapes-exactly)). Copy its four prices into that file, with today's date in `checked_on` (F5). The part you edit looks like this before you start. Change only the zeros for `claude`, and for `openai` if you made that account today. The prices are in dollars per million tokens. Keep every quote, comma and brace:
+Then open the pricing page for each account you made. Find the pinned model from `src/loop/config.json` (the `models` block, also listed in [F3](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f3-the-two-shapes-exactly)). Copy its four prices into that file, with today's date in `checked_on` (F5). The part you edit looks like this before you start. Change only the zeros for `claude`, and for `openai` if you made that account today. The prices are in dollars per million tokens. Keep every quote, comma and brace:
 
 ```json
 "prices": {
@@ -73,8 +73,8 @@ Then open the pricing page for each account you made. Find the pinned model from
 
 **Choose a connector.**
 
-- **Route A, your own connector.** If your Chapter 19 staging connector is still deployed, use it. By hand first, copy the files in your Lab 19 folder's `.secrets/` into this folder's `.secrets/`, in Finder or your own terminal: the load and the token need them. Step 4 of the prompt below first loads this lab's Brightline data into it: Lab 19's rows, and three invoices entered since. The loop then calls your real connector, with a test token for Ana at Brightline. You need a way to make that token ([F2](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)). If you are not sure you have one, take route B: everything in this chapter works on it.
-- **Route B, the practice connector.** If your Chapter 19 connector is not deployed, or you skipped Labs [17](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) to [19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/), use the practice connector in the zip. It offers the same four tools over MCP, on your own computer. It reads this folder's Brightline files, the same rows route A loads. It also checks a bearer token: a sign-in token sent in a request header, as in [Chapter 18](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/overview/). It has no sign-in server and no database, so it proves the loop, not the connector.
+- **Route A, your own connector.** If your Chapter 19 staging connector is still deployed, use it. By hand first, copy the files in your Lab 19 folder's `.secrets/` into this folder's `.secrets/`, in Finder or your own terminal: the load and the token need them. Step 4 of the prompt below first loads this lab's Brightline data into it: Lab 19's rows, and three invoices entered since. The loop then calls your real connector, with a test token for Ana at Brightline. You need a way to make that token ([F2](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)). If you are not sure you have one, take route B: everything in this chapter works on it.
+- **Route B, the practice connector.** If your Chapter 19 connector is not deployed, or you skipped Labs [17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) to [19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/), use the practice connector in the zip. It offers the same four tools over MCP, on your own computer. It reads this folder's Brightline files, the same rows route A loads. It also checks a bearer token: a sign-in token sent in a request header, as in [Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/). It has no sign-in server and no database, so it proves the loop, not the connector.
 
 **Predict:** before any key is used, which tests can already pass?
 
@@ -107,7 +107,7 @@ Then open the pricing page for each account you made. Find the pinned model from
 
 ## Sitting 1: the loop on the first API (about 2 hours)
 
-**Before you start, answer in a line each:** What does the model send back when it wants a tool ([20.1](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/what-an-agent-is-in-code/))? What does a strict schema guarantee, and what does it not ([20.2](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/a-tool-is-a-name-a-description-and-a-schema/))? **After this sitting, you can:** explain the loop line by line in either language, predict each request it sends, and say what breaks the next call.
+**Before you start, answer in a line each:** What does the model send back when it wants a tool ([20.1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/what-an-agent-is-in-code/))? What does a strict schema guarantee, and what does it not ([20.2](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/a-tool-is-a-name-a-description-and-a-schema/))? **After this sitting, you can:** explain the loop line by line in either language, predict each request it sends, and say what breaks the next call.
 
 **Where you are.** The first API (`claude.ts`, or `claude_loop.py` in Python), with the connector you set up in Task 0, by route A or route B.
 
@@ -181,7 +181,7 @@ def openai_tools(specs=TOOL_SPECS):
 
 *Figure 20.9. A map of the loop in both languages. Find a step in your language, then find its twin.*
 
-**Where the loop starts.** Before step 1, both files open the loop and check your own stops first ([20.8](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/the-stops-you-add-yourself/)). In TypeScript, lines 41 to 44:
+**Where the loop starts.** Before step 1, both files open the loop and check your own stops first ([20.8](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-stops-you-add-yourself/)). In TypeScript, lines 41 to 44:
 
 ```ts
 41  for (let turn = 1; ; turn++) {
@@ -220,7 +220,7 @@ Both mean "count the turns, and repeat with no end of its own". (In Python, line
 58    const response = await tracer.modelCall("anthropic", o.model, () => o.client.messages.create(request),
 ```
 
-Lines 59 to 63 (not shown) finish the call and its trace details ([20.10](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/reading-a-trace/)). Line 64 logs the response, and lines 65 to 70 add its token counts to the cost meter (20.8). Python's lines 50 to 77 do the same. Its key lines:
+Lines 59 to 63 (not shown) finish the call and its trace details ([20.10](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/reading-a-trace/)). Line 64 logs the response, and lines 65 to 70 add its token counts to the cost meter (20.8). Python's lines 50 to 77 do the same. Its key lines:
 
 ```python
 50        # Step 1. Call the model with the instructions, the whole conversation and the tools.
@@ -234,7 +234,7 @@ Lines 59 to 63 (not shown) finish the call and its trace details ([20.10](https:
 65            response: Message = await client.messages.create(**request)
 ```
 
-**In TypeScript.** Line 54's `adaptive` lets the model decide on each turn whether to think. Line 55's `...( … )` adds the caching setting only when caching is on ([20.12](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/tokens-caching-and-what-a-call-costs/)). Its `ephemeral` means short-lived: the cache keeps the start of the request for a few minutes. `o.log?.( … )` on line 57 means "log it, if a log was set up". The real call to the model is `o.client.messages.create(request)` on line 58. Its `() => …` gives that call to the tracer, which runs it and records it. The call continues on lines 59 to 63. Names after `:` or `as`, such as `Anthropic.MessageCreateParamsNonStreaming` on line 47 and `as const` on line 55, are types for the type check (Chapters [13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/) and [14](https://agentfactory2.panaversity.org/building-ai-workers/structuring-programs/async-and-await/)). You can skip them.
+**In TypeScript.** Line 54's `adaptive` lets the model decide on each turn whether to think. Line 55's `...( … )` adds the caching setting only when caching is on ([20.12](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/tokens-caching-and-what-a-call-costs/)). Its `ephemeral` means short-lived: the cache keeps the start of the request for a few minutes. `o.log?.( … )` on line 57 means "log it, if a log was set up". The real call to the model is `o.client.messages.create(request)` on line 58. Its `() => …` gives that call to the tracer, which runs it and records it. The call continues on lines 59 to 63. Names after `:` or `as`, such as `Anthropic.MessageCreateParamsNonStreaming` on line 47 and `as const` on line 55, are types for the type check (Chapters [13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/) and [14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/async-and-await/)). You can skip them.
 
 **In Python.** Line 65 is the real call. `**request` passes every field of the request dictionary to it.
 
@@ -341,7 +341,7 @@ The same steps in Python. If TypeScript is your language, this block is only for
 
 **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-3.md).
 
-**Modify (optional, 10 minutes).** Ask the agent to change line 97 on a throwaway branch, a git branch the agent deletes afterwards (Chapter 15). The change puts a text block before the results: `content: [{ type: "text", text: "Here you go." }, ...results]`. That breaks [20.4](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/running-the-tools-and-sending-back-the-results/)'s third rule, results first. Predict what the API says. Have the agent run it. Read the 400 and its message, then have the agent delete the branch. Expect a 400 saying that tool results must come first, right after the tool calls.
+**Modify (optional, 10 minutes).** Ask the agent to change line 97 on a throwaway branch, a git branch the agent deletes afterwards (Chapter 15). The change puts a text block before the results: `content: [{ type: "text", text: "Here you go." }, ...results]`. That breaks [20.4](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/running-the-tools-and-sending-back-the-results/)'s third rule, results first. Predict what the API says. Have the agent run it. Read the 400 and its message, then have the agent delete the branch. Expect a 400 saying that tool results must come first, right after the tool calls.
 
 ### Task 4. Two calls in one turn, one failing (20 minutes, Codex)
 
@@ -394,14 +394,14 @@ Line 40 checks that there is a thinking block whose signature it can cut. `.some
 
 **Checkpoint 1: the loop.** Before Sitting 2, check that you can do these without looking back.
 
-- Name the loop's five steps, and point to the line in either language that ends it (20.1, [20.3](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/one-turn-request-response-and-stop-reason/)).
+- Name the loop's five steps, and point to the line in either language that ends it (20.1, [20.3](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/one-turn-request-response-and-stop-reason/)).
 - Say what a strict schema guarantees, and give an input it accepts that is still wrong (20.2).
 - Say what happens if a tool call gets no result, and how the loop makes sure it never does (20.4).
-- Say why the model's entry must go back unchanged, and which line makes sure it does ([20.5](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/the-conversation-is-an-array-you-own/)).
+- Say why the model's entry must go back unchanged, and which line makes sure it does ([20.5](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-conversation-is-an-array-you-own/)).
 
 ## Sitting 2: the same loop on the second API (about 1 hour 10 minutes)
 
-**Before you start, answer in a line each:** What four things are different about a tool call on the second API ([20.6](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/the-same-loop-different-shapes/))? What can you no longer see in a stateful run ([20.7](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/what-a-stateful-mode-hides/))? **After this sitting, you can:** explain the loop on both APIs, name every difference, and say what a stateful mode keeps for you.
+**Before you start, answer in a line each:** What four things are different about a tool call on the second API ([20.6](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-same-loop-different-shapes/))? What can you no longer see in a stateful run ([20.7](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/what-a-stateful-mode-hides/))? **After this sitting, you can:** explain the loop on both APIs, name every difference, and say what a stateful mode keeps for you.
 
 **Where you are.** The second API now (`openai.ts`, or `openai_loop.py` in Python), with the same connector, route A or route B, and the same five steps.
 
@@ -622,7 +622,7 @@ Take a break here. Then read Part D, and do Sitting 4.
 
 ## Sitting 4: the rest of the API, and ship it (about 1 hour 25 minutes)
 
-**Before you start, answer in a line each:** When can a streamed tool call's input be parsed ([20.11](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/streaming/))? Which part of a request does caching make cheaper (20.12)? What five things does a loop pin ([20.13](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/versions-models-and-keys/))? **After this sitting, you can:** read a stream, see caching in the usage, run the loop on an open model, and ship it.
+**Before you start, answer in a line each:** When can a streamed tool call's input be parsed ([20.11](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/streaming/))? Which part of a request does caching make cheaper (20.12)? What five things does a loop pin ([20.13](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/versions-models-and-keys/))? **After this sitting, you can:** read a stream, see caching in the usage, run the loop on an open model, and ship it.
 
 **Where you are.** Both APIs and an open model, in your chosen language, with your connector, route A or route B. Task 11 is on the advanced path. Tasks 12 and 13 are on the core path.
 
@@ -702,12 +702,12 @@ Until the block stops, the pieces only collect in `partialJson`. Line 44 (45 in 
 | 400 naming `temperature`, `top_p` or `top_k` | An old sample or helper set a sampling parameter the current API version rejects | Remove it (20.9, 20.13) |
 | 400 about tool choice | A forced tool choice, rejected on a current model | Use `auto`, with strict tools (20.2) |
 | 401 | The key file is wrong, empty, expired, or for another project | Check `.secrets/anthropic.env` or `.secrets/openai.env` in your editor, never in a chat |
-| 429, 503 or 529 after retries | Too many requests, the service is busy, or (second API) the spend limit or credits ran out | Read the error's code. For a spend limit or credits, raise the limit or add credits ([F1](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Otherwise wait a minute and run again. The SDK already retried twice |
+| 429, 503 or 529 after retries | Too many requests, the service is busy, or (second API) the spend limit or credits ran out | Read the error's code. For a spend limit or credits, raise the limit or add credits ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Otherwise wait a minute and run again. The SDK already retried twice |
 | The loop stops at `turn_limit` on a simple question | The model kept calling tools | Read the log: a tool that fails or returns too little leads to more calls (20.8) |
 | `cost_cap` on the first turn | The prices in `config.json` are far too high, or the cap far too low | Check the prices against the pricing page (F5) |
-| The model answers without calling a tool | The question did not need one, or the descriptions did not fit it | Read the tool descriptions as the model would ([Chapter 17](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/overview/)). Never force a tool |
+| The model answers without calling a tool | The question did not need one, or the descriptions did not fit it | Read the tool descriptions as the model would ([Chapter 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/overview/)). Never force a tool |
 | An open model writes broken arguments | Small models are weaker at tool calls | The loop returns an `ERROR:` output and goes on. Try another pinned model, and record it (Task 12) |
-| Lab 19's database tests (`npm run test:py`, `npm run test:servers`) expect 16 open invoices and find 13, or find no `.secrets/db.dev.env` | Your dev database still holds Lab 19's rows (route A), or this folder has no database (route B): Task 0 loaded this lab's rows only into staging | This lab's checks are the four loop checks. On route A, to run Lab 19's too, load dev with the test embedder first ([F2](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)) |
+| Lab 19's database tests (`npm run test:py`, `npm run test:servers`) expect 16 open invoices and find 13, or find no `.secrets/db.dev.env` | Your dev database still holds Lab 19's rows (route A), or this folder has no database (route B): Task 0 loaded this lab's rows only into staging | This lab's checks are the four loop checks. On route A, to run Lab 19's too, load dev with the test embedder first ([F2](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)) |
 | The connector answers 401 | The test token expired, or the practice connector was started before the token file changed | Make a new token (route A), or stop and restart `npm run connector:practice` (route B) |
 
 ## Apply it to your vertical (optional)
@@ -722,7 +722,7 @@ CCDV-F is the Claude Certified Developer foundations exam, and CCAR-F the Claude
 - **CCDV-F, API mechanics, configuration and SDKs (primary):** streaming, usage and caching, versions, pinning and keys (20.11 to 20.13).
 - **CCDV-F, building agents (supporting):** the loop itself (20.1 to 20.5).
 - **CCAR-F, agentic loops and session state (primary):** the loop, stop reasons, tool results and limits (20.1, 20.3, 20.4, 20.8). **CCAR-F (supporting):** tool definitions and results (20.2, 20.4).
-- **The OpenAI competency map (primary):** the second API's loop, state and the OpenAI part of [20.14](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/how-todays-tools-realize-it/) (20.6, 20.7).
+- **The OpenAI competency map (primary):** the second API's loop, state and the OpenAI part of [20.14](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/how-todays-tools-realize-it/) (20.6, 20.7).
 - **For the exam,** know that the first API's newest version rejects `temperature`, `top_p` and `top_k`, and that forcing a tool is rejected on its newest models. If the official guide still teaches either as current, expect the exam to follow the guide.
 
 ## Artifact checklist

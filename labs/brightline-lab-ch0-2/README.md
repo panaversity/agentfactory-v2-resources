@@ -2,7 +2,7 @@
 
 Chapter 0.2 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.2: Your first hour, one control at a time](https://agentfactory2.panaversity.org/how-ai-works/your-first-hour/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.2: Your first hour, one control at a time](https://agentfactory.panaversity.org/how-ai-works/your-first-hour/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

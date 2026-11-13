@@ -1,6 +1,6 @@
 # Lab 4: what the worker is made of
 
-Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: what the worker is made of](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
+Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: what the worker is made of](https://agentfactory.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
 In the week of October 12, 2026, Brightline's AP Worker made three mistakes, and on Friday IT asked Dave what the worker was made of, so they could rebuild it on the other AI vendor. He could not say. In this lab you answer Dave's questions in your own words, and the AI writes your answers into the page IT asked for: the worker drawn as Chapter 4's six layers, one layer at a time. After each layer, the AI moves that layer to the new vendor following only your page, and replays the week's messages against the new worker. What the new worker gets wrong shows you the line to fix. Each task is checked against its own key the moment it is done. It takes about 90 minutes, in one chat, and you can stop and come back, because the chat and the page keep your work. A free Claude or ChatGPT account is enough.
 
@@ -198,7 +198,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
    sections 4.2 and 4.3?
    ```
 
-2. Answer Dave, in one message. Have [4.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/governance-rule/) open: it is about this.
+2. Answer Dave, in one message. Have [4.7](https://agentfactory.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/governance-rule/) open: it is about this.
    - How does the worker reach the accounting system today, and whose login does it use?
    - The connector, the login and the accounting system: which are the vendor's and which Brightline's? So which are built again, and which carried?
    - Whose login does the new worker use? What stands between the worker and the accounting system, so that a payment over $5,000 waits for Dave's recorded approval? If Brightline does not have that today, say so, and say what it would be.
@@ -265,7 +265,7 @@ You are done when checks 1 to 21 have passed and you have read check 22 yourself
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Persist.** This chapter's wipe test says memory must never be the only source for a fact or permission the worker acts on, and 4.9 says a fresh machine rebuilds its context from the records. The exam guide expects three moves when a conversation gets long or its answers get worse: restart, summarize, or persist the key facts, for example in a project. On the exam, persisting key facts in a project is a correct move. The wipe test is this book's rule for what may live only in memory, not an exam answer. (D-005)
 - **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter teaches that approved knowledge belongs in a KSoR, reached through a custom connector. On the exam, a governed record or a custom MCP connector is not the expected answer. Choose the project setup. (D-006)

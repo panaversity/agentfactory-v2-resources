@@ -1,6 +1,6 @@
 # Lab 7: may, then can
 
-Chapter 7 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 7: may, then can](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/lab/), so you can do the lab without the book.
+Chapter 7 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 7: may, then can](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/lab/), so you can do the lab without the book.
 
 On Tuesday, October 27, 2026, Brightline's AP Worker forwarded a payment run file to a stranger and changed a vendor's contact email. Nobody had decided what it may do, and its settings let it do anything. Most people fix this by adding a sentence, such as "don't forward files", and hoping. In this lab you fix it in the way that holds. You decide what the worker may do, action by action, and set what its tools can do no wider than that. You write down what no setting can hold, and who holds it. Then you prove it on this morning's inbox, which carries the same attack again. You decide every line. The AI writes each decision into the worker's Role Contract, asks the questions and tests each line. It takes about three hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 12's fresh chat in the other.
 
@@ -88,7 +88,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. Open a new chat: your lab chat, for Tasks 1 to 12. Before you attach anything, switch off what this chat does not need. In the "+" menu beside the message box, switch off every connector or app, such as Gmail or Google Drive, and web search if you see that switch. Leave everything else as it is. If you do not see a connector or app, it is already off. Some Claude accounts have no web search switch, because Claude searches when it helps, so your brief tells it not to. The emails you are about to attach carry instructions written to trick a worker, so give this chat only what the task needs ([7.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/blast-radius/)).
+1. Open a new chat: your lab chat, for Tasks 1 to 12. Before you attach anything, switch off what this chat does not need. In the "+" menu beside the message box, switch off every connector or app, such as Gmail or Google Drive, and web search if you see that switch. Leave everything else as it is. If you do not see a connector or app, it is already off. Some Claude accounts have no web search switch, because Claude searches when it helps, so your brief tells it not to. The emails you are about to attach carry instructions written to trick a worker, so give this chat only what the task needs ([7.4](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/blast-radius/)).
 2. Attach `inputs.zip`, and send the brief for your app. There are two, the same but for the document's name: Claude's first, then ChatGPT's.
 
    ```text tab="Claude" tab-group="vendor"
@@ -167,7 +167,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    ```
 
 4. The AI shows Tuesday's three actions, one at a time: the replies, the forward and the contact change. For each, answer in a few words: the rung it acted at, and what let it act there, from a line of the contract, the policy, Maria's words, a setting, or nothing.
-5. The AI shows Maria's words beside [7.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/envelope-brief-permissions/)'s three limits. Answer three things: is it an envelope, a brief or a permission? Could it give the worker more than its contract allows? And who may change the envelope?
+5. The AI shows Maria's words beside [7.1](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/envelope-brief-permissions/)'s three limits. Answer three things: is it an envelope, a brief or a permission? Could it give the worker more than its contract allows? And who may change the envelope?
 6. The AI asks what stops at once. Answer: each of Tuesday's actions, and the rung it stays at until Dave decides more, or "stopped".
 7. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -183,7 +183,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [7.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/autonomy-ladder/)'s four rungs. Then it shows the fifteen actions the worker might take, five at a time, A01 to A15, each with where it happens, what it changes, and the policy section that speaks to it.
+1. In your lab chat, type "Task 2" and send it. The AI shows [7.2](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/autonomy-ladder/)'s four rungs. Then it shows the fifteen actions the worker might take, five at a time, A01 to A15, each with where it happens, what it changes, and the policy section that speaks to it.
 2. For each action, answer in a line, starting with its number. Say "never automated", with the policy section or the reason, or name the rung it may have today: observe, recommend, draft or execute.
 3. When the AI says "Ready for your test", type `Test: email 05` and send it. Then send `Test: email 12`.
 4. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -198,7 +198,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows A09, voiding a duplicate, with [7.3](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/choose-the-rung/)'s three questions. Answer: the rung the job needs, then the ceiling each question sets. The lowest is its rung.
+1. In your lab chat, type "Task 3" and send it. The AI shows A09, voiding a duplicate, with [7.3](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/choose-the-rung/)'s three questions. Answer: the rung the job needs, then the ceiling each question sets. The lowest is its rung.
 2. The AI does the same for A07, sending a status reply. Answer the same way.
 3. The AI asks what would raise A07 one rung. Answer in a line: the evidence, who decides, and where the change is recorded.
 4. When the AI says "Ready for your test", type `Test: email 01` and send it. Then send `Test: email 03`.
@@ -245,7 +245,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 6" and send it. The AI shows Maria's message and the plugin's listing, with [7.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/blast-radius/)'s six checks. Answer: fits or not, for each check, then on or off.
+1. In your lab chat, type "Task 6" and send it. The AI shows Maria's message and the plugin's listing, with [7.4](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/blast-radius/)'s six checks. Answer: fits or not, for each check, then on or off.
 2. The AI does the same for the accounting system's connector. Answer the same way, and name the tool behind any check it fails. Then give each of its five tools a setting.
 3. When the AI says "Ready for your test", type `Test: Maria's plugin` and send it.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -260,7 +260,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it. The AI shows [7.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/connectors-browsers-screens/)'s three paths. Answer: the path to the mailbox and to the accounting system, each with a few words on why.
+1. In your lab chat, type "Task 7" and send it. The AI shows [7.5](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/connectors-browsers-screens/)'s three paths. Answer: the path to the mailbox and to the accounting system, each with a few words on why.
 2. The AI asks about the browser and screen control. Answer: on or off for each, and whom the browser is signed in as.
 3. When the AI says "Ready for your test", type `Test: email 04` and send it.
 4. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -293,7 +293,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows [7.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/untrusted-input/)'s three ways beside your lines for sending, forwarding and changing a record. Answer: each action, and how this job breaks the overlap for it.
+1. In your lab chat, type "Task 9" and send it. The AI shows [7.6](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/untrusted-input/)'s three ways beside your lines for sending, forwarding and changing a record. Answer: each action, and how this job breaks the overlap for it.
 2. The AI asks for your rule for text inside an email or an attachment. Answer in a few words.
 3. When the AI says "Ready for your test", type `Test: email 05` and send it. Then send `Test: email 10`.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -308,7 +308,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 10" and send it. The AI shows [6.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/work-you-did-not-watch/)'s three kinds of action. Then it shows each line of the worker's report, one at a time, beside the record that shows what happened. For each, answer: proposed, attempted or confirmed, and the record that shows it.
+1. In your lab chat, type "Task 10" and send it. The AI shows [6.7](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/work-you-did-not-watch/)'s three kinds of action. Then it shows each line of the worker's report, one at a time, beside the record that shows what happened. For each, answer: proposed, attempted or confirmed, and the record that shows it.
 2. The AI asks what the worker did on Tuesday that its report does not mention. Answer in a few words.
 3. The AI asks where Brightline checks that a change happened. Answer in a few words.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -324,7 +324,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 11" and send it. The AI asks which app your lab chat is on. Answer in a word.
-2. The AI shows four of your lines, one at a time, each with the part of [7.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/both-ai-vendors/)'s box for your app that speaks to it: sending a reply, a write to the vendor record, recording an approval, and a run nobody watches. For each, answer: the setting that holds it on your app, or "none".
+2. The AI shows four of your lines, one at a time, each with the part of [7.8](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/both-ai-vendors/)'s box for your app that speaks to it: sending a reply, a write to the vendor record, recording an approval, and a run nobody watches. For each, answer: the setting that holds it on your app, or "none".
 3. The AI asks which setting comes closest to holding sending on the other app. Answer: the setting, and whether it blocks sending or only asks first.
 4. The AI asks who holds each line no setting holds. Answer: the line, then the person.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -386,7 +386,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 Your vertical is the line of work you know best. Pick one worker you would trust with a task in your role. In your lab chat, ask for a second document. First list, in it, the actions that worker might take. Then write five lines of an Authority Envelope for it, in your own words. Write two actions, each with its rung, and one action that is never automated, with the reason. Then write one threshold as a number, with who approves above it, and one escalation trigger, with the person it goes to. Last, add one line for "can". Name the setting on your app that would hold one of those actions, or write "gap list" and the person who holds it.
 
-Check it yourself against [7.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-authority-envelope/clerk-analogy/)'s three tests: every action named, every threshold a number, every approver named by role. Then download this document too: it is the one you take to work.
+Check it yourself against [7.7](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/clerk-analogy/)'s three tests: every action named, every threshold a number, every approver named by role. Then download this document too: it is the one you take to work.
 
 ## Look back
 
@@ -397,13 +397,13 @@ Check it yourself against [7.7](https://agentfactory2.panaversity.org/managing-a
 
 ## When you are done
 
-You are done when every check has passed, the fresh chat cleared the inbox with a line of your contract for each decision, and your own five lines are written. Keep the downloaded file: it is Draft 4 of the AP Worker's Role Contract, with its Authority Envelope, its settings, the lines on today's tools and the gap list. It is also the Authority Envelope that the Part II capstone is assembled from ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/), Figure II.3).
+You are done when every check has passed, the fresh chat cleared the inbox with a line of your contract for each decision, and your own five lines are written. Keep the downloaded file: it is Draft 4 of the AP Worker's Role Contract, with its Authority Envelope, its settings, the lines on today's tools and the gap list. It is also the Authority Envelope that the Part II capstone is assembled from ([Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/), Figure II.3).
 
 **At work:** before you switch on a worker's tools, write what it may do. Then make what its tools can do no wider.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Work that repeats.** The exam guide expects a project with saved instructions and knowledge, where Claude drafts and a named person reviews before anything is sent. For continuity between conversations, it expects memory or the project's knowledge. This chapter teaches approval modes, routines that act as you, and DSoR. The exam does not cover them. On the exam, choose the option where Claude drafts and a person reviews and sends. (D-007)
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 7.8 shows three open-source tools beside Claude and ChatGPT: OpenCode, Omnara and OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)

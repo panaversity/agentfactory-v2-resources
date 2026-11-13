@@ -2,7 +2,7 @@
 
 Chapter 9 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 9: when nobody is watching](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 9: when nobody is watching](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

@@ -1,6 +1,6 @@
 # Lab 3: the same one line
 
-Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: the same one line](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
+Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: the same one line](https://agentfactory.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
 
 On Thursday, October 1, 2026, Brightline's AP Worker was used three times, and each time a person got the rhythm wrong. In this lab you take Dave's one-line request, "Reconcile Midwest Packaging's statement.", and see what it leaves the worker to decide alone. Then you set the work up properly, let it run, and review what comes back. Last, you write the lessons where every future run reads them, until the same one line does the job right. Most people either type one line and trust the result, or check every step by hand. This lab teaches the rhythm that works instead. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. It takes about three and a half hours. Stop after Task 4 or Task 7 if you need a break: the chat and the document keep your work. You need a Claude or ChatGPT account, and a free one is enough.
 
@@ -239,8 +239,8 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 5" and send it. The AI shows four moments from a run, one at a time.
-2. For each, say whether you step in or let it work, and if you step in, why and what you do. [Lesson 3.3](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) lists the four reasons to step in.
-A chat cannot show a run in progress, so the moments stand in for a progress view. This run changes nothing in Brightline's systems, and Task 7 has the known answer, so it is a dry run (see [Lesson 3.2](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/first-10-percent/)).
+2. For each, say whether you step in or let it work, and if you step in, why and what you do. [Lesson 3.3](https://agentfactory.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/middle-80-percent/) lists the four reasons to step in.
+A chat cannot show a run in progress, so the moments stand in for a progress view. This run changes nothing in Brightline's systems, and Task 7 has the known answer, so it is a dry run (see [Lesson 3.2](https://agentfactory.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/first-10-percent/)).
 
 **The hard rule.** One thing fails any run, whatever else it gets right: changing the register, recording a credit or contacting the vendor. That is the 9 a.m. mistake again.
 
@@ -292,7 +292,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **Checkpoint.** Checks 15 to 17 passed.
 
-**At work:** when something goes wrong, find which part broke before you fix anything. [Lesson 3.6](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/three-failures/) gives the three questions.
+**At work:** when something goes wrong, find which part broke before you fix anything. [Lesson 3.6](https://agentfactory.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/three-failures/) gives the three questions.
 
 ## Where it lasts
 
@@ -322,7 +322,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 **What you do:**
 
 1. In your lab chat, type "Task 9" and send it. The AI shows Draft 2's "never" and escalation lines.
-2. Name the ones a scheduled run could break. For each, it shows what each AI vendor offers, from [Lesson 3.7](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/). Answer how it is held on Claude, on ChatGPT, and how strong that is:
+2. Name the ones a scheduled run could break. For each, it shows what each AI vendor offers, from [Lesson 3.7](https://agentfactory.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/both-ai-vendors/). Answer how it is held on Claude, on ChatGPT, and how strong that is:
    - **impossible:** the task never has the access
    - **a person decides:** an approval step
    - **written and reviewed:** a line in the instructions, checked in the final 10 percent
@@ -398,7 +398,7 @@ You are done when every check has passed, the fresh chat did the job from Dave's
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 3.7 shows two open-source tools beside Claude and ChatGPT: OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 

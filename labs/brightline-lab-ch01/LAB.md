@@ -1,6 +1,6 @@
 # Lab 1: a real job, checked
 
-Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
+Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
 In this lab you give an AI a real job, check each task against its answer key, and find out where each result lives. It runs in two sittings. Part A takes about two and a quarter hours, and works on a free plan. A day later, you spend ten minutes on what survived, then about an hour on Part B, the AI vendors' newer tools, some of them on paid plans only. You need a Claude or ChatGPT account.
 
@@ -168,8 +168,8 @@ The goal: decide how much of each AP job you can hand to an AI, how that work sh
 
 **What you decide.** For each job, three things:
 
-- **The rung**, from [1.1 The ladder of interaction](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/): how much of the work you hand over. To a chatbot you send a message, get a reply, and finish the job yourself. To an agent you delegate one task, and get a finished output. To an AI Worker you hand over a role, and get results again and again.
-- **The surface**, from [1.5, "Which surface for which job"](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/): how the work runs. A chat is for something you read once. A task is for one finished result. A standing worker is for work that continues between conversations.
+- **The rung**, from [1.1 The ladder of interaction](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/): how much of the work you hand over. To a chatbot you send a message, get a reply, and finish the job yourself. To an agent you delegate one task, and get a finished output. To an AI Worker you hand over a role, and get results again and again.
+- **The surface**, from [1.5, "Which surface for which job"](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/): how the work runs. A chat is for something you read once. A task is for one finished result. A standing worker is for work that continues between conversations.
 - **What starts it:** you, or a schedule. A schedule does not change the surface. It starts the same task again at a set time. Chapter 2 calls what starts the work a **trigger**: a schedule, or an event such as a new email.
 
 For example, for a different job: "Turn last month's receipts into one expense report" is one finished result, and you ask for it. So you would answer "agent, task, you".
@@ -266,7 +266,7 @@ The goal: say where each of your results is kept, and whether it lasts.
 4. The Friday file you saved in your Brightline AP folder in Task 8.
 5. Any file the AI made in Task 2 and never delivered to you.
 
-**What you decide.** For each result, two things, from [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/):
+**What you decide.** For each result, two things, from [1.4 Continuity, execution and persistence](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/):
 
 - **The place** where it is kept. Your account or workspace holds the conversations, and on Claude the Artifacts section. The AI's workspace is the temporary computer where the AI's work runs. Your own computer holds your folders and files. A connected app is one such as Google Drive.
 - **Stays or goes:** whether it is still there when the AI's work is done.
@@ -313,7 +313,7 @@ You decide. The AI only shows you the results, and records your answers.
 
 ### Task 10. What survived (10 minutes)
 
-The goal: find out which of your Part A results are still there a day later, and why. Do this at least a day after Part A. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) and [1.5 How today's tools realize it](https://agentfactory2.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) explain what you find.
+The goal: find out which of your Part A results are still there a day later, and why. Do this at least a day after Part A. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) and [1.5 How today's tools realize it](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) explain what you find.
 
 **What you do:**
 
@@ -455,7 +455,7 @@ Your vertical is the line of work you know best. Take a pile of real files from 
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Features.** The exam guide expects you to pick a named feature: projects, research mode, chat or artifacts. It also names memory, skills, code execution and connectors, such as Google Drive and Gmail, and any of these can be the right answer. On some plans, Claude now decides inside one conversation, with no mode to pick, and it adds tasks and Cowork. A Claude Doc is one kind of artifact. On the exam, choose the named feature that fits the job. "Write a clearer brief" is not a feature choice. Concept 2.4 matches each feature to the job it fits, and Concepts 5.7, 8.4 and 8.5 show them in use. (D-003)
 - **Persist.** In this chapter, persistence means where a result is saved. In the exam guide, persist means keeping the key facts of a conversation, for example in a project, so that a new conversation can start from them. When a conversation gets long or its answers get worse, the guide expects three moves: restart, summarize, or persist. On the exam, a fresh conversation that starts from a summary is a correct move. (D-005)

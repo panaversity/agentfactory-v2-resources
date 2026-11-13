@@ -1,6 +1,6 @@
 # Lab 5: the payment-run brief
 
-Chapter 5 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 5: the payment-run brief](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/lab/), so you can do the lab without the book.
+Chapter 5 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 5: the payment-run brief](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/lab/), so you can do the lab without the book.
 
 On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Friday's payment run ready, and the worker had to guess. Then Maria sent it fourteen steps, and a late bill was missed. Most people hand work to an AI in one of those two ways. In this lab you write the brief between them, with Chapter 5's four parts. You write one part at a time, and run the brief after each part to see what it decides. Then you fix it one part per round, add a stop where a person decides, and prove it in a fresh chat that has only its files. You write every line of the brief. The AI runs it, asks the questions and keeps the notes. It takes about three hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and Task 11 in ChatGPT.
 
@@ -178,7 +178,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    Run: Dave's line
    ```
 
-3. The AI shows the four parts, one at a time. Each comes with its question from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and the run's "What decided it" lines for that part. For each part, answer in a few words: what the run had to decide alone, or "nothing". A right guess is still a guess, and so is anything the AI took from memory. The AI writes your answers in the chat, as "What Dave's line left to guess".
+3. The AI shows the four parts, one at a time. Each comes with its question from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and the run's "What decided it" lines for that part. For each part, answer in a few words: what the run had to decide alone, or "nothing". A right guess is still a guess, and so is anything the AI took from memory. The AI writes your answers in the chat, as "What Dave's line left to guess".
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 1 and 2 passed, and the chat lists what Dave's line left to guess.
@@ -198,7 +198,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    Run: Maria's steps
    ```
 
-3. The AI shows her steps in four groups. Each step comes with what the run did with it, and the policy line or record that speaks to it, or a note that none does. For each step, answer: keep (a control), leave out (method or a preference), or wrong, and what should decide it instead. The test is [5.2](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/outcome-not-steps/)'s question: would a capable new colleague be wrong to do this step another way?
+3. The AI shows her steps in four groups. Each step comes with what the run did with it, and the policy line or record that speaks to it, or a note that none does. For each step, answer: keep (a control), leave out (method or a preference), or wrong, and what should decide it instead. The test is [5.2](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/outcome-not-steps/)'s question: would a capable new colleague be wrong to do this step another way?
 4. The AI asks one more question about her steps. Answer it in a line. The AI writes "Maria's steps: what stays" in the chat.
 5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -214,7 +214,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows the Outcome's question and its line on "Done when" from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and your notes on it from Tasks 1 and 2.
+1. In your lab chat, type "Task 3" and send it. The AI shows the Outcome's question and its line on "Done when" from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), and your notes on it from Tasks 1 and 2.
 2. Write your Outcome. Send it as "Outcome:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. Its "What decided it" shows which guesses your Outcome now decides. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -229,7 +229,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows the six files in the AP folder, each with what it is. Then it shows the text of one invoice, as it arrived, and the Context's question, with what [5.3](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/governed-source/) says a strong context does.
+1. In your lab chat, type "Task 4" and send it. The AI shows the six files in the AP folder, each with what it is. Then it shows the text of one invoice, as it arrived, and the Context's question, with what [5.3](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/governed-source/) says a strong context does.
 2. Write your Context. Send it as "Context:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -244,7 +244,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question and its line from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with [5.7](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s three kinds of format, and your notes on it.
+1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question and its line from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with [5.7](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s three kinds of format, and your notes on it.
 2. Write your Format. Send it as "Format:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -259,7 +259,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 6" and send it. The AI shows the Constraints' question from [5.1](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with its two halves, the content rules and the autonomy, and your notes on it.
+1. In your lab chat, type "Task 6" and send it. The AI shows the Constraints' question from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with its two halves, the content rules and the autonomy, and your notes on it.
 2. Write your Constraints, both halves. Send it as "Constraints:" and your own words.
 3. Your brief now has all four parts. Guess what its first run will do, without typing the guess.
 4. When the AI says "Ready for your run", type `Run: my brief` and send it. Task 7 reads this run, so leave it as it comes back.
@@ -291,7 +291,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 
 **What you do:**
 
-1. In your lab chat, type "Task 7", paste Maria's message below it, and send them together. The AI asks if Task 6's run did what you guessed: yes or no. Then it shows [5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)'s table, and each item on its own lines: each "no line decides" in Task 6's run, up to five, then Maria's message. For each, answer in a few words: its part, from the table, or "fine as it is", or "worker, not brief".
+1. In your lab chat, type "Task 7", paste Maria's message below it, and send them together. The AI asks if Task 6's run did what you guessed: yes or no. Then it shows [5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)'s table, and each item on its own lines: each "no line decides" in Task 6's run, up to five, then Maria's message. For each, answer in a few words: its part, from the table, or "fine as it is", or "worker, not brief".
 2. The AI asks if anything else in the run is wrong. Name it, with its part, or say "none".
 3. The AI asks which item matters most. Name one. If the run broke the hard rule, that one comes first.
 4. Send the one changed line: the part's name, then the sentence to add, or the sentence it replaces and your new one. The AI changes only that line.
@@ -312,7 +312,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 
 **What you do:**
 
-1. In your lab chat, type "Task 8" and send it. The AI asks where the worker stops, and who answers ([5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/)). Answer in a few words.
+1. In your lab chat, type "Task 8" and send it. The AI asks where the worker stops, and who answers ([5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/)). Answer in a few words.
 2. Write the stop, and the line for what the run does after the answer, in your own words. Send them with the name of the part they go under. If a line of yours says the worker works without stopping or asking, say which line the stop replaces. The AI adds them under that part, and moves no other line.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. If your stop works, the run lists the exceptions, builds nothing and waits. Leave it unanswered. In Task 11, a fresh run reaches the same stop, and you answer it there.
 4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -323,7 +323,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 
 ## The same Monday's other two messages
 
-One message asks for ideas. The other asks for data that the accounting system will read. [5.6](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/task-type/) says how tightly to set each brief.
+One message asks for ideas. The other asks for data that the accounting system will read. [5.6](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/task-type/) says how tightly to set each brief.
 
 ### Task 9. Ideas for the AP inbox (10 minutes)
 
@@ -391,8 +391,8 @@ One message asks for ideas. The other asks for data that the accounting system w
    line of this brief would still hold it back? My answer:
    ```
 
-   [5.8](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/) says why the brief, not the app's setting, carries this.
-7. **Check it now, in the fresh chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-11.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
+   [5.8](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/) says why the brief, not the app's setting, carries this.
+7. **Check it now, in the fresh chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-11.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
 
 **Checkpoint.** Checks 24 to 26 passed, and the downloaded file is the brief the fresh chat passed.
 
@@ -404,11 +404,11 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 **Dave asks:** "Next quarter the second warehouse comes on, and the run doubles. If the worker splits the checks among helpers, does your brief still hold?"
 
-This task is optional. Skip it if your plan is running low, because a split run can use more of it. [5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) explains what it would show.
+This task is optional. Skip it if your plan is running low, because a split run can use more of it. [5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) explains what it would show.
 
 **What you do:**
 
-1. In your lab chat, type "Task 12" and send it. The AI shows the four parts, each with what [5.4](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says it adds when a worker may split a job.
+1. In your lab chat, type "Task 12" and send it. The AI shows the four parts, each with what [5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says it adds when a worker may split a job.
 2. Write one line for each part, in your own words. Send them under the four headings. They go in the chat, not in your document, so your proven brief stays as it is. Your Constraints line says whether the worker may check each vendor's invoices in parallel. On ChatGPT, it must ask for that in words. On Claude, the worker may split on its own, so say so if you want one worker.
 3. **Open a fresh chat**, on either AI vendor, with memory off, as in Task 11. Attach your downloaded brief and `inputs.zip`, and send this, with your four lines pasted under its last line:
 
@@ -463,13 +463,13 @@ Check it yourself. It has a real date, who it is for, and a governed source with
 
 ## When you are done
 
-You are done when every check through Check 26 has passed, the fresh chat stopped where your lab chat did and built the run from Maria's reply, and your own brief is written. Task 12 is optional. Keep the downloaded file: it is your payment-run brief. It is also the Four-Part Brief that the Part II capstone is assembled from ([Part II's overview](https://agentfactory2.panaversity.org/managing-ai-workers/overview/), Figure II.3).
+You are done when every check through Check 26 has passed, the fresh chat stopped where your lab chat did and built the run from Maria's reply, and your own brief is written. Task 12 is optional. Keep the downloaded file: it is your payment-run brief. It is also the Four-Part Brief that the Part II capstone is assembled from ([Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/), Figure II.3).
 
 **At work:** end a brief you are not sure of with "List each decision you made, and the line of this brief that decided it." What comes back shows every guess.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Features.** The exam guide expects you to pick a named feature: projects, research mode, chat or artifacts. It also names memory, skills, code execution and connectors, such as Google Drive and Gmail, and any of these can be the right answer. On some plans, Claude now decides inside one conversation, with no mode to pick, and it adds tasks and Cowork. On the exam, choose the named feature that fits the job. "Write a clearer brief" is not a feature choice. In the exam guide, "artifact" means Claude's Artifacts feature, not any file. A Claude Doc is one kind of artifact. Concept 5.7 uses the word for any file of its own. (D-003)
 - **What a good prompt contains.** The exam guide expects an effective prompt to give context, a clear task, the output format and constraints, and often a role, examples and a request to reason step by step. A brief is what the guide calls an effective prompt, and the Four-Part Brief uses two of the guide's own words, context and constraints. Its outcome is the guide's task, stated as what should exist when the work is done, and its format is the output format. The guide's system-level instructions are the worker definition, its Role Contract and standing instructions. On the exam, choose the option with the most useful context, a clear task, a format and examples. Asking Claude to work through a problem step by step is a valid technique, and "brief the outcome, not the steps" does not rule it out. (D-009)

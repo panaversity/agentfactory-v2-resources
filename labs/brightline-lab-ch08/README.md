@@ -2,7 +2,7 @@
 
 Chapter 8 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory2.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

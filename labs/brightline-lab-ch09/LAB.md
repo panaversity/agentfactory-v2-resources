@@ -1,6 +1,6 @@
 # Lab 9: when nobody is watching
 
-Chapter 9 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 9: when nobody is watching](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/lab/), so you can do the lab without the book.
+Chapter 9 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 9: when nobody is watching](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/lab/), so you can do the lab without the book.
 
 On Monday, November 9, 2026, Brightline's AP Worker got two jobs to run on their own. For eleven days nobody watched, and four things went wrong. Most people fix a job like that by running it by hand again, or by rewording its instructions and hoping. In this lab you design it to work when nobody is there.
 
@@ -150,7 +150,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    Start with Task 1.
    ```
 
-3. The AI opens your two documents and shows "Who does what". Then it shows [9.1](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/is-this-an-agent-problem/)'s three gates, and the five jobs, one at a time. For each job, answer: where it stops, Gate 1, 2 or 3, or that it passes all three as recurring work, or that it is not a worker's job at all, and why, in a few words. For each job that passes, answer fixed path or judgment, and why. For the Thursday review, give its one-minute check, in one line.
+3. The AI opens your two documents and shows "Who does what". Then it shows [9.1](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/is-this-an-agent-problem/)'s three gates, and the five jobs, one at a time. For each job, answer: where it stops, Gate 1, 2 or 3, or that it passes all three as recurring work, or that it is not a worker's job at all, and why, in a few words. For each job that passes, answer fixed path or judgment, and why. For the Thursday review, give its one-minute check, in one line.
 4. The AI shows the four things that went wrong, one at a time, each with the contract lines nearest to it. For each, guess which line decided what the worker did, or "none".
 5. When the AI says "Ready for your test", type this, and send it:
 
@@ -170,7 +170,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [9.2](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/fit-the-workflow/)'s three questions, and your Thursday steps as you wrote them down, with who does each today. Answer one line per step: who does it from now on, and what supports it.
+1. In your lab chat, type "Task 2" and send it. The AI shows [9.2](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/fit-the-workflow/)'s three questions, and your Thursday steps as you wrote them down, with who does each today. Answer one line per step: who does it from now on, and what supports it.
 2. The AI asks a question of its own about your Thursday. Answer it in a few words, then say who does that step from now on, and what supports it.
 3. The AI asks who reviews the note, by when, and who stands in. Then it asks what to measure before you keep the new way. Answer each in a few words.
 4. This task has no test. When the AI says "Task 2 is done", **check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -189,7 +189,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 3" and send it. The AI shows your Thursday lines, and asks what the job produces and what it never does, then when it runs. Answer each in a few words.
 2. The AI shows nine places a run could be pointed at. Answer with the numbers every Thursday run gets, and the date or version each must carry. Then say what the run does if one is missing, and who is told.
-3. The AI shows the places a note could go. Answer: the note's parts, in order, where held invoices and copies appear in it, then where it is saved. Then say when a run is done, in one sentence that starts "Done when". The AI writes your standing spec, the instructions every run reads ([9.3](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)).
+3. The AI shows the places a note could go. Answer: the note's parts, in order, where held invoices and copies appear in it, then where it is saved. Then say when a run is done, in one sentence that starts "Done when". The AI writes your standing spec, the instructions every run reads ([9.3](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)).
 4. The AI reads your spec as a fresh run would, and lists what it leaves a run to guess. Answer for each: the fix in a few words, or "leave" and why.
 5. When the AI says "Ready for your test", type `Test: Thursday, November 19` and send it. Then type `Test: The record is missing` and send it.
 6. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -204,7 +204,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI asks four questions about the record ([9.4](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/continuity-between-runs/)). Answer each in a few words:
+1. In your lab chat, type "Task 4" and send it. The AI asks four questions about the record ([9.4](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/continuity-between-runs/)). Answer each in a few words:
    - which matters a run reads, and when
    - which says what is true now, the record or the register
    - what each run leaves for next week, with which origin, and who adds it
@@ -265,7 +265,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it. The AI shows [9.6](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/governing-initiative/)'s four rungs and the rules, then six things the worker might do on its own, one at a time. For each, answer: the rung, then the rule. Then give the rule for any other act nobody asked for.
+1. In your lab chat, type "Task 7" and send it. The AI shows [9.6](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/governing-initiative/)'s four rungs and the rules, then six things the worker might do on its own, one at a time. For each, answer: the rung, then the rule. Then give the rule for any other act nobody asked for.
 2. The AI asks where drafts go, then shows your contract's lines on bank details beside Dave's words. Answer which kinds of act always go to a person, and for bank details, which person.
 3. The AI asks what a run does when it needs an approval and nobody is there, who reads its run history and when, and who can pause it, with its cost limit. Answer each in a few words.
 4. When the AI says "Ready for your test", type `Test: Sunday night` and send it.
@@ -284,7 +284,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 8" and send it. The AI asks whose name both jobs should run under, and what they may read and where they may write. Answer each in a few words.
-2. The AI shows [9.5](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/standing-workers/)'s two kinds of AI Worker. Answer which kind Maria's jobs are today, and what would make them the other.
+2. The AI shows [9.5](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/standing-workers/)'s two kinds of AI Worker. Answer which kind Maria's jobs are today, and what would make them the other.
 3. The AI asks who checks that the note arrived, at what time, and what they do if it is not there. Then it asks about Thanksgiving. Answer each in a few words.
 4. The AI shows two lines your contract has kept since Draft 5, about a run nobody watches. Answer what each says now, or "remove".
 5. When the AI says "Ready for your test", type `Test: No note at the check time` and send it. Then type `Test: Thanksgiving` and send it.
@@ -300,7 +300,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows [9.8](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/)'s lines for Anthropic, then for OpenAI, each with its date. For each AI vendor, answer in a line each:
+1. In your lab chat, type "Task 9" and send it. The AI shows [9.8](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/)'s lines for Anthropic, then for OpenAI, each with its date. For each AI vendor, answer in a line each:
    - the feature for each job, or "none documented"
    - whose name, or "not stated"
    - how its runs are read and stopped
@@ -324,7 +324,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    - what it is worth, measured
    - its limits
 
-   These words are the skill ([9.7](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/explaining-value-and-limits/)), so the AI puts them into the note exactly as you send them.
+   These words are the skill ([9.7](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/explaining-value-and-limits/)), so the AI puts them into the note exactly as you send them.
 3. This task has no test. When the AI says "Task 10 is done", **check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 22 and 23 passed.
@@ -339,7 +339,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI asks whom the worker works for. Then it shows [9.9](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/shared-room/)'s four kinds of request, one at a time. For each, answer: who may ask, what the worker does, and who checks or decides.
+1. In your lab chat, type "Task 11" and send it. The AI asks whom the worker works for. Then it shows [9.9](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/shared-room/)'s four kinds of request, one at a time. For each, answer: who may ask, what the worker does, and who checks or decides.
 2. The AI asks three more questions. Answer each in a few words:
    - what the worker does past the asker's row, and when two requests clash
    - where notes and drafts go before anyone checks them
@@ -410,7 +410,7 @@ Your vertical is the line of work you know best. Pick one job you do again and a
 - whose name it runs under
 - who checks that it ran, and by when
 
-Check it yourself against [9.3](https://agentfactory2.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)'s five facts: does it start fresh, see only what it is given, survive firing twice, run under a name your team controls, and fail out loud? Then send: "Read my third document as a fresh run would, and list what it leaves to guess." Fix what it lists, and download it: it is the one you take to work.
+Check it yourself against [9.3](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)'s five facts: does it start fresh, see only what it is given, survive firing twice, run under a name your team controls, and fail out loud? Then send: "Read my third document as a fresh run would, and list what it leaves to guess." Fix what it lists, and download it: it is the one you take to work.
 
 ## Look back
 
@@ -428,7 +428,7 @@ You are done when every check has passed, the fresh chat ran Thanksgiving from y
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory2.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
 - **Work that repeats.** The exam guide expects a project with saved instructions and knowledge, where Claude drafts and a named person reviews before anything is sent. For continuity between conversations, it expects memory or the project's knowledge. This chapter teaches scheduled and event-triggered runs, routines, standing workers and the SSoR record. The exam does not cover them. On the exam, choose the project and the human review. (D-007)
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 9.8 shows two open-source tools beside Claude and ChatGPT: OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)

@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 4: what the worker is made of](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 4: what the worker is made of](https://agentfactory.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
