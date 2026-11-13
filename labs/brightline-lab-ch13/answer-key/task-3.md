@@ -17,7 +17,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 | 13 | Friday's list | It still ends with `8 invoices, total $19,229.53` | Any other count or total |
 | 14 | My tests are unchanged | A `git diff` of the test files, from my Task 2 commit to now, prints nothing | Any line of a test file changed |
 | 15 | One rule, in one place | The script for Friday's list calls the new function for a due date it works out, and has no terms arithmetic of its own left | The script still works out the days in the terms itself |
-| 16 | The rule refuses | Run the new function with terms outside the five, such as Net 90. It stops with `Unknown terms: Net 90` | It returns a date |
+| 16 | The rule knows the five, and refuses the rest | Run the new function with Net 45: it gives a date. Run it with terms outside the five, such as Net 90: it stops with `Unknown terms: Net 90` | Net 45 stops the run, or Net 90 returns a date |
 
 ## The prediction
 

@@ -32,4 +32,5 @@ Due on receipt, Net 15, Net 30, Net 45 and Net 60. Any other terms stop the run 
 ## Never a deduction
 
 - The words of a rule, when its meaning is right.
+- A sentence that only says one of my decisions again in other words.
 - Which project file the new session names, when that file does say it.

@@ -26,7 +26,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 | 2 | 2027-02-19 | Net 15 | 2027-03-06 |
 | 3 | 2027-01-02 | Net 60 | 2027-03-03 |
 | 4 | 2027-03-01 | Due on receipt | 2027-03-01 |
-| 5 | 2026-12-20 | Net 30 | 2027-01-19 |
+| 5 | 2026-12-20 | Net 45 | 2027-02-03 |
 | 6 | 2027-03-02 | Net 10 | Stops with `Unknown terms: Net 10` |
 
 ## Never a deduction

@@ -25,7 +25,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 | 2 | 2027-02-19, a Friday | Net 15 | 2027-03-06 | 9 days reach February 28, and 6 more reach March 6 |
 | 3 | 2027-01-02, a Saturday | Net 60 | 2027-03-03 | 29 days reach January 31, 28 more reach February 28, and 3 more reach March 3 |
 | 4 | 2027-03-01, a Monday | Due on receipt | 2027-03-01 | Due on receipt is 0 days |
-| 5 | 2026-12-20, a Sunday | Net 30 | 2027-01-19 | 11 days reach December 31, and 19 more reach January 19 of the next year |
+| 5 | 2026-12-20, a Sunday | Net 45 | 2027-02-03 | 11 days reach December 31, 31 more reach January 31 of the next year, and 3 more reach February 3 |
 | 6 | 2027-03-02, a Tuesday | Net 10 | The run stops | Net 10 is not one of Dave's five terms, so the run must not guess |
 
 ## Common wrong answers
@@ -33,8 +33,9 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 | If my answer was | What went wrong |
 | --- | --- |
 | Case 6: 2027-03-12 | Net 10 was counted as 10 days. Dave said five terms and no others, and that the run must never guess |
-| Case 2: 2027-03-05, or case 1: 2027-03-04 | The count started on the invoice date. The invoice date is day 0 |
-| Case 5: 2027-01-20 | December was counted as 30 days. It has 31 |
+| Case 2: 2027-03-05, case 1: 2027-03-04, or case 5: 2027-02-02 | The count started on the invoice date. The invoice date is day 0 |
+| Case 5: 2027-02-04 | December was counted as 30 days. It has 31 |
+| Case 5: 2027-01-19 | Net 45 was counted as 30 days |
 | Case 1: 2027-03-03, or case 3: 2027-03-01 | February was counted as 30 days |
 
 ## If a check is Missed
