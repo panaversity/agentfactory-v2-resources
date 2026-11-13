@@ -23,6 +23,8 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 
 Friday's list does not change. Every invoice in `data/invoices.csv` has one of the five terms, so the new rule stops nothing in this export. The rule changes what happens to a later export.
 
+Net 90, in step 4: the function stops with `Unknown terms: Net 90`, because Net 90 is not one of the five. None of my six tests tries Net 90. Six passing tests say nothing about a seventh case, so this run, and the line of code it showed, are what tell me the rule covers every other terms too.
+
 ## Never a deduction
 
 - How the function is written, as long as the checks pass.

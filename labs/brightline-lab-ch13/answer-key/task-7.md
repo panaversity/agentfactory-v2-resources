@@ -25,7 +25,9 @@ Due on receipt, Net 15, Net 30, Net 45 and Net 60. Any other terms stop the run 
 
 ## Look back
 
-- In the overview, Renee made her choice once, and it stayed in a chat. Where do your choices live now? Name the three places: the tests, the rules file, and the handover.
+The lab page ends with three Look back points. The three places your choices live now are the tests, the rules file `AGENTS.md`, and the handover in `NOTES.md`.
+
+- In the overview, Renee made her choice once, and it stayed in a chat. Yours are in files a new session reads.
 - Which of today's rules did the agent choose in Lab 12, and which did you choose today?
 - The weekend rule is on a branch. [Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/overview/) is about how such a change is reviewed before it reaches `main`.
 

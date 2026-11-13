@@ -12,7 +12,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 
 | # | Check | Passed when | Missed when |
 | --- | --- | --- | --- |
-| 27 | My prediction came first | My prediction is in `NOTES.md`, in a commit made before the commit of the weekend tests | There is no prediction, or it was committed with the rule or after it |
+| 27 | My prediction came first | My prediction is in `NOTES.md` on `weekend-rule`, in a commit made before the commit of the weekend tests | There is no prediction, or it was committed with the rule or after it |
 | 28 | My four answers | They match the table below. Read them from the tests, or ask me | Any answer differs |
 | 29 | Tests first, and unchanged | On `weekend-rule`, the weekend tests were committed before the rule, and they have not changed since | The tests changed after their commit |
 | 30 | The branch passes | On `weekend-rule`, every test passes and the type checker is clean | A test fails |

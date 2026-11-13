@@ -53,3 +53,4 @@ The agent may list more rules, such as the sort order, or that "Due on receipt" 
 - How many entries the second list has, or which ones. Agents list different things, and nobody has to settle them today.
 - The exact words of a rule.
 - Extra rules in the first list.
+- Which entry of the second list I asked about in step 9, or what the agent showed for it.
