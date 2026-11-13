@@ -1,6 +1,6 @@
 # Brief template: one chapter of The Bilingual Accountant
 
-Fill in the parts in square brackets. The four parts come from [One job, start to finish](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/new-way-of-working/one-job/). Every good brief has them.
+Fill in the parts in square brackets. The four parts come from [One job, start to finish](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/one-job/). Every good brief has them.
 
 ## The brief (paste this as the project instructions)
 

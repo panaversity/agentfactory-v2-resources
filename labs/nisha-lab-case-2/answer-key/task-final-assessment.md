@@ -1,6 +1,6 @@
 # Model answers for the final assessment
 
-This file is kept out of the learner download. These are model answers for [Final assessment: a new AI Worker](https://agentfactory2.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/final-assessment-a-new-ai-worker/). If you study alone, open them only after you have written your own plan. Other answers can earn full points if the reasons are sound. Mark the reasons, not the wording.
+This file is kept out of the learner download. These are model answers for [Final assessment: a new AI Worker](https://agentfactory.panaversity.org/claude-and-chatgpt-2/case-2-nishas-first-client/final-assessment-a-new-ai-worker/). If you study alone, open them only after you have written your own plan. Other answers can earn full points if the reasons are sound. Mark the reasons, not the wording.
 
 ## Part A. Execute or only draft (2 points)
 
