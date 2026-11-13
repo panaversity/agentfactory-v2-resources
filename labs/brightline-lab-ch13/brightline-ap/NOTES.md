@@ -2,9 +2,9 @@
 
 ## Due by Friday
 
-`src/due-by-friday.ts` lists every open invoice whose due date is on or before a cutoff date, sorted by due date, then prints the count and the total.
+`src/due-by-friday.ts` lists every open invoice whose due date is on or before a cutoff date, sorted by due date, then prints the count and the total. `py/brightline_ap/due_by_friday.py` is the same script in Python.
 
-Run it with `npm run due -- 2027-03-05`. The cutoff comes from the command line, never the system clock.
+Run it with `npm run due -- 2027-03-05`, or `npm run due:py -- 2027-03-05` in Python. The cutoff comes from the command line, never the system clock.
 
 Rules:
 
