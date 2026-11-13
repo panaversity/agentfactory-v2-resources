@@ -2,7 +2,7 @@
 
 Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 13: choices that last](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/), so you can do the lab without the book.
 
-*Time: about 2 hours 15 minutes, with the checks. Lab files: `brightline-lab-ch13.zip`. The same steps are in `LAB.md` inside the zip.*
+*Time: about 2 hours 15 minutes, with the checks.*
 
 An agent wrote the script that makes Brightline's Friday payment list. You find the choices it made, decide them yourself, and write them down so they last.
 
