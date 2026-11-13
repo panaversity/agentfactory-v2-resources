@@ -2,7 +2,7 @@
 
 Chapter 6 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 6: the checks come first](https://agentfactory2.panaversity.org/managing-ai-workers/the-review-contract/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 6: the checks come first](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

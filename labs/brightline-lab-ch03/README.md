@@ -2,7 +2,7 @@
 
 Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 3: the same one line](https://agentfactory2.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 3: the same one line](https://agentfactory.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

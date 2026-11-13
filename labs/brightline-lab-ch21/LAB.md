@@ -1,21 +1,21 @@
 # Lab 21: the AP worker on two agent SDKs
 
-Chapter 21 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 21: the AP worker on two agent SDKs](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/lab/), so you can do the lab without the book.
+Chapter 21 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 21: the AP worker on two agent SDKs](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/lab/), so you can do the lab without the book.
 
-*This is the lab page for [Chapter 21](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/overview/). The first SDK is the Claude Agent SDK, and the second SDK is the OpenAI Agents SDK. Read each part of the chapter, then do its sitting here. The chapter tells you when. The field guide ([F0](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/reference/#f0-the-repository-the-overlay-and-the-pins) to [F7](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/reference/#f7-the-tool-runners-default-on-the-wire)) is on the companion page, **[Chapter 21 reference](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/reference/)**.*
+*This is the lab page for [Chapter 21](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/overview/). The first SDK is the Claude Agent SDK, and the second SDK is the OpenAI Agents SDK. Read each part of the chapter, then do its sitting here. The chapter tells you when. The field guide ([F0](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f0-the-repository-the-overlay-and-the-pins) to [F7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f7-the-tool-runners-default-on-the-wire)) is on the companion page, **[Chapter 21 reference](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/)**.*
 
 | Sitting | Do it after | Tasks | Time |
 | --- | --- | --- | --- |
-| Getting ready, and Sitting 1 | Part A ([21.1](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/from-your-loop-to-a-library/), [21.2](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/the-map/)) | Task 0, Task 2, optional Task 1 | about 35 minutes |
-| Sitting 2 | Part B ([21.3](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/one-run-start-to-finish/) to [21.5](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/who-may-run-a-tool/)) | Tasks 3 to 7, optional Task 8 | about 2 hours 5 minutes, 15 more with Task 8 |
-| Sitting 3 | Part C ([21.6](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/) to [21.8](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/where-traces-go/)) | Tasks 9 to 11, optional Task 12 | about 1 hour 15 minutes |
-| Sitting 4 | Part D ([21.9](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/what-an-sdk-still-leaves-to-you/)) | Tasks 14 and 15, optional Task 13 | about 40 minutes |
+| Getting ready, and Sitting 1 | Part A ([21.1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/from-your-loop-to-a-library/), [21.2](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/the-map/)) | Task 0, Task 2, optional Task 1 | about 35 minutes |
+| Sitting 2 | Part B ([21.3](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/one-run-start-to-finish/) to [21.5](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/who-may-run-a-tool/)) | Tasks 3 to 7, optional Task 8 | about 2 hours 5 minutes, 15 more with Task 8 |
+| Sitting 3 | Part C ([21.6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/) to [21.8](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-traces-go/)) | Tasks 9 to 11, optional Task 12 | about 1 hour 15 minutes |
+| Sitting 4 | Part D ([21.9](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-an-sdk-still-leaves-to-you/)) | Tasks 14 and 15, optional Task 13 | about 40 minutes |
 
 ## Lab 21: getting ready
 
 The lab runs in four sittings. Each one comes right after its part of the chapter, and the chapter tells you when. Read this setup, then do Task 0. F0 to F7 means a section of the field guide, the step-by-step reference for this lab. It is on the companion page, Chapter 21 reference.
 
-**You** **predict**, **the agents write.** This lab uses PRIMM-AI+, as in Chapters [13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/), [14](https://agentfactory2.panaversity.org/building-ai-workers/structuring-programs/overview/) and 20. You *predict* and write it in `ports/ch21.md`. The agent *runs* the code. You *investigate* the gap with the agent ("explain line 53"). Some tasks ask you to *modify*: you say what to change, predict again, and run again. Tasks 6 and 10 ask you to *make* a rule. You write it in plain words, the agent writes the code and its test, and you check the code against your words.
+**You** **predict**, **the agents write.** This lab uses PRIMM-AI+, as in Chapters [13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/), [14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/overview/) and 20. You *predict* and write it in `ports/ch21.md`. The agent *runs* the code. You *investigate* the gap with the agent ("explain line 53"). Some tasks ask you to *modify*: you say what to change, predict again, and run again. Tasks 6 and 10 ask you to *make* a rule. You write it in plain words, the agent writes the code and its test, and you check the code against your words.
 
 **The lab starts from a portable specification.** `docs/worker-spec.md` says, in eleven rows, what the worker must do on any runtime, and how you check each row. Both SDK builds and the port meet it. Task 15 checks it row by row.
 
@@ -33,11 +33,11 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 **What you need.**
 
-- Everything Lab 20 needed: **Node 22.19 or later** and **uv** 0.11 or later for Python 3.12 or later. Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, Codex and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/overview/)).
-- **Your two API keys from Lab 20,** pasted with your own editor into this folder's `.secrets/anthropic.env` and `.secrets/openai.env`, each in a project or workspace with a monthly spending limit (Chapter 20, F1). If you skipped Lab 20, [F1](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/reference/#f1-keys-and-spending-limits) here says what to do.
+- Everything Lab 20 needed: **Node 22.19 or later** and **uv** 0.11 or later for Python 3.12 or later. Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, Codex and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)).
+- **Your two API keys from Lab 20,** pasted with your own editor into this folder's `.secrets/anthropic.env` and `.secrets/openai.env`, each in a project or workspace with a monthly spending limit (Chapter 20, F1). If you skipped Lab 20, [F1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f1-keys-and-spending-limits) here says what to do.
 - **About 1.5 GB of free disk**, most of it for the first SDK, which brings its own harness program to each language (the program that runs the loop, 21.1).
-- **For the port:** Ollama and the small model from Lab 20 ([F6](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/reference/#f6-ollama-and-an-open-model)).
-- **A connector,** as in Lab 20, by one of two routes. **Route A:** your [Chapter 19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector (the test copy of Brightline's real connector) with a short-lived test token. **Route B:** the local practice connector in the zip, which runs on your own computer.
+- **For the port:** Ollama and the small model from Lab 20 ([F6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f6-ollama-and-an-open-model)).
+- **A connector,** as in Lab 20, by one of two routes. **Route A:** your [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector (the test copy of Brightline's real connector) with a short-lived test token. **Route B:** the local practice connector in the zip, which runs on your own computer.
 
 **How every task runs.** Chapter 12's five steps:
 
@@ -63,7 +63,7 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 | --- | --- |
 | `npm run sdk -- --sdk claude "…"` | Runs one question on the first SDK and prints one line per message. `--sdk openai` uses the second SDK, `--sdk open` the second SDK on an open model, and `--sdk runner` the tool runner (rung 2). `npm run sdk:py` is the Python twin |
 | `--max-turns N`, `--budget USD` | Lower the turn limit, or the first SDK's cost cap, for one run |
-| `--persist`, `--resume ID` | Let the first SDK write a **session file** (a file on disk holding the whole conversation, [21.7](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/where-the-conversation-lives/)), or continue an earlier one by its id |
+| `--persist`, `--resume ID` | Let the first SDK write a **session file** (a file on disk holding the whole conversation, [21.7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-the-conversation-lives/)), or continue an earlier one by its id |
 | `--built-ins` | Task 5 only, TypeScript only: leave the first SDK's own tools on, to compare |
 | `--trace` | Task 12 only: turn the second SDK's tracing on |
 | `npm run test:sdk`, `npm run test:sdk:py` | The offline tests for this lab, in TypeScript and Python. No model, no network, no key |
@@ -200,7 +200,7 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 ## Lab 21, Sitting 2: what it can do without asking (about 2 hours 5 minutes, 2 hours 20 with the optional Task 8)
 
-**Before you start, answer in a line each:** What four things do you collect about every run, and which might an SDK not give you (21.3)? Why does a worker that reads vendor notes not need a shell, and who runs a hosted tool's call ([21.4](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/tools-and-where-each-call-runs/))? Name the two shapes in which your rule decides a tool call (21.5). **After this sitting, you can:** read one question's run on both SDKs, say which tools each worker can see, and show one rule deciding the same call in both shapes.
+**Before you start, answer in a line each:** What four things do you collect about every run, and which might an SDK not give you (21.3)? Why does a worker that reads vendor notes not need a shell, and who runs a hosted tool's call ([21.4](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/tools-and-where-each-call-runs/))? Name the two shapes in which your rule decides a tool call (21.5). **After this sitting, you can:** read one question's run on both SDKs, say which tools each worker can see, and show one rule deciding the same call in both shapes.
 
 ### Task 3. One question, one stream (25 minutes, Claude Code)
 
@@ -486,7 +486,7 @@ The callback that uses it:
 
 *Investigate:* why does line 22 deny every other tool, rather than allow it? (A tool that reaches the callback is, by definition, not on the allow list. The safe answer for an unknown tool is no.) Why does each denial carry a message? (The model reads it as an error result, as in Chapter 20.4, and can tell Ana why.)
 
-**Then modify.** Ana says a flag must also never be raised on an invoice that is already paid. Predict: where would that check belong, in this rule or in the connector? Ask the agent for its answer and its reason, and write yours beside it. ([Chapter 19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/each-companys-own-rules-and-data/)'s answer: the rule can check the shape of the request, but only the connector and the database know whether an invoice is paid.)
+**Then modify.** Ana says a flag must also never be raised on an invoice that is already paid. Predict: where would that check belong, in this rule or in the connector? Ask the agent for its answer and its reason, and write yours beside it. ([Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/each-companys-own-rules-and-data/)'s answer: the rule can check the shape of the request, but only the connector and the database know whether an invoice is paid.)
 
 **What good looks like:** your rule's sentences each match a line (or you found a gap, and the agent proposes a test for it). The allow run shows `hook:` then `permission: mcp__local__flag_invoice -> allow`, and a line appears in `out/flags.jsonl`. The deny run shows `permission: … -> deny`, a `tool_result (error)`, and an answer that says the flag was refused. A real model may instead decline with no tool call, or flag the invoices one by one, which rule 1 allows: record which.
 
@@ -601,7 +601,7 @@ The callback that uses it:
 - **Line 40 (72).** Return an empty answer: no decision.
 - **Python line 69.** The words after each `:` and after `->` name the types. `str | None` means "text, or nothing".
 
-*Investigate:* `return {}` means "no decision". The hook only watches. What would it return to deny the call? (A permission decision of deny, with a reason, [F4](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/reference/#f4-the-first-sdks-permissions-and-hooks).)
+*Investigate:* `return {}` means "no decision". The hook only watches. What would it return to deny the call? (A permission decision of deny, with a reason, [F4](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f4-the-first-sdks-permissions-and-hooks).)
 
 **What good looks like:** the `hook:` line comes before the `permission:` line every time, matching the order in 21.5. The hook also ran for the read-only tools in Task 3, which the callback never saw. By default, a hook that throws lets the action go ahead.
 
@@ -724,7 +724,7 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 
 ### Task 12 (optional). Turn tracing on once, and see what leaves (20 minutes, Codex)
 
-*Optional.* It sends test data to the provider's dashboard, so do it only if your course or company allows that. On the core path, fill in "The trace" in Task 15, from 21.8 and [21.10](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/how-todays-tools-realize-it/), and go through 21.8's five checks on paper.
+*Optional.* It sends test data to the provider's dashboard, so do it only if your course or company allows that. On the core path, fill in "The trace" in Task 15, from 21.8 and [21.10](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/how-todays-tools-realize-it/), and go through 21.8's five checks on paper.
 
 **Worker spec rows:** 9.
 

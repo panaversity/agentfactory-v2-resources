@@ -1,25 +1,25 @@
 # Lab 22: the AP worker in Brightline's portal
 
-Chapter 22 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 22: the AP worker in Brightline's portal](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/lab/), so you can do the lab without the book.
+Chapter 22 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 22: the AP worker in Brightline's portal](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/lab/), so you can do the lab without the book.
 
-*This is the lab page for [Chapter 22](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/overview/). Read each part of the chapter, then do its sitting here. The chapter tells you when. The field guide ([F0](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f0-from-zero-keys-consoles-and-where-secrets-live) to [F7](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f7-openai-and-omnara-for-the-ports)) is on the companion page, [**Chapter 22 reference**](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/).*
+*This is the lab page for [Chapter 22](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/overview/). Read each part of the chapter, then do its sitting here. The chapter tells you when. The field guide ([F0](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f0-from-zero-keys-consoles-and-where-secrets-live) to [F7](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f7-openai-and-omnara-for-the-ports)) is on the companion page, [**Chapter 22 reference**](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/).*
 
 | Sitting | Do it after | Tasks | Time |
 | --- | --- | --- | --- |
-| Getting ready, and Sitting 1 | Part A ([22.1](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/the-worker-leaves-the-laptop/) to [22.5](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/a-budget-on-every-run/)) | Task 0, Tasks 1 to 4 | 45 minutes for Task 0 (about 1 hour 30 minutes if you skipped [Lab 19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/)), then about 1 hour 35 minutes |
-| Sitting 2 | Part B ([22.6](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/what-travels/) to [22.8](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/permission-policies/)) | Tasks 5 to 8 | about 1 hour 15 minutes |
-| Sitting 3a, the end of Milestone 1 | Part C ([22.9](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/three-identities-never-one/) to [22.12](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/the-portals-own-pages/)) | Tasks 9 to 11 | about 2 hours 45 minutes |
-| Sitting 3b | [22.13](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/keys-that-expire-and-no-keys-at-all/) | Tasks 12, 12b and 13 | about 2 hours 15 minutes |
-| Sitting 4 | [22.14](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/when-a-refresh-is-refused/) to [22.16](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/loops-check-feedback-and-stop/) | Tasks 14 to 18 | about 2 hours 40 minutes |
-| Sitting 5, the end of Milestone 2 | Part E ([22.17](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/patterns-and-when-to-host-it-yourself/), [22.18](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/designing-a-hosted-worker/)) | Tasks 20 and 21, optional 19 and 21b | about 1 hour 5 minutes, or 2 hours with both extensions |
+| Getting ready, and Sitting 1 | Part A ([22.1](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/the-worker-leaves-the-laptop/) to [22.5](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/a-budget-on-every-run/)) | Task 0, Tasks 1 to 4 | 45 minutes for Task 0 (about 1 hour 30 minutes if you skipped [Lab 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/)), then about 1 hour 35 minutes |
+| Sitting 2 | Part B ([22.6](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/what-travels/) to [22.8](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/permission-policies/)) | Tasks 5 to 8 | about 1 hour 15 minutes |
+| Sitting 3a, the end of Milestone 1 | Part C ([22.9](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/three-identities-never-one/) to [22.12](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/the-portals-own-pages/)) | Tasks 9 to 11 | about 2 hours 45 minutes |
+| Sitting 3b | [22.13](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/keys-that-expire-and-no-keys-at-all/) | Tasks 12, 12b and 13 | about 2 hours 15 minutes |
+| Sitting 4 | [22.14](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/when-a-refresh-is-refused/) to [22.16](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/loops-check-feedback-and-stop/) | Tasks 14 to 18 | about 2 hours 40 minutes |
+| Sitting 5, the end of Milestone 2 | Part E ([22.17](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/patterns-and-when-to-host-it-yourself/), [22.18](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/designing-a-hosted-worker/)) | Tasks 20 and 21, optional 19 and 21b | about 1 hour 5 minutes, or 2 hours with both extensions |
 
 ## Lab 22: getting ready
 
 The lab runs in sittings, each right after the concepts it uses. This section is the setup for all of them: read it now, then do Task 0. When a task says F0 to F7, it means the field guide, on the companion page **Chapter 22 reference** (in the lab, `docs/chapter-22/field-guide.md`).
 
-**What you need to have done.** Read Chapters [16](https://agentfactory2.panaversity.org/building-ai-workers/skills-and-plugins/overview/) to [19](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/). Doing Lab 19 helps, but Task 0 can build its system for you. Labs [20](https://agentfactory2.panaversity.org/building-ai-workers/agent-loop-by-hand/lab/) and [21](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/lab/) are not needed to run this lab, but the lab builds on their code. Everything starts from `brightline-lab-ch22.zip` ([download it here](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22.zip)). It holds the repository as Lab 21 ends, with Lab 22's files added, as a plain folder. Task 0 puts it under git and tags it `lab22-start`. So `src/loop/`, `src/sdk/`, their Python twins under `py/`, Lab 21's `docs/worker-spec.md` and `docs/sdk-map.md` are all there, and their tests still pass. Every earlier idea a task uses is explained where it is used.
+**What you need to have done.** Read Chapters [16](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/overview/) to [19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/). Doing Lab 19 helps, but Task 0 can build its system for you. Labs [20](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/lab/) and [21](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/lab/) are not needed to run this lab, but the lab builds on their code. Everything starts from `brightline-lab-ch22.zip` ([download it here](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22.zip)). It holds the repository as Lab 21 ends, with Lab 22's files added, as a plain folder. Task 0 puts it under git and tags it `lab22-start`. So `src/loop/`, `src/sdk/`, their Python twins under `py/`, Lab 21's `docs/worker-spec.md` and `docs/sdk-map.md` are all there, and their tests still pass. Every earlier idea a task uses is explained where it is used.
 
-**Route B is not enough here.** In Labs 20 and 21 you could use your own Chapter 19 connector online (route A). Or you could use a practice connector on your own computer (route B). A hosted platform cannot reach a connector on your computer, and each person must sign in through [Chapter 18](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/overview/)'s sign-in server. So this lab needs Chapter 19's system online in your own accounts, which is route A. If you took route B, or skipped Lab 19, Task 0 sets that system up for you, one step at a time from `docs/deploy.md`. Allow about 1 hour 30 minutes for it. The practice connector stays in the repository, and Lab 22 does not use it.
+**Route B is not enough here.** In Labs 20 and 21 you could use your own Chapter 19 connector online (route A). Or you could use a practice connector on your own computer (route B). A hosted platform cannot reach a connector on your computer, and each person must sign in through [Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/)'s sign-in server. So this lab needs Chapter 19's system online in your own accounts, which is route A. If you took route B, or skipped Lab 19, Task 0 sets that system up for you, one step at a time from `docs/deploy.md`. Allow about 1 hour 30 minutes for it. The practice connector stays in the repository, and Lab 22 does not use it.
 
 **This lab costs money, and takes about 12 hours 20 minutes.** Neither hosted runtime has a free plan. Every session in this lab carries a budget, most of a few cents. The authors expect the Claude tasks to cost under $8 in all, about $2 of it for the session matrix and its planted bugs. They expect the optional OpenAI port to cost under $3. All of these are still to be confirmed by the authors' live run. Cloudflare and Neon stay on their free plans. The open-source port can run free with a local model.
 
@@ -43,12 +43,12 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 *What you need.*
 
-- Everything Labs 19 to 21 needed: a computer with Node 22.19 or later (24 recommended). Python 3.12 or later with uv 0.11.32 or later (for Labs 20 and 21's tests). Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, ChatGPT (for Codex) and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/overview/)). And free Cloudflare, Neon and GitHub accounts.
-- **A Claude Console account with API credits,** two workspaces and a staging key with a 30-day expiry, made by you in Task 0 ([F2](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f2-claude-managed-agents-from-zero)).
+- Everything Labs 19 to 21 needed: a computer with Node 22.19 or later (24 recommended). Python 3.12 or later with uv 0.11.32 or later (for Labs 20 and 21's tests). Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, ChatGPT (for Codex) and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)). And free Cloudflare, Neon and GitHub accounts.
+- **A Claude Console account with API credits,** two workspaces and a staging key with a 30-day expiry, made by you in Task 0 ([F2](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f2-claude-managed-agents-from-zero)).
 - **For the optional OpenAI port:** an OpenAI API account with credits and a project with a $5 hard limit (F7).
 - **For the open-source port:** Docker with Compose (F7).
 
-**This lab writes code as it goes.** Labs 20 and 21 shipped finished code, and you predicted what it did. Lab 22 ships only a skeleton. Most tasks are **make** tasks, the last step of PRIMM-AI+, as Lab 21 did for its two rules. The task says **in plain words** what the code must do, a coding agent writes it, and you check the result against those words. Where the code decides a rule that keeps people or companies apart, the task adds **Check before you approve**. You **predict**, then ask the agent to show you those lines, and investigate any gap, as in [Chapter 13](https://agentfactory2.panaversity.org/building-ai-workers/programming-fundamentals/overview/). The new code is TypeScript (the chapter's [overview](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/overview/) says why).
+**This lab writes code as it goes.** Labs 20 and 21 shipped finished code, and you predicted what it did. Lab 22 ships only a skeleton. Most tasks are **make** tasks, the last step of PRIMM-AI+, as Lab 21 did for its two rules. The task says **in plain words** what the code must do, a coding agent writes it, and you check the result against those words. Where the code decides a rule that keeps people or companies apart, the task adds **Check before you approve**. You **predict**, then ask the agent to show you those lines, and investigate any gap, as in [Chapter 13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/). The new code is TypeScript (the chapter's [overview](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/overview/) says why).
 
 **How every task runs.** Chapter 12's five-step routine, as in Labs 17 to 21: (1) a fresh session with the named agent, in `brightline-ap/`. (2) Plan mode, with the task's prompt as the brief. Read the plan, and correct it before it starts. (3) Manual mode: approve each command. (4) Evidence: the agent shows what proves the task is done, and you check it against **What good looks like**. (5) A line in `ports/ch22.md`: the task, the agent, what it proved, anything that surprised you.
 
@@ -63,15 +63,15 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 | Word in a prompt | What it means |
 | --- | --- |
 | `always_allow`, `always_ask`, `auto` | The lab's platform's names for the three permission policies of 22.8: allow, ask and decide |
-| `end_turn`, `requires_action`, `budget_reached` | The platform's names for a session's three stop reasons of [22.3](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reading-a-session/): finished, needs action and budget reached |
-| `limited`, `allowed_hosts` | Limited networking, and its host allow list ([22.7](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/the-sandbox-and-its-network/)) |
-| `mcp_oauth` | A vault credential that holds a person's sign-in token and refreshes it ([22.10](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/a-vault-per-person-and-company/)) |
+| `end_turn`, `requires_action`, `budget_reached` | The platform's names for a session's three stop reasons of [22.3](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reading-a-session/): finished, needs action and budget reached |
+| `limited`, `allowed_hosts` | Limited networking, and its host allow list ([22.7](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/the-sandbox-and-its-network/)) |
+| `mcp_oauth` | A vault credential that holds a person's sign-in token and refreshes it ([22.10](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/a-vault-per-person-and-company/)) |
 | Workspace | A separate space on the platform for keys, resources and spending. The lab has one for staging and one for production (F2) |
-| `ant apply`, `--dry-run` | Apply the agent files. With `--dry-run`, show the plan and change nothing ([22.4](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/resources-as-code/)) |
+| `ant apply`, `--dry-run` | Apply the agent files. With `--dry-run`, show the plan and change nothing ([22.4](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/resources-as-code/)) |
 | `*.brightline.example` | A stand-in address. Every address ending in `brightline.example` means the matching real address of yours, recorded in `docs/addresses.md` in Task 0 |
 | Neon branch | A copy of a database you can make in seconds, so staging and tests each get their own (Chapter 19) |
 | Hyperdrive | Cloudflare's link from a Worker to a database. "Caching off" means every query reads fresh rows (Chapter 19) |
-| Conformance check | [Chapter 17](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/overview/)'s test suite that proves the connector still speaks MCP correctly (`npm run conformance:staging`) |
+| Conformance check | [Chapter 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/overview/)'s test suite that proves the connector still speaks MCP correctly (`npm run conformance:staging`) |
 | A log | The lines a server writes as it works. See the connector's or sign-in server's with `npx wrangler tail <name> --env staging`, or ask your agent to show them (F0) |
 | 400, 401, 404, 409 | Web error codes. 400: the request was wrong. 401: no valid sign-in. 404: not found, or not yours to see. 409: it already exists |
 
@@ -81,7 +81,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **Goal:** the Chapter 19 stack running in your own staging accounts, and every check passing at `lab22-start`. Also the `ant` CLI installed, and your staging key in a file git ignores.
 
-**By hand first (F2).** Unzip `brightline-lab-ch22.zip`. If you did Labs 20 and 21, copy your own `docs/sdk-map.md`, `ports/ch20.md` and `ports/ch21.md` into it, over the answer keys' examples: Task 1 reads your map. If you did Lab 19 and will reuse its staging system, copy your own `.secrets/` folder into `brightline-ap/` too. Make the Console account, add credits, and make the two workspaces with spending limits. Then make the staging key with a 30-day expiry, and put it in `brightline-ap/.secrets/anthropic.env`. Make the Neon and Cloudflare accounts if you have none. Unless you copied them, also make the three keys that Labs 18 and 19 made by hand. They are the Neon API key in `.secrets/neon.env` ([Chapter 19's F2](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/field-guide-business-data-and-retrieval/#f2-neon-from-zero)), the Workers AI token in `.secrets/embeddings.env` ([Chapter 19's F4](https://agentfactory2.panaversity.org/building-ai-workers/business-data-and-retrieval/field-guide-business-data-and-retrieval/#f4-embeddings-and-vectors-from-zero)), and Cloudflare's deploy token in `.secrets/cloudflare-token` ([Chapter 18's F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)).
+**By hand first (F2).** Unzip `brightline-lab-ch22.zip`. If you did Labs 20 and 21, copy your own `docs/sdk-map.md`, `ports/ch20.md` and `ports/ch21.md` into it, over the answer keys' examples: Task 1 reads your map. If you did Lab 19 and will reuse its staging system, copy your own `.secrets/` folder into `brightline-ap/` too. Make the Console account, add credits, and make the two workspaces with spending limits. Then make the staging key with a 30-day expiry, and put it in `brightline-ap/.secrets/anthropic.env`. Make the Neon and Cloudflare accounts if you have none. Unless you copied them, also make the three keys that Labs 18 and 19 made by hand. They are the Neon API key in `.secrets/neon.env` ([Chapter 19's F2](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/field-guide-business-data-and-retrieval/#f2-neon-from-zero)), the Workers AI token in `.secrets/embeddings.env` ([Chapter 19's F4](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/field-guide-business-data-and-retrieval/#f4-embeddings-and-vectors-from-zero)), and Cloudflare's deploy token in `.secrets/cloudflare-token` ([Chapter 18's F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)).
 
 **Predict:** at `lab22-start`, can a hosted session reach the connector yet?
 
@@ -125,7 +125,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ## Lab 22, Sitting 1: a first hosted agent (about 1 hour 35 minutes)
 
-**Before you start, answer in a line each:** What moves to the platform when a worker is hosted, and what stays with your product (22.1)? Which of the four resources holds the person ([22.2](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/four-resources/))? **After this sitting, you can:** apply an agent and an environment from files, read a session's events, and say why it stopped.
+**Before you start, answer in a line each:** What moves to the platform when a worker is hosted, and what stays with your product (22.1)? Which of the four resources holds the person ([22.2](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/four-resources/))? **After this sitting, you can:** apply an agent and an environment from files, read a session's events, and say why it stopped.
 
 **New words in this sitting's prompts.**
 
@@ -292,7 +292,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 ## Lab 22, Sitting 3a: one person, one company (about 2 hours 45 minutes, Tasks 9 to 11)
 
-**Before you start, answer in a line each:** Which three identities does a hosted worker involve, and what may each do (22.9)? Why does a session name exactly one vault, chosen by the server (22.10, [22.11](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/one-session-one-person-one-company/))? Why must the portal check who started a session before it streams its events (22.12)? **After this sitting, you can:** give each person a vault per company, and start sessions for them through the portal. Task 11 ends Milestone 1. Take a break after Task 10a: it is a natural place to stop.
+**Before you start, answer in a line each:** Which three identities does a hosted worker involve, and what may each do (22.9)? Why does a session name exactly one vault, chosen by the server (22.10, [22.11](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/one-session-one-person-one-company/))? Why must the portal check who started a session before it streams its events (22.12)? **After this sitting, you can:** give each person a vault per company, and start sessions for them through the portal. Task 11 ends Milestone 1. Take a break after Task 10a: it is a natural place to stop.
 
 **New words in this sitting's prompts.**
 
@@ -301,11 +301,11 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 | Confidential client | A program on a server, registered with a client secret, that may hold a refresh token (22.10) |
 | Service binding | A private link between two of your servers on the same platform, not reachable from the internet (Task 9) |
 | D1 | Cloudflare's database for Workers, which Chapter 18's sign-in server already uses. The portal gets a D1 database of its own (Task 9) |
-| `wrangler secret put` | The command that stores a secret for a deployed server, read from a prompt or a file, never printed ([F6](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f6-workload-identity-keys-and-the-portals-secrets)) |
+| `wrangler secret put` | The command that stores a secret for a deployed server, read from a prompt or a file, never printed ([F6](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f6-workload-identity-keys-and-the-portals-secrets)) |
 | Service account | An account for a program, not a person, so a key made for it belongs to the product, not to you (22.9, F6) |
 | PKCE, `state` | Two checks in a sign-in: PKCE proves the app that started the sign-in is the one finishing it, and `state` proves the answer belongs to this sign-in (Chapter 18) |
 | ID token | A signed token from the sign-in server that says who signed in. The portal reads it. The access token is for the connector (Task 10a) |
-| `mcp_oauth` credential, `refresh` block | The kind of vault credential that holds a person's sign-in tokens, and the part of it that lets the platform get new ones ([F4](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f4-vaults-in-detail)) |
+| `mcp_oauth` credential, `refresh` block | The kind of vault credential that holds a person's sign-in tokens, and the part of it that lets the platform get new ones ([F4](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f4-vaults-in-detail)) |
 | `offline_access` | The scope that lets an application keep getting tokens while the person is away (Chapter 18) |
 | `client_secret_post` | How the portal proves who it is when it asks for tokens: it sends its client secret in the request (F4) |
 | Rotation | Each time a refresh token is used, the sign-in server returns a new one and the old one stops working (22.10, more in 22.14) |
@@ -378,7 +378,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **Check before you approve.** Predict first: if the code took the company from the page's request, how could Ana's page reach Luis's vault? Then ask the agent to show the lines that choose the vault for a session, and point to where the person and the company come from. Nothing from the request, the page or the question may reach that choice (22.11).
 
-**Check before you approve.** Predict first: does `citesPolicyLine()` accept "See the payments policy, line 2"? Then ask the agent to show it. It accepts only the written form `(file.md:N)`, so it checks that a citation is there, not that it is right ([21.6](https://agentfactory2.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/)).
+**Check before you approve.** Predict first: does `citesPolicyLine()` accept "See the payments policy, line 2"? Then ask the agent to show it. It accepts only the written form `(file.md:N)`, so it checks that a citation is there, not that it is right ([21.6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/)).
 
 **What good looks like:** Ana's answer cites a policy line, as `(file.md:N)`. An answer that cites none would be held back, as in 21.6. The Console's Sessions page, in step 4, shows the session created by the portal's key, linked to the `brightline-portal` service account, not yours. Ana's answer comes from Brightline's data, and the connector's log line names Ana and Brightline. `history-scan` flags nothing. Your prediction: no, because the platform adds the token at egress (22.10).
 
@@ -433,7 +433,7 @@ This sitting starts Milestone 2.
 | --- | --- |
 | Headless browser | A real browser run by a program, with no window, used here to check what a page does (Task 12) |
 | Federation rule | In the Console, a rule that lets one repository, branch and workflow get a short-lived token as a service account (22.13, F6) |
-| Deployment (on the platform) | The platform's name for a scheduled run. Not the same as deploying the portal to Cloudflare ([22.15](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/schedules-and-webhooks/)) |
+| Deployment (on the platform) | The platform's name for a scheduled run. Not the same as deploying the portal to Cloudflare ([22.15](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/schedules-and-webhooks/)) |
 
 **A schedule, in short, before Task 12.** A schedule is a saved instruction to start a session on a timetable. It is written as a cron expression of five fields: minute, hour, day of month, month and day of week. Row S6 makes one that would run at 3:00 a.m. on January 1 (`0 3 1 1 *`), paused as soon as it is made, so it never runs. You build a real one in Sitting 4 (22.15).
 
@@ -548,7 +548,7 @@ This sitting starts Milestone 2.
 | Word in a prompt | What it means |
 | --- | --- |
 | `webhook_events` | A new table in the portal's database that records every webhook event id already handled, so a repeat is skipped (22.15) |
-| `unwrap()` | The platform library's function that checks a webhook's signature and refuses a message more than five minutes old ([F5](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/reference/#f5-webhooks-in-detail)) |
+| `unwrap()` | The platform library's function that checks a webhook's signature and refuses a message more than five minutes old ([F5](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f5-webhooks-in-detail)) |
 | Reconcile | Compare your own records with the platform's, on a timer, to catch a message that never arrived (22.15) |
 | Rubric | A short written list of what "done" means, which a check or a grader compares the work against (22.16, 22.17) |
 
@@ -664,7 +664,7 @@ This sitting starts Milestone 2.
 
 ## Lab 22, Sitting 5: ports and review (about 1 hour 5 minutes, or 2 hours with both extensions, Tasks 19 to 21 and 21b)
 
-*Tasks 19 and 20 use [22.19](https://agentfactory2.panaversity.org/building-ai-workers/hosted-agents/how-todays-tools-realize-it/), at the end of the chapter, and its full boxes on the companion page. Skim the OpenAI and open-source parts first.*
+*Tasks 19 and 20 use [22.19](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/how-todays-tools-realize-it/), at the end of the chapter, and its full boxes on the companion page. Skim the OpenAI and open-source parts first.*
 
 **New words in this sitting's prompts.**
 

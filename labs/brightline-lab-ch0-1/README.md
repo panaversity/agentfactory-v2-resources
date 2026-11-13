@@ -2,7 +2,7 @@
 
 Chapter 0.1 of *The AI Agent Factory*, Second Edition. Every name, number and company here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.1: Where the answer comes from](https://agentfactory2.panaversity.org/how-ai-works/what-ai-actually-is/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 0.1: Where the answer comes from](https://agentfactory.panaversity.org/how-ai-works/what-ai-actually-is/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

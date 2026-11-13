@@ -1,12 +1,12 @@
 # Lab 18: signing in to the Brightline connector
 
-Chapter 18 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 18: signing in to the Brightline connector](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/lab/), so you can do the lab without the book.
+Chapter 18 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 18: signing in to the Brightline connector](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/lab/), so you can do the lab without the book.
 
 *Time: about 9 hours, in five sittings. Core path, every task not marked "extension" (Task 20 included, Task 19 not), about 7 hours 45 minutes. Lab files: `brightline-lab-ch18.zip`. The same steps are in `LAB.md` inside the zip, and the field guide's sections are in `brightline-ap/docs/chapter-18/`.*
 
 ## Before you start
 
-**You need no earlier lab.** You do not need Lab 17, its repository, its deployed Workers, its Cloudflare account, its GitHub secrets or its keys. The zip holds everything. Every idea from an earlier chapter that a task uses is explained where it is used, or in field guide [F0](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with), "Ideas from earlier chapters this lab uses". If you did Lab 17, still start from this zip, so your expected answers match.
+**You need no earlier lab.** You do not need Lab 17, its repository, its deployed Workers, its Cloudflare account, its GitHub secrets or its keys. The zip holds everything. Every idea from an earlier chapter that a task uses is explained where it is used, or in field guide [F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with), "Ideas from earlier chapters this lab uses". If you did Lab 17, still start from this zip, so your expected answers match.
 
 **Core and extension.** Tasks marked extension are optional. The core path, every other task, takes about 7 hours 45 minutes.
 
@@ -14,16 +14,16 @@ Chapter 18 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 - A computer with macOS, Windows or Linux, and a terminal.
 - **Node.js 22.19 or later** (24 recommended), **uv 0.11.32 or later**, git, a GitHub account and `gh`.
-- **Claude Code, Codex and OpenCode version 2,** in their desktop apps, with their command-line tools (`claude`, `codex` and `opencode`) for the sign-in steps in Tasks 14, 15 and 18. You can do the whole lab with one of them: send every prompt to the agent you have. Task 13 uses Claude Code. With another agent, use its own sign-in steps from [F6](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f6-codex) or [F7](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f7-opencode-version-2).
+- **Claude Code, Codex and OpenCode version 2,** in their desktop apps, with their command-line tools (`claude`, `codex` and `opencode`) for the sign-in steps in Tasks 14, 15 and 18. You can do the whole lab with one of them: send every prompt to the agent you have. Task 13 uses Claude Code. With another agent, use its own sign-in steps from [F6](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f6-codex) or [F7](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f7-opencode-version-2).
 - A web browser. You sign in through it many times.
-- **A Cloudflare account on the free plan, for Sitting 5 only.** [F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server) shows how to make one.
+- **A Cloudflare account on the free plan, for Sitting 5 only.** [F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server) shows how to make one.
 
 **The lab files.** Download [brightline-lab-ch18.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch18.zip) and unzip it. It contains:
 
 - `brightline-ap/`, a plain folder with no git history (Task 0 starts it). It holds the Chapter 17 connector in TypeScript and Python, still using the shared key. The TypeScript connector has moved to wrangler 4.156.1, the same version the sign-in server uses. The connector comes with its tests, conformance suite, deploy workflow, `docs/connector-spec.md`, `docs/acceptance-prompts.md`, `docs/deploy.md`, and Brightline's data and policies. Its `README.md` explains the repository from zero.
 - `servers/hello-auth/`, inside it: a finished practice sign-in, with a small sign-in server and a one-tool practice connector behind it, for Task 1.
 - `servers/auth/`, inside it, holding only a `.dev.vars.example`, which `npm run keys` uses. Task 2 fills in the rest.
-- `scripts/make-keys.ts`, already updated for this chapter ([F0](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)).
+- `scripts/make-keys.ts`, already updated for this chapter ([F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)).
 - `LAB.md`, these steps.
 - `answer-key/`, the authors' finished files. Never give it to an agent.
 
@@ -38,13 +38,13 @@ Each task links its own answer key as a separate download. Open a key in a text 
 - Making accounts.
 - Signing in to `gh` and Cloudflare.
 - Signing in and approving consent in your browser as a test user.
-- Typing a test user's password into a sign-in page ([F0](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)).
+- Typing a test user's password into a sign-in page ([F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)).
 - Creating the Cloudflare deploy token.
 - Deciding when to merge and when to deploy.
 
 **No key, password or token ever passes through a chat.** Agents make every secret with `npm run keys`, into files git ignores, and print none. You type a test user's password only into the sign-in page in your browser. When an agent shows you a token, it shows the decoded claims only. Stop any agent that prints a secret, and make new keys.
 
-**Your agents can read this chapter.** The zip's `docs/chapter-18/` folder holds the concepts and the field guide as text files. So when a prompt says "Read [18.11](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/)", the agent opens `docs/chapter-18/18.11.md`. There is one file per concept (`18.1.md` to `18.17.md`), one per field guide section (`F0.md` to `F10.md`), `overview.md`, and an index, `README.md`. Each figure appears as one line describing it.
+**Your agents can read this chapter.** The zip's `docs/chapter-18/` folder holds the concepts and the field guide as text files. So when a prompt says "Read [18.11](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/)", the agent opens `docs/chapter-18/18.11.md`. There is one file per concept (`18.1.md` to `18.17.md`), one per field guide section (`F0.md` to `F10.md`), `overview.md`, and an index, `README.md`. Each figure appears as one line describing it.
 
 **One browser window per test person.** A browser stays signed in to the sign-in server after you sign in. Before you sign in as a different test person, sign out on the sign-in server's page, or use a new private browser window. Otherwise you are silently signed in as the previous person.
 
@@ -72,7 +72,7 @@ Each task starts with a **Predict** line. Write your answer in `NOTES.md` before
 | Priya Shah | Both | `member` of each (an outside bookkeeper) |
 | Sam Keller | Juniper Trail Outfitters | `owner` (a trial company, offboarded in Task 11) |
 
-A third company, Juniper Trail Outfitters, is a trial that is offboarded in Task 11. A fourth, **Conformance Test Co.**, exists only for automated checks ([F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). Only Brightline, and the test-only Conformance Test Co., have data in this chapter, so every other company gets `No AP data is connected for <company> yet.`
+A third company, Juniper Trail Outfitters, is a trial that is offboarded in Task 11. A fourth, **Conformance Test Co.**, exists only for automated checks ([F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). Only Brightline, and the test-only Conformance Test Co., have data in this chapter, so every other company gets `No AP data is connected for <company> yet.`
 
 **The date in this lab.** Monday, March 22, 2027, a week after Lab 17, whatever day you do it.
 
@@ -84,7 +84,7 @@ A third company, Juniper Trail Outfitters, is a trial that is offboarded in Task
 
 ## Sitting 1: sign-in from zero, and the sign-in server (about 2 hours 35 minutes)
 
-Read Concepts [18.1](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/who-is-calling/) to [18.8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/) and field guides [F0](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with) to [F3](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f3-better-auth-from-zero) first. Read [18.9](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/what-a-tenant-is/) to [18.12](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/) before Task 3.
+Read Concepts [18.1](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/who-is-calling/) to [18.8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/) and field guides [F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with) to [F3](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f3-better-auth-from-zero) first. Read [18.9](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/what-a-tenant-is/) to [18.12](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/) before Task 3.
 
 ### Task 0. Set up from the zip (20 minutes, Claude Code)
 
@@ -98,7 +98,7 @@ Open `brightline-ap/` in Claude Code and send:
 
 > Set up this repository from scratch. Put this folder under git, with a main branch. Make a first commit of everything here with the message "Start from the end of Chapter 17", and tag that commit `lab18-start`. If git has no name and email yet, set them for this project only. Then install with `npm ci`, and `uv sync` in `py/`. Then run every check: `npm test`, `npm run test:servers`, `npm run typecheck`, `uv run pyright` and `uv run pytest` in `py/`, `npm run check:plugin` and `npm run conformance`. Give me a table with one row per check, its result, and how many tests it ran. Then run `npm run keys`, which makes every local secret into files git ignores and prints only file names. Never read or print those files. Then create a private GitHub repository with `gh repo create brightline-ap --private --source . --push`, and push the tags. Finally run `git ls-files | grep -E '\.dev\.vars$|\.secrets/'` and show me what it prints.
 
-While it runs, read [F0](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)'s "The connector you start with".
+While it runs, read [F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)'s "The connector you start with".
 
 **What good looks like:** `git log --oneline` shows one commit, tagged `lab18-start`. Every row in the table says passed (the conformance row ends `0 failed`). `npm run keys` lists file names and no values. The last command prints nothing at all, which means no secret file is tracked by git. Your repository appears on GitHub.
 
@@ -106,21 +106,21 @@ While it runs, read [F0](https://agentfactory2.panaversity.org/building-ai-worke
 
 ### Task 1. Read a sign-in (25 minutes, Claude Code)
 
-**Goal:** see [18.2](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/sign-in-in-one-picture/)'s eight steps for real, on the practice sign-in, before you build anything.
+**Goal:** see [18.2](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/sign-in-in-one-picture/)'s eight steps for real, on the practice sign-in, before you build anything.
 
 **Predict:** what status code will a request with no token get, and what will the reply point to?
 
 > From the repository's top folder, start the practice sign-in in `servers/hello-auth/` with `npm run hello-auth` in the background. It runs a small sign-in server on `127.0.0.1:8739` and a one-tool practice connector on `127.0.0.1:8736`. Then: 1. Call the practice connector's `/mcp` with `curl`, with no token, and show me the status and the response headers. 2. Fetch the document named in `resource_metadata`, and show it. 3. Fetch the sign-in server's document from the issuer it names, and show it. Change no file.
 
-**What good looks like:** compare with the values below ([F4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) has the full messages, if you want them). The practice server uses its own ports, 8736 and 8739, and its own scope, `hello:read`, where [F4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) shows the real lab's 8717, 8719 and `ap:read`. Everything else should match:
+**What good looks like:** compare with the values below ([F4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) has the full messages, if you want them). The practice server uses its own ports, 8736 and 8739, and its own scope, `hello:read`, where [F4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) shows the real lab's 8717, 8719 and `ap:read`. Everything else should match:
 
 - Status `401`, and a `WWW-Authenticate` header that holds `resource_metadata="http://127.0.0.1:8736/.well-known/oauth-protected-resource/mcp"`.
 - The connector's document has `"authorization_servers": ["http://127.0.0.1:8739/api/auth"]`.
 - The sign-in server's document has `"issuer": "http://127.0.0.1:8739/api/auth"`, a `jwks_uri`, `"code_challenge_methods_supported": ["S256"]` and `"client_id_metadata_document_supported": true`.
 
-(`WWW-Authenticate` is the header that carries [18.3](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/finding-the-door/)'s link.)
+(`WWW-Authenticate` is the header that carries [18.3](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/finding-the-door/)'s link.)
 
-Copy those values into `NOTES.md`, and next to each write which step of [18.2](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/sign-in-in-one-picture/) or which part of [18.3](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/finding-the-door/) it belongs to.
+Copy those values into `NOTES.md`, and next to each write which step of [18.2](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/sign-in-in-one-picture/) or which part of [18.3](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/finding-the-door/) it belongs to.
 
 Then sign in once, through the MCP Inspector, a small web page for calling an MCP server by hand.
 
@@ -134,7 +134,7 @@ The Inspector opens its page in your browser by itself. If it does not, copy the
 
 > The practice sign-in server keeps the decoded claims of the last token it issued, and only the claims, at `http://127.0.0.1:8739/practice/last-claims`. This route exists only in the practice server. Fetch it and show me the JSON. Never ask the Inspector for the token itself.
 
-**What good looks like:** the JSON has `iss` (the practice sign-in server), `aud` (`http://127.0.0.1:8736/mcp`) and `sub`. It also has `exp` (a number about 600 more than `iat`, so 10 minutes), `scope` and `tenant`. In `NOTES.md`, write one sentence for each saying what it is for ([18.6](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/a-token-made-for-one-door/)).
+**What good looks like:** the JSON has `iss` (the practice sign-in server), `aud` (`http://127.0.0.1:8736/mcp`) and `sub`. It also has `exp` (a number about 600 more than `iat`, so 10 minutes), `scope` and `tenant`. In `NOTES.md`, write one sentence for each saying what it is for ([18.6](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/a-token-made-for-one-door/)).
 
 **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch18-key-task-1.md).
 
@@ -146,7 +146,7 @@ The Inspector opens its page in your browser by itself. If it does not, copy the
 
 > Fill in `servers/auth/` (the zip holds only its `.dev.vars.example`) with only enough to hold a database, and add `servers/auth` to the root `workspaces`. Give it a `package.json` named `@brightline/auth` with `better-auth` pinned to exactly 1.7.15 and `wrangler` 4.156.1. Give it a `wrangler.jsonc` with `main`, `compatibility_flags: ["nodejs_compat"]`, and one D1 database binding `DB`, database name `brightline-auth`, `migrations_dir` `migrations`, and a placeholder `database_id` for now. Write a minimal `src/auth.ts` with email and password, and the `jwt`, `organization`, `mcp` and `cimd` plugins at their defaults, with `mcp`'s `resource` set to `http://127.0.0.1:8717/mcp`. Better Auth's command-line tool cannot read a D1 binding. So also write `src/auth.cli.ts`, used only by that tool, which builds the same auth instance on an empty in-memory `node:sqlite` database. Run `npx auth@1.7.15 generate --config src/auth.cli.ts --yes --output <file>` to write the SQL that creates the tables. Then run `wrangler d1 migrations create brightline-auth better_auth` and paste the SQL into the new file, `0001_better_auth.sql`. Apply it to the local database only, with `--local`. Then list every table and its columns, read-only, as a short table. In the column list, mark which columns are primary keys and which are foreign keys. Show me the migration file's first 40 lines and the list.
 
-**What good looks like:** the list includes `user`, `account`, `session`, `organization` and `member`. It also has a few tables for apps, consent records, refresh tokens and signing keys. `member` has `userId`, `organizationId` and `role`. There will be more columns than [18.8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/) shows, such as dates. That is normal. The migration file is a list of CREATE TABLE commands. Each names a table and its columns, says which column is the primary key, and marks the columns that point at another table. Every command said `--local`.
+**What good looks like:** the list includes `user`, `account`, `session`, `organization` and `member`. It also has a few tables for apps, consent records, refresh tokens and signing keys. `member` has `userId`, `organizationId` and `role`. There will be more columns than [18.8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/) shows, such as dates. That is normal. The migration file is a list of CREATE TABLE commands. Each names a table and its columns, says which column is the primary key, and marks the columns that point at another table. Every command said `--local`.
 
 Then ask, one at a time, and read each query before you approve it:
 
@@ -154,7 +154,7 @@ Then ask, one at a time, and read each query before you approve it:
 
 Adding rows is a fourth shape of query, `INSERT`. You only need to see that each line adds one row with the values you asked for.
 
-**What good looks like:** the three answers are the ones in [18.8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/). The first is Cedar Ridge Supply. The second is two rows for Priya, one per company, each `member`. The third is Brightline 2, Cedar Ridge Supply 2. The queries have the three shapes in [18.8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/). The real tables need more columns than [18.8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/) shows. So the inserts also fill `user.emailVerified`, `createdAt` and `updatedAt`, `organization.slug` (which must be unique) and `createdAt`, and `member.createdAt`. If the first try fails on one of these, the agent adds it. That is normal.
+**What good looks like:** the three answers are the ones in [18.8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/). The first is Cedar Ridge Supply. The second is two rows for Priya, one per company, each `member`. The third is Brightline 2, Cedar Ridge Supply 2. The queries have the three shapes in [18.8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/). The real tables need more columns than [18.8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/tables-rows-and-relationships/) shows. So the inserts also fill `user.emailVerified`, `createdAt` and `updatedAt`, `organization.slug` (which must be unique) and `createdAt`, and `member.createdAt`. If the first try fails on one of these, the agent adds it. That is normal.
 
 Then:
 
@@ -172,7 +172,7 @@ Then:
 
 > Interview me as Ana Morales, Brightline's AP analyst, one question at a time, until you can write `docs/auth-spec.md`. Read `docs/connector-spec.md` and Concepts 18.6, 18.7 and 18.9 to 18.12 first. Cover the tenancy model, the companies, the roles and the scopes each role gets, the scopes each tool needs, and the claims every token carries. Also cover token lifetimes, the company picker and what happens to a removed person. Cover the message for a company with no data too, and the exact wording of every refusal. Write nothing until I say the interview is done.
 
-**Ana's answers.** Answer from this sheet. If the agent asks something it does not cover, answer as Ana would from [18.6](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/a-token-made-for-one-door/) to [18.12](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/).
+**Ana's answers.** Answer from this sheet. If the agent asks something it does not cover, answer as Ana would from [18.6](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/a-token-made-for-one-door/) to [18.12](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/).
 
 | Question | Ana's answer |
 | --- | --- |
@@ -222,7 +222,7 @@ Then:
 >
 > Do not write the server. Run the tests, show me the summary and the first failure message, then commit and tag the commit `auth-tests`.
 
-You need not understand the test names. Check only what "What good looks like" says. (`authorization_response_iss_parameter_supported` is [18.4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/two-guards-for-the-code/)'s issuer check.)
+You need not understand the test names. Check only what "What good looks like" says. (`authorization_response_iss_parameter_supported` is [18.4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/two-guards-for-the-code/)'s issuer check.)
 
 **What good looks like:** every test fails. Task 2's minimal server has no sign-in pages and no Brightline rules yet. So failures will say things like "not found", or name a value that is missing. That is expected. The warning sign is a test that passes: ask the agent why it passes before anything is built. One exception: the tests for the sign-in server's document and the public keys may pass, because Task 2 already switched on the plugins that serve them. Accept that if the agent says so.
 
@@ -232,7 +232,7 @@ You need not understand the test names. Check only what "What good looks like" s
 
 **Goal:** the sign-in server, on D1, passing every test from Task 4.
 
-**Predict:** on Cloudflare's free plan, each request may use about 10 milliseconds of processor time (field guide [F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). Processor time is the time the computer spends actually working, not waiting. Will sign-in, which hashes a password, use more or less?
+**Predict:** on Cloudflare's free plan, each request may use about 10 milliseconds of processor time (field guide [F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). Processor time is the time the computer spends actually working, not waiting. Will sign-in, which hashes a password, use more or less?
 
 **In plain words.** The agent builds the sign-in server so that every test from Task 4 passes, without changing a test. A person signs in with a password, picks a company and approves an app. The server then makes tokens that name that company and only the permissions the person's role allows. It checks the membership again at every token. It also adds admin routes, locked by the admin key, for adding companies, people and apps.
 
@@ -272,11 +272,11 @@ When you have checked the first part of "What good looks like" below, send:
 
 **What good looks like.**
 
-1. After the first send, in the diff of `src/auth.ts`, find four things: `refreshTokenReuseInterval: 0`. No line that turns on dynamic client registration ([18.5](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/who-is-the-app/)): search for `DynamicClientRegistration` and `UnauthenticatedClientRegistration`, and both must be `false`. An access token lifetime of 10 minutes: search for `accessTokenExpiresIn`, set to `600` or `60 * 10`. And the `auditor` role.
+1. After the first send, in the diff of `src/auth.ts`, find four things: `refreshTokenReuseInterval: 0`. No line that turns on dynamic client registration ([18.5](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/who-is-the-app/)): search for `DynamicClientRegistration` and `UnauthenticatedClientRegistration`, and both must be `false`. An access token lifetime of 10 minutes: search for `accessTokenExpiresIn`, set to `600` or `60 * 10`. And the `auditor` role.
 2. Ask the agent to run `git diff auth-tests -- 'servers/auth/test/*.test.ts'`, which must print nothing: the tests were not changed. The test helper file beside them may change while the server is built, but the test files may not.
 3. The test summary shows `0 failed`.
-4. The address where the sign-in server's document answered is noted in `ports/ch18.md`. The authors' build found it at `/.well-known/oauth-authorization-server/api/auth` ([F3](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f3-better-auth-from-zero), "Its routes").
-5. After the second send, the processor time is in `ports/ch18.md`, next to the free plan's 10 ms. Expect "not shown": Wrangler on your computer prints only each request's total time, such as `POST /sign-in 302 Found (172ms)`. Write "not shown", and beside it the authors' own measure: about 80 ms of processor time per sign-in, roughly 8 times the 10 ms ([F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). Sitting 5 sees it online.
+4. The address where the sign-in server's document answered is noted in `ports/ch18.md`. The authors' build found it at `/.well-known/oauth-authorization-server/api/auth` ([F3](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f3-better-auth-from-zero), "Its routes").
+5. After the second send, the processor time is in `ports/ch18.md`, next to the free plan's 10 ms. Expect "not shown": Wrangler on your computer prints only each request's total time, such as `POST /sign-in 302 Found (172ms)`. Write "not shown", and beside it the authors' own measure: about 80 ms of processor time per sign-in, roughly 8 times the 10 ms ([F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). Sitting 5 sees it online.
 
 If the agent stops because an option does not pass through `mcp()`, that is the stop you asked for. Ask it to propose the smallest change that keeps every test unchanged. Then judge only by evidence: accept it if `git diff auth-tests -- 'servers/auth/test/*.test.ts'` prints nothing and the test summary shows `0 failed`. Otherwise send it back with those two outputs.
 
@@ -288,7 +288,7 @@ If the agent stops because an option does not pass through `mcp()`, that is the 
 
 ## Sitting 2: the connector behind tokens (about 1 hour)
 
-Read [18.6](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/a-token-made-for-one-door/), [18.7](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/permission-per-tool/) and [F4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail)'s "How the connector does it".
+Read [18.6](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/a-token-made-for-one-door/), [18.7](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/permission-per-tool/) and [F4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail)'s "How the connector does it".
 
 ### Task 6. Protect the TypeScript connector (30 minutes, Claude Code)
 
@@ -322,7 +322,7 @@ Read [18.6](https://agentfactory2.panaversity.org/building-ai-workers/securing-c
 
 **Goal:** the same front door in Python, against the same public keys.
 
-**Predict:** if your token checker skipped the audience check, which setting would still stop a token made for another connector? ([F4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) says.)
+**Predict:** if your token checker skipped the audience check, which setting would still stop a token made for another connector? ([F4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) says.)
 
 > Read `docs/auth-spec.md`, `servers/ap-ts/test/auth.test.ts` and `py/brightline_ap/mcp_server.py`. Write the same tests in `py/tests/test_auth.py` first and commit them.
 >
@@ -334,7 +334,7 @@ Read [18.6](https://agentfactory2.panaversity.org/building-ai-workers/securing-c
 >
 > Remove `AP_MCP_TOKEN` everywhere in `py/` and `servers/ap-py/`. Run pytest and Pyright strict, and show me both summaries.
 
-**What good looks like:** pytest and Pyright both report no failures or errors (the authors' build had `30 passed`, 15 old and 15 new). `validate_token_resource=True` appears in the diff. Ask Codex why it matters, and check its answer against [F4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail). A foreign `Origin` with no token gets 403, as in TypeScript.
+**What good looks like:** pytest and Pyright both report no failures or errors (the authors' build had `30 passed`, 15 old and 15 new). `validate_token_resource=True` appears in the diff. Ask Codex why it matters, and check its answer against [F4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail). A foreign `Origin` with no token gets 403, as in TypeScript.
 
 Each version of the connector has its own address in the sign-in server, 8717 for TypeScript and 8718 for Python. So an AI app can sign in to either. A token made for one is refused by the other.
 
@@ -346,7 +346,7 @@ Each version of the connector has its own address in the sign-in server, 8717 fo
 
 ## Sitting 3: many companies (about 2 hours 50 minutes)
 
-The heart of the lab. Read [18.9](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/what-a-tenant-is/) to [18.14](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/a-companys-life/) and [F9](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist) first.
+The heart of the lab. Read [18.9](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/what-a-tenant-is/) to [18.14](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/a-companys-life/) and [F9](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist) first.
 
 ### Task 8. Add the companies (20 minutes, Claude Code)
 
@@ -366,7 +366,7 @@ Then ask: "In the same way, write `scripts/client-add.ts` (`npm run client:add`)
 
 ### Task 9a. One order slip per request, TypeScript (25 minutes, Claude Code)
 
-**Goal:** rules 1 to 3 from [18.11](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/), each with a failing test first.
+**Goal:** rules 1 to 3 from [18.11](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/), each with a failing test first.
 
 **Predict:** which rule's test must run many times to be trusted, and why?
 
@@ -384,7 +384,7 @@ Then ask: "In the same way, write `scripts/client-add.ts` (`npm run client:add`)
 
 ### Task 9b. What else carries the company, TypeScript (25 minutes, Claude Code)
 
-**Goal:** rules 4 to 7 from [18.12](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/), each with a failing test first.
+**Goal:** rules 4 to 7 from [18.12](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/), each with a failing test first.
 
 **Predict:** what should Cedar Ridge's token get from `list_open_invoices`?
 
@@ -417,11 +417,11 @@ Then ask: "In the same way, write `scripts/client-add.ts` (`npm run client:add`)
 
 ### Task 10. The sign-in matrix (30 minutes, OpenCode)
 
-**Goal:** [18.13](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/proving-the-sign-in-keeps-companies-apart/)'s matrix against both versions, and proof that it catches planted bugs.
+**Goal:** [18.13](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/proving-the-sign-in-keeps-companies-apart/)'s matrix against both versions, and proof that it catches planted bugs.
 
 **Predict:** the copy with the shared-note bug will fail which check?
 
-**In plain words.** Send 1 asks the agent to add [18.13](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/proving-the-sign-in-keeps-companies-apart/)'s matrix to the conformance suite. Test people sign in with a script, and two extra local sign-in servers play a staging server and a forger. Then every route by which one company might act as another is tried against both versions of the connector. Both must refuse each one in the same way.
+**In plain words.** Send 1 asks the agent to add [18.13](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/proving-the-sign-in-keeps-companies-apart/)'s matrix to the conformance suite. Test people sign in with a script, and two extra local sign-in servers play a staging server and a forger. Then every route by which one company might act as another is tried against both versions of the connector. Both must refuse each one in the same way.
 
 Send 1:
 
@@ -437,13 +437,13 @@ When send 1 ends `0 failed`, send 2:
 
 > From the `auth` branch, create a branch `planted-header` where the TypeScript connector reads the company from `X-Tenant` when present. Also create a branch `planted-global` where it keeps the company in a module-level variable. It writes the variable when each request arrives, and reads it when the tool reads its data, after a wait. Run the suite on each branch and show me which checks fail. Then switch back to `auth`, record which check failed on each branch in `ports/ch18.md`, commit, then delete both branches without merging.
 
-**What good looks like:** after send 1, on the `auth` branch, `0 failed`, for both versions. On `planted-header`, at least the planted-header row fails. On `planted-global`, the "two companies at once" row fails. If a planted bug fails nothing, the suite has a hole: tell OpenCode which bug it missed and ask it to add a check. This is also the sign-in check [18.14](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/a-companys-life/) asks for before any real sign-in.
+**What good looks like:** after send 1, on the `auth` branch, `0 failed`, for both versions. On `planted-header`, at least the planted-header row fails. On `planted-global`, the "two companies at once" row fails. If a planted bug fails nothing, the suite has a hole: tell OpenCode which bug it missed and ask it to add a check. This is also the sign-in check [18.14](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/a-companys-life/) asks for before any real sign-in.
 
 **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch18-key-task-10.md).
 
 ### Task 11. Change and leave (20 minutes, Claude Code)
 
-**Goal:** [18.14](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/a-companys-life/)'s week, through scripts, with evidence.
+**Goal:** [18.14](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/a-companys-life/)'s week, through scripts, with evidence.
 
 **Predict:** after Marco becomes an `auditor`, which scope will his next token lack?
 
@@ -475,7 +475,7 @@ To Codex, in a fresh session:
 
 Send the same to Claude Code, for `py/`. Fix each finding through the agent that wrote the code, with a failing test first if it is a bug.
 
-**What good looks like:** every finding is fixed, or answered in `NOTES.md` with a reason. A review that finds nothing at all is worth a second look: ask the reviewer to check [F9](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist)'s "The tenant's source" items again. A good reason names the [F9](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist) item and says why it does not apply here. The answer key lists the main [F9](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist) items, with the file where a review should confirm each.
+**What good looks like:** every finding is fixed, or answered in `NOTES.md` with a reason. A review that finds nothing at all is worth a second look: ask the reviewer to check [F9](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist)'s "The tenant's source" items again. A good reason names the [F9](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist) item and says why it does not apply here. The answer key lists the main [F9](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f9-the-multi-tenant-sign-in-checklist) items, with the file where a review should confirm each.
 
 **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch18-key-task-12.md).
 
@@ -485,19 +485,19 @@ Send the same to Claude Code, for `py/`. Fix each finding through the agent that
 
 ## Sitting 4: real sign-ins (about 1 hour 30 minutes)
 
-Read the table at the start of [18.17](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/how-todays-tools-realize-it/), and [F5](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f5-claude-code) to [F7](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f7-opencode-version-2). Ask Claude Code to start the sign-in server (`npm run dev` in `servers/auth`) and the TypeScript connector (`npm start` in `servers/ap-ts`, on 8717) in the background. Leave them running for this sitting.
+Read the table at the start of [18.17](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/how-todays-tools-realize-it/), and [F5](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f5-claude-code) to [F7](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f7-opencode-version-2). Ask Claude Code to start the sign-in server (`npm run dev` in `servers/auth`) and the TypeScript connector (`npm start` in `servers/ap-ts`, on 8717) in the background. Leave them running for this sitting.
 
-**For each AI app, record whether it asked for `offline_access`,** the scope that gets a refresh token ([F4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail), step 7). After each sign-in, ask the agent to show, read-only, the scopes in that app's newest consent record (the `oauthConsent` table). Write "asked" or "did not ask" next to the app's line in `ports/ch18.md`. An app that did not ask gets no refresh token, so its person signs in again every 10 minutes.
+**For each AI app, record whether it asked for `offline_access`,** the scope that gets a refresh token ([F4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail), step 7). After each sign-in, ask the agent to show, read-only, the scopes in that app's newest consent record (the `oauthConsent` table). Write "asked" or "did not ask" next to the app's line in `ports/ch18.md`. An app that did not ask gets no refresh token, so its person signs in again every 10 minutes.
 
 ### Task 13. Claude Code signs in (20 minutes, Claude Code)
 
 **Predict:** what will Priya's Cedar Ridge chat answer to "Which invoices are open?"
 
-**Why we pre-register.** Brightline's sign-in server accepts app documents only from makers on its approved list, which starts with Codex's maker alone (field guide [F3](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f3-better-auth-from-zero)). So Claude Code's own document would be refused. The recommended way through needs no trust decision: pre-register a client for Claude Code.
+**Why we pre-register.** Brightline's sign-in server accepts app documents only from makers on its approved list, which starts with Codex's maker alone (field guide [F3](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f3-better-auth-from-zero)). So Claude Code's own document would be refused. The recommended way through needs no trust decision: pre-register a client for Claude Code.
 
 > Run `npm run client:add -- --env local --client-id brightline-claude-code --name "Claude Code (lab)" --redirect http://localhost:8790/callback`, which creates a pre-registered client with no secret and prints only its client ID. Then add the connector to this project's `.mcp.json` as `apts`, at `http://127.0.0.1:8717/mcp`. Give it that client ID, callback port 8790, the scopes `ap:read ap:vendors.read` asked for up front, and no headers. Remove any `headersHelper`. Show me the diff.
 
-**By you:** in a new Claude Code session, approve `apts` if Claude Code asks about the project's servers. Then type `/mcp`, choose `apts`, and choose to authenticate. In the browser, sign in as Ana (password from [F0](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)), pick Brightline, approve. Then ask Claude Code three of the acceptance checks: A1, A5 and A6 ([F0](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with) says what each is).
+**By you:** in a new Claude Code session, approve `apts` if Claude Code asks about the project's servers. Then type `/mcp`, choose `apts`, and choose to authenticate. In the browser, sign in as Ana (password from [F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)), pick Brightline, approve. Then ask Claude Code three of the acceptance checks: A1, A5 and A6 ([F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with) says what each is).
 
 Then sign in as Priya, once per company, in this order:
 
@@ -524,7 +524,7 @@ Then sign in as Priya, once per company, in this order:
 
 **By you:** sign out on the sign-in server's page first, or use a new private browser window. Then run `codex mcp login apts`, sign in as Luis, pick Cedar Ridge. Ask "Which invoices are open?"
 
-**What good looks like:** "No AP data is connected for Cedar Ridge Supply yet.", because Cedar Ridge has no data in this chapter. The route Codex used is in `ports/ch18.md`. If you created no client for Codex and sign-in worked, the route was its own document. Record that. If the sign-in server refuses Codex's own document, pre-register it as [F6](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f6-codex) shows and record that.
+**What good looks like:** "No AP data is connected for Cedar Ridge Supply yet.", because Cedar Ridge has no data in this chapter. The route Codex used is in `ports/ch18.md`. If you created no client for Codex and sign-in worked, the route was its own document. Record that. If the sign-in server refuses Codex's own document, pre-register it as [F6](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f6-codex) shows and record that.
 
 **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch18-key-task-14.md).
 
@@ -546,7 +546,7 @@ If OpenCode's page names no return address, pre-register with `http://127.0.0.1/
 
 **Predict:** what status will Grace's vendor question get, and will a second consent screen fix it?
 
-First ask Claude Code: "Remove the up-front scopes from `apts` in `.mcp.json`, so it asks only for what the connector's 401 names, as in [18.7](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/permission-per-tool/)." Then **by you:** in Claude Code, sign out of `apts`. Sign out on the sign-in server's page (or use a new private window). Sign in as Grace, pick Brightline. Ask: "What are Hocking Valley's payment terms?"
+First ask Claude Code: "Remove the up-front scopes from `apts` in `.mcp.json`, so it asks only for what the connector's 401 names, as in [18.7](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/permission-per-tool/)." Then **by you:** in Claude Code, sign out of `apts`. Sign out on the sign-in server's page (or use a new private window). Sign in as Grace, pick Brightline. Ask: "What are Hocking Valley's payment terms?"
 
 **What good looks like:** Claude Code reports that the server needs more permissions. If it opens a second consent screen, approve it: the sign-in server still does not grant `ap:vendors.read`, and the call still fails. Copy Claude Code's own message into `ports/ch18.md` word for word. Afterwards, ask Claude Code to put the up-front scopes back in `apts`, or Ana's A1 then needs this step-up too.
 
@@ -568,7 +568,7 @@ First ask Claude Code: "Remove the up-front scopes from `apts` in `.mcp.json`, s
 
 ## Sitting 5: deploy (about 1 hour 10 minutes)
 
-Read [18.15](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/the-sign-in-server-you-run/) and [F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server). Then three things by you:
+Read [18.15](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/the-sign-in-server-you-run/) and [F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server). Then three things by you:
 
 1. Make a Cloudflare account and choose your `workers.dev` subdomain if you have none.
 2. Ask a fresh Claude Code session to run `npx wrangler login`, and approve it in your browser.
@@ -580,7 +580,7 @@ Ask the agent to create an empty file `.secrets/cloudflare-token` (git ignores i
 
 **Predict:** what will the production connector answer to a staging token?
 
-**First, a Four-Part Brief ([Chapter 5](https://agentfactory2.panaversity.org/managing-ai-workers/the-four-part-brief/overview/)),** in Plan mode:
+**First, a Four-Part Brief ([Chapter 5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/overview/)),** in Plan mode:
 
 > *Outcome.* The repository's rules guard the sign-in server and its database. In `AGENTS.md`'s Deploying section, add:
 >
@@ -603,7 +603,7 @@ Read the plan, switch to Manual mode, and say "Apply it."
 
 Then, in a fresh session:
 
-**In plain words.** The agent adds the npm scripts for putting the sign-in server online. Then it follows [F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)'s steps 3 to 10 for staging only: the databases, the migrations, the secrets, both deploys and the four companies. These steps also make a staging client for Claude Code and a CI client for the automated checks. It finishes with `check:deploy` and the conformance suite against staging, and stops at the first error.
+**In plain words.** The agent adds the npm scripts for putting the sign-in server online. Then it follows [F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)'s steps 3 to 10 for staging only: the databases, the migrations, the secrets, both deploys and the four companies. These steps also make a staging client for Claude Code and a CI client for the automated checks. It finishes with `check:deploy` and the conformance suite against staging, and stops at the first error.
 
 > First add npm scripts for the sign-in server, matching the connector's from Chapter 17: `secrets:auth:staging`, `secrets:auth:production`, `deploy:auth:staging` and `deploy:auth`, and `migrate:auth:staging` and `migrate:auth:production`. Add a root `check:deploy` that checks both `wrangler.jsonc` files against F8's rules, then dry-runs (rehearses without uploading) both Workers in both environments.
 >
@@ -619,9 +619,9 @@ Then, in a fresh session:
 
 **By you:** in your own terminal, set `AP_TS_STAGING_URL` to the staging connector's address (an address, not a secret). On a Mac (zsh): `export AP_TS_STAGING_URL=https://brightline-ap-ts-staging.<your-subdomain>.workers.dev/mcp`. On Windows (PowerShell): `$env:AP_TS_STAGING_URL = "https://brightline-ap-ts-staging.<your-subdomain>.workers.dev/mcp"`. Then start Claude Code from that terminal with `claude`. In that session, type `/mcp`, choose `apts-staging`, sign in as Ana with her staging password from `.secrets/test-users.staging.env`, and ask A1.
 
-**What good looks like:** every command named staging, except creating the production database ([F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server) step 3), making keys and the dry run. `check:deploy` passes, which means the test-only key is not switched on anywhere. `conformance:staging` ends `0 failed`. The authors' build keeps the sign-in matrix in `scripts/matrix.ts`, which runs on your computer. If your agent's build also runs it against staging, it must end `0 failed` too. A1's answer matches Task 13.
+**What good looks like:** every command named staging, except creating the production database ([F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server) step 3), making keys and the dry run. `check:deploy` passes, which means the test-only key is not switched on anywhere. `conformance:staging` ends `0 failed`. The authors' build keeps the sign-in matrix in `scripts/matrix.ts`, which runs on your computer. If your agent's build also runs it against staging, it must end `0 failed` too. A1's answer matches Task 13.
 
-- If sign-in fails online with Error 1102 every time, record it and treat the online sign-in as blocked by the free plan. It counts as done for this lab ([F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). `conformance:staging` then runs without the browser sign-in rows: record that.
+- If sign-in fails online with Error 1102 every time, record it and treat the online sign-in as blocked by the free plan. It counts as done for this lab ([F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). `conformance:staging` then runs without the browser sign-in rows: record that.
 - If the deploy refuses the Rate Limiting binding, follow Task 9b's fallback.
 - The "staging token at production" row runs in Task 19, an extension. If you skip Task 19, the local "token made for another connector" row covers the same idea.
 
@@ -645,7 +645,7 @@ Then ask the agent to push the branch `auth` and open a pull request from it wit
 
 Then, to OpenCode: "Run `npm run conformance:production` and show me the summary. Then send a staging token to production and show me the status."
 
-**What good looks like:** the workflow run is green. Production's suite ends `0 failed`. The staging token gets `401`. The CI client's attempt to get a Brightline or Cedar Ridge token is refused. The CI client's decoded token shows `tenant: org_conformance` and the production connector's address as `aud`. If it is not a JWT at all, the request left out `resource` ([F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)).
+**What good looks like:** the workflow run is green. Production's suite ends `0 failed`. The staging token gets `401`. The CI client's attempt to get a Brightline or Cedar Ridge token is refused. The CI client's decoded token shows `tenant: org_conformance` and the production connector's address as `aud`. If it is not a JWT at all, the request left out `resource` ([F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)).
 
 **Check it now.** Download [Task 19's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch18-key-task-19.md).
 
@@ -663,7 +663,7 @@ If you skipped Task 19, first ask the agent to push the branch `auth` and open a
 
 ## Apply it to your vertical (optional)
 
-Take your own connector from Chapter 17's optional task. Write its `auth-spec.md` with the person who owns its data: its companies, roles, scopes and refusals. Then ask a coding agent to put this chapter's sign-in in front of it, and run [18.13](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/proving-the-sign-in-keeps-companies-apart/)'s matrix against it, with one planted bug.
+Take your own connector from Chapter 17's optional task. Write its `auth-spec.md` with the person who owns its data: its companies, roles, scopes and refusals. Then ask a coding agent to put this chapter's sign-in in front of it, and run [18.13](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/proving-the-sign-in-keeps-companies-apart/)'s matrix against it, with one planted bug.
 
 ## If something goes wrong
 
@@ -671,13 +671,13 @@ Take your own connector from Chapter 17's optional task. Write its `auth-spec.md
 | --- | --- | --- |
 | Every request gets 401, even right after sign-in | The token's `aud` is not the connector's exact address: a trailing slash, `localhost` against `127.0.0.1`, or `http` against `https` | Ask the agent to show the token's claims and compare `aud` with `AP_RESOURCE` character by character |
 | 401 with "unknown key" | The connector kept old public keys, or reads them from the wrong sign-in server, or a token sealed with a brand-new key arrived within 30 seconds of its last fetch | Wait 30 seconds and try again. Then restart the connector. Check `AP_ISSUER` and the service binding |
-| The AI app cannot find where to sign in | No link in the 401, or the connector's document names the wrong sign-in server | Fetch both documents as in Task 1 and compare with [F4](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) |
-| The sign-in page says the app is not allowed | The app's document host is not on the allowlist | Decide: add the host in a reviewed change, or pre-register ([F5](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f5-claude-code) to [F7](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f7-opencode-version-2)) |
+| The AI app cannot find where to sign in | No link in the 401, or the connector's document names the wrong sign-in server | Fetch both documents as in Task 1 and compare with [F4](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f4-the-sign-in-in-detail) |
+| The sign-in page says the app is not allowed | The app's document host is not on the allowlist | Decide: add the host in a reviewed change, or pre-register ([F5](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f5-claude-code) to [F7](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f7-opencode-version-2)) |
 | The consent screen lists no company | The person has no membership | Check the `member` rows read-only, and use `tenant:add` |
-| A Cedar Ridge person sees Brightline data | Stop. A rule in [18.11](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/) or [18.12](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/) is broken | Run the sign-in matrix and do not deploy until it passes |
+| A Cedar Ridge person sees Brightline data | Stop. A rule in [18.11](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/) or [18.12](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/) is broken | Run the sign-in matrix and do not deploy until it passes |
 | The sign-in page shows `invalid_redirect` | The return address the app sent differs from the one listed: `localhost` against `127.0.0.1`, a trailing slash, or an extra `?` part. Only the port may differ | Ask the agent to show the client's listed return address, and run `client:add` again with the exact address the app sends |
 | Choosing *Allow* on the consent page does nothing | The page's `Content-Security-Policy` has `form-action 'self'`. A browser applies it to the go-elsewhere reply that follows the form, so the trip back to the app is blocked. Scripted tests never see this | Ask the agent to add `http://127.0.0.1:*`, `http://localhost:*` and `https:` to `form-action` |
-| Error 1102 during sign-in online | Password hashing took more processor time than the free plan allows | Record it in `ports/ch18.md`, next to the authors' local measure of about 80 ms ([F8](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). It is a known open question for this lab |
+| Error 1102 during sign-in online | Password hashing took more processor time than the free plan allows | Record it in `ports/ch18.md`, next to the authors' local measure of about 80 ms ([F8](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f8-deploying-the-sign-in-server)). It is a known open question for this lab |
 | A script that prints a JSON report gives output that will not parse | The connector's audit lines also go to standard output | Ask the agent to silence the audit lines in that script only |
 | A secret appears in an agent's output | The agent read a secrets file | Stop the session. Ask an agent to delete that file without reading it, and run `npm run keys` to make a new one. It never overwrites a file that exists. Then send the new one again to each environment |
 
@@ -690,7 +690,7 @@ These notes are not part of the lab. CCDV-F asks about Claude's behavior. This c
 - [ ] `docs/auth-spec.md`, written with the AP analyst
 - [ ] `servers/auth/`: the sign-in server on D1, with migrations, sign-in and consent pages, the fetcher and its allowlist, and its tests
 - [ ] `servers/ap-ts/` and `py/brightline_ap/` checking tokens, with no shared key anywhere
-- [ ] The seven rules in [18.11](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/) and [18.12](https://agentfactory2.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/), each with a test, in both versions
+- [ ] The seven rules in [18.11](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/one-order-slip-per-request/) and [18.12](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/what-else-carries-the-company/), each with a test, in both versions
 - [ ] The sign-in matrix, in `scripts/conformance.ts` or a script beside it, and the planted-bug results in `ports/ch18.md`
 - [ ] `scripts/tenant-add.ts`, `tenant-member.ts`, `tenant-remove.ts`, `client-add.ts` and `client-ci.ts`
 - [ ] Plugin v0.3.0, `.mcp.json`, `.codex/config.toml` and `opencode.jsonc`, with no key

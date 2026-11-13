@@ -2,7 +2,7 @@
 
 Chapter 10 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented. Tax IDs start with zeros so they can never be real, and phone numbers use the 555-01xx range kept for fiction.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 10: yes, on these terms](https://agentfactory2.panaversity.org/managing-ai-workers/governance-and-responsible-use/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 10: yes, on these terms](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |

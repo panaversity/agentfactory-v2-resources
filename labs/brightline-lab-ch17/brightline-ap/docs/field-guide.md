@@ -1,8 +1,8 @@
 # Field guide: connectors, product by product
 
-Chapter 17 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Field guide: connectors, product by product](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/), so you can do the lab without the book.
+Chapter 17 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Field guide: connectors, product by product](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/), so you can do the lab without the book.
 
-The exact commands and settings that Concept [17.11](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/) summarizes and [Lab 17](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) uses, and, in [F8](#f8-the-protocol-in-detail), the protocol's exact names and rules. Checked on each owner's own pages on November 1, 2026, and run by the authors where marked **ran**. If a step does not match what you see, check the linked page and note the difference in `ports/ch17.md`. **Who runs these commands:** a coding agent, in a Local session in Manual mode, as [Chapter 12](https://agentfactory2.panaversity.org/building-ai-workers/agentic-coding/overview/) taught, and you approve each one after reading it. The few steps only you can do are marked **by you**: making accounts, approving a sign-in in your browser, creating the deploy token, setting the key your AI apps read in a terminal ([F0](#f0-keys-on-your-computer)), and deciding when to merge and when to deploy production.
+The exact commands and settings that Concept [17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/) summarizes and [Lab 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) uses, and, in [F8](#f8-the-protocol-in-detail), the protocol's exact names and rules. Checked on each owner's own pages on November 1, 2026, and run by the authors where marked **ran**. If a step does not match what you see, check the linked page and note the difference in `ports/ch17.md`. **Who runs these commands:** a coding agent, in a Local session in Manual mode, as [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/) taught, and you approve each one after reading it. The few steps only you can do are marked **by you**: making accounts, approving a sign-in in your browser, creating the deploy token, setting the key your AI apps read in a terminal ([F0](#f0-keys-on-your-computer)), and deciding when to merge and when to deploy production.
 
 **What is in it.**
 
@@ -67,7 +67,7 @@ The key is now in that AI app's environment too, so the app could print it. `AGE
 
 ### F1. Cloudflare from zero, and running the servers on your computer
 
-This section assumes you have never used Cloudflare, or even heard of it. Three words first: **CPU time** is the time a computer spends calculating, as opposed to waiting. **Telemetry traces** are timed records of each step a request took ([17.10](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/)). An **isolate** is explained under "The words you will meet" below. You need no account until Sitting 4. Everything before Sitting 4 runs on your computer. Checked November 2, 2026.
+This section assumes you have never used Cloudflare, or even heard of it. Three words first: **CPU time** is the time a computer spends calculating, as opposed to waiting. **Telemetry traces** are timed records of each step a request took ([17.10](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/)). An **isolate** is explained under "The words you will meet" below. You need no account until Sitting 4. Everything before Sitting 4 runs on your computer. Checked November 2, 2026.
 
 #### Meet Cloudflare
 
@@ -90,11 +90,11 @@ What this means for you: much of that agent traffic is AI apps calling tools, wh
 Four reasons, all about the lab:
 
 1. **It costs nothing to learn on.** The free plan below is enough for this book, so nobody pays to finish the lab.
-2. **It matches a stateless server.** A Worker keeps nothing between requests (below), which is the rule of [17.4](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/stateless-servers/), so the platform enforces what the chapter teaches.
+2. **It matches a stateless server.** A Worker keeps nothing between requests (below), which is the rule of [17.4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/stateless-servers/), so the platform enforces what the chapter teaches.
 3. **There is no server to look after.** No machine to rent, update or restart. You upload the code, and Cloudflare runs it in every city of its network.
 4. **A coding agent can do all of it.** One command puts the server online, one sends its keys, and one checks it. So the agent runs each step and you approve it ([F6](#f6-deploying-to-cloudflare-workers)).
 
-The principle in [17.8](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/) names no platform. Any service that runs a stateless web program would do, and [F6](#f6-deploying-to-cloudflare-workers) says when a server should move to a container platform instead.
+The principle in [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/) names no platform. Any service that runs a stateless web program would do, and [F6](#f6-deploying-to-cloudflare-workers) says when a server should move to a container platform instead.
 
 #### The free plan, in plain words
 
@@ -122,7 +122,7 @@ From Cloudflare's limits[^cloudflare-limits] and pricing pages,[^cloudflare-pric
 
 - Cloudflare is the company above. Its Workers service runs small programs for you at web addresses.
 - The **dashboard** is Cloudflare's website for your account, at `dash.cloudflare.com`. You use it for the few steps only a person can do: making the account, choosing your subdomain, and making a deploy token. Everything else, a coding agent does from the command line.
-- A Worker is one such program. You upload it, Cloudflare gives it an address, and whenever a request arrives, it runs your code on the machine nearest the caller, in a light sandbox called an **isolate** that starts very quickly and may be thrown away at any time.[^cloudflare-how-workers-works] So a Worker must never rely on anything kept in memory, which is exactly the stateless rule of [17.4](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/stateless-servers/).
+- A Worker is one such program. You upload it, Cloudflare gives it an address, and whenever a request arrives, it runs your code on the machine nearest the caller, in a light sandbox called an **isolate** that starts very quickly and may be thrown away at any time.[^cloudflare-how-workers-works] So a Worker must never rely on anything kept in memory, which is exactly the stateless rule of [17.4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/stateless-servers/).
 - **Wrangler** is Cloudflare's command-line tool. In this repository it is a development package of `servers/ap-ts`, installed by `npm ci`, so you run it as `npx wrangler ...` from `servers/ap-ts`, or through the npm scripts. `wrangler dev` runs the Worker on your computer in a local copy of Cloudflare's runtime, with no account. `wrangler deploy` uploads it to Cloudflare, which needs an account ([F6](#f6-deploying-to-cloudflare-workers)).
 - **`wrangler.jsonc`** is the Worker's configuration file, in JSON with comments. The fields Brightline uses:
 
@@ -324,7 +324,7 @@ About 50 minutes. Step 3 is lab Task 18a, which also tests two copies on your co
    `env.ASSETS` is the uploaded data files ([F1](#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer)). Wrangler's count includes the folders: the eight files are the ones that matter. The keys are not listed, because they are sent separately in step 5.
 4. **Put staging online.** Ask the agent to run `npm run deploy:staging`. *You should see:* the same lines as step 3, without the last one, then lines saying the Worker was uploaded and deployed, its address, `https://brightline-ap-ts-staging.<your-subdomain>.workers.dev`, and a version ID. The exact wording can differ from one Wrangler release to the next. If the deploy stops and asks you to register a `workers.dev` subdomain, do the end of step 1, then deploy again. Until step 5, every request to the new address gets **503, "Server not configured"**. That is on purpose: the server refuses to run without its keys.
 5. **Send staging its keys.** Ask the agent to run `npm run secrets:staging`. It sends the two keys from `.secrets/staging.env`, made in step 3, and never shows them. *You should see:* two lines such as `Successfully created secret for key: AP_MCP_TOKEN`, one for each key, then `2 secrets successfully created`. No key value appears. If one does, see the troubleshooting row "An agent shows a key in the chat". Then ask the agent to run `npx wrangler versions list --env staging`. The newest version, at the bottom, has the Source `Secret Change`. Its ID is the version ID of the keys. Each change to a Worker, including its secrets, makes a new version of it, and this one goes live at once, so the 503 ends.
-6. **Check staging.** Ask the agent to save the address with one shell command, from the top folder: `printf 'CONFORMANCE_URLS=ts=%s/mcp\n' <address> > .secrets/staging.urls.env`, with `<address>` replaced by the staging address from step 4, exactly as printed. Ask it to show you the command it ran, with the address in it. It should not open the file afterwards. The command adds `/mcp` itself, so the saved address must end in `.workers.dev/mcp`. On Windows, ask the agent to write the same line with `Set-Content -Encoding ascii`, or to run the command in Git Bash. This file holds only an address, not a key, so the agent may write it. Approve the command only if it writes to a file ending in `.urls.env`. Then ask it to run `npm run conformance:staging` from the top folder. The conformance suite runs the acceptance checks from [17.6](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/) against the address, plus the refusals from [17.8](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/). *You should see* a last line that ends in `0 failed`, such as `conformance: 24 checks passed, 0 failed`. The number depends on the suite your agent wrote. It should be smaller than your local run's, because a deployed run checks one server at one address. If it matches your local run's number, the suite tested the servers on your computer, not the deployed one, because the address file was not read. Save it again. If the suite stops with "cannot reach", see the troubleshooting table.
+6. **Check staging.** Ask the agent to save the address with one shell command, from the top folder: `printf 'CONFORMANCE_URLS=ts=%s/mcp\n' <address> > .secrets/staging.urls.env`, with `<address>` replaced by the staging address from step 4, exactly as printed. Ask it to show you the command it ran, with the address in it. It should not open the file afterwards. The command adds `/mcp` itself, so the saved address must end in `.workers.dev/mcp`. On Windows, ask the agent to write the same line with `Set-Content -Encoding ascii`, or to run the command in Git Bash. This file holds only an address, not a key, so the agent may write it. Approve the command only if it writes to a file ending in `.urls.env`. Then ask it to run `npm run conformance:staging` from the top folder. The conformance suite runs the acceptance checks from [17.6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/) against the address, plus the refusals from [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/). *You should see* a last line that ends in `0 failed`, such as `conformance: 24 checks passed, 0 failed`. The number depends on the suite your agent wrote. It should be smaller than your local run's, because a deployed run checks one server at one address. If it matches your local run's number, the suite tested the servers on your computer, not the deployed one, because the address file was not read. Save it again. If the suite stops with "cannot reach", see the troubleshooting table.
 7. **Only then, production.** Ask the agent to run `npm run deploy` in `servers/ap-ts` (the `--env=""` inside it means production). *You should see* the same lines as step 4, with the production address: the staging one without `-staging`, such as `https://brightline-ap-ts.<your-subdomain>.workers.dev`. Then ask it to run `npm run secrets:production`, which prints the same lines as step 5, and `npx wrangler versions list --env=""` for the keys' version ID, the newest `Secret Change`. Ask the agent to save the production address, as printed, into `.secrets/production.urls.env` with the step 6 command, which adds `/mcp` itself. Then run `npm run conformance:production` from the top folder. *You should see:* `0 failed`.
 8. **Prove the keys are separate.** Ask the agent to run this from the top folder, twice. It sends one request with the staging key and prints only the status code, never the key:
 
@@ -345,7 +345,7 @@ If you do Task 18c, changes reach staging through CI from then on, not from your
 [^cloudflare-get-started]
 
 1. **By you.** Go to `dash.cloudflare.com/sign-up/workers-and-pages` and sign up with an email address and a password. Follow the steps the page shows. The pricing page did not say whether the free plan asks for a payment card, so note in `ports/ch17.md` whether it did.
-2. Ask your coding agent to run `npx wrangler login` in `servers/ap-ts`. Wrangler opens your browser at Cloudflare's sign-in page. Check the address is Cloudflare's, sign in, and allow Wrangler access to your account. Wrangler then keeps its own login on your computer, so you do this once. This is not the sign-in token of [17.8](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/).
+2. Ask your coding agent to run `npx wrangler login` in `servers/ap-ts`. Wrangler opens your browser at Cloudflare's sign-in page. Check the address is Cloudflare's, sign in, and allow Wrangler access to your account. Wrangler then keeps its own login on your computer, so you do this once. This is not the sign-in token of [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/).
 3. Ask the agent to run `npx wrangler whoami`, which shows which email address Wrangler is signed in with.
 4. **Your account ID**, needed for CI: `npx wrangler whoami` shows it, or in the dashboard (`dash.cloudflare.com`), open *Workers & Pages*, find *Account Details*, and copy *Account ID*.[^cloudflare-account-ids]
 5. **Your `workers.dev` subdomain.** Choose it in the dashboard before your first deploy, as "Your first deploy, in order" step 1 shows. Wrangler would ask during the deploy, but a coding agent cannot answer. You can see or change it in *Workers & Pages*, next to *Your subdomain*.
@@ -429,7 +429,7 @@ The official TypeScript SDK exports one from `@modelcontextprotocol/server`, whi
 
 #### An address under your own name (optional)
 
-Skip this unless your company owns a domain name. A `workers.dev` address belongs to Cloudflare's name. If the connector might ever move to another service, give it an address under your company's own name from the start, such as `ap.brightline.example`, so no AI app's settings need to change later ([17.8](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/)). This needs a domain name your company owns, set up in Cloudflare as an active zone (Cloudflare's word for a domain it manages). The lab does not need one.
+Skip this unless your company owns a domain name. A `workers.dev` address belongs to Cloudflare's name. If the connector might ever move to another service, give it an address under your company's own name from the start, such as `ap.brightline.example`, so no AI app's settings need to change later ([17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/)). This needs a domain name your company owns, set up in Cloudflare as an active zone (Cloudflare's word for a domain it manages). The lab does not need one.
 
 - In the dashboard: *Workers & Pages*, select the Worker, then *Settings*, *Domains & Routes*, *Add*, *Custom Domain*. Enter the name and select *Add Custom Domain*.
 - Or in `wrangler.jsonc`, then deploy again: `"routes": [{ "pattern": "ap.brightline.example", "custom_domain": true }]`.
@@ -462,7 +462,7 @@ These commands print each span as text on your screen, so you need no viewer and
 
 ### F8. The protocol in detail
 
-Concepts [17.1](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/) to [17.10](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/) teach the ideas. This section holds the exact names and rules behind them, from the MCP specification, revision 2026-07-28,[^mcp-spec] and from OpenTelemetry. Use it when a lab task or an error message names one of them.
+Concepts [17.1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/) to [17.10](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/) teach the ideas. This section holds the exact names and rules behind them, from the MCP specification, revision 2026-07-28,[^mcp-spec] and from OpenTelemetry. Use it when a lab task or an error message names one of them.
 
 #### HTTP in one minute
 
@@ -487,7 +487,7 @@ Brightline's servers use **Streamable HTTP**: one **endpoint** (an address endin
 
 #### The messages behind steps 1 and 3
 
-These are the messages behind steps 1 and 3 of [17.1](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/).
+These are the messages behind steps 1 and 3 of [17.1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/).
 
 | Step | Method | What comes back |
 | --- | --- | --- |
@@ -535,7 +535,7 @@ A **notification** is a message that needs no answer, such as "my tool list chan
 
 #### Comparing two servers
 
-As [17.6](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/) says, the conformance suite normalizes schema spellings that change nothing for a client, each rule with a comment. Brightline's first run found four kinds:
+As [17.6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/) says, the conformance suite normalizes schema spellings that change nothing for a client, each rule with a comment. Brightline's first run found four kinds:
 
 1. The Python schemas use `$defs` and `$ref`. The TypeScript schemas write the same object inline.
 2. A field that may be empty is written `anyOf [X, null]` in Python and `"type": [X, "null"]` in TypeScript.
@@ -546,11 +546,11 @@ Smaller rules (titles, `$schema`, `"default": null`, `additionalProperties`) are
 
 #### What the specification asks about safety
 
-This adds to [17.7](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/untrusted-output/). Servers must validate every input, control access, rate-limit calls and sanitize what they return. Clients should confirm sensitive operations, show a call's inputs before running it, validate results before passing them to the model, set timeouts and log tool use. A person should be able to deny any call. Tools represent running arbitrary code, and annotations such as `readOnlyHint` should be treated as untrusted unless they come from a trusted server.
+This adds to [17.7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/untrusted-output/). Servers must validate every input, control access, rate-limit calls and sanitize what they return. Clients should confirm sensitive operations, show a call's inputs before running it, validate results before passing them to the model, set timeouts and log tool use. A person should be able to deny any call. Tools represent running arbitrary code, and annotations such as `readOnlyHint` should be treated as untrusted unless they come from a trusted server.
 
 #### The transport's security rules
 
-These are the rules behind [17.8](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/).
+These are the rules behind [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/).
 
 - **Check `Origin` on every request.** Reject a present `Origin` that is not allowed with HTTP 403. Judge a request with no `Origin` by its key alone. This stops **DNS rebinding**. DNS is the internet's address book: it turns a name such as `example.com` into an address. In DNS rebinding, a malicious site points its own name at the visitor's network, so a page they opened can reach a server on their computer. The `Origin` header still names the malicious site.
 - **Bind to `127.0.0.1` on your own computer.** A server listens on an address. `127.0.0.1`, the **loopback** address, is reachable only from that computer. Listening on every **network interface** (Wi-Fi and cable too) lets anyone on the network call it.
@@ -560,7 +560,7 @@ These are the rules behind [17.8](https://agentfactory2.panaversity.org/building
 
 #### Real sign-in with OAuth
 
-This looks ahead from [17.8](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/). Chapter 18 builds it. MCP uses **OAuth 2.1**. The person signs in at a trusted service and gives **consent**. The AI app gets an **access token** that names the person, the server it is for, what it allows (its scopes, such as `ap:read`) and when it expires. The service that issued it is the **issuer**. In revision 2026-07-28:
+This looks ahead from [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/). Chapter 18 builds it. MCP uses **OAuth 2.1**. The person signs in at a trusted service and gives **consent**. The AI app gets an **access token** that names the person, the server it is for, what it allows (its scopes, such as `ap:read`) and when it expires. The service that issued it is the **issuer**. In revision 2026-07-28:
 
 - The MCP server is a **resource server**. It must publish **protected resource metadata** (RFC 9728) naming its **authorization server**. A refused request's 401 points to that document.
 - A client preferably identifies itself with a **Client ID Metadata Document**: a web address serving a document about the client, so nobody registers clients by hand.
@@ -570,7 +570,7 @@ This looks ahead from [17.8](https://agentfactory2.panaversity.org/building-ai-w
 
 #### Telemetry names
 
-These are the agreed names [17.10](https://agentfactory2.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/) mentions. OpenTelemetry's **semantic conventions** for MCP are at Development status on November 1, 2026, so names may change.[^otel-mcp]
+These are the agreed names [17.10](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/) mentions. OpenTelemetry's **semantic conventions** for MCP are at Development status on November 1, 2026, so names may change.[^otel-mcp]
 
 - A tool call's span is named `{mcp.method.name} {target}`, such as `tools/call find_vendor`. Its **kind** is SERVER on the server and CLIENT in the AI app.
 - Attributes: `mcp.method.name` (required), `gen_ai.tool.name`, `gen_ai.operation.name` set to `execute_tool`, `mcp.protocol.version`, and `error.type` when the call fails. Arguments and results are opt-in, because they can hold private data.

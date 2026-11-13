@@ -2,7 +2,7 @@
 
 Chapter 11 of *The AI Agent Factory*, Second Edition. Every name, address, invoice and figure here is invented.
 
-**Start with `LAB.md`.** It is the book's page for this lab, [Lab 11: where each failure lives](https://agentfactory2.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/lab/), as a file, so you can do the lab without the book.
+**Start with `LAB.md`.** It is the book's page for this lab, [Lab 11: where each failure lives](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/lab/), as a file, so you can do the lab without the book.
 
 | Path | What it is |
 | --- | --- |
