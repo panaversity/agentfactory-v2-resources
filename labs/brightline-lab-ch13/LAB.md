@@ -167,7 +167,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
    > Please bring the other language's version up to the same rule. Write the same six tests there, with my answers exactly as they are in my tests, and commit them alone first. Then write the function and make that language's script for Friday's list use it. Do not change anything in my language. Then run the tests and the type checker in both languages, and Friday's list for 2027-03-05 in both languages.
 
-2. Read the two last lines of Friday's list, one from each language.
+2. Compare the last line of Friday's list in the two languages.
 3. Send: "Please show me my six cases in a table, with the result of each in both languages. Then commit, with the message "The same rule in the other language"."
 
 **Checkpoint:** the same six cases pass in both languages. Friday's list prints 8 invoices, total $19,229.53, in both.
@@ -208,7 +208,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
    > Please write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: the five terms, and what happens to any other. Put the handover in NOTES.md: where the due-date rule lives in each language, and that the weekend rule is on the branch weekend-rule, not reviewed yet, and not on main. Take out of "Nobody chose these yet" what I decided today. Say each thing once. Show me the diff before you commit.
 
-2. Read the diff. Each decision should be there once, in plain words, with nothing you did not decide.
+2. Read the diff. Each rule should be there once, in plain words. If the agent added a rule you did not decide, ask it to take that rule out before you commit. A plain fact about where things stand is fine.
 3. Send: "Please commit, with the message "Today's rules, written down", and tag the commit ch13."
 4. Open a new session in the same folder. Send:
 

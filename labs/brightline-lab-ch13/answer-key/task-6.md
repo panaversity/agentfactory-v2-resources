@@ -16,7 +16,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 | 28 | My four answers | They match the table below. Read them from the tests, or ask me | Any answer differs |
 | 29 | Tests first, and unchanged | On `weekend-rule`, the weekend tests were committed before the rule, and they have not changed since | The tests changed after their commit |
 | 30 | The branch passes | On `weekend-rule`, every test passes and the type checker is clean | A test fails |
-| 31 | Friday's list on the branch | Find the last line in the table "Find your total" | |
+| 31 | Friday's list on the branch | On `weekend-rule`, it ends with `10 invoices, total $33,109.53` | Any other last line. The table "Find your total" says what each one means |
 | 32 | Friday's list on main | On `main`, it still ends with `8 invoices, total $19,229.53`, and `main` has no weekend commit | The weekend rule is on `main` |
 
 ## The four answers

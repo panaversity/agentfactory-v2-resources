@@ -14,7 +14,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 | --- | --- | --- | --- |
 | 33 | The terms rule is in the rules file | On `main`, `AGENTS.md` names the five terms, and says that any other stops the run | The rule is missing, or it is only in `NOTES.md` |
 | 34 | The handover | On `main`, `NOTES.md` says where the due-date rule lives in each language. It says the weekend rule is on the branch `weekend-rule`, is not reviewed yet, and is not on `main` | Either part is missing |
-| 35 | Said once | Each of today's decisions appears once in `AGENTS.md` or `NOTES.md`, and nothing was added that I did not decide. Ask me about any added line you are not sure of | One of today's decisions is stated twice in one file, or a line was added that I never decided |
+| 35 | Said once | Each of today's rules appears once in `AGENTS.md` or `NOTES.md`, and no rule was added that I did not decide. Ask me about any added rule you are not sure of | One of today's rules is stated twice in one file, or a rule was added that I never decided |
 | 36 | The tag | `git tag` lists `ch13`, on a commit of `main` | There is no tag, or it is on the branch |
 | 37 | The new session, on Net 10 | You, the new session, answered that the run stops with `Unknown terms: Net 10`, and named a file of this project for it | The answer was a guess, or named no file |
 | 38 | The new session, on Saturday | You answered that an invoice due on a Saturday is not on this Friday's list, because the weekend rule is on the branch `weekend-rule` and not on `main`, and named the file that says so | The answer was yes, or it did not mention the branch |
@@ -35,5 +35,6 @@ The lab page ends with three Look back points. The three places your choices liv
 
 - The words of a rule, when its meaning is right.
 - A line that was in the file before today.
+- A plain fact about where things stand, such as which language has the weekend rule, or what Friday's list prints on the branch. A fact is not a rule.
 - A sentence that only says one of my decisions again in other words.
 - Which project file the new session names, when that file does say it.
