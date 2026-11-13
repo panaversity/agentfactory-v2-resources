@@ -38,4 +38,5 @@ Every change needs a passing test, and a clean type check.
 
 - TypeScript scripts in `src/`, one script per file. Their tests in `tests/`, named `<script>.test.ts`.
 - Python scripts in `py/brightline_ap/`. Their tests in `py/tests/`, named `test_<script>.py`.
+- A rule that more than one script needs lives in its own file, named for the rule. The due-date rule, for example, would be `dueDate` in `src/due-date.ts`, and `due_date` in `py/brightline_ap/due_date.py`.
 - `NOTES.md` is the handover for the next session. `ports/` records what changed on each agent.
