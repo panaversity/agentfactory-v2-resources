@@ -12,7 +12,7 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 
 | # | Check | Passed when | Missed when |
 | --- | --- | --- | --- |
-| 1 | The project is under git | `git log` on `main` shows a first commit with the message "Start from the end of Lab 12" | There is no git history, or the branch is not `main` |
+| 1 | The project is under git | `git log` on `main` shows a first commit with the message "The project as I received it" | There is no git history, or the branch is not `main` |
 | 2 | The tests and the type checker pass | Both pass for my language: `npm test` and `npm run typecheck` in TypeScript, or `npm run test:py` and `npm run check:py` in Python | Either one fails, or was not run |
 | 3 | Friday's list | `npm run due -- 2027-03-05`, or `npm run due:py -- 2027-03-05`, ends with `8 invoices, total $19,229.53` | Any other count or total |
 | 4 | The three predictions (unscored) | Ask me what I predicted for INV-8305, INV-8303 and INV-8309 before the run. A wrong prediction is not a miss | I made no prediction before the run |
