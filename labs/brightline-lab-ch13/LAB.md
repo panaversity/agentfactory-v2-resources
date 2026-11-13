@@ -2,70 +2,21 @@
 
 Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 13: choices that last](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/), so you can do the lab without the book.
 
-*Time: about 2 hours 15 minutes, with the checks. Lab files: `brightline-lab-ch13.zip`. The same steps are in `LAB.md` inside the zip.*
+*Time: about 2 hours 15 minutes, with the checks.*
 
-You take over the choices inside a script an agent wrote. You find its rules, decide the cases, let the agent write the code, and write the rules down so they last. You work in the language you chose for the lessons, with one coding agent.
+An agent wrote the script that makes Brightline's Friday payment list. You find the choices it made, decide them yourself, and write them down so they last.
 
 ### Before you start
 
-*What you need.*
-
-- Your coding agent: Claude Code in the Claude desktop app, Codex in the ChatGPT desktop app, or OpenCode Desktop, set up as in [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/).
-- Git, Node.js 24 or later, and uv. If one is missing, follow [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) first.
-
-*The lab files.* Download [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) and unzip it into a new folder. It holds:
-
-- `brightline-ap/`, Brightline's project as Lab 12 left it. It is the only folder you open in an agent. The script that makes Friday's list is there in TypeScript and in Python.
-- `LAB.md`, a copy of these steps, and `README.md`, a list of the files.
-- `field-guide-code-toolchain.md`, with the install steps for the tools, and a table for fixing problems.
-
-Use the zip's copy, even if you finished Lab 12 in your own folder. The answer keys match the zip's files exactly.
-
-### The job
-
-- You work in accounts payable (AP) at Brightline, with Ana Morales.
-- Today is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
-- In [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/), an agent wrote the script that makes Friday's list. It prints 8 invoices, $19,229.53, and that matched Ana's note.
-- Dave Kowalski, the controller, signs the payment run on Thursday. Each task starts with what he asks you.
-
-### What you will learn
-
-- Find the choices inside code an agent wrote, and say each one as a sentence ([13.4](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/decisions-and-repetition/), [13.10](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/judgment/)).
-- Decide the cases and their answers before the agent writes any code, and check its tests against them ([13.9](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/tests-first/)).
-- Say what a run will print before it runs ([13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/)), and check a change with the tests and the type checker ([13.2](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/the-workbench/)).
-- Read an error, and name its cause before you ask for a fix ([13.8](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/reading-an-error/)).
-- Put a decision where the next session will read it ([12.4](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/rules-the-agent-reads/)).
+- **You need** one coding agent (Claude Code, Codex or OpenCode), and Git, Node.js 24 or later, and uv. [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) has the install steps.
+- **Download** [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) and unzip it. Open only its `brightline-ap` folder in your agent, in the mode that asks before it acts: *Manual* in Claude Code, *Ask for approval* in Codex. In OpenCode, the folder's own settings make it ask.
+- **The job.** You work in accounts payable at Brightline. Today is Wednesday, March 3, 2027, and the payment run is Friday, March 5, 2027. The script prints Friday's list: 8 invoices, $19,229.53. Dave Kowalski, the controller, signs the run, and each task starts with what he asks you.
 
 ### How each task works
 
-The whole lab runs in one session of your agent, except Task 7, which opens a new one. Work in the mode that asks before it acts: *Manual* in Claude Code, *Ask for approval* in Codex. In OpenCode, copy `opencode.jsonc` from your Lab 12 folder into `brightline-ap` before your first message. It makes OpenCode ask before each edit and each command.
-
-Each task has four parts:
-
-1. **Dave asks.** His words carry the facts you could not know yourself.
-2. **You send the message the task prints.** The agent asks you questions, and you answer in a few words. You decide, and the agent types: every test, note and commit is its work, made from your answers.
-3. **You read before you approve.** The agent runs every command, such as git, npm and uv. Before you approve one, read what the agent says it will do. You can always ask "What does this command do?"
-4. **You check the task.** Download the task's answer key with one click, and keep it outside `brightline-ap`. Attach it to your message in the agent, or drag it into the session, and send the check message below. Then read the key yourself. It holds the answers, the common mistakes, and the reason behind each. If a check is Missed, tell the agent what to correct, and send the check message again.
-
-Download a key only when its task is done. An agent that has read the answers is not tested by them. If you have to stop for the day, finish the task you are on, and its check, first.
-
-#### The check message
-
-Send this with each task's key. It is the same for every task.
-
-```text
-Outcome:     The task I just finished in this project, graded against
-             the attached answer key: Passed or Missed for each check.
-Context:     This project's files and git history, what we did in this
-             session, and the attached key.
-Format:      A table: the check, Passed or Missed, the evidence, and
-             one line on why. The evidence is a command you ran and
-             what it printed, a line of a file, or my own words. Then
-             how many passed.
-Constraints: Grade only. Change no file and fix nothing. With no
-             evidence, mark the check Missed. If a check is about what
-             I did or said, ask me.
-```
+1. Send the message the task prints. The agent asks you questions, and you answer in a few words. You decide, and the agent types.
+2. Read what the agent says it will do before you approve it.
+3. When the task is done, download its answer key and keep it outside `brightline-ap`. Attach it in the agent with [the check message](#the-check-message). Then read the key yourself.
 
 ### Task 1. What rules is it using? (20 minutes)
 
@@ -73,7 +24,7 @@ Constraints: Grade only. Change no file and fix nothing. With no
 
 1. Open `brightline-ap` in your agent.
 2. If you chose Python for the lessons, send: "Please set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do. The agent reads that file at the start of every session, so the messages below work for both languages.
-3. Send: "Please put this folder under git, with a main branch, and commit everything with the message "Start from the end of Lab 12"." Every later change can then be compared with this start. If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
+3. Send: "Please put this folder under git, with a main branch, and commit everything with the message "The project as I received it"." Every later change can then be compared with this start. If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
 4. Send: "Please tell me which packages the lock files would install, for both languages. Install nothing yet." Know what goes on your computer before you say yes. Find the five names the project asks for: `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`. The others are packages those five need.
 5. Send: "Please install them from the lock files. Then run the tests and the type checker for my language."
 6. Before you run the script, say which of these three invoices will be on Friday's list. Write yes or no for each, on paper or in a note.
@@ -218,6 +169,24 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
 **Check it now.** In the new session, download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-7.md), attach it, and send [the check message](#the-check-message).
 
+### The check message
+
+Send this with each task's key, only when that task is done. It is the same for every task. If a check is Missed, tell the agent what to correct, and send the check message again.
+
+```text
+Outcome:     The task I just finished in this project, graded against
+             the attached answer key: Passed or Missed for each check.
+Context:     This project's files and git history, what we did in this
+             session, and the attached key.
+Format:      A table: the check, Passed or Missed, the evidence, and
+             one line on why. The evidence is a command you ran and
+             what it printed, a line of a file, or my own words. Then
+             how many passed.
+Constraints: Grade only. Change no file and fix nothing. With no
+             evidence, mark the check Missed. If a check is about what
+             I did or said, ask me.
+```
+
 ### Look back
 
 - Ask the agent to show you the list "Nobody chose these yet" as it was in your Task 1 commit. Is the weekend on it? A rule that is missing has no line of code to point at. Only someone who knows the business can name it.
@@ -228,7 +197,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
 Each of these is optional, and has no answer key.
 
-- **The same change on a second agent.** Open the folder in Codex or OpenCode, with its safety settings from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/). From your commit of failing weekend tests, on a new branch, send the message from Task 6, step 7. Compare what each agent asked before it acted, and whether either tried to change a test.
+- **The same change on a second agent.** Open the folder in a second agent, Codex or OpenCode, in the mode that asks before it acts. From your commit of failing weekend tests, on a new branch, send the message from Task 6, step 7. Compare what each agent asked before it acted, and whether either tried to change a test.
 - **The weekend rule in the other language.** On `weekend-rule`, send the message from Task 5, step 1, for your four weekend cases.
 - **Check the dates an export states.** Ask for a script that works out each invoice's due date with your rule, and reports every row whose stated due date differs. Decide three cases first. Run it on `data/invoices-check.csv`.
 
