@@ -1,12 +1,17 @@
-import os
+rows = [
+    {"number": "INV-8301", "amount": 482500, "terms": "Net 30"},
+    {"number": "INV-8304", "amount": -23450, "terms": "Net 30"},
+    {"number": "INV-8306", "amount": 158200, "terms": "Net 10"},
+]
 
-import httpx
+errors: list[str] = []
 
-response = httpx.get(
-    "http://localhost:4010/invoices",
-    params={"status": "open", "page": 2},
-    headers={"X-API-Key": os.environ["AP_API_KEY"]},
-)
-print(response.status_code)
-body = response.json()
-print(len(body["invoices"]), body["invoices"][0]["number"])
+for row in rows:
+    if int(row["amount"]) < 0:
+        errors.append(f"{row['number']} amount must be zero or more")
+    if row["terms"] not in ("Net 15", "Net 30"):
+        errors.append(f"{row['number']} terms must be one of the known terms")
+
+for error in errors:
+    print(error)
+print(len(errors), "errors")

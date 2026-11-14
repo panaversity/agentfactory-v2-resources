@@ -94,7 +94,7 @@ An agent split Brightline's scripts into modules and classes. You decide what th
    | INV-8301 with an invoice date of `"2026-13-02"` | Fail |
    | V001 from `data/vendors.csv`, with an empty name | Fail |
 
-   `-23450` must fail because Brightline's export holds no credits, as [14.5](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/errors-as-design/#what-does-refusing-cost) says. In Marcus's export it would be a credit, so decide each rule from what your own data can hold. Copy INV-8301's values from the file yourself. Write your cases in `NOTES.md`, under a heading "Task 4", with any more you want to add.
+   `-23450` must fail because Brightline's export holds no credits, as [14.6](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/errors-as-design/#what-does-refusing-cost) says. In Marcus's export it would be a credit, so decide each rule from what your own data can hold. Copy INV-8301's values from the file yourself. Write your cases in `NOTES.md`, under a heading "Task 4", with any more you want to add.
 2. Send:
 
    > Write failing tests from my cases in `NOTES.md`, under "Task 4", in `tests/schemas.test.ts` and `py/tests/test_schemas.py`. They are for `InvoiceSchema` and `VendorSchema` in `src/schemas.ts`, and `InvoiceModel` and `VendorModel` in `py/brightline_ap/schemas.py`, and none of them exists yet. Use my values exactly. Write only the tests, and don't change any other file.
@@ -105,7 +105,7 @@ An agent split Brightline's scripts into modules and classes. You decide what th
    > Add the package `zod` with npm, and `pydantic` with `uv add` in `py/`, and ask me before each command. Then write the four schemas my tests name, so they pass. Give each rule a short message that says what is allowed. Don't change the tests. Run `npm test` and `npm run test:py` and show me the output.
 
    Before you approve each install, ask the three questions from [14.1](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/modules/#should-i-let-the-agent-add-a-package). Is the name spelled exactly right, is it the well-known package with that name, and is it needed at all?
-4. Read both schema files. Compare each rule with [14.4's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/data-models-and-schemas/#what-is-a-schema), and write one sentence in `NOTES.md` for each line that carries a rule. Then ask the agent to run `git diff -- tests/ py/tests/`. It must print nothing, because no test has changed since your commit.
+4. Read both schema files. Compare each rule with [14.5's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/schema-rules/#what-rules-can-a-schema-hold), and write one sentence in `NOTES.md` for each line that carries a rule. Then ask the agent to run `git diff -- tests/ py/tests/`. It must print nothing, because no test has changed since your commit.
 5. Now try a wrong value your tests never tried. A CSV file gives every amount as text. Predict what each schema does with INV-8301's amount as the text `"4825.0"`, and write it in `NOTES.md`. Then ask the agent to run each schema on it, and to show you the results. Last, write in `NOTES.md` one wrong value your schemas would pass, and what would catch it.
 
 **Checkpoint:** every test passes in both languages, the tests are unchanged, and your prediction for `"4825.0"` and the real results are in `NOTES.md`. Ask the agent to commit, and then to run `git show --stat`. It must list `package-lock.json` and `py/uv.lock`.
@@ -175,7 +175,7 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
    curl -i -H "X-API-Key: <your key>" "http://localhost:4010/invoices?status=open&page=9"
    ```
 
-   On Windows, if the agent uses PowerShell, the command is `curl.exe`, because `curl` there is another command. For each answer, write in `NOTES.md` what a client should do with it, from [14.6's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#what-should-the-client-do-for-each-status-code).
+   On Windows, if the agent uses PowerShell, the command is `curl.exe`, because `curl` there is another command. For each answer, write in `NOTES.md` what a client should do with it, from [14.7's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#what-should-the-client-do-for-each-status-code).
 4. Ask the agent to run `git log -p -S "<your key>" --oneline`, with your key. It must print nothing.
 
 **Checkpoint:** you saw 401, then 503, then 200, then 200 with INV-8306 first, then 400, and your key is in no commit. Leave the API running for Task 8.
@@ -204,7 +204,7 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
    > Now create `src/ap-client.ts` with those three functions, using `fetch`. Give every call a two-second deadline, retry once on a 503, and never retry any other error. Validate every response body with the schemas. Add `npm run fetch-ap`, which reads the key from `.env` and prints the counts and the time. Then add `httpx` with `uv add` in `py/`, and write `py/brightline_ap/api_client.py` the same way with httpx, using `asyncio.timeout` for the deadline. Make my tests pass without changing them.
 
    Before you approve `uv add httpx`, ask the three questions from Task 4. When the tests pass, read the client. Find the lines that decide which errors are retried and how often, the deadline on each call, and where the two calls start together. Write each as a sentence in `NOTES.md`.
-4. Predict in `NOTES.md`: now that your tests pass, will both clients pass against the real API, and how long will each run take? Say why. Then, with the API still running, ask the agent to run `npm run fetch-ap`, and then, in `py/`, `uv run --env-file ../.env python -m brightline_ap.api_client`. If the Python client fails on the first invoice, read the error before you ask for help. Compare the field names in the error with the JSON from Task 7. [14.6](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#why-did-the-tests-pass-and-the-live-run-fail) says what to ask for.
+4. Predict in `NOTES.md`: now that your tests pass, will both clients pass against the real API, and how long will each run take? Say why. Then, with the API still running, ask the agent to run `npm run fetch-ap`, and then, in `py/`, `uv run --env-file ../.env python -m brightline_ap.api_client`. If the Python client fails on the first invoice, read the error before you ask for help. Compare the field names in the error with the JSON from Task 7. [14.7](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#why-did-the-tests-pass-and-the-live-run-fail) says what to ask for.
 5. Ask the agent to stop the API, and then to run `git diff -- tests/ py/tests/`. It must print nothing.
 
 **Checkpoint:** both clients print 8 vendors and 13 open invoices, in about one second. One after the other, the calls would take about 1.5 seconds. Every test passes, and the tests are unchanged. Ask the agent to commit.
@@ -216,9 +216,9 @@ By hand means one call at a time, with `curl`, a tool that sends one request and
 *Goal:* name the shapes in code you did not write and will not write.
 
 1. Open `exercises/sdk-shaped/ap-sdk.ts` and `exercises/sdk-shaped/ap_sdk.py` in a text editor. They have weaknesses put there on purpose.
-2. In `NOTES.md`, list each shape from [14.8's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/reading-sdk-code/#which-shapes-will-i-meet), with the line where each file uses it.
+2. In `NOTES.md`, list each shape from [14.9's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/reading-sdk-code/#which-shapes-will-i-meet), with the line where each file uses it.
 3. Predict which line of `ap_sdk.py` will handle the first `503`, and write it in `NOTES.md`. Then ask the agent to start the API again with `npm run api`, in the background, and to run `uv run --env-file ../.env python ../exercises/sdk-shaped/ap_sdk.py` in `py/`. It prints 8 vendors, though the first call got a `503`. Name the lines that raised that error and called again, and compare them with your prediction. Then ask the agent to stop the API.
-4. Review both files with the questions of [14.8](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/reading-sdk-code/#what-does-it-check-for-me-and-what-does-it-leave-to-me). Does it check each answer? Which errors does it retry, and how often? Does every call have a deadline, and does it close what it opens? Find at least four weaknesses, starting with the retry. What does it do on a `401`? Write in `NOTES.md` what you would ask the SDK's authors to change.
+4. Review both files with the questions of [14.9](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/reading-sdk-code/#what-does-it-check-for-me-and-what-does-it-leave-to-me). Does it check each answer? Which errors does it retry, and how often? Does every call have a deadline, and does it close what it opens? Find at least four weaknesses, starting with the retry. What does it do on a `401`? Write in `NOTES.md` what you would ask the SDK's authors to change.
 
 **Checkpoint:** your labels and your list of weaknesses match the answer key. You can say which line runs when each client's block ends, and what it really does.
 
@@ -317,7 +317,7 @@ If you want Python and not TypeScript, do the Python half of each task and use t
 
 Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
 
-If you cannot use the Claude app at all, do Tasks 1 to 9 and 12 in Codex or OpenCode, in the mode that asks before it acts: *Ask for approval* in Codex, or OpenCode with the zip's `opencode.jsonc` in the folder and auto-accept off. Your port is the agent you did not use. Say which in `ports/ch14.md`. Codex may block `localhost`, so before Task 7, make sure it can reach the sample API, as [14.9](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/both-ai-vendors/) explains.
+If you cannot use the Claude app at all, do Tasks 1 to 9 and 12 in Codex or OpenCode, in the mode that asks before it acts: *Ask for approval* in Codex, or OpenCode with the zip's `opencode.jsonc` in the folder and auto-accept off. Your port is the agent you did not use. Say which in `ports/ch14.md`. Codex may block `localhost`, so before Task 7, make sure it can reach the sample API, as [14.10](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/both-ai-vendors/) explains.
 
 ### Apply it to your vertical
 

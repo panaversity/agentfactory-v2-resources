@@ -68,7 +68,7 @@ class VendorModel(BaseModel):
 
 Pydantic's own messages already say what is allowed, such as `Input should be greater than or equal to 0`, so the Python model needs no messages of its own.
 
-**Compare each rule with Concept 14.4's table.** Every row of the table needs a rule: the `INV-` pattern, a real date for both dates, one of a fixed set for terms and status, a whole number of zero or more, and a due date that may be empty. A schema that passes your tests but has no whole-number rule lets `4825.5` through in TypeScript. The two languages differ on an empty due date: the Zod schema refuses `""`, and the Python model turns `""` into `None`. That is why only the Python tests try `""`.
+**Compare each rule with Concept 14.5's table.** Every row of the table needs a rule: the `INV-` pattern, a real date for both dates, one of a fixed set for terms and status, a whole number of zero or more, and a due date that may be empty. A schema that passes your tests but has no whole-number rule lets `4825.5` through in TypeScript. The two languages differ on an empty due date: the Zod schema refuses `""`, and the Python model turns `""` into `None`. That is why only the Python tests try `""`.
 
 ## One wrong value the schema passes
 

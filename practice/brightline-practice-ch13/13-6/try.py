@@ -1,6 +1,5 @@
-names: dict[str, str] = {"V001": "Midwest Packaging Co.", "V005": "Hocking Valley Pallets"}
-print(names["V005"])
-print(names.get("V099"))
+def add_fee(cents: int) -> int:
+    return cents + 2500
 
-cents: list[int] = [735000, 482500, 61875]
-print(sorted(cents))
+print(add_fee(10000))
+print(add_fee(60000))

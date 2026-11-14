@@ -6,5 +6,4 @@ invoices = [
 
 for inv in invoices:
     if inv[1] == "open":
-        due = inv[2] or "from the terms"
-        print(inv[0] + " " + due)
+        print(inv[0])

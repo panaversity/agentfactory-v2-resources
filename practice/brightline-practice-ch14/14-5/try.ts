@@ -1,21 +1,8 @@
-const rows = [
-  { number: "INV-8301", amount: 482500, terms: "Net 30" },
-  { number: "INV-8304", amount: -23450, terms: "Net 30" },
-  { number: "INV-8306", amount: 158200, terms: "Net 10" },
-];
+import * as z from "zod";
 
-const errors: string[] = [];
+const Amount = z.int("must be whole cents").min(0, "must be zero or more");
 
-for (const row of rows) {
-  if (row.amount < 0) {
-    errors.push(`${row.number} amount must be zero or more`);
-  }
-  if (row.terms !== "Net 15" && row.terms !== "Net 30") {
-    errors.push(`${row.number} terms must be one of the known terms`);
-  }
+for (const value of [482500, -23450]) {
+  const result = Amount.safeParse(value);
+  console.log(value, result.success);
 }
-
-for (const error of errors) {
-  console.log(error);
-}
-console.log(errors.length, "errors");
