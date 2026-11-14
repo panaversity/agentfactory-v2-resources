@@ -2,7 +2,7 @@
 
 Chapter 13 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 13: choices that last](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/), so you can do the lab without the book.
 
-*Time: about 2 hours 15 minutes, with the checks.*
+*Time: about 2 hours, with the checks.*
 
 An agent wrote the script that makes Brightline's Friday payment list. You find the choices it made, decide them yourself, and write them down so they last.
 
@@ -11,6 +11,7 @@ An agent wrote the script that makes Brightline's Friday payment list. You find 
 - **You need** one coding agent (Claude Code, Codex or OpenCode), and Git, Node.js 24 or later, and uv. [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) has the install steps.
 - **Download** [brightline-lab-ch13.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13.zip) and unzip it. Open only its `brightline-ap` folder in your agent, in the mode that asks before it acts: *Manual* in Claude Code, *Ask for approval* in Codex. In OpenCode, the folder's own settings make it ask.
 - **The job.** You work in accounts payable at Brightline. Today is Wednesday, March 3, 2027, and the payment run is Friday, March 5, 2027. The script prints Friday's list: 8 invoices, $19,229.53. Dave Kowalski, the controller, signs the run, and each task starts with what he asks you.
+- **One language.** You do the whole lab in the language you chose for the lessons. The project holds both, and the agent leaves the other one alone.
 
 ### How each task works
 
@@ -23,10 +24,10 @@ An agent wrote the script that makes Brightline's Friday payment list. You find 
 **Dave asks.** "Before I sign Friday's run, show me every rule this script uses to decide what we pay. I want to know which ones we chose."
 
 1. Open `brightline-ap` in your agent.
-2. If you chose Python for the lessons, send: "Set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do. The agent reads that file at the start of every session, so the messages below work for both languages.
+2. If you chose Python for the lessons, send: "Set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do. The agent reads that file at the start of every session, so the messages below work for either language.
 3. Send: "Put this folder under git, with a main branch, and commit everything with the message "The project as I received it"." Every later change can then be compared with this start. If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
-4. Send: "Tell me which packages the lock files would install, for both languages. List first the ones the project itself asks for, and then say how many more those need. Install nothing yet." Know what goes on your computer before you say yes. The first list should have five names: `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`.
-5. Send: "Install them from the lock files. Then run the tests and the type checker for my language."
+4. Send: "Tell me which packages the lock file for my language would install. List first the ones the project itself asks for, and then say how many more those need. Install nothing yet." Know what goes on your computer before you say yes. The first list should be `typescript` and `@types/node` in TypeScript, or `pytest`, `pyright` and `ruff` in Python.
+5. Send: "Install them from the lock file. Then run the tests and the type checker for my language."
 6. Before you run the script, say which of these three invoices will be on Friday's list. Write yes or no for each, on paper or in a note.
 
    | Invoice | Status | Invoice date | Due date | Terms |
@@ -116,24 +117,7 @@ This task has no ask from Dave. The agent now does the middle 80 percent, from y
 
 **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-4.md), attach it, and send [the check message](#the-check-message).
 
-### Task 5. The other language (15 minutes)
-
-**Dave asks.** "Half the team runs the version in the other language. Friday's list has to follow the same rules in both."
-
-Your six answers decide the rule, whichever language holds it. So the agent brings the other language up to date from them, and you check one thing: the same cases, the same answers.
-
-1. Send:
-
-   > Bring the other language's version up to the same rule. Write the same six tests there, with my answers exactly as they are in my tests, and commit them alone first. Then write the function and make that language's script for Friday's list use it. Do not change anything in my language. Then run the tests and the type checker in both languages, and Friday's list for 2027-03-05 in both languages.
-
-2. Compare the last line of Friday's list in the two languages.
-3. Send: "Show me my six cases in a table, with the result of each in both languages. Then commit, with the message "The same rule in the other language"."
-
-**Checkpoint:** the same six cases pass in both languages. Friday's list prints 8 invoices, total $19,229.53, in both.
-
-**Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-5.md), attach it, and send [the check message](#the-check-message).
-
-### Task 6. The weekend (25 minutes)
+### Task 5. The weekend (25 minutes)
 
 **Dave asks.** "Two invoices fall due on Saturday, March 6, 2027, the day after the run. One is Great Lakes Freight's, for $12,900.00. Finance wants a new rule: an invoice due on a Saturday or a Sunday is paid on the Friday before. Do not change Friday's run until the rule has been reviewed. Keep it on a branch."
 
@@ -157,15 +141,15 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
 **Checkpoint:** on the branch `weekend-rule`, the tests pass and Friday's list matches the answer key. On `main`, it still prints 8 invoices, total $19,229.53.
 
-**Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-6.md), attach it, and send [the check message](#the-check-message).
+**Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-5.md), attach it, and send [the check message](#the-check-message).
 
-### Task 7. Make it last (20 minutes)
+### Task 6. Make it last (20 minutes)
 
 **Dave asks.** "Write today's rules down where the next person will find them, and the next agent. I do not want them living in a chat."
 
 1. On `main`, send:
 
-   > Write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: the five terms, and what happens to any other. Put the handover in NOTES.md: where the due-date rule lives in each language, and that the weekend rule is on the branch weekend-rule, not reviewed yet, and not on main. Take out of "Nobody chose these yet" what I decided today. Say each thing once. Show me the diff before you commit.
+   > Write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: the five terms, and what happens to any other. Put the handover in NOTES.md: where the due-date rule lives in my language, that the other language still has the old rule, and that the weekend rule is on the branch weekend-rule, not reviewed yet, and not on main. Take out of "Nobody chose these yet" what I decided today. Say each thing once. Show me the diff before you commit.
 
 2. Read the diff. Each rule should be there once, in plain words. If the agent added a rule you did not decide, ask it to take that rule out before you commit. A plain fact about where things stand is fine.
 3. Send: "Commit, with the message "Today's rules, written down", and tag the commit ch13."
@@ -175,7 +159,7 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
 **Checkpoint:** the new session answers both questions from the project's files, and names them. The tag `ch13` is on `main`.
 
-**Check it now.** In the new session, download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-7.md), attach it, and send [the check message](#the-check-message).
+**Check it now.** In the new session, download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-6.md), attach it, and send [the check message](#the-check-message).
 
 ### The check message
 
@@ -205,8 +189,8 @@ Constraints: Grade only. Change no file and fix nothing. With no
 
 Each of these is optional, and has no answer key.
 
-- **The same change on a second agent.** Open the folder in a second agent, Codex or OpenCode, in the mode that asks before it acts. From your commit of failing weekend tests, on a new branch, send the message from Task 6, step 7. Compare what each agent asked before it acted, and whether either tried to change a test.
-- **The weekend rule in the other language.** On `weekend-rule`, send the message from Task 5, step 1, for your four weekend cases.
+- **The same change on a second agent.** Open the folder in a second agent, Codex or OpenCode, in the mode that asks before it acts. From your commit of failing weekend tests, on a new branch, send the message from Task 5, step 7. Compare what each agent asked before it acted, and whether either tried to change a test.
+- **The same rule in the other language.** Send: "Bring the other language's version up to the same due-date rule. Write the same six tests there, with my answers exactly as they are in my tests, and commit them alone first. Then write the function, and make that language's script for Friday's list use it. Change nothing in my language." Both lists should still print 8 invoices, total $19,229.53.
 - **Check the dates an export states.** Ask for a script that works out each invoice's due date with your rule, and reports every row whose stated due date differs. Decide three cases first. Run it on `data/invoices-check.csv`.
 
 ### If something goes wrong
@@ -216,7 +200,7 @@ Each of these is optional, and has no answer key.
 | `git commit` says "Please tell me who you are" | Git does not know your name yet. Ask the agent to set your name and email for this project only, then to commit again. |
 | The type checker is not found | The packages are not installed. Ask the agent to install them from the lock files. |
 | `uv` downloads Python on the first run | That is normal when no Python 3.12 or later is installed. Let it finish. |
-| The agent answers a case for you in Task 2 or Task 6 | Say: "Do not answer for me. Ask the question again." |
+| The agent answers a case for you in Task 2 or Task 5 | Say: "Do not answer for me. Ask the question again." |
 | The agent edited a test to make it pass | Ask it to put the tests back as they are in your commit. Then tell it in one sentence that the tests are your decisions. |
 | The agent works in the wrong language | Check the line "My language is:" in `AGENTS.md`, then start a new session. |
 | The agent cannot read the attached key | Paste the key's text under the check message. |
