@@ -1,4 +1,4 @@
-# Lab 13 answer key: Task 5. The other language
+# Lab 13 answer key: Task 5. The weekend
 
 The answers for Task 5 of Lab 13, in Chapter 13 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
@@ -12,24 +12,50 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 
 | # | Check | Passed when | Missed when |
 | --- | --- | --- | --- |
-| 22 | The same six cases | The other language has a test for each of my six cases, with the same dates, terms and answers as the tests in my language | A case is missing, or an answer differs |
-| 23 | Tests first | In `git log`, the other language's tests were committed before its function | They were committed together, or the function came first |
-| 24 | Both languages pass | The tests pass and the type checker is clean in both: `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py` | Any of the four fails |
-| 25 | The same list | Friday's list for 2027-03-05 ends with `8 invoices, total $19,229.53` in both languages | The two differ, or either has another count or total |
-| 26 | My language is untouched | No file of my language changed in this task | A script or a test in my language changed |
+| 22 | My prediction came first | My prediction is in `NOTES.md` on `weekend-rule`, in a commit made before the commit of the weekend tests | There is no prediction, or it was committed with the rule or after it |
+| 23 | My four answers | They match the table below. Read them from the tests, or ask me | Any answer differs |
+| 24 | Tests first, and unchanged | On `weekend-rule`, the weekend tests were committed before the rule, and they have not changed since | The tests changed after their commit |
+| 25 | The branch passes | On `weekend-rule`, every test passes and the type checker is clean | A test fails |
+| 26 | Friday's list on the branch | On `weekend-rule`, it ends with `10 invoices, total $33,109.53` | Any other last line. The table "Find your total" says what each one means |
+| 27 | Friday's list on main | On `main`, it still ends with `8 invoices, total $19,229.53`, and `main` has no weekend commit | The weekend rule is on `main` |
 
-## The six cases, in both languages
+## The four answers
 
-| Case | Invoice date | Terms | Result in both |
+| Case | Due date | Paid on | Why |
 | --- | --- | --- | --- |
-| 1 | 2027-02-03 | Net 30 | 2027-03-05 |
-| 2 | 2027-02-19 | Net 15 | 2027-03-06 |
-| 3 | 2027-01-02 | Net 60 | 2027-03-03 |
-| 4 | 2027-03-01 | Due on receipt | 2027-03-01 |
-| 5 | 2026-12-20 | Net 45 | 2027-02-03 |
-| 6 | 2027-03-02 | Net 10 | Stops with `Unknown terms: Net 10` |
+| 1 | 2027-03-06, a Saturday | 2027-03-05 | The Friday before |
+| 2 | 2027-03-07, a Sunday | 2027-03-05 | The Friday before, two days back |
+| 3 | 2027-03-08, a Monday | 2027-03-08 | Not a weekend, so it does not move |
+| 4 | 2026-08-01, a Saturday | 2026-07-31 | The Friday before is in the month before |
+
+## Find your total
+
+| Friday's list on `weekend-rule` | Result | What it means |
+| --- | --- | --- |
+| 10 invoices, total $33,109.53 | Passed | The 8 from before, plus INV-8303 and INV-8308 |
+| 9 invoices, total $32,129.53 | Missed | INV-8308 is missing. It has no due date. Its due date works out to Saturday, March 6, from February 19 plus Net 15, so the weekend rule applies to it too |
+| 9 invoices, total $20,209.53 | Missed | INV-8303 is missing. It states a due date of Saturday, March 6 |
+| 11 invoices, total $34,691.53 | Missed | INV-8306 was added. It is due on Monday, March 8, and a Monday does not move |
+| 8 invoices, total $19,229.53 | Missed | The script for Friday's list does not use the weekend rule yet |
+
+For any other total, compare the list with Task 1's list, and find the invoices that were added.
+
+The two invoices the rule adds:
+
+| Invoice | Vendor | Due | Amount |
+| --- | --- | --- | --- |
+| INV-8303 | Great Lakes Freight | Saturday, March 6, stated | $12,900.00 |
+| INV-8308 | Cardinal Forklift Service | Saturday, March 6, worked out | $980.00 |
+
+## If my prediction was wrong
+
+A prediction of 9 invoices is the common one. The test that held it failed, and the rule tests passed. That is the lab working: two of my own decisions disagreed, and the tests showed it before any payment did. The fix is to correct the prediction, and say so. Never change the rule to match a wrong count.
+
+## Look back
+
+Open `NOTES.md`, and read the list "Nobody chose these yet" from Task 1. Is the weekend on it? In the authors' test runs, it never was. An agent asked for every unstated choice listed ten or more of them, and missed the one that would have left a $12,900.00 invoice unpaid. A rule that is missing has no line of code to point at. Only someone who knows the business can name it.
 
 ## Never a deduction
 
-- How the second version is written. The two languages do the same thing in different ways.
-- A change to `NOTES.md` or `AGENTS.md` in this task.
+- The name of the weekend function.
+- A prediction that was wrong and then corrected, with the reason said.

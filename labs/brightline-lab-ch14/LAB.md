@@ -1,342 +1,217 @@
-# Lab 14: models and an async client in two languages
+# Lab 14: check what comes in
 
-Chapter 14 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 14: models and an async client in two languages](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/lab/), so you can do the lab without the book.
+Chapter 14 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 14: check what comes in](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/lab/), so you can do the lab without the book.
 
-*Time: about 4 hours, with the checks.*
+*Time: about 2 hours 15 minutes, with the checks.*
 
-An agent split Brightline's scripts into modules and classes. You decide what the code accepts from a file and from software someone else runs, and what it does when either one surprises it.
+Brightline's scripts take data from two places they do not control: the vendor portal's exports, and the AP system. You decide what the code accepts from each, and what it does when one of them surprises it.
 
 ### Before you start
 
-- **You need** the Claude desktop app on a paid plan, and Git, Node.js 24 or later, uv and `curl`. [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) has the install steps. Task 10 needs the ChatGPT desktop app, and Task 11 needs OpenCode Desktop with a model connected. For [Python only](#python-only), or [without a paid Claude plan](#without-a-paid-claude-plan), read that section first.
-- **Download** [brightline-lab-ch14.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14.zip) and unzip it. Open only its `brightline-ap` folder in an agent.
-- **The job.** You work in accounts payable at Brightline. Today is Wednesday, March 3, 2027, and the payment run is Friday, March 5, 2027. Last month, an export had a negative amount, and nobody noticed for a week. Ana wants schemas that check every record, and a small client for the AP system's API. A server on your computer stands in for that system.
-- **The path.** Do Tasks 1 to 9, one port (Task 10 or 11) and Task 12. A port makes one change with a second agent.
+- **You need** one coding agent (Claude Code, Codex or OpenCode), and Git, Node.js 24 or later, and uv. [13.1](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-set-up-to-try-this) has the install steps.
+- **Download** [brightline-lab-ch14.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14.zip) and unzip it. Open only its `brightline-ap` folder in your agent, in the mode that asks before it acts: *Manual* in Claude Code, *Ask for approval* in Codex. In OpenCode, the folder's own settings make it ask.
+- **The job.** You work in accounts payable at Brightline. Today is Wednesday, March 3, 2027, and the payment run is Friday, March 5, 2027. The script prints Friday's list: 8 invoices, $19,229.53. Dave Kowalski, the controller, signs the run, and each task starts with what he asks you.
+- **One language.** You do the whole lab in the language you chose for the lessons. The project holds both, and the agent leaves the other one alone.
 
 ### How each task works
 
-1. Send the message the task prints. The agent runs every command, and you never type one.
-2. Read what the agent says it will do before you approve it. Approve a package install only for the exact names a task lists.
-3. Write each prediction in `NOTES.md` before the agent runs anything. You decide every test case and its answer, and the agent never changes a test you approved.
-4. Go on only when the task's **Checkpoint** is true. Then open the task's answer key in a text editor, never in the agent.
+1. Send the message the task prints. The agent asks you questions, and you answer in a few words. You decide, and the agent types. No message tells the agent which command to run: the project's rules file, `AGENTS.md`, already holds the commands.
+2. Read what the agent says it will do before you approve it.
+3. When the task is done, download its answer key and keep it outside `brightline-ap`. Then copy [the check message](#the-check-message) into the agent's message box, add the key to the same message with the app's attach button or by dragging the file in, and send. The agent asks you about anything only you know, such as a prediction, and you answer in a line. Then read the key yourself.
 
-### Task 1. Read the shape (20 minutes)
+### Task 1. Where does data come in? (20 minutes)
 
-*Goal:* know the repository's structure before you change it.
+**Dave asks.** "Before we check anything, show me every place this project takes data in from outside. And tell me which files everything else leans on."
 
-1. Open `brightline-ap` in the Claude desktop app's *Code* tab, in a *Local* session, in *Manual* mode.
-2. Send:
+1. Open `brightline-ap` in your agent.
+2. If you chose Python for the lessons, send: "Set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do.
+3. Send: "Put this folder under git, with a main branch, and commit everything with the message "The project as I received it"." If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
+4. Send: "Install the packages from the lock files. Then run the tests and the type checker for my language, and Friday's list for 2027-03-05."
+5. Before you ask for anything more, say which of these three files takes data in from outside the project. A file takes data in when it reads a file from `data/`, or an answer from another system. Write yes or no for each, on paper or in a note. Go by the names alone.
 
-   > Put this folder under git, with a main branch, and make a first commit of everything here, with the message "The project as I received it". Then show me `git log --oneline`.
+   | The file that | TypeScript | Python |
+   | --- | --- | --- |
+   | Makes Friday's list | `src/due-by-friday.ts` | `py/brightline_ap/due_by_friday.py` |
+   | Holds the invoices and answers questions about them | `src/invoice-book.ts` | `py/brightline_ap/invoice_book.py` |
+   | Lists the vendors | `src/list-vendors.ts` | `py/brightline_ap/list_vendors.py` |
 
-   Expect `git init -b main`, `git add .`, `git commit` and `git log --oneline`, which shows one commit. If the agent wants to change your git settings for the whole computer, say no. Ask it to set the name and email for this project only.
-3. Send: "Install the packages from the lock files, with `npm ci` and, in `py/`, `uv sync`. Then run `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`, and show me what each one prints." All four pass.
-4. From the file names in `src/` alone, predict which files import which, and draw it in `NOTES.md` as a list of arrows, such as `invoice-book -> due-date`.
-5. Now read the import lines at the top of each file in `src/` and `scripts/`, and correct your graph.
-6. Mark the edges in your graph, the places where data comes in. The edges are every file that reads `data/`, and the functions that turn rows into records. For each edge that reads an amount, write in `NOTES.md` what it does with an amount it does not expect, such as a blank one. Then find the foundations, the files that many others import.
+6. Send:
 
-**Checkpoint:** your graph in `NOTES.md` matches the answer key, with the edges marked, and you can name the two files most others import.
+   > Show me a map of the files in my language: for each file, one line on what it does, and which files it uses. Mark every place where data comes in from outside the project: a file that is read, and each function that turns a row of text into a record. Then name the two files that the most other files use. Change nothing.
 
-**Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-1.md).
+7. Compare the map with your three answers. A file that takes data in is where a bad value gets its first chance, so it is where a check belongs. The two files most others use are the ones to read first before any change, as [14.1](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/modules/) says.
+8. Send: "Take the function that turns a row of the export into an invoice. Run it on two invented rows, one with a blank amount and one with a negative amount, and show me what it gives for each. Change nothing." Nothing in today's code checks an amount, so see what your language does with each one.
+9. Send: "Add the map to NOTES.md, under the heading "Where data comes in". Then commit, with the message "Where data comes in"."
 
-### Task 2. Write the types (20 minutes)
+**Checkpoint:** the tests and the type checker pass. Friday's list prints 8 invoices, total $19,229.53. `NOTES.md` holds the map, with the places where data comes in.
 
-*Goal:* a literal type for terms, in both languages, and the type checkers catching a wrong call.
+**Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-1.md), attach it, and send [the check message](#the-check-message).
 
-1. Read `exercises/wrong-call.ts` and `exercises/wrong_call.py`. Predict first, in `NOTES.md`: will either type checker catch `"Net 10"`? Then ask the agent to run `npm run typecheck` and `npm run check:py`, and compare with what they print.
-2. Predict in `NOTES.md` which files will get a type error once `termsDays` and `dueDate` take only `Terms`. Then send:
+### Task 2. What may a record hold? (30 minutes)
 
-   > In `src/due-date.ts`, make the five known terms a type, `Terms`. Add `isTerms`, a type guard that says whether some text is one of them, and `parseTerms`, which returns `Terms` or throws `Unknown terms: <text>`. Change `termsDays` and `dueDate` to take `Terms`. Do the same in `py/brightline_ap/due_date.py` with `Literal`, `TypeGuard`, `is_terms` and `parse_terms`. Then run `npm run typecheck` and `npm run check:py` and show me every error. Don't fix anything yet.
+**Dave asks.** "Write down what an invoice from the portal may hold. The number is INV- and then digits. The amount is whole cents, zero or more: no credits come through this export. The terms are our five: Due on receipt, Net 15, Net 30, Net 45 and Net 60. A date is a real date. The due date may be blank, because we work it out from the terms."
 
-3. Read the errors, and compare them with your prediction. Sort them into three kinds: raw text from a file, the test that checks unknown terms on purpose, and the planted call. Write the count of each in `NOTES.md`. For each raw-text error, follow the text back to the edge you marked in Task 1, where it is read from the file, and write that place down.
-4. Send:
-
-   > Fix the raw-text errors by checking the text once, at the places I listed in `NOTES.md`, with `parseTerms` or `parse_terms`. In the tests, mark the unknown-terms call as expected to fail type checking, with `// @ts-expect-error` and `# pyright: ignore[reportArgumentType]`, and don't change what the tests check. Leave the planted calls alone for now. Then run `npm run typecheck` and `npm run check:py` again.
-
-   When the agent asks to edit a test, make sure it adds only the marking comment. A cast such as `as Terms` is no fix, as [14.2](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/types-you-write-down/#where-does-text-from-a-file-become-a-type) says. Compare the places the agent changed with your list. Only the two planted calls should still fail.
-5. You decide the fix for the planted calls. Send: "Change `"Net 10"` to `"Net 15"` in both planted calls, and change nothing else. Then run `npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`."
-
-**Checkpoint:** in step 1, neither type checker caught `"Net 10"`, because `terms` was only a `string`. Before step 5, both named the planted call. After it, all four commands pass, and `git diff` on the tests shows only the two marking comments. Ask the agent to commit.
-
-**Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-2.md).
-
-### Task 3. Read and change a class (25 minutes)
-
-*Goal:* read a class by its methods, then add one, test first.
-
-1. Read `src/invoice-book.ts` and `py/brightline_ap/invoice_book.py`. For each method, write one sentence in `NOTES.md` saying what it returns.
-2. Predict: for the real data, how many invoices does `open()` return, and how many does `dueBy("2027-03-05")` return? Then open `tests/invoice-book.test.ts`, which states both numbers, and compare.
-3. Decide the new case. `openTotalCents()`, or `open_total_cents()` in Python, returns the total of the open invoices in `data/invoices.csv`, in cents. Work it out from the data, then compare it with Task 3's answer key before you send this. Write the case and your number in `NOTES.md`, under a heading "Task 3". Then send:
-
-   > Write a failing test from my case in `NOTES.md`, under "Task 3". Put it in `tests/invoice-book.test.ts` and `py/tests/test_invoice_book.py`. The method is `openTotalCents()` in `src/invoice-book.ts` and `open_total_cents()` in `py/brightline_ap/invoice_book.py`, and neither exists yet. Use my number exactly. Write only the tests, and don't change any other file.
-
-   Then ask the agent to run `npm test` and `npm run test:py`. The new test fails in both, because the method does not exist yet.
-4. Send: "Add both methods so my new tests pass, without changing any test. Then run the tests in both languages and show me the output." Then read the new method in each language. In `NOTES.md`, write how it leaves out the paid invoices, and whether it returns cents or dollars.
-
-**Checkpoint:** the new test passes in both languages and the tests are unchanged. Ask the agent to commit.
-
-**Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-3.md).
-
-### Task 4. Schemas, tests first (30 minutes)
-
-*Goal:* an `Invoice` and a `Vendor` schema in each language that refuse bad values.
-
-1. Decide the cases, and what each must do. These are the minimum:
-
-   | Case | Must |
-   | --- | --- |
-   | INV-8301 from `data/invoices.csv`, with fields named `number`, `vendorId`, `invoiceDate`, `dueDate`, `terms`, `amountCents` and `status` (`vendor_id` and so on in Python) | Pass |
-   | INV-8301 with a null due date | Pass |
-   | In Python only, INV-8301 with an empty due date, which the model turns into `None` | Pass |
-   | INV-8301 with an amount of `-23450` | Fail |
-   | INV-8301 with an amount of `4825.5` | Fail |
-   | INV-8301 with terms `"Net 10"` | Fail |
-   | INV-8301 with an invoice date of `"2026-13-02"` | Fail |
-   | V001 from `data/vendors.csv`, with an empty name | Fail |
-
-   `-23450` must fail because Brightline's export holds no credits, as [14.6](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/errors-as-design/#what-does-refusing-cost) says. In Marcus's export it would be a credit, so decide each rule from what your own data can hold. Copy INV-8301's values from the file yourself. Write your cases in `NOTES.md`, under a heading "Task 4", with any more you want to add.
-2. Send:
-
-   > Write failing tests from my cases in `NOTES.md`, under "Task 4", in `tests/schemas.test.ts` and `py/tests/test_schemas.py`. They are for `InvoiceSchema` and `VendorSchema` in `src/schemas.ts`, and `InvoiceModel` and `VendorModel` in `py/brightline_ap/schemas.py`, and none of them exists yet. Use my values exactly. Write only the tests, and don't change any other file.
-
-   Then ask the agent to run `npm test` and `npm run test:py`. The new tests fail because Zod, Pydantic and the schema files do not exist yet. Read the error, and make sure that is the reason. Then ask the agent to commit the failing tests.
-3. Send:
-
-   > Add the package `zod` with npm, and `pydantic` with `uv add` in `py/`, and ask me before each command. Then write the four schemas my tests name, so they pass. Give each rule a short message that says what is allowed. Don't change the tests. Run `npm test` and `npm run test:py` and show me the output.
-
-   Before you approve each install, ask the three questions from [14.1](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/modules/#should-i-let-the-agent-add-a-package). Is the name spelled exactly right, is it the well-known package with that name, and is it needed at all?
-4. Read both schema files. Compare each rule with [14.5's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/schema-rules/#what-rules-can-a-schema-hold), and write one sentence in `NOTES.md` for each line that carries a rule. Then ask the agent to run `git diff -- tests/ py/tests/`. It must print nothing, because no test has changed since your commit.
-5. Now try a wrong value your tests never tried. A CSV file gives every amount as text. Predict what each schema does with INV-8301's amount as the text `"4825.0"`, and write it in `NOTES.md`. Then ask the agent to run each schema on it, and to show you the results. Last, write in `NOTES.md` one wrong value your schemas would pass, and what would catch it.
-
-**Checkpoint:** every test passes in both languages, the tests are unchanged, and your prediction for `"4825.0"` and the real results are in `NOTES.md`. Ask the agent to commit, and then to run `git show --stat`. It must list `package-lock.json` and `py/uv.lock`.
-
-**Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-4.md).
-
-### Task 5. Collect the errors (25 minutes)
-
-*Goal:* a loader that reports every bad row, not only the first.
-
-1. Decide the cases, and write them in `NOTES.md`, under a heading "Task 5". Cover at least these three:
-   - `data/invoices.csv` loads with 15 valid rows and no errors.
-   - `data/invoices-messy.csv` gives 11 valid rows and an error for each bad line, with its line number and invoice number. Open the file in a text editor, and find the four bad lines yourself. Line 1 is the header.
-   - Rows whose amount is blank, only spaces, `4825.0` or `12.5` are all errors, never a zero or a rounded number.
-
-   Send:
-
-   > Write tests from my cases in `NOTES.md`, under "Task 5", in `tests/load-invoices.test.ts` and `py/tests/test_load_invoices.py`. They are for a loader that doesn't exist yet, `src/load-invoices.ts` and `py/brightline_ap/load_invoices.py`. Use my line numbers and counts exactly. Write only the tests.
-
-2. Send:
-
-   > Now write the loader in both languages, so I can run `npm run check-invoices -- <file>` on any export, and, from `py/`, `uv run python -m brightline_ap.load_invoices <file>`. Check every row with the schema, and also check that its vendor id is in `vendors.csv`. Turn an amount into a number only when it is a plain whole number, and pass anything else to the schema as a value it will refuse. Collect every problem with the line number, the invoice number and a message. Print one line per bad row and a count, and exit with a failure code when any row is bad. Don't stop at the first bad row. Make my tests pass without changing them.
-
-3. Read the new loader. Find the lines that decide these three things, and write each one as a sentence in `NOTES.md`:
-   - how the text of an amount becomes a number
-   - where a bad row's problems are collected, so the run does not stop at the first
-   - when the run exits with a failure code
-
-   Then predict what the loader prints for each file, and ask the agent to run it on both files, in both languages.
-4. Read the import lines of `src/due-by-friday.ts` again. Does the Friday list read its invoices through your loader? Write what you find in `NOTES.md`, and leave the file as it is.
-
-**Checkpoint:** 11 valid, 4 errors, on the four lines in the answer key, in both languages, and `NOTES.md` says how the Friday list reads its invoices. Ask the agent to commit.
-
-**Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-5.md).
-
-### Task 6. JSON and JSON Schema (15 minutes)
-
-*Goal:* see your records as JSON, and see each schema as JSON Schema.
+You decide what the code accepts before any check exists. A schema will hold your answers, as [14.4](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/data-models-and-schemas/) shows.
 
 1. Send:
 
-   > Write `src/export-json.ts` and `py/brightline_ap/export_json.py`. Each reads `data/invoices.csv` through my loader, and writes the valid invoices to a JSON file in `out/`. Each also prints its schema as JSON Schema, with `z.toJSONSchema(InvoiceSchema)` and `InvoiceModel.model_json_schema()`. Don't run them yet.
+   > I will decide eight values for an invoice record: accept or refuse. Ask me for them one at a time. For each, show me the field and the value, and ask: "Accept or refuse?" Do not tell me the answer, and do not hint. When I have answered all eight, show my answers in a table, and wait.
+   >
+   > The values: (1) amount 482500. (2) amount -23450. (3) amount 4825.5. (4) amount 0. (5) terms Net 10. (6) invoice date 2026-13-02. (7) due date blank. (8) number 8301.
 
-   Git ignores the `out/` folder.
-2. Predict in `NOTES.md`: will the two JSON files name the fields the same way? Then ask the agent to run both. Expect a command such as `node src/export-json.ts` and, in `py/`, `uv run python -m brightline_ap.export_json`. Open the two JSON files in a text editor, and read the two JSON Schemas the agent shows you, side by side.
-3. Write in `NOTES.md` at least one difference between the two JSON Schemas, and say whether it would matter to a program that reads them.
-
-**Checkpoint:** two JSON files of 15 invoices each, and at least one real difference written down. Ask the agent to commit.
-
-**Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-6.md).
-
-### Task 7. Call the API by hand (15 minutes)
-
-*Goal:* read status codes and headers before any code depends on them.
-
-By hand means one call at a time, with `curl`, a tool that sends one request and prints the answer.
-
-1. Make up a key, any short text, such as `ana-test-42`. Send this, with your key in place of `<your key>`: "Copy `.env.example` to `.env`, and put my made-up key, `<your key>`, in place of the placeholder. Then run `git status`." `.env` must not appear in what it prints, because git ignores it. A real key never goes into a chat. You would put it in `.env` yourself, in a text editor.
-2. Send: "Start the sample API with `npm run api`, in the background, and leave it running." In the background means it keeps running while the agent does other work.
-3. Predict the status code of each call below, and write it in `NOTES.md`. Then ask the agent to run the calls one at a time, exactly as written, with your key in place of `<your key>`, and to show you the status line and the body of each.
-
-   ```bash
-   curl -i http://localhost:4010/vendors
-   curl -i -H "X-API-Key: <your key>" http://localhost:4010/vendors
-   curl -i -H "X-API-Key: <your key>" http://localhost:4010/vendors
-   curl -i -H "X-API-Key: <your key>" "http://localhost:4010/invoices?status=open&page=2"
-   curl -i -H "X-API-Key: <your key>" "http://localhost:4010/invoices?status=open&page=9"
-   ```
-
-   On Windows, if the agent uses PowerShell, the command is `curl.exe`, because `curl` there is another command. For each answer, write in `NOTES.md` what a client should do with it, from [14.7's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#what-should-the-client-do-for-each-status-code).
-4. Ask the agent to run `git log -p -S "<your key>" --oneline`, with your key. It must print nothing.
-
-**Checkpoint:** you saw 401, then 503, then 200, then 200 with INV-8306 first, then 400, and your key is in no commit. Leave the API running for Task 8.
-
-**Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-7.md).
-
-### Task 8. The async client, tests first (35 minutes)
-
-*Goal:* a client that fetches vendors while it fetches every page of open invoices, retries once on 503, and times out.
-
-1. Decide the cases, and write them in `NOTES.md`, under a heading "Task 8". Each case counts the requests the server receives, so its test fails if the behavior it names is removed. These are the minimum:
-   - Each page of open invoices, 1, 2 and 3, is requested exactly once, and no invoice number comes back twice.
-   - A first `503` is retried exactly once, so the server receives two requests. A server that stays busy fails after two requests.
-   - A request that gets a `401` is not retried, so the server receives one request.
-   - When each answer takes 200 milliseconds, the vendors request and the first invoices request arrive less than 100 milliseconds apart.
-   - With a server that takes 500 milliseconds and a client deadline of 100 milliseconds, the call fails with a timeout.
-
-   Send:
-
-   > Write failing tests from my cases in `NOTES.md`, under "Task 8", in `tests/ap-client.test.ts` and `py/tests/test_api_client.py`. They are for a client that doesn't exist yet, with `fetchVendors`, `fetchOpenInvoices` and `fetchVendorsAndOpenInvoices` in `src/ap-client.ts`, and `fetch_vendors`, `fetch_open_invoices` and `fetch_vendors_and_open_invoices` in `py/brightline_ap/api_client.py`. In TypeScript, have each test start its own copy of the sample API from `scripts/ap-api.ts`, on a free port, and count the requests it receives. In Python, use a fake API inside the test that counts its own requests. Write only the tests.
-
-   You are not expected to follow every line of these tests. Check only that each one names one of your cases, with the number of requests you decided. The answer key shows one way to write each test.
-2. Ask the agent to run `npm test` and `npm run test:py`. The new tests fail because `src/ap-client.ts` and `httpx` do not exist yet. Then ask it to commit the failing tests.
+2. Answer each question from Dave's words.
 3. Send:
 
-   > Now create `src/ap-client.ts` with those three functions, using `fetch`. Give every call a two-second deadline, retry once on a 503, and never retry any other error. Validate every response body with the schemas. Add `npm run fetch-ap`, which reads the key from `.env` and prints the counts and the time. Then add `httpx` with `uv add` in `py/`, and write `py/brightline_ap/api_client.py` the same way with httpx, using `asyncio.timeout` for the deadline. Make my tests pass without changing them.
+   > Write one failing test for each of my answers. The tests are for a schema of an invoice record, which does not exist yet. Name it and place it as AGENTS.md says. The schema will need a schema library: tell me the exact name of the package you would add, but install nothing yet. Use my answers exactly. Write only the tests. Then show me each test beside my answer.
 
-   Before you approve `uv add httpx`, ask the three questions from Task 4. When the tests pass, read the client. Find the lines that decide which errors are retried and how often, the deadline on each call, and where the two calls start together. Write each as a sentence in `NOTES.md`.
-4. Predict in `NOTES.md`: now that your tests pass, will both clients pass against the real API, and how long will each run take? Say why. Then, with the API still running, ask the agent to run `npm run fetch-ap`, and then, in `py/`, `uv run --env-file ../.env python -m brightline_ap.api_client`. If the Python client fails on the first invoice, read the error before you ask for help. Compare the field names in the error with the JSON from Task 7. [14.7](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#why-did-the-tests-pass-and-the-live-run-fail) says what to ask for.
-5. Ask the agent to stop the API, and then to run `git diff -- tests/ py/tests/`. It must print nothing.
+4. Read each test against your answer: the same value, the same result. If one differs, say so, and the agent corrects it.
+5. Before any install, ask the three questions of [14.1](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/modules/#should-i-let-the-agent-add-a-package). Send: "Before you install it: what is the package's exact name, who publishes it, and how many other packages come with it? Show me where you checked." The name should be `zod` in TypeScript, or `pydantic` in Python. If the agent names another package, ask why before you say yes.
+6. Send: "Run the tests. Show me that the new ones fail, and why. Then commit only the new test file, with the message "Failing tests for the invoice schema"."
+7. Send:
 
-**Checkpoint:** both clients print 8 vendors and 13 open invoices, in about one second. One after the other, the calls would take about 1.5 seconds. Every test passes, and the tests are unchanged. Ask the agent to commit.
+   > Install that one package, and write the schema so my eight tests pass. Give each rule a short message that says what is allowed. Do not change any test. Then run the tests and the type checker, and show me which files changed since my commit.
 
-**Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-8.md).
+   The lock file, which lists the exact version of each package, should be among them, and no test file.
+8. Send: "Show me the schema as a table: each field, its rule in plain words, and the line that carries it." Read each rule against Dave's words. If a rule is there that Dave did not ask for, or one is missing, say so.
+9. Your tests never tried an amount that arrives as text. A file gives every value as text, so say what the schema will do with `"482500"`, in quotes, and write it down. Then send: "Run the schema on INV-8301 from data/invoices.csv, with its amount as the text "482500", and show me the result. Change nothing." [14.5](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/schema-rules/#does-the-library-change-values-for-me) says why the two languages differ.
+10. Send: "Commit, with the message "The invoice schema, from my tests"."
 
-### Task 9. Read SDK-shaped code (15 minutes)
+**Checkpoint:** the eight new tests failed first, and now pass. The type checker is clean. One package was installed, and you checked its name first. No test file has changed since your commit of the failing tests.
 
-*Goal:* name the shapes in code you did not write and will not write.
+**Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-2.md), attach it, and send [the check message](#the-check-message).
 
-1. Open `exercises/sdk-shaped/ap-sdk.ts` and `exercises/sdk-shaped/ap_sdk.py` in a text editor. They have weaknesses put there on purpose.
-2. In `NOTES.md`, list each shape from [14.9's table](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/reading-sdk-code/#which-shapes-will-i-meet), with the line where each file uses it.
-3. Predict which line of `ap_sdk.py` will handle the first `503`, and write it in `NOTES.md`. Then ask the agent to start the API again with `npm run api`, in the background, and to run `uv run --env-file ../.env python ../exercises/sdk-shaped/ap_sdk.py` in `py/`. It prints 8 vendors, though the first call got a `503`. Name the lines that raised that error and called again, and compare them with your prediction. Then ask the agent to stop the API.
-4. Review both files with the questions of [14.9](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/reading-sdk-code/#what-does-it-check-for-me-and-what-does-it-leave-to-me). Does it check each answer? Which errors does it retry, and how often? Does every call have a deadline, and does it close what it opens? Find at least four weaknesses, starting with the retry. What does it do on a `401`? Write in `NOTES.md` what you would ask the SDK's authors to change.
+### Task 3. One report for a bad export (25 minutes)
 
-**Checkpoint:** your labels and your list of weaknesses match the answer key. You can say which line runs when each client's block ends, and what it really does.
+**Dave asks.** "The portal sent a new export, invoices-messy.csv. When an export has bad rows, I want one report with every problem and its line number. No list and no total come from that file until it is fixed. And every invoice's vendor must be on our vendor list."
 
-**Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-9.md).
+1. Send: "Show me data/invoices-messy.csv as a table with line numbers, and data/vendors.csv beside it. Line 1 is the header. Change nothing."
+2. Find the bad lines yourself, from Dave's words in Task 2 and in this task. Write down how many there are, and their line numbers.
+3. Send: "Run Friday's list for 2027-03-05 on invoices-messy.csv. Show me the whole output. Do not explain it, and do not fix anything." Read the error as you did in [Lab 13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/). Today's code stops at one bad row, and it says nothing about the others.
+4. Send this, with your own count and your own lines in place of the two parts in square brackets:
 
-### Task 10. Port to Codex (20 minutes)
+   > Write failing tests for a loader that does not exist yet. It checks every row of an export with my schema, and checks that the row's vendor is on the vendor list. It gives back the good invoices and a list of every problem, each with its line number, its invoice number and a message. It does not stop at the first problem. My cases: data/invoices.csv gives 15 good invoices and no problems. data/invoices-messy.csv gives [count] problems, on lines [your lines]. A row whose amount is blank is a problem, never a zero. Name the loader and place it as AGENTS.md says. Write only the tests, run them, and show me that they fail. Then commit only the tests, with the message "Failing tests for the export report".
 
-*Goal:* one tests-first change, made by a second agent.
+5. Send:
 
-**The change.** Vendors may carry a remit email, the address that receives notice of each payment. When it is there, it must be a valid email address.
+   > Write the loader so my tests pass. Then make the script for Friday's list read its invoices through the loader. When an export has any problem, it prints the report, one line for each problem, with no list and no total, and the run ends as a failure. Do not change any test. Then run the tests, the type checker, and Friday's list for 2027-03-05, first on invoices.csv and then on invoices-messy.csv.
 
-1. Decide the cases. These are the minimum:
-   - a vendor with no remit email passes
-   - `remitEmail: "ap@buckeye.example"` passes
-   - `"ap@@buckeye"` fails
-   - `""` fails
+6. If a test for the messy export fails, the report differs from your lines. Send: "Show me the report for invoices-messy.csv, and say which of its lines are not in my test." Then decide which was wrong, your lines or the loader, and tell the agent to correct that one. A test changes only when you decide that its answer was wrong.
+7. Send: "Commit, with the message "One report for a bad export"."
 
-   In the agent you used for Tasks 1 to 9, send this, with your cases pasted under it:
+**Checkpoint:** on `invoices.csv`, Friday's list still prints 8 invoices, total $19,229.53. On `invoices-messy.csv`, it prints a report that matches the answer key, with no list and no total, and the run ends as a failure.
 
-   > Make a new branch called `remit-tests` and switch to it. Then add tests to `tests/schemas.test.ts` from my cases below, for an optional `remitEmail` on `VendorSchema` in `src/schemas.ts`. Write only the tests, and don't change any other file.
+**Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-3.md), attach it, and send [the check message](#the-check-message).
 
-   Expect `git switch -c remit-tests`. Predict which two of the new tests fail before the change, and why the other two already pass. Then ask the agent to run `npm test`, and watch the two new failures. Ask it to commit with the message "Failing tests for the remit email".
-2. Open the folder in Codex, set *Work in* to *This computer* and the mode to *Ask for approval*. Send: "Make a new branch called `port14-codex` from `remit-tests`, and switch to it." Expect `git switch -c port14-codex remit-tests`.
-3. Send: "Make the remit email tests in `tests/schemas.test.ts` pass by adding an optional `remitEmail` to `VendorSchema` in `src/schemas.ts`. Don't add any package, and don't change any test. Run `npm test` and `npm run typecheck`."
-4. Before you ask for a commit, type `/review` and choose to review your uncommitted changes. Read the findings. Then read the diff yourself, find the line that adds `remitEmail`, and write one sentence about it in `NOTES.md`. Ask Codex to run `git diff remit-tests -- tests/`, which must print nothing.
-5. Ask Codex to commit on `port14-codex`, and then to run `git status`. It must say the working tree is clean before you switch branches.
-6. Ask Codex to run `git switch main`. Then write four notes on this port in `NOTES.md`:
-   - what it asked before installing or running anything
-   - whether it could reach `localhost`, where the client tests start their server
-   - whether it tried to change a test
-   - what its review found
+### Task 4. Talk to the AP system (35 minutes)
 
-   Ask Codex to commit them, so Task 12 can use them.
+**Dave asks.** "The AP system holds the vendors and the open invoices. Get the vendors, and every page of open invoices. Give each call two seconds. When the server says it is busy, try once more. When it refuses our key, never try again."
 
-**Checkpoint:** every test passes on `port14-codex`, the tests are unchanged, and your notes say what Codex asked before acting. Your notes are committed on `main`.
+A small server in the project stands in for the AP system. It runs only on your computer.
 
-**Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-10.md).
+1. Make up a key, any short text, such as `ana-test-42`. Send, with your key: "Set up the key file for the sample AP system with my made-up key, [your key]. Then show me that git ignores that file." A real key never goes into a chat. You would type it into the file yourself.
+2. Send: "Start the sample AP system in the background, and leave it running."
+3. Say which status code each of these five calls will get, and write the five codes down. [14.7](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#what-should-the-client-do-for-each-status-code) has the codes.
 
-### Task 11. Port to OpenCode (20 minutes)
+   | Call | What is asked |
+   | --- | --- |
+   | 1 | The vendors, with no key |
+   | 2 | The vendors, with your key |
+   | 3 | The vendors, with your key, again |
+   | 4 | Page 2 of the open invoices, with your key |
+   | 5 | Page 9 of the open invoices, with your key |
 
-*Goal:* the same change on an open-source agent.
+4. Send: "Make these five calls to the sample AP system by hand, one at a time, in this order, and show me the status code and the body of each: the vendors with no key. The vendors with my key. The vendors with my key, again. Page 2 of the open invoices, with my key. Page 9 of the open invoices, with my key." Compare the five codes with yours.
+5. Send:
 
-1. If you skipped Task 10, do its step 1 first, so the branch `remit-tests` exists.
-2. Copy `opencode.jsonc` into `brightline-ap`. It is in the folder you unzipped, next to `brightline-ap`. It makes OpenCode ask before each edit and each command.
-3. Open the folder in OpenCode Desktop. Before you send anything, turn auto-accept off for this project, under Settings, then Projects.
-4. Send: "Make a new branch called `port14-opencode` from `remit-tests`, and switch to it." Expect `git switch -c port14-opencode remit-tests`. Then switch to the *plan* agent, and send: "Read the remit email tests in `tests/schemas.test.ts`, and plan the change that makes them pass. Don't edit anything yet."
-5. Switch to the *build* agent, and send the same brief as Task 10, step 3.
-6. OpenCode's version 2 documentation names no review command. Read the review panel, or ask OpenCode to show you `git diff`. Then ask it to run `git diff remit-tests -- tests/`, which must print nothing.
-7. Ask OpenCode to commit on `port14-opencode`, with `opencode.jsonc`, and then to run `git status`. It must show a clean working tree.
-8. Close OpenCode, and go back to the agent you used for Tasks 1 to 9. Ask it to run `git switch main`. That takes `opencode.jsonc` out of the folder, because only `port14-opencode` holds it, and without that file OpenCode has no rules to read. So keep OpenCode closed on `main`. Write the same four notes on this port in `NOTES.md`, and ask the agent to commit them.
+   > I will decide what our client does with four answers from the AP system. Ask me for them one at a time: (1) the server refuses the key, 401. (2) the server is busy, 503. (3) the server says the request is wrong, 400. (4) no answer comes within two seconds. For each, ask: "Try again, or stop? And how many requests does the server get in all?" Do not tell me the answer, and do not hint. When I have answered all four, show my answers in a table, and wait.
 
-**Checkpoint:** every test passes on `port14-opencode`, the tests are unchanged, and OpenCode asked before each edit and command. Your notes are committed on `main`.
+6. Answer each question from Dave's words. Where he said nothing, stop: a client tries again only when it has a reason to think the next answer will differ.
+7. Send:
 
-**Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-11.md).
+   > Write one failing test for each of my answers, for a client that does not exist yet. Name it and place it as AGENTS.md says, and test it as AGENTS.md says, so that each test counts the requests the server gets. Add two more tests: each page of the open invoices is asked for exactly once, and a server that stays busy gets two requests and no more. If the tests need a package, tell me its exact name, and install nothing yet. Write only the tests, run them, and show me that they fail. Then commit only the tests, with the message "Failing tests for the AP client".
 
-### Task 12. Hand over and tag (10 minutes)
+   If the agent names a package, ask the three questions of Task 2, step 5, before you say yes. In Python the agent may name `httpx`. In TypeScript no package is needed.
+8. Send:
 
-*Goal:* the next chapter starts from a tag on which every command passes.
+   > Write the client so my tests pass. It gets the vendors and every page of the open invoices, and it starts the vendors call and the first invoices call together. It checks every invoice in an answer with my schema. Do not change any test. Add a command that runs it against the sample AP system and prints how many vendors and open invoices it got, and how long it took, and add that command to the table in AGENTS.md. Then run the tests and the type checker. Do not run the new command yet.
 
-1. Go back to the agent you used for Tasks 1 to 9. Ask it to run `git switch main`.
-2. Update `NOTES.md` with the modules, the schemas, the loader, the API and the client. Then ask the agent to write `ports/ch14.md` from your notes, with a section for each agent you used, from your four notes on it. Tell the agent the next change, making the Friday list read its invoices through your loader, and why it comes first. Have it end the file with that.
-3. Ask the agent to commit, and then to tag the commit with `git tag ch14`.
-4. Try the tag in a clean copy. Send: "Clone the tag `ch14` into a new folder, `ch14-check`, next to this folder. In `ch14-check`, install the packages from the lock files, and run the tests and the type checkers for both languages. Show me the output of each command." This is the one step where the agent works outside `brightline-ap`. Expect `git clone --branch ch14 brightline-ap ch14-check`, run from the folder that holds `brightline-ap`. Then expect the commands from Task 1, step 3. Git may say "detached HEAD" after the clone, which is normal for a tag.
+9. Before the live run, say how many vendors and how many open invoices it will print. Each answer from the sample AP system takes about a third of a second, so say also whether the run takes nearer one second or three. Then send: "Run the client against the sample AP system, and show me what it prints." If the tests pass and the live run fails, read the error before you ask for help: [14.7](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#why-did-the-tests-pass-and-the-live-run-fail) says what to look for.
+10. Send: "Stop the sample AP system. Show me that my key is in no commit, and that no test file has changed since my commit. Then commit, with the message "The AP client, from my tests"."
 
-**Checkpoint:** every command passes in `ch14-check`, and `git tag` in `brightline-ap` lists `ch14`. You can delete `ch14-check` afterwards.
+**Checkpoint:** the five calls gave the codes in the answer key. The client's tests pass, and no test has changed. The live run prints the counts in the answer key, in about one second. Your key is in no commit.
 
-**Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-12.md).
+**Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-4.md), attach it, and send [the check message](#the-check-message).
+
+### Task 5. Make it last (15 minutes)
+
+**Dave asks.** "Write down what we accept, and what we do when it is wrong, where the next person will find it, and the next agent."
+
+1. Send:
+
+   > Write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: what an invoice record may hold, what happens to an export with a bad row, and what the client does when the AP system is busy, refuses the key, or does not answer. Put the handover in NOTES.md: where the schema, the loader and the client are in my language, and that the other language does not have them yet. Say each thing once. Show me the diff before you commit.
+
+2. Read the diff. Each rule should be there once, in plain words. Then send: "List each rule this diff adds to AGENTS.md, and beside each one, the words of mine or of Dave's that decided it. Mark any rule that neither of us decided." Ask the agent to take out every marked rule before you commit. A plain fact about where things stand is fine.
+3. Send: "Commit, with the message "What we accept, written down", and tag the commit ch14." If you correct something after the check, ask the agent to move the tag to the new commit.
+4. Open a new session in the same folder. Send:
+
+   > Answer from this project only, and name the file behind each answer. An export has one row with a negative amount. What does Friday's run print? And the AP system answers "busy" twice in a row to the vendors call: how many requests does our client make, and what happens then?
+
+**Checkpoint:** the new session answers both questions from the project's files, and names them. The tag `ch14` is on `main`.
+
+**Check it now.** In the new session, download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch14-key-task-5.md), attach it, and send [the check message](#the-check-message).
+
+### The check message
+
+Send this with each task's key, only when that task is done. It is the same for every task. If a check is Missed, tell the agent what to correct, and send the check message again.
+
+```text
+Outcome:     The task I just finished in this project, graded against
+             the attached answer key: Passed or Missed for each check.
+Context:     This project's files and git history, what we did in this
+             session, and the attached key.
+Format:      A table: the check, Passed or Missed, the evidence, and
+             one line on why. The evidence is a command you ran and
+             what it printed, a line of a file, or my own words. Then
+             how many passed.
+Constraints: Grade only. Change no file and fix nothing. With no
+             evidence, mark the check Missed. If a check is about what
+             I did or said, ask me.
+```
+
+### Look back
+
+- In Task 3, today's code stopped at one bad row. How many bad rows did it never mention? One of them was an open invoice with a negative amount, and a list with it would have been $234.50 too low.
+- The schema could not tell that a vendor is not on the vendor list. Which check caught it, and where does that check live? [14.5](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/schema-rules/#what-can-a-schema-not-check) says why.
+- Your tests for the client count requests. Ask the agent what would still pass if it took the second try out of the client. A test that only looks at the answer would not notice.
+
+### If you want more
+
+Each of these is optional, and has no answer key.
+
+- **The schema as a standard form.** Send: "Show me my invoice schema as JSON Schema." [Chapter 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/a-tool-is-its-description/) uses that form to tell an AI model what a tool accepts.
+- **The same work in the other language.** Send the messages of Tasks 2 to 4 again with the other language set in `AGENTS.md`, and use the same answers.
+- **The same change on a second agent.** Open the folder in a second agent, from your commit of failing tests for the client, on a new branch, and send the message from Task 4, step 8. Compare what each agent asked before it acted.
+- **A new question for the invoices.** Decide the total of the open invoices in `data/invoices.csv`, in cents. Have the agent write a failing test with your number, and then a method on the invoice book that passes it.
 
 ### If something goes wrong
 
 | Problem | What to try |
 | --- | --- |
-| `curl` gets "connection refused" | The API is not running, or runs on another port. Ask the agent to start it in the background with `npm run api`. |
-| `npm run api` says to set `AP_API_KEY` | `.env` is missing. Ask the agent to copy `.env.example` to `.env`, with your made-up key in place of the placeholder, as in Task 7. |
-| `npm run api` says the port is in use | An earlier API is still running. Ask the agent to list the commands it has running in the background, and to stop the old API. |
-| The `503` never comes | Only the first vendors call with your key, after each start, gives 503. Ask the agent to restart the API to see it again. |
-| The concurrency test fails on a slow computer | Ask the agent to run it again with nothing else running. If it still fails, read the client. The two calls must go to `Promise.all` or `asyncio.gather`, not be awaited one by one. |
-| The type checker or Node refuses an `enum` or a parameter property | Ask for the plain form: declare the field, then set it in the constructor. For an `enum`, use a literal type. |
-| The agent edited a test to make it pass | Ask the agent to undo its change to the test. Then tell it in one sentence that the tests are the specification. |
-| Codex cannot reach `localhost` | Its network proxy may block local addresses. Allow `localhost` in its settings for this project. If it still cannot, ask the agent you used for Tasks 1 to 9 to run the tests on `port14-codex`, and say so in your notes. |
-| `git log -p` shows your key | The key was committed. Ask the agent to put a new made-up key in `.env`, and treat the old one as leaked. In real work, revoke it with whoever issued it. |
-| `uv run` cannot find `httpx` or `pydantic` | Ask the agent to run `uv sync` in `py/`. |
-
-### Python only
-
-If you want Python and not TypeScript, do the Python half of each task and use this table for the rest.
-
-| Task | Swap |
-| --- | --- |
-| 3 | Ask for `open_total_cents` and its test only |
-| 4 to 6 | Ask for the Pydantic models, the loader and the export in Python only |
-| 8 | Ask for the httpx client and its tests only |
-| 10, 11 | Give the agent the same four cases, for `py/tests/test_schemas.py`, and ask for the remit email change in `py/brightline_ap/schemas.py`. You are done when those tests pass and `git diff remit-tests -- py/tests/` prints nothing |
-
-### Without a paid Claude plan
-
-Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
-
-If you cannot use the Claude app at all, do Tasks 1 to 9 and 12 in Codex or OpenCode, in the mode that asks before it acts: *Ask for approval* in Codex, or OpenCode with the zip's `opencode.jsonc` in the folder and auto-accept off. Your port is the agent you did not use. Say which in `ports/ch14.md`. Codex may block `localhost`, so before Task 7, make sure it can reach the sample API, as [14.10](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/both-ai-vendors/) explains.
+| `git commit` says "Please tell me who you are" | Git does not know your name yet. Ask the agent to set your name and email for this project only, then to commit again. |
+| The type checker is not found | The packages are not installed. Ask the agent to install them from the lock files. |
+| `uv` downloads Python on the first run | That is normal when no Python 3.12 or later is installed. Let it finish. |
+| The agent answers a value or a case for you | Say: "Do not answer for me. Ask the question again." |
+| The agent edited a test to make it pass | Ask it to put the tests back as they are in your commit. Then tell it in one sentence that the tests are your decisions. |
+| The agent works in the wrong language | Check the line "My language is:" in `AGENTS.md`, then start a new session. |
+| The sample AP system will not start, or says its port is in use | An earlier copy is still running. Ask the agent to list what it has running in the background, and to stop the old one. |
+| A call gets "connection refused" | The sample AP system is not running. Ask the agent to start it in the background. |
+| The five calls in Task 4 give other codes than the key says | The sample AP system had already answered calls since it started. Ask the agent to restart it, and to make the five calls again. |
+| A test about two calls starting together fails on a slow computer | Ask the agent to run it again with nothing else running. |
+| Your key shows up in a commit | Ask the agent to put a new made-up key in the key file, and treat the old one as leaked. In real work, you would cancel it with whoever issued it. |
+| The agent cannot read the attached key | Paste the key's text under the check message. |
 
 ### Apply it to your vertical
 
 Take one export or API from your own work, and describe one record in your own words: every field, its type, and what makes a value invalid. Write three bad records by hand, each wrong in a different way. Ask any coding agent to write a loader test from them that expects all three to be reported, and read the test against your records before you approve it. Then ask it to write the loader. Name who receives the loader's report when it refuses a record, and what the run does then. If the data comes from an API, write down the status codes it can return, and what your client should do for each, before any code exists.
 
 *Domain expert and builder.* The domain expert says what makes a record invalid, including the rules that compare records, such as an unknown vendor, and who must hear when a record is refused. The agent writes them as a schema and checks. The builder reads each rule against the expert's list, and keeps the keys out of the repository.
-
-### Artifact checklist
-
-- [ ] Your import graph with its edges marked, and your method sentences, in `NOTES.md`
-- [ ] `Terms` as a literal type in both languages, narrowed where text enters, and the planted calls fixed
-- [ ] `openTotalCents` with its test, in both languages
-- [ ] `src/schemas.ts` and `py/brightline_ap/schemas.py` with their tests, both lock files committed, and one wrong value they pass in `NOTES.md`
-- [ ] The loader reporting 11 valid rows and 4 errors with line numbers, in both languages
-- [ ] Two JSON exports and one JSON Schema difference in `NOTES.md`
-- [ ] `.env` ignored by git, and your key in no commit
-- [ ] The API client in both languages, with tests for pages, retry, no retry on 401, concurrency and timeout
-- [ ] Your SDK shape labels in `NOTES.md`
-- [ ] The branch `remit-tests`, and at least one of `port14-codex` and `port14-opencode`
-- [ ] `ports/ch14.md` on main, ending with the next change
-- [ ] Tag `ch14`, with every command passing in a clean clone
-- [ ] Extension: the second port, and a schema for one record from your own work

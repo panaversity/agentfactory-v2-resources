@@ -1,4 +1,4 @@
-# Lab 13 answer key: Task 6. The weekend
+# Lab 13 answer key: Task 6. Make it last
 
 The answers for Task 6 of Lab 13, in Chapter 13 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
@@ -12,50 +12,29 @@ Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5
 
 | # | Check | Passed when | Missed when |
 | --- | --- | --- | --- |
-| 27 | My prediction came first | My prediction is in `NOTES.md` on `weekend-rule`, in a commit made before the commit of the weekend tests | There is no prediction, or it was committed with the rule or after it |
-| 28 | My four answers | They match the table below. Read them from the tests, or ask me | Any answer differs |
-| 29 | Tests first, and unchanged | On `weekend-rule`, the weekend tests were committed before the rule, and they have not changed since | The tests changed after their commit |
-| 30 | The branch passes | On `weekend-rule`, every test passes and the type checker is clean | A test fails |
-| 31 | Friday's list on the branch | On `weekend-rule`, it ends with `10 invoices, total $33,109.53` | Any other last line. The table "Find your total" says what each one means |
-| 32 | Friday's list on main | On `main`, it still ends with `8 invoices, total $19,229.53`, and `main` has no weekend commit | The weekend rule is on `main` |
+| 28 | The terms rule is in the rules file | On `main`, `AGENTS.md` names the five terms, and says that any other stops the run | The rule is missing, or it is only in `NOTES.md` |
+| 29 | The handover | On `main`, `NOTES.md` says where the due-date rule lives in my language, and that the other language still has the old rule. It says the weekend rule is on the branch `weekend-rule`, is not reviewed yet, and is not on `main` | Either part is missing |
+| 30 | Said once | Each of today's rules appears once in `AGENTS.md` or `NOTES.md`, and no rule was added that I did not decide. Ask me about any added rule you are not sure of | One of today's rules is stated twice in one file, or a rule was added that I never decided |
+| 31 | The tag | `git tag` lists `ch13`, on a commit of `main` | There is no tag, or it is on the branch |
+| 32 | The new session, on Net 10 | You, the new session, answered that the run stops with `Unknown terms: Net 10`, and named a file of this project for it | The answer was a guess, or named no file |
+| 33 | The new session, on Saturday | You answered that an invoice due on a Saturday is not on this Friday's list, because the weekend rule is on the branch `weekend-rule` and not on `main`, and named the file that says so | The answer was yes, or it did not mention the branch |
 
-## The four answers
+## The five terms
 
-| Case | Due date | Paid on | Why |
-| --- | --- | --- | --- |
-| 1 | 2027-03-06, a Saturday | 2027-03-05 | The Friday before |
-| 2 | 2027-03-07, a Sunday | 2027-03-05 | The Friday before, two days back |
-| 3 | 2027-03-08, a Monday | 2027-03-08 | Not a weekend, so it does not move |
-| 4 | 2026-08-01, a Saturday | 2026-07-31 | The Friday before is in the month before |
-
-## Find your total
-
-| Friday's list on `weekend-rule` | Result | What it means |
-| --- | --- | --- |
-| 10 invoices, total $33,109.53 | Passed | The 8 from before, plus INV-8303 and INV-8308 |
-| 9 invoices, total $32,129.53 | Missed | INV-8308 is missing. It has no due date. Its due date works out to Saturday, March 6, from February 19 plus Net 15, so the weekend rule applies to it too |
-| 9 invoices, total $20,209.53 | Missed | INV-8303 is missing. It states a due date of Saturday, March 6 |
-| 11 invoices, total $34,691.53 | Missed | INV-8306 was added. It is due on Monday, March 8, and a Monday does not move |
-| 8 invoices, total $19,229.53 | Missed | The script for Friday's list does not use the weekend rule yet |
-
-For any other total, compare the list with Task 1's list, and find the invoices that were added.
-
-The two invoices the rule adds:
-
-| Invoice | Vendor | Due | Amount |
-| --- | --- | --- | --- |
-| INV-8303 | Great Lakes Freight | Saturday, March 6, stated | $12,900.00 |
-| INV-8308 | Cardinal Forklift Service | Saturday, March 6, worked out | $980.00 |
-
-## If my prediction was wrong
-
-A prediction of 9 invoices is the common one. The test that held it failed, and the rule tests passed. That is the lab working: two of my own decisions disagreed, and the tests showed it before any payment did. The fix is to correct the prediction, and say so. Never change the rule to match a wrong count.
+Due on receipt, Net 15, Net 30, Net 45 and Net 60. Any other terms stop the run with `Unknown terms: ` and the terms it found.
 
 ## Look back
 
-Open `NOTES.md`, and read the list "Nobody chose these yet" from Task 1. Is the weekend on it? In the authors' test runs, it never was. An agent asked for every unstated choice listed ten or more of them, and missed the one that would have left a $12,900.00 invoice unpaid. A rule that is missing has no line of code to point at. Only someone who knows the business can name it.
+The lab page ends with three Look back points. The three places your choices live now are the tests, the rules file `AGENTS.md`, and the handover in `NOTES.md`.
+
+- In the overview, Renee made her choice once, and it stayed in a chat. Yours are in files a new session reads.
+- Which of today's rules did the agent choose when it wrote the script, and which did you choose today?
+- The weekend rule is on a branch. [Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/overview/) is about how such a change is reviewed before it reaches `main`.
 
 ## Never a deduction
 
-- The name of the weekend function.
-- A prediction that was wrong and then corrected, with the reason said.
+- The words of a rule, when its meaning is right.
+- A line that was in the file before today.
+- A plain fact about where things stand, such as which language has the weekend rule, or what Friday's list prints on the branch. A fact is not a rule.
+- A sentence that only says one of my decisions again in other words.
+- Which project file the new session names, when that file does say it.

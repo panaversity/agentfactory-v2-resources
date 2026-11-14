@@ -12,7 +12,7 @@ const book = new InvoiceBook(
   new VendorDirectory(readRows(read("vendors.csv")).map(vendorFromRow)),
 );
 
-test("dueBy gives the Chapter 12 answer", () => {
+test("dueBy gives Friday's list", () => {
   const lines = book.dueBy("2027-03-05");
   assert.equal(lines.length, 8);
   assert.equal(lines.reduce((sum, l) => sum + l.cents, 0), 1922953);

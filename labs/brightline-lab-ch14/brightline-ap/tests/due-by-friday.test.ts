@@ -10,11 +10,6 @@ test("an empty due_date is computed from the terms", () => {
   assert.deepEqual(dueBy(csv, vendors, "2027-03-05").map((r) => r.due), ["2027-03-05"]);
 });
 
-test("an empty due_date with unknown terms is an error, not a guess", () => {
-  const csv = header + "INV-1,V001,2027-01-28,,Net 10,100000,open\n";
-  assert.throws(() => dueBy(csv, vendors, "2027-03-05"), /Unknown terms: Net 10/);
-});
-
 test("paid invoices are left out", () => {
   const csv = header + "INV-1,V001,2027-01-29,2027-02-28,Net 30,312000,paid\n";
   assert.equal(dueBy(csv, vendors, "2027-03-05").length, 0);

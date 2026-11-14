@@ -18,8 +18,7 @@ pythonpath = ["."]
 
 [tool.pyright]
 typeCheckingMode = "strict"
-include = ["brightline_ap", "tests", "../exercises"]
-exclude = ["../exercises/sdk-shaped"]
+include = ["brightline_ap", "tests"]
 
 [tool.ruff]
 line-length = 100

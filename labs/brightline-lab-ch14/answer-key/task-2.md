@@ -1,48 +1,53 @@
-# Lab 14 answer key: Task 2. Write the types
+# Lab 14 answer key: Task 2. What may a record hold?
 
 The answers for Task 2 of Lab 14, in Chapter 14 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 2 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-Your agent's code may differ from this key in wording and layout. Compare the results.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-## Before the change
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-Neither type checker catches `"Net 10"`. `npm run typecheck` and `npm run check:py` both pass, because `terms` is only a `string`, and `"Net 10"` is a string. Running the planted call shows the problem only at run time: `node exercises/wrong-call.ts` throws `Error: Unknown terms: Net 10`.
+## Checks
 
-## After the change to `Terms`
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 8 | My eight answers | The answers I gave match the table below. Read them from the tests, or ask me | Any answer differs |
+| 9 | The tests hold my answers | There is one test for each of the eight values, with my value and my answer | A value has no test, or a test holds a different value or answer |
+| 10 | The package was checked first | Before any install, the agent told me the package's exact name, who publishes it, and how many other packages come with it. The name is `zod` in TypeScript, or `pydantic` in Python | The install came first, or another package was installed without my asking why |
+| 11 | Failing first | The eight tests failed because the schema did not exist yet, and one commit, "Failing tests for the invoice schema", holds the new test file and nothing else | They passed, they failed for another reason, or the commit holds other files |
+| 12 | The schema passes | Every test passes, and the type checker is clean. The lock file of my language changed, and it names the one package | A test fails, or a second package was added |
+| 13 | My tests are still mine | No test file has changed since my commit of the failing tests | A test file changed |
+| 14 | The text amount | I said what the schema would do with the amount `"482500"` as text before the run, and then saw the result. Ask me what I said | It was not run, or I did not say first |
+| 15 | The commit | A commit, "The invoice schema, from my tests", holds the schema and the lock file | It is not committed |
 
-`npm run typecheck` reports 6 errors:
+## The eight answers
 
-```text
-exercises/wrong-call.ts(4,35): error TS2345: Argument of type '"Net 10"' is not assignable to parameter of type 'Terms'.
-src/invoice-book.ts(22,52): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Terms'.
-src/list-vendors.ts(19,61): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Terms'.
-src/list-vendors.ts(19,82): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Terms'.
-src/reconcile.ts(14,48): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Terms'.
-tests/due-date.test.ts(26,45): error TS2345: Argument of type '"Net 10"' is not assignable to parameter of type 'Terms'.
-```
+| # | Field and value | Answer | Dave's words |
+| --- | --- | --- | --- |
+| 1 | amount 482500 | Accept | Whole cents, zero or more |
+| 2 | amount -23450 | Refuse | "No credits come through this export" |
+| 3 | amount 4825.5 | Refuse | Whole cents: half a cent is not a whole cent |
+| 4 | amount 0 | Accept | "Zero or more" |
+| 5 | terms Net 10 | Refuse | "The terms are our five": Due on receipt, Net 15, Net 30, Net 45, Net 60 |
+| 6 | invoice date 2026-13-02 | Refuse | "A date is a real date". There is no month 13 |
+| 7 | due date blank | Accept | "The due date may be blank, because we work it out from the terms" |
+| 8 | number 8301 | Refuse | "The number is INV- and then digits" |
 
-`npm run check:py` reports 5, in `wrong_call.py`, `invoice_book.py`, `list_vendors.py`, `reconcile.py` and `test_due_date.py`.
+Value 2 is a decision about Brightline's data, not about numbers. In a company whose export holds credits, a negative amount would be accepted. Decide each rule from what your own data can hold.
 
-| Kind | TypeScript | Python |
-| --- | --- | --- |
-| Raw text from a file | 4 (`invoice-book.ts`, `list-vendors.ts` twice, `reconcile.ts`) | 3 (`invoice_book.py`, `list_vendors.py`, `reconcile.py`) |
-| The test that checks unknown terms on purpose | 1 | 1 |
-| The planted call | 1 | 1 |
+## The text amount
 
-Line and column numbers can differ a little with your agent's code. The counts should not.
+| Language | What the schema does with `"482500"` as text |
+| --- | --- |
+| TypeScript | Zod refuses it. Text is not a number, and Zod changes nothing for you |
+| Python | Pydantic turns it into the number 482500, unless the agent made the model strict, and then it refuses it |
 
-## The fix
+Either result is right for this check. What matters is that you now know which one your schema gives, because every value from a file arrives as text. Task 3's loader is where the text of an amount becomes a number.
 
-Raw text becomes `Terms` once, where it is read:
+## Never a deduction
 
-- `invoiceFromRow` and `vendorFromRow` call `parseTerms`, so `Invoice.terms` and `Vendor.terms` are `Terms`. That fixes the error in `invoice-book.ts` too, without touching it.
-- `reconcile` and `list-vendors` call `parseTerms` on the column they read.
-- Python does the same with `parse_terms` in `invoice_from_row`, `vendor_from_row`, `reconcile` and `list_vendors`.
-
-`termsDays` and `dueDate` still throw `Unknown terms: <text>` at run time, so the test of unknown terms still passes. A type is erased when Node runs the file, so the run-time check stays.
-
-The tests change by two comments only, `// @ts-expect-error` above the unknown-terms call in `tests/due-date.test.ts`, and `# pyright: ignore[reportArgumentType]` at the end of that line in `py/tests/test_due_date.py`. If the agent changed what a test checks, or added a cast such as `as Terms` to silence the checker, ask it to undo that: a cast goes around the type, as Figure 14.2 says.
-
-After step 4, only the two planted calls fail. After step 5, `"Net 15"` in both, every check passes: 20 TypeScript tests and 14 Python tests, with no type errors.
+- The words of a rule's message.
+- More tests than eight.
+- A schema that is strict about text in Python.
+- The names the agent chose, when they follow `AGENTS.md`.
