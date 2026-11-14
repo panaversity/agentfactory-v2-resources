@@ -40,7 +40,7 @@ Brightline's scripts take data from two places they do not control: the vendor p
    > Show me a map of the files in my language: for each file, one line on what it does, and which files it uses. Mark every place where data comes in from outside the project: a file that is read, and each function that turns a row of text into a record. Then name the two files that the most other files use. Change nothing.
 
 7. Compare the map with your three answers. A file that takes data in is where a bad value gets its first chance, so it is where a check belongs. The two files most others use are the ones to read first before any change, as [14.1](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/modules/) says.
-8. Send: "Take the function that turns a row of the export into an invoice. Run it on two invented rows, one with a blank amount and one with a negative amount, and show me what it gives for each. Change nothing." Nothing in today's code refuses either one.
+8. Send: "Take the function that turns a row of the export into an invoice. Run it on two invented rows, one with a blank amount and one with a negative amount, and show me what it gives for each. Change nothing." Nothing in today's code checks an amount, so see what your language does with each one.
 9. Send: "Add the map to NOTES.md, under the heading "Where data comes in". Then commit, with the message "Where data comes in"."
 
 **Checkpoint:** the tests and the type checker pass. Friday's list prints 8 invoices, total $19,229.53. `NOTES.md` holds the map, with the places where data comes in.
@@ -49,7 +49,7 @@ Brightline's scripts take data from two places they do not control: the vendor p
 
 ### Task 2. What may a record hold? (30 minutes)
 
-**Dave asks.** "Write down what an invoice from the portal may hold. The number is INV- and then digits. The amount is whole cents, zero or more: no credits come through this export. The terms are our five. A date is a real date. The due date may be blank, because we work it out from the terms."
+**Dave asks.** "Write down what an invoice from the portal may hold. The number is INV- and then digits. The amount is whole cents, zero or more: no credits come through this export. The terms are our five: Due on receipt, Net 15, Net 30, Net 45 and Net 60. A date is a real date. The due date may be blank, because we work it out from the terms."
 
 You decide what the code accepts before any check exists. A schema will hold your answers, as [14.4](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/data-models-and-schemas/) shows.
 
@@ -130,7 +130,7 @@ A small server in the project stands in for the AP system. It runs only on your 
 
    > Write one failing test for each of my answers, for a client that does not exist yet. Name it and place it as AGENTS.md says, and test it as AGENTS.md says, so that each test counts the requests the server gets. Add two more tests: each page of the open invoices is asked for exactly once, and a server that stays busy gets two requests and no more. If the tests need a package, tell me its exact name, and install nothing yet. Write only the tests, run them, and show me that they fail. Then commit only the tests, with the message "Failing tests for the AP client".
 
-   If the agent names a package, ask the three questions of Task 2, step 5, before you say yes. In Python the name should be `httpx`. In TypeScript no package is needed.
+   If the agent names a package, ask the three questions of Task 2, step 5, before you say yes. In Python the agent may name `httpx`. In TypeScript no package is needed.
 8. Send:
 
    > Write the client so my tests pass. It gets the vendors and every page of the open invoices, and it starts the vendors call and the first invoices call together. It checks every invoice in an answer with my schema. Do not change any test. Add a command that runs it against the sample AP system and prints how many vendors and open invoices it got, and how long it took, and add that command to the table in AGENTS.md. Then run the tests and the type checker. Do not run the new command yet.
@@ -151,7 +151,7 @@ A small server in the project stands in for the AP system. It runs only on your 
    > Write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: what an invoice record may hold, what happens to an export with a bad row, and what the client does when the AP system is busy, refuses the key, or does not answer. Put the handover in NOTES.md: where the schema, the loader and the client are in my language, and that the other language does not have them yet. Say each thing once. Show me the diff before you commit.
 
 2. Read the diff. Each rule should be there once, in plain words. Then send: "List each rule this diff adds to AGENTS.md, and beside each one, the words of mine or of Dave's that decided it. Mark any rule that neither of us decided." Ask the agent to take out every marked rule before you commit. A plain fact about where things stand is fine.
-3. Send: "Commit, with the message "What we accept, written down", and tag the commit ch14."
+3. Send: "Commit, with the message "What we accept, written down", and tag the commit ch14." If you correct something after the check, ask the agent to move the tag to the new commit.
 4. Open a new session in the same folder. Send:
 
    > Answer from this project only, and name the file behind each answer. An export has one row with a negative amount. What does Friday's run print? And the AP system answers "busy" twice in a row to the vendors call: how many requests does our client make, and what happens then?
