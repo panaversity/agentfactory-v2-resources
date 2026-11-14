@@ -20,8 +20,8 @@ Install Git, Node.js and uv yourself, before Lab 13. The coding agent installs o
 | Node.js | Runs the TypeScript files directly | 24 or later. The current long-term support (LTS) release is 26 | nodejs.org |
 | uv | Installs Python, creates the Python project, runs Python commands | Any 0.11 or later | docs.astral.sh/uv |
 | Python | Runs the Python versions | 3.12 or later. uv can install it for you | Installed by uv |
-| TypeScript, `@types/node` | The type checker | Added by Lab 13, Task 1, as dev dependencies | npm |
-| pytest, Pyright, Ruff | Tests, type checker, linter for Python | Added by Lab 13, Task 1, as dev dependencies | PyPI, through uv |
+| TypeScript, `@types/node` | The type checker | Added by Lab 13, as dev dependencies | npm |
+| pytest, Pyright, Ruff | Tests, type checker, linter for Python | Added by Lab 13, as dev dependencies | PyPI, through uv |
 | Zod, Pydantic, httpx | Schemas and the HTTP client | Added by Lab 14 | npm and PyPI |
 
 ## Check what you have
@@ -76,7 +76,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 ## The packages the labs add
 
-Lab 13, Task 1, in the repository folder:
+Lab 13, in the repository folder:
 
 ```bash
 npm install --save-dev typescript @types/node@24
@@ -84,7 +84,7 @@ cd py
 uv add --dev pytest pyright ruff
 ```
 
-Lab 14, Task 4 and Task 8:
+Lab 14, Tasks 2 and 4:
 
 ```bash
 npm install zod
@@ -110,7 +110,7 @@ Lab 14 needs one secret, a made-up key for the sample API. Copy `.env.example` t
 
 ## Windows notes
 
-- Run the labs in PowerShell or Git Bash. The `TZ=...` time-zone check in Lab 13, Task 6 needs Git Bash or WSL.
+- Run the labs in PowerShell or Git Bash. The `TZ=...` time-zone check needs Git Bash or WSL.
 - Python in a virtual environment is at `py\.venv\Scripts\python.exe`, not `py/.venv/bin/python`.
 - `curl` comes with Windows 10 and later. In PowerShell, type `curl.exe` if `curl` behaves differently.
 - Git may change line endings to Windows style when it checks out files. The labs' scripts and tests handle both.
