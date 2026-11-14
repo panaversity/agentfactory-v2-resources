@@ -27,7 +27,7 @@ Brightline's scripts take data from two places they do not control: the vendor p
 2. If you chose Python for the lessons, send: "Set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do.
 3. Send: "Put this folder under git, with a main branch, and commit everything with the message "The project as I received it"." If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
 4. Send: "Install the packages from the lock files. Then run the tests and the type checker for my language, and Friday's list for 2027-03-05."
-5. Before you ask for anything more, say which of these three files takes data in from outside the project. Write yes or no for each, on paper or in a note. Go by the names alone.
+5. Before you ask for anything more, say which of these three files takes data in from outside the project. A file takes data in when it reads a file from `data/`, or an answer from another system. Write yes or no for each, on paper or in a note. Go by the names alone.
 
    | The file that | TypeScript | Python |
    | --- | --- | --- |
@@ -71,7 +71,7 @@ You decide what the code accepts before any check exists. A schema will hold you
 
    > Install that one package, and write the schema so my eight tests pass. Give each rule a short message that says what is allowed. Do not change any test. Then run the tests and the type checker, and show me which files changed since my commit.
 
-   The lock file should be among them, and no test file.
+   The lock file, which lists the exact version of each package, should be among them, and no test file.
 8. Send: "Show me the schema as a table: each field, its rule in plain words, and the line that carries it." Read each rule against Dave's words. If a rule is there that Dave did not ask for, or one is missing, say so.
 9. Your tests never tried an amount that arrives as text. A file gives every value as text, so say what the schema will do with `"482500"`, in quotes, and write it down. Then send: "Run the schema on INV-8301 from data/invoices.csv, with its amount as the text "482500", and show me the result. Change nothing." [14.5](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/schema-rules/#does-the-library-change-values-for-me) says why the two languages differ.
 10. Send: "Commit, with the message "The invoice schema, from my tests"."
@@ -87,7 +87,7 @@ You decide what the code accepts before any check exists. A schema will hold you
 1. Send: "Show me data/invoices-messy.csv as a table with line numbers, and data/vendors.csv beside it. Line 1 is the header. Change nothing."
 2. Find the bad lines yourself, from Dave's words in Task 2 and in this task. Write down how many there are, and their line numbers.
 3. Send: "Run Friday's list for 2027-03-05 on invoices-messy.csv. Show me the whole output. Do not explain it, and do not fix anything." Read the error as you did in [Lab 13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/lab/). Today's code stops at one bad row, and it says nothing about the others.
-4. Send, with your own lines and count:
+4. Send this, with your own count and your own lines in place of the two parts in square brackets:
 
    > Write failing tests for a loader that does not exist yet. It checks every row of an export with my schema, and checks that the row's vendor is on the vendor list. It gives back the good invoices and a list of every problem, each with its line number, its invoice number and a message. It does not stop at the first problem. My cases: data/invoices.csv gives 15 good invoices and no problems. data/invoices-messy.csv gives [count] problems, on lines [your lines]. A row whose amount is blank is a problem, never a zero. Name the loader and place it as AGENTS.md says. Write only the tests, run them, and show me that they fail. Then commit only the tests, with the message "Failing tests for the export report".
 
@@ -133,7 +133,7 @@ A small server in the project stands in for the AP system. It runs only on your 
    If the agent names a package, ask the three questions of Task 2, step 5, before you say yes. In Python the name should be `httpx`. In TypeScript no package is needed.
 8. Send:
 
-   > Write the client so my tests pass. It gets the vendors and every page of the open invoices, and it starts the vendors call and the first invoices call together. It checks every invoice in an answer with my schema. Do not change any test. Add a command that runs it against the sample AP system and prints how many vendors and open invoices it got, and how long it took, and add that command to the table in AGENTS.md. Then run the tests and the type checker.
+   > Write the client so my tests pass. It gets the vendors and every page of the open invoices, and it starts the vendors call and the first invoices call together. It checks every invoice in an answer with my schema. Do not change any test. Add a command that runs it against the sample AP system and prints how many vendors and open invoices it got, and how long it took, and add that command to the table in AGENTS.md. Then run the tests and the type checker. Do not run the new command yet.
 
 9. Before the live run, say how many vendors and how many open invoices it will print. Each answer from the sample AP system takes about a third of a second, so say also whether the run takes nearer one second or three. Then send: "Run the client against the sample AP system, and show me what it prints." If the tests pass and the live run fails, read the error before you ask for help: [14.7](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/json-and-rest-apis/#why-did-the-tests-pass-and-the-live-run-fail) says what to look for.
 10. Send: "Stop the sample AP system. Show me that my key is in no commit, and that no test file has changed since my commit. Then commit, with the message "The AP client, from my tests"."
@@ -150,7 +150,7 @@ A small server in the project stands in for the AP system. It runs only on your 
 
    > Write down what I decided today, so a new session knows it without this chat. Put the rules an agent must follow in AGENTS.md: what an invoice record may hold, what happens to an export with a bad row, and what the client does when the AP system is busy, refuses the key, or does not answer. Put the handover in NOTES.md: where the schema, the loader and the client are in my language, and that the other language does not have them yet. Say each thing once. Show me the diff before you commit.
 
-2. Read the diff. Each rule should be there once, in plain words. If the agent added a rule you did not decide, ask it to take that rule out before you commit. A plain fact about where things stand is fine.
+2. Read the diff. Each rule should be there once, in plain words. Then send: "List each rule this diff adds to AGENTS.md, and beside each one, the words of mine or of Dave's that decided it. Mark any rule that neither of us decided." Ask the agent to take out every marked rule before you commit. A plain fact about where things stand is fine.
 3. Send: "Commit, with the message "What we accept, written down", and tag the commit ch14."
 4. Open a new session in the same folder. Send:
 
@@ -205,7 +205,7 @@ Each of these is optional, and has no answer key.
 | The agent works in the wrong language | Check the line "My language is:" in `AGENTS.md`, then start a new session. |
 | The sample AP system will not start, or says its port is in use | An earlier copy is still running. Ask the agent to list what it has running in the background, and to stop the old one. |
 | A call gets "connection refused" | The sample AP system is not running. Ask the agent to start it in the background. |
-| Call 2 in Task 4 gives 200, not what the key says | Only the first vendors call with your key, after each start, is different. Ask the agent to restart the sample AP system, and make the five calls again. |
+| The five calls in Task 4 give other codes than the key says | The sample AP system had already answered calls since it started. Ask the agent to restart it, and to make the five calls again. |
 | A test about two calls starting together fails on a slow computer | Ask the agent to run it again with nothing else running. |
 | Your key shows up in a commit | Ask the agent to put a new made-up key in the key file, and treat the old one as leaked. In real work, you would cancel it with whoever issued it. |
 | The agent cannot read the attached key | Paste the key's text under the check message. |
