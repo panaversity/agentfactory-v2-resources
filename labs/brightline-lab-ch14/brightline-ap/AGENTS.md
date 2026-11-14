@@ -1,31 +1,55 @@
 # brightline-ap
 
-Scripts the accounts payable (AP) team at Brightline Wholesale Supply runs on invoice exports. TypeScript on Node.js 24, run directly with no build step. Python versions of the same scripts live in `py/`, run with uv.
+Scripts the accounts payable (AP) team at Brightline Wholesale Supply runs on invoice exports. Every script is kept in two languages: TypeScript in `src/`, and Python in `py/`. Both versions follow the same rules and print the same output.
+
+My language is: TypeScript
+
+Work in my language. Leave the other language's files as they are, unless I ask you to change them.
 
 ## Build and test
 
-- `npm test` runs every test in `tests/`. Every change needs a passing test.
-- `npm run typecheck` checks the TypeScript types. Node does not check them when it runs a file.
-- `npm run test:py` runs the Python tests, and `npm run check:py` runs Pyright and Ruff.
-- Never change a test to make it pass. If you think a test is wrong, stop and say why.
-- `npm run vendors` lists the vendors. `npm run due -- 2027-03-05` lists the open invoices due by a cutoff date.
+| What | TypeScript | Python |
+| --- | --- | --- |
+| The tests | `npm test` | `npm run test:py` |
+| The type checker | `npm run typecheck` | `npm run check:py` |
+| Friday's list | `npm run due -- 2027-03-05` | `npm run due:py -- 2027-03-05` |
+| The vendor list | `npm run vendors` | `npm run vendors:py` |
+
+To run Friday's list on another export in `data/`, add its file name: `npm run due -- 2027-03-05 invoices-messy.csv`.
+
+Every change needs a passing test, and a clean type check.
+
+## The sample AP system
+
+`scripts/ap-api.ts` is a small server that stands in for the AP system. It runs only on this computer, and it is the same for both languages.
+
+- Its key comes from `.env`. To set it up, copy `.env.example` to `.env` and put the key there. Git ignores `.env`. Never commit it, and never print the key.
+- Start it with `npm run api`, in the background. It listens on `http://localhost:4010`.
+- Every request needs the header `X-API-Key`. `GET /vendors` gives the vendors. `GET /invoices?status=open&page=1` gives one page of open invoices.
+- To make single calls by hand, use `curl -i`.
+- A TypeScript test starts its own copy with `createApApi` from `scripts/ap-api.ts`, on a free port, and counts the requests it receives. A Python test uses a fake server inside the test that counts its own requests.
 
 ## House rules
 
 - Dates are ISO, such as 2027-03-05, in code and output.
 - Amounts are whole cents. Never use floating-point money.
-- Every new script gets a test in `tests/`, and `npm test` must pass before you say you are done.
-- Do not install packages without asking.
+- Every new script gets a test, and the tests must pass before you say you are done.
+- Do not install packages without asking. Say the exact name first.
 - Node runs the TypeScript files directly, with no build step. Use only type annotations, no `enum` or `namespace`, and import local files with the `.ts` extension.
+- Python has type hints on every function, and passes Pyright in strict mode. Add a Python package with `uv add`, never `pip install`.
 - Split lines on `\r?\n`. The exports may have Windows line endings.
 
 ## Never
 
 - Never write to `data/`. The scripts and tests depend on it.
 - Never print bank account numbers.
+- Never change a test to make it pass. If you think a test is wrong, stop and say why.
 
 ## Where things go
 
-- Scripts in `src/`, one script per file. Tests in `tests/`, named `<script>.test.ts`.
-- Python in `py/brightline_ap/`, tests in `py/tests/`, named `test_<module>.py`. Add Python packages with `uv add`, never `pip install`, and only after asking.
-- `NOTES.md` is the handover for the next session. `ports/` records what changed on each agent.
+- TypeScript scripts in `src/`, one script per file. Their tests in `tests/`, named `<script>.test.ts`.
+- Python scripts in `py/brightline_ap/`. Their tests in `py/tests/`, named `test_<script>.py`.
+- The schema for a record: `src/schemas.ts`, or `py/brightline_ap/schemas.py`.
+- The loader that checks an export: `src/load-invoices.ts`, or `py/brightline_ap/load_invoices.py`.
+- The client for the AP system: `src/ap-client.ts`, or `py/brightline_ap/ap_client.py`.
+- `NOTES.md` is the handover for the next session.

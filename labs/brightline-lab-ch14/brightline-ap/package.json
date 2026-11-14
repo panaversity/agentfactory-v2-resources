@@ -13,8 +13,11 @@
     "test:py": "cd py && uv run pytest",
     "check:py": "cd py && uv run pyright && uv run ruff check",
     "vendors": "node src/list-vendors.ts",
+    "vendors:py": "cd py && uv run python -m brightline_ap.list_vendors",
     "due": "node src/due-by-friday.ts",
+    "due:py": "cd py && uv run python -m brightline_ap.due_by_friday",
     "reconcile": "node src/reconcile.ts",
+    "reconcile:py": "cd py && uv run python -m brightline_ap.reconcile",
     "api": "node --env-file-if-exists=.env scripts/ap-api.ts"
   },
   "devDependencies": {

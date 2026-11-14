@@ -1,48 +1,56 @@
-# Lab 14 answer key: Task 1. Read the shape
+# Lab 14 answer key: Task 1. Where does data come in?
 
 The answers for Task 1 of Lab 14, in Chapter 14 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 1 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-## The import graph
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-At the start of the lab, these are the local imports in `src/` and `scripts/`. An arrow means "imports".
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-```text
-due-by-friday    -> csv, invoice, invoice-book, money, vendor
-invoice-book     -> due-date, invoice, vendor
-invoice          -> csv
-vendor           -> csv
-reconcile        -> csv, due-date
-list-vendors     -> due-date
-scripts/ap-api   -> csv
-csv, due-date, money -> nothing local
-```
+## Checks
 
-An `import type` line is an arrow too. Node erases it when it runs the file, but the type checker reads it.
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 1 | The first commit | The first commit, "The project as I received it", holds the project as it was unzipped | There is no such commit, or it holds later changes |
+| 2 | Installed, and passing | The packages came from the lock files. The tests and the type checker for my language pass | Either fails, or a package was added that the lock files do not name |
+| 3 | Friday's list | Friday's list for 2027-03-05 prints 8 invoices, total $19,229.53 | Another count or total |
+| 4 | My three answers came first | I said yes or no for the three files before I asked for the map. Ask me what I said | I asked for the map first |
+| 5 | The map | `NOTES.md` has the heading "Where data comes in". Under it, every file of my language has its line, and the places in the table below are marked as places where data comes in | A place in the table is not marked, or the map is not in `NOTES.md` |
+| 6 | Blank and negative | In this session, the function that turns a row into an invoice was run on a blank amount and on a negative amount, and I saw both results | Either was not run |
+| 7 | The commit | A commit, "Where data comes in", holds the change to `NOTES.md` | It is not committed |
 
-**The two files most others import** are `csv.ts`, imported by five files, and `due-date.ts`, imported by three. `money.ts` is imported by one. Nothing in `src/` or `scripts/` imports `due-by-friday.ts`, `reconcile.ts`, `list-vendors.ts` or `scripts/ap-api.ts`: they are entry points, which you run. The tests import the first three.
+## The three files
 
-The Python package has the same arrows for the modules it has: `invoice`, `vendor` and `reconcile` import `csv_rows`; `invoice_book`, `list_vendors` and `reconcile` import `due_date`; `invoice_book` imports `invoice` and `vendor`. It has no Friday list and no API, and nothing imports `money.py` yet.
-
-## The edges
-
-Each file that reads `data/`, and each function that turns a row into a record, with what it does with a blank amount:
-
-| Edge | What it reads | A blank amount |
+| The file that | Takes data in from outside? | Why |
 | --- | --- | --- |
-| `src/due-by-friday.ts` | `data/invoices.csv` and `data/vendors.csv` | Passes each row to `invoiceFromRow` |
-| `invoiceFromRow` in `src/invoice.ts` | One invoice row | Converts the amount with `Number`, and `Number("")` is 0. It checks nothing, so a blank becomes $0.00 with no warning. If INV-8301's amount were blank, the Friday list would still show 8 invoices, INV-8301 at $0.00, and a total of $14,404.53 |
-| `scripts/ap-api.ts` | `data/invoices.csv` and `data/vendors.csv` | Also converts with `Number`, so it would serve `amountCents: 0` |
-| `src/list-vendors.ts` (`parseVendors`) and `vendorFromRow` in `src/vendor.ts` | `data/vendors.csv`, one vendor row | No amount. They copy the text as it is |
-| `src/reconcile.ts` | The file named on the command line | Reads no amount |
-| `readRows` in `src/csv.ts` | Any export | Splits on commas and checks nothing. A missing cell becomes `""` |
-| `invoice_from_row` in `py/brightline_ap/invoice.py` | One invoice row | `int("")` raises `ValueError`, so the Python side stops with an error. The two languages differ here |
+| Makes Friday's list | Yes | It reads the invoice export and the vendor list from `data/` |
+| Holds the invoices and answers questions about them | No | It is given invoices that another file already read |
+| Lists the vendors | Yes | It reads the vendor list from `data/`, with its own small reader |
 
-Any one of these, with what it does to a blank amount, passes. The one that matters most is `invoiceFromRow`, because Friday's payment list reads through it.
+## Where data comes in
 
-## The dependencies and the lock files
+| Place | TypeScript | Python |
+| --- | --- | --- |
+| Reads the invoice export and the vendor list | `src/due-by-friday.ts` | `py/brightline_ap/due_by_friday.py` |
+| Reads the vendor list | `src/list-vendors.ts` | `py/brightline_ap/list_vendors.py` |
+| Reads an export to compare due dates | `src/reconcile.ts` | `py/brightline_ap/reconcile.py` |
+| Turns a row into an invoice | `invoiceFromRow` in `src/invoice.ts` | `invoice_from_row` in `py/brightline_ap/invoice.py` |
+| Turns a row into a vendor | `vendorFromRow` in `src/vendor.ts`, and `parseVendors` in `src/list-vendors.ts` | `vendor_from_row` in `py/brightline_ap/vendor.py`, and `parse_vendors` in `py/brightline_ap/list_vendors.py` |
 
-- `package.json` has two dev dependencies, `typescript` and `@types/node`, and no other dependency. `package-lock.json` pins TypeScript 7.0.2 and `@types/node` 24.19.2.
-- `py/pyproject.toml` has no dependencies yet, `dependencies = []`, and a dev group with `pyright`, `pytest` and `ruff`. `py/uv.lock` pins Pyright 1.1.414, pytest 9.2.0 and Ruff 0.17.3.
-- A lock file records the exact version of every package installed, including the packages those packages need. `npm ci` and `uv sync` install exactly what the lock files say, so every computer runs what you tested.
+The two files the most other files use are the one that reads rows from text (`src/csv.ts`, or `py/brightline_ap/csv_rows.py`) and the one that holds the due-date rule (`src/due-date.ts`, or `py/brightline_ap/due_date.py`).
+
+## Blank and negative
+
+| Amount | TypeScript | Python |
+| --- | --- | --- |
+| Blank | It becomes 0, with no error. An invoice for $0.00 goes on | The function stops with an error, on that one row, and says nothing about any other row |
+| Negative, such as -23450 | It goes through as it is | It goes through as it is |
+
+Neither language checks an amount today. That is the gap Tasks 2 and 3 close.
+
+## Never a deduction
+
+- The shape of the map: a list, a table or arrows.
+- A wrong answer among my three, when I gave it before the map. A prediction is there to be compared.
+- A file of the other language that is missing from the map.

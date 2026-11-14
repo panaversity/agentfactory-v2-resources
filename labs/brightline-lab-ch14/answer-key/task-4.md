@@ -1,86 +1,59 @@
-# Lab 14 answer key: Task 4. Schemas, tests first
+# Lab 14 answer key: Task 4. Talk to the AP system
 
 The answers for Task 4 of Lab 14, in Chapter 14 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 4 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-Your agent's code may differ from this key in wording and layout. Compare the rules.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-## The first test run
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-Before the packages and the schema files exist, the tests fail for the right reason:
+## Checks
 
-- TypeScript: `Error [ERR_MODULE_NOT_FOUND]: Cannot find module '.../src/schemas.ts'`
-- Python: `ModuleNotFoundError: No module named 'pydantic'`, or `No module named 'brightline_ap.schemas'` if your test imports the schema module first
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 25 | The key file | The key is in a file that git ignores, and `git log` shows the key in no commit | The key file is tracked, or the key is in a commit |
+| 26 | My five codes came first | I wrote down a status code for each of the five calls before the agent made them. Ask me what I wrote | The calls came first |
+| 27 | The five calls | In this session, the five calls gave the codes in the table below, in that order | Another code, or a call was not made |
+| 28 | My four answers | The answers I gave match the table "What the client does". Read them from the tests, or ask me | Any answer differs |
+| 29 | Failing first | There is one test for each of my four answers, and the two more the lab names. Each counts the requests the server gets. They failed because the client did not exist yet, and one commit, "Failing tests for the AP client", holds only tests | A case has no test, a test does not count requests, or the commit holds other files |
+| 30 | The client passes | Every test passes, the type checker is clean, and no test file has changed since my commit of the failing tests | A test fails, or a test file changed |
+| 31 | Answers are checked | The client checks every invoice in an answer with my schema from Task 2 | It uses an answer without checking it |
+| 32 | The live run | Against the sample AP system, the client printed 8 vendors and 13 open invoices, in less than two seconds. The command for it is in the table in `AGENTS.md` | Other counts, or the run was not made |
+| 33 | Stopped, and committed | The sample AP system is stopped, and a commit, "The AP client, from my tests", holds the client | It is still running, or the client is not committed |
 
-Any other error, such as a typo in a field name, is a mistake in a test. Ask the agent to fix it before it commits the failing tests.
+## The five calls
 
-## The schemas
+| Call | What is asked | Code | Why |
+| --- | --- | --- | --- |
+| 1 | The vendors, with no key | 401 | The server does not know who is asking |
+| 2 | The vendors, with your key | 503 | The server is busy. This sample server says so once, to the first vendors call with the key after each start |
+| 3 | The vendors, with your key, again | 200 | The same request, a moment later, works |
+| 4 | Page 2 of the open invoices | 200 | Its first invoice is INV-8306. There are 13 open invoices, 5 to a page |
+| 5 | Page 9 of the open invoices | 400 | There are only 3 pages. The request itself is wrong |
 
-`src/schemas.ts`:
+If call 2 gave 200, the sample AP system had already answered a vendors call since it started. Restart it, and make the five calls again.
 
-```ts
-import * as z from "zod";
-import { TERMS } from "./due-date.ts";
+## What the client does
 
-export const InvoiceSchema = z.object({
-  number: z.string().regex(/^INV-\d+$/, "must look like INV-8301"),
-  vendorId: z.string().regex(/^V\d{3}$/, "must look like V001"),
-  invoiceDate: z.iso.date("must be a real date, YYYY-MM-DD"),
-  dueDate: z.iso.date("must be a real date, YYYY-MM-DD").nullable(),
-  terms: z.enum(TERMS, "must be one of the known terms"),
-  amountCents: z.int("must be whole cents").min(0, "must be zero or more"),
-  status: z.enum(["open", "paid"], "must be open or paid"),
-});
+| Answer from the AP system | Try again, or stop? | Requests in all | Dave's words |
+| --- | --- | --- | --- |
+| 401, the key is refused | Stop | 1 | "When it refuses our key, never try again" |
+| 503, the server is busy | Try once more | 2 | "When the server says it is busy, try once more" |
+| 400, the request is wrong | Stop | 1 | He said nothing. The same request would get the same answer |
+| No answer in two seconds | Stop | 1 | "Give each call two seconds." He did not ask for another try |
 
-export const VendorSchema = z.object({
-  id: z.string().regex(/^V\d{3}$/, "must look like V001"),
-  name: z.string().min(1, "must not be empty"),
-  terms: z.enum(TERMS, "must be one of the known terms"),
-});
-```
+A server that stays busy gets two requests, and then the client stops with an error. "Once more" is one more, not until it works.
 
-`TERMS` is the list of the five known terms, exported from `src/due-date.ts` next to the `Terms` type, so the type and the schema cannot disagree.
+## The live run
 
-`py/brightline_ap/schemas.py`:
+8 vendors and 13 open invoices. Each answer takes about a third of a second. The three pages of invoices take about one second when they are asked for one after another, and the vendors call runs during that time. One after the other, the four calls would take longer.
 
-```python
-class InvoiceModel(BaseModel):
-    number: str = Field(pattern=r"^INV-\d+$")
-    vendor_id: str = Field(pattern=r"^V\d{3}$")
-    invoice_date: date
-    due_date: date | None
-    terms: Terms
-    amount_cents: int = Field(ge=0)
-    status: Literal["open", "paid"]
+**If the tests passed and the live run was refused.** The sample AP system names its fields `vendorId`, `invoiceDate`, `dueDate` and `amountCents`. A schema that expects `vendor_id` refuses every invoice, and a fake server written inside a test can hide that, because the test's author chose its field names. The fix is the client's: read the names the AP system really sends. A test changes only if you decide its fake server was wrong.
 
-    @field_validator("due_date", mode="before")
-    @classmethod
-    def empty_means_none(cls, value: object) -> object:
-        return None if value == "" else value
+## Never a deduction
 
-
-class VendorModel(BaseModel):
-    id: str = Field(pattern=r"^V\d{3}$")
-    name: str = Field(min_length=1)
-    terms: Terms
-```
-
-Pydantic's own messages already say what is allowed, such as `Input should be greater than or equal to 0`, so the Python model needs no messages of its own.
-
-**Compare each rule with Concept 14.5's table.** Every row of the table needs a rule: the `INV-` pattern, a real date for both dates, one of a fixed set for terms and status, a whole number of zero or more, and a due date that may be empty. A schema that passes your tests but has no whole-number rule lets `4825.5` through in TypeScript. The two languages differ on an empty due date: the Zod schema refuses `""`, and the Python model turns `""` into `None`. That is why only the Python tests try `""`.
-
-## One wrong value the schema passes
-
-Any one of these, with the check that catches it, passes:
-
-| A wrong value the schema passes | What catches it |
-| --- | --- |
-| INV-8301's amount as `48250` instead of `482500`: whole cents, zero or more | Your count and total from Chapter 12, or a test that names the right amount |
-| A vendor id that looks right but does not exist, such as `V099` | A check against `vendors.csv` after the schema, as Task 5 adds |
-| A due date earlier than the invoice date | A rule that compares the two fields, written after the schema |
-| In Python, the text `"4825.0"` or `" 482500 "`, which Pydantic converts to a whole number by default | A loader that converts text to a number only when it is a plain whole number, or Pydantic's strict mode |
-
-## The commit
-
-`git show --stat` for the commit lists `package.json`, `package-lock.json`, `py/pyproject.toml`, `py/uv.lock`, `src/schemas.ts` and `py/brightline_ap/schemas.py`. The tests are unchanged since the agent committed them: `git diff` against that commit, for `tests/` and `py/tests/`, prints nothing.
+- A wrong code among my five, when I wrote it before the calls.
+- The time of the live run, when it is under two seconds.
+- In Python, the one package `httpx`, when its name was checked first.
+- Pages 2 and 3 asked for together or one after another.

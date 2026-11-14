@@ -1,5 +1,6 @@
 // Lists the open invoices due on or before a cutoff date, with a total.
 // Run: npm run due -- 2027-03-05
+// Another export in data/: npm run due -- 2027-03-05 invoices-messy.csv
 import { readFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { readRows } from "./csv.ts";
@@ -19,11 +20,11 @@ export function dueBy(invoicesCsv: string, vendorsCsv: string, cutoff: string): 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const cutoff = process.argv[2];
   if (!cutoff) {
-    console.error("Usage: npm run due -- YYYY-MM-DD");
+    console.error("Usage: npm run due -- YYYY-MM-DD [file in data/]");
     process.exit(1);
   }
   const read = (name: string) => readFileSync(new URL(`../data/${name}`, import.meta.url), "utf8");
-  const list = dueBy(read("invoices.csv"), read("vendors.csv"), cutoff);
+  const list = dueBy(read(process.argv[3] ?? "invoices.csv"), read("vendors.csv"), cutoff);
   for (const r of list) console.log(`${r.due}  ${r.number}  ${r.vendor}  ${usd(r.cents)}`);
   console.log(`${list.length} invoices, total ${usd(list.reduce((sum, r) => sum + r.cents, 0))}`);
 }

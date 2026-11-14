@@ -17,7 +17,7 @@ def make_book() -> InvoiceBook:
     )
 
 
-def test_due_by_gives_the_chapter_12_answer():
+def test_due_by_gives_fridays_list():
     lines = make_book().due_by("2027-03-05")
     assert len(lines) == 8
     assert sum(line.cents for line in lines) == 1922953

@@ -1,29 +1,49 @@
-# Lab 14 answer key: Task 3. Read and change a class
+# Lab 14 answer key: Task 3. One report for a bad export
 
 The answers for Task 3 of Lab 14, in Chapter 14 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 3 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
 Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-## The methods
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-One sentence each, in your own words:
+## Checks
 
-- `open()` returns the invoices whose status is `open`, leaving out the paid ones.
-- `dueDateOf(inv)` returns the invoice's stated due date, or, when it is empty, the date computed from its invoice date and terms.
-- `dueBy(cutoff)` returns the open invoices whose due date is on or before the cutoff, each with its vendor's name, sorted by due date, then number. It calls `open()` and `dueDateOf`.
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 16 | My lines came first | I wrote down the bad lines and their count before any code ran on the messy export. Ask me what I wrote | I ran it first |
+| 17 | Today's code stopped at one row | Before the loader existed, Friday's list on `invoices-messy.csv` stopped with one error, about one row, and printed no list | It printed a list |
+| 18 | Failing first | The tests for the loader hold my count and my lines, they failed because the loader did not exist yet, and one commit, "Failing tests for the export report", holds only tests | The commit holds other files, or the tests came after the loader |
+| 19 | The report | For `invoices-messy.csv`, the loader gives the four problems in the table below, each with its line number, its invoice number and a message. For `invoices.csv`, it gives 15 good invoices and no problems | A problem is missing, an extra line is reported, or the run stops at the first problem |
+| 20 | No list from a bad export | Friday's list for 2027-03-05 on `invoices-messy.csv` prints the report, with no list and no total, and the run ends as a failure: its exit code is not 0 | A list or a total is printed, or the exit code is 0 |
+| 21 | The good export still works | Friday's list for 2027-03-05 on `invoices.csv` prints 8 invoices, total $19,229.53 | Another count or total |
+| 22 | A blank amount | A test says that a row with a blank amount is a problem, never a zero, and it passes | There is no such test, or a blank becomes 0 |
+| 23 | My tests are still mine | No test file has changed since my commit of the failing tests, unless I decided that one of my own lines was wrong and said so | A test changed without my decision |
+| 24 | The commit | A commit, "One report for a bad export", holds the loader and the changed script | It is not committed |
 
-The Python methods, `open`, `due_date_of` and `due_by`, return the same.
+## The four problems
 
-## The numbers, from `data/invoices.csv`
+| Line | Invoice | What is wrong | Who catches it |
+| --- | --- | --- | --- |
+| 5 | INV-8304 | The amount is -23450 | The schema |
+| 7 | INV-8306 | The terms are Net 10 | The schema |
+| 11 | INV-8310 | The invoice date is 2026-13-02 | The schema |
+| 14 | INV-8313 | The vendor is V099, and no such vendor is on the vendor list | The check after the schema |
 
-| Call | Returns |
-| --- | --- |
-| `open()` | 13 invoices. INV-8309 and INV-8313 are paid |
-| `dueBy("2027-03-05")` | 8 invoices, $19,229.53, the Chapter 12 answer |
-| `openTotalCents()` | **4383363**, which is $43,833.63 |
+Line 1 is the header, so INV-8301 is on line 2. The export has 15 invoices: 11 good ones and these 4.
 
-To work out the total yourself: the 15 invoices add up to 5,205,363 cents, and the two paid ones to 822,000 (312,000 and 510,000). 5,205,363 minus 822,000 is 4,383,363.
+## What today's code did
 
-The test fails first because the method does not exist, with `book.openTotalCents is not a function` in TypeScript and `AttributeError` in Python. Then the method adds the amounts of `open()`, in whole cents. If your total is 5205363, the method counted the paid invoices. If it is a number with a decimal point, it divided by 100: the method returns cents, never dollars.
+Before the loader, the run stopped at INV-8310 alone, because a date with month 13 broke the due-date sum. It said nothing about the other three. Without that one row, it would have printed a list with INV-8304 on it at -$234.50, and a total $234.50 too low.
+
+Line 14 is the one a schema cannot catch. A schema looks at one record at a time, and V099 has the right shape. Only a check against the vendor list can know that nobody at Brightline has that vendor.
+
+Line 7 has a stated due date, so today's code never worked one out from its terms and never noticed them. Line 14 is paid, so it would not be on Friday's list either way. Dave asked for every problem in the file, not only the ones that reach a list.
+
+## Never a deduction
+
+- The words of a message, when it names what is wrong.
+- The order of the four lines in the report.
+- More than one problem reported for one line.
+- A wrong count in my first answer, when I gave it before the run and then decided what was wrong.

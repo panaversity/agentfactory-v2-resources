@@ -1,59 +1,41 @@
-# Lab 14 answer key: Task 5. Collect the errors
+# Lab 14 answer key: Task 5. Make it last
 
 The answers for Task 5 of Lab 14, in Chapter 14 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
+**How this key is used.** Download it only when Task 5 is done. Attach it to your message in the coding agent, and send the lab's check message with it. The agent grades each check below, with its evidence. Read the key yourself too: you have the final say.
 
-Your agent's code and messages may differ from this key in wording. Compare the lines, the invoice numbers and the counts.
+Today in the lab is Wednesday, March 3, 2027. The payment run is Friday, March 5, 2027.
 
-## The four bad lines in `data/invoices-messy.csv`
+"My language" below means the language on the line "My language is:" in `AGENTS.md`.
 
-Line 1 is the header, so the first invoice, INV-8301, is on line 2.
+## Checks
 
-| Line | Invoice | What is wrong |
-| --- | --- | --- |
-| 5 | INV-8304 | The amount is negative, `-23450` |
-| 7 | INV-8306 | The terms are `Net 10`, which Brightline does not use |
-| 11 | INV-8310 | The invoice date is `2026-13-02`, month 13 |
-| 14 | INV-8313 | The vendor id `V099` is not in `vendors.csv` |
+| # | Check | Passed when | Missed when |
+| --- | --- | --- | --- |
+| 34 | The rules are in the rules file | On `main`, `AGENTS.md` says what an invoice record may hold, what happens to an export with a bad row, and what the client does when the AP system is busy, refuses the key, or does not answer | One of the three is missing, or it is only in `NOTES.md` |
+| 35 | The handover | On `main`, `NOTES.md` says where the schema, the loader and the client are in my language, and that the other language does not have them yet | Either part is missing |
+| 36 | Said once | Each of today's rules appears once, and no rule was added that I did not decide. Ask me about any added rule you are not sure of | A rule is stated twice in one file, or a rule was added that I never decided |
+| 37 | The tag | `git tag` lists `ch14`, on a commit of `main` | There is no tag |
+| 38 | The new session, on a negative amount | You, the new session, answered that Friday's run prints a report of the problem with its line, prints no list and no total, and ends as a failure. You named a file of this project for it | The answer was a guess, named no file, or said a list is printed |
+| 39 | The new session, on a busy server | You answered that the client makes two requests, and then stops with an error. You named a file of this project for it | Another count, or no file |
 
-`npm run check-invoices -- data/invoices-messy.csv`:
+## What you decided today
 
-```text
-line 5  INV-8304  amountCents must be zero or more
-line 7  INV-8306  terms must be one of the known terms
-line 11  INV-8310  invoiceDate must be a real date, YYYY-MM-DD
-line 14  INV-8313  vendorId V099 is not in vendors.csv
-11 valid, 4 errors in data/invoices-messy.csv
-```
+- **A record.** The number is INV- and digits. The amount is whole cents, zero or more. The terms are one of the five. A date is a real date, and the due date may be blank.
+- **An export.** Every row is checked, and every vendor must be on the vendor list. One bad row means a report of every problem, no list and no total.
+- **The AP system.** Two seconds for each call. One more try when it is busy. No second try when it refuses the key, says the request is wrong, or does not answer.
 
-From `py/`, `uv run python -m brightline_ap.load_invoices ../data/invoices-messy.csv`:
+## Look back
 
-```text
-line 5  INV-8304  amount_cents Input should be greater than or equal to 0
-line 7  INV-8306  terms Input should be 'Due on receipt', 'Net 15', 'Net 30', 'Net 45' or 'Net 60'
-line 11  INV-8310  invoice_date Input should be a valid date or datetime, month value is outside expected range of 1-12
-line 14  INV-8313  vendor_id V099 is not in vendors.csv
-11 valid, 4 errors in ../data/invoices-messy.csv
-```
+The lab page ends with three Look back points.
 
-Both exit with a failure code, 1. On `data/invoices.csv`, both print `15 valid, 0 errors` and exit with 0.
+- Today's code stopped at one bad row and never mentioned three others. One was an open invoice with a negative amount.
+- The schema could not know that vendor V099 is not on the vendor list. The loader's check against the vendor list caught it.
+- A test that counts requests fails when the second try is taken out of the client. A test that only looks at the answer would still pass, as long as the server answered the first time.
 
-| If you see | What went wrong |
-| --- | --- |
-| Only line 5 | The loader stopped at the first bad row |
-| No line 14, and 12 valid | The loader did not check the vendor list. A schema alone cannot know that `V099` does not exist |
-| Line numbers one lower, 4, 6, 10 and 13 | The loader counted from 0, or did not count the header |
-| A Python traceback and no report | `int()` or the model raised on a bad row, and nothing caught it. Ask the agent to catch `ValidationError` around the one call that can raise, and to go on to the next row |
+## Never a deduction
 
-## The amount conversion
-
-Only a plain whole number, such as `482500` or `-23450`, becomes a number. Anything else becomes a value the schema refuses: `NaN` in TypeScript and `None` in Python. So a blank, spaces, `4825.0` or `12.5` are each one error, never a zero or a rounded number.
-
-A loader that calls `Number` on every cell fails your extra test. `Number("")` and `Number("  ")` are 0, and `Number("4825.0")` is 4825, and the schema accepts all three. In Python, Pydantic also accepts the text `"4825.0"` as 4825 by default. That is why the loader checks the text first, before any schema sees it.
-
-## The Friday list
-
-`src/due-by-friday.ts` does not read its invoices through your loader. Its import lines name `readRows`, `invoiceFromRow`, `InvoiceBook`, `usd` and the vendor directory, not `load-invoices.ts`. So each row still becomes a record through `invoiceFromRow`, which converts the amount with `Number` and checks nothing. A blank amount would still reach Friday's list as $0.00. Since Task 2, unknown terms would stop it with an error, because `invoiceFromRow` now calls `parseTerms`. The amount is still unchecked.
-
-You leave the file as it is today. Task 12 asks you to write it down as the next change.
+- The words of a rule, when its meaning is right.
+- A line that was in the file before today.
+- A plain fact about where things stand. A fact is not a rule.
+- Which project file the new session names, when that file does say it.
