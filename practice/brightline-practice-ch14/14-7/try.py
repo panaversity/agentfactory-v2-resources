@@ -1,13 +1,12 @@
-import asyncio
-import time
+import os
 
-async def main() -> None:
-    start = time.perf_counter()
-    first = await asyncio.sleep(0.3, "vendors")
-    second = await asyncio.sleep(0.3, "invoices")
-    print("one after the other", round((time.perf_counter() - start) * 1000), first, second)
-    start = time.perf_counter()
-    both = await asyncio.gather(asyncio.sleep(0.3, "vendors"), asyncio.sleep(0.3, "invoices"))
-    print("at the same time", round((time.perf_counter() - start) * 1000), both)
+import httpx
 
-asyncio.run(main())
+response = httpx.get(
+    "http://localhost:4010/invoices",
+    params={"status": "open", "page": 2},
+    headers={"X-API-Key": os.environ["AP_API_KEY"]},
+)
+print(response.status_code)
+body = response.json()
+print(len(body["invoices"]), body["invoices"][0]["number"])

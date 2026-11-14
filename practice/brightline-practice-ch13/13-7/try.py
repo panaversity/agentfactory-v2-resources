@@ -1,12 +1,6 @@
-from datetime import date, timedelta
+names: dict[str, str] = {"V001": "Midwest Packaging Co.", "V005": "Hocking Valley Pallets"}
+print(names["V005"])
+print(names.get("V099"))
 
-def add_days(iso_date: str, days: int) -> str:
-    start = date.fromisoformat(iso_date)
-    end = start + timedelta(days=days)
-    return end.isoformat()
-
-print(add_days("2026-10-20", 15))
-
-line = "INV-8301,V001,open\r"
-parts = line.split(",")
-print(parts[2] == "open")
+cents: list[int] = [735000, 482500, 61875]
+print(sorted(cents))

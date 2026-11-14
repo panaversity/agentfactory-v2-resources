@@ -43,7 +43,7 @@ The first `/vendors` call gets `503`. Line 40 raises an error for it with `raise
 
 ## The weaknesses
 
-**The retry on a 401.** Both samples retry more than Concept 14.7 allows. The TypeScript `withRetry` catches every error with an empty `catch`, and the Python `retry_once` catches every `HTTPStatusError`. So a `401`, a wrong key, is sent twice, and so is a `400`. We checked: with a wrong key, each sample sends two requests before it gives up. A good note says: retry only on `503` (and perhaps a timeout), once, and let every other error through at once. An empty `catch` that retries is the shape Concept 14.5 says to question first.
+**The retry on a 401.** Both samples retry more than Concept 14.8 allows. The TypeScript `withRetry` catches every error with an empty `catch`, and the Python `retry_once` catches every `HTTPStatusError`. So a `401`, a wrong key, is sent twice, and so is a `400`. We checked: with a wrong key, each sample sends two requests before it gives up. A good note says: retry only on `503` (and perhaps a timeout), once, and let every other error through at once. An empty `catch` that retries is the shape Concept 14.6 says to question first.
 
 A good list for step 4 has at least four of these:
 

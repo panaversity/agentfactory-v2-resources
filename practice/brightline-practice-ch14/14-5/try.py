@@ -1,17 +1,11 @@
-rows = [
-    {"number": "INV-8301", "amount": 482500, "terms": "Net 30"},
-    {"number": "INV-8304", "amount": -23450, "terms": "Net 30"},
-    {"number": "INV-8306", "amount": 158200, "terms": "Net 10"},
-]
+from pydantic import BaseModel, Field, ValidationError
 
-errors: list[str] = []
+class Invoice(BaseModel):
+    amount: int = Field(ge=0)
 
-for row in rows:
-    if int(row["amount"]) < 0:
-        errors.append(f"{row['number']} amount must be zero or more")
-    if row["terms"] not in ("Net 15", "Net 30"):
-        errors.append(f"{row['number']} terms must be one of the known terms")
-
-for error in errors:
-    print(error)
-print(len(errors), "errors")
+for value in [482500, -23450]:
+    try:
+        Invoice.model_validate({"amount": value})
+        print(value, True)
+    except ValidationError:
+        print(value, False)

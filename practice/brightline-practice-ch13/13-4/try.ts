@@ -6,7 +6,6 @@ const invoices = [
 
 for (const inv of invoices) {
   if (inv[1] === "open") {
-    const due = inv[2] || "from the terms";
-    console.log(inv[0] + " " + due);
+    console.log(inv[0]);
   }
 }
