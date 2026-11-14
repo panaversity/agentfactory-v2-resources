@@ -16,7 +16,7 @@ An agent wrote the script that makes Brightline's Friday payment list. You find 
 
 1. Send the message the task prints. The agent asks you questions, and you answer in a few words. You decide, and the agent types.
 2. Read what the agent says it will do before you approve it.
-3. When the task is done, download its answer key and keep it outside `brightline-ap`. Attach it in the agent with [the check message](#the-check-message). Then read the key yourself.
+3. When the task is done, download its answer key and keep it outside `brightline-ap`. Then copy [the check message](#the-check-message) into the agent's message box, add the key to the same message with the app's attach button or by dragging the file in, and send. The agent asks you about anything only you know, such as a prediction, and you answer in a line. Then read the key yourself.
 
 ### Task 1. What rules is it using? (20 minutes)
 
@@ -25,7 +25,7 @@ An agent wrote the script that makes Brightline's Friday payment list. You find 
 1. Open `brightline-ap` in your agent.
 2. If you chose Python for the lessons, send: "Set my language in AGENTS.md to Python." The project's rules file says TypeScript until you do. The agent reads that file at the start of every session, so the messages below work for both languages.
 3. Send: "Put this folder under git, with a main branch, and commit everything with the message "The project as I received it"." Every later change can then be compared with this start. If the agent wants to change your git name or email for the whole computer, say no. Ask it to set them for this project only.
-4. Send: "Tell me which packages the lock files would install, for both languages. Install nothing yet." Know what goes on your computer before you say yes. Find the five names the project asks for: `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`. The others are packages those five need.
+4. Send: "Tell me which packages the lock files would install, for both languages. List first the ones the project itself asks for, and then say how many more those need. Install nothing yet." Know what goes on your computer before you say yes. The first list should have five names: `typescript`, `@types/node`, `pytest`, `pyright` and `ruff`.
 5. Send: "Install them from the lock files. Then run the tests and the type checker for my language."
 6. Before you run the script, say which of these three invoices will be on Friday's list. Write yes or no for each, on paper or in a note.
 
@@ -62,7 +62,7 @@ You decide what correct means before any code exists. That is the first 10 perce
    >
    > The cases: (1) 2027-02-03, Net 30. (2) 2027-02-19, Net 15. (3) 2027-01-02, Net 60. (4) 2027-03-01, Due on receipt. (5) 2026-12-20, Net 45. (6) 2027-03-02, Net 10.
 
-2. Answer each question from Dave's words, with a calendar beside you. Give a date as year, month and day, such as 2027-03-05, or say "stop".
+2. Answer each question from Dave's words. Count the days on a calendar, or use a date calculator on your phone or the web, but do not ask the agent. Give a date as year, month and day, such as 2027-03-05, or say "stop".
 3. If you think a case is missing, tell the agent the case and your answer, as a seventh. The six cover each of Dave's five terms, a month end, a year end, and terms he never named.
 4. Send:
 
@@ -82,7 +82,7 @@ This task has no ask from Dave. The agent now does the middle 80 percent, from y
 1. Before the agent writes anything, say whether Friday's list for March 5 will change, and write it down. The new rule stops a run for terms outside Dave's five.
 2. Send:
 
-   > Write the function so my six tests pass. The terms we give are Due on receipt, Net 15, Net 30, Net 45 and Net 60, and any other terms stop the run, as in my sixth test. Then make the script for Friday's list use the function for every due date it works out. Do not change any test. Then run the tests, the type checker and Friday's list for 2027-03-05, and show me that no test file has changed since my commit.
+   > Write the function so my six tests pass. The terms we give are Due on receipt, Net 15, Net 30, Net 45 and Net 60, and any other terms stop the run, as in my sixth test. Then make the script for Friday's list use the function for every due date it works out. Do not change any test. Then run the tests, the type checker and Friday's list for 2027-03-05, and show me that no test file has changed since my commit. Use data/invoices.csv only, and open no other export.
 
 3. Read what the agent shows you: the tests, the type checker, the list, and the files changed since your commit.
 4. Net 90 is in none of your tests. Say what the function will do with it, and write it down. Then send: "Run the due-date function for 2027-03-02 with Net 90, and show me the line of code that decided the result. Change nothing."
@@ -97,16 +97,22 @@ This task has no ask from Dave. The agent now does the middle 80 percent, from y
 **Dave asks.** "Next week's export came from the new vendor portal. Run next Friday's list on it. Next Friday is March 12, 2027."
 
 1. Send: "Run Friday's list for 2027-03-12 on invoices-next-week.csv. Show me the whole output. Do not explain it, and do not fix anything."
-2. Read the error yourself, as [13.10](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/reading-an-error/) shows. In TypeScript, start at the top. In Python, start at the bottom. Find the message, and the first line that names a file in this project.
+2. Read the error yourself, as [13.10](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/reading-an-error/) shows. You need two things from it: the message, and the file and line in this project.
+
+   | Language | Where to start | The message | The file and line |
+   | --- | --- | --- | --- |
+   | TypeScript | At the top | The line that starts with `Error:` | The first line that ends like `src/due-date.ts:13`. The number after the colon is the line |
+   | Python | At the bottom | The last line | The line just above it that reads like `File ".../due_date.py", line 18` |
+
+   Your file name and line number may differ from these. Skip every line that names a folder outside `brightline-ap`.
 3. Send your reading, in your own words, in this shape:
 
    > My reading: the error was raised in [file], at line [number]. The cause is [what you think]. Am I right? Then show me the row of the export that caused it. Change nothing.
 
 4. You ask Dave about that row. He answers: "Cardinal Forklift is on Net 15. The portal has it wrong." Decide what has to change: the code, a test, or the export. Send your decision in one line, starting with "My decision:".
+5. Stop there. Dave asks the people who run the portal for a corrected export, and that happens outside this lab, so you have no file to fetch. If the agent offers to edit the row in `data/` for you, say no: the project's rules say never to write to `data/`.
 
-**Checkpoint:** the run stopped with `Unknown terms: Net 10`. You named the file, the line and the cause before the agent explained them. Nothing in the project has changed.
-
-The agent may not change `data/`, so next Friday's list waits for a corrected export. A run that stays stopped is the right result here.
+**Checkpoint:** the run stopped with `Unknown terms: Net 10`. You named the file, the line and the cause before the agent explained them. Nothing in the project has changed, and next Friday's list is still stopped. That is the right result here.
 
 **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch13-key-task-4.md), attach it, and send [the check message](#the-check-message).
 
@@ -131,16 +137,16 @@ Your six answers decide the rule, whichever language holds it. So the agent brin
 
 **Dave asks.** "Two invoices fall due on Saturday, March 6, 2027, the day after the run. One is Great Lakes Freight's, for $12,900.00. Finance wants a new rule: an invoice due on a Saturday or a Sunday is paid on the Friday before. Do not change Friday's run until the rule has been reviewed. Keep it on a branch."
 
-1. Send: "Show me every open invoice in data/invoices.csv, with its due date and that date's weekday. Where the due date is empty, get it from the due-date function. Work out each weekday with code, not from memory, and show me the command. Change nothing."
+1. Send: "Show me every open invoice in data/invoices.csv, with its amount, its due date and that date's weekday. Where the due date is empty, get it from the due-date function. Work out each weekday with code, not from memory, and show me the command. Change nothing."
 2. Send: "Make a branch called weekend-rule, and switch to it." Dave asked for the rule to stay off `main`, so everything up to step 9 happens on the branch.
-3. From the table in step 1 and Dave's rule, say what Friday's list for March 5 will print under the new rule: how many invoices, and what total. Add the amounts yourself. Then send: "I predict that Friday's list under the weekend rule will print [count] invoices, total [amount]. Write my prediction at the end of NOTES.md, and commit it with the message "My prediction for the weekend rule". Do not comment on it."
+3. From the table in step 1 and Dave's rule, say what Friday's list for March 5 will print under the new rule: how many invoices, and what total. Start from today's list, 8 invoices and $19,229.53. Find the rows the new rule adds, count them, and add their amounts with a calculator. Do not ask the agent for the sum. Then send: "I predict that Friday's list under the weekend rule will print [count] invoices, total [amount]. Write my prediction at the end of NOTES.md, and commit it with the message "My prediction for the weekend rule". Do not comment on it."
 4. Send:
 
    > I will decide four cases of the weekend rule. Ask me for them one at a time. For each case, show me the due date with its weekday, worked out with code, and ask: "On which date is it paid?" Do not tell me the answer, and do not hint. When I have answered all four, show my answers in a table, and wait.
    >
    > The cases: (1) 2027-03-06. (2) 2027-03-07. (3) 2027-03-08. (4) 2026-08-01.
 
-5. Answer each question from Dave's rule, with a calendar beside you.
+5. Answer each question from Dave's rule. The agent shows you each date's weekday, so you do not need to look it up.
 6. Send:
 
    > Write one failing test for each of my answers, in my language. The tests are for a new function that takes a due date and gives the date it is paid. Add one more test: Friday's list for 2027-03-05 gives the count and the total in my prediction in NOTES.md. Write only the tests, run them, and show me that the new ones fail. Then commit only the tests.
