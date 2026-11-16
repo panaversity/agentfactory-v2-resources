@@ -52,7 +52,8 @@ class ApClient:
 
 async def main() -> None:
     async with ApClient("http://localhost:4010", os.environ["AP_API_KEY"]) as client:
-        print(f"{len(await client.vendors())} vendors")
+        vendors = await client.vendors()
+        print(len(vendors), "vendors")
         async for invoice in client.open_invoices():
             print(invoice["number"], invoice["amountCents"])
 

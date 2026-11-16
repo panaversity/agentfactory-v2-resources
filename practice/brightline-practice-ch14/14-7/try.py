@@ -9,4 +9,5 @@ response = httpx.get(
 )
 print(response.status_code)
 body = response.json()
-print(len(body["invoices"]), body["invoices"][0]["number"])
+invoices = body["invoices"]
+print(len(invoices), invoices[0]["number"])
