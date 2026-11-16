@@ -7,10 +7,10 @@ rows = [
 errors: list[str] = []
 
 for row in rows:
-    if int(row["amount"]) < 0:
-        errors.append(f"{row['number']} amount must be zero or more")
-    if row["terms"] not in ("Net 15", "Net 30"):
-        errors.append(f"{row['number']} terms must be one of the known terms")
+    if row["amount"] < 0:
+        errors.append(row["number"] + " amount must be zero or more")
+    if row["terms"] != "Net 15" and row["terms"] != "Net 30":
+        errors.append(row["number"] + " terms must be one of the known terms")
 
 for error in errors:
     print(error)

@@ -8,10 +8,10 @@ const errors: string[] = [];
 
 for (const row of rows) {
   if (row.amount < 0) {
-    errors.push(`${row.number} amount must be zero or more`);
+    errors.push(row.number + " amount must be zero or more");
   }
   if (row.terms !== "Net 15" && row.terms !== "Net 30") {
-    errors.push(`${row.number} terms must be one of the known terms`);
+    errors.push(row.number + " terms must be one of the known terms");
   }
 }
 

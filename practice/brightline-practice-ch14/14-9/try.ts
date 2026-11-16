@@ -42,13 +42,14 @@ export class ApClient {
   }
 }
 
-export async function main(apiKey: string): Promise<void> {
+async function main(apiKey: string): Promise<void> {
   await using client = new ApClient("http://localhost:4010", apiKey);
-  const { vendors } = await client.vendors();
-  console.log(`${vendors.length} vendors`);
+  const answer = await client.vendors();
+  const vendors = answer.vendors;
+  console.log(vendors.length, "vendors");
   for await (const invoice of client.openInvoices()) {
     console.log(invoice.number, invoice.amountCents);
   }
 }
 
-await main(process.env.AP_API_KEY ?? "");
+await main(process.env.AP_API_KEY || "");
