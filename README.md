@@ -10,6 +10,7 @@ You can also download a lab here:
 
 | Chapter | Lab | Download |
 | --- | --- | --- |
+| Claude and ChatGPT 2.0, Build Something: short practice tasks | The practice files | [brightline-practice-build-something.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-practice-build-something.zip) |
 | 1. From Chatbots to AI Workers | A real job, checked | [brightline-lab-ch01.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip) |
 | 2. What Is an AI Worker? | The first Role Contract | [brightline-lab-ch02.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02.zip) |
 | 3. The 10-80-10 Operating Rhythm | The same one line | [brightline-lab-ch03.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip) |
@@ -35,7 +36,7 @@ Each folder in `labs/` is one lab. When a lab changes on `main`, a GitHub Action
 
 Chapter 1's first version, `labs/brightline-lab/`, stays until the book's Chapter 1 page links `brightline-lab-ch01.zip`. Then it is deleted, and its zip leaves the release. The book links to the latest release, so a link always downloads the newest copy.
 
-Each folder in `practice/` holds the files for one book page's short practice exercises. It is not a lab: it has no answer keys, and it is zipped whole in the same release.
+Each folder in `practice/` holds the files for the short practice exercises of one book page, or of one section. It is not a lab: it has no answer keys, and it is zipped whole in the same release.
 
 To add a lab, add its folder under `labs/`, add a row to the table above, and push to `main`.
 

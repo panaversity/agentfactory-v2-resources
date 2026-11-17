@@ -1,0 +1,23 @@
+Brightline Wholesale Supply - Q3 2026 review meeting, Friday 9 October 2026
+Notes typed during the meeting (not tidied). Present: Dave (controller), Priya (operations manager),
+Lena (sales director), Tom (HR lead), Omar (payments officer)
+
+- Lena: Q3 sales $4.82m against budget $4.65m. Two new store chains signed in August.
+- Dave: gross margin 21.4%, budget was 22.0%. Freight costs ate most of the gap.
+- Priya: logistics over budget all quarter. Fuel up, and we used a second carrier in Aug and Sep
+  when the main carrier missed pick-ups. Q3 logistics cost $424,800 vs budget $360,000.
+- Omar: supplier invoices paid after their due date since August, count not checked yet. Cause:
+  approvals waiting for Dave while he was on leave. No late fees charged yet, but two suppliers complained.
+- Dave: idea - a deputy approver when the controller is away. Needs the finance director's OK.
+- Tom: hiring pause for admin roles until December. Warehouse hiring continues (2 open roles).
+- Priya: handheld scanner pilot in the warehouse from 1 November, 6 weeks. Should cut picking errors.
+- Lena: risk - one of the new store chains pays at 60 days, we planned on 30.
+- Risk: second carrier has no signed contract yet, only emails.
+- IT budget looks odd in August, Dave to check the figures (maybe a typing error).
+- Actions:
+  Priya - get a signed contract with the second carrier by 31 October
+  Dave - propose the deputy approver rule to the finance director by 23 October
+  Omar - list every late-paid invoice with days late, by 16 October
+  Lena - talk to the new chain about 30-day terms, report back by 30 October
+  Tom - confirm the 2 warehouse hires start before the scanner pilot
+- Next review: Friday 15 January 2027
