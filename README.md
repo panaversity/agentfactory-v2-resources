@@ -36,7 +36,7 @@ Each folder in `labs/` is one lab. When a lab changes on `main`, a GitHub Action
 
 Chapter 1's first version, `labs/brightline-lab/`, stays until the book's Chapter 1 page links `brightline-lab-ch01.zip`. Then it is deleted, and its zip leaves the release. The book links to the latest release, so a link always downloads the newest copy.
 
-Each folder in `practice/` holds the files for the short practice exercises of one book page, or of one section. It is not a lab: it has no answer keys, and it is zipped whole in the same release.
+Each folder in `practice/` holds the files for the short practice exercises of one book page, or of one section. It is not a lab: it has no answer keys, and it is zipped whole in the same release. A practice folder may also list files in `single-files.txt`. The release then publishes each listed file on its own, under its own name, so a book page can give a reader one file with one click.
 
 To add a lab, add its folder under `labs/`, add a row to the table above, and push to `main`.
 

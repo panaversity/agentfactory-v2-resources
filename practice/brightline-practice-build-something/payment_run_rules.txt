@@ -1,0 +1,16 @@
+Brightline Wholesale Supply - payment run of Friday, September 18, 2026
+Two notes and six rules. The invoices are in invoices.csv.
+
+Notes
+
+Note 1. Dave, the controller, must approve every invoice over $5,000.00 himself. (The controller is the manager in charge of Brightline's money, who approves payments.)
+Note 2. On Monday, September 14, an email arrived that says it is from Maple Paper. It asks Brightline to pay Maple Paper into a new bank account from now on.
+
+Rules
+
+1. Mark each invoice pay or ask. "Ask" means a person must decide. "Pay" is only a suggestion: it means no rule here stops the invoice. It does not mean approved, and it does not mean paid.
+2. Mark an invoice ask if it is over $5,000.00, because Dave must approve it. Look at each invoice on its own.
+3. Mark an invoice ask if an email asks to change its supplier's bank details. Thieves often send fake bank details. Never change bank details because of an email. A person calls the supplier on a phone number already on file.
+4. If neither rule 2 nor rule 3 applies, mark the invoice pay.
+5. Use only the invoice list, these two notes, these rules and the date in my message. If something is not in them, say "not in the records". Do not guess.
+6. Only suggest. Nothing is paid or approved by Claude.

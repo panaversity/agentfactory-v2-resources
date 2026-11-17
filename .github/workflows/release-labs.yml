@@ -77,7 +77,20 @@ jobs:
           # A practice folder is for a page's short exercises, not a lab: no keys, zipped whole.
           for dir in practice/*/; do
             name="$(basename "${dir%/}")"
-            (cd practice && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep")
+            (cd practice && zip -r -X -q "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/.gitkeep" "*/single-files.txt")
+            # A practice folder with a single-files.txt also publishes each file it lists on its own,
+            # under the file's own name, so a page can give a reader one file with one click.
+            # Every name shares one release, so a name used twice stops the release.
+            if [ -f "practice/$name/single-files.txt" ]; then
+              while IFS= read -r file || [ -n "$file" ]; do
+                [ -n "$file" ] || continue
+                if [ ! -f "practice/$name/$file" ] || [ -e "dist/$file" ]; then
+                  echo "::error::practice/$name/single-files.txt: $file is missing, or its name is already published"
+                  exit 1
+                fi
+                cp "practice/$name/$file" "dist/$file"
+              done < "practice/$name/single-files.txt"
+            fi
           done
           # Each task's answer key rides as its own asset, named for its lab, in every lab.
           for dir in labs/*/; do
@@ -96,5 +109,5 @@ jobs:
           tag="labs-$(date -u +%Y-%m-%d-%H%M%S)"
           gh release create "$tag" dist/* \
             --title "Labs, $(date -u +%Y-%m-%d)" \
-            --notes "Every lab and practice folder of The AI Agent Factory, Second Edition, as a zip, and each task's answer key as its own file. The book links to the latest release, so a link always downloads the newest copy." \
+            --notes "Every lab and practice folder of The AI Agent Factory, Second Edition, as a zip, each task's answer key as its own file, and the practice files a page links one by one. The book links to the latest release, so a link always downloads the newest copy." \
             --latest
