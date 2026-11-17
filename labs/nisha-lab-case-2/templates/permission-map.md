@@ -9,7 +9,7 @@ Fill this in **before** the first scheduled run. For each row, say how it is dec
 | Look up the accounting rules on the web | | | |
 | Use a connector that can send email | | | |
 | Use a connector that can share files | | | |
-| Use any connector in the nightly run | | | Scheduled task > Connectors |
+| Use any connector in the nightly run | | | Scheduled task > Edit > Advanced settings > Connectors |
 | Reach any website from the desk's own network | | | Cloud environment |
 | Change the client's files | | | |
 | Send anything to the client | | | |
