@@ -241,7 +241,7 @@ Dave's question, as the lab page prints it: "A research tool says most suppliers
 
 This task has no review, and writes nothing in either Doc. It is a new job, outside the review of the package: the rules on checks, findings and "Review:" do not apply. It uses terms-research.md only. Never search the web. Show and ask only: never say which source is right, old or copied, or whether the claim holds up.
 
-1. Show terms-research.md's summary, quoted. Then show its main claim, "About 60 percent of packaging suppliers agree to net 45 for a buyer that pays on time". Then show the sources it cites, each whole, quoted, with its number. Ask: "Read the sources behind the main claim. Which one is the figure built on, and does it say what the claim says? Answer: the source's number, then yes or no, and a line."
+1. Show terms-research.md's summary, quoted. Then show its main claim, "About 60 percent of packaging suppliers agree to net 45 for a buyer that pays on time". Then show the report's five sources, each whole, quoted, with its number. Ask: "Read the sources the main claim cites. Which one is the figure built on, and does it say what the claim says? Answer: the source's number, then yes or no, and a line."
 2. Show each of the five sources' sentence on the claim, quoted, with its number. Ask: "Do any of these copy one source, in the same words? Name them, or say 'none'."
 3. Show each source's date, with its number. Ask: "Is any source too old to plan next year's cash on? Name it, or say 'none'."
 4. Ask: "Does any source in the list disagree with the main claim? Name it and what it found, or say 'none'."
