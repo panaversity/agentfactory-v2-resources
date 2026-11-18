@@ -6,7 +6,7 @@ The answers for Task 9 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 9 carries checks 20 and 21 of the lab's 27.
+Task 9 carries checks 20 and 21 of the lab's 29.
 
 20. **On Claude.**
     - The Thursday review: a scheduled task, on a paid plan.

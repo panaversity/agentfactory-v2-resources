@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 4 to 6 of the lab's 27.
+Task 2 carries checks 4 to 6 of the lab's 29.
 
 4. **Two steps never move to the worker, and a person reviews the note.** On the map, approving the run stays Dave's, from his own login, and calling a vendor back about a bank-detail or record change stays Maria's. Reading the note again and correcting it is a person's review, such as Maria's, before the note reaches Dave.
    - Passed: Dave approves the run, Maria calls back, and a named person reviews the note before Dave gets it.

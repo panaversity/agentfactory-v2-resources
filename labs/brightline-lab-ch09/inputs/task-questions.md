@@ -4,7 +4,7 @@ This file is for the AI. When the learner sends "Task" and a number, ask that ta
 
 **You write, the learner decides.** Write each answer into the document the task names, as the line the task names: the learner's decision, in your words, with nothing added. Never add a place, a clause, a date, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. When an answer changes a line, change only what the answer changes, and keep the line's other words; if the answer clashes with words it does not change, show the clash and ask. Write into the document first. Then, in the chat, show the lines you changed, as they now stand. Change no other line. Never say what an answer should be, or whether it is right: grading happens only when the learner sends a check prompt. Write every note in the chat, never in a document.
 
-**Where the learner writes.** In Task 10 the learner writes the note's last four parts in their own words. Put each into the "Note to Dave" document exactly as they sent it. Do not reword it, and do not add to it.
+**Where the learner writes.** In Task 10 the learner writes the note's last four parts in their own words. Put each into the "Note to Dave" document exactly as they sent it. Do not reword it, and do not add to it. The same holds for the plan the learner writes in Task 13.
 
 ## The two documents
 
@@ -12,7 +12,7 @@ Open both in Task 1, beside the chat. Read a document again before every test, e
 
 **"Role Contract"** holds role-contract-draft-5.md, word for word, from its first line to its last. It is the AP Worker's Role Contract, Draft 5, as Maria left it on Monday, November 9, 2026. The tasks change it as they say. Every test and every run reads it.
 
-**"Note to Dave"** starts empty, with only its title. Task 10 fills it.
+**"Note to Dave"** starts empty, with only its title. Task 10 fills it. Task 13 adds a part under it, "One plan for next year".
 
 ## Who does what
 
@@ -67,6 +67,24 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 The rules a learner may give: for notice or suggest, "allowed" or "not allowed"; for a draft, "allowed" or "not allowed"; for an act, one of 9.6's four, quoted: "Do it without asking. Do it if pre-approved, which means a person approved that kind of act in advance. Ask first. Or hand it to a person."
 
 **Two kinds of AI Worker** (Lesson 9.5), quoted: "A **Delegated AI Worker** completes a briefed task on its own machine, then stops. A **Standing AI Worker** has a lasting identity, ongoing responsibilities and its own initiative."
+
+**The four stages of a deliverable** (Lesson 9.10), quoted. Each stage, and the question it answers:
+
+- "1. Requirements": "Who decides what, by when, and what does done look like?"
+- "2. Research, with cited sources": "What do good sources say?"
+- "3. Analysis, in code": "What do our own numbers say?"
+- "4. Synthesis, into a plan": "What should we do?"
+
+Each stage is checked twice, quoted:
+
+| Stage | Is it right? | Does it answer the question? |
+| --- | --- | --- |
+| Requirements | The person who decides agrees the question, in writing | This stage writes the question |
+| Research | The source behind each claim the plan rests on says what the report claims | What did the source count, and whom did it ask? |
+| Analysis | Each number the decision rests on recomputes from the source file | What is it a number of: which year, which currency, on what assumption? |
+| Synthesis | Every action has an owner, a date, a cost and a risk | Does it give the decision that was asked for, first? |
+
+And after the table: "When a stage cannot answer the question, do not fill the gap. Write "not known", and carry those words to the next stage."
 
 ## When the learner sends "Test:"
 
@@ -280,3 +298,17 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 1. Change the Role Contract's first line to "Role Contract: AP Worker, Draft 6, Monday, November 23, 2026". Under "Change log", add a last line: "Monday, November 23, 2026, Dave Kowalski approved Draft 6, as Maria Lopez drafted it: Initiative added, and anything about a vendor's bank details goes to a person, every time." Show both lines. Then say "Ready for your fresh run".
 
 The fresh run happens in another chat. Nothing more is asked here.
+
+## Task 13. One plan for Dave
+
+Dave's ask of Monday, November 30, 2026, as the lab page prints it: "Before Thursday's budget meeting, I need to decide one thing. Should we ask the six suppliers in last year's file for 2 percent off for paying within 10 days, from January? Give me a yes or no for each group of suppliers, what it would save, and how much sooner we would pay. One page, my decision first." This task has no test and no run. It reads research-summary.md and paid-invoices-2025.csv, and one real source the learner finds in another chat. Never say whether a claim, a source or a number answers Dave's question: the learner decides.
+
+1. Show Lesson 9.10's four stages, each with its question, and the table of two checks, quoted. Then show Dave's ask. Ask: "Agree the question first. Who decides, what, by when, and what does 'done' look like? Answer: four short items."
+
+   In "Note to Dave", after its last line, add a heading, "One plan for next year". Under it write "The question:" and the four items, as the learner gave them. Show them.
+2. Show research-summary.md's summary, quoted, then its sources, quoted. Ask: "Read the source behind the main claim, 'about 68 percent'. Does the claim hold up for the question at the top of your plan? Answer: yes, no or partly, then why in a few words."
+3. Say: "Now find one real source. In a separate chat with Research or web search on, ask what share of suppliers agree to an early-payment discount when a customer asks. Open the source behind the answer's main figure." Ask: "Its publisher, date, link and what it measured? Is that what Dave asked? Answer: four short items, then yes, no or partly. Or say that your app has no Research or web search." Do not search for the learner.
+4. Say "Now the numbers, in code." Run code on paid-invoices-2025.csv: for each supplier_group and currency, the total paid in 2025, 2 percent of it, and the average days from invoice_date to paid_date. Never add two currencies together. If you cannot run code, say so in one line, then add the rows up one at a time, and show each row you added. Show the table. Ask: "Which group will you check? Answer: one group." Show that group's rows from the file. Ask: "Recompute that group's total yourself. Answer: the group, your total, and whether it matches." Then ask: "What is the 2 percent a number of? Answer: the year, then what must be true for Brightline to save all of it."
+5. Ask: "Send your plan. Start it with 'Plan:' and write it in your own words. Put Dave's decision first, a yes or no for each group. Then give each action an owner, a date, a cost and a risk. End with what you could not verify."
+
+   Put the plan into "Note to Dave", under "The question", exactly as the learner sent it. Show the whole part, "One plan for next year". Say "Task 13 is done".

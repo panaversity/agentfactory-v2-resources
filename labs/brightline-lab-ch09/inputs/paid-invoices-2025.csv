@@ -1,0 +1,37 @@
+invoice_no,vendor_id,vendor_name,supplier_group,currency,amount,invoice_date,paid_date
+3910,V-1007,Midwest Packaging,Packaging,USD,6629.00,2025-01-04,2025-01-31
+4310,V-1031,Lakeshore Janitorial,Office and cleaning,USD,405.50,2025-01-07,2025-01-31
+BO-22410,V-1019,Buckeye Office Supply,Office and cleaning,USD,2243.50,2025-01-13,2025-02-07
+4610,V-1044,Tri-County Freight,Freight,USD,5820.50,2025-01-19,2025-02-14
+NMP-3210,V-1052,Northern Maple Paper,Packaging,CAD,5725.00,2025-01-19,2025-02-14
+4617,V-1044,Tri-County Freight,Freight,USD,4509.25,2025-03-04,2025-03-28
+3917,V-1007,Midwest Packaging,Packaging,USD,5470.25,2025-03-08,2025-04-04
+4317,V-1031,Lakeshore Janitorial,Office and cleaning,USD,942.25,2025-03-13,2025-04-04
+NMP-3217,V-1052,Northern Maple Paper,Packaging,CAD,7458.50,2025-03-14,2025-04-11
+SP-1011,V-1060,Scioto Pallet Co.,Pallets,USD,1220.75,2025-03-17,2025-03-21
+BO-22417,V-1019,Buckeye Office Supply,Office and cleaning,USD,2510.00,2025-03-24,2025-04-18
+SP-1018,V-1060,Scioto Pallet Co.,Pallets,USD,1034.75,2025-04-14,2025-04-18
+4324,V-1031,Lakeshore Janitorial,Office and cleaning,USD,879.50,2025-05-03,2025-05-30
+3924,V-1007,Midwest Packaging,Packaging,USD,5483.00,2025-05-10,2025-06-06
+4624,V-1044,Tri-County Freight,Freight,USD,5433.25,2025-05-12,2025-06-06
+BO-22424,V-1019,Buckeye Office Supply,Office and cleaning,USD,727.50,2025-05-15,2025-06-06
+NMP-3224,V-1052,Northern Maple Paper,Packaging,CAD,6712.50,2025-05-17,2025-06-13
+SP-1025,V-1060,Scioto Pallet Co.,Pallets,USD,2146.25,2025-06-19,2025-06-27
+NMP-3231,V-1052,Northern Maple Paper,Packaging,CAD,8260.00,2025-07-03,2025-07-25
+3931,V-1007,Midwest Packaging,Packaging,USD,5244.50,2025-07-08,2025-08-01
+4631,V-1044,Tri-County Freight,Freight,USD,5054.00,2025-07-09,2025-08-01
+BO-22431,V-1019,Buckeye Office Supply,Office and cleaning,USD,2594.50,2025-07-21,2025-08-15
+4331,V-1031,Lakeshore Janitorial,Office and cleaning,USD,512.75,2025-07-22,2025-08-15
+SP-1032,V-1060,Scioto Pallet Co.,Pallets,USD,2579.50,2025-08-15,2025-08-22
+4338,V-1031,Lakeshore Janitorial,Office and cleaning,USD,732.00,2025-09-03,2025-09-26
+3938,V-1007,Midwest Packaging,Packaging,USD,6927.50,2025-09-07,2025-10-03
+4638,V-1044,Tri-County Freight,Freight,USD,6166.00,2025-09-14,2025-10-10
+BO-22438,V-1019,Buckeye Office Supply,Office and cleaning,USD,2105.50,2025-09-16,2025-10-10
+NMP-3238,V-1052,Northern Maple Paper,Packaging,CAD,8397.75,2025-09-22,2025-10-17
+SP-1039,V-1060,Scioto Pallet Co.,Pallets,USD,2565.50,2025-10-10,2025-10-17
+4645,V-1044,Tri-County Freight,Freight,USD,2991.50,2025-11-06,2025-12-05
+NMP-3245,V-1052,Northern Maple Paper,Packaging,CAD,5456.75,2025-11-07,2025-12-05
+3945,V-1007,Midwest Packaging,Packaging,USD,6882.25,2025-11-11,2025-12-05
+BO-22445,V-1019,Buckeye Office Supply,Office and cleaning,USD,2574.00,2025-11-23,2025-12-19
+4345,V-1031,Lakeshore Janitorial,Office and cleaning,USD,914.00,2025-11-24,2025-12-19
+SP-1046,V-1060,Scioto Pallet Co.,Pallets,USD,2540.25,2025-12-14,2025-12-19

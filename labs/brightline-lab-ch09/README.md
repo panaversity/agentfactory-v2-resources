@@ -6,13 +6,13 @@ Chapter 9 of *The AI Agent Factory*, Second Edition. Every name, address, invoic
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and twelve tasks, each checked against its own answer key the moment it is done. |
-| `inputs.zip` | The one file you give the AI, in Task 1. It holds the AP Worker's Role Contract, Draft 5, the week's test cases, the five jobs, Maria's Thursday steps, Dave's email, and the questions the AI asks you in each task. You don't need to open it. |
+| `LAB.md` | The lab: the job, and thirteen tasks, each checked against its own answer key the moment it is done. |
+| `inputs.zip` | The one file you give the AI, in Task 1. It holds the AP Worker's Role Contract, Draft 5, the week's test cases, the five jobs, Maria's Thursday steps, Dave's email, and the questions the AI asks you in each task. For Task 13 it also holds last year's paid invoices, `paid-invoices-2025.csv`, and a research summary, `research-summary.md`. You don't need to open it. |
 | `thursday-2026-11-12.md` | Thursday, November 12's records, as they stood at 7 a.m. You attach it in Task 4, and not before. |
 | `thursday-2026-11-19.md` | Thursday, November 19's records, as they stood at 7 a.m. You attach it in Task 5, and not before. |
 | `thursday-2026-11-26.md` | Thanksgiving morning's records. You attach it only in Task 12's fresh chat. |
 
-**The lab's dates.** The lab runs from Friday, November 20, to Thursday, November 26, 2026, and each task says its day.
+**The lab's dates.** The lab runs from Friday, November 20, to Monday, November 30, 2026, and each task says its day.
 
 **The lab needs nothing from an earlier chapter.** Everything it starts from is in this folder, the Role Contract included.
 
