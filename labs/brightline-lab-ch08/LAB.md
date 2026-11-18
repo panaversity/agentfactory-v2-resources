@@ -422,6 +422,7 @@ With an account on the other AI vendor, you can build the same project there too
 - **A test quotes a line that is not in your document, or misses a line you added.** Say: "Read the documents again." Then send the test again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **In Task 13, the answers show the worker read no file.** Check the upload, delete the chat, and ask again in a new one, before you attach the key.
+- **In Task 13, your new Claude project has one chat, with Threads and Context beside it.** That is the new Claude experience. Put the instructions under Memory in the project's settings, and upload your document under Context. Ask your questions in the project's chat. For a second try, make a new project. At the end, delete the project instead of the chat.
 - **Late in the lab, the AI forgets a rule from your brief.** This is the long chat of [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/). Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
