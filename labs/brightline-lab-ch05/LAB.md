@@ -56,7 +56,7 @@ You use two chats, and a third if you do the optional Task 12. Tasks 1 to 10 run
 
 **If a run stops to ask.** Your brief may tell the worker to stop and ask. Until Task 8, send: "List it for Dave, and carry on." In Task 8 the stop is the test, so leave it there.
 
-A run tests your brief, not the AI. A good run means your lines are clear enough to follow. It does not make a real worker safe: Chapter 7's Authority Envelope sets the outer limit of what a worker may ever do.
+A run tests your brief, not the AI. A good run means your lines are clear enough to follow. It does not make a real worker safe: [Chapter 7](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/overview/)'s Authority Envelope sets the outer limit of what a worker may ever do.
 
 ### The check prompt
 
@@ -244,12 +244,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question and its line from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with [5.7](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s three kinds of format, and your notes on it.
+1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question and its line from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with [5.7](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s four kinds of format, and your notes on it.
 2. Write your Format. Send it as "Format:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. The AI then asks which guess a line of yours now decides: name one, or "none".
-4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. The AI shows five readers of this week's work. For each, answer the format from [5.7](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/), and why, in one line.
+5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 9 and 10 passed.
+**Checkpoint.** Checks 9 to 11 passed.
 
 **At work**, ask: who or what reads this next, and in what shape?
 
@@ -265,7 +266,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 4. When the AI says "Ready for your run", type `Run: my brief` and send it. Task 7 reads this run, so leave it as it comes back.
 5. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 11 and 12 passed.
+**Checkpoint.** Checks 12 and 13 passed.
 
 **At work**, ask: what must the result keep or leave out, what must my AI never do alone, and have I said both in words?
 
@@ -300,7 +301,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 7. If another problem matters, fix it in a new round: one part, one changed line, one run.
 8. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 13 and 14 passed, and the hard rule holds.
+**Checkpoint.** Checks 14 and 15 passed, and the hard rule holds.
 
 **At work**, ask: which one part of my brief does this problem point to?
 
@@ -317,7 +318,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. If your stop works, the run lists the exceptions, builds nothing and waits. Leave it unanswered. In Task 11, a fresh run reaches the same stop, and you answer it there.
 4. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 15 and 16 passed, and the hard rule holds.
+**Checkpoint.** Checks 16 and 17 passed, and the hard rule holds.
 
 **At work**, ask: where does a person's decision change what follows, and does my brief stop there?
 
@@ -336,7 +337,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 3. Send it in one message, with `Run: the ideas brief` on its first line. The run works from your brief alone, and uses no file.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Change your ideas brief, send it again whole with `Run: the ideas brief` on its first line, then send the check prompt again.
 
-**Checkpoint.** Checks 17 to 19 passed.
+**Checkpoint.** Checks 18 to 20 passed.
 
 **At work**, ask: when I want ideas, what does my brief fix that it should leave open?
 
@@ -351,7 +352,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 3. Send it in one message, with `Run: the vendor brief` on its first line. The run works from your brief and the three vendors' forms.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Change your vendor brief, send it again whole with `Run: the vendor brief` on its first line, then send the check prompt again.
 
-**Checkpoint.** Checks 20 to 23 passed.
+**Checkpoint.** Checks 21 to 24 passed.
 
 **At work**, ask: when a system reads the result, have I named every field, its type, and what to do when one is missing?
 
@@ -394,7 +395,7 @@ One message asks for ideas. The other asks for data that the accounting system w
    [5.8](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/) says why the brief, not the app's setting, carries this.
 7. **Check it now, in the fresh chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-11.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
 
-**Checkpoint.** Checks 24 to 26 passed, and the downloaded file is the brief the fresh chat passed.
+**Checkpoint.** Checks 25 to 27 passed, and the downloaded file is the brief the fresh chat passed.
 
 **At work:** before you trust a new brief with the week, run it once in a fresh chat with only its files.
 
@@ -431,7 +432,7 @@ This task is optional. Skip it if your plan is running low, because a split run 
    The worker's own account of its split is not evidence. Write only what the app showed you.
 6. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? If a line you added caused it, send the changed line in your lab chat, as in step 2. Then do steps 3 to 6 again in a new fresh chat with memory off, with your four lines as they now stand.
 
-**Checkpoint.** Checks 27 to 29 passed, and the hard rule holds.
+**Checkpoint.** Checks 28 to 30 passed, and the hard rule holds.
 
 **At work**, before you let a worker split a job, ask: which line of my brief might a helper never see?
 
@@ -463,7 +464,7 @@ Check it yourself. It has a real date, who it is for, and a governed source with
 
 ## When you are done
 
-You are done when every check through Check 26 has passed, the fresh chat stopped where your lab chat did and built the run from Maria's reply, and your own brief is written. Task 12 is optional. Keep the downloaded file: it is your payment-run brief. It is also the Four-Part Brief that the Part II capstone is assembled from ([Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/), Figure II.3).
+You are done when every check through Check 27 has passed, the fresh chat stopped where your lab chat did and built the run from Maria's reply, and your own brief is written. Task 12 is optional. Keep the downloaded file: it is your payment-run brief. It is also the Four-Part Brief that the Part II capstone is assembled from ([Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/), Figure II.3).
 
 **At work:** end a brief you are not sure of with "List each decision you made, and the line of this brief that decided it." What comes back shows every guess.
 
