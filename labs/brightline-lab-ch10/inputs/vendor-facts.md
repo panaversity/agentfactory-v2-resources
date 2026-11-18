@@ -70,10 +70,10 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 **ChatGPT**
 - On Enterprise, only Owners create and assign custom roles, which decide who may use each feature. If any role a member holds grants a feature, the member has it.
 
-## 7. Usage policies (verified 8 and 12 October 2026)
+## 7. Usage policies (verified 12 October and 18 November 2026)
 
 **Claude**
-- A new Usage Policy takes effect on November 12, 2026. Its high-risk rules cover recommendations about one person, such as a credit, housing or employment decision. A qualified person must review each one, with authority to change it, before it is delivered or used, and the person affected must be clearly told that AI was used. Internal drafts that are not the final recommendation are excluded.
+- The Usage Policy in effect since November 12, 2026 names eleven high-risk areas: legal, medical, finance, credit, insurance, housing, employment, education and credentials, healthcare access, public benefits and services, and legal status and adjudication. Its high-risk rules cover recommendations about one person, such as a credit, housing or employment decision. A qualified person must review each one, with authority to change it, before it is delivered or used, and the person affected must be clearly told that AI was used. Internal drafts that are not the final recommendation are excluded.
 
 **ChatGPT**
 - The Usage Policies prohibit automating high-stakes decisions in sensitive areas, including credit, employment, housing, legal, medical, insurance and education, without human review.
