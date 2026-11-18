@@ -54,11 +54,12 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 
 Lesson 8.1's rule, quoted: "What settles a question, or gives its final answer, is where the content came from, not how it reached the worker."
 
-**The three moves** (Lesson 8.3):
+**The four moves** (Lesson 8.3):
 
 - **Restart:** the task is done, or none of the history is needed. Start a new conversation in the same project.
 - **Summarize:** the task continues, but the history is long. Ask for a handover note, read it, correct it, and start the next conversation from it.
-- **Persist:** something must last beyond this conversation. Move it out of the chat, into the place where that kind of information belongs.
+- **Persist:** something must last beyond this conversation. Move it out of the chat, into the project or the place where that kind of information belongs.
+- **Rely on memory:** a preference or way of working, such as "reply in plain English," should carry into later chats. Let memory keep it, and read it now and then. Never rely on memory for a rule, an amount or a status.
 
 **The four origins** (Lesson 8.4), quoted:
 
@@ -120,13 +121,14 @@ Write each answer under "Where each answer came from" as one line: the item, its
 
 **Before the test.**
 
-1. Show the three moves. Then show chat A, as its own lines: "A chat that drafted this week's vendor replies is finished. Tomorrow brings a new batch." Ask: "Restart, summarize or persist, and why? Answer: the move, then a few words."
+1. Show the four moves. Then show chat A, as its own lines: "A chat that drafted this week's vendor replies is finished. Tomorrow brings a new batch." Ask: "Restart, summarize, persist or rely on memory, and why? Answer: the move, then a few words."
 2. The same for chat B: "A two-week chat is halfway through a capitalization review of 60 purchases. Its answers have started to mention purchases that were settled in the first days."
-3. The same for the project's own chat: the chat section of the "AP Worker project" document, and Maria's week-one line, with what project-2026-11-03.md says about it.
+3. The same for chat C: "Maria starts every new chat by asking for replies in plain English, with the vendor's legal name."
+4. The same for the project's own chat: the chat section of the "AP Worker project" document, and Maria's week-one line, with what project-2026-11-03.md says about it.
 
    Write each answer under "Long chats" as one line: the chat, the move, and the reason. If the learner's move for the project's own chat ends in a restart, replace the chat section of the "AP Worker project" document with one line: "A new chat, started on Tuesday, November 3, 2026. Nothing of the chat since September 8 loads." Otherwise leave that section as it is.
-4. Show Maria's week-one line again, and Dave's words from his ask: "our contract sends me every invoice not in USD." Say that the contract is kept in the AP shared folder, and that no file of the project holds it, from "Not in this project". Ask: "Where should the rule live so that every chat in the project follows it, and what words should it have? Answer: the place, then the rule's words."
-5. Ask: "Is that rule Brightline policy yet? Answer: yes or no, and why in a few words."
+5. Show Maria's week-one line again, and Dave's words from his ask: "our contract sends me every invoice not in USD." Say that the contract is kept in the AP shared folder, and that no file of the project holds it, from "Not in this project". Ask: "Where should the rule live so that every chat in the project follows it, and what words should it have? Answer: the place, then the rule's words."
+6. Ask: "Is that rule Brightline policy yet? Answer: yes or no, and why in a few words."
 
    If the place is the project's instructions, write the rule under "Instructions" in the "AP Worker project" document, below Dave's line, as "Maria's working rule:" and the learner's words. Write the place and the policy answer under "Long chats".
 
@@ -150,10 +152,14 @@ Then say "Ready for your test".
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
    - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat."
    - The comparison: "Each Claude project has its own memory. Inside a project, Claude also uses your memory from chats outside projects, unless you turn off Use account memory on the project's page. A ChatGPT project uses your saved memories, unless you choose project-only memory."
+   - The advice: "For an AI Worker's project, turn off account memory on Claude, and choose project-only memory on ChatGPT."
 
    Ask: "How does a project keep its memory apart from your other chats, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, in a few words each."
+4. Show Lesson 8.4's "Keep it out" paragraph, quoted: "For a one-off question, or a topic that should not shape later answers, use an incognito chat. ChatGPT calls it a temporary chat. It is not saved to your chat history, and nothing from it goes into memory. A personal matter fits here, and so does a what-if such as next year's limit. Know what it does not do. Neither AI vendor offers it inside a project. A copy is still kept for a time. And it limits what is kept and remembered, not what you disclosed. So it never makes data safe to share."
 
-Write the answers to 2 and 3 under "Memory audit". Then say "Ready for your test".
+   Ask: "Maria wants to ask about a personal matter that should not shape the worker's later answers. Where should she ask it, and what does that not change? Answer: the place, then a few words."
+
+Write the answers to 2, 3 and 4 under "Memory audit". Then say "Ready for your test".
 
 **The test:** `Test: Buckeye`.
 
