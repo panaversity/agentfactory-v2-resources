@@ -73,15 +73,16 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - "**Appropriate.** Low consequence, easy to undo, easy to check as you go."
    - "**Appropriate with review.** The worker is useful, but a defined human check must happen before the output is used, sent or acted on."
    - "**Inappropriate.** The task stays human-owned. A review cannot change the consequence, how hard it is to undo, or the fact that a person must make the decision."
+   - "The middle answer is also called **appropriate with safeguards**."
    - The four screens: reversibility ("If it is wrong, can we catch and undo it before harm is done?"), consequence of error ("Is a mistake small, expensive, harmful, regulated or permanent?"), human judgment ("Does the task depend on care, a relationship or context a person should own?") and accountability ("Who is responsible for the outcome, and can that person really check it?").
    - "Classify the specific activity you delegate, not the subject it is about."
    - "The **deciding factor** is the screen that, if its answer changed, would move the use into another category."
 
    Then show U1 from `brightline-files.md`, as its own lines. Ask: "Is this one activity or two? For each activity: appropriate, appropriate with review, or inappropriate, and the one screen that decides it. Answer: one or two, then for each activity its answer, its screen, and a few words why."
-2. For each activity the learner calls "appropriate with review", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "Who decides it instead, and what may the worker still do here, if anything? Answer: who, then a few words, or nothing."
+2. For each activity the learner calls "appropriate with review" or "appropriate with safeguards", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "Who decides it instead, and what may the worker still do here, if anything? Answer: who, then a few words, or nothing."
 3. The same, one use at a time, for U2 to U6, each shown first.
 
-   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
+   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer in the name the learner used, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
 4. Show Draft 6's "Never automated:" lines, A10 to A15, quoted. Ask: "Do any of your answers need a line here, so the worker cannot do it whoever asks? Draft 6's other lines stay as they are. Answer: the new line in a few words, or 'none'."
 
    Write any new line under "Role Contract, Draft 7" as "Never automated: New line:" and the learner's words. Then say "Ready for your test".
