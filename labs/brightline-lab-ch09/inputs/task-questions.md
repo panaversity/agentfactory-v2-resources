@@ -84,7 +84,7 @@ Each stage is checked twice, quoted:
 | Analysis | Each number the decision rests on recomputes from the source file | What is it a number of: which year, which currency, on what assumption? |
 | Synthesis | Every action has an owner, a date, a cost and a risk | Does it give the decision that was asked for, first? |
 
-And after the table: "When a stage cannot answer the question, do not fill the gap. Write "not known", and carry those words to the next stage."
+And after the table: "When a stage cannot answer the question, do not fill the gap. Write "not known", and keep those words in everything that follows."
 
 ## When the learner sends "Test:"
 
@@ -308,7 +308,7 @@ Dave's ask of Monday, November 30, 2026, as the lab page prints it: "Before Thur
    In "Note to Dave", after its last line, add a heading, "One plan for next year". Under it write "The question:" and the four items, as the learner gave them. Show them.
 2. Show research-summary.md's summary, quoted, then its sources, quoted. Ask: "Read the source behind the main claim, 'about 68 percent'. Does the claim hold up for the question at the top of your plan? Answer: yes, no or partly, then why in a few words."
 3. Say: "Now find one real source. In a separate chat with Research or web search on, ask what share of suppliers agree to an early-payment discount when a customer asks. Open the source behind the answer's main figure." Ask: "Its publisher, date, link and what it measured? Is that what Dave asked? Answer: four short items, then yes, no or partly. Or say that your app has no Research or web search." Do not search for the learner.
-4. Say "Now the numbers, in code." Run code on paid-invoices-2025.csv: for each supplier_group and currency, the total paid in 2025, 2 percent of it, and the average days from invoice_date to paid_date. Never add two currencies together. If you cannot run code, say so in one line, then add the rows up one at a time, and show each row you added. Show the table. Ask: "Which group will you check? Answer: one group." Show that group's rows from the file. Ask: "Recompute that group's total yourself. Answer: the group, your total, and whether it matches." Then ask: "What is the 2 percent a number of? Answer: the year, then what must be true for Brightline to save all of it."
+4. Say "Now the numbers, in code." Run code on paid-invoices-2025.csv: for each supplier_group and currency, the total paid in 2025, 2 percent of it, and the average days from invoice_date to paid_date. Never add two currencies together. If you cannot run code, say so in one line, then add the rows up one at a time, and show each row you added. Show the table. Ask: "Which group will you check? Answer: one group." Show that group's rows from the file. Ask: "Recompute that group's total yourself. Answer: the group, your total, and whether it matches." Then ask: "What is the 2 percent a number of? Answer: the year, the currency, and the assumption behind it."
 5. Ask: "Send your plan. Start it with 'Plan:' and write it in your own words. Put Dave's decision first, a yes or no for each group. Then give each action an owner, a date, a cost and a risk. End with what you could not verify."
 
    Put the plan into "Note to Dave", under "The question", exactly as the learner sent it. Show the whole part, "One plan for next year". Say "Task 13 is done".
