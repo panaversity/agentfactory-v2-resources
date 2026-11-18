@@ -15,9 +15,9 @@ Task 3 carries checks 6 to 9 of the lab's 32.
    - `bank_routing`, `bank_account`: red, remove.
    - `contact_email`, `phone`: yellow, remove. Keep also passes: a shared phone or email can mark a match, and the cut file is yellow either way.
    - `small_supplier`, `onboarded`: yellow, remove. Keeping `onboarded` also passes, to tell which record of a pair is newer.
-   - The full vendor master: red. The cut file: yellow.
+   - The full vendor master: red. The cut file: yellow. If you kept the notes, red is right for your cut file, and check 9 grades the notes.
    - Passed: the bank numbers removed, the tax ID kept as its last four digits only, the names, addresses and tax ID type kept, `small_supplier` removed, and the two files' tiers.
-   - Missed: a full tax ID or a bank number kept; the tax ID removed entirely; `small_supplier` kept; or the cut file called green or red.
+   - Missed: a full tax ID or a bank number kept; the tax ID removed entirely; `small_supplier` kept; the cut file called green; or the cut file called red with the notes removed.
 7. **The check on the kept columns.** "The check on the kept columns", in your document, names these four pairs, each with the kept columns it matched on, the tax ID's last four digits among them:
    - V-2003 Fairfield Pallet Co. and V-2033 Fairfield Pallet Company
    - V-2004 Mid-State Freight Inc. and V-2034 MidState Freight Inc
