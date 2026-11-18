@@ -20,7 +20,7 @@ Task 2 carries checks 4 to 6 of the lab's 27.
 
 ## Why
 
-A worker that fits the steps your team already follows is easier to check (Lesson 9.2). Each step gets its owner by reversibility, stakes and accountability. Verifying a bank-detail request and approving the run are decisions people answer for, so they never move. The step Dave dropped, his Thursday check, is the unstaffed gate: a review on paper that nobody does on the day. Naming the reviewer, a time and a stand-in is how a gate stays staffed.
+A worker that fits the steps your team already follows is easier to check (Lesson 9.2). Each step gets its owner by four tests: reversibility, stakes, human judgment or empathy, and accountability. Verifying a bank-detail request and approving the run are decisions people answer for, so they never move: they are human-retained. The note is human-reviewed, because the worker drafts it and a named person checks it. The step Dave dropped, his Thursday check, is the unstaffed gate: a review on paper that nobody does on the day. Naming the reviewer, a time and a stand-in is how a gate stays staffed.
 
 The step Maria left out of her list is the one that went wrong on November 19. She read her record for open vendor requests every Thursday without writing it down, so her instructions never named it, and the run never read it. An interview that asks what you check before you write is how such a step is found.
 

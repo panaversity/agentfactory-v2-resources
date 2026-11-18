@@ -34,7 +34,7 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 - "**Gate 3. What does finished look like?** Write down the input, the output format, and one check you can do in under a minute."
 - And after the gates: "does the work need judgment at each step, or does it follow a fixed path?"
 
-**A delegation map** (Lesson 9.2): for each step, "who does it today and who should do it from now on". Its three questions, quoted: "**May it go to a worker?**", "**Who should own it?** Decide by *reversibility* (can the step be undone?), *stakes* (what does the worst error cost?) and *accountability* (is this a decision someone is responsible for?)", and "**What supports it?** A standing instruction, an approved concept, a computed report, or a named person's review."
+**A delegation map** (Lesson 9.2): for each step, "who does it today and who should do it from now on". Its three questions, quoted: "**May it go to a worker?**", "**Who should own it?** Decide by four tests. *Reversibility:* can the step be undone? *Stakes:* what does the worst error cost? *Human judgment or empathy:* does the step need care for a person, or a relationship? *Accountability:* is this a decision someone is responsible for?", and "**What supports it?** A standing instruction, an approved concept, a computed report, or a named person's review."
 
 **The nine places a run could be pointed at** (Task 3):
 
