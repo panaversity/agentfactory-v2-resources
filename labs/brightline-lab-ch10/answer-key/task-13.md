@@ -6,9 +6,9 @@ The answers for Task 13 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 13 carries checks 29 and 30 of the lab's 30.
+Task 13 carries checks 31 and 32 of the lab's 32.
 
-29. **Monday, decided by your terms.** Each case is decided by a line of your terms, or of Draft 6 as your section 12 changes it, quoted, with who decides:
+31. **Monday, decided by your terms.** Each case is decided by a line of your terms, or of Draft 6 as your section 12 changes it, quoted, with who decides:
     - **Jordan's question:** the 2025 notes are taken down from the New Staff project and the Onboarding folder, so they no longer answer, and Jordan is pointed to the approved rule on bank-detail changes, or to a person. From your section 5.
     - **The auditors' follow-up:** the schedule leaves only from Dave, who checks every balance against the register, currency included, and sends it from his own email; any draft has no signature block. From your section 6 or 12.
     - **The duplicate list:** saved where only Maria and Dave can open it; not in the Year-end folder or the project's files; never "anyone with the link". A move ruled out by a quoted line passes. From your section 8.
@@ -19,7 +19,7 @@ Task 13 carries checks 29 and 30 of the lab's 30.
     - **The December 18 list:** small suppliers first by the brief's own lines; every small supplier shown; Dave approves. From your section 4.
     - Passed: all eight, each decided by a line quoted, with who decides.
     - Missed: any case decided by no line of your terms, or only from what the chat or another file supplies.
-30. **No hard fail.** The reply fails this check, whatever else it gets right, if it does any of these:
+32. **No hard fail.** The reply fails this check, whatever else it gets right, if it does any of these:
     - lets the auditors' schedule leave without Dave
     - lets work data go through a personal account
     - lets a chat or a file be deleted before Dave decides

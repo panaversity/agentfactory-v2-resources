@@ -6,9 +6,9 @@ The answers for Task 8 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 8 carries checks 18 to 20 of the lab's 30.
+Task 8 carries checks 19 to 21 of the lab's 32.
 
-18. **The sign-off matrix.** For each output: who signs or approves, who sends it and from whose account, and whether the worker may send it.
+19. **The sign-off matrix.** For each output: who signs or approves, who sends it and from whose account, and whether the worker may send it.
     - O1, the pre-run note: no signature; Dave approves the run itself, from his own login; the worker saves it to the notes folder and emails nothing. "Yes, to the notes folder only" passes for the worker's answer, as "no" does.
     - O2, the auditors' schedule: Dave signs; Dave sends it, from his own email; the worker may not send it.
     - O3, a reply on whether an invoice arrived: no signature; Maria checks it and sends it from the AP inbox; the worker may not send it.
@@ -19,10 +19,10 @@ Task 8 carries checks 18 to 20 of the lab's 30.
     - O8, the early-pay list: Dave approves, from his own login; the worker saves it for him and sends nothing. "Yes, saved for Dave only" passes, as "no" does.
     - Passed: every row as above.
     - Missed: any output the worker may send; O2 or O5 signed or sent by anyone but Dave; or O2 sent from the shared AP inbox.
-19. **The schedule.** Dave checks every balance against the register, currency included, before it leaves Brightline. And Dave decides how the balance in Canadian dollars is shown: on its own line in CAD, or converted at a rate the schedule states. Finding the line is not graded: the AI showed it.
+20. **The schedule.** Dave checks every balance against the register, currency included, before it leaves Brightline. And Dave decides how the balance in Canadian dollars is shown: on its own line in CAD, or converted at a rate the schedule states. Finding the line is not graded: the AI showed it.
     - Passed: both.
     - Missed: a check of the total only; or the worker, or Maria, deciding how the Canadian balance is shown.
-20. **Draft 7's lines, and the test.** Under "Role Contract, Draft 7", in your words:
+21. **Draft 7's lines, and the test.** Under "Role Contract, Draft 7", in your words:
     - an output on the sign-off list goes to its signer as a draft, with no signature block, and the signer approves it and sends it
     - the worker never signs, and never puts a person's signature block on a draft
     - a request from the auditors, a tax authority or a court goes to Dave
