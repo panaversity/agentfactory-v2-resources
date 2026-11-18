@@ -6,7 +6,7 @@ The answers for Task 6 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 6 carries checks 15 and 16 of the lab's 30.
+Task 6 carries checks 15 and 16 of the lab's 31.
 
 15. **The figure Dave signs: $17,579.60 across 9 invoices, and $22,891.60 across 10 only after he approves 4533.** It is worked out from the sources, as in the table below, not by adding the CSV. Under "The figure Dave signs" in your Review findings, the figure is $17,579.60 across 9 invoices. It depends on Midwest Packaging's 4533, $5,312.00, which is over $5,000.00 and has no approval in the log: only after Dave approves it from his own login (policy 4.1 and 4.2) is the run $22,891.60 across 10.
     - Passed: $17,579.60; or $22,891.60, stated as only after Dave approves 4533; or both. "From his own login" need not be said. The counts, 9 and 10, may be left out. "Find your total" below has the figures that pass and the ones that miss.

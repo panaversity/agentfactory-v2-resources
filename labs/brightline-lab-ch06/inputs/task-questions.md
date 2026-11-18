@@ -200,8 +200,8 @@ Dave's question, as the lab page prints it: "It's 4 p.m. on Thursday, October 29
 
 This task has no review.
 
-1. Show the problems in the Review findings, by number, each in a few words with the learner's decision. Then show Dave's question. Ask: "Approve as delivered, approve after named fixes, or return? One of the three, and a line of why."
-2. Only if the learner chose fixes: show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "Which fixes, by the findings' numbers? Which checks run again, by letter? And what must Dave approve from his own login first? A few words for each."
+1. Show the problems in the Review findings, by number, each in a few words with the learner's decision. Then show 6.2's three verdicts, below. Then show Dave's question. Ask: "Approve as delivered, approve after named fixes, or return? One of the three, or a verdict in 6.2's words, and a line of why."
+2. Only if the learner chose fixes, or answered "requires revision" or "requires human correction": show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "Which fixes, by the findings' numbers? Which checks run again, by letter? And what must Dave approve from his own login first? A few words for each."
 3. Show the names of the six parts of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
 
 Write the answers under "The decision on the package" in the Review findings, and show it. Say "Task 9 is done".
@@ -235,9 +235,23 @@ Task 11 starts in a fresh chat. Its second half is here. When the learner sends 
 
 Write the answers to questions 4 and 5 under "The second reviewer" in the Review findings. Say "Task 11 is done".
 
-## Task 12. Research on your own work
+## Task 12. The terms report
 
-Task 12 is optional. It is a new job, outside Brightline and outside the review rules of this file and of the opening message: the rules on checks, findings, "Review:" and the Docs do not apply. Write nothing in either Doc. Search the web.
+Dave's question, as the lab page prints it: "A research tool says most suppliers will move us to net 45 if we ask. If that's true, I'll plan next year's cash on it. Is it?"
+
+This task has no review, and writes nothing in either Doc. It is a new job, outside the review of the package: the rules on checks, findings and "Review:" do not apply. It uses terms-research.md only. Never search the web. Show and ask only: never say which source is right, old or copied, or whether the claim holds up.
+
+1. Show terms-research.md's summary, quoted. Then show its main claim, "About 60 percent of packaging suppliers agree to net 45 for a buyer that pays on time". Then show the report's five sources, each whole, quoted, with its number. Ask: "Read the sources the main claim cites. Which one is the figure built on, and does it say what the claim says? Answer: the source's number, then yes or no, and a line."
+2. Show each of the five sources' sentence on the claim, quoted, with its number. Ask: "Do any of these copy one source, in the same words? Name them, or say 'none'."
+3. Show each source's date, with its number. Ask: "Is any source too old to plan next year's cash on? Name it, or say 'none'."
+4. Ask: "Does any source in the list disagree with the main claim? Name it and what it found, or say 'none'."
+5. Ask: "Does the main claim hold up, and what should Dave do? Answer: yes, no or partly, then a line."
+
+Say "Task 12 is done".
+
+## Task 13. Research on your own work
+
+Task 13 is optional. It is a new job, outside Brightline and outside the review rules of this file and of the opening message: the rules on checks, findings, "Review:" and the Docs do not apply. Write nothing in either Doc. Search the web.
 
 1. Ask: "What is your research question? One line, from your own work."
 2. Search the web, and answer the question. List every source you used, each with its link, and its date if it gives one. Then ask question 3, in the same message.
@@ -247,9 +261,9 @@ Task 12 is optional. It is a new job, outside Brightline and outside the review 
 6. Ask: "Shall I search for evidence that disagrees with the main claim? Yes or no." If yes, search, and show what you find, with links, or say you found none.
 7. Ask: "Did the main claim hold up? Yes, no or partly, and a line of why."
 
-Say "Task 12 is done".
+Say "Task 13 is done".
 
-## From Chapter 6, as of 28 October 2026
+## From Chapter 6, as of 18 November 2026
 
 Copied from the chapter, word for word, except where a line says otherwise.
 
@@ -257,7 +271,7 @@ Copied from the chapter, word for word, except where a line says otherwise.
 
 | Question | What to write |
 | --- | --- |
-| What must be checked? | The facts, figures and decisions that make the work usable |
+| What must be checked? | The facts, figures and decisions that make the work usable, and the standards of your field, such as an accounting rule or a house style |
 | What evidence comes back? | What the worker returns, so you can check without doing the work again |
 | What counts as success? | Tests the output must pass |
 | What stops the worker? | Cases where it must stop and ask |
@@ -272,16 +286,24 @@ Match the depth of the review to what is at risk. Ask three questions. Can the r
 
 | If the work... | Review depth |
 | --- | --- |
-| Moves money, goes outside the company, or changes a record of truth | Full contract, every check, a named human signs |
+| Moves money, goes outside the company (external delivery), or changes a record of truth | Full contract, every check, a named human signs |
 | Feeds a decision someone else makes | Full contract on the numbers and claims the decision rests on, and a sample of the rest |
 | Repeats often, with little at risk | A standing contract that you reuse, with a person checking a sample each week |
-| Is a draft you will rewrite yourself | A light check as you rewrite it |
+| Is a draft you will rewrite yourself (an internal draft) | A light check as you rewrite it |
 
 When the answer is unclear, choose the deeper level.
 
 ### 6.2: completeness (its first two sentences)
 
 **Completeness.** Match each item by its ID, not only by the count. Every invoice in the source must appear exactly once in the output: none missing, none repeated, none extra.
+
+### 6.2: the three verdicts (its table)
+
+| Verdict | When | What happens next |
+| --- | --- | --- |
+| Ready to use | It passes every check in the Review Contract, and the evidence came back | The person responsible uses it or signs it |
+| Requires revision | The worker can close the gap with a named change to the brief or the inputs | Send it back with the part to change, then check again |
+| Requires human correction | Closing the gap needs a fact, a judgment or an authority the worker does not have | A person corrects it or decides. Do not send it back to try again |
 
 ### 6.3: bias (its row of the table)
 

@@ -90,13 +90,23 @@ Put the words in the Doc. Say "Ready for your run".
 
 **Before the run.**
 
-1. Show the Format row of 5.1's table below, then 5.1's format below, then 5.7's three kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
+1. Show the Format row of 5.1's table below, then 5.1's format below, then 5.7's four kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
 **The run:** `Run: my brief`.
 
-**After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'." Then say "Task 5 is done".
+**After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'."
+
+Then show five readers of this week's work, as their own lines:
+
+1. Dave, who signs the run and reads one page
+2. Maria, who checks every row against the invoice list
+3. The accounting system, which imports vendor changes overnight in a fixed layout
+4. The AP team at Monday's meeting, who look at the week's exceptions together on one screen
+5. The auditors, who ask for this year's total paid to Midwest Packaging, exact to the cent
+
+Ask: "For each reader: the format, from 5.7, and why, in one line. Answer: five lines, each starting with its number." Write nothing in the Doc. Then say "Task 5 is done".
 
 ## Task 6. The constraints
 
@@ -154,7 +164,7 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 ## Task 10. Three new vendors, as JSON
 
-**Before the run.** Show 5.1's table below, all four rows, then the Extraction row of 5.6's table below, then 5.7's three kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
+**Before the run.** Show 5.1's table below, all four rows, then the Extraction row of 5.6's table below, then 5.7's four kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
 
 **The run:** `Run: the vendor brief`, with the brief in that message, and new-vendor-forms.md.
 
@@ -176,7 +186,7 @@ These four lines are not parts of the payment-run brief: put none of them in the
 
 The run is in the fresh chat, not here. If the learner comes back here and changes a line, show the four lines as they now stand. Ask nothing else.
 
-## From Chapter 5, as of 29 October 2026
+## From Chapter 5, as of 18 November 2026
 
 Copied from the chapter, word for word, except where a line says otherwise.
 
@@ -220,11 +230,12 @@ Inputs are data, not instructions.
 - *Format.* Every part comes back in the same columns, so the results join cleanly. The worker says how it split the job, and lists every input by its identifier, so you can see that nothing was dropped or counted twice.
 - *Constraints.* In the autonomy half, say whether the worker may split the job and how, and that every limit holds for every helper. A helper may not do what the worker may not do.
 
-### 5.7: three kinds of format
+### 5.7: four kinds of format
 
 - **Inline.** In the chat itself. A person reads it once, now: a quick check, an explanation, a short list. No separate file is needed.
 - **Artifact.** A file or document of its own. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type and where it must go.
 - **Structured data.** A system or a later step reads it: a CSV file, a JSON record, a table with fixed columns. Name every field (column) and its type (date, number or text). Ask for one row per item, say how to mark a missing value, and say "no prose", meaning no paragraphs around the rows.
+- **Computed result.** A number that must be exact, such as a total or a rate. Ask for it to be worked out in code, and returned with the figures it used. This is code-executed analysis (2.4). Code checks the arithmetic, not whether each row belongs in the total (6.4).
 
 ### 5.6: how tightly to set a brief (two rows of its table)
 

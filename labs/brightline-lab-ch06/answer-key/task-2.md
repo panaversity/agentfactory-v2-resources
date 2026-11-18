@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 5 to 7 of the lab's 30.
+Task 2 carries checks 5 to 7 of the lab's 31.
 
 5. **What the worker could not have done, and what "completed" tells Dave.** The task record says: "Tools available to the worker in this task: read files, write files. No email, no phone, no connection to the accounting system." It ends: "Status: completed. No errors." Your answers in the chat say:
    - that in this task the worker could not make a call, and could not approve anything or reach the accounting system. Any words that say both pass, such as "no phone, so no call, and no login, so no approval".
