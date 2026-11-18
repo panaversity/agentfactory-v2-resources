@@ -6,7 +6,7 @@ The answers for Task 8 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The check
 
-Task 8 carries check 20 of the lab's 30.
+Task 8 carries check 20 of the lab's 31.
 
 20. **The Northern Maple note rests on no evidence, and goes.** The memo's Vendor notes say: "Northern Maple Paper is a Canadian supplier. Cross-border vendors tend to be slower and harder to deal with. Consider moving this business to a domestic paper supplier at renewal." No file says Northern Maple is slow or hard to deal with. The only fact behind the note is its currency, and the policy's silence on other currencies is a gap in the policy, not a fault of the vendor. Your answers say:
     - the note rests on no evidence in the files

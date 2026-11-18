@@ -6,7 +6,7 @@ The answers for Task 10 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 10 carries checks 23 to 27 of the lab's 30.
+Task 10 carries checks 23 to 27 of the lab's 31.
 
 23. **Three lines or fewer, with no invoice numbers.** Linda's version, under "For Linda", is three lines or fewer. Vendor names stand in for the numbers.
     - Passed: three lines or fewer, and no invoice number in them.

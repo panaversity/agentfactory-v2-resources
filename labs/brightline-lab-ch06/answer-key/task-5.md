@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 5 carries checks 12 to 14 of the lab's 30.
+Task 5 carries checks 12 to 14 of the lab's 31.
 
 12. **Row 5 cites 2.1 for the invoice's Net 45, and 2.1 says the opposite.** Row 5 dates Lakeshore Janitorial's 5152 on "the Net 45 terms shown on the invoice (policy 2.1)", due Saturday, November 21, 2026, and marks it NOT_DUE. Policy 2.1 says: "Pay each vendor on the terms in its vendor record in the accounting system. The vendor record is the authority on terms." The vendor record says Net 15, changed on Friday, August 14, 2026. So 5152, dated Wednesday, October 7, 2026, was due on Thursday, October 22, 2026. It is past due, and policy 3.2 pays it in this run. Your Review findings hold row 5 as a problem, with what is right: Net 15 from the vendor record, so 5152 is paid in this run.
     - Passed: row 5 decided a problem, with Net 15 from the vendor record, and 5152 paid in this run, as what is right, and, if a due date is given, Thursday, October 22, 2026.
