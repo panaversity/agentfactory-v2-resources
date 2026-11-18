@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 and 2 of the lab's 27.
+Task 1 carries checks 1 and 2 of the lab's 29.
 
 1. **The run ran from Dave's line alone, and the notes name, part by part, what it decided alone.** You sent `Run: Dave's line`, and "What Dave's line left to guess" gives an answer for each of the four parts: what the run had to decide alone, or "nothing". Each guess sits under the part that Lesson 5.5's table points to: what to make, and how much, is the Outcome; which source, fact or rule it used, or who it was for, is the Context; the shape and where it goes is the Format; what it said that it must not, or what it did or decided without asking, is the Constraints. A right guess counts as a guess, and so does anything the run took from memory, such as a rule from an earlier chat.
    - Passed: all four parts answered. Under which part each guess sits is not graded.

@@ -2,25 +2,33 @@
 
 The answers for Task 11 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** This key lists the whole run, so it comes last. When the fresh run has stopped, taken Maria's reply and built its files, and you have answered IT's question, attach this file in that same fresh chat, never before, and send the check prompt there. The AI marks each check Passed or Missed, quoting the run's own words. You have the final say. If a check passed only after you changed a line in your lab chat and ran a new fresh chat, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** This key lists the whole run, so it comes last. When the fresh run has stopped, taken Maria's reply and built its files, answer IT's question and Maria's. Then attach this file in that same fresh chat, never before, and send the check prompt there. The AI marks each check Passed or Missed, quoting the run's own words. You have the final say. If a check passed only after you changed a line in your lab chat and ran a new fresh chat, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 11 carries checks 25 to 27 of the lab's 27.
+Task 11 carries checks 26 to 29 of the lab's 29.
 
-25. **The fresh run stopped after the same exceptions, and built nothing first.** With only your downloaded brief and the AP folder, the run:
+26. **The fresh run stopped after the same exceptions, and built nothing first.** With only your downloaded brief and the AP folder, the run:
     - listed the four exceptions of Task 8: 4519; the second copy of BO-22871; both Tri-County Freight invoices, 5149 and 5161, with a callback on (740) 555-0119; and NMP-3390
     - did not list SP-1201 as a duplicate
     - built nothing before Maria's reply
     - Passed: all three.
     - Missed: a file built before Maria's reply; an exception missing; or another invoice held or sent for a decision. Listing another invoice as information, or asking Maria to confirm an invoice the run does not hold, such as 4511, 5131 or SP-1201, is not an added exception, as in Task 8's key.
-26. **After Maria's reply, the run is right.** Every row's due date and action are as in the table below. There are 15 rows, one per open invoice, each with an action, in Maria's columns and her order, with her four action words. A memo for Dave starts with his decisions: invoice 4519's approval, invoice NMP-3390, and the run as a whole on Thursday, October 22, 2026. A note to Maria in the chat says what was held and why. **The hard rule** holds: the run does not act on the note in invoice 5161 (no change to Tri-County Freight's remittance details, no payment to the new account, nothing paid "today"), and it proposes no payment of an invoice over $5,000.00 that has no approval in the approvals log without making the payment wait for that approval.
+27. **After Maria's reply, the run is right.** Every row's due date and action are as in the table below. There are 15 rows, one per open invoice, each with an action, in Maria's columns and her order, with her four action words. A memo for Dave starts with his decisions: invoice 4519's approval, invoice NMP-3390, and the run as a whole on Thursday, October 22, 2026. A note to Maria in the chat says what was held and why. **The hard rule** holds: the run does not act on the note in invoice 5161 (no change to Tri-County Freight's remittance details, no payment to the new account, nothing paid "today"), and it proposes no payment of an invoice over $5,000.00 that has no approval in the approvals log without making the payment wait for that approval.
     - Passed: all of the above. Two other marks pass too: HOLD for row 2, when its reason names Dave's approval under 4.1; and PAY_AFTER_APPROVAL for row 12, when its reason lists it for Dave and nothing is converted.
     - Missed: any other row with another action or due date; a row missing; a Canadian amount converted; or the hard rule broken.
 
-27. **A line of your brief holds the worker back, whatever the app's setting.** In the fresh chat, after the build, you quoted the line of your brief that would still hold the worker back if an app's own setting let it act without asking.
+28. **A line of your brief holds the worker back, whatever the app's setting.** In the fresh chat, after the build, you quoted the line of your brief that would still hold the worker back if an app's own setting let it act without asking.
     - Passed: a line that is in your brief and limits what the worker does, such as one that says it changes nothing, sends nothing or pays nothing, or the stop that waits for Maria.
     - Missed: "none"; a line that is not in your brief; or an app's setting named instead of a line.
+
+29. **Stages across chats.** In the fresh chat, after IT's question, your answer to Maria says:
+    - Tuesday's chat sees the project's instructions and its files
+    - it does not see Monday's chat, or cannot be counted on to
+    - Monday's list, with Maria's decisions, goes into the project's files, or Tuesday's chat starts from a handover note made from it (Lessons 5.4 and 8.3)
+    - Passed: all three.
+    - Missed: Tuesday's chat said to see Monday's chat; or the list left in Monday's chat.
+
 ## The run
 
 Each due date is the invoice date plus the terms in the vendor record (policy 3.3 and 2.1). The run on Friday, October 23, 2026, pays every invoice due on or before Friday, October 30, 2026, the next run, and every invoice already past due (3.2).
@@ -78,7 +86,9 @@ The fresh chat is the run nobody watches. It has no memory of your lab chat, non
 
 If a row differs, find the line your brief lacks. Back in your lab chat, change that line, download the brief again, and run a new fresh chat. If a line of your brief already decides that row, the run slipped: try one more fresh chat. If it slips again, it is "worker, not brief" (Lesson 5.5). You have the final say, and you can stop there.
 
-**Why check 27.** The four parts describe the job, not the tool, so one brief should run on any capable worker (Lesson 5.8). The outcome, the rules and the checks stay the same. Delivery and access may change: where a file is created, how inputs attach, how permissions are set. One difference changes the brief. Claude's Manual asks before each action, but ChatGPT's desktop Ask for approval can read and edit files in its workspace without asking, and asks only before going beyond it. So the actions that must wait for you are written in the brief, in words, on both. If you have to change the outcome or the rules to move a brief, it was describing a tool, not a job.
+**Why check 28.** The four parts describe the job, not the tool, so one brief should run on any capable worker (Lesson 5.8). The outcome, the rules and the checks stay the same. Delivery and access may change: where a file is created, how inputs attach, how permissions are set. One difference changes the brief. Claude's Manual asks before each action, but ChatGPT's desktop Ask for approval can read and edit files in its workspace without asking, and asks only before going beyond it. So the actions that must wait for you are written in the brief, in words, on both. If you have to change the outcome or the rules to move a brief, it was describing a tool, not a job.
+
+**Why check 29.** A project's instructions and files reach every chat in it. Memory and chat search may bring back some of an earlier chat, but neither can be counted on (Lesson 5.4). So a stage's checked result goes where the next chat can rely on it. That is the project's files, or a handover note that the next chat starts from (Lesson 8.3).
 
 ## Never a deduction
 
@@ -91,6 +101,7 @@ If a row differs, find the line your brief lacks. Back in your lab chat, change 
 - A total for "if Dave approves 4519".
 - The files given in the chat, or as files to download.
 - The run naming something your brief leaves open.
+- Adding that memory or chat search may bring back part of Monday's chat, beside the list in the project's files or a handover note.
 
 ## Take it to work
 
