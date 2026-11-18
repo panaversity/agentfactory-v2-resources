@@ -395,7 +395,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 
 **At work:** a second AI reviewer searches wider. Decide each of its findings yourself, from the source.
 
-## Friday, October 30: a research report
+## The research report
 
 Dave has a different question, and a research tool has answered it. He wants to plan next year's cash on the answer. Net 45 means that a buyer has 45 days to pay a bill. [6.5](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) shows how Maria checked a report like this one.
 
