@@ -328,7 +328,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, attach `role-contract-draft-4.md` from your folder, type "Task 11", and send them together.
 2. The AI shows Draft 4's lines on knowledge sources, memory, skills and case files, one field at a time. For each line, answer: keep it, or replace it with what, in a few words. Then give the lines to add: the AI names the parts each field needs.
-3. The AI asks where the contract says the concepts' copies are. Then it shows Draft 4's line on invoices not in US dollars. Answer: keep it, or replace it with what. Last, it asks whether this change needs a line in the Authority Envelope's change log, where each change Dave makes to the worker's limits is dated (Chapter 7), and what it says.
+3. The AI asks where the contract says the concepts' copies are. Then it shows Draft 4's line on invoices not in US dollars. Answer: keep it, or replace it with what. Last, it asks whether this change needs a line in the Authority Envelope's change log, where each change Dave makes to the worker's limits is dated ([Chapter 7](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/overview/)), and what it says.
 4. The AI writes Draft 5's changed lines into "Maria's records". Every other line of Draft 4 stays as it is. This task has no test.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -365,7 +365,7 @@ Maria has exported the project's setup. Other people have added to it since your
 
 1. In your lab chat, type "Task 13" and send it. The AI shows your project's instructions as one block, and lists the files in your project document.
 2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-project.md`. Download "Maria's records" the same way: it is the record, and you keep it.
-3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). A Claude project keeps its own memory.
+3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). In Claude, open the new project's page and turn off *Use account memory*, under Memory. Then your other chats cannot answer for the worker.
 4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else. The file holds the instructions too, and the project's memory and chat as you left them. That is fine: your instructions say which of it counts.
 5. Open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
 

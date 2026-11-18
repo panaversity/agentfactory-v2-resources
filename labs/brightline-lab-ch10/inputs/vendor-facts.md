@@ -2,13 +2,13 @@
 
 Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Business, Enterprise and Edu are their plans. Each line says what the vendor's page said on the date given. Products change: these are statements, dated, not advice.
 
-## 1. Training, temporary chats, retention and memory (verified 8 October 2026)
+## 1. Training, temporary chats, retention and memory (verified 8 October 2026, and 18 November 2026 for Claude)
 
 **Claude**
 - Training: on Free, Pro and Max, each user's privacy setting decides whether chats may be used to improve Claude. Feedback a user sends, and chats flagged for a safety review, can be used even with it off. With it on, chats can be kept in de-identified form for up to five years. On Team, Enterprise and the API, inputs and outputs are not used for training by default, unless a user sends feedback or the organization opts in.
 - Incognito chats: not used for training, not saved to history, not used for memory, and kept for 30 days by default. Not available inside projects.
-- Retention: on individual plans, deleted chats are removed from back-end systems within 30 days, with exceptions. Chats flagged under the Usage Policy can be kept up to two years, and feedback up to five years. Enterprise Owners can set a custom retention period of at least 30 days. Without one, Enterprise data is kept with no time limit.
-- Memory: on Team and Enterprise, Owners control whether memory is available, and it is off for each member until the member turns it on.
+- Retention: on individual plans, deleted chats are removed from back-end systems within 30 days, with exceptions. Chats flagged under the Usage Policy can be kept up to two years, and feedback for five years. Enterprise Owners can set a custom retention period of at least 30 days. Without one, Enterprise data is kept with no time limit.
+- Memory: on Team and Enterprise, Owners control whether memory is available. In most organizations created on or after October 31, 2026, it starts on for each member. In older ones it is off until the member turns it on.
 
 **ChatGPT**
 - Training: on plans for individuals, the "Improve the model for everyone" setting decides it. When it is off, new conversations are not used for training. On Business, Enterprise and Edu, business data is not used for training by default.
@@ -73,7 +73,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 ## 7. Usage policies (verified 12 October and 18 November 2026)
 
 **Claude**
-- The Usage Policy in effect since November 12, 2026 names eleven high-risk areas: legal, medical, finance, credit, insurance, housing, employment, education and credentials, healthcare access, public benefits and services, and legal status and adjudication. Its high-risk rules cover recommendations about one person, such as a credit, housing or employment decision. A qualified person must review each one, with authority to change it, before it is delivered or used, and the person affected must be clearly told that AI was used. Internal drafts that are not the final recommendation are excluded.
+- The Usage Policy in effect since November 12, 2026 names eleven high-risk areas: legal, medical, finance, credit, insurance, housing, employment, education and credentials, healthcare access, public benefits and services, and legal status and adjudication. Its high-risk rules cover recommendations about one person, such as a credit, housing or employment decision. A qualified person must review such a recommendation, with authority to change it, before it is delivered or used, and the person affected must be clearly told that AI was used. Internal drafts that are not the final recommendation are excluded.
 
 **ChatGPT**
 - The Usage Policies prohibit automating high-stakes decisions in sensitive areas, including credit, employment, housing, legal, medical, insurance and education, without human review.
