@@ -14,7 +14,7 @@ You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for D
 - To write rules for work nobody asked for before the worker takes any, and run team work under a name the team controls, with a check outside the run.
 - To tell the people who rely on it who still checks, without saying "by itself", and write down who may ask a shared worker for what.
 - To prove a job works with a fresh run that has only its contract and its records.
-- To carry one report or plan from the question to a decision, and check each stage twice: is it right, and does it answer the question?
+- To carry one report or plan from the question to a decision, and to check each stage twice.
 
 ## Before you start (5 minutes)
 
@@ -444,7 +444,7 @@ Check it yourself against [9.3](https://agentfactory.panaversity.org/managing-ai
 
 ## When you are done
 
-You are done when every check has passed, the fresh chat ran Thanksgiving from your contract and records alone, Dave has his plan, and your own job is written. Keep both downloads: "Role Contract", Draft 6, is the AP Worker's contract with its two recurring jobs, each with its standing spec, its limits and who checks it. "Note to Dave" is the page you would give the people who rely on it, with your plan for next year under it. Lab 10 starts from its own copy of Draft 6, so you need to bring nothing. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
+You are done when every check has passed, and the fresh chat ran Thanksgiving from your contract and records alone. Dave has his plan, and your own job is written. Keep both downloads: "Role Contract", Draft 6, is the AP Worker's contract with its two recurring jobs, each with its standing spec, its limits and who checks it. "Note to Dave" is the page you would give the people who rely on it, with your plan for next year under it. Lab 10 starts from its own copy of Draft 6, so you need to bring nothing. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
 
 **At work:** before a job runs without you, write down everything a fresh run needs, and name the person who still checks.
 
