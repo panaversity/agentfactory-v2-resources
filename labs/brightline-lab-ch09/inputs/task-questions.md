@@ -232,13 +232,13 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
    Under "On today's tools", after its last line, write "Claude:" and "ChatGPT:", one line per answer. Write each "none documented", and each "not stated", on the Gap list too, as a new line naming the gap, with no person. Keep every other line. This task has no test. After the last answer, say "Task 9 is done".
 
-**Anthropic, as Lesson 9.8 gives it, verified 8 October 2026:**
+**Anthropic, as Lesson 9.8 gives it, verified 18 November 2026:**
 
 - Schedules: "Scheduled tasks in Claude run at set times, on paid plans."
-- Event triggers: "Claude Code routines start from an API call or from GitHub events. Anthropic's pages do not describe a task in the Claude app that starts when an email arrives."
+- Event triggers: "Claude Code's scheduled tasks can start from an API call or from GitHub events. Anthropic's pages do not describe a task in the Claude app that starts when an email arrives."
 - Each run: "Each scheduled task runs as its own session."
-- Whose name: "A Claude Code routine belongs to your own account and acts as you." No Anthropic page in Lesson 9.8 says whose name a scheduled task in the Claude app runs under.
-- Approvals: "A scheduled task has an approval mode, from manual approval to 'Skip all approvals.'"
+- Whose name: "A scheduled task in Claude Code belongs to your own account and acts as you." No Anthropic page in Lesson 9.8 says whose name a scheduled task in the Claude app runs under.
+- Approvals: "A scheduled task has an approval mode. The modes run from manual approval to 'Skip all approvals.'"
 - Review and stop: "Past runs are on the Scheduled page, where a task can be paused."
 
 **OpenAI, as Lesson 9.8 gives it, verified 8 October 2026:**

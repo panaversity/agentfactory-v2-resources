@@ -26,11 +26,11 @@ Task 9 carries checks 20 and 21 of the lab's 27.
 
 ## Why
 
-The design is the same on either AI vendor (Lesson 9.8). The products differ in three ways that change your setup: whose name the work runs under, what can start it, and how its initiative is limited. A ChatGPT team task runs under the team's service account. Anthropic's pages do not say whose name a scheduled task in the Claude app carries, and a Claude Code routine acts as you, so you check before you rely on it. ChatGPT documents tasks that start from Gmail; Anthropic documents no email trigger in the Claude app, so on Claude the email check is a gap with an owner. And on a dot, Pause does not stop scheduled runs, so you write your own initiative rules and limit what the worker can reach.
+The design is the same on either AI vendor (Lesson 9.8). The products differ in three ways that change your setup: whose name the work runs under, what can start it, and how its initiative is limited. A ChatGPT team task runs under the team's service account. Anthropic's pages do not say whose name a scheduled task in the Claude app carries, and a scheduled task in Claude Code acts as you, so you check before you rely on it. ChatGPT documents tasks that start from Gmail; Anthropic documents no email trigger in the Claude app, so on Claude the email check is a gap with an owner. And on a dot, Pause does not stop scheduled runs, so you write your own initiative rules and limit what the worker can reach.
 
 ## Never a deduction
 
-- A Claude Code routine named as a way to schedule, with "acts as you".
+- A scheduled task in Claude Code, once called a routine, named as a way to schedule, with "acts as you".
 - Claude Tag named for a shared channel, with its own identity.
 - A dot named as a standing worker.
 - The approval mode called "ask before acting" or "manual".

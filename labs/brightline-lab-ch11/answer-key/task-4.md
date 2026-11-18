@@ -23,7 +23,7 @@ Task 4 carries checks 11 to 17 of the lab's 51.
 15. **The seat's budget.** Dave owns its budget. A named person checks its usage at a set time, such as Maria every Monday. No one-off work runs from it. **The hard rule.** Moving work to a personal account fails this check.
     - Passed: all three, and the hard rule holds.
     - Missed: no owner; no person or no time; one-off work allowed on it; or the hard rule broken.
-16. **When the daily check's message does not appear.** On Claude, Maria checks the task's past runs on the Scheduled page, or asks `/schedule` why a routine did nothing. On ChatGPT, she checks for a pause or a pending approval, and that the app is still connected.
+16. **When the daily check's message does not appear.** On Claude, Maria checks the task's past runs on the Scheduled page, or asks `/schedule` why a task did nothing. On ChatGPT, she checks for a pause or a pending approval, and that the app is still connected.
     - Passed: a fitting first check for each AI vendor.
     - Missed: a vendor left out; or the brief changed first.
 17. **The second test.** `Test: Tuesday evening` shows the daily check finding nine invoice emails received and none checked, compared by message ID, and telling the person your line names. It quotes your daily check's line.
