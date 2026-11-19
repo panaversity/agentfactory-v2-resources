@@ -73,15 +73,16 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - "**Appropriate.** Low consequence, easy to undo, easy to check as you go."
    - "**Appropriate with review.** The worker is useful, but a defined human check must happen before the output is used, sent or acted on."
    - "**Inappropriate.** The task stays human-owned. A review cannot change the consequence, how hard it is to undo, or the fact that a person must make the decision."
+   - "The middle answer is also called **appropriate with safeguards**."
    - The four screens: reversibility ("If it is wrong, can we catch and undo it before harm is done?"), consequence of error ("Is a mistake small, expensive, harmful, regulated or permanent?"), human judgment ("Does the task depend on care, a relationship or context a person should own?") and accountability ("Who is responsible for the outcome, and can that person really check it?").
    - "Classify the specific activity you delegate, not the subject it is about."
    - "The **deciding factor** is the screen that, if its answer changed, would move the use into another category."
 
    Then show U1 from `brightline-files.md`, as its own lines. Ask: "Is this one activity or two? For each activity: appropriate, appropriate with review, or inappropriate, and the one screen that decides it. Answer: one or two, then for each activity its answer, its screen, and a few words why."
-2. For each activity the learner calls "appropriate with review", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "Who decides it instead, and what may the worker still do here, if anything? Answer: who, then a few words, or nothing."
+2. For each activity the learner calls "appropriate with review" or "appropriate with safeguards", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "Who decides it instead, and what may the worker still do here, if anything? Answer: who, then a few words, or nothing."
 3. The same, one use at a time, for U2 to U6, each shown first.
 
-   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
+   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer in the name the learner used, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
 4. Show Draft 6's "Never automated:" lines, A10 to A15, quoted. Ask: "Do any of your answers need a line here, so the worker cannot do it whoever asks? Draft 6's other lines stay as they are. Answer: the new line in a few words, or 'none'."
 
    Write any new line under "Role Contract, Draft 7" as "Never automated: New line:" and the learner's words. Then say "Ready for your test".
@@ -106,8 +107,9 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - `bank_routing`, `bank_account`: the full master holds the whole numbers; the lab copy shows their last four digits
    - `contact_email`, `phone`
    - `small_supplier`, `onboarded`
+   - `notes`: free text the AP team wrote about some vendors; the lab copy shows it as the full master holds it. For this group, in place of the first two rows, show every row that has a note, with its `vendor_id` and `legal_name`, and say how many rows have none. Ask: "What do these notes hold that the other columns do not? Then the column's tier, and keep or remove, for the check Maria needs. Answer: a few words on what they hold, the tier, then the action."
 
-   Write each under "What data, and by which way in" as a row: the columns, the tier, the action.
+   Write each under "What data, and by which way in" as a row: the columns, the tier, the action. In the `notes` row, add what the learner said the notes hold.
 3. Ask: "What is the tier of the full vendor master, and of a cut file with only the columns you keep? Answer: two tiers."
 4. Say "Now the check, on the kept columns only." Read `vendor-master-lab-copy.csv`, using only the columns the learner kept, and of a column kept as its last four digits, only those digits. Find the likely duplicate vendors: two records that look like one vendor. Write the result under "What data, and by which way in" first, as "The check on the kept columns:", then show it:
    - each pair found: both vendor ids and names, and the kept columns it matched on
@@ -253,7 +255,24 @@ Then say "Ready for your test".
 8. Ask: "What makes the approved way harder than a personal account at Brightline, and who fixes it? Answer: what, then who."
 9. Ask Dave's question: "Will this policy alone stop December happening again? Answer: yes or no, then why in a few words."
 
-   Write both answers under "Interim AI policy". Then say "Ready for your test".
+   Write both answers under "Interim AI policy".
+10. Show Lesson 10.4's question and its two kinds of gap, quoted: "Ask: was there a written rule that covered this, and did the person know it?"
+
+    | Gap | The sign | The fix, or corrective action |
+    | --- | --- | --- |
+    | Policy gap | No rule covers the case, or the rule is unclear or out of date | The rule's owner writes or changes it. Until then, an interim proposal |
+    | Training gap | A clear rule exists, and people do not know it or how to follow it | Teach the rule with a worked case, then check again |
+
+    And: "When people know the rule but the approved way is harder than the unapproved one, the gap is in the policy."
+
+    Then show three events from "What happened in early December 2026" in `brightline-files.md`, quoted, each as its own lines, with the rule Brightline had for it that day:
+    - Thursday, December 3. The rule that day, in Lesson 10.7's words, quoted: "Maria sent it like any other draft, and nothing marked it as one that only Dave could sign."
+    - Sunday, December 6. The rule that day, quoted from the line for Friday, December 11: "Brightline has no written AI policy."
+    - Wednesday, December 9. The rule that day: K4's header line, quoted, with its approval date. Then Jordan Ellis's line from "Who is who", quoted.
+
+    Ask: "For each event: a policy gap or a training gap, and its fix? Answer: three lines, each starting with its date."
+
+    Write the three lines under "Interim AI policy", headed "Which gap, and its fix". Then say "Ready for your test".
 
 **The test:** `Test: the send tool`, the task's only test. After it, end with "Task 11 is done".
 
