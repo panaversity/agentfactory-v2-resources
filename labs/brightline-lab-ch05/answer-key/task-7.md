@@ -2,11 +2,11 @@
 
 The answers for Task 7 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When your rounds are done, with each changed line in your brief document and each rerun back in the chat, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your brief document's words, your answers and the reruns in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When your rounds are done and you have answered the three other runs, attach this file in your lab chat, and send the check prompt. By then, each changed line is in your brief document, and each rerun is back in the chat. The AI marks each check Passed or Missed, quoting your brief document's words, your answers and the reruns in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 7 carries checks 14 and 15 of the lab's 27.
+Task 7 carries checks 14 to 16 of the lab's 29.
 
 14. **Each problem has its part, and each round changed one part.**
     - Maria's message is named Format.
@@ -23,6 +23,12 @@ Task 7 carries checks 14 and 15 of the lab's 27.
     - **The hard rule** holds on the last rerun.
     - Passed: all five.
     - Missed: no rerun; nothing said about what changed; Maria's columns missing from your Format, or out of her order; or the last rerun breaks the hard rule.
+16. **Iterate, restart or change approach.** Your three lines, one for each of the other runs:
+    - 1: iterate. One part, the Format, explains the gap, so add the date format to it, run again and compare.
+    - 2: restart. The chat is long, and an early choice keeps coming back, so start a new chat from the corrected brief.
+    - 3: change approach. Two rounds of new lines changed nothing, and the Context already names the rule, so the cause is not in the brief. Have code find the duplicate and work out the total from the invoice list, or check the two copies of BO-22871 yourself.
+    - Passed: all three, each with a reason.
+    - Missed: a line with no reason, or with another choice. For example, 2 iterated again in the same chat, or 3 given a third new line in the brief.
 
 **The hard rule.** From this task on, a run of your brief fails, whatever else it gets right, if it does either of these:
 
@@ -33,11 +39,14 @@ Task 7 carries checks 14 and 15 of the lab's 27.
 
 Read the first result as a test of your brief (Lesson 5.5). Find its biggest problem, and ask whether your brief covered it. Then change that one part, run again, and compare the two results. Changing everything at once hides what worked. Maria's columns are a fact no earlier ask gave you, so every brief needs a Format change here, and only the Format. If the brief is good and the work is still weak, the brief is not the problem: that is "worker, not brief".
 
+**Why check 16.** After each round, choose one of three (Lesson 5.5). Iterate when the result is close and one part of the brief explains the gap. Restart when an early wrong turn keeps coming back from the chat's history. Change approach when rounds change little, or when the cause is not in the brief.
+
 ## Never a deduction
 
 - More than one round.
 - "Fine as it is" for a decision you are happy to leave to the worker.
 - The rerun's rows, other than the columns and the hard rule. Task 11 grades the rows.
+- For 3, any change from the "Change approach" row of Lesson 5.5's table, whether or not it names the duplicate.
 
 ## Take it to work
 

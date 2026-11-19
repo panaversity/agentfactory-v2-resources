@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 3 and 4 of the lab's 27.
+Task 2 carries checks 3 and 4 of the lab's 29.
 
 3. **The wrong steps are called wrong, each with what should decide it.** Steps 2, 5, 6, 7, 8, 9 and 14, as the table below says.
    - Passed: steps 2, 5, 6, 7 and 8 each called wrong, with what should decide it; and steps 9 and 14 called wrong or left out. A step kept only in its right form also passes, such as step 6 kept as version 3's limit of over $5,000.00, or step 2 kept with the vendor record in place of the invoice's terms. Step 5 called method passes when the notes say the brief must name version 3.
