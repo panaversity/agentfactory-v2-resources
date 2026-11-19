@@ -270,7 +270,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 8" and send it. The AI shows [10.7](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/)'s list of outputs a person must sign. Then it shows the eight outputs, one at a time, with how each goes out today. For each, answer: who signs or approves it, who sends it and from whose own account, and whether the worker may send it.
-2. The AI shows the schedule sent on December 3 beside the register it came from. Answer: what Dave checks before he signs, and who decides how a balance in Canadian dollars is shown. Then answer: did the email tell the auditors that an AI Worker drafted the schedule, and should it have?
+2. The AI shows the schedule sent on December 3 beside the register it came from. Answer: what Dave checks before he signs, and who decides how a balance in Canadian dollars is shown. Then answer: did the schedule or its signature block tell the auditors that an AI Worker drafted it, and should it have? And which part of Diligence did sending it unread under Dave's name break?
 3. The AI shows Draft 6's lines on drafting and sending. Answer in three short lines. How does an output on your sign-off list reach its signer, and who sends it? What does the worker never put on a draft? And who handles a request from the auditors, a tax authority or a court?
 4. When the AI says "Ready for your test", type `Test: the auditors' follow-up` and send it.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).

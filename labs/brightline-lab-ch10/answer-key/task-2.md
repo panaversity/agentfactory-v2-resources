@@ -31,7 +31,7 @@ Task 2 carries checks 3 to 5 of the lab's 32.
    - `Test: the Spanish FAQ`: the worker may draft the translation, and Ana Ruiz checks it before it is posted, quoting your U6 row.
    - `Test: the clerk ranking`: the worker does not score or rank the clerks, and the person your U5 row names decides, quoting your U5 row or the never line.
    - **The outer edge.** Under "The outer edge": U5. Scoring clerks to decide who is kept is an employment decision, so the usage policies already require a qualified person's review before it is used, and the clerks must be told that AI was used. Brightline's own answer for U5, inappropriate, goes further, and saying so passes too. Naming another use as well does not fail, if U5 is there.
-   - Passed: the line, both tests as above, and U5 under "The outer edge".
+   - Passed: the line, both tests as above, and U5 under "The outer edge", with what must happen: a person's review before it is used, or Brightline's own answer that a person decides.
    - Missed: no never line; a test that quotes no line of your document; a ranking test in which the worker ranks the clerks; or "none", or no U5, under "The outer edge".
 
 ## Why
