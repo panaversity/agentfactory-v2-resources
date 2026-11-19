@@ -18,9 +18,11 @@ Task 6 carries checks 15 to 17 of the lab's 34.
     - Passed: rows 2, 5 and 10, each a problem, with what is right. A row decided in an earlier task counts, when this task's review lists it.
     - Missed: one of the three rows not flagged, not decided, or called right; or decided a problem with what is right other than the "From the sources" column below. For row 2, "on Dave's list" is the same answer as PAY_AFTER_APPROVAL.
 
-17. **The memo's totals keep the currencies apart, and that is right, by a standard of the field.** The memo's "Friday's run" table gives "CAD 1,980.00 and the -$250.00 credit" and "$4,370.00 and CAD 4,300.00": no total adds Canadian dollars to US dollars. A total adds amounts in one currency only. That is a standard of accounting, not a rule in any file in the zip: AP policy version 3 says nothing about other currencies (Lesson 6.1).
-    - Passed: your answer names the standard, in any words, such as "a total adds one currency only" or "never add CAD to USD", and decides the memo's totals right by it.
-    - Missed: no standard named, or only the policy or Maria's brief given as the reason; the memo's totals called a problem for keeping the currencies apart; or a total that adds Canadian to US dollars called right.
+17. **The memo's totals, judged against a standard of the field.** The memo's "Friday's run" table gives "CAD 1,980.00 and the -$250.00 credit" and "$4,370.00 and CAD 4,300.00". No total adds Canadian dollars to US dollars. A standard of accounting says a total adds amounts in one currency only. Maria's brief says not to convert currencies, but it says nothing about adding them. So only the standard decides this (Lesson 6.1).
+    - Passed: a standard of the field, in any words, and a judgment of the totals that is right by the lab's files. The expected answer is the one above: the totals meet it.
+    - Another standard of the field passes too, when its judgment of the totals is right by the lab's files.
+    - Missed: no standard named. Or only the policy or Maria's brief given, with no standard of the field.
+    - Missed too: a wrong judgment, such as the totals called a problem for keeping the currencies apart.
 
 **The hard rule.** Task 6 fails, whatever else passes, if the figure Dave signs pays 4533 before Dave approves it: $22,891.60, or any figure with 4533's $5,312.00 in it, given as ready to pay on Friday.
 
@@ -83,7 +85,7 @@ A figure that is not in this table: list the rows it pays. It passes only when t
 
 Recompute from the source, never from the worker's file (Lesson 6.4). Adding up the CSV checks only its arithmetic: if a row is wrong, the total is wrong in the same way. A total taken from the worker's files is not the number. Worked out again from the invoice list, the vendor terms, the approvals log and Maria's decisions, the run is $17,579.60 across 9 invoices, and $22,891.60 across 10 once Dave approves 4533 from his own login. Three rows make the gap: 4533 is paid as if it were approved, 5152 is left out on the invoice's old terms, and BO-23010 pays Buckeye's bill a second time. A tool may do the adding, as long as it works from the source files.
 
-Some checks rest on no file at all. A total adds amounts in one currency only: that is a standard of accounting, and AP policy version 3 says nothing about other currencies. The memo keeps Canadian and US dollars apart in every total, so it meets the standard. Only a check against the standard can say so (Lesson 6.1).
+Some checks rest on no file at all. A total adds amounts in one currency only. That is a standard of accounting, and AP policy version 3 says nothing about other currencies. The memo keeps Canadian and US dollars apart in every total, so it meets the standard. Only a check against the standard can say so (Lesson 6.1).
 
 ## Never a deduction
 

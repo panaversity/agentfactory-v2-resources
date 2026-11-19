@@ -192,7 +192,7 @@ Say "Ready for your review".
 3. Ask: "Swap the attribute: picture a domestic supplier with the same record. Would the note still say this? Yes or no."
 4. Ask: "Keep the note, rewrite it, or delete it? One of the three, and a line of why."
 5. Show the row of package/proposal-2026-10-30.csv for NMP-3440, quoted, and the sentence of the Context in Maria's brief that says what to do when version 3 does not cover a case, quoted. Ask: "Is this row's hold a problem, or right? A few words of why."
-6. Show the memo's title line and its "Decisions for you" section, quoted, then 6.2's fit check, below. Ask: "Does the note belong in this memo, whose job is Friday's run? Yes or no, and a line of why."
+6. Show the memo's title line and its "Decisions for you" section, quoted, then 6.2's fit check, below. Ask: "Does the note belong in this memo? Yes or no, and a line of why."
 
 Write the answers to questions 2 to 6 under "Northern Maple's note" in the Review findings. Say "Task 8 is done".
 
