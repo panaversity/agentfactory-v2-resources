@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 9 to 13 of the lab's 20.
+Task 4 carries checks 9 to 13 of the lab's 21.
 
 9. **Authority is written as verbs, one line for each action, including each responsibility.** Every action the worker takes, including each of its responsibilities, has one line with one verb: observe, recommend, draft, execute or escalate, as the lab page defines them. Forbidden actions say "never", and a "never" line may also say where the request goes. Missed: authority written as one sentence, vague words such as "be careful", or a responsibility with no Authority line.
 10. **Dave's three never rules and his stop-and-ask cases are in, in his words.** Never change a vendor's payment details, including bank account, address or remit-to name. Never approve or release a payment. Never send anything to a vendor without a person's review. Escalation names Dave Kowalski and his cases: any request to change payment details, however it arrives, which he confirms by phone on the number on file; any invoice over $5,000; any vendor not paid before; anything it is unsure of. Missed: a rule that names only bank details, a never rule missing, the phone check dropped, or "a person" where Dave said "me".
