@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 9 and 10 of the lab's 29.
+Task 4 carries checks 9 and 10 of the lab's 31.
 
 9. **The record's rules.** "The AP matters record's rules", under Case files, say:
    - A run reads the open matters, or the matters for the vendors on its list, before it lists the invoices.

@@ -13,5 +13,6 @@ Maria did the review in her own chat with the AP Worker, every Thursday, until M
 | 7 | Send it to Dave | Maria | 0 |
 | 8 | Approve the run from his own login, on Thursday afternoon | Dave | not counted |
 | 9 | Call a vendor back about a bank-detail or record change | Maria | as needed |
+| 10 | Phone a vendor whose invoice is held this week, to say it will not be paid this Friday and what happens next | Maria | as needed |
 
 Dave used to read the run list himself every Thursday afternoon, before he approved the payment run. He stopped after Maria's email of Monday, November 9, 2026: "The AP Worker now handles the pre-run review by itself."

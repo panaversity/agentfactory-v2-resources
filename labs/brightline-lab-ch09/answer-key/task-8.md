@@ -2,11 +2,11 @@
 
 The answers for Task 8 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the identity, the jobs' access, "Kind", the check under "How we check" and "On a holiday" are in your Role Contract, and both tests, `Test: No note at the check time` and `Test: Thanksgiving`, are back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your Role Contract's lines and the tests' replies in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When the identity, the jobs' access, "Kind", the check under "How we check" and "On a holiday" are in your Role Contract, and both tests, `Test: No note at the check time` and `Test: Thanksgiving`, are back, and "Handover, if Maria leaves:" is written, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your Role Contract's lines and the tests' replies in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 8 carries checks 18 and 19 of the lab's 29.
+Task 8 carries checks 18 to 20 of the lab's 31.
 
 18. **Whose name, and what it reaches.** Your Role Contract says:
     - Both jobs run under a team or worker identity the team controls, such as ap-worker@brightline, never a person's login. Until that identity exists, the line may say the jobs still run in Maria's account.
@@ -22,12 +22,17 @@ Task 8 carries checks 18 and 19 of the lab's 29.
     - "Thanksgiving": the test says the run fires, and the named person reads the note by the time the spec gives.
     - Passed: all five.
     - Missed: any of them otherwise; or a check that only the run itself does, which cannot catch a run that never started.
+20. **What Jordan gets.** "Handover, if Maria leaves:" gives Jordan, for both jobs, the seven things: his name as the owner; where the contract, its knowledge and its skills live; what each run reads and what it produces; the checks, and who does each; the refresh log for the knowledge; how to tell a run failed, and what to do then; and one run watched together, named, before he takes over.
+    - Passed: all seven, each with this contract's own answer, such as the notes folder for what the Thursday run produces.
+    - Missed: any of the seven missing or only named, for example "the checks" with no one named for them; or no run watched together.
 
 ## Why
 
 A run acts under someone's identity (Lesson 9.3). Both jobs ran as Maria, so the run could do anything she could, the folder's history says she renamed the scans, and the jobs may stop when her login changes. Team work belongs under an identity the team controls, with only the access the job needs. A standing worker has a lasting identity, ongoing responsibilities and its own initiative (Lesson 9.5). Maria's two jobs are delegated work on a trigger, which is why their identity and access must be set on purpose.
 
 Silence must mean success (Lesson 9.3). A run that never starts says nothing, so something outside the run checks that the note arrived, at a set time, by a named person (Lesson 9.7). And the run will run on Thanksgiving if the schedule says Thursday. With Maria off, someone else must read the note that day, or nobody will.
+
+A workflow outlasts the person who built it only if the next owner gets seven things (Lesson 9.7). Jordan does not take over today. Writing the seven down now is what lets him take over on any day, without Maria there to explain.
 
 ## Never a deduction
 
@@ -37,6 +42,8 @@ Silence must mean success (Lesson 9.3). A run that never starts says nothing, so
 - "Kind" written in other words, such as "a scheduled job that stops after each run".
 - A test that adds that Dave still approves the run from his own login.
 - A remark about the lab's dates.
+- Which run Jordan watches, when it is before he takes over.
+- The seven lines in other words, or in another order.
 
 ## Take it to work
 

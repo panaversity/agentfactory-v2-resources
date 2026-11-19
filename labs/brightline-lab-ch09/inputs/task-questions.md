@@ -36,6 +36,8 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 
 **A delegation map** (Lesson 9.2): for each step, "who does it today and who should do it from now on". Its three questions, quoted: "**May it go to a worker?**", "**Who should own it?** Decide by four tests. *Reversibility:* can the step be undone? *Stakes:* what does the worst error cost? *Human judgment or empathy:* does the step need care for a person, or a relationship? *Accountability:* is this a decision someone is responsible for?", and "**What supports it?** A standing instruction, an approved concept, a computed report, or a named person's review."
 
+**The three ways to mark a step** (Lesson 9.2), quoted: "An **AI-executed** step is one the worker does, and a person checks a sample of its results. A **human-reviewed** step is one the worker drafts, and a named person checks it before it is used. A **human-retained** step is one a person does."
+
 **The nine places a run could be pointed at** (Task 3):
 
 1. The register export: one file each Thursday morning, from the accounting system.
@@ -124,12 +126,12 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 ## Task 2. Who does each step
 
-1. Show the delegation map's three questions, quoted. Then show the steps of thursday-review-today.md, as its table, all nine, with who does each today. Ask: "From now on, who does each step: the worker, Maria, Dave, or nobody? And what supports it? Answer: one line per step, starting with its number: who, then the support."
-2. Ask, as a question of your own: "Before you write the note, what do you check that this list does not show? Answer in a few words." Then: "From now on, who does that step, and what supports it? Answer: who, then the support."
+1. Show the delegation map's three questions, quoted, and the three ways to mark a step, quoted. Then show the steps of thursday-review-today.md, as its table, all ten, with who does each today. Ask: "From now on, who does each step: the worker, Maria, Dave, or nobody? How is it marked, and what supports it? Answer: one line per step, starting with its number: who, the mark, then the support."
+2. Ask, as a question of your own: "Before you write the note, what do you check that this list does not show? Answer in a few words." Then: "From now on, who does that step, how is it marked, and what supports it? Answer: who, the mark, then the support."
 3. Ask: "Who reviews the note, by what time on Thursday, and who stands in when that person is out? Answer: who, the time, then the stand-in."
 4. Show Lesson 9.2's lines on measuring, quoted: "Then measure. Before you switch, record a baseline, the numbers for how the step works today. Write down how long it takes, how many rounds of correction it needs, and how many errors reach the next person. Run the old way and the new way at the same time for two or three cycles of the work. Keep the new way only if it is better on the numbers you wrote down, not on how it feels." Ask: "What is the review's baseline today, what will you measure, for how long, and when do you keep the new way? Answer: the baseline, what you measure, for how long, then the rule."
 
-   Write under "What it owes", after "Not this worker's jobs:", a new field "Who does each step of the Thursday review:", with one line per step in the order of thursday-review-today.md, and the learner's new step after the step it comes before or after, as the learner placed it, or after step 4 if they did not say. Each line: the step, who does it from now on, and its support. Then "The note's reviewer:", and "Before the new way is kept:".
+   Write under "What it owes", after "Not this worker's jobs:", a new field "Who does each step of the Thursday review:", with one line per step in the order of thursday-review-today.md, and the learner's new step after the step it comes before or after, as the learner placed it, or after step 4 if they did not say. Each line: the step, who does it from now on, its mark, and its support. Then "The note's reviewer:", and "Before the new way is kept:".
 
    This task has no test. After the last answer, say "Task 2 is done".
 
@@ -241,6 +243,12 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 **The tests:** `Test: No note at the check time`, then `Test: Thanksgiving`.
 
+**After the tests.**
+
+7. Show Lesson 9.7's seven things a next owner gets, quoted: "1. Their name as the owner, written down. 2. Where the instructions, knowledge and skills live. 3. What each run reads and what it produces. 4. The checks, and who does each one. 5. The refresh log for the knowledge. 6. How to tell a run failed, and what to do then. 7. One run watched together, before the handover." Then say: "Jordan Ellis starts on Monday, November 23. Dave wants him able to own both jobs if you ever leave AP." Ask: "What does Jordan get for both jobs? Answer: one line for each of the seven, in order."
+
+   Write it under "How we check", as a new last line "Handover, if Maria leaves:", with the seven lines in order. Then say "Task 8 is done".
+
 ## Task 9. On each AI vendor
 
 1. Show the Anthropic lines below, each topic as its own line, with its date. Ask: "On Claude: which feature would run the Thursday review, and what would start the invoice email check, or 'none documented'? Answer: one line each."
@@ -271,12 +279,13 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 ## Task 10. One page for Dave
 
 1. In "Note to Dave", under its title, write a first line: "To Dave Kowalski, from Maria Lopez, Friday, November 20, 2026." Then write three numbered parts from the Role Contract's lines, each naming the lines it comes from: (1) what runs, and when; (2) what it reads; (3) what it never does. Use only what the contract's lines say. Show them. Ask: "Is each part right? Answer: OK, or what to change, for each."
-2. Show Lesson 9.7's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Ask: "Write part 4 yourself, in one or two sentences: what a person still checks, by name."
+2. Show Lesson 9.7's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Then show its lines on underselling, quoted: "Do not undersell it either. A stakeholder told 'it only drafts' may never use a step that works, or may redo by hand what the worker already checked." Ask: "Write part 4 yourself, in one or two sentences: what a person still checks, by name."
 3. Ask: "Write part 5 yourself, in one or two sentences: how we will know it failed."
 4. Show the P.S. of dave-request.md, quoted. Ask: "Write part 6 yourself, in one or two sentences: what it is worth, measured."
 5. Ask: "Write its limits yourself, in one or two sentences."
+6. Say: "Dave will forward your page to Linda, Brightline's owner. She has never used AI at work." Ask: "Write one or two sentences for her, to go at the top: what the AI does, in plain words, and who still decides. Answer: the sentences."
 
-   Put parts 4, 5 and 6, and the limits, into "Note to Dave" exactly as the learner sent them, numbered 4 to 6, then "Limits:". This task has no test. After the last answer, say "Task 10 is done".
+   Put parts 4, 5 and 6, and the limits, into "Note to Dave" exactly as the learner sent them, numbered 4 to 6, then "Limits:". Put the sentences for Linda under the first line, exactly as sent, after "For Linda:". This task has no test. After the last answer, say "Task 10 is done".
 
 ## Task 11. Who may ask
 

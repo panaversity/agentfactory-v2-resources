@@ -6,7 +6,7 @@ The answers for Task 7 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 7 carries checks 15 to 17 of the lab's 29.
+Task 7 carries checks 15 to 17 of the lab's 31.
 
 15. **The six cases.** Under "Initiative", each case has its rung and its rule:
     1. Noting Northern Maple's three invoices in its own Thursday note: notice, allowed.

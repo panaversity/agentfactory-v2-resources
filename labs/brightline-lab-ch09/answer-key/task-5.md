@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 5 carries checks 11 and 12 of the lab's 29.
+Task 5 carries checks 11 and 12 of the lab's 31.
 
 11. **November 19, the week it went wrong.** The run's note, against what was right that Thursday:
     - On the list: NMP-3486, GLE-88 and BO-23215.

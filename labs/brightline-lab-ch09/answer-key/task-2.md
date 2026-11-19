@@ -6,11 +6,11 @@ The answers for Task 2 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 4 to 6 of the lab's 29.
+Task 2 carries checks 4 to 6 of the lab's 31.
 
-4. **Two steps never move to the worker, and a person reviews the note.** On the map, approving the run stays Dave's, from his own login, and calling a vendor back about a bank-detail or record change stays Maria's. Reading the note again and correcting it is a person's review, such as Maria's, before the note reaches Dave.
-   - Passed: Dave approves the run, Maria calls back, and a named person reviews the note before Dave gets it.
-   - Missed: any part above missing or wrong, for example the worker approves the run or calls a vendor; or the note reaches Dave with no person's review.
+4. **Each step marked, and three steps that never move to the worker.** Every step on the map is marked AI-executed, human-reviewed or human-retained. Approving the run stays Dave's, from his own login, and calling a vendor back about a bank-detail or record change stays Maria's: both human-retained. Phoning a vendor whose invoice is held is human-retained too, because it needs care for the relationship, whoever drafts what to say. Reading the note again and correcting it is a person's review, such as Maria's, before the note reaches Dave.
+   - Passed: every step marked; Dave approves the run, Maria calls back, and a person phones the held vendor, each human-retained; and a named person reviews the note before Dave gets it.
+   - Missed: any part above missing or wrong, for example a step with no mark; the worker approves the run, calls a vendor back or phones the held vendor; or the note reaches Dave with no person's review.
 5. **The step the list left out, and who reviews the note.** The map has a step for reading the AP matters record for open vendor requests, such as a bank-detail change, before the note is written: the worker reads it and proposes holds, and Maria checks them. And the note has a named reviewer, by a set time on Thursday, with a named stand-in.
    - Passed: the record step, and a reviewer, a time and a stand-in, each named.
    - Missed: any part above missing or wrong, for example no step for the open vendor requests in the record; or a reviewer with no time or no stand-in.
@@ -20,7 +20,7 @@ Task 2 carries checks 4 to 6 of the lab's 29.
 
 ## Why
 
-A worker that fits the steps your team already follows is easier to check (Lesson 9.2). Each step gets its owner by four tests: reversibility, stakes, human judgment or empathy, and accountability. Verifying a bank-detail request and approving the run are decisions people answer for, so they never move: they are human-retained. The note is human-reviewed, because the worker drafts it and a named person checks it. The step Dave dropped, his Thursday check, is the unstaffed gate: a review on paper that nobody does on the day. Naming the reviewer, a time and a stand-in is how a gate stays staffed.
+A worker that fits the steps your team already follows is easier to check (Lesson 9.2). Each step gets its owner by four tests: reversibility, stakes, human judgment or empathy, and accountability. Verifying a bank-detail request and approving the run are decisions people answer for, so they never move: they are human-retained. Telling a vendor that its payment is held needs care for the relationship, so it stays with a person too. Each step then carries one of three marks: AI-executed, human-reviewed or human-retained. The note is human-reviewed, because the worker drafts it and a named person checks it. The step Dave dropped, his Thursday check, is the unstaffed gate: a review on paper that nobody does on the day. Naming the reviewer, a time and a stand-in is how a gate stays staffed.
 
 The step Maria left out of her list is the one that went wrong on November 19. She read her record for open vendor requests every Thursday without writing it down, so her instructions never named it, and the run never read it. An interview that asks what you check before you write is how such a step is found.
 
@@ -33,6 +33,8 @@ Then measure, before you switch: 150 minutes, the corrections, the errors reachi
 - The stand-in being Dave or Jordan, or the review time being other than noon.
 - The record step placed before or after the duplicate check.
 - Rounds of correction left out of what you measure.
+- Picking the invoices or marking approvals marked AI-executed or human-reviewed, when the support is named.
+- The worker drafting what Maria says to the held vendor, when Maria makes the call.
 
 ## Take it to work
 

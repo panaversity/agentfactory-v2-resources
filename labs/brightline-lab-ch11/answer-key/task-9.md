@@ -6,7 +6,7 @@ The answers for Task 9 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 9 carries checks 31 to 34 of the lab's 51.
+Task 9 carries checks 31 to 34 of the lab's 52.
 
 31. **Where you looked.** What shows what the run did is where its work lands: the drafts folder. The last message and the status file say only what the run thought it had finished. Your check compares each of the five vendors with the drafts folder, and the Inspect gave a "Compared:" line for each.
     - Passed: the drafts folder, and the Inspect's five lines.

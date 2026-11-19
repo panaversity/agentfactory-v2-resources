@@ -23,7 +23,7 @@ Open both in Task 1, beside the chat. Keep each to what it holds below. Read a d
 7. Monday: the replies that stopped
 8. Monday: the discounts
 9. Where each correction lives
-10. February: three more records
+10. February: four more records
 11. Your own job
 
 No test reads it.
@@ -253,7 +253,7 @@ Its day is Monday, January 18, 2027. Friday is Friday, January 15, 2027.
 
 **Before the first test.**
 
-1. Show Maria's report 4, the five causes, and Record D from task-records.md, in full, under its heading. Ask: "Where does it live? The cause, or two, and for each the step that shows it. Answer: the cause, then the step, for each."
+1. Show Maria's report 4, the five causes, and Record D from task-records.md, in full, under its heading. Ask: "Where does it live? The cause, or two, and for each the step that shows it. If a cause is the brief, also say which of its four parts was missing: outcome, context, format or constraints. Answer: the cause, then the step, for each, and the missing part."
 2. Ask: "Maria sent all five. Which check did she skip before she did? Answer: a few words."
 
    Write answers 1 and 2 under "Friday". In the contract, add the skipped check under "Replies and handoffs", as a line on what Maria does before she sends a reply.
@@ -349,7 +349,7 @@ Its day is Monday, January 18, 2027.
    Write it under "Where each correction lives", and in the contract at the end of the "Before Draft 8 is kept:" line.
 5. Now date the contract. Change its first line to "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027", and take out the line "As it stood on Monday, January 11, 2027." Add under "Change log": "- Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11." Show the first line and the change-log line. Say "Task 11 is done".
 
-## Task 12. Three more records
+## Task 12. Four more records
 
 Its day is Thursday, February 4, 2027.
 
@@ -357,11 +357,11 @@ Its day is Thursday, February 4, 2027.
 
 1. Show the five causes. Then show Record 1 from february-records.md, in full. Ask: "Where does it live? The cause, or two, each with the step that shows it, and your one-minute check. Answer: the cause, the step, then the check, for each cause."
 2. Show the contract's lines on bank details: A12 under "Never automated", and the first line under "Escalation triggers". Ask: "And Greenway's request to send future payments to a new account: what happens to it now? Answer: a few words."
-3. The same question as 1 for Record 2, then for Record 3, each shown first, in full.
+3. The same question as 1 for Record 2, then for Record 3, then for Record 4, each shown first, in full.
 
-Write each answer under "February: three more records". Then say "Ready for your Inspect".
+Write each answer under "February: four more records". Then say "Ready for your Inspect".
 
-**The Inspect:** `Inspect: my check`, which runs the learner's checks for all three records. After it, say "Task 12 is done".
+**The Inspect:** `Inspect: my check`, which runs the learner's checks for all four records. After it, say "Task 12 is done".
 
 ## Task 13. The same week again
 

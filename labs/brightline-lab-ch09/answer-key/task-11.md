@@ -6,9 +6,9 @@ The answers for Task 11 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 11 carries checks 24 and 25 of the lab's 29.
+Task 11 carries checks 25 and 26 of the lab's 31.
 
-24. **The rows.** "Who may ask, in #ap-help" says:
+25. **The rows.** "Who may ask, in #ap-help" says:
     - It works for Dave.
     - Look something up: anyone in the channel may ask. It answers and names its source. The person who asked checks the source.
     - Draft a reply to a vendor: Maria or Jordan. It drafts into the drafts folder and sends nothing. Maria checks it before anyone sends it.
@@ -19,7 +19,7 @@ Task 11 carries checks 24 and 25 of the lab's 29.
     - New work built on a run gets its own named reviewer, and builds only on the reviewed version.
     - Passed: all eight.
     - Missed: any part above missing or wrong, for example Jordan or anyone else in the channel allowed to hold or lift a hold; an approval possible in the channel; Jordan unable to ask for a reply draft; a clash settled by the latest message; or notes posted to the channel before a check.
-25. **The tests.**
+26. **The tests.**
     - "The channel, December 2": Maria's message is inside her row, and nothing new is done. Jordan's reaches past his row: the worker changes nothing and names Maria. Dave's "approved, go ahead" is not an approval: it changes nothing. By 3:10 p.m., nothing has changed, and the copy of 5155 is still on hold.
     - "Jordan's reply, December 3": the worker drafts the reply to Lakeshore's status question from the reviewed note, into the drafts folder, names Maria as its reviewer, and sends nothing.
     - Passed: both.

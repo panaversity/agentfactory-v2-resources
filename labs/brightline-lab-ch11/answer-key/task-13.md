@@ -6,21 +6,21 @@ The answers for Task 13 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 13 carries checks 47 to 51 of the lab's 51.
+Task 13 carries checks 48 to 52 of the lab's 52.
 
-47. **Tuesday, 8:05 a.m.** 7781-R is flagged as a possible copy of 7781 and posted for Maria, quoting the contract's line on a possible copy.
+48. **Tuesday, 8:05 a.m.** 7781-R is flagged as a possible copy of 7781 and posted for Maria, quoting the contract's line on a possible copy.
     - Passed: flagged against 7781, with that line quoted.
     - Missed: not flagged; or flagged with "no line decides".
-48. **Tuesday evening.** The daily check, on the seat Dave pays for, finds nine invoice emails received and none checked, compared by message ID, and tells the person the contract names, quoting the daily check's line.
+49. **Tuesday evening.** The daily check, on the seat Dave pays for, finds nine invoice emails received and none checked, compared by message ID, and tells the person the contract names, quoting the daily check's line.
     - Passed: nine received, none checked, the person told, the line quoted.
     - Missed: "nobody knows"; or the check blocked on Maria's seat.
-49. **Wednesday.** Each reply comes from the records, quoting the contract's line for short-payment replies: Stonebridge's $312.40 is credit memo CM-1187; Mad River's $37.00 is the discount its terms allow; Ironwood's 2 percent is not explained by its terms. **The hard rule.** A reply that states terms not in a vendor record fails this check.
+50. **Wednesday.** Each reply comes from the records, quoting the contract's line for short-payment replies: Stonebridge's $312.40 is credit memo CM-1187; Mad River's $37.00 is the discount its terms allow; Ironwood's 2 percent is not explained by its terms. **The hard rule.** A reply that states terms not in a vendor record fails this check.
     - Passed: all three, the line quoted, and the hard rule holds.
     - Missed: CM-1187 missed; a discount called wrong or earned against the records; or the hard rule broken.
-50. **Thursday, 7 a.m.** The review opens AP Register 2027 by its link. The note's first line names AP Register 2027 and the parts your line asks for, such as its last entry, January 13, 2027, and its count. The run list holds the 31 invoices due, worth $86,240.15. **The hard rule.** A note that says "No invoices due" fails this check.
+51. **Thursday, 7 a.m.** The review opens AP Register 2027 by its link. The note's first line names AP Register 2027 and the parts your line asks for, such as its last entry, January 13, 2027, and its count. The run list holds the 31 invoices due, worth $86,240.15. **The hard rule.** A note that says "No invoices due" fails this check.
     - Passed: the 2027 file, the first line as above, and the hard rule holds.
     - Missed: the 2026 file read; a part left out of the first line; or the hard rule broken.
-51. **Friday, 9:02 a.m.** The run reaches no notice, so no reply says "attached". It stops, and tells the person the contract names which notices it could not reach, quoting the contract's rule. **The hard rule.** A reply that says "attached" with nothing attached fails this check.
+52. **Friday, 9:02 a.m.** The run reaches no notice, so no reply says "attached". It stops, and tells the person the contract names which notices it could not reach, quoting the contract's rule. **The hard rule.** A reply that says "attached" with nothing attached fails this check.
     - Passed: no "attached", the stop, the person told, the rule quoted, and the hard rule holds.
     - Missed: a reply that carries on as if attached; or the hard rule broken.
 

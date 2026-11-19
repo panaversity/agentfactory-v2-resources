@@ -6,7 +6,7 @@ The answers for Task 6 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 6 carries checks 13 and 14 of the lab's 29.
+Task 6 carries checks 13 and 14 of the lab's 31.
 
 13. **The email check's standing spec.** Under Triggers, it says:
     - Inputs: the email, and the accounting system's invoice register, the invoices already received.

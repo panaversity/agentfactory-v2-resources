@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 1 carries checks 1 to 2 of the lab's 51.
+Task 1 carries checks 1 to 2 of the lab's 52.
 
 1. **Not scored: a first place for each failure.** Under "First places to look", one line for each of Maria's four reports, each naming a place to look before anything changes: one of the five causes, one of the checks for a missing output, or a record or file to open. Which place you chose is not scored. The look back at the end compares it with what each record showed.
     - Passed: four lines, each naming a place to look.
