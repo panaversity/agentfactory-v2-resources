@@ -83,6 +83,8 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 3. The same, one use at a time, for U2 to U6, each shown first.
 
    Write each use under "Should it do this at all?" as a row: the use, each activity, its answer in the name the learner used, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
+
+   After U6, show Lesson 10.1's outer edge, quoted: "both AI vendors' usage policies require a person to review high-stakes uses that affect people. These include legal, medical, employment, housing, credit and insurance decisions." And from its example: "So a qualified person must review each recommendation before it is used, with the authority to change it. Each applicant must also be clearly told that AI was used." Ask: "Does an AI vendor's usage policy already decide one of the six uses? Answer: the use and what must happen, or 'none'." Write the answer under "Should it do this at all?", headed "The outer edge".
 4. Show Draft 6's "Never automated:" lines, A10 to A15, quoted. Ask: "Do any of your answers need a line here, so the worker cannot do it whoever asks? Draft 6's other lines stay as they are. Answer: the new line in a few words, or 'none'."
 
    Write any new line under "Role Contract, Draft 7" as "Never automated: New line:" and the learner's words. Then say "Ready for your test".
@@ -118,9 +120,13 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    Ask: "Did it find Maria's four known pairs, and leave Union Packaging Inc. and Union Packaging Supply LLC apart? Answer: yes, or which pair it missed or wrongly flagged."
 
    Whenever the learner changes a column's action, or sends "Run the check again", do this step again on the kept columns as they now stand, and replace the old result.
+
+   Then show Lesson 10.2's lines, quoted: "**A file for analysis is still an upload.** Code execution lets the AI run a small program on a file." "It needs the file, so the whole file goes in, with every column the question never uses. Before you upload for analysis, keep only the rows and columns the question needs." Ask: "At work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it? Answer: a few words." Write the answer under "What data, and by which way in", headed "The upload".
 5. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
 
-   Write both answers under "What data, and by which way in". Then say "Task 3 is done". This task has no test.
+   Then show Lesson 10.2's line, quoted: "**Replace identifiers with codes,** and keep the list that links them outside the AI tool. The data is still pseudonymized, so it keeps its tier. Codes do not make it anonymous: a job title, a site and a start date together can still point to one person." Ask: "If every vendor name were replaced with a code, would the cut file be anonymous? Answer: yes or no, and why."
+
+   Write the three answers under "What data, and by which way in". Then say "Task 3 is done". This task has no test.
 
 ## Task 4. Which way in
 
@@ -194,7 +200,9 @@ Then say "Ready for your test".
    Write each under "Who must sign before it leaves" as a row of the sign-off matrix: the output, who signs or approves, who sends it and from whose account, and whether the worker may send it.
 3. Show the schedule sent on December 3 beside `open-payables-register-2026-11-30.csv`: every line where the two differ, with both values; the schedule's total; the register's total in US dollars alone; and the schedule's last two lines, its signature block. Say nothing about what a difference means. Ask: "What does Dave check before he signs a schedule like this, and who decides how a balance in Canadian dollars is shown? Answer: what he checks, then who decides."
 
-   Write the answer under "Who must sign before it leaves", headed "The schedule".
+   Then show Lesson 10.5's lines, quoted: "**Disclosure** means telling people that AI was involved. Check rules first: law, policy, contract, professional standards, client terms, and an AI vendor's usage policy (10.3). If one requires disclosure, the decision is made. If none does, ask whether knowing AI was involved would change the reader's understanding of the work." Ask: "Did the email tell the auditors that an AI Worker drafted the schedule, and should it have? Answer: yes or no, then yes or no and why."
+
+   Write both answers under "Who must sign before it leaves", headed "The schedule".
 4. Show these Draft 6 lines, quoted: A06 and A07 under "Actions and levels:", leaving out A07's words in brackets, A10 under "Never automated:", the first line under "Replies and handoffs:", and the heading "Escalation triggers:" with its first line. Ask: "What must Draft 6 say for your sign-off matrix to hold? Three things, each in a few words: how an output on the sign-off list reaches its signer, and who sends it; what the worker never puts on a draft; and who handles a request from the auditors, a tax authority or a court. Draft 6's other words stay. Answer: three lines."
 
    Write each under "Role Contract, Draft 7", under the Draft 6 heading it belongs to, as a whole line. Then say "Ready for your test".

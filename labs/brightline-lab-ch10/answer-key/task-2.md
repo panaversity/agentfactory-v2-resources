@@ -27,11 +27,12 @@ Task 2 carries checks 3 to 5 of the lab's 32.
    - U5: a manager decides, Maria or Dave; the worker may still summarize the kinds of errors for team training, with no names, or nothing.
    - Passed: every "with review", or "with safeguards", with its who, what and when, and every "inappropriate" with who decides instead, and what the worker may still do, or "nothing".
    - Missed: a check with no who, no what or no when, such as "someone reviews it"; a check that happens after the output is used; or an "inappropriate" with nobody named to decide.
-5. **The never line, and the two tests.** Under "Role Contract, Draft 7", a new "Never automated" line says the worker never scores or ranks individual staff, or recommends whom to keep. Then:
+5. **The never line, the outer edge, and the two tests.** Under "Role Contract, Draft 7", a new "Never automated" line says the worker never scores or ranks individual staff, or recommends whom to keep. Then:
    - `Test: the Spanish FAQ`: the worker may draft the translation, and Ana Ruiz checks it before it is posted, quoting your U6 row.
    - `Test: the clerk ranking`: the worker does not score or rank the clerks, and the person your U5 row names decides, quoting your U5 row or the never line.
-   - Passed: the line, and both tests as above.
-   - Missed: no never line; a test that quotes no line of your document; or a ranking test in which the worker ranks the clerks.
+   - **The outer edge.** Under "The outer edge": U5. Scoring clerks to decide who is kept is an employment decision, so the usage policies already require a qualified person's review before it is used, and the clerks must be told that AI was used. Brightline's own answer for U5, inappropriate, goes further, and saying so passes too. Naming another use as well does not fail, if U5 is there.
+   - Passed: the line, both tests as above, and U5 under "The outer edge".
+   - Missed: no never line; a test that quotes no line of your document; a ranking test in which the worker ranks the clerks; or "none", or no U5, under "The outer edge".
 
 ## Why
 
