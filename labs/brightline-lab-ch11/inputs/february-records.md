@@ -82,7 +82,7 @@ Attached by Jordan:
 
 **Started by:** the schedule, Thursday, February 4, 2027, 7:00 a.m. The Thursday pre-run review, in Maria's account.
 
-**Context:** The Role Contract's Thursday review standing spec. Its "The note:" line now reads: "The note: The run list with due dates, totals, approvals needed, holds, copies. Saved in the notes folder, for Maria." On Monday, February 1, 2027, the same line read: "The note: The run list with due dates, totals, approvals needed, holds, copies, questions for Maria. Saved in the notes folder, for Maria."
+**Context:** The Role Contract's Thursday review standing spec. Its "The note:" line, as the run read it: "The note: The run list with due dates, totals, approvals needed, holds, copies. Saved in the notes folder, for Maria."
 
 **Progress**
 
@@ -95,7 +95,5 @@ Attached by Jordan:
 **Output:** A note with the run list, totals, approvals needed, holds and copies. It has no questions for Maria.
 
 **Earlier runs:** The notes of Thursday, January 21 and Thursday, January 28, 2027 each ended with questions for Maria.
-
-**In #ap-help, Tuesday, February 2, 2027, 4:40 p.m., Jordan Ellis:** "Shortened the note line in the contract. Took out 'questions for Maria', since Maria answers questions in here anyway."
 
 **What happened next:** Maria read the note at 8:00 a.m. and found no questions in it.

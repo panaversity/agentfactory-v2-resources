@@ -126,12 +126,12 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 ## Task 2. Who does each step
 
-1. Show the delegation map's three questions, quoted, and the three ways to mark a step, quoted. Then show the steps of thursday-review-today.md, as its table, all ten, with who does each today. Ask: "From now on, who does each step: the worker, Maria, Dave, or nobody? How is it marked, and what supports it? Answer: one line per step, starting with its number: who, the mark, then the support."
+1. Show the delegation map's three questions, quoted, and the three ways to mark a step, quoted. Then show the steps of thursday-review-today.md, as its table, all ten, with who does each today. Ask: "From now on, who does each step: the worker, Maria, Dave, or nobody? How is it marked, and what supports it? For each step you keep with a person, which of the four tests decides it? Answer: one line per step, starting with its number: who, the mark, the support, then the test for a step kept with a person."
 2. Ask, as a question of your own: "Before you write the note, what do you check that this list does not show? Answer in a few words." Then: "From now on, who does that step, how is it marked, and what supports it? Answer: who, the mark, then the support."
 3. Ask: "Who reviews the note, by what time on Thursday, and who stands in when that person is out? Answer: who, the time, then the stand-in."
 4. Show Lesson 9.2's lines on measuring, quoted: "Then measure. Before you switch, record a baseline, the numbers for how the step works today. Write down how long it takes, how many rounds of correction it needs, and how many errors reach the next person. Run the old way and the new way at the same time for two or three cycles of the work. Keep the new way only if it is better on the numbers you wrote down, not on how it feels." Ask: "What is the review's baseline today, what will you measure, for how long, and when do you keep the new way? Answer: the baseline, what you measure, for how long, then the rule."
 
-   Write under "What it owes", after "Not this worker's jobs:", a new field "Who does each step of the Thursday review:", with one line per step in the order of thursday-review-today.md, and the learner's new step after the step it comes before or after, as the learner placed it, or after step 4 if they did not say. Each line: the step, who does it from now on, its mark, and its support. Then "The note's reviewer:", and "Before the new way is kept:".
+   Write under "What it owes", after "Not this worker's jobs:", a new field "Who does each step of the Thursday review:", with one line per step in the order of thursday-review-today.md, and the learner's new step after the step it comes before or after, as the learner placed it, or after step 4 if they did not say. Each line: the step, who does it from now on, its mark, its support, and for a step kept with a person, the test that decides it. Then "The note's reviewer:", and "Before the new way is kept:".
 
    This task has no test. After the last answer, say "Task 2 is done".
 
@@ -282,8 +282,8 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 2. Show Lesson 9.7's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Then show its lines on underselling, quoted: "Do not undersell it either. A stakeholder told 'it only drafts' may never use a step that works, or may redo by hand what the worker already checked." Ask: "Write part 4 yourself, in one or two sentences: what a person still checks, by name."
 3. Ask: "Write part 5 yourself, in one or two sentences: how we will know it failed."
 4. Show the P.S. of dave-request.md, quoted. Ask: "Write part 6 yourself, in one or two sentences: what it is worth, measured."
-5. Ask: "Write its limits yourself, in one or two sentences."
-6. Say: "Dave will forward your page to Linda, Brightline's owner. She has never used AI at work." Ask: "Write one or two sentences for her, to go at the top: what the AI does, in plain words, and who still decides. Answer: the sentences."
+5. Ask: "Write its limits yourself, in one or two sentences: what it does reliably, and what it cannot do."
+6. Say: "Dave will forward your page to Linda, Brightline's owner. She has never used AI at work." Ask: "Write one or two sentences for her, to go at the top: what the AI does in both jobs, in plain words, and who still decides. Answer: the sentences."
 
    Put parts 4, 5 and 6, and the limits, into "Note to Dave" exactly as the learner sent them, numbered 4 to 6, then "Limits:". Put the sentences for Linda under the first line, exactly as sent, after "For Linda:". This task has no test. After the last answer, say "Task 10 is done".
 

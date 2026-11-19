@@ -20,9 +20,8 @@ Task 12 carries checks 43 to 47 of the lab's 52.
 46. **Record 3: the computer that was off.** Tools and permissions: step 2's "the computer is not available", because a cloud task reaches files on Maria's laptop only while the desktop app is open. And the brief: it carried on to "No differences" from 0 statement lines. The check asks whether the desktop app was open while the task ran. The Inspect quoted that it was closed from Friday, January 29, 6:15 p.m., to Monday, February 1, 8:50 a.m., and the task started at 7:40 a.m. that Monday.
     - Passed: both causes, and the Inspect's times.
     - Missed: one cause only; the inputs as the first cause; or an Inspect with no times.
-
-47. **Record 4: an edited instruction.** The cause is the brief: the contract's standing spec is the review's instructions, and instructions are checked like the brief. Step 4 shows it: the note has each part the "The note:" line names, and since Jordan's edit of Tuesday, February 2, that line names no questions for Maria. The worker did what the new line asked. The check compares the line now with the line before the edit, or asks who edited the instructions. The Inspect quoted both lines.
-    - Passed: the brief, or the instructions, as the cause; step 4; and both lines quoted.
+47. **Record 4: an edited instruction.** The cause is the brief: the contract's standing spec is the review's instructions, and instructions are checked like the brief. Step 4 shows it: the note has each part the "The note:" line names, and that line no longer names questions for Maria. The worker did what the line asked. The check compares the line the run read with an earlier version, such as Draft 7's in role-contract-draft-7.md, which ends its list with "questions for Maria". The Inspect quoted both lines.
+    - Passed: the brief, or the instructions, as the cause; step 4; a check that compares the line with an earlier version; and both lines quoted.
     - Missed: the inputs, the tools, capacity or the model as the only cause; or an Inspect with no earlier line compared.
 
 ## Why
@@ -31,7 +30,7 @@ Five failures are common once a worker uses add-ons, runs while you are away, or
 
 A bank-detail change is never noted from an email. It goes to a person, who calls back on the number already on the vendor record. A saved memory against the record is the inputs: the record wins, and the memory is corrected or deleted (Chapter 8). And a task that cannot reach its input should stop and say so, as Friday's should have.
 
-Drafts that break a rule they used to follow point to the instructions first (Lesson 11.3): was an instruction edited? Here one was, and the worker did what the new line asked, and no more. The fix is to put the questions back into the line, through Dave, who owns the contract. Then compare the next note with one from before the edit.
+Drafts that break a rule they used to follow point to the instructions first (Lesson 11.3): was an instruction edited? Here one was: the note line lost "questions for Maria", and the worker did what the new line asked, and no more. The fix is to put the questions back into the line, through Dave, who owns the contract. Then compare the next note with one from before the edit.
 
 ## Never a deduction
 

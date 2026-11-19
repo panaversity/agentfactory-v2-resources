@@ -37,7 +37,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 ## How each task works
 
-Most of the lab runs in one lab chat: Tasks 1 to 11, the first step of Task 12, and Task 13. The rest of Task 12 runs in two fresh chats, to prove the contract works with nothing but your records, and gives the same answer twice. One step of Task 13 sends you to another chat, to search the web.
+Most of the lab runs in one lab chat: Tasks 1 to 11, the first step of Task 12, and Task 13. The rest of Task 12 runs in two fresh chats. They prove that your contract works with nothing but your records, and gives the same answer twice. One step of Task 13 sends you to another chat, to search the web.
 
 **Your two documents.** In Task 1, the AI opens two documents beside your chat: Claude Docs in Claude, or Writing blocks in ChatGPT's side panel.
 
@@ -171,7 +171,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [9.2](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/fit-the-workflow/)'s three questions and its three ways to mark a step. Then it shows your Thursday steps as you wrote them down, with who does each today. Answer one line per step: who does it from now on, how it is marked, and what supports it.
+1. In your lab chat, type "Task 2" and send it. The AI shows [9.2](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/fit-the-workflow/)'s three questions and its three ways to mark a step. Then it shows your Thursday steps as you wrote them down, with who does each today. Answer one line per step: who does it from now on, how it is marked, and what supports it. For each step you keep with a person, also say which of the four tests decides it.
 2. The AI asks a question of its own about your Thursday. Answer it in a few words, then say who does that step from now on, how it is marked, and what supports it.
 3. The AI asks who reviews the note, by when, and who stands in. Then it asks what to measure before you keep the new way. Answer each in a few words.
 4. This task has no test. When the AI says "Task 2 is done", **check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -324,8 +324,8 @@ Constraints: Grade only. Do not rewrite the document, and do not
    - who still checks, by name
    - how we will know it failed
    - what it is worth, measured
-   - its limits
-   - two lines for Linda, Brightline's owner, who has never used AI at work: what the AI does, in plain words, and who still decides
+   - its limits: what it does reliably, and what it cannot do
+   - two lines for Linda, Brightline's owner, who has never used AI at work: what the AI does in both jobs, in plain words, and who still decides
 
    These words are the skill ([9.7](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/explaining-value-and-limits/)), so the AI puts them into the note exactly as you send them.
 3. This task has no test. When the AI says "Task 10 is done", **check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
