@@ -185,13 +185,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows [10.2](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/)'s three tiers. Then it shows the vendor master's columns, a group at a time, with what the full master holds and what the lab's copy shows. For each group, answer: its tier, then keep, keep the last four digits, or remove.
+1. In your lab chat, type "Task 3" and send it. The AI shows [10.2](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/)'s three tiers. Then it shows the vendor master's columns, a group at a time, with what the full master holds and what the lab's copy shows. For each group, answer: its tier, then keep, keep the last four digits, or remove. The last group is the notes column. The AI shows every note, and you say what the notes hold before you give the tier and the action.
 2. The AI asks the tier of the full vendor master, and of a file with only your kept columns. Answer both.
 3. The AI runs the check on your kept columns only, and shows each pair it found, with the columns it matched on. Compare it with the pairs in Dave's ask: answer whether it found Maria's four, and left the two Union companies apart. If you change a column's action later, the AI runs the check again.
 4. The AI shows the pairs side by side without their tax IDs. Answer: if every tax ID were removed, which pair would the check lose, and which might it wrongly flag?
 5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 6 to 8 passed.
+**Checkpoint.** Checks 6 to 9 passed.
 
 **At work**, ask: which columns does the task need, and does the cut file still find the answers you already know?
 
@@ -207,7 +207,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 4. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it.
 5. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 9 and 10 passed.
+**Checkpoint.** Checks 10 and 11 passed.
 
 **At work**, ask: is this way in approved for this data and this purpose? And is your own account's training setting on?
 
@@ -224,7 +224,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 3. Answer two more in a few words: what standard "strategic vendors first" carried, and whether Brightline should tell the suppliers it left out.
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 11 and 12 passed.
+**Checkpoint.** Checks 12 and 13 passed.
 
 **At work**, ask: when an AI picks a few from many, who did it leave out?
 
@@ -239,7 +239,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 3. When the AI says "Ready for your test", type `Test: the December 18 list` and send it.
 4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 13 and 14 passed.
+**Checkpoint.** Checks 14 and 15 passed.
 
 **At work**, ask: what has your company already promised that the brief must carry?
 
@@ -257,7 +257,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 4. When the AI says "Ready for your test", type `Test: Jordan's question` and send it.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 15 to 17 passed.
+**Checkpoint.** Checks 16 to 18 passed.
 
 **At work**, ask: who owns each file your AI can read, and how would you check that a removed one is gone?
 
@@ -275,7 +275,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 4. When the AI says "Ready for your test", type `Test: the auditors' follow-up` and send it.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 18 to 20 passed.
+**Checkpoint.** Checks 19 to 21 passed.
 
 **At work**, ask: who signs this, and does the person who signs also send it?
 
@@ -294,7 +294,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 5. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it again. This time your first-hour rule is there too.
 6. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 21 and 22 passed.
+**Checkpoint.** Checks 22 and 23 passed.
 
 **At work**, ask: if you slipped today, whom would you tell first, and what would you keep?
 
@@ -311,7 +311,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 3. When the AI says "Ready for your test", type `Test: the duplicate list` and send it.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 23 and 24 passed.
+**Checkpoint.** Checks 24 and 25 passed.
 
 **At work**, ask: before you save or share a result, who is it for, and when does the share end?
 
@@ -326,10 +326,11 @@ Constraints: Grade only. Do not rewrite the document, and do not
 1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say and the answer is not yours to decide, leave it "open". When a share ends is yours to decide.
 2. The AI shows what an interim policy must cover. Give each of its five lines in a few words, then its status and its review date.
 3. Answer two more. What makes the approved way harder than a personal account at Brightline, and who fixes it? And Dave's question: yes or no, and why?
-4. When the AI says "Ready for your test", type `Test: the send tool` and send it.
-5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
+4. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s two kinds of gap. Then it shows three of December's events, each with the rule Brightline had that day. For each event, answer: a policy gap or a training gap, and its fix, in one line.
+5. When the AI says "Ready for your test", type `Test: the send tool` and send it.
+6. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 25 to 27 passed.
+**Checkpoint.** Checks 26 to 29 passed.
 
 **At work**, ask: what makes the approved way harder than the unsafe one?
 
@@ -345,7 +346,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 2. Answer: what does no setting, on either AI vendor, decide?
 3. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Check 28 passed.
+**Checkpoint.** Check 30 passed.
 
 **At work**, ask: which of your company's AI rules does a setting carry out, and which rest on people?
 
@@ -378,7 +379,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 3. **Check it now, in the fresh chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-13.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape it.
 4. Missed a check? A case with "no line decides" is a line your terms lack. Back in your lab chat, name the line, let the AI write it, and send that case's test there. Then download the document again, open a new fresh chat, and send the brief again.
 
-**Checkpoint.** Checks 29 and 30 passed, in a chat that held only your terms and Brightline's files.
+**Checkpoint.** Checks 31 and 32 passed, in a chat that held only your terms and Brightline's files.
 
 **At work**, ask: would a fresh chat with only your terms decide the next real requests right?
 

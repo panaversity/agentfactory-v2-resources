@@ -6,9 +6,9 @@ The answers for Task 7 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 7 carries checks 15 to 17 of the lab's 30.
+Task 7 carries checks 16 to 18 of the lab's 32.
 
-15. **The knowledge register.**
+16. **The knowledge register.**
     - K1 to K5, the five AP concepts: owner Dave Kowalski; stable; keep.
     - K6, AP policy version 2's threshold: owner Dave, who owns the AP policy; not governed, a copy of a replaced policy, or deprecated; remove the copy from the shared AP project. "Deprecate, pointing to K1" also passes, if the copy is removed.
     - K7, the 2025 onboarding notes: no owner; not governed; take down. "Deprecate, pointing to K4" also passes, if every copy is still removed.
@@ -17,12 +17,12 @@ Task 7 carries checks 15 to 17 of the lab's 30.
     - K10, the small-supplier memo: Dave; not governed, or a signed memo that is not yet a concept; draft it as a concept for Dave to approve.
     - Passed: each item as above.
     - Missed: K7 or K8 kept; K6 or K9 left in the shared AP project; or K10 left as it is.
-16. **The takedown records.** A record for K7 and one for K8, each with: who orders it (Dave, the takedown authority); who removes each copy; how they check that it is gone, by the place's own list of files, such as the project's file list or the folder's listing; whether a copy is kept as a record, and where; and who is told.
+17. **The takedown records.** A record for K7 and one for K8, each with: who orders it (Dave, the takedown authority); who removes each copy; how they check that it is gone, by the place's own list of files, such as the project's file list or the folder's listing; whether a copy is kept as a record, and where; and who is told.
     - K7's record covers both places it is still kept: the New Staff project, and the Onboarding folder on the shared drive. One copy kept in restricted storage, such as Dave's incident folder, because the December 9 near miss refers to it, passes, and so does none. Jordan, and new staff who use the New Staff project, are told, and pointed to the approved rule on bank-detail changes (K4), or to a person.
     - K8's record covers Maria's AP project in ChatGPT. The people who relied on it are told, such as the AP team.
     - Passed: both records, K7's with both places, each with a check by the list of files.
     - Missed: a place left out; no check named; a check only by asking a test question, which shows only that it was not cited today; or nobody told.
-17. **The knowledge line, and the test.** Under "Role Contract, Draft 7", Draft 6's "Knowledge sources" gains a line: the small-supplier promise becomes a concept only once Dave approves it, and until then the five concepts are the only knowledge. Then `Test: Jordan's question`: the New Staff project no longer answers from the 2025 notes, quoting your takedown record or register line for K7, and Jordan is pointed to the approved rule on bank-detail changes, or to a person, as your record says.
+18. **The knowledge line, and the test.** Under "Role Contract, Draft 7", Draft 6's "Knowledge sources" gains a line: the small-supplier promise becomes a concept only once Dave approves it, and until then the five concepts are the only knowledge. Then `Test: Jordan's question`: the New Staff project no longer answers from the 2025 notes, quoting your takedown record or register line for K7, and Jordan is pointed to the approved rule on bank-detail changes, or to a person, as your record says.
     - Passed: the line, and the test as above.
     - Missed: no knowledge line; a line that makes the promise a concept now, before Dave approves it; or a test that still answers from the notes.
 

@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 2 carries checks 3 to 5 of the lab's 30.
+Task 2 carries checks 3 to 5 of the lab's 32.
 
 3. **Six answers, each with the screen that decides it.**
    - U1, the meeting notes: appropriate. Reversibility: a wrong summary is easy to fix before anyone relies on it. Consequence of error also passes.
@@ -15,8 +15,9 @@ Task 2 carries checks 3 to 5 of the lab's 30.
    - U4, the monthly early-pay ranking: appropriate with review. Consequence of error for the people affected. Accountability also passes.
    - U5, scoring clerks and deciding who is kept: inappropriate. Accountability or human judgment: it decides about people's jobs. One activity or two: the decision is inappropriate, and so is scoring each clerk for it.
    - U6, the Spanish FAQ: appropriate with review. Accountability for a public statement on Brightline's portal. Consequence of error also passes.
+   - "Appropriate with safeguards" passes wherever the answer above is "appropriate with review". It is the same answer under its other name (10.1).
    - Passed: each answer as above, with a screen that passes for it, and U3 as two activities.
-   - Missed: any other answer; U3 as one activity; or U5 "with review".
+   - Missed: any other answer; U3 as one activity; or U5 "with review" or "with safeguards".
 4. **Each check names who, what and when; each "inappropriate" says what is left.**
    - U2: Maria checks each fact against the register and the invoice, before she sends it.
    - U3's letters: Dave checks each letter, before it is sent.
@@ -24,7 +25,7 @@ Task 2 carries checks 3 to 5 of the lab's 30.
    - U6: Ana Ruiz checks the translation against the English page, before it is posted.
    - U3's decision: Dave decides; the worker may still compile the delivery records and late-delivery counts for him, or nothing.
    - U5: a manager decides, Maria or Dave; the worker may still summarize the kinds of errors for team training, with no names, or nothing.
-   - Passed: every "with review" with its who, what and when, and every "inappropriate" with who decides instead, and what the worker may still do, or "nothing".
+   - Passed: every "with review", or "with safeguards", with its who, what and when, and every "inappropriate" with who decides instead, and what the worker may still do, or "nothing".
    - Missed: a check with no who, no what or no when, such as "someone reviews it"; a check that happens after the output is used; or an "inappropriate" with nobody named to decide.
 5. **The never line, and the two tests.** Under "Role Contract, Draft 7", a new "Never automated" line says the worker never scores or ranks individual staff, or recommends whom to keep. Then:
    - `Test: the Spanish FAQ`: the worker may draft the translation, and Ana Ruiz checks it before it is posted, quoting your U6 row.
@@ -40,6 +41,7 @@ Classify what the worker would do, not what the task is about (10.1). Deciding t
 
 - A test that says no row of Draft 6's "Who may ask" covers a translation, as unclear.
 - A deciding factor written in your own words, if it is plainly that screen.
+- "Appropriate with safeguards" for "appropriate with review".
 - The never line's number, such as A16, or no number.
 - Extra detail in a check, such as the date it happens.
 - A remark about the lab's dates.
