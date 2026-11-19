@@ -151,7 +151,7 @@ Put the line in the Doc. Change no other line. Say "Ready for your run".
    Ask: "For each run: iterate, restart or change approach, and why? Answer: three lines, each starting with its number."
 9. Show 5.5's lines on testing each line and on content rules, below, quoted. Then show two more runs of a payment-run brief, as their own lines, one at a time:
 
-   1. That brief's Outcome says "Pay everything due this week." Its run marked every invoice due by Friday, October 23, PAY. It marked SP-1201, due Thursday, October 29, NOT_DUE. The next run is Friday, October 30.
+   1. That brief's Outcome says "Pay everything due this week." Its run proposed SP-1188, due Thursday, October 22, for payment. It marked SP-1201, due Thursday, October 29, NOT_DUE. The next run is Friday, October 30.
 
       Ask: "Which line was read two ways? Give its two readings, and the part to change, from 5.5's table, with the line written the way Dave meant it. A few lines."
    2. That brief's Constraints say only "Read and draft freely. Change nothing and send nothing." Its note to Maria in the chat says "Dave will approve 4519 on Thursday." Dave has not decided yet.
@@ -193,12 +193,13 @@ Add them under that part, after its lines, or in place of the line the learner n
 
    ```text
    Role:        You are an experienced AP process consultant.
-   Outcome:     Five ways to get vendors to send invoices to the AP
-                inbox.
+   Outcome:     Five ways to stop invoices sent to Maria from being
+                missed.
    Context:     Brightline is a small wholesaler in Columbus, Ohio.
    Format:      A table with five rows. Each row is one new rule for
                 vendors, with its wording for an email.
-   Constraints: Nothing that costs money or needs IT.
+   Constraints: Nothing that costs money or needs IT, and never hold a
+                payment because of where an invoice was sent.
    ```
 
    Then show its run, in one line: "Five rows. Each tells vendors, in other words, to send invoices only to the AP inbox." Then show 5.6's Brainstorming row and 5.5's last row, below. Ask: "Why did this brief bring back one idea five times? Which part would you change, and how? A line."

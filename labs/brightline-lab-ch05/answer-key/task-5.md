@@ -29,7 +29,7 @@ Task 5 carries checks 9 to 11 of the lab's 34.
     - 4, the AP team at Monday's meeting: an artifact a group can read together, such as slides, or a PowerPoint file
     - 5, the auditors: a computed result, worked out in code and returned with the figures it used
     - 6, Maria, who asks how many invoices are on hold: inline, a short answer in the chat, read once, now, with no file
-    - 7, Sam Ortiz, who opens the new vendors' list in Excel: an Excel file (.xlsx), named by its type in the brief. Claude makes it with a skill.
+    - 7, Sam Ortiz, who opens the new vendors' list in Excel: an Excel file (.xlsx), named by its type in the brief. In Claude, a skill makes it.
     - Passed: all seven, each with a reason that names how the reader uses it.
     - Missed: a format that does not fit its reader, such as prose for the import, or a total the worker typed with no figures for the auditors; or a line with no reason. A file for Maria's quick question misses too, and so does "a spreadsheet" for Sam with no file type.
 
@@ -44,6 +44,7 @@ Who or what reads the result next decides its format (Lesson 5.7). Maria checks 
 - Totals in Dave's memo.
 - A memo as an artifact or as a Word file. Slides as an artifact or as a PowerPoint file.
 - For Sam, "workbook" or "spreadsheet file" in place of "Excel file", when the line names .xlsx or Excel.
+- For Sam, naming the skill that makes the file, or not.
 - A CSV for the import, when its columns are fixed.
 - Another kind of artifact for the meeting, such as a dashboard, when your reason is that the team reads it together.
 - Anything the run did: this key scores your Format and your five lines.

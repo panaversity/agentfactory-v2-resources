@@ -36,7 +36,7 @@ Task 7 carries checks 14 to 18 of the lab's 34.
     - Passed: all three.
     - Missed: one reading only; another line named; or another part, such as the context. Nothing in the line is a fact or a source.
 18. **The missing rule.** Your answer for the second of the two more runs:
-    - the part: the constraints, their content rules
+    - the part: the constraints. Naming their content rules is fine, and not needed.
     - what the rule says, in your words: say nothing about a decision Dave has not made, such as "Make no promise about Dave's approval"
     - Passed: both.
     - Missed: the context, because no source was wrong; the autonomy half, because the worker did nothing alone; or no rule.
