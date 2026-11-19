@@ -6,18 +6,18 @@ The answers for Task 11 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 11 carries checks 28 to 30 of the lab's 31.
+Task 11 carries checks 31 to 33 of the lab's 34.
 
-28. **A fresh reviewer, with only your contract and the records, and its whole reply here.**
+31. **A fresh reviewer, with only your contract and the records, and its whole reply here.**
     - It ran in a fresh chat, on the other AI vendor or in a new chat on the same one, with memory off before anything was sent. Your answer to the AI's first question says where.
     - It got your downloaded Review Contract and `inputs.zip`, with the message the lab page prints. Its reply reviews your contract's checks, and none of your findings.
     - Its whole reply is in your lab chat, below "The second reviewer's reply".
     - Passed: all three.
     - Missed: no fresh chat, or memory not off before anything was sent; a contract other than yours, or your Review findings sent with it; or only part of the reply in your lab chat.
-29. **Each of its own findings is decided from the source.** Under "The second reviewer" in your Review findings, each problem the reviewer named that your findings did not have, and each line of its reply that disagrees with one of your decisions, is decided real or not, from the source line the AI showed: a real one kept, with what is right, and a wrong one turned down, with the source that shows it. The package's problems, and the things in it that are right, are in the table below.
+32. **Each of its own findings is decided from the source.** Under "The second reviewer" in your Review findings, each problem the reviewer named that your findings did not have, and each line of its reply that disagrees with one of your decisions, is decided real or not, from the source line the AI showed: a real one kept, with what is right, and a wrong one turned down, with the source that shows it. The package's problems, and the things in it that are right, are in the table below.
     - Passed: every one of its own findings decided, each as the table below says. If it had none of its own, this check passes: quote the list under "The second reviewer".
     - Missed: one of its own findings left undecided, or decided against the table.
-30. **What your contract lacked, and what it needs on the other AI vendor.**
+33. **What your contract lacked, and what it needs on the other AI vendor.**
     - For each problem of yours the reviewer missed, you named the line of your contract that should have sent it there, by its letter, or said "no line" and added the check as an amendment. If it missed none of yours, this half passes.
     - On the other AI vendor, your contract needs nothing, because it describes the work, not the tool (Lesson 6.8). Naming the line it already has, a reason, a policy section and a source on every row, also passes, and so does adding that line if your contract lacked it.
     - Passed: both.

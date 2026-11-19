@@ -6,9 +6,9 @@ The answers for Task 13 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second
 
 ## The check
 
-Task 13 is optional. It carries check 32, and it is unscored: the lab's 31 scored checks are in Tasks 1 to 12. It grades the steps you took, never the search result, which changes from day to day.
+Task 13 is optional. It carries check 35, and it is unscored: the lab's 34 scored checks are in Tasks 1 to 12. It grades the steps you took, never the search result, which changes from day to day.
 
-32. **The four source checks, taken.** In your lab chat:
+35. **The four source checks, taken.** In your lab chat:
     - you opened the source behind the main claim, and said whether it says what the claim says
     - you named the pages that copy one source, counted as one, or said none do
     - you looked at each source's date, and said whether any is too old for your question
