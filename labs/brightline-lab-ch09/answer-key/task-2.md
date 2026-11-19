@@ -10,11 +10,11 @@ Task 2 carries checks 4 to 6 of the lab's 31.
 
 4. **Each step marked, and three steps that never move to the worker.** Every step on the map is marked AI-executed, human-reviewed or human-retained. Three steps are human-retained, each for its own test:
    - Approving the run stays Dave's, from his own login: accountability.
-   - Calling a vendor back about a bank-detail or record change stays Maria's: stakes, or reversibility, because a payment sent to a false account can cost the whole amount.
-   - Telling a vendor whose invoice is held stays with a person: human judgment or empathy, because it needs care for the relationship, even though the worker could write it.
+   - Calling a vendor back about a bank-detail or record change stays Maria's: stakes, because a payment sent to a false account can cost the whole amount. Reversibility may be named beside it.
+   - Telling a vendor whose invoice is held is human-retained, not human-reviewed: a person decides what to say and says it, for human judgment or empathy, because it needs care for the relationship, even though the worker could write it.
    - No step a person checks is marked AI-executed: the duplicate check and the note are human-reviewed, and a named person, such as Maria, reviews the note before it reaches Dave.
    - Passed: every step marked; the three human-retained steps, each with its test; and the duplicate check and the note human-reviewed.
-   - Missed: any part above missing or wrong, for example a step with no mark; the worker approves the run, calls a vendor back or tells the held vendor; a human-retained step with no test, or the held vendor's step kept only because the worker cannot do it; the duplicate check or the note marked AI-executed; or the note reaching Dave with no person's review.
+   - Missed: any part above missing or wrong, for example a step with no mark; the worker approves the run, calls a vendor back or tells the held vendor; a human-retained step with no test; the callback without stakes; the held vendor's step marked human-reviewed, or kept only because the worker cannot do it; the duplicate check or the note marked AI-executed; or the note reaching Dave with no person's review.
 5. **The step the list left out, and who reviews the note.** The map has a step for reading the AP matters record for open vendor requests, such as a bank-detail change, before the note is written: the worker reads it and proposes holds, and Maria checks them. And the note has a named reviewer, by a set time on Thursday, with a named stand-in.
    - Passed: the record step, and a reviewer, a time and a stand-in, each named.
    - Missed: any part above missing or wrong, for example no step for the open vendor requests in the record; or a reviewer with no time or no stand-in.
@@ -38,7 +38,6 @@ Then measure, before you switch: 150 minutes, the corrections, the errors reachi
 - The record step placed before or after the duplicate check.
 - Rounds of correction left out of what you measure.
 - Picking the invoices or marking approvals marked AI-executed or human-reviewed, when the support is named.
-- The worker drafting what is said to the held vendor, when a person sends it.
 - More than one test named for a step, when the test above is one of them.
 
 ## Take it to work

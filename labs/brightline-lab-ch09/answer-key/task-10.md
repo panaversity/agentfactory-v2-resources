@@ -18,7 +18,7 @@ Task 10 carries checks 23 and 24 of the lab's 31.
     - The limits say what it does reliably, such as applying the same rules to every invoice each week, and name at least one thing it cannot do: it can miss what it was never given; it can write a well-organized note that is wrong; it runs on Thanksgiving if the schedule says Thursday.
     - The note never says "by itself", "fully automated" or "hands-free".
     - Nothing undersells it: the note never says it "only drafts", and Part 4 has a person review the note, not redo the review by hand.
-    - "For Linda:" says what the AI does in both jobs, the Thursday note and the check of each invoice email, in words someone new to AI can follow, explaining or avoiding terms such as "run", "brief" or "AP Worker", and says that Dave still approves every payment.
+    - "For Linda:" says what the AI does in both jobs, the Thursday note and the check of each invoice email, in words someone new to AI can follow, explaining or avoiding terms such as "run", "brief" or "AP Worker", and says that Dave still approves every payment run.
     - Passed: all seven.
     - Missed: any part above missing or wrong, for example no name for who checks; a check the run does on itself; a figure for the new way, such as minutes saved, before any side-by-side week; no limit, or nothing it does reliably; one of the three phrases anywhere in the note; "it only drafts", or Maria doing the whole review by hand again; or a line for Linda that uses an AI term she must guess at, leaves out a job, or leaves out who decides.
 

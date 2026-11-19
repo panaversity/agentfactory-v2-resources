@@ -325,7 +325,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    - how we will know it failed
    - what it is worth, measured
    - its limits: what it does reliably, and what it cannot do
-   - two lines for Linda, Brightline's owner, who has never used AI at work: what the AI does in both jobs, in plain words, and who still decides
+   - two lines for Linda, the owner, who has never used AI at work: what the AI does in both jobs, and who decides
 
    These words are the skill ([9.7](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/explaining-value-and-limits/)), so the AI puts them into the note exactly as you send them.
 3. This task has no test. When the AI says "Task 10 is done", **check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
