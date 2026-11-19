@@ -176,7 +176,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)'s four moves. Then it shows four chats, one at a time: three other Brightline chats, and the project's own chat. For each, answer: restart, summarize, persist or rely on memory, and why, in a few words.
+1. In your lab chat, type "Task 2" and send it. The AI shows [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)'s four moves. Then it shows five chats, one at a time: four other Brightline chats, and the project's own chat. For each, answer: restart, summarize, persist or rely on memory, and why, in a few words.
 2. The AI shows Maria's line from the chat's first week, and where it is now. Answer: where the rule should live, so every chat follows it, and the words it should have.
 3. The AI asks whether that rule is Brightline policy yet. Answer yes or no, and why.
 4. When the AI says "Ready for your test", type `Test: Northern Maple` and send it.
@@ -192,10 +192,10 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 3" and send it. The AI shows [8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s lines on what memory may hold, and the project's six memory topics. Answer one line per topic: keep or delete, and for a topic you delete, where that fact lives instead.
+1. In your lab chat, type "Task 3" and send it. The AI shows [8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s lines on what memory may hold, and the project's six memory topics. It also says what changed this month. Answer one line per topic: keep, edit or delete. For a topic you edit, give its new words. For a topic you delete, say where that fact lives instead.
 2. The AI asks on which day you will read memory again, and after what else, and what you write down each time. Answer in a few words.
 3. The AI shows [8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)'s lines on memory, and asks how a project keeps its memory apart from your other chats, on Claude and on ChatGPT. Answer in a few words for each.
-4. The AI shows [8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)'s lines on incognito chats. It asks where Maria should ask about a personal matter that should not shape the worker's later answers, and what that does not change. Answer in a few words.
+4. The AI asks where Maria should ask about a personal matter that should not shape the worker's later answers, and what that does not change. Answer in a few words, from what [8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/) says about incognito chats. The AI shows its lines after you answer.
 5. When the AI says "Ready for your test", type `Test: Buckeye` and send it.
 6. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -242,9 +242,10 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 6" and send it. The AI shows six questions from [8.5](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) that good project instructions answer: role, what counts, cite, abstain, state and conflicts.
-2. Write your instructions in one message that starts "Instructions:", in your own words, about 80 to 120 words. Answer all six questions. Point to where the rules live, and do not copy them. The AI puts your words under Dave's line and Maria's working rule, exactly as you wrote them.
-3. When the AI says "Ready for your test", type `Test: the $10,000 note` and send it. Then send `Test: next year`, and then `Test: the credit card`.
-4. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
+2. The AI asks what kinds of request the worker will meet. Answer in one message that starts "Use cases:", with at least four kinds, one line each, and at least two of them hard. [8.5](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/) shows why: a hard case with no line gets a different answer each time.
+3. Write your instructions in one message that starts "Instructions:", in your own words, about 80 to 120 words. Answer all six questions, and give each hard case on your list its line. Point to where the rules live, and do not copy them. The AI puts your words under Dave's line and Maria's working rule, exactly as you wrote them.
+4. When the AI says "Ready for your test", type `Test: the $10,000 note` and send it. Then send `Test: next year`, and then `Test: the credit card`.
+5. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 15 to 17 passed.
 

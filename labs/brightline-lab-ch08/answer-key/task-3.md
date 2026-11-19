@@ -10,10 +10,10 @@ Task 3 carries checks 6 to 8 of the lab's 41.
 
 6. **What memory keeps, and the audit.**
    - Topic 4, "Brightline's approval threshold is $10,000", is deleted, because the limit lives in the approved policy, section 4.1, which says $5,000. It is gone from "Memory" in the "AP Worker project" document.
-   - Topics 2, 3 and 5 are kept: they are how Maria likes the work done. Topics 1 and 6 may be kept or deleted: they hold no rule, amount or status.
+   - Topics 2 and 5 are kept: they are how Maria likes the work done. Topic 3 is edited to say that Maria reviews drafts before 11 a.m., because how she works changed on November 2, and the line is still about how she works. Topics 1 and 6 may be kept or deleted: they hold no rule, amount or status.
    - Memory is read again on a set day, such as the first Monday of each month, and after any answer that surprises you. Each time, the date and what was deleted are written down.
    - Passed: all three.
-   - Missed: topic 4 kept, or rewritten as $5,000; topic 2, 3 or 5 deleted; or an audit with no set day, no reading after a surprising answer, or nothing written down.
+   - Missed: topic 4 kept, or rewritten as $5,000; topic 2 or 5 deleted; topic 3 kept at 10 a.m., or deleted; or an audit with no set day, no reading after a surprising answer, or nothing written down.
 7. **Memory kept apart, and the test.**
    - Claude: in the current kind of project, turn off Use account memory on the project's page, because a project also uses memory from chats outside projects. In the new kind, its memory is the project's own files, read and edited in its settings. Either kind passes. ChatGPT: choose project-only memory, when the project is made.
    - `Test: Buckeye`: invoice BO-23104, $6,150.00, is over $5,000.00, so it needs Dave's approval before payment, from the policy, section 4.1.
@@ -28,7 +28,7 @@ Task 3 carries checks 6 to 8 of the lab's 41.
 
 ## Why
 
-Memory is written by the product from what was said, and nobody approves it (Lesson 8.4). A remark about next year became a rule. So memory gets a narrow job: preferences and how you work. Anything a decision depends on stays out: policy, limits, amounts, statuses. New topics keep arriving, so one reading is not enough: read it on a set day, and again after any answer that surprises you, because a surprise is often memory at work (Lesson 8.4). Each time, write down what went. A project should also keep its memory apart from your other work. On ChatGPT, choose project-only memory when you make the project. On Claude, it depends on the kind of project. In the current kind, turn off Use account memory on the project's page. The new kind keeps its memory as files of its own, which you read in its settings (Lesson 8.8). For a matter that should not shape later answers, such as a personal one, use an incognito chat. It is not saved to your chat history or to memory. It is not offered inside a project, a copy is still kept for a time, and it does not change what was disclosed (Lesson 8.4).
+Memory is written by the product from what was said, and nobody approves it (Lesson 8.4). A remark about next year became a rule. So memory gets a narrow job: preferences and how you work. Read each line, and edit a line about how you work when it is wrong or has changed, as Maria's review time did (Lesson 8.4). Anything a decision depends on stays out: policy, limits, amounts, statuses. New topics keep arriving, so one reading is not enough: read it on a set day, and again after any answer that surprises you, because a surprise is often memory at work (Lesson 8.4). Each time, write down what went. A project should also keep its memory apart from your other work. On ChatGPT, choose project-only memory when you make the project. On Claude, it depends on the kind of project. In the current kind, turn off Use account memory on the project's page. The new kind keeps its memory as files of its own, which you read in its settings (Lesson 8.8). For a matter that should not shape later answers, such as a personal one, use an incognito chat. It is not saved to your chat history or to memory. It is not offered inside a project, a copy is still kept for a time, and it does not change what was disclosed (Lesson 8.4).
 
 ## Never a deduction
 
