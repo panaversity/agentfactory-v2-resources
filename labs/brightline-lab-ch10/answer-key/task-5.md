@@ -6,9 +6,9 @@ The answers for Task 5 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 5 carries checks 11 and 12 of the lab's 30.
+Task 5 carries checks 12 and 13 of the lab's 32.
 
-11. **Who is affected, and who should have been paid on December 4.** Affected: the small suppliers, who never saw the list. Sole proprietors who depend on prompt payment, and Brightline's own signed promise, also pass. Then, against Dave's promise of payment within 15 days of receipt:
+12. **Who is affected, and who should have been paid on December 4.** Affected: the small suppliers, who never saw the list. Sole proprietors who depend on prompt payment, and Brightline's own signed promise, also pass. Then, against Dave's promise of payment within 15 days of receipt:
     - Rosa Delgado, INV-6219, 19 days on December 1: December 4. Already late.
     - Hollis Signs, INV-6226, 18 days: December 4. Already late.
     - Bluegrass Twine Co., INV-6233, 18 days: December 4. Already late.
@@ -17,7 +17,7 @@ Task 5 carries checks 11 and 12 of the lab's 30.
     - Patriot Pest Control Inc., INV-6254, 4 days: today's run. Its day 15 is Saturday, December 12.
     - Passed: the small suppliers named as affected, and all six as above.
     - Missed: any of the first five left for today's run, or Patriot called late.
-12. **The standard, and telling the suppliers.** "Strategic vendors first" carried a standard nobody wrote down: size, or the largest discounts, so small suppliers were never in it. "Big vendors" or "the vendors we buy most from" also pass. On telling the suppliers, either answer passes with its reason: no rule here requires it, so it turns on whether knowing that an AI made the list changes how they understand what happened.
+13. **The standard, and telling the suppliers.** "Strategic vendors first" carried a standard nobody wrote down: size, or the largest discounts, so small suppliers were never in it. "Big vendors" or "the vendors we buy most from" also pass. On telling the suppliers, either answer passes with its reason: no rule here requires it, so it turns on whether knowing that an AI made the list changes how they understand what happened.
     - Passed: the standard named, and either answer with a reason.
     - Missed: no standard named; an answer with no reason; or an answer that would hide it from a supplier who asks.
 

@@ -50,7 +50,7 @@ Staff proposed these on Friday, December 11, 2026.
 
 Before we prepare year-end tax forms, I need every vendor that appears twice in the vendor master. Two records for one vendor means two tax forms, or a payment to the wrong account. The real master has 412 vendors. A likely duplicate is something a person then confirms, so the check only has to flag pairs for me to look at.
 
-**The vendor master in this lab.** `vendor-master-lab-copy.csv` holds 36 of the 412 vendors. It shows tax ID numbers and bank numbers by their last four digits only, as an accounting screen shows them. The full vendor master, in the accounting system, holds every number in full: the tax ID numbers, including the Social Security numbers of sole proprietors, and the bank routing and account numbers. Brightline keeps each vendor's tax ID to file the year-end tax forms. Dave owns the vendor data.
+**The vendor master in this lab.** `vendor-master-lab-copy.csv` holds 36 of the 412 vendors. It shows tax ID numbers and bank numbers by their last four digits only, as an accounting screen shows them. The full vendor master, in the accounting system, holds every number in full: the tax ID numbers, including the Social Security numbers of sole proprietors, and the bank routing and account numbers. It also has a notes column, free text the AP team writes. Brightline keeps each vendor's tax ID to file the year-end tax forms. Dave owns the vendor data.
 
 ## Dave's early-pay request
 
