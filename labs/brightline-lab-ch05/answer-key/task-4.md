@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 7 and 8 of the lab's 27.
+Task 4 carries checks 7 and 8 of the lab's 29.
 
 7. **Version 3 governs, and wins.** Your Context:
    - names AP policy version 3 by its version. "Approved September 1, 2026" beside it is fine.

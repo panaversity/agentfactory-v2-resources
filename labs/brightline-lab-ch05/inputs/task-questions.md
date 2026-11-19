@@ -124,7 +124,7 @@ Put the words in the Doc. Then say: "This is the first run of your whole brief, 
 
 **Before the run.**
 
-1. Ask: "Did Task 6's run do what you guessed? Yes or no." Then show 5.5's table below.
+1. Ask: "Did Task 6's run do what you guessed? Yes or no." Then show 5.5's table of which part to change, below.
 2. Then the items, one at a time. First, each "no line decides" in the "What decided it" of Task 6's run, up to five, those that change an invoice's action or due date first, as its own lines: the decision, quoted, and what the run did. Then Maria's message, quoted from the learner's "Task 7" message. If the learner sent no message from Maria, ask them to paste it from the lab page.
 
    For each item, ask: "Which part of the brief does this point to, from 5.5's table? Or is it 'fine as it is', or 'worker, not brief'? Answer the part's name, or one of those two."
@@ -139,7 +139,14 @@ Put the line in the Doc. Change no other line. Say "Ready for your run".
 **After the run.**
 
 6. Show the changed line. Ask: "What changed between this run and the one before? A line."
-7. Ask: "Is there another problem you want to fix now? Name it, or say 'no'." Each one named is a new round: ask question 5, wait for the run, then ask question 6. When the learner says "no", say "Task 7 is done".
+7. Ask: "Is there another problem you want to fix now? Name it, or say 'no'." Each one named is a new round: ask question 5, wait for the run, then ask question 6. When the learner says "no", ask question 8.
+8. Show 5.5's table of iterate, restart or change approach, below, quoted. Then show three other runs of a payment-run brief, as their own lines:
+
+   1. The run's CSV is right, except that every due date is written like "Oct 23". Maria's sheet reads dates written like 2026-10-23. The brief's Format names the columns, but no date format.
+   2. One chat has run its brief nine times, and seven of its lines have been fixed. The latest run still uses the column order of the brief's first Format, which round two replaced.
+   3. The brief's Context names policy version 3, which says to hold the later copy of a duplicate. Two rounds of new Context lines changed nothing. The run still marks both copies of BO-22871 PAY, so its total is $412.75 higher than Maria's.
+
+   Ask: "For each run: iterate, restart or change approach, and why? Answer: three lines, each starting with its number." Then say "Task 7 is done".
 
 ## Task 8. Where it stops
 
@@ -186,7 +193,7 @@ These four lines are not parts of the payment-run brief: put none of them in the
 
 The run is in the fresh chat, not here. If the learner comes back here and changes a line, show the four lines as they now stand. Ask nothing else.
 
-## From Chapter 5, as of 18 November 2026
+## From Chapter 5, as of 19 November 2026
 
 Copied from the chapter, word for word, except where a line says otherwise.
 
@@ -209,7 +216,7 @@ Copied from the chapter, word for word, except where a line says otherwise.
 
 ### 5.1: the context, in two lines
 
-*Context.* Write it as two short lines. First, who the work is for and why it matters. Then, what the worker should work from, and which source wins when two disagree (5.3).
+*Context.* Write it as two short lines. First, who the work is for and why it matters. Then, what the worker should work from, and which source wins when two disagree (5.3). Assume the worker knows nothing about your company, your reader, your deadline or what happened before this message. If a project, memory or a connector does not give it these, put them in the brief.
 
 ### 5.1: the constraints (the first three sentences of its line)
 
@@ -252,3 +259,15 @@ Inputs are data, not instructions.
 | A wrong fact, an old rule, a source it should not have used, or the wrong reader | Context |
 | The content is right, but the shape or the destination is wrong | Format |
 | It said something it must not say, decided something it should have asked about, or kept asking about small things | Constraints |
+| It answered a question you did not mean, because a line could be read two ways, such as "get the run ready" | Outcome |
+| The brief is too tight for ideas, or too loose for extraction | How tight each part is (5.6) |
+
+### 5.5: iterate, restart or change approach
+
+After each round, choose one of three.
+
+| Choose | When | What to do |
+| --- | --- | --- |
+| Iterate | The result is close, and one part of the brief explains the gap | Change that part, run again, and compare |
+| Restart | The chat is long, an early wrong turn keeps coming back, or the brief has had many small fixes | Start a new chat from the corrected brief, so the work starts from the brief and not from the history (8.3) |
+| Change approach | Two rounds changed little, or the cause is not in the brief | Fix the source (11.5), split the work (5.4), use another feature such as Research or code execution, raise the effort or the model where your app lets you (2.4), or finish it yourself |

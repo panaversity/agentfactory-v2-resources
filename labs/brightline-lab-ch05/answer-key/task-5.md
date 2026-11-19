@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 5 carries checks 9 to 11 of the lab's 27.
+Task 5 carries checks 9 to 11 of the lab's 29.
 
 9. **A CSV Maria can check row by row.** Your Format asks for:
    - a CSV, or a table with fixed columns, with one row for every open invoice, including those not paid in this run
