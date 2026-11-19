@@ -366,7 +366,7 @@ Maria has exported the project's setup. Other people have added to it since your
 
 1. In your lab chat, type "Task 13" and send it. The AI shows your project's instructions as one block, and lists the files in your project document.
 2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-project.md`. Download "Maria's records" the same way: it is the record, and you keep it.
-3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). In Claude, look under Memory on the new project's page. If you see *Use account memory*, turn it off. With it off, your other chats cannot answer for the worker.
+3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). In Claude, look under Memory on the new project's page. In the current kind of project, turn off *Use account memory*, so your other chats cannot answer for the worker. The new kind of project keeps its memory as files of its own, and a new project starts with none.
 4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else. The file holds the instructions too, and the project's memory and chat as you left them. That is fine: your instructions say which of it counts.
 5. Open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
 
@@ -423,7 +423,7 @@ With an account on the other AI vendor, you can build the same project there too
 - **A test quotes a line that is not in your document, or misses a line you added.** Say: "Read the documents again." Then send the test again.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **In Task 13, the answers show the worker read no file.** Check the upload, delete the chat, and ask again in a new one, before you attach the key.
-- **In Task 13, your new Claude project has one chat, with Threads and Context beside it.** That is the new Claude experience. Put the instructions under Memory in the project's settings, and upload your document under Context. Ask your questions in the project's chat. For a second try, make a new project. At the end, delete the project instead of the chat.
+- **In Task 13, your new Claude project has one chat, with Threads and Context beside it.** That is the new kind of project, in beta. Put the instructions under Memory in the project's settings, and upload your document under Context. Ask your questions in the project's chat. For a second try, make a new project. At the end, delete the project instead of the chat.
 - **Late in the lab, the AI forgets a rule from your brief.** This is the long chat of [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/). Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 

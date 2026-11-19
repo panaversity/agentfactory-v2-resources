@@ -150,9 +150,10 @@ Then say "Ready for your test".
 2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
 3. Show Lesson 8.8's lines on memory, quoted:
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
+   - Claude's new kind of project: "In it, a project is one conversation, and its memory is a set of files that Claude writes as it works. You read, edit and delete them under Project settings, Memory."
    - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat."
-   - The comparison: "Each Claude project has its own memory. Inside a project, Claude also uses your memory from chats outside projects, unless you turn off Use account memory on the project's page. A ChatGPT project uses your saved memories, unless you choose project-only memory."
-   - The advice: "For an AI Worker's project, turn off account memory on Claude, and choose project-only memory on ChatGPT."
+   - The comparison: "Each Claude project has its own memory. In the current kind of project, Claude also uses your memory from chats outside projects. To stop that, turn off Use account memory on the project's page. The new kind, in beta on some paid plans, keeps its memory as files. You read, edit and delete them in its settings. A ChatGPT project uses your saved memories, unless you choose project-only memory."
+   - The advice: "For an AI Worker's project on Claude, turn off account memory in the current kind, and read the memory files in the new kind. On ChatGPT, choose project-only memory."
 
    Ask: "How does a project keep its memory apart from your other chats, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, in a few words each."
 4. Show Lesson 8.4's "Keep it out" paragraph, quoted: "For a one-off question, or a topic that should not shape later answers, use an incognito chat. ChatGPT calls it a temporary chat. It is not saved to your chat history, and nothing from it goes into memory. A personal matter fits here, and so does a what-if such as next year's limit. Know what it does not do. Neither AI vendor offers it inside a project. A copy is still kept for a time. And it limits what is kept and remembered, not what you disclosed. So it never makes data safe to share."
