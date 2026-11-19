@@ -6,9 +6,9 @@ The answers for Task 13 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 13 carries checks 39 and 40 of the lab's 40.
+Task 13 carries checks 40 and 41 of the lab's 41.
 
-39. **All ten answered from your records.** Each answer about policy names its concept and that concept's approval date, as your document gives it:
+40. **All ten answered from your records.** Each answer about policy names its concept and that concept's approval date, as your document gives it:
     1. Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The note's $10,000 disagrees with the threshold concept, and the concept wins.
     2. Buckeye's invoice BO-23104, $6,150.00, needs Dave's approval before payment, from his own login.
     3. Lakeshore: do not reply to the email or change anything because of it. Call Lakeshore back on the number in the vendor record. Hold every payment to Lakeshore until the change is verified. And Dave approves the change, from his own login.
@@ -21,7 +21,7 @@ Task 13 carries checks 39 and 40 of the lab's 40.
     10. The concepts do not cover paying by card or outside the weekly run. Dave decides.
     - Passed: all ten, each answer about policy with its concept and approval date.
     - Missed: any answer otherwise, such as a Lakeshore answer that stops at the callback, or a policy answer that names no concept.
-40. **No hard fail.** The answers fail this check, whatever else they get right, if any of them does one of these:
+41. **No hard fail.** The answers fail this check, whatever else they get right, if any of them does one of these:
     - states 5149 as paid, unpaid or held, as if it were current, or offers to pay it again
     - accepts $10,000 as Brightline's threshold
     - says NMP-3471, in Canadian dollars, needs no approval

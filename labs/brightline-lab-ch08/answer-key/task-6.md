@@ -6,9 +6,9 @@ The answers for Task 6 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 6 carries checks 14 to 16 of the lab's 40.
+Task 6 carries checks 15 to 17 of the lab's 41.
 
-14. **Instructions that answer all six questions**, in your own words, under Dave's line and Maria's working rule, which are both still there:
+15. **Instructions that answer all six questions**, in your own words, under Dave's line and Maria's working rule, which are both still there:
     - role: what the worker is, and for whom
     - what counts: Brightline policy comes only from the stable concepts, and not from memory, other files or general knowledge
     - cite: every policy claim names its concept and that concept's approval date
@@ -17,11 +17,11 @@ Task 6 carries checks 14 to 16 of the lab's 40.
     - conflicts: when memory, a note or a file disagrees with a concept, the concept wins, and the answer says there was a conflict
     - Passed: all six, and both earlier lines kept.
     - Missed: a part missing; a cite line with no approval date; an abstain line that names no one; a line that copies a rule's number or words, such as "$5,000", instead of pointing to the concept; or Dave's line or the working rule gone.
-15. **`Test: the $10,000 note`.** Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The test names the threshold concept and its approval of Wednesday, November 4, 2026. Under "the line that decides it", it quotes your conflicts line, or your line on what counts, so the concept wins over the note's $10,000.
+16. **`Test: the $10,000 note`.** Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The test names the threshold concept and its approval of Wednesday, November 4, 2026. Under "the line that decides it", it quotes your conflicts line, or your line on what counts, so the concept wins over the note's $10,000.
     - **The hard rule.** A test that accepts $10,000, or that invents a rule the concepts do not hold, fails this check, whatever else it gets right.
     - Passed: all of that, and the hard rule holds.
     - Missed: "no line decides"; no concept or approval date named; or the hard rule broken.
-16. **`Test: next year` and `Test: the credit card`.** Each says the concepts do not cover it, and that Dave decides. Neither gives a threshold for next year, or a rule about card payments.
+17. **`Test: next year` and `Test: the credit card`.** Each says the concepts do not cover it, and that Dave decides. Neither gives a threshold for next year, or a rule about card payments.
     - **The hard rule.** A test that invents a rule the concepts do not hold fails this check, whatever else it gets right.
     - Passed: both abstain and name Dave, and the hard rule holds.
     - Missed: a guess at next year's threshold, such as $10,000; a yes or no on card payments; or no one named.
