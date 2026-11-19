@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 1 carries checks 1 and 2 of the lab's 30.
+Task 1 carries checks 1 and 2 of the lab's 32.
 
 1. **What Monday needs.** Under "What Monday needs", a line for each of the eight cases. Each case names one or two of the nine questions, or "Draft 6 decides it". A case the test shows going wrong, or decided by no line, names at least one of these:
    - Jordan's question: who owns what the worker knows, or what rules already apply

@@ -6,18 +6,18 @@ The answers for Task 8 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 8 carries checks 20 to 22 of the lab's 40.
+Task 8 carries checks 21 to 23 of the lab's 41.
 
-20. **The steps that carry their own rules.** Under "Reading":
+21. **The steps that carry their own rules.** Under "Reading":
     - step 4 carries its own rule, the $10,000 limit and "ready to pay", and should point to the invoice approval threshold concept
     - step 5 carries its own rule, updating the bank details first, and should point to the changes to vendor bank details concept
     - steps 1, 2 and 6 are OK. Step 3 is OK, or should point to the duplicate invoices concept
     - Passed: steps 4 and 5 as above, each with its concept.
     - Missed: step 4 or step 5 marked OK; or either pointed at the wrong concept.
-21. **What it carries and reaches.** The line "Carries and reaches:" says the skill is steps only, with no scripts, no other files and no connector, so it can reach, send or change nothing.
+22. **What it carries and reaches.** The line "Carries and reaches:" says the skill is steps only, with no scripts, no other files and no connector, so it can reach, send or change nothing.
     - Passed: a line that says both halves.
     - Missed: no line; or a line that says it can reach a mailbox or a system, or change a record.
-22. **What each test should do, then what it did.** Under "Expected", one line for each test, written before the tests ran. Under "Results", the two tests' lines:
+23. **What each test should do, then what it did.** Under "Expected", one line for each test, written before the tests ran. Under "Results", the two tests' lines:
     - with the concepts: Dave must approve BO-23104, which is over $5,000.00, from the threshold concept, and the bank change is reported, not made, from the bank-detail concept. Steps 4 and 5 are set aside
     - alone: step 4 calls BO-23104 "ready to pay", needing no approval, because $6,150.00 is under $10,000, and step 5 puts "update the vendor's bank details" first
     - Passed: both "Expected" lines there, and both results as above.
