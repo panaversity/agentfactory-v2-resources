@@ -2,13 +2,13 @@
 
 The answers for Task 9 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When `Run: the ideas brief` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your brief and the run's ideas in the chat. You have the final say. If a check passed only after you changed your brief and ran it again, you still get it: fixing the brief is the skill this lab teaches.
+**How this key is used.** When `Run: the ideas brief` is back, answer the two questions on Maria's ideas brief. Then attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your brief, the run's ideas and your two answers in the chat. You have the final say. If a check passed only after you changed your brief and ran it again, you still get it: fixing the brief is the skill this lab teaches.
 
 ## The checks
 
-Task 9 carries checks 19 to 21 of the lab's 29.
+Task 9 carries checks 22 to 26 of the lab's 34.
 
-19. **At least four ideas, which work in at least three different ways.** Ways an idea can work:
+22. **At least four ideas, which work in at least three different ways.** Ways an idea can work:
     - at the vendor's end
     - in Maria's inbox
     - in what Brightline sends to vendors
@@ -16,18 +16,30 @@ Task 9 carries checks 19 to 21 of the lab's 29.
     - a safety net that catches an invoice before it is missed
     - Passed: four or more ideas, from at least three of these ways, or from other ways that are truly different.
     - Missed: one idea in different words, such as five emails that each ask vendors to use the AP inbox.
-20. **No idea costs money, needs IT, or holds a payment.**
+23. **No idea costs money, needs IT, or holds a payment.**
     - Costs money: software, an invoice portal, an AP automation tool, or any paid service.
     - Needs IT: a change that someone else must make to a system, such as a new shared address, a server rule or new mail routing. A change staff make themselves does not need IT: a line they add to the emails and documents they send, their own signature, or a rule in their own email program.
     - Holds a payment: refusing or delaying an invoice because of where it was sent, or telling vendors that such an invoice "may be delayed" or "may not be paid". Saying that an invoice sent to the AP inbox is handled sooner holds nothing, and is fine.
     - Passed: every idea the AI suggests keeps all three limits. An idea it names and then rules out, for one of these reasons, is fine.
     - Missed: any suggested idea breaks a limit, even with "use with care" or "if your volume justifies it".
-21. **Your brief in this chat named the problem and Dave's three limits, and left the ideas' shape, tone and length open.** Asking for a list, a short list, a number of ideas, or ideas that work in different ways is fine.
+24. **Your brief in this chat named the problem and Dave's three limits, and left the ideas' shape, tone and length open.** Asking for a list, a short list, a number of ideas, or ideas that work in different ways is fine.
     - Missed: a brief that leaves out one of Dave's limits, or one that fixes a form for each idea or a limit on length, such as "five one-line emails", "a name and two sentences for each" or "short enough to read in two minutes".
+25. **Why Maria's brief came back with one idea.** Your answer:
+    - the cause: the brief is too tight for ideas. Its Format fixes each idea as a new rule for vendors, all in one shape.
+    - the fix: loosen the Format, and leave the kind of idea, its shape and its length open. Keep the problem and what to avoid.
+    - Passed: both.
+    - Missed: the cause put in the role line, the Context or the Constraints; or a fix that adds more rules or a longer table.
+26. **The role line.** Your answer to Maria's idea of a better role line:
+    - no, a new role line would not fix it
+    - why: a role line focuses the worker's behavior and tone, and gives it no facts. It does not change how tight the Format is (Lesson 5.1).
+    - Passed: both.
+    - Missed: yes. Or no, because a role line never belongs in a prompt: in a single prompt it is a valid part.
 
 ## Why
 
 Asking for ideas is brainstorming, so the brief stays loose (Lesson 5.6). It tightens the problem, who it is for and what to avoid, and leaves the structure, tone and length open. The run had only your brief, so Dave's three limits held only if your brief said them. Set it the other way, with a fixed form for each idea, and it brings back five rewordings of one idea.
+
+**Why checks 25 and 26.** Maria's brief had the right problem and the right limits. Its Format fixed the kind of idea as well as its shape, so all five came back as one rule in other words (Lesson 5.6). The fix is in how tight that part is, not in who the worker is told to be. A role line sets the voice, and leaves the brief as tight as it was.
 
 ## Never a deduction
 

@@ -6,7 +6,7 @@ The answers for Task 6 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 6 carries checks 12 and 13 of the lab's 29.
+Task 6 carries checks 12 and 13 of the lab's 34.
 
 12. **The rules the result must follow, what the worker may do alone, and what it never does.** Your Constraints say:
     - the memo is in plain words Dave can read in two minutes. "Short and plain, for Dave" passes.
