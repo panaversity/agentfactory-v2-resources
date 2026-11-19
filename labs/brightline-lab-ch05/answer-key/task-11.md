@@ -2,7 +2,7 @@
 
 The answers for Task 11 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** This key lists the whole run, so it comes last. When the fresh run has stopped, taken Maria's reply and built its files, answer IT's question and Maria's. Then attach this file in that same fresh chat, never before, and send the check prompt there. The AI marks each check Passed or Missed, quoting the run's own words. You have the final say. If a check passed only after you changed a line in your lab chat and ran a new fresh chat, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** This key lists the whole run, so it comes last. When the fresh run has stopped, taken Maria's reply and built its files, answer IT's question and Maria's. Then attach this file in that same fresh chat, never before, and send the check prompt there. The AI marks each check Passed or Missed. For checks 26 and 27 it quotes the run's own words. For checks 28 and 29 it quotes your own answers, the words you sent after "My answer:", and never the run's reply to them. If you changed an answer, it grades your newest one. You have the final say. If a check passed only after you changed a line in your lab chat and ran a new fresh chat, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
@@ -20,14 +20,14 @@ Task 11 carries checks 26 to 29 of the lab's 29.
 
 28. **A line of your brief holds the worker back, whatever the app's setting.** In the fresh chat, after the build, you quoted the line of your brief that would still hold the worker back if an app's own setting let it act without asking.
     - Passed: a line that is in your brief and limits what the worker does, such as one that says it changes nothing, sends nothing or pays nothing, or the stop that waits for Maria.
-    - Missed: "none"; a line that is not in your brief; or an app's setting named instead of a line.
+    - Missed: "none"; a line that is not in your brief; or an app's setting named instead of a line. The run's reply never counts as your answer.
 
 29. **Stages across chats.** In the fresh chat, after IT's question, your answer to Maria says:
     - Tuesday's chat sees the project's instructions and its files
     - it does not see Monday's chat, or cannot be counted on to
     - Monday's list, with Maria's decisions, goes into the project's files, or Tuesday's chat starts from a handover note made from it (Lessons 5.4 and 8.3)
     - Passed: all three.
-    - Missed: Tuesday's chat said to see Monday's chat; or the list left in Monday's chat.
+    - Missed: Tuesday's chat said to see Monday's chat; or the list left in Monday's chat. The run's reply never counts as your answer.
 
 ## The run
 
