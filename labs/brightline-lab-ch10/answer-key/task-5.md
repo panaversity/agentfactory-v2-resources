@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 5 carries checks 12 and 13 of the lab's 32.
+Task 5 carries checks 12 and 13 of the lab's 34.
 
 12. **Who is affected, and who should have been paid on December 4.** Affected: the small suppliers, who never saw the list. Sole proprietors who depend on prompt payment, and Brightline's own signed promise, also pass. Then, against Dave's promise of payment within 15 days of receipt:
     - Rosa Delgado, INV-6219, 19 days on December 1: December 4. Already late.

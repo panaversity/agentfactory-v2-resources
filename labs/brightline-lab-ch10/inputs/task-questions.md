@@ -121,7 +121,9 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
    Whenever the learner changes a column's action, or sends "Run the check again", do this step again on the kept columns as they now stand, and replace the old result.
 
-   Then show Lesson 10.2's lines, quoted: "**A file for analysis is still an upload.** Code execution lets the AI run a small program on a file." "It needs the file, so the whole file goes in, with every column the question never uses." Ask: "At work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it? Answer: a few words." Write the answer under "What data, and by which way in", headed "The upload".
+   Then ask: "At work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it? Answer: a few words." Write the answer under "What data, and by which way in", headed "The upload".
+
+   Then show Lesson 10.2's lines, quoted: "**A file for analysis is still an upload.** Code execution lets the AI run a small program on a file." "It needs the file, so the whole file goes in, with every column the question never uses." Ask: "Does your answer change? Answer: "no", or the new answer and why." Write any change beside the first answer, which stays.
 5. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
 
    Then show Lesson 10.2's line, quoted: "**Replace identifiers with codes,** and keep the list that links them outside the AI tool." Ask: "If every vendor name were replaced with a code, would the cut file be anonymous? Answer: yes or no, and why."
@@ -130,7 +132,7 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
 ## Task 4. Which way in
 
-1. Show Lesson 10.3's words, quoted: "the useful question is not 'Is this AI product approved?' It is 'Is this route approved for this data and this purpose?'" and "Privacy controls each answer a smaller question than permission. A temporary chat keeps data out of history. Turning training off keeps it out of training. Neither decides whether the data was allowed in."
+1. Show Lesson 10.3's words, quoted: "the useful question is not 'Is this AI product approved?' It is 'Is this route approved for this data and this purpose?'"
 
    Then show the three ways in, each as its own lines, with what `brightline-files.md` and `vendor-facts.md` section 1 say about it:
    - Maria's personal AI account, an individual plan, with its training setting on: the way of December 6
@@ -138,6 +140,8 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
    - Maria's own chat in the shared AP project, in Brightline's company workspace on Claude's Team plan
 
    Ask: "Which way may Brightline's work data take, for this check and for any other work? Which ways may it never take? And who must confirm the way for vendor data before the check runs? Answer: the way, the ways it may never take, then who."
+
+   Then show Lesson 10.3's words, quoted: "Privacy controls each answer a smaller question than permission. A temporary chat keeps data out of history. Turning training off keeps it out of training. Neither decides whether the data was allowed in." Ask: "Does your answer change? Answer: "no", or the new answer and why." Keep the first answer, and any change beside it, for the document.
 2. Ask: "What must that way have before vendor data goes through it, about training, who can see the data, and how long it is kept? Answer: three short lines."
 3. Show "The vendor master in this lab" from `brightline-files.md`, with its line on why Brightline keeps the tax IDs, and who owns the vendor data. Show Lesson 10.2's line, quoted: "When a new use is outside the purpose, the person who owns the data decides." Ask: "Is finding duplicates before the tax forms inside that purpose? Is training an AI vendor's model? And who decides a use outside it? Answer: yes or no, yes or no, then who."
 
@@ -266,7 +270,14 @@ Then say "Ready for your test".
 9. Ask Dave's question: "Will this policy alone stop December happening again? Answer: yes or no, then why in a few words."
 
    Write both answers under "Interim AI policy".
-10. Show Lesson 10.4's question and its two kinds of gap, quoted: "Ask: was there a written rule that covered this, and did the person know it?"
+10. Show three events from "What happened in early December 2026" in `brightline-files.md`, quoted, each as its own lines, with the rule Brightline had for it that day:
+    - Thursday, December 3. The rule that day, in Lesson 10.7's words, quoted: "Maria sent it like any other draft, and nothing marked it as one that only Dave could sign."
+    - Sunday, December 6. The rule that day, quoted from the line for Friday, December 11: "Brightline has no written AI policy."
+    - Wednesday, December 9. The rule that day: K4's header line, quoted, with its approval date. Then Jordan Ellis's line from "Who is who", quoted.
+
+    Ask: "For each event: a policy gap or a training gap, and its fix? Answer: three lines, each starting with its date."
+
+    Write the three lines under "Interim AI policy", headed "Which gap, and its fix". Then show Lesson 10.4's question and its two kinds of gap, quoted: "Ask: was there a written rule that covered this, and did the person know it?"
 
     | Gap | The sign | The fix, or corrective action |
     | --- | --- | --- |
@@ -275,14 +286,7 @@ Then say "Ready for your test".
 
     And: "When people know the rule but the approved way is harder than the unapproved one, the gap is in the policy."
 
-    Then show three events from "What happened in early December 2026" in `brightline-files.md`, quoted, each as its own lines, with the rule Brightline had for it that day:
-    - Thursday, December 3. The rule that day, in Lesson 10.7's words, quoted: "Maria sent it like any other draft, and nothing marked it as one that only Dave could sign."
-    - Sunday, December 6. The rule that day, quoted from the line for Friday, December 11: "Brightline has no written AI policy."
-    - Wednesday, December 9. The rule that day: K4's header line, quoted, with its approval date. Then Jordan Ellis's line from "Who is who", quoted.
-
-    Ask: "For each event: a policy gap or a training gap, and its fix? Answer: three lines, each starting with its date."
-
-    Write the three lines under "Interim AI policy", headed "Which gap, and its fix". Then say "Ready for your test".
+    Ask: "Does any line change? Answer: "no", or the new line and why." Write any change beside the first line, which stays. Then say "Ready for your test".
 
 **The test:** `Test: the send tool`, the task's only test. After it, end with "Task 11 is done".
 
@@ -302,3 +306,14 @@ Then say "Ready for your test".
 In the lab chat, the learner sends "Task 13" only to download the document. Say: "Download the document from its menu, as .docx or .pdf, and use it in a fresh chat as the page says." Ask nothing.
 
 In the fresh chat, the learner attaches the downloaded document and this zip, and sends a brief. Answer "Test: Monday" from the attached document, read as the terms, and from `role-contract-draft-6.md` as the document's section 12 changes it, as "When the learner sends 'Test:'" above says. In the fresh chat, end after the eighth case's items, with no end line.
+
+## Task 14. The March audit
+
+This task is set on Monday, March 15, 2027. Use `march-audit-sample.md` only in this task.
+
+1. Show "Where this sample comes from" from `march-audit-sample.md`, quoted. Then show the document's "Interim AI policy" section as it now stands: its lines, quoted, without its "Which gap, and its fix" lines. Say: "For this task, this is the policy in force."
+2. Show S1, every line of it, quoted. Ask: "Does this use keep the policy, or break a line of it, and which line? And does it show a lapse in Diligence, and which part? Answer: keeps it, or the line it breaks; then no lapse, or the part."
+3. If the answer names a broken line or a lapse, ask: "A policy gap or a training gap? And the corrective action that closes it, and who owns it? Answer: the gap, then the action and who." If the answer names neither, ask nothing more for this use.
+4. Do steps 2 and 3 for S2 to S5, one at a time, each shown first.
+
+   Show no lesson text, no table of the two gaps and no list of the parts of Diligence in this task. Write each use under "Interim AI policy", headed "The March audit, Monday, March 15, 2027", as a row: the use, keeps it or the line it breaks, the lapse or "none", the gap, and the action with its owner. Then say "Task 14 is done". This task has no test.

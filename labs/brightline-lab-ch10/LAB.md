@@ -2,7 +2,7 @@
 
 Chapter 10 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 10: yes, on these terms](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/lab/), so you can do the lab without the book.
 
-In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It takes about three and a half hours, best in three sittings: Tasks 1 to 4, Tasks 5 to 9, and Tasks 10 to 13. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
+In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It takes about four hours, best in three sittings: Tasks 1 to 4, Tasks 5 to 9, and Tasks 10 to 14. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
 
 **What you will learn:**
 
@@ -17,6 +17,7 @@ In the first nine days of December 2026, four ordinary decisions at Brightline w
 - To decide who can open a result, and when each share ends.
 - To keep a one-page Governance Record for a workflow, and to propose an interim AI policy.
 - To find which settings carry out a policy on each AI vendor, and what no setting decides.
+- To audit a sample of how people use AI against the policy in force, and to close each gap you find.
 
 ## Before you start (5 minutes)
 
@@ -24,7 +25,7 @@ Download [`brightline-lab-ch10.zip`](https://github.com/panaversity/agentfactory
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `inputs.zip`: the one file you give the AI in Task 1. It holds the AP Worker's Role Contract, Draft 6, Brightline's files for early December, part of the vendor master, Monday's cases, what each AI vendor's own pages say, and the questions the AI asks you in each task. You don't need to open it.
+- `inputs.zip`: the one file you give the AI in Task 1. It holds the AP Worker's Role Contract, Draft 6, Brightline's files for early December, part of the vendor master, Monday's cases, what each AI vendor's own pages say, a sample of staff use from March 2027 for the last task, and the questions the AI asks you in each task. You don't need to open it.
 
 The answer keys are not in the folder. Each task downloads its own, so you meet none early.
 
@@ -40,7 +41,7 @@ Every record here is invented, which is why it may go into your own AI account h
 
 ## How each task works
 
-You use two chats. Tasks 1 to 12 run in one lab chat. Task 13 runs in a fresh chat, to prove your terms with nothing else in view.
+You use two chats. Tasks 1 to 12 and Task 14 run in one lab chat. Task 13 runs in a fresh chat, to prove your terms with nothing else in view.
 
 **Your document.** In Task 1, the AI opens one document beside your chat, a Claude Doc in Claude or a Writing block in ChatGPT's side panel. Its title is "The terms for switching the AP Worker back on", and it is a proposal for Dave. It has twelve sections, one for each question you answer, and its last section holds the lines of Draft 6 that change, as Draft 7. The AI writes each of your decisions into it, and changes nothing else. Change it only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
@@ -187,7 +188,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 3" and send it. The AI shows [10.2](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/)'s three tiers. Then it shows the vendor master's columns, a group at a time, with what the full master holds and what the lab's copy shows. For each group, answer: its tier, then keep, keep the last four digits, or remove. The last group is the notes column. The AI shows every note, and you say what the notes hold before you give the tier and the action.
 2. The AI asks the tier of the full vendor master, and of a file with only your kept columns. Answer both.
-3. The AI runs the check on your kept columns only, and shows each pair it found, with the columns it matched on. Compare it with the pairs in Dave's ask: answer whether it found Maria's four, and left the two Union companies apart. If you change a column's action later, the AI runs the check again. Then answer: at work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it?
+3. The AI runs the check on your kept columns only, and shows each pair it found, with the columns it matched on. Compare it with the pairs in Dave's ask: answer whether it found Maria's four, and left the two Union companies apart. If you change a column's action later, the AI runs the check again. Then answer: at work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it? Then the AI shows 10.2's lines on uploads for analysis. Answer: whether your answer changes, and why.
 4. The AI shows the pairs side by side without their tax IDs. Answer: if every tax ID were removed, which pair would the check lose, and which might it wrongly flag? And if every vendor name were replaced with a code, would the cut file be anonymous?
 5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -201,7 +202,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, which ways it may never take, and who must confirm the way for vendor data first.
+1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, which ways it may never take, and who must confirm the way for vendor data first. Then the AI shows 10.3's lines on privacy controls. Answer: whether your answer changes, and why.
 2. Then answer in a few words: what that way must have, in three short lines, and three short answers on the purpose the tax IDs were kept for.
 3. One look outside the chat: open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Tell the AI on, off or skip. It is not graded, and it does not go in the document.
 4. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it.
@@ -326,7 +327,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say and the answer is not yours to decide, leave it "open". When a share ends is yours to decide.
 2. The AI shows what an interim policy must cover. Give each of its five lines in a few words, then its status and its review date.
 3. Answer two more. What makes the approved way harder than a personal account at Brightline, and who fixes it? And Dave's question: yes or no, and why?
-4. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s two kinds of gap. Then it shows three of December's events, each with the rule Brightline had that day. For each event, answer: a policy gap or a training gap, and its fix, in one line.
+4. The AI shows three of December's events, each with the rule Brightline had that day. For each event, answer: a policy gap or a training gap, and its fix, in one line. Then the AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s two kinds of gap. Answer: whether any line changes, and why.
 5. When the AI says "Ready for your test", type `Test: the send tool` and send it.
 6. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -383,6 +384,22 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: would a fresh chat with only your terms decide the next real requests right?
 
+## Three months on
+
+### Task 14. The March audit (20 minutes)
+
+**Dave asks:** "It is Monday, March 15, 2027, three months after I approved your interim policy as you wrote it. I picked five things people did with AI in the last four weeks. Which of them broke the policy, which show a lapse in Diligence, and what closes each gap?"
+
+**What you do:**
+
+1. Back in your lab chat, type "Task 14" and send it. The AI shows your interim policy as the policy in force, then the five uses in Dave's sample, one at a time, each with what was done, with what data, where, and what the person said. For each, answer: does it keep the policy, or break a line of it, and which? And does it show a lapse in Diligence, and which part?
+2. For each use that breaks a line or shows a lapse, the AI asks two more. Answer: a policy gap or a training gap, and the corrective action that closes it, with who owns it.
+3. **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-14.md). Attach it in your lab chat, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 33 and 34 passed.
+
+**At work**, ask: in a sample of what people actually did, which uses broke the policy, and which went wrong with no rule broken?
+
 ## If something goes wrong
 
 - **The AI put the document in the chat, not beside it.** Ask it to "put the document in an editable document beside our chat, titled as task-questions.md says: a Claude Doc in Claude or a Writing block in ChatGPT."
@@ -407,7 +424,7 @@ Your vertical is the line of work you know best. Pick one workflow you own that 
 
 ## When you are done
 
-You are done when every check has passed, and your fresh chat decided Monday by your terms alone. Keep your document. It holds the owners and takedown records for Brightline's knowledge, a Governance Record that says when to look again, the points where a human must sign, the first-hour rule and the incident note, the interim policy and the settings that carry it out, and the lines of Draft 7. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
+You are done when every check has passed, your fresh chat decided Monday by your terms alone, and your audit found each gap in Dave's sample. Keep your document. It holds the owners and takedown records for Brightline's knowledge, a Governance Record that says when to look again, the points where a human must sign, the first-hour rule and the incident note, the interim policy, its March audit and the settings that carry it out, and the lines of Draft 7. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
 
 **At work:** when an AI at work goes wrong, do not switch it all off, and do not send one more reminder. Find the question it skipped, answer it once in writing with a named owner, and test the answer on the next real requests.
 

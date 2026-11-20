@@ -6,7 +6,7 @@ The answers for Task 9 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 9 carries checks 22 and 23 of the lab's 32.
+Task 9 carries checks 22 and 23 of the lab's 34.
 
 22. **The incident note.** From Maria to Dave, dated Monday, December 7, 2026, 7:00 a.m., with:
     - what she has stopped and kept: nothing forwarded or uploaded again, and the chat, the export and the results file kept, not deleted

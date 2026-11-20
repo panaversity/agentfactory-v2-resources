@@ -6,7 +6,7 @@ The answers for Task 10 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 10 carries checks 24 and 25 of the lab's 32.
+Task 10 carries checks 24 and 25 of the lab's 34.
 
 24. **Who can open the list.**
     - Its tier: yellow, because it holds names, addresses and the last four digits of tax IDs, like the cut file it came from.

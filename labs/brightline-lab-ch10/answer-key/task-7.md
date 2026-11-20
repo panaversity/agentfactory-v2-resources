@@ -6,7 +6,7 @@ The answers for Task 7 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 7 carries checks 16 to 18 of the lab's 32.
+Task 7 carries checks 16 to 18 of the lab's 34.
 
 16. **The knowledge register.**
     - K1 to K5, the five AP concepts: owner Dave Kowalski; stable; keep.

@@ -6,7 +6,7 @@ The answers for Task 13 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 13 carries checks 31 and 32 of the lab's 32.
+Task 13 carries checks 31 and 32 of the lab's 34.
 
 31. **Monday, decided by your terms.** Each case is decided by a line of your terms, or of Draft 6 as your section 12 changes it, quoted, with who decides:
     - **Jordan's question:** the 2025 notes are taken down from the New Staff project and the Onboarding folder, so they no longer answer, and Jordan is pointed to the approved rule on bank-detail changes, or to a person. From your section 5.
