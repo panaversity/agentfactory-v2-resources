@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 3 carries checks 7 and 8 of the lab's 29.
+Task 3 carries checks 7 and 8 of the lab's 31.
 
 7. **The standing spec names what a fresh run needs.** Under Triggers, the Thursday review's standing spec says:
    - Job: it drafts the pre-run note for Dave, and never approves.

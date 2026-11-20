@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 3 of the lab's 29.
+Task 1 carries checks 1 to 3 of the lab's 31.
 
 1. **Which jobs should run without you.** The two new fields place each of the five jobs:
    - Vendor totals for year-end tax forms: stops at Gate 1. The accounting system's "payments by vendor" report already does it.

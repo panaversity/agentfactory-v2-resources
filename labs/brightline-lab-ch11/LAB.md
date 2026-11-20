@@ -349,19 +349,19 @@ It is Monday, January 18.
 
 ## Thursday, February 4: three weeks later
 
-### Task 12. Three more records (20 minutes)
+### Task 12. Four more records (25 minutes)
 
-**Dave asks:** "Three more went wrong this week. Same method: where does each one live?"
+**Dave asks:** "Four more went wrong this week. Same method: where does each one live?"
 
 **What you do:**
 
-1. In your lab chat, type "Task 12" and send it. The AI shows the five causes, then three task records from February, one at a time. For each, answer: the cause, or two, each with the step that shows it, and your one-minute check. For the first record, the AI also asks what happens now to Greenway's request to change its bank account.
-2. When the AI says "Ready for your Inspect", type `Inspect: my check` and send it. It runs your three checks.
+1. In your lab chat, type "Task 12" and send it. The AI shows the five causes, then four task records from February, one at a time. For each, answer: the cause, or two, each with the step that shows it, and your one-minute check. For the first record, the AI also asks what happens now to Greenway's request to change its bank account.
+2. When the AI says "Ready for your Inspect", type `Inspect: my check` and send it. It runs your four checks.
 3. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 43 to 46 passed.
+**Checkpoint.** Checks 43 to 47 passed.
 
-**At work**, ask: which add-ons, memories or files on my own computer does my AI rely on?
+**At work**, ask: which add-ons, memories, instructions or files on my own computer does my AI rely on?
 
 ## The proof
 
@@ -397,7 +397,7 @@ It is Monday, January 18.
 
 With an account on the other AI vendor, you can run the same message there too, after the check. It is not checked.
 
-**Checkpoint.** Checks 47 to 51 passed, in a chat that has only your contract and the week's files.
+**Checkpoint.** Checks 48 to 52 passed, in a chat that has only your contract and the week's files.
 
 **At work**, before you switch to a stronger model, ask: what does the same input give after the setup changes?
 

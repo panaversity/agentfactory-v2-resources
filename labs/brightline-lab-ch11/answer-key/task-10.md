@@ -6,7 +6,7 @@ The answers for Task 10 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 10 carries checks 35 to 37 of the lab's 51.
+Task 10 carries checks 35 to 37 of the lab's 52.
 
 35. **One kind of error: capacity, the wrong feature.** One repeated kind of error: small amounts, each different, while the rate and the invoice amounts are right. The cause is capacity, the wrong feature: arithmetic written in sentences.
     - Passed: one kind, and capacity or the wrong feature.

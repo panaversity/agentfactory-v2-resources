@@ -6,9 +6,9 @@ The answers for Task 9 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 9 carries checks 20 and 21 of the lab's 29.
+Task 9 carries checks 21 and 22 of the lab's 31.
 
-20. **On Claude.**
+21. **On Claude.**
     - The Thursday review: a scheduled task, on a paid plan.
     - The invoice email check: "none documented". Anthropic's pages describe no task in the Claude app that starts when an email arrives.
     - Whose name: not stated for a scheduled task in the Claude app, so check first.
@@ -16,7 +16,7 @@ Task 9 carries checks 20 and 21 of the lab's 29.
     - Read and pause: past runs on the Scheduled page, where a task can be paused.
     - Passed: all five.
     - Missed: any part above missing or wrong, for example an email trigger named for the Claude app; a name stated as fact; or "Skip all approvals".
-21. **On ChatGPT.**
+22. **On ChatGPT.**
     - The Thursday review: a team task, on Business or Enterprise.
     - The invoice email check: a ChatGPT task that starts from Gmail, which an admin must allow on Enterprise and Edu.
     - Whose name: the team's service account.

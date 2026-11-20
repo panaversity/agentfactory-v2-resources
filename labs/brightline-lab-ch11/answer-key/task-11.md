@@ -6,7 +6,7 @@ The answers for Task 11 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 11 carries checks 38 to 42 of the lab's 51.
+Task 11 carries checks 38 to 42 of the lab's 52.
 
 38. **The three repeated corrections.** Credit memos listed as amounts owed: a rule, in standing instructions, such as "A credit memo is never an amount owed." Amounts shown without cents: a procedure, in the note's skill or layout, or a rule, in standing instructions. No flag for small suppliers near the 15-day promise: a reference, the promise as a concept, through its owner; or a step in the note's skill that reads the promise once it is approved.
     - Passed: all three homes, each in the contract where its home says, written as the fix.
