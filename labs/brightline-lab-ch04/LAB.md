@@ -11,6 +11,7 @@ In the week of October 12, 2026, Brightline's AP Worker made three mistakes, and
 - To fix where a fact is kept when an AI gets it wrong, not the answer and not the memory.
 - To say what makes a written rule actually stop an action, and to say so when it is not in place.
 - To say what changes when others use a worker, and what must not.
+- To write what you found into the worker's Role Contract, as Draft 3.
 
 ## Before you start (5 minutes)
 
@@ -244,6 +245,34 @@ Three things your own AI use relies on, at work or in your studies: a prompt you
 
 **Checkpoint.** Each of your three has a layer and a place, and you know which one you would move today.
 
+## Draft 3 of the Role Contract (10 minutes)
+
+**Dave asks:** "Last, put what you found into the worker's Role Contract. IT works from your page, but the contract is what we keep."
+
+**What you do:**
+
+Brightline's Draft 2 is in the zip, in the AP shared folder. It groups the lines this chapter covers, knowledge, memory, actions, runtime needs and channels, under one heading, "What it uses".
+
+1. In the same chat, send this:
+
+   ```text
+   Outcome:     The AP Worker's Role Contract, Draft 3, dated Friday,
+                October 16, 2026, in a second document beside our chat.
+   Context:     ap-shared/role-contract.md in the zip, which is Draft 2,
+                and my page.
+   Format:      Copy Draft 2, then change only the Identity line and the
+                lines under "What it uses". Each of those lines says what
+                my page says, and where that part is kept. Remove an open
+                question my page answers. Add one for anything my page
+                left open.
+   Constraints: Use only Draft 2 and my page. Add nothing of your own,
+                and change no other line.
+   ```
+
+2. Read Draft 3 beside your page. Each line you changed should match a section of your page. If a line says something your page does not, tell the AI to take it out.
+
+**Dave gets:** the AP Worker's Role Contract, Draft 3. [Lab 7](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/lab/) starts from a Draft 3 like yours, and adds the worker's authority.
+
 ## If something goes wrong
 
 - **The AI wrote the page in the chat, not in a document.** Say: "Put my page in one editable document beside our chat, titled Brightline's AP Worker: what it is made of, from page-template.md: a Claude Doc in Claude or a Writing block in ChatGPT."
@@ -259,7 +288,7 @@ Three things your own AI use relies on, at work or in your studies: a prompt you
 
 ## When you are done
 
-You are done when checks 1 to 21 have passed and you have read check 22 yourself. Export the page, as a .docx or a .pdf, or copy it into a document of your own: it is Brightline's, it reads without the chat, and it is the shape of the page you would write for your own worker.
+You are done when checks 1 to 21 have passed, you have read check 22 yourself, and Draft 3 is written. Export the page and Draft 3, as a .docx or a .pdf, or copy them into documents of your own. They are Brightline's, they read without the chat, and the page is the shape of the one you would write for your own worker.
 
 **At work:** before you depend on an AI setup, write its page: six layers, rented or owned, where each owned thing is kept. Then ask what a move would lose. Whatever the answer is, that is what to move first.
 
