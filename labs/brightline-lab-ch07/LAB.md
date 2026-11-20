@@ -58,7 +58,7 @@ You use two chats. Tasks 1 to 11, and the first step of Task 12, run in one lab 
 3. whether the contract's settings let its tools do more than those lines allow
 4. what the contract leaves unclear
 
-A decision that no line makes is "no line decides", even when it is right: it is a line your contract lacks. Until Task 8, item 3 will say that the settings let the worker do more. That is Tuesday's cause, and Tasks 6 to 8 fix it. A test reads your contract and quotes it. It sends nothing and changes nothing. A good test means your lines are clear enough to follow. It does not make a live worker safe: Part IV of this book teaches DSoR, which checks every action for itself.
+A decision that no line makes is "no line decides", even when it is right: it is a line your contract lacks. Until Task 8, item 3 will say that the settings let the worker do more. That is Tuesday's cause, and Tasks 6 to 8 fix it. A test reads your contract and quotes it. It sends nothing and changes nothing. A good test means your lines are clear enough to follow. It does not make a live worker safe: Part V of this book teaches DSoR, which checks every action for itself.
 
 ### The check prompt
 
