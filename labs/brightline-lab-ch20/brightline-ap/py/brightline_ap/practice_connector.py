@@ -225,7 +225,7 @@ def get_purchase_order(
         "difference_cents": difference,
         # The company's own rule, from data/settings.csv, computed here, never by the model.
         "approval_threshold_cents": THRESHOLD,
-        "needs_approval": invoice["amount_cents"] >= THRESHOLD,
+        "needs_approval": invoice["amount_cents"] > THRESHOLD,
     }
 
 

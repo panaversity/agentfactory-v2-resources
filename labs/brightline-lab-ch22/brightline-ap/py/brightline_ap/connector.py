@@ -374,7 +374,7 @@ def build_server(deps: Deps, *, auth: AuthSettings | None = None, token_verifier
                 invoice_number=invoice["invoice_number"], invoice_amount_cents=invoice["amount_cents"],
                 match="matched" if diff == 0 else "over_po" if diff > 0 else "under_po", difference_cents=diff,
                 # This company's own rule (19.11), computed by code, never by the model.
-                approval_threshold_cents=threshold, needs_approval=int(invoice["amount_cents"]) >= threshold,
+                approval_threshold_cents=threshold, needs_approval=int(invoice["amount_cents"]) > threshold,
             )
         return await _run(ctx, deps, "get_purchase_order", work)
 

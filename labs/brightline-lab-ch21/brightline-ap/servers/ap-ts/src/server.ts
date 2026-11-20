@@ -312,7 +312,7 @@ export function makeServer(deps: RequestDeps): McpServer {
             difference_cents: difference,
             // This company's own rule (19.11), computed by code, never by the model.
             approval_threshold_cents: threshold,
-            needs_approval: invoice.amount_cents >= threshold,
+            needs_approval: invoice.amount_cents > threshold,
           });
         });
       })),

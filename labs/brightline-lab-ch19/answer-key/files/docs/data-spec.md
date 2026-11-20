@@ -18,7 +18,7 @@ foreign key includes it. A company's **name** is never stored here: it lives in 
 | --- | --- | --- | --- |
 | `tenants` | `id` | A company whose AP data is connected. No row: every tool says "No AP data is connected for <company> yet." | `org_` and lowercase letters, digits or `_` |
 | | `loaded_at` | When its data was first loaded | |
-| `tenant_settings` | `approval_threshold_cents` | An invoice of this amount or more needs approval before payment. Brightline 500000 ($5,000.00), Cedar Ridge 250000 ($2,500.00) | Required, more than 0. No shared default |
+| `tenant_settings` | `approval_threshold_cents` | An invoice over this amount needs approval before payment. Brightline 500000 ($5,000.00), Cedar Ridge 250000 ($2,500.00) | Required, more than 0. No shared default |
 | `vendors` | `vendor_id` | The company's own vendor id. Two companies may use the same id | `V` and three digits |
 | | `vendor_name` | The vendor's name | 1 to 200 characters |
 | | `terms` | The payment terms agreed with the vendor | |
