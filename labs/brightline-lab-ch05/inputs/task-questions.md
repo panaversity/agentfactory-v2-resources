@@ -153,12 +153,12 @@ Put the line in the Doc. Change no other line. Say "Ready for your run".
 
    1. That brief's Outcome says "Pay everything due this week." Its run proposed SP-1188, due Thursday, October 22, for payment. It marked SP-1201, due Thursday, October 29, NOT_DUE. The next run is Friday, October 30.
 
-      Ask: "Which line of this brief failed, and what went wrong with it? Then name the part to change, from 5.5's table, with the line written the way Dave meant it. A few lines." Do not say what kind of gap it is.
-   2. When the learner has answered, show 5.5's lines on testing each line and on content rules, below, quoted. Then show the second run. That brief's Constraints say only "Read and draft freely. Change nothing and send nothing." Its note to Maria in the chat says "Dave will approve 4519 on Thursday." Dave has not decided yet.
+      Ask: "Which line of this brief failed? How did the run read it, and how did Dave mean it? Then name the part to change, from 5.5's table, with the line written the way Dave meant it. A few lines." Do not say what kind of gap it is.
+   2. When the learner has answered, show the second run. That brief's Constraints say only "Read and draft freely. Change nothing and send nothing." Its note to Maria in the chat says "Dave will approve 4519 on Thursday." Dave has not decided yet.
 
       Ask: "Which part had a line missing, and what would the line say? A line."
 
-   Then say "Task 7 is done".
+   When the learner has answered, show 5.5's lines on testing each line and on content rules, below, quoted, so the learner can compare. Then say "Task 7 is done".
 
 ## Task 8. Where it stops
 

@@ -24,7 +24,7 @@ Task 9 carries checks 22 to 26 of the lab's 34.
     - Missed: any suggested idea breaks a limit, even with "use with care" or "if your volume justifies it".
 24. **Your brief in this chat named the problem and Dave's three limits, and left the ideas' shape, tone and length open.** Asking for a list, a short list, a number of ideas, or ideas that work in different ways is fine.
     - Missed: a brief that leaves out one of Dave's limits, or one that fixes a form for each idea or a limit on length, such as "five one-line emails", "a name and two sentences for each" or "short enough to read in two minutes".
-25. **Why Maria's brief came back with one idea.** Your answer, sent before the AI showed the rows of 5.6 and 5.5:
+25. **Why Maria's brief came back with one idea.** Your answer, sent after Maria's run and before the AI showed the rows of 5.6 and 5.5 again:
     - the cause: the brief is too tight for ideas. Its Format fixes each idea as a new rule for vendors, all in one shape.
     - the fix: loosen the Format, and leave the kind of idea, its shape and its length open. Keep the problem and what to avoid.
     - Passed: both.

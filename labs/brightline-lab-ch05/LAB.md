@@ -300,7 +300,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 6. The AI asks what changed between the two runs. Answer in a line.
 7. If another problem matters, fix it in a new round: one part, one changed line, one run.
 8. The AI shows three other runs of a payment-run brief. For each, answer iterate, restart or change approach, from [5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/), and why, in one line.
-9. The AI shows two more runs, each with a gap in its brief. For the first, name the line that failed, what went wrong with it, and the part to change. Then the AI shows [5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)'s lines on testing each line. For the second, name the part that lacks a line, and what the line would say.
+9. The AI shows two more runs, each with a gap in its brief. For the first, name the line that failed, how the run read it and how Dave meant it, and the part to change. For the second, name the part that lacks a line, and what the line would say. Then the AI shows [5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)'s lines on testing each line, to compare.
 10. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 14 to 18 passed, and the hard rule holds.

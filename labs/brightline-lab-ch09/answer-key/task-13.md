@@ -20,8 +20,8 @@ Task 13 carries checks 30 and 31 of the lab's 31.
     - gives each action an owner, a date, a cost and a risk
     - ends with what could not be verified, such as whether each supplier will agree, or whether 2025's payment days still hold
     - makes Pallets a yes: in 2025 Scioto was already paid about 6 days after its invoice, so asking costs no cash. For the other groups, either answer passes with a reason from the numbers: in 2025 Brightline paid them about 24 to 26 days after the invoice, so the discount would have meant paying about 14 to 16 days sooner.
-    - Passed: your check names both questions, and the plan has all four. A draft that already had all four passes when your check says why it can go as it is.
-    - Missed: no "Check:" message, or one that only says "looks good" with no reason; or a plan that still has a part above missing or wrong after your check, for example no decision first; an action with no owner or no date; a plan that counts the saving as certain, such as "most suppliers agree, so we save $1,916.78"; or a Canadian amount added to a US one. A fault the AI drafted and you let through is Missed, as it would be at work.
+    - Passed: your check names both questions and at least one thing you compared against the chat, such as each group's yes or no against the code's days, Pallets' 6 days, each action's owner and date, or the "not verified" line; and the plan has all four. A draft that already had all four passes when your check says why it can go as it is.
+    - Missed: no "Check:" message, or one that only says "looks good", or names the two questions with nothing compared; or a plan that still has a part above missing or wrong after your check, for example no decision first; an action with no owner or no date; a plan that counts the saving as certain, such as "most suppliers agree, so we save $1,916.78"; or a Canadian amount added to a US one. A fault the AI drafted and you let through is Missed, as it would be at work.
 
 ## Why
 

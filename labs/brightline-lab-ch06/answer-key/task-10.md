@@ -2,7 +2,7 @@
 
 The answers for Task 10 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When Linda's version is in the chat, under "For Linda", and you have said whether it fits her, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting Linda's lines and your answers in the chat. Then read Linda's lines yourself and compare. You have the final say. If a check passed only after you changed an answer, you still get it: what you tell the AI is the skill this task teaches.
+**How this key is used.** When Linda's version is in the chat, under "For Linda", and you have said whether it fits her, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting Linda's lines and your answers in the chat. Then read Linda's lines yourself and compare. You have the final say. If a check passed only after you changed an answer, you still get it: what you tell the AI is the skill this task teaches. The one exception is your fit answer in check 26, which is graded as you first sent it.
 
 ## The checks
 
@@ -10,9 +10,9 @@ Task 10 carries checks 26 to 30 of the lab's 34.
 
 26. **Three lines or fewer, with no invoice numbers, and you judged the fit.** Linda's version, under "For Linda", is three lines or fewer. Vendor names stand in for the numbers.
     - Passed: three lines or fewer, and no invoice number in them.
-    - Your answer to "Does this version fit Linda?", sent after the first version and before any change, says yes or no, with a reason from her needs: her phone and three lines, the cash, the holds, a decision, or the invoice numbers. A yes passes only when that first version keeps checks 26 to 29. A no passes when its reason names a real gap in that version.
+    - Your answer to "Does this version fit Linda?", sent after the first version and before any change, says yes or no, with a reason from her needs: her phone and three lines, the cash, the holds, a decision, or the invoice numbers. A yes passes only when that first version has three lines or fewer, no invoice number, and keeps checks 27 to 29. A no passes when its reason names a real gap in that version.
     - Passed: three lines or fewer, no invoice number in them, and your fit answer, as above.
-    - Missed: a fourth line for Linda, or an invoice number, such as 4579 or BO-23177, in her lines. What is absent cannot be quoted, so check every one of her lines for an invoice number. Missed too: no fit answer, a fit answer with no reason, or a yes for a first version that breaks one of checks 26 to 29.
+    - Missed: a fourth line for Linda, or an invoice number, such as 4579 or BO-23177, in her lines. What is absent cannot be quoted, so check every one of her lines for an invoice number. Missed too: no fit answer, a fit answer with no reason, or a yes for a first version with a fourth line or an invoice number, or one that breaks one of checks 27 to 29.
 27. **The cash going out on Friday, November 6, 2026, is $11,296.50.** That is the memo's $14,236.50, less Midwest Packaging's $2,940.00 (invoice 4588), which Dave held after he approved the memo. The same figure rounded, such as $11,297 or about $11,300, is fine. If a count is given, it is 7 invoices.
     - Passed: $11,296.50, or the same figure rounded, and 7 if a count is given.
     - Missed: $14,236.50, 8 invoices, or any other figure. The memo does not know about Dave's change, and the AI knows it only if your answers say so.

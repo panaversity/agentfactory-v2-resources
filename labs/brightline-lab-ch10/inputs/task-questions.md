@@ -123,7 +123,7 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
    Then ask: "At work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it? Answer: a few words." Write the answer under "What data, and by which way in", headed "The upload".
 
-   Then show Lesson 10.2's lines, quoted: "**A file for analysis is still an upload.** Code execution lets the AI run a small program on a file." "It needs the file, so the whole file goes in, with every column the question never uses." Ask: "Does your answer change? Answer: "no", or the new answer and why." Write any change beside the first answer, which stays.
+   Then show Lesson 10.2's lines, quoted: "**A file for analysis is still an upload.** Code execution lets the AI run a small program on a file." "It needs the file, so the whole file goes in, with every column the question never uses." Ask: "Does your answer change? Answer: 'no', or the new answer and why." Write any change beside the first answer, which stays.
 5. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
 
    Then show Lesson 10.2's line, quoted: "**Replace identifiers with codes,** and keep the list that links them outside the AI tool." Ask: "If every vendor name were replaced with a code, would the cut file be anonymous? Answer: yes or no, and why."
@@ -141,7 +141,7 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
    Ask: "Which way may Brightline's work data take, for this check and for any other work? Which ways may it never take? And who must confirm the way for vendor data before the check runs? Answer: the way, the ways it may never take, then who."
 
-   Then show Lesson 10.3's words, quoted: "Privacy controls each answer a smaller question than permission. A temporary chat keeps data out of history. Turning training off keeps it out of training. Neither decides whether the data was allowed in." Ask: "Does your answer change? Answer: "no", or the new answer and why." Keep the first answer, and any change beside it, for the document.
+   Then show Lesson 10.3's words, quoted: "Privacy controls each answer a smaller question than permission. A temporary chat keeps data out of history. Turning training off keeps it out of training. Neither decides whether the data was allowed in." Ask: "Does your answer change? Answer: 'no', or the new answer and why." Keep the first answer, and any change beside it, for the document.
 2. Ask: "What must that way have before vendor data goes through it, about training, who can see the data, and how long it is kept? Answer: three short lines."
 3. Show "The vendor master in this lab" from `brightline-files.md`, with its line on why Brightline keeps the tax IDs, and who owns the vendor data. Show Lesson 10.2's line, quoted: "When a new use is outside the purpose, the person who owns the data decides." Ask: "Is finding duplicates before the tax forms inside that purpose? Is training an AI vendor's model? And who decides a use outside it? Answer: yes or no, yes or no, then who."
 
@@ -286,7 +286,7 @@ Then say "Ready for your test".
 
     And: "When people know the rule but the approved way is harder than the unapproved one, the gap is in the policy."
 
-    Ask: "Does any line change? Answer: "no", or the new line and why." Write any change beside the first line, which stays. Then say "Ready for your test".
+    Ask: "Does any line change? Answer: 'no', or the new line and why." Write any change beside the first line, which stays. Then say "Ready for your test".
 
 **The test:** `Test: the send tool`, the task's only test. After it, end with "Task 11 is done".
 

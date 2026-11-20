@@ -338,7 +338,7 @@ It is Monday, January 18.
 **What you do:**
 
 1. In your lab chat, type "Task 11" and send it. The AI shows Maria's correction log and the two replies to the same kind of dispute. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
-2. The AI shows [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Answer: which correction you would move, and why, or "none".
+2. The AI shows [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Answer: which correction you would move, where, and why, or "none".
 3. The AI shows Dave's words, the contract's knowledge lines, and [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
 4. The AI shows [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
 5. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.

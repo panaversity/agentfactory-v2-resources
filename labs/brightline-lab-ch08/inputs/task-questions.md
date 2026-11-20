@@ -147,7 +147,7 @@ Then say "Ready for your test".
    - "**Let memory hold** how you like to work: 'reply in plain English,' 'Maria reviews drafts before 10 a.m.,' 'use the vendor's legal name.'"
    - "**Keep out of memory** anything a decision depends on: policy, thresholds (limits such as $5,000), amounts, statuses, and anything sensitive (private, such as a bank balance)."
 
-   If the learner changes a decision after reading them, write the changed decision. Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
+   Ask: "Change any decision? Name it and its new decision, or say 'no'." If the learner changes a decision, write the changed decision. Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
 2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
 3. Show Lesson 8.8's lines on memory, quoted:
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
