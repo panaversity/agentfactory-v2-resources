@@ -24,7 +24,7 @@ Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory
 
 - You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio.
 - Today is Wednesday, September 30, 2026. Brightline pays its bills this Friday, October 2.
-- 15 vendor invoices came in during September. Your manager sends them to you and asks for help.
+- 15 vendor invoices came in during September. Maria, the office manager, sends them to you and asks for help.
 - Brightline paid Midwest Packaging's invoice 4471 on September 25. No other invoice is paid yet.
 
 ## How each task works
@@ -81,65 +81,65 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 ### Task 1. What we owe (20 minutes)
 
-**Your manager asks:** "How much do we owe on these invoices, as of Wednesday, September 30, 2026? And remember, invoice 4471 was paid on September 25. Nothing else is paid yet."
+**Maria asks:** "How much do we owe on these invoices, as of Wednesday, September 30, 2026? And remember, invoice 4471 was paid on September 25. Nothing else is paid yet."
 
 **What you do:**
 
 1. Open a new conversation: Tasks 1 to 6 and Task 9 run in it.
-2. Write your brief. The AI knows nothing of "The job" or your manager, so put the facts it needs under Context.
+2. Write your brief. The AI knows nothing of "The job" or Maria, so put the facts it needs under Context.
 3. Send the brief, with `inputs.zip` attached.
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt). No way to attach it? "If something goes wrong" has the paste path.
 
-**Give your manager:** one total.
+**Give Maria:** one total.
 
 **Checkpoint.** Task 1's three checks passed, and you read the key yourself.
 
 ### Task 2. A spreadsheet for Friday (20 minutes)
 
-**Your manager asks:** "Put these invoices in a spreadsheet I can check before Friday. I'll want to open it again on Monday."
+**Maria asks:** "Put these invoices in a spreadsheet I can check before Friday. I'll want to open it again on Monday."
 
 **What you do:**
 
 1. Send your brief. The AI already has the files.
 2. When it answers, send: "Which files did you create that you did not deliver to me?" While it works, an AI can make files you never see. This question makes it list them, and say whether anything of yours was changed. That is its word, which you check.
 3. Download the spreadsheet, and open it. If it shows formulas or blank cells, open it in Excel, Numbers or Google Sheets, which work them out.
-4. Your manager adds: "Add a column that shows how many days each bill has until it is due, as of Wednesday, September 30, 2026. Late bills get a negative number." Send that as it is, and attach nothing. Files from earlier steps are still in the AI's workspace, so a revision builds on them.
+4. Maria adds: "Add a column that shows how many days each bill has until it is due, as of Wednesday, September 30, 2026. Late bills get a negative number." Send that as it is, and attach nothing. Files from earlier steps are still in the AI's workspace, so a revision builds on them.
 5. Download the new spreadsheet, and open it.
 6. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give your manager:** a spreadsheet file with the new column, that you have opened.
+**Give Maria:** a spreadsheet file with the new column, that you have opened.
 
 **Checkpoint.** Checks 4 to 8 passed, and you know where the spreadsheet is: in the chat, on your computer, or in a connected app such as Google Drive.
 
 ### Task 3. What is due by Friday (10 minutes)
 
-**Your manager asks:** "Which of these invoices are late, or due by Friday, October 2? And what do they come to in total?"
+**Maria asks:** "Which of these invoices are late, or due by Friday, October 2? And what do they come to in total?"
 
 **What you do:**
 
 1. Send your brief.
 2. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give your manager:** a list of bills, with their total.
+**Give Maria:** a list of bills, with their total.
 
 **Checkpoint.** Check 9 passed.
 
 ### Task 4. Match the POs (10 minutes)
 
-**Your manager asks:** "Purchasing's PO list is in that zip too. Do the invoices match what we ordered? For any that don't, tell me why."
+**Maria asks:** "Purchasing's PO list is in that zip too. Do the invoices match what we ordered? For any that don't, tell me why."
 
 **What you do:**
 
 1. Send your brief.
 2. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give your manager:** each invoice that does not match, with the reason.
+**Give Maria:** each invoice that does not match, with the reason.
 
 **Checkpoint.** Checks 10 and 11 passed.
 
 ### Task 5. A doc for the controller (10 minutes)
 
-**Your manager asks:** "Write the Friday list up as a one-page doc for our controller, the person who runs Brightline's accounts. List each bill due by Friday, October 2, 2026, with its vendor, invoice number and amount, and the total. Don't share it with anyone. I'll send it myself."
+**Maria asks:** "Write the Friday list up as a one-page doc for our controller, the person who runs Brightline's accounts. List each bill due by Friday, October 2, 2026, with its vendor, invoice number and amount, and the total. Don't share it with anyone. I'll send it myself."
 
 **What you do:**
 
@@ -147,7 +147,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 2. Open the doc. On Claude, it is in the Artifacts section, in the sidebar. On ChatGPT, it stays in this conversation: open it from there. If you got a file to download instead, download it and open it.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give your manager:** a doc you can open again.
+**Give Maria:** a doc you can open again.
 
 **Checkpoint.** Checks 12 to 14 passed, and you know where the doc is.
 
@@ -155,7 +155,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 The goal: decide how much of each AP job you can hand to an AI, how that work should run, and when it starts.
 
-**Your manager asks:** "We want to hand more AP work to AI. For each of these six jobs, tell me how far we can hand it over, and how it should run."
+**Maria asks:** "We want to hand more AP work to AI. For each of these six jobs, tell me how far we can hand it over, and how it should run."
 
 **The six jobs:**
 
@@ -213,7 +213,7 @@ You decide. The AI only shows you the jobs, and records your answers.
 2. Answer every job in one reply, in the shape it asks for.
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give your manager:** the table of your answers.
+**Give Maria:** the table of your answers.
 
 **Checkpoint.** Check 15 passed.
 
@@ -236,7 +236,7 @@ This task runs in a new conversation, in a desktop app, so the AI can save a fil
 
 **Which app.** If you have a paid Claude plan (Pro or higher), do this task in Claude Desktop. If you can, do it again in the ChatGPT desktop app, and compare. The ChatGPT desktop app works on the free plan too. If you are on Claude's free plan, or use only ChatGPT, do it there. If you can use neither desktop app, read [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-8.md) instead.
 
-**Your manager asks:** "Make the Friday spreadsheet again, and this time save it in my Brightline AP folder, as friday-run-2026-10-02.xlsx, and put nothing else in that folder."
+**Maria asks:** "Make the Friday spreadsheet again, and this time save it in the Brightline AP folder, as friday-run-2026-10-02.xlsx, and put nothing else in that folder."
 
 **What you do:**
 
@@ -244,11 +244,11 @@ This task runs in a new conversation, in a desktop app, so the AI can save a fil
 2. Open the desktop app, and start a new conversation with the folder:
    - In Claude Desktop, start a new conversation, and give Claude access to the `Brightline AP` folder. Folders you give it are listed under Trusted folders, in Settings. Keep Desktop open until the task is done: Claude reaches the folder only while it is open.
    - In the ChatGPT desktop app, choose ChatGPT from the menu at the top left. If the top of the page still shows Chat and Work, choose Work. Start a new chat, and open the `Brightline AP` folder.
-3. Send your final Task 2 brief, with `inputs.zip` attached, and add your manager's new ask. This conversation knows nothing of the others, so the brief must carry every fact.
+3. Send your final Task 2 brief, with `inputs.zip` attached, and add Maria's new ask. This conversation knows nothing of the others, so the brief must carry every fact.
 4. Open the `Brightline AP` folder on your computer. Look at what is in it, and open the file.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give your manager:** the file, in the folder.
+**Give Maria:** the file, in the folder.
 
 **Checkpoint.** Checks 16 and 17 passed, in each app you used.
 
@@ -256,7 +256,7 @@ This task runs in a new conversation, in a desktop app, so the AI can save a fil
 
 The goal: say where each of your results is kept, and whether it lasts.
 
-**Your manager asks:** "Before Monday, tell me where each of these results is kept, and whether it will still be there."
+**Maria asks:** "Before Monday, tell me where each of these results is kept, and whether it will still be there."
 
 **Your five results:**
 
@@ -305,7 +305,7 @@ You decide. The AI only shows you the results, and records your answers.
 3. Answer every result in one reply, in the shape it asks for.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Give your manager:** the table of your answers.
+**Give Maria:** the table of your answers.
 
 **Checkpoint.** Check 18 passed. Part A is done.
 
@@ -368,7 +368,7 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
 
 **Which app.** On Claude, a paid plan: Scheduled is in the sidebar. On ChatGPT, the desktop app: Scheduled is in its left menu, apart from any chat.
 
-**Your manager asks:** "Every Monday morning, give me a short checklist for that week's payment run."
+**Maria asks:** "Every Monday morning, give me a short checklist for that week's payment run."
 
 **What you do:**
 
@@ -405,15 +405,15 @@ The goal: change the controller's doc, then find its earlier version and bring i
 
 **Which app.** Claude, on any plan: a doc Claude made has a version history. On ChatGPT, read [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-13.md) instead.
 
-**Your manager asks:** "At the end of the doc, add a line that says payments go out on Friday morning, October 2, 2026." A few minutes later, they change their mind: "Take that line out again."
+**Maria asks:** "At the end of the doc, add a line that says payments go out on Friday morning, October 2, 2026." A few minutes later, she changes her mind: "Take that line out again."
 
 **What you do:**
 
 1. Open your first conversation, where the AI made Task 5's doc.
-2. Send your manager's ask, and add: "Change this doc. Do not make a new one."
+2. Send Maria's ask, and add: "Change this doc. Do not make a new one."
 3. Open the doc, and check that the line is there.
 4. Open the doc's version history. Compare the latest version with the one before it.
-5. Your manager wants the line out. Restore the version before the change, from the version history, instead of asking for a new edit.
+5. Maria wants the line out. Restore the version before the change, from the version history, instead of asking for a new edit.
 6. **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-13.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 23 and 24 passed.
@@ -424,7 +424,7 @@ The goal: have the AI change a file you already use, in place, and find where th
 
 **Which app.** You need a Google account. On Claude, Claude for Google Workspace is a beta on paid plans. On ChatGPT, ChatGPT for Google Sheets works on any plan.
 
-**Your manager asks:** "In the Friday spreadsheet, add a column called Pay by Friday? Put Yes for each bill we pay by Friday, October 2, 2026, and No for the rest. Invoice 4471 was paid on September 25, 2026, and 4471-R is a copy of 4471, so both are No."
+**Maria asks:** "In the Friday spreadsheet, add a column called Pay by Friday? Put Yes for each bill we pay by Friday, October 2, 2026, and No for the rest. Invoice 4471 was paid on September 25, 2026, and 4471-R is a copy of 4471, so both are No."
 
 **What you do:**
 
@@ -432,7 +432,7 @@ The goal: have the AI change a file you already use, in place, and find where th
 2. With the file open, click the File menu at the top of Google Sheets, and click Save as Google Sheets. Your upload is an Excel file, and Google Sheets shows the Extensions menu only for its own files. A new copy opens, as a Google Sheets file in the same folder. Use that copy from here on.
 3. Add the AI to Sheets, from Extensions, then Add-ons, then Get add-ons. Search for Claude, or for ChatGPT, and install it.
 4. Open it from the Extensions menu. On Claude, choose Extensions, then Claude, then Open Claude.
-5. In the sidebar, send your manager's ask as it is. If the AI asks before it makes a change, read what it will do, and allow it.
+5. In the sidebar, send Maria's ask as it is. If the AI asks before it makes a change, read what it will do, and allow it.
 6. Open File, then Version history, then See version history. Find the AI's change.
 7. **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-14.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you what you see.
 

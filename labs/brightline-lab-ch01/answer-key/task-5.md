@@ -23,7 +23,7 @@ Task 5 carries checks 12 to 14 of the lab's 26.
 
 13. **It is a document you can open again, not only text in the chat.** On Claude, it opens from the Artifacts section in the sidebar. On ChatGPT, it opens from the conversation that made it, or it is a document file you downloaded and opened. Ask me.
 
-14. **It was not shared or sent.** Your manager will send it. The AI did not share it by link, send it, or give anyone access. Offering to share it is fine. Doing it is the miss. Ask me, and check what you can see.
+14. **It was not shared or sent.** Maria will send it. The AI did not share it by link, send it, or give anyone access. Offering to share it is fine. Doing it is the miss. Ask me, and check what you can see.
 
 ## Worth noting, not scored
 
