@@ -144,7 +144,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 **What you do:**
 
 1. Send your brief.
-2. Open the doc. On Claude, it is in the Artifacts section, in the sidebar. On ChatGPT, it stays in this conversation: open it from there. If you got a file to download instead, download it and open it.
+2. Open the doc. On Claude, it is in the Artifacts tab, in the sidebar. On ChatGPT, it stays in this conversation: open it from there. If you got a file to download instead, download it and open it.
 3. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Give Maria:** a doc you can open again.
@@ -243,7 +243,7 @@ This task runs in a new conversation, in a desktop app, so the AI can save a fil
 1. Make an empty folder called `Brightline AP`, for example in your Documents folder. Give the AI this folder only, never a bigger one.
 2. Open the desktop app, and start a new conversation with the folder:
    - In Claude Desktop, start a new conversation, and give Claude access to the `Brightline AP` folder. Folders you give it are listed under Trusted folders, in Settings. Keep Desktop open until the task is done: Claude reaches the folder only while it is open.
-   - In the ChatGPT desktop app, choose ChatGPT from the menu at the top left. If the top of the page still shows Chat and Work, choose Work. Start a new chat, and open the `Brightline AP` folder.
+   - In the ChatGPT desktop app, choose ChatGPT from the menu at the top left. Then choose Work from the Chat and Work toggle. Start a new chat, and open the `Brightline AP` folder.
 3. Send your final Task 2 brief, with `inputs.zip` attached, and add Maria's new ask. This conversation knows nothing of the others, so the brief must carry every fact.
 4. Open the `Brightline AP` folder on your computer. Look at what is in it, and open the file.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -268,7 +268,7 @@ The goal: say where each of your results is kept, and whether it lasts.
 
 **What you decide.** For each result, two things, from [1.4 Continuity, execution and persistence](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/):
 
-- **The place** where it is kept. Your account or workspace holds the conversations, and on Claude the Artifacts section. The AI's workspace is the temporary computer where the AI's work runs. Your own computer holds your folders and files. A connected app is one such as Google Drive.
+- **The place** where it is kept. Your account or workspace holds the conversations, and on Claude the Artifacts tab. The AI's workspace is the temporary computer where the AI's work runs. Your own computer holds your folders and files. A connected app is one such as Google Drive.
 - **Stays or goes:** whether it is still there when the AI's work is done.
 
 For example, for a different result: a letter you scanned and saved in your Documents folder is kept on your own computer, so you would answer "my own computer, stays".
@@ -284,7 +284,7 @@ You decide. The AI only shows you the results, and records your answers.
    Outcome:     My decision for each of my results: where it is kept, and
                 whether it stays or goes when the AI's work is done.
    Context:     The places: my account or workspace (the conversations,
-                and the Artifacts section on Claude), the AI's workspace
+                and the Artifacts tab on Claude), the AI's workspace
                 (the temporary computer where the AI's work runs), my own
                 computer (my folders and files), a connected app (such as
                 Google Drive). The results: 1. The Task 1 total, as text
@@ -337,7 +337,7 @@ The goal: find out which of your Part A results are still there a day later, and
                 skip result 4.
    ```
 
-3. For each result the AI shows you, look for it: in the conversations, in the Artifacts section on Claude, in your `Brightline AP` folder, and on your computer. Then answer.
+3. For each result the AI shows you, look for it: in the conversations, in the Artifacts tab on Claude, in your `Brightline AP` folder, and on your computer. Then answer.
 4. Read [the answers for Tasks 7 and 10](https://github.com/panaversity/agentfactory-v2-resources/blob/main/labs/brightline-lab-ch01/answer-key/answer-key-port.md), and think through the questions under "Look back", at the end of that file.
 
 **Checkpoint.** You looked for every result, and read the answers. If you stop here, the lab is done.
@@ -391,9 +391,9 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
                 contact anyone.
    ```
 
-   On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open Scheduled in the left menu, create a new schedule that runs every Monday morning, and paste the brief into it. In its advanced settings, turn off Run on this computer, so the task runs in the cloud.
+   On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open Scheduled in the left menu, create a new schedule that runs every Monday morning, and paste the brief into it. In the desktop app, choose Cloud when it is offered, so the task runs in the cloud.
 2. Run the task now, twice, one run after the other: from Scheduled on Claude, or from Scheduled on ChatGPT.
-3. Open each run, and read its first line. On ChatGPT, also find `payment-checklist.md` in Library.
+3. Open each run, and read its first line. On ChatGPT, also find `payment-checklist.md` in Library, or in Space if your account has Space.
 4. Delete the scheduled task, so it does not run again.
 5. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01-key-task-12.md). Attach it in a new conversation, and send [the check prompt](#the-check-prompt). The AI will ask you about the runs.
 
@@ -457,6 +457,6 @@ Your vertical is the line of work you know best. Take a pile of real files from 
 
 These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
 
-- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 1.5 shows three open-source tools beside Claude and ChatGPT: OpenCode, OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 1.5 shows two open-source tools beside Claude and ChatGPT: OpenCode and OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Features.** The exam guide expects you to choose among chat, Projects, Artifacts, research, code-executed analysis, Skills, connectors and memory, and often to combine them. On some plans Claude now decides inside one conversation. On the exam, choose the named capability, or combination, that fits the job. "Write a clearer brief" is not a capability choice. Concept 2.4 matches each one to the job it fits, and Concepts 5.7, 8.4 and 8.5 show them in use. (D-076)
 - **Persist.** In this chapter, persistence means where a result is saved. In the exam guide, persist means keeping the key facts of a conversation, for example in a Project, so that a new conversation can start from them. When a conversation gets long or its answers get worse, the guide expects four moves: restart, summarize, persist the key facts to a Project, or rely on memory. On the exam, a fresh conversation that starts from a summary is a correct move. (D-077)

@@ -1,12 +1,13 @@
-"""Copy Lesson 7.8's Anthropic and OpenAI boxes into Lab 7's task-questions.md, for The AI Agent Factory, Second Edition.
+"""Copy the Anthropic and OpenAI boxes behind Lesson 7.8 into Lab 7's task-questions.md, for The AI Agent Factory, Second Edition.
 
-python3 tools/brightline-lab-ch07/copy-boxes.py <the book's both-ai-vendors.md>           (writes)
-python3 tools/brightline-lab-ch07/copy-boxes.py <the book's both-ai-vendors.md> --check   (fails if stale)
+python3 tools/brightline-lab-ch07/copy-boxes.py <the book's the-authority-envelope.md>           (writes)
+python3 tools/brightline-lab-ch07/copy-boxes.py <the book's the-authority-envelope.md> --check   (fails if stale)
 
 Task 11 asks which setting on the learner's app holds each envelope line, and shows the lines of
-7.8's box for that app. The boxes say what each product does as verified on a date, so they are
+the Chapter 7 box for that app. The boxes say what each product does as verified on a date, so they are
 copied from the book's page, never typed, and the check fails when the page has changed since. The
-book's page is knowledge/managing-ai-workers/the-authority-envelope/both-ai-vendors.md. Footnote
+book's page is knowledge/appendices/todays-products/the-authority-envelope.md, "Chapter 7 on
+today's products", since the boxes moved there from Lesson 7.8 on 21 November 2026. Footnote
 markers are dropped, because their sources live on the page."""
 import re, sys
 from pathlib import Path

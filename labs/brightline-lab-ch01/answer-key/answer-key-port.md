@@ -8,8 +8,8 @@ Did the other AI vendor give the same answers? Ideally your words did not change
 
 Three more things to notice, from [section 1.5](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) of Chapter 1:
 
-- **Where the work started.** In Claude and in ChatGPT, it starts in one conversation. If your ChatGPT app still shows Chat and Work, you pick Work. Did you have to?
-- **Where Task 5's doc landed.** On Claude, in the Artifacts section. On ChatGPT, in the conversation that made it, or as a file to download.
+- **Where the work started.** In Claude, it starts in one conversation. In ChatGPT, you choose Work from the Chat and Work toggle. Did you notice the choice?
+- **Where Task 5's doc landed.** On Claude, in the Artifacts tab. On ChatGPT, in the conversation that made it, or as a file to download.
 - **What came back.** A finished file, a doc, or only text in the chat?
 
 What changed in the port belongs to the runtime. What stayed the same is your intent: what you asked for. That part is yours.
@@ -22,7 +22,7 @@ It is not scored: any result is a finding.
 | --- | --- | --- |
 | Task 1's total | the conversation that made it | Text the AI wrote is part of the conversation, and the conversation is saved to your account. |
 | Task 2's spreadsheet | a file card in the chat that made it, and on your computer if you downloaded it | A plain file stays in the chat that delivered it. |
-| Task 5's doc | the Artifacts section on Claude, or the conversation that made it on ChatGPT | On Claude, artifacts from every chat are collected in one place. On ChatGPT, the doc stays in the chat that made it. |
+| Task 5's doc | the Artifacts tab on Claude, or the conversation that made it on ChatGPT | On Claude, artifacts from every chat are collected in one place. On ChatGPT, the doc stays in the chat that made it. |
 | Task 8's file | your `Brightline AP` folder | The desktop app wrote it to your own computer. |
 | A file the AI made and never handed over | gone | It lived in the AI's workspace, which is wiped when the session ends. |
 
