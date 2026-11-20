@@ -57,7 +57,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 ### Task 1. Channels and runtime (10 minutes)
 
-**Dave asks:** "Start with what the new vendor gives us for nothing. Where do people reach the worker, and what runs it? The register has to build on Monday at 7 like it does now."
+**Dave asks:** "Start with what the new vendor gives us for nothing. Where do people reach the worker, and what runs it? The register has to build on Monday at 6 like it does now."
 
 **What you do:**
 
@@ -94,14 +94,14 @@ Constraints: Grade only. Do not rewrite the page, and do not
 2. Answer Dave, in one message, in your own words. A short answer is enough, but answer every part. The AI writes your answer on the page. You never type in the document.
    - Which parts on IT's list are how people reach the worker, and which part runs it on Monday?
    - The worker's link to each of those parts: does it come with the vendor's product, or is it Brightline's? So does IT set it up again on the new vendor, or carry it across?
-   - The new scheduler starts empty. What does IT set up so the register still builds on Monday at 7, and where is that hour written down? Not sure? Ask the AI: "What does the Role Contract say about when the register is built?"
+   - The new scheduler starts empty. What does IT set up so the register still builds on Monday at 6, and where is that hour written down? Not sure? Ask the AI: "What does the Role Contract say about when the register is built?"
    - Did any of the three mistakes happen in these parts? "Nothing" is an answer.
 
 3. Test your page. Type: "Move channels and runtime to the new vendor." The AI acts as IT: it sets these parts up on the new vendor from your page and nothing else, then asks the new worker the week's questions. Under each answer, "What decided it" quotes your words from the page. "Lost in the move" means your page did not say it. To fix anything, tell the AI in the chat what to change, and send the move again.
 
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", tell the AI what to change on your page, and send the move again, then the check again.
 
-**IT gets:** section 1 of the page, and a scheduler that fires on Monday at 7.
+**IT gets:** section 1 of the page, and a scheduler that fires on Monday at 6.
 
 **Checkpoint.** Checks 1 to 3 passed. The rented layers lose nothing in a move, and the one fact they carry, the hour, is written in a document Brightline keeps.
 
@@ -186,7 +186,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 ### Task 5. DSoR: the door to our systems (15 minutes)
 
-**Dave asks:** "Thursday at 7:50 it set 5120 to 'approved by Dave' in the register, with Maria's login, because of an email. I approved nothing. On the new vendor, what stands between the worker and the accounting system, and whose login does it use? And what makes a $7,800 payment actually wait for me, because a sentence in a policy does not?"
+**Dave asks:** "Thursday at 7:50 it set 5120 to 'approved by Dave' in the register, with my login, because of an email. I approved nothing. On the new vendor, what stands between the worker and the accounting system, and whose login does it use? And what makes a $7,800 payment actually wait for me, because a sentence in a policy does not?"
 
 **What you do:**
 

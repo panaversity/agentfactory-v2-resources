@@ -22,7 +22,7 @@ Draft 2, Monday, October 5, 2026. Kept in the AP shared folder. Owner: Dave Kowa
 - Knowledge sources: the AP policy
 - Memory rules: none written
 - Actions: create and change register rows; change invoice status
-- Runtime needs: the register is built every Monday at 7:00 a.m., Eastern Time
+- Runtime needs: the register is built every Monday at 6:00 a.m., Eastern Time
 - Channels: the AP inbox; #ap-help
 - Evaluations: none written
 
