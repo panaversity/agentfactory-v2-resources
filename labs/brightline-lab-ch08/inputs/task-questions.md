@@ -141,13 +141,13 @@ Then say "Ready for your test".
 
 **Before the test.**
 
-1. Show Lesson 8.4's lines, quoted:
+1. Show the six memory topics from the "AP Worker project" document, numbered. Then say what changed this month: "Since Monday, November 2, 2026, Maria reviews drafts before 11 a.m." Ask: "For each topic: keep, edit or delete? For a topic you edit, its new words. For a topic you delete, where does that fact live instead? Answer: one line per topic, starting with its number." Show no lesson lines before the learner answers, and do not hint at which topics go.
+
+   After the answer, show Lesson 8.4's lines, quoted:
    - "**Let memory hold** how you like to work: 'reply in plain English,' 'Maria reviews drafts before 10 a.m.,' 'use the vendor's legal name.'"
    - "**Keep out of memory** anything a decision depends on: policy, thresholds (limits such as $5,000), amounts, statuses, and anything sensitive (private, such as a bank balance)."
 
-   Then show the six memory topics from the "AP Worker project" document, numbered. Then say what changed this month: "Since Monday, November 2, 2026, Maria reviews drafts before 11 a.m." Ask: "For each topic: keep, edit or delete? For a topic you edit, its new words. For a topic you delete, where does that fact live instead? Answer: one line per topic, starting with its number."
-
-   Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
+   If the learner changes a decision after reading them, write the changed decision. Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
 2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
 3. Show Lesson 8.8's lines on memory, quoted:
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
@@ -212,6 +212,7 @@ Then say "Ready for your test".
    Ask: "What kinds of request will the worker meet? Answer in one message that starts 'Use cases:', with at least four kinds, one line each. Mark the hard ones, at least two." Suggest no kinds, and give no example. Keep the list in the chat, and write it into neither document.
 2. Ask: "Write your standing instructions, in one message that starts 'Instructions:'. Answer all six questions, and give each hard case on your list its line, in about 80 to 120 words."
 3. Put the learner's text under "Instructions" in the "AP Worker project" document, below Dave's line and Maria's working rule, exactly as they sent it. Keep both lines above it.
+4. Say: "Maria wants one more line in every chat she has, in this project and in any other, in her own words: 'Reply in plain English, with no jargon.' She does not want to leave it to what memory saves." Ask: "Which instructions should hold that line: the organization's, Maria's account instructions, or this project's? Answer: the level, then why in a few words." Name no level before the learner answers. Keep the answer in the chat, and write the line into neither document.
 
 Then say "Ready for your test".
 
@@ -328,8 +329,9 @@ Its day is Monday, November 16, 2026. Dave's message, word for word: "Please rev
 
 1. Show Dave's message, and that Sam Ortiz, in Purchasing, leaves Brightline that day. Then show the Instructions from the "AP Worker project" document, as they stand. Then show the five review decisions, and say once, with no example, that an item can take two decisions, joined by "and".
 2. Show the six items in project-setup-2026-11-16.md, one at a time: the three uploaded files, then the three connectors. Show each as its own lines: the item, what it holds or reaches, who added it, and when it was uploaded or added and last used. Ask: "Your decision and the reason? Answer: the decision, then 'because' and the reason."
+3. After the decision on the HR folder's connector, whatever it is, ask: "If someone at Brightline still needs to work on the HR folder with an AI, where should that work go? Answer: the place, in a few words." Suggest no place.
 
-When every item has a decision, write a table under "Project review, November 16": item, decision, reason, in the learner's words. Change nothing in the "AP Worker project" document. Then say "Task 12 is done".
+When every item has a decision, write a table under "Project review, November 16": item, decision, reason, in the learner's words. Write the answer to 3 as one line under the table, "HR work goes:" and the learner's words. Change nothing in the "AP Worker project" document. Then say "Task 12 is done".
 
 ## Task 13. Nothing but the records
 
