@@ -22,7 +22,7 @@ This folder has everything for the lab in Case 3, Nisha's Firm. The lab page is 
 | `data-pack/worker-setup-prompt.md` | Part 5. The text that turns an ordinary chat into a stand-in for the firm's worker. |
 | `data-pack/wednesday-draft.md` | Part 3. The draft Nisha read on Wednesday. |
 | `data-pack/bank-lines.csv` | Parts 4a and 4b. Four weeks of the bank's record. |
-| `data-pack/ledger-lines.csv` | Parts 4a and 4b. Four weeks of Lakeshore's ledger. |
+| `data-pack/ledger-lines.csv` | Parts 4a and 4b. Four weeks of Northgate's ledger. |
 
 ## Upload only the data pack
 
@@ -31,7 +31,7 @@ In Part 4a you upload three files to Claude and to ChatGPT: `friday-file.md`, `b
 ## How to read the two CSV files
 
 - `bank-lines.csv` is the bank's record. Each line has a date, a description, an amount and the balance after it. Money in is positive. Money out is negative.
-- `ledger-lines.csv` is Lakeshore's own record. Each line also has a reference, such as P-890 for a payment or R-409 for a receipt.
+- `ledger-lines.csv` is Northgate's own record. Each line also has a reference, such as P-890 for a payment or R-409 for a receipt.
 - The `week` column says which Friday file a line belongs to. Week 4 is the week in the story.
 - Both files start from the same opening balance of $185,000.
 
