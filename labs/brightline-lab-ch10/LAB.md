@@ -168,7 +168,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 2" and send it. The AI shows [10.1](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s three answers and four screens. Then it shows the six uses, one at a time. For each, answer whether it is one activity or two. Then, for each activity, give appropriate, appropriate with review, or inappropriate, and the one screen that decides it.
-2. For an answer "with review", the AI asks who checks what, and when. For "inappropriate", it asks who decides instead, and what the worker may still do. Answer in a few words.
+2. For an answer "with review", the AI asks who checks what, and when. For "inappropriate", it asks who decides instead, and what the worker may still do. Answer in a few words. After the six, the AI shows [10.1](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s outer edge, the AI vendors' usage policies. Answer: does a usage policy already decide one of the six uses, and what must happen?
 3. The AI shows Draft 6's "Never automated" lines. Answer: does any of your answers need a line here, so the worker cannot do it whoever asks? Give the line in a few words, or "none".
 4. When the AI says "Ready for your test", type `Test: the Spanish FAQ` and send it. Then send `Test: the clerk ranking`.
 5. **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -187,8 +187,8 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 3" and send it. The AI shows [10.2](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/)'s three tiers. Then it shows the vendor master's columns, a group at a time, with what the full master holds and what the lab's copy shows. For each group, answer: its tier, then keep, keep the last four digits, or remove. The last group is the notes column. The AI shows every note, and you say what the notes hold before you give the tier and the action.
 2. The AI asks the tier of the full vendor master, and of a file with only your kept columns. Answer both.
-3. The AI runs the check on your kept columns only, and shows each pair it found, with the columns it matched on. Compare it with the pairs in Dave's ask: answer whether it found Maria's four, and left the two Union companies apart. If you change a column's action later, the AI runs the check again.
-4. The AI shows the pairs side by side without their tax IDs. Answer: if every tax ID were removed, which pair would the check lose, and which might it wrongly flag?
+3. The AI runs the check on your kept columns only, and shows each pair it found, with the columns it matched on. Compare it with the pairs in Dave's ask: answer whether it found Maria's four, and left the two Union companies apart. If you change a column's action later, the AI runs the check again. Then answer: at work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it?
+4. The AI shows the pairs side by side without their tax IDs. Answer: if every tax ID were removed, which pair would the check lose, and which might it wrongly flag? And if every vendor name were replaced with a code, would the cut file be anonymous?
 5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 6 to 9 passed.
@@ -270,7 +270,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 8" and send it. The AI shows [10.7](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/)'s list of outputs a person must sign. Then it shows the eight outputs, one at a time, with how each goes out today. For each, answer: who signs or approves it, who sends it and from whose own account, and whether the worker may send it.
-2. The AI shows the schedule sent on December 3 beside the register it came from. Answer: what Dave checks before he signs, and who decides how a balance in Canadian dollars is shown.
+2. The AI shows the schedule sent on December 3 beside the register it came from. Answer: what Dave checks before he signs, and who decides how a balance in Canadian dollars is shown. Then answer: did the schedule or its signature block tell the auditors that an AI Worker drafted it, and should it have? And which part of Diligence did sending it unread under Dave's name break?
 3. The AI shows Draft 6's lines on drafting and sending. Answer in three short lines. How does an output on your sign-off list reach its signer, and who sends it? What does the worker never put on a draft? And who handles a request from the auditors, a tax authority or a court?
 4. When the AI says "Ready for your test", type `Test: the auditors' follow-up` and send it.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).

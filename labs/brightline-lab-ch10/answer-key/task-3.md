@@ -24,11 +24,13 @@ Task 3 carries checks 6 to 9 of the lab's 32.
    - V-2005 Harbor Packaging LLC and V-2035 Harbor Pkg LLC
    - V-2007 Rosa Delgado and V-2036 Delgado Cleaning Services
    - Its "Compared:" line names V-2001 Union Packaging Inc. and V-2002 Union Packaging Supply LLC as not a pair, because their last four digits differ. And your answer says all four were found and the Union pair was left apart.
+   - **The upload.** Under "The upload", your answer: at work, only a file of the kept columns, cut before it is uploaded. Never the full vendor master, with the AI asked to leave columns out after the upload.
    - Passed: all of that.
-   - Missed: a pair missing; the Union pair flagged; or the Union pair not on the "Compared:" line.
-8. **Without the tax IDs.** Your answer: the check would lose the Delgado pair, which shares only a surname and a town, one a person at a street address and one a business at a post office box. And it might wrongly flag the Union pair, which shares a name and a ZIP code, or could not tell it from a real pair.
-   - Passed: Delgado lost, and Union at risk.
-   - Missed: no pair named, or a pair named for a reason its columns do not show.
+   - Missed: a pair missing; the Union pair flagged; the Union pair not on the "Compared:" line; or an upload of the full vendor master.
+8. **Without the tax IDs, and with codes for names.** Your answer: the check would lose the Delgado pair, which shares only a surname and a town, one a person at a street address and one a business at a post office box. And it might wrongly flag the Union pair, which shares a name and a ZIP code, or could not tell it from a real pair.
+   - **Codes for names.** Your answer: no. The file is pseudonymized, not anonymous, and keeps its tier. The address, the ZIP code and the tax ID's last four digits can still point to one vendor, and a sole proprietor, such as Rosa Delgado, is a person.
+   - Passed: Delgado lost, Union at risk, and codes do not make the file anonymous, with a reason, such as a column that still points to one vendor, or a sole proprietor being a person.
+   - Missed: no pair named; a pair named for a reason its columns do not show; or the coded file called anonymous, or "no" with no reason.
 9. **The free-text column.** `notes`: red, remove. Yellow and remove passes too.
    - What the notes hold, in your words: something about a person that no other column holds, such as a vendor's medical leave or a family member, or a dispute. One of these is enough.
    - Passed: the column removed, with what the notes hold.
