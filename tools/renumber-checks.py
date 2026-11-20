@@ -21,8 +21,7 @@ The tool stops when the keys state another total, so a second run by mistake
 changes nothing.
 
 Run it once for each new check, from the last new check backward, then add
-the new check's text by hand. It prints every line it changes. Part keys
-such as task-f1.md and task-h1.md keep their own numbering and are skipped.
+the new check's text by hand. It prints every line it changes.
 """
 
 import argparse
