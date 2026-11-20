@@ -47,7 +47,7 @@ Who or what reads the result next decides its format (Lesson 5.7). Maria checks 
 - For Sam, naming the skill that makes the file, or not.
 - A CSV for the import, when its columns are fixed.
 - Another kind of artifact for the meeting, such as a dashboard, when your reason is that the team reads it together.
-- Anything the run did: this key scores your Format and your five lines.
+- Anything the run did: this key scores your Format and your seven lines.
 
 ## Take it to work
 

@@ -29,7 +29,7 @@ Task 7 carries checks 14 to 18 of the lab's 34.
     - 3: change approach. Two rounds of new lines changed nothing, and the Context already names the rule, so the cause is not in the brief. Have code find the duplicate and work out the total from the invoice list, or check the two copies of BO-22871 yourself.
     - Passed: all three, each with a reason.
     - Missed: a line with no reason, or with another choice. For example, 2 iterated again in the same chat, or 3 given a third new line in the brief.
-17. **The line read two ways.** Your answer for the first of the two more runs:
+17. **The line read two ways.** Your answer for the first of the two more runs, the one you sent before the AI showed 5.5's lines. The question did not say what kind of gap it was, so finding it is the check:
     - the line: "Pay everything due this week"
     - its two readings: invoices due by this Friday, October 23, or every invoice due before the next run, on Friday, October 30
     - the part: the outcome, with the line written the way Dave meant it, such as "Pay covers invoices due on or before October 30"

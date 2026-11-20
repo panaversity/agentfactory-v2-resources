@@ -149,12 +149,12 @@ Put the line in the Doc. Change no other line. Say "Ready for your run".
    3. The brief's Context names policy version 3, which says to hold the later copy of a duplicate. Two rounds of new Context lines changed nothing. The run still marks both copies of BO-22871 PAY, so its total is $412.75 higher than Maria's.
 
    Ask: "For each run: iterate, restart or change approach, and why? Answer: three lines, each starting with its number."
-9. Show 5.5's lines on testing each line and on content rules, below, quoted. Then show two more runs of a payment-run brief, as their own lines, one at a time:
+9. Show two more runs of a payment-run brief, as their own lines, one at a time:
 
    1. That brief's Outcome says "Pay everything due this week." Its run proposed SP-1188, due Thursday, October 22, for payment. It marked SP-1201, due Thursday, October 29, NOT_DUE. The next run is Friday, October 30.
 
-      Ask: "Which line was read two ways? Give its two readings, and the part to change, from 5.5's table, with the line written the way Dave meant it. A few lines."
-   2. That brief's Constraints say only "Read and draft freely. Change nothing and send nothing." Its note to Maria in the chat says "Dave will approve 4519 on Thursday." Dave has not decided yet.
+      Ask: "Which line of this brief failed, and what went wrong with it? Then name the part to change, from 5.5's table, with the line written the way Dave meant it. A few lines." Do not say what kind of gap it is.
+   2. When the learner has answered, show 5.5's lines on testing each line and on content rules, below, quoted. Then show the second run. That brief's Constraints say only "Read and draft freely. Change nothing and send nothing." Its note to Maria in the chat says "Dave will approve 4519 on Thursday." Dave has not decided yet.
 
       Ask: "Which part had a line missing, and what would the line say? A line."
 
@@ -173,13 +173,14 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 **After the run.**
 
-3. Leave the run's stop unanswered. Show 5.4's lines on follow-ups and on size, below, quoted. Then show three asks that could come after this week's exceptions list, as their own lines:
+3. Leave the run's stop unanswered. Show three asks that could come after this week's exceptions list, as their own lines:
 
    1. Maria: "Add each exception's vendor phone number, from the vendor records."
    2. Dave: "Write my memo now."
    3. Dave: "Before the audit, check every invoice paid since January 1, about 200, against its vendor record's terms."
 
-   Ask: "For each ask: a follow-up in this chat, a new stage after a stop, or split into batches? And why, in one line. Answer: three lines, each starting with its number." Then say "Task 8 is done".
+   Ask: "For each ask: a follow-up in this chat, a new stage after a stop, or split into batches? And why, in one line. Answer: three lines, each starting with its number." Show nothing from the lessons before the answer.
+4. When the learner has answered, show 5.4's lines on follow-ups and on size, below, quoted, so the learner can compare. Then say "Task 8 is done".
 
 ## Task 9. Ideas for the AP inbox
 
@@ -202,8 +203,8 @@ Add them under that part, after its lines, or in place of the line the learner n
                 payment because of where an invoice was sent.
    ```
 
-   Then show its run, in one line: "Five rows. Each tells vendors, in other words, to send invoices only to the AP inbox." Then show 5.6's Brainstorming row and 5.5's last row, below. Ask: "Why did this brief bring back one idea five times? Which part would you change, and how? A line."
-2. Show 5.1's lines on a role, below, quoted. Ask: "Maria says a better role line would fix it: 'You are a creative AP consultant.' Would it, and why? A line."
+   Then show its run, in one line: "Five rows. Each tells vendors, in other words, to send invoices only to the AP inbox." Ask: "Why did this brief bring back one idea five times? Which part would you change, and how? A line." Show no table before the answer.
+2. When the learner has answered, show 5.6's Brainstorming row and 5.5's last row, below, so the learner can compare. Then show 5.1's lines on a role, below, quoted. Ask: "Maria says a better role line would fix it: 'You are a creative AP consultant.' Would it, and why? A line."
 
 Then say "Task 9 is done".
 
