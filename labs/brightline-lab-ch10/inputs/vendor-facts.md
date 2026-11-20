@@ -16,7 +16,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 - Retention: workspace admins on Business and Enterprise control how long data is kept.
 - Memory: Business workspace owners can turn memory and personalization off for the whole workspace. On Enterprise, admins control memory through workspace and role settings.
 
-## 2. Connectors, apps and their actions (verified 8 October 2026)
+## 2. Connectors, apps and their actions (verified 8 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - On Team and Enterprise, an Owner must enable a connector before members can use it.
@@ -28,7 +28,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 
 **Both:** the documented controls work for each tool or action, not for each recipient.
 
-## 3. Work accounts and personal accounts (verified 12 October 2026)
+## 3. Work accounts and personal accounts (verified 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Team and Enterprise offer single sign-on, so staff sign in with their work account.
@@ -42,7 +42,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 
 **Both:** these domain settings do not reach an account made with a personal email address.
 
-## 4. Records of what happened (verified 8 and 12 October 2026)
+## 4. Records of what happened (verified 8 and 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Audit logs are for Enterprise only. Owners can export the audit log for the past 180 days. It records events such as file uploads and deleted conversations, but not chat titles or content.
@@ -53,7 +53,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 
 **Both:** neither offers these logs on Claude Team or ChatGPT Business.
 
-## 5. Where the company's own AI policy shows (verified 12 October 2026)
+## 5. Where the company's own AI policy shows (verified 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Owners on Team and Enterprise can write organization instructions, which Claude follows in every conversation. Only Owners and the Primary Owner can see them. In rare cases, when instructions directly contradict each other, behavior may vary.
@@ -61,7 +61,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 **ChatGPT**
 - On Enterprise, a workspace can set its own AI policy. ChatGPT shows it to users in a pop-up every 30 days, and again when the policy changes.
 
-## 6. Who switches features on (verified 12 October 2026)
+## 6. Who switches features on (verified 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Of the standard roles, only Owners and the Primary Owner can turn on capabilities, such as web search, and integrations.

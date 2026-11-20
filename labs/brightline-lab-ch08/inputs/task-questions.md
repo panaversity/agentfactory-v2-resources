@@ -152,7 +152,7 @@ Then say "Ready for your test".
 3. Show these lines on memory, quoted, from Lesson 8.8 and its appendix page "Chapter 8 on today's products":
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
    - Claude's new kind of project: "In it, a project is one conversation, and its memory is a set of files that Claude writes as it works. You read, edit and delete them under Project settings, Memory."
-   - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat."
+   - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat or, where settings allow, move the chat to another project."
    - The comparison: "Each Claude project has its own memory. In a classic project, Claude also uses your memory from chats outside projects. To stop that, turn off Use account memory on the project's page. The new kind, in beta on some paid plans, keeps its memory as files. You read, edit and delete them in its settings. A ChatGPT project uses your saved memories, unless you choose project-only memory."
    - The advice: "For an AI Worker's project on Claude, turn off account memory in a classic project, and read the memory files in the new kind. On ChatGPT, choose project-only memory."
 
