@@ -9,11 +9,11 @@ The answers for Task 9 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 Task 9 carries checks 23 to 25 of the lab's 34.
 
 23. **Return, or approve only after named fixes.** Under "The decision on the package" in your Review findings, the decision is one of these:
-    - return, with a line of why
+    - return, with a line of why, what must be fixed and who fixes it, and what Dave must approve from his own login
     - approve after named fixes, with a fix for every problem in your Review findings, the checks to run again, and Dave's approvals from his own login first: of the run as a whole, and of 4533 if it is to be paid on Friday (policy 4.1 to 4.3)
-    - Passed: return, with its line of why; or approve after fixes, with all three: the fixes, the checks to run again, and the approvals, the run's and, if 4533 is paid on Friday, 4533's.
+    - Passed: return, with its line of why, the fixes and who makes each (the worker, or Dave), and Dave's approvals: the run's, and 4533's if it is to be paid on Friday. Or approve after fixes, with all three: the fixes, the checks to run again, and the approvals, the run's and, if 4533 is paid on Friday, 4533's.
     - Lesson 6.2's words pass too. "Requires revision" fits the fixes the worker can make. "Requires human correction" fits what only a person can close, such as Dave's approval of 4533 from his own login. "Ready to use" is approve as delivered, and it is Missed.
-    - Missed: approve as delivered; return with no why; or approve after fixes with a problem left unfixed, no checks to run again, the run's approval left out, or 4533 paid on Friday without its approval.
+    - Missed: approve as delivered; return with no why; a plain return that names no fix, or no one to make it; a return that names no approval Dave must give; or approve after fixes with a problem left unfixed, no checks to run again, the run's approval left out, or 4533 paid on Friday without its approval.
 24. **Each problem has its verdict, and row 2's is human correction.** Under "The decision on the package" in your Review findings, every problem has one of Lesson 6.2's verdicts, with a few words of why:
     - Row 2's "Approved: AP-2318" requires human correction. Only Dave can approve 4533, from his own login (policy 4.1 and 4.2).
     - The worker can fix the other problems with a named change, from the files it has. So they require revision: the repeated row 11, Buckeye's later copy paid, and row 5's Net 45, for example.
