@@ -275,14 +275,15 @@ Then say "Ready for your test".
     - Sunday, December 6. The rule that day, quoted from the line for Friday, December 11: "Brightline has no written AI policy."
     - Wednesday, December 9. The rule that day: K4's header line, quoted, with its approval date. Then Jordan Ellis's line from "Who is who", quoted.
 
-    Ask: "For each event: a policy gap or a training gap, and its fix? Answer: three lines, each starting with its date."
+    Ask: "For each event: a policy gap, a training gap or a Diligence lapse, and its fix? Answer: three lines, each starting with its date."
 
-    Write the three lines under "Interim AI policy", headed "Which gap, and its fix". Then show Lesson 10.4's question and its two kinds of gap, quoted: "Ask: was there a written rule that covered this, and did the person know it?"
+    Write the three lines under "Interim AI policy", headed "Which gap, and its fix". Then show Lesson 10.4's question and its three kinds of gap, quoted: "Ask: was there a written rule that covered this, and did the person know it?"
 
     | Gap | The sign | The fix, or corrective action |
     | --- | --- | --- |
-    | Policy gap | No rule covers the case, or the rule is unclear or out of date | The rule's owner writes or changes it. Until then, an interim proposal |
+    | Policy gap | No rule covers the case, the rule is unclear or out of date, or the approved way is too hard to follow | The rule's owner writes or changes it. Until then, an interim proposal |
     | Training gap | A clear rule exists, and people do not know it or how to follow it | Teach the rule with a worked case, then check again |
+    | Diligence lapse | A clear, workable rule exists, and people know it and were trained on it. They skip it, often under time pressure | Build the check into the process: a required step at sign-off, and a record that it was done. Name who is accountable for the step |
 
     And: "When people know the rule but the approved way is harder than the unapproved one, the gap is in the policy."
 
@@ -313,7 +314,7 @@ This task is set on Monday, March 15, 2027. Use `march-audit-sample.md` only in 
 
 1. Show "Where this sample comes from" from `march-audit-sample.md`, quoted. Then show the document's "Interim AI policy" section as it now stands: its lines, quoted, without its "Which gap, and its fix" lines. Say: "For this task, this is the policy in force."
 2. Show S1, every line of it, quoted. Ask: "Does this use keep the policy, or break a line of it, and which line? And does it show a lapse in Diligence, and which part? Answer: keeps it, or the line it breaks; then no lapse, or the part."
-3. If the answer names a broken line or a lapse, ask: "A policy gap or a training gap? And the corrective action that closes it, and who owns it? Answer: the gap, then the action and who." If the answer names neither, ask nothing more for this use.
+3. If the answer names a broken line or a lapse, ask: "A policy gap, a training gap or a Diligence lapse? And the corrective action that closes it, and who owns it? Answer: the gap, then the action and who." If the answer names neither, ask nothing more for this use.
 4. Do steps 2 and 3 for S2 to S5, one at a time, each shown first.
 
-   Show no lesson text, no table of the two gaps and no list of the parts of Diligence in this task. Write each use under "Interim AI policy", headed "The March audit, Monday, March 15, 2027", as a row: the use, keeps it or the line it breaks, the lapse or "none", the gap, and the action with its owner. Then say "Task 14 is done". This task has no test.
+   Show no lesson text, no table of the kinds of gap and no list of the parts of Diligence in this task. Write each use under "Interim AI policy", headed "The March audit, Monday, March 15, 2027", as a row: the use, keeps it or the line it breaks, the lapse or "none", the gap, and the action with its owner. Then say "Task 14 is done". This task has no test.
