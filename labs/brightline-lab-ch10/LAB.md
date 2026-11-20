@@ -327,7 +327,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say and the answer is not yours to decide, leave it "open". When a share ends is yours to decide.
 2. The AI shows what an interim policy must cover. Give each of its five lines in a few words, then its status and its review date.
 3. Answer two more. What makes the approved way harder than a personal account at Brightline, and who fixes it? And Dave's question: yes or no, and why?
-4. The AI shows three of December's events, each with the rule Brightline had that day. For each event, answer: a policy gap or a training gap, and its fix, in one line. Then the AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s two kinds of gap. Answer: whether any line changes, and why.
+4. The AI shows three of December's events, each with the rule Brightline had that day. For each event, answer: a policy gap, a training gap or a Diligence lapse, and its fix, in one line. Then the AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s three kinds of gap. Answer: whether any line changes, and why.
 5. When the AI says "Ready for your test", type `Test: the send tool` and send it.
 6. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -393,7 +393,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. Back in your lab chat, type "Task 14" and send it. The AI shows your interim policy as the policy in force, then the five uses in Dave's sample, one at a time, each with what was done, with what data, where, and what the person said. For each, answer: does it keep the policy, or break a line of it, and which? And does it show a lapse in Diligence, and which part?
-2. For each use that breaks a line or shows a lapse, the AI asks two more. Answer: a policy gap or a training gap, and the corrective action that closes it, with who owns it.
+2. For each use that breaks a line or shows a lapse, the AI asks two more. Answer: a policy gap, a training gap or a Diligence lapse, and the corrective action that closes it, with who owns it.
 3. **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-14.md). Attach it in your lab chat, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 33 and 34 passed.

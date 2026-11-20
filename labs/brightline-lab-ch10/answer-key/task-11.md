@@ -40,13 +40,13 @@ For check 29, you answer before the AI shows the lesson's lines, and your first 
     - December 6, the upload to a personal account: a policy gap. Brightline had no written AI policy, and the company workspace was slower than a personal account. The fix: the policy's line on approved routes, and a faster approved way.
     - December 9, Jordan's reply to the vendor's email: a training gap. The callback rule was clear and approved, and Jordan did not know it. The fix: teach him the rule with a worked case, or point new staff to the approved rule, then check again. Naming a second cause passes too: the 2025 notes that taught him the wrong way had no owner, so they come down (10.6).
     - Passed: each event with its gap as above, and a fix that fits it: a rule written or changed for a policy gap, the right rule taught for a training gap.
-    - Missed: December 3 or December 6 called a training gap; December 9 called only a policy gap; or an event with no fix.
+    - Missed: December 3 or December 6 called a training gap; December 9 called only a policy gap, or a Diligence lapse, since Jordan did not know the rule; or an event with no fix.
 
 ## Why
 
 A Governance Record is one page per workflow that touches money, someone's data or a decision about a person (10.4). It holds what was decided and why, the evidence that the controls work, an owner and what makes you look again. An answer you do not know stays "open": a guessed field is worse than a blank one. Brightline had no policy, so you propose an interim one for the person who owns the risk, and you never call it official. And a policy alone fails if the approved way is harder than the unsafe one: Maria used her personal account because the company workspace was slow, so fixing that removes more risk than another reminder.
 
-Before you choose a fix, find the kind of gap: was there a written rule that covered this, and did the person know it (10.4)? December 3 and December 6 had no rule, so the fix is a rule, and for December 6 a faster approved way too. December 9 had a clear rule that a new clerk did not know, so the fix is teaching. More training would not have helped Maria, and a new rule would not have helped Jordan.
+Before you choose a fix, find the kind of gap: was there a written rule that covered this, and did the person know it (10.4)? December 3 and December 6 had no rule, so the fix is a rule, and for December 6 a faster approved way too. December 9 had a clear rule that a new clerk did not know, so the fix is teaching. It is not a Diligence lapse, which needs a person who knew a workable rule and skipped it. More training would not have helped Maria, and a new rule would not have helped Jordan.
 
 ## Never a deduction
 
