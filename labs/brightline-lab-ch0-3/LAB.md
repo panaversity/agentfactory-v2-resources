@@ -64,7 +64,7 @@ This is our approved AP policy. For each line under Rules, quote the policy line
 
 Compare each rule with the line it quotes.
 
-**What you probably saw.** The $5,000 rule matches line 4.1. The bank-details rule says the opposite of line 5.1, and on the page it looked just as neat as the others. No line names Friday. Line 4.3 says only that the run is weekly. A neat page is only as right as its lines ([0.2.3](https://agentfactory.panaversity.org/how-ai-works/markdown/one-short-specification/)).
+**What you probably saw.** The $5,000 rule matches line 4.1. The bank-details rule says the opposite of line 5.1, and on the page it looked just as neat as the others. No line in the file names Friday. Line 4.3 says only that the run is weekly. A neat page is only as right as its lines ([0.2.3](https://agentfactory.panaversity.org/how-ai-works/markdown/one-short-specification/)).
 
 ## Step 6. Fix it, and see its marks
 

@@ -86,9 +86,9 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
    - "Start from the rung the job needs, the proposed rung. A ceiling is the highest rung an action may reach. Each question can set a lower ceiling, never a higher one, and the action gets the lowest ceiling of the three."
    - "**Reversibility.** Can the action be undone, fully and cheaply? A payment, a sent email, a deleted file and a changed record of truth, such as the vendor record, where each supplier's details are kept, cannot. Keep those at draft or below, unless the harm is small and bounded. That needs three things: a fixed limit, a destination on record, such as an address already in the vendor record, and evidence that the action goes right."
    - "**Familiarity.** Has this worker done this task, under this envelope, its written limits, with evidence that it went right? A first run gets a ceiling one rung below the proposed rung, but never below observe."
-   - "**Exposure.** How much can the action reach? More connectors to other apps, folders, signed-in sites and outside people mean a lower ceiling. The worker's owner judges how much lower."
+   - "**Stakes.** How much can the action reach, and so how much could go wrong? This is also called exposure. More connectors to other apps, folders, signed-in sites and outside people mean a lower ceiling. The worker's owner judges how much lower."
 
-   Ask: "For A09: the rung the job needs, then the ceiling each question sets, reversibility, familiarity and exposure. Its rung is the lowest. Answer: four rungs, in that order."
+   Ask: "For A09: the rung the job needs, then the ceiling each question sets, reversibility, familiarity and stakes. Its rung is the lowest. Answer: four rungs, in that order."
 
    In A09's line, change only its rung, and add the four rungs the learner gave in brackets. Keep the line's other words, such as who acts.
 2. The same for A07: the catalog's row, its line in the Doc, the three questions, and the same question. Change A07's line the same way, keeping its other words.
