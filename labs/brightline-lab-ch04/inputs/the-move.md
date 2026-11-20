@@ -23,7 +23,7 @@ Rebuild or carry, as the page says: the AP inbox connector, #ap-help, the AI ven
 
 Replay:
 
-1. Monday, 7:00 a.m., Eastern Time, on the new vendor. Does a scheduled task fire, and at what time? Say where the new vendor's scheduler got the time from. What the worker does once it runs belongs to the later layers: say only whether and when it fires.
+1. Monday, 6:00 a.m., Eastern Time, on the new vendor. Does a scheduled task fire, and at what time? Say where the new vendor's scheduler got the time from. What the worker does once it runs belongs to the later layers: say only whether and when it fires.
 2. Lakeshore Janitorial emails ap@brightlinewholesale.example. Does the email reach the new worker?
 3. Maria writes in #ap-help. Does the message reach the new worker?
 

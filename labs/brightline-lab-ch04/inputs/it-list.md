@@ -10,8 +10,8 @@ IT made this list when Dave asked what it would take to move the worker to the o
 | 2 | AP policy version 1 | The March 2026 copy. Says invoices over $10,000 need the controller's approval | Uploaded to the shared project in March 2026 |
 | 3 | AP policy version 3 | Approved by Dave on September 1, 2026. Lowers the limit to $5,000 | An attachment in Dave's email |
 | 4 | The worker's memory | Four entries | The AI vendor's memory |
-| 5 | Scheduled task | Builds the invoice register from the AP inbox, every Monday at 7 a.m. | The AI vendor's scheduling feature |
-| 6 | Connector: accounting system | The AI vendor's link into the accounting system. The worker uses it to create and change register rows, and to change invoice status. Set up with Maria's login | The AI vendor's app |
+| 5 | Scheduled task | Builds the invoice register from the AP inbox, every Monday at 6 a.m. | The AI vendor's scheduling feature |
+| 6 | Connector: accounting system | The AI vendor's link into the accounting system. The worker uses it to create and change register rows, and to change invoice status. Set up with Dave's login | The AI vendor's app |
 | 7 | Connector: AP inbox | Reads the AP inbox | The AI vendor's app |
 | 8 | #ap-help | Where staff ask the worker questions | Brightline's team chat |
 | 9 | Dave's run approvals | Dave approves each weekly payment run on Thursday by replying "approved" in #ap-help. He approves single invoices over the limit in the accounting system, from his own login | The team chat's history |

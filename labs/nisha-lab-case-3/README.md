@@ -11,6 +11,7 @@ This folder has everything for the lab in Case 3, Nisha's Firm. The lab page is 
 | `worksheets/six-requests.md` | Part 2 |
 | `worksheets/friday-decision.md` | Part 3 |
 | `worksheets/reviewer-log.md` | Part 4 |
+| `worksheets/check-your-run.md` | Part 4b, step 6. Open it only after you record your run. |
 | `skill/weekly-cash-reconciliation/` | Part 4b. An agent skill: `SKILL.md` and one reference file. Read it before you install it. |
 | `skill/weekly-cash-reconciliation.zip` | Part 4b. The same folder, zipped for upload to Claude. |
 | `worksheets/sentence-test.md` | Part 5 |

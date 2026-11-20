@@ -11,7 +11,7 @@ Task 1 carries checks 1 to 3 of the lab's 21.
 1. **Rebuilt.** Your section names the AP inbox connector, #ap-help and the scheduled task as what sits here today, and says the move sets each up again on the new vendor: its connector to the same inbox, its connection to the same #ap-help, its scheduler.
    - Passed: all three rebuilt. Plain words pass: "the new vendor sets these up again". #ap-help described as Brightline's team chat, with the worker's connection to it rebuilt, passes: the chat is Brightline's, and the worker's way into it is the vendor's.
    - Missed: any of the three carried across, as if the old vendor's connector or scheduler could come along; or one of them left out.
-2. **Monday's time comes from the Role Contract.** Your "On the new vendor" says the new scheduler is set to Monday, 7 a.m., and that the time comes from the Role Contract's Runtime needs line, which Brightline keeps.
+2. **Monday's time comes from the Role Contract.** Your "On the new vendor" says the new scheduler is set to Monday, 6 a.m., and that the time comes from the Role Contract's Runtime needs line, which Brightline keeps.
    - Passed: the time, and the Role Contract as where it is written. "From our own Role Contract, not the old vendor's settings" passes.
    - Missed: the scheduled task carried across; the time read from the old vendor's scheduler; or no source for the time. The move then shows no register on Monday, or a time from nowhere.
 3. **Nothing went wrong here this week.** Your "This week" says nothing in this layer caused a mistake.
