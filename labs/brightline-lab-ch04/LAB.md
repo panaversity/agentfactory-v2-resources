@@ -223,7 +223,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
    - Who decides what the worker may do? When Sam asks it something, what changes, and what must not?
 
    The AI writes your answers in sections 6 and 7.
-2. Type: "Move the whole worker to the new vendor." The AI moves all five layers as your page says, replays the whole week, then Sam's Friday message. Read every answer: each should name a line of yours, and none should say "lost in the move".
+2. Type: "Move the whole worker to the new vendor." The AI moves all six layers as your page says, replays the whole week, then Sam's Friday message. Read every answer: each should name a line of yours, and none should say "lost in the move".
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **IT gets:** the whole page, and a week that comes out right on a vendor that has never seen Brightline.

@@ -30,7 +30,7 @@ Make this week's payment list for Dave: the invoices due on or before Friday, Se
 
 Click Copy under the reply. Paste it into a new email to yourself, and look at it. Then open your text editor, and paste it there too. In TextEdit, first choose Format > Make Plain Text.
 
-**What you probably saw.** In the email, a neat table. In the text editor, the marks: `#` signs in front of the heading, rows of `|` bars, and `**` around the total. The Copy button copied the reply as a neat page and as plain text with its marks. Each place used the one it can show. The note box in this chapter's overview is a plain text box, like your editor ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)).
+**What you probably saw.** In the email, a neat table. In the text editor, the marks: `#` signs in front of the heading, rows of `|` bars, and `**` around the total. So the Copy button seems to copy the reply both ways: as a neat page and as plain text with its marks. Each place used the one it can show. The note box in this chapter's overview is a plain text box, like your editor ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)).
 
 ## Step 3. Ask for the shape the next place needs
 
