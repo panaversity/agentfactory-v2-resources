@@ -46,7 +46,7 @@ Short of time? Do Tasks 1 to 4 today, and Tasks 5 and 6 tomorrow: the document k
 
 **What went wrong in September.** The problems a good AP Worker would prevent:
 
-- Midwest Packaging's invoice 4471 came in twice, as 4471 and 4471-R, $4,850.00 each. The copy was caught just before it was paid.
+- Midwest Packaging's $4,850.00 invoice came in twice, two months running. In August, a copy was paid, and Midwest refunded it. In September it came in again as 4471 and 4471-R, and 4471-R was caught before it was paid.
 - Franklin County Power & Light's August bill was paid two days late, with a $35.00 late fee.
 - On two Mondays the register was ready at 2 p.m., after Dave's 10 a.m. review.
 - Central Ohio Office Supply asked about the same invoice three times before anyone answered.
