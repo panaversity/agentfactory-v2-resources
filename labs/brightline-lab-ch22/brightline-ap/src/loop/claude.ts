@@ -1,4 +1,4 @@
-// The agent loop on the Claude Messages API, with nothing hidden (Concepts 20.1 to 20.5).
+// The agent loop on the Claude Messages API, with nothing hidden (Concepts 21.1 to 21.5).
 // Stateless: the whole conversation goes with every request, and this file owns it.
 
 import type Anthropic from "@anthropic-ai/sdk";
@@ -19,7 +19,7 @@ export interface LoopOptions {
   runTool: RunTool;
   limits: Limits;
   prices: Prices;
-  cache?: boolean; // ask the API to cache the repeated start of every request (20.12)
+  cache?: boolean; // ask the API to cache the repeated start of every request (21.12)
   tracer?: Tracer;
   log?: (label: string, value: unknown) => void;
 }
@@ -39,7 +39,7 @@ export async function runClaudeLoop(o: LoopOptions): Promise<LoopResult> {
   let answer = "";
 
   for (let turn = 1; ; turn++) {
-    // Your stops come first: turn limit, cost cap, time limit (20.8).
+    // Your stops come first: turn limit, cost cap, time limit (21.8).
     const limitStop = meter.beforeTurn(turn);
     if (limitStop) return { stop: limitStop, answer, turns: turn - 1, costUsd: meter.spent, messages };
 
@@ -69,16 +69,16 @@ export async function runClaudeLoop(o: LoopOptions): Promise<LoopResult> {
       cacheRead: response.usage.cache_read_input_tokens ?? 0,
     });
 
-    // Step 2. Keep everything the model said, exactly as it came back, thinking included (20.5).
+    // Step 2. Keep everything the model said, exactly as it came back, thinking included (21.5).
     messages.push({ role: "assistant", content: response.content });
     answer = response.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
 
-    // Step 3. Stop on any reason except "wants a tool" (20.3).
+    // Step 3. Stop on any reason except "wants a tool" (21.3).
     if (response.stop_reason !== "tool_use") {
       return { stop: response.stop_reason ?? "unknown", answer, turns: turn, costUsd: meter.spent, messages };
     }
 
-    // Step 4. Run every tool it asked for, and keep one result per call, matched by id (20.4).
+    // Step 4. Run every tool it asked for, and keep one result per call, matched by id (21.4).
     const results: Anthropic.ToolResultBlockParam[] = [];
     for (const block of response.content) {
       if (block.type !== "tool_use") continue;

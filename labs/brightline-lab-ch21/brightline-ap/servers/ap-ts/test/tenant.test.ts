@@ -8,7 +8,7 @@ import { sign } from "./tokens.ts";
 import { makeServer, type RequestAuth } from "../src/server.ts";
 
 const SIGN_IN = "Sign in to use the Brightline AP connector.";
-// Chapter 19: Cedar Ridge has its own data now. Since Lab 20 both companies have 16 open invoices, so an answer
+// Chapter 19: Cedar Ridge has its own data now. Since Lab 21 both companies have 16 open invoices, so an answer
 // is known by its count and its first invoice: Brightline's INV-8301, Cedar Ridge's INV-6201.
 const CEDAR_OPEN = 16;
 const BRIGHTLINE_OPEN = 16;

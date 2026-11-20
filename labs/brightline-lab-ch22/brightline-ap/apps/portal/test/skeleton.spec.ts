@@ -1,4 +1,4 @@
-// The skeleton's offline tests (Lab 22, getting ready). No network, no key, no Cloudflare account.
+// The skeleton's offline tests (Lab 23, getting ready). No network, no key, no Cloudflare account.
 import { describe, expect, it } from "vitest";
 import worker, { handle } from "../src/index.ts";
 import { asText, CONTENT_SECURITY_POLICY, formTokenMatches, newFormToken, SECURITY_ON, sessionCookie, withSecurity } from "../src/security.ts";

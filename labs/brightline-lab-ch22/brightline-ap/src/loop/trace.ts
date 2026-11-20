@@ -1,4 +1,4 @@
-// Reading a trace (Concept 20.10).
+// Reading a trace (Concept 21.10).
 // One span per model call and one per tool call, named and labeled as the
 // OpenTelemetry GenAI semantic conventions describe them. Those conventions
 // are still at Development status, so the names may change.

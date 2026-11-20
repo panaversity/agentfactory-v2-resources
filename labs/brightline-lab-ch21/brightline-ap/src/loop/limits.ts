@@ -1,4 +1,4 @@
-// The stops you add yourself (Concept 20.8).
+// The stops you add yourself (Concept 21.8).
 // The model's own stop is not enough: a loop also ends at a turn limit,
 // a cost cap computed from usage, or a time limit, whichever comes first.
 

@@ -1,4 +1,4 @@
-"""A tool is a name, a description and a schema (Concept 20.2).
+"""A tool is a name, a description and a schema (Concept 21.2).
 
 The four AP tools are defined once, in tools/ap-tools.json, as JSON Schema.
 Each API wants them in its own shape, so two small functions convert them.
@@ -44,7 +44,7 @@ RunTool = Callable[[str, Any], Awaitable[ToolOutcome]]
 
 
 def allow_only(run_tool: RunTool, allowed: list[str] | None = None) -> RunTool:
-    """The authorization boundary (20.8): only the tools this worker was given may run,
+    """The authorization boundary (21.8): only the tools this worker was given may run,
     whatever name the model writes. The connector still checks every call."""
     names = set(allowed if allowed is not None else [s["name"] for s in TOOL_SPECS])
 

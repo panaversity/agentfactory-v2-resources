@@ -1,4 +1,4 @@
-# The AP portal (Lab 22)
+# The AP portal (Lab 23)
 
 Brightline's AP portal: a Cloudflare Worker, `brightline-portal`, where a person signs in and asks the AP worker a question. The zip ships it as a skeleton, and the lab's tasks fill it in. Read `LAB.md`, Sitting 3a.
 

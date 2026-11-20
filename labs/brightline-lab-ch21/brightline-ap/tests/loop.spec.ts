@@ -1,4 +1,4 @@
-// Lab 20's loop tests. No network: each test replays recorded responses and checks
+// Lab 21's loop tests. No network: each test replays recorded responses and checks
 // what the loop sent back. The same fixture files are replayed by py/tests/test_loop.py.
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";

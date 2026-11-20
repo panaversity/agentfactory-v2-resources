@@ -1,4 +1,4 @@
-"""The same agent loop on the OpenAI Responses API (Concepts 20.6 and 20.7).
+"""The same agent loop on the OpenAI Responses API (Concepts 21.6 and 21.7).
 
 Stateless, like the Claude loop: store is False, there is no previous_response_id,
 and this file builds and sends the whole input list on every call.
@@ -110,7 +110,7 @@ async def run_openai_loop(
                 except Exception as error:
                     outcome = ToolOutcome(ok=False, text=f"The tool failed: {error}")
                 if not outcome.ok:
-                    span["error.type"] = "tool_error"  # the trace shows which tool failed (20.10)
+                    span["error.type"] = "tool_error"  # the trace shows which tool failed (21.10)
             # Step 5. One output per call_id. This API has no error flag, so the text says so.
             input_items.append({"type": "function_call_output", "call_id": call.call_id,
                                 "output": outcome.text if outcome.ok else f"ERROR: {outcome.text}"})

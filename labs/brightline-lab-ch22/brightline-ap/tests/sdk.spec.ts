@@ -1,4 +1,4 @@
-// Offline tests for Lab 21: no model, no network, no key. They check the rules and the options you read.
+// Offline tests for Lab 22: no model, no network, no key. They check the rules and the options you read.
 import { describe, expect, it } from "vitest";
 import { claudeOptions } from "../src/sdk/claude-agent.js";
 import { buildWorker } from "../src/sdk/openai-agent.js";

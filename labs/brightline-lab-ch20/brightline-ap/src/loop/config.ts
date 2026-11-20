@@ -1,4 +1,4 @@
-// Versions, models and keys (Concept 20.13). Everything a run depends on is pinned:
+// Versions, models and keys (Concept 21.13). Everything a run depends on is pinned:
 // the SDK packages to exact versions in package.json (the SDK major sets the API
 // version header), the model ids and the prompt version in config.json, which the
 // Python loop reads too.

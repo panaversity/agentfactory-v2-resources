@@ -1,19 +1,19 @@
-# Lab 21: the AP worker on two agent SDKs
+# Lab 22: the AP worker on two agent SDKs
 
-Chapter 21 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 21: the AP worker on two agent SDKs](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/lab/), so you can do the lab without the book.
+Chapter 22 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 22: the AP worker on two agent SDKs](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/lab/), so you can do the lab without the book.
 
-*This is the lab page for [Chapter 21](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/overview/). The first SDK is the Claude Agent SDK, and the second SDK is the OpenAI Agents SDK. Read each part of the chapter, then do its sitting here. The chapter tells you when. The field guide ([F0](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f0-the-repository-the-overlay-and-the-pins) to [F7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f7-the-tool-runners-default-on-the-wire)) is on the companion page, **[Chapter 21 reference](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/)**.*
+*This is the lab page for [Chapter 22](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/overview/). The first SDK is the Claude Agent SDK, and the second SDK is the OpenAI Agents SDK. Read each part of the chapter, then do its sitting here. The chapter tells you when. The field guide ([F0](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f0-the-repository-the-overlay-and-the-pins) to [F7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f7-the-tool-runners-default-on-the-wire)) is on the companion page, **[Chapter 22 reference](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/)**.*
 
 | Sitting | Do it after | Tasks | Time |
 | --- | --- | --- | --- |
-| Getting ready, and Sitting 1 | Part A ([21.1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/from-your-loop-to-a-library/), [21.2](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/the-map/)) | Task 0, Task 2, optional Task 1 | about 35 minutes |
-| Sitting 2 | Part B ([21.3](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/one-run-start-to-finish/) to [21.5](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/who-may-run-a-tool/)) | Tasks 3 to 7, optional Task 8 | about 2 hours 5 minutes, 15 more with Task 8 |
-| Sitting 3 | Part C ([21.6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/) to [21.8](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-traces-go/)) | Tasks 9 to 11, optional Task 12 | about 1 hour 15 minutes |
-| Sitting 4 | Part D ([21.9](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-an-sdk-still-leaves-to-you/)) | Tasks 14 and 15, optional Task 13 | about 40 minutes |
+| Getting ready, and Sitting 1 | Part A ([22.1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/from-your-loop-to-a-library/), [22.2](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/the-map/)) | Task 0, Task 2, optional Task 1 | about 35 minutes |
+| Sitting 2 | Part B ([22.3](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/one-run-start-to-finish/) to [22.5](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/who-may-run-a-tool/)) | Tasks 3 to 7, optional Task 8 | about 2 hours 5 minutes, 15 more with Task 8 |
+| Sitting 3 | Part C ([22.6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/) to [22.8](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-traces-go/)) | Tasks 9 to 11, optional Task 12 | about 1 hour 15 minutes |
+| Sitting 4 | Part D ([22.9](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-an-sdk-still-leaves-to-you/)) | Tasks 14 and 15, optional Task 13 | about 40 minutes |
 
-## Lab 21: getting ready
+## Lab 22: getting ready
 
-The lab runs in four sittings. Each one comes right after its part of the chapter, and the chapter tells you when. Read this setup, then do Task 0. F0 to F7 means a section of the field guide, the step-by-step reference for this lab. It is on the companion page, Chapter 21 reference.
+The lab runs in four sittings. Each one comes right after its part of the chapter, and the chapter tells you when. Read this setup, then do Task 0. F0 to F7 means a section of the field guide, the step-by-step reference for this lab. It is on the companion page, Chapter 22 reference.
 
 **You** **predict**, **the agents write.** This lab uses PRIMM-AI+, as in Chapters [13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/), [14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/overview/) and 20. You *predict* and write it in `ports/ch21.md`. The agent *runs* the code. You *investigate* the gap with the agent ("explain line 53"). Some tasks ask you to *modify*: you say what to change, predict again, and run again. Tasks 6 and 10 ask you to *make* a rule. You write it in plain words, the agent writes the code and its test, and you check the code against your words.
 
@@ -23,7 +23,7 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 **This lab costs a little money, and its core path takes about 4 hours 35 minutes.** Tasks 1, 8, 12 and 13 are optional and marked so. Each deepens one idea the concepts already teach, and skipping them leaves nothing later broken. With them, the lab takes about 5 hours 50 minutes. Every run on the first SDK has a cost cap of 10 cents, and every run on both has a turn limit. Expect under $1 on each API in all. The open-model port is free.
 
-**The date in this lab** is Thursday, April 1, 2027, two days after Lab 20. "This week" still means up to Sunday, April 4.
+**The date in this lab** is Thursday, April 1, 2027, two days after Lab 21. "This week" still means up to Sunday, April 4.
 
 **Your model may differ a little.** The "**What good looks like**" results come from the authors' runs. Those runs used the real SDKs, harness and connector with a scripted stand-in model, so the model's words and the costs are examples. A real model can choose another tool or other words from run to run. If what you see differs a little from **What good looks like**, trust what you see and record it in `ports/ch21.md`.
 
@@ -33,11 +33,11 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 **What you need.**
 
-- Everything Lab 20 needed: **Node 22.19 or later** and **uv** 0.11 or later for Python 3.12 or later. Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, Codex and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)).
-- **Your two API keys from Lab 20,** pasted with your own editor into this folder's `.secrets/anthropic.env` and `.secrets/openai.env`, each in a project or workspace with a monthly spending limit (Chapter 20, F1). If you skipped Lab 20, [F1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f1-keys-and-spending-limits) here says what to do.
-- **About 1.5 GB of free disk**, most of it for the first SDK, which brings its own harness program to each language (the program that runs the loop, 21.1).
-- **For the port:** Ollama and the small model from Lab 20 ([F6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f6-ollama-and-an-open-model)).
-- **A connector,** as in Lab 20, by one of two routes. **Route A:** your [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector (the test copy of Brightline's real connector) with a short-lived test token. **Route B:** the local practice connector in the zip, which runs on your own computer.
+- Everything Lab 21 needed: **Node 22.19 or later** and **uv** 0.11 or later for Python 3.12 or later. Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, Codex and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)).
+- **Your two API keys from Lab 21,** pasted with your own editor into this folder's `.secrets/anthropic.env` and `.secrets/openai.env`, each in a project or workspace with a monthly spending limit (Chapter 21, F1). If you skipped Lab 21, [F1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f1-keys-and-spending-limits) here says what to do.
+- **About 1.5 GB of free disk**, most of it for the first SDK, which brings its own harness program to each language (the program that runs the loop, 22.1).
+- **For the port:** Ollama and the small model from Lab 21 ([F6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f6-ollama-and-an-open-model)).
+- **A connector,** as in Lab 21, by one of two routes. **Route A:** your [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector (the test copy of Brightline's real connector) with a short-lived test token. **Route B:** the local practice connector in the zip, which runs on your own computer.
 
 **How every task runs.** Chapter 12's five steps:
 
@@ -49,13 +49,13 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 **What you do by hand, and only this.** Check that both key files exist (never open them in a chat), and fill in cells of the mapping table. Write two rules in plain words (Tasks 6 and 10), and decide when to merge. Agents do everything else. **No API key or token passes through a chat.**
 
-**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through `npm run sdk` and `npm run sdk:py`, which set a turn limit, and on the first SDK a cost cap. Never set a permission mode that skips permissions. Ask before any call to a model API. Claude Code's and OpenCode's own settings still deny reading `.secrets/`, as in Lab 20, and ask before `npm run sdk`. Codex's settings cannot deny reading a file, so for Codex the rule in `AGENTS.md` is the guard.
+**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through `npm run sdk` and `npm run sdk:py`, which set a turn limit, and on the first SDK a cost cap. Never set a permission mode that skips permissions. Ask before any call to a model API. Claude Code's and OpenCode's own settings still deny reading `.secrets/`, as in Lab 21, and ask before `npm run sdk`. Codex's settings cannot deny reading a file, so for Codex the rule in `AGENTS.md` is the guard.
 
-**Two harnesses at once.** Your coding agent is a harness. In this lab it runs a program that starts another harness, the first SDK. They are separate: the worker does not get your coding agent's tools, settings or sign-in. 21.9 shows the options that make sure of it.
+**Two harnesses at once.** Your coding agent is a harness. In this lab it runs a program that starts another harness, the first SDK. They are separate: the worker does not get your coding agent's tools, settings or sign-in. 22.9 shows the options that make sure of it.
 
 ![What runs where in the lab. You direct your coding agent, a harness. It runs npm run sdk, or sdk:py, the lab's script. The script reads the key and token from .secrets. The script starts the worker, one SDK or the other: the first SDK, a second harness running as its own program, or the second SDK, a runner inside the script. The worker calls out to the model API with the key, or to a local model in Task 14, and to the connector over MCP with the test token. Your coding agent is never given the key or the token.](img/chapter-21-what-runs-where.png)
 
-*Figure L21.1. What runs where in the lab. Your coding agent starts the worker, but is never given the key or the token.*
+*Figure L22.1. What runs where in the lab. Your coding agent starts the worker, but is never given the key or the token.*
 
 **Words in the prompts.**
 
@@ -63,7 +63,7 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 | --- | --- |
 | `npm run sdk -- --sdk claude "…"` | Runs one question on the first SDK and prints one line per message. `--sdk openai` uses the second SDK, `--sdk open` the second SDK on an open model, and `--sdk runner` the tool runner (rung 2). `npm run sdk:py` is the Python twin |
 | `--max-turns N`, `--budget USD` | Lower the turn limit, or the first SDK's cost cap, for one run |
-| `--persist`, `--resume ID` | Let the first SDK write a **session file** (a file on disk holding the whole conversation, [21.7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-the-conversation-lives/)), or continue an earlier one by its id |
+| `--persist`, `--resume ID` | Let the first SDK write a **session file** (a file on disk holding the whole conversation, [22.7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-the-conversation-lives/)), or continue an earlier one by its id |
 | `--built-ins` | Task 5 only, TypeScript only: leave the first SDK's own tools on, to compare |
 | `--trace` | Task 12 only: turn the second SDK's tracing on |
 | `npm run test:sdk`, `npm run test:sdk:py` | The offline tests for this lab, in TypeScript and Python. No model, no network, no key |
@@ -81,13 +81,13 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 > Read `README.md`, `AGENTS.md`, and `docs/chapter-21/field-guide.md`, sections F0 to F2.
 >
-> 1. Put this folder under git, with a main branch. Make a first commit of everything here with the message "Start from the end of Chapter 20", and tag that commit `lab21-start`. If git has no name and email yet, set them for this project only. Show me `git log --oneline -1` and `git tag`.
+> 1. Put this folder under git, with a main branch. Make a first commit of everything here with the message "Start from the end of Chapter 21", and tag that commit `lab21-start`. If git has no name and email yet, set them for this project only. Show me `git log --oneline -1` and `git tag`.
 > 2. Install with `npm ci`, then `cd py && uv sync --locked`. Show me the versions of the two agent SDKs in each language (`npm ls --depth=0`, and `uv pip list` in `py/`), and check each is pinned to an exact version.
-> 3. Run `npm run typecheck:sdk`, `npm run typecheck:sdk:py`, `npm run test:sdk` and `npm run test:sdk:py`. Show me the four results as a table. Then run Lab 20's `npm run test:loop` and `npm run test:loop:py`, to show nothing broke.
-> 4. Connector, as in Lab 20's Task 0. On route A, make a new test token as Chapter 20's F2 says (it lasts 10 minutes). On route B, write `CONNECTOR_URL=http://127.0.0.1:8760/mcp` and a random `CONNECTOR_TOKEN` into `.secrets/connector.env` with a short script that never prints it, then tell me to start Lab 20's practice connector in a second terminal with `npm run connector:practice`, as in Lab 20. It reads the token from that file itself, so you never see it.
+> 3. Run `npm run typecheck:sdk`, `npm run typecheck:sdk:py`, `npm run test:sdk` and `npm run test:sdk:py`. Show me the four results as a table. Then run Lab 21's `npm run test:loop` and `npm run test:loop:py`, to show nothing broke.
+> 4. Connector, as in Lab 21's Task 0. On route A, make a new test token as Chapter 21's F2 says (it lasts 10 minutes). On route B, write `CONNECTOR_URL=http://127.0.0.1:8760/mcp` and a random `CONNECTOR_TOKEN` into `.secrets/connector.env` with a short script that never prints it, then tell me to start Lab 21's practice connector in a second terminal with `npm run connector:practice`, as in Lab 21. It reads the token from that file itself, so you never see it.
 > 5. Show me the size of the first SDK on disk in each language, and where its harness program is.
 
-**What good looks like:** one commit at tag `lab21-start`. `@anthropic-ai/claude-agent-sdk` 0.3.318 and `@openai/agents` 0.21.0, and Python `claude-agent-sdk` 0.2.178 and `openai-agents` 0.24.0, each pinned exactly. Both type checks clean, and 15 TypeScript tests and 13 Python tests passing. Lab 20's `npm run test:loop` and `npm run test:loop:py` still green: 32 and 22.
+**What good looks like:** one commit at tag `lab21-start`. `@anthropic-ai/claude-agent-sdk` 0.3.318 and `@openai/agents` 0.21.0, and Python `claude-agent-sdk` 0.2.178 and `openai-agents` 0.24.0, each pinned exactly. Both type checks clean, and 15 TypeScript tests and 13 Python tests passing. Lab 21's `npm run test:loop` and `npm run test:loop:py` still green: 32 and 22.
 
 **Check it now.** Download [Task 0's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-0.md).
 
@@ -99,23 +99,23 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 | A Python import of `agents` fails | Check no file named `agents.py` exists anywhere in `py/`: it would hide the SDK, which is imported as `agents` |
 | The harness program is missing | Ask the agent to reinstall the first SDK's package (F0). Some installers skip optional files for your platform |
 | A warning about a deprecated package, or that a newer pyright is available | Not an error. Go on, and change no pin (`AGENTS.md`) |
-| A test about `env` fails | Your shell has a variable the worker must not inherit, and the test caught it. Read 21.9 |
+| A test about `env` fails | Your shell has a variable the worker must not inherit, and the test caught it. Read 22.9 |
 
-## Lab 21, Sitting 1: the map (about 15 minutes, 45 with the optional Task 1)
+## Lab 22, Sitting 1: the map (about 15 minutes, 45 with the optional Task 1)
 
-**Before you start, answer in a line each:** What is the difference between a tool runner and a harness (21.1)? What three kinds of answer go in the mapping table (21.2)? **After this sitting, you can:** fill in the first column of the mapping table from your own code. With the optional Task 1, you can also say where the tool runner put the conversation.
+**Before you start, answer in a line each:** What is the difference between a tool runner and a harness (22.1)? What three kinds of answer go in the mapping table (22.2)? **After this sitting, you can:** fill in the first column of the mapping table from your own code. With the optional Task 1, you can also say where the tool runner put the conversation.
 
 ### Task 1 (optional). Your loop, replaced by a tool runner (30 minutes, Claude Code)
 
-*Optional.* This task shows the smallest rung, and the default from 21.1, in a real request. Skip it on the core path: no later task needs it.
+*Optional.* This task shows the smallest rung, and the default from 22.1, in a real request. Skip it on the core path: no later task needs it.
 
 **Worker spec rows:** 3.
 
-**Goal:** the agent shows you the tool runner beside your Chapter 20 loop and runs one question on it. You can then say which steps it took over, and you have seen one default it chose for you in a real request.
+**Goal:** the agent shows you the tool runner beside your Chapter 21 loop and runs one question on it. You can then say which steps it took over, and you have seen one default it chose for you in a real request.
 
-**Predict:** of your Chapter 20 loop's five steps, which will still appear in `tool-runner.ts`? And how many entries will the second request's conversation hold?
+**Predict:** of your Chapter 21 loop's five steps, which will still appear in `tool-runner.ts`? And how many entries will the second request's conversation hold?
 
-> Read 21.1.
+> Read 22.1.
 >
 > 1. Open `src/loop/claude.ts` and `src/sdk/tool-runner.ts` side by side (in Python: `py/brightline_ap/loop/claude_loop.py` and `py/brightline_ap/sdk/tool_runner.py`). Do not run anything.
 > 2. Wait while I write my predictions.
@@ -135,7 +135,7 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 25        tools: mcpTools(tools, mcp as Parameters<typeof mcpTools>[1]),
 26        messages: [{ role: "user", content: question }],
 27        max_iterations: s.maxTurns, // your turn limit, now an option
-28        thread: false, // by default the runner keeps the conversation on the provider's side (21.1). false sends it all, as in Chapter 20
+28        thread: false, // by default the runner keeps the conversation on the provider's side (22.1). false sends it all, as in Chapter 21
 29      });
 ```
 
@@ -151,7 +151,7 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 30                  tools=[async_mcp_tool(t, mcp) for t in tools],  # each MCP tool, wrapped so the runner can call it
 31                  messages=[{"role": "user", "content": question}],
 32                  max_iterations=max_turns,  # your turn limit, now an option
-33                  thread=False,  # by default the runner keeps the conversation on the provider's side (21.1)
+33                  thread=False,  # by default the runner keeps the conversation on the provider's side (22.1)
 34              )
 ```
 
@@ -164,7 +164,7 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 - **Line 25 (30).** The connector's tools, each wrapped so the runner can call it. In TypeScript, `mcp as Parameters<typeof mcpTools>[1]` only tells the type checker that the two libraries agree. It does nothing when the program runs. In Python, `[... for t in tools]` makes one wrapped tool for each tool in the list.
 - **Line 26 (31).** The conversation starts with one entry: Ana's question.
 - **Line 27 (32).** Your turn limit, now an option.
-- **Line 28 (33).** Send the whole conversation every turn, as in Chapter 20.
+- **Line 28 (33).** Send the whole conversation every turn, as in Chapter 21.
 
 *Investigate:* Step 1's settings are mostly still here. They are the model, the output limit, the instructions, the tools, and the question. What is gone? (Steps 2 to 5: keeping the reply, reading the stop reason, running each tool, returning each result.) And where did your turn limit go? (It became an option, `max_iterations`.)
 
@@ -183,55 +183,55 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 **Worker spec rows:** all.
 
-**Goal:** you fill in the "What it did" column of the table from what you know, and the agent checks each cell against your Chapter 20 code.
+**Goal:** you fill in the "What it did" column of the table from what you know, and the agent checks each cell against your Chapter 21 code.
 
 **Predict:** which row of the table do you expect the SDKs to leave to you?
 
-> Read 21.2 and `docs/worker-spec.md`.
+> Read 22.2 and `docs/worker-spec.md`.
 >
-> 1. Open `docs/sdk-map.md`. It holds the empty table from 21.2, and one more row that Task 10 fills in.
+> 1. Open `docs/sdk-map.md`. It holds the empty table from 22.2, and one more row that Task 10 fills in.
 > 2. Wait while I fill in the "What it did" column.
 > 3. Check each of my cells against `src/loop/claude.ts`, `src/loop/tools.ts`, `limits.ts`, `trace.ts` and `scripts/ask.ts`. Quote the line that proves it, or say where I am wrong.
 > 4. Do not fill in the SDK columns.
 
-**What good looks like:** thirteen filled rows, each with a line number from your Chapter 20 code, and the fourteenth row left for Task 10. The agent corrects at most a cell or two.
+**What good looks like:** thirteen filled rows, each with a line number from your Chapter 21 code, and the fourteenth row left for Task 10. The agent corrects at most a cell or two.
 
 **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-2.md).
 
-## Lab 21, Sitting 2: what it can do without asking (about 2 hours 5 minutes, 2 hours 20 with the optional Task 8)
+## Lab 22, Sitting 2: what it can do without asking (about 2 hours 5 minutes, 2 hours 20 with the optional Task 8)
 
-**Before you start, answer in a line each:** What four things do you collect about every run, and which might an SDK not give you (21.3)? Why does a worker that reads vendor notes not need a shell, and who runs a hosted tool's call ([21.4](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/tools-and-where-each-call-runs/))? Name the two shapes in which your rule decides a tool call (21.5). **After this sitting, you can:** read one question's run on both SDKs, say which tools each worker can see, and show one rule deciding the same call in both shapes.
+**Before you start, answer in a line each:** What four things do you collect about every run, and which might an SDK not give you (22.3)? Why does a worker that reads vendor notes not need a shell, and who runs a hosted tool's call ([22.4](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/tools-and-where-each-call-runs/))? Name the two shapes in which your rule decides a tool call (22.5). **After this sitting, you can:** read one question's run on both SDKs, say which tools each worker can see, and show one rule deciding the same call in both shapes.
 
 ### Task 3. One question, one stream (25 minutes, Claude Code)
 
 **Worker spec rows:** 1, 2, 3.
 
-**Goal:** you work through the worker's main function, the agent runs Ana's question, and you match each message in the stream to a line of your Chapter 20 loop.
+**Goal:** you work through the worker's main function, the agent runs Ana's question, and you match each message in the stream to a line of your Chapter 21 loop.
 
 **Predict:** write the stream you expect for "Which invoices are due this week?", one line per message, before anything runs. How many tools will the init message list?
 
-> Read 21.3.
+> Read 22.3.
 >
 > 1. Open `src/sdk/claude-agent.ts` and show me `askClaude()` only (in Python: `ask_claude()` in `py/brightline_ap/sdk/claude_agent.py`). Do not run anything.
 > 2. Wait while I write my predicted stream in `ports/ch21.md`.
 > 3. Run `npm run sdk -- --sdk claude "Which invoices are due this week?"` (in Python: `npm run sdk:py -- --sdk claude "…"`).
-> 4. Show me the stream. For each message, name the line of my Chapter 20 loop it reports.
+> 4. Show me the stream. For each message, name the line of my Chapter 21 loop it reports.
 
 **The code.** The whole loop is now one call, in TypeScript:
 
 ```ts
 75    try {
-76      // Chapter 20, Steps 1 to 5: one call runs the whole loop, and streams every message it makes (21.3)
+76      // Chapter 21, Steps 1 to 5: one call runs the whole loop, and streams every message it makes (22.3)
 77      for await (const message of query({ prompt: question, options: claudeOptions(s, log, abort) })) {
 78        show(message);
 79        if (message.type === "result") {
-80          // The last message: why it stopped, the answer, the turns and the cost (21.3)
+80          // The last message: why it stopped, the answer, the turns and the cost (22.3)
 81          const answer = message.subtype === "success" ? message.result : "";
 82          summary = { stop: message.subtype, answer, turns: message.num_turns, costUsd: message.total_cost_usd, sessionId: message.session_id };
 83        }
 84      }
 85    } catch (error) {
-86      // After a limit, the result message comes first, then this error (21.6)
+86      // After a limit, the result message comes first, then this error (22.6)
 87      if (summary.stop === "unknown") summary.stop = abort.signal.aborted ? "time_limit" : `error: ${String(error)}`;
 ```
 
@@ -239,11 +239,11 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 **The same in Python.**
 
 ```python
-111         # Chapter 20, Steps 1 to 5: one call runs the whole loop, and streams every message it makes (21.3)
+111         # Chapter 21, Steps 1 to 5: one call runs the whole loop, and streams every message it makes (22.3)
 112         async for message in query(prompt=question, options=claude_options(s, log)):
 113             show(message)
 114             if isinstance(message, ResultMessage):
-115                 # The last message: why it stopped, the answer, the turns and the cost (21.3)
+115                 # The last message: why it stopped, the answer, the turns and the cost (22.3)
 116                 summary = RunSummary(message.subtype, message.result or "", message.num_turns,
 117                                      message.total_cost_usd or 0.0, message.session_id)
 ```
@@ -265,7 +265,7 @@ The subtype is a word on the result message that says how the run ended, such as
 
 **A note on dates.** The prompt tells the model that today is Thursday, April 1, 2027. The first SDK's harness also tells the model the real date. On a live run, a model may count "this week" from the real date on the first SDK only. If its invoices differ from the second SDK's, check which date it used, and record it in `ports/ch21.md`.
 
-**What good looks like:** six messages. They are `system init`, two `assistant` messages (a short text, then the tool call), one `user` message with a tool result, one `assistant` message with the answer, and `result: success, turns 2`. The init lists five tools. A warning at the start says the permission callback will not be called for the four allowed tools: that is expected (21.5). The cost is under a cent.
+**What good looks like:** six messages. They are `system init`, two `assistant` messages (a short text, then the tool call), one `user` message with a tool result, one `assistant` message with the answer, and `result: success, turns 2`. The init lists five tools. A warning at the start says the permission callback will not be called for the four allowed tools: that is expected (22.5). The cost is under a cent.
 
 **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-3.md).
 
@@ -279,7 +279,7 @@ The subtype is a word on the result message that says how the run ended, such as
 
 **Predict:** how many items will the run's history hold for "Which invoices are due this week?", and in what order? And will any request carry a previous-response id?
 
-> Read 21.3 and 21.4.
+> Read 22.3 and 22.4.
 >
 > 1. Open `src/sdk/openai-agent.ts`. Show me `buildWorker()` and lines 65 to 72 (in Python: `build_worker()` and lines 74 to 85 of `py/brightline_ap/sdk/openai_agent.py`).
 > 2. Wait while I write my predictions.
@@ -296,9 +296,9 @@ The subtype is a word on the result message that says how the run ended, such as
 49    });
 50    const agent = new Agent({
 51      name: "AP worker",
-52      instructions: readFileSync("prompts/ap-worker-sdk.v1.md", "utf8"), // Chapter 20: the instructions
+52      instructions: readFileSync("prompts/ap-worker-sdk.v1.md", "utf8"), // Chapter 21: the instructions
 53      model: s.model,
-54      // Chapter 20, 20.6: stateless, nothing kept on the provider's side, and the reasoning sent back to you
+54      // Chapter 21, 21.6: stateless, nothing kept on the provider's side, and the reasoning sent back to you
 55      modelSettings: s.baseURL ? { store: false } : { store: false, providerData: { include: ["reasoning.encrypted_content"] } },
 56      mcpServers: [connector],
 57      tools: [flagInvoice],
@@ -309,7 +309,7 @@ The subtype is a word on the result message that says how the run ended, such as
 The runner, as the loop:
 
 ```ts
-71      // Chapter 20, Steps 1 to 5: the runner runs the loop. You hand it the whole history, as in Chapter 20 (21.7)
+71      // Chapter 21, Steps 1 to 5: the runner runs the loop. You hand it the whole history, as in Chapter 21 (22.7)
 72      let result: RunResult<any, any> = await runner.run(agent, [...history, { role: "user", content: question }], { maxTurns: s.maxTurns, signal: abort.signal });
 ```
 
@@ -319,7 +319,7 @@ The runner, as the loop:
 ```python
 61      agent = Agent(
 62          name="AP worker",
-63          instructions=Path("prompts/ap-worker-sdk.v1.md").read_text(),  # Chapter 20: the instructions
+63          instructions=Path("prompts/ap-worker-sdk.v1.md").read_text(),  # Chapter 21: the instructions
 64          model=s.model,
 65          model_settings=settings,
 66          mcp_servers=[connector],
@@ -341,8 +341,8 @@ The runner, as the loop:
 - **Lines 50 to 59 (Python 61 to 69).** The agent, as configuration: a name, the instructions read from a file, the model, its settings, the connector, your one tool `flag_invoice`, and the guardrail of Task 10.
 - **Line 55 (Python 65, built a few lines above), the condition.** `a ? b : c` reads "if a base URL is set, use the first settings, else the second". A base URL is set only for the open model in Task 14.
 - **Line 55, `store: false`.** Both choices say it: the provider does not store the response.
-- **Line 55, the encrypted reasoning.** The hosted model's choice also asks for the encrypted reasoning: the model's reasoning, sent back locked so you can pass it on but not read it (Chapter 20.6). It asks through `providerData`, extra settings passed straight to the provider.
-- **Line 72 (Python 84 to 85).** Run the loop. `[...history, { … }]` (Python `[*history, { … }]`) means "every item of the history, then the new question": your Chapter 20 array. `maxTurns` is 8, from `config.json`, and `signal` lets your timer stop the run. `RunResult<any, any>` only names the type of the result, without checking its details.
+- **Line 55, the encrypted reasoning.** The hosted model's choice also asks for the encrypted reasoning: the model's reasoning, sent back locked so you can pass it on but not read it (Chapter 21.6). It asks through `providerData`, extra settings passed straight to the provider.
+- **Line 72 (Python 84 to 85).** Run the loop. `[...history, { … }]` (Python `[*history, { … }]`) means "every item of the history, then the new question": your Chapter 21 array. `maxTurns` is 8, from `config.json`, and `signal` lets your timer stop the run. `RunResult<any, any>` only names the type of the result, without checking its details.
 
 **Where the languages differ.** TypeScript makes a runner and calls `runner.run()`. Python calls `Runner.run()` with a run configuration. TypeScript gives the history as `result.history`, Python with `result.to_input_list()`. The Python file is never named `agents.py`, because the SDK is imported as `agents` and a file of that name would hide it.
 
@@ -362,9 +362,9 @@ The runner, as the loop:
 
 **Predict:** with the built-in tools on, how many tools will the init message list? And what will the model try, when Ana asks for today's exchange rate?
 
-> Read 21.4.
+> Read 22.4.
 >
-> 1. Show me lines 42 to 54 of `src/sdk/claude-agent.ts`, and lines 80 to 93 of `claude_agent.py`. **Both languages here, on purpose:** the two behave differently. The `env` option on line 48 replaces the environment in TypeScript but only adds to it in Python (21.9).
+> 1. Show me lines 42 to 54 of `src/sdk/claude-agent.ts`, and lines 80 to 93 of `claude_agent.py`. **Both languages here, on purpose:** the two behave differently. The `env` option on line 48 replaces the environment in TypeScript but only adds to it in Python (22.9).
 > 2. Run `npm run sdk -- --sdk claude --built-ins "What is today's exchange rate for the euro?"`.
 > 3. Run the same without `--built-ins`.
 > 4. Show me both init messages' tool lists, counted, and every line that starts with `permission:`.
@@ -372,28 +372,28 @@ The runner, as the loop:
 **The code.** The options that decide what the worker can see, in TypeScript:
 
 ```ts
-45      tools: s.builtIns ? { type: "preset", preset: "claude_code" } : [], // [] turns off every built-in tool: no shell, no files, no web (21.4)
-46      settingSources: [], // read no settings files from this computer (21.9)
-47      strictMcpConfig: true, // use only the servers named below, never this computer's own (21.9)
-48      env: workerEnv(), // pass the subprocess only what it needs, not your whole environment (21.9)
+45      tools: s.builtIns ? { type: "preset", preset: "claude_code" } : [], // [] turns off every built-in tool: no shell, no files, no web (22.4)
+46      settingSources: [], // read no settings files from this computer (22.9)
+47      strictMcpConfig: true, // use only the servers named below, never this computer's own (22.9)
+48      env: workerEnv(), // pass the subprocess only what it needs, not your whole environment (22.9)
 49      mcpServers: {
-50        // Chapter 20, Step 4: the connector, now connected by the harness, with the test token in a header (21.4)
+50        // Chapter 21, Step 4: the connector, now connected by the harness, with the test token in a header (22.4)
 51        brightline: { type: "http", url: s.connectorUrl, headers: { Authorization: `Bearer ${s.connectorToken}` } },
 52        local: localTools,
 53      },
-54      allowedTools: READ_TOOLS.map((t) => `mcp__brightline__${t}`), // these four run without asking (21.5)
+54      allowedTools: READ_TOOLS.map((t) => `mcp__brightline__${t}`), // these four run without asking (22.5)
 ```
 
 [//]: # "details"
 **And in Python, without the comparison switch.**
 
 ```python
-83          tools=[],  # turn off every built-in tool: no shell, no files, no web (21.4)
-84          setting_sources=[],  # read no settings files from this computer (21.9)
-85          strict_mcp_config=True,  # use only the servers named below, never this computer's own (21.9)
-86          env=worker_env(),  # pass the subprocess only what it needs (21.9)
+83          tools=[],  # turn off every built-in tool: no shell, no files, no web (22.4)
+84          setting_sources=[],  # read no settings files from this computer (22.9)
+85          strict_mcp_config=True,  # use only the servers named below, never this computer's own (22.9)
+86          env=worker_env(),  # pass the subprocess only what it needs (22.9)
 87          mcp_servers={
-88              # Chapter 20, Step 4: the connector, now connected by the harness, with the test token in a header
+88              # Chapter 21, Step 4: the connector, now connected by the harness, with the test token in a header
 89              "brightline": {"type": "http", "url": s.connector_url,
 90                             "headers": {"Authorization": f"Bearer {s.connector_token}"}},
 91              "local": local_tools,
@@ -405,11 +405,11 @@ The runner, as the loop:
 **In plain words, line by line:**
 
 - **Line 45 (Python 83).** "If the `--built-ins` switch is on, use the harness's own full tool set, else an empty list." The empty list turns every built-in tool off. Python has no switch: always off.
-- **Lines 46 to 48 (84 to 86).** Read no settings files, use only the servers named here, and pass the harness only a short list of environment variables. 21.9 explains each.
+- **Lines 46 to 48 (84 to 86).** Read no settings files, use only the servers named here, and pass the harness only a short list of environment variables. 22.9 explains each.
 - **Lines 49 to 53 (87 to 92).** Two servers. `brightline` is the connector, with its address and the token in a header. `local` is a small server inside your own program that offers `flag_invoice`.
 - **Line 54.** `.map(...)` makes a new list from an old one. For each read-only tool name `t`, it writes `mcp__brightline__` before it, which is how the harness names a server's tools. These four run without asking.
 
-*Investigate:* line 51 is your Chapter 20 connector call, moved into the options. What would lines 46 to 48 each do if left out? Ask the agent.
+*Investigate:* line 51 is your Chapter 21 connector call, moved into the options. What would lines 46 to 48 each do if left out? Ask the agent.
 
 **What good looks like:** with `--built-ins`, about thirty tools in all. The authors saw 33: 28 built in and the worker's five. They include a shell, file tools, web tools, planning and scheduling tools. The model may ask for the shell or the web fetcher. If it does, you see `permission: Bash -> deny` (or `WebFetch`), and the model says it cannot look that up. Without `--built-ins`, five tools, no permission lines, and a one-turn answer.
 
@@ -425,7 +425,7 @@ The runner, as the loop:
 
 **Predict:** before the agent shows you any code, which of these should the rule allow? (a) INV-8316, reason "No purchase order on file." (b) ALL, reason "check everything". (c) INV-8316, reason "why". (d) any tool other than `flag_invoice`.
 
-> Read 21.5.
+> Read 22.5.
 >
 > 1. Wait while I write, in `ports/ch21.md`, my rule for `flag_invoice` in one or two plain sentences.
 > 2. Show me `decideTool()` in `src/sdk/policy.ts`, lines 56 to 61 of `claude-agent.ts`, and the tests for rule 1 in `tests/sdk.spec.ts` (in Python: `decide_tool()` in `py/brightline_ap/sdk/policy.py`, lines 75 to 78 of `claude_agent.py`, and `py/tests/test_sdk.py`).
@@ -455,7 +455,7 @@ The callback that uses it:
 
 ```ts
 56      canUseTool: async (name, input) => {
-57        // Everything not on the allow list comes here, and the rule in policy.ts decides (21.5)
+57        // Everything not on the allow list comes here, and the rule in policy.ts decides (22.5)
 58        const d = decideTool(name, input);
 59        log(`permission: ${name} -> ${d.allow ? "allow" : "deny"}`);
 60        return d.allow ? { behavior: "allow", updatedInput: input } : { behavior: "deny", message: d.message };
@@ -484,7 +484,7 @@ The callback that uses it:
 - **Line 22.** Any other tool is denied.
 - **Lines 58 to 60 (Python 76 to 78).** The callback asks the rule, logs `allow` or `deny`, and answers the harness. Line 60 is "if allowed, the allow answer with the input unchanged, else the deny answer with the rule's message". Python writes the same choice as `b if a else c`.
 
-*Investigate:* why does line 22 deny every other tool, rather than allow it? (A tool that reaches the callback is, by definition, not on the allow list. The safe answer for an unknown tool is no.) Why does each denial carry a message? (The model reads it as an error result, as in Chapter 20.4, and can tell Ana why.)
+*Investigate:* why does line 22 deny every other tool, rather than allow it? (A tool that reaches the callback is, by definition, not on the allow list. The safe answer for an unknown tool is no.) Why does each denial carry a message? (The model reads it as an error result, as in Chapter 21.4, and can tell Ana why.)
 
 **Then modify.** Ana says a flag must also never be raised on an invoice that is already paid. Predict: where would that check belong, in this rule or in the connector? Ask the agent for its answer and its reason, and write yours beside it. ([Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/each-companys-own-rules-and-data/)'s answer: the rule can check the shape of the request, but only the connector and the database know whether an invoice is paid.)
 
@@ -502,7 +502,7 @@ The callback that uses it:
 
 **Predict:** for "Please flag INV-8316 for review.", how many times will the runner be called? And for "Flag every invoice for review.", will the tool run at all?
 
-> Read 21.5.
+> Read 22.5.
 >
 > 1. Show me lines 24 to 31 and 73 to 82 of `openai-agent.ts` (in Python: lines 43 to 46 and 86 to 96 of `openai_agent.py`).
 > 2. Show me `out/flags.jsonl`.
@@ -512,7 +512,7 @@ The callback that uses it:
 **The code.** The hand-back and resume, in TypeScript:
 
 ```ts
-73      // A tool that needs approval pauses the run and hands the call back. Your rule decides, and the run resumes from its saved state (21.5)
+73      // A tool that needs approval pauses the run and hands the call back. Your rule decides, and the run resumes from its saved state (22.5)
 74      while (result.interruptions.length > 0) {
 75        for (const item of result.interruptions) {
 76          const d = decideTool(item.name ?? "", parseArgs(String(item.arguments ?? "{}")));
@@ -560,15 +560,15 @@ The callback that uses it:
 
 ### Task 8 (optional). One hook, before every tool (15 minutes, Claude Code)
 
-*Optional.* 21.5 already teaches what this task shows: a hook runs first, and by default a hook that fails lets the call go ahead. Do it to see the order in the log.
+*Optional.* 22.5 already teaches what this task shows: a hook runs first, and by default a hook that fails lets the call go ahead. Do it to see the order in the log.
 
 **Worker spec rows:** 5.
 
-**Goal:** you work through the one hook, check its place in 21.5's order against the log, and know what it can and cannot do.
+**Goal:** you work through the one hook, check its place in 22.5's order against the log, and know what it can and cannot do.
 
 **Predict:** in Task 6's deny run, which came first, the `hook:` line or the `permission:` line? And if the hook threw an error, would the tool still run?
 
-> Read 21.5's hooks part.
+> Read 22.5's hooks part.
 >
 > 1. Show me lines 37 to 41 and line 62 of `claude-agent.ts` (in Python: lines 68 to 72 and 96 of `claude_agent.py`).
 > 2. Run Task 6's two questions again, and show me only the `hook:` and `permission:` lines, in order.
@@ -603,25 +603,25 @@ The callback that uses it:
 
 *Investigate:* `return {}` means "no decision". The hook only watches. What would it return to deny the call? (A permission decision of deny, with a reason, [F4](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f4-the-first-sdks-permissions-and-hooks).)
 
-**What good looks like:** the `hook:` line comes before the `permission:` line every time, matching the order in 21.5. The hook also ran for the read-only tools in Task 3, which the callback never saw. By default, a hook that throws lets the action go ahead.
+**What good looks like:** the `hook:` line comes before the `permission:` line every time, matching the order in 22.5. The hook also ran for the read-only tools in Task 3, which the callback never saw. By default, a hook that throws lets the action go ahead.
 
 **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-8.md).
 
 **Fill in the table:** "The trace", first half. A hook can write your own log line for every tool call.
 
-## Lab 21, Sitting 3: was the run safe and successful (about 1 hour 15 minutes, 1 hour 35 with the optional Task 12)
+## Lab 22, Sitting 3: was the run safe and successful (about 1 hour 15 minutes, 1 hour 35 with the optional Task 12)
 
-**Before you start, answer in a line each:** What three limits can end a run, and which does neither SDK keep for you (21.6)? Name the places a conversation can live (21.7). Where do traces go by default on each SDK (21.8)? **After this sitting, you can:** stop a runaway run on both SDKs, refuse an answer with no basis, find every copy of a conversation, and say what leaves your process.
+**Before you start, answer in a line each:** What three limits can end a run, and which does neither SDK keep for you (22.6)? Name the places a conversation can live (22.7). Where do traces go by default on each SDK (22.8)? **After this sitting, you can:** stop a runaway run on both SDKs, refuse an answer with no basis, find every copy of a conversation, and say what leaves your process.
 
 ### Task 9. The limits, against a tool that says "try again" (25 minutes, Claude Code)
 
 **Worker spec rows:** 7.
 
-**Goal:** the practice connector's policy tool is broken on purpose, as in Lab 20's Task 8, so the model never stops by itself. You watch the turn limit and the budget cap end the run.
+**Goal:** the practice connector's policy tool is broken on purpose, as in Lab 21's Task 8, so the model never stops by itself. You watch the turn limit and the budget cap end the run.
 
 **Predict:** with a turn limit of 4, how many model calls will be made, and what will the result message's subtype and turn count be? With a 1-cent budget, will the run stop exactly at 1 cent?
 
-> Read 21.6.
+> Read 22.6.
 >
 > 1. Start a second practice connector with `PRACTICE_PORT=8761 PRACTICE_BROKEN=search_policy` (F2). Even on route A, start this practice connector for this task.
 > 2. Run `CONNECTOR_URL=http://127.0.0.1:8761/mcp npm run sdk -- --sdk claude --max-turns 4 "Is there an early-payment discount?"` (in Python: `npm run sdk:py` in place of `npm run sdk`, in every step).
@@ -630,11 +630,11 @@ The callback that uses it:
 > 5. Show me each run's tool calls and its last two lines.
 > 6. Show me lines 63 to 67 of `claude-agent.ts`.
 
-**What good looks like:** with the turn limit, four tool calls to `search_policy`, then `result: error_max_turns`, reporting 5 turns. The first SDK reported one more turn than the model calls it made. Count model calls, not reported turns, when you compare SDKs. That is why 21.6 says to read each SDK's definition. With the budget, a few tool calls, then `result: error_max_budget_usd` at a cost a little over 1 cent, because the last response crossed the cap. On the second SDK, `stop: max_turns | model calls: 8`: a run stopped at the limit returns no history, so its tool calls do not print.
+**What good looks like:** with the turn limit, four tool calls to `search_policy`, then `result: error_max_turns`, reporting 5 turns. The first SDK reported one more turn than the model calls it made. Count model calls, not reported turns, when you compare SDKs. That is why 22.6 says to read each SDK's definition. With the budget, a few tool calls, then `result: error_max_budget_usd` at a cost a little over 1 cent, because the last response crossed the cap. On the second SDK, `stop: max_turns | model calls: 8`: a run stopped at the limit returns no history, so its tool calls do not print.
 
 **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-9.md).
 
-**Fill in the table:** "Turn limit" for both SDKs, with the difference in counting. "Cost cap" (the first SDK's budget cap, still yours on the second). "Retries" from 21.6: how many times a failed call is tried again, waiting a little longer each time (the **backoff**). "Time limit": still yours on both. Line 67 hands the SDK your abort controller, the switch that stops a run. Your own timer flips it (ask the agent to show you where). "Request deadline": not set by the lab on either SDK, so your time limit covers a call that hangs.
+**Fill in the table:** "Turn limit" for both SDKs, with the difference in counting. "Cost cap" (the first SDK's budget cap, still yours on the second). "Retries" from 22.6: how many times a failed call is tried again, waiting a little longer each time (the **backoff**). "Time limit": still yours on both. Line 67 hands the SDK your abort controller, the switch that stops a run. Your own timer flips it (ask the agent to show you where). "Request deadline": not set by the lab on either SDK, so your time limit covers a call that hangs.
 
 ### Task 10. Specify the guardrail, then check the code (20 minutes, Codex)
 
@@ -644,7 +644,7 @@ The callback that uses it:
 
 **Predict:** which of these answers should the guardrail stop? (a) "Pay it once it matches its PO (po-matching.md:5)." (b) "Yes." (c) "See po-matching.md line 9." (d) "An invoice with no PO is held until the buyer raises one (po-matching.md:9)."
 
-> Read 21.6.
+> Read 22.6.
 >
 > 1. Wait while I write, in `ports/ch21.md`, my rule for what every answer must contain.
 > 2. Show me `citesPolicyLine()` in `src/sdk/policy.ts`, `mustCite` in `openai-agent.ts` lines 33 to 40, and the tests for rule 2 (in Python: `must_cite` at lines 49 to 53 of `openai_agent.py`).
@@ -691,7 +691,7 @@ The callback that uses it:
 
 **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-10.md).
 
-**Fill in the table:** "What counts as done", the fourteenth row, which has no Chapter 20 line. In Chapter 20, "done" was the model's own stop. Here the runner's rule is text with no tool calls, and your guardrail adds what the text must contain.
+**Fill in the table:** "What counts as done", the fourteenth row, which has no Chapter 21 line. In Chapter 21, "done" was the model's own stop. Here the runner's rule is text with no tool calls, and your guardrail adds what the text must contain.
 
 ### Task 11. Find the conversation (30 minutes, Claude Code)
 
@@ -701,7 +701,7 @@ The callback that uses it:
 
 **Predict:** with `--persist`, in which folder will the session file appear? Will it hold the test token? Without `--persist`, will any file be written at all?
 
-> Read 21.7.
+> Read 22.7.
 >
 > 1. Run `npm run sdk -- --sdk claude --persist "Which invoices are due this week?"`.
 > 2. Find the session file under `~/.claude/projects/` by its session id. Show me its path, its number of lines, and the type of each line, without printing the tool results in full.
@@ -714,7 +714,7 @@ The callback that uses it:
 
 **Both languages here, on purpose:** the two behave differently. TypeScript has an option that turns session files off. Python has none, so the lab passes the harness its own flag on line 101, `extra_args={"no-session-persistence": None}`. Step 6 checks that the flag works.
 
-On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside WSL.
+On Windows you work in WSL, as in Lab 21, so the same Linux paths apply inside WSL.
 
 **What good looks like:** a file named `<session id>.jsonl` in a folder named after your working folder's path. It has about 25 lines for a two-call run, including the tool's result. No `Bearer` and no token. The resumed run's conversation carries the first run's entries, then the new question. The answer names INV-8316 ($389.00). The invoice list holds no purchase orders, so the model asks `get_purchase_order` to know: record how many calls it made. The runs without `--persist`, in both languages, write no session file, only small connection logs in the cache folder.
 
@@ -724,7 +724,7 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 
 ### Task 12 (optional). Turn tracing on once, and see what leaves (20 minutes, Codex)
 
-*Optional.* It sends test data to the provider's dashboard, so do it only if your course or company allows that. On the core path, fill in "The trace" in Task 15, from 21.8 and [21.10](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/how-todays-tools-realize-it/), and go through 21.8's five checks on paper.
+*Optional.* It sends test data to the provider's dashboard, so do it only if your course or company allows that. On the core path, fill in "The trace" in Task 15, from 22.8 and [22.10](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/how-todays-tools-realize-it/), and go through 22.8's five checks on paper.
 
 **Worker spec rows:** 9.
 
@@ -732,7 +732,7 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 
 **Predict:** with tracing on, which of these will the provider's trace hold? The question, the tool call's arguments, the tool's result, the answer, the test token.
 
-> Read 21.8 and F5.
+> Read 22.8 and F5.
 >
 > 1. Run `npm run sdk -- --sdk openai --trace "Which invoices are due this week?"` once (in Python: `npm run sdk:py`).
 > 2. Tell me where, in the OpenAI dashboard, I can see the trace (F5), and wait while I look.
@@ -745,28 +745,28 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 
 **Fill in the table:** "The trace" for both SDKs. The first exports OpenTelemetry through settings you set, and the second sends traces to the provider unless you turn it off or replace its processor.
 
-## Lab 21, Sitting 4: what you still own, and ship (about 40 minutes, 50 with the optional Task 13)
+## Lab 22, Sitting 4: what you still own, and ship (about 40 minutes, 50 with the optional Task 13)
 
-**Before you start, answer in a line each:** Name four things an SDK in your own process still leaves to you (21.9). Which part of the worker spec does each one serve (`docs/worker-spec.md`)? **After this sitting, you can:** show a finished mapping table, run the second SDK's worker on an open model, and merge a reviewed change.
+**Before you start, answer in a line each:** Name four things an SDK in your own process still leaves to you (22.9). Which part of the worker spec does each one serve (`docs/worker-spec.md`)? **After this sitting, you can:** show a finished mapping table, run the second SDK's worker on an open model, and merge a reviewed change.
 
-### Task 13 (optional). Compare the SDK's record with your Chapter 20 trace (10 minutes, Claude Code)
+### Task 13 (optional). Compare the SDK's record with your Chapter 21 trace (10 minutes, Claude Code)
 
-*Optional.* It shows, item by item, what the second SDK's history keeps that your Chapter 20 trace did not. No later task needs it.
+*Optional.* It shows, item by item, what the second SDK's history keeps that your Chapter 21 trace did not. No later task needs it.
 
 **Worker spec rows:** 9.
 
-**Goal:** the agent puts your Chapter 20 trace beside the second SDK's history. Each span is matched to an item, and the extra items are named.
+**Goal:** the agent puts your Chapter 21 trace beside the second SDK's history. Each span is matched to an item, and the extra items are named.
 
 **Predict:** which items will the SDK's history hold that your trace never did?
 
-> Read 21.3 and 21.8.
+> Read 22.3 and 22.8.
 >
-> 1. Run `npm run sdk -- --sdk openai "What does our policy say about an invoice with no purchase order? Cite the line."`, the question of Lab 20's Task 10, and keep its history.
-> 2. Show me, side by side, Lab 20's trace of the same question (`ports/trace-good.jsonl`, made in Lab 20's Task 10) and that history.
+> 1. Run `npm run sdk -- --sdk openai "What does our policy say about an invoice with no purchase order? Cite the line."`, the question of Lab 21's Task 10, and keep its history.
+> 2. Show me, side by side, Lab 21's trace of the same question (`ports/trace-good.jsonl`, made in Lab 21's Task 10) and that history.
 > 3. Name each span's matching item.
 > 4. List the items that have no span.
 
-**What good looks like:** each Chapter 20 span has a matching item. The SDK's history holds things your trace did not, such as the reasoning items. Your trace holds a timing for each step, which the history does not.
+**What good looks like:** each Chapter 21 span has a matching item. The SDK's history holds things your trace did not, such as the reasoning items. Your trace holds a timing for each step, which the history does not.
 
 **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-13.md).
 
@@ -774,11 +774,11 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 
 **Worker spec rows:** all, on the open model.
 
-**Goal:** the same worker, with only its provider settings changed, pointed at the local model server from Lab 20. You record what a small model does differently.
+**Goal:** the same worker, with only its provider settings changed, pointed at the local model server from Lab 21. You record what a small model does differently.
 
 **Predict:** which of the worker's settings must change for a local server? And what will happen to traces if tracing were on?
 
-> Read 21.10's open-source box, the open-source box in `docs/chapter-21/reference.md`, and F6.
+> Read 22.10's open-source box, the open-source box in `docs/chapter-21/reference.md`, and F6.
 >
 > 1. Start Ollama, listening on `127.0.0.1` only, with the larger context in F6, and the model pinned in `src/sdk/config.json` as `models.open`.
 > 2. Show me lines 55 and 60 of `openai-agent.ts` (in Python: lines 59 to 60 and 70 of `openai_agent.py`).
@@ -787,7 +787,7 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 > 5. Record in `ports/ch21.md` what differed from the hosted model.
 > 6. Stop the model server.
 
-**What good looks like:** the worker runs with only the provider's settings changed. They are the base URL (the address the client sends model calls to, here your own computer), a placeholder key, the Responses API (the second provider's model API, which Chapter 20 used), and the model. The encrypted-reasoning setting is left out, because Ollama ignores it: a thinking model's reasoning comes back as plain text, not encrypted. At least one run calls `list_open_invoices` and answers. Some runs may call the wrong tool, skip the citation (so the guardrail stops the run), or answer without a tool. Tracing stays off: with it on, the traces would still go to the provider (21.8).
+**What good looks like:** the worker runs with only the provider's settings changed. They are the base URL (the address the client sends model calls to, here your own computer), a placeholder key, the Responses API (the second provider's model API, which Chapter 21 used), and the model. The encrypted-reasoning setting is left out, because Ollama ignores it: a thinking model's reasoning comes back as plain text, not encrypted. At least one run calls `list_open_invoices` and answers. Some runs may call the wrong tool, skip the citation (so the guardrail stops the run), or answer without a tool. Tracing stays off: with it on, the traces would still go to the provider (22.8).
 
 **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-14.md).
 
@@ -797,7 +797,7 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 
 **Goal:** you finish the mapping table and write its last part in your own words. Then two reviewers check everything, and you merge a pull request tagged `ch21`.
 
-> 1. Wait while I fill in any cells of `docs/sdk-map.md` I have left, and write "What this still leaves to me" at the end, one line per row of 21.9's table.
+> 1. Wait while I fill in any cells of `docs/sdk-map.md` I have left, and write "What this still leaves to me" at the end, one line per row of 22.9's table.
 > 2. Compare my table with the finished table in `docs/chapter-21/reference.md`. List every cell where mine differs, quoting the line of code or the message that decides who is right.
 > 3. Check each row of `docs/worker-spec.md` against both builds and the port, and list any row a runtime could not meet.
 > 4. Show me every pin: both agent SDKs and both client SDKs in `package.json` and `py/pyproject.toml`, and the model ids in `src/sdk/config.json`.
@@ -807,23 +807,23 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 > 8. If this repository has no GitHub remote yet, make a private one with `gh repo create brightline-ap-ch21 --private --source . --push`. Open the pull request from the branch `lab21`, with the template, and show me both reviews. I will merge.
 > 9. After I say it is merged, tag the merge `ch21`, push the tag, and in a clean clone of the tag install (`npm ci`, then `cd py && uv sync --locked`) and run the six checks of step 5.
 
-**What good looks like:** every cell of the table filled, and at most two differ from the finished table, each with a reason. "Time limit" says "still yours" for both SDKs, and "Cost cap" for the second. Both reviews have no open finding. The clean clone passes all six checks with no key, because every Lab 21 test is offline.
+**What good looks like:** every cell of the table filled, and at most two differ from the finished table, each with a reason. "Time limit" says "still yours" for both SDKs, and "Cost cap" for the second. Both reviews have no open finding. The clean clone passes all six checks with no key, because every Lab 22 test is offline.
 
 **Check it now.** Download [Task 15's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-15.md).
 
-## Lab 21: wrapping up
+## Lab 22: wrapping up
 
 ### If something goes wrong
 
 | What you see | Why | What to do |
 | --- | --- | --- |
 | The answer is empty, ending `stop: no_citation` (first SDK) or `stop: guardrail` (second SDK) | The answer cited no policy line, so rule 2 held it back (Task 10) | Not a failure, and not a reason to stop: record it and go on |
-| The init message lists tools you did not add | The harness read this computer's settings or MCP servers, or the built-in tools are on | Check `tools: []`, `settingSources: []` and `strictMcpConfig: true` (21.4, 21.9) |
-| A warning that the permission callback will not be called for some tools | Those tools are on the allow list | Expected for the four read-only tools (21.5). If it names `flag_invoice`, take it off the allow list |
+| The init message lists tools you did not add | The harness read this computer's settings or MCP servers, or the built-in tools are on | Check `tools: []`, `settingSources: []` and `strictMcpConfig: true` (22.4, 22.9) |
+| A warning that the permission callback will not be called for some tools | Those tools are on the allow list | Expected for the four read-only tools (22.5). If it names `flag_invoice`, take it off the allow list |
 | `permission:` lines never appear, though the model called `flag_invoice` | The permission mode is not `default`, or a settings file allows the tool | Check that line 55 of `claude-agent.ts` reads `permissionMode: "default",`, and that `settingSources` is empty |
 | The init message shows the connector as `failed` or `needs-auth` | The connector is not running, or the token is wrong or expired | Route A: a new test token. Route B: restart the practice connector with the token in `.secrets/connector.env` |
 | `error_max_turns` on a simple question | The model kept calling tools | Read the stream: a tool that fails or returns too little invites more calls |
-| The Python worker's init lists servers the TypeScript one does not | The Python SDK adds `env` to the environment rather than replacing it | Ask the agent to show that `isolate_environment()` runs before the query. It is a function the lab provides, and it trims the Python program's own environment (21.9) |
+| The Python worker's init lists servers the TypeScript one does not | The Python SDK adds `env` to the environment rather than replacing it | Ask the agent to show that `isolate_environment()` runs before the query. It is a function the lab provides, and it trims the Python program's own environment (22.9) |
 | `ModuleNotFoundError` or the wrong `Agent` in Python | A file named `agents.py` hides the SDK | Rename it |
 | The second SDK's run fails about a reasoning item not found | Storage is off, and the reasoning came back without its encrypted content | Check line 55 of `openai-agent.ts` (Task 4): `include` must ask for encrypted reasoning on the hosted model |
 | `stop: guardrail` on every question | The model's answers carry no `(file.md:N)` citation | Read the answers. Check the instructions ask for a citation, and that `search_policy` is reachable |
@@ -832,17 +832,17 @@ On Windows you work in WSL, as in Lab 20, so the same Linux paths apply inside W
 
 ### Apply it to your vertical (optional)
 
-Pick an agent framework or SDK you have heard of, or one in your own work. From its documentation, fill in the mapping table for it: one line per row of 21.2, and every "still yours". Then write its three most surprising defaults.
+Pick an agent framework or SDK you have heard of, or one in your own work. From its documentation, fill in the mapping table for it: one line per row of 22.2, and every "still yours". Then write its three most surprising defaults.
 
 ### Exam notes
 
 CCDV-F is the Claude Certified Developer: Foundations exam, and OAI an OpenAI competency.
 
-- **CCDV-F, agent SDKs (primary):** the run and its stream, tools, permissions and hooks, limits, sessions, and what an SDK leaves to you (21.3 to 21.7, 21.9), with the Anthropic box in 21.10.
-- **CCDV-F (supporting):** tools, servers, subagents and sessions (21.4, 21.5, 21.7).
-- **OAI, the Agents SDK (primary):** the runner, tools and MCP, handoffs, guardrails, approvals, state and tracing (21.3 to 21.8), with the OpenAI box in 21.10.
-- **OAI (supporting, primary in Chapter 22):** running agents yourself, and what a hosted runtime takes over (21.9).
-- **For the exam,** CCDV-F expects awareness of third-party agent frameworks, with no tutorial: know that they exist and how to judge one (21.9). This point is for the exam only.
+- **CCDV-F, agent SDKs (primary):** the run and its stream, tools, permissions and hooks, limits, sessions, and what an SDK leaves to you (22.3 to 22.7, 22.9), with the Anthropic box in 22.10.
+- **CCDV-F (supporting):** tools, servers, subagents and sessions (22.4, 22.5, 22.7).
+- **OAI, the Agents SDK (primary):** the runner, tools and MCP, handoffs, guardrails, approvals, state and tracing (22.3 to 22.8), with the OpenAI box in 22.10.
+- **OAI (supporting, primary in Chapter 23):** running agents yourself, and what a hosted runtime takes over (22.9).
+- **For the exam,** CCDV-F expects awareness of third-party agent frameworks, with no tutorial: know that they exist and how to judge one (22.9). This point is for the exam only.
 
 ### Artifact checklist
 

@@ -1,6 +1,6 @@
 # Instructions for every coding agent in this repository
 
-- Run the checks before you say a task is done: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:py`. `npm run test:py` needs the Chapter 19 dev database: without it (Lab 20's route B), run the loop's four checks below instead.
+- Run the checks before you say a task is done: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:py`. `npm run test:py` needs the Chapter 19 dev database: without it (Lab 21's route B), run the loop's four checks below instead.
 - Never edit `data/`. Never change an existing test to make code pass.
 - Every number a person acts on comes from tested code, never from your own arithmetic.
 - Never put a key, token or password in a tracked file. Keys live in `.dev.vars`, `.dev.vars.<environment>` and `.secrets/`, which git ignores.
@@ -31,7 +31,7 @@
 - Apply the business database's migrations to staging and production only through the deploy workflow, or with `npm run db:migrate -- --env staging` when the person says so in this session. Never against production by hand.
 - Never read or print a password, token, client secret or key, including test users' passwords and the CI client's secret. Show a token only as its decoded claims.
 
-## The agent loop (Chapter 20)
+## The agent loop (Chapter 21)
 
 - Never print, read aloud, copy or open anything in `.secrets/`. Scripts read those files themselves. If a step needs a key or token, the person puts it there with their own editor.
 - Ask before any call to a model API. Live calls go only through `npm run ask`, `npm run ask:py`, `npm run break`, `npm run break:py`, `npm run stateful`, `npm run stateful:py` and `npm run stream:demo`, and the embeddings call inside `npm run tenant:load` (Task 0, route A). Each has a cost cap or is a single small call. Never write a new script that calls a model API without asking.
