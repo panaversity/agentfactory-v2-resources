@@ -35,7 +35,7 @@ Ask its five questions, one at a time:
 2. "What evidence comes back for each item?"
 3. "What counts as success?"
 4. "What makes the worker stop and ask?"
-5. "What must never happen automatically?"
+5. "What must never happen automatically?" (the Authority Envelope's question)
 
 Then ask: "The Format: the shape of the answer you will review, and what comes first?" Write the Review contract and Format in the Doc. Has a test: "Plan: my brief". After it, remind the learner to ask their Task 1 what-if questions again.
 

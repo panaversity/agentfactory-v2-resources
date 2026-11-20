@@ -64,7 +64,7 @@ The AI writes each of your decisions into the document the task names, and chang
 3. the instruction line that makes that item count, or "no line decides"
 4. what the project leaves unclear
 
-Two names cover several questions: `Test: Tuesday morning` asks questions 2, 3, 7 and 9, the four that went wrong, and `Test: the other concepts` asks questions 4, 5 and 6. A test reads your document and quotes it. It does not answer as the worker. What the chat knows and the project does not hold is "not in the project". A good test means your project's setup is clear enough to follow. It does not make the worker obey it every time: Part IV of this book shows how a company makes sure of that.
+Two names cover several questions: `Test: Tuesday morning` asks questions 2, 3, 7 and 9, the four that went wrong, and `Test: the other concepts` asks questions 4, 5 and 6. A test reads your document and quotes it. It does not answer as the worker. What the chat knows and the project does not hold is "not in the project". A good test means your project's setup is clear enough to follow. It does not make the worker obey it every time: Part V of this book shows how a company makes sure of that.
 
 ### The check prompt
 

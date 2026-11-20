@@ -88,7 +88,7 @@ A worker can act with authority in two different ways, and they must not be conf
 | **When it stops** | When the person leaves, or withdraws consent | When the organization withdraws it, whoever comes and goes |
 | **What the log says** | "Ana asked" | "The AP worker, for Brightline, approved by the controller" |
 
-This chapter builds the first kind: every question runs with the asking person's own token. It touches the second kind only once, in 23.15, where a scheduled report runs with an account made for reports. A worker that does recurring work for a company on its own, such as preparing a payment run, needs the second kind. It needs its own identity, scopes approved by the organization, limits and evidence. Part IV builds that, because it belongs in the governed layer that checks identity and authority on every action.
+This chapter builds the first kind: every question runs with the asking person's own token. It touches the second kind only once, in 23.15, where a scheduled report runs with an account made for reports. A worker that does recurring work for a company on its own, such as preparing a payment run, needs the second kind. It needs its own identity, scopes approved by the organization, limits and evidence. Part V builds that, because it belongs in the governed layer that checks identity and authority on every action.
 
 ### The neighbors of a hosted agent
 
