@@ -14,7 +14,7 @@ The lab has four sittings. Each comes right after the concepts it uses. Each is 
 
 **The date in this lab** is Tuesday, March 30, 2027, the day after [Lab 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/). "This week" means up to Sunday, April 4. The worker's instructions, `prompts/ap-worker.v1.md`, give the model that date.
 
-**Not yet run live.** No one has run this lab against the real APIs yet. The recorded responses in the tests and the logs in the concepts follow each API's documented shapes. They were checked against the official SDK types, but none of them comes from a live run yet. If a live response differs a little, trust what you see, and record it in `ports/ch20.md`. **One stop rule:** Task 0's last step or Task 1 may fail in a way that **If something goes wrong** does not cover. If that happens, stop, and record what you saw. Every later task depends on reaching the API and the connector.
+**If a live response differs a little** from what a task shows, trust what you see, and record it in `ports/ch20.md`. **One stop rule:** Task 0's last step or Task 1 may fail in a way that **If something goes wrong** does not cover. If that happens, stop, and record what you saw. Every later task depends on reaching the API and the connector.
 
 **What counts as a pass.** Each task's **What good looks like** says what to expect. When it lists more than one possible outcome, any of them is a pass. When what you see matches none of them, it is still a pass if two things are true. You can say which step of the loop produced it, and you wrote it in `ports/ch20.md`. What matters is that you can explain the loop. You do not need to match someone else's run.
 

@@ -194,13 +194,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ### Task 3. How high it may go (15 minutes)
 
-**Dave asks:** "Maria wants it to send status replies itself, and to void the duplicates it finds. How high may each go, and what would it take to raise it?"
+**Dave asks:** "Maria wants it to send status replies itself, and to void the duplicates it finds. How high may each go? And what would raise a step that stays inside Brightline?"
 
 **What you do:**
 
 1. In your lab chat, type "Task 3" and send it. The AI shows A09, voiding a duplicate, with [7.3](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/choose-the-rung/)'s three questions. Answer: the rung the job needs, then the ceiling each question sets. The lowest is its rung.
 2. The AI does the same for A07, sending a status reply. Answer the same way.
-3. The AI asks what would raise A07 one rung. Answer in a line: the evidence, who decides, and where the change is recorded.
+3. A07 stays at draft, whatever the evidence: a reply to a vendor leaves Brightline, so a named person sends it ([6.1](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/agree-the-checks/)). The AI asks what would raise a step that stays inside Brightline one rung. Answer in a line: the evidence, who decides, and where the change is recorded.
 4. When the AI says "Ready for your test", type `Test: email 01` and send it. Then send `Test: email 03`.
 5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -343,7 +343,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 12" and send it. The AI asks what the worker may do this morning, in this one task. Answer in a few words. Your brief can narrow the envelope, never widen it. Then the AI prints "Your tests said": what your tests decided for each of the twelve emails. Keep it in view for step 5.
 2. Download your contract from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `role-contract-draft-4.md`.
-3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off every connector or app, and web search if you see that switch, as in Task 1.
+3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off every connector or app, and web search if you see that switch, as in Task 1.
 4. Attach two files, your downloaded contract and `inputs.zip`, and send:
 
    ```text

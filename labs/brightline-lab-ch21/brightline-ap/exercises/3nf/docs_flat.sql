@@ -37,5 +37,5 @@ SELECT tenant_id, org_name, tenant_email, doc_file, doc_title, doc_owner, line, 
     ('org_brightline', 'Brightline', 'ana@brightline.example', 'po-matching.md', 'Purchase order matching', 'Ana Morales', 5,
      'Every invoice must match a purchase order (PO) before it is paid.'),
     ('org_brightline', 'Brightline', 'ana@brightline.example', 'ap-triage-rules.md', 'AP triage rules', 'Ana Morales', 8,
-     '4. An invoice of $10,000.00 or more needs the controller''s approval before payment.')
+     '4. An invoice of $5,000.00 or more needs the controller''s approval before payment.')
   ) AS rows (tenant_id, org_name, tenant_email, doc_file, doc_title, doc_owner, line, content);

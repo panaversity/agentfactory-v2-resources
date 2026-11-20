@@ -90,7 +90,7 @@ Put the words in the Doc. Say "Ready for your run".
 
 **Before the run.**
 
-1. Show the Format row of 5.1's table below, then 5.1's format below, then 5.7's four kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
+1. Show the Format row of 5.1's table below, then 5.1's format below, then 5.7's five kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
@@ -210,7 +210,7 @@ Then say "Task 9 is done".
 
 ## Task 10. Three new vendors, as JSON
 
-**Before the run.** Show 5.1's table below, all four rows, then the Extraction row of 5.6's table below, then 5.7's four kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
+**Before the run.** Show 5.1's table below, all four rows, then the Extraction row of 5.6's table below, then 5.7's five kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
 
 **The run:** `Run: the vendor brief`, with the brief in that message, and new-vendor-forms.md.
 
@@ -292,7 +292,7 @@ Some readers need a file that opens in another program: a Word document, an Exce
 
 They also ask for constraints, which is the brief's fourth part. A role line focuses the worker's behavior and tone, but it gives the worker no facts. So a missing role is rarely why a fact is wrong.
 
-The brief also has no part for a role, such as "You are an AP clerk." Telling a model who to be changes its style, not how accurate it is. An AI Worker's role is set once, in its definition.
+The brief also has no part for a role, such as "You are an AP clerk." A role sets voice and focus. It does not supply facts. An AI Worker's role is set once, in its definition.
 
 ### 5.5: testing each line, and content rules
 
@@ -300,10 +300,11 @@ Test each line as a new colleague would read it.
 
 Each row is a **specification gap**: a difference between what the brief said and what the work needed. A wrong fact taken from a source is a context failure. A claim that no source supports, or that must wait for someone's decision, needs a content rule.
 
-### 5.7: four kinds of format
+### 5.7: five kinds of format
 
 - **Inline.** In the chat itself. A person reads it once, now: a quick check, an explanation, a short list. No separate file is needed.
-- **Artifact.** A file or document of its own. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type and where it must go.
+- **Artifact.** A piece of work that opens in its own window beside the chat and lives in your Claude account. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type and where it must go.
+- **File.** A Word, Excel, PowerPoint or PDF file, made by a skill. A person opens it in another program.
 - **Structured data.** A system or a later step reads it: a CSV file, a JSON record, a table with fixed columns. Name every field (column) and its type (date, number or text). Ask for one row per item, say how to mark a missing value, and say "no prose", meaning no paragraphs around the rows.
 - **Computed result.** A number that must be exact, such as a total or a rate. Ask for it to be worked out in code, and returned with the figures it used. This is code-executed analysis (2.4). Code checks the arithmetic, not whether each row belongs in the total (6.4).
 

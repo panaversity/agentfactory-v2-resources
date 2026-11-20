@@ -168,7 +168,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [10.1](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s three answers and four screens. Then it shows the six uses, one at a time. For each, answer whether it is one activity or two. Then, for each activity, give appropriate, appropriate with review, or inappropriate, and the one screen that decides it.
+1. In your lab chat, type "Task 2" and send it. The AI shows [10.1](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s three answers and five screens. Then it shows the six uses, one at a time. For each, answer whether it is one activity or two. Then, for each activity, give appropriate, appropriate with review, or inappropriate, and the one screen that decides it.
 2. For an answer "with review", the AI asks who checks what, and when. For "inappropriate", it asks who decides instead, and what the worker may still do. Answer in a few words. After the six, the AI shows [10.1](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/)'s outer edge, the AI vendors' usage policies. Answer: does a usage policy already decide one of the six uses, and what must happen?
 3. The AI shows Draft 6's "Never automated" lines. Answer: does any of your answers need a line here, so the worker cannot do it whoever asks? Give the line in a few words, or "none".
 4. When the AI says "Ready for your test", type `Test: the Spanish FAQ` and send it. Then send `Test: the clerk ranking`.
@@ -360,7 +360,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. Download your document from its menu, as .docx or .pdf.
-2. Open a fresh chat with memory off. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu before you send anything. If you do not see it, memory is already off. In ChatGPT, open a temporary chat set to Unpersonalized. Attach your downloaded document and `inputs.zip`, and send:
+2. Open a fresh chat with memory off. In Claude, turn off Memory in the "+" menu before you send anything. If you do not see it, memory is already off. In ChatGPT, open a temporary chat set to Unpersonalized. Attach your downloaded document and `inputs.zip`, and send:
 
    ```text
    Outcome:     Monday, December 14, 2026, decided by Brightline's terms,

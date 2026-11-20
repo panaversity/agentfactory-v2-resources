@@ -403,7 +403,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Task 17. The Claude plugin in a chat and a task (25 minutes)
 
-*Goal:* the same plugin on two more Claude surfaces ([16.7](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/)).
+*Goal:* the same plugin in two more places in Claude ([16.7](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/one-skill-three-bundles/)).
 
 1. Install the plugin on your claude.ai account from your GitHub repository's catalog, or upload a zip of the `plugin/` folder. [The steps are in 16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles).
 2. Before any request, look under *Customize > Connectors*. If `apdata` is listed, set `write_file`, `edit_file`, `create_directory` and `move_file` to *Blocked*. A local connector may not list its tools there before it runs. If it does not, work in *Manual*, and decline every write. The plugin will also appear in Claude Code, where only a folder with the deny rules keeps them off.
@@ -438,7 +438,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Task 19. The same plugin in ChatGPT (15 minutes)
 
-*Goal:* the OpenAI plugin on a second OpenAI surface.
+*Goal:* the OpenAI plugin in a second OpenAI place.
 
 1. On the same computer as Task 18, open the ChatGPT desktop app, then *Customize > Plugins*, in Work if you still see that switch. A catalog you added with `codex plugin marketplace add` appears there as a source, after you restart the app. Install `brightline-ap` from it, if Task 18 has not already. If your workspace allows plugins only through an admin, an admin imports your GitHub catalog instead, as [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-one-skill-three-bundles) shows. If neither is open to you, skip this task and record why.
 2. Start a new chat that runs locally, in the `brightline-ap` project, because a local connector needs your computer, and that project's `.codex/config.toml` keeps the write tools off. Attach the three files, and ask for triage with `@invoice-triage` for run date 2027-03-08.
@@ -525,7 +525,7 @@ For each place, record three outcomes in `ports/ch16.md`, and keep them separate
 
 ### Without a paid Claude plan
 
-[The Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows how to run the Claude app on another company's model, but this lab also runs the `claude` command, which that setup does not cover. So without a paid plan, do Tasks 1 to 5, 7 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-from-a-prompt-to-a-skill) set first. Skip each step that runs the `claude` command, but still make the `ch16-install` clone in Task 11, because Task 16 uses it. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
+[The Claude app without a Claude plan](https://agentfactory.panaversity.org/appendices/claude-and-chatgpt-2/appendix-the-claude-app-without-a-claude-plan/) shows how to run the Claude app on another company's model, but this lab also runs the `claude` command, which that setup does not cover. So without a paid plan, do Tasks 1 to 5, 7 to 12 and 14 to 16 in Codex or OpenCode, with its safety settings from [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-from-a-prompt-to-a-skill) set first. Skip each step that runs the `claude` command, but still make the `ch16-install` clone in Task 11, because Task 16 uses it. In Task 1, ask the agent to run `npm run due -- 2027-03-12`. Write Claude's manifest and connector file anyway, and let `npm run check:plugin` check them. Then do the port for your tool, Task 18 or Task 20, and run Tasks 6, 8 and 9's requests there. Say in `ports/ch16.md` that Claude Code was not run.
 
 ### Artifact checklist
 

@@ -287,7 +287,7 @@ Write it first, as its own document. Then share all four parts with the worker. 
 
 ### 6.1: how much review (its three questions, and the first two columns of its table)
 
-Match the depth of the review to what is at risk. Ask three questions. Can the result be undone? Will it leave the company, or change a record of truth, such as the vendor record, where each supplier's details are kept? Will someone act on it without checking it again?
+Match the review's depth to the consequence of an error: how much harm a mistake would do, and whether the work leaves the company. Ask three questions. Can the result be undone? Will it leave the company, or change a record of truth, such as the vendor record, where each supplier's details are kept? Will someone act on it without checking it again?
 
 | If the work... | Review depth |
 | --- | --- |

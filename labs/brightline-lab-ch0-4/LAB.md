@@ -56,7 +56,7 @@ Answer each one with a D and one reason, in a few words.
 
 ## Step 4. Test the Description line
 
-Open a temporary chat, so that memory cannot carry your plan's line into it. On Claude, click the ghost icon at the top right of a new chat. On ChatGPT, click the dashed circle at the top right, then choose Unpersonalized. Send this:
+Open a chat without memory, so that memory cannot carry your plan's line into it. On Claude, that is an incognito chat: click the ghost icon at the top right of a new chat. On ChatGPT, it is a Temporary Chat: click the dashed circle at the top right, then choose Unpersonalized. Send this:
 
 ```text
 When a line does not show a due date, write "no due date" instead of guessing. Today is Monday, August 31. Which of these invoices from our register are due this week?
@@ -65,7 +65,7 @@ Buckeye Office Supply, $310.50, received August 6
 County Freight, $2,980.00, due September 15
 ```
 
-Then open another temporary chat, and send the same message without its first sentence.
+Then open a second chat of the same kind, and send the same message without its first sentence.
 
 **What you probably saw.** Both chats named Midwest Packaging. The first chat wrote "no due date" for Buckeye Office Supply, the words you asked for. The second chose its own words, and it may have guessed a date, such as September 5, 30 days after the invoice arrived. A run that nobody watches has only what is written down before it starts. Your line makes every run say the same thing, in words the person who checks the table can look for ([0.3.2](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/the-four-ds/)).
 

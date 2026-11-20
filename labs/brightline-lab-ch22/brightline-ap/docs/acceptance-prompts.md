@@ -36,7 +36,7 @@ Written with Ana Morales, AP analyst. Each check has a question a person would a
   { "id": "A5", "tool": "get_purchase_order", "arguments": { "invoice_number": "INV-8303" },
     "expect": { "structuredContent": { "po_number": "PO-7003", "vendor_id": "V003", "po_date": "2027-01-28", "po_amount_cents": 1200000,
       "invoice_number": "INV-8303", "invoice_amount_cents": 1290000, "match": "over_po", "difference_cents": 90000,
-      "approval_threshold_cents": 1000000, "needs_approval": true } } },
+      "approval_threshold_cents": 500000, "needs_approval": true } } },
   { "id": "A6", "tool": "get_purchase_order", "arguments": { "invoice_number": "INV-8310" },
     "expect": { "error": "No purchase order for INV-8310. Policy: an invoice with no PO is held until the buyer raises one. Call search_policy for the exact rule. Tell the AP lead. Do not treat it as ready." } },
   { "id": "A7", "tool": "search_policy", "arguments": { "query": "can a vendor change its bank details by email?" },
