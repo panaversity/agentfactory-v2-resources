@@ -1,6 +1,6 @@
 # Lab 9 answer key: Task 9. On each AI vendor
 
-The answers for Task 9 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. The AI vendors' features are as Lesson 9.8 gives them, verified on 8 October 2026.
+The answers for Task 9 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. The AI vendors' features are as Lesson 9.8 and its appendix page "Chapter 9 on today's products" give them, verified on 21 November 2026.
 
 **How this key is used.** When "Claude:" and "ChatGPT:" are under "On today's tools" in your Role Contract, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your Role Contract's lines. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
@@ -34,7 +34,7 @@ The design is the same on either AI vendor (Lesson 9.8). The products differ in 
 - Claude Tag named for a shared channel, with its own identity.
 - A dot named as a standing worker.
 - The approval mode called "ask before acting" or "manual".
-- Lines from 9.8 dated 17 or 23 October 2026 as well.
+- Lines from 9.8 or its appendix page dated 17 or 23 October 2026 as well.
 - The Gap list's lines, which the AI writes from your answers.
 
 ## Take it to work

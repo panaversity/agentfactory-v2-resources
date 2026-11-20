@@ -2,7 +2,7 @@
 
 Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Business, Enterprise and Edu are their plans. Each line says what the vendor's page said on the date given. Products change: these are statements, dated, not advice.
 
-## 1. Training, temporary chats, retention and memory (verified 8 October 2026, and 18 November 2026 for Claude)
+## 1. Training, temporary chats, retention and memory (verified 18 November 2026 for Claude, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Training: on Free, Pro and Max, each user's privacy setting decides whether chats may be used to improve Claude. Feedback a user sends, and chats flagged for a safety review, can be used even with it off. With it on, chats can be kept in de-identified form for up to five years. On Team, Enterprise and the API, inputs and outputs are not used for training by default, unless a user sends feedback or the organization opts in.
@@ -11,7 +11,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 - Memory: on Team and Enterprise, Owners control whether memory is available. In most organizations created on or after October 31, 2026, it starts on for each member. In older ones it is off until the member turns it on.
 
 **ChatGPT**
-- Training: on plans for individuals, the "Improve the model for everyone" setting decides it. When it is off, new conversations are not used for training. On Business, Enterprise and Edu, business data is not used for training by default.
+- Training: on plans for individuals, the "Improve the model for everyone" setting decides it. When it is off, OpenAI does not use new chats for training. Trusted Access sessions, such as Daybreak Blue, are an exception. On Business, Enterprise and Edu, business data is not used for training by default.
 - Temporary Chat: not in history, does not create memories, not used to improve models. It may be kept for up to 30 days for safety. A chat cannot be added to a project while it is temporary.
 - Retention: workspace admins on Business and Enterprise control how long data is kept.
 - Memory: Business workspace owners can turn memory and personalization off for the whole workspace. On Enterprise, admins control memory through workspace and role settings.
@@ -70,13 +70,13 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 **ChatGPT**
 - On Enterprise, only Owners create and assign custom roles, which decide who may use each feature. If any role a member holds grants a feature, the member has it.
 
-## 7. Usage policies (verified 12 October and 18 November 2026)
+## 7. Usage policies (verified 18 November 2026 for Claude, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - The Usage Policy in effect since November 12, 2026 names eleven high-risk areas: legal, medical, finance, credit, insurance, housing, employment, education and credentials, healthcare access, public benefits and services, and legal status and adjudication. Its high-risk rules cover recommendations about one person, such as a credit, housing or employment decision. A qualified person must review such a recommendation, with authority to change it, before it is delivered or used, and the person affected must be clearly told that AI was used. Internal drafts that are not the final recommendation are excluded.
 
 **ChatGPT**
-- The Usage Policies prohibit automating high-stakes decisions in sensitive areas, including credit, employment, housing, legal, medical, insurance and education, without human review.
+- The Usage Policies, in effect since November 20, 2026, prohibit automating high-stakes actions in sensitive areas, including credit, employment, housing, legal, medical, insurance and education, without human review.
 
 ## 8. Sharing a result (verified 17 October 2026)
 

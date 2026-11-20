@@ -205,7 +205,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 ## Task 11. On today's tools
 
 1. Ask: "Which app is this lab chat on, Claude or ChatGPT? Answer in a word."
-2. Show the Doc's lines on sending a reply (A06, A07 and the mailbox's tools). Show the "conversation setting" and "per-tool control" lines from 7.8's box for the learner's app, below, quoted, with the date the box gives. Ask: "Which setting on your app holds this line? Name it as 7.8 does, or say 'none'. Answer in a few words."
+2. Show the Doc's lines on sending a reply (A06, A07 and the mailbox's tools). Show the "conversation setting" and "per-tool control" lines from the Chapter 7 box for the learner's app, below, quoted, with the date the box gives. Ask: "Which setting on your app holds this line? Name it as the box does, or say 'none'. Answer in a few words."
 3. The same for a write to the vendor record (A11 and the accounting connector's tools), with the same two lines of the box.
 4. The same for recording an approval (A14), with the box's "consequential actions" and "per-tool control" lines.
 5. The same for a run nobody watches: the worker clearing the AP inbox each morning with nobody at the screen. Show the box's "runs no one watches" line.
@@ -223,9 +223,9 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
    Write the answer under a new section, "This morning's brief, October 28", above "Open questions".
 2. Print "Your tests said": one line for each of the twelve emails, from the last test of that email in this chat: what the worker does with it, and to whom. Write it in the chat, never in the Doc. Then say: "Task 12's lab-chat step is done. Download the Doc, and open your fresh chat."
 
-## 7.8's boxes
+## The Chapter 7 boxes
 
-Copied word for word from Lesson 7.8 of the book, without its footnotes. Show only the lines a question asks for.
+Copied word for word from the book's appendix page "Chapter 7 on today's products", which holds the boxes behind Lesson 7.8, without its footnotes. Show only the lines a question asks for.
 
 <!-- 7.8 boxes: begin. tools/brightline-lab-ch07/copy-boxes.py writes this part from the book's page. -->
 
@@ -240,15 +240,15 @@ Anthropic, as verified 18 November 2026:
 - *Admin policy (7.4).* Owners choose which connectors members may use, and on Enterprise, custom roles can make tool permissions stricter, never looser.
 - *Standing worker, verified 18 November 2026.* Claude Duet, in research preview, keeps working after you close its app. Before it sends a message, makes a payment, signs a document or deletes anything, it shows exactly what it will do. Then it waits for your approval. If you cannot approve at once, it finishes the rest of the task and brings the approval back to you later. Some actions are refused even with approval, such as trading securities or moving money between accounts.
 
-OpenAI, as verified 8 October 2026:
+OpenAI, as verified 21 November 2026:
 
-- *The conversation setting.* In the desktop app, a permissions control sets local actions, the actions on your own computer. Its choices are Ask for approval, Approve for me or Full access. Approve for me sends a request to an automatic review instead of to you. OpenAI's prompting guide also advises adding a rule to your prompt. The rule requires your approval before ChatGPT sends, publishes or changes information other people rely on. That is advice about prompts, not a setting.
+- *The conversation setting.* In the desktop app, a permissions control sets local actions, the actions on your own computer. Its main choices are Ask for approval, Approve for me and Full access. Which ones you see depends on your app version and your organization. Approve for me sends a request to an automatic review instead of to you. OpenAI's prompting guide also advises adding a rule to your prompt. The rule requires your approval before ChatGPT sends, publishes or changes information other people rely on. That is advice about prompts, not a setting.
 - *Per-tool control (7.4).* Each app, OpenAI's name for a connector, can have one of four levels: Always ask, Allow read actions, Allow low-risk actions or Allow all actions. Allow read actions reads without asking and asks before any change. At Allow low-risk actions, the product decides which actions count as low risk.
 - *Consequential actions (7.2).* ChatGPT is designed to ask you before actions that are hard to undo or that create a real-world commitment, such as a payment. When it works in its cloud browser, a browser on a separate computer in the cloud, it asks in the chat. These statements describe how it is meant to behave. They are not a guarantee. OpenAI lists sending messages, changing records, changing access, payments and sharing sensitive data as higher-risk actions.
-- *Tool order (7.5).* OpenAI advises using a connected app instead of the cloud browser when the app can do the task directly. ChatGPT may also make that choice on its own. In Atlas, OpenAI's web browser, agent mode pauses on sensitive sites such as banks.
+- *Tool order (7.5).* OpenAI advises using a connected app instead of the cloud browser when the app can do the task directly. ChatGPT may also make that choice on its own.
 - *Prompt injection (7.6).* OpenAI says an attack needs a source, a way to influence the system, and a sink, a capability that becomes dangerous in the wrong context. It says dangerous actions, or sending sensitive data, should not happen silently or without appropriate safeguards. Lockdown Mode limits outgoing requests. OpenAI says its app safeguards do not remove prompt-injection risk.
 - *Runs no one watches.* A scheduled task may pause when one of its actions needs approval.
 - *Admin policy (7.4).* Admins choose which read or write actions each app may use, and how new actions are treated. In workspace agents, write actions are set to Always ask by default.
-- *Standing worker, verified 23 October 2026.* A dot, OpenAI's always-on agent, starts with built-in rules for when to act alone and when to ask. Its Custom Rules let you allow an action, require approval for it or block it. A check called auto-review looks at actions that could affect your accounts or share information. It checks them against your instructions, your Custom Rules and OpenAI's safety requirements. Custom Rules cannot turn off the core safety requirements. The most sensitive actions, such as changing a password or moving money, need you to take over and finish them yourself. Approving one message gives the dot no ongoing permission. An approval given in advance covers only what you authorized.
+- *Standing worker, verified 21 November 2026.* A dot, OpenAI's always-on agent, starts with built-in rules for when to act alone and when to ask. Its Custom Rules let you allow an action, require approval for it or block it. A check called auto-review looks at actions that could affect your accounts or share information. It checks them against your instructions, your Custom Rules and OpenAI's safety requirements. Custom Rules cannot turn off the core safety requirements. The most sensitive actions, such as changing a password or moving money, need you to take over and finish them yourself. Approving one message gives the dot no ongoing permission. An approval given in advance covers only what you authorized.
 
 <!-- 7.8 boxes: end -->
