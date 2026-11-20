@@ -22,7 +22,7 @@ from tests.test_connector import HANDLE_KEY, START_MS, rpc
 from tests.tokens import DEFAULT_JWKS, ISSUER, RESOURCE, sign
 
 SIGN_IN = "Sign in to use the Brightline AP connector."
-# Chapter 19: Cedar Ridge has its own data. Since Lab 20 both companies have 16 open invoices, so an answer
+# Chapter 19: Cedar Ridge has its own data. Since Lab 21 both companies have 16 open invoices, so an answer
 # is known by its count and its first invoice: Brightline's INV-8301, Cedar Ridge's INV-6201.
 CEDAR_OPEN = 16
 BRIGHTLINE_OPEN = 16

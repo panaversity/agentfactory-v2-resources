@@ -1,4 +1,4 @@
-From *The AI Agent Factory*, Chapter 20, for the coding agents working in this repository. The chapter itself is the source.
+From *The AI Agent Factory*, Chapter 21, for the coding agents working in this repository. The chapter itself is the source.
 
 # Field guide: the two APIs and an open model, step by step
 
@@ -10,7 +10,7 @@ From *The AI Agent Factory*, Chapter 20, for the coding agents working in this r
 
 **Where to install the tools.** Node.js from nodejs.org, version 22.19 or later, the minimum that Lab 19 set. The test runner needs 22.12 or later. uv from docs.astral.sh/uv. Git from git-scm.com. The GitHub CLI from cli.github.com, then `gh auth login`. On Windows, WSL from Microsoft's "Install WSL" page (`wsl --install`). Python 3.12 or later comes with uv (`uv python install`).
 
-**What the zip holds.** `brightline-lab-ch20.zip` holds `brightline-ap/`, a plain folder with no git history. Task 0 starts its git history and tags `lab20-start`. The folder has what Chapter 19 left, plus the Chapter 20 files, and its README has the list. The zip also holds `answer-key/` at its top level, outside `brightline-ap/`. Never give the answer key to an agent.
+**What the zip holds.** `brightline-lab-ch20.zip` holds `brightline-ap/`, a plain folder with no git history. Task 0 starts its git history and tags `lab20-start`. The folder has what Chapter 19 left, plus the Chapter 21 files, and its README has the list. The zip also holds `answer-key/` at its top level, outside `brightline-ap/`. Never give the answer key to an agent.
 
 | Path | What it is |
 | --- | --- |
@@ -38,11 +38,11 @@ From *The AI Agent Factory*, Chapter 20, for the coding agents working in this r
 
 *OpenAI.* Sign in to the OpenAI platform dashboard, and add credits under billing. Make a project for this lab, and set its spend limit to $5 with a hard limit. To set it, choose *Project settings*, *Limits*, *Spend* and *Edit spend limit*, in that order, then turn on *Enforce a hard limit*. Make a key for that project, and copy it once into `.secrets/openai.env`.
 
-**Why each key gets its own small limit.** A key that leaks spends money until someone notices. A small limit on the key's own project or workspace keeps the damage small. The lab's own cost cap (20.8) limits the cost of each run.
+**Why each key gets its own small limit.** A key that leaks spends money until someone notices. A small limit on the key's own project or workspace keeps the damage small. The lab's own cost cap (21.8) limits the cost of each run.
 
 ## F2. The connector: route A or route B
 
-**Route A, your Chapter 19 staging connector.** The loop calls the connector's `/mcp` address with a test token for Ana at Brightline in an `Authorization: Bearer` header. On staging, Chapter 18 gives one way to get that token. The test signing key is never deployed (Chapter 18's F8), so the test person signs in through the staging sign-in server's real pages. Lab 18's sign-in matrix signs in the same way. `npm run token:test -- --person ana --company org_brightline` does just that, with Ana's password from `.secrets/test-users.staging.env` and the connector's address from `.secrets/staging.urls.env`. It writes `CONNECTOR_URL` and `CONNECTOR_TOKEN` into `.secrets/connector.env` and prints only the token's claims. A token lasts 10 minutes, the sign-in server's setting from Chapter 18. So ask your agent to run it again when the loop gets a 401. If you cannot make a token this way, take route B: everything in this chapter works on it. The loop runs as you, the builder, with that token. Chapter 22 explains why a product must never do this.
+**Route A, your Chapter 19 staging connector.** The loop calls the connector's `/mcp` address with a test token for Ana at Brightline in an `Authorization: Bearer` header. On staging, Chapter 18 gives one way to get that token. The test signing key is never deployed (Chapter 18's F8), so the test person signs in through the staging sign-in server's real pages. Lab 18's sign-in matrix signs in the same way. `npm run token:test -- --person ana --company org_brightline` does just that, with Ana's password from `.secrets/test-users.staging.env` and the connector's address from `.secrets/staging.urls.env`. It writes `CONNECTOR_URL` and `CONNECTOR_TOKEN` into `.secrets/connector.env` and prints only the token's claims. A token lasts 10 minutes, the sign-in server's setting from Chapter 18. So ask your agent to run it again when the loop gets a 401. If you cannot make a token this way, take route B: everything in this chapter works on it. The loop runs as you, the builder, with that token. Chapter 23 explains why a product must never do this.
 
 **Route A's data.** This lab's `data/` holds Lab 19's rows and three invoices the AP team entered since then, INV-8316 to INV-8318. So Brightline has 16 open invoices. Task 0 loads them into staging with `npm run tenant:load -- --company org_brightline --folder data --env staging --replace`. That command also embeds the policies again: one small metered call to the embeddings model from Chapter 19. Your dev database keeps Lab 19's 13 open invoices, which no task in this lab reads. Lab 19's database tests now expect the 16 open invoices, because the pull-request workflow loads them from these files. To run those tests on dev, first load dev with the test embedder they use. Set `AP_EMBEDDINGS=test` in `.secrets/embeddings.env` with your editor, and ask your agent to run `npm run tenant:load -- --company org_brightline --folder data --replace`. Then set it back to `workers-ai`.
 
@@ -99,7 +99,7 @@ Here is the same moment in the loop, on each API: the second request of Ana's qu
 
 Both are what the lab's wire tests capture from the real SDK clients, with long values shortened.
 
-**The pinned models.** `claude-sonnet-5-5` and `gpt-6-luna`, set in `src/loop/config.json`. Both ids appear in the pinned SDKs' own model lists. Before the run, check each one on its provider's models page. Also check that the OpenAI model supports function calling on the Responses API. Chapter 28 explains how to choose a model.
+**The pinned models.** `claude-sonnet-5-5` and `gpt-6-luna`, set in `src/loop/config.json`. Both ids appear in the pinned SDKs' own model lists. Before the run, check each one on its provider's models page. Also check that the OpenAI model supports function calling on the Responses API. Chapter 29 explains how to choose a model.
 
 ## F4. Stateful modes, and cleaning up
 

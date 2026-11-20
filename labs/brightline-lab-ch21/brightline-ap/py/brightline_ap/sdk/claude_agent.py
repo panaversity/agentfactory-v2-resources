@@ -1,6 +1,6 @@
-"""The AP worker on the first SDK: a harness used as a library (21.3 to 21.9).
+"""The AP worker on the first SDK: a harness used as a library (22.3 to 22.9).
 
-Every option below replaces a line of the Chapter 20 loop, or decides something the loop decided.
+Every option below replaces a line of the Chapter 21 loop, or decides something the loop decided.
 """
 
 from __future__ import annotations
@@ -39,7 +39,7 @@ class RunSummary:
     session_id: str
 
 
-# A custom tool, served in-process: the SDK runs this handler inside your own program (21.4).
+# A custom tool, served in-process: the SDK runs this handler inside your own program (22.4).
 @tool("flag_invoice", FLAG_DESCRIPTION, {"invoice_number": str, "reason": str})
 async def flag_invoice(args: dict[str, Any]) -> dict[str, Any]:
     return {"content": [{"type": "text", "text": write_flag(args["invoice_number"], args["reason"])}]}
@@ -52,26 +52,26 @@ KEEP = ["PATH", "HOME", "ANTHROPIC_API_KEY", "ANTHROPIC_BASE_URL", "CLAUDE_CODE_
 
 
 def worker_env() -> dict[str, str]:
-    """The subprocess gets these variables, and a request to send no nonessential traffic (21.8)."""
+    """The subprocess gets these variables, and a request to send no nonessential traffic (22.8)."""
     return {**{k: os.environ[k] for k in KEEP if k in os.environ}, "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1", "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1"}
 
 
 def isolate_environment() -> None:
     """In Python, env= is added to your whole environment, not put in its place (TypeScript replaces it).
-    So this process drops every other variable before it starts the subprocess (21.9)."""
+    So this process drops every other variable before it starts the subprocess (22.9)."""
     for k in list(os.environ):
         if k not in KEEP and k not in ("LANG", "TMPDIR", "VIRTUAL_ENV"):
             del os.environ[k]
 
 
 def claude_options(s: WorkerSettings, log: Callable[[str], None]) -> ClaudeAgentOptions:
-    # A hook: your code, run before every tool call (21.5). This one only writes a log line.
+    # A hook: your code, run before every tool call (22.5). This one only writes a log line.
     async def log_every_call(hook_input: HookInput, tool_use_id: str | None, context: HookContext) -> HookJSONOutput:
         if hook_input["hook_event_name"] == "PreToolUse":
             log(f"hook: {hook_input['tool_name']} {json.dumps(hook_input['tool_input'])}")
         return {}
 
-    # Everything not on the allow list comes here, and the rule in policy.py decides (21.5)
+    # Everything not on the allow list comes here, and the rule in policy.py decides (22.5)
     async def can_use_tool(name, tool_input, context):
         d = decide_tool(name, tool_input)
         log(f"permission: {name} -> {'allow' if d.allow else 'deny'}")
@@ -79,25 +79,25 @@ def claude_options(s: WorkerSettings, log: Callable[[str], None]) -> ClaudeAgent
 
     return ClaudeAgentOptions(
         model=s.model,
-        system_prompt=Path("prompts/ap-worker-sdk.v1.md").read_text(),  # Chapter 20: the instructions
-        tools=[],  # turn off every built-in tool: no shell, no files, no web (21.4)
-        setting_sources=[],  # read no settings files from this computer (21.9)
-        strict_mcp_config=True,  # use only the servers named below, never this computer's own (21.9)
-        env=worker_env(),  # pass the subprocess only what it needs (21.9)
+        system_prompt=Path("prompts/ap-worker-sdk.v1.md").read_text(),  # Chapter 21: the instructions
+        tools=[],  # turn off every built-in tool: no shell, no files, no web (22.4)
+        setting_sources=[],  # read no settings files from this computer (22.9)
+        strict_mcp_config=True,  # use only the servers named below, never this computer's own (22.9)
+        env=worker_env(),  # pass the subprocess only what it needs (22.9)
         mcp_servers={
-            # Chapter 20, Step 4: the connector, now connected by the harness, with the test token in a header
+            # Chapter 21, Step 4: the connector, now connected by the harness, with the test token in a header
             "brightline": {"type": "http", "url": s.connector_url,
                            "headers": {"Authorization": f"Bearer {s.connector_token}"}},
             "local": local_tools,
         },
-        allowed_tools=[f"mcp__brightline__{t}" for t in READ_TOOLS],  # these four run without asking (21.5)
-        permission_mode="default",  # say it: left out, the mode comes from settings files or the harness's own default (21.5)
+        allowed_tools=[f"mcp__brightline__{t}" for t in READ_TOOLS],  # these four run without asking (22.5)
+        permission_mode="default",  # say it: left out, the mode comes from settings files or the harness's own default (22.5)
         can_use_tool=can_use_tool,
         hooks={"PreToolUse": [HookMatcher(hooks=[log_every_call])]},
-        max_turns=s.max_turns,  # Chapter 20's turn limit (21.6)
-        max_budget_usd=s.max_budget_usd,  # Chapter 20's cost cap, now kept by the SDK (21.6)
-        resume=s.resume,  # read an earlier conversation back from its session file (21.7)
-        # Python has no persist_session option: pass the subprocess's own flag instead (21.7)
+        max_turns=s.max_turns,  # Chapter 21's turn limit (22.6)
+        max_budget_usd=s.max_budget_usd,  # Chapter 21's cost cap, now kept by the SDK (22.6)
+        resume=s.resume,  # read an earlier conversation back from its session file (22.7)
+        # Python has no persist_session option: pass the subprocess's own flag instead (22.7)
         extra_args={} if s.persist_session else {"no-session-persistence": None},
     )
 
@@ -108,22 +108,22 @@ async def ask_claude(question: str, s: WorkerSettings, show: Callable[[Any], Non
 
     async def run() -> None:
         nonlocal summary
-        # Chapter 20, Steps 1 to 5: one call runs the whole loop, and streams every message it makes (21.3)
+        # Chapter 21, Steps 1 to 5: one call runs the whole loop, and streams every message it makes (22.3)
         async for message in query(prompt=question, options=claude_options(s, log)):
             show(message)
             if isinstance(message, ResultMessage):
-                # The last message: why it stopped, the answer, the turns and the cost (21.3)
+                # The last message: why it stopped, the answer, the turns and the cost (22.3)
                 summary = RunSummary(message.subtype, message.result or "", message.num_turns,
                                      message.total_cost_usd or 0.0, message.session_id)
 
     try:
-        await asyncio.wait_for(run(), timeout=s.time_limit_seconds)  # Chapter 20's time limit stays yours
+        await asyncio.wait_for(run(), timeout=s.time_limit_seconds)  # Chapter 21's time limit stays yours
     except asyncio.TimeoutError:
         summary.stop = "time_limit"
-    except Exception as error:  # after a limit, the result message comes first, then this error (21.6)
+    except Exception as error:  # after a limit, the result message comes first, then this error (22.6)
         if summary.stop == "unknown":
             summary.stop = f"error: {error}"
-    # This SDK has no guardrail feature, so your own code checks the answer after the run: rule 2 (21.6)
+    # This SDK has no guardrail feature, so your own code checks the answer after the run: rule 2 (22.6)
     if summary.stop == "success" and not cites_policy_line(summary.answer):
         summary = RunSummary("no_citation", "", summary.turns, summary.cost_usd, summary.session_id)
     return summary

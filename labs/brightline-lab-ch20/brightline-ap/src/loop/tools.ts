@@ -1,4 +1,4 @@
-// A tool is a name, a description and a schema (Concept 20.2).
+// A tool is a name, a description and a schema (Concept 21.2).
 // The four AP tools are defined once, in tools/ap-tools.json, as JSON Schema.
 // Each API wants them in its own shape, so two small functions convert them.
 // The handler for every tool is the same: call the connector over MCP.
@@ -38,7 +38,7 @@ export interface ToolOutcome {
 // Your code runs the tool. The model only asked.
 export type RunTool = (name: string, input: unknown) => Promise<ToolOutcome>;
 
-// The authorization boundary (20.8): only the tools this worker was given may run,
+// The authorization boundary (21.8): only the tools this worker was given may run,
 // whatever name the model writes. The connector still checks every call (Chapters 18 and 19).
 export function allowOnly(runTool: RunTool, allowed = TOOL_SPECS.map((s) => s.name)): RunTool {
   const names = new Set(allowed);

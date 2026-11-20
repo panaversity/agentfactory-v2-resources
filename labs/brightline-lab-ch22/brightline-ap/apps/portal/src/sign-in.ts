@@ -1,6 +1,6 @@
 // Chapter 18's sign-in, from the portal's side: the helpers Task 10a uses. Nothing here runs yet.
 //
-// The portal is a confidential client (22.10): it proves who it is with a client secret, on its own
+// The portal is a confidential client (23.10): it proves who it is with a client secret, on its own
 // server, and the browser never sees a token. Two checks make a sign-in safe, as in Chapter 18:
 // PKCE proves the app that started the sign-in is the one finishing it, and `state` proves the answer
 // belongs to a sign-in this browser started. Both are kept in the portal's sign-in cookie until the

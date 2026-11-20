@@ -1,6 +1,6 @@
 // npm run token:test -- --person ana --company org_brightline [--connector ts|py] [--out .secrets/connector.env]
 //
-// Lab 20, route A: a sign-in token for one test person at one company, for your Chapter 19 staging
+// Lab 21, route A: a sign-in token for one test person at one company, for your Chapter 19 staging
 // connector, made the way Chapter 18 makes one on staging. The test signing key is never deployed
 // (Chapter 18, F8), so the person signs in through the staging sign-in server's real pages, as the
 // sign-in matrix does (scripts/lib/sign-in.ts), with the password from .secrets/test-users.staging.env.
@@ -16,11 +16,11 @@ import { claimsOf, signIn } from "./lib/sign-in.ts";
 
 const PEOPLE: Record<string, string> = {
   ana: "ana@brightline.example",
-  dana: "dana@cedarridge.example", // Lab 22, row S5
+  dana: "dana@cedarridge.example", // Lab 23, row S5
   grace: "grace@audit.example",
   luis: "luis@cedarridge.example",
   priya: "priya@books.example",
-  sam: "sam@junipertrail.example", // Lab 22, row S6
+  sam: "sam@junipertrail.example", // Lab 23, row S6
 };
 const KNOWN = new Set(["env", "person", "company", "connector", "out"]);
 
@@ -68,7 +68,7 @@ try {
 
 const base = signInServer(env);
 const app = await adminCall(base, "POST", "/admin/clients", {
-  client_name: `Lab 20 token:test ${new Date().toISOString()}`,
+  client_name: `Lab 21 token:test ${new Date().toISOString()}`,
   redirect_uris: ["http://127.0.0.1/callback"],
 });
 if (app.status !== 201) {

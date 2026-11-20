@@ -1,7 +1,7 @@
-// The portal's page rules (22.12): the security helper. It is OFF at lab22-start. Task 10c turns it on,
+// The portal's page rules (23.12): the security helper. It is OFF at lab22-start. Task 10c turns it on,
 // by setting SECURITY_ON to true and sending every response through withSecurity().
 //
-// Three parts, in the words of 22.12:
+// Three parts, in the words of 23.12:
 // - a content security policy that lets the page run only the portal's own scripts, so a script hidden in a
 //   vendor note cannot run, even if it ever reached the page as HTML;
 // - the sign-in cookie's settings: HttpOnly (no script can read it), Secure (sent only over https) and
@@ -50,7 +50,7 @@ export function formTokenMatches(sent: string | null, kept: string | undefined):
 }
 
 /** Text from a session, made safe to put into a page: every character that means something to HTML is
- *  written out, so a script in a vendor note shows as plain text (22.12). */
+ *  written out, so a script in a vendor note shows as plain text (23.12). */
 export function asText(s: string): string {
   return s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
 }

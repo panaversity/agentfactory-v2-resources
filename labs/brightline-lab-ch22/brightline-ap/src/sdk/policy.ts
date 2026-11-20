@@ -1,4 +1,4 @@
-// The worker's rules, written once and used by both SDKs (21.5, 21.6).
+// The worker's rules, written once and used by both SDKs (22.5, 22.6).
 // Each rule is a plain function you can test without a model, a network or a key.
 
 import { appendFileSync, mkdirSync } from "node:fs";
@@ -22,7 +22,7 @@ export function decideTool(name: string, input: Record<string, unknown>): Decisi
   return { allow: false, message: `Denied: ${short} is not one of this worker's tools.` };
 }
 
-// Rule 2 lives in src/rules/cites.ts since lab22-start, so the portal can use it too (Lab 22, Task 10b).
+// Rule 2 lives in src/rules/cites.ts since lab22-start, so the portal can use it too (Lab 23, Task 10b).
 export { citesPolicyLine } from "../rules/cites.js";
 
 // The one tool with an effect: it writes a flag to out/flags.jsonl, which holds the invoice's payment.

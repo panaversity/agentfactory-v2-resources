@@ -19,9 +19,9 @@ The checks: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:p
 
 Setup: Node 22.19 or later (24 recommended), uv, then `npm ci`, `cd py && uv sync`, and `npm run keys`, which makes every local secret into files git ignores and prints none.
 
-## The agent loop (Chapter 20)
+## The agent loop (Chapter 21)
 
-The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and Python. Coding agents wrote it. Read `AGENTS.md`, then do Lab 20's Task 0: install, run the offline tests, put your keys in `.secrets/`, fill in the prices in `src/loop/config.json`, and choose a connector.
+The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and Python. Coding agents wrote it. Read `AGENTS.md`, then do Lab 21's Task 0: install, run the offline tests, put your keys in `.secrets/`, fill in the prices in `src/loop/config.json`, and choose a connector.
 
 | Command | What it does |
 | --- | --- |

@@ -38,9 +38,9 @@ const connector = readEnvFile(".secrets/connector.env"); // CONNECTOR_URL and CO
 // CONNECTOR_URL in the environment overrides the file, for a second practice connector (Task 8b).
 const connectorUrl = process.env.CONNECTOR_URL ?? connector.CONNECTOR_URL;
 const connection = await connectToConnector(connectorUrl, connector.CONNECTOR_TOKEN);
-const runTool = allowOnly(connection.runTool); // the authorization boundary (20.8)
+const runTool = allowOnly(connection.runTool); // the authorization boundary (21.8)
 const close = connection.close;
-// The request deadline (20.8): the SDK cancels one attempt that takes longer than this.
+// The request deadline (21.8): the SDK cancels one attempt that takes longer than this.
 // It then retries, up to maxRetries times, so one call can take up to about three
 // deadlines. The run's time limit, checked before the next call, still stops the run.
 const REQUEST_DEADLINE_MS = 60_000;

@@ -19,9 +19,9 @@ The checks: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:p
 
 Setup: Node 22.19 or later (24 recommended), uv, then `npm ci`, `cd py && uv sync`, and `npm run keys`, which makes every local secret into files git ignores and prints none.
 
-## The agent loop (Chapter 20)
+## The agent loop (Chapter 21)
 
-The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and Python. Coding agents wrote it. Read `AGENTS.md`, then do Lab 20's Task 0: install, run the offline tests, put your keys in `.secrets/`, fill in the prices in `src/loop/config.json`, and choose a connector.
+The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and Python. Coding agents wrote it. Read `AGENTS.md`, then do Lab 21's Task 0: install, run the offline tests, put your keys in `.secrets/`, fill in the prices in `src/loop/config.json`, and choose a connector.
 
 | Command | What it does |
 | --- | --- |
@@ -44,9 +44,9 @@ The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and P
 | `py/brightline_ap/loop/claude_loop.py`, `openai_loop.py` | The loop on each API (Python) |
 | `tests/fixtures/loop/` | Recorded responses, illustrative, not from a live run |
 
-## The agent SDKs (Chapter 21)
+## The agent SDKs (Chapter 22)
 
-The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Python. Coding agents wrote it. Read the chapter's "Lab 21: getting ready" first, then `AGENTS.md`, then do Lab 21's Task 0. Lab 21 uses Lab 20's practice connector and data unchanged.
+The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Python. Coding agents wrote it. Read the chapter's "Lab 22: getting ready" first, then `AGENTS.md`, then do Lab 22's Task 0. Lab 22 uses Lab 21's practice connector and data unchanged.
 
 | Command | What it does |
 | --- | --- |
@@ -64,16 +64,16 @@ The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Pyt
 | `docs/worker-spec.md`, `docs/sdk-map.md`, `ports/ch21.md` | The worker's portable specification, the mapping table you fill in, and your record |
 | `docs/chapter-21/` | The chapter's concepts and its reference page, as text, for your coding agents to read |
 
-## Hosted agents (Chapter 22)
+## Hosted agents (Chapter 23)
 
-Lab 22 hosts the AP worker on a platform that runs its loop, and builds Brightline's AP portal around it. At `lab22-start` this folder adds:
+Lab 23 hosts the AP worker on a platform that runs its loop, and builds Brightline's AP portal around it. At `lab22-start` this folder adds:
 
 - `apps/portal/`: the portal's skeleton, a Cloudflare Worker whose routes answer 501 until the lab's tasks fill them in. Its offline tests: `npm run test:portal`, `npm run typecheck:portal`.
-- `src/rules/cites.ts`: Lab 21's rule 2, in a file of its own, so the portal can use it. `src/sdk/policy.ts` takes it from there.
+- `src/rules/cites.ts`: Lab 22's rule 2, in a file of its own, so the portal can use it. `src/sdk/policy.ts` takes it from there.
 - `data/companies.csv` and `data/test-people.csv`: every company's id and names, and the test people a test token may be made for.
 - `skills/invoice-triage/`: Chapter 16's skill, copied unchanged from `plugin/skills/invoice-triage/`, for the worker as files. Change both together, or neither.
 - A planted note on Cedar Ridge's vendor V102, added to its own note, for Task 8's injection check and the page check of row S7 (Task 12).
-- `agents/`, `environments/` and `deployments/`: empty until the lab's tasks write them. `ports/` keeps the earlier chapters' notes, and Lab 22 adds `ports/ch22.md`.
+- `agents/`, `environments/` and `deployments/`: empty until the lab's tasks write them. `ports/` keeps the earlier chapters' notes, and Lab 23 adds `ports/ch22.md`.
 - `docs/chapter-22/`: the chapter's concepts and field guide as text, for your agents.
 
-Labs 20 and 21's offline tests still pass: `npm run test:loop` and `npm run test:sdk` (47 in TypeScript), and `npm run test:loop:py` and `npm run test:sdk:py` (35 in Python). So do the portal skeleton's: `npm run test:portal` (20).
+Labs 21 and 22's offline tests still pass: `npm run test:loop` and `npm run test:sdk` (47 in TypeScript), and `npm run test:loop:py` and `npm run test:sdk:py` (35 in Python). So do the portal skeleton's: `npm run test:portal` (20).

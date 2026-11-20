@@ -1,4 +1,4 @@
-"""Streaming (Concept 20.11).
+"""Streaming (Concept 21.11).
 
 With streaming on, one response arrives as a series of server-sent events. Text
 arrives in pieces you can show at once. A tool call's input arrives as pieces of a
@@ -6,7 +6,7 @@ JSON string: join them, and parse only when the block ends.
 
 This reader is for showing a stream, not for driving the loop. It keeps the text and
 the finished tool calls, but not the thinking blocks and their signatures, which the
-loop must send back unchanged (20.5). To loop with streaming, keep the whole final
+loop must send back unchanged (21.5). To loop with streaming, keep the whole final
 message instead (the SDK's stream helper assembles it).
 
 An error in the middle of a stream: the SDK raises it from the async for loop below,

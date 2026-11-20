@@ -187,7 +187,7 @@ for (const lang of ["ts", "py"] as const) {
   }
   row(`D9 ${lang} six Cedar Ridge calls contain nothing of Brightline's`, leaks.length === 0, leaks.join(", ") || "none");
   // D10. Two companies at once through one copy, 100 pairs. Each answer must be the first page that person
-  // got alone, and the two people's pages must differ, so a crossed answer shows. (Since Lab 20, Brightline's
+  // got alone, and the two people's pages must differ, so a crossed answer shows. (Since Lab 21, Brightline's
   // 16 open invoices equal Cedar Ridge's 16, so the counts alone no longer tell the two companies apart.)
   const firstPage = (r: Awaited<ReturnType<typeof call>>): string => r.sc
     ? JSON.stringify([r.sc.total_count, (r.sc.invoices as { invoice_number: string }[]).map((i) => i.invoice_number)])

@@ -2,6 +2,8 @@
 
 These files go with Lab 22 of The AI Agent Factory: the same AP worker on two agent SDKs.
 
+**The numbers.** The book added a new Chapter 20, so this lab is now Lab 22, for Chapter 22. The repository keeps its earlier numbers in its names: the chapter's text is in `brightline-ap/docs/chapter-21/` (`21.5.md` holds 22.5), Chapter 21's is in `docs/chapter-20/`, your notes go in `ports/ch21.md`, and the start tag is `lab21-start`.
+
 - `brightline-ap/` is the repository at the end of Lab 21, with no git history, plus the lab's starting files: the worker on a tool runner and on both agent SDKs, in TypeScript (`src/sdk/`) and Python (`py/brightline_ap/sdk/`), its rules (`policy.ts`, `policy.py`), the scripts that ask (`npm run sdk`, `npm run sdk:py`), the offline tests, the worker's instructions (`prompts/ap-worker-sdk.v1.md`), its portable specification (`docs/worker-spec.md`), the mapping table you fill in (`docs/sdk-map.md`), and `docs/chapter-21/`, the chapter's concepts and reference page as text files for coding agents. Task 0 starts its git history.
 - `LAB.md` is a copy of the lab steps.
 - `answer-key/` holds what each task should show, and `files/`, what the repository holds at tag `ch21` that it did not at the start. Never give it to an agent.

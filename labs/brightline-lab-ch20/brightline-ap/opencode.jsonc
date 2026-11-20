@@ -51,7 +51,7 @@
     { "action": "shell", "resource": "*--yes-production*", "effect": "deny" },
     { "action": "shell", "resource": "npx wrangler secret put*", "effect": "deny" },
     { "action": "shell", "resource": "npx wrangler d1 execute brightline-auth *--remote*", "effect": "deny" },
-    // The agent loop (Lab 20): OpenCode's read tool may not open .secrets/, and live model calls always ask
+    // The agent loop (Lab 21): OpenCode's read tool may not open .secrets/, and live model calls always ask
     { "action": "read", "resource": ".secrets/*", "effect": "deny" },
     { "action": "shell", "resource": "cat .secrets*", "effect": "deny" },
     { "action": "shell", "resource": "npm run ask*", "effect": "ask" },

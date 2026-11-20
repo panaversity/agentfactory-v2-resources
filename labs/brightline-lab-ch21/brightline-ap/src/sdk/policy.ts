@@ -1,4 +1,4 @@
-// The worker's rules, written once and used by both SDKs (21.5, 21.6).
+// The worker's rules, written once and used by both SDKs (22.5, 22.6).
 // Each rule is a plain function you can test without a model, a network or a key.
 
 import { appendFileSync, mkdirSync } from "node:fs";

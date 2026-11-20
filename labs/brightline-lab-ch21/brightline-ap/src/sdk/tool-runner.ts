@@ -1,4 +1,4 @@
-// The first rung (21.1): the same client library as Chapter 20, with only the loop taken over.
+// The first rung (22.1): the same client library as Chapter 21, with only the loop taken over.
 // Compare this file with src/loop/claude.ts. Steps 2 to 5 of that loop are gone. Step 1's settings stay.
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -8,14 +8,14 @@ import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/
 import { readFileSync } from "node:fs";
 
 export async function askWithToolRunner(question: string, s: { connectorUrl: string; connectorToken: string; model: string; maxTurns: number }) {
-  // Your process still connects to the connector, as in Chapter 20
+  // Your process still connects to the connector, as in Chapter 21
   const mcp = new Client({ name: "brightline-ap", version: "1.0.0" });
   await mcp.connect(new StreamableHTTPClientTransport(new URL(s.connectorUrl), {
     requestInit: { headers: { Authorization: `Bearer ${s.connectorToken}` } },
   }));
   try {
     const { tools } = await mcp.listTools();
-    const client = new Anthropic(); // reads ANTHROPIC_API_KEY, retries twice, as in Chapter 20
+    const client = new Anthropic(); // reads ANTHROPIC_API_KEY, retries twice, as in Chapter 21
     // One call replaces the loop: call, keep, check, run each tool, return its result, call again
     const runner = client.beta.messages.toolRunner({
       model: s.model,
@@ -25,7 +25,7 @@ export async function askWithToolRunner(question: string, s: { connectorUrl: str
       tools: mcpTools(tools, mcp as Parameters<typeof mcpTools>[1]),
       messages: [{ role: "user", content: question }],
       max_iterations: s.maxTurns, // your turn limit, now an option
-      thread: false, // by default the runner keeps the conversation on the provider's side (21.1). false sends it all, as in Chapter 20
+      thread: false, // by default the runner keeps the conversation on the provider's side (22.1). false sends it all, as in Chapter 21
     });
     let turns = 0;
     for await (const message of runner) {

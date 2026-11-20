@@ -1,13 +1,13 @@
-// The AP portal: a Cloudflare Worker, brightline-portal (Lab 22). This is the skeleton the zip ships.
+// The AP portal: a Cloudflare Worker, brightline-portal (Lab 23). This is the skeleton the zip ships.
 // Every route answers 501 until the task that builds it fills it in. The tasks name each route:
 //
 //   GET  /sign-in                    Task 10a  start Chapter 18's sign-in (src/sign-in.ts)
 //   GET  /callback                   Task 10a  finish it, check the ID token, store the person's vault
 //   POST /question                   Task 10b  start a session for the signed-in person (src/hosted/start-session.ts)
-//   GET  /sessions/:id/stream        Task 10c  the session's events, for its own person only (22.12)
-//   POST /sessions/:id/confirmation  Task 10c  allow or deny a waiting tool call (22.8), with the form token
-//   POST /sessions/:id/interrupt     Task 10c  stop the session's current work (22.3)
-//   POST /hooks/claude               Task 17   the platform's signed messages, checked and deduplicated (22.15)
+//   GET  /sessions/:id/stream        Task 10c  the session's events, for its own person only (23.12)
+//   POST /sessions/:id/confirmation  Task 10c  allow or deny a waiting tool call (23.8), with the form token
+//   POST /sessions/:id/interrupt     Task 10c  stop the session's current work (23.3)
+//   POST /hooks/claude               Task 17   the platform's signed messages, checked and deduplicated (23.15)
 //
 // The security helper (src/security.ts) is off until Task 10c turns it on.
 import { withSecurity } from "./security.ts";
@@ -45,7 +45,7 @@ function text(body: string, status: number): Response {
 export async function handle(request: Request, _env: Env): Promise<Response> {
   const { pathname } = new URL(request.url);
   if (request.method === "GET" && pathname === "/") {
-    return text("Brightline's AP portal: the skeleton from the Lab 22 zip. Sign-in comes in Task 10a.\n", 200);
+    return text("Brightline's AP portal: the skeleton from the Lab 23 zip. Sign-in comes in Task 10a.\n", 200);
   }
   for (const r of ROUTES) {
     if (r.pattern.test(pathname)) {

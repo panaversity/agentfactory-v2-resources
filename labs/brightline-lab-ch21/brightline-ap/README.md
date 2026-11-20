@@ -19,9 +19,9 @@ The checks: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:p
 
 Setup: Node 22.19 or later (24 recommended), uv, then `npm ci`, `cd py && uv sync`, and `npm run keys`, which makes every local secret into files git ignores and prints none.
 
-## The agent loop (Chapter 20)
+## The agent loop (Chapter 21)
 
-The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and Python. Coding agents wrote it. Read `AGENTS.md`, then do Lab 20's Task 0: install, run the offline tests, put your keys in `.secrets/`, fill in the prices in `src/loop/config.json`, and choose a connector.
+The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and Python. Coding agents wrote it. Read `AGENTS.md`, then do Lab 21's Task 0: install, run the offline tests, put your keys in `.secrets/`, fill in the prices in `src/loop/config.json`, and choose a connector.
 
 | Command | What it does |
 | --- | --- |
@@ -44,9 +44,9 @@ The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and P
 | `py/brightline_ap/loop/claude_loop.py`, `openai_loop.py` | The loop on each API (Python) |
 | `tests/fixtures/loop/` | Recorded responses, illustrative, not from a live run |
 
-## The agent SDKs (Chapter 21)
+## The agent SDKs (Chapter 22)
 
-The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Python. Coding agents wrote it. Read the chapter's "Lab 21: getting ready" first, then `AGENTS.md`, then do Lab 21's Task 0. Lab 21 uses Lab 20's practice connector and data unchanged.
+The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Python. Coding agents wrote it. Read the chapter's "Lab 22: getting ready" first, then `AGENTS.md`, then do Lab 22's Task 0. Lab 22 uses Lab 21's practice connector and data unchanged.
 
 | Command | What it does |
 | --- | --- |

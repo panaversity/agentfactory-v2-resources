@@ -1,4 +1,4 @@
-From *The AI Agent Factory*, Chapter 20, for the coding agents working in this repository. The chapter itself is the source.
+From *The AI Agent Factory*, Chapter 21, for the coding agents working in this repository. The chapter itself is the source.
 
 ## Start here: what an agent is
 
@@ -24,7 +24,7 @@ An **agent** solves that problem. An agent is a model that can ask for actions, 
 
 That back and forth is the whole agent: two messages to the model, one tool run, one answer. The first column uses five short names for the loop's steps, and the rest of the chapter uses them too. Call means send everything to the model, and keep means add what it sent to the conversation. Check means see whether it asked for a tool, and run means run the tool. Return means add the result, and go back to call. The model never touched an invoice. It asked, and it read.
 
-*Figure 20.1. A chatbot can only write. An agent's program does what the model asks, and loops until the model is done.*
+*Figure 21.1. A chatbot can only write. An agent's program does what the model asks, and loops until the model is done.*
 
 **Four words you need to remember.** Every section of this chapter uses them.
 
@@ -48,9 +48,9 @@ That back and forth is the whole agent: two messages to the model, one tool run,
 
 **This is the chapter where you open the agent and look inside.** You now have the idea: a model that asks, a program that acts, and a loop between them. You may have heard it as one short sentence, "an agent is a model in a loop with tools". The agents you may have used, such as chat apps and coding agents, run that loop for you, where you cannot see it. In this chapter nothing is hidden. You see every line of the loop, run it, and watch every request go out and every response come back.
 
-**What you find inside is smaller than you might expect.** The model never runs a tool. It cannot. It sends back a request that says "please run this tool, with these inputs". Your code decides whether to run it, runs it, writes down the result and sends the whole conversation back. Then the model reads it and either asks for another tool or answers. That is the agent. An agent SDK, a code library that runs the whole loop for you, comes in Chapter 21. A hosted platform, a service that runs agents for you, comes in Chapter 22. Everything they add is built around this loop.
+**What you find inside is smaller than you might expect.** The model never runs a tool. It cannot. It sends back a request that says "please run this tool, with these inputs". Your code decides whether to run it, runs it, writes down the result and sends the whole conversation back. Then the model reads it and either asks for another tool or answers. That is the agent. An agent SDK, a code library that runs the whole loop for you, comes in Chapter 22. A hosted platform, a service that runs agents for you, comes in Chapter 23. Everything they add is built around this loop.
 
-*Figure 20.2. The whole agent, with nothing hidden. The model asks. Your code runs each tool, keeps the conversation and decides when to stop.*
+*Figure 21.2. The whole agent, with nothing hidden. The model asks. Your code runs each tool, keeps the conversation and decides when to stop.*
 
 **The model only asks. Your code decides whether to run each tool, owns the whole conversation, and decides when the loop stops.**
 
@@ -77,57 +77,57 @@ Start here explains model, agent, tool, tool call, loop, API, connector and MCP 
 
 | Word | Meaning |
 | --- | --- |
-| API | A way for one program to ask another to do something, over the internet (20.1) |
-| Endpoint | One web address of an API that takes a request and returns a response (20.1) |
-| Request, response | What your code sends to the model API, and what comes back, both as JSON (20.1) |
-| Agent, in code | A loop around a model API: call, keep, check, run, return (20.1) |
-| Tool definition | A tool's name, description and input schema, sent with every request (20.2) |
-| Wire test | A test that runs the real SDK client and captures exactly what it would send over the network. It makes no live call, as in the field guide's F3 (20.14) |
-| JSON Schema | The open standard for describing the shape of JSON data: its fields, which fields are required, and their types (20.2) |
-| Strict | An API setting that makes sure the model's tool inputs match the schema's shape. It says nothing about whether they are true (20.2) |
-| Tool choice | How free the model is to use tools. This chapter always uses "auto" (20.2) |
-| Turn | One request and its response (20.3) |
-| Content block | One piece of a response on the first API: text, thinking or a tool call (20.3) |
-| Stop reason | Why the model stopped writing: finished, wants a tool, out of tokens, declined, and a few more (20.3) |
-| Declined | The stop reason when the model will not do what was asked. A normal response, not an error (20.3) |
-| Tool call, call id | The model's request to run one tool, with a unique id (20.4) |
-| Tool result | Your code's answer to one tool call, carrying its id (20.4) |
-| Handler | The code that runs one tool when the model asks for it, and really checks its inputs (20.2) |
-| Parallel calls | Several tool calls in one response (20.4) |
-| Stateless | An API that keeps nothing between calls, so each request carries the whole history (20.5) |
-| Conversation array | The list of entries your code keeps and sends on every call (20.5) |
-| Thinking block | The model's reasoning before it answers, returned as content and sent back unchanged (20.5) |
+| API | A way for one program to ask another to do something, over the internet (21.1) |
+| Endpoint | One web address of an API that takes a request and returns a response (21.1) |
+| Request, response | What your code sends to the model API, and what comes back, both as JSON (21.1) |
+| Agent, in code | A loop around a model API: call, keep, check, run, return (21.1) |
+| Tool definition | A tool's name, description and input schema, sent with every request (21.2) |
+| Wire test | A test that runs the real SDK client and captures exactly what it would send over the network. It makes no live call, as in the field guide's F3 (21.14) |
+| JSON Schema | The open standard for describing the shape of JSON data: its fields, which fields are required, and their types (21.2) |
+| Strict | An API setting that makes sure the model's tool inputs match the schema's shape. It says nothing about whether they are true (21.2) |
+| Tool choice | How free the model is to use tools. This chapter always uses "auto" (21.2) |
+| Turn | One request and its response (21.3) |
+| Content block | One piece of a response on the first API: text, thinking or a tool call (21.3) |
+| Stop reason | Why the model stopped writing: finished, wants a tool, out of tokens, declined, and a few more (21.3) |
+| Declined | The stop reason when the model will not do what was asked. A normal response, not an error (21.3) |
+| Tool call, call id | The model's request to run one tool, with a unique id (21.4) |
+| Tool result | Your code's answer to one tool call, carrying its id (21.4) |
+| Handler | The code that runs one tool when the model asks for it, and really checks its inputs (21.2) |
+| Parallel calls | Several tool calls in one response (21.4) |
+| Stateless | An API that keeps nothing between calls, so each request carries the whole history (21.5) |
+| Conversation array | The list of entries your code keeps and sends on every call (21.5) |
+| Thinking block | The model's reasoning before it answers, returned as content and sent back unchanged (21.5) |
 
 **A second API (Part B)**
 
 | Word | Meaning |
 | --- | --- |
-| Item | One piece of the second API's single list of inputs or outputs: a message, a function call, a reasoning item, a function call output (20.6) |
-| Reasoning item | The second API's record of the model's reasoning, locked (encrypted) and sent back unchanged (20.6) |
-| Storage (`store`) | Whether the provider keeps each response. Off in this chapter (20.6) |
-| Stateful | An API mode that keeps the conversation on the provider's side, so each call names an earlier response instead of resending it (20.7) |
+| Item | One piece of the second API's single list of inputs or outputs: a message, a function call, a reasoning item, a function call output (21.6) |
+| Reasoning item | The second API's record of the model's reasoning, locked (encrypted) and sent back unchanged (21.6) |
+| Storage (`store`) | Whether the provider keeps each response. Off in this chapter (21.6) |
+| Stateful | An API mode that keeps the conversation on the provider's side, so each call names an earlier response instead of resending it (21.7) |
 
 **Safe to run, and the rest (Parts C and D)**
 
 | Word | Meaning |
 | --- | --- |
-| Turn limit, cost cap, time limit | The three stops your loop checks before every model call (20.8) |
-| Status code | The number that says how a call went: 200 for success, 400 and up for errors (20.9) |
-| Request id | A unique label for one request, which the provider asks for when you report a problem (20.9) |
-| Retry, backoff | Sending a failed request again, and waiting longer before each try (20.9) |
-| Trace, span | A record of one run, made of spans, one per step (20.10) |
-| OpenTelemetry, GenAI conventions | The open standard for traces, and its rules for naming model and tool spans, still at Development status (20.10) |
-| Streaming | Sending a response in pieces while it is written (20.11) |
-| Server-sent events | The web standard both APIs use to stream: small messages, each with a type, over one open connection (20.11) |
-| Delta | One piece of a streamed answer or of a tool call's input (20.11) |
-| Token, usage | A small piece of text the model reads or writes, and the count of them a response reports (20.12) |
-| Prompt caching | Keeping the repeated start of a request on the provider's side, so the next one reads it at a lower price (20.12) |
-| API version | A dated set of an API's rules, sent with every request as a header, a labeled line of text in the request. First met in 20.9 (20.13) |
-| SDK | A provider's library for calling its API from your language (20.13) |
-| Model pinning | Naming one exact model id, in one place, so a change happens only when you choose (20.13) |
-| API key | A secret that proves which account is asking, and which account pays (20.13) |
+| Turn limit, cost cap, time limit | The three stops your loop checks before every model call (21.8) |
+| Status code | The number that says how a call went: 200 for success, 400 and up for errors (21.9) |
+| Request id | A unique label for one request, which the provider asks for when you report a problem (21.9) |
+| Retry, backoff | Sending a failed request again, and waiting longer before each try (21.9) |
+| Trace, span | A record of one run, made of spans, one per step (21.10) |
+| OpenTelemetry, GenAI conventions | The open standard for traces, and its rules for naming model and tool spans, still at Development status (21.10) |
+| Streaming | Sending a response in pieces while it is written (21.11) |
+| Server-sent events | The web standard both APIs use to stream: small messages, each with a type, over one open connection (21.11) |
+| Delta | One piece of a streamed answer or of a tool call's input (21.11) |
+| Token, usage | A small piece of text the model reads or writes, and the count of them a response reports (21.12) |
+| Prompt caching | Keeping the repeated start of a request on the provider's side, so the next one reads it at a lower price (21.12) |
+| API version | A dated set of an API's rules, sent with every request as a header, a labeled line of text in the request. First met in 21.9 (21.13) |
+| SDK | A provider's library for calling its API from your language (21.13) |
+| Model pinning | Naming one exact model id, in one place, so a change happens only when you choose (21.13) |
+| API key | A secret that proves which account is asking, and which account pays (21.13) |
 
-**Two kinds of token.** In this chapter, a token is a piece of text the model reads or writes (20.12). The connector's sign-in token (Chapter 18) is something else. It is a credential your loop sends to the connector, never to the model.
+**Two kinds of token.** In this chapter, a token is a piece of text the model reads or writes (21.12). The connector's sign-in token (Chapter 18) is something else. It is a credential your loop sends to the connector, never to the model.
 
 ## Why it matters
 
@@ -135,25 +135,25 @@ This story is invented, but each failure in it is common. A small tax-preparatio
 
 Then the model provider changed a default setting, and a library update came with that change. Some questions started to cost twenty times what they had. One question, about a client with forty documents from earlier years, cost $38 before anyone noticed. The developer opened the logs and found nothing useful. The library had kept the conversation, retried on its own where nobody could see, and decided for itself when to stop. Nobody at the firm could say what had been sent to the model, how many times, or why it kept going.
 
-Three things were missing. Nobody could read the conversation that was sent on each call. Nothing in the firm's own code stopped a run that went on too long or cost too much. And there was no record of each model call and each tool call, so no one could tell which step had gone wrong. This chapter builds all three. Your code owns and logs the conversation (20.5), you set the stops yourself (20.8), and a trace records every step (20.10). Chapter 21 then adds an agent SDK, which runs the loop for you. You will know exactly what it does for you, because you have seen every line it replaces.
+Three things were missing. Nobody could read the conversation that was sent on each call. Nothing in the firm's own code stopped a run that went on too long or cost too much. And there was no record of each model call and each tool call, so no one could tell which step had gone wrong. This chapter builds all three. Your code owns and logs the conversation (21.5), you set the stops yourself (21.8), and a trace records every step (21.10). Chapter 22 then adds an agent SDK, which runs the loop for you. You will know exactly what it does for you, because you have seen every line it replaces.
 
 ## How this chapter works
 
 **You build as you read.** Each part teaches a few concepts, then a lab sitting uses them right away.
 
-*Figure 20.3. Read a part, then do its sitting.*
+*Figure 21.3. Read a part, then do its sitting.*
 
 | Part | What you read and do | What you have at the end |
 | --- | --- | --- |
-| **A. The loop** | 20.1 to 20.5, then setup and Sitting 1 | The loop, understood line by line, running on the first API in both languages |
-| **B. A second API** | 20.6 and 20.7, then Sitting 2 | The same loop on the second API, stateless, and a stateful run to compare |
-| **C. Safe to run** | 20.8 to 20.10, then Sitting 3 | Stops, errors and traces |
-| **D. The rest of the API** | 20.11 to 20.13, then Sitting 4 | Streaming, caching, pinning, a port to an open model, and the work shipped |
-| **The reference** | 20.14, the words, the field guide (F0 to F6), Check yourself | Nothing new to build. Each lab task names the field guide section it needs |
+| **A. The loop** | 21.1 to 21.5, then setup and Sitting 1 | The loop, understood line by line, running on the first API in both languages |
+| **B. A second API** | 21.6 and 21.7, then Sitting 2 | The same loop on the second API, stateless, and a stateful run to compare |
+| **C. Safe to run** | 21.8 to 21.10, then Sitting 3 | Stops, errors and traces |
+| **D. The rest of the API** | 21.11 to 21.13, then Sitting 4 | Streaming, caching, pinning, a port to an open model, and the work shipped |
+| **The reference** | 21.14, the words, the field guide (F0 to F6), Check yourself | Nothing new to build. Each lab task names the field guide section it needs |
 
-**Two kinds of library.** Your loop sends each request through the provider's own client library, its SDK (software development kit). That SDK only sends and receives, and retries a failed send. It never runs the loop. Every step of the loop stays in your code. Chapter 21's agent SDKs go further and run the whole loop for you, which is exactly what this chapter does by hand.
+**Two kinds of library.** Your loop sends each request through the provider's own client library, its SDK (software development kit). That SDK only sends and receives, and retries a failed send. It never runs the loop. Every step of the loop stays in your code. Chapter 22's agent SDKs go further and run the whole loop for you, which is exactly what this chapter does by hand.
 
-**Two APIs, no product names in the concepts.** The lab calls two model APIs: Claude's Messages API, then OpenAI's Responses API. They do the same job with different shapes, and no open standard covers both. So the concepts call them **the first API** and **the second API**, and show their requests and responses as neutral sketches. In the lab, the first API's loop is `claude.ts` (Python `claude_loop.py`), and the second API's is `openai.ts` (Python `openai_loop.py`). The lab, the field guide and 20.14 name the products and show their exact shapes. Where an open standard does apply, the concepts teach through it. There are four: JSON Schema for tool inputs, server-sent events for streaming, the OpenTelemetry GenAI conventions for traces, and MCP for the connector.
+**Two APIs, no product names in the concepts.** The lab calls two model APIs: Claude's Messages API, then OpenAI's Responses API. They do the same job with different shapes, and no open standard covers both. So the concepts call them **the first API** and **the second API**, and show their requests and responses as neutral sketches. In the lab, the first API's loop is `claude.ts` (Python `claude_loop.py`), and the second API's is `openai.ts` (Python `openai_loop.py`). The lab, the field guide and 21.14 name the products and show their exact shapes. Where an open standard does apply, the concepts teach through it. There are four: JSON Schema for tool inputs, server-sent events for streaming, the OpenTelemetry GenAI conventions for traces, and MCP for the connector.
 
 **Two languages.** Every file in the lab exists in TypeScript and in Python, the two languages of Chapters 13 and 14. They do the same thing step for step, though their line numbers differ a little. Start with the one you know better, then look quickly at the other. Tasks that name a line give its number in each language.
 
@@ -170,12 +170,12 @@ Three things were missing. Nobody could read the conversation that was sent on e
 
 | Path | Read | Do | Time in the lab | You can then |
 | --- | --- | --- | --- | --- |
-| Core | 20.1 to 20.10, 20.13, and the open-model part of 20.14 (for Task 12) | Tasks 0 to 10, 12 and 13 | About 5 hours 45 minutes | Explain, run, stop, debug and trace the loop on both APIs and an open model, and ship it |
-| Advanced | 20.11 and 20.12, and the reference's notes on other cloud services and cost detail | Task 11 | About 25 minutes more | Read a stream event by event, and see caching in the usage |
+| Core | 21.1 to 21.10, 21.13, and the open-model part of 21.14 (for Task 12) | Tasks 0 to 10, 12 and 13 | About 5 hours 45 minutes | Explain, run, stop, debug and trace the loop on both APIs and an open model, and ship it |
+| Advanced | 21.11 and 21.12, and the reference's notes on other cloud services and cost detail | Task 11 | About 25 minutes more | Read a stream event by event, and see caching in the usage |
 
 The advanced path is still on the exam. Streaming and caching are objectives of CCDV-F, a Claude certification exam this book prepares you for. So do the advanced path before you take the exam. Each heading on that path says "advanced path".
 
-**Time and cost.** The whole lab takes about 6 hours 10 minutes on route B (the practice connector). It takes up to an hour more on route A (your own connector). It costs a little money, because neither API has a free plan for API calls. Every run has a cost cap of 10 cents, and the whole lab should cost under $1 on each API. That figure is not yet confirmed by a live run. Managers can read Concepts 20.1, 20.3, 20.5, 20.7 and 20.8. They say what a loop is made of and what can go wrong.
+**Time and cost.** The whole lab takes about 6 hours 10 minutes on route B (the practice connector). It takes up to an hour more on route A (your own connector). It costs a little money, because neither API has a free plan for API calls. Every run has a cost cap of 10 cents, and the whole lab should cost under $1 on each API. That figure is not yet confirmed by a live run. Managers can read Concepts 21.1, 21.3, 21.5, 21.7 and 21.8. They say what a loop is made of and what can go wrong.
 
 ## What you will build
 
@@ -199,7 +199,7 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 6. **Tests that replay recorded responses,** so the loop can be checked with no network and no cost.
 7. **A port of the same loop** to an open model on your own computer.
 
-**Whose identity.** The loop acts as you, the builder, with a short-lived test token for the connector. That is fine on your own computer, for testing. It is not fine for a product. Chapter 22 gives each person their own token, and explains why a worker must never act as you.
+**Whose identity.** The loop acts as you, the builder, with a short-lived test token for the connector. That is fine on your own computer, for testing. It is not fine for a product. Chapter 23 gives each person their own token, and explains why a worker must never act as you.
 
 ## In this chapter
 
@@ -207,13 +207,13 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 
 **Part A. The loop, line by line.** *Five concepts, then the lab's setup and Sitting 1, where you work through the loop on the first API and run it.*
 
-- 20.1 What an agent is, in code
-- 20.2 A tool is a name, a description and a schema
-- 20.3 One turn: request, response and stop reason
-- 20.4 Running the tools and sending back the results
-- 20.5 The conversation is an array you own
+- 21.1 What an agent is, in code
+- 21.2 A tool is a name, a description and a schema
+- 21.3 One turn: request, response and stop reason
+- 21.4 Running the tools and sending back the results
+- 21.5 The conversation is an array you own
 
-*Then:* Getting ready for Lab 20 (Task 0), and Sitting 1 (Tasks 1 to 5).
+*Then:* Getting ready for Lab 21 (Task 0), and Sitting 1 (Tasks 1 to 5).
 
 **New words in this part.** Each is explained again where it first matters. Come back here if you forget one.
 
@@ -228,8 +228,8 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 
 **Part B. The same loop on a second API.** *Two concepts, then Sitting 2, where the same loop runs on the second API, stateless, and then stateful, so you can see what that hides.*
 
-- 20.6 The same loop, different shapes
-- 20.7 What a stateful mode hides
+- 21.6 The same loop, different shapes
+- 21.7 What a stateful mode hides
 
 *Then:* Sitting 2 (Tasks 6 and 7).
 
@@ -243,9 +243,9 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 
 **Part C. Making it safe to run.** *Three concepts: the stops you add, what to do when a call fails, and how to read a trace. Then Sitting 3, where you use them.*
 
-- 20.8 The stops you add yourself
-- 20.9 When the loop goes wrong
-- 20.10 Reading a trace
+- 21.8 The stops you add yourself
+- 21.9 When the loop goes wrong
+- 21.10 Reading a trace
 
 *Then:* Sitting 3 (Tasks 8 to 10).
 
@@ -259,11 +259,11 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 - Retry and backoff: sending a failed request again, and waiting a little longer before each new try.
 - Trace and span: a record of one run, made of spans, one per step.
 
-**Part D. The rest of the API a builder needs.** *Three shorter concepts, then Sitting 4. Concepts 20.11 and 20.12 are on the advanced path. Concept 20.13 is on the core path, because Task 13 uses it.*
+**Part D. The rest of the API a builder needs.** *Three shorter concepts, then Sitting 4. Concepts 21.11 and 21.12 are on the advanced path. Concept 21.13 is on the core path, because Task 13 uses it.*
 
-- 20.11 Streaming (advanced path)
-- 20.12 Tokens, caching and what a call costs (advanced path)
-- 20.13 Versions, models and keys
+- 21.11 Streaming (advanced path)
+- 21.12 Tokens, caching and what a call costs (advanced path)
+- 21.13 Versions, models and keys
 
 *Then:* Sitting 4 (Tasks 11 to 13).
 
@@ -275,9 +275,9 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 - SDK: a provider's code library for calling its API from your language.
 - Pinning: naming one exact version or model in one place, so it only changes when you choose.
 
-**The reference.** *The rest of the chapter is for looking things up. It shows how today's products realize each concept (20.14), and it collects every word the chapter uses. It also holds the field guide that each lab task points to, and Check yourself.*
+**The reference.** *The rest of the chapter is for looking things up. It shows how today's products realize each concept (21.14), and it collects every word the chapter uses. It also holds the field guide that each lab task points to, and Check yourself.*
 
-- 20.14 How today's tools realize it
+- 21.14 How today's tools realize it
 - Words this chapter uses
 - The field guide (F0 to F6)
 - Check yourself

@@ -1,4 +1,4 @@
-# Lab 20 answer key (for the reader, not for agents)
+# Lab 21 answer key (for the reader, not for agents)
 
 Every "live" row is what the authors expect from each API's documentation, not yet seen in a live run. "(run)" cells are filled in at the authors' run.
 
@@ -17,6 +17,6 @@ Every "live" row is what the authors expect from each API's documentation, not y
 | 8 | 6 requests, `turn_limit` | Tests: 6 requests and `turn_limit`, then `cost_cap` earlier. Live with `--max-turns 1`: `stop: turn_limit \| turns: 1` | (run) |
 | 9 | 400, 400, 401, no retry helps | temperature 400, forced-tool 400, bad-key 401 `authentication_error` | (run) |
 | 10 | An `execute_tool search_policy` span | Good run cites `po-matching.md:9`. Broken run: only `chat` spans | (run) |
-| 11 | Parse at block stop. Cache read from turn 2 | Event order as 20.11. With `--cache`, `cache_read_input_tokens` from turn 2, lower total | (run) |
+| 11 | Parse at block stop. Cache read from turn 2 | Event order as 21.11. With `--cache`, `cache_read_input_tokens` from turn 2, lower total | (run) |
 | 12 | The tool calls, not the shapes | No code change. Some runs may misuse tools or write broken arguments. Cost $0.0000 | (run) |
 | 13 | | Both reviews clean, clean clone passes the four checks | (run) |

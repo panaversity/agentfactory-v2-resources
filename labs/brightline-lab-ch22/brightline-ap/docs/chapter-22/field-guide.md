@@ -1,4 +1,4 @@
-From *The AI Agent Factory*, Chapter 22, for the coding agents working in this repository. The chapter itself is the source.
+From *The AI Agent Factory*, Chapter 23, for the coding agents working in this repository. The chapter itself is the source.
 
 # The field guide, F0 to F7
 
@@ -22,16 +22,16 @@ From *The AI Agent Factory*, Chapter 22, for the coding agents working in this r
 
 ## F1. The repository you start with
 
-**The zip.** `brightline-lab-ch22.zip` holds `brightline-ap/` as a plain folder, which Task 0 puts under git and tags `lab22-start`. The folder holds Chapter 19's connector in TypeScript and Python, the sign-in server, and the database migrations and loaders. It also holds both companies' data, and every check from Chapters 17 to 19. Then come Labs 20 and 21 on top, as Lab 21 ends. Their parts are the loop in `src/loop/`, the two SDK workers in `src/sdk/`, and their Python twins under `py/`. They also include the practice connector, Lab 21's `docs/worker-spec.md` and `docs/sdk-map.md`, and their offline tests. The new parts are `docs/worker-spec.template.md`, `docs/sdk-map.example.md`, `data/companies.csv` and `data/test-people.csv`. They also include `src/rules/cites.ts` (Lab 21's rule 2, in a file of its own), `agents/`, `environments/`, `skills/invoice-triage/` (Chapter 16's skill) and `deployments/`. Then comes `apps/portal/`, a portal skeleton: a Worker named `brightline-portal` with its sign-in, callback, question, stream, confirmation, interrupt and webhook routes stubbed. It also has a sign-in helper, a security helper that is off, its offline tests, and a README. The new parts also include the planted vendor note in `data-cedar/vendor-notes.csv` (Task 8), and `ports/omnara/README.md` with the pinned release. The last is this chapter as text in `docs/chapter-22/`, so your agents can read it. `answer-key/` sits at the top of the zip, outside `brightline-ap/`. Never give it to an agent.
+**The zip.** `brightline-lab-ch22.zip` holds `brightline-ap/` as a plain folder, which Task 0 puts under git and tags `lab22-start`. The folder holds Chapter 19's connector in TypeScript and Python, the sign-in server, and the database migrations and loaders. It also holds both companies' data, and every check from Chapters 17 to 19. Then come Labs 21 and 22 on top, as Lab 22 ends. Their parts are the loop in `src/loop/`, the two SDK workers in `src/sdk/`, and their Python twins under `py/`. They also include the practice connector, Lab 22's `docs/worker-spec.md` and `docs/sdk-map.md`, and their offline tests. The new parts are `docs/worker-spec.template.md`, `docs/sdk-map.example.md`, `data/companies.csv` and `data/test-people.csv`. They also include `src/rules/cites.ts` (Lab 22's rule 2, in a file of its own), `agents/`, `environments/`, `skills/invoice-triage/` (Chapter 16's skill) and `deployments/`. Then comes `apps/portal/`, a portal skeleton: a Worker named `brightline-portal` with its sign-in, callback, question, stream, confirmation, interrupt and webhook routes stubbed. It also has a sign-in helper, a security helper that is off, its offline tests, and a README. The new parts also include the planted vendor note in `data-cedar/vendor-notes.csv` (Task 8), and `ports/omnara/README.md` with the pinned release. The last is this chapter as text in `docs/chapter-22/`, so your agents can read it. `answer-key/` sits at the top of the zip, outside `brightline-ap/`. Never give it to an agent.
 
-**What you need standing first.** Lab 22's portal calls the connector and the sign-in server online, in staging. Task 0 stands them up from the zip in your own Cloudflare and Neon accounts, as Labs 18 and 19 did. If you finished Lab 19, start from the zip anyway, because it holds the new folders this lab needs. Task 9 adds the portal's client registration and its tables.
+**What you need standing first.** Lab 23's portal calls the connector and the sign-in server online, in staging. Task 0 stands them up from the zip in your own Cloudflare and Neon accounts, as Labs 18 and 19 did. If you finished Lab 19, start from the zip anyway, because it holds the new folders this lab needs. Task 9 adds the portal's client registration and its tables.
 
 ## F2. Claude Managed Agents from zero
 
 **The account (by you).**
 
 1. Go to the Claude Console (`platform.claude.com`), sign in, and add API credits under billing. The lab's expected Claude spend is under $8 (Before you start). Managed Agents access is on by default for every API account.
-2. Under *Settings*, make two workspaces, `brightline-staging` and `brightline-production`. A workspace is a separate space for keys, resources and spending. Set a monthly spending limit on each: $10 for staging, and for production whatever you budget from what your customers pay (22.5).
+2. Under *Settings*, make two workspaces, `brightline-staging` and `brightline-production`. A workspace is a separate space for keys, resources and spending. Set a monthly spending limit on each: $10 for staging, and for production whatever you budget from what your customers pay (23.5).
 
    **The trade-off in staging.** Your own key, the portal's staging key, CI and the test scripts all share the staging workspace. So any of them can see every staging vault and session. That is acceptable for test data only, and it is why `startTestSession` accepts only vaults marked as test vaults for people in `data/test-people.csv`. Production is stricter: its workspace holds only the portal's key and CI's service account, no person's key, and no test script runs there.
 3. Under *Settings*, *API keys*, choose *Create key*. Name it `brightline-lab-staging`, and set *Linked account* to yourself (the portal's keys in F6 link to a service account instead). Limit it to the single workspace `brightline-staging`, and choose an expiry of *30 days*. The Console offers 3 hours, 1 day, 7 days, 30 days, a custom length, or Never. An expiry is set when the key is made and cannot be changed later. A key that lasts 14 days or more gets a warning email a week before it expires. After expiry, requests fail with a 401 error.
@@ -39,7 +39,7 @@ From *The AI Agent Factory*, Chapter 22, for the coding agents working in this r
 
 **Budgets (Task 4).** A session's budget is set when the session is created. While the session runs, its `usage.list_cost` shows what it has spent at list price. To raise the cap, your product updates the session with a new budget at least one cent above the cost so far. Then the session continues from where it stopped.
 
-**The `ant` CLI.** The command-line tool for the platform. Claude Code installs it in Task 0, at the version the lab pins (below). The vendor's quickstart installs it with `brew install anthropics/tap/ant` on macOS, and with the release binary from the `anthropic-cli` GitHub releases on Linux or WSL. On November 5, 2026, the latest release was 2.7.0, and the lab pins 2.5.0. Or, with Go 1.25 or later, it runs `go install github.com/anthropics/anthropic-cli/v2/cmd/ant@v2.5.0`. Pin it, as 20.13 and 21.9 pinned every package: install that exact version, not the latest. Homebrew installs the latest, so on macOS use the release binary or `go install` to pin it. `ant --version` checks it. It reads the key from `ANTHROPIC_API_KEY`, which `npm run agent:apply` loads from `.secrets/anthropic.env` without printing it. `ant apply` needs CLI 1.30.0 or later, and vaults in files need 1.34.0 or later.
+**The `ant` CLI.** The command-line tool for the platform. Claude Code installs it in Task 0, at the version the lab pins (below). The vendor's quickstart installs it with `brew install anthropics/tap/ant` on macOS, and with the release binary from the `anthropic-cli` GitHub releases on Linux or WSL. On November 5, 2026, the latest release was 2.7.0, and the lab pins 2.5.0. Or, with Go 1.25 or later, it runs `go install github.com/anthropics/anthropic-cli/v2/cmd/ant@v2.5.0`. Pin it, as 21.13 and 22.9 pinned every package: install that exact version, not the latest. Homebrew installs the latest, so on macOS use the release binary or `go install` to pin it. `ant --version` checks it. It reads the key from `ANTHROPIC_API_KEY`, which `npm run agent:apply` loads from `.secrets/anthropic.env` without printing it. `ant apply` needs CLI 1.30.0 or later, and vaults in files need 1.34.0 or later.
 
 **The beta.** Every Managed Agents endpoint needs the beta header `managed-agents-2026-04-01`. The SDKs and `ant` set it. Sessions are not eligible for zero data retention or HIPAA, because their transcripts are kept until you delete them.
 
@@ -113,29 +113,29 @@ In plain words: a cloud sandbox whose only open door is the connector's host. A 
 
 The concepts wrote events in plain words. Here are the names the lab's platform uses. The stream and the webhook names differ in places.
 
-| Plain words (22.3) | Event on the stream | Notes |
+| Plain words (23.3) | Event on the stream | Notes |
 | --- | --- | --- |
 | in, message | `user.message` | |
 | in, confirmation | `user.tool_confirmation` | With `tool_use_id`, `result` (`allow` or `deny`), optional `deny_message` |
 | in, interrupt | `user.interrupt` | |
-| in, goal | `user.define_outcome` | 22.17 |
+| in, goal | `user.define_outcome` | 23.17 |
 | out, tool call (built-in) | `agent.tool_use` | Carries `evaluated_permission`: `allow`, `ask` or `deny` |
 | out, tool call (connector) | `agent.mcp_tool_use` | The same |
 | out, tool result | `agent.tool_result`, `agent.mcp_tool_result` | |
 | out, message | `agent.message` | |
 | out, thinking | `agent.thinking` | A progress signal only. It carries no thinking text |
 | status running | `session.status_running` | |
-| status idle, with a stop reason | `session.status_idle` with `stop_reason` | `end_turn` (finished, or interrupted by you. The same name as a model call's stop reason in 20.3, one level up), `requires_action` with the blocking `event_ids`, `budget_reached` (raise the budget to resume) |
+| status idle, with a stop reason | `session.status_idle` with `stop_reason` | `end_turn` (finished, or interrupted by you. The same name as a model call's stop reason in 21.3, one level up), `requires_action` with the blocking `event_ids`, `budget_reached` (raise the budget to resume) |
 | retried | `session.status_rescheduled` | A brief error on the platform's side |
 | terminated | `session.status_terminated` | |
 | error | `session.error` | Typed, with `retry_status`. `mcp_authentication_failed_error`, `mcp_connection_failed_error` |
 | usage | `session.usage` | Running list cost |
 | (webhook) idle, for any stop reason | `session.status_idled` | Note the different name. A budget stop also sends `session.budget_reached` |
-| (webhook) refresh failed | `vault_credential.refresh_failed` | 22.14 |
+| (webhook) refresh failed | `vault_credential.refresh_failed` | 23.14 |
 
 **Reconnecting a dropped stream.** The platform's advice is to open a new stream and list the session's full event history, to collect the ids you have seen. Then read the new stream, and skip any event whose id you have already seen. `scripts/session.ts` and the portal both do this.
 
-The three logs in 22.3 are simplified, in the platform's documented shapes. Your own run shows the full events.
+The three logs in 23.3 are simplified, in the platform's documented shapes. Your own run shows the full events.
 
 ## F4. Vaults, in detail
 
@@ -173,7 +173,7 @@ In plain words: a vault for one person and company, labeled so people can tell v
 
 **The `refresh` block.** `token_endpoint` (the sign-in server's token address, which cannot change after creation), `client_id`, `scope`, `refresh_token`, and `token_endpoint_auth`, which is `none`, `client_secret_basic` or `client_secret_post`. The portal is a confidential client, so the lab uses `client_secret_post`, with the client secret in the block. Every secret field is write-only: never returned by any read.
 
-*Rules.* One active credential per `mcp_server_url` per vault (a second is a 409 error). At most 20 credentials per vault. Credentials are not checked when created: a bad one shows up as an error in the session, which keeps running. With no matching credential, the call goes out with no token. With several attached vaults that match, the first vault with a match wins (22.11). In a session with several agents, the vault applies to every one of them.
+*Rules.* One active credential per `mcp_server_url` per vault (a second is a 409 error). At most 20 credentials per vault. Credentials are not checked when created: a bad one shows up as an error in the session, which keeps running. With no matching credential, the call goes out with no token. With several attached vaults that match, the first vault with a match wins (23.11). In a session with several agents, the vault applies to every one of them.
 
 **Who can use a vault.** Vaults belong to a workspace: any API key with access to that workspace can name them when it creates a session. The platform does not know which of your users a vault belongs to. That is why the portal's `agent_vaults` table, and its check of the signed-in person, are the boundary.
 
@@ -196,7 +196,7 @@ Whether the fallback becomes part of the lab waits for a live run. A second cred
 
 **What arrives.** Each delivery has `webhook-id`, `webhook-timestamp` and `webhook-signature` headers, and a body that holds ids, not whole objects. The SDK's `unwrap()` checks the signature and refuses a body more than five minutes old. The deliveries follow the Standard Webhooks scheme, and the portal uses `unwrap()` rather than writing its own check. The timestamp is made fresh on each retry, so retries pass. Use the body's `created_at` for when the event happened.
 
-**Retries and drops.** Up to three attempts, 5 to 120 seconds apart, with the same event id. After the last failure the event is dropped with no further sign, so the portal reconciles once an hour (22.15). An endpoint is turned off after a redirect, a private address, or failures that continue.
+**Retries and drops.** Up to three attempts, 5 to 120 seconds apart, with the same event id. After the last failure the event is dropped with no further sign, so the portal reconciles once an hour (23.15). An endpoint is turned off after a redirect, a private address, or failures that continue.
 
 *On your computer.* A webhook needs a public address, so local runs read the event stream instead. The portal's receiver runs in staging and production only.
 

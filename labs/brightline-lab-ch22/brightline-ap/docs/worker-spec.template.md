@@ -1,6 +1,6 @@
-# Worker contract: the AP worker, hosted (Lab 22)
+# Worker contract: the AP worker, hosted (Lab 23)
 
-*This replaces Lab 21's portable specification for a worker that serves many people. Git keeps Lab 21's version. The last section says what happens to each of its rows.*
+*This replaces Lab 22's portable specification for a worker that serves many people. Git keeps Lab 22's version. The last section says what happens to each of its rows.*
 
 ## Purpose
 <one paragraph: who asks, what they ask, what a good answer gives them>
@@ -28,8 +28,8 @@
 ## Reach
 <the hosts a run may reach, and why each>
 
-## From Lab 21's specification
-| # | Lab 21's row, in short | On the hosted worker | Concept |
+## From Lab 22's specification
+| # | Lab 22's row, in short | On the hosted worker | Concept |
 | --- | --- | --- | --- |
 | 1 | Answer for Ana, following the prompt file | | |
 | 2 | Five tools, no shell, no files, no web | | |

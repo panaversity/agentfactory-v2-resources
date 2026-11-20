@@ -1,6 +1,6 @@
-# Lab 22, Task 16: answer key
+# Lab 23, Task 16: answer key
 
-For you, after the task. Open it in a text editor, never in the agent. Nothing in Lab 22 has been run live yet: every result here is what the platforms' documentation and the lab page lead us to expect, so if your run differs, your run is the evidence, and you record what you saw in `ports/ch22.md`. The offline checks, the type checks, Labs 20 and 21's tests and the portal skeleton's tests, were run on macOS on November 6, 2026.
+For you, after the task. Open it in a text editor, never in the agent. Nothing in Lab 23 has been run live yet: every result here is what the platforms' documentation and the lab page lead us to expect, so if your run differs, your run is the evidence, and you record what you saw in `ports/ch22.md`. The offline checks, the type checks, Labs 21 and 22's tests and the portal skeleton's tests, were run on macOS on November 6, 2026.
 
 **What good looks like:** `mcp_authentication_failed_error`, then `invalid` from the check, and a page for Luis saying he needs to sign in again. After he signs in, the same credential id with new secret values, and a normal answer.
 

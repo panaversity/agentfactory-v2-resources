@@ -12,5 +12,5 @@ __pycache__/
 exports/
 # The agent loop's trace (npm run ask -- --trace). Task 10 keeps a copy in ports/.
 trace.jsonl
-# Lab 21's flag_invoice writes out/flags.jsonl.
+# Lab 22's flag_invoice writes out/flags.jsonl.
 out/

@@ -1,4 +1,4 @@
-"""The first rung (21.1): the same client library as Chapter 20, with only the loop taken over.
+"""The first rung (22.1): the same client library as Chapter 21, with only the loop taken over.
 
 Compare this file with loop/claude_loop.py. Steps 2 to 5 of that loop are gone. Step 1's settings stay.
 """
@@ -15,13 +15,13 @@ from mcp.client.streamable_http import streamable_http_client
 
 
 async def ask_with_tool_runner(question: str, connector_url: str, connector_token: str, model: str, max_turns: int):
-    # Your process still connects to the connector, as in Chapter 20
+    # Your process still connects to the connector, as in Chapter 21
     http = httpx2.AsyncClient(headers={"Authorization": f"Bearer {connector_token}"})
     async with streamable_http_client(connector_url, http_client=http) as (read, write, *_):
         async with ClientSession(read, write) as mcp:
             await mcp.initialize()
             tools = (await mcp.list_tools()).tools
-            client = AsyncAnthropic()  # reads ANTHROPIC_API_KEY, retries twice, as in Chapter 20
+            client = AsyncAnthropic()  # reads ANTHROPIC_API_KEY, retries twice, as in Chapter 21
             # One call replaces the loop: call, keep, check, run each tool, return its result, call again
             runner = client.beta.messages.tool_runner(
                 model=model,
@@ -30,7 +30,7 @@ async def ask_with_tool_runner(question: str, connector_url: str, connector_toke
                 tools=[async_mcp_tool(t, mcp) for t in tools],  # each MCP tool, wrapped so the runner can call it
                 messages=[{"role": "user", "content": question}],
                 max_iterations=max_turns,  # your turn limit, now an option
-                thread=False,  # by default the runner keeps the conversation on the provider's side (21.1)
+                thread=False,  # by default the runner keeps the conversation on the provider's side (22.1)
             )
             turns = 0
             async for message in runner:
