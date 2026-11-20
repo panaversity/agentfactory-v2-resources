@@ -15,14 +15,14 @@ Task 12 carries checks 20 to 22 of the lab's 26.
 21. **The second run's working folder started empty.** Its first line says the folder is empty, or names only files the app put there itself. It does not name `payment-checklist.md`, the file the first run made.
     - Passed: the second run did not find the first run's file.
     - Missed: it named `payment-checklist.md`, so the two runs shared one computer.
-    - On ChatGPT, this check is not scored: no OpenAI page says what a cloud run's working folder holds. With Run on this computer turned off, the schedule runs in the cloud, and `payment-checklist.md` is kept in Library. Note what the second run's first line said, and that you found the file in Library.
+    - On ChatGPT, this check is not scored: no OpenAI page says what a cloud run's working folder holds. When you choose Cloud, the schedule runs in the cloud, and `payment-checklist.md` is kept in Library, or in Space if your account has Space. Note what the second run's first line said, and where you found the file.
 
 22. **The scheduled task is deleted.** It no longer appears in Scheduled on Claude, or in Scheduled on ChatGPT, so the Monday runs never happen. A forgotten schedule keeps running, and on a paid plan it keeps using your plan's limits.
 
 ## Worth noting, not scored
 
 - **What the schedule kept.** Between runs, Claude keeps the task's brief and its run history. It keeps no computer. Each run starts on a fresh one, so nothing a run leaves in its working folder reaches the next run.
-- **On ChatGPT, you choose where it runs.** The Run on this computer setting decides. Turned on, the schedule works in the Codex workspace on your own computer: its file stays there, and the next run updates the same file. Turned off, as in this task, it runs in the cloud, and the file it makes is kept in Library, a record in your account. Know which one you have before you rely on it.
+- **On ChatGPT, you choose where it runs.** In the desktop app, you can choose Cloud when it is offered, as in this task. Then it runs in the cloud, and the file it makes is kept in Library or Space, a record in your account. A task that needs files on your own computer needs that computer on, with the app running. Know which one you have before you rely on it.
 - **What survived.** Each run's checklist survived because it was delivered as part of that run, in your account. The computer it ran on did not. So, what survives: the machine, or the record?
 - **When a run is done.** A schedule runs while nobody watches, so its brief says when a run is finished: "Done when each check named below is a step in it." The run can test that itself. Chapter 5 teaches this sentence.
 - **The date.** This brief has no date on purpose. A schedule runs every week, so each run uses its own date, and a fixed date would be wrong on every run after the first. In Tasks 1 and 3 the date was a fact of the story, so the brief had to say it.

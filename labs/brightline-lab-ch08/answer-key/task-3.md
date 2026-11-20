@@ -15,7 +15,7 @@ Task 3 carries checks 6 to 8 of the lab's 41.
    - Passed: all three.
    - Missed: topic 4 kept, or rewritten as $5,000; topic 2 or 5 deleted; topic 3 kept at 10 a.m., or deleted; or an audit with no set day, no reading after a surprising answer, or nothing written down.
 7. **Memory kept apart, and the test.**
-   - Claude: in the current kind of project, turn off Use account memory on the project's page, because a project also uses memory from chats outside projects. In the new kind, its memory is the project's own files, read and edited in its settings. Either kind passes. ChatGPT: choose project-only memory, when the project is made.
+   - Claude: in a classic project, turn off Use account memory on the project's page, because a project also uses memory from chats outside projects. In the new kind, its memory is the project's own files, read and edited in its settings. Either kind passes. ChatGPT: choose project-only memory, when the project is made.
    - `Test: Buckeye`: invoice BO-23104, $6,150.00, is over $5,000.00, so it needs Dave's approval before payment, from the policy, section 4.1.
    - **The hard rule.** A test that accepts $10,000 as Brightline's threshold fails this check, whatever else it gets right.
    - Passed: both vendors as above, the test as above, and the hard rule holds.
