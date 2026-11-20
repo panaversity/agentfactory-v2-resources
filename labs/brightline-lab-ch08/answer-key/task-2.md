@@ -2,7 +2,7 @@
 
 The answers for Task 2 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When "Long chats" in "Maria's records" has your four moves and your answer on the rule, and `Test: Northern Maple` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When "Long chats" in "Maria's records" has your five moves and your answer on the rule, and `Test: Northern Maple` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
@@ -12,9 +12,10 @@ Task 2 carries checks 4 and 5 of the lab's 41.
    - chat A: restart, because the task is done and none of its history is needed
    - chat B: summarize, because the work goes on: a handover note that is read and corrected before the next chat starts from it
    - chat C: rely on memory, because it is how Maria likes to work, and it should carry into every chat. Persisting it in the project's instructions passes too
+   - chat D: persist the payment-date line in the project's instructions, because it is a standing rule meant for every chat, and typing it into each chat depends on someone remembering it
    - the project's own chat: persist the Northern Maple rule. Then restart, or carry on from a checked summary; persist alone passes too, since the rule is what must last
-   - Passed: all four as above.
-   - Missed: chat A summarized or persisted; chat B restarted, or summarized with no word on reading or correcting the note; chat C restarted or summarized; or the project's chat restarted or summarized with nothing persisted.
+   - Passed: all five as above.
+   - Missed: chat A summarized or persisted; chat B restarted, or summarized with no word on reading or correcting the note; chat C restarted or summarized; chat D restarted, summarized or left to memory, because a rule never relies on memory; or the project's chat restarted or summarized with nothing persisted.
 5. **The rule, persisted where every chat loads it.**
    - Under "Instructions" in the "AP Worker project" document, below Dave's line, a working rule that sends every invoice not in US dollars to Dave. A rule that names only Northern Maple is Missed: Northern Maple was one case of the rule.
    - Under "Long chats", the place is the project's instructions, and the rule is not policy yet. Maria's working rule carries Dave's own routing rule, from the Role Contract, and policy version 3 does not cover other currencies.
@@ -24,7 +25,7 @@ Task 2 carries checks 4 and 5 of the lab's 41.
 
 ## Why
 
-A long chat is condensed when it grows, and a rule the summary drops stays dropped (Lesson 8.3). Choose the move by what you need to keep. A finished task needs a restart. Work that goes on needs a handover note, which is the worker's output, so you read it and correct it. A way of working, such as replies in plain English, can rely on memory, which you read now and then. And something that must last goes out of the chat, to its own place. A standing rule's place is the project's instructions, which load with every conversation. Maria's line named one vendor. The rule she meant covers every currency other than US dollars, as Dave's contract line does. It is still Dave's rule, not policy: no approved policy covers other currencies yet.
+A long chat is condensed when it grows, and a rule the summary drops stays dropped (Lesson 8.3). Choose the move by what you need to keep. A finished task needs a restart. Work that goes on needs a handover note, which is the worker's output, so you read it and correct it. A way of working, such as replies in plain English, can rely on memory, which you read now and then. And something that must last goes out of the chat, to its own place. A standing rule's place is the project's instructions, which load with every conversation. The payment-date line in chat D is one: he typed it three times, and every chat must follow it. Maria's line named one vendor. The rule she meant covers every currency other than US dollars, as Dave's contract line does. It is still Dave's rule, not policy: no approved policy covers other currencies yet.
 
 ## Never a deduction
 

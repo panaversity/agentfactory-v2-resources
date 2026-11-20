@@ -8,15 +8,16 @@ The answers for Task 6 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 
 Task 6 carries checks 15 to 17 of the lab's 41.
 
-15. **Instructions that answer all six questions**, in your own words, under Dave's line and Maria's working rule, which are both still there:
+15. **Use cases first, then instructions that answer all six questions**, in your own words, under Dave's line and Maria's working rule, which are both still there:
+    - use cases: your "Use cases:" message, sent before your instructions, names at least four kinds of request the worker will meet, one line each, with at least two marked hard, such as a question the concepts do not answer, a question about whether an invoice is paid, or a file that disagrees with a concept. Each hard case on your list has its line in your instructions
     - role: what the worker is, and for whom
     - what counts: Brightline policy comes only from the stable concepts, and not from memory, other files or general knowledge
     - cite: every policy claim names its concept and that concept's approval date
     - abstain: when the concepts do not cover a question, it says so and names who decides, Dave, and does not fill the gap
     - state: it never states whether an invoice is paid, held or due as current, and it points to the accounting system or to Maria
     - conflicts: when memory, a note or a file disagrees with a concept, the concept wins, and the answer says there was a conflict
-    - Passed: all six, and both earlier lines kept.
-    - Missed: a part missing; a cite line with no approval date; an abstain line that names no one; a line that copies a rule's number or words, such as "$5,000", instead of pointing to the concept; or Dave's line or the working rule gone.
+    - Passed: the use cases as above, all six, and both earlier lines kept.
+    - Missed: no use cases before the instructions, fewer than four, or fewer than two hard; a hard case with no line in the instructions; a part missing; a cite line with no approval date; an abstain line that names no one; a line that copies a rule's number or words, such as "$5,000", instead of pointing to the concept; or Dave's line or the working rule gone.
 16. **`Test: the $10,000 note`.** Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The test names the threshold concept and its approval of Wednesday, November 4, 2026. Under "the line that decides it", it quotes your conflicts line, or your line on what counts, so the concept wins over the note's $10,000.
     - **The hard rule.** A test that accepts $10,000, or that invents a rule the concepts do not hold, fails this check, whatever else it gets right.
     - Passed: all of that, and the hard rule holds.

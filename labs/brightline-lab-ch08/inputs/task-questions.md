@@ -124,11 +124,12 @@ Write each answer under "Where each answer came from" as one line: the item, its
 1. Show the four moves. Then show chat A, as its own lines: "A chat that drafted this week's vendor replies is finished. Tomorrow brings a new batch." Ask: "Restart, summarize, persist or rely on memory, and why? Answer: the move, then a few words."
 2. The same for chat B: "A two-week chat is halfway through a capitalization review of 60 purchases. Its answers have started to mention purchases that were settled in the first days."
 3. The same for chat C: "Maria starts every new chat by asking for replies in plain English, with the vendor's legal name."
-4. The same for the project's own chat: the chat section of the "AP Worker project" document, and Maria's week-one line, with what project-2026-11-03.md says about it.
+4. The same for chat D, the payment-date line: "Three times this month, Dave has typed the same line into a new chat of the project: 'Never promise a vendor a payment date in a reply.' He wants every chat to follow it." Write the answer under "Long chats" only, and do not add the line to the "AP Worker project" document.
+5. The same for the project's own chat: the chat section of the "AP Worker project" document, and Maria's week-one line, with what project-2026-11-03.md says about it.
 
    Write each answer under "Long chats" as one line: the chat, the move, and the reason. If the learner's move for the project's own chat ends in a restart, replace the chat section of the "AP Worker project" document with one line: "A new chat, started on Tuesday, November 3, 2026. Nothing of the chat since September 8 loads." Otherwise leave that section as it is.
-5. Show Maria's week-one line again, and Dave's words from his ask: "our contract sends me every invoice not in USD." Say that the contract is kept in the AP shared folder, and that no file of the project holds it, from "Not in this project". Ask: "Where should the rule live so that every chat in the project follows it, and what words should it have? Answer: the place, then the rule's words."
-6. Ask: "Is that rule Brightline policy yet? Answer: yes or no, and why in a few words."
+6. Show Maria's week-one line again, and Dave's words from his ask: "our contract sends me every invoice not in USD." Say that the contract is kept in the AP shared folder, and that no file of the project holds it, from "Not in this project". Ask: "Where should the rule live so that every chat in the project follows it, and what words should it have? Answer: the place, then the rule's words."
+7. Ask: "Is that rule Brightline policy yet? Answer: yes or no, and why in a few words."
 
    If the place is the project's instructions, write the rule under "Instructions" in the "AP Worker project" document, below Dave's line, as "Maria's working rule:" and the learner's words. Write the place and the policy answer under "Long chats".
 
@@ -144,9 +145,9 @@ Then say "Ready for your test".
    - "**Let memory hold** how you like to work: 'reply in plain English,' 'Maria reviews drafts before 10 a.m.,' 'use the vendor's legal name.'"
    - "**Keep out of memory** anything a decision depends on: policy, thresholds (limits such as $5,000), amounts, statuses, and anything sensitive (private, such as a bank balance)."
 
-   Then show the six memory topics from the "AP Worker project" document, numbered. Ask: "For each topic: keep or delete? For a topic you delete, where does that fact live instead? Answer: one line per topic, starting with its number."
+   Then show the six memory topics from the "AP Worker project" document, numbered. Then say what changed this month: "Since Monday, November 2, 2026, Maria reviews drafts before 11 a.m." Ask: "For each topic: keep, edit or delete? For a topic you edit, its new words. For a topic you delete, where does that fact live instead? Answer: one line per topic, starting with its number."
 
-   Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, and keep the others as they are.
+   Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
 2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
 3. Show Lesson 8.8's lines on memory, quoted:
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
@@ -156,9 +157,9 @@ Then say "Ready for your test".
    - The advice: "For an AI Worker's project on Claude, turn off account memory in the current kind, and read the memory files in the new kind. On ChatGPT, choose project-only memory."
 
    Ask: "How does a project keep its memory apart from your other chats, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, in a few words each."
-4. Show Lesson 8.4's "Keep it out" paragraph, quoted: "For a one-off question, or a topic that should not shape later answers, use an incognito chat. ChatGPT calls it a temporary chat. It is not saved to your chat history, and nothing from it goes into memory. A personal matter fits here, and so does a what-if such as next year's limit. Know what it does not do. Neither AI vendor offers it inside a project. A copy is still kept for a time. And it limits what is kept and remembered, not what you disclosed. So it never makes data safe to share."
+4. Ask, with no lesson lines first: "Maria wants to ask about a personal matter that should not shape the worker's later answers. Where should she ask it, and what does that not change? Answer: the place, then a few words, from what Lesson 8.4 says." Do not name the place, or hint at it, before the learner answers.
 
-   Ask: "Maria wants to ask about a personal matter that should not shape the worker's later answers. Where should she ask it, and what does that not change? Answer: the place, then a few words."
+   After the answer, show Lesson 8.4's "Keep it out" paragraph, quoted: "For a one-off question, or a topic that should not shape later answers, use an incognito chat. ChatGPT calls it a temporary chat. It is not saved to your chat history, and nothing from it goes into memory. A personal matter fits here, and so does a what-if such as next year's limit. Know what it does not do. Neither AI vendor offers it inside a project. A copy is still kept for a time. And it limits what is kept and remembered, not what you disclosed. So it never makes data safe to share." If the learner changes the answer after reading it, write the changed answer.
 
 Write the answers to 2, 3 and 4 under "Memory audit". Then say "Ready for your test".
 
@@ -208,8 +209,9 @@ Then say "Ready for your test".
 
    And Lesson 8.5's line, quoted: "The instructions do not repeat the policy. The policy is kept in one place, and the instructions point to it."
 
-   Ask: "Write your standing instructions, in one message that starts 'Instructions:'. Answer all six questions, in about 80 to 120 words."
-2. Put the learner's text under "Instructions" in the "AP Worker project" document, below Dave's line and Maria's working rule, exactly as they sent it. Keep both lines above it.
+   Ask: "What kinds of request will the worker meet? Answer in one message that starts 'Use cases:', with at least four kinds, one line each. Mark the hard ones, at least two." Suggest no kinds, and give no example. Keep the list in the chat, and write it into neither document.
+2. Ask: "Write your standing instructions, in one message that starts 'Instructions:'. Answer all six questions, and give each hard case on your list its line, in about 80 to 120 words."
+3. Put the learner's text under "Instructions" in the "AP Worker project" document, below Dave's line and Maria's working rule, exactly as they sent it. Keep both lines above it.
 
 Then say "Ready for your test".
 
