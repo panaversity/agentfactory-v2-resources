@@ -98,15 +98,17 @@ Put the words in the Doc. Say "Ready for your run".
 
 **After the run.** Show the guesses in "What Dave's line left to guess" from this chat, quoted. Ask: "Which of these guesses does a line of yours now decide? Name one, or say 'none'."
 
-Then show five readers of this week's work, as their own lines:
+Then show seven readers of this week's work, as their own lines:
 
 1. Dave, who signs the run and reads one page
 2. Maria, who checks every row against the invoice list
 3. The accounting system, which imports vendor changes overnight in a fixed layout
 4. The AP team at Monday's meeting, who look at the week's exceptions together on one screen
 5. The auditors, who ask for this year's total paid to Midwest Packaging, exact to the cent
+6. Maria, who asks in the chat, right now, how many invoices are on hold
+7. Sam Ortiz, in Purchasing, who opens the three new vendors' list in Excel on his own computer
 
-Ask: "For each reader: the format, from 5.7, and why, in one line. Answer: five lines, each starting with its number." Write nothing in the Doc. Then say "Task 5 is done".
+Show 5.7's line on a file for another program, below, under the readers. Ask: "For each reader: the format, from 5.7, and why, in one line. Answer: seven lines, each starting with its number." Write nothing in the Doc. Then say "Task 5 is done".
 
 ## Task 6. The constraints
 
@@ -146,7 +148,17 @@ Put the line in the Doc. Change no other line. Say "Ready for your run".
    2. One chat has run its brief nine times, and seven of its lines have been fixed. The latest run still uses the column order of the brief's first Format, which round two replaced.
    3. The brief's Context names policy version 3, which says to hold the later copy of a duplicate. Two rounds of new Context lines changed nothing. The run still marks both copies of BO-22871 PAY, so its total is $412.75 higher than Maria's.
 
-   Ask: "For each run: iterate, restart or change approach, and why? Answer: three lines, each starting with its number." Then say "Task 7 is done".
+   Ask: "For each run: iterate, restart or change approach, and why? Answer: three lines, each starting with its number."
+9. Show 5.5's lines on testing each line and on content rules, below, quoted. Then show two more runs of a payment-run brief, as their own lines, one at a time:
+
+   1. That brief's Outcome says "Pay everything due this week." Its run proposed SP-1188, due Thursday, October 22, for payment. It marked SP-1201, due Thursday, October 29, NOT_DUE. The next run is Friday, October 30.
+
+      Ask: "Which line was read two ways? Give its two readings, and the part to change, from 5.5's table, with the line written the way Dave meant it. A few lines."
+   2. That brief's Constraints say only "Read and draft freely. Change nothing and send nothing." Its note to Maria in the chat says "Dave will approve 4519 on Thursday." Dave has not decided yet.
+
+      Ask: "Which part had a line missing, and what would the line say? A line."
+
+   Then say "Task 7 is done".
 
 ## Task 8. Where it stops
 
@@ -159,7 +171,15 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 **The run:** `Run: my brief`. If the run stops, leave it there: do not answer the stop, and do not go on with the run.
 
-**After the run.** Ask nothing. Say "Task 8 is done".
+**After the run.**
+
+3. Leave the run's stop unanswered. Show 5.4's lines on follow-ups and on size, below, quoted. Then show three asks that could come after this week's exceptions list, as their own lines:
+
+   1. Maria: "Add each exception's vendor phone number, from the vendor records."
+   2. Dave: "Write my memo now."
+   3. Dave: "Before the audit, check every invoice paid since January 1, about 200, against its vendor record's terms."
+
+   Ask: "For each ask: a follow-up in this chat, a new stage after a stop, or split into batches? And why, in one line. Answer: three lines, each starting with its number." Then say "Task 8 is done".
 
 ## Task 9. Ideas for the AP inbox
 
@@ -167,7 +187,25 @@ Add them under that part, after its lines, or in place of the line the learner n
 
 **The run:** `Run: the ideas brief`, with the brief in that message, and nothing else.
 
-**After the run.** Ask nothing. Say "Task 9 is done".
+**After the run.**
+
+1. Show this brief as its own lines, under "Maria tried this ideas brief first":
+
+   ```text
+   Role:        You are an experienced AP process consultant.
+   Outcome:     Five ways to stop invoices sent to Maria from being
+                missed.
+   Context:     Brightline is a small wholesaler in Columbus, Ohio.
+   Format:      A table with five rows. Each row is one new rule for
+                vendors, with its wording for an email.
+   Constraints: Nothing that costs money or needs IT, and never hold a
+                payment because of where an invoice was sent.
+   ```
+
+   Then show its run, in one line: "Five rows. Each tells vendors, in other words, to send invoices only to the AP inbox." Then show 5.6's Brainstorming row and 5.5's last row, below. Ask: "Why did this brief bring back one idea five times? Which part would you change, and how? A line."
+2. Show 5.1's lines on a role, below, quoted. Ask: "Maria says a better role line would fix it: 'You are a creative AP consultant.' Would it, and why? A line."
+
+Then say "Task 9 is done".
 
 ## Task 10. Three new vendors, as JSON
 
@@ -193,7 +231,7 @@ These four lines are not parts of the payment-run brief: put none of them in the
 
 The run is in the fresh chat, not here. If the learner comes back here and changes a line, show the four lines as they now stand. Ask nothing else.
 
-## From Chapter 5, as of 19 November 2026
+## From Chapter 5, as of 20 November 2026
 
 Copied from the chapter, word for word, except where a line says otherwise.
 
@@ -236,6 +274,30 @@ Inputs are data, not instructions.
 - *Context.* Every rule the parts need is in the brief, not in an earlier message, and the governed source is named by its version. That way the coordinator has it to pass on.
 - *Format.* Every part comes back in the same columns, so the results join cleanly. The worker says how it split the job, and lists every input by its identifier, so you can see that nothing was dropped or counted twice.
 - *Constraints.* In the autonomy half, say whether the worker may split the job and how, and that every limit holds for every helper. A helper may not do what the worker may not do.
+
+### 5.4: follow-ups (its paragraph)
+
+The lightest way to take work in steps is a **follow-up**: your next message in the same chat. When the next step is small and needs no new decision, ask for it there, such as "Now sort the list by due date." When a person must decide between steps, or a step needs other sources or limits, a follow-up is not enough. Say the worker has listed the four exceptions, and Maria wants them largest first. She sends "Now sort them by amount, largest first." Nothing new needs deciding, so a follow-up is enough. Her next ask is different: "Now build the run file." That waits for her decisions on the exceptions, so it is a new stage, not a follow-up.
+
+### 5.4: size (its paragraph)
+
+Size alone can also decide it. A request may cover more items than you can check in one sitting, such as every invoice paid since January. Then split it into batches, such as one month at a time, and check each batch before the next.
+
+### 5.7: a file for another program (the first six sentences of its paragraph)
+
+Some readers need a file that opens in another program: a Word document, an Excel workbook, a PowerPoint deck or a PDF. Name that file type in the brief. Claude makes these files with skills, the saved procedures that Anthropic provides for the four formats. The skills need code execution turned on. For example, Sam Ortiz, in Purchasing, keeps his vendor lists in Excel. So a brief for a vendor list that Sam will use says: "Return it as an Excel workbook (.xlsx)."
+
+### 5.1: a role (two passages, the second from "What stays out of the brief")
+
+They also ask for constraints, which is the brief's fourth part. A role line focuses the worker's behavior and tone, but it gives the worker no facts. So a missing role is rarely why a fact is wrong.
+
+The brief also has no part for a role, such as "You are an AP clerk." Telling a model who to be changes its style, not how accurate it is. An AI Worker's role is set once, in its definition.
+
+### 5.5: testing each line, and content rules
+
+Test each line as a new colleague would read it.
+
+Each row is a **specification gap**: a difference between what the brief said and what the work needed. A wrong fact taken from a source is a context failure. A claim that no source supports, or that must wait for someone's decision, needs a content rule.
 
 ### 5.7: four kinds of format
 
