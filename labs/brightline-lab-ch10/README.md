@@ -6,10 +6,10 @@ Chapter 10 of *The AI Agent Factory*, Second Edition. Every name, address, invoi
 
 | Path | What it is |
 | --- | --- |
-| `LAB.md` | The lab: the job, and thirteen tasks, each checked against its own answer key the moment it is done. |
-| `inputs.zip` | The one file you give the AI, in Task 1. It holds the AP Worker's Role Contract, Draft 6, Brightline's files for early December, part of the vendor master, Monday's cases, what each AI vendor's own pages say, and the questions the AI asks you in each task. You don't need to open it. |
+| `LAB.md` | The lab: the job, and fourteen tasks, each checked against its own answer key the moment it is done. |
+| `inputs.zip` | The one file you give the AI, in Task 1. It holds the AP Worker's Role Contract, Draft 6, Brightline's files for early December, part of the vendor master, Monday's cases, what each AI vendor's own pages say, a sample of staff use from March 2027 for the last task, and the questions the AI asks you in each task. You don't need to open it. |
 
-**The lab's day.** Every task is set on Friday, December 11, 2026. The tests decide Monday, December 14.
+**The lab's day.** Tasks 1 to 13 are set on Friday, December 11, 2026, and the tests decide Monday, December 14. Task 14 is set three months later, on Monday, March 15, 2027.
 
 **The lab needs nothing from an earlier chapter.** Everything it starts from is in this folder, the Role Contract included.
 

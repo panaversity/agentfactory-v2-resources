@@ -6,7 +6,9 @@ The answers for Task 3 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 3 carries checks 6 to 9 of the lab's 32.
+Task 3 carries checks 6 to 9 of the lab's 34.
+
+For check 7, you answer before the AI shows the lesson's lines, and your first answer stays in the document. A changed answer after the lines passes too, when you said why.
 
 6. **The tiers, and what the check keeps.**
    - `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `state`, `zip`: yellow, keep. Red also passes, because a sole proprietor's name next to an address is a person's data.
@@ -43,6 +45,8 @@ Ask what the task needs, not what the file holds (10.2). Finding duplicates need
 A free-text column can name a person, a health detail or a dispute after the name column is gone (10.2). Read it, or leave it out. Two of these notes look harmless. The others hold a vendor's medical leave, a family member and a dispute, and finding duplicates needs none of them. So the whole column goes.
 
 Then test the cut file against answers you already know. Maria knows four pairs and one pair that only looks like one. A check that finds the four and leaves the Union pair apart shows the cut kept what the task needs. Take the tax IDs out as well, and the file looks safer, but the check gets worse: Rosa Delgado and Delgado Cleaning Services share only a surname and a town, and the two Union companies share a name and a ZIP code. That is redaction that breaks the task.
+
+At work, a file for analysis is still an upload (10.2). Code execution needs the file, so the whole file goes in, with every column the question never uses. So you cut the file before you upload it, never after.
 
 ## Never a deduction
 

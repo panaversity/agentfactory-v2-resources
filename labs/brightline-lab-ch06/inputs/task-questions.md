@@ -203,9 +203,9 @@ Dave's question, as the lab page prints it: "It's 4 p.m. on Thursday, October 29
 This task has no review.
 
 1. Show the problems in the Review findings, by number, each in a few words with the learner's decision. Then show 6.2's three verdicts, below. Then show Dave's question. Ask: "Approve as delivered, approve after named fixes, or return? One of the three, or a verdict in 6.2's words, and a line of why."
-2. Only if the learner chose fixes, or answered "requires revision" or "requires human correction": show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "Which fixes, by the findings' numbers? Which checks run again, by letter? And what must Dave approve from his own login first? A few words for each."
+2. Unless the learner chose approve as delivered: show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "What must be fixed, by the findings' numbers, and who fixes each: the worker, or a person? And what must Dave approve from his own login first? A few words for each." If the learner chose fixes, also ask: "Which checks run again, by letter? A few words."
 3. Show the problems in the Review findings again, by number, one at a time, each in a few words, with 6.2's three verdicts. For each, ask: "Requires revision, or requires human correction? The verdict, and a few words of why."
-4. Show the names of the six parts of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
+4. Show the names of the four parts and two stages of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
 
 Write the answers under "The decision on the package" in the Review findings, and show it. Say "Task 9 is done".
 
@@ -222,7 +222,9 @@ This task has no review. The learner sends "Task 10" with approved-memo-2026-11-
 3. Ask: "What must her version keep from the memo, and what shape must it take? A few words."
 4. Ask: "Is there anything else it must use? A few words, or 'no'."
 
-Then write Linda's version in the chat, under "For Linda", from the chosen memo and the learner's answers only. Use nothing else: nothing from package/, sources/, the Docs, an answer key or the rest of this chat. Keep every fact of the memo that no answer changes. Write nothing in either Doc. Say "Task 10 is done".
+Then write Linda's version in the chat, under "For Linda", from the chosen memo and the learner's answers only. Use nothing else: nothing from package/, sources/, the Docs, an answer key or the rest of this chat. Keep every fact of the memo that no answer changes. Write nothing in either Doc.
+
+5. Ask: "Does this version fit Linda, for her call on Friday? Yes or no, and why, in a line. If no, say what to change." Wait for the answer. If the learner names a change, write Linda's version again, as below. Say "Task 10 is done".
 
 If the learner sends a change after a check, write Linda's version again from the memo and all of the learner's answers, the change included.
 

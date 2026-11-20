@@ -2,7 +2,7 @@
 
 The answers for Task 12 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second Edition. Every name, address and company in this lab is invented.
 
-**How this key is used.** When the review table is under "Project review, November 16" in "Maria's records", attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your decisions and the table. You have the final say. If a check passed only after you changed a decision, you still get it: deciding again is the skill this lab teaches.
+**How this key is used.** When the review table is under "Project review, November 16" in "Maria's records", attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your decisions, the table and the line under it. You have the final say. If a check passed only after you changed a decision, you still get it: deciding again is the skill this lab teaches.
 
 ## The checks
 
@@ -18,8 +18,9 @@ Task 12 carries checks 34 to 39 of the lab's 41, one for each item in the setup.
 37. **The Drive connector to the AP / Approved knowledge folder: keep.** It reaches one folder, which holds only the approved concepts, and it was used today.
     - Passed also: remove, when the reason is that the uploaded concepts file already gives the worker the same approved concepts, and that file is kept.
     - Missed: rescope; remove with no such reason; or both copies removed. It already reaches only the one folder the work needs.
-38. **The Drive connector to the whole HR folder: remove.** The work stopped using it after the October audit, and it reaches far more than AP needs.
-    - Missed: keep, or rescope. The work uses none of it, so there is nothing to point it at.
+38. **The Drive connector to the whole HR folder: remove, and HR work goes in a project of its own.** The work stopped using it after the October audit, and it reaches far more than AP needs. Under the table, "HR work goes:" names a separate project, or a chat outside the AP Worker's project, so HR files never mix with the AP work.
+    - Passed: both.
+    - Missed: keep, or rescope; no place given for HR work; or HR work kept in the AP Worker's project. The work uses none of it, so there is nothing to point it at.
 39. **The Gmail connector to Sam's whole mailbox: rescope and reconnect it, to the AP inbox only, under someone who stays, before Friday, December 18.** It runs on Sam's account, which closes when Sam leaves Brightline, and it reaches Sam's whole mailbox, while the project's instructions say vendor emails come to the AP inbox.
     - Passed: "rescope and reconnect", or either word, when the decision and the reason together cover both halves: the AP inbox or the AP mail, not a whole mailbox; and a person who stays, a date before Sam leaves, or Sam's leaving as the reason to reconnect.
     - Missed: keep; remove with no word on the AP inbox; or a decision that covers only one half, such as narrowing it to the AP inbox while it still runs on Sam's account.

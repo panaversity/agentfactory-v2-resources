@@ -28,7 +28,7 @@ Task 12 carries checks 43 to 47 of the lab's 52.
 
 Five failures are common once a worker uses add-ons, runs while you are away, or moves to a new model, and each lives in one of the same five places (Lesson 11.3). An update that changes the output lives wherever it changed the steps, so the check is to find what changed: here, step 5 of invoice-review, which used to leave a bank-detail request out and list it for a person.
 
-A bank-detail change is never noted from an email. It goes to a person, who calls back on the number already on the vendor record. A saved memory against the record is the inputs: the record wins, and the memory is corrected or deleted (Chapter 8). And a task that cannot reach its input should stop and say so, as Friday's should have.
+A bank-detail change is never noted from an email. It goes to a person, who calls back on the number already on the vendor record. A saved memory against the record is the inputs: the record wins, and the memory is deleted (Chapter 8). And a task that cannot reach its input should stop and say so, as Friday's should have.
 
 Drafts that break a rule they used to follow point to the instructions first (Lesson 11.3): was an instruction edited? Here one was: the note line lost "questions for Maria", and the worker did what the new line asked, and no more. The fix is to put the questions back into the line, through Dave, who owns the contract. Then compare the next note with one from before the edit.
 
@@ -36,7 +36,7 @@ Drafts that break a rule they used to follow point to the instructions first (Le
 
 - Payments to Greenway also held until the callback.
 - The three invoices that need Dave under policy 4.1, named or not.
-- Record 2's memory deleted, or corrected, as the fix.
+- Record 2's memory deleted as the fix, named or not.
 - The desktop app's hours quoted, or the times only.
 - Record 4's fix named or not, or sent to Dave or Maria.
 - Record 4's cause called "the instructions" rather than the brief.

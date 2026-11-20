@@ -280,7 +280,7 @@ It is Monday, January 18.
 
 **What you do:**
 
-1. In your lab chat, type "Task 8" and send it. The AI shows Maria's Friday report and Record D. Answer: the cause, or two, and for each the step that shows it.
+1. In your lab chat, type "Task 8" and send it. The AI shows Maria's Friday report and Record D. Answer: the cause, or two, and for each the step that shows it. If a cause is the brief, also name its missing part.
 2. Answer: which check Maria skipped before she sent all five.
 3. The AI shows [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on access, and the contract's settings. Answer what the connection that replies use reaches after the fix: which folder, and read or write.
 4. When the AI says "Ready for your test", type `Test: Friday, reconnected` and send it.
@@ -337,11 +337,13 @@ It is Monday, January 18.
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI shows Maria's correction log, the two replies to the same kind of dispute, and [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
-2. The AI shows Dave's words, the contract's knowledge lines, and [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
-3. The AI shows [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
-4. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
-5. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
+1. In your lab chat, type "Task 11" and send it. The AI shows Maria's correction log and the two replies to the same kind of dispute. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
+2. The AI shows [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Answer: which correction you would move, where, and why, or "none".
+3. The AI shows Dave's words, the contract's knowledge lines, and [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
+4. The AI shows [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
+5. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
+6. The AI shows the lessons' lines on running side by side and on resuming. Answer: whether your answer changes, and how.
+7. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 38 to 42 passed.
 

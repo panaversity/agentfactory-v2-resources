@@ -2,7 +2,7 @@
 
 The answers for Task 12 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** This key lists the whole run, so it comes last. When the fresh run has stopped, taken Maria's reply and built its files, and you have sent your split record, attach this file in that same fresh chat, never before, and send the check prompt there. The AI marks each check Passed or Missed, quoting your words in that chat or the run's reply. It cannot see your app, so check 37 grades how your split record is written, not what the app showed. You have the final say. If a check passed only after you changed a line and ran a new fresh chat, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** This key lists the whole run, so it comes last. When the fresh run has stopped, taken Maria's reply and built its files, and you have sent your split record, attach this file in that same fresh chat, never before, and send the check prompt there. The AI marks each check Passed or Missed. Checks 35 and 37 quote only the words you sent in that chat, never the run's reply. Check 36 quotes the run's replies. The AI cannot see your app, so check 37 grades how your split record is written, not what the app showed. You have the final say. If a check passed only after you changed a line and ran a new fresh chat, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 

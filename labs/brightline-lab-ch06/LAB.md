@@ -328,8 +328,8 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 9" and send it. The AI shows the problems in your Review findings and the three verdicts from [6.2](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/good-and-plausible/). Use the verdicts to decide. Is the package ready to use? If not, which problems require revision, and which require human correction? Then the AI asks for your decision: approve as delivered, approve after named fixes, or return. Answer with one, and a line of why.
-2. If you chose fixes, the AI asks which fixes, which checks run again, and what Dave must approve from his own login first. Answer in a few words.
-3. The AI shows each problem again, and asks for its verdict: requires revision, or requires human correction. Give the verdict and a few words of why. Then the AI shows the six parts of Maria's brief. It asks for one line for her next brief that would have stopped the worst of it, and which part it goes in. Answer in a few words. The AI writes your decision and your line in the Review findings.
+2. Unless you chose approve as delivered, the AI asks what must be fixed and who fixes each, the worker or a person, and what Dave must approve from his own login first. If you chose fixes, it also asks which checks run again. Answer in a few words.
+3. The AI shows each problem again, and asks for its verdict: requires revision, or requires human correction. Give the verdict and a few words of why. Then the AI shows the four parts and two stages of Maria's brief. It asks for one line for her next brief that would have stopped the worst of it, and which part it goes in. Answer in a few words. The AI writes your decision and your line in the Review findings.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 23 to 25 passed.
@@ -349,7 +349,8 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 1. In your lab chat, attach `approved-memo-2026-11-06.md` from the folder, type "Task 10", and send them together. The AI shows the two memos now in your chat, one line each, and asks which one Linda's version comes from. Answer with its name.
 2. The AI asks, one at a time, who reads Linda's version and what she needs, what it must keep and what shape it takes, and anything else it must use. Answer each in a few words.
 3. The AI writes Linda's version in the chat, from the memo you chose and your answers.
-4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in a few words. It writes Linda's version again. Then send: "Check it again against the key."
+4. Read it as Linda would. The AI asks if it fits her, for her call. Answer yes or no, and why, in a line. If no, say what to change, and the AI writes it again.
+5. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in a few words. It writes Linda's version again. Then send: "Check it again against the key."
 
 **Checkpoint.** Checks 26 to 30 passed.
 

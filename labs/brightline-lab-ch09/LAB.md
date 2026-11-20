@@ -402,7 +402,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 2. The AI shows `research-summary.md`. Read the source behind its main claim. Then say whether the claim holds up for Dave's question: yes, no or partly, and why.
 3. Now research it yourself. In a separate chat with Research or web search on, ask what share of suppliers agree to an early-payment discount when a customer asks. Open the source behind the answer's main figure. Back in your lab chat, give its publisher, date, link and what it measured, and say whether that is what Dave asked. If your app has no Research or web search, say so and go on.
 4. The AI works out, in code, each group's 2025 total, 2 percent of it, and how many days after the invoice Brightline paid, from `paid-invoices-2025.csv`. Recompute one group's total yourself, from the rows the AI shows or from the file in `inputs.zip`, and say whether it matches. Then say what the 2 percent is a number of.
-5. Send your plan. Start it with "Plan:" and write it in your own words. Put Dave's decision first, a yes or no for each group. Then give each action an owner, a date, a cost and a risk. End with what you could not verify.
+5. The AI drafts the plan for Dave from what this chat holds. Check it before it goes to him: does it answer the question you agreed, and can Dave act on it? Send one message that starts "Check:". Say what you checked, and give each line to change, with its new words. If it can go as it is, say why.
 6. **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-13.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 30 and 31 passed.

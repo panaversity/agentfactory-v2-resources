@@ -300,7 +300,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 6. The AI asks what changed between the two runs. Answer in a line.
 7. If another problem matters, fix it in a new round: one part, one changed line, one run.
 8. The AI shows three other runs of a payment-run brief. For each, answer iterate, restart or change approach, from [5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/), and why, in one line.
-9. The AI shows two more runs, each with a gap in its brief. For the first, name the line it read two ways, its two readings, and the part to change. For the second, name the part that lacks a line, and what the line would say.
+9. The AI shows two more runs, each with a gap in its brief. For the first, name the line that failed, how the run read it and how Dave meant it, and the part to change. For the second, name the part that lacks a line, and what the line would say. Then the AI shows [5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)'s lines on testing each line, to compare.
 10. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 14 to 18 passed, and the hard rule holds.
@@ -318,7 +318,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 1. In your lab chat, type "Task 8" and send it. The AI asks where the worker stops, and who answers ([5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/)). Answer in a few words.
 2. Write the stop, and the line for what the run does after the answer, in your own words. Send them with the name of the part they go under. If a line of yours says the worker works without stopping or asking, say which line the stop replaces. The AI adds them under that part, and moves no other line.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. If your stop works, the run lists the exceptions, builds nothing and waits. Leave it unanswered. In Task 11, a fresh run reaches the same stop, and you answer it there.
-4. The AI shows three asks that could come next. For each, answer: a follow-up in this chat, a new stage after a stop, or split into batches, from [5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/), and why, in one line.
+4. The AI shows three asks that could come next. For each, answer: a follow-up in this chat, a new stage after a stop, or split into batches, and why, in one line. Then the AI shows what [5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says, so you can compare.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 19 to 21 passed, and the hard rule holds.
@@ -338,7 +338,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 1. In your lab chat, type "Task 9" and send it. The AI shows the four parts and their questions.
 2. Write your ideas brief under the four headings. It goes in the chat, not in your document.
 3. Send it in one message, with `Run: the ideas brief` on its first line. The run works from your brief alone, and uses no file.
-4. The AI shows the ideas brief Maria tried first, and what it brought back. Say why it failed and what you would change. Then answer Maria's idea of a better role line, from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/).
+4. The AI shows the ideas brief Maria tried first, and what it brought back. Say why it failed and what you would change. The AI then shows the rows of [5.6](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/task-type/) and [5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/) that explain it. Then answer Maria's idea of a better role line, from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/).
 5. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Change your ideas brief, send it again whole with `Run: the ideas brief` on its first line, then send the check prompt again.
 
 **Checkpoint.** Checks 22 to 26 passed.

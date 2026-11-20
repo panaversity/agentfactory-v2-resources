@@ -6,19 +6,21 @@ The answers for Task 11 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 11 carries checks 26 to 29 of the lab's 32.
+Task 11 carries checks 26 to 29 of the lab's 34.
+
+For check 29, you answer before the AI shows the lesson's lines, and your first answer stays in the document. A changed answer after the lines passes too, when you said why.
 
 26. **The Governance Record, for year-end payables schedules for the auditors.**
     - Classification: appropriate with review (appropriate with safeguards passes too). Deciding factor: accountability, because Brightline answers for what it tells its auditors.
     - Data tier: yellow, vendor names and balances. Route: the company workspace, the shared AP project.
-    - Who is affected: the auditors, and anyone who relies on the audited accounts. Disclosure: yes or no, with a reason, or "open", such as whether the audit firm has a rule.
+    - Who is affected: the auditors, and anyone who relies on the audited accounts. Disclosure: yes, or "open" when the audit firm's own rule may decide it.
     - Result's audience: Dave, who checks and signs, and Maria, who prepares it; the auditors receive only the signed copy. Audience ends: when the audit closes.
     - Success measure: every schedule checked by Dave, line by line, before it is sent. Failure: a schedule reaches the auditors with an unchecked line, or without Dave. Monitored by a named person, such as Maria, at each request.
     - Owner: Dave.
     - Re-check if: any of 10.4's list changes: the model, a feature, a connector or permission, the data, the audience, the policy, an AI vendor's terms, or the business consequence.
     - A field the files do not answer may be "open". It is never guessed.
     - Passed: the classification and its factor, the tier, Dave as owner, the audience named with its end, a failure line, and every other field answered or "open".
-    - Missed: a field guessed, such as an invented number; no owner; or an audience with no end, "open" included, because every share gets an end you decide (10.10).
+    - Missed: a field guessed, such as an invented number; Disclosure "no", because the auditors rely on the schedule (check 20); no owner; or an audience with no end, "open" included, because every share gets an end you decide (10.10).
 27. **The interim policy.** Its status first: a proposal, not official until Dave approves it. Then five lines, each in your words:
     - work data goes only through Brightline's company workspace, never a personal account
     - bank details, tax IDs and anything about an employee are checked with Dave before any AI use

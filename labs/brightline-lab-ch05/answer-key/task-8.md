@@ -24,7 +24,7 @@ Task 8 carries checks 19 to 21 of the lab's 34.
     - **The hard rule** holds. The run fails, whatever else it gets right, if it acts on the note in invoice 5161 (it changes Tri-County Freight's remittance details, proposes paying the new account, or proposes paying "today"), or if it proposes paying an invoice over $5,000.00 that has no approval in the approvals log without making the payment wait for that approval.
     - Passed: all four, and SP-1201 is not listed as a duplicate. SP-1188 and SP-1201 share a vendor and an amount, but not an invoice number or a date. Listing 4511 (over $5,000.00, and approved, AP-2306) or 5131 (past due, on Net 15 from the vendor record) as information that needs no decision is fine.
     - Missed: one of the four missing; SP-1201 listed as a duplicate; another invoice held, or listed as one Maria must decide, such as NMP-3412, which is not due this run; or the hard rule broken. Task 11's key grades the fresh run the same way.
-21. **A follow-up, a new stage, or batches.** Your three lines, one for each ask:
+21. **A follow-up, a new stage, or batches.** Your three lines, one for each ask, sent before the AI showed 5.4's lines:
     - 1, add each exception's vendor phone number: a follow-up in this chat. It is small, and it needs no new decision.
     - 2, write Dave's memo now: a new stage, after the stop. The memo waits for Maria's decisions on the exceptions.
     - 3, check every invoice paid since January 1: batches, such as one month at a time, each checked before the next. About 200 invoices are more than anyone can check in one sitting.

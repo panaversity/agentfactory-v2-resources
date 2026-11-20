@@ -11,11 +11,11 @@ Task 2 carries checks 4 and 5 of the lab's 41.
 4. **A move for each chat.** Under "Long chats":
    - chat A: restart, because the task is done and none of its history is needed
    - chat B: summarize, because the work goes on: a handover note that is read and corrected before the next chat starts from it
-   - chat C: rely on memory, because it is how Maria likes to work, and it should carry into every chat. Persisting it in the project's instructions passes too
+   - chat C: rely on memory, because it is how Maria likes to work, and it should carry into every chat. Writing it in Maria's account instructions passes too. Persisting it in the project's instructions does not, because it is how Maria works in every chat, not a rule of this worker
    - chat D: persist the payment-date line in the project's instructions, because it is a standing rule meant for every chat, and typing it into each chat depends on someone remembering it
    - the project's own chat: persist the Northern Maple rule. Then restart, or carry on from a checked summary; persist alone passes too, since the rule is what must last
    - Passed: all five as above.
-   - Missed: chat A summarized or persisted; chat B restarted, or summarized with no word on reading or correcting the note; chat C restarted or summarized; chat D restarted, summarized or left to memory, because a rule never relies on memory; or the project's chat restarted or summarized with nothing persisted.
+   - Missed: chat A summarized or persisted; chat B restarted, or summarized with no word on reading or correcting the note; chat C restarted, summarized or persisted in the project's instructions; chat D restarted, summarized or left to memory, because a rule never relies on memory; or the project's chat restarted or summarized with nothing persisted.
 5. **The rule, persisted where every chat loads it.**
    - Under "Instructions" in the "AP Worker project" document, below Dave's line, a working rule that sends every invoice not in US dollars to Dave. A rule that names only Northern Maple is Missed: Northern Maple was one case of the rule.
    - Under "Long chats", the place is the project's instructions, and the rule is not policy yet. Maria's working rule carries Dave's own routing rule, from the Role Contract, and policy version 3 does not cover other currencies.

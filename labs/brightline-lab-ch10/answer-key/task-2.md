@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 2 carries checks 3 to 5 of the lab's 32.
+Task 2 carries checks 3 to 5 of the lab's 34.
 
 3. **Six answers, each with the screen that decides it.**
    - U1, the meeting notes: appropriate. Reversibility: a wrong summary is easy to fix before anyone relies on it. Consequence of error also passes.

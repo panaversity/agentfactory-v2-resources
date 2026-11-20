@@ -6,7 +6,7 @@ The answers for Task 8 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 8 carries checks 19 to 21 of the lab's 32.
+Task 8 carries checks 19 to 21 of the lab's 34.
 
 19. **The sign-off matrix.** For each output: who signs or approves, who sends it and from whose account, and whether the worker may send it.
     - O1, the pre-run note: no signature; Dave approves the run itself, from his own login; the worker saves it to the notes folder and emails nothing. "Yes, to the notes folder only" passes for the worker's answer, as "no" does.
@@ -35,7 +35,7 @@ Task 8 carries checks 19 to 21 of the lab's 32.
 
 ## Why
 
-A signature says a named person read this, checked it and takes responsibility for it, and responsibility does not move to a tool (10.7). The auditors relied on Dave's name on a schedule he never saw. So each output that a person must sign gets a gate: who checks, what they check, and when. For the schedule, Dave checks every balance against the register, currency included, before it leaves, and sends it himself. The schedule added Canadian dollars to US dollars, a check against the register catches that, and how to show it is the signer's call. A position in a dispute is signed by the person who reads it and sends it herself, as Maria does with the replies she signs. And a rule the worker can break is not a control: Draft 7 takes the signature block away from the worker altogether.
+A signature says a named person read this, checked it and takes responsibility for it, and responsibility does not move to a tool (10.7). The auditors relied on Dave's name on a schedule he never saw. So each output that a person must sign gets a gate: who checks, what they check, and when. For the schedule, Dave checks every balance against the register, currency included, before it leaves, and sends it himself. The schedule added Canadian dollars to US dollars, a check against the register catches that, and how to show it is the signer's call. A position in a dispute is signed by the person who reads it and sends it herself, as Maria does with the replies she signs. A routine reply, such as whether an invoice arrived, states no balance and no position, so nobody signs it: Maria checks it and sends it from the AP inbox. And a rule the worker can break is not a control: Draft 7 takes the signature block away from the worker altogether.
 
 ## Never a deduction
 

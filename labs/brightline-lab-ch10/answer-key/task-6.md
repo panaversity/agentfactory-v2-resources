@@ -6,7 +6,7 @@ The answers for Task 6 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 6 carries checks 14 and 15 of the lab's 32.
+Task 6 carries checks 14 and 15 of the lab's 34.
 
 14. **The brief's four lines, in your words.** The brief under "The standing early-pay brief" says each of these in words you sent in this chat:
     - **What comes first, from which source:** small suppliers' invoices, by Brightline's promise to pay them within 15 days of receipt, from Dave's memo or the vendor record's small-supplier mark, before any discount. "Small suppliers past or near 15 days first, then the biggest discounts" passes.

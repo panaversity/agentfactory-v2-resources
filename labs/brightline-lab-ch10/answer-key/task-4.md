@@ -6,7 +6,9 @@ The answers for Task 4 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 4 carries checks 10 and 11 of the lab's 32.
+Task 4 carries checks 10 and 11 of the lab's 34.
+
+For check 10, you answer before the AI shows the lesson's lines, and your first answer stays in the document. A changed answer after the lines passes too, when you said why.
 
 10. **The way in, and what it must have.**
    - The way: for this check, Maria's own chat in the shared AP project, in Brightline's company workspace, once Dave confirms that way for vendor data; and for any other work data, the company workspace too. Never a personal account, and never a temporary or incognito chat on one: those decide history and training, not whether the data may go in.
