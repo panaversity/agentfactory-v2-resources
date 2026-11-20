@@ -6,9 +6,9 @@ The answers for Task 12 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second
 
 ## The check
 
-Task 12 carries check 31 of the lab's 31.
+Task 12 carries check 34 of the lab's 34.
 
-31. **The four source checks, and Dave's answer.** In your lab chat:
+34. **The four source checks, and Dave's answer.** In your lab chat:
     - The source behind "about 60 percent" is the 2018 survey, source 4. Sources 1 to 3 give no survey of their own.
     - Sources 1 to 3 repeat one sentence, word for word, so they count as one source.
     - Source 4 is from 2018: too old to plan next year's cash on.

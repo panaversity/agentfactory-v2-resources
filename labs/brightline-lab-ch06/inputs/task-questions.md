@@ -159,8 +159,9 @@ If the answers to questions 2 and 3 add to the words of the checks named, write 
 **After the review.**
 
 4. Ask: "What figure does Dave sign, and what does it depend on? The figure, then a few words."
+5. Show the "Friday's run" section of package/memo-to-dave.md, quoted. Then show 6.1's lines on the standards of your field, below. Ask: "Name one standard of your field that these totals must meet, that no file in the zip states. Do the totals meet it? The standard in a few words, then 'yes' or 'no', and why."
 
-Write the answer under "The figure Dave signs" in the Review findings. Say "Task 6 is done".
+Write the answers to questions 4 and 5 under "The figure Dave signs" in the Review findings. Say "Task 6 is done".
 
 ## Task 7. Do the files agree?
 
@@ -191,8 +192,9 @@ Say "Ready for your review".
 3. Ask: "Swap the attribute: picture a domestic supplier with the same record. Would the note still say this? Yes or no."
 4. Ask: "Keep the note, rewrite it, or delete it? One of the three, and a line of why."
 5. Show the row of package/proposal-2026-10-30.csv for NMP-3440, quoted, and the sentence of the Context in Maria's brief that says what to do when version 3 does not cover a case, quoted. Ask: "Is this row's hold a problem, or right? A few words of why."
+6. Show the memo's title line and its "Decisions for you" section, quoted, then 6.2's fit check, below. Ask: "Does the note belong in this memo? Yes or no, and a line of why."
 
-Write the answers to questions 2 to 5 under "Northern Maple's note" in the Review findings. Say "Task 8 is done".
+Write the answers to questions 2 to 6 under "Northern Maple's note" in the Review findings. Say "Task 8 is done".
 
 ## Task 9. Approve, fix or return?
 
@@ -202,7 +204,8 @@ This task has no review.
 
 1. Show the problems in the Review findings, by number, each in a few words with the learner's decision. Then show 6.2's three verdicts, below. Then show Dave's question. Ask: "Approve as delivered, approve after named fixes, or return? One of the three, or a verdict in 6.2's words, and a line of why."
 2. Only if the learner chose fixes, or answered "requires revision" or "requires human correction": show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "Which fixes, by the findings' numbers? Which checks run again, by letter? And what must Dave approve from his own login first? A few words for each."
-3. Show the names of the six parts of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
+3. Show the problems in the Review findings again, by number, one at a time, each in a few words, with 6.2's three verdicts. For each, ask: "Requires revision, or requires human correction? The verdict, and a few words of why."
+4. Show the names of the six parts of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
 
 Write the answers under "The decision on the package" in the Review findings, and show it. Say "Task 9 is done".
 
@@ -296,6 +299,14 @@ When the answer is unclear, choose the deeper level.
 ### 6.2: completeness (its first two sentences)
 
 **Completeness.** Match each item by its ID, not only by the count. Every invoice in the source must appear exactly once in the output: none missing, none repeated, none extra.
+
+### 6.1: the standards of your field (its first sentence)
+
+**The standards of your field.** Work can match every source and still break a standard.
+
+### 6.2: fit (its first three sentences)
+
+**Fit.** Check that the result is relevant: it answers the question that was asked. Check that it is fit for its purpose: this reader can use it for this job.
 
 ### 6.2: the three verdicts (its table)
 

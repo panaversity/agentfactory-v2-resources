@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 4 of the lab's 31.
+Task 1 carries checks 1 to 4 of the lab's 34.
 
 1. **The four parts, written before the package was shown.** Your Review Contract has at least one line under each of its four parts: what must be checked, what evidence comes back, what counts as success, and what stops the worker. You wrote it in Task 1, and no line from inside the package's four files appeared in the chat before it. The package's file names, and what each file is, do not count as lines from inside it.
    - Passed: a line under each of the four parts, and nothing from inside the package shown in the chat before the contract was written.

@@ -280,10 +280,10 @@ Constraints: Grade only. Do not rewrite the document, and do not
 2. The AI shows the source files, one line each, and Maria's decisions from the task record. It asks which file each fact comes from: the payment terms, the invoice dates, the approvals and Maria's decisions. Then it asks which actions count in the figure Dave signs. Answer each in a few words. If your check does not already say it, your answers go in as an amendment.
 3. When the AI says "Ready for your review", type `Review:` and the letters, and send it. The AI shows the figure row by row, each row with its source line.
 4. For each row where the figure differs from the CSV, answer: a problem, with its kind and what is right, or right, and why.
-5. The AI asks what figure Dave signs, and what it depends on. Answer with the figure and a few words.
+5. The AI asks what figure Dave signs, and what it depends on. Answer with the figure and a few words. Then it shows the memo's totals, and asks for one standard of your field they must meet, that no file states. [6.1](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/agree-the-checks/) gives an accounting rule as an example. Name the standard, and say whether the totals meet it.
 6. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 15 and 16 passed.
+**Checkpoint.** Checks 15 to 17 passed.
 
 **At work:** work out the number you sign from the sources, never by adding the AI's own file.
 
@@ -299,7 +299,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 4. For each fact that differs, answer which version is right, and the source that shows it, or that none is. The AI asks this for every fact that differs, even one you decided in an earlier task. For that one it shows the finding's number, and the finding can be your source.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 17 to 19 passed.
+**Checkpoint.** Checks 18 to 20 passed.
 
 **At work:** when one result goes to several readers, line up each fact in every version, and decide each difference from its source.
 
@@ -312,10 +312,10 @@ Constraints: Grade only. Do not rewrite the document, and do not
 1. In your lab chat, type "Task 8" and send it. The AI shows the test for bias from [6.3](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/three-failures/), Dave's question and your contract's checks, and asks which checks answer it. Give the letters, or a new check in a few words.
 2. When the AI says "Ready for your review", type `Review:` and the letters, and send it.
 3. For each flagged item, answer: a problem, with its kind and what is right, or right, and why.
-4. The AI shows the memo's note on Northern Maple, and asks what evidence it rests on, how it does on the swap test, and whether to keep, rewrite or delete it. Then it shows the Northern Maple row the worker held, and asks if the hold is a problem or right. Answer each in a few words.
+4. The AI shows the memo's note on Northern Maple, and asks what evidence it rests on, how it does on the swap test, and whether to keep, rewrite or delete it. Then it shows the Northern Maple row the worker held, and asks if the hold is a problem or right. Last, it shows [6.2](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/good-and-plausible/)'s fit check, and asks whether the note belongs in this memo. Answer each in a few words.
 5. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Check 20 passed.
+**Checkpoint.** Checks 21 and 22 passed.
 
 **At work:** ask what evidence a judgment rests on, and swap the attribute to test it.
 
@@ -329,10 +329,10 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 9" and send it. The AI shows the problems in your Review findings and the three verdicts from [6.2](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/good-and-plausible/). Use the verdicts to decide. Is the package ready to use? If not, which problems require revision, and which require human correction? Then the AI asks for your decision: approve as delivered, approve after named fixes, or return. Answer with one, and a line of why.
 2. If you chose fixes, the AI asks which fixes, which checks run again, and what Dave must approve from his own login first. Answer in a few words.
-3. The AI shows the six parts of Maria's brief, and asks for one line for her next brief that would have stopped the worst of it, and which part it goes in. Answer in a few words. The AI writes your decision and your line in the Review findings.
+3. The AI shows each problem again, and asks for its verdict: requires revision, or requires human correction. Give the verdict and a few words of why. Then the AI shows the six parts of Maria's brief. It asks for one line for her next brief that would have stopped the worst of it, and which part it goes in. Answer in a few words. The AI writes your decision and your line in the Review findings.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 21 and 22 passed.
+**Checkpoint.** Checks 23 to 25 passed.
 
 **At work:** end a review with a decision on the package, and name what must change before anyone signs.
 
@@ -351,7 +351,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 3. The AI writes Linda's version in the chat, from the memo you chose and your answers.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in a few words. It writes Linda's version again. Then send: "Check it again against the key."
 
-**Checkpoint.** Checks 23 to 27 passed.
+**Checkpoint.** Checks 26 to 30 passed.
 
 **At work:** for a new reader, change the order, the length and the words, never the facts.
 
@@ -391,7 +391,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 7. The AI asks what your contract would need on the other AI vendor. Answer in a few words, or "nothing". [6.8](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/both-ai-vendors/) says why.
 8. **Check it now, in your lab chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-11.md). Attach it in your lab chat, not the fresh chat, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 28 to 30 passed.
+**Checkpoint.** Checks 31 to 33 passed.
 
 **At work:** a second AI reviewer searches wider. Decide each of its findings yourself, from the source.
 
@@ -409,7 +409,7 @@ Dave has a different question, and a research tool has answered it. He wants to 
 2. The AI asks whether the main claim holds up, and what Dave should do. Answer in a line.
 3. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Check 31 passed.
+**Checkpoint.** Check 34 passed.
 
 **At work:** before you plan on research, check the source behind the claim your plan rests on.
 
@@ -426,7 +426,7 @@ This task leaves Brightline. In Task 12 you checked a report that was given to y
 3. The AI takes you through four checks, one at a time: the source behind the main claim, pages that copy one source, each source's date, and evidence that disagrees. Open the source it links, and answer each in a few words.
 4. **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-13.md). Attach it, and send [the check prompt](#the-check-prompt). Its one check is unscored: it grades your steps, never the search result, which changes from day to day.
 
-**Checkpoint.** Check 32, which is unscored, passed.
+**Checkpoint.** Check 35, which is unscored, passed.
 
 **At work:** before you act on research, open the source behind the claim your decision rests on.
 
