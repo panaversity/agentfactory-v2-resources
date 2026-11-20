@@ -184,10 +184,10 @@ Answer each question in a few words. Copy the code block into a plain text edito
 In your lab chat, send this:
 
 ```text
-Ask me two questions, one at a time, and reply in one sentence after each answer. Question 1: when you gave me the numbers from the invoice file, which stage was I in: delegation (I check), deferral (I could check, but I do not) or surrender (I cannot check)? Question 2: Dave was about to forward the memo without checking it. Which stage was he in?
+Ask me two questions, one at a time, and reply in one sentence after each answer. Question 1: when you gave me the numbers from the invoice file, which stage was I in: offloading (I check), deferral (I could check, but I do not) or surrender (I cannot check)? Question 2: Dave was about to forward the memo without checking it. Which stage was he in?
 ```
 
-**What you probably saw.** If you checked a number yourself, you were delegating. Dave was deferring: he could have named the checks, and he was not going to do them. Surrender is when you can no longer say what you would check ([0.4.6](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/delegate-not-surrender/)).
+**What you probably saw.** If you checked a number yourself, you were offloading. Dave was deferring: he could have named the checks, and he was not going to do them. Surrender is when you can no longer say what you would check ([0.4.6](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/delegate-not-surrender/)).
 
 ## If you want more (15 minutes)
 

@@ -9,7 +9,7 @@ On Tuesday, October 27, 2026, Brightline's AP Worker forwarded a payment run fil
 - To see what let an AI tool act: a line someone wrote, or a setting.
 - To keep the envelope, the brief and the permissions apart, and know who writes each.
 - To list every action a worker might take, take out what is never automated, and give each of the rest a rung.
-- To choose a rung with reversibility, familiarity and exposure, and to raise it only on evidence.
+- To choose a rung with reversibility, familiarity and stakes, and to raise it only on evidence.
 - To write every threshold as a number with its approver, and every escalation trigger with a person.
 - To check an add-on before you turn it on, and to reach each system by the narrowest controlled path.
 - To make what the tools can do no wider than what the worker may do, and to know whose name it acts in.
