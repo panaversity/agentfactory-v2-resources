@@ -93,38 +93,45 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
 ## Task 3. What the check needs
 
+The vendor master is not in this chat. The learner holds it as `fictional-vendor-master-2026-12-06.csv` on their own computer, and cuts it there before anything from it comes here. Never ask for that file, and never ask the learner to paste its rows or notes.
+
 1. Show Lesson 10.2's three tiers, quoted:
    - "*Green:* public material, and internal material clearly approved for broad use."
    - "*Yellow:* check first or add a control, a setting or step that limits what can happen to the data. Examples are internal-only documents, customer or vendor contact details, employee identifiers and confidential drafts."
    - "*Red:* only through a route approved for this kind of data. ... Examples are passwords and access keys, bank account numbers, government ID numbers, health records, privileged legal advice, and material whose license forbids copying it elsewhere."
    - "If you are unsure between two tiers, use the higher one."
 
-   Then show the three actions a column can get: **keep**; **keep the last four digits**; **remove**. Then show "Maria's request to find duplicate vendors" and "The vendor master in this lab" from `brightline-files.md`.
-2. Show the first group of columns, as its own lines: its column names, what the full vendor master holds in them, and what the lab copy shows, with the first two rows of the lab copy for those columns. Ask: "Its tier, then keep, keep the last four digits, or remove, for the check Maria needs? Answer: the tier, then the action."
+   Then show the three actions a column can get: **keep**; **keep the last four digits**; **remove**. Then show "Maria's request to find duplicate vendors" and "The vendor master in this lab" from `brightline-files.md`, its list of columns included.
+2. Show the first group of columns, as its own lines: its column names, and what the export holds in them, from the list of columns. Ask: "Its tier, then keep, keep the last four digits, or remove, for the check Maria needs? Answer: the tier, then the action."
 
    The groups, one at a time:
    - `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `state`, `zip`
    - `tin_type`
-   - `tin`: the full master holds the whole tax ID number, a Social Security number for a sole proprietor; the lab copy shows its last four digits
-   - `bank_routing`, `bank_account`: the full master holds the whole numbers; the lab copy shows their last four digits
+   - `tin` and `tin_masked`: the whole tax ID number, a Social Security number for a sole proprietor, and its last four digits. Here "keep the last four digits" means keeping `tin_masked` and removing `tin`
+   - `bank_routing`, `bank_account`: the whole numbers
    - `contact_email`, `phone`
    - `small_supplier`, `onboarded`
-   - `notes`: free text the AP team wrote about some vendors; the lab copy shows it as the full master holds it. For this group, in place of the first two rows, show every row that has a note, with its `vendor_id` and `legal_name`, and say how many rows have none. Ask: "What do these notes hold that the other columns do not? Then the column's tier, and keep or remove, for the check Maria needs. Answer: a few words on what they hold, the tier, then the action."
+   - `notes`: free text the AP team writes about some vendors. For this group, say: "The notes are not in this chat. Open the export on your computer, in a spreadsheet app, and read every note before anything goes up." Then ask: "What do these notes hold that the other columns do not? Then the column's tier, and keep or remove, for the check Maria needs. Answer: a few words on what they hold, the tier, then the action." Show no note, and do not guess at what they hold.
 
    Write each under "What data, and by which way in" as a row: the columns, the tier, the action. In the `notes` row, add what the learner said the notes hold.
 3. Ask: "What is the tier of the full vendor master, and of a cut file with only the columns you keep? Answer: two tiers."
-4. Say "Now the check, on the kept columns only." Read `vendor-master-lab-copy.csv`, using only the columns the learner kept, and of a column kept as its last four digits, only those digits. Find the likely duplicate vendors: two records that look like one vendor. Write the result under "What data, and by which way in" first, as "The check on the kept columns:", then show it:
-   - each pair found: both vendor ids and names, and the kept columns it matched on
+4. Say: "Now cut the export on your computer, as Task 3 on the page says, and save the cut file. Attach only the cut file here, and send the message the page gives." Wait.
+
+   When a file is attached, read it first. Its first row may be the line that says the file is fictional: skip it. If the file holds a whole tax ID, a bank routing number or a bank account number, quote none of them. Say which columns hold them, and say: "At work, these numbers have now gone to an AI tool. Cut them out, and attach the new file." Then wait for the new file, and do this step again on it.
+
+   When the message asks what still looks personal, list it column by column: each column the file holds, and whether its values can point to one person or one vendor, with one example taken from the file. Name each sole proprietor the file shows. Write nothing into the document for this list. Then ask: "Which of these stay, because the check needs them, and is the cut file now anonymous, or still personal? Answer: the columns that stay, then anonymous or still personal, and why." Write the answer under "What data, and by which way in", headed "The cut file", with the name of the file the learner attached.
+5. Say "Now the check, on your cut file only." Read the cut file the learner attached, and nothing else. Find the likely duplicate vendors: two records that look like one vendor. Write the result under "What data, and by which way in" first, as "The check on the cut file:", then show it:
+   - each pair found: both vendor ids and names, and the columns it matched on
    - then a line that starts "Compared:" and names every other two vendors that share a word of their name or a ZIP code, each with why the check did not flag them
 
    Ask: "Did it find Maria's four known pairs, and leave Union Packaging Inc. and Union Packaging Supply LLC apart? Answer: yes, or which pair it missed or wrongly flagged."
 
-   Whenever the learner changes a column's action, or sends "Run the check again", do this step again on the kept columns as they now stand, and replace the old result.
+   Whenever the learner attaches a new cut file, or sends "Run the check again", do this step again on the newest cut file, and replace the old result.
 
    Then ask: "At work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it? Answer: a few words." Write the answer under "What data, and by which way in", headed "The upload".
 
    Then show Lesson 10.2's lines, quoted: "**A file for analysis is still an upload.** Code execution lets the AI run a small program on a file." "It needs the file, so the whole file goes in, with every column the question never uses." Ask: "Does your answer change? Answer: 'no', or the new answer and why." Write any change beside the first answer, which stays.
-5. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
+6. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only, from the cut file: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
 
    Then show Lesson 10.2's line, quoted: "**Replace identifiers with codes,** and keep the list that links them outside the AI tool." Ask: "If every vendor name were replaced with a code, would the cut file be anonymous? Answer: yes or no, and why."
 

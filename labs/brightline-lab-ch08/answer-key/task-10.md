@@ -6,15 +6,15 @@ The answers for Task 10 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 10 carries checks 27 to 31 of the lab's 41.
+Task 10 carries checks 29 to 33 of the lab's 43.
 
-27. **The concept, edited in place.** The invoice approval threshold concept takes Dave's sentence, in the policy's voice: "From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount." Its line saying that it does not cover other currencies is gone. Its other lines stay as they were. No new concept is started.
+29. **The concept, edited in place.** The invoice approval threshold concept takes Dave's sentence, in the policy's voice: "From November 9, 2026, invoices in any currency other than USD need the controller's approval before payment, whatever the amount." Its line saying that it does not cover other currencies is gone. Its other lines stay as they were. No new concept is started.
     - Passed: all of that. "Dave's approval" passes for "the controller's approval".
     - Missed: a new concept for currencies; the "does not cover" line kept beside the new sentence; or another line of the concept lost or changed.
-28. **Its header.** It is approved by Dave on Monday, November 9, 2026, at 9:00 a.m., and drafted before that. Its sources add Dave's change of November 9. Its effective date stays Tuesday, September 1, 2026, because the new sentence carries its own start date. A note that the new sentence applies from November 9 is fine beside it. Its review date stays Wednesday, March 31, 2027.
+30. **Its header.** It is approved by Dave on Monday, November 9, 2026, at 9:00 a.m., and drafted before that. Its sources add Dave's change of November 9. Its effective date stays Tuesday, September 1, 2026, because the new sentence carries its own start date. A note that the new sentence applies from November 9 is fine beside it. Its review date stays Wednesday, March 31, 2027.
     - Passed: all of that.
     - Missed: September 1 replaced by November 9, 2026, as the concept's effective date; a review date moved; or the old approval of November 4 left as the concept's approval.
-29. **Every copy, by its route.** Under "Copies and the refresh log", a row for each place on Maria's list:
+31. **Every copy, by its route.** Under "Copies and the refresh log", a row for each place on Maria's list:
     - the shared project's upload: an uploaded copy. The old file is removed, and the November 9 file uploaded
     - the Google Doc "AP approved concepts": it takes the approved text after Dave's 9:00 approval, never the draft
     - Maria's Claude test project, which holds the Google Doc: synced. Check that the sync ran, such as by an answer that cites November 9
@@ -22,10 +22,10 @@ Task 10 carries checks 27 to 31 of the lab's 41.
     - each row holds the approval of Monday, November 9, 2026, refreshed by Maria that day. A line says the other four concepts did not change, and their copies still hold Wednesday, November 4, 2026
     - Passed: every row as above.
     - Missed: a place left out; a copy refreshed before 9:00 with the draft; an uploaded copy "checked" instead of replaced; or no approval date held.
-30. **One rule, in one place.** Maria's working rule is removed from the instructions, now that the threshold concept holds the rule. The other instruction lines are kept.
+32. **One rule, in one place.** Maria's working rule is removed from the instructions, now that the threshold concept holds the rule. The other instruction lines are kept.
     - Passed: the working rule removed, and the rest kept.
     - Missed: the working rule kept; or another instruction line lost.
-31. **The tests after the refresh.**
+33. **The tests after the refresh.**
     - `Test: Northern Maple`, after the refresh: NMP-3471 needs Dave's approval before payment, whatever the amount, from the threshold concept, citing its approval of Monday, November 9, 2026.
     - `Skill test: Northern Maple NMP-3471, with the concepts`: the skill flags it for Dave's approval, from the same concept.
     - **The hard rule.** A test that says NMP-3471 needs no approval, after November 9, fails this check, whatever else it gets right.

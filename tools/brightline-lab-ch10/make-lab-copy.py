@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
-"""Lab 10's data: the vendor master's lab copy, and a check of every figure the keys use.
+"""Lab 10's data: the raw vendor export, and a check of every figure the keys use.
 
 Run from the labs repository's root:
 
   python3 tools/brightline-lab-ch10/make-lab-copy.py
 
-It writes labs/brightline-lab-ch10/inputs/vendor-master-lab-copy.csv from
-vendor-master-full.csv beside this script, showing tax IDs and bank numbers by
-their last four digits only, as an accounting screen shows them. No full number
-ships in the lab. Then it checks the figures: the duplicate pairs, the small
-suppliers' days, the early-pay list and the auditors' schedule.
+It writes labs/brightline-lab-ch10/fictional-vendor-master-2026-12-06.csv from
+vendor-master-full.csv beside this script: 36 of the 412 vendors, as Maria
+exported them on Sunday, December 6, 2026, with every number in full and the
+notes. Its first row says the file is fictional. It adds one column,
+tin_masked, each tax ID's last four digits as an accounting screen shows them,
+so the learner can keep the last four by deleting one column. The file sits at
+the lab folder's root, outside inputs.zip: the learner cuts it in a spreadsheet
+before anything goes to the AI (Task 3). Every full number is fake: each Social
+Security number starts 000, each EIN 00, the BN 0000, and each routing number
+0000, numbers that are never issued. Then it checks the figures: the duplicate
+pairs, the small suppliers' days, the early-pay list and the auditors' schedule.
 """
 
 import csv
@@ -36,28 +42,43 @@ def last4(value, keep_shape=True):
     return "".join(reversed(out))
 
 
+RAW = "fictional-vendor-master-2026-12-06.csv"
+MARKER = ("FICTIONAL: every name, address, number and note in this file is invented "
+          "for Lab 10 of The AI Agent Factory.")
+
+
 def main():
     rows = list(csv.DictReader(open(HERE / "vendor-master-full.csv", newline="")))
     fields = list(rows[0].keys())
-    lab_rows = []
+    out_fields = fields[:fields.index("tin") + 1] + ["tin_masked"] + fields[fields.index("tin") + 1:]
+    raw_rows = []
     for r in rows:
         r2 = dict(r)
-        for col in ("tin", "bank_routing", "bank_account"):
-            r2[col] = last4(r[col])
-        lab_rows.append(r2)
-    with open(LAB / "vendor-master-lab-copy.csv", "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
+        r2["tin_masked"] = last4(r["tin"])
+        raw_rows.append(r2)
+    with open(LAB.parent / RAW, "w", newline="") as f:
+        f.write('"' + MARKER + '"\n')
+        w = csv.DictWriter(f, fieldnames=out_fields, lineterminator="\n")
         w.writeheader()
-        w.writerows(lab_rows)
+        w.writerows(raw_rows)
+    lab_rows = [dict(r, tin=r["tin_masked"]) for r in raw_rows]
 
     problems = []
 
-    # No full number ships.
-    for r in lab_rows:
-        for col in ("tin", "bank_routing", "bank_account"):
-            if sum(c.isdigit() for c in r[col]) != 4:
-                problems.append(f"{r['vendor_id']} {col} shows {r[col]}")
-    print(f"Rows: {len(lab_rows)}. SSNs: {sum(r['tin_type'] == 'SSN' for r in rows)}. "
+    # The export is marked fictional, and every full number is one that is never issued.
+    lines = (LAB.parent / RAW).read_text().split("\n")
+    if "FICTIONAL" not in lines[0] or not lines[1].startswith("vendor_id,"):
+        problems.append("the first row is not the fictional marker, or the second is not the header")
+    for r in raw_rows:
+        tin, kind = r["tin"], r["tin_type"]
+        fake = {"SSN": tin.startswith("000-"), "EIN": tin.startswith("00-"), "BN": tin.startswith("0000")}.get(kind, False)
+        if not fake:
+            problems.append(f"{r['vendor_id']} tin {tin} is not in a range that is never issued")
+        if not r["bank_routing"].startswith("0000"):
+            problems.append(f"{r['vendor_id']} routing {r['bank_routing']} is not in a range that is never issued")
+        if sum(c.isdigit() for c in r["tin_masked"]) != 4:
+            problems.append(f"{r['vendor_id']} tin_masked shows {r['tin_masked']}")
+    print(f"Wrote {RAW}. Rows: {len(lab_rows)}. SSNs: {sum(r['tin_type'] == 'SSN' for r in rows)}. "
           f"Small suppliers: {sum(r['small_supplier'] == 'Y' for r in rows)}.")
 
     # The duplicate pairs: tax ID type and last four digits.

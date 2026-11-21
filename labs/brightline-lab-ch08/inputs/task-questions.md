@@ -165,6 +165,10 @@ Write the answers to 2, 3 and 4 under "Memory audit". Then say "Ready for your t
 
 **The test:** `Test: Buckeye`.
 
+**After the test.**
+
+5. After the test's reply, your one line is this question: "Now do steps 6 to 10 of Task 3 on the page, in your own app. Then paste your Lab 8 memory lines as they now read, say whether you deleted the chat that saved them, and paste the reply of the chat with memory off. Answer: the lines, yes or no, then the reply." Wait for the answer. Write it under "Memory audit", headed "My own memory": the lines and the reply exactly as the learner pasted them, and whether the chat was deleted. If the learner says their memory is off, write that instead. Never say whether the lines or the reply are right. Then say "Task 3 is done".
+
 ## Task 4. One topic, one concept
 
 Its day is Tuesday, November 3, 2026, 4 p.m. Dave approves the concepts the next day at 10 a.m.

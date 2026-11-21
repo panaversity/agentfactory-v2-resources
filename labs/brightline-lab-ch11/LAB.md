@@ -432,7 +432,7 @@ Your vertical is the line of work you know best. In your lab chat, send "Your ow
 
 ## When you are done
 
-You are done when every check has passed, your contract ran the week again in a new chat with nothing else in view, and your own job is in your notes. Keep both downloads. "AP Worker Role Contract" is Draft 8, the last draft of Part II's contract. "What went wrong" is a failed week diagnosed from its records, with each fix and its test: the note to write after your own next failure. Next comes [the Part II capstone](https://agentfactory.panaversity.org/managing-ai-workers/overview/#the-part-capstone), one piece of work that uses all of Part II. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
+You are done when every check has passed, your contract ran the week again in a new chat with nothing else in view, and your own job is in your notes. Keep both downloads. "AP Worker Role Contract" is Draft 8, the last draft of Part II's contract. "What went wrong" is a failed week diagnosed from its records, with each fix and its test: the note to write after your own next failure. Next comes [the Part II capstone](https://agentfactory.panaversity.org/managing-ai-workers/overview/#the-part-capstone), one piece of work that uses all of Part II. Last, open your saved memory, as in [Lab 8's Task 3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/#task-3-what-memory-may-keep-25-minutes), and delete what this lab saved about Brightline.
 
 **At work:** when your AI goes wrong, find where the failure lives before you change anything. Then change one thing, and test it on the same input.
 

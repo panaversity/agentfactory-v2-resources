@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 4 and 5 of the lab's 41.
+Task 2 carries checks 4 and 5 of the lab's 43.
 
 4. **A move for each chat.** Under "Long chats":
    - chat A: restart, because the task is done and none of its history is needed
