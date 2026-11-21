@@ -401,12 +401,12 @@ One message asks for ideas. The other asks for data that the accounting system w
 
    ```text
    Maria asks: next month, stage 1 runs on Monday and stage 2 on
-   Tuesday, each as its own chat in one project. What will Tuesday's
-   chat see, what will it not see, and where must Monday's exceptions
-   list, with my decisions, go? My answer:
+   Tuesday, each as its own thread in one Claude project. What will
+   Tuesday's thread see, what will it not see, and where must Monday's
+   exceptions list, with my decisions, go? My answer:
    ```
 
-   [5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says what reaches each chat in a project.
+   [5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/decompose/) says what reaches each thread in a project.
 8. **Check it now, in the fresh chat.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05-key-task-11.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the build, so it cannot shape the run. Missed a check? If a line your brief lacks caused it, change the line in your lab chat, download the brief again, and run a new fresh chat. If a line of your brief already decides it, the run slipped: try one more fresh chat, and if it slips again, it is "worker, not brief" ([5.5](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/iterate/)), and you can stop.
 
 **Checkpoint.** Checks 31 to 34 passed, and the downloaded file is the brief the fresh chat passed.

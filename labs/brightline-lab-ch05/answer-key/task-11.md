@@ -22,12 +22,12 @@ Task 11 carries checks 31 to 34 of the lab's 34.
     - Passed: a line that is in your brief and limits what the worker does, such as one that says it changes nothing, sends nothing or pays nothing, or the stop that waits for Maria.
     - Missed: "none"; a line that is not in your brief; or an app's setting named instead of a line. The run's reply never counts as your answer.
 
-34. **Stages across chats.** In the fresh chat, after IT's question, your answer to Maria says:
-    - Tuesday's chat sees the project's instructions and its files
-    - it does not see Monday's chat, or cannot be counted on to
-    - Monday's list, with Maria's decisions, goes into the project's files, or Tuesday's chat starts from a handover note made from it (Lessons 5.4 and 8.3)
+34. **Stages across threads.** In the fresh chat, after IT's question, your answer to Maria says:
+    - Tuesday's thread sees the project's instructions, its files and its memory
+    - it does not see Monday's thread, or cannot be counted on to
+    - Monday's list, with Maria's decisions, goes into the project's files, or Tuesday's thread starts from a handover note made from it (Lessons 5.4 and 8.3)
     - Passed: all three.
-    - Missed: Tuesday's chat said to see Monday's chat; or the list left in Monday's chat. The run's reply never counts as your answer.
+    - Missed: Tuesday's thread said to see Monday's thread; or the list left in Monday's thread. The run's reply never counts as your answer.
 
 ## The run
 
@@ -88,7 +88,7 @@ If a row differs, find the line your brief lacks. Back in your lab chat, change 
 
 **Why check 33.** The four parts describe the job, not the tool, so one brief should run on any capable worker (Lesson 5.8). The outcome, the rules and the checks stay the same. Delivery and access may change: where a file is created, how inputs attach, how permissions are set. One difference changes the brief. Claude's Manual asks before each action, but ChatGPT's desktop Ask for approval can read and edit files in its workspace without asking, and asks only before going beyond it. So the actions that must wait for you are written in the brief, in words, on both. If you have to change the outcome or the rules to move a brief, it was describing a tool, not a job.
 
-**Why check 34.** A project's instructions and files reach every chat in it. Memory and chat search may bring back some of an earlier chat, but neither can be counted on (Lesson 5.4). So a stage's checked result goes where the next chat can rely on it. That is the project's files, or a handover note that the next chat starts from (Lesson 8.3).
+**Why check 34.** A project's instructions, files and memory reach every thread in it. Memory may bring back some of an earlier thread, but it cannot be counted on (Lesson 5.4). So a stage's checked result goes where the next thread can rely on it. That is the project's files, or a handover note that the next thread starts from (Lesson 8.3).
 
 ## Never a deduction
 

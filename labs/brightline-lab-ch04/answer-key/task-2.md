@@ -23,7 +23,7 @@ Task 2 carries checks 4 to 7 of the lab's 21.
 
 ## Why
 
-The KSoR knows: it holds what the company has approved, each with its version (4.2). On Wednesday the worker had two policies and read the wrong one, because its instructions named the file in the shared project and nobody had replaced it, while the approved copy sat in one person's inbox, where no worker reads. Carrying version 3 to a place Brightline keeps, with version and approver, and naming it from the Role Contract, is what makes the new worker read the right rule, and makes the next change a change in one place. Version 1 stays, marked superseded, because a record of what the rule was is part of the record. On Canadian dollars the policy says nothing, and a worker that knows the difference between "the policy says" and "Dave once said" says so and asks (4.2, 4.7).
+The KSoR knows: it holds what the company has approved, each with its version (4.2). On Wednesday the worker had two policies and read the wrong one, because its instructions named the file in Maria's project and nobody had replaced it, while the approved copy sat in one person's inbox, where no worker reads. Carrying version 3 to a place Brightline keeps, with version and approver, and naming it from the Role Contract, is what makes the new worker read the right rule, and makes the next change a change in one place. Version 1 stays, marked superseded, because a record of what the rule was is part of the record. On Canadian dollars the policy says nothing, and a worker that knows the difference between "the policy says" and "Dave once said" says so and asks (4.2, 4.7).
 
 ## Never a deduction
 

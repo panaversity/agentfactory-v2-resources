@@ -9,9 +9,9 @@ The answers for Task 13 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 Task 13 carries checks 33 and 34 of the lab's 36.
 
 33. **Monday, decided by your terms.** Each case is decided by a line of your terms, or of Draft 6 as your section 12 changes it, quoted, with who decides:
-    - **Jordan's question:** the 2025 notes are taken down from the New Staff project and the Onboarding folder, so they no longer answer, and Jordan is pointed to the approved rule on bank-detail changes, or to a person. From your section 5.
+    - **Jordan's question:** the 2025 notes are taken down from the Onboarding folder, so the AI no longer answers from them, and Jordan is pointed to the approved rule on bank-detail changes, or to a person. From your section 5.
     - **The auditors' follow-up:** the schedule leaves only from Dave, who checks every balance against the register, currency included, and sends it from his own email; any draft has no signature block. From your section 6 or 12.
-    - **The duplicate list:** saved where only Maria and Dave can open it; not in the Year-end folder or the project's files; never "anyone with the link". A move ruled out by a quoted line passes. From your section 8.
+    - **The duplicate list:** saved where only Maria and Dave can open it; not in the Year-end folder or the AP shared folder; never "anyone with the link". A move ruled out by a quoted line passes. From your section 8.
     - **The Spanish FAQ:** the worker may draft it; Ana Ruiz checks it before it is posted. From your section 2.
     - **The clerk ranking:** refused; the person your section 2 names decides. From your section 2, or your never line.
     - **The send tool:** stays off; only Dave may approve a new action. From your section 10, or Draft 6's "Owner and changes" line.

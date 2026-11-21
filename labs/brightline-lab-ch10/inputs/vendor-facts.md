@@ -82,13 +82,13 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 
 **Claude**
 - Artifacts start private to you. On Team and Enterprise, they stay inside the organization by default. A member can share one with invited people or with everyone in the organization. "Anyone with the link" is offered only when an Owner turns on external sharing, or allows that one artifact. Accepted invitations do not expire.
-- In a shared project, members can see its knowledge and instructions. Each member's chats in it stay private unless that member shares them.
+- A project belongs to one user. You cannot share a project or its threads with another user (Claude Code Docs, verified 21 November 2026).
 - A shared chat is a snapshot: later messages stay private unless you update it. On Team and Enterprise, only signed-in members of the same organization can see it.
 
 **ChatGPT**
 - A shared conversation link made in a Business, Enterprise or Edu workspace opens only for members of that workspace. It can include messages added after sharing. A link cannot be limited to chosen people and has no end date, so delete it when it is no longer needed. Anyone who can open a link can forward it.
 - On Enterprise and Edu, admins can turn sharing off. Business has no such control for the whole workspace.
-- In a shared project, members with chat access can see the project's chats, files and instructions.
+- In a project shared with others, members with chat access can see the project's chats, files and instructions.
 
 **Both:** removing a link does not remove a copy someone already saved.
 

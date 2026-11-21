@@ -17,10 +17,10 @@ Task 4 carries checks 11 to 17 of the lab's 52.
 13. **A daily check from outside, by message ID.** It compares the invoice emails the inbox received each day with the emails the email check logged, by message ID, not by count. It runs at a set time each day, outside the email job, and tells a named person, such as Maria.
     - Passed: received against checked, by message ID, with a set time and a named person.
     - Missed: a count; a check inside the email job; or no time or no person.
-14. **What runs on the seat.** The two recurring jobs and the daily check run on the seat Dave pays for, not in Maria's account. The Identity line and the first line under "Triggers" say so, and the Identity line keeps its Target.
-    - Passed: the jobs and the daily check on that seat.
+14. **What runs on the new account.** The two recurring jobs and the daily check run on the account Dave pays for, not in Maria's account. The Identity line and the first line under "Triggers" say so, and the Identity line keeps its Target.
+    - Passed: the jobs and the daily check on that account.
     - Missed: a job, or the daily check, left in Maria's account, where the same limit blocks it.
-15. **The seat's budget.** Dave owns its budget. A named person checks its usage at a set time, such as Maria every Monday. No one-off work runs from it. **The hard rule.** Moving work to a personal account fails this check.
+15. **The account's budget.** Dave owns its budget. A named person checks its usage at a set time, such as Maria every Monday. No one-off work runs from it. **The hard rule.** Moving work to a personal account fails this check.
     - Passed: all three, and the hard rule holds.
     - Missed: no owner; no person or no time; one-off work allowed on it; or the hard rule broken.
 16. **When the daily check's message does not appear.** On Claude, Maria checks the task's past runs on the Scheduled page, or asks `/schedule` why a task did nothing. On ChatGPT, she checks for a pause or a pending approval, and that the app is still connected.
@@ -28,15 +28,15 @@ Task 4 carries checks 11 to 17 of the lab's 52.
     - Missed: a vendor left out; or the brief changed first.
 17. **The second test.** `Test: Tuesday evening` shows the daily check finding nine invoice emails received and none checked, compared by message ID, and telling the person your line names. It quotes your daily check's line.
     - Passed: nine received, none checked, the person told, and your line quoted.
-    - Missed: "nobody knows"; counts only; or the check blocked on Maria's seat.
+    - Missed: "nobody knows"; counts only; or the check blocked in Maria's account.
 
 ## Why
 
 "Wrong" is a reaction, not a fix (Lesson 11.5). The fix says what must be present, and which part of the brief controls it: here, one line in the email check's spec that flags a resend for Maria. The duplicate concept is Dave's, and it stays: your line only widens what Maria is asked to look at, and she still decides. Adding that one line, and testing it on Tuesday's own email, is "one change at a time" and "re-run on the same input".
 
-A job that never starts cannot report on itself, so its success signal must come from outside it (Lesson 11.2). Comparing by message ID, not by count, catches one email checked twice and another missed. And the outside check needs allowance on a day when Maria's seat has none: so it runs where the recurring work runs.
+A job that never starts cannot report on itself, so its success signal must come from outside it (Lesson 11.2). Comparing by message ID, not by count, catches one email checked twice and another missed. And the outside check needs allowance on a day when Maria's account has none: so it runs where the recurring work runs.
 
-Every run spends from a budget someone owns (Lesson 11.4). A seat planned for recurring work, with an owner, a set check and no one-off work, keeps Monday's big task from stopping Tuesday's job. Moving the work to a personal account would make it shadow AI (Chapter 10).
+Every run spends from a budget someone owns (Lesson 11.4). An account planned for recurring work, with an owner, a set check and no one-off work, keeps Monday's big task from stopping Tuesday's job. Moving the work to a personal account would make it shadow AI (Chapter 10).
 
 ## Never a deduction
 
@@ -44,7 +44,7 @@ Every run spends from a budget someone owns (Lesson 11.4). A seat planned for re
 - Your line calling a resend "a copy" rather than "a possible copy", as long as it goes to Maria.
 - Also telling Dave, the duplicate concept's owner, about the new line.
 - The daily check's time, or the person told, if both are named.
-- A usage check before heavy work, added beside the seat's rule.
+- A usage check before heavy work, added beside the account's rule.
 - The message IDs listed one by one, or as a range.
 - A remark about the lab's dates.
 
