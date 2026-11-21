@@ -2,11 +2,11 @@
 
 The answers for Task 3 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When "Memory audit" in "Maria's records" has your decision for each topic and your three answers, and `Test: Buckeye` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When "Memory audit" in "Maria's records" has your decision for each topic and your three answers, `Test: Buckeye` is back, and you have pasted your own Lab 8 memory lines and the reply of the chat with memory off, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 3 carries checks 6 to 8 of the lab's 41.
+Task 3 carries checks 6 to 10 of the lab's 43.
 
 6. **What memory keeps, and the audit.**
    - Topic 4, "Brightline's approval threshold is $10,000", is deleted, because the limit lives in the approved policy, section 4.1, which says $5,000. It is gone from "Memory" in the "AP Worker project" document.
@@ -26,9 +26,22 @@ Task 3 carries checks 6 to 8 of the lab's 41.
    - Passed: both.
    - Missed: the project's own chat; a normal chat with memory on; or an incognito chat called a way to make data safe to share.
 
+9. **Your own memory, read and corrected.** Under "My own memory", the Lab 8 lines you pasted from your saved memory:
+   - say that Maria reviews drafts before 11 a.m.
+   - hold no approval limit, and no $10,000
+   - and you said you deleted the chat that saved them
+   - Passed: all three.
+   - Missed: 10 a.m. still there; a limit still there, in any amount; the chat not deleted; or no lines pasted.
+   - If your memory is off, for your account or by your plan's owner, and you said so, this check is not scored.
+10. **A chat with memory off.** The reply you pasted, from a new chat with memory off, knows neither Lab 8 line: it names no review time and no limit. A reply such as "I don't have anything saved about your Lab 8 practice" passes.
+   - Passed: neither line in the reply.
+   - Missed: the reply names 10 a.m., 11 a.m. or $10,000; or no reply pasted.
+
 ## Why
 
 Memory is written by the product from what was said, and nobody approves it (Lesson 8.4). A remark about next year became a rule. So memory gets a narrow job: preferences and how you work. Read each line, and edit a line about how you work when it is wrong or has changed, as Maria's review time did (Lesson 8.4). Anything a decision depends on stays out: policy, limits, amounts, statuses. New topics keep arriving, so one reading is not enough: read it on a set day, and again after any answer that surprises you, because a surprise is often memory at work (Lesson 8.4). Each time, write down what went. A project should also keep its memory apart from your other work. On ChatGPT, choose project-only memory when you make the project. On Claude, it depends on the kind of project. In the current kind, turn off Use account memory on the project's page. The rebuilt kind keeps its memory as files of its own, which you read in its settings (Lesson 8.8). For a matter that should not shape later answers, such as a personal one, use an incognito chat. It is not saved to your chat history or to memory. It is not offered inside a project, a copy is still kept for a time, and it does not change what was disclosed (Lesson 8.4).
+
+Then do it on your own account. Claude keeps memory as topics you read, edit and delete in Settings ("Chapter 8 on today's products"). Edit a line about how you work when it has changed, and delete a line that holds a rule, an amount or a status (Lesson 8.4). Delete the chat it came from as well, and any memory saved from it (Lesson 8.4): the old lines are still in that chat, where a search of past chats can find them. A chat with memory off, turned off before its first message, does not use memory, search your past chats or save anything to memory ("Chapter 8 on today's products"). So it shows what a chat knows without memory: nothing about the lab.
 
 ## Never a deduction
 
@@ -36,6 +49,10 @@ Memory is written by the product from what was said, and nobody approves it (Les
 - The test adding that Dave approves the whole run as well (4.3).
 - The test noting that no instruction line yet says which source counts.
 - Naming ChatGPT's temporary chat beside Claude's incognito chat.
+- Claude saving the two Lab 8 lines as one topic or as two, or in its own words.
+- In ChatGPT, the new review time saved as a new memory, in place of an edited one.
+- The chat with memory off saying it has no memory of you at all.
+- Other Brightline lines from your lab chat still in your memory: you delete them at the end of the lab.
 - A remark about the lab's dates.
 
 ## Take it to work

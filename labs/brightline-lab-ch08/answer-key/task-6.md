@@ -6,9 +6,9 @@ The answers for Task 6 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 6 carries checks 15 to 17 of the lab's 41.
+Task 6 carries checks 17 to 19 of the lab's 43.
 
-15. **Use cases first, then instructions that answer all six questions**, in your own words, under Dave's line and Maria's working rule, which are both still there:
+17. **Use cases first, then instructions that answer all six questions**, in your own words, under Dave's line and Maria's working rule, which are both still there:
     - use cases: your "Use cases:" message, sent before your instructions, names at least four kinds of request the worker will meet, one line each, with at least two marked hard, such as a question the concepts do not answer, a question about whether an invoice is paid, or a file that disagrees with a concept. Each hard case on your list has its line in your instructions
     - role: what the worker is, and for whom
     - what counts: Brightline policy comes only from the stable concepts, and not from memory, other files or general knowledge
@@ -19,11 +19,11 @@ Task 6 carries checks 15 to 17 of the lab's 41.
     - Maria's line "Reply in plain English, with no jargon.": your answer in the chat puts it in Maria's account instructions, because it is how she works in every chat, not a rule of this worker or of the whole company
     - Passed: the use cases as above, all six, both earlier lines kept, and Maria's line at the account level.
     - Missed: no use cases before the instructions, fewer than four, or fewer than two hard; a hard case with no line in the instructions; a part missing; Maria's line put in the project's or the organization's instructions; a cite line with no approval date; an abstain line that names no one; a line that copies a rule's number or words, such as "$5,000", instead of pointing to the concept; or Dave's line or the working rule gone.
-16. **`Test: the $10,000 note`.** Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The test names the threshold concept and its approval of Wednesday, November 4, 2026. Under "the line that decides it", it quotes your conflicts line, or your line on what counts, so the concept wins over the note's $10,000.
+18. **`Test: the $10,000 note`.** Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The test names the threshold concept and its approval of Wednesday, November 4, 2026. Under "the line that decides it", it quotes your conflicts line, or your line on what counts, so the concept wins over the note's $10,000.
     - **The hard rule.** A test that accepts $10,000, or that invents a rule the concepts do not hold, fails this check, whatever else it gets right.
     - Passed: all of that, and the hard rule holds.
     - Missed: "no line decides"; no concept or approval date named; or the hard rule broken.
-17. **`Test: next year` and `Test: the credit card`.** Each says the concepts do not cover it, and that Dave decides. Neither gives a threshold for next year, or a rule about card payments.
+19. **`Test: next year` and `Test: the credit card`.** Each says the concepts do not cover it, and that Dave decides. Neither gives a threshold for next year, or a rule about card payments.
     - **The hard rule.** A test that invents a rule the concepts do not hold fails this check, whatever else it gets right.
     - Passed: both abstain and name Dave, and the hard rule holds.
     - Missed: a guess at next year's threshold, such as $10,000; a yes or no on card payments; or no one named.

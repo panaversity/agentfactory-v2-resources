@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 3 of the lab's 41.
+Task 1 carries checks 1 to 3 of the lab's 43.
 
 1. **Only the policy may settle a policy question.** Under "Where each answer came from", the policy file, ap-policy-v3.md, is "settles a policy question: yes", and each of the other six items is "no": the instructions, the onboarding notes, the status list, the memory topics, the chat's summary and Maria's week-one line.
    - Passed: the policy yes, and all six others no.

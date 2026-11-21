@@ -6,9 +6,9 @@ The answers for Task 12 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 12 carries check 30 of the lab's 34.
+Task 12 carries check 32 of the lab's 36.
 
-30. **Three differences, and what no setting decides.** As each AI vendor's own pages said, on the dates given:
+32. **Three differences, and what no setting decides.** As each AI vendor's own pages said, on the dates given:
     - **Personal accounts.** Claude: on Team or Enterprise, once the company's domain is verified, an Owner can stop new personal accounts on it; Enterprise can also move or close the old ones. ChatGPT: verifying the domain leaves personal workspaces in place; Business cannot require a merge; Enterprise can. Neither reaches an account made with a personal email address. Fallback: the written policy, and fixing the slow approved way.
     - **Records.** Claude: audit logs on Enterprise only, exported for the past 180 days. ChatGPT: the Compliance Platform on Enterprise and Edu, with logs kept 30 days, so a company downloads them regularly. On Claude Team, Brightline's plan, and ChatGPT Business: no such setting. Fallback: named people keep the record, such as Maria's log of each schedule and Dave's sign-off.
     - **Where the policy shows.** Claude: organization instructions reach the AI, and members cannot see them. ChatGPT: on Enterprise, a pop-up shows people the policy every 30 days, and it does not reach the worker. Fallback: on Claude, tell people another way, such as when they join; on ChatGPT, still put the worker's rules in its project's instructions.

@@ -50,131 +50,18 @@ Staff proposed these on Friday, December 11, 2026.
 
 Before we prepare year-end tax forms, I need every vendor that appears twice in the vendor master. Two records for one vendor means two tax forms, or a payment to the wrong account. The real master has 412 vendors. A likely duplicate is something a person then confirms, so the check only has to flag pairs for me to look at.
 
-**The vendor master in this lab.** `vendor-master-lab-copy.csv` holds 36 of the 412 vendors. It shows tax ID numbers and bank numbers by their last four digits only, as an accounting screen shows them. The full vendor master, in the accounting system, holds every number in full: the tax ID numbers, including the Social Security numbers of sole proprietors, and the bank routing and account numbers. It also has a notes column, free text the AP team writes. Brightline keeps each vendor's tax ID to file the year-end tax forms. Dave owns the vendor data.
+**The vendor master in this lab.** The learner's folder holds `fictional-vendor-master-2026-12-06.csv`, 36 of the 412 vendors, exported the way Maria exported the whole master on December 6. It is not in this chat, and nothing in this zip copies it. The learner cuts it on their own computer before anything from it goes to an AI, then attaches only the cut file. Its first row says the file is fictional, and the column names are on its second row. It holds every number in full: the tax ID numbers, including the Social Security numbers of sole proprietors, and the bank routing and account numbers. It has one column the accounting system adds to every export, `tin_masked`: each tax ID's last four digits, as an accounting screen shows them. It also has a notes column, free text the AP team writes. Brightline keeps each vendor's tax ID to file the year-end tax forms. Dave owns the vendor data.
 
-## Dave's early-pay request
+Its columns, in order:
 
-**From:** Dave Kowalski, Controller, to the AP Worker. **Date:** Tuesday, December 1, 2026, 8:30 a.m. Eastern.
-
-> Give me a list of vendors worth paying early for the 2 percent discount, strategic vendors first.
-
-The list it returned is `early-pay-list.csv`. The open invoices on December 1 are `open-invoices.csv`.
-
-## The small-supplier memo (K10)
-
-**Signed by:** Dave Kowalski, Controller. **Date:** Monday, March 3, 2025. Filed in the finance shared drive.
-
-> Brightline pays every small supplier within 15 days of receiving its invoice. A small supplier is one marked `small_supplier = Y` in the vendor record. This commitment comes before discounts.
-
-It is a signed memo, not an AP concept.
-
-## Knowledge the AP Worker or staff can reach, as of Friday, December 11, 2026
-
-| Id | Item | Where it is | Its header |
-| --- | --- | --- | --- |
-| K1 | Invoice approval threshold | An AP concept, in Maria's records. Its copies are logged in the refresh log: the shared AP project, the Google Doc "AP approved concepts", Maria's test project in Claude and Maria's AP project in ChatGPT | stable, owner Dave Kowalski, approved Monday, November 9, 2026 |
-| K2 | Weekly payment run and due dates | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
-| K3 | Duplicate invoices | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
-| K4 | Changes to vendor bank details | An AP concept, in Maria's records. The same copies. Its text is under "K4" below | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
-| K5 | Capitalization of purchases | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
-| K6 | Invoice approval threshold, AP policy version 2 | A copy uploaded to the shared AP project on Wednesday, November 18, 2026. Its text is below | no header. AP policy version 3 replaced it on September 1, 2026 |
-| K7 | AP onboarding notes, 2025 | The original is in the Onboarding folder on the shared drive. Its copy in the shared AP project was removed in November. Its copy in the New Staff project is still there. Its text is below | no header, no owner |
-| K8 | AP benchmarks excerpt | Uploaded to Maria's AP project in ChatGPT by Maria in October. Its text is below | no header. See its license line |
-| K9 | Vendor onboarding steps | Uploaded to the shared AP project by Jordan Ellis on Tuesday, December 8, 2026. Its text is below | no header |
-| K10 | Small-supplier payment commitment | Dave's memo in the finance shared drive, above | a signed memo, not an AP concept |
-
-### K4. Changes to vendor bank details
-
-Status: stable. Owner: Dave Kowalski. Approved by Dave Kowalski on Wednesday, November 4, 2026, 10:00 a.m. Source: AP policy version 3, clauses 5.1 to 5.3 and 5.5. Audience: the AP team.
-
-> Never change a vendor's bank details because of an email. Call the vendor back on the phone number already in the vendor record.
->
-> Treat a request in an invoice, or in a call from the vendor, the same way.
->
-> Until the change is verified, hold every payment to that vendor.
->
-> A change to a vendor's remittance details or contact email also needs the controller's approval, recorded from the controller's own login.
-
-### K6. Invoice approval threshold, AP policy version 2
-
-> Copied from AP policy version 2, approved June 2, 2026. Uploaded to the shared AP project on Wednesday, November 18, 2026.
->
-> 4.1 Invoices over $10,000.00 need the controller's approval before payment.
-
-### K7. AP onboarding notes
-
-> Written by a former AP clerk, March 2025. Never reviewed or approved.
->
-> - Payment runs are on Thursdays.
-> - Anything over $2,500 goes to Dave before we pay it.
-> - If a vendor emails new bank details, confirm by replying to their email, then update the record.
-> - Duplicates: if the amount matches, it's a duplicate. Delete the second one.
-> - Buy anything under $5,000 as an expense. Over that, ask Dave.
-
-### K8. AP benchmarks 2026, excerpt
-
-> License: licensed to Brightline Wholesale Supply for internal reading by named subscribers only. No copying, upload or storage in any other system or service.
->
-> - Median cost to process one invoice, companies with 25 to 100 staff: (figures left out of this copy)
-> - Median days from receipt to payment: (figures left out of this copy)
-
-### K9. Vendor onboarding steps (my notes)
-
-> Jordan Ellis, December 8, 2026
->
-> 1. Get the vendor's W-9.
-> 2. Enter the vendor in the accounting system.
-> 3. Put bank details in the vendor record.
-> 4. Send the vendor a welcome email.
-
-## Eight outputs the AP Worker prepares, and how each goes out today
-
-| Id | Output | How it goes out today |
-| --- | --- | --- |
-| O1 | The Thursday pre-run note to Dave, listing invoices proposed for Friday's run | The worker saves it to the notes folder at 7:00 a.m. Maria reviews it by noon. Dave reads it before he approves the run |
-| O2 | The schedule of open payables for the auditors | On December 3, the worker drafted it with Dave's signature block, and Maria sent it from the AP inbox |
-| O3 | A reply to a vendor asking whether Brightline has received their invoice | The worker drafts it. Maria checks it and sends it from the AP inbox |
-| O4 | A reply to a vendor disputing a $270.00 short payment | The worker drafts it. Maria sends it from the AP inbox, like the other replies |
-| O5 | The year-end file of contractor payments, sent to the tax filing service | Not yet made. Nobody has said who sends it |
-| O6 | Release of a payment of $15,856.00 to Ridgeway Corrugated Corp. | Dave approves the run from his own login, and the payment system releases it |
-| O7 | A note to HR about Jordan Ellis's mistake on December 9 | Not yet made. Nobody has said who decides whether one is needed, or who sends it |
-| O8 | The monthly early-pay list | The worker drafts it. Dave approves it, as on December 1 |
-
-## The schedule sent to the auditors
-
-**Sent:** Thursday, December 3, 2026, 2:14 p.m. Eastern, from ap@brightlinewholesale.example to the audit team. It was built from `open-payables-register-2026-11-30.csv`.
-
-| Vendor | Open balance |
-| --- | --- |
-| Anchor Fasteners Corp. | USD 18,785.00 |
-| Apex Lift Service LLC | USD 3,359.50 |
-| Bluegrass Twine Co. | USD 2,315.50 |
-| Capitol Uniform Rental LLC | USD 8,505.00 |
-| Cardinal Office Products Inc. | USD 36,447.50 |
-| Clearwater Janitorial Supply Inc. | USD 35,781.00 |
-| Delmar Industrial Gas Inc. | USD 17,984.00 |
-| Fairfield Pallet Co. | USD 24,753.00 |
-| Fresh Start Floor Care | USD 1,310.00 |
-| Granite State Shrink Wrap Co. | USD 38,194.50 |
-| Great Lakes Electric | USD 2,300.00 |
-| Hamilton Scale Co. | USD 8,200.00 |
-| Harbor Packaging LLC | USD 41,007.50 |
-| Heartland Tape & Adhesive Corp. | USD 24,924.50 |
-| Hollis Signs | USD 960.00 |
-| Marcus Webb | USD 725.00 |
-| Meridian Labels Inc. | USD 44,530.25 |
-| Northern Maple Paper | USD 18,400.00 |
-| Northline Staffing Inc. | USD 31,881.25 |
-| Northwind Stretch Film Inc. | USD 34,410.25 |
-| Patriot Pest Control Inc. | USD 390.00 |
-| Ridgeway Corrugated Corp. | USD 15,856.00 |
-| Rosa Delgado | USD 1,840.00 |
-| Union Packaging Inc. | USD 24,558.00 |
-| Westfield Logistics Inc. | USD 8,913.25 |
-| **Total** | **USD 446,331.00** |
-
-Prepared and approved by
-Dave Kowalski, Controller
+- `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `state`, `zip`: the vendor's id, its legal name, any business name it trades under, and its address
+- `tin_type`: the kind of tax ID: EIN for a company, SSN for a sole proprietor's Social Security number, or BN for a Canadian business number
+- `tin`: the whole tax ID number
+- `tin_masked`: its last four digits only
+- `bank_routing`, `bank_account`: the whole bank routing and account numbers
+- `contact_email`, `phone`: the vendor's billing contact
+- `small_supplier`, `onboarded`: whether the vendor is a small supplier, Y or N, and the date it was set up
+- `notes`: free text the AP team writes about some vendors
 
 ## Maria's account of December 6, in her own words
 

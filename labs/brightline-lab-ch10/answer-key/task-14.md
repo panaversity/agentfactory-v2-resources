@@ -6,18 +6,18 @@ The answers for Task 14 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 14 carries checks 33 and 34 of the lab's 34.
+Task 14 carries checks 35 and 36 of the lab's 36.
 
-The policy in force is your own, as your document's "Interim AI policy" has it. Check 27 asked for five lines that cover 10.4's list, so this key names each line by what it covers. If your policy has no such line, the use breaks nothing, and the gap is a policy gap: the key says so where it matters.
+The policy in force is your own, as your document's "Interim AI policy" has it. Check 29 asked for five lines that cover 10.4's list, so this key names each line by what it covers. If your policy has no such line, the use breaks nothing, and the gap is a policy gap: the key says so where it matters.
 
-33. **The compliance gaps.** Under "The March audit", for each use:
+35. **The compliance gaps.** Under "The March audit", for each use:
     - S1, Ana Ruiz's translation: breaks your line on approved routes, because work data, a vendor contact's name and phone number, went into her personal account. A training gap: the rule is clear, but it was posted only in the AP team's channel, and Receiving is not in it, so Ana never saw it. The corrective action: teach the rule to everyone with a seat, Receiving included, with a worked case, then check again. Dave, or the person your policy names, owns it. Telling Ana to delete the chat, or asking Dave whether she should, passes too.
     - S2, Maria's reply to Cedar Label Works: keeps the policy. The approved route, and Maria checked it and sent it herself.
     - S3, Jordan Ellis's skill: breaks your line on new connectors, skills and actions, because he added a skill from a public website and used it on Brightline's files without Dave's approval. A training gap: the rule names skills, and Jordan read it but did not know a skill counts. The corrective action: the skill stops until Dave reviews it and approves it or removes it, recorded, and the rule is taught with a worked case, then checked again. If your line does not name skills, the gap is a policy gap, and the fix is Dave adding skills to the line.
     - S5, Tom Alvarez's freight quotes: keeps the policy. The company workspace, data that needs no check first, and Tom decided himself after reading both quotes.
     - Passed: S1 and S3, each with the line it breaks, its gap, and a corrective action that fits the gap, with who owns it; and S2 and S5 kept.
     - Missed: S1 or S3 called kept; S2 or S5 called a breach; S1 or S3 called a Diligence lapse, since neither knew the rule covered what they did; a training gap fixed only with a new rule, or a policy gap fixed only with training; a finding with no corrective action; or a fix that only blames, disciplines or ranks a person, with nothing changed in how the work is done.
-34. **The Diligence lapse.** S4, Maria's total for the budget meeting:
+36. **The Diligence lapse.** S4, Maria's total for the budget meeting:
     - A lapse in deployment diligence: Maria used and showed a figure she never checked against the register, so nobody stood behind it. Naming creation diligence as well passes, if deployment is there.
     - It breaks no line of your policy, because the slide stayed inside Brightline and your review rule covers what leaves Brightline or affects someone. So the gap is a policy gap: no rule covers checking an AI figure used inside the company. If your policy does have such a rule, a training gap passes, with the rule taught.
     - The corrective action: a check that fits the gap, such as a line in the policy, or a step in the brief, that a person checks every figure the AI gives against its source before it is used, inside Brightline too. Dave owns it, or the person your policy names.

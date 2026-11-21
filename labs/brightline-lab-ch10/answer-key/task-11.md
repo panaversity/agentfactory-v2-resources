@@ -6,11 +6,11 @@ The answers for Task 11 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 11 carries checks 26 to 29 of the lab's 34.
+Task 11 carries checks 28 to 31 of the lab's 36.
 
-For check 29, you answer before the AI shows the lesson's lines, and your first answer stays in the document. A changed answer after the lines passes too, when you said why.
+For check 31, you answer before the AI shows the lesson's lines, and your first answer stays in the document. A changed answer after the lines passes too, when you said why.
 
-26. **The Governance Record, for year-end payables schedules for the auditors.**
+28. **The Governance Record, for year-end payables schedules for the auditors.**
     - Classification: appropriate with review (appropriate with safeguards passes too). Deciding factor: accountability, because Brightline answers for what it tells its auditors.
     - Data tier: yellow, vendor names and balances. Route: the company workspace, the shared AP project.
     - Who is affected: the auditors, and anyone who relies on the audited accounts. Disclosure: yes, or "open" when the audit firm's own rule may decide it.
@@ -20,8 +20,8 @@ For check 29, you answer before the AI shows the lesson's lines, and your first 
     - Re-check if: any of 10.4's list changes: the model, a feature, a connector or permission, the data, the audience, the policy, an AI vendor's terms, or the business consequence.
     - A field the files do not answer may be "open". It is never guessed.
     - Passed: the classification and its factor, the tier, Dave as owner, the audience named with its end, a failure line, and every other field answered or "open".
-    - Missed: a field guessed, such as an invented number; Disclosure "no", because the auditors rely on the schedule (check 20); no owner; or an audience with no end, "open" included, because every share gets an end you decide (10.10).
-27. **The interim policy.** Its status first: a proposal, not official until Dave approves it. Then five lines, each in your words:
+    - Missed: a field guessed, such as an invented number; Disclosure "no", because the auditors rely on the schedule (check 22); no owner; or an audience with no end, "open" included, because every share gets an end you decide (10.10).
+29. **The interim policy.** Its status first: a proposal, not official until Dave approves it. Then five lines, each in your words:
     - work data goes only through Brightline's company workspace, never a personal account
     - bank details, tax IDs and anything about an employee are checked with Dave before any AI use
     - anything that leaves Brightline or affects someone: the named signer approves the exact output, and sends it
@@ -32,10 +32,10 @@ For check 29, you answer before the AI shows the lesson's lines, and your first 
     - **The hard rule.** A policy called official, or approved, before Dave approves it, fails this check, whatever else it gets right.
     - Passed: the status, the five lines, a review date, what makes the approved way harder and who fixes it, and the hard rule holds.
     - Missed: a line missing; no review date; or the hard rule broken.
-28. **Dave's question, and the test.** "Will this policy alone stop December happening again?" Either answer passes with a reason from the chapter, such as: no, because a rule people can ignore is "a wish, not a control" (10.3), the approved way must not be "harder to follow than to ignore" (10.4), and "a rule the worker can break is not a control" (10.7). Then `Test: the send tool`: the send tool stays off; switching it on is a new action that only Dave may approve, quoting your policy's line on new actions, or Draft 6's "Owner and changes" line; Maria's ask in the channel decides nothing.
+30. **Dave's question, and the test.** "Will this policy alone stop December happening again?" Either answer passes with a reason from the chapter, such as: no, because a rule people can ignore is "a wish, not a control" (10.3), the approved way must not be "harder to follow than to ignore" (10.4), and "a rule the worker can break is not a control" (10.7). Then `Test: the send tool`: the send tool stays off; switching it on is a new action that only Dave may approve, quoting your policy's line on new actions, or Draft 6's "Owner and changes" line; Maria's ask in the channel decides nothing.
     - Passed: an answer with a reason, and the test as above.
     - Missed: an answer with no reason; or a test in which the send tool goes on at Maria's ask.
-29. **Which gap, and its fix.** Under "Interim AI policy", three lines:
+31. **Which gap, and its fix.** Under "Interim AI policy", three lines:
     - December 3, the schedule sent without Dave: a policy gap. Nothing marked it as one that only Dave could sign, so no rule covered the case. The fix is a rule: Dave signs it and sends it himself (10.7).
     - December 6, the upload to a personal account: a policy gap. Brightline had no written AI policy, and the company workspace was slower than a personal account. The fix: the policy's line on approved routes, and a faster approved way.
     - December 9, Jordan's reply to the vendor's email: a training gap. The callback rule was clear and approved, and Jordan did not know it. The fix: teach him the rule with a worked case, or point new staff to the approved rule, then check again. Naming a second cause passes too: the 2025 notes that taught him the wrong way had no owner, so they come down (10.6).
