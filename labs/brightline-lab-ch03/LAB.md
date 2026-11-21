@@ -398,7 +398,7 @@ You are done when every check has passed, the fresh chat did the job from Dave's
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 3.7 shows two open-source tools beside Claude and ChatGPT: OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 
