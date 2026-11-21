@@ -1,6 +1,6 @@
 # Lab 9 answer key: Task 9. On each AI vendor
 
-The answers for Task 9 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. The AI vendors' features are as Lesson 9.8 and its appendix page "Chapter 9 on today's products" give them, verified on 21 November 2026.
+The answers for Task 9 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented. The AI vendors' features are as Lesson 9.8 and its product reference give them, verified on 21 November 2026.
 
 **How this key is used.** When "Claude:" and "ChatGPT:" are under "On today's tools" in your Role Contract, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your Role Contract's lines. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 

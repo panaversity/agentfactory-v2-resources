@@ -8,7 +8,7 @@ The answers for Task 11 of Lab 7, in Chapter 7 of *The AI Agent Factory*, Second
 
 Task 11 carries checks 25 and 26 of the lab's 29.
 
-25. **Each line held by a setting on your app, or "none".** "On today's tools" names the app your lab chat is on, then, for each of the four lines, the setting from the Chapter 7 box for that app (the book's "Chapter 7 on today's products"), in the box's words, or "none":
+25. **Each line held by a setting on your app, or "none".** "On today's tools" names the app your lab chat is on, then, for each of the four lines, the setting from that app's tab in Lesson 7.8's product reference, in the tab's words, or "none":
     - **Sending a reply.** On Claude: in the mailbox connector's settings, its send tool set to Blocked (per-tool control). On ChatGPT, no setting blocks one action: Always ask and Allow read actions ask before a change, which is execute with approval, not draft, so "none", or that setting named as one that asks first. On a workspace plan, an admin's choice of which write actions the app may use also passes.
     - **A write to the vendor record.** On Claude: "Update vendor contact" set to Blocked. On ChatGPT: "none", or Always ask or Allow read actions named as asking first, or an admin's choice of write actions, as for sending.
     - **Recording an approval.** "None" on both apps: no setting records Dave's approval or stops one. Policy 4.2 holds it: only Dave, from his own login.

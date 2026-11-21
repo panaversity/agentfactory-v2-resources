@@ -149,7 +149,7 @@ Then say "Ready for your test".
 
    Ask: "Change any decision? Name it and its new decision, or say 'no'." If the learner changes a decision, write the changed decision. Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
 2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
-3. Show these lines on memory, quoted, from Lesson 8.8 and its appendix page "Chapter 8 on today's products":
+3. Show these lines on memory, quoted, from Lesson 8.8 and its product reference:
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
    - Claude's rebuilt kind of project: "In it, a project is one conversation, and its memory is a set of files that Claude writes as it works. You read, edit and delete them under Project settings, Memory."
    - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat or, where settings allow, move the chat to another project."

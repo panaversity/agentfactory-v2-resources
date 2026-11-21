@@ -225,7 +225,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 
 ## The Chapter 7 boxes
 
-Copied word for word from the book's appendix page "Chapter 7 on today's products", which holds the boxes behind Lesson 7.8, without its footnotes. Show only the lines a question asks for.
+Copied word for word from Lesson 7.8's product reference, which has a tab for each app, without its footnotes. Show only the lines a question asks for.
 
 <!-- 7.8 boxes: begin. tools/brightline-lab-ch07/copy-boxes.py writes this part from the book's page. -->
 
