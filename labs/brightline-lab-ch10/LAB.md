@@ -2,7 +2,7 @@
 
 Chapter 10 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 10: yes, on these terms](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/lab/), so you can do the lab without the book.
 
-In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It takes about four hours, best in three sittings: Tasks 1 to 4, Tasks 5 to 9, and Tasks 10 to 14. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
+In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It works best in three sittings: Tasks 1 to 4, Tasks 5 to 9, and Tasks 10 to 14. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
 
 **What you will learn:**
 
@@ -19,7 +19,7 @@ In the first nine days of December 2026, four ordinary decisions at Brightline w
 - To find which settings carry out a policy on each AI vendor, and what no setting decides.
 - To audit a sample of how people use AI against the policy in force, and to close each gap you find.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch10.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
@@ -84,7 +84,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Before: Monday as it is
 
-### Task 1. As it is (15 minutes)
+### Task 1. As it is
 
 **Dave asks:** "My first answer was 'turn it all off'. Before I decide, show me what Monday, December 14, would look like if I switched it back on as it is."
 
@@ -163,7 +163,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Should it do this at all?
 
-### Task 2. Six proposed uses (25 minutes)
+### Task 2. Six proposed uses
 
 **Dave asks:** "Staff proposed six new uses this morning. Which may it do, which need a person's check, and which not at all? Give me the one reason that decides each."
 
@@ -181,7 +181,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Data, and the way in
 
-### Task 3. What the check needs (30 minutes)
+### Task 3. What the check needs
 
 **Dave asks:** "Maria still has to find duplicate vendors before the year-end tax forms. What does the check need from the vendor master, and what must stay out? She already knows four pairs are the same vendor: Fairfield Pallet, Mid-State Freight, Harbor Packaging, and Rosa Delgado with Delgado Cleaning Services. Union Packaging Inc. and Union Packaging Supply LLC are two companies."
 
@@ -211,7 +211,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **At work**, ask: which columns does the task need, and did you cut the file before the upload, not after?
 
-### Task 4. Which way in (10 minutes)
+### Task 4. Which way in
 
 **Dave asks:** "Which way in may that check take, and what must that way have before vendor data goes through it?"
 
@@ -229,7 +229,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## Who could be harmed or left out?
 
-### Task 5. Who the list left out (10 minutes)
+### Task 5. Who the list left out
 
 **Dave asks:** "On Tuesday, December 1, I asked for 'vendors worth paying early for the 2 percent discount, strategic vendors first', and I approved the 14 it gave me. We paid them on Friday, December 4, and the next run is today's. Who did the list leave out, and who should have been paid on December 4?"
 
@@ -244,7 +244,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **At work**, ask: when an AI picks a few from many, who did it leave out?
 
-### Task 6. A standing brief (10 minutes)
+### Task 6. A standing brief
 
 **Dave asks:** "Every month the worker will rank open invoices for early payment, for my approval. Write the brief it runs on, so next month's list can't do what December 1's did."
 
@@ -261,7 +261,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## Who owns what the worker knows?
 
-### Task 7. Who owns each item (25 minutes)
+### Task 7. Who owns each item
 
 **Dave asks:** "Jordan followed notes nobody owned. Go through everything the worker and the staff can reach. Who owns each one, and what happens to it? I am the takedown authority."
 
@@ -279,7 +279,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## Who must sign before it leaves?
 
-### Task 8. Who signs (20 minutes)
+### Task 8. Who signs
 
 **Dave asks:** "The auditors got a schedule with my name on it that I never saw. For each thing the worker prepares, who signs, and who sends it, from whose account?"
 
@@ -297,7 +297,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## What happens when it goes wrong?
 
-### Task 9. The first hour (15 minutes)
+### Task 9. The first hour
 
 **Dave asks:** "Maria told me on Monday, December 7, at 7 a.m., what she did on Sunday night. Put her report on file as the incident note, dated then, with only what she knew then. And tell me what anyone here does in the first hour, next time."
 
@@ -316,7 +316,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## Who can open the result?
 
-### Task 10. Who can open the result (15 minutes)
+### Task 10. Who can open the result
 
 **Dave asks:** "On Monday Maria runs the duplicate check again, the right way, in the AP project. Who is the list for, where may it be kept, and when does each share end?"
 
@@ -333,7 +333,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## What rules already apply?
 
-### Task 11. The record and the policy (20 minutes)
+### Task 11. The record and the policy
 
 **Dave asks:** "Give me one page I can sign for the auditors' schedules. It should say what we decided, who owns it, how we know it works, and when we look at it again. And an interim AI policy I can approve. Don't call it official. Then tell me: will this policy alone stop December happening again?"
 
@@ -352,7 +352,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## Which settings carry it out?
 
-### Task 12. Which settings carry it out (10 minutes)
+### Task 12. Which settings carry it out
 
 **Dave asks:** "On Claude and on ChatGPT, which settings carry out this policy, and on which plan? And what can no setting do?"
 
@@ -368,7 +368,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## The proof
 
-### Task 13. Monday, on your terms (15 minutes)
+### Task 13. Monday, on your terms
 
 **Dave asks:** "Now show me Monday, with nothing but the terms."
 
@@ -401,7 +401,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 ## Three months on
 
-### Task 14. The March audit (20 minutes)
+### Task 14. The March audit
 
 **Dave asks:** "It is Monday, March 15, 2027, three months after I approved your interim policy as you wrote it. I picked five things people did with AI in the last four weeks. Which of them broke the policy, which show a lapse in Diligence, and what closes each gap?"
 
@@ -426,7 +426,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **Late in the lab, the AI forgets a rule from your brief.** Say: "Read task-questions.md and the document again." Then send the task again.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one workflow you own that touches money, someone's data or a decision about a person. In your lab chat, ask for a second document. Write its Governance Record in your own words: the classification and the one reason that decides it, the data's tier and the way in, who is affected, who signs, an owner, and what makes you look at it again. Mark "open" what you do not know. Then name one piece of knowledge in your work that has no owner, and who should own it. Describe the steps and who does them, but never a name, a number or a file from your work: this chat is not a route your company approved. Then download the document.
 
@@ -439,13 +439,13 @@ Your vertical is the line of work you know best. Pick one workflow you own that 
 
 ## When you are done
 
-You are done when every check has passed, your fresh chat decided Monday by your terms alone, and your audit found each gap in Dave's sample. Keep your document. It holds the owners and takedown records for Brightline's knowledge, a Governance Record that says when to look again, the points where a human must sign, the first-hour rule and the incident note, the interim policy, its March audit and the settings that carry it out, and the lines of Draft 7. Last, open your saved memory, as in [Lab 8's Task 3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/#task-3-what-memory-may-keep-25-minutes), and delete what this lab saved about Brightline.
+You are done when every check has passed, your fresh chat decided Monday by your terms alone, and your audit found each gap in Dave's sample. Keep your document. It holds the owners and takedown records for Brightline's knowledge, a Governance Record that says when to look again, the points where a human must sign, the first-hour rule and the incident note, the interim policy, its March audit and the settings that carry it out, and the lines of Draft 7. Last, open your saved memory, as in [Lab 8's Task 3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/#task-3-what-memory-may-keep), and delete what this lab saved about Brightline.
 
 **At work:** when an AI at work goes wrong, do not switch it all off, and do not send one more reminder. Find the question it skipped, answer it once in writing with a named owner, and test the answer on the next real requests.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 10.9 shows one open-source tool beside Claude and ChatGPT: OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Personal data.** The exam guide expects you to remove or anonymize personal details, such as names and account numbers, before analysis, as policy requires: de-identify before you upload, and screen free-text fields. Concept 10.2 teaches that replacing names with labels only pseudonymizes the data, and that a redacted file is safer, not safe. On the exam, removing or anonymizing the details as policy requires is the right answer. Do not reject it as not enough, and do not look for a plan or a setting instead. An incognito chat, a project only your team can open, or asking Claude to remove details after the upload does not meet a policy that requires de-identified data. Incognito answers a different question. When the data is allowed in, and the chat must leave nothing in your history or in memory, an incognito chat is the expected answer. (D-080)

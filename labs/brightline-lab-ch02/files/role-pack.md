@@ -12,7 +12,7 @@ One file to attach in Task 1. It holds four files, each under its own name: the 
 ## Who it is
 Identity:      <the account it acts as>
 Role:          <job title>
-Kind:          <Delegated (one briefed job) or Standing (an ongoing role)>
+Kind:          <Delegated (each job from a brief) or Standing (keeps working between conversations)>
 Mission:       <one sentence: why the role exists>
 Owner:         <a named person, and their title>
 

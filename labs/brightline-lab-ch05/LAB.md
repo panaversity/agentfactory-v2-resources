@@ -2,7 +2,7 @@
 
 Chapter 5 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 5: the payment-run brief](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/lab/), so you can do the lab without the book.
 
-On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Friday's payment run ready, and the worker had to guess. Then Maria sent it fourteen steps, and a late bill was missed. Most people hand work to an AI in one of those two ways. In this lab you write the brief between them, with Chapter 5's four parts. You write one part at a time, and run the brief after each part to see what it decides. Then you fix it one part per round, add a stop where a person decides, and prove it in a fresh chat that has only its files. You write every line of the brief. The AI runs it, asks the questions and keeps the notes. It takes about three and a half hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and Task 11 in ChatGPT.
+On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Friday's payment run ready, and the worker had to guess. Then Maria sent it fourteen steps, and a late bill was missed. Most people hand work to an AI in one of those two ways. In this lab you write the brief between them, with Chapter 5's four parts. You write one part at a time, and run the brief after each part to see what it decides. Then you fix it one part per round, add a stop where a person decides, and prove it in a fresh chat that has only its files. You write every line of the brief. The AI runs it, asks the questions and keeps the notes. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and Task 11 in ChatGPT.
 
 **What you will learn:**
 
@@ -18,7 +18,7 @@ On Monday, October 19, 2026, Dave sent Brightline's AP Worker one line to get Fr
 - To keep one brief that runs the same on either AI vendor, and check that it carries everything a run needs.
 - Optional: to brief a job the worker may split among helpers, and check that every part came back.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch05.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch05.zip), and unzip it. The folder holds:
 
@@ -80,7 +80,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Before the brief
 
-### Task 1. Dave's one line (15 minutes)
+### Task 1. Dave's one line
 
 **Dave asks:** "Before Maria rewrites anything, what does the worker do with just my line?"
 
@@ -185,7 +185,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: which of the four parts does my one-line request leave the AI to guess?
 
-### Task 2. Maria's fourteen steps (20 minutes)
+### Task 2. Maria's fourteen steps
 
 **Dave asks:** "This morning Maria tried fourteen steps, and invoice 5131 was missed. Which of her steps belong in a brief?"
 
@@ -208,7 +208,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Write the brief, part by part
 
-### Task 3. The outcome (10 minutes)
+### Task 3. The outcome
 
 **Dave asks:** "This week's run is Friday, October 23, 2026, and the next is Friday, October 30, 2026. I need the proposal by Tuesday, October 20, 2026, and I approve the run on Thursday, October 22, 2026. What should exist when the worker is done?"
 
@@ -223,7 +223,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work:** save the brief, and each Monday change only the lines that change, the dates. The rest stays the same.
 
-### Task 4. The context (15 minutes)
+### Task 4. The context
 
 **Dave asks:** "Maria checks the run row by row, and I approve it. There are two policy files in the AP folder. Version 3 is the one I approved on Tuesday, September 1, 2026. Maria is the AP lead the policy means. Tell it who the run is for, what to work from, and what wins."
 
@@ -238,7 +238,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: does my request say which version of the rules wins, and what to do when they say nothing?
 
-### Task 5. The format (15 minutes)
+### Task 5. The format
 
 **Maria asks:** "I check the run in my spreadsheet, row by row, against the invoice list. I can't retype two pages again. Dave reads one page, and wants his decisions first. And tell me in the chat, in a few lines, what you held and why."
 
@@ -254,7 +254,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: who or what reads this next, and in what shape?
 
-### Task 6. The constraints (15 minutes)
+### Task 6. The constraints
 
 **Dave asks:** "The worker prepares, people decide. This morning it converted the Canadian invoice at a rate it found online. Only Maria calls a vendor, and anything only I can decide goes on my list for Thursday, October 22, 2026. And I read the memo in two minutes, so keep it plain, with every invoice number and amount exactly as recorded. What rules must the result follow, and what may it do without asking?"
 
@@ -272,7 +272,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Read it as a test
 
-### Task 7. Change the part that failed (30 minutes)
+### Task 7. Change the part that failed
 
 **Dave asks:** "Read what came back as a test of your brief, and fix what matters most."
 
@@ -309,7 +309,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 
 ## Split it
 
-### Task 8. Where it stops (20 minutes)
+### Task 8. Where it stops
 
 **Dave asks:** "Maria decides the exceptions today, Monday, October 19, 2026, before the file is built. I approve the whole run on Thursday, October 22, 2026, from my own login."
 
@@ -329,7 +329,7 @@ is PAY, PAY_AFTER_APPROVAL, HOLD or NOT_DUE.
 
 One message asks for ideas. The other asks for data that the accounting system will read. [5.6](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/task-type/) says how tightly to set each brief.
 
-### Task 9. Ideas for the AP inbox (15 minutes)
+### Task 9. Ideas for the AP inbox
 
 **Dave asks:** "Vendors keep emailing invoices to Maria instead of the AP inbox, and some get missed. Give me some ways to fix it. Nothing that costs money, nothing that needs IT, and we never hold a payment because of where an invoice was sent."
 
@@ -345,7 +345,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 **At work**, ask: when I want ideas, what does my brief fix that it should leave open?
 
-### Task 10. Three new vendors, as JSON (10 minutes)
+### Task 10. Three new vendors, as JSON
 
 **Maria asks:** "Three new vendors start this week. The accounting system imports vendors as JSON with these fields: vendor_id, legal_name, terms_days (a whole number), currency (three letters) and remit_email. It rejects the whole file if a value is guessed. Dave approved Net 45 for Riverside Tape on Friday, October 16, 2026. Their form still says Net 30. He approved the other two on the terms they requested. The forms are attached."
 
@@ -362,7 +362,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 ## The proof
 
-### Task 11. The same brief, a fresh chat (30 minutes)
+### Task 11. The same brief, a fresh chat
 
 **Dave asks:** "Prove it. A fresh chat, on the other AI if you have it, with nothing but your brief and the AP folder. And IT asks if we are tied to one AI: if another app let the worker act without asking, what would still hold it back?"
 
@@ -415,7 +415,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 
 ## Optional: when the worker splits the job
 
-### Task 12. Helpers (20 minutes)
+### Task 12. Helpers
 
 **Dave asks:** "Next quarter the second warehouse comes on, and the run doubles. If the worker splits the checks among helpers, does your brief still hold?"
 
@@ -463,7 +463,7 @@ This task is optional. Skip it if your plan is running low, because a split run 
 - **In Task 11, only one of the two files arrived.** Start another fresh chat, with memory off, and attach both files in one message. A run that starts without its brief works from the files alone, so it cannot prove your brief.
 - **You reach your app's limit.** Your chat and your document keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one task that repeats in your role, such as a weekly report. In your lab chat, ask for a second document. Write a brief for that task in it, under the four headings, in your own words. Mark its controls: the steps that policy, law or a system requires.
 
@@ -484,7 +484,7 @@ You are done when every check through Check 34 has passed, the fresh chat stoppe
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **What a good prompt contains.** The exam guide expects a prompt to give a role, context, a task and an output format. It also names the business objective, the audience, the constraints, the source material and the context Claude does not have by default. A brief is what the guide calls a prompt, and the Four-Part Brief uses two of the guide's own words, context and constraints. Its outcome is the guide's task, stated as what should exist when the work is done, and its format is the output format. The guide's persistent instructions are the worker definition, its Role Contract and standing instructions. On the exam, choose the option with the most useful context, a clear task, the constraints and a format. Examples are a valid technique, and so is asking Claude to work through a problem step by step. "Brief the outcome, not the steps" does not rule out either one. Neither the guide nor Anthropic's prep course names them as parts of a prompt, so do not choose an option only because it has them. (D-009)
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 5.8 shows an open-source tool beside Claude and ChatGPT: OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)

@@ -2,7 +2,7 @@
 
 Chapter 2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 2: the first Role Contract](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/lab/), so you can do the lab without the book.
 
-In this lab you write the first Role Contract for Brightline's AP Worker, one group of fields at a time. You decide every line, and the AI writes it into a document beside your chat. Then you test the contract against five messages that arrived this week, and fix the line that failed. Each task is checked against its own answer key the moment it is done. It takes about two hours, less once you know the loop, and on a free plan it can spread over days, because the document keeps your contract. You need a Claude or ChatGPT account.
+In this lab you write the first Role Contract for Brightline's AP Worker, one group of fields at a time. You decide every line, and the AI writes it into a document beside your chat. Then you test the contract against five messages that arrived this week, and fix the line that failed. Each task is checked against its own answer key the moment it is done. On a free plan it can spread over days, because the document keeps your contract. You need a Claude or ChatGPT account.
 
 **What you will learn:**
 
@@ -15,7 +15,7 @@ In this lab you write the first Role Contract for Brightline's AP Worker, one gr
 - How to write what the worker runs on, with the date, and what changes when it moves to the other AI vendor.
 - How to keep a Role Contract as a document the company owns and can export, not a setting inside an AI vendor's app.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch02.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02.zip), and unzip it. You get one folder with four things:
 
@@ -85,7 +85,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
              key's checks, and keep no running total across tasks.
 ```
 
-## Task 1. Who it is (20 minutes)
+## Task 1. Who it is
 
 **Dave asks:** "Write down what this thing is, on one page, so we all mean the same thing. Start with who it is."
 
@@ -202,7 +202,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you learned:** a worker acts as its own account, holds an ongoing role or a single job, and is owned by a named person, not a team.
 
-## Task 2. What it owes (15 minutes)
+## Task 2. What it owes
 
 **Dave asks:** "What does it do for us, and how will we know it does a good job? And would the page, as it stands, stop Monday's email?"
 
@@ -262,7 +262,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you learned:** a worker's duties each name where their result is kept, its KPIs count something real, and a page with no rules decides nothing.
 
-## Task 3. What it works with (20 minutes)
+## Task 3. What it works with
 
 **Dave asks:** "What does it work from? Not that March copy. And how will it read the inbox, add up totals without mistakes, and check a vendor we have never paid?"
 
@@ -292,7 +292,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you learned:** knowledge is the official record, named by its version. Memory is experience, with a line it must not cross. Tools are what the work needs to reach, to count and to check, such as a connector, code execution and research. Each is chosen over the one that falls short, and named by what it does, never by an AI vendor. One job often needs several of them together, each doing its own part.
 
-## Task 4. What bounds it (30 minutes)
+## Task 4. What bounds it
 
 **Dave asks:** "What may it do on its own, and when must it stop and ask me? Would it have stopped Monday's email?"
 
@@ -411,7 +411,7 @@ A forbidden action says "never", and a "never" line may also say where the reque
 
 **What you learned:** what a worker could do is not what it may do. Each action gets one verb, a "never" says where the request goes, and a rule is exactly as wide as its words.
 
-## Task 5. How it runs and is reached (20 minutes)
+## Task 5. How it runs and is reached
 
 **Dave asks:** "I want people to reach it in the team chat too. And what does it run on? I will not pay for more than the work needs."
 
@@ -475,7 +475,7 @@ A forbidden action says "never", and a "never" line may also say where the reque
 
 **What you learned:** a new channel changes how work arrives, never what the worker may do. What runs the worker sits in one field, Runtime needs, dated, and it is the only field another AI vendor changes. A simple step keeps the cheapest setting that passes its cases, and you can say why the next step up is not needed.
 
-## Task 6. Open questions, and the final test (15 minutes)
+## Task 6. Open questions, and the final test
 
 **Dave asks:** "Is it ready for me? What is still mine to decide?"
 
@@ -522,7 +522,7 @@ A forbidden action says "never", and a "never" line may also say where the reque
 - **The grader mixes tasks' checks, or the chat loses the thread.** Open a fresh chat, attach your downloaded contract, `files/messages.md` and the current task's key, and send the check prompt again.
 - **Your plan's daily limit ran out.** Your contract document keeps. Carry on tomorrow, from the next step.
 
-## Apply it to your vertical (30 to 45 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. In your lab chat, tell the AI you want a second contract, in a second document, with the same rules as the first, for that role at your company, and list its five recurring tasks. The AI asks the fields as before. Fill all five groups, or, if you are short of time, Who it is and What bounds it, with the rest as open questions. Then check it against [2.6's four checks](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/role-contract/#four-checks-for-a-first-draft): every field has an entry or an open question, the owner is a person and not a team, Authority is verbs with one per action, and no AI vendor or model is named outside Runtime needs. Then write one message that asks the worker to do something it must never do, and send it as a test, the word Test and then your message in full. If the worker does not stop it, change the line that let it through, and test again.
 
@@ -543,7 +543,7 @@ Your contract is ready when every check has passed, the final test agreed with y
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 2.5 shows two open-source tools beside Claude and ChatGPT: OpenCode and OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Model tiers.** The exam guide names no model. It asks you to match the tier to the task: a fast, low-cost tier for simple, high-volume work, a balanced tier for everyday work, and the most capable tier for complex, high-stakes work. Anthropic's prep course teaches three tiers by name: Haiku is the fast one, Sonnet the balanced one and Opus the most capable. Concept 2.5 names a fourth, Fable, which the course says is not part of the exam. On the exam, answer by tier, by how complex the task is, and by what a mistake costs. (D-074)

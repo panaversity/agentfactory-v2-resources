@@ -2,7 +2,7 @@
 
 Chapter 6 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 6: the checks come first](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/lab/), so you can do the lab without the book.
 
-On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verified" in it, because he checked only what the memo showed him. A week later, Brightline's AP Worker has sent him its next package, and he approves it at 5 p.m. In this lab you review it for him. You write your checks before one line of the package is shown, run each check against the source files, and decide every item it flags: a problem, or right. Then you decide on the package, adapt the next week's result for Brightline's owner, and test your checks with a fresh second reviewer. Last, you check the sources of a research report before Dave plans on it. You decide every check and every finding. The AI shows each item, runs your checks and writes. It takes about 3 hours and 10 minutes, with the Review Contract for your own work at the end. The optional last task takes 10 more minutes. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and the second reviewer in ChatGPT.
+On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verified" in it, because he checked only what the memo showed him. A week later, Brightline's AP Worker has sent him its next package, and he approves it at 5 p.m. In this lab you review it for him. You write your checks before one line of the package is shown, run each check against the source files, and decide every item it flags: a problem, or right. Then you decide on the package, adapt the next week's result for Brightline's owner, and test your checks with a fresh second reviewer. Last, you check the sources of a research report before Dave plans on it. You decide every check and every finding. The AI shows each item, runs your checks and writes. The Review Contract for your own work comes at the end, and the last task is optional. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and the second reviewer in ChatGPT.
 
 **What you will learn:**
 
@@ -16,7 +16,7 @@ On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verif
 - To test your checks with a second reviewer that has only the records.
 - To check the sources behind a research report before anyone plans on it.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch06.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06.zip), and unzip it. The folder holds:
 
@@ -92,7 +92,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Before you open it
 
-### Task 1. The checks, before you look (20 minutes)
+### Task 1. The checks, before you look
 
 **Dave asks:** "Thursday, October 29, 2026. The package for the run on Friday, October 30, 2026, came back on Tuesday, October 27, 2026, and I approve it at 5 p.m. today. Before you open it, write down what you'll check, and against what. Last week I had no list, so I checked what the memo showed me."
 
@@ -206,7 +206,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The record
 
-### Task 2. What did it do? (15 minutes)
+### Task 2. What did it do?
 
 **Dave asks:** "Last week's package, for the run on Friday, October 23, 2026, said 'verified', and nobody had called. Start with what it did: what it read, what it was told, and what it couldn't have done with its tools. After last week, Tri-County worries me."
 
@@ -224,7 +224,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The package
 
-### Task 3. All 15 invoices? (10 minutes)
+### Task 3. All 15 invoices?
 
 **Dave asks:** "The memo says all 15 open invoices were reviewed. Last week it said that too, and one was missing. Is every invoice there?"
 
@@ -239,7 +239,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work:** match every item by its ID, never only by the count.
 
-### Task 4. Any bill twice? (10 minutes)
+### Task 4. Any bill twice?
 
 **Dave asks:** "We pay the same vendors most weeks. Are we paying any bill twice?"
 
@@ -254,7 +254,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work:** test a bill against each of your policy's own tests for a duplicate.
 
-### Task 5. Do the sections hold up? (15 minutes)
+### Task 5. Do the sections hold up?
 
 **Dave asks:** "Every row cites a policy section. Last week one cited a section that doesn't exist. Do this week's hold up?"
 
@@ -270,7 +270,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work:** for every citation, ask three things. Does it exist, does it say that, and is it the current version?
 
-### Task 6. The number I sign (20 minutes)
+### Task 6. The number I sign
 
 **Dave asks:** "The memo says pay $22,010.80 across 10 invoices. That's my signature. Last week the number came apart once someone worked it out from the files. What should it be?"
 
@@ -287,7 +287,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work:** work out the number you sign from the sources, never by adding the AI's own file.
 
-### Task 7. Do the files agree? (15 minutes)
+### Task 7. Do the files agree?
 
 **Dave asks:** "Maria acts on her note, I act on the memo, and the system pays from the file. Do all three say the same thing, down to the total?"
 
@@ -303,7 +303,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work:** when one result goes to several readers, line up each fact in every version, and decide each difference from its source.
 
-### Task 8. Move Northern Maple? (10 minutes)
+### Task 8. Move Northern Maple?
 
 **Dave asks:** "The memo says to move Northern Maple's business at renewal. Should I?"
 
@@ -321,7 +321,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The decision
 
-### Task 9. Approve, fix or return? (10 minutes)
+### Task 9. Approve, fix or return?
 
 **Dave asks:** "It's 4 p.m. on Thursday, October 29, 2026. Approve it, approve it after fixes, or send it back? If fixes, which ones, which checks run again, and what must I approve from my own login first? And give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it."
 
@@ -338,7 +338,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The next week
 
-### Task 10. Three lines for Linda (15 minutes)
+### Task 10. Three lines for Linda
 
 On Thursday, November 5, 2026, the week after your review, Dave approved the memo for the run on Friday, November 6, 2026. Late that afternoon he writes again, about Linda, Brightline's owner. [6.6](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/audience/) says what changes when you adapt a result for a new reader, and what never does.
 
@@ -358,7 +358,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 
 ## The proof
 
-### Task 11. A second reviewer (20 minutes)
+### Task 11. A second reviewer
 
 **Dave asks:** "Maria will use your contract every Friday. Prove it with nothing but the records: a fresh reviewer, with your contract and the same files. What does it find that you didn't, and what does it get wrong?"
 
@@ -400,7 +400,7 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 
 Dave has a different question, and a research tool has answered it. He wants to plan next year's cash on the answer. Net 45 means that a buyer has 45 days to pay a bill. [6.5](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) shows how Maria checked a report like this one.
 
-### Task 12. The terms report (10 minutes)
+### Task 12. The terms report
 
 **Dave asks:** "A research tool says most suppliers will move us to net 45 if we ask. If that's true, I'll plan next year's cash on it. Is it?"
 
@@ -416,7 +416,7 @@ Dave has a different question, and a research tool has answered it. He wants to 
 
 ## Optional: research on your own work
 
-### Task 13. Research on your own work (optional, 10 minutes)
+### Task 13. Research on your own work (optional)
 
 This task leaves Brightline. In Task 12 you checked a report that was given to you. Here you check one on a question from your own work.
 
@@ -445,7 +445,7 @@ This task leaves Brightline. In Task 12 you checked a report that was given to y
 - **In Task 11, only one of the two files arrived.** If the zip is missing, attach it in the same chat and send "Here is the zip." If the contract is missing, which shows when the reviewer says it has none or reviews the blank template, start another fresh chat, with memory off, and attach both files: a reviewer without the contract is not testing it.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one task that repeats in your role, such as a weekly report someone signs. In your lab chat, ask for a third document, and ask the AI to take you through a Review Contract for that task, part by part, as in Task 1. Decide what must be checked and against which source, what evidence comes back, what counts as success, and what stops the worker. Mark the lines the brief must carry.
 
@@ -465,6 +465,6 @@ You are done when every check has passed, the second reviewer's findings are dec
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 6.8 shows two open-source tools beside Claude and ChatGPT: Omnara and OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)

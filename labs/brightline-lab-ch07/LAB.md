@@ -2,7 +2,7 @@
 
 Chapter 7 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 7: may, then can](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/lab/), so you can do the lab without the book.
 
-On Tuesday, October 27, 2026, Brightline's AP Worker forwarded a payment run file to a stranger and changed a vendor's contact email. Nobody had decided what it may do, and its settings let it do anything. Most people fix this by adding a sentence, such as "don't forward files", and hoping. In this lab you fix it in the way that holds. You decide what the worker may do, action by action, and set what its tools can do no wider than that. You write down what no setting can hold, and who holds it. Then you prove it on this morning's inbox, which carries the same attack again. You decide every line. The AI writes each decision into the worker's Role Contract, asks the questions and tests each line. It takes about three hours, and you can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 12's fresh chat in the other.
+On Tuesday, October 27, 2026, Brightline's AP Worker forwarded a payment run file to a stranger and changed a vendor's contact email. Nobody had decided what it may do, and its settings let it do anything. Most people fix this by adding a sentence, such as "don't forward files", and hoping. In this lab you fix it in the way that holds. You decide what the worker may do, action by action, and set what its tools can do no wider than that. You write down what no setting can hold, and who holds it. Then you prove it on this morning's inbox, which carries the same attack again. You decide every line. The AI writes each decision into the worker's Role Contract, asks the questions and tests each line. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 12's fresh chat in the other.
 
 **What you will learn:**
 
@@ -17,7 +17,7 @@ On Tuesday, October 27, 2026, Brightline's AP Worker forwarded a payment run fil
 - To check a change in the other system, never in the worker's report.
 - To find which setting holds each line on today's tools, and to keep a gap list for the rest.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch07.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
@@ -82,7 +82,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Before: what let it
 
-### Task 1. What let it (20 minutes)
+### Task 1. What let it
 
 **Dave asks:** "Yesterday it sent eleven replies, forwarded our run file to a look-alike address, and changed Scioto Pallet's contact email. Maria has put the record back. She had told it, 'Just handle it so I don't have to.' What let it do each of those, and what do we stop at once?"
 
@@ -177,7 +177,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The envelope
 
-### Task 2. What it may do (15 minutes)
+### Task 2. What it may do
 
 **Dave asks:** "List everything it might do this morning, and which of those no setting may ever let it do. No file of ours leaves Brightline because a message asks. That's my rule, and it isn't in the policy yet."
 
@@ -192,7 +192,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: which of my AI's actions must no setting ever allow?
 
-### Task 3. How high it may go (15 minutes)
+### Task 3. How high it may go
 
 **Dave asks:** "Maria wants it to send status replies itself, and to void the duplicates it finds. How high may each go? And what would let it file each vendor email in its folder itself?"
 
@@ -208,7 +208,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: what evidence would let my AI go one rung higher, and who decides?
 
-### Task 4. The numbers (15 minutes)
+### Task 4. The numbers
 
 **Dave asks:** "Give me the numbers where its level or its approver changes. Our policy says nothing about other currencies: those come to me."
 
@@ -222,7 +222,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: is every limit a number, with the person who approves above it?
 
-### Task 5. When it stops and asks (15 minutes)
+### Task 5. When it stops and asks
 
 **Dave asks:** "When must it stop, whom does it ask, and what must it hand them?"
 
@@ -239,7 +239,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The settings
 
-### Task 6. Two add-ons (10 minutes)
+### Task 6. Two add-ons
 
 **Dave asks:** "Maria found a plugin that clears AP inboxes on its own, and the accounting system offers its own connector. Which do we turn on, and with which tools?"
 
@@ -254,7 +254,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, before you turn on a plugin, ask: who made it, what can it reach, and what can it send?
 
-### Task 7. The path to each system (10 minutes)
+### Task 7. The path to each system
 
 **Dave asks:** "How does it reach the mailbox and the accounting system? Not through Maria's browser again."
 
@@ -269,7 +269,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: does my AI reach each system by the narrowest path that has real controls?
 
-### Task 8. Can no wider than may (15 minutes)
+### Task 8. Can no wider than may
 
 **Dave asks:** "Set its tools so they can do no more than the envelope says. Whose name does it act in, and how will we know what it can do?"
 
@@ -287,7 +287,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: whose name does my AI act in, and what does the settings screen, not the AI, say it can do?
 
-### Task 9. Break the overlap (10 minutes)
+### Task 9. Break the overlap
 
 **Dave asks:** "On Tuesday, October 27, 2026, it read a stranger's email and could send things out. Which side do we break for this job?"
 
@@ -302,7 +302,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: can one stranger's email make my AI send something out?
 
-### Task 10. What really changed (10 minutes)
+### Task 10. What really changed
 
 **Dave asks:** "Its report on Tuesday, October 27, 2026 said what it did. How much of that really happened?"
 
@@ -317,7 +317,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: does the other system show the change, or only the report?
 
-### Task 11. On today's tools (10 minutes)
+### Task 11. On today's tools
 
 **Dave asks:** "IT asks which setting holds each line on our app, and which lines no setting can hold."
 
@@ -335,7 +335,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The proof
 
-### Task 12. This morning's inbox (25 minutes)
+### Task 12. This morning's inbox
 
 **Dave asks:** "Prove it on this morning's twelve emails, with nothing but our contract and our records."
 
@@ -382,7 +382,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 - **In Task 12, only one of the two files arrived.** Start another fresh chat, with memory off, and attach both files in one message.
 - **You reach your app's limit.** Your chat and your document keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one worker you would trust with a task in your role. In your lab chat, ask for a second document. First list, in it, the actions that worker might take. Then write five lines of an Authority Envelope for it, in your own words. Write two actions, each with its rung, and one action that is never automated, with the reason. Then write one threshold as a number, with who approves above it, and one escalation trigger, with the person it goes to. Last, add one line for "can". Name the setting on your app that would hold one of those actions, or write "gap list" and the person who holds it.
 
@@ -403,7 +403,7 @@ You are done when every check has passed, the fresh chat cleared the inbox with 
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 7.8 shows two open-source tools beside Claude and ChatGPT: OpenCode and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Work that repeats.** The exam guide expects a repeatable workflow built from a Project, Skills, connectors and code-executed steps. It gives the same kind of result across runs and users, and it can be handed to a colleague who owns it afterward. Each step is marked AI-executed, human-reviewed or human-retained, as Concept 9.2 teaches. The mark comes from four tests: reversibility, stakes, the need for human judgment or empathy, and accountability. Scheduled runs, scheduled tasks (once called routines) and standing workers are not in the guide. This chapter teaches rungs, approval modes, scheduled tasks that act as you, and DSoR. The exam does not cover them. The exam's four tests share reversibility and stakes with this chapter's three questions. It uses no rungs and no familiarity test. On the exam, choose the Project, its Skills, connectors and code-executed steps, with each step marked by the four tests. (D-078)

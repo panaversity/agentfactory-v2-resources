@@ -2,7 +2,7 @@
 
 Chapter 0.1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.1: Where the answer comes from](https://agentfactory.panaversity.org/how-ai-works/what-ai-actually-is/lab/), so you can do the lab without the book.
 
-In this lab you try the chapter's ideas yourself, in about 15 minutes. You send a few short messages, write down what comes back, and compare it with what you probably saw.
+In this lab you try the chapter's ideas yourself. You send a few short messages, write down what comes back, and compare it with what you probably saw.
 
 **What you will learn.** Where an AI's answer comes from: what it learned in training, or what is in the chat in front of it. And why a tool can do what the model alone cannot.
 

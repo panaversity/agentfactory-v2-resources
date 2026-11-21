@@ -2,7 +2,7 @@
 
 Chapter 3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 3: the same one line](https://agentfactory.panaversity.org/ai-worker-paradigm/the-10-80-10-operating-rhythm/lab/), so you can do the lab without the book.
 
-On Thursday, October 1, 2026, Brightline's AP Worker was used three times, and each time a person got the rhythm wrong. In this lab you take Dave's one-line request, "Reconcile Midwest Packaging's statement.", and see what it leaves the worker to decide alone. Then you set the work up properly, let it run, and review what comes back. Last, you write the lessons where every future run reads them, until the same one line does the job right. Most people either type one line and trust the result, or check every step by hand. This lab teaches the rhythm that works instead. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. It takes about three and a half hours. Stop after Task 4 or Task 7 if you need a break: the chat and the document keep your work. You need a Claude or ChatGPT account, and a free one is enough.
+On Thursday, October 1, 2026, Brightline's AP Worker was used three times, and each time a person got the rhythm wrong. In this lab you take Dave's one-line request, "Reconcile Midwest Packaging's statement.", and see what it leaves the worker to decide alone. Then you set the work up properly, let it run, and review what comes back. Last, you write the lessons where every future run reads them, until the same one line does the job right. Most people either type one line and trust the result, or check every step by hand. This lab teaches the rhythm that works instead. You decide every line, and the AI asks the questions and writes. Each task is checked against its own answer key the moment it is done. Stop after Task 4 or Task 7 if you need a break: the chat and the document keep your work. You need a Claude or ChatGPT account, and a free one is enough.
 
 **What you will learn:**
 
@@ -13,7 +13,7 @@ On Thursday, October 1, 2026, Brightline's AP Worker was used three times, and e
 - To tell which part of the rhythm broke.
 - To put a lesson where every future run reads it, and to hold a limit when nobody is watching.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch03.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch03.zip), and unzip it. The folder holds:
 
@@ -73,7 +73,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Before the fix
 
-### Task 1. Dave's one line (15 minutes)
+### Task 1. Dave's one line
 
 **Dave asks:** "Before we change anything, what would the worker do with just my line, 'Reconcile Midwest Packaging's statement.'?"
 
@@ -171,7 +171,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## 9 a.m.: the first 10 percent
 
-### Task 2. Intent and scope (10 minutes)
+### Task 2. Intent and scope
 
 **Dave asks:** "I sign the close on Monday, October 5, 2026. What is the job, and what does the worker work from?"
 
@@ -189,7 +189,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work, ask:** what date does your AI think it is, and what does it treat as the source of truth?
 
-### Task 3. Authority for this task (10 minutes)
+### Task 3. Authority for this task
 
 **Dave asks:** "The contract lets the worker update the register, because building it is its normal job. Should it here?"
 
@@ -209,7 +209,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work, ask:** what may your AI change in this task, and is that less than it could change?
 
-### Task 4. The review contract (15 minutes)
+### Task 4. The review contract
 
 **Dave asks:** "Tell me what my signature on Monday will depend on."
 
@@ -232,7 +232,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## 11 a.m.: the middle 80 percent
 
-### Task 5. Let it run (10 minutes)
+### Task 5. Let it run
 
 **Dave asks:** "Run it. And don't do Maria's 90 minutes."
 
@@ -259,7 +259,7 @@ A chat cannot show a run in progress, so the moments stand in for a progress vie
 
 ## 4 p.m.: the final 10 percent
 
-### Task 6. Flags and the approval queue (15 minutes)
+### Task 6. Flags and the approval queue
 
 **Dave asks:** "Which items need my approval? Show me each one with its evidence and the policy section behind it."
 
@@ -277,7 +277,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **At work, ask:** when your AI's work comes back, what do you read first?
 
-### Task 7. The one number, and which part broke (10 minutes)
+### Task 7. The one number, and which part broke
 
 **Dave asks:** "Does it add up to $4,000.00? And what did my 9 a.m. line skip? One sentence."
 
@@ -296,7 +296,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 ## Where it lasts
 
-### Task 8. Draft 2 (30 minutes)
+### Task 8. Draft 2
 
 **Dave asks:** "Put what we learned where it lasts. I don't want to write these rules into every brief. Mark what changed and what is new."
 
@@ -315,7 +315,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 **At work, ask:** which rule do you keep retyping into your AI requests, and where would it live once?
 
-### Task 9. Limits on a schedule (15 minutes)
+### Task 9. Limits on a schedule
 
 **Dave asks:** "If this reconciliation runs as a scheduled task, what holds the limits while nobody watches? Tell me any limit we can't hold yet."
 
@@ -336,7 +336,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 
 ## The proof
 
-### Task 10. The same one line (15 minutes)
+### Task 10. The same one line
 
 **Dave asks:** "Now give it just my line again."
 
@@ -378,7 +378,7 @@ A **timing** item is on one list but not yet on the other, only because of the d
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **You reach your app's limit.** Your chat and your document keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one task in it that you would hand over to an AI. In your lab chat, ask for a second document, the first 10 percent for that task, and answer the same questions as Tasks 2 to 4: the outcome, today's date, what is in and out, what it may do, and the review contract's five answers. Then send `Plan:` with that document's name, and ask one "what if" question about the mistake that cost you the most last year.
 
@@ -398,7 +398,7 @@ You are done when every check has passed, the fresh chat did the job from Dave's
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 3.7 shows two open-source tools beside Claude and ChatGPT: OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 
