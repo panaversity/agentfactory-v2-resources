@@ -2,7 +2,7 @@
 
 Chapter 8 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), so you can do the lab without the book.
 
-On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. It takes about three and a half hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
 **What you will learn:**
 
@@ -17,7 +17,7 @@ On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, an
 - To write down, in the worker's Role Contract, where its knowledge comes from, who owns it, and what is never a source, so the next keeper finds it.
 - To review what a project holds and reaches.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch08.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
@@ -88,7 +88,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Tuesday, November 3: four wrong answers
 
-### Task 1. Where each answer came from (20 minutes)
+### Task 1. Where each answer came from
 
 **Dave asks:** "This morning it gave you four wrong answers, and each one sounded sure. Before we change anything, show me where each one came from."
 
@@ -170,7 +170,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, when an AI answer is wrong, ask: which of the five places did it come from, before you change any words?
 
-### Task 2. The long chat (10 minutes)
+### Task 2. The long chat
 
 **Dave asks:** "That chat has run since September 8, and it stopped flagging Northern Maple's Canadian-dollar invoices to me, though our contract sends me every invoice not in USD. What do we do with that chat, and with long chats like it? And where should that rule live, so the worker follows it?"
 
@@ -186,7 +186,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: which rule lives only in a chat, and where should it live instead?
 
-### Task 3. What memory may keep (25 minutes)
+### Task 3. What memory may keep
 
 **Dave asks:** "It took your remark about my $10,000 idea for next year as our limit. What may it remember, and how do we catch this next time?"
 
@@ -225,7 +225,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: what does my AI's memory hold that a decision depends on?
 
-### Task 4. One topic, one concept (15 minutes)
+### Task 4. One topic, one concept
 
 **Dave asks:** "Turn my policy and my capitalization memo into five rules the worker can cite. They are the approval threshold, the weekly payment run, duplicate invoices, vendor bank-detail changes and capitalization. I'll read them tomorrow, and approve them at 10 a.m."
 
@@ -242,7 +242,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Wednesday, November 4: approved knowledge
 
-### Task 5. Approved, and what the project loads (15 minutes)
+### Task 5. Approved, and what the project loads
 
 **Dave asks:** "I approved all five at 10 this morning, and my note is in. The project still holds the old onboarding notes and the October 23 status list beside the policy. What stays in it?"
 
@@ -257,7 +257,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: does my AI's project load anything nobody approved?
 
-### Task 6. Standing instructions (15 minutes)
+### Task 6. Standing instructions
 
 **Dave asks:** "Write the standing instructions that every conversation in that project starts from."
 
@@ -274,7 +274,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: what must my instructions make the AI refuse, and does a test show it refusing?
 
-### Task 7. Invoice 5149's case file (15 minutes)
+### Task 7. Invoice 5149's case file
 
 **Dave asks:** "Where does invoice 5149 stand, and how did it get there? Keep its whole history in one place."
 
@@ -292,7 +292,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Thursday, November 5: a skill from outside
 
-### Task 8. A skill from outside (15 minutes)
+### Task 8. A skill from outside
 
 **Dave asks:** "You found a ready-made invoice-review skill. Before I approve it, read it, and show me what it does with our concepts and without them."
 
@@ -310,7 +310,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, before you rely on a skill, a shared prompt or a custom GPT that someone shares, ask: what do its steps decide on their own?
 
-### Task 9. Fix it, and who approves (20 minutes)
+### Task 9. Fix it, and who approves
 
 **Dave asks:** "Fix the steps so they are right on their own, test it again, and tell me what I read before I approve it."
 
@@ -328,7 +328,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Monday, November 9: Dave changes a rule
 
-### Task 10. One change, every copy (25 minutes)
+### Task 10. One change, every copy
 
 **Dave asks:** "Northern Maple bills in Canadian dollars, and our policy doesn't cover them. I've decided to make it policy: from November 9, 2026, invoices in any currency other than USD need my approval before payment, whatever the amount. Draft it into our concepts before 9 a.m. At 9 I read it and approve it as drafted. Then refresh every copy today, and log which approval each one holds."
 
@@ -345,7 +345,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, after an approved change, ask: which approval does each copy hold today?
 
-### Task 11. The contract's knowledge lines (15 minutes)
+### Task 11. The contract's knowledge lines
 
 **Dave asks:** "Other people will keep this worker after us. Write into its Role Contract where its knowledge comes from, as Draft 5, dated today."
 
@@ -363,7 +363,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Monday, November 16: before Sam leaves
 
-### Task 12. What it holds and reaches (15 minutes)
+### Task 12. What it holds and reaches
 
 **Dave writes:** "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. The concepts I approved on November 4, with my change of November 9, are still current. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system." Sam Ortiz, in Purchasing, leaves Brightline that day.
 
@@ -383,7 +383,7 @@ Maria has exported the project's setup. Other people have added to it since your
 
 ## The proof
 
-### Task 13. Nothing but the records (20 minutes)
+### Task 13. Nothing but the records
 
 **Dave asks:** "Prove it. A fresh project, with nothing but our records."
 
@@ -429,7 +429,7 @@ Maria has exported the project's setup. Other people have added to it since your
 6. **Check it now, in the project chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-13.md). Attach it in the project chat, and send [the check prompt](#the-check-prompt). Attach it only after the answers, so it cannot shape them.
 7. Missed a check? It is a line your setup lacks. Back in your lab chat, name the line, let the AI change the document, and send that question's test there. Then download the document again, replace the file in your project, open a new project chat, and ask again.
 8. When every check has passed, delete the project chat, because it holds an answer key. A project's memory can learn from its chats ([8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)).
-9. Then read the project's own memory, as you read yours in Task 3, and delete any line it saved from that chat. In a classic Claude project, look under Memory on the project's page. In the rebuilt kind, open Project settings, then Memory. A ChatGPT project's own memory shows no list, so deleting the chat is the whole step there ([8.8's product reference](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/#product-reference)).
+9. Then read the project's own memory, as you read yours in Task 3, and delete any line it saved from that chat. In a classic Claude project, look under Memory on the project's page. In the rebuilt kind, open Project settings, then Memory, and leave your instructions there in place. A ChatGPT project's own memory shows no list, so deleting the chat is the whole step there ([8.8's product reference](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/#product-reference)).
 
 With an account on the other AI vendor, you can build the same project there too, and ask the ten questions again.
 
@@ -454,7 +454,7 @@ With an account on the other AI vendor, you can build the same project there too
 - **Late in the lab, the AI forgets a rule from your brief.** This is the long chat of [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/). Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one rule from your own work that people ask about, such as a refund limit or a leave rule. In your lab chat, ask for a third document. Write the rule in it as one concept, in your own words. Give its title, and name yourself as its owner. Say where it comes from, the day it took effect and the day you will review it. Add one thing it does not cover, and who decides that. Leave it a draft: nobody has approved it yet.
 
@@ -470,13 +470,13 @@ Check it yourself against [8.7](https://agentfactory.panaversity.org/managing-ai
 
 ## When you are done
 
-You are done when every check has passed, your own project answered the ten questions from your records alone, and your own concept is written. Keep both downloads. "Maria's records" holds your first KSoR, five approved AP concepts, with their refresh log, the fixed skill, Draft 5's knowledge lines and the review. It is the knowledge piece of the Part II capstone ([Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/)). "AP Worker project" holds the copy a worker answers from, with the instructions that make it do so. Last, open your saved memory again, as in [Task 3](#task-3-what-memory-may-keep-25-minutes), and delete every line this lab saved about Brightline, Maria or Dave, the Lab 8 lines included.
+You are done when every check has passed, your own project answered the ten questions from your records alone, and your own concept is written. Keep both downloads. "Maria's records" holds your first KSoR, five approved AP concepts, with their refresh log, the fixed skill, Draft 5's knowledge lines and the review. It is the knowledge piece of the Part II capstone ([Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/)). "AP Worker project" holds the copy a worker answers from, with the instructions that make it do so. Last, open your saved memory again, as in [Task 3](#task-3-what-memory-may-keep), and delete every line this lab saved about Brightline, Maria or Dave, the Lab 8 lines included.
 
 **At work:** when an AI answer is wrong, find where it came from before you change any words. Then put that kind of information in its own place.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 8.8 shows one open-source tool beside Claude and ChatGPT: OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Long conversations.** When a conversation gets long or its answers get worse, the exam guide expects four moves: restart, summarize, persist the key facts to a Project, or rely on memory. [8.8's product reference](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/#product-reference) describes Claude summarizing older messages on its own, and very large context windows. On the exam, rely on neither. Choose one of the four moves, as Concept 8.3 teaches. (D-077)

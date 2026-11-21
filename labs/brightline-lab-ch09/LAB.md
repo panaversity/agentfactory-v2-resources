@@ -4,7 +4,7 @@ Chapter 9 of *The AI Agent Factory*, Second Edition. This file is the book's pag
 
 On Monday, November 9, 2026, Brightline's AP Worker got two jobs to run on their own. For eleven days nobody watched, and four things went wrong. Most people fix a job like that by running it by hand again, or by rewording its instructions and hoping. In this lab you design it to work when nobody is there.
 
-You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for Dave Kowalski, the controller. You decide which jobs should run without you, and what each run is given. You make every run read its record first, replay two past weeks whose answers you know, and set rules for work nobody asked for. You also say whose name it runs under, who notices when it fails, and who may ask it for what. Then you prove it on Thanksgiving, in a fresh chat with nothing but your contract and that morning's records. Last, you carry one plan for Dave from his question to a decision. You decide every line. The AI writes each decision into the Role Contract, asks the questions, and tests and runs each line. It takes about four hours, and 15 minutes more for your own job at the end. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for Dave Kowalski, the controller. You decide which jobs should run without you, and what each run is given. You make every run read its record first, replay two past weeks whose answers you know, and set rules for work nobody asked for. You also say whose name it runs under, who notices when it fails, and who may ask it for what. Then you prove it on Thanksgiving, in a fresh chat with nothing but your contract and that morning's records. Last, you carry one plan for Dave from his question to a decision. You decide every line. The AI writes each decision into the Role Contract, asks the questions, and tests and runs each line. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
 **What you will learn:**
 
@@ -16,7 +16,7 @@ You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for D
 - To prove a job works with a fresh run that has only its contract and its records.
 - To carry one report or plan from the question to a decision, and to check each stage twice.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch09.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
@@ -86,7 +86,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Friday, November 20: before we fix anything
 
-### Task 1. What our contract decided (25 minutes)
+### Task 1. What our contract decided
 
 **Dave asks:** "You want five jobs to run without you. Which should? And before we fix anything: four things went wrong while nobody watched. What did our contract say about each one?"
 
@@ -165,7 +165,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, when a recurring job goes wrong, ask: which line of its instructions decided it, or did none?
 
-### Task 2. Who does each step (10 minutes)
+### Task 2. Who does each step
 
 **Dave asks:** "I stopped my Thursday check because I thought nobody needed to look. I still approve every run from my own login. Who does each step now, and who answers for it?"
 
@@ -182,7 +182,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 1: Thursday's run did not know
 
-### Task 3. What every run is given (20 minutes)
+### Task 3. What every run is given
 
 **Dave asks:** "Your November 9 instructions were three sentences. Rewrite them so a run that starts fresh gets Thursday right."
 
@@ -199,7 +199,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: could my recurring job get it right with only what its instructions name?
 
-### Task 4. Read the record first (20 minutes)
+### Task 4. Read the record first
 
 **Dave asks:** "The record knew about Tri-County. Make every run read it first, and leave something in it for next week. Then try it on a week we know: November 12."
 
@@ -223,7 +223,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: where does my recurring job read what happened last week?
 
-### Task 5. Review it as you do every Thursday (15 minutes)
+### Task 5. Review it as you do every Thursday
 
 **Dave asks:** "Now give it November 19, the week it told me to pay Tri-County. Is it ready for next Thursday?"
 
@@ -243,7 +243,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 2: the email job saw one email
 
-### Task 6. One email at a time (10 minutes)
+### Task 6. One email at a time
 
 **Dave asks:** "On November 18 it logged Lakeshore's 5155 as a new invoice. The first copy came on November 4. Fix the email job."
 
@@ -260,7 +260,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 3: the Sunday tidy-up
 
-### Task 7. Work nobody asked for (20 minutes)
+### Task 7. Work nobody asked for
 
 **Dave asks:** "On Sunday night it renamed 212 scanned invoices nobody asked it to touch, and the audit firm's links broke. Write down what it may do on its own before it does anything else. And if anything about bank details comes up, I want a person on it, every time."
 
@@ -278,7 +278,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 4: Dave stopped checking
 
-### Task 8. Whose name, and who notices (20 minutes)
+### Task 8. Whose name, and who notices
 
 **Dave asks:** "Both jobs ran as you, and the folder's history says you renamed those files. Whose name should they run under? And who notices if a run never happens? Thursday, November 26, is Thanksgiving, a US public holiday that is always on a Thursday, and you are off that day."
 
@@ -296,7 +296,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: whose name does my recurring job run under, and who would notice if it never ran?
 
-### Task 9. On each AI vendor (10 minutes)
+### Task 9. On each AI vendor
 
 **Dave asks:** "Which feature would run each job on Claude, and on ChatGPT? Whose name would it carry there, and how would we read and stop it?"
 
@@ -313,7 +313,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: on the tool I use, whose name does a scheduled task carry, and what does Pause stop?
 
-### Task 10. One page for Dave (15 minutes)
+### Task 10. One page for Dave
 
 **Dave asks:** "Tell me plainly what it does and what it never does, who checks it, and how we'd know if it broke. One page. And what it's worth: from Thursday, December 3, we run the old way and the new way side by side."
 
@@ -336,7 +336,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Monday, November 23: the shared room
 
-### Task 11. Who may ask (20 minutes)
+### Task 11. Who may ask
 
 **Dave asks:** "Jordan Ellis starts today, Monday, November 23. I'm adding him to #ap-help, the AP team's channel. Draft the rows for me before he asks it anything."
 
@@ -356,7 +356,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## The proof
 
-### Task 12. Thursday, November 26 (30 minutes)
+### Task 12. Thursday, November 26
 
 **Dave asks:** "I approved Draft 6 on Monday. Now it's Thanksgiving, 7 a.m., and nobody is in. Prove it runs with nothing but our contract and our records."
 
@@ -392,7 +392,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Monday, November 30: one plan for next year
 
-### Task 13. One plan for Dave (40 minutes)
+### Task 13. One plan for Dave
 
 **Dave asks:** "Before Thursday's budget meeting, I need to decide one thing. Should we ask the six suppliers in last year's file for 2 percent off for paying within 10 days, from January? Give me a yes or no for each group of suppliers, what it would save, and how much sooner we would pay. One page, my decision first."
 
@@ -424,7 +424,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 - **In Task 13, the AI cannot find `research-summary.md` or `paid-invoices-2025.csv`.** Unzip `inputs.zip` on your computer, attach that file, and send "Task 13" again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one job you do again and again at work, such as a weekly report, or a check you do each time a form arrives. In your lab chat, ask for a third document, named "My job". Write in it, in your own words:
 
@@ -453,7 +453,7 @@ You are done when every check has passed, and the fresh chat ran Thanksgiving fr
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 9.8 shows one open-source tool beside Claude and ChatGPT: OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Work that repeats.** The exam guide expects a repeatable workflow built from a Project, Skills, connectors and code-executed steps. It gives the same kind of result across runs and users, and it can be handed to a colleague who owns it afterward. Each step is marked AI-executed, human-reviewed or human-retained, as Concept 9.2 teaches. The mark comes from four tests: reversibility, stakes, the need for human judgment or empathy, and accountability. Scheduled runs, scheduled tasks (once called routines) and standing workers are not in the guide. This chapter teaches scheduled and event-triggered runs, scheduled tasks, standing workers and the SSoR record. The exam does not cover them. On the exam, choose the Project, its Skills, connectors and code-executed steps, with each step marked by the four tests. Anthropic's prep course adds one more answer, which the guide does not name. When an app that teams rely on must stay up, stay secure or connect to other systems, it has left the Associate's scope. Pass it to a developer or an architect. A workflow in a Project still goes to a colleague who owns it, as Concept 9.7 shows. (D-078)

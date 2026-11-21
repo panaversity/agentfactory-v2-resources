@@ -2,7 +2,7 @@
 
 Chapter 0.2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.2: One page, checked](https://agentfactory.panaversity.org/how-ai-works/markdown/lab/), so you can do the lab without the book.
 
-In this lab you see the marks behind a neat reply, and get the shape the next place needs. Then you turn Brightline's notes into a page, check it against the policy, and keep it. It takes about 20 minutes, on Claude or ChatGPT.
+In this lab you see the marks behind a neat reply, and get the shape the next place needs. Then you turn Brightline's notes into a page, check it against the policy, and keep it. You can do it on Claude or ChatGPT.
 
 **What you will learn.** To see the marks behind a neat page, to ask for the shape the next place needs, and to check each rule against its source before you keep it.
 

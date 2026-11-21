@@ -2,7 +2,7 @@
 
 Chapter 1 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 1: a real job, checked](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/lab/), so you can do the lab without the book.
 
-In this lab you give an AI a real job, check each task against its answer key, and find out where each result lives. It runs in two sittings. Part A takes about two and a quarter hours, and works on a free plan. A day later, you spend ten minutes on what survived, then about an hour on Part B, the AI vendors' newer tools, some of them on paid plans only. You need a Claude or ChatGPT account.
+In this lab you give an AI a real job, check each task against its answer key, and find out where each result lives. It runs in two sittings. Part A works on a free plan. A day later, you check what survived, then do Part B, the AI vendors' newer tools, some of them on paid plans only. You need a Claude or ChatGPT account.
 
 **What you will learn:**
 
@@ -12,7 +12,7 @@ In this lab you give an AI a real job, check each task against its answer key, a
 - Where an AI's work runs, where its results are kept, and which of them survive: the machine, or the record.
 - What changes when the same briefs run on the other AI vendor, on your own computer, in the cloud while you are away, and inside a file you already use.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch01.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch01.zip), and unzip it. You get one folder with three files:
 
@@ -77,9 +77,9 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
              check is about what I did, ask me.
 ```
 
-## Part A: the job (about 2 hours 15 minutes, any plan)
+## Part A: the job (any plan)
 
-### Task 1. What we owe (20 minutes)
+### Task 1. What we owe
 
 **Maria asks:** "How much do we owe on these invoices, as of Wednesday, September 30, 2026? And remember, invoice 4471 was paid on September 25. Nothing else is paid yet."
 
@@ -94,7 +94,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 **Checkpoint.** Task 1's three checks passed, and you read the key yourself.
 
-### Task 2. A spreadsheet for Friday (20 minutes)
+### Task 2. A spreadsheet for Friday
 
 **Maria asks:** "Put these invoices in a spreadsheet I can check before Friday. I'll want to open it again on Monday."
 
@@ -111,7 +111,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 **Checkpoint.** Checks 4 to 8 passed, and you know where the spreadsheet is: in the chat, on your computer, or in a connected app such as Google Drive.
 
-### Task 3. What is due by Friday (10 minutes)
+### Task 3. What is due by Friday
 
 **Maria asks:** "Which of these invoices are late, or due by Friday, October 2? And what do they come to in total?"
 
@@ -124,7 +124,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 **Checkpoint.** Check 9 passed.
 
-### Task 4. Match the POs (10 minutes)
+### Task 4. Match the POs
 
 **Maria asks:** "Purchasing's PO list is in that zip too. Do the invoices match what we ordered? For any that don't, tell me why."
 
@@ -137,7 +137,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 **Checkpoint.** Checks 10 and 11 passed.
 
-### Task 5. A doc for the controller (10 minutes)
+### Task 5. A doc for the controller
 
 **Maria asks:** "Write the Friday list up as a one-page doc for our controller, the person who runs Brightline's accounts. List each bill due by Friday, October 2, 2026, with its vendor, invoice number and amount, and the total. Don't share it with anyone. I'll send it myself."
 
@@ -151,7 +151,7 @@ Constraints: Grade only. Do not redo the task, and do not suggest a
 
 **Checkpoint.** Checks 12 to 14 passed, and you know where the doc is.
 
-### Task 6. Which surface for which job (10 minutes)
+### Task 6. Which surface for which job
 
 The goal: decide how much of each AP job you can hand to an AI, how that work should run, and when it starts.
 
@@ -164,12 +164,12 @@ The goal: decide how much of each AP job you can hand to an AI, how that work sh
 3. Turn this week's invoice PDFs into one spreadsheet I can check.
 4. Match this week's invoices to the PO list, and tell me which do not match.
 5. Every Monday at 7:00 a.m., build the unpaid-bills report and leave it for me.
-6. Watch the AP inbox all day, answer routine vendor questions, and pass anything unusual to Maria.
+6. Watch the AP inbox all day, draft replies to routine vendor questions, and pass anything unusual to Maria.
 
 **What you decide.** For each job, three things:
 
 - **The rung**, from [1.1 The ladder of interaction](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/ladder-of-interaction/): how much of the work you hand over. To a chatbot you send a message, get a reply, and finish the job yourself. To an agent you delegate one task, and get a finished output. To an AI Worker you hand over a role, and get results again and again.
-- **The surface**, from [1.5, "Which surface for which job"](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/): how the work runs. A chat is for something you read once. A task is for one finished result. A standing worker is for work that continues between conversations.
+- **The surface**, from [1.5, "Which surface for which job"](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/): how the work runs. A chat is for something you read once. A task is for one finished result. An always-on agent is for work that continues between conversations.
 - **What starts it:** you, or a schedule. A schedule does not change the surface. It starts the same task again at a set time. [Chapter 2](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/) calls what starts the work a **trigger**: a schedule, or an event such as a new email.
 
 For example, for a different job: "Turn last month's receipts into one expense report" is one finished result, and you ask for it. So you would answer "agent, task, you".
@@ -189,7 +189,7 @@ You decide. The AI only shows you the jobs, and records your answers.
                 AI Worker (you hand over a role, with recurring results).
                 The surfaces: chat (a question, a draft or an explanation
                 I read once), task (a clear outcome that comes back as a
-                finished result), standing worker (ongoing work that
+                finished result), always-on agent (ongoing work that
                 continues between conversations). What starts it: me, or
                 a schedule (the same task, started again at a set time).
                 The jobs: 1. Explain what "2/10 net 30" means on an
@@ -199,8 +199,8 @@ You decide. The AI only shows you the jobs, and records your answers.
                 invoices to the PO list, and tell me which do not match.
                 5. Every Monday at 7:00 a.m., build the unpaid-bills
                 report and leave it for me. 6. Watch the AP inbox all
-                day, answer routine vendor questions, and pass anything
-                unusual to Maria.
+                day, draft replies to routine vendor questions, and pass
+                anything unusual to Maria.
    Format:      First show me the rungs, the surfaces and what starts
                 the work, with their meanings. Then show all six jobs as
                 a numbered list, and ask for "the rung, the surface, and
@@ -217,7 +217,7 @@ You decide. The AI only shows you the jobs, and records your answers.
 
 **Checkpoint.** Check 15 passed.
 
-### Task 7. The other AI vendor (20 minutes)
+### Task 7. The other AI vendor
 
 1. Open a new conversation in the other one, Claude or ChatGPT.
 2. Send your final briefs for Tasks 1 to 5 there, one task at a time, copied unchanged from your first conversation. Attach `inputs.zip` with the first one.
@@ -230,7 +230,7 @@ If you can use only one AI vendor, skip the run. Note what you think would chang
 
 **Checkpoint.** You checked the five briefs on the other AI vendor and noted your changes, or your guess of what would change.
 
-### Task 8. Save it where you will find it Monday (15 to 25 minutes)
+### Task 8. Save it where you will find it Monday
 
 This task runs in a new conversation, in a desktop app, so the AI can save a file on your own computer.
 
@@ -252,7 +252,7 @@ This task runs in a new conversation, in a desktop app, so the AI can save a fil
 
 **Checkpoint.** Checks 16 and 17 passed, in each app you used.
 
-### Task 9. Where each result lives (10 minutes)
+### Task 9. Where each result lives
 
 The goal: say where each of your results is kept, and whether it lasts.
 
@@ -311,7 +311,7 @@ You decide. The AI only shows you the results, and records your answers.
 
 ## The next day
 
-### Task 10. What survived (10 minutes)
+### Task 10. What survived
 
 The goal: find out which of your Part A results are still there a day later, and why. Do this at least a day after Part A. The chapter's [1.4 Continuity, execution and persistence](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/continuity-execution-persistence/) and [1.5 How today's tools realize it](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/) explain what you find.
 
@@ -342,11 +342,11 @@ The goal: find out which of your Part A results are still there a day later, and
 
 **Checkpoint.** You looked for every result, and read the answers. If you stop here, the lab is done.
 
-## Part B: the AI vendors' newer tools (about an hour)
+## Part B: the AI vendors' newer tools
 
 Each task in Part B names the plans it needs. If you cannot do one, read its answer key instead: it says what you would have seen.
 
-### Task 11. Close the laptop (20 minutes)
+### Task 11. Close the laptop
 
 The goal: see work carry on after you close the laptop, and find where its result is kept.
 
@@ -362,7 +362,7 @@ The goal: see work carry on after you close the laptop, and find where its resul
 
 **Checkpoint.** Check 19 passed.
 
-### Task 12. A checklist every Monday (15 minutes)
+### Task 12. A checklist every Monday
 
 The goal: see what a scheduled task keeps between runs, and what it does not.
 
@@ -399,7 +399,7 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
 
 **Checkpoint.** Checks 20 to 22 passed.
 
-### Task 13. The doc's earlier version (10 minutes)
+### Task 13. The doc's earlier version
 
 The goal: change the controller's doc, then find its earlier version and bring it back.
 
@@ -418,7 +418,7 @@ The goal: change the controller's doc, then find its earlier version and bring i
 
 **Checkpoint.** Checks 23 and 24 passed.
 
-### Task 14. The AI inside the spreadsheet (15 minutes)
+### Task 14. The AI inside the spreadsheet
 
 The goal: have the AI change a file you already use, in place, and find where that change is kept.
 
@@ -455,7 +455,7 @@ Your vertical is the line of work you know best. Take a pile of real files from 
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/preparing-for-ccao-f/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 1.5 shows two open-source tools beside Claude and ChatGPT: OpenCode and OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Features.** The exam guide expects you to choose among chat, Projects, Artifacts, research, code-executed analysis, Skills, connectors and memory, and often to combine them. On some plans Claude now decides inside one conversation. On the exam, choose the named capability, or combination, that fits the job. "Write a clearer brief" is not a capability choice. Concept 2.4 matches each one to the job it fits, and Concepts 5.7, 8.4 and 8.5 show them in use. (D-076)

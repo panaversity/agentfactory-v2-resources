@@ -2,7 +2,7 @@
 
 Chapter 0.3 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.3: Your 4D plan, before the run](https://agentfactory.panaversity.org/how-ai-works/ai-fluency/lab/), so you can do the lab without the book.
 
-In this lab the AI does the typing, and you make the decisions. It quizzes you on the three ways of working with AI, then asks you for each line of a 4D plan and writes the plan down. It quizzes you on which D comes next, and then you test one of the plan's lines. It takes about 15 minutes, on Claude or ChatGPT, and every message you send is printed below.
+In this lab the AI does the typing, and you make the decisions. It quizzes you on the three ways of working with AI, then asks you for each line of a 4D plan and writes the plan down. It quizzes you on which D comes next, and then you test one of the plan's lines. You can do it on Claude or ChatGPT, and every message you send is printed below.
 
 **What you will learn.** To tell the three ways of working with AI apart, and to decide each D's line, with when it is done, before an AI works alone. To tell which D a situation needs next.
 

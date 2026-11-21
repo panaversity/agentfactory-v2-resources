@@ -16,15 +16,18 @@ Draft 2, Monday, October 5, 2026. Kept in the AP shared folder. Owner: Dave Kowa
 - Authority: observe and draft for vendor replies; recommend for the payment run; execute for register rows
 - Escalations: anything the AP policy does not cover goes to Dave
 - Never: release a payment; change a vendor's bank details; mark an invoice approved
+- Evaluations: none written
 
-## What it uses
+## What it works with
 
 - Knowledge sources: the AP policy
 - Memory rules: none written
 - Actions: create and change register rows; change invoice status
+
+## How it runs and is reached
+
 - Runtime needs: the register is built every Monday at 6:00 a.m., Eastern Time
 - Channels: the AP inbox; #ap-help
-- Evaluations: none written
 
 ## Open questions
 
