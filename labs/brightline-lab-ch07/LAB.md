@@ -324,7 +324,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 **What you do:**
 
 1. In your lab chat, type "Task 11" and send it. The AI asks which app your lab chat is on. Answer in a word.
-2. The AI shows four of your lines, one at a time, each with the part of your app's box in [Chapter 7 on today's products](https://agentfactory.panaversity.org/appendices/todays-products/the-authority-envelope/) that speaks to it: sending a reply, a write to the vendor record, recording an approval, and a run nobody watches. For each, answer: the setting that holds it on your app, or "none".
+2. The AI shows four of your lines, one at a time, each with the part of your app's tab in [7.8's product reference](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/both-ai-vendors/#product-reference) that speaks to it: sending a reply, a write to the vendor record, recording an approval, and a run nobody watches. For each, answer: the setting that holds it on your app, or "none".
 3. The AI asks which setting comes closest to holding sending on the other app. Answer: the setting, and whether it blocks sending or only asks first.
 4. The AI asks who holds each line no setting holds. Answer: the line, then the person.
 5. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch07-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
