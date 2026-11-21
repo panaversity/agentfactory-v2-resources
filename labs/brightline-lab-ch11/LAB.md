@@ -11,7 +11,7 @@ In the week of January 11, 2027, Brightline's AP Worker failed four times. On Fr
 - To tell a run that worked from one that only ran, and to give a job a success signal and a check from outside it.
 - To find out what a stopped run already did before you restart it, so that nothing is done twice.
 - To place a failure in one of five causes, check the quickest place first, and look for a second cause.
-- To read usage before you blame a brief, and to keep recurring work on a seat with a named budget owner.
+- To read usage before you blame a brief, and to keep recurring work on an account with a named budget owner.
 - To fix the brief, the inputs or the permissions, one change at a time, and to test each fix on the input that failed.
 - To pass a fix that is not yours to its owner.
 - To give each repeated correction a lasting home, and to measure a change against a baseline before you switch.
@@ -200,14 +200,14 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ### Task 4. Tuesday's two fixes
 
-**Dave asks:** "Kenton sent 7781 again as 7781-R. Make the check catch a resend like that. And it will happen again the next time someone runs a big job. I will pay for a seat for the recurring jobs, and I want to know the same day when the check stops."
+**Dave asks:** "Kenton sent 7781 again as 7781-R. Make the check catch a resend like that. And it will happen again the next time someone runs a big job. I will pay for an account for the recurring jobs, and I want to know the same day when the check stops."
 
 **What you do:**
 
 1. In your lab chat, type "Task 4" and send it. The AI shows [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the email check's lines and the duplicate rule they check against, Tuesday's email and invoice 7781's row. Answer which lever this fix pulls. Then give your line, in a few words, on what makes a resend like 7781-R match its original.
 2. When the AI says "Ready for your test", type `Test: Tuesday, 8:05 a.m.` and send it.
 3. The AI shows [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s first rule. Answer: what a daily check from outside the email job compares, by message ID or by count, when it runs, and whom it tells.
-4. The AI shows [11.4](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/usage-and-limits/)'s lines and where each AI vendor shows usage. Answer, for the seat Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it.
+4. The AI shows [11.4](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/usage-and-limits/)'s lines and where each AI vendor shows usage. Answer, for the account Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it.
 5. The AI shows [11.7](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/both-ai-vendors/)'s lines on a quiet task. Answer: if the daily check's message does not appear one evening, what Maria checks first, on Claude and on ChatGPT.
 6. When the AI says "Ready for your next test", type `Test: Tuesday evening` and send it.
 7. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).

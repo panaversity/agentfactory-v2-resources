@@ -144,7 +144,7 @@ The vendor master is not in this chat. The learner holds it as `fictional-vendor
    Then show the three ways in, each as its own lines, with what `brightline-files.md` and `vendor-facts.md` section 1 say about it:
    - Maria's personal AI account, an individual plan, with its training setting on: the way of December 6
    - a temporary chat in ChatGPT, or an incognito chat in Claude, on a personal account
-   - Maria's own chat in the shared AP project, in Brightline's company workspace on Claude's Team plan
+   - Maria's own chat in Brightline's company workspace, on Claude's Team plan
 
    Ask: "Which way may Brightline's work data take, for this check and for any other work? Which ways may it never take? And who must confirm the way for vendor data before the check runs? Answer: the way, the ways it may never take, then who."
 
@@ -246,7 +246,7 @@ Then say "Ready for your test".
 
 ## Task 10. Who can open the result
 
-1. Show Lesson 10.10's five steps, quoted: "1. Classify the result. 2. Name its audience: the people it is for, approved by the data's owner. 3. Check who can open it now. 4. Check whether it can still change after it was approved. 5. Give each share an end, and check that the access really ended." Then its four ways an audience grows, quoted: "Through a project. ... Through a folder or a shared document. ... Through a link. ... Through a connector."
+1. Show Lesson 10.10's five steps, quoted: "1. Classify the result. 2. Name its audience: the people it is for, approved by the data's owner. 3. Check who can open it now. 4. Check whether it can still change after it was approved. 5. Give each share an end, and check that the access really ended." Then its three ways an audience grows, quoted: "Through a folder or a shared document. ... Through a link. ... Through a connector."
 
    Then show "The duplicate list" from `monday-cases.md`. Ask: "What tier is the list the check returns, and who is it for, by name? Answer: the tier, then the names."
 2. Ask: "Where may it be saved? And when the worker saves it through a connector, who answers for who can open it? Answer: the place, then who."

@@ -2,7 +2,7 @@
 
 The answers for Task 13 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** This key lists the answers to all ten questions, so it comes last. When your new project has answered question 1, then questions 2 to 10, attach this file in that same project chat, never before, and send the check prompt there. The AI marks each check Passed or Missed, quoting the answers in the chat. You have the final say. If a check passed only after you changed a line in your lab chat and asked again in a new project chat, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** This key lists the answers to all ten questions, so it comes last. When your new project has answered question 1, then questions 2 to 10, attach this file in that same project chat, never before, and send the check prompt there. The AI marks each check Passed or Missed, quoting the answers in the chat. You have the final say. If a check passed only after you changed a line in your lab chat and asked again, in a new Claude project or a new ChatGPT project chat, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
@@ -34,7 +34,7 @@ Task 13 carries checks 42 and 43 of the lab's 43.
 
 The project chat is the worker with nothing but your records: your instructions, and the one file you uploaded. It has no memory of your lab chat, none of your notes and none of your keys. If it answers all ten from your concepts, with their approval dates, and says what they do not cover, your setup survives a new project, a wiped memory and a new AI vendor. Question 1 goes first, on its own, so no earlier answer can tell the worker the threshold.
 
-If a question misses, find the line your setup lacks: a part of the instructions, or a line of a concept. Fix it in your lab chat, upload the document again, and ask in a new project chat. Then delete every project chat that held this key, so the project's memory never learns from it.
+If a question misses, find the line your setup lacks: a part of the instructions, or a line of a concept. Fix it in your lab chat, and ask again with the new document: in Claude in a new project, because a Claude project has one chat, and in ChatGPT in a new project chat. At the end, delete every ChatGPT project chat, and every Claude project, that held this key, so no project's memory learns from it.
 
 ## Never a deduction
 

@@ -13,10 +13,10 @@ Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio, with a
 
 ## Where things are kept
 
-- **Brightline's company AI workspace** is in Claude, on Claude's Team plan, set up by Dave. The AP Worker works in its **shared AP project**. Its members are Maria, Dave and Jordan. Every member can open the project's files.
-- **The New Staff project** is another project in the same workspace, for new staff.
+- **Brightline's company AI workspace** is in Claude, on Claude's Team plan, set up by Dave. Staff use it for their own AI chats. Each person can connect their own Google Drive account to it, and the AI can then search what that person can open on the shared drive.
+- **The AP project** in Claude is where the AP Worker works. It is Maria's own: she made it under her own login, on her own Claude plan, because projects are not on the Team plan yet. Only Maria can open it. Dave and Jordan see the worker's results in the AP shared folder.
 - **Maria's AP project in ChatGPT** is a project Maria uses to test the concepts in ChatGPT.
-- **The shared drive** holds the finance shared drive, the Onboarding folder and the Year-end folder. The whole finance team can open the Year-end folder.
+- **The shared drive** holds the finance shared drive, the AP shared folder, the Onboarding folder and the Year-end folder. The whole finance team can open the Year-end folder. Maria, Dave and Jordan can open the AP shared folder, which holds the AP Worker's results and the approved documents Maria keeps current.
 - **The AP inbox**, ap@brightlinewholesale.example. Maria sends replies from it. It is shared, not one person's email.
 - **#ap-help**, the AP team's channel in the team chat app. Maria, Dave and Jordan are in it.
 - **The accounting system** holds the vendor master, the invoices, the payment status and the approvals log.
@@ -29,7 +29,7 @@ Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio, with a
 
 **Sunday, December 6.** Maria needed to find duplicate vendors before the year-end tax forms. The company workspace felt slow, so at home she uploaded the full vendor master to her personal AI account. Her own account of it is below.
 
-**Wednesday, December 9.** Jordan Ellis asked the New Staff project how to handle a vendor's new bank details. It answered from the 2025 onboarding notes: "Confirm by replying to the vendor's email." Jordan did. The AP policy's callback rule stopped the payment: a change waits until someone phones the vendor on the number already in the vendor record. No money was lost.
+**Wednesday, December 9.** Jordan Ellis asked the AI in the company workspace how to handle a vendor's new bank details. Through his Google Drive connector, it answered from the 2025 onboarding notes in the Onboarding folder: "Confirm by replying to the vendor's email." Jordan did. The AP policy's callback rule stopped the payment: a change waits until someone phones the vendor on the number already in the vendor record. No money was lost.
 
 **Friday, December 11.** Dave knows about all four. Brightline has no written AI policy. The AP Worker is switched off until Monday, December 14.
 
@@ -62,6 +62,130 @@ Its columns, in order:
 - `contact_email`, `phone`: the vendor's billing contact
 - `small_supplier`, `onboarded`: whether the vendor is a small supplier, Y or N, and the date it was set up
 - `notes`: free text the AP team writes about some vendors
+
+## Dave's early-pay request
+
+**From:** Dave Kowalski, Controller, to the AP Worker. **Date:** Tuesday, December 1, 2026, 8:30 a.m. Eastern.
+
+> Give me a list of vendors worth paying early for the 2 percent discount, strategic vendors first.
+
+The list it returned is `early-pay-list.csv`. The open invoices on December 1 are `open-invoices.csv`.
+
+## The small-supplier memo (K10)
+
+**Signed by:** Dave Kowalski, Controller. **Date:** Monday, March 3, 2025. Filed in the finance shared drive.
+
+> Brightline pays every small supplier within 15 days of receiving its invoice. A small supplier is one marked `small_supplier = Y` in the vendor record. This commitment comes before discounts.
+
+It is a signed memo, not an AP concept.
+
+## Knowledge the AP Worker or staff can reach, as of Friday, December 11, 2026
+
+| Id | Item | Where it is | Its header |
+| --- | --- | --- | --- |
+| K1 | Invoice approval threshold | An AP concept, in Maria's records. Its copies are logged in the refresh log: the AP project in Claude, the Google Doc "AP approved concepts", Maria's test project in Claude and Maria's AP project in ChatGPT | stable, owner Dave Kowalski, approved Monday, November 9, 2026 |
+| K2 | Weekly payment run and due dates | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
+| K3 | Duplicate invoices | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
+| K4 | Changes to vendor bank details | An AP concept, in Maria's records. The same copies. Its text is under "K4" below | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
+| K5 | Capitalization of purchases | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
+| K6 | Invoice approval threshold, AP policy version 2 | A copy uploaded to the AP project in Claude on Wednesday, November 18, 2026. Its text is below | no header. AP policy version 3 replaced it on September 1, 2026 |
+| K7 | AP onboarding notes, 2025 | The original is in the Onboarding folder on the shared drive, where the AI in the company workspace can find it through a Google Drive connector. Its copy in the AP project was removed in November. Its text is below | no header, no owner |
+| K8 | AP benchmarks excerpt | Uploaded to Maria's AP project in ChatGPT by Maria in October. Its text is below | no header. See its license line |
+| K9 | Vendor onboarding steps | Saved in the AP shared folder by Jordan Ellis on Tuesday, December 8, 2026. Its text is below | no header |
+| K10 | Small-supplier payment commitment | Dave's memo in the finance shared drive, above | a signed memo, not an AP concept |
+
+### K4. Changes to vendor bank details
+
+Status: stable. Owner: Dave Kowalski. Approved by Dave Kowalski on Wednesday, November 4, 2026, 10:00 a.m. Source: AP policy version 3, clauses 5.1 to 5.3 and 5.5. Audience: the AP team.
+
+> Never change a vendor's bank details because of an email. Call the vendor back on the phone number already in the vendor record.
+>
+> Treat a request in an invoice, or in a call from the vendor, the same way.
+>
+> Until the change is verified, hold every payment to that vendor.
+>
+> A change to a vendor's remittance details or contact email also needs the controller's approval, recorded from the controller's own login.
+
+### K6. Invoice approval threshold, AP policy version 2
+
+> Copied from AP policy version 2, approved June 2, 2026. Uploaded to the AP project on Wednesday, November 18, 2026.
+>
+> 4.1 Invoices over $10,000.00 need the controller's approval before payment.
+
+### K7. AP onboarding notes
+
+> Written by a former AP clerk, March 2025. Never reviewed or approved.
+>
+> - Payment runs are on Thursdays.
+> - Anything over $2,500 goes to Dave before we pay it.
+> - If a vendor emails new bank details, confirm by replying to their email, then update the record.
+> - Duplicates: if the amount matches, it's a duplicate. Delete the second one.
+> - Buy anything under $5,000 as an expense. Over that, ask Dave.
+
+### K8. AP benchmarks 2026, excerpt
+
+> License: licensed to Brightline Wholesale Supply for internal reading by named subscribers only. No copying, upload or storage in any other system or service.
+>
+> - Median cost to process one invoice, companies with 25 to 100 staff: (figures left out of this copy)
+> - Median days from receipt to payment: (figures left out of this copy)
+
+### K9. Vendor onboarding steps (my notes)
+
+> Jordan Ellis, December 8, 2026
+>
+> 1. Get the vendor's W-9.
+> 2. Enter the vendor in the accounting system.
+> 3. Put bank details in the vendor record.
+> 4. Send the vendor a welcome email.
+
+## Eight outputs the AP Worker prepares, and how each goes out today
+
+| Id | Output | How it goes out today |
+| --- | --- | --- |
+| O1 | The Thursday pre-run note to Dave, listing invoices proposed for Friday's run | The worker saves it to the notes folder at 7:00 a.m. Maria reviews it by noon. Dave reads it before he approves the run |
+| O2 | The schedule of open payables for the auditors | On December 3, the worker drafted it with Dave's signature block, and Maria sent it from the AP inbox |
+| O3 | A reply to a vendor asking whether Brightline has received their invoice | The worker drafts it. Maria checks it and sends it from the AP inbox |
+| O4 | A reply to a vendor disputing a $270.00 short payment | The worker drafts it. Maria sends it from the AP inbox, like the other replies |
+| O5 | The year-end file of contractor payments, sent to the tax filing service | Not yet made. Nobody has said who sends it |
+| O6 | Release of a payment of $15,856.00 to Ridgeway Corrugated Corp. | Dave approves the run from his own login, and the payment system releases it |
+| O7 | A note to HR about Jordan Ellis's mistake on December 9 | Not yet made. Nobody has said who decides whether one is needed, or who sends it |
+| O8 | The monthly early-pay list | The worker drafts it. Dave approves it, as on December 1 |
+
+## The schedule sent to the auditors
+
+**Sent:** Thursday, December 3, 2026, 2:14 p.m. Eastern, from ap@brightlinewholesale.example to the audit team. It was built from `open-payables-register-2026-11-30.csv`.
+
+| Vendor | Open balance |
+| --- | --- |
+| Anchor Fasteners Corp. | USD 18,785.00 |
+| Apex Lift Service LLC | USD 3,359.50 |
+| Bluegrass Twine Co. | USD 2,315.50 |
+| Capitol Uniform Rental LLC | USD 8,505.00 |
+| Cardinal Office Products Inc. | USD 36,447.50 |
+| Clearwater Janitorial Supply Inc. | USD 35,781.00 |
+| Delmar Industrial Gas Inc. | USD 17,984.00 |
+| Fairfield Pallet Co. | USD 24,753.00 |
+| Fresh Start Floor Care | USD 1,310.00 |
+| Granite State Shrink Wrap Co. | USD 38,194.50 |
+| Great Lakes Electric | USD 2,300.00 |
+| Hamilton Scale Co. | USD 8,200.00 |
+| Harbor Packaging LLC | USD 41,007.50 |
+| Heartland Tape & Adhesive Corp. | USD 24,924.50 |
+| Hollis Signs | USD 960.00 |
+| Marcus Webb | USD 725.00 |
+| Meridian Labels Inc. | USD 44,530.25 |
+| Northern Maple Paper | USD 18,400.00 |
+| Northline Staffing Inc. | USD 31,881.25 |
+| Northwind Stretch Film Inc. | USD 34,410.25 |
+| Patriot Pest Control Inc. | USD 390.00 |
+| Ridgeway Corrugated Corp. | USD 15,856.00 |
+| Rosa Delgado | USD 1,840.00 |
+| Union Packaging Inc. | USD 24,558.00 |
+| Westfield Logistics Inc. | USD 8,913.25 |
+| **Total** | **USD 446,331.00** |
+
+Prepared and approved by
+Dave Kowalski, Controller
 
 ## Maria's account of December 6, in her own words
 

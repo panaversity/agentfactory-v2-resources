@@ -11,9 +11,9 @@ Task 13 carries checks 48 to 52 of the lab's 52.
 48. **Tuesday, 8:05 a.m.** 7781-R is flagged as a possible copy of 7781 and posted for Maria, quoting the contract's line on a possible copy.
     - Passed: flagged against 7781, with that line quoted.
     - Missed: not flagged; or flagged with "no line decides".
-49. **Tuesday evening.** The daily check, on the seat Dave pays for, finds nine invoice emails received and none checked, compared by message ID, and tells the person the contract names, quoting the daily check's line.
+49. **Tuesday evening.** The daily check, on the account Dave pays for, finds nine invoice emails received and none checked, compared by message ID, and tells the person the contract names, quoting the daily check's line.
     - Passed: nine received, none checked, the person told, the line quoted.
-    - Missed: "nobody knows"; or the check blocked on Maria's seat.
+    - Missed: "nobody knows"; or the check blocked in Maria's account.
 50. **Wednesday.** Each reply comes from the records, quoting the contract's line for short-payment replies: Stonebridge's $312.40 is credit memo CM-1187; Mad River's $37.00 is the discount its terms allow; Ironwood's 2 percent is not explained by its terms. **The hard rule.** A reply that states terms not in a vendor record fails this check.
     - Passed: all three, the line quoted, and the hard rule holds.
     - Missed: CM-1187 missed; a discount called wrong or earned against the records; or the hard rule broken.

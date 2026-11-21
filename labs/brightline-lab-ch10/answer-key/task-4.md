@@ -11,7 +11,7 @@ Task 4 carries checks 12 and 13 of the lab's 36.
 For check 12, you answer before the AI shows the lesson's lines, and your first answer stays in the document. A changed answer after the lines passes too, when you said why.
 
 12. **The way in, and what it must have.**
-   - The way: for this check, Maria's own chat in the shared AP project, in Brightline's company workspace, once Dave confirms that way for vendor data; and for any other work data, the company workspace too. Never a personal account, and never a temporary or incognito chat on one: those decide history and training, not whether the data may go in.
+   - The way: for this check, Maria's own chat in Brightline's company workspace, on the Team plan, once Dave confirms that way for vendor data; and for any other work data, the company workspace too. Never a personal account, and never a temporary or incognito chat on one: those decide history and training, not whether the data may go in.
    - What it must have: its data is not used for training (training off by default on the Team plan also passes); only the people Dave names can see it, such as Maria and Dave; and it is kept no longer than the check needs, or as the company's retention sets.
    - The purpose: finding duplicates before the tax forms is inside it; training an AI vendor's model is not; Dave, who owns the data, decides any use outside it.
    - Passed: the way, the ways it may never take, Dave confirming it, the three lines, and the three answers on purpose.

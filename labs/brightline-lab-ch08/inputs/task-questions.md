@@ -10,14 +10,14 @@ This file is for the AI. When the learner sends "Task" and a number, ask that ta
 
 Open both in Task 1, beside the chat. Keep each to what it holds below. Read a document again before every test and every check.
 
-**"AP Worker project"** holds what the AP Worker's shared project loads, and nothing else. It starts with the setup of Tuesday, November 3, 2026, from project-2026-11-03.md, in four sections:
+**"AP Worker project"** holds what the AP Worker's project loads, and nothing else. It starts with the setup of Tuesday, November 3, 2026, from project-2026-11-03.md, in four sections:
 
 - **Instructions:** the instructions, exactly as the file gives them.
 - **Files:** each file the project holds, under its name, with who added it and when, and its text exactly as the file gives it.
 - **Memory:** the six memory topics, exactly as the file gives them, with the file's line on how a Claude project keeps its memory.
 - **The chat:** the chat's summary, exactly as the file gives it, and the line that the chat has run since Tuesday, September 8, 2026.
 
-Title it "AP Worker project", with no date line: it always holds the setup as it stands now. Leave out the connectors, the week-one line, "Not in this project" and "This morning's four answers": those are for Task 1's questions. The tasks change this document as they say.
+Title it "AP Worker project", with no date line: it always holds the setup as it stands now. Leave out the Google Drive folder, the connector, the week-one line, "Not in this project" and "This morning's four answers": those are for Task 1's questions. The tasks change this document as they say.
 
 **"Maria's records"** holds what no project loads. It starts with these nine headings, and nothing under them:
 
@@ -38,7 +38,7 @@ Show this at the start of Task 1:
 - **Dave Kowalski**, the controller, owns the AP Worker and the AP policy. He owns and approves the AP concepts.
 - **Maria Lopez**, the office manager, drafts and maintains the concepts, and asks the AP Worker her questions. The learner takes Maria's role.
 - **Sam Ortiz**, in Purchasing, works with Brightline's vendors. He leaves Brightline on Friday, December 18, 2026.
-- **The AP Worker** is the AI Worker that handles the bills Brightline owes. It works in the shared project Dave set up in Claude in September.
+- **The AP Worker** is the AI Worker that handles the bills Brightline owes. It works in a Claude project that Maria set up for it in September, under her own login. Only Maria can open it.
 
 ## The places a learner may name
 
@@ -111,7 +111,7 @@ Read no other invoice in the file, and no other version of the same invoice. The
    - the six memory topics, together
    - the chat's summary
    - Maria's week-one line, from project-2026-11-03.md, with what the file says about it
-3. Show the two connectors from project-2026-11-03.md, and say: "Two connectors also reach out from the project. No test reads through them. Task 12 reviews them." Ask nothing about them.
+3. Show "Added from Google Drive" and "Connectors on Maria's account" from project-2026-11-03.md, and say: "The project also holds a Google Drive folder, and a connector on Maria's account reaches out from every thread. No test reads through them. Task 12 reviews them." Ask nothing about them.
 
 Write each answer under "Where each answer came from" as one line: the item, its place, and "settles a policy question: yes" or "no", with any "where" the learner gave. After the last item, say "Ready for your test".
 
@@ -150,11 +150,11 @@ Then say "Ready for your test".
    Ask: "Change any decision? Name it and its new decision, or say 'no'." If the learner changes a decision, write the changed decision. Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
 2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
 3. Show these lines on memory, quoted, from Lesson 8.8 and its product reference:
-   - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings. Each project has its own memory, and never uses another project's. A project also uses your memory from chats outside projects."
-   - Claude's rebuilt kind of project: "In it, a project is one conversation, and its memory is a set of files that Claude writes as it works. You read, edit and delete them under Project settings, Memory."
+   - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings."
+   - A Claude project: "A project's memory belongs to the project. It is a set of files that Claude writes as it works, and every thread reads their index, MEMORY.md, when it starts. You read, edit and delete them under Project settings, Memory, where the project's instructions are kept too."
    - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat or, where settings allow, move the chat to another project."
-   - The comparison: "Each Claude project has its own memory. In a classic project, Claude also uses your memory from chats outside projects. To stop that, turn off Use account memory on the project's page. The rebuilt kind of project, in beta on some paid plans, keeps its memory as files. You read, edit and delete them in its settings. A ChatGPT project uses your saved memories, unless you choose project-only memory."
-   - The advice: "For an AI Worker's project on Claude, turn off account memory in a classic project, and read the memory files in the rebuilt kind. On ChatGPT, choose project-only memory."
+   - The comparison: "A Claude project's memory belongs to the project. Claude writes it as files while it works, and keeps them under Project settings, Memory, with the project's instructions. You read, edit and delete the memory files there. A ChatGPT project uses your saved memories, unless you choose project-only memory."
+   - The advice: "For an AI Worker's project on Claude, read its memory files. On ChatGPT, choose project-only memory."
 
    Ask: "How does a project keep its memory apart from your other chats, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, in a few words each."
 4. Ask, with no lesson lines first: "Maria wants to ask about a personal matter that should not shape the worker's later answers. Where should she ask it, and what does that not change? Answer: the place, then a few words, from what Lesson 8.4 says." Do not name the place, or hint at it, before the learner answers.
@@ -332,8 +332,8 @@ Write each decision under "Role Contract, Draft 5", under the Draft 4 heading it
 Its day is Monday, November 16, 2026. Dave's message, word for word: "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. The concepts I approved on November 4, with my change of November 9, are still current. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system."
 
 1. Show Dave's message, and that Sam Ortiz, in Purchasing, leaves Brightline that day. Then show the Instructions from the "AP Worker project" document, as they stand. Then show the five review decisions, and say once, with no example, that an item can take two decisions, joined by "and".
-2. Show the six items in project-setup-2026-11-16.md, one at a time: the three uploaded files, then the three connectors. Show each as its own lines: the item, what it holds or reaches, who added it, and when it was uploaded or added and last used. Ask: "Your decision and the reason? Answer: the decision, then 'because' and the reason."
-3. After the decision on the HR folder's connector, whatever it is, ask: "If someone at Brightline still needs to work on the HR folder with an AI, where should that work go? Answer: the place, in a few words." Suggest no place.
+2. Show the six items in project-setup-2026-11-16.md, one at a time: the three uploaded files, then the two items added from Google Drive, then the connector on Maria's account, with the file's line on where a connector lives. Show each as its own lines: the item, what it holds or reaches, who added or connected it, and when it was uploaded, added or connected, and last used. Ask: "Your decision and the reason? Answer: the decision, then 'because' and the reason."
+3. After the decision on the HR folder, whatever it is, ask: "If someone at Brightline still needs to work on the HR folder with an AI, where should that work go? Answer: the place, in a few words." Suggest no place.
 
 When every item has a decision, write a table under "Project review, November 16": item, decision, reason, in the learner's words. Write the answer to 3 as one line under the table, "HR work goes:" and the learner's words. Change nothing in the "AP Worker project" document. Then say "Task 12 is done".
 

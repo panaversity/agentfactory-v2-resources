@@ -47,7 +47,7 @@ Knowledge sources:
 - When the concepts have no answer, the worker says so and asks Dave. It never fills the gap from memory.
 - Never a source: the onboarding notes, a status list, memory or a chat.
 - Current status, such as whether an invoice is paid, comes from the accounting system, never from a file.
-- Copies: the shared project's upload, the Google Doc "AP approved concepts", Maria's test project in Claude and her project in ChatGPT. Each copy, and the approval it holds, is logged in the refresh log in Maria's records.
+- Copies: the AP project's upload, the Google Doc "AP approved concepts", Maria's test project in Claude and her project in ChatGPT. Each copy, and the approval it holds, is logged in the refresh log in Maria's records.
 Memory:
 - May hold preferences and where to look, such as how Maria sorts the register.
 - Never holds terms, limits, bank details, approvals, or anything the worker acts on.

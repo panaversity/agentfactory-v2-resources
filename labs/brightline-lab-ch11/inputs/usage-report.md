@@ -1,6 +1,6 @@
 # Usage, Maria's account, exported Friday, January 15, 2027
 
-Plan: Maria's seat, her own account in the company's AI workspace. Each seat has its own allowance, and it covers every place Maria uses the AI with that seat: tasks, and scheduled and event-triggered jobs. Paid overflow is not turned on.
+Plan: Maria's own Claude plan, the account the AP Worker's project runs on. The plan has one allowance, and it covers every place Maria uses Claude with that account: chats, tasks, and scheduled and event-triggered jobs. Paid overflow is not turned on.
 
 ## Weekly usage
 

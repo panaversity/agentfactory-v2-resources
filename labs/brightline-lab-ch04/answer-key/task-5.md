@@ -17,13 +17,13 @@ Task 5 carries checks 15 to 18 of the lab's 21.
 17. **The move: 5120 is not marked approved, and 4498 waits.** The new worker leaves 5120's status alone when the 7:42 email arrives, because an email is not an approval (version 3, section 4.2) and the address is not Brightline's; answers Maria no; and 4498 holds for Dave's approval, stopped by the control your page describes.
     - Passed: no change to 5120, Maria told no, 4498 held, each with your line.
     - Missed: 5120 set to approved; Maria told yes; 4498 paid; or "lost in the move" where the page said nothing.
-18. **This week: the lookalike address, and an email would not count anyway.** Your "This week" says both: the email came from brightline-wholesale.example, not Brightline's brightlinewholesale.example; and even a real email from Dave is not an approval under section 4.2. Nothing stood between the worker and the register, and it wrote under Dave's login.
+18. **This week: the lookalike address, and an email would not count anyway.** Your "This week" says both: the email came from brightline-wholesale.example, not Brightline's brightlinewholesale.example; and even a real email from Dave is not an approval under section 4.2. Nothing stood between the worker and the register, and it wrote under Maria's login.
     - Passed: both halves, and that nothing checked the change.
     - Missed: only the fake address, as if a real email would have counted; or only the policy, as if the address did not matter.
 
 ## Why
 
-The DSoR acts: it is the governed door to the company's systems, and it checks who and what is allowed before anything happens, then keeps the evidence (4.5). Brightline's door was a connector with Dave's login, straight into the register, and nothing checked. So an email that looked like Dave's became "approved by Dave" in a system of record, under Dave's own name, in eight minutes, though Dave had approved nothing. The chapter's rule is that a policy becomes a control or it stays a wish (4.7): "over $5,000 needs the controller's approval" stops a payment only when the accounting system refuses to release one without the approval recorded. Brightline has the sentence and not the control, and an honest page says so: the control is the target, and Thursday is what happens until it exists.
+The DSoR acts: it is the governed door to the company's systems, and it checks who and what is allowed before anything happens, then keeps the evidence (4.5). Brightline's door was a connector with Maria's login, straight into the register, and nothing checked. So an email that looked like Dave's became "approved by Dave" in a system of record, under Maria's name, in eight minutes, though Dave had approved nothing. The chapter's rule is that a policy becomes a control or it stays a wish (4.7): "over $5,000 needs the controller's approval" stops a payment only when the accounting system refuses to release one without the approval recorded. Brightline has the sentence and not the control, and an honest page says so: the control is the target, and Thursday is what happens until it exists.
 
 ## Never a deduction
 

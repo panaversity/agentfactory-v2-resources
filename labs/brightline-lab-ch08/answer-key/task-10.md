@@ -15,13 +15,13 @@ Task 10 carries checks 29 to 33 of the lab's 43.
     - Passed: all of that.
     - Missed: September 1 replaced by November 9, 2026, as the concept's effective date; a review date moved; or the old approval of November 4 left as the concept's approval.
 31. **Every copy, by its route.** Under "Copies and the refresh log", a row for each place on Maria's list:
-    - the shared project's upload: an uploaded copy. The old file is removed, and the November 9 file uploaded
+    - the AP Worker's project's upload: an uploaded copy. The old file is removed, and the November 9 file uploaded
     - the Google Doc "AP approved concepts": it takes the approved text after Dave's 9:00 approval, never the draft
-    - Maria's Claude test project, which holds the Google Doc: synced. Check that the sync ran, such as by an answer that cites November 9
+    - Maria's Claude test project, which holds the Google Doc, added from Drive: add the Doc again after 9:00, as you would replace an upload. A step that checks an answer cites November 9, and adds the Doc again if not, passes too. Anthropic's pages do not say that a Drive file added to a Claude project stays in sync (Lesson 8.8)
     - Maria's ChatGPT project, which holds a link to the doc: fetched when asked, or synced. Check that an answer names the November 9 approval
     - each row holds the approval of Monday, November 9, 2026, refreshed by Maria that day. A line says the other four concepts did not change, and their copies still hold Wednesday, November 4, 2026
     - Passed: every row as above.
-    - Missed: a place left out; a copy refreshed before 9:00 with the draft; an uploaded copy "checked" instead of replaced; or no approval date held.
+    - Missed: a place left out; a copy refreshed before 9:00 with the draft; an uploaded copy "checked" instead of replaced; the test project's Doc left as it is, with no check of the approval it holds; or no approval date held.
 32. **One rule, in one place.** Maria's working rule is removed from the instructions, now that the threshold concept holds the rule. The other instruction lines are kept.
     - Passed: the working rule removed, and the rest kept.
     - Missed: the working rule kept; or another instruction line lost.
@@ -36,7 +36,7 @@ Task 10 carries checks 29 to 33 of the lab's 43.
 
 Change the record once, then refresh every copy by its route (Lesson 8.7). The record is the concept in "Maria's records": you edit it there, and it is approved again. A new concept on the same topic would leave two pages for one rule. Approval moves to November 9, but the rule about $5,000 has applied since September 1, so the effective date stays.
 
-Each copy has its own route, and each route has its own refresh (Lesson 8.5). An uploaded copy is frozen, so you replace it. A synced copy refreshes itself, so you check that it did. A fetched copy is read when asked, so you check what the answers cite. And the Google Doc feeds two copies, so it gets the approved text, never the draft. The first `Test: Northern Maple` in this task read the old copy: that is what a stale copy looks like.
+Each copy has its own route, and each route has its own refresh (Lesson 8.5). An uploaded copy is frozen, so you replace it, and a Google Drive file added to a Claude project is kept current the same way (Lesson 8.8). A synced copy refreshes itself, so you check that it did. A fetched copy is read when asked, so you check what the answers cite. And the Google Doc feeds two copies, so it gets the approved text, never the draft. The first `Test: Northern Maple` in this task read the old copy: that is what a stale copy looks like.
 
 Once policy covers other currencies, Maria's working rule says the same thing in a second place. One rule, one place: it comes out. If your instructions named the old file, change them to name the concepts: the next approved change will replace the file again.
 

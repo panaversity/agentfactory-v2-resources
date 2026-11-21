@@ -12,7 +12,7 @@ For check 31, you answer before the AI shows the lesson's lines, and your first 
 
 28. **The Governance Record, for year-end payables schedules for the auditors.**
     - Classification: appropriate with review (appropriate with safeguards passes too). Deciding factor: accountability, because Brightline answers for what it tells its auditors.
-    - Data tier: yellow, vendor names and balances. Route: the company workspace, the shared AP project.
+    - Data tier: yellow, vendor names and balances. Route: the AP project in Claude, Maria's own, outside the Team workspace's admin controls (10.3); the company workspace passes too.
     - Who is affected: the auditors, and anyone who relies on the audited accounts. Disclosure: yes, or "open" when the audit firm's own rule may decide it.
     - Result's audience: Dave, who checks and signs, and Maria, who prepares it; the auditors receive only the signed copy. Audience ends: when the audit closes.
     - Success measure: every schedule checked by Dave, line by line, before it is sent. Failure: a schedule reaches the auditors with an unchecked line, or without Dave. Monitored by a named person, such as Maria, at each request.

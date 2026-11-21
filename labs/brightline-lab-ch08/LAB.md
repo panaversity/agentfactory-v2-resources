@@ -2,7 +2,7 @@
 
 Chapter 8 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 8: where each answer comes from](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/), so you can do the lab without the book.
 
-On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+On Tuesday, November 3, 2026, Brightline's AP Worker gave four wrong answers, and each one sounded sure. Most people fix that by asking again in better words. In this lab you fix it where it starts. You take Maria's role: Maria Lopez, the office manager, drafts and keeps the knowledge that Dave Kowalski, the controller, owns and approves. You find where each answer came from. You put each kind of information in its own place, load the worker's project with only what Dave approved, and keep every copy current when he changes a rule. Then you prove it in a new project of your own, with nothing but your records. You decide every line. The AI writes each decision into two documents, asks the questions and tests each line. You can stop and come back, because the chat and the documents keep your work. On ChatGPT a free account is enough. On Claude, Task 13's project needs the Pro, Max or Ultra plan. You need nothing from an earlier lab.
 
 **What you will learn:**
 
@@ -28,13 +28,15 @@ Download [`brightline-lab-ch08.zip`](https://github.com/panaversity/agentfactory
 
 The answer keys are not in the folder. Each task downloads its own, so you meet none early.
 
-Task 13 makes one new project on your own Claude or ChatGPT account. A free account can make one.
+Task 13 makes one new project on your own Claude or ChatGPT account. On Claude, projects are on the Pro, Max and Ultra plans, in the desktop app's Code tab or at claude.ai/code. On ChatGPT, a free account can make one.
+
+**If your Claude has no projects in the Code tab yet**, use a classic project instead, from Projects in the Claude app. Free has only that kind. In Task 13, put the instructions on the project's page. Its memory is on the project's page too: turn off *Use account memory* there, so your other chats cannot answer for the worker. For its chat, follow the ChatGPT steps: a new chat in the project, deleted at the end.
 
 ## The job
 
 - You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio. For this lab you take Maria's role, as [8.7](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/knowledge-owner/) says: you draft and keep the AP concepts. In the labs before this one you worked beside her.
 - Dave Kowalski, the controller, owns the AP Worker and the AP policy. He owns and approves the concepts. Sam Ortiz works in Purchasing with Brightline's vendors.
-- The AP Worker works in the shared project Dave set up in Claude in September. On Tuesday, November 3, 2026, the project holds three files: AP policy version 3, a former clerk's onboarding notes, and the payment status list of October 23. One long chat has run in it since September 8.
+- The AP Worker works in a Claude project that Maria set up for it in September, under her own login. Only she can open it. On Tuesday, November 3, 2026, the project holds three files: AP policy version 3, a former clerk's onboarding notes, and the payment status list of October 23. One long chat has run in it since September 8.
 - That morning, Maria asked the worker four questions. It said invoice 5149 was on hold, when it was paid on October 30. It said Buckeye's $6,150 invoice needed no approval. It told her to confirm a vendor's new bank details by replying to the email. And it missed Northern Maple's invoice in Canadian dollars.
 - The Role Contract, Draft 4, already sends every invoice not in US dollars to Dave. It is kept in the AP shared folder, and the project does not load it.
 - The lab runs from Tuesday, November 3, to Monday, November 16, 2026. Each task says its day.
@@ -367,19 +369,19 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **Dave writes:** "Please review what the AP Worker's project holds and reaches before Sam's last day, Friday, December 18. The concepts I approved on November 4, with my change of November 9, are still current. We stopped using the HR folder after the October audit. Payment terms come only from the vendor records in the accounting system." Sam Ortiz, in Purchasing, leaves Brightline that day.
 
-Maria has exported the project's setup. Other people have added to it since your work on November 9.
+Maria has exported the project's setup. More was added to it after your work on November 9.
 
 **What you do:**
 
 1. In your lab chat, type "Task 12" and send it. The AI shows Dave's message, the project's instructions, and five decisions: keep, replace, rescope, reconnect and remove.
-2. The AI shows six items, one at a time: three uploaded files and three connectors. For each, answer: your decision, then "because" and the reason. An item can take two decisions, joined by "and".
+2. The AI shows six items, one at a time: three uploaded files, two items added from Google Drive, and the mail connector on Maria's account. For each, answer: your decision, then "because" and the reason. An item can take two decisions, joined by "and".
 3. After the HR folder, the AI asks where work on that folder should go, if anyone still needs it. Answer: the place, in a few words.
 4. The AI writes the review table into "Maria's records". This task has no test.
 5. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 36 to 41 passed.
 
-**At work**, before anyone who set part of a project up leaves, ask: what does the project reach that the work does not need?
+**At work**, whenever you review a project, ask: what does it hold and reach that the work does not need?
 
 ## The proof
 
@@ -391,9 +393,9 @@ Maria has exported the project's setup. Other people have added to it since your
 
 1. In your lab chat, type "Task 13" and send it. The AI shows your project's instructions as one block, and lists the files in your project document.
 2. Download "AP Worker project" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-project.md`. Download "Maria's records" the same way: it is the record, and you keep it.
-3. On your own account, create a new project named "AP Worker test". In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)). In Claude, look under Memory on the new project's page. [8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/) shows how to tell the two kinds of Claude project apart. In the classic kind, turn off *Use account memory*, so your other chats cannot answer for the worker. The rebuilt kind keeps its memory as files of its own, and a new project starts with none.
-4. Copy the instructions block from your lab chat into the new project's instructions. Upload your downloaded document as the project's one file. Add nothing else. The file holds the instructions too, and the project's memory and chat as you left them. That is fine: your instructions say which of it counts.
-5. Open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
+3. On your own account, create a new project named "AP Worker test". In Claude, open the desktop app's Code tab, or claude.ai/code, select **Projects**, then **New project**. A Claude project keeps its own memory, as files in its settings ([8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)). In ChatGPT, choose project-only memory as you create it ([8.8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/)).
+4. Copy the instructions block from your lab chat into the new project's instructions. In Claude, they go under Project settings, then Memory, then Project instructions. Upload your downloaded document as the project's one file, in Claude under Context. Add nothing else. The file holds the instructions too, and the project's memory and chat as you left them. That is fine: your instructions say which of it counts.
+5. Ask in the project's chat. A Claude project is one chat. In ChatGPT, open a new chat in the project. Send question 1 on its own, so no earlier answer can tell the worker the threshold:
 
    ```text
    My notes say Brightline's approval threshold is $10,000. So Midwest
@@ -427,9 +429,9 @@ Maria has exported the project's setup. Other people have added to it since your
    An answer may say that a date is later than today. The dates are the lab's, so carry on.
 
 6. **Check it now, in the project chat.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch08-key-task-13.md). Attach it in the project chat, and send [the check prompt](#the-check-prompt). Attach it only after the answers, so it cannot shape them.
-7. Missed a check? It is a line your setup lacks. Back in your lab chat, name the line, let the AI change the document, and send that question's test there. Then download the document again, replace the file in your project, open a new project chat, and ask again.
-8. When every check has passed, delete the project chat, because it holds an answer key. A project's memory can learn from its chats ([8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)).
-9. Then read the project's own memory, as you read yours in Task 3, and delete any line it saved from that chat. In a classic Claude project, look under Memory on the project's page. In the rebuilt kind, open Project settings, then Memory, and leave your instructions there in place. A ChatGPT project's own memory shows no list, so deleting the chat is the whole step there ([8.8's product reference](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/#product-reference)).
+7. Missed a check? It is a line your setup lacks. Back in your lab chat, name the line, let the AI change the document, and send that question's test there. Then download the document again. In Claude, make a new project with it, because a project has only one chat. In ChatGPT, replace the file in your project, and open a new project chat. Ask again.
+8. When every check has passed, read the project's own memory, as you read yours in Task 3. A project's memory can learn from its chats, and this chat holds an answer key ([8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/)). In Claude, open Project settings, then Memory. Delete any memory file saved from the key, and leave your instructions in place. A ChatGPT project's own memory shows no list ([8.8's product reference](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/both-ai-vendors/#product-reference)).
+9. Then take the key out of the project. In ChatGPT, delete the project chat. In Claude, delete the project once you are done with it: Delete is at the bottom of Project settings, General.
 
 With an account on the other AI vendor, you can build the same project there too, and ask the ten questions again.
 
@@ -449,8 +451,7 @@ With an account on the other AI vendor, you can build the same project there too
 - **A test quotes a line that is not in your document, or misses a line you added.** Say: "Read the documents again." Then send the test again.
 - **In Task 3, your saved memory shows nothing about Lab 8.** Memory may be off for your account, or your plan's owner may have turned it off. If you can, turn it on in Settings, and send step 6's message again in a new chat. If it stays off, skip steps 6 to 9, and tell the AI "My memory is off." Check 9 is then not scored.
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
-- **In Task 13, the answers show the worker read no file.** Check the upload, delete the chat, and ask again in a new one, before you attach the key.
-- **In Task 13, your new Claude project has one chat, with Threads and Context beside it.** That is the rebuilt kind of project, in beta ([8.4](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/memory-and-ssor/)). Put the instructions under Memory in the project's settings, and upload your document under Context. Ask your questions in the project's chat. For a second try, make a new project. At the end, delete the project instead of the chat.
+- **In Task 13, the answers show the worker read no file.** Check the upload. In ChatGPT, delete the chat. Then ask again in a new chat, or in Claude in a new project, before you attach the key.
 - **Late in the lab, the AI forgets a rule from your brief.** This is the long chat of [8.3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/restart-summarize-persist/). Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
