@@ -156,7 +156,7 @@ async function call(url: string, tok: string, name: string, args: Record<string,
 
 // Words that belong to Brightline only, which must never appear in a Cedar Ridge answer.
 const BRIGHTLINE_ONLY = ["Midwest Packaging", "Buckeye", "Great Lakes", "Scioto", "Hocking", "Lakefront", "Ohio Valley", "Cardinal",
-  "INV-8301", "INV-8310", "PO-7003", "docs/policies/", "controller's approval", "$10,000"];
+  "INV-8301", "INV-8310", "PO-7003", "docs/policies/", "controller's approval", "$5,000"];
 for (const lang of ["ts", "py"] as const) {
   const url = RESOURCE[lang];
   const luis = await token("org_cedar", "u_matrix_luis", url);
@@ -176,7 +176,7 @@ for (const lang of ["ts", "py"] as const) {
   // D9. Nothing in any Cedar Ridge answer belongs to Brightline: every tool, answers and errors.
   const asks: Array<[string, Record<string, unknown>]> = [
     ["find_vendor", { name: "co" }], ["find_vendor", { vendor_id: "V005" }], ["list_open_invoices", { page_size: 10 }],
-    ["get_purchase_order", { invoice_number: "INV-8303" }], ["search_policy", { query: "who approves invoices over $10,000?" }],
+    ["get_purchase_order", { invoice_number: "INV-8303" }], ["search_policy", { query: "who approves invoices over $5,000?" }],
     ["search_policy", { query: "bank details" }],
   ];
   const leaks: string[] = [];

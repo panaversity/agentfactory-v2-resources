@@ -109,7 +109,7 @@ Never automated:
 - A16, score or rank individual staff, or recommend whom to keep.
 - A17, sign anything, or put anyone's signature block on a draft.
 Raising a rung:
-- A07 rises one rung on four weekly runs where Maria sent its drafts unchanged and they passed the Review Contract, with no missed escalation. Dave decides. The change is recorded in the envelope's change log, with the date and Dave's name.
+- A step that stays inside Brightline rises one rung on four weekly runs that passed the Review Contract, with no missed escalation. Dave decides. The change is recorded in the envelope's change log, with the date and Dave's name. A07 stays at draft: a reply to a vendor leaves Brightline, so a named person sends it.
 Thresholds:
 - Invoices over $5,000.00: policy 4.1. Dave approves before payment, recorded from his own login (4.2), never by email or chat.
 - Every weekly payment run, any amount: policy 4.3. Dave approves the whole run.

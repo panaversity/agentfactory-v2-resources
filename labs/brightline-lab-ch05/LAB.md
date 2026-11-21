@@ -244,7 +244,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question and its line from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with [5.7](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s four kinds of format, and your notes on it.
+1. In your lab chat, type "Task 5" and send it. The AI shows the Format's question and its line from [5.1](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/four-parts/), with [5.7](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/)'s five kinds of format, and your notes on it.
 2. Write your Format. Send it as "Format:" and your own words.
 3. When the AI says "Ready for your run", type `Run: my brief` and send it. The AI then asks which guess a line of yours now decides: name one, or "none".
 4. The AI shows seven readers of this week's work. For each, answer the format from [5.7](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/output-format/), and why, in one line.
@@ -369,7 +369,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 **What you do:**
 
 1. Download your brief from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `payment-run-brief.md`.
-2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. In ChatGPT, choose Work if you still see that switch and your plan has it. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it.
+2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. In ChatGPT, choose Work if you still see that switch and your plan has it. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it.
 3. Attach two files, your downloaded brief and `inputs.zip`, and send:
 
    ```text

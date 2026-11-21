@@ -264,7 +264,7 @@ def test_19_each_companys_own_approval_threshold() -> None:
         luis = result(tool(c, LUIS, "get_purchase_order", {"po_number": "PO-3103"}))["structuredContent"]
         a = result(tool(c, ANA, "get_purchase_order", {"po_number": "PO-7005"}))["structuredContent"]
     assert (luis["approval_threshold_cents"], luis["needs_approval"]) == (250000, True)
-    assert (a["approval_threshold_cents"], a["needs_approval"]) == (1000000, False)
+    assert (a["approval_threshold_cents"], a["needs_approval"]) == (500000, True)
 
 
 def test_19_not_found_is_the_same_for_another_companys_id_and_no_id() -> None:

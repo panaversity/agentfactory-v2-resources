@@ -14,6 +14,6 @@ Exported by Maria on Monday, November 16, 2026, from the project's settings. The
 
 | Connector | What it reaches | Added by | Added | Last used |
 | --- | --- | --- | --- | --- |
-| Google Drive | One folder: AP / Approved knowledge, which holds only the Google Doc "AP approved concepts" | Maria | Tuesday, November 10, 2026 | Monday, November 16, 2026 |
+| Google Drive | Only the Google Doc "AP approved concepts", from the AP / Approved knowledge folder, added to the project's files and kept in sync | Maria | Tuesday, November 10, 2026 | Monday, November 16, 2026 |
 | Google Drive | The whole HR folder, with every folder inside it | Maria | Tuesday, September 8, 2026 | Friday, October 2, 2026 |
 | Gmail | The whole mailbox of sam.ortiz@brightlinewholesale.example | Sam Ortiz, Purchasing | Monday, October 19, 2026 | Friday, November 13, 2026 |

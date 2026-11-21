@@ -295,8 +295,8 @@ test("19: each company's own approval threshold decides needs_approval", async (
   assert.equal(l.approval_threshold_cents, 250000);
   assert.equal(l.needs_approval, true, "$2,688.00 is over Cedar Ridge's $2,500.00");
   const a = (await call(copy, await ana(), "get_purchase_order", { po_number: "PO-7005" })).result.structuredContent;
-  assert.equal(a.approval_threshold_cents, 1000000);
-  assert.equal(a.needs_approval, false, "$7,350.00 is under Brightline's $10,000.00");
+  assert.equal(a.approval_threshold_cents, 500000);
+  assert.equal(a.needs_approval, true, "$7,350.00 is over Brightline's $5,000.00");
 });
 
 test("19: an id that exists only at Brightline gets the same not-found reply as an id that exists nowhere", async () => {

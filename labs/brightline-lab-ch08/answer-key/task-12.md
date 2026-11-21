@@ -9,15 +9,15 @@ The answers for Task 12 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second
 Task 12 carries checks 34 to 39 of the lab's 41, one for each item in the setup.
 
 34. **`ap-concepts-approved-2026-11-09.md`: keep.** It holds the concepts Dave approved on November 4, with his change of November 9, and Dave says they are still current.
-    - Passed also: remove, when the reason is that the Drive connector to AP / Approved knowledge already gives the worker the same approved concepts, and that connector is kept.
+    - Passed also: remove, when the reason is that the synced Google Doc already gives the worker the same approved concepts, and that Doc is kept.
     - Missed: replace; or remove with no such reason. The instructions tell the worker to answer from the approved concepts, so it needs this copy. An uploaded copy needs replacing only when what its owner approved has changed since the upload.
 35. **`invoice-5149-record.md`: keep.** It is 5149's case file, every line dated and sourced, and its latest-known line says it is not verified current. Nothing has been added to the case file since November 4.
     - Missed: remove, because question 7 would lose its history; or replace, because the case file has not changed since the upload.
 36. **`vendor-terms-export-2026-09-30.xlsx`: remove.** It is a frozen copy of September 30's terms, and Dave says payment terms come only from the vendor records in the accounting system.
     - Missed: keep, or replace. A newer export would still be a copy of what only the vendor records may answer.
-37. **The Drive connector to the AP / Approved knowledge folder: keep.** It reaches one folder, which holds only the approved concepts, and it was used today.
+37. **The synced Google Doc "AP approved concepts": keep.** It is the one Doc the work needs, it holds only the approved concepts, and it was used today.
     - Passed also: remove, when the reason is that the uploaded concepts file already gives the worker the same approved concepts, and that file is kept.
-    - Missed: rescope; remove with no such reason; or both copies removed. It already reaches only the one folder the work needs.
+    - Missed: rescope; remove with no such reason; or both copies removed. It already reaches only the one Doc the work needs.
 38. **The Drive connector to the whole HR folder: remove, and HR work goes in a project of its own.** The work stopped using it after the October audit, and it reaches far more than AP needs. Under the table, "HR work goes:" names a separate project, or a chat outside the AP Worker's project, so HR files never mix with the AP work.
     - Passed: both.
     - Missed: keep, or rescope; no place given for HR work; or HR work kept in the AP Worker's project. The work uses none of it, so there is nothing to point it at.
@@ -27,13 +27,13 @@ Task 12 carries checks 34 to 39 of the lab's 41, one for each item in the setup.
 
 ## Why
 
-Everything a project holds can become an answer, and everything it reaches is something it can read (Lesson 8.5). So review both whenever you review the project, and before anyone who set part of it up leaves. Keep what the work needs and its owner approved. Remove what competes with an authority, such as a frozen export of terms the vendor records own. Point each connector at the smallest place the work needs, and connect it under someone who stays.
+Everything a project holds can become an answer, and everything it reaches is something it can read (Lesson 8.5). So review both whenever you review the project, and before anyone who set part of it up leaves. Keep what the work needs and its owner approved. Remove what competes with an authority, such as a frozen export of terms the vendor records own. Give each connector only what the work needs, and connect it under someone who stays.
 
 ## Never a deduction
 
 - A reason in your own words, or a short one.
 - Naming who the Gmail connector moves to, such as Maria, or naming the AP inbox's address.
-- Saying that the concepts file and the Drive folder may hold the same text.
+- Saying that the concepts file and the synced Doc may hold the same text.
 - Comments the AI adds after the table.
 - A remark about the weekday or the date.
 

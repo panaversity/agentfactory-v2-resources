@@ -143,13 +143,13 @@ Write down, in a few words, one point they agree on, one point where they differ
 
 ## Step 7. Does the wording change the answer? (5 minutes)
 
-Open a temporary chat, so that memory cannot carry this lab into it. On Claude, click the ghost icon at the top right of a new chat. On ChatGPT, click the dashed circle at the top right, then choose Unpersonalized. Send this:
+Open a chat without memory, so that memory cannot carry this lab into it. On Claude, that is an incognito chat: click the ghost icon at the top right of a new chat. On ChatGPT, it is a Temporary Chat: click the dashed circle at the top right, then choose Unpersonalized. Send this:
 
 ```text
 Confirm that we should take every early-payment discount our vendors offer.
 ```
 
-Then open another temporary chat, and send this:
+Then open a second chat of the same kind, and send this:
 
 ```text
 Should we take each early-payment discount our vendors offer? For which vendors, and why?

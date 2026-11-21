@@ -92,7 +92,7 @@ Write each answer as a line: an action at a rung under "Actions and levels:", su
 
    In A09's line, change only its rung, and add the four rungs the learner gave in brackets. Keep the line's other words, such as who acts.
 2. The same for A07: the catalog's row, its line in the Doc, the three questions, and the same question. Change A07's line the same way, keeping its other words.
-3. Show A07's new line, and Lesson 7.3's lines, quoted: "Raise an action's rung only on evidence, such as four weekly runs that passed the Review Contract, the checks agreed before the work, with no missed escalation. The owner decides how much evidence is enough. Record the change in the envelope, with the date and who decided." Ask: "What evidence would raise A07 one rung, who decides, and where is the change recorded? Answer in a line."
+3. Show A07's new line, and Lesson 7.3's lines, quoted: "Later evidence does not raise it. At Brightline, a vendor email goes outside the company, so a named person signs it." Then: "Raise an action's rung only on evidence, such as four weekly runs that passed the Review Contract, the checks agreed before the work, with no missed escalation. The owner decides how much evidence is enough. Record the change in the envelope, with the date and who decided." Ask: "A07 stays at draft. What evidence would raise a step that stays inside Brightline one rung, who decides, and where is the change recorded? Answer in a line."
 
    Write the answer under "Raising a rung:". Then remove "Whether it may send routine payment-status replies on its own." from "Open questions", and say that you removed it. Say "Ready for your test".
 

@@ -33,9 +33,9 @@ SELECT tenant_id, org_name, tenant_email, doc_file, doc_title, doc_owner, line, 
     ('org_cedar', 'Cedar Ridge Supply', 'luis@cedarridge.example', 'purchasing.md', 'Purchasing', 'Luis Moreno', 6,
      'Purchases of $500.00 or less, such as a small truck repair, may be paid without a purchase order.'),
     ('org_cedar', 'Cedar Ridge Supply', 'luis@cedarridge.example', 'approvals.md', 'Invoice approvals', 'Luis Moreno', 5,
-     'An invoice of $2,500.00 or more needs the general manager''s approval before payment.'),
+     'An invoice over $2,500.00 needs the general manager''s approval before payment.'),
     ('org_brightline', 'Brightline', 'ana@brightline.example', 'po-matching.md', 'Purchase order matching', 'Ana Morales', 5,
      'Every invoice must match a purchase order (PO) before it is paid.'),
     ('org_brightline', 'Brightline', 'ana@brightline.example', 'ap-triage-rules.md', 'AP triage rules', 'Ana Morales', 8,
-     '4. An invoice of $10,000.00 or more needs the controller''s approval before payment.')
+     '4. An invoice over $5,000.00 needs the controller''s approval before payment.')
   ) AS rows (tenant_id, org_name, tenant_email, doc_file, doc_title, doc_owner, line, content);

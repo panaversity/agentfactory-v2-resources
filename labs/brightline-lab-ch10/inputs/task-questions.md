@@ -69,12 +69,12 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
 ## Task 2. Six proposed uses
 
-1. Show Lesson 10.1's three answers and four screens, quoted:
+1. Show Lesson 10.1's three answers and five screens, quoted:
    - "**Appropriate.** Low consequence, easy to undo, easy to check as you go."
    - "**Appropriate with review.** The worker is useful, but a defined human check must happen before the output is used, sent or acted on."
    - "**Inappropriate.** The task stays human-owned. A review cannot change the consequence, how hard it is to undo, or the fact that a person must make the decision."
    - "The middle answer is also called **appropriate with safeguards**."
-   - The four screens: reversibility ("If it is wrong, can we catch and undo it before harm is done?"), consequence of error ("Is a mistake small, expensive, harmful, regulated or permanent?"), human judgment ("Does the task depend on care, a relationship or context a person should own?") and accountability ("Who is responsible for the outcome, and can that person really check it?").
+   - The five screens: fit ("Can the worker do this task well enough, given its known limits?"), reversibility ("If it is wrong, can we catch and undo it before harm is done?"), consequence of error ("Is a mistake small, expensive, harmful, regulated or permanent?"), human judgment ("Does the task depend on care, a relationship or context a person should own?") and accountability ("Who is responsible for the outcome, and can that person really check it?").
    - "Classify the specific activity you delegate, not the subject it is about."
    - "The **deciding factor** is the screen that, if its answer changed, would move the use into another category."
 

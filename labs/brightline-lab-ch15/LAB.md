@@ -309,7 +309,7 @@ The review is about the TypeScript change, as in Chapter 13. The required checks
 
 ### Without a paid Claude plan
 
-Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
+Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/appendices/claude-and-chatgpt-2/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
 
 If you cannot use the Claude app at all, do Tasks 1 to 11 in Codex in the ChatGPT desktop app, or in OpenCode Desktop, with these swaps. Then port to the agent you did not use in Task 12. Every other step is the same, because git, `gh` and the checks do not depend on the agent.
 
