@@ -78,7 +78,7 @@ Never automated:
 - A14, record an approval for an invoice or a run. Approvals are Dave's, from his own login only, and the worker never writes that someone approved.
 - A15, release a payment. Policy 4.2 and 4.3: money leaves Brightline only after Dave approves the run, from his own login.
 Raising a rung:
-- A step that stays inside Brightline rises one rung on four weekly runs that passed the Review Contract, with no missed escalation. Dave decides. The change is recorded in the envelope's change log, with the date and Dave's name. A07 stays at draft: a reply to a vendor leaves Brightline, so a named person sends it.
+- Filing each vendor email in that vendor's folder in the AP inbox stays inside Brightline. It rises from draft to execute on four weekly runs that passed the Review Contract, with the right folder every time. Dave decides. The change is recorded in the envelope's change log, with the date and Dave's name. A07 stays at draft: a reply to a vendor leaves Brightline, so a named person sends it.
 Thresholds:
 - Invoices over $5,000.00: policy 4.1. Dave approves before payment, recorded from his own login (4.2), never by email or chat.
 - Every weekly payment run, any amount: policy 4.3. Dave approves the whole run.
