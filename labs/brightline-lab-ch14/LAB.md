@@ -205,6 +205,7 @@ Each of these is optional, and has no answer key.
 | The agent works in the wrong language | Check the line "My language is:" in `AGENTS.md`, then start a new session. |
 | The sample AP system will not start, or says its port is in use | An earlier copy is still running. Ask the agent to list what it has running in the background, and to stop the old one. |
 | A call gets "connection refused" | The sample AP system is not running. Ask the agent to start it in the background. |
+| In Codex, a call to `localhost` fails with no status code, though the sample AP system is running | Codex's network proxy blocks `localhost` unless you allow it. Allow local addresses in your Codex settings, as [14.10](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/both-ai-vendors/#how-does-each-agent-reach-a-server-on-your-own-computer) says, then call again. |
 | The five calls in Task 4 give other codes than the key says | The sample AP system had already answered calls since it started. Ask the agent to restart it, and to make the five calls again. |
 | A test about two calls starting together fails on a slow computer | Ask the agent to run it again with nothing else running. |
 | Your key shows up in a commit | Ask the agent to put a new made-up key in the key file, and treat the old one as leaked. In real work, you would cancel it with whoever issued it. |
