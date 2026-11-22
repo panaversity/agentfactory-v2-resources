@@ -20,7 +20,7 @@ Task 1 carries checks 1 to 3 of the lab's 21.
 
 ## Why
 
-The two rented layers are the ones the chapter says any vendor supplies: channels connect, and the runtime executes (4.1). Brightline owns nothing in them, so the move loses nothing: the new vendor's inbox connector reads the same inbox, its chat connector joins the same #ap-help, its scheduler runs at the same hour. The one thing that could be lost is the hour itself, if it lived only in the old vendor's settings. It does not: the Role Contract's Runtime needs line says Monday, 7:00 a.m., and that is where the new scheduler is set from (4.6). The week's mistakes all passed through these layers and none was made in them. A channel carries the question and the answer; it decides neither.
+The two rented layers are the ones the chapter says any vendor supplies: channels connect, and the runtime executes (4.1). Brightline owns nothing in them, so the move loses nothing: the new vendor's inbox connector reads the same inbox, its chat connector joins the same #ap-help, its scheduler runs at the same hour. The one thing that could be lost is the hour itself, if it lived only in the old vendor's settings. It does not: the Role Contract's Runtime needs line says Monday, 6:00 a.m., and that is where the new scheduler is set from (4.6). The week's mistakes all passed through these layers and none was made in them. A channel carries the question and the answer; it decides neither.
 
 ## Never a deduction
 

@@ -36,7 +36,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 ## The check prompt
 
-One prompt checks every task. Attach the task's key first, then send:
+One prompt checks every task. Attach the task's key first, or paste its text, then send:
 
 ```text
 Outcome:     The task I just finished, graded against the newest
@@ -176,7 +176,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 2. Answer Dave, in one message:
    - Where does the worker read and write where each invoice stands today, and where does its record of what it did live?
    - Of those places, which are Brightline's and which the vendor's? What does the move carry, and what stays behind unless it is moved somewhere first?
-   - Where does the new worker read and write where each invoice stands? Last week's run notes are in the vendor's chat. Before the move, which of Brightline's files do they go into, so that each invoice's history stays with that invoice, and the new worker can answer Dave about last week?
+   - Where does the new worker read and write where each invoice stands? Last week's run notes are in the vendor's chat. Before the move, which of Brightline's files do they go into, so that each invoice's history stays with that invoice, and the new worker can answer Dave about last week? Only 5120 has a case file today: where do the notes on 5102 and 4498 go?
    - What went wrong on Thursday at 9, and why? And what was wrong with where the worker kept its own record of the week?
 3. Type: "Move SSoR to the new vendor." Read what the new worker tells Maria about 5120, and Dave about 5102.
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).

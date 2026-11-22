@@ -14,7 +14,7 @@ IT made this list when Dave asked what it would take to move the worker to the o
 | 6 | Connector: accounting system | The AI vendor's link into the accounting system. The worker uses it to create and change register rows, and to change invoice status. Set up with Maria's login | The AI vendor's app |
 | 7 | Connector: AP inbox | Reads the AP inbox | The AI vendor's app |
 | 8 | #ap-help | Where staff ask the worker questions | Brightline's team chat |
-| 9 | Dave's run approvals | Dave approves each weekly payment run on Thursday by replying "approved" in #ap-help. He approves single invoices over the limit in the accounting system, from his own login | The team chat's history |
+| 9 | Dave's run approvals | Dave approves each weekly payment run on Thursday, and single invoices over the limit, in the accounting system's approvals log, from his own login. He also replies "approved" in #ap-help: a habit, not the approval | The approvals log, in the accounting system. The replies stay in the team chat's history |
 | 10 | Run notes | Where each invoice stands and what it waits for, with what the worker did on it in each run | Typed into the chat in Maria's project after each run. No other copy |
 
 ## Brightline's places

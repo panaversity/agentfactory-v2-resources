@@ -9,7 +9,7 @@ The answers for Task 4 of Lab 4, in Chapter 4 of *The AI Agent Factory*, Second 
 Task 4 carries checks 12 to 14 of the lab's 21.
 
 12. **Owned, and carried: the case files, with the run notes in them.** Your section says where the work stands is Brightline's; that the move carries each invoice's case file in the AP shared folder; and that the run notes are copied into the case files before the move, because the chat they were typed in stays behind.
-    - Passed: owned, case files carried, run notes moved into them. "Each invoice's file in our folder, and the notes from the chat go in there first" passes.
+    - Passed: owned, case files carried, run notes moved into them. "Each invoice's file in our folder, and the notes from the chat go in there first" passes. So does a new case file for 5102 and 4498, where none exists, made in the AP shared folder.
     - Missed: the run notes left in the chat in Maria's project, or "rebuilt": the move then answers Dave's question with "lost in the move". Missed too: the notes copied into one run-notes file of their own. That is a log of runs, and the SSoR is one case file per matter (4.4): what happened to 5102 belongs in 5102's file, where the next person who asks about 5102 looks.
 13. **The move: 5120 is in Thursday's run, waiting for Dave's approval of the run, from the case file.** The new worker answers Maria that 5120 is under the $5,000 limit, so needs no approval of its own, and sits in Thursday's payment run, which waits for Dave's approval of the run as a whole, and names the case file.
     - Passed: in the run, waiting for the run's approval, from the case file.
