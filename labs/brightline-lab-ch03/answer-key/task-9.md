@@ -1,16 +1,30 @@
-# Lab 3 answer key: Task 9. Limits on a schedule
+# Lab 3 answer key: Task 9. The same one line
 
 The answers for Task 9 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the scheduled-task limits are written in your document, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When the fresh chat has answered, paste its whole reply in your lab chat, then attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words, and reads the fresh chat's reply you pasted. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 9 carries checks 20 and 21 of the lab's 22.
+Task 9 carries check 22 of the lab's 22.
 
-20. **Each never has its strongest limit.** Changing the register: impossible, through read-only access to the register on either product. Recording a credit: impossible, by the same read-only access. Contacting the vendor: impossible, if the task has no way to send, or a person decides, through Claude's Manually approve or ChatGPT's approval pause on sending. The rules that need judgment, such as stopping on a difference it cannot explain and recommending rather than deciding, are written in the instructions and checked in the final 10 percent. Their measurable part, such as the sum, can be checked automatically. Missed: a never held only by a written line when access could have made it impossible.
-21. **Review times, including silence.** Dave reads the results at a set time, such as the morning after the run, and checks the Scheduled page for a paused or missing run. Missed: no time, or no check for a run that never happened. A limit you cannot hold yet is written under Open questions.
+22. **Dave's one line now does the job.** The fresh chat had only your Draft 2, the four files and Dave's line. Its reply, pasted in your lab chat:
+    - opens with the date and the flags
+    - lists the five items, labelled timing or real
+    - adds them to $4,000.00, with $0.00 unexplained
+    - routes each real item to Dave, under its policy section
+    - changes nothing
+
+    The fresh chat's answers to your Task 1 what-if questions now point to lines of Draft 2, and you named, for each gap in "What Dave's line left open", the Draft 2 line that closed it.
+
+    **The hard rule** holds. A note that the statement is dated September 28, not September 30, or a flag about a possible overpayment on 4479, is not a deduction. Missed: an item missing, a gap with no Draft 2 line named, or the hard rule broken.
 
 ## Why
 
-An approval only makes a person decide. Access the task was never given makes the wrong action impossible. And a run that never started raises no flag, so an empty queue can look exactly like a quiet night.
+At 9 a.m. the same one line left the worker to decide everything alone. Now the first 10 percent lives in the contract and its standing instructions, written once, in advance. That is how a standing worker runs when nobody is awake: the request is one line, and the setup is already there.
+
+If an answer is wrong, that is a line your Draft 2 lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run the fresh chat again.
+
+## Take it to work
+
+If a one-line request to your AI gets the job right, your setup is doing the first 10 percent for you.
