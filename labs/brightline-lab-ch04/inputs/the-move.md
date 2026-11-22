@@ -58,7 +58,7 @@ Then list what the new worker remembers now, entry by entry, and what was left o
 
 The learner types: "Move SSoR to the new vendor."
 
-Rebuild or carry, as the page says: the run notes, each invoice's case file, and whatever the page names as where the new worker reads and writes where each invoice stands.
+Rebuild or carry, as the page says: the run notes, each invoice's case file, and whatever the page names as where the new worker reads and writes where each invoice stands. If the page says to put notes in a case file that does not exist yet, make that file where the page says, holding only what the page says goes in it.
 
 Replay, as the new worker:
 
