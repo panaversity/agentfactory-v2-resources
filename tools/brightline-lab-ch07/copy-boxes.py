@@ -7,8 +7,8 @@ Task 11 asks which setting on the learner's app holds each envelope line, and sh
 the Chapter 7 box for that app. The boxes say what each product does as verified on a date, so they are
 copied from the book's page, never typed, and the check fails when the page has changed since. The
 book's page is knowledge/managing-ai-workers/the-authority-envelope/both-ai-vendors.md, Lesson 7.4,
-where each box is a tab of its Product reference: "### Claude" for Anthropic and "### ChatGPT" for
-OpenAI, each opening with its "*As verified <date>.*" line (since 21 November 2026). Footnote
+where each box is a tab of its Product reference, the page's last section: "### Claude" for Anthropic and
+"### ChatGPT" for OpenAI, each opening with its "*As verified <date>.*" line (since 21 November 2026). Footnote
 markers are dropped, because their sources live on the page, and a link keeps only its words."""
 import re, sys
 from pathlib import Path
@@ -32,7 +32,9 @@ def plain(line):
 
 def box(tab, vendor):
     """The tab's box: its date as a title line, then its lines up to the next heading."""
-    start = page.index(f"### {tab}")
+    # 7.4 opens with "Set the envelope in your app", whose tool tabs carry the same names, so the
+    # boxes are the tabs after "## Product reference" (since 23 November 2026).
+    start = page.index(f"### {tab}", page.index("## Product reference"))
     rest = page[start + 1:]
     stop = next((i for i, line in enumerate(rest) if line.startswith("#")), len(rest))
     lines = [line for line in rest[:stop]]
