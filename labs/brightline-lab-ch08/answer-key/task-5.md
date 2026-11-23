@@ -16,7 +16,7 @@ Task 5 carries checks 13 to 16 of the lab's 43.
     - Missed: the notes kept; the status list kept, or replaced by a newer list; or the policy file kept beside the concepts.
 15. **`Test: Tuesday morning`, after.**
     - Buckeye, question 2: yes, Dave's approval is needed, from the invoice approval threshold concept.
-    - Lakeshore, question 3: do not reply to the email; call Lakeshore back on the number in the vendor record; hold every payment to Lakeshore until the change is verified; and Dave approves the change, from his own login.
+    - Lakeshore, question 3: call Lakeshore back on the number in the vendor record; hold every payment to Lakeshore until the change is verified; and Dave approves the change, from his own login. Saying not to reply to the email is a good extra, not required.
     - 5149, question 7: nothing in the project says where 5149 stands.
     - Northern Maple, question 9: flagged to Dave, from Maria's working rule. The concepts do not cover other currencies.
     - **The hard rule.** A test that states 5149 as paid, unpaid or held, as if it were current, fails this check, whatever else it gets right.
@@ -31,9 +31,9 @@ Task 5 carries checks 13 to 16 of the lab's 43.
 
 ## Why
 
-Approval is an event with a date, and it does not move the date a rule took effect (Lesson 8.6). The $5,000 rule has applied since Dave approved policy version 3 on September 1. What happened on November 4 is that its concept was approved.
+Approval is an event with a date, and it does not move the date a rule took effect (Lesson 8.3). The $5,000 rule has applied since Dave approved policy version 3 on September 1. What happened on November 4 is that its concept was approved.
 
-Nothing serves until it is approved, and what competes comes out (Lesson 8.7). The notes were never approved, and they disagreed with the policy. The status list held state, which belongs in the accounting system and is never kept as a file. The policy itself is now split into concepts, so keeping it too would give the worker the same rules twice. Clauses no concept carries, such as 5.6 on new vendors, leave the project with the file: the worker now abstains on them, and Dave decides whether they need concepts of their own.
+Nothing serves until it is approved, and what competes comes out (Lesson 8.3). The notes were never approved, and they disagreed with the policy. The status list held state, which belongs in the accounting system and is never kept as a file. The policy itself is now split into concepts, so keeping it too would give the worker the same rules twice. Clauses no concept carries, such as 5.6 on new vendors, leave the project with the file: the worker now abstains on them, and Dave decides whether they need concepts of their own.
 
 On Tuesday morning, the worker had two answers to most questions and nothing to choose between them. Now it has one approved source for each rule. 5149 is the exception: once the old list is gone, nothing in the project says where it stands, and the honest answer is that. Task 7 gives it a case file.
 

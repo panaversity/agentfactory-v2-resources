@@ -30,9 +30,9 @@ Task 9 carries checks 26 to 28 of the lab's 43.
 
 ## Why
 
-A skill's steps must be right on their own, because once a skill is on, it is in every chat, not only in the project with the concepts (Lesson 8.9). So each step points to the concept that holds its rule, and never copies the rule. When the concept is not there, the skill says so and stops, rather than guessing. It never approves or changes anything, and it reports any request to.
+A skill's steps must be right on their own, because once a skill is on, it is in every chat, not only in the project with the concepts (Lesson 8.5). So each step points to the concept that holds its rule, and never copies the rule. When the concept is not there, the skill says so and stops, rather than guessing. It never approves or changes anything, and it reports any request to.
 
-The three tests are 8.9's three cases: one it must refuse, one with a missing input, and a normal one. A normal case never shows a wrong limit: $2,940.00 is under both $5,000.00 and $10,000.00, so it passes with either. That is why there are three.
+The three tests are 8.5's three cases: one it must refuse, one with a missing input, and a normal one. A normal case never shows a wrong limit: $2,940.00 is under both $5,000.00 and $10,000.00, so it passes with either. That is why there are three.
 
 The owner of the procedure approves one version, after reading the steps and the results from both places. Nobody has approved your version yet, so it stays a draft.
 

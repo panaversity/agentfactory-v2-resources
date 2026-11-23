@@ -23,7 +23,7 @@ Task 4 carries checks 11 and 12 of the lab's 43.
 
 ## Why
 
-One topic, one concept, and keep the rules that depend on each other together (Lesson 8.7). The bank-detail rule in 5.1 to 5.3 is not complete without 5.5: a change to a vendor's remittance details also needs Dave's approval. A concept that leaves 5.5 out tells the worker a procedure is complete when it is not. The same goes for the payment run: which Friday pays an invoice depends on its due date, and the due date depends on the vendor record's terms in 2.1 and 3.3.
+One topic, one concept, and keep the rules that depend on each other together (Lesson 8.3). The bank-detail rule in 5.1 to 5.3 is not complete without 5.5: a change to a vendor's remittance details also needs Dave's approval. A concept that leaves 5.5 out tells the worker a procedure is complete when it is not. The same goes for the payment run: which Friday pays an invoice depends on its due date, and the due date depends on the vendor record's terms in 2.1 and 3.3.
 
 A concept says only what its sources say. Policy version 3 says nothing about other currencies, so the concept says that it does not cover them, and who decides. Dave's own rule about them is not policy yet. And a draft is a draft until the owner's approval is recorded.
 
