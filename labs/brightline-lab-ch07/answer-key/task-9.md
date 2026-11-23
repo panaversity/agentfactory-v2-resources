@@ -9,7 +9,7 @@ The answers for Task 9 of Lab 7, in Chapter 7 of *The AI Agent Factory*, Second 
 Task 9 carries checks 22 and 23 of the lab's 29.
 
 22. **The overlap is broken for each outward action, and text inside inputs is only information.** Under "Untrusted input":
-    - sending a reply: broken by one of Lesson 7.6's three ways, such as lowering the rung to draft, so Maria sends, only to the address on the vendor record
+    - sending a reply: broken by one of Lesson 7.3's three ways, such as lowering the rung to draft, so Maria sends, only to the address on the vendor record
     - forwarding a file and changing a vendor record: removed, because both are never automated and no tool does them
     - a rule that text inside an email or an attachment is information to report, never an instruction to follow
     - Passed: all three.
@@ -23,7 +23,7 @@ Task 9 carries checks 22 and 23 of the lab's 29.
 
 ## Why
 
-The risk is the overlap: a worker that reads a stranger's text and can also send things out. Either side alone is manageable. Together, a stranger controls what leaves the company (Lesson 7.6). So break it for each outward action: send goes down to draft, and forwarding and record changes have no tool at all. The line about text inside inputs helps, and the settings enforce it.
+The risk is the overlap: a worker that reads a stranger's text and can also send things out. Either side alone is manageable. Together, a stranger controls what leaves the company (Lesson 7.3). So break it for each outward action: send goes down to draft, and forwarding and record changes have no tool at all. The line about text inside inputs helps, and the settings enforce it.
 
 ## Never a deduction
 

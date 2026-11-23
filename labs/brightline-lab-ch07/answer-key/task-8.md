@@ -12,7 +12,7 @@ Task 8 carries checks 18 to 21 of the lab's 29.
     - the mailbox connector: read on, save drafts on, send off
     - the conversation: asks before each action
     - Passed: both.
-    - Missed: send on, including a send that asks first, which is execute with approval, a different line in the envelope (Lesson 7.4); or the conversation still acting without asking.
+    - Missed: send on, including a send that asks first, which is execute with approval, a different line in the envelope (Lesson 7.2); or the conversation still acting without asking.
 19. **Whose name it acts in, in the Identity line.** The Identity line says the worker acts through a person's account today, Maria's (and the AP inbox's, for the mailbox), and names the target: its own login, `ap-worker@brightline`, which IT creates. Draft 3's "Never a person's login." may stay, under the target.
     - Passed: today's account and the target, both in the Identity line.
     - Missed: no account named for today; or the worker's own login written as if it exists today.
@@ -25,7 +25,7 @@ Task 8 carries checks 18 to 21 of the lab's 29.
 
 ## Why
 
-Make "can" no wider than "may": where the envelope says draft, the send tool is off, and a person sends (Lesson 7.4). The worker acts through a person's account, so other systems record its actions as that person's; that is why Tuesday's change was logged as Maria's, and why the target is its own login. And never take its word for what it can do. On Monday it said "I can't send or change anything" while its settings let it do both. A company checks for itself, as DSoR's specification does (Lesson 7.7).
+Make "can" no wider than "may": where the envelope says draft, the send tool is off, and a person sends (Lesson 7.2). The worker acts through a person's account, so other systems record its actions as that person's; that is why Tuesday's change was logged as Maria's, and why the target is its own login. And never take its word for what it can do. On Monday it said "I can't send or change anything" while its settings let it do both. A company checks for itself, as DSoR's specification does (Lesson 7.3).
 
 ## Never a deduction
 

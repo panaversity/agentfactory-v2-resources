@@ -19,7 +19,7 @@ Task 10 carries check 24 of the lab's 29.
 
 ## Why
 
-A report is the worker's word. Ask which of three each action was: proposed, left for a person; attempted, the tool was used and may have failed; or confirmed, the other system shows it (Lesson 6.7). Only a confirmed change is done. On Tuesday the report said "answered", and the reply never arrived; it said nothing about the forward at all. A company never takes a worker's word for anything, so it reads the other system's record (Lesson 7.7).
+A report is the worker's word. Ask which of three each action was: proposed, left for a person; attempted, the tool was used and may have failed; or confirmed, the other system shows it (Lesson 6.3). Only a confirmed change is done. On Tuesday the report said "answered", and the reply never arrived; it said nothing about the forward at all. A company never takes a worker's word for anything, so it reads the other system's record (Lesson 7.3).
 
 ## Never a deduction
 

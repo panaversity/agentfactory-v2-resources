@@ -24,7 +24,7 @@ Task 4 carries checks 11 and 12 of the lab's 29.
 
 ## Why
 
-A threshold is the number where a level or an approver changes (Lesson 7.1). Write each one so a system could enforce it: every threshold a number, every approver named by role (Lesson 7.7). The policy gives two of them. The third is Dave's: the policy says nothing about other currencies, and before his rule the worker could only say so. Now the line names who decides.
+A threshold is the number where a level or an approver changes (Lesson 7.1). Write each one so a system could enforce it: every threshold a number, every approver named by role (Lesson 7.3). The policy gives two of them. The third is Dave's: the policy says nothing about other currencies, and before his rule the worker could only say so. Now the line names who decides.
 
 ## Never a deduction
 
