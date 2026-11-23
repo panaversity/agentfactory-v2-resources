@@ -10,11 +10,11 @@ Task 5 carries checks 9 to 11 of the lab's 34.
 
 9. **A CSV Maria can check row by row.** Your Format asks for:
    - a CSV, or a table with fixed columns, with one row for every open invoice, including those not paid in this run
-   - each row tied to the invoice list's row_id, or to another way to tell apart two rows with the same invoice number, such as the date received
-   - how to mark a value the worker cannot fill, such as a blank with its reason, or "MISSING" (Lesson 5.7)
+   - each row tied to its invoice in the invoice list, by its invoice number or by the list's row_id. A way to tell apart two rows with the same invoice number, such as the row_id or the date received, is a good extra, not required: Maria's ask does not raise it, and Task 7 brings her columns
+   - how to mark a value the worker cannot fill, such as a blank with its reason, or "MISSING" (Lesson 5.1)
    - no prose around the rows
    - Passed: all four. The policy section on each row comes with Maria's columns in Task 7.
-   - Missed: any one missing, such as the columns from Lesson 5.7 with no row_id; or one row only for each invoice in the run, because Task 11 grades all 15 open invoices, those not yet due included.
+   - Missed: any one missing; or one row only for each invoice in the run, because Task 11 grades all 15 open invoices, those not yet due included.
 10. **A memo for Dave, decisions first, a note to Maria, where each goes, and what could not be verified.** Your Format asks for:
     - a one-page memo for Dave that starts with the decisions he must make
     - a short note in the chat, a few lines, saying what was held and why. It is for Maria, and it need not name her.
@@ -35,7 +35,7 @@ Task 5 carries checks 9 to 11 of the lab's 34.
 
 ## Why
 
-Who or what reads the result next decides its format (Lesson 5.7). Maria checks row by row against the invoice list, and an invoice number alone may not tell two of its rows apart, so each row carries the list's own row_id. Dave reads one page and decides, so his decisions come first. Maria wants a few lines in the chat, read once, now. A quick question gets an inline answer for the same reason. Sam's list must open in Excel, so the brief names the file type, and Claude makes the file with a skill (Lesson 5.7). Each reader gets the shape it can use. A last line on what the worker could not verify tells Dave and Maria where to start checking (Lesson 5.7). A CSV with one row per open invoice can be checked by a machine. Two pages of prose can only be read. A number that must be exact is its own format. Ask for it to be worked out in code, and returned with the figures it used (Lesson 5.7).
+Who or what reads the result next decides its format (Lesson 5.1). Maria checks row by row against the invoice list, and each row must lead back to its invoice. An invoice number alone may not tell two of its rows apart, so the list's own row_id is a useful extra column. Dave reads one page and decides, so his decisions come first. Maria wants a few lines in the chat, read once, now. A quick question gets an inline answer for the same reason. Sam's list must open in Excel, so the brief names the file type, and Claude makes the file with a skill (Lesson 5.1). Each reader gets the shape it can use. A last line on what the worker could not verify tells Dave and Maria where to start checking (Lesson 5.1). A CSV with one row per open invoice can be checked by a machine. Two pages of prose can only be read. A number that must be exact is its own format. Ask for it to be worked out in code, and returned with the figures it used (Lesson 5.1).
 
 ## Never a deduction
 

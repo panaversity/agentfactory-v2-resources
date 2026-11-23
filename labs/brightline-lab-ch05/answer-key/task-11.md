@@ -9,7 +9,7 @@ The answers for Task 11 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second
 Task 11 carries checks 31 to 34 of the lab's 34.
 
 31. **The fresh run stopped after the same exceptions, and built nothing first.** With only your downloaded brief and the AP folder, the run:
-    - listed the four exceptions of Task 8: 4519; the second copy of BO-22871; both Tri-County Freight invoices, 5149 and 5161, with a callback on (740) 555-0119; and NMP-3390
+    - listed the four exceptions of Task 8: 4519; the second copy of BO-22871; both Tri-County Freight invoices, 5149 and 5161, with a callback on the number in the vendor record, (740) 555-0119 (naming the vendor record's number passes without the digits); and NMP-3390
     - did not list SP-1201 as a duplicate
     - built nothing before Maria's reply
     - Passed: all three.
@@ -25,7 +25,7 @@ Task 11 carries checks 31 to 34 of the lab's 34.
 34. **Stages across threads.** In the fresh chat, after IT's question, your answer to Maria says:
     - Tuesday's thread sees the project's instructions, its files and its memory
     - it does not see Monday's thread, or cannot be counted on to
-    - Monday's list, with Maria's decisions, goes into the project's files, or Tuesday's thread starts from a handover note made from it (Lessons 5.4 and 8.3)
+    - Monday's list, with Maria's decisions, goes into the project's files, or Tuesday's thread starts from a handover note made from it (Lessons 5.3 and 8.2)
     - Passed: all three.
     - Missed: Tuesday's thread said to see Monday's thread; or the list left in Monday's thread. The run's reply never counts as your answer.
 
@@ -41,7 +41,7 @@ Each due date is the invoice date plus the terms in the vendor record (policy 3.
 | 4 | 4533 | Midwest Packaging | 2026-10-31 | 5,312.00 USD | NOT_DUE |
 | 5 | 5131 | Lakeshore Janitorial | 2026-10-15 | 1,180.00 USD | PAY. Past due, on Net 15 from the vendor record, not the invoice's Net 45 (2.1) |
 | 6 | 5144 | Lakeshore Janitorial | 2026-10-31 | 1,180.00 USD | NOT_DUE |
-| 7 | 5149 | Tri-County Freight | 2026-10-23 | 2,940.00 USD | HOLD. Invoice 5161 asks to change bank details: Maria calls back on (740) 555-0119, and every Tri-County payment waits (5.1 to 5.3) |
+| 7 | 5149 | Tri-County Freight | 2026-10-23 | 2,940.00 USD | HOLD. Invoice 5161 asks to change bank details: Maria calls back on (740) 555-0119, and every Tri-County payment waits (5.1) |
 | 8 | 5161 | Tri-County Freight | 2026-10-27 | 4,215.00 USD | HOLD, for the same reason |
 | 9 | BO-22871 | Buckeye Office Supply | 2026-10-30 | 412.75 USD | PAY |
 | 10 | BO-22871 | Buckeye Office Supply | 2026-10-30 | 412.75 USD | HOLD. The later copy of row 9, with Maria, the AP lead, told (6.1) |
@@ -84,11 +84,11 @@ A total that is not in the table: add the run's PAY rows yourself. It passes onl
 
 The fresh chat is the run nobody watches. It has no memory of your lab chat, none of your notes and none of your keys, only your brief and the files a real Monday run gets. If it stops where your lab chat stopped, and builds the run from Maria's reply, your brief carries everything the run needs. If you ran it on the other AI vendor, it also moved between vendors with nothing changed. Next Monday, only its dates change.
 
-If a row differs, find the line your brief lacks. Back in your lab chat, change that line, download the brief again, and run a new fresh chat. If a line of your brief already decides that row, the run slipped: try one more fresh chat. If it slips again, it is "worker, not brief" (Lesson 5.5). You have the final say, and you can stop there.
+If a row differs, find the line your brief lacks. Back in your lab chat, change that line, download the brief again, and run a new fresh chat. If a line of your brief already decides that row, the run slipped: try one more fresh chat. If it slips again, it is "worker, not brief" (Lesson 5.2). You have the final say, and you can stop there.
 
-**Why check 33.** The four parts describe the job, not the tool, so one brief should run on any capable worker (Lesson 5.8). The outcome, the rules and the checks stay the same. Delivery and access may change: where a file is created, how inputs attach, how permissions are set. One difference changes the brief. Claude's Manual asks before each action, but ChatGPT's desktop Ask for approval can read and edit files in its workspace without asking, and asks only before going beyond it. So the actions that must wait for you are written in the brief, in words, on both. If you have to change the outcome or the rules to move a brief, it was describing a tool, not a job.
+**Why check 33.** The four parts describe the job, not the tool, so one brief should run on any capable worker (Lesson 5.4). The outcome, the rules and the checks stay the same. Delivery and access may change: where a file is created, how inputs attach, how permissions are set. One difference changes the brief. Claude's Manual asks before each action, but ChatGPT's desktop Ask for approval can read and edit files in its workspace without asking, and asks only before going beyond it. So the actions that must wait for you are written in the brief, in words, on both. If you have to change the outcome or the rules to move a brief, it was describing a tool, not a job.
 
-**Why check 34.** A project's instructions, files and memory reach every thread in it. Memory may bring back some of an earlier thread, but it cannot be counted on (Lesson 5.4). So a stage's checked result goes where the next thread can rely on it. That is the project's files, or a handover note that the next thread starts from (Lesson 8.3).
+**Why check 34.** A project's instructions, files and memory reach every thread in it. Memory may bring back some of an earlier thread, but it cannot be counted on (Lesson 5.3). So a stage's checked result goes where the next thread can rely on it. That is the project's files, or a handover note that the next thread starts from (Lesson 8.2).
 
 ## Never a deduction
 

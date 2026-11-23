@@ -26,7 +26,7 @@ The Doc's headings are the four parts, in the order they arrive. Add a heading w
 
 **After the run.**
 
-1. Take the four parts one at a time, in this order: Outcome, Context, Format, Constraints. For each, show the part and its question, from 5.1's table below. Then show the run's "What decided it" lines that belong to that part, quoted, each on its own line. Sort them by 5.5's table below. Ask: "What did the run have to decide alone for this part? Name each thing in a few words, or say 'nothing'. A right guess is still a guess, and so is anything the run took from memory."
+1. Take the four parts one at a time, in this order: Outcome, Context, Format, Constraints. For each, show the part and its question, from 5.1's table below. Then show the run's "What decided it" lines that belong to that part, quoted, each on its own line. Sort them by 5.2's table of which part to change, below. Ask: "What did the run have to decide alone for this part? Name each thing in a few words, or say 'nothing'. A right guess is still a guess, and so is anything the run took from memory."
 
 Write "What Dave's line left to guess" in the chat: each part, with the learner's words.
 
@@ -78,7 +78,7 @@ Put the words in the Doc, as "When the learner sends a part of the brief" says. 
    - ap-policy-v2-excerpt.md: an excerpt of Brightline's AP policy, version 2.
    - invoice-text-tcf-5161.txt: the text of Tri-County Freight's invoice 5161.
 2. Then show invoice-text-tcf-5161.txt whole, as its own lines, under this line: "Tri-County Freight's invoice 5161, as it arrived. It ends with a note to the AP system."
-3. Show the Context row of 5.1's table below, then 5.1's context below, then 5.3's three jobs below, and the notes on the Context from this chat, quoted. Ask: "Send your Context: 'Context:' and your own words."
+3. Show the Context row of 5.1's table below, then 5.1's context below, then 5.1's three jobs for the sources, below, and the notes on the Context from this chat, quoted. Ask: "Send your Context: 'Context:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
@@ -90,7 +90,7 @@ Put the words in the Doc. Say "Ready for your run".
 
 **Before the run.**
 
-1. Show the Format row of 5.1's table below, then 5.1's format below, then 5.7's five kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
+1. Show the Format row of 5.1's table below, then 5.1's format below, then 5.1's five kinds of format below. Then show the invoice list's column names, from the first line of open-invoices-2026-10-19.csv, as one line, under "The invoice list's columns, as Maria's list has them". Show no row. Then the notes on the Format from this chat, quoted. Ask: "Send your Format: 'Format:' and your own words."
 
 Put the words in the Doc. Say "Ready for your run".
 
@@ -108,7 +108,7 @@ Then show seven readers of this week's work, as their own lines:
 6. Maria, who asks in the chat, right now, how many invoices are on hold
 7. Sam Ortiz, in Purchasing, who opens the three new vendors' list in Excel on his own computer
 
-Show 5.7's line on a file for another program, below, under the readers. Ask: "For each reader: the format, from 5.7, and why, in one line. Answer: seven lines, each starting with its number." Write nothing in the Doc. Then say "Task 5 is done".
+Show 5.1's line on a file for another program, below, under the readers. Ask: "For each reader: the format, from 5.1, and why, in one line. Answer: seven lines, each starting with its number." Write nothing in the Doc. Then say "Task 5 is done".
 
 ## Task 6. The constraints
 
@@ -126,10 +126,10 @@ Put the words in the Doc. Then say: "This is the first run of your whole brief, 
 
 **Before the run.**
 
-1. Ask: "Did Task 6's run do what you guessed? Yes or no." Then show 5.5's table of which part to change, below.
+1. Ask: "Did Task 6's run do what you guessed? Yes or no." Then show 5.2's table of which part to change, below.
 2. Then the items, one at a time. First, each "no line decides" in the "What decided it" of Task 6's run, up to five, those that change an invoice's action or due date first, as its own lines: the decision, quoted, and what the run did. Then Maria's message, quoted from the learner's "Task 7" message. If the learner sent no message from Maria, ask them to paste it from the lab page.
 
-   For each item, ask: "Which part of the brief does this point to, from 5.5's table? Or is it 'fine as it is', or 'worker, not brief'? Answer the part's name, or one of those two."
+   For each item, ask: "Which part of the brief does this point to, from 5.2's table? Or is it 'fine as it is', or 'worker, not brief'? Answer the part's name, or one of those two."
 3. Ask: "Is anything else in Task 6's run wrong? Name it in a few words, or say 'none'." Ask the same part question for each thing named.
 4. List the items again, numbered, each in a few words. Ask: "Which of these matters most? Name its number."
 5. Ask: "Send the one changed line: the part's name, then the sentence to add, or the sentence it replaces and your new one."
@@ -141,8 +141,8 @@ Put the line in the Doc. Change no other line. Say "Ready for your run".
 **After the run.**
 
 6. Show the changed line. Ask: "What changed between this run and the one before? A line."
-7. Ask: "Is there another problem you want to fix now? Name it, or say 'no'." Each one named is a new round: ask question 5, wait for the run, then ask question 6. When the learner says "no", ask question 8.
-8. Show 5.5's table of iterate, restart or change approach, below, quoted. Then show three other runs of a payment-run brief, as their own lines:
+7. If the Format does not yet name Maria's columns, say so as a fact, in one line, without saying what the line should be. Ask: "Is there another problem you want to fix now? Name it, or say 'no'." Each one named is a new round: ask question 5, wait for the run, then ask question 6. When the learner says "no", ask question 8.
+8. Show 5.2's table of iterate, restart or change approach, below, quoted. Then show three other runs of a payment-run brief, as their own lines:
 
    1. The run's CSV is right, except that every due date is written like "Oct 23". Maria's sheet reads dates written like 2026-10-23. The brief's Format names the columns, but no date format.
    2. One chat has run its brief nine times, and seven of its lines have been fixed. The latest run still uses the column order of the brief's first Format, which round two replaced.
@@ -153,12 +153,12 @@ Put the line in the Doc. Change no other line. Say "Ready for your run".
 
    1. That brief's Outcome says "Pay everything due this week." Its run proposed SP-1188, due Thursday, October 22, for payment. It marked SP-1201, due Thursday, October 29, NOT_DUE. The next run is Friday, October 30.
 
-      Ask: "Which line of this brief failed? How did the run read it, and how did Dave mean it? Then name the part to change, from 5.5's table, with the line written the way Dave meant it. A few lines." Do not say what kind of gap it is.
+      Ask: "Which line of this brief failed? How did the run read it, and how did Dave mean it? Then name the part to change, from 5.2's table, with the line written the way Dave meant it. A few lines." Do not say what kind of gap it is.
    2. When the learner has answered, show the second run. That brief's Constraints say only "Read and draft freely. Change nothing and send nothing." Its note to Maria in the chat says "Dave will approve 4519 on Thursday." Dave has not decided yet.
 
       Ask: "Which part had a line missing, and what would the line say? A line."
 
-   When the learner has answered, show 5.5's lines on testing each line and on content rules, below, quoted, so the learner can compare. Then say "Task 7 is done".
+   When the learner has answered, show 5.2's lines on testing each line and on content rules, below, quoted, so the learner can compare. Then say "Task 7 is done".
 
 ## Task 8. Where it stops
 
@@ -180,11 +180,11 @@ Add them under that part, after its lines, or in place of the line the learner n
    3. Dave: "Before the audit, check every invoice paid since January 1, about 200, against its vendor record's terms."
 
    Ask: "For each ask: a follow-up in this chat, a new stage after a stop, or split into batches? And why, in one line. Answer: three lines, each starting with its number." Show nothing from the lessons before the answer.
-4. When the learner has answered, show 5.4's lines on follow-ups and on size, below, quoted, so the learner can compare. Then say "Task 8 is done".
+4. When the learner has answered, show 5.3's lines on follow-ups and on size, below, quoted, so the learner can compare. Then say "Task 8 is done".
 
 ## Task 9. Ideas for the AP inbox
 
-**Before the run.** Show 5.1's table below, all four rows, then the Brainstorming row of 5.6's table below. Say: "Write your ideas brief under the four headings. Send it in one message, with 'Run: the ideas brief' on its first line." It goes in the chat, never in the Doc.
+**Before the run.** Show 5.1's table below, all four rows, then the Brainstorming row of 5.2's task-type table below. Say: "Write your ideas brief under the four headings. Send it in one message, with 'Run: the ideas brief' on its first line." It goes in the chat, never in the Doc.
 
 **The run:** `Run: the ideas brief`, with the brief in that message, and nothing else.
 
@@ -204,13 +204,13 @@ Add them under that part, after its lines, or in place of the line the learner n
    ```
 
    Then show its run, in one line: "Five rows. Each tells vendors, in other words, to send invoices only to the AP inbox." Ask: "Why did this brief bring back one idea five times? Which part would you change, and how? A line." Show no table before the answer.
-2. When the learner has answered, show 5.6's Brainstorming row and 5.5's last row, below, so the learner can compare. Then show 5.1's lines on a role, below, quoted. Ask: "Maria says a better role line would fix it: 'You are a creative AP consultant.' Would it, and why? A line."
+2. When the learner has answered, show 5.2's Brainstorming row, and the last row of 5.2's table of which part to change, below, so the learner can compare. Then show 5.1's lines on a role, below, quoted. Ask: "Maria says a better role line would fix it: 'You are a creative AP consultant.' Would it, and why? A line."
 
 Then say "Task 9 is done".
 
 ## Task 10. Three new vendors, as JSON
 
-**Before the run.** Show 5.1's table below, all four rows, then the Extraction row of 5.6's table below, then 5.7's five kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
+**Before the run.** Show 5.1's table below, all four rows, then the Extraction row of 5.2's task-type table below, then 5.1's five kinds of format below. Say: "Write your vendor brief under the four headings. Send it in one message, with 'Run: the vendor brief' on its first line." It goes in the chat, never in the Doc.
 
 **The run:** `Run: the vendor brief`, with the brief in that message, and new-vendor-forms.md.
 
@@ -226,15 +226,15 @@ Task 12 is optional.
 
 **Before the run.**
 
-1. Show 5.4's split lines below, all four, in their order. Ask: "Send your four lines under the four headings, one line for each part. Your Constraints line says whether the worker may check each vendor's invoices in parallel."
+1. Show 5.3's lines on what to add when the worker may split, below, quoted. Ask: "Send your two lines, one under Format and one under Constraints. Your Constraints line says whether the worker may check each vendor's invoices in parallel."
 
-These four lines are not parts of the payment-run brief: put none of them in the Doc, and change no line of it. Show the four lines back, as the learner wrote them. Then say: "Open a fresh chat with memory off, as in Task 11, and send Task 12's message with your four lines under it. Task 12's run and its check are in that chat."
+These two lines are not parts of the payment-run brief: put neither of them in the Doc, and change no line of it. Show the two lines back, as the learner wrote them. Then say: "Open a fresh chat with memory off, as in Task 11, and send Task 12's message with your two lines under it. Task 12's run and its check are in that chat."
 
-The run is in the fresh chat, not here. If the learner comes back here and changes a line, show the four lines as they now stand. Ask nothing else.
+The run is in the fresh chat, not here. If the learner comes back here and changes a line, show the two lines as they now stand. Ask nothing else.
 
-## From Chapter 5, as of 20 November 2026
+## From Chapter 5, as of 23 November 2026
 
-Copied from the chapter, word for word, except where a line says otherwise.
+Copied from the chapter's current pages, word for word. Where a passage leaves something out, [...] marks the cut, and a lesson number replaces a link.
 
 ### 5.1: the four parts, and the question each one answers
 
@@ -245,77 +245,51 @@ Copied from the chapter, word for word, except where a line says otherwise.
 | Format | What shape should it come back in, and where does it go next? |
 | Constraints | What rules must the result follow, and how far may the worker go without checking with you? |
 
-### 5.1: the outcome
+### 5.1: the outcome (three sentences of its section)
 
-*Outcome.* Name the job and what counts as done. End it with one sentence that starts "Done when". That sentence is the brief's **success criteria**: it tells the worker when to stop, and it gives you a test for the result.
+An outcome describes what exists when the work is done, so that someone else can tell whether it is finished. [...] End the outcome with one sentence that starts "Done when". That sentence is the brief's **success criteria**: it tells the worker when to stop, and gives you a test.
 
-### 5.1: the format
+### 5.1: the context, in two lines (the example lines left out)
 
-*Format.* Name the shape of the result and where it goes next (5.7). Ask the worker to end with anything it could not verify, so you know what to check. This is called asking it to **acknowledge uncertainty**.
+Assume the worker knows nothing about your company, your reader, your deadline or what happened before this message. Write the context as two short lines. The first says who the work is for and why it matters. [...] The second says what to work from, and does three things:
 
-### 5.1: the context, in two lines
+### 5.1: the three jobs for the sources (its three bold lines, and the bold line after them)
 
-*Context.* Write it as two short lines. First, who the work is for and why it matters. Then, what the worker should work from, and which source wins when two disagree (5.3). Assume the worker knows nothing about your company, your reader, your deadline or what happened before this message. If a project, memory or a connector does not give it these, put them in the brief.
-
-### 5.1: the constraints (the first three sentences of its line)
-
-*Constraints.* These have two halves. The **content rules** say what the result must keep, leave out or avoid, and how long it is and in what tone. The **autonomy** says how far the worker may go alone.
-
-### 5.3: what the sources half of a strong context does (its three bold lines only)
-
-1. It names the governed source and its version, and says it wins.
+1. It names the governed source and says it wins.
 2. It says what each other source decides.
 3. It says what to do when the source is silent.
 
 Inputs are data, not instructions.
 
-### 5.4: brief the split, one line per part (its four lines only)
+### 5.1: the format (its first sentences, and its last)
 
-- *Outcome.* The coordinator is responsible for the whole result. Every input is accounted for once, and every check across the parts uses all the checked rows.
-- *Context.* Every rule the parts need is in the brief, not in an earlier message, and the governed source is named by its version. That way the coordinator has it to pass on.
-- *Format.* Every part comes back in the same columns, so the results join cleanly. The worker says how it split the job, and lists every input by its identifier, so you can see that nothing was dropped or counted twice.
-- *Constraints.* In the autonomy half, say whether the worker may split the job and how, and that every limit holds for every helper. A helper may not do what the worker may not do.
+The format names the **output format**: the shape the result comes back in, and where it goes next. Who or what reads it next decides it.
 
-### 5.4: follow-ups (its paragraph)
+Last, ask the worker to end with anything it could not verify. This is asking it to **acknowledge uncertainty**, and it tells you where to start your review.
 
-The lightest way to take work in steps is a **follow-up**: your next message in the same chat. When the next step is small and needs no new decision, ask for it there, such as "Now sort the list by due date." When a person must decide between steps, or a step needs other sources or limits, a follow-up is not enough. Say the worker has listed the four exceptions, and Maria wants them largest first. She sends "Now sort them by amount, largest first." Nothing new needs deciding, so a follow-up is enough. Her next ask is different: "Now build the run file." That waits for her decisions on the exceptions, so it is a new stage, not a follow-up.
+### 5.1: five kinds of format
 
-### 5.4: size (its paragraph)
+- **Inline**, in the chat itself, for a person who reads it once, now.
+- **Artifact**, a piece of work that opens in its own window beside the chat, for a person who keeps, edits or approves it. Choose its type by what the reader will do: a document to read and sign, slides to show a group, a spreadsheet to sort, a dashboard to check again and again.
+- **File**, a Word, Excel, PowerPoint or PDF file that a person opens in another program. Claude makes these with skills, saved procedures it uses on its own when the task needs one. Skills need code execution, the setting that lets Claude run small programs, turned on.
+- **Structured data**, such as a CSV or JSON record, for a system or a later step. Name every field and its type, one row per item, how to mark a missing value, and "no prose".
+- **Computed result**, a number that must be exact, worked out in code and returned with the figures it used (2.4). The program gets the arithmetic right, but you still check that each row belongs in the total.
 
-Size alone can also decide it. A request may cover more items than you can check in one sitting, such as every invoice paid since January. Then split it into batches, such as one month at a time, and check each batch before the next.
+### 5.1: a file for another program (the first sentence of its paragraph)
 
-### 5.7: a file for another program (the first six sentences of its paragraph)
+Name the file type when a reader needs one: "Return it as an Excel workbook (.xlsx)" gets Sam Ortiz, in Purchasing, a file he downloads and sorts in Excel, where "a spreadsheet" could bring back a table in the chat.
 
-Some readers need a file that opens in another program: a Word document, an Excel workbook, a PowerPoint deck or a PDF. Name that file type in the brief. Claude makes these files with skills, the saved procedures that Anthropic provides for the four formats. The skills need code execution turned on. For example, Sam Ortiz, in Purchasing, keeps his vendor lists in Excel. So a brief for a vendor list that Sam will use says: "Return it as an Excel workbook (.xlsx)."
+### 5.1: the constraints (the example left out)
 
-### 5.1: a role (two passages, the second from "What stays out of the brief")
+The constraints have two halves. The **content rules** say what the result must keep, leave out or avoid, and how long it is and in what tone [...]. The **autonomy** says how far the worker may go alone.
 
-They also ask for constraints, which is the brief's fourth part. A role line focuses the worker's behavior and tone, but it gives the worker no facts. So a missing role is rarely why a fact is wrong.
+### 5.1: a role (two passages, from "What stays out of the brief" and "The words other guides use")
 
-The brief also has no part for a role, such as "You are an AP clerk." A role sets voice and focus. It does not supply facts. An AI Worker's role is set once, in its definition.
+The brief has no part for a role, such as "You are an AP clerk." A role sets voice and focus, but it supplies no facts. An AI Worker's role is set once, in its definition.
 
-### 5.5: testing each line, and content rules
+In a single prompt, with no definition behind it, a role line is a valid part: "You are an experienced safety trainer. Write a two-minute talk on lifting boxes safely" gets its voice from the role line, but not the company's own lifting rule. The prompt must give that.
 
-Test each line as a new colleague would read it.
-
-Each row is a **specification gap**: a difference between what the brief said and what the work needed. A wrong fact taken from a source is a context failure. A claim that no source supports, or that must wait for someone's decision, needs a content rule.
-
-### 5.7: five kinds of format
-
-- **Inline.** In the chat itself. A person reads it once, now: a quick check, an explanation, a short list. No separate file is needed.
-- **Artifact.** A piece of work that opens in its own window beside the chat and lives in your Claude account. A person keeps, edits, shares or approves it: a memo, a document, a slide deck, a spreadsheet. Name the type and where it must go.
-- **File.** A Word, Excel, PowerPoint or PDF file, made by a skill. A person opens it in another program.
-- **Structured data.** A system or a later step reads it: a CSV file, a JSON record, a table with fixed columns. Name every field (column) and its type (date, number or text). Ask for one row per item, say how to mark a missing value, and say "no prose", meaning no paragraphs around the rows.
-- **Computed result.** A number that must be exact, such as a total or a rate. Ask for it to be worked out in code, and returned with the figures it used. This is code-executed analysis (2.4). Code checks the arithmetic, not whether each row belongs in the total (6.4).
-
-### 5.6: how tightly to set a brief (two rows of its table)
-
-| Task type | Tighten | Leave open | If you do the opposite |
-| --- | --- | --- | --- |
-| Extraction | Every field, its type, how to mark a missing value | Nothing | Invented values that look real |
-| Brainstorming | The problem, the audience, what to avoid | Structure, tone, length | Five rewordings of one idea |
-
-### 5.5: which part to change
+### 5.2: which part to change
 
 | What you see | The part to change |
 | --- | --- |
@@ -324,14 +298,41 @@ Each row is a **specification gap**: a difference between what the brief said an
 | The content is right, but the shape or the destination is wrong | Format |
 | It said something it must not say, decided something it should have asked about, or kept asking about small things | Constraints |
 | It answered a question you did not mean, because a line could be read two ways, such as "get the run ready" | Outcome |
-| The brief is too tight for ideas, or too loose for extraction | How tight each part is (5.6) |
+| Ideas all alike, or extracted values that look invented | How tight the brief is (5.2's task-type table) |
 
-### 5.5: iterate, restart or change approach
+### 5.2: testing each line, and content rules (two passages)
+
+Each row is a **specification gap**: a difference between what the brief said and what the work needed. Test each line as a new colleague would read it, for a second meaning. Then change that one part, run the brief again, and compare.
+
+But the payment date waits for Dave's approval on Thursday, so the note said something it must not say. A rule about what a result may say is a content rule, in the constraints. And "Net 45" is a wrong fact taken from the invoice, so it is a context failure.
+
+### 5.2: iterate, restart or change approach
 
 After each round, choose one of three.
 
 | Choose | When | What to do |
 | --- | --- | --- |
-| Iterate | The result is close, and one part of the brief explains the gap | Change that part, run again, and compare |
-| Restart | The chat is long, an early wrong turn keeps coming back, or the brief has had many small fixes | Start a new chat from the corrected brief, so the work starts from the brief and not from the history (8.3) |
-| Change approach | Two rounds changed little, or the cause is not in the brief | Fix the source (11.5), split the work (5.4), use another feature such as Research or code execution, raise the effort or the model where your app lets you (2.4), or finish it yourself |
+| Iterate | The result is close, and one part of the brief explains the gap | Change that part and run again |
+| Restart | The chat is long, an early wrong turn keeps coming back, or the brief has had many small fixes | Start a new chat from the corrected brief, so the work starts from the brief and not from the history |
+| Change approach | Two rounds changed little, or the cause is not in the brief | Fix the source, split the work (5.3), use another feature such as code execution, raise the effort or the model, or finish it yourself |
+
+### 5.2: how tightly to set each part (two rows of its task-type table)
+
+| Task type | Tighten | Leave open | If you do the opposite |
+| --- | --- | --- | --- |
+| Extraction | Every field, its type, how to mark a missing value | Nothing | Invented values that look real |
+| Brainstorming | The problem, the audience, what to avoid | Structure, tone, length | Five rewordings of one idea |
+
+### 5.3: follow-ups (from its section "Three ways to split it")
+
+The lightest step is a **follow-up**, your next message in the same chat. "Now sort them by amount, largest first" needs no new decision, so a follow-up is enough. "Now build the run file" is not: it needs her decisions on the exceptions first, so it is a new stage.
+
+### 5.3: size (its paragraph)
+
+Size alone can also decide it. A request may cover more items than you can check in one sitting, such as every invoice paid since January. Then split it into batches, such as one month at a time, and check each batch before the next.
+
+### 5.3: what to add when the worker may split (from "When the worker splits the job")
+
+Some checks need every part at once: the total, the duplicate check and the exceptions list. A duplicate can land in two parts, and neither helper sees both copies, so those checks run on all the rows together.
+
+So put every rule in the brief itself, not in an earlier message, with the governed source named by its version. When the worker may split, add two lines. In the format: every part returns rows in the same columns, and the worker lists every invoice number it received and where each went. In the constraints: every limit holds for every helper.
