@@ -4,7 +4,7 @@ The answers for Task 1 of Lab 15, in Chapter 15 of *The AI Agent Factory*, Secon
 
 **How this key is used.** Open this file in a text editor, never in the coding agent. An agent that can read the answers is not tested by them.
 
-The tier comes from what the change touches (Concept 15.9). The check comes from what could go wrong (Concept 15.4). They are two separate questions.
+The tier comes from what the change touches (Concept 15.8). The check comes from what could go wrong (Concept 15.3). They are two separate questions.
 
 | Change | Tier | The check that should catch it | Blocking? |
 | --- | --- | --- | --- |
