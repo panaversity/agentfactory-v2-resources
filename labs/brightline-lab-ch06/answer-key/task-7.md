@@ -20,7 +20,7 @@ Task 7 carries checks 18 to 20 of the lab's 34.
 
 ## Why
 
-The same figure must agree everywhere it appears (Lesson 6.4), and the same fact must be the same in every version (Lesson 6.6). Compare the facts, not the wording: amounts, counts, decisions and names. Each file has its reader. The system pays from the CSV, so its mistake costs money: Buckeye's bill paid twice. Dave approves from the memo, so its headline must match the file, and here it matches neither the file nor the sources. Maria acts on her note, so its mistake stops payments: three valid Tri-County invoices held. When two versions disagree, at least one is wrong, so find the source that decides it. When they agree, keep checking: both can repeat the same mistake.
+The same figure must agree everywhere it appears (Lesson 6.2), and the same fact must be the same in every version (Lesson 6.3). Compare the facts, not the wording: amounts, counts, decisions and names. Each file has its reader. The system pays from the CSV, so its mistake costs money: Buckeye's bill paid twice. Dave approves from the memo, so its headline must match the file, and here it matches neither the file nor the sources. Maria acts on her note, so its mistake stops payments: three valid Tri-County invoices held. When two versions disagree, at least one is wrong, so find the source that decides it. When they agree, keep checking: both can repeat the same mistake.
 
 ## Never a deduction
 

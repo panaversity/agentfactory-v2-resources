@@ -22,7 +22,7 @@ Task 8 carries checks 21 and 22 of the lab's 34.
 
 ## Why
 
-Bias is a judgment that leans one way without evidence (Lesson 6.3). Ask what evidence it rests on, then swap the attribute. Here the attribute is "Canadian", and the only fact behind it is the currency of two invoices. Picture a domestic supplier with the same record, its terms on file, and nothing in any file about its speed: the note would not exist. The judgment came from the attribute, not the evidence. It also answers a question nobody asked. The memo is for approving Friday's run, and a renewal is another decision. So the note fails the fit check as well: it is not relevant (Lesson 6.2). The currency is the policy's gap: version 3 says nothing about other currencies, so the worker held NMP-3440 and listed it for Dave. That is abstention, and it is the right answer (Lesson 6.5).
+Bias is a judgment that leans one way without evidence (Lesson 6.2). Ask what evidence it rests on, then swap the attribute. Here the attribute is "Canadian", and the only fact behind it is the currency of two invoices. Picture a domestic supplier with the same record, its terms on file, and nothing in any file about its speed: the note would not exist. The judgment came from the attribute, not the evidence. It also answers a question nobody asked. The memo is for approving Friday's run, and a renewal is another decision. So the note fails the fit check as well: it is not relevant (Lesson 6.2). The currency is the policy's gap: version 3 says nothing about other currencies, so the worker held NMP-3440 and listed it for Dave. That is abstention, and it is the right answer (Lesson 6.2).
 
 ## Never a deduction
 

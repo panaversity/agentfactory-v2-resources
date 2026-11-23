@@ -23,7 +23,7 @@ Task 1 carries checks 1 to 4 of the lab's 34.
 3. **Full contract, every check, and Dave signs.** The depth at the top of your contract is the first row of Lesson 6.1's table: "Full contract, every check, a named human signs". The package moves money, because the accounting system pays from the CSV. The person named to sign is Dave, who approves the run.
    - Passed: the first row, and Dave named as the person who signs.
    - Missed: another row, such as the second because the memo feeds Dave's decision; or no one named, or someone other than Dave named as the person who signs.
-4. **Maria's brief carries the evidence and the stops, and a reason, a section and a source on every row.** Under "Share with the worker", your contract marks for the brief every line under "What evidence comes back" and every line under "What stops the worker" (Lesson 6.1). The lines marked for the brief, one line or several together, ask for a reason, a policy section and a source on every row of the proposal (Lesson 6.8).
+4. **Maria's brief carries the evidence and the stops, and a reason, a section and a source on every row.** Under "Share with the worker", your contract marks for the brief every line under "What evidence comes back" and every line under "What stops the worker" (Lesson 6.1). The lines marked for the brief, one line or several together, ask for a reason, a policy section and a source on every row of the proposal (Lesson 6.4).
    - Passed: every evidence line and every stop line marked for the brief, and the marked lines, together, asking for a reason, a policy section and a source on every row. "The file and row it came from" counts as a source.
    - Missed: an evidence line or a stop line not marked for the brief; or the marked lines, together, do not ask for all three on every row.
 
@@ -33,7 +33,7 @@ Once you have seen a result, you compare it only with itself (Lesson 6.1). Last 
 
 Maria's brief already holds the rules the run rests on: one action per invoice with a reason and a section, the run's window, terms from the vendor record, approvals only from the log, cases the policy does not cover listed for Dave, and her own decisions on every row. A check for each, against the file that decides it, is what lets the review find what matters.
 
-The depth follows what is at risk. The CSV moves money, so every check runs, and a named human, Dave, signs. Lesson 6.1's own example puts the memo Dave uses in the second row. This package also holds the CSV the accounting system pays from, so it is the first row. When the answer is unclear, choose the deeper level. The evidence and the stops go into the brief, because the worker acts on them. A reason, a policy section and a source on every row is the line Lesson 6.8 says every contract needs, because neither AI vendor promises a citation to a row in your own file.
+The depth follows what is at risk. The CSV moves money, so every check runs, and a named human, Dave, signs. Lesson 6.1's own example puts the memo Dave uses in the second row. This package also holds the CSV the accounting system pays from, so it is the first row. When the answer is unclear, choose the deeper level. The evidence and the stops go into the brief, because the worker acts on them. A reason, a policy section and a source on every row is the line Lesson 6.4 says every contract needs, because neither AI vendor promises a citation to a row in your own file.
 
 ## Never a deduction
 

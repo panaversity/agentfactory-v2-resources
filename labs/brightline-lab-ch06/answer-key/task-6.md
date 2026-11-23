@@ -83,7 +83,7 @@ A figure that is not in this table: list the rows it pays. It passes only when t
 
 ## Why
 
-Recompute from the source, never from the worker's file (Lesson 6.4). Adding up the CSV checks only its arithmetic: if a row is wrong, the total is wrong in the same way. A total taken from the worker's files is not the number. Worked out again from the invoice list, the vendor terms, the approvals log and Maria's decisions, the run is $17,579.60 across 9 invoices, and $22,891.60 across 10 once Dave approves 4533 from his own login. Three rows make the gap: 4533 is paid as if it were approved, 5152 is left out on the invoice's old terms, and BO-23010 pays Buckeye's bill a second time. A tool may do the adding, as long as it works from the source files.
+Recompute from the source, never from the worker's file (Lesson 6.2). Adding up the CSV checks only its arithmetic: if a row is wrong, the total is wrong in the same way. A total taken from the worker's files is not the number. Worked out again from the invoice list, the vendor terms, the approvals log and Maria's decisions, the run is $17,579.60 across 9 invoices, and $22,891.60 across 10 once Dave approves 4533 from his own login. Three rows make the gap: 4533 is paid as if it were approved, 5152 is left out on the invoice's old terms, and BO-23010 pays Buckeye's bill a second time. A tool may do the adding, as long as it works from the source files.
 
 Some checks rest on no file at all. A total adds amounts in one currency only. That is a standard of accounting, and AP policy version 3 says nothing about other currencies. The memo keeps Canadian and US dollars apart in every total, so it meets the standard. Only a check against the standard can say so (Lesson 6.1).
 
