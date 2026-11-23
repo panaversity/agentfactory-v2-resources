@@ -32,11 +32,11 @@ Task 4 carries checks 11 to 17 of the lab's 52.
 
 ## Why
 
-"Wrong" is a reaction, not a fix (Lesson 11.5). The fix says what must be present, and which part of the brief controls it: here, one line in the email check's spec that flags a resend for Maria. The duplicate concept is Dave's, and it stays: your line only widens what Maria is asked to look at, and she still decides. Adding that one line, and testing it on Tuesday's own email, is "one change at a time" and "re-run on the same input".
+Lesson 11.3: "Wrong" is a reaction, not a fix. "A real fix says what must be present and which part of the brief controls it." Here, that is one line in the email check's spec that flags a resend for Maria. The duplicate concept is Dave's, and it stays: your line only widens what Maria is asked to look at, and she still decides. Adding that one line, and testing it on Tuesday's own email, is "one change at a time" and "re-run on the same input".
 
-A job that never starts cannot report on itself, so its success signal must come from outside it (Lesson 11.2). Comparing by message ID, not by count, catches one email checked twice and another missed. And the outside check needs allowance on a day when Maria's account has none: so it runs where the recurring work runs.
+A job that never starts cannot report on itself, so its success signal must come from outside it (Lesson 11.1). Comparing by message ID, not by count, catches one email checked twice and another missed. And the outside check needs allowance on a day when Maria's account has none: so it runs where the recurring work runs.
 
-Every run spends from a budget someone owns (Lesson 11.4). An account planned for recurring work, with an owner, a set check and no one-off work, keeps Monday's big task from stopping Tuesday's job. Moving the work to a personal account would make it shadow AI (Chapter 10).
+Every run spends from a budget someone owns (Lesson 11.2). An account planned for recurring work, with an owner, a set check and no one-off work, keeps Monday's big task from stopping Tuesday's job. Moving the work to a personal account would make it shadow AI (Chapter 10).
 
 ## Never a deduction
 

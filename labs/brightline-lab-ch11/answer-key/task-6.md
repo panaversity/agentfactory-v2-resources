@@ -20,9 +20,9 @@ Task 6 carries checks 21 to 23 of the lab's 52.
 
 ## Why
 
-A completed run is run evidence, not outcome evidence (Lesson 11.2). The note was tidy and on time, and it read last year's file. "It used to work" points to the inputs (Lesson 11.3), and the record's own step 2 shows which file it opened. The one-minute check opens that file and reads its date.
+A completed run is run evidence, not outcome evidence (Lesson 11.1). The note was tidy and on time, and it read last year's file. "It used to work" points to the inputs (Lesson 11.2), and the record's own step 2 shows which file it opened. The one-minute check opens that file and reads its date.
 
-In two of the four failures, a person also missed the problem (Lesson 11.3). A check agreed before the work, such as reading the note's first line against the register, would have found this one. So the fix includes the person's check, not only the job's.
+In two of the four failures, a person also missed the problem (Lesson 11.2). A check agreed before the work, such as reading the note's first line against the register, would have found this one. So the fix includes the person's check, not only the job's.
 
 ## Never a deduction
 

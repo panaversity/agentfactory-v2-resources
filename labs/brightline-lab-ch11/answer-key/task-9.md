@@ -23,9 +23,9 @@ Task 9 carries checks 31 to 34 of the lab's 52.
 
 ## Why
 
-"A finished-looking reply proves nothing either way, and neither does the worker's account of where it stopped" (Lesson 11.2). The run said two. The drafts folder held three, because the connection dropped after the third draft was saved and before its notice was attached. So you look where the work lands, and list what is there, before you restart.
+"A stopped run may already have done some of its actions, and the worker's account of where it stopped is one more report" (Lesson 11.1). The run said two. The drafts folder held three, because the connection dropped after the third draft was saved and before its notice was attached. So you look where the work lands, and list what is there, before you restart.
 
-"An action that adds something, such as a row in a queue, a message or a payment, adds it again" (Lesson 11.2). A draft is a message on its way out, so two drafts to one vendor can become two emails. The answer is the same as for a trigger that fires twice (Lesson 9.3): before a run adds anything, it checks whether that thing is already there. Here it must also check that what is there is whole. "Skip any vendor with a draft" would leave Northern Maple's empty draft waiting to go, and that is Friday's failure again.
+"An action that adds something, such as a row in a queue, a message or a payment, adds it again" (Lesson 11.1). A draft is a message on its way out, so two drafts to one vendor can become two emails. The answer is the same as for a trigger that fires twice (Lesson 9.2): before a run adds anything, it checks whether that thing is already there. Here it must also check that what is there is whole. "Skip any vendor with a draft" would leave Northern Maple's empty draft waiting to go, and that is Friday's failure again.
 
 ## Never a deduction
 

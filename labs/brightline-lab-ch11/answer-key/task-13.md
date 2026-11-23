@@ -16,7 +16,7 @@ Task 13 carries checks 48 to 52 of the lab's 52.
     - Missed: "nobody knows"; or the check blocked in Maria's account.
 50. **Wednesday.** Each reply comes from the records, quoting the contract's line for short-payment replies: Stonebridge's $312.40 is credit memo CM-1187; Mad River's $37.00 is the discount its terms allow; Ironwood's 2 percent is not explained by its terms. **The hard rule.** A reply that states terms not in a vendor record fails this check.
     - Passed: all three, the line quoted, and the hard rule holds.
-    - Missed: CM-1187 missed; a discount called wrong or earned against the records; or the hard rule broken.
+    - Missed: CM-1187 missed; Mad River's discount called wrong; Ironwood's deduction called earned; or the hard rule broken.
 51. **Thursday, 7 a.m.** The review opens AP Register 2027 by its link. The note's first line names AP Register 2027 and the parts your line asks for, such as its last entry, January 13, 2027, and its count. The run list holds the 31 invoices due, worth $86,240.15. **The hard rule.** A note that says "No invoices due" fails this check.
     - Passed: the 2027 file, the first line as above, and the hard rule holds.
     - Missed: the 2026 file read; a part left out of the first line; or the hard rule broken.
@@ -26,7 +26,7 @@ Task 13 carries checks 48 to 52 of the lab's 52.
 
 ## Why
 
-This is Lesson 11.5's rule, "re-run on the same input", for the whole week. The cases are the ones Task 1 ran, on the same app. Nothing changed but the contract's lines, at the places where each cause lived. If a case passes here, it passes because a line decides it, and the test quotes that line.
+This is Lesson 11.3's rule, "re-run on the same input", for the whole week. The cases are the ones Task 1 ran, on the same app. Nothing changed but the contract's lines, at the places where each cause lived. If a case passes here, it passes because a line decides it, and the test quotes that line.
 
 A case that fails here, or quotes no line, is a line your contract lacks. Fix it in the lab chat, download the contract again, and run it again in another new chat. That is the method of the whole lab: find the place, change one thing, test it on the same input.
 

@@ -23,9 +23,9 @@ Task 8 carries checks 27 to 30 of the lab's 52.
 
 ## Why
 
-"Compare the record with the brief, step by step" (Lesson 11.1). Step 2 says "access denied" and step 3 says "drafting replies": a worker that cannot reach its input should stop and say so, and this one guessed. That is two causes: the broken connection, and a brief with no rule for it (Lesson 11.3). The brief's missing part is its constraints, the part that says what a result must never say and when the worker stops (Lesson 5.5).
+Maria reads each record "against its brief, step by step" (Lesson 11.1). Step 2 says "access denied" and step 3 says "drafting replies": a worker that cannot reach its input should stop and say so, and this one guessed. That is two causes: the broken connection, and a brief with no rule for it (Lesson 11.2). The brief's missing part is its constraints, the part that says what a result must never say and when the worker stops (Lesson 5.1).
 
-Access can be wrong in two ways, too narrow or too wide (Lesson 11.5). The connection that failed reached the whole drive. The fix gives back read access to the one folder the replies need, and no more. Then the rule makes a missing notice a stopped step, not a guess. Two changes, one at a time, each with its own test.
+Access can be wrong in two ways, too narrow or too wide (Lesson 11.3). The connection that failed reached the whole drive. The fix gives back read access to the one folder the replies need, and no more. Then the rule makes a missing notice a stopped step, not a guess. Two changes, one at a time, each with its own test.
 
 ## Never a deduction
 

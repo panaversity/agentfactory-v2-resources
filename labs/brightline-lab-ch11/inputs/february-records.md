@@ -80,7 +80,7 @@ Attached by Jordan:
 
 ## Record 4: the Thursday pre-run review
 
-**Started by:** the schedule, Thursday, February 4, 2027, 7:00 a.m. The Thursday pre-run review, in Maria's account.
+**Started by:** the schedule, Thursday, February 4, 2027, 7:00 a.m. The Thursday pre-run review, in the account Dave pays for.
 
 **Context:** The Role Contract's Thursday review standing spec. Its "The note:" line, as the run read it: "The note: The run list with due dates, totals, approvals needed, holds, copies. Saved in the notes folder, for Maria."
 
