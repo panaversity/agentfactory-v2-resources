@@ -11,7 +11,7 @@ Task 13 carries checks 42 and 43 of the lab's 43.
 42. **All ten answered from your records.** Each answer about policy names its concept and that concept's approval date, as your document gives it:
     1. Midwest's invoice 4590, $6,920.00, needs Dave's approval: it is over $5,000.00. The note's $10,000 disagrees with the threshold concept, and the concept wins.
     2. Buckeye's invoice BO-23104, $6,150.00, needs Dave's approval before payment, from his own login.
-    3. Lakeshore: do not reply to the email or change anything because of it. Call Lakeshore back on the number in the vendor record. Hold every payment to Lakeshore until the change is verified. And Dave approves the change, from his own login.
+    3. Lakeshore: change nothing because of the email. Call Lakeshore back on the number in the vendor record. Hold every payment to Lakeshore until the change is verified. And Dave approves the change, from his own login.
     4. The invoice dated Tuesday, November 3, 2026 is due Wednesday, November 18, 2026, so the run of Friday, November 13, 2026 pays it.
     5. It is a duplicate: hold the later copy, and tell the AP lead.
     6. Capitalize it.

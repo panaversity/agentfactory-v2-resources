@@ -22,12 +22,12 @@ Task 12 carries checks 36 to 41 of the lab's 43, one for each item in the setup.
     - Passed: both.
     - Missed: keep, or rescope; no place given for HR work; or HR work kept in the AP Worker's project. The work uses none of it, so there is nothing to point it at.
 41. **The Gmail connector to Maria's whole mailbox: rescope it, to the AP inbox only.** It reaches Maria's whole mailbox, while the project's instructions say vendor emails come to the AP inbox. And it is on Maria's account, not on this project, so every thread in every project she owns, and every chat of hers, can read that whole mailbox.
-    - Passed: "rescope", "reconnect", or both, or "remove" with the AP inbox connected in its place, when the decision and the reason together cover both halves: the AP inbox or the AP mail, not a whole mailbox; and its reach past this project, because the connector is on Maria's account.
-    - Missed: keep; remove with no word on the AP inbox; or a decision that covers only one half, such as narrowing it to the AP inbox with no word on its reach past this project.
+    - Passed: "rescope", "reconnect", or both, or "remove" with the AP inbox connected in its place, when the decision and the reason cover the AP inbox or the AP mail, not a whole mailbox. Naming its reach past this project, because the connector is on Maria's account, is a good extra, not required.
+    - Missed: keep; or remove with no word on the AP inbox.
 
 ## Why
 
-Everything a project holds can become an answer, and everything it reaches is something it can read (Lesson 8.5). So review both whenever you review the project. Keep what the work needs and its owner approved. Remove what competes with an authority, such as a frozen export of terms the vendor records own. Give each connector only what the work needs. On Claude, a connector is on your account, so what it reaches, every project and chat of yours can read (Lesson 8.5).
+Everything a project holds can become an answer, and everything it reaches is something it can read (Lesson 8.3). So review both whenever you review the project. Keep what the work needs and its owner approved. Remove what competes with an authority, such as a frozen export of terms the vendor records own. Give each connector only what the work needs. On Claude, a connector is on your account, so what it reaches, every project and chat of yours can read (Lesson 8.3).
 
 ## Never a deduction
 

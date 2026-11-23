@@ -25,7 +25,7 @@ Task 2 carries checks 4 and 5 of the lab's 43.
 
 ## Why
 
-A long chat is condensed when it grows, and a rule the summary drops stays dropped (Lesson 8.3). Choose the move by what you need to keep. A finished task needs a restart. Work that goes on needs a handover note, which is the worker's output, so you read it and correct it. A way of working, such as replies in plain English, can rely on memory, which you read now and then. And something that must last goes out of the chat, to its own place. A standing rule's place is the project's instructions, which load with every conversation. The payment-date line in chat D is one: he typed it three times, and every chat must follow it. Maria's line named one vendor. The rule she meant covers every currency other than US dollars, as Dave's contract line does. It is still Dave's rule, not policy: no approved policy covers other currencies yet.
+A long chat is condensed when it grows, and a rule the summary drops stays dropped (Lesson 8.2). Choose the move by what you need to keep. A finished task needs a restart. Work that goes on needs a handover note, which is the worker's output, so you read it and correct it. A way of working, such as replies in plain English, can rely on memory, which you read now and then. And something that must last goes out of the chat, to its own place. A standing rule's place is the project's instructions, which load with every conversation. The payment-date line in chat D is one: he typed it three times, and every chat must follow it. Maria's line named one vendor. The rule she meant covers every currency other than US dollars, as Dave's contract line does. It is still Dave's rule, not policy: no approved policy covers other currencies yet.
 
 ## Never a deduction
 

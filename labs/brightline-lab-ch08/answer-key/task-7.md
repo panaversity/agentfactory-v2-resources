@@ -27,7 +27,7 @@ Task 7 carries checks 20 to 22 of the lab's 43.
 
 ## Why
 
-The history of one matter goes in its case file, not in a chat or a status list (Lesson 8.4). Each line carries its origin, and the record sets the origin, never the one who sends the claim. The run records come from the accounting system, which is the authority on what Brightline paid, so they are observed. Maria's call is confirmed, because she made the callback herself. Tri-County's email is reported: it may mean a bank delay on their side, and it never justifies paying again.
+The history of one matter goes in its case file, not in a chat or a status list (Lesson 8.2). Each line carries its origin, and the record sets the origin, never the one who sends the claim. The run records come from the accounting system, which is the authority on what Brightline paid, so they are observed. Maria's call is confirmed, because she made the callback herself. Tri-County's email is reported: it may mean a bank delay on their side, and it never justifies paying again.
 
 A case file's latest known is the latest thing the authority said, not a check made today. So the answer gives it with its date and source, and someone checks the accounting system before acting.
 

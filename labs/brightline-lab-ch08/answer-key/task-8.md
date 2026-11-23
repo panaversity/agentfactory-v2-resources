@@ -25,7 +25,7 @@ Task 8 carries checks 23 to 25 of the lab's 43.
 
 ## Why
 
-A ready-made skill is someone else's procedure. Read every step before anyone relies on it, and ask what it can reach, send or change (Lesson 8.9). This one carries nothing but steps, so it can do no harm by itself. The harm is in two of its steps, which carry another company's rules: a $10,000 limit, and a bank update first, which breaks policy 5.1.
+A ready-made skill is someone else's procedure. Read every step before anyone relies on it, and ask what it can reach, send or change (Lesson 8.5). This one carries nothing but steps, so it can do no harm by itself. The harm is in two of its steps, which carry another company's rules: a $10,000 limit, and a bank update first, which breaks policy 5.1.
 
 The test with the concepts passed, because the concepts sat beside the skill and decided both questions. The test alone shows what the steps decide on their own, which is what happens in a chat without the concepts. Good knowledge in a project can hide bad steps. That is why you test a skill in two places.
 

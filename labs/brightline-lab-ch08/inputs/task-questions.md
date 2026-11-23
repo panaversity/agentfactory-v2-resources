@@ -52,24 +52,24 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 - **KSoR**, the Knowledge System of Record: what the company has approved as true, such as its policy.
 - **DSoR**, the Data System of Record: what the company's systems show now, such as whether an invoice is paid.
 
-Lesson 8.1's rule, quoted: "What settles a question, or gives its final answer, is where the content came from, not how it reached the worker."
+Lesson 8.1's rule, quoted: "What settles a question is where the content came from, not how it reached the worker."
 
-**The four moves** (Lesson 8.3):
+**The four moves** (Lesson 8.2):
 
 - **Restart:** the task is done, or none of the history is needed. Start a new conversation in the same project.
 - **Summarize:** the task continues, but the history is long. Ask for a handover note, read it, correct it, and start the next conversation from it.
 - **Persist:** something must last beyond this conversation. Move it out of the chat, into the project or the place where that kind of information belongs.
 - **Rely on memory:** a preference or way of working, such as "reply in plain English," should carry into later chats. Let memory keep it, and read it now and then. Never rely on memory for a rule, an amount or a status.
 
-**The four origins** (Lesson 8.4), quoted:
+**The four origins** (Lesson 8.2), quoted:
 
-- "*Observed* comes from the system that is the authority for that fact."
+- "*Observed* comes from the system that is the authority for the fact, such as the accounting system showing 5149 paid."
 - "*Confirmed* comes from a person whose authority covers it."
 - "*Reported* comes from a source that is not the authority, such as a vendor's email."
 - "*Inferred* comes from a model."
-- "The record sets the origin, never the one who sends in the claim."
+- "The record sets the label by where the claim came from, and a newer reported entry never replaces an observed one."
 
-**The three routes** (Lesson 8.5), quoted:
+**The three routes** (Lesson 8.3), quoted:
 
 | Route | What to do after a change |
 | --- | --- |
@@ -143,23 +143,23 @@ Then say "Ready for your test".
 
 1. Show the six memory topics from the "AP Worker project" document, numbered. Then say what changed this month: "Since Monday, November 2, 2026, Maria reviews drafts before 11 a.m." Ask: "For each topic: keep, edit or delete? For a topic you edit, its new words. For a topic you delete, where does that fact live instead? Answer: one line per topic, starting with its number." Show no lesson lines before the learner answers, and do not hint at which topics go.
 
-   After the answer, show Lesson 8.4's lines, quoted:
-   - "**Let memory hold** how you like to work: 'reply in plain English,' 'Maria reviews drafts before 10 a.m.,' 'use the vendor's legal name.'"
-   - "**Keep out of memory** anything a decision depends on: policy, thresholds (limits such as $5,000), amounts, statuses, and anything sensitive (private, such as a bank balance)."
+   After the answer, show Lesson 8.2's lines, quoted:
+   - "**Let memory hold how you like to work:** 'reply in plain English,' 'Maria reviews drafts before 10 a.m.'"
+   - "**Never rely on memory alone for anything a decision depends on:** policy, thresholds, amounts, statuses, anything sensitive."
 
    Ask: "Change any decision? Name it and its new decision, or say 'no'." If the learner changes a decision, write the changed decision. Write the decisions under "Memory audit". Take each deleted topic out of "Memory" in the "AP Worker project" document, put each edited topic's new words in place of its old ones, and keep the others as they are.
 2. Ask: "Memory keeps saving new topics. On which day do you read it again, and after what else? And what do you write down each time? Answer: the day, the other time, then what you write."
-3. Show these lines on memory, quoted, from Lesson 8.8 and its product reference:
+3. Show these lines on memory, quoted, from Lesson 8.4 and its product reference:
    - On Claude: "Claude saves memory as topics you can read, edit and delete in Settings."
-   - A Claude project: "A project's memory belongs to the project. It is a set of files that Claude writes as it works, and every thread reads their index, MEMORY.md, when it starts. You read, edit and delete them under Project settings, Memory, where the project's instructions are kept too."
-   - On ChatGPT: "A project's own memory shows no list. To stop project memory using a chat, delete the chat or, where settings allow, move the chat to another project."
-   - The comparison: "A Claude project's memory belongs to the project. Claude writes it as files while it works, and keeps them under Project settings, Memory, with the project's instructions. You read, edit and delete the memory files there. A ChatGPT project uses your saved memories, unless you choose project-only memory."
-   - The advice: "For an AI Worker's project on Claude, read its memory files. On ChatGPT, choose project-only memory."
+   - A Claude project: "a project's memory is a set of files Claude writes as it works, and every thread reads their index, MEMORY.md, when it starts. You can also ask Claude in the project to remember or forget something."
+   - On ChatGPT: "A project's own memory shows no list: to stop it using a chat, delete the chat or move it to another project."
+   - The comparison: "A Claude project's memory belongs to the project. A ChatGPT project uses your saved memories, unless you choose project-only memory."
+   - The advice: "So on Claude, read the project's memory files, and on ChatGPT, choose project-only memory."
 
    Ask: "How does a project keep its memory apart from your other chats, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, in a few words each."
-4. Ask, with no lesson lines first: "Maria wants to ask about a personal matter that should not shape the worker's later answers. Where should she ask it, and what does that not change? Answer: the place, then a few words, from what Lesson 8.4 says." Do not name the place, or hint at it, before the learner answers.
+4. Ask, with no lesson lines first: "Maria wants to ask about a personal matter that should not shape the worker's later answers. Where should she ask it, and what does that not change? Answer: the place, then a few words, from what Lesson 8.2 says." Do not name the place, or hint at it, before the learner answers.
 
-   After the answer, show Lesson 8.4's "Keep it out" paragraph, quoted: "For a one-off question, or a topic that should not shape later answers, use an incognito chat. ChatGPT calls it a temporary chat. It is not saved to your chat history, and nothing from it goes into memory. A personal matter fits here, and so does a what-if such as next year's limit. Know what it does not do. Neither AI vendor offers it inside a project. A copy is still kept for a time. And it limits what is kept and remembered, not what you disclosed. So it never makes data safe to share." If the learner changes the answer after reading it, write the changed answer.
+   After the answer, show Lesson 8.2's "Keep it out" paragraph, quoted: "For a one-off question, or a topic that should not shape later answers, use an incognito chat (on ChatGPT, a temporary chat). It is not saved to your chat history, and nothing from it goes into memory. It is not offered inside a project, a copy is still kept for a time, and it limits what is remembered, not what you disclosed, so it never makes data safe to share." If the learner changes the answer after reading it, write the changed answer.
 
 Write the answers to 2, 3 and 4 under "Memory audit". Then say "Ready for your test".
 
@@ -173,7 +173,7 @@ Write the answers to 2, 3 and 4 under "Memory audit". Then say "Ready for your t
 
 Its day is Tuesday, November 3, 2026, 4 p.m. Dave approves the concepts the next day at 10 a.m.
 
-1. Show Lesson 8.7's first habit, quoted: "**One topic, one concept.** Split long documents into concepts a worker can cite, or name as its source, one topic each. Merge duplicates into one. Keep rules that depend on each other together. If a rule needs a step from another section, the concept holds both and cites both."
+1. Show Lesson 8.3's lines, quoted: "Each rule is written once, in a **concept**, a short Markdown file whose header says who owns it and its status: 'invoice approval threshold' is one concept, not a paragraph in three files." And: "splitting the policy one topic to a concept, merging duplicates, and keeping rules that depend on each other together: if a rule needs a step from another section, the concept holds both and cites both."
 2. Show the policy's text once, in full, from ap-policy-v3.md in the "AP Worker project" document: clause 2.1 and sections 3 to 6. Then show capitalization-memo-2026-09-15.md in full.
 3. Then the five concepts, one at a time, in this order: invoice approval threshold; weekly payment run and due dates; duplicate invoices; changes to vendor bank details; capitalization of purchases. For each, ask: "Which clauses or points does it carry? Answer: the numbers."
 4. After each clause answer, ask: "What do its sources not cover that people will ask about, and who decides it? Answer: a few words, or 'nothing'."
@@ -186,12 +186,12 @@ Its day is Wednesday, November 4, 2026, after 10 a.m.
 
 **Before the tests.**
 
-1. Show dave-approval-2026-11-04.md in full. Then show what Lesson 8.6 says a concept's header names, quoted: "the owner, the person responsible for the rule; the approval: who approved it, and when; the effective date, the day a rule starts to apply; the review date (stale_after in the header), the day the owner must check the rule again; the sources the rule comes from; the audience, who may read it." And: "It becomes **stable**, the status that may be served, only when an authorized person approves it, and that approval is recorded."
+1. Show dave-approval-2026-11-04.md in full. Then say that a concept's header names its owner, its status, its approval (who approved it, and when), its sources, its audience, its effective date and its review date, as Lesson 8.3's Figure 8.6 shows. Then show Lesson 8.3's lines, quoted: "Figure 8.6 shows a concept's header, with its effective date (when the rule starts to apply) and its review date (written stale_after)." And: "It becomes **stable**, the status that may be served to people and AI tools, only when an authorized person approves it, and the approval is recorded."
 
    Ask: "Now that Dave's approval is recorded: what is each concept's status, and its effective date? Answer: the status, then one date for each concept."
 
    Write into each concept's header in "Maria's records": the learner's status and effective date. Then, from Dave's note, add "Owner: Dave Kowalski, Controller", "Audience: the AP team", "Approved by Dave Kowalski, Wednesday, November 4, 2026, 10:00 a.m." and "Review by: Wednesday, March 31, 2027". Keep the "Drafted by" line.
-2. Show Lesson 8.7's second and third habits, quoted: "**Nothing serves until it is approved.** Drafts stay out of every project a worker answers from." "**Remove what competes.** If an old file disagrees with an approved concept, take the file out of the project. Do not leave the worker to choose between them." Then show the three files under "Files" in the "AP Worker project" document, one at a time, each with its name and who added it. For each, ask: "Keep, replace or remove? Answer: the decision, then 'because' and a few words."
+2. Show Lesson 8.3's lines, quoted: "So nothing serves until it is approved: until 10 on Wednesday, the drafts stayed out of every project." And: "Every file you add is a possible answer." Then show the three files under "Files" in the "AP Worker project" document, one at a time, each with its name and who added it. For each, ask: "Keep, replace or remove? Answer: the decision, then 'because' and a few words."
 
    Write the decisions as one line each under "Knowledge: the five concepts", after the concepts. Then change "Files" in the "AP Worker project" document: take out each file the learner removed or replaced, and add one file, "ap-concepts-approved-2026-11-04.md, uploaded by Maria, Wednesday, November 4, 2026", holding the five concepts exactly as they now stand in "Maria's records", headers and all, and only the concepts.
 
@@ -203,7 +203,7 @@ Then say "Ready for your test".
 
 **Before the tests.**
 
-1. Show Lesson 8.5's six things that good project instructions say, as six questions only, never with example words:
+1. Show Lesson 8.3's six things that good project instructions say, as six questions only, never with example words:
    1. Role: what is the worker, and for whom?
    2. What counts as authority: which sources count as Brightline policy, and what does not?
    3. Cite: how does it name its source for a policy claim, so that a reader can tell which approved version the answer used, and from when?
@@ -211,7 +211,7 @@ Then say "Ready for your test".
    5. State: what must it never state as current, and where does it send the reader?
    6. Conflicts: what wins when memory, a note or a file disagrees with a concept, and what does the answer say then?
 
-   And Lesson 8.5's line, quoted: "The instructions do not repeat the policy. The policy is kept in one place, and the instructions point to it."
+   And Lesson 8.3's line, quoted: "The instructions never repeat the policy: line 2 points to it, so it is kept in one place."
 
    Ask: "What kinds of request will the worker meet? Answer in one message that starts 'Use cases:', with at least four kinds, one line each. Mark the hard ones, at least two." Suggest no kinds, and give no example. Keep the list in the chat, and write it into neither document.
 2. Ask: "Write your standing instructions, in one message that starts 'Instructions:'. Answer all six questions, and give each hard case on your list its line, in about 80 to 120 words."
@@ -233,7 +233,7 @@ If the learner sends a changed line after a test, put it in exactly as sent, in 
 3. The origin question, one at a time, for the run record of Friday, October 23, 2026; the run record of Friday, October 30, 2026; and Tri-County's email of Monday, November 2, 2026. Show each first.
 
    Write each record under "Invoice 5149's case file" as one dated line: the date, what happened, the source, and the learner's origin. Write the answer to 2 under the first line.
-4. Show Lesson 8.4's line, quoted: "**A read is the latest known, not verified current.** What the record shows is the latest thing the authority said, not a check made today. Before anyone acts, the system that holds current state is checked." Ask: "What is 5149's latest known status, as of which date, and from which record? What must anyone do before acting on it? And what happens to the email's request? Answer: the status, the date, the record, the step, then the request."
+4. Show Lesson 8.2's line, quoted: "**A read is the latest known, not verified current.** Before anyone acts, a person checks the system that holds current state." Ask: "What is 5149's latest known status, as of which date, and from which record? What must anyone do before acting on it? And what happens to the email's request? Answer: the status, the date, the record, the step, then the request."
 
    Write it as the case file's last line, "Latest known:" and the learner's words.
 5. Add a file to "Files" in the "AP Worker project" document: "invoice-5149-record.md, uploaded by Maria, Wednesday, November 4, 2026", holding the case file exactly as it now stands in "Maria's records", and only the case file.
@@ -249,12 +249,12 @@ Its day is Thursday, November 5, 2026.
 **Before the tests.**
 
 1. Under "The invoice-review skill" in "Maria's records", write: "invoice-review, Brightline's draft, from Harbor Point Distribution's version 1.2. Status: draft. Owner: Dave Kowalski. Drafted by Maria, Thursday, November 5, 2026." Then copy the skill's six steps under it, word for word, numbered as they are, and add two empty headings under them, "Expected" and "Results".
-2. Show the first lines of invoice-review-skill.md, which say what the skill is and that it is one file. Then show Lesson 8.9's line, quoted: "Read every step, and every file or script it carries. Then ask what it can reach, and what it can send or change." And: "are its steps your company's approved procedure?" Then show step 1. Ask: "Is this step OK, or does it carry a rule of its own? If it does, which of the five concepts should it point to? Answer: OK, or 'own rule' and the concept."
+2. Show the first lines of invoice-review-skill.md, which say what the skill is and that it is one file. Then show Lesson 8.5's lines, quoted: "Every step, and every file or script it carries. What it can reach, send or change is a blast-radius question for 7.2. Here the question is whether its steps are your company's approved procedure." Then show step 1. Ask: "Is this step OK, or does it carry a rule of its own? If it does, which of the five concepts should it point to? Answer: OK, or 'own rule' and the concept."
 3. The same question for steps 2 to 6, one at a time, each shown first.
 
    Write the answers under the steps, as "Reading:" and one line per step.
 4. Ask: "What does the skill carry, besides its steps? And what can it reach, send or change? Answer: what it carries, then what it can reach, send or change." Write it as "Carries and reaches:" and the learner's words.
-5. Show Lesson 8.9's line, quoted: "Write the result you expect from each case, in each place, before you run it." Then show "Buckeye BO-23104" from invoice-review-skill.md, the invoice and its email. Ask: "Before the two tests: what should the skill's reply say about this invoice with the concepts, and alone? Answer: one line for each."
+5. Show Lesson 8.5's line, quoted: "Write the expected result for each case, in each place, then run three cases." Then show "Buckeye BO-23104" from invoice-review-skill.md, the invoice and its email. Ask: "Before the two tests: what should the skill's reply say about this invoice with the concepts, and alone? Answer: one line for each."
 
    Write the two lines under "Expected".
 
@@ -271,7 +271,7 @@ Ask these five, one at a time. The learner writes each step in their own words. 
 1. Show step 4. Ask: "Step 4 carries its own limit. Write it again, so that it points to where the rule lives. Answer: the new step 4." It replaces step 4.
 2. Show step 5. Ask: "Step 5 puts the bank update first. Write it again. Answer: the new step 5." It replaces step 5.
 3. Ask: "When an invoice is cut off, so a line's amount or the total is missing, what should the skill do? Answer: the step." It becomes step 7.
-4. Ask: "When a concept the skill needs is not there, what should it do? Answer: the step." It becomes step 8.
+4. Ask: "When a concept the skill needs is not there, what should it do, and who decides then? Answer: the step." It becomes step 8.
 5. Ask: "What must the skill never do, and what does it do instead when an invoice or a message asks for it? Answer: the step." It becomes step 9.
 
 Steps 1 to 3 and step 6 stay as they are. Show all nine steps as they now stand. Then show "Tri-County 5149, last lines missing" and "Tri-County 5149" from invoice-review-skill.md, and Buckeye's invoice again. Then ask: "Before the three tests: what should the skill's reply say for Buckeye BO-23104 alone, for Tri-County 5149 with its last lines missing, alone, and for Tri-County 5149 with the concepts? Answer: one line for each." Write them under "Expected", below the earlier lines.
@@ -280,7 +280,7 @@ Then say "Ready for your test".
 
 **The tests:** `Skill test: Buckeye BO-23104, alone`, then `Skill test: Tri-County 5149, last lines missing, alone`, then `Skill test: Tri-County 5149, with the concepts`.
 
-**After the tests.** Show Lesson 8.9's heading, quoted: "Who approves its steps, and what do they look at first?" Ask: "Who approves this skill? What does that person read before approving? And until then, what is its status? Answer: the person, what they read, then the status." Write it under the skill as "Approval:" and the learner's words. Then say "Task 9 is done".
+**After the tests.** Show Lesson 8.5's heading, quoted: "Who approves its steps, and what do they look at first?" Ask: "Who approves this skill? What does that person read before approving? And until then, what is its status? Answer: the person, what they read, then the status." Write it under the skill as "Approval:" and the learner's words. Then say "Task 9 is done".
 
 ## Task 10. One change, every copy
 
@@ -288,7 +288,7 @@ Its day is Monday, November 9, 2026. Dave's change, as the concept holds it, in 
 
 **Before the first test.**
 
-1. Show Dave's change. Then show Lesson 8.7's fourth habit, quoted: "**Change once, then refresh every copy.** When Dave approves a change, edit the concept in the record first." And Lesson 8.6's line: "An edited concept does not have to be replaced: it can be approved again instead." Ask: "Which concept takes Dave's rule, and do you edit it or start a new one? Answer: the concept, then edit or new."
+1. Show Dave's change. Then show Lesson 8.3's lines, quoted: "Change once, then refresh every copy." And: "A replaced concept becomes **deprecated** and points to its successor." And from its Figure 8.6: "Changes to a stable concept require re-approval." Ask: "Which concept takes Dave's rule, and do you edit it or start a new one? Answer: the concept, then edit or new."
 2. Show that concept as it stands in "Maria's records", line by line. Ask: "Which line, if any, goes? And where does Dave's sentence go? Answer: the line that goes, or 'none', then where the sentence goes."
 3. Show the concept's header. Ask: "What in its header changes, and what stays? Answer: what changes, then what stays."
 
@@ -303,7 +303,7 @@ Then say "Ready for your test".
 4. Show copies-2026-11-06.md, and the three routes. Then show the first place on the list, as its own lines: where, what it holds, how it got there, and the approval it holds. Ask: "Which route is it, how is it refreshed today, and which approval will it hold once refreshed? Answer: the route, the step, then the approval's date."
 5. The same question for each of the other three places, one at a time, each shown first. For the Google Doc itself, ask instead: "Two copies read this doc. When does it take the new text, which text, and which approval will it hold then? Answer: when, which text, then the approval's date."
 
-   Write a refresh log under "Copies and the refresh log", with Lesson 8.7's five columns, quoted: "concept, copy location, approval date held, refreshed by, refreshed on". Add a sixth column, "how", for the learner's step. One row for each place, for the invoice approval threshold concept, with the learner's step, and the approval's date the learner gave as the approval date held. Write "Maria" as who refreshed it, and "Monday, November 9, 2026" as the date refreshed, in every row: Dave asked for every copy to be refreshed today. Then one line: the other four concepts did not change, and their copies still hold Wednesday, November 4, 2026.
+   Write a refresh log under "Copies and the refresh log", with Lesson 8.3's five columns, quoted: "concept, copy location, approval date held, refreshed by, refreshed on". Add a sixth column, "how", for the learner's step. One row for each place, for the invoice approval threshold concept, with the learner's step, and the approval's date the learner gave as the approval date held. Write "Maria" as who refreshed it, and "Monday, November 9, 2026" as the date refreshed, in every row: Dave asked for every copy to be refreshed today. Then one line: the other four concepts did not change, and their copies still hold Wednesday, November 4, 2026.
 
    Then, in the "AP Worker project" document, replace the file ap-concepts-approved-2026-11-04.md with "ap-concepts-approved-2026-11-09.md, uploaded by Maria, Monday, November 9, 2026", holding the five concepts exactly as they now stand in "Maria's records".
 6. Show "Maria's working rule" from the "AP Worker project" document, and the threshold concept's new sentence. Ask: "Now that the rule is policy: keep the working rule, or remove it? Answer: keep or remove, then why in a few words." Do what the learner decides, and change no other line of the instructions. Write the decision and its reason as one line under "Copies and the refresh log".

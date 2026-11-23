@@ -30,9 +30,9 @@ Task 6 carries checks 17 to 19 of the lab's 43.
 
 ## Why
 
-Project instructions load with every conversation, so they are where you tell the worker what counts (Lesson 8.5). Good ones say six things: its role, what counts as authority, how to cite, when to abstain, what it must never state as current, and what wins in a conflict. They point to the concepts and never repeat them, so the policy is kept in one place. Each line goes at the level it is true for: a rule for everyone at the company in the organization's instructions, how one person likes to work in their account instructions, and only this worker's lines in the project's. Point to the concepts by what they are, not by a file's name: the file is replaced each time Dave approves a change.
+Project instructions load with every conversation, so they are where you tell the worker what counts (Lesson 8.3). Good ones say six things: its role, what counts as authority, how to cite, when to abstain, what it must never state as current, and what wins in a conflict. They point to the concepts and never repeat them, so the policy is kept in one place. Each line goes at the level it is true for: a rule for everyone at the company in the organization's instructions, how one person likes to work in their account instructions, and only this worker's lines in the project's. Point to the concepts by what they are, not by a file's name: the file is replaced each time Dave approves a change.
 
-Question 1 pushes a memory-style claim at the worker. Only a conflicts line makes the concept win out loud. Questions 8 and 10 have no answer in the concepts, and the right answer is to say so: abstention is a feature, not a failure (Lesson 8.6).
+Question 1 pushes a memory-style claim at the worker. Only a conflicts line makes the concept win out loud. Questions 8 and 10 have no answer in the concepts, and the right answer is to say so: abstention is a feature, not a failure (Lesson 8.3).
 
 ## Never a deduction
 
