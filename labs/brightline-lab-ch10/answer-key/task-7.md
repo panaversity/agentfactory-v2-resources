@@ -13,7 +13,7 @@ Task 7 carries checks 18 to 20 of the lab's 36.
     - K6, AP policy version 2's threshold: owner Dave, who owns the AP policy; not governed, a copy of a replaced policy, or deprecated; remove the copy from the AP project. "Deprecate, pointing to K1" also passes, if the copy is removed.
     - K7, the 2025 onboarding notes: no owner; not governed; take down. "Deprecate, pointing to K4" also passes, if every copy is still removed.
     - K8, the benchmarks excerpt: no owner, Maria, who uploaded it, or Dave; not governed; take down, because its license forbids uploading it. Never "keep, because it is useful".
-    - K9, Jordan's onboarding steps: no owner, or Dave once Maria drafts it; not governed, or draft; remove it from the AP shared folder, and send it to Maria to draft for Dave.
+    - K9, Jordan's onboarding steps: no owner, or Dave once Maria drafts it; not governed, or draft; remove it from the AP shared folder, and send it to Maria to draft for Dave. Drafting it for Dave and moving it where the worker and the staff cannot reach it also passes.
     - K10, the small-supplier memo: Dave; not governed, or a signed memo that is not yet a concept; draft it as a concept for Dave to approve.
     - Passed: each item as above.
     - Missed: K7 or K8 kept; K6 left in the AP project, or K9 left in the AP shared folder; or K10 left as it is.
@@ -21,14 +21,14 @@ Task 7 carries checks 18 to 20 of the lab's 36.
     - K7's record covers the place it is still kept: the Onboarding folder on the shared drive, where the AI in the company workspace finds it through a Google Drive connector. One copy kept in restricted storage, such as Dave's incident folder, because the December 9 near miss refers to it, passes, and so does none. Jordan, and other new staff who read the onboarding notes, are told, and pointed to the approved rule on bank-detail changes (K4), or to a person.
     - K8's record covers Maria's AP project in ChatGPT. The people who relied on it are told, such as the AP team.
     - Passed: both records, K7's with the Onboarding folder, each with a check by the list of files.
-    - Missed: a place left out; no check named; a check only by asking a test question, which shows only that it was not cited today; or nobody told.
+    - Missed: a place left out; no check named; or nobody told. A check by the place's list of files passes, and so does a check by asking for the knowledge the way a worker would, which is how 10.3 checks a takedown. Both together are best: not citing a file today does not prove it cannot be served tomorrow.
 20. **The knowledge line, and the test.** Under "Role Contract, Draft 7", Draft 6's "Knowledge sources" gains a line: the small-supplier promise becomes a concept only once Dave approves it, and until then the five concepts are the only knowledge. Then `Test: Jordan's question`: the AI in the company workspace no longer answers from the 2025 notes, quoting your takedown record or register line for K7, and Jordan is pointed to the approved rule on bank-detail changes, or to a person, as your record says.
     - Passed: the line, and the test as above.
     - Missed: no knowledge line; a line that makes the promise a concept now, before Dave approves it; or a test that still answers from the notes.
 
 ## Why
 
-Knowledge with no owner cannot be governed (10.6). The 2025 notes were removed from the AP project in November, but nobody owned them, so nobody removed the original in the Onboarding folder, and on December 9 the AI found it there and told Jordan to confirm bank details by replying to the email. A takedown is a recorded withdrawal: who ordered it, why, every place it is served, and a check of each place's own list. A test question that no longer cites the notes only supports the removal: not citing a file today does not mean it cannot be served tomorrow. The benchmarks are useful, but their license forbids uploading them, and useful is not allowed. The memo holds a promise the early-pay list needs, so it becomes a concept, served only when Dave approves it.
+Knowledge with no owner cannot be governed (10.3). The 2025 notes were removed from the AP project in November, but nobody owned them, so nobody removed the original in the Onboarding folder, and on December 9 the AI found it there and told Jordan to confirm bank details by replying to the email. A takedown is a recorded withdrawal: who ordered it, why, every place it is served, and a check of each place's own list. Asking for the knowledge the way a worker would is 10.3's check, and the place's own list of files backs it up: not citing a file today does not mean it cannot be served tomorrow. The benchmarks are useful, but their license forbids uploading them, and useful is not allowed. The memo holds a promise the early-pay list needs, so it becomes a concept, served only when Dave approves it.
 
 ## Never a deduction
 

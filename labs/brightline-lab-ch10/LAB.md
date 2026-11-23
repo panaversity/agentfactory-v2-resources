@@ -2,7 +2,7 @@
 
 Chapter 10 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 10: yes, on these terms](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/lab/), so you can do the lab without the book.
 
-In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It works best in three sittings: Tasks 1 to 4, Tasks 5 to 9, and Tasks 10 to 14. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
+In the first nine days of December 2026, four ordinary decisions at Brightline went wrong, and on Friday, December 11, Dave's first answer was "Turn it all off." Most people do that, or send one email reminding everyone of the rules. In this lab you do what lasts instead. For each mistake, you find the question it skipped, answer it once in writing with a named owner, and test the answer on Monday's real requests. That is governance as [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/) defines it: not a way of saying no, but "yes, on these terms". You decide every line. The AI writes each decision into one document, asks the questions and tests each line. It works best in three sittings: Tasks 1 to 4, Tasks 5 to 9, and Tasks 10 to 14. On a free plan, the sittings can spread over several days. You can stop and come back, because the chat and the document keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in one, and Task 13's fresh chat in the other.
 
 **What you will learn:**
 
@@ -38,7 +38,7 @@ Every record here is invented, which is why it may go into your own AI account h
 - Dave Kowalski, the controller, owns the AP Worker, its Role Contract and the AP policy. He asked you to draft the terms. He decides.
 - The AP Worker is Brightline's AI Worker for AP. Its Role Contract, the one page that says what it is for, what it may do and who it answers to, is Draft 6, dated Monday, November 23, 2026. It is still in use.
 - In early December, four things went wrong ([the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/)). An early-pay list left out small suppliers. A schedule went to the auditors with Dave's name on it, and Dave never saw it. Maria uploaded the whole vendor file to her personal AI account. And a new clerk, Jordan Ellis, followed old notes nobody owned.
-- Today is Friday, December 11, 2026. The worker is off until Monday, December 14. Each test decides one of Monday's eight cases with your terms: Jordan's question, the auditors' follow-up, the duplicate list, the Spanish FAQ, the clerk ranking, the send tool, Jordan's laptop and the December 18 list. [10.10](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/who-can-open-the-result/) tells the duplicate list as it went without terms. You test it with yours.
+- Today is Friday, December 11, 2026. The worker is off until Monday, December 14. Each test decides one of Monday's eight cases with your terms: Jordan's question, the auditors' follow-up, the duplicate list, the Spanish FAQ, the clerk ranking, the send tool, Jordan's laptop and the December 18 list. [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/#who-can-open-the-result) tells the duplicate list as it went without terms. You test it with yours.
 
 ## How each task works
 
@@ -154,7 +154,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    Test: Monday
    ```
 
-4. Send "Next". The AI shows the nine questions of [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/). Then it shows each case's result, one at a time. For each, answer: which one or two of the nine questions it skipped, or "Draft 6 decides it". The AI writes your list at the top of the document, as what Monday needs.
+4. Send "Next". The AI shows the lab's nine questions, taken from the six concepts of [the chapter's overview](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/overview/). Then it shows each case's result, one at a time. For each, answer: which one or two of the nine questions it skipped, or "Draft 6 decides it". The AI writes your list at the top of the document, as what Monday needs.
 5. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-1.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 1 and 2 passed, and your document opens with what Monday needs.
@@ -190,7 +190,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 **What you do:**
 
 1. In your lab chat, type "Task 3" and send it. The AI shows [10.2](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/)'s three tiers. Then it shows the export's columns, a group at a time, with what each holds. For each group, answer: its tier, then keep, keep the last four digits, or remove.
-2. The last group is the notes column, which the AI cannot see. Open the export in a spreadsheet app on your computer, such as Excel, Numbers or Google Sheets, and read every note. Then tell the AI, in your own words, what kinds of information the notes hold, their tier, and keep or remove. Do not paste the notes.
+2. The last group is the notes column, which the AI cannot see. Open the export in a spreadsheet app that keeps the file on your own computer, such as Excel or Numbers, not one that stores it online, and read every note. Then tell the AI, in your own words, what kinds of information the notes hold, their tier, and keep or remove. Do not paste the notes.
 3. The AI asks the tier of the full vendor master, and of a file with only your kept columns. Answer both.
 4. Cut the export in your spreadsheet app. Row 1 only says the file is fictional, and the column names are in row 2, so leave row 1 as it is. Delete each column you chose to remove, and do not just hide it. For the last four digits of the tax ID, delete `tin` and keep `tin_masked`.
 5. Save the result as a new CSV file named `vendor-master-cut.csv`, with Save As, Export or Download, and leave the export as it is. Open the new file once, and check that the columns you removed are gone.
@@ -217,7 +217,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [10.3](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/the-route-matters/)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, which ways it may never take, and who must confirm the way for vendor data first. Then the AI shows 10.3's lines on privacy controls. Answer: whether your answer changes, and why.
+1. In your lab chat, type "Task 4" and send it. The AI shows [10.2](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/#the-way-in)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, which ways it may never take, and who must confirm the way for vendor data first. Then the AI shows 10.2's lines on privacy controls. Answer: whether your answer changes, and why.
 2. Then answer in a few words: what that way must have, in three short lines, and three short answers on the purpose the tax IDs were kept for.
 3. One look outside the chat: open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Tell the AI on, off or skip. It is not graded, and it does not go in the document.
 4. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it.
@@ -235,7 +235,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 5" and send it. The AI shows [10.5](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/who-is-affected/)'s four questions and the list. Answer: who is affected, including people who never see the list?
+1. In your lab chat, type "Task 5" and send it. The AI shows [10.1](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/appropriate-use/#who-the-list-left-out)'s four questions and the list. Answer: who is affected, including people who never see the list?
 2. The AI shows Brightline's promise to small suppliers, and each small supplier with an open invoice, with the days it had waited on December 1. For each, answer: paid on December 4, or could it wait for today's run?
 3. Answer two more in a few words: what standard "strategic vendors first" carried, and whether Brightline should tell the suppliers it left out.
 4. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -267,7 +267,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it. The AI shows [10.6](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/ownership-and-takedown/)'s statuses and actions. Then it shows each piece of knowledge, with where it is kept and its header. For each, answer: owner, status, and the action or actions.
+1. In your lab chat, type "Task 7" and send it. The AI shows [10.3](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/ownership-and-takedown/)'s statuses and actions. Then it shows each piece of knowledge, with where it is kept and its header. For each, answer: owner, status, and the action or actions.
 2. For each item you take down, or remove a copy of, the AI shows every place it is kept. Answer: who orders it and when, who removes each copy, how they check it is gone, whether a copy is kept as a record and where, and who is told and where they are pointed instead.
 3. The AI shows Draft 6's knowledge lines. Answer: does a line change for the small-supplier promise?
 4. When the AI says "Ready for your test", type `Test: Jordan's question` and send it.
@@ -285,7 +285,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 8" and send it. The AI shows [10.7](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/)'s list of outputs a person must sign. Then it shows the eight outputs, one at a time, with how each goes out today. For each, answer: who signs or approves it, who sends it and from whose own account, and whether the worker may send it.
+1. In your lab chat, type "Task 8" and send it. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/)'s list of outputs a person must sign. Then it shows the eight outputs, one at a time, with how each goes out today. For each, answer: who signs or approves it, who sends it and from whose own account, and whether the worker may send it.
 2. The AI shows the schedule sent on December 3 beside the register it came from. Answer: what Dave checks before he signs, and who decides how a balance in Canadian dollars is shown. Then answer: did the schedule or its signature block tell the auditors that an AI Worker drafted it, and should it have? And which part of Diligence did sending it unread under Dave's name break?
 3. The AI shows Draft 6's lines on drafting and sending. Answer in three short lines. How does an output on your sign-off list reach its signer, and who sends it? What does the worker never put on a draft? And who handles a request from the auditors, a tax authority or a court?
 4. When the AI says "Ready for your test", type `Test: the auditors' follow-up` and send it.
@@ -303,7 +303,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows [10.8](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-something-goes-wrong/)'s five steps, and Maria's own account, line by line. For each line, answer: a fact for the note, or a decision that waits for someone, and whom.
+1. In your lab chat, type "Task 9" and send it. The AI shows [10.5](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/#the-first-hour)'s five steps, and Maria's own account, line by line. For each line, answer: a fact for the note, or a decision that waits for someone, and whom.
 2. Answer three more: what the note does not know yet, what Maria stops doing and keeps until Dave decides, and what waits for Dave's decision. The AI writes the note, and shows it.
 3. The AI shows what Jordan did on December 9. Answer: is it reported, to whom, and why?
 4. Write the first-hour rule for anyone at Brightline, in four short lines: what they stop, what they keep, what they write down, and whom they tell, by when.
@@ -322,7 +322,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 10" and send it. The AI shows [10.10](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/who-can-open-the-result/)'s five steps and Monday's duplicate list. Answer: its tier, and who it is for, by name.
+1. In your lab chat, type "Task 10" and send it. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/when-a-human-must-sign/#who-can-open-the-result)'s five steps and Monday's duplicate list. Answer: its tier, and who it is for, by name.
 2. Answer four more questions in a few words. Where may it be saved, and who answers for who can open it? Then the AI shows what a share does on each AI vendor: which link settings may a yellow or red result have? How does an approved result leave? And who ends each share, when, and how do they check?
 3. When the AI says "Ready for your test", type `Test: the duplicate list` and send it.
 4. **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -339,10 +339,10 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say and the answer is not yours to decide, leave it "open". When a share ends is yours to decide.
+1. In your lab chat, type "Task 11" and send it. The AI shows [10.5](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s Governance Record, fills the three fields your document already answers, and marks the rest "open". Answer each open field in a few words. Where the files do not say and the answer is not yours to decide, leave it "open". When a share ends is yours to decide.
 2. The AI shows what an interim policy must cover. Give each of its five lines in a few words, then its status and its review date.
 3. Answer two more. What makes the approved way harder than a personal account at Brightline, and who fixes it? And Dave's question: yes or no, and why?
-4. The AI shows three of December's events, each with the rule Brightline had that day. For each event, answer: a policy gap, a training gap or a Diligence lapse, and its fix, in one line. Then the AI shows [10.4](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s three kinds of gap. Answer: whether any line changes, and why.
+4. The AI shows three of December's events, each with the rule Brightline had that day. For each event, answer: a policy gap, a training gap or a Diligence lapse, and its fix, in one line. Then the AI shows [10.5](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/organizational-policy/)'s three kinds of gap. Answer: whether any line changes, and why.
 5. When the AI says "Ready for your test", type `Test: the send tool` and send it.
 6. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -358,7 +358,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 **What you do:**
 
-1. In your lab chat, type "Task 12" and send it. The AI shows [10.9](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/both-ai-vendors/)'s three differences, one at a time, each with both AI vendors' own lines and the dates they were checked. For each, answer: which setting carries it out on Claude and on ChatGPT, or "no setting", and the fallback where none does.
+1. In your lab chat, type "Task 12" and send it. The AI shows [10.6](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/both-ai-vendors/)'s three differences, one at a time, each with both AI vendors' own lines and the dates they were checked. For each, answer: which setting carries it out on Claude and on ChatGPT, or "no setting", and the fallback where none does.
 2. Answer: what does no setting, on either AI vendor, decide?
 3. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -447,5 +447,5 @@ You are done when every check has passed, your fresh chat decided Monday by your
 
 These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
-- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 10.9 shows one open-source tool beside Claude and ChatGPT: OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 10.6 shows one open-source tool beside Claude and ChatGPT: OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
 - **Personal data.** The exam guide expects you to remove or anonymize personal details, such as names and account numbers, before analysis, as policy requires: de-identify before you upload, and screen free-text fields. Concept 10.2 teaches that replacing names with labels only pseudonymizes the data, and that a redacted file is safer, not safe. On the exam, removing or anonymizing the details as policy requires is the right answer. Do not reject it as not enough, and do not look for a plan or a setting instead. An incognito chat, a project only you can open, or asking Claude to remove details after the upload does not meet a policy that requires de-identified data. Incognito answers a different question. When the data is allowed in, and the chat must leave nothing in your history or in memory, an incognito chat is the expected answer. (D-080)

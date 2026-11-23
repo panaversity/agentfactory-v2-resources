@@ -18,7 +18,7 @@ Task 12 carries check 32 of the lab's 36.
 
 ## Why
 
-Your policy stays the same on both AI vendors. Which settings carry it out, on which plan, and who can change them, do not (10.9). Claude can stop new personal accounts on the company's domain; ChatGPT leaves them, so more of that line rests on the written policy. Records last 180 days on one and 30 on the other, and on the small-company plans neither keeps them, so named people do. And a policy that reaches the AI is not one that reaches people, or the other way round. No setting decides whether data may go in, who signs or who a result is for: people decide, and settings carry it out.
+Your policy's answers are the same on both AI vendors. Which settings carry them out, on which plan, and who can change them, differ (10.6). Claude can stop new personal accounts on the company's domain; ChatGPT leaves them, so more of that line rests on the written policy. Records last 180 days on one and 30 on the other, and on the small-company plans neither keeps them, so named people do. And a policy that reaches the AI is not one that reaches people, or the other way round. No setting decides whether data may go in, who signs or who a result is for: people decide, and settings carry it out.
 
 ## Never a deduction
 
