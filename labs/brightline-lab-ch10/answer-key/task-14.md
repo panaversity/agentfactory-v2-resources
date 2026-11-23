@@ -8,7 +8,7 @@ The answers for Task 14 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Seco
 
 Task 14 carries checks 35 and 36 of the lab's 36.
 
-The policy in force is your own, as your document's "Interim AI policy" has it. Check 29 asked for five lines that cover 10.4's list, so this key names each line by what it covers. If your policy has no such line, the use breaks nothing, and the gap is a policy gap: the key says so where it matters.
+The policy in force is your own, as your document's "Interim AI policy" has it. Check 29 asked for five lines that cover 10.5's list, so this key names each line by what it covers. If your policy has no such line, the use breaks nothing, and the gap is a policy gap: the key says so where it matters.
 
 35. **The compliance gaps.** Under "The March audit", for each use:
     - S1, Ana Ruiz's translation: breaks your line on approved routes, because work data, a vendor contact's name and phone number, went into her personal account. A training gap: the rule is clear, but it was posted only in the AP team's channel, and Receiving is not in it, so Ana never saw it. The corrective action: teach the rule to everyone with a seat, Receiving included, with a worked case, then check again. Dave, or the person your policy names, owns it. Telling Ana to delete the chat, or asking Dave whether she should, passes too.
@@ -22,15 +22,16 @@ The policy in force is your own, as your document's "Interim AI policy" has it. 
     - It breaks no line of your policy, because the slide stayed inside Brightline and your review rule covers what leaves Brightline or affects someone. So the gap is a policy gap: no rule covers checking an AI figure used inside the company. If your policy does have such a rule, a training gap passes, with the rule taught.
     - The corrective action: a check that fits the gap, such as a line in the policy, or a step in the brief, that a person checks every figure the AI gives against its source before it is used, inside Brightline too. Dave owns it, or the person your policy names.
     - Passed: S4 as a deployment-diligence lapse, its gap with a reason, and a corrective action that changes how the work is done, with who owns it.
-    - Missed: S4 called fine, or found only as a compliance gap with no lapse named; no gap, or a gap with no reason; its gap called only a Diligence lapse, when no rule covered a figure used inside Brightline; or a fix that only tells Maria to be careful.
+    - "A Diligence lapse" also passes as the gap, when you also say that no rule covered a figure used inside Brightline: a lapse can have a gap behind it (10.5).
+    - Missed: S4 called fine, or found only as a compliance gap with no lapse named; no gap, or a gap with no reason; its gap called a Diligence lapse with no word that no rule covered a figure used inside Brightline; or a fix that only tells Maria to be careful.
 
 ## Why
 
-Governance weakens over time, so every three months you audit a small sample of what people actually do (10.4). A compliance gap is a use that breaks the policy in force. A lapse in Diligence can happen with no rule broken at all: Maria stayed on the approved route, and still used a total nobody had checked.
+Governance weakens over time, so every three months you audit a small sample of what people actually do (10.5). A compliance gap is a use that breaks the policy in force. A lapse in Diligence can happen with no rule broken at all: Maria stayed on the approved route, and still used a total nobody had checked.
 
-For each finding, ask 10.4's question before you choose the fix: was there a written rule that covered this, and did the person know it? Ana's rule was clear, but it never reached Receiving, so teaching it, to everyone with a seat, closes the gap. Jordan read the rule and did not see that a skill counts, so that is a training gap too, and the skill stops until Dave decides. Maria's slide had no rule to break, so the fix is a rule or a step, not a reminder. None of the five is a Diligence lapse in 10.4's table: nobody knew a workable rule and skipped it.
+For each finding, find the kind of gap before you choose the fix (10.5): was there a clear rule that covered this, and did the person know it? Ana's rule was clear, but it never reached Receiving, so teaching it, to everyone with a seat, closes the gap. Jordan read the rule and did not see that a skill counts, so that is a training gap too, and the skill stops until Dave decides. Maria's slide had no rule to break, so the fix is a rule or a step, not a reminder. None of the five is a Diligence lapse alone in 10.5's table: nobody knew a workable rule and skipped it.
 
-Audit the process, not the person, or people will show only their cleanest work (10.4). Every fix here changes how the work is done. None of them ranks the staff.
+Audit the process, not the person, or people will show only their cleanest work (10.5). Every fix here changes how the work is done. None of them ranks the staff.
 
 ## Never a deduction
 

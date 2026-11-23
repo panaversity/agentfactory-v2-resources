@@ -23,7 +23,7 @@ For check 12, you answer before the AI shows the lesson's lines, and your first 
 
 ## Why
 
-Ask whether this way in is approved for this data and this purpose, never only whether the product is approved (10.3). Maria's mistake on December 6 was not the AI vendor. It was her personal account, with its training setting on. A temporary chat or an incognito chat keeps data out of history, and training off keeps it out of training, but neither says whether the data was allowed in. The company workspace is the way, once Dave confirms it for vendor data. Data also comes with a purpose: the tax IDs were kept to file tax forms, so checking for duplicates before the forms fits, and training someone's model never did.
+Ask whether this way in is approved for this data and this purpose, never only whether the product is approved (10.2). Maria's mistake on December 6 was not the AI vendor. It was her personal account, with its training setting on. A temporary chat or an incognito chat keeps data out of history, and training off keeps it out of training, but neither says whether the data was allowed in. The company workspace is the way, once Dave confirms it for vendor data. Data also comes with a purpose: the tax IDs were kept to file tax forms, so checking for duplicates before the forms fits, and training someone's model never did.
 
 ## Never a deduction
 

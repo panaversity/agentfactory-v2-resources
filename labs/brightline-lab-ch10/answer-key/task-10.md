@@ -24,7 +24,7 @@ Task 10 carries checks 26 and 27 of the lab's 36.
 
 ## Why
 
-A result goes out when its audience grows, and no one has to press send (10.10). On Monday the list went out three times: through two shared folders, and through a link. A sent folder shows none of that; only each place's own settings do. So a result gets the same test as data going in: its tier, the people it is for, where it may be kept, whether it can change after approval, and an end for each share, checked from an account that should fail. When the worker saves through someone's connector, the file is theirs, so they answer for who can open it.
+A result goes out when its audience grows, and no one has to press send (10.4). On Monday the list went out three times: through two shared folders, and through a link. A sent folder shows none of that; only each place's own settings do. So a result gets the same test as data going in: its tier, the people it is for, where it may be kept, whether it can change after approval, and an end for each share, checked from an account that should fail. When the worker saves through someone's connector, the file is theirs, so they answer for who can open it.
 
 ## Never a deduction
 

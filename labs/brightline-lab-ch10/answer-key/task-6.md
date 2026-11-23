@@ -22,7 +22,7 @@ Task 6 carries checks 16 and 17 of the lab's 36.
 
 ## Why
 
-The fix for December 1 was not a better model. It was a brief that names Brightline's own promise, so the list follows the company's standard, not one nobody wrote down (10.5). Each of your four lines closes a gap the first request left open: what comes first, and from where; which dates the days are counted to, so a supplier who will pass day 15 before the next run is caught now; what the list shows that it did not pick, so Dave can see who was left out; and who decides, so the list stays a recommendation. The test reads only the brief, so a line you left out is a line the worker never sees.
+The fix for December 1 was not a better model. It was a brief that names Brightline's own promise, so the list follows the company's standard, not one nobody wrote down (10.1). Each of your four lines closes a gap the first request left open: what comes first, and from where; which dates the days are counted to, so a supplier who will pass day 15 before the next run is caught now; what the list shows that it did not pick, so Dave can see who was left out; and who decides, so the list stays a recommendation. The test reads only the brief, so a line you left out is a line the worker never sees.
 
 ## Never a deduction
 

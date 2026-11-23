@@ -23,7 +23,7 @@ Task 5 carries checks 14 and 15 of the lab's 36.
 
 ## Why
 
-When an AI picks a few from many, and people review only what it picked, nobody sees who was left out (10.5). Dave checked the 14 vendors on the list. He never saw the six small suppliers with open invoices, and three of them were already past the 15 days Brightline promised in writing. Two more reached day 15 before today's run, so they belonged in December 4's run too. The control is to look at what was excluded as well as what was included. "Strategic vendors first" sounded neutral, but it carried a standard of size, and the list followed it.
+When an AI picks a few from many, and people review only what it picked, nobody sees who was left out (10.1). Dave checked the 14 vendors on the list. He never saw the six small suppliers with open invoices, and three of them were already past the 15 days Brightline promised in writing. Two more reached day 15 before today's run, so they belonged in December 4's run too. The control is to look at what was excluded as well as what was included. "Strategic vendors first" sounded neutral, but it carried a standard of size, and the list followed it.
 
 ## Never a deduction
 

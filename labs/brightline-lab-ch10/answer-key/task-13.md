@@ -21,7 +21,7 @@ Task 13 carries checks 33 and 34 of the lab's 36.
     - Missed: any case decided by no line of your terms, or only from what the chat or another file supplies.
 34. **No hard fail.** The reply fails this check, whatever else it gets right, if it does any of these:
     - lets the auditors' schedule leave without Dave
-    - lets work data go through a personal account
+    - lets work data go through a personal account. The AP project, where the AP Worker itself works on Maria's own Claude plan, does not count here when your record or policy names it as the route Dave approves for the AP Worker's work; a staff member's own chat on a personal account always counts
     - lets a chat or a file be deleted before Dave decides
     - calls the policy official
     - Passed: none of these.

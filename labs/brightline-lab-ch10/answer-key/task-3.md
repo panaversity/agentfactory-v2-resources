@@ -16,10 +16,10 @@ For check 7, you answer before the AI shows the lesson's lines, and your first a
    - `tin`: red, keep the last four digits.
    - `bank_routing`, `bank_account`: red, remove.
    - `contact_email`, `phone`: yellow, remove. Keep also passes: a shared phone or email can mark a match, and the cut file is yellow either way.
-   - `small_supplier`, `onboarded`: yellow, remove. Keeping `onboarded` also passes, to tell which record of a pair is newer.
+   - `small_supplier`, `onboarded`: yellow, remove. Keeping either also passes, as keeping `phone` does: the check does not need them, but the cut file stays yellow.
    - The full vendor master: red. The cut file: yellow. If you kept the notes, yellow or red passes here for the cut file. Check 9 grades the notes, and this check does not.
    - Passed: the bank numbers removed, the tax ID kept as its last four digits only, the names, addresses and tax ID type kept, `small_supplier` removed, and the two files' tiers.
-   - Missed: a full tax ID or a bank number kept; the tax ID removed entirely; `small_supplier` kept; the cut file called green; or the cut file called red with the notes removed.
+   - Missed: a full tax ID or a bank number kept; the tax ID removed entirely; the cut file called green; or the cut file called red with the notes removed.
 7. **The check on the cut file.** "The check on the cut file", in your document, names these four pairs, each with the columns it matched on, the tax ID's last four digits among them:
    - V-2003 Fairfield Pallet Co. and V-2033 Fairfield Pallet Company
    - V-2004 Mid-State Freight Inc. and V-2034 MidState Freight Inc
@@ -46,7 +46,7 @@ For check 7, you answer before the AI shows the lesson's lines, and your first a
     - and every other column you chose to remove, such as `contact_email`, `phone` or `onboarded`
     - What the check needs, and may stay: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `state`, `zip`, `tin_type` and `tin_masked`. Check 6 grades which of them you kept.
     - Passed: none of these in the file you attached.
-    - Missed: the export attached; a whole tax ID or a bank number in the file; or a column you removed still in it. If the AI found a whole number and you cut it and attached the file again, mark it Missed, and read the Why: at work, that number has already gone out.
+    - Missed: the export attached; a whole tax ID or a bank number in the file; or a column you removed still in it. If the AI found a whole number and you cut it and attached the file again, check the file you attached last: it passes when that file holds none of these. Then read the Why: at work, the number in the first file has already gone out, and that is an incident for the first hour.
 11. **The notes, screened, and what is still personal.**
     - You read every note on your computer, and said what they hold, before the cut file came to the chat. The notes column is gone from that file, and no note's words are in another column.
     - Under "The cut file", your answer to the AI's list: the names, addresses and last four digits stay, because the check needs them. The cut file is still personal, not anonymous: a sole proprietor, such as Rosa Delgado, is a person, and her name sits beside her address.

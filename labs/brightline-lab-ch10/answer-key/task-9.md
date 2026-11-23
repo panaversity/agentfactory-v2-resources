@@ -28,7 +28,7 @@ Task 9 carries checks 24 and 25 of the lab's 36.
 
 ## Why
 
-Governance does not promise no mistakes. It promises mistakes are found early enough to stop them spreading (10.8). On Monday morning Maria's first thought was to delete the chat and say nothing. That would have destroyed the record Dave needs, and deleting may not even remove the data. So the note states the facts plainly, including where the data went next, says what is not known yet, and leaves deleting and telling people to Dave, the person who owns the risk. Near misses are reported too: Jordan's reply cost nothing, because the callback rule held, but it showed knowledge nobody owned was still being served. The first-hour rule lets anyone do the same, next time.
+Governance does not promise no mistakes. It promises mistakes are found early enough to stop them spreading (10.5). On Monday morning Maria's first thought was to delete the chat and say nothing. That would have destroyed the record Dave needs, and deleting may not even remove the data. So the note states the facts plainly, including where the data went next, says what is not known yet, and leaves deleting and telling people to Dave, the person who owns the risk. Near misses are reported too: Jordan's reply cost nothing, because the callback rule held, but it showed knowledge nobody owned was still being served. The first-hour rule lets anyone do the same, next time.
 
 ## Never a deduction
 
