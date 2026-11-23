@@ -369,7 +369,7 @@ One message asks for ideas. The other asks for data that the accounting system w
 **What you do:**
 
 1. Download your brief from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `payment-run-brief.md`.
-2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. In ChatGPT, choose Work if you still see that switch and your plan has it. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it.
+2. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one, and turn memory off before you attach or send anything. A chat with no memory and no history is a fresh run: it has only what you give it. How to do this in your app: [5.4](https://agentfactory.panaversity.org/managing-ai-workers/the-four-part-brief/both-ai-vendors/#how-to-run-the-brief-in-your-app).
 3. Attach two files, your downloaded brief and `inputs.zip`, and send:
 
    ```text

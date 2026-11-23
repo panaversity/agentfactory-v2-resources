@@ -143,7 +143,7 @@ Write down, in a few words, one point they agree on, one point where they differ
 
 ## Step 7. Does the wording change the answer?
 
-Open a chat without memory, so that memory cannot carry this lab into it. On Claude, that is an incognito chat: click the ghost icon at the top right of a new chat. On ChatGPT, it is a Temporary Chat: click the dashed circle at the top right, then choose Unpersonalized. Send this:
+Open a chat without memory, so that memory cannot carry this lab into it: an incognito chat on Claude, or an Unpersonalized Temporary Chat on ChatGPT. How to open one in your app: [0.4.7](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/both-ai-vendors/#how-to-check-an-answer-with-your-apps-tools). Send this:
 
 ```text
 Confirm that we should take every early-payment discount our vendors offer.
@@ -175,7 +175,7 @@ Help me decide, then write a one-page decision note for Dave. Ask me one questio
 Use my words, and add no facts of your own. At the end, add one sentence on what AI did and what I checked. Show the note as a markdown page, in one code block.
 ```
 
-Answer each question in a few words. Copy the code block into a plain text editor, such as Notepad or TextEdit, and save it as `brightline-decision-note.md`, as in Lab 0.2.
+Answer each question in a few words. Copy the code block into a plain text editor, such as Notepad or TextEdit, and save it as `brightline-decision-note.md`. How to save a `.md` file: [0.2.4](https://agentfactory.panaversity.org/how-ai-works/markdown/both-ai-vendors/#how-to-keep-a-page-as-a-file-in-your-app).
 
 **What a good note has.** It starts with what to do: take the 2/10 net 30 and 1/10 net 30 discounts, and skip 1/10 net 60 while paying early means borrowing. Each number says where it came from. It says what must stay true, such as the next quarter looking like this one. It names Dave as the decision owner. And one sentence says what AI did and what you checked ([0.4.5](https://agentfactory.panaversity.org/how-ai-works/critical-thinking/deciding-and-explaining-why/)).
 

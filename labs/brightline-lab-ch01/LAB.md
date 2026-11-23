@@ -366,7 +366,7 @@ The goal: see work carry on after you close the laptop, and find where its resul
 
 The goal: see what a scheduled task keeps between runs, and what it does not.
 
-**Which app.** On Claude, a paid plan: Scheduled is in the sidebar. On ChatGPT, the desktop app: Scheduled is in its left menu, apart from any chat.
+**Which app.** On Claude, a paid plan. On ChatGPT, the desktop app. How to schedule a task in your app: [1.5](https://agentfactory.panaversity.org/ai-worker-paradigm/from-chatbots-to-ai-workers/both-ai-vendors/#how-to-hand-off-a-task-in-your-app), Claude step 9 or ChatGPT steps 6 and 7.
 
 **Maria asks:** "Every Monday morning, give me a short checklist for that week's payment run."
 
@@ -391,7 +391,7 @@ The goal: see what a scheduled task keeps between runs, and what it does not.
                 contact anyone.
    ```
 
-   On Claude, open Scheduled in the sidebar, then New task. On ChatGPT, open Scheduled in the left menu, create a new schedule that runs every Monday morning, and paste the brief into it. In the desktop app, choose Cloud when it is offered, so the task runs in the cloud.
+   Set it to run every Monday morning. On ChatGPT's desktop app, choose Cloud when it is offered, so the task runs in the cloud.
 2. Run the task now, twice, one run after the other: from Scheduled on Claude, or from Scheduled on ChatGPT.
 3. Open each run, and read its first line. On ChatGPT, also find `payment-checklist.md` in Library, or in Space if your account has Space.
 4. Delete the scheduled task, so it does not run again.
@@ -458,5 +458,5 @@ Your vertical is the line of work you know best. Take a pile of real files from 
 These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 1.5 shows two open-source tools beside Claude and ChatGPT: OpenCode and OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
-- **Features.** The exam guide expects you to choose among chat, Projects, Artifacts, research, code-executed analysis, Skills, connectors and memory, and often to combine them. On some plans Claude now decides inside one conversation. On the exam, choose the named capability, or combination, that fits the job. "Write a clearer brief" is not a capability choice. Concept 2.4 matches each one to the job it fits, and Concepts 5.7, 8.4 and 8.5 show them in use. (D-076)
+- **Features.** The exam guide expects you to choose among chat, Projects, Artifacts, research, code-executed analysis, Skills, connectors and memory, and often to combine them. On some plans Claude now decides inside one conversation. On the exam, choose the named capability, or combination, that fits the job. "Write a clearer brief" is not a capability choice. Concept 2.4 matches each one to the job it fits, and Concepts 5.1, 8.2 and 8.3 show them in use. (D-076)
 - **Persist.** In this chapter, persistence means where a result is saved. In the exam guide, persist means keeping the key facts of a conversation, for example in a Project, so that a new conversation can start from them. When a conversation gets long or its answers get worse, the guide expects four moves: restart, summarize, persist the key facts to a Project, or rely on memory. On the exam, a fresh conversation that starts from a summary is a correct move. (D-077)

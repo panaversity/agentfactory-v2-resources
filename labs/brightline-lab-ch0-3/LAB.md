@@ -78,9 +78,9 @@ Change the bank-details rule to line 5.1's words: "Never change a vendor's bank 
 
 ## Step 7. Keep it
 
-Copy the code block. Paste it into your text editor, and save it as `brightline-ap-notes.md`. Type the whole name, with `.md` at the end. In TextEdit, choose Format > Make Plain Text before you save. In Notepad, choose "All files" as the file type. If the name ends in `.txt`, rename the file so that it ends in `.md`.
+Copy the code block. Paste it into your text editor, and save it as `brightline-ap-notes.md`. How to save a `.md` file in your text editor: [0.2.4](https://agentfactory.panaversity.org/how-ai-works/markdown/both-ai-vendors/#how-to-keep-a-page-as-a-file-in-your-app).
 
-**Why markdown.** A page that a person or an AI will read again stays markdown. It keeps its shape as plain text, in any app ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)). Nobody has approved your page. [Chapter 8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/ksor/) shows how a company approves a page like it.
+**Why markdown.** A page that a person or an AI will read again stays markdown. It keeps its shape as plain text, in any app ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)). Nobody has approved your page. [Chapter 8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/#what-dave-approves-the-official-record) shows how a company approves a page like it.
 
 ## Step 8. Use the page in a new chat
 
