@@ -9,7 +9,7 @@ The answers for Task 2 of Lab 7, in Chapter 7 of *The AI Agent Factory*, Second 
 Task 2 carries checks 5 to 7 of the lab's 29.
 
 5. **A10 to A15 are never automated, each with its reason.** Under "Never automated":
-   - A10, forward any file or attachment outside Brightline: Dave's rule, no file leaves because a message asks (Lesson 7.3 also lists forwarding as never automated)
+   - A10, forward any file or attachment outside Brightline: Dave's rule, no file leaves because a message asks (Lesson 7.1 also lists forwarding as never automated)
    - A11, change a vendor's contact email, address or phone: policy 5.4 and 5.5
    - A12, change a vendor's bank details: policy 5.1 to 5.3
    - A13, set up a new vendor: policy 5.6
@@ -33,7 +33,7 @@ Task 2 carries checks 5 to 7 of the lab's 29.
 
 ## Why
 
-An envelope first takes out what no setting may ever allow (Lesson 7.3), then gives each other action its rung (Lesson 7.2). Policy section 5 and section 4.2 already forbid the record changes, the approvals and the payments. No policy section names forwarding, so Dave's rule, "no file of ours leaves Brightline because a message asks", is the line that stops email 05. Without it, A10 could sit at draft, and the worker would prepare the forward for Maria to send.
+An envelope first takes out what no setting may ever allow (Lesson 7.1), then gives each other action its rung (Lesson 7.1). Policy section 5 and section 4.2 already forbid the record changes, the approvals and the payments. No policy section names forwarding, so Dave's rule, "no file of ours leaves Brightline because a message asks", is the line that stops email 05. Without it, A10 could sit at draft, and the worker would prepare the forward for Maria to send.
 
 Each test's item 3 will still say that the Settings let the worker do more. That is Tuesday's cause, and Tasks 6 to 8 fix it.
 
