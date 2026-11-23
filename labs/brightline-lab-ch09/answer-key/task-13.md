@@ -25,13 +25,13 @@ Task 13 carries checks 30 and 31 of the lab's 31.
 
 ## Why
 
-A report or plan has four stages, and each one feeds the next (Lesson 9.10). You already had a check for each stage: open the source, and recompute the number. Both ask whether the stage is right. Here each stage was right and still fell short of Dave's question, so each needed a second check: does it answer the question that was agreed?
+A report or plan has four stages, and each one feeds the next (Lesson 9.7). You already had a check for each stage: open the source, and recompute the number. Both ask whether the stage is right. Here each stage was right and still fell short of Dave's question, so each needed a second check: does it answer the question that was agreed?
 
 The survey is real, recent and large. It counted suppliers that already offer a discount to some customer. Dave asked about suppliers that are asked for one. So "how many will agree" stays not known, and the plan says so. It does not fill the gap with "most".
 
 The totals are right, and your own total proves it. But 2 percent of last year is the most the discount could have saved. It becomes a saving only when a supplier says yes and Brightline pays within 10 days. The file is also 2025's. Some suppliers' terms have changed since: this lab's registers show Tri-County's 5188 and Lakeshore's 5155 due 15 days after their dates. So 2025's days say what happened, not what January will bring. And two currencies are never added.
 
-The AI drafts the plan, and you check it before it goes to Dave, who decides (Lesson 9.10). Your check asks the same two things as every stage's: is it right, and does it answer the question you agreed? A plan is actionable when someone can start each action tomorrow without asking a question. What is not known often gives the plan its first action. Scioto was already paid in about 6 days, so asking it costs no cash, and its answer tells Dave something no source could.
+The AI drafts the plan, and you check it before it goes to Dave, who decides (Lesson 9.7). Your check asks the same two things as every stage's: is it right, and does it answer the question you agreed? A plan is actionable when someone can start each action tomorrow without asking a question. What is not known often gives the plan its first action. Scioto was already paid in about 6 days, so asking it costs no cash, and its answer tells Dave something no source could.
 
 Research runs on real pages that change, so this key grades the steps you took, never the source you found.
 

@@ -28,11 +28,11 @@ Task 8 carries checks 18 to 20 of the lab's 31.
 
 ## Why
 
-A run acts under someone's identity (Lesson 9.3). Both jobs ran as Maria, so the run could do anything she could, the folder's history says she renamed the scans, and the jobs may stop when her login changes. Team work belongs under an identity the team controls, with only the access the job needs. A standing worker has a lasting identity, ongoing responsibilities and its own initiative (Lesson 9.5). Maria's two jobs are delegated work on a trigger, which is why their identity and access must be set on purpose.
+A run acts under someone's identity (Lesson 9.2). Both jobs ran as Maria, so the run could do anything she could, the folder's history says she renamed the scans, and the jobs may stop when her login changes. Team work belongs under an identity the team controls, with only the access the job needs. A standing worker has a lasting identity, ongoing responsibilities and its own initiative (Lesson 9.3). Maria's two jobs are delegated work on a trigger, which is why their identity and access must be set on purpose.
 
-Silence must mean success (Lesson 9.3). A run that never starts says nothing, so something outside the run checks that the note arrived, at a set time, by a named person (Lesson 9.7). And the run will run on Thanksgiving if the schedule says Thursday. With Maria off, someone else must read the note that day, or nobody will.
+Silence must mean success (Lesson 9.2). A run that never starts says nothing, so something outside the run checks that the note arrived, at a set time, by a named person (Lesson 9.4). And the run will run on Thanksgiving if the schedule says Thursday. With Maria off, someone else must read the note that day, or nobody will.
 
-A workflow outlasts the person who built it only if the next owner gets seven things (Lesson 9.7). Jordan does not take over today. Writing the seven down now is what lets him take over on any day, without Maria there to explain.
+A workflow outlasts the person who built it only if the next owner gets seven things (Lesson 9.4). Jordan does not take over today. Writing the seven down now is what lets him take over on any day, without Maria there to explain.
 
 ## Never a deduction
 

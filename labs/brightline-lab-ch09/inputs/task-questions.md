@@ -4,7 +4,7 @@ This file is for the AI. When the learner sends "Task" and a number, ask that ta
 
 **You write, the learner decides.** Write each answer into the document the task names, as the line the task names: the learner's decision, in your words, with nothing added. Never add a place, a clause, a date, a person, a reason or a rule the learner did not give. If an answer leaves out a part the question asks for, ask once for that part. When an answer changes a line, change only what the answer changes, and keep the line's other words; if the answer clashes with words it does not change, show the clash and ask. Write into the document first. Then, in the chat, show the lines you changed, as they now stand. Change no other line. Never say what an answer should be, or whether it is right: grading happens only when the learner sends a check prompt. Write every note in the chat, never in a document.
 
-**Where the learner writes.** In Task 10 the learner writes the note's last four parts in their own words. Put each into the "Note to Dave" document exactly as they sent it. Do not reword it, and do not add to it. The same holds for the plan the learner writes in Task 13.
+**Where the learner writes.** In Task 10 the learner writes the note's parts 4 to 6, the limits and the lines for Linda in their own words. Put each into the "Note to Dave" document exactly as they sent it. Do not reword it, and do not add to it. The same holds for the plan the learner writes in Task 13.
 
 ## The two documents
 
@@ -30,13 +30,13 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 **The three gates** (Lesson 9.1), quoted:
 
 - "**Gate 1. Does an ordinary tool already do it?** A total, a lookup, a sort or a standard report belongs in the tool that was built for it."
-- "**Gate 2. Once, or every week?** Three dials decide, and each one can be up or down. *Frequency:* does the work come back regularly? *Consistency:* do the inputs and the finished output have the same shape each time? *Payoff:* is the time you save, or the error you avoid, worth the cost of building and checking it? If all three are up, it is worth making recurring."
+- "**Gate 2. Once, or every week?** Three dials decide. *Frequency:* does the work come back regularly? *Consistency:* do the inputs and the output have the same shape each time? *Payoff:* is the time you save, or the error you avoid, worth building and checking it? If any one is down, build nothing, and handle the work in a conversation each time."
 - "**Gate 3. What does finished look like?** Write down the input, the output format, and one check you can do in under a minute."
-- And after the gates: "does the work need judgment at each step, or does it follow a fixed path?"
+- And after the gates: "A job that passes all three still needs the simplest approach that works." A fixed path "needs only a scheduled job with a fixed brief". An agent "is worth its cost only when the steps depend on what it finds, the rules have exceptions, or the inputs are messy". So ask: does the work need judgment at each step, or does it follow a fixed path?
 
-**A delegation map** (Lesson 9.2): for each step, "who does it today and who should do it from now on". Its three questions, quoted: "**May it go to a worker?**", "**Who should own it?** Decide by four tests. *Reversibility:* can the step be undone? *Stakes:* what does the worst error cost? *Human judgment or empathy:* does the step need care for a person, or a relationship? *Accountability:* is this a decision someone is responsible for?", and "**What supports it?** A standing instruction, an approved concept, a computed report, or a named person's review."
+**A delegation map** (Lesson 9.1): for each step, "who does it today and who should do it from now on". Its three questions, quoted: "**May it go to a worker?**", "**Who should own it?** Decide by four tests. *Reversibility:* can the step be undone? *Stakes:* what does the worst error cost? *Human judgment or empathy:* does the step need care for a person, or a relationship? *Accountability:* is this a decision someone is responsible for? If the step is a decision a person is responsible for, it stays with that person, even when the worker could draft it well. So does a step that needs care for a person.", and "**What supports it?** A standing instruction, an approved concept, a computed report, or a named person's review."
 
-**The three ways to mark a step** (Lesson 9.2), quoted: "An **AI-executed** step is one the worker does, and a person checks a sample of its results. A **human-reviewed** step is one the worker drafts, and a named person checks it before it is used. A **human-retained** step is one a person does."
+**The three ways to mark a step** (Lesson 9.1), quoted: "An **AI-executed** step is one the worker does, and a person checks a sample of its results. A **human-reviewed** step is one the worker drafts, and a named person checks it before it is used. A **human-retained** step is one a person does."
 
 **The nine places a run could be pointed at** (Task 3):
 
@@ -57,20 +57,20 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 - **#ap-help:** the AP team's channel. Everyone in it sees a post at once.
 - **Dave's inbox.**
 
-**The four origins** (Lesson 8.4), as the AP matters record defines them: *observed*, from the system that is the authority for that fact, such as the accounting system; *confirmed*, from a person whose authority covers the fact, such as Maria after a callback; *reported*, from someone without authority over the fact, such as a vendor's email; *inferred*, produced by a model, such as the AP Worker's own flags.
+**The four origins** (Lesson 8.2), as the AP matters record defines them: *observed*, from the system that is the authority for that fact, such as the accounting system; *confirmed*, from a person whose authority covers the fact, such as Maria after a callback; *reported*, from someone without authority over the fact, such as a vendor's email; *inferred*, produced by a model, such as the AP Worker's own flags.
 
-**The initiative ladder** (Lesson 9.6), quoted:
+**The initiative ladder** (Lesson 9.3), quoted:
 
-1. "*Notice.* It reads what it can see and finds something."
-2. "*Suggest.* It tells a named person what it noticed and what it could do."
-3. "*Draft.* It prepares the work, such as a note, a reply or a list, in a place where nothing happens until a person acts."
-4. "*Act.* It changes something outside itself: sends, moves, renames, deletes, pays."
+1. "*Observe.* It reads what it can see and finds something, such as an untidy folder."
+2. "*Recommend.* It tells a named person what it noticed and what it could do."
+3. "*Draft.* It prepares the work in a place where nothing happens until a person acts."
+4. "*Execute.* It changes something outside itself: sends, moves, renames, deletes, pays."
 
-The rules a learner may give: for notice or suggest, "allowed" or "not allowed"; for a draft, "allowed" or "not allowed"; for an act, one of 9.6's four, quoted: "Do it without asking. Do it if pre-approved, which means a person approved that kind of act in advance. Ask first. Or hand it to a person."
+The rules a learner may give: for observe or recommend, "allowed" or "not allowed"; for a draft, "allowed" or "not allowed"; for execute, one of 9.3's four, quoted: "do it without asking, do it if pre-approved (a person approved that kind of act in advance), ask first, or hand it to a person."
 
-**Two kinds of AI Worker** (Lesson 9.5), quoted: "A **Delegated AI Worker** completes a briefed task on its own machine, then stops. A **Standing AI Worker** has a lasting identity, ongoing responsibilities and its own initiative."
+**Two kinds of AI Worker** (Lesson 9.3), quoted: "A **Delegated AI Worker** does each job from a brief, one job at a time. A **Standing AI Worker** keeps working between conversations, on its own schedule or triggers, with a lasting identity and its own initiative."
 
-**The four stages of a deliverable** (Lesson 9.10), quoted. Each stage, and the question it answers:
+**The four stages of a deliverable** (Lesson 9.7), quoted. Each stage, and the question it answers:
 
 - "1. Requirements": "Who decides what, by when, and what does done look like?"
 - "2. Research, with cited sources": "What do good sources say?"
@@ -129,7 +129,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 1. Show the delegation map's three questions, quoted, and the three ways to mark a step, quoted. Then show the steps of thursday-review-today.md, as its table, all ten, with who does each today. Ask: "From now on, who does each step: the worker, Maria, Dave, or nobody? How is it marked, and what supports it? For each step you keep with a person, which of the four tests decides it? Answer: one line per step, starting with its number: who, the mark, the support, then the test for a step kept with a person."
 2. Ask, as a question of your own: "Before you write the note, what do you check that this list does not show? Answer in a few words." Then: "From now on, who does that step, how is it marked, and what supports it? Answer: who, the mark, then the support."
 3. Ask: "Who reviews the note, by what time on Thursday, and who stands in when that person is out? Answer: who, the time, then the stand-in."
-4. Show Lesson 9.2's lines on measuring, quoted: "Then measure. Before you switch, record a baseline, the numbers for how the step works today. Write down how long it takes, how many rounds of correction it needs, and how many errors reach the next person. Run the old way and the new way at the same time for two or three cycles of the work. Keep the new way only if it is better on the numbers you wrote down, not on how it feels." Ask: "What is the review's baseline today, what will you measure, for how long, and when do you keep the new way? Answer: the baseline, what you measure, for how long, then the rule."
+4. Show Lesson 9.1's lines on measuring, quoted: "Last, she measures before she switches. A baseline is the numbers for how a step works today: how long it takes, how many rounds of correction it needs, and how many errors reach the next person. Run the old way and the new way side by side for two or three cycles of the work. Keep the new way only if it is better on those numbers, not on how it feels." Ask: "What is the review's baseline today, what will you measure, for how long, and when do you keep the new way? Answer: the baseline, what you measure, for how long, then the rule."
 
    Write under "What it owes", after "Not this worker's jobs:", a new field "Who does each step of the Thursday review:", with one line per step in the order of thursday-review-today.md, and the learner's new step after the step it comes before or after, as the learner placed it, or after step 4 if they did not say. Each line: the step, who does it from now on, its mark, its support, and for a step kept with a person, the test that decides it. Then "The note's reviewer:", and "Before the new way is kept:".
 
@@ -245,7 +245,7 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
 **After the tests.**
 
-7. Show Lesson 9.7's seven things a next owner gets, quoted: "1. Their name as the owner, written down. 2. Where the instructions, knowledge and skills live. 3. What each run reads and what it produces. 4. The checks, and who does each one. 5. The refresh log for the knowledge. 6. How to tell a run failed, and what to do then. 7. One run watched together, before the handover." Then say: "Jordan Ellis starts on Monday, November 23. Dave wants him able to own both jobs if you ever leave AP." Ask: "What does Jordan get for both jobs? Answer: one line for each of the seven, in order."
+7. Show Lesson 9.4's seven things a next owner gets, quoted: "1. Their name as the owner, written down. 2. Where the instructions, knowledge and skills live. 3. What each run reads and what it produces. 4. The checks, and who does each one. 5. The refresh log for the knowledge. 6. How to tell a run failed, and what to do then. 7. One run watched together, before the handover." Then say: "Jordan Ellis starts on Monday, November 23. Dave wants him able to own both jobs if you ever leave AP." Ask: "What does Jordan get for both jobs? Answer: one line for each of the seven, in order."
 
    Write it under "How we check", as a new last line "Handover, if Maria leaves:", with the seven lines in order. Then say "Task 8 is done".
 
@@ -258,28 +258,26 @@ A test reads the contract and quotes it. It does not answer as the worker, and i
 
    Under "On today's tools", after its last line, write "Claude:" and "ChatGPT:", one line per answer. Write each "none documented", and each "not stated", on the Gap list too, as a new line naming the gap, with no person. Keep every other line. This task has no test. After the last answer, say "Task 9 is done".
 
-**Anthropic, as Lesson 9.8's product reference gives it, verified 18 November 2026:**
+**Anthropic, as Lesson 9.5's product reference gives it, verified 18 November 2026:**
 
-- Schedules: "Scheduled tasks in Claude run at set times, on paid plans."
-- Event triggers: "Claude Code's scheduled tasks can start from an API call or from GitHub events. Anthropic's pages do not describe a task in the Claude app that starts when an email arrives."
-- Each run: "Each scheduled task runs as its own session."
-- Whose name: "A scheduled task in Claude Code belongs to your own account and acts as you." No Anthropic page that Lesson 9.8 cites says whose name a scheduled task in the Claude app runs under.
-- Approvals: "A scheduled task has an approval mode. The modes run from manual approval to 'Skip all approvals.'"
-- Review and stop: "Past runs are on the Scheduled page, where a task can be paused."
+- Schedules: "In the Claude app, a scheduled task runs at set times, on paid plans. A task that uses a folder on your own computer runs only while that computer is awake and Claude Desktop is open."
+- Event triggers: "Claude Code, Anthropic's coding tool, has scheduled tasks of its own. They can also start from GitHub, or from an API call, a request that another program sends. Anthropic's pages describe no task that starts when an email arrives, so write that down as a gap."
+- Whose name: "A scheduled task in Claude Code acts as you. Anthropic's Cowork pages do not say whose name a scheduled task in Claude Cowork runs under, so check before you rely on it."
+- Approvals: "A scheduled task has an approval mode, from manual approval to 'Skip all approvals.' Even then, deleting a file for good always needs your permission."
+- Review and stop: "Past runs are on the Scheduled page, where you can pause a task."
 
-**OpenAI, as Lesson 9.8's product reference gives it, verified 21 November 2026:**
+**OpenAI, as Lesson 9.5's product reference gives it, verified 21 November 2026:**
 
-- Schedules: "Scheduled tasks run once or on a schedule." "Team tasks, on Business and Enterprise, are recurring work owned by a team."
-- Event triggers: "Tasks in ChatGPT can start from Gmail, Slack or GitHub activity. On Enterprise and Edu, an admin must allow this first."
-- Each run: "A scheduled task that is not inside a chat starts a new chat each time it runs." "A team task keeps a list of previous runs."
-- Whose name: "Team tasks run under the team's service account, an account that belongs to the team, not to the creator."
+- Schedules: "A scheduled task runs once or on a schedule." "On Business and Enterprise, a team task is recurring work that a team owns."
+- Event triggers: "Tasks can also start from Gmail, Slack or GitHub activity. On Enterprise and Edu, an admin must allow this first."
+- Whose name: "A team task runs under the team's service account, an account that belongs to the team, not to the person who created the task."
 - Approvals: "Approval rules in connected apps still apply, and an action that needs approval may pause a task."
-- Review and stop, for a dot, OpenAI's always-on agent: "Activity View shows a dot's work. Pause stops its current main task, but not every delegated task, and not its scheduled runs."
+- Review and stop, for a dot, OpenAI's always-on agent: "Activity View shows what a dot did. Pause stops its current main task, but not its scheduled runs. Deleting it does not undo changes it already made in connected apps."
 
 ## Task 10. One page for Dave
 
 1. In "Note to Dave", under its title, write a first line: "To Dave Kowalski, from Maria Lopez, Friday, November 20, 2026." Then write three numbered parts from the Role Contract's lines, each naming the lines it comes from: (1) what runs, and when; (2) what it reads; (3) what it never does. Use only what the contract's lines say. Show them. Ask: "Is each part right? Answer: OK, or what to change, for each."
-2. Show Lesson 9.7's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Then show its lines on underselling, quoted: "Do not undersell it either. A stakeholder told 'it only drafts' may never use a step that works, or may redo by hand what the worker already checked." Ask: "Write part 4 yourself, in one or two sentences: what a person still checks, by name."
+2. Show Lesson 9.4's words to avoid, quoted: "Avoid 'fully automated,' 'by itself' and 'hands-free.' Name the human gate instead." Then show its lines on underselling, quoted: "Do not undersell it either. A stakeholder told 'it only drafts' may redo by hand what the worker already checks." Ask: "Write part 4 yourself, in one or two sentences: what a person still checks, by name."
 3. Ask: "Write part 5 yourself, in one or two sentences: how we will know it failed."
 4. Show the P.S. of dave-request.md, quoted. Ask: "Write part 6 yourself, in one or two sentences: what it is worth, measured."
 5. Ask: "Write its limits yourself, in one or two sentences: what it does reliably, and what it cannot do."
@@ -312,10 +310,10 @@ The fresh run happens in another chat. Nothing more is asked here.
 
 Dave's ask of Monday, November 30, 2026, as the lab page prints it: "Before Thursday's budget meeting, I need to decide one thing. Should we ask the six suppliers in last year's file for 2 percent off for paying within 10 days, from January? Give me a yes or no for each group of suppliers, what it would save, and how much sooner we would pay. One page, my decision first." This task has no test and no run. It reads research-summary.md and paid-invoices-2025.csv, and one real source the learner finds in another chat. Never say whether a claim, a source, a number or a plan answers Dave's question: the learner decides.
 
-1. Show Lesson 9.10's four stages, each with its question, and the table of two checks, quoted. Then show Dave's ask. Ask: "Agree the question first. Who decides, what, by when, and what does 'done' look like? Answer: four short items."
+1. Show Lesson 9.7's four stages, each with its question, and the table of two checks, quoted. Then show Dave's ask. Ask: "Agree the question first. Who decides, what, by when, and what does 'done' look like? Answer: four short items."
 
    In "Note to Dave", after its last line, add a heading, "One plan for next year". Under it write "The question:" and the four items, as the learner gave them. Show them.
-2. Show research-summary.md's summary, quoted, then its sources, quoted. Ask: "Read the source behind the main claim, 'about 68 percent'. Does the claim hold up for the question at the top of your plan? Answer: yes, no or partly, then why in a few words."
+2. Show research-summary.md's summary, quoted, then its sources, quoted. Ask: "Read the source's own words, quoted under Sources, behind the main claim, 'about 68 percent'. Does the claim hold up for the question at the top of your plan? Answer: yes, no or partly, then why in a few words."
 3. Say: "Now find one real source. In a separate chat with Research or web search on, ask what share of suppliers agree to an early-payment discount when a customer asks. Open the source behind the answer's main figure." Ask: "Its publisher, date, link and what it measured? Is that what Dave asked? Answer: four short items, then yes, no or partly. Or say that your app has no Research or web search." Do not search for the learner.
 4. Say "Now the numbers, in code." Run code on paid-invoices-2025.csv: for each supplier_group and currency, the total paid in 2025, 2 percent of it, and the average days from invoice_date to paid_date. Never add two currencies together. If you cannot run code, say so in one line, then add the rows up one at a time, and show each row you added. Show the table. Ask: "Which group will you check? Answer: one group." Show that group's rows from the file. Ask: "Recompute that group's total yourself. Answer: the group, your total, and whether it matches." Then ask: "What is the 2 percent a number of? Answer: the year, the currency, and the assumption behind it."
 5. Say "Now I draft the plan." Draft it as one page for Dave, from this chat only: the question at the top of the plan, the learner's answers on the research and the source, and the code's table. Show the draft under "Draft plan:", and say nothing about whether it is right or complete.

@@ -18,7 +18,7 @@ Task 11 carries checks 25 and 26 of the lab's 31.
     - Notes and drafts go to their folders, never the channel, until a person has checked them.
     - New work built on a run gets its own named reviewer, and builds only on the reviewed version.
     - Passed: all eight.
-    - Missed: any part above missing or wrong, for example Jordan or anyone else in the channel allowed to hold or lift a hold; an approval possible in the channel; Jordan unable to ask for a reply draft; a clash settled by the latest message; or notes posted to the channel before a check.
+    - Missed: any part above missing or wrong, for example Jordan or anyone else in the channel allowed to hold or lift a hold; an approval possible in the channel; a clash settled by the latest message; or notes posted to the channel before a check.
 26. **The tests.**
     - "The channel, December 2": Maria's message is inside her row, and nothing new is done. Jordan's reaches past his row: the worker changes nothing and names Maria. Dave's "approved, go ahead" is not an approval: it changes nothing. By 3:10 p.m., nothing has changed, and the copy of 5155 is still on hold.
     - "Jordan's reply, December 3": the worker drafts the reply to Lakeshore's status question from the reviewed note, into the drafts folder, names Maria as its reviewer, and sends nothing.
@@ -28,13 +28,13 @@ Task 11 carries checks 25 and 26 of the lab's 31.
 
 ## Why
 
-A shared room changes who can ask the worker for things, not who it works for (Lesson 9.9). It works for Dave, whose Authority Envelope bounds it, and it follows the written word, not the latest message. A request works like a brief: it can make the work narrower, never wider. Maria's message kept a hold, inside her row. Jordan's would have lifted it, which is Maria's to decide. And Dave's "approved, go ahead" counts for nothing in the channel, even from Dave: an approval counts only from his own login, where approvals are kept.
+A shared room changes who can ask the worker for things, not who it works for (Lesson 9.6). It works for Dave, whose Authority Envelope bounds it, and it follows the written word, not the latest message. A request works like a brief: it can make the work narrower, never wider. Maria's message kept a hold, inside her row. Jordan's would have lifted it, which is Maria's to decide. And Dave's "approved, go ahead" counts for nothing in the channel, even from Dave: an approval counts only from his own login, where approvals are kept.
 
 The channel is an audience, not a drafts place, so notes and drafts are checked before they go there. And when Jordan builds a reply on the note, that reply is new work with its own reviewer, built on the reviewed version.
 
 ## Never a deduction
 
-- A narrower row than 9.9's, such as only Maria and Dave able to ask for a lookup.
+- A narrower row than 9.6's, such as only Maria and Dave able to ask for a lookup.
 - Dave named as well as Maria for checking a vendor reply.
 - A test that also says the worker would explain the hold to Jordan in the thread.
 - The table's columns in another order.

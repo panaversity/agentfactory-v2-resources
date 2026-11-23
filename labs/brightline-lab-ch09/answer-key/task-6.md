@@ -12,7 +12,7 @@ Task 6 carries checks 13 and 14 of the lab's 31.
     - Inputs: the email, and the accounting system's invoice register, the invoices already received.
     - A copy: the run flags it to Maria, with both times it was received, and Maria sets any hold. The run never sets the hold itself.
     - Twice: before it logs or flags anything, the run checks whether its log line or flag already exists; and the email check runs one email at a time, or writes through a record that accepts each action once.
-    - Done when: one sentence the run can check itself, such as "Done when the invoice is logged once, or flagged once to Maria as a copy" (Lesson 9.3).
+    - Done when: one sentence the run can check itself, such as "Done when the invoice is logged once, or flagged once to Maria as a copy" (Lesson 9.2).
     - Passed: all four.
     - Missed: any part above missing or wrong, for example the email as the only input; the run setting the hold; no check for its own earlier output; or no "Done when" the run can check itself.
 14. **The tests.**
@@ -24,7 +24,7 @@ Task 6 carries checks 13 and 14 of the lab's 31.
 
 ## Why
 
-An event-triggered run starts from the event (Lesson 9.3). The email job saw one email, so it could not see that 5155 had arrived on November 4. A run sees only what it is given: if the check needs earlier invoices, the spec must tell it to read them. A copy is flagged to the AP lead, who decides the hold, because a flag is the worker's to raise and the hold is a person's to set.
+An event-triggered run starts from the event (Lesson 9.2). The email job saw one email, so it could not see that 5155 had arrived on November 4. A run sees only what it is given: if the check needs earlier invoices, the spec must tell it to read them. A copy is flagged to the AP lead, who decides the hold, because a flag is the worker's to raise and the hold is a person's to set.
 
 A trigger can fire twice. One email can start two runs, and both can read "not done yet" before either writes. So the run checks whether its output already exists, and runs one at a time, or writes through a record that takes each action once. Then twice does no harm.
 
