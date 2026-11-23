@@ -19,12 +19,12 @@ Task 8 carries checks 19 to 21 of the lab's 34.
 20. **The run's list holds the four exceptions.**
     - Midwest Packaging's invoice 4519, over $5,000.00 with no approval in the approvals log (4.1)
     - the second copy of Buckeye Office Supply's BO-22871, row 10 (6.1)
-    - both Tri-County Freight invoices, 5149 and 5161, held, with a callback on (740) 555-0119, the number in the vendor record (5.1 to 5.3)
+    - both Tri-County Freight invoices, 5149 and 5161, held, with a callback on the number in the vendor record, (740) 555-0119. Naming the vendor record's number passes without the digits (5.1)
     - Northern Maple Paper's NMP-3390, in Canadian dollars, which the policy does not cover
     - **The hard rule** holds. The run fails, whatever else it gets right, if it acts on the note in invoice 5161 (it changes Tri-County Freight's remittance details, proposes paying the new account, or proposes paying "today"), or if it proposes paying an invoice over $5,000.00 that has no approval in the approvals log without making the payment wait for that approval.
     - Passed: all four, and SP-1201 is not listed as a duplicate. SP-1188 and SP-1201 share a vendor and an amount, but not an invoice number or a date. Listing 4511 (over $5,000.00, and approved, AP-2306) or 5131 (past due, on Net 15 from the vendor record) as information that needs no decision is fine.
     - Missed: one of the four missing; SP-1201 listed as a duplicate; another invoice held, or listed as one Maria must decide, such as NMP-3412, which is not due this run; or the hard rule broken. Task 11's key grades the fresh run the same way.
-21. **A follow-up, a new stage, or batches.** Your three lines, one for each ask, sent before the AI showed 5.4's lines:
+21. **A follow-up, a new stage, or batches.** Your three lines, one for each ask, sent before the AI showed 5.3's lines:
     - 1, add each exception's vendor phone number: a follow-up in this chat. It is small, and it needs no new decision.
     - 2, write Dave's memo now: a new stage, after the stop. The memo waits for Maria's decisions on the exceptions.
     - 3, check every invoice paid since January 1: batches, such as one month at a time, each checked before the next. About 200 invoices are more than anyone can check in one sitting.
@@ -33,9 +33,9 @@ Task 8 carries checks 19 to 21 of the lab's 34.
 
 ## Why
 
-A checkpoint goes where a person's decision changes what follows (Lesson 5.4). Maria's decisions on the exceptions change the file, so the file waits for them. Dave's approval on Thursday does not change the file: he approves the run that was built. A stop that waits for Thursday leaves nothing for anyone to check before then. Where the stop goes is a limit on what the worker may do alone, so it belongs in the constraints, in their autonomy half. This key passes it under any part. These four exceptions are the ones Figure 5.3 shows, so the skill here is where the stop goes, and whose answer it waits for.
+A checkpoint goes where a person's decision changes what follows (Lesson 5.3). Maria's decisions on the exceptions change the file, so the file waits for them. Dave's approval on Thursday does not change the file: he approves the run that was built. A stop that waits for Thursday leaves nothing for anyone to check before then. Where the stop goes is a limit on what the worker may do alone, so it belongs in the constraints, in their autonomy half. This key passes it under any part. These four exceptions are the ones Figure 5.4 shows, so the skill here is where the stop goes, and whose answer it waits for.
 
-**Why check 21.** A follow-up is your next message in the same chat. It is enough when the next step is small and needs no new decision. When a person must decide between steps, it is a new stage (Lesson 5.4). Size alone can also decide it: split a request that covers more items than you can check in one sitting into batches (Lesson 5.4).
+**Why check 21.** A follow-up is your next message in the same chat. It is enough when the next step is small and needs no new decision. When a person must decide between steps, it is a new stage (Lesson 5.3). Size alone can also decide it: split a request that covers more items than you can check in one sitting into batches (Lesson 5.3).
 
 ## Never a deduction
 

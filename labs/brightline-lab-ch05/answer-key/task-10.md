@@ -30,7 +30,7 @@ Great Lakes Label's form also gives a sales email. remit_email is the remit-to a
 
 ## Why
 
-JSON that a system checks is extraction at its tightest (Lesson 5.6). Name every field and its type, and say what to return when a value is missing. A guessed value looks exactly like a real one, and this system rejects the whole file for one. The run had only your brief and the forms, so Riverside Tape's new terms reached it only through your brief.
+JSON that a system checks is extraction at its tightest (Lesson 5.2). Name every field and its type, and say what to return when a value is missing. A guessed value looks exactly like a real one, and this system rejects the whole file for one. The run had only your brief and the forms, so Riverside Tape's new terms reached it only through your brief.
 
 ## Never a deduction
 

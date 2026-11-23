@@ -23,7 +23,7 @@ Task 2 carries checks 3 and 4 of the lab's 34.
 | 2 | Add the terms printed on the invoice to the invoice date | Wrong: the vendor record decides terms (policy 2.1 and 3.3) |
 | 3 | Keep the invoices due on or before October 30. | Keep: a control (policy 3.2). Or move it to the Outcome, as the run's window. Both pass |
 | 4 | Sort them by vendor name. | Leave out, or put it in the Format: a preference |
-| 5 | Open the AP policy file. | Wrong: it names no version. The brief names version 3 as the governed source, and says it wins (Lesson 5.3) |
+| 5 | Open the AP policy file. | Wrong: it names no version. The brief names version 3 as the governed source, and says it wins (Lesson 5.1) |
 | 6 | Mark any invoice over $10,000 for Dave's approval. | Wrong: version 3 says over $5,000.00 (4.1). $10,000 is version 2's |
 | 7 | Remove any row that looks like a duplicate. | Wrong: hold the later copy and tell the AP lead, and never remove a row (6.1). "Looks like" is not 6.1's test |
 | 8 | Convert any foreign-currency amount at today's rate. | Wrong: the policy says nothing about other currencies, so say so, list it for Dave and convert nothing |
@@ -36,7 +36,7 @@ Task 2 carries checks 3 and 4 of the lab's 34.
 
 ## Why
 
-Maria's steps were careful, and the worker followed them exactly, mistakes included (Lesson 5.2). Step 2 is the one that cost Brightline: Lakeshore Janitorial's invoice still prints Net 45, the vendor record says Net 15, and the policy says the vendor record wins. A step belongs in a brief only when it is a control, a step that policy, law or a system that uses the result requires. The test is one question: would a capable new colleague be wrong to do this another way? Her steps also say how, and never what should exist at the end, so the worker had nothing to check its work against.
+Maria's steps were careful, and the worker followed them exactly, mistakes included (Lesson 5.1). Step 2 is the one that cost Brightline: Lakeshore Janitorial's invoice still prints Net 45, the vendor record says Net 15, and the policy says the vendor record wins. A step belongs in a brief only when it is a control, a step that policy, law or a system that uses the result requires. The test is one question: would a capable new colleague be wrong to do this another way? Her steps also say how, and never what should exist at the end, so the worker had nothing to check its work against.
 
 ## Never a deduction
 
