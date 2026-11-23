@@ -33,7 +33,7 @@ Task 10 carries checks 26 to 30 of the lab's 34.
 
 ## Why
 
-One result often goes to several readers (Lesson 6.6). Adapting changes the order, the length and the words, and never the facts. Linda reads on her phone, before a call, and does not know the invoice numbers, so vendor names stand in for them. But one fact did change after the memo was approved: Dave held 4588. The memo cannot know that, and the AI knows it only if you say so. A new fact from its owner goes in. That is the line between adapting and changing a fact: the change came from Dave, not from the rewrite.
+One result often goes to several readers (Lesson 6.3). Adapting changes the order, the length and the words, and never the facts. Linda reads on her phone, before a call, and does not know the invoice numbers, so vendor names stand in for them. But one fact did change after the memo was approved: Dave held 4588. The memo cannot know that, and the AI knows it only if you say so. A new fact from its owner goes in. That is the line between adapting and changing a fact: the change came from Dave, not from the rewrite.
 
 ## Never a deduction
 

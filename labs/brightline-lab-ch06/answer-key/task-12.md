@@ -19,7 +19,7 @@ Task 12 carries check 34 of the lab's 34.
 
 ## Why
 
-A research report reads as one sure answer, but its sources are mixed. Some are official, some are old, and some copy each other (Lesson 6.5). So check the claim a decision rests on, not every footnote. Here that claim is "about 60 percent", because Dave will plan next year's cash on it.
+A research report reads as one sure answer, but its sources are mixed. Some are official, some are old, and some copy each other (Lesson 6.2). So check the claim a decision rests on, not every footnote. Here that claim is "about 60 percent", because Dave will plan next year's cash on it.
 
 Open the source behind it. Three of the four pages the report cites repeat one sentence, so they are one source, and none of them ran a survey. The survey they lean on is from 2018. Read closely, it also says less than the claim: 61 percent "would consider" longer terms, which is not the same as agreeing to net 45.
 
