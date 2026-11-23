@@ -219,7 +219,7 @@ This time the data comes as Maria exported it on December 6: `fictional-vendor-m
 
 1. In your lab chat, type "Task 4" and send it. The AI shows [10.2](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/can-this-data-go-in/#the-way-in)'s question, and three ways in, each with what the AI vendor's own pages say. Answer: which way Brightline's work data may take, for this check and for any other work, which ways it may never take, and who must confirm the way for vendor data first. Then the AI shows 10.2's lines on privacy controls. Answer: whether your answer changes, and why.
 2. Then answer in a few words: what that way must have, in three short lines, and three short answers on the purpose the tax IDs were kept for.
-3. One look outside the chat: open your own Claude or ChatGPT settings, and find the setting that lets your chats be used to improve the models. Tell the AI on, off or skip. It is not graded, and it does not go in the document.
+3. One look outside the chat: find the setting in your own app that lets your chats be used to improve the models. Where it is: [10.6](https://agentfactory.panaversity.org/managing-ai-workers/governance-and-responsible-use/both-ai-vendors/#where-to-set-the-policy-in-your-app), step 2. Tell the AI on, off or skip. It is not graded, and it does not go in the document.
 4. When the AI says "Ready for your test", type `Test: Jordan's laptop` and send it.
 5. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch10-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
