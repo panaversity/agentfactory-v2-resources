@@ -302,7 +302,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows the lines for Anthropic, then for OpenAI, from [9.5's product reference](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/#product-reference), each with its date. For each AI vendor, answer in a line each:
+1. In your lab chat, type "Task 9" and send it. The AI shows the lines for Anthropic, then for OpenAI, from [9.5](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/#set-up-the-recurring-run-in-your-app), each with its date. For each AI vendor, answer in a line each:
    - the feature for each job, or "none documented"
    - whose name, or "not stated"
    - how its runs are read and stopped
