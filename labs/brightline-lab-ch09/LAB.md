@@ -302,12 +302,12 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows the lines for Anthropic, then for OpenAI, from [9.5's product reference](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/#product-reference), each with its date. For each AI vendor, answer in a line each:
+1. In your lab chat, type "Task 9" and send it. The AI shows the lines for Anthropic, then for OpenAI, from [9.5](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/#how-to-schedule-a-recurring-run-in-your-app), each with its date. For each AI vendor, answer in a line each:
    - the feature for each job, or "none documented"
    - whose name, or "not stated"
    - how its runs are read and stopped
 2. This task has no test. When the AI says "Task 9 is done", **check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
-3. If you have a paid Claude plan, you can also set the Thursday review up as a real scheduled task there. Nothing in this lab needs it: Task 12's fresh chat stands in for the scheduled run.
+3. If you have a paid Claude plan, you can also set the Thursday review up as a real scheduled task there, with [9.5](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/#how-to-schedule-a-recurring-run-in-your-app)'s steps. Nothing in this lab needs it: Task 12's fresh chat stands in for the scheduled run.
 
 **Checkpoint.** Checks 21 and 22 passed. A good place to stop.
 
