@@ -28,11 +28,11 @@ For checks 38, 39 and 42 you answer before the AI shows the lesson's lines, and 
 
 ## Why
 
-A fix that stays in one chat will be needed again by someone else (Lesson 11.6). Ask one question of each correction: is it a rule, a reference, a procedure or a boundary? A rule is a limit that always applies, so it loads with every conversation. Steps done in order belong in a skill, because "a procedure written as one instruction loses its steps".
+A fix that stays in one chat will be needed again by someone else (Lesson 11.3). Ask one question of each correction: is it a rule, a reference, a procedure or a boundary? A rule is a limit that always applies, so it loads with every conversation. Steps done in order belong in a skill, because "a procedure written as one instruction loses its steps".
 
-The promise is material the worker must read, so it lives in the KSoR, through its owner. A change to an approved rule or concept is escalated, not made (Lesson 11.5): Maria sends Dave the log and a draft, and Dave decides.
+The promise is material the worker must read, so it lives in the KSoR, through its owner. A change to an approved rule or concept is escalated, not made (Lesson 11.3): Maria sends Dave the log and a draft, and Dave decides.
 
-Measure before you switch: a baseline, a metric that fits the work, and the old and new setups side by side for a few cycles. "One clean run is a first check, not proof" (Lesson 11.5).
+Measure before you switch: a baseline, a metric that fits the work, and the old and new setups side by side for a few cycles. "One clean run is a first check, not proof" (Lesson 11.3).
 
 ## Never a deduction
 

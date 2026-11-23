@@ -17,7 +17,7 @@ Task 1 carries checks 1 to 2 of the lab's 52.
 
 ## Why
 
-Dave's two fixes change the biggest things in sight: the model, and every brief. Lesson 11.3 says to find the place first, because "the most expensive change, such as a stronger model or a full rewrite, often fixes none of the real causes". So the first step is only a place to look. A fix is not a place.
+Dave's two fixes change the biggest things in sight: the model, and every brief. Lesson 11.2 says to check the cheapest place first: "Dave's two changes are the most expensive on the list, so they come last." So the first step is only a place to look. A fix is not a place.
 
 The test ran Draft 7, the lines that ran the week, on your own app. Keep its reply in the chat. Task 13 runs the same five cases again, on the same app, with the contract you will have fixed by then, so you can compare the two replies line by line.
 

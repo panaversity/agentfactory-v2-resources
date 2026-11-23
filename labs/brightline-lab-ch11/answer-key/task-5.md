@@ -20,7 +20,7 @@ Task 5 carries checks 18 to 20 of the lab's 52.
 
 ## Why
 
-Jordan's request named no source, so the drafts filled the gap with one set of terms for every vendor (Lesson 11.5). The fix is the brief's Context: where each fact must come from, and what to do when it is not there. Written into the contract's line for replies like his, it holds for his next request, and for anyone else's.
+Jordan's request named no source, so the drafts filled the gap with one set of terms for every vendor (Lesson 11.3). The fix is the brief's Context: where each fact must come from, and what to do when it is not there. Written into the contract's line for replies like his, it holds for his next request, and for anyone else's.
 
 The test is the same Wednesday, re-run. Each vendor's terms now come from its own record, and the register shows the credit memo and the payment dates, so each reply can explain its own difference. Mad River's discount was right: the reply says so, from its terms and its dates.
 

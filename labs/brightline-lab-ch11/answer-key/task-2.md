@@ -25,9 +25,9 @@ Task 2 carries checks 3 to 6 of the lab's 52.
 
 Lesson 11.1's order is stop, inspect, contain, correct, verify, resume. Containment comes before the cause, so it holds and checks, and fixes nothing yet. A brief changed now is a guess, and a deleted row is evidence gone.
 
-"The record tells you what the worker reports it did. Only the connected systems tell you what actually changed." A draft in the drafts folder changed nothing. A saved note, a register row and a sent email each changed a system, so each is checked in that system. Record D says "Maria sent them"; the sent folder shows it.
+A task record is "the worker's own report", and "only the connected systems can show" what changed (Lesson 11.1). A draft in the drafts folder changed nothing. A saved note, a register row and a sent email each changed a system, so each is checked in that system. Record D says "Maria sent them"; the sent folder shows it.
 
-A failure is every output since the fault began (Lesson 11.5). So Tuesday's silent emails, Dave's empty note and the five vendors' replies each need putting right, not only the next run.
+A failure is every output since the fault began (Lesson 11.3). So Tuesday's silent emails, Dave's empty note and the five vendors' replies each need putting right, not only the next run.
 
 ## Never a deduction
 

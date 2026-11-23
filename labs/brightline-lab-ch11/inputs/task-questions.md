@@ -51,7 +51,7 @@ Maria's reports to Dave, Friday afternoon, January 15, 2027. Show them where a t
 
 Show a list the first time a question asks for it, quoted as here, and never a hint of which one fits.
 
-**The five causes** (Lesson 11.3):
+**The five causes** (Lesson 11.2):
 
 | Cause | What it means | When it usually shows |
 | --- | --- | --- |
@@ -61,17 +61,28 @@ Show a list the first time a question asks for it, quoted as here, and never a h
 | Capacity | Too much context, a usage limit, or the wrong feature or model | Gets worse over time, stops at a limit, or one repeated kind of error |
 | Task fit | The task asks for something the tool cannot do | Never right, however you ask |
 
-With the table, quote: "The time a failure appears tells you where to look first. It does not prove the cause." And: "Do not stop at the first cause, because one failure can live in two places."
+With the table, quote: "The time a failure appears tells you where to look first. It does not prove the cause." And: "And do not stop at the first cause, because one failure can live in two places."
 
-**The checks for a missing output** (Lesson 11.2), quoted: "When an expected output is missing, do not change the brief, the job's written instructions, yet. The brief may not be the cause. First check for a pending approval or question, a pause, a usage limit, a broken connector or a different destination." And from 11.3: "These five checks are for a wrong output. For a missing output, run the 11.2 checks first."
+**The drift table** (Lesson 11.2), for a setup that worked and then changed:
 
-**The three levers** (Lesson 11.5):
+| What you see | The layer | First check |
+| --- | --- | --- |
+| Drafts break a rule they used to follow | Instructions | Was an instruction edited? Does a newer one conflict with it? |
+| Drafts cite an old file or a retired rule | Knowledge | Open the file the draft cites, and check its date. Is a replaced file still in the project? |
+| Every run of one task now uses new steps or a new layout | Skill | Was the skill updated to a new version? |
+| Drafts carry details from another customer or an old chat | Memory | Read the saved memories, and delete the ones that hold those details |
+
+With the drift table, quote: "Knowledge and memory are inputs, and a skill can change the brief or the tools."
+
+**The checks for a missing output** (Lesson 11.1), quoted: "When an expected output is missing, do not change the brief yet. First check for a pending approval or question, a pause, a usage limit, a broken connector or a different destination." The five causes are for a wrong output. For a missing output, run these checks first.
+
+**The three levers** (Lesson 11.3):
 
 - **The brief:** the job's written instructions.
 - **The inputs:** the sources the job reads.
 - **The permissions:** what the job may reach and do.
 
-**The four homes** (Lesson 11.6):
+**The four homes** (Lesson 11.3):
 
 | The fix is a | What that means | It goes to |
 | --- | --- | --- |
@@ -80,7 +91,7 @@ With the table, quote: "The time a failure appears tells you where to look first
 | Procedure | Steps done in order | A skill, a saved procedure the worker follows |
 | Boundary | What the worker may reach or do | The Authority Envelope |
 
-With the table, quote 11.6's three signs: "*Repetition* means you give the worker the same thing every run. *Correction* means you fix the same flaw every time. *Variance* means different people get different results." And add one more choice: **Not yet:** seen once, so keep watching it.
+With the table, quote 11.3's three signs: "*Repetition* means you give the worker the same thing every run. *Correction* means you fix the same flaw every time. *Variance* means different people get different results." And add one more choice: **Not yet:** seen once, so keep watching it.
 
 **Chapter 5's four parts of a brief:**
 
@@ -125,7 +136,7 @@ Write each answer under "First places to look" as one line: the day, then the le
 
 Its day is Friday, January 15, 2027, afternoon. The next payment run is Friday, January 22, 2027.
 
-1. Show Lesson 11.1's six steps, quoted: "1. *Stop* the run. Pause any job that runs on a schedule, or that starts when something happens, until you know the cause. 2. *Inspect* the task record before you decide what went wrong. 3. *Contain* the harm. Hold anything the run set in motion, such as a payment, and have a person do the job by hand. Remove risky access the job does not need: unused connectors to other apps, write access and the ability to send messages. 4. *Correct* the cause, once you know it. 5. *Verify* everything the run affected outside the conversation: messages, files and records. 6. *Resume* the work with approvals on." And: "The record tells you what the worker reports it did. Only the connected systems tell you what actually changed."
+1. Show Lesson 11.1's six steps, quoted: "1. *Stop* the run, and pause any scheduled or event-triggered job until you know the cause. 2. *Inspect* the task record before you decide what went wrong. 3. *Contain* the harm. Hold anything the run set in motion, such as a payment, and have a person do the job by hand. Remove access the job does not need: unused connectors, write access, the ability to send. 4. *Correct* the cause, once you know it. 5. *Verify* everything the run affected: messages, files and records. 6. *Resume* with approvals on." And: "Read it for what it is: the worker's own report." "Only you, as the job's owner, can define outcome evidence, and only the connected systems can show it."
 
    Then show the two recurring jobs, from the contract's Triggers: the line on whose account they run in, and the Thursday pre-run review's and the invoice email check's "When:" lines. Ask: "For each job: pause it or leave it running, and who does its work by hand meanwhile? Answer: for each job, pause or leave, then who." Write the answer under "Stop and hold". Then ask question 2.
 2. Show Maria's four reports again. Then show what the week left behind, one item at a time:
@@ -175,13 +186,13 @@ Then say "Ready for your test".
 
 **Before the second test.**
 
-2. Show Lesson 11.2's first rule, quoted: "**Say something every time.** 'Checked 9 invoices, 1 possible duplicate' is a result. Silence means success only when a check outside the job shows it ran (Chapter 9). A job that never starts cannot report on itself." Then show the contract's lines under "How we check". Ask: "A daily check from outside the email job: what does it compare, and does it compare by message ID or by count? When does it run, and whom does it tell? Answer: what it compares, then ID or count, then when and who."
+2. Show Lesson 11.1's first rule, quoted: "**Say something every time.** 'Checked 9 invoices, 1 possible duplicate' is a result. Silence means success only when a check outside the job shows it ran (9.2). For an event-triggered job, that check matches each invoice email received to a check run on it, by the email's message ID, its unique code. Counting is not enough: one email checked twice and another missed still give the same count." Then show the contract's lines under "How we check". Ask: "A daily check from outside the email job: what does it compare, and does it compare by message ID or by count? When does it run, and whom does it tell? Answer: what it compares, then ID or count, then when and who."
 
    Write a new line under "How we check", after the line on who checks that the note arrived: the daily check, as the learner said it.
-3. Show Lesson 11.4's lines, quoted: "On plans with a fixed allowance ... work in different places in one account usually draws from **one pool**." "*Keep recurring work* on an account whose budget is planned for it, away from one-off work." "Never solve a limit by moving work to a personal account the company never approved." Then show 11.7's usage rows, as verified 21 November 2026: Anthropic, "*Settings > Usage*: progress bars for the session and weekly limits, with reset times"; OpenAI, "Usage dashboard". Then show the contract's Identity line and the two jobs' "When:" lines. Ask: "The account Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it? Answer: what runs on it, then who owns it, then who checks and when, then what never runs."
+3. Show Lesson 11.2's lines, quoted: "On plans with a fixed allowance, three facts hold on both AI vendors. Work in different places in one account usually draws from **one pool**, a single shared allowance." "So keep recurring work on an account whose budget is planned for it, away from one-off work, and brief well the first time, because three rounds of corrections cost three runs. Never move it to a personal account the company never approved: that is shadow AI." Then show 11.4's usage rows, as verified 18 November 2026 for Anthropic and 21 November 2026 for OpenAI: Anthropic, "*Settings > Usage*: progress bars for the session and weekly limits, with reset times"; OpenAI, "The usage dashboard, or `/status` in a Codex CLI session". Then show the contract's Identity line and the two jobs' "When:" lines. Ask: "The account Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it? Answer: what runs on it, then who owns it, then who checks and when, then what never runs."
 
    In the contract, change each line that says the jobs run in Maria's account, the Identity line's last sentence and the first line under "Triggers", to say that the work the learner named runs on the account Dave pays for, with the learner's owner, check and rule. Keep the Identity line's Target sentence. Say so in the daily check's line too, if it runs there.
-4. Show 11.7's rows, as verified 21 November 2026, and 18 November 2026 for Anthropic: "A quiet event-triggered task": Anthropic, "For Claude Code's scheduled tasks, you can ask `/schedule` why a task did nothing"; OpenAI, "Check for a pause or a pending approval, and confirm the app is still connected". "Scheduled runs": Anthropic, "*Scheduled* in the sidebar: upcoming and past runs. Each scheduled task runs as its own session"; OpenAI, "*Scheduled* page: review results, pause or resume". "Why a task pauses": OpenAI, "Needs approval, needs further action, inactive, or its chat was archived or deleted". Ask: "If the daily check's message does not appear one evening, what does Maria check first, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, a few words each."
+4. Show 11.4's rows, as verified 18 November 2026 for Anthropic and 21 November 2026 for OpenAI. "Did it run?": Anthropic, "Open *Scheduled* in the sidebar. It shows upcoming and past runs, and there you can pause, resume, run on demand, edit or delete a task. Each scheduled task runs as its own session."; OpenAI, "Open the *Scheduled* page, also reached from Settings > Notifications ('Manage tasks'). It shows results, and you can pause or resume a task there." "Why it paused": OpenAI, "A task pauses when it needs approval or further action, when it is inactive, or when its chat was archived or deleted. A quiet event-triggered task may also have lost the connection to its app, so confirm the app is still connected." And from "How the two compare": "Only OpenAI's pages list the reasons a scheduled task pauses, so on OpenAI start with that list. On Anthropic, start with the run itself." Ask: "If the daily check's message does not appear one evening, what does Maria check first, on Claude and on ChatGPT? Answer: Claude, then ChatGPT, a few words each."
 
    Write it as a new line under "How we check", after the daily check's line.
 
@@ -229,7 +240,7 @@ Its day is Monday, January 18, 2027.
 
 **Before the first test.**
 
-1. Show the Thursday review's "Inputs:" line from the contract. Then show `registers/README.md` in full. Then show 11.7's "Files for scheduled work" row, as verified 18 and 21 November 2026: Anthropic, "Tasks use the connectors and plugins you have set up. A task with a folder on your own computer has 'Require this computer' turned on. It runs only while that computer is awake and Claude Desktop is open. A cloud session reaches your folders only while the desktop app is open. So check whether the task requires this computer."; OpenAI, "A scheduled task created in a project cannot reach uploaded files or project files." Ask: "Change one: which file does the review open, how does it open it, and where does that file live? Answer: the file, then how, then where."
+1. Show the Thursday review's "Inputs:" line from the contract. Then show `registers/README.md` in full. Then show 11.4's rows on files, as verified 18 November 2026 for Anthropic and 21 November 2026 for OpenAI: Anthropic, "A task with a folder on your computer has 'Require this computer' turned on, and runs only while that computer is awake and Claude Desktop is open. Tasks use the connectors and plugins you have set up. A cloud session reaches your folders only while the desktop app is open."; OpenAI, "A scheduled task created in a project cannot reach uploaded files or project files." Ask: "Change one: which file does the review open, how does it open it, and where does that file live? Answer: the file, then how, then where."
 
    In the contract, change item 1 of the Thursday review's "Inputs:" line to the learner's answer. Keep items 2 and 3 as they are.
 
@@ -239,7 +250,7 @@ Then say "Ready for your test".
 
 **Before the second test.**
 
-2. Show Lesson 11.2's two rules, quoted, and nothing more: "**State the input first.** ... Then a wrong file would show on the first line." and "**Fail loudly when the input looks wrong.** If the input is missing, out of date or far smaller than usual, stop and say so." Then show the Thursday review's "If an input is missing or not dated that morning:" line from the contract. Ask: "Change two: what does the note's first line state, when does the review stop instead of writing a note, and whom does it tell? Answer: the first line's parts, then when it stops, then who."
+2. Show Lesson 11.1's two rules, quoted whole, and nothing more: "**State the input first.** The Thursday note should have begun 'Register: AP Register 2027, last entry January 13, 31 open invoices due.' Then a wrong file would show on the first line." and "**Fail loudly when the input looks wrong.** If the input is missing, out of date or far smaller than usual, stop and say so." Then show the Thursday review's "If an input is missing or not dated that morning:" line from the contract. Ask: "Change two: what does the note's first line state, when does the review stop instead of writing a note, and whom does it tell? Answer: the first line's parts, then when it stops, then who."
 
    In the contract, add the learner's answer as a new line after the "If an input is missing" line. Keep that line as it is.
 
@@ -257,7 +268,7 @@ Its day is Monday, January 18, 2027. Friday is Friday, January 15, 2027.
 2. Ask: "Maria sent all five. Which check did she skip before she did? Answer: a few words."
 
    Write answers 1 and 2 under "Friday". In the contract, add the skipped check under "Replies and handoffs", as a line on what Maria does before she sends a reply.
-3. Show Lesson 11.5's lines, quoted: "Access can be wrong in two ways: too narrow or too wide." "Widening access to make an error go away is a bad fix." Then show the contract's "The two jobs' access:" line under "Settings", and Record D's note from IT. Ask: "After the fix, what does the connection that replies use reach: which folder, and read or write? Answer: the folder, then read or write."
+3. Show Lesson 11.3's lines, quoted: "Access can be too narrow or too wide." "Widening access to make an error go away is a bad fix." Then show the contract's "The two jobs' access:" line under "Settings", and Record D's note from IT. Ask: "After the fix, what does the connection that replies use reach: which folder, and read or write? Answer: the folder, then read or write."
 
    In the contract, add a new line under "Settings": the connection replies use, as the learner said it.
 
@@ -291,11 +302,11 @@ Write each answer under "Monday: the replies that stopped". Then say "Ready for 
 **After the Inspect.**
 
 3. Show the five vendors' names: Kenton Box & Crate, Hillcrest Pallet Co., Northern Maple Paper, Cardinal Freight and Mad River Plastics. Ask: "For each vendor: is its reply done, and if not, what is left to do? Answer: the vendor, then done or what is left, for each."
-4. Show Lesson 11.2's lines, quoted: "A restart is safe for an action that gives the same result when done twice, such as rewriting a report file. An action that adds something, such as a row in a queue, a message or a payment, adds it again." Then show Record E's line on what the run does for each vendor. Ask: "Which of the run's actions does no harm if done twice, and which adds something? And if the run went again from the top, as Dave says, what would the drafts folder hold for each vendor? Answer: the action that does no harm, the action that adds, then what the folder would hold."
+4. Show Lesson 11.1's lines, quoted: "An action that gives the same result when done twice, such as rewriting a report file, is safe to repeat. An action that adds something, such as a row in a queue, a message or a payment, adds it again." Then show Record E's line on what the run does for each vendor. Ask: "Which of the run's actions does no harm if done twice, and which adds something? And if the run went again from the top, as Dave says, what would the drafts folder hold for each vendor? Answer: the action that does no harm, the action that adds, then what the folder would hold."
 5. Show the last sentence of the run's last message, quoted: "Run me again and I will finish." Ask: "Does this run carry on from where it says it stopped, or does a new run start? And what does it start from? Answer: carry on or new, then from what."
 
    Write answers 3, 4 and 5 under "Monday: the replies that stopped".
-6. Show Lesson 11.2's words, quoted: "before a run adds anything, it checks whether that thing is already there." Then show the "Twice:" line under "The invoice email check, standing spec", and the contract's lines under "Replies and handoffs". Ask: "Your line for replies, so a restart adds nothing twice: what does a run check before it saves a draft? What does it do when a draft is there with its notice? And when one is there without its notice, what does it do, and whom does it tell? Answer: a few words."
+6. Show Lesson 11.1's words, quoted: "So read the record, then look where the work lands and list what is there. Restart from the inputs and that list, not from the conversation." And: "So tell the worker to skip anything already on your list." Then show the "Twice:" line under "The invoice email check, standing spec", and the contract's lines under "Replies and handoffs". Ask: "Your line for replies, so a restart adds nothing twice: what does a run check before it saves a draft? What does it do when a draft is there with its notice? And when one is there without its notice, what does it do, and whom does it tell? Answer: a few words."
 
    In the contract, add the learner's line as a new line under "Replies and handoffs", after the rule for an attachment the worker cannot retrieve, starting "Before a run saves a draft:".
 
@@ -340,15 +351,15 @@ Its day is Monday, January 18, 2027.
    Write each answer under "Where each correction lives".
 
    Then show the four homes, with the three signs and "Not yet". Ask: "Would you move any correction to another home? Answer: which one, where, and why, or 'none'." Write any move under "Where each correction lives", beside the first answer, which stays. In the contract, write each one whose home, after any move, is not "not yet": a rule under a new "Standing instructions:" field, after "Memory"; a reference under "Knowledge sources"; a procedure under "Skills"; a boundary under the Authority Envelope part it names. Write each as the fix, in the learner's words: what the worker does from now on, never the failure.
-2. Show Dave's words from his ask: "The 15-day promise to small suppliers is in my memo of March 3, 2025." Show the contract's Knowledge sources lines. Then show Lesson 11.5's lines, quoted: "Some causes point to a change you may not make yourself. Then you escalate: you pass the problem to the person who owns that decision, with the record line that shows the cause and what you have already contained. Escalate when the fix would change an approved rule or concept, widen access, change money or a promise that has already gone out, or go beyond the Role Contract." Ask: "The small-supplier promise: may Maria add it to the worker's rules herself, or does it go to its owner, and who is that? Answer: Maria's, or the owner's, then who."
+2. Show Dave's words from his ask: "The 15-day promise to small suppliers is in my memo of March 3, 2025." Show the contract's Knowledge sources lines. Then show Lesson 11.3's lines, quoted: "Some fixes are not yours to make. Then you escalate: pass the problem to the person who owns that decision, with the record line that shows the cause and what you have contained. Escalate when the fix would change an approved rule or concept, widen access, change money or a promise that has already gone out, or go beyond the Role Contract." Ask: "The small-supplier promise: may Maria add it to the worker's rules herself, or does it go to its owner, and who is that? Answer: Maria's, or the owner's, then who."
 
    Write it under "Where each correction lives", and in the contract under "Knowledge sources", after the line on the small-supplier promise.
-3. Show Lesson 11.6's lines, quoted: "Before changing anything, take a **baseline** (Chapter 9). A baseline is one unchanged run, with its time, revision rounds and manual steps." "Choose the metric, the thing you measure, that matches the work." Show the log's row for January 7. Ask: "Against the January 7 baseline, what do you measure first for this note, and why? Answer: what you measure, then why in a few words."
+3. Show Lesson 11.3's lines, quoted: "Before changing anything, take a **baseline** (Chapter 9): one unchanged run, with its time, revision rounds and manual steps." "Measure what matters for the work: for a payments note, accuracy before speed." Show the log's row for January 7. Ask: "Against the January 7 baseline, what do you measure first for this note, and why? Answer: what you measure, then why in a few words."
 
    Write it under "Where each correction lives". In the contract, add a new line after "Before the new way is kept:", starting "Before Draft 8 is kept:", with the measure the learner gave.
 4. Show no lesson lines yet. Ask: "How many Thursdays do the old and new setups run side by side? Do approvals stay on meanwhile? When does the worker get back its normal authority, the authority its contract gives, and who agrees? Answer: the number, then yes or no, then when and who."
 
-   Write it under "Where each correction lives". Then show Lesson 11.6's line, quoted, and nothing after it: "Then run the old and new setups at the same time for two or three cycles before you switch." And Lesson 11.5's: "*Resume with approvals on.* One clean run is a first check, not proof. Return to the normal authority in the Role Contract, the worker's one-page job definition, only when the worker's owner agrees the fix has worked. Never go beyond the Role Contract." Ask: "Does your answer change? Answer: 'no', or the new answer and why." Write any change beside the first answer, which stays. In the contract, write the final answer at the end of the "Before Draft 8 is kept:" line.
+   Write it under "Where each correction lives". Then show Lesson 11.3's line, quoted, and nothing after it: "Run the old and new setups side by side for two or three Thursdays before you switch." And Lesson 11.1's: "6. *Resume* with approvals on. Give back only the authority its Role Contract, the document that sets the worker's job and limits, allows, once the worker's owner agrees the fix has worked. One clean run is a first check, not proof." Ask: "Does your answer change? Answer: 'no', or the new answer and why." Write any change beside the first answer, which stays. In the contract, write the final answer at the end of the "Before Draft 8 is kept:" line.
 5. Now date the contract. Change its first line to "Role Contract: AP Worker, Draft 8, Monday, January 18, 2027", and take out the line "As it stood on Monday, January 11, 2027." Add under "Change log": "- Monday, January 18, 2027, Dave Kowalski: Draft 8, the fixes of the week of January 11." Show the first line and the change-log line. Say "Task 11 is done".
 
 ## Task 12. Four more records
@@ -357,7 +368,7 @@ Its day is Thursday, February 4, 2027.
 
 **Before the Inspect.**
 
-1. Show the five causes. Then show Record 1 from february-records.md, in full. Ask: "Where does it live? The cause, or two, each with the step that shows it, and your one-minute check. Answer: the cause, the step, then the check, for each cause."
+1. Show the five causes and the drift table. Then show Record 1 from february-records.md, in full. Ask: "Where does it live? The cause, or two, each with the step that shows it, and your one-minute check. Answer: the cause, the step, then the check, for each cause."
 2. Show the contract's lines on bank details: A12 under "Never automated", and the first line under "Escalation triggers". Ask: "And Greenway's request to send future payments to a new account: what happens to it now? Answer: a few words."
 3. The same question as 1 for Record 2, then for Record 3, then for Record 4, each shown first, in full.
 
