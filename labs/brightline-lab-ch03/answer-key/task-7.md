@@ -1,17 +1,20 @@
-# Lab 3 answer key: Task 7. The one number, and which part broke
+# Lab 3 answer key: Task 7. Draft 2
 
 The answers for Task 7 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the sum and the three diagnoses are written in your document, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When Draft 2 is in your document, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 7 carries checks 15 to 17 of the lab's 22.
+Task 7 carries checks 18 and 19 of the lab's 22.
 
-15. **The items add up to $4,000.00.** 2,860.00 − 795.00 − 310.00 + 270.00 + 1,975.00 = 4,000.00, and $0.00 is unexplained. Missed: a different sum, or no sum.
-16. **Each of October 1's failures has its part.** Dave's 9 a.m. line: the first 10, because nothing told the worker this task must change nothing. Maria's 11 a.m. register: the middle 80. The three questions do not find it, because her register was right: it shows up as time, not errors. Dave's 4 p.m. unread flag: the final 10, because the problem was visible in the evidence and nobody read it. Missed: any of the three in the wrong part.
-17. **One sentence for Dave.** It says, in your words, that his 9 a.m. line skipped the first 10 percent: no date, no limit, no stop rule, no evidence asked for. Missed: a sentence that blames the worker.
+18. **Each lesson lives where every future run reads it.** Recommend only for reconciliations goes in the Role Contract: the register's execute line narrows to building the weekly register, marked CHANGED, or a NEW line says reconciliations are recommend only. The rules every reconciliation needs go in "Standing instructions: statement reconciliation", marked NEW: the date in the reply, timing or real, the evidence, the success test, the stop rule and the never list. This month's statement date and the October 5 deadline stay in the brief. This reconciliation becomes a test case under Evaluations. It names the case, the Midwest September statement, and its known answer stays with Dave, not in the contract. Where the register's authority narrows, the Tools line follows: the register is read-only for a reconciliation. The stop rule and the never list may sit in the standing instructions or in the contract's Escalation and Authority, because every run reads both. Missed: a lesson every reconciliation needs left only in this month's brief, a month's date written into the standing instructions, or no test case under Evaluations.
+19. **Marks, and a review time.** Every Draft 1 line is written out, each edit marked CHANGED or NEW, and Dave's review of the contract has a time, such as monthly. Missed: an unmarked edit, or no review time.
 
 ## Why
 
-Fixing the wrong part is common: people retrain the worker when the brief was vague, or rewrite the brief when nobody read the evidence. None of October 1's three failures was the worker's. All three came from how people briefed, watched or reviewed.
+A worker that may only observe the register in a task should not hold write access in it. Read-only access is the strongest limit (3.7), so the Tools line follows the authority. A rule told in the chat fixes this run. A rule written in the specification fixes every run after it. For a standing worker, the first 10 percent is mostly written once, in its Role Contract and standing instructions, so the next request can be one line.
+
+## Take it to work
+
+Put each lesson where every future run reads it, not in this month's request.
