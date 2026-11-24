@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 3 carries checks 5 and 6 of the lab's 27.
+Task 3 carries checks 5 and 6 of the lab's 26.
 
 5. **The run's date, and its window, in full.** Your Outcome gives the run's date as Friday, October 23, 2026, and says the run covers invoices due on or before Friday, October 30, 2026, the next run.
    - Passed: both dates, each with its month, day and year. A weekday is fine either way. "Due by the next run, Friday, October 30, 2026" passes.

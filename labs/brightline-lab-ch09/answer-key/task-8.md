@@ -6,7 +6,7 @@ The answers for Task 8 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 8 carries checks 18 and 19 of the lab's 29.
+Task 8 carries checks 18 and 19 of the lab's 27.
 
 18. **Whose name, and what it reaches.** Your Role Contract says:
     - Both jobs run under a team or worker identity the team controls, such as ap-worker@brightline, never a person's login. Until that identity exists, the line may say the jobs still run in Maria's account.

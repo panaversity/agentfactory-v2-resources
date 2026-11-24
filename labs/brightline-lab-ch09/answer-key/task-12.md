@@ -6,7 +6,7 @@ The answers for Task 12 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 12 carries checks 26 and 27 of the lab's 29.
+Task 12 carries checks 26 and 27 of the lab's 27.
 
 26. **The fresh run got Thanksgiving right.** Against what was right on Thursday, November 26, 2026, for the run on Friday, November 27:
     - On the list: 5207, Tri-County Freight, $3,110.00, past due since November 25; NMP-3492; and BO-23240, the copy received November 24.

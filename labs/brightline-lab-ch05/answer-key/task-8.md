@@ -6,9 +6,9 @@ The answers for Task 8 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 8 carries checks 16 and 17 of the lab's 27.
+Task 8 carries checks 15 and 16 of the lab's 26.
 
-16. **One stop, after the exceptions, answered by Maria.**
+15. **One stop, after the exceptions, answered by Maria.**
     - Your brief has a stop after the exceptions, and says Maria answers it. An ask line you kept from Lesson 5.1's brief, such as "Ask only if the invoice list and the vendor records disagree", is fine beside it.
     - Before the stop, the run lists the exceptions for Maria to decide, and builds nothing. How each one is named or sorted is not graded.
     - Your brief says what the run does after Maria's answer: build the CSV and the memo from her decisions.
@@ -16,7 +16,7 @@ Task 8 carries checks 16 and 17 of the lab's 27.
     - The run stopped after the exceptions, and built nothing.
     - Passed: all five. The stop may sit under any part.
     - Missed: no stop; a stop that waits for Dave, or for Thursday; a first stage that builds the CSV; or no line for what happens after the stop.
-17. **The run's list holds the four exceptions.**
+16. **The run's list holds the four exceptions.**
     - Midwest Packaging's invoice 4519, over $5,000.00 with no approval in the approvals log (4.1)
     - the second copy of Buckeye Office Supply's BO-22871, row 10 (6.1)
     - both Tri-County Freight invoices, 5149 and 5161, held, with a callback on (740) 555-0119, the number in the vendor record (5.1 to 5.3)

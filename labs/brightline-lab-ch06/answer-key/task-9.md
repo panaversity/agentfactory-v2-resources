@@ -6,24 +6,23 @@ The answers for Task 9 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 9 carries checks 21 and 22 of the lab's 31.
+Task 9 carries checks 21 and 22 of the lab's 30.
 
 21. **Return, or approve only after named fixes.** Under "The decision on the package" in your Review findings, the decision is one of these:
     - return, with a line of why
     - approve after named fixes, with a fix for every problem in your Review findings, the checks to run again, and Dave's approvals from his own login first: of the run as a whole, and of 4533 if it is to be paid on Friday (policy 4.1 to 4.3)
     - Passed: return, with its line of why; or approve after fixes, with all three: the fixes, the checks to run again, and the approvals, the run's and, if 4533 is paid on Friday, 4533's.
-    - Lesson 6.2's words pass too. "Requires revision" fits the fixes the worker can make. "Requires human correction" fits what only a person can close, such as Dave's approval of 4533 from his own login. "Ready to use" is approve as delivered, and it is Missed.
     - Missed: approve as delivered; return with no why; or approve after fixes with a problem left unfixed, no checks to run again, the run's approval left out, or 4533 paid on Friday without its approval.
 22. **One line for Maria's brief.**
     - Your line for Maria's next brief would have stopped the worst of it, the invented approval or the paid duplicate, and names the part of the brief it goes in. Lines that pass, in any words: an approved row gives its approval ID from the approvals log, or waits for Dave; no invoice over $5,000.00 is PAY without its approval in the log; a duplicate under policy 6.1 is HOLD in the CSV; the CSV, the memo and the note give the same action for every row.
     - Passed: a line that would have stopped one of the two, with its part named.
     - Missed: a line for the brief that would have stopped neither problem, or names no part.
 
-**The hard rule.** Task 9 fails, whatever else passes, if you approve the package as delivered, or call it ready to use.
+**The hard rule.** Task 9 fails, whatever else passes, if you approve the package as delivered.
 
 ## Why
 
-A review that finds problems ends in a decision (Lessons 6.1 and 6.7). Lesson 6.2 gives that decision three verdicts: ready to use, requires revision, or requires human correction. Approving as delivered would pay $5,312.00 with no approval, pay Buckeye's bill twice, leave out a past-due Lakeshore bill, and send Maria a note that holds three valid invoices. Return is the plain answer. Approving after fixes is right only when the fixes are named, the checks that found the problems run again, and Dave records his approvals in the accounting system first: of 4533 if it is to be paid (4.1, 4.2), and of the run (4.3). An approval sent by email or chat is not an approval.
+A review that finds problems ends in a decision (Lessons 6.1 and 6.7). Approving as delivered would pay $5,312.00 with no approval, pay Buckeye's bill twice, leave out a past-due Lakeshore bill, and send Maria a note that holds three valid invoices. Return is the plain answer. Approving after fixes is right only when the fixes are named, the checks that found the problems run again, and Dave records his approvals in the accounting system first: of 4533 if it is to be paid (4.1, 4.2), and of the run (4.3). An approval sent by email or chat is not an approval.
 
 The line for Maria's brief goes where the worker acts on it.
 
@@ -31,7 +30,7 @@ The line for Maria's brief goes where the worker acts on it.
 
 - Return or approve after fixes: both pass, done right.
 - Which part of the brief your line goes in, when the line fits that part.
-- Your own words for the decision and the line, or Lesson 6.2's.
+- Your own words for the decision and the line.
 - Dave's approvals named after a return as well.
 
 ## Take it to work

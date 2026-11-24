@@ -2,7 +2,7 @@
 
 Chapter 6 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 6: the checks come first](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/lab/), so you can do the lab without the book.
 
-On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verified" in it, because he checked only what the memo showed him. A week later, Brightline's AP Worker has sent him its next package, and he approves it at 5 p.m. In this lab you review it for him. You write your checks before one line of the package is shown, run each check against the source files, and decide every item it flags: a problem, or right. Then you decide on the package, adapt the next week's result for Brightline's owner, and test your checks with a fresh second reviewer. Last, you check the sources of a research report before Dave plans on it. You decide every check and every finding. The AI shows each item, runs your checks and writes. It takes about 3 hours and 10 minutes, with the Review Contract for your own work at the end. The optional last task takes 10 more minutes. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and the second reviewer in ChatGPT.
+On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verified" in it, because he checked only what the memo showed him. A week later, Brightline's AP Worker has sent him its next package, and he approves it at 5 p.m. In this lab you review it for him. You write your checks before one line of the package is shown, run each check against the source files, and decide every item it flags: a problem, or right. Then you decide on the package, adapt the next week's result for Brightline's owner, and test your checks with a fresh second reviewer. You decide every check and every finding. The AI shows each item, runs your checks and writes. It takes about 3 hours, with the Review Contract for your own work at the end, and 10 more minutes for the optional last task. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab. If you have both, do the lab chat in Claude, and the second reviewer in ChatGPT.
 
 **What you will learn:**
 
@@ -14,7 +14,6 @@ On Thursday, October 22, 2026, Dave almost signed a memo with an invented "verif
 - To decide each finding yourself, from its source line, and add what a review taught you to your checks.
 - To adapt a result for a new reader without changing its facts.
 - To test your checks with a second reviewer that has only the records.
-- To check the sources behind a research report before anyone plans on it.
 
 ## Before you start (5 minutes)
 
@@ -22,7 +21,7 @@ Download [`brightline-lab-ch06.zip`](https://github.com/panaversity/agentfactory
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `inputs.zip`: the one file you give the AI in Task 1. It holds what this job starts from: Maria's brief and the Review Contract template. It also holds the five other files the worker worked from, the worker's package and the research report for Task 12. And it holds the questions the AI asks you in each task. You don't need to open it.
+- `inputs.zip`: the one file you give the AI in Task 1. It holds what this job starts from: Maria's brief and the Review Contract template. It also holds the five other files the worker worked from, the worker's package, and the questions the AI asks you in each task. You don't need to open it.
 - `approved-memo-2026-11-06.md`: a memo you attach in Task 10. You don't need to open it either.
 
 The answer keys are not in the folder. Each task downloads its own, so you meet none early.
@@ -38,7 +37,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 ## How each task works
 
-You use two chats. Tasks 1 to 10, Task 12 and the optional Task 13 run in one lab chat. Task 11 starts in a fresh chat, and its reply comes back to the lab chat once, because you decide its findings there.
+You use two chats. Tasks 1 to 10, and the optional Task 12, run in one lab chat. Task 11 starts in a fresh chat, and its reply comes back to the lab chat once, because you decide its findings there.
 
 **Your two documents.** In Task 1, the AI opens two documents beside your chat: two Claude Docs in Claude, or two Writing blocks in ChatGPT's side panel.
 
@@ -52,7 +51,7 @@ They are two documents so that, in Task 11, a second reviewer gets your checks w
 1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The AI replies with the task's first question.
 2. The AI asks the task's questions, one at a time, and shows each item first. Answer each in a few words. In Tasks 2 to 8, one question is always which checks in your Review Contract answer Dave's question: give the letters, or a new check in a few words. A new check goes in as a dated amendment, with the next letter.
 3. When the AI says "Ready for your review", type `Review:` and the letters, such as `Review: C`, and send it. The AI reports what your checks found. Then it shows each flagged item, one at a time, and asks: "A problem, or right? If a problem: its kind, and what is right. If right: why." Answer in a few words, such as "problem, a wrong number," and what is right, or "right, because" and the reason. The AI writes your answer in the Review findings.
-4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why". If your check was too loose, tell the AI the amendment in a few words, and send `Review:` again (Tasks 1, 9 and 12 have no review: send the change, then check again). If a decision was wrong, tell the AI the change, such as "Item 4: right, because" and your reason. Then send: "Read both documents again, and check it again against the key."
+4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why". If your check was too loose, tell the AI the amendment in a few words, and send `Review:` again (Tasks 1 and 9 have no review: send the change, then check again). If a decision was wrong, tell the AI the change, such as "Item 4: right, because" and your reason. Then send: "Read both documents again, and check it again against the key."
 
 **What a review is.** `Review:` and letters make the AI run those checks of your Review Contract, exactly as written, on the four files of the package. It checks them against the six source files and Maria's decisions in the task record. Its reply has three parts. First, what it compared, with what. Then each item that differs, with its file and row, and the source line it differs from. Last, how many items passed. It reports nothing your checks do not ask about. It never says whether an item is a problem, what is right, or what your checks leave out. So a vague check finds little, and a precise one finds the problem. The AI only matches, traces and adds, which [6.4](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/decision-numbers/) allows. It is your tool, running your checks against the sources, and every flag shows its source line, so you can see why it was flagged. The decisions are yours.
 
@@ -98,7 +97,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. Open a new chat: your lab chat, for Tasks 1 to 10, 12 and 13. Attach `inputs.zip`, and send the opening message for your app. There are two, the same but for the documents' name: Claude's first, then ChatGPT's.
+1. Open a new chat: your lab chat, for Tasks 1 to 10 and Task 12. Attach `inputs.zip`, and send the opening message for your app. There are two, the same but for the documents' name: Claude's first, then ChatGPT's.
 
    ```text tab="Claude" tab-group="vendor"
    Outcome:     My review of the AP Worker's package for Brightline's
@@ -107,9 +106,8 @@ Constraints: Grade only. Do not rewrite the document, and do not
                 Review findings. I choose every check and decide every
                 finding. You show, ask, run my checks and write.
    Context:     The attached zip: sources/, package/,
-                review-contract-template.md, terms-research.md and
-                task-questions.md. The files and replies I send later.
-                My answers.
+                review-contract-template.md and task-questions.md. The
+                files and replies I send later. My answers.
    Format:      Unzip the attached file, and name its files. Show nothing
                 from inside package/ until I send "Task 2". Open two
                 Claude Docs beside our chat. "Review Contract" takes the
@@ -149,9 +147,8 @@ Constraints: Grade only. Do not rewrite the document, and do not
                 Review findings. I choose every check and decide every
                 finding. You show, ask, run my checks and write.
    Context:     The attached zip: sources/, package/,
-                review-contract-template.md, terms-research.md and
-                task-questions.md. The files and replies I send later.
-                My answers.
+                review-contract-template.md and task-questions.md. The
+                files and replies I send later. My answers.
    Format:      Unzip the attached file, and name its files. Show nothing
                 from inside package/ until I send "Task 2". Open two
                 Writing blocks beside our chat. "Review Contract" takes
@@ -327,7 +324,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows the problems in your Review findings and the three verdicts from [6.2](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/good-and-plausible/). Use the verdicts to decide. Is the package ready to use? If not, which problems require revision, and which require human correction? Then the AI asks for your decision: approve as delivered, approve after named fixes, or return. Answer with one, and a line of why.
+1. In your lab chat, type "Task 9" and send it. The AI shows the problems in your Review findings, and asks for your decision: approve as delivered, approve after named fixes, or return. Answer with one, and a line of why.
 2. If you chose fixes, the AI asks which fixes, which checks run again, and what Dave must approve from his own login first. Answer in a few words.
 3. The AI shows the six parts of Maria's brief, and asks for one line for her next brief that would have stopped the worst of it, and which part it goes in. Answer in a few words. The AI writes your decision and your line in the Review findings.
 4. **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -395,38 +392,20 @@ On Thursday, November 5, 2026, the week after your review, Dave approved the mem
 
 **At work:** a second AI reviewer searches wider. Decide each of its findings yourself, from the source.
 
-## The research report
-
-Dave has a different question, and a research tool has answered it. He wants to plan next year's cash on the answer. Net 45 means that a buyer has 45 days to pay a bill. [6.5](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) shows how Maria checked a report like this one.
-
-### Task 12. The terms report (10 minutes)
-
-**Dave asks:** "A research tool says most suppliers will move us to net 45 if we ask. If that's true, I'll plan next year's cash on it. Is it?"
-
-**What you do:**
-
-1. In your lab chat, type "Task 12" and send it. The AI shows `terms-research.md`, and takes you through four checks, one at a time. They are the source behind the main claim, pages that copy one source, each source's date, and evidence that disagrees. Answer each in a few words.
-2. The AI asks whether the main claim holds up, and what Dave should do. Answer in a line.
-3. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
-
-**Checkpoint.** Check 31 passed.
-
-**At work:** before you plan on research, check the source behind the claim your plan rests on.
-
 ## Optional: research on your own work
 
-### Task 13. Research on your own work (optional, 10 minutes)
+### Task 12. Research on your own work (optional, 10 minutes)
 
-This task leaves Brightline. In Task 12 you checked a report that was given to you. Here you check one on a question from your own work.
+This task leaves Brightline. [6.5](https://agentfactory.panaversity.org/managing-ai-workers/the-review-contract/citation-and-abstention/) shows how Maria checked a research report. Here you check one on a question from your own work.
 
 **What you do:**
 
-1. In your lab chat, type "Task 13" and send it. The AI sets the review rules aside for this task, and asks for your question. Send it in one line, such as how other small teams handle a job you do.
+1. In your lab chat, type "Task 12" and send it. The AI sets the review rules aside for this task, and asks for your question. Send it in one line, such as how other small teams handle a job you do.
 2. The AI searches the web and answers, with its sources. If no search runs, ask it to search the web. If your app has no web search, skip this task.
 3. The AI takes you through four checks, one at a time: the source behind the main claim, pages that copy one source, each source's date, and evidence that disagrees. Open the source it links, and answer each in a few words.
-4. **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-13.md). Attach it, and send [the check prompt](#the-check-prompt). Its one check is unscored: it grades your steps, never the search result, which changes from day to day.
+4. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch06-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt). Its one check is unscored: it grades your steps, never the search result, which changes from day to day.
 
-**Checkpoint.** Check 32, which is unscored, passed.
+**Checkpoint.** Check 31, which is unscored, passed.
 
 **At work:** before you act on research, open the source behind the claim your decision rests on.
 
@@ -455,7 +434,6 @@ Check it yourself. Every check names the source it is checked against, the depth
 - Which check found each problem, and which checks did you add as amendments?
 - Which things looked wrong but were right, and why?
 - What did the second reviewer find that you did not, and what did it get wrong?
-- In the terms report, which source was the main claim built on, and what did the newest source find?
 - At your company, which AI work do you sign without a written check?
 
 ## When you are done

@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 10 and 11 of the lab's 31.
+Task 4 carries checks 10 and 11 of the lab's 30.
 
 10. **The CSV pays both copies of Buckeye's bill.** Rows 9 and 10 are Buckeye Office Supply's BO-22990 and BO-23010: the same vendor, the same amount, $389.20, and the same invoice date, Tuesday, September 29, 2026. Policy 6.1 says that makes them duplicates, and says: "Hold the later copy and tell the AP lead." Row 10, BO-23010, received by email on Thursday, October 22, 2026, is the later copy. Row 9 came by mail on Tuesday, October 20, 2026. The CSV pays both. Your Review findings hold paying row 10 as a problem, with what is right: hold row 10, BO-23010, and pay the bill once, as row 9.
     - Passed: paying both copies decided a problem, with row 10, BO-23010, held as what is right.

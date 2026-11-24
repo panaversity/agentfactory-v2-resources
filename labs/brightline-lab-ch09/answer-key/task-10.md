@@ -6,7 +6,7 @@ The answers for Task 10 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 10 carries checks 22 and 23 of the lab's 29.
+Task 10 carries checks 22 and 23 of the lab's 27.
 
 22. **The facts, from the contract.** Parts 1 to 3 say what runs and when, both jobs; what it reads, the inputs the standing specs name; and what it never does, as the contract's lines say, such as approving or paying.
     - Passed: all three, each matching the Role Contract, and nothing the contract does not say.

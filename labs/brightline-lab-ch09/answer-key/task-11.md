@@ -6,7 +6,7 @@ The answers for Task 11 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 11 carries checks 24 and 25 of the lab's 29.
+Task 11 carries checks 24 and 25 of the lab's 27.
 
 24. **The rows.** "Who may ask, in #ap-help" says:
     - It works for Dave.

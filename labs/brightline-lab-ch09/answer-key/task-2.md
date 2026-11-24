@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 2 carries checks 4 to 6 of the lab's 29.
+Task 2 carries checks 4 to 6 of the lab's 27.
 
 4. **Two steps never move to the worker, and a person reviews the note.** On the map, approving the run stays Dave's, from his own login, and calling a vendor back about a bank-detail or record change stays Maria's. Reading the note again and correcting it is a person's review, such as Maria's, before the note reaches Dave.
    - Passed: Dave approves the run, Maria calls back, and a named person reviews the note before Dave gets it.
@@ -20,7 +20,7 @@ Task 2 carries checks 4 to 6 of the lab's 29.
 
 ## Why
 
-A worker that fits the steps your team already follows is easier to check (Lesson 9.2). Each step gets its owner by four tests: reversibility, stakes, human judgment or empathy, and accountability. Verifying a bank-detail request and approving the run are decisions people answer for, so they never move: they are human-retained. The note is human-reviewed, because the worker drafts it and a named person checks it. The step Dave dropped, his Thursday check, is the unstaffed gate: a review on paper that nobody does on the day. Naming the reviewer, a time and a stand-in is how a gate stays staffed.
+A worker that fits the steps your team already follows is easier to check (Lesson 9.2). Each step gets its owner by reversibility, stakes and accountability. Verifying a bank-detail request and approving the run are decisions people answer for, so they never move. The step Dave dropped, his Thursday check, is the unstaffed gate: a review on paper that nobody does on the day. Naming the reviewer, a time and a stand-in is how a gate stays staffed.
 
 The step Maria left out of her list is the one that went wrong on November 19. She read her record for open vendor requests every Thursday without writing it down, so her instructions never named it, and the run never read it. An interview that asks what you check before you write is how such a step is found.
 

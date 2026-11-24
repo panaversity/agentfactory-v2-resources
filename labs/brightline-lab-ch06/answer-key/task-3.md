@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 3 carries checks 8 and 9 of the lab's 31.
+Task 3 carries checks 8 and 9 of the lab's 30.
 
 8. **Row 11, NMP-3412, is in the CSV twice.** The open invoices list 15 invoices, with Northern Maple Paper's NMP-3412 once, as row 11. The CSV has 16 rows: row 11, NMP-3412, appears twice, the same in every column. Your Review findings hold the repeated row as a problem, missing or repeated, with what is right: one row for NMP-3412, so 15 rows, one for each invoice.
    - Passed: the second row 11, NMP-3412, decided a problem, with one row for it as what is right.

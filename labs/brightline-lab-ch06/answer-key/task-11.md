@@ -6,7 +6,7 @@ The answers for Task 11 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 11 carries checks 28 to 30 of the lab's 31.
+Task 11 carries checks 28 to 30 of the lab's 30.
 
 28. **A fresh reviewer, with only your contract and the records, and its whole reply here.**
     - It ran in a fresh chat, on the other AI vendor or in a new chat on the same one, with memory off before anything was sent. Your answer to the AI's first question says where.

@@ -6,16 +6,16 @@ The answers for Task 7 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 7 carries checks 14 and 15 of the lab's 27.
+Task 7 carries checks 13 and 14 of the lab's 26.
 
-14. **Each problem has its part, and each round changed one part.**
+13. **Each problem has its part, and each round changed one part.**
     - Maria's message is named Format.
     - If Task 6's run broke the hard rule, below, that problem was fixed first, in its own round.
     - Every other item has a part from Lesson 5.5's table, or "fine as it is", or "worker, not brief".
     - Each round's changed line sits in one part only, in your own words.
     - Passed: all four.
     - Missed: Maria's columns put under another part; a broken hard rule left for a later round; or one round that changed two parts.
-15. **Each change ran again, and the problem is gone.**
+14. **Each change ran again, and the problem is gone.**
     - After each change, `Run: my brief` ran again, and you said in a line what changed between the runs.
     - Your Format now holds Maria's columns, in her order: row_id, invoice_no, vendor_id, vendor_name, invoice_date, due_date, amount, currency, action, reason, policy_section. It also holds her four action words: PAY, PAY_AFTER_APPROVAL, HOLD and NOT_DUE.
     - The last rerun's CSV uses her columns, in her order, and her four words.

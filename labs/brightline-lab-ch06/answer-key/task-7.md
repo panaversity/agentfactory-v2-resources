@@ -6,7 +6,7 @@ The answers for Task 7 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 7 carries checks 17 to 19 of the lab's 31.
+Task 7 carries checks 17 to 19 of the lab's 30.
 
 17. **The memo does not tie out to its own CSV.** The memo's headline says "Pay on Friday: $22,010.80 across 10 invoices." The CSV's 10 PAY rows add up to $22,100.80. They are $90.00 apart. Neither is the figure Dave signs, which comes from the sources.
     - Passed: the difference between the memo's $22,010.80 and the CSV's $22,100.80 decided a problem, in this task or in an earlier one, with "none is" right, or with the figure from the sources as what is right.
