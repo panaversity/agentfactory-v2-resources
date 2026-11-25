@@ -1,0 +1,5 @@
+id,kind,company,document,vendor,amount,names,invoice_date,printed_terms,context,expected_decision,expected_due_date,today
+W1,week,cedar-ridge,NA-2281,Northfield Corrugated,410.00,,2026-10-23,,"Open Northfield invoices: INV-7795 ($2,140.00, received 2026-10-21). Line text on NA-2281: Ref 7795 FR.",ask,,2026-10-26
+W2,week,cedar-ridge,NA-2240,Northfield Corrugated,410.00,,2026-10-09,,"Open Northfield invoices: INV-7795 ($2,140.00, received 2026-10-21). Already received: NA-2240 ($410.00) on 2026-10-09, applied to INV-7760 on 2026-10-12. Line text on NA-2240: Ref 7760 PC.",hold-duplicate,,2026-10-26
+W3,week,cedar-ridge,NA-2288,Northfield Corrugated,212.00,,2026-10-23,,"Open Northfield invoices: INV-7795 ($2,140.00, received 2026-10-21), INV-7802 ($1,310.00, received 2026-10-22). Line text on NA-2288: Ref 7802 SS.",apply-credit,,2026-10-26
+W4,week,cedar-ridge,INV-7850,Northfield Corrugated,1240.00,,2026-10-23,Net 30,"The amount is under $2,500.00, so no approval is needed. INV-7850 has not been received before.",ready-to-pay,2026-11-22,2026-10-26

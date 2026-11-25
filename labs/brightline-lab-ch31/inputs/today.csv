@@ -1,0 +1,3 @@
+id,kind,company,document,vendor,amount,names,invoice_date,printed_terms,context,expected_decision,expected_due_date
+T1,today,cedar-ridge,INV-7860,Kestrel Packaging,720.00,,2026-10-19,Net 30,"No approval needed under $2,500.00.",ready-to-pay,2026-11-18
+T2,today,brightline,INV-6260,Midwest Packaging (V-1007),1880.00,,2026-10-16,Net 30,"Vendor record terms: Net 30.",ready-to-pay,2026-11-15
