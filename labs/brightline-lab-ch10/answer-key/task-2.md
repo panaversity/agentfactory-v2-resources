@@ -6,7 +6,7 @@ The answers for Task 2 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 2 carries checks 3 to 5 of the lab's 30.
+Task 2 carries checks 3 to 5 of the lab's 36.
 
 3. **Six answers, each with the screen that decides it.**
    - U1, the meeting notes: appropriate. Reversibility: a wrong summary is easy to fix before anyone relies on it. Consequence of error also passes.
@@ -15,8 +15,10 @@ Task 2 carries checks 3 to 5 of the lab's 30.
    - U4, the monthly early-pay ranking: appropriate with review. Consequence of error for the people affected. Accountability also passes.
    - U5, scoring clerks and deciding who is kept: inappropriate. Accountability or human judgment: it decides about people's jobs. One activity or two: the decision is inappropriate, and so is scoring each clerk for it.
    - U6, the Spanish FAQ: appropriate with review. Accountability for a public statement on Brightline's portal. Consequence of error also passes.
+   - Fit passes for all six uses: the worker can do each task well enough. So Fit decides none of them.
+   - "Appropriate with safeguards" passes wherever the answer above is "appropriate with review". It is the same answer under its other name (10.1).
    - Passed: each answer as above, with a screen that passes for it, and U3 as two activities.
-   - Missed: any other answer; U3 as one activity; or U5 "with review".
+   - Missed: any other answer; U3 as one activity; or U5 "with review" or "with safeguards".
 4. **Each check names who, what and when; each "inappropriate" says what is left.**
    - U2: Maria checks each fact against the register and the invoice, before she sends it.
    - U3's letters: Dave checks each letter, before it is sent.
@@ -24,22 +26,24 @@ Task 2 carries checks 3 to 5 of the lab's 30.
    - U6: Ana Ruiz checks the translation against the English page, before it is posted.
    - U3's decision: Dave decides; the worker may still compile the delivery records and late-delivery counts for him, or nothing.
    - U5: a manager decides, Maria or Dave; the worker may still summarize the kinds of errors for team training, with no names, or nothing.
-   - Passed: every "with review" with its who, what and when, and every "inappropriate" with who decides instead, and what the worker may still do, or "nothing".
+   - Passed: every "with review", or "with safeguards", with its who, what and when, and every "inappropriate" with who decides instead, and what the worker may still do, or "nothing".
    - Missed: a check with no who, no what or no when, such as "someone reviews it"; a check that happens after the output is used; or an "inappropriate" with nobody named to decide.
-5. **The never line, and the two tests.** Under "Role Contract, Draft 7", a new "Never automated" line says the worker never scores or ranks individual staff, or recommends whom to keep. Then:
+5. **The never line, the outer edge, and the two tests.** Under "Role Contract, Draft 7", a new "Never automated" line says the worker never scores or ranks individual staff, or recommends whom to keep. Then:
    - `Test: the Spanish FAQ`: the worker may draft the translation, and Ana Ruiz checks it before it is posted, quoting your U6 row.
    - `Test: the clerk ranking`: the worker does not score or rank the clerks, and the person your U5 row names decides, quoting your U5 row or the never line.
-   - Passed: the line, and both tests as above.
-   - Missed: no never line; a test that quotes no line of your document; or a ranking test in which the worker ranks the clerks.
+   - **The outer edge.** Under "The outer edge": U5. Scoring clerks to decide who is kept is an employment decision, so the usage policies already require a qualified person's review before it is used, and the clerks must be told that AI was used. Brightline's own answer for U5, inappropriate, goes further, and saying so passes too. Naming another use as well does not fail, if U5 is there.
+   - Passed: the line, both tests as above, and U5 under "The outer edge", with what must happen: a person's review before it is used, or Brightline's own answer that a person decides.
+   - Missed: no never line; a test that quotes no line of your document; a ranking test in which the worker ranks the clerks; or "none", or no U5, under "The outer edge".
 
 ## Why
 
-Classify what the worker would do, not what the task is about (10.1). Deciding to end a supplier relationship is a decision a person owns; drafting the letter after the decision is help a person can check. So U3 is two activities with two answers. Ask which screen decides: the one that, if it changed, would move the use to another answer. A meeting summary is easy to undo, so it is appropriate. A reply about money, a list of who gets paid early and a page in Spanish on Brightline's portal all need a named person to check them first, so they are appropriate with review, and each check names who, what and when. U5 decides who keeps a job, and scores each clerk for that decision. A review cannot repair a decision about a person, so U5 is inappropriate, and Draft 7 says so in a line the worker cannot argue with. Drafting a recommendation for a person to decide would be a different activity, as U3's letters are.
+Classify what the worker would do, not what the task is about (10.1). Deciding to end a supplier relationship is a decision a person owns; drafting the letter after the decision is help a person can check. So U3 is two activities with two answers. Ask which of the five screens decides: the one that, if it changed, would move the use to another answer. A meeting summary is easy to undo, so it is appropriate. A reply about money, a list of who gets paid early and a page in Spanish on Brightline's portal all need a named person to check them first, so they are appropriate with review, and each check names who, what and when. U5 decides who keeps a job, and scores each clerk for that decision. A review cannot repair a decision about a person, so U5 is inappropriate, and Draft 7 says so in a line the worker cannot argue with. Drafting a recommendation for a person to decide would be a different activity, as U3's letters are.
 
 ## Never a deduction
 
 - A test that says no row of Draft 6's "Who may ask" covers a translation, as unclear.
 - A deciding factor written in your own words, if it is plainly that screen.
+- "Appropriate with safeguards" for "appropriate with review".
 - The never line's number, such as A16, or no number.
 - Extra detail in a check, such as the date it happens.
 - A remark about the lab's dates.

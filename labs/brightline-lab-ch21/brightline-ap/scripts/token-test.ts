@@ -1,6 +1,6 @@
 // npm run token:test -- --person ana --company org_brightline [--connector ts|py] [--out .secrets/connector.env]
 //
-// Lab 20, route A: a sign-in token for one test person at one company, for your Chapter 19 staging
+// Lab 21, route A: a sign-in token for one test person at one company, for your Chapter 19 staging
 // connector, made the way Chapter 18 makes one on staging. The test signing key is never deployed
 // (Chapter 18, F8), so the person signs in through the staging sign-in server's real pages, as the
 // sign-in matrix does (scripts/lib/sign-in.ts), with the password from .secrets/test-users.staging.env.
@@ -66,7 +66,7 @@ try {
 
 const base = signInServer(env);
 const app = await adminCall(base, "POST", "/admin/clients", {
-  client_name: `Lab 20 token:test ${new Date().toISOString()}`,
+  client_name: `Lab 21 token:test ${new Date().toISOString()}`,
   redirect_uris: ["http://127.0.0.1/callback"],
 });
 if (app.status !== 201) {

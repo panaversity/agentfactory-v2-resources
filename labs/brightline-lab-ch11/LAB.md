@@ -2,7 +2,7 @@
 
 Chapter 11 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 11: where each failure lives](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/lab/), so you can do the lab without the book.
 
-In the week of January 11, 2027, Brightline's AP Worker failed four times. On Friday afternoon Dave Kowalski, the controller, said: "Switch to the most expensive model, and Maria, rewrite every brief from scratch." Most people do that when their AI goes wrong: they change the biggest thing they can see. In this lab you do what [Chapter 11](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/overview/) teaches instead. You stop what is still running, read each run's record, and find where each failure lives before you change anything. Then you change one thing at a time, and test each change on the input that failed. At the start, the January setup runs the week again and fails. At the end, your fixed Role Contract runs the same week, on the same app, with no stronger model. You decide every answer. The AI shows the records, asks the questions, writes your decisions into two documents, and tests each line. It takes about three and three-quarter hours, and you can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+In the week of January 11, 2027, Brightline's AP Worker failed four times. On Friday afternoon Dave Kowalski, the controller, said: "Switch to the most expensive model, and Maria, rewrite every brief from scratch." Most people do that when their AI goes wrong: they change the biggest thing they can see. In this lab you do what [Chapter 11](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/overview/) teaches instead. You stop what is still running, read each run's record, and find where each failure lives before you change anything. Then you change one thing at a time, and test each change on the input that failed. At the start, the January setup runs the week again and fails. At the end, your fixed Role Contract runs the same week, on the same app, with no stronger model. You decide every answer. The AI shows the records, asks the questions, writes your decisions into two documents, and tests each line. It takes three sittings: stop after Task 5 and after Task 9, and come back, because the chat and the documents keep your work. On a free plan, usage limits can spread the sittings over several days. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
 **What you will learn:**
 
@@ -11,12 +11,12 @@ In the week of January 11, 2027, Brightline's AP Worker failed four times. On Fr
 - To tell a run that worked from one that only ran, and to give a job a success signal and a check from outside it.
 - To find out what a stopped run already did before you restart it, so that nothing is done twice.
 - To place a failure in one of five causes, check the quickest place first, and look for a second cause.
-- To read usage before you blame a brief, and to keep recurring work on a seat with a named budget owner.
+- To read usage before you blame a brief, and to keep recurring work on an account with a named budget owner.
 - To fix the brief, the inputs or the permissions, one change at a time, and to test each fix on the input that failed.
 - To pass a fix that is not yours to its owner.
 - To give each repeated correction a lasting home, and to measure a change against a baseline before you switch.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch11.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
@@ -58,9 +58,9 @@ The AI writes each of your decisions into the document the task names, and chang
 2. the contract lines that decide each part, or "no line decides"
 3. what the contract leaves unclear
 
-A file counts only if a contract line names it. What only the chat knows is "no line decides", even when the answer would be right. A test reads your contract and quotes it. It does not answer as the worker. This is [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s rule, "re-run on the same input": each test runs the case that failed. `Test: the week` runs the week's five cases in a row, from Tuesday morning to Friday morning.
+A file counts only if a contract line names it. What only the chat knows is "no line decides", even when the answer would be right. A test reads your contract and quotes it. It does not answer as the worker. This is [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/#mondays-fixes-one-lever-each)'s rule, "re-run on the same input": each test runs the case that failed. `Test: the week` runs the week's five cases in a row, from Tuesday morning to Friday morning.
 
-**What an Inspect is.** In five tasks you name a one-minute check, the kind [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/) describes. `Inspect: my check` runs your check, as you named it, on the lab's files. It reports only what the files show, quoted: names, dates, rows and figures. It names no cause, and does not say whether your guess was right. A check that finds nothing reports what it compared, because that makes the place less likely, though it is not proof.
+**What an Inspect is.** In five tasks you name a one-minute check, the kind [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/) describes. `Inspect: my check` runs your check, as you named it, on the lab's files. It reports only what the files show, quoted: names, dates, rows and figures. It names no cause, and does not say whether your guess was right. A check that finds nothing reports what it compared, because that makes the place less likely, though it is not proof.
 
 ### The check prompt
 
@@ -84,7 +84,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Friday, January 15: before the fixes
 
-### Task 1. Before you change anything (10 minutes)
+### Task 1. Before you change anything
 
 **Dave asks:** "Switch to the most expensive model, and Maria, rewrite every brief from scratch."
 
@@ -152,7 +152,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    Start with Task 1.
    ```
 
-3. The AI opens your two documents and shows "Who does what". Then it shows [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/)'s five causes, and [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s checks for a missing output. Then it shows Maria's four reports to Dave, one at a time. For each, answer: where you would look first, before you change anything, in a few words.
+3. The AI opens your two documents and shows "Who does what". Then it shows [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/)'s five causes, and [11.1](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/stop-first/#make-every-job-say-what-it-checked)'s checks for a missing output. Then it shows Maria's four reports to Dave, one at a time. For each, answer: where you would look first, before you change anything, in a few words.
 4. When the AI says "Ready for your test", type this, and send it:
 
    ```text
@@ -166,7 +166,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, when an AI gets something wrong, ask: where do I look first, before I change any words?
 
-### Task 2. Stop and hold (15 minutes)
+### Task 2. Stop and hold
 
 **Dave asks:** "Before anyone fixes anything, tell me what we stop, what we hold, and what we put right. The next payment run is Friday, January 22, 2027."
 
@@ -182,7 +182,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Tuesday, January 12: the check that never ran
 
-### Task 3. Why it never started (15 minutes)
+### Task 3. Why it never started
 
 **Dave asks:** "The duplicate check said nothing on Tuesday, and 7781-R got into the register. Why?"
 
@@ -198,17 +198,17 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, when an answer you expected never came, ask: what do I check before I blame my wording?
 
-### Task 4. Tuesday's two fixes (25 minutes)
+### Task 4. Tuesday's two fixes
 
-**Dave asks:** "Kenton sent 7781 again as 7781-R. Make the check catch a resend like that. And it will happen again the next time someone runs a big job. I will pay for a seat for the recurring jobs, and I want to know the same day when the check stops."
+**Dave asks:** "Kenton sent 7781 again as 7781-R. Make the check catch a resend like that. And it will happen again the next time someone runs a big job. I will pay for an account for the recurring jobs, and I want to know the same day when the check stops."
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI shows [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the email check's lines and the duplicate rule they check against, Tuesday's email and invoice 7781's row. Answer which lever this fix pulls. Then give your line, in a few words, on what makes a resend like 7781-R match its original.
+1. In your lab chat, type "Task 4" and send it. The AI shows [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s three levers, the email check's lines and the duplicate rule they check against, Tuesday's email and invoice 7781's row. Answer which lever this fix pulls. Then give your line, in a few words, on what makes a resend like 7781-R match its original.
 2. When the AI says "Ready for your test", type `Test: Tuesday, 8:05 a.m.` and send it.
-3. The AI shows [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s first rule. Answer: what a daily check from outside the email job compares, by message ID or by count, when it runs, and whom it tells.
-4. The AI shows [11.4](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/usage-and-limits/)'s lines and where each AI vendor shows usage. Answer, for the seat Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it.
-5. The AI shows [11.7](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/both-ai-vendors/)'s lines on a quiet task. Answer: if the daily check's message does not appear one evening, what Maria checks first, on Claude and on ChatGPT.
+3. The AI shows [11.1](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/stop-first/#make-every-job-say-what-it-checked)'s first rule for a success signal. Answer: what a daily check from outside the email job compares, by message ID or by count, when it runs, and whom it tells.
+4. The AI shows [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/where-a-failure-lives/#the-four-records)'s lines and where each AI vendor shows usage. Answer, for the account Dave pays for: which work runs on it, who owns its budget, who checks its usage and when, and what never runs from it.
+5. The AI shows [11.4](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/both-ai-vendors/)'s lines on a quiet task. Answer: if the daily check's message does not appear one evening, what Maria checks first, on Claude and on ChatGPT.
 6. When the AI says "Ready for your next test", type `Test: Tuesday evening` and send it.
 7. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -218,7 +218,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Wednesday, January 13: the wrong terms
 
-### Task 5. Jordan's replies (15 minutes)
+### Task 5. Jordan's replies
 
 **Dave asks:** "Jordan's three replies gave every vendor the same terms. Maria caught them, so nothing went out. Make his next request come out right."
 
@@ -236,7 +236,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Thursday, January 14: the note that said nothing was due
 
-### Task 6. Ran, or worked? (10 minutes)
+### Task 6. Ran, or worked?
 
 **Dave asks:** "The note said no invoices were due. 31 were due, worth $86,240.15, and we paid them a week late. What happened?"
 
@@ -252,7 +252,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: does my AI's answer say which file, and which date, it came from?
 
-### Task 7. Two changes, one at a time (15 minutes)
+### Task 7. Two changes, one at a time
 
 It is Monday, January 18.
 
@@ -260,9 +260,9 @@ It is Monday, January 18.
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it. The AI shows the review's context line, the registers' README and [11.7](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/both-ai-vendors/)'s line on files for scheduled work. Answer change one: which file the review opens, how it opens it, and where that file lives.
+1. In your lab chat, type "Task 7" and send it. The AI shows the review's context line, the registers' README and [11.4](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/both-ai-vendors/)'s line on files for scheduled work. Answer change one: which file the review opens, how it opens it, and where that file lives.
 2. When the AI says "Ready for your test", type `Test: Thursday, 7 a.m.` and send it.
-3. The AI shows two of [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s rules. Answer change two: what the note's first line states, when the review stops instead of writing a note, and whom it tells.
+3. The AI shows two of [11.1](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/stop-first/#make-every-job-say-what-it-checked)'s rules for a success signal. Answer change two: what the note's first line states, when the review stops instead of writing a note, and whom it tells.
 4. When the AI says "Ready for your next test", type `Test: Thursday, the closed file opens` and send it.
 5. **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -272,7 +272,7 @@ It is Monday, January 18.
 
 ## Friday, January 15: "attached", with nothing attached
 
-### Task 8. The first error, and the access (20 minutes)
+### Task 8. The first error, and the access
 
 It is Monday, January 18.
 
@@ -280,9 +280,9 @@ It is Monday, January 18.
 
 **What you do:**
 
-1. In your lab chat, type "Task 8" and send it. The AI shows Maria's Friday report and Record D. Answer: the cause, or two, and for each the step that shows it.
+1. In your lab chat, type "Task 8" and send it. The AI shows Maria's Friday report and Record D. Answer: the cause, or two, and for each the step that shows it. If a cause is the brief, also name its missing part.
 2. Answer: which check Maria skipped before she sent all five.
-3. The AI shows [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on access, and the contract's settings. Answer what the connection that replies use reaches after the fix: which folder, and read or write.
+3. The AI shows [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on access, and the contract's settings. Answer what the connection that replies use reaches after the fix: which folder, and read or write.
 4. When the AI says "Ready for your test", type `Test: Friday, reconnected` and send it.
 5. Answer with your rule for an attachment the worker cannot retrieve: what the run does, and whom it tells.
 6. When the AI says "Ready for your next test", type `Test: Friday, 9:02 a.m.` and send it.
@@ -292,7 +292,7 @@ It is Monday, January 18.
 
 **At work**, ask: when a step fails, does my AI stop and say so, or carry on?
 
-### Task 9. The replies that stopped (15 minutes)
+### Task 9. The replies that stopped
 
 It is Monday, January 18.
 
@@ -303,7 +303,7 @@ It is Monday, January 18.
 1. In your lab chat, type "Task 9" and send it. The AI shows Dave's words and the run's task record. Answer: what shows you what the run already did, and why not its last message.
 2. The AI asks for your one-minute check. Answer in a few words. When it says "Ready for your Inspect", type `Inspect: my check` and send it.
 3. The AI shows the five vendors. For each, answer: is its reply done, and if not, what is left to do?
-4. The AI shows [11.2](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/ran-versus-worked/)'s lines on a restart. Answer: which of the run's actions does no harm if done twice, which adds something, and what a run from the top would leave in the drafts folder.
+4. The AI shows [11.1](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/stop-first/#before-you-restart-a-run-that-stopped)'s lines on a restart. Answer: which of the run's actions does no harm if done twice, which adds something, and what a run from the top would leave in the drafts folder.
 5. Answer: does this run carry on from where it says it stopped, or does a new run start, and from what?
 6. The AI shows the email check's "Twice:" line and the contract's lines on replies. Answer with your line: what a run checks before it saves a draft, and what it does when a draft is already there, with its notice and without it.
 7. When the AI says "Ready for your test", type `Test: Monday, the restart` and send it.
@@ -315,7 +315,7 @@ It is Monday, January 18.
 
 ## Monday, January 18: the discounts, and the fixes that last
 
-### Task 10. The discounts (15 minutes)
+### Task 10. The discounts
 
 **Dave asks:** "Before I approve January's early-payment list, are these discounts right?"
 
@@ -331,17 +331,19 @@ It is Monday, January 18.
 
 **At work**, ask: which numbers does my AI work out in sentences?
 
-### Task 11. Where each correction lives (20 minutes)
+### Task 11. Where each correction lives
 
 **Dave asks:** "Maria fixes the same three things in the note every Thursday, and Jordan fixes different ones. Make that stop, and show me it works before we switch. The 15-day promise to small suppliers is in my memo of March 3, 2025."
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI shows Maria's correction log, the two replies to the same kind of dispute, and [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s four homes. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
-2. The AI shows Dave's words, the contract's knowledge lines, and [11.5](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
-3. The AI shows [11.6](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/make-the-fix-stick/)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
-4. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
-5. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
+1. In your lab chat, type "Task 11" and send it. The AI shows Maria's correction log and the two replies to the same kind of dispute. Then it shows each correction, one at a time. For each, answer: rule, reference, procedure, boundary, or not yet, where it goes, and the fix in a few words.
+2. The AI shows [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/#make-the-fix-last)'s four homes. Answer: which correction you would move, where, and why, or "none".
+3. The AI shows Dave's words, the contract's knowledge lines, and [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/#when-the-fix-is-not-yours)'s lines on a fix that is not yours. Answer: may Maria add the small-supplier promise to the worker's rules herself, or does it go to its owner, and who is that?
+4. The AI shows [11.3](https://agentfactory.panaversity.org/managing-ai-workers/when-the-worker-goes-wrong/three-levers/#measure-then-run-the-week-again)'s lines on a baseline. Answer: against the January 7 baseline, what you measure first for this note, and why.
+5. Answer: how many Thursdays the old and new setups run side by side, whether approvals stay on meanwhile, and when the worker gets back the authority its contract gives, and who agrees.
+6. The AI shows the lessons' lines on running side by side and on resuming. Answer: whether your answer changes, and how.
+7. The AI dates the contract Draft 8, Monday, January 18, 2027, and adds its line to the change log. This task has no test. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **Checkpoint.** Checks 38 to 42 passed.
 
@@ -349,23 +351,23 @@ It is Monday, January 18.
 
 ## Thursday, February 4: three weeks later
 
-### Task 12. Three more records (20 minutes)
+### Task 12. Four more records
 
-**Dave asks:** "Three more went wrong this week. Same method: where does each one live?"
+**Dave asks:** "Four more went wrong this week. Same method: where does each one live?"
 
 **What you do:**
 
-1. In your lab chat, type "Task 12" and send it. The AI shows the five causes, then three task records from February, one at a time. For each, answer: the cause, or two, each with the step that shows it, and your one-minute check. For the first record, the AI also asks what happens now to Greenway's request to change its bank account.
-2. When the AI says "Ready for your Inspect", type `Inspect: my check` and send it. It runs your three checks.
+1. In your lab chat, type "Task 12" and send it. The AI shows the five causes, then four task records from February, one at a time. For each, answer: the cause, or two, each with the step that shows it, and your one-minute check. For the first record, the AI also asks what happens now to Greenway's request to change its bank account.
+2. When the AI says "Ready for your Inspect", type `Inspect: my check` and send it. It runs your four checks.
 3. **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch11-key-task-12.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 43 to 46 passed.
+**Checkpoint.** Checks 43 to 47 passed.
 
-**At work**, ask: which add-ons, memories or files on my own computer does my AI rely on?
+**At work**, ask: which add-ons, memories, instructions or files on my own computer does my AI rely on?
 
 ## The proof
 
-### Task 13. The same week again (15 minutes)
+### Task 13. The same week again
 
 **Dave asks:** "The side-by-side Thursdays are done. Before I switch for good, run the week of January 11 again: no stronger model, nothing but the contract and what a run can reach."
 
@@ -373,7 +375,7 @@ It is Monday, January 18.
 
 1. In your lab chat, type "Task 13" and send it. The AI shows your contract's first line.
 2. Download "AP Worker Role Contract" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a plain-text file on your computer, such as `ap-worker-role-contract.md`. Download "What went wrong" the same way, and keep it.
-3. Open a new chat on the same app, with memory off. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. Attach your downloaded contract and `week.zip`, the same file as in Task 1. Send this:
+3. Open a new chat on the same app, with memory off. In Claude, turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. Attach your downloaded contract and `week.zip`, the same file as in Task 1. Send this:
 
    ```text
    Outcome:     The five cases of "The week" in week-cases.md, run by the
@@ -397,7 +399,7 @@ It is Monday, January 18.
 
 With an account on the other AI vendor, you can run the same message there too, after the check. It is not checked.
 
-**Checkpoint.** Checks 47 to 51 passed, in a chat that has only your contract and the week's files.
+**Checkpoint.** Checks 48 to 52 passed, in a chat that has only your contract and the week's files.
 
 **At work**, before you switch to a stronger model, ask: what does the same input give after the setup changes?
 
@@ -417,7 +419,7 @@ With an account on the other AI vendor, you can run the same message there too, 
 - **Late in the lab, the AI forgets a rule from your brief.** Say: "Read task-questions.md and both documents again." Then send the task again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (10 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. In your lab chat, send "Your own job". The AI asks first about the last time an AI got something wrong for you: where it lived, and what one-minute check would have shown it. Then it asks about one job you hand to an AI, even a job done in a chat. It asks what the job must say first every time, so you can see what it read. It asks what the job does when its input looks wrong, which source it must use for facts, and whose account's allowance it spends, and who checks it. Answer each in a few words. The AI adds your answers to "What went wrong", under "Your own job". Download it again: it is the one you take to work. In a chat, the fix is to the request first.
 
@@ -430,14 +432,16 @@ Your vertical is the line of work you know best. In your lab chat, send "Your ow
 
 ## When you are done
 
-You are done when every check has passed, your contract ran the week again in a new chat with nothing else in view, and your own job is in your notes. Keep both downloads. "AP Worker Role Contract" is Draft 8, the last draft of Part II's contract. "What went wrong" is a failed week diagnosed from its records, with each fix and its test: the note to write after your own next failure. Next comes [the Part II capstone](https://agentfactory.panaversity.org/managing-ai-workers/overview/#the-part-capstone), one piece of work that uses all of Part II. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
+You are done when every check has passed, your contract ran the week again in a new chat with nothing else in view, and your own job is in your notes. Keep both downloads. "AP Worker Role Contract" is Draft 8, the last draft of Part II's contract. "What went wrong" is a failed week diagnosed from its records, with each fix and its test: the note to write after your own next failure. Last, open your saved memory, as in [Lab 8's Task 3](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/lab/#task-3-what-memory-may-keep), and delete what this lab saved about Brightline.
+
+Part II ends here. You now hold its working parts: Lab 6's Review Contract, your first KSoR from Lab 8, Lab 10's Governance Record and Draft 8. Next comes [the Part II capstone](https://agentfactory.panaversity.org/managing-ai-workers/overview/#the-part-capstone), one piece of work that uses them all. After it, the routes divide, as "What comes next" in [Part II's overview](https://agentfactory.panaversity.org/managing-ai-workers/overview/) says. On the everyday professional route, read [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) next, and take its [PCAO-F sample exam](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/sample-exam/) before you sit PCAO-F.
 
 **At work:** when your AI goes wrong, find where the failure lives before you change anything. Then change one thing, and test it on the same input.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
-- **Choosing a model.** The exam guide expects you to fit the model family to the job: Haiku for high volume, speed and low cost, Sonnet for balanced everyday work, and Opus for the hardest reasoning. It does not examine effort settings. This chapter says a stronger model would have fixed none of its four failed runs, which is true of those runs. On the exam, when a scenario shows the task is beyond a lighter model, or that volume and cost matter most, switching family is the right fix. (D-004)
-- **Fixing a weak output.** The exam guide expects you to improve the prompt first: add context, examples, the format you want or a role. Then you update the project's instructions or knowledge so that the fix stays. This chapter starts with stop, inspect the task record and contain, because it deals with runs nobody watched. On the exam, those steps apply only when a scenario describes an automated run. In a chat or a project, revise the prompt first. (D-008)
-- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 11.7 shows two open-source tools beside Claude and ChatGPT: Omnara and OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 11.4 shows two open-source tools beside Claude and ChatGPT: Omnara and OpenCode. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Choosing a model.** The exam guide examines model tiers and effort levels together, against a task's quality, speed and cost. Anthropic's prep course starts most knowledge work on its balanced tier, Sonnet, and keeps Opus for complex, unclear or high-stakes work. The lower-cost option is often right for simple, high-volume work. This chapter says a stronger model would have fixed none of its four failed runs, which is true of those runs. On the exam, when a scenario shows the task is beyond a lighter model, changing the tier is right. When the cause is the prompt or the setup, neither a stronger model nor more effort is the fix. (D-075)
+- **Fixing a weak output.** When one output is weak, the exam guide expects you to name the gap first. It is one of four: missing context, an ambiguous instruction, a missing constraint, or the wrong strategy for the task type. Then judge whether to iterate, restart or change approach, as Concept 5.2 teaches. When a project's output has shifted over time, the guide expects you to find the layer that changed and fix that layer. The layer is one of four: the project's instructions, its knowledge, a Skill's version or its memory, as Concept 11.2 teaches. This chapter starts with stop, inspect the task record and contain, because it deals with runs nobody watched. On the exam, those steps apply only when a scenario describes an automated run. (D-081)

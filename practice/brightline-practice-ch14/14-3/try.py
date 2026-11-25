@@ -4,7 +4,7 @@ class Invoice:
         self.cents = cents
 
     def needs_second_approver(self) -> bool:
-        return self.cents > 1000000
+        return self.cents > 500000
 
 first = Invoice("INV-8301", 482500)
 second = Invoice("INV-8303", 1290000)

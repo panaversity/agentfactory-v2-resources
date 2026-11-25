@@ -1,4 +1,4 @@
-# Lakeshore Supply: weekly cash reconciliation
+# Northgate Supply: weekly cash reconciliation
 
 **Week 4, through Thursday, May 13, 2027.** Posted by Claude (Friday routine), 4:00 p.m. Karachi time. Figures in U.S. dollars. Made up for teaching.
 
@@ -23,4 +23,4 @@ Notes
 5. Erie Packaging, P-887 (4 May): the ledger first recorded $1,540.00, and the bank shows $1,450.00. Journal J-14 (10 May) corrects the ledger by $90.00. The ledger and bank now agree, so no reconciling item remains.
 6. Bank fee of $35.00 (22 April, J-12) and interest of $12.00 (29 April, J-13) were recorded in the ledger late. Both are in the bank and the ledger by 13 May, so they need no reconciling item.
 
-Status: posted for review. Not sent to Lakeshore until Nisha or Sana approves it. Saved to the drive with the date 2027-05-14.
+Status: posted for review. Not sent to Northgate until Nisha or Sana approves it. Saved to the drive with the date 2027-05-14.

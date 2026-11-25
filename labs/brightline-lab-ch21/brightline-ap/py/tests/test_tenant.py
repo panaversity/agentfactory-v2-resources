@@ -22,7 +22,7 @@ from tests.test_connector import HANDLE_KEY, START_MS, rpc
 from tests.tokens import DEFAULT_JWKS, ISSUER, RESOURCE, sign
 
 SIGN_IN = "Sign in to use the Brightline AP connector."
-# Chapter 19: Cedar Ridge has its own data. Since Lab 20 both companies have 16 open invoices, so an answer
+# Chapter 19: Cedar Ridge has its own data. Since Lab 21 both companies have 16 open invoices, so an answer
 # is known by its count and its first invoice: Brightline's INV-8301, Cedar Ridge's INV-6201.
 CEDAR_OPEN = 16
 BRIGHTLINE_OPEN = 16
@@ -264,7 +264,7 @@ def test_19_each_companys_own_approval_threshold() -> None:
         luis = result(tool(c, LUIS, "get_purchase_order", {"po_number": "PO-3103"}))["structuredContent"]
         a = result(tool(c, ANA, "get_purchase_order", {"po_number": "PO-7005"}))["structuredContent"]
     assert (luis["approval_threshold_cents"], luis["needs_approval"]) == (250000, True)
-    assert (a["approval_threshold_cents"], a["needs_approval"]) == (1000000, False)
+    assert (a["approval_threshold_cents"], a["needs_approval"]) == (500000, True)
 
 
 def test_19_not_found_is_the_same_for_another_companys_id_and_no_id() -> None:

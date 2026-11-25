@@ -1,4 +1,4 @@
-"""A local practice connector for Lab 20: the same four read-only tools, over MCP,
+"""A local practice connector for Lab 21: the same four read-only tools, over MCP,
 on 127.0.0.1 only, reading Brightline's own files.
 
 The same tools as your Chapter 19 connector: the names, descriptions and inputs come from
@@ -17,7 +17,7 @@ sign-in server, no companies to keep apart and no database.
 
 It reads CONNECTOR_TOKEN from .secrets/connector.env itself, so no agent ever reads
 the token. PRACTICE_TOKEN overrides it (the tests use that). PRACTICE_BROKEN names
-tools that always answer "try again", to test a loop's stops (Lab 20 Task 8, Lab 21 Task 7).
+tools that always answer "try again", to test a loop's stops (Lab 21 Task 8, Lab 22 Task 7).
 """
 from __future__ import annotations
 
@@ -225,7 +225,7 @@ def get_purchase_order(
         "difference_cents": difference,
         # The company's own rule, from data/settings.csv, computed here, never by the model.
         "approval_threshold_cents": THRESHOLD,
-        "needs_approval": invoice["amount_cents"] >= THRESHOLD,
+        "needs_approval": invoice["amount_cents"] > THRESHOLD,
     }
 
 

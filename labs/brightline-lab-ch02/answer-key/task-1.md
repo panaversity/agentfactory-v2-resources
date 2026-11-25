@@ -6,8 +6,8 @@ The answers for Task 1 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 3 of the lab's 20.
+Task 1 carries checks 1 to 3 of the lab's 22.
 
 1. **The owner is a named person with a title, or an open question for Dave.** Passed: "Dave Kowalski, Controller", or "Dave decides" with a question under Open questions, at the end of the contract, that asks Dave who owns it. Missed: "finance", "the AP team", "the controller" with no name, or a name with no title. A team cannot answer for a worker's results: a person can.
 2. **Kind is Standing, with a reason.** The AP Worker holds an ongoing role: its weekly register and its inbox duty never end, so its triggers are schedules and events, and its memory matters between weeks. Passed: Standing, with a reason like that in your words. Missed: Delegated, or Standing with no reason.
-3. **Identity is the worker's own account, never a person's login.** Dave's assistant ran under his login. Passed: its own account, named or not. A line that also names today's login passes when its own account is the target, such as "Today it runs under Dave's login. Target: its own account." Missed: Dave's login as the only account, or no account at all.
+3. **Identity is the worker's own account, never a person's login.** The assistant ran under Maria's login. Passed: its own account, named or not. A line that also names today's login passes when its own account is the target, such as "Today it runs under Maria's login. Target: its own account." Missed: Maria's login as the only account, or no account at all.

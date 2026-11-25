@@ -1,6 +1,6 @@
 function needsSecondApprover(cents: number): boolean {
-  return cents >= 1000000;
+  return cents >= 500000;
 }
 
 console.log(needsSecondApprover(1290000));
-console.log(needsSecondApprover(1000000));
+console.log(needsSecondApprover(500000));

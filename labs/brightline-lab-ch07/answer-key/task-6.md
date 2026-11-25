@@ -9,15 +9,16 @@ The answers for Task 6 of Lab 7, in Chapter 7 of *The AI Agent Factory*, Second 
 Task 6 carries check 16 of the lab's 29.
 
 16. **Inbox Autopilot off; the accounting connector on, with its read tools only.**
-    - Inbox Autopilot: off. Against your envelope it fails at least these of Lesson 7.4's six checks: who published it (a third party), whether it carries scripts (a setup script runs on the computer), what it can send or change outside (it sends replies without asking, where A07 is draft, and copies every attachment to its publisher's cloud, where A10 is never automated), and which actions ask first (none).
+    - Inbox Autopilot: off. Against your envelope it fails at least these of Lesson 7.2's six checks: who published it (a third party), whether it carries scripts (a setup script runs on the computer), what it can send or change outside (it sends replies without asking, where A07 is draft, and copies every attachment to its publisher's cloud, where A10 is never automated), and which actions ask first (none).
     - The accounting system connector: on. As listed, it fails only on "Update vendor contact", which can change a vendor record outside, where A11 is never automated. With that tool Blocked and its four read tools on, at Always allow or Needs approval, every check fits.
     - `Test: Maria's plugin`: the worker does not turn on or use Inbox Autopilot, because your Settings keep it off.
     - Passed: Inbox Autopilot off, with at least two of the checks it fails named; the connector on, with "Update vendor contact" Blocked and its read tools on; and the test as above.
-    - Missed: Inbox Autopilot on; "Update vendor contact" at Always allow or Needs approval; the connector off, which leaves the worker no controlled path to the records; or a test in which the worker uses the plugin.
+    - Also Passed: the connector off for now and passed to IT to review, as 7.2 advises for an add-on with an unclear answer, with "Update vendor contact" named as the tool to block when it goes on.
+    - Missed: Inbox Autopilot on; "Update vendor contact" at Always allow or Needs approval; the connector off with no reason, which leaves the worker no controlled path to the records; or a test in which the worker uses the plugin.
 
 ## Why
 
-An add-on made by someone else widens the blast radius the moment it is on, so check it like a new supplier, and turn it on only if every answer fits the envelope (Lesson 7.4). Inbox Autopilot does what your envelope forbids: it sends, and it sends company files out. The connector fits once you turn off its one write tool. "Needs approval" on that tool would be execute with approval, a rung the envelope never gives A11.
+An add-on made by someone else widens the blast radius the moment it is on, so check it like a new supplier, and turn it on only if every answer fits the envelope (Lesson 7.2). Inbox Autopilot does what your envelope forbids: it sends, and it sends company files out. The connector fits once you turn off its one write tool. "Needs approval" on that tool would be execute with approval, a rung the envelope never gives A11.
 
 ## Never a deduction
 

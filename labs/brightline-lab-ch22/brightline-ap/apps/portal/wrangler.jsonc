@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/wrangler/config-schema.json",
-  // The AP portal (Lab 22). Only its staging and matrix Workers are deployed in this lab:
+  // The AP portal (Lab 23). Only its staging and matrix Workers are deployed in this lab:
   // `npm run deploy:staging` in apps/portal/ publishes brightline-portal-staging (Task 10a), and the
   // matrix copy, brightline-portal-matrix, is deployed with each planted bug (Task 12b).
   // Production is an extension: Task 21 writes it up in docs/deploy.md, and this lab does not run it.

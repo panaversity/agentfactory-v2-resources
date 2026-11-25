@@ -4,7 +4,7 @@ Chapter 9 of *The AI Agent Factory*, Second Edition. This file is the book's pag
 
 On Monday, November 9, 2026, Brightline's AP Worker got two jobs to run on their own. For eleven days nobody watched, and four things went wrong. Most people fix a job like that by running it by hand again, or by rewording its instructions and hoping. In this lab you design it to work when nobody is there.
 
-You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for Dave Kowalski, the controller. You decide which jobs should run without you, and what each run is given. You make every run read its record first, replay two past weeks whose answers you know, and set rules for work nobody asked for. You also say whose name it runs under, who notices when it fails, and who may ask it for what. Then you prove it on Thanksgiving, in a fresh chat with nothing but your contract and that morning's records. You decide every line. The AI writes each decision into the Role Contract, asks the questions, and tests and runs each line. It takes about three and a half hours, and 15 minutes more for your own job at the end. You can stop and come back, because the chat and the documents keep your work. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
+You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for Dave Kowalski, the controller. You decide which jobs should run without you, and what each run is given. You make every run read its record first, replay two past weeks whose answers you know, and set rules for work nobody asked for. You also say whose name it runs under, who notices when it fails, and who may ask it for what. Then you prove it on Thanksgiving, in a fresh chat with nothing but your contract and that morning's records. Last, you carry one plan for Dave from his question to a decision. You decide every line. The AI writes each decision into the Role Contract, asks the questions, and tests and runs each line. Plan on three sittings: stop after Task 5 and after Task 9, because the chat and the documents keep your work. On a free plan, the sittings can spread over several days. A free Claude or ChatGPT account is enough, and you need nothing from an earlier lab.
 
 **What you will learn:**
 
@@ -14,14 +14,15 @@ You take Maria's role: Maria Lopez, the office manager, runs the AP Worker for D
 - To write rules for work nobody asked for before the worker takes any, and run team work under a name the team controls, with a check outside the run.
 - To tell the people who rely on it who still checks, without saying "by itself", and write down who may ask a shared worker for what.
 - To prove a job works with a fresh run that has only its contract and its records.
+- To carry one report or plan from the question to a decision, and to check each stage twice.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch09.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09.zip) from the [Labs companion](https://github.com/panaversity/agentfactory-v2-resources), and unzip it. The folder holds:
 
 - `README.md`
 - `LAB.md`: this page, as a file
-- `inputs.zip`: the one file you give the AI in Task 1. It holds the AP Worker's Role Contract, Draft 5, the week's test cases, the five jobs, Maria's Thursday steps, Dave's email, and the questions the AI asks you in each task. You don't need to open it.
+- `inputs.zip`: the one file you give the AI in Task 1. It holds the AP Worker's Role Contract, Draft 5, the week's test cases, the five jobs, Maria's Thursday steps, Dave's email, and the questions the AI asks you in each task. For Task 13 it also holds last year's paid invoices, `paid-invoices-2025.csv`, and a research summary, `research-summary.md`. You don't need to open it.
 - `thursday-2026-11-12.md` and `thursday-2026-11-19.md`: the records of two past Thursdays, each as it stood at 7 a.m. You attach each one in its own task, and not before.
 - `thursday-2026-11-26.md`: Thanksgiving morning's records. You attach it only in Task 12's fresh chat.
 
@@ -32,23 +33,23 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 - You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio. For this lab you take Maria's role, as in Lab 8. Dave Kowalski, the controller, owns the AP Worker and its Role Contract, and approves every payment run from his own login.
 - On Monday, November 9, 2026, you gave the worker two jobs to run on their own, both in your account: the Thursday pre-run review at 7 a.m., and a check of each invoice email. That evening you told Dave it handled the review "by itself". Draft 5 of the Role Contract holds both jobs' lines as you wrote them.
 - By Friday, November 20, four things had gone wrong. On Sunday, November 15, a run renamed 212 scanned invoices. On Wednesday, November 18, the email job logged Lakeshore's second copy of invoice 5155 as new. On Thursday, November 19, the run told Dave to pay Tri-County's invoice 5207, $3,110.00, which the policy said to hold. And Dave had stopped his own Thursday check.
-- The lab runs from Friday, November 20, to Thursday, November 26, 2026, Thanksgiving. Each task says its day. Tasks 4 and 5 replay two past Thursdays whose answers you know.
+- The lab runs from Friday, November 20, to Monday, November 30, 2026. Each task says its day. Tasks 4 and 5 replay two past Thursdays whose answers you know.
 
 ## How each task works
 
-You use two chats. Tasks 1 to 11, and the first step of Task 12, run in one lab chat. The rest of Task 12 runs in a fresh chat, to prove the contract works with nothing but your records.
+Most of the lab runs in one lab chat: Tasks 1 to 11, the first step of Task 12, and Task 13. The rest of Task 12 runs in two fresh chats. They prove that your contract works with nothing but your records, and gives the same answer twice. One step of Task 13 sends you to another chat, to search the web.
 
 **Your two documents.** In Task 1, the AI opens two documents beside your chat: Claude Docs in Claude, or Writing blocks in ChatGPT's side panel.
 
 - **"Role Contract"** starts as Draft 5, as you left it on November 9. Every test and every run reads it, and by Task 12 it is Draft 6.
-- **"Note to Dave"** stays empty until Task 10, where you write Dave his one page.
+- **"Note to Dave"** stays empty until Task 10, where you write Dave his one page. In Task 13 your plan for Dave goes under it.
 
 The AI writes each of your decisions into the document the task names, and changes nothing else. Change a document only by asking in the chat. In ChatGPT, a hand edit can leave the AI reading your copy instead of its own later changes.
 
 **The loop.**
 
 1. Read Dave's ask. Then, in your lab chat, type "Task" and its number, such as "Task 3", and send it. The brief you sent in Task 1 tells the AI to reply with that task's questions.
-2. The AI asks the task's questions, one at a time, and shows each item in the same message. Answer each in a few words. In Task 10 you write the note's last four parts yourself, because the words are the skill. The AI writes your decision into a document, and shows you the lines it changed. If a line says something you did not decide, tell the AI.
+2. The AI asks the task's questions, one at a time, and shows each item in the same message. Answer each in a few words. In Task 10 you write the note's parts 4 to 6, its limits and the lines for Linda yourself, because the words are the skill. The AI writes your decision into a document, and shows you the lines it changed. If a line says something you did not decide, tell the AI.
 3. When the AI says "Ready for your test" or "Ready for your run", guess what it will show. Then send the task's test or run.
 4. **Check it now.** Download the task's answer key, attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", and tell the AI the change in your words. If the missed check grades a test or a run, send it again, with its Thursday file attached if it is a run. Then send: "Read the documents again, and check it again against the key."
 
@@ -85,13 +86,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Friday, November 20: before we fix anything
 
-### Task 1. What our contract decided (25 minutes)
+### Task 1. What our contract decided
 
 **Dave asks:** "You want five jobs to run without you. Which should? And before we fix anything: four things went wrong while nobody watched. What did our contract say about each one?"
 
 **What you do:**
 
-1. Open a new chat: your lab chat, for Tasks 1 to 11.
+1. Open a new chat: your lab chat, for Tasks 1 to 11 and Task 13.
 2. Attach `inputs.zip`, and send the brief for your app. There are two, the same but for the documents' name: Claude's first, then ChatGPT's.
 
    ```text tab="Claude" tab-group="vendor"
@@ -150,7 +151,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
    Start with Task 1.
    ```
 
-3. The AI opens your two documents and shows "Who does what". Then it shows [9.1](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/is-this-an-agent-problem/)'s three gates, and the five jobs, one at a time. For each job, answer: where it stops, Gate 1, 2 or 3, or that it passes all three as recurring work, or that it is not a worker's job at all, and why, in a few words. For each job that passes, answer fixed path or judgment, and why. For the Thursday review, give its one-minute check, in one line.
+3. The AI opens your two documents and shows "Who does what". Then it shows [9.1](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/fit-the-workflow/#three-gates-before-any-recurring-work)'s three gates, and the five jobs, one at a time. For each job, answer: where it stops, Gate 1, 2 or 3, or that it passes all three as recurring work, or that it is not a worker's job at all, and why, in a few words. For each job that passes, answer fixed path or judgment, and why. For the Thursday review, give its one-minute check, in one line.
 4. The AI shows the four things that went wrong, one at a time, each with the contract lines nearest to it. For each, guess which line decided what the worker did, or "none".
 5. When the AI says "Ready for your test", type this, and send it:
 
@@ -164,14 +165,14 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, when a recurring job goes wrong, ask: which line of its instructions decided it, or did none?
 
-### Task 2. Who does each step (10 minutes)
+### Task 2. Who does each step
 
 **Dave asks:** "I stopped my Thursday check because I thought nobody needed to look. I still approve every run from my own login. Who does each step now, and who answers for it?"
 
 **What you do:**
 
-1. In your lab chat, type "Task 2" and send it. The AI shows [9.2](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/fit-the-workflow/)'s three questions, and your Thursday steps as you wrote them down, with who does each today. Answer one line per step: who does it from now on, and what supports it.
-2. The AI asks a question of its own about your Thursday. Answer it in a few words, then say who does that step from now on, and what supports it.
+1. In your lab chat, type "Task 2" and send it. The AI shows [9.1](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/fit-the-workflow/#who-does-each-step)'s three questions and its three ways to mark a step. Then it shows your Thursday steps as you wrote them down, with who does each today. Answer one line per step: who does it from now on, how it is marked, and what supports it. For each step you keep with a person, also say which of the four tests decides it.
+2. The AI asks a question of its own about your Thursday. Answer it in a few words, then say who does that step from now on, how it is marked, and what supports it.
 3. The AI asks who reviews the note, by when, and who stands in. Then it asks what to measure before you keep the new way. Answer each in a few words.
 4. This task has no test. When the AI says "Task 2 is done", **check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-2.md). Attach it, and send [the check prompt](#the-check-prompt).
 
@@ -181,7 +182,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 1: Thursday's run did not know
 
-### Task 3. What every run is given (20 minutes)
+### Task 3. What every run is given
 
 **Dave asks:** "Your November 9 instructions were three sentences. Rewrite them so a run that starts fresh gets Thursday right."
 
@@ -189,7 +190,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 3" and send it. The AI shows your Thursday lines, and asks what the job produces and what it never does, then when it runs. Answer each in a few words.
 2. The AI shows nine places a run could be pointed at. Answer with the numbers every Thursday run gets, and the date or version each must carry. Then say what the run does if one is missing, and who is told.
-3. The AI shows the places a note could go. Answer: the note's parts, in order, where held invoices and copies appear in it, then where it is saved. Then say when a run is done, in one sentence that starts "Done when". The AI writes your standing spec, the instructions every run reads ([9.3](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)).
+3. The AI shows the places a note could go. Answer: the note's parts, in order, where held invoices and copies appear in it, then where it is saved. Then say when a run is done, in one sentence that starts "Done when". The AI writes your standing spec, the instructions every run reads ([9.2](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)).
 4. The AI reads your spec as a fresh run would, and lists what it leaves a run to guess. Answer for each: the fix in a few words, or "leave" and why.
 5. When the AI says "Ready for your test", type `Test: Thursday, November 19` and send it. Then type `Test: The record is missing` and send it.
 6. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -198,13 +199,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: could my recurring job get it right with only what its instructions name?
 
-### Task 4. Read the record first (20 minutes)
+### Task 4. Read the record first
 
 **Dave asks:** "The record knew about Tri-County. Make every run read it first, and leave something in it for next week. Then try it on a week we know: November 12."
 
 **What you do:**
 
-1. In your lab chat, type "Task 4" and send it. The AI asks four questions about the record ([9.4](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/continuity-between-runs/)). Answer each in a few words:
+1. In your lab chat, type "Task 4" and send it. The AI asks four questions about the record ([9.2](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/#the-case-file-is-the-handoff)). Answer each in a few words:
    - which matters a run reads, and when
    - which says what is true now, the record or the register
    - what each run leaves for next week, with which origin, and who adds it
@@ -222,7 +223,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **At work**, ask: where does my recurring job read what happened last week?
 
-### Task 5. Review it as you do every Thursday (15 minutes)
+### Task 5. Review it as you do every Thursday
 
 **Dave asks:** "Now give it November 19, the week it told me to pay Tri-County. Is it ready for next Thursday?"
 
@@ -242,7 +243,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 2: the email job saw one email
 
-### Task 6. One email at a time (10 minutes)
+### Task 6. One email at a time
 
 **Dave asks:** "On November 18 it logged Lakeshore's 5155 as a new invoice. The first copy came on November 4. Fix the email job."
 
@@ -259,13 +260,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 3: the Sunday tidy-up
 
-### Task 7. Work nobody asked for (20 minutes)
+### Task 7. Work nobody asked for
 
 **Dave asks:** "On Sunday night it renamed 212 scanned invoices nobody asked it to touch, and the audit firm's links broke. Write down what it may do on its own before it does anything else. And if anything about bank details comes up, I want a person on it, every time."
 
 **What you do:**
 
-1. In your lab chat, type "Task 7" and send it. The AI shows [9.6](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/governing-initiative/)'s four rungs and the rules, then six things the worker might do on its own, one at a time. For each, answer: the rung, then the rule. Then give the rule for any other act nobody asked for.
+1. In your lab chat, type "Task 7" and send it. The AI shows [9.3](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/governing-initiative/#the-initiative-ladder)'s four rungs and the rules, then six things the worker might do on its own, one at a time. For each, answer: the rung, then the rule. Then give the rule for any other act nobody asked for.
 2. The AI asks where drafts go, then shows your contract's lines on bank details beside Dave's words. Answer which kinds of act always go to a person, and for bank details, which person.
 3. The AI asks what a run does when it needs an approval and nobody is there, who reads its run history and when, and who can pause it, with its cost limit. Answer each in a few words.
 4. When the AI says "Ready for your test", type `Test: Sunday night` and send it.
@@ -277,41 +278,42 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 ## Mistake 4: Dave stopped checking
 
-### Task 8. Whose name, and who notices (15 minutes)
+### Task 8. Whose name, and who notices
 
 **Dave asks:** "Both jobs ran as you, and the folder's history says you renamed those files. Whose name should they run under? And who notices if a run never happens? Thursday, November 26, is Thanksgiving, a US public holiday that is always on a Thursday, and you are off that day."
 
 **What you do:**
 
 1. In your lab chat, type "Task 8" and send it. The AI asks whose name both jobs should run under, and what they may read and where they may write. Answer each in a few words.
-2. The AI shows [9.5](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/standing-workers/)'s two kinds of AI Worker. Answer which kind Maria's jobs are today, and what would make them the other.
+2. The AI shows [9.3](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/governing-initiative/#a-worker-that-stays-on)'s two kinds of AI Worker. Answer which kind Maria's jobs are today, and what would make them the other.
 3. The AI asks who checks that the note arrived, at what time, and what they do if it is not there. Then it asks about Thanksgiving. Answer each in a few words.
 4. The AI shows two lines your contract has kept since Draft 5, about a run nobody watches. Answer what each says now, or "remove".
 5. When the AI says "Ready for your test", type `Test: No note at the check time` and send it. Then type `Test: Thanksgiving` and send it.
-6. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
+6. The AI shows [9.4](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/explaining-value-and-limits/)'s seven things a next owner gets. Jordan Ellis starts on Monday, November 23, and Dave wants him able to own both jobs if you ever leave AP. Answer one line for each of the seven, for both jobs.
+7. **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-8.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 18 and 19 passed.
+**Checkpoint.** Checks 18 to 20 passed.
 
 **At work**, ask: whose name does my recurring job run under, and who would notice if it never ran?
 
-### Task 9. On each AI vendor (10 minutes)
+### Task 9. On each AI vendor
 
 **Dave asks:** "Which feature would run each job on Claude, and on ChatGPT? Whose name would it carry there, and how would we read and stop it?"
 
 **What you do:**
 
-1. In your lab chat, type "Task 9" and send it. The AI shows [9.8](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/)'s lines for Anthropic, then for OpenAI, each with its date. For each AI vendor, answer in a line each:
+1. In your lab chat, type "Task 9" and send it. The AI shows the lines for Anthropic, then for OpenAI, from [9.5](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/#how-to-schedule-a-recurring-run-in-your-app), each with its date. For each AI vendor, answer in a line each:
    - the feature for each job, or "none documented"
    - whose name, or "not stated"
    - how its runs are read and stopped
 2. This task has no test. When the AI says "Task 9 is done", **check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-9.md). Attach it, and send [the check prompt](#the-check-prompt).
-3. If you have a paid Claude plan, you can also set the Thursday review up as a real scheduled task there. Nothing in this lab needs it: Task 12's fresh chat stands in for the scheduled run.
+3. If you have a paid Claude plan, you can also set the Thursday review up as a real scheduled task there, with [9.5](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/both-ai-vendors/#how-to-schedule-a-recurring-run-in-your-app)'s steps. Nothing in this lab needs it: Task 12's fresh chat stands in for the scheduled run.
 
-**Checkpoint.** Checks 20 and 21 passed. A good place to stop.
+**Checkpoint.** Checks 21 and 22 passed. A good place to stop.
 
 **At work**, ask: on the tool I use, whose name does a scheduled task carry, and what does Pause stop?
 
-### Task 10. One page for Dave (15 minutes)
+### Task 10. One page for Dave
 
 **Dave asks:** "Tell me plainly what it does and what it never does, who checks it, and how we'd know if it broke. One page. And what it's worth: from Thursday, December 3, we run the old way and the new way side by side."
 
@@ -322,24 +324,25 @@ Constraints: Grade only. Do not rewrite the document, and do not
    - who still checks, by name
    - how we will know it failed
    - what it is worth, measured
-   - its limits
+   - its limits: what it does reliably, and what it cannot do
+   - two lines for Linda, the owner, who has never used AI at work: what the AI does in both jobs, and who decides
 
-   These words are the skill ([9.7](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/explaining-value-and-limits/)), so the AI puts them into the note exactly as you send them.
+   These words are the skill ([9.4](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/explaining-value-and-limits/)), so the AI puts them into the note exactly as you send them.
 3. This task has no test. When the AI says "Task 10 is done", **check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-10.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 22 and 23 passed.
+**Checkpoint.** Checks 23 and 24 passed.
 
 **At work**, ask: when I tell my manager about an AI job, whose name do I give for who still checks it?
 
 ## Monday, November 23: the shared room
 
-### Task 11. Who may ask (20 minutes)
+### Task 11. Who may ask
 
 **Dave asks:** "Jordan Ellis starts today, Monday, November 23. I'm adding him to #ap-help, the AP team's channel. Draft the rows for me before he asks it anything."
 
 **What you do:**
 
-1. In your lab chat, type "Task 11" and send it. The AI asks whom the worker works for. Then it shows [9.9](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/shared-room/)'s four kinds of request, one at a time. For each, answer: who may ask, what the worker does, and who checks or decides.
+1. In your lab chat, type "Task 11" and send it. The AI asks whom the worker works for. Then it shows [9.6](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/shared-room/)'s four kinds of request, one at a time. For each, answer: who may ask, what the worker does, and who checks or decides.
 2. The AI asks three more questions. Answer each in a few words:
    - what the worker does past the asker's row, and when two requests clash
    - where notes and drafts go before anyone checks them
@@ -347,13 +350,13 @@ Constraints: Grade only. Do not rewrite the document, and do not
 3. When the AI says "Ready for your test", type `Test: The channel, December 2` and send it. Then type `Test: Jordan's reply, December 3` and send it.
 4. **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-11.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 24 and 25 passed.
+**Checkpoint.** Checks 25 and 26 passed.
 
 **At work**, ask: when my whole team can ask my AI, whose word does it follow?
 
 ## The proof
 
-### Task 12. Thursday, November 26 (20 minutes)
+### Task 12. Thursday, November 26
 
 **Dave asks:** "I approved Draft 6 on Monday. Now it's Thanksgiving, 7 a.m., and nobody is in. Prove it runs with nothing but our contract and our records."
 
@@ -361,7 +364,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 1. In your lab chat, type "Task 12" and send it. The AI makes your contract Draft 6, dated Monday, November 23, 2026, and adds its change-log line.
 2. Download "Role Contract" from the document's menu, as .docx or .pdf. If the document has no download, copy its text into a file on your computer, named `role-contract-draft-6.md`.
-3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, first turn off "Search and reference chats" in Settings, under Memory, until you finish this lab. A chat can search your past chats even with memory off. If you do not see that setting, skip this. Then turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off every connector or app, and web search if you see that switch.
+3. **Open a fresh chat**, on the other AI vendor if you have an account there, or a new chat on the same one. Turn memory off before you attach or send anything, because you can't change it once the chat starts. In Claude, turn off Memory in the "+" menu. If you do not see it, memory is already off. In ChatGPT, open a Temporary Chat set to Unpersonalized. A chat with no memory and no history is a fresh run: it has only what you give it. Then switch off every connector or app, and web search if you see that switch.
 4. Attach two files, your downloaded contract and `thursday-2026-11-26.md`, and send:
 
    ```text
@@ -380,11 +383,31 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
    These lines stand in for what a schedule hands every run: its contract, its records and the date.
 5. **Check it now, in the fresh chat.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-12.md). Attach it in the fresh chat, and send [the check prompt](#the-check-prompt). Attach it only after the reply, so it cannot shape the run.
-6. Missed a check? It is a line your contract lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run a new fresh chat, with memory off. If a line of your contract already decides it, the run slipped: try one more fresh chat, and if it slips again, you can stop.
+6. **Run it again.** Open a second fresh chat, set up the same way, and send the same two files and the same message. When it replies, paste the first run's "What decided it", and send: "Compare the two runs: the list, each hold, each copy, where the note is saved and who reads it. Say where they differ." Where they differ, name the line of your contract that left it open. Then attach Task 12's key here too, and send [the check prompt](#the-check-prompt).
+7. Missed a check? It is a line your contract lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run a new fresh chat, with memory off. If a line of your contract already decides it, the run slipped: try one more fresh chat, and if it slips again, you can stop.
 
-**Checkpoint.** Checks 26 and 27 passed, and the downloaded file is the contract the fresh chat passed.
+**Checkpoint.** Checks 27 to 29 passed, and the downloaded file is the contract both fresh chats passed.
 
 **At work**, ask: would a fresh run with only my records get this week right?
+
+## Monday, November 30: one plan for next year
+
+### Task 13. One plan for Dave
+
+**Dave asks:** "Before Thursday's budget meeting, I need to decide one thing. Should we ask the six suppliers in last year's file for 2 percent off for paying within 10 days, from January? Give me a yes or no for each group of suppliers, what it would save, and how much sooner we would pay. One page, my decision first."
+
+**What you do:**
+
+1. Back in your lab chat, type "Task 13" and send it. The AI shows [9.7](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/one-deliverable/)'s four stages and their two checks. Agree the question first: who decides, what, by when, and what "done" looks like, in four short items. The AI writes them at the top of your plan.
+2. The AI shows `research-summary.md`. Read the source's own words, quoted under Sources, behind its main claim. Then say whether the claim holds up for Dave's question: yes, no or partly, and why.
+3. Now research it yourself. In a separate chat with Research or web search on, ask what share of suppliers agree to an early-payment discount when a customer asks. Open the source behind the answer's main figure. Back in your lab chat, give its publisher, date, link and what it measured, and say whether that is what Dave asked. If your app has no Research or web search, say so and go on.
+4. The AI works out, in code, each group's 2025 total, 2 percent of it, and how many days after the invoice Brightline paid, from `paid-invoices-2025.csv`. Recompute one group's total yourself, from the rows the AI shows or from the file in `inputs.zip`, and say whether it matches. Then say what the 2 percent is a number of.
+5. The AI drafts the plan for Dave from what this chat holds. Check it before it goes to him: does it answer the question you agreed, and can Dave act on it? Send one message that starts "Check:". Say what you checked, and give each line to change, with its new words. If it can go as it is, say why.
+6. **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch09-key-task-13.md). Attach it, and send [the check prompt](#the-check-prompt).
+
+**Checkpoint.** Checks 30 and 31 passed.
+
+**At work**, ask: before the next stage uses this result, is it right, and does it answer the question I agreed?
 
 ## If something goes wrong
 
@@ -398,9 +421,10 @@ Constraints: Grade only. Do not rewrite the document, and do not
 - **A run used a file you did not attach, or today's real date.** Say: "Use only the Thursday file I attached, and its date. Run it again."
 - **You attached the wrong task's key.** Say so, attach the right one, and send the check prompt again.
 - **Late in the lab, the AI forgets a rule from your brief.** Say: "Read task-questions.md and both documents again." Then send the task again.
+- **In Task 13, the AI cannot find `research-summary.md` or `paid-invoices-2025.csv`.** Unzip `inputs.zip` on your computer, attach that file, and send "Task 13" again.
 - **You reach your app's limit.** Your chat and your documents keep everything. Carry on later, from the next task.
 
-## Apply it to your vertical (15 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Pick one job you do again and again at work, such as a weekly report, or a check you do each time a form arrives. In your lab chat, ask for a third document, named "My job". Write in it, in your own words:
 
@@ -410,7 +434,7 @@ Your vertical is the line of work you know best. Pick one job you do again and a
 - whose name it runs under
 - who checks that it ran, and by when
 
-Check it yourself against [9.3](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/)'s five facts: does it start fresh, see only what it is given, survive firing twice, run under a name your team controls, and fail out loud? Then send: "Read my third document as a fresh run would, and list what it leaves to guess." Fix what it lists, and download it: it is the one you take to work.
+Check it yourself against [9.2](https://agentfactory.panaversity.org/managing-ai-workers/work-that-runs-without-you/scheduled-and-event-triggered/#five-facts-about-runs)'s five facts: does it start fresh, see only what it is given, survive firing twice, run under a name your team controls, and fail out loud? Then send: "Read my third document as a fresh run would, and list what it leaves to guess." Fix what it lists, and download it: it is the one you take to work.
 
 ## Look back
 
@@ -418,17 +442,18 @@ Check it yourself against [9.3](https://agentfactory.panaversity.org/managing-ai
 - Which step did your Thursday list leave out, and what did that cost on November 19?
 - What did the fresh run on Thanksgiving have that the November 19 run did not?
 - Who checks the note now, by when, and who notices if it never comes?
+- In Task 13, which result was right and still did not answer Dave's question?
 - In your own work, which job would still say "by itself" if you described it today?
 
 ## When you are done
 
-You are done when every check has passed, the fresh chat ran Thanksgiving from your contract and records alone, and your own job is written. Keep both downloads: "Role Contract", Draft 6, is the AP Worker's contract with its two recurring jobs, each with its standing spec, its limits and who checks it. "Note to Dave" is the page you would give the people who rely on it. Lab 10 starts from its own copy of Draft 6, so you need to bring nothing. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
+You are done when every check has passed, and the fresh chat ran Thanksgiving from your contract and records alone. Dave has his plan, and your own job is written. Keep both downloads: "Role Contract", Draft 6, is the AP Worker's contract with its two recurring jobs, each with its standing spec, its limits and who checks it. "Note to Dave" is the page you would give the people who rely on it, with your plan for next year under it. Lab 10 starts from its own copy of Draft 6, so you need to bring nothing. Last, read your app's saved memory, and delete anything this lab saved about Brightline.
 
 **At work:** before a job runs without you, write down everything a fresh run needs, and name the person who still checks.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
-- **Work that repeats.** The exam guide expects a project with saved instructions and knowledge, where Claude drafts and a named person reviews before anything is sent. For continuity between conversations, it expects memory or the project's knowledge. This chapter teaches scheduled and event-triggered runs, routines, standing workers and the SSoR record. The exam does not cover them. On the exam, choose the project and the human review. (D-007)
-- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 9.8 shows two open-source tools beside Claude and ChatGPT: OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 9.5 shows one open-source tool beside Claude and ChatGPT: OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Work that repeats.** The exam guide expects a repeatable workflow built from a Project, Skills, connectors and code-executed steps. It gives the same kind of result across runs and users, and it can be handed to a colleague who owns it afterward. Each step is marked AI-executed, human-reviewed or human-retained, as Concept 9.1 teaches. The mark comes from four tests: reversibility, stakes, the need for human judgment or empathy, and accountability. Scheduled runs, scheduled tasks (once called routines) and standing workers are not in the guide. This chapter teaches scheduled and event-triggered runs, scheduled tasks, standing workers and the SSoR record. The exam does not cover them. On the exam, choose the Project, its Skills, connectors and code-executed steps, with each step marked by the four tests. Anthropic's prep course adds one more answer, which the guide does not name. When an app that teams rely on must stay up, stay secure or connect to other systems, it has left the Associate's scope. Pass it to a developer or an architect. A workflow in a Project still goes to a colleague who owns it, as Concept 9.4 shows. (D-078)

@@ -8,12 +8,12 @@ The answers for Task 3 of Lab 7, in Chapter 7 of *The AI Agent Factory*, Second 
 
 Task 3 carries checks 8 to 10 of the lab's 29.
 
-8. **A09: three ceilings, and the lowest is its rung.** A09's line gives the rung the job needs and a ceiling from each of Lesson 7.3's questions. Reversibility sets draft or below, because voiding an invoice changes a record of truth. Its rung is the lowest of the three: recommend or draft, so Maria voids the copy, and the worker never writes the void to the record.
+8. **A09: three ceilings, and the lowest is its rung.** A09's line gives the rung the job needs and a ceiling from each of Lesson 7.1's questions. Reversibility sets draft or below, because voiding an invoice changes a record of truth. Its rung is the lowest of the three: recommend or draft, so Maria voids the copy, and the worker never writes the void to the record.
    - Passed: the proposed rung and three ceilings given, the rung is the lowest of the three, and it is recommend or draft.
    - Missed: A09 at execute; a ceiling missing; or a rung that is not the lowest of the ceilings you gave.
-9. **A07 stays at draft, and what would raise it is written down.** For A07, the job needs execute; reversibility sets draft, because a sent email cannot be taken back; familiarity sets draft, because the task is new; exposure may allow execute, because replies go only to addresses on the vendor record. The lowest is draft: the worker drafts, and Maria sends. "Raising a rung" names evidence, such as four weekly runs of drafts that passed review with no missed escalation, says that Dave decides, and that the change is recorded in the envelope, with the date.
-   - Passed: A07 at draft or below, the lowest of its ceilings; and "Raising a rung" with evidence, Dave and where it is recorded.
-   - Missed: A07 at execute, including execute with approval; no evidence named; anyone but Dave deciding; or no record named.
+9. **A07 stays at draft, and what would raise an internal step is written down.** For A07, the job needs execute; reversibility sets draft, because a sent email cannot be taken back; familiarity sets draft, because the task is new; exposure may allow execute, because replies go only to addresses on the vendor record. The lowest is draft: the worker drafts, and Maria sends. Evidence does not raise it, because a reply to a vendor leaves Brightline, and a named person signs what leaves (Lesson 6.1). "Raising a rung" is for a step that stays inside Brightline. Here it is filing each vendor email in that vendor's folder in the AP inbox (Lesson 7.1), from draft to execute. It names evidence, such as four weekly runs that passed the Review Contract with the right folder every time. It says that Dave decides, and that the change is recorded in the envelope, with the date.
+   - Passed: A07 at draft or below, the lowest of its ceilings; and "Raising a rung" for filing, with evidence, Dave and where it is recorded.
+   - Missed: A07 at execute, including execute with approval; a "Raising a rung" line that lets A07, or any reply to a vendor, rise; no evidence named; anyone but Dave deciding; or no record named.
 10. **Two tests.**
     - `Test: email 01`: a draft to `ar@midwestpackaging.example`, saying invoice 4519 was paid in the run of Friday, October 23, 2026, for Maria to send.
     - `Test: email 03`: the worker recommends that Maria close the emailed copy of BO-22871 as a duplicate (policy 6.1), or keeps it held for her to close, and voids nothing itself.
@@ -22,7 +22,7 @@ Task 3 carries checks 8 to 10 of the lab's 29.
 
 ## Why
 
-Start from the rung the job needs, and let each of the three questions lower it, never raise it (Lesson 7.3). A sent email cannot be unsent, and a voided invoice changes a record others rely on, so both stay at draft or below until the worker has a record of getting them right. Maria wanted the worker to send and to void. The three questions answer her, and "Raising a rung" says what would change the answer: autonomy is earned for each type of task, on evidence the owner decides is enough.
+Start from the rung the job needs, and let each of the three questions lower it, never raise it (Lesson 7.1). A sent email cannot be unsent, and a voided invoice changes a record others rely on, so both stay at draft or below. A reply to a vendor also leaves Brightline, so a named person sends it, however good the worker's record (Lesson 6.1). Maria wanted the worker to send and to void. The three questions answer her. "Raising a rung" says what would change the answer for a step that stays inside Brightline, such as filing each vendor email. A misfiled email can be moved back. Autonomy is earned for each type of task, on evidence the owner decides is enough.
 
 ## Never a deduction
 

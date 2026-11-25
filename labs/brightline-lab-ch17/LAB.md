@@ -13,7 +13,7 @@ Chapter 17 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 - A computer with macOS, Windows or Linux, and a terminal.
 - **Node.js 22.19 or later** (24 recommended). The MCP Inspector needs 22.19.0, so this lab raises the repository's floor from 22.18.
 - **uv 0.13.4 or later**, for the Python half and for Python Workers.
-- Git, a GitHub account and `gh`, as in Chapter 15.
+- Git, a GitHub account and `gh`, as in [Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/overview/).
 - **Claude Code, Codex and OpenCode version 2**, in their desktop apps, as in [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/). That means the Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan, the ChatGPT desktop app with any plan, and OpenCode Desktop with a model connected. You can do the whole lab with one of them: send its prompts to the agent you have.
 - **A Cloudflare account on the free plan**, for Sitting 4 only. Sitting 4 shows how to make one.
 
@@ -40,7 +40,7 @@ Each task links its answer key as a separate download. Open a key in a text edit
 
 **New to MCP or Cloudflare?** You need neither, and you need not have heard of Cloudflare. Read [17.1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/) and field guide [F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer) and [F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) before Task 1. [F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) starts with "Meet Cloudflare", what the company is and what its free plan gives you. The lab runs everything on your computer until Sitting 4, so you need no Cloudflare account until then. Sitting 4 and field guide [F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers) walk you through making one.
 
-**Your own copy on GitHub.** Task 17 opens a pull request, and Sitting 4 deploys from GitHub, so the repository goes on GitHub once, in Task 1. Sign `gh` in yourself first, in a terminal, never through an agent's chat: `gh auth login`, then `gh auth status` to check, as in Chapter 16. A private repository works for every task.
+**Your own copy on GitHub.** Task 17 opens a pull request, and Sitting 4 deploys from GitHub, so the repository goes on GitHub once, in Task 1. Sign `gh` in yourself first, in a terminal, never through an agent's chat: `gh auth login`, then `gh auth status` to check, as in [Chapter 16](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/lab/). A private repository works for every task.
 
 **The date in this lab.** Today in the lab is Monday, March 15, 2027, a week after Lab 16. An agent that reads its own clock may call the data's dates the future. Ignore that. The expected answers, such as which invoices are due, count from that date, whatever day you do the lab.
 
@@ -222,7 +222,7 @@ Then break it on purpose, twice: ask Codex to change one word in one Python desc
 
 ### Task 12. Review both servers (15 minutes)
 
-**Goal:** each server read by the agent that did not write it (Chapter 15).
+**Goal:** each server read by the agent that did not write it ([Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/evidence-before-the-pr/)).
 
 Start a fresh Codex session and send "Review `servers/ap-ts/` against `REVIEW.md` and the server rules in `docs/connector-spec.md`: inputs validated, every request's key and `Origin` checked, only needed fields returned, nothing held between requests. Change nothing. List findings with a file, a line and the input that would make each go wrong." Do the same in a fresh Claude Code session for `py/brightline_ap/` and `servers/ap-py/`. Send each finding you accept to the agent that wrote that server.
 
@@ -418,7 +418,7 @@ Read the plan for four things: staging comes before production, keys are sent af
 
 **Check it now.** Download [Task 18d's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-18d.md).
 
-**Optional.** When you no longer need the emergency rollback path, ask the agent to run `npx wrangler logout`, so your laptop no longer holds access to your Cloudflare account. Ask Claude Code to write in `NOTES.md` what must change before real data goes through. That means OAuth in place of the shared key (Chapter 18 builds it), an allowed-origins list, rate limits, and where `AP_HANDLE_KEY` is kept and how it is rotated.
+**Optional.** When you no longer need the emergency rollback path, ask the agent to run `npx wrangler logout`, so your laptop no longer holds access to your Cloudflare account. Ask Claude Code to write in `NOTES.md` what must change before real data goes through. That means OAuth in place of the shared key ([Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/) builds it), an allowed-origins list, rate limits, and where `AP_HANDLE_KEY` is kept and how it is rotated.
 
 ### Apply it to your vertical (optional)
 

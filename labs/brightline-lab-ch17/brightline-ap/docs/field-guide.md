@@ -75,16 +75,6 @@ When you open a website, your request crosses the internet to a computer that ho
 
 Cloudflare also rents out that network to run your own code. That service is Workers, and it is where the Brightline connector goes online in Sitting 4.
 
-#### Why Cloudflare matters in the AI era
-
-Cloudflare has positioned itself as a major infrastructure and security company for AI. Its announcement of October 20, 2026 gives three figures.[^cloudflare-announcement] They are Cloudflare's own figures.
-
-- **Massive developer adoption.** More than 10 million developers now build on Cloudflare's platform, up from 7.4 million the quarter before. Cloudflare links the surge to AI-native and agentic applications.
-- **An explosion of AI agent traffic.** Daily requests from AI agents across Cloudflare's network grew by more than 1,700% in a year.
-- **Machines now outnumber people online.** In 2026, for the first time, more than half of internet traffic was not human.
-
-What this means for you: much of that agent traffic is AI apps calling tools, which is exactly what a connector answers. A connector on Workers runs on the same network that already carries and protects that traffic, close to whichever AI app calls it.
-
 #### Why this book uses it
 
 Four reasons, all about the lab:
@@ -560,7 +550,7 @@ These are the rules behind [17.8](https://agentfactory.panaversity.org/building-
 
 #### Real sign-in with OAuth
 
-This looks ahead from [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/). Chapter 18 builds it. MCP uses **OAuth 2.1**. The person signs in at a trusted service and gives **consent**. The AI app gets an **access token** that names the person, the server it is for, what it allows (its scopes, such as `ap:read`) and when it expires. The service that issued it is the **issuer**. In revision 2026-07-28:
+This looks ahead from [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/). [Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/) builds it. MCP uses **OAuth 2.1**. The person signs in at a trusted service and gives **consent**. The AI app gets an **access token** that names the person, the server it is for, what it allows (its scopes, such as `ap:read`) and when it expires. The service that issued it is the **issuer**. In revision 2026-07-28:
 
 - The MCP server is a **resource server**. It must publish **protected resource metadata** (RFC 9728) naming its **authorization server**. A refused request's 401 points to that document.
 - A client preferably identifies itself with a **Client ID Metadata Document**: a web address serving a document about the client, so nobody registers clients by hand.
@@ -598,7 +588,6 @@ These are the agreed names [17.10](https://agentfactory.panaversity.org/building
 [^cloudflare-python-packages]: Python packages, Cloudflare.
 [^cloudflare-python-how]: How Python Workers work, Cloudflare.
 [^cloudflare-github-actions]: GitHub Actions, Cloudflare.
-[^cloudflare-announcement]: More than 10 million developers are building on Cloudflare, Cloudflare announcement.
 [^cloudflare-network]: The Cloudflare network, Cloudflare.
 [^cloudflare-static-assets]: Static assets binding, Cloudflare.
 [^cloudflare-secrets]: Secrets, Cloudflare.

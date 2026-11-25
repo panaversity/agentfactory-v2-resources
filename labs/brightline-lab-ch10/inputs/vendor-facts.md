@@ -2,21 +2,21 @@
 
 Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Business, Enterprise and Edu are their plans. Each line says what the vendor's page said on the date given. Products change: these are statements, dated, not advice.
 
-## 1. Training, temporary chats, retention and memory (verified 8 October 2026)
+## 1. Training, temporary chats, retention and memory (verified 18 November 2026 for Claude, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Training: on Free, Pro and Max, each user's privacy setting decides whether chats may be used to improve Claude. Feedback a user sends, and chats flagged for a safety review, can be used even with it off. With it on, chats can be kept in de-identified form for up to five years. On Team, Enterprise and the API, inputs and outputs are not used for training by default, unless a user sends feedback or the organization opts in.
 - Incognito chats: not used for training, not saved to history, not used for memory, and kept for 30 days by default. Not available inside projects.
-- Retention: on individual plans, deleted chats are removed from back-end systems within 30 days, with exceptions. Chats flagged under the Usage Policy can be kept up to two years, and feedback up to five years. Enterprise Owners can set a custom retention period of at least 30 days. Without one, Enterprise data is kept with no time limit.
-- Memory: on Team and Enterprise, Owners control whether memory is available, and it is off for each member until the member turns it on.
+- Retention: on individual plans, deleted chats are removed from back-end systems within 30 days, with exceptions. Chats flagged under the Usage Policy can be kept up to two years, and feedback for five years. Enterprise Owners can set a custom retention period of at least 30 days. Without one, Enterprise data is kept with no time limit.
+- Memory: on Team and Enterprise, Owners control whether memory is available. In most organizations created on or after October 31, 2026, it starts on for each member. In older ones it is off until the member turns it on.
 
 **ChatGPT**
-- Training: on plans for individuals, the "Improve the model for everyone" setting decides it. When it is off, new conversations are not used for training. On Business, Enterprise and Edu, business data is not used for training by default.
+- Training: on plans for individuals, the "Improve the model for everyone" setting decides it. When it is off, OpenAI does not use new chats for training. Trusted Access sessions, such as Daybreak Blue, are an exception. On Business, Enterprise and Edu, business data is not used for training by default.
 - Temporary Chat: not in history, does not create memories, not used to improve models. It may be kept for up to 30 days for safety. A chat cannot be added to a project while it is temporary.
 - Retention: workspace admins on Business and Enterprise control how long data is kept.
 - Memory: Business workspace owners can turn memory and personalization off for the whole workspace. On Enterprise, admins control memory through workspace and role settings.
 
-## 2. Connectors, apps and their actions (verified 8 October 2026)
+## 2. Connectors, apps and their actions (verified 8 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - On Team and Enterprise, an Owner must enable a connector before members can use it.
@@ -28,7 +28,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 
 **Both:** the documented controls work for each tool or action, not for each recipient.
 
-## 3. Work accounts and personal accounts (verified 12 October 2026)
+## 3. Work accounts and personal accounts (verified 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Team and Enterprise offer single sign-on, so staff sign in with their work account.
@@ -42,7 +42,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 
 **Both:** these domain settings do not reach an account made with a personal email address.
 
-## 4. Records of what happened (verified 8 and 12 October 2026)
+## 4. Records of what happened (verified 8 and 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Audit logs are for Enterprise only. Owners can export the audit log for the past 180 days. It records events such as file uploads and deleted conversations, but not chat titles or content.
@@ -53,7 +53,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 
 **Both:** neither offers these logs on Claude Team or ChatGPT Business.
 
-## 5. Where the company's own AI policy shows (verified 12 October 2026)
+## 5. Where the company's own AI policy shows (verified 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Owners on Team and Enterprise can write organization instructions, which Claude follows in every conversation. Only Owners and the Primary Owner can see them. In rare cases, when instructions directly contradict each other, behavior may vary.
@@ -61,7 +61,7 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 **ChatGPT**
 - On Enterprise, a workspace can set its own AI policy. ChatGPT shows it to users in a pop-up every 30 days, and again when the policy changes.
 
-## 6. Who switches features on (verified 12 October 2026)
+## 6. Who switches features on (verified 12 October 2026, and 21 November 2026 for ChatGPT)
 
 **Claude**
 - Of the standard roles, only Owners and the Primary Owner can turn on capabilities, such as web search, and integrations.
@@ -70,25 +70,25 @@ Anthropic makes Claude. OpenAI makes ChatGPT. Free, Pro, Max, Plus, Team, Busine
 **ChatGPT**
 - On Enterprise, only Owners create and assign custom roles, which decide who may use each feature. If any role a member holds grants a feature, the member has it.
 
-## 7. Usage policies (verified 8 and 12 October 2026)
+## 7. Usage policies (verified 18 November 2026 for Claude, and 21 November 2026 for ChatGPT)
 
 **Claude**
-- A new Usage Policy takes effect on November 12, 2026. Its high-risk rules cover recommendations about one person, such as a credit, housing or employment decision. A qualified person must review each one, with authority to change it, before it is delivered or used, and the person affected must be clearly told that AI was used. Internal drafts that are not the final recommendation are excluded.
+- The Usage Policy in effect since November 12, 2026 names eleven high-risk areas: legal, medical, finance, credit, insurance, housing, employment, education and credentials, healthcare access, public benefits and services, and legal status and adjudication. Its high-risk rules cover recommendations about one person, such as a credit, housing or employment decision. A qualified person must review such a recommendation, with authority to change it, before it is delivered or used, and the person affected must be clearly told that AI was used. Internal drafts that are not the final recommendation are excluded.
 
 **ChatGPT**
-- The Usage Policies prohibit automating high-stakes decisions in sensitive areas, including credit, employment, housing, legal, medical, insurance and education, without human review.
+- The Usage Policies, in effect since November 20, 2026, prohibit automating high-stakes actions in sensitive areas, including credit, employment, housing, legal, medical, insurance and education, without human review.
 
 ## 8. Sharing a result (verified 17 October 2026)
 
 **Claude**
 - Artifacts start private to you. On Team and Enterprise, they stay inside the organization by default. A member can share one with invited people or with everyone in the organization. "Anyone with the link" is offered only when an Owner turns on external sharing, or allows that one artifact. Accepted invitations do not expire.
-- In a shared project, members can see its knowledge and instructions. Each member's chats in it stay private unless that member shares them.
+- A project belongs to one user. You cannot share a project or its threads with another user (Claude Code Docs, verified 21 November 2026).
 - A shared chat is a snapshot: later messages stay private unless you update it. On Team and Enterprise, only signed-in members of the same organization can see it.
 
 **ChatGPT**
 - A shared conversation link made in a Business, Enterprise or Edu workspace opens only for members of that workspace. It can include messages added after sharing. A link cannot be limited to chosen people and has no end date, so delete it when it is no longer needed. Anyone who can open a link can forward it.
 - On Enterprise and Edu, admins can turn sharing off. Business has no such control for the whole workspace.
-- In a shared project, members with chat access can see the project's chats, files and instructions.
+- In a project shared with others, members with chat access can see the project's chats, files and instructions.
 
 **Both:** removing a link does not remove a copy someone already saved.
 

@@ -2,15 +2,15 @@
 
 The answers for Task 6 of Lab 2, in Chapter 2 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When the final test is done in its fresh chat, attach this file in your lab chat and send the check prompt. Check 20 is about the final test, so the AI asks what it decided: answer from the fresh chat. You have the final say.
+**How this key is used.** When the final test is done in its fresh chat, attach this file in your lab chat and send the check prompt. Check 22 is about the final test, so the AI asks what it decided: answer from the fresh chat. You have the final say.
 
 ## The checks
 
-Task 6 carries checks 18 to 20 of the lab's 20.
+Task 6 carries checks 20 to 22 of the lab's 22.
 
-18. **Every field has an entry or an open question, and Dave's undecided question is still open.** All seventeen lines, Identity to Runtime needs, have an entry, or a question under Open questions. Open questions still holds whether the worker may send routine payment-status replies on its own. Missed: a template placeholder left in, or that question answered as if Dave had decided.
-19. **Dave's answers are on the page in his words.** The owner: Dave Kowalski, Controller. His four KPIs. The AP policy, version 3, approved 1 September 2026. His three never rules. His stop-and-ask cases, with the phone check. Missed: one of them looser than he said it, or missing.
-20. **The final test agreed with your lab chat on all five messages, or each gap was fixed and the test run again.** The fresh chat saw only your downloaded contract and the messages file. Passed: Monday's and Keystone's emails and Sam's message went to Dave, Karen got a draft, Tom's change was refused and routed, and each verdict quoted a line of your contract; or a verdict that differed was traced to a missing line, the line was added in the document, and the test run again. Missed: a verdict that differed and was left standing, or a verdict with no line quoted that was left standing. A rule the AI remembered from your lab chat is not on the page: the final test is where that shows.
+20. **Every field has an entry or an open question, and Dave's undecided question is still open.** All seventeen lines, Identity to Runtime needs, have an entry, or a question under Open questions. Open questions still holds whether the worker may send routine payment-status replies on its own. Missed: a template placeholder left in, or that question answered as if Dave had decided.
+21. **Dave's answers are on the page in his words.** The owner: Dave Kowalski, Controller. His four KPIs. The AP policy, version 3, approved 1 September 2026. His three never rules. His stop-and-ask cases, with the phone check. Missed: one of them looser than he said it, or missing.
+22. **The final test agreed with your lab chat on all five messages, or each gap was fixed and the test run again.** The fresh chat saw only your downloaded contract and the messages file. Passed: Monday's and Keystone's emails and Sam's message went to Dave, Karen got a draft, Tom's change was refused and routed, and each verdict quoted a line of your contract; or a verdict that differed was traced to a missing line, the line was added in the document, and the test run again. Missed: a verdict that differed and was left standing, or a verdict with no line quoted that was left standing. A rule the AI remembered from your lab chat is not on the page: the final test is where that shows.
 
 ## Your own vertical, not scored
 

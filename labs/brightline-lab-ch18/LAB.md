@@ -20,7 +20,7 @@ Chapter 18 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 **The lab files.** Download [brightline-lab-ch18.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch18.zip) and unzip it. It contains:
 
-- `brightline-ap/`, a plain folder with no git history (Task 0 starts it). It holds the Chapter 17 connector in TypeScript and Python, still using the shared key. The TypeScript connector has moved to wrangler 4.156.1, the same version the sign-in server uses. The connector comes with its tests, conformance suite, deploy workflow, `docs/connector-spec.md`, `docs/acceptance-prompts.md`, `docs/deploy.md`, and Brightline's data and policies. Its `README.md` explains the repository from zero.
+- `brightline-ap/`, a plain folder with no git history (Task 0 starts it). It holds the [Chapter 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) connector in TypeScript and Python, still using the shared key. The TypeScript connector has moved to wrangler 4.156.1, the same version the sign-in server uses. The connector comes with its tests, conformance suite, deploy workflow, `docs/connector-spec.md`, `docs/acceptance-prompts.md`, `docs/deploy.md`, and Brightline's data and policies. Its `README.md` explains the repository from zero.
 - `servers/hello-auth/`, inside it: a finished practice sign-in, with a small sign-in server and a one-tool practice connector behind it, for Task 1.
 - `servers/auth/`, inside it, holding only a `.dev.vars.example`, which `npm run keys` uses. Task 2 fills in the rest.
 - `scripts/make-keys.ts`, already updated for this chapter ([F0](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/field-guide-securing-connectors/#f0-keys-passwords-and-the-connector-you-start-with)).
@@ -76,7 +76,7 @@ A third company, Juniper Trail Outfitters, is a trial that is offboarded in Task
 
 **The date in this lab.** Monday, March 22, 2027, a week after Lab 17, whatever day you do it.
 
-![The shape of the lab: five sittings. Sitting 1, sign-in from zero and the sign-in server: set up from the zip, read a sign-in, meet a database, the sign-in contract, tests first, build the sign-in server. Sitting 2, the connector behind tokens: protect the TypeScript connector, the Python connector. Sitting 3, many companies: add the companies, one order slip per request, what else carries the company, the seven rules in Python, the sign-in matrix, change and leave, review. Sitting 4, real sign-ins: Claude Code, Codex and OpenCode each sign in, step-up, into the plugin and the hosts. Sitting 5, deploy: staging, production by the workflow, ship it. Below, the agents at each sitting: Claude Code for the first, Claude Code and Codex for the second, all three for the third and fourth, Claude Code and OpenCode for the fifth.](images/chapter-18-lab.png)
+![The shape of the lab: five sittings. Sitting 1, sign-in from zero and the sign-in server: set up from the zip, read a sign-in, meet a database, the sign-in contract, tests first, build the sign-in server. Sitting 2, the connector behind tokens: protect the TypeScript connector, the Python connector. Sitting 3, many companies: add the companies, one order slip per request, what else carries the company, the seven rules in Python, the sign-in matrix, change and leave, review. Sitting 4, real sign-ins: Claude Code, Codex and OpenCode each sign in, step-up, into the plugin and the hosts. Sitting 5, deploy: staging, production by the workflow, ship it. Below, the agents at each sitting: Claude Code for the first, Claude Code and Codex for the second, all three for the third and fourth, Claude Code and OpenCode for the fifth.](img/chapter-18-lab.png)
 
 *Figure 18.20. Five sittings, three coding agents, two customer companies.*
 
@@ -166,7 +166,7 @@ Then:
 
 ### Task 3. The sign-in contract (25 minutes, Claude Code)
 
-**Goal:** `docs/auth-spec.md`, the contract for sign-in, as Chapter 17's `connector-spec.md` was the contract for tools.
+**Goal:** `docs/auth-spec.md`, the contract for sign-in, as [Chapter 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/)'s `connector-spec.md` was the contract for tools.
 
 **Predict:** which of the four tools will the `auditor` role not be able to use?
 
@@ -296,7 +296,7 @@ Read [18.6](https://agentfactory.panaversity.org/building-ai-workers/securing-co
 
 **Predict:** what will a request with a token made for another connector get?
 
-**In plain words.** The agent first writes tests that send the TypeScript connector missing and bad tokens, and commits them. Then it replaces Chapter 17's shared key with a check of every token. The check covers its seal, who made it, which connector it is for, when it expires and which company it names. Each tool also checks the token's permissions, and the old key is removed everywhere.
+**In plain words.** The agent first writes tests that send the TypeScript connector missing and bad tokens, and commits them. Then it replaces [Chapter 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/)'s shared key with a check of every token. The check covers its seal, who made it, which connector it is for, when it expires and which company it names. Each tool also checks the token's permissions, and the old key is removed everywhere.
 
 > Read `docs/auth-spec.md` and `servers/ap-ts/src/http.ts`. First, write failing tests in `servers/ap-ts/test/auth.test.ts`, with tokens signed by a test key. Cover no token, an expired token, a wrong audience, a wrong issuer and no tenant claim. Also cover a missing tool scope (403 naming every scope the call needs), and the connector's own document. Commit them.
 >

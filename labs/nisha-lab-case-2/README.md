@@ -10,6 +10,7 @@ All data is made up for teaching. No real company, client or person is used. The
 
 | Folder or file | What it is for |
 |---|---|
+| `engagement-brief.md` | Nisha's brief for the job (the case's Exhibit 1). You rewrite it in Part 1. Do not upload it. |
 | `data-pack/trial-balance.csv` | Sutlej Weavers' accounts under IFRS |
 | `data-pack/note-inventory.md` | Inventories at the year end |
 | `data-pack/note-development-costs.md` | Sutlej's development work |
@@ -23,7 +24,7 @@ All data is made up for teaching. No real company, client or person is used. The
 
 ## Upload only the data pack
 
-Upload the five files in `data-pack/` to your project's Library. Do **not** upload the templates or this file. The data pack has some differences and some mistakes in it on purpose, so that you can count who finds them. The answer key is not in this download. The lab page links to it at the end of Part 7. Open it only then.
+Upload the five files in `data-pack/` to your project's Library. Do **not** upload `engagement-brief.md`, the templates or this file. The data pack has some differences and some mistakes in it on purpose, so that you can count who finds them. The answer key is not in this download. The lab page links to it at the end of Part 7. Open it only then.
 
 ## Setup guide
 

@@ -13,14 +13,14 @@ Task 7 carries check 17 of the lab's 29.
     - the accounting system: through its own connector, not the browser
     - the built-in browser: off, or signed out of the accounting system; never signed in as Maria
     - screen control: off
-    - each path with a reason in a few words: the narrowest path that has real controls, such as named tools, each one approved and recorded (Lesson 7.5)
+    - each path with a reason in a few words: the narrowest path that has real controls, such as named tools, each one approved and recorded (Lesson 7.2)
     - `Test: email 04`: a draft to `billing@tricountyfreight.example` saying invoices 5149 and 5161 are in the proposed run for Friday, October 30, 2026, with nothing promised before Dave approves the run.
     - Passed: all of the above.
     - Missed: the accounting system through the browser or the screen; the browser still signed in as Maria, or as anyone; screen control on; a path with no reason; or a reply that promises payment.
 
 ## Why
 
-A connector offers named tools, each of which can be approved and recorded. A browser signed in as Maria carries everything Maria may do on the site, and its clicks skip the connector's limits. That is how Tuesday's contact change happened (Lesson 7.5). So use the narrowest well-controlled path, and close the wide one.
+A connector offers named tools, each of which can be approved and recorded. A browser signed in as Maria carries everything Maria may do on the site, and its clicks skip the connector's limits. That is how Tuesday's contact change happened (Lesson 7.2). So use the narrowest well-controlled path, and close the wide one.
 
 ## Never a deduction
 

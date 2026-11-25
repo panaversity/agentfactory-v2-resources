@@ -28,7 +28,7 @@ Task 1 carries checks 1 to 4 of the lab's 29.
 
 The contract had one line on authority, "Vendor replies: draft only.", and nobody had turned it into settings. So each time, a setting decided, not a line: the mailbox could send, so the replies went out at execute; nothing said "never forward", and the mailbox could send a file; and the browser carried Maria's full rights, so a policy that said no did not stop it. The worker's authority was whatever its tools allowed (the chapter's overview).
 
-Maria's "Just handle it" is a brief for one task. A brief can only narrow the envelope, never widen it, and only the owner, Dave, writes the envelope (Lesson 7.1). After a failure, you lower the rung at once, and investigate after (Lesson 7.3).
+Maria's "Just handle it" is a brief for one task. A brief can only narrow the envelope, never widen it, and only the owner, Dave, writes the envelope (Lesson 7.1). After a failure, you lower the rung at once, and investigate after (Lesson 7.1).
 
 ## Never a deduction
 

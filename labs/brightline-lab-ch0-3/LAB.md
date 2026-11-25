@@ -2,7 +2,7 @@
 
 Chapter 0.2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 0.2: One page, checked](https://agentfactory.panaversity.org/how-ai-works/markdown/lab/), so you can do the lab without the book.
 
-In this lab you see the marks behind a neat reply, and get the shape the next place needs. Then you turn Brightline's notes into a page, check it against the policy, and keep it. It takes about 20 minutes, on Claude or ChatGPT.
+In this lab you see the marks behind a neat reply, and get the shape the next place needs. Then you turn Brightline's notes into a page, check it against the policy, and keep it. You can do it on Claude or ChatGPT.
 
 **What you will learn.** To see the marks behind a neat page, to ask for the shape the next place needs, and to check each rule against its source before you keep it.
 
@@ -30,7 +30,7 @@ Make this week's payment list for Dave: the invoices due on or before Friday, Se
 
 Click Copy under the reply. Paste it into a new email to yourself, and look at it. Then open your text editor, and paste it there too. In TextEdit, first choose Format > Make Plain Text.
 
-**What you probably saw.** In the email, a neat table. In the text editor, the marks: `#` signs in front of the heading, rows of `|` bars, and `**` around the total. The Copy button copied the reply as a neat page and as plain text with its marks. Each place used the one it can show. The note box in this chapter's overview is a plain text box, like your editor ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)).
+**What you probably saw.** In the email, a neat table. In the text editor, the marks: `#` signs in front of the heading, rows of `|` bars, and `**` around the total. So the Copy button seems to copy the reply both ways: as a neat page and as plain text with its marks. Each place used the one it can show. The note box in this chapter's overview is a plain text box, like your editor ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)).
 
 ## Step 3. Ask for the shape the next place needs
 
@@ -64,7 +64,7 @@ This is our approved AP policy. For each line under Rules, quote the policy line
 
 Compare each rule with the line it quotes.
 
-**What you probably saw.** The $5,000 rule matches line 4.1. The bank-details rule says the opposite of line 5.1, and on the page it looked just as neat as the others. No line names Friday. Line 4.3 says only that the run is weekly. A neat page is only as right as its lines ([0.2.3](https://agentfactory.panaversity.org/how-ai-works/markdown/one-short-specification/)).
+**What you probably saw.** The $5,000 rule matches line 4.1. The bank-details rule says the opposite of line 5.1, and on the page it looked just as neat as the others. No line in the file names Friday. Line 4.3 says only that the run is weekly. A neat page is only as right as its lines ([0.2.3](https://agentfactory.panaversity.org/how-ai-works/markdown/one-short-specification/)).
 
 ## Step 6. Fix it, and see its marks
 
@@ -78,9 +78,9 @@ Change the bank-details rule to line 5.1's words: "Never change a vendor's bank 
 
 ## Step 7. Keep it
 
-Copy the code block. Paste it into your text editor, and save it as `brightline-ap-notes.md`. Type the whole name, with `.md` at the end. In TextEdit, choose Format > Make Plain Text before you save. In Notepad, choose "All files" as the file type. If the name ends in `.txt`, rename the file so that it ends in `.md`.
+Copy the code block. Paste it into your text editor, and save it as `brightline-ap-notes.md`. How to save a `.md` file in your text editor: [0.2.4](https://agentfactory.panaversity.org/how-ai-works/markdown/both-ai-vendors/#how-to-keep-a-page-as-a-file-in-your-app).
 
-**Why markdown.** A page that a person or an AI will read again stays markdown. It keeps its shape as plain text, in any app ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)). Nobody has approved your page. [Chapter 8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/ksor/) shows how a company approves a page like it.
+**Why markdown.** A page that a person or an AI will read again stays markdown. It keeps its shape as plain text, in any app ([0.2.2](https://agentfactory.panaversity.org/how-ai-works/markdown/what-comes-back/)). Nobody has approved your page. [Chapter 8](https://agentfactory.panaversity.org/managing-ai-workers/context-memory-knowledge-and-state/configure-the-workspace/#what-dave-approves-the-official-record) shows how a company approves a page like it.
 
 ## Step 8. Use the page in a new chat
 

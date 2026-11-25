@@ -23,7 +23,7 @@ from .loop.tools import allow_only, connect_to_connector
 from .loop.trace import Tracer
 
 ROOT = pathlib.Path(__file__).parents[2]
-# The request deadline (20.8): the SDK cancels one attempt that takes longer than this.
+# The request deadline (21.8): the SDK cancels one attempt that takes longer than this.
 # It then retries, up to max_retries times, so one call can take up to about three
 # deadlines. The run's time limit, checked before the next call, still stops the run.
 REQUEST_DEADLINE_S = 60
@@ -68,7 +68,7 @@ async def main() -> None:
     # CONNECTOR_URL in the environment overrides the file, for a second practice connector (Task 8b).
     connector_url = os.environ.get("CONNECTOR_URL") or connector["CONNECTOR_URL"]
     async with connect_to_connector(connector_url, connector["CONNECTOR_TOKEN"]) as connector_tool:
-        run_tool = allow_only(connector_tool)  # the authorization boundary (20.8)
+        run_tool = allow_only(connector_tool)  # the authorization boundary (21.8)
         if a.api == "claude":
             prices = prices_for("claude")
             client = AsyncAnthropic(api_key=read_env("anthropic.env")["ANTHROPIC_API_KEY"], timeout=REQUEST_DEADLINE_S, max_retries=2)

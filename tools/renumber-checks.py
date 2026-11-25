@@ -3,8 +3,8 @@
 
 Run from the labs repository's root:
 
-  python3 tools/renumber-checks.py labs/brightline-lab-ch05 --after 10 --by 1 --dry-run
-  python3 tools/renumber-checks.py labs/brightline-lab-ch05 --after 10 --by 1
+  python3 tools/renumber-checks.py labs/brightline-lab-ch05 --after 10 --total 26 --dry-run
+  python3 tools/renumber-checks.py labs/brightline-lab-ch05 --after 10 --total 26
 
 Every check numbered above --after moves up by --by, and every total ("of
 the lab's 26", "after the lab's 26", "the lab's 30 scored checks") grows by
@@ -13,11 +13,15 @@ the lab's 26", "after the lab's 26", "the lab's 30 scored checks") grows by
 - in answer-key/task-*.md, the "carries" line and the numbered checks under
   "## The checks" or "## The check"
 - in LAB.md, the "**Checkpoint.**" lines
-- in the book's lab page too, when you pass --book-page <path>
+- in the book's lab page too, when you pass --book-page <path>. Pass it:
+  LAB.md is only a copy of that page, and the next copy would undo the change
+
+--total is the lab's total today, as its keys state it ("of the lab's 26").
+The tool stops when the keys state another total, so a second run by mistake
+changes nothing.
 
 Run it once for each new check, from the last new check backward, then add
-the new check's text by hand. It prints every line it changes. Part keys
-such as task-f1.md and task-h1.md keep their own numbering and are skipped.
+the new check's text by hand. It prints every line it changes.
 """
 
 import argparse
@@ -90,6 +94,7 @@ def main():
     ap.add_argument("lab", help="the lab's folder, such as labs/brightline-lab-ch05")
     ap.add_argument("--after", type=int, required=True, help="the last check number that stays as it is")
     ap.add_argument("--by", type=int, default=1, help="how many new checks go in after it (default 1)")
+    ap.add_argument("--total", type=int, required=True, help="the lab's total today, as its keys state it")
     ap.add_argument("--book-page", help="the book's lab page, such as ../agentfactory-v2/knowledge/.../lab.md")
     ap.add_argument("--dry-run", action="store_true", help="print the changes, write nothing")
     a = ap.parse_args()
@@ -99,6 +104,17 @@ def main():
     keys = [k for k in keys if re.fullmatch(r"task-\d+\.md", k.name)]
     if not keys:
         sys.exit(f"No answer keys in {lab}/answer-key/")
+    if a.by < 1:
+        sys.exit("--by must be 1 or more")
+
+    # The keys must state the total this run expects. After a run they state the new total,
+    # so running the same command twice stops here.
+    stated = set()
+    for k in keys:
+        stated.update(int(n) for n in re.findall(r"(?:of the lab's |after the lab's |the lab's )(\d+)", k.read_text()))
+    if stated != {a.total}:
+        sys.exit(f"The keys state a total of {', '.join(str(n) for n in sorted(stated)) or 'nothing'}, not {a.total}. "
+                 "Nothing was changed. Was this check already renumbered?")
 
     work = [(k, process_key) for k in keys] + [(lab / "LAB.md", process_page)]
     if a.book_page:

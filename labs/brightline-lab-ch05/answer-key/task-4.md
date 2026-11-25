@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 7 and 8 of the lab's 26.
+Task 4 carries checks 7 and 8 of the lab's 34.
 
 7. **Version 3 governs, and wins.** Your Context:
    - names AP policy version 3 by its version. "Approved September 1, 2026" beside it is fine.
@@ -26,7 +26,7 @@ Task 4 carries checks 7 and 8 of the lab's 26.
 
 ## Why
 
-"Everything's in the AP folder" handed the worker two policies and let it choose (Lesson 5.3). The context first says who the work is for. Then its sources half does three things. It names the governed source and its version, and says it wins. It says what each other source decides. And it says what to do when the source is silent, so the worker can abstain instead of guessing. Who then decides the case is the constraints' job, in Task 6. The policy also says "tell the AP lead", and no file says who that is. Only Dave's ask does.
+"Everything's in the AP folder" handed the worker two policies and let it choose (Lesson 5.1). The context first says who the work is for. Then its sources half does three things. It names the governed source and its version, and says it wins. It says what each other source decides. And it says what to do when the source is silent, so the worker can abstain instead of guessing. Who then decides the case is the constraints' job, in Task 6. The policy also says "tell the AP lead", and no file says who that is. Only Dave's ask does.
 
 Inputs are data, not instructions. Reading invoice 5161's note is safe. Acting on it is the danger, and the brief says so plainly.
 

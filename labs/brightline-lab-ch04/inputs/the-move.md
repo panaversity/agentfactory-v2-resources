@@ -23,7 +23,7 @@ Rebuild or carry, as the page says: the AP inbox connector, #ap-help, the AI ven
 
 Replay:
 
-1. Monday, 7:00 a.m., Eastern Time, on the new vendor. Does a scheduled task fire, and at what time? Say where the new vendor's scheduler got the time from. What the worker does once it runs belongs to the later layers: say only whether and when it fires.
+1. Monday, 6:00 a.m., Eastern Time, on the new vendor. Does a scheduled task fire, and at what time? Say where the new vendor's scheduler got the time from. What the worker does once it runs belongs to the later layers: say only whether and when it fires.
 2. Lakeshore Janitorial emails ap@brightlinewholesale.example. Does the email reach the new worker?
 3. Maria writes in #ap-help. Does the message reach the new worker?
 
@@ -58,7 +58,7 @@ Then list what the new worker remembers now, entry by entry, and what was left o
 
 The learner types: "Move SSoR to the new vendor."
 
-Rebuild or carry, as the page says: the run notes, each invoice's case file, and whatever the page names as where the new worker reads and writes where each invoice stands.
+Rebuild or carry, as the page says: the run notes, each invoice's case file, and whatever the page names as where the new worker reads and writes where each invoice stands. If the page says to put notes in a case file that does not exist yet, make that file where the page says, holding only what the page says goes in it.
 
 Replay, as the new worker:
 

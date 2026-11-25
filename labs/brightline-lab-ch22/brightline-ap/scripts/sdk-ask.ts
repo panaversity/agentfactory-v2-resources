@@ -1,5 +1,5 @@
 // npm run sdk -- --sdk claude|openai|open|runner [--max-turns N] [--budget USD] [--persist] [--resume ID] [--built-ins] [--trace] "question"
-// Prints one line per message the SDK produces, then a summary line, as `npm run ask` did in Chapter 20.
+// Prints one line per message the SDK produces, then a summary line, as `npm run ask` did in Chapter 21.
 
 import { readFileSync } from "node:fs";
 import type { SDKMessage } from "@anthropic-ai/claude-agent-sdk";
@@ -14,7 +14,7 @@ const value = (name: string) => (args.includes(`--${name}`) ? args[args.indexOf(
 const question = args.filter((a, i) => !a.startsWith("--") && !args[i - 1]?.match(/^--(sdk|max-turns|budget|resume)$/)).join(" ");
 const sdk = value("sdk") ?? "claude";
 
-// Secrets come from files git ignores, read here and never printed (Chapter 20, F0)
+// Secrets come from files git ignores, read here and never printed (Chapter 21, F0)
 for (const f of [".secrets/anthropic.env", ".secrets/openai.env", ".secrets/connector.env"]) {
   try {
     for (const line of readFileSync(f, "utf8").split("\n")) {
@@ -29,7 +29,7 @@ const maxTurns = Number(value("max-turns") ?? config.limits.maxTurns);
 const log = (l: string) => console.log(`  ${l}`);
 
 function show(m: SDKMessage) {
-  // One line per message in the stream (21.3)
+  // One line per message in the stream (22.3)
   if (m.type === "system" && m.subtype === "init") {
     const servers = m.mcp_servers.map((s) => `${s.name}=${s.status}`).join(", ");
     console.log(`system init: model ${m.model}, tools [${m.tools.join(", ")}], servers ${servers}, session ${m.session_id}`);

@@ -6,9 +6,9 @@ The answers for Task 6 of Lab 5, in Chapter 5 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 6 carries checks 11 and 12 of the lab's 26.
+Task 6 carries checks 12 and 13 of the lab's 34.
 
-11. **The rules the result must follow, what the worker may do alone, and what it never does.** Your Constraints say:
+12. **The rules the result must follow, what the worker may do alone, and what it never does.** Your Constraints say:
     - the memo is in plain words Dave can read in two minutes. "Short and plain, for Dave" passes.
     - every invoice number and amount is quoted exactly as recorded
     - what the worker may do alone, such as work until the files exist, or read and draft freely
@@ -18,7 +18,7 @@ Task 6 carries checks 11 and 12 of the lab's 26.
     - that it converts nothing. "Converts no currency", "uses no exchange rate" or Lesson 5.1's "Leave foreign-currency invoices unconverted" pass.
     - Passed: all seven.
     - Missed: any of the seven missing, such as no rule on how the memo reads, no line on what it may do alone, or nothing that stops a payment or a conversion.
-12. **Who acts on what the worker may not do.** Your Constraints say:
+13. **Who acts on what the worker may not do.** Your Constraints say:
     - Maria makes any call to a vendor
     - anything only Dave can decide goes on his list for Thursday, October 22. The words in Lesson 5.1's brief, "List for Dave anything the policy does not cover", pass for this half, in the context or in the constraints.
     - Passed: both.

@@ -6,11 +6,11 @@ The answers for Task 8 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 8 carries checks 27 to 30 of the lab's 51.
+Task 8 carries checks 27 to 30 of the lab's 52.
 
-27. **Two causes.** Tools and permissions: step 2's error, "access denied (authorization expired)", the first error in the record. And the brief: it had no rule for an attachment it cannot retrieve, so step 3 carried on, drafting replies.
-    - Passed: both causes, each with its step.
-    - Missed: one cause only; or a cause with no step.
+27. **Two causes.** Tools and permissions: step 2's error, "access denied (authorization expired)", the first error in the record. And the brief: it had no rule for an attachment it cannot retrieve, so step 3 carried on, drafting replies. The part missing from the brief is its constraints: a content rule, such as never saying "attached" with nothing attached, or the autonomy half, when to stop and whom to tell.
+    - Passed: both causes, each with its step, and the constraints named as the missing part.
+    - Missed: one cause only; a cause with no step; or the brief's missing part not named, or named as the outcome, the context or the format.
 28. **The check Maria skipped.** Maria did not open each attachment before she sent the replies. The contract now holds that check, under "Replies and handoffs".
     - Passed: the skipped check, written into the contract.
     - Missed: no check named; or the check only in the notes.
@@ -23,9 +23,9 @@ Task 8 carries checks 27 to 30 of the lab's 51.
 
 ## Why
 
-"Compare the record with the brief, step by step" (Lesson 11.1). Step 2 says "access denied" and step 3 says "drafting replies": a worker that cannot reach its input should stop and say so, and this one guessed. That is two causes: the broken connection, and a brief with no rule for it (Lesson 11.3).
+Maria reads each record "against its brief, step by step" (Lesson 11.1). Step 2 says "access denied" and step 3 says "drafting replies": a worker that cannot reach its input should stop and say so, and this one guessed. That is two causes: the broken connection, and a brief with no rule for it (Lesson 11.2). The brief's missing part is its constraints, the part that says what a result must never say and when the worker stops (Lesson 5.1).
 
-Access can be wrong in two ways, too narrow or too wide (Lesson 11.5). The connection that failed reached the whole drive. The fix gives back read access to the one folder the replies need, and no more. Then the rule makes a missing notice a stopped step, not a guess. Two changes, one at a time, each with its own test.
+Access can be wrong in two ways, too narrow or too wide (Lesson 11.3). The connection that failed reached the whole drive. The fix gives back read access to the one folder the replies need, and no more. Then the rule makes a missing notice a stopped step, not a guess. Two changes, one at a time, each with its own test.
 
 ## Never a deduction
 

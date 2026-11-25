@@ -1,4 +1,4 @@
-# The agent loop (Lab 20): Codex asks before a command that leaves the folder or needs the network,
+# The agent loop (Lab 21): Codex asks before a command that leaves the folder or needs the network,
 # such as npm run ask. Codex's settings cannot deny reading a path in the folder, so for .secrets/ the
 # rule in AGENTS.md is the guard.
 approval_policy = "on-request"

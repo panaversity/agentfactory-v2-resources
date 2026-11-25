@@ -1,6 +1,8 @@
-# Lab 20 files
+# Lab 21 files
 
-These files go with Lab 20 of The AI Agent Factory: the agent loop by hand.
+These files go with Lab 21 of The AI Agent Factory: the agent loop by hand.
+
+**The numbers.** The book added a new Chapter 20, so this lab is now Lab 21, for Chapter 21. The repository keeps its earlier number in its names: the chapter's text is in `brightline-ap/docs/chapter-20/` (`20.5.md` holds 21.5), your notes go in `ports/ch20.md`, and the start tag is `lab20-start`.
 
 - `brightline-ap/` is the repository at the end of Lab 19, with no git history, plus the lab's starting files: the loop in TypeScript (`src/loop/`) and Python (`py/brightline_ap/loop/`), the four tools defined once (`tools/ap-tools.json`, from the connector's own tool list), the worker's instructions (`prompts/ap-worker.v1.md`), the scripts that ask, break, compare and stream, the practice connector (it reads `data/` and `docs/policies/`, the files route A loads in Task 0), the tests with their recorded responses, and `docs/chapter-20/`, the chapter's concepts and field guide as text files for coding agents. Task 0 starts its git history.
 - `LAB.md` is a copy of the lab steps.

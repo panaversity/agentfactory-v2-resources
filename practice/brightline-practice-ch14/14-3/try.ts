@@ -8,7 +8,7 @@ class Invoice {
   }
 
   needsSecondApprover(): boolean {
-    return this.cents > 1000000;
+    return this.cents > 500000;
   }
 }
 

@@ -1,6 +1,6 @@
-# Three task records from February 2027
+# Four task records from February 2027
 
-Three short task records from the AP Worker's work three weeks after the January failures. The invoices in them are not in the register files in this lab.
+Four short task records from the AP Worker's work three weeks after the January failures. The invoices in them are not in the register files in this lab.
 
 ## Record 1: a reply to Greenway Office Supply
 
@@ -78,3 +78,22 @@ Attached by Jordan:
 
 **Output:** "No differences found between Cardinal Freight's January statement and the register." Run status: completed.
 
+## Record 4: the Thursday pre-run review
+
+**Started by:** the schedule, Thursday, February 4, 2027, 7:00 a.m. The Thursday pre-run review, in the account Dave pays for.
+
+**Context:** The Role Contract's Thursday review standing spec. Its "The note:" line, as the run read it: "The note: The run list with due dates, totals, approvals needed, holds, copies. Saved in the notes folder, for Maria."
+
+**Progress**
+
+1. Read the open matters in the AP matters record.
+2. Opened AP Register 2027 by its link.
+3. Listed the invoices due, and applied the rules.
+4. Wrote the note, with each part the "The note:" line names.
+5. Saved the note in the notes folder.
+
+**Output:** A note with the run list, totals, approvals needed, holds and copies. It has no questions for Maria.
+
+**Earlier runs:** The notes of Thursday, January 21 and Thursday, January 28, 2027 each ended with questions for Maria.
+
+**What happened next:** Maria read the note at 8:00 a.m. and found no questions in it.

@@ -6,7 +6,7 @@ The answers for Task 5 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 5 carries checks 11 and 12 of the lab's 27.
+Task 5 carries checks 11 and 12 of the lab's 31.
 
 11. **November 19, the week it went wrong.** The run's note, against what was right that Thursday:
     - On the list: NMP-3486, GLE-88 and BO-23215.
@@ -28,9 +28,9 @@ Task 5 carries checks 11 and 12 of the lab's 27.
 
 ## Why
 
-Maria reviews the note and corrects it every Thursday (Lesson 9.2), and so do you here. This is the week the worker told Dave to pay Tri-County. With the record read first, the note holds 5207 under 5.3 and catches the second copy of 5155. "What decided it" is what proves it: a right hold with no line behind it is a guess this chat made, because this chat has heard about 5207 since Task 1. A fresh run on Thanksgiving will not have this chat.
+Maria reviews the note and corrects it every Thursday (Lesson 9.1), and so do you here. This is the week the worker told Dave to pay Tri-County. With the record read first, the note holds 5207 under 5.3 and catches the second copy of 5155. "What decided it" is what proves it: a right hold with no line behind it is a guess this chat made, because this chat has heard about 5207 since Task 1. A fresh run on Thanksgiving will not have this chat.
 
-A run's entries are a model's flags, so they go into the record only as "inferred", and only after a person checks them. A run never records a payment or an approval as its own finding: those come from the accounting system. November 12 and November 19 are now examples with known answers, so each change to the spec is replayed on them before it is trusted (Lesson 9.3).
+A run's entries are a model's flags, so they go into the record only as "inferred", and only after a person checks them. A run never records a payment or an approval as its own finding: those come from the accounting system. November 12 and November 19 are now examples with known answers, so each change to the spec is replayed on them before it is trusted (Lesson 9.2).
 
 ## Never a deduction
 

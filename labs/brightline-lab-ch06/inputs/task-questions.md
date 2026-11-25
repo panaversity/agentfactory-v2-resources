@@ -84,10 +84,10 @@ This task has no review. In its first message, open the two Docs: the Review Con
 
 1. to 6. Take Maria's brief one part at a time, in this order: Outcome, Context, Format, Constraints, Stage 1, Stage 2. For each part, show its sentences, one per line, numbered, quoted. With question 1 only, show the first row of 6.1's table below, "What must be checked?". Ask: "Will you check each of these lines, and against which file? For each line: its number, then 'yes, against' and a file's number or name from the list above, or several, or 'no'." For each "yes", add a line under "1. What must be checked", with the next letter: the brief's sentence, quoted, then "Checked against:" and each file's name, never its number. Show the section as it now stands.
 7. Show the "What evidence comes back?" row of 6.1's table below. Ask: "What must the worker hand back, so you can check your lines without doing the work again? A few words for each thing." Put each thing under "2. What evidence comes back", with its letter.
-8. Show the "What counts as success?" row of 6.1's table below, and the template's guidance under "3. What counts as success", quoted. Ask: "What tests must the package pass? A few words for each test." Put each test under "3. What counts as success", with its letter.
+8. Show the "What counts as success?" row of 6.1's table below, and the template's guidance under "3. What counts as success", quoted. Ask: "What tests must the package pass? For each test, a few words, then the file you test it against, or 'within the package'." Put each test under "3. What counts as success", with its letter, then "Checked against:" and the file's name.
 9. Show the "What stops the worker?" row of 6.1's table below. Ask: "When should the worker have stopped and asked? A few words for each case." Put each case under "4. What stops the worker", with its letter.
 10. Show 6.1's three questions and depth table below, and its line "When the answer is unclear, choose the deeper level." Then show "The package's files" above again. Ask: "How deep should this review go, and who signs? The depth's first words, then a name." Write the depth and the name at the top of the Review Contract.
-11. Show the lines under "2. What evidence comes back" and "4. What stops the worker", each with its letter. Then show 6.1's lines on sharing the contract and 6.8's line on row-level evidence, both below. Ask: "Which lines must Maria's brief carry? Give the letters. Is there a line to add that the brief must carry? A few words, or 'no'." Write the letters under "Share with the worker". A line to add goes under the numbered heading it fits, with the next letter, and its letter joins the list.
+11. Show the lines under "2. What evidence comes back" and "4. What stops the worker", each with its letter. Then show 6.1's lines on sharing the contract and 6.4's line on row-level evidence, both below. Ask: "Which lines must Maria's brief carry? Give the letters. Is there a line to add that the brief must carry? A few words, or 'no'." Write the letters under "Share with the worker". A line to add goes under the numbered heading it fits, with the next letter, and its letter joins the list.
 12. Ask: "Is there anything else to check before you open the package? A few words for each check, or 'no'." Put each check under "1. What must be checked" or "3. What counts as success", the one its words fit, with the next letter.
 
 Show the whole Review Contract. Say "Task 1 is done".
@@ -98,7 +98,7 @@ Dave's question, as the lab page prints it: "Last week's package, for the run on
 
 **Before the review.**
 
-1. Show 6.7's three things to read in a task record, below. Then show package/task-record.md whole, quoted, each line numbered. Ask: "What did the worker use, and what did it do? A few words: anything missing, anything it should not have done, or 'nothing'."
+1. Show 6.3's three things to read in a task record, below. Then show package/task-record.md whole, quoted, each line numbered. Ask: "What did the worker use, and what did it do? A few words: anything missing, anything it should not have done, or 'nothing'."
 2. Show the line of package/task-record.md that starts "**Tools available to the worker in this task:**", quoted. Ask: "With these tools, what could the worker not have done in this task? A few words."
 3. Show the "Finished" line of package/task-record.md, quoted. Ask: "What does this line tell Dave about the work? A few words."
 4. Show Dave's question, then the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract test the package's claims of a call, an approval or a verification? Give the letters, or a new check in a few words."
@@ -137,7 +137,7 @@ Dave's question, as the lab page prints it: "Every row cites a policy section. L
 
 **Before the review.**
 
-1. Show 6.5's three checks on every citation, below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
+1. Show 6.2's three checks on every citation, below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
 2. Show the words of the checks the learner named, quoted. Ask: "What must a cited section do to pass your check? A few words." If the answer adds to the words of the checks named, add it as an amendment, and tell the learner its letter.
 
 Say "Ready for your review".
@@ -150,17 +150,18 @@ Dave's question, as the lab page prints it: "The memo says pay $22,010.80 across
 
 **Before the review.**
 
-1. Show 6.4's three rules, below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
+1. Show 6.2's three rules, below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
 2. Show "The source files" above, then Maria's message from package/task-record.md, quoted. Ask: "Which file does each fact come from? The payment terms, the invoice dates, the approvals, and Maria's decisions: each fact, then a file."
-3. Show the four actions, quoted from the Outcome of Maria's brief, then what 6.4's rule 2 says PAY and PAY_AFTER_APPROVAL mean, below. Ask: "Which actions count in the figure Dave signs? Name them, and a few words of why."
+3. Show the four actions, quoted from the Outcome of Maria's brief, then 6.2's rule 2, below. Ask: "Which actions count in the figure Dave signs? Name them, and a few words of why."
 
 If the answers to questions 2 and 3 add to the words of the checks named, write them as one amendment, in the learner's words, and tell the learner its letter. Say "Ready for your review".
 
 **After the review.**
 
 4. Ask: "What figure does Dave sign, and what does it depend on? The figure, then a few words."
+5. Show the "Friday's run" section of package/memo-to-dave.md, quoted. Then show 6.1's lines on the standards of your field, below. Ask: "Name one standard of your field that these totals must meet, that no file in the zip states. Do the totals meet it? The standard in a few words, then 'yes' or 'no', and why."
 
-Write the answer under "The figure Dave signs" in the Review findings. Say "Task 6 is done".
+Write the answers to questions 4 and 5 under "The figure Dave signs" in the Review findings. Say "Task 6 is done".
 
 ## Task 7. Do the files agree?
 
@@ -168,7 +169,7 @@ Dave's question, as the lab page prints it: "Maria acts on her note, I act on th
 
 **Before the review.**
 
-1. Show 6.4's rule 2 and 6.6's way to compare versions, both below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
+1. Show 6.2's rule 2 and 6.2's way to compare the same fact everywhere, both below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
 2. Show the words of the checks the learner named, quoted. Ask: "Which facts will your check line up across the CSV, the memo and the note? A few words." If the answer adds to the words of the checks named, add it as an amendment, and tell the learner its letter.
 
 Say "Ready for your review".
@@ -181,7 +182,7 @@ Dave's question, as the lab page prints it: "The memo says to move Northern Mapl
 
 **Before the review.**
 
-1. Show 6.3's bias row, below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
+1. Show 6.2's bias row, below. Then show Dave's question, and the Review Contract's lines, each with its letter, amendments included. Ask: "Which check or checks in your Review Contract answer Dave's question? Give the letters, or a new check in a few words."
 
 Say "Ready for your review".
 
@@ -191,8 +192,9 @@ Say "Ready for your review".
 3. Ask: "Swap the attribute: picture a domestic supplier with the same record. Would the note still say this? Yes or no."
 4. Ask: "Keep the note, rewrite it, or delete it? One of the three, and a line of why."
 5. Show the row of package/proposal-2026-10-30.csv for NMP-3440, quoted, and the sentence of the Context in Maria's brief that says what to do when version 3 does not cover a case, quoted. Ask: "Is this row's hold a problem, or right? A few words of why."
+6. Show the memo's title line and its "Decisions for you" section, quoted, then 6.2's fit check, below. Ask: "Does the note belong in this memo? Yes or no, and a line of why."
 
-Write the answers to questions 2 to 5 under "Northern Maple's note" in the Review findings. Say "Task 8 is done".
+Write the answers to questions 2 to 6 under "Northern Maple's note" in the Review findings. Say "Task 8 is done".
 
 ## Task 9. Approve, fix or return?
 
@@ -200,9 +202,10 @@ Dave's question, as the lab page prints it: "It's 4 p.m. on Thursday, October 29
 
 This task has no review.
 
-1. Show the problems in the Review findings, by number, each in a few words with the learner's decision. Then show Dave's question. Ask: "Approve as delivered, approve after named fixes, or return? One of the three, and a line of why."
-2. Only if the learner chose fixes: show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "Which fixes, by the findings' numbers? Which checks run again, by letter? And what must Dave approve from his own login first? A few words for each."
-3. Show the names of the six parts of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
+1. Show the problems in the Review findings, by number, each in a few words with the learner's decision. Then show 6.2's three verdicts, below. Then show Dave's question. Ask: "Approve as delivered, approve after named fixes, or return? One of the three, or a verdict in 6.2's words, and a line of why."
+2. Unless the learner chose approve as delivered: show sections 4.1 to 4.3 of ap-policy-v3-excerpt.md, quoted. Then ask, "What must be fixed, by the findings' numbers, and who fixes each: the worker, or a person? And what must Dave approve from his own login first? A few words for each." If the learner chose fixes, also ask: "Which checks run again, by letter? A few words."
+3. Show the problems in the Review findings again, by number, one at a time, each in a few words, with 6.2's three verdicts. For each, ask: "Requires revision, or requires human correction? The verdict, and a few words of why."
+4. Show the names of the four parts and two stages of Maria's brief: Outcome, Context, Format, Constraints, Stage 1, Stage 2. Ask: "Give Maria one line for next Monday's brief, on Monday, November 2, 2026, that would have stopped the worst of it. Your line, in a few words, then the part it goes in."
 
 Write the answers under "The decision on the package" in the Review findings, and show it. Say "Task 9 is done".
 
@@ -219,7 +222,9 @@ This task has no review. The learner sends "Task 10" with approved-memo-2026-11-
 3. Ask: "What must her version keep from the memo, and what shape must it take? A few words."
 4. Ask: "Is there anything else it must use? A few words, or 'no'."
 
-Then write Linda's version in the chat, under "For Linda", from the chosen memo and the learner's answers only. Use nothing else: nothing from package/, sources/, the Docs, an answer key or the rest of this chat. Keep every fact of the memo that no answer changes. Write nothing in either Doc. Say "Task 10 is done".
+Then write Linda's version in the chat, under "For Linda", from the chosen memo and the learner's answers only. Use nothing else: nothing from package/, sources/, the Docs, an answer key or the rest of this chat. Keep every fact of the memo that no answer changes. Write nothing in either Doc.
+
+5. Ask: "Does this version fit Linda, for her call on Friday? Yes or no, and why, in a line. If no, say what to change." Wait for the answer. If the learner names a change, write Linda's version again, as below. Say "Task 10 is done".
 
 If the learner sends a change after a check, write Linda's version again from the memo and all of the learner's answers, the change included.
 
@@ -231,13 +236,27 @@ Task 11 starts in a fresh chat. Its second half is here. When the learner sends 
 2. List the reviewer's problems, numbered, each in a few words with its file and row. Mark each "both", when the same item is a problem in the Review findings, or "its own", when it is not. Then list each item the reviewer left open, or doubted, and each line of its reply that disagrees with a decision in the Review findings, such as a figure to sign, a hold or a payment, all marked "its own" too. Then list the problems in the Review findings that the reviewer did not name, marked "yours". Show the list, and write it under "The second reviewer" in the Review findings. Then ask question 3, in the same message.
 3. Take the reviewer's own problems one at a time. Show the problem, quoted from its reply; its file and row in package/, quoted; and the line in sources/ or Maria's decisions that speaks to it, quoted, or "no line in sources/ speaks to it". Ask: "Real or not? If real: its kind, and what is right. If not: the source that shows it. A few words." Write the answer under the problem.
 4. Take the problems marked "yours" one at a time. Show the problem, from the Review findings, and the Review Contract's lines, each with its letter. Ask: "Which line of your contract should have sent the reviewer to this? Its letter, or 'no line' and a new check in a few words." A new check is an amendment.
-5. Show 6.8's line on row-level evidence, below. Ask: "What would your contract need on the other AI vendor? A few words, or 'nothing'."
+5. Show 6.4's line on row-level evidence, below. Ask: "What would your contract need on the other AI vendor? A few words, or 'nothing'."
 
 Write the answers to questions 4 and 5 under "The second reviewer" in the Review findings. Say "Task 11 is done".
 
-## Task 12. Research on your own work
+## Task 12. The terms report
 
-Task 12 is optional. It is a new job, outside Brightline and outside the review rules of this file and of the opening message: the rules on checks, findings, "Review:" and the Docs do not apply. Write nothing in either Doc. Search the web.
+Dave's question, as the lab page prints it: "A research tool says most suppliers will move us to net 45 if we ask. If that's true, I'll plan next year's cash on it. Is it?"
+
+This task has no review, and writes nothing in either Doc. It is a new job, outside the review of the package: the rules on checks, findings and "Review:" do not apply. It uses terms-research.md only. Never search the web. Show and ask only: never say which source is right, old or copied, or whether the claim holds up.
+
+1. Show terms-research.md's summary, quoted. Then show its main claim, "About 60 percent of packaging suppliers agree to net 45 for a buyer that pays on time". Then show the report's five sources, each whole, quoted, with its number. Ask: "Read the sources the main claim cites. Which one is the figure built on, and does it say what the claim says? Answer: the source's number, then yes or no, and a line."
+2. Show each of the five sources' sentence on the claim, quoted, with its number. Ask: "Do any of these copy one source, in the same words? Name them, or say 'none'."
+3. Show each source's date, with its number. Ask: "Is any source too old to plan next year's cash on? Name it, or say 'none'."
+4. Ask: "Does any source in the list disagree with the main claim? Name it and what it found, or say 'none'."
+5. Ask: "Does the main claim hold up, and what should Dave do? Answer: yes, no or partly, then a line."
+
+Say "Task 12 is done".
+
+## Task 13. Research on your own work
+
+Task 13 is optional. It is a new job, outside Brightline and outside the review rules of this file and of the opening message: the rules on checks, findings, "Review:" and the Docs do not apply. Write nothing in either Doc. Search the web.
 
 1. Ask: "What is your research question? One line, from your own work."
 2. Search the web, and answer the question. List every source you used, each with its link, and its date if it gives one. Then ask question 3, in the same message.
@@ -247,9 +266,9 @@ Task 12 is optional. It is a new job, outside Brightline and outside the review 
 6. Ask: "Shall I search for evidence that disagrees with the main claim? Yes or no." If yes, search, and show what you find, with links, or say you found none.
 7. Ask: "Did the main claim hold up? Yes, no or partly, and a line of why."
 
-Say "Task 12 is done".
+Say "Task 13 is done".
 
-## From Chapter 6, as of 28 October 2026
+## From Chapter 6, as of 23 November 2026
 
 Copied from the chapter, word for word, except where a line says otherwise.
 
@@ -257,60 +276,76 @@ Copied from the chapter, word for word, except where a line says otherwise.
 
 | Question | What to write |
 | --- | --- |
-| What must be checked? | The facts, figures and decisions that make the work usable |
+| What must be checked? | The facts, figures and decisions that make the work usable, and the standards of your field, such as an accounting rule or a house style |
 | What evidence comes back? | What the worker returns, so you can check without doing the work again |
 | What counts as success? | Tests the output must pass |
 | What stops the worker? | Cases where it must stop and ask |
 
-### 6.1: sharing the contract (its first three sentences)
+### 6.1: sharing the contract (its first two sentences)
 
-Write it first, as its own document. Then share all four parts with the worker. Two of them must also go into the brief, because the worker acts on them: the evidence to return and the stop conditions (Chapter 5).
+Write it first, as its own document, and share all four parts with the worker. The evidence and the stop conditions also go into the brief, because the worker acts on them (Chapter 5).
 
 ### 6.1: how much review (its three questions, and the first two columns of its table)
 
-Match the depth of the review to what is at risk. Ask three questions. Can the result be undone? Will it leave the company, or change a record of truth, such as the vendor record, where each supplier's details are kept? Will someone act on it without checking it again?
+Match the review's depth to the consequence of an error. Can the result be undone? Will it leave the company, or change a record of truth, an official record others rely on, such as the vendor record? Will someone act on it without checking it again?
 
 | If the work... | Review depth |
 | --- | --- |
-| Moves money, goes outside the company, or changes a record of truth | Full contract, every check, a named human signs |
+| Moves money, goes outside the company (external delivery), or changes a record of truth | Full contract, every check, a named human signs |
 | Feeds a decision someone else makes | Full contract on the numbers and claims the decision rests on, and a sample of the rest |
 | Repeats often, with little at risk | A standing contract that you reuse, with a person checking a sample each week |
-| Is a draft you will rewrite yourself | A light check as you rewrite it |
+| Is a draft you will rewrite yourself (an internal draft) | A light check as you rewrite it |
 
 When the answer is unclear, choose the deeper level.
 
-### 6.2: completeness (its first two sentences)
+### 6.2: completeness (three of its sentences)
 
-**Completeness.** Match each item by its ID, not only by the count. Every invoice in the source must appear exactly once in the output: none missing, none repeated, none extra.
+Match each item by its ID, not only by the count: a file with one row missing and another repeated still has 15. Every invoice appears exactly once, none missing, none repeated, none extra. Check that every part the brief asked for is there too: the CSV, the memo and the note.
 
-### 6.3: bias (its row of the table)
+### 6.1: the standards of your field (its first sentence)
+
+**The standards of your field.** Work can match every source and still break a standard.
+
+### 6.2: fit (two of its sentences)
+
+Check that the result is relevant: it answers the question that was asked. Check that it is fit for its purpose: this reader can use it for this job.
+
+### 6.2: the three verdicts (its table)
+
+| Verdict | When | What happens next |
+| --- | --- | --- |
+| Ready to use | It passes every check in the Review Contract, and the evidence came back | The person responsible uses it or signs it |
+| Requires revision | The worker can close the gap with a named change to the brief or the inputs | Send it back with the part to change, then check again |
+| Requires human correction | Closing the gap needs a fact, a judgment or an authority the worker does not have | A person corrects it or decides. Do not send it back to try again |
+
+### 6.2: bias (its row of the table, the first three columns)
 
 | Failure | What it is | The test |
 | --- | --- | --- |
 | **Bias** | A judgment that leans one way without evidence. It can rest on an attribute, such as size, on one-sided evidence, or on the asker's view taken as fact | Ask what evidence the judgment rests on. Swap the attribute and see if the judgment stays the same |
 
-### 6.4: the three rules (each rule's first sentence, and rule 2 whole)
+### 6.2: the three rules (each rule whole)
 
-1. **Recompute from the source, never from the worker's file.** To recompute a number is to work it out again yourself.
-2. **Tie out.** Tie out means that the same figure agrees everywhere it appears: in the memo, the CSV and the note. Add up the CSV's rows marked PAY (pay in this run) or PAY_AFTER_APPROVAL (pay once Dave has also approved that invoice), and compare the sum with the memo's headline. Counts must match too.
-3. **Check the units and labels.** Currency, dates and what a total includes all matter.
+1. **Recompute from the source, never from the worker's file.** Adding up the worker's CSV checks only its arithmetic: if a row is wrong, the total is wrong with it.
+2. **Tie out.** The same figure agrees everywhere it appears. The CSV's rows marked PAY or PAY_AFTER_APPROVAL must add up to the memo's headline, and the counts must match.
+3. **Check the units and labels.** Currency, dates and what a total includes. "Ready to approve" must mean ready.
 
-### 6.5: three checks on every citation (each check's bold line, and the sentence after it)
+### 6.2: three checks on every citation (each check's first sentence)
 
 1. **It exists.**
 2. **It says what is claimed.** Open it and read it.
-3. **It is the governed version.** That is the approved version in use now.
+3. **It is the governed version,** the approved one in use now.
 
-### 6.6: how to compare versions (its first two sentences)
+### 6.2: compare the same fact everywhere (two of its sentences)
 
-To compare versions, list the facts that matter and check each one in every version: amounts, counts, decisions, names. Do not compare the wording.
+Dave lines up each fact that matters from every place it appears, comparing facts, not wording. Different facts from the same inputs mean at least one is wrong.
 
-### 6.7: three things to read in a task record (each item's first sentence)
+### 6.3: three things to read in a task record (each item's first sentence)
 
 1. **What it used.** Which files it read and which messages it received.
 2. **What it did.** Which files it wrote and which messages it sent.
 3. **What it could not have done.** Compare the claims in the output with the tools in the record.
 
-### 6.8: row-level evidence (two sentences of its comparison)
+### 6.4: row-level evidence (two sentences of its comparison)
 
-Neither AI vendor's help pages promise a citation to a row in your own file. So ask for row-level evidence in the brief, and verify it: a reason, a policy section and a source on every row of the output.
+Neither AI vendor's help pages promise a citation to a row in your own file. So ask for row-level evidence in the brief, and verify it.

@@ -48,19 +48,19 @@ In "Test: Monday", keep each item to one or two lines. A test reads the terms an
 
 **The test:** `Test: Monday`. In the lab chat, after it, end with: "Ready for the questions."
 
-2. When the learner sends anything after the test, show the nine questions, quoted:
+2. When the learner sends anything after the test, show the lab's nine questions, taken from the chapter's six concepts, with the concept that teaches each:
 
    | Question | Concept |
    | --- | --- |
    | Should a worker do this at all? | 10.1 |
-   | Can this data go in, and by which route? | 10.2, 10.3 |
-   | What rules already apply? | 10.4 |
-   | Who could be harmed or left out? | 10.5 |
-   | Who owns what the worker knows? | 10.6 |
-   | Who must sign before it leaves? | 10.7 |
-   | What happens when it goes wrong? | 10.8 |
-   | Which settings carry out the policy? | 10.9 |
-   | Who can open the result, if nobody sent it? | 10.10 |
+   | Who could be harmed or left out? | 10.1 |
+   | Can this data go in, and by which route? | 10.2 |
+   | Who owns what the worker knows? | 10.3 |
+   | Who must sign before it leaves? | 10.4 |
+   | Who can open the result, if nobody sent it? | 10.4 |
+   | What happens when it goes wrong? | 10.5 |
+   | What rules already apply? | 10.5 |
+   | Which settings carry out the policy? | 10.6 |
 
    Then show the first case's name, with the test's items 1 and 3 for it, quoted from the test's reply. Ask: "Which one or two of the nine questions did Monday skip here, or does Draft 6 decide it right? Answer: the question's words, or 'Draft 6 decides it'."
 3. The same question for each of the other seven cases, one at a time, each shown first the same way.
@@ -69,19 +69,22 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
 ## Task 2. Six proposed uses
 
-1. Show Lesson 10.1's three answers and four screens, quoted:
+1. Show Lesson 10.1's three answers and five screens, quoted:
    - "**Appropriate.** Low consequence, easy to undo, easy to check as you go."
    - "**Appropriate with review.** The worker is useful, but a defined human check must happen before the output is used, sent or acted on."
    - "**Inappropriate.** The task stays human-owned. A review cannot change the consequence, how hard it is to undo, or the fact that a person must make the decision."
-   - The four screens: reversibility ("If it is wrong, can we catch and undo it before harm is done?"), consequence of error ("Is a mistake small, expensive, harmful, regulated or permanent?"), human judgment ("Does the task depend on care, a relationship or context a person should own?") and accountability ("Who is responsible for the outcome, and can that person really check it?").
+   - "The exam guide calls this same answer **appropriate with safeguards**: the human check is the main safeguard, a control that must be in place first."
+   - The five screens: fit ("Can the worker do this task well enough, given its known limits?"), reversibility ("If it is wrong, can we catch and undo it before harm is done?"), consequence of error ("Is a mistake small, expensive, harmful, regulated or permanent?"), human judgment ("Does the task depend on care, a relationship or context a person should own?") and accountability ("Who is responsible for the outcome, and can that person really check it?").
    - "Classify the specific activity you delegate, not the subject it is about."
    - "The **deciding factor** is the screen that, if its answer changed, would move the use into another category."
 
    Then show U1 from `brightline-files.md`, as its own lines. Ask: "Is this one activity or two? For each activity: appropriate, appropriate with review, or inappropriate, and the one screen that decides it. Answer: one or two, then for each activity its answer, its screen, and a few words why."
-2. For each activity the learner calls "appropriate with review", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "Who decides it instead, and what may the worker still do here, if anything? Answer: who, then a few words, or nothing."
+2. For each activity the learner calls "appropriate with review" or "appropriate with safeguards", ask: "Who checks what, and when? Answer: who, what, when." For each activity called "inappropriate", ask: "Who decides it instead, and what may the worker still do here, if anything? Answer: who, then a few words, or nothing."
 3. The same, one use at a time, for U2 to U6, each shown first.
 
-   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
+   Write each use under "Should it do this at all?" as a row: the use, each activity, its answer in the name the learner used, its deciding factor and why, and its check (who, what, when), or who decides it instead and what the worker may still do.
+
+   After U6, show Lesson 10.1's outer edge, quoted: "both AI vendors' usage policies require a person to review high-stakes uses that affect people, such as legal, medical, employment, housing, credit and insurance decisions." And from its example: "So a qualified person must review each recommendation before it is used, with the authority to change it, and each applicant must be clearly told that AI was used." Ask: "Does an AI vendor's usage policy already decide one of the six uses? Answer: the use and what must happen, or 'none'." Write the answer under "Should it do this at all?", headed "The outer edge".
 4. Show Draft 6's "Never automated:" lines, A10 to A15, quoted. Ask: "Do any of your answers need a line here, so the worker cannot do it whoever asks? Draft 6's other lines stay as they are. Answer: the new line in a few words, or 'none'."
 
    Write any new line under "Role Contract, Draft 7" as "Never automated: New line:" and the learner's words. Then say "Ready for your test".
@@ -90,46 +93,62 @@ Write each answer under "What Monday needs" as one line: the case's name, then t
 
 ## Task 3. What the check needs
 
-1. Show Lesson 10.2's three tiers, quoted:
-   - "*Green:* public material, and internal material clearly approved for broad use."
-   - "*Yellow:* check first or add a control, a setting or step that limits what can happen to the data. Examples are internal-only documents, customer or vendor contact details, employee identifiers and confidential drafts."
-   - "*Red:* only through a route approved for this kind of data. ... Examples are passwords and access keys, bank account numbers, government ID numbers, health records, privileged legal advice, and material whose license forbids copying it elsewhere."
-   - "If you are unsure between two tiers, use the higher one."
+The vendor master is not in this chat. The learner holds it as `fictional-vendor-master-2026-12-06.csv` on their own computer, and cuts it there before anything from it comes here. Never ask for that file, and never ask the learner to paste its rows or notes.
 
-   Then show the three actions a column can get: **keep**; **keep the last four digits**; **remove**. Then show "Maria's request to find duplicate vendors" and "The vendor master in this lab" from `brightline-files.md`.
-2. Show the first group of columns, as its own lines: its column names, what the full vendor master holds in them, and what the lab copy shows, with the first two rows of the lab copy for those columns. Ask: "Its tier, then keep, keep the last four digits, or remove, for the check Maria needs? Answer: the tier, then the action."
+1. Show Lesson 10.2's three tiers, quoted:
+   - "*Green:* public, or approved for broad use. A total is not green just because it is a total."
+   - "*Yellow:* check first or add a control. Internal-only documents, customer or vendor contact details, employee identifiers, confidential drafts."
+   - "*Red:* only through a route approved for this kind of data. Passwords and access keys, bank account numbers, government ID numbers, health records, privileged legal advice, and material whose license forbids copying it."
+   - "If you are unsure between two tiers, use the higher one until someone who owns the policy says otherwise."
+
+   Then show the three actions a column can get: **keep**; **keep the last four digits**; **remove**. Then show "Maria's request to find duplicate vendors" and "The vendor master in this lab" from `brightline-files.md`, its list of columns included.
+2. Show the first group of columns, as its own lines: its column names, and what the export holds in them, from the list of columns. Ask: "Its tier, then keep, keep the last four digits, or remove, for the check Maria needs? Answer: the tier, then the action."
 
    The groups, one at a time:
    - `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `state`, `zip`
    - `tin_type`
-   - `tin`: the full master holds the whole tax ID number, a Social Security number for a sole proprietor; the lab copy shows its last four digits
-   - `bank_routing`, `bank_account`: the full master holds the whole numbers; the lab copy shows their last four digits
+   - `tin` and `tin_masked`: the whole tax ID number, a Social Security number for a sole proprietor, and its last four digits. Here "keep the last four digits" means keeping `tin_masked` and removing `tin`
+   - `bank_routing`, `bank_account`: the whole numbers
    - `contact_email`, `phone`
    - `small_supplier`, `onboarded`
+   - `notes`: free text the AP team writes about some vendors. For this group, say: "The notes are not in this chat. Open the export on your computer, in a spreadsheet app, and read every note before anything goes up." Then ask: "What do these notes hold that the other columns do not? Then the column's tier, and keep or remove, for the check Maria needs. Answer: a few words on what they hold, the tier, then the action." Show no note, and do not guess at what they hold.
 
-   Write each under "What data, and by which way in" as a row: the columns, the tier, the action.
+   Write each under "What data, and by which way in" as a row: the columns, the tier, the action. In the `notes` row, add what the learner said the notes hold.
 3. Ask: "What is the tier of the full vendor master, and of a cut file with only the columns you keep? Answer: two tiers."
-4. Say "Now the check, on the kept columns only." Read `vendor-master-lab-copy.csv`, using only the columns the learner kept, and of a column kept as its last four digits, only those digits. Find the likely duplicate vendors: two records that look like one vendor. Write the result under "What data, and by which way in" first, as "The check on the kept columns:", then show it:
-   - each pair found: both vendor ids and names, and the kept columns it matched on
+4. Say: "Now cut the export on your computer, as Task 3 on the page says, and save the cut file. Attach only the cut file here, and send the message the page gives." Wait.
+
+   When a file is attached, read it first. Its first row may be the line that says the file is fictional: skip it. If the file holds a whole tax ID, a bank routing number or a bank account number, quote none of them. Say which columns hold them, and say: "At work, these numbers have now gone to an AI tool. Cut them out, and attach the new file." Then wait for the new file, and do this step again on it.
+
+   When the message asks what still looks personal, list it column by column: each column the file holds, and whether its values can point to one person or one vendor, with one example taken from the file. Name each sole proprietor the file shows. Write nothing into the document for this list. Then ask: "Which of these stay, because the check needs them, and is the cut file now anonymous, or still personal? Answer: the columns that stay, then anonymous or still personal, and why." Write the answer under "What data, and by which way in", headed "The cut file", with the name of the file the learner attached.
+5. Say "Now the check, on your cut file only." Read the cut file the learner attached, and nothing else. Find the likely duplicate vendors: two records that look like one vendor. Write the result under "What data, and by which way in" first, as "The check on the cut file:", then show it:
+   - each pair found: both vendor ids and names, and the columns it matched on
    - then a line that starts "Compared:" and names every other two vendors that share a word of their name or a ZIP code, each with why the check did not flag them
 
    Ask: "Did it find Maria's four known pairs, and leave Union Packaging Inc. and Union Packaging Supply LLC apart? Answer: yes, or which pair it missed or wrongly flagged."
 
-   Whenever the learner changes a column's action, or sends "Run the check again", do this step again on the kept columns as they now stand, and replace the old result.
-5. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
+   Whenever the learner attaches a new cut file, or sends "Run the check again", do this step again on the newest cut file, and replace the old result.
 
-   Write both answers under "What data, and by which way in". Then say "Task 3 is done". This task has no test.
+   Then ask: "At work, the AI would run code on a file you upload. What would you upload for this check, and when would you cut it? Answer: a few words." Write the answer under "What data, and by which way in", headed "The upload".
+
+   Then show Lesson 10.2's lines, quoted: "**A file for analysis is still an upload.** When the AI runs code on a file, the whole file goes in. So keep only the rows and columns the question needs, or upload totals, through a route approved for the file's tier." Ask: "Does your answer change? Answer: 'no', or the new answer and why." Write any change beside the first answer, which stays.
+6. Show, side by side, each pair the check found, and Union Packaging Inc. with Union Packaging Supply LLC, with these columns only, from the cut file: `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `zip`. Ask: "If every tax ID column were removed, which pair would the check lose, and which might it wrongly flag? Answer: a pair for each, or none."
+
+   Then show Lesson 10.2's lines, quoted: "**Pseudonymized:** Names replaced with labels or codes, such as "Vendor 17", while a list that links them back still exists. Keeps its tier." And: "**Keep the linking list outside the AI tool.** Codes still do not make the data anonymous: a job title, a site and a start date together can point to one person." Ask: "If every vendor name were replaced with a code, would the cut file be anonymous? Answer: yes or no, and why."
+
+   Write the three answers under "What data, and by which way in". Then say "Task 3 is done". This task has no test.
 
 ## Task 4. Which way in
 
-1. Show Lesson 10.3's words, quoted: "the useful question is not 'Is this AI product approved?' It is 'Is this route approved for this data and this purpose?'" and "Privacy controls each answer a smaller question than permission. A temporary chat keeps data out of history. Turning training off keeps it out of training. Neither decides whether the data was allowed in."
+1. Show Lesson 10.2's words, quoted: "the useful question is not 'Is this AI product approved?' It is 'Is this route approved for this data and this purpose?'"
 
    Then show the three ways in, each as its own lines, with what `brightline-files.md` and `vendor-facts.md` section 1 say about it:
    - Maria's personal AI account, an individual plan, with its training setting on: the way of December 6
    - a temporary chat in ChatGPT, or an incognito chat in Claude, on a personal account
-   - Maria's own chat in the shared AP project, in Brightline's company workspace on Claude's Team plan
+   - Maria's own chat in Brightline's company workspace, on Claude's Team plan
 
    Ask: "Which way may Brightline's work data take, for this check and for any other work? Which ways may it never take? And who must confirm the way for vendor data before the check runs? Answer: the way, the ways it may never take, then who."
+
+   Then show Lesson 10.2's words, quoted: "**A private chat limits what is kept, not what you sent.** An incognito or temporary chat, a project only you can open, or deleting the file later each limits what is kept, who sees it or for how long. None of them changes what you disclosed." And: "No setting answers whether this data may go through this route for this purpose." Ask: "Does your answer change? Answer: 'no', or the new answer and why." Keep the first answer, and any change beside it, for the document.
 2. Ask: "What must that way have before vendor data goes through it, about training, who can see the data, and how long it is kept? Answer: three short lines."
 3. Show "The vendor master in this lab" from `brightline-files.md`, with its line on why Brightline keeps the tax IDs, and who owns the vendor data. Show Lesson 10.2's line, quoted: "When a new use is outside the purpose, the person who owns the data decides." Ask: "Is finding duplicates before the tax forms inside that purpose? Is training an AI vendor's model? And who decides a use outside it? Answer: yes or no, yes or no, then who."
 
@@ -142,7 +161,7 @@ Then say "Ready for your test".
 
 ## Task 5. Who the list left out
 
-1. Show Lesson 10.5's four questions, quoted:
+1. Show Lesson 10.1's four questions, quoted:
    1. "Who is affected, including people who never see the output?"
    2. "What could go wrong for them, and could they notice it or question it?"
    3. "What would a fair process look like?"
@@ -153,13 +172,13 @@ Then say "Ready for your test".
 
    Write the table and the learner's answers under "Who could be harmed or left out".
 3. Ask: "Dave asked for 'strategic vendors first'. What standard did those words carry, which nobody wrote down? Answer: a few words."
-4. Show Lesson 10.5's lines on telling people, quoted: "Check rules first: law, policy, contract, professional standards, client terms, and an AI vendor's usage policy. If one requires disclosure, the decision is made. If none does, ask whether knowing AI was involved would change the reader's understanding of the work." Ask: "Should Brightline tell the small suppliers it left out that a list made with AI left them out? Answer: yes or no, then why in a few words."
+4. Show Lesson 10.1's lines on telling people, quoted: "Check rules first: law, policy, contract, professional standards, client terms, and the AI vendor's usage policy" and "If one requires disclosure, the decision is made. If none does, ask whether knowing AI was involved would change the reader's understanding" Ask: "Should Brightline tell the small suppliers it left out that a list made with AI left them out? Answer: yes or no, then why in a few words."
 
    Write both answers under "Who could be harmed or left out". Then say "Task 5 is done". This task has no test.
 
 ## Task 6. A standing brief
 
-1. Show Dave's early-pay request of December 1, word for word. Say that the brief the worker runs on each month will be written under four headings, Outcome, Context, Format and Constraints, from Dave's request and the learner's lines only. Ask: "What must the brief add to Dave's request, so next month's list cannot leave out who December's did? Give four things, each in a few words of your own: what comes first, and from which source; which dates it counts the days to; what it shows besides the invoices it lists; and who decides. Answer: four lines."
+1. Show Dave's early-pay request of December 1, word for word. Say that the brief the worker runs on each month will be written under four headings, Outcome, Context, Format and Constraints, from Dave's request and the learner's lines only. Ask: "What must the brief add to Dave's request, so next month's list cannot leave out who December's did? Give four things, each in a few words of your own: what comes first, and from which source; which dates it counts the days to, so that a supplier who passes day 15 before the next run is not missed; what it shows besides the invoices it lists; and who decides. Answer: four lines."
 2. Write the brief under "Who could be harmed or left out", headed "The standing early-pay brief", under the four headings Outcome, Context, Format and Constraints. Use Dave's request, and the learner's four lines word for word, each under the heading it fits. Add no line of your own: nothing about who comes first, which file, which dates, what it shows or who decides, unless the learner's lines say it. If a line of the learner's clashes with words of Dave's request, such as what comes first, show the clash and ask which words the brief keeps; then write their answer. Then show the whole brief.
 
 Then say "Ready for your test".
@@ -168,7 +187,7 @@ Then say "Ready for your test".
 
 ## Task 7. Who owns each item
 
-1. Show Lesson 10.6's words, quoted: "Every piece of knowledge needs an owner. The owner is the person who can approve it, change it and deprecate it. Knowledge with no owner cannot be governed." Then show the statuses: **stable** (approved, may be served), **draft** (not yet approved, not served), **deprecated** (replaced by a successor, not served to workers), **taken down** (withdrawn from every place it is served), **not governed** (no owner, or no approval). Then show the actions: **keep**; **remove a copy**; **deprecate, pointing to its successor**; **take down**; **draft it as a concept for its owner to approve**.
+1. Show Lesson 10.3's words, quoted: "Every piece of knowledge needs an owner. The owner is the person who can approve it, change it and deprecate it. Knowledge with no owner cannot be governed." Then show the statuses: **stable** (approved, may be served), **draft** (not yet approved, not served), **deprecated** (replaced by a successor, not served to workers), **taken down** (withdrawn from every place it is served), **not governed** (no owner, or no approval). Then show the actions: **keep**; **remove a copy**; **deprecate, pointing to its successor**; **take down**; **draft it as a concept for its owner to approve**.
 2. Show K1 to K5 together, as the knowledge inventory lists them, with K4's text. Ask: "Owner, status and action? An item may need more than one action. Answer: the owner, the status, then the action or actions."
 3. The same question for K6, K7, K8, K9 and K10, one at a time, each shown first with where it is, its header and its text from `brightline-files.md`.
 
@@ -184,7 +203,7 @@ Then say "Ready for your test".
 
 ## Task 8. Who signs
 
-1. Show Lesson 10.7's list, quoted: "A person must sign, using their own identity, when an output: commits the company to money above a set limit, such as $5,000.00 at Brightline; changes an official record, such as a vendor's bank details; goes to auditors, regulators, tax authorities or courts; states balances, amounts owed or a position in a dispute to someone outside the company; decides something about a person: hiring, pay, discipline, access; is a legal commitment; is in a high-risk area under an AI vendor's usage policy." And its principle: "the accountable person approves the exact output before it is released, and nothing can release it unapproved or change it after approval."
+1. Show Lesson 10.4's list, quoted: "A person must sign, using their own identity, when an output: commits the company to money above a set limit, such as $5,000.00 at Brightline; changes an official record, such as a vendor's bank details; goes to auditors, regulators, tax authorities or courts; states balances, amounts owed or a position in a dispute to someone outside the company; decides something about a person: hiring, pay, discipline, access; is a legal commitment; is in a high-risk area under an AI vendor's usage policy." And its principle: "the accountable person approves the exact output before it is released, and nothing can release it unapproved, change it after approval, or show it to anyone it was not approved for."
 
    Then show O1, with how it goes out today, from "Eight outputs" in `brightline-files.md`. Ask: "Who signs or approves it, who sends it and from whose own account, and may the worker send it? Answer: the signer, the sender and account, then yes or no."
 2. The same question for O2 to O8, one at a time, each shown first.
@@ -192,7 +211,11 @@ Then say "Ready for your test".
    Write each under "Who must sign before it leaves" as a row of the sign-off matrix: the output, who signs or approves, who sends it and from whose account, and whether the worker may send it.
 3. Show the schedule sent on December 3 beside `open-payables-register-2026-11-30.csv`: every line where the two differ, with both values; the schedule's total; the register's total in US dollars alone; and the schedule's last two lines, its signature block. Say nothing about what a difference means. Ask: "What does Dave check before he signs a schedule like this, and who decides how a balance in Canadian dollars is shown? Answer: what he checks, then who decides."
 
-   Write the answer under "Who must sign before it leaves", headed "The schedule".
+   Then show Lesson 10.1's lines, quoted: "**Disclosure** means telling people that AI was involved. Check rules first: law, policy, contract, professional standards, client terms, and the AI vendor's usage policy" and "If one requires disclosure, the decision is made. If none does, ask whether knowing AI was involved would change the reader's understanding" Ask: "Did the schedule or its signature block tell the auditors that an AI Worker drafted it, and should it have? Answer: yes or no, then yes or no and why."
+
+   Then show the chapter overview's three parts of Diligence, quoted: "Creation diligence: what you put in, and where", "Transparency diligence: telling people AI was involved" and "Deployment diligence: standing behind what you use". Ask: "Which part did sending the schedule unread under Dave's name break? Answer: one part, and a few words why."
+
+   Write the three answers under "Who must sign before it leaves", headed "The schedule".
 4. Show these Draft 6 lines, quoted: A06 and A07 under "Actions and levels:", leaving out A07's words in brackets, A10 under "Never automated:", the first line under "Replies and handoffs:", and the heading "Escalation triggers:" with its first line. Ask: "What must Draft 6 say for your sign-off matrix to hold? Three things, each in a few words: how an output on the sign-off list reaches its signer, and who sends it; what the worker never puts on a draft; and who handles a request from the auditors, a tax authority or a court. Draft 6's other words stay. Answer: three lines."
 
    Write each under "Role Contract, Draft 7", under the Draft 6 heading it belongs to, as a whole line. Then say "Ready for your test".
@@ -201,12 +224,12 @@ Then say "Ready for your test".
 
 ## Task 9. The first hour
 
-1. Show Lesson 10.8's five steps, quoted:
+1. Show Lesson 10.5's five steps, quoted:
    1. "**Stop the spread.** Do not forward, re-upload, continue the chat or make new copies."
-   2. "**Record the facts.** Note what data, which route and account, when, and where it went next."
-   3. "**Report promptly** through the organization's process for incidents. If there is none, report to the person who owns the risk."
+   2. "**Record the facts.** What data, which route and account, when, and where it went next."
+   3. "**Report promptly** through the organization's process for incidents, or to the person who owns the risk. Timing can matter legally, so do not wait for a perfect explanation."
    4. "**State the facts plainly.** Do not guess and do not defend yourself."
-   5. "**Follow the incident owner's instructions.** Deleting, telling the people whose data it was, and asking the AI vendor for deletion are the incident owner's decisions."
+   5. "**Follow the incident owner's instructions.** Deleting, telling the people whose data it was, and asking the AI vendor for deletion are the incident owner's decisions, with legal and contractual effects you may not see."
 
    Then show "Maria's account of December 6" from `brightline-files.md`, its lines numbered. Say that Dave is the person who owns this risk, and that Brightline has no incident process yet. Ask: "For each line: a fact for the note, or a decision that waits for someone, and whom? Answer: one line each, by its number."
 2. Ask: "What does the note not know yet? Answer: one or two things, or 'nothing'."
@@ -223,7 +246,7 @@ Then say "Ready for your test".
 
 ## Task 10. Who can open the result
 
-1. Show Lesson 10.10's five steps, quoted: "1. Classify the result. 2. Name its audience: the people it is for, approved by the data's owner. 3. Check who can open it now. 4. Check whether it can still change after it was approved. 5. Give each share an end, and check that the access really ended." Then its four ways an audience grows, quoted: "Through a project. ... Through a folder or a shared document. ... Through a link. ... Through a connector."
+1. Show Lesson 10.4's five steps, quoted: "1. Classify the result. 2. Name its audience, with the data's owner. 3. Check who can open it now. 4. Check that it cannot change after approval. 5. Give each share an end, and check it ended." Then the three ways its step 3 names an audience growing, quoted: "A file takes the sharing of the folder it is saved in, including people added later. A link open to "anyone with the link" has no list of names, and can be forwarded. And a worker saves through a connector with the access of the person who connected it"
 
    Then show "The duplicate list" from `monday-cases.md`. Ask: "What tier is the list the check returns, and who is it for, by name? Answer: the tier, then the names."
 2. Ask: "Where may it be saved? And when the worker saves it through a connector, who answers for who can open it? Answer: the place, then who."
@@ -237,7 +260,7 @@ Then say "Ready for your test".
 
 ## Task 11. The record and the policy
 
-1. Show Lesson 10.4's words on the Governance Record, quoted: "It holds the classification and its deciding factor, the data tier and route, and the capabilities turned on, such as connectors, skills and actions. It also holds who is affected, the evidence that the controls work, an owner, and what triggers a re-check." And: "If you do not know an answer, leave its field blank and mark it open. Do not guess."
+1. Show Lesson 10.5's words on the Governance Record, quoted: "It holds the classification and its deciding factor, the data tier and route, the capabilities turned on, such as connectors, skills and actions, who is affected, the evidence that the controls work, an owner, and what triggers a re-check." And: "If you do not know an answer, leave its field blank and mark it open. Do not guess."
 
    Write the record under "The Governance Record: year-end payables schedules for the auditors", with these fields: Classification and deciding factor; Data tier; Route; Capabilities turned on; What it must not do without review; Gate; Who is affected; Disclosure; Result's audience; Audience ends; Success measure; Failure threshold; Monitored by, and how often; Owner; Re-check if. Fill only "Gate", "What it must not do without review" and "Capabilities turned on", from the document's sections 6 and 12 and Draft 6's Settings, quoting them. Mark every other field "open". Show the record.
 2. Ask: "The schedule workflow's classification and deciding factor, and the schedule's data tier and route? Answer: four short items."
@@ -247,19 +270,35 @@ Then say "Ready for your test".
 6. Ask: "Who owns this record, and what makes you look at it again? Answer: the owner, then what."
 
    Write each answer into its field. A field the learner leaves open stays "open".
-7. Show Lesson 10.4's list for an interim policy, quoted: "the approved AI products and routes for work data; the kinds of data that someone must check before use; the review rule for anything the worker produces that leaves the company or affects someone; the review rule for new connectors, skills and actions, which let the worker reach or do more, and who may switch on settings that skip approvals; one named person for questions, and for reports when something goes wrong." Ask: "Write each of the five lines in a few words. Then the policy's status, and its review date. Answer: five lines, the status, then a date."
+7. Show Lesson 10.5's list for an interim policy, quoted: "the approved AI products and routes for work data; the kinds of data that someone must check before use; the review rule for anything the worker produces that leaves the company or affects someone; the review rule for new connectors, skills and actions, and who may switch on settings that skip approvals; one named person for questions, and for reports when something goes wrong." Ask: "Write each of the five lines in a few words. Then the policy's status, and its review date. Answer: five lines, the status, then a date."
 
    Write the policy under "Interim AI policy": its status first, then the five lines, then its review date.
 8. Ask: "What makes the approved way harder than a personal account at Brightline, and who fixes it? Answer: what, then who."
 9. Ask Dave's question: "Will this policy alone stop December happening again? Answer: yes or no, then why in a few words."
 
-   Write both answers under "Interim AI policy". Then say "Ready for your test".
+   Write both answers under "Interim AI policy".
+10. Show three events from "What happened in early December 2026" in `brightline-files.md`, quoted, each as its own lines, with the rule Brightline had for it that day:
+    - Thursday, December 3. The rule that day, in Lesson 10.4's words, quoted: "The auditors relied on Dave's name, and nothing marked the schedule as one only Dave could sign."
+    - Sunday, December 6. The rule that day, quoted from the line for Friday, December 11: "Brightline has no written AI policy."
+    - Wednesday, December 9. The rule that day: K4's header line, quoted, with its approval date. Then Jordan Ellis's line from "Who is who", quoted.
+
+    Ask: "For each event: a policy gap, a training gap or a Diligence lapse, and its fix? Answer: three lines, each starting with its date."
+
+    Write the three lines under "Interim AI policy", headed "Which gap, and its fix". Then show Lesson 10.5's three kinds of gap, quoted:
+
+    | Gap | What is missing | The fix |
+    | --- | --- | --- |
+    | Policy gap | The rule, or a workable way to follow it: no rule covers the case, it is unclear or out of date, or the approved way is too hard | The rule's owner writes or changes it, or fixes the approved way. Until then, an interim proposal |
+    | Training gap | The person's knowledge: a clear rule exists, and they do not know it or how to follow it | Teach the rule with a worked case, then check again |
+    | Diligence lapse | Only the care: they knew a clear, workable rule and skipped it, often under time pressure | A required step the work cannot pass without, a record that it was done, and a named person accountable for it |
+
+    Ask: "Does any line change? Answer: 'no', or the new line and why." Write any change beside the first line, which stays. Then say "Ready for your test".
 
 **The test:** `Test: the send tool`, the task's only test. After it, end with "Task 11 is done".
 
 ## Task 12. Which settings carry it out
 
-1. Show Lesson 10.9's words, quoted: "Your policy stays the same on both AI vendors. Which settings carry it out, who can change them and how long records last do not." Then show the first difference, as its own lines: **personal accounts**, with `vendor-facts.md` section 3 for both vendors, and the routes line of the document's interim policy. Ask: "On Claude and on ChatGPT, which setting carries this line out, and on which plan, or 'no setting'? And where no setting carries it, what is the fallback? Answer: Claude, ChatGPT, then the fallback."
+1. Show Lesson 10.6's words, quoted: "The answers in 10.1 to 10.5 are the same on Claude, made by Anthropic, on ChatGPT, made by OpenAI, and on open-source tools you run yourself, which carry out only the rules you write. Which settings carry the answers out, and who can change them, differ." Then show the first difference, as its own lines: **personal accounts**, with `vendor-facts.md` section 3 for both vendors, and the routes line of the document's interim policy. Ask: "On Claude and on ChatGPT, which setting carries this line out, and on which plan, or 'no setting'? And where no setting carries it, what is the fallback? Answer: Claude, ChatGPT, then the fallback."
 2. The same question for **records of what happened**, with `vendor-facts.md` section 4, and the record's "Monitored by" field.
 3. The same question for **where the policy shows**, with `vendor-facts.md` section 5, and the interim policy as a whole.
 
@@ -273,3 +312,14 @@ Then say "Ready for your test".
 In the lab chat, the learner sends "Task 13" only to download the document. Say: "Download the document from its menu, as .docx or .pdf, and use it in a fresh chat as the page says." Ask nothing.
 
 In the fresh chat, the learner attaches the downloaded document and this zip, and sends a brief. Answer "Test: Monday" from the attached document, read as the terms, and from `role-contract-draft-6.md` as the document's section 12 changes it, as "When the learner sends 'Test:'" above says. In the fresh chat, end after the eighth case's items, with no end line.
+
+## Task 14. The March audit
+
+This task is set on Monday, March 15, 2027. Use `march-audit-sample.md` only in this task.
+
+1. Show "Where this sample comes from" from `march-audit-sample.md`, quoted. Then show the document's "Interim AI policy" section as it now stands: its lines, quoted, without its "Which gap, and its fix" lines. Say: "For this task, this is the policy in force."
+2. Show S1, every line of it, quoted. Ask: "Does this use keep the policy, or break a line of it, and which line? And does it show a lapse in Diligence, and which part? Answer: keeps it, or the line it breaks; then no lapse, or the part."
+3. If the answer names a broken line or a lapse, ask: "Was there a clear rule, and did the person know it? So: a policy gap, a training gap or a Diligence lapse? And the corrective action that closes it, and who owns it? Answer: the gap, then the action and who." If the answer names neither, ask nothing more for this use.
+4. Do steps 2 and 3 for S2 to S5, one at a time, each shown first.
+
+   Show no lesson text, no table of the kinds of gap and no list of the parts of Diligence in this task. Write each use under "Interim AI policy", headed "The March audit, Monday, March 15, 2027", as a row: the use, keeps it or the line it breaks, the lapse or "none", the gap, and the action with its owner. Then say "Task 14 is done". This task has no test.

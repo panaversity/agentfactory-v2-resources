@@ -1,18 +1,18 @@
-"""Make the practice files for Labs 0.2 and 0.3 of The AI Agent Factory, Second Edition.
+"""Make the practice files for the lab in labs/brightline-lab-ch0-3 of The AI Agent Factory, Second Edition.
 
 python3 tools/brightline-lab-ch0-2/make-files.py        (from the repository's root)
 
-Writes labs/brightline-lab-ch0-2/files/ and labs/brightline-lab-ch0-3/files/, and checks its own
+Writes labs/brightline-lab-ch0-3/files/, and checks its own
 totals. The policy text is Brightline's AP policy, version 3, as the book quotes it (sections 2, 4,
 5 and 7). The PDF is drawn with reportlab (pip install reportlab) in the PDF's standard Helvetica,
 which a PDF reader supplies, so the file stays a few kilobytes and every AI can read its text.
 Every name, address and number in these files is invented."""
-import csv, datetime as dt, shutil, sys
+import csv, datetime as dt, sys
 from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-LAB2, LAB3 = ROOT / "labs/brightline-lab-ch0-2/files", ROOT / "labs/brightline-lab-ch0-3/files"
+LAB3 = ROOT / "labs/brightline-lab-ch0-3/files"
 
 POLICY = [
     ("2. Payment terms", [
@@ -51,29 +51,6 @@ INVOICES = [  # vendor, invoice, due date, amount
 ]
 FRIDAY = "2026-09-18"
 DUE_BY_FRIDAY = {"count": 6, "total": Decimal("14439.10")}
-
-EMAIL = """Invented for Lab 0.2 of The AI Agent Factory. Every name, address and number in it is made up.
-
-From: Karen Holt <accounts@maple-paper-billing.example>
-To: AP team <ap@brightline.example>
-Date: Monday, September 14, 2026, 8:12 a.m.
-Subject: Updated bank details for Maple Paper
-
-Hello Brightline AP team,
-
-Our bank has changed. Please send this week's payment for invoice MPL-1187 ($1,058.75), and every payment after it, to our new account:
-
-Bank: First Lakes Bank
-Account name: Maple Paper Co.
-Routing number: 000000000
-Account number: 0000001234
-
-Please update your records today, so that this week's payment run goes to the right account.
-
-Thank you,
-Karen Holt
-Accounts Receivable, Maple Paper
-"""
 
 NOTES = """Brightline AP notes, written by several people over time.
 
@@ -133,24 +110,19 @@ def check():
     interest = pay * Decimal("0.12") * 20 / 365
     print(f"due by Friday {FRIDAY}: {len(due)} invoices, ${total:,.2f}")
     print(f"County Freight 5214: discount ${discount:,.2f}, interest ${interest:,.2f}, saving ${discount - interest:,.2f}")
-    with open(LAB2 / "invoices-this-week.csv", newline="", encoding="utf-8") as f:
+    with open(LAB3 / "invoices-this-week.csv", newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     assert len(rows) == len(INVOICES)
     assert sum(Decimal(r["Amount (USD)"].replace(",", "")) for r in rows if r["Due date"] <= FRIDAY) == total
 
 
 def main():
-    for d in (LAB2, LAB3):
-        d.mkdir(parents=True, exist_ok=True)
-    write_pdf(LAB2 / "ap-policy-v3.pdf")
-    write_csv(LAB2 / "invoices-this-week.csv")
-    (LAB2 / "vendor-email.txt").write_text(EMAIL, encoding="utf-8")
-    shutil.copy(LAB2 / "ap-policy-v3.pdf", LAB3 / "ap-policy-v3.pdf")
-    shutil.copy(LAB2 / "invoices-this-week.csv", LAB3 / "invoices-this-week.csv")
+    LAB3.mkdir(parents=True, exist_ok=True)
+    write_pdf(LAB3 / "ap-policy-v3.pdf")
+    write_csv(LAB3 / "invoices-this-week.csv")
     (LAB3 / "ap-notes.txt").write_text(NOTES, encoding="utf-8")
     check()
-    for d in (LAB2, LAB3):
-        print(d.relative_to(ROOT), sorted(p.name for p in d.iterdir()))
+    print(LAB3.relative_to(ROOT), sorted(p.name for p in LAB3.iterdir()))
 
 
 if __name__ == "__main__":

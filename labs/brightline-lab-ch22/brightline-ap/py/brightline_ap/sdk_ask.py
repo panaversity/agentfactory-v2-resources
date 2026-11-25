@@ -41,7 +41,7 @@ def show_requests() -> None:
 
 
 def load_secrets() -> None:
-    # Secrets come from files git ignores, read here and never printed (Chapter 20, F0)
+    # Secrets come from files git ignores, read here and never printed (Chapter 21, F0)
     for f in [".secrets/anthropic.env", ".secrets/openai.env", ".secrets/connector.env"]:
         p = Path(f)
         if p.exists():
@@ -52,7 +52,7 @@ def load_secrets() -> None:
 
 
 def show(m) -> None:
-    # One line per message in the stream (21.3)
+    # One line per message in the stream (22.3)
     if isinstance(m, SystemMessage) and m.subtype == "init":
         d = m.data
         servers = ", ".join(f"{s['name']}={s['status']}" for s in d.get("mcp_servers", []))

@@ -138,7 +138,7 @@ def test_purchase_orders() -> None:
         unknown = call(c, "get_purchase_order", {"po_number": "PO-9999"})
     assert over == {"po_number": "PO-7003", "vendor_id": "V003", "po_date": "2027-01-28", "po_amount_cents": 1200000,
                     "invoice_number": "INV-8303", "invoice_amount_cents": 1290000, "match": "over_po", "difference_cents": 90000,
-                    "approval_threshold_cents": 1000000, "needs_approval": True}
+                    "approval_threshold_cents": 500000, "needs_approval": True}
     assert matched["match"] == "matched"
     assert missing["isError"] is True
     assert text(missing) == ("No purchase order for INV-8310. Policy: an invoice with no PO is held until the buyer raises one. "

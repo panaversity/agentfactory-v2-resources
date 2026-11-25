@@ -6,7 +6,7 @@ The answers for Task 3 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 3 carries checks 7 to 10 of the lab's 51.
+Task 3 carries checks 7 to 10 of the lab's 52.
 
 7. **Missing, so the missing-output checks first.** Tuesday's output was missing, not wrong. So the checks for a missing output come first, before the five causes: a pending approval or question, a pause, a usage limit, a broken connector or a different destination.
     - Passed: missing, and those checks first.
@@ -23,11 +23,11 @@ Task 3 carries checks 7 to 10 of the lab's 51.
 
 ## Why
 
-"When an expected output is missing, do not change the brief ... yet" (Lesson 11.2). A missing output sends you to the checks for a missing output first, and a usage limit is one of them. Record A's runs say why: "Not started. Usage limit reached."
+"When an expected output is missing, do not change the brief ... yet" (Lesson 11.1). A missing output sends you to the checks for a missing output first, and a usage limit is one of them. Record A's runs say why: "Not started. Usage limit reached."
 
-But "one failure can live in two places" (Lesson 11.3). The check matches the same invoice number, or the same amount and invoice date, and 7781-R has neither: a new number and a new date. Nothing in its lines covers a resend with a suffix. So even on a day with allowance, the brief would have let 7781-R through.
+But "one failure can live in two places" (Lesson 11.2). The check matches the same invoice number, or the same amount and invoice date, and 7781-R has neither: a new number and a new date. Nothing in its lines covers a resend with a suffix. So even on a day with allowance, the brief would have let 7781-R through.
 
-Limits reset; runs that never started do not come back (Lesson 11.4). Monday's year-end task used the shared pool, the window reset on Wednesday morning, and Thursday's note found allowance again.
+Limits reset; runs that never started do not come back (Lesson 11.2). Monday's year-end task used the shared pool, the window reset on Wednesday morning, and Thursday's note found allowance again.
 
 ## Never a deduction
 

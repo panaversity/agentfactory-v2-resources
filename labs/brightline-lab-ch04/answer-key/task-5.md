@@ -23,7 +23,7 @@ Task 5 carries checks 15 to 18 of the lab's 21.
 
 ## Why
 
-The DSoR acts: it is the governed door to the company's systems, and it checks who and what is allowed before anything happens, then keeps the evidence (4.5). Brightline's door was a connector with Maria's login, straight into the register, and nothing checked. So an email that looked like Dave's became "approved by Dave" in a system of record, under Maria's name, in eight minutes. The chapter's rule is that a policy becomes a control or it stays a wish (4.7): "over $5,000 needs the controller's approval" stops a payment only when the accounting system refuses to release one without the approval recorded. Brightline has the sentence and not the control, and an honest page says so: the control is the target, and Thursday is what happens until it exists.
+The DSoR acts: it is the governed door to the company's systems, and it checks who and what is allowed before anything happens, then keeps the evidence (4.5). Brightline's door was a connector with Maria's login, straight into the register, and nothing checked. So an email that looked like Dave's became "approved by Dave" in a system of record, under Maria's name, in eight minutes, though Dave had approved nothing. The chapter's rule is that a policy becomes a control or it stays a wish (4.7): "over $5,000 needs the controller's approval" stops a payment only when the accounting system refuses to release one without the approval recorded. Brightline has the sentence and not the control, and an honest page says so: the control is the target, and Thursday is what happens until it exists.
 
 ## Never a deduction
 

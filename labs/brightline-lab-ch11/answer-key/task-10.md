@@ -6,7 +6,7 @@ The answers for Task 10 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Seco
 
 ## The checks
 
-Task 10 carries checks 35 to 37 of the lab's 51.
+Task 10 carries checks 35 to 37 of the lab's 52.
 
 35. **One kind of error: capacity, the wrong feature.** One repeated kind of error: small amounts, each different, while the rate and the invoice amounts are right. The cause is capacity, the wrong feature: arithmetic written in sentences.
     - Passed: one kind, and capacity or the wrong feature.
@@ -20,7 +20,7 @@ Task 10 carries checks 35 to 37 of the lab's 51.
 
 ## Why
 
-"When one kind of error repeats, that suggests the wrong feature" (Lesson 11.3). The rate is 2 percent every time, and the invoice amounts are right, yet the results are off by a few cents to $41.30. So the arithmetic is the place, and the cheapest check is the arithmetic itself, run as code. That check is also the fix: a line that makes the worker calculate, not write the sums out.
+"One repeated kind of error suggests the wrong feature, a capacity cause" (Lesson 11.2). The rate is 2 percent every time, and the invoice amounts are right, yet the results are off by a few cents to $41.30. So the arithmetic is the place, and the cheapest check is the arithmetic itself, run as code. That check is also the fix: a line that makes the worker calculate, not write the sums out.
 
 The three right discounts matter too. A check that finds nothing wrong for an item still says what it compared, so you can see it was checked.
 

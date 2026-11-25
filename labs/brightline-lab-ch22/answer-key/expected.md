@@ -1,6 +1,6 @@
-# Expected results, Lab 22 (answer key)
+# Expected results, Lab 23 (answer key)
 
-**Status:** expected from the platform's documentation. Every value marked (run) is replaced by the authors' live run before release. Nothing in Lab 22 has been run live yet. The offline checks, the type checks, Labs 20 and 21's tests (47 in TypeScript, 35 in Python) and the portal skeleton's 20 tests, were run on macOS on November 6, 2026.
+**Status:** expected from the platform's documentation. Every value marked (run) is replaced by the authors' live run before release. Nothing in Lab 23 has been run live yet. The offline checks, the type checks, Labs 21 and 22's tests (47 in TypeScript, 35 in Python) and the portal skeleton's 20 tests, were run on macOS on November 6, 2026.
 
 | Task | Expected |
 | --- | --- |
@@ -16,7 +16,7 @@
 | 11 | Luis gets Treasure Valley Lumber (Cedar Ridge's V001) |
 | 12 | 8 rows pass, about twelve sessions, under $0.60 |
 | 12b | Every planted bug fails at least one row (below), and bugs 9 and 10 fail `check:agent-config` rather than a matrix row. Under $1.50 for all ten |
-| 15 | Either every refresh succeeds and `vault:check` says `valid` (the platform stores the rotated refresh token), or a refresh fails because a used refresh token came back, usually the second, and `vault:check` says `invalid`, then `valid` once Ana has signed in again. No fallback is built in this lab. The rotation script's dry run counts two active credentials and changes nothing (run, the finding for 22.14's open question) |
+| 15 | Either every refresh succeeds and `vault:check` says `valid` (the platform stores the rotated refresh token), or a refresh fails because a used refresh token came back, usually the second, and `vault:check` says `invalid`, then `valid` once Ana has signed in again. No fallback is built in this lab. The rotation script's dry run counts two active credentials and changes nothing (run, the finding for 23.14's open question) |
 | 16 | `mcp_authentication_failed_error`, then validate `invalid` from `vault:check`, and a "sign in again" page for Luis. After he signs in again, the same credential id with new secret values (a 409 never seen), the row back to `active`, and the next session working. No `vault_credential.refresh_failed` webhook reaches the portal yet: one sent before Task 17 adds its endpoint is never delivered |
 | 18 | Four check tests pass (missing invoice, invented citation, wrong total, passing). First run's report posted after zero to two check rounds, under $0.50 in all. Second recorded as a repeat. Deployment paused (run) |
 

@@ -2,7 +2,7 @@
 
 Chapter 4 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 4: what the worker is made of](https://agentfactory.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/lab/), so you can do the lab without the book.
 
-In the week of October 12, 2026, Brightline's AP Worker made three mistakes, and on Friday IT asked Dave what the worker was made of, so they could rebuild it on the other AI vendor. He could not say. In this lab you answer Dave's questions in your own words, and the AI writes your answers into the page IT asked for: the worker drawn as Chapter 4's six layers, one layer at a time. After each layer, the AI moves that layer to the new vendor following only your page, and replays the week's messages against the new worker. What the new worker gets wrong shows you the line to fix. Each task is checked against its own key the moment it is done. It takes about 90 minutes, in one chat, and you can stop and come back, because the chat and the page keep your work. A free Claude or ChatGPT account is enough.
+In the week of October 12, 2026, Brightline's AP Worker made three mistakes, and on Friday IT asked Dave what the worker was made of, so they could rebuild it on the other AI vendor. He could not say. In this lab you answer Dave's questions in your own words, and the AI writes your answers into the page IT asked for: the worker drawn as Chapter 4's six layers, one layer at a time. After each layer, the AI moves that layer to the new vendor following only your page, and replays the week's messages against the new worker. What the new worker gets wrong shows you the line to fix. Each task is checked against its own key the moment it is done. It runs in one chat, and you can stop and come back, because the chat and the page keep your work. A free Claude or ChatGPT account is enough.
 
 **What you will learn:**
 
@@ -11,8 +11,9 @@ In the week of October 12, 2026, Brightline's AP Worker made three mistakes, and
 - To fix where a fact is kept when an AI gets it wrong, not the answer and not the memory.
 - To say what makes a written rule actually stop an action, and to say so when it is not in place.
 - To say what changes when others use a worker, and what must not.
+- To write what you found into the worker's Role Contract, as Draft 3.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch04.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04.zip), and unzip it. The folder holds:
 
@@ -35,7 +36,7 @@ The answer keys are not in the folder. Each task downloads its own, so you meet 
 
 ## The check prompt
 
-One prompt checks every task. Attach the task's key first, then send:
+One prompt checks every task. Attach the task's key first, or paste its text, then send:
 
 ```text
 Outcome:     The task I just finished, graded against the newest
@@ -55,9 +56,9 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 ## The rented layers
 
-### Task 1. Channels and runtime (10 minutes)
+### Task 1. Channels and runtime
 
-**Dave asks:** "Start with what the new vendor gives us for nothing. Where do people reach the worker, and what runs it? The register has to build on Monday at 7 like it does now."
+**Dave asks:** "Start with what the new vendor gives us for nothing. Where do people reach the worker, and what runs it? The register has to build on Monday at 6 like it does now."
 
 **What you do:**
 
@@ -94,20 +95,20 @@ Constraints: Grade only. Do not rewrite the page, and do not
 2. Answer Dave, in one message, in your own words. A short answer is enough, but answer every part. The AI writes your answer on the page. You never type in the document.
    - Which parts on IT's list are how people reach the worker, and which part runs it on Monday?
    - The worker's link to each of those parts: does it come with the vendor's product, or is it Brightline's? So does IT set it up again on the new vendor, or carry it across?
-   - The new scheduler starts empty. What does IT set up so the register still builds on Monday at 7, and where is that hour written down? Not sure? Ask the AI: "What does the Role Contract say about when the register is built?"
+   - The new scheduler starts empty. What does IT set up so the register still builds on Monday at 6, and where is that hour written down? Not sure? Ask the AI: "What does the Role Contract say about when the register is built?"
    - Did any of the three mistakes happen in these parts? "Nothing" is an answer.
 
 3. Test your page. Type: "Move channels and runtime to the new vendor." The AI acts as IT: it sets these parts up on the new vendor from your page and nothing else, then asks the new worker the week's questions. Under each answer, "What decided it" quotes your words from the page. "Lost in the move" means your page did not say it. To fix anything, tell the AI in the chat what to change, and send the move again.
 
 4. **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-1.md), one click. Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Read the key's "Why", tell the AI what to change on your page, and send the move again, then the check again.
 
-**IT gets:** section 1 of the page, and a scheduler that fires on Monday at 7.
+**IT gets:** section 1 of the page, and a scheduler that fires on Monday at 6.
 
 **Checkpoint.** Checks 1 to 3 passed. The rented layers lose nothing in a move, and the one fact they carry, the hour, is written in a document Brightline keeps.
 
 ## The owned records
 
-### Task 2. KSoR: what the worker knows (15 minutes)
+### Task 2. KSoR: what the worker knows
 
 **Dave asks:** "Wednesday it told Maria that Midwest Packaging's $7,800 invoice 4498 does not need my approval. Over $10,000 only, it said. I lowered that to $5,000 on September 1, and the policy is in my email. The new worker has to know the policy we actually have. And Maria also asked it about Canadian dollars."
 
@@ -134,7 +135,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 **Checkpoint.** Checks 4 to 7 passed. The approved policy is kept where Brightline keeps approved things, with its version and approver, and the worker is pointed at it from a document Brightline owns.
 
-### Task 3. Memory: what the worker remembers (15 minutes)
+### Task 3. Memory: what the worker remembers
 
 **Dave asks:** "On the new vendor it remembers nothing. Monday night it told Lakeshore Janitorial that invoice 5102, dated October 9, was due November 8, from something it remembered. Make sure the new worker gives Lakeshore the right date, and tell me what else it remembers that we would lose."
 
@@ -159,7 +160,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 **Checkpoint.** Checks 8 to 11 passed. The move is the wipe test, and the new worker passed it.
 
-### Task 4. SSoR: where the work stands (10 minutes)
+### Task 4. SSoR: where the work stands
 
 **Dave asks:** "Thursday at 9 Maria asked where Tri-County Freight's invoice 5120 stands. The worker answered from a register row it had typed itself that morning. Maria's own case file for 5120, kept by hand in the AP shared folder, it never read. And the only record of what it did last week is its run notes, typed into its chat. On the new vendor that chat is gone. Where does the new worker read, and write, where each invoice stands?"
 
@@ -175,7 +176,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 2. Answer Dave, in one message:
    - Where does the worker read and write where each invoice stands today, and where does its record of what it did live?
    - Of those places, which are Brightline's and which the vendor's? What does the move carry, and what stays behind unless it is moved somewhere first?
-   - Where does the new worker read and write where each invoice stands? Last week's run notes are in the vendor's chat. Before the move, which of Brightline's files do they go into, so that each invoice's history stays with that invoice, and the new worker can answer Dave about last week?
+   - Where does the new worker read and write where each invoice stands? Last week's run notes are in the vendor's chat. Before the move, which of Brightline's files do they go into, so that each invoice's history stays with that invoice, and the new worker can answer Dave about last week? Only 5120 has a case file today: where do the notes on 5102 and 4498 go?
    - What went wrong on Thursday at 9, and why? And what was wrong with where the worker kept its own record of the week?
 3. Type: "Move SSoR to the new vendor." Read what the new worker tells Maria about 5120, and Dave about 5102.
 4. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt).
@@ -184,7 +185,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 **Checkpoint.** Checks 12 to 14 passed. The record of the work is with the work, in files Brightline owns.
 
-### Task 5. DSoR: the door to our systems (15 minutes)
+### Task 5. DSoR: the door to our systems
 
 **Dave asks:** "Thursday at 7:50 it set 5120 to 'approved by Dave' in the register, with Maria's login, because of an email. I approved nothing. On the new vendor, what stands between the worker and the accounting system, and whose login does it use? And what makes a $7,800 payment actually wait for me, because a sentence in a policy does not?"
 
@@ -212,7 +213,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 ## The whole move
 
-### Task 6. The move, and when others use it (15 minutes)
+### Task 6. The move, and when others use it
 
 **Dave asks:** "Now the whole thing. IT wants one list: what they rebuild on the new vendor, and what we carry, and from where. And Sam in Purchasing asked it on Friday whether Midwest's $7,800 invoice needs approval, and asked it to mark the invoice approved so it goes out Friday. What changes when Sam uses it, and what must not?"
 
@@ -223,7 +224,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
    - Who decides what the worker may do? When Sam asks it something, what changes, and what must not?
 
    The AI writes your answers in sections 6 and 7.
-2. Type: "Move the whole worker to the new vendor." The AI moves all five layers as your page says, replays the whole week, then Sam's Friday message. Read every answer: each should name a line of yours, and none should say "lost in the move".
+2. Type: "Move the whole worker to the new vendor." The AI moves all six layers as your page says, replays the whole week, then Sam's Friday message. Read every answer: each should name a line of yours, and none should say "lost in the move".
 3. **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt).
 
 **IT gets:** the whole page, and a week that comes out right on a vendor that has never seen Brightline.
@@ -232,7 +233,7 @@ Constraints: Grade only. Do not rewrite the page, and do not
 
 ## Apply it to your vertical
 
-### Task 7. Your own setup (10 minutes)
+### Task 7. Your own setup
 
 Three things your own AI use relies on, at work or in your studies: a prompt you keep in a chat, a file you uploaded, what the AI remembers about you.
 
@@ -243,6 +244,35 @@ Three things your own AI use relies on, at work or in your studies: a prompt you
 3. Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch04-key-task-7.md). Attach it, and send [the check prompt](#the-check-prompt). Check 22 is not scored: read what the AI sees, and decide yourself.
 
 **Checkpoint.** Each of your three has a layer and a place, and you know which one you would move today.
+
+## Draft 3 of the Role Contract
+
+**Dave asks:** "Last, put what you found into the worker's Role Contract. IT works from your page, but the contract is what we keep."
+
+**What you do:**
+
+Brightline's Draft 2 is in the zip, in the AP shared folder. As in [2.6's template](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/role-contract/), it keeps the lines this chapter covers under two headings: "What it works with" and "How it runs and is reached". Those lines are knowledge, memory, actions, runtime needs and channels.
+
+1. In the same chat, send this:
+
+   ```text
+   Outcome:     The AP Worker's Role Contract, Draft 3, dated Friday,
+                October 16, 2026, in a second document beside our chat.
+   Context:     ap-shared/role-contract.md in the zip, which is Draft 2,
+                and my page.
+   Format:      Copy Draft 2, then change only the Identity line and the
+                lines under "What it works with" and "How it runs and is
+                reached". Each of those lines says what
+                my page says, and where that part is kept. Remove an open
+                question my page answers. Add one for anything my page
+                left open.
+   Constraints: Use only Draft 2 and my page. Add nothing of your own,
+                and change no other line.
+   ```
+
+2. Read Draft 3 beside your page. Each line you changed should match a section of your page. If a line says something your page does not, tell the AI to take it out.
+
+**Dave gets:** the AP Worker's Role Contract, Draft 3. [Lab 7](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/lab/) starts from a Draft 3 like yours, and adds the worker's authority.
 
 ## If something goes wrong
 
@@ -259,17 +289,17 @@ Three things your own AI use relies on, at work or in your studies: a prompt you
 
 ## When you are done
 
-You are done when checks 1 to 21 have passed and you have read check 22 yourself. Export the page, as a .docx or a .pdf, or copy it into a document of your own: it is Brightline's, it reads without the chat, and it is the shape of the page you would write for your own worker.
+You are done when checks 1 to 21 have passed, you have read check 22 yourself, and Draft 3 is written. Export the page and Draft 3, as a .docx or a .pdf, or copy them into documents of your own. They are Brightline's, they read without the chat, and the page is the shape of the one you would write for your own worker.
 
 **At work:** before you depend on an AI setup, write its page: six layers, rented or owned, where each owned thing is kept. Then ask what a move would lose. Whatever the answer is, that is what to move first.
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
-- **Persist.** This chapter's wipe test says memory must never be the only source for a fact or permission the worker acts on, and 4.9 says a fresh machine rebuilds its context from the records. The exam guide expects three moves when a conversation gets long or its answers get worse: restart, summarize, or persist the key facts, for example in a project. On the exam, persisting key facts in a project is a correct move. The wipe test is this book's rule for what may live only in memory, not an exam answer. (D-005)
-- **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. This chapter teaches that approved knowledge belongs in a KSoR, reached through a custom connector. On the exam, a governed record or a custom MCP connector is not the expected answer. Choose the project setup. (D-006)
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 4.8 shows three open-source tools beside Claude and ChatGPT: OpenCode, OpenClaw and Omnara. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Persist.** This chapter's wipe test says memory must never be the only source for a fact or permission the worker acts on, and 4.9 says a fresh machine rebuilds its context from the records. When a conversation gets long or its answers get worse, the exam guide expects four moves: restart, summarize, persist the key facts to a Project, or rely on memory. On the exam, persisting key facts in a Project is a correct move. The wipe test is this book's rule for what may live only in memory, not an exam answer. (D-077)
+- **Project knowledge and connectors.** The exam guide expects the simple setup: upload the current documents to the project's knowledge, connect sources with connectors such as Google Drive or Gmail, write project instructions, and replace a file when it goes out of date. It also expects you to choose, for each requirement, an instruction, a knowledge source or a Skill. This chapter teaches that approved knowledge belongs in a KSoR, reached through a custom connector. On the exam, a governed record or a custom MCP connector is not the expected answer. Choose the project setup. (D-079)
 
 [^anthropic-memory]: Use Claude's chat search and memory to build on previous context, Claude Help Center.
 [^openai-memory]: Memory in ChatGPT, OpenAI Help Center.

@@ -12,7 +12,7 @@ One file to attach in Task 1. It holds four files, each under its own name: the 
 ## Who it is
 Identity:      <the account it acts as>
 Role:          <job title>
-Kind:          <Delegated (one briefed job) or Standing (an ongoing role)>
+Kind:          <Delegated (each job from a brief) or Standing (keeps working between conversations)>
 Mission:       <one sentence: why the role exists>
 Owner:         <a named person, and their title>
 
@@ -51,7 +51,7 @@ The recurring accounts-payable work at Brightline today. Use it as the raw mater
 | --- | --- | --- | --- | --- | --- |
 | Build the invoice register for the payment run | Weekly, Monday | Office manager | Vendor invoices in the AP inbox and shared drive | Register spreadsheet for review | 15 to 25 invoices a month |
 | Check invoice totals against line items | Weekly | Office manager | Each invoice | Flags on the register | Found one arithmetic error in September |
-| Flag possible duplicate invoices | Weekly | Office manager | The register and past payments | Flags on the register | One $4,850 duplicate found in September |
+| Flag possible duplicate invoices | Weekly | Office manager | The register and past payments | Flags on the register | A $4,850 duplicate paid in August and refunded, and another found in September |
 | Answer vendor questions about payment status | Daily | AP clerk | Vendor emails, the register | Email replies | About 10 a week |
 | Chase missing invoices for received goods | Weekly | AP clerk | Purchase orders, receiving notes | Emails to vendors | |
 | Prepare Friday's payment run for approval | Weekly, Thursday | Controller | The reviewed register | Approved payment list | The controller approves every run |
@@ -77,7 +77,7 @@ The places a duty's result can live, and the systems the worker can use.
 
 The problems a good AP Worker would prevent.
 
-- Midwest Packaging's invoice 4471 came in twice, as 4471 and 4471-R, $4,850.00 each. The copy was caught just before it was paid.
+- Midwest Packaging's $4,850.00 invoice came in twice, two months running. In August, a copy was paid, and Midwest refunded it. In September it came in again as 4471 and 4471-R, and 4471-R was caught before it was paid.
 - Franklin County Power & Light's August bill was paid two days late, with a $35.00 late fee.
 - On two Mondays the register was ready at 2 p.m., after Dave's 10 a.m. review.
 - Central Ohio Office Supply asked about the same invoice three times before anyone answered.

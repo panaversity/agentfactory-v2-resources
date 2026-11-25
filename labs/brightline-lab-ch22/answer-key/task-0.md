@@ -1,6 +1,6 @@
-# Lab 22, Task 0: answer key
+# Lab 23, Task 0: answer key
 
-For you, after the task. Open it in a text editor, never in the agent. Nothing in Lab 22 has been run live yet: every result here is what the platforms' documentation and the lab page lead us to expect, so if your run differs, your run is the evidence, and you record what you saw in `ports/ch22.md`. The offline checks, the type checks, Labs 20 and 21's tests and the portal skeleton's tests, were run on macOS on November 6, 2026.
+For you, after the task. Open it in a text editor, never in the agent. Nothing in Lab 23 has been run live yet: every result here is what the platforms' documentation and the lab page lead us to expect, so if your run differs, your run is the evidence, and you record what you saw in `ports/ch22.md`. The offline checks, the type checks, Labs 21 and 22's tests and the portal skeleton's tests, were run on macOS on November 6, 2026.
 
 **If the stop rule applies.** If step 5 did something different from **What good looks like**, stop there: record what you saw in `ports/ch22.md`, and do not build on it. Every later task depends on that step. It is not your mistake.
 
@@ -16,8 +16,8 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 | 4. The sign-in server, then the connector | Both answer at their staging addresses, Ana and Luis are on staging's sign-in server, and `npm run conformance:staging` passes |
 | 5. The platform tool | `ant --version` prints 2.5.0, the pinned version, and the agent list is empty |
 | 6. Your addresses | `docs/addresses.md` lists four real addresses, none ending in `brightline.example` |
-| 7. GitHub, and the earlier tests | A private `brightline-ap` repository with its secrets, `main` and the tag. Labs 20 and 21's tests pass: 47 in TypeScript (32 and 15) and 35 in Python (22 and 13). The portal skeleton's 20 pass. `git ls-files .secrets` prints nothing |
+| 7. GitHub, and the earlier tests | A private `brightline-ap` repository with its secrets, `main` and the tag. Labs 21 and 22's tests pass: 47 in TypeScript (32 and 15) and 35 in Python (22 and 13). The portal skeleton's 20 pass. `git ls-files .secrets` prints nothing |
 
-**Seen in the offline check:** step 7's offline tests, on macOS on November 6, 2026. Labs 20 and 21's 47 TypeScript and 35 Python tests passed, and so did the portal skeleton's 20. The other steps need your own accounts, and nobody has run them yet.
+**Seen in the offline check:** step 7's offline tests, on macOS on November 6, 2026. Labs 21 and 22's 47 TypeScript and 35 Python tests passed, and so did the portal skeleton's 20. The other steps need your own accounts, and nobody has run them yet.
 
-**Never a deduction:** stopping at step 5 under the stop rule, a Neon or Cloudflare sign-in in the browser, any of the three answers in step 1 (reuse, remove or none found), or a failing Lab 20 or 21 test, which the prompt says is for the authors, not for you to fix.
+**Never a deduction:** stopping at step 5 under the stop rule, a Neon or Cloudflare sign-in in the browser, any of the three answers in step 1 (reuse, remove or none found), or a failing Lab 21 or 22 test, which the prompt says is for the authors, not for you to fix.

@@ -156,7 +156,7 @@ async function call(url: string, tok: string, name: string, args: Record<string,
 
 // Words that belong to Brightline only, which must never appear in a Cedar Ridge answer.
 const BRIGHTLINE_ONLY = ["Midwest Packaging", "Buckeye", "Great Lakes", "Scioto", "Hocking", "Lakefront", "Ohio Valley", "Cardinal",
-  "INV-8301", "INV-8310", "PO-7003", "docs/policies/", "controller's approval", "$10,000"];
+  "INV-8301", "INV-8310", "PO-7003", "docs/policies/", "controller's approval", "$5,000"];
 for (const lang of ["ts", "py"] as const) {
   const url = RESOURCE[lang];
   const luis = await token("org_cedar", "u_matrix_luis", url);
@@ -176,7 +176,7 @@ for (const lang of ["ts", "py"] as const) {
   // D9. Nothing in any Cedar Ridge answer belongs to Brightline: every tool, answers and errors.
   const asks: Array<[string, Record<string, unknown>]> = [
     ["find_vendor", { name: "co" }], ["find_vendor", { vendor_id: "V005" }], ["list_open_invoices", { page_size: 10 }],
-    ["get_purchase_order", { invoice_number: "INV-8303" }], ["search_policy", { query: "who approves invoices over $10,000?" }],
+    ["get_purchase_order", { invoice_number: "INV-8303" }], ["search_policy", { query: "who approves invoices over $5,000?" }],
     ["search_policy", { query: "bank details" }],
   ];
   const leaks: string[] = [];
@@ -187,7 +187,7 @@ for (const lang of ["ts", "py"] as const) {
   }
   row(`D9 ${lang} six Cedar Ridge calls contain nothing of Brightline's`, leaks.length === 0, leaks.join(", ") || "none");
   // D10. Two companies at once through one copy, 100 pairs. Each answer must be the first page that person
-  // got alone, and the two people's pages must differ, so a crossed answer shows. (Since Lab 20, Brightline's
+  // got alone, and the two people's pages must differ, so a crossed answer shows. (Since Lab 21, Brightline's
   // 16 open invoices equal Cedar Ridge's 16, so the counts alone no longer tell the two companies apart.)
   const firstPage = (r: Awaited<ReturnType<typeof call>>): string => r.sc
     ? JSON.stringify([r.sc.total_count, (r.sc.invoices as { invoice_number: string }[]).map((i) => i.invoice_number)])

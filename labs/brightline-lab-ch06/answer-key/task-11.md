@@ -6,20 +6,20 @@ The answers for Task 11 of Lab 6, in Chapter 6 of *The AI Agent Factory*, Second
 
 ## The checks
 
-Task 11 carries checks 28 to 30 of the lab's 30.
+Task 11 carries checks 31 to 33 of the lab's 34.
 
-28. **A fresh reviewer, with only your contract and the records, and its whole reply here.**
+31. **A fresh reviewer, with only your contract and the records, and its whole reply here.**
     - It ran in a fresh chat, on the other AI vendor or in a new chat on the same one, with memory off before anything was sent. Your answer to the AI's first question says where.
     - It got your downloaded Review Contract and `inputs.zip`, with the message the lab page prints. Its reply reviews your contract's checks, and none of your findings.
     - Its whole reply is in your lab chat, below "The second reviewer's reply".
     - Passed: all three.
     - Missed: no fresh chat, or memory not off before anything was sent; a contract other than yours, or your Review findings sent with it; or only part of the reply in your lab chat.
-29. **Each of its own findings is decided from the source.** Under "The second reviewer" in your Review findings, each problem the reviewer named that your findings did not have, and each line of its reply that disagrees with one of your decisions, is decided real or not, from the source line the AI showed: a real one kept, with what is right, and a wrong one turned down, with the source that shows it. The package's problems, and the things in it that are right, are in the table below.
+32. **Each of its own findings is decided from the source.** Under "The second reviewer" in your Review findings, each problem the reviewer named that your findings did not have, and each line of its reply that disagrees with one of your decisions, is decided real or not, from the source line the AI showed: a real one kept, with what is right, and a wrong one turned down, with the source that shows it. The package's problems, and the things in it that are right, are in the table below.
     - Passed: every one of its own findings decided, each as the table below says. If it had none of its own, this check passes: quote the list under "The second reviewer".
     - Missed: one of its own findings left undecided, or decided against the table.
-30. **What your contract lacked, and what it needs on the other AI vendor.**
+33. **What your contract lacked, and what it needs on the other AI vendor.**
     - For each problem of yours the reviewer missed, you named the line of your contract that should have sent it there, by its letter, or said "no line" and added the check as an amendment. If it missed none of yours, this half passes.
-    - On the other AI vendor, your contract needs nothing, because it describes the work, not the tool (Lesson 6.8). Naming the line it already has, a reason, a policy section and a source on every row, also passes, and so does adding that line if your contract lacked it.
+    - On the other AI vendor, your contract needs nothing, because it describes the work, not the tool (Lesson 6.4). Naming the line it already has, a reason, a policy section and a source on every row, also passes, and so does adding that line if your contract lacked it.
     - Passed: both.
     - Missed: a missed problem with no letter and no amendment; or a change for the other AI vendor to a check, the outcome or the depth.
 
@@ -47,9 +47,9 @@ A finding of the reviewer is real when it names one of the problems below, or a 
 
 ## Why
 
-A second worker is good at finding possible problems fast (Lesson 6.7). It is not the review: it can miss what you found, and invent problems that are not there. It can mark a correct abstention, an honest "the source does not say", as a gap. Use it to search more widely, then check each finding yourself against the sources. The person who signs is responsible for the result.
+A second worker is good at finding possible problems fast (Lesson 6.3). It is not the review: it can miss what you found, and invent problems that are not there. It can mark a correct abstention, an honest "the source does not say", as a gap. Use it to search more widely, then check each finding yourself against the sources. The person who signs is responsible for the result.
 
-A finding of its own that is real points to a check your contract lacks, or one your review did not run: add it, dated. A problem it missed points to a line of the contract it did not follow, or a line the contract lacks. The contract describes the work, not the tool, so it runs on either AI vendor without changes. The one line every contract needs on both is a reason, a policy section and a source on every row, because neither AI vendor promises a citation to a row in your own file (Lesson 6.8).
+A finding of its own that is real points to a check your contract lacks, or one your review did not run: add it, dated. A problem it missed points to a line of the contract it did not follow, or a line the contract lacks. The contract describes the work, not the tool, so it runs on either AI vendor without changes. The one line every contract needs on both is a reason, a policy section and a source on every row, because neither AI vendor promises a citation to a row in your own file (Lesson 6.4).
 
 ## Never a deduction
 

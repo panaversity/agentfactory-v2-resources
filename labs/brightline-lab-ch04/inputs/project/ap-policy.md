@@ -1,6 +1,6 @@
 # Brightline Wholesale Supply: Accounts Payable Policy, version 1
 
-March 2026. Uploaded to the shared project in March 2026. Nothing in the project marks it as replaced.
+March 2026. Uploaded to Maria's project in March 2026. Nothing in the project marks it as replaced.
 
 ## 2. Receiving invoices
 

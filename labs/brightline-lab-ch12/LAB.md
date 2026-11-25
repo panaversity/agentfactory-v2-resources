@@ -217,7 +217,7 @@ Use Codex or OpenCode, whichever you have. If you have the time and both apps, d
 
 ### If you do not have a paid Claude plan
 
-Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. With Ollama on a Mac it costs nothing, and with DeepSeek or OpenRouter you pay for what you use. That page also says what you give up.
+Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/appendices/claude-and-chatgpt-2/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. With Ollama on a Mac it costs nothing, and with DeepSeek or OpenRouter you pay for what you use. That page also says what you give up.
 
 If you cannot use the Claude app at all, do the lab in Codex or OpenCode:
 

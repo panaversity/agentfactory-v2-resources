@@ -1,11 +1,11 @@
 # docs/sdk-map.example.md: the mapping table, as the authors filled it (November 5, 2026)
 
-*For readers who did not do Lab 21. If you did, read your own `docs/sdk-map.md`. For Lab 22's Task 1, only the last section matters: what an SDK in your own process still leaves to you. The table's names in code font, such as `maxTurns` or `canUseTool`, are the two SDKs' own options from Chapter 21. You do not need them here.*
+*For readers who did not do Lab 22. If you did, read your own `docs/sdk-map.md`. For Lab 23's Task 1, only the last section matters: what an SDK in your own process still leaves to you. The table's names in code font, such as `maxTurns` or `canUseTool`, are the two SDKs' own options from Chapter 22. You do not need them here.*
 
-From the offline run and the pinned SDKs. The same table is on Chapter 21's reference page.
+From the offline run and the pinned SDKs. The same table is on Chapter 22's reference page.
 
 
-| The line of your Chapter 20 loop | The first SDK | The second SDK |
+| The line of your Chapter 21 loop | The first SDK | The second SDK |
 | --- | --- | --- |
 | **Step 1. Call** | The harness, with its own extra settings and notes | The runner, with your `modelSettings` |
 | **Step 2. Keep** | The harness, one `assistant` message per block | The runner, into the history |
@@ -22,9 +22,9 @@ From the offline run and the pinned SDKs. The same table is on Chapter 21's refe
 | **The trace** | OpenTelemetry through settings you set, and your own hook | The provider's dashboard by default, or your processor |
 | **What counts as done** | The model's stop, plus limits. Your own check on the answer | The runner's rule, plus your guardrail |
 
-## What this still leaves to me (Lab 21, Task 15)
+## What this still leaves to me (Lab 22, Task 15)
 
-The authors' lines, one per row of 21.9's table. Lab 22's Task 1 reads them.
+The authors' lines, one per row of 22.9's table. Lab 23's Task 1 reads them.
 
 - **A process, and a disk:** the first SDK's harness needs a process that stays alive and a disk, so it runs on my computer, not in an edge function.
 - **A container and a sandbox:** built-in tools are off. In production, each worker would need its own container.

@@ -13,10 +13,10 @@ Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio, with a
 
 ## Where things are kept
 
-- **Brightline's company AI workspace** is in Claude, on Claude's Team plan, set up by Dave. The AP Worker works in its **shared AP project**. Its members are Maria, Dave and Jordan. Every member can open the project's files.
-- **The New Staff project** is another project in the same workspace, for new staff.
+- **Brightline's company AI workspace** is in Claude, on Claude's Team plan, set up by Dave. Staff use it for their own AI chats. Each person can connect their own Google Drive account to it, and the AI can then search what that person can open on the shared drive.
+- **The AP project** in Claude is where the AP Worker works. It is Maria's own: she made it under her own login, on her own Claude plan, because projects are not on the Team plan yet. Only Maria can open it. Dave and Jordan see the worker's results in the AP shared folder.
 - **Maria's AP project in ChatGPT** is a project Maria uses to test the concepts in ChatGPT.
-- **The shared drive** holds the finance shared drive, the Onboarding folder and the Year-end folder. The whole finance team can open the Year-end folder.
+- **The shared drive** holds the finance shared drive, the AP shared folder, the Onboarding folder and the Year-end folder. The whole finance team can open the Year-end folder. Maria, Dave and Jordan can open the AP shared folder, which holds the AP Worker's results and the approved documents Maria keeps current.
 - **The AP inbox**, ap@brightlinewholesale.example. Maria sends replies from it. It is shared, not one person's email.
 - **#ap-help**, the AP team's channel in the team chat app. Maria, Dave and Jordan are in it.
 - **The accounting system** holds the vendor master, the invoices, the payment status and the approvals log.
@@ -29,7 +29,7 @@ Brightline Wholesale Supply is a wholesale distributor in Columbus, Ohio, with a
 
 **Sunday, December 6.** Maria needed to find duplicate vendors before the year-end tax forms. The company workspace felt slow, so at home she uploaded the full vendor master to her personal AI account. Her own account of it is below.
 
-**Wednesday, December 9.** Jordan Ellis asked the New Staff project how to handle a vendor's new bank details. It answered from the 2025 onboarding notes: "Confirm by replying to the vendor's email." Jordan did. The AP policy's callback rule stopped the payment: a change waits until someone phones the vendor on the number already in the vendor record. No money was lost.
+**Wednesday, December 9.** Jordan Ellis asked the AI in the company workspace how to handle a vendor's new bank details. Through his Google Drive connector, it answered from the 2025 onboarding notes in the Onboarding folder: "Confirm by replying to the vendor's email." Jordan did. The AP policy's callback rule stopped the payment: a change waits until someone phones the vendor on the number already in the vendor record. No money was lost.
 
 **Friday, December 11.** Dave knows about all four. Brightline has no written AI policy. The AP Worker is switched off until Monday, December 14.
 
@@ -50,7 +50,18 @@ Staff proposed these on Friday, December 11, 2026.
 
 Before we prepare year-end tax forms, I need every vendor that appears twice in the vendor master. Two records for one vendor means two tax forms, or a payment to the wrong account. The real master has 412 vendors. A likely duplicate is something a person then confirms, so the check only has to flag pairs for me to look at.
 
-**The vendor master in this lab.** `vendor-master-lab-copy.csv` holds 36 of the 412 vendors. It shows tax ID numbers and bank numbers by their last four digits only, as an accounting screen shows them. The full vendor master, in the accounting system, holds every number in full: the tax ID numbers, including the Social Security numbers of sole proprietors, and the bank routing and account numbers. Brightline keeps each vendor's tax ID to file the year-end tax forms. Dave owns the vendor data.
+**The vendor master in this lab.** The learner's folder holds `fictional-vendor-master-2026-12-06.csv`, 36 of the 412 vendors, exported the way Maria exported the whole master on December 6. It is not in this chat, and nothing in this zip copies it. The learner cuts it on their own computer before anything from it goes to an AI, then attaches only the cut file. Its first row says the file is fictional, and the column names are on its second row. It holds every number in full: the tax ID numbers, including the Social Security numbers of sole proprietors, and the bank routing and account numbers. It has one column the accounting system adds to every export, `tin_masked`: each tax ID's last four digits, as an accounting screen shows them. It also has a notes column, free text the AP team writes. Brightline keeps each vendor's tax ID to file the year-end tax forms. Dave owns the vendor data.
+
+Its columns, in order:
+
+- `vendor_id`, `legal_name`, `dba_name`, `address`, `city`, `state`, `zip`: the vendor's id, its legal name, any business name it trades under, and its address
+- `tin_type`: the kind of tax ID: EIN for a company, SSN for a sole proprietor's Social Security number, or BN for a Canadian business number
+- `tin`: the whole tax ID number
+- `tin_masked`: its last four digits only
+- `bank_routing`, `bank_account`: the whole bank routing and account numbers
+- `contact_email`, `phone`: the vendor's billing contact
+- `small_supplier`, `onboarded`: whether the vendor is a small supplier, Y or N, and the date it was set up
+- `notes`: free text the AP team writes about some vendors
 
 ## Dave's early-pay request
 
@@ -72,15 +83,15 @@ It is a signed memo, not an AP concept.
 
 | Id | Item | Where it is | Its header |
 | --- | --- | --- | --- |
-| K1 | Invoice approval threshold | An AP concept, in Maria's records. Its copies are logged in the refresh log: the shared AP project, the Google Doc "AP approved concepts", Maria's test project in Claude and Maria's AP project in ChatGPT | stable, owner Dave Kowalski, approved Monday, November 9, 2026 |
+| K1 | Invoice approval threshold | An AP concept, in Maria's records. Its copies are logged in the refresh log: the AP project in Claude, the Google Doc "AP approved concepts", Maria's test project in Claude and Maria's AP project in ChatGPT | stable, owner Dave Kowalski, approved Monday, November 9, 2026 |
 | K2 | Weekly payment run and due dates | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
 | K3 | Duplicate invoices | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
 | K4 | Changes to vendor bank details | An AP concept, in Maria's records. The same copies. Its text is under "K4" below | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
 | K5 | Capitalization of purchases | An AP concept, in Maria's records. The same copies | stable, owner Dave Kowalski, approved Wednesday, November 4, 2026 |
-| K6 | Invoice approval threshold, AP policy version 2 | A copy uploaded to the shared AP project on Wednesday, November 18, 2026. Its text is below | no header. AP policy version 3 replaced it on September 1, 2026 |
-| K7 | AP onboarding notes, 2025 | The original is in the Onboarding folder on the shared drive. Its copy in the shared AP project was removed in November. Its copy in the New Staff project is still there. Its text is below | no header, no owner |
+| K6 | Invoice approval threshold, AP policy version 2 | A copy uploaded to the AP project in Claude on Wednesday, November 18, 2026. Its text is below | no header. AP policy version 3 replaced it on September 1, 2026 |
+| K7 | AP onboarding notes, 2025 | The original is in the Onboarding folder on the shared drive, where the AI in the company workspace can find it through a Google Drive connector. Its copy in the AP project was removed in November. Its text is below | no header, no owner |
 | K8 | AP benchmarks excerpt | Uploaded to Maria's AP project in ChatGPT by Maria in October. Its text is below | no header. See its license line |
-| K9 | Vendor onboarding steps | Uploaded to the shared AP project by Jordan Ellis on Tuesday, December 8, 2026. Its text is below | no header |
+| K9 | Vendor onboarding steps | Saved in the AP shared folder by Jordan Ellis on Tuesday, December 8, 2026. Its text is below | no header |
 | K10 | Small-supplier payment commitment | Dave's memo in the finance shared drive, above | a signed memo, not an AP concept |
 
 ### K4. Changes to vendor bank details
@@ -97,7 +108,7 @@ Status: stable. Owner: Dave Kowalski. Approved by Dave Kowalski on Wednesday, No
 
 ### K6. Invoice approval threshold, AP policy version 2
 
-> Copied from AP policy version 2, approved June 2, 2026. Uploaded to the shared AP project on Wednesday, November 18, 2026.
+> Copied from AP policy version 2, approved June 2, 2026. Uploaded to the AP project on Wednesday, November 18, 2026.
 >
 > 4.1 Invoices over $10,000.00 need the controller's approval before payment.
 

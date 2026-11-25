@@ -88,7 +88,7 @@ test("get_purchase_order: matched, over the PO, and a missing PO", async () => {
   assert.deepEqual(over, { po_number: "PO-7003", vendor_id: "V003", po_date: "2027-01-28", po_amount_cents: 1200000,
     invoice_number: "INV-8303", invoice_amount_cents: 1290000, match: "over_po", difference_cents: 90000,
     // Chapter 19: Brightline's own approval threshold, from tenant_settings, applied by code.
-    approval_threshold_cents: 1000000, needs_approval: true });
+    approval_threshold_cents: 500000, needs_approval: true });
   const matched = (await call(makeCopy(), "get_purchase_order", { po_number: "PO-7001" })).structuredContent as Structured;
   assert.equal(matched.match, "matched");
   const missing = await call(makeCopy(), "get_purchase_order", { invoice_number: "INV-8310" });

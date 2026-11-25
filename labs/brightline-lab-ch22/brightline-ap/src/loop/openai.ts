@@ -1,4 +1,4 @@
-// The same agent loop on the OpenAI Responses API (Concepts 20.6 and 20.7).
+// The same agent loop on the OpenAI Responses API (Concepts 21.6 and 21.7).
 // Stateless, like the Claude loop: store is false, there is no previous_response_id,
 // and this file builds and sends the whole input array on every call.
 

@@ -6,7 +6,7 @@ The answers for Task 7 of Lab 11, in Chapter 11 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 7 carries checks 24 to 26 of the lab's 51.
+Task 7 carries checks 24 to 26 of the lab's 52.
 
 24. **Change one, and its test.** The review opens AP Register 2027 by its link, or by a name no other file shares, in the Finance folder, through the shared-drive connection, and never as an upload. The "Inputs:" line's items 2 and 3, the AP matters record and the five concepts, stay. `Test: Thursday, 7 a.m.` reads AP Register 2027 and lists the invoices due by January 22, 2027: 31, worth $86,240.15.
     - Passed: the link or a name no other file shares, the folder, never an upload, the line's other inputs kept, and the test's list from the 2027 file.
@@ -20,9 +20,9 @@ Task 7 carries checks 24 to 26 of the lab's 51.
 
 ## Why
 
-"Point to sources by link, not by a name that another file can also use" (Lesson 11.5). The spec named "the register export, dated that Thursday", and both registers are exported every morning, so a search by the name "AP Register" found the closed one, and its date passed. A link opens one file only. A ChatGPT scheduled task made in a project cannot reach uploaded files (Lesson 11.7), so the file stays in the Finance folder.
+"Point to sources by link, not by a name another file can also use" (Lesson 11.3). The spec named "the register export, dated that Thursday", and both registers are exported every morning, so a search by the name "AP Register" found the closed one, and its date passed. A link opens one file only. A ChatGPT scheduled task made in a project cannot reach uploaded files (Lesson 11.4), so the file stays in the Finance folder.
 
-Change one fixes this Thursday. Change two catches the next wrong file, whatever opens it: the note states what it read, and stops when that is out of date. These were "two changes, made one at a time", each tested on its own case (Lesson 11.5). A stop rule with no limit cannot decide anything, so the test says no line decides how old.
+Change one fixes this Thursday. Change two catches the next wrong file, whatever opens it: the note states what it read, and stops when that is out of date. These were two changes, "each change was made and tested alone", on its own case (Lesson 11.3). A stop rule with no limit cannot decide anything, so the test says no line decides how old.
 
 ## Never a deduction
 

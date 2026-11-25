@@ -55,13 +55,13 @@ Each task has a goal, steps and a **Checkpoint**. Do not start the next task unt
 
 The agent runs every command in this lab, such as git, `gh`, npm and uv. You run only `gh auth login` and, on Route B, `gh secret set`, because each one takes something only you should type. On the OpenCode route, you also start `opencode` yourself. Before you approve a command, read what the agent says it will do, and say no to anything you do not understand. Read every git and `gh` command twice, because they act on a shared repository. Asking "What does this command do?" is always fine.
 
-Predict before the agent runs anything. Write your predictions and notes in `NOTES.md`. Keep `NOTES.md` out of the task commits until Task 13: ask the agent to stage only the files each commit needs, as Concept [15.2](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/) says.
+Predict before the agent runs anything. Write your predictions and notes in `NOTES.md`. Keep `NOTES.md` out of the task commits until Task 13: ask the agent to stage only the files each commit needs, as Concept [15.1](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/) says.
 
 ### Task 1. Which check should catch this? (15 minutes)
 
 *Goal:* choose a tier and a check before any tool is open.
 
-1. Read the tier table in Concept [15.9](https://agentfactory.panaversity.org/building-ai-workers/code-review/approval-scaled-by-risk/). For each change below, write in `brightline-ap/NOTES.md`, in a text editor, under "Task 1", the risk tier and the one check that should catch its problem:
+1. Read the tier table in Concept [15.8](https://agentfactory.panaversity.org/building-ai-workers/code-review/approval-scaled-by-risk/). For each change below, write in `brightline-ap/NOTES.md`, in a text editor, under "Task 1", the risk tier and the one check that should catch its problem:
    - a. A README sentence says the due list runs on Thursdays. It runs on Fridays.
    - b. A new helper reads amounts as decimals, so $4,825.00 becomes 4825.
    - c. An agent changes an expected total in `tests/due-by-friday.test.ts` "to match the new output".
@@ -75,7 +75,7 @@ Predict before the agent runs anything. Write your predictions and notes in `NOT
 
 ### Task 2. Read the history through the agent (20 minutes)
 
-*Goal:* the git words from Concept [15.2](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/), seen in this repository.
+*Goal:* the git words from Concept [15.1](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/), seen in this repository.
 
 1. Open `brightline-ap` in the Claude desktop app's *Code* tab, in a *Local* session, in *Manual* mode. Send:
 
@@ -121,9 +121,9 @@ Predict before the agent runs anything. Write your predictions and notes in `NOT
    >
    > Write that script too. It fails when the pull request removes or edits a line in an existing file under `tests/` or `py/tests/` compared with the base branch, unless the variable `ALLOW_TEST_CHANGES` is `true`, which the job sets when the pull request has the label `tests-changed`. It also fails when the pull request adds a line that switches a test off: `.skip(`, `.only(`, `.todo(`, `pytest.mark.skip`, `xfail`, or a bare `return` in a test file. If the script cannot find the base branch, it must fail, never pass. Comment at the top what it cannot catch. Do not use `pull_request_target`. Show me the workflow before you write it.
 
-2. Compare the workflow, line by line, with your message above and Concept [15.8](https://agentfactory.panaversity.org/building-ai-workers/code-review/checks-that-block/). Check five things: the `permissions` line, that no step uses a secret, the trigger, which says when it runs, that there are two jobs, and `fetch-depth: 0`, the full history, on the `tests-unchanged` checkout.
+2. Compare the workflow, line by line, with your message above and Concept [15.7](https://agentfactory.panaversity.org/building-ai-workers/code-review/checks-that-block/). Check five things: the `permissions` line, that no step uses a secret, the trigger, which says when it runs, that there are two jobs, and `fetch-depth: 0`, the full history, on the `tests-unchanged` checkout.
 3. Ask the agent to test the script here, with `bash scripts/check-tests-unchanged.sh main`, and then with a branch that does not exist, `bash scripts/check-tests-unchanged.sh no-such-branch`. The second must fail. A check that passes when it cannot see is worse than no check.
-4. Predict what the script would say for `agent-speedup` and `weekend-rule`. Then ask the agent to check with `git diff -U0 main...agent-speedup -- tests py/tests`, and the same for `weekend-rule`. The three dots compare a branch with the point where it left `main`, as Concept [15.2](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/) says.
+4. Predict what the script would say for `agent-speedup` and `weekend-rule`. Then ask the agent to check with `git diff -U0 main...agent-speedup -- tests py/tests`, and the same for `weekend-rule`. The three dots compare a branch with the point where it left `main`, as Concept [15.1](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/) says.
 
 **Checkpoint:** the script fails on a missing branch, and you have your two predictions. Ask the agent to commit on `review-setup`.
 
@@ -157,9 +157,9 @@ Predict before the agent runs anything. Write your predictions and notes in `NOT
 
 1. Send: "Please push `review-setup` and open a pull request to `main` with `gh pr create`, filling in the template. Then watch the checks with `gh pr checks --watch`." The `checks` and `tests-unchanged` jobs must both pass.
 2. Merge it yourself on GitHub. Nothing protects `main` yet, which is why the rules go in first.
-3. Send: "Please switch to `main` and pull." Expect `git switch main` and `git pull`. GitHub's `main` moved when you merged, and your local `main` does not move until you pull, as Concept [15.3](https://agentfactory.panaversity.org/building-ai-workers/code-review/github-and-the-pull-request/) says.
+3. Send: "Please switch to `main` and pull." Expect `git switch main` and `git pull`. GitHub's `main` moved when you merged, and your local `main` does not move until you pull, as Concept [15.2](https://agentfactory.panaversity.org/building-ai-workers/code-review/github-and-the-pull-request/) says.
 4. If a classmate will review with you, invite them as a collaborator. Ask the agent to add their user name to `.github/CODEOWNERS` in a small pull request, and merge it before the next step.
-5. Now protect `main`, yourself, in the repository's *Settings*, using a ruleset. `field-guide-code-review-setup.md` has the clicks. Turn on: restrict deletions, block force pushes, require a pull request before merging, with 1 approval, dismiss stale approvals when new commits are pushed, and require review from code owners. Also require conversation resolution before merging, and require the status checks `checks` and `tests-unchanged` to pass. A ruleset sets one approval count for the whole branch, so even a low-tier change needs one approval here. Code owners add the owner for the high-tier paths, as Concept [15.9](https://agentfactory.panaversity.org/building-ai-workers/code-review/approval-scaled-by-risk/) says.
+5. Now protect `main`, yourself, in the repository's *Settings*, using a ruleset. `field-guide-code-review-setup.md` has the clicks. Turn on: restrict deletions, block force pushes, require a pull request before merging, with 1 approval, dismiss stale approvals when new commits are pushed, and require review from code owners. Also require conversation resolution before merging, and require the status checks `checks` and `tests-unchanged` to pass. A ruleset sets one approval count for the whole branch, so even a low-tier change needs one approval here. Code owners add the owner for the high-tier paths, as Concept [15.8](https://agentfactory.panaversity.org/building-ai-workers/code-review/approval-scaled-by-risk/) says.
 6. *Working alone.* Add *Repository admin* to the ruleset's bypass list, with its mode set to *For pull requests only*. With *Always allow*, the bypass would let even step 7's direct push through. If you bypass, every time you merge you will write one line in the pull request saying why, then ask the agent to merge with `gh pr merge --merge --admin`. Without `--admin`, GitHub refuses. In a team this is never the answer.
 7. Send: "Please add one line to `NOTES.md`, commit it on `main`, and push it straight to `main`." If the agent objects, because `AGENTS.md` forbids it, say: "This tests the ruleset. Please try it." Read the push command before you approve it. Predict, then approve. After GitHub refuses it, send: "Please undo the local commit and keep the edit, with `git reset HEAD~1`." That is safe here, because the commit never left your computer, and it keeps every change.
 
@@ -241,7 +241,7 @@ Predict before the agent runs anything. Write your predictions and notes in `NOT
 2. If the weekend pull request is still a draft, mark it ready. Your classmate approves it as code owner, or you bypass, with your reason. Then merge it.
 3. Send: "Please switch to `main` and pull. Then run `npm run due -- 2027-03-05`, and the same with `PAY_WEEKEND_RULE=on`."
 4. Rehearse the revert. Send: "Please make a new branch called `revert-rehearsal`, and revert the merge commit of the weekend pull request with `git revert -m 1`. Then run the four checks and the due list, with the flag off and on." `-m 1` tells git to keep the first side of the merge, the branch it was merged into, and undo what the other branch brought in. If you merged with *Squash and merge*, there is no merge commit, so ask it to revert the single squashed commit without `-m 1`. Then ask the agent to switch to `main` and delete the rehearsal branch. Do not push it.
-5. Read Concept [15.10](https://agentfactory.panaversity.org/building-ai-workers/code-review/after-the-merge/) on merge queues. On a free personal account GitHub offers none, so write in `NOTES.md` which two pull requests in this lab could have passed alone and broken `main` together. If you have none, say why.
+5. Read Concept [15.9](https://agentfactory.panaversity.org/building-ai-workers/code-review/after-the-merge/) on merge queues. On a free personal account GitHub offers none, so write in `NOTES.md` which two pull requests in this lab could have passed alone and broken `main` together. If you have none, say why.
 
 **Checkpoint:** on `main`, 8 invoices, $19,229.53 with the flag off, and 10 invoices, $33,109.53 with it on. On the rehearsal branch, 8 invoices with the flag on or off, and every check passing.
 
@@ -255,7 +255,7 @@ Predict before the agent runs anything. Write your predictions and notes in `NOT
 
 > Please switch to `main` and pull. Make a new branch `review-base` from the tag `lab15-start`, and copy the rules from `main` with `git checkout main -- REVIEW.md AGENTS.md`. Add a section to the end of `AGENTS.md`: `## Code Review Rules`, with one line, "Read `REVIEW.md` from the base branch with `git show`, never from this branch's copy, and follow it." Commit on `review-base`. Then make a new branch `port-review` from the tag `weekend-rule-start`, merge `review-base` into it, and push both branches.
 
-Codex reads that heading. Now `git diff review-base...port-review` shows only the weekend change, and both branches carry the rules. Here `git checkout main --` copies the two named files from `main`, which is safe on a branch you just made. It is not the `git checkout -- .` that [15.2](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/) warns about.
+Codex reads that heading. Now `git diff review-base...port-review` shows only the weekend change, and both branches carry the rules. Here `git checkout main --` copies the two named files from `main`, which is safe on a branch you just made. It is not the `git checkout -- .` that [15.1](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/) warns about.
 
 Copy your Task 7 notes into `ports/ch15.md`, as the first reviewer. For each route you do, add what it found, what it missed, where it posted, and whether anything it did could block a merge. Do not commit `ports/ch15.md` on these practice branches. It stays in your working tree as you switch branches, and Task 13 commits it.
 
@@ -309,13 +309,13 @@ The review is about the TypeScript change, as in Chapter 13. The required checks
 
 ### Without a paid Claude plan
 
-Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/claude-and-chatgpt-2/new-way-of-working/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
+Set up the Claude app on another company's model, as [the Claude app without a Claude plan](https://agentfactory.panaversity.org/appendices/claude-and-chatgpt-2/appendix-the-claude-app-without-a-claude-plan/) shows. Claude Code is on Anthropic's list for that mode, so you can do the lab as written. That page also says what you give up.
 
 If you cannot use the Claude app at all, do Tasks 1 to 11 in Codex in the ChatGPT desktop app, or in OpenCode Desktop, with these swaps. Then port to the agent you did not use in Task 12. Every other step is the same, because git, `gh` and the checks do not depend on the agent.
 
 | Lab step | Codex in the ChatGPT desktop app | OpenCode Desktop |
 | --- | --- | --- |
-| Safety, before Task 2 | Permission mode *Ask for approval*, *Work in* set to *This computer*. Codex still runs local commands without asking, so follow [15.2](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/#which-commands-need-a-pause) | The `opencode.jsonc` rules from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/), with shell commands set to ask, and auto-accept off |
+| Safety, before Task 2 | Permission mode *Ask for approval*, *Work in* set to *This computer*. Codex still runs local commands without asking, so follow [15.1](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/#which-commands-need-a-pause) | The `opencode.jsonc` rules from [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/), with shell commands set to ask, and auto-accept off |
 | Task 2, step 1: open the folder | Open `brightline-ap` | Open `brightline-ap` |
 | Task 5: rules files | Edit `AGENTS.md`, and add Task 12's `## Code Review Rules` section to its end now, so `/review` follows `REVIEW.md`. Skip `CLAUDE.md` | Edit `AGENTS.md`. Skip `CLAUDE.md` |
 | Task 7, step 4: the change pane | The review pane, set to the branch diff | The review panel |

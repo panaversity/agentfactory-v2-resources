@@ -6,7 +6,7 @@ The answers for Task 4 of Lab 9, in Chapter 9 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 4 carries checks 9 and 10 of the lab's 27.
+Task 4 carries checks 9 and 10 of the lab's 31.
 
 9. **The record's rules.** "The AP matters record's rules", under Case files, say:
    - A run reads the open matters, or the matters for the vendors on its list, before it lists the invoices.
@@ -18,7 +18,7 @@ Task 4 carries checks 9 and 10 of the lab's 27.
    - Missed: any part above missing or wrong, for example the record read after the list; the record as what is true now; run entries with another origin, or added by the run itself; the record deciding when a run happens; or a step missing from the spec.
 10. **November 12, a week whose answer you know.** The run's note, against what Brightline paid on Friday, November 13, 2026:
     - On the list: BO-23188, OVJ-311, BO-23190, NMP-3480, 5188 and 5155. Not NMP-3486 (due November 25) or GLE-88 (due November 27).
-    - Holds: none. "What decided it" says no invoice is held, with what it compared. OVJ-311 is not held for Ohio Valley's address request, M-029: the bank-detail concept holds payments only for a bank-detail change, and an address is not one.
+    - Holds: none. "What decided it" says no invoice is held, with what it compared. OVJ-311 is not held for Ohio Valley's address request, M-029: the bank-detail concept holds payments only for a bank-detail change, and a new mailing address is not one, even if a run calls it a change of "remittance details". The bank account the money goes to is unchanged.
     - Copies: none. "What decided it" says so, with what it compared.
     - The record entries your contract asks for, each "inferred", or the run's line that none are due this week.
     - "What decided it" gives a line of your contract for the list, the holds and the copies.
@@ -29,9 +29,9 @@ Task 4 carries checks 9 and 10 of the lab's 27.
 
 ## Why
 
-A run that starts with no memory learns what earlier runs found from records it reads first, never from a chat (Lesson 9.4). It opens the matters before it does anything. It treats the record as the latest known, not the truth now: current status comes from the system that holds it. It ends by proposing what it found, as "inferred", because a model's flag is not an observation, and a person checks the entries and adds them. And the record remembers that a callback is pending, but the runtime runs the clock.
+A run that starts with no memory learns what earlier runs found from records it reads first, never from a chat (Lesson 9.2). It opens the matters before it does anything. It treats the record as the latest known, not the truth now: current status comes from the system that holds it. It ends by proposing what it found, as "inferred", because a model's flag is not an observation, and a person checks the entries and adds them. And the record remembers that a callback is pending, but the runtime runs the clock.
 
-November 12 is a past week whose answer Maria knows: an example with a known answer (Lesson 9.3). The run reads Ohio Valley's open request and holds nothing for it, because a new mailing address is not a bank detail. A note that held OVJ-311 would have invented a rule.
+November 12 is a past week whose answer Maria knows: an example with a known answer (Lesson 9.2). The run reads Ohio Valley's open request and holds nothing for it, because a new mailing address is not a bank detail. A note that held OVJ-311 would have invented a rule.
 
 ## Never a deduction
 

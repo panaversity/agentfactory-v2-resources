@@ -4,7 +4,7 @@ Monday is the day Dave switches the AP Worker back on. Each case below is a requ
 
 ## Jordan's question
 
-8:00 a.m. Jordan Ellis asks the New Staff project in Claude: "A vendor emailed us new bank details. How do I handle it?" The New Staff project answers from its own files. The knowledge inventory in `brightline-files.md` lists what is where.
+8:00 a.m. In his own chat in the company workspace, Jordan Ellis asks the AI: "A vendor emailed us new bank details. How do I handle it?" The AI searches the shared drive through his Google Drive connector. The knowledge inventory in `brightline-files.md` lists what is where.
 
 ## The auditors' follow-up
 
@@ -12,10 +12,10 @@ Monday is the day Dave switches the AP Worker back on. Each case below is a requ
 
 ## The duplicate list
 
-9:20 to 10:05 a.m. In the shared AP project, Maria runs the duplicate check on her cut copy of the vendor master. The worker returns a list of candidate pairs. Nobody sends it anywhere. Then:
+9:20 to 10:05 a.m. In her own chat in the company workspace, Maria runs the duplicate check on her cut copy of the vendor master. The worker returns a list of candidate pairs. Nobody sends it anywhere. Then:
 
 - 9:35 a.m. Maria asks the worker to "save it where Dave can see it." It saves the file through Maria's connector to the shared drive, into the Year-end folder, which the whole finance team can open.
-- 9:40 a.m. She adds the list to the shared AP project's files, "so the worker has it." Jordan is a member of that project.
+- 9:40 a.m. She saves a copy in the AP shared folder, with the AP Worker's other results. Jordan can open that folder.
 - 10:05 a.m. Dave is away from his desk and cannot open the shared drive on his phone. So Maria sets the file's link to "anyone with the link" and texts it to him.
 
 ## The Spanish FAQ

@@ -1,20 +1,18 @@
-# Lab 3 answer key: Task 8. Draft 2
+# Lab 3 answer key: Task 8. Limits on a schedule
 
 The answers for Task 8 of Lab 3, in Chapter 3 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When Draft 2 is in your document, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When the scheduled-task limits are written in your document, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your document's words. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 8 carries checks 18 and 19 of the lab's 22.
+Task 8 carries checks 20 and 21 of the lab's 22.
 
-18. **Each lesson lives where every future run reads it.** Recommend only for reconciliations goes in the Role Contract: the register's execute line narrows to building the weekly register, marked CHANGED, or a NEW line says reconciliations are recommend only. The rules every reconciliation needs go in "Standing instructions: statement reconciliation", marked NEW: the date in the reply, timing or real, the evidence, the success test, the stop rule and the never list. This month's statement date and the October 5 deadline stay in the brief. This reconciliation becomes a test case under Evaluations. It names the case, the Midwest September statement, and its known answer stays with Dave, not in the contract. Where the register's authority narrows, the Tools line follows: the register is read-only for a reconciliation. The stop rule and the never list may sit in the standing instructions or in the contract's Escalation and Authority, because every run reads both. Missed: a lesson every reconciliation needs left only in this month's brief, a month's date written into the standing instructions, or no test case under Evaluations.
-19. **Marks, and a review time.** Every Draft 1 line is written out, each edit marked CHANGED or NEW, and Dave's review of the contract has a time, such as monthly. Missed: an unmarked edit, or no review time.
+20. **Each never has its strongest limit.** Changing the register: impossible, through read-only access to the register on either product. Recording a credit: impossible, by the same read-only access. Contacting the vendor: impossible, if the task has no way to send, or a person decides, through Claude's Manually approve or ChatGPT's approval pause on sending. Missed: a never held only by a written line when access could have made it impossible.
+21. **Review times, including silence.** Dave reads the results at a set time, such as the morning after the run, and checks the Scheduled page for a paused or missing run. Missed: no time, or no check for a run that never happened. A limit you cannot hold yet is written under Open questions.
 
 ## Why
 
-A worker that may only observe the register in a task should not hold write access in it. Read-only access is the strongest limit (3.7), so the Tools line follows the authority. A rule told in the chat fixes this run. A rule written in the specification fixes every run after it. For a standing worker, the first 10 percent is mostly written once, in its Role Contract and standing instructions, so the next request can be one line.
+The rules that need judgment, such as stopping on a difference it cannot explain and recommending rather than deciding, stay written in the instructions and checked in the final 10 percent. Their measurable part, such as the sum, can be checked automatically.
 
-## Take it to work
-
-Put each lesson where every future run reads it, not in this month's request.
+An approval only makes a person decide. Access the task was never given makes the wrong action impossible. And a run that never started raises no flag, so an empty queue can look exactly like a quiet night.

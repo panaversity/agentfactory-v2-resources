@@ -1,4 +1,4 @@
-"""Offline tests for Lab 21: no model, no network, no key. They check the rules and the options you read."""
+"""Offline tests for Lab 22: no model, no network, no key. They check the rules and the options you read."""
 
 import os
 from pathlib import Path
@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 @pytest.fixture(autouse=True)
 def run_from_the_repository_root(monkeypatch):
-    # Lab 21 reads its prompt and config from the repository root. Lab 20 runs its tests from py/, so move there first
+    # Lab 22 reads its prompt and config from the repository root. Lab 21 runs its tests from py/, so move there first
     monkeypatch.chdir(ROOT)
 
 
@@ -70,7 +70,7 @@ def test_second_sdk_stores_nothing_and_has_its_guard_and_approval():
 
 
 def test_isolate_environment_trims_this_process_in_python(monkeypatch):
-    # In Python the SDK adds env= to this process's own environment, so this is the control that matters (21.9)
+    # In Python the SDK adds env= to this process's own environment, so this is the control that matters (22.9)
     monkeypatch.setenv("SOMETHING_PRIVATE", "x")
     monkeypatch.setenv("HTTPS_PROXY", "http://proxy.example:8080")
     saved = dict(os.environ)

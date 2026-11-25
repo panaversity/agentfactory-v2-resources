@@ -35,7 +35,7 @@ Ask its five questions, one at a time:
 2. "What evidence comes back for each item?"
 3. "What counts as success?"
 4. "What makes the worker stop and ask?"
-5. "What must never happen automatically?"
+5. "What must never happen automatically?" (the Authority Envelope's question)
 
 Then ask: "The Format: the shape of the answer you will review, and what comes first?" Write the Review contract and Format in the Doc. Has a test: "Plan: my brief". After it, remind the learner to ask their Task 1 what-if questions again.
 
@@ -43,26 +43,21 @@ Then ask: "The Format: the shape of the answer you will review, and what comes f
 
 First show the four reasons to step in, from moments.md. Then show the four moments, one at a time, and ask: "Step in, or let it work? If you step in, which reason applies, and what do you do?" Write the four answers under a heading "During the run" in the Doc. Has a test: "Run: my brief".
 
-## Task 6. Flags and the approval queue
+## Task 6. The approval queue, and which part broke
 
 First show policy sections 7.3 to 7.7 from midwest-files.md, one line each.
 
 1. Show the run's flags and open questions first, if any, and ask whether each needs a decision now.
 2. Then each reconciling item in the run's reply, one at a time: the run's line for it, then under it the statement line, register row or invoice line it cites, quoted from midwest-files.md. Ask: "Timing or real? If real, who decides it, and under which policy section?"
+3. Show the items and their amounts. Ask: "Do they add up to the whole difference, $4,000.00? Show the sum."
+4. Then October 1's three runs, from moments.md, one at a time. Show the run, then ask: "Which part broke: the first 10, the middle 80 or the final 10?"
+5. Ask for one sentence for Dave on what his 9 a.m. line skipped.
 
-Write "The approval queue" in the Doc: each real item with its evidence and policy section, as a recommendation Dave approves, nothing done yet. No test.
+Write "The approval queue" in the Doc: each real item with its evidence and policy section, as a recommendation Dave approves, nothing done yet. Then write the sum, the three answers and the sentence under "Which part broke". No test.
 
-## Task 7. The one number, and which part broke
+## Task 7. Draft 2
 
-1. Show the items and their amounts. Ask: "Do they add up to the whole difference, $4,000.00? Show the sum."
-2. Then October 1's three runs, from moments.md, one at a time. Show the run, then ask the three questions in order, a word or a line each: "Did the brief, the contract or the policy say what the worker needed?", "Did the worker act against them?", "Was the problem visible in the evidence?" Then ask, for that run: "Which part broke: the first 10, the middle 80 or the final 10?"
-3. Ask for one sentence for Dave on what his 9 a.m. line skipped.
-
-Write it under "Which part broke" in the Doc. No test.
-
-## Task 8. Draft 2
-
-1. List the lessons from this chat, one line each. Include, each as its own lesson: the date rule (how a run knows today's date, and that its reply states it at the top); what each kind of file is the source of truth for, and as of which date; the register's access during a reconciliation (the Tools line); the authority for a reconciliation (recommend only); each of the review contract's five answers (what is checked, the evidence, the success test, the stop rule, the never list); timing or real; the Format; and this reconciliation as a test case. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?"
+1. List the lessons from this chat, one line each, six in all: the date rule (how a run knows today's date, and that its reply states it at the top); what each kind of file is the source of truth for, and as of which date; the register's access during a reconciliation (the Tools line); the authority for a reconciliation (recommend only); the review contract, as one lesson (its five answers: what is checked, the evidence, the success test, the stop rule and the never list; with timing or real, and the Format); and this reconciliation as a test case. Then, one lesson at a time, ask: "Where does it live from now on: this month's brief only, the standing instructions for every reconciliation, the knowledge, or the Role Contract? And why, in a line?" For the review contract, if the learner wants its parts in different places, ask for each part's place.
 
 The places a lesson can go: this month's brief, the standing instructions, the knowledge (as a NEW line under Knowledge sources), or a field of the Role Contract, such as Authority, Tools, Escalation or Evaluations. A rule for the people, not the worker, such as when Dave reads the flags, goes under Owner. A test case goes under Evaluations: it names the case, and its known answer stays with Dave, not in the contract. A standing instruction holds no date that belongs to one month.
 
@@ -73,10 +68,10 @@ The places a lesson can go: this month's brief, the standing instructions, the k
 
 No test.
 
-## Task 9. Limits on a schedule
+## Task 8. Limits on a schedule
 
-1. Show Draft 2's "never" and escalation lines, numbered. Ask: "Which could a scheduled reconciliation break?"
-2. For each one named, show what moments.md says each product offers, and ask, a line each: "On Claude? On ChatGPT? And its strength: impossible, a person decides, or written and reviewed?"
+1. Show Draft 2's three "never" lines, in the learner's words: changing the register, recording a credit, and contacting the vendor. Say that a scheduled reconciliation could break each one.
+2. For each, show what moments.md says each product offers, and ask, a line each: "On Claude? On ChatGPT? And its strength: impossible, a person decides, or written and reviewed?"
 3. Ask: "When does Dave read the results, and how does he check for a paused or missing run?"
 4. Ask: "Is there any limit we cannot hold yet?" Write it under Open questions.
 

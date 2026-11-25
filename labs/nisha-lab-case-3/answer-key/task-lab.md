@@ -6,14 +6,14 @@ This file is kept out of the learner download. Open it only after you have finis
 
 | Item | Expected answer |
 |---|---|
-| Channel | `#lakeshore-work`, private |
+| Channel | `#northgate-work`, private |
 | People | Nisha (Owner), Sana, Hamza |
 | The worker | Claude, acting under its own service accounts |
-| Credential 1 | Key to Lakeshore's bank export. Reads only. Read-only, saved once and never shown again. |
+| Credential 1 | Key to Northgate's bank export. Reads only. Read-only, saved once and never shown again. |
 | Credential 2 | Shared drive folder. Reads and saves. One folder only. |
 | Credential 3 | The `reports@` mailbox. **Sends.** No limit on who it can send to. This is the starred one. |
 | Routines | Wednesday 4 p.m., draft, does not send. Friday 4 p.m., file posted and saved, does not send. |
-| The rule | "Send the Friday file to Lakeshore only after Nisha or Sana has approved it." A **sentence**. |
+| The rule | "Send the Friday file to Northgate only after Nisha or Sana has approved it." A **sentence**. |
 | Check yourself | All three members can ask the worker to use the mailbox. |
 
 One point: half for people, credentials and routines placed correctly, half for starring the mailbox and marking the rule as a sentence.
@@ -25,7 +25,7 @@ One point for the four core requests, each right and with a rule that fits. One 
 | # | Can it happen? | Whose name? | Rule | Notes |
 |---|---|---|---|---|
 | 1 | **Yes.** | The worker's account, `reports@` | 2, with 1 | The mailbox applies to the channel, and Hamza is a member. The written rule is not a setting. Accept "yes, unless the worker itself refuses", but the student must say that nothing enforces a refusal. |
-| 2 | **No.** | Nobody's. Nothing happens. | 3 | The bank key applies only to `#lakeshore-work`. In `#firm-general` the session runs as if the credential does not exist. Rule 7 also matters: the work channel is private, so Bilal cannot join it by himself. |
+| 2 | **No.** | Nobody's. Nothing happens. | 3 | The bank key applies only to `#northgate-work`. In `#firm-general` the session runs as if the credential does not exist. Rule 7 also matters: the work channel is private, so Bilal cannot join it by himself. |
 | 3 | **Yes.** | The worker's account, `reports@` | 5, with 2 | Anyone in the channel can manage its routines, and a routine has the channel's access. The file would then leave every Friday with no approval at all. |
 | 4 | **No.** | Nobody's | 3 and 7 | There is no mailbox in the work channel. From a private channel, Claude does not post anywhere else, and nothing asked elsewhere makes it post into a private channel. An approver has to get the file from the drive, or read it in the work channel. |
 | 5, stretch | **Yes.** | Sana's | 6 | A one-to-one message runs on Sana's own account with her own email connector. The channel's credentials are not used. The email looks like Sana wrote it. |
@@ -85,7 +85,7 @@ Give the second point when the student records these and says how they know the 
 
 **The last task.** Any sensible added line earns credit, for example *"If the file is NOT READY, refuse to send it and name the person who must decide."* The answer to the question is no. A line in a skill is instructions the worker reads. It can make a send less likely. It cannot remove the mailbox from the channel or make anyone an approver.
 
-A good reviewer answer in Part 4a names both bank lines, says it cannot tell from the files whether there was a second invoice, and suggests asking Lakeshore. One point for a complete Part 4a log for the Claude review, with the lines it used and the minutes it took. The ChatGPT review is a stretch step. It earns no extra point, and its absence costs none. Most checks take two to five minutes, which is the point of the last question.
+A good reviewer answer in Part 4a names both bank lines, says it cannot tell from the files whether there was a second invoice, and suggests asking Northgate. One point for a complete Part 4a log for the Claude review, with the lines it used and the minutes it took. The ChatGPT review is a stretch step. It earns no extra point, and its absence costs none. Most checks take two to five minutes, which is the point of the last question.
 
 ## Part 5. The sentence test
 
@@ -103,8 +103,8 @@ Two points. A model design:
 
 | Channel | Kind | People | Credentials | Routines |
 |---|---|---|---|---|
-| `#lakeshore-work` | Private | Nisha, Sana, Hamza | Bank key (read-only). Drive folder. | Wednesday draft. Friday file, posted and saved. |
-| `#lakeshore-release` | Private | Nisha, Sana | Drive folder. `reports@` mailbox. | None |
+| `#northgate-work` | Private | Nisha, Sana, Hamza | Bank key (read-only). Drive folder. | Wednesday draft. Friday file, posted and saved. |
+| `#northgate-release` | Private | Nisha, Sana | Drive folder. `reports@` mailbox. | None |
 
 - Test 1 passes: Hamza and the worker still have the bank key and the drive (rule 2).
 - Test 2 passes: no mailbox applies to the work channel (rule 3), there is no way to post into the release channel from outside (rule 7), and Hamza is not a member of it.
@@ -121,7 +121,7 @@ Take off a point if the design relies on a rule such as "Hamza must not ask", or
 
 One point when the Friday message names the file, the period, the figure and the open item. In the lab's files the $4,800 duplicate is still only suspected, so the message must name it. A model:
 
-> Approved to send to Dana Ruiz: Lakeshore reconciliation through Thursday, May 13, the corrected file, reconciled cash $207,600, with one suspected duplicate of $4,800 not yet confirmed. This approval is for this file only.
+> Approved to send to Dana Ruiz: Northgate reconciliation through Thursday, May 13, the corrected file, reconciled cash $207,600, with one suspected duplicate of $4,800 not yet confirmed. This approval is for this file only.
 
 Do not give the point for "no open items". That approval is honest only after the supplier's statement confirms the duplicate, and the lab's files do not show that.
 

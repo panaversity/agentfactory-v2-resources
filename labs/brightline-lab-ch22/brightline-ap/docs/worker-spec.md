@@ -1,4 +1,4 @@
-# The AP worker: a portable specification (Lab 21)
+# The AP worker: a portable specification (Lab 22)
 
 This is what the worker must do, on any runtime. It names no SDK and no provider. Each build in this lab (the first SDK, the second SDK, and the port to an open model) implements it, and each row says how the reader checks it.
 
@@ -14,6 +14,6 @@ This is what the worker must do, on any runtime. It names no SDK and no provider
 | 8 | Keep nothing on the provider's side, and write no conversation to disk | Task 11 |
 | 9 | Send no traces off the builder's computer unless the builder turns tracing on | Task 15's review, which checks tracing is off by default, and the optional Task 12 |
 | 10 | Inherit nothing from the computer it runs on: no settings files, no other MCP servers, no environment variables beyond the short list, and a request to send no nonessential traffic | Tasks 5 and 15 |
-| 11 | Run as the builder, for testing only. A product gives each person their own token (Chapter 22) | `.secrets/connector.env` |
+| 11 | Run as the builder, for testing only. A product gives each person their own token (Chapter 23) | `.secrets/connector.env` |
 
 When a runtime cannot meet a row, write in `docs/sdk-map.md` which row, why, and what your own code does instead.

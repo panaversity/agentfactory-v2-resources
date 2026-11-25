@@ -6,9 +6,9 @@ The answers for Task 8 of Lab 10, in Chapter 10 of *The AI Agent Factory*, Secon
 
 ## The checks
 
-Task 8 carries checks 18 to 20 of the lab's 30.
+Task 8 carries checks 21 to 23 of the lab's 36.
 
-18. **The sign-off matrix.** For each output: who signs or approves, who sends it and from whose account, and whether the worker may send it.
+21. **The sign-off matrix.** For each output: who signs or approves, who sends it and from whose account, and whether the worker may send it.
     - O1, the pre-run note: no signature; Dave approves the run itself, from his own login; the worker saves it to the notes folder and emails nothing. "Yes, to the notes folder only" passes for the worker's answer, as "no" does.
     - O2, the auditors' schedule: Dave signs; Dave sends it, from his own email; the worker may not send it.
     - O3, a reply on whether an invoice arrived: no signature; Maria checks it and sends it from the AP inbox; the worker may not send it.
@@ -19,10 +19,12 @@ Task 8 carries checks 18 to 20 of the lab's 30.
     - O8, the early-pay list: Dave approves, from his own login; the worker saves it for him and sends nothing. "Yes, saved for Dave only" passes, as "no" does.
     - Passed: every row as above.
     - Missed: any output the worker may send; O2 or O5 signed or sent by anyone but Dave; or O2 sent from the shared AP inbox.
-19. **The schedule.** Dave checks every balance against the register, currency included, before it leaves Brightline. And Dave decides how the balance in Canadian dollars is shown: on its own line in CAD, or converted at a rate the schedule states. Finding the line is not graded: the AI showed it.
-    - Passed: both.
-    - Missed: a check of the total only; or the worker, or Maria, deciding how the Canadian balance is shown.
-20. **Draft 7's lines, and the test.** Under "Role Contract, Draft 7", in your words:
+22. **The schedule.** Dave checks every balance against the register, currency included, before it leaves Brightline. And Dave decides how the balance in Canadian dollars is shown: on its own line in CAD, or converted at a rate the schedule states. Finding the line is not graded: the AI showed it.
+    - **Telling the auditors.** The schedule and its signature block did not say that an AI Worker drafted it. It should have, in most cases: no rule in the files decides it, and knowing would change how the auditors read a schedule they rely on (10.1). An answer that the audit firm's own rule decides, and that Brightline must ask, passes too.
+    - **Which part of Diligence.** Deployment diligence: nobody stood behind the schedule, because Dave, whose name it carried, never read it. Naming transparency too passes, if deployment is there.
+    - Passed: both, the schedule's silence with a reason it should have said, and deployment diligence.
+    - Missed: a check of the total only; the worker, or Maria, deciding how the Canadian balance is shown; an answer that the schedule told the auditors; "it need not have" with no rule that says so; or no deployment diligence.
+23. **Draft 7's lines, and the test.** Under "Role Contract, Draft 7", in your words:
     - an output on the sign-off list goes to its signer as a draft, with no signature block, and the signer approves it and sends it
     - the worker never signs, and never puts a person's signature block on a draft
     - a request from the auditors, a tax authority or a court goes to Dave
@@ -33,7 +35,7 @@ Task 8 carries checks 18 to 20 of the lab's 30.
 
 ## Why
 
-A signature says a named person read this, checked it and takes responsibility for it, and responsibility does not move to a tool (10.7). The auditors relied on Dave's name on a schedule he never saw. So each output that a person must sign gets a gate: who checks, what they check, and when. For the schedule, Dave checks every balance against the register, currency included, before it leaves, and sends it himself. The schedule added Canadian dollars to US dollars, a check against the register catches that, and how to show it is the signer's call. A position in a dispute is signed by the person who reads it and sends it herself, as Maria does with the replies she signs. And a rule the worker can break is not a control: Draft 7 takes the signature block away from the worker altogether.
+A signature says a named person read this, checked it and takes responsibility for it, and responsibility does not move to a tool (10.4). The auditors relied on Dave's name on a schedule he never saw. So each output that a person must sign gets a gate: who checks, what they check, and when. For the schedule, Dave checks every balance against the register, currency included, before it leaves, and sends it himself. The schedule added Canadian dollars to US dollars, a check against the register catches that, and how to show it is the signer's call. A position in a dispute is signed by the person who reads it and sends it herself, as Maria does with the replies she signs. A routine reply, such as whether an invoice arrived, states no balance and no position, so nobody signs it: Maria checks it and sends it from the AP inbox. And a rule the worker can break is not a control: Draft 7 takes the signature block away from the worker altogether.
 
 ## Never a deduction
 

@@ -2,18 +2,20 @@
 
 Chapter 2 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 2: the first Role Contract](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/lab/), so you can do the lab without the book.
 
-In this lab you write the first Role Contract for Brightline's AP Worker, one group of fields at a time. You decide every line, and the AI writes it into a document beside your chat. Then you test the contract against five messages that arrived this week, and fix the line that failed. Each task is checked against its own answer key the moment it is done. It takes about two hours, less once you know the loop, and on a free plan it can spread over days, because the document keeps your contract. You need a Claude or ChatGPT account.
+In this lab you write the first Role Contract for Brightline's AP Worker, one group of fields at a time. You decide every line, and the AI writes it into a document beside your chat. Then you test the contract against five messages that arrived this week, and fix the line that failed. Each task is checked against its own answer key the moment it is done. On a free plan it can spread over days, because the document keeps your contract. You need a Claude or ChatGPT account.
 
 **What you will learn:**
 
 - How to define a role on one page: the sixteen elements of an AI Worker, and which kind of worker it is.
+- How to pick what the work needs from what an AI app offers, say why the usual choice falls short, and combine several choices when one job needs them.
 - How to separate what a worker could do from what it is authorized to do, with one verb for each action.
 - How to test a contract against a real message, read which line decided it, and fix that line, never the test.
 - How to add a channel without widening what the worker may do.
+- How to choose the model and effort for each step, keep the cheaper one when it passes, and defend the choice.
 - How to write what the worker runs on, with the date, and what changes when it moves to the other AI vendor.
 - How to keep a Role Contract as a document the company owns and can export, not a setting inside an AI vendor's app.
 
-## Before you start (5 minutes)
+## Before you start
 
 Download [`brightline-lab-ch02.zip`](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02.zip), and unzip it. You get one folder with four things:
 
@@ -30,8 +32,8 @@ Short of time? Do Tasks 1 to 4 today, and Tasks 5 and 6 tomorrow: the document k
 
 - You work in accounts payable (AP), the team that pays the bills, at Brightline Wholesale Supply in Columbus, Ohio.
 - Today is Wednesday, September 30, 2026.
-- Dave Kowalski, the controller, set up an "AP assistant" under his own login. It has a shared project with a copy of the AP policy from March. It reads the AP inbox, and a weekly task builds the invoice register.
-- On Monday, September 28, 2026, it read an email asking Brightline to send Friday's payment to a vendor's new bank account. It drafted a reply confirming the change, and updated the register. Maria, the office manager, stopped the reply. The email was fake.
+- Dave Kowalski, the controller, asked Maria Lopez, the office manager, to set up an "AP assistant." She set it up under her own login, in a project of her own that holds a copy of the AP policy from March. It reads the AP inbox, and a weekly task builds the invoice register.
+- On Monday, September 28, 2026, it read an email asking Brightline to send Friday's payment to a vendor's new bank account. It drafted a reply confirming the change, and updated the register. Maria stopped the reply. The email was fake.
 - Dave asked four questions, and nobody could answer them. Who owns it? What may it do on its own? When must it stop and ask a person? How do we know it does a good job?
 - Dave wants the answers on one page, a Role Contract, before it touches real work again.
 
@@ -44,7 +46,7 @@ Short of time? Do Tasks 1 to 4 today, and Tasks 5 and 6 tomorrow: the document k
 
 **What went wrong in September.** The problems a good AP Worker would prevent:
 
-- Midwest Packaging's invoice 4471 came in twice, as 4471 and 4471-R, $4,850.00 each. The copy was caught just before it was paid.
+- Midwest Packaging's $4,850.00 invoice came in twice, two months running. In August, a copy was paid, and Midwest refunded it. In September it came in again as 4471 and 4471-R, and 4471-R was caught before it was paid.
 - Franklin County Power & Light's August bill was paid two days late, with a $35.00 late fee.
 - On two Mondays the register was ready at 2 p.m., after Dave's 10 a.m. review.
 - Central Ohio Office Supply asked about the same invoice three times before anyone answered.
@@ -83,7 +85,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
              key's checks, and keep no running total across tasks.
 ```
 
-## Task 1. Who it is (20 minutes)
+## Task 1. Who it is
 
 **Dave asks:** "Write down what this thing is, on one page, so we all mean the same thing. Start with who it is."
 
@@ -200,7 +202,7 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you learned:** a worker acts as its own account, holds an ongoing role or a single job, and is owned by a named person, not a team.
 
-## Task 2. What it owes (15 minutes)
+## Task 2. What it owes
 
 **Dave asks:** "What does it do for us, and how will we know it does a good job? And would the page, as it stands, stop Monday's email?"
 
@@ -260,9 +262,9 @@ Constraints: Grade only. Do not rewrite the document, and do not
 
 **What you learned:** a worker's duties each name where their result is kept, its KPIs count something real, and a page with no rules decides nothing.
 
-## Task 3. What it works with (15 minutes)
+## Task 3. What it works with
 
-**Dave asks:** "What does it work from? Not that March copy. And how will it read the inbox, and add up totals without mistakes?"
+**Dave asks:** "What does it work from? Not that March copy. And how will it read the inbox, add up totals without mistakes, and check a vendor we have never paid?"
 
 **This task fills** the third group, What it works with: Knowledge sources, Memory, Procedures (skills) and Tools.
 
@@ -271,24 +273,26 @@ Constraints: Grade only. Do not rewrite the document, and do not
 1. Ask for the next group, What it works with. For Knowledge sources, name the policy the worker answers from. "The job" says the assistant has a copy from March: is that the right one? If nothing tells you the version, say "Dave decides", and the AI adds the question at the end.
 2. For Memory, say what it may remember, such as which vendors send scanned PDFs, and what it must not, such as anything that changes where money goes. Memory is experience, not the official record ([2.1](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/anatomy-of-an-ai-worker/#four-pairs-that-are-easy-to-confuse)).
 3. For Procedures, name the steps it follows: the inventory's checks are a start. Should the invoice check be saved as a skill, so it is done the same way every time? If so, say so here.
-4. For Tools, pick the systems it needs from "Where things are kept". Then answer Dave's two needs, from [2.4's table](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/#tell-close-choices-apart):
-   - How will it read new emails in the AP inbox? Not by someone pasting them in: a connector reads the app itself.
-   - How will it add up totals without mistakes? Not by the model's own arithmetic: code execution adds them up.
+4. For Tools, pick the systems it needs from "Where things are kept". Then answer Dave's three needs. For each one, pick the choice from [2.4's table](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/#tell-close-choices-apart) that fits, and say why the one people often pick instead falls short:
+   - How will it read new emails in the AP inbox?
+   - How will it add up totals without mistakes?
+   - When an invoice comes from a vendor Brightline has never paid, how will it find out who the vendor is, with sources Dave can check?
 
-   Both go under Tools. Name what each one does, never an AI vendor or a model: those belong in Runtime needs, in Task 5.
-5. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Fix the line, then "I updated the contract. Read it again, and check it again against the key."
-6. Now Dave answers. Compare his answer with your Knowledge sources line, then paste it, and read the AI's before and after before you say yes:
+   All three go under Tools, each with its reason. Say what each one reaches or works out, not what it may do: that is Authority, in Task 4. Never name an AI vendor or a model here: those belong in Runtime needs, in Task 5.
+5. Dave adds one more job, in one sentence: "And the duplicate check, the one that should have caught 4471-R: every week, each new invoice against every payment we have ever made, with the total we would have paid twice." This time no list splits the job for you. Decide which choices from [2.4's table](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/#tell-close-choices-apart) the job needs together, what part of it each one does, and why any one of them alone falls short. Then paste Dave's sentence in your lab chat, with your choices and reasons, and ask the AI to write them in. What it reaches or works out goes under Tools, and steps it follows go under Procedures.
+6. **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-3.md). Attach it, and send [the check prompt](#the-check-prompt). Missed a check? Fix the line, then "I updated the contract. Read it again, and check it again against the key."
+7. Now Dave answers. Compare his answer with your Knowledge sources line, then paste it, and read the AI's before and after before you say yes:
 
    ```text
    Dave's answer. Which policy? The AP policy, version 3, approved
    1 September 2026. Not the March copy.
    ```
 
-**Checkpoint.** Checks 6 to 8 passed, and the policy is named with its version.
+**Checkpoint.** Checks 6 to 9 passed, and the policy is named with its version.
 
-**What you learned:** knowledge is the official record, named by its version. Memory is experience, with a line it must not cross. Tools are what the work needs to reach and to count, such as a connector and code execution, named by what they do, never by an AI vendor.
+**What you learned:** knowledge is the official record, named by its version. Memory is experience, with a line it must not cross. Tools are what the work needs to reach, to count and to check, such as a connector, code execution and research. Each is chosen over the one that falls short, and named by what it does, never by an AI vendor. One job often needs several of them together, each doing its own part.
 
-## Task 4. What bounds it (30 minutes)
+## Task 4. What bounds it
 
 **Dave asks:** "What may it do on its own, and when must it stop and ask me? Would it have stopped Monday's email?"
 
@@ -399,17 +403,17 @@ A forbidden action says "never", and a "never" line may also say where the reque
    ```text
    Test: Karen's question
    ```
-5. The two emails that change payment details must each go to Dave. Karen's question must get a drafted reply, not an escalation. A draft that escalates only if a check finds a problem is fine. If a verdict is wrong, or no line decides it, name the line to add or change, never the test, and test again. A pass means your wording is clear enough for an AI to follow. It does not make a real worker safe: Chapters 4 and 7 build the enforcement.
-6. If Karen's question went to Dave, find out why, and keep Dave's words as they are. Either a line of yours is wider than his, or the worker has no way to check one of his cases, such as whether a vendor was paid before: "Where things are kept" says which system holds past payments, so add it under Tools. Then make sure a status question has an Authority line of its own.
+5. The two emails that change payment details must each go to Dave. Karen's question must get a drafted reply, not an escalation. A draft that escalates only if a check finds a problem is fine. If a verdict is wrong, or no line decides it, name the line to add or change, never the test, and test again. A pass means your wording is clear enough for an AI to follow. It does not make a real worker safe: Chapters [4](https://agentfactory.panaversity.org/ai-worker-paradigm/the-architecture-in-one-picture/overview/) and [7](https://agentfactory.panaversity.org/managing-ai-workers/the-authority-envelope/blast-radius/) build the enforcement.
+6. If Karen's question went to Dave, find out why, and keep Dave's words as they are. Either a line of yours is wider than his, or the worker has no way to check one of his cases, such as whether a vendor was paid before: "Where things are kept" says which system holds past payments, so add it under Tools if it is not there yet. Then make sure a status question has an Authority line of its own.
 7. **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-4.md). Attach it, and send [the check prompt](#the-check-prompt). It reads your tests' verdicts in the chat.
 
-**Checkpoint.** Checks 9 to 13 passed, and each test's verdict quotes a line of yours.
+**Checkpoint.** Checks 10 to 14 passed, and each test's verdict quotes a line of yours.
 
 **What you learned:** what a worker could do is not what it may do. Each action gets one verb, a "never" says where the request goes, and a rule is exactly as wide as its words.
 
-## Task 5. How it runs and is reached (20 minutes)
+## Task 5. How it runs and is reached
 
-**Dave asks:** "I want people to reach it in the team chat too. And what does it run on?"
+**Dave asks:** "I want people to reach it in the team chat too. And what does it run on? I will not pay for more than the work needs."
 
 **This task fills** the last group, How it runs and is reached: Channels, Triggers and Runtime needs.
 
@@ -451,25 +455,27 @@ A forbidden action says "never", and a "never" line may also say where the reque
 3. Now, what runs it: Runtime needs. Send this, and answer each question as the AI asks it:
 
    ```text
-   Now Runtime needs. Ask me its four parts one at a time, and wait
-   for each answer: how the worker keeps going between runs, the
-   project it runs in, the app and setting with today's date, and
-   the AI vendor it could move to.
+   Now Runtime needs. Ask me its five parts one at a time, and wait
+   for each answer: how the worker keeps going between runs, whether
+   it needs a project, the app, model and effort with today's date,
+   the setting for sorting each new email, and the AI vendor it could
+   move to. Write each part with my reason.
    ```
 
    Where to find each answer:
    - How it keeps going between runs, from [2.4's two ways](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/#choose-the-surface-by-the-rung) for a standing role: an always-on agent that keeps its own state, or scheduled tasks that start fresh each time and rebuild from the records. Your Kind, from Task 1, and your Triggers, from step 1, decide which fits. Say why.
-   - The project. "The job" says the assistant already has a shared project with the AP policy. Will the worker run in it? If so, name the project here. The policy itself stays under Knowledge sources.
-   - The app, setting and date. Read the app and the model your app shows off your screen, or write "the app's default". Give the real date, today, not the story's: a setting is only as good as the day it was chosen. The header keeps the story's date.
-   - The other AI vendor. One line, marked "predicted, not run". Choose fastest and cheapest, balanced, or most capable by weighing the job: a mistake here costs money and trust, and the volume is 15 to 25 invoices a month and about 10 vendor questions a week. Only this line changes on another vendor, as [2.5](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/#the-invariant) explains.
-4. Read your whole contract once. What is set up around the worker now sits in its own fields: the connector and code execution under Tools, the saved skill under Procedures, the policy under Knowledge sources, the scheduled tasks and the project under Runtime needs, and Monday morning under Triggers. Only Runtime needs names an AI vendor, so moving to another vendor changes one line.
+   - The project. Does the work need one? Decide from [2.4's table](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/#tell-close-choices-apart), and say why, before you read on to step 4.
+   - The app, the model and the effort, with the date. Name your app, then the model and the effort it shows on your screen, or its default model at its default effort. Say why in a few words: [2.4's first rule](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/#choose-the-model-by-trading-off-capability-speed-and-cost) starts from the default. Give the real date, today, not the story's: a setting is only as good as the day it was chosen. The contract's first line keeps the story's date.
+   - The sorting step. One step runs on every new email: it sorts the email as an invoice or not. A wrong sort pays nothing and sends nothing: the email only waits until a person notices it. Maria tested the step this morning at three settings, on eighteen test emails: the fifteen September invoices and this week's three emails. The app's default model at its default effort sorted all eighteen right. A fast, low-cost model sorted all eighteen right too, at its default effort and at its lowest. Choose the model and the effort the step keeps, and defend the choice with [2.4's four answers](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/surface-and-model/#choose-the-model-by-trading-off-capability-speed-and-cost). How complex is the step, and what would a mistake cost? How often does it run? What did the cheaper settings get wrong, if anything? And why is the next step up not needed?
+   - The other AI vendor. One line, marked "predicted, not run". Choose fastest and cheapest, balanced, or most capable by weighing the job, and say why: a mistake in its main work costs money and trust, and the volume is 15 to 25 invoices a month and about 10 vendor questions a week. Only Runtime needs changes on another vendor, as [2.5](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/both-ai-vendors/#the-invariant) explains.
+4. Now look back at "The job": the assistant already works in Maria's project, with the AP policy. If you chose a project and the worker runs in that one, name it under Runtime needs. The policy itself stays under Knowledge sources. Then read your whole contract once. Each choice you made should sit in its own field: what it reaches and works out under Tools, a skill under Procedures, the policy under Knowledge sources, what runs the worker and where under Runtime needs, and what starts its work under Triggers. Only Runtime needs names an AI vendor or a model, so moving to another vendor changes only that field.
 5. **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-5.md). Attach it, and send [the check prompt](#the-check-prompt).
 
-**Checkpoint.** Checks 14 to 17 passed, and Runtime needs carries a date.
+**Checkpoint.** Checks 15 to 19 passed, and Runtime needs carries a date.
 
-**What you learned:** a new channel changes how work arrives, never what the worker may do, and what runs the worker sits in one line, dated, which is the only line another AI vendor changes.
+**What you learned:** a new channel changes how work arrives, never what the worker may do. What runs the worker sits in one field, Runtime needs, dated, and it is the only field another AI vendor changes. A simple step keeps the cheapest setting that passes its cases, and you can say why the next step up is not needed.
 
-## Task 6. Open questions, and the final test (15 minutes)
+## Task 6. Open questions, and the final test
 
 **Dave asks:** "Is it ready for me? What is still mine to decide?"
 
@@ -494,7 +500,7 @@ A forbidden action says "never", and a "never" line may also say where the reque
 4. Compare the five verdicts with Tasks 4 and 5. A verdict that differs, or quotes no line, is a line your page lacks. Back in your lab chat, name the line, let the AI change the document, download it again, and run the final test again.
 5. **Check it now.** In your lab chat, download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch02-key-task-6.md). Attach it, and send [the check prompt](#the-check-prompt). It asks what the final test decided: paste the fresh chat's whole reply.
 
-**Checkpoint.** Checks 18 to 20 passed, and the downloaded file is the contract the final test passed.
+**Checkpoint.** Checks 20 to 22 passed, and the downloaded file is the contract the final test passed.
 
 **What you learned:** a test sees only the page, so a rule that lives in a chat is not in the contract. What only the owner can decide stays a question for him.
 
@@ -516,7 +522,7 @@ A forbidden action says "never", and a "never" line may also say where the reque
 - **The grader mixes tasks' checks, or the chat loses the thread.** Open a fresh chat, attach your downloaded contract, `files/messages.md` and the current task's key, and send the check prompt again.
 - **Your plan's daily limit ran out.** Your contract document keeps. Carry on tomorrow, from the next step.
 
-## Apply it to your vertical (30 to 45 minutes)
+## Apply it to your vertical
 
 Your vertical is the line of work you know best. Choose one role in it, and list five tasks it does every week or month. In your lab chat, tell the AI you want a second contract, in a second document, with the same rules as the first, for that role at your company, and list its five recurring tasks. The AI asks the fields as before. Fill all five groups, or, if you are short of time, Who it is and What bounds it, with the rest as open questions. Then check it against [2.6's four checks](https://agentfactory.panaversity.org/ai-worker-paradigm/what-is-an-ai-worker/role-contract/#four-checks-for-a-first-draft): every field has an entry or an open question, the owner is a person and not a team, Authority is verbs with one per action, and no AI vendor or model is named outside Runtime needs. Then write one message that asks the worker to do something it must never do, and send it as a test, the word Test and then your message in full. If the worker does not stop it, change the line that let it through, and test again.
 
@@ -537,9 +543,9 @@ Your contract is ready when every check has passed, the final test agreed with y
 
 ## Exam notes
 
-These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.0, in force from July 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Certification and Portfolio Roadmaps](https://agentfactory.panaversity.org/certification-and-portfolio-roadmaps/) has more.
+These notes are not part of the lab. CCAO-F, Anthropic's Claude Certified Associate: Foundations, follows an exam guide, and its questions are about Claude only. These notes follow guide version 1.1, in force from December 7, 2026. Where this chapter teaches today's products and the guide expects a different answer, the note says what the guide expects. The guide sets the objectives, not every answer, so learn both. [Appendix C](https://agentfactory.panaversity.org/appendices/exams/associate-foundations/overview/) has more.
 
-- **Model families.** The exam guide expects three model families: Haiku, Sonnet and Opus. Anthropic now offers more. On the exam, answer with the three families and their trade-offs in mind. (D-001)
-- **Features.** The exam guide expects you to pick a named feature: projects, research mode, chat or artifacts. It also names memory, skills, code execution and connectors, such as Google Drive and Gmail, and any of these can be the right answer. On some plans, Claude now decides inside one conversation, with no mode to pick, and it adds tasks and Cowork. A Claude Doc is one kind of artifact. On the exam, choose the named feature that fits the job. "Write a clearer brief" is not a feature choice. Concept 2.4 matches each feature to the job it fits, and Concepts 5.7, 8.4 and 8.5 show them in use. (D-003)
-- **Choosing a model.** The exam guide expects you to fit the model family to the job, and its prep course starts most knowledge work on Sonnet. Opus is for complex judgment, ambiguous inputs and high-stakes work. Haiku is for structured work at high volume, such as sorting many documents against a clear rubric. The exam does not examine effort settings. Concept 2.4 teaches you to start from the AI vendor's recommended default, and to find the cause before you raise effort or change models. Section 2.5 cites Anthropic's guide for developers, where most workloads start with Opus. On the exam, start from Sonnet, and treat a move to a more capable or a faster family as a valid fix. (D-004)
 - **Open-source tools.** The exam guide expects answers about Claude's own products and features, and none of its objectives names an open-source tool. Concept 2.5 shows two open-source tools beside Claude and ChatGPT: OpenCode and OpenClaw. On the exam, answer with Claude's own products and features. An open-source tool is never the answer. (D-072)
+- **Model tiers.** The exam guide names no model. It asks you to match the tier to the task: a fast, low-cost tier for simple, high-volume work, a balanced tier for everyday work, and the most capable tier for complex, high-stakes work. Anthropic's prep course teaches three tiers by name: Haiku is the fast one, Sonnet the balanced one and Opus the most capable. Concept 2.5 names a fourth, Fable, which the course says is not part of the exam. On the exam, answer by tier, by how complex the task is, and by what a mistake costs. (D-074)
+- **Choosing a model.** The exam guide examines model tiers and effort levels together, against a task's quality, speed and cost. Anthropic's prep course starts most knowledge work on its balanced tier, Sonnet, and keeps Opus for complex, unclear or high-stakes work. Concept 2.5 cites Anthropic's guide for developers, where most workloads start with Opus. On the exam, start everyday work on the balanced tier. The lower-cost option is often right for simple, high-volume work. When a scenario shows the task is beyond a lighter model, changing the tier is right. Concept 2.4 adds that more effort on the same model is often the cheaper fix. The guide does not rank the two. Neither one fixes a weak prompt or a stale setup. (D-075)
+- **Features.** The exam guide expects you to choose among chat, Projects, Artifacts, research, code-executed analysis, Skills, connectors and memory, and often to combine them. On some plans Claude now decides inside one conversation. On the exam, choose the named capability, or combination, that fits the job. "Write a clearer brief" is not a capability choice. Concept 2.4 matches each one to the job it fits, and Concepts 5.7, 8.4 and 8.5 show them in use. (D-076)

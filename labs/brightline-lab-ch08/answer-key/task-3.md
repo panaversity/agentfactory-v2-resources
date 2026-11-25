@@ -2,34 +2,57 @@
 
 The answers for Task 3 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second Edition. Every name, number and company in this lab is invented.
 
-**How this key is used.** When "Memory audit" in "Maria's records" has your decision for each topic and your two answers, and `Test: Buckeye` is back, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
+**How this key is used.** When "Memory audit" in "Maria's records" has your decision for each topic and your three answers, `Test: Buckeye` is back, and you have pasted your own Lab 8 memory lines and the reply of the chat with memory off, attach this file in your lab chat, and send the check prompt. The AI marks each check Passed or Missed, quoting your documents' lines and the test's reply in the chat. You have the final say. If a check passed only after you changed a line, you still get it: fixing the line is the skill this lab teaches.
 
 ## The checks
 
-Task 3 carries checks 6 and 7 of the lab's 40.
+Task 3 carries checks 6 to 10 of the lab's 43.
 
 6. **What memory keeps, and the audit.**
    - Topic 4, "Brightline's approval threshold is $10,000", is deleted, because the limit lives in the approved policy, section 4.1, which says $5,000. It is gone from "Memory" in the "AP Worker project" document.
-   - Topics 2, 3 and 5 are kept: they are how Maria likes the work done. Topics 1 and 6 may be kept or deleted: they hold no rule, amount or status.
+   - Topics 2 and 5 are kept: they are how Maria likes the work done. Topic 3 is edited to say that Maria reviews drafts before 11 a.m., because how she works changed on November 2, and the line is still about how she works. Topics 1 and 6 may be kept or deleted: they hold no rule, amount or status.
    - Memory is read again on a set day, such as the first Monday of each month, and after any answer that surprises you. Each time, the date and what was deleted are written down.
    - Passed: all three.
-   - Missed: topic 4 kept, or rewritten as $5,000; topic 2, 3 or 5 deleted; or an audit with no set day, no reading after a surprising answer, or nothing written down.
+   - Missed: topic 4 kept, or rewritten as $5,000; topic 2 or 5 deleted; topic 3 kept at 10 a.m., or deleted; or an audit with no set day, no reading after a surprising answer, or nothing written down.
 7. **Memory kept apart, and the test.**
-   - Claude: each project keeps its own memory. ChatGPT: choose project-only memory, when the project is made.
+   - Claude: a project's memory belongs to the project. It is the project's own memory files, which Claude writes as it works and every thread reads when it starts. ChatGPT: choose project-only memory, when the project is made.
    - `Test: Buckeye`: invoice BO-23104, $6,150.00, is over $5,000.00, so it needs Dave's approval before payment, from the policy, section 4.1.
    - **The hard rule.** A test that accepts $10,000 as Brightline's threshold fails this check, whatever else it gets right.
    - Passed: both vendors as above, the test as above, and the hard rule holds.
    - Missed: a vendor's answer missing or wrong; the test answering "no approval needed"; or the hard rule broken.
+8. **Kept out of memory.** Your answer under "Memory audit":
+   - an incognito chat, outside the project
+   - it does not change what she shared: it limits what is kept and remembered, not what was disclosed
+   - Passed: both.
+   - Missed: the project's own chat; a normal chat with memory on; or an incognito chat called a way to make data safe to share.
+
+9. **Your own memory, read and corrected.** Under "My own memory", the Lab 8 lines you pasted from your saved memory:
+   - say that Maria reviews drafts before 11 a.m.
+   - hold no approval limit, and no $10,000
+   - and you said you deleted the chat that saved them
+   - Passed: all three.
+   - Missed: 10 a.m. still there; a limit still there, in any amount; the chat not deleted; or no lines pasted.
+   - If your memory is off, for your account or by your plan's owner, and you said so, this check is not scored.
+10. **A chat with memory off.** The reply you pasted, from a new chat with memory off, knows neither Lab 8 line: it names no review time and no limit. A reply such as "I don't have anything saved about your Lab 8 practice" passes.
+   - Passed: neither line in the reply.
+   - Missed: the reply names 10 a.m., 11 a.m. or $10,000; or no reply pasted.
 
 ## Why
 
-Memory is written by the product from what was said, and nobody approves it (Lesson 8.4). A remark about next year became a rule. So memory gets a narrow job: preferences and how you work. Anything a decision depends on stays out: policy, limits, amounts, statuses. New topics keep arriving, so one reading is not enough: read it on a set day, and again after any answer that surprises you, because a surprise is often memory at work (Lesson 8.4). Each time, write down what went. A project should also keep its memory apart from your other work. Claude does that by itself. ChatGPT does it once you choose project-only memory, which you choose when you make the project (Lesson 8.8).
+Memory is written by the product from what was said, and nobody approves it (Lesson 8.2). A remark about next year became a rule. So memory gets a narrow job: preferences and how you work. Read each line, and edit a line about how you work when it is wrong or has changed, as Maria's review time did (Lesson 8.2). Anything a decision depends on stays out: policy, limits, amounts, statuses. New topics keep arriving, so one reading is not enough: read it on a set day, and again after any answer that surprises you, because a surprise is often memory at work (Lesson 8.2). Each time, write down what went. A project should also keep its memory apart from your other work. On ChatGPT, choose project-only memory when you make the project. On Claude, a project's memory belongs to the project: its own memory files, which you read, edit and delete in its settings (Lesson 8.4). For a matter that should not shape later answers, such as a personal one, use an incognito chat. It is not saved to your chat history or to memory. It is not offered inside a project, a copy is still kept for a time, and it does not change what was disclosed (Lesson 8.2).
+
+Then do it on your own account. Claude keeps memory as topics you read, edit and delete in Settings (Lesson 8.4). Edit a line about how you work when it has changed, and delete a line that holds a rule, an amount or a status (Lesson 8.2). Delete the chat it came from as well, and any memory saved from it (Lesson 8.2): the old lines are still in that chat, where a search of past chats can find them. A chat with memory off, turned off before its first message, does not use memory, search your past chats or save anything to memory (Lesson 8.4's product reference). So it shows what a chat knows without memory: nothing about the lab.
 
 ## Never a deduction
 
 - A different set day, such as every Friday, when it is a set day.
 - The test adding that Dave approves the whole run as well (4.3).
 - The test noting that no instruction line yet says which source counts.
+- Naming ChatGPT's temporary chat beside Claude's incognito chat.
+- Claude saving the two Lab 8 lines as one topic or as two, or in its own words.
+- In ChatGPT, the new review time saved as a new memory, in place of an edited one.
+- The chat with memory off saying it has no memory of you at all.
+- Other Brightline lines from your lab chat still in your memory: you delete them at the end of the lab.
 - A remark about the lab's dates.
 
 ## Take it to work

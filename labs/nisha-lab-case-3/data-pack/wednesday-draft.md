@@ -1,4 +1,4 @@
-# Lakeshore Supply: weekly cash reconciliation, draft
+# Northgate Supply: weekly cash reconciliation, draft
 
 **Week 4, through Tuesday, May 11, 2027.** Prepared by Claude (Wednesday routine), 4:02 p.m. Karachi time. Figures in U.S. dollars. Made up for teaching.
 
@@ -10,7 +10,7 @@
 | Add: deposits not yet cleared | 0.00 |
 | Less: checks not yet cashed | 0.00 |
 | **Reconciled cash** | **215,950.00** |
-| Balance in Lakeshore's ledger, Tuesday close | 215,950.00 |
+| Balance in Northgate's ledger, Tuesday close | 215,950.00 |
 | Difference | 0.00 |
 
 ## Notes

@@ -6,7 +6,7 @@ The answers for Task 1 of Lab 8, in Chapter 8 of *The AI Agent Factory*, Second 
 
 ## The checks
 
-Task 1 carries checks 1 to 3 of the lab's 40.
+Task 1 carries checks 1 to 3 of the lab's 43.
 
 1. **Only the policy may settle a policy question.** Under "Where each answer came from", the policy file, ap-policy-v3.md, is "settles a policy question: yes", and each of the other six items is "no": the instructions, the onboarding notes, the status list, the memory topics, the chat's summary and Maria's week-one line.
    - Passed: the policy yes, and all six others no.
@@ -18,7 +18,7 @@ Task 1 carries checks 1 to 3 of the lab's 40.
    - the status list: DSoR's kind of fact, current state, copied into the project on October 23, so a dated snapshot. "DSoR", "context" or either with "snapshot" passes. And 5149's status comes from the accounting system now; its history may also be named, in its case file
    - the memory topics: memory
    - the chat's summary: context
-   - Maria's week-one line: context, said only in the chat, and dropped by the summary
+   - Maria's week-one line: context, said only in the chat, and dropped by the summary. "Gone from the context, because the summary dropped it" passes too
    - Passed: every item as above.
    - Missed: the policy file as context only; the onboarding notes as KSoR; the status list as KSoR, SSoR or memory; the memory as anything but memory; or no source named for 5149's status, or a source other than the accounting system, such as the status list, memory or an email.
 3. **The test showed where each answer came from.** `Test: Tuesday morning` answered questions 2, 3, 7 and 9, each with the item it came from and that item's place. For at least Buckeye and Lakeshore, it says that two items disagree and no line decides which wins.
