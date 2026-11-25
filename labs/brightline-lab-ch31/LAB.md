@@ -10,7 +10,7 @@ Chapter 31 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 **The job's facts.** Two companies use the worker: Brightline Wholesale Supply (Ana Morales, AP analyst) and Cedar Ridge Supply (Luis Moreno, AP lead). The sessions run from Monday, October 5 to Thursday, October 15, 2026. The published memory is v3. The promotion rules in `docs/promotion-rules.md` were set on Monday, October 19, before any dream, and you may not change them during the lab.
 
-**How a task works.** Each task gives you a request to send to Claude Code, then **What good looks like**, and a **Check before you approve** step. Predict first, then check. Each task's answer key is its own download, such as [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch31-key-task-1.md). For another task, change the number at the end of that address.
+**How a task works.** Each task gives you a request to send to Claude Code, then **What good looks like**, and a **Check before you approve** step. Your request says what you want. The lab's `AGENTS.md` gives Claude Code the details of each task, such as which files to write. Predict first, then check. Each task's answer key is its own download, such as [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch31-key-task-1.md). For another task, change the number at the end of that address.
 
 **Read the lab's README first.** Three things in it matter for every task:
 
@@ -26,7 +26,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **Goal:** know what is in each layer, and find what does not belong.
 
-> Read `memory/published/v3/` and `docs/policies/`. Make a table in `docs/memory-map.md` with one row per file in v3: its layer (injected, page, or scratch), its scope (the worker, Brightline, or Cedar Ridge), and one line on what it says. Then list every note that holds something the worker could look up again through a tool or a policy line, and every note that a policy line contradicts. Quote the policy line. Change nothing yet.
+> Task 1. Map what is in memory v3: for each file, its layer, its scope and what it says. Then show me every note that repeats what a tool or a policy line already gives, or that a policy line contradicts, with that line quoted. Change nothing.
 
 **What good looks like:** six files. `instructions.md` and `index.md` are injected. Two notes fail. `notes/brightline/vendors.md` repeats invoice amounts the connector returns. It says Lakeshore is due in 45 days, which `vendor-terms.md:6` contradicts. And it tells the worker to compare invoice numbers to find Buckeye's copies, whose numbers differ. `notes/cedar-ridge/documents.md` says to hold any second document that names an invoice already received, which `credits.md:6` contradicts for credit memos.
 
@@ -36,7 +36,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **Goal:** every run reads one published version, and cannot write to it.
 
-> Change `scripts/run-triage.ts` so each run copies nothing and writes nothing under `memory/published/`. It takes the newest folder in `memory/published/` when it starts, mounts it read-only for the worker (the worker can read it but not change it), and logs its version as the run's first line. The worker may write only to `memory/scratch/<run-id>/`. Add a test in `tests/` that starts a run, publishes a new version halfway through, and checks that the run still reads the version it started with. Run `npm test`.
+> Task 2. Make every triage run read one published memory version from start to end, unable to change it, and write only to its own scratch folder. Prove it with a test, and show me the run's first log line.
 
 **What good looks like:** every test passes, the starter tests and yours. The run's first log line reads `memory: v3`. A write by the run under `memory/published/` is refused, by a guard in the code or by the folder's permissions.
 
@@ -46,7 +46,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **Goal:** the worker reports a gap at the moment it meets it.
 
-> Add a second tool to the worker in `src/worker.ts`, next to `search_policy`: `flag_gap`, with three fields: what is missing or wrong, the evidence (a policy line or tool result), and the run id. It appends one line to `memory/flags.csv` and changes nothing else. Add one sentence to the worker's prompt in `src/worker.ts`. Do not add it to `instructions.md`, because v3 is published and read-only. The sentence: when memory has nothing on a kind of document, or a memory note disagrees with a policy line, flag it and ask. Run `npm run replay -- --session s08` and show me the flag it writes.
+> Task 3. Give the worker a way to report a gap the moment it meets one, without changing memory. Then replay session 08 and show me the flag it writes.
 
 **What good looks like:** at least one new line, for NA-2245, citing a line of `credits.md` or the `documents.md` note that disagrees with it. Nothing under `memory/published/` changes. If no flag appears, replay once more: answers vary. The sentence reaches memory later, as a candidate like any other lesson.
 
@@ -58,7 +58,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **Goal:** a dreaming pass over the ten sessions, writing proposals only to `docs/candidates/`.
 
-> Write `scripts/dream.ts`. It reads `memory/published/v3/`, `memory/flags.csv` and the ten sessions in `sessions/`, including every tool call and result, and asks Claude to propose changes to memory. Use `docs/dream-instructions.md` as its instructions. It writes one file per proposal to `docs/candidates/`, using `templates/candidate.md`, and never writes under `memory/`. Run it once with the instructions, and once with an empty instructions file into `docs/candidates-unsteered/`. Show me both lists of claims side by side.
+> Task 4. Build the dream: it reads v3, the flags and the ten sessions, and writes its proposals only to `docs/candidates/`, never to memory. Run it once with Brightline's dream instructions and once without them, and show me the two lists of claims side by side.
 
 **What good looks like:** with the instructions, these lessons appear: the date format, Northfield's NA- documents, Buckeye's EDI copies, the Lakeshore correction, and usually the phone approval. Either run may add others. Watch for "Summit invoices are pre-approved", taken from an invoice's memo field, which a vendor wrote. Dreams vary, so your wording and your number of files will differ. Judge the dream by whether each lesson is there and correct. Then run `npm run check -- --stage dreamed`, which checks each file's form with no model.
 
@@ -66,13 +66,13 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 #### Task 4b (optional). The same dream on Claude Managed Agents
 
-> Following [31.13](https://agentfactory.panaversity.org/building-ai-workers/self-improving-ai-workers/how-todays-tools-realize-it/) and the Dreams documentation, create a memory store from v3 and run a dream over the same ten sessions with the same instructions. Compare its output store with `docs/candidates/`. Confirm the input store did not change: the dream must write a new store, never update the one runs read.
+> Task 4b. Run the same dream on Claude Managed Agents, following [31.13](https://agentfactory.panaversity.org/building-ai-workers/self-improving-ai-workers/how-todays-tools-realize-it/) and the Dreams documentation. Compare what it proposes with `docs/candidates/`, and confirm that the memory the runs read did not change.
 
 #### Task 5. Evidence that counts
 
 **Goal:** each candidate's evidence, counted by the rule set in advance.
 
-> For each candidate in `docs/candidates/`, fill the Evidence field: the sessions and tool results behind it. Count independent sessions by the rule in `docs/promotion-rules.md`. Show the count and which sessions you merged. Then run `npm run check -- --stage evidence`.
+> Task 5. For each candidate, fill in its evidence and count its independent sessions by Brightline's promotion rules. Show me each count, and which sessions you merged.
 
 **What good looks like:** date format, 6 independent sessions (s03 and s04 count once). NA- documents, 5 (s01, s03 and s04 as one, s07, s08, s10), and the flag from s08 as an observation. Buckeye, 2. Lakeshore, 2. Phone approval, 1.
 
@@ -82,7 +82,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **Goal:** each candidate's Validation field, against the authoritative source.
 
-> For each candidate, search `docs/policies/` and fill Validation: the policy line that confirms or contradicts it, and the scope. Use the order in 31.8 when they disagree. Rewrite any claim that mixes what was seen with a guessed cause, so the two are separate. For each candidate that survives, write its Change: the exact note as memory would hold it, and any v3 note it removes or rewrites. Do not approve anything. Then run `npm run check -- --stage validated`.
+> Task 6. Check each candidate against the policies, and keep what was seen apart from any guessed cause. For each one that survives, write the exact change it would make to memory. Approve nothing.
 
 **What good looks like:** the phone approval fails on `approvals.md:5` and `:6`. The Lakeshore correction is confirmed by `vendor-terms.md:6`. Buckeye's copies are confirmed by Ana's corrections and `payments.md:6`, scoped to Brightline. The NA- lesson agrees with `credits.md:5` and `:6`, scoped to Northfield at Cedar Ridge; its codes come from Luis, not from policy. The date format is confirmed by the tool's own error message.
 
@@ -92,7 +92,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **Goal:** each surviving candidate tested, tiered and approved or not, with a row for each.
 
-> Write `scripts/regress.ts`. For a candidate, it builds a trial memory from v3 plus the candidate's Change. It runs all 16 cases in `golden/cases.csv` with that memory and with v3, using `runCases` from `src/evaluate.ts`, so each case runs three times. Run v3 once and reuse its result for every candidate, because the runs take several minutes. It writes both results to the candidate's file. Then set each candidate's tier with the five factors in 31.7 and `docs/promotion-rules.md`. Write one row per candidate to `approvals.csv`: automatic where the rules allow it, and "needs Ana" or "needs Luis" otherwise. Never write a person's approval. Then run `npm run check`.
+> Task 7. Test each surviving candidate on the golden set against v3, set its tier by 31.7 and the promotion rules, and record it in `approvals.csv` as automatic, or as needing Ana or Luis. Never write a person's approval.
 
 **What good looks like:** the NA- lesson fixes G01 to G03 and breaks nothing, but it decides whether money is credited, so it is high: needs Luis. Buckeye fixes G04 and G05 and decides whether an invoice is paid: high, needs Ana. The Lakeshore correction usually fixes no case, because the worker follows the policy line over the wrong note; on some days v3 fails G12 and the correction fixes it. It breaks none: medium, with two sessions, so needs Ana. The date format is low and automatic. The phone approval never reaches this step. A regression is a case that passes with v3 and fails with the trial memory, each by the two-in-three rule. If a case is marked unstable, run it with `--trials 5` before you decide. If a lesson fixes fewer cases than this, read the notes of the runs that failed. A worker treats a note written as a proposal ("add to memory that...") as unverified, and an old note left beside the one that replaces it as a conflict. Fix the Change, not the test.
 
@@ -104,7 +104,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **First, approve as the reviewer, yourself.** Ana and Luis are characters, so your approvals are simulated training approvals, made in your own name. Open `approvals.csv` in an editor, not through the agent. Approve the NA- row standing in for Luis, and the Buckeye and Lakeshore rows standing in for Ana. Set `approval_kind` to `simulated-training`, write your own name, such as "Sam Lee, standing in for Luis", and the time. Leave the other rows as they are.
 
-> My simulated approvals are in `approvals.csv`. Do not write or change any approval row. Write `scripts/publish.ts`: it copies the newest version to a new folder, applies the Change of every approved candidate, makes the folder read-only, and records the version in `docs/promotion-log.md`. It refuses any approval written in Ana's or Luis's own name. Publish. Then run `scripts/monitor.ts` twice over `golden/week-of-oct-26.csv`: once against your new version, and once against `history/v4-first/`, the version Brightline first published on October 20. Find the failure in the second. Then, inside `history/`, roll it back as Brightline did, by publishing v3's content again as v5. Add the failing case to `golden/cases.csv`, update the case count in `tests/csv.test.ts`, and run `npm test`.
+> Task 8. My simulated approvals are in `approvals.csv`: change no approval row. Publish a new version with the approved changes. Then test my version and Brightline's first v4 on the week of October 26, find the failure, roll it back as Brightline did, and add the failing case to the golden set.
 
 **What good looks like:** no `approved_by` names Ana Morales or Luis Moreno. Your version passes all 16 cases and the week of October 26, if your NA- claim covers only the codes the sessions show. `history/v4-first/` applies NA-2281, a $410.00 freight charge with code FR, as a credit. The rollback is a new folder in `history/`, and `history/promotion-log.md`, Brightline's own log, lists every version in order, with nothing deleted. Your publish script keeps its own log, `docs/promotion-log.md`. The golden set has 17 cases, and `npm test` passes. The agent wrote no approval row.
 
@@ -112,7 +112,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 #### Task 9 (optional). Port the dream to OpenAI
 
-> Run the same dream as a scheduled OpenAI automation that reads the saved sessions and writes candidates to `docs/candidates-openai/`, with memory as files in Git. Run Task 7's regression on its candidates without changes.
+> Task 9. Run the same dream as a scheduled OpenAI automation that writes its candidates to `docs/candidates-openai/`, then run Task 7's regression on them unchanged.
 
 ### Sitting 3: the worker on the job
 
@@ -122,7 +122,7 @@ This sitting practises Part C, one idea from each section. It needs no new accou
 
 **Goal:** the role above the worker, with every line enforced by something.
 
-> Write `docs/job-definition.md` for Brightline's AP worker, with the six parts in 31.11: what it owns, what it may never do, when it escalates, who it reports to, its goals and its budget. For each part, name the file, table or check in this repository that enforces it. Where nothing does, write "not enforced" and say which governed record in 31.11 would. Change no code.
+> Task 10. Write the worker's job definition, with the six parts in 31.11. For each part, show me what in this folder enforces it, or write "not enforced" and which governed record would. Change no code.
 
 **What good looks like:** "What it may never do" points to the approval check in `validateDecision` (`src/worker.ts`), not to a line in `instructions.md`. At least one line is "not enforced", such as the goals, which no file measures yet.
 
@@ -134,7 +134,7 @@ This sitting practises Part C, one idea from each section. It needs no new accou
 
 Open `inbox/events.jsonl` first. It holds five events from October 13 to 15: Luis's reply "Apply it" about NA-2245, the same reply again three seconds later because the portal's webhook retried, two vendor emails with new Kestrel invoices, and a timer the worker set to look at NA-2245 again on Thursday.
 
-> Write `scripts/inbox.ts`. It reads `inbox/events.jsonl` in order and handles each event as one run, with the newest published memory, read-only. It keeps a small case record in `records/case-log.csv`, and only ever adds rows to it. Before it acts, it checks the case log. An event whose id is already there is a duplicate: skip it. A timer whose document already has a final decision there (apply-credit or ready-to-pay) is closed with no model call. Otherwise it calls `runWorker`. It adds one row per handled event to the case log, and writes one line to `outbox/outbox.csv` with the run's ending: "send" when a person is waiting for this answer, "quiet" when nothing needs sending now and it can wait for the next morning report, or "ask" for a hold, a needs-approval or a decision that failed validation. Put the logic in a function that takes the model call as a parameter. Add a test in `tests/` that runs it twice over the same events with a stub in place of the model, and checks that the second run handles nothing. Run `npm test`, then `npm run inbox`, and show me the outbox.
+> Task 11. Make the worker handle the inbox's events one at a time, so that a repeated event does nothing and a timer whose case is already decided needs no model call. Prove it with a test that runs the same events twice, then show me the outbox.
 
 **What good looks like:** four lines in the outbox, not five. NA-2245 is apply-credit and "send", because Luis is waiting. The repeated reply is skipped. INV-7861 is ready-to-pay, due 2026-11-12, and "quiet". INV-7862 is over Cedar Ridge's $2,500.00 limit with no approval row, so it is needs-approval and "ask". The timer is closed as "quiet" with no model call, because the case log already shows NA-2245 applied. Run `npm run inbox` a second time: it handles nothing, and the outbox does not grow.
 
@@ -146,7 +146,7 @@ Open `inbox/events.jsonl` first. It holds five events from October 13 to 15: Lui
 
 Every run of the worker now reports what its model calls cost, and `npm run monitor` prints the total and the cost per right decision.
 
-> Make `scripts/dream.ts` print what its model calls cost, from the `total_cost_usd` field that `claude -p --output-format json` returns, as `src/worker.ts` does. Run the dream once more, into `docs/candidates-cost/`. Run `npm run monitor` over `golden/week-of-oct-26.csv` twice: against v3, and against your newest version in `memory/published/`. Then write `docs/cost.md`: the cost per right decision for each version, the dream's cost, and the cost of October's repeated mistakes and of the reviews, from `docs/volume.md`. End with one paragraph: does the dream pay for itself at Brightline's volume? Mark each number as measured or taken from `docs/volume.md`.
+> Task 12. Measure what the dream costs, and what each memory version costs per right decision in the week of October 26. Then write whether the dream pays for itself at Brightline's volume, marking each number as measured or taken from `docs/volume.md`.
 
 **What good looks like:** your new version gets more decisions right than v3 in the week of October 26, so its cost per right decision is lower. The model calls cost cents, and so does the dream. October's repeated mistakes cost about $26.67 of people's time: Luis's five answers and Ana's two corrections, 40 minutes at $40.00 an hour. Each medium or high candidate costs $6.67 to review. So people's time, not the model, decides the answer. If a dream brings many candidates to review, it may not pay for itself in time saved alone. Then review fewer, or count what a wrong payment would cost. Either answer can be right, if the numbers support it. Your figures will differ. On a subscription plan, the costs are what the same calls would cost on the API.
 
