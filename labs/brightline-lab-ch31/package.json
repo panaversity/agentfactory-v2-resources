@@ -1,0 +1,16 @@
+{
+  "name": "brightline-lab-ch31",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "triage": "tsx scripts/run-triage.ts",
+    "replay": "tsx scripts/replay.ts",
+    "monitor": "tsx scripts/monitor.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "check": "tsx scripts/check-candidates.ts",
+    "inbox": "tsx scripts/inbox.ts"
+  },
+  "devDependencies": {
+    "tsx": "4.19.2"
+  }
+}
