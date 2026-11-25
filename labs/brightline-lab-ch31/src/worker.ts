@@ -134,8 +134,18 @@ export function buildPrompt(memoryDir: string, c: Row, turns: string[]): string 
 function ask(prompt: string): { reply: any; cost: number } {
   // --tools "" gives the model no tools of Claude Code's own: it can only answer.
   const out = execFileSync("claude", ["-p", prompt, "--model", MODEL, "--tools", "", "--output-format", "json"], { encoding: "utf8", maxBuffer: 20_000_000 });
-  const json = JSON.parse(out);
+  const json = cliResult(out);
   return { reply: firstJson(json.result), cost: Number(json.total_cost_usd ?? 0) };
+}
+
+// `claude -p --output-format json` prints one result object. With "verbose" on in a person's
+// Claude Code settings, it prints a list of every event instead, and the result is the last one.
+export function cliResult(out: string): any {
+  const json = JSON.parse(out);
+  if (!Array.isArray(json)) return json;
+  const results = json.filter((e: any) => e && e.type === "result");
+  if (results.length === 0) throw new Error("claude -p returned no result event");
+  return results[results.length - 1];
 }
 
 // The first complete JSON object in a reply. A model sometimes writes two objects, such as a tool

@@ -5,7 +5,7 @@ import assert from "node:assert/strict";
 import { mkdtempSync, mkdirSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { newestVersion, searchPolicy, memoryText, validateDecision, firstJson, isCalendarDate } from "../src/worker.ts";
+import { newestVersion, searchPolicy, memoryText, validateDecision, firstJson, isCalendarDate, cliResult } from "../src/worker.ts";
 
 test("newestVersion picks v10 over v9, by number not by name", () => {
   const dir = mkdtempSync(join(tmpdir(), "pub-"));
@@ -79,4 +79,11 @@ test("ready-to-pay over the approval limit needs a recorded approval, whatever t
   assert.match(validateDecision(d, over, "docs/policies", "memory/published/v3")[0], /no recorded approval/);
   const recorded = { ...over, context: "Approvals table: INV-7820 approved by Luis Moreno, recorded 2026-10-18." };
   assert.deepEqual(validateDecision(d, recorded, "docs/policies", "memory/published/v3"), []);
+});
+
+test("the model's reply is read whether claude -p prints one object or, with verbose on, a list of events", () => {
+  const one = JSON.stringify({ type: "result", result: "{}", total_cost_usd: 0.01 });
+  const list = JSON.stringify([{ type: "system", subtype: "init" }, { type: "assistant" }, { type: "result", result: "{}", total_cost_usd: 0.02 }]);
+  assert.equal(cliResult(one).total_cost_usd, 0.01);
+  assert.equal(cliResult(list).total_cost_usd, 0.02);
 });
