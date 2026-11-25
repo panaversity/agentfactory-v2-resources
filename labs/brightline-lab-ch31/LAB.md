@@ -2,19 +2,19 @@
 
 Chapter 31 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 31: Brightline's worker learns from October](https://agentfactory.panaversity.org/building-ai-workers/self-improving-ai-workers/lab/), so you can do the lab without the book.
 
-**What you do.** You take Brightline's AP worker, with three weeks of October's recorded runs, and make it learn from them safely. You give it versioned memory, a flag tool and a dream. Then you run every proposal through the promotion protocol, publish one version, and roll back a bad one. Last, you put the worker on the job: a job definition, an inbox of events, and a count of what it costs.
+**What you do.** You take Brightline's AP worker, with two weeks of October's recorded runs, and make it learn from them safely. You give it versioned memory, a flag tool and a dream. Then you run every proposal through the promotion protocol, publish one version, and roll back a bad one. Last, you put the worker on the job: a job definition, an inbox of events, and a count of what it costs.
 
-**What you need.** Claude Code, Node.js 20 or later, and the Claude Code command line signed in. A Claude Managed Agents account is needed only for the optional Task 4b. A free plan can spread the lab over several days. After you download the lab, run `npm install` and then `npm test`: every starter test should pass.
+**What you need.** Claude Code, Node.js 24 or later (as in Chapter 12), and the Claude Code command line signed in. A Claude Managed Agents account is needed only for the optional Task 4b. Claude Code needs a paid plan ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/both-ai-vendors/)). Every model run in this lab counts against that plan's usage limit, so you may spread the lab over several days. After you download the lab, run `npm install` and then `npm test`: every starter test should pass.
 
 **Download.** [brightline-lab-ch31.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch31.zip). It is self-contained: it ships a small worker, its policies, ten recorded sessions, a golden set and every file the tasks name.
 
 **The job's facts.** Two companies use the worker: Brightline Wholesale Supply (Ana Morales, AP analyst) and Cedar Ridge Supply (Luis Moreno, AP lead). The sessions run from Monday, October 5 to Thursday, October 15, 2026. The published memory is v3. The promotion rules in `docs/promotion-rules.md` were set on Monday, October 19, before any dream, and you may not change them during the lab.
 
-**How a task works.** Each task gives you a request to send to Claude Code, then **What good looks like**, and a **Check before you approve** step. Predict first, then check. Answers are in `answer-key/`.
+**How a task works.** Each task gives you a request to send to Claude Code, then **What good looks like**, and a **Check before you approve** step. Predict first, then check. Each task's answer key is its own download, such as [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch31-key-task-1.md). For another task, change the number at the end of that address.
 
 **Read the lab's README first.** Three things in it matter for every task:
 
-- **The starting code is unsafe on purpose.** The triage script writes notes into the published memory, and the worker cannot report a gap. Tasks 2 and 3 fix those two defects.
+- **The starting code is unsafe on purpose.** The triage script writes notes into the published memory, and the worker cannot report a gap. October's worker had a flag tool (session 08 shows it), but the starting code leaves it out so that you build it. Tasks 2 and 3 fix those two defects.
 - **It is a simplified harness.** The worker calls Claude through the command line and answers in JSON. Real agents enforce tools and permissions outside the model. What the lab does enforce is the shape of each decision: an allowed value, a real date, and a citation of a line that exists.
 - **Answers vary between runs, so the lab checks in two ways.** `npm test` and `npm run check` use no model, and give the same answer every time. `npm run monitor` runs each case three times, on one pinned model, and a case passes when at least two runs are right.
 
@@ -36,7 +36,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 **Goal:** every run reads one published version, and cannot write to it.
 
-> Change `scripts/run-triage.ts` so each run copies nothing and writes nothing under `memory/published/`. It takes the newest folder in `memory/published/` when it starts, mounts it read-only for the worker, and logs its version as the run's first line. The worker may write only to `memory/scratch/<run-id>/`. Add a test in `tests/` that starts a run, publishes a new version halfway through, and checks that the run still reads the version it started with. Run `npm test`.
+> Change `scripts/run-triage.ts` so each run copies nothing and writes nothing under `memory/published/`. It takes the newest folder in `memory/published/` when it starts, mounts it read-only for the worker (the worker can read it but not change it), and logs its version as the run's first line. The worker may write only to `memory/scratch/<run-id>/`. Add a test in `tests/` that starts a run, publishes a new version halfway through, and checks that the run still reads the version it started with. Run `npm test`.
 
 **What good looks like:** every test passes, the starter tests and yours. The run's first log line reads `memory: v3`. A write by the run under `memory/published/` is refused, by a guard in the code or by the folder's permissions.
 
@@ -106,7 +106,7 @@ The lab has three sittings. Sitting 1 practises Part A, Sitting 2 Part B, and Si
 
 > My simulated approvals are in `approvals.csv`. Do not write or change any approval row. Write `scripts/publish.ts`: it copies the newest version to a new folder, applies the Change of every approved candidate, makes the folder read-only, and records the version in `docs/promotion-log.md`. It refuses any approval written in Ana's or Luis's own name. Publish. Then run `scripts/monitor.ts` twice over `golden/week-of-oct-26.csv`: once against your new version, and once against `history/v4-first/`, the version Brightline first published on October 20. Find the failure in the second. Then, inside `history/`, roll it back as Brightline did, by publishing v3's content again as v5. Add the failing case to `golden/cases.csv`, update the case count in `tests/csv.test.ts`, and run `npm test`.
 
-**What good looks like:** no `approved_by` names Ana Morales or Luis Moreno. Your version passes all 16 cases and the week of October 26, if your NA- claim covers only the codes the sessions show. `history/v4-first/` applies NA-2281, a $410.00 freight charge with code FR, as a credit. The rollback is a new folder, and `history/promotion-log.md` lists every version in order, with nothing deleted. The golden set has 17 cases, and `npm test` passes. The agent wrote no approval row.
+**What good looks like:** no `approved_by` names Ana Morales or Luis Moreno. Your version passes all 16 cases and the week of October 26, if your NA- claim covers only the codes the sessions show. `history/v4-first/` applies NA-2281, a $410.00 freight charge with code FR, as a credit. The rollback is a new folder in `history/`, and `history/promotion-log.md`, Brightline's own log, lists every version in order, with nothing deleted. Your publish script keeps its own log, `docs/promotion-log.md`. The golden set has 17 cases, and `npm test` passes. The agent wrote no approval row.
 
 **Check before you approve.** Did the rollback delete anything? Open the log. And in this lab, what is the difference between the agent's recommendation, your simulated approval, and a real approval by Luis?
 

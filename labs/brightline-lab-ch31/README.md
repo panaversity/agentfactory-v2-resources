@@ -2,7 +2,7 @@
 
 The lab for Chapter 31 of The AI Agent Factory, "Self-Improving AI Workers: Memory, Dreaming and Governed Learning".
 
-You need Node.js 20 or later and the Claude Code command line, signed in. Run `npm install`, then `npm test`: every starter test should pass. Then open this folder in Claude Code and follow the chapter's tasks.
+You need Node.js 24 or later and the Claude Code command line, signed in, which needs a paid Claude plan. Run `npm install`, then `npm test`: every starter test should pass. Then open this folder in Claude Code and follow the chapter's tasks.
 
 | Folder | What is in it |
 | --- | --- |
