@@ -10,7 +10,7 @@ Chapter 20 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 - **The lab's files.** `brightline-lab-mcp-apps.zip` ([download it here](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-mcp-apps.zip)) holds `brightline-ap` as it stands at the end of [Lab 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/), at tag `ch19`, with two files this lab adds: the rules file Chapter 16's triage skill reads, `plugin/skills/invoice-triage/references/rules.md` (the same text as `docs/policies/ap-triage-rules.md`), and, beside `brightline-ap/`, Task 6's test note, `lab-files/v102-test-note.txt`. You need no earlier lab. If you did Lab 19 in your own repository, you can work there instead: copy the rules file in at the same path, and keep the zip's `lab-files/` beside your repository.
 - **A connector that runs.** The TypeScript connector deployed to staging, as in Lab 19's Task 16, signed in through [Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/)'s sign-in server and reading [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/)'s database. The Python connector runs on your computer: Chapter 19 leaves its staging copy answering 503 until it has a database connection, an extension. If you start from the zip, follow the "Set up" section of the zip's `README.md` first. The sign-in matrix (`npm run matrix` in the authors' build, from Lab 18's Task 10) and the data matrix (`npm run matrix:data`) must both end `0 failed` before Task 0.
-- Everything Lab 19 needed: Node, uv, git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, Codex and OpenCode, each signed in.
+- Everything Lab 19 needed: Node, uv, git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, Codex and OpenCode, each signed in. Also Google Chrome, which the screen matrix uses to draw the page for row C8.
 - Test people from Lab 18: Luis (`owner`, Cedar Ridge), Marco (`auditor` since Lab 18's Task 11), Priya (`member` of both) and Ana (`owner`, Brightline). Their passwords are in `.secrets/test-users.local.env`, and the matrices sign them in with Lab 18's `npm run sign-in` script.
 - Cedar Ridge's data from Lab 19's Task 4: 16 open invoices, $21,329.00 in all.
 - For Task 8, a second AI app that shows MCP Apps: ChatGPT on a plan that allows custom connectors, or Goose, which is free and open source.
@@ -110,7 +110,7 @@ Then give Claude Code this prompt:
 
 **In plain words.** Codex does the same for the Python connector, using the same page file, so both connectors show the same screen.
 
-> Read 20.3, 20.9 and the TypeScript changes from Task 3. In the Python connector, use `mcp.server.apps` to serve the same `ui://brightline/open-invoices.html` and the same pointer, and add `next_invoice_page` with the same visibility and scope check. Register the page's tools before you create the server object, or they will not appear. The Python `tools/list` test expects four tools too: show me the change first, then add `next_invoice_page` to it. Reuse the page file. Do not change any tool's text answer.
+> Read 20.3, 20.9 and the TypeScript changes from Task 3. In the Python connector, use `mcp.server.apps` to serve the same `ui://brightline/open-invoices.html` and the same pointer, and add `next_invoice_page` with the same visibility and scope check. Keep the tools in the order `docs/connector-spec.md` gives, which the conformance suite checks, and make sure `tools/list` shows `next_invoice_page`. The Python `tools/list` test expects four tools too: show me the change first, then add `next_invoice_page` to it. Reuse the page file. Do not change any tool's text answer.
 
 **What good looks like:** the Python tests pass, and the page file is shared, not copied.
 
@@ -130,7 +130,7 @@ Then give Claude Code this prompt:
 | --- | --- | --- | --- |
 | C1 | Luis | Next page | Rows 6 to 10, Cedar Ridge's |
 | C2 | Marco (`auditor`) | Vendor details on V102 | 403, and "Your role does not include vendor details." on the screen |
-| C3 | Luis | The page asks `get_purchase_order` for Brightline's INV-8301 | "not found" |
+| C3 | Luis | The page asks `get_purchase_order` for Brightline's INV-8301 | "Not found", the same reply as for an invoice that exists nowhere |
 | C4 | Priya, signed in for Cedar Ridge | Opens the screen | Cedar Ridge's 16 only |
 | C5 | Luis | Next page with Ana's handle | Refused, start again from page one |
 | C6 | Marco | `next_invoice_page` from a script, no AI app | Checked like any call: answered for Cedar Ridge |
