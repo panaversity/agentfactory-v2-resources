@@ -5,15 +5,15 @@ When a prompt says "Read 22.5", open `21.5.md`. The files and this folder keep t
 | File | What it is |
 | --- | --- |
 | `overview.md` | Chapter 22, the point, its words and what you build |
-| `21.1.md` | 22.1 From your loop to a library |
-| `21.2.md` | 22.2 The map |
-| `21.3.md` | 22.3 One run, start to finish |
-| `21.4.md` | 22.4 Tools: which the worker can see, and where each call runs |
-| `21.5.md` | 22.5 Who may run a tool |
-| `21.6.md` | 22.6 What counts as done, and the limits around it |
-| `21.7.md` | 22.7 Where the conversation lives |
-| `21.8.md` | 22.8 Where traces go |
-| `21.9.md` | 22.9 What an SDK still leaves to you |
+| `21.1.md` | 22.1 What does a library take over from my loop? |
+| `21.2.md` | 22.2 Where did each line of my loop go? |
+| `21.3.md` | 22.3 What does an SDK tell me about a run? |
+| `21.4.md` | 22.4 Which tools can the worker see, and where does each call run? |
+| `21.5.md` | 22.5 Who decides whether a tool may run? |
+| `21.6.md` | 22.6 What ends a run, and is its answer good enough? |
+| `21.7.md` | 22.7 Where does the conversation live? |
+| `21.8.md` | 22.8 Where do traces go? |
+| `21.9.md` | 22.9 What does an SDK still leave to me? |
 | `21.10.md` | 22.10 How today's tools realize it |
 | `reference.md` | The companion reference page, whole: the dated boxes, the words, the finished table, what the runs showed and the field guide |
 | `F0.md` | Field guide F0. The repository, the overlay and the pins |

@@ -4,24 +4,24 @@ Chapter 22 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 *This is the lab page for [Chapter 22](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/overview/). The first SDK is the Claude Agent SDK, and the second SDK is the OpenAI Agents SDK. Read each part of the chapter, then do its sitting here. The chapter tells you when. The field guide ([F0](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f0-the-repository-the-overlay-and-the-pins) to [F7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f7-the-tool-runners-default-on-the-wire)) is on the companion page, **[Chapter 22 reference](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/)**.*
 
-| Sitting | Do it after | Tasks | Time |
-| --- | --- | --- | --- |
-| Getting ready, and Sitting 1 | Part A ([22.1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/from-your-loop-to-a-library/), [22.2](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/the-map/)) | Task 0, Task 2, optional Task 1 | about 35 minutes |
-| Sitting 2 | Part B ([22.3](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/one-run-start-to-finish/) to [22.5](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/who-may-run-a-tool/)) | Tasks 3 to 7, optional Task 8 | about 2 hours 5 minutes, 15 more with Task 8 |
-| Sitting 3 | Part C ([22.6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/) to [22.8](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-traces-go/)) | Tasks 9 to 11, optional Task 12 | about 1 hour 15 minutes |
-| Sitting 4 | Part D ([22.9](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-an-sdk-still-leaves-to-you/)) | Tasks 14 and 15, optional Task 13 | about 40 minutes |
+| Sitting | Do it after | Tasks |
+| --- | --- | --- |
+| Getting ready, and Sitting 1 | Part A ([22.1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/from-your-loop-to-a-library/), [22.2](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/the-map/)) | Task 0, Task 2, optional Task 1 |
+| Sitting 2 | Part B ([22.3](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/one-run-start-to-finish/) to [22.5](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/who-may-run-a-tool/)) | Tasks 3 to 7, optional Task 8 |
+| Sitting 3 | Part C ([22.6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-counts-as-done/) to [22.8](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-traces-go/)) | Tasks 9 to 11, optional Task 12 |
+| Sitting 4 | Part D ([22.9](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/what-an-sdk-still-leaves-to-you/)) | Tasks 14 and 15, optional Task 13 |
 
 ## Lab 22: getting ready
 
-The lab runs in four sittings. Each one comes right after its part of the chapter, and the chapter tells you when. Read this setup, then do Task 0. F0 to F7 means a section of the field guide, the step-by-step reference for this lab. It is on the companion page, Chapter 22 reference.
+Read this setup, then do Task 0. F0 to F7 means a section of the field guide, the step-by-step reference for this lab, on the companion page.
 
-**You** **predict**, **the agents write.** This lab uses PRIMM-AI+, as in Chapters [13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/), [14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/overview/) and 20. You *predict* and write it in `ports/ch21.md`. The agent *runs* the code. You *investigate* the gap with the agent ("explain line 53"). Some tasks ask you to *modify*: you say what to change, predict again, and run again. Tasks 6 and 10 ask you to *make* a rule. You write it in plain words, the agent writes the code and its test, and you check the code against your words.
+**You** **predict**, **the agents write.** This lab uses PRIMM-AI+, as in Chapters [13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/), [14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/overview/) and [21](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/overview/). You *predict* and write it in `ports/ch21.md`. The agent *runs* the code. You *investigate* the gap with the agent ("explain line 53"). Some tasks ask you to *modify*: you say what to change, predict again, and run again. Tasks 6 and 10 ask you to *make* a rule. You write it in plain words, the agent writes the code and its test, and you check the code against your words.
 
-**The lab starts from a portable specification.** `docs/worker-spec.md` says, in eleven rows, what the worker must do on any runtime, and how you check each row. Both SDK builds and the port meet it. Task 15 checks it row by row.
+**The lab starts from a portable specification.** `docs/worker-spec.md` says, in eleven rows, what the worker must do on any runtime, and how you check each row. Both SDK builds and the port meet it. Each task's **Worker spec rows** line names the rows it serves. You read the spec in Task 2, and Task 15 checks it row by row.
 
-**The lab's files already hold both workers.** `brightline-lab-ch21.zip` ([download it here](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21.zip)) holds the finished code and its tests, in both languages. So most tasks are predicting and running. In Task 15 you review it all and merge it.
+**The lab's files already hold both workers.** `brightline-lab-ch21.zip` ([download it here](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21.zip)) holds the finished code and its tests, in both languages. So most tasks are predicting and running. In Task 15 you review it all and merge it. Unzip it into a new folder and work in its `brightline-ap/`. It holds its own copy of the Chapter 21 loop and its trace, so you do not need your Lab 21 folder. Its names still say 21 (`docs/chapter-21/`, `ports/ch21.md`, the branch `lab21`, the tags `lab21-start` and `ch21`), because the kit was built when this chapter was Chapter 21. They work as they are.
 
-**This lab costs a little money, and its core path takes about 4 hours 35 minutes.** Tasks 1, 8, 12 and 13 are optional and marked so. Each deepens one idea the concepts already teach, and skipping them leaves nothing later broken. With them, the lab takes about 5 hours 50 minutes. Every run on the first SDK has a cost cap of 10 cents, and every run on both has a turn limit. Expect under $1 on each API in all. The open-model port is free.
+**This lab costs a little money.** Tasks 1, 8, 12 and 13 are optional and marked so. Each deepens one idea the concepts already teach, and skipping them leaves nothing later broken. Every run on the first SDK has a cost cap of 10 cents, and every run on both has a turn limit. Expect under $1 on each API in all. The open-model port is free.
 
 **The date in this lab** is Thursday, April 1, 2027, two days after Lab 21. "This week" still means up to Sunday, April 4.
 
@@ -34,10 +34,10 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 **What you need.**
 
 - Everything Lab 21 needed: **Node 22.19 or later** and **uv** 0.11 or later for Python 3.12 or later. Also git, the GitHub CLI (`gh`), and the desktop apps of Claude Code, Codex and OpenCode version 2, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)).
-- **Your two API keys from Lab 21,** pasted with your own editor into this folder's `.secrets/anthropic.env` and `.secrets/openai.env`, each in a project or workspace with a monthly spending limit (Chapter 21, F1). If you skipped Lab 21, [F1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f1-keys-and-spending-limits) here says what to do.
+- **Your two API keys from Lab 21,** pasted with your own editor into this folder's `.secrets/anthropic.env` and `.secrets/openai.env` (the kit's `.gitignore` keeps `.secrets/` out of git), each in a project or workspace with a monthly spending limit (Chapter 21, F1). If you skipped Lab 21, [F1](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f1-keys-and-spending-limits) here says what to do.
 - **About 1.5 GB of free disk**, most of it for the first SDK, which brings its own harness program to each language (the program that runs the loop, 22.1).
 - **For the port:** Ollama and the small model from Lab 21 ([F6](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f6-ollama-and-an-open-model)).
-- **A connector,** as in Lab 21, by one of two routes. **Route A:** your [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector (the test copy of Brightline's real connector) with a short-lived test token. **Route B:** the local practice connector in the zip, which runs on your own computer.
+- **A connector,** as in Lab 21, by one of two routes. **Route A:** your [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector (the test copy of Brightline's real connector) with a short-lived test token. **Route B:** the local practice connector in the zip, which runs on your own computer. A route A token lasts 10 minutes, so when a run shows the connector as `failed` or `needs-auth`, ask the agent to make a new one. Route B's connector runs only while its terminal is open, so start it again at the start of each sitting.
 
 **How every task runs.** Chapter 12's five steps:
 
@@ -47,9 +47,11 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 4. Evidence: the agent shows what proves the task is done, and you check it against **What good looks like**.
 5. A line in `ports/ch21.md`: the task, your prediction, what happened, and any surprise.
 
+**If you work in Python,** start every prompt with "I work in Python: use the Python files and `npm run sdk:py`." Each prompt gives the TypeScript command first and the Python one in brackets.
+
 **What you do by hand, and only this.** Check that both key files exist (never open them in a chat), and fill in cells of the mapping table. Write two rules in plain words (Tasks 6 and 10), and decide when to merge. Agents do everything else. **No API key or token passes through a chat.**
 
-**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through `npm run sdk` and `npm run sdk:py`, which set a turn limit, and on the first SDK a cost cap. Never set a permission mode that skips permissions. Ask before any call to a model API. Claude Code's and OpenCode's own settings still deny reading `.secrets/`, as in Lab 21, and ask before `npm run sdk`. Codex's settings cannot deny reading a file, so for Codex the rule in `AGENTS.md` is the guard.
+**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through `npm run sdk` and `npm run sdk:py`, which set a turn limit, and on the first SDK a cost cap. Never set a permission mode that skips permissions. Ask before any call to a model API. Claude Code's and OpenCode's own settings still deny reading `.secrets/`, as in Lab 21, and ask before `npm run sdk`. Codex's settings cannot deny reading a file, so for Codex the rule in `AGENTS.md` is the guard. When you approve Codex's commands, refuse any that would print a file in `.secrets/`.
 
 **Two harnesses at once.** Your coding agent is a harness. In this lab it runs a program that starts another harness, the first SDK. They are separate: the worker does not get your coding agent's tools, settings or sign-in. 22.9 shows the options that make sure of it.
 
@@ -64,14 +66,14 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 | `npm run sdk -- --sdk claude "…"` | Runs one question on the first SDK and prints one line per message. `--sdk openai` uses the second SDK, `--sdk open` the second SDK on an open model, and `--sdk runner` the tool runner (rung 2). `npm run sdk:py` is the Python twin |
 | `--max-turns N`, `--budget USD` | Lower the turn limit, or the first SDK's cost cap, for one run |
 | `--persist`, `--resume ID` | Let the first SDK write a **session file** (a file on disk holding the whole conversation, [22.7](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/where-the-conversation-lives/)), or continue an earlier one by its id |
-| `--built-ins` | Task 5 only, TypeScript only: leave the first SDK's own tools on, to compare |
+| `--built-ins` | Task 5 only, TypeScript only, and always with `--max-turns 1`: leave the first SDK's own tools on, to compare |
 | `--trace` | Task 12 only: turn the second SDK's tracing on |
 | `npm run test:sdk`, `npm run test:sdk:py` | The offline tests for this lab, in TypeScript and Python. No model, no network, no key |
 | `npm run connector:practice` | Start the practice connector on `127.0.0.1:8760` (route B). `PRACTICE_BROKEN=search_policy` makes its policy tool answer "try again" |
 
 **Your agents can read this chapter.** `docs/chapter-21/` holds the chapter, the companion reference page and the field guide as text. Each prompt names what to read.
 
-### Task 0. Set up (20 minutes, Claude Code)
+### Task 0. Set up (Claude Code)
 
 **Worker spec rows:** all (setup).
 
@@ -81,13 +83,13 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 
 > Read `README.md`, `AGENTS.md`, and `docs/chapter-21/field-guide.md`, sections F0 to F2.
 >
-> 1. Put this folder under git, with a main branch. Make a first commit of everything here with the message "Start from the end of Chapter 21", and tag that commit `lab21-start`. If git has no name and email yet, set them for this project only. Show me `git log --oneline -1` and `git tag`.
+> 1. Put this folder under git, with a main branch. Show me `git status`, and check that nothing in `.secrets/` is listed. Then make a first commit of everything here with the message "Start from the end of Chapter 21", and tag that commit `lab21-start`. If git has no name and email yet, set them for this project only. Show me `git log --oneline -1` and `git tag`.
 > 2. Install with `npm ci`, then `cd py && uv sync --locked`. Show me the versions of the two agent SDKs in each language (`npm ls --depth=0`, and `uv pip list` in `py/`), and check each is pinned to an exact version.
 > 3. Run `npm run typecheck:sdk`, `npm run typecheck:sdk:py`, `npm run test:sdk` and `npm run test:sdk:py`. Show me the four results as a table. Then run Lab 21's `npm run test:loop` and `npm run test:loop:py`, to show nothing broke.
-> 4. Connector, as in Lab 21's Task 0. On route A, make a new test token as Chapter 21's F2 says (it lasts 10 minutes). On route B, write `CONNECTOR_URL=http://127.0.0.1:8760/mcp` and a random `CONNECTOR_TOKEN` into `.secrets/connector.env` with a short script that never prints it, then tell me to start Lab 21's practice connector in a second terminal with `npm run connector:practice`, as in Lab 21. It reads the token from that file itself, so you never see it.
+> 4. Connector, as in Lab 21's Task 0. On route A, make a new test token as Chapter 21's F2 says (`docs/chapter-20/F2.md`, that chapter under its earlier number). It lasts 10 minutes. On route B, write `CONNECTOR_URL=http://127.0.0.1:8760/mcp` and a random `CONNECTOR_TOKEN` into `.secrets/connector.env` with a short script that never prints it, then tell me to start the practice connector in a second terminal with `npm run connector:practice`. It reads the token from that file itself, so you never see it.
 > 5. Show me the size of the first SDK on disk in each language, and where its harness program is.
 
-**What good looks like:** one commit at tag `lab21-start`. `@anthropic-ai/claude-agent-sdk` 0.3.318 and `@openai/agents` 0.21.0, and Python `claude-agent-sdk` 0.2.178 and `openai-agents` 0.24.0, each pinned exactly. Both type checks clean, and 15 TypeScript tests and 13 Python tests passing. Lab 21's `npm run test:loop` and `npm run test:loop:py` still green: 32 and 22.
+**What good looks like:** one commit at tag `lab21-start`. `@anthropic-ai/claude-agent-sdk` 0.3.318 and `@openai/agents` 0.21.0, and Python `claude-agent-sdk` 0.2.178 and `openai-agents` 0.24.0, each pinned exactly. Both type checks clean, and 15 TypeScript tests and 13 Python tests passing. Lab 21's `npm run test:loop` and `npm run test:loop:py` still green: 32 and 22. On the prediction: yes, each language brings its own copy of the harness program, about 320 MB each on the authors' computer.
 
 **Check it now.** Download [Task 0's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-0.md).
 
@@ -98,14 +100,15 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 | `npm ci` complains about the Node version | Install Node 22.19 or later, open a new terminal, and ask the agent to run step 2 again |
 | A Python import of `agents` fails | Check no file named `agents.py` exists anywhere in `py/`: it would hide the SDK, which is imported as `agents` |
 | The harness program is missing | Ask the agent to reinstall the first SDK's package (F0). Some installers skip optional files for your platform |
-| A warning about a deprecated package, or that a newer pyright is available | Not an error. Go on, and change no pin (`AGENTS.md`) |
+| A warning about a deprecated package, that some packages have install scripts not covered by `allowScripts`, or that a newer pyright is available | Not an error. Go on, and change no pin (`AGENTS.md`) |
+| The practice connector stops with "address already in use" | Another program holds port 8760. Start the connector on a free port, such as `PRACTICE_PORT=8770 npm run connector:practice`, and ask the agent to change `CONNECTOR_URL` in `.secrets/connector.env` to `http://127.0.0.1:8770/mcp` with a short script that prints nothing |
 | A test about `env` fails | Your shell has a variable the worker must not inherit, and the test caught it. Read 22.9 |
 
-## Lab 22, Sitting 1: the map (about 15 minutes, 45 with the optional Task 1)
+## Lab 22, Sitting 1: the map
 
 **Before you start, answer in a line each:** What is the difference between a tool runner and a harness (22.1)? What three kinds of answer go in the mapping table (22.2)? **After this sitting, you can:** fill in the first column of the mapping table from your own code. With the optional Task 1, you can also say where the tool runner put the conversation.
 
-### Task 1 (optional). Your loop, replaced by a tool runner (30 minutes, Claude Code)
+### Task 1 (optional). Your loop, replaced by a tool runner (Claude Code)
 
 *Optional.* This task shows the smallest rung, and the default from 22.1, in a real request. Skip it on the core path: no later task needs it.
 
@@ -175,15 +178,15 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 > 3. Show me the second request's body and its beta header.
 > 4. Delete the branch.
 
-**What good looks like:** two turns, `stop: end_turn | turns: 2`, and the answer names ten invoices, $24,927.63 in all. With line 28, the second request's `messages` holds three entries: the question, the model's reply with its tool call, and the tool result. Without it, the second request holds only the tool result, a `thread` field with `"type": "continue"` and the earlier reply's id, and a beta header naming message threads. A beta header is a line sent with the request that turns on a feature still in testing. There are no instructions, no tools and no history.
+**What good looks like:** two turns, `stop: end_turn | turns: 2`, and the answer names ten invoices, $24,927.63 in all. With line 28 (Python 33), the second request's `messages` holds three entries: the question, the model's reply with its tool call, and the tool result. Without it, the second request holds only the tool result, a `thread` field with `"type": "continue"` and the earlier reply's id, and a beta header naming message threads. A beta header is a line sent with the request that turns on a feature still in testing. There are no instructions, no tools and no history.
 
 **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-1.md).
 
-### Task 2. Read the spec, and start the mapping table (15 minutes, you)
+### Task 2. Read the spec, and start the mapping table (you, then Claude Code)
 
 **Worker spec rows:** all.
 
-**Goal:** you fill in the "What it did" column of the table from what you know, and the agent checks each cell against your Chapter 21 code.
+**Goal:** you fill in the "What it did" column of the table from what you know, and the agent checks each cell against the Chapter 21 loop in this kit.
 
 **Predict:** which row of the table do you expect the SDKs to leave to you?
 
@@ -191,18 +194,18 @@ The lab runs in four sittings. Each one comes right after its part of the chapte
 >
 > 1. Open `docs/sdk-map.md`. It holds the empty table from 22.2, and one more row that Task 10 fills in.
 > 2. Wait while I fill in the "What it did" column.
-> 3. Check each of my cells against `src/loop/claude.ts`, `src/loop/tools.ts`, `limits.ts`, `trace.ts` and `scripts/ask.ts`. Quote the line that proves it, or say where I am wrong.
+> 3. Check each of my cells against `src/loop/claude.ts`, `src/loop/tools.ts`, `limits.ts`, `trace.ts` and `scripts/ask.ts` (in Python: `claude_loop.py`, `tools.py`, `limits.py` and `trace.py` in `py/brightline_ap/loop/`, and `py/brightline_ap/ask.py`). Quote the line that proves it, or say where I am wrong.
 > 4. Do not fill in the SDK columns.
 
-**What good looks like:** thirteen filled rows, each with a line number from your Chapter 21 code, and the fourteenth row left for Task 10. The agent corrects at most a cell or two.
+**What good looks like:** thirteen filled rows, each with a line number from the Chapter 21 loop, and the fourteenth row left for Task 10. The agent corrects at most a cell or two.
 
 **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-2.md).
 
-## Lab 22, Sitting 2: what it can do without asking (about 2 hours 5 minutes, 2 hours 20 with the optional Task 8)
+## Lab 22, Sitting 2: what it can do without asking
 
 **Before you start, answer in a line each:** What four things do you collect about every run, and which might an SDK not give you (22.3)? Why does a worker that reads vendor notes not need a shell, and who runs a hosted tool's call ([22.4](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/tools-and-where-each-call-runs/))? Name the two shapes in which your rule decides a tool call (22.5). **After this sitting, you can:** read one question's run on both SDKs, say which tools each worker can see, and show one rule deciding the same call in both shapes.
 
-### Task 3. One question, one stream (25 minutes, Claude Code)
+### Task 3. One question, one stream (Claude Code)
 
 **Worker spec rows:** 1, 2, 3.
 
@@ -265,13 +268,13 @@ The subtype is a word on the result message that says how the run ended, such as
 
 **A note on dates.** The prompt tells the model that today is Thursday, April 1, 2027. The first SDK's harness also tells the model the real date. On a live run, a model may count "this week" from the real date on the first SDK only. If its invoices differ from the second SDK's, check which date it used, and record it in `ports/ch21.md`.
 
-**What good looks like:** six messages. They are `system init`, two `assistant` messages (a short text, then the tool call), one `user` message with a tool result, one `assistant` message with the answer, and `result: success, turns 2`. The init lists five tools. A warning at the start says the permission callback will not be called for the four allowed tools: that is expected (22.5). The cost is under a cent.
+**What good looks like:** six messages. They are `system init`, two `assistant` messages (a short text, then the tool call), one `user` message with a tool result, one `assistant` message with the answer, and `result: success, turns 2`. The init lists five tools. A warning at the start says the permission callback will not be called for the four allowed tools: that is expected (22.5). A `hook:` line comes between the tool call and its result: the logging hook that Task 8 looks at. The cost is under a cent.
 
 **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-3.md).
 
 **Fill in the table:** Steps 1 to 5 for the first SDK.
 
-### Task 4. The same question, on an agent and a runner (30 minutes, Codex)
+### Task 4. The same question, on an agent and a runner (Codex)
 
 **Worker spec rows:** 1, 3, 8.
 
@@ -317,6 +320,13 @@ The runner, as the loop:
 **The same in Python.**
 
 ```python
+57      set_tracing_disabled(not s.tracing)  # traces leave your process by default, so the lab turns them off (22.8)
+58      # Chapter 21, 21.6: stateless, nothing kept on the provider's side, and the reasoning sent back to you
+59      settings = ModelSettings(store=False) if s.base_url else ModelSettings(
+60          store=False, response_include=["reasoning.encrypted_content"])
+```
+
+```python
 61      agent = Agent(
 62          name="AP worker",
 63          instructions=Path("prompts/ap-worker-sdk.v1.md").read_text(),  # Chapter 21: the instructions
@@ -339,14 +349,14 @@ The runner, as the loop:
 
 - **Lines 45 to 49.** The connector, reached over MCP from your own process. Line 48 is objects inside objects: the request settings hold headers, and the headers hold `Authorization` with the test token. `Bearer` is the standard word that says "a token follows". The Python file, not shown here, passes the same `url` and `headers`.
 - **Lines 50 to 59 (Python 61 to 69).** The agent, as configuration: a name, the instructions read from a file, the model, its settings, the connector, your one tool `flag_invoice`, and the guardrail of Task 10.
-- **Line 55 (Python 65, built a few lines above), the condition.** `a ? b : c` reads "if a base URL is set, use the first settings, else the second". A base URL is set only for the open model in Task 14.
+- **Line 55 (Python 59 and 60, used on line 65), the condition.** `a ? b : c` reads "if a base URL is set, use the first settings, else the second". A base URL, the address the client sends model calls to, is set only for the open model in Task 14.
 - **Line 55, `store: false`.** Both choices say it: the provider does not store the response.
 - **Line 55, the encrypted reasoning.** The hosted model's choice also asks for the encrypted reasoning: the model's reasoning, sent back locked so you can pass it on but not read it (Chapter 21.6). It asks through `providerData`, extra settings passed straight to the provider.
 - **Line 72 (Python 84 to 85).** Run the loop. `[...history, { … }]` (Python `[*history, { … }]`) means "every item of the history, then the new question": your Chapter 21 array. `maxTurns` is 8, from `config.json`, and `signal` lets your timer stop the run. `RunResult<any, any>` only names the type of the result, without checking its details.
 
 **Where the languages differ.** TypeScript makes a runner and calls `runner.run()`. Python calls `Runner.run()` with a run configuration. TypeScript gives the history as `result.history`, Python with `result.to_input_list()`. The Python file is never named `agents.py`, because the SDK is imported as `agents` and a file of that name would hide it.
 
-*Investigate:* which line keeps the provider from storing anything? (Line 55, `store: false`.)
+*Investigate:* which line keeps the provider from storing anything? (Line 55, `store: false`, or Python lines 59 and 60, `store=False`.)
 
 **What good looks like:** `stop: done | model calls: 2` in your language, with the same answer as the first SDK. Six history items: the question, a reasoning item, the `list_open_invoices` call, its result, a reasoning item, and the answer. Every request has `store` false and `include` asking for encrypted reasoning, and none has a previous-response id.
 
@@ -354,7 +364,7 @@ The runner, as the loop:
 
 **Fill in the table:** Steps 1 to 5 for the second SDK. Note the `maxTurns` and `store` lines for Sitting 3.
 
-### Task 5. Turn the built-in tools off (20 minutes, Claude Code)
+### Task 5. Turn the built-in tools off (Claude Code)
 
 **Worker spec rows:** 2, 10.
 
@@ -364,10 +374,12 @@ The runner, as the loop:
 
 > Read 22.4.
 >
-> 1. Show me lines 42 to 54 of `src/sdk/claude-agent.ts`, and lines 80 to 93 of `claude_agent.py`. **Both languages here, on purpose:** the two behave differently. The `env` option on line 48 replaces the environment in TypeScript but only adds to it in Python (22.9).
-> 2. Run `npm run sdk -- --sdk claude --built-ins "What is today's exchange rate for the euro?"`.
-> 3. Run the same without `--built-ins`.
+> 1. Show me lines 42 to 55 of `src/sdk/claude-agent.ts`, and lines 80 to 94 of `claude_agent.py`. **Both languages here, on purpose:** the two behave differently. The `env` option on line 48 replaces the environment in TypeScript but only adds to it in Python (22.9).
+> 2. Run `npm run sdk -- --sdk claude --built-ins --max-turns 1 "What is today's exchange rate for the euro?"`. This one runs in TypeScript, whichever language you use.
+> 3. Run the same question again, in TypeScript too so the two runs compare, without `--built-ins` and without `--max-turns 1`.
 > 4. Show me both init messages' tool lists, counted, and every line that starts with `permission:`.
+
+**Why `--max-turns 1`.** With the built-in tools on, some of their calls never reach your rule: reading a file in this folder, `.secrets/` included, or a shell command that only reads (22.5). A turn limit of 1 lets the model reply once, then stops the run before it is called again. So whatever such a call reads never goes back to the model. The script prints only that a tool result came back, never its text, so it does not reach your coding agent either. Never run `--built-ins` without the turn limit.
 
 **The code.** The options that decide what the worker can see, in TypeScript:
 
@@ -382,6 +394,7 @@ The runner, as the loop:
 52        local: localTools,
 53      },
 54      allowedTools: READ_TOOLS.map((t) => `mcp__brightline__${t}`), // these four run without asking (22.5)
+55      permissionMode: "default", // say it: left out, the mode comes from settings files or the harness's own default (22.5)
 ```
 
 [//]: # "details"
@@ -398,6 +411,8 @@ The runner, as the loop:
 90                             "headers": {"Authorization": f"Bearer {s.connector_token}"}},
 91              "local": local_tools,
 92          },
+93          allowed_tools=[f"mcp__brightline__{t}" for t in READ_TOOLS],  # these four run without asking (22.5)
+94          permission_mode="default",  # say it: left out, the mode comes from settings files or the harness's own default (22.5)
 ```
 
 [//]: # "/details"
@@ -405,19 +420,20 @@ The runner, as the loop:
 **In plain words, line by line:**
 
 - **Line 45 (Python 83).** "If the `--built-ins` switch is on, use the harness's own full tool set, else an empty list." The empty list turns every built-in tool off. Python has no switch: always off.
-- **Lines 46 to 48 (84 to 86).** Read no settings files, use only the servers named here, and pass the harness only a short list of environment variables. 22.9 explains each.
+- **Lines 46 to 48 (84 to 86).** Read no settings files, use only the servers named here, and pass the harness only a short list of environment variables. 22.9 explains each. In Python, `env` only adds to the environment, so `isolate_environment()` first trims the Python program's own (line 107 of `claude_agent.py`).
 - **Lines 49 to 53 (87 to 92).** Two servers. `brightline` is the connector, with its address and the token in a header. `local` is a small server inside your own program that offers `flag_invoice`.
-- **Line 54.** `.map(...)` makes a new list from an old one. For each read-only tool name `t`, it writes `mcp__brightline__` before it, which is how the harness names a server's tools. These four run without asking.
+- **Line 54 (Python 93).** `.map(...)` makes a new list from an old one, as Python's `[... for t in READ_TOOLS]` does. For each read-only tool name `t`, it writes `mcp__brightline__` before it, which is how the harness names a server's tools. These four run without asking.
+- **Line 55 (Python 94).** The permission mode, named on purpose, as 22.5 asks. Left out, it would come from settings files or the harness's own default.
 
 *Investigate:* line 51 is your Chapter 21 connector call, moved into the options. What would lines 46 to 48 each do if left out? Ask the agent.
 
-**What good looks like:** with `--built-ins`, about thirty tools in all. The authors saw 33: 28 built in and the worker's five. They include a shell, file tools, web tools, planning and scheduling tools. The model may ask for the shell or the web fetcher. If it does, you see `permission: Bash -> deny` (or `WebFetch`), and the model says it cannot look that up. Without `--built-ins`, five tools, no permission lines, and a one-turn answer.
+**What good looks like:** with `--built-ins`, about thirty tools in all. The authors saw 33: 28 built in and the worker's five. They include a shell, file tools, web tools, planning and scheduling tools. The model may ask for the shell or the web fetcher. If it does, you see `permission: Bash -> deny` (or `WebFetch`), then `result: error_max_turns, turns 2`: the turn limit stopped the run before the model could reply again. (The first SDK reports one more turn than the model calls it made, as Task 9 shows.) If the model answers at once instead, the result line reads `success, turns 1`. Without `--built-ins`, five tools, no permission lines, and a one-turn answer.
 
 **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-5.md).
 
 **Fill in the table:** "Which tools may run" for the first SDK. You name them, and an empty list turns the rest off.
 
-### Task 6. Specify the permission rule, then check the code (25 minutes, Claude Code)
+### Task 6. Specify the permission rule, then check the code (Claude Code)
 
 **Worker spec rows:** 4, 5.
 
@@ -463,7 +479,23 @@ The callback that uses it:
 ```
 
 [//]: # "details"
-**And the Python callback.**
+**And in Python, the rule and the callback.**
+
+```python
+24  def decide_tool(name: str, tool_input: dict) -> Decision:
+25      """Rule 1, in plain words: flag_invoice may run only for one invoice, named as INV- and four digits,
+26      with a reason of at least 10 characters. Any other tool not on the allow list is denied, with a message."""
+27      short = name.split("__")[-1]
+28      if short == "flag_invoice":
+29          invoice = str(tool_input.get("invoice_number", ""))
+30          reason = str(tool_input.get("reason", ""))
+31          if not re.fullmatch(r"INV-\d{4}", invoice):
+32              return Decision(False, f'Denied: flag one invoice by its number, such as INV-8316, not "{invoice}".')
+33          if len(reason.strip()) < 10:
+34              return Decision(False, "Denied: a flag needs a reason of at least 10 characters.")
+35          return Decision(True)
+36      return Decision(False, f"Denied: {short} is not one of this worker's tools.")
+```
 
 ```python
 75      async def can_use_tool(name, tool_input, context):
@@ -483,18 +515,19 @@ The callback that uses it:
 - **Line 20.** Both checks passed: allow.
 - **Line 22.** Any other tool is denied.
 - **Lines 58 to 60 (Python 76 to 78).** The callback asks the rule, logs `allow` or `deny`, and answers the harness. Line 60 is "if allowed, the allow answer with the input unchanged, else the deny answer with the rule's message". Python writes the same choice as `b if a else c`.
+- **Python lines 27 to 36.** The same rule. `[-1]` keeps the last piece of the name, and `re.fullmatch` must match the whole number, as `^` and `$` do in TypeScript.
 
 *Investigate:* why does line 22 deny every other tool, rather than allow it? (A tool that reaches the callback is, by definition, not on the allow list. The safe answer for an unknown tool is no.) Why does each denial carry a message? (The model reads it as an error result, as in Chapter 21.4, and can tell Ana why.)
 
 **Then modify.** Ana says a flag must also never be raised on an invoice that is already paid. Predict: where would that check belong, in this rule or in the connector? Ask the agent for its answer and its reason, and write yours beside it. ([Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/each-companys-own-rules-and-data/)'s answer: the rule can check the shape of the request, but only the connector and the database know whether an invoice is paid.)
 
-**What good looks like:** your rule's sentences each match a line (or you found a gap, and the agent proposes a test for it). The allow run shows `hook:` then `permission: mcp__local__flag_invoice -> allow`, and a line appears in `out/flags.jsonl`. The deny run shows `permission: … -> deny`, a `tool_result (error)`, and an answer that says the flag was refused. A real model may instead decline with no tool call, or flag the invoices one by one, which rule 1 allows: record which.
+**What good looks like:** your rule's sentences each match a line (or you found a gap, and the agent proposes a test for it). The allow run shows `hook:` then `permission: mcp__local__flag_invoice -> allow`, and a line appears in `out/flags.jsonl`. The deny run shows `permission: … -> deny`, a `tool_result (error)`, and an answer that says the flag was refused. A real model may instead decline with no tool call, or flag the invoices one by one, which rule 1 allows: record which. On prediction (d): the rule denies any other tool that reaches it, but the four read-only tools never reach it, because the allow list lets them run (22.5).
 
 **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-6.md).
 
 **Fill in the table:** "Which tools may run", second half. Your callback decides anything not allowed.
 
-### Task 7. The call handed back for approval, then resume (25 minutes, Codex)
+### Task 7. The call handed back for approval, then resume (Codex)
 
 **Worker spec rows:** 5.
 
@@ -506,10 +539,23 @@ The callback that uses it:
 >
 > 1. Show me lines 24 to 31 and 73 to 82 of `openai-agent.ts` (in Python: lines 43 to 46 and 86 to 96 of `openai_agent.py`).
 > 2. Show me `out/flags.jsonl`.
-> 3. Run the two flag questions from Task 6 with `--sdk openai`, in your language.
+> 3. Run the two flag questions from Task 6, "Please flag INV-8316 for review." and "Flag every invoice for review.", with `--sdk openai` (in Python: `npm run sdk:py`).
 > 4. Show me the `approval:` lines, the history, the answers, and `out/flags.jsonl` again.
 
-**The code.** The hand-back and resume, in TypeScript:
+**The code.** The one tool with an effect, marked to wait for approval, in TypeScript:
+
+```ts
+24  // A function tool with an effect, so it waits for approval before it runs (22.5).
+25  const flagInvoice = tool({
+26    name: "flag_invoice",
+27    description: FLAG_DESCRIPTION,
+28    parameters: z.object({ invoice_number: z.string(), reason: z.string() }),
+29    needsApproval: true,
+30    execute: async ({ invoice_number, reason }) => writeFlag(invoice_number, reason),
+31  });
+```
+
+The hand-back and resume:
 
 ```ts
 73      // A tool that needs approval pauses the run and hands the call back. Your rule decides, and the run resumes from its saved state (22.5)
@@ -528,6 +574,13 @@ The callback that uses it:
 **The same in Python.**
 
 ```python
+43  # A function tool with an effect, so it waits for approval before it runs (22.5).
+44  @function_tool(name_override="flag_invoice", description_override=FLAG_DESCRIPTION, needs_approval=True)
+45  def flag_invoice(invoice_number: str, reason: str) -> str:
+46      return write_flag(invoice_number, reason)
+```
+
+```python
 87              while result.interruptions:
 88                  state = result.to_state()
 89                  for item in result.interruptions:
@@ -544,23 +597,25 @@ The callback that uses it:
 
 **In plain words, line by line:**
 
+- **Line 28.** `z.object(...)` describes the tool's arguments with zod, a library for checking data: two pieces of text.
+- **Line 29 (Python 44).** `needsApproval: true` (Python `needs_approval=True`) is the one setting that makes this tool wait. The run pauses before the tool runs and hands the call back. In Python, `@function_tool(...)` on line 44 turns the function below it into a tool, and its typed parameters, `invoice_number: str, reason: str`, become the tool's arguments.
 - **Line 74 (Python 87).** While the run has paused with calls waiting for a decision, the **interruptions**, keep going.
-- **Line 76 (90).** Ask the same rule as Task 6. `item.name ?? ""` (Python `item.name or ""`) means "the tool's name, or empty text". The arguments arrive as text, so `parseArgs()` (Python `parse_args()`), a small function in `policy.ts`, turns them into an object. If the text is broken, as a small model may send, it gives an empty object. So rule 1 denies the call instead of the run crashing. `?? "{}"` means "or the text `{}` if none came".
+- **Line 76 (90).** Ask the same rule as Task 6. `item.name ?? ""` (Python `item.name or ""`) means "the tool's name, or empty text". The arguments arrive as text, so `parseArgs()`, a small function in `policy.ts` (Python `parse_args()` in `policy.py`), turns them into an object. If the text is broken, as a small model may send, it gives an empty object. So rule 1 denies the call instead of the run crashing. `?? "{}"` means "or the text `{}` if none came".
 - **Line 77 (91).** Log `approve` or `reject`, chosen by `d.allow`.
 - **Lines 78 and 79 (92 to 95).** Approve the call, or reject it with the rule's message, on the saved run state.
 - **Line 81 (96).** Run again, from the saved state, not from the start. Python first gets that state with `result.to_state()` (line 88).
 
-*Investigate:* line 76 calls the same function as Task 6's callback. Why is that worth having? (One rule, one test, two SDKs.)
+*Investigate:* line 76 calls the same function as Task 6's callback. Why is that worth having? (One rule, one test, two SDKs.) Here your rule decides at once, inside the loop, so the pause is short. What would change if a manager had to decide tomorrow? (Your code would save the run state as text and stop. Tomorrow it would read the state back, approve or reject, and run line 81 from it, 22.5.)
 
-**What good looks like:** for INV-8316, `approval: flag_invoice -> approve`, two model calls, a new line in `out/flags.jsonl`, and an answer saying it is flagged. For "every invoice", `approval: flag_invoice -> reject`, no new line in the file, and the answer passes on your rule's refusal. To see the rejection text, ask the agent to print that history item's output: the script prints only each item's name.
+**What good looks like:** the runner is called twice for each question: once until the call is handed back, and once to resume. For INV-8316, `approval: flag_invoice -> approve`, two model calls, a new line in `out/flags.jsonl`, and an answer saying it is flagged. For "every invoice", `approval: flag_invoice -> reject`, no new line in the file, and the answer passes on your rule's refusal. To see the rejection text, ask the agent to print that history item's output: the script prints only each item's name.
 
 **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-7.md).
 
 **Fill in the table:** "Which tools may run" for the second SDK. It is an approval, decided by your rule.
 
-### Task 8 (optional). One hook, before every tool (15 minutes, Claude Code)
+### Task 8 (optional). One hook, before every tool (Claude Code)
 
-*Optional.* 22.5 already teaches what this task shows: a hook runs first, and by default a hook that fails lets the call go ahead. Do it to see the order in the log.
+*Optional.* 22.5 already teaches what this task shows: a hook runs first, and by default a hook that fails counts as no decision, so the call goes on to the other checks. Do it to see the order in the log.
 
 **Worker spec rows:** 5.
 
@@ -603,17 +658,17 @@ The callback that uses it:
 
 *Investigate:* `return {}` means "no decision". The hook only watches. What would it return to deny the call? (A permission decision of deny, with a reason, [F4](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/reference/#f4-the-first-sdks-permissions-and-hooks).)
 
-**What good looks like:** the `hook:` line comes before the `permission:` line every time, matching the order in 22.5. The hook also ran for the read-only tools in Task 3, which the callback never saw. By default, a hook that throws lets the action go ahead.
+**What good looks like:** the `hook:` line comes before the `permission:` line every time, matching the order in 22.5. The hook also ran for the read-only tools in Task 3, which the callback never saw. By default, a hook that throws counts as no decision: the call goes on to the other checks, and can still run.
 
 **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-8.md).
 
 **Fill in the table:** "The trace", first half. A hook can write your own log line for every tool call.
 
-## Lab 22, Sitting 3: was the run safe and successful (about 1 hour 15 minutes, 1 hour 35 with the optional Task 12)
+## Lab 22, Sitting 3: was the run safe and successful
 
 **Before you start, answer in a line each:** What three limits can end a run, and which does neither SDK keep for you (22.6)? Name the places a conversation can live (22.7). Where do traces go by default on each SDK (22.8)? **After this sitting, you can:** stop a runaway run on both SDKs, refuse an answer with no basis, find every copy of a conversation, and say what leaves your process.
 
-### Task 9. The limits, against a tool that says "try again" (25 minutes, Claude Code)
+### Task 9. The limits, against a tool that says "try again" (Claude Code)
 
 **Worker spec rows:** 7.
 
@@ -623,31 +678,56 @@ The callback that uses it:
 
 > Read 22.6.
 >
-> 1. Start a second practice connector with `PRACTICE_PORT=8761 PRACTICE_BROKEN=search_policy` (F2). Even on route A, start this practice connector for this task.
+> 1. Tell me to start a second practice connector in another terminal with `PRACTICE_PORT=8761 PRACTICE_BROKEN=search_policy npm run connector:practice` (F2). Even on route A, start this practice connector for this task. It reads its token from `.secrets/connector.env`, on either route.
 > 2. Run `CONNECTOR_URL=http://127.0.0.1:8761/mcp npm run sdk -- --sdk claude --max-turns 4 "Is there an early-payment discount?"` (in Python: `npm run sdk:py` in place of `npm run sdk`, in every step).
 > 3. Run the same with `--budget 0.01` instead of `--max-turns 4`.
 > 4. Run `CONNECTOR_URL=http://127.0.0.1:8761/mcp npm run sdk -- --sdk openai "Is there an early-payment discount?"`.
 > 5. Show me each run's tool calls and its last two lines.
-> 6. Show me lines 63 to 67 of `claude-agent.ts`.
+> 6. Show me lines 63 to 67 of `claude-agent.ts` (in Python: lines 97 to 99 and 120 of `claude_agent.py`).
+
+**The code.** The first SDK's limits, with Task 11's two session options between them, in TypeScript:
+
+```ts
+63      maxTurns: s.maxTurns, // Chapter 21's turn limit (22.6)
+64      maxBudgetUsd: s.maxBudgetUsd, // Chapter 21's cost cap, now kept by the SDK (22.6)
+65      persistSession: s.persistSession, // false: keep the conversation in memory, write no session file (22.7)
+66      resume: s.resume, // read an earlier conversation back from its session file (22.7)
+67      abortController: abort, // Chapter 21's time limit has no option here, so it stays yours
+```
+
+[//]: # "details"
+**The same in Python.**
+
+```python
+97          max_turns=s.max_turns,  # Chapter 21's turn limit (22.6)
+98          max_budget_usd=s.max_budget_usd,  # Chapter 21's cost cap, now kept by the SDK (22.6)
+99          resume=s.resume,  # read an earlier conversation back from its session file (22.7)
+```
+
+```python
+120         await asyncio.wait_for(run(), timeout=s.time_limit_seconds)  # Chapter 21's time limit stays yours
+```
+
+[//]: # "/details"
 
 **What good looks like:** with the turn limit, four tool calls to `search_policy`, then `result: error_max_turns`, reporting 5 turns. The first SDK reported one more turn than the model calls it made. Count model calls, not reported turns, when you compare SDKs. That is why 22.6 says to read each SDK's definition. With the budget, a few tool calls, then `result: error_max_budget_usd` at a cost a little over 1 cent, because the last response crossed the cap. On the second SDK, `stop: max_turns | model calls: 8`: a run stopped at the limit returns no history, so its tool calls do not print.
 
 **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-9.md).
 
-**Fill in the table:** "Turn limit" for both SDKs, with the difference in counting. "Cost cap" (the first SDK's budget cap, still yours on the second). "Retries" from 22.6: how many times a failed call is tried again, waiting a little longer each time (the **backoff**). "Time limit": still yours on both. Line 67 hands the SDK your abort controller, the switch that stops a run. Your own timer flips it (ask the agent to show you where). "Request deadline": not set by the lab on either SDK, so your time limit covers a call that hangs.
+**Fill in the table:** "Turn limit" for both SDKs, with the difference in counting. "Cost cap" (the first SDK's budget cap, still yours on the second). "Retries" from 22.6: how many times a failed call is tried again, waiting a little longer each time (the **backoff**). "Time limit": still yours on both. Line 67 hands the SDK your abort controller, the switch that stops a run. Your own timer flips it (ask the agent to show you where). In Python, line 120 wraps the whole run in a time limit instead. "Request deadline", how long one call may wait for an answer: not set by the lab on either SDK, so your time limit covers a call that hangs.
 
-### Task 10. Specify the guardrail, then check the code (20 minutes, Codex)
+### Task 10. Specify the guardrail, then check the code (Codex)
 
 **Worker spec rows:** 6.
 
 **Goal:** you write a rule for answers in plain words, check the agent's code and tests against it, then trip it once.
 
-**Predict:** which of these answers should the guardrail stop? (a) "Pay it once it matches its PO (po-matching.md:5)." (b) "Yes." (c) "See po-matching.md line 9." (d) "An invoice with no PO is held until the buyer raises one (po-matching.md:9)."
+**Predict:** which of these answers should the guardrail stop? (PO means purchase order.) (a) "Pay it once it matches its PO (po-matching.md:5)." (b) "Yes." (c) "See po-matching.md line 9." (d) "An invoice with no PO is held until the buyer raises one (po-matching.md:9)."
 
 > Read 22.6.
 >
 > 1. Wait while I write, in `ports/ch21.md`, my rule for what every answer must contain.
-> 2. Show me `citesPolicyLine()` in `src/sdk/policy.ts`, `mustCite` in `openai-agent.ts` lines 33 to 40, and the tests for rule 2 (in Python: `must_cite` at lines 49 to 53 of `openai_agent.py`).
+> 2. Show me `citesPolicyLine()` in `src/sdk/policy.ts`, `mustCite` in `openai-agent.ts` lines 33 to 40, and the tests for rule 2 (in Python: `cites_policy_line()` in `py/brightline_ap/sdk/policy.py`, `must_cite` at lines 49 to 53 of `openai_agent.py`, and the tests in `py/tests/test_sdk.py`).
 > 3. Quote the line that enforces each sentence of my rule.
 > 4. Run `npm run sdk -- --sdk openai "Just tell me yes or no: can we pay INV-8301 today?"`, then the same with `--sdk claude` (in Python: `npm run sdk:py`). Show me the last line of each.
 > 5. Show me where `claude-agent.ts` (in Python: `claude_agent.py`) applies rule 2 after its run, since the first SDK has no guardrail feature.
@@ -683,7 +763,7 @@ The callback that uses it:
 - **Line 37 (52 to 53).** The tripwire is triggered when the answer does **not** cite a policy line (`!` and `not` mean "not").
 - **Line 38 (53).** A small record of the result, `cited` true or false, kept with the run.
 
-*Investigate:* the rule itself is one regular expression, `\([a-z0-9-]+\.md:\d+\)`, matched without regard to capital letters. It means an opening bracket, a file name ending in `.md`, a colon, a number, and a closing bracket. Ask the agent to explain it. What does `tripwireTriggered: true` do to the run? (The runner raises an error, and no answer is given. Line 87 of `openai-agent.ts` catches that error and reports `stop: "guardrail"` with an empty answer.)
+*Investigate:* the rule itself is one regular expression, `\([a-z0-9-]+\.md:\d+\)`, matched without regard to capital letters. It means an opening round bracket `(`, a file name ending in `.md`, a colon, a number, and a closing bracket `)`. Ask the agent to explain it. What does `tripwireTriggered: true` do to the run? (The runner raises an error, and no answer is given. Line 87 of `openai-agent.ts`, or line 105 of `openai_agent.py`, catches that error and reports `stop: "guardrail"` with an empty answer.)
 
 **Then modify.** Predict: would answer (c) pass if the rule were "the answer mentions a policy file"? Ask the agent to say which test would change, without changing the code.
 
@@ -693,7 +773,7 @@ The callback that uses it:
 
 **Fill in the table:** "What counts as done", the fourteenth row, which has no Chapter 21 line. In Chapter 21, "done" was the model's own stop. Here the runner's rule is text with no tool calls, and your guardrail adds what the text must contain.
 
-### Task 11. Find the conversation (30 minutes, Claude Code)
+### Task 11. Find the conversation (Claude Code)
 
 **Worker spec rows:** 8.
 
@@ -703,32 +783,34 @@ The callback that uses it:
 
 > Read 22.7.
 >
-> 1. Run `npm run sdk -- --sdk claude --persist "Which invoices are due this week?"`.
+> 1. Run `npm run sdk -- --sdk claude --persist "Which invoices are due this week?"` (in Python: `npm run sdk:py` in place of `npm run sdk`, in every step but 6).
 > 2. Find the session file under `~/.claude/projects/` by its session id. Show me its path, its number of lines, and the type of each line, without printing the tool results in full.
 > 3. Search it for `Bearer`. Then, with a short script that reads `.secrets/connector.env` itself and prints only a count, search it for the test token's first eight characters. Show me the counts.
 > 4. Run `npm run sdk -- --sdk claude --persist --resume <that id> "Which of those has no purchase order?"`, and show me how many entries the conversation held.
-> 5. Run once without `--persist`. List every file under `~/.claude/` and your home folder's cache folder (`~/Library/Caches/` on macOS, `~/.cache/` on Linux) changed in the last minute. The worker's session file is named by the session id the run printed: any other `.jsonl` file there is your coding agent's own.
-> 6. In `claude_agent.py`, show me the line that turns session files off (line 101). Then run `npm run sdk:py -- --sdk claude "Which invoices are due this week?"` and list the same folders again.
-> 7. Run Task 4's question on the second SDK again, and put its `history:` lines beside the session file's lines, and say where each SDK kept the conversation.
+> 5. Run once without `--persist`. List every file under `~/.claude/` and your home folder's cache folder (`~/Library/Caches/` on macOS, `~/.cache/` on Linux) changed since this run started. The worker's session file is named by the session id the run printed: any other `.jsonl` file there is your coding agent's own.
+> 6. In `claude_agent.py`, show me the line that turns session files off (line 101). Then run the same question once in the other language, without `--persist` (`npm run sdk:py -- --sdk claude "Which invoices are due this week?"`, or `npm run sdk` if you work in Python), and list the same folders again.
+> 7. Run "Which invoices are due this week?" on the second SDK again (`--sdk openai`), and put its `history:` lines beside the session file's lines, and say where each SDK kept the conversation.
 > 8. Delete the worker's session files this task made, each named by the session id its run printed, because they hold business data, and show me they are gone.
 
-**Both languages here, on purpose:** the two behave differently. TypeScript has an option that turns session files off. Python has none, so the lab passes the harness its own flag on line 101, `extra_args={"no-session-persistence": None}`. Step 6 checks that the flag works.
+**Both languages here, on purpose:** the two behave differently. TypeScript has an option that turns session files off. Python has none, so the lab passes the harness its own flag on line 101, `extra_args={"no-session-persistence": None}`. Steps 5 and 6 between them check both ways.
+
+**About step 3.** Your coding agent's own settings stop it from reading `.secrets/`. A short script that you approve can still read the file and print only a count, so the token never reaches the chat. Refuse a script that would print more.
 
 On Windows you work in WSL, as in Lab 21, so the same Linux paths apply inside WSL.
 
-**What good looks like:** a file named `<session id>.jsonl` in a folder named after your working folder's path. It has about 25 lines for a two-call run, including the tool's result. No `Bearer` and no token. The resumed run's conversation carries the first run's entries, then the new question. The answer names INV-8316 ($389.00). The invoice list holds no purchase orders, so the model asks `get_purchase_order` to know: record how many calls it made. The runs without `--persist`, in both languages, write no session file, only small connection logs in the cache folder.
+**What good looks like:** a file named `<session id>.jsonl` in a folder named after your working folder's path. It has about 25 lines for a two-call run, including the tool's result. No `Bearer` and no token. The resumed run's conversation carries the first run's entries, then the new question. The answer names INV-8316 ($389.00). The invoice list holds no purchase orders, so the model asks `get_purchase_order` to know: record how many calls it made. The runs without `--persist`, in both languages, write no session file. The harness still writes a few small files of its own: connection logs in the cache folder, and in your home folder `~/.claude.json`, a backup of it under `~/.claude/backups/`, and a file under `~/.claude/plugins/`. None of them holds the conversation.
 
 **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-11.md).
 
 **Fill in the table:** "Where the conversation lives". First SDK: a session file by default, nothing on disk with the option. Second SDK: the history your code passes, with storage off.
 
-### Task 12 (optional). Turn tracing on once, and see what leaves (20 minutes, Codex)
+### Task 12 (optional). Turn tracing on once, and see what leaves (Codex)
 
 *Optional.* It sends test data to the provider's dashboard, so do it only if your course or company allows that. On the core path, fill in "The trace" in Task 15, from 22.8 and [22.10](https://agentfactory.panaversity.org/building-ai-workers/agent-sdks/how-todays-tools-realize-it/), and go through 22.8's five checks on paper.
 
 **Worker spec rows:** 9.
 
-**Goal:** one run with tracing on, test data only, then a look at the dashboard, then tracing off again. You see what the second SDK sends out by default, and you choose where traces go.
+**Goal:** one run with tracing on, test data only, then a look at the dashboard, then tracing off again (`--trace` lasts one run). You see what the second SDK sends out by default, and you choose where traces go.
 
 **Predict:** with tracing on, which of these will the provider's trace hold? The question, the tool call's arguments, the tool's result, the answer, the test token.
 
@@ -739,17 +821,17 @@ On Windows you work in WSL, as in Lab 21, so the same Linux paths apply inside W
 > 3. Show me line 43 of `openai-agent.ts` (in Python: line 57 of `openai_agent.py`).
 > 4. From the SDK's tracing guide, explain how to replace the default trace processor with one that writes to a local file.
 
-**What good looks like:** a trace in the dashboard with spans for the agent, each model call, the tool calls and the guardrail. You find the question, the arguments and the tool's result in it: invoice numbers and amounts. You do not find the token. Your notes in `ports/ch21.md` say what Brightline would need to agree to before tracing a real run.
+**What good looks like:** a trace in the dashboard with spans for the agent, each model call, the tool calls and the guardrail. You find the tool call's arguments and its result in it: invoice numbers and amounts. The question and the answer may not show. When the authors read what the SDK sent, each model call's span held only a response id, and this worker stores no responses. You do not find the token. Your notes in `ports/ch21.md` say what Brightline would need to agree to before tracing a real run.
 
 **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-12.md).
 
 **Fill in the table:** "The trace" for both SDKs. The first exports OpenTelemetry through settings you set, and the second sends traces to the provider unless you turn it off or replace its processor.
 
-## Lab 22, Sitting 4: what you still own, and ship (about 40 minutes, 50 with the optional Task 13)
+## Lab 22, Sitting 4: what you still own, and ship
 
 **Before you start, answer in a line each:** Name four things an SDK in your own process still leaves to you (22.9). Which part of the worker spec does each one serve (`docs/worker-spec.md`)? **After this sitting, you can:** show a finished mapping table, run the second SDK's worker on an open model, and merge a reviewed change.
 
-### Task 13 (optional). Compare the SDK's record with your Chapter 21 trace (10 minutes, Claude Code)
+### Task 13 (optional). Compare the SDK's record with your Chapter 21 trace (Claude Code)
 
 *Optional.* It shows, item by item, what the second SDK's history keeps that your Chapter 21 trace did not. No later task needs it.
 
@@ -761,8 +843,8 @@ On Windows you work in WSL, as in Lab 21, so the same Linux paths apply inside W
 
 > Read 22.3 and 22.8.
 >
-> 1. Run `npm run sdk -- --sdk openai "What does our policy say about an invoice with no purchase order? Cite the line."`, the question of Lab 21's Task 10, and keep its history.
-> 2. Show me, side by side, Lab 21's trace of the same question (`ports/trace-good.jsonl`, made in Lab 21's Task 10) and that history.
+> 1. Run `npm run sdk -- --sdk openai "What does our policy say about an invoice with no purchase order? Cite the line."` (in Python: `npm run sdk:py`), the question of Lab 21's Task 10, and keep its history.
+> 2. Show me, side by side, the Chapter 21 trace of the same question that this kit ships (`ports/trace-good.jsonl`, from Lab 21's Task 10) and that history.
 > 3. Name each span's matching item.
 > 4. List the items that have no span.
 
@@ -770,7 +852,7 @@ On Windows you work in WSL, as in Lab 21, so the same Linux paths apply inside W
 
 **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-13.md).
 
-### Task 14. Port: the second SDK on an open model (20 minutes, OpenCode)
+### Task 14. Port: the second SDK on an open model (OpenCode)
 
 **Worker spec rows:** all, on the open model.
 
@@ -780,31 +862,31 @@ On Windows you work in WSL, as in Lab 21, so the same Linux paths apply inside W
 
 > Read 22.10's open-source box, the open-source box in `docs/chapter-21/reference.md`, and F6.
 >
-> 1. Start Ollama, listening on `127.0.0.1` only, with the larger context in F6, and the model pinned in `src/sdk/config.json` as `models.open`.
+> 1. Tell me how to start Ollama in another terminal, listening on `127.0.0.1` only, with the larger context in F6, and the model pinned in `src/sdk/config.json` as `models.open`.
 > 2. Show me lines 55 and 60 of `openai-agent.ts` (in Python: lines 59 to 60 and 70 of `openai_agent.py`).
 > 3. Run `npm run sdk -- --sdk open "Which invoices are due this week?"` three times (in Python: `npm run sdk:py -- --sdk open "…"`).
 > 4. For each run, show me the tool calls, whether the arguments parsed, and the last line.
 > 5. Record in `ports/ch21.md` what differed from the hosted model.
-> 6. Stop the model server.
+> 6. Tell me to stop the model server.
 
 **What good looks like:** the worker runs with only the provider's settings changed. They are the base URL (the address the client sends model calls to, here your own computer), a placeholder key, the Responses API (the second provider's model API, which Chapter 21 used), and the model. The encrypted-reasoning setting is left out, because Ollama ignores it: a thinking model's reasoning comes back as plain text, not encrypted. At least one run calls `list_open_invoices` and answers. Some runs may call the wrong tool, skip the citation (so the guardrail stops the run), or answer without a tool. Tracing stays off: with it on, the traces would still go to the provider (22.8).
 
 **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch21-key-task-14.md).
 
-### Task 15. Finish the table, and ship (20 minutes, Claude Code)
+### Task 15. Finish the table, and ship (Claude Code)
 
 **Worker spec rows:** all.
 
-**Goal:** you finish the mapping table and write its last part in your own words. Then two reviewers check everything, and you merge a pull request tagged `ch21`.
+**Goal:** you finish the mapping table and write its last part in your own words. Then two reviewers check everything, and you merge a pull request and tag the merge `ch21`.
 
-> 1. Wait while I fill in any cells of `docs/sdk-map.md` I have left, and write "What this still leaves to me" at the end, one line per row of 22.9's table.
+> 1. Wait while I fill in any cells of `docs/sdk-map.md` I have left, and write "What this still leaves to me" at the end, one line per row of 22.9's "Still yours" table.
 > 2. Compare my table with the finished table in `docs/chapter-21/reference.md`. List every cell where mine differs, quoting the line of code or the message that decides who is right.
 > 3. Check each row of `docs/worker-spec.md` against both builds and the port, and list any row a runtime could not meet.
 > 4. Show me every pin: both agent SDKs and both client SDKs in `package.json` and `py/pyproject.toml`, and the model ids in `src/sdk/config.json`.
 > 5. Run `npm run typecheck:sdk`, `npm run typecheck:sdk:py`, `npm run test:sdk`, `npm run test:sdk:py`, `npm run test:loop` and `npm run test:loop:py`, and show me the table.
 > 6. Make sure `ports/ch21.md` has every prediction, every result and my two rules. Commit it and `docs/sdk-map.md` on a branch `lab21`.
-> 7. Run `/code-review` and `/security-review` on the branch, and fix or answer every finding. Check especially: no permission mode that skips checks, no built-in tools, `settingSources` empty, `strictMcpConfig` on, the environment list short, tracing off by default, `store` false, and no key or token printed or committed.
-> 8. If this repository has no GitHub remote yet, make a private one with `gh repo create brightline-ap-ch21 --private --source . --push`. Open the pull request from the branch `lab21`, with the template, and show me both reviews. I will merge.
+> 7. Run `/code-review` and `/security-review` on the branch, and fix or answer every finding. Check especially: no permission mode that skips checks, no built-in tools, `settingSources` empty, `strictMcpConfig` on, the environment list short (and in Python, `isolate_environment()` called before the query), auto memory off, session files off unless `--persist` (in Python, the flag on line 101), tracing off by default, `store` false, and no key or token printed or committed anywhere in the history (`git log --all -- .secrets` shows nothing).
+> 8. If this repository has no GitHub remote yet, make a private one with `gh repo create brightline-ap-ch21 --private --source . --push`. Open the pull request from the branch `lab21`, with the template in `.github/pull_request_template.md`, and show me both reviews. I will merge.
 > 9. After I say it is merged, tag the merge `ch21`, push the tag, and in a clean clone of the tag install (`npm ci`, then `cd py && uv sync --locked`) and run the six checks of step 5.
 
 **What good looks like:** every cell of the table filled, and at most two differ from the finished table, each with a reason. "Time limit" says "still yours" for both SDKs, and "Cost cap" for the second. Both reviews have no open finding. The clean clone passes all six checks with no key, because every Lab 22 test is offline.
@@ -820,14 +902,14 @@ On Windows you work in WSL, as in Lab 21, so the same Linux paths apply inside W
 | The answer is empty, ending `stop: no_citation` (first SDK) or `stop: guardrail` (second SDK) | The answer cited no policy line, so rule 2 held it back (Task 10) | Not a failure, and not a reason to stop: record it and go on |
 | The init message lists tools you did not add | The harness read this computer's settings or MCP servers, or the built-in tools are on | Check `tools: []`, `settingSources: []` and `strictMcpConfig: true` (22.4, 22.9) |
 | A warning that the permission callback will not be called for some tools | Those tools are on the allow list | Expected for the four read-only tools (22.5). If it names `flag_invoice`, take it off the allow list |
-| `permission:` lines never appear, though the model called `flag_invoice` | The permission mode is not `default`, or a settings file allows the tool | Check that line 55 of `claude-agent.ts` reads `permissionMode: "default",`, and that `settingSources` is empty |
+| `permission:` lines never appear, though the model called `flag_invoice` | The permission mode is not `default`, or a settings file allows the tool | Check that line 55 of `claude-agent.ts` reads `permissionMode: "default",` (Python line 94, `permission_mode="default"`), and that `settingSources` is empty |
 | The init message shows the connector as `failed` or `needs-auth` | The connector is not running, or the token is wrong or expired | Route A: a new test token. Route B: restart the practice connector with the token in `.secrets/connector.env` |
 | `error_max_turns` on a simple question | The model kept calling tools | Read the stream: a tool that fails or returns too little invites more calls |
 | The Python worker's init lists servers the TypeScript one does not | The Python SDK adds `env` to the environment rather than replacing it | Ask the agent to show that `isolate_environment()` runs before the query. It is a function the lab provides, and it trims the Python program's own environment (22.9) |
 | `ModuleNotFoundError` or the wrong `Agent` in Python | A file named `agents.py` hides the SDK | Rename it |
-| The second SDK's run fails about a reasoning item not found | Storage is off, and the reasoning came back without its encrypted content | Check line 55 of `openai-agent.ts` (Task 4): `include` must ask for encrypted reasoning on the hosted model |
+| The second SDK's run fails about a reasoning item not found | Storage is off, and the reasoning came back without its encrypted content | Check line 55 of `openai-agent.ts` (Python lines 59 and 60, Task 4): `include` must ask for encrypted reasoning on the hosted model |
 | `stop: guardrail` on every question | The model's answers carry no `(file.md:N)` citation | Read the answers. Check the instructions ask for a citation, and that `search_policy` is reachable |
-| The run stops and nothing happens | A tool needing approval paused the run and handed the call back, and the approval loop at line 74 of `openai-agent.ts` (`while (result.interruptions.length > 0)`) did not run | Check the worker reads `result.interruptions` after every run |
+| The run stops and nothing happens | A tool needing approval paused the run and handed the call back, and the approval loop at line 74 of `openai-agent.ts` (`while (result.interruptions.length > 0)`, Python line 87) did not run | Check the worker reads `result.interruptions` after every run |
 | An open model never calls a tool | Small models are weaker at tool calls. Ollama's default context, 4k tokens on less than 24 GiB of graphics memory, can also be too small for the worker's instructions and tools | Start Ollama with the larger context in F6. If it still never calls one, record it, and try again, or another pinned model (Task 14) |
 
 ### Apply it to your vertical (optional)

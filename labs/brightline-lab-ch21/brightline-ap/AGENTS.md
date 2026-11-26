@@ -48,7 +48,7 @@
 - The person predicts first, in `ports/ch21.md`, as in Lab 21.
 - Changes for experiments go on a throwaway branch, and the branch is deleted at the end of the task. Merge nothing until Task 15.
 - Never set a permission mode that skips checks: no `bypassPermissions` and no `allowDangerouslySkipPermissions`.
-- Never turn the first SDK's built-in tools on, except with `--built-ins` in Lab 22, Task 5.
+- Never turn the first SDK's built-in tools on, except with `--built-ins --max-turns 1` in Lab 22, Task 5. With them on, a read of `.secrets/` or a read-only shell command never reaches the worker's rule, and one turn keeps what such a call reads from going back to the model.
 - Keep the worker isolated: `settingSources: []`, `strictMcpConfig: true` and the short environment list in `src/sdk/claude-agent.ts` and its Python twin.
 - Keep `store: false` on the second SDK, and tracing off unless the person passes `--trace` (Lab 22, Task 12).
 - Never name a Python file `agents.py`: the second SDK is imported as `agents`.

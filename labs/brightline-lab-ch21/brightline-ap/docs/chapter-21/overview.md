@@ -6,9 +6,9 @@ From *The AI Agent Factory*, Chapter 22, for the coding agents working in this r
 
 **In this chapter, a library runs those 60 lines for you.** An **SDK** (software development kit, a provider's code library) for agents takes the loop off your hands. It calls the model, runs the tools, keeps the conversation and decides when the run is over. You get a lot for very little code. You also get defaults you did not choose, files you did not ask for, and settings sent to the model that you never wrote.
 
-**Chapter 21 left three questions.** Its rule was: the model only asks, and your code decides whether each tool runs, keeps the whole conversation, and decides when the loop stops. Its Figure 21.2 named what an agent SDK would hide: who runs the tools, who keeps the conversation, who decides when to stop. This chapter answers each one for both SDKs: who runs the tools (22.4, 22.5), who keeps the conversation (22.7), and who decides when to stop (22.6). The SDK's code now does the work. The decisions behind it stay yours.
+**Chapter 21 left three questions.** Its rule was: the model only asks, and your code decides whether each tool runs, keeps the whole conversation, and decides when the loop stops. Its Figure 21.2 showed your code doing three jobs that an agent SDK now does out of your sight: running the tools, keeping the conversation, deciding when to stop. This chapter answers each one for both SDKs: who runs the tools (22.4, 22.5), who keeps the conversation (22.7), and who decides when to stop (22.6). The SDK's code now does the work. The decisions behind it stay yours.
 
-**So this chapter does what most books skip.** Most books teach one framework and treat it as the way agents work. This chapter takes two SDKs that do the same job in different shapes, and maps every feature to the line of your Chapter 21 loop it replaces. You learn what is being hidden before you rely on it. Then you can use either SDK, or the next one, with your eyes open.
+**So this chapter compares two SDKs.** One framework is not the way agents work. This chapter takes two SDKs that do the same job in different shapes, and maps every feature to the line of your Chapter 21 loop it replaces. You learn what is being hidden before you rely on it. Then you can use either SDK, or the next one, with your eyes open.
 
 *Figure 22.1. The ladder. Each rung up does more for you and shows you less.*
 
@@ -30,9 +30,9 @@ From *The AI Agent Factory*, Chapter 22, for the coding agents working in this r
 3. **How do I know the run was safe and successful?** (Part C)
 4. **What must I still own?** (Part D)
 
-**The agents write, and you predict.** As in Chapters 13, 14 and 21, your coding agents from Chapter 12 write every file. You work through each one with PRIMM-AI+: predict what it will do, run it, investigate the gap, then tell the agent what to change and predict again.
+**The agents write, and you predict.** As in Chapters 13, 14 and 21, coding agents write the code. The lab's kit holds the finished worker, and your coding agents from Chapter 12 run it and make each change you ask for. You work through each file with PRIMM-AI+: predict what it will do, run it, investigate the gap, then tell the agent what to change and predict again.
 
-**One language is enough.** Every lab file exists in TypeScript and in Python. Pick one and do the whole lab in it. Each excerpt shows TypeScript, with the Python lines under it. Only twice do the languages differ in a way that matters for safety, and 22.7 and 22.9 point them out.
+**One language is enough.** Every lab file exists in TypeScript and in Python. Pick one and do the lab in it. Task 0 installs and tests both, and two steps use the other language too: Task 5's comparison runs in TypeScript only, and Task 11 checks both languages' ways of turning session files off. Each excerpt shows TypeScript, with the Python lines under it. Only twice do the languages differ in a way that matters for safety, and 22.7 and 22.9 point them out.
 
 After this chapter you can answer the four questions for any SDK:
 
@@ -45,15 +45,17 @@ After this chapter you can answer the four questions for any SDK:
 
 *Where the chapter goes, at a glance. Every line here is taught later.*
 
-**The two SDKs in this chapter, side by side.** From here on the chapter calls them only "the first SDK" and "the second SDK", so the ideas stay true for any SDK. The key in What you will build repeats this.
+**The two SDKs in this chapter, side by side.** From here on the chapter calls them only "the first SDK" and "the second SDK", so the ideas stay true for any SDK. This table is the key.
 
 | | The first SDK (the Claude Agent SDK) | The second SDK (the OpenAI Agents SDK) |
 | --- | --- | --- |
-| **Its shape** | A harness used as a library | An agent and a runner |
+| **The model API it runs on** | Chapter 21's first API | Chapter 21's second API |
+| **Its shape** | A harness used as a library: your code starts a whole agent program and steers it with options | An agent and a runner: you describe the agent as configuration, and a small loop in your own program runs it |
 | **How you see a run** | A stream of messages as it happens | A result with its history at the end |
 | **How the lab decides a tool with an effect** | Your rule, as a callback: the SDK asks it and carries on at once | Your rule, as an approval: the run pauses and hands the call back to your code |
-| **What stops a runaway run** | A turn limit and a cost cap. Time is yours | A turn limit. Cost and time are yours |
+| **What stops a runaway run** | A turn limit and a cost cap. You set the time limit yourself | A turn limit. You set cost and time limits yourself |
 | **What you must switch off** | Built-in tools, settings files, auto memory (notes the harness keeps for later runs), other servers, the inherited environment, session files | Tracing, and storage on the provider's side |
+| **Its lab file** | `claude-agent.ts` (Python `claude_agent.py`) | `openai-agent.ts` (Python `openai_agent.py`) |
 
 **The one sentence to remember.** An SDK may supply defaults for tools, limits, state and what counts as done, but you, the owner, choose, check and enforce the rules the business needs.
 
@@ -74,20 +76,13 @@ None of this was a bug. Each was a default, written in the documentation. This c
 | **C. How do I know the run was safe and successful?** | 22.6 to 22.8, then Sitting 3 | Limits and an answer check tested, every copy of a conversation found |
 | **D. What must I still own?** | 22.9, then Sitting 4 | The port to an open model, and a reviewed pull request |
 
-**Time and cost.** The lab's core path takes about 4 hours 35 minutes, or 5 hours 50 with four optional tasks. It should cost under $1 on each API, and the open-model port is free. **Managers** can read 22.1, 22.2, 22.5, 22.9 and the invariant in 22.10, the rule that holds whatever the product.
+**Sittings and cost.** The lab takes four sittings, one after each part, and four of its tasks are optional. It should cost under $1 on each API, and the open-model port is free. **Managers** can read 22.1, 22.2, 22.5, 22.9 and the invariant in 22.10, the rule that holds whatever the product.
 
 ## What you will build
 
-**The key for this chapter.** The lab uses two SDKs, and the chapter calls them by these names only.
-
-| Name in this chapter | What it is | Its shape | Lab file |
-| --- | --- | --- | --- |
-| **The first SDK** | The Claude Agent SDK, which runs on Chapter 21's first API | **A harness used as a library:** your code starts a whole agent program and steers it with options | `claude-agent.ts` (Python `claude_agent.py`) |
-| **The second SDK** | The OpenAI Agents SDK, which runs on Chapter 21's second API | **An agent and a runner:** you describe the agent as configuration, and a small loop in your own program runs it | `openai-agent.ts` (Python `openai_agent.py`) |
-
 **Where you are.** At the end of Chapter 21, Brightline's AP worker (AP is accounts payable, the team that checks and pays bills) runs on a loop you can follow line by line. It reaches Brightline's connector over MCP with four read-only tools, and it has a turn limit, a cost cap, a time limit and a trace. Ana Morales, Brightline's AP analyst, asks the test questions.
 
-**What you build.** Coding agents write every file. You specify, predict and approve. You end with the same worker on both SDKs, with every built-in tool off, one new tool that changes something (`flag_invoice`, which holds an invoice's payment) decided by one rule you wrote, an answer check, and no conversation stored on the provider's side. You fill in the mapping table, and port the second SDK's worker to an open model on your own computer. The worker still runs as you, with a short-lived test token. Chapter 23 gives each person their own.
+**What you build.** You specify, predict and approve, and coding agents do the rest. You end with the same worker on both SDKs, with every built-in tool off, one new tool that changes something (`flag_invoice`, which puts an invoice's payment on hold) decided by one rule you specified, an answer check, and storage on the provider's side turned off. You fill in the mapping table, and port the second SDK's worker to an open model on your own computer. The worker still runs as you, with a short-lived test token. Chapter 23 gives each person their own.
 
 **Every word is defined where it first appears.** The full word list is on the companion page, **Chapter 22 reference**.
 
@@ -95,25 +90,29 @@ None of this was a bug. Each was a default, written in the documentation. This c
 
 **Part A. What work did the SDK take over?** Two concepts, then the lab's setup and Sitting 1, where the mapping table begins.
 
-- 22.1 From your loop to a library
-- 22.2 The map
+- 22.1 What does a library take over from my loop?
+- 22.2 Where did each line of my loop go?
 
 **Part B. What can it do without asking me?** Three concepts: how an SDK runs the loop and reports it, which tools the worker can see, and who decides whether a tool may run. Each holds for both kinds of SDK. Then Sitting 2.
 
-- 22.3 One run, start to finish
-- 22.4 Tools: which the worker can see, and where each call runs
-- 22.5 Who may run a tool
+- 22.3 What does an SDK tell me about a run?
+- 22.4 Which tools can the worker see, and where does each call run?
+- 22.5 Who decides whether a tool may run?
 
 **Part C. How do I know the run was safe and successful?** Three concepts: what counts as done and the limits around a run, where the conversation lives, and where traces go. Then Sitting 3.
 
-- 22.6 What counts as done, and the limits around it
-- 22.7 Where the conversation lives
-- 22.8 Where traces go
+- 22.6 What ends a run, and is its answer good enough?
+- 22.7 Where does the conversation live?
+- 22.8 Where do traces go?
 
 **Part D. What must I still own?** One concept: everything an SDK in your own process still leaves to you. Then Sitting 4, where the table is finished, the worker is ported to an open model, and the work is reviewed and shipped.
 
-- 22.9 What an SDK still leaves to you
+- 22.9 What does an SDK still leave to me?
 
-**The reference.** The word list, the full dated boxes and the field guide (F0 to F7) are on the companion page, Chapter 22 reference (in the lab, `docs/chapter-21/reference.md`).
+**Today's products.** After Sitting 4, one concept names today's products and their options, in dated boxes.
 
 - 22.10 How today's tools realize it
+
+**The reference.** The word list, the full dated boxes and the field guide (F0 to F7) are on the companion page, Chapter 22 reference (in the lab, `docs/chapter-21/reference.md`, under the chapter's earlier number).
+
+**Check yourself.** The chapter ends with Check yourself: the flashcards, sixteen questions with outline answers, and a final quiz round.

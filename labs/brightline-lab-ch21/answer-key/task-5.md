@@ -4,6 +4,6 @@ For you, after the task. Open it in a text editor, never in the agent. Every liv
 
 **Your prediction, if it matched:** About thirty, and a shell or web tool. Record what your model actually tried.
 
-**What a good run shows:** Built-ins on: 33 tools (28 built in). Model may try Bash or WebFetch, denied. Off: 5 tools, one turn.
+**What a good run shows:** Built-ins on, with `--max-turns 1`: 33 tools (28 built in). Model may try Bash or WebFetch, denied, then `error_max_turns` after its one turn. Off: 5 tools, one turn.
 
-**Seen in the offline run:** Yes (Bash tried and denied).
+**Seen in the offline run:** Yes (Bash tried and denied). On November 26, 2026, a stand-in that asked to read `.secrets/` had its read run without the permission callback, as Anthropic's permissions page says happens in `default` mode. With a turn limit of 1, the result never went back to the model.
