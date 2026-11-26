@@ -2,7 +2,7 @@ From *The AI Agent Factory*, Chapter 21, for the coding agents working in this r
 
 # Field guide: the two APIs and an open model, step by step
 
-*The concepts named no product. This field guide names them, and gives each step exactly. Read F0 and F1 before Task 0. Each lab task names the other sections it needs. Every fact here was checked on its owner's page on November 5, 2026.*
+*The concepts named no product. This field guide names them, and gives each step exactly. Read F0 and F1 before Task 0. Each lab task names the other sections it needs. Every fact here was checked on its owner's page on November 5, 2026, or on the later date its line gives.*
 
 **If a menu name or a message differs** from what you see, trust what you see, and record it in `ports/ch20.md`.
 
@@ -10,13 +10,13 @@ From *The AI Agent Factory*, Chapter 21, for the coding agents working in this r
 
 **Where to install the tools.** Node.js from nodejs.org, version 22.19 or later, the minimum that Lab 19 set. The test runner needs 22.12 or later. uv from docs.astral.sh/uv. Git from git-scm.com. The GitHub CLI from cli.github.com, then `gh auth login`. On Windows, WSL from Microsoft's "Install WSL" page (`wsl --install`). Python 3.12 or later comes with uv (`uv python install`).
 
-**What the zip holds.** `brightline-lab-ch20.zip` unpacks to one folder, `brightline-lab-ch20/`. In it are `brightline-ap/`, a plain folder with no git history, and beside it the lab's steps as `LAB.md`, their figures in `img/`, a `README.md` and `answer-key/`. Task 0 starts `brightline-ap/`'s git history and tags `lab20-start`. That folder has what Chapter 19 left, plus this chapter's files, and its README has the list. Never give the answer key to an agent.
+**What the zip holds.** `brightline-lab-ch20.zip` unpacks to one folder, `brightline-lab-ch20/`. In it are `brightline-ap/`, a plain folder with no git history, and beside it the lab's steps as `LAB.md`, their figures in `img/`, a `README.md` and `answer-key/`, which holds the expected results and example files. Each task's own key is a separate download, linked from the task. Task 0 starts `brightline-ap/`'s git history and tags `lab20-start`. That folder has what Chapter 19 left, plus this chapter's files, and its README has the list. Never give the answer key to an agent.
 
 | Path | What it is |
 | --- | --- |
 | `tools/ap-tools.json` | The four tools, defined once, in JSON Schema |
 | `prompts/ap-worker.v1.md` | The worker's instructions, versioned |
-| `src/loop/` | The loop in TypeScript: `claude.ts`, `openai.ts`, `tools.ts`, `limits.ts`, `trace.ts`, `stream.ts`, and `config.json` with `config.ts`, which reads it (Python reads the same `config.json` directly) |
+| `src/loop/` | The loop in TypeScript: `claude.ts`, `openai.ts`, `tools.ts`, `limits.ts`, `trace.ts`, `stream.ts`, and `config.json` with `config.ts`, which reads it (Python reads the same `config.json` directly). Also `mine.ts`, the empty function for the loop you write in Task 5b (Python: `mine.py`) |
 | `py/brightline_ap/loop/` | The same in Python: `claude_loop.py`, `openai_loop.py`, `tools.py`, `limits.py`, `trace.py`, `stream.py` |
 | `scripts/` (TypeScript), and `py/brightline_ap/ask.py` and `py/brightline_ap/experiments.py` (Python) | `ask`, `break`, `stateful` and `stream:demo`, in both languages |
 | `py/brightline_ap/practice_connector.py` | The local practice connector (route B), which reads `data/` and `docs/policies/` |
@@ -111,7 +111,7 @@ Both are what the lab's wire tests capture from the real SDK clients, with long 
 
 ## F5. Prices, usage and caching
 
-**Copy the prices on the day you run the lab.** Open each provider's own pricing page, and find the pinned model. Copy four prices, in dollars per million tokens, into `src/loop/config.json`. They are `input`, `output`, `cacheWrite` (input written to the cache) and `cacheRead` (input read from it). Write the date in `checked_on`. The second API reports cache writes separately in its usage. So copy its cache-write price if the page lists one, and otherwise use the input price. `ask` refuses to run while all the prices for a paid API are zero. The open model is free, so its prices stay zero.
+**Copy the prices on the day you run the lab.** Open each provider's own pricing page, and find the pinned model. Copy four prices, in dollars per million tokens, into `src/loop/config.json`. They are `input`, `output`, `cacheWrite` (input written to the cache) and `cacheRead` (input read from it). Write the date in `checked_on`. If a page lists two cache-write prices, one for each cache lifetime, copy the default one: five minutes on the first API, 30 minutes on the second. The second API reports cache writes separately in its usage. So copy its cache-write price if the page lists one, and otherwise use the input price. `ask` refuses to run while all the prices for a paid API are zero. The open model is free, so its prices stay zero.
 
 **How the lab works out cost.** First API: `input_tokens` at the input price, plus `cache_creation_input_tokens` at the cache-write price, plus `cache_read_input_tokens` at the cache-read price, plus `output_tokens` at the output price. Second API: `input_tokens` minus the cached and cache-written parts, at the input price, plus those parts at their own prices, plus `output_tokens`. Both calculations are in `limits.ts` and `limits.py`.
 

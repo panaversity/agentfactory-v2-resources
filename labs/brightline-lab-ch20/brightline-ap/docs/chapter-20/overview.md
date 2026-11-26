@@ -52,12 +52,12 @@ That back and forth is the whole agent: two messages to the model, one tool run,
 
 **The model only asks. Your code decides whether to run each tool, owns the whole conversation, and decides when the loop stops.**
 
-**The agents write the code. You explain it, then write your own.** As in Chapters 13 and 14, your coding agents from Chapter 12 write it. You work through it with the PRIMM-AI+ method: predict what a line will do, run it, and investigate any difference from your prediction. Then ask for a change, and predict again. If the method is new to you, the lab setup explains it. The loop itself is short, about 60 lines in each language, so you can understand all of it. At the end of Sitting 1 you write it again, from an empty file: you decide every step, your agent types it, and the tests that check the lab's loop check yours.
+**The agents write the code. You explain it, then write your own.** As in Chapters 13 and 14, your coding agents from Chapter 12 write it. You work through it with the PRIMM-AI+ method: predict what a line will do, run it, and investigate any difference from your prediction. Then ask for a change, and predict again. If the method is new to you, the end of the lab page explains it. The loop itself is short, about 60 lines in each language, so you can understand all of it. At the end of Sitting 1 you write it again, into an empty function: you decide every step, your agent types it, and 8 recorded tests check it.
 
 After this chapter you can:
 
 - **Trace one question through the loop,** request by request, and say what the model asked for and what your code did about it.
-- **Write the loop yourself,** from an empty file, and pass the same tests as the lab's own loop.
+- **Write the loop yourself,** into an empty function, and pass the 8 recorded tests that check it.
 - **Read a tool definition** and say what its schema guarantees and what it never can.
 - **Name every reason a response stops,** and what your loop does for each.
 - **Send back one result for every tool call,** in the right place, including the ones that failed.
@@ -96,12 +96,14 @@ Three things were missing. Nobody could read the conversation that was sent on e
 
 **Two languages.** Every file in the lab exists in TypeScript and in Python, the two languages of Chapters 13 and 14. They do the same thing step for step, though their line numbers differ a little. Start with the one you know better, then look quickly at the other. Tasks that name a line give its number in each language.
 
+**Why the lab's files say ch20.** This chapter was Chapter 20 until the book added a new one. The lab's zip and files keep that number: `brightline-lab-ch20.zip`, `ports/ch20.md`, `docs/chapter-20/` and the git tags `lab20-start` and `ch20`. They are this chapter's files.
+
 **Do not confuse these four pairs.** Four pairs run through the whole chapter. None of them is hard, but mixing them up is the easiest way to get lost. Come back to this table whenever you are not sure what a name means.
 
 | Pair | What each one is | Where you meet it |
 | --- | --- | --- |
 | **The first API and the second API** | Two model services that do the same job with different shapes. The first is Claude's Messages API, in `claude.ts` and `claude_loop.py`. The second is OpenAI's Responses API, in `openai.ts` and `openai_loop.py` | Part A and Sitting 1 use the first. Part B and Sitting 2 use the second |
-| **TypeScript and Python** | The same lab, written twice, step for step. Every loop file has a Python twin, and so do the key tests (32 tests in TypeScript, 22 in Python) | Every task that names a line. Pick one language, and look quickly at the other |
+| **TypeScript and Python** | The same lab, written twice, step for step. Every loop file has a Python twin, and so do most of the tests (32 in TypeScript, 22 in Python) | Every task that names a line. Pick one language, and look quickly at the other |
 | **Route A and route B** | Two ways to get the connector your loop calls. Route A is your own Chapter 19 connector, on the internet. Route B is the practice connector in the zip, which runs on your own computer | Task 0 helps you choose. If you are not sure, take route B |
 | **The core path and the advanced path** | How much of the chapter to do the first time through. The core path is most of it. The advanced path adds streaming and caching | The table just below |
 
@@ -114,7 +116,7 @@ Three things were missing. Nobody could read the conversation that was sent on e
 
 The advanced path is still on the exam. Streaming and caching are objectives of CCDV-F, a Claude certification exam this book prepares you for. So do the advanced path before you take the exam. Each heading on that path says "advanced path".
 
-**Sittings and cost.** The lab has a setup and four sittings, one after each part. Route A, your own connector, adds a data load and a test token to the setup. The lab costs a little money, because both APIs charge for each call by the token. Every run has a cost cap of 10 cents, and the whole lab should cost under $1 on each API. That figure is not yet confirmed by a live run. Managers can read Concepts 21.1, 21.3, 21.5, 21.7 and 21.8. They say what a loop is made of and what can go wrong.
+**Sittings and cost.** The lab has a setup and four sittings, one after each part. Route A, your own connector, adds a data load and a sign-in step to the setup. The lab costs a little money, because both APIs charge for each call by the token. Every run has a cost cap of 10 cents, and the whole lab should cost under $1 on each API. That figure is not yet confirmed by a live run. To start, each account needs some credit: Anthropic gives new users a little, and OpenAI lists the lab's model only for its paid tiers, from $5 of credit (F1). Managers can read Concepts 21.1, 21.3, 21.5, 21.7 and 21.8. They say what a loop is made of and what can go wrong.
 
 ## What you will build
 
@@ -132,7 +134,7 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 
 1. **The four tools as definitions,** in one file both APIs read.
 2. **The loop on the first API,** in TypeScript and Python: call, read the stop reason, run each tool, send the results back, call again.
-3. **Your own loop,** from an empty file: you decide each step, a coding agent types it, and the same recorded tests check it.
+3. **Your own loop,** written into an empty function: you decide each step, a coding agent types it, and 8 recorded tests check it.
 4. **The same loop on the second API,** stateless, and a stateful version beside it, for comparison.
 5. **Stops of your own:** a turn limit, a cost cap and a time limit.
 6. **A trace of every model call and every tool call.**
