@@ -36,7 +36,7 @@ def test_rule1_denies_any_other_tool_with_a_message():
     assert decide_tool("WebFetch", {"url": "https://example.com"}) == Decision(False, "Denied: WebFetch is not one of this worker's tools.")
 
 
-@pytest.mark.parametrize("answer,expected", [("Pay it once it matches its PO (po-matching.md:5).", True),
+@pytest.mark.parametrize("answer,expected", [("Pay it once it matches its PO (docs/policies/po-matching.md:5).", True),
                                              ("Yes.", False), ("See po-matching.md line 9.", False)])
 def test_rule2_needs_a_citation(answer, expected):
     assert cites_policy_line(answer) is expected
