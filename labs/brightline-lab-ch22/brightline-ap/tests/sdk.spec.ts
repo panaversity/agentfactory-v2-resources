@@ -25,7 +25,7 @@ describe("rule 1: who may run a tool", () => {
 describe("rule 2: the answer must cite a policy line", () => {
   it.each([
     ["Pay it once it matches its PO (po-matching.md:5).", true],
-    ["An invoice with no PO is held until the buyer raises one (po-matching.md:9).", true],
+    ["An invoice with no PO is held until the buyer raises one (docs/policies/po-matching.md:9).", true],
     ["Yes.", false],
     ["See po-matching.md line 9.", false],
   ])("%s -> %s", (answer, expected) => expect(citesPolicyLine(answer)).toBe(expected));

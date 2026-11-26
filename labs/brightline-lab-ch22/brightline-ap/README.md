@@ -69,7 +69,7 @@ The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Pyt
 Lab 23 hosts the AP worker on a platform that runs its loop, and builds Brightline's AP portal around it. At `lab22-start` this folder adds:
 
 - `apps/portal/`: the portal's skeleton, a Cloudflare Worker whose routes answer 501 until the lab's tasks fill them in. Its offline tests: `npm run test:portal`, `npm run typecheck:portal`.
-- `src/rules/cites.ts`: Lab 22's rule 2, in a file of its own, so the portal can use it. `src/sdk/policy.ts` takes it from there.
+- `src/rules/cites.ts`: Lab 22's rule 2, in a file of its own, so the portal can use it. It also accepts a citation that names its folder, as `search_policy` returns it. `src/sdk/policy.ts` takes it from there.
 - `data/companies.csv` and `data/test-people.csv`: every company's id and names, and the test people a test token may be made for.
 - `skills/invoice-triage/`: Chapter 16's skill, copied unchanged from `plugin/skills/invoice-triage/`, for the worker as files. Change both together, or neither.
 - A planted note on Cedar Ridge's vendor V102, added to its own note, for Task 8's injection check and the page check of row S7 (Task 12).
