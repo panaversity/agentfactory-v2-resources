@@ -13,8 +13,8 @@ Fill in "What it did" in Task 2, from your Chapter 21 code. Fill in one or two S
 | Turn limit | Checked before every call (8) | `maxTurns`, counted in round trips (a model call and the tool calls it asked for) | `maxTurns`, default 10 |
 | Cost cap | Worked out from usage and prices (10 cents) | `maxBudgetUsd`, checked after each response | **Still yours** |
 | Time limit | Checked before every call (2 minutes) | **Still yours**: your timer stops the run through an `abortController` | **Still yours**: your timer stops the run through a `signal` |
-| Request deadline | 60 seconds per attempt, set on the client (21.8) | Not set by the lab. Your time limit covers a call that hangs | Not set by the lab. Your time limit covers a call that hangs |
-| Retries | Two, by the client library, with backoff | The harness's own | The client's two, plus the runner's opt-in setting (its own retries turn the client's off) |
+| Request deadline | 60 seconds per attempt, set on the client (21.8) | Not set by the lab, so the harness's default applies: up to 600 seconds for each attempt to start answering. Your time limit covers a call that hangs | Not set by the lab. Your time limit covers a call that hangs |
+| Retries | Two, by the client library, with backoff | The harness's own: 10 by default | The client's two, plus the runner's opt-in setting (its own retries turn the client's off) |
 | Where the conversation lives | An array in your program | A session file by default, memory with the option | The history you pass, with `store: false` |
 | The trace | A span per model call and per tool call, on your computer | OpenTelemetry through settings you set, and your own hook | The provider's dashboard by default, or your processor |
 | What counts as done (add in Task 10) | Nothing: in Chapter 21, done was the model's own stop | The model's stop, plus limits, plus the lab's own rule-2 check after the run | The runner's rule, plus your guardrail |

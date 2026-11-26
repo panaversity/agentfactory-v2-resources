@@ -36,6 +36,7 @@ Reuse Lab 21's keys and limits (Chapter 21, F1). If you skipped Lab 21, make one
 - **The tool runner and the client SDKs:** `ANTHROPIC_LOG=debug` before the command prints each request.
 - **The first SDK:** its harness makes the requests, so your program's own request log does not show them. Run with `--persist` and read the session file's request records (Task 11), then delete the file.
 - **The second SDK:** `OPENAI_LOG=debug` before the command shows each request's address and headers, not its body (Checked). In TypeScript, `DEBUG=openai-agents*` with `OPENAI_AGENTS_DONT_LOG_MODEL_DATA=0` prints each request's data (Checked). In Python, `npm run sdk:py` prints each request's `store`, `include` and `previous_response_id` itself.
+- **Your key in these logs:** both client libraries hide it. At the lab's pins, the authors' check showed `***` (Anthropic) and `[REDACTED]` (OpenAI) in its place (Run).
 - **Never** leave debug logging on for real data: it prints questions and tool results.
 
 ## F4. The first SDK's permissions and hooks
@@ -49,7 +50,7 @@ Reuse Lab 21's keys and limits (Chapter 21, F1). If you skipped Lab 21, make one
 ## F5. The second SDK's tracing
 
 - *Off:* `setTracingDisabled(true)` or `set_tracing_disabled(True)`, or `OPENAI_AGENTS_DISABLE_TRACING=1`. The lab's workers do this unless `--trace` is given.
-- *On, once (Task 12):* the trace appears under *Logs*, *Traces* in the OpenAI platform dashboard for the key's project (Checked). Use test data only.
+- *On, once (Task 12):* the trace appears under *Logs*, *Traces* in the OpenAI platform dashboard (Checked). Use test data only.
 - *Elsewhere:* add or set a trace processor to send spans to your own store (the SDK's tracing guide).
 
 ## F6. Ollama and an open model
