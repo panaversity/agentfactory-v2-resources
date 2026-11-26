@@ -1,4 +1,4 @@
--- 19.14, block 11. EXPLAIN shows how the database plans to run a query, without running it.
+-- Field guide F4, block 11. EXPLAIN shows how the database plans to run a query, without running it.
 -- role: reader
 -- company: org_cedar
 -- question: do we need a PO for a $400 repair?

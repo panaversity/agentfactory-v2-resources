@@ -9,7 +9,7 @@ For you, after the task. Open it in a text editor, never in the agent. `answer-k
 - Block 3: 20 and 18. Then open 16 (2132900) and paid 4 (357700).
 - Block 4: 0 rows, then PO-3108.
 - Block 5, as the loader: 1, `UPDATE 1`, `UPDATE 9`. Afterwards only V004 is on Net 45, as before, because the block is rolled back.
-- Block 6, in F1: `23503`, then `42501` (row-level security), then `42501` (must be owner).
+- Block 6, in 19.3: `23503`, then `42501` (row-level security), then `42501` (must be owner).
 - The Modify step: `IS NOT NULL` gives PO-3101 to PO-3107 (7 rows). `LIMIT 5` adds INV-6216 (265000) and INV-8303 (184500).
 
 Your notes should hold at least one wrong prediction, with the reason. A wrong prediction is never a deduction: it is what the task is for.

@@ -2,7 +2,7 @@ From *The AI Agent Factory*, Chapter 19, for the coding agents working in this r
 
 # Field guide: business data and retrieval, product by product
 
-*The concepts named no product. This field guide names them, and gives each step exactly. Read F0 to F4 before the lab's first sitting. The lab sends you to the others when you need them. Every fact here was checked on its owner's page on November 4, 2026. Steps the authors could not run without an account are marked **not yet run online**, with what is missing.*
+*The concepts named no product. This field guide names them, and gives each step exactly. Read F0 to F4 before the lab's first sitting. The lab sends you to the others when you need them. Every fact here was checked on its owner's page on November 26, 2026. Steps the authors could not run without an account are marked **not yet run online**, with what is missing.*
 
 ## F0. The repository you start with, and the secrets on your computer
 
@@ -23,7 +23,7 @@ From *The AI Agent Factory*, Chapter 19, for the coding agents working in this r
 
 ## F1. Postgres from zero
 
-**What it is.** A database server is a program that runs all the time and holds the tables. It answers queries sent by other programs over a network connection (19.1, 19.2). Postgres (PostgreSQL) is a free, open-source relational database server, used by companies of every size since the 1990s. The current release is 18 (18.6 on November 4, 2026). Version 19 is a release candidate, not used here. The lab's SQL works on any current version. The authors also ran it on Postgres 16.15.
+**What it is.** A database server is a program that runs all the time and holds the tables. It answers queries sent by other programs over a network connection (19.1, 19.2). Postgres (PostgreSQL) is a free, open-source relational database server, used by companies of every size since the 1990s. The current release is 19 (19.0, released on November 19, 2026). The lab uses 18, whose latest update on November 26, 2026 is 18.7. The authors ran the lab's SQL on Postgres 16.15, and a second run for this book, on November 26, 2026, used 17.7. Nobody has run it on 19 yet.
 
 **The column types the lab uses.**
 
@@ -32,7 +32,7 @@ From *The AI Agent Factory*, Chapter 19, for the coding agents working in this r
 | `text` | Any text | `'Treasure Valley Lumber'` |
 | `bigint`, `int` | A whole number | `268800` (cents) |
 | `date` | A calendar date | `'2027-03-29'` |
-| `timestamptz` | A moment in time, with its time zone | `now()` |
+| `timestamptz` | One exact moment in time | `now()` |
 | `bytea` | Raw bytes, such as a SHA-256 fingerprint | |
 | `vector(1024)` | 1,024 numbers, pgvector's type (F4) | |
 | `jsonb` | A small JSON document. Not used by the AP tables (19.5) | |
@@ -57,6 +57,7 @@ From *The AI Agent Factory*, Chapter 19, for the coding agents working in this r
 | Code | Meaning | Where you meet it |
 | --- | --- | --- |
 | `23503` | Foreign key violation: points at a row that does not exist | Task 2, a Cedar Ridge invoice for V006 |
+| `23505` | Duplicate key: a row with the same key already exists | 19.10, gap 1 |
 | `23514` | Check violation | Task 13, the embedding fingerprint |
 | `42501` | Not allowed: a missing right, or a row-level security policy refused a new row | Task 4, Block 6 and the data matrix |
 | `57014` | Query canceled, for example by `statement_timeout` | Task 5, the timeout test |
@@ -64,42 +65,13 @@ From *The AI Agent Factory*, Chapter 19, for the coding agents working in this r
 
 **Drivers.** A driver is the library a program uses to talk to Postgres. The TypeScript connector uses `pg` (node-postgres) 8.23.1, which Cloudflare's Hyperdrive documentation names for Workers (8.16.3 or later, with `nodejs_compat`). The Python connector uses `psycopg` 3.3.6. Both send every value as a parameter, never pasted into the SQL text.
 
-**Reading an error (19.3, Block 6).** An error is the database telling you exactly what it refused. Read three things in order: the *code*, the *message*, and the *detail* line, if there is one. The code is a five-character SQLSTATE that names the kind of error.
-
-```sql
-INSERT INTO invoices (tenant_id, invoice_number, vendor_id, invoice_date, terms, amount_cents, status)
-VALUES ('org_cedar', 'INV-9001', 'V006', '2027-03-02', 'Net 30', 50000, 'open');
-
-INSERT INTO vendors (tenant_id, vendor_id, vendor_name, terms)
-VALUES ('org_brightline', 'V099', 'Test Vendor', 'Net 30');
-
-DROP TABLE vendors;
-```
-
-*Predict:* the loader, with Cedar Ridge set, tries three things. Which does the database refuse, and for what reason?
-
-```text
-ERROR 23503: insert or update on table "invoices" violates foreign key constraint "invoices_tenant_id_vendor_id_fkey"
-DETAIL: Key is not present in table "vendors".
-
-ERROR 42501: new row violates row-level security policy for table "vendors"
-
-ERROR 42501: must be owner of table vendors
-```
-
-| Code | What it means | What to do |
-| --- | --- | --- |
-| `23503` | A foreign key points at nothing: Cedar Ridge has no vendor V006 (19.4) | Check the id, or load the vendor first. Never drop the key to make the error go away |
-| `42501` with "row-level security" | The row is another company's, so the policy refused it (19.8) | Check which company is set, and why this code tried to write another's row |
-| `42501` with "must be owner" | This role has no right to do that at all (19.8) | Nothing: the refusal is the design working |
-
-Two notes. The detail line leaves the key's values out on purpose. On a table with row-level security, Postgres does not print values the role might not be allowed to see. And `23505`, a duplicate key, is the other code you will meet, when a row with the same key already exists.
+**Reading an error.** 19.3 reads three real refusals with Block 6: the code first, then the message, then the detail line. The figure below draws the first of them.
 
 *Figure 19.30. Read an error by its code first, then its message, then its detail.*
 
 ## F2. Neon from zero
 
-**What it is.** Neon runs Postgres for you, as a serverless service. Its storage and compute are separate, and compute grows and shrinks with the load and scales to zero. A new branch is made by sharing stored data, not copying it. Databricks announced in May 2025 that it was buying Neon. Neon is this book's reference host, not a requirement: everything the lab builds is plain Postgres with pgvector (19.18, "Staying portable"). You get a **project** (one Postgres, with its own address). A project holds **branches**: full copies of the database, made in seconds, that share stored data with their parent until something changes. Each branch has its own roles, its own data and its own connection address. The lab uses one project, `brightline-ap`, and four kinds of branch: `main` (production), `staging`, `dev` (yours), and one `pr-<number>` per pull request.
+**What it is.** Neon runs Postgres for you, as a serverless service. Its storage and compute are separate, and compute grows and shrinks with the load and scales to zero. A new branch is made by sharing stored data, not copying it. Databricks announced in May 2025 that it was buying Neon. Neon is this book's reference host, not a requirement: everything the lab builds is plain Postgres with pgvector (19.18, "How does the design stay portable?"). You get a **project** (one Postgres, with its own address). A project holds **branches**: full copies of the database, made in seconds, that share stored data with their parent until something changes. Each branch has its own roles, its own data and its own connection address. The lab uses one project, `brightline-ap`, and four kinds of branch: `main` (production), `staging`, `dev` (yours), and one `pr-<number>` per pull request.
 
 **Making the account (by you).**
 
@@ -109,11 +81,11 @@ Two notes. The detail line leaves the key's values out on purpose. On a table wi
 
 From here, Claude Code does everything with `npx neonctl`, Neon's command-line tool, reading the key from that file (Task 0). Neon's documentation now calls the tool `neon`, and keeps `neonctl` as its other name, so both work.
 
-**Roles: the trap.** Neon's documentation says every role made in the Neon Console, the API or the CLI is "granted membership in the `neon_superuser` role". It also says that in projects created after August 15, 2023, `BYPASSRLS` is among the privileges of `neon_superuser` roles. In plain Postgres, a membership does not pass on an attribute like `BYPASSRLS`. So check on your own branch rather than trust either reading: **assume a role made in Neon's dashboard may skip row-level security.** Roles made with SQL (`CREATE ROLE`) are not members of `neon_superuser`, and get only basic rights. That is why `db/migrations/0003_roles.sql` makes `ap_loader` and `ap_reader` with SQL. It is also why `npm run check:roles` reads `rolbypassrls` and `neon_superuser` membership for both, on every branch, on every build. The project's own first role, `neondb_owner`, is a Console role: it runs migrations and never serves a request. **Not yet run online:** `check:roles` against a real Neon branch.
+**Roles: the trap.** Neon's documentation says a project's first role, every role made in the Neon Console or the API, and every role made by the CLI unless it is given `--access`, is "granted membership in the `neon_superuser` role". It says these roles "inherit the privileges assigned to this role", and that in projects created after August 15, 2023, `BYPASSRLS` is among them. **So treat every role made in Neon's dashboard as one that skips row-level security,** and let `check:roles` show it on your own branch. Roles made with SQL (`CREATE ROLE`) are not members of `neon_superuser`, and get only basic rights. That is why `db/migrations/0003_roles.sql` makes `ap_loader` and `ap_reader` with SQL. It is also why `npm run check:roles` reads `rolbypassrls` and `neon_superuser` membership for both, on every branch, on every build. The project's own first role, `neondb_owner`, is a Console role: it runs migrations and never serves a request. **Not yet run online:** `check:roles` against a real Neon branch.
 
 *Connection strings.* Each branch gives two addresses. The first is the **direct** one, such as `ep-cool-darkness-123456.us-east-2.aws.neon.tech`. The second is the **pooled** one, with `-pooler` after the endpoint id, which goes through Neon's own connection pooler in **transaction mode**. Neon's pooler works in transaction mode (a connection is lent for one transaction, then returned, F3). It does not support session-level `SET`: a setting made outside a transaction may stay on a connection that another client gets next. That is one more reason the lab sets the company with `set_config(..., true)`, inside the transaction. The lab uses the direct address for migrations (Neon recommends it), for the scripts, and for Hyperdrive, which pools by itself (F3).
 
-**The Postgres version and pgvector.** Neon supports Postgres 14 to 18. The lab asks for 18, the current release. Neon's pgvector is 0.8.6 on Postgres 18 and 0.8.0 on 14 to 17. Migration `0001` runs `CREATE EXTENSION IF NOT EXISTS vector`.
+**The Postgres version and pgvector.** Neon supports Postgres 14 to 19, and 18 is its default for a new project. The lab asks for 18. Neon's pgvector is 0.8.7 on every version it supports. Migration `0001` runs `CREATE EXTENSION IF NOT EXISTS vector`.
 
 **The free plan, and what Brightline uses.**
 
@@ -128,9 +100,9 @@ From here, Claude Code does everything with `npx neonctl`, Neon's command-line t
 
 ## F3. Hyperdrive from zero
 
-**What it does.** A Worker starts fresh for each request (17.4), so it cannot keep a pool of database connections itself. Cloudflare Hyperdrive sits between your Workers and your database, keeps the real connections open and close to the database, and lends one to each request. Its pooler works in **transaction mode**: a request holds one connection for one transaction, then the connection goes back to the pool. Hyperdrive's documentation says it "supports SET statements for the duration of a transaction or a query". It also says that a returned connection is "RESET such that the SET commands will not take effect on subsequent queries." The lab's `set_config(..., true)` lives inside one transaction, which fits exactly. **Not yet run online:** `set_config(..., true)` through Hyperdrive.
+**What it does.** A Worker starts fresh for each request (17.4), so it cannot keep a pool of database connections itself. Cloudflare Hyperdrive sits between your Workers and your database, keeps the real connections open and close to the database, and lends one to each request. Its pooler works in **transaction mode**: a request holds one connection for one transaction, then the connection goes back to the pool. Hyperdrive's documentation says it "supports SET statements for the duration of a transaction or a query". It also says that a returned connection is "RESET such that the SET commands will not take effect on subsequent queries." The lab's `set_config(..., true)` lives inside one transaction, which fits exactly. The same page advises against the pattern, for speed: "It is not recommended to wrap multiple database operations with a single transaction to maintain the `SET` state. Doing so will affect the performance and scaling of Hyperdrive, as the connection cannot be reused by other Worker isolates for the duration of the transaction." The lab keeps the transaction, because 19.9's rule depends on it. A tool call holds its connection for a few short queries, and that is the price of a company that cannot outlive the call. **Not yet run online:** `set_config(..., true)` through Hyperdrive.
 
-**Caching: turn it off.** Hyperdrive caches read-only query results by default, for 60 seconds. Its documentation recommends a cache-disabled configuration for reads that must be fresh, such as sign-in and permissions. For company data, caching is a sharing risk (19.9). So the lab makes each configuration with caching off:
+**Caching: turn it off.** Hyperdrive caches read-only query results by default, for 60 seconds, and may serve a cached result for 15 seconds more while it fetches a fresh one. Its documentation recommends a cache-disabled configuration for reads that must be fresh, such as sign-in and permissions. For company data, caching is a sharing risk (19.9). So the lab makes each configuration with caching off:
 
 ```bash
 npx wrangler hyperdrive create brightline-ap-staging --caching-disabled \
@@ -146,9 +118,9 @@ In plain words: make a Hyperdrive configuration called `brightline-ap-staging`, 
 
 Inside the Worker, `env.HYPERDRIVE.connectionString` is an address the `pg` driver connects to (`servers/ap-ts/src/db.ts`, `hyperdriveConnect`). Making the configuration with the reader's connection string means the deployed Worker can never connect as a role that skips row-level security.
 
-**On your computer.** `wrangler dev` reads the connection string for the binding from an environment variable, `CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_HYPERDRIVE` (the binding's name at the end). That variable takes precedence over `localConnectionString` in the config file. The Node copy (`npm start`) does not use Hyperdrive at all: it keeps its own small pool. The authors ran the Worker in `wrangler dev` with that variable set to the `dev` branch's reader string, and four tool calls answered correctly.
+**On your computer.** `wrangler dev` reads the connection string for the binding from an environment variable, `CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_HYPERDRIVE` (the binding's name at the end). That variable takes precedence over `localConnectionString` in the config file. The Node copy (`npm start`) does not use Hyperdrive at all: it keeps its own small pool. The authors ran the Worker in `wrangler dev` with that variable set to the `dev` branch's reader string, and four tool calls answered correctly. That run says nothing about the cache: with a local connection string, "Hyperdrive's connection pooling and query caching do not take effect". Only `wrangler hyperdrive get`, in Task 16, shows that caching is off.
 
-**The free plan.** Hyperdrive is included in the free Workers plan. That plan gives you 100,000 queries a day (reset at 00:00 UTC) and 10 configurations per account. Each configuration gets about 20 connections to your database. A query may run for at most 60 seconds.
+**The free plan.** Hyperdrive is included in the free Workers plan. That plan gives you 100,000 queries a day (reset at 00:00 UTC). An account may hold 10 configurations, each configuration gets about 20 connections to your database, and a query may run for at most 60 seconds.
 
 ## F4. Embeddings and vectors from zero
 
@@ -177,9 +149,56 @@ Inside the Worker, `env.HYPERDRIVE.connectionString` is an address the `pg` driv
 
 *Size.* The README: "Each vector takes `4 * dimensions + 8` bytes of storage", and "Each half vector takes `2 * dimensions + 8` bytes". At 1,024 dimensions that is 4,104 and 2,056 bytes. `halfvec` and its operators arrived in pgvector 0.7.0. Cast a column with `embedding::halfvec(1024)` in an expression index, or store `halfvec(1024)`, and run the question set before and after. Not run by the authors: the local Postgres used for the lab's checks has pgvector 0.6.
 
-**Hybrid search.** The README: "Use together with Postgres full-text search for hybrid search", and "You can use Reciprocal Rank Fusion or a cross-encoder to combine results." A full-text index is `CREATE INDEX ... ON policy_passages USING gin (to_tsvector('english', content))`. Reciprocal rank fusion gives each passage `1 / (60 + its place)` in each list and adds them, where 60 is a commonly used constant. 19.14, Block 14, runs it on Cedar Ridge's policies and shows it putting the right rule first. The lab's `search_policy` does not add it (19.14).
+**Hybrid search (Block 14, 19.14).** The README: "Use together with Postgres full-text search for hybrid search", and "You can use Reciprocal Rank Fusion or a cross-encoder to combine results." Reciprocal rank fusion gives each passage `1 / (60 + its place)` in each list and adds them. The 60 is a commonly used constant that keeps one first place from outweighing everything else. Block 14 runs it on Cedar Ridge's policies:
+
+```sql
+WITH meaning AS (
+  SELECT document_id, line_start,
+         row_number() OVER (ORDER BY embedding <=> $1::vector) AS place
+    FROM policy_passages
+   WHERE tenant_id = 'org_cedar' AND embedding_model = 'test-lexicon-v1'
+   ORDER BY embedding <=> $1::vector
+   LIMIT 5
+), words AS (
+  SELECT document_id, line_start,
+         row_number() OVER (ORDER BY ts_rank(to_tsvector('english', content),
+                                             to_tsquery('english', 'po | repair')) DESC) AS place
+    FROM policy_passages
+   WHERE tenant_id = 'org_cedar'
+     AND to_tsvector('english', content) @@ to_tsquery('english', 'po | repair')
+   LIMIT 5
+)
+SELECT document_id, line_start, round(sum(1.0 / (60 + place)), 4) AS fused_score
+  FROM (SELECT * FROM meaning UNION ALL SELECT * FROM words) both_lists
+ GROUP BY document_id, line_start
+ ORDER BY fused_score DESC
+ LIMIT 3;
+```
+
+In plain words, before the output: `WITH` gives two queries names, `meaning` and `words`, so the last query can use them. `meaning` is Block 8's search for "do we need a PO for a $400 repair?", with each passage's place in its list (`row_number()`: 1, 2, 3...). `words` searches for the words "po" or "repair" (`|` means or), and `ts_rank` puts the passages with more of those words first. `UNION ALL` stacks the two lists, and `GROUP BY` adds up each passage's scores. The block also runs the two searches on their own first.
+
+*Predict:* by meaning alone, line 5 came first (Block 8). By words, only one passage contains "repair". Which rule does the merged list put first?
+
+```text
+by meaning:  purchasing 5, purchasing 6, approvals 6
+by words:    purchasing 6
+
+document_id | line_start | fused_score
+------------+------------+------------
+purchasing  | 6          | 0.0325
+purchasing  | 5          | 0.0164
+approvals   | 6          | 0.0159
+```
+
+In plain words: line 6 was second by meaning (`1 / 62`) and first by words (`1 / 61`), so its two scores add up to 0.0325. Line 5 appears in only one list, so it gets `1 / 61`, or 0.0164. The word "repair" is rare in the policies, and it is the word that mattered.
+
+Postgres does both searches in one database, in one transaction, under the same row-level security, so hybrid search adds no new place for one company's data to reach another's. A word search on a large table needs its own index, `CREATE INDEX ... ON policy_passages USING gin (to_tsvector('english', content))`. The lab's `search_policy` does not add hybrid search, and 19.14 says when it would.
+
+**Choosing passages.** One passage per rule works for short, numbered rules (19.13). Longer documents need three more decisions, each measured with the question set (19.16): how long a passage is (long enough to hold one idea, short enough that its citation points at it), whether neighboring passages overlap by a sentence, so a rule that runs across a break is not lost, and whether each passage carries its **heading path**, such as "Purchasing > Small purchases", a fact about the passage itself, so 3NF allows it (F5 has a caution about where to keep it).
 
 **Why the split layout came back short (19.13).** HNSW is approximate: it is fast because it looks at a limited number of candidates, 40 by default, and filters only after. Keeping the company on the same row is necessary, but not enough on its own. The five came back because the database chose to narrow to the company first, through the key, and order those rows exactly. For a company large enough that the database uses the index, turn on an iterative scan (below).
+
+**One index shared by every company.** pgvector's README has a caution for a table like this one: "sharing an approximate index between tenants means vectors from one tenant can affect recall (and speed) for other tenants. For tenant isolation, use list partitioning or separate tables." At the lab's size the database never uses the shared index for one company's search (Block 11). If a company grows until it does, that is a reason you can write down for moving it out (19.7).
 
 **HNSW, in numbers.** pgvector's defaults: `m = 16` (links per node), `ef_construction = 64` (how hard it works when building), and `hnsw.ef_search = 40` (how many candidates a search keeps). Its README warns: "With approximate indexes, filtering is applied *after* the index is scanned. If a condition matches 10% of rows, with HNSW and the default `hnsw.ef_search` of 40, only 4 rows will match on average." From pgvector 0.8.0, `SET hnsw.iterative_scan = strict_order` (or `relaxed_order`) keeps scanning until enough rows pass, up to `hnsw.max_scan_tuples` (20,000 by default). At Brightline's size the database does an exact search per company and never needs it (19.13). If a company grows to many thousands of passages, add `SELECT set_config('hnsw.iterative_scan', 'relaxed_order', true)` beside the company setting. pgvector warns that `relaxed_order` can return results slightly out of order, so sort the few results again by distance, or use `strict_order`.
 
@@ -212,7 +231,7 @@ In plain words, from the bottom: read Cedar Ridge's rows through the table's key
 
 On your copy, the most indented line may instead say `Seq Scan on policy_passages`, with both conditions in its `Filter`. That means Postgres has gathered statistics on this small table, and chose to read all of it. The search is the same: no vector index, an exact search.
 
-**A plan that does use the vector index (Block 12).** To see the other kind of plan, this block runs as the table's owner, read-only. The owner skips row-level security (19.8), so the search covers every company's passages at once, which the connector never does. It also switches off the database's option to read a whole table row by row, so that the planner must choose between the two indexes:
+**A plan that does use the vector index (Block 12).** To see the other kind of plan, this block runs as the table's owner, read-only. The owner skips row-level security (19.8), so the search covers every company's passages at once, which the connector never does. It also tells the database to avoid reading the whole table row by row, so that it picks one of the two indexes:
 
 ```sql
 SELECT set_config('enable_seqscan', 'off', true);
@@ -304,14 +323,14 @@ Three new words in it. `bytea` is a column type for raw bytes, used here for a f
 **A Neon branch per pull request.** `ci.yml`'s `database` job:
 
 1. `neondatabase/create-branch-action@v6`, with `project_id` (the variable `NEON_PROJECT_ID`) and `api_key` (the secret `NEON_API_KEY`). It also takes `parent_branch: staging` (so the pull request's new migrations really run, on a copy that holds sample companies, never production's), `branch_name: pr-<number>` and `role: neondb_owner`. Its output `db_url` is the branch's owner connection string. (Its other outputs include `db_url_pooled`, `db_host` and `branch_id`.)
-2. `npm run db:migrate -- --env ci`, `npm run db:passwords -- --env ci`, and `npm run tenant:load -- --env ci --replace` for the three companies, with the test embedder.
+2. `npm run db:migrate -- --env ci`, `npm run db:passwords -- --env ci`, and `npm run tenant:load -- --env ci --replace` for the three companies, with the test embedder. The passwords step cannot be skipped: Neon's documentation says a new branch "will have the same Postgres roles and passwords as the parent branch", so until `db:passwords` runs, the pull request's copy still answers to staging's passwords.
 3. Every check: `check:roles`, `check:queries`, the unit tests, `conformance`, `matrix:data`, `eval:retrieval` and `check:deploy`.
 
 `ci-cleanup.yml` runs when the pull request closes: `neondatabase/delete-branch-action@v3`, with `branch: pr-<number>`. A coding agent sets the key and the id once: `gh secret set NEON_API_KEY` reading from `.secrets/neon.env`, and `gh variable set NEON_PROJECT_ID`. **Not yet run online:** both workflows.
 
 **Staging and production.** Each has its own Neon branch (`staging`, `main`) and its own `.secrets/db.<env>.env`. Each also has its own Hyperdrive configuration made with caching off and the reader's direct string (F3). `npm run check:deploy` fails if the Worker has no `HYPERDRIVE` or `AI` binding, ships data assets, lacks `nodejs_compat`, or if staging and production share one Hyperdrive id. `deploy.yml` runs `db:migrate` and `check:roles` for the environment before any Worker deploys, with `DATABASE_URL_OWNER_STAGING` and `DATABASE_URL_READER_STAGING` (or the same names ending `_PRODUCTION`) from GitHub secrets (`npm run db:passwords -- --env <env> --github`, then `gh secret set -f .secrets/github-db.<env>.env`).
 
-**Rollback.** `wrangler rollback` rolls back a Worker, never the database. Because every migration adds (19.6), the previous connector still works against the newer tables. Neon keeps 6 hours of history on the free plan. A restore is a person's decision.
+**Rollback.** `wrangler rollback` rolls back a Worker, never the database. Because every migration adds (19.6), the previous connector still works against the newer tables. Neon keeps 6 hours of history on the free plan. A restore from it is a person's decision.
 
 ## F7. The multi-tenant data checklist
 
@@ -334,9 +353,4 @@ Three new words in it. `bytea` is a column type for raw bytes, used here for a f
 
 ## F8. How today's tools realize it, in detail
 
-*The vendor facts behind 19.18, with where each was checked. Prices and limits change: check them again before you rely on them.*
-
-- **Anthropic.** "Anthropic does not offer its own embedding model." Its embeddings page points to Voyage AI and says "you should assess a variety of embeddings vendors". Voyage's current text models are `voyage-4-large`, `voyage-4`, `voyage-4-lite` and `voyage-code-4`, 1,024 dimensions by default (256, 512 or 2,048 also). `voyage-4-lite` is $0.02 per million tokens, and the first 200 million tokens of the voyage-4 models are free per account (not for batch use).
-- **OpenAI.** `text-embedding-3-small`, 1,536 dimensions by default, $0.02 per million tokens. `text-embedding-3-large`, 3,072. Both take a `dimensions` setting to shorten the vector. File search is "a tool available in the Responses API" that searches vector stores of files you upload. It is billed for storage and calls, on OpenAI's pricing page.
-- **Open source.** Postgres (PostgreSQL License) and pgvector (PostgreSQL License) are open source. pgvector's current release is 0.8.7. bge-m3 is open weight, and so are Voyage's `voyage-4-nano` and Qwen's embedding models.
-- **Neon, Hyperdrive and Workers AI:** F2, F3 and F4.
+*The dated lines for Anthropic, OpenAI and open source are in one place: 19.18, "Product reference". Neon, Hyperdrive and Workers AI, as the lab uses them, are in F2, F3 and F4. Prices and limits change: check them again before you rely on them.*

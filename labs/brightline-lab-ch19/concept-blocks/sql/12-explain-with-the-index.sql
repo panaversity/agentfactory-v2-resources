@@ -1,4 +1,4 @@
--- 19.14, block 12. The same search across every company, as the owner, with full-table scans switched off.
+-- Field guide F4, block 12. The same search across every company, as the owner, with full-table scans switched off.
 -- This is what a plan that uses the vector index looks like. The connector never runs as the owner.
 -- role: owner
 -- question: do we need a PO for a $400 repair?

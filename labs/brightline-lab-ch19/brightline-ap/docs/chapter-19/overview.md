@@ -8,7 +8,7 @@ From *The AI Agent Factory*, Chapter 19, for the coding agents working in this r
 
 *Figure 19.1. Before, every copy carries the data. After, one database serves every copy, and it decides which company's rows each request may see.*
 
-**Store each fact once, with the company in every key. Let the database refuse another company's rows, with the company set for one transaction only. Search policies by meaning, cite what you found, and say so when you found nothing.**
+**Store each fact once, and mark every row with its company. Let the database itself refuse another company's rows, one request at a time. Search policies by meaning, cite what you found, and say so when you found nothing.**
 
 After this chapter you can:
 
@@ -21,7 +21,7 @@ After this chapter you can:
 - **Explain retrieval:** passages, embeddings, vectors, similarity search and an index, and why a search that finds nothing close enough should abstain.
 - **Measure retrieval** with a question set, so a change that makes it worse fails the build.
 
-**Who does what.** This chapter is a co-build. The builder (you) directs the coding agents and decides how the database works. Each company's AP expert decides what its data means: which columns a purchase order must hold and which policy documents count. The expert also decides what a citation looks like, and when "I found nothing" is the right answer. In the lab you play both roles. Managers can read this overview and Concepts 19.1, 19.2, 19.7, 19.11 and 19.15.
+**Who does what.** Two roles share this chapter. The builder (you) directs the coding agents and decides how the database works. Each company's AP expert decides what its data means: which columns a purchase order must hold and which policy documents count. The expert also decides what a citation looks like, and when "I found nothing" is the right answer. In the lab you play both roles. Managers can read this overview and Concepts 19.1, 19.2, 19.7, 19.11 and 19.15.
 
 **The principle is portable Postgres and pgvector. The reference implementation is Neon.** Postgres, a free, open-source database, holds the business records. An add-on for it, pgvector, holds the embeddings used to search by meaning, in the same tables and under the same rules. So no separate vector database is needed. Both run on many hosts, so the design never depends on one provider. Neon, a service that runs Postgres for you, is the reference host the lab uses. You meet it only in the lab, the field guide and 19.18. That page says why Neon was chosen and what a move to another host takes. Whatever the host, keeping companies apart correctly is the application's job, and most of this chapter is how to do it.
 
@@ -57,7 +57,7 @@ Twelve words carry the chapter, after the basic database words that 19.2 teaches
 **What you build instead.** As in Chapters 17 and 18, you do not type code. Coding agents write every file and run every command, and you specify, read and approve.
 
 1. **A data contract,** written with each company's AP expert: what every table and column means, each company's own rules, and what is never stored.
-2. **A business database,** with tables in third normal form, the company in every key, two roles made with SQL, and row-level security forced on every table.
+2. **A business database,** with tables in third normal form, the company in every key, two roles made with SQL (a loader and a reader, beside the owner that runs migrations), and row-level security forced on every table.
 3. **Each company's data loaded,** checked and provable: Brightline's, Cedar Ridge's with its own lower approval threshold, and a trial company's, exported and then deleted.
 4. **Both connectors on the database,** each tool call one transaction with the company set for that transaction only.
 5. **A data matrix,** 25 checks that try every route from one company's rows to another's, and six planted bugs. At least one check must catch each bug.
@@ -85,7 +85,8 @@ Three design choices made it possible. The only guard was a line every developer
 | 17 | Brightline's own connector: four read-only tools, written by coding agents, and put online with a shared key |
 | 18 | Real sign-in. Each person signs in and picks a company, and the connector knows who may act for which company |
 | 19 | The business data in a database, each company's rows kept apart by the database itself, each company's own rules, and policy search by meaning with citations |
-| 20 | An agent that runs on a server inside a web page Brightline's staff already use, holding each person's tokens for them |
+| 20 | Its own screens inside the chat, a read-only review of open invoices, and its skills served over MCP. Every button press is checked as the person signed in |
+| 23 | An agent that runs on a server inside a web page Brightline's staff already use, holding each person's tokens for them |
 
 The plugin's files do not change in this chapter. The connector's address stays the same, and its four tools keep their names. Two tools answer differently: `get_purchase_order` now says whether an invoice needs approval under the company's own threshold, and `search_policy` searches by meaning and can abstain.
 
@@ -101,34 +102,34 @@ This chapter teaches three public, open things. The first is SQL, the language f
 
 **Part A. A database for the business.**
 
-- 19.1 Why a database now
-- 19.2 Tables, rows and keys, from zero
-- 19.3 Reading SQL: predict, then run
-- 19.4 Designing the AP tables
-- 19.5 Third normal form in detail: keep it, break it on purpose
-- 19.6 Changing the tables safely
+- 19.1 Why move the data out of the code?
+- 19.2 What are tables, rows and keys?
+- 19.3 How do you read SQL an agent wrote?
+- 19.4 How do two companies share one set of tables?
+- 19.5 Where does each fact belong?
+- 19.6 How do you change tables that are in use?
 
 **Part B. Keeping each company's data apart.** The heart of the chapter. Chapter 18 did this for sign-in: who may act for which company. This part does it for the data: whose rows are whose.
 
-- 19.7 Three ways to keep data apart
-- 19.8 Row-level security
-- 19.9 One company per transaction
-- 19.10 Where the guarantee stops
-- 19.11 Each company's own rules and data
-- 19.12 Proving the data stays apart
+- 19.7 Shared tables, or a database per company?
+- 19.8 What if a query forgets its company filter?
+- 19.9 What if the last call's company is still set?
+- 19.10 What can still leak when the rows are safe?
+- 19.11 How does each company keep its own rules and data?
+- 19.12 How do you prove the data stays apart?
 
 **Part C. Answers from documents, with citations.**
 
-- 19.13 Retrieval from zero
-- 19.14 Embeddings and pgvector in depth: predict, then run
-- 19.15 Answers that cite, or abstain
-- 19.16 Measuring retrieval
+- 19.13 How does a search find a rule by its meaning?
+- 19.14 Where does a search by meaning go wrong?
+- 19.15 What if the policies do not answer the question?
+- 19.16 How do you know the search still works?
 
 **Part D. Running it.**
 
-- 19.17 A database behind a stateless server
-- 19.18 How today's tools realize it (reference, skim it)
+- 19.17 What if the database is slow or asleep?
+- 19.18 How do today's products do this? (reference, skim it)
 
 Then: the field guide (F0 to F8), Lab 19 and Check yourself.
 
-**Five sittings.** The lab takes about 10 hours 25 minutes in five sittings, or 10 hours 50 minutes with the optional Task 11b. The sittings cover a database for the business, the connector on the database, proving the data stays apart, answers from documents, and branches and deploying. The core path, without the extensions, takes about 10 hours 5 minutes. Task 11, the code review, is part of the core path.
+**Five sittings.** The lab takes five sittings: a database for the business, the connector on the database, proving the data stays apart, answers from documents, and branches and deploying. On a free plan, your coding agents' limits can spread them over several days. Task 11, the code review, is part of the core path. Task 11b is optional.

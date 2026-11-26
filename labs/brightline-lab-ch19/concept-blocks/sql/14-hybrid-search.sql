@@ -1,4 +1,4 @@
--- 19.14, block 14. Hybrid search: search by meaning and search by words, merged by reciprocal rank fusion.
+-- Field guide F4, block 14. Hybrid search: search by meaning and search by words, merged by reciprocal rank fusion.
 -- role: reader
 -- company: org_cedar
 -- question: do we need a PO for a $400 repair?
