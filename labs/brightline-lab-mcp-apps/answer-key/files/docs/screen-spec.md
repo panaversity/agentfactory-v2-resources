@@ -3,6 +3,10 @@
 Agreed with Ana Morales, AP analyst, in Lab 20, Task 1. The builder, directing coding agents, builds it.
 The screen is a second way to ask the same tools (20.2). It adds no tool the model cannot already use, except the page's own *Next page*.
 
+## Where it is shown
+
+Inline, in the conversation, five rows a page. The AI app's own extra buttons around it, such as one that opens it full screen, are fine: the page works in whatever space it gets.
+
 ## What it shows
 
 One page, `ui://brightline/open-invoices.html`, for `list_open_invoices`: a table of the signed-in company's open invoices, five rows a page, ordered by invoice number.

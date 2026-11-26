@@ -1,8 +1,8 @@
 # The screen matrix
 
-Lab 20, Task 5 (and row C8 from Task 6). Every row is one click by one person, sent as the AI app would send it, with that person's test token, against both connectors. Run it with `npm run matrix:screen`. It ends `matrix:screen: N rows passed, 0 failed`, and a last row that checks both connectors gave the same answer on every row.
+Lab 20, Task 5 (and row C8 from Task 6). Every row is one click by one person, sent as the AI app would send it, with that person's test token, against both connectors, both running on your computer. Run it with `npm run matrix:screen`. It ends `matrix:screen: N rows passed, 0 failed`, and a last row that checks both connectors gave the same answer on every row.
 
-The script checks what each connector answers. What the screen then shows, such as C2's words and C8's characters, you check by eye in Claude.
+The script checks what each connector answers. Row C8 also draws the real page in a headless browser with each connector's own answers, and checks that the planted note shows as characters, with no new element on the page and no request. What Claude shows, such as C2's words, you check by eye.
 
 | Row | Who | Does | Expects |
 | --- | --- | --- | --- |
@@ -16,4 +16,4 @@ The script checks what each connector answers. What the screen then shows, such 
 | C8 | Luis | *Vendor details* on V102, with Task 6's planted note | The note comes back unchanged, as data, and the page shows every value as text |
 | C9 | Priya, now signed in for Cedar Ridge | *Next page* on a screen she opened while signed in for Brightline | Refused, because the handle was made for Brightline. Page one again is Cedar Ridge's 16 |
 
-C7's other half, a person removed with Lab 18's `npm run tenant:member`, needs the sign-in server: run it by hand, as in Lab 18.
+C7 is an expired token only. A removed person's token keeps working until it expires (18.14), so an expired token is the case a screen left open must handle.
