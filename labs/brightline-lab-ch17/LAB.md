@@ -2,118 +2,102 @@
 
 Chapter 17 of *The AI Agent Factory*, Second Edition. This file is the book's page for this lab, [Lab 17: the Brightline AP connector](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/lab/), so you can do the lab without the book.
 
-*Time: about 7 hours 50 minutes, in four sittings. Lab files: `brightline-lab-ch17.zip`. The same steps are in `LAB.md` inside the zip.*
+*Lab files: [brightline-lab-ch17.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17.zip). The same steps are in `LAB.md` inside the zip. The lab takes four sittings, which you can spread over several days.*
 
 ### Before you start
 
-**You need no earlier lab.** The zip holds a working repository whose `README.md` explains it, and every setup step is here or in the field guide. Where a task uses an idea from an earlier chapter, it explains it in place.
+**What you do.** Three coding agents build, test and deploy Brightline's connector: Claude Code writes the contract and the TypeScript server, Codex the Python server, and OpenCode the conformance suite. They write every file and run every command, `git`, `gh` and `wrangler` included. You play Ana, the AP analyst, when an agent asks about the rules. You read each plan, command, diff and check before you approve it. By hand you do only what proves who you are: signing up and signing in, creating the Cloudflare deploy token, setting the key your AI apps read in your own terminal ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), and deciding when to merge and when to deploy production. The only files you write are your own notes, `NOTES.md` and `ports/ch17.md`.
+
+**No key ever passes through a chat.** The agent makes keys with `npm run keys`, which writes them into files git ignores and prints none. The repository's rules (`AGENTS.md` and `.claude/settings.json`) let an agent use them only as inputs to commands, never open, print or copy them. Never paste a key into a chat, and stop an agent that tries to show one.
 
 **What you need.**
 
-- A computer with macOS, Windows or Linux, and a terminal.
-- **Node.js 22.19 or later** (24 recommended). The MCP Inspector needs 22.19.0, so this lab raises the repository's floor from 22.18.
-- **uv 0.13.4 or later**, for the Python half and for Python Workers.
-- Git, a GitHub account and `gh`, as in [Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/overview/).
-- **Claude Code, Codex and OpenCode version 2**, in their desktop apps, as in [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/). That means the Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan, the ChatGPT desktop app with any plan, and OpenCode Desktop with a model connected. You can do the whole lab with one of them: send its prompts to the agent you have.
-- **A Cloudflare account on the free plan**, for Sitting 4 only. Sitting 4 shows how to make one.
+- macOS, Windows or Linux, with a terminal. **Node.js 22.19 or later** (24 recommended) and **uv 0.13.4 or later**. Git, a GitHub account and `gh`, as in [Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/overview/).
+- **Claude Code, Codex and OpenCode version 2**, in their desktop apps, as in [Lab 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/lab/): the Claude desktop app with a Pro, Max, Ultra, Team or Enterprise plan, the ChatGPT desktop app with any plan, and OpenCode Desktop with a model connected. One of them is enough: send every prompt to the agent you have, and do Task 14 only if it is Codex, Task 15 only if it is OpenCode.
+- **A free Cloudflare account**, for Sitting 4 only. Sitting 4 shows how to make one.
 
-**The core path and the extensions.** The core path is about 6 hours: Tasks 1 to 13, one port (Task 14 or 15), Task 17, and Tasks 18a and 18b with the TypeScript server. It gives you a specified, tested connector in two languages, proved the same, in the plugin, and online in staging and production. The extensions, about 1 hour 50 minutes, are the second port, telemetry (Tasks 16a to 16c), deploy on merge (18c), and logs, rollback and the runbook (18d). Do them now or come back later. Tag `ch17` after the last task you do.
+**The lab files.** Download the zip and unzip it. You get a folder, `brightline-lab-ch17/`, with `LAB.md` and `brightline-ap/`, the repository, with no git history. `brightline-ap/` is the only folder you give an agent, and its `README.md` explains it. It holds the data (12 purchase orders, one note per vendor, and made-up bank details that must never leave the server in full), three short AP policies, a finished practice server, the key maker, and `docs/field-guide.md`, a copy of the field guide that the agents can read. You need no earlier lab.
 
-**You direct, the agents build and deploy.** Work as [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/) taught. Use each agent in its desktop app (Claude Code in the Claude desktop app's *Code* tab), in a *Local* session on your computer. Use *Manual* mode, so it asks before every command and every change. Ask for a plan before any change that matters.
+**How each task works.** Work as [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/) taught: each agent in its desktop app (Claude Code in the Claude app's *Code* tab), in a *Local* session, in *Manual* mode, so it asks before every command and every change. Ask for a plan before any change that matters. When an agent must call the connector itself, in Tasks 11 and 13 to 16c, start it from a terminal where you set the key instead ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), as those tasks say. Predict in `NOTES.md` what should happen. Send the prompt. Read the plan, each command and the checks' output, and compare them with your prediction. Then check the task against its answer key, a separate download. Open an answer key in a text editor, never in the agent: an agent that can read the answers is not tested by them.
 
-- **The agents do all the development and deployment.** They write every file, install every package, run every check, start and stop every server, make the keys, run every `git`, `gh` and `wrangler` command, deploy, roll back and tag. Claude Code builds the specification and the TypeScript server, Codex builds the Python server, and OpenCode builds the conformance suite.
-- **You decide.** You play Ana, the AP analyst, when an agent asks about the rules. You read each plan, each command before you approve it, each diff and each check's output, and you approve or send the work back. When a check fails, tell the agent what failed, in your words, and let it fix it.
-- **You do by hand only what proves who you are.** That means signing up for an account, signing in (`gh auth login` in your own terminal, and approving Wrangler's sign-in in your browser), and creating the Cloudflare deploy token in the dashboard and putting it in one file git ignores. It also means setting the key your hosts read in your own terminal ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), deciding when a pull request may be merged, and deciding when production may be deployed. The agents change every file in the repository, except your own notes, `NOTES.md` and `ports/ch17.md`.
-- **No key ever passes through a chat.** The agent makes keys with `npm run keys`, which writes them into files git ignores and prints none. Commands read those files directly, and the repository's rules (`AGENTS.md` and `.claude/settings.json`) forbid an agent to read, print or copy them. Never paste a key or token into a chat, and stop an agent that tries to show one.
+**The core path.** Tasks 1 to 13, one port (Task 14 or 15), Task 17, and Tasks 18a and 18b with the TypeScript server: a tested connector in two languages, proved the same, in the plugin, and online in staging and production. The rest are extensions, for now or later. Tag `ch17` after the last task you do.
 
-**How each task works.** Predict in `NOTES.md` what should happen. Send the prompt. Read the plan and every command and change before you approve it. Read the checks' output, which the agent runs, and compare it with your prediction. Then check the task against its answer key. When a step says the field guide shows something, the agent can read it too: a copy is in `docs/field-guide.md`.
-
-**The lab files.** Download [brightline-lab-ch17.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17.zip) and unzip it into a new folder. It contains `LAB.md`, these steps, and `brightline-ap/`, a plain copy of the repository with no git history. In Task 1, the agent puts it under git. This is the only folder you give an agent. It holds:
-
-- `data/purchase-orders.csv` (12 POs), `data/vendor-notes.csv` (one note per vendor) and `data/vendor-banking.csv` (made-up bank details, which must never leave the server in full)
-- `docs/policies/`, three short AP policies with numbered lines
-- `servers/hello/`, a finished practice server with one tool
-- `scripts/make-keys.ts` (`npm run keys`), which makes every key into a file git ignores, and `.dev.vars.example`, the shape of those files
-- `docs/field-guide.md`, a copy of this chapter's field guide
-
-Each task links its answer key as a separate download. Open a key in a text editor, never in the agent. An agent that can read the answers is not tested by them.
-
-**New to MCP or Cloudflare?** You need neither, and you need not have heard of Cloudflare. Read [17.1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/) and field guide [F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer) and [F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) before Task 1. [F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) starts with "Meet Cloudflare", what the company is and what its free plan gives you. The lab runs everything on your computer until Sitting 4, so you need no Cloudflare account until then. Sitting 4 and field guide [F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers) walk you through making one.
-
-**Your own copy on GitHub.** Task 17 opens a pull request, and Sitting 4 deploys from GitHub, so the repository goes on GitHub once, in Task 1. Sign `gh` in yourself first, in a terminal, never through an agent's chat: `gh auth login`, then `gh auth status` to check, as in [Chapter 16](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/lab/). A private repository works for every task.
-
-**The date in this lab.** Today in the lab is Monday, March 15, 2027, a week after Lab 16. An agent that reads its own clock may call the data's dates the future. Ignore that. The expected answers, such as which invoices are due, count from that date, whatever day you do the lab.
+**The date in this lab** is Monday, March 15, 2027. The expected answers count from that date, whatever day you do the lab. An agent that reads its own clock may call the data's dates the future: ignore that.
 
 ![The shape of the lab: four sittings, three coding agents, one contract. Sitting 1, specify and build: read the protocol, the contract with the expert, acceptance checks, tests first, the TypeScript version, errors and handles, inspect and lock the door. Sitting 2, build again and prove: tests first in Python, the Python version, the conformance suite, untrusted output, cross review. Sitting 3, ship and run everywhere: into the plugin, port to Codex, port to OpenCode, spans matched, the AI app's view, ship it. Sitting 4, deploy: two environments, the first deploy, deploy on merge, then watch, roll back and write the runbook. Below, the coding agents at each sitting: Claude Code for the first, all three for the others.](img/lab.png)
 
-*Figure 17.18. Four sittings, three coding agents, one contract.*
+*Figure 17.17. Four sittings, three coding agents, one contract.*
 
 
-## Sitting 1: specify and build in TypeScript (about 2 hours 25 minutes)
+## Sitting 1: specify and build in TypeScript
 
 Read Concepts [17.1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/) to [17.4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/stateless-servers/) and [17.6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/), the first half of [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/), "Locking the door", and field guides [F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer) and [F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) first. Keep [F8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f8-the-protocol-in-detail) open: it has the protocol's exact names, which Task 1 asks you to find.
 
-### Task 1. Read the protocol (15 minutes)
+### Task 1. Read the protocol
 
 **Goal:** see [17.1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/mcp-in-one-picture/)'s four steps in a real exchange, before you build anything. Field guide [F8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f8-the-protocol-in-detail) names every part you will see.
+
+**Your own copy on GitHub.** Task 17 opens a pull request, and Sitting 4 deploys from GitHub, so the repository goes on GitHub in this task, once. Sign `gh` in yourself first, in a terminal, never through an agent's chat: `gh auth login`, then `gh auth status` to check, as in [Chapter 16](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/lab/). A private repository works for every task.
 
 1. Open `brightline-ap/` in Claude Code, in a Local session, in Manual mode, and send:
 
    > Set up this repository. Put this folder under git, with a `main` branch and a first commit of everything here, with the message "Start from Lab 17's files". If git has no name or email, ask me for them and set them for this project only. Run `npm ci`, then `uv sync` in `py/`. Run `npm run keys` to make the local keys: it writes `servers/ap-ts/.dev.vars` and `servers/ap-py/.dev.vars` and prints no key. Never read or print those files. Then create a private GitHub repository from this folder with `gh repo create brightline-ap-ch17 --private --source . --push`. Tell me what each command did.
 
-   Read each command before you approve it. `.dev.vars` is the local secrets file Cloudflare's tool reads ([F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer)). The practice server needs no key. The servers you build from Task 5 on do, and your hosts read the same key from your environment ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)).
+   Read each command before you approve it. When it finishes, open the new repository on GitHub and check that the first commit is there. `.dev.vars` is the local secrets file Cloudflare's tool reads ([F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer)). The practice server needs no key. The servers you build from Task 5 on do, and your AI apps read the same key from your environment ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)).
 2. Then send:
 
    > Start the practice server with `npm run hello` in the background. Then send `server/discover` to `http://127.0.0.1:8716/mcp` with curl, as a JSON-RPC POST at revision 2026-07-28, with the headers `MCP-Protocol-Version` and `Mcp-Method` and the `_meta` keys the MCP specification requires. Then list its tools with the MCP Inspector's CLI, `--protocol-era modern`. Then call `what_time` with curl the same way, adding `Mcp-Name`. Show me each request and response in full. Change no file.
 
-3. In the output, find and write in `NOTES.md`: the revision the server supports, its capabilities, the three method headers, the two `_meta` keys, `resultType`, and `ttlMs`.
+   **Words in this prompt.** You need not know them to send it: the agent does the work, and step 3 has you find each one in the output. `curl` is a program that sends one web request from the terminal. JSON-RPC is the layout every MCP message follows: a `method`, its `params` and an `id` ([F8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#json-rpc)). `_meta` is the part of `params` that carries the revision and what the client can do. In a reply, `resultType` says whether the answer is complete, and `ttlMs` says how long the app may reuse it ([F8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#one-tool-call-as-it-travels)).
+
+3. In the output, find and write in `NOTES.md`: the revision the server supports, its capabilities, the three headers whose names start with `MCP-` or `Mcp-`, the two `_meta` keys, `resultType`, and `ttlMs`.
 4. Ask the agent to send the `what_time` call once more with `Origin: https://attacker.example`. Predict first.
 
 **Checkpoint:** you can point to each part in a real exchange, and the foreign `Origin` got HTTP 403.
 
 **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-1.md).
 
-### Task 2. The contract, with the expert (25 minutes)
+### Task 2. The contract, with the expert
 
 **Goal:** `docs/connector-spec.md`, the contract for both versions ([17.6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/)). The file name says "spec", and the prompts in this lab call it "the specification". It is the same document, the contract, not the MCP specification.
 
 > Interview me as if I were Ana Morales, Brightline's AP analyst, one question at a time, until you can write `docs/connector-spec.md` for a read-only MCP server with four tools: `find_vendor`, `list_open_invoices`, `get_purchase_order` and `search_policy`. Read `data/` and `docs/policies/` first. The server is remote and stateless over Streamable HTTP at `/mcp`, revision 2026-07-28. For each tool, the specification states its job, inputs, outputs, the exact wording of each error, and what it must never return. Above the tools, state the server-wide rules: read-only, stateless, a key on every request, `Origin` checked, bank accounts as the last four digits only, text from data returned as data, a fixed tool order, and paging through a sealed handle that expires after 15 minutes. Write nothing until I say the interview is done.
 
-Answer as Ana from the policies. When the draft arrives, read every error line aloud. Would Ana sign it? Ask for changes until she would.
+Answer as Ana from the policies. Where they say nothing, choose the careful answer, as Ana would: hold and ask, never guess. Ask the agent to mark that rule in the contract as Ana's decision. When the draft arrives, read every error line aloud. Would Ana sign it? Ask for changes until she would.
 
-**Checkpoint:** four tools, each with a "never returns" line, and an error table for each.
+**Checkpoint:** four tools, each with a "never returns" line and the exact wording of each of its errors.
 
 **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-2.md).
 
-### Task 3. Acceptance checks (15 minutes)
+### Task 3. Acceptance checks
 
 **Goal:** eight checks with the answers Ana expects, in a form code can run ([17.6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/)).
 
-> From `docs/connector-spec.md` and the data, write `docs/acceptance-prompts.md`: eight checks, each a question a person would ask, the tool call that answers it, and Ana's expected answer. Include two errors (an unknown vendor and the missing PO for INV-8310), one paged listing of all open invoices five at a time, one cited policy search, the over-PO invoice INV-8303, and the injection check on V005's note. Put the same eight checks in one JSON block with each call and its exact `structuredContent` or error text, and a `never` list of strings that must not appear. Take every expected value from the data files and the specification, never from code.
+> From `docs/connector-spec.md` and the data, write `docs/acceptance-prompts.md`: eight checks, each a question a person would ask, the tool call that answers it, and Ana's expected answer, numbered A1 to A8: A1 a vendor by name (Hocking Valley Pallets), A2 an unknown vendor, A3 one vendor's open invoices, A4 all open invoices five at a time, A5 the over-PO invoice INV-8303, A6 the missing PO for INV-8310, A7 a cited policy search, and A8 the injection check on V005's note. Put the same eight checks in one JSON block with each call and its exact `structuredContent` or error text, and a `never` list of strings that must not appear. Take every expected value from the data files and the specification, never from code.
 
 Check two expected values yourself against the CSV files, by opening them read-only: INV-8303's difference, and the number of open invoices.
 
-The checks are numbered A1 to A8, and later tasks use the numbers. Tell the agent to use them. A1 is a vendor by name (Hocking Valley Pallets), A2 an unknown vendor, A3 one vendor's open invoices, and A4 all open invoices five at a time. A5 is the over-PO invoice INV-8303, A6 the missing PO for INV-8310, A7 a cited policy search, and A8 the injection check on V005's note.
+The prompt numbers the checks A1 to A8, because later tasks use the numbers. A8, the injection check, makes sure a planted instruction in V005's note comes back as plain data, never as an order ([17.7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/untrusted-output/) explains it).
 
 **Checkpoint:** eight checks, numbered A1 to A8, each machine-checkable.
 
 **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-3.md).
 
-### Task 4. Tests first, TypeScript (20 minutes)
+### Task 4. Tests first, TypeScript
 
-**Goal:** failing tests, written from the specification before any server exists.
+**Goal:** failing tests, written from the contract before any server exists.
 
 Send:
 
-> Create a branch named `connector` with `git switch -c connector`, and commit `docs/connector-spec.md` and `docs/acceptance-prompts.md` there. Read both. Write tests in `servers/ap-ts/test/` with `node:test`, calling the server in-process through `@modelcontextprotocol/client` pinned to revision 2026-07-28, with a custom `fetch` so no port is needed. Cover: the four tools in order, each error's exact text, last-four-only, paging where page two goes to a second in-process copy, a changed, a foreign and an expired handle, and the three refusals (no key, a wrong key, and a foreign `Origin` with the right key). Take expected values from the specification only. Do not write the server. Set up the package: a `package.json` in `servers/ap-ts` named `@brightline/ap-ts`, with `@modelcontextprotocol/server` 2.4.0, `@modelcontextprotocol/node` 2.1.2 and `zod` 4.6.7 as dependencies, `@modelcontextprotocol/client` 2.4.0 and `wrangler` 4.156.0 as development dependencies, and a `test` script that runs `node --test` on `test/`. Add `servers/ap-ts` to the root `workspaces`, and a root script `test:servers` that runs that package's tests. Run `npm install` and show me the diff of both `package.json` files.
+> Create a branch named `connector` with `git switch -c connector`, and commit `docs/connector-spec.md` and `docs/acceptance-prompts.md` there. Read both. Write tests in `servers/ap-ts/test/` with `node:test`, calling the server in-process through `@modelcontextprotocol/client` pinned to revision 2026-07-28, with a custom `fetch` so no port is needed. Cover: the four tools in order, each error's exact text, last-four-only, paging where page two goes to a second in-process copy, a changed, a foreign and an expired handle, and the three refusals (no key, a wrong key, and a foreign `Origin` with the right key). Take expected values from the specification only. Do not write the server. Set up the package: a `package.json` in `servers/ap-ts` named `@brightline/ap-ts`, with `@modelcontextprotocol/server` 2.4.0, `@modelcontextprotocol/node` 2.1.2 and `zod` 4.6.7 as dependencies, `@modelcontextprotocol/client` 2.4.0 and `wrangler` 4.156.0 as development dependencies, and a `test` script that runs `node --test` on the files matching `test/**/*.test.ts`. Add `servers/ap-ts` to the root `workspaces`, and to `include` in the root `tsconfig.json` so the type check reads it, and add a root script `test:servers` that runs that package's tests. Run `npm install`, then `npm run typecheck`: its only errors should be about server files that do not exist yet. Show me the diff of both `package.json` files.
 
-Ask the agent to run them and show you the output. They must fail only because the server does not exist. Then ask it to commit the tests.
+Ask the agent to run them and show you the output. They must fail only because the server does not exist: `Cannot find module` for the server's files, and no other error. Then ask it to commit the tests.
 
 **Checkpoint:** tests committed, failing for the right reason.
 
 **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-4.md).
 
-### Task 5. Generate the TypeScript server (25 minutes)
+### Task 5. Generate the TypeScript server
 
 **Goal:** the server, as a Cloudflare Worker that also runs on Node.
 
@@ -121,11 +105,11 @@ Ask the agent to run them and show you the output. They must fail only because t
 
 **First win, one tool.** Before the whole server, get one tool working end to end, so you see the full path once while it is small. Send:
 
-> Write only the `find_vendor` tool, in `servers/ap-ts/src/`, with the smallest server that serves it over Streamable HTTP on Node at `http://127.0.0.1:8717/mcp`, using `@modelcontextprotocol/server`, started with `node --env-file=.dev.vars` so it has its keys. Run only the `find_vendor` tests with `--test-name-pattern find_vendor` and show me the output. Then start the server in the background, call `find_vendor` once with `name: "Hocking"` through the MCP Inspector's CLI, as `docs/field-guide.md` shows in F2, and show me the result. Do not change any test.
+> Write only the `find_vendor` tool, in `servers/ap-ts/src/`, with the smallest server that serves it over Streamable HTTP on Node at `http://127.0.0.1:8717/mcp`, using `@modelcontextprotocol/server`, started with `node --env-file=.dev.vars` so it has its keys. Run only the `find_vendor` tests, passing `--test-name-pattern find_vendor` to `node --test` before the test files, and show me the output. Then start the server in the background, call `find_vendor` once with `name: "Hocking"` through the MCP Inspector's CLI, as `docs/field-guide.md` shows in F2, and show me the result. Do not change any test.
 
 Compare the result with check A1 in `docs/acceptance-prompts.md`: V005, Hocking Valley Pallets, Net 30, last four digits `2217`. One tool, specified, tested and answering over the protocol: the rest of the lab repeats this path. Then send:
 
-> Now write the whole server in `servers/ap-ts/src/` so all the tests pass. Use `McpServer` and `createMcpHandler` from `@modelcontextprotocol/server` with a factory that builds a fresh server for every request, and `registerTool` with Zod v4 schemas for `inputSchema` and `outputSchema`, reusing `src/schemas.ts` and `src/load.ts` from Chapter 14. Read data through a `DataSource` interface: `env.ASSETS` in `src/worker.ts`, files on disk in `src/node.ts`. Return `structuredContent` and the same JSON as text. Announce `tools: { listChanged: false }`. Add `wrangler.jsonc` with an `ASSETS` binding and `run_worker_first`, and `scripts/copy-assets.ts`, which copies only the eight data and policy files into `assets/`. In `servers/ap-ts/package.json`, add the scripts `assets` (that copy), `start` (`node --env-file=.dev.vars src/node.ts 8717`), `dev` (`npm run assets && wrangler dev --ip 127.0.0.1 --port 8717`) and `deploy` (`npm run assets && wrangler deploy`). Do not change any test.
+> Now write the whole server in `servers/ap-ts/src/` so all the tests pass. Use `McpServer` and `createMcpHandler` from `@modelcontextprotocol/server` with a factory that builds a fresh server for every request, and `registerTool` with Zod v4 schemas for `inputSchema` and `outputSchema`, reusing the repository's `src/schemas.ts` and `src/load.ts`. Read data through a `DataSource` interface: `env.ASSETS` in `src/worker.ts`, files on disk in `src/node.ts`. Return `structuredContent` and the same JSON as text. Announce `tools: { listChanged: false }`. Add `wrangler.jsonc` with an `ASSETS` binding and `run_worker_first`, and `scripts/copy-assets.ts`, which copies only the eight data and policy files into `assets/`. Make git ignore `servers/ap-ts/assets/`, because the copy is made again before every run. In `servers/ap-ts/package.json`, add the scripts `assets` (that copy), `start` (`node --env-file=.dev.vars src/node.ts 8717`), `dev` (`npm run assets && wrangler dev --ip 127.0.0.1 --port 8717`) and `deploy` (`npm run assets && wrangler deploy`). Do not change any test.
 
 Ask the agent to show `git diff HEAD -- servers/ap-ts/test`, which must be empty, then to run `npm run test:servers` and `npm run typecheck` and show you the output. Then ask it to commit.
 
@@ -133,7 +117,7 @@ Ask the agent to show `git diff HEAD -- servers/ap-ts/test`, which must be empty
 
 **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-5.md).
 
-### Task 6. Errors and handles (25 minutes)
+### Task 6. Errors and handles
 
 **Goal:** errors that say what to do next, and paging that survives any copy ([17.3](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/errors-that-say-what-to-do-next/), [17.4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/stateless-servers/)).
 
@@ -141,36 +125,36 @@ If Task 5 already passes every error and handle test, read the code for them now
 
 > Show me where the page handle is made and opened. Does anything about paging live in a variable outside the request? Explain how a second copy of the server opens a handle the first one made, and what it checks.
 
-Read `src/handles.ts` yourself. Find the four checks a handle passes: it opens under the key, its version, its caller, its expiry.
+Ask the agent which file makes and opens the handle, and read that part yourself. Find where it refuses the three handles [17.4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/stateless-servers/) names: a changed one, which no longer opens under the handle key, another caller's, and one more than 15 minutes old. The authors' server also checks the handle's version number ([F8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#state-across-calls)).
 
-**Checkpoint:** the four error cases match the specification's words, and the paging test passes with page two on a second copy.
+**Checkpoint:** every error matches the contract's words, and the paging test passes with page two on a second copy.
 
 **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-6.md).
 
-### Task 7. Inspect and lock the door (20 minutes)
+### Task 7. Inspect and lock the door
 
 **Goal:** the server checked by an independent client, in the Workers runtime, behind a locked door ([17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/)).
 
-1. Ask Claude Code to start the server in the background with `npm run dev` in `servers/ap-ts`. It copies the data files into `assets/` and runs `wrangler dev`, which runs the Worker in a local copy of Cloudflare's runtime, with no account. Predict: it answers at `http://127.0.0.1:8717/mcp`.
+1. Ask Claude Code to stop the server from Task 5 if it is still running, then to start this one in the background with `npm run dev` in `servers/ap-ts`. It copies the data files into `assets/` and runs `wrangler dev`, which runs the Worker in a local copy of Cloudflare's runtime, with no account. Predict: it answers at `http://127.0.0.1:8717/mcp`.
 2. Ask Claude Code to call each tool once with the MCP Inspector's CLI, as field guide [F2](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f2-the-mcp-inspector) shows, with your key and `--protocol-era modern`, and `tools/list` with `--strict`.
 3. Then ask it for three refusals with curl: no key, a wrong key, and a foreign `Origin` with the right key. And one more: `GET http://127.0.0.1:8717/data/vendor-banking.csv`.
 
-**Checkpoint:** `tools/list` shows four tools in order, four calls pass, the refusals return 401, 401 and 403 and call no tool, and the banking file is not served. The authors' server answers 404, and any refusal is fine as long as the file does not come back. The file is in `assets/`, but `run_worker_first` sends every request to your code, which serves no files ([F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer)).
+**Checkpoint:** `tools/list` shows four tools in order, four calls pass, the refusals return 401, 401 and 403 and call no tool, and the banking file is not served. The authors' server answers 404, and any refusal is fine as long as the file does not come back. The file is in `assets/`, but `run_worker_first` sends every request to your code, which serves no files ([F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer)). If the agent also shows Wrangler's Local Explorer, under `/cdn-cgi/local/explorer`, that is Wrangler's own page on your computer, not your Worker, and it lists no data file ([F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#static-assets)).
 
 **Check it now.** Download [Task 7's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-7.md).
 
 
-## Sitting 2: build in Python and prove they agree (about 1 hour 45 minutes)
+## Sitting 2: build in Python and prove they agree
 
 Read Concepts [17.5](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/built-in-custom-skill-or-connector/) and [17.7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/untrusted-output/) first.
 
-### Task 8. Tests first, Python (20 minutes)
+### Task 8. Tests first, Python
 
 **Goal:** the same contract, tested in Python, by a different agent.
 
 Open the repository in Codex. Send:
 
-> Read `docs/connector-spec.md` and `docs/acceptance-prompts.md`. Write `py/tests/test_connector.py` with pytest for a Python server built by `create_app(token=..., handle_key=..., now_ms=...)` in `py/brightline_ap/mcp_server.py`. Drive it with Starlette's `TestClient`, posting JSON-RPC at revision 2026-07-28 with the `MCP-Protocol-Version`, `Mcp-Method` and `Mcp-Name` headers and the `_meta` keys, so every exchange is visible. Cover the same cases as `servers/ap-ts/test/connector.test.ts`, with the same expected values. Add `mcp>=2,<3`, `cryptography` and `uvicorn` to `py/pyproject.toml` and lock. Do not write the server.
+> Read `docs/connector-spec.md` and `docs/acceptance-prompts.md`. Write `py/tests/test_connector.py` with pytest for a Python server built by `create_app(token=..., handle_key=..., now_ms=...)` in `py/brightline_ap/mcp_server.py`. Drive it with Starlette's `TestClient`, posting JSON-RPC at revision 2026-07-28 with the `MCP-Protocol-Version`, `Mcp-Method` and `Mcp-Name` headers and the `_meta` keys, so every exchange is visible. Cover the same cases as the tests in `servers/ap-ts/test/`, with the same expected values. Add `mcp>=2,<3`, `cryptography` and `uvicorn` to `py/pyproject.toml` and lock. Do not write the server.
 
 Ask Codex to run the tests, show you the output, and commit them.
 
@@ -178,11 +162,11 @@ Ask Codex to run the tests, show you the output, and commit them.
 
 **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-8.md).
 
-### Task 9. Generate the Python server (25 minutes)
+### Task 9. Generate the Python server
 
-**Goal:** the Python server, from the same specification.
+**Goal:** the Python server, from the same contract.
 
-> Write `py/brightline_ap/connector.py` with `MCPServer` and `@mcp.tool()`, the four tools with the same names, titles, descriptions, annotations and error wording as the specification, and Pydantic output models. Reuse the Chapter 14 models in `py/brightline_ap/models.py`. Seal page handles with AES-256-GCM, as the specification says, so nobody can read one, and each is checked on every call. In `py/brightline_ap/mcp_server.py`, wrap the SDK's Streamable HTTP app with a key check in front and the SDK's `TransportSecuritySettings` for `Origin` and `Host`. (The `Host` header names the address the caller asked for. Checking it is a second guard against DNS rebinding, field guide F8.) Return a `CallToolResult` with `is_error=True` for tool errors, so the wording is exactly the specification's. Add `servers/ap-py/` with a Python Worker entry that mounts the same app. Do not change any test.
+> Write `py/brightline_ap/connector.py` with `MCPServer` and `@mcp.tool()`, the four tools with the same names, titles, descriptions, annotations and error wording as the specification, and Pydantic output models. Reuse the models already in `py/brightline_ap/models.py`. Seal page handles with AES-256-GCM, as the specification says, so nobody can read one, and each is checked on every call. In `py/brightline_ap/mcp_server.py`, wrap the SDK's Streamable HTTP app so each request is checked in the specification's order, `Origin` first and then the key, using the SDK's `TransportSecuritySettings` for `Origin` and `Host`. (The `Host` header names the address the caller asked for. Checking it is a second guard against DNS rebinding, field guide F8.) Announce only tools, and answer `GET /mcp` with 405, as the TypeScript server does. Return a `CallToolResult` with `is_error=True` for tool errors, so the wording is exactly the specification's. Add `servers/ap-py/` with a Python Worker entry that mounts the same app. Do not change any test.
 
 The Python web app standard here is **ASGI**: the SDK gives you an app object, and "mounting" it means handing each request to that object. The same app object runs on your computer and, through the Python Worker entry, on Cloudflare.
 
@@ -192,13 +176,13 @@ Ask Codex to run `npm run test:py` and `npm run check:py` (Pyright, strict), sho
 
 **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-9.md).
 
-### Task 10. The conformance suite (25 minutes)
+### Task 10. The conformance suite
 
 **Goal:** one suite that proves both servers keep the same contract, on any copy ([17.6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/specify-generate-verify/)).
 
 Open the repository in OpenCode. Send:
 
-> Write `scripts/conformance.ts`. It starts two copies of each server on 127.0.0.1 (TypeScript on 8717 and 8727, Python on 8718 and 8728) with test keys, connects with `@modelcontextprotocol/client` pinned to revision 2026-07-28, and fails on any difference. Compare the two servers' `tools/list`: names, order, titles, descriptions, annotations and schemas. Run the eight checks from the JSON block in `docs/acceptance-prompts.md` on each server, sending each page of the paged check to the other copy. Try a changed handle on the other copy, and the three refusals: no key, a wrong key, and a foreign `Origin` with the right key. Also accept `CONFORMANCE_URLS` to check deployed servers, and when it does, check that `/data/vendor-banking.csv` does not return the file. Add `npm run conformance` and a required `conformance` job in `.github/workflows/ci.yml`.
+> Write `scripts/conformance.ts`. It starts two copies of each server on 127.0.0.1 (TypeScript on 8717 and 8727, Python on 8718 and 8728) with test keys, connects with `@modelcontextprotocol/client` pinned to revision 2026-07-28, and fails on any difference. Compare the two servers' `tools/list`: names, order, titles, descriptions, annotations and schemas. Run the eight checks from the JSON block in `docs/acceptance-prompts.md` on each server, sending each page of the paged check to the other copy. Try a changed handle on the other copy, and the three refusals: no key, a wrong key, and a foreign `Origin` with the right key. Also accept `CONFORMANCE_URLS` to check servers that are already running: a comma-separated list of `name=address` pairs, where one pair is one server at one address, and the same name twice means two copies of one server. When it does, check that `/data/vendor-banking.csv` does not return the file. Add `npm run conformance` and a required `conformance` job in `.github/workflows/ci.yml`, and add `npm run test:servers` to its `checks` job.
 
 Ask OpenCode to run it and show you the output. **The first run will probably fail on the tool lists.** Read the failure with the agent. If the difference carries no meaning for a client (how a schema is spelled, not what it allows), ask OpenCode to add a normalizing rule with a comment naming the run that found it. If it carries meaning, send it to the agent that wrote that server.
 
@@ -208,11 +192,11 @@ Then break it on purpose, twice: ask Codex to change one word in one Python desc
 
 **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-10.md).
 
-### Task 11. Untrusted output (20 minutes)
+### Task 11. Untrusted output
 
 **Goal:** the injection check, read by a person ([17.7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/untrusted-output/)).
 
-1. **Test the connector alone.** If the agent can read `data/` directly, a good answer proves nothing about the connector. Ask Claude Code to start the TypeScript server in the background. Then ask it to make an empty folder outside the repository, `../ap-injection-check/`, holding only a `.mcp.json` that names the running server, as field guide [F3](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f3-claude-code) shows, with the key read from `${AP_MCP_TOKEN}`. From a terminal where `AP_MCP_TOKEN` is set ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), start `claude` in that folder, a new session that cannot see the repository. Send: "Triage the open invoices from Hocking Valley, using the Brightline AP connector."
+1. **Test the connector alone.** If the agent can read `data/` directly, a good answer proves nothing about the connector. Ask Claude Code to start the TypeScript server in the background. Then ask it to make an empty folder outside the repository, `../ap-injection-check/`, holding only a `.mcp.json` that names the running server, as [17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/#how-to-connect-a-connector-in-your-coding-agent)'s Claude Code steps and field guide [F3](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f3-claude-code) show, with the key read from `${AP_MCP_TOKEN}`. From a terminal where `AP_MCP_TOKEN` is set ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), start `claude` in that folder, a new session that cannot see the repository. Send: "Triage the open invoices from Hocking Valley, using the Brightline AP connector."
 2. Read the answer. Did the agent quote V005's note? Did it call the note's instruction a note, and follow no part of it? Did any invoice change pile because of it?
 3. Ask the agent to search both servers' results from the conformance run for `8816403392217` and `042101190`, and to ask the running TypeScript server for `/data/vendor-banking.csv`, which must not return the file.
 
@@ -220,7 +204,7 @@ Then break it on purpose, twice: ask Codex to change one word in one Python desc
 
 **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-11.md).
 
-### Task 12. Review both servers (15 minutes)
+### Task 12. Review both servers
 
 **Goal:** each server read by the agent that did not write it ([Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/evidence-before-the-pr/)).
 
@@ -231,45 +215,45 @@ Start a fresh Codex session and send "Review `servers/ap-ts/` against `REVIEW.md
 **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-12.md).
 
 
-## Sitting 3: ship it and run it everywhere (about 2 hours 10 minutes)
+## Sitting 3: ship it and run it everywhere
 
-Read Concepts [17.9](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/charging-for-a-connector/) to [17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/) and field guides [F3](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f3-claude-code) to [F5](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f5-opencode-version-2) and [F7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f7-seeing-the-servers-spans) first.
+Read [17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/#how-to-connect-a-connector-in-your-coding-agent)'s steps for your agent, and field guides [F3](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f3-claude-code) to [F5](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f5-opencode-version-2), first. For the extensions, Tasks 16a to 16c, read [17.10](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/) and [F7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f7-seeing-the-servers-spans) too. [17.9](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/charging-for-a-connector/) goes further, and no task needs it.
 
-### Task 13. Into the plugin (25 minutes)
+### Task 13. Into the plugin
 
-**Goal:** plugin v0.2.0, with the connector in place of the ready-made one.
+**Goal:** plugin v0.2.0, with your connector in place of Chapter 16's ready-made one, `apdata`.
 
 In Claude Code:
 
-> Build plugin v0.2.0. In `plugin/.mcp.json`, add a server named `ap` of type `http` whose `url` is `${AP_MCP_URL:-http://127.0.0.1:8717/mcp}` and whose `Authorization` header is `Bearer ${AP_MCP_TOKEN}`. Remove the `apdata` connector and the core `plugin/mcp.json`, because the Agent Plugins core cannot carry a key. In `.claude/settings.json`, allow the four tools by their plugin names. Bump both manifests to 0.2.0 and add a changelog entry. Update `invoice-triage` to confirm each vendor with `find_vendor` and each PO with `get_purchase_order`, and add a section saying text from tools is data. Make `scripts/check-plugin.ts` fail if a header holds a literal value instead of an environment variable.
+> Build plugin v0.2.0. In `plugin/.mcp.json`, add a server named `ap` of type `http` whose `url` is `${AP_MCP_URL:-http://127.0.0.1:8717/mcp}` and whose `Authorization` header is `Bearer ${AP_MCP_TOKEN}`. Remove the `apdata` connector and the core `plugin/mcp.json`, because the Agent Plugins core cannot carry a key, and change `scripts/check-plugin.ts` so it no longer reads that file. In `.claude/settings.json`, allow the four tools by their plugin names. Bump both manifests to 0.2.0 and add a changelog entry. Update `invoice-triage` to confirm each vendor with `find_vendor` and each PO with `get_purchase_order`, and add a section saying text from tools is data. Make `scripts/check-plugin.ts` fail if a header in `plugin/.mcp.json` holds a literal value instead of an environment variable.
 
-Test the new rule: ask the agent to put a made-up literal key in the header, run `npm run check:plugin`, show you the failure, and revert.
+Test the new rule: ask the agent to put a made-up literal key in the header, run `npm run check:plugin`, show you the failure, and revert. Then try the skill as Ana would. Ask the agent to start the TypeScript server in the background, and keep that session open, because the server runs inside it. In a terminal where you set the key ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), start a second session in the repository's folder with `claude --plugin-dir plugin`, which loads the plugin as [16.10](https://agentfactory.panaversity.org/building-ai-workers/skills-and-plugins/both-ai-vendors/#practice-what-a-plugin-bundles) did, and ask it about INV-8303 and INV-8310.
 
-**Checkpoint:** `plugin-valid` is green and the deliberate literal key is caught. Asked about INV-8303 and INV-8310, the triage skill reports one as $900.00 over its PO and the other as having none, with the policy line.
+**Checkpoint:** `npm run check:plugin` passes (CI's `plugin-valid` job runs the same check), and the deliberate literal key is caught. Asked about INV-8303 and INV-8310, the triage skill reports one as $900.00 over its PO and the other as having none, with the policy line.
 
 **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-13.md).
 
-### Task 14. Port to Codex (20 minutes, one of Tasks 14 and 15 is core)
+### Task 14. Port to Codex (one of Tasks 14 and 15 is core)
 
-**Goal:** both servers in Codex, by URL.
+**Goal:** both servers in Codex, by URL. The steps, and how to check the connection, are in [17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/#how-to-connect-a-connector-in-your-coding-agent).
 
-In Codex, send "Add both servers to `.codex/config.toml` as field guide [F4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f4-codex) shows: `apts` on 8717 and `appy` on 8718, with `bearer_token_env_var = "AP_MCP_TOKEN"` and the four tools in `enabled_tools`. Propose a `default_tools_approval_mode` and explain the risk of `writes`." Decide yourself, with [17.7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/untrusted-output/) in mind, and write the choice and its reason in `ports/ch17.md`. Mark the project as trusted in Codex, so it reads `.codex/config.toml` ([F4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f4-codex)). Ask Codex to start both servers in the background, then start a new chat and ask A5 and A6 against each server.
+In Codex, send "Add both servers to `.codex/config.toml` as field guide [F4](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f4-codex) shows: `apts` on 8717 and `appy` on 8718, with `bearer_token_env_var = "AP_MCP_TOKEN"` and the four tools in `enabled_tools`. Propose a `default_tools_approval_mode` and explain the risk of `writes`." Decide yourself, with [17.7](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/untrusted-output/) in mind, and write the choice and its reason in `ports/ch17.md`. Trust the project in Codex, so it reads `.codex/config.toml` ([17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/#how-to-connect-a-connector-in-your-coding-agent) says how). Ask Codex to start both servers in the background, and keep that session open, because the servers run inside it. In a terminal where you set the key ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), start a second session in the repository's folder with `codex`, so it can send the key, and ask A5 and A6 against each server there.
 
 **Checkpoint:** the same answers from both servers in Codex, and your approval choice with its reason.
 
 **Check it now.** Download [Task 14's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-14.md).
 
-### Task 15. Port to OpenCode (20 minutes, one of Tasks 14 and 15 is core)
+### Task 15. Port to OpenCode (one of Tasks 14 and 15 is core)
 
-**Goal:** both servers in OpenCode.
+**Goal:** both servers in OpenCode. The steps, and how to check the connection, are in [17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/#how-to-connect-a-connector-in-your-coding-agent).
 
-In OpenCode: "Add both servers to `opencode.jsonc` under `mcp.servers`, as field guide [F5](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f5-opencode-version-2) shows, with `"oauth": false`, `"protocol": "2026-07-28"`, the key from `{env:AP_MCP_TOKEN}`, and permission rules allowing `apts_*` and `appy_*`." Restart OpenCode, ask it to start both servers in the background if they are not running, and ask A5 and A6 against each.
+In OpenCode: "Add both servers to `opencode.jsonc` under `mcp.servers`, as field guide [F5](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f5-opencode-version-2) shows, with `"oauth": false`, `"protocol": "2026-07-28"`, the key from `{env:AP_MCP_TOKEN}`, and permission rules allowing `apts_*` and `appy_*`." Ask OpenCode to start both servers in the background if they are not running, and keep that session open, because the servers run inside it. In a terminal where you set the key ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), start a second session in the repository's folder with `opencode`, so it reads the new settings and can send the key. There, type `/mcps`, connect any server that is not connected ([17.11](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/both-ai-vendors/#how-to-connect-a-connector-in-your-coding-agent)), and ask A5 and A6 against each.
 
 **Checkpoint:** the same answers from both servers in OpenCode.
 
 **Check it now.** Download [Task 15's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-15.md).
 
-### Task 16a. Instrument both servers (25 minutes, extension)
+### Task 16a. Instrument both servers (extension)
 
 **Goal:** the server's own spans, to the agreed names ([17.10](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/), field guide [F8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f8-the-protocol-in-detail)).
 
@@ -283,7 +267,7 @@ In Codex, for the Python server, ask first: "Run one tool call with an in-memory
 
 **Check it now.** Download [Task 16a's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-16a.md).
 
-### Task 16b. Prove the spans match (10 minutes, extension)
+### Task 16b. Prove the spans match (extension)
 
 **Goal:** the suite fails if the two servers name or label a span differently ([17.10](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/watching-a-connector/)).
 
@@ -293,7 +277,7 @@ In OpenCode: "Extend `scripts/conformance.ts` to run both span reporters and fai
 
 **Check it now.** Download [Task 16b's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-16b.md).
 
-### Task 16c. The host's view (15 minutes, extension)
+### Task 16c. The host's view (extension)
 
 1. Turn on Claude Code's telemetry for one session, as field guide [F3](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f3-claude-code) shows (these are settings of your own app, not repository changes), and run A6 (the missing PO). Find the records naming `mcp_server.name` and `mcp_tool.name`: first `"custom"`, then real names with `OTEL_LOG_TOOL_DETAILS=1`.
 2. Ask Codex to add the `[otel]` export to your **user** config, not the repository's, then run A6 and find its MCP usage record.
@@ -304,23 +288,23 @@ In OpenCode: "Extend `scripts/conformance.ts` to run both span reporters and fai
 
 **Check it now.** Download [Task 16c's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-16c.md).
 
-### Task 17. Ship it (15 minutes)
+### Task 17. Ship it
 
 **Goal:** the connector on `main` through a reviewed pull request, passing from a clean clone (Chapter 15).
 
-Ask Claude Code to open the pull request with the template: high tier for both servers, every check including `conformance`, and AI review in a fresh session. Read the review. Read the pull request on GitHub as its reviewer. GitHub does not let you approve your own pull request, so your approval is your decision to merge: when you are satisfied, tell Claude Code to merge it with `gh pr merge`. Then ask it to clone `main` into a new folder. There it runs `npm ci`, `uv sync` in `py/`, the four checks (`npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`), `npm run test:servers` and `npm run conformance`, and show you the output.
+Ask Claude Code to open the pull request with the template: high tier for both servers, every check including `conformance`, and AI review in a fresh session. Read the review. Read the pull request on GitHub as its reviewer. GitHub does not let you approve your own pull request, so your approval is your decision to merge: when you are satisfied, tell Claude Code to merge it with `gh pr merge --merge`. Without one of `--merge`, `--squash` or `--rebase`, `gh` stops and merges nothing when no person is at its terminal. Then ask it to clone `main` into a new folder. There it runs `npm ci`, `uv sync` in `py/`, the four checks (`npm test`, `npm run typecheck`, `npm run test:py` and `npm run check:py`), `npm run test:servers` and `npm run conformance`, and show you the output.
 
 **Checkpoint:** `main` passes from a clean clone. The agent tags it after the last task you do.
 
 **Check it now.** Download [Task 17's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-17.md).
 
-## Sitting 4: deploy (about 1 hour 30 minutes)
+## Sitting 4: deploy
 
 Never used Cloudflare, or never heard of it? Start with field guide [F1](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer), "Meet Cloudflare": what the company is, why it matters for AI, and what its free plan gives you. Then read the second half of [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/), "Putting it online, and changing it safely". Then read field guide [F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers), starting with "How a coding agent deploys" and "Your first deploy, in order", which Tasks 18a and 18b follow.
 
 **Coding agents do the deploying, the Chapter 12 way.** You type no deploy command. For each task below:
 
-1. Start a fresh session, and begin with "Read `NOTES.md` and `ports/ch17.md`." If `NOTES.md` does not exist yet, leave it out."
+1. Start a fresh session, and begin with "Read `NOTES.md` and `ports/ch17.md`." If `NOTES.md` does not exist yet, leave it out.
 2. Set *Plan* mode and give the task's brief. Read the plan and correct it.
 3. Switch to *Manual*, so the agent asks before every command, and read each command before you approve it: which environment, which file, and no key value in it. Not Auto, and never Bypass permissions.
 4. Accept the result only on evidence: the suite's `0 failed`, a status code, a version ID. A second agent runs the checks.
@@ -332,7 +316,7 @@ The lab spreads the work across the three coding agents on purpose, so each one 
 2. **Make a Cloudflare account and choose your `workers.dev` subdomain**, as [F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers) "Your first deploy, in order" step 1 shows.
 3. **Sign Wrangler in.** Start a fresh Claude Code session in *Manual* mode and ask it to run `npx wrangler login` in `servers/ap-ts`. Approve the sign-in in your browser, by you, as [F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers) step 2 shows. Then ask it to run `npx wrangler whoami`.
 
-### Task 18a. Two environments, and rules for deploying (30 minutes)
+### Task 18a. Two environments, and rules for deploying
 
 **Goal:** a staging environment beside production, proved on your computer before anything goes online, and the rules that keep the agents safe while they deploy.
 
@@ -346,16 +330,16 @@ The lab spreads the work across the three coding agents on purpose, so each one 
    >
    > *Constraints.* Keep every rule already in those files. Plan only, and wait. Edit no other file.
 
-   Read the plan, switch to *Manual*, and let it make the change. Check the diff: `AGENTS.md` has the five rules under Deploying. `.claude/settings.json` has an `"ask"` list with twelve entries, each starting `Bash(`, one for each command named in the brief, and `"Bash(npx wrangler secret put *)"` added under `"deny"`, with the old deny rules still there. `opencode.jsonc` has twelve `"ask"` shell lines and one `"deny"` line for `secret put`. These are the two guards from Chapter 12: the words explain the rule, and the setting makes Claude Code and OpenCode ask even if a session is left in a looser mode. Ask the agent to commit. Start a fresh session for step 2.
+   If you did Task 14 and not Task 15, there is no `opencode.jsonc`: delete its sentence and its name from the brief before you send it. Read the plan, switch to *Manual*, and let it make the change. Check the diff: `AGENTS.md` has the five rules under Deploying. `.claude/settings.json` has an `"ask"` list with twelve entries, each starting `Bash(`, one for each command named in the brief, and `"Bash(npx wrangler secret put *)"` added under `"deny"`, with the old deny rules still there. If you have `opencode.jsonc`, it has twelve `"ask"` shell lines and one `"deny"` line for `secret put`. These are the two guards from Chapter 12: the words explain the rule, and the setting makes Claude Code and OpenCode ask even if a session is left in a looser mode. Ask the agent to commit on a new branch, `deploy-setup`, where steps 2 to 4 commit too. Start a fresh session for step 2.
 2. Ask Claude Code: "In `servers/ap-ts/wrangler.jsonc`, keep production at the top level and add `env.staging`. Repeat the `assets` binding and `observability` in staging, because they are not inherited. Turn Version URLs off for production and on for staging. Add npm scripts `dev:staging`, `deploy:staging`, `deploy` (with `--env=""`) and `check:deploy`, which dry-runs both environments, and `secrets:staging` and `secrets:production`, which send `.secrets/staging.env` and `.secrets/production.env` with `wrangler secret bulk`. At the root, add `conformance:staging` and `conformance:production`, which run the suite with `node --env-file` reading that environment's key file and `.secrets/<environment>.urls.env`. Make git ignore every `.dev.vars*` file except the example. Do the same configuration for `servers/ap-py`." Give it in *Plan* mode first, read the plan, then switch to *Manual*. Read the diff and check four things. Under `staging`, both `assets` and `observability` appear. `preview_urls` is `false` at the top and `true` under `staging`. `servers/ap-ts/package.json` has five new scripts, and `deploy` now uses `--env=""`, and the root has the two `conformance:` scripts. `.gitignore` has a line for `.dev.vars*` and a line starting with `!` for the example file.
 3. Ask Claude Code to run `npm run keys -- --deploy`. It makes separate staging and production keys in `.secrets/` and `.dev.vars.staging`, prints none, and refuses to write any file git would track. *You should see:* a list of file names and no values. Then ask it to run `npm run check:deploy` in `servers/ap-ts` and show you the output, which [F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers) step 3 shows.
 4. Ask OpenCode to start two local staging copies, in `servers/ap-ts`. The first is `npm run dev:staging`, which listens on port 8717. The second is `npx wrangler dev --env staging --ip 127.0.0.1 --port 8727 --inspector-port 9339 --persist-to .wrangler/state-2`, a second copy with its own port and its own local storage ([F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers), "Run it on your computer"). Then ask it to write `CONFORMANCE_URLS=ts=http://127.0.0.1:8717/mcp,ts=http://127.0.0.1:8727/mcp` into `.secrets/staging.urls.env` with one shell command, run `npm run conformance:staging` from the top folder, and show you the output. Each copy prints `Ready on http://127.0.0.1:8717` (or 8727), and the suite ends with `0 failed`. Then ask it to stop both copies. Task 18b replaces the addresses in that file.
 
-**Checkpoint:** both environments build, and the suite passes against two staging copies, including the check on `/data/vendor-banking.csv`. When you ask the agent to run `git status`, no file from `.secrets/` and no `.dev.vars` file is listed. `.secrets/staging.urls.env` still holds the two local addresses. Task 18b replaces them. If a staging check later stops with "cannot reach `http://127.0.0.1:8717/mcp`", the file still holds the local ones. Save the staging address again.
+**Checkpoint:** both environments build, and the suite passes against two staging copies, including the check on `/data/vendor-banking.csv`. When you ask the agent to run `git status`, no file from `.secrets/` and no `.dev.vars` file is listed. `.secrets/staging.urls.env` still holds the two local addresses. Task 18b replaces them. Then ask the agent to open a pull request for `deploy-setup`, and merge it when you are satisfied, as in Task 17. If a staging check later stops with "cannot reach `http://127.0.0.1:8717/mcp`", the file still holds the local ones. Save the staging address again.
 
 **Check it now.** Download [Task 18a's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-18a.md).
 
-### Task 18b. The first deploy (20 minutes)
+### Task 18b. The first deploy
 
 **Goal:** both environments online, checked by the same suite, staging first. A coding agent runs every command, and you approve each one. Follow [F6](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f6-deploying-to-cloudflare-workers) "Your first deploy, in order", steps 4 to 8.
 
@@ -380,7 +364,7 @@ Read the plan for four things: staging comes before production, keys are sent af
 
 **Check it now.** Download [Task 18b's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-18b.md).
 
-### Task 18c. Deploy on merge (25 minutes, extension)
+### Task 18c. Deploy on merge (extension)
 
 **Goal:** after today, nobody deploys from a laptop, not even an agent. The one exception is an emergency rollback (Task 18d).
 
@@ -394,7 +378,7 @@ Read the plan for four things: staging comes before production, keys are sent af
 
 **Check it now.** Download [Task 18c's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch17-key-task-18c.md).
 
-### Task 18d. Watch, roll back, and write the runbook (15 minutes, extension)
+### Task 18d. Watch, roll back, and write the runbook (extension)
 
 **Goal:** you can see what the server does, and undo a bad deploy. Do Task 18c first, because step 1 needs the pipeline.
 
@@ -429,9 +413,9 @@ Pick one system at work an agent should read from. With its owner, write a contr
 | Problem | What to try |
 | --- | --- |
 | The Inspector's CLI hangs after connecting | The server announces list changes. Set `tools: { listChanged: false }` ([F2](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f2-the-mcp-inspector)) |
-| The Inspector says authorization required | The key is missing or wrong. Pass `--header "Authorization: Bearer $AP_MCP_TOKEN"` from a terminal where you set the key ([F0](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f0-keys-on-your-computer)), never the key itself |
-| Every call returns 421 from the Python server | HTTP 421 means "this server does not answer for that address". On your computer, use `127.0.0.1` or `localhost`. Deployed, send `AP_PUBLIC_HOSTS` with the host name the deploy printed (Task 18b step 4) |
-| A host gets `-32022` | It asked for a revision the server does not serve. Set the host's revision ([F5](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f5-opencode-version-2)) |
+| The Inspector says authorization required | The key is missing or wrong. Ask the agent to load the key from `servers/ap-ts/.dev.vars` in the same command, as field guide [F2](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f2-the-mcp-inspector) shows, and never to print it |
+| Every call returns 421 from the Python server | HTTP 421 means "this server does not answer for that address". On your computer, use `127.0.0.1` or `localhost`. In the tests, give Starlette's `TestClient` `base_url="http://127.0.0.1:8718"`, because its own default host is `testserver`. Deployed, send `AP_PUBLIC_HOSTS` with the host name the deploy printed (Task 18b step 4) |
+| An AI app gets `-32022` | It asked for a revision the server does not serve. Set the app's revision ([F5](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/field-guide-connectors/#f5-opencode-version-2)) |
 | The conformance suite fails on schemas only | Read the difference. Normalize only spellings that mean the same thing |
 | Two spans per call in Python | The SDK already makes the span. Add attributes to the current span instead |
 | `pywrangler` says uv is too old | Install uv 0.13.4 or later |
