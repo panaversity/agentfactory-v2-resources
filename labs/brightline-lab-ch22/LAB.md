@@ -11,7 +11,7 @@ Chapter 23 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 | Sitting 3a, the end of Milestone 1 | Part C ([23.9](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/three-identities-never-one/) to [23.12](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/the-portals-own-pages/)) | Tasks 9 to 11 |
 | Sitting 3b | [23.13](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/keys-that-expire-and-no-keys-at-all/) | Tasks 12, 12b and 13 |
 | Sitting 4 | [23.14](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/when-a-refresh-is-refused/) to [23.16](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/loops-check-feedback-and-stop/) | Tasks 14 to 18 |
-| Sitting 5, the end of Milestone 2 | Part E ([23.17](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/patterns-and-when-to-host-it-yourself/), [23.18](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/designing-a-hosted-worker/)) and [23.19](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/how-todays-tools-realize-it/) | Tasks 20 and 21, optional 19 and 21b |
+| Sitting 5, the end of Milestone 2 | Part E ([23.17](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/patterns-and-when-to-host-it-yourself/), [23.18](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/designing-a-hosted-worker/)). Tasks 19 and 20 also use [23.19](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/how-todays-tools-realize-it/), so read it first if you do them now | Tasks 20 and 21, optional 19 and 21b |
 
 ## Lab 23: getting ready
 
@@ -21,7 +21,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 **Route B is not enough here.** In Labs 21 and 22 you could use your own Chapter 19 connector online (route A). Or you could use a practice connector on your own computer (route B). A hosted platform cannot reach a connector on your computer, and each person must sign in through [Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/)'s sign-in server. So this lab needs Chapter 19's system online in your own accounts, which is route A. If you took route B, or skipped Lab 19, Task 0 sets that system up for you, one step at a time, from Chapters 18 and 19's field guides. The practice connector stays in the repository, and Lab 23 does not use it.
 
-**This lab costs money, and takes six sittings, spread over days.** Neither hosted runtime has a free plan. Every session in this lab carries a budget, most of a few cents. Three limits bound what you can spend: every portal question is capped at $0.50, every test session at 10 cents, and the staging workspace's monthly spending limit (F2 gives $10) stops everything. The authors expect the Claude tasks to cost under $8 in all, about $2 of it for the session matrix and its planted bugs, and the optional OpenAI port under $3. These are estimates, not yet confirmed by a live run. Cloudflare and Neon stay on their free plans. The open-source port can run free with a local model.
+**This lab costs money, and takes six sittings, spread over days.** Both hosted runtimes bill for every run. Every session in this lab carries a budget, most of a few cents. Three limits bound what you can spend: every portal question is capped at $0.50, every test session at 10 cents, and the staging workspace's monthly spending limit (F2 gives $10) stops everything. The authors expect the Claude tasks to cost under $8 in all, about $2 of it for the session matrix and its planted bugs, and the optional OpenAI port under $3. These are estimates, not yet confirmed by a live run. Cloudflare and Neon stay on their free plans. The open-source port can run free with a local model.
 
 **The date in this lab** is Monday, April 5, 2027, a week after Lab 19 and four days after Lab 22 (Thursday, April 1).
 
@@ -253,7 +253,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 
 > Read 23.6, 23.7, 23.8 and F2. Add the staging connector to `agents/ap-worker.md` as F2 shows: the connector's toolset off by default with `always_ask`, and only `find_vendor`, `list_open_invoices`, `get_purchase_order` and `search_policy` on, with `always_allow`. Add only the connector's host to `allowed_hosts`. Add one rule to `scripts/check-agent-config.ts`: it fails if the connector's default is not `always_ask`, or any connector tool other than the four in the spec is on. Run `npm run check:agent-config`, show me the plan and apply. Then print, for every tool the model can see, its policy and why, from the applied agent.
 
-**What good looks like:** seven rows. Four connector tools on "allow", and read, glob and grep on "allow". No command tool, no web tools. `check:agent-config` passes. Your prediction: the worker cannot reach the connector, because its host is not an open door (23.7, F2). Whether the platform rejects the session at the start or fails the first connector call is not yet confirmed. Either counts as the right answer.
+**What good looks like:** seven rows. Four connector tools on "allow", and read, glob and grep on "allow". No command tool, no web tools. `check:agent-config` passes. Your prediction: the worker cannot reach the connector, because its host is not an open door (23.7, F2). The platform's documents say it refuses to create the session, with a 400 error.
 
 **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch22-key-task-6.md).
 
@@ -302,7 +302,7 @@ The lab runs in sittings, each right after the concepts it uses. This section is
 | Confidential client | A program on a server, registered with a client secret, that may hold a refresh token (23.10) |
 | Service binding | A private link between two of your servers on the same platform, not reachable from the internet (Task 9) |
 | D1 | Cloudflare's database for Workers, which Chapter 18's sign-in server already uses. The portal gets a D1 database of its own (Task 9) |
-| `wrangler secret put` | The command that stores a secret for a deployed server, read from a prompt or a file, never printed ([F6](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f6-workload-identity-keys-and-the-portals-secrets)) |
+| `wrangler secret put` | The command that stores a secret for a deployed server, read from a prompt or a file, never printed. It deploys the Worker again at once, with the secret ([F6](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/reference/#f6-workload-identity-keys-and-the-portals-secrets)) |
 | Service account | An account for a program, not a person, so a key made for it belongs to the product, not to you (23.9, F6) |
 | PKCE, `state` | Two checks in a sign-in: PKCE proves the app that started the sign-in is the one finishing it, and `state` proves the answer belongs to this sign-in (Chapter 18) |
 | ID token | A signed token from the sign-in server that says who signed in. The portal reads it. The access token is for the connector (Task 10a) |
@@ -616,15 +616,15 @@ This sitting starts Milestone 2.
 
 **Goal:** the portal's receiver checks signatures, skips repeats and reconciles.
 
-**By hand first (F5).** Add the staging webhook endpoint in the Console and paste its signing secret into `.secrets/portal.env`.
+**By hand first (F5).** Add the staging webhook endpoint in the Console, with five events: `session.status_idled`, `session.status_terminated`, `vault_credential.refresh_failed`, `deployment_run.failed` (a scheduled run started no session) and `deployment.paused` (a schedule was paused, by request or after a run failed in a way it cannot recover from). Paste its signing secret into `.secrets/portal.env`.
 
 **In plain words.** The portal learns to receive the platform's messages safely: checked, not repeated, and reconciled.
 
 > Read 23.15 and F5.
 >
-> 1. Add `/hooks/claude` to the portal. For each delivery: check it with the SDK's `unwrap()` and the signing secret from the portal's secrets, skip any event id already in a new `webhook_events` table, fetch the session or credential the event names, and update the page.
+> 1. Add `/hooks/claude` to the portal. For each delivery: check it with the SDK's `unwrap()` and the signing secret from the portal's secrets, skip any event id already in a new `webhook_events` table, fetch the session, credential or deployment the event names, and update the page.
 > 2. Add an hourly reconcile job. It lists the last two hours of sessions and handles any it has not seen. It records each scheduled session in `portal_sessions` the first time it sees one. It checks, through the membership route, every person whose vault a schedule uses, and archives the vault of anyone no longer a member.
-> 3. Stop. I set the signing secret myself, in my own terminal: `npx wrangler secret put WEBHOOK_SIGNING_SECRET --env staging` in `apps/portal/`, pasting it from `.secrets/portal.env`. Then deploy.
+> 3. Deploy, then stop. I set the signing secret myself, in my own terminal: `npx wrangler secret put WEBHOOK_SIGNING_SECRET --env staging` in `apps/portal/`, pasting it from `.secrets/portal.env`. That command deploys the portal again, with the secret.
 > 4. Start a session as Ana, and show me the delivery. In staging only, the receiver keeps the most recent delivery's raw body and headers in a `webhook_debug` table, which holds no secret. It empties the table after this task.
 > 5. Within 5 minutes of the delivery, replay that stored delivery with the same headers, and show me it was skipped as a repeat. (After 5 minutes, `unwrap()` would refuse it as stale instead.) Then send one with a changed body, and show me the refusal.
 
@@ -668,7 +668,7 @@ This sitting starts Milestone 2.
 
 ## Lab 23, Sitting 5: ports and review (Tasks 19 to 21 and 21b)
 
-*Tasks 19 and 20 use [23.19](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/how-todays-tools-realize-it/), at the end of the chapter, and its full boxes on the companion page. Skim the OpenAI and open-source parts first.*
+*Tasks 19 and 20 also use [23.19](https://agentfactory.panaversity.org/building-ai-workers/hosted-agents/how-todays-tools-realize-it/), at the end of the chapter, and its full boxes on the companion page, so read its OpenAI and open-source parts first if you do those tasks now.*
 
 **New words in this sitting's prompts.**
 
@@ -737,7 +737,7 @@ This sitting starts Milestone 2.
 
 **In plain words.** An optional run where a separate grader, with its own context, checks the work against a list you wrote.
 
-> Read 23.17. As Luis, I will write a four-line rubric for "every open Cedar Ridge invoice has a decision and a cited policy line". Write `scripts/outcome.ts`, a staging script that calls `startPersonSession` for Luis, kind `review` ($1.00 from the worker contract), with that outcome and at most 3 rounds. Print the grader's explanation after each round, and the final result.
+> Read 23.17. As Luis, I will write a four-line rubric for "every open Cedar Ridge invoice has a decision and a cited policy line". Write `scripts/outcome.ts`, a staging script that calls `startPersonSession` for Luis, kind `review` ($1.00 from the worker contract), with that outcome and at most 3 rounds. The outcome's description starts with "The run date is Monday, April 5, 2027.", because the skill asks for a run date and nobody is there to give it. Print the grader's explanation after each round, and the final result.
 
 **What good looks like:** one or more rounds, each with an explanation, then `satisfied` or `max_iterations_reached`, under $1.00.
 
