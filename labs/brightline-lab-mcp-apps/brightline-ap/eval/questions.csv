@@ -1,0 +1,13 @@
+company,question,expected
+org_cedar,do we need a PO for a $400 repair?,data-cedar/policies/purchasing.md:5|data-cedar/policies/purchasing.md:6
+org_cedar,who approves an invoice over $3000?,data-cedar/policies/approvals.md:5
+org_cedar,can a vendor change its bank details by email?,data-cedar/policies/vendor-bank-changes.md:7
+org_cedar,how are utility bills paid?,data-cedar/policies/purchasing.md:7
+org_cedar,what happens when an invoice is more than its purchase order?,data-cedar/policies/approvals.md:8
+org_cedar,what is the capital of France?,abstain
+org_brightline,who approves invoices over $12000?,docs/policies/ap-triage-rules.md:8
+org_brightline,does every invoice need a purchase order before payment?,docs/policies/po-matching.md:5
+org_brightline,can we accept new bank details from a vendor email?,docs/policies/vendor-onboarding.md:7
+org_brightline,how many digits of an account number may we show in chat?,docs/policies/vendor-onboarding.md:8
+org_brightline,who adds a new vendor?,docs/policies/vendor-onboarding.md:5
+org_brightline,what is the weather in Columbus today?,abstain

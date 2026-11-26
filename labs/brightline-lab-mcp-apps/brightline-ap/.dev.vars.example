@@ -1,0 +1,14 @@
+# The shape of servers/ap-ts/.dev.vars and servers/ap-py/.dev.vars. Do not fill in the key by hand:
+# `npm run keys` writes the real files, which git ignores, without printing the key. Never commit real values.
+# The key that seals page handles: 32 random bytes, base64url.
+AP_HANDLE_KEY=replace-with-32-random-bytes-base64url
+# Settings, not secrets (add them to the file `npm run keys` wrote):
+# the sign-in server's issuer. On your computer the public keys come from <AP_ISSUER>/jwks.
+AP_ISSUER=http://127.0.0.1:8719/api/auth
+# This connector's own address: every token's aud must equal it exactly.
+# servers/ap-ts: http://127.0.0.1:8717/mcp. servers/ap-py: http://127.0.0.1:8718/mcp (its own resource).
+AP_RESOURCE=http://127.0.0.1:8717/mcp
+# On your computer only: also trust tokens signed with AP_TEST_SIGNING_KEY (.secrets/test-signing.local.env,
+# passed with --env-file). Never in wrangler.jsonc, never deployed (F8).
+AP_TRUST_TEST_ISSUER=1
+# There is no shared access key any more: AI apps sign in (Chapter 18).

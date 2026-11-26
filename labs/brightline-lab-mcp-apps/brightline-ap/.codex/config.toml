@@ -1,0 +1,16 @@
+# Codex: both Brightline AP connectors, by URL, with no key: Codex signs in through your browser
+# (`codex mcp login apts`), with its own Client ID Metadata Document, whose host chatgpt.com is on the
+# sign-in server's allowlist (servers/auth/src/cimd-allowlist.ts). F6.
+# A deployed address goes in your user config (~/.codex/config.toml), never in this file.
+
+[mcp_servers.apts]
+url = "http://127.0.0.1:8717/mcp"
+enabled_tools = ["find_vendor", "list_open_invoices", "get_purchase_order", "search_policy"]
+# "writes" skips approval for tools the server marks read-only. That mark is the server's own claim.
+# We accept it here only because we wrote and reviewed this server (Concept 17.7).
+default_tools_approval_mode = "writes"
+
+[mcp_servers.appy]
+url = "http://127.0.0.1:8718/mcp"
+enabled_tools = ["find_vendor", "list_open_invoices", "get_purchase_order", "search_policy"]
+default_tools_approval_mode = "writes"
