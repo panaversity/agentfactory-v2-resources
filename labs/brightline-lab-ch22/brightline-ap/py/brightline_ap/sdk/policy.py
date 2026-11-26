@@ -37,8 +37,9 @@ def decide_tool(name: str, tool_input: dict) -> Decision:
 
 
 def cites_policy_line(answer: str) -> bool:
-    """Rule 2, in plain words: an answer must cite at least one policy line, written as (file.md:N)."""
-    return re.search(r"\([a-z0-9-]+\.md:\d+\)", answer, re.IGNORECASE) is not None
+    """Rule 2, in plain words: an answer must cite at least one policy line, written as (file.md:N),
+    with or without the folder search_policy names, such as (docs/policies/po-matching.md:6)."""
+    return re.search(r"\((?:[a-z0-9_-]+/)*[a-z0-9-]+\.md:\d+\)", answer, re.IGNORECASE) is not None
 
 
 def write_flag(invoice_number: str, reason: str) -> str:

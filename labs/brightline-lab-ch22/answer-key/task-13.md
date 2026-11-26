@@ -4,6 +4,6 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 
 **Your prediction, if it matched:** The service account, not a person.
 
-**What good looks like:** the pull request's checks pass with no key and no platform token. After merge, the merge job prints the plan, applies it, and staging's agent moves up one version. The Console's workload identity history shows the token exchange as `brightline-ci`.
+**What good looks like:** the pull request's checks pass with no key and no platform token. After merge, the merge job prints the plan, applies it, and staging's agent moves up one version. The Console's workload identity history shows the token exchange under your federation rule, whose target is the `brightline-ci` service account.
 
 **Never a deduction:** a Console step or menu named a little differently from F6's, recorded in `ports/ch22.md`, or the pull request with the new lock file that the third job opens after the apply, which the prompt asks for.

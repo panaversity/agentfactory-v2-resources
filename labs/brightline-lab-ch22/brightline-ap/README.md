@@ -19,6 +19,8 @@ The checks: `npm test`, `npm run typecheck`, `npm run test:py`, `npm run check:p
 
 Setup: Node 22.19 or later (24 recommended), uv, then `npm ci`, `cd py && uv sync`, and `npm run keys`, which makes every local secret into files git ignores and prints none.
 
+**Old numbers.** The folders and notes keep each chapter's number from before the book added a new Chapter 20: `docs/chapter-20/` and `ports/ch20.md` belong to Chapter 21, `docs/chapter-21/` and `ports/ch21.md` to Chapter 22, and `docs/chapter-22/`, `ports/ch22.md` and the tags `lab22-start` and `ch22` to Chapter 23.
+
 ## The agent loop (Chapter 21)
 
 The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and Python. Coding agents wrote it. Read `AGENTS.md`, then do Lab 21's Task 0: install, run the offline tests, put your keys in `.secrets/`, fill in the prices in `src/loop/config.json`, and choose a connector.
@@ -69,7 +71,7 @@ The same AP worker on a tool runner and on two agent SDKs, in TypeScript and Pyt
 Lab 23 hosts the AP worker on a platform that runs its loop, and builds Brightline's AP portal around it. At `lab22-start` this folder adds:
 
 - `apps/portal/`: the portal's skeleton, a Cloudflare Worker whose routes answer 501 until the lab's tasks fill them in. Its offline tests: `npm run test:portal`, `npm run typecheck:portal`.
-- `src/rules/cites.ts`: Lab 22's rule 2, in a file of its own, so the portal can use it. `src/sdk/policy.ts` takes it from there.
+- `src/rules/cites.ts`: Lab 22's rule 2, in a file of its own, so the portal can use it. It also accepts a citation that names its folder, as `search_policy` returns it. `src/sdk/policy.ts` takes it from there.
 - `data/companies.csv` and `data/test-people.csv`: every company's id and names, and the test people a test token may be made for.
 - `skills/invoice-triage/`: Chapter 16's skill, copied unchanged from `plugin/skills/invoice-triage/`, for the worker as files. Change both together, or neither.
 - A planted note on Cedar Ridge's vendor V102, added to its own note, for Task 8's injection check and the page check of row S7 (Task 12).
