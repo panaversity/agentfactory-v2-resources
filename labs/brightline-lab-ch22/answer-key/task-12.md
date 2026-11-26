@@ -6,9 +6,9 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 
 **At the check between the prompts:** four rows pass, none inconclusive.
 
-**What good looks like:** eight rows pass, none inconclusive. The run starts about twelve sessions, which cost about 3 to 5 cents each, under $0.60 in all.
+**What good looks like:** eight rows pass, none inconclusive. The run starts about twelve sessions, which cost about 3 to 5 cents each, about $0.60 in all.
 
-**Expected from the platform's documentation:** 8 rows pass, about twelve sessions, under $0.60.
+**Expected from the platform's documentation:** 8 rows pass, about twelve sessions, about $0.60.
 
 **Check before you approve, what you should have found:** the line that fails when the row's rule is broken is the one you named: the line that checks the row's own rule, the check that the table at the start of the sitting says catches that row's bug. For S1, it is the line that checks Luis gets Cedar Ridge's own V001. If the agent shows a different line, record which in `ports/ch22.md`.
 

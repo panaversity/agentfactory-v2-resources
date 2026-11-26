@@ -4,10 +4,10 @@ For you, after the task. Open it in a text editor, never in the agent. Nothing i
 
 **Your prediction, if it matched:** The model cannot see what it missed, so the portal checks the report against the tool results the platform recorded, with code.
 
-**What good looks like:** the four check tests pass. The plan creates one deployment. The first run's report is posted after zero, one or two rounds, for under $0.50 in all. It has the line saying it was made with Ana's access. The second is recorded as a repeat. The deployment shows as paused, so it does not spend money every weekday after the lab.
+**What good looks like:** the four check tests pass. The plan creates one deployment. The first run's report is posted after zero, one or two rounds, for under $0.50 in all. It decides each of Brightline's 16 open invoices, with a total of $46,715.13, and it has the line saying it was made with Ana's access. The second is recorded as a repeat. The deployment shows as paused, so it does not spend money every weekday after the lab.
 
 **Expected from the platform's documentation:** Four check tests pass (missing invoice, invented citation, wrong total, passing). First run's report posted after zero to two check rounds, under $0.50 in all. Second recorded as a repeat. Deployment paused (to be confirmed by the authors' live run).
 
-**Check before you approve, what you should have found:** the check fails that report, because a citation id that `search_policy` did not return in that session is one of its failures. Its two comparisons with the session's own tool results: every invoice `list_open_invoices` returned has exactly one decision, and every citation id was one `search_policy` returned in that session (23.16). The total, added up by the code from the tool results, is a third check.
+**Check before you approve, what you should have found:** the check fails that report, because a citation that `search_policy` did not return in that session is one of its failures. Its two comparisons with the session's own tool results: every invoice `list_open_invoices` returned, on every page, has exactly one decision, and every citation, written `file.md:N`, was one `search_policy` returned in that session (23.16). The total, added up by the code from the tool results, is a third check.
 
-**Never a deduction:** zero, one or two check rounds before the report is posted, since the page lists all three, or the decision the report gives each invoice, which this key does not list.
+**Never a deduction:** zero, one or two check rounds before the report is posted, since the page lists all three, the decision the report gives each invoice, which this key does not list, or fixtures your agent made from the lab's data, since the zip holds no recorded run.
