@@ -120,13 +120,7 @@ The advanced path is still on the exam. Streaming and caching are objectives of 
 
 ## What you will build
 
-**Who's who.** Start here introduced Ana and Brightline. If you did Chapters 17 to 19, you know them all.
-
-| Who | Role |
-| --- | --- |
-| You, the builder | You direct the coding agents, check their work and approve it |
-| Brightline Wholesale Supply | The wholesale supplier the AP worker is built for |
-| Ana Morales | Brightline's AP analyst (AP is accounts payable, the team that checks and pays bills). Her questions are the lab's test questions |
+**Who's who.** You are the builder: you direct the coding agents, check their work and approve it. The AP worker is for Brightline, and Ana's questions from Start here are the lab's test questions.
 
 **Where you are.** At the end of Chapter 20, Brightline's connector is online and offers the model four read-only tools: `find_vendor`, `list_open_invoices`, `get_purchase_order` and `search_policy`. It checks a sign-in token on every call and reads each company's rows from the database. (The connector serves several companies and keeps each one's data apart.) It also has its own screen inside the chat, with one tool only that screen may call, but this chapter does not use them. So far, only AI apps and coding agents have called it, and they ran the loop where you could not see it. If you skipped those chapters, the lab's practice connector takes its place, with the same four tools (Task 0).
 
