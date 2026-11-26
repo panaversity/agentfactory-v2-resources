@@ -5,24 +5,24 @@ When a prompt says "Read 19.8", open `19.8.md`. When it says "field guide F3", o
 | File | What it is |
 | --- | --- |
 | `overview.md` | Chapter 19, the point, its words and what you build |
-| `19.1.md` | 19.1 Why a database now |
-| `19.2.md` | 19.2 Tables, rows and keys, from zero |
-| `19.3.md` | 19.3 Reading SQL: predict, then run |
-| `19.4.md` | 19.4 Designing the AP tables |
-| `19.5.md` | 19.5 Third normal form in detail: keep it, break it on purpose |
-| `19.6.md` | 19.6 Changing the tables safely |
-| `19.7.md` | 19.7 Three ways to keep data apart |
-| `19.8.md` | 19.8 Row-level security |
-| `19.9.md` | 19.9 One company per transaction |
-| `19.10.md` | 19.10 Where the guarantee stops |
-| `19.11.md` | 19.11 Each company's own rules and data |
-| `19.12.md` | 19.12 Proving the data stays apart |
-| `19.13.md` | 19.13 Retrieval from zero |
-| `19.14.md` | 19.14 Embeddings and pgvector in depth: predict, then run |
-| `19.15.md` | 19.15 Answers that cite, or abstain |
-| `19.16.md` | 19.16 Measuring retrieval |
-| `19.17.md` | 19.17 A database behind a stateless server |
-| `19.18.md` | 19.18 How today's tools realize it |
+| `19.1.md` | 19.1 Why move the data out of the code? |
+| `19.2.md` | 19.2 What are tables, rows and keys? |
+| `19.3.md` | 19.3 How do you read SQL an agent wrote? |
+| `19.4.md` | 19.4 How do two companies share one set of tables? |
+| `19.5.md` | 19.5 Where does each fact belong? |
+| `19.6.md` | 19.6 How do you change tables that are in use? |
+| `19.7.md` | 19.7 Shared tables, or a database per company? |
+| `19.8.md` | 19.8 What if a query forgets its company filter? |
+| `19.9.md` | 19.9 What if the last call's company is still set? |
+| `19.10.md` | 19.10 What can still leak when the rows are safe? |
+| `19.11.md` | 19.11 How does each company keep its own rules and data? |
+| `19.12.md` | 19.12 How do you prove the data stays apart? |
+| `19.13.md` | 19.13 How does a search find a rule by its meaning? |
+| `19.14.md` | 19.14 Where does a search by meaning go wrong? |
+| `19.15.md` | 19.15 What if the policies do not answer the question? |
+| `19.16.md` | 19.16 How do you know the search still works? |
+| `19.17.md` | 19.17 What if the database is slow or asleep? |
+| `19.18.md` | 19.18 How do today's products do this? |
 | `F0.md` | Field guide F0. The repository you start with, and the secrets on your computer |
 | `F1.md` | Field guide F1. Postgres from zero |
 | `F2.md` | Field guide F2. Neon from zero |
