@@ -494,7 +494,7 @@ The three logs in 23.3 are simplified, in the platform's documented shapes. Your
 ```typescript
 const vault = await client.beta.vaults.create({
   display_name: "Ana Morales at Brightline",
-  metadata: { person_id: "u_ana", tenant_id: "org_brightline" }, // test vaults add test: "true"
+  metadata: { person_id: "ana", tenant_id: "org_brightline" }, // test vaults add test: "true"
 });
 const credential = await client.beta.vaults.credentials.create(vault.id, {
   auth: {

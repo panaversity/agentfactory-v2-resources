@@ -1,6 +1,6 @@
 # The agent loop (Lab 21): Codex asks before a command that leaves the folder or needs the network,
-# such as npm run ask. Codex's settings cannot deny reading a path in the folder, so for .secrets/ the
-# rule in AGENTS.md is the guard.
+# such as npm run ask. Codex can deny reading a path only with a permission profile, which is in beta and
+# does not combine with this file's sandbox_mode, so for .secrets/ the rule in AGENTS.md is the guard.
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 
