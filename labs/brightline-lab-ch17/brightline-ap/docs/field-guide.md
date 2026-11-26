@@ -25,11 +25,11 @@ npm run keys                 # servers/ap-ts/.dev.vars and servers/ap-py/.dev.va
 npm run keys -- --deploy     # also .secrets/ (staging, production, github) and both servers' .dev.vars.staging
 ```
 
-`scripts/make-keys.ts` makes 32 random bytes per key, writes them only into files git ignores, refuses to write anywhere git would track, never overwrites a file, and prints file names, never values. Later commands read the keys straight from these files, so the keys never pass through the chat. `AGENTS.md` forbids an agent to read, print or copy them, and `.claude/settings.json` denies Claude Code's file reads of them. Those two guards stop an agent that follows its rules. They are not a lock, so watch for a key in any agent's output, and make new keys if one appears. **Ran.**
+`scripts/make-keys.ts` makes 32 random bytes per key, writes them only into files git ignores, refuses to write anywhere git would track, never overwrites a file, and prints file names, never values. Later commands read the keys straight from these files, so the keys never pass through the chat. `AGENTS.md` lets an agent use them only as inputs to commands, never open, print or copy them, and `.claude/settings.json` denies Claude Code's file reads of them. Those two guards stop an agent that follows its rules. They are not a lock, so watch for a key in any agent's output, and make new keys if one appears. **Ran.**
 
 **Two roles for one AI app.** Claude Code plays two roles in this lab. As your coding agent, it runs commands you approve. Start it from its desktop icon, or from a terminal where you have not set a key. As an AI app that calls the connector, it needs the key. Only for that role, in Tasks 11, 13 to 16c and 18d, start it from a terminal where you set the key, as shown below. Codex and OpenCode work the same way.
 
-**Where you handle a key yourself.** Two places, and only these, both **by you**. One is the Cloudflare deploy token ([F6](#f6-deploying-to-cloudflare-workers), "Deploy from CI"). The other is the key your AI apps use. Claude Code, Codex and OpenCode read `AP_MCP_TOKEN` from their own environment when they connect to a server, so you set it in a terminal window and start the AI app from that same window. The agent cannot do this, because it must never see the key.
+**Where you handle a key yourself.** Two places, and only these, both **by you**. One is the Cloudflare deploy token ([F6](#f6-deploying-to-cloudflare-workers), "Deploy from CI"). The other is the key your AI apps use. An **environment variable** is a named value that a terminal window holds and hands to every program started from it. Claude Code, Codex and OpenCode read `AP_MCP_TOKEN` from their own environment when they connect to a server, so you set it in a terminal window and start the AI app from that same window. The agent cannot do this, because it must never see the key.
 
 Ask the agent for the full path of the repository folder. Open the Terminal app (on Windows, PowerShell). Type `cd`, a space and the path in double quotes, such as `cd "/Users/ana/brightline-ap"`, and press Enter. Then type one line. It reads the key straight from the file, so the key never appears on screen, in the chat or in your shell's history.
 
@@ -100,7 +100,7 @@ From Cloudflare's limits[^cloudflare-limits] and pricing pages,[^cloudflare-pric
 | Secrets and variables | 64 per Worker, each up to 5 KB | 2 per Worker (3 for the Python extension) |
 | Uploaded files | 20,000 per Worker, each up to 25 MiB | 8 |
 | An address | A free subdomain of `workers.dev`, such as `ana-ap-lab.workers.dev` | One |
-| Logs | 200,000 log lines a day, kept 3 days, until new log pricing starts on December 1, 2026 | A few lines per request |
+| Logs | Until December 1, 2026: 200,000 log lines a day, kept 3 days. From that date, Cloudflare's Observability pricing applies: 0.5 GB of logs a day, kept 7 days[^cloudflare-observability-pricing] | A few lines per request |
 
 - **When you go over.** Past 100,000 requests in a day, calls get Cloudflare's **error 1027** until midnight UTC. A Worker that keeps computing for more than 10 ms per request gets **error 1102**. Nothing is charged, and nothing breaks for good.
 - **Static files.** Cloudflare serves uploaded files free and without limit when they are served directly. Brightline sends every request through its code first, so no file is ever served on its own ([F6](#f6-deploying-to-cloudflare-workers), "Static assets"), and every request counts toward the 100,000.
@@ -203,17 +203,19 @@ npx mcp-inspector --cli http://127.0.0.1:8717/mcp --protocol-era modern \
 
 ### F3. Claude Code
 
-```bash
-claude mcp add --transport http apts http://127.0.0.1:8717/mcp \
-  --header "Authorization: Bearer $AP_MCP_TOKEN"
-```
-
-That writes the key into your own Claude Code settings. To keep it out of every file, use a project `.mcp.json` instead, which reads the environment:
+The lab's way: a project `.mcp.json`, which reads the key from the environment, so the key is in no file:
 
 ```json
 { "mcpServers": { "appy": { "type": "http",
   "url": "${AP_MCP_PY_URL:-http://127.0.0.1:8718/mcp}",
   "headers": { "Authorization": "Bearer ${AP_MCP_TOKEN}" } } } }
+```
+
+The other way, one command, writes the key into your own Claude Code settings, so the lab does not use it:
+
+```bash
+claude mcp add --transport http apts http://127.0.0.1:8717/mcp \
+  --header "Authorization: Bearer $AP_MCP_TOKEN"
 ```
 
 **Ran** with Claude Code 2.1.316 on November 2, 2026: a project `.mcp.json` of this shape, naming the TypeScript server, answered acceptance checks A5, A6 and A8.
@@ -254,11 +256,12 @@ In `opencode.jsonc` at the repository root:
   "permissions": [ { "action": "apts_*", "resource": "*", "effect": "allow" } ] }
 ```
 
-- `protocol`: the default is not 2026-07-28. Set `"2026-07-28"`, or `"auto"` to ask the server with `server/discover`.[^opencode-mcp]
+- `protocol`: the default is `legacy`, not 2026-07-28. Set `"2026-07-28"`, or `"auto"` to ask the server with `server/discover`.[^opencode-mcp]
 - `oauth`: on by default for remote servers. `false` when the key is in a header.
 - `disabled: true` stops a server. There is no `enabled` field.
 - `timeout`: `startup`, `catalog` and `execution`. `codemode` is on by default.
-- Tools are named `<server>_<tool>` in permission rules. `opencode mcp add` adds a server.
+- Tools are named `<server>_<tool>` in permission rules. `opencode mcp add` adds a server, `opencode mcp list` shows each one's state, and `/mcps` does the same in the app.
+- Shell commands take rules too. Each rule has an `action`, a `resource` and an `effect` (`allow`, `ask` or `deny`), and the last rule that matches wins. In the page's own pattern, `{ "action": "shell", "resource": "npx wrangler deploy *", "effect": "ask" }` asks first, and `{ "action": "shell", "resource": "npx wrangler secret put *", "effect": "deny" }` refuses. Version 2 says `permissions` and `shell`, where older versions said `permission` and `bash`.[^opencode-permissions]
 
 ### F6. Deploying to Cloudflare Workers
 
@@ -295,7 +298,7 @@ The same habits apply. In Codex, use `/plan` for the plan and keep *Ask for appr
 
 #### Your first deploy, in order
 
-About 50 minutes. Step 3 is lab Task 18a, which also tests two copies on your computer before anything goes online, and steps 4 to 8 are Task 18b. If you start your agent from its icon in the desktop app, you need to do nothing here. If you started one by typing `claude`, `codex` or `opencode` in a terminal where you set `AP_MCP_TOKEN`, close that terminal and start the agent from a new one ([F0](#f0-keys-on-your-computer)). When a step says to note something in `ports/ch17.md`, tell the agent what you saw and ask it to add one line there. Most commands run in `servers/ap-ts`. The checks in steps 6 to 8 run from the repository's top folder, because the conformance suite lives there.
+Step 3 is lab Task 18a, which also tests two copies on your computer before anything goes online, and steps 4 to 8 are Task 18b. If you start your agent from its icon in the desktop app, you need to do nothing here. If you started one by typing `claude`, `codex` or `opencode` in a terminal where you set `AP_MCP_TOKEN`, close that terminal and start the agent from a new one ([F0](#f0-keys-on-your-computer)). When a step says to note something in `ports/ch17.md`, tell the agent what you saw and ask it to add one line there. Most commands run in `servers/ap-ts`. The checks in steps 6 to 8 run from the repository's top folder, because the conformance suite lives there.
 
 1. **Make an account, by you.** Sign up for a free Cloudflare account at `dash.cloudflare.com/sign-up/workers-and-pages`. If Cloudflare asks you to verify your email, open the email it sent and do that first. *You should see:* the Cloudflare dashboard, with *Workers & Pages* in the menu on the left. It may sit under a heading such as *Compute*. Open it (or type its name into the dashboard's search box) and look for *Your subdomain*. A new account has none, so select the button next to it to set one: something short with no personal or company details, such as `ana-ap-lab`, because anyone can see it. The button may say *Set up* or *Change*. Type the name and confirm. *You should see* your name followed by `.workers.dev` next to *Your subdomain*. Do this before step 4, because a coding agent cannot answer Wrangler's question about it.
 2. **Sign Wrangler in.** Ask the agent to run `npx wrangler login` in `servers/ap-ts`. Your browser opens at Cloudflare. If it does not, open the link the agent shows. Check the address is Cloudflare's own and sign in, within about two minutes, or the agent's command may time out. If it does, ask the agent to run `npx wrangler login` again. Cloudflare then lists many things Wrangler may do. That is normal. Select *Allow*. From now on, commands the agent runs can change your Cloudflare account, which is why you read each one before you approve it. Then ask the agent to run `npx wrangler whoami`.[^cloudflare-wrangler-login] *You should see:* "You are logged in with an OAuth Token, associated with the email" and your email address, and your account's name and ID. If it shows someone else's email, stop and sign in again.
@@ -328,7 +331,7 @@ If you do Task 18c, changes reach staging through CI from then on, not from your
 
 #### The free plan
 
-[F1](#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) has the full table. In short: 100,000 requests a day for the whole account, reset at midnight UTC, and **10 ms of CPU time per request**. Workers Logs move to new pricing on December 1, 2026.
+[F1](#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) has the full table. In short: 100,000 requests a day for the whole account, reset at midnight UTC, and **10 ms of CPU time per request**. Workers Logs move to Cloudflare's Observability pricing on December 1, 2026 ([F1](#f1-cloudflare-from-zero-and-running-the-servers-on-your-computer) has both sets of numbers).
 
 #### Get an account and sign in
 
@@ -389,7 +392,7 @@ The steps are in "Your first deploy, in order" above. Write each address with `/
 
 **GitHub Actions** runs workflow files from `.github/workflows/` on GitHub's computers.[^cloudflare-github-actions] Brightline's `deploy.yml` deploys staging on every push to `main`, which is what a merged pull request does, and runs the conformance suite against it. Production is deployed only when a person runs the workflow by hand. This works on every GitHub plan, private repositories included.
 
-1. **Make the deploy token, by you.** In the Cloudflare dashboard, open *My Profile*, then *API Tokens*, and select *Create Token*. Choose the *Edit Cloudflare Workers* template.[^cloudflare-api-token] This token can change any Worker in your account, so treat it like a password. Under *Account Resources*, choose your one account. Under *Zone Resources*, a new account has no domains, so keep the template's setting. If your account has domains, choose none, because the lab uses none. A zone is a domain that Cloudflare manages. Select *Continue to summary*, then *Create Token*. Copy it now: Cloudflare shows it only once. If a screen differs, follow the dashboard's own words and note the difference in `ports/ch17.md`.
+1. **Make the deploy token, by you.** In the Cloudflare dashboard, go to the *Account API tokens* page (under *Manage Account*, *API Tokens*) and select *Create Token*. Under *Permission policies*, open the *Custom* dropdown and select *Edit Cloudflare Workers*.[^cloudflare-github-actions] Give the token a name you will recognize. This token can change any Worker in your account, so treat it like a password. Where the page asks which account and zone resources the token may reach, choose your one account. A zone is a domain that Cloudflare manages: a new account has none, so keep what the page offers, and if your account has domains, choose none, because the lab uses none. Select *Continue to summary*, then *Create Token*.[^cloudflare-api-token] Checked November 26, 2026. Copy it now: Cloudflare shows it only once. If a screen differs, follow the dashboard's own words and note the difference in `ports/ch17.md`.
 2. **Put it in the one file you edit, by you.** Open `.secrets/github.env` in a plain text editor, not through an agent ([F0](#f0-keys-on-your-computer) shows how to find hidden files). Right-click it and choose *Open With*, then TextEdit, or Notepad on Windows. You will see the lines `# CLOUDFLARE_API_TOKEN=` and `# CLOUDFLARE_ACCOUNT_ID=`. Leave any other comment line alone. Delete the `#` and the space after it, and paste the value right after the `=`, so each looks like `CLOUDFLARE_API_TOKEN=abc123`, with no spaces and no quotes. The account ID is in `npx wrangler whoami`'s output, or in the dashboard, as "Get an account and sign in" step 4 above shows. You will also see two long keys in this file, both environments' `AP_MCP_TOKEN` values. Leave them exactly as they are, copy them nowhere, change no other line, then save and close.
 3. **The agent stores them in GitHub.** It runs `gh secret set -f .secrets/github.env`, which sends four repository secrets without showing them, and `gh variable set STAGING_URLS --body "ts=https://brightline-ap-ts-staging.<subdomain>.workers.dev/mcp"`, and `gh variable set PRODUCTION_URLS --body "ts=https://brightline-ap-ts.<subdomain>.workers.dev/mcp"`, with no `-staging`. `gh secret list` shows the names, never the values. They appear in your repository under *Settings*, *Secrets and variables*, *Actions*.
 4. **Staging deploys on merge.** After a merge, the agent runs `gh run watch` and shows you the `deploy` run: staging deployed with `npm run deploy:staging`, then the suite against staging. Wrangler reads `CLOUDFLARE_API_TOKEN` from the environment,[^cloudflare-system-env] so no sign-in step is needed.
@@ -400,7 +403,7 @@ The workflow never sets a Worker secret. **GitHub environments** with required r
 #### Versions, Version URLs and rollback
 
 - Every deploy makes a version. `npx wrangler versions list` shows the 10 most recent. `npx wrangler deployments list` shows what was deployed when.
-- `npx wrangler versions upload` uploads a version without making it live. On a Worker with Version URLs on, it prints an address such as `<version-prefix>-brightline-ap-ts-staging.<subdomain>.workers.dev`. Add `--preview-alias pr-12` for a readable one. Version URLs are public, so the key still guards them, and their requests do not appear in Workers Logs or `wrangler tail`.[^cloudflare-previews]
+- `npx wrangler versions upload` uploads a version without making it live. On a Worker with Version URLs on, it prints an address such as `<version-prefix>-brightline-ap-ts-staging.<subdomain>.workers.dev`. Add `--preview-alias try-1` for a readable one. Version URLs are public, so the key still guards them, and their requests do not appear in Workers Logs or `wrangler tail`. A Version URL is not a Preview: for a branch or a pull request, Cloudflare now offers Previews (`wrangler preview`), which have their own secrets and address. This lab uses neither for pull requests. Its staging environment does that job.[^cloudflare-previews]
 - `npx wrangler versions list` runs from oldest to newest: the newest is at the bottom. Each version shows its *Created* date and its *Source*: `Upload` for a deploy, `Secret Change` for new keys, or `Rollback`.
 - `npx wrangler rollback <version-id>` makes that version live, on every address. Always pass the version ID. Add `--message "why"`. When an agent runs Wrangler, Wrangler cannot ask you anything, so it answers yes to every question for you, including a warning that secrets have changed. Only the 100 most recent versions can be chosen. Each version keeps the secrets it had. So rolling back to a version older than the newest `Secret Change` brings the old keys back, and with an agent the warning will not stop it. Before you approve a rollback, check that the version is the newest `Secret Change` or newer. Connected resources, such as a database, are not rolled back.[^cloudflare-rollbacks]
 
@@ -412,6 +415,8 @@ The workflow never sets a Worker secret. **GitHub environments** with required r
 #### Static assets
 
 `run_worker_first` sends every request to the Worker, so no file is served directly.[^cloudflare-static-assets] The Worker reads a file with `env.ASSETS.fetch("https://assets.local/data/vendors.csv")`. **Ran:** `/data/vendor-banking.csv` returns 404.
+
+One exception on your computer is Wrangler's, not your Worker's. When `wrangler dev` runs inside an AI agent, it prints the address of its **Local Explorer**, at `/cdn-cgi/local/explorer` on the local development server, which describes the Worker and its settings.[^cloudflare-local-explorer] **Ran** on November 26, 2026: it answered 200 with no key and listed no data file. It exists only while you develop on your computer.
 
 #### For developers: two functions named `createMcpHandler`
 
@@ -465,7 +470,7 @@ MCP messages travel over HTTP, the protocol of the web.
 
 #### JSON-RPC
 
-Every MCP message is **JSON-RPC 2.0** (RPC: remote procedure call). A request is a JSON object with a `method`, `params` and an `id`. The answer carries the same `id` and holds a `result` or an `error`. An error has a negative number and a message, such as `-32602` (invalid parameters, also used for an unknown tool) and `-32022` (unsupported protocol version, with the list of revisions the server supports).
+Every MCP message is **JSON-RPC 2.0** (RPC: remote procedure call). A request is a JSON object with a `method`, `params` and an `id`. The answer carries the same `id` and holds a `result` or an `error`. An error has a negative number and a message, such as `-32602` (invalid parameters, also used for an unknown tool) and `-32022` (unsupported protocol version, with the list of revisions the server supports). A method the server does not implement gets `-32601` (method not found) and HTTP 404.[^mcp-transport]
 
 #### Rule words
 
@@ -473,7 +478,7 @@ The specification says MUST for a rule every server must follow, and SHOULD wher
 
 #### The transport
 
-Brightline's servers use **Streamable HTTP**: one **endpoint** (an address ending in `/mcp`), where each message arrives as an HTTP `POST`. The answer is one JSON object or, for an answer in parts, a stream of server-sent events (`Content-Type: text/event-stream`). `GET` gets 405.[^mcp-transport] Such a server is remote, even at `127.0.0.1`. MCP also has local servers, started by the AI app as a program and reached through its input and output (**stdio**). This chapter builds none.
+Brightline's servers use **Streamable HTTP**: one **endpoint** (an address ending in `/mcp`), where each message arrives as an HTTP `POST`. The answer is one JSON object or, for an answer in parts, a stream of server-sent events (`Content-Type: text/event-stream`). This revision removed the `GET` stream, so a server that supports only this revision should answer `GET` with 405. A server that also serves older AI apps may answer as their revision did: the Python SDK's server opens a stream, so Lab Task 9 asks for 405.[^mcp-transport] Such a server is remote, even at `127.0.0.1`. MCP also has local servers, started by the AI app as a program and reached through its input and output (**stdio**). This chapter builds none.
 
 #### The messages behind steps 1 and 3
 
@@ -489,6 +494,8 @@ These are the messages behind steps 1 and 3 of [17.1](https://agentfactory.panav
 
 ```text
 POST /mcp
+Content-Type: application/json
+Accept: application/json, text/event-stream
 MCP-Protocol-Version: 2026-07-28
 Mcp-Method: tools/call
 Mcp-Name: find_vendor
@@ -500,6 +507,7 @@ Mcp-Name: find_vendor
 ```
 
 - **`_meta`**, inside `params`, carries the revision (`io.modelcontextprotocol/protocolVersion`, required), what the client can do (`io.modelcontextprotocol/clientCapabilities`, required) and who the client is (`io.modelcontextprotocol/clientInfo`, should). A missing required field gets `-32602` and HTTP 400.
+- **`Content-Type` and `Accept`.** The first says the body is JSON. The second says the client can take either kind of answer, one JSON object or a stream ([the transport](#the-transport), above). The specification requires `Accept` on every request.[^mcp-transport] The lab's practice server answered a request without it on November 26, 2026, but another server may refuse one.
 - **Headers repeat the essentials,** so a proxy can route or block a call without reading its body: `MCP-Protocol-Version` on every request, `Mcp-Method`, and `Mcp-Name` for a tool call. Headers that do not match the body get `-32020` and HTTP 400.
 - **Every result** has `resultType`: `"complete"`, or `"input_required"` (below). List results and `server/discover` also carry `ttlMs`, how many milliseconds a client may reuse the answer, and `cacheScope`, whether that saved copy belongs to this caller only. Brightline's servers answer `"private"`.
 
@@ -509,7 +517,7 @@ Besides tools, a server may offer resources, data with a fixed name (a URI such 
 
 #### Tool fields
 
-`name` (1 to 128 characters: letters, digits, `_`, `-` and `.`, case-sensitive, unique in the server), `title` (for people), `description` (for the model), `inputSchema` (required, JSON Schema 2020-12), `outputSchema` (optional) and `annotations` (hints such as `readOnlyHint`). A result has `content`, such as a text block, and may have `structuredContent`, JSON for programs. With an `outputSchema`, `structuredContent` MUST match it, and the tool SHOULD return the same JSON as text too. A tool error is a normal result with `isError: true`. Annotations are hints: a host should not trust them from a server it does not trust. A host that combines servers should prefix each tool's name with its server's name. A server whose tool list never changes says `tools: { listChanged: false }` in its capabilities.[^mcp-tools]
+`name` (1 to 128 characters: letters, digits, `_`, `-` and `.`, case-sensitive, unique in the server), `title` (for people), `description` (for the model), `inputSchema` (required, JSON Schema 2020-12), `outputSchema` (optional) and `annotations` (hints such as `readOnlyHint`). A result has `content`, such as a text block, and may have `structuredContent`, JSON for programs. With an `outputSchema`, `structuredContent` MUST match it, and the tool SHOULD return the same JSON as text too. A tool error is a normal result with `isError: true`. Annotations are hints: a host should not trust them from a server it does not trust. A host that combines servers should tell their tools apart, for example with a prefix it chooses for each server. It should not rely on the name a server gives itself, because two servers can share one. A server whose tool list never changes says `tools: { listChanged: false }` in its capabilities.[^mcp-tools]
 
 #### State across calls
 
@@ -521,7 +529,7 @@ A tool that needs more input, such as a person's confirmation, returns `resultTy
 
 #### Change notifications
 
-A **notification** is a message that needs no answer, such as "my tool list changed". A client that wants them sends `subscriptions/listen`, and the response stays open as a stream. A server that announces `listChanged: true` may send them.
+A **notification** is a message that needs no answer, such as "my tool list changed". A client that wants them sends `subscriptions/listen`, and the response stays open as a stream. A server that announces `listChanged: true` should send them.
 
 #### Comparing two servers
 
@@ -533,6 +541,8 @@ As [17.6](https://agentfactory.panaversity.org/building-ai-workers/connectors-an
 4. The TypeScript schemas give every integer field a minimum and maximum of plus and minus 9,007,199,254,740,991, the largest whole number JavaScript holds exactly.
 
 Smaller rules (titles, `$schema`, `"default": null`, `additionalProperties`) are listed in the comment in `scripts/conformance.ts`.
+
+Not every difference is a spelling. A test run for this book on November 26, 2026 found two that carried meaning, and each went back to the agent that wrote that server: `limit` typed as a whole number (`integer`) in one server and as any number (`number`) in the other, which accepts 2.5, and an input that had a description in one server only, which changes what the model reads ([17.2](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/a-tool-is-its-description/)).
 
 #### What the specification asks about safety
 
@@ -552,7 +562,7 @@ These are the rules behind [17.8](https://agentfactory.panaversity.org/building-
 
 This looks ahead from [17.8](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/securing-a-remote-server/). [Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/) builds it. MCP uses **OAuth 2.1**. The person signs in at a trusted service and gives **consent**. The AI app gets an **access token** that names the person, the server it is for, what it allows (its scopes, such as `ap:read`) and when it expires. The service that issued it is the **issuer**. In revision 2026-07-28:
 
-- The MCP server is a **resource server**. It must publish **protected resource metadata** (RFC 9728) naming its **authorization server**. A refused request's 401 points to that document.
+- The MCP server is a **resource server**. It must publish **protected resource metadata** (RFC 9728) naming its **authorization server**. A refused request's 401 can point to that document, or the server can publish it at a fixed, well-known address.
 - A client preferably identifies itself with a **Client ID Metadata Document**: a web address serving a document about the client, so nobody registers clients by hand.
 - The client sends a `resource` parameter (RFC 8707) naming the server, so the token is **bound** to it. The server must check that every token was issued for itself, and must not accept or pass on tokens meant for others.
 - When the authorization server's response names its issuer, the client must check it against the one it expected.
@@ -575,10 +585,12 @@ These are the agreed names [17.10](https://agentfactory.panaversity.org/building
 [^openai-codex-mcp]: Codex: MCP, OpenAI.
 [^openai-codex-config]: Advanced configuration, Codex, OpenAI.
 [^opencode-mcp]: MCP servers, OpenCode.
+[^opencode-permissions]: Permissions, OpenCode.
 [^mcp-spec]: Specification 2026-07-28, Model Context Protocol.
 [^otel-mcp]: Semantic conventions for MCP, OpenTelemetry.
 [^cloudflare-limits]: Workers limits, Cloudflare.
 [^cloudflare-pricing]: Workers pricing, Cloudflare.
+[^cloudflare-observability-pricing]: Observability pricing, Cloudflare.
 [^cloudflare-environments]: Environments, Cloudflare.
 [^cloudflare-rollbacks]: Rollbacks, Cloudflare.
 [^cloudflare-previews]: Version URLs, Cloudflare.
@@ -589,6 +601,7 @@ These are the agreed names [17.10](https://agentfactory.panaversity.org/building
 [^cloudflare-python-how]: How Python Workers work, Cloudflare.
 [^cloudflare-github-actions]: GitHub Actions, Cloudflare.
 [^cloudflare-network]: The Cloudflare network, Cloudflare.
+[^cloudflare-local-explorer]: Local Explorer, Cloudflare.
 [^cloudflare-static-assets]: Static assets binding, Cloudflare.
 [^cloudflare-secrets]: Secrets, Cloudflare.
 [^cloudflare-get-started]: Get started, Cloudflare.
