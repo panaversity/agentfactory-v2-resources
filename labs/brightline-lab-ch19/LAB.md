@@ -94,6 +94,7 @@ Chapter 19 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 > - If either role is a superuser, has `BYPASSRLS`, can create roles, or is in `neon_superuser`.
 > - If any table lacks forced row security, two policies, or `tenant_id` in its primary key.
 > - If any `SECURITY DEFINER` function is callable by either role.
+> - If either role can read a view that is not `security_invoker`, or a materialized view, or may `TRUNCATE` any table (19.10).
 > - If the reader's own connection is not `ap_reader`, can write, or sees any vendor with no company set.
 >
 > It also lists every role on the database that can skip row-level security. Apply, set the passwords, run the check. Then show me `SELECT count(*) FROM vendors` three ways: as the owner, as the reader with `org_cedar` set in a transaction, and as the reader with nothing set.

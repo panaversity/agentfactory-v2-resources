@@ -45,6 +45,26 @@ const definers = await owner.query<{ name: string }>(
       AND (has_function_privilege('ap_reader', p.oid, 'EXECUTE') OR has_function_privilege('ap_loader', p.oid, 'EXECUTE'))`);
 for (const f of definers.rows) problems.push(`function ${f.name} is SECURITY DEFINER and the connector or loader may call it: it skips row-level security`);
 
+// 19.10: a view reads its tables under its owner's policies unless it is made WITH (security_invoker = true),
+// and a materialized view is a stored copy with no policies at all. Either one, readable by the connector or
+// the loader, shows every company's rows.
+const views = await owner.query<{ name: string; kind: string }>(
+  `SELECT c.relname AS name, c.relkind::text AS kind
+     FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
+    WHERE n.nspname = 'public' AND c.relkind IN ('v', 'm')
+      AND (has_table_privilege('ap_reader', c.oid, 'SELECT') OR has_table_privilege('ap_loader', c.oid, 'SELECT'))
+      AND NOT (c.relkind = 'v' AND COALESCE((SELECT o.option_value = 'true' FROM pg_options_to_table(c.reloptions) o
+                                              WHERE o.option_name = 'security_invoker'), false))`);
+for (const v of views.rows) problems.push(v.kind === "m"
+  ? `materialized view ${v.name} is readable by the connector or loader: it is a stored copy outside row-level security`
+  : `view ${v.name} is readable by the connector or loader and is not security_invoker: it reads under its owner's policies`);
+// 19.10: TRUNCATE is not subject to row-level security, so neither role may hold that right on any table.
+const truncate = await owner.query<{ relname: string }>(
+  `SELECT c.relname FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
+    WHERE n.nspname = 'public' AND c.relkind = 'r'
+      AND (has_table_privilege('ap_reader', c.oid, 'TRUNCATE') OR has_table_privilege('ap_loader', c.oid, 'TRUNCATE'))`);
+for (const t of truncate.rows) problems.push(`${t.relname}: the connector or loader may TRUNCATE it, which row-level security does not stop`);
+
 // For the record (Task 3): every role in this database that can skip row-level security.
 const bypass = await owner.query<{ rolname: string }>("SELECT rolname FROM pg_roles WHERE (rolbypassrls OR rolsuper) AND rolname NOT LIKE 'pg\\_%' ORDER BY 1");
 console.log(`roles that skip row-level security here (never used by the connector or the loader): ${bypass.rows.map((r) => r.rolname).join(", ")}`);

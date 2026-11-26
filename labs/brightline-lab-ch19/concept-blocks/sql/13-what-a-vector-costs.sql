@@ -1,4 +1,4 @@
--- 19.14, block 13. What one embedding costs to store, against the text it stands for.
+-- Field guide F4, block 13. What one embedding costs to store, against the text it stands for.
 -- role: reader
 -- company: org_cedar
 SELECT count(*) AS passages,

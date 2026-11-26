@@ -1,6 +1,6 @@
 # Concept blocks for 19.3 and 19.14: predict, then run
 
-Fourteen short SQL blocks, the ones printed in Concept 19.3 (blocks 1 to 5), field guide F1 (block 6), Concept 19.14 (blocks 7 to 10 and 14) and field guide F4 (blocks 11 to 13), ready to run against your own `dev` database once Lab 19, Task 4, has loaded the companies.
+Fourteen short SQL blocks, the ones printed in Concept 19.3 (blocks 1 to 6), Concept 19.14 (blocks 7 to 10) and field guide F4 (blocks 11 to 14), ready to run against your own `dev` database once Lab 19, Task 4, has loaded the companies.
 
 | File | What it shows |
 | --- | --- |
