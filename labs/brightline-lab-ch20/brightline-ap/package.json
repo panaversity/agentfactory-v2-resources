@@ -50,6 +50,8 @@
     "eval:retrieval": "node scripts/retrieval-eval.ts",
     "test:loop": "vitest run",
     "test:loop:py": "cd py && uv run --locked pytest -q tests/test_loop.py",
+    "test:mine": "vitest run --config vitest.mine.config.ts",
+    "test:mine:py": "cd py && uv run --locked pytest -q tests/mine_check.py",
     "typecheck:py": "cd py && uv run --locked pyright -p pyrightconfig.loop.json",
     "ask": "tsx scripts/ask.ts",
     "ask:py": "cd py && uv run --locked python -m brightline_ap.ask",

@@ -4,13 +4,13 @@ From *The AI Agent Factory*, Chapter 21, for the coding agents working in this r
 
 *The concepts named no product. This field guide names them, and gives each step exactly. Read F0 and F1 before Task 0. Each lab task names the other sections it needs. Every fact here was checked on its owner's page on November 5, 2026.*
 
-**Not yet run live.** This chapter's lab has not yet been run live. The steps follow each product's own documents, and the code was checked against the pinned SDKs. If a menu name or a message differs from what you see, trust what you see, and record it in `ports/ch20.md`.
+**If a menu name or a message differs** from what you see, trust what you see, and record it in `ports/ch20.md`.
 
 ## F0. The repository and its secrets
 
 **Where to install the tools.** Node.js from nodejs.org, version 22.19 or later, the minimum that Lab 19 set. The test runner needs 22.12 or later. uv from docs.astral.sh/uv. Git from git-scm.com. The GitHub CLI from cli.github.com, then `gh auth login`. On Windows, WSL from Microsoft's "Install WSL" page (`wsl --install`). Python 3.12 or later comes with uv (`uv python install`).
 
-**What the zip holds.** `brightline-lab-ch20.zip` holds `brightline-ap/`, a plain folder with no git history. Task 0 starts its git history and tags `lab20-start`. The folder has what Chapter 19 left, plus the Chapter 21 files, and its README has the list. The zip also holds `answer-key/` at its top level, outside `brightline-ap/`. Never give the answer key to an agent.
+**What the zip holds.** `brightline-lab-ch20.zip` unpacks to one folder, `brightline-lab-ch20/`. In it are `brightline-ap/`, a plain folder with no git history, and beside it the lab's steps as `LAB.md`, their figures in `img/`, a `README.md` and `answer-key/`. Task 0 starts `brightline-ap/`'s git history and tags `lab20-start`. That folder has what Chapter 19 left, plus this chapter's files, and its README has the list. Never give the answer key to an agent.
 
 | Path | What it is |
 | --- | --- |
@@ -34,9 +34,11 @@ From *The AI Agent Factory*, Chapter 21, for the coding agents working in this r
 
 ## F1. Accounts, keys and spending limits (by you)
 
-*Claude.* Sign in to the Claude Console at `platform.claude.com`, and add API credits on the *Billing* page. Make a workspace for this lab, and set its monthly spending limit. To set it, choose *Workspaces*, select the workspace, then choose *Spend limits*. The Default Workspace cannot have a spending limit. On the *API keys* page, choose *Create key*, scoped to that workspace, with an expiry of 30 days. Copy it once into `.secrets/anthropic.env` with your editor.
+*Claude.* Sign in to the Claude Console at `platform.claude.com`, and add API credits on the *Billing* page. Make a workspace for this lab, and set its monthly spending limit. To set it, open *Spend limits* in the Console (`platform.claude.com/settings/spend-limits`). Under *Workspace limits*, select the workspace, then choose *Set limit* next to *Monthly spend limit*. Give the lab a workspace of its own: a limit on the Default Workspace might not count or stop some usage in it, such as the Console's own (read on November 26, 2026). On the *API keys* page, choose *Create key*, scoped to that workspace, with an expiry of 30 days. Copy it once into `.secrets/anthropic.env` with your editor.
 
 *OpenAI.* Sign in to the OpenAI platform dashboard, and add credits under billing. Make a project for this lab, and set its spend limit to $5 with a hard limit. To set it, choose *Project settings*, *Limits*, *Spend* and *Edit spend limit*, in that order, then turn on *Enforce a hard limit*. Make a key for that project, and copy it once into `.secrets/openai.env`.
+
+**Free credit.** Anthropic's pricing page says new users receive free credits to test the API. OpenAI's rate-limits page lists a Free tier, but the model this lab pins shows rate limits only for the paid tiers, Build, Launch and Grow. The first, Build, starts at $5 in credit purchases (read on November 26, 2026). So plan to add a few dollars of credit on each.
 
 **Why each key gets its own small limit.** A key that leaks spends money until someone notices. A small limit on the key's own project or workspace keeps the damage small. The lab's own cost cap (21.8) limits the cost of each run.
 

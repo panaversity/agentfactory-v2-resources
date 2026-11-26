@@ -11,12 +11,13 @@ Every "live" row is what the authors expect from each API's documentation, not y
 | 3, modify | A text block before the results: a 400 | 400 `invalid_request_error` saying the tool results must come first, right after the tool calls | (run) |
 | 4 | Two results, second `is_error: true` | Test: ids B1 and B2. Live: both at once or one at a time, both correct | (run) |
 | 5 | A 400 | 400 `invalid_request_error`, saying the `signature` in the `thinking` block is invalid, with a request id | (run) |
+| 5b | Without step 2, only the step 2 test fails: request 2 holds two entries, not three | Your loop passes all 8 tests in your language (`npm run test:mine` or `npm run test:mine:py`). Without step 2, only `step 2, keep` fails | Offline, no live run. Checked on November 26, 2026 |
 | 6 | Four items: message, reasoning, function_call, function_call_output | `store: false` on both requests, no `previous_response_id`, `stop: done \| turns: 2` | (run) |
 | 6, modify | Without reasoning items: an error or a weaker answer | Not yet known. Record what you see | (run) |
 | 7 | Only the tool output and an id | Turn 2 sends one `function_call_output` and `previous_response_id`. Input tokens billed are about the same as Task 6 turn 2 | (run) |
 | 8 | 6 requests, `turn_limit` | Tests: 6 requests and `turn_limit`, then `cost_cap` earlier. Live with `--max-turns 1`: `stop: turn_limit \| turns: 1` | (run) |
 | 9 | 400, 400, 401, no retry helps | temperature 400, forced-tool 400, bad-key 401 `authentication_error` | (run) |
-| 10 | An `execute_tool search_policy` span | Good run cites `po-matching.md:9`. Broken run: only `chat` spans | (run) |
+| 10 | An `execute_tool search_policy` span | Good run cites `po-matching.md:9`. Broken run: no `execute_tool search_policy` span (it may have one for another tool) | (run) |
 | 11 | Parse at block stop. Cache read from turn 2 | Event order as 21.11. With `--cache`, `cache_read_input_tokens` from turn 2, lower total | (run) |
 | 12 | The tool calls, not the shapes | No code change. Some runs may misuse tools or write broken arguments. Cost $0.0000 | (run) |
 | 13 | | Both reviews clean, clean clone passes the four checks | (run) |

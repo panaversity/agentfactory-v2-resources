@@ -28,6 +28,7 @@ The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and P
 | `npm ci`, then `cd py && uv sync --locked` | Install the pinned packages for both languages |
 | `npm run typecheck`, `npm run typecheck:py` | Type-check the TypeScript, and the loop's Python |
 | `npm run test:loop`, `npm run test:loop:py` | Run the loop's tests. They replay recorded responses: no network, no key, no cost |
+| `npm run test:mine`, `npm run test:mine:py` | Task 5b: the same recorded responses, run against the loop you write yourself. No network, no key, no cost |
 | `npm run connector:practice` | Start the local practice connector on 127.0.0.1:8760. It reads its token from `.secrets/connector.env`. `PRACTICE_BROKEN=search_policy` makes that tool answer "try again" |
 | `npm run token:test -- --person ana --company org_brightline` | Route A: sign Ana in on staging through the sign-in server's real pages, as Lab 18's sign-in matrix does, and write the connector's address and her token into `.secrets/connector.env`. It prints only the token's claims. A token lasts 10 minutes |
 | `npm run ask -- --api claude\|openai\|open [--trace] [--quiet] [--cache] [--max-turns N] "question"` | One question through the loop, printing every request and response. `npm run ask:py` is the Python twin |
@@ -42,4 +43,5 @@ The AP worker's loop with nothing hidden, on two model APIs, in TypeScript and P
 | `src/loop/config.json` | Pinned models, prices (you fill these in), limits |
 | `src/loop/claude.ts`, `openai.ts` | The loop on each API (TypeScript) |
 | `py/brightline_ap/loop/claude_loop.py`, `openai_loop.py` | The loop on each API (Python) |
+| `src/loop/mine.ts`, `py/brightline_ap/loop/mine.py` | Your own loop on the first API, written in Task 5b. Each starts as an empty function |
 | `tests/fixtures/loop/` | Recorded responses, illustrative, not from a live run |
