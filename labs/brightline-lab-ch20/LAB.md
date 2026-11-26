@@ -4,59 +4,24 @@ Chapter 21 of *The AI Agent Factory*, Second Edition. This file is the book's pa
 
 ## Getting ready
 
-The lab has four sittings. Each comes right after the concepts it uses. Each is also short enough for one session: about 2 hours, 1 hour 10 minutes, 1 hour 10 minutes and 1 hour 25 minutes. This section is the setup for all of them. Read it, then do Task 0. When a task says [F0](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f0-the-repository-and-its-secrets) to [F6](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f6-ollama-and-an-open-model), it means the field guide, in the reference at the end of the chapter.
+In this lab, your coding agents set up, run, explain and change the AP worker's loop: on two model APIs and an open model, in TypeScript and Python. You predict, read and decide. In Task 5b you write the loop yourself, and in Task 13 you ship it. The lab has a setup, Task 0, and four sittings, each right after the concepts it uses.
 
-**The agents write, and you explain.** This lab follows [Chapter 13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-learn-to-read-code-with-an-agent-beside-me)'s PRIMM-AI+ method. In each task, you **predict** first: you write your prediction in `ports/ch20.md`. Then the agent **runs** the code, and you **investigate** the gap with the agent's help ("explain line 73"). Some tasks also ask you to **modify**: you tell the agent what to change, predict again, and run again. You must be able to say what every line of it does.
+**What you need.** Node, Python, uv, git and the GitHub CLI, the three coding agents from [Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/), an account with some credit on each of the two APIs (F1 says how much), and room on disk for Ollama and one small open model. [What you need](#what-you-need), at the end of this page, lists the versions.
 
-**The lab's files already hold the loop.** `brightline-lab-ch20.zip` comes with the finished code and the tests that check it. So Sittings 1 and 2 are about understanding and running the loop, not building it. Your coding agent's job is to set up, run, explain and change. Sitting 4's Task 13 is where the work becomes yours: you review it all, and merge it.
+**The download.** [brightline-lab-ch20.zip](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20.zip) holds the project, `brightline-ap/`, with the finished loop, its tests, and this chapter's pages as text for your agents. Its files say ch20, because this chapter was Chapter 20 until the book added a new one. It is the right zip.
 
-**This lab costs a little money, and takes about 6 hours 10 minutes** (up to an hour more on route A). Neither API offers a free plan for API calls. Every `npm run ask` run has a cost cap of 10 cents. The whole lab should cost under $1 on each API (not yet confirmed by a live run). The open-model port is free.
+**The job.** It is Tuesday, March 30, 2027, at Brightline Wholesale Supply, and "this week" means up to Sunday, April 4. Ana Morales's questions are the test questions. The worker's instructions, `prompts/ap-worker.v1.md`, give the model that date.
 
-**The date in this lab** is Tuesday, March 30, 2027, the day after [Lab 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/). "This week" means up to Sunday, April 4. The worker's instructions, `prompts/ap-worker.v1.md`, give the model that date.
+**How a task works.** Write your prediction in `ports/ch20.md`. Then open a fresh session of the named agent in `brightline-ap/`, in plan mode, and give it the task's prompt. Read its plan, then approve each command it asks to run. Check what comes back against **What good looks like**. When it lists more than one outcome, any of them is a pass. A result that matches none of them still passes, if you can say which step of the loop produced it and you wrote it down: what matters is that you can explain the loop. F0 to F6 are sections of the [field guide](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/). [How the tasks run](#how-the-tasks-run), at the end of this page, has the routine, the rules your agents follow and the words in the prompts.
 
-**If a live response differs a little** from what a task shows, trust what you see, and record it in `ports/ch20.md`. **One stop rule:** Task 0's last step or Task 1 may fail in a way that **If something goes wrong** does not cover. If that happens, stop, and record what you saw. Every later task depends on reaching the API and the connector.
-
-**What counts as a pass.** Each task's **What good looks like** says what to expect. When it lists more than one possible outcome, any of them is a pass. When what you see matches none of them, it is still a pass if two things are true. You can say which step of the loop produced it, and you wrote it in `ports/ch20.md`. What matters is that you can explain the loop. You do not need to match someone else's run.
-
-### Before you start
-
-**What you need.**
-
-- A computer running macOS, Linux, or Windows with WSL. WSL is the Windows Subsystem for Linux, and you need it because the scripts use Unix paths. The computer needs **Node 22.19 or later** (the minimum Lab 19 set), **Python 3.12 or later** and **uv** 0.11 or later. It also needs git and the GitHub CLI (`gh`). F0 says where to install each.
-- The desktop apps of Claude Code and OpenCode version 2, and Codex in the ChatGPT desktop app, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)).
-- **A Claude Console account with API credits** and **an OpenAI API account with credits** ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Each gets a project or workspace with a small monthly spending limit, which you set by hand in Task 0.
-- **For the open-model port:** Ollama, and several gigabytes of free disk for one small model (F6).
-- **A connector to call.** Either your own [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector and a test token (route A), or the local practice connector in the zip (route B). Task 0 helps you choose.
-
-**A quick reminder from Chapter 12.** **Plan mode** means the agent writes a plan and waits before it changes anything. **Manual mode** means it asks you before each command it runs. A **second terminal** is a new terminal window or tab, opened beside the agent. It is for a program that must keep running, such as the practice connector. Start the program there, leave the window open, and stop it later with Ctrl+C. A **branch** is a separate line of work in git, and deleting it does not touch the main code ([Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/)).
-
-**How every task runs.** Chapter 12's five-step routine: (1) a fresh session with the named agent, in `brightline-ap/`. (2) Plan mode, with the task's prompt as the brief. Read the plan, and correct it before it starts. (3) Manual mode: approve each command it asks about. In Codex, choose **Ask for approval**: in that mode, Codex runs commands inside the folder without asking. It asks before any command that needs the network, such as `npm run ask`. (4) Evidence: the agent shows what proves the task is done, and you check it against **What good looks like**. (5) A line in `ports/ch20.md`: the task, your prediction, what happened, anything that surprised you.
-
-**What you do by hand, and only this.** Make the two API accounts. Make each API key in its own console, and paste it into its file in `.secrets/` with your own editor. Set the spending limits, and copy the prices for the pinned models into `src/loop/config.json` ([F5](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f5-prices-usage-and-caching)). You also decide when to merge. Agents do everything else. **No API key or token passes through a chat.**
-
-**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through four commands and their Python twins. `npm run ask` has a cost cap. `npm run break` and `npm run stream:demo` make one or two small calls each. `npm run stateful` runs at most 8 turns. The only other live call is the one embeddings call inside Task 0's load on route A. Ask before any call to a model API. `.claude/settings.json` also denies reading `.secrets/`, and `opencode.jsonc` denies OpenCode's file-reading tool access to it. Codex's settings file cannot deny it, so in Codex, the rule in `AGENTS.md` is the guard.
-
-**Words in the prompts.**
-
-| Word in a prompt | What it means |
-| --- | --- |
-| `npm run ask -- --api claude "…"` | Runs one question through the loop on the first API and prints every request and response. `--api openai` uses the second API, and `--api open` uses the open model. `npm run ask:py` is the Python twin |
-| `--trace`, `--quiet`, `--cache`, `--max-turns N` | Write a trace file, print only the answer, turn caching on, or lower the turn limit for one run |
-| Recorded responses, fixtures | Saved responses in `tests/fixtures/loop/`. The tests replay them, so they cost nothing and need no network |
-| `npm run test:loop`, `npm run test:loop:py` | Run the loop's TypeScript tests (vitest) and Python tests (pytest) |
-| `npm run connector:practice` | Start the local practice connector on `127.0.0.1:8760` (route B). It reads its token from `.secrets/connector.env`. `PRACTICE_BROKEN=search_policy` makes that tool always answer "try again" |
-| 400, 401, 429, 529 | Web error codes. 400: the request was wrong. 401: the key was not accepted. 429: too many requests. 529: the model service is overloaded ([21.9](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/when-the-loop-goes-wrong/)) |
-
-**Your agents can read this chapter.** `docs/chapter-20/` holds the concepts and the field guide as text. Each prompt names what to read.
-
-### Task 0. Set up from the zip (30 minutes on route B, up to 1 hour 30 minutes on route A, Claude Code)
+### Task 0. Set up from the zip (Claude Code)
 
 **Goal:** both languages installed, and every offline test passing. Also the API keys you made today, in files git ignores, with their prices filled in, and a connector the loop can reach.
 
-**By hand first (F1).** Unzip `brightline-lab-ch20.zip`. Then set up the accounts. F1 says where each step is on each provider's site.
+**By hand first (F1).** Unzip `brightline-lab-ch20.zip`, and open your coding agent in the `brightline-ap/` folder inside it, never in the folder above, which holds the answer key. Then set up the accounts. F1 says where each step is on each provider's site.
 
-- **The first API, now.** Make the Claude Console account, and add a few dollars of credit. Then make a workspace for this lab with a monthly spending limit of $5. (The Default Workspace cannot have one.) Make one API key in that workspace, and paste it into `.secrets/anthropic.env` as `ANTHROPIC_API_KEY=` followed by the key.
-- **The second API, now or at the start of Sitting 2.** Make the OpenAI API account the same way, and paste its key into `.secrets/openai.env` as `OPENAI_API_KEY=` followed by the key. If two accounts at once is too much, leave this for Sitting 2, which sets aside 10 minutes for it. Until then, the `openai` prices stay at zero.
+- **The first API, now.** Make the Claude Console account, and add a few dollars of credit. Then make a workspace for this lab with a monthly spending limit of $5. (A limit on the Default Workspace may not stop all usage, so use a workspace of its own.) Make one API key in that workspace, and paste it into `.secrets/anthropic.env` (make the file if it is not there) as `ANTHROPIC_API_KEY=` followed by the key.
+- **The second API, now or at the start of Sitting 2.** Make the OpenAI API account the same way, with $5 of credit: OpenAI lists the pinned model only for its paid tiers, which start there (F1). Paste its key into `.secrets/openai.env` as `OPENAI_API_KEY=` followed by the key. If two accounts at once is too much, leave this for the start of Sitting 2. Until then, the `openai` prices stay at zero.
 
 Then open the pricing page for each account you made. Find the pinned model from `src/loop/config.json` (the `models` block, also listed in [F3](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f3-the-two-shapes-exactly)). Copy its four prices into that file, with today's date in `checked_on` (F5). The part you edit looks like this before you start. Change only the zeros for `claude`, and for `openai` if you made that account today. The prices are in dollars per million tokens. Keep every quote, comma and brace:
 
@@ -69,11 +34,11 @@ Then open the pricing page for each account you made. Find the pinned model from
 },
 ```
 
-`checked_on` takes the date in quotes, such as `"2027-03-30"`. If a pricing page shows no separate cache-write price, use the input price for `cacheWrite`. Here is a filled-in row, with made-up numbers: `"claude": { "input": 3, "output": 15, "cacheWrite": 3.75, "cacheRead": 0.3 }`. It means $3 for each million input tokens, and so on. Copy the real numbers from the page. The `open` prices stay zero, because the open model is free. The tests do not read this file, so check your edit yourself. Ask your agent to confirm that `src/loop/config.json` is still valid JSON, without changing it.
+`checked_on` takes the date in quotes, such as `"2027-03-30"`. If a pricing page shows no separate cache-write price, use the input price for `cacheWrite`. If it shows two, one for each cache lifetime, copy the default one: five minutes on the first API, 30 minutes on the second. Here is a filled-in row, with made-up numbers: `"claude": { "input": 3, "output": 15, "cacheWrite": 3.75, "cacheRead": 0.3 }`. It means $3 for each million input tokens, and so on. Copy the real numbers from the page. The `open` prices stay zero, because the open model is free. The tests do not read this file, so check your edit yourself. Ask your agent to confirm that `src/loop/config.json` is still valid JSON, without changing it.
 
 **Choose a connector.**
 
-- **Route A, your own connector.** If your Chapter 19 staging connector is still deployed, use it. By hand first, copy the files in your Lab 19 folder's `.secrets/` into this folder's `.secrets/`, in Finder or your own terminal: the load and the token need them. Step 4 of the prompt below first loads this lab's Brightline data into it: Lab 19's rows, and three invoices entered since. The loop then calls your real connector, with a test token for Ana at Brightline. You need a way to make that token ([F2](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)). If you are not sure you have one, take route B: everything in this chapter works on it.
+- **Route A, your own connector.** If your Chapter 19 staging connector is still deployed, use it. By hand first, copy the files in your Lab 19 folder's `.secrets/` into this folder's `.secrets/`, in Finder (Command-Shift-period shows folders whose names start with a dot) or your own terminal: the load and the token need them. Step 4 of the prompt below first loads this lab's Brightline data into it: Lab 19's rows, and three invoices entered since. The loop then calls your real connector, with a test token for Ana at Brightline. You need a way to make that token ([F2](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f2-the-connector-route-a-or-route-b)). It lasts 10 minutes, so ask your agent for a fresh one at the start of each sitting and after a break. If you are not sure you have a way to make one, take route B: everything in this chapter works on it.
 - **Route B, the practice connector.** If your Chapter 19 connector is not deployed, or you skipped Labs [17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/lab/) to [19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/lab/), use the practice connector in the zip. It offers the same four tools over MCP, on your own computer. It reads this folder's Brightline files, the same rows route A loads. It also checks a bearer token: a sign-in token sent in a request header, as in [Chapter 18](https://agentfactory.panaversity.org/building-ai-workers/securing-connectors/overview/). It has no sign-in server and no database, so it proves the loop, not the connector.
 
 **Predict:** before any key is used, which tests can already pass?
@@ -82,16 +47,16 @@ Then open the pricing page for each account you made. Find the pinned model from
 
 > Read `README.md`, `AGENTS.md`, and `docs/chapter-20/field-guide.md`, sections F0 to F2.
 >
-> 0. Put this folder under git, with a main branch. Make a first commit of everything here with the message "Start from the end of Chapter 19", and tag that commit `lab20-start`. If git has no name and email yet, set them for this project only. Show me `git log --oneline -1` and `git tag`.
+> 0. Put this folder under git, with a main branch. Make a first commit of everything here with the message "The project as I received it", and tag that commit `lab20-start`. If git has no name and email yet, set them for this project only. Show me `git log --oneline -1` and `git tag`.
 > 1. Install with `npm ci`, then `cd py && uv sync --locked` for Python. Show me `node --version` and the two SDK versions from `npm ls --depth=0`.
 > 2. Run `npm run typecheck`, `npm run typecheck:py`, `npm run test:loop` and `npm run test:loop:py`. Show me the four results as a table.
 > 3. Check that git ignores `.secrets/` (`git check-ignore .secrets/anthropic.env` should print the path) and that `src/loop/config.json` has prices and a `checked_on` date for `claude` (and for `openai`, if I made that account today). Do not open the key files.
 > 4. The connector. Do only the route I chose.
 >    - Route A: ask me first, then run `npm run tenant:load -- --company org_brightline --folder data --env staging --replace`. It loads this folder's Brightline into staging, Lab 19's rows and three invoices entered since (INV-8316 to INV-8318), and embeds the policies again, one small metered call to the embeddings model from Chapter 19. Then run `npm run token:test -- --person ana --company org_brightline`, as F2 says. It signs Ana in on staging and writes the connector's staging address and her token into `.secrets/connector.env` as `CONNECTOR_URL=` and `CONNECTOR_TOKEN=`, never printing the token. If it stops, show me why, and I will switch to route B.
 >    - Route B: write `CONNECTOR_URL=http://127.0.0.1:8760/mcp` and a random `CONNECTOR_TOKEN` into `.secrets/connector.env`, with a short script that never prints it. Then tell me to run `npm run connector:practice` in a second terminal, in `brightline-ap/`, and wait until I say it is running. It reads the token from that file itself, so you never need to see it (F2).
-> 5. List the connector's tools with the `listTools()` function in `src/loop/tools.ts` (an MCP `tools/list` call), and show me their names. Mark any tool whose visibility leaves out the model.
+> 5. List the connector's tools with the `listTools()` function in `src/loop/tools.ts` (an MCP `tools/list` call), and show me their names. Mark any tool the connector says only its own screen may call.
 
-**What good looks like:** one commit at tag `lab20-start`. Node 22.19 or later. `@anthropic-ai/sdk` 1.5.0 and `openai` 7.51.0. Both type checks clean, 32 TypeScript tests and 22 Python tests passing. `.secrets/` ignored, and prices filled in for each account you made (the `openai` row may stay zero if you left it for Sitting 2). On route A, the load reports `invoices 18, purchase_orders 14`. Four tool names from the connector, or more if you did Lab 20: `next_invoice_page` is marked for the page only, and the two skills may also be offered as tools. This loop offers the model only the four in its own file (Task 2). When you write the loop, you are the AI app, so leaving page-only tools out is your job ([20.5](https://agentfactory.panaversity.org/building-ai-workers/mcp-apps/hidden-is-not-protected/)). Your prediction: all four. Every test replays recorded responses and needs no key.
+**What good looks like:** one commit at tag `lab20-start`. Node 22.19 or later. `@anthropic-ai/sdk` 1.5.0 and `openai` 7.51.0. Both type checks clean, 32 TypeScript tests and 22 Python tests passing. `.secrets/` ignored, and prices filled in for each account you made (the `openai` row may stay zero if you left it for Sitting 2). On route A, the load reports `invoices 18, purchase_orders 14`: 18 invoices, 16 of them open and 2 paid. Four tool names from the connector. On route B, the practice connector has only these four. On route A, if you did Lab 20, your connector may list more, such as `next_invoice_page`, which only its screen may call. This loop offers the model only the four in its own file (Task 2). When you write the loop, you are the AI app, so leaving page-only tools out is your job ([20.5](https://agentfactory.panaversity.org/building-ai-workers/mcp-apps/hidden-is-not-protected/)). Your prediction: all four checks pass, the two type checks and the two test runs, because every test replays recorded responses and needs no key.
 
 **Check it now.** Download [Task 0's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-0.md).
 
@@ -105,13 +70,13 @@ Then open the pricing page for each account you made. Find the pinned model from
 | `tools/list` gets a 401 | The token is wrong or expired. Route A: ask the agent to run `npm run token:test` again (a token lasts 10 minutes). Route B: stop the practice connector and start it again, so it reads the current `.secrets/connector.env` |
 | `tools/list` cannot connect | Route A: check the address in Lab 19's `docs/deploy.md`. Route B: start the practice connector, and leave its terminal open |
 
-## Sitting 1: the loop on the first API (about 2 hours)
+## Sitting 1: the loop on the first API
 
-**Before you start, answer in a line each:** What does the model send back when it wants a tool ([21.1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/what-an-agent-is-in-code/))? What does a strict schema guarantee, and what does it not ([21.2](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/a-tool-is-a-name-a-description-and-a-schema/))? **After this sitting, you can:** explain the loop line by line in either language, predict each request it sends, and say what breaks the next call.
+**Before you start, answer in a line each:** What does the model send back when it wants a tool ([21.1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/what-an-agent-is-in-code/))? What does a strict schema guarantee, and what does it not ([21.2](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/a-tool-is-a-name-a-description-and-a-schema/))? **After this sitting, you can:** explain the loop line by line in either language, predict each request it sends, say what breaks the next call, and write the loop yourself.
 
 **Where you are.** The first API (`claude.ts`, or `claude_loop.py` in Python), with the connector you set up in Task 0, by route A or route B.
 
-### Task 1. One request, one stop reason (15 minutes, Claude Code)
+### Task 1. One request, one stop reason (Claude Code)
 
 **Goal:** you read one real request and one real response, and name the stop reason before you see it.
 
@@ -125,7 +90,7 @@ Then open the pricing page for each account you made. Find the pinned model from
 
 **Check it now.** Download [Task 1's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-1.md).
 
-### Task 2. The four tools, read three ways (20 minutes, Claude Code)
+### Task 2. The four tools, read three ways (Claude Code)
 
 **Goal:** you can read a tool definition, and say which part the model reads, which part the schema check reads, and which part only the handler can check.
 
@@ -165,7 +130,7 @@ def openai_tools(specs=TOOL_SPECS):
 
 **Check it now.** Download [Task 2's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-2.md).
 
-### Task 3. Follow the loop, then run it (45 minutes, in two parts, Claude Code)
+### Task 3. Follow the loop, then run it (in two parts, Claude Code)
 
 **Goal:** you can point to each of the loop's five steps in either language, and match every request and response of a live run to a step.
 
@@ -173,13 +138,15 @@ def openai_tools(specs=TOOL_SPECS):
 
 **In plain words.** Part 1: you go through the whole loop, and the agent explains any line you ask about. Take a break. Part 2: the agent runs Ana's question, and you follow the log step by step.
 
-#### Part 1. Follow the loop (30 minutes)
+#### Part 1. Follow the loop
 
 > Read 21.1 to 21.5. Open `src/loop/claude.ts` and `py/brightline_ap/loop/claude_loop.py` side by side. Do not run anything. Wait while I read and write my predictions. Then answer my questions about any line, in one or two sentences each, quoting the line.
 
 ![Two columns of six shaded bands, TypeScript on the left and Python on the right. Each band is one part of the loop, in the same order. Top band, dashed: your stops first, TypeScript lines 41 to 44, Python lines 44 to 48. Step 1, call: lines 46 to 70 with the model call on line 58, and lines 50 to 77 with the call on line 65. Step 2, keep: lines 72 to 74, line 73 pushes unchanged, and lines 78 to 80, line 79 appends unchanged. Step 3, check: lines 76 to 79, line 77 decides and 78 returns, and lines 82 to 84, line 83 decides and 84 returns. Step 4, run: lines 81 to 94, the tool runs on line 87, and lines 86 to 99, on line 93. Step 5, return: lines 96 to 97 and 101 to 102, results first. An arrow on the left, labeled repeat, runs from the last band back to the first.](img/chapter-20-code-map.png)
 
 *Figure 21.9. A map of the loop in both languages. Find a step in your language, then find its twin.*
+
+**The main names in the code.** Three names appear everywhere in the loop. `o` holds the options the loop was given: the model, the instructions, the API client and the tool runner. In Python, the same values are plain names: `model`, `instructions`, `client` and `run_tool`. `meter` counts turns and cost, and stops the loop at your limits (21.8). `tracer` records each step for the trace (21.10). If you learn only three pieces of syntax, learn `??`, `a ? b : c` and `await`, all explained below. Look up the rest when you see them.
 
 **Where the loop starts.** Before step 1, both files open the loop and check your own stops first ([21.8](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-stops-you-add-yourself/)). In TypeScript, lines 41 to 44:
 
@@ -237,8 +204,6 @@ Lines 59 to 63 (not shown) finish the call and its trace details ([21.10](https:
 **In TypeScript.** Line 54's `adaptive` lets the model decide on each turn whether to think. Line 55's `...( … )` adds the caching setting only when caching is on ([21.12](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/tokens-caching-and-what-a-call-costs/)). Its `ephemeral` means short-lived: the cache keeps the start of the request for a few minutes. `o.log?.( … )` on line 57 means "log it, if a log was set up". The real call to the model is `o.client.messages.create(request)` on line 58. Its `() => …` gives that call to the tracer, which runs it and records it. The call continues on lines 59 to 63. Names after `:` or `as`, such as `Anthropic.MessageCreateParamsNonStreaming` on line 47 and `as const` on line 55, are types for the type check (Chapters [13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/overview/) and [14](https://agentfactory.panaversity.org/building-ai-workers/structuring-programs/async-and-await/)). You can skip them.
 
 **In Python.** Line 65 is the real call. `**request` passes every field of the request dictionary to it.
-
-**The main names in the code.** Three names appear everywhere in the loop. `o` holds the options the loop was given: the model, the instructions, the API client and the tool runner. `meter` counts turns and cost, and stops the loop at your limits (21.8). `tracer` records each step for the trace (21.10). If you learn only three pieces of syntax, learn `??`, `a ? b : c` and `await`, all explained below. Look up the rest when you see them.
 
 **The code.** The main part of the loop, in TypeScript, with the line numbers from the file. Go through it twice. The first time, look only at the comment lines, Step 2 to Step 5. The second time, look at the code under each comment.
 
@@ -327,7 +292,7 @@ The same steps in Python. If TypeScript is your language, this block is only for
 
 **End of part 1.** Take a short break before part 2.
 
-#### Part 2. Run it, and match the log (15 minutes)
+#### Part 2. Run it, and match the log
 
 **Before you run it,** re-read your two predictions from the top of the task: which line ends the loop, and how many entries the second request will hold.
 
@@ -341,9 +306,9 @@ The same steps in Python. If TypeScript is your language, this block is only for
 
 **Check it now.** Download [Task 3's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-3.md).
 
-**Modify (optional, 10 minutes).** Ask the agent to change line 97 on a throwaway branch, a git branch the agent deletes afterwards (Chapter 15). The change puts a text block before the results: `content: [{ type: "text", text: "Here you go." }, ...results]`. That breaks [21.4](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/running-the-tools-and-sending-back-the-results/)'s third rule, results first. Predict what the API says. Have the agent run it. Read the 400 and its message, then have the agent delete the branch. Expect a 400 saying that tool results must come first, right after the tool calls.
+**Modify (optional).** Ask the agent to change line 97 on a throwaway branch, a git branch the agent deletes afterwards (Chapter 15). The change puts a text block before the results: `content: [{ type: "text", text: "Here you go." }, ...results]`. That breaks [21.4](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/running-the-tools-and-sending-back-the-results/)'s third rule, results first. Predict what the API says. Have the agent run it. Read the 400 and its message, then have the agent delete the branch. Expect a 400 saying that tool results must come first, right after the tool calls.
 
-### Task 4. Two calls in one turn, one failing (20 minutes, Codex)
+### Task 4. Two calls in one turn, one failing (Codex)
 
 **Goal:** you see one result per call, matched by id, with the failure returned as a result.
 
@@ -357,7 +322,7 @@ The same steps in Python. If TypeScript is your language, this block is only for
 
 **Check it now.** Download [Task 4's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-4.md).
 
-### Task 5. Cut a thinking block's signature (15 minutes, Claude Code)
+### Task 5. Cut a thinking block's signature (Claude Code)
 
 **Goal:** you see that the conversation must go back unchanged.
 
@@ -388,9 +353,38 @@ The same steps in Python. If TypeScript is your language, this block is only for
 
 Line 40 checks that there is a thinking block whose signature it can cut. `.some( … )` means "is there at least one block that is thinking?", and `!` turns that into "is there none?". Line 41's `.find( … )` picks the first block that is a tool call. Line 43 is the break. `.map( … )` makes a new list with one entry for each block. For the thinking block, `{ ...b, signature: … }` copies the block, with its signature replaced by `.slice(0, 20)`, the signature's first 20 characters. Every other block goes back as it was. Lines 44 and 45 only print a list of each block's type, using `.map((b) => b.type).join(", ")`. Line 48 sends `edited` back where the real loop sends `response.content` unchanged. Two more pieces. `question` and `base` are set near the top of the file. They are the question, and the request settings every call shares. And `...base` copies every field of `base` into the new request, before the code adds to it.
 
-**What good looks like:** turn 1 shows a thinking block and a tool call. (If the script says there was no thinking block this time, the model chose not to think on that turn. Ask the agent to run it again.) The second call comes back with status 400, type `invalid_request_error`, a message that the `signature` in the `thinking` block is invalid, and a request id. Your prediction: a 400 error. If it came back without an error, record that in `ports/ch20.md`. The API's documentation says to expect the error, but no one has seen it live yet. Either outcome is a pass once it is recorded.
+**What good looks like:** turn 1 shows a thinking block and a tool call. (If the script says there was no thinking block this time, the model chose not to think on that turn. Ask the agent to run it again.) The second call comes back with status 400, type `invalid_request_error`, a message that the `signature` in the `thinking` block is invalid, and a request id. Your prediction: a 400 error. If it came back without an error, record that in `ports/ch20.md`. The API's documentation states this error ([21.5](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-conversation-is-an-array-you-own/)), but this lab has not yet seen it in a live run. Either outcome is a pass once it is recorded.
 
 **Check it now.** Download [Task 5's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-5.md).
+
+### Task 5b. Write the loop yourself (Claude Code)
+
+**Goal:** a loop of your own on the first API, written into an empty function, that passes 8 recorded tests. You decide every step, and the agent types it.
+
+**Predict:** your loop leaves out step 2, keep. Which test fails, and what would the live API say to that request?
+
+**In plain words.** You give your plan in six lines. The agent turns each line into a comment, writes the code under it, and waits for your yes. Then 8 tests replay the recorded responses that check the lab's loop, this time against yours.
+
+**What you start with.** `src/loop/mine.ts` holds one empty function, `runMyLoop(o)`. It gets the same options as the lab's loop: `o.client`, `o.model`, `o.instructions`, `o.question`, `o.runTool`, `o.limits` and `o.prices`. It must give back the same result: `{ stop, answer, turns, costUsd, messages }`. In Python, `py/brightline_ap/loop/mine.py` holds `run_my_loop(...)`, with the same names written with underscores, and gives back a `LoopResult`. Your loop may use two of the lab's helpers: `claudeTools()`, the four tool definitions, and `RunMeter`, which counts turns, cost and time and says when a limit is reached. [21.8](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-stops-you-add-yourself/) explains the three limits later. Only the loop is yours.
+
+**Your plan, one line each.** The agent asks for these, in this order. Answer each in your own words. Your plan from 21.5's "Do this now" is a good start.
+
+1. Your stops: when does the loop check the meter, and what does it do when a limit is reached?
+2. Step 1, call: what goes into every request?
+3. Step 2, keep: what of the response goes into the conversation?
+4. Step 3, check: on which stop reason does the loop go round again, and what happens on every other one?
+5. Step 4, run: what does a tool that fails give back?
+6. Step 5, return: where do the results go, in what order, and how is each matched to its call?
+
+> Read 21.1 to 21.5 and `AGENTS.md`. Do not open or copy `claude.ts` or `claude_loop.py`, the lab's own loop. Open my empty function in `src/loop/mine.ts`, or in `py/brightline_ap/loop/mine.py` if Python is my language. Ask me for my plan one part at a time: my stops, then steps 1 to 5. For each part, write my words as a comment, then the code under it, and show me only those lines. Wait for my yes before the next part. When all six parts are in, run the tests for my loop and show me the result.
+
+Then check your prediction:
+
+> Comment out my step 2 line, and run the tests for my loop again. Show me which test fails, and why. Then put the line back, and run them once more.
+
+**What good looks like:** a file of about 60 lines, with your six comments, and all 8 tests passing (`npm run test:mine`, or `npm run test:mine:py` in Python). The tests are named for your plan: two for your stops, two for step 3, and one each for steps 1, 2, 4 and 5. So when one fails, change that line of your plan, and run again. With step 2 commented out, only the step 2 test fails. Your prediction: the step 2 test, because request 2 now holds two entries, the question and your results, not three. The live API would reject that request with a 400, because results must come right after the tool calls they answer ([21.4](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/running-the-tools-and-sending-back-the-results/)'s third rule).
+
+**Check it now.** Download [Task 5b's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-5b.md).
 
 **Checkpoint 1: the loop.** Before Sitting 2, check that you can do these without looking back.
 
@@ -398,16 +392,17 @@ Line 40 checks that there is a thinking block whose signature it can cut. `.some
 - Say what a strict schema guarantees, and give an input it accepts that is still wrong (21.2).
 - Say what happens if a tool call gets no result, and how the loop makes sure it never does (21.4).
 - Say why the model's entry must go back unchanged, and which line makes sure it does ([21.5](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-conversation-is-an-array-you-own/)).
+- Write the loop from your own plan, and say which test checks each step (Task 5b).
 
-## Sitting 2: the same loop on the second API (about 1 hour 10 minutes)
+## Sitting 2: the same loop on the second API
 
 **Before you start, answer in a line each:** What four things are different about a tool call on the second API ([21.6](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/the-same-loop-different-shapes/))? What can you no longer see in a stateful run ([21.7](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/what-a-stateful-mode-hides/))? **After this sitting, you can:** explain the loop on both APIs, name every difference, and say what a stateful mode keeps for you.
 
 **Where you are.** The second API now (`openai.ts`, or `openai_loop.py` in Python), with the same connector, route A or route B, and the same five steps.
 
-**If you left the second account for now (10 minutes, by hand, F1).** Make the OpenAI API account, add a few dollars of credit, and set a $5 monthly spending limit. Make one key, and paste it into `.secrets/openai.env` as `OPENAI_API_KEY=` followed by the key. Then copy the pinned model's four prices into the `openai` row of `src/loop/config.json` (F5).
+**If you left the second account for now (by hand, F1).** Make the OpenAI API account, add $5 of credit (F1 says why five), and set a $5 monthly spending limit. Make one key, and paste it into `.secrets/openai.env` as `OPENAI_API_KEY=` followed by the key. Then copy the pinned model's four prices into the `openai` row of `src/loop/config.json` (F5).
 
-### Task 6. The loop on the second API (45 minutes, Codex)
+### Task 6. The loop on the second API (Codex)
 
 **Goal:** you can point to the five steps in the second API's loop, name each difference from the first, and run it.
 
@@ -477,7 +472,7 @@ And in Python. As in Task 3, study your own language, and use the other for comp
                                 "output": outcome.text if outcome.ok else f"ERROR: {outcome.text}"})
 ```
 
-*Investigate:* `JSON.parse(call.arguments)` and `json.loads(call.arguments)` sit inside the `try`. What happens when an open model writes broken JSON? (The error becomes an `ERROR:` output, and the loop goes on. A recorded test on the fixture `open-malformed-args` proves it: run it with `-t malformed` and `-k malformed`. It feeds the loop a function call whose arguments are not valid JSON, and checks that the next request carries an `ERROR:` output.)
+*Investigate:* `JSON.parse(call.arguments)` and `json.loads(call.arguments)` sit inside the `try`. What happens when an open model writes broken JSON? (The error becomes an `ERROR:` output, and the loop goes on. A recorded test on the fixture `open-malformed-args` proves it: run it with `-t malformed` and `-k malformed`: `-t` and `-k` pick tests by part of their name, and a fixture is a saved response. It feeds the loop a function call whose arguments are not valid JSON, and checks that the next request carries an `ERROR:` output.)
 
 **Then modify.** Predict first: if Step 2 kept only messages and function calls, leaving out reasoning items, what would the second request do? Then:
 
@@ -491,7 +486,7 @@ And in Python. As in Task 3, study your own language, and use the other for comp
 
 **Check it now.** Download [Task 6's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-6.md).
 
-### Task 7. The stateful contrast (25 minutes, Codex)
+### Task 7. The stateful contrast (Codex)
 
 **Goal:** you see, in your own program's record, what a stateful run leaves out.
 
@@ -511,17 +506,17 @@ And in Python. As in Task 3, study your own language, and use the other for comp
 - Say why the arguments are parsed inside the `try` (21.6).
 - Say what a stateful mode saves, what it does not save, and what it hides (21.7).
 
-## Sitting 3: safe to run (about 1 hour 10 minutes)
+## Sitting 3: safe to run
 
 **Before you start, answer in a line each:** Why is the model's own stop not enough (21.8)? Which errors should be retried (21.9)? What can a trace not prove (21.10)? **After this sitting, you can:** stop a loop that keeps going, sort an error and quote its request id, and diagnose a run from its trace.
 
 **Where you are.** Both APIs, in your chosen language, with your connector, route A or route B. Three tasks, all on the core path.
 
-![The last two sittings as two rows of boxes. The top row is Sitting 3, safe to run, about 1 hour 10 minutes. It starts with Task 8, stops, 20 minutes, drawn as a wide box that holds three parts. They are 8a, recorded tests, 8b, broken connector, dashed, route B only, and 8c, one-turn limit. Then come Task 9, errors, 20 minutes, and Task 10, trace, 30 minutes. Between the rows, a gold bar says: a break, then read Part D. The bottom row is Sitting 4, the rest of the API, about 1 hour 25 minutes. It starts with Task 11, stream and cache, 25 minutes, dashed and labeled advanced path. Then come Task 12, open model, 25 minutes, and a gold box, Task 13, review and ship, 35 minutes. A key says dashed means only if it applies to you, by your route or your path.](img/chapter-20-sitting-three-map.png)
+![The last two sittings as two rows of boxes. The top row is Sitting 3, safe to run. It starts with Task 8, stops, drawn as a wide box that holds three parts. They are 8a, recorded tests, 8b, broken connector, dashed, route B only, and 8c, one-turn limit. Then come Task 9, errors, and Task 10, trace. Between the rows, a gold bar says: a break, then read Part D. The bottom row is Sitting 4, the rest of the API. It starts with Task 11, stream and cache, dashed and labeled advanced path. Then come Task 12, open model, and a gold box, Task 13, review and ship. A key says dashed means only if it applies to you, by your route or your path.](img/chapter-20-sitting-three-map.png)
 
 *Figure 21.17. The last two sittings. Each is short enough for one session, with a break and Part D between them.*
 
-### Task 8. A loop that will not stop by itself (20 minutes, Claude Code)
+### Task 8. A loop that will not stop by itself (Claude Code)
 
 **Goal:** you see your own limits stop a loop the model would not stop.
 
@@ -568,7 +563,7 @@ Each line checks one stop and returns its name. `return null` means "no stop, go
 
 **Check it now.** Download [Task 8's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-8.md).
 
-### Task 9. Three errors, three request ids (20 minutes, Claude Code)
+### Task 9. Three errors, three request ids (Claude Code)
 
 **Goal:** you can sort an error by whose fault it is, and find its request id.
 
@@ -598,7 +593,7 @@ The cast is `as unknown as …`. It tells the type check "trust me, this is a va
 
 **Check it now.** Download [Task 9's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-9.md).
 
-### Task 10. Diagnose a run from its trace (30 minutes, OpenCode)
+### Task 10. Diagnose a run from its trace (OpenCode)
 
 **Goal:** you find a missing step from the trace alone.
 
@@ -608,7 +603,7 @@ The cast is `as unknown as …`. It tells the type check "trust me, this is a va
 
 > Read 21.10. Run `npm run ask -- --api claude --trace --quiet "What does our policy say about an invoice with no purchase order? Cite the line."` and save `trace.jsonl` (written in the repository's top folder) as `trace-good.jsonl`. Show me each span's name and, for tool spans, its `gen_ai.tool.call.id`. Then make a throwaway branch, remove `search_policy` from `tools/ap-tools.json`, and run the same command. Show me only the new trace, not the answer, and wait for my diagnosis. Then show me the answer, and compare its citation with what `search_policy` returned in the good run. Delete the branch.
 
-**What good looks like:** the good trace has `chat`, `execute_tool search_policy`, then `chat`, and the answer cites `po-matching.md:9`. The broken trace has one or more `chat` spans, and no `execute_tool` at all. Its answer either says it cannot check the policy, or cites a line it never looked up, perhaps the `(po-matching.md:5)` from the instructions' own example. Record which. Your prediction: an `execute_tool search_policy` span.
+**What good looks like:** the good trace has `chat`, `execute_tool search_policy`, then `chat`, and the answer cites `po-matching.md:9`. The broken trace has no `execute_tool search_policy` span. It may have no tool span at all, or one for another tool, if the model looked something else up. Record which. Its answer either says it cannot check the policy, or cites a line it never looked up, perhaps the `(po-matching.md:5)` from the instructions' own example. Record which. Your prediction: an `execute_tool search_policy` span.
 
 **Check it now.** Download [Task 10's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-10.md).
 
@@ -620,13 +615,13 @@ The cast is `as unknown as …`. It tells the type check "trust me, this is a va
 
 Take a break here. Then read Part D, and do Sitting 4.
 
-## Sitting 4: the rest of the API, and ship it (about 1 hour 25 minutes)
+## Sitting 4: the rest of the API, and ship it
 
 **Before you start, answer in a line each:** When can a streamed tool call's input be parsed ([21.11](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/streaming/))? Which part of a request does caching make cheaper (21.12)? What five things does a loop pin ([21.13](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/versions-models-and-keys/))? **After this sitting, you can:** read a stream, see caching in the usage, run the loop on an open model, and ship it.
 
 **Where you are.** Both APIs and an open model, in your chosen language, with your connector, route A or route B. Task 11 is on the advanced path. Tasks 12 and 13 are on the core path.
 
-### Task 11. A stream, and a cached turn (25 minutes, Claude Code, advanced path)
+### Task 11. A stream, and a cached turn (Claude Code, advanced path)
 
 **Goal:** you see a response arrive in pieces, and the cache show up in the usage.
 
@@ -659,7 +654,7 @@ Until the block stops, the pieces only collect in `partialJson`. Line 44 (45 in 
 
 **Check it now.** Download [Task 11's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-11.md).
 
-### Task 12. Port to an open model (25 minutes, OpenCode)
+### Task 12. Port to an open model (OpenCode)
 
 **Goal:** the second API's loop runs, unchanged, against an open model on your own computer.
 
@@ -673,25 +668,69 @@ Until the block stops, the pieces only collect in `partialJson`. Line 44 (45 in 
 
 **Check it now.** Download [Task 12's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-12.md).
 
-### Task 13. Review and ship (35 minutes, Claude Code)
+### Task 13. Review and ship (Claude Code)
 
 **Goal:** a reviewed pull request, merged by you, tagged `ch20`.
 
 **In plain words.** You review everything the sittings used, with two reviewers, and merge it.
 
 > 1. Show me every pin: the SDK versions in `package.json` and `py/pyproject.toml`, the `anthropic-version` header in a recorded test's request, the model ids and `checked_on` in `src/loop/config.json`, and the prompt's file name (21.13).
-> 2. Run `npm run typecheck`, `npm run typecheck:py`, `npm run test:loop` and `npm run test:loop:py`, and show me the table.
+> 2. Run `npm run typecheck`, `npm run typecheck:py`, `npm run test:loop` and `npm run test:loop:py`, and the tests for my own loop in the language I wrote it in, and show me the table.
 > 3. Add `docs/loop.md`: the loop's five steps, each with its line in both languages, the three limits and their values, and the one-line invariant from 21.14 (the one rule that is always true of the loop).
 > 4. Make sure `ports/ch20.md` has every prediction, every result and the three request ids from Task 9, and move `trace-good.jsonl` from Task 10 into `ports/`, which Lab 22 compares with.
 > 5. Commit the work on a new branch `lab20`. Run `/code-review` and `/security-review` on it, and fix or answer every finding. An answer says, in one line, why the finding does not apply. Check especially: no key or token printed or committed, and no `temperature`, `top_p` or `top_k` outside `scripts/break.ts` and `py/brightline_ap/experiments.py`.
 > 6. If this repository has no GitHub remote yet, make a private one with `gh repo create brightline-ap --private --source . --remote origin`, then push `main` and `lab20`. Open the pull request from `lab20`, with a short description of what changed, and show me both reviews. I will merge.
-> 7. After I say it is merged, tag the merge `ch20`, push the tag, and in a clean clone of the tag, install as Task 0 did (`npm ci`, then `cd py && uv sync --locked`) and run the four checks of step 2.
+> 7. After I say it is merged, tag the merge `ch20`, push the tag, and in a clean clone of the tag, install as Task 0 did (`npm ci`, then `cd py && uv sync --locked`) and run the checks of step 2.
 
-**You should see, step by step:** Step 1, a short list of pins, one per line. Step 2, a table with four rows, all passing (32 TypeScript tests and 22 Python tests at the start of this lab). Step 3, a new `docs/loop.md` of about a page. Step 4, `ports/ch20.md` with no empty prediction. Step 5, two review reports, each finding fixed or answered. Step 6, a pull request link, which shows as merged once you merge it. Step 7, the four checks passing again from the clean clone, and `git tag` on that clone listing `ch20`.
+**You should see, step by step:** Step 1, a short list of pins, one per line. Step 2, a table with five rows, all passing: 32 TypeScript tests and 22 Python tests for the lab's loop, and 8 for yours. Step 3, a new `docs/loop.md` of about a page. Step 4, `ports/ch20.md` with no empty prediction. Step 5, two review reports, each finding fixed or answered. Step 6, a pull request link, which shows as merged once you merge it. Step 7, the same checks passing again from the clean clone, and `git tag` on that clone listing `ch20`.
 
-**What good looks like:** both reviews have no open finding. The clean clone passes all four checks, with no key, because every test replays recorded responses.
+**What good looks like:** both reviews have no open finding. The clean clone passes every check, with no key, because every test replays recorded responses.
 
 **Check it now.** Download [Task 13's answer key](https://github.com/panaversity/agentfactory-v2-resources/releases/latest/download/brightline-lab-ch20-key-task-13.md).
+
+## How the tasks run
+
+Everything the opening left out, for looking up while you work.
+
+### What you need
+
+- A computer running macOS, Linux, or Windows with WSL. WSL is the Windows Subsystem for Linux, and you need it because the scripts use Unix paths. The computer needs **Node 22.19 or later**, **Python 3.12 or later** and **uv** 0.11 or later. It also needs git and the GitHub CLI (`gh`). F0 says where to install each.
+- The desktop apps of Claude Code and OpenCode version 2, and Codex in the ChatGPT desktop app, each signed in ([Chapter 12](https://agentfactory.panaversity.org/building-ai-workers/agentic-coding/overview/)).
+- **A Claude Console account with API credits** and **an OpenAI API account with credits** ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Each gets a project or workspace with a small monthly spending limit, which you set by hand in Task 0.
+- **For the open-model port:** Ollama, and several gigabytes of free disk for one small model (F6).
+- **A connector to call.** Either your own [Chapter 19](https://agentfactory.panaversity.org/building-ai-workers/business-data-and-retrieval/overview/) staging connector and a test token (route A), or the local practice connector in the zip (route B). Task 0 helps you choose.
+
+### How you work
+
+**The agents write, and you explain.** This lab follows [Chapter 13](https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/you-read-the-agent-writes/#how-do-i-learn-to-read-code-with-an-agent-beside-me)'s PRIMM-AI+ method. In each task, you **predict** first: you write your prediction in `ports/ch20.md`. Then the agent **runs** the code, and you **investigate** the gap with the agent's help ("explain line 73"). Some tasks also ask you to **modify**: you tell the agent what to change, predict again, and run again. You must be able to say what every line of it does.
+
+**The lab's files already hold the loop.** `brightline-lab-ch20.zip` comes with the finished code and the tests that check it. So Sittings 1 and 2 are mostly about understanding and running the loop. Your coding agent's job is to set up, run, explain and change. Task 5b is where you write a loop yourself, from an empty function, and Task 13 is where the work becomes yours: you review it all, and merge it.
+
+**What it costs.** Both APIs charge for each call, by the token. Anthropic gives new users a little free credit to test with, and the second API's pinned model is listed only for OpenAI's paid tiers ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Every `npm run ask` run has a cost cap of 10 cents. The whole lab should cost under $1 on each API (not yet confirmed by a live run). The open-model port is free.
+
+**If a live response differs a little** from what a task shows, trust what you see, and record it in `ports/ch20.md`. **One stop rule:** Task 0's last step or Task 1 may fail in a way that **If something goes wrong** does not cover. If that happens, stop, and record what you saw. Every later task depends on reaching the API and the connector.
+
+**A quick reminder from Chapter 12.** **Plan mode** means the agent writes a plan and waits before it changes anything. **Manual mode** means it asks you before each command it runs. A **second terminal** is a new terminal window or tab, opened beside the agent. It is for a program that must keep running, such as the practice connector. Start the program there, leave the window open, and stop it later with Ctrl+C. A **branch** is a separate line of work in git, and deleting it does not touch the main code ([Chapter 15](https://agentfactory.panaversity.org/building-ai-workers/code-review/git-through-the-agent/)).
+
+**How every task runs.** Chapter 12's five-step routine: (1) a fresh session with the named agent, in `brightline-ap/`. (2) Plan mode, with the task's prompt as the brief. Read the plan, and correct it before it starts. (3) Manual mode: approve each command it asks about. In Codex, choose **Ask for approval**. Even in that mode, Codex runs commands inside the folder without asking, and asks only before a command that needs the network, such as `npm run ask`. (4) Evidence: the agent shows what proves the task is done, and you check it against **What good looks like**. (5) A line in `ports/ch20.md`: the task, your prediction, what happened, anything that surprised you.
+
+**What you do by hand, and only this.** Unzip the download, and on route A copy your secrets in. Make the two API accounts. Make each API key in its own console, and paste it into its file in `.secrets/` with your own editor. Set the spending limits, and copy the prices for the pinned models into `src/loop/config.json` ([F5](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f5-prices-usage-and-caching)). Start and stop the practice connectors in terminals of your own, when a task asks. You also decide when to merge. Agents do everything else. **No API key or token passes through a chat.**
+
+**Rules the agents follow.** `AGENTS.md` says: never print, read aloud or copy anything in `.secrets/`. Run live calls only through four commands and their Python twins. `npm run ask` has a cost cap. `npm run break` and `npm run stream:demo` make one or two small calls each. `npm run stateful` runs at most 8 turns. The only other live call is the one embeddings call inside Task 0's load on route A. Ask before any call to a model API. `.claude/settings.json` also denies reading `.secrets/`, and `opencode.jsonc` denies OpenCode's file-reading tool access to it. Codex's settings file cannot deny it, so in Codex, the rule in `AGENTS.md` is the guard.
+
+**Words in the prompts.**
+
+| Word in a prompt | What it means |
+| --- | --- |
+| `npm run ask -- --api claude "…"` | Runs one question through the loop on the first API and prints every request and response. `--api openai` uses the second API, and `--api open` uses the open model. `npm run ask:py` is the Python twin |
+| `--trace`, `--quiet`, `--cache`, `--max-turns N` | Write a trace file, print only the answer, turn caching on, or lower the turn limit for one run |
+| Recorded responses, fixtures | Saved responses in `tests/fixtures/loop/`. The tests replay them, so they cost nothing and need no network |
+| `npm run test:loop`, `npm run test:loop:py` | Run the loop's TypeScript tests (vitest) and Python tests (pytest) |
+| `npm run test:mine`, `npm run test:mine:py` | Run the same recorded tests against the loop you write yourself in Task 5b |
+| `npm run connector:practice` | Start the local practice connector on `127.0.0.1:8760` (route B). It reads its token from `.secrets/connector.env`. `PRACTICE_BROKEN=search_policy` makes that tool always answer "try again" |
+| 400, 401, 429, 529 | Web error codes. 400: the request was wrong. 401: the key was not accepted. 429: too many requests. 529: the model service is overloaded ([21.9](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/when-the-loop-goes-wrong/)) |
+
+**Your agents can read this chapter.** `docs/chapter-20/` holds the concepts and the field guide as text. Each prompt names what to read.
 
 ## If something goes wrong
 
@@ -701,8 +740,9 @@ Until the block stops, the pieces only collect in `partialJson`. Line 44 (45 in 
 | 400 about a thinking block | The model's entry was edited or rebuilt before it was sent back | Send `response.content` back exactly as it came (21.5) |
 | 400 naming `temperature`, `top_p` or `top_k` | An old sample or helper set a sampling parameter the current API version rejects | Remove it (21.9, 21.13) |
 | 400 about tool choice | A forced tool choice, rejected on a current model | Use `auto`, with strict tools (21.2) |
+| 400 about a spend limit (first API) | The workspace reached the monthly spending limit you set | Raise the limit in the Console, or wait for next month ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)) |
 | 401 | The key file is wrong, empty, expired, or for another project | Check `.secrets/anthropic.env` or `.secrets/openai.env` in your editor, never in a chat |
-| 429, 503 or 529 after retries | Too many requests, the service is busy, or (second API) the spend limit or credits ran out | Read the error's code. For a spend limit or credits, raise the limit or add credits ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Otherwise wait a minute and run again. The SDK already retried twice |
+| 429, or 500 and up, after the SDK's retries | Too many requests, the service is busy, or (second API) the spend limit or credits ran out | Read the error's code. For a spend limit or credits, raise the limit or add credits ([F1](https://agentfactory.panaversity.org/building-ai-workers/agent-loop-by-hand/field-guide-agent-loop-by-hand/#f1-accounts-keys-and-spending-limits-by-you)). Otherwise wait a minute and run again. The SDK already retried twice |
 | The loop stops at `turn_limit` on a simple question | The model kept calling tools | Read the log: a tool that fails or returns too little leads to more calls (21.8) |
 | `cost_cap` on the first turn | The prices in `config.json` are far too high, or the cap far too low | Check the prices against the pricing page (F5) |
 | The model answers without calling a tool | The question did not need one, or the descriptions did not fit it | Read the tool descriptions as the model would ([Chapter 17](https://agentfactory.panaversity.org/building-ai-workers/connectors-and-mcp/overview/)). Never force a tool |
@@ -729,6 +769,7 @@ CCDV-F is the Claude Certified Developer foundations exam, and CCAR-F the Claude
 
 - [ ] `tools/ap-tools.json`, `prompts/ap-worker.v1.md`, `src/loop/config.json` with prices and `checked_on`
 - [ ] `src/loop/claude.ts`, `openai.ts`, `tools.ts`, `limits.ts`, `trace.ts`, `stream.ts`, and their Python twins in `py/brightline_ap/loop/`
+- [ ] Your own loop, `src/loop/mine.ts` or `py/brightline_ap/loop/mine.py`, passing its 8 tests
 - [ ] `scripts/ask.ts`, `break.ts`, `stateful.ts`, `stream-demo.ts`, and `py/brightline_ap/ask.py` and `experiments.py`
 - [ ] `tests/loop.spec.ts`, `tests/practice-connector.spec.ts`, `py/tests/test_loop.py`, and `tests/fixtures/loop/`
 - [ ] `docs/loop.md`, and `ports/ch20.md` with every prediction, result and request id

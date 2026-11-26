@@ -4,6 +4,6 @@ For you, after the task. Open it in a text editor, never in the agent. Every liv
 
 **Your prediction, if it matched:** An `execute_tool search_policy` span.
 
-**What a good run shows:** Good run cites `po-matching.md:9`. Broken run: only `chat` spans.
+**What a good run shows:** Good run cites `po-matching.md:9`. Broken run: no `execute_tool search_policy` span.
 
-Compare with `answer-key/files/ports/trace-good.jsonl`: three spans, `chat claude-sonnet-5-5`, `execute_tool search_policy` with its `gen_ai.tool.call.id`, then `chat claude-sonnet-5-5`. It comes from the real loop, tracer and practice connector with a stand-in model, so its ids and timings are that run's. The broken trace has no `execute_tool` span at all.
+Compare with `answer-key/files/ports/trace-good.jsonl`: three spans, `chat claude-sonnet-5-5`, `execute_tool search_policy` with its `gen_ai.tool.call.id`, then `chat claude-sonnet-5-5`. It comes from the real loop, tracer and practice connector with a stand-in model, so its ids and timings are that run's. The broken trace has no `execute_tool search_policy` span. It may have none at all, or one for another tool, such as `list_open_invoices`, if the model looked something else up. Either way, nothing in it says the policy was searched. That is the diagnosis. A live run has not yet shown which of the two you will see.

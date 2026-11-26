@@ -40,4 +40,5 @@
 - Changes for experiments go on a throwaway branch, and the branch is deleted at the end of the task. Merge nothing until Task 13.
 - Never add `temperature`, `top_p` or `top_k` to any request outside `scripts/break.ts` and `py/brightline_ap/experiments.py`, and never force a tool choice outside them.
 - Run the loop's four checks before you say a change to it is done: `npm run typecheck`, `npm run typecheck:py`, `npm run test:loop`, `npm run test:loop:py`.
+- Task 5b is the person's own loop, in `src/loop/mine.ts` or `py/brightline_ap/loop/mine.py`. In that task, never open, quote or copy `src/loop/claude.ts` or `py/brightline_ap/loop/claude_loop.py`. Ask for the person's plan one part at a time, in this order: their stops, then steps 1 to 5. For each part, write their words as a comment, then the code under it, show only those lines, and wait for their yes before the next part. Check it with `npm run test:mine` or `npm run test:mine:py`, which replay the recorded responses and need no key. Never change those tests to make the person's loop pass.
 - Never read `../answer-key/`.

@@ -4,7 +4,8 @@
     "brightline_ap/ask.py",
     "brightline_ap/experiments.py",
     "brightline_ap/practice_connector.py",
-    "tests/test_loop.py"
+    "tests/test_loop.py",
+    "tests/mine_check.py"
   ],
   "typeCheckingMode": "standard",
   "venvPath": ".",
