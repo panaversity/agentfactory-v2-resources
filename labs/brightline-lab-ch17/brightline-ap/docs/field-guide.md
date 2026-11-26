@@ -221,10 +221,10 @@ claude mcp add --transport http apts http://127.0.0.1:8717/mcp \
 **Ran** with Claude Code 2.1.316 on November 2, 2026: a project `.mcp.json` of this shape, naming the TypeScript server, answered acceptance checks A5, A6 and A8.
 
 - Scopes, highest first: local (the default), project (`.mcp.json`), user, then servers from plugins, then claude.ai connectors. A server's settings are not merged across scopes.[^anthropic-mcp]
-- Permission rules name tools `mcp__<server>__<tool>`, or `mcp__plugin_<plugin>_<server>__<tool>` for a plugin's connector, such as `mcp__plugin_brightline-ap_ap__find_vendor`. Characters outside letters, digits, `_` and `-` become `_`.[^anthropic-permissions]
+- Permission rules name tools `mcp__<server>__<tool>`, or `mcp__plugin_<plugin>_<server>__<tool>` for a plugin's connector, such as `mcp__plugin_brightline-ap_ap__find_vendor`. Characters outside letters, digits, `_` and `-` become `_`.[^anthropic-permissions] **Ran** with Claude Code 2.1.332 on November 26, 2026: an ask rule `Bash(npm run deploy*)` held a script named like `deploy:staging` for approval, but `Bash(npm run deploy:*)` let it run.
 - Output: a warning above 10,000 tokens, a cap of 25,000 by default, `MAX_MCP_OUTPUT_TOKENS` to change it.
 - OAuth: `/mcp` in a session, or `claude mcp login`.
-- Telemetry for one session, in the shell, never in the repository: `CLAUDE_CODE_ENABLE_TELEMETRY=1`, `OTEL_METRICS_EXPORTER=console`, `OTEL_LOGS_EXPORTER=console`. Records carry `mcp_server.name` and `mcp_tool.name`, shown as `"custom"` until `OTEL_LOG_TOOL_DETAILS=1`. Traces are a beta, `CLAUDE_CODE_ENHANCED_TELEMETRY_BETA=1`.[^anthropic-monitoring]
+- Telemetry for one session, in the shell, never in the repository: `CLAUDE_CODE_ENABLE_TELEMETRY=1`, `OTEL_METRICS_EXPORTER=console`, `OTEL_LOGS_EXPORTER=console`. Records carry `mcp_server.name` and `mcp_tool.name`, shown as `"custom"` until `OTEL_LOG_TOOL_DETAILS=1`. Traces are a beta, `CLAUDE_CODE_ENHANCED_TELEMETRY_BETA=1`.[^anthropic-monitoring] **Ran** with Claude Code 2.1.332 on November 26, 2026: `OTEL_LOG_TOOL_DETAILS=1` also recorded each call's input, such as the invoice number, so turn it on only for a check. Claude Code sent no `traceparent` to the server, with the beta or without it.
 
 ### F4. Codex
 
@@ -261,7 +261,10 @@ In `opencode.jsonc` at the repository root:
 - `disabled: true` stops a server. There is no `enabled` field.
 - `timeout`: `startup`, `catalog` and `execution`. `codemode` is on by default.
 - Tools are named `<server>_<tool>` in permission rules. `opencode mcp add` adds a server, `opencode mcp list` shows each one's state, and `/mcps` does the same in the app.
-- Shell commands take rules too. Each rule has an `action`, a `resource` and an `effect` (`allow`, `ask` or `deny`), and the last rule that matches wins. In the page's own pattern, `{ "action": "shell", "resource": "npx wrangler deploy *", "effect": "ask" }` asks first, and `{ "action": "shell", "resource": "npx wrangler secret put *", "effect": "deny" }` refuses. Version 2 says `permissions` and `shell`, where older versions said `permission` and `bash`.[^opencode-permissions]
+- Shell commands take rules too. Each rule has an `action`, a `resource` and an `effect` (`allow`, `ask` or `deny`), and the last rule that matches wins. In the page's own pattern, `{ "action": "shell", "resource": "npx wrangler deploy *", "effect": "ask" }` asks first, and `{ "action": "shell", "resource": "npx wrangler secret put *", "effect": "deny" }` refuses. Version 2 says `permissions` and `shell`, where older versions said `permission` and `bash`.[^opencode-permissions] **Ran** with OpenCode 2.4.2 on November 26, 2026: version 2 still read the older form, turning each entry into a rule. Started with `--auto`, OpenCode approved every command that no rule denied, so an `ask` rule did not stop `git push`, and only a `deny` rule held.
+- **The key is read by OpenCode's background service.** Version 2 connects to servers from a service that keeps running between sessions. If the service started before you set the key, every server fails with `HTTP 401`, even in a window that holds the key. Run `opencode service restart` in the terminal where you set the key, then start `opencode`. A server that was not running when OpenCode first opened the folder shows `ECONNREFUSED` until you restart the service the same way.
+
+**Ran** with OpenCode 2.4.2 on November 26, 2026: an `opencode.jsonc` of this shape, with both servers, answered acceptance checks A5 and A6 the same way, after `opencode service restart` from a terminal holding the key.
 
 ### F6. Deploying to Cloudflare Workers
 
