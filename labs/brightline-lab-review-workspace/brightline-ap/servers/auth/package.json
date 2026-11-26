@@ -1,0 +1,33 @@
+{
+  "name": "@brightline/auth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --ip 127.0.0.1 --port 8719",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit -p .",
+    "generate": "auth generate --config src/auth.cli.ts --yes --output .wrangler/generated.sql",
+    "migrate:local": "wrangler d1 migrations apply brightline-auth --local",
+    "generate:next": "node scripts/generate-next.ts",
+    "check:deploy": "wrangler deploy --dry-run --env staging --outdir .wrangler/dry-run-staging && wrangler deploy --dry-run --env production --outdir .wrangler/dry-run-production",
+    "deploy:staging": "node ../../scripts/check-deploy.ts --ready staging && wrangler deploy --env staging",
+    "deploy:production": "node ../../scripts/check-deploy.ts --ready production && wrangler deploy --env production",
+    "secrets:staging": "wrangler secret bulk ../../.secrets/auth.staging.env --env staging",
+    "secrets:production": "wrangler secret bulk ../../.secrets/auth.production.env --env production",
+    "migrate:staging": "wrangler d1 migrations apply brightline-auth-staging --remote --env staging",
+    "migrate:production": "wrangler d1 migrations apply brightline-auth --remote --env production"
+  },
+  "dependencies": {
+    "better-auth": "1.7.15",
+    "@better-auth/mcp": "1.7.15",
+    "@better-auth/cimd": "1.7.15"
+  },
+  "devDependencies": {
+    "auth": "1.7.15",
+    "jose": "6.2.15",
+    "miniflare": "5.20261101.0-beta",
+    "wrangler": "4.156.1",
+    "@cloudflare/workers-types": "5.20261101.1",
+    "typescript": "5.9.3"
+  }
+}

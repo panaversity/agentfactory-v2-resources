@@ -1,0 +1,35 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  // Lab 20b: the review workspace connector. Branch review-app only: it is never deployed from main,
+  // and it has no production environment. Replace "your-subdomain" with your workers.dev subdomain.
+  "name": "brightline-review-ts",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "env": {
+    "staging": {
+      "workers_dev": true,
+      "preview_urls": false,
+      // Its own Hyperdrive configuration, made with the review_writer role's connection string:
+      // npx wrangler hyperdrive create brightline-review-staging --connection-string "<DATABASE_URL_REVIEW_WRITER>" --caching-disabled
+      "hyperdrive": [{ "binding": "HYPERDRIVE", "id": "<made by wrangler hyperdrive create brightline-review-staging>" }],
+      "observability": { "enabled": true, "head_sampling_rate": 1 },
+      "vars": {
+        "REVIEW_ISSUER": "https://brightline-auth-staging.your-subdomain.workers.dev/api/auth",
+        "REVIEW_RESOURCE": "https://brightline-review-ts-staging.your-subdomain.workers.dev/mcp",
+        // The lab's day: overdue means due before it.
+        "REVIEW_AS_OF": "2027-03-30",
+        // Claude's sandbox address for the page: the first 32 hex characters of the SHA-256 of
+        // REVIEW_RESOURCE, then .claudemcpcontent.com (20.16, Product reference).
+        "REVIEW_UI_DOMAIN": "<first 32 hex of sha256(REVIEW_RESOURCE)>.claudemcpcontent.com"
+      },
+      "services": [{ "binding": "AUTH", "service": "brightline-auth-staging" }],
+      "ratelimits": [
+        { "name": "RATE_COMPANY", "namespace_id": "1821", "simple": { "limit": 600, "period": 60 } },
+        { "name": "RATE_PERSON", "namespace_id": "1822", "simple": { "limit": 120, "period": 60 } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# The shape of servers/auth/.dev.vars, the sign-in server's secrets on your computer.
+# Do not fill it in by hand: `npm run keys` writes the real file, which git ignores, without printing
+# the keys. Never commit real values.
+# Protects sessions and encrypts the private signing keys in the jwks table. 32 random bytes, base64url.
+BETTER_AUTH_SECRET=replace-with-32-random-bytes-base64url
+# The key the tenant scripts send to /admin/* as "Authorization: Bearer <key>". The same value is in
+# .secrets/admin.local.env, which the scripts read with node --env-file.
+AUTH_ADMIN_KEY=replace-with-32-random-bytes-base64url

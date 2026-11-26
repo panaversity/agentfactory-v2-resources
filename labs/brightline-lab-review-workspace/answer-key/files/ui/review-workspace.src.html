@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Review workspace</title>
+<style>
+  /* The AI app's own colors and fonts, when it hands them over (its style variables); these are the fallbacks. */
+  :root { color-scheme: light dark; }
+  body { font: 14px var(--font-sans, system-ui, sans-serif); margin: 0; padding: 12px;
+         color: var(--color-text-primary, CanvasText); background: var(--color-background-primary, Canvas); }
+  button { font: inherit; padding: 4px 10px; border-radius: var(--border-radius-md, 6px);
+           border: 1px solid var(--color-border-primary, #999); background: var(--color-background-secondary, ButtonFace); color: inherit; cursor: pointer; }
+  button[disabled] { opacity: .5; cursor: default; }
+  .muted { color: var(--color-text-secondary, GrayText); }
+  #card { display: flex; gap: 12px; align-items: center; justify-content: space-between; }
+  #workspace { display: none; grid-template-columns: minmax(220px, 1fr) minmax(220px, 1.2fr) minmax(240px, 1.2fr); gap: 12px; margin-top: 12px; }
+  body.open #workspace { display: grid; }
+  @media (max-width: 720px) { #workspace { grid-template-columns: 1fr; } }
+  section { border: 1px solid var(--color-border-primary, #ccc); border-radius: var(--border-radius-md, 6px); padding: 8px; min-width: 0; }
+  h2 { font-size: 14px; margin: 0 0 8px; }
+  #filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  #list { list-style: none; margin: 0; padding: 0; max-height: 420px; overflow: auto; }
+  #list li button { width: 100%; text-align: left; margin: 2px 0; display: flex; justify-content: space-between; gap: 6px; }
+  #list li button[aria-current="true"] { outline: 2px solid var(--color-ring-primary, Highlight); }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 10px; margin: 0; }
+  dt { color: var(--color-text-secondary, GrayText); }
+  dd { margin: 0; overflow-wrap: anywhere; }
+  textarea { width: 100%; box-sizing: border-box; min-height: 120px; font: inherit; }
+  #draft-mark { display: none; color: var(--color-text-warning, #a15c00); font-weight: 600; }
+  body.draft #draft-mark { display: block; }
+  #message { min-height: 1.2em; margin: 6px 0; }
+  #message.problem { color: var(--color-text-danger, #a12); }
+  #compare { display: none; margin-top: 8px; }
+  body.comparing #compare { display: block; }
+  #compare pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 4px 0; padding: 6px; border: 1px dashed var(--color-border-primary, #999); }
+</style>
+</head>
+<body>
+<div id="card">
+  <div><strong id="title">Month-end review</strong><div id="summary" class="muted"></div></div>
+  <button id="open">Open workspace</button>
+</div>
+<p id="mode" class="muted" role="status"></p>
+<div id="workspace">
+  <section aria-label="Open invoices">
+    <h2>Open invoices</h2>
+    <div id="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="overdue">Overdue</button>
+      <select id="vendor" aria-label="Vendor"><option value="">Any vendor</option></select>
+      <select id="status-filter" aria-label="Note status">
+        <option value="">Any status</option><option value="none">No note yet</option><option value="open">Open</option>
+        <option value="reviewed">Reviewed</option><option value="follow up">Follow up</option>
+      </select>
+    </div>
+    <p id="shown" class="muted"></p>
+    <ul id="list"></ul>
+  </section>
+  <section aria-label="Invoice">
+    <h2 id="invoice-title">Pick an invoice</h2>
+    <dl id="invoice"></dl>
+  </section>
+  <section aria-label="Review note">
+    <h2>Review note</h2>
+    <p id="draft-mark" role="status">Draft by Claude, not saved</p>
+    <label for="note-status">Status</label>
+    <select id="note-status"><option value="open">Open</option><option value="reviewed">Reviewed</option><option value="follow up">Follow up</option></select>
+    <textarea id="note" aria-label="Note text" disabled></textarea>
+    <p id="saved" class="muted"></p>
+    <button id="save" disabled>Save</button>
+    <button id="reload" hidden>Reload and compare</button>
+    <p id="message" role="status"></p>
+    <div id="compare">
+      <div class="muted">The note as saved now:</div>
+      <pre id="theirs"></pre>
+      <div class="muted">Your text is still in the editor. Change it if you need to, then save again.</div>
+    </div>
+  </section>
+</div>
+<script type="module">
+/*SDK*/
+const { App, applyHostStyleVariables, applyDocumentTheme, applyHostFonts } = globalThis.__mcpApps;
+const $ = (id) => document.getElementById(id);
+const state = { company: "", asOf: "", invoices: [], filter: { kind: "all" }, selected: null, version: 0 };
+const money = (cents) => "$" + (cents / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const textOf = (r) => r?.content?.find((c) => c.type === "text")?.text ?? "";
+const STATUS_WORDS = { open: "open", reviewed: "reviewed", "follow up": "follow up" };
+
+// 20.7: every value goes on the screen as text (textContent), never as page code.
+function el(tag, text, attrs = {}) {
+  const e = document.createElement(tag);
+  if (text !== undefined) e.textContent = text;
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  return e;
+}
+function say(text, problem = false) { $("message").textContent = text; $("message").className = problem ? "problem" : ""; }
+
+function visible() {
+  const f = state.filter;
+  return state.invoices.filter((i) =>
+    f.kind === "all" ? true
+    : f.kind === "overdue" ? i.due_date !== null && i.due_date < state.asOf
+    : f.kind === "vendor" ? i.vendor_id === f.vendor_id
+    : f.kind === "status" ? (f.status === "none" ? i.status === null : i.status === f.status) : true);
+}
+
+function renderList() {
+  const rows = visible();
+  const list = $("list");
+  list.replaceChildren();
+  for (const inv of rows) {
+    const b = el("button", undefined, { "aria-current": String(state.selected?.invoice_number === inv.invoice_number) });
+    b.append(el("span", `${inv.invoice_number} ${inv.vendor_id}`), el("span", `${money(inv.amount_cents)} · ${inv.status ? STATUS_WORDS[inv.status] : "no note"}`));
+    b.addEventListener("click", () => selectInvoice(inv.invoice_number));
+    const li = el("li"); li.append(b); list.append(li);
+  }
+  const f = state.filter;
+  const what = f.kind === "overdue" ? `overdue (due before ${state.asOf})` : f.kind === "vendor" ? `vendor ${f.vendor_id}` : f.kind === "status" ? `status ${f.status === "none" ? "no note yet" : f.status}` : "all";
+  $("shown").textContent = `${rows.length} of ${state.invoices.length} open invoices: ${what}`;
+  return rows;
+}
+
+// The card's one line, counted again from the rows whenever a save changes them.
+function renderSummary() {
+  const rows = state.invoices;
+  const by = (s) => rows.filter((i) => i.status === s).length;
+  const overdue = rows.filter((i) => i.due_date !== null && i.due_date < state.asOf).length;
+  $("summary").textContent = `${rows.length} open invoices, ${money(rows.reduce((n, i) => n + i.amount_cents, 0))}, ${overdue} overdue as of ${state.asOf}. ` +
+    `${by("reviewed")} reviewed, ${by("follow up")} to follow up, ${by(null)} with no note yet.`;
+}
+
+function show(data) {
+  state.company = data.company; state.asOf = data.as_of; state.invoices = data.invoices ?? [];
+  $("title").textContent = `${data.company}: month-end review`;
+  renderSummary();
+  const vendors = [...new Set(state.invoices.map((i) => i.vendor_id))].sort();
+  $("vendor").replaceChildren(el("option", "Any vendor", { value: "" }), ...vendors.map((v) => el("option", v, { value: v })));
+  renderList();
+}
+
+// 20.8: tell the model what is on the screen whenever the person picks an invoice or a filter.
+async function tellModel() {
+  const s = state.selected;
+  const text = s
+    ? `The review workspace shows invoice ${s.invoice.invoice_number}, vendor ${s.invoice.vendor_id} ${s.invoice.vendor_name}, ` +
+      `${money(s.invoice.amount_cents)}, due ${s.invoice.due_date ?? "with no due date"}, ` +
+      `purchase order ${s.invoice.purchase_order ? s.invoice.purchase_order.po_number : "none"}. ` +
+      `Its saved note: ${s.note.version ? `${s.note.status}, version ${s.note.version}` : "none yet"}. ` +
+      `The list shows ${visible().length} of ${state.invoices.length} open invoices.`
+    : `The review workspace lists ${visible().length} of ${state.invoices.length} open invoices. No invoice is picked.`;
+  console.info("update-model-context:", text);
+  try { await app.updateModelContext({ content: [{ type: "text", text }] }); } catch (e) { console.info("update not accepted", e); }
+}
+
+function renderInvoice() {
+  const s = state.selected;
+  const dl = $("invoice");
+  dl.replaceChildren();
+  if (!s) return;
+  const i = s.invoice;
+  $("invoice-title").textContent = i.invoice_number;
+  const rows = [["Vendor", `${i.vendor_id} ${i.vendor_name}`], ["Amount", money(i.amount_cents)], ["Invoice date", i.invoice_date],
+    ["Due", i.due_date ?? "No due date"], ["Terms", i.terms],
+    ["Purchase order", i.purchase_order ? `${i.purchase_order.po_number}, ${money(i.purchase_order.amount_cents)}, ${i.purchase_order.po_date}` : "None"]];
+  for (const [k, v] of rows) dl.append(el("dt", k), el("dd", v));
+}
+
+function renderNote(keepText = false) {
+  const n = state.selected.note;
+  state.version = n.version;
+  if (!keepText) { $("note").value = n.note; $("note-status").value = n.status ?? "open"; }
+  $("note").disabled = false; $("save").disabled = false;
+  $("saved").textContent = n.version ? `Version ${n.version}, saved by ${n.saved_by_name} at ${n.saved_at.replace("T", " ").replace("Z", " UTC")}.` : "No note saved yet.";
+}
+
+async function selectInvoice(number) {
+  try {
+    const r = await app.callServerTool({ name: "get_review_note", arguments: { invoice_number: number } });
+    if (r.isError) { say(textOf(r), true); return false; }
+    state.selected = r.structuredContent;
+    document.body.classList.remove("draft", "comparing"); $("reload").hidden = true;
+    renderInvoice(); renderNote(); renderList(); say("");
+    tellModel();
+    return true;
+  } catch (e) { say(refusal(e, "The invoice could not be opened."), true); return false; }
+}
+
+function refusal(err, fallback) {
+  const said = String(err?.message ?? err ?? "");
+  if (/review:write|insufficient_scope|403/.test(said)) return "Your role can read notes but not save them.";
+  if (/401|invalid_token|sign in/i.test(said)) return "You are signed out. Sign in again, then try again.";
+  return fallback;
+}
+
+async function save() {
+  const s = state.selected; if (!s) return;
+  const args = { invoice_number: s.invoice.invoice_number, note: $("note").value, status: $("note-status").value, version: state.version };
+  $("save").disabled = true;
+  try {
+    const r = await app.callServerTool({ name: "save_review_note", arguments: args });
+    if (r.isError) {
+      // A refused save keeps the person's text in the editor (Task 7). Nothing on the screen is lost.
+      say(textOf(r), true);
+      if (/changed after you opened it/.test(textOf(r))) $("reload").hidden = false;
+      return;
+    }
+    const v = r.structuredContent;
+    s.note = { note: args.note, status: args.status, version: v.version, saved_by_name: v.saved_by_name, saved_at: v.saved_at };
+    const row = state.invoices.find((i) => i.invoice_number === args.invoice_number);
+    if (row) { row.status = args.status; row.version = v.version; row.saved_by_name = v.saved_by_name; row.saved_at = v.saved_at; }
+    document.body.classList.remove("draft", "comparing"); $("reload").hidden = true;
+    renderNote(true); renderList(); renderSummary(); say(`Saved as version ${v.version}.`);
+    tellModel();
+  } catch (e) {
+    say(refusal(e, "The note could not be saved. Your text is still here."), true);
+  } finally { $("save").disabled = false; }
+}
+
+async function reloadAndCompare() {
+  const s = state.selected; if (!s) return;
+  const r = await app.callServerTool({ name: "get_review_note", arguments: { invoice_number: s.invoice.invoice_number } });
+  if (r.isError) { say(textOf(r), true); return; }
+  s.note = r.structuredContent.note;
+  $("theirs").textContent = `${s.note.status} · version ${s.note.version}, saved by ${s.note.saved_by_name} at ${s.note.saved_at}\n\n${s.note.note}`;
+  document.body.classList.add("comparing");
+  renderNote(true); // the person's own text stays in the editor; the next save carries the new version
+  $("reload").hidden = true;
+  say("Compare the two, then save again.");
+}
+
+function applyFilter(f) { state.filter = f; const rows = renderList(); tellModel(); return rows; }
+
+// The page's own tools (app tools, 20.3). Claude can call them while the workspace is open. They move
+// around the screen and fill the editor. None of them calls save_review_note: only the person's Save saves.
+const schema = (json, check = () => undefined) => ({ "~standard": { version: 1, vendor: "brightline",
+  validate: (v) => { const problem = check(v ?? {}); return problem ? { issues: [{ message: problem }] } : { value: v ?? {} }; },
+  jsonSchema: { input: () => json, output: () => json } } });
+
+const app = new App({ name: "Brightline review workspace", version: "1.0.0" }, { tools: { listChanged: false } });
+
+app.registerTool("select_invoice", {
+  title: "Show one invoice in the review workspace",
+  description: "Show one open invoice, with its purchase order and its review note, in the open review workspace. Changes the screen only.",
+  inputSchema: schema({ type: "object", properties: { invoice_number: { type: "string", description: "Such as INV-6207" } }, required: ["invoice_number"], additionalProperties: false },
+    (v) => typeof v.invoice_number === "string" ? undefined : "invoice_number is required"),
+}, async ({ invoice_number }) => {
+  const ok = await selectInvoice(invoice_number);
+  return { content: [{ type: "text", text: ok ? `The workspace now shows ${invoice_number}.` : $("message").textContent }], isError: !ok };
+});
+
+app.registerTool("filter_list", {
+  title: "Filter the review workspace's list",
+  description: "Filter the list of open invoices on the screen: all, overdue (due before the review date), one vendor, or one note status. Changes the screen only.",
+  inputSchema: schema({ type: "object", properties: {
+      filter: { type: "string", enum: ["all", "overdue", "vendor", "status"] },
+      vendor_id: { type: "string", description: "With filter vendor, such as V102" },
+      status: { type: "string", enum: ["none", "open", "reviewed", "follow up"], description: "With filter status" } },
+    required: ["filter"], additionalProperties: false },
+    (v) => !["all", "overdue", "vendor", "status"].includes(v.filter) ? "filter must be all, overdue, vendor or status"
+      : v.filter === "vendor" && !v.vendor_id ? "vendor_id is required with filter vendor"
+      : v.filter === "status" && !v.status ? "status is required with filter status" : undefined),
+}, async ({ filter, vendor_id, status }) => {
+  const rows = applyFilter({ kind: filter, vendor_id, status });
+  const oldest = [...rows].filter((r) => r.due_date).sort((a, b) => a.due_date.localeCompare(b.due_date))[0];
+  return { content: [{ type: "text", text: `The list shows ${rows.length} invoices: ${rows.map((r) => `${r.invoice_number} (due ${r.due_date ?? "none"})`).join(", ")}.` +
+    (oldest ? ` The oldest due is ${oldest.invoice_number}.` : "") }] };
+});
+
+app.registerTool("draft_note", {
+  title: "Draft a review note",
+  description: "Put a draft in the review note editor for the invoice on screen, marked as not saved. It never saves: only the person's Save button does.",
+  inputSchema: schema({ type: "object", properties: { text: { type: "string" }, status: { type: "string", enum: ["open", "reviewed", "follow up"] } }, required: ["text"], additionalProperties: false },
+    (v) => typeof v.text === "string" ? undefined : "text is required"),
+}, async ({ text, status }) => {
+  if (!state.selected) return { content: [{ type: "text", text: "No invoice is on screen. Call select_invoice first." }], isError: true };
+  $("note").value = text;
+  if (status) $("note-status").value = status;
+  document.body.classList.add("draft");
+  say("Claude drafted this note. Read it, change it if you need to, and press Save to keep it.");
+  return { content: [{ type: "text", text: `Draft placed in the editor for ${state.selected.invoice.invoice_number}. It is not saved: only the person's Save button saves it.` }] };
+});
+
+app.ontoolresult = (result) => { if (!result.isError && result.structuredContent) show(result.structuredContent); else say(textOf(result), true); };
+app.onhostcontextchanged = (ctx) => applyHost(ctx);
+app.onerror = console.error;
+function applyHost(ctx) {
+  if (!ctx) return;
+  if (ctx.theme) applyDocumentTheme(ctx.theme);
+  if (ctx.styles?.variables) applyHostStyleVariables(ctx.styles.variables);
+  if (ctx.styles?.css?.fonts) applyHostFonts(ctx.styles.css.fonts);
+}
+
+$("open").addEventListener("click", async () => {
+  document.body.classList.add("open");
+  const modes = app.getHostContext()?.availableDisplayModes ?? [];
+  if (!modes.includes("fullscreen")) { $("mode").textContent = "This AI app keeps the workspace here, in the chat."; return; }
+  try {
+    const r = await app.requestDisplayMode({ mode: "fullscreen" });
+    $("mode").textContent = r.mode === "fullscreen" ? "" : "This AI app kept the workspace here, in the chat.";
+  } catch { $("mode").textContent = "This AI app kept the workspace here, in the chat."; }
+});
+for (const b of document.querySelectorAll("[data-filter]")) b.addEventListener("click", () => applyFilter({ kind: b.dataset.filter }));
+$("vendor").addEventListener("change", (e) => e.target.value && applyFilter({ kind: "vendor", vendor_id: e.target.value }));
+$("status-filter").addEventListener("change", (e) => e.target.value && applyFilter({ kind: "status", status: e.target.value }));
+$("note").addEventListener("input", () => document.body.classList.remove("draft"));
+$("save").addEventListener("click", save);
+$("reload").addEventListener("click", reloadAndCompare);
+globalThis.__workspace = { app, state };
+// Register the page's tools first, then connect (Lab 20b, If something goes wrong).
+await app.connect();
+applyHost(app.getHostContext());
+</script>
+</body>
+</html>

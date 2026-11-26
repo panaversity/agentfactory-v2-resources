@@ -1,0 +1,4 @@
+file,document_id,title,counts
+ap-triage-rules.md,ap-triage-rules,AP triage rules,yes
+po-matching.md,po-matching,Purchase order matching,yes
+vendor-onboarding.md,vendor-onboarding,Vendor onboarding and bank details,yes

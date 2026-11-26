@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Open invoices</title>
+<!-- Lab 20: the open-invoices screen. Built into ui/open-invoices.html by `npm run build:ui`, with the
+     MCP Apps page library inside it, so the page loads nothing from any outside address (20.6).
+     Both connectors serve the built file. docs/screen-spec.md says what it shows and never shows. -->
+<style>
+  body { font: 14px system-ui, sans-serif; margin: 12px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid #ccc; }
+  td.amount { text-align: right; }
+  th.group { padding-top: 12px; font-weight: 600; }
+  #message { margin: 8px 0; color: #a12; }
+  #details { margin: 8px 0; padding: 8px; border: 1px solid #ccc; display: none; }
+</style>
+</head>
+<body>
+<p id="summary"></p>
+<table>
+  <thead><tr><th>Invoice</th><th>Vendor</th><th>Amount</th><th>Due</th><th></th></tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+<p id="message" role="status"></p>
+<div id="details"></div>
+<button id="next" disabled>Next page</button>
+<script type="module">
+/*SDK*/
+const { App } = globalThis.__mcpApps;
+const $ = (id) => document.getElementById(id);
+// The lab's date. An invoice due before it is overdue (Task 15).
+const TODAY = "2027-03-30";
+const state = { firstRow: 1, nextPage: null, total: 0, invoices: [], seen: new Map(), overdueView: false };
+
+const money = (cents) => "$" + (cents / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+// 20.7: every value goes on the screen as text (textContent), never as page code.
+function cell(row, text, cls) {
+  const td = document.createElement("td");
+  td.textContent = text;
+  if (cls) td.className = cls;
+  row.appendChild(td);
+  return td;
+}
+
+function invoiceRow(inv) {
+  const tr = document.createElement("tr");
+  cell(tr, inv.invoice_number);
+  cell(tr, inv.vendor_id);
+  cell(tr, money(inv.amount_cents), "amount");
+  cell(tr, inv.due_date ?? "no due date");
+  const b = document.createElement("button");
+  b.textContent = "Vendor details";
+  b.addEventListener("click", () => vendorDetails(inv.vendor_id));
+  cell(tr, "").appendChild(b);
+  return tr;
+}
+
+function groupRow(text) {
+  const tr = document.createElement("tr");
+  const th = document.createElement("th");
+  th.colSpan = 5;
+  th.className = "group";
+  th.textContent = text;
+  tr.appendChild(th);
+  return tr;
+}
+
+function render() {
+  state.overdueView = false;
+  $("rows").replaceChildren(...state.invoices.map(invoiceRow));
+  const last = state.firstRow + state.invoices.length - 1;
+  $("summary").textContent = `Open invoices ${state.firstRow} to ${last} of ${state.total}`;
+  $("next").disabled = !state.nextPage;
+}
+
+function show(data, firstRow) {
+  state.invoices = data.invoices ?? [];
+  for (const inv of state.invoices) state.seen.set(inv.invoice_number, inv);
+  state.total = data.total_count ?? 0;
+  state.nextPage = data.next_page ?? null;
+  state.firstRow = firstRow;
+  $("message").textContent = "";
+  render();
+  tellModel();
+}
+
+// 20.8: tell the model what is showing, every time the page changes. Each update replaces the last.
+async function tellModel() {
+  let text;
+  if (state.overdueView) {
+    text = `The open-invoices screen now shows the overdue invoices only, due before ${TODAY}, oldest first: ` +
+      state.invoices.map((i) => `${i.invoice_number} due ${i.due_date ?? "no due date"}`).join(", ") + ".";
+  } else {
+    const last = state.firstRow + state.invoices.length - 1;
+    text = `The open-invoices screen now shows rows ${state.firstRow} to ${last} of ${state.total}: ` +
+      state.invoices.map((i, n) => `row ${state.firstRow + n} ${i.invoice_number}`).join(", ") + ".";
+  }
+  console.info("update-model-context:", text);
+  try { await app.updateModelContext({ content: [{ type: "text", text }] }); } catch (e) { console.info("update not accepted", e); }
+}
+
+const textOf = (r) => r?.content?.find((c) => c.type === "text")?.text ?? "";
+
+// docs/screen-spec.md: every refusal in plain words on the screen, never an empty box.
+function refusal(err, fallback) {
+  const said = String(err?.message ?? err ?? "");
+  if (/insufficient_scope|ap:vendors\.read|403/.test(said)) return "Your role does not include vendor details.";
+  if (/401|invalid_token|sign in/i.test(said)) return "You are signed out. Sign in again, then press the button again.";
+  return fallback;
+}
+
+async function nextPage() {
+  if (!state.nextPage) return;
+  try {
+    const r = await app.callServerTool({ name: "next_invoice_page", arguments: { page: state.nextPage } });
+    if (r.isError) { $("message").textContent = textOf(r); return; }
+    show(r.structuredContent, state.firstRow + state.invoices.length);
+  } catch (e) { $("message").textContent = refusal(e, "The next page could not be loaded."); }
+}
+
+async function vendorDetails(vendor_id) {
+  const box = $("details");
+  try {
+    const r = await app.callServerTool({ name: "find_vendor", arguments: { vendor_id } });
+    if (r.isError) { $("message").textContent = textOf(r); return; }
+    const v = r.structuredContent.vendors[0];
+    box.replaceChildren();
+    // The screen spec's "never" list: the bank account ending is not shown, though find_vendor returns it.
+    for (const [label, value] of [["Vendor", `${v.vendor_id} ${v.vendor_name}`], ["Terms", v.terms], ["Note", v.note ?? ""]]) {
+      const p = document.createElement("p");
+      p.textContent = `${label}: ${value}`;
+      box.appendChild(p);
+    }
+    box.style.display = "block";
+    $("message").textContent = "";
+  } catch (e) { $("message").textContent = refusal(e, "Vendor details could not be loaded."); }
+}
+
+const app = new App({ name: "Brightline open invoices", version: "1.0.0" }, { tools: {} });
+
+// Lab 20, Task 15 (optional): an app tool. The model calls it, and the page changes what the screen shows.
+// It reads the remaining pages through next_invoice_page, the person's own calls, and saves nothing.
+app.registerTool("show_overdue", {
+  title: "Show the overdue invoices",
+  description: `Show only the invoices due before ${TODAY}, oldest first, with the invoices that have no due date in their own group at the end. It changes what the open-invoices screen shows and saves nothing.`,
+  annotations: { readOnlyHint: true },
+}, async () => {
+  try {
+    while (state.nextPage) {
+      const r = await app.callServerTool({ name: "next_invoice_page", arguments: { page: state.nextPage } });
+      if (r.isError) return { content: [{ type: "text", text: textOf(r) }], isError: true };
+      for (const inv of r.structuredContent.invoices) state.seen.set(inv.invoice_number, inv);
+      state.nextPage = r.structuredContent.next_page;
+    }
+  } catch (e) { return { content: [{ type: "text", text: refusal(e, "The other pages could not be loaded.") }], isError: true }; }
+  const all = [...state.seen.values()];
+  const overdue = all.filter((i) => i.due_date && i.due_date < TODAY).sort((a, b) => a.due_date.localeCompare(b.due_date) || a.invoice_number.localeCompare(b.invoice_number));
+  const undated = all.filter((i) => !i.due_date);
+  const cents = overdue.reduce((n, i) => n + i.amount_cents, 0);
+  $("rows").replaceChildren(groupRow("Overdue, oldest first"), ...overdue.map(invoiceRow), groupRow("No due date"), ...undated.map(invoiceRow));
+  $("summary").textContent = `${overdue.length} overdue invoices, ${money(cents)} in all, and ${undated.length} with no due date`;
+  $("next").disabled = true;
+  state.invoices = [...overdue, ...undated];
+  state.overdueView = true;
+  tellModel();
+  return { content: [{ type: "text", text: `${overdue.length} overdue invoices, ${money(cents)} in all. ${undated.length} have no due date.` }] };
+});
+
+app.ontoolresult = (result) => { if (!result.isError && result.structuredContent) show(result.structuredContent, 1); else $("message").textContent = textOf(result); };
+app.onerror = console.error;
+$("next").addEventListener("click", nextPage);
+await app.connect();
+</script>
+</body>
+</html>
