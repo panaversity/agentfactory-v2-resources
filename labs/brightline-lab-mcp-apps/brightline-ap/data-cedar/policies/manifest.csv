@@ -1,0 +1,5 @@
+file,document_id,title,counts
+approvals.md,approvals,Invoice approvals,yes
+purchasing.md,purchasing,Purchasing,yes
+vendor-bank-changes.md,vendor-bank-changes,Vendor bank changes,yes
+old-email-approvals-2024.md,old-email-approvals-2024,Old approvals email (2024),no

@@ -1,0 +1,64 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  // The top level is the sign-in server on your computer: `npm run dev` serves it at http://127.0.0.1:8719.
+  // Staging and production are env.staging and env.production below, each with its own database (F8).
+  // A bare `wrangler deploy` (no --env) fails: "local-only" is not a real database. Deploy only with
+  // `npm run deploy:auth:staging` and `npm run deploy:auth`, which name the environment.
+  "name": "brightline-auth",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-01",
+  // Better Auth uses AsyncLocalStorage (node:async_hooks).
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "brightline-auth", "database_id": "local-only", "migrations_dir": "migrations" }
+  ],
+  // Settings, not secrets. BETTER_AUTH_SECRET and AUTH_ADMIN_KEY come from .dev.vars (`npm run keys`).
+  "vars": {
+    // Where this sign-in server is reached. The issuer is this plus /api/auth.
+    "AUTH_BASE_URL": "http://127.0.0.1:8719",
+    // The connectors these tokens are made for. A token's aud is the one the app asked for (resource).
+    // The TypeScript connector:
+    "MCP_RESOURCE": "http://127.0.0.1:8717/mcp",
+    // The Python connector, at its own address, so a token for one is refused by the other:
+    "MCP_RESOURCE_PY": "http://127.0.0.1:8718/mcp"
+  },
+  // Secrets, never here: BETTER_AUTH_SECRET and AUTH_ADMIN_KEY, per environment, from
+  // .secrets/auth.<env>.env (`npm run keys -- --deploy`), sent with `npm run secrets:auth:<env>`.
+  // Replace "your-subdomain" with your workers.dev subdomain, and each database_id with the one
+  // `npx wrangler d1 create` printed (F8 step 3). Neither is a secret. `npm run check:deploy` reports
+  // what is still a placeholder, and the deploy scripts refuse to deploy one.
+  // Bindings and settings are not inherited from the top level, so each environment repeats them.
+  "env": {
+    "staging": {
+      "name": "brightline-auth-staging",
+      "workers_dev": true,
+      "preview_urls": false,
+      "observability": { "enabled": true, "head_sampling_rate": 1 },
+      "d1_databases": [
+        { "binding": "DB", "database_name": "brightline-auth-staging", "database_id": "REPLACE-WITH-STAGING-DATABASE-ID", "migrations_dir": "migrations" }
+      ],
+      "vars": {
+        "AUTH_BASE_URL": "https://brightline-auth-staging.your-subdomain.workers.dev",
+        "MCP_RESOURCE": "https://brightline-ap-ts-staging.your-subdomain.workers.dev/mcp",
+        "MCP_RESOURCE_PY": "https://brightline-ap-py-staging.your-subdomain.workers.dev/mcp"
+      }
+    },
+    "production": {
+      "name": "brightline-auth",
+      "workers_dev": true,
+      "preview_urls": false,
+      "observability": { "enabled": true, "head_sampling_rate": 1 },
+      "d1_databases": [
+        { "binding": "DB", "database_name": "brightline-auth", "database_id": "REPLACE-WITH-PRODUCTION-DATABASE-ID", "migrations_dir": "migrations" }
+      ],
+      "vars": {
+        "AUTH_BASE_URL": "https://brightline-auth.your-subdomain.workers.dev",
+        "MCP_RESOURCE": "https://brightline-ap-ts.your-subdomain.workers.dev/mcp",
+        "MCP_RESOURCE_PY": "https://brightline-ap-py.your-subdomain.workers.dev/mcp"
+      }
+    }
+  }
+}
