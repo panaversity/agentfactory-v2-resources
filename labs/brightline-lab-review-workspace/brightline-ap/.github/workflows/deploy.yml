@@ -1,0 +1,113 @@
+name: deploy
+# Each environment, in order: the business database's migrations and role check (Chapter 19, F6), the
+# sign-in server's migrations, the sign-in server, the connector, then the conformance suite with a token
+# from that environment's CI client (Chapter 18, F8).
+# Staging: on every push to main, which happens when a reviewed pull request is merged (ci.yml has
+# already passed on that pull request).
+# Production: only when a person runs this workflow by hand with target "production", from main, after
+# checking that the staging run passed (Actions > deploy > Run workflow). The very first production run
+# sets skip_conformance, because production has no companies or CI client until after its first deploy.
+#
+# Set once in Settings > Secrets and variables > Actions, never in this file. A coding agent sets the
+# secrets with `gh secret set -f .secrets/github.env` (written by `npm run client:ci`) and
+# `gh secret set CLOUDFLARE_API_TOKEN < .secrets/cloudflare-token`, and the variables with `gh variable set`.
+#   Secrets    CLOUDFLARE_API_TOKEN                 ("Edit Cloudflare Workers" template, plus D1 edit)
+#              CLOUDFLARE_ACCOUNT_ID
+#              CONFORMANCE_CLIENT_ID_STAGING        the staging CI client (npm run client:ci -- --env staging)
+#              CONFORMANCE_CLIENT_SECRET_STAGING
+#              CONFORMANCE_CLIENT_ID_PRODUCTION     the production CI client
+#              CONFORMANCE_CLIENT_SECRET_PRODUCTION
+#              DATABASE_URL_OWNER_STAGING           the staging Neon branch's owner connection string, direct (F6)
+#              DATABASE_URL_READER_STAGING          ap_reader on the staging branch, for the role check
+#              DATABASE_URL_OWNER_PRODUCTION
+#              DATABASE_URL_READER_PRODUCTION
+#   Variables  STAGING_ISSUER       https://brightline-auth-staging.<subdomain>.workers.dev/api/auth
+#              STAGING_URLS         ts=https://brightline-ap-ts-staging.<subdomain>.workers.dev/mcp
+#              PRODUCTION_ISSUER    https://brightline-auth.<subdomain>.workers.dev/api/auth
+#              PRODUCTION_URLS      ts=https://brightline-ap-ts.<subdomain>.workers.dev/mcp
+# Worker secrets (the sign-in server's two, the connector's handle key) are sent from a person's computer
+# with `npm run secrets:auth:<env>` and `npm run secrets:<env>`. This workflow never sets them.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Which environment to deploy"
+        type: choice
+        options: [staging, production]
+        default: staging
+      skip_conformance:
+        description: "Skip the conformance run (the very first production deploy only)"
+        type: boolean
+        default: false
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  staging:
+    if: github.event_name == 'push' || inputs.target == 'staging'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: npm ci
+      - run: npm run check:deploy
+      # The business database first (Chapter 19): migrations add, never remove, so the running connector
+      # keeps working (19.6). Then the role check, so no deploy ever runs with a role that can bypass.
+      - name: Business database migrations and role check, staging
+        env:
+          GITHUB_ACTIONS_DB: staging
+          DATABASE_URL_OWNER: ${{ secrets.DATABASE_URL_OWNER_STAGING }}
+          DATABASE_URL_READER: ${{ secrets.DATABASE_URL_READER_STAGING }}
+        run: npm run db:migrate -- --env staging && npm run check:roles -- --env staging
+      # Migrations first: each one works with the old code and the new (F8, rollback with a database).
+      - run: npm run migrate:auth:staging
+      - run: npm run deploy:auth:staging
+      - run: npm run deploy:staging --workspace @brightline/ap-ts
+      - name: Conformance against staging
+        if: ${{ !inputs.skip_conformance }}
+        env:
+          AP_ISSUER: ${{ vars.STAGING_ISSUER }}
+          CONFORMANCE_URLS: ${{ vars.STAGING_URLS }}
+          CONFORMANCE_CLIENT_ID: ${{ secrets.CONFORMANCE_CLIENT_ID_STAGING }}
+          CONFORMANCE_CLIENT_SECRET: ${{ secrets.CONFORMANCE_CLIENT_SECRET_STAGING }}
+        run: npm run conformance
+  production:
+    if: github.event_name == 'workflow_dispatch' && inputs.target == 'production' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: npm ci
+      - run: npm run check:deploy
+      - name: Business database migrations and role check, production
+        env:
+          GITHUB_ACTIONS_DB: production
+          DATABASE_URL_OWNER: ${{ secrets.DATABASE_URL_OWNER_PRODUCTION }}
+          DATABASE_URL_READER: ${{ secrets.DATABASE_URL_READER_PRODUCTION }}
+        run: npm run db:migrate -- --env production --yes-production && npm run check:roles -- --env production --yes-production
+      - run: npm run migrate:auth:production
+      - run: npm run deploy:auth
+      - run: npm run deploy --workspace @brightline/ap-ts
+      - name: Conformance against production
+        if: ${{ !inputs.skip_conformance }}
+        env:
+          AP_ISSUER: ${{ vars.PRODUCTION_ISSUER }}
+          CONFORMANCE_URLS: ${{ vars.PRODUCTION_URLS }}
+          CONFORMANCE_CLIENT_ID: ${{ secrets.CONFORMANCE_CLIENT_ID_PRODUCTION }}
+          CONFORMANCE_CLIENT_SECRET: ${{ secrets.CONFORMANCE_CLIENT_SECRET_PRODUCTION }}
+        run: npm run conformance
+      # If this step fails, roll back by hand: `npx wrangler rollback` in servers/ap-ts, then in
+      # servers/auth (docs/deploy.md). A rollback never rolls back the database: the business database's
+# migrations only add, so the older connector still works against the newer tables (19.6).
